@@ -49,6 +49,18 @@ class VsoshParseTest(unittest.TestCase):
         for record in self.records:
             self.assertEqual(len(record['options']), 4, (record['year'], record['number']))
 
+    def test_next_question_glued_to_an_option_is_split_off(self):
+        """В источнике вопрос 7 приклеен без разрыва строки к варианту D вопроса 6:
+        'D. 西安 7.“爆竹声中一岁除、春风送暖入屠苏”这句话描写中国的哪个传统节日？'."""
+        six = next(r for r in self.records
+                   if r['year'] == '2017-18' and r['stageCode'] == 'mun' and r['number'] == 6)
+        self.assertEqual(six['options'][-1], '西安')
+
+        seven = next(r for r in self.records
+                     if r['year'] == '2017-18' and r['stageCode'] == 'mun' and r['number'] == 7)
+        self.assertEqual(seven['questionZh'], '“爆竹声中一岁除，春风送暖入屠苏”这句话描写中国的哪个传统节日？')
+        self.assertEqual(len(seven['options']), 4)
+
 
 if __name__ == '__main__':
     unittest.main()

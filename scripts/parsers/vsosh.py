@@ -15,6 +15,9 @@ KEY_PAIR = re.compile(r'(\d+)\s*[—–-]\s*([A-D])')
 QUESTION = re.compile(r'^(?P<number>\d+)[.、]\s+(?P<text>\S.*)$')
 OPTION = re.compile(r'^(?P<letter>[A-D])[.、．)]\s*(?P<text>\S.*)$')
 CYRILLIC = re.compile(r'[А-Яа-яЁё]')
+# в источнике вопрос N+1 иногда приклеен без разрыва строки к последнему варианту
+# вопроса N: 'D. 西安 7.“爆竹声中一岁除...”这句话描写中国的哪个传统节日？'
+GLUED_NEXT_QUESTION = re.compile(r'^(?P<option>\S.*?)\s+(?P<number>\d{1,3})[.、]\s*(?P<text>\S.*)$')
 
 STAGES = {
     'Пригласительный': ('пригласительный', 'pri'),
@@ -71,11 +74,19 @@ def parse(path: Path) -> list[dict]:
             continue
         options: list[str] = []
         cursor = index + 1
+        this_number = int(question.group('number'))
         while cursor < len(lines) and len(options) < 4:
             option = OPTION.match(lines[cursor])
             if not option:
                 break
-            options.append(strip_artifacts(option.group('text')))
+            option_text = option.group('text')
+            if len(options) == 3:
+                # последний вариант — тот, к которому мог приклеиться следующий вопрос
+                glued = GLUED_NEXT_QUESTION.match(option_text)
+                if glued and int(glued.group('number')) == this_number + 1:
+                    option_text = glued.group('option')
+                    lines.insert(cursor + 1, f"{glued.group('number')}. {glued.group('text')}")
+            options.append(strip_artifacts(option_text))
             cursor += 1
         if len(options) == 4 and year:
             number = int(question.group('number'))
