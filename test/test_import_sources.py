@@ -23,7 +23,8 @@ class ImportSourcesTest(unittest.TestCase):
     def test_records_follow_the_raw_contract(self):
         records = json.loads((ROOT / 'data/raw/bank423.json').read_text('utf-8'))
         required = {'sourceFile', 'year', 'stage', 'stageCode', 'grades', 'number',
-                    'questionRu', 'questionZh', 'options', 'officialKeyIndex', 'topic', 'parseWarnings'}
+                    'questionRu', 'questionZh', 'options', 'officialKeyIndex', 'topic', 'parseWarnings',
+                    'sourceOrdinal'}
         for record in records:
             self.assertEqual(set(record), required)
 

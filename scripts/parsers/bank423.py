@@ -6,6 +6,7 @@ import re
 from pathlib import Path
 
 from docx_text import paragraphs
+from normalize import strip_artifacts
 
 QUESTION = re.compile(r'^(?P<number>\d+)\.\s+(?P<text>\S.*)$')
 OPTIONS = re.compile(r'([A-D])\)\s*(.*?)(?=\s+[A-D]\)|$)')
@@ -35,7 +36,7 @@ def _options(line: str) -> tuple[list[str], list[str]]:
         if letter in found:
             duplicates.append(letter)
             continue
-        found[letter] = text.strip()
+        found[letter] = strip_artifacts(text)
     options = [found.get(letter, '') for letter in 'ABCD']
     warnings: list[str] = []
     if duplicates:
@@ -56,7 +57,10 @@ def parse(path: Path) -> list[dict]:
             text = question.group('text').strip()
             pending = {
                 'sourceFile': path.name,
-                'number': int(question.group('number')),
+                # в этом файле нумерация сквозная по темам документа, а не номер задания
+                # в олимпиадном бланке, поэтому номер задания остаётся неизвестным
+                'number': None,
+                'sourceOrdinal': int(question.group('number')),
                 'questionRu': text if CYRILLIC.search(text) else None,
                 'questionZh': None if CYRILLIC.search(text) else text,
                 'options': [],

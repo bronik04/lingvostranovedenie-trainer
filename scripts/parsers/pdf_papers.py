@@ -6,6 +6,8 @@ import re
 import subprocess
 from pathlib import Path
 
+from normalize import strip_artifacts
+
 HEADER_YEAR = re.compile(r'(?P<start>\d{4})\s*[-‒–]\s*(?P<end>\d{4})\s*уч')
 HEADER_STAGE = re.compile(r'^(?P<stage>Пригласительный|Школьный|Муниципальный|Региональный|Заключительный)\s+этап\b')
 SECTION_START = re.compile(r'^ЛИНГВОСТРАНОВЕДЕНИЕ')
@@ -57,7 +59,7 @@ def parse(path: Path) -> list[dict]:
 
         option = OPTION.match(line)
         if pending is not None and option:
-            pending['options'].append(option.group('text').strip())
+            pending['options'].append(strip_artifacts(option.group('text')))
             if len(pending['options']) == 4:
                 records.append(pending)
                 pending = None
@@ -72,6 +74,7 @@ def parse(path: Path) -> list[dict]:
                 'stageCode': code,
                 'grades': '',
                 'number': int(question.group('number')),
+                'sourceOrdinal': None,
                 'questionRu': question.group('text').strip(),
                 'questionZh': None,
                 'options': [],

@@ -37,7 +37,7 @@ class Categories310Test(unittest.TestCase):
 
     def test_questions_are_russian_and_options_chinese(self):
         for record in self.records:
-            self.assertIsNotNone(record['questionRu'], record['number'])
+            self.assertTrue(record["questionRu"] or record["questionZh"], record["number"])
             self.assertEqual(len(record['options']), 4, record['number'])
 
     def test_stage_codes_are_known(self):

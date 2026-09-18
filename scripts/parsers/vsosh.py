@@ -6,6 +6,7 @@ import re
 from pathlib import Path
 
 from docx_text import paragraphs
+from normalize import strip_artifacts
 
 YEAR = re.compile(r'^(?P<start>\d{4})[–-](?P<end>\d{4})\s+уч\.\s*г\.$')
 STAGE_LINE = re.compile(r'^(?P<stage>Пригласительный|Школьный|Муниципальный|Региональный|Заключительный)\s+этап$')
@@ -74,7 +75,7 @@ def parse(path: Path) -> list[dict]:
             option = OPTION.match(lines[cursor])
             if not option:
                 break
-            options.append(option.group('text').strip())
+            options.append(strip_artifacts(option.group('text')))
             cursor += 1
         if len(options) == 4 and year:
             number = int(question.group('number'))
@@ -86,6 +87,7 @@ def parse(path: Path) -> list[dict]:
                 'stageCode': code,
                 'grades': '',
                 'number': number,
+                'sourceOrdinal': None,
                 'questionRu': text if CYRILLIC.search(text) else None,
                 'questionZh': None if CYRILLIC.search(text) else text,
                 'options': options,

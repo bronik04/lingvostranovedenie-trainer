@@ -27,7 +27,8 @@ class Bank423Test(unittest.TestCase):
 
     def test_first_record_is_complete(self):
         first = self.records[0]
-        self.assertEqual(first['number'], 1)
+        self.assertIsNone(first['number'])  # номер в бланке из этого файла неизвестен
+        self.assertEqual(first['sourceOrdinal'], 1)
         self.assertEqual(first['year'], '2015-16')
         self.assertEqual(first['stage'], 'школьный')
         self.assertEqual(first['stageCode'], 'shk')

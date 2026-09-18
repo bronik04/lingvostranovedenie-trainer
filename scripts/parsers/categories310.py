@@ -6,7 +6,9 @@ import re
 from pathlib import Path
 
 from docx_text import paragraphs
+from normalize import strip_artifacts
 
+CYRILLIC = re.compile(r'[А-Яа-яЁё]')
 HEADER = re.compile(
     r'^(?P<ordinal>\d+)\.\s+(?P<year>\d{4}[–-]\d{4}),\s*(?P<stage>[^,]+?)\s*этап,\s*№\s*(?P<number>\d+)$'
 )
@@ -50,10 +52,11 @@ def parse(path: Path) -> list[dict]:
             option = OPTION.match(lines[cursor])
             if not option:
                 break
-            options.append(option.group('text').strip())
+            options.append(strip_artifacts(option.group('text')))
             cursor += 1
         if len(options) == 4:
             stage, code = STAGES.get(header.group('stage').strip(), (header.group('stage').strip(), 'unk'))
+            text = question.strip()
             records.append({
                 'sourceFile': path.name,
                 'year': _short_year(header.group('year')),
@@ -61,8 +64,10 @@ def parse(path: Path) -> list[dict]:
                 'stageCode': code,
                 'grades': '',
                 'number': int(header.group('number')),
-                'questionRu': question.strip(),
-                'questionZh': None,
+                'sourceOrdinal': int(header.group('ordinal')),
+                # в этой базе есть и китайские формулировки, а не только русские
+                'questionRu': text if CYRILLIC.search(text) else None,
+                'questionZh': None if CYRILLIC.search(text) else text,
                 'options': options,
                 'officialKeyIndex': None,
                 'topic': topic,
