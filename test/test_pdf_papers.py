@@ -28,6 +28,14 @@ class PdfPapersTest(unittest.TestCase):
         first = next(r for r in records if r['number'] == 28)
         self.assertEqual(first['questionRu'], 'Кто считается основателем российского флота?')
 
+    def test_splits_a_file_that_holds_several_stages(self):
+        """В бланке 2024-25 подряд идут муниципальный, пригласительный, региональный и школьный."""
+        records = parse(LATEST)
+        self.assertEqual({r['stageCode'] for r in records}, {'mun', 'pri', 'reg', 'shk'})
+        self.assertEqual({r['year'] for r in records}, {'2024-25'})
+        first = next(r for r in records if r['number'] == 28)
+        self.assertEqual(first['stageCode'], 'mun')
+
     def test_never_invents_keys(self):
         self.assertTrue(all(r['officialKeyIndex'] is None for r in parse(MUNICIPAL)))
 
