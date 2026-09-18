@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Лингвострановедение — тренажёр ВсОШ</title>
+<style>/*QUIZ_CSS*/</style>
+</head>
+<body>
+<header>
+  <h1>Лингвострановедение</h1>
+  <p id="stats"></p>
+</header>
+
+<main>
+  <section id="start" class="screen">
+    <h2>Новый раунд</h2>
+
+    <div class="field">
+      <span class="field-label">Темы</span>
+      <div id="topicChips" class="chips"></div>
+    </div>
+
+    <details class="more">
+      <summary>Год и этап</summary>
+      <div class="field"><span class="field-label">Год</span><div id="yearChips" class="chips"></div></div>
+      <div class="field"><span class="field-label">Этап</span><div id="stageChips" class="chips"></div></div>
+    </details>
+
+    <div class="field switches">
+      <label><input type="checkbox" id="onlyUnfinished"> только непройденные</label>
+      <label><input type="checkbox" id="onlyVerified"> только проверенные</label>
+    </div>
+
+    <div class="field">
+      <span class="field-label">Вопросов в раунде</span>
+      <div id="sizes" class="chips"></div>
+    </div>
+
+    <p id="eligibleCount" class="count"></p>
+    <div class="actions">
+      <button id="startRound" class="primary">Начать раунд</button>
+      <button id="openDatabase">База вопросов</button>
+      <button id="resetProgress" class="quiet">Сбросить прогресс</button>
+    </div>
+  </section>
+
+  <section id="round" class="screen" hidden>
+    <p id="roundMeta" class="meta"></p>
+    <h2 id="questionText"></h2>
+    <div id="optionList" class="options"></div>
+    <div id="feedback" class="feedback" hidden>
+      <p id="verdict" class="verdict"></p>
+      <p id="explanation"></p>
+      <ul id="evidence" class="evidence"></ul>
+      <p id="unverifiedNote" class="note" hidden>
+        Ответ взят из официального ключа, но ещё не перепроверен по источникам.
+      </p>
+      <button id="nextQuestion" class="primary">Дальше</button>
+    </div>
+    <button id="leaveRound" class="quiet">Закончить раунд</button>
+  </section>
+
+  <section id="database" class="screen" hidden>
+    <h2>База вопросов</h2>
+    <div class="field database-filters">
+      <input id="search" type="search" placeholder="Поиск по русскому тексту">
+      <select id="statusFilter">
+        <option value="">любой статус</option>
+        <option value="verified">проверено</option>
+        <option value="unverified">не проверено</option>
+        <option value="conflict">расхождение</option>
+        <option value="needs-review">нет ответа</option>
+      </select>
+    </div>
+    <p id="databaseCount" class="count"></p>
+    <div id="databaseList" class="rows"></div>
+    <button id="backToStart" class="quiet">Назад</button>
+  </section>
+</main>
+
+<script>
+const QUESTION_BANK = /*QUESTION_BANK*/;
+/*QUIZ_ENGINE*/
+</script>
+<script>/*QUIZ_UI*/</script>
+</body>
+</html>

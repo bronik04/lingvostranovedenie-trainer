@@ -1,0 +1,160 @@
+:root {
+  --ink: #1d2430;
+  --muted: #6b7684;
+  --line: #dfe3e8;
+  --paper: #ffffff;
+  --back: #f6f7f9;
+  --accent: #8a1c1c;
+  --right: #1f7a4d;
+  --wrong: #a32020;
+  --shadow: 0 1px 2px rgba(29, 36, 48, .06), 0 8px 24px rgba(29, 36, 48, .06);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 16px 64px;
+  background: var(--back);
+  color: var(--ink);
+  font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
+}
+
+header {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 0 16px;
+}
+
+h1 { margin: 0; font-size: 22px; letter-spacing: .01em; }
+h2 { margin: 0 0 16px; font-size: 19px; font-weight: 600; }
+
+#stats { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+
+main { max-width: 760px; margin: 0 auto; }
+
+.screen {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 22px;
+}
+
+.field { margin-bottom: 18px; }
+.field-label { display: block; margin-bottom: 8px; color: var(--muted); font-size: 13px; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.chip {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 7px 13px;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.chip:hover { border-color: #c3c9d1; }
+.chip-on { background: var(--ink); border-color: var(--ink); color: #fff; }
+
+.switches { display: flex; gap: 20px; flex-wrap: wrap; }
+.switches label { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+
+details.more { margin-bottom: 18px; }
+details.more summary { cursor: pointer; color: var(--muted); font-size: 14px; margin-bottom: 12px; }
+
+.count { color: var(--muted); font-size: 14px; margin: 0 0 16px; }
+
+.actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+button {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 10px;
+  padding: 10px 16px;
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) { border-color: #c3c9d1; }
+button:disabled { opacity: .45; cursor: default; }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+button.quiet { border-color: transparent; color: var(--muted); padding-left: 8px; padding-right: 8px; }
+
+.meta { color: var(--muted); font-size: 13px; margin: 0 0 12px; }
+
+.options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
+
+.option {
+  text-align: left;
+  font-size: 19px;
+  line-height: 1.4;
+  padding: 14px 16px;
+}
+
+.option .label { color: var(--muted); font-size: 14px; margin-right: 10px; }
+.option:disabled { opacity: .5; }
+/* разобранный вариант не должен блёкнуть вместе с остальными: именно на него смотрят */
+.option.right, .option.wrong { opacity: 1; }
+.option.right { border-color: var(--right); background: #f1f9f4; }
+.option.wrong { border-color: var(--wrong); background: #fdf3f3; }
+
+.feedback {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  margin-bottom: 12px;
+}
+
+.verdict { font-weight: 600; margin: 0 0 8px; }
+.verdict.right { color: var(--right); }
+.verdict.wrong { color: var(--wrong); }
+
+.evidence { margin: 10px 0 0; padding-left: 18px; font-size: 14px; }
+.evidence a { color: var(--accent); }
+
+.note { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+
+.database-filters { display: flex; gap: 10px; flex-wrap: wrap; }
+
+#search, #statusFilter {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 15px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+#search { flex: 1 1 260px; }
+
+.rows { display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; }
+
+.row { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+.row h3 { margin: 0 0 6px; font-size: 16px; font-weight: 600; }
+.row .zh { font-size: 17px; margin: 6px 0 0; }
+.row .answer { margin: 8px 0 0; color: var(--right); font-size: 15px; }
+
+.tag {
+  display: inline-block;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 12px;
+  color: var(--muted);
+  margin-right: 6px;
+}
+
+.tag.warn { border-color: #e2c08a; color: #8a6415; }
+
+.empty { color: var(--muted); font-size: 14px; }
+
+@media (max-width: 560px) {
+  .screen { padding: 16px; }
+  .option { font-size: 18px; }
+}
