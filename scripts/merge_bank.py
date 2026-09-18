@@ -187,7 +187,10 @@ def _options_rank(record: dict, keys: set[str]) -> tuple[int, int, int]:
     return hosts_keys, filled, _authority(record['sourceFile'])
 
 
-def merge(raw: list[dict], translations: dict[str, str]) -> tuple[list[dict], dict]:
+def merge(raw: list[dict], translations: dict[str, str],
+          verification: dict[str, dict] | None = None) -> tuple[list[dict], dict]:
+    """Собрать банк. `verification` — результаты волн проверки, они переживают пересборку."""
+    verification = verification or {}
     groups = _group(raw, translations)
 
     bank: list[dict] = []
@@ -283,6 +286,15 @@ def merge(raw: list[dict], translations: dict[str, str]) -> tuple[list[dict], di
         if len(members) > 1:
             report['merged'].append({'id': bank_id, 'count': len(members)})
 
+        verified = verification.get(bank_id)
+        if verified:
+            # результат волны проверки старше любого ключа: он подтверждён источником
+            official = {entry['officialKey'] for entry in occurrences if entry['officialKey']}
+            if official and verified['optionId'] not in official:
+                answer = {'optionId': None, 'state': 'conflict'}
+            else:
+                answer = {'optionId': verified['optionId'], 'state': 'verified'}
+
         bank.append({
             'id': bank_id,
             'topic': topics[0] if topics else None,
@@ -292,9 +304,9 @@ def merge(raw: list[dict], translations: dict[str, str]) -> tuple[list[dict], di
             'options': options,
             'occurrences': occurrences,
             'answer': answer,
-            'explanation': {'ru': ''},
-            'evidence': [],
-            'wave': 0,
+            'explanation': {'ru': verified['explanation'] if verified else ''},
+            'evidence': verified['evidence'] if verified else [],
+            'wave': verified['wave'] if verified else 0,
             'parseWarnings': sorted({w for m in members for w in m['parseWarnings']}),
         })
 
@@ -340,12 +352,15 @@ def main() -> None:
             continue
         raw.extend(json.loads(path.read_text('utf-8')))
     translations = json.loads((ROOT / 'data/translations.json').read_text('utf-8'))
-    bank, report = merge(raw, translations)
+    verification_file = ROOT / 'data/verification.json'
+    verification = json.loads(verification_file.read_text('utf-8')) if verification_file.exists() else {}
+    bank, report = merge(raw, translations, verification)
     (ROOT / 'data/bank.json').write_text(
         json.dumps(bank, ensure_ascii=False, indent=2, sort_keys=True) + '\n', encoding='utf-8')
     (ROOT / 'data/review').mkdir(parents=True, exist_ok=True)
     _write_report(report, bank)
-    print(f'банк: {len(bank)} записей; отчёт: data/review/merge.md')
+    checked = sum(1 for record in bank if record['answer']['state'] == 'verified')
+    print(f'банк: {len(bank)} записей, проверено {checked}; отчёт: data/review/merge.md')
 
 
 if __name__ == '__main__':

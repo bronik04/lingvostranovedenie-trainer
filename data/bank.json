@@ -1,12 +1,18 @@
 [
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o1",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "夏朝 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E5%A4%8F%E6%9C%9D"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первой династией китайской истории считается Ся (夏), около 2070–1600 гг. до н. э. 秦, 明 и 清 — гораздо более поздние династии, последняя из них пала в 1912 году."
     },
     "id": "2015-16-mun-1",
     "occurrences": [
@@ -46,16 +52,27 @@
     "questionZh": "中国最早的王朝叫什么？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国面积最大的四个岛屿 — 腾讯新闻",
+        "url": "https://news.qq.com/rain/a/20200212A0PHDG00"
+      },
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国10大岛屿列表 — 中国经济网",
+        "url": "http://intl.ce.cn/zhuanti/2012/hsdy/zgdy/201207/09/t20120709_23474236.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Самый крупный остров Китая — Тайвань (台湾岛), около 36 193 км². Хайнань (32 198 км²) идёт вторым, Чунмин и Чансин на порядок меньше."
     },
     "id": "2015-16-mun-10",
     "occurrences": [
@@ -96,7 +113,7 @@
     "questionZh": "中国最大的岛是什么？",
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
@@ -151,11 +168,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "我国5个自治区分别是哪些 — 北京市密云区人民政府",
+        "url": "https://www.bjmy.gov.cn/zwgk/ztbd/cjqgmztjjbsfq/mzzsll/202407/t20240704_427396.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Автономных районов пять: Внутренняя Монголия (1947), Синьцзян (1955), Нинся (1958), Гуанси (1958) и Тибет (1965). Варианты 2, 3 и 4 не отражают этот перечень."
     },
     "id": "2015-16-mun-3",
     "occurrences": [
@@ -196,16 +219,22 @@
     "questionZh": "中国有几个自治区？",
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "北宫门：最大皇家园林 — Правительство Пекина",
+        "url": "https://www.beijing.gov.cn/renwen/lsfm/lsmc/201608/t20160830_1869337.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Ихэюань (颐和园) — самый большой и лучше всех сохранившийся императорский парк Китая, около 290 га, с 1998 года в списке ЮНЕСКО. 北海公园, 香山公园 и 景山公园 значительно меньше."
     },
     "id": "2015-16-mun-4",
     "occurrences": [
@@ -246,16 +275,22 @@
     "questionZh": "北京最大的皇家园林叫什么？",
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o4",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国红的文化内涵 — 安徽理论网",
+        "url": "http://ll.anhuinews.com/wszj/202310/t20231025_7184101.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Красный (红色) в Китае — цвет праздника, удачи и благополучия: красные фонари, конверты, свадебные наряды. Жёлтый связан с императорской властью, чёрный и синий праздничной символики не несут."
     },
     "id": "2015-16-mun-5",
     "occurrences": [
@@ -295,7 +330,7 @@
     "questionZh": "在中国什么颜色表示吉祥喜庆？",
     "topic": "Культура, традиции и праздники",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
@@ -500,11 +535,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "直辖市 (中华人民共和国) — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E7%9B%B4%E8%BE%96%E5%B8%82_(%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD)"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Из перечисленного статус города центрального подчинения имеет только Тяньцзинь (天津). 广州 — административный центр Гуандуна, 桂林 — обычный город Гуанси, 香港 — специальный административный район, а не город центрального подчинения."
     },
     "id": "2015-16-reg-1",
     "occurrences": [
@@ -545,7 +586,7 @@
     "questionZh": "哪一个城市是中国的直辖市？",
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
@@ -600,11 +641,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国河流知多少 — 中国科学院地理科学与资源研究所",
+        "url": "http://igsnrr.cas.cn/cbkx/kpyd/zybk/szy/202009/t20200910_5692838.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Янцзы (长江) — самая длинная река Китая, около 6300 км, третья в мире. Хуанхэ (5464 км) вторая, Чжуцзян короче, а 大运河 — рукотворный Великий канал, а не река."
     },
     "id": "2015-16-reg-2",
     "occurrences": [
@@ -645,7 +692,7 @@
     "questionZh": "中国的第一大河流叫什么？",
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
@@ -1112,12 +1159,18 @@
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o3",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "经济特区 — 中国政协",
+        "url": "http://www.cppcc.gov.cn/2011/09/26/ARTI1317001118812167.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Специальных экономических зон пять: 深圳, 珠海, 汕头, 厦门 (все созданы в 1980 году) и 海南 (1988). Кашгар и Хоргос получили этот статус позже и в классическую пятёрку не входят."
     },
     "id": "2015-16-shk-58",
     "occurrences": [
@@ -1158,7 +1211,7 @@
     "questionZh": "中国有几个经济特区？",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
@@ -1523,12 +1576,18 @@
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o3",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "APEC — 2001 Ministerial Meeting",
+        "url": "https://www.apec.org/meeting-papers/annual-ministerial-meetings/2001/2001_amm"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Девятая встреча лидеров АТЭС прошла 20–21 октября 2001 года в Шанхае (上海) — это был первый саммит АТЭС в Китае. 广州, 杭州 и 西安 саммитов АТЭС не принимали."
     },
     "id": "2015-16-zak-1",
     "occurrences": [
@@ -1569,16 +1628,27 @@
     "questionZh": "2001 年 APEC 会议是在中国哪一个城市举行的？",
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o2",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "清明节 — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/project_details/14907/"
+      },
+      {
+        "checkedAt": "2026-09-18",
+        "title": "为什么清明节总在4月5日左右 — 中国网",
+        "url": "http://guoqing.china.com.cn/2020-04/06/content_75898756.htm"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Цинмин — единственный китайский праздник, привязанный к солнечному календарю: он приходится на 4–6 апреля, обычно на 5 апреля. Остальные варианты — даты лунного календаря: 五月初五 — Дуаньу, 八月十五 — Середина осени, 正月十五 — Юаньсяо."
     },
     "id": "2015-16-zak-10",
     "occurrences": [
@@ -1619,16 +1689,22 @@
     "questionZh": "清明节在每年的什么时候？",
     "topic": "Культура, традиции и праздники",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o4",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "习近平当选国家主席、国家军委主席 — 中国共产党新闻网",
+        "url": "http://cpc.people.com.cn/n/2013/0314/c64094-20795043.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Си Цзиньпин (习近平) избран Председателем КНР 14 марта 2013 года на 1-й сессии ВСНП 12-го созыва и занимал этот пост на момент олимпиады. 毛泽东 и 江泽民 — председатели прошлых лет, 李克强 был премьером Госсовета, а не председателем."
     },
     "id": "2015-16-zak-2",
     "occurrences": [
@@ -1669,16 +1745,22 @@
     "questionZh": "中国现任国家主席是谁？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o4",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "战国七雄 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%88%98%E5%9B%BD%E4%B8%83%E9%9B%84"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "В период Чжаньго выделяют «семь сильнейших» (战国七雄): 秦, 齐, 楚, 燕, 韩, 赵 и 魏. Варианты 1, 3 и 4 не соответствуют этому устоявшемуся перечню."
     },
     "id": "2015-16-zak-3",
     "occurrences": [
@@ -1719,16 +1801,22 @@
     "questionZh": "战国时期主要有几个国家？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o1",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "秦统一中国 — 中考网 (учебник истории, 7 класс)",
+        "url": "https://m.zhongkao.com/e/20250319/67dade9566b66.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "В китайской историографии Цинь (秦朝, 221 г. до н. э.) называют первым единым многонациональным феодальным государством. 夏朝 относят к более раннему, дофеодальному периоду, а 汉朝 и 明朝 наследовали циньскому устройству."
     },
     "id": "2015-16-zak-4",
     "occurrences": [
@@ -1769,16 +1857,22 @@
     "questionZh": "中国历史上第一个封建王朝叫什么？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o3",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "元朝 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%85%83%E6%9C%9D/266205"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Династию Юань в 1271 году основал монгол (蒙古族) Хубилай, внук Чингисхана. 满族 основали Цин, 汉族 — Хань и Мин, 藏族 своей общекитайской династии не имели."
     },
     "id": "2015-16-zak-5",
     "occurrences": [
@@ -1819,16 +1913,27 @@
     "questionZh": "元朝是由哪个民族建立的？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o3",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国首都 — 六大古都",
+        "url": "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%9B%BD%E9%A6%96%E9%83%BD"
+      },
+      {
+        "checkedAt": "2026-09-18",
+        "title": "六大古都都有哪些文化特色 — 人民网",
+        "url": "http://m.people.cn/n4/2018/0625/c677-11188643.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Шесть древних столиц — 西安, 洛阳, 南京, 北京, 开封 и 杭州. 苏州 (Сучжоу) при всей своей исторической значимости столицей китайских династий не был, поэтому он и лишний в этом ряду."
     },
     "id": "2015-16-zak-6",
     "occurrences": [
@@ -1869,16 +1974,22 @@
     "questionZh": "哪一个城市不是中国历史上的六大古都？",
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o1",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "龟虽寿 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E9%BE%9F%E8%99%BD%E5%AF%BF/2356846"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Строка «老骥伏枥，志在千里» — из стихотворения Цао Цао (曹操) «Черепаха, хоть и долговечна» (龟虽寿), написанного около 208 года. 李白 — поэт эпохи Тан, 鲁迅 и 周恩来 жили в XX веке."
     },
     "id": "2015-16-zak-7",
     "occurrences": [
@@ -1919,16 +2030,22 @@
     "questionZh": "“老骥伏枥志在千里”是流传千古的名句，它的作者是谁？",
     "topic": "Литература, язык, искусство и философия",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o4",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "老舍 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E8%80%81%E8%88%8D"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Пьесу «Чайная» (茶馆) написал Лао Шэ (老舍), ему же принадлежит роман «Рикша» (骆驼祥子). 鲁迅 и 郭沫若 — современники Лао Шэ, но авторами «Чайной» не были, а 李鹏 — политик, не писатель."
     },
     "id": "2015-16-zak-8",
     "occurrences": [
@@ -1969,16 +2086,22 @@
     "questionZh": "著名话剧“茶馆”是谁写的？",
     "topic": "Литература, язык, искусство и философия",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o3",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Уйгуры — история и происхождение народа",
+        "url": "https://famiry.ru/database/glossary/uiguri"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Уйгуры приняли ислам (伊斯兰教) начиная с X века и в большинстве своём являются мусульманами-суннитами ханафитского мазхаба. Буддизм был их религией до исламизации, христианство и католичество среди уйгуров единичны."
     },
     "id": "2015-16-zak-9",
     "occurrences": [
@@ -2019,7 +2142,7 @@
     "questionZh": "维吾尔族信仰什么宗教？",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
@@ -7985,12 +8108,18 @@
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o4",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "《诗经》：中国文学之源 — 中国孔子网",
+        "url": "https://kzwadmin.chinakongzi.org/index/app/show?articleId=34562&colId=12&type=putong&userid=0&token="
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "«Ши цзин» (诗经) — первый в Китае свод поэзии: 305 песен XI–VI вв. до н. э., то есть до середины Чуньцю. 楚辞 сложился позже, в царстве Чу, 汉乐府 — при Хань, 古诗十九首 — ещё позднее."
     },
     "id": "2019-20-mun-q5616d1",
     "occurrences": [
@@ -8029,16 +8158,22 @@
     "questionZh": "在两千年前的中国春秋时期出现了中国第一部诗歌总集。这部诗集叫什 么？",
     "topic": "Литература, язык, искусство и философия",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o3",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "1924：求同存异承大义 — 中华人民共和国应急管理部",
+        "url": "https://www.mem.gov.cn/xw/ztzl/2021/dsxxjy/xxfd/202103/t20210329_382243.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Новое толкование трёх народных принципов Сунь Ятсен (孙中山) дал на I съезде Гоминьдана в январе 1924 года. 毛泽东 и 周恩来 — деятели КПК, 蒋介石 возглавил Гоминьдан уже после смерти Сунь Ятсена."
     },
     "id": "2019-20-mun-q61e036",
     "occurrences": [
@@ -8077,16 +8212,22 @@
     "questionZh": "“新三民主义”是谁提出的？",
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o4",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "壮族 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/seac/ztzl/zhz/gk.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Самое многочисленное нацменьшинство Китая — чжуаны (壮族), около 16,9 млн человек, из них почти 88 % живут в Гуанси. Маньчжуры идут вторыми, хуэй и тибетцы уступают им обоим."
     },
     "id": "2019-20-mun-q727051",
     "occurrences": [
@@ -8125,16 +8266,22 @@
     "questionZh": "目前在中国人口最多的少数民族是哪一个民族？",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o2",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中秋节的来历和习俗 — 中国气象局",
+        "url": "https://www.cma.gov.cn/kppd/kppdsytj/201609/t20160914_322366.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "На Праздник середины осени едят лунные пряники (月饼) — круглая форма символизирует воссоединение семьи. 粽子 едят на Дуаньу, 饺子 — на Новый год, а 鱼香肉丝 — обычное сычуаньское блюдо без праздничной привязки."
     },
     "id": "2019-20-mun-q81216d",
     "occurrences": [
@@ -8173,16 +8320,22 @@
     "questionZh": "中秋节的特色食品是什么？",
     "topic": "Культура, традиции и праздники",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o2",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "肠粉：潜藏了太多粤人独门绝技的小吃 — 广州市地方志",
+        "url": "https://igz.gzwxb.gov.cn/context/context/202380"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Чханьфэнь (肠粉) — рисовые рулетики на пару, классика гуанчжоуского утреннего чая. 肉夹馍 — уличная еда Шэньси, 饺子 и 蛋糕 гуанчжоуской спецификой не являются."
     },
     "id": "2019-20-mun-qa1e183",
     "occurrences": [
@@ -8221,16 +8374,22 @@
     "questionZh": "在下列美食中，哪一个属于广州的传统小吃？",
     "topic": "Культура, традиции и праздники",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o2",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Мемориальный комплекс «Героям Сталинградской битвы» на Мамаевом кургане",
+        "url": "https://stalingrad-battle.ru/about/about-museum-inner/2302/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Скульптура «Родина-мать зовёт!» стоит на Мамаевом кургане (马马耶夫山) в Волгограде — это центр памятника-ансамбля «Героям Сталинградской битвы», открытого в 1967 году. Остальные варианты — река Халхин-Гол, Москва-река и Кавказские горы — к Сталинградской битве отношения не имеют."
     },
     "id": "2019-20-mun-qce7da2",
     "occurrences": [
@@ -8269,16 +8428,22 @@
     "questionZh": "“祖国母亲在召唤”是一座为纪念斯大林格勒战役而设立的雕像，它位于 什么地方？",
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o2",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "古丝绸之路起点探析 — 陕西省文物局",
+        "url": "https://wwj.shaanxi.gov.cn/ztzl/ndzt/2013n/slsy/ycdt_2412/201408/t20140807_2145037.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Восточным началом Шёлкового пути был Чанъань — нынешний Сиань (西安): именно оттуда в 138 г. до н. э. отправилось посольство Чжан Цяня. 洛阳 был столицей Восточной Хань и спорит за это звание, но исходной точкой считается Чанъань; 开封 и 苏州 к Шёлковому пути не относятся."
     },
     "id": "2019-20-mun-qcfa774",
     "occurrences": [
@@ -8317,16 +8482,22 @@
     "questionZh": "著名的“丝绸之路”的起点是现在中国的哪座城市？",
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o2",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Города-герои — may9.ru",
+        "url": "https://may9.ru/our-victory/city-hero/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Звание города-героя получили 12 городов: Москва, Ленинград, Волгоград, Киев, Минск, Одесса, Севастополь, Керчь, Новороссийск, Тула, Мурманск и Смоленск. Брестская крепость носит отдельное звание «крепость-герой» и в число двенадцати городов не входит."
     },
     "id": "2019-20-mun-qd87aa6",
     "occurrences": [
@@ -8365,16 +8536,27 @@
     "questionZh": "前苏联有多少英雄城市？",
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o3",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "书同文 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B9%A6%E5%90%8C%E6%96%87/858625"
+      },
+      {
+        "checkedAt": "2026-09-18",
+        "title": "“文字异形”到“书同文字” — 中国社会科学网",
+        "url": "https://www.cssn.cn/skgz/bwyc/202302/t20230228_5599635.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Единое письмо (书同文) ввёл Цинь Шихуан (秦始皇) после объединения страны в 221 г. до н. э.; канцлер Ли Сы свёл разнобой царств к единому стилю сяочжуань. 刘邦, 唐太宗 и 武则天 правили позже, когда письменность уже была единой."
     },
     "id": "2019-20-mun-qe6c5d3",
     "occurrences": [
@@ -8413,16 +8595,22 @@
     "questionZh": "中国最早统一文字的皇帝是谁？",
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o2",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "女娲造人的传说 — 人民日报",
+        "url": "http://paper.people.com.cn/rmrbhwb/html/2015-07/24/content_1590909.htm"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "О происхождении людей рассказывает миф «Нюйва лепит людей» (女娲造人): богиня лепит людей из жёлтой глины. 盘古开天 объясняет возникновение мира, 夸父逐日 и 后羿射日 — мифы о солнце, а не о людях."
     },
     "id": "2019-20-mun-qf8fe30",
     "occurrences": [
@@ -8461,7 +8649,7 @@
     "questionZh": "中国古代的哪一个神话故事反映了远古中国人对人类起源的认识？",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
@@ -12639,12 +12827,18 @@
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o4",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "气候 — 中华人民共和国驻乌拉圭大使馆",
+        "url": "https://uy.china-embassy.gov.cn/zggk/zggk/201001/t20100106_4691696.htm"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Большая часть Китая лежит в умеренном поясе (温带) — отсюда и муссонный климат с жарким влажным летом и холодной сухой зимой. Тропический и экваториальный пояса занимают лишь крайний юг, а холодного пояса (寒带) в Китае нет вовсе."
     },
     "id": "2022-23-mun-1",
     "occurrences": [
@@ -12686,16 +12880,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o4",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "我国5个自治区分别是哪些 — 北京市密云区人民政府",
+        "url": "https://www.bjmy.gov.cn/zwgk/ztbd/cjqgmztjjbsfq/mzzsll/202407/t20240704_427396.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Автономных районов в Китае пять: 广西, 内蒙古, 宁夏, 新疆 и 西藏. Юньнань (云南) — обычная провинция, хотя в её составе много автономных округов."
     },
     "id": "2022-23-mun-10",
     "occurrences": [
@@ -12737,16 +12937,22 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o3",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "一场彻底的反帝反封建爱国运动 — 共产党员网",
+        "url": "http://www.12371.cn/2019/04/17/ARTI1555473076888791.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Движение «4 мая» началось 4 мая 1919 года выступлением пекинских студентов против решений Парижской мирной конференции. 1911 год — Синьхайская революция, 1949 — образование КНР, 1909 год ничем в этом ряду не отмечен."
     },
     "id": "2022-23-mun-2",
     "occurrences": [
@@ -12788,16 +12994,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o2",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "从“四大奇书”到“四大名著” — 腾讯新闻",
+        "url": "https://news.qq.com/rain/a/20240324A04C0M00"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "В «четыре классических романа» входят 三国演义, 水浒传, 西游记 и 红楼梦. «Цзинь пин мэй» (金瓶梅) относили к «четырём удивительным книгам» минской эпохи, но в современную четвёрку он не входит — его место занял «Сон в красном тереме»."
     },
     "id": "2022-23-mun-3",
     "occurrences": [
@@ -12839,16 +13051,22 @@
     "questionZh": null,
     "topic": "Литература, язык, искусство и философия",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o1",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Москва как центр объединения русских земель",
+        "url": "https://examer.ru/ege_po_istorii/teoriya/moskva_kak_tsentr_obedineniya"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "В XIV–XV веках центром собирания русских земель стала Москва (莫斯科): при Иване Калите и Дмитрии Донском Московское княжество подчинило соперников, включая Тверь. Владимир и Тверь этот спор проиграли, а Петербург основан только в 1703 году."
     },
     "id": "2022-23-mun-4",
     "occurrences": [
@@ -12890,16 +13108,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o3",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Русско-японская война 1904–1905 — Большая российская энциклопедия",
+        "url": "https://bigenc.ru/c/russko-iaponskaia-voina-1904-1905-4bd7ec"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Русско-японская война шла с января 1904 по август 1905 года; её главными театрами были Маньчжурия и Ляодунский полуостров с Порт-Артуром и портом Дальний. 1914–1918 — Первая мировая, 1917–1922 — Гражданская война в России."
     },
     "id": "2022-23-mun-5",
     "occurrences": [
@@ -12941,16 +13165,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o2",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Памятник Минину и Пожарскому (Нижний Новгород)",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9C%D0%B8%D0%BD%D0%B8%D0%BD%D1%83_%D0%B8_%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%BC%D1%83_(%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9_%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4)"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Точная уменьшенная копия московского памятника Минину и Пожарскому установлена в Нижнем Новгороде (下诺夫哥罗德) 4 ноября 2005 года — именно там в 1611 году собиралось ополчение. В Петербурге, Ростове и Рязани таких копий нет."
     },
     "id": "2022-23-mun-6",
     "occurrences": [
@@ -12992,16 +13222,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o2",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "曲阜孔庙、孔林和孔府 — ЮНЕСКО",
+        "url": "https://whc.unesco.org/zh/list/704"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Конфуций родился в Цюйфу (曲阜) на юге Шаньдуна; храм, кладбище и усадьба рода Кун внесены ЮНЕСКО в список всемирного наследия. 济南 — административный центр Шаньдуна, но не родина Конфуция; 西安 и 洛阳 находятся в других провинциях."
     },
     "id": "2022-23-mun-7",
     "occurrences": [
@@ -13043,16 +13279,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o2",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "越剧“嵊”开 — 新华网浙江",
+        "url": "https://www.zj.news.cn/20240329/0b230997936d440eb05e265e742ebcb1/c.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Юэцзюй (越剧) — второй по распространённости жанр китайской оперы; днём его рождения считается 27 марта 1906 года, место — уезд Шэнсянь в Чжэцзяне. 昆剧 старше и возник в Цзянсу, 粤剧 — гуандунский жанр, 评剧 — северный."
     },
     "id": "2022-23-mun-8",
     "occurrences": [
@@ -13094,16 +13336,22 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o1",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "1927年4月18日 蒋介石建立南京国民政府 — 人民网",
+        "url": "http://m.people.cn/n4/2017/0418/c2771-8785867.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Гоминьдановское правительство 18 апреля 1927 года объявило столицей Нанкин (南京), где она и оставалась до 1949 года (с перерывом на военное время в Чунцине). 广州 был базой до Северного похода, 西安 и 上海 столицами не были."
     },
     "id": "2022-23-mun-9",
     "occurrences": [
@@ -13145,7 +13393,7 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
@@ -18196,12 +18444,18 @@
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o3",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "满族 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/seac/ztzl/manz/gk.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Больше половины маньчжуров Китая живёт в Ляонине (辽宁) — свыше 5,3 млн человек, около 51 % всей численности народа. 吉林 и 黑龙江 тоже входят в ареал расселения, но уступают Ляонину, а 湖北 к нему не относится."
     },
     "id": "2024-25-shk-32",
     "occurrences": [
@@ -18243,7 +18497,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
@@ -18451,12 +18705,23 @@
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o1",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国十大钢铁城市及十大钢铁基地",
+        "url": "https://www.sohu.com/a/420571883_483538"
+      },
+      {
+        "checkedAt": "2026-09-18",
+        "title": "鞍山钢铁集团 — 辽宁科技大学",
+        "url": "https://www.ustl.edu.cn/cyxy/info/1283/3016.htm"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Аньшань, Бэньси, Баотоу и Ухань — крупнейшие центры чёрной металлургии (黑色冶金业): Аньшань-Бэньси остаётся главной металлургической базой страны, Уханьский комбинат построен в 1950-е. Машиностроение, текстильная и химическая промышленность в этих городах не профильные."
     },
     "id": "2024-25-shk-37",
     "occurrences": [
@@ -18498,7 +18763,7 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
@@ -19033,12 +19298,18 @@
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o1",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Эльбрус — высочайшая вершина России и Европы",
+        "url": "https://www.putevka.com/kabardino-balkarskaya-respublika/kabardino-balkariya/sight/gora-elbrus"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Самые высокие горы России — Кавказские (高加索山): Эльбрус поднимается на 5642 м. Алтай (высшая точка Белуха, 4506 м), Саяны и Урал заметно ниже."
     },
     "id": "2025-26-mun-1",
     "occurrences": [
@@ -19079,16 +19350,27 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o1",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国陶瓷史 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%9C%8B%E9%99%B6%E7%93%B7%E5%8F%B2"
+      },
+      {
+        "checkedAt": "2026-09-18",
+        "title": "瓷器的发明 — 中国科普博览",
+        "url": "http://www.kepu.net.cn/gb/technology/ancientech/ancientech_ceramics/200312300038.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Речь о фарфоре (瓷器): протофарфор появился в Китае ещё в эпохи Шан и Чжоу, а зрелый фарфор — к концу Восточной Хань, и именно Китай стал его родиной. 陶器 (керамика) древнее на тысячелетия и не изобреталась в этот период, 青铜 — металл, а стекло (玻璃) в Китай пришло извне."
     },
     "id": "2025-26-mun-10",
     "occurrences": [
@@ -19129,16 +19411,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o2",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Сто рублей — описание банкноты",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%BE_%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Москва изображена на 100-рублёвой купюре: на ней Большой театр и квадрига Аполлона. На 50 рублях — Петербург, на 1000 — Ярославль, на 5000 — Хабаровск."
     },
     "id": "2025-26-mun-2",
     "occurrences": [
@@ -19179,16 +19467,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o3",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Михаил Лермонтов — стихи и поэмы, Культура.РФ",
+        "url": "https://www.culture.ru/literature/poems/author-mikhail-lermontov"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Поэмы «Демон» и «Мцыри», стихотворения «Парус», «Смерть поэта», «Родина» написал Михаил Лермонтов (莱蒙托夫). 普希金, 马雅可夫斯基 и 勃洛克 — другие поэты, этих произведений им не принадлежит."
     },
     "id": "2025-26-mun-3",
     "occurrences": [
@@ -19229,16 +19523,22 @@
     "questionZh": null,
     "topic": "Литература, язык, искусство и философия",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o1",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Екатерина II Алексеевна Великая (1762–1796)",
+        "url": "https://imperialhouse.ru/rus/imperialhouse/succession/monarh/ekaterina-ii-alekseevna-velikaya-1762-1796.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Царствование с 1762 по 1796 год — это Екатерина II (叶卡捷琳娜二世), самое долгое правление среди российских императриц. Екатерина I правила в 1725–1727, Анна Иоанновна в 1730–1740, Елизавета Петровна в 1741–1761 годах."
     },
     "id": "2025-26-mun-4",
     "occurrences": [
@@ -19279,16 +19579,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o4",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "老舍 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E8%80%81%E8%88%8D"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "И роман «Рикша» (骆驼祥子), и пьеса «Чайная» (茶馆) написаны Лао Шэ (老舍). 李白 — танский поэт, 鲁迅 писал другие произведения, а 郭莫柔 — искажённое написание имени 郭沫若."
     },
     "id": "2025-26-mun-5",
     "occurrences": [
@@ -19329,16 +19635,22 @@
     "questionZh": null,
     "topic": "Литература, язык, искусство и философия",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o1",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国四大海域 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%9B%9B%E5%A4%A7%E6%B5%B7%E5%9F%9F/14444698"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Китай омывают четыре моря: 渤海, 黄海 (Жёлтое), 东海 и 南海. Японское море (日本海) выхода к Китаю не имеет, Чёрное (黑海) и море Лаптевых (拉普捷夫海) находятся в других частях света."
     },
     "id": "2025-26-mun-6",
     "occurrences": [
@@ -19379,16 +19691,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o3",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国14个陆地邻国 — 当代中国",
+        "url": "https://www.ourchinastory.com/cn/9272/%E4%B8%AD%E5%9B%BD%E5%9C%B0%E7%90%86%E5%B0%8F%E7%9F%A5%E8%AF%86"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "У Китая 14 сухопутных соседей, и Таиланда (泰国) среди них нет — между ними лежат Лаос и Мьянма. 缅甸, 老挝 и 蒙古 с Китаем граничат."
     },
     "id": "2025-26-mun-7",
     "occurrences": [
@@ -19429,16 +19747,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o3",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "直辖市 (中华人民共和国) — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E7%9B%B4%E8%BE%96%E5%B8%82_(%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD)"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Городов центрального подчинения в Китае четыре: 北京, 上海, 天津 и 重庆 — последний получил этот статус в 1997 году. Варианты 1, 2 и 3 отражают только более ранние этапы этого списка."
     },
     "id": "2025-26-mun-8",
     "occurrences": [
@@ -19479,16 +19803,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {
-      "optionId": null,
-      "state": "needs-review"
+      "optionId": "o4",
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "凤凰 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E9%B3%B3%E5%87%B0"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Феникс (凤凰) — мифическая птица, связанная с солнцем, огнём и возрождением, символ императрицы. Утка, сова и лебедь такой роли в китайской символике не играют."
     },
     "id": "2025-26-mun-9",
     "occurrences": [
@@ -19529,7 +19859,7 @@
     "questionZh": null,
     "topic": "Культура, традиции и праздники",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 1
   },
   {
     "answer": {

@@ -5,6 +5,8 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -94,8 +96,26 @@ def main() -> None:
 
     results = json.loads(args.results.read_text('utf-8'))
     bank, mismatches = apply_results(bank, results, args.wave)
-    (ROOT / 'data/bank.json').write_text(
-        json.dumps(bank, ensure_ascii=False, indent=2, sort_keys=True) + '\n', encoding='utf-8')
+
+    # результаты живут отдельно от банка: банк пересобирается из источников, и без
+    # этого файла очередной прогон слияния стёр бы работу целой волны
+    verification_file = ROOT / 'data/verification.json'
+    verification = json.loads(verification_file.read_text('utf-8')) if verification_file.exists() else {}
+    for record in bank:
+        if record['wave']:
+            verification[record['id']] = {
+                'optionId': record['answer']['optionId'],
+                'state': record['answer']['state'],
+                'explanation': record['explanation']['ru'],
+                'evidence': record['evidence'],
+                'wave': record['wave'],
+            }
+    verification_file.write_text(
+        json.dumps(dict(sorted(verification.items())), ensure_ascii=False, indent=2) + '\n',
+        encoding='utf-8')
+
+    subprocess.run([sys.executable, str(ROOT / 'scripts/merge_bank.py')], check=True)
+    subprocess.run([sys.executable, str(ROOT / 'scripts/taxonomy.py')], check=True)
     write_report(args.wave, results, mismatches)
     print(f'волна {args.wave}: принято {len(results)}, расхождений {len(mismatches)}')
 

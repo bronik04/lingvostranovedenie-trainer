@@ -103,3 +103,33 @@ class MergeTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class VerificationSurvivesRebuildTest(unittest.TestCase):
+    """Пересборка банка не должна стирать работу волн проверки."""
+
+    def test_verified_answer_survives_a_full_remerge(self):
+        verification = {
+            '2023-24-shk-138': {
+                'optionId': 'o4', 'state': 'verified',
+                'explanation': 'Административный центр Цзянсу — 南京.',
+                'evidence': [{'title': 'Правительство Цзянсу', 'url': 'https://example.org',
+                              'checkedAt': '2026-09-18'}],
+                'wave': 1,
+            }
+        }
+        bank, _ = merge([raw()], {}, verification)
+        self.assertEqual(bank[0]['answer'], {'optionId': 'o4', 'state': 'verified'})
+        self.assertEqual(bank[0]['wave'], 1)
+        self.assertTrue(bank[0]['evidence'])
+
+    def test_verification_against_the_official_key_stays_a_conflict(self):
+        verification = {
+            '2023-24-shk-138': {
+                'optionId': 'o1', 'state': 'verified', 'explanation': 'Источники дают другой город.',
+                'evidence': [{'title': 'Источник', 'url': 'https://example.org', 'checkedAt': '2026-09-18'}],
+                'wave': 1,
+            }
+        }
+        bank, _ = merge([raw(officialKeyIndex=3)], {}, verification)
+        self.assertEqual(bank[0]['answer']['state'], 'conflict')
