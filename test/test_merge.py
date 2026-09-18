@@ -133,3 +133,29 @@ class VerificationSurvivesRebuildTest(unittest.TestCase):
         }
         bank, _ = merge([raw(officialKeyIndex=3)], {}, verification)
         self.assertEqual(bank[0]['answer']['state'], 'conflict')
+
+    def test_verification_reaches_a_record_whose_id_gained_a_collision_suffix(self):
+        """Два разных вопроса дают один и тот же базовый id (год-этап-номер) —
+        второй получает суффикс -a. verification.json пишется уже с этим суффиксом,
+        и проверка волны обязана найти именно его, а не базовый id."""
+        first = raw(questionRu='Какой город является столицей Франции?',
+                    options=['东京', '巴黎', '柏林', '罗马'], officialKeyIndex=None)
+        second = raw(questionRu='Какая река впадает в море Лаптевых?',
+                     options=['勒拿河', '额尔齐斯河', '鄂毕河', '叶尼塞河'], officialKeyIndex=2)
+        bank, _ = merge([first, second], {})
+        ids = sorted(record['id'] for record in bank)
+        self.assertEqual(ids, ['2023-24-shk-138', '2023-24-shk-138-a'])
+
+        laptev = next(record for record in bank if record['questionRu'].startswith('Какая река'))
+        verification = {
+            laptev['id']: {
+                'optionId': 'o1', 'state': 'verified',
+                'explanation': 'В море Лаптевых впадает Лена, а не Обь.',
+                'evidence': [{'title': 'Лена', 'url': 'https://example.org', 'checkedAt': '2026-09-18'}],
+                'wave': 3,
+            }
+        }
+        bank, _ = merge([first, second], {}, verification)
+        laptev = next(record for record in bank if record['questionRu'].startswith('Какая река'))
+        self.assertEqual(laptev['answer']['state'], 'conflict')
+        self.assertTrue(laptev['explanation']['ru'])

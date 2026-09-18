@@ -286,15 +286,6 @@ def merge(raw: list[dict], translations: dict[str, str],
         if len(members) > 1:
             report['merged'].append({'id': bank_id, 'count': len(members)})
 
-        verified = verification.get(bank_id)
-        if verified:
-            # результат волны проверки старше любого ключа: он подтверждён источником
-            official = {entry['officialKey'] for entry in occurrences if entry['officialKey']}
-            if official and verified['optionId'] not in official:
-                answer = {'optionId': None, 'state': 'conflict'}
-            else:
-                answer = {'optionId': verified['optionId'], 'state': 'verified'}
-
         bank.append({
             'id': bank_id,
             'topic': topics[0] if topics else None,
@@ -304,9 +295,9 @@ def merge(raw: list[dict], translations: dict[str, str],
             'options': options,
             'occurrences': occurrences,
             'answer': answer,
-            'explanation': {'ru': verified['explanation'] if verified else ''},
-            'evidence': verified['evidence'] if verified else [],
-            'wave': verified['wave'] if verified else 0,
+            'explanation': {'ru': ''},
+            'evidence': [],
+            'wave': 0,
             'parseWarnings': sorted({w for m in members for w in m['parseWarnings']}),
         })
 
@@ -320,6 +311,22 @@ def merge(raw: list[dict], translations: dict[str, str],
             record['id'] = f"{base}-{'abcdefghij'[seen[base] - 1]}"
         else:
             seen[base] = 0
+
+    # проверка волн применяется только теперь, когда id уже окончательные: если сделать
+    # это раньше, запись, попавшая в коллизию и получившая суффикс -a/-b, не найдёт себя
+    # в verification (он ключуется по итоговому id) и молча останется непроверенной
+    for record in bank:
+        verified = verification.get(record['id'])
+        if not verified:
+            continue
+        official = {entry['officialKey'] for entry in record['occurrences'] if entry['officialKey']}
+        if official and verified['optionId'] not in official:
+            record['answer'] = {'optionId': None, 'state': 'conflict'}
+        else:
+            record['answer'] = {'optionId': verified['optionId'], 'state': 'verified'}
+        record['explanation'] = {'ru': verified['explanation']}
+        record['evidence'] = verified['evidence']
+        record['wave'] = verified['wave']
 
     bank.sort(key=lambda record: record['id'])
     report['fragments'] = fragment_pairs([(r['id'], r['questionRu']) for r in bank])

@@ -335,11 +335,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "天安门 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%A9%E5%AE%89%E9%97%A8"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Строительство ворот Тяньаньмэнь началось в 1420 году при династии Мин (明代); нынешняя площадь сложилась значительно позже, но сами ворота и прилегающая застройка — минского происхождения."
     },
     "id": "2015-16-mun-6",
     "occurrences": [
@@ -380,7 +386,7 @@
     "questionZh": "北京的天安门是什么时代开始修建的？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -1016,11 +1022,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "长城 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%95%B7%E5%9F%8E"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Великая Китайская стена (长城) в её объединённом виде была построена при династии Цинь после объединения страны в 221 г. до н. э. — соединение и укрепление более ранних стен отдельных царств."
     },
     "id": "2015-16-reg-9",
     "occurrences": [
@@ -1061,7 +1073,7 @@
     "questionZh": "秦代修建的最伟大的工程是什么？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -1222,11 +1234,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "秦始皇 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A7%A6%E5%A7%8B%E7%9A%87"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Цинь Шихуан (秦始皇) стал первым императором объединённого Китая в 221 г. до н. э., приняв титул «хуанди»."
     },
     "id": "2015-16-shk-59",
     "occurrences": [
@@ -1267,16 +1285,22 @@
     "questionZh": "中国的第一个皇帝是谁？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "辛亥革命 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E8%BE%9B%E4%BA%A5%E9%9D%A9%E5%91%BD"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Синьхайская революция началась с Учанского восстания 10 октября 1911 года и в течение нескольких месяцев привела к свержению монархии."
     },
     "id": "2015-16-shk-60",
     "occurrences": [
@@ -1328,16 +1352,22 @@
     "questionZh": "辛亥革命是哪一年发生的？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "辛亥革命 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E8%BE%9B%E4%BA%A5%E9%9D%A9%E5%91%BD"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Синьхайская революция свергла династию Цин (清朝) — последнюю императорскую династию Китая, правившую с 1644 года."
     },
     "id": "2015-16-shk-61",
     "occurrences": [
@@ -1378,7 +1408,7 @@
     "questionZh": "辛亥革命推翻了哪一个王朝？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -2171,11 +2201,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "1927年4月18日 蒋介石建立南京国民政府 — 人民网",
+        "url": "http://m.people.cn/n4/2017/0418/c2771-8785867.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Правительство Гоминьдана объявило столицей Нанкин (南京) 18 апреля 1927 года — этот статус город сохранял до 1949 года, кроме военных лет."
     },
     "id": "2016-17-mun-10",
     "occurrences": [
@@ -2216,7 +2252,7 @@
     "questionZh": "国民党统治时期的首都在哪里？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -2327,11 +2363,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "香港回归 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E9%A6%99%E6%B8%AF%E5%9B%9E%E5%BD%92/1287541"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Китай восстановил суверенитет над Гонконгом 1 июля 1997 года после более чем полутора веков британского управления."
     },
     "id": "2016-17-mun-4",
     "occurrences": [
@@ -2372,7 +2414,7 @@
     "questionZh": "香港是在哪一年回归的？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -2427,11 +2469,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "邓小平 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%82%93%E5%B0%8F%E5%B9%B3"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Дэн Сяопина (邓小平) называют главным архитектором политики реформ и открытости, начатой в 1978 году на 3-м пленуме ЦК КПК 11-го созыва."
     },
     "id": "2016-17-mun-6",
     "occurrences": [
@@ -2472,16 +2520,22 @@
     "questionZh": "中国改革开放的总设计师是谁？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "元朝 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%85%83%E6%9C%9D/266205"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Династию Юань в 1271 году основал монгол (蒙古族) Хубилай — внук Чингисхана."
     },
     "id": "2016-17-mun-7",
     "occurrences": [
@@ -2522,16 +2576,22 @@
     "questionZh": "元朝是由哪个民族建立的？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "故宫 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%95%85%E5%AE%AB"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Императорский дворец династий Мин и Цин в Пекине сейчас называют Гугун (故宫, «Прежний дворец») — это музей Запретного города."
     },
     "id": "2016-17-mun-8",
     "occurrences": [
@@ -2572,7 +2632,7 @@
     "questionZh": "北京明清朝两代的皇宫现在叫作什么？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -2627,11 +2687,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中华人民共和国主席 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E4%B8%BB%E5%B8%AD"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Главу государства в Китае называют Председателем (主席) — этот титул носит Председатель КНР, глава государства по конституции 1982 года."
     },
     "id": "2016-17-reg-1",
     "occurrences": [
@@ -2672,7 +2738,7 @@
     "questionZh": "中国的国家元首称为什么？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -2733,11 +2799,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "全国人民代表大会 — 中国人大网",
+        "url": "http://www.npc.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Высший орган государственной власти Китая по конституции — Всекитайское собрание народных представителей (全国人民代表大会), а не Госсовет или Народный банк."
     },
     "id": "2016-17-reg-2",
     "occurrences": [
@@ -2778,7 +2850,7 @@
     "questionZh": "中国最高国家权力机关是什么？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -2833,11 +2905,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "三代 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B8%89%E4%BB%A3"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "«Тремя эпохами» (三代) в китайской историографии традиционно называют династии Ся, Шан и Западная Чжоу — древнейший период письменной китайской истории."
     },
     "id": "2016-17-reg-4",
     "occurrences": [
@@ -2878,7 +2956,7 @@
     "questionZh": "中国历史中常说的“三代”指的是哪三个王朝？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -2933,11 +3011,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "五四运动 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E4%BA%94%E5%9B%9B%E8%BF%90%E5%8A%A8/291670"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Движение «4 мая» вспыхнуло 4 мая 1919 года как реакция студентов на решения Парижской мирной конференции по вопросу Шаньдуна."
     },
     "id": "2016-17-reg-6",
     "occurrences": [
@@ -2978,7 +3062,7 @@
     "questionZh": "“五四运动”是在哪一年爆发的？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -3189,11 +3273,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "黄色 — 中国传统色",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E8%89%B2"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Со времён династии Тан жёлтый цвет (黄色) закрепился как исключительно императорский — его запрещалось использовать простолюдинам."
     },
     "id": "2016-17-shk-10",
     "occurrences": [
@@ -3234,7 +3324,7 @@
     "questionZh": "中国古代自唐朝以后，哪一个颜色是皇帝专用色？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -4331,11 +4421,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "清朝 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B8%85%E6%9C%9D"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Династия Цин (清代, 1644–1912) была последней феодальной династией в истории Китая."
     },
     "id": "2017-18-mun-3",
     "occurrences": [
@@ -4376,7 +4472,7 @@
     "questionZh": "中国历史上最后一个封建王朝的名称是什么？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -4431,11 +4527,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "香港回归 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E9%A6%99%E6%B8%AF%E5%9B%9E%E5%BD%92/1287541"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Китай возобновил осуществление суверенитета над Гонконгом с 1 июля 1997 года."
     },
     "id": "2017-18-mun-5",
     "occurrences": [
@@ -4476,7 +4578,7 @@
     "questionZh": "中国从哪一年开始对香港恢复行使主权？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -4737,11 +4839,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "孛儿只斤·忽必烈 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%AD%9B%E5%84%BF%E5%8F%AA%E6%96%A4%C2%B7%E5%BF%BD%E5%BF%85%E7%83%88/8451763"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Хубилай, первый император династии Юань, принадлежал к монголам (蒙古族) — он был внуком Чингисхана."
     },
     "id": "2017-18-reg-10",
     "occurrences": [
@@ -4782,7 +4890,7 @@
     "questionZh": "忽必烈是元朝的第一个皇帝。他是哪个民族的？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -4937,11 +5045,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "义勇军进行曲 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B9%89%E5%8B%87%E5%86%9B%E8%BF%9B%E8%A1%8C%E6%9B%B2"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Гимн КНР — «Марш добровольцев» (义勇军进行曲), написанный Не Эром на слова Тянь Ханя в 1935 году и утверждённый государственным гимном в 1949 (официально в 2004 внесён в конституцию)."
     },
     "id": "2017-18-reg-5",
     "occurrences": [
@@ -4996,7 +5110,7 @@
     "questionZh": "中华人民共和国的国歌是……。",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -5051,11 +5165,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "汉唐盛世 — 中国社会科学网",
+        "url": "https://www.cssn.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первое масштабное взаимодействие и слияние китайской и зарубежных культур в китайской историографии связывают с эпохой Хань–Тан (汉唐) — открытием Шёлкового пути и расцветом международных контактов."
     },
     "id": "2017-18-reg-7",
     "occurrences": [
@@ -5096,16 +5216,22 @@
     "questionZh": "中国文化与国外文化的第一次大规模的交流与融合发生在……时期。",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "七大古都 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B8%83%E5%A4%A7%E5%8F%A4%E9%83%BD"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Аньян, Лоян и Кайфэн — все три «семи древних столиц» Китая — находятся в провинции Хэнань (河南省)."
     },
     "id": "2017-18-reg-8",
     "occurrences": [
@@ -5146,7 +5272,7 @@
     "questionZh": "中国的“七大古都”中，安阳、洛阳和开封都在同一个省，请问这是 现在中国的哪一个省？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -5731,11 +5857,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中华民国临时大总统 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD%E4%B8%B4%E6%97%B6%E5%A4%A7%E6%80%BB%E7%BB%9F/1930082"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Сунь Ятсен (孙中山) стал первым временным президентом Китайской Республики 1 января 1912 года."
     },
     "id": "2017-18-zak-1",
     "occurrences": [
@@ -5776,7 +5908,7 @@
     "questionZh": "中华民国第一任临时大总统是谁？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -6043,11 +6175,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "李克强 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%85%8B%E5%BC%BA"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "На момент проведения олимпиады 2017–2018 учебного года премьером Госсовета КНР был Ли Кэцян (李克强), занимавший эту должность с марта 2013 по март 2023 года."
     },
     "id": "2017-18-zak-6",
     "occurrences": [
@@ -6088,7 +6226,7 @@
     "questionZh": "中国现任国务院总理是谁？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -6193,11 +6331,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "五星红旗 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BA%94%E6%98%9F%E7%BA%A2%E6%97%97"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Государственный флаг Китая — Пятизвёздный красный флаг (五星红旗), утверждённый в 1949 году."
     },
     "id": "2017-18-zak-9",
     "occurrences": [
@@ -6238,7 +6382,7 @@
     "questionZh": "中国国旗是什么？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -7867,11 +8011,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "京杭大运河 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BA%AC%E6%9D%AD%E5%A4%A7%E8%BF%90%E6%B2%B3"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Великий канал впервые в объединённом виде был открыт при династии Суй (隋朝) — при императоре Суй Ян-ди в начале VII века."
     },
     "id": "2018-19-zak-10",
     "occurrences": [
@@ -7912,7 +8062,7 @@
     "questionZh": "大运河最早是在哪个朝代开通的？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -9030,11 +9180,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "太上皇 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%A4%AA%E4%B8%8A%E7%9A%87"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Отца правящего императора, отрёкшегося или уступившего трон, в Китае называли тайшанхуан (太上皇, «император-отец»)."
     },
     "id": "2019-20-reg-4",
     "occurrences": [
@@ -9075,7 +9231,7 @@
     "questionZh": "在中国在位皇帝父亲的称号是什么？",
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -9444,11 +9600,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "全国人民代表大会 — 中国人大网",
+        "url": "http://www.npc.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Высший орган государственной власти Китая — Всекитайское собрание народных представителей (全国人民代表大会)."
     },
     "id": "2019-20-shk-q22afce",
     "occurrences": [
@@ -9487,7 +9649,7 @@
     "questionZh": "中国最高国家权力机关是什么？",
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -9540,11 +9702,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Иван Конев — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D0%B5%D0%B2,_%D0%98%D0%B2%D0%B0%D0%BD_%D0%A1%D1%82%D0%B5%D0%BF%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Из перечисленных полководцев только Иван Конев (科涅夫) действовал в годы Великой Отечественной войны 1941–1945; Невский и Донской — средневековые князья, Суворов — полководец XVIII века."
     },
     "id": "2019-20-shk-q988836",
     "occurrences": [
@@ -9583,7 +9751,7 @@
     "questionZh": "1941–1945 年伟大卫国战争时期杰出的将军是……。",
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -10050,11 +10218,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中华人民共和国主席 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E4%B8%BB%E5%B8%AD"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Главу государства КНР называют Председателем (主席)."
     },
     "id": "2020-21-pri-qd43a4f",
     "occurrences": [
@@ -10093,16 +10267,22 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "植树节 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E6%A4%8D%E6%A0%91%E8%8A%82"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "День посадки деревьев в Китае и на Тайване отмечают 12 марта — в годовщину смерти Сунь Ятсена в 1925 году, много сделавшего для пропаганды лесопосадок."
     },
     "id": "2020-21-pri-qd9dd9a",
     "occurrences": [
@@ -10141,16 +10321,22 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "邓小平 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%82%93%E5%B0%8F%E5%B9%B3"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "«Главным архитектором политики реформ и открытости» называют Дэн Сяопина (邓小平)."
     },
     "id": "2020-21-reg-q089604",
     "occurrences": [
@@ -10189,16 +10375,22 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "全国人民代表大会 — 中国人大网",
+        "url": "http://www.npc.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Высший орган законодательной власти в КНР — Всекитайское собрание народных представителей (全国人大), а не Госсовет, НПКСК или Верховный народный суд."
     },
     "id": "2020-21-reg-q094875",
     "occurrences": [
@@ -10237,7 +10429,7 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -10295,12 +10487,18 @@
   },
   {
     "answer": {
-      "optionId": "o1",
-      "state": "unverified"
+      "optionId": null,
+      "state": "conflict"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中华民国临时大总统 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD%E4%B8%B4%E6%97%B6%E5%A4%A7%E6%80%BB%E7%BB%9F/1930082"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Китайская Республика была официально провозглашена 1 января 1912 года, когда Сунь Ятсен принёс присягу временного президента в Нанкине. 1911 год — год Учанского восстания, начавшего Синьхайскую революцию, но не год провозглашения республики."
     },
     "id": "2020-21-reg-q227d55",
     "occurrences": [
@@ -10339,7 +10537,7 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -10446,11 +10644,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "春秋时期 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E6%98%A5%E7%A7%8B%E6%97%B6%E6%9C%9F"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Период Вёсен и Осеней (春秋) относят к началу правления династии Восточная Чжоу (东周, с 770 г. до н. э.)."
     },
     "id": "2020-21-reg-q55effb",
     "occurrences": [
@@ -10489,7 +10693,7 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -11149,11 +11353,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "大足石刻 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-cn/%E5%A4%A7%E8%B6%B3%E7%9F%B3%E5%88%BB"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Наскальные рельефы Дацзу (大足石刻) находятся в округе Дацзу города Чунцин (重庆), объект всемирного наследия ЮНЕСКО с 1999 года."
     },
     "id": "2021-22-mun-q066d1b",
     "occurrences": [
@@ -11192,7 +11402,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -11245,11 +11455,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "外滩 — 上海市人民政府",
+        "url": "https://www.shanghai.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Вайтань (外滩, «Бунд») — историческая набережная в центре Шанхая с колониальной застройкой начала XX века. 日月潭 на Тайване, 太阳岛 в Харбине, 颐和园 в Пекине."
     },
     "id": "2021-22-mun-q5434f2",
     "occurrences": [
@@ -11288,7 +11504,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -11389,11 +11605,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中华民国国父 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%9C%8B%E7%88%B6"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Сунь Ятсена (孙中山) в 1940 году Национальное правительство Китайской Республики посмертно провозгласило «отцом нации» (国父) за его роль в Синьхайской революции и основании Республики."
     },
     "id": "2021-22-mun-q6aaabb",
     "occurrences": [
@@ -11432,7 +11654,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -11485,11 +11707,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中华人民共和国宪法 — 中国人大网",
+        "url": "http://www.npc.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первая конституция КНР была принята в 1954 году на 1-й сессии ВСНП 1-го созыва."
     },
     "id": "2021-22-mun-q97fb5b",
     "occurrences": [
@@ -11528,16 +11756,22 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "湘语 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B9%98%E8%AF%AD"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Сянский диалект (湘方言) распространён в основном в провинции Хунань, частично в Сычуани, Чунцине и Гуанси. 北方方言, 吴方言 и 粤方言 закреплены за другими регионами."
     },
     "id": "2021-22-mun-qa05d78",
     "occurrences": [
@@ -11576,16 +11810,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "拉萨市 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-cn/%E6%8B%89%E8%90%A8%E5%B8%82"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Лхаса (拉萨) — административный центр Тибетского автономного района с 1965 года. 香港, 北京 и 上海 к Тибету отношения не имеют."
     },
     "id": "2021-22-mun-qd67aaa",
     "occurrences": [
@@ -11624,16 +11864,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "张衡 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%A1%A1"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первый в мире сейсмограф (候风地动仪) изобрёл Чжан Хэн (张衡) в 132 году н. э., во времена Восточной Хань."
     },
     "id": "2021-22-reg-q0716e5",
     "occurrences": [
@@ -11672,16 +11918,22 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "新疆维吾尔自治区 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%96%B0%E7%96%86%E7%BB%B4%E5%90%BE%E5%B0%94%E8%87%AA%E6%B2%BB%E5%8C%BA"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Синьцзян-Уйгурский автономный район (新疆维吾尔自治区) — крупнейший по площади среди пяти автономных районов Китая, около 1,66 млн км². Внутренняя Монголия (118,3 тыс. км²) идёт следом, Нинся и Гуанси заметно меньше."
     },
     "id": "2021-22-reg-q3e8cc7",
     "occurrences": [
@@ -11720,7 +11972,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -11917,11 +12169,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Федеральный конституционный закон от 25.12.2000 № 3-ФКЗ — Президент России",
+        "url": "http://www.kremlin.ru/acts/bank/16407"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Федеральный конституционный закон «О Государственном гимне Российской Федерации» подписан президентом 25 декабря 2000 года."
     },
     "id": "2021-22-reg-qbb2e02",
     "occurrences": [
@@ -11960,16 +12218,22 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "深圳北理莫斯科大学 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-cn/%E6%B7%B1%E5%9C%B3%E5%8C%97%E7%90%86%E8%8E%AB%E6%96%AF%E7%A7%91%E5%A4%A7%E5%AD%A6"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Соучредитель Университета МГУ-ПТУ в Шэньчжэне (深圳北理莫斯科大学, соглашение подписано в мае 2014 года) — Московский государственный университет имени М. В. Ломоносова (莫斯科罗蒙诺索夫国立大学) совместно с Пекинским технологическим институтом."
     },
     "id": "2021-22-reg-qc30076",
     "occurrences": [
@@ -12008,16 +12272,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "七十二名泉 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E4%B8%83%E5%8D%81%E4%BA%8C%E5%90%8D%E6%B3%89"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Цзинань (济南) называют «городом родников» (泉城) за его знаменитые 72 родника, включая Баоту и Хэйху. 广州, 重庆 и 景德镇 этого прозвища не носят."
     },
     "id": "2021-22-reg-qd842f6",
     "occurrences": [
@@ -12056,7 +12326,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -12109,11 +12379,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Дом Романовых — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD%D0%BE%D0%B2%D1%8B"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Династия Романовых правила Россией с 1613 года (избрание Михаила Фёдоровича) до отречения Николая II в марте 1917 года."
     },
     "id": "2021-22-shk-q0186fa",
     "occurrences": [
@@ -12152,16 +12428,22 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "世界上最深、蓄水量最大的淡水湖，贝加尔湖 — 腾讯新闻",
+        "url": "https://news.qq.com/rain/a/20220923A00PE800"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Байкал (贝加尔湖) — самое глубокое озеро планеты (1637 м) и крупнейшее хранилище пресной воды, около 20% мировых запасов незамёрзшей пресной воды. Ладожское, Онежское озёра и озеро Ламу заметно уступают ему."
     },
     "id": "2021-22-shk-q09899d",
     "occurrences": [
@@ -12213,16 +12495,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "北极圈内的神奇不冻港：摩尔曼斯克 — 搜狐",
+        "url": "https://www.sohu.com/a/166485645_794891"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Мурманск (摩尔曼斯克) за Полярным кругом остаётся незамерзающим благодаря тёплому течению Гольфстрима, это крупнейший незамерзающий порт России в Арктике. 圣彼得堡, 加里宁格勒 и 阿斯特拉罕 не находятся за Полярным кругом."
     },
     "id": "2021-22-shk-q2cb94e",
     "occurrences": [
@@ -12261,16 +12549,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国古都 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E5%8F%A4%E9%83%BD"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Гуанчжоу (广州) никогда не был столицей объединённого Китая, в отличие от Лояна, Сианя и Нанкина, каждый из которых становился столицей той или иной династии."
     },
     "id": "2021-22-shk-q39d834",
     "occurrences": [
@@ -12309,16 +12603,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "鸦片战争 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%B8%A6%E7%89%87%E6%88%98%E4%BA%89"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "В истории Китая было две Опиумные войны: 1839–1842 и 1856–1860 годов."
     },
     "id": "2021-22-shk-q54821d",
     "occurrences": [
@@ -12357,7 +12657,7 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -12602,11 +12902,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Федеральное Собрание Российской Федерации — официальный сайт",
+        "url": "http://duma.gov.ru/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Высший законодательный орган России — Федеральное Собрание (联邦会议), состоящее из Государственной Думы и Совета Федерации."
     },
     "id": "2021-22-zak-q0ee7de",
     "occurrences": [
@@ -12645,16 +12951,22 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "2017年金砖国家峰会 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/2017%E5%B9%B4%E9%87%91%E7%A0%96%E5%9B%BD%E5%AE%B6%E5%B3%B0%E4%BC%9A"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "9-й саммит БРИКС прошёл в Сямэне 3–5 сентября 2017 года — второй саммит объединения в Китае после Санья-2011."
     },
     "id": "2021-22-zak-q184754",
     "occurrences": [
@@ -12693,16 +13005,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "元谋人 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%85%83%E8%B0%8B%E4%BA%BA"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Юаньмоуский человек (元谋人), найденный в провинции Юньнань, датируется примерно 1,7 млн лет назад — древнейшие известные останки гоминин на территории Китая. Ланьтяньский и пекинский человек моложе, шаньдиндунский — вообще эпохи позднего палеолита."
     },
     "id": "2021-22-zak-q33f857",
     "occurrences": [
@@ -12741,7 +13059,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -12794,11 +13112,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "2022年冬季奥林匹克运动会 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/2022%E5%B9%B4%E5%86%AC%E5%AD%A3%E5%A5%A5%E6%9E%97%E5%8C%B9%E5%85%8B%E8%BF%90%E5%8A%A8%E4%BC%9A"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Зимние Олимпийские игры 2022 года прошли в Пекине и Чжанцзякоу (张家口, провинция Хэбэй) — там располагались горнолыжные и биатлонные трассы. 上海, 成都 и 西安 к Играм 2022 года отношения не имели."
     },
     "id": "2021-22-zak-q38d33e",
     "occurrences": [
@@ -12837,7 +13161,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -12938,11 +13262,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Присоединение Крыма к России — РИА Новости",
+        "url": "https://ria.ru/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Крым был присоединён к России в качестве Республики Крым в марте 2014 года, после референдума 16 марта 2014 года."
     },
     "id": "2021-22-zak-q4bbaab",
     "occurrences": [
@@ -12981,7 +13311,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -13034,11 +13364,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "深圳北理莫斯科大学 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-cn/%E6%B7%B1%E5%9C%B3%E5%8C%97%E7%90%86%E8%8E%AB%E6%96%AF%E7%A7%91%E5%A4%A7%E5%AD%A6"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "С китайской стороны соучредитель Университета МГУ-ПТУ в Шэньчжэне — Пекинский технологический институт (北京理工大学), подписавший соглашение с МГУ и правительством Шэньчжэня в 2014 году."
     },
     "id": "2021-22-zak-qac2753",
     "occurrences": [
@@ -13077,7 +13413,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -13652,11 +13988,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "故宫太平缸 — 故宫博物院",
+        "url": "https://www.dpm.org.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Большие металлические чаны (太平缸, «чаны спокойствия») у дворцов Запретного города наполняли водой для тушения пожаров — деревянные постройки требовали постоянной защиты от огня. Разведение рыбы, питьё воды и выращивание цветов не были их назначением."
     },
     "id": "2022-23-reg-1",
     "occurrences": [
@@ -13698,7 +14040,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -13805,11 +14147,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国最大的淡水湖——鄱阳湖 — 中国科学院地理科学与资源研究所",
+        "url": "http://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692506.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Крупнейшее пресноводное озеро Китая Поянху (鄱阳湖) находится в провинции Цзянси (江西省), в её северной части, к востоку от Лушань."
     },
     "id": "2022-23-reg-3",
     "occurrences": [
@@ -13851,7 +14199,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -14111,11 +14459,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "上海合作组织 — 官方网站",
+        "url": "http://chn.sectsco.org/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Шанхайская организация сотрудничества основана 15 июня 2001 года в Шанхае."
     },
     "id": "2022-23-reg-9",
     "occurrences": [
@@ -14157,7 +14511,7 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -14210,11 +14564,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "书同文 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B9%A6%E5%90%8C%E6%96%87/858625"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Единую систему письменности впервые ввёл Цинь Шихуан (秦始皇) после объединения Китая в 221 г. до н. э."
     },
     "id": "2022-23-shk-q2ecb2d",
     "occurrences": [
@@ -14253,7 +14613,7 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -14306,11 +14666,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国国家图书馆 — 官方网站",
+        "url": "https://www.nlc.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Национальная библиотека Китая (中国国家图书馆) расположена в Пекине (北京) и является одной из крупнейших библиотек мира по объёму фондов."
     },
     "id": "2022-23-shk-q623963",
     "occurrences": [
@@ -14349,16 +14715,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "香港特別行政區 — 中央人民政府驻港联络办",
+        "url": "http://www.locpg.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "В Китае два специальных административных района — Гонконг (с 1997 года) и Макао (с 1999 года); оба пользуются широкой автономией по принципу «одна страна, две системы»."
     },
     "id": "2022-23-shk-q637921",
     "occurrences": [
@@ -14397,7 +14769,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -14450,11 +14822,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "溥仪 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%BA%A5%E5%84%80"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Последним императором династии Цин был Пу И (溥仪, император Сюаньтун), отрёкшийся от престола в феврале 1912 года."
     },
     "id": "2022-23-shk-qa664f6",
     "occurrences": [
@@ -14493,16 +14871,22 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Крещение Руси — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5_%D0%A0%D1%83%D1%81%D0%B8"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "В 988 году князь Владимир принял христианство (基督教) в качестве государственной религии Руси — Крещение Руси."
     },
     "id": "2022-23-shk-qcd7a28",
     "occurrences": [
@@ -14541,7 +14925,7 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -14594,11 +14978,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国最大的淡水湖——鄱阳湖 — 中国科学院地理科学与资源研究所",
+        "url": "http://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692506.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Поянху (鄱阳湖) — крупнейшее пресноводное озеро Китая, около 3900 км² при обычном уровне воды. 青海湖 солёное, 太湖 и 西湖 заметно меньше."
     },
     "id": "2022-23-shk-qfc70c5",
     "occurrences": [
@@ -14637,7 +15027,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -14744,11 +15134,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "天坛 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%A9%E5%9D%9B"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Храм Неба (天坛) в Пекине был построен для ежегодных жертвоприношений Небу, которые совершали императоры династий Мин и Цин; объект списка ЮНЕСКО с 1998 года."
     },
     "id": "2022-23-zak-2",
     "occurrences": [
@@ -14790,7 +15186,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -14846,11 +15242,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国十大淡水湖 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%8D%81%E5%A4%A7%E6%B7%A1%E6%B0%B4%E6%B9%96"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Тайху (太湖) по площади — третье по величине пресноводное озеро Китая после Поянху и Дунтинху."
     },
     "id": "2022-23-zak-4",
     "occurrences": [
@@ -14892,7 +15294,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -15152,11 +15554,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "全国人民代表大会 — 中国人大网",
+        "url": "http://www.npc.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Высший орган законодательной власти КНР — Всекитайское собрание народных представителей (全国人大)."
     },
     "id": "2023-24-mun-29",
     "occurrences": [
@@ -15196,16 +15604,22 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "习近平当选国家主席、国家军委主席 — 中国共产党新闻网",
+        "url": "http://cpc.people.com.cn/n/2013/0314/c64094-20795043.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Си Цзиньпин избран Председателем КНР 14 марта 2013 года на 1-й сессии ВСНП 12-го созыва."
     },
     "id": "2023-24-mun-30",
     "occurrences": [
@@ -15246,7 +15660,7 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -15301,11 +15715,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "南京市 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC%E5%B8%82"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Административный центр провинции Цзянсу — Нанкин (南京), одна из четырёх (по расширенному списку — шести) древних столиц Китая."
     },
     "id": "2023-24-mun-32",
     "occurrences": [
@@ -15346,16 +15766,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "经济特区 — 中国政协",
+        "url": "http://www.cppcc.gov.cn/2011/09/26/ARTI1317001118812167.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Три из пяти специальных экономических зон Китая — Шэньчжэнь, Чжухай и Шаньтоу — находятся в провинции Гуандун (广东); четвёртая, Сямэнь, в Фуцзяни, пятая, Хайнань, — отдельная провинция."
     },
     "id": "2023-24-mun-33",
     "occurrences": [
@@ -15396,7 +15822,7 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -15551,11 +15977,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "长城 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%95%B7%E5%9F%8E"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Великую Китайскую стену (长城) по масштабу строительства часто сравнивают с древнеегипетскими пирамидами — оба памятника входят в число величайших инженерных сооружений древности."
     },
     "id": "2023-24-mun-37",
     "occurrences": [
@@ -15596,7 +16028,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -15855,11 +16287,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "秦始皇陵及兵马俑 — 世界遗产数据库",
+        "url": "http://www.silkroads.org.cn/portal.php?mod=view&aid=32358"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Терракотовая армия (兵马俑) входит в комплекс объекта всемирного наследия ЮНЕСКО «Мавзолей первого императора Цинь». В самом бланке варианты C и D напечатаны одинаково (大唐芙蓉园 дважды) — это дефект исходника, но правильный ответ среди различающихся вариантов только один и сомнений не вызывает."
     },
     "id": "2023-24-reg-4",
     "occurrences": [
@@ -15904,7 +16342,7 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -16062,11 +16500,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "三代 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B8%89%E4%BB%A3"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "«Тремя эпохами» (三代) называют династии Ся, Шан и Западная Чжоу."
     },
     "id": "2023-24-reg-8",
     "occurrences": [
@@ -16108,7 +16552,7 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -16265,11 +16709,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "经济特区 — 中国政协",
+        "url": "http://www.cppcc.gov.cn/2011/09/26/ARTI1317001118812167.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Из пяти специальных экономических зон Китая (深圳, 珠海, 汕头, 厦门, 海南) Гуанчжоу (广州) не входит — это административный центр Гуандуна с обычным статусом."
     },
     "id": "2023-24-shk-32",
     "occurrences": [
@@ -16310,7 +16760,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -16416,11 +16866,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国佛教四大名山 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%9B%9B%E5%A4%A7%E4%BD%9B%E6%95%99%E5%90%8D%E5%B1%B1"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Четыре священные горы китайского буддизма — Утайшань (Шаньси), Эмэйшань (Сычуань), Цзюхуашань (Аньхой) и Путошань (浙江普陀山) в Чжэцзяне, связанная с культом бодхисаттвы Гуаньинь."
     },
     "id": "2023-24-shk-35",
     "occurrences": [
@@ -16462,7 +16918,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -16569,11 +17025,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "西安 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E5%AE%89"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Город с 13-вековой историей столичного статуса и старым названием Чанъань — Сиань (西安); он был столицей при Чжоу, Цинь, Хань, Суй и Тан."
     },
     "id": "2023-24-shk-38",
     "occurrences": [
@@ -16615,16 +17077,22 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "珠江 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%8F%A0%E6%B1%9F"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Река с древним названием Юэцзян, протекающая через Юньнань, Гуйчжоу, Цзянси, Хунань, Гуанси и Гуандун, — Чжуцзян (珠江), третья по водоносности (после Янцзы) река Китая."
     },
     "id": "2023-24-zak-1",
     "occurrences": [
@@ -16665,7 +17133,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -16720,11 +17188,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "重庆市 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%87%8D%E5%BA%86%E5%B8%82"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Чунцин (重庆) — крупнейший по площади среди четырёх городов центрального подчинения Китая, около 82 тыс. км², расположен в центральной части страны."
     },
     "id": "2023-24-zak-2",
     "occurrences": [
@@ -16765,7 +17239,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -17020,11 +17494,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "南京条约 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC%E6%9D%A1%E7%BA%A6"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Нанкинский договор (南京条约) 1842 года стал первым неравноправным договором, навязанным Китаю после поражения в Первой опиумной войне."
     },
     "id": "2023-24-zak-8",
     "occurrences": [
@@ -17065,7 +17545,7 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -17272,11 +17752,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国东部经济区 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%9B%BD%E4%B8%9C%E9%83%A8%E7%BB%8F%E6%B5%8E%E5%8C%BA"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Восточные приморские районы Китая (东部) — наиболее экономически развитая часть страны: занимая менее 5% территории, они дают почти половину ВВП КНР."
     },
     "id": "2024-25-mun-31",
     "occurrences": [
@@ -17318,7 +17804,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -17374,11 +17860,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "重庆市 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%87%8D%E5%BA%86%E5%B8%82"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Чунцин (重庆) — крупнейший по площади из четырёх городов центрального подчинения, значительно превосходит Шанхай, Пекин и Тяньцзинь."
     },
     "id": "2024-25-mun-33",
     "occurrences": [
@@ -17420,16 +17912,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国四大海域 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%9B%9B%E5%A4%A7%E6%B5%B7%E5%9F%9F/14444698"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Все моря, омывающие Китай — Бохайское, Жёлтое, Восточно-Китайское и Южно-Китайское, — относятся к бассейну Тихого океана (太平洋)."
     },
     "id": "2024-25-mun-34",
     "occurrences": [
@@ -17471,7 +17969,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -17527,11 +18025,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中华民国临时大总统 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD%E4%B8%B4%E6%97%B6%E5%A4%A7%E6%80%BB%E7%BB%9F/1930082"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Сунь Ятсен (孙中山) за вклад в революцию и авторитет среди революционеров был избран первым временным президентом Китайской Республики 29 декабря 1911 года, вступил в должность 1 января 1912 года."
     },
     "id": "2024-25-mun-36",
     "occurrences": [
@@ -17573,7 +18077,7 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -17782,11 +18286,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "2008年四川汶川大地震 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/2008%E5%B9%B4%E5%9B%9B%E5%B7%9D%E6%B1%B6%E5%B7%9D%E5%A4%A7%E5%9C%B0%E9%9C%87"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Сычуаньское землетрясение 12 мая 2008 года (Вэньчуаньское) унесло жизни более 87 тысяч человек — одна из крупнейших природных катастроф в новейшей истории Китая."
     },
     "id": "2024-25-pri-33",
     "occurrences": [
@@ -17828,16 +18338,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "青海省 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E9%9D%92%E6%B5%B7%E7%9C%81"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Провинция Цинхай (青海省) названа по одноимённому озеру, крупнейшему в Китае; название буквально означает «синее/зелёное море» — так переводится и монгольское, и тибетское название озера."
     },
     "id": "2024-25-pri-34",
     "occurrences": [
@@ -17879,7 +18395,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -18807,11 +19323,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "成都市 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%88%90%E9%83%BD%E5%B8%82"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Чэнду (成都), столица провинции Сычуань, стал столицей царства Шу ещё в IV веке до н. э. — один из немногих китайских городов, не менявших названия свыше двух тысячелетий."
     },
     "id": "2024-25-shk-34",
     "occurrences": [
@@ -18853,7 +19375,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -19361,11 +19883,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "粤语 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%B2%A4%E8%AA%9E"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "На кантонском диалекте говорят в Гонконге, Макао и провинции Гуандун; в провинции Аньхой (安徽省) распространены другие китайские диалекты (хойский, гуаньхуа), а не кантонский."
     },
     "id": "2024-25-zak-qe05919",
     "occurrences": [
@@ -19404,16 +19932,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Пятьдесят рублей — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9F%D1%8F%D1%82%D1%8C%D0%B4%D0%B5%D1%81%D1%8F%D1%82_%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "На банкноте 50 рублей образца 1997 года изображён Санкт-Петербург (圣彼得堡) — Ростральная колонна и здание Биржи."
     },
     "id": "2024-25-zak-qe3452d",
     "occurrences": [
@@ -19452,16 +19986,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "海南省 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B5%B7%E5%8D%97%E7%9C%81"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Хайнань (海南省) — самая маленькая по площади суши провинция Китая (около 35 тыс. км² без учёта акватории Южно-Китайского моря), меньше Хэбэя, Гуандуна и Сычуани."
     },
     "id": "2024-25-zak-qf78e62",
     "occurrences": [
@@ -19500,16 +20040,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "洛阳市 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B4%9B%E9%98%B3%E5%B8%82"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "После падения Восточной Хань в 220 году столицей царств Вэй, Западная Цзинь и Северная Вэй последовательно становился Лоян (洛阳) на западе провинции Хэнань."
     },
     "id": "2024-25-zak-qfce692",
     "occurrences": [
@@ -19548,7 +20094,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -20168,11 +20714,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "长江 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-cn/%E9%95%BF%E6%B1%9F"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Длина Янцзы — около 6300 км, это самая длинная река Азии и третья по протяжённости река мира."
     },
     "id": "2025-26-reg-10",
     "occurrences": [
@@ -20213,7 +20765,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -20318,11 +20870,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Владивосток — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D0%BA"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Владивосток стоит на берегу залива Петра Великого, части Японского моря (日本海). Чёрное, Охотское и Жёлтое моря к Владивостоку отношения не имеют."
     },
     "id": "2025-26-reg-4",
     "occurrences": [
@@ -20363,16 +20921,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Саратов — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D0%B2"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Из перечисленных городов только Саратов (萨拉托夫) стоит не на одноимённой реке, а на Волге: Воронеж, Москва и Уфа расположены на реках Воронеж, Москва и Уфа соответственно."
     },
     "id": "2025-26-reg-5",
     "occurrences": [
@@ -20413,7 +20977,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -20618,11 +21182,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "直辖市 (中华人民共和国) — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E7%9B%B4%E8%BE%96%E5%B8%82_(%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD)"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Тяньцзинь (天津) — город центрального подчинения, а не провинция. Ляонин, Гуандун и Тайвань (последний КНР официально включает в список провинций) числятся провинциями."
     },
     "id": "2025-26-shk-28",
     "occurrences": [
@@ -20663,16 +21233,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "经济特区 — 中国政协",
+        "url": "http://www.cppcc.gov.cn/2011/09/26/ARTI1317001118812167.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Шаньтоу (汕头) — одна из пяти специальных экономических зон Китая, наряду с Шэньчжэнем, Чжухаем, Сямэнем и Хайнанем; Шанхай, Гуанчжоу и Чунцин в этот список не входят."
     },
     "id": "2025-26-shk-29",
     "occurrences": [
@@ -20712,7 +21288,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -21066,12 +21642,23 @@
   },
   {
     "answer": {
-      "optionId": "o3",
-      "state": "unverified"
+      "optionId": null,
+      "state": "conflict"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Лена — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D0%BD%D0%B0"
+      },
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Обь — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%8C"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "В море Лаптевых впадает Лена (勒拿河), образуя крупнейшую в Арктике дельту. Обь (鄂毕河, указана в официальном ключе) впадает в Обскую губу Карского моря, а не моря Лаптевых; Иртыш и Енисей — притоки Оби и впадают в Карское море соответственно."
     },
     "id": "2025-26-shk-37-a",
     "occurrences": [
@@ -21112,7 +21699,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -21213,11 +21800,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国国家图书馆 — 官方网站",
+        "url": "https://www.nlc.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Национальная библиотека Китая расположена в Пекине (北京)."
     },
     "id": "2025-26-zak-q34d077",
     "occurrences": [
@@ -21256,7 +21849,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
@@ -21405,11 +21998,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "清明上河图 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B8%85%E6%98%8E%E4%B8%8A%E6%B2%B3%E5%9B%BE"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "«По реке в день поминовения усопших» (清明上河图) Чжан Цзэдуаня изображает жизнь Кайфэна (开封) — столицы Северной Сун, тогда называвшейся Бяньцзин."
     },
     "id": "2025-26-zak-q7c8228",
     "occurrences": [
@@ -21448,16 +22047,22 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Границы России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Россия не граничит напрямую с Арменией (亚美尼亚) — их разделяют Грузия и Азербайджан. С Азербайджаном, КНДР и Польшей (через Калининградскую область) у России есть общая граница."
     },
     "id": "2025-26-zak-q92942d",
     "occurrences": [
@@ -21496,7 +22101,7 @@
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 3
   },
   {
     "answer": {
