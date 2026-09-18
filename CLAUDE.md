@@ -7,6 +7,6 @@
   официальным ключом — `conflict` и запись в отчёт волны.
 - `sources/` не редактировать: это неизменяемые первоисточники.
 - `data/bank.json` правится только скриптами, руками — никогда.
-- Тесты: `python3 -m unittest discover -s test -t .` и `node --test test/`.
+- Тесты: `python3 -m unittest discover -s test -t .` и `node --test 'test/*.test.mjs'`.
 - В Python 3.14 стандартный пакет `test` перехватывает импорт, поэтому в `test/` лежит
   `__init__.py`, а discover запускается с `-t .`.
