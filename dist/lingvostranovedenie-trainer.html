@@ -4,239 +4,410 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Лингвострановедение — тренажёр ВсОШ</title>
-<style>:root {
-  --ink: #1d2430;
-  --muted: #6b7684;
-  --line: #dfe3e8;
-  --paper: #ffffff;
-  --back: #f6f7f9;
-  --accent: #8a1c1c;
-  --right: #1f7a4d;
-  --wrong: #a32020;
-  --shadow: 0 1px 2px rgba(29, 36, 48, .06), 0 8px 24px rgba(29, 36, 48, .06);
+<style>/* Светлая палитра — та же, что в прежней версии тренажёра. */
+:root {
+  --ink: #152542;
+  --muted: #66738a;
+  --paper: #f4f7fc;
+  --line: #dce4f1;
+  --blue: #245eea;
+  --soft: #edf3ff;
+  --green: #087b55;
+  --red: #bd3d4d;
+  --card: #fff;
+  --field: #fff;
+  --glow: #dceaff;
+  --shadow: rgba(21, 37, 66, .08);
+  --letter-bg: #eff2f7;
+  --letter-ink: #66738a;
+  --track: #e7edf7;
+  --ok-line: #91d6b9;
+  --ok-bg: #ecfaf3;
+  --bad-line: #f3adb6;
+  --bad-bg: #fff1f3;
+  --note-bg: #f8fbff;
+  --tag-bg: #eff3f9;
+  --tag-ink: #58667a;
+  --hover-line: #82acff;
+  --hover-bg: #fbfdff;
+  --warn-bg: #fff4e2;
+  --warn-ink: #8a6415;
+  --focus: #a9c7ff;
+}
+
+/* Тёмная палитра: те же роли, другой холст. Сохранены синий акцент,
+   зелёный «верно» и красный «неверно», чтобы разбор читался одинаково. */
+:root[data-theme="dark"] {
+  --ink: #e7ecf6;
+  --muted: #98a4ba;
+  --paper: #0d131f;
+  --line: #27324a;
+  --blue: #6f9bff;
+  --soft: #17233c;
+  --green: #4cc48d;
+  --red: #f18d98;
+  --card: #141c2b;
+  --field: #111a28;
+  --glow: #16223a;
+  --shadow: rgba(0, 0, 0, .45);
+  --letter-bg: #1f2a3e;
+  --letter-ink: #9aa7bd;
+  --track: #1d2738;
+  --ok-line: #2f6a4d;
+  --ok-bg: #12291f;
+  --bad-line: #7a3540;
+  --bad-bg: #2b151a;
+  --note-bg: #121b29;
+  --tag-bg: #1c2635;
+  --tag-ink: #9aa7bd;
+  --hover-line: #4d6da8;
+  --hover-bg: #18213200;
+  --warn-bg: #2d2413;
+  --warn-ink: #e0bc74;
+  --focus: #3f63a8;
 }
 
 * { box-sizing: border-box; }
 
+/* Правило браузера для [hidden] слабее любого нашего display, поэтому задаём его явно:
+   иначе скрытая плашка вроде «не проверено» продолжает показываться. */
+[hidden] { display: none !important; }
+
 body {
   margin: 0;
-  padding: 0 16px 64px;
-  background: var(--back);
   color: var(--ink);
-  font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
+  background: radial-gradient(circle at 8% 0, var(--glow) 0, transparent 26rem), var(--paper);
+  font: 16px/1.5 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", "PingFang SC", sans-serif;
 }
 
-header {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 28px 0 16px;
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
 }
 
-h1 { margin: 0; font-size: 22px; letter-spacing: .01em; }
-h2 { margin: 0 0 16px; font-size: 19px; font-weight: 600; }
+.shell { width: min(100% - 32px, 1040px); margin: 0 auto; padding: 34px 0 54px; }
 
-#stats { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+.top { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; margin-bottom: 22px; }
+.top-side { display: flex; flex-direction: column; align-items: flex-end; gap: 9px; }
+.eyebrow { margin: 0 0 7px; color: var(--blue); font-size: .76rem; font-weight: 850; letter-spacing: .11em; text-transform: uppercase; }
+h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.04; letter-spacing: -.055em; }
+.subtitle { max-width: 680px; margin: 12px 0 0; color: var(--muted); }
 
-main { max-width: 760px; margin: 0 auto; }
+.count {
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--muted);
+  font-size: .86rem;
+  font-weight: 750;
+  white-space: nowrap;
+}
 
-.screen {
-  background: var(--paper);
+.theme {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--muted);
+  font-size: .82rem;
+  font-weight: 750;
+}
+.theme:hover { border-color: var(--hover-line); color: var(--ink); }
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--card);
+  box-shadow: 0 16px 45px var(--shadow);
+}
+.view[hidden] { display: none; }
+
+.setup { padding: 26px; }
+h2 { margin: 0; font-size: 1.25rem; letter-spacing: -.02em; }
+.subhead { margin: 5px 0 16px; color: var(--muted); font-size: .92rem; }
+
+.topics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; margin: 12px 0 18px; }
+.topic-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 45px;
+  padding: 9px 11px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--field);
+  cursor: pointer;
+}
+.topic-check:has(input:checked) { border-color: var(--hover-line); background: var(--soft); }
+.topic-check input { width: 17px; height: 17px; accent-color: var(--blue); }
+.topic-check span { font-size: .95rem; }
+
+.more { margin: 0 0 18px; }
+.more summary { color: var(--muted); font-size: .88rem; font-weight: 700; cursor: pointer; }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px; }
+
+.controls { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: end; margin: 8px 0 20px; }
+.field { display: grid; gap: 7px; color: var(--muted); font-size: .86rem; font-weight: 700; }
+select, .search {
+  width: 100%;
+  min-height: 43px;
+  padding: 8px 11px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--field);
+  color: var(--ink);
+}
+.toggles { display: grid; gap: 4px; }
+.toggle { display: flex; align-items: center; gap: 9px; min-height: 43px; color: var(--ink); font-weight: 650; }
+.toggle input { width: 17px; height: 17px; accent-color: var(--blue); }
+
+.notice { margin: 0 0 14px; color: var(--muted); font-size: .92rem; }
+
+.actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.actions.centered { justify-content: center; }
+.actions-left { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.button {
+  border: 1px solid transparent;
+  border-radius: 11px;
+  padding: 11px 15px;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 800;
+}
+.button:hover:not(:disabled) { filter: brightness(.95); transform: translateY(-1px); }
+.button:disabled { cursor: not-allowed; opacity: .45; }
+.button.alt { border-color: var(--line); background: var(--field); color: var(--ink); }
+.button.ghost { border-color: transparent; background: transparent; color: var(--muted); font-weight: 700; }
+.button.ghost:hover { color: var(--ink); }
+.button.danger { color: var(--red); }
+
+.hint { margin: 16px 0 0; color: var(--muted); font-size: .78rem; }
+
+.quiz-top { padding: 19px 24px; border-bottom: 1px solid var(--line); }
+.progress { display: flex; justify-content: space-between; gap: 14px; color: var(--muted); font-size: .88rem; font-weight: 750; }
+.track { height: 8px; margin-top: 11px; overflow: hidden; border-radius: 99px; background: var(--track); }
+.fill { height: 100%; background: linear-gradient(90deg, var(--blue), #66a5ff); transition: width .2s; }
+
+.quiz-main { padding: 28px 24px; }
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill { display: inline-block; padding: 4px 9px; border-radius: 8px; background: var(--soft); color: var(--blue); font-size: .78rem; font-weight: 800; }
+.pill.quiet { background: var(--tag-bg); color: var(--tag-ink); }
+.pill.warn { background: var(--warn-bg); color: var(--warn-ink); }
+
+.question { margin: 15px 0 21px; font-size: clamp(1.28rem, 2.8vw, 1.72rem); line-height: 1.28; letter-spacing: -.028em; }
+
+.options { display: grid; gap: 10px; }
+.option {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  padding: 13px 15px;
   border: 1px solid var(--line);
   border-radius: 14px;
-  box-shadow: var(--shadow);
-  padding: 22px;
-}
-
-.field { margin-bottom: 18px; }
-.field-label { display: block; margin-bottom: 8px; color: var(--muted); font-size: 13px; }
-
-.chips { display: flex; flex-wrap: wrap; gap: 8px; }
-
-.chip {
-  border: 1px solid var(--line);
-  background: var(--paper);
+  background: var(--field);
   color: var(--ink);
-  border-radius: 999px;
-  padding: 7px 13px;
-  font: inherit;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.chip:hover { border-color: #c3c9d1; }
-.chip-on { background: var(--ink); border-color: var(--ink); color: #fff; }
-
-.switches { display: flex; gap: 20px; flex-wrap: wrap; }
-.switches label { display: flex; align-items: center; gap: 8px; font-size: 14px; }
-
-details.more { margin-bottom: 18px; }
-details.more summary { cursor: pointer; color: var(--muted); font-size: 14px; margin-bottom: 12px; }
-
-.count { color: var(--muted); font-size: 14px; margin: 0 0 16px; }
-
-.actions { display: flex; gap: 10px; flex-wrap: wrap; }
-
-button {
-  border: 1px solid var(--line);
-  background: var(--paper);
-  color: var(--ink);
-  border-radius: 10px;
-  padding: 10px 16px;
-  font: inherit;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-button:hover:not(:disabled) { border-color: #c3c9d1; }
-button:disabled { opacity: .45; cursor: default; }
-button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-button.quiet { border-color: transparent; color: var(--muted); padding-left: 8px; padding-right: 8px; }
-
-.meta { color: var(--muted); font-size: 13px; margin: 0 0 12px; }
-
-.options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
-
-.option {
   text-align: left;
-  font-size: 19px;
-  line-height: 1.4;
-  padding: 14px 16px;
+  font-size: 1.06rem;
+}
+.option:hover:not(:disabled) { border-color: var(--hover-line); background: var(--hover-bg); }
+.option:disabled { cursor: default; }
+.letter {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: var(--letter-bg);
+  color: var(--letter-ink);
+  font-size: .9rem;
+  font-weight: 850;
+}
+.option.correct { border-color: var(--ok-line); background: var(--ok-bg); }
+.option.correct .letter { background: var(--green); color: #fff; }
+.option.wrong { border-color: var(--bad-line); background: var(--bad-bg); }
+.option.wrong .letter { background: var(--red); color: #fff; }
+
+.feedback { margin: 18px 0 0; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: var(--note-bg); }
+.feedback.good { border-color: var(--ok-line); background: var(--ok-bg); }
+.feedback.bad { border-color: var(--bad-line); background: var(--bad-bg); }
+.feedback p { margin: 0; }
+.feedback strong { display: block; margin-bottom: 3px; }
+.feedback .why { margin-top: 7px; }
+.feedback ul { margin: 9px 0 0; padding-left: 18px; font-size: .88rem; }
+.feedback a { color: var(--blue); }
+.feedback .unverified { margin-top: 9px; color: var(--muted); font-size: .84rem; }
+
+.next-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 19px; }
+
+.results { padding: 35px 26px; text-align: center; }
+.score { margin: 10px 0 3px; font-size: clamp(3.7rem, 9vw, 6rem); line-height: 1; letter-spacing: -.07em; }
+.result-text { margin: 0 auto 22px; max-width: 520px; color: var(--muted); }
+
+.database { padding: 25px; }
+.database-bar { display: grid; grid-template-columns: 1fr auto auto; gap: 12px; margin: 16px 0; }
+.db-list { display: grid; gap: 10px; }
+.row { padding: 14px; border: 1px solid var(--line); border-radius: 13px; background: var(--field); }
+.row-top { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+.row h3 { margin: 9px 0; font-size: 1rem; }
+.row-options { display: flex; flex-wrap: wrap; gap: 5px; color: var(--muted); font-size: .88rem; }
+.row-answer { margin: 8px 0 0; color: var(--green); font-size: .93rem; }
+.row-why { margin: 7px 0 0; font-size: .92rem; }
+.row-zh { margin: 7px 0 0; color: var(--muted); font-size: .92rem; }
+.tag { padding: 2px 7px; border-radius: 999px; background: var(--tag-bg); color: var(--tag-ink); font-size: .72rem; font-weight: 800; }
+.tag.done { background: var(--ok-bg); color: var(--green); }
+.tag.review { background: var(--bad-bg); color: var(--red); }
+.tag.warn { background: var(--warn-bg); color: var(--warn-ink); }
+.empty { padding: 24px; text-align: center; color: var(--muted); }
+
+.footer { margin: 15px 2px 0; color: var(--muted); font-size: .78rem; }
+.hidden { display: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+  .button:hover:not(:disabled) { transform: none; }
 }
 
-.option .label { color: var(--muted); font-size: 14px; margin-right: 10px; }
-.option:disabled { opacity: .5; }
-/* разобранный вариант не должен блёкнуть вместе с остальными: именно на него смотрят */
-.option.right, .option.wrong { opacity: 1; }
-.option.right { border-color: var(--right); background: #f1f9f4; }
-.option.wrong { border-color: var(--wrong); background: #fdf3f3; }
-
-.feedback {
-  border-top: 1px solid var(--line);
-  padding-top: 16px;
-  margin-bottom: 12px;
-}
-
-.verdict { font-weight: 600; margin: 0 0 8px; }
-.verdict.right { color: var(--right); }
-.verdict.wrong { color: var(--wrong); }
-
-.evidence { margin: 10px 0 0; padding-left: 18px; font-size: 14px; }
-.evidence a { color: var(--accent); }
-
-.note { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
-
-.database-filters { display: flex; gap: 10px; flex-wrap: wrap; }
-
-#search, #statusFilter {
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 10px 12px;
-  font: inherit;
-  font-size: 15px;
-  background: var(--paper);
-  color: var(--ink);
-}
-
-#search { flex: 1 1 260px; }
-
-.rows { display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; }
-
-.row { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
-.row h3 { margin: 0 0 6px; font-size: 16px; font-weight: 600; }
-.row .zh { font-size: 17px; margin: 6px 0 0; }
-.row .answer { margin: 8px 0 0; color: var(--right); font-size: 15px; }
-
-.tag {
-  display: inline-block;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 2px 9px;
-  font-size: 12px;
-  color: var(--muted);
-  margin-right: 6px;
-}
-
-.tag.warn { border-color: #e2c08a; color: #8a6415; }
-
-.empty { color: var(--muted); font-size: 14px; }
-
-@media (max-width: 560px) {
-  .screen { padding: 16px; }
-  .option { font-size: 18px; }
+@media (max-width: 680px) {
+  .shell { width: min(100% - 20px, 1040px); padding-top: 23px; }
+  .top { display: block; }
+  .top-side { flex-direction: row; align-items: center; margin-top: 14px; }
+  .topics, .controls, .field-row, .database-bar { grid-template-columns: 1fr; }
+  .setup, .database, .quiz-main { padding: 20px; }
+  .quiz-top { padding: 17px 20px; }
+  .actions { align-items: stretch; }
+  .actions .button { width: 100%; }
+  .actions-left { flex-direction: column; }
 }
 </style>
 </head>
 <body>
-<header>
-  <h1>Лингвострановедение</h1>
-  <p id="stats"></p>
-</header>
-
-<main>
-  <section id="start" class="screen">
-    <h2>Новый раунд</h2>
-
-    <div class="field">
-      <span class="field-label">Темы</span>
-      <div id="topicChips" class="chips"></div>
+<main class="shell">
+  <header class="top">
+    <div>
+      <p class="eyebrow">Китайский язык · тренажёр</p>
+      <h1>Лингвострановедение</h1>
+      <p class="subtitle">Все вопросы — по-русски, варианты — по-китайски. Выберите тему, размер раунда
+        и отслеживайте уже пройденные задания.</p>
     </div>
-
-    <details class="more">
-      <summary>Год и этап</summary>
-      <div class="field"><span class="field-label">Год</span><div id="yearChips" class="chips"></div></div>
-      <div class="field"><span class="field-label">Этап</span><div id="stageChips" class="chips"></div></div>
-    </details>
-
-    <div class="field switches">
-      <label><input type="checkbox" id="onlyUnfinished"> только непройденные</label>
-      <label><input type="checkbox" id="onlyVerified"> только проверенные</label>
+    <div class="top-side">
+      <div class="count" id="bankCount"></div>
+      <button class="theme" id="themeToggle" type="button" aria-label="Переключить тему">
+        <span id="themeIcon">◐</span><span id="themeLabel">Тема</span>
+      </button>
     </div>
+  </header>
 
-    <div class="field">
-      <span class="field-label">Вопросов в раунде</span>
-      <div id="sizes" class="chips"></div>
-    </div>
+  <section class="card view" id="setupView">
+    <div class="setup">
+      <h2>Настройте раунд</h2>
+      <p class="subhead">Если не выбрать темы, в раунд попадут вопросы из всех разделов.</p>
+      <div class="topics" id="topicControls"></div>
 
-    <p id="eligibleCount" class="count"></p>
-    <div class="actions">
-      <button id="startRound" class="primary">Начать раунд</button>
-      <button id="openDatabase">База вопросов</button>
-      <button id="resetProgress" class="quiet">Сбросить прогресс</button>
+      <details class="more">
+        <summary>Год и этап</summary>
+        <div class="field-row">
+          <label class="field">Год<select id="yearFilter"></select></label>
+          <label class="field">Этап<select id="stageFilter"></select></label>
+        </div>
+      </details>
+
+      <div class="controls">
+        <label class="field">Количество вопросов
+          <select id="roundSize">
+            <option value="5">5 вопросов</option>
+            <option value="10" selected>10 вопросов</option>
+            <option value="20">20 вопросов</option>
+            <option value="50">50 вопросов</option>
+            <option value="all">Все доступные</option>
+          </select>
+        </label>
+        <div class="toggles">
+          <label class="toggle"><input id="onlyUncompleted" type="checkbox">Только непройденные</label>
+          <label class="toggle"><input id="onlyVerified" type="checkbox">Только проверенные</label>
+        </div>
+      </div>
+
+      <p class="notice" id="eligibleNotice"></p>
+      <div class="actions">
+        <div class="actions-left">
+          <button class="button alt" id="openDatabase" type="button">Вопросы в базе</button>
+          <button class="button ghost danger" id="resetProgress" type="button">Сбросить прогресс</button>
+        </div>
+        <button class="button" id="startButton" type="button">Начать раунд</button>
+      </div>
+      <p class="hint">Enter — начать раунд</p>
     </div>
   </section>
 
-  <section id="round" class="screen" hidden>
-    <p id="roundMeta" class="meta"></p>
-    <h2 id="questionText"></h2>
-    <div id="optionList" class="options"></div>
-    <div id="feedback" class="feedback" hidden>
-      <p id="verdict" class="verdict"></p>
-      <p id="explanation"></p>
-      <ul id="evidence" class="evidence"></ul>
-      <p id="unverifiedNote" class="note" hidden>
-        Ответ взят из официального ключа, но ещё не перепроверен по источникам.
-      </p>
-      <button id="nextQuestion" class="primary">Дальше</button>
+  <section class="card view" id="quizView" hidden>
+    <div class="quiz-top">
+      <div class="progress"><span id="progressLabel"></span><span id="scoreLabel"></span></div>
+      <div class="track"><div class="fill" id="progressFill"></div></div>
     </div>
-    <button id="leaveRound" class="quiet">Закончить раунд</button>
+    <div class="quiz-main">
+      <div class="pills">
+        <span class="pill" id="topicLabel"></span>
+        <span class="pill quiet" id="sourceLabel"></span>
+        <span class="pill warn" id="unverifiedPill" hidden>не проверено</span>
+      </div>
+      <h2 class="question" id="questionText"></h2>
+      <div class="options" id="options" role="group" aria-label="Варианты ответа"></div>
+      <div class="feedback hidden" id="feedback" role="status"></div>
+      <div class="next-row">
+        <button class="button ghost" id="leaveRound" type="button">Закончить раунд</button>
+        <button class="button hidden" id="nextButton" type="button">Следующий вопрос</button>
+      </div>
+      <p class="hint">1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда</p>
+    </div>
   </section>
 
-  <section id="database" class="screen" hidden>
-    <h2>База вопросов</h2>
-    <div class="field database-filters">
-      <input id="search" type="search" placeholder="Поиск по русскому тексту">
-      <select id="statusFilter">
-        <option value="">любой статус</option>
-        <option value="verified">проверено</option>
-        <option value="unverified">не проверено</option>
-        <option value="conflict">расхождение</option>
-        <option value="needs-review">нет ответа</option>
-      </select>
+  <section class="card view" id="resultsView" hidden>
+    <div class="results">
+      <p class="eyebrow">Раунд завершён</p>
+      <div class="score" id="finalScore"></div>
+      <p class="result-text" id="resultText"></p>
+      <div class="actions centered">
+        <button class="button alt" id="resultsDatabase" type="button">Вопросы в базе</button>
+        <button class="button" id="backToSetup" type="button">Новый раунд</button>
+      </div>
     </div>
-    <p id="databaseCount" class="count"></p>
-    <div id="databaseList" class="rows"></div>
-    <button id="backToStart" class="quiet">Назад</button>
   </section>
+
+  <section class="card view" id="databaseView" hidden>
+    <div class="database">
+      <div class="actions">
+        <div>
+          <h2>Вопросы в базе</h2>
+          <p class="subhead" id="databaseCount"></p>
+        </div>
+        <button class="button alt" id="closeDatabase" type="button">К настройкам</button>
+      </div>
+      <div class="database-bar">
+        <input class="search" id="databaseSearch" placeholder="Поиск по русскому вопросу">
+        <select id="databaseTopic"><option value="">Все темы</option></select>
+        <select id="databaseStatus">
+          <option value="">Любой статус</option>
+          <option value="verified">Проверено</option>
+          <option value="unverified">Не проверено</option>
+          <option value="conflict">Расхождение ключей</option>
+          <option value="needs-review">Нет ответа</option>
+        </select>
+      </div>
+      <div class="db-list" id="databaseList"></div>
+      <p class="hint">/ — поиск · Esc — к настройкам</p>
+    </div>
+  </section>
+
+  <p class="footer" id="footerNote"></p>
 </main>
 
 <script>
@@ -284,6 +455,7 @@ function grade(record, optionId) {
 
 </script>
 <script>const STORAGE_KEY = 'lingvo-trainer:v1';
+const THEME_KEY = 'lingvo-trainer:theme';
 const STAGE_NAMES = {
   pri: 'пригласительный', shk: 'школьный', mun: 'муниципальный',
   reg: 'региональный', zak: 'заключительный',
@@ -302,8 +474,49 @@ const state = {
   round: [],
   position: 0,
   correct: 0,
+  answered: false,
+  view: 'setup',
   progress: loadProgress(),
 };
+
+/* ---------- тема ---------- */
+
+function systemTheme() {
+  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  $('themeIcon').textContent = theme === 'dark' ? '☾' : '☀';
+  $('themeLabel').textContent = theme === 'dark' ? 'Тёмная' : 'Светлая';
+}
+
+function initTheme() {
+  let stored = null;
+  try {
+    stored = localStorage.getItem(THEME_KEY);
+  } catch {
+    /* приватный режим: тема следует за системной */
+  }
+  applyTheme(stored || systemTheme());
+  if (!stored && window.matchMedia) {
+    // пока выбор не сделан вручную, тема идёт за системной
+    window.matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', (event) => applyTheme(event.matches ? 'dark' : 'light'));
+  }
+}
+
+function toggleTheme() {
+  const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+  applyTheme(next);
+  try {
+    localStorage.setItem(THEME_KEY, next);
+  } catch {
+    /* выбор не переживёт перезагрузку, но в этой сессии работает */
+  }
+}
+
+/* ---------- прогресс ---------- */
 
 function loadProgress() {
   try {
@@ -322,99 +535,113 @@ function saveProgress() {
   }
 }
 
-function show(screen) {
-  for (const id of ['start', 'round', 'database']) $(id).hidden = id !== screen;
-}
+/* ---------- экраны ---------- */
 
-function chips(container, values, isOn, onPick) {
-  container.innerHTML = '';
-  for (const { value, label } of values) {
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = isOn(value) ? 'chip chip-on' : 'chip';
-    button.textContent = label;
-    button.addEventListener('click', () => { onPick(value); renderStart(); });
-    container.append(button);
+function show(view) {
+  state.view = view;
+  for (const [name, id] of Object.entries({
+    setup: 'setupView', quiz: 'quizView', results: 'resultsView', database: 'databaseView',
+  })) {
+    $(id).hidden = name !== view;
   }
 }
 
-function toggle(key) {
-  return (value) => {
-    const list = state.filters[key];
-    const index = list.indexOf(value);
-    if (index === -1) list.push(value); else list.splice(index, 1);
-  };
+function stageLabel(code) {
+  return STAGE_NAMES[code] || code;
 }
 
-function renderStart() {
-  const topics = [...new Set(QUESTION_BANK.map((record) => record.topic))].sort();
-  const years = [...new Set(QUESTION_BANK.flatMap((r) => r.occurrences.map((o) => o.year)))].sort();
-  const stages = STAGE_ORDER.filter((code) =>
-    QUESTION_BANK.some((r) => r.occurrences.some((o) => o.stageCode === code)));
-
-  chips($('topicChips'), topics.map((value) => ({ value, label: value })),
-    (value) => state.filters.topics.includes(value), toggle('topics'));
-  chips($('yearChips'), years.map((value) => ({ value, label: value })),
-    (value) => state.filters.years.includes(value), toggle('years'));
-  chips($('stageChips'), stages.map((value) => ({ value, label: STAGE_NAMES[value] || value })),
-    (value) => state.filters.stages.includes(value), toggle('stages'));
-  chips($('sizes'), [5, 10, 20, 50, Number.MAX_SAFE_INTEGER].map((value) => ({
-    value, label: value === Number.MAX_SAFE_INTEGER ? 'все' : String(value),
-  })), (value) => state.size === value, (value) => { state.size = value; });
-
-  const pool = eligible(QUESTION_BANK, state.filters, state.progress);
-  $('eligibleCount').textContent = pool.length
-    ? `Подходит вопросов: ${pool.length}`
-    : 'Под текущие фильтры не подходит ни один вопрос — снимите часть ограничений.';
-  $('startRound').disabled = pool.length === 0;
-
+function renderBankCount() {
   const verified = QUESTION_BANK.filter((r) => r.answer.state === 'verified').length;
   const done = Object.values(state.progress).filter((item) => item.completed).length;
-  $('stats').textContent =
-    `Вопросов ${QUESTION_BANK.length} · проверено ${verified} · пройдено ${done}`;
+  $('bankCount').textContent = `${QUESTION_BANK.length} вопросов · проверено ${verified} · пройдено ${done}`;
 }
 
+function renderSetup() {
+  const topics = [...new Set(QUESTION_BANK.map((r) => r.topic))].sort();
+  if (!$('topicControls').children.length) {
+    for (const topic of topics) {
+      const label = document.createElement('label');
+      label.className = 'topic-check';
+      label.innerHTML = `<input type="checkbox" value="${topic}"><span>${topic}</span>`;
+      label.querySelector('input').addEventListener('change', (event) => {
+        const list = state.filters.topics;
+        if (event.target.checked) list.push(topic);
+        else list.splice(list.indexOf(topic), 1);
+        renderSetup();
+      });
+      $('topicControls').append(label);
+    }
+
+    const years = [...new Set(QUESTION_BANK.flatMap((r) => r.occurrences.map((o) => o.year)))].sort();
+    fillSelect($('yearFilter'), 'Все годы', years.map((y) => [y, y]));
+    const stages = STAGE_ORDER.filter((code) =>
+      QUESTION_BANK.some((r) => r.occurrences.some((o) => o.stageCode === code)));
+    fillSelect($('stageFilter'), 'Все этапы', stages.map((code) => [code, stageLabel(code)]));
+    fillSelect($('databaseTopic'), 'Все темы', topics.map((t) => [t, t]));
+  }
+
+  const pool = eligible(QUESTION_BANK, state.filters, state.progress);
+  $('eligibleNotice').textContent = pool.length
+    ? `Под фильтры подходит вопросов: ${pool.length}.`
+    : 'Под текущие фильтры не подходит ни один вопрос — снимите часть ограничений.';
+  $('startButton').disabled = pool.length === 0;
+  renderBankCount();
+}
+
+function fillSelect(select, allLabel, pairs) {
+  select.innerHTML = `<option value="">${allLabel}</option>`;
+  for (const [value, label] of pairs) {
+    const option = document.createElement('option');
+    option.value = value;
+    option.textContent = label;
+    select.append(option);
+  }
+}
+
+/* ---------- раунд ---------- */
+
 function startRound() {
+  const pool = eligible(QUESTION_BANK, state.filters, state.progress);
+  if (!pool.length) return;
   state.round = buildRound(QUESTION_BANK, state.filters, state.progress, state.size);
   state.position = 0;
   state.correct = 0;
-  show('round');
+  show('quiz');
   renderQuestion();
 }
 
 function renderQuestion() {
   const record = state.round[state.position];
-  if (!record) {
-    $('roundMeta').textContent = state.round.length
-      ? `Раунд окончен: ${state.correct} из ${state.round.length}`
-      : 'Раунд пуст.';
-    $('questionText').textContent = '';
-    $('optionList').innerHTML = '';
-    $('feedback').hidden = true;
-    return;
-  }
+  if (!record) return finishRound();
+
+  state.answered = false;
   const first = record.occurrences[0];
-  $('roundMeta').textContent = [
-    record.topic,
-    `${first.year}, ${first.stage}`,
-    `${state.position + 1} из ${state.round.length}`,
-    `верных ${state.correct}`,
-  ].join(' · ');
+  $('progressLabel').textContent = `Вопрос ${state.position + 1} из ${state.round.length}`;
+  $('scoreLabel').textContent = `Счёт: ${state.correct}`;
+  $('progressFill').style.width = `${(state.position / state.round.length) * 100}%`;
+  $('topicLabel').textContent = record.topic;
+  $('sourceLabel').textContent = `${first.year}, ${stageLabel(first.stageCode)}${first.number ? ` · №${first.number}` : ''}`;
+  $('unverifiedPill').hidden = record.answer.state !== 'unverified';
   $('questionText').textContent = record.questionRu;
-  $('feedback').hidden = true;
-  $('optionList').innerHTML = '';
+
+  $('feedback').className = 'feedback hidden';
+  $('nextButton').classList.add('hidden');
+  $('options').innerHTML = '';
   for (const option of labelledOptions(record)) {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'option';
     button.dataset.optionId = option.optionId;
-    button.innerHTML = `<span class="label">${option.label}</span>${option.zh}`;
+    button.innerHTML = `<span class="letter">${option.label}</span><span>${option.zh}</span>`;
     button.addEventListener('click', () => answer(record, option.optionId));
-    $('optionList').append(button);
+    $('options').append(button);
   }
 }
 
 function answer(record, optionId) {
+  if (state.answered) return;
+  state.answered = true;
+
   const verdict = grade(record, optionId);
   const previous = state.progress[record.id] || { attempts: 0, correct: 0 };
   state.progress[record.id] = {
@@ -425,42 +652,69 @@ function answer(record, optionId) {
   };
   saveProgress();
   if (verdict.correct) state.correct += 1;
+  $('scoreLabel').textContent = `Счёт: ${state.correct}`;
 
-  for (const button of $('optionList').querySelectorAll('button')) {
+  for (const button of $('options').querySelectorAll('button')) {
     button.disabled = true;
-    if (button.dataset.optionId === verdict.answerOptionId) button.classList.add('right');
+    if (button.dataset.optionId === verdict.answerOptionId) button.classList.add('correct');
     else if (button.dataset.optionId === optionId) button.classList.add('wrong');
   }
 
   const right = record.options.find((option) => option.id === verdict.answerOptionId);
-  $('verdict').className = verdict.correct ? 'verdict right' : 'verdict wrong';
-  $('verdict').textContent = verdict.correct ? 'Верно' : `Неверно. Правильный ответ: ${right.zh}`;
-  $('explanation').textContent = record.explanation.ru;
-  $('evidence').innerHTML = '';
-  for (const source of record.evidence) {
-    const item = document.createElement('li');
-    const link = document.createElement('a');
-    link.href = source.url;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.textContent = `${source.title}${source.checkedAt ? ` (проверено ${source.checkedAt})` : ''}`;
-    item.append(link);
-    $('evidence').append(item);
-  }
-  $('unverifiedNote').hidden = record.answer.state !== 'unverified';
-  $('feedback').hidden = false;
-  $('nextQuestion').textContent =
-    state.position + 1 < state.round.length ? 'Дальше' : 'Завершить раунд';
+  const sources = record.evidence.map((source) =>
+    `<li><a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.title}</a>` +
+    `${source.checkedAt ? ` <span class="muted">(проверено ${source.checkedAt})</span>` : ''}</li>`).join('');
+
+  $('feedback').className = `feedback ${verdict.correct ? 'good' : 'bad'}`;
+  $('feedback').innerHTML = [
+    `<p><strong>${verdict.correct ? 'Верно' : 'Неверно'}</strong>`,
+    verdict.correct ? '' : `Правильный ответ: ${right.zh}.`,
+    '</p>',
+    record.explanation.ru ? `<p class="why">${record.explanation.ru}</p>` : '',
+    sources ? `<ul>${sources}</ul>` : '',
+    record.answer.state === 'unverified'
+      ? '<p class="unverified">Ответ взят из официального ключа, но ещё не перепроверен по источникам.</p>'
+      : '',
+  ].join('');
+
+  $('nextButton').textContent =
+    state.position + 1 < state.round.length ? 'Следующий вопрос' : 'Итоги раунда';
+  $('nextButton').classList.remove('hidden');
+  $('nextButton').focus();
 }
 
+function nextQuestion() {
+  if (!state.answered) return;
+  state.position += 1;
+  if (state.position >= state.round.length) finishRound();
+  else renderQuestion();
+}
+
+function finishRound() {
+  const total = state.round.length;
+  $('finalScore').textContent = `${state.correct} / ${total}`;
+  const share = total ? state.correct / total : 0;
+  $('resultText').textContent = share === 1
+    ? 'Весь раунд без ошибок.'
+    : share >= 0.7
+      ? 'Хороший результат: ошибки стоит разобрать в базе вопросов.'
+      : 'Есть над чем поработать — загляните в базу, там у каждого ответа есть пояснение.';
+  show('results');
+  renderSetup();
+}
+
+/* ---------- база ---------- */
+
 function renderDatabase() {
-  const needle = $('search').value.trim().toLocaleLowerCase('ru');
-  const status = $('statusFilter').value;
+  const needle = $('databaseSearch').value.trim().toLocaleLowerCase('ru');
+  const topic = $('databaseTopic').value;
+  const status = $('databaseStatus').value;
   const rows = QUESTION_BANK.filter((record) =>
     (!needle || record.questionRu.toLocaleLowerCase('ru').includes(needle))
+    && (!topic || record.topic === topic)
     && (!status || record.answer.state === status));
 
-  $('databaseCount').textContent = `Показано ${rows.length} из ${QUESTION_BANK.length}`;
+  $('databaseCount').textContent = `Показано ${rows.length} из ${QUESTION_BANK.length} вопросов`;
   $('databaseList').innerHTML = '';
   if (!rows.length) {
     $('databaseList').innerHTML = '<p class="empty">Ничего не найдено.</p>';
@@ -473,18 +727,22 @@ function renderDatabase() {
     const answered = record.options.find((option) => option.id === record.answer.optionId);
     const done = state.progress[record.id]?.completed;
     const appearances = record.occurrences
-      .map((o) => `${o.year} ${o.stage}${o.number ? ` №${o.number}` : ''}`).join(' · ');
+      .map((o) => `${o.year} ${stageLabel(o.stageCode)}${o.number ? ` №${o.number}` : ''}`).join(' · ');
     article.innerHTML = [
-      `<h3>${record.questionRu}</h3>`,
-      `<p class="meta"><span class="tag">${record.topic}</span>`,
-      `<span class="tag">${STATUS_NAMES[record.answer.state]}</span>`,
-      done ? '<span class="tag">пройден</span>' : '',
+      '<div class="row-top">',
+      `<span class="tag">${record.topic}</span>`,
+      `<span class="tag${record.answer.state === 'verified' ? ' done' : ''}${
+        record.answer.state === 'needs-review' || record.answer.state === 'conflict' ? ' review' : ''
+      }">${STATUS_NAMES[record.answer.state]}</span>`,
+      done ? '<span class="tag done">пройден</span>' : '',
       record.parseWarnings?.length ? `<span class="tag warn">${record.parseWarnings.join('; ')}</span>` : '',
-      `<br>${appearances}</p>`,
-      `<p class="zh">${record.options.map((o) => o.zh).join(' · ')}</p>`,
-      answered ? `<p class="answer">Ответ: ${answered.zh}</p>` : '',
-      record.explanation.ru ? `<p>${record.explanation.ru}</p>` : '',
-      record.questionZh ? `<p class="zh">${record.questionZh}</p>` : '',
+      '</div>',
+      `<h3>${record.questionRu}</h3>`,
+      `<div class="row-options">${record.options.map((o) => o.zh).join(' · ')}</div>`,
+      answered ? `<p class="row-answer">Ответ: ${answered.zh}</p>` : '',
+      record.explanation.ru ? `<p class="row-why">${record.explanation.ru}</p>` : '',
+      record.questionZh ? `<p class="row-zh">${record.questionZh}</p>` : '',
+      `<p class="row-zh">${appearances}</p>`,
     ].join('');
     $('databaseList').append(article);
   }
@@ -496,38 +754,117 @@ function renderDatabase() {
   }
 }
 
-$('startRound').addEventListener('click', startRound);
-$('nextQuestion').addEventListener('click', () => {
-  state.position += 1;
-  if (state.position >= state.round.length) {
-    show('start');
-    renderStart();
+function openDatabase() {
+  show('database');
+  renderDatabase();
+}
+
+function backToSetup() {
+  show('setup');
+  renderSetup();
+}
+
+/* ---------- клавиатура ---------- */
+
+const ANSWER_KEYS = {
+  Digit1: 0, Digit2: 1, Digit3: 2, Digit4: 3,
+  Numpad1: 0, Numpad2: 1, Numpad3: 2, Numpad4: 3,
+  KeyA: 0, KeyB: 1, KeyC: 2, KeyD: 3,
+};
+
+document.addEventListener('keydown', (event) => {
+  if (event.metaKey || event.ctrlKey || event.altKey) return;
+  const typing = ['INPUT', 'SELECT', 'TEXTAREA'].includes(document.activeElement?.tagName);
+
+  if (event.key === 'Escape') {
+    if (typing) document.activeElement.blur();
+    else if (state.view !== 'setup') backToSetup();
     return;
   }
-  renderQuestion();
+
+  if (typing) return;
+
+  if (state.view === 'database' && event.key === '/') {
+    event.preventDefault();
+    $('databaseSearch').focus();
+    return;
+  }
+
+  if (state.view === 'setup' && event.key === 'Enter' && !$('startButton').disabled) {
+    event.preventDefault();
+    startRound();
+    return;
+  }
+
+  if (state.view !== 'quiz') return;
+
+  // код клавиши, а не символ: на русской раскладке те же клавиши дают Ф, И, С, В
+  const index = ANSWER_KEYS[event.code];
+  if (index !== undefined && !state.answered) {
+    const button = $('options').querySelectorAll('button')[index];
+    if (button) {
+      event.preventDefault();
+      button.click();
+    }
+    return;
+  }
+
+  if ((event.key === 'Enter' || event.key === ' ') && state.answered) {
+    event.preventDefault();
+    nextQuestion();
+  }
 });
-$('leaveRound').addEventListener('click', () => { show('start'); renderStart(); });
-$('onlyUnfinished').addEventListener('change', (event) => {
+
+/* ---------- обвязка ---------- */
+
+$('themeToggle').addEventListener('click', toggleTheme);
+$('startButton').addEventListener('click', startRound);
+$('nextButton').addEventListener('click', nextQuestion);
+$('leaveRound').addEventListener('click', backToSetup);
+$('openDatabase').addEventListener('click', openDatabase);
+$('resultsDatabase').addEventListener('click', openDatabase);
+$('closeDatabase').addEventListener('click', backToSetup);
+$('backToSetup').addEventListener('click', backToSetup);
+$('databaseSearch').addEventListener('input', renderDatabase);
+$('databaseTopic').addEventListener('change', renderDatabase);
+$('databaseStatus').addEventListener('change', renderDatabase);
+
+$('roundSize').addEventListener('change', (event) => {
+  state.size = event.target.value === 'all' ? Number.MAX_SAFE_INTEGER : Number(event.target.value);
+  renderSetup();
+});
+$('onlyUncompleted').addEventListener('change', (event) => {
   state.filters.onlyUnfinished = event.target.checked;
-  renderStart();
+  renderSetup();
 });
 $('onlyVerified').addEventListener('change', (event) => {
   state.filters.onlyVerified = event.target.checked;
-  renderStart();
+  renderSetup();
 });
-$('openDatabase').addEventListener('click', () => { show('database'); renderDatabase(); });
-$('backToStart').addEventListener('click', () => { show('start'); renderStart(); });
-$('search').addEventListener('input', renderDatabase);
-$('statusFilter').addEventListener('change', renderDatabase);
+$('yearFilter').addEventListener('change', (event) => {
+  state.filters.years = event.target.value ? [event.target.value] : [];
+  renderSetup();
+});
+$('stageFilter').addEventListener('change', (event) => {
+  state.filters.stages = event.target.value ? [event.target.value] : [];
+  renderSetup();
+});
 $('resetProgress').addEventListener('click', () => {
   if (!confirm('Сбросить прогресс по всем вопросам?')) return;
   state.progress = {};
   saveProgress();
-  renderStart();
+  renderSetup();
 });
 
-renderStart();
-show('start');
+const verifiedCount = QUESTION_BANK.filter((r) => r.answer.state === 'verified').length;
+$('footerNote').textContent =
+  `${QUESTION_BANK.length} вопросов, собранных из материалов ВсОШ 2015/16 — 2025/26. ` +
+  `У ${verifiedCount} ответов есть пояснение и ссылка на источник; у остальных ответ взят из ` +
+  'официального ключа и ждёт перепроверки.';
+
+initTheme();
+renderSetup();
+show('setup');
 </script>
 </body>
 </html>

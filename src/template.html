@@ -7,76 +7,124 @@
 <style>/*QUIZ_CSS*/</style>
 </head>
 <body>
-<header>
-  <h1>Лингвострановедение</h1>
-  <p id="stats"></p>
-</header>
-
-<main>
-  <section id="start" class="screen">
-    <h2>Новый раунд</h2>
-
-    <div class="field">
-      <span class="field-label">Темы</span>
-      <div id="topicChips" class="chips"></div>
+<main class="shell">
+  <header class="top">
+    <div>
+      <p class="eyebrow">Китайский язык · тренажёр</p>
+      <h1>Лингвострановедение</h1>
+      <p class="subtitle">Все вопросы — по-русски, варианты — по-китайски. Выберите тему, размер раунда
+        и отслеживайте уже пройденные задания.</p>
     </div>
-
-    <details class="more">
-      <summary>Год и этап</summary>
-      <div class="field"><span class="field-label">Год</span><div id="yearChips" class="chips"></div></div>
-      <div class="field"><span class="field-label">Этап</span><div id="stageChips" class="chips"></div></div>
-    </details>
-
-    <div class="field switches">
-      <label><input type="checkbox" id="onlyUnfinished"> только непройденные</label>
-      <label><input type="checkbox" id="onlyVerified"> только проверенные</label>
+    <div class="top-side">
+      <div class="count" id="bankCount"></div>
+      <button class="theme" id="themeToggle" type="button" aria-label="Переключить тему">
+        <span id="themeIcon">◐</span><span id="themeLabel">Тема</span>
+      </button>
     </div>
+  </header>
 
-    <div class="field">
-      <span class="field-label">Вопросов в раунде</span>
-      <div id="sizes" class="chips"></div>
-    </div>
+  <section class="card view" id="setupView">
+    <div class="setup">
+      <h2>Настройте раунд</h2>
+      <p class="subhead">Если не выбрать темы, в раунд попадут вопросы из всех разделов.</p>
+      <div class="topics" id="topicControls"></div>
 
-    <p id="eligibleCount" class="count"></p>
-    <div class="actions">
-      <button id="startRound" class="primary">Начать раунд</button>
-      <button id="openDatabase">База вопросов</button>
-      <button id="resetProgress" class="quiet">Сбросить прогресс</button>
+      <details class="more">
+        <summary>Год и этап</summary>
+        <div class="field-row">
+          <label class="field">Год<select id="yearFilter"></select></label>
+          <label class="field">Этап<select id="stageFilter"></select></label>
+        </div>
+      </details>
+
+      <div class="controls">
+        <label class="field">Количество вопросов
+          <select id="roundSize">
+            <option value="5">5 вопросов</option>
+            <option value="10" selected>10 вопросов</option>
+            <option value="20">20 вопросов</option>
+            <option value="50">50 вопросов</option>
+            <option value="all">Все доступные</option>
+          </select>
+        </label>
+        <div class="toggles">
+          <label class="toggle"><input id="onlyUncompleted" type="checkbox">Только непройденные</label>
+          <label class="toggle"><input id="onlyVerified" type="checkbox">Только проверенные</label>
+        </div>
+      </div>
+
+      <p class="notice" id="eligibleNotice"></p>
+      <div class="actions">
+        <div class="actions-left">
+          <button class="button alt" id="openDatabase" type="button">Вопросы в базе</button>
+          <button class="button ghost danger" id="resetProgress" type="button">Сбросить прогресс</button>
+        </div>
+        <button class="button" id="startButton" type="button">Начать раунд</button>
+      </div>
+      <p class="hint">Enter — начать раунд</p>
     </div>
   </section>
 
-  <section id="round" class="screen" hidden>
-    <p id="roundMeta" class="meta"></p>
-    <h2 id="questionText"></h2>
-    <div id="optionList" class="options"></div>
-    <div id="feedback" class="feedback" hidden>
-      <p id="verdict" class="verdict"></p>
-      <p id="explanation"></p>
-      <ul id="evidence" class="evidence"></ul>
-      <p id="unverifiedNote" class="note" hidden>
-        Ответ взят из официального ключа, но ещё не перепроверен по источникам.
-      </p>
-      <button id="nextQuestion" class="primary">Дальше</button>
+  <section class="card view" id="quizView" hidden>
+    <div class="quiz-top">
+      <div class="progress"><span id="progressLabel"></span><span id="scoreLabel"></span></div>
+      <div class="track"><div class="fill" id="progressFill"></div></div>
     </div>
-    <button id="leaveRound" class="quiet">Закончить раунд</button>
+    <div class="quiz-main">
+      <div class="pills">
+        <span class="pill" id="topicLabel"></span>
+        <span class="pill quiet" id="sourceLabel"></span>
+        <span class="pill warn" id="unverifiedPill" hidden>не проверено</span>
+      </div>
+      <h2 class="question" id="questionText"></h2>
+      <div class="options" id="options" role="group" aria-label="Варианты ответа"></div>
+      <div class="feedback hidden" id="feedback" role="status"></div>
+      <div class="next-row">
+        <button class="button ghost" id="leaveRound" type="button">Закончить раунд</button>
+        <button class="button hidden" id="nextButton" type="button">Следующий вопрос</button>
+      </div>
+      <p class="hint">1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда</p>
+    </div>
   </section>
 
-  <section id="database" class="screen" hidden>
-    <h2>База вопросов</h2>
-    <div class="field database-filters">
-      <input id="search" type="search" placeholder="Поиск по русскому тексту">
-      <select id="statusFilter">
-        <option value="">любой статус</option>
-        <option value="verified">проверено</option>
-        <option value="unverified">не проверено</option>
-        <option value="conflict">расхождение</option>
-        <option value="needs-review">нет ответа</option>
-      </select>
+  <section class="card view" id="resultsView" hidden>
+    <div class="results">
+      <p class="eyebrow">Раунд завершён</p>
+      <div class="score" id="finalScore"></div>
+      <p class="result-text" id="resultText"></p>
+      <div class="actions centered">
+        <button class="button alt" id="resultsDatabase" type="button">Вопросы в базе</button>
+        <button class="button" id="backToSetup" type="button">Новый раунд</button>
+      </div>
     </div>
-    <p id="databaseCount" class="count"></p>
-    <div id="databaseList" class="rows"></div>
-    <button id="backToStart" class="quiet">Назад</button>
   </section>
+
+  <section class="card view" id="databaseView" hidden>
+    <div class="database">
+      <div class="actions">
+        <div>
+          <h2>Вопросы в базе</h2>
+          <p class="subhead" id="databaseCount"></p>
+        </div>
+        <button class="button alt" id="closeDatabase" type="button">К настройкам</button>
+      </div>
+      <div class="database-bar">
+        <input class="search" id="databaseSearch" placeholder="Поиск по русскому вопросу">
+        <select id="databaseTopic"><option value="">Все темы</option></select>
+        <select id="databaseStatus">
+          <option value="">Любой статус</option>
+          <option value="verified">Проверено</option>
+          <option value="unverified">Не проверено</option>
+          <option value="conflict">Расхождение ключей</option>
+          <option value="needs-review">Нет ответа</option>
+        </select>
+      </div>
+      <div class="db-list" id="databaseList"></div>
+      <p class="hint">/ — поиск · Esc — к настройкам</p>
+    </div>
+  </section>
+
+  <p class="footer" id="footerNote"></p>
 </main>
 
 <script>
