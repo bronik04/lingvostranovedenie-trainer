@@ -10,7 +10,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from normalize import completeness_errors, fragment_pairs, language_errors, normalize_text, option_key
+from normalize import (completeness_errors, fragment_pairs, language_errors, normalize_text,
+                       option_key, tidy)
 
 STAGE_ORDER = {'pri': 0, 'shk': 1, 'mun': 2, 'reg': 3, 'zak': 4}
 
@@ -42,13 +43,14 @@ def _is_whole(text: str) -> bool:
 
 
 def _best_wording(candidates: list[tuple[int, str]]) -> str:
-    """Целая редакция важнее авторитетной.
+    """Полная редакция важнее авторитетной.
 
-    Обрезка встречается и в авторитетном источнике: в банке 423 у вопроса про Цзянсу
-    отрезано «Китая.», а целый текст лежит в базе «310», которая по формулировкам
-    младше. Поэтому сначала сравнивается целость, и только потом авторитет и длина.
+    Обрезка встречается в любом источнике, включая первоисточник: в банке 423 у вопроса
+    про Цзянсу отрезано «Китая.», а из бланка 2024-25 при извлечении текста выпала
+    середина вопроса про развитые регионы. Поэтому порядок такой: сначала целость,
+    затем длина и только потом авторитет источника.
     """
-    return max(candidates, key=lambda pair: (_is_whole(pair[1]), pair[0], len(pair[1])))[1]
+    return max(candidates, key=lambda pair: (_is_whole(pair[1]), len(pair[1]), pair[0]))[1]
 
 
 def _forms(member: dict, translations: dict[str, str]) -> set[tuple[str, str]]:
@@ -70,14 +72,35 @@ def _forms(member: dict, translations: dict[str, str]) -> set[tuple[str, str]]:
     return forms
 
 
+def _is_subsequence(short: str, long: str) -> bool:
+    iterator = iter(long)
+    return all(symbol in iterator for symbol in short)
+
+
+def _same_wording(first: str, second: str) -> bool:
+    """Одна и та же формулировка, возможно урезанная одним из источников.
+
+    Урезать может не только хвост: в бланке 2024-25 из вопроса «Какие регионы Китая
+    наиболее развиты в социально-экономическом отношении?» выпала середина, и остались
+    «Какие регионы» плюс «экономическом отношении?». Поэтому короткий текст считается
+    тем же вопросом, если он целиком укладывается в длинный по порядку символов и при
+    этом занимает не меньше половины его длины.
+    """
+    if first == second or first.startswith(second) or second.startswith(first):
+        return True
+    if first.endswith(second) or second.endswith(first):
+        return True
+    short, long = sorted((first, second), key=len)
+    return len(short) >= len(long) / 2 and _is_subsequence(short, long)
+
+
 def _same_question(left: set[tuple[str, str]], right: set[tuple[str, str]]) -> bool:
     """Тот же вопрос, если совпала любая форма — с поправкой на обрезку."""
     for language, first in left:
         for other_language, second in right:
             if language != other_language or not first or not second:
                 continue
-            if (first == second or first.startswith(second) or second.startswith(first)
-                    or first.endswith(second) or second.endswith(first)):
+            if _same_wording(first, second):
                 return True
     return False
 
@@ -214,10 +237,10 @@ def merge(raw: list[dict], translations: dict[str, str]) -> tuple[list[dict], di
 
         russian = [(_authority(m['sourceFile']), m['questionRu']) for m in members if m['questionRu']]
         chinese = [(_authority(m['sourceFile']), m['questionZh']) for m in members if m['questionZh']]
-        question_zh = _best_wording(chinese) if chinese else None
+        question_zh = tidy(_best_wording(chinese)) if chinese else None
 
         if russian:
-            question_ru = _best_wording(russian)
+            question_ru = tidy(_best_wording(russian))
         elif question_zh and normalize_text(question_zh) in translations:
             question_ru = translations[normalize_text(question_zh)]
         else:

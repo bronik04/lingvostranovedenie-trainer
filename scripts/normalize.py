@@ -30,6 +30,15 @@ ARTIFACTS = re.compile(
 )
 
 
+# перенос по слогам оставляет в тексте дефис с пробелом: «социально- экономическом»
+HYPHEN_BREAK = re.compile(r'(?<=[а-яёa-z])-\s+(?=[а-яёa-z])')
+
+
+def tidy(value: str) -> str:
+    """Убрать следы переноса строк из формулировки."""
+    return HYPHEN_BREAK.sub('-', value).strip()
+
+
 def strip_artifacts(value: str) -> str:
     """Убрать из варианта ответа приклеившийся текст колонтитула или соседнего раздела."""
     return ARTIFACTS.sub('', value).strip(' ;·')
