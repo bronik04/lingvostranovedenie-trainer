@@ -30,6 +30,19 @@
     ],
     "wave": 1
   },
+  "2015-16-mun-2": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "Больше всего населения Китая сосредоточено в восточных приморских районах (东部) — там же расположены крупнейшие городские агломерации страны.",
+    "evidence": [
+      {
+        "title": "中国人口分布 — 国家统计局",
+        "url": "https://www.stats.gov.cn/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2015-16-mun-3": {
     "optionId": "o3",
     "state": "verified",
@@ -82,18 +95,44 @@
     ],
     "wave": 3
   },
+  "2015-16-mun-7": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Самая многочисленная национальность Китая — хань (汉族), свыше 90% населения страны.",
+    "evidence": [
+      {
+        "title": "汉族 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%89%E6%97%8F",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2015-16-mun-8": {
     "optionId": "o3",
     "state": "verified",
     "explanation": "Праздник Дуаньу (端午节) отмечают в пятый день пятого месяца по лунному календарю — в память о поэте Цюй Юане.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "端午节 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "https://www.ihchina.cn/"
       }
     ],
     "wave": 4
+  },
+  "2015-16-mun-9": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Китай вступил во Всемирную торговую организацию 11 декабря 2001 года.",
+    "evidence": [
+      {
+        "title": "中国加入世界贸易组织 — 中华人民共和国商务部",
+        "url": "http://www.mofcom.gov.cn/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2015-16-reg-1": {
     "optionId": "o3",
@@ -114,9 +153,9 @@
     "explanation": "Число 8 (八, «ба») созвучно слову «богатство, процветание» (发, «фа») и потому считается в Китае самым счастливым и символизирующим богатство числом.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "中国数字文化 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E6%95%B0%E5%AD%97%E6%96%87%E5%8C%96",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E6%95%B0%E5%AD%97%E6%96%87%E5%8C%96"
       }
     ],
     "wave": 4
@@ -140,12 +179,38 @@
     "explanation": "Лиса (狐狸) не входит в китайский 12-летний зодиакальный цикл, который составляют крыса, бык, тигр, кролик, дракон, змея, лошадь, коза, обезьяна, петух, собака и свинья.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "生肖 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E7%94%9F%E8%82%96",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E7%94%9F%E8%82%96"
       }
     ],
     "wave": 4
+  },
+  "2015-16-reg-4": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Больше всего национальных меньшинств проживает в провинции Юньнань (云南) — 25 коренных народов, 52 из 56 национальностей Китая.",
+    "evidence": [
+      {
+        "title": "云南是我国世居少数民族分布最多的省份 — 北京市密云区人民政府",
+        "url": "https://www.bjmy.gov.cn/zwgk/ztbd/cjqgmztjjbsfq/mzzsll/202409/t20240910_443078.html",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2015-16-reg-5": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Четыре великих изобретения Древнего Китая — компас, порох, бумага и книгопечатание.",
+    "evidence": [
+      {
+        "title": "四大发明 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%9B%9B%E5%A4%A7%E5%8F%91%E6%98%8E",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2015-16-reg-6": {
     "optionId": "o3",
@@ -166,12 +231,25 @@
     "explanation": "10 сентября в Китае отмечают День учителя (教师节), установленный в 1985 году.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "教师节 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E6%95%99%E5%B8%88%E8%8A%82",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E6%95%99%E5%B8%88%E8%8A%82"
       }
     ],
     "wave": 4
+  },
+  "2015-16-reg-8": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Из предложенных вариантов ближе всего к реальности «22%»: доля населения Китая в мировом составляла около 22–23% в середине XX века и постепенно снижалась, к середине 2010-х годов составляя порядка 18–19%. Среди грубых оценок (5%/22%/50%/1%) 22% остаётся единственной разумной по порядку величины.",
+    "evidence": [
+      {
+        "title": "中国人口占世界人口的百分之几 — 澎湃新闻",
+        "url": "https://www.thepaper.cn/newsDetail_forward_6713411",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2015-16-reg-9": {
     "optionId": "o1",
@@ -185,6 +263,32 @@
       }
     ],
     "wave": 3
+  },
+  "2015-16-shk-56": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "На середину 2010-х годов население Китая составляло около 1,37–1,4 млрд человек — среди предложенных грубых оценок (~2 млрд/~0,1 млрд/~1,5 млрд/>1,8 млрд) ближе всего к действительности вариант «приближается к 1,5 млрд».",
+    "evidence": [
+      {
+        "title": "中国人口 — World Bank Data",
+        "url": "https://data.worldbank.org.cn/indicator/SP.POP.TOTL",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2015-16-shk-57": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Даосизм (道教) — единственная из перечисленных религий, возникшая непосредственно в Китае; буддизм пришёл из Индии, ислам и христианство — с Ближнего Востока.",
+    "evidence": [
+      {
+        "title": "道教 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%81%93%E6%95%99",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2015-16-shk-58": {
     "optionId": "o3",
@@ -237,6 +341,19 @@
       }
     ],
     "wave": 3
+  },
+  "2015-16-shk-62": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "В Китае официально насчитывается 56 национальностей — 55 этнических меньшинств и ханьцы.",
+    "evidence": [
+      {
+        "title": "中国民族 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2015-16-shk-63": {
     "optionId": "o2",
@@ -443,6 +560,19 @@
     ],
     "wave": 2
   },
+  "2016-17-mun-3": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Центральный банк Китая — Народный банк Китая (中国人民银行).",
+    "evidence": [
+      {
+        "title": "中国人民银行 — 官方网站",
+        "url": "http://www.pbc.gov.cn/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2016-17-mun-4": {
     "optionId": "o2",
     "state": "verified",
@@ -455,6 +585,19 @@
       }
     ],
     "wave": 3
+  },
+  "2016-17-mun-5": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Рис (水稻) — важнейшая продовольственная культура Китая, основной продукт питания для более 60% населения страны, особенно в южных регионах.",
+    "evidence": [
+      {
+        "title": "中国水稻生产 — 中华人民共和国农业农村部",
+        "url": "http://www.moa.gov.cn/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2016-17-mun-6": {
     "optionId": "o1",
@@ -501,9 +644,9 @@
     "explanation": "«Компендиум лекарственных веществ» (本草纲目) написал Ли Шичжэнь (李时珍) — врач и фармаколог эпохи Мин.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "本草纲目 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E6%9C%AC%E8%8D%89%E7%BA%B2%E7%9B%AE",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E6%9C%AC%E8%8D%89%E7%BA%B2%E7%9B%AE"
       }
     ],
     "wave": 4
@@ -553,9 +696,9 @@
     "explanation": "Мэй Ланьфан (梅兰芳) — самый известный артист пекинской оперы XX века, прославившийся исполнением женских ролей дань.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "梅兰芳 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E6%A2%85%E5%85%B0%E8%8A%B3",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E6%A2%85%E5%85%B0%E8%8A%B3"
       }
     ],
     "wave": 4
@@ -579,9 +722,9 @@
     "explanation": "«Исторические записки» (史记) написал Сыма Цянь (司马迁) — придворный историограф эпохи Западная Хань.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "史记 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%8F%B2%E8%AE%B0",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%8F%B2%E8%AE%B0"
       }
     ],
     "wave": 4
@@ -605,12 +748,25 @@
     "explanation": "Царь обезьян Сунь Укун действует в романе «Путешествие на Запад» (西游记).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "西游记 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%B8%B8%E8%AE%B0",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%B8%B8%E8%AE%B0"
       }
     ],
     "wave": 4
+  },
+  "2016-17-reg-8": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Основателем даосизма традиционно считается Лао-цзы (老子), автор «Дао дэ цзин».",
+    "evidence": [
+      {
+        "title": "道教 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%81%93%E6%95%99",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2016-17-reg-9": {
     "optionId": "o4",
@@ -624,6 +780,19 @@
       }
     ],
     "wave": 2
+  },
+  "2016-17-shk-1": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Четыре великих изобретения — компас, бумага, книгопечатание и порох (火药).",
+    "evidence": [
+      {
+        "title": "四大发明 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%9B%9B%E5%A4%A7%E5%8F%91%E6%98%8E",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2016-17-shk-10": {
     "optionId": "o1",
@@ -644,9 +813,9 @@
     "explanation": "Четыре классических романа — «Троецарствие», «Сон в красном тереме», «Речные заводи» и «Путешествие на Запад» (西游记).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "四大名著 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%A4%A7%E5%90%8D%E8%91%97",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%A4%A7%E5%90%8D%E8%91%97"
       }
     ],
     "wave": 4
@@ -683,9 +852,9 @@
     "explanation": "Праздник Дуаньу (端午节) посвящён памяти поэта Цюй Юаня, утопившегося в реке Мило.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "端午节 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "https://www.ihchina.cn/"
       }
     ],
     "wave": 4
@@ -696,9 +865,9 @@
     "explanation": "Огненные горы (火焰山) из «Путешествия на Запад» находятся на территории современной Турфанской впадины (吐鲁番盆地) в Синьцзяне.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "火焰山 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E7%81%AB%E7%84%B0%E5%B1%B1",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E7%81%AB%E7%84%B0%E5%B1%B1"
       }
     ],
     "wave": 4
@@ -716,15 +885,54 @@
     ],
     "wave": 2
   },
+  "2016-17-shk-8": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "По Закону об обязательном образовании 1986 года Китай ввёл девятилетнее (九) обязательное обучение.",
+    "evidence": [
+      {
+        "title": "中华人民共和国义务教育法 — 中国人大网",
+        "url": "http://www.npc.gov.cn/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2016-17-shk-9": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Государственный экзамен по китайскому языку как иностранному, учреждённый в 1988 году, сокращённо называется HSK (汉语水平考试).",
+    "evidence": [
+      {
+        "title": "汉语水平考试 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%89%E8%AF%AD%E6%B0%B4%E5%B9%B3%E8%80%83%E8%AF%95",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2016-17-zak-1": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Хайнань (海南省), получивший статус СЭЗ в 1988 году, — крупнейшая по площади специальная экономическая зона Китая.",
+    "evidence": [
+      {
+        "title": "经济特区 — 中国政协",
+        "url": "http://www.cppcc.gov.cn/2011/09/26/ARTI1317001118812167.shtml",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2016-17-zak-10": {
     "optionId": "o3",
     "state": "verified",
     "explanation": "«Четверокнижие» конфуцианства включает «Великое учение», «Учение о середине», «Мэн-цзы» и «Лунь юй» (论语, «Беседы и суждения»).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "四书 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%9B%9B%E4%B9%A6",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%9B%9B%E4%B9%A6"
       }
     ],
     "wave": 4
@@ -774,12 +982,25 @@
     "explanation": "Сюй Бэйхун (徐悲鸿) прославился прежде всего изображениями лошадей, ставшими символом его творчества.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "徐悲鸿 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF"
       }
     ],
     "wave": 4
+  },
+  "2016-17-zak-6": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Первым гражданином КНР, побывавшим в космосе, стал Ян Ливэй (杨利伟) в октябре 2003 года.",
+    "evidence": [
+      {
+        "title": "杨利伟 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%A8%E5%88%A9%E4%BC%9F",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2016-17-zak-7": {
     "optionId": "o2",
@@ -787,12 +1008,25 @@
     "explanation": "Музыку государственного гимна Китая написал композитор Не Эр (聂耳) в 1935 году.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "义勇军进行曲 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E4%B9%89%E5%8B%87%E5%86%9B%E8%BF%9B%E8%A1%8C%E6%9B%B2",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E4%B9%89%E5%8B%87%E5%86%9B%E8%BF%9B%E8%A1%8C%E6%9B%B2"
       }
     ],
     "wave": 4
+  },
+  "2016-17-zak-8": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "История китайской практики цигун насчитывает свыше 2000 лет — восходит к древним даосским и медицинским традициям.",
+    "evidence": [
+      {
+        "title": "气功 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E6%B0%94%E5%8A%9F",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2016-17-zak-9": {
     "optionId": "o4",
@@ -800,9 +1034,9 @@
     "explanation": "«Синьхуа цзыдянь» (新华字典) — первый в Китае небольшой словарь с алфавитным расположением иероглифов по пиньиню и самый авторитетный из подобных изданий.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "新华字典 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E6%96%B0%E5%8D%8E%E5%AD%97%E5%85%B8",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E6%96%B0%E5%8D%8E%E5%AD%97%E5%85%B8"
       }
     ],
     "wave": 4
@@ -813,9 +1047,9 @@
     "explanation": "Три давно установленных профессиональных праздника Китая — День журналиста (记者节), День медсестры (护士节) и День учителя (教师节).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "教师节 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E6%95%99%E5%B8%88%E8%8A%82",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E6%95%99%E5%B8%88%E8%8A%82"
       }
     ],
     "wave": 4
@@ -839,9 +1073,9 @@
     "explanation": "Лао Шэ (老舍) писал на пекинском диалекте (北京方言) — родном для писателя, выросшего в Пекине.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "老舍 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E8%80%81%E8%88%8D",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E8%80%81%E8%88%8D"
       }
     ],
     "wave": 4
@@ -865,9 +1099,9 @@
     "explanation": "Классическими представителями даосской мысли считаются Лао-цзы и Чжуан-цзы (老子和庄子).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "道家 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E9%81%93%E5%AE%B6",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E9%81%93%E5%AE%B6"
       }
     ],
     "wave": 4
@@ -904,12 +1138,25 @@
     "explanation": "Строка «В треске петард уходит старый год, весенний ветер несёт тепло в вино тусу» (Ван Аньши, «Юань жи») описывает встречу китайского Нового года — Праздника весны (春节).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "元日 — 王安石 — 古诗文网",
-        "url": "https://www.gushiwen.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "https://www.gushiwen.cn/"
       }
     ],
     "wave": 4
+  },
+  "2017-18-mun-8": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Алхимия (炼丹术) не входит в число четырёх великих изобретений Китая — ими считаются бумага, книгопечатание, порох и компас.",
+    "evidence": [
+      {
+        "title": "四大发明 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%9B%9B%E5%A4%A7%E5%8F%91%E6%98%8E",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2017-18-mun-9": {
     "optionId": "o2",
@@ -917,12 +1164,25 @@
     "explanation": "Главное развлечение праздника Дуаньу — гонки на лодках-драконах (赛龙舟) в память о попытках спасти утонувшего поэта Цюй Юаня.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "端午节 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "https://www.ihchina.cn/"
       }
     ],
     "wave": 4
+  },
+  "2017-18-reg-1": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "«Экономический пояс Шёлкового пути» и «Морской Шёлковый путь XXI века» сокращённо называют «Один пояс, один путь» (一带一路).",
+    "evidence": [
+      {
+        "title": "一带一路 — 中国一带一路网",
+        "url": "https://www.yidaiyilu.gov.cn/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2017-18-reg-10": {
     "optionId": "o1",
@@ -943,9 +1203,9 @@
     "explanation": "Идиома «一问三不知» из «Цзо чжуань» означает незнание начала, хода и результата дела (事情的开始、经过、结果).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "一问三不知 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E4%B8%80%E9%97%AE%E4%B8%89%E4%B8%8D%E7%9F%A5/755390",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E4%B8%80%E9%97%AE%E4%B8%89%E4%B8%8D%E7%9F%A5/755390"
       }
     ],
     "wave": 4
@@ -956,9 +1216,9 @@
     "explanation": "Миф о происхождении людей — «Нюйва лепит людей» (女娲造人): богиня создаёт людей из жёлтой глины.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "女娲造人的传说 — 人民日报",
-        "url": "http://paper.people.com.cn/rmrbhwb/html/2015-07/24/content_1590909.htm",
-        "checkedAt": "2026-09-18"
+        "url": "http://paper.people.com.cn/rmrbhwb/html/2015-07/24/content_1590909.htm"
       }
     ],
     "wave": 4
@@ -969,9 +1229,9 @@
     "explanation": "Идиома «望子成龙» («надеяться, что сын станет драконом») выражает родительскую надежду на успех и высокое положение ребёнка.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "望子成龙 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E6%9C%9B%E5%AD%90%E6%88%90%E9%BE%99",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E6%9C%9B%E5%AD%90%E6%88%90%E9%BE%99"
       }
     ],
     "wave": 4
@@ -988,6 +1248,19 @@
       }
     ],
     "wave": 3
+  },
+  "2017-18-reg-6": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "Даосские культовые сооружения называют «гун» (宫) или «гуань» (观) — второй термин исторически восходит к обсерваториям и храмам звёздного культа.",
+    "evidence": [
+      {
+        "title": "道观 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E9%81%93%E8%A7%82",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2017-18-reg-7": {
     "optionId": "o2",
@@ -1034,9 +1307,9 @@
     "explanation": "Основателем даосской мысли в конце эпохи Чуньцю считается Лао-цзы (老子), автор «Дао дэ цзин».",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "老子 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E8%80%81%E5%AD%90",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E8%80%81%E5%AD%90"
       }
     ],
     "wave": 4
@@ -1047,9 +1320,9 @@
     "explanation": "Гадательные надписи на костях (甲骨文), древнейшая китайская письменность, появились во времена династии Шан (商朝).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "甲骨文 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E7%94%B2%E9%AA%A8%E6%96%87",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E7%94%B2%E9%AA%A8%E6%96%87"
       }
     ],
     "wave": 4
@@ -1060,9 +1333,9 @@
     "explanation": "«Подлинная история А-Кью» (阿Q正传) — важнейшее произведение Лу Синя (鲁迅).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "阿Q正传 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E9%98%BFQ%E6%AD%A3%E4%BC%A0",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E9%98%BFQ%E6%AD%A3%E4%BC%A0"
       }
     ],
     "wave": 4
@@ -1073,9 +1346,9 @@
     "explanation": "Красный грим в пекинской опере (脸谱) символизирует верность и храбрость — классический пример — образ полководца Гуань Юя.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "京剧脸谱 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E4%BA%AC%E5%89%A7%E8%84%B8%E8%B0%B1",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E4%BA%AC%E5%89%A7%E8%84%B8%E8%B0%B1"
       }
     ],
     "wave": 4
@@ -1086,9 +1359,9 @@
     "explanation": "«Искусство войны» Сунь-цзы (孙子兵法) — древнекитайский военный трактат, переведённый на десятки языков мира.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "孙子兵法 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%AD%99%E5%AD%90%E5%85%B5%E6%B3%95",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%AD%99%E5%AD%90%E5%85%B5%E6%B3%95"
       }
     ],
     "wave": 4
@@ -1138,9 +1411,9 @@
     "explanation": "Пекин-Цзюлунская железная дорога (京九铁路), связывающая Пекин с Шэньчжэнем и Коулуном в Гонконге, открыта в 1996 году и стала крупнейшей по объёму строительства однократно возведённой магистралью Китая.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "京九铁路 — 维基百科",
-        "url": "https://zh.wikipedia.org/zh-hans/%E4%BA%AC%E4%B9%9D%E9%93%81%E8%B7%AF",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/zh-hans/%E4%BA%AC%E4%B9%9D%E9%93%81%E8%B7%AF"
       }
     ],
     "wave": 4
@@ -1190,9 +1463,9 @@
     "explanation": "Знаменитый военный трактат, переведённый на многие языки, — «Искусство войны» Сунь-цзы (孙子兵法).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "孙子兵法 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%AD%99%E5%AD%90%E5%85%B5%E6%B3%95",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%AD%99%E5%AD%90%E5%85%B5%E6%B3%95"
       }
     ],
     "wave": 4
@@ -1216,9 +1489,9 @@
     "explanation": "«Четыре благородных» в китайской живописи — слива, орхидея, бамбук, хризантема (梅、兰、竹、菊).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "花中四君子 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E8%8A%B1%E4%B8%AD%E5%9B%9B%E5%90%9B%E5%AD%90",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E8%8A%B1%E4%B8%AD%E5%9B%9B%E5%90%9B%E5%AD%90"
       }
     ],
     "wave": 4
@@ -1229,9 +1502,9 @@
     "explanation": "Прообразом талисмана Пекинской Олимпиады-2008 Цзинцзин (晶晶, один из пяти Фува) стала большая панда (大熊猫) — национальное сокровище Китая.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "福娃 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E7%A6%8F%E5%A8%83",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E7%A6%8F%E5%A8%83"
       }
     ],
     "wave": 4
@@ -1248,6 +1521,32 @@
       }
     ],
     "wave": 3
+  },
+  "2017-18-zak-7": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Первую олимпийскую золотую медаль Китай завоевал в 1984 году на Играх в Лос-Анджелесе — стрелок Сюй Хайфэн.",
+    "evidence": [
+      {
+        "title": "许海峰 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E8%AE%B8%E6%B5%B7%E5%B3%B0",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2017-18-zak-8": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Население Китая распределено неравномерно: на востоке страны его гораздо больше, чем на западе (东多西少) — это следствие «линии Ху Хуаньюна».",
+    "evidence": [
+      {
+        "title": "胡焕庸线 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E8%83%A1%E7%84%95%E5%BA%B8%E7%BA%BF",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2017-18-zak-9": {
     "optionId": "o3",
@@ -1281,9 +1580,9 @@
     "explanation": "В основе путунхуа лежит северный диалект (北方方言), а фонетическая норма — пекинское произношение.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "普通话 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E6%99%AE%E9%80%9A%E8%AF%9D",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E6%99%AE%E9%80%9A%E8%AF%9D"
       }
     ],
     "wave": 4
@@ -1294,9 +1593,9 @@
     "explanation": "«Лян Шаньбо и Чжу Интай» — представительная постановка жанра юэцзюй (越剧, Шаосинской оперы).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "梁山伯与祝英台 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E6%A2%81%E5%B1%B1%E4%BC%AF%E4%B8%8E%E7%A5%9D%E8%8B%B1%E5%8F%B0",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E6%A2%81%E5%B1%B1%E4%BC%AF%E4%B8%8E%E7%A5%9D%E8%8B%B1%E5%8F%B0"
       }
     ],
     "wave": 4
@@ -1307,9 +1606,9 @@
     "explanation": "«Исторические записки» написал Сыма Цянь (司马迁).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "史记 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%8F%B2%E8%AE%B0",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%8F%B2%E8%AE%B0"
       }
     ],
     "wave": 4
@@ -1320,12 +1619,25 @@
     "explanation": "Знаменитый военный трактат, переведённый на многие языки, — «Искусство войны» Сунь-цзы (孙子兵法).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "孙子兵法 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%AD%99%E5%AD%90%E5%85%B5%E6%B3%95",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%AD%99%E5%AD%90%E5%85%B5%E6%B3%95"
       }
     ],
     "wave": 4
+  },
+  "2018-19-mun-51": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Принцип «学而不厌，诲人不倦» («не утомляться учиться и не уставать наставлять других») сформулировал Конфуций (孔子).",
+    "evidence": [
+      {
+        "title": "论语 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E8%AE%BA%E8%AF%AD",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2018-19-mun-52": {
     "optionId": "o2",
@@ -1346,12 +1658,25 @@
     "explanation": "«Преступление и наказание» написал Фёдор Достоевский (陀思妥耶夫斯基).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "Фёдор Достоевский — Википедия",
-        "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9,_%D0%A4%D1%91%D0%B4%D0%BE%D1%80_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87",
-        "checkedAt": "2026-09-18"
+        "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9,_%D0%A4%D1%91%D0%B4%D0%BE%D1%80_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87"
       }
     ],
     "wave": 4
+  },
+  "2018-19-mun-54": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Советское правительство перенесло столицу из Петрограда в Москву в марте 1918 года, вскоре после Октябрьской революции.",
+    "evidence": [
+      {
+        "title": "Москва — столица России — Мосгортур",
+        "url": "https://mosgortur.ru/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2018-19-mun-55": {
     "optionId": "o4",
@@ -1365,6 +1690,19 @@
       }
     ],
     "wave": 2
+  },
+  "2018-19-reg-1": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Чжэн Хэ, знаменитый мореплаватель эпохи Мин, принадлежал к народу хуэй (回族) и был мусульманином.",
+    "evidence": [
+      {
+        "title": "郑和 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%83%91%E5%92%8C",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2018-19-reg-10": {
     "optionId": "o3",
@@ -1418,18 +1756,57 @@
     ],
     "wave": 2
   },
+  "2018-19-reg-5": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Летние Олимпийские игры в Москве прошли в 1980 году.",
+    "evidence": [
+      {
+        "title": "Летние Олимпийские игры 1980 — Олимпийский комитет России",
+        "url": "https://olympic.ru/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2018-19-reg-6": {
     "optionId": "o1",
     "state": "verified",
     "explanation": "День посадки деревьев в Китае отмечают 12 марта — в годовщину смерти Сунь Ятсена.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "植树节 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E6%A4%8D%E6%A0%91%E8%8A%82",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E6%A4%8D%E6%A0%91%E8%8A%82"
       }
     ],
     "wave": 4
+  },
+  "2018-19-reg-7": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Ламаизм — распространённая в Тибете форма буддизма (佛教), точнее — тибетская ветвь буддизма Ваджраяны.",
+    "evidence": [
+      {
+        "title": "藏传佛教 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E8%97%8F%E4%BC%A0%E4%BD%9B%E6%95%99",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2018-19-reg-8": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Собор Василия Блаженного в Москве построен в 1555–1561 годах — в XVI веке, по приказу Ивана Грозного в честь взятия Казани.",
+    "evidence": [
+      {
+        "title": "Собор Василия Блаженного — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%BE%D1%80_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F_%D0%91%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2018-19-reg-9": {
     "optionId": "o3",
@@ -1437,9 +1814,9 @@
     "explanation": "Обычай «чжуачжоу» (抓周) — ребёнку в первый день рождения предлагают выбрать из разложенных предметов тот, что якобы предскажет его будущее занятие.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "抓周 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E6%8A%93%E5%91%A8",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E6%8A%93%E5%91%A8"
       }
     ],
     "wave": 4
@@ -1450,9 +1827,9 @@
     "explanation": "Нюйшу (女书) — единственная в мире письменность, созданная и использовавшаяся исключительно женщинами; обнаружена в уезде Цзянъюн провинции Хунань.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "女书 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%A5%B3%E4%B9%A6",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%A5%B3%E4%B9%A6"
       }
     ],
     "wave": 4
@@ -1469,6 +1846,32 @@
       }
     ],
     "wave": 2
+  },
+  "2018-19-shk-2": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "«Экономический пояс Шёлкового пути» и «Морской Шёлковый путь XXI века» сокращённо — «Один пояс, один путь» (一带一路).",
+    "evidence": [
+      {
+        "title": "一带一路 — 中国一带一路网",
+        "url": "https://www.yidaiyilu.gov.cn/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2018-19-shk-3": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "По данным на 2017 год, самая населённая провинция Китая — Гуандун (广东省), свыше 110 млн человек.",
+    "evidence": [
+      {
+        "title": "广东省 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B9%BF%E4%B8%9C%E7%9C%81",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2018-19-shk-4": {
     "optionId": "o3",
@@ -1496,6 +1899,19 @@
     ],
     "wave": 2
   },
+  "2018-19-shk-6": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Больше половины маньчжуров Китая проживает в провинции Ляонин (辽宁) — свыше 5,3 млн человек, около половины всей численности народа.",
+    "evidence": [
+      {
+        "title": "满族 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/seac/ztzl/manz/gk.shtml",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2018-19-shk-7": {
     "optionId": "o4",
     "state": "verified",
@@ -1508,6 +1924,19 @@
       }
     ],
     "wave": 2
+  },
+  "2018-19-shk-8": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Москва впервые упомянута в летописи (Ипатьевская летопись) под 1147 годом — эту дату принято считать годом основания города.",
+    "evidence": [
+      {
+        "title": "Первое упоминание о Москве — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2018-19-shk-9": {
     "optionId": "o3",
@@ -1528,9 +1957,9 @@
     "explanation": "Гунбао цзидин и юйсян жоусы — классические блюда сычуаньской кухни (川菜), известной острыми и пряными вкусами.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "川菜 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%B7%9D%E8%8F%9C",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%B7%9D%E8%8F%9C"
       }
     ],
     "wave": 4
@@ -1580,12 +2009,25 @@
     "explanation": "У Сун и Сун Цзян — персонажи романа «Речные заводи» (水浒传).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "水浒传 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E6%B0%B4%E6%B5%A9%E4%BC%A0",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E6%B0%B4%E6%B5%A9%E4%BC%A0"
       }
     ],
     "wave": 4
+  },
+  "2018-19-zak-5": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "По статистике 2018 года, ислам (伊斯兰教) — вторая по числу приверженцев религия в России после православного христианства.",
+    "evidence": [
+      {
+        "title": "Религия в России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BB%D0%B8%D0%B3%D0%B8%D1%8F_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2018-19-zak-6": {
     "optionId": "o3",
@@ -1599,6 +2041,32 @@
       }
     ],
     "wave": 2
+  },
+  "2018-19-zak-7": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Пётр I подписал указ «О праздновании Нового года» 20 декабря 1699 года, перенеся начало года с 1 сентября на 1 января с 1700 года.",
+    "evidence": [
+      {
+        "title": "О праздновании Нового Года. Именной указ. 20 декабря 1699 г. — ЭБИД",
+        "url": "https://docs.historyrussia.org/ru/nodes/340419-o-prazdnovanii-novogo-goda-imennoy-ukaz-20-dekabrya-1699-g",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2018-19-zak-9": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Четыре метода диагностики традиционной китайской медицины — осмотр (望), слушание и обоняние (闻), расспрос (问) и пальпация пульса (切).",
+    "evidence": [
+      {
+        "title": "望闻问切 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E6%9C%9B%E9%97%BB%E9%97%AE%E5%88%87",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2019-20-mun-q5616d1": {
     "optionId": "o4",
@@ -1735,18 +2203,57 @@
     ],
     "wave": 1
   },
+  "2019-20-reg-1": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Первым императором Российской империи стал Пётр I (彼得大帝), принявший этот титул в 1721 году после победы в Северной войне.",
+    "evidence": [
+      {
+        "title": "Пётр I — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9F%D1%91%D1%82%D1%80_I",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2019-20-reg-10": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "День России отмечается 12 июня — в годовщину принятия Декларации о государственном суверенитете РСФСР в 1990 году.",
+    "evidence": [
+      {
+        "title": "День России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BD%D1%8C_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2019-20-reg-2": {
     "optionId": "o3",
     "state": "verified",
     "explanation": "Строка «老骥伏枥，志在千里» принадлежит Цао Цао (曹操), из стихотворения «Черепаха, хоть и долговечна» (约208 г.).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "龟虽寿 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E9%BE%9F%E8%99%BD%E5%AF%BF/2356846",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E9%BE%9F%E8%99%BD%E5%AF%BF/2356846"
       }
     ],
     "wave": 4
+  },
+  "2019-20-reg-3": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Блокада Ленинграда продолжалась с 8 сентября 1941 по 27 января 1944 года — в историографии и памяти это устойчиво называют «900 дней блокады» (точное число — 872 дня).",
+    "evidence": [
+      {
+        "title": "Блокада Ленинграда — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D0%BE%D0%BA%D0%B0%D0%B4%D0%B0_%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D0%B0",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2019-20-reg-4": {
     "optionId": "o2",
@@ -1774,6 +2281,19 @@
     ],
     "wave": 2
   },
+  "2019-20-reg-6": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Первая линия Московского метрополитена открыта 15 мая 1935 года.",
+    "evidence": [
+      {
+        "title": "Московский метрополитен — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D0%BD",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2019-20-reg-7": {
     "optionId": "o2",
     "state": "verified",
@@ -1786,6 +2306,19 @@
       }
     ],
     "wave": 2
+  },
+  "2019-20-reg-8": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Хайнань (海南) — крупнейшая по площади специальная экономическая зона Китая.",
+    "evidence": [
+      {
+        "title": "经济特区 — 中国政协",
+        "url": "http://www.cppcc.gov.cn/2011/09/26/ARTI1317001118812167.shtml",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2019-20-reg-9": {
     "optionId": "o4",
@@ -1800,6 +2333,32 @@
     ],
     "wave": 2
   },
+  "2019-20-shk-q048752": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Пять автономных районов Китая — Внутренняя Монголия, Синьцзян, Гуанси, Нинся и Тибет; Юньнань (云南) — обычная провинция, хотя в её составе много автономных округов.",
+    "evidence": [
+      {
+        "title": "自治区 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E8%87%AA%E6%B2%BB%E5%8C%BA",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2019-20-shk-q07892b": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Сталинградская битва (斯大林格勒战役, 1942–1943) считается переломным моментом советско-германской войны — после неё вермахт утратил стратегическую инициативу.",
+    "evidence": [
+      {
+        "title": "Сталинградская битва — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BB%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B8%D1%82%D0%B2%D0%B0",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2019-20-shk-q22afce": {
     "optionId": "o1",
     "state": "verified",
@@ -1812,6 +2371,19 @@
       }
     ],
     "wave": 3
+  },
+  "2019-20-shk-q30032b": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Четыре великих изобретения — компас, бумага, книгопечатание и порох (火药).",
+    "evidence": [
+      {
+        "title": "四大发明 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%9B%9B%E5%A4%A7%E5%8F%91%E6%98%8E",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2019-20-shk-q988836": {
     "optionId": "o4",
@@ -1845,9 +2417,9 @@
     "explanation": "Конфуций (孔子) выступал за принцип «有教无类» — обучение без различия социального происхождения.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "孔子 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%AD%94%E5%AD%90",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%AD%94%E5%AD%90"
       }
     ],
     "wave": 4
@@ -1858,9 +2430,9 @@
     "explanation": "Мэй Ланьфан (梅兰芳) — самый известный исполнитель женских ролей дань в пекинской опере, один из «четырёх великих дань» золотой эры жанра.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "梅兰芳 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E6%A2%85%E5%85%B0%E8%8A%B3",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E6%A2%85%E5%85%B0%E8%8A%B3"
       }
     ],
     "wave": 4
@@ -1891,6 +2463,19 @@
     ],
     "wave": 2
   },
+  "2020-21-pri-q8a64fd": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Оружейная палата (军械库博物馆) — музей-сокровищница Кремля, исторически хранившая царскую казну наряду с оружейными мастерскими; название связано именно с этой функцией казнохранилища.",
+    "evidence": [
+      {
+        "title": "Оружейная палата. Сокровищница государства — history.ru",
+        "url": "https://history.ru/read/articles/oruzhieinaia-palata-sokrovishchnitsa-rusi-russkogho-ghosudarstva-rossiiskogho-tsarstva-i-rossiiskoi-impierii",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2020-21-pri-qa538eb": {
     "optionId": "o2",
     "state": "verified",
@@ -1910,9 +2495,9 @@
     "explanation": "Лиса (狐狸) не входит в 12-животный цикл восточного календаря — цикл образуют крыса, бык, тигр, кролик, дракон, змея, лошадь, коза, обезьяна, петух, собака и свинья.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "生肖 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E7%94%9F%E8%82%96",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E7%94%9F%E8%82%96"
       }
     ],
     "wave": 4
@@ -2014,9 +2599,9 @@
     "explanation": "Сюй Бэйхун (徐悲鸿) объединил национальные художественные традиции с достижениями европейской живописи.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "徐悲鸿 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF"
       }
     ],
     "wave": 4
@@ -2047,15 +2632,41 @@
     ],
     "wave": 3
   },
+  "2020-21-reg-q588b1b": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "По китайскому мифу, небо и землю разделил и сотворил мир великан Паньгу (盘古开天辟地).",
+    "evidence": [
+      {
+        "title": "盘古 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%9B%98%E5%8F%A4",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2020-21-reg-q7a4710": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Собор Василия Блаженного (瓦西里升天教堂, официально — Покровский собор) возведён по приказу Ивана Грозного в честь присоединения Казанского ханства в 1552 году.",
+    "evidence": [
+      {
+        "title": "Собор Василия Блаженного — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%BE%D1%80_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F_%D0%91%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2020-21-reg-qce4bc2": {
     "optionId": "o3",
     "state": "verified",
     "explanation": "«Цзинь пин мэй» (金瓶梅) не входит в современный список четырёх классических романов — его место занял «Сон в красном тереме».",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "从\"四大奇书\"到\"四大名著\" — 腾讯新闻",
-        "url": "https://news.qq.com/rain/a/20240324A04C0M00",
-        "checkedAt": "2026-09-18"
+        "url": "https://news.qq.com/rain/a/20240324A04C0M00"
       }
     ],
     "wave": 4
@@ -2066,9 +2677,9 @@
     "explanation": "Китай — крупнейший в мире производитель угля, стабильно занимает первое место по объёму добычи.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "中国煤炭产量 — 国家统计局",
-        "url": "https://www.stats.gov.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "https://www.stats.gov.cn/"
       }
     ],
     "wave": 4
@@ -2092,12 +2703,25 @@
     "explanation": "Первый пилотируемый полёт Китая совершил Ян Ливэй 15 октября 2003 года на корабле «Шэньчжоу-5» (神州五号).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "神舟五号 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E7%A5%9E%E8%88%9F%E4%BA%94%E5%8F%B7",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E7%A5%9E%E8%88%9F%E4%BA%94%E5%8F%B7"
       }
     ],
     "wave": 4
+  },
+  "2020-21-zak-q2c2d90": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Первым из легендарных «Пяти императоров» древнейшего периода китайской истории традиционно считается Хуанди, «Жёлтый император» (黄帝).",
+    "evidence": [
+      {
+        "title": "五帝 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BA%94%E5%B8%9D",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2020-21-zak-q310901": {
     "optionId": "o1",
@@ -2105,9 +2729,9 @@
     "explanation": "Термин «舅舅» (цзюцзю) обозначает брата матери (妈妈的兄弟) — дядю по материнской линии, отдельный от брата отца («叔叔»/«伯伯»).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "亲属称谓 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E4%BA%B2%E5%B1%9E%E7%A7%B0%E8%B0%93",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E4%BA%B2%E5%B1%9E%E7%A7%B0%E8%B0%93"
       }
     ],
     "wave": 4
@@ -2118,12 +2742,25 @@
     "explanation": "Дахань («Большие холода», 大寒) — последний из 24 сельскохозяйственных сезонов китайского календаря и самый холодный период года.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "大寒 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E5%A4%A7%E5%AF%92",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E5%A4%A7%E5%AF%92"
       }
     ],
     "wave": 4
+  },
+  "2020-21-zak-qb0316f": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Традиционно годом окончательного освобождения Руси от ордынского владычества считается 1480-й — «Стояние на реке Угре», то есть XV век (十五世纪).",
+    "evidence": [
+      {
+        "title": "Стояние на реке Угре — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B0_%D1%80%D0%B5%D0%BA%D0%B5_%D0%A3%D0%B3%D1%80%D0%B5",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2020-21-zak-qdf339a": {
     "optionId": "o2",
@@ -2157,9 +2794,9 @@
     "explanation": "«Битва дракона с тигром» (龙虎斗, блюдо из мяса кошки и змеи) — знаменитое экзотическое блюдо кантонской кухни (粤菜).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "龙虎斗 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E9%BE%99%E8%99%8E%E6%96%97",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E9%BE%99%E8%99%8E%E6%96%97"
       }
     ],
     "wave": 4
@@ -2183,9 +2820,9 @@
     "explanation": "Михаил Лермонтов (莱蒙托夫) погиб на дуэли в Пятигорске в 1841 году.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "Михаил Лермонтов — Википедия",
-        "url": "https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D1%80%D0%BC%D0%BE%D0%BD%D1%82%D0%BE%D0%B2,_%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%AE%D1%80%D1%8C%D0%B5%D0%B2%D0%B8%D1%87",
-        "checkedAt": "2026-09-18"
+        "url": "https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D1%80%D0%BC%D0%BE%D0%BD%D1%82%D0%BE%D0%B2,_%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%AE%D1%80%D1%8C%D0%B5%D0%B2%D0%B8%D1%87"
       }
     ],
     "wave": 4
@@ -2203,15 +2840,28 @@
     ],
     "wave": 3
   },
+  "2021-22-mun-q60cd54": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Россия провозглашена империей в 1721 году после Ништадтского мира — к 2021 году исполнилось 300 лет (300 周年).",
+    "evidence": [
+      {
+        "title": "Российская империя — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2021-22-mun-q6514a2": {
     "optionId": "o3",
     "state": "verified",
     "explanation": "Пять принципов мирного сосуществования впервые выдвинул премьер Чжоу Эньлай (周恩来) в 1953–1954 годах в переговорах с Индией и Мьянмой.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "和平共处五项原则 — 中华人民共和国外交部",
-        "url": "https://www.mfa.gov.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "https://www.mfa.gov.cn/"
       }
     ],
     "wave": 4
@@ -2235,9 +2885,9 @@
     "explanation": "Инициативу «Один пояс, один путь» Китай выдвинул в 2013 году.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "一带一路 — 中国一带一路网",
-        "url": "https://www.yidaiyilu.gov.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "https://www.yidaiyilu.gov.cn/"
       }
     ],
     "wave": 4
@@ -2313,9 +2963,9 @@
     "explanation": "День холостяка (光棍节) в Китае отмечают 11 ноября — дата из четырёх единиц (11.11) обыгрывает символику одиночества; сегодня это крупнейший день распродаж.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "双十一 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E5%8F%8C%E5%8D%81%E4%B8%80",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E5%8F%8C%E5%8D%81%E4%B8%80"
       }
     ],
     "wave": 4
@@ -2326,12 +2976,38 @@
     "explanation": "Джеки Чан (成龙) в 2017 году стал первым китайцем — лауреатом почётного «Оскара» за вклад в киноискусство.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "Jackie Chan Honorary Award — Academy of Motion Picture Arts and Sciences",
-        "url": "https://www.oscars.org/",
-        "checkedAt": "2026-09-18"
+        "url": "https://www.oscars.org/"
       }
     ],
     "wave": 4
+  },
+  "2021-22-reg-q785d5e": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "Царь-пушка весит около 39,3 тонны — из предложенных вариантов ближе всего «40 тонн».",
+    "evidence": [
+      {
+        "title": "Царь-пушка — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A6%D0%B0%D1%80%D1%8C-%D0%BF%D1%83%D1%88%D0%BA%D0%B0",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2021-22-reg-q814d54": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "Тулоу (土楼) — жилые комплексы крепостного типа народности хакка в провинциях Фуцзянь и Гуандун, построенные для защиты от нападений; объект всемирного наследия ЮНЕСКО.",
+    "evidence": [
+      {
+        "title": "福建土楼 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A6%8F%E5%BB%BA%E5%9C%9F%E6%A5%BC",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2021-22-reg-qbb2e02": {
     "optionId": "o3",
@@ -2371,6 +3047,19 @@
       }
     ],
     "wave": 3
+  },
+  "2021-22-reg-qdc153d": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Миф о сотворении мира — «Паньгу отделяет небо от земли» (盘古开天): 女娲补天 о починке неба, 精卫填海 и 夸父逐日 — другие мифологические сюжеты.",
+    "evidence": [
+      {
+        "title": "盘古 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%9B%98%E5%8F%A4",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2021-22-shk-q0186fa": {
     "optionId": "o3",
@@ -2437,15 +3126,28 @@
     ],
     "wave": 3
   },
+  "2021-22-shk-qa608ac": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "Из перечисленных писателей Нобелевскую премию по литературе не получал Антон Чехов (安东·契诃夫) — он умер в 1904 году, вскоре после учреждения премии; Шолохов, Бунин и Пастернак стали лауреатами.",
+    "evidence": [
+      {
+        "title": "Список русскоязычных лауреатов Нобелевской премии по литературе — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D0%B1%D0%B5%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%8F_%D0%BF%D0%BE_%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B5",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2021-22-shk-qadd856": {
     "optionId": "o2",
     "state": "verified",
     "explanation": "После прихода к власти Лю Бана в 202 г. до н. э. государство стало называться Хань (汉) — по названию династии.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "汉朝 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E6%B1%89%E6%9C%9D",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%89%E6%9C%9D"
       }
     ],
     "wave": 4
@@ -2456,9 +3158,9 @@
     "explanation": "Первыми из европейцев в Китай морским путём прибыли португальцы (葡萄牙) — в начале XVI века, обосновавшись впоследствии в Макао.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "葡萄牙人在中国 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E8%91%A1%E8%90%84%E7%89%99%E4%BA%BA%E5%9C%A8%E4%B8%AD%E5%9B%BD",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E8%91%A1%E8%90%84%E7%89%99%E4%BA%BA%E5%9C%A8%E4%B8%AD%E5%9B%BD"
       }
     ],
     "wave": 4
@@ -2469,9 +3171,9 @@
     "explanation": "По данным официального обследования 2009 года, длина Минской Великой стены — 8851,8 км (без учёта параллельных участков разных эпох, чья суммарная протяжённость превышает 21 тыс. км).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "明长城首次全面\"体检\" — 中国政府网",
-        "url": "https://www.gov.cn/jrzg/2009-04/18/content_1289422.htm",
-        "checkedAt": "2026-09-18"
+        "url": "https://www.gov.cn/jrzg/2009-04/18/content_1289422.htm"
       }
     ],
     "wave": 4
@@ -2482,9 +3184,9 @@
     "explanation": "Праздник фонарей — Юаньсяоцзе (元宵节) — получил название от обычая развешивать в ночь разноцветные фонари, отмечается в 15-й день первого месяца по лунному календарю.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "元宵节 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "https://www.ihchina.cn/"
       }
     ],
     "wave": 4
@@ -2534,9 +3236,9 @@
     "explanation": "Пекинская опера (京剧) — самый распространённый и влиятельный вид китайского оперного искусства, сложившийся к концу XVIII — началу XIX века.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "京剧 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E4%BA%AC%E5%89%A7",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E4%BA%AC%E5%89%A7"
       }
     ],
     "wave": 4
@@ -2554,15 +3256,28 @@
     ],
     "wave": 3
   },
+  "2021-22-zak-q3ba1dd": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Храм Христа Спасителя (救世主大教堂), построенный в честь победы в войне 1812 года, был взорван в 1931 году по приказу Сталина; долгое время на его месте находился открытый бассейн «Москва».",
+    "evidence": [
+      {
+        "title": "Храм Христа Спасителя — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%B0_%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8F",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2021-22-zak-q3eaa02": {
     "optionId": "o2",
     "state": "verified",
     "explanation": "«Записки о кошачьем городе» (猫城记) написал Лао Шэ (老舍).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "猫城记 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E7%8C%AB%E5%9F%8E%E8%AE%B0",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E7%8C%AB%E5%9F%8E%E8%AE%B0"
       }
     ],
     "wave": 4
@@ -2586,9 +3301,9 @@
     "explanation": "Поезд «Фусин» (复兴号) — полностью разработанный и произведённый в Китае высокоскоростной состав, развивающий 350 км/ч на линии Пекин — Шанхай.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "复兴号 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%A4%8D%E5%85%B4%E5%8F%B7%E5%8A%A8%E8%BD%A6%E7%BB%84",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%A4%8D%E5%85%B4%E5%8F%B7%E5%8A%A8%E8%BD%A6%E7%BB%84"
       }
     ],
     "wave": 4
@@ -2755,12 +3470,25 @@
     "explanation": "Лао Шэ писал на пекинском говоре, относящемся к северной диалектной группе (北方方言).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "老舍 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E8%80%81%E8%88%8D",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E8%80%81%E8%88%8D"
       }
     ],
     "wave": 4
+  },
+  "2022-23-reg-2": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "К единому государственному вступительному экзамену в вузы (高考) допускаются выпускники полной средней школы.",
+    "evidence": [
+      {
+        "title": "高考 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E9%AB%98%E8%80%83",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2022-23-reg-3": {
     "optionId": "o3",
@@ -2775,18 +3503,70 @@
     ],
     "wave": 3
   },
+  "2022-23-reg-4": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "Новосибирск (新西伯利亚) — третий по численности населения город России после Москвы и Санкт-Петербурга.",
+    "evidence": [
+      {
+        "title": "Новосибирск — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2022-23-reg-5": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Памятник Петру I (彼得大帝) воспет в поэме А. С. Пушкина «Медный всадник».",
+    "evidence": [
+      {
+        "title": "Медный всадник — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%BD%D1%8B%D0%B9_%D0%B2%D1%81%D0%B0%D0%B4%D0%BD%D0%B8%D0%BA",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2022-23-reg-6": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "«Золотым веком» русской культуры принято называть XIX век (十九世纪) — эпоху Пушкина, Толстого, Достоевского и расцвета изящных искусств.",
+    "evidence": [
+      {
+        "title": "Золотой век русской культуры — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%B9_%D0%B2%D0%B5%D0%BA_%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B9_%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D1%8B",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2022-23-reg-7": {
     "optionId": "o1",
     "state": "verified",
     "explanation": "По легенде, палочки для еды придумал Юй Великий (大禹) во время борьбы с потопом: обжигаясь горячим мясом, он отломил две ветки, чтобы доставать пищу.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "大禹和筷子有什么关系 — 知乎",
-        "url": "https://zhuanlan.zhihu.com/p/71223753",
-        "checkedAt": "2026-09-18"
+        "url": "https://zhuanlan.zhihu.com/p/71223753"
       }
     ],
     "wave": 4
+  },
+  "2022-23-reg-8": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Чжуаны (壮族) — самое многочисленное национальное меньшинство Китая, около 16,9 млн человек, из них почти 88% живут в Гуанси.",
+    "evidence": [
+      {
+        "title": "壮族 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/seac/ztzl/zhz/gk.shtml",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2022-23-reg-9": {
     "optionId": "o2",
@@ -2801,6 +3581,19 @@
     ],
     "wave": 3
   },
+  "2022-23-shk-q08d2e2": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Согласно Закону КНР об обязательном образовании, оно составляет 9 лет: 6 лет начальной и 3 года неполной средней школы.",
+    "evidence": [
+      {
+        "title": "中华人民共和国义务教育法 — 中国人大网",
+        "url": "http://www.npc.gov.cn/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2022-23-shk-q2ecb2d": {
     "optionId": "o1",
     "state": "verified",
@@ -2813,6 +3606,19 @@
       }
     ],
     "wave": 3
+  },
+  "2022-23-shk-q3c7e59": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Первая русская революция произошла в 1905–1907 годах.",
+    "evidence": [
+      {
+        "title": "Революция 1905–1907 годов в России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D1%8F_1905%E2%80%941907_%D0%B3%D0%BE%D0%B4%D0%BE%D0%B2_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2022-23-shk-q623963": {
     "optionId": "o2",
@@ -2840,6 +3646,19 @@
     ],
     "wave": 3
   },
+  "2022-23-shk-q92d9cf": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Покровителем земледелия и медицины в китайской мифологии считается Шэньнун (神农), «Божественный земледелец».",
+    "evidence": [
+      {
+        "title": "神农 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A5%9E%E5%86%9C",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2022-23-shk-qa664f6": {
     "optionId": "o1",
     "state": "verified",
@@ -2866,6 +3685,19 @@
     ],
     "wave": 3
   },
+  "2022-23-shk-qde2687": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Объединение русских земель вокруг Москвы связывают прежде всего с правлением Ивана III (伊万三世), «собирателя земель русских».",
+    "evidence": [
+      {
+        "title": "Иван III Васильевич — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%98%D0%B2%D0%B0%D0%BD_III_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2022-23-shk-qfc70c5": {
     "optionId": "o3",
     "state": "verified",
@@ -2879,15 +3711,28 @@
     ],
     "wave": 3
   },
+  "2022-23-zak-1": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Обучение в неполной средней школе (初中) в Китае длится три года.",
+    "evidence": [
+      {
+        "title": "初级中学 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%88%9D%E7%BA%A7%E4%B8%AD%E5%AD%A6",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2022-23-zak-10": {
     "optionId": "o1",
     "state": "verified",
     "explanation": "«Наочунфан» (闹洞房) — традиция, когда гости на свадьбе подшучивают над молодожёнами в брачных покоях.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "闹洞房 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E9%97%B9%E6%B4%9E%E6%88%BF",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E9%97%B9%E6%B4%9E%E6%88%BF"
       }
     ],
     "wave": 4
@@ -2911,9 +3756,9 @@
     "explanation": "Храм Цзиньшаньсы (金山寺) из «Легенды о белой змее» расположен в Чжэньцзяне (镇江), провинция Цзянсу.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "金山寺 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E9%87%91%E5%B1%B1%E5%AF%BA_(%E9%95%87%E6%B1%9F)",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E9%87%91%E5%B1%B1%E5%AF%BA_(%E9%95%87%E6%B1%9F)"
       }
     ],
     "wave": 4
@@ -2937,12 +3782,51 @@
     "explanation": "Международный женский день (妇女节, 8 марта) — не традиционный, а современный праздник; Юаньсяо, Чжунцю и Дуаньу — традиционные китайские праздники.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "国际妇女节 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E5%9B%BD%E9%99%85%E5%A6%87%E5%A5%B3%E8%8A%82",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E5%9B%BD%E9%99%85%E5%A6%87%E5%A5%B3%E8%8A%82"
       }
     ],
     "wave": 4
+  },
+  "2022-23-zak-6": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Победа в Сталинградской битве отмечается 2 февраля — в день капитуляции немецкой группировки в 1943 году.",
+    "evidence": [
+      {
+        "title": "Сталинградская битва — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BB%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B8%D1%82%D0%B2%D0%B0",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2022-23-zak-7": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Столица Республики Башкортостан — Уфа (乌法).",
+    "evidence": [
+      {
+        "title": "Уфа — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A3%D1%84%D0%B0",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2022-23-zak-8": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "Зимние Олимпийские игры в Сочи (2014) были XXII (第二十二届) по счёту зимними Играми.",
+    "evidence": [
+      {
+        "title": "Зимние Олимпийские игры 2014 года — Олимпийский комитет России",
+        "url": "https://olympic.ru/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2022-23-zak-9": {
     "optionId": "o2",
@@ -2950,9 +3834,9 @@
     "explanation": "«Четыре благородных растения» (花中四君子) китайской живописи — слива, орхидея, бамбук и хризантема (梅、兰、竹、菊).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "花中四君子 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E8%8A%B1%E4%B8%AD%E5%9B%9B%E5%90%9B%E5%AD%90",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E8%8A%B1%E4%B8%AD%E5%9B%9B%E5%90%9B%E5%AD%90"
       }
     ],
     "wave": 4
@@ -2983,6 +3867,19 @@
     ],
     "wave": 3
   },
+  "2023-24-mun-31": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "В Китае официально насчитывается 55 национальных меньшинств (плюс ханьцы — всего 56 национальностей).",
+    "evidence": [
+      {
+        "title": "中国民族 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2023-24-mun-32": {
     "optionId": "o4",
     "state": "verified",
@@ -3009,6 +3906,45 @@
     ],
     "wave": 3
   },
+  "2023-24-mun-34": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Россия вступила в Первую мировую войну в 1914 году, вскоре после её начала.",
+    "evidence": [
+      {
+        "title": "Россия в Первой мировой войне — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F_%D0%B2_%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%B9_%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B2%D0%BE%D0%B9%D0%BD%D0%B5",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2023-24-mun-35": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Прозвище «Освободитель» получил Александр II (亚历山大二世) за отмену крепостного права в 1861 году.",
+    "evidence": [
+      {
+        "title": "Александр II — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_II",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2023-24-mun-36": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "СССР образован 30 декабря 1922 года на I Всесоюзном съезде Советов.",
+    "evidence": [
+      {
+        "title": "Образование СССР — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%A1%D0%A1%D0%A1%D0%A0",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2023-24-mun-37": {
     "optionId": "o3",
     "state": "verified",
@@ -3028,12 +3964,64 @@
     "explanation": "«Сон в красном тереме» (红楼梦) создан Цао Сюэцинем.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "红楼梦 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E7%BA%A2%E6%A5%BC%E6%A2%A6",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E7%BA%A2%E6%A5%BC%E6%A2%A6"
       }
     ],
     "wave": 4
+  },
+  "2023-24-reg-1": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Храм Василия Блаженного построен в 1555–1561 годах — в XVI веке (十六世纪).",
+    "evidence": [
+      {
+        "title": "Собор Василия Блаженного — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%BE%D1%80_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F_%D0%91%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2023-24-reg-10": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "До 1949 года Китай участвовал в Олимпийских играх трижды — в 1932, 1936 и 1948 годах.",
+    "evidence": [
+      {
+        "title": "奥林匹克运动会中国代表团 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E5%A5%A7%E6%9E%97%E5%8C%B9%E5%85%8B%E9%81%8B%E5%8B%95%E6%9C%83%E4%B8%AD%E5%9C%8B%E4%BB%A3%E8%A1%A8%E5%9C%98",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2023-24-reg-2": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Антон Павлович Чехов (契诃夫) по образованию и профессии был врачом (医生), окончив медицинский факультет Московского университета.",
+    "evidence": [
+      {
+        "title": "Антон Чехов — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%85%D0%BE%D0%B2,_%D0%90%D0%BD%D1%82%D0%BE%D0%BD_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B8%D1%87",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2023-24-reg-3": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "Из перечисленных городов метро нет только в Перми (彼尔姆); в Санкт-Петербурге, Новосибирске и Нижнем Новгороде метрополитен действует.",
+    "evidence": [
+      {
+        "title": "Список метрополитенов России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D0%BD%D0%BE%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2023-24-reg-4": {
     "optionId": "o1",
@@ -3054,12 +4042,25 @@
     "explanation": "По преданию, письменность людям подарил Фуси (伏羲) — создав восемь триграмм (八卦), он положил конец эпохе узелкового письма.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "伏羲 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E4%BC%8F%E7%BE%B2/279357",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E4%BC%8F%E7%BE%B2/279357"
       }
     ],
     "wave": 4
+  },
+  "2023-24-reg-6": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "Термометр (温度表) не был изобретён в Китае — в отличие от шёлка, пороха и компаса, происходящих из Древнего Китая; термометр создан в Европе (Галилей и его последователи).",
+    "evidence": [
+      {
+        "title": "温度计 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B8%A9%E5%BA%A6%E8%AE%A1",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2023-24-reg-7": {
     "optionId": "o3",
@@ -3067,9 +4068,9 @@
     "explanation": "Сюй Бэйхун (徐悲鸿) — китайский художник, соединивший национальные традиции живописи с европейским реализмом; Не Эр — композитор, Лао Шэ — писатель, Ши Найань — романист.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "徐悲鸿 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF"
       }
     ],
     "wave": 4
@@ -3093,12 +4094,38 @@
     "explanation": "«Записки сумасшедшего» (狂人日记) Лу Синя, опубликованные в 1918 году, — первый рассказ Китайской Республики, написанный на байхуа.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "狂人日记 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0"
       }
     ],
     "wave": 4
+  },
+  "2023-24-shk-29": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Москва освобождена от польских интервентов ополчением Минина и Пожарского в 1612 году, что положило конец основной фазе Смутного времени.",
+    "evidence": [
+      {
+        "title": "Народное ополчение (1611—1612) — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%92%D1%82%D0%BE%D1%80%D0%BE%D0%B5_%D0%BE%D0%BF%D0%BE%D0%BB%D1%87%D0%B5%D0%BD%D0%B8%D0%B5",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2023-24-shk-30": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Рождество (圣诞节) — христианский праздник, появившийся на Руси после Крещения 988 года.",
+    "evidence": [
+      {
+        "title": "Крещение Руси — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5_%D0%A0%D1%83%D1%81%D0%B8",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2023-24-shk-32": {
     "optionId": "o4",
@@ -3113,15 +4140,28 @@
     ],
     "wave": 3
   },
+  "2023-24-shk-33": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Михаил Ломоносов (罗蒙诺索夫) — один из инициаторов основания Московского университета в 1755 году.",
+    "evidence": [
+      {
+        "title": "Михаил Ломоносов — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BC%D0%BE%D0%BD%D0%BE%D1%81%D0%BE%D0%B2,_%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2023-24-shk-34": {
     "optionId": "o3",
     "state": "verified",
     "explanation": "«Рикша» («Лото Сянцзы», 骆驼祥子) Лао Шэ не входит в четыре классических романа.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "骆驼祥子 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E9%AA%86%E9%A9%BC%E7%A5%A5%E5%AD%90",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E9%AA%86%E9%A9%BC%E7%A5%A5%E5%AD%90"
       }
     ],
     "wave": 4
@@ -3139,15 +4179,28 @@
     ],
     "wave": 3
   },
+  "2023-24-shk-36": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Первый в мире сейсмограф (候风地动仪) изобрёл Чжан Хэн (张衡) во времена Восточной Хань, в 132 году н. э.",
+    "evidence": [
+      {
+        "title": "张衡 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%A1%A1",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2023-24-shk-37": {
     "optionId": "o3",
     "state": "verified",
     "explanation": "Красный (红) в традиционной китайской культуре олицетворяет счастье и радость — цвет праздников, свадеб и удачи.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "中国红的文化内涵 — 安徽理论网",
-        "url": "http://ll.anhuinews.com/wszj/202310/t20231025_7184101.shtml",
-        "checkedAt": "2026-09-18"
+        "url": "http://ll.anhuinews.com/wszj/202310/t20231025_7184101.shtml"
       }
     ],
     "wave": 4
@@ -3178,6 +4231,19 @@
     ],
     "wave": 3
   },
+  "2023-24-zak-10": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Тула (图拉) знаменита оружейным и самоварным производством.",
+    "evidence": [
+      {
+        "title": "Тула — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A2%D1%83%D0%BB%D0%B0",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2023-24-zak-2": {
     "optionId": "o4",
     "state": "verified",
@@ -3197,12 +4263,64 @@
     "explanation": "Ду Фу (杜甫) — поэта эпохи Тан называют «поэтом-историком» (诗史) за реалистичное отражение эпохи в стихах.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "杜甫 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E7%94%AB",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%9C%E7%94%AB"
       }
     ],
     "wave": 4
+  },
+  "2023-24-zak-4": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "День космонавтики отмечается 12 апреля — в годовщину полёта Юрия Гагарина в 1961 году.",
+    "evidence": [
+      {
+        "title": "День космонавтики — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BD%D1%8C_%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%B8%D0%BA%D0%B8",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2023-24-zak-5": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "Иркутск (伊尔库茨克) расположен ближе всего к озеру Байкал среди перечисленных городов.",
+    "evidence": [
+      {
+        "title": "Иркутск — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%98%D1%80%D0%BA%D1%83%D1%82%D1%81%D0%BA",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2023-24-zak-6": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Свыше пятидесяти псевдонимов, включая «Брат моего брата» и «Врач без пациентов», использовал Антон Чехов (契诃夫) в ранний период творчества.",
+    "evidence": [
+      {
+        "title": "Псевдонимы Антона Чехова — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%85%D0%BE%D0%B2,_%D0%90%D0%BD%D1%82%D0%BE%D0%BD_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B8%D1%87",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2023-24-zak-7": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Долина гейзеров — одна из главных достопримечательностей Камчатского полуострова (堪察加半岛).",
+    "evidence": [
+      {
+        "title": "Долина гейзеров — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D0%B0_%D0%B3%D0%B5%D0%B9%D0%B7%D0%B5%D1%80%D0%BE%D0%B2",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2023-24-zak-8": {
     "optionId": "o2",
@@ -3223,12 +4341,51 @@
     "explanation": "«Троецарствие» (三国演义), приписываемое Ло Гуаньчжуну, — исторический роман XIV века и один из четырёх классических.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "三国演义 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%89%E5%9B%BD%E6%BC%94%E4%B9%89"
       }
     ],
     "wave": 4
+  },
+  "2024-25-mun-28": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Основателем российского флота считается Пётр I (彼得大帝), начавший строительство первых кораблей ещё в конце XVII века.",
+    "evidence": [
+      {
+        "title": "Пётр I — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9F%D1%91%D1%82%D1%80_I",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2024-25-mun-29": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Первая русская революция прошла в 1905–1907 годах.",
+    "evidence": [
+      {
+        "title": "Революция 1905–1907 годов в России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D1%8F_1905%E2%80%941907_%D0%B3%D0%BE%D0%B4%D0%BE%D0%B2_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2024-25-mun-30": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Административный центр Тибетского автономного района — Лхаса (拉萨).",
+    "evidence": [
+      {
+        "title": "拉萨市 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%8B%89%E8%90%A8%E5%B8%82",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2024-25-mun-31": {
     "optionId": "o1",
@@ -3242,6 +4399,19 @@
       }
     ],
     "wave": 3
+  },
+  "2024-25-mun-32": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "По сбору риса (水稻) Китай занимает первое место в мире — крупнейший производитель этой культуры.",
+    "evidence": [
+      {
+        "title": "中国水稻生产 — 中华人民共和国农业农村部",
+        "url": "http://www.moa.gov.cn/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2024-25-mun-33": {
     "optionId": "o1",
@@ -3275,9 +4445,9 @@
     "explanation": "«Искусство войны» (孙子兵法) — самый известный древнекитайский трактат о военной стратегии и политике.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "孙子兵法 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%AD%99%E5%AD%90%E5%85%B5%E6%B3%95",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%AD%99%E5%AD%90%E5%85%B5%E6%B3%95"
       }
     ],
     "wave": 4
@@ -3301,12 +4471,51 @@
     "explanation": "У-диалект (吴方言) — второй по числу говорящих диалект китайского языка, распространён в Шанхае, Чжэцзяне и на юге Цзянсу.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "吴语 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%90%B4%E8%AF%AD",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%90%B4%E8%AF%AD"
       }
     ],
     "wave": 4
+  },
+  "2024-25-pri-30": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Всекитайские вступительные экзамены в вузы называются гаокао (高考).",
+    "evidence": [
+      {
+        "title": "高考 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E9%AB%98%E8%80%83",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2024-25-pri-31": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Архангельский собор Московского Кремля (天使长大教堂), построенный в начале XVI века итальянским зодчим Алевизом Новым, стал усыпальницей московских князей и царей.",
+    "evidence": [
+      {
+        "title": "Архангельский собор (Москва) — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0)",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2024-25-pri-32": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Роман без указания автора, опубликованный в 1590-е годы, о путешествии монаха по Шёлковому пути в Индию за сутрами — «Путешествие на Запад» (西游记), основанное на паломничестве Сюаньцзана.",
+    "evidence": [
+      {
+        "title": "西游记 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%B8%B8%E8%AE%B0",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2024-25-pri-33": {
     "optionId": "o4",
@@ -3334,15 +4543,28 @@
     ],
     "wave": 3
   },
+  "2024-25-pri-35": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Провинция, которую Хуанхэ отделяет от Шэньси, где расположен космодром Тайюань и сосредоточена угольная промышленность, — Шаньси (山西).",
+    "evidence": [
+      {
+        "title": "山西省 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B1%B1%E8%A5%BF%E7%9C%81",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2024-25-pri-36": {
     "optionId": "o3",
     "state": "verified",
     "explanation": "Народный политический консультативный совет Китая (全国政治协商会议) — совещательный орган Единого патриотического фронта китайского народа, объединяющий партии и общественные организации при руководстве КПК.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "中国人民政治协商会议 — 官方网站",
-        "url": "http://www.cppcc.gov.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "http://www.cppcc.gov.cn/"
       }
     ],
     "wave": 4
@@ -3353,9 +4575,9 @@
     "explanation": "Празднику середины осени посвящён миф о богине Чанъэ (嫦娥), улетевшей на Луну; отмечается 15-го числа 8-го лунного месяца.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "嫦娥 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%98%89%E5%A8%A5",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%98%89%E5%A8%A5"
       }
     ],
     "wave": 4
@@ -3366,12 +4588,25 @@
     "explanation": "Шаньдунская кухня (鲁菜) — одна из старейших и влиятельнейших региональных кухонь Китая, легшая в основу императорской кухни Пекина.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "鲁菜 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E9%B2%81%E8%8F%9C",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E9%B2%81%E8%8F%9C"
       }
     ],
     "wave": 4
+  },
+  "2024-25-reg-1": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Самая короткая сухопутная граница России — с КНДР (朝鲜), около 17 км на Дальнем Востоке.",
+    "evidence": [
+      {
+        "title": "Границы России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2024-25-reg-10": {
     "optionId": "o2",
@@ -3379,12 +4614,64 @@
     "explanation": "Узбекистан (乌兹别克斯坦) не входит в число 14 сухопутных соседей Китая — он не имеет с ним общей границы, в отличие от Пакистана, Вьетнама и Индии.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "中国14个陆地邻国 — 当代中国",
-        "url": "https://www.ourchinastory.com/cn/9272/",
-        "checkedAt": "2026-09-18"
+        "url": "https://www.ourchinastory.com/cn/9272/"
       }
     ],
     "wave": 4
+  },
+  "2024-25-reg-2": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Рождество (圣诞节) — христианский праздник, появившийся на Руси после принятия христианства в 988 году.",
+    "evidence": [
+      {
+        "title": "Крещение Руси — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5_%D0%A0%D1%83%D1%81%D0%B8",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2024-25-reg-3": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Русскими войсками в Бородинском сражении 1812 года командовал фельдмаршал Михаил Кутузов (库图佐夫).",
+    "evidence": [
+      {
+        "title": "Бородинское сражение — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5_%D1%81%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2024-25-reg-4": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "В России 11 часовых поясов — от Калининграда до Камчатки.",
+    "evidence": [
+      {
+        "title": "Часовые пояса России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%92%D1%80%D0%B5%D0%BC%D1%8F_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2024-25-reg-5": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "Россия занимает первое место в мире по доказанным запасам природного газа (天然气).",
+    "evidence": [
+      {
+        "title": "Природный газ в России — Министерство энергетики РФ",
+        "url": "https://minenergo.gov.ru/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2024-25-reg-6": {
     "optionId": "o3",
@@ -3392,9 +4679,9 @@
     "explanation": "Политику реформ и открытости КНР начала проводить в 1978 году, после 3-го пленума ЦК КПК 11-го созыва в декабре 1978 года.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "邓小平 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E9%82%93%E5%B0%8F%E5%B9%B3",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E9%82%93%E5%B0%8F%E5%B9%B3"
       }
     ],
     "wave": 4
@@ -3405,12 +4692,25 @@
     "explanation": "Черепаха (乌龟) в китайской культуре — символ долголетия, силы и выносливости; наряду с драконом, фениксом и цилинем входит в число «четырёх священных существ», будучи единственным из них реальным животным.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "乌龟：圣俗两重天 — 中国国家地理网",
-        "url": "http://www.dili360.com/ch/article/p578f0e6169a5728.htm",
-        "checkedAt": "2026-09-18"
+        "url": "http://www.dili360.com/ch/article/p578f0e6169a5728.htm"
       }
     ],
     "wave": 4
+  },
+  "2024-25-reg-8": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Крупнейшие в Китае запасы природного газа сосредоточены в Сычуаньском бассейне (四川).",
+    "evidence": [
+      {
+        "title": "四川盆地天然气 — 中国石油新闻中心",
+        "url": "http://news.cnpc.com.cn/",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2024-25-reg-9": {
     "optionId": "o2",
@@ -3418,12 +4718,38 @@
     "explanation": "Инициативу «Один пояс, один путь» председатель Си Цзиньпин выдвинул в 2013 году — сначала «Экономический пояс Шёлкового пути» в сентябре в Казахстане, затем «Морской Шёлковый путь XXI века» в октябре в Индонезии.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "一带一路 — 中国一带一路网",
-        "url": "https://www.yidaiyilu.gov.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "https://www.yidaiyilu.gov.cn/"
       }
     ],
     "wave": 4
+  },
+  "2024-25-shk-29": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "На банкноте 500 рублей изображён Архангельск (阿尔汉格尔斯克) — памятник Петру I и парусник на фоне морского порта.",
+    "evidence": [
+      {
+        "title": "Пятьсот рублей — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9F%D1%8F%D1%82%D1%8C%D1%81%D0%BE%D1%82_%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2024-25-shk-31": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Чемпионат мира по футболу 2018 года прошёл в России, в том числе матчи в Москве.",
+    "evidence": [
+      {
+        "title": "Чемпионат мира по футболу 2018 — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0%D1%82_%D0%BC%D0%B8%D1%80%D0%B0_%D0%BF%D0%BE_%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%83_2018",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2024-25-shk-32": {
     "optionId": "o3",
@@ -3438,6 +4764,19 @@
     ],
     "wave": 1
   },
+  "2024-25-shk-33": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "С 2021 года, после открытия Восточного вокзала, в Москве действует десять железнодорожных вокзалов.",
+    "evidence": [
+      {
+        "title": "Железнодорожные вокзалы Москвы — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8B%D0%B5_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB%D1%8B_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%8B",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2024-25-shk-34": {
     "optionId": "o2",
     "state": "verified",
@@ -3451,15 +4790,28 @@
     ],
     "wave": 3
   },
+  "2024-25-shk-35": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Москва делится на 12 административных округов, включая присоединённые в 2012 году Троицкий и Новомосковский.",
+    "evidence": [
+      {
+        "title": "Административное деление Москвы — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE-%D1%82%D0%B5%D1%80%D1%80%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%8B",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2024-25-shk-36": {
     "optionId": "o2",
     "state": "verified",
     "explanation": "Китай стал членом ВТО 11 декабря 2001 года.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "中国加入世界贸易组织 — 中华人民共和国商务部",
-        "url": "http://www.mofcom.gov.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "http://www.mofcom.gov.cn/"
       }
     ],
     "wave": 4
@@ -3482,15 +4834,93 @@
     ],
     "wave": 1
   },
+  "2024-25-shk-38": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Первый Институт Конфуция открылся в Сеуле, Южная Корея (韩国), в 2004 году.",
+    "evidence": [
+      {
+        "title": "孔子学院 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AD%94%E5%AD%90%E5%AD%A6%E9%99%A2",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2024-25-zak-q082614": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "Первым человеком на земле, согласно китайской мифологии, часто называют Паньгу (盘古), из тела которого после его смерти образовался мир.",
+    "evidence": [
+      {
+        "title": "盘古 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%9B%98%E5%8F%A4",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2024-25-zak-q30e391": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Указ Петра I «О праздновании Нового года» подписан 20 декабря 1699 года.",
+    "evidence": [
+      {
+        "title": "О праздновании Нового Года. Именной указ. 20 декабря 1699 г. — ЭБИД",
+        "url": "https://docs.historyrussia.org/ru/nodes/340419-o-prazdnovanii-novogo-goda-imennoy-ukaz-20-dekabrya-1699-g",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2024-25-zak-q50fdd3": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "«Великое пятикнижие» — «Преступление и наказание», «Идиот», «Бесы», «Подросток», «Братья Карамазовы» — принадлежит Фёдору Достоевскому (陀思妥耶夫斯基).",
+    "evidence": [
+      {
+        "title": "Фёдор Достоевский — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9,_%D0%A4%D1%91%D0%B4%D0%BE%D1%80_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2024-25-zak-q544159": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Москва освобождена от польских интервентов в 1612 году ополчением Минина и Пожарского.",
+    "evidence": [
+      {
+        "title": "Народное ополчение (1611—1612) — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%92%D1%82%D0%BE%D1%80%D0%BE%D0%B5_%D0%BE%D0%BF%D0%BE%D0%BB%D1%87%D0%B5%D0%BD%D0%B8%D0%B5",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2024-25-zak-qa37e63": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Китайская программа исследования Луны с возвращаемыми миссиями называется «Чанъэ» (嫦娥) — в честь богини луны из китайской мифологии.",
+    "evidence": [
+      {
+        "title": "嫦娥工程 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B5%8C%E5%A8%A5%E5%B7%A5%E7%A8%8B",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2024-25-zak-qb18469": {
     "optionId": "o3",
     "state": "verified",
     "explanation": "Ныне действующая Конституция КНР — четвёртая по счёту — была принята в 1982 году на 5-й сессии ВСНП 5-го созыва.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "中华人民共和国宪法 — 中国人大网",
-        "url": "http://www.npc.gov.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "http://www.npc.gov.cn/"
       }
     ],
     "wave": 4
@@ -3688,9 +5118,9 @@
     "explanation": "Останки синантропа, «пекинского человека» (北京人), обнаружены в пещерах Чжоукоудянь под Пекином в 1920-х годах — одна из ключевых находок для изучения эволюции человека в Азии.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "北京人 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E4%BA%BA",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E4%BA%BA"
       }
     ],
     "wave": 4
@@ -3707,6 +5137,32 @@
       }
     ],
     "wave": 3
+  },
+  "2025-26-reg-2": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Самый известный труд Ли Шичжэня — «Компендиум лекарственных веществ» (本草纲目).",
+    "evidence": [
+      {
+        "title": "本草纲目 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9C%AC%E8%8D%89%E7%BA%B2%E7%9B%AE",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2025-26-reg-3": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Конкурс «Мост китайского языка» для студентов всего мира учреждён в 2002 году.",
+    "evidence": [
+      {
+        "title": "汉语桥·世界大学生中文比赛 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%89%E8%AF%AD%E6%A1%A5%C2%B7%E4%B8%96%E7%95%8C%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%B8%AD%E6%96%87%E6%AF%94%E8%B5%9B",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2025-26-reg-4": {
     "optionId": "o2",
@@ -3734,18 +5190,57 @@
     ],
     "wave": 3
   },
+  "2025-26-reg-6": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Екатеринбург (叶卡捷琳堡) стоит на границе Европы и Азии, на восточном склоне Уральских гор.",
+    "evidence": [
+      {
+        "title": "Екатеринбург — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2025-26-reg-7": {
     "optionId": "o3",
     "state": "verified",
     "explanation": "Куафу (夸父) — великан из мифа «夸父追日», задавшийся целью догнать солнце и погибший от жажды в пути.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "夸父逐日 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E5%A4%B8%E7%88%B6%E9%80%90%E6%97%A5",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E5%A4%B8%E7%88%B6%E9%80%90%E6%97%A5"
       }
     ],
     "wave": 4
+  },
+  "2025-26-reg-8": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "«Все счастливые семьи похожи друг на друга, каждая несчастливая семья несчастлива по-своему» — знаменитая первая строка «Анны Карениной» (安娜·卡列尼娜) Льва Толстого.",
+    "evidence": [
+      {
+        "title": "Анна Каренина — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%BD%D0%B0_%D0%9A%D0%B0%D1%80%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2025-26-reg-9": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Первым правителем, официально принявшим титул «Государь всея Руси», был Иван III (伊万三世).",
+    "evidence": [
+      {
+        "title": "Иван III Васильевич — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%98%D0%B2%D0%B0%D0%BD_III_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2025-26-shk-28": {
     "optionId": "o2",
@@ -3773,15 +5268,28 @@
     ],
     "wave": 3
   },
+  "2025-26-shk-30": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Автором «Речных заводей» (水浒传) традиционно считается Ши Найань (施耐庵), хотя в некоторых изданиях соавтором указан и Ло Гуаньчжун.",
+    "evidence": [
+      {
+        "title": "水浒传 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B0%B4%E6%B5%A9%E4%BC%A0",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
   "2025-26-shk-31": {
     "optionId": "o4",
     "state": "verified",
     "explanation": "Коммунистическая партия Китая основана в 1921 году: I съезд партии прошёл в Шанхае в июле 1921 года.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "中国共产党第一次全国代表大会 — 中国共产党新闻网",
-        "url": "http://cpc.people.com.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "http://cpc.people.com.cn/"
       }
     ],
     "wave": 4
@@ -3792,9 +5300,9 @@
     "explanation": "«Муравьи взбираются на дерево» (蚂蚁上树) — не идиома и не позиция тайцзицюань, а известное традиционное блюдо сычуаньской кухни: стеклянная лапша с рубленым мясом.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "蚂蚁上树 — 百度百科",
-        "url": "https://baike.baidu.com/item/%E8%9A%82%E8%9A%81%E4%B8%8A%E6%A0%91",
-        "checkedAt": "2026-09-18"
+        "url": "https://baike.baidu.com/item/%E8%9A%82%E8%9A%81%E4%B8%8A%E6%A0%91"
       }
     ],
     "wave": 4
@@ -3805,12 +5313,51 @@
     "explanation": "Жанры «цветы-птицы» (花鸟画) и «горы-воды» (山水画) относятся к традиционной китайской живописи (绘画).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "中国画 — 维基百科",
-        "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%94%BB",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%94%BB"
       }
     ],
     "wave": 4
+  },
+  "2025-26-shk-34": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Первая датированная печатная книга на Руси — «Апостол» Ивана Фёдорова, издана в 1564 году.",
+    "evidence": [
+      {
+        "title": "Апостол (книга, 1564) — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%90%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D0%BB_(%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0,_1564)",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2025-26-shk-35": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "Таймырский полуостров (太梅尔半岛) — крупнейший полуостров России.",
+    "evidence": [
+      {
+        "title": "Таймыр (полуостров) — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B9%D0%BC%D1%8B%D1%80_(%D0%BF%D0%BE%D0%BB%D1%83%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2)",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2025-26-shk-37": {
+    "optionId": "o3",
+    "state": "verified",
+    "explanation": "Банкноты номиналом 200 и 2000 рублей введены в обращение в 2017 году.",
+    "evidence": [
+      {
+        "title": "Двести рублей — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%B5%D1%81%D1%82%D0%B8_%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2025-26-shk-37-a": {
     "optionId": null,
@@ -3836,12 +5383,25 @@
     "explanation": "Высший орган исполнительной власти КНР — Государственный совет (国务院), центральное народное правительство страны.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "中华人民共和国国务院 — 官方网站",
-        "url": "https://www.gov.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "https://www.gov.cn/"
       }
     ],
     "wave": 4
+  },
+  "2025-26-zak-q233def": {
+    "optionId": "o4",
+    "state": "verified",
+    "explanation": "Картину «Богатыри» написал Виктор Васнецов (维克托·瓦斯涅佐夫); хранится в Третьяковской галерее.",
+    "evidence": [
+      {
+        "title": "Богатыри (картина) — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D1%80%D0%B8_(%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B0)",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2025-26-zak-q34d077": {
     "optionId": "o2",
@@ -3855,6 +5415,45 @@
       }
     ],
     "wave": 3
+  },
+  "2025-26-zak-q387588": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "По указу Петра I Санкт-Петербург стал фактической столицей России в 1712 году, задолго до официального закрепления этого статуса.",
+    "evidence": [
+      {
+        "title": "Санкт-Петербург — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2025-26-zak-q4176ce": {
+    "optionId": "o2",
+    "state": "verified",
+    "explanation": "Первый российский парламент — Государственная дума — созван в начале XX века, в 1906 году.",
+    "evidence": [
+      {
+        "title": "Государственная дума Российской империи — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B4%D1%83%D0%BC%D0%B0_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D0%B8",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
+  },
+  "2025-26-zak-q66aba2": {
+    "optionId": "o1",
+    "state": "verified",
+    "explanation": "Первый искусственный спутник Земли СССР запустил 4 октября 1957 года.",
+    "evidence": [
+      {
+        "title": "Спутник-1 — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA-1",
+        "checkedAt": "2026-09-18"
+      }
+    ],
+    "wave": 5
   },
   "2025-26-zak-q7c8228": {
     "optionId": "o4",
@@ -3888,9 +5487,9 @@
     "explanation": "Система учёных степеней в КНР включает три ступени: бакалавр (学士), магистр (硕士) и доктор (博士).",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "学位 — 中华人民共和国教育部",
-        "url": "http://www.moe.gov.cn/",
-        "checkedAt": "2026-09-18"
+        "url": "http://www.moe.gov.cn/"
       }
     ],
     "wave": 4
@@ -3901,9 +5500,9 @@
     "explanation": "Крыши императорских дворцов в Китае традиционно покрывали жёлтой черепицей (黄色) — жёлтый цвет со времён Тан считался исключительно императорским.",
     "evidence": [
       {
+        "checkedAt": "2026-09-18",
         "title": "黄色 — 中国传统色",
-        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E8%89%B2",
-        "checkedAt": "2026-09-18"
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E8%89%B2"
       }
     ],
     "wave": 4

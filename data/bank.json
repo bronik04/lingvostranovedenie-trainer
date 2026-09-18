@@ -118,11 +118,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国人口分布 — 国家统计局",
+        "url": "https://www.stats.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Больше всего населения Китая сосредоточено в восточных приморских районах (东部) — там же расположены крупнейшие городские агломерации страны."
     },
     "id": "2015-16-mun-2",
     "occurrences": [
@@ -163,7 +169,7 @@
     "questionZh": "中国人口哪部多？",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -391,11 +397,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "汉族 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%89%E6%97%8F"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Самая многочисленная национальность Китая — хань (汉族), свыше 90% населения страны."
     },
     "id": "2015-16-mun-7",
     "occurrences": [
@@ -436,7 +448,7 @@
     "questionZh": "中国民族中，哪一个民族的人最多?",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -497,11 +509,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国加入世界贸易组织 — 中华人民共和国商务部",
+        "url": "http://www.mofcom.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Китай вступил во Всемирную торговую организацию 11 декабря 2001 года."
     },
     "id": "2015-16-mun-9",
     "occurrences": [
@@ -542,7 +560,7 @@
     "questionZh": "中国在哪一年加入世界贸易组织？",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -771,11 +789,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "云南是我国世居少数民族分布最多的省份 — 北京市密云区人民政府",
+        "url": "https://www.bjmy.gov.cn/zwgk/ztbd/cjqgmztjjbsfq/mzzsll/202409/t20240910_443078.html"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Больше всего национальных меньшинств проживает в провинции Юньнань (云南) — 25 коренных народов, 52 из 56 национальностей Китая."
     },
     "id": "2015-16-reg-4",
     "occurrences": [
@@ -816,16 +840,22 @@
     "questionZh": "在中国，少数民族最多的省是哪个省？",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "四大发明 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%9B%9B%E5%A4%A7%E5%8F%91%E6%98%8E"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Четыре великих изобретения Древнего Китая — компас, порох, бумага и книгопечатание."
     },
     "id": "2015-16-reg-5",
     "occurrences": [
@@ -866,7 +896,7 @@
     "questionZh": "中国古代发明有几个？",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -983,11 +1013,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国人口占世界人口的百分之几 — 澎湃新闻",
+        "url": "https://www.thepaper.cn/newsDetail_forward_6713411"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Из предложенных вариантов ближе всего к реальности «22%»: доля населения Китая в мировом составляла около 22–23% в середине XX века и постепенно снижалась, к середине 2010-х годов составляя порядка 18–19%. Среди грубых оценок (5%/22%/50%/1%) 22% остаётся единственной разумной по порядку величины."
     },
     "id": "2015-16-reg-8",
     "occurrences": [
@@ -1041,7 +1077,7 @@
     "questionZh": "中国的人口占世界人口的百分之多少？",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -1102,11 +1138,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国人口 — World Bank Data",
+        "url": "https://data.worldbank.org.cn/indicator/SP.POP.TOTL"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "На середину 2010-х годов население Китая составляло около 1,37–1,4 млрд человек — среди предложенных грубых оценок (~2 млрд/~0,1 млрд/~1,5 млрд/>1,8 млрд) ближе всего к действительности вариант «приближается к 1,5 млрд»."
     },
     "id": "2015-16-shk-56",
     "occurrences": [
@@ -1147,16 +1189,22 @@
     "questionZh": "现在中国的人口总数是多少？",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "道教 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%81%93%E6%95%99"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Даосизм (道教) — единственная из перечисленных религий, возникшая непосредственно в Китае; буддизм пришёл из Индии, ислам и христианство — с Ближнего Востока."
     },
     "id": "2015-16-shk-57",
     "occurrences": [
@@ -1197,7 +1245,7 @@
     "questionZh": "在中国产生的宗教是哪一个？",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -1437,11 +1485,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国民族 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "В Китае официально насчитывается 56 национальностей — 55 этнических меньшинств и ханьцы."
     },
     "id": "2015-16-shk-62",
     "occurrences": [
@@ -1482,7 +1536,7 @@
     "questionZh": "中国有多少个民族？",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -2337,11 +2391,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国人民银行 — 官方网站",
+        "url": "http://www.pbc.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Центральный банк Китая — Народный банк Китая (中国人民银行)."
     },
     "id": "2016-17-mun-3",
     "occurrences": [
@@ -2382,7 +2442,7 @@
     "questionZh": "中国的中央银行是哪个银行？",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -2443,11 +2503,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国水稻生产 — 中华人民共和国农业农村部",
+        "url": "http://www.moa.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Рис (水稻) — важнейшая продовольственная культура Китая, основной продукт питания для более 60% населения страны, особенно в южных регионах."
     },
     "id": "2016-17-mun-5",
     "occurrences": [
@@ -2488,7 +2554,7 @@
     "questionZh": "…是中国最重要的粮食作物，它是全国 60%以上人口的主食。",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -3165,11 +3231,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "道教 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%81%93%E6%95%99"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Основателем даосизма традиционно считается Лао-цзы (老子), автор «Дао дэ цзин»."
     },
     "id": "2016-17-reg-8",
     "occurrences": [
@@ -3210,7 +3282,7 @@
     "questionZh": "道教学派的创始人是谁?",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -3271,11 +3343,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "四大发明 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%9B%9B%E5%A4%A7%E5%8F%91%E6%98%8E"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Четыре великих изобретения — компас, бумага, книгопечатание и порох (火药)."
     },
     "id": "2016-17-shk-1",
     "occurrences": [
@@ -3316,7 +3394,7 @@
     "questionZh": "中国的四大发明是指南针、造纸法、印刷术和…",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -3713,11 +3791,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中华人民共和国义务教育法 — 中国人大网",
+        "url": "http://www.npc.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "По Закону об обязательном образовании 1986 года Китай ввёл девятилетнее (九) обязательное обучение."
     },
     "id": "2016-17-shk-8",
     "occurrences": [
@@ -3758,16 +3842,22 @@
     "questionZh": "1986 年中国开始实行…年制义务教育。",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "汉语水平考试 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%89%E8%AF%AD%E6%B0%B4%E5%B9%B3%E8%80%83%E8%AF%95"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Государственный экзамен по китайскому языку как иностранному, учреждённый в 1988 году, сокращённо называется HSK (汉语水平考试)."
     },
     "id": "2016-17-shk-9",
     "occurrences": [
@@ -3808,16 +3898,22 @@
     "questionZh": "中国于1988 年设立国家汉语水平考试，简称…",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "经济特区 — 中国政协",
+        "url": "http://www.cppcc.gov.cn/2011/09/26/ARTI1317001118812167.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Хайнань (海南省), получивший статус СЭЗ в 1988 году, — крупнейшая по площади специальная экономическая зона Китая."
     },
     "id": "2016-17-zak-1",
     "occurrences": [
@@ -3858,7 +3954,7 @@
     "questionZh": "中国最大的经济特区是哪一个？",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -4143,11 +4239,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "杨利伟 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%A8%E5%88%A9%E4%BC%9F"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первым гражданином КНР, побывавшим в космосе, стал Ян Ливэй (杨利伟) в октябре 2003 года."
     },
     "id": "2016-17-zak-6",
     "occurrences": [
@@ -4188,7 +4290,7 @@
     "questionZh": "中华人民共和国第一位进入太空的太空人名为 …… 。",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -4249,11 +4351,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "气功 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E6%B0%94%E5%8A%9F"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "История китайской практики цигун насчитывает свыше 2000 лет — восходит к древним даосским и медицинским традициям."
     },
     "id": "2016-17-zak-8",
     "occurrences": [
@@ -4294,7 +4402,7 @@
     "questionZh": "中国气功有多少年的历史？",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -4803,11 +4911,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "四大发明 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%9B%9B%E5%A4%A7%E5%8F%91%E6%98%8E"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Алхимия (炼丹术) не входит в число четырёх великих изобретений Китая — ими считаются бумага, книгопечатание, порох и компас."
     },
     "id": "2017-18-mun-8",
     "occurrences": [
@@ -4848,7 +4962,7 @@
     "questionZh": "在下列选项中，哪一项不属于中国古代四大发明？",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -4909,11 +5023,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "一带一路 — 中国一带一路网",
+        "url": "https://www.yidaiyilu.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "«Экономический пояс Шёлкового пути» и «Морской Шёлковый путь XXI века» сокращённо называют «Один пояс, один путь» (一带一路)."
     },
     "id": "2017-18-reg-1",
     "occurrences": [
@@ -4954,7 +5074,7 @@
     "questionZh": "“丝绸之路经济带”和“21 世纪海上丝绸之路”的简称是什么？",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -5253,11 +5373,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "道观 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E9%81%93%E8%A7%82"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Даосские культовые сооружения называют «гун» (宫) или «гуань» (观) — второй термин исторически восходит к обсерваториям и храмам звёздного культа."
     },
     "id": "2017-18-reg-6",
     "occurrences": [
@@ -5298,7 +5424,7 @@
     "questionZh": "道教是中国土生土长的宗教，道教的建筑称“宫”或者“……”。",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -6423,11 +6549,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "许海峰 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E8%AE%B8%E6%B5%B7%E5%B3%B0"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первую олимпийскую золотую медаль Китай завоевал в 1984 году на Играх в Лос-Анджелесе — стрелок Сюй Хайфэн."
     },
     "id": "2017-18-zak-7",
     "occurrences": [
@@ -6468,16 +6600,22 @@
     "questionZh": "中国在哪一年获得了第一块奥运会金牌？",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "胡焕庸线 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E8%83%A1%E7%84%95%E5%BA%B8%E7%BA%BF"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Население Китая распределено неравномерно: на востоке страны его гораздо больше, чем на западе (东多西少) — это следствие «линии Ху Хуаньюна»."
     },
     "id": "2017-18-zak-8",
     "occurrences": [
@@ -6518,7 +6656,7 @@
     "questionZh": "中国人口在地域上的分布特点是……。",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -6859,11 +6997,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "论语 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E8%AE%BA%E8%AF%AD"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Принцип «学而不厌，诲人不倦» («не утомляться учиться и не уставать наставлять других») сформулировал Конфуций (孔子)."
     },
     "id": "2018-19-mun-51",
     "occurrences": [
@@ -6904,7 +7048,7 @@
     "questionZh": "“学而不厌，诲人不倦” 是哪位教育家的主要原则之一？",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -7021,11 +7165,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Москва — столица России — Мосгортур",
+        "url": "https://mosgortur.ru/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Советское правительство перенесло столицу из Петрограда в Москву в марте 1918 года, вскоре после Октябрьской революции."
     },
     "id": "2018-19-mun-54",
     "occurrences": [
@@ -7066,7 +7216,7 @@
     "questionZh": "苏联政府在哪一年把首都迁到莫斯科？",
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -7127,11 +7277,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "郑和 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E9%83%91%E5%92%8C"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Чжэн Хэ, знаменитый мореплаватель эпохи Мин, принадлежал к народу хуэй (回族) и был мусульманином."
     },
     "id": "2018-19-reg-1",
     "occurrences": [
@@ -7172,7 +7328,7 @@
     "questionZh": "明朝的郑和是中国古代最著名的航海家，他是哪个民族的人？",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -7401,11 +7557,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Летние Олимпийские игры 1980 — Олимпийский комитет России",
+        "url": "https://olympic.ru/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Летние Олимпийские игры в Москве прошли в 1980 году."
     },
     "id": "2018-19-reg-5",
     "occurrences": [
@@ -7446,7 +7608,7 @@
     "questionZh": "莫斯科在哪一年举办夏季奥运会？",
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -7507,11 +7669,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "藏传佛教 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E8%97%8F%E4%BC%A0%E4%BD%9B%E6%95%99"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Ламаизм — распространённая в Тибете форма буддизма (佛教), точнее — тибетская ветвь буддизма Ваджраяны."
     },
     "id": "2018-19-reg-7",
     "occurrences": [
@@ -7552,16 +7720,22 @@
     "questionZh": "西藏地区盛行的喇嘛教属于哪一个宗教？",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Собор Василия Блаженного — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%BE%D1%80_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F_%D0%91%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Собор Василия Блаженного в Москве построен в 1555–1561 годах — в XVI веке, по приказу Ивана Грозного в честь взятия Казани."
     },
     "id": "2018-19-reg-8",
     "occurrences": [
@@ -7602,7 +7776,7 @@
     "questionZh": "莫斯科市的圣瓦西里主教座堂是哪一世纪的建筑？",
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -7775,11 +7949,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "一带一路 — 中国一带一路网",
+        "url": "https://www.yidaiyilu.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "«Экономический пояс Шёлкового пути» и «Морской Шёлковый путь XXI века» сокращённо — «Один пояс, один путь» (一带一路)."
     },
     "id": "2018-19-shk-2",
     "occurrences": [
@@ -7820,16 +8000,22 @@
     "questionZh": "“丝绸之路经济带”和“21 世纪海上丝绸之路”的简称是什么？",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "广东省 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B9%BF%E4%B8%9C%E7%9C%81"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "По данным на 2017 год, самая населённая провинция Китая — Гуандун (广东省), свыше 110 млн человек."
     },
     "id": "2018-19-shk-3",
     "occurrences": [
@@ -7870,7 +8056,7 @@
     "questionZh": "据 2017 年调查，中国人口最多的省是哪一个？",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -7987,11 +8173,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "满族 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/seac/ztzl/manz/gk.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Больше половины маньчжуров Китая проживает в провинции Ляонин (辽宁) — свыше 5,3 млн человек, около половины всей численности народа."
     },
     "id": "2018-19-shk-6",
     "occurrences": [
@@ -8032,7 +8224,7 @@
     "questionZh": "满族是一个历史悠久、勤劳、勇敢的民族。他们主要居住在哪个省？",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -8093,11 +8285,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Первое упоминание о Москве — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Москва впервые упомянута в летописи (Ипатьевская летопись) под 1147 годом — эту дату принято считать годом основания города."
     },
     "id": "2018-19-shk-8",
     "occurrences": [
@@ -8138,7 +8336,7 @@
     "questionZh": "莫斯科最早见于哪一年？",
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -8481,11 +8679,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Религия в России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BB%D0%B8%D0%B3%D0%B8%D1%8F_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "По статистике 2018 года, ислам (伊斯兰教) — вторая по числу приверженцев религия в России после православного христианства."
     },
     "id": "2018-19-zak-5",
     "occurrences": [
@@ -8526,7 +8730,7 @@
     "questionZh": "据2018 年的统计俄罗斯人信仰的第二大宗教是哪一个？",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -8587,11 +8791,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "О праздновании Нового Года. Именной указ. 20 декабря 1699 г. — ЭБИД",
+        "url": "https://docs.historyrussia.org/ru/nodes/340419-o-prazdnovanii-novogo-goda-imennoy-ukaz-20-dekabrya-1699-g"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Пётр I подписал указ «О праздновании Нового года» 20 декабря 1699 года, перенеся начало года с 1 сентября на 1 января с 1700 года."
     },
     "id": "2018-19-zak-7",
     "occurrences": [
@@ -8632,16 +8842,22 @@
     "questionZh": "哪一年彼得大帝依照西欧各国的传统习惯，把每年的1 月1 日定为新 年？",
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "望闻问切 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E6%9C%9B%E9%97%BB%E9%97%AE%E5%88%87"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Четыре метода диагностики традиционной китайской медицины — осмотр (望), слушание и обоняние (闻), расспрос (问) и пальпация пульса (切)."
     },
     "id": "2018-19-zak-9",
     "occurrences": [
@@ -8682,7 +8898,7 @@
     "questionZh": "中医有四个诊断疾病的方法，其中包括望、闻、问和……。",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -9232,11 +9448,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Пётр I — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9F%D1%91%D1%82%D1%80_I"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первым императором Российской империи стал Пётр I (彼得大帝), принявший этот титул в 1721 году после победы в Северной войне."
     },
     "id": "2019-20-reg-1",
     "occurrences": [
@@ -9277,16 +9499,22 @@
     "questionZh": "俄罗斯帝国第一个皇帝是谁？",
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "День России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BD%D1%8C_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "День России отмечается 12 июня — в годовщину принятия Декларации о государственном суверенитете РСФСР в 1990 году."
     },
     "id": "2019-20-reg-10",
     "occurrences": [
@@ -9327,7 +9555,7 @@
     "questionZh": "俄罗斯的国庆日是几月几号？",
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -9388,11 +9616,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Блокада Ленинграда — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D0%BE%D0%BA%D0%B0%D0%B4%D0%B0_%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D0%B0"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Блокада Ленинграда продолжалась с 8 сентября 1941 по 27 января 1944 года — в историографии и памяти это устойчиво называют «900 дней блокады» (точное число — 872 дня)."
     },
     "id": "2019-20-reg-3",
     "occurrences": [
@@ -9433,7 +9667,7 @@
     "questionZh": "列宁格勒战役是第二次世界大战中轴心国为攻占列宁格勒而实施的战 役。苏联军队在列宁格勒进行长达……天的围困作战。",
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -9550,11 +9784,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Московский метрополитен — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D0%BD"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первая линия Московского метрополитена открыта 15 мая 1935 года."
     },
     "id": "2019-20-reg-6",
     "occurrences": [
@@ -9595,7 +9835,7 @@
     "questionZh": "莫斯科第一个地铁站是哪一年开通的？",
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -9656,11 +9896,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "经济特区 — 中国政协",
+        "url": "http://www.cppcc.gov.cn/2011/09/26/ARTI1317001118812167.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Хайнань (海南) — крупнейшая по площади специальная экономическая зона Китая."
     },
     "id": "2019-20-reg-8",
     "occurrences": [
@@ -9701,7 +9947,7 @@
     "questionZh": "中国最大的经济特区是哪一个？",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -9762,11 +10008,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "自治区 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E8%87%AA%E6%B2%BB%E5%8C%BA"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Пять автономных районов Китая — Внутренняя Монголия, Синьцзян, Гуанси, Нинся и Тибет; Юньнань (云南) — обычная провинция, хотя в её составе много автономных округов."
     },
     "id": "2019-20-shk-q048752",
     "occurrences": [
@@ -9805,16 +10057,22 @@
     "questionZh": "中国有 5 个少数民族自治区，下面不是自治区的是……。",
     "topic": "Общество: население, этносы и религии",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Сталинградская битва — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BB%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B8%D1%82%D0%B2%D0%B0"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Сталинградская битва (斯大林格勒战役, 1942–1943) считается переломным моментом советско-германской войны — после неё вермахт утратил стратегическую инициативу."
     },
     "id": "2019-20-shk-q07892b",
     "occurrences": [
@@ -9853,7 +10111,7 @@
     "questionZh": "哪一场战是苏德战争的转折点?",
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -9912,11 +10170,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "四大发明 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%9B%9B%E5%A4%A7%E5%8F%91%E6%98%8E"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Четыре великих изобретения — компас, бумага, книгопечатание и порох (火药)."
     },
     "id": "2019-20-shk-q30032b",
     "occurrences": [
@@ -9955,7 +10219,7 @@
     "questionZh": "中国的四大发明是指南针、造纸法、印刷术和…。",
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -10284,11 +10548,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Оружейная палата. Сокровищница государства — history.ru",
+        "url": "https://history.ru/read/articles/oruzhieinaia-palata-sokrovishchnitsa-rusi-russkogho-ghosudarstva-rossiiskogho-tsarstva-i-rossiiskoi-impierii"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Оружейная палата (军械库博物馆) — музей-сокровищница Кремля, исторически хранившая царскую казну наряду с оружейными мастерскими; название связано именно с этой функцией казнохранилища."
     },
     "id": "2020-21-pri-q8a64fd",
     "occurrences": [
@@ -10327,7 +10597,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -10980,11 +11250,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "盘古 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%9B%98%E5%8F%A4"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "По китайскому мифу, небо и землю разделил и сотворил мир великан Паньгу (盘古开天辟地)."
     },
     "id": "2020-21-reg-q588b1b",
     "occurrences": [
@@ -11023,16 +11299,22 @@
     "questionZh": null,
     "topic": "Общество: население, этносы и религии",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Собор Василия Блаженного — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%BE%D1%80_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F_%D0%91%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Собор Василия Блаженного (瓦西里升天教堂, официально — Покровский собор) возведён по приказу Ивана Грозного в честь присоединения Казанского ханства в 1552 году."
     },
     "id": "2020-21-reg-q7a4710",
     "occurrences": [
@@ -11071,7 +11353,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -11292,11 +11574,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "五帝 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E4%BA%94%E5%B8%9D"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первым из легендарных «Пяти императоров» древнейшего периода китайской истории традиционно считается Хуанди, «Жёлтый император» (黄帝)."
     },
     "id": "2020-21-zak-q2c2d90",
     "occurrences": [
@@ -11335,7 +11623,7 @@
     "questionZh": null,
     "topic": "Общество: население, этносы и религии",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -11448,11 +11736,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Стояние на реке Угре — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B0_%D1%80%D0%B5%D0%BA%D0%B5_%D0%A3%D0%B3%D1%80%D0%B5"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Традиционно годом окончательного освобождения Руси от ордынского владычества считается 1480-й — «Стояние на реке Угре», то есть XV век (十五世纪)."
     },
     "id": "2020-21-zak-qb0316f",
     "occurrences": [
@@ -11491,7 +11785,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -11833,11 +12127,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Российская империя — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Россия провозглашена империей в 1721 году после Ништадтского мира — к 2021 году исполнилось 300 лет (300 周年)."
     },
     "id": "2021-22-mun-q60cd54",
     "occurrences": [
@@ -11876,7 +12176,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -12421,11 +12721,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Царь-пушка — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A6%D0%B0%D1%80%D1%8C-%D0%BF%D1%83%D1%88%D0%BA%D0%B0"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Царь-пушка весит около 39,3 тонны — из предложенных вариантов ближе всего «40 тонн»."
     },
     "id": "2021-22-reg-q785d5e",
     "occurrences": [
@@ -12464,16 +12770,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "福建土楼 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A6%8F%E5%BB%BA%E5%9C%9F%E6%A5%BC"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Тулоу (土楼) — жилые комплексы крепостного типа народности хакка в провинциях Фуцзянь и Гуандун, построенные для защиты от нападений; объект всемирного наследия ЮНЕСКО."
     },
     "id": "2021-22-reg-q814d54",
     "occurrences": [
@@ -12512,7 +12824,7 @@
     "questionZh": null,
     "topic": "Общество: население, этносы и религии",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -12679,11 +12991,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "盘古 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%9B%98%E5%8F%A4"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Миф о сотворении мира — «Паньгу отделяет небо от земли» (盘古开天): 女娲补天 о починке неба, 精卫填海 и 夸父逐日 — другие мифологические сюжеты."
     },
     "id": "2021-22-reg-qdc153d",
     "occurrences": [
@@ -12722,7 +13040,7 @@
     "questionZh": null,
     "topic": "Общество: население, этносы и религии",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -13010,11 +13328,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Список русскоязычных лауреатов Нобелевской премии по литературе — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D0%B1%D0%B5%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%8F_%D0%BF%D0%BE_%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B5"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Из перечисленных писателей Нобелевскую премию по литературе не получал Антон Чехов (安东·契诃夫) — он умер в 1904 году, вскоре после учреждения премии; Шолохов, Бунин и Пастернак стали лауреатами."
     },
     "id": "2021-22-shk-qa608ac",
     "occurrences": [
@@ -13053,7 +13377,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -13544,11 +13868,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Храм Христа Спасителя — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%B0%D0%BC_%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%B0_%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8F"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Храм Христа Спасителя (救世主大教堂), построенный в честь победы в войне 1812 года, был взорван в 1931 году по приказу Сталина; долгое время на его месте находился открытый бассейн «Москва»."
     },
     "id": "2021-22-zak-q3ba1dd",
     "occurrences": [
@@ -13587,7 +13917,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -14492,11 +14822,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "高考 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E9%AB%98%E8%80%83"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "К единому государственному вступительному экзамену в вузы (高考) допускаются выпускники полной средней школы."
     },
     "id": "2022-23-reg-2",
     "occurrences": [
@@ -14538,7 +14874,7 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -14600,11 +14936,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Новосибирск — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Новосибирск (新西伯利亚) — третий по численности населения город России после Москвы и Санкт-Петербурга."
     },
     "id": "2022-23-reg-4",
     "occurrences": [
@@ -14646,16 +14988,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Медный всадник — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%BD%D1%8B%D0%B9_%D0%B2%D1%81%D0%B0%D0%B4%D0%BD%D0%B8%D0%BA"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Памятник Петру I (彼得大帝) воспет в поэме А. С. Пушкина «Медный всадник»."
     },
     "id": "2022-23-reg-5",
     "occurrences": [
@@ -14697,16 +15045,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Золотой век русской культуры — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%B9_%D0%B2%D0%B5%D0%BA_%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B9_%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D1%8B"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "«Золотым веком» русской культуры принято называть XIX век (十九世纪) — эпоху Пушкина, Толстого, Достоевского и расцвета изящных искусств."
     },
     "id": "2022-23-reg-6",
     "occurrences": [
@@ -14748,7 +15102,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -14810,11 +15164,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "壮族 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/seac/ztzl/zhz/gk.shtml"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Чжуаны (壮族) — самое многочисленное национальное меньшинство Китая, около 16,9 млн человек, из них почти 88% живут в Гуанси."
     },
     "id": "2022-23-reg-8",
     "occurrences": [
@@ -14856,7 +15216,7 @@
     "questionZh": null,
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -14918,11 +15278,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中华人民共和国义务教育法 — 中国人大网",
+        "url": "http://www.npc.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Согласно Закону КНР об обязательном образовании, оно составляет 9 лет: 6 лет начальной и 3 года неполной средней школы."
     },
     "id": "2022-23-shk-q08d2e2",
     "occurrences": [
@@ -14961,7 +15327,7 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -15020,11 +15386,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Революция 1905–1907 годов в России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D1%8F_1905%E2%80%941907_%D0%B3%D0%BE%D0%B4%D0%BE%D0%B2_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первая русская революция произошла в 1905–1907 годах."
     },
     "id": "2022-23-shk-q3c7e59",
     "occurrences": [
@@ -15063,7 +15435,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -15176,11 +15548,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "神农 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A5%9E%E5%86%9C"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Покровителем земледелия и медицины в китайской мифологии считается Шэньнун (神农), «Божественный земледелец»."
     },
     "id": "2022-23-shk-q92d9cf",
     "occurrences": [
@@ -15219,7 +15597,7 @@
     "questionZh": null,
     "topic": "Общество: население, этносы и религии",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -15332,11 +15710,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Иван III Васильевич — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%98%D0%B2%D0%B0%D0%BD_III_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Объединение русских земель вокруг Москвы связывают прежде всего с правлением Ивана III (伊万三世), «собирателя земель русских»."
     },
     "id": "2022-23-shk-qde2687",
     "occurrences": [
@@ -15375,7 +15759,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -15434,11 +15818,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "初级中学 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E5%88%9D%E7%BA%A7%E4%B8%AD%E5%AD%A6"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Обучение в неполной средней школе (初中) в Китае длится три года."
     },
     "id": "2022-23-zak-1",
     "occurrences": [
@@ -15480,7 +15870,7 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -15770,11 +16160,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Сталинградская битва — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BB%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B8%D1%82%D0%B2%D0%B0"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Победа в Сталинградской битве отмечается 2 февраля — в день капитуляции немецкой группировки в 1943 году."
     },
     "id": "2022-23-zak-6",
     "occurrences": [
@@ -15816,16 +16212,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Уфа — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A3%D1%84%D0%B0"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Столица Республики Башкортостан — Уфа (乌法)."
     },
     "id": "2022-23-zak-7",
     "occurrences": [
@@ -15867,16 +16269,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Зимние Олимпийские игры 2014 года — Олимпийский комитет России",
+        "url": "https://olympic.ru/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Зимние Олимпийские игры в Сочи (2014) были XXII (第二十二届) по счёту зимними Играми."
     },
     "id": "2022-23-zak-8",
     "occurrences": [
@@ -15918,7 +16326,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -16091,11 +16499,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国民族 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "В Китае официально насчитывается 55 национальных меньшинств (плюс ханьцы — всего 56 национальностей)."
     },
     "id": "2023-24-mun-31",
     "occurrences": [
@@ -16136,7 +16550,7 @@
     "questionZh": null,
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -16253,11 +16667,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Россия в Первой мировой войне — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F_%D0%B2_%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%B9_%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%B9_%D0%B2%D0%BE%D0%B9%D0%BD%D0%B5"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Россия вступила в Первую мировую войну в 1914 году, вскоре после её начала."
     },
     "id": "2023-24-mun-34",
     "occurrences": [
@@ -16298,16 +16718,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Александр II — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_II"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Прозвище «Освободитель» получил Александр II (亚历山大二世) за отмену крепостного права в 1861 году."
     },
     "id": "2023-24-mun-35",
     "occurrences": [
@@ -16348,16 +16774,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Образование СССР — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%A1%D0%A1%D0%A1%D0%A0"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "СССР образован 30 декабря 1922 года на I Всесоюзном съезде Советов."
     },
     "id": "2023-24-mun-36",
     "occurrences": [
@@ -16398,7 +16830,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -16515,11 +16947,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Собор Василия Блаженного — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B1%D0%BE%D1%80_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F_%D0%91%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Храм Василия Блаженного построен в 1555–1561 годах — в XVI веке (十六世纪)."
     },
     "id": "2023-24-reg-1",
     "occurrences": [
@@ -16561,16 +16999,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "奥林匹克运动会中国代表团 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E5%A5%A7%E6%9E%97%E5%8C%B9%E5%85%8B%E9%81%8B%E5%8B%95%E6%9C%83%E4%B8%AD%E5%9C%8B%E4%BB%A3%E8%A1%A8%E5%9C%98"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "До 1949 года Китай участвовал в Олимпийских играх трижды — в 1932, 1936 и 1948 годах."
     },
     "id": "2023-24-reg-10",
     "occurrences": [
@@ -16612,16 +17056,22 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Антон Чехов — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%85%D0%BE%D0%B2,_%D0%90%D0%BD%D1%82%D0%BE%D0%BD_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B8%D1%87"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Антон Павлович Чехов (契诃夫) по образованию и профессии был врачом (医生), окончив медицинский факультет Московского университета."
     },
     "id": "2023-24-reg-2",
     "occurrences": [
@@ -16663,16 +17113,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Список метрополитенов России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D0%BD%D0%BE%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Из перечисленных городов метро нет только в Перми (彼尔姆); в Санкт-Петербурге, Новосибирске и Нижнем Новгороде метрополитен действует."
     },
     "id": "2023-24-reg-3",
     "occurrences": [
@@ -16714,7 +17170,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -16836,11 +17292,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "温度计 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B8%A9%E5%BA%A6%E8%AE%A1"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Термометр (温度表) не был изобретён в Китае — в отличие от шёлка, пороха и компаса, происходящих из Древнего Китая; термометр создан в Европе (Галилей и его последователи)."
     },
     "id": "2023-24-reg-6",
     "occurrences": [
@@ -16882,7 +17344,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -17058,11 +17520,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Народное ополчение (1611—1612) — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%92%D1%82%D0%BE%D1%80%D0%BE%D0%B5_%D0%BE%D0%BF%D0%BE%D0%BB%D1%87%D0%B5%D0%BD%D0%B8%D0%B5"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Москва освобождена от польских интервентов ополчением Минина и Пожарского в 1612 году, что положило конец основной фазе Смутного времени."
     },
     "id": "2023-24-shk-29",
     "occurrences": [
@@ -17104,16 +17572,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Крещение Руси — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5_%D0%A0%D1%83%D1%81%D0%B8"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Рождество (圣诞节) — христианский праздник, появившийся на Руси после Крещения 988 года."
     },
     "id": "2023-24-shk-30",
     "occurrences": [
@@ -17154,7 +17628,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -17215,11 +17689,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Михаил Ломоносов — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BC%D0%BE%D0%BD%D0%BE%D1%81%D0%BE%D0%B2,_%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Михаил Ломоносов (罗蒙诺索夫) — один из инициаторов основания Московского университета в 1755 году."
     },
     "id": "2023-24-shk-33",
     "occurrences": [
@@ -17261,7 +17741,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -17379,11 +17859,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "张衡 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%A1%A1"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первый в мире сейсмограф (候风地动仪) изобрёл Чжан Хэн (张衡) во времена Восточной Хань, в 132 году н. э."
     },
     "id": "2023-24-shk-36",
     "occurrences": [
@@ -17425,7 +17911,7 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -17600,11 +18086,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Тула — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A2%D1%83%D0%BB%D0%B0"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Тула (图拉) знаменита оружейным и самоварным производством."
     },
     "id": "2023-24-zak-10",
     "occurrences": [
@@ -17645,7 +18137,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -17762,11 +18254,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "День космонавтики — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BD%D1%8C_%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%B8%D0%BA%D0%B8"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "День космонавтики отмечается 12 апреля — в годовщину полёта Юрия Гагарина в 1961 году."
     },
     "id": "2023-24-zak-4",
     "occurrences": [
@@ -17807,16 +18305,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Иркутск — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%98%D1%80%D0%BA%D1%83%D1%82%D1%81%D0%BA"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Иркутск (伊尔库茨克) расположен ближе всего к озеру Байкал среди перечисленных городов."
     },
     "id": "2023-24-zak-5",
     "occurrences": [
@@ -17857,16 +18361,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Псевдонимы Антона Чехова — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%85%D0%BE%D0%B2,_%D0%90%D0%BD%D1%82%D0%BE%D0%BD_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B8%D1%87"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Свыше пятидесяти псевдонимов, включая «Брат моего брата» и «Врач без пациентов», использовал Антон Чехов (契诃夫) в ранний период творчества."
     },
     "id": "2023-24-zak-6",
     "occurrences": [
@@ -17907,16 +18417,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Долина гейзеров — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D0%B0_%D0%B3%D0%B5%D0%B9%D0%B7%D0%B5%D1%80%D0%BE%D0%B2"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Долина гейзеров — одна из главных достопримечательностей Камчатского полуострова (堪察加半岛)."
     },
     "id": "2023-24-zak-7",
     "occurrences": [
@@ -17957,7 +18473,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -18074,11 +18590,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Пётр I — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9F%D1%91%D1%82%D1%80_I"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Основателем российского флота считается Пётр I (彼得大帝), начавший строительство первых кораблей ещё в конце XVII века."
     },
     "id": "2024-25-mun-28",
     "occurrences": [
@@ -18120,16 +18642,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Революция 1905–1907 годов в России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D1%8F_1905%E2%80%941907_%D0%B3%D0%BE%D0%B4%D0%BE%D0%B2_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первая русская революция прошла в 1905–1907 годах."
     },
     "id": "2024-25-mun-29",
     "occurrences": [
@@ -18171,16 +18699,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "拉萨市 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%8B%89%E8%90%A8%E5%B8%82"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Административный центр Тибетского автономного района — Лхаса (拉萨)."
     },
     "id": "2024-25-mun-30",
     "occurrences": [
@@ -18221,7 +18755,7 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -18283,11 +18817,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "中国水稻生产 — 中华人民共和国农业农村部",
+        "url": "http://www.moa.gov.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "По сбору риса (水稻) Китай занимает первое место в мире — крупнейший производитель этой культуры."
     },
     "id": "2024-25-mun-32",
     "occurrences": [
@@ -18329,7 +18869,7 @@
     "questionZh": null,
     "topic": "Общество: население, этносы и религии",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -18619,11 +19159,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "高考 — 百度百科",
+        "url": "https://baike.baidu.com/item/%E9%AB%98%E8%80%83"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Всекитайские вступительные экзамены в вузы называются гаокао (高考)."
     },
     "id": "2024-25-pri-30",
     "occurrences": [
@@ -18665,16 +19211,22 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Архангельский собор (Москва) — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_(%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0)"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Архангельский собор Московского Кремля (天使长大教堂), построенный в начале XVI века итальянским зодчим Алевизом Новым, стал усыпальницей московских князей и царей."
     },
     "id": "2024-25-pri-31",
     "occurrences": [
@@ -18716,16 +19268,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "西游记 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%B8%B8%E8%AE%B0"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Роман без указания автора, опубликованный в 1590-е годы, о путешествии монаха по Шёлковому пути в Индию за сутрами — «Путешествие на Запад» (西游记), основанное на паломничестве Сюаньцзана."
     },
     "id": "2024-25-pri-32",
     "occurrences": [
@@ -18767,7 +19325,7 @@
     "questionZh": null,
     "topic": "Литература, язык, искусство и философия",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -18886,11 +19444,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "山西省 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B1%B1%E8%A5%BF%E7%9C%81"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Провинция, которую Хуанхэ отделяет от Шэньси, где расположен космодром Тайюань и сосредоточена угольная промышленность, — Шаньси (山西)."
     },
     "id": "2024-25-pri-35",
     "occurrences": [
@@ -18932,7 +19496,7 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -19107,11 +19671,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Границы России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Самая короткая сухопутная граница России — с КНДР (朝鲜), около 17 км на Дальнем Востоке."
     },
     "id": "2024-25-reg-1",
     "occurrences": [
@@ -19153,7 +19723,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -19215,11 +19785,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Крещение Руси — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5_%D0%A0%D1%83%D1%81%D0%B8"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Рождество (圣诞节) — христианский праздник, появившийся на Руси после принятия христианства в 988 году."
     },
     "id": "2024-25-reg-2",
     "occurrences": [
@@ -19261,16 +19837,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Бородинское сражение — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5_%D1%81%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Русскими войсками в Бородинском сражении 1812 года командовал фельдмаршал Михаил Кутузов (库图佐夫)."
     },
     "id": "2024-25-reg-3",
     "occurrences": [
@@ -19312,16 +19894,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Часовые пояса России — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%92%D1%80%D0%B5%D0%BC%D1%8F_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "В России 11 часовых поясов — от Калининграда до Камчатки."
     },
     "id": "2024-25-reg-4",
     "occurrences": [
@@ -19363,16 +19951,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Природный газ в России — Министерство энергетики РФ",
+        "url": "https://minenergo.gov.ru/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Россия занимает первое место в мире по доказанным запасам природного газа (天然气)."
     },
     "id": "2024-25-reg-5",
     "occurrences": [
@@ -19414,7 +20008,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -19533,11 +20127,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "四川盆地天然气 — 中国石油新闻中心",
+        "url": "http://news.cnpc.com.cn/"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Крупнейшие в Китае запасы природного газа сосредоточены в Сычуаньском бассейне (四川)."
     },
     "id": "2024-25-reg-8",
     "occurrences": [
@@ -19579,7 +20179,7 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -19641,11 +20241,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Пятьсот рублей — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9F%D1%8F%D1%82%D1%8C%D1%81%D0%BE%D1%82_%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "На банкноте 500 рублей изображён Архангельск (阿尔汉格尔斯克) — памятник Петру I и парусник на фоне морского порта."
     },
     "id": "2024-25-shk-29",
     "occurrences": [
@@ -19687,16 +20293,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Чемпионат мира по футболу 2018 — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0%D1%82_%D0%BC%D0%B8%D1%80%D0%B0_%D0%BF%D0%BE_%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%83_2018"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Чемпионат мира по футболу 2018 года прошёл в России, в том числе матчи в Москве."
     },
     "id": "2024-25-shk-31",
     "occurrences": [
@@ -19738,7 +20350,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -19800,11 +20412,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Железнодорожные вокзалы Москвы — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8B%D0%B5_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB%D1%8B_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%8B"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "С 2021 года, после открытия Восточного вокзала, в Москве действует десять железнодорожных вокзалов."
     },
     "id": "2024-25-shk-33",
     "occurrences": [
@@ -19846,7 +20464,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -19908,11 +20526,17 @@
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Административное деление Москвы — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE-%D1%82%D0%B5%D1%80%D1%80%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%8B"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Москва делится на 12 административных округов, включая присоединённые в 2012 году Троицкий и Новомосковский."
     },
     "id": "2024-25-shk-35",
     "occurrences": [
@@ -19954,7 +20578,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -20078,11 +20702,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "孔子学院 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AD%94%E5%AD%90%E5%AD%A6%E9%99%A2"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первый Институт Конфуция открылся в Сеуле, Южная Корея (韩国), в 2004 году."
     },
     "id": "2024-25-shk-38",
     "occurrences": [
@@ -20124,16 +20754,22 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "盘古 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E7%9B%98%E5%8F%A4"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первым человеком на земле, согласно китайской мифологии, часто называют Паньгу (盘古), из тела которого после его смерти образовался мир."
     },
     "id": "2024-25-zak-q082614",
     "occurrences": [
@@ -20172,16 +20808,22 @@
     "questionZh": null,
     "topic": "Общество: население, этносы и религии",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "О праздновании Нового Года. Именной указ. 20 декабря 1699 г. — ЭБИД",
+        "url": "https://docs.historyrussia.org/ru/nodes/340419-o-prazdnovanii-novogo-goda-imennoy-ukaz-20-dekabrya-1699-g"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Указ Петра I «О праздновании Нового года» подписан 20 декабря 1699 года."
     },
     "id": "2024-25-zak-q30e391",
     "occurrences": [
@@ -20220,16 +20862,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Фёдор Достоевский — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9,_%D0%A4%D1%91%D0%B4%D0%BE%D1%80_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "«Великое пятикнижие» — «Преступление и наказание», «Идиот», «Бесы», «Подросток», «Братья Карамазовы» — принадлежит Фёдору Достоевскому (陀思妥耶夫斯基)."
     },
     "id": "2024-25-zak-q50fdd3",
     "occurrences": [
@@ -20268,16 +20916,22 @@
     "questionZh": null,
     "topic": "Литература, язык, искусство и философия",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Народное ополчение (1611—1612) — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%92%D1%82%D0%BE%D1%80%D0%BE%D0%B5_%D0%BE%D0%BF%D0%BE%D0%BB%D1%87%D0%B5%D0%BD%D0%B8%D0%B5"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Москва освобождена от польских интервентов в 1612 году ополчением Минина и Пожарского."
     },
     "id": "2024-25-zak-q544159",
     "occurrences": [
@@ -20316,16 +20970,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "嫦娥工程 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E5%B5%8C%E5%A8%A5%E5%B7%A5%E7%A8%8B"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Китайская программа исследования Луны с возвращаемыми миссиями называется «Чанъэ» (嫦娥) — в честь богини луны из китайской мифологии."
     },
     "id": "2024-25-zak-qa37e63",
     "occurrences": [
@@ -20364,7 +21024,7 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -21316,11 +21976,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "本草纲目 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9C%AC%E8%8D%89%E7%BA%B2%E7%9B%AE"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Самый известный труд Ли Шичжэня — «Компендиум лекарственных веществ» (本草纲目)."
     },
     "id": "2025-26-reg-2",
     "occurrences": [
@@ -21361,16 +22027,22 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "汉语桥·世界大学生中文比赛 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B1%89%E8%AF%AD%E6%A1%A5%C2%B7%E4%B8%96%E7%95%8C%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%B8%AD%E6%96%87%E6%AF%94%E8%B5%9B"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Конкурс «Мост китайского языка» для студентов всего мира учреждён в 2002 году."
     },
     "id": "2025-26-reg-3",
     "occurrences": [
@@ -21411,7 +22083,7 @@
     "questionZh": null,
     "topic": "Экономика, образование, наука и спорт",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -21528,11 +22200,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Екатеринбург — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B1%D1%83%D1%80%D0%B3"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Екатеринбург (叶卡捷琳堡) стоит на границе Европы и Азии, на восточном склоне Уральских гор."
     },
     "id": "2025-26-reg-6",
     "occurrences": [
@@ -21573,7 +22251,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -21634,11 +22312,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Анна Каренина — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%BD%D0%B0_%D0%9A%D0%B0%D1%80%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "«Все счастливые семьи похожи друг на друга, каждая несчастливая семья несчастлива по-своему» — знаменитая первая строка «Анны Карениной» (安娜·卡列尼娜) Льва Толстого."
     },
     "id": "2025-26-reg-8",
     "occurrences": [
@@ -21679,16 +22363,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Иван III Васильевич — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%98%D0%B2%D0%B0%D0%BD_III_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первым правителем, официально принявшим титул «Государь всея Руси», был Иван III (伊万三世)."
     },
     "id": "2025-26-reg-9",
     "occurrences": [
@@ -21729,7 +22419,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -21845,11 +22535,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "水浒传 — 维基百科",
+        "url": "https://zh.wikipedia.org/wiki/%E6%B0%B4%E6%B5%A9%E4%BC%A0"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Автором «Речных заводей» (水浒传) традиционно считается Ши Найань (施耐庵), хотя в некоторых изданиях соавтором указан и Ло Гуаньчжун."
     },
     "id": "2025-26-shk-30",
     "occurrences": [
@@ -21890,7 +22586,7 @@
     "questionZh": null,
     "topic": "Литература, язык, искусство и философия",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -22063,11 +22759,17 @@
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Апостол (книга, 1564) — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%90%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D0%BB_(%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0,_1564)"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первая датированная печатная книга на Руси — «Апостол» Ивана Фёдорова, издана в 1564 году."
     },
     "id": "2025-26-shk-34",
     "occurrences": [
@@ -22108,16 +22810,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Таймыр (полуостров) — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B0%D0%B9%D0%BC%D1%8B%D1%80_(%D0%BF%D0%BE%D0%BB%D1%83%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2)"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Таймырский полуостров (太梅尔半岛) — крупнейший полуостров России."
     },
     "id": "2025-26-shk-35",
     "occurrences": [
@@ -22158,16 +22866,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o3",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Двести рублей — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%B5%D1%81%D1%82%D0%B8_%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Банкноты номиналом 200 и 2000 рублей введены в обращение в 2017 году."
     },
     "id": "2025-26-shk-37",
     "occurrences": [
@@ -22208,7 +22922,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "categories-310",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -22328,11 +23042,17 @@
   {
     "answer": {
       "optionId": "o4",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Богатыри (картина) — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D1%80%D0%B8_(%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B0)"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Картину «Богатыри» написал Виктор Васнецов (维克托·瓦斯涅佐夫); хранится в Третьяковской галерее."
     },
     "id": "2025-26-zak-q233def",
     "occurrences": [
@@ -22371,7 +23091,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
@@ -22430,11 +23150,17 @@
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Санкт-Петербург — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "По указу Петра I Санкт-Петербург стал фактической столицей России в 1712 году, задолго до официального закрепления этого статуса."
     },
     "id": "2025-26-zak-q387588",
     "occurrences": [
@@ -22473,16 +23199,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o2",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Государственная дума Российской империи — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B4%D1%83%D0%BC%D0%B0_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D0%B8"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первый российский парламент — Государственная дума — созван в начале XX века, в 1906 году."
     },
     "id": "2025-26-zak-q4176ce",
     "occurrences": [
@@ -22521,16 +23253,22 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
       "optionId": "o1",
-      "state": "unverified"
+      "state": "verified"
     },
-    "evidence": [],
+    "evidence": [
+      {
+        "checkedAt": "2026-09-18",
+        "title": "Спутник-1 — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA-1"
+      }
+    ],
     "explanation": {
-      "ru": ""
+      "ru": "Первый искусственный спутник Земли СССР запустил 4 октября 1957 года."
     },
     "id": "2025-26-zak-q66aba2",
     "occurrences": [
@@ -22569,7 +23307,7 @@
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
-    "wave": 0
+    "wave": 5
   },
   {
     "answer": {
