@@ -56,6 +56,19 @@ class ApplyResultsTest(unittest.TestCase):
         self.assertEqual(bank[0]['answer']['state'], 'conflict')
         self.assertEqual(len(mismatches), 1)
 
+    def test_explicit_override_of_the_official_key_is_accepted_and_not_a_mismatch(self):
+        """Автор проекта сам проверил факт и осознанно принимает решение, что
+        официальный ключ ошибочен — это не то же самое, что молчаливое расхождение."""
+        bank = [record('a', 'unverified')]
+        bank, mismatches = apply_results(bank, [{
+            'id': 'a', 'optionId': 'o1', 'overrideOfficialKey': True,
+            'explanation': 'Источники расходятся с ключом, решение принято владельцем проекта.',
+            'evidence': [{'title': 'Источник', 'url': 'https://example.org'}],
+            'note': '',
+        }], wave=1)
+        self.assertEqual(bank[0]['answer'], {'optionId': 'o1', 'state': 'verified'})
+        self.assertEqual(mismatches, [])
+
     def test_question_without_official_key_is_simply_verified(self):
         bank = [record('a', 'needs-review', None, None)]
         bank, mismatches = apply_results(bank, [{'id': 'a', 'optionId': 'o1', **GOOD}], wave=1)

@@ -320,7 +320,7 @@ def merge(raw: list[dict], translations: dict[str, str],
         if not verified:
             continue
         official = {entry['officialKey'] for entry in record['occurrences'] if entry['officialKey']}
-        if official and verified['optionId'] not in official:
+        if official and verified['optionId'] not in official and not verified.get('overrideOfficialKey'):
             record['answer'] = {'optionId': None, 'state': 'conflict'}
         else:
             record['answer'] = {'optionId': verified['optionId'], 'state': 'verified'}

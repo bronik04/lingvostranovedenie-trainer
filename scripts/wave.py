@@ -37,13 +37,14 @@ def apply_results(bank: list[dict], results: list[dict], wave: int) -> tuple[lis
 
         official = {occurrence['officialKey'] for occurrence in record['occurrences']
                     if occurrence.get('officialKey')}
+        override = bool(result.get('overrideOfficialKey'))
 
         record['explanation'] = {'ru': result['explanation'].strip()}
         record['evidence'] = [{'title': item['title'], 'url': item['url'], 'checkedAt': today}
                               for item in result['evidence']]
         record['wave'] = wave
 
-        if official and result['optionId'] not in official:
+        if official and result['optionId'] not in official and not override:
             # расхождение с официальным ключом не решается молча: вопрос уходит на сверку
             record['answer'] = {'optionId': None, 'state': 'conflict'}
             mismatches.append({
@@ -54,6 +55,8 @@ def apply_results(bank: list[dict], results: list[dict], wave: int) -> tuple[lis
                 'note': result.get('note', ''),
             })
         else:
+            # override — не молчаливое решение: его явно подтвердил владелец проекта,
+            # поэтому в mismatches (нерешённые расхождения) оно не попадает
             record['answer'] = {'optionId': result['optionId'], 'state': 'verified'}
 
     return bank, mismatches
@@ -95,6 +98,7 @@ def main() -> None:
         return
 
     results = json.loads(args.results.read_text('utf-8'))
+    overridden = {result['id'] for result in results if result.get('overrideOfficialKey')}
     bank, mismatches = apply_results(bank, results, args.wave)
 
     # результаты живут отдельно от банка: банк пересобирается из источников, и без
@@ -103,13 +107,18 @@ def main() -> None:
     verification = json.loads(verification_file.read_text('utf-8')) if verification_file.exists() else {}
     for record in bank:
         if record['wave']:
-            verification[record['id']] = {
+            entry = {
                 'optionId': record['answer']['optionId'],
                 'state': record['answer']['state'],
                 'explanation': record['explanation']['ru'],
                 'evidence': record['evidence'],
                 'wave': record['wave'],
             }
+            # флаг переживает и эту, и будущие пересборки: он либо выставлен в этой волне,
+            # либо уже был выставлен раньше и не должен потеряться при перезаписи записи
+            if record['id'] in overridden or verification.get(record['id'], {}).get('overrideOfficialKey'):
+                entry['overrideOfficialKey'] = True
+            verification[record['id']] = entry
     verification_file.write_text(
         json.dumps(dict(sorted(verification.items())), ensure_ascii=False, indent=2) + '\n',
         encoding='utf-8')

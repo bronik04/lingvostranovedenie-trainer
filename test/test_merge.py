@@ -159,3 +159,17 @@ class VerificationSurvivesRebuildTest(unittest.TestCase):
         laptev = next(record for record in bank if record['questionRu'].startswith('Какая река'))
         self.assertEqual(laptev['answer']['state'], 'conflict')
         self.assertTrue(laptev['explanation']['ru'])
+
+    def test_explicit_override_survives_rebuild_and_beats_the_official_key(self):
+        """Автор проекта сам подтвердил, что официальный ключ ошибочен — решение должно
+        пережить полную пересборку банка, а не свестись обратно к conflict."""
+        verification = {
+            '2023-24-shk-138': {
+                'optionId': 'o1', 'state': 'verified', 'overrideOfficialKey': True,
+                'explanation': 'Источники расходятся с ключом, решение принято владельцем проекта.',
+                'evidence': [{'title': 'Источник', 'url': 'https://example.org', 'checkedAt': '2026-09-19'}],
+                'wave': 6,
+            }
+        }
+        bank, _ = merge([raw(officialKeyIndex=3)], {}, verification)
+        self.assertEqual(bank[0]['answer'], {'optionId': 'o1', 'state': 'verified'})
