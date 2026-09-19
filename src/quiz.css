@@ -270,14 +270,32 @@ select, .search {
   .button:hover:not(:disabled) { transform: none; }
 }
 
-@media (max-width: 680px) {
+/* Планшет (iPad и подобные, портретная и альбомная ориентация): двухколоночные
+   сетки ещё помещаются, шапка ещё умещается в строку — сужаем только поля. */
+@media (max-width: 1024px) {
+  .shell { width: min(100% - 28px, 1040px); }
+  .setup, .database, .quiz-main { padding: 24px; }
+}
+
+/* Телефон (iPhone и подобные): двухколоночные сетки уже не помещаются, а плашка
+   счётчика вместе с переключателем темы в одну строку не влезает ни на 600px,
+   ни тем более на 375px — поэтому весь top-side ставится в столбец, а не в строку. */
+@media (max-width: 600px) {
   .shell { width: min(100% - 20px, 1040px); padding-top: 23px; }
   .top { display: block; }
-  .top-side { flex-direction: row; align-items: center; margin-top: 14px; }
+  .top-side { flex-direction: column; align-items: stretch; margin-top: 14px; }
+  /* «Лингвострановедение» — одно слово, ниже минимума clamp() браузеру негде
+     его перенести само, а «421 вопросов · …» держится за white-space: nowrap —
+     на 320–375px оба варианта вылезают за край экрана без этих правил. */
+  h1 { overflow-wrap: break-word; }
+  .count { white-space: normal; text-align: center; }
+  .theme { justify-content: center; }
   .topics, .controls, .field-row, .database-bar { grid-template-columns: 1fr; }
   .setup, .database, .quiz-main { padding: 20px; }
   .quiz-top { padding: 17px 20px; }
   .actions { align-items: stretch; }
   .actions .button { width: 100%; }
   .actions-left { flex-direction: column; }
+  .next-row { flex-direction: column-reverse; align-items: stretch; }
+  .progress { flex-wrap: wrap; }
 }
