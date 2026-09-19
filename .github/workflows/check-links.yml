@@ -1,0 +1,68 @@
+name: Проверка ссылок-источников
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Один прогон ничего не решает: антибот-защиты (baidu, zhihu) и таймауты
+      # китайских gov.cn под нагрузкой прогона дают ложные 403/timeout на живых
+      # страницах (проверено вручную). Поэтому сам скрипт открывает issue только
+      # если ссылка битая второй прогон подряд — состояние между прогонами
+      # хранится в data/review/broken-links.json и коммитится ниже.
+      - name: Проверить все ссылки-источники
+        id: check
+        run: |
+          if python3 scripts/check_sources.py; then
+            echo "confirmed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "confirmed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Сохранить состояние проверки
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/review/broken-links.md data/review/broken-links.json
+          git diff --staged --quiet || git commit -m "Проверка ссылок-источников: $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Обновить issue, если ссылки подтверждённо битые
+        if: steps.check.outputs.confirmed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Битые ссылки-источники"
+          EXISTING=$(gh issue list --search "in:title \"$TITLE\"" --state open --json number --jq '.[0].number')
+          if [ -n "$EXISTING" ]; then
+            gh issue edit "$EXISTING" --body-file data/review/broken-links.md
+            gh issue comment "$EXISTING" --body "Проверка от $(date -u +%Y-%m-%d) — отчёт выше обновлён."
+          else
+            gh issue create --title "$TITLE" --body-file data/review/broken-links.md
+          fi
+
+      - name: Закрыть issue, если подтверждённо битых больше нет
+        if: steps.check.outputs.confirmed == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Битые ссылки-источники"
+          EXISTING=$(gh issue list --search "in:title \"$TITLE\"" --state open --json number --jq '.[0].number')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "Подтверждённо битых ссылок больше нет — закрываю."
+            gh issue close "$EXISTING"
+          fi
