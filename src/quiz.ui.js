@@ -79,6 +79,35 @@ function saveProgress() {
   }
 }
 
+function exportProgress() {
+  const blob = new Blob([JSON.stringify({ version: 1, progress: state.progress }, null, 2)],
+    { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `lingvo-trainer-progress-${new Date().toISOString().slice(0, 10)}.json`;
+  link.click();
+  URL.revokeObjectURL(url);
+}
+
+function importProgress(file) {
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const parsed = JSON.parse(reader.result);
+      if (parsed.version !== 1 || typeof parsed.progress !== 'object' || !parsed.progress) {
+        throw new Error('неверный формат файла');
+      }
+      state.progress = parsed.progress;
+      saveProgress();
+      renderSetup();
+    } catch {
+      alert('Не удалось загрузить прогресс: файл повреждён или сохранён другой версией тренажёра.');
+    }
+  };
+  reader.readAsText(file);
+}
+
 /* ---------- экраны ---------- */
 
 function show(view) {
@@ -398,6 +427,13 @@ $('resetProgress').addEventListener('click', () => {
   state.progress = {};
   saveProgress();
   renderSetup();
+});
+$('exportProgress').addEventListener('click', exportProgress);
+$('importProgress').addEventListener('click', () => $('importProgressFile').click());
+$('importProgressFile').addEventListener('change', (event) => {
+  const [file] = event.target.files;
+  if (file) importProgress(file);
+  event.target.value = '';
 });
 
 const verifiedCount = QUESTION_BANK.filter((r) => r.answer.state === 'verified').length;
