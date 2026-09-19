@@ -25,8 +25,8 @@
     <div>
       <p class="eyebrow">Китайский язык · тренажёр</p>
       <h1>Лингвострановедение</h1>
-      <p class="subtitle">Все вопросы — по-русски, варианты — по-китайски. Выберите тему, размер раунда
-        и отслеживайте уже пройденные задания.</p>
+      <p class="subtitle">Настоящие задания Всероссийской олимпиады школьников по китайскому языку
+        за 2015/16—2025/26: у каждого ответа — разбор и ссылка на источник, а не просто пометка «верно».</p>
     </div>
     <div class="top-side">
       <div class="count" id="bankCount"></div>
@@ -38,33 +38,42 @@
 
   <section class="card view" id="setupView">
     <div class="setup">
-      <h2>Настройте раунд</h2>
-      <p class="subhead">Если не выбрать темы, в раунд попадут вопросы из всех разделов.</p>
-      <div class="topics" id="topicControls"></div>
+      <h2>Проверьте свои знания</h2>
 
-      <details class="more">
-        <summary>Год и этап</summary>
-        <div class="field-row">
-          <label class="field">Год<select id="yearFilter"></select></label>
-          <label class="field">Этап<select id="stageFilter"></select></label>
+      <details class="settings" id="settingsPanel">
+        <summary>
+          <span class="gear" aria-hidden="true">⚙</span>
+          <span>Настройки раунда</span>
+        </summary>
+        <div class="settings-body">
+          <p class="subhead">Если не выбрать темы, в раунд попадут вопросы из всех разделов.</p>
+          <div class="topics" id="topicControls"></div>
+
+          <details class="more">
+            <summary>Год и этап</summary>
+            <div class="field-row">
+              <label class="field">Год<select id="yearFilter"></select></label>
+              <label class="field">Этап<select id="stageFilter"></select></label>
+            </div>
+          </details>
+
+          <div class="controls">
+            <label class="field">Количество вопросов
+              <select id="roundSize">
+                <option value="5">5 вопросов</option>
+                <option value="10" selected>10 вопросов</option>
+                <option value="20">20 вопросов</option>
+                <option value="50">50 вопросов</option>
+                <option value="all">Все доступные</option>
+              </select>
+            </label>
+            <div class="toggles">
+              <label class="toggle"><input id="onlyUncompleted" type="checkbox">Только непройденные</label>
+              <label class="toggle"><input id="onlyVerified" type="checkbox">Только проверенные</label>
+            </div>
+          </div>
         </div>
       </details>
-
-      <div class="controls">
-        <label class="field">Количество вопросов
-          <select id="roundSize">
-            <option value="5">5 вопросов</option>
-            <option value="10" selected>10 вопросов</option>
-            <option value="20">20 вопросов</option>
-            <option value="50">50 вопросов</option>
-            <option value="all">Все доступные</option>
-          </select>
-        </label>
-        <div class="toggles">
-          <label class="toggle"><input id="onlyUncompleted" type="checkbox">Только непройденные</label>
-          <label class="toggle"><input id="onlyVerified" type="checkbox">Только проверенные</label>
-        </div>
-      </div>
 
       <p class="notice" id="eligibleNotice"></p>
       <div class="actions">
