@@ -22,7 +22,7 @@
 ## Тесты
 
     python3 -m unittest discover -s test -t . -v
-    node --test 'test/*.test.mjs'
+    node --test test/*.test.mjs
 
 ## Данные
 

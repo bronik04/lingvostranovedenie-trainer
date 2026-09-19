@@ -44,7 +44,7 @@ jobs:
         run: python3 scripts/build_html.py
 
       - name: Node-тесты
-        run: node --test 'test/*.test.mjs'
+        run: node --test test/*.test.mjs
 
       - name: Подготовить артефакт Pages
         run: |
