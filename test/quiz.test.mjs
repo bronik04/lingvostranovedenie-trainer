@@ -15,7 +15,9 @@ const record = (id, overrides = {}) => ({
   ...overrides,
 });
 
-const NO_FILTERS = { topics: [], years: [], stages: [], onlyUnfinished: false, onlyVerified: false };
+const NO_FILTERS = {
+  topics: [], years: [], stages: [], onlyUnfinished: false, onlyVerified: false, onlyMistakes: false,
+};
 
 test('метки идут A–D по видимому порядку при любом перемешивании', () => {
   const reversed = labelledOptions(record('a'), () => 0.99);
@@ -49,6 +51,15 @@ test('«только непройденные» уважает прогресс'
   const bank = [record('a'), record('b')];
   const progress = { a: { completed: true } };
   assert.deepEqual(eligible(bank, { ...NO_FILTERS, onlyUnfinished: true }, progress).map((r) => r.id), ['b']);
+});
+
+test('«работа над ошибками» отбирает только вопросы, где в прошлый раз ошиблись', () => {
+  const bank = [record('a'), record('b'), record('c')];
+  const progress = {
+    a: { completed: true, lastCorrect: false },
+    b: { completed: true, lastCorrect: true },
+  };
+  assert.deepEqual(eligible(bank, { ...NO_FILTERS, onlyMistakes: true }, progress).map((r) => r.id), ['a']);
 });
 
 test('фильтры по теме, году и этапу складываются', () => {

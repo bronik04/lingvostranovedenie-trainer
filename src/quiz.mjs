@@ -6,6 +6,7 @@ export function eligible(bank, filters, progress) {
     if (!PLAYABLE.has(record.answer.state) || !record.answer.optionId) return false;
     if (filters.onlyVerified && record.answer.state !== 'verified') return false;
     if (filters.onlyUnfinished && progress[record.id]?.completed) return false;
+    if (filters.onlyMistakes && progress[record.id]?.lastCorrect !== false) return false;
     if (filters.topics.length && !filters.topics.includes(record.topic)) return false;
     if (filters.years.length && !record.occurrences.some((o) => filters.years.includes(o.year))) return false;
     if (filters.stages.length && !record.occurrences.some((o) => filters.stages.includes(o.stageCode))) return false;

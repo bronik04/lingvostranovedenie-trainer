@@ -13,7 +13,7 @@ const STATUS_NAMES = {
 const $ = (id) => document.getElementById(id);
 
 const state = {
-  filters: { topics: [], years: [], stages: [], onlyUnfinished: false, onlyVerified: false },
+  filters: { topics: [], years: [], stages: [], onlyUnfinished: false, onlyVerified: false, onlyMistakes: false },
   size: 10,
   round: [],
   position: 0,
@@ -413,6 +413,10 @@ $('onlyUncompleted').addEventListener('change', (event) => {
 });
 $('onlyVerified').addEventListener('change', (event) => {
   state.filters.onlyVerified = event.target.checked;
+  renderSetup();
+});
+$('onlyMistakes').addEventListener('change', (event) => {
+  state.filters.onlyMistakes = event.target.checked;
   renderSetup();
 });
 $('yearFilter').addEventListener('change', (event) => {
