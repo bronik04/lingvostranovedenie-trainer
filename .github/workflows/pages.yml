@@ -50,6 +50,7 @@ jobs:
         run: |
           mkdir -p site
           cp dist/lingvostranovedenie-trainer.html site/index.html
+          cp site-assets/og-image.jpg site/og-image.jpg
 
       - uses: actions/upload-pages-artifact@v3
         with:
