@@ -1,5 +1,7 @@
 # Тренажёр по лингвострановедению (ВсОШ, китайский язык)
 
+[![Deploy to GitHub Pages](https://github.com/bronik04/lingvostranovedenie-trainer/actions/workflows/pages.yml/badge.svg)](https://github.com/bronik04/lingvostranovedenie-trainer/actions/workflows/pages.yml)
+
 Банк вопросов раздела «Лингвострановедение» Всероссийской олимпиады школьников
 за 2015/16 — 2025/26 и тренажёр к нему: вопрос по-русски, варианты по-китайски,
 у каждого ответа пояснение и ссылка на источник.
