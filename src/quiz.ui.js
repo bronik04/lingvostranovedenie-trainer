@@ -33,6 +33,7 @@ function applyTheme(theme) {
   document.documentElement.dataset.theme = theme;
   $('themeIcon').textContent = theme === 'dark' ? '☾' : '☀';
   $('themeLabel').textContent = theme === 'dark' ? 'Тёмная' : 'Светлая';
+  $('themeColorMeta')?.setAttribute('content', theme === 'dark' ? '#6f9bff' : '#245eea');
 }
 
 function initTheme() {
