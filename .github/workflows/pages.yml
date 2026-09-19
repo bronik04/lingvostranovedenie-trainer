@@ -1,0 +1,66 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Установить pdftotext (для парсера PDF-бюллетеней)
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Пересобрать банк вопросов из первоисточников
+        run: |
+          python3 scripts/import_sources.py
+          python3 scripts/merge_bank.py
+          python3 scripts/taxonomy.py
+
+      - name: Python-тесты
+        run: python3 -m unittest discover -s test -t .
+
+      - name: Собрать самодостаточный HTML
+        run: python3 scripts/build_html.py
+
+      - name: Node-тесты
+        run: node --test 'test/*.test.mjs'
+
+      - name: Подготовить артефакт Pages
+        run: |
+          mkdir -p site
+          cp dist/lingvostranovedenie-trainer.html site/index.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
