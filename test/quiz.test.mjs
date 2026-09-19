@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { buildRound, eligible, grade, labelledOptions } from '../src/quiz.mjs';
+import { buildRound, eligible, grade, labelledOptions, scheduleReview } from '../src/quiz.mjs';
 
 const record = (id, overrides = {}) => ({
   id,
@@ -17,6 +17,7 @@ const record = (id, overrides = {}) => ({
 
 const NO_FILTERS = {
   topics: [], years: [], stages: [], onlyUnfinished: false, onlyVerified: false, onlyMistakes: false,
+  onlyDue: false,
 };
 
 test('метки идут A–D по видимому порядку при любом перемешивании', () => {
@@ -60,6 +61,53 @@ test('«работа над ошибками» отбирает только в�
     b: { completed: true, lastCorrect: true },
   };
   assert.deepEqual(eligible(bank, { ...NO_FILTERS, onlyMistakes: true }, progress).map((r) => r.id), ['a']);
+});
+
+test('интервальное повторение: правильный ответ откладывает следующий показ дальше, неправильный — сбрасывает', () => {
+  const now = 1_000_000_000_000;
+  const DAY = 86_400_000;
+
+  const afterFirstCorrect = scheduleReview(undefined, true, now);
+  assert.equal(afterFirstCorrect.box, 1);
+  assert.equal(afterFirstCorrect.dueAt, now + DAY);
+
+  const afterSecondCorrect = scheduleReview(afterFirstCorrect, true, now);
+  assert.equal(afterSecondCorrect.box, 2);
+  assert.equal(afterSecondCorrect.dueAt, now + 3 * DAY);
+  assert.ok(afterSecondCorrect.dueAt > afterFirstCorrect.dueAt, 'интервал растёт');
+
+  const afterWrong = scheduleReview(afterSecondCorrect, false, now);
+  assert.equal(afterWrong.box, 0);
+  assert.equal(afterWrong.dueAt, now, 'ошибка — показать почти сразу, а не через 90 дней');
+});
+
+test('интервальное повторение: box не растёт бесконечно', () => {
+  let state;
+  for (let i = 0; i < 20; i += 1) state = scheduleReview(state, true, 0);
+  const plateau = state.box;
+  state = scheduleReview(state, true, 0);
+  assert.equal(state.box, plateau, 'дальше уже некуда — упёрлись в потолок интервалов');
+});
+
+test('«пора повторить» пропускает вопросы, чей срок ещё не наступил, но включает никогда не отвеченные', () => {
+  const bank = [record('a'), record('b'), record('c')];
+  const now = 1_000_000_000_000;
+  const progress = {
+    a: { dueAt: now - 1000 },
+    b: { dueAt: now + 999_999_999 },
+  };
+  assert.deepEqual(
+    eligible(bank, { ...NO_FILTERS, onlyDue: true }, progress, now).map((r) => r.id),
+    ['a', 'c'],
+  );
+});
+
+test('раунд «пора повторить» сортирует по просрочке, а не перемешивает', () => {
+  const bank = [record('a'), record('b'), record('c')];
+  const now = 1000;
+  const progress = { a: { dueAt: 500 }, b: { dueAt: 100 }, c: { dueAt: 900 } };
+  const round = buildRound(bank, { ...NO_FILTERS, onlyDue: true }, progress, 10, () => 0.5, now);
+  assert.deepEqual(round.map((r) => r.id), ['b', 'a', 'c']);
 });
 
 test('фильтры по теме, году и этапу складываются', () => {

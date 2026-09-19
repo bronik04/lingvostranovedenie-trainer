@@ -13,7 +13,10 @@ const STATUS_NAMES = {
 const $ = (id) => document.getElementById(id);
 
 const state = {
-  filters: { topics: [], years: [], stages: [], onlyUnfinished: false, onlyVerified: false, onlyMistakes: false },
+  filters: {
+    topics: [], years: [], stages: [], onlyUnfinished: false, onlyVerified: false, onlyMistakes: false,
+    onlyDue: false,
+  },
   size: 10,
   round: [],
   position: 0,
@@ -218,11 +221,14 @@ function answer(record, optionId) {
 
   const verdict = grade(record, optionId);
   const previous = state.progress[record.id] || { attempts: 0, correct: 0 };
+  const review = scheduleReview(previous, verdict.correct);
   state.progress[record.id] = {
     attempts: previous.attempts + 1,
     correct: previous.correct + (verdict.correct ? 1 : 0),
     completed: true,
     lastCorrect: verdict.correct,
+    box: review.box,
+    dueAt: review.dueAt,
   };
   saveProgress();
   if (verdict.correct) state.correct += 1;
@@ -417,6 +423,10 @@ $('onlyVerified').addEventListener('change', (event) => {
 });
 $('onlyMistakes').addEventListener('change', (event) => {
   state.filters.onlyMistakes = event.target.checked;
+  renderSetup();
+});
+$('onlyDue').addEventListener('change', (event) => {
+  state.filters.onlyDue = event.target.checked;
   renderSetup();
 });
 $('yearFilter').addEventListener('change', (event) => {

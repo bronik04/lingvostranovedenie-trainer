@@ -74,7 +74,10 @@
               <label class="toggle"><input id="onlyUncompleted" type="checkbox">Только непройденные</label>
               <label class="toggle"><input id="onlyVerified" type="checkbox">Только проверенные</label>
               <label class="toggle"><input id="onlyMistakes" type="checkbox">Только с ошибками</label>
+              <label class="toggle"><input id="onlyDue" type="checkbox">Пора повторить</label>
             </div>
+            <p class="subhead">«Пора повторить» — интервальное повторение: чем увереннее отвечаете,
+              тем реже вопрос возвращается; ошибка — вопрос вернётся почти сразу.</p>
           </div>
         </div>
       </details>
@@ -161,12 +164,26 @@ const QUESTION_BANK = [{"answer":{"optionId":"o1","state":"verified"},"evidence"
 const PLAYABLE = new Set(['verified', 'unverified']);
 const LABELS = ['A', 'B', 'C', 'D'];
 
-function eligible(bank, filters, progress) {
+
+
+
+
+
+const REVIEW_INTERVALS_DAYS = [0, 1, 3, 7, 16, 35, 90];
+const DAY_MS = 86_400_000;
+
+function scheduleReview(previous, correct, now = Date.now()) {
+  const box = correct ? Math.min((previous?.box ?? 0) + 1, REVIEW_INTERVALS_DAYS.length - 1) : 0;
+  return { box, dueAt: now + REVIEW_INTERVALS_DAYS[box] * DAY_MS };
+}
+
+function eligible(bank, filters, progress, now = Date.now()) {
   return bank.filter((record) => {
     if (!PLAYABLE.has(record.answer.state) || !record.answer.optionId) return false;
     if (filters.onlyVerified && record.answer.state !== 'verified') return false;
     if (filters.onlyUnfinished && progress[record.id]?.completed) return false;
     if (filters.onlyMistakes && progress[record.id]?.lastCorrect !== false) return false;
+    if (filters.onlyDue && (progress[record.id]?.dueAt ?? 0) > now) return false;
     if (filters.topics.length && !filters.topics.includes(record.topic)) return false;
     if (filters.years.length && !record.occurrences.some((o) => filters.years.includes(o.year))) return false;
     if (filters.stages.length && !record.occurrences.some((o) => filters.stages.includes(o.stageCode))) return false;
@@ -183,8 +200,13 @@ function shuffled(items, random) {
   return copy;
 }
 
-function buildRound(bank, filters, progress, size, random = Math.random) {
-  const pool = eligible(bank, filters, progress);
+function buildRound(bank, filters, progress, size, random = Math.random, now = Date.now()) {
+  const pool = eligible(bank, filters, progress, now);
+  if (filters.onlyDue) {
+    
+    const byDueDate = [...pool].sort((a, b) => (progress[a.id]?.dueAt ?? 0) - (progress[b.id]?.dueAt ?? 0));
+    return byDueDate.slice(0, Math.min(size, byDueDate.length));
+  }
   return shuffled(pool, random).slice(0, Math.min(size, pool.length));
 }
 
@@ -216,7 +238,10 @@ const STATUS_NAMES = {
 const $ = (id) => document.getElementById(id);
 
 const state = {
-  filters: { topics: [], years: [], stages: [], onlyUnfinished: false, onlyVerified: false, onlyMistakes: false },
+  filters: {
+    topics: [], years: [], stages: [], onlyUnfinished: false, onlyVerified: false, onlyMistakes: false,
+    onlyDue: false,
+  },
   size: 10,
   round: [],
   position: 0,
@@ -421,11 +446,14 @@ function answer(record, optionId) {
 
   const verdict = grade(record, optionId);
   const previous = state.progress[record.id] || { attempts: 0, correct: 0 };
+  const review = scheduleReview(previous, verdict.correct);
   state.progress[record.id] = {
     attempts: previous.attempts + 1,
     correct: previous.correct + (verdict.correct ? 1 : 0),
     completed: true,
     lastCorrect: verdict.correct,
+    box: review.box,
+    dueAt: review.dueAt,
   };
   saveProgress();
   if (verdict.correct) state.correct += 1;
@@ -620,6 +648,10 @@ $('onlyVerified').addEventListener('change', (event) => {
 });
 $('onlyMistakes').addEventListener('change', (event) => {
   state.filters.onlyMistakes = event.target.checked;
+  renderSetup();
+});
+$('onlyDue').addEventListener('change', (event) => {
+  state.filters.onlyDue = event.target.checked;
   renderSetup();
 });
 $('yearFilter').addEventListener('change', (event) => {
