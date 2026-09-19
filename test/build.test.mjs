@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { readFileSync, statSync } from 'node:fs';
+import { mkdtempSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import test from 'node:test';
 
 const ROOT = new URL('..', import.meta.url);
@@ -30,6 +32,23 @@ test('в собранном файле вопросы по-русски, а ва
     for (const option of record.options) {
       assert.doesNotMatch(option.zh, /[А-Яа-яЁё]/, `${record.id}: ${option.zh}`);
     }
+  }
+});
+
+test('минификация не ломает синтаксис встроенных скриптов', () => {
+  const html = build();
+  const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map((m) => m[1]);
+  assert.equal(scripts.length, 2, 'ожидались два встроенных <script>');
+  const dir = mkdtempSync(join(tmpdir(), 'lingvo-syntax-'));
+  try {
+    scripts.forEach((code, index) => {
+      const file = join(dir, `script-${index}.js`);
+      writeFileSync(file, code);
+      assert.doesNotThrow(() => execFileSync('node', ['--check', file]),
+        `скрипт №${index} не проходит проверку синтаксиса`);
+    });
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
   }
 });
 

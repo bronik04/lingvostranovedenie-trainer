@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
+from minify import minify_css, minify_js
 from normalize import completeness_errors, fragment_pairs, language_errors
 from taxonomy import TOPICS
 
@@ -52,11 +53,11 @@ def main() -> None:
         raise SystemExit(1)
 
     html = (ROOT / 'src/template.html').read_text('utf-8')
-    html = html.replace('/*QUIZ_CSS*/', (ROOT / 'src/quiz.css').read_text('utf-8'))
-    engine = (ROOT / 'src/quiz.mjs').read_text('utf-8').replace('export ', '')
+    html = html.replace('/*QUIZ_CSS*/', minify_css((ROOT / 'src/quiz.css').read_text('utf-8')))
+    engine = minify_js((ROOT / 'src/quiz.mjs').read_text('utf-8').replace('export ', ''))
     html = html.replace('/*QUIZ_ENGINE*/', engine)
-    html = html.replace('/*QUESTION_BANK*/', json.dumps(bank, ensure_ascii=False))
-    html = html.replace('/*QUIZ_UI*/', (ROOT / 'src/quiz.ui.js').read_text('utf-8'))
+    html = html.replace('/*QUESTION_BANK*/', json.dumps(bank, ensure_ascii=False, separators=(',', ':')))
+    html = html.replace('/*QUIZ_UI*/', minify_js((ROOT / 'src/quiz.ui.js').read_text('utf-8')))
     TARGET.parent.mkdir(parents=True, exist_ok=True)
     TARGET.write_text(html, encoding='utf-8')
     verified = sum(1 for record in bank if record['answer']['state'] == 'verified')
