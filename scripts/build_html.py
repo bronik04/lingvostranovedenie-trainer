@@ -16,6 +16,11 @@ from taxonomy import TOPICS
 TARGET = ROOT / 'dist/lingvostranovedenie-trainer.html'
 
 
+def serialize_bank(bank: list[dict]) -> str:
+    """Serialize JSON without allowing a data field to close the surrounding script tag."""
+    return json.dumps(bank, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
+
+
 def validate(bank: list[dict]) -> list[str]:
     errors: list[str] = []
     seen: set[str] = set()
@@ -56,7 +61,7 @@ def main() -> None:
     html = html.replace('/*QUIZ_CSS*/', minify_css((ROOT / 'src/quiz.css').read_text('utf-8')))
     engine = minify_js((ROOT / 'src/quiz.mjs').read_text('utf-8').replace('export ', ''))
     html = html.replace('/*QUIZ_ENGINE*/', engine)
-    html = html.replace('/*QUESTION_BANK*/', json.dumps(bank, ensure_ascii=False, separators=(',', ':')))
+    html = html.replace('/*QUESTION_BANK*/', serialize_bank(bank))
     html = html.replace('/*QUIZ_UI*/', minify_js((ROOT / 'src/quiz.ui.js').read_text('utf-8')))
     TARGET.parent.mkdir(parents=True, exist_ok=True)
     TARGET.write_text(html, encoding='utf-8')

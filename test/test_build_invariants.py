@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from build_html import validate
+from build_html import serialize_bank, validate
 
 
 def record(**overrides):
@@ -24,6 +24,12 @@ def record(**overrides):
 
 
 class ValidateTest(unittest.TestCase):
+    def test_serialized_bank_cannot_close_its_script_tag(self):
+        payload = record(explanation={'ru': '</script><script>alert(1)</script>'})
+        result = serialize_bank([payload])
+        self.assertNotIn('</script>', result.lower())
+        self.assertIn('\\u003c/script>', result)
+
     def test_accepts_a_healthy_bank(self):
         self.assertEqual(validate([record()]), [])
 

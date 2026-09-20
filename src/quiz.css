@@ -126,6 +126,16 @@ h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.04; letter-s
 h2 { margin: 0; font-size: 1.25rem; letter-spacing: -.02em; }
 .subhead { margin: 5px 0 16px; color: var(--muted); font-size: .92rem; }
 
+.mode-picker { margin: 16px 0; padding: 0; border: 0; }
+.mode-picker legend { padding: 0; color: var(--muted); font-size: .86rem; font-weight: 750; }
+.mode-options { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-top: 8px; }
+.mode-option { display: block; cursor: pointer; }
+.mode-option input { position: absolute; opacity: 0; }
+.mode-option span { display: block; padding: 10px 8px; border: 1px solid var(--line); border-radius: 11px; background: var(--field); color: var(--muted); text-align: center; font-size: .88rem; font-weight: 750; }
+.mode-option input:checked + span { border-color: var(--blue); background: var(--soft); color: var(--blue); }
+.mode-option input:focus-visible + span { outline: 3px solid var(--focus); outline-offset: 2px; }
+.mode-help { min-height: 1.5em; margin: 8px 0 0; color: var(--muted); font-size: .84rem; }
+
 .settings { margin: 16px 0 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--field); }
 .settings > summary {
   display: flex;
@@ -159,6 +169,7 @@ h2 { margin: 0; font-size: 1.25rem; letter-spacing: -.02em; }
 .topic-check:has(input:checked) { border-color: var(--hover-line); background: var(--soft); }
 .topic-check input { width: 17px; height: 17px; accent-color: var(--blue); }
 .topic-check span { font-size: .95rem; }
+.topic-progress { margin-left: auto; color: var(--muted); font-size: .78rem; white-space: nowrap; }
 
 .more { margin: 0 0 18px; }
 .more summary { color: var(--muted); font-size: .88rem; font-weight: 700; cursor: pointer; }
@@ -180,10 +191,15 @@ select, .search {
 .toggle input { width: 17px; height: 17px; accent-color: var(--blue); }
 
 .notice { margin: 0 0 14px; color: var(--muted); font-size: .92rem; }
+.empty-actions { display: flex; gap: 10px; margin: -2px 0 14px; }
 
 .actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .actions.centered { justify-content: center; }
 .actions-left { display: flex; gap: 10px; flex-wrap: wrap; }
+.launch-actions { justify-content: flex-start; }
+.progress-tools { margin-top: 14px; }
+.progress-tools summary { width: fit-content; color: var(--muted); font-size: .85rem; font-weight: 750; cursor: pointer; }
+.progress-tools .actions-left { margin-top: 8px; }
 
 .button {
   border: 1px solid transparent;
@@ -218,7 +234,7 @@ select, .search {
 .options { display: grid; gap: 10px; }
 .option {
   display: grid;
-  grid-template-columns: 35px 1fr;
+  grid-template-columns: 35px 1fr auto;
   align-items: center;
   gap: 13px;
   width: 100%;
@@ -247,6 +263,9 @@ select, .search {
 .option.correct .letter { background: var(--green); color: #fff; }
 .option.wrong { border-color: var(--bad-line); background: var(--bad-bg); }
 .option.wrong .letter { background: var(--red); color: #fff; }
+.option-status { color: var(--muted); font-size: .8rem; font-weight: 800; white-space: nowrap; }
+.option.correct .option-status { color: var(--green); }
+.option.wrong .option-status { color: var(--red); }
 
 .feedback { margin: 18px 0 0; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: var(--note-bg); }
 .feedback.good { border-color: var(--ok-line); background: var(--ok-bg); }
@@ -273,12 +292,15 @@ select, .search {
 .row-options { display: flex; flex-wrap: wrap; gap: 5px; color: var(--muted); font-size: .88rem; }
 .row-answer { margin: 8px 0 0; color: var(--green); font-size: .93rem; }
 .row-why { margin: 7px 0 0; font-size: .92rem; }
+.row-reveal { margin-top: 8px; }
+.row-reveal summary { width: fit-content; color: var(--blue); font-size: .88rem; font-weight: 750; cursor: pointer; }
 .row-zh { margin: 7px 0 0; color: var(--muted); font-size: .92rem; }
 .tag { padding: 2px 7px; border-radius: 999px; background: var(--tag-bg); color: var(--tag-ink); font-size: .72rem; font-weight: 800; }
 .tag.done { background: var(--ok-bg); color: var(--green); }
 .tag.review { background: var(--bad-bg); color: var(--red); }
 .tag.warn { background: var(--warn-bg); color: var(--warn-ink); }
 .empty { padding: 24px; text-align: center; color: var(--muted); }
+.database-more { display: block; width: 100%; margin-top: 14px; }
 
 .footer { margin: 15px 2px 0; color: var(--muted); font-size: .78rem; }
 .hidden { display: none !important; }
@@ -299,21 +321,25 @@ select, .search {
    счётчика вместе с переключателем темы в одну строку не влезает ни на 600px,
    ни тем более на 375px — поэтому весь top-side ставится в столбец, а не в строку. */
 @media (max-width: 600px) {
-  .shell { width: min(100% - 20px, 1040px); padding-top: 23px; }
+  .shell { width: min(100% - 20px, 1040px); padding-top: 18px; }
   .top { display: block; }
-  .top-side { flex-direction: column; align-items: stretch; margin-top: 14px; }
+  .top-side { flex-direction: row; align-items: stretch; margin-top: 12px; }
   /* «Лингвострановедение» — одно слово, ниже минимума clamp() браузеру негде
      его перенести само, а «421 вопросов · …» держится за white-space: nowrap —
      на 320–375px оба варианта вылезают за край экрана без этих правил. */
   h1 { overflow-wrap: break-word; }
-  .count { white-space: normal; text-align: center; }
+  .count { flex: 1; white-space: normal; text-align: center; }
   .theme { justify-content: center; }
-  .topics, .controls, .field-row, .database-bar { grid-template-columns: 1fr; }
+  .topics, .controls, .field-row, .database-bar, .mode-options { grid-template-columns: 1fr; }
   .setup, .database, .quiz-main { padding: 20px; }
   .quiz-top { padding: 17px 20px; }
   .actions { align-items: stretch; }
   .actions .button { width: 100%; }
   .actions-left { flex-direction: column; }
+  .empty-actions { flex-direction: column; }
+  .empty-actions .button { width: 100%; }
+  .option { grid-template-columns: 35px 1fr; }
+  .option-status { grid-column: 2; }
   .next-row { flex-direction: column-reverse; align-items: stretch; }
   .progress { flex-wrap: wrap; }
 }

@@ -1,4 +1,5 @@
 const STORAGE_KEY = 'lingvo-trainer:v1';
+const STUDY_SETTINGS_KEY = 'lingvo-trainer:settings:v1';
 const THEME_KEY = 'lingvo-trainer:theme';
 const STAGE_NAMES = {
   pri: 'пригласительный', shk: 'школьный', mun: 'муниципальный',
@@ -12,18 +13,39 @@ const STATUS_NAMES = {
 
 const $ = (id) => document.getElementById(id);
 
+const defaultFilters = () => ({
+  topics: [], years: [], stages: [], mode: 'all', onlyVerified: false,
+});
+
+function defaultStudySettings() {
+  return { filters: defaultFilters(), size: 10 };
+}
+
+function loadStudySettings() {
+  try {
+    const stored = JSON.parse(localStorage.getItem(STUDY_SETTINGS_KEY) || '{}');
+    if (stored.version !== 1) return defaultStudySettings();
+    return normaliseStudySettings(stored.settings, QUESTION_BANK);
+  } catch {
+    return defaultStudySettings();
+  }
+}
+
+const savedStudySettings = loadStudySettings();
+
 const state = {
-  filters: {
-    topics: [], years: [], stages: [], onlyUnfinished: false, onlyVerified: false, onlyMistakes: false,
-    onlyDue: false,
-  },
-  size: 10,
+  filters: savedStudySettings.filters,
+  size: savedStudySettings.size,
   round: [],
+  wrongIds: [],
   position: 0,
   correct: 0,
   answered: false,
+  retryQueue: [],
+  retriedIds: new Set(),
   view: 'setup',
   progress: loadProgress(),
+  databasePage: 0,
 };
 
 /* ---------- тема ---------- */
@@ -69,7 +91,7 @@ function toggleTheme() {
 function loadProgress() {
   try {
     const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
-    return stored.version === 1 && stored.progress ? stored.progress : {};
+    return stored.version === 1 && isValidProgress(stored.progress) ? stored.progress : {};
   } catch {
     return {};
   }
@@ -81,6 +103,15 @@ function saveProgress() {
   } catch {
     /* приватный режим: прогресс живёт только до перезагрузки */
   }
+}
+
+function saveStudySettings() {
+  try {
+    localStorage.setItem(STUDY_SETTINGS_KEY, JSON.stringify({
+      version: 1,
+      settings: { filters: state.filters, size: state.size },
+    }));
+  } catch {}
 }
 
 function exportProgress() {
@@ -99,7 +130,7 @@ function importProgress(file) {
   reader.onload = () => {
     try {
       const parsed = JSON.parse(reader.result);
-      if (parsed.version !== 1 || typeof parsed.progress !== 'object' || !parsed.progress) {
+      if (parsed.version !== 1 || !isValidProgress(parsed.progress)) {
         throw new Error('неверный формат файла');
       }
       state.progress = parsed.progress;
@@ -128,9 +159,8 @@ function stageLabel(code) {
 }
 
 function renderBankCount() {
-  const verified = QUESTION_BANK.filter((r) => r.answer.state === 'verified').length;
   const done = Object.values(state.progress).filter((item) => item.completed).length;
-  $('bankCount').textContent = `${QUESTION_BANK.length} вопросов · проверено ${verified} · пройдено ${done}`;
+  $('bankCount').textContent = `Пройдено ${done} из ${QUESTION_BANK.length}`;
 }
 
 function renderSetup() {
@@ -139,11 +169,19 @@ function renderSetup() {
     for (const topic of topics) {
       const label = document.createElement('label');
       label.className = 'topic-check';
-      label.innerHTML = `<input type="checkbox" value="${topic}"><span>${topic}</span>`;
-      label.querySelector('input').addEventListener('change', (event) => {
+      const input = document.createElement('input');
+      input.type = 'checkbox';
+      input.value = topic;
+      const caption = document.createElement('span');
+      caption.textContent = topic;
+      const count = document.createElement('small');
+      count.className = 'topic-progress';
+      label.append(input, caption, count);
+      input.addEventListener('change', (event) => {
         const list = state.filters.topics;
         if (event.target.checked) list.push(topic);
         else list.splice(list.indexOf(topic), 1);
+        saveStudySettings();
         renderSetup();
       });
       $('topicControls').append(label);
@@ -157,11 +195,39 @@ function renderSetup() {
     fillSelect($('databaseTopic'), 'Все темы', topics.map((t) => [t, t]));
   }
 
+  const counts = progressByTopic(QUESTION_BANK, state.progress);
+  for (const label of $('topicControls').children) {
+    const input = label.querySelector('input');
+    input.checked = state.filters.topics.includes(input.value);
+    const { completed, total } = counts[input.value];
+    label.querySelector('.topic-progress').textContent = `${completed}/${total}`;
+  }
+  $('yearFilter').value = state.filters.years[0] || '';
+  $('stageFilter').value = state.filters.stages[0] || '';
+  $('roundSize').value = state.size === Number.MAX_SAFE_INTEGER ? 'all' : String(state.size);
+  $('onlyVerified').checked = state.filters.onlyVerified;
+  for (const input of document.querySelectorAll('input[name="studyMode"]')) {
+    input.checked = input.value === state.filters.mode;
+  }
+  const modeCopy = {
+    all: 'Все доступные вопросы в случайном порядке.',
+    new: 'Только вопросы, на которые вы ещё не отвечали.',
+    mistakes: 'Вопросы, в которых последний ответ был ошибочным.',
+    due: 'Пройденные вопросы, срок повторения которых наступил.',
+  };
+  $('modeHelp').textContent = modeCopy[state.filters.mode];
+  $('verifiedFilterWrap').hidden = !QUESTION_BANK.some((record) => record.answer.state === 'unverified');
+
   const pool = eligible(QUESTION_BANK, state.filters, state.progress);
   $('eligibleNotice').textContent = pool.length
-    ? `Под фильтры подходит вопросов: ${pool.length}.`
-    : 'Под текущие фильтры не подходит ни один вопрос — снимите часть ограничений.';
+    ? state.filters.mode === 'due'
+      ? `К повторению готово: ${pool.length}.`
+      : `Под фильтры подходит вопросов: ${pool.length}.`
+    : state.filters.mode === 'due'
+      ? 'Нет вопросов для повторения по текущим фильтрам.'
+      : 'Под текущие фильтры не подходит ни один вопрос — снимите часть ограничений.';
   $('startButton').disabled = pool.length === 0;
+  $('emptyActions').hidden = pool.length !== 0;
   renderBankCount();
 }
 
@@ -180,11 +246,23 @@ function fillSelect(select, allLabel, pairs) {
 function startRound() {
   const pool = eligible(QUESTION_BANK, state.filters, state.progress);
   if (!pool.length) return;
-  state.round = buildRound(QUESTION_BANK, state.filters, state.progress, state.size);
+  startRoundWith(buildRound(QUESTION_BANK, state.filters, state.progress, state.size));
+}
+
+function startRoundWith(round) {
+  state.round = round;
+  state.wrongIds = [];
   state.position = 0;
   state.correct = 0;
+  state.retryQueue = [];
+  state.retriedIds = new Set();
   show('quiz');
   renderQuestion();
+}
+
+function repeatMistakes() {
+  const wrong = wrongQuestions(state.round, state.wrongIds);
+  if (wrong.length) startRoundWith(wrong);
 }
 
 function renderQuestion() {
@@ -192,7 +270,7 @@ function renderQuestion() {
   if (!record) return finishRound();
 
   state.answered = false;
-  const first = record.occurrences[0];
+  const first = matchingOccurrence(record, state.filters);
   $('progressLabel').textContent = `Вопрос ${state.position + 1} из ${state.round.length}`;
   $('scoreLabel').textContent = `Счёт: ${state.correct}`;
   $('progressFill').style.width = `${(state.position / state.round.length) * 100}%`;
@@ -209,7 +287,12 @@ function renderQuestion() {
     button.type = 'button';
     button.className = 'option';
     button.dataset.optionId = option.optionId;
-    button.innerHTML = `<span class="letter">${option.label}</span><span>${option.zh}</span>`;
+    const letter = document.createElement('span');
+    letter.className = 'letter';
+    letter.textContent = option.label;
+    const caption = document.createElement('span');
+    caption.textContent = option.zh;
+    button.append(letter, caption);
     button.addEventListener('click', () => answer(record, option.optionId));
     $('options').append(button);
   }
@@ -232,25 +315,49 @@ function answer(record, optionId) {
   };
   saveProgress();
   if (verdict.correct) state.correct += 1;
+  else {
+    state.wrongIds.push(record.id);
+    const retry = queueRetry(state.retryQueue, state.retriedIds, record, state.position);
+    state.retryQueue = retry.queue;
+    state.retriedIds = retry.retriedIds;
+  }
   $('scoreLabel').textContent = `Счёт: ${state.correct}`;
 
   for (const button of $('options').querySelectorAll('button')) {
     button.disabled = true;
-    if (button.dataset.optionId === verdict.answerOptionId) button.classList.add('correct');
-    else if (button.dataset.optionId === optionId) button.classList.add('wrong');
+    if (button.dataset.optionId === verdict.answerOptionId) {
+      button.classList.add('correct');
+      const status = document.createElement('span');
+      status.className = 'option-status';
+      status.textContent = '✓ Верно';
+      button.append(status);
+    } else if (button.dataset.optionId === optionId) {
+      button.classList.add('wrong');
+      const status = document.createElement('span');
+      status.className = 'option-status';
+      status.textContent = '✕ Ваш ответ';
+      button.append(status);
+    }
   }
 
   const right = record.options.find((option) => option.id === verdict.answerOptionId);
-  const sources = record.evidence.map((source) =>
-    `<li><a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.title}</a>` +
-    `${source.checkedAt ? ` <span class="muted">(проверено ${source.checkedAt})</span>` : ''}</li>`).join('');
+  const sources = record.evidence.map((source) => {
+    const url = safeSourceUrl(source.url);
+    const title = escapeHtml(source.title);
+    const label = url
+      ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${title}</a>`
+      : title;
+    const checked = source.checkedAt
+      ? ` <span class="muted">(проверено ${escapeHtml(source.checkedAt)})</span>` : '';
+    return `<li>${label}${checked}</li>`;
+  }).join('');
 
   $('feedback').className = `feedback ${verdict.correct ? 'good' : 'bad'}`;
   $('feedback').innerHTML = [
     `<p><strong>${verdict.correct ? 'Верно' : 'Неверно'}</strong>`,
-    verdict.correct ? '' : `Правильный ответ: ${right.zh}.`,
+    verdict.correct ? '' : `Правильный ответ: ${escapeHtml(right.zh)}.`,
     '</p>',
-    record.explanation.ru ? `<p class="why">${record.explanation.ru}</p>` : '',
+    record.explanation.ru ? `<p class="why">${escapeHtml(record.explanation.ru)}</p>` : '',
     sources ? `<ul>${sources}</ul>` : '',
     record.answer.state === 'unverified'
       ? '<p class="unverified">Ответ взят из официального ключа, но ещё не перепроверен по источникам.</p>'
@@ -260,19 +367,32 @@ function answer(record, optionId) {
   $('nextButton').textContent =
     state.position + 1 < state.round.length ? 'Следующий вопрос' : 'Итоги раунда';
   $('nextButton').classList.remove('hidden');
-  $('nextButton').focus();
+  requestAnimationFrame(() => {
+    const compact = window.matchMedia?.('(max-width: 600px)').matches;
+    const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    $('feedback').focus({ preventScroll: true });
+    if (compact) $('feedback').scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'nearest' });
+  });
 }
 
 function nextQuestion() {
   if (!state.answered) return;
   state.position += 1;
+  const retryIndex = nextRetryInsertion(state.retryQueue, state.position, state.round.length);
+  if (retryIndex !== -1) {
+    const [retry] = state.retryQueue.splice(retryIndex, 1);
+    state.round.splice(state.position, 0, retry.record);
+  }
   if (state.position >= state.round.length) finishRound();
   else renderQuestion();
 }
 
 function finishRound() {
   const total = state.round.length;
+  const wrongCount = state.wrongIds.length;
   $('finalScore').textContent = `${state.correct} / ${total}`;
+  $('repeatMistakes').hidden = wrongCount === 0;
+  $('repeatMistakes').textContent = `Повторить ошибки раунда (${wrongCount})`;
   const share = total ? state.correct / total : 0;
   $('resultText').textContent = share === 1
     ? 'Весь раунд без ошибок.'
@@ -285,23 +405,18 @@ function finishRound() {
 
 /* ---------- база ---------- */
 
-function renderDatabase() {
-  const needle = $('databaseSearch').value.trim().toLocaleLowerCase('ru');
+function filteredDatabaseRows() {
   const topic = $('databaseTopic').value;
   const status = $('databaseStatus').value;
-  const rows = QUESTION_BANK.filter((record) =>
-    (!needle || record.questionRu.toLocaleLowerCase('ru').includes(needle))
+  return QUESTION_BANK.filter((record) =>
+    matchesDatabaseSearch(record, $('databaseSearch').value)
     && (!topic || record.topic === topic)
     && (!status || record.answer.state === status));
 
-  $('databaseCount').textContent = `Показано ${rows.length} из ${QUESTION_BANK.length} вопросов`;
-  $('databaseList').innerHTML = '';
-  if (!rows.length) {
-    $('databaseList').innerHTML = '<p class="empty">Ничего не найдено.</p>';
-    return;
-  }
+}
 
-  for (const record of rows.slice(0, 300)) {
+function appendDatabaseRows(rows) {
+  for (const record of rows) {
     const article = document.createElement('article');
     article.className = 'row';
     const answered = record.options.find((option) => option.id === record.answer.optionId);
@@ -310,28 +425,46 @@ function renderDatabase() {
       .map((o) => `${o.year} ${stageLabel(o.stageCode)}${o.number ? ` №${o.number}` : ''}`).join(' · ');
     article.innerHTML = [
       '<div class="row-top">',
-      `<span class="tag">${record.topic}</span>`,
+      `<span class="tag">${escapeHtml(record.topic)}</span>`,
       `<span class="tag${record.answer.state === 'verified' ? ' done' : ''}${
         record.answer.state === 'needs-review' || record.answer.state === 'conflict' ? ' review' : ''
       }">${STATUS_NAMES[record.answer.state]}</span>`,
       done ? '<span class="tag done">пройден</span>' : '',
-      record.parseWarnings?.length ? `<span class="tag warn">${record.parseWarnings.join('; ')}</span>` : '',
+      record.parseWarnings?.length ? `<span class="tag warn">${escapeHtml(record.parseWarnings.join('; '))}</span>` : '',
       '</div>',
-      `<h3>${record.questionRu}</h3>`,
-      `<div class="row-options">${record.options.map((o) => o.zh).join(' · ')}</div>`,
-      answered ? `<p class="row-answer">Ответ: ${answered.zh}</p>` : '',
-      record.explanation.ru ? `<p class="row-why">${record.explanation.ru}</p>` : '',
-      record.questionZh ? `<p class="row-zh">${record.questionZh}</p>` : '',
-      `<p class="row-zh">${appearances}</p>`,
+      `<h3>${escapeHtml(record.questionRu)}</h3>`,
+      `<div class="row-options">${record.options.map((o) => escapeHtml(o.zh)).join(' · ')}</div>`,
+      answered || record.explanation.ru ? [
+        '<details class="row-reveal"><summary>Показать ответ</summary>',
+        answered ? `<p class="row-answer">Ответ: ${escapeHtml(answered.zh)}</p>` : '',
+        record.explanation.ru ? `<p class="row-why">${escapeHtml(record.explanation.ru)}</p>` : '',
+        '</details>',
+      ].join('') : '',
+      record.questionZh ? `<p class="row-zh">${escapeHtml(record.questionZh)}</p>` : '',
+      `<p class="row-zh">${escapeHtml(appearances)}</p>`,
     ].join('');
     $('databaseList').append(article);
   }
-  if (rows.length > 300) {
-    const more = document.createElement('p');
-    more.className = 'empty';
-    more.textContent = `Показаны первые 300. Уточните поиск, чтобы увидеть остальные ${rows.length - 300}.`;
-    $('databaseList').append(more);
+}
+
+function renderDatabase(reset = true) {
+  const rows = filteredDatabaseRows();
+  if (reset) {
+    state.databasePage = 0;
+    $('databaseList').innerHTML = '';
   }
+  if (!rows.length) {
+    $('databaseCount').textContent = `Показано 0 из ${QUESTION_BANK.length} вопросов`;
+    $('databaseList').innerHTML = '<p class="empty">Ничего не найдено.</p>';
+    $('databaseMore').hidden = true;
+    return;
+  }
+  appendDatabaseRows(databasePage(rows, state.databasePage, 50));
+  state.databasePage += 1;
+  const shown = Math.min(state.databasePage * 50, rows.length);
+  $('databaseCount').textContent = `Показано ${shown} из ${rows.length} вопросов`;
+  $('databaseMore').hidden = shown >= rows.length;
+  $('databaseMore').textContent = `Показать ещё (${rows.length - shown})`;
 }
 
 function openDatabase() {
@@ -399,6 +532,7 @@ document.addEventListener('keydown', (event) => {
 
 $('themeToggle').addEventListener('click', toggleTheme);
 $('startButton').addEventListener('click', startRound);
+$('repeatMistakes').addEventListener('click', repeatMistakes);
 $('nextButton').addEventListener('click', nextQuestion);
 $('leaveRound').addEventListener('click', backToSetup);
 $('openDatabase').addEventListener('click', openDatabase);
@@ -408,33 +542,48 @@ $('backToSetup').addEventListener('click', backToSetup);
 $('databaseSearch').addEventListener('input', renderDatabase);
 $('databaseTopic').addEventListener('change', renderDatabase);
 $('databaseStatus').addEventListener('change', renderDatabase);
+$('databaseMore').addEventListener('click', () => renderDatabase(false));
 
 $('roundSize').addEventListener('change', (event) => {
   state.size = event.target.value === 'all' ? Number.MAX_SAFE_INTEGER : Number(event.target.value);
-  renderSetup();
-});
-$('onlyUncompleted').addEventListener('change', (event) => {
-  state.filters.onlyUnfinished = event.target.checked;
+  saveStudySettings();
   renderSetup();
 });
 $('onlyVerified').addEventListener('change', (event) => {
   state.filters.onlyVerified = event.target.checked;
+  saveStudySettings();
   renderSetup();
 });
-$('onlyMistakes').addEventListener('change', (event) => {
-  state.filters.onlyMistakes = event.target.checked;
+for (const input of document.querySelectorAll('input[name="studyMode"]')) {
+  input.addEventListener('change', (event) => {
+    state.filters.mode = event.target.value;
+    saveStudySettings();
+    renderSetup();
+  });
+}
+$('emptyReset').addEventListener('click', () => {
+  state.filters = defaultFilters();
+  saveStudySettings();
   renderSetup();
 });
-$('onlyDue').addEventListener('change', (event) => {
-  state.filters.onlyDue = event.target.checked;
-  renderSetup();
+$('emptyAll').addEventListener('click', () => {
+  state.filters = defaultFilters();
+  saveStudySettings();
+  startRound();
 });
 $('yearFilter').addEventListener('change', (event) => {
   state.filters.years = event.target.value ? [event.target.value] : [];
+  saveStudySettings();
   renderSetup();
 });
 $('stageFilter').addEventListener('change', (event) => {
   state.filters.stages = event.target.value ? [event.target.value] : [];
+  saveStudySettings();
+  renderSetup();
+});
+$('clearFilters').addEventListener('click', () => {
+  state.filters = defaultFilters();
+  saveStudySettings();
   renderSetup();
 });
 $('resetProgress').addEventListener('click', () => {

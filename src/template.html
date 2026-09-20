@@ -43,6 +43,17 @@
     <div class="setup">
       <h2>Проверьте свои знания</h2>
 
+      <fieldset class="mode-picker">
+        <legend>Режим</legend>
+        <div class="mode-options">
+          <label class="mode-option"><input type="radio" name="studyMode" value="all" checked><span>Все вопросы</span></label>
+          <label class="mode-option"><input type="radio" name="studyMode" value="new"><span>Новые</span></label>
+          <label class="mode-option"><input type="radio" name="studyMode" value="mistakes"><span>Ошибки</span></label>
+          <label class="mode-option"><input type="radio" name="studyMode" value="due"><span>Повторение</span></label>
+        </div>
+        <p class="mode-help" id="modeHelp"></p>
+      </fieldset>
+
       <details class="settings" id="settingsPanel">
         <summary>
           <span class="gear" aria-hidden="true">⚙</span>
@@ -70,29 +81,30 @@
                 <option value="all">Все доступные</option>
               </select>
             </label>
-            <div class="toggles">
-              <label class="toggle"><input id="onlyUncompleted" type="checkbox">Только непройденные</label>
-              <label class="toggle"><input id="onlyVerified" type="checkbox">Только проверенные</label>
-              <label class="toggle"><input id="onlyMistakes" type="checkbox">Только с ошибками</label>
-              <label class="toggle"><input id="onlyDue" type="checkbox">Пора повторить</label>
-            </div>
-            <p class="subhead">«Пора повторить» — интервальное повторение: чем увереннее отвечаете,
-              тем реже вопрос возвращается; ошибка — вопрос вернётся почти сразу.</p>
+            <label class="toggle" id="verifiedFilterWrap" hidden><input id="onlyVerified" type="checkbox">Только проверенные</label>
           </div>
+          <button class="button ghost" id="clearFilters" type="button">Сбросить фильтры</button>
         </div>
       </details>
 
-      <p class="notice" id="eligibleNotice"></p>
-      <div class="actions">
+      <p class="notice" id="eligibleNotice" aria-live="polite"></p>
+      <div class="empty-actions" id="emptyActions" hidden>
+        <button class="button alt" id="emptyReset" type="button">Сбросить фильтры</button>
+        <button class="button" id="emptyAll" type="button">Начать обычный раунд</button>
+      </div>
+      <div class="actions launch-actions">
+        <button class="button" id="startButton" type="button">Начать раунд</button>
+        <button class="button alt" id="openDatabase" type="button">Вопросы в базе</button>
+      </div>
+      <details class="progress-tools">
+        <summary>Управление прогрессом</summary>
         <div class="actions-left">
-          <button class="button alt" id="openDatabase" type="button">Вопросы в базе</button>
           <button class="button ghost" id="exportProgress" type="button">Сохранить прогресс</button>
           <button class="button ghost" id="importProgress" type="button">Загрузить прогресс</button>
           <input id="importProgressFile" type="file" accept="application/json" hidden>
           <button class="button ghost danger" id="resetProgress" type="button">Сбросить прогресс</button>
         </div>
-        <button class="button" id="startButton" type="button">Начать раунд</button>
-      </div>
+      </details>
       <p class="hint">Enter — начать раунд</p>
     </div>
   </section>
@@ -110,7 +122,7 @@
       </div>
       <h2 class="question" id="questionText"></h2>
       <div class="options" id="options" role="group" aria-label="Варианты ответа"></div>
-      <div class="feedback hidden" id="feedback" role="status"></div>
+      <div class="feedback hidden" id="feedback" role="status" tabindex="-1"></div>
       <div class="next-row">
         <button class="button ghost" id="leaveRound" type="button">Закончить раунд</button>
         <button class="button hidden" id="nextButton" type="button">Следующий вопрос</button>
@@ -125,6 +137,7 @@
       <div class="score" id="finalScore"></div>
       <p class="result-text" id="resultText"></p>
       <div class="actions centered">
+        <button class="button alt" id="repeatMistakes" type="button" hidden>Повторить ошибки раунда</button>
         <button class="button alt" id="resultsDatabase" type="button">Вопросы в базе</button>
         <button class="button" id="backToSetup" type="button">К настройкам</button>
       </div>
@@ -141,7 +154,7 @@
         <button class="button alt" id="closeDatabase" type="button">К настройкам</button>
       </div>
       <div class="database-bar">
-        <input class="search" id="databaseSearch" placeholder="Поиск по русскому вопросу">
+        <input class="search" id="databaseSearch" placeholder="Вопрос, ответ, тема или пояснение">
         <select id="databaseTopic"><option value="">Все темы</option></select>
         <select id="databaseStatus">
           <option value="">Любой статус</option>
@@ -152,6 +165,7 @@
         </select>
       </div>
       <div class="db-list" id="databaseList"></div>
+      <button class="button alt database-more" id="databaseMore" type="button" hidden>Показать ещё</button>
       <p class="hint">/ — поиск · Esc — к настройкам</p>
     </div>
   </section>
