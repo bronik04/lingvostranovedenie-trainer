@@ -40,6 +40,7 @@ const state = {
   wrongIds: [],
   position: 0,
   correct: 0,
+  initialRoundLength: 0,
   answered: false,
   retryQueue: [],
   retriedIds: new Set(),
@@ -254,6 +255,7 @@ function startRoundWith(round) {
   state.wrongIds = [];
   state.position = 0;
   state.correct = 0;
+  state.initialRoundLength = round.length;
   state.retryQueue = [];
   state.retriedIds = new Set();
   show('quiz');
@@ -388,9 +390,9 @@ function nextQuestion() {
 }
 
 function finishRound() {
-  const total = state.round.length;
+  const total = state.initialRoundLength;
   const wrongCount = state.wrongIds.length;
-  $('finalScore').textContent = `${state.correct} / ${total}`;
+  $('finalScore').textContent = roundScore(state.correct, total);
   $('repeatMistakes').hidden = wrongCount === 0;
   $('repeatMistakes').textContent = `Повторить ошибки раунда (${wrongCount})`;
   const share = total ? state.correct / total : 0;

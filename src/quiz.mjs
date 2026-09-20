@@ -99,6 +99,10 @@ export function nextRetryInsertion(queue, position, roundLength) {
   return position >= roundLength && queue.length ? 0 : -1;
 }
 
+export function roundScore(correct, initialRoundLength) {
+  return `${correct} / ${initialRoundLength}`;
+}
+
 export function scheduleReview(previous, correct, now = Date.now()) {
   const box = correct ? Math.min((previous?.box ?? 0) + 1, REVIEW_INTERVALS_DAYS.length - 1) : 0;
   return { box, dueAt: now + REVIEW_INTERVALS_DAYS[box] * DAY_MS };

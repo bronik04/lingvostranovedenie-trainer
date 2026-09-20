@@ -253,3 +253,7 @@ test('повтор не добавляется второй раз', () => {
   assert.equal(second.queue.length, 1);
   assert.equal(second.queue[0].afterPosition, 4);
 });
+
+test('итог раунда не увеличивает число выбранных вопросов из-за повторов', () => {
+  assert.equal(quiz.roundScore(10, 10), '10 / 10');
+});

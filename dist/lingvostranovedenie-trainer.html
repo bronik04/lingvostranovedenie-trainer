@@ -139,7 +139,7 @@
       <div class="actions centered">
         <button class="button alt" id="repeatMistakes" type="button" hidden>Повторить ошибки раунда</button>
         <button class="button alt" id="resultsDatabase" type="button">Вопросы в базе</button>
-        <button class="button" id="backToSetup" type="button">К настройкам</button>
+        <button class="button" id="backToSetup" type="button">На главную</button>
       </div>
     </div>
   </section>
@@ -151,7 +151,7 @@
           <h2>Вопросы в базе</h2>
           <p class="subhead" id="databaseCount"></p>
         </div>
-        <button class="button alt" id="closeDatabase" type="button">К настройкам</button>
+        <button class="button alt" id="closeDatabase" type="button">На главную</button>
       </div>
       <div class="database-bar">
         <input class="search" id="databaseSearch" placeholder="Вопрос, ответ, тема или пояснение">
@@ -166,7 +166,7 @@
       </div>
       <div class="db-list" id="databaseList"></div>
       <button class="button alt database-more" id="databaseMore" type="button" hidden>Показать ещё</button>
-      <p class="hint">/ — поиск · Esc — к настройкам</p>
+      <p class="hint">/ — поиск · Esc — на главную</p>
     </div>
   </section>
 
@@ -274,6 +274,10 @@ function nextRetryInsertion(queue, position, roundLength) {
   const dueIndex = queue.findIndex((entry) => entry.afterPosition <= position);
   if (dueIndex !== -1) return dueIndex;
   return position >= roundLength && queue.length ? 0 : -1;
+}
+
+function roundScore(correct, initialRoundLength) {
+  return `${correct} / ${initialRoundLength}`;
 }
 
 function scheduleReview(previous, correct, now = Date.now()) {
@@ -393,6 +397,7 @@ const state = {
   wrongIds: [],
   position: 0,
   correct: 0,
+  initialRoundLength: 0,
   answered: false,
   retryQueue: [],
   retriedIds: new Set(),
@@ -607,6 +612,7 @@ function startRoundWith(round) {
   state.wrongIds = [];
   state.position = 0;
   state.correct = 0;
+  state.initialRoundLength = round.length;
   state.retryQueue = [];
   state.retriedIds = new Set();
   show('quiz');
@@ -741,9 +747,9 @@ function nextQuestion() {
 }
 
 function finishRound() {
-  const total = state.round.length;
+  const total = state.initialRoundLength;
   const wrongCount = state.wrongIds.length;
-  $('finalScore').textContent = `${state.correct} / ${total}`;
+  $('finalScore').textContent = roundScore(state.correct, total);
   $('repeatMistakes').hidden = wrongCount === 0;
   $('repeatMistakes').textContent = `Повторить ошибки раунда (${wrongCount})`;
   const share = total ? state.correct / total : 0;
