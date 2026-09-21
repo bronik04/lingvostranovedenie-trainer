@@ -12,6 +12,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from minify import minify_css, minify_js
 from normalize import completeness_errors, fragment_pairs, language_errors
 from taxonomy import TOPICS
+from authored import validate_authored
 
 TARGET = ROOT / 'dist/lingvostranovedenie-trainer.html'
 
@@ -23,9 +24,14 @@ def serialize_bank(bank: list[dict]) -> str:
 
 def validate(bank: list[dict]) -> list[str]:
     errors: list[str] = []
+    olympiad_bank = [record for record in bank if record.get('origin') is None]
+    authored_bank = [record for record in bank if record.get('origin') == 'addition']
+    errors += validate_authored(authored_bank, olympiad_bank)
     seen: set[str] = set()
     for record in bank:
         where = record['id']
+        if record.get('origin') not in {None, 'addition'}:
+            errors.append(f'{where}: неизвестное происхождение вопроса')
         if where in seen:
             errors.append(f'{where}: повторяющийся id')
         seen.add(where)

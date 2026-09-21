@@ -12,6 +12,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 
 from normalize import (completeness_errors, fragment_pairs, language_errors, normalize_text,
                        option_key, tidy)
+from authored import load_authored
 
 STAGE_ORDER = {'pri': 0, 'shk': 1, 'mun': 2, 'reg': 3, 'zak': 4}
 
@@ -327,6 +328,8 @@ def merge(raw: list[dict], translations: dict[str, str],
         record['explanation'] = {'ru': verified['explanation']}
         record['evidence'] = verified['evidence']
         record['wave'] = verified['wave']
+
+    bank.extend(load_authored(ROOT / 'data/authored/questions.json', bank))
 
     bank.sort(key=lambda record: record['id'])
     report['fragments'] = fragment_pairs([(r['id'], r['questionRu']) for r in bank])
