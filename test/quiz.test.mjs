@@ -3,7 +3,7 @@ import test from 'node:test';
 import * as quiz from '../src/quiz.mjs';
 import {
   buildRound, eligible, escapeHtml, grade, isValidProgress, labelledOptions,
-  matchingOccurrence, safeSourceUrl, scheduleReview,
+  matchingOccurrence, recordOrigin, safeSourceUrl, scheduleReview,
 } from '../src/quiz.mjs';
 
 const record = (id, overrides = {}) => ({
@@ -17,6 +17,13 @@ const record = (id, overrides = {}) => ({
   occurrences: [{ year: '2015-16', stage: 'школьный', stageCode: 'shk', number: 56 }],
   answer: { optionId: 'o2', state: 'verified' },
   ...overrides,
+});
+
+test('происхождение отличает дополнение от олимпиадного вопроса', () => {
+  assert.deepEqual(recordOrigin(record('olympiad')), { label: 'Олимпиадная база', isAddition: false });
+  assert.deepEqual(recordOrigin(record('addition', { origin: 'addition' })), {
+    label: 'Дополнение к олимпиадной базе', isAddition: true,
+  });
 });
 
 const NO_FILTERS = {

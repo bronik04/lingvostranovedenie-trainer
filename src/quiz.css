@@ -299,6 +299,10 @@ select, .search {
 .tag.done { background: var(--ok-bg); color: var(--green); }
 .tag.review { background: var(--bad-bg); color: var(--red); }
 .tag.warn { background: var(--warn-bg); color: var(--warn-ink); }
+.pill.origin, .tag.origin { background: var(--note-bg); color: var(--blue); border-color: var(--line); }
+.row-sources-title { margin: 10px 0 0; font-size: .84rem; font-weight: 800; }
+.row-sources { margin: 5px 0 0; padding-left: 18px; font-size: .84rem; }
+.row-sources a { color: var(--blue); }
 .empty { padding: 24px; text-align: center; color: var(--muted); }
 .database-more { display: block; width: 100%; margin-top: 14px; }
 

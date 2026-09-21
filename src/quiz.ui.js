@@ -273,11 +273,16 @@ function renderQuestion() {
 
   state.answered = false;
   const first = matchingOccurrence(record, state.filters);
+  const origin = recordOrigin(record);
   $('progressLabel').textContent = `Вопрос ${state.position + 1} из ${state.round.length}`;
   $('scoreLabel').textContent = `Счёт: ${state.correct}`;
   $('progressFill').style.width = `${(state.position / state.round.length) * 100}%`;
   $('topicLabel').textContent = record.topic;
-  $('sourceLabel').textContent = `${first.year}, ${stageLabel(first.stageCode)}${first.number ? ` · №${first.number}` : ''}`;
+  $('sourceLabel').textContent = origin.isAddition
+    ? 'Проверенное дополнение'
+    : `${first.year}, ${stageLabel(first.stageCode)}${first.number ? ` · №${first.number}` : ''}`;
+  $('originPill').textContent = origin.label;
+  $('originPill').hidden = !origin.isAddition;
   $('unverifiedPill').hidden = record.answer.state !== 'unverified';
   $('questionText').textContent = record.questionRu;
 
@@ -343,16 +348,7 @@ function answer(record, optionId) {
   }
 
   const right = record.options.find((option) => option.id === verdict.answerOptionId);
-  const sources = record.evidence.map((source) => {
-    const url = safeSourceUrl(source.url);
-    const title = escapeHtml(source.title);
-    const label = url
-      ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${title}</a>`
-      : title;
-    const checked = source.checkedAt
-      ? ` <span class="muted">(проверено ${escapeHtml(source.checkedAt)})</span>` : '';
-    return `<li>${label}${checked}</li>`;
-  }).join('');
+  const sources = evidenceList(record.evidence);
 
   $('feedback').className = `feedback ${verdict.correct ? 'good' : 'bad'}`;
   $('feedback').innerHTML = [
@@ -375,6 +371,19 @@ function answer(record, optionId) {
     $('feedback').focus({ preventScroll: true });
     if (compact) $('feedback').scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'nearest' });
   });
+}
+
+function evidenceList(evidence = []) {
+  return evidence.map((source) => {
+    const url = safeSourceUrl(source.url);
+    const title = escapeHtml(source.title);
+    const label = url
+      ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${title}</a>`
+      : title;
+    const checked = source.checkedAt
+      ? ` <span class="muted">(проверено ${escapeHtml(source.checkedAt)})</span>` : '';
+    return `<li>${label}${checked}</li>`;
+  }).join('');
 }
 
 function nextQuestion() {
@@ -423,11 +432,14 @@ function appendDatabaseRows(rows) {
     article.className = 'row';
     const answered = record.options.find((option) => option.id === record.answer.optionId);
     const done = state.progress[record.id]?.completed;
+    const origin = recordOrigin(record);
     const appearances = record.occurrences
       .map((o) => `${o.year} ${stageLabel(o.stageCode)}${o.number ? ` №${o.number}` : ''}`).join(' · ');
+    const sources = evidenceList(record.evidence);
     article.innerHTML = [
       '<div class="row-top">',
       `<span class="tag">${escapeHtml(record.topic)}</span>`,
+      origin.isAddition ? `<span class="tag origin">${origin.label}</span>` : '',
       `<span class="tag${record.answer.state === 'verified' ? ' done' : ''}${
         record.answer.state === 'needs-review' || record.answer.state === 'conflict' ? ' review' : ''
       }">${STATUS_NAMES[record.answer.state]}</span>`,
@@ -440,10 +452,11 @@ function appendDatabaseRows(rows) {
         '<details class="row-reveal"><summary>Показать ответ</summary>',
         answered ? `<p class="row-answer">Ответ: ${escapeHtml(answered.zh)}</p>` : '',
         record.explanation.ru ? `<p class="row-why">${escapeHtml(record.explanation.ru)}</p>` : '',
+        sources ? `<p class="row-sources-title">Источники</p><ul class="row-sources">${sources}</ul>` : '',
         '</details>',
       ].join('') : '',
       record.questionZh ? `<p class="row-zh">${escapeHtml(record.questionZh)}</p>` : '',
-      `<p class="row-zh">${escapeHtml(appearances)}</p>`,
+      appearances ? `<p class="row-zh">${escapeHtml(appearances)}</p>` : '',
     ].join('');
     $('databaseList').append(article);
   }

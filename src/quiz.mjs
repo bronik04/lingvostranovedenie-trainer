@@ -43,6 +43,12 @@ export function safeSourceUrl(value) {
   }
 }
 
+export function recordOrigin(record) {
+  return record.origin === 'addition'
+    ? { label: 'Дополнение к олимпиадной базе', isAddition: true }
+    : { label: 'Олимпиадная база', isAddition: false };
+}
+
 export function matchesDatabaseSearch(record, query) {
   const needle = String(query ?? '').trim().toLocaleLowerCase('ru');
   if (!needle) return true;
