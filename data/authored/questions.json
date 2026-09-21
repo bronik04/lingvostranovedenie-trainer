@@ -1023,5 +1023,155 @@
       }
     ],
     "derivedFrom": "2025-26-shk-29"
+  },
+  {
+    "id": "addition-026", "origin": "addition", "topic": "География и административное устройство", "questionRu": "Сколько административных единиц провинциального уровня насчитывается в КНР?", "questionZh": null,
+    "options": [{"id":"o1","zh":"34 个"},{"id":"o2","zh":"31 个"},{"id":"o3","zh":"32 个"},{"id":"o4","zh":"36 个"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"В КНР насчитывается 34 административные единицы провинциального уровня. В это число входят провинции, автономные районы, города центрального подчинения и специальные административные районы. Поэтому следует выбрать 34 个."},
+    "evidence": [{"title":"中华人民共和国行政区划 — 中国政府网","url":"https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-027", "origin": "addition", "topic": "География и административное устройство", "questionRu": "Сколько автономных районов входит в административное деление КНР?", "questionZh": null,
+    "options": [{"id":"o1","zh":"5 个"},{"id":"o2","zh":"4 个"},{"id":"o3","zh":"6 个"},{"id":"o4","zh":"8 个"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"В КНР пять автономных районов. Они относятся к единицам провинциального уровня наряду с провинциями и городами центрального подчинения. Поэтому верный ответ — 5 个."},
+    "evidence": [{"title":"中华人民共和国行政区划 — 中国政府网","url":"https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-028", "origin": "addition", "topic": "География и административное устройство", "questionRu": "Сколько городов центрального подчинения указано в административном делении КНР?", "questionZh": null,
+    "options": [{"id":"o1","zh":"4 个"},{"id":"o2","zh":"2 个"},{"id":"o3","zh":"5 个"},{"id":"o4","zh":"7 个"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"В административном делении КНР четыре города центрального подчинения. Они имеют тот же уровень, что и провинции. Поэтому нужно выбрать 4 个."},
+    "evidence": [{"title":"中华人民共和国行政区划 — 中国政府网","url":"https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-029", "origin": "addition", "topic": "География и административное устройство", "questionRu": "Какой из вариантов является специальным административным районом КНР?", "questionZh": null,
+    "options": [{"id":"o1","zh":"香港"},{"id":"o2","zh":"深圳"},{"id":"o3","zh":"杭州"},{"id":"o4","zh":"武汉"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Гонконг является специальным административным районом КНР. В источнике также назван Макао, тогда как остальные варианты — города. Поэтому правильный вариант — 香港."},
+    "evidence": [{"title":"中华人民共和国行政区划 — 中国政府网","url":"https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-030", "origin": "addition", "topic": "География и административное устройство", "questionRu": "Какой из вариантов является автономным районом КНР?", "questionZh": null,
+    "options": [{"id":"o1","zh":"广西壮族自治区"},{"id":"o2","zh":"河南省"},{"id":"o3","zh":"上海市"},{"id":"o4","zh":"香港特别行政区"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Гуанси-Чжуанский автономный район входит в пятёрку автономных районов КНР. Хэнань является провинцией, Шанхай — городом центрального подчинения, а Гонконг — специальным административным районом. Поэтому следует выбрать 广西壮族自治区."},
+    "evidence": [{"title":"民族自治地方 — 国家民族事务委员会","url":"https://www.neac.gov.cn/seac/ztzl/mzzzdf/index.shtml","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-031", "origin": "addition", "topic": "География и административное устройство", "questionRu": "Как называется столица КНР по-китайски?", "questionZh": null,
+    "options": [{"id":"o1","zh":"北京"},{"id":"o2","zh":"上海"},{"id":"o3","zh":"广州"},{"id":"o4","zh":"重庆"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Столица КНР — Пекин. Его китайское название записывается 北京. Поэтому верный вариант — 北京."},
+    "evidence": [{"title":"中华人民共和国行政区划 — 中国政府网","url":"https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-032", "origin": "addition", "topic": "География и административное устройство", "questionRu": "Какому административному уровню соответствует автономный район?", "questionZh": null,
+    "options": [{"id":"o1","zh":"省级"},{"id":"o2","zh":"地级"},{"id":"o3","zh":"县级"},{"id":"o4","zh":"乡级"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Автономный район соответствует уровню провинции. Автономная префектура соответствует городскому уровню, а автономный уезд — уездному. Поэтому нужно выбрать 省级."},
+    "evidence": [{"title":"民族区域自治制度 — 中国政府网","url":"https://www.locpg.gov.cn/zggq/2014-01/04/c_125956346.htm","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-033", "origin": "addition", "topic": "География и административное устройство", "questionRu": "Какой объект включён в официальный список культурного наследия Китая?", "questionZh": null,
+    "options": [{"id":"o1","zh":"长城"},{"id":"o2","zh":"黄果树瀑布"},{"id":"o3","zh":"洞庭湖"},{"id":"o4","zh":"塔克拉玛干沙漠"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Великая китайская стена, 长城, включена в официальный список культурного наследия Китая. В том же списке есть Могао и мавзолей Цинь Шихуанди. Поэтому правильный вариант — 长城."},
+    "evidence": [{"title":"中国世界文化遗产名录 — 国家文物局","url":"https://www.ncha.gov.cn/col/col2262/index.html","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-034", "origin": "addition", "topic": "История и государство", "questionRu": "Какой орган принимает решение о кандидатуре премьера Государственного совета по представлению председателя КНР?", "questionZh": null,
+    "options": [{"id":"o1","zh":"全国人民代表大会"},{"id":"o2","zh":"国务院"},{"id":"o3","zh":"最高人民法院"},{"id":"o4","zh":"中国人民政治协商会议"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Кандидатуру премьера Государственного совета вносит председатель КНР. Решение по ней принимает Всекитайское собрание народных представителей. Поэтому следует выбрать 全国人民代表大会."},
+    "evidence": [{"title":"全国人民代表大会 — 中国人大网","url":"https://www.npc.gov.cn/zgrdw/npc/gjjg/node_506.htm","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-035", "origin": "addition", "topic": "История и государство", "questionRu": "Какой орган избирает председателя КНР?", "questionZh": null,
+    "options": [{"id":"o1","zh":"全国人民代表大会"},{"id":"o2","zh":"国务院"},{"id":"o3","zh":"中央军事委员会"},{"id":"o4","zh":"最高人民检察院"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Председателя и заместителя председателя КНР избирает Всекитайское собрание народных представителей. Это относится к его конституционным полномочиям. Поэтому правильный вариант — 全国人民代表大会."},
+    "evidence": [{"title":"全国人民代表大会简介 — 中国人大网","url":"https://www.npc.gov.cn/zgrdw/pc/XWZX_1/6/200702/t20070202_1796.htm","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-036", "origin": "addition", "topic": "История и государство", "questionRu": "Как называется высший судебный орган КНР?", "questionZh": null,
+    "options": [{"id":"o1","zh":"最高人民法院"},{"id":"o2","zh":"最高人民检察院"},{"id":"o3","zh":"国务院"},{"id":"o4","zh":"全国人民代表大会"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Высшим судебным органом КНР является Верховный народный суд. По-китайски его название — 最高人民法院. Поэтому нужно выбрать 最高人民法院."},
+    "evidence": [{"title":"全国人民代表大会 — 中国人大网","url":"https://www.npc.gov.cn/zgrdw/npc/gjjg/node_506.htm","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-037", "origin": "addition", "topic": "История и государство", "questionRu": "На какой срок избирается очередной созыв Всекитайского собрания народных представителей?", "questionZh": null,
+    "options": [{"id":"o1","zh":"5 年"},{"id":"o2","zh":"4 年"},{"id":"o3","zh":"6 年"},{"id":"o4","zh":"7 年"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Срок полномочий каждого созыва Всекитайского собрания народных представителей составляет пять лет. Сессия обычно проводится один раз в год. Поэтому верный вариант — 5 年."},
+    "evidence": [{"title":"全国人民代表大会简介 — 中国人大网","url":"https://www.npc.gov.cn/zgrdw/pc/XWZX_1/6/200702/t20070202_1796.htm","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-038", "origin": "addition", "topic": "История и государство", "questionRu": "Как называется высший орган государственного надзора за соблюдением законов в КНР?", "questionZh": null,
+    "options": [{"id":"o1","zh":"最高人民检察院"},{"id":"o2","zh":"最高人民法院"},{"id":"o3","zh":"国务院"},{"id":"o4","zh":"中央军事委员会"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Верховная народная прокуратура является высшим органом прокуратуры КНР. Её китайское название — 最高人民检察院. Поэтому следует выбрать 最高人民检察院."},
+    "evidence": [{"title":"全国人民代表大会 — 中国人大网","url":"https://www.npc.gov.cn/zgrdw/npc/gjjg/node_506.htm","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-039", "origin": "addition", "topic": "Общество: население, этносы и религии", "questionRu": "Какие три уровня включают национальные автономные территории КНР?", "questionZh": null,
+    "options": [{"id":"o1","zh":"自治区、自治州、自治县"},{"id":"o2","zh":"省、市、县"},{"id":"o3","zh":"直辖市、区、镇"},{"id":"o4","zh":"特别行政区、盟、旗"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Национальные автономные территории КНР делятся на автономные районы, автономные префектуры и автономные уезды. Эти три уровня закреплены в официальном описании системы. Поэтому правильный вариант — 自治区、自治州、自治县."},
+    "evidence": [{"title":"中国的少数民族政策及其实践 — 中国政府网","url":"https://big5.www.gov.cn/gate/big5/www.gov.cn/gongbao/content/2000/content_82419.htm","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-040", "origin": "addition", "topic": "Общество: население, этносы и религии", "questionRu": "Какой из вариантов не является национальной автономной территорией?", "questionZh": null,
+    "options": [{"id":"o1","zh":"上海市"},{"id":"o2","zh":"内蒙古自治区"},{"id":"o3","zh":"延边朝鲜族自治州"},{"id":"o4","zh":"民和回族土族自治县"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Шанхай — город центрального подчинения, а не национальная автономная территория. Остальные варианты приведены в официальном перечне автономных территорий. Поэтому нужно выбрать 上海市."},
+    "evidence": [{"title":"民族自治地方 — 国家民族事务委员会","url":"https://www.neac.gov.cn/seac/ztzl/mzzzdf/index.shtml","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-041", "origin": "addition", "topic": "Общество: население, этносы и религии", "questionRu": "Какие органы образуют органы самоуправления национальной автономной территории?", "questionZh": null,
+    "options": [{"id":"o1","zh":"人民代表大会和人民政府"},{"id":"o2","zh":"法院和检察院"},{"id":"o3","zh":"学校和医院"},{"id":"o4","zh":"党委和政协"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Органами самоуправления национальной автономной территории являются народное собрание представителей и народное правительство. В китайской формулировке это 人民代表大会和人民政府. Поэтому верный вариант — 人民代表大会和人民政府."},
+    "evidence": [{"title":"民族区域自治制度 — 中国政府网","url":"https://www.locpg.gov.cn/zggq/2014-01/04/c_125956346.htm","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-042", "origin": "addition", "topic": "Общество: население, этносы и религии", "questionRu": "Сколько этнических групп официально признано в КНР?", "questionZh": null,
+    "options": [{"id":"o1","zh":"56 个"},{"id":"o2","zh":"50 个"},{"id":"o3","zh":"55 个"},{"id":"o4","zh":"60 个"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"В КНР официально признано 56 этнических групп. Ханьцы составляют большинство, а остальные 55 групп называют национальными меньшинствами. Поэтому следует выбрать 56 个."},
+    "evidence": [{"title":"担负起铸牢中华民族共同体意识的时代使命 — 国家民族事务委员会","url":"https://www.neac.gov.cn/seac/xwzx/202205/1157489.shtml","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-043", "origin": "addition", "topic": "Культура, традиции и праздники", "questionRu": "На какой день лунного календаря приходится Праздник весны?", "questionZh": null,
+    "options": [{"id":"o1","zh":"正月初一"},{"id":"o2","zh":"正月十五"},{"id":"o3","zh":"五月初五"},{"id":"o4","zh":"八月十五"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Праздник весны, 春节, приходится на первый день первого лунного месяца. По-китайски эта дата записывается 正月初一. Поэтому правильный вариант — 正月初一."},
+    "evidence": [{"title":"中国非物质文化遗产的特性 — 中国人大网","url":"https://www.npc.gov.cn/WZWSREL3pncmR3Ly9ucGMvLy8vL3hpbndlbi9yZGx0L3NkLzIwMDgtMTEvMTMvY29udGVudF8xNDU4MzMzLmh0bWw%3D%3D","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-044", "origin": "addition", "topic": "Культура, традиции и праздники", "questionRu": "На какой день лунного календаря приходится Праздник фонарей?", "questionZh": null,
+    "options": [{"id":"o1","zh":"正月十五"},{"id":"o2","zh":"正月初一"},{"id":"o3","zh":"五月初五"},{"id":"o4","zh":"七月初七"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Праздник фонарей, 元宵节, отмечают в пятнадцатый день первого лунного месяца. Эта дата записывается 正月十五. Поэтому нужно выбрать 正月十五."},
+    "evidence": [{"title":"中国非物质文化遗产的特性 — 中国人大网","url":"https://www.npc.gov.cn/WZWSREL3pncmR3Ly9ucGMvLy8vL3hpbndlbi9yZGx0L3NkLzIwMDgtMTEvMTMvY29udGVudF8xNDU4MzMzLmh0bWw%3D%3D","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-045", "origin": "addition", "topic": "Культура, традиции и праздники", "questionRu": "На какой день лунного календаря приходится праздник Дуаньу?", "questionZh": null,
+    "options": [{"id":"o1","zh":"五月初五"},{"id":"o2","zh":"正月十五"},{"id":"o3","zh":"八月十五"},{"id":"o4","zh":"腊月三十"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Праздник Дуаньу, 端午节, отмечают в пятый день пятого лунного месяца. По-китайски эта дата записывается 五月初五. Поэтому верный вариант — 五月初五."},
+    "evidence": [{"title":"中国非物质文化遗产的特性 — 中国人大网","url":"https://www.npc.gov.cn/WZWSREL3pncmR3Ly9ucGMvLy8vL3hpbndlbi9yZGx0L3NkLzIwMDgtMTEvMTMvY29udGVudF8xNDU4MzMzLmh0bWw%3D%3D","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-046", "origin": "addition", "topic": "Культура, традиции и праздники", "questionRu": "Какой праздник указан в перечне национального нематериального культурного наследия наряду с Чуньцзе и Чжунцю?", "questionZh": null,
+    "options": [{"id":"o1","zh":"重阳节"},{"id":"o2","zh":"圣诞节"},{"id":"o3","zh":"感恩节"},{"id":"o4","zh":"复活节"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Праздник двойной девятки, 重阳节, внесён в перечень национального нематериального культурного наследия. Министерство культуры и туризма перечисляет его вместе с Чуньцзе, Юаньсяо, Цинмином, Дуаньу и Чжунцю. Поэтому следует выбрать 重阳节."},
+    "evidence": [{"title":"文化和旅游部关于传统节日保护的答复 — 文化和旅游部","url":"https://zwgk.mct.gov.cn/zfxxgkml/zhgl/jytadf/202412/t20241224_957286.html","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-047", "origin": "addition", "topic": "Экономика, образование, наука и спорт", "questionRu": "Какая валюта является законным платёжным средством КНР?", "questionZh": null,
+    "options": [{"id":"o1","zh":"人民币"},{"id":"o2","zh":"美元"},{"id":"o3","zh":"欧元"},{"id":"o4","zh":"日元"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Законным платёжным средством КНР является жэньминьби. Правила управления жэньминьби прямо называют его законной валютой страны. Поэтому правильный вариант — 人民币."},
+    "evidence": [{"title":"中华人民共和国人民币管理条例 — 中国人民银行","url":"https://yinchuan.pbc.gov.cn/eportal/fileDir/image_public/UserFiles/yinchuan/upload/File/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E4%BA%BA%E6%B0%91%E5%B8%81%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B.pdf","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-048", "origin": "addition", "topic": "Экономика, образование, наука и спорт", "questionRu": "Как называется основная единица жэньминьби?", "questionZh": null,
+    "options": [{"id":"o1","zh":"元"},{"id":"o2","zh":"角"},{"id":"o3","zh":"分"},{"id":"o4","zh":"两"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Основная единица жэньминьби называется юань, 元. Цзяо и фэнь являются более мелкими единицами. Поэтому нужно выбрать 元."},
+    "evidence": [{"title":"中华人民共和国人民币管理条例 — 中国人民银行","url":"https://yinchuan.pbc.gov.cn/eportal/fileDir/image_public/UserFiles/yinchuan/upload/File/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E4%BA%BA%E6%B0%91%E5%B8%81%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B.pdf","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-049", "origin": "addition", "topic": "Экономика, образование, наука и спорт", "questionRu": "Сколько цзяо составляет один юань?", "questionZh": null,
+    "options": [{"id":"o1","zh":"10 角"},{"id":"o2","zh":"5 角"},{"id":"o3","zh":"50 角"},{"id":"o4","zh":"100 角"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Один юань равен десяти цзяо. Цзяо, в свою очередь, делится на фэни. Поэтому правильный вариант — 10 角."},
+    "evidence": [{"title":"中华人民共和国人民币管理条例 — 中国人民银行","url":"https://yinchuan.pbc.gov.cn/eportal/fileDir/image_public/UserFiles/yinchuan/upload/File/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E4%BA%BA%E6%B0%91%E5%B8%81%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B.pdf","checkedAt":"2026-09-21","authority":"official"}]
+  },
+  {
+    "id": "addition-050", "origin": "addition", "topic": "Экономика, образование, наука и спорт", "questionRu": "Какой орган отвечает за выпуск жэньминьби?", "questionZh": null,
+    "options": [{"id":"o1","zh":"中国人民银行"},{"id":"o2","zh":"财政部"},{"id":"o3","zh":"商务部"},{"id":"o4","zh":"国家税务总局"}], "answer": {"optionId":"o1","state":"verified"},
+    "explanation": {"ru":"Жэньминьби выпускает Народный банк Китая. В правилах управления валютой он назван органом, который организует их исполнение. Поэтому следует выбрать 中国人民银行."},
+    "evidence": [{"title":"中华人民共和国人民币管理条例 — 中国人民银行","url":"https://yinchuan.pbc.gov.cn/eportal/fileDir/image_public/UserFiles/yinchuan/upload/File/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E4%BA%BA%E6%B0%91%E5%B8%81%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B.pdf","checkedAt":"2026-09-21","authority":"official"}]
   }
 ]
