@@ -183,6 +183,19 @@ test('фильтры по теме, году и этапу складывают�
   assert.deepEqual(eligible(bank, { ...NO_FILTERS, stages: ['reg'] }, {}).map((r) => r.id), ['c']);
 });
 
+test('дополнение входит в обычный раунд, но не подменяет олимпийский фильтр', () => {
+  const addition = record('addition', { origin: 'addition', occurrences: [] });
+  assert.deepEqual(eligible([addition], NO_FILTERS, {}).map((item) => item.id), ['addition']);
+  assert.deepEqual(
+    eligible([addition], { ...NO_FILTERS, years: ['2015-16'] }, {}).map((item) => item.id),
+    [],
+  );
+  assert.deepEqual(
+    eligible([addition], { ...NO_FILTERS, stages: ['shk'] }, {}).map((item) => item.id),
+    [],
+  );
+});
+
 test('год и этап должны относиться к одному появлению вопроса', () => {
   const item = record('a', { occurrences: [
     { year: '2015-16', stageCode: 'reg' },

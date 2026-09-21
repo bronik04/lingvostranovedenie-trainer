@@ -122,7 +122,9 @@ export function eligible(bank, filters, progress, now = Date.now()) {
     if (filters.mode === 'mistakes' && progress[record.id]?.lastCorrect !== false) return false;
     if (filters.mode === 'due' && (!progress[record.id]?.completed || progress[record.id].dueAt > now)) return false;
     if (filters.topics.length && !filters.topics.includes(record.topic)) return false;
-    if (!matchingOccurrence(record, filters)) return false;
+    const isAddition = record.origin === 'addition';
+    if (isAddition && (filters.years.length || filters.stages.length)) return false;
+    if (!isAddition && !matchingOccurrence(record, filters)) return false;
     return true;
   });
 }

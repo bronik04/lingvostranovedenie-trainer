@@ -272,8 +272,8 @@ function renderQuestion() {
   if (!record) return finishRound();
 
   state.answered = false;
-  const first = matchingOccurrence(record, state.filters);
   const origin = recordOrigin(record);
+  const first = origin.isAddition ? null : matchingOccurrence(record, state.filters);
   $('progressLabel').textContent = `Вопрос ${state.position + 1} из ${state.round.length}`;
   $('scoreLabel').textContent = `Счёт: ${state.correct}`;
   $('progressFill').style.width = `${(state.position / state.round.length) * 100}%`;
@@ -616,8 +616,11 @@ $('importProgressFile').addEventListener('change', (event) => {
 });
 
 const verifiedCount = QUESTION_BANK.filter((r) => r.answer.state === 'verified').length;
+const additionCount = QUESTION_BANK.filter((r) => r.origin === 'addition').length;
+const olympiadCount = QUESTION_BANK.length - additionCount;
 $('footerNote').textContent =
-  `${QUESTION_BANK.length} вопросов, собранных из материалов ВсОШ 2015/16 — 2025/26. ` +
+  `${olympiadCount} вопросов собраны из материалов ВсОШ 2015/16 — 2025/26; ` +
+  `${additionCount} — проверенные дополнения к олимпиадной базе. ` +
   `У ${verifiedCount} ответов есть пояснение и ссылка на источник; у остальных ответ взят из ` +
   'официального ключа и ждёт перепроверки.';
 
