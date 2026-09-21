@@ -618,10 +618,13 @@ $('importProgressFile').addEventListener('change', (event) => {
 const verifiedCount = QUESTION_BANK.filter((r) => r.answer.state === 'verified').length;
 const additionCount = QUESTION_BANK.filter((r) => r.origin === 'addition').length;
 const olympiadCount = QUESTION_BANK.length - additionCount;
+const additionNote = additionCount
+  ? ` ${additionCount} — проверенные дополнения к олимпиадной базе.`
+  : '';
 $('footerNote').textContent =
-  `${olympiadCount} вопросов собраны из материалов ВсОШ 2015/16 — 2025/26; ` +
-  `${additionCount} — проверенные дополнения к олимпиадной базе. ` +
-  `У ${verifiedCount} ответов есть пояснение и ссылка на источник; у остальных ответ взят из ` +
+  `${olympiadCount} вопросов собраны из материалов ВсОШ 2015/16 — 2025/26.` +
+  additionNote +
+  ` У ${verifiedCount} ответов есть пояснение и ссылка на источник; у остальных ответ взят из ` +
   'официального ключа и ждёт перепроверки.';
 
 initTheme();
