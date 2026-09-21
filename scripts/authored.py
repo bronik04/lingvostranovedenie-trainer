@@ -17,7 +17,7 @@ def sentence_count(text: str) -> int:
     return len(SENTENCE.findall(text))
 
 
-def _evidence_errors(evidence: object) -> list[str]:
+def evidence_errors(evidence: object) -> list[str]:
     if not isinstance(evidence, list) or not evidence:
         return ['нет официального источника']
 
@@ -92,7 +92,7 @@ def validate_authored(records: list[dict], olympiad_bank: list[dict]) -> list[st
             errors.append(f'{where}: нет пояснения')
         elif not 3 <= sentence_count(explanation_text) <= 5:
             errors.append(f'{where}: пояснение должно состоять из 3–5 предложений')
-        errors.extend(f'{where}: {message}' for message in _evidence_errors(record.get('evidence')))
+        errors.extend(f'{where}: {message}' for message in evidence_errors(record.get('evidence')))
 
         normalized_question = normalize_text(question)
         if normalized_question in known_questions or normalized_question in seen_questions:

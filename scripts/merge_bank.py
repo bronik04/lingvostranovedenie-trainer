@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from normalize import (completeness_errors, fragment_pairs, language_errors, normalize_text,
                        option_key, tidy)
 from authored import load_authored
+from explanations import apply_revisions, load_revisions
 
 STAGE_ORDER = {'pri': 0, 'shk': 1, 'mun': 2, 'reg': 3, 'zak': 4}
 
@@ -329,6 +330,8 @@ def merge(raw: list[dict], translations: dict[str, str],
         record['evidence'] = verified['evidence']
         record['wave'] = verified['wave']
 
+    revisions = load_revisions(ROOT / 'data/review/explanation-wave-1.json', bank)
+    bank = apply_revisions(bank, revisions)
     bank.extend(load_authored(ROOT / 'data/authored/questions.json', bank))
 
     bank.sort(key=lambda record: record['id'])
