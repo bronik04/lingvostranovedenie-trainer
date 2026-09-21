@@ -330,10 +330,6 @@ def merge(raw: list[dict], translations: dict[str, str],
         record['evidence'] = verified['evidence']
         record['wave'] = verified['wave']
 
-    revisions = load_revisions(ROOT / 'data/review/explanation-wave-1.json', bank)
-    bank = apply_revisions(bank, revisions)
-    bank.extend(load_authored(ROOT / 'data/authored/questions.json', bank))
-
     bank.sort(key=lambda record: record['id'])
     report['fragments'] = fragment_pairs([(r['id'], r['questionRu']) for r in bank])
     return bank, report
@@ -368,6 +364,11 @@ def main() -> None:
     verification_file = ROOT / 'data/verification.json'
     verification = json.loads(verification_file.read_text('utf-8')) if verification_file.exists() else {}
     bank, report = merge(raw, translations, verification)
+    revisions = load_revisions(ROOT / 'data/review/explanation-wave-1.json', bank)
+    bank = apply_revisions(bank, revisions)
+    bank.extend(load_authored(ROOT / 'data/authored/questions.json', bank))
+    bank.sort(key=lambda record: record['id'])
+    report['fragments'] = fragment_pairs([(record['id'], record['questionRu']) for record in bank])
     (ROOT / 'data/bank.json').write_text(
         json.dumps(bank, ensure_ascii=False, indent=2, sort_keys=True) + '\n', encoding='utf-8')
     (ROOT / 'data/review').mkdir(parents=True, exist_ok=True)

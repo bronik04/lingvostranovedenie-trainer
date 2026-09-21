@@ -29,6 +29,12 @@ class TaxonomyTest(unittest.TestCase):
         self.assertEqual(bank[0]['topic'], 'Культура, традиции и праздники')
         self.assertEqual(disputed, [])
 
+    def test_keeps_topic_chosen_for_an_authored_addition(self):
+        bank, disputed = assign_topics(
+            [record(origin='addition', topic='История и государство', topicSource='authored')], self.rules)
+        self.assertEqual(bank[0]['topic'], 'История и государство')
+        self.assertEqual(disputed, [])
+
     def test_assigns_topic_by_keywords_and_reports_it(self):
         bank, disputed = assign_topics([record()], self.rules)
         self.assertEqual(bank[0]['topic'], 'География и административное устройство')
