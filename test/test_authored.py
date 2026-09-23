@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from authored import validate_authored
+from authored import sentence_count, validate_authored
 
 
 TOPIC = 'География и административное устройство'
@@ -40,6 +40,11 @@ def addition(**overrides):
             'url': 'https://www.gov.cn/example',
             'checkedAt': '2026-09-21',
             'authority': 'official',
+        }, {
+            'title': 'Энциклопедия',
+            'url': 'https://www.zgbk.com/example',
+            'checkedAt': '2026-09-21',
+            'authority': 'academic',
         }],
     }
     item.update(overrides)
@@ -58,6 +63,12 @@ class AuthoredQuestionTest(unittest.TestCase):
         }]
         self.assertTrue(validate_authored([addition(evidence=bad_evidence)], []))
 
+    def test_requires_two_official_or_academic_sources(self):
+        one = addition()['evidence'][:1]
+        self.assertTrue(validate_authored([addition(evidence=one)], []))
+        blog = [*addition()['evidence'][:1], {**addition()['evidence'][1], 'authority': 'blog'}]
+        self.assertTrue(validate_authored([addition(evidence=blog)], []))
+
     def test_rejects_duplicate_and_invalid_reverse_link(self):
         base = [olympiad_record()]
         self.assertTrue(validate_authored([addition(questionRu=base[0]['questionRu'])], base))
@@ -72,6 +83,13 @@ class AuthoredQuestionTest(unittest.TestCase):
         self.assertTrue(validate_authored([
             addition(explanation={'ru': 'Раз. Два. Три. Четыре. Пять. Шесть.'}),
         ], []))
+
+    def test_sentence_count_ignores_abbreviations_and_initials(self):
+        self.assertEqual(sentence_count(
+            'Договор подписали 16 мая 1858 г. в Айгуне. Н. Н. Муравьёв получил титул. '
+            'Это было ок. 1860 г., т. е. позже. 汴京 — столица Северной Сун.'), 4)
+        self.assertEqual(sentence_count('Раз. Два. Три.'), 3)
+        self.assertEqual(sentence_count('Это высший орган КНР. Оно важно. Верен ответ 全国人大.'), 3)
 
 
 if __name__ == '__main__':

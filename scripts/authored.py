@@ -10,11 +10,17 @@ from urllib.parse import urlparse
 from normalize import completeness_errors, language_errors, normalize_text
 from taxonomy import TOPICS
 
-SENTENCE = re.compile(r'[^.!?]+[.!?]')
+# Конец предложения — знак, за которым идёт новое предложение (заглавная буква,
+# кавычка, иероглиф) или конец текста. Так «1858 г. в Айгуне», «т. е.» и инициалы
+# «Н. Н. Муравьёв» не дробят одно предложение на несколько.
+SENTENCE_END = re.compile(
+    r'(?<!\s[А-ЯЁA-Z])[.!?…]+(?=\s+[А-ЯЁA-Z«"„(\u4e00-\u9fff]|\s*$)')
+MIN_ADDITION_SOURCES = 2
+AUTHORITIES = {'official', 'academic'}
 
 
 def sentence_count(text: str) -> int:
-    return len(SENTENCE.findall(text))
+    return len(SENTENCE_END.findall(text.strip()))
 
 
 def evidence_errors(evidence: object) -> list[str]:
@@ -33,8 +39,8 @@ def evidence_errors(evidence: object) -> list[str]:
             errors.append(f'у источника {index} нет названия')
         if not isinstance(item.get('checkedAt'), str) or not item['checkedAt'].strip():
             errors.append(f'у источника {index} нет даты проверки')
-        if item.get('authority') != 'official':
-            errors.append(f'источник {index} не помечен официальным')
+        if item.get('authority') not in AUTHORITIES:
+            errors.append(f'источник {index} не помечен официальным или академическим')
     return errors
 
 
@@ -92,7 +98,10 @@ def validate_authored(records: list[dict], olympiad_bank: list[dict]) -> list[st
             errors.append(f'{where}: нет пояснения')
         elif not 3 <= sentence_count(explanation_text) <= 5:
             errors.append(f'{where}: пояснение должно состоять из 3–5 предложений')
-        errors.extend(f'{where}: {message}' for message in evidence_errors(record.get('evidence')))
+        evidence = record.get('evidence')
+        errors.extend(f'{where}: {message}' for message in evidence_errors(evidence))
+        if isinstance(evidence, list) and len(evidence) < MIN_ADDITION_SOURCES:
+            errors.append(f'{where}: нужно не меньше {MIN_ADDITION_SOURCES} независимых источников')
 
         normalized_question = normalize_text(question)
         if normalized_question in known_questions or normalized_question in seen_questions:
