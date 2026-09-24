@@ -28,7 +28,7 @@ def _score(text: str, keywords: list[str]) -> int:
 def assign_topics(bank: list[dict], rules: dict) -> tuple[list[dict], list[dict]]:
     disputed: list[dict] = []
     for record in bank:
-        if record.get('topic') and record.get('topicSource') in {'categories-310', 'authored'}:
+        if record.get('topic') and record.get('topicSource') in {'categories-310', 'authored', 'editorial'}:
             continue
         haystack = ' '.join([record['questionRu'], record.get('questionZh') or '']
                             + [option['zh'] for option in record['options']])

@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from normalize import (completeness_errors, fragment_pairs, language_errors, normalize_text,
                        option_key, tidy)
 from authored import load_authored
+from editorial import apply_editorial, load_editorial
 from explanations import apply_revisions, load_revisions
 
 STAGE_ORDER = {'pri': 0, 'shk': 1, 'mun': 2, 'reg': 3, 'zak': 4}
@@ -366,6 +367,7 @@ def main() -> None:
     bank, report = merge(raw, translations, verification)
     revisions = load_revisions(ROOT / 'data/review/explanation-wave-1.json', bank)
     bank = apply_revisions(bank, revisions)
+    bank = apply_editorial(bank, load_editorial(ROOT / 'data/review/editorial.json'))
     bank.extend(load_authored(ROOT / 'data/authored/questions.json', bank))
     bank.sort(key=lambda record: record['id'])
     report['fragments'] = fragment_pairs([(record['id'], record['questionRu']) for record in bank])
