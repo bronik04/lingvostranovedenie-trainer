@@ -321,9 +321,9 @@ function answer(record, optionId) {
     dueAt: review.dueAt,
   };
   saveProgress();
-  if (verdict.correct) state.correct += 1;
-  else {
-    state.wrongIds.push(record.id);
+  ({ correct: state.correct, wrongIds: state.wrongIds } =
+    tallyAnswer({ correct: state.correct, wrongIds: state.wrongIds }, record.id, verdict.correct));
+  if (!verdict.correct) {
     const retry = queueRetry(state.retryQueue, state.retriedIds, record, state.position);
     state.retryQueue = retry.queue;
     state.retriedIds = retry.retriedIds;

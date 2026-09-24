@@ -304,3 +304,13 @@ test('подвал не говорит о непроверенных ответ�
   assert.match(quiz.bankSummary(mixed), /^В базе 2 вопроса из материалов ВсОШ 2015\/16\. У 1 ответа есть пояснение/);
   assert.match(quiz.bankSummary(mixed), /остальные ответы взяты из официального ключа/);
 });
+
+test('повтор ошибки в том же раунде не меняет счёт', () => {
+  let tally = { correct: 0, wrongIds: [] };
+  tally = quiz.tallyAnswer(tally, 'a', true);
+  tally = quiz.tallyAnswer(tally, 'b', false);
+  assert.deepEqual(tally, { correct: 1, wrongIds: ['b'] });
+  // повтор ошибки: и верный, и неверный ответ оставляют счёт и список ошибок как были
+  assert.deepEqual(quiz.tallyAnswer(tally, 'b', true), tally);
+  assert.deepEqual(quiz.tallyAnswer(tally, 'b', false), tally);
+});

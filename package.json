@@ -5,5 +5,8 @@
   "scripts": {
     "test": "node --test test/*.test.mjs",
     "build": "python3 scripts/import_sources.py && python3 scripts/merge_bank.py && python3 scripts/taxonomy.py && python3 scripts/build_html.py"
+  },
+  "devDependencies": {
+    "playwright-core": "1.63.0"
   }
 }

@@ -105,6 +105,15 @@ export function nextRetryInsertion(queue, position, roundLength) {
   return position >= roundLength && queue.length ? 0 : -1;
 }
 
+export function tallyAnswer(tally, recordId, correct) {
+  // повтор ошибки в том же раунде нужен, чтобы закрепить ответ, а не чтобы
+  // исправить счёт: засчитывается только первая попытка
+  if (tally.wrongIds.includes(recordId)) return tally;
+  return correct
+    ? { ...tally, correct: tally.correct + 1 }
+    : { ...tally, wrongIds: [...tally.wrongIds, recordId] };
+}
+
 export function roundScore(correct, initialRoundLength) {
   return `${correct} / ${initialRoundLength}`;
 }

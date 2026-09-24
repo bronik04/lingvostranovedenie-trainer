@@ -93,7 +93,11 @@ def main() -> None:
     html = html.replace('/*QUESTION_BANK*/', serialize_bank(bank))
     html = html.replace('/*QUIZ_UI*/', minify_js((ROOT / 'src/quiz.ui.js').read_text('utf-8')))
     TARGET.parent.mkdir(parents=True, exist_ok=True)
-    TARGET.write_text(html, encoding='utf-8')
+    # через временный файл и замену: тесты читают dist/ параллельно со сборкой
+    # в build.test.mjs и не должны увидеть файл, записанный наполовину
+    partial = TARGET.with_name(TARGET.name + '.partial')
+    partial.write_text(html, encoding='utf-8')
+    partial.replace(TARGET)
     verified = sum(1 for record in bank if record['answer']['state'] == 'verified')
     print(f'собрано: {TARGET} ({TARGET.stat().st_size // 1024} КБ), проверено {verified} из {len(bank)}')
 

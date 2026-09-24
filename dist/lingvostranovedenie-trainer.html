@@ -283,6 +283,15 @@ function nextRetryInsertion(queue, position, roundLength) {
   return position >= roundLength && queue.length ? 0 : -1;
 }
 
+function tallyAnswer(tally, recordId, correct) {
+  
+  
+  if (tally.wrongIds.includes(recordId)) return tally;
+  return correct
+    ? { ...tally, correct: tally.correct + 1 }
+    : { ...tally, wrongIds: [...tally.wrongIds, recordId] };
+}
+
 function roundScore(correct, initialRoundLength) {
   return `${correct} / ${initialRoundLength}`;
 }
@@ -713,9 +722,9 @@ function answer(record, optionId) {
     dueAt: review.dueAt,
   };
   saveProgress();
-  if (verdict.correct) state.correct += 1;
-  else {
-    state.wrongIds.push(record.id);
+  ({ correct: state.correct, wrongIds: state.wrongIds } =
+    tallyAnswer({ correct: state.correct, wrongIds: state.wrongIds }, record.id, verdict.correct));
+  if (!verdict.correct) {
     const retry = queueRetry(state.retryQueue, state.retriedIds, record, state.position);
     state.retryQueue = retry.queue;
     state.retriedIds = retry.retriedIds;

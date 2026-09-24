@@ -23,8 +23,13 @@
 
 ## Тесты
 
+    npm ci                                  # playwright-core для браузерного теста
     python3 -m unittest discover -s test -t . -v
     node --test test/*.test.mjs
+
+`test/ui.test.mjs` открывает собранный `dist/` в установленном Google Chrome без окна
+и проходит тренажёр как ученик: раунд, итоги, база, фильтры, телефон. Без Chrome
+локально пропускается.
 
 ## Данные
 

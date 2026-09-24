@@ -27,6 +27,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: npm
+
+      # playwright-core для браузерного теста test/ui.test.mjs; своего браузера
+      # не качает — использует Google Chrome, который уже стоит на раннере
+      - name: Установить зависимости тестов
+        run: npm ci
 
       - name: Установить pdftotext (для парсера PDF-бюллетеней)
         run: sudo apt-get update && sudo apt-get install -y poppler-utils
