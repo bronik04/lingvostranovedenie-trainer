@@ -1,4 +1,4 @@
-import sys, unittest
+import http.client, ssl, sys, unittest
 import urllib.error
 from pathlib import Path
 from unittest.mock import MagicMock
@@ -102,10 +102,9 @@ class CheckUrlTest(unittest.TestCase):
         self.assertEqual(reason, '403')
         self.assertFalse(conclusive)
 
-    def test_a_real_http_answer_on_head_beats_a_later_network_error_on_get(self):
-        """HEAD дал чёткий 404, а вот повторный запрос GET просто не смог
-        подключиться — итоговая причина должна остаться «404», а не
-        стереться менее содержательной сетевой ошибкой."""
+    def test_head_404_proves_nothing_when_get_cannot_connect(self):
+        """Решает только ответ на GET: HEAD на baike.baidu.com отвечает 404 даже
+        для живых страниц, поэтому его ошибка сама по себе ничего не доказывает."""
         def opener(request, timeout):
             if request.get_method() == 'HEAD':
                 raise urllib.error.HTTPError('https://x.org', 404, 'x', {}, None)
@@ -113,22 +112,51 @@ class CheckUrlTest(unittest.TestCase):
 
         ok, reason, conclusive = check_url('https://x.org', opener=opener)
         self.assertFalse(ok)
-        self.assertEqual(reason, '404')
-        self.assertTrue(conclusive)
+        self.assertEqual(reason, 'обрыв')
+        self.assertFalse(conclusive)
 
-    def test_a_real_http_answer_on_head_beats_a_later_403_on_get(self):
-        """Тот самый баг, пойманный на реальных данных: HEAD дал убедительный
-        404, а GET после него — 403 (похоже на антибот, сработавший только
-        на втором запросе). reason не должен молча перезаписаться на «403»
-        с сохранением conclusive=True — теряется весь смысл различения."""
+    def test_head_404_then_get_403_is_not_conclusive(self):
+        """Пойман на реальных данных 2026-09-24: три ссылки baike.baidu.com
+        (太原市, 夸父逐日, 抓周) числились «404 под наблюдением», хотя в браузере
+        открываются. HEAD дал свой обычный 404, GET упёрся в антибот (403) —
+        прежняя логика принимала 404 от HEAD за убедительный ответ и через
+        неделю подтвердила бы живые страницы как битые."""
         def opener(request, timeout):
             code = 404 if request.get_method() == 'HEAD' else 403
             raise urllib.error.HTTPError('https://x.org', code, 'x', {}, None)
 
         ok, reason, conclusive = check_url('https://x.org', opener=opener)
         self.assertFalse(ok)
-        self.assertEqual(reason, '404')
-        self.assertTrue(conclusive)
+        self.assertEqual(reason, '403')
+        self.assertFalse(conclusive)
+
+    def test_waf_418_is_not_conclusive(self):
+        """csx.gov.cn отвечает 418 и страницей «request intercepted» даже обычному
+        браузеру — это защита сайта, а не сведения о самой странице."""
+        def opener(request, timeout):
+            raise urllib.error.HTTPError('https://x.org', 418, "I'm a teapot", {}, None)
+        ok, reason, conclusive = check_url('https://x.org', opener=opener)
+        self.assertFalse(ok)
+        self.assertEqual(reason, '418')
+        self.assertFalse(conclusive)
+
+    def test_dropped_connection_does_not_crash_the_run(self):
+        """Еженедельный прогон 2026-09-21 упал целиком: сервер закрыл соединение
+        без ответа, http.client.RemoteDisconnected не обёрнут в URLError и не
+        ловился. Такой обрыв — сетевой шум, как таймаут."""
+        def opener(request, timeout):
+            raise http.client.RemoteDisconnected('Remote end closed connection without response')
+        ok, reason, conclusive = check_url('https://x.org', opener=opener)
+        self.assertFalse(ok)
+        self.assertIn('RemoteDisconnected', reason)
+        self.assertFalse(conclusive)
+
+    def test_tls_failure_does_not_crash_the_run(self):
+        def opener(request, timeout):
+            raise ssl.SSLError('handshake failure')
+        ok, _, conclusive = check_url('https://x.org', opener=opener)
+        self.assertFalse(ok)
+        self.assertFalse(conclusive)
 
     def test_non_ascii_url_is_percent_encoded_before_the_request(self):
         """Большинство ссылок — статьи Wikipedia с кириллицей/иероглифами прямо
@@ -164,7 +192,7 @@ class BuildReportTest(unittest.TestCase):
         results = {
             'https://x.org/1': (True, '200', True),
             'https://x.org/2': (False, '404', True),   # подтверждён
-            'https://x.org/3': (False, '403', True),   # под наблюдением, но убедительный ответ
+            'https://x.org/3': (False, '500', True),   # под наблюдением: убедительный, но первый раз
             'https://x.org/4': (False, 'timeout', False),  # неубедительный, сетевой
         }
         by_url = {u: ['a'] for u in results}

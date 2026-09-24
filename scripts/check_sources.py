@@ -6,6 +6,7 @@
 
 from __future__ import annotations
 
+import http.client
 import json
 import urllib.error
 import urllib.parse
@@ -19,6 +20,14 @@ REPORT = ROOT / 'data/review/broken-links.md'
 STATE = ROOT / 'data/review/broken-links.json'
 USER_AGENT = 'Mozilla/5.0 (compatible; lingvostranovedenie-trainer-linkcheck/1.0)'
 TIMEOUT = 12
+# Коды, которыми отвечает защита от ботов, а не сама страница: 403 — baike.baidu.com
+# банит после пары прогонов подряд, 418 — WAF csx.gov.cn («request intercepted»
+# даже обычному браузеру), 429 — ограничение частоты запросов.
+AMBIGUOUS_CODES = {403, 418, 429}
+# Код выхода, когда есть подтверждённо битые ссылки. Отличается от 1, с которым
+# Python завершается на необработанном исключении: падение скрипта не должно
+# выглядеть в CI как «ссылки битые».
+EXIT_CONFIRMED = 3
 
 
 def collect_urls(bank: list[dict]) -> dict[str, list[str]]:
@@ -38,44 +47,37 @@ def check_url(url: str, opener=urllib.request.urlopen) -> tuple[bool, str, bool]
     только ASCII, поэтому URL сперва процент-кодируется (уже закодированные
     последовательности — %XX — не трогаются повторно).
 
-    HEAD нельзя доверять одному: baike.baidu.com на реальных ссылках из банка
-    стабильно отвечает 404 на HEAD и 200 на GET для того же адреса — сервер
-    просто не поддерживает HEAD как положено. Поэтому откат на GET происходит
-    при любой ошибке HEAD, а не только при формально правильном 405.
+    HEAD — только быстрый путь к ответу «жива». Решает ответ на GET:
+    baike.baidu.com стабильно отвечает 404 на HEAD и 200 на GET для того же
+    адреса. Если GET при этом упрётся в антибот, 404 от HEAD нельзя считать
+    ответом про страницу (так три живые страницы Baike числились «404 под
+    наблюдением» и через неделю подтвердились бы как битые).
 
-    conclusive=True только когда сервер реально ответил HTTP-кодом (пусть и
-    ошибочным) — таймаут, обрыв TLS-рукопожатия или DNS ничего не доказывают
-    про саму ссылку: это может быть путь от текущей машины до сайта, а не
-    сама страница (реально наблюдалось на китайских gov.cn: 403/timeout под
-    нагрузкой прогона на страницах, которые по отдельности открывались)."""
+    conclusive=True только когда GET получил от сервера HTTP-код, который
+    говорит о самой странице (404, 410, 500…). Таймаут, обрыв соединения,
+    TLS, DNS и коды защиты от ботов (AMBIGUOUS_CODES) ничего не доказывают:
+    это может быть путь от текущей машины до сайта, а не сама страница
+    (реально наблюдалось на китайских gov.cn: 403/timeout под нагрузкой
+    прогона на страницах, которые по отдельности открывались)."""
     safe_url = urllib.parse.quote(url, safe=":/?#[]@!$&'()*+,;=%")
-    # Копим отдельно «последнюю причину, какая ни есть» (на случай если ни
-    # один запрос не дал ничего убедительного) и «лучшую убедительную
-    # причину» — так более слабый результат второго запроса (например, GET
-    # словил 403 после того, как HEAD чётко ответил 404) не затирает и не
-    # обесценивает более сильный результат первого.
-    last_reason = 'нет ответа'
-    conclusive_reason: str | None = None
+    reason, conclusive = 'нет ответа', False
     for method in ('HEAD', 'GET'):
         request = urllib.request.Request(safe_url, method=method, headers={'User-Agent': USER_AGENT})
         try:
             with opener(request, timeout=TIMEOUT) as response:
                 return True, str(response.status), True
         except urllib.error.HTTPError as error:
-            # 403 сам по себе неоднозначен — антибот-блокировка выглядит так
-            # же, как настоящий запрет доступа (baike.baidu.com стабильно
-            # банил все 44 своих ссылки после пары прогонов подряд с одной
-            # машины, хотя по отдельности они открывались нормально)
-            last_reason = str(error.code)
-            if error.code != 403:
-                conclusive_reason = last_reason
+            reason, conclusive = str(error.code), error.code not in AMBIGUOUS_CODES
         except urllib.error.URLError as error:
-            last_reason = str(error.reason)
+            reason, conclusive = str(error.reason), False
         except TimeoutError:
-            last_reason = 'timeout'
-    if conclusive_reason is not None:
-        return False, conclusive_reason, True
-    return False, last_reason, False
+            reason, conclusive = 'timeout', False
+        except (OSError, http.client.HTTPException) as error:
+            # обрыв без ответа (RemoteDisconnected), сброс соединения, TLS —
+            # urllib не заворачивает их в URLError, если они случились при
+            # чтении ответа; прогон 2026-09-21 упал на таком целиком
+            reason, conclusive = f'{type(error).__name__}: {error}', False
+    return False, reason, conclusive
 
 
 def check_all(urls: list[str], max_workers: int = 4) -> dict[str, tuple[bool, str, bool]]:
@@ -122,8 +124,9 @@ def build_report(results: dict[str, tuple[bool, str, bool]], by_url: dict[str, l
     if watching:
         section('Под наблюдением (есть ответ сервера, но подтвердим на следующей неделе)', watching)
     if network_noise:
-        section('Неубедительные (таймаут/TLS/DNS/403 — может быть путь до сайта или '
-                'антибот-блокировка, а не сама ссылка; не считаются и не подтверждаются)',
+        section('Неубедительные (таймаут, обрыв соединения, TLS/DNS, 403/418/429 — может быть '
+                'путь до сайта или антибот-блокировка, а не сама ссылка; не считаются и не '
+                'подтверждаются)',
                 sorted(network_noise))
     if not broken:
         lines.append('Все ссылки отвечают.')
@@ -169,7 +172,7 @@ def main() -> None:
             mark = 'сетевая ошибка'
         print(f' - [{mark}]', url, results[url][1])
     if confirmed:
-        raise SystemExit(1)
+        raise SystemExit(EXIT_CONFIRMED)
 
 
 if __name__ == '__main__':

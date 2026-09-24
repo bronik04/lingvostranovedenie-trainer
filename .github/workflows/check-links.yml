@@ -26,12 +26,21 @@ jobs:
       # хранится в data/review/broken-links.json и коммитится ниже.
       - name: Проверить все ссылки-источники
         id: check
+        # Код 3 — есть подтверждённо битые ссылки; любой другой ненулевой код —
+        # сам скрипт упал. Раньше падение (2026-09-21, необработанный обрыв
+        # соединения) выглядело как «ссылки битые»: открывался issue со старым
+        # отчётом, а прогон считался успешным.
         run: |
-          if python3 scripts/check_sources.py; then
-            echo "confirmed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "confirmed=true" >> "$GITHUB_OUTPUT"
-          fi
+          set +e
+          python3 scripts/check_sources.py
+          status=$?
+          set -e
+          case "$status" in
+            0) echo "confirmed=false" >> "$GITHUB_OUTPUT" ;;
+            3) echo "confirmed=true" >> "$GITHUB_OUTPUT" ;;
+            *) echo "::error::проверка ссылок упала с кодом $status — это ошибка скрипта, а не битые ссылки"
+               exit "$status" ;;
+          esac
 
       - name: Сохранить состояние проверки
         run: |
