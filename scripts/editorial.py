@@ -9,13 +9,15 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 from normalize import completeness_errors, language_errors, normalize_text
 from taxonomy import TOPICS
 
-FIELDS = {'reason', 'questionRu', 'options', 'explanation', 'topic'}
+FIELDS = {'reason', 'questionRu', 'questionZh', 'options', 'explanation', 'topic'}
 CHANGES = FIELDS - {'reason'}
+CJK = re.compile(r'[\u4e00-\u9fff]')
 
 
 def validate_editorial(edits: dict[str, dict], bank: list[dict]) -> list[str]:
@@ -38,6 +40,11 @@ def validate_editorial(edits: dict[str, dict], bank: list[dict]) -> list[str]:
             errors.append(f'{record_id}: правка ничего не меняет')
 
         question = edit.get('questionRu', record['questionRu'])
+        question_zh = edit.get('questionZh', record.get('questionZh'))
+        if 'questionZh' in edit and (not isinstance(question_zh, str)
+                                     or not CJK.search(question_zh)):
+            errors.append(f'{record_id}: китайская формулировка без иероглифов')
+            question_zh = record.get('questionZh')
         options = {option['id']: option['zh'] for option in record['options']}
         replaced = edit.get('options', {})
         if not isinstance(replaced, dict):
@@ -58,7 +65,7 @@ def validate_editorial(edits: dict[str, dict], bank: list[dict]) -> list[str]:
         else:
             errors.extend(f'{record_id}: {message}' for message in language_errors(question, texts))
             errors.extend(f'{record_id}: {message}' for message in completeness_errors(
-                question, record.get('questionZh'), texts))
+                question, question_zh, texts))
 
         if 'explanation' in edit and (not isinstance(edit['explanation'], str)
                                       or not edit['explanation'].strip()):
@@ -81,6 +88,8 @@ def apply_editorial(bank: list[dict], edits: dict[str, dict]) -> list[dict]:
         result = {**record, 'editorial': {'reason': edit['reason'].strip()}}
         if 'questionRu' in edit:
             result['questionRu'] = edit['questionRu']
+        if 'questionZh' in edit:
+            result['questionZh'] = edit['questionZh'].strip()
         if 'options' in edit:
             result['options'] = [{**option, 'zh': edit['options'].get(option['id'], option['zh']).strip()}
                                  for option in record['options']]

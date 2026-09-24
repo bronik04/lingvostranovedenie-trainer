@@ -367,8 +367,9 @@ def main() -> None:
     bank, report = merge(raw, translations, verification)
     revisions = load_revisions(ROOT / 'data/review/explanation-wave-1.json', bank)
     bank = apply_revisions(bank, revisions)
-    bank = apply_editorial(bank, load_editorial(ROOT / 'data/review/editorial.json'))
     bank.extend(load_authored(ROOT / 'data/authored/questions.json', bank))
+    # правки — последним слоем, чтобы доходить и до дополнений
+    bank = apply_editorial(bank, load_editorial(ROOT / 'data/review/editorial.json'))
     bank.sort(key=lambda record: record['id'])
     report['fragments'] = fragment_pairs([(record['id'], record['questionRu']) for record in bank])
     (ROOT / 'data/bank.json').write_text(
