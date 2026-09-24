@@ -1,10 +1,12 @@
-import http.client, ssl, sys, unittest
+import http.client, json, ssl, sys, tempfile, unittest
 import urllib.error
+from unittest import mock
 from pathlib import Path
 from unittest.mock import MagicMock
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
+import check_sources
 from check_sources import build_report, check_url, collect_urls, confirmed_broken
 
 
@@ -210,6 +212,34 @@ class BuildReportTest(unittest.TestCase):
     def test_all_alive_says_so(self):
         text = build_report({'https://x.org/1': (True, '200', True)}, {'https://x.org/1': ['a']}, confirmed=set())
         self.assertIn('Все ссылки отвечают', text)
+
+
+class MainExitCodeTest(unittest.TestCase):
+    """CI отличает «есть подтверждённо битые ссылки» (код 3) от падения самого
+    скрипта (код 1 у необработанного исключения) — на этом держится workflow."""
+
+    def run_main(self, results, previously_broken):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / 'data').mkdir()
+            bank = [{'id': 'a', 'evidence': [{'url': url} for url in results]}]
+            (root / 'data/bank.json').write_text(json.dumps(bank), 'utf-8')
+            state = root / 'state.json'
+            state.write_text(json.dumps(sorted(previously_broken)), 'utf-8')
+            with mock.patch.multiple(check_sources, ROOT=root, STATE=state, REPORT=root / 'report.md',
+                                     check_all=lambda urls: {url: results[url] for url in urls}), \
+                    mock.patch('builtins.print'):
+                check_sources.main()
+
+    def test_confirmed_broken_link_exits_with_code_3(self):
+        with self.assertRaises(SystemExit) as raised:
+            self.run_main({'https://x.org/1': (False, '404', True)}, {'https://x.org/1'})
+        self.assertEqual(raised.exception.code, check_sources.EXIT_CONFIRMED)
+        self.assertNotEqual(check_sources.EXIT_CONFIRMED, 1)
+
+    def test_first_time_broken_or_network_noise_exits_normally(self):
+        self.run_main({'https://x.org/1': (False, '404', True),
+                       'https://x.org/2': (False, 'timeout', False)}, {'https://x.org/2'})
 
 
 if __name__ == '__main__':

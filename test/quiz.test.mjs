@@ -301,6 +301,6 @@ test('подвал не говорит о непроверенных ответ�
   const verified = [record('a'), record('b')];
   assert.doesNotMatch(quiz.bankSummary(verified), /остальные|перепроверки/);
   const mixed = [record('a'), record('b', { answer: { optionId: 'o2', state: 'unverified' } })];
-  assert.match(quiz.bankSummary(mixed), /^В базе 2 вопроса из материалов ВсОШ 2015\/16 — 2015\/16\. У 1 ответа есть пояснение/);
+  assert.match(quiz.bankSummary(mixed), /^В базе 2 вопроса из материалов ВсОШ 2015\/16\. У 1 ответа есть пояснение/);
   assert.match(quiz.bankSummary(mixed), /остальные ответы взяты из официального ключа/);
 });

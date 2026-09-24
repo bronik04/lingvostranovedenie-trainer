@@ -70,6 +70,10 @@ def validate_editorial(edits: dict[str, dict], bank: list[dict]) -> list[str]:
         if 'explanation' in edit and (not isinstance(edit['explanation'], str)
                                       or not edit['explanation'].strip()):
             errors.append(f'{record_id}: пустое пояснение')
+        for field in ('questionRu', 'explanation'):
+            text = edit.get(field)
+            if isinstance(text, str) and ('— —' in text or '  ' in text):
+                errors.append(f'{record_id}: в {field} двойное тире или двойной пробел')
         if 'topic' in edit and edit['topic'] not in TOPICS:
             errors.append(f'{record_id}: тема вне списка семи категорий')
     return errors

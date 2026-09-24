@@ -12,7 +12,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 
 from normalize import (completeness_errors, fragment_pairs, language_errors, normalize_text,
                        option_key, tidy)
-from authored import load_authored
+from authored import load_authored, validate_authored
 from editorial import apply_editorial, load_editorial
 from explanations import apply_revisions, load_revisions
 
@@ -370,6 +370,12 @@ def main() -> None:
     bank.extend(load_authored(ROOT / 'data/authored/questions.json', bank))
     # правки — последним слоем, чтобы доходить и до дополнений
     bank = apply_editorial(bank, load_editorial(ROOT / 'data/review/editorial.json'))
+    # дополнения после правок проверяются здесь же, чтобы не записать банк,
+    # который сборка потом отвергнет
+    errors = validate_authored([r for r in bank if r.get('origin') == 'addition'],
+                               [r for r in bank if r.get('origin') is None])
+    if errors:
+        raise ValueError('дополнения после правок некорректны:\n - ' + '\n - '.join(errors))
     bank.sort(key=lambda record: record['id'])
     report['fragments'] = fragment_pairs([(record['id'], record['questionRu']) for record in bank])
     (ROOT / 'data/bank.json').write_text(

@@ -195,7 +195,9 @@ export function bankSummary(bank) {
   const additions = bank.filter((record) => record.origin === 'addition').length;
   const olympiad = bank.length - additions;
   const years = bank.flatMap((record) => record.occurrences.map((o) => o.year)).sort();
-  const span = years.length ? ` ${years[0].replace('-', '/')} — ${years.at(-1).replace('-', '/')}` : '';
+  const first = years[0]?.replace('-', '/');
+  const last = years[years.length - 1]?.replace('-', '/');
+  const span = !years.length ? '' : first === last ? ` ${first}` : ` ${first} — ${last}`;
   const verified = bank.filter((record) => record.answer.state === 'verified').length;
   const additionNote = additions
     ? ` и ${additions} ${pluralRu(additions,

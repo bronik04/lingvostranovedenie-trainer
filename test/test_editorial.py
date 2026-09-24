@@ -66,6 +66,8 @@ class EditorialTest(unittest.TestCase):
         self.assertTrue(validate_editorial({'2015-16-mun-1': {'reason': 'x', 'topic': 'Нет такой'}}, bank))
         self.assertTrue(validate_editorial({'2015-16-mun-1': {'reason': 'x', 'explanation': ' '}}, bank))
         self.assertTrue(validate_editorial({'2015-16-mun-1': {'reason': 'x', 'surprise': 1}}, bank))
+        self.assertTrue(validate_editorial({'2015-16-mun-1': {'reason': 'x', 'explanation': 'Ся — — первая.'}}, bank))
+        self.assertTrue(validate_editorial({'2015-16-mun-1': {'reason': 'x', 'explanation': 'Ся  первая.'}}, bank))
 
     def test_applies_chinese_question_text(self):
         edits = {'2015-16-mun-1': {'reason': 'опечатка в оригинале',
@@ -95,6 +97,9 @@ class EditorialInBankTest(unittest.TestCase):
                 self.assertEqual(record['questionZh'], edit['questionZh'].strip(), record_id)
             if 'explanation' in edit:
                 self.assertEqual(record['explanation']['ru'], edit['explanation'].strip(), record_id)
+            if 'topic' in edit:
+                self.assertEqual(record['topic'], edit['topic'], record_id)
+                self.assertEqual(record['topicSource'], 'editorial', record_id)
             for option_id, text in edit.get('options', {}).items():
                 option = next(o for o in record['options'] if o['id'] == option_id)
                 self.assertEqual(option['zh'], text.strip(), record_id)

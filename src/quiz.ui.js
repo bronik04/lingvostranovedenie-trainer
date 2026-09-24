@@ -462,6 +462,9 @@ function appendDatabaseRows(rows) {
   }
 }
 
+// «из 461 вопроса», «из 50 вопросов»: после «из» родительный падеж
+const ofQuestions = (count) => pluralRu(count, ['вопроса', 'вопросов', 'вопросов']);
+
 function renderDatabase(reset = true) {
   const rows = filteredDatabaseRows();
   if (reset) {
@@ -469,7 +472,7 @@ function renderDatabase(reset = true) {
     $('databaseList').innerHTML = '';
   }
   if (!rows.length) {
-    $('databaseCount').textContent = `Показано 0 из ${QUESTION_BANK.length} вопросов`;
+    $('databaseCount').textContent = `Показано 0 из ${QUESTION_BANK.length} ${ofQuestions(QUESTION_BANK.length)}`;
     $('databaseList').innerHTML = '<p class="empty">Ничего не найдено.</p>';
     $('databaseMore').hidden = true;
     return;
@@ -477,7 +480,7 @@ function renderDatabase(reset = true) {
   appendDatabaseRows(databasePage(rows, state.databasePage, 50));
   state.databasePage += 1;
   const shown = Math.min(state.databasePage * 50, rows.length);
-  $('databaseCount').textContent = `Показано ${shown} из ${rows.length} вопросов`;
+  $('databaseCount').textContent = `Показано ${shown} из ${rows.length} ${ofQuestions(rows.length)}`;
   $('databaseMore').hidden = shown >= rows.length;
   $('databaseMore').textContent = `Показать ещё (${rows.length - shown})`;
 }
