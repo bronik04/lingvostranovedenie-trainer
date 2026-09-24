@@ -21,6 +21,10 @@ test('сборка выпускает один файл без внешних с
   assert.ok(html.includes('const QUESTION_BANK = ['), 'банк не встроен');
   assert.equal(html.includes('/*QUIZ_UI*/'), false, 'обвязка не подставлена');
   assert.equal(html.includes('/*QUIZ_CSS*/'), false, 'стили не подставлены');
+  assert.equal(html.includes('/*BANK_DESCRIPTION*/'), false, 'описание не подставлено');
+  const bank = JSON.parse(html.match(/const QUESTION_BANK = (\[.*?\]);\n/s)[1]);
+  const description = html.match(/<meta name="description" content="([^"]*)">/)[1];
+  assert.ok(description.startsWith(`${bank.length} `), `описание не совпадает с банком: ${description}`);
 });
 
 test('в собранном файле вопросы по-русски, а варианты по-китайски', () => {

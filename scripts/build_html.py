@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import sys
+from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,6 +16,27 @@ from taxonomy import TOPICS
 from authored import validate_authored
 
 TARGET = ROOT / 'dist/lingvostranovedenie-trainer.html'
+
+
+def plural_ru(count: int, forms: tuple[str, str, str]) -> str:
+    """Форма слова для числа: (1 вопрос, 2 вопроса, 5 вопросов)."""
+    if count % 10 == 1 and count % 100 != 11:
+        return forms[0]
+    if 2 <= count % 10 <= 4 and not 12 <= count % 100 <= 14:
+        return forms[1]
+    return forms[2]
+
+
+def bank_description(bank: list[dict]) -> str:
+    """Описание для поисковиков и превью ссылок — считается по банку при сборке,
+    чтобы число вопросов не устаревало."""
+    count = len(bank)
+    every_verified = all(record['answer']['state'] == 'verified' for record in bank)
+    sources = ('у каждого ответа — пояснение и ссылка на источник' if every_verified
+               else 'у проверенных ответов — пояснение и ссылка на источник')
+    return (f'{count} {plural_ru(count, ("вопрос", "вопроса", "вопросов"))} '
+            f'по лингвострановедению Китая для подготовки к ВсОШ: вопрос по-русски, '
+            f'варианты по-китайски, {sources}.')
 
 
 def serialize_bank(bank: list[dict]) -> str:
@@ -64,6 +86,7 @@ def main() -> None:
         raise SystemExit(1)
 
     html = (ROOT / 'src/template.html').read_text('utf-8')
+    html = html.replace('/*BANK_DESCRIPTION*/', escape(bank_description(bank)))
     html = html.replace('/*QUIZ_CSS*/', minify_css((ROOT / 'src/quiz.css').read_text('utf-8')))
     engine = minify_js((ROOT / 'src/quiz.mjs').read_text('utf-8').replace('export ', ''))
     html = html.replace('/*QUIZ_ENGINE*/', engine)

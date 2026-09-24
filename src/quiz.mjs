@@ -184,3 +184,27 @@ export function labelledOptions(record, random = Math.random) {
 export function grade(record, optionId) {
   return { correct: record.answer.optionId === optionId, answerOptionId: record.answer.optionId };
 }
+
+export function pluralRu(count, forms) {
+  if (count % 10 === 1 && count % 100 !== 11) return forms[0];
+  if (count % 10 >= 2 && count % 10 <= 4 && !(count % 100 >= 12 && count % 100 <= 14)) return forms[1];
+  return forms[2];
+}
+
+export function bankSummary(bank) {
+  const additions = bank.filter((record) => record.origin === 'addition').length;
+  const olympiad = bank.length - additions;
+  const years = bank.flatMap((record) => record.occurrences.map((o) => o.year)).sort();
+  const span = years.length ? ` ${years[0].replace('-', '/')} — ${years.at(-1).replace('-', '/')}` : '';
+  const verified = bank.filter((record) => record.answer.state === 'verified').length;
+  const additionNote = additions
+    ? ` и ${additions} ${pluralRu(additions,
+      ['проверенное дополнение', 'проверенных дополнения', 'проверенных дополнений'])} к ним`
+    : '';
+  const sources = verified === bank.length
+    ? 'У каждого ответа есть пояснение и ссылка на источник.'
+    : `У ${verified} ${pluralRu(verified, ['ответа', 'ответов', 'ответов'])} есть пояснение и ссылка `
+      + 'на источник; остальные ответы взяты из официального ключа и ждут перепроверки.';
+  return `В базе ${olympiad} ${pluralRu(olympiad, ['вопрос', 'вопроса', 'вопросов'])} из материалов ВсОШ`
+    + `${span}${additionNote}. ${sources}`;
+}

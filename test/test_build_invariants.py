@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from build_html import serialize_bank, validate
+from build_html import bank_description, plural_ru, serialize_bank, validate
 
 
 def record(**overrides):
@@ -59,6 +59,26 @@ class ValidateTest(unittest.TestCase):
 
     def test_rejects_unknown_topic(self):
         self.assertTrue(validate([record(topic='Разное')]))
+
+
+class DescriptionTest(unittest.TestCase):
+    FORMS = ('вопрос', 'вопроса', 'вопросов')
+
+    def test_russian_plural_forms(self):
+        cases = {1: 'вопрос', 2: 'вопроса', 4: 'вопроса', 5: 'вопросов', 11: 'вопросов',
+                 12: 'вопросов', 21: 'вопрос', 22: 'вопроса', 111: 'вопросов', 461: 'вопрос'}
+        for count, expected in cases.items():
+            self.assertEqual(plural_ru(count, self.FORMS), expected, count)
+
+    def test_description_counts_the_whole_bank(self):
+        bank = [record(id=f'q{index}') for index in range(462)]
+        text = bank_description(bank)
+        self.assertTrue(text.startswith('462 вопроса '), text)
+        self.assertIn('у каждого ответа — пояснение и ссылка на источник', text)
+
+    def test_description_does_not_overclaim_unverified_answers(self):
+        bank = [record(), record(id='q2', answer={'optionId': 'o2', 'state': 'unverified'})]
+        self.assertNotIn('у каждого ответа', bank_description(bank))
 
 
 if __name__ == '__main__':

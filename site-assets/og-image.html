@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+  Исходник картинки превью ссылок (og-image.jpg, 1200×630).
+  Чисел здесь сознательно нет: они устаревали при каждом пополнении банка.
+  Пересобрать: python3 scripts/render_og_image.py (нужен установленный Google Chrome).
+-->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative;
+    font-family: -apple-system, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    background:
+      radial-gradient(ellipse 720px 520px at 78% 12%, rgba(52, 96, 190, 0.55), transparent 70%),
+      linear-gradient(160deg, #1d2d58 0%, #16223f 55%, #121b33 100%);
+    color: #fff;
+  }
+  .glyph {
+    position: absolute; right: -70px; top: 30px;
+    font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif;
+    font-size: 520px; font-weight: 600; line-height: 1;
+    color: rgba(255, 255, 255, 0.075);
+  }
+  .content { position: absolute; left: 80px; top: 128px; right: 80px; }
+  .eyebrow { font-size: 25px; font-weight: 800; letter-spacing: 0.16em; color: #6f9bff; }
+  h1 { margin: 26px 0 0; font-size: 96px; font-weight: 800; letter-spacing: -0.02em; line-height: 1; }
+  .subtitle { margin-top: 30px; font-size: 33px; color: #c9d3ea; }
+  .accent { margin-top: 96px; font-size: 29px; font-weight: 700; color: #9db8ff; }
+  .note { margin-top: 18px; font-size: 24px; color: #8f9bb7; }
+</style>
+</head>
+<body>
+  <div class="glyph">中</div>
+  <div class="content">
+    <div class="eyebrow">КИТАЙСКИЙ ЯЗЫК · ТРЕНАЖЁР</div>
+    <h1>Лингвострановедение</h1>
+    <div class="subtitle">Вопрос — по-русски, варианты — по-китайски</div>
+    <div class="accent">Задания ВсОШ и проверенные дополнения</div>
+    <div class="note">У каждого ответа — пояснение и ссылка на источник</div>
+  </div>
+</body>
+</html>

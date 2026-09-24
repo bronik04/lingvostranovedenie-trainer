@@ -277,3 +277,30 @@ test('повтор не добавляется второй раз', () => {
 test('итог раунда не увеличивает число выбранных вопросов из-за повторов', () => {
   assert.equal(quiz.roundScore(10, 10), '10 / 10');
 });
+
+test('склонение по числу', () => {
+  const forms = ['вопрос', 'вопроса', 'вопросов'];
+  const cases = { 1: 'вопрос', 3: 'вопроса', 5: 'вопросов', 11: 'вопросов', 14: 'вопросов', 21: 'вопрос', 421: 'вопрос', 462: 'вопроса' };
+  for (const [count, expected] of Object.entries(cases)) {
+    assert.equal(quiz.pluralRu(Number(count), forms), expected, count);
+  }
+});
+
+test('подвал считает вопросы, дополнения и годы по банку', () => {
+  const bank = [
+    record('a', { occurrences: [{ year: '2015-16', stageCode: 'shk' }] }),
+    record('b', { occurrences: [{ year: '2025-26', stageCode: 'reg' }] }),
+    record('c', { origin: 'addition', occurrences: [] }),
+  ];
+  assert.equal(quiz.bankSummary(bank),
+    'В базе 2 вопроса из материалов ВсОШ 2015/16 — 2025/26 и 1 проверенное дополнение к ним. '
+    + 'У каждого ответа есть пояснение и ссылка на источник.');
+});
+
+test('подвал не говорит о непроверенных ответах, когда их нет, и называет их, когда есть', () => {
+  const verified = [record('a'), record('b')];
+  assert.doesNotMatch(quiz.bankSummary(verified), /остальные|перепроверки/);
+  const mixed = [record('a'), record('b', { answer: { optionId: 'o2', state: 'unverified' } })];
+  assert.match(quiz.bankSummary(mixed), /^В базе 2 вопроса из материалов ВсОШ 2015\/16 — 2015\/16\. У 1 ответа есть пояснение/);
+  assert.match(quiz.bankSummary(mixed), /остальные ответы взяты из официального ключа/);
+});
