@@ -266,6 +266,8 @@ select, .search {
 .option-status { color: var(--muted); font-size: .8rem; font-weight: 800; white-space: nowrap; }
 .option.correct .option-status { color: var(--green); }
 .option.wrong .option-status { color: var(--red); }
+.option-gloss { grid-column: 2 / -1; grid-row: 2; margin-top: -6px; color: var(--muted); font-size: .84rem; line-height: 1.35; }
+.row-glosses { margin: 5px 0 0; padding-left: 18px; font-size: .88rem; }
 
 .feedback { margin: 18px 0 0; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: var(--note-bg); }
 .feedback.good { border-color: var(--ok-line); background: var(--ok-bg); }
@@ -344,6 +346,7 @@ select, .search {
   .empty-actions .button { width: 100%; }
   .option { grid-template-columns: 35px 1fr; }
   .option-status { grid-column: 2; }
+  .option-gloss { grid-column: 2; grid-row: auto; margin-top: 0; }
   .next-row { flex-direction: column-reverse; align-items: stretch; }
   .progress { flex-wrap: wrap; }
 }

@@ -347,6 +347,14 @@ function answer(record, optionId) {
     }
   }
 
+  for (const { optionId, gloss } of optionGlosses(record)) {
+    const button = $('options').querySelector(`button[data-option-id="${optionId}"]`);
+    const note = document.createElement('small');
+    note.className = 'option-gloss';
+    note.textContent = gloss;
+    button.append(note);
+  }
+
   const right = record.options.find((option) => option.id === verdict.answerOptionId);
   const sources = evidenceList(record.evidence);
 
@@ -384,6 +392,14 @@ function evidenceList(evidence = []) {
       ? ` <span class="muted">(проверено ${escapeHtml(source.checkedAt)})</span>` : '';
     return `<li>${label}${checked}</li>`;
   }).join('');
+}
+
+function glossList(record) {
+  const items = optionGlosses(record);
+  if (!items.length) return '';
+  return '<p class="row-sources-title">Другие варианты</p><ul class="row-glosses">'
+    + items.map(({ zh, gloss }) => `<li><span class="zh">${escapeHtml(zh)}</span> — ${escapeHtml(gloss)}</li>`).join('')
+    + '</ul>';
 }
 
 function nextQuestion() {
@@ -452,6 +468,7 @@ function appendDatabaseRows(rows) {
         '<details class="row-reveal"><summary>Показать ответ</summary>',
         answered ? `<p class="row-answer">Ответ: ${escapeHtml(answered.zh)}</p>` : '',
         record.explanation.ru ? `<p class="row-why">${escapeHtml(record.explanation.ru)}</p>` : '',
+        glossList(record),
         sources ? `<p class="row-sources-title">Источники</p><ul class="row-sources">${sources}</ul>` : '',
         '</details>',
       ].join('') : '',

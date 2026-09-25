@@ -210,6 +210,35 @@ test('база: поиск по-китайски и раскрытие отве�
   assert.deepEqual(page.errors, []);
 });
 
+test('подписи появляются под неверными вариантами после ответа и в базе', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  // glosses.json в пилоте ещё пуст: подпись подкладывается в банк прямо на странице
+  const record = await page.evaluate(() => {
+    const target = QUESTION_BANK.find((r) => r.id === '2015-16-mun-1');
+    const wrong = target.options.find((o) => o.id !== target.answer.optionId);
+    wrong.gloss = 'Тестовая подпись к неверному варианту';
+    startRoundWith([target]);
+    return target;
+  });
+  assert.equal(await page.locator('.option-gloss').count(), 0, 'подпись видна до ответа');
+  await page.locator(`#options button[data-option-id="${record.answer.optionId}"]`).click();
+  const glossed = page.locator('.option-gloss');
+  assert.equal(await glossed.count(), 1);
+  assert.equal(await glossed.textContent(), 'Тестовая подпись к неверному варианту');
+  const wrongId = record.options.find((o) => o.id !== record.answer.optionId).id;
+  assert.equal(await page.locator(`#options button[data-option-id="${wrongId}"] .option-gloss`).count(), 1);
+
+  await page.locator('#leaveRound').click();
+  await page.locator('#openDatabase').click();
+  await page.locator('#databaseSearch').fill(record.questionRu);
+  const row = page.locator('#databaseList article').first();
+  await row.locator('summary').click();
+  assert.equal(await row.locator('.row-glosses li').isVisible(), true);
+  assert.match(await row.locator('.row-glosses li').textContent(), /Тестовая подпись к неверному варианту/);
+  assert.deepEqual(page.errors, []);
+});
+
 test('тема переключается и запоминается', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
@@ -227,6 +256,11 @@ test('телефон: ни на одном экране нет горизонт�
   const bank = await bankOf(page);
   const overflow = () => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
   assert.equal(await overflow(), 0, 'главная');
+  await page.evaluate(() => {
+    for (const r of QUESTION_BANK) {
+      for (const o of r.options) if (o.id !== r.answer.optionId) o.gloss = 'Длинная подпись для проверки переноса на узком экране телефона';
+    }
+  });
   await startRound(page, 5);
   await answer(page, await currentRecord(page, bank), false);
   assert.equal(await overflow(), 0, 'вопрос с разбором ответа');

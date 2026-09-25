@@ -194,6 +194,12 @@ export function grade(record, optionId) {
   return { correct: record.answer.optionId === optionId, answerOptionId: record.answer.optionId };
 }
 
+export function optionGlosses(record) {
+  return record.options
+    .filter((option) => option.id !== record.answer.optionId && option.gloss)
+    .map((option) => ({ optionId: option.id, zh: option.zh, gloss: option.gloss }));
+}
+
 export function pluralRu(count, forms) {
   if (count % 10 === 1 && count % 100 !== 11) return forms[0];
   if (count % 10 >= 2 && count % 10 <= 4 && !(count % 100 >= 12 && count % 100 <= 14)) return forms[1];

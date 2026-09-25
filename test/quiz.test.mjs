@@ -314,3 +314,19 @@ test('повтор ошибки в том же раунде не меняет с
   assert.deepEqual(quiz.tallyAnswer(tally, 'b', true), tally);
   assert.deepEqual(quiz.tallyAnswer(tally, 'b', false), tally);
 });
+
+test('подписи берутся только у неверных вариантов, где они есть', () => {
+  const withGlosses = record('g', {
+    options: [
+      { id: 'o1', zh: '广州', gloss: 'Гуанчжоу, центр провинции Гуандун' },
+      { id: 'o2', zh: '上海', gloss: 'не должна показываться: это ответ' },
+      { id: 'o3', zh: '北京' },
+      { id: 'o4', zh: '西安', gloss: 'Сиань, древняя столица' },
+    ],
+  });
+  assert.deepEqual(quiz.optionGlosses(withGlosses), [
+    { optionId: 'o1', zh: '广州', gloss: 'Гуанчжоу, центр провинции Гуандун' },
+    { optionId: 'o4', zh: '西安', gloss: 'Сиань, древняя столица' },
+  ]);
+  assert.deepEqual(quiz.optionGlosses(record('plain')), []);
+});
