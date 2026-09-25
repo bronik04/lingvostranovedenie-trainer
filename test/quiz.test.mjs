@@ -234,6 +234,14 @@ test('поиск базы проверяет вопрос, тему, вариа�
   assert.equal(quiz.matchesDatabaseSearch(item, ''), true);
 });
 
+test('поиск базы находит и подписи к неверным вариантам', () => {
+  const item = record('a', { options: [
+    { id: 'o1', zh: '广州', gloss: 'Гуанчжоу, центр провинции Гуандун' },
+    { id: 'o2', zh: '上海' }, { id: 'o3', zh: '北京' }, { id: 'o4', zh: '西安' },
+  ] });
+  assert.equal(quiz.matchesDatabaseSearch(item, 'центр провинции гуандун'), true);
+});
+
 test('настройки отбрасывают повреждённые и устаревшие значения', () => {
   const bank = [record('a')];
   assert.deepEqual(quiz.normaliseStudySettings({

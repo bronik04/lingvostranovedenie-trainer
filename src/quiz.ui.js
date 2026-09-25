@@ -330,6 +330,7 @@ function answer(record, optionId) {
   }
   $('scoreLabel').textContent = `Счёт: ${state.correct}`;
 
+  const glosses = new Map(optionGlosses(record).map((item) => [item.optionId, item.gloss]));
   for (const button of $('options').querySelectorAll('button')) {
     button.disabled = true;
     if (button.dataset.optionId === verdict.answerOptionId) {
@@ -345,14 +346,12 @@ function answer(record, optionId) {
       status.textContent = '✕ Ваш ответ';
       button.append(status);
     }
-  }
-
-  for (const { optionId, gloss } of optionGlosses(record)) {
-    const button = $('options').querySelector(`button[data-option-id="${optionId}"]`);
-    const note = document.createElement('small');
-    note.className = 'option-gloss';
-    note.textContent = gloss;
-    button.append(note);
+    if (glosses.has(button.dataset.optionId)) {
+      const note = document.createElement('small');
+      note.className = 'option-gloss';
+      note.textContent = glosses.get(button.dataset.optionId);
+      button.append(note);
+    }
   }
 
   const right = record.options.find((option) => option.id === verdict.answerOptionId);

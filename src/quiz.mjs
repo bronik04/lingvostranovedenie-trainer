@@ -59,6 +59,7 @@ export function matchesDatabaseSearch(record, query) {
     ...record.options.map((option) => option.zh),
     right?.zh,
     record.explanation?.ru,
+    ...record.options.map((option) => option.gloss),
   ].filter(Boolean).join(' ').toLocaleLowerCase('ru');
   return text.includes(needle);
 }

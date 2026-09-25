@@ -16,12 +16,16 @@ from urllib.parse import urlparse
 
 MAX_LENGTH = 90
 CYRILLIC = re.compile(r'[А-Яа-яЁё]')
+ENTRY_FIELDS = {'reviewedAt', 'options'}
+GLOSS_FIELDS = {'zh', 'ru', 'source'}
 
 
 def _source_ok(source: object) -> bool:
     if not isinstance(source, dict):
         return False
-    url = urlparse(source.get('url') or '')
+    if not isinstance(source.get('url'), str):
+        return False
+    url = urlparse(source['url'])
     title = source.get('title')
     return url.scheme in {'http', 'https'} and bool(url.netloc) and isinstance(title, str) and bool(title.strip())
 
@@ -39,8 +43,13 @@ def validate_glosses(glosses: object, bank: list[dict]) -> list[str]:
         if not isinstance(item, dict):
             errors.append(f'{record_id}: запись подписей должна быть объектом')
             continue
+        unknown = set(item) - ENTRY_FIELDS
+        if unknown:
+            errors.append(f'{record_id}: неизвестные поля {sorted(unknown)}')
         if not isinstance(item.get('reviewedAt'), str) or not item['reviewedAt'].strip():
             errors.append(f'{record_id}: нет даты проверки')
+        if record['answer'].get('state') != 'verified' or not record['answer'].get('optionId'):
+            errors.append(f'{record_id}: подпись к вопросу без проверенного ответа')
         options = item.get('options')
         if not isinstance(options, dict) or not options:
             errors.append(f'{record_id}: нет ни одной подписи')
@@ -56,6 +65,9 @@ def validate_glosses(glosses: object, bank: list[dict]) -> list[str]:
             if not isinstance(gloss, dict):
                 errors.append(f'{where}: подпись должна быть объектом')
                 continue
+            unknown = set(gloss) - GLOSS_FIELDS
+            if unknown:
+                errors.append(f'{where}: неизвестные поля {sorted(unknown)}')
             if gloss.get('zh') != current[option_id]:
                 errors.append(f'{where}: вариант изменился ({gloss.get("zh")!r} → {current[option_id]!r}), '
                               'подпись нужно перепроверить')
@@ -65,8 +77,10 @@ def validate_glosses(glosses: object, bank: list[dict]) -> list[str]:
             else:
                 if len(text) > MAX_LENGTH:
                     errors.append(f'{where}: подпись длиннее {MAX_LENGTH} символов')
-                if '— —' in text or '  ' in text or text != text.strip():
-                    errors.append(f'{where}: двойное тире или лишние пробелы')
+                if '— —' in text or ' '.join(text.split()) != text:
+                    errors.append(f'{where}: подпись не в одну строку, двойное тире или лишние пробелы')
+                if current[option_id] in text:
+                    errors.append(f'{where}: подпись повторяет сам вариант по-китайски')
             if not _source_ok(gloss.get('source')):
                 errors.append(f'{where}: нет источника с HTTP(S)-ссылкой и названием')
     return errors
@@ -88,10 +102,18 @@ def apply_glosses(bank: list[dict], glosses: dict[str, dict]) -> list[dict]:
     return updated
 
 
+def _no_duplicate_keys(pairs: list[tuple[str, object]]) -> dict:
+    keys = [key for key, _ in pairs]
+    duplicates = sorted({key for key in keys if keys.count(key) > 1})
+    if duplicates:
+        raise ValueError(f'в подписях повторяются ключи: {duplicates}')
+    return dict(pairs)
+
+
 def load_glosses(path: Path) -> dict[str, dict]:
     if not path.exists():
         return {}
-    glosses = json.loads(path.read_text('utf-8'))
+    glosses = json.loads(path.read_text('utf-8'), object_pairs_hook=_no_duplicate_keys)
     if not isinstance(glosses, dict):
         raise ValueError('подписи должны быть словарём id → запись')
     return glosses

@@ -2,6 +2,7 @@
 :root {
   --ink: #152542;
   --muted: #66738a;
+  --gloss: #5d6a80;
   --paper: #f4f7fc;
   --line: #dce4f1;
   --blue: #245eea;
@@ -34,6 +35,7 @@
 :root[data-theme="dark"] {
   --ink: #e7ecf6;
   --muted: #98a4ba;
+  --gloss: #98a4ba;
   --paper: #0d131f;
   --line: #27324a;
   --blue: #6f9bff;
@@ -266,7 +268,7 @@ select, .search {
 .option-status { color: var(--muted); font-size: .8rem; font-weight: 800; white-space: nowrap; }
 .option.correct .option-status { color: var(--green); }
 .option.wrong .option-status { color: var(--red); }
-.option-gloss { grid-column: 2 / -1; grid-row: 2; margin-top: -6px; color: var(--muted); font-size: .84rem; line-height: 1.35; }
+.option-gloss { grid-column: 2 / -1; grid-row: 2; margin-top: -6px; color: var(--gloss); font-size: .84rem; line-height: 1.35; }
 .row-glosses { margin: 5px 0 0; padding-left: 18px; font-size: .88rem; }
 
 .feedback { margin: 18px 0 0; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: var(--note-bg); }

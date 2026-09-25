@@ -213,29 +213,40 @@ test('база: поиск по-китайски и раскрытие отве�
 test('подписи появляются под неверными вариантами после ответа и в базе', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
-  // glosses.json в пилоте ещё пуст: подпись подкладывается в банк прямо на странице
-  const record = await page.evaluate(() => {
+  // glosses.json в пилоте ещё пуст: подписи подкладываются в банк прямо на странице —
+  // одному неверному варианту и, для проверки, правильному (её показывать нельзя)
+  const { record, wrongId } = await page.evaluate(() => {
     const target = QUESTION_BANK.find((r) => r.id === '2015-16-mun-1');
     const wrong = target.options.find((o) => o.id !== target.answer.optionId);
     wrong.gloss = 'Тестовая подпись к неверному варианту';
+    target.options.find((o) => o.id === target.answer.optionId).gloss = 'Подпись правильного — не показывать';
     startRoundWith([target]);
-    return target;
+    return { record: target, wrongId: wrong.id };
   });
   assert.equal(await page.locator('.option-gloss').count(), 0, 'подпись видна до ответа');
-  await page.locator(`#options button[data-option-id="${record.answer.optionId}"]`).click();
-  const glossed = page.locator('.option-gloss');
-  assert.equal(await glossed.count(), 1);
-  assert.equal(await glossed.textContent(), 'Тестовая подпись к неверному варианту');
-  const wrongId = record.options.find((o) => o.id !== record.answer.optionId).id;
-  assert.equal(await page.locator(`#options button[data-option-id="${wrongId}"] .option-gloss`).count(), 1);
+  // неверный ответ именно на подписанный вариант: на кнопке будут и пометка, и подпись
+  await page.locator(`#options button[data-option-id="${wrongId}"]`).click();
+  assert.equal(await page.locator('.option-gloss').count(), 1, 'подписей должно быть ровно одна');
+  const button = page.locator(`#options button[data-option-id="${wrongId}"]`);
+  assert.equal(await button.locator('.option-gloss').textContent(), 'Тестовая подпись к неверному варианту');
+  assert.equal(await button.locator('.option-status').textContent(), '✕ Ваш ответ');
+  // подпись стоит под китайским текстом варианта и по его левому краю
+  const caption = await button.locator('span:nth-child(2)').boundingBox();
+  const note = await button.locator('.option-gloss').boundingBox();
+  assert.ok(note.y >= caption.y + caption.height - 1, 'подпись не под текстом варианта');
+  assert.ok(Math.abs(note.x - caption.x) <= 1, 'подпись не выровнена по тексту варианта');
 
   await page.locator('#leaveRound').click();
   await page.locator('#openDatabase').click();
   await page.locator('#databaseSearch').fill(record.questionRu);
+  assert.equal(await page.locator('#databaseList article').count(), 1, 'поиск должен найти одну запись');
   const row = page.locator('#databaseList article').first();
   await row.locator('summary').click();
-  assert.equal(await row.locator('.row-glosses li').isVisible(), true);
-  assert.match(await row.locator('.row-glosses li').textContent(), /Тестовая подпись к неверному варианту/);
+  const items = row.locator('.row-glosses li');
+  assert.equal(await items.count(), 1);
+  assert.equal(await items.first().isVisible(), true);
+  assert.match(await items.first().textContent(), /Тестовая подпись к неверному варианту/);
+  assert.doesNotMatch(await row.textContent(), /Подпись правильного/);
   assert.deepEqual(page.errors, []);
 });
 
