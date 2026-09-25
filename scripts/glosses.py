@@ -18,6 +18,7 @@ from strict_json import loads_unique
 
 MAX_LENGTH = 90
 CYRILLIC = re.compile(r'[А-Яа-яЁё]')
+CJK = re.compile(r'[\u4e00-\u9fff]')
 ENTRY_FIELDS = {'reviewedAt', 'options'}
 GLOSS_FIELDS = {'zh', 'ru', 'source'}
 
@@ -81,7 +82,8 @@ def validate_glosses(glosses: object, bank: list[dict]) -> list[str]:
                     errors.append(f'{where}: подпись длиннее {MAX_LENGTH} символов')
                 if '— —' in text or ' '.join(text.split()) != text:
                     errors.append(f'{where}: подпись не в одну строку, двойное тире или лишние пробелы')
-                if current[option_id] in text:
+                # только китайский текст: вариант-год «1911» подпись начинает с года
+                if CJK.search(current[option_id]) and current[option_id] in text:
                     errors.append(f'{where}: подпись повторяет сам вариант по-китайски')
             if not _source_ok(gloss.get('source')):
                 errors.append(f'{where}: нет источника с HTTP(S)-ссылкой и названием')

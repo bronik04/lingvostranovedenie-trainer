@@ -81,6 +81,12 @@ class GlossesTest(unittest.TestCase):
             with self.subTest(message=message):
                 self.assertRejected(glosses, message)
 
+    def test_year_option_may_start_its_gloss_with_the_year(self):
+        years = record(options=[{'id': 'o1', 'zh': '1912'}, {'id': 'o2', 'zh': '1911'},
+                                {'id': 'o3', 'zh': '1910'}, {'id': 'o4', 'zh': '1915'}])
+        glosses = {'2015-16-zak-4': entry({'o2': gloss(zh='1911', ru='1911 — Учанское восстание')})}
+        self.assertEqual(validate_glosses(glosses, [years]), [])
+
     def test_rejects_gloss_for_question_without_verified_answer(self):
         unverified = record(answer={'optionId': None, 'state': 'needs-review'})
         self.assertRejected({'2015-16-zak-4': entry({'o2': gloss()})}, 'без проверенного ответа', [unverified])
