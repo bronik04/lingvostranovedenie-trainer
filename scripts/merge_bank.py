@@ -15,6 +15,7 @@ from normalize import (completeness_errors, fragment_pairs, language_errors, nor
 from authored import load_authored, validate_authored
 from editorial import apply_editorial, load_editorial
 from explanations import apply_revisions, load_revisions
+from glosses import apply_glosses, load_glosses
 
 STAGE_ORDER = {'pri': 0, 'shk': 1, 'mun': 2, 'reg': 3, 'zak': 4}
 
@@ -376,6 +377,9 @@ def main() -> None:
                                [r for r in bank if r.get('origin') is None])
     if errors:
         raise ValueError('дополнения после правок некорректны:\n - ' + '\n - '.join(errors))
+    # подписи к неверным вариантам — самым последним слоем: они сверяются с
+    # текстом варианта уже после всех правок
+    bank = apply_glosses(bank, load_glosses(ROOT / 'data/review/glosses.json'))
     bank.sort(key=lambda record: record['id'])
     report['fragments'] = fragment_pairs([(record['id'], record['questionRu']) for record in bank])
     (ROOT / 'data/bank.json').write_text(
