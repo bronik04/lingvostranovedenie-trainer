@@ -9,6 +9,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { createServer } from 'node:http';
 import { after, before, test } from 'node:test';
+import { eligible } from '../src/quiz.mjs';
 
 const HTML = new URL('../dist/lingvostranovedenie-trainer.html', import.meta.url);
 
@@ -16,6 +17,9 @@ let browser;
 let server;
 let baseUrl;
 let skipReason = null;
+// у node:test нет таймаута по умолчанию: зависший тест держал бы CI часами
+const LIMIT = { timeout: 60_000 };
+const ALL = { topics: [], years: [], stages: [], mode: 'all', onlyVerified: false };
 
 before(async () => {
   try {
@@ -64,14 +68,17 @@ async function openPage(t, viewport = { width: 1280, height: 900 }) {
 
 const bankOf = (page) => page.evaluate(() => QUESTION_BANK);
 
-/** Запись банка для вопроса на экране — по тексту вопроса и набору вариантов. */
+/** Запись банка для вопроса на экране. Сверяются и тексты, и id вариантов: в банке
+ * есть записи с одинаковым вопросом и вариантами, но разными id ответа
+ * (2017-18-reg-3 и 2019-20-mun-qf8fe30). */
 async function currentRecord(page, bank) {
   const question = await page.locator('#questionText').textContent();
-  const shown = (await page.locator('#options button span:nth-child(2)').allTextContents()).sort();
-  const record = bank.find((r) => r.questionRu === question
-    && r.options.map((o) => o.zh).sort().join('|') === shown.join('|'));
-  assert.ok(record, `вопрос на экране не найден в банке: ${question}`);
-  return record;
+  const shown = await page.locator('#options button').evaluateAll((buttons) => buttons
+    .map((b) => `${b.dataset.optionId}=${b.querySelector('span:nth-child(2)').textContent}`).sort().join('|'));
+  const matches = bank.filter((r) => r.questionRu === question
+    && r.options.map((o) => `${o.id}=${o.zh}`).sort().join('|') === shown);
+  assert.equal(matches.length, 1, `вопрос на экране не определить однозначно: ${question}`);
+  return matches[0];
 }
 
 async function answer(page, record, correct) {
@@ -88,7 +95,7 @@ async function startRound(page, size) {
   await page.locator('#quizView').waitFor();
 }
 
-test('главная открывается без ошибок и считает банк', async (t) => {
+test('главная открывается без ошибок и считает банк', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
   const bank = await bankOf(page);
@@ -101,7 +108,7 @@ test('главная открывается без ошибок и считае�
   assert.deepEqual(page.errors, []);
 });
 
-test('раунд: верный и неверный ответ, повтор ошибки и честный итог', async (t) => {
+test('раунд: верный и неверный ответ, повтор ошибки и честный итог', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
   const bank = await bankOf(page);
@@ -113,6 +120,8 @@ test('раунд: верный и неверный ответ, повтор ош
   while (await page.locator('#quizView').isVisible()) {
     const record = await currentRecord(page, bank);
     questions += 1;
+    assert.ok(questions <= 6, 'раунд не заканчивается');
+    if (questions === 6) assert.equal(record.id, wrongId, 'шестым должен вернуться ошибочный вопрос');
     // ошибаемся ровно один раз — на втором вопросе; повтор этой ошибки отвечаем верно
     const correct = questions !== 2;
     if (!correct) wrongId = record.id;
@@ -136,14 +145,14 @@ test('раунд: верный и неверный ответ, повтор ош
   assert.deepEqual(page.errors, []);
 });
 
-test('клавиатура: цифра отвечает, Enter ведёт дальше, Esc выходит', async (t) => {
+test('клавиатура: цифра отвечает, Enter ведёт дальше, Esc выходит', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
   await page.keyboard.press('Enter');
   await page.locator('#quizView').waitFor();
   await page.keyboard.press('Digit1');
   await page.locator('#nextButton:not(.hidden)').waitFor();
-  assert.equal(await page.locator('#options button:disabled').count(), 4);
+  assert.equal(await page.locator('#options button:not(:disabled)').count(), 0);
   await page.keyboard.press('Enter');
   assert.match(await page.locator('#progressLabel').textContent(), /^Вопрос 2 из/);
   await page.keyboard.press('Escape');
@@ -151,7 +160,7 @@ test('клавиатура: цифра отвечает, Enter ведёт дал
   assert.deepEqual(page.errors, []);
 });
 
-test('прогресс переживает перезагрузку, а режим «Ошибки» находит ошибку', async (t) => {
+test('прогресс переживает перезагрузку, а режим «Ошибки» находит ошибку', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
   const bank = await bankOf(page);
@@ -160,28 +169,29 @@ test('прогресс переживает перезагрузку, а реж�
   await page.locator('#leaveRound').click();
   await page.reload();
   assert.equal(await page.locator('#bankCount').textContent(), `Пройдено 1 из ${bank.length}`);
-  await page.locator('input[name="studyMode"][value="mistakes"]').check({ force: true });
+  await page.locator('.mode-option', { hasText: 'Ошибки' }).click();
   assert.equal(await page.locator('#eligibleNotice').textContent(), 'Под фильтры подходит вопросов: 1.');
   assert.deepEqual(page.errors, []);
 });
 
-test('фильтр по теме считает вопросы темы', async (t) => {
+test('фильтр по теме считает вопросы темы', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
   const bank = await bankOf(page);
   const topic = 'История и государство';
-  const expected = bank.filter((r) => r.topic === topic).length;
+  const expected = eligible(bank, { ...ALL, topics: [topic] }, {}).length;
   await page.locator('#settingsPanel > summary').click();
   await page.locator('#topicControls label', { hasText: topic }).locator('input').check();
   assert.equal(await page.locator('#eligibleNotice').textContent(), `Под фильтры подходит вопросов: ${expected}.`);
   assert.equal(await page.locator('#topicControls label', { hasText: topic }).locator('.topic-progress').textContent(),
     `0/${expected}`);
   await page.locator('#clearFilters').click();
-  assert.equal(await page.locator('#eligibleNotice').textContent(), `Под фильтры подходит вопросов: ${bank.length}.`);
+  assert.equal(await page.locator('#eligibleNotice').textContent(),
+    `Под фильтры подходит вопросов: ${eligible(bank, ALL, {}).length}.`);
   assert.deepEqual(page.errors, []);
 });
 
-test('база: поиск по-китайски и раскрытие ответа', async (t) => {
+test('база: поиск по-китайски и раскрытие ответа', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
   await page.locator('#openDatabase').click();
@@ -189,15 +199,18 @@ test('база: поиск по-китайски и раскрытие отве�
   await page.locator('#databaseSearch').fill('颐和园');
   assert.match(await page.locator('#databaseCount').textContent(), /^Показано [1-9]\d* из [1-9]\d* вопрос/);
   const first = page.locator('#databaseList article').first();
+  assert.equal(await first.locator('.row-answer').isVisible(), false, 'ответ виден до нажатия');
   await first.locator('summary').click();
+  // textContent читает и закрытый <details>, поэтому проверяется именно видимость
+  assert.equal(await first.locator('.row-answer').isVisible(), true, 'ответ не раскрылся');
   assert.match(await first.locator('.row-answer').textContent(), /^Ответ: /);
-  assert.ok(await first.locator('.row-sources a').count() > 0, 'у раскрытого ответа нет ссылки на источник');
+  assert.equal(await first.locator('.row-sources a').first().isVisible(), true, 'не видно ссылки на источник');
   await page.locator('#databaseSearch').fill('такого текста точно нет в базе');
   assert.equal(await page.locator('#databaseList .empty').textContent(), 'Ничего не найдено.');
   assert.deepEqual(page.errors, []);
 });
 
-test('тема переключается и запоминается', async (t) => {
+test('тема переключается и запоминается', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
   const before = await page.locator('html').getAttribute('data-theme');
@@ -208,18 +221,20 @@ test('тема переключается и запоминается', async (t
   assert.equal(await page.locator('html').getAttribute('data-theme'), after);
 });
 
-test('телефон: ни на одном экране нет горизонтальной прокрутки', async (t) => {
+test('телефон: ни на одном экране нет горизонтальной прокрутки', LIMIT, async (t) => {
   const page = await openPage(t, { width: 360, height: 780 });
   if (!page) return;
   const bank = await bankOf(page);
-  const overflow = () => page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+  const overflow = () => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
   assert.equal(await overflow(), 0, 'главная');
   await startRound(page, 5);
   await answer(page, await currentRecord(page, bank), false);
   assert.equal(await overflow(), 0, 'вопрос с разбором ответа');
   await page.locator('#leaveRound').click();
   await page.locator('#openDatabase').click();
-  await page.locator('#databaseList article').first().locator('summary').click();
+  const first = page.locator('#databaseList article').first();
+  await first.locator('summary').click();
+  assert.equal(await first.locator('.row-answer').isVisible(), true, 'ответ в базе не раскрылся');
   assert.equal(await overflow(), 0, 'база с раскрытым ответом');
   assert.deepEqual(page.errors, []);
 });

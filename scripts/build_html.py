@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import sys
+import tempfile
 from html import escape
 from pathlib import Path
 
@@ -95,9 +96,13 @@ def main() -> None:
     TARGET.parent.mkdir(parents=True, exist_ok=True)
     # через временный файл и замену: тесты читают dist/ параллельно со сборкой
     # в build.test.mjs и не должны увидеть файл, записанный наполовину
-    partial = TARGET.with_name(TARGET.name + '.partial')
-    partial.write_text(html, encoding='utf-8')
-    partial.replace(TARGET)
+    with tempfile.NamedTemporaryFile('w', encoding='utf-8', dir=TARGET.parent,
+                                     prefix=TARGET.name, suffix='.partial', delete=False) as partial:
+        partial.write(html)
+    try:
+        Path(partial.name).replace(TARGET)
+    finally:
+        Path(partial.name).unlink(missing_ok=True)
     verified = sum(1 for record in bank if record['answer']['state'] == 'verified')
     print(f'собрано: {TARGET} ({TARGET.stat().st_size // 1024} КБ), проверено {verified} из {len(bank)}')
 
