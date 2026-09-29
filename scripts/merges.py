@@ -14,10 +14,10 @@
 
 from __future__ import annotations
 
-import json
 from pathlib import Path
 
 from normalize import normalize_text
+from strict_json import loads_unique
 
 STAGE_ORDER = {'pri': 0, 'shk': 1, 'mun': 2, 'reg': 3, 'zak': 4}
 ENTRY_FIELDS = {'absorbs', 'reason'}
@@ -32,6 +32,28 @@ def _answer_text(record: dict) -> str | None:
 
 def _option_texts(record: dict) -> set[str]:
     return {normalize_text(option['zh']) for option in record['options']}
+
+
+def _spot(occurrence: dict) -> tuple:
+    return occurrence['year'], occurrence['stageCode'], occurrence['number']
+
+
+def _key_and_spot_errors(keep: dict, absorbed: dict) -> list[str]:
+    """Официальный ключ влитой записи обязан указывать на тот же ответ, а появления — не повторяться."""
+    errors: list[str] = []
+    absorbed_text = {option['id']: normalize_text(option['zh']) for option in absorbed['options']}
+    answer = _answer_text(keep)
+    for occurrence in absorbed['occurrences']:
+        key = occurrence.get('officialKey')
+        if key and absorbed_text.get(key) != answer:
+            errors.append(f'{absorbed["id"]}: официальный ключ появления {occurrence["year"]} '
+                          f'{occurrence["stageCode"]} расходится с ответом {keep["id"]} — '
+                          'это конфликт ключей, а не дубль')
+    taken = {_spot(o) for o in keep['occurrences'] if o['number'] is not None}
+    for occurrence in absorbed['occurrences']:
+        if occurrence['number'] is not None and _spot(occurrence) in taken:
+            errors.append(f'{absorbed["id"]}: появление {_spot(occurrence)} уже есть у {keep["id"]}')
+    return errors
 
 
 def validate_merges(merges: object, bank: list[dict]) -> list[str]:
@@ -84,7 +106,22 @@ def validate_merges(merges: object, bank: list[dict]) -> list[str]:
                 errors.append(f'{absorbed_id}: варианты не совпадают с {keep_id}')
             elif _answer_text(absorbed) != _answer_text(keep):
                 errors.append(f'{absorbed_id}: ответ не совпадает с {keep_id}')
+            else:
+                errors += _key_and_spot_errors(keep, absorbed)
     return errors
+
+
+def _reindexed(absorbed: dict, keep: dict) -> list[dict]:
+    """Появления влитой записи с официальным ключом в id вариантов оставшейся.
+
+    Ключ хранится как id варианта, а в разных записях варианты одного вопроса стоят в
+    разном порядке и под разными id: перенесённый как есть, он указал бы на чужой вариант.
+    """
+    keep_ids = {normalize_text(option['zh']): option['id'] for option in keep['options']}
+    absorbed_text = {option['id']: normalize_text(option['zh']) for option in absorbed['options']}
+    return [{**occurrence, 'officialKey': keep_ids[absorbed_text[occurrence['officialKey']]]}
+            if occurrence.get('officialKey') else occurrence
+            for occurrence in absorbed['occurrences']]
 
 
 def apply_merges(bank: list[dict], merges: dict[str, dict]) -> list[dict]:
@@ -103,7 +140,7 @@ def apply_merges(bank: list[dict], merges: dict[str, dict]) -> list[dict]:
             continue
         absorbed = [by_id[absorbed_id] for absorbed_id in item['absorbs']]
         occurrences = sorted(
-            [*record['occurrences'], *(o for other in absorbed for o in other['occurrences'])],
+            [*record['occurrences'], *(o for other in absorbed for o in _reindexed(other, record))],
             key=lambda o: (o['year'], STAGE_ORDER.get(o['stageCode'], 9),
                            o['number'] if o['number'] is not None else 10_000))
         # источники влитых записей не теряются: лишняя ссылка укрепляет ответ
@@ -122,7 +159,7 @@ def apply_merges(bank: list[dict], merges: dict[str, dict]) -> list[dict]:
 def load_merges(path: Path) -> dict[str, dict]:
     if not path.exists():
         return {}
-    merges = json.loads(path.read_text('utf-8'))
+    merges = loads_unique(path.read_text('utf-8'), 'склейках')
     if not isinstance(merges, dict):
         raise ValueError('склейки должны быть словарём id → запись')
     return merges

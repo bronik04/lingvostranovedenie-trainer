@@ -14,6 +14,8 @@ import re
 from pathlib import Path
 from urllib.parse import urlparse
 
+from strict_json import loads_unique
+
 MAX_LENGTH = 90
 CYRILLIC = re.compile(r'[А-Яа-яЁё]')
 ENTRY_FIELDS = {'reviewedAt', 'options'}
@@ -102,18 +104,10 @@ def apply_glosses(bank: list[dict], glosses: dict[str, dict]) -> list[dict]:
     return updated
 
 
-def _no_duplicate_keys(pairs: list[tuple[str, object]]) -> dict:
-    keys = [key for key, _ in pairs]
-    duplicates = sorted({key for key in keys if keys.count(key) > 1})
-    if duplicates:
-        raise ValueError(f'в подписях повторяются ключи: {duplicates}')
-    return dict(pairs)
-
-
 def load_glosses(path: Path) -> dict[str, dict]:
     if not path.exists():
         return {}
-    glosses = json.loads(path.read_text('utf-8'), object_pairs_hook=_no_duplicate_keys)
+    glosses = loads_unique(path.read_text('utf-8'), 'подписях')
     if not isinstance(glosses, dict):
         raise ValueError('подписи должны быть словарём id → запись')
     return glosses

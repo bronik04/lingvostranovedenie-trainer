@@ -8,9 +8,10 @@
 
 from __future__ import annotations
 
-import json
 import re
 from pathlib import Path
+
+from strict_json import loads_unique
 
 GROUP_ID = re.compile(r'^[a-z0-9]+(-[a-z0-9]+)*$')
 
@@ -52,7 +53,7 @@ def apply_fact_groups(bank: list[dict], groups: dict[str, list[str]]) -> list[di
 def load_fact_groups(path: Path) -> dict[str, list[str]]:
     if not path.exists():
         return {}
-    groups = json.loads(path.read_text('utf-8'))
+    groups = loads_unique(path.read_text('utf-8'), 'группах')
     if not isinstance(groups, dict):
         raise ValueError('группы должны быть словарём id группы → список id записей')
     return groups
