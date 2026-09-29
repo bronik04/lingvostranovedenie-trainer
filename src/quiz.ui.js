@@ -92,7 +92,8 @@ function toggleTheme() {
 function loadProgress() {
   try {
     const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
-    return stored.version === 1 && isValidProgress(stored.progress) ? stored.progress : {};
+    return stored.version === 1 && isValidProgress(stored.progress)
+      ? migrateProgress(QUESTION_BANK, stored.progress) : {};
   } catch {
     return {};
   }
@@ -134,7 +135,7 @@ function importProgress(file) {
       if (parsed.version !== 1 || !isValidProgress(parsed.progress)) {
         throw new Error('неверный формат файла');
       }
-      state.progress = parsed.progress;
+      state.progress = migrateProgress(QUESTION_BANK, parsed.progress);
       saveProgress();
       renderSetup();
     } catch {

@@ -15,9 +15,9 @@ from normalize import (completeness_errors, fragment_pairs, language_errors, nor
 from authored import load_authored, validate_authored
 from editorial import apply_editorial, load_editorial
 from explanations import apply_revisions, load_revisions
+from fact_groups import apply_fact_groups, load_fact_groups
 from glosses import apply_glosses, load_glosses
-
-STAGE_ORDER = {'pri': 0, 'shk': 1, 'mun': 2, 'reg': 3, 'zak': 4}
+from merges import STAGE_ORDER, apply_merges, load_merges
 
 
 def record_id(occurrence: dict) -> str:
@@ -341,6 +341,7 @@ def _write_report(report: dict, bank: list[dict]) -> None:
     lines = ['# Отчёт о слиянии', '',
              f'Записей в банке: {len(bank)}',
              f'Склеено дублей: {len(report["merged"])}',
+             f'Склеено вручную (merges.json): {report.get("glued", 0)}',
              f'Конфликтов ключей: {len(report["conflicts"])}',
              f'Без русского текста: {len(report["untranslated"])}',
              f'Отброшено по инвариантам: {len(report["dropped"])}',
@@ -371,6 +372,11 @@ def main() -> None:
     bank.extend(load_authored(ROOT / 'data/authored/questions.json', bank))
     # правки — последним слоем, чтобы доходить и до дополнений
     bank = apply_editorial(bank, load_editorial(ROOT / 'data/review/editorial.json'))
+    # склейка дублей — после правок: варианты сверяются уже по исправленному тексту
+    before_merges = len(bank)
+    bank = apply_merges(bank, load_merges(ROOT / 'data/review/merges.json'))
+    report['glued'] = before_merges - len(bank)
+    bank = apply_fact_groups(bank, load_fact_groups(ROOT / 'data/review/fact-groups.json'))
     # дополнения после правок проверяются здесь же, чтобы не записать банк,
     # который сборка потом отвергнет
     errors = validate_authored([r for r in bank if r.get('origin') == 'addition'],

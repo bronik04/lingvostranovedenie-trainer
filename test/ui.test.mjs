@@ -69,8 +69,8 @@ async function openPage(t, viewport = { width: 1280, height: 900 }) {
 const bankOf = (page) => page.evaluate(() => QUESTION_BANK);
 
 /** Запись банка для вопроса на экране. Сверяются и тексты, и id вариантов: в банке
- * есть записи с одинаковым вопросом и вариантами, но разными id ответа
- * (2017-18-reg-3 и 2019-20-mun-qf8fe30). */
+ * есть записи с одним и тем же текстом вопроса, но разными вариантами (олимпиада
+ * повторяет вопрос, меняя обманки: «Какая национальность основала династию Юань?»). */
 async function currentRecord(page, bank) {
   const question = await page.locator('#questionText').textContent();
   const shown = await page.locator('#options button').evaluateAll((buttons) => buttons
@@ -247,6 +247,57 @@ test('подписи появляются под неверными вариан
   assert.equal(await items.first().isVisible(), true);
   assert.match(await items.first().textContent(), /Тестовая подпись к неверному варианту/);
   assert.doesNotMatch(await row.textContent(), /Подпись правильного/);
+  assert.deepEqual(page.errors, []);
+});
+
+const OLD_PROGRESS = { attempts: 2, correct: 1, completed: true, lastCorrect: false, box: 0, dueAt: 1 };
+
+test('прогресс склеенного дубля переезжает на оставшуюся запись при загрузке и при импорте', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  const kept = bank.find((r) => r.mergedIds?.length);
+  assert.ok(kept, 'в банке нет склеенных записей');
+  const oldId = kept.mergedIds[0];
+  const stored = JSON.stringify({ version: 1, progress: { [oldId]: OLD_PROGRESS } });
+
+  await page.evaluate((value) => localStorage.setItem('lingvo-trainer:v1', value), stored);
+  await page.reload();
+  assert.equal(await page.locator('#bankCount').textContent(), `Пройдено 1 из ${bank.length}`);
+  assert.deepEqual(await page.evaluate(() => Object.keys(state.progress)), [kept.id]);
+  await page.locator('.mode-option', { hasText: 'Ошибки' }).click();
+  assert.equal(await page.locator('#eligibleNotice').textContent(), 'Под фильтры подходит вопросов: 1.');
+
+  await page.evaluate(() => localStorage.clear());
+  await page.reload();
+  assert.equal(await page.locator('#bankCount').textContent(), `Пройдено 0 из ${bank.length}`);
+  await page.locator('#importProgressFile').setInputFiles({
+    name: 'progress.json', mimeType: 'application/json', buffer: Buffer.from(stored),
+  });
+  await page.waitForFunction((id) => state.progress[id], kept.id);
+  assert.deepEqual(await page.evaluate(() => Object.keys(state.progress)), [kept.id]);
+  assert.equal(await page.locator('#bankCount').textContent(), `Пройдено 1 из ${bank.length}`);
+  assert.deepEqual(page.errors, []);
+});
+
+test('в раунде нет двух вопросов про один факт', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const grouped = await page.evaluate(() => QUESTION_BANK.filter((r) => r.factGroup).length);
+  assert.ok(grouped > 0, 'в банке нет меток групп');
+  // сотня раундов по 50 вопросов: без отбора хотя бы в одном оказались бы «двойники»
+  const worst = await page.evaluate(() => {
+    let repeats = 0;
+    for (let index = 0; index < 100; index += 1) {
+      const groups = buildRound(QUESTION_BANK, state.filters, {}, 50).map((r) => r.factGroup).filter(Boolean);
+      repeats += groups.length - new Set(groups).size;
+    }
+    return repeats;
+  });
+  assert.equal(worst, 0);
+  await startRound(page, 50);
+  const shown = await page.evaluate(() => state.round.map((r) => r.factGroup).filter(Boolean));
+  assert.equal(shown.length, new Set(shown).size);
   assert.deepEqual(page.errors, []);
 });
 

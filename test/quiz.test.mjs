@@ -338,3 +338,75 @@ test('подписи берутся только у неверных вариа�
   ]);
   assert.deepEqual(quiz.optionGlosses(record('plain')), []);
 });
+
+const progressItem = (overrides = {}) => ({
+  attempts: 2, correct: 1, completed: true, lastCorrect: true, box: 2, dueAt: 5_000, ...overrides,
+});
+
+test('раунд берёт из группы «один факт» одну запись', () => {
+  const bank = [
+    record('a', { factGroup: 'g' }), record('b', { factGroup: 'g' }),
+    record('c'), record('d'),
+  ];
+  for (const random of [() => 0, () => 0.5, () => 0.99]) {
+    const round = buildRound(bank, NO_FILTERS, {}, 3, random);
+    assert.equal(round.length, 3);
+    assert.equal(round.filter((r) => r.factGroup === 'g').length, 1, round.map((r) => r.id).join());
+  }
+});
+
+test('двойник не пропадает, если других вопросов не хватает: он идёт в конец раунда', () => {
+  const bank = [record('a', { factGroup: 'g' }), record('b', { factGroup: 'g' }), record('c')];
+  const round = buildRound(bank, NO_FILTERS, {}, 10, () => 0.5);
+  assert.equal(round.length, 3);
+  assert.equal(round.slice(0, 2).filter((r) => r.factGroup === 'g').length, 1);
+  assert.equal(round[2].factGroup, 'g');
+});
+
+test('«пора повторить» берёт из группы самую просроченную запись, вторая ждёт следующего раунда', () => {
+  const bank = [record('a', { factGroup: 'g' }), record('b', { factGroup: 'g' }), record('c')];
+  const progress = {
+    a: progressItem({ dueAt: 300 }), b: progressItem({ dueAt: 100 }), c: progressItem({ dueAt: 200 }),
+  };
+  const round = buildRound(bank, { ...NO_FILTERS, mode: 'due' }, progress, 2, () => 0.5, 1_000);
+  assert.deepEqual(round.map((r) => r.id), ['b', 'c']);
+});
+
+test('записи без группы раунд не трогает', () => {
+  const bank = [record('a'), record('b'), record('c')];
+  assert.equal(buildRound(bank, NO_FILTERS, {}, 3, () => 0.5).length, 3);
+});
+
+test('прогресс с влитой записи переезжает на оставшуюся', () => {
+  const bank = [record('kept', { mergedIds: ['gone'] }), record('other')];
+  const progress = { gone: progressItem(), other: progressItem({ box: 0 }) };
+  const migrated = quiz.migrateProgress(bank, progress);
+  assert.deepEqual(migrated, { kept: progressItem(), other: progressItem({ box: 0 }) });
+  assert.equal(quiz.isValidProgress(migrated), true);
+});
+
+test('если ученик отвечал на обе записи, попытки складываются, а срок берётся осторожный', () => {
+  const bank = [record('kept', { mergedIds: ['gone'] })];
+  const migrated = quiz.migrateProgress(bank, {
+    kept: progressItem({ attempts: 3, correct: 3, box: 3, dueAt: 9_000, lastCorrect: true }),
+    gone: progressItem({ attempts: 2, correct: 0, box: 0, dueAt: 100, lastCorrect: false }),
+  });
+  assert.deepEqual(migrated.kept, {
+    attempts: 5, correct: 3, completed: true, lastCorrect: false, box: 0, dueAt: 100,
+  });
+  assert.equal('gone' in migrated, false);
+  assert.equal(quiz.isValidProgress(migrated), true);
+});
+
+test('перенос прогресса не меняет исходный объект и повторный вызов ничего не портит', () => {
+  const bank = [record('kept', { mergedIds: ['gone'] })];
+  const progress = { gone: progressItem() };
+  const once = quiz.migrateProgress(bank, progress);
+  assert.deepEqual(Object.keys(progress), ['gone']);
+  assert.deepEqual(quiz.migrateProgress(bank, once), once);
+});
+
+test('без влитых записей прогресс остаётся тем же объектом', () => {
+  const progress = { a: progressItem() };
+  assert.equal(quiz.migrateProgress([record('a')], progress), progress);
+});
