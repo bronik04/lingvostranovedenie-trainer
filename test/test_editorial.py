@@ -88,7 +88,13 @@ class EditorialInBankTest(unittest.TestCase):
     def test_every_edit_reaches_the_bank(self):
         edits = json.loads((ROOT / 'data/review/editorial.json').read_text('utf-8'))
         bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
+        merges = json.loads((ROOT / 'data/review/merges.json').read_text('utf-8'))
+        absorbed = {record_id for item in merges.values() for record_id in item['absorbs']}
         for record_id, edit in edits.items():
+            if record_id in absorbed:
+                # запись влита в другую склейкой дублей: правка сделала своё дело до склейки
+                self.assertNotIn(record_id, bank)
+                continue
             record = bank[record_id]
             self.assertEqual(record.get('editorial', {}).get('reason'), edit['reason'].strip(), record_id)
             if 'questionRu' in edit:

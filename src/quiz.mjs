@@ -11,6 +11,34 @@ const ROUND_SIZES = new Set([5, 10, 20, 50, Number.MAX_SAFE_INTEGER]);
 const REVIEW_INTERVALS_DAYS = [0, 1, 3, 7, 16, 35, 90];
 const DAY_MS = 86_400_000;
 
+function mergeProgress(kept, absorbed) {
+  if (!kept) return absorbed;
+  // отметки времени последнего ответа нет, поэтому при расхождении берём
+  // осторожный вариант: повторить раньше и не считать ошибку исправленной
+  return {
+    attempts: kept.attempts + absorbed.attempts,
+    correct: kept.correct + absorbed.correct,
+    completed: true,
+    lastCorrect: kept.lastCorrect && absorbed.lastCorrect,
+    box: Math.min(kept.box, absorbed.box),
+    dueAt: Math.min(kept.dueAt, absorbed.dueAt),
+  };
+}
+
+// Записи, которые вошли в другую при склейке дублей, оставляют в `mergedIds` прежние
+// id: прогресс, сохранённый под ними, переезжает на оставшуюся запись.
+export function migrateProgress(bank, progress) {
+  let migrated = progress;
+  for (const record of bank) {
+    for (const oldId of record.mergedIds ?? []) {
+      if (!(oldId in migrated)) continue;
+      const { [oldId]: absorbed, ...rest } = migrated;
+      migrated = { ...rest, [record.id]: mergeProgress(rest[record.id], absorbed) };
+    }
+  }
+  return migrated;
+}
+
 export function matchingOccurrence(record, filters) {
   return record.occurrences.find((occurrence) =>
     (!filters.years.length || filters.years.includes(occurrence.year))
@@ -173,14 +201,33 @@ function shuffled(items, random) {
   return copy;
 }
 
+// Из группы «один факт» в раунд берётся одна запись. Это предпочтение, а не запрет:
+// если других вопросов не хватает до нужного размера, оставшиеся записи групп
+// добираются в конец раунда, подальше от своих двойников.
+function onePerFact(ordered, size) {
+  const seen = new Set();
+  const picked = [];
+  const deferred = [];
+  for (const record of ordered) {
+    if (picked.length === size) break;
+    if (record.factGroup && seen.has(record.factGroup)) {
+      deferred.push(record);
+    } else {
+      if (record.factGroup) seen.add(record.factGroup);
+      picked.push(record);
+    }
+  }
+  return [...picked, ...deferred.slice(0, size - picked.length)];
+}
+
 export function buildRound(bank, filters, progress, size, random = Math.random, now = Date.now()) {
   const pool = eligible(bank, filters, progress, now);
   if (filters.mode === 'due') {
     // тут важнее не разнообразие, а то, что самое просроченное идёт первым
     const byDueDate = [...pool].sort((a, b) => (progress[a.id]?.dueAt ?? 0) - (progress[b.id]?.dueAt ?? 0));
-    return byDueDate.slice(0, Math.min(size, byDueDate.length));
+    return onePerFact(byDueDate, size);
   }
-  return shuffled(pool, random).slice(0, Math.min(size, pool.length));
+  return onePerFact(shuffled(pool, random), size);
 }
 
 export function labelledOptions(record, random = Math.random) {
