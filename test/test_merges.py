@@ -85,6 +85,53 @@ class ApplyMergesTest(unittest.TestCase):
         self.assertNotIn('mergedIds', original[0])
 
 
+class OfficialKeyTest(unittest.TestCase):
+    """Официальный ключ хранится как id варианта, а у влитой записи id другие."""
+
+    def keyed_pair(self, key_text='拉萨'):
+        bank = pair()
+        absorbed = bank[1]
+        absorbed['occurrences'][0]['officialKey'] = next(o['id'] for o in absorbed['options'] if o['zh'] == key_text)
+        return bank
+
+    def test_key_of_the_absorbed_appearance_points_to_the_same_text_in_the_kept_record(self):
+        bank = self.keyed_pair()
+        absorbed_key = bank[1]['occurrences'][0]['officialKey']
+        self.assertNotEqual(absorbed_key, 'o1')            # id действительно разъехались
+        merged = apply_merges(bank, MERGE)[0]
+        keys = {o['year']: o['officialKey'] for o in merged['occurrences']}
+        self.assertEqual(keys['2022-23'], 'o1')            # 拉萨 в оставшейся записи
+        self.assertEqual(keys['2019-20'], None)
+
+    def test_key_of_the_kept_appearance_is_left_alone(self):
+        bank = pair()
+        bank[0]['occurrences'][0]['officialKey'] = 'o1'
+        merged = apply_merges(bank, MERGE)[0]
+        self.assertEqual(merged['occurrences'][0]['officialKey'], 'o1')
+
+    def test_absorbed_record_is_not_mutated_by_reindexing(self):
+        bank = self.keyed_pair()
+        before = bank[1]['occurrences'][0]['officialKey']
+        apply_merges(bank, MERGE)
+        self.assertEqual(bank[1]['occurrences'][0]['officialKey'], before)
+
+    def test_key_pointing_at_another_answer_is_a_conflict_not_a_duplicate(self):
+        bank = self.keyed_pair(key_text='北京')
+        errors = validate_merges(MERGE, bank)
+        self.assertTrue(any('расходится с ответом' in e for e in errors), errors)
+        with self.assertRaises(ValueError):
+            apply_merges(bank, MERGE)
+
+    def test_same_year_stage_and_number_cannot_be_glued(self):
+        bank = [record('a', '2019-20', number=3), shuffled(record('b', '2019-20', number=3))]
+        errors = validate_merges(MERGE, bank)
+        self.assertTrue(any('уже есть у a' in e for e in errors), errors)
+
+    def test_appearances_without_a_number_are_allowed_to_share_year_and_stage(self):
+        bank = [record('a', '2019-20', number=None), shuffled(record('b', '2019-20', number=None))]
+        self.assertEqual(validate_merges(MERGE, bank), [])
+
+
 class ValidateMergesTest(unittest.TestCase):
     def errors(self, merges, bank=None):
         return validate_merges(merges, bank if bank is not None else pair())
@@ -143,6 +190,14 @@ class LoadMergesTest(unittest.TestCase):
     def test_missing_file_means_no_merges(self):
         self.assertEqual(load_merges(Path('/nonexistent/merges.json')), {})
 
+    def test_repeated_key_in_the_file_is_an_error_not_a_silent_overwrite(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'merges.json'
+            path.write_text('{"a": {"absorbs": ["b"], "reason": "r"}, "a": {"absorbs": ["c"], "reason": "r"}}',
+                            encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, 'в склейках повторяются ключи'):
+                load_merges(path)
+
     def test_reads_a_file_and_rejects_a_non_object(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / 'merges.json'
@@ -158,7 +213,7 @@ class MergesInBankTest(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.merges = json.loads((ROOT / 'data/review/merges.json').read_text('utf-8'))
+        cls.merges = load_merges(ROOT / 'data/review/merges.json')
         cls.bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
 
     def test_absorbed_records_are_gone_and_kept_ones_remember_them(self):
@@ -173,6 +228,13 @@ class MergesInBankTest(unittest.TestCase):
             spots = [(o['year'], o['stageCode'], o['number']) for o in self.bank[keep_id]['occurrences']]
             self.assertGreaterEqual(len(spots), 1 + len(item['absorbs']), keep_id)
             self.assertEqual(len(spots), len(set(spots)), keep_id)
+
+    def test_official_keys_of_merged_records_point_at_the_answer(self):
+        for keep_id in self.merges:
+            record = self.bank[keep_id]
+            for occurrence in record['occurrences']:
+                self.assertIn(occurrence['officialKey'], (None, record['answer']['optionId']),
+                              f"{keep_id} {occurrence['year']} {occurrence['stageCode']}")
 
     def test_merged_ids_never_collide_with_live_ids(self):
         merged = {i for r in self.bank.values() for i in r.get('mergedIds', [])}

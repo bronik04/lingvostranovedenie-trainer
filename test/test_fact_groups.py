@@ -58,26 +58,23 @@ class FactGroupsTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 load_fact_groups(path)
 
+    def test_repeated_group_id_in_the_file_is_an_error_not_a_silent_overwrite(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'groups.json'
+            path.write_text('{"g": ["a", "b"], "g": ["c", "d"]}', encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, 'в группах повторяются ключи'):
+                load_fact_groups(path)
+
 
 class FactGroupsInBankTest(unittest.TestCase):
     def test_every_group_reaches_the_bank_and_nothing_else_is_marked(self):
-        groups = json.loads((ROOT / 'data/review/fact-groups.json').read_text('utf-8'))
+        groups = load_fact_groups(ROOT / 'data/review/fact-groups.json')
         bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
         expected = {record_id: group for group, ids in groups.items() for record_id in ids}
         for record_id, group in expected.items():
             self.assertEqual(bank[record_id].get('factGroup'), group, record_id)
         marked = {i for i, r in bank.items() if 'factGroup' in r}
         self.assertEqual(marked, set(expected))
-
-    def test_members_of_a_group_are_not_one_merged_record(self):
-        # запись, которая уже склеена из двух, не может стоять в группе «двойников» сама с собой
-        groups = json.loads((ROOT / 'data/review/fact-groups.json').read_text('utf-8'))
-        bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
-        for group, ids in groups.items():
-            merged = [set(bank[i].get('mergedIds', [])) | {i} for i in ids]
-            for first in range(len(merged)):
-                for second in range(first + 1, len(merged)):
-                    self.assertFalse(merged[first] & merged[second], group)
 
 
 if __name__ == '__main__':

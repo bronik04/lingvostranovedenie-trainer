@@ -357,19 +357,19 @@ test('раунд берёт из группы «один факт» одну з�
 
 test('двойник не пропадает, если других вопросов не хватает: он идёт в конец раунда', () => {
   const bank = [record('a', { factGroup: 'g' }), record('b', { factGroup: 'g' }), record('c')];
-  const round = buildRound(bank, NO_FILTERS, {}, 10, () => 0.5);
-  assert.equal(round.length, 3);
-  assert.equal(round.slice(0, 2).filter((r) => r.factGroup === 'g').length, 1);
-  assert.equal(round[2].factGroup, 'g');
+  // random = 0.99 оставляет порядок [a, b, c]: без отбора двойники стояли бы подряд в начале
+  const round = buildRound(bank, NO_FILTERS, {}, 10, () => 0.99);
+  assert.deepEqual(round.map((r) => r.id), ['a', 'c', 'b']);
 });
 
 test('«пора повторить» берёт из группы самую просроченную запись, вторая ждёт следующего раунда', () => {
   const bank = [record('a', { factGroup: 'g' }), record('b', { factGroup: 'g' }), record('c')];
   const progress = {
-    a: progressItem({ dueAt: 300 }), b: progressItem({ dueAt: 100 }), c: progressItem({ dueAt: 200 }),
+    a: progressItem({ dueAt: 100 }), b: progressItem({ dueAt: 200 }), c: progressItem({ dueAt: 300 }),
   };
+  // без отбора по группам получилось бы [a, b]
   const round = buildRound(bank, { ...NO_FILTERS, mode: 'due' }, progress, 2, () => 0.5, 1_000);
-  assert.deepEqual(round.map((r) => r.id), ['b', 'c']);
+  assert.deepEqual(round.map((r) => r.id), ['a', 'c']);
 });
 
 test('записи без группы раунд не трогает', () => {
@@ -395,6 +395,18 @@ test('если ученик отвечал на обе записи, попыт�
     attempts: 5, correct: 3, completed: true, lastCorrect: false, box: 0, dueAt: 100,
   });
   assert.equal('gone' in migrated, false);
+  assert.equal(quiz.isValidProgress(migrated), true);
+});
+
+test('осторожный вариант выбирается независимо от того, на какой записи «хуже»', () => {
+  const bank = [record('kept', { mergedIds: ['gone'] })];
+  const migrated = quiz.migrateProgress(bank, {
+    kept: progressItem({ attempts: 2, correct: 0, box: 0, dueAt: 100, lastCorrect: false }),
+    gone: progressItem({ attempts: 3, correct: 3, box: 3, dueAt: 9_000, lastCorrect: true }),
+  });
+  assert.deepEqual(migrated.kept, {
+    attempts: 5, correct: 3, completed: true, lastCorrect: false, box: 0, dueAt: 100,
+  });
   assert.equal(quiz.isValidProgress(migrated), true);
 });
 
