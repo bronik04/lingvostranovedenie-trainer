@@ -1,18 +1,21 @@
 # Проверка ссылок-источников
 
 Проверено ссылок: 424
-Битых сейчас: 79
-Подтверждено два прогона подряд: 0
+Битых сейчас: 69
+Подтверждено два прогона подряд: 2
 
-## Под наблюдением (есть ответ сервера, но подтвердим на следующей неделе)
+## Подтверждённые (нужно чинить)
 
 - http://www.kepu.net.cn/gb/technology/ancientech/ancientech_ceramics/200312300038.html — 405 (записи: `2025-26-mun-10`)
 - https://bigenc.ru/c/russko-iaponskaia-voina-1904-1905-4bd7ec — 401 (записи: `2022-23-mun-5`)
 
+## Под наблюдением (есть ответ сервера, но подтвердим на следующей неделе)
+
+- https://invest.nso.ru/cn/page/66 — 502 (записи: `addition-b1-19`)
+
 ## Неубедительные (таймаут, обрыв соединения, TLS/DNS, 403/418/429 — может быть путь до сайта или антибот-блокировка, а не сама ссылка; не считаются и не подтверждаются)
 
 - http://www.hangzhou.gov.cn/ — timeout (записи: `2015-16-shk-65`)
-- http://www.hnskl.org/zyrw/zymr/20180226/3229.html — timed out (записи: `addition-b1-13`)
 - http://www.silkroads.org.cn/portal.php?mod=view&aid=32358 — timed out (записи: `2023-24-reg-4`)
 - https://baike.baidu.com/item/%E4%B8%80%E7%99%BE%E5%8D%95%E5%85%AB%E5%B0%86/19408 — 403 (записи: `2020-21-pri-qa538eb`)
 - https://baike.baidu.com/item/%E4%B8%80%E9%97%AE%E4%B8%89%E4%B8%8D%E7%9F%A5/755390 — 403 (записи: `2017-18-reg-2`)
@@ -49,7 +52,7 @@
 - https://baike.baidu.com/item/%E6%B5%B7%E5%B3%A1%E4%B8%A4%E5%B2%B8/7728460 — 403 (записи: `2019-20-reg-9`)
 - https://baike.baidu.com/item/%E8%83%A1%E7%84%95%E5%BA%B8%E7%BA%BF — 403 (записи: `2017-18-zak-8`)
 - https://baike.baidu.com/item/%E8%87%AA%E6%B2%BB%E5%8C%BA — 403 (записи: `2019-20-shk-q048752`)
-- https://baike.baidu.com/item/%E8%8A%B1%E4%B8%AD%E5%9B%9B%E5%90%9B%E5%AD%90 — 403 (записи: `2017-18-zak-4`, `2022-23-zak-9`)
+- https://baike.baidu.com/item/%E8%8A%B1%E4%B8%AD%E5%9B%9B%E5%90%9B%E5%AD%90 — 403 (записи: `2017-18-zak-4`)
 - https://baike.baidu.com/item/%E8%9A%82%E8%9A%81%E4%B8%8A%E6%A0%91 — 403 (записи: `2025-26-shk-32`)
 - https://baike.baidu.com/item/%E9%81%93%E8%A7%82 — 403 (записи: `2017-18-reg-6`)
 - https://baike.baidu.com/item/%E9%97%B9%E6%B4%9E%E6%88%BF — 403 (записи: `2022-23-zak-10`)
@@ -58,7 +61,6 @@
 - https://baike.baidu.com/item/%E9%BB%84%E6%B2%B3%E5%85%A5%E6%B5%B7%E5%8F%A3/8989989 — 403 (записи: `2018-19-mun-52`)
 - https://baike.baidu.com/item/%E9%BE%99%E8%99%8E%E6%96%97 — 403 (записи: `2020-21-zak-qf17a29`)
 - https://baike.baidu.com/item/%E9%BE%9F%E8%99%BD%E5%AF%BF/2356846 — 403 (записи: `2015-16-zak-7`, `2019-20-reg-2`)
-- https://invest.nso.ru/cn/page/66 — timed out (записи: `addition-b1-19`)
 - https://mosgortur.ru/ — timed out (записи: `2018-19-mun-54`)
 - https://sdaj.hunan.gov.cn/sdaj/ggfw/hnts/lyzy/202105/t20210511_16529895.html — [SSL: BAD_ECPOINT] bad ecpoint (_ssl.c:1010) (записи: `addition-b1-04`)
 - https://wwj.shaanxi.gov.cn/ztzl/ndzt/2013n/slsy/ycdt_2412/201408/t20140807_2145037.html — [Errno 101] Network is unreachable (записи: `2019-20-mun-qcfa774`)
@@ -74,15 +76,6 @@
 - https://www.yidaiyilu.gov.cn/p/100997.html — RemoteDisconnected: Remote end closed connection without response (записи: `addition-b2-15`)
 - https://www.yidaiyilu.gov.cn/z/230315/index.shtml — RemoteDisconnected: Remote end closed connection without response (записи: `2017-18-reg-1`)
 - https://www.zj.news.cn/20240329/0b230997936d440eb05e265e742ebcb1/c.html — [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.zj.news.cn'. (_ssl.c:1010) (записи: `2022-23-mun-8`)
-- https://zh.wikipedia.org/zh-hans/%E4%B8%AD%E5%9C%8B%E9%99%B6%E7%93%B7%E5%8F%B2 — 429 (записи: `2025-26-mun-10`)
-- https://zh.wikipedia.org/zh-hans/%E4%BA%94%E7%BE%8A%E4%BC%A0%E8%AF%B4 — 429 (записи: `2016-17-zak-2`)
-- https://zh.wikipedia.org/zh-hans/%E4%BA%AC%E4%B9%9D%E9%93%81%E8%B7%AF — 429 (записи: `2017-18-shk-8`)
-- https://zh.wikipedia.org/zh-hans/%E5%92%B8%E4%BA%A8%E9%85%92%E5%BA%97 — 429 (записи: `2018-19-reg-10`)
-- https://zh.wikipedia.org/zh-hans/%E5%A4%8F%E6%9C%9D — 429 (записи: `2015-16-mun-1`)
-- https://zh.wikipedia.org/zh-hans/%E5%A5%A7%E6%9E%97%E5%8C%B9%E5%85%8B%E9%81%8B%E5%8B%95%E6%9C%83%E4%B8%AD%E5%9C%8B%E4%BB%A3%E8%A1%A8%E5%9C%98 — 429 (записи: `2023-24-reg-10`)
-- https://zh.wikipedia.org/zh-hans/%E6%B2%83%E7%BD%97%E6%B6%85%E6%97%A5 — 429 (записи: `2018-19-shk-7`)
-- https://zh.wikipedia.org/zh-hans/%E7%9B%B4%E8%BE%96%E5%B8%82_(%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD) — 429 (записи: `2015-16-reg-1`, `2017-18-mun-6`, `2025-26-mun-8`, `2025-26-shk-28`)
-- https://zh.wikipedia.org/zh-hans/%E8%80%81%E8%88%8D — 429 (записи: `2015-16-zak-8`, `2025-26-mun-5`)
 - https://zh.wikipedia.org/zh-hans/%E8%A5%BF%E5%AE%89%E5%9F%8E%E5%A2%99 — 429 (записи: `2019-20-shk-qe5cbe0`)
 - https://zh.wikipedia.org/zh-hans/%E9%9D%92%E6%B5%B7%E7%9C%81 — 429 (записи: `2024-25-pri-34`)
 - https://zh.wikipedia.org/zh-hans/%E9%B3%B3%E5%87%B0 — 429 (записи: `2025-26-mun-9`)
