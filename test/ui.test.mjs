@@ -213,10 +213,12 @@ test('база: поиск по-китайски и раскрытие отве�
 test('подписи появляются под неверными вариантами после ответа и в базе', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
-  // glosses.json в пилоте ещё пуст: подписи подкладываются в банк прямо на странице —
-  // одному неверному варианту и, для проверки, правильному (её показывать нельзя)
+  // тест не зависит от glosses.json: настоящие подписи вопроса снимаются, а тестовые
+  // подкладываются прямо на странице — одному неверному варианту и, для проверки,
+  // правильному (её показывать нельзя)
   const { record, wrongId } = await page.evaluate(() => {
     const target = QUESTION_BANK.find((r) => r.id === '2015-16-mun-1');
+    target.options.forEach((o) => { delete o.gloss; });
     const wrong = target.options.find((o) => o.id !== target.answer.optionId);
     wrong.gloss = 'Тестовая подпись к неверному варианту';
     target.options.find((o) => o.id === target.answer.optionId).gloss = 'Подпись правильного — не показывать';
