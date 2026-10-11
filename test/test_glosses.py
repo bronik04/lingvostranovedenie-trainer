@@ -87,6 +87,12 @@ class GlossesTest(unittest.TestCase):
         glosses = {'2015-16-zak-4': entry({'o2': gloss(zh='1911', ru='1911 — Учанское восстание')})}
         self.assertEqual(validate_glosses(glosses, [years]), [])
 
+    def test_year_option_with_hieroglyphs_is_not_repeated(self):
+        years = record(options=[{'id': 'o1', 'zh': '1912 年'}, {'id': 'o2', 'zh': '1911 年'},
+                                {'id': 'o3', 'zh': '1910 年'}, {'id': 'o4', 'zh': '1915 年'}])
+        glosses = {'2015-16-zak-4': entry({'o2': gloss(zh='1911 年', ru='1911 年 — Учанское восстание')})}
+        self.assertRejected(glosses, 'повторяет сам вариант', [years])
+
     def test_rejects_gloss_for_question_without_verified_answer(self):
         unverified = record(answer={'optionId': None, 'state': 'needs-review'})
         self.assertRejected({'2015-16-zak-4': entry({'o2': gloss()})}, 'без проверенного ответа', [unverified])

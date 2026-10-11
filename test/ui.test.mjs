@@ -252,6 +252,24 @@ test('подписи появляются под неверными вариан
   assert.deepEqual(page.errors, []);
 });
 
+test('настоящие подписи из банка стоят под всеми неверными вариантами', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  // вся цепочка на реальных данных: data/bank.json → dist → интерфейс; ответ верный,
+  // поэтому подписи должны быть под каждым неверным вариантом, а не только под выбранным
+  const bank = JSON.parse(readFileSync(new URL('../data/bank.json', import.meta.url), 'utf8'));
+  const record = bank.find((r) => r.options.filter((o) => o.gloss).length === 3);
+  assert.ok(record, 'в банке нет вопроса с подписями у всех трёх неверных вариантов');
+  await page.evaluate((id) => startRoundWith([QUESTION_BANK.find((r) => r.id === id)]), record.id);
+  await page.locator(`#options button[data-option-id="${record.answer.optionId}"]`).click();
+  for (const option of record.options) {
+    const note = page.locator(`#options button[data-option-id="${option.id}"] .option-gloss`);
+    assert.equal(await note.count(), option.gloss ? 1 : 0, `${record.id}/${option.id}: число подписей`);
+    if (option.gloss) assert.equal(await note.textContent(), option.gloss, `${record.id}/${option.id}`);
+  }
+  assert.deepEqual(page.errors, []);
+});
+
 const OLD_PROGRESS = { attempts: 2, correct: 1, completed: true, lastCorrect: false, box: 0, dueAt: 1 };
 
 test('прогресс склеенного дубля переезжает на оставшуюся запись при загрузке и при импорте', LIMIT, async (t) => {

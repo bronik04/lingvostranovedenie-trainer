@@ -39,6 +39,12 @@ test('в собранном файле вопросы по-русски, а ва
   }
 });
 
+test('встроенный банк совпадает с data/bank.json целиком, вместе с подписями', () => {
+  const html = build();
+  const embedded = JSON.parse(html.match(/const QUESTION_BANK = (\[.*?\]);\n/s)[1]);
+  assert.deepEqual(embedded, JSON.parse(readFileSync(new URL('data/bank.json', ROOT), 'utf8')));
+});
+
 test('минификация не ломает синтаксис встроенных скриптов', () => {
   const html = build();
   const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map((m) => m[1]);
