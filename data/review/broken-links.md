@@ -1,21 +1,18 @@
 # Проверка ссылок-источников
 
 Проверено ссылок: 424
-Битых сейчас: 69
+Битых сейчас: 74
 Подтверждено два прогона подряд: 2
 
 ## Подтверждённые (нужно чинить)
 
-- http://www.kepu.net.cn/gb/technology/ancientech/ancientech_ceramics/200312300038.html — 405 (записи: `2025-26-mun-10`)
 - https://bigenc.ru/c/russko-iaponskaia-voina-1904-1905-4bd7ec — 401 (записи: `2022-23-mun-5`)
-
-## Под наблюдением (есть ответ сервера, но подтвердим на следующей неделе)
-
 - https://invest.nso.ru/cn/page/66 — 502 (записи: `addition-b1-19`)
 
 ## Неубедительные (таймаут, обрыв соединения, TLS/DNS, 403/418/429 — может быть путь до сайта или антибот-блокировка, а не сама ссылка; не считаются и не подтверждаются)
 
 - http://www.hangzhou.gov.cn/ — timeout (записи: `2015-16-shk-65`)
+- http://www.kremlin.ru/acts/bank/16407 — 403 (записи: `2021-22-reg-qbb2e02`)
 - http://www.silkroads.org.cn/portal.php?mod=view&aid=32358 — timed out (записи: `2023-24-reg-4`)
 - https://baike.baidu.com/item/%E4%B8%80%E7%99%BE%E5%8D%95%E5%85%AB%E5%B0%86/19408 — 403 (записи: `2020-21-pri-qa538eb`)
 - https://baike.baidu.com/item/%E4%B8%80%E9%97%AE%E4%B8%89%E4%B8%8D%E7%9F%A5/755390 — 403 (записи: `2017-18-reg-2`)
@@ -26,7 +23,6 @@
 - https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%9B%9B%E5%A4%A7%E6%B5%B7%E5%9F%9F/14444698 — 403 (записи: `2024-25-mun-34`, `2025-26-mun-6`)
 - https://baike.baidu.com/item/%E4%B9%9D%E5%AF%A8%E6%B2%9F%E5%9B%BD%E5%AE%B6%E7%BA%A7%E8%87%AA%E7%84%B6%E4%BF%9D%E6%8A%A4%E5%8C%BA/8762684 — 403 (записи: `2016-17-zak-3`)
 - https://baike.baidu.com/item/%E4%B9%A6%E5%90%8C%E6%96%87/858625 — 403 (записи: `2019-20-mun-qe6c5d3`, `2022-23-shk-q2ecb2d`)
-- https://baike.baidu.com/item/%E4%BA%94%E5%9B%9B%E8%BF%90%E5%8A%A8/291670 — 403 (записи: `2016-17-reg-6`)
 - https://baike.baidu.com/item/%E4%BA%AC%E5%89%A7%E8%84%B8%E8%B0%B1 — 403 (записи: `2017-18-shk-3`)
 - https://baike.baidu.com/item/%E4%BA%B2%E5%B1%9E%E7%A7%B0%E8%B0%93 — 403 (записи: `2020-21-zak-q310901`)
 - https://baike.baidu.com/item/%E4%BC%8F%E7%BE%B2/279357 — 403 (записи: `2023-24-reg-5`)
@@ -76,6 +72,12 @@
 - https://www.yidaiyilu.gov.cn/p/100997.html — RemoteDisconnected: Remote end closed connection without response (записи: `addition-b2-15`)
 - https://www.yidaiyilu.gov.cn/z/230315/index.shtml — RemoteDisconnected: Remote end closed connection without response (записи: `2017-18-reg-1`)
 - https://www.zj.news.cn/20240329/0b230997936d440eb05e265e742ebcb1/c.html — [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.zj.news.cn'. (_ssl.c:1010) (записи: `2022-23-mun-8`)
+- https://zh.wikipedia.org/zh-hans/%E5%92%B8%E4%BA%A8%E9%85%92%E5%BA%97 — 429 (записи: `2018-19-reg-10`)
+- https://zh.wikipedia.org/zh-hans/%E5%A4%8F%E6%9C%9D — 429 (записи: `2015-16-mun-1`)
+- https://zh.wikipedia.org/zh-hans/%E5%A5%A7%E6%9E%97%E5%8C%B9%E5%85%8B%E9%81%8B%E5%8B%95%E6%9C%83%E4%B8%AD%E5%9C%8B%E4%BB%A3%E8%A1%A8%E5%9C%98 — 429 (записи: `2023-24-reg-10`)
+- https://zh.wikipedia.org/zh-hans/%E6%B2%83%E7%BD%97%E6%B6%85%E6%97%A5 — 429 (записи: `2018-19-shk-7`)
+- https://zh.wikipedia.org/zh-hans/%E7%9B%B4%E8%BE%96%E5%B8%82_(%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD) — 429 (записи: `2015-16-reg-1`, `2017-18-mun-6`, `2025-26-mun-8`, `2025-26-shk-28`)
+- https://zh.wikipedia.org/zh-hans/%E8%80%81%E8%88%8D — 429 (записи: `2015-16-zak-8`, `2025-26-mun-5`)
 - https://zh.wikipedia.org/zh-hans/%E8%A5%BF%E5%AE%89%E5%9F%8E%E5%A2%99 — 429 (записи: `2019-20-shk-qe5cbe0`)
 - https://zh.wikipedia.org/zh-hans/%E9%9D%92%E6%B5%B7%E7%9C%81 — 429 (записи: `2024-25-pri-34`)
 - https://zh.wikipedia.org/zh-hans/%E9%B3%B3%E5%87%B0 — 429 (записи: `2025-26-mun-9`)
