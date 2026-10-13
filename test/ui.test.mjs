@@ -115,16 +115,19 @@ test('раунд: верный и неверный ответ, повтор ош
   const page = await openPage(t);
   if (!page) return;
   const bank = await bankOf(page);
-  await startRound(page, 5);
-  assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 1 из 5');
+  await startRound(page, 10);
+  assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 1 из 10');
 
   let wrongId = null;
   let questions = 0;
   while (await page.locator('#quizView').isVisible()) {
     const record = await currentRecord(page, bank);
     questions += 1;
-    assert.ok(questions <= 6, 'раунд не заканчивается');
-    if (questions === 6) assert.equal(record.id, wrongId, 'шестым должен вернуться ошибочный вопрос');
+    assert.ok(questions <= 11, 'раунд не заканчивается');
+    // ошибка на втором вопросе возвращается после пяти других карточек — восьмой
+    const isRepeat = questions === 8;
+    if (isRepeat) assert.equal(record.id, wrongId, 'восьмым должен вернуться ошибочный вопрос');
+    assert.equal(await page.locator('#retryPill').isVisible(), isRepeat, `плашка «повтор ошибки» на вопросе ${questions}`);
     // ошибаемся ровно один раз — на втором вопросе; повтор этой ошибки отвечаем верно
     const correct = questions !== 2;
     if (!correct) wrongId = record.id;
@@ -135,10 +138,10 @@ test('раунд: верный и неверный ответ, повтор ош
     await page.locator('#nextButton').click();
   }
 
-  assert.equal(questions, 6, 'ошибочный вопрос должен вернуться в раунд один раз');
+  assert.equal(questions, 11, 'ошибочный вопрос должен вернуться в раунд один раз');
   await page.locator('#resultsView').waitFor();
-  // повтор ошибки закрепляет ответ, но не исправляет счёт: из пяти вопросов верно четыре
-  assert.equal(await page.locator('#finalScore').textContent(), '4 / 5');
+  // повтор ошибки закрепляет ответ, но не исправляет счёт: из десяти вопросов верно девять
+  assert.equal(await page.locator('#finalScore').textContent(), '9 / 10');
   assert.doesNotMatch(await page.locator('#resultText').textContent(), /без ошибок/);
   assert.equal(await page.locator('#repeatMistakes').textContent(), 'Повторить ошибки раунда (1)');
 

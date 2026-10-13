@@ -314,10 +314,16 @@ test('настройки отбрасывают повреждённые и ус
   });
 });
 
-test('ошибка возвращается после трёх следующих вопросов', () => {
-  const queue = [{ record: record('a'), afterPosition: 4 }];
-  assert.equal(quiz.nextRetryInsertion(queue, 3, 10), -1);
-  assert.equal(quiz.nextRetryInsertion(queue, 4, 10), 0);
+test('ошибка возвращается после пяти следующих карточек', () => {
+  // ошибка на позиции 2: между ней и повтором карточки 3–7, повтор встаёт на позицию 8
+  const { queue } = quiz.queueRetry([], new Set(), record('a'), 2);
+  assert.equal(quiz.nextRetryInsertion(queue, 7, 20), -1);
+  assert.equal(quiz.nextRetryInsertion(queue, 8, 20), 0);
+});
+
+test('повтор ошибки в раунде узнаётся по тому, что вопрос уже был раньше', () => {
+  const round = [record('a'), record('b'), record('c'), record('b')];
+  assert.deepEqual(round.map((_, index) => quiz.isRepeatInRound(round, index)), [false, false, false, true]);
 });
 
 test('ошибка в конце раунда возвращается до итогов', () => {
@@ -329,7 +335,7 @@ test('повтор не добавляется второй раз', () => {
   const first = quiz.queueRetry([], new Set(), record('a'), 0);
   const second = quiz.queueRetry(first.queue, first.retriedIds, record('a'), 5);
   assert.equal(second.queue.length, 1);
-  assert.equal(second.queue[0].afterPosition, 4);
+  assert.equal(second.queue[0].afterPosition, 6);
 });
 
 test('итог раунда не увеличивает число выбранных вопросов из-за повторов', () => {

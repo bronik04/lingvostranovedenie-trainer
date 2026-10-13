@@ -120,6 +120,7 @@
         <span class="pill quiet" id="sourceLabel"></span>
         <span class="pill origin" id="originPill" hidden></span>
         <span class="pill warn" id="unverifiedPill" hidden>не проверено</span>
+        <span class="pill warn" id="retryPill" hidden>повтор ошибки</span>
       </div>
       <h2 class="question" id="questionText"></h2>
       <div class="options" id="options" role="group" aria-label="Варианты ответа"></div>
@@ -298,10 +299,13 @@ function normaliseStudySettings(value, bank) {
   };
 }
 
+
+const RETRY_GAP = 5;
+
 function queueRetry(queue, retriedIds, record, position) {
   if (retriedIds.has(record.id)) return { queue, retriedIds };
   return {
-    queue: [...queue, { record, afterPosition: position + 4 }],
+    queue: [...queue, { record, afterPosition: position + RETRY_GAP + 1 }],
     retriedIds: new Set([...retriedIds, record.id]),
   };
 }
@@ -310,6 +314,11 @@ function nextRetryInsertion(queue, position, roundLength) {
   const dueIndex = queue.findIndex((entry) => entry.afterPosition <= position);
   if (dueIndex !== -1) return dueIndex;
   return position >= roundLength && queue.length ? 0 : -1;
+}
+
+function isRepeatInRound(round, position) {
+  const id = round[position]?.id;
+  return round.slice(0, position).some((record) => record.id === id);
 }
 
 function tallyAnswer(tally, recordId, correct) {
@@ -754,6 +763,7 @@ function renderQuestion() {
   $('originPill').textContent = origin.label;
   $('originPill').hidden = !origin.isAddition;
   $('unverifiedPill').hidden = record.answer.state !== 'unverified';
+  $('retryPill').hidden = !isRepeatInRound(state.round, state.position);
   $('questionText').textContent = record.questionRu;
 
   $('feedback').className = 'feedback hidden';

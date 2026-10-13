@@ -285,6 +285,7 @@ function renderQuestion() {
   $('originPill').textContent = origin.label;
   $('originPill').hidden = !origin.isAddition;
   $('unverifiedPill').hidden = record.answer.state !== 'unverified';
+  $('retryPill').hidden = !isRepeatInRound(state.round, state.position);
   $('questionText').textContent = record.questionRu;
 
   $('feedback').className = 'feedback hidden';

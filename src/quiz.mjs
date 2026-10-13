@@ -120,10 +120,13 @@ export function normaliseStudySettings(value, bank) {
   };
 }
 
+// между ошибкой и её повтором в раунде — столько других карточек
+const RETRY_GAP = 5;
+
 export function queueRetry(queue, retriedIds, record, position) {
   if (retriedIds.has(record.id)) return { queue, retriedIds };
   return {
-    queue: [...queue, { record, afterPosition: position + 4 }],
+    queue: [...queue, { record, afterPosition: position + RETRY_GAP + 1 }],
     retriedIds: new Set([...retriedIds, record.id]),
   };
 }
@@ -132,6 +135,11 @@ export function nextRetryInsertion(queue, position, roundLength) {
   const dueIndex = queue.findIndex((entry) => entry.afterPosition <= position);
   if (dueIndex !== -1) return dueIndex;
   return position >= roundLength && queue.length ? 0 : -1;
+}
+
+export function isRepeatInRound(round, position) {
+  const id = round[position]?.id;
+  return round.slice(0, position).some((record) => record.id === id);
 }
 
 export function tallyAnswer(tally, recordId, correct) {
