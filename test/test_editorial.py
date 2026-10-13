@@ -135,6 +135,8 @@ class QuestionHintsTest(unittest.TestCase):
         record = self.bank['2018-19-mun-52']
         self.assertNotIn('море', record['questionRu'])
         self.assertNotIn('海', record['questionZh'].replace('入海', ''))
+        # Бохай по-русски — часть Жёлтого моря, так что 黄海 был бы вторым верным ответом
+        self.assertNotIn('黄海', [option['zh'] for option in record['options']])
 
 
 if __name__ == '__main__':
