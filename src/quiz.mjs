@@ -230,8 +230,22 @@ export function buildRound(bank, filters, progress, size, random = Math.random, 
   return onePerFact(shuffled(pool, random), size);
 }
 
+// Вопрос с общим набором неверных вариантов (склейка с пометкой pool): на экран
+// выходят правильный и три случайных неверных, при каждом показе заново.
+export function hasOptionPool(record) {
+  return record.options.length > LABELS.length;
+}
+
+function shownOptions(record, random) {
+  const right = record.options.find((option) => option.id === record.answer.optionId);
+  if (!hasOptionPool(record)) return record.options;
+  if (!right) return record.options.slice(0, LABELS.length);
+  const wrong = shuffled(record.options.filter((option) => option !== right), random);
+  return [right, ...wrong.slice(0, LABELS.length - 1)];
+}
+
 export function labelledOptions(record, random = Math.random) {
-  return shuffled(record.options, random).map((option, index) => ({
+  return shuffled(shownOptions(record, random), random).map((option, index) => ({
     label: LABELS[index],
     optionId: option.id,
     zh: option.zh,

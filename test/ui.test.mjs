@@ -69,22 +69,25 @@ async function openPage(t, viewport = { width: 1280, height: 900 }) {
 const bankOf = (page) => page.evaluate(() => QUESTION_BANK);
 
 /** Запись банка для вопроса на экране. Сверяются и тексты, и id вариантов: в банке
- * есть записи с одним и тем же текстом вопроса, но разными вариантами (олимпиада
- * повторяет вопрос, меняя обманки: «Какая национальность основала династию Юань?»). */
+ * есть записи с одним и тем же текстом вопроса, но разными вариантами. У вопроса с
+ * общим набором неверных вариантов на экране только четыре из них, поэтому
+ * показанные варианты должны входить в запись, а не совпадать с ней целиком. */
 async function currentRecord(page, bank) {
   const question = await page.locator('#questionText').textContent();
   const shown = await page.locator('#options button').evaluateAll((buttons) => buttons
-    .map((b) => `${b.dataset.optionId}=${b.querySelector('span:nth-child(2)').textContent}`).sort().join('|'));
+    .map((b) => `${b.dataset.optionId}=${b.querySelector('span:nth-child(2)').textContent}`));
   const matches = bank.filter((r) => r.questionRu === question
-    && r.options.map((o) => `${o.id}=${o.zh}`).sort().join('|') === shown);
+    && shown.every((item) => r.options.some((o) => `${o.id}=${o.zh}` === item)));
   assert.equal(matches.length, 1, `вопрос на экране не определить однозначно: ${question}`);
   return matches[0];
 }
 
 async function answer(page, record, correct) {
+  const shown = await page.locator('#options button')
+    .evaluateAll((buttons) => buttons.map((b) => b.dataset.optionId));
   const optionId = correct
     ? record.answer.optionId
-    : record.options.find((o) => o.id !== record.answer.optionId).id;
+    : shown.find((id) => id !== record.answer.optionId);
   await page.locator(`#options button[data-option-id="${optionId}"]`).click();
 }
 

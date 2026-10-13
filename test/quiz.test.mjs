@@ -2,8 +2,8 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import * as quiz from '../src/quiz.mjs';
 import {
-  buildRound, eligible, escapeHtml, grade, isValidProgress, labelledOptions,
-  matchingOccurrence, recordOrigin, safeSourceUrl, scheduleReview,
+  buildRound, eligible, escapeHtml, grade, hasOptionPool, isValidProgress, labelledOptions,
+  matchesDatabaseSearch, matchingOccurrence, migrateProgress, recordOrigin, safeSourceUrl, scheduleReview,
 } from '../src/quiz.mjs';
 
 const record = (id, overrides = {}) => ({
@@ -41,6 +41,56 @@ test('правильность считается по optionId, а не по б
   const correct = shuffled.find((option) => option.optionId === 'o2');
   assert.equal(grade(record('a'), correct.optionId).correct, true);
   assert.equal(grade(record('a'), 'o1').correct, false);
+});
+
+const POOLED_OPTIONS = ['孙子兵法', '本草纲目', '西游记', '论语', '红楼梦', '水浒传', '阿Q正传']
+  .map((zh, index) => ({ id: `o${index + 1}`, zh }));
+const pooled = (overrides = {}) => record('pool', {
+  options: POOLED_OPTIONS, answer: { optionId: 'o1', state: 'verified' }, ...overrides,
+});
+
+function seeded(seed = 1) {
+  let value = seed;
+  return () => ((value = (value * 16807) % 2147483647) - 1) / 2147483646;
+}
+
+test('у вопроса с общим набором на экране четыре варианта, правильный всегда среди них', () => {
+  const random = seeded();
+  const seen = new Set();
+  for (let index = 0; index < 300; index += 1) {
+    const shown = labelledOptions(pooled(), random);
+    assert.deepEqual(shown.map((option) => option.label), ['A', 'B', 'C', 'D']);
+    assert.equal(new Set(shown.map((option) => option.optionId)).size, 4);
+    assert.ok(shown.some((option) => option.optionId === 'o1'));
+    assert.equal(grade(pooled(), 'o1').correct, true);
+    shown.forEach((option) => seen.add(option.optionId));
+  }
+  assert.equal(seen.size, POOLED_OPTIONS.length, 'каждый неверный вариант хоть раз попадает на экран');
+});
+
+test('без правильного варианта вопрос с общим набором показывает первые четыре', () => {
+  const shown = labelledOptions(pooled({ answer: { optionId: null, state: 'needs-review' } }), () => 0);
+  assert.equal(shown.length, 4);
+  assert.deepEqual(shown.map((option) => option.optionId).sort(), ['o1', 'o2', 'o3', 'o4']);
+});
+
+test('общий набор отличается от обычных четырёх вариантов', () => {
+  assert.equal(hasOptionPool(pooled()), true);
+  assert.equal(hasOptionPool(record('a')), false);
+});
+
+test('поиск в базе находит вопрос по варианту из общего набора', () => {
+  assert.equal(matchesDatabaseSearch(pooled(), '阿Q正传'), true);
+});
+
+test('прогресс нескольких влитых записей сходится в одну', () => {
+  const bank = [record('kept', { mergedIds: ['gone-1', 'gone-2'] })];
+  const item = { attempts: 1, correct: 1, completed: true, lastCorrect: true, box: 2, dueAt: 5 };
+  const migrated = migrateProgress(bank, { 'gone-1': item, 'gone-2': { ...item, correct: 0, lastCorrect: false, box: 0, dueAt: 1 } });
+  assert.deepEqual(Object.keys(migrated), ['kept']);
+  assert.equal(migrated.kept.attempts, 2);
+  assert.equal(migrated.kept.lastCorrect, false);
+  assert.equal(migrated.kept.box, 0);
 });
 
 test('conflict и needs-review в раунд не попадают', () => {
