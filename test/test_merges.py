@@ -132,6 +132,97 @@ class OfficialKeyTest(unittest.TestCase):
         self.assertEqual(validate_merges(MERGE, bank), [])
 
 
+def pooled(record_id, year, options, answer_text='拉萨', number=5, **overrides):
+    """Тот же вопрос с другими неверными вариантами; правильный ответ — answer_text."""
+    items = [{'id': f'o{index + 1}', 'zh': text} for index, text in enumerate(options)]
+    answer = next(o['id'] for o in items if o['zh'] == answer_text)
+    return record(record_id, year, number=number, options=items,
+                  answer={'optionId': answer, 'state': 'verified'}, **overrides)
+
+
+POOL = {'a': {'absorbs': ['b'], 'distractors': 'pool', 'reason': 'Тот же вопрос, другие неверные варианты'}}
+
+
+def pool_pair():
+    return [record('a', '2019-20'), pooled('b', '2022-23', ['成都', '北京', '拉萨', '重庆'])]
+
+
+class PoolMergeTest(unittest.TestCase):
+    def test_new_wrong_options_follow_the_kept_ones(self):
+        merged = apply_merges(pool_pair(), POOL)
+        self.assertEqual([r['id'] for r in merged], ['a'])
+        self.assertEqual([(o['id'], o['zh']) for o in merged[0]['options']],
+                         [('o1', '拉萨'), ('o2', '北京'), ('o3', '上海'), ('o4', '香港'),
+                          ('o5', '成都'), ('o6', '重庆')])
+        self.assertEqual(merged[0]['answer'], {'optionId': 'o1', 'state': 'verified'})
+        self.assertEqual(merged[0]['mergedIds'], ['b'])
+
+    def test_options_of_several_absorbed_records_are_added_once_in_absorbs_order(self):
+        bank = [*pool_pair(), pooled('c', '2024-25', ['重庆', '拉萨', '西安', '成都'])]
+        merges = {'a': {'absorbs': ['b', 'c'], 'distractors': 'pool', 'reason': 'r'}}
+        merged = apply_merges(bank, merges)[0]
+        self.assertEqual([o['zh'] for o in merged['options']],
+                         ['拉萨', '北京', '上海', '香港', '成都', '重庆', '西安'])
+
+    def test_new_option_ids_skip_ids_already_taken(self):
+        bank = pool_pair()
+        bank[0]['options'][3]['id'] = 'o5'       # у оставшейся записи уже есть o5
+        merged = apply_merges(bank, POOL)[0]
+        ids = [o['id'] for o in merged['options']]
+        self.assertEqual(len(ids), len(set(ids)))
+
+    def test_official_key_of_the_absorbed_record_points_at_the_kept_answer(self):
+        bank = pool_pair()
+        bank[1]['occurrences'][0]['officialKey'] = 'o3'          # 拉萨 во влитой записи
+        merged = apply_merges(bank, POOL)[0]
+        keys = {o['year']: o['officialKey'] for o in merged['occurrences']}
+        self.assertEqual(keys['2022-23'], 'o1')
+
+    def test_input_records_are_not_mutated(self):
+        bank = pool_pair()
+        apply_merges(bank, POOL)
+        self.assertEqual(len(bank[0]['options']), 4)
+
+    def test_rejects_different_answers(self):
+        bank = [record('a', '2019-20'), pooled('b', '2022-23', ['成都', '北京', '拉萨', '重庆'], answer_text='成都')]
+        self.assertRejectsPool(bank, 'ответ не совпадает')
+
+    def test_rejects_a_pool_that_adds_nothing(self):
+        self.assertRejectsPool(pair(), 'объединение не добавило новых неверных вариантов')
+
+    def test_rejects_an_explanation_naming_a_wrong_option(self):
+        bank = pool_pair()
+        bank[0]['explanation'] = {'ru': 'Центр района — Лхаса (拉萨), а 成都 — центр Сычуани.'}
+        self.assertRejectsPool(bank, 'пояснение называет неверный вариант 成都')
+
+    def test_rejects_years_written_with_and_without_nian(self):
+        years = ['2001', '1995', '2015', '1970']
+        bank = [pooled('a', '2015-16', years, answer_text='2001', number=1),
+                pooled('b', '2024-25', ['2010 年', '2001', '2011 年', '1991 年'], answer_text='2001')]
+        self.assertRejectsPool(bank, 'годы в вариантах записаны по-разному')
+
+    def test_accepts_years_written_the_same_way(self):
+        bank = [pooled('a', '2015-16', ['2001 年', '1995 年', '2015 年', '1970 年'], answer_text='2001 年', number=1),
+                pooled('b', '2024-25', ['2010 年', '2001 年', '2011 年', '1991 年'], answer_text='2001 年')]
+        self.assertEqual(validate_merges(POOL, bank), [])
+
+    def test_rejects_an_unknown_distractors_value(self):
+        merges = {'a': {'absorbs': ['b'], 'distractors': 'union', 'reason': 'r'}}
+        errors = validate_merges(merges, pool_pair())
+        self.assertTrue(any('distractors может быть только "pool"' in e for e in errors), errors)
+
+    def test_merge_without_the_flag_still_needs_the_same_options(self):
+        merges = {'a': {'absorbs': ['b'], 'reason': 'r'}}
+        errors = validate_merges(merges, pool_pair())
+        self.assertTrue(any('варианты не совпадают' in e for e in errors), errors)
+
+    def assertRejectsPool(self, bank, fragment):
+        errors = validate_merges(POOL, bank)
+        self.assertTrue(any(fragment in error for error in errors), f'{fragment!r} not in {errors}')
+        with self.assertRaises(ValueError):
+            apply_merges(bank, POOL)
+
+
 class ValidateMergesTest(unittest.TestCase):
     def errors(self, merges, bank=None):
         return validate_merges(merges, bank if bank is not None else pair())

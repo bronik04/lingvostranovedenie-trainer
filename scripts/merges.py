@@ -10,17 +10,25 @@
 Склейка идёт после правок `editorial.json`: сравнение вариантов опирается на уже
 исправленный текст. Правки и волны проверки для влитых записей остаются в файлах,
 но в банк не попадают.
+
+С пометкой `"distractors": "pool"` склеиваются и записи с одинаковым ответом, но
+разными неверными вариантами (олимпиада меняла обманки): неверные варианты влитых
+записей добавляются к оставшейся как o5, o6…, и раунд каждый раз показывает
+правильный и три случайных неверных.
 """
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 from normalize import normalize_text
 from strict_json import loads_unique
 
 STAGE_ORDER = {'pri': 0, 'shk': 1, 'mun': 2, 'reg': 3, 'zak': 4}
-ENTRY_FIELDS = {'absorbs', 'reason'}
+ENTRY_FIELDS = {'absorbs', 'reason', 'distractors'}
+POOL = 'pool'
+YEAR = re.compile(r'^\d{3,4}\s*(年)?$')
 
 
 def _answer_text(record: dict) -> str | None:
@@ -36,6 +44,43 @@ def _option_texts(record: dict) -> set[str]:
 
 def _spot(occurrence: dict) -> tuple:
     return occurrence['year'], occurrence['stageCode'], occurrence['number']
+
+
+def _pooled_options(keep: dict, absorbed: list[dict]) -> list[dict]:
+    """Варианты оставшейся записи и новые неверные варианты влитых, в порядке absorbs."""
+    options = [dict(option) for option in keep['options']]
+    known = {normalize_text(option['zh']) for option in options}
+    taken = {option['id'] for option in options}
+    number = len(options)
+    for other in absorbed:
+        for option in other['options']:
+            text = normalize_text(option['zh'])
+            if text in known:
+                continue
+            number += 1
+            while f'o{number}' in taken:
+                number += 1
+            known.add(text)
+            taken.add(f'o{number}')
+            options.append({'id': f'o{number}', 'zh': option['zh']})
+    return options
+
+
+def _pool_errors(keep: dict, absorbed: list[dict]) -> list[str]:
+    errors: list[str] = []
+    options = _pooled_options(keep, absorbed)
+    if len(options) == len(keep['options']):
+        errors.append(f'{keep["id"]}: объединение не добавило новых неверных вариантов — '
+                      'это обычная склейка, уберите "distractors"')
+    explanation = keep.get('explanation', {}).get('ru', '')
+    for option in options:
+        if option['id'] != keep['answer'].get('optionId') and option['zh'] in explanation:
+            errors.append(f'{keep["id"]}: пояснение называет неверный вариант {option["zh"]} — '
+                          'на экране его может не оказаться')
+    years = [option['zh'] for option in options if YEAR.match(option['zh'].strip())]
+    if len({'年' in year for year in years}) > 1:
+        errors.append(f'{keep["id"]}: годы в вариантах записаны по-разному (с 年 и без): {years}')
+    return errors
 
 
 def _key_and_spot_errors(keep: dict, absorbed: dict) -> list[str]:
@@ -73,6 +118,9 @@ def validate_merges(merges: object, bank: list[dict]) -> list[str]:
         unknown = set(item) - ENTRY_FIELDS
         if unknown:
             errors.append(f'{keep_id}: неизвестные поля {sorted(unknown)}')
+        distractors = item.get('distractors')
+        if distractors is not None and distractors != POOL:
+            errors.append(f'{keep_id}: distractors может быть только "pool"')
         if not isinstance(item.get('reason'), str) or not item['reason'].strip():
             errors.append(f'{keep_id}: не указана причина склейки')
         absorbs = item.get('absorbs')
@@ -102,12 +150,14 @@ def validate_merges(merges: object, bank: list[dict]) -> list[str]:
                 errors.append(f'{absorbed_id}: склеивать можно только олимпиадные вопросы')
             if absorbed['answer'].get('state') != 'verified':
                 errors.append(f'{absorbed_id}: ответ не проверен, склеивать рано')
-            elif _option_texts(absorbed) != _option_texts(keep):
+            elif distractors != POOL and _option_texts(absorbed) != _option_texts(keep):
                 errors.append(f'{absorbed_id}: варианты не совпадают с {keep_id}')
             elif _answer_text(absorbed) != _answer_text(keep):
                 errors.append(f'{absorbed_id}: ответ не совпадает с {keep_id}')
             else:
                 errors += _key_and_spot_errors(keep, absorbed)
+        if distractors == POOL and all(by_id.get(i) for i in absorbs):
+            errors += _pool_errors(keep, [by_id[i] for i in absorbs])
     return errors
 
 
@@ -151,8 +201,11 @@ def apply_merges(bank: list[dict], merges: dict[str, dict]) -> list[dict]:
                 if entry['url'] not in known:
                     evidence.append(entry)
                     known.add(entry['url'])
-        result.append({**record, 'occurrences': occurrences, 'evidence': evidence,
-                       'mergedIds': sorted(item['absorbs'])})
+        merged = {**record, 'occurrences': occurrences, 'evidence': evidence,
+                  'mergedIds': sorted(item['absorbs'])}
+        if item.get('distractors') == POOL:
+            merged['options'] = _pooled_options(record, absorbed)
+        result.append(merged)
     return result
 
 
