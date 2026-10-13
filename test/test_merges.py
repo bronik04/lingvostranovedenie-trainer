@@ -334,8 +334,16 @@ class MergesInBankTest(unittest.TestCase):
 
     def test_pooled_records_show_every_wrong_option_once(self):
         pools = {k: v for k, v in self.merges.items() if v.get('distractors') == 'pool'}
-        self.assertEqual(set(pools), {'2017-18-shk-4', '2015-16-zak-5', '2015-16-mun-9'})
-        expected = {'2017-18-shk-4': 7, '2015-16-zak-5': 5, '2015-16-mun-9': 7}
+        expected = {
+            '2017-18-shk-4': 7, '2015-16-zak-5': 5, '2015-16-mun-9': 7,
+            '2015-16-zak-7': 5, '2020-21-reg-q094875': 5, '2016-17-reg-5': 5, '2016-17-shk-1': 5,
+            '2017-18-reg-1': 5, '2021-22-mun-q833ea2': 6, '2021-22-mun-qd67aaa': 5, '2018-19-shk-6': 5,
+            '2022-23-shk-q623963': 5, '2015-16-mun-10': 5, '2017-18-zak-10': 6, '2022-23-shk-q3c7e59': 6,
+            '2023-24-shk-29': 6, '2018-19-reg-3': 6, '2017-18-zak-1': 6, '2019-20-mun-qe6c5d3': 5,
+            '2016-17-mun-10': 6, '2023-24-shk-30': 6, '2016-17-reg-6': 5, '2016-17-zak-1': 5,
+            '2015-16-mun-5': 5,
+        }
+        self.assertEqual(set(pools), set(expected))
         for keep_id in pools:
             record = self.bank[keep_id]
             texts = [o['zh'] for o in record['options']]
@@ -345,6 +353,21 @@ class MergesInBankTest(unittest.TestCase):
             wrong = [o['zh'] for o in record['options'] if o['id'] != record['answer']['optionId']]
             for text in wrong:
                 self.assertNotIn(text, record['explanation']['ru'], keep_id)
+
+    def test_every_fact_group_with_one_answer_became_one_question(self):
+        # все 25 групп «один факт» были с одним ответом: теперь это одна запись
+        groups = json.loads((ROOT / 'data/review/fact-groups.json').read_text('utf-8'))
+        self.assertEqual(groups, {})
+        self.assertEqual(len(self.bank), 423)
+
+    def test_same_thing_is_never_offered_twice_in_one_pool(self):
+        # разные записи одного и того же (刘邦 и 汉高祖, 新年 и 新年节, 蓝 и 蓝色)
+        # выровнены правкой до склейки, иначе на экране стояли бы два одинаковых варианта
+        for keep_id in ('2019-20-mun-qe6c5d3', '2023-24-shk-30', '2015-16-mun-5', '2016-17-reg-2'):
+            texts = [o['zh'] for o in self.bank[keep_id]['options']]
+            for left, right in (('刘邦', '汉高祖'), ('新年', '新年节'), ('蓝', '蓝色'), ('白', '白色'),
+                                ('黑', '黑色'), ('全国政治协商会议', '全国政治协商会议（政协）')):
+                self.assertFalse(left in texts and right in texts, (keep_id, left, right))
 
     def test_lao_she_questions_are_one_record_with_beijing_dialect(self):
         record = self.bank['2017-18-mun-2']

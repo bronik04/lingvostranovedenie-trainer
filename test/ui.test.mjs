@@ -306,8 +306,15 @@ test('прогресс склеенного дубля переезжает на
 test('в раунде нет двух вопросов про один факт', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
-  const grouped = await page.evaluate(() => QUESTION_BANK.filter((r) => r.factGroup).length);
-  assert.ok(grouped > 0, 'в банке нет меток групп');
+  // все прежние группы с одним ответом стали одним вопросом с общим набором вариантов;
+  // механизм остаётся для пар с разными ответами и проверяется на 20 парах,
+  // помеченных прямо на странице
+  const grouped = await page.evaluate(() => {
+    const picked = QUESTION_BANK.filter((r) => r.answer.state === 'verified').slice(0, 40);
+    picked.forEach((r, index) => { r.factGroup = `test-${index % 20}`; });
+    return picked.length;
+  });
+  assert.equal(grouped, 40);
   // сотня раундов по 50 вопросов: без отбора хотя бы в одном оказались бы «двойники»
   const worst = await page.evaluate(() => {
     let repeats = 0;
