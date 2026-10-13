@@ -352,6 +352,8 @@ class MergesInBankTest(unittest.TestCase):
         answer = next(o['zh'] for o in record['options'] if o['id'] == record['answer']['optionId'])
         self.assertEqual(answer, '北京方言')
         self.assertNotIn('北方方言', [o['zh'] for o in record['options']])
+        # в ключе 2022-23 ответ записан как 北方方言: ученик должен узнать, что это тот же говор
+        self.assertIn('北方方言', record['explanation']['ru'])
 
 
 if __name__ == '__main__':
