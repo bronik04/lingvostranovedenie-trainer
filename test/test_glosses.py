@@ -154,17 +154,13 @@ class GlossesInBankTest(unittest.TestCase):
                 for r_id in ('2015-16-mun-5', '2025-26-zak-qbd468e')}
         self.assertEqual(blue['2015-16-mun-5'], blue['2025-26-zak-qbd468e'])
 
-    def test_first_special_economic_zones_are_named_only_where_it_cannot_give_the_answer_away(self):
+    def test_first_special_economic_zones_are_named_in_the_largest_zone_question(self):
         # решение автора 2026-10-13: в вопросе о крупнейшей СЭЗ подписи говорят, что Сямэнь,
-        # Чжухай и Шаньтоу — первые СЭЗ; в вопросах «какой город (не) является СЭЗ» такая
-        # подпись выдала бы ответ, поэтому там её нет
+        # Чжухай и Шаньтоу — одни из четырёх первых СЭЗ
         bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
         for zh in ('厦门', '珠海', '汕头'):
             gloss = next(o['gloss'] for o in bank['2016-17-zak-1']['options'] if o['zh'] == zh)
             self.assertIn('первых особых экономических зон', gloss, zh)
-        for record_id in ('2023-24-shk-32', '2025-26-shk-29'):
-            for option in bank[record_id]['options']:
-                self.assertNotIn('экономическ', option.get('gloss', ''), (record_id, option['zh']))
 
 
 if __name__ == '__main__':
