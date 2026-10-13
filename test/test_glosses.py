@@ -122,7 +122,6 @@ class GlossesInBankTest(unittest.TestCase):
                   for record in bank.values() for option in record['options'] if 'gloss' in option}
         self.assertEqual(actual, expected)
 
-
     def test_wrong_options_of_pooled_questions_are_glossed(self):
         # у вопроса с общим набором пояснение не говорит о неверных вариантах — о них
         # рассказывают подписи; без подписи остаются только варианты, о которых нечего
@@ -139,6 +138,13 @@ class GlossesInBankTest(unittest.TestCase):
                    for option in bank[keep_id]['options']
                    if option['id'] != bank[keep_id]['answer']['optionId'] and not option.get('gloss')}
         self.assertEqual(missing, unglossed_on_purpose)
+
+    def test_same_option_of_pooled_questions_is_glossed_alike(self):
+        # где вопросу не нужна своя формулировка, у варианта одна подпись (правило пилота)
+        bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
+        for zh in ('天津', '李白'):
+            texts = {o['gloss'] for r in bank for o in r['options'] if o['zh'] == zh and o.get('gloss')}
+            self.assertEqual(len(texts), 1, (zh, texts))
 
 
 if __name__ == '__main__':
