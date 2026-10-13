@@ -162,6 +162,18 @@ class GlossesInBankTest(unittest.TestCase):
             gloss = next(o['gloss'] for o in bank['2016-17-zak-1']['options'] if o['zh'] == zh)
             self.assertIn('первых особых экономических зон', gloss, zh)
 
+    def test_special_economic_zone_questions_gloss_every_wrong_option(self):
+        # решение автора 2026-10-13: в вопросах «какой город (не) является СЭЗ» подписаны все
+        # неверные варианты; города-СЭЗ подписаны как СЭЗ, остальные — уже принятыми подписями
+        bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
+        for record_id in ('2023-24-shk-32', '2025-26-shk-29'):
+            record = bank[record_id]
+            wrong = [o for o in record['options'] if o['id'] != record['answer']['optionId']]
+            self.assertTrue(all(o.get('gloss') for o in wrong), record_id)
+        for option in bank['2023-24-shk-32']['options']:
+            if option['zh'] in ('深圳', '汕头', '珠海'):
+                self.assertIn('особ', option['gloss'], option['zh'])
+
 
 if __name__ == '__main__':
     unittest.main()
