@@ -332,6 +332,27 @@ class MergesInBankTest(unittest.TestCase):
         self.assertFalse(merged & set(self.bank))
         self.assertEqual(len(merged), sum(len(r.get('mergedIds', [])) for r in self.bank.values()))
 
+    def test_pooled_records_show_every_wrong_option_once(self):
+        pools = {k: v for k, v in self.merges.items() if v.get('distractors') == 'pool'}
+        self.assertEqual(set(pools), {'2017-18-shk-4', '2015-16-zak-5', '2015-16-mun-9'})
+        expected = {'2017-18-shk-4': 7, '2015-16-zak-5': 5, '2015-16-mun-9': 7}
+        for keep_id in pools:
+            record = self.bank[keep_id]
+            texts = [o['zh'] for o in record['options']]
+            self.assertEqual(len(texts), expected[keep_id], keep_id)
+            self.assertEqual(len(set(texts)), len(texts), keep_id)
+            self.assertNotIn('factGroup', record, keep_id)
+            wrong = [o['zh'] for o in record['options'] if o['id'] != record['answer']['optionId']]
+            for text in wrong:
+                self.assertNotIn(text, record['explanation']['ru'], keep_id)
+
+    def test_lao_she_questions_are_one_record_with_beijing_dialect(self):
+        record = self.bank['2017-18-mun-2']
+        self.assertEqual(record['mergedIds'], ['2022-23-reg-10'])
+        answer = next(o['zh'] for o in record['options'] if o['id'] == record['answer']['optionId'])
+        self.assertEqual(answer, '北京方言')
+        self.assertNotIn('北方方言', [o['zh'] for o in record['options']])
+
 
 if __name__ == '__main__':
     unittest.main()
