@@ -372,7 +372,8 @@ class MergesInBankTest(unittest.TestCase):
     def test_merged_record_takes_the_fuller_wording_of_the_absorbed_one(self):
         # решение автора 2026-10-13: у склеенной записи — полная формулировка влитой
         fuller = {
-            '2021-22-mun-q833ea2': 'председатель КНР Си Цзиньпин',
+            '2017-18-shk-4': 'знаменитый древнекитайский трактат',
+            '2022-23-shk-q623963': 'крупнейшая в Китае библиотека',
             '2023-24-shk-29': 'польских интервентов',
             '2016-17-reg-6': 'антиимпериалистическое движение',
             '2018-19-reg-3': 'в 1999 году были включены',
@@ -387,8 +388,18 @@ class MergesInBankTest(unittest.TestCase):
             self.assertIn(fragment, self.bank[keep_id]['questionRu'], keep_id)
         self.assertEqual(self.bank['2021-22-mun-q833ea2']['topic'], 'История и государство')
         self.assertIn('29 декабря 1911', self.bank['2017-18-zak-1']['explanation']['ru'])
+        self.assertIn('Чунцин', self.bank['2016-17-mun-10']['explanation']['ru'])
         for keep_id in ('2016-17-reg-2', '2017-18-reg-1'):
-            self.assertNotIn('Поэтому верен', self.bank[keep_id]['explanation']['ru'], keep_id)
+            self.assertNotIn('Поэтому', self.bank[keep_id]['explanation']['ru'], keep_id)
+        # китайский текст — исходный текст олимпиады того года: правки его не трогают
+        edits = json.loads((ROOT / 'data/review/editorial.json').read_text('utf-8'))
+        for keep_id in fuller:
+            self.assertNotIn('questionZh', edits.get(keep_id, {}), keep_id)
+
+    def test_fuller_wording_does_not_hint_at_the_answer(self):
+        # Си Цзиньпин стал председателем КНР в марте 2013 года: «председатель КНР Си
+        # Цзиньпин выдвинул» отсекает 2000, 2001, 2010 и 2011 — вопрос остаётся с «Китай»
+        self.assertNotIn('Си Цзиньпин', self.bank['2021-22-mun-q833ea2']['questionRu'])
 
     def test_unified_spellings_do_not_reappear_side_by_side(self):
         # разные записи одного и того же (刘邦 и 汉高祖, 新年 и 新年节, 蓝 и 蓝色)
