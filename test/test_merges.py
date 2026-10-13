@@ -354,13 +354,22 @@ class MergesInBankTest(unittest.TestCase):
             for text in wrong:
                 self.assertNotIn(text, record['explanation']['ru'], keep_id)
 
-    def test_every_fact_group_with_one_answer_became_one_question(self):
-        # все 25 групп «один факт» были с одним ответом: теперь это одна запись
+    def test_no_fact_group_left_where_one_question_with_a_pool_would_do(self):
+        # группа «один факт» нужна только записям с разными ответами (романы, метро);
+        # записи с одним ответом склеиваются в один вопрос с общим набором вариантов
         groups = json.loads((ROOT / 'data/review/fact-groups.json').read_text('utf-8'))
-        self.assertEqual(groups, {})
-        self.assertEqual(len(self.bank), 423)
+        for name, ids in groups.items():
+            answers = {next(o['zh'] for o in self.bank[i]['options'] if o['id'] == self.bank[i]['answer']['optionId'])
+                       for i in ids}
+            self.assertGreater(len(answers), 1, name)
 
-    def test_same_thing_is_never_offered_twice_in_one_pool(self):
+    def test_merged_wording_keeps_the_precise_edition(self):
+        # формулировка, при которой неверный вариант можно защитить, заменена точной
+        # редакцией влитой записи: Шэньчжэнь крупнее по экономике, Гуанчжоу был базой до 1927 г.
+        self.assertIn('по площади', self.bank['2016-17-zak-1']['questionRu'])
+        self.assertIn('перенесена', self.bank['2016-17-mun-10']['questionRu'])
+
+    def test_unified_spellings_do_not_reappear_side_by_side(self):
         # разные записи одного и того же (刘邦 и 汉高祖, 新年 и 新年节, 蓝 и 蓝色)
         # выровнены правкой до склейки, иначе на экране стояли бы два одинаковых варианта
         for keep_id in ('2019-20-mun-qe6c5d3', '2023-24-shk-30', '2015-16-mun-5', '2016-17-reg-2'):
