@@ -142,7 +142,7 @@ class GlossesInBankTest(unittest.TestCase):
     def test_same_option_of_pooled_questions_is_glossed_alike(self):
         # где вопросу не нужна своя формулировка, у варианта одна подпись (правило пилота)
         bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
-        for zh in ('天津', '李白'):
+        for zh in ('天津', '李白', '深圳', '珠海', '汕头'):
             texts = {o['gloss'] for r in bank for o in r['options'] if o['zh'] == zh and o.get('gloss')}
             self.assertEqual(len(texts), 1, (zh, texts))
 
@@ -158,9 +158,10 @@ class GlossesInBankTest(unittest.TestCase):
         # решение автора 2026-10-13: в вопросе о крупнейшей СЭЗ подписи говорят, что Сямэнь,
         # Чжухай и Шаньтоу — одни из четырёх первых СЭЗ
         bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
-        for zh in ('厦门', '珠海', '汕头'):
+        for zh in ('深圳', '厦门', '珠海', '汕头'):
             gloss = next(o['gloss'] for o in bank['2016-17-zak-1']['options'] if o['zh'] == zh)
-            self.assertIn('первых особых экономических зон', gloss, zh)
+            # все четыре получили статус одновременно, в 1980 году: ни одна не «первая»
+            self.assertIn('одна из четырёх первых особых экономических зон', gloss, zh)
 
     def test_special_economic_zone_questions_gloss_every_wrong_option(self):
         # решение автора 2026-10-13: в вопросах «какой город (не) является СЭЗ» подписаны все
