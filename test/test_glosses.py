@@ -123,5 +123,23 @@ class GlossesInBankTest(unittest.TestCase):
         self.assertEqual(actual, expected)
 
 
+    def test_wrong_options_of_pooled_questions_are_glossed(self):
+        # у вопроса с общим набором пояснение не говорит о неверных вариантах — о них
+        # рассказывают подписи; без подписи остаются только варианты, о которых нечего
+        # сказать правдиво (выдуманный термин, промежуток лет без события)
+        unglossed_on_purpose = {
+            ('2017-18-reg-1', '经贸合作带'), ('2017-18-reg-1', '陆海丝绸之路'),
+            ('2022-23-shk-q3c7e59', '1901-1905 年'), ('2022-23-shk-q3c7e59', '1917-1918 年'),
+            ('2022-23-shk-q3c7e59', '1917-1921 年'),
+        }
+        merges = json.loads((ROOT / 'data/review/merges.json').read_text('utf-8'))
+        bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
+        missing = {(keep_id, option['zh'])
+                   for keep_id, item in merges.items() if item.get('distractors') == 'pool'
+                   for option in bank[keep_id]['options']
+                   if option['id'] != bank[keep_id]['answer']['optionId'] and not option.get('gloss')}
+        self.assertEqual(missing, unglossed_on_purpose)
+
+
 if __name__ == '__main__':
     unittest.main()
