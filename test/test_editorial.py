@@ -111,5 +111,31 @@ class EditorialInBankTest(unittest.TestCase):
                 self.assertEqual(option['zh'], text.strip(), record_id)
 
 
+class QuestionHintsTest(unittest.TestCase):
+    """Текст вопроса не подсказывает ответ: ученик в раунде видит только questionRu."""
+
+    HINTS = {
+        '2019-20-reg-5': '河',
+        'addition-b1-08': '天京',
+        'addition-b1-11': '神武门',
+        'addition-b2-07': '梁山',
+        '2022-23-reg-2': '高中',
+    }
+
+    def setUp(self):
+        self.bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
+
+    def test_question_text_has_no_hint(self):
+        for record_id, hint in self.HINTS.items():
+            self.assertNotIn(hint, self.bank[record_id]['questionRu'], record_id)
+        self.assertNotIn('玄烨', self.bank['addition-b1-11']['questionRu'])
+
+    def test_huanghe_question_does_not_call_bohai_a_sea(self):
+        # по-русски Бохай — залив Жёлтого моря, по-китайски — внутреннее море
+        record = self.bank['2018-19-mun-52']
+        self.assertNotIn('море', record['questionRu'])
+        self.assertNotIn('海', record['questionZh'].replace('入海', ''))
+
+
 if __name__ == '__main__':
     unittest.main()
