@@ -324,6 +324,30 @@ test('в раунде нет двух вопросов про один факт'
   assert.deepEqual(page.errors, []);
 });
 
+test('у вопроса с общим набором в раунде четыре варианта, а в базе — все и метка', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  const pooled = bank.find((r) => r.options.length > 4);
+  assert.ok(pooled, 'в банке нет вопросов с общим набором вариантов');
+  await page.evaluate((id) => startRoundWith([QUESTION_BANK.find((r) => r.id === id)]), pooled.id);
+  const shown = await page.locator('#options button').evaluateAll((buttons) => buttons.map((b) => b.dataset.optionId));
+  assert.equal(shown.length, 4);
+  assert.ok(shown.includes(pooled.answer.optionId));
+  await page.locator(`#options button[data-option-id="${pooled.answer.optionId}"]`).click();
+  assert.match(await page.locator('#feedback').textContent(), /Верно/);
+
+  await page.locator('#leaveRound').click();
+  await page.locator('#openDatabase').click();
+  await page.locator('#databaseSearch').fill(pooled.questionRu);
+  const row = page.locator('#databaseList .row', { hasText: pooled.questionRu }).first();
+  await row.waitFor();
+  assert.match(await row.locator('.row-top').textContent(), /варианты меняются/);
+  const options = await row.locator('.row-options').textContent();
+  for (const option of pooled.options) assert.ok(options.includes(option.zh), option.zh);
+  assert.deepEqual(page.errors, []);
+});
+
 test('тема переключается и запоминается', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;

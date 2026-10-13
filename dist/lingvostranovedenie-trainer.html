@@ -925,6 +925,7 @@ function appendDatabaseRows(rows) {
       '<div class="row-top">',
       `<span class="tag">${escapeHtml(record.topic)}</span>`,
       origin.isAddition ? `<span class="tag origin">${origin.label}</span>` : '',
+      hasOptionPool(record) ? '<span class="tag">варианты меняются</span>' : '',
       `<span class="tag${record.answer.state === 'verified' ? ' done' : ''}${
         record.answer.state === 'needs-review' || record.answer.state === 'conflict' ? ' review' : ''
       }">${STATUS_NAMES[record.answer.state]}</span>`,
