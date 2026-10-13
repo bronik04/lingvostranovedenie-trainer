@@ -369,6 +369,27 @@ class MergesInBankTest(unittest.TestCase):
         self.assertIn('по площади', self.bank['2016-17-zak-1']['questionRu'])
         self.assertIn('перенесена', self.bank['2016-17-mun-10']['questionRu'])
 
+    def test_merged_record_takes_the_fuller_wording_of_the_absorbed_one(self):
+        # решение автора 2026-10-13: у склеенной записи — полная формулировка влитой
+        fuller = {
+            '2021-22-mun-q833ea2': 'председатель КНР Си Цзиньпин',
+            '2023-24-shk-29': 'польских интервентов',
+            '2016-17-reg-6': 'антиимпериалистическое движение',
+            '2018-19-reg-3': 'в 1999 году были включены',
+            '2017-18-zak-1': 'огромному вкладу в дело революции',
+            '2017-18-mun-2': 'свои произведения',
+            '2015-16-mun-9': '(ВТО)',
+            '2018-19-shk-6': 'провинции Китая',
+            '2015-16-mun-10': 'наибольшую площадь',
+            '2015-16-mun-5': 'традиционной культуре',
+        }
+        for keep_id, fragment in fuller.items():
+            self.assertIn(fragment, self.bank[keep_id]['questionRu'], keep_id)
+        self.assertEqual(self.bank['2021-22-mun-q833ea2']['topic'], 'История и государство')
+        self.assertIn('29 декабря 1911', self.bank['2017-18-zak-1']['explanation']['ru'])
+        for keep_id in ('2016-17-reg-2', '2017-18-reg-1'):
+            self.assertNotIn('Поэтому верен', self.bank[keep_id]['explanation']['ru'], keep_id)
+
     def test_unified_spellings_do_not_reappear_side_by_side(self):
         # разные записи одного и того же (刘邦 и 汉高祖, 新年 и 新年节, 蓝 и 蓝色)
         # выровнены правкой до склейки, иначе на экране стояли бы два одинаковых варианта
