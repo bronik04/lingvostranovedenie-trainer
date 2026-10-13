@@ -146,6 +146,14 @@ class GlossesInBankTest(unittest.TestCase):
             texts = {o['gloss'] for r in bank for o in r['options'] if o['zh'] == zh and o.get('gloss')}
             self.assertEqual(len(texts), 1, (zh, texts))
 
+    def test_blue_in_the_traditional_culture_question_is_the_temple_of_heaven_tile(self):
+        # решение автора 2026-10-13: в вопросе о цвете в традиционной культуре синий
+        # подписан по традиционной культуре, а не как цвет партии Гоминьдан
+        bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
+        blue = {r_id: next(o['gloss'] for o in bank[r_id]['options'] if o['zh'] == '蓝色')
+                for r_id in ('2015-16-mun-5', '2025-26-zak-qbd468e')}
+        self.assertEqual(blue['2015-16-mun-5'], blue['2025-26-zak-qbd468e'])
+
 
 if __name__ == '__main__':
     unittest.main()
