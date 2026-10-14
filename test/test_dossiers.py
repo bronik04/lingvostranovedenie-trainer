@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from dossiers import validate_dossier
+from dossiers import dossier_records, question_options, validate_dossier
 
 TOPIC = 'Экономика, образование, наука и спорт'
 
@@ -105,6 +105,97 @@ class ValidateDossierTest(unittest.TestCase):
         row(data, 'cny-50')['back'] = {'zh': '布达拉宫'}
         self.assertEqual(validate_dossier(data), [])
 
+
+
+def question(**overrides):
+    item = {'id': 'money-q01', 'status': 'accepted', 'topic': TOPIC,
+            'fact': {'table': 'banknotes', 'row': 'cny-20', 'ask': 'flower', 'where': {'currency': '人民币'}},
+            'questionRu': 'Какой цветок изображён на лицевой стороне купюры 20 юаней выпуска 2019 года?',
+            'explanation': 'Первое предложение. Второе предложение. Третье предложение.',
+            'exclude': [], 'check': {'verdict': 'accept', 'note': 'ок'}}
+    item.update(overrides)
+    return item
+
+
+def ids(options):
+    return [option['id'] for option in options]
+
+
+class QuestionOptionsTest(unittest.TestCase):
+    def test_pool_is_the_same_column_of_sibling_rows(self):
+        options, answer = question_options(question(), dossier())
+        self.assertEqual(answer, 'cny-20')
+        self.assertEqual(ids(options), ['cny-20', 'cny-100', 'cny-50', 'cny-10', 'cny-5'])
+        self.assertEqual(options[0]['zh'], '荷花')
+
+    def test_where_keeps_only_matching_rows(self):
+        fact = {'table': 'banknotes', 'row': 'cny-50', 'ask': 'back'}
+        mixed, _ = question_options(question(fact=fact), dossier())
+        self.assertIn('rub-500', ids(mixed))
+        yuan, _ = question_options(question(fact={**fact, 'where': {'currency': '人民币'}}), dossier())
+        self.assertNotIn('rub-500', ids(yuan))
+
+    def test_exclude_drops_a_row(self):
+        options, _ = question_options(question(exclude=['cny-5']), dossier())
+        self.assertNotIn('cny-5', ids(options))
+
+    def test_repeated_wrong_values_collapse_to_the_first_row(self):
+        data = dossier()
+        row(data, 'cny-10')['flower'] = cell('梅花', ['мэйхуа'], gloss='Мэйхуа — ещё раз')
+        options, _ = question_options(question(), data)
+        self.assertEqual(ids(options), ['cny-20', 'cny-100', 'cny-50', 'cny-5'])
+
+    def test_wrong_options_carry_glosses_of_their_cells_and_the_answer_does_not(self):
+        options, _ = question_options(question(), dossier())
+        self.assertNotIn('gloss', options[0])
+        self.assertEqual(options[2], {'id': 'cny-50', 'zh': '菊花', 'gloss': 'Хризантема — цветок на купюре'})
+
+    def test_given_direction_asks_another_column_of_the_same_row(self):
+        fact = {'table': 'banknotes', 'row': 'cny-50', 'ask': 'denomination', 'given': 'flower',
+                'where': {'currency': '人民币'}}
+        options, answer = question_options(question(fact=fact), dossier())
+        self.assertEqual((answer, options[0]['zh']), ('cny-50', '50 元'))
+        self.assertEqual([o['zh'] for o in options[1:]], ['100 元', '20 元', '10 元', '5 元'])
+
+    def test_explicit_options_put_the_answer_first(self):
+        refs = [{'row': r, 'column': 'back'} for r in ('cny-100', 'cny-50', 'cny-20', 'rub-500')]
+        fact = {'table': 'banknotes', 'options': refs, 'answer': {'row': 'rub-500', 'column': 'back'}}
+        options, answer = question_options(question(fact=fact), dossier())
+        self.assertEqual(answer, 'rub-500')
+        self.assertEqual(ids(options), ['rub-500', 'cny-100', 'cny-50', 'cny-20'])
+
+    def test_new_row_keeps_the_answer_and_existing_option_ids(self):
+        before, answer_before = question_options(question(), dossier())
+        data = dossier()
+        data['tables']['banknotes']['rows'].append(
+            note('cny-1', '人民币', '1 元', '三潭印月', ['Три пруда'], '兰花', ['орхидея']))
+        after, answer_after = question_options(question(), data)
+        self.assertEqual(answer_after, answer_before)
+        self.assertEqual(after[:len(before)], before)
+        self.assertEqual(ids(after)[-1], 'cny-1')
+
+
+class DossierRecordsTest(unittest.TestCase):
+    def test_accepted_question_becomes_an_addition_record(self):
+        [record] = dossier_records(dossier(), [question()])
+        self.assertEqual(record['id'], 'money-q01')
+        self.assertEqual(record['origin'], 'addition')
+        self.assertEqual(record['dossier'], 'money')
+        self.assertEqual(record['topic'], TOPIC)
+        self.assertEqual(record['topicSource'], 'authored')
+        self.assertIsNone(record['questionZh'])
+        self.assertEqual(record['answer'], {'optionId': 'cny-20', 'state': 'verified'})
+        self.assertEqual(record['explanation'], {'ru': question()['explanation']})
+        self.assertEqual((record['occurrences'], record['parseWarnings']), ([], []))
+        self.assertEqual(len(record['options']), 5)
+
+    def test_draft_stays_out_of_the_bank(self):
+        self.assertEqual(dossier_records(dossier(), [question(status='draft')]), [])
+
+    def test_evidence_is_the_answer_row_sources_without_quotes(self):
+        [record] = dossier_records(dossier(), [question()])
+        self.assertEqual(record['evidence'], [
+            {key: value for key, value in source(n).items() if key != 'quote'} for n in (1, 2)])
 
 if __name__ == '__main__':
     unittest.main()

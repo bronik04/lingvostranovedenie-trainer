@@ -132,3 +132,74 @@ def validate_dossier(dossier: object) -> list[str]:
         for index, row in enumerate(rows, start=1):
             errors += _row_errors(name, index, row, table, seen_rows)
     return errors
+
+
+EVIDENCE_FIELDS = ('title', 'url', 'checkedAt', 'authority')
+
+
+def _rows(dossier: dict, table: str) -> dict[str, dict]:
+    return {row['id']: row for row in dossier['tables'][table]['rows']}
+
+
+def answer_cell(question: dict, dossier: dict) -> tuple[str, dict]:
+    fact = question['fact']
+    rows = _rows(dossier, fact['table'])
+    if 'options' in fact:
+        ref = fact['answer']
+        return ref['row'], rows[ref['row']][ref['column']]
+    return fact['row'], rows[fact['row']][fact['ask']]
+
+
+def _candidates(question: dict, dossier: dict) -> list[tuple[str, dict]]:
+    """Все неверные варианты по порядку таблицы, ещё без сведения повторов."""
+    fact = question['fact']
+    rows = _rows(dossier, fact['table'])
+    if 'options' in fact:
+        return [(ref['row'], rows[ref['row']][ref['column']])
+                for ref in fact['options'] if ref != fact['answer']]
+    excluded = set(question.get('exclude', []))
+    where = fact.get('where', {})
+    return [(row_id, row[fact['ask']]) for row_id, row in rows.items()
+            if row_id != fact['row'] and row_id not in excluded and fact['ask'] in row
+            and all(column in row and row[column]['zh'] == value for column, value in where.items())]
+
+
+def question_options(question: dict, dossier: dict) -> tuple[list[dict], str]:
+    answer_id, answer = answer_cell(question, dossier)
+    options = [{'id': answer_id, 'zh': answer['zh'].strip()}]
+    seen = {options[0]['zh']}
+    for row_id, cell in _candidates(question, dossier):
+        text = cell['zh'].strip()
+        if text in seen:
+            continue
+        seen.add(text)
+        option = {'id': row_id, 'zh': text}
+        if cell.get('gloss'):
+            option['gloss'] = cell['gloss'].strip()
+        options.append(option)
+    return options, answer_id
+
+
+def dossier_records(dossier: dict, questions: list[dict]) -> list[dict]:
+    rows = {row['id']: row for table in dossier['tables'].values() for row in table['rows']}
+    records = []
+    for question in questions:
+        if question['status'] != 'accepted':
+            continue
+        options, answer_id = question_options(question, dossier)
+        records.append({
+            'id': question['id'],
+            'origin': 'addition',
+            'dossier': dossier['id'],
+            'topic': question['topic'],
+            'topicSource': 'authored',
+            'questionRu': question['questionRu'],
+            'questionZh': None,
+            'options': options,
+            'answer': {'optionId': answer_id, 'state': 'verified'},
+            'explanation': {'ru': question['explanation'].strip()},
+            'evidence': [{key: item[key] for key in EVIDENCE_FIELDS} for item in rows[answer_id]['sources']],
+            'occurrences': [],
+            'parseWarnings': [],
+        })
+    return records
