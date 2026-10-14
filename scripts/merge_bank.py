@@ -18,6 +18,7 @@ from explanations import apply_revisions, load_revisions
 from fact_groups import apply_fact_groups, load_fact_groups
 from glosses import apply_glosses, load_glosses
 from merges import STAGE_ORDER, apply_merges, load_merges
+from retired import apply_retired, load_retired
 
 
 def record_id(occurrence: dict) -> str:
@@ -376,6 +377,8 @@ def main() -> None:
     before_merges = len(bank)
     bank = apply_merges(bank, load_merges(ROOT / 'data/review/merges.json'))
     report['glued'] = before_merges - len(bank)
+    # удаления — после склеек: удалённая запись могла сама принимать влитые id
+    bank = apply_retired(bank, load_retired(ROOT / 'data/review/retired.json'))
     bank = apply_fact_groups(bank, load_fact_groups(ROOT / 'data/review/fact-groups.json'))
     # дополнения после правок проверяются здесь же, чтобы не записать банк,
     # который сборка потом отвергнет
