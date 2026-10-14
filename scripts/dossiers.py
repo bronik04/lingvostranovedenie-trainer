@@ -377,6 +377,44 @@ def load_dossier(dossier_path: Path, questions_path: Path) -> tuple[dict, list[d
     return dossier, questions
 
 
+def _report_cell(value: object) -> str:
+    if value is None:
+        return ''
+    text = value['zh'] if isinstance(value, dict) else str(value)
+    return text.replace('|', '\\|')
+
+
+def dossier_report(dossier: dict, questions: list[dict]) -> str:
+    lines = [f'# Досье «{dossier["title"]}»', '',
+             f'Файл пишет сборка (`scripts/dossiers.py`). Править — `data/dossiers/{dossier["id"]}.json` '
+             f'и `data/dossiers/{dossier["id"]}-questions.json`.', '']
+    for name, table in dossier['tables'].items():
+        columns = list(table['columns'])
+        lines += [f'## Таблица `{name}` — строк: {len(table["rows"])}', '']
+        if table['rows']:
+            lines.append('| id | ' + ' | '.join(columns) + ' | olympiad |')
+            lines.append('|' + '---|' * (len(columns) + 2))
+            for row in table['rows']:
+                cells = ' | '.join(_report_cell(row.get(column)) for column in columns)
+                lines.append(f'| {row["id"]} | {cells} | {", ".join(row.get("olympiad", []))} |')
+            lines.append('')
+    accepted = sum(1 for question in questions if question['status'] == 'accepted')
+    lines += [f'## Вопросы — принято {accepted} из {len(questions)}', '']
+    for question in questions:
+        options, _ = question_options(question, dossier)
+        check = question.get('check') or {}
+        lines += [f'### {question["id"]} · {question["status"]} · проверка: {check.get("verdict", "нет")}', '',
+                  question['questionRu'], '',
+                  f'- Ответ: {options[0]["zh"]}',
+                  '- Неверные: ' + ', '.join(option['zh'] for option in options[1:]),
+                  f'- Тема: {question["topic"]}',
+                  f'- Пояснение: {question["explanation"].strip()}']
+        if check.get('note'):
+            lines.append(f'- Замечание проверки: {check["note"]}')
+        lines.append('')
+    return '\n'.join(lines).rstrip('\n') + '\n'
+
+
 QUESTIONS_SUFFIX = '-questions.json'
 
 

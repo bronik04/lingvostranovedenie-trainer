@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from dossiers import dossier_paths, dossier_records, load_dossier, question_options, validate_dossier, validate_questions
+from dossiers import dossier_paths, dossier_records, dossier_report, load_dossier, question_options, validate_dossier, validate_questions
 from editorial import apply_editorial, validate_editorial
 
 TOPIC = 'Экономика, образование, наука и спорт'
@@ -405,6 +405,28 @@ class DossierInBankTest(unittest.TestCase):
                 for item in table['rows']:
                     for olympiad_id in item.get('olympiad', []):
                         self.assertIn(olympiad_id, known, item['id'])
+
+
+class DossierReportTest(unittest.TestCase):
+    def test_report_lists_tables_and_every_question(self):
+        draft = question(id='money-q02', status='draft', check={'verdict': 'fix', 'note': 'неточно'},
+                         fact={'table': 'banknotes', 'row': 'cny-50', 'ask': 'back', 'where': {'currency': '人民币'}},
+                         questionRu='Что изображено на обороте купюры 50 юаней выпуска 2019 года?')
+        report = dossier_report(dossier(), [question(), draft])
+        self.assertTrue(report.startswith('# Досье «Деньги»\n'))
+        self.assertIn('## Таблица `banknotes` — строк: 6', report)
+        self.assertIn('| cny-50 | 人民币 | 50 元 | пятая серия, выпуск 2019 года | 布达拉宫 | 菊花 |  |', report)
+        self.assertIn('## Вопросы — принято 1 из 2', report)
+        self.assertIn('### money-q02 · draft · проверка: fix', report)
+        self.assertIn('- Ответ: 布达拉宫', report)
+        self.assertIn('- Неверные: 人民大会堂, 桂林山水, 长江三峡, 泰山', report)
+        self.assertIn('- Замечание проверки: неточно', report)
+        self.assertTrue(report.endswith('\n') and not report.endswith('\n\n'))
+
+    def test_question_without_check_says_so(self):
+        draft = question(status='draft')
+        draft.pop('check')
+        self.assertIn('### money-q01 · draft · проверка: нет', dossier_report(dossier(), [draft]))
 
 if __name__ == '__main__':
     unittest.main()
