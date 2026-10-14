@@ -1,0 +1,38 @@
+{
+  "id": "money",
+  "title": "Деньги",
+  "tables": {
+    "banknotes": {
+      "columns": {
+        "currency": "zh",
+        "denomination": "zh",
+        "series": "ru",
+        "front": "zh",
+        "back": "zh",
+        "flower": "zh",
+        "city": "zh"
+      },
+      "required": [
+        "series"
+      ],
+      "datedQuestions": true,
+      "rows": []
+    },
+    "history": {
+      "columns": {
+        "name": "zh",
+        "era": "zh",
+        "meaning": "ru"
+      },
+      "rows": []
+    },
+    "customs": {
+      "columns": {
+        "name": "zh",
+        "occasion": "zh",
+        "meaning": "ru"
+      },
+      "rows": []
+    }
+  }
+}

@@ -8,7 +8,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from dossiers import dossier_records, load_dossier, question_options, validate_dossier, validate_questions
+from dossiers import dossier_paths, dossier_records, load_dossier, question_options, validate_dossier, validate_questions
+from editorial import apply_editorial, validate_editorial
 
 TOPIC = 'Экономика, образование, наука и спорт'
 
@@ -346,6 +347,64 @@ class LoadDossierTest(unittest.TestCase):
             questions = self.write(directory, 'money-questions.json', '[]')
             with self.assertRaisesRegex(ValueError, 'повторяются ключи'):
                 load_dossier(table, questions)
+
+
+class DossierPathsTest(unittest.TestCase):
+    def test_pairs_each_questions_file_with_its_table(self):
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            for name in ('money.json', 'money-questions.json', 'notes.md'):
+                (base / name).write_text('[]', encoding='utf-8')
+            self.assertEqual(dossier_paths(base), [(base / 'money.json', base / 'money-questions.json')])
+
+    def test_questions_without_a_table_are_an_error(self):
+        with tempfile.TemporaryDirectory() as directory:
+            (Path(directory) / 'money-questions.json').write_text('[]', encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, 'money.json'):
+                dossier_paths(Path(directory))
+
+
+class EditorialOnDossierRecordTest(unittest.TestCase):
+    def test_option_is_addressed_by_its_row_id(self):
+        [record] = dossier_records(dossier(), [question()])
+        edits = {'money-q01': {'reason': 'опечатка', 'options': {'cny-50': '菊'}}}
+        self.assertEqual(validate_editorial(edits, [record]), [])
+        [edited] = apply_editorial([record], edits)
+        self.assertEqual(next(o['zh'] for o in edited['options'] if o['id'] == 'cny-50'), '菊')
+
+
+class DossierInBankTest(unittest.TestCase):
+    """Каждый принятый вопрос досье доходит до data/bank.json, черновики — нет."""
+
+    def setUp(self):
+        self.bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
+        self.pairs = dossier_paths(ROOT / 'data/dossiers')
+
+    def test_money_dossier_is_part_of_the_build(self):
+        self.assertIn((ROOT / 'data/dossiers/money.json', ROOT / 'data/dossiers/money-questions.json'), self.pairs)
+
+    def test_accepted_questions_reach_the_bank_and_drafts_do_not(self):
+        for table_path, questions_path in self.pairs:
+            data, questions = load_dossier(table_path, questions_path)
+            for item in questions:
+                if item['status'] != 'accepted':
+                    self.assertNotIn(item['id'], self.bank)
+                    continue
+                record = self.bank[item['id']]
+                options, answer_id = question_options(item, data)
+                self.assertEqual(record['answer']['optionId'], answer_id, item['id'])
+                self.assertEqual([o['id'] for o in record['options']], [o['id'] for o in options], item['id'])
+                self.assertTrue(all(o.get('gloss') for o in record['options'] if o['id'] != answer_id), item['id'])
+
+    def test_olympiad_links_point_to_bank_questions(self):
+        # олимпиадный вопрос мог быть влит склейкой в другой — его id тогда в mergedIds
+        known = set(self.bank) | {i for r in self.bank.values() for i in r.get('mergedIds', [])}
+        for table_path, questions_path in self.pairs:
+            data, _ = load_dossier(table_path, questions_path)
+            for table in data['tables'].values():
+                for item in table['rows']:
+                    for olympiad_id in item.get('olympiad', []):
+                        self.assertIn(olympiad_id, known, item['id'])
 
 if __name__ == '__main__':
     unittest.main()

@@ -84,6 +84,19 @@ class AuthoredQuestionTest(unittest.TestCase):
             addition(explanation={'ru': 'Раз. Два. Три. Четыре. Пять. Шесть.'}),
         ], []))
 
+    def test_dossier_record_may_carry_a_pool_of_options(self):
+        record = addition(dossier='money', options=[
+            {'id': 'cny-100', 'zh': '北京'}, {'id': 'cny-50', 'zh': '上海'}, {'id': 'cny-20', 'zh': '广州'},
+            {'id': 'cny-10', 'zh': '西安'}, {'id': 'cny-5', 'zh': '成都'}],
+            answer={'optionId': 'cny-100', 'state': 'verified'})
+        self.assertEqual(validate_authored([record], [olympiad_record()]), [])
+
+    def test_dossier_record_still_needs_four_options_with_unique_ids(self):
+        three = addition(dossier='money', options=addition()['options'][:3])
+        self.assertTrue(any('не меньше четырёх' in e for e in validate_authored([three], [olympiad_record()])))
+        twins = addition(dossier='money', options=[*addition()['options'], {'id': 'o1', 'zh': '成都'}])
+        self.assertTrue(any('уникальные id' in e for e in validate_authored([twins], [olympiad_record()])))
+
     def test_sentence_count_ignores_abbreviations_and_initials(self):
         self.assertEqual(sentence_count(
             'Договор подписали 16 мая 1858 г. в Айгуне. Н. Н. Муравьёв получил титул. '

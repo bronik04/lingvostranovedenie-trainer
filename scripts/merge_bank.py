@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from normalize import (completeness_errors, fragment_pairs, language_errors, normalize_text,
                        option_key, tidy)
 from authored import load_authored, validate_authored
+from dossiers import dossier_paths, dossier_records, load_dossier
 from editorial import apply_editorial, load_editorial
 from explanations import apply_revisions, load_revisions
 from fact_groups import apply_fact_groups, load_fact_groups
@@ -371,6 +372,10 @@ def main() -> None:
     revisions = load_revisions(ROOT / 'data/review/explanation-wave-1.json', bank)
     bank = apply_revisions(bank, revisions)
     bank.extend(load_authored(ROOT / 'data/authored/questions.json', bank))
+    # досье — сразу после дополнений: правки, склейки и подписи дальше работают и для них
+    for table_path, questions_path in dossier_paths(ROOT / 'data/dossiers'):
+        dossier, questions = load_dossier(table_path, questions_path)
+        bank.extend(dossier_records(dossier, questions))
     # правки — последним слоем, чтобы доходить и до дополнений
     bank = apply_editorial(bank, load_editorial(ROOT / 'data/review/editorial.json'))
     # склейка дублей — после правок: варианты сверяются уже по исправленному тексту

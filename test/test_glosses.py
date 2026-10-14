@@ -117,9 +117,11 @@ class GlossesInBankTest(unittest.TestCase):
         bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
         expected = {(record_id, option_id): value['ru']
                     for record_id, item in glosses.items() for option_id, value in item['options'].items()}
-        # в обе стороны: и каждая подпись дошла, и лишних подписей в банке нет
+        # в обе стороны: и каждая подпись дошла, и лишних подписей в банке нет;
+        # у вопросов досье подписи из ячеек таблицы (data/dossiers/), а не из glosses.json
         actual = {(record['id'], option['id']): option['gloss']
-                  for record in bank.values() for option in record['options'] if 'gloss' in option}
+                  for record in bank.values() if 'dossier' not in record
+                  for option in record['options'] if 'gloss' in option}
         self.assertEqual(actual, expected)
 
     def test_wrong_options_of_pooled_questions_are_glossed(self):

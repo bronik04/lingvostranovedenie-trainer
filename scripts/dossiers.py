@@ -375,3 +375,30 @@ def load_dossier(dossier_path: Path, questions_path: Path) -> tuple[dict, list[d
     if errors:
         raise ValueError(f'некорректные вопросы {questions_path.name}:\n - ' + '\n - '.join(errors))
     return dossier, questions
+
+
+QUESTIONS_SUFFIX = '-questions.json'
+
+
+def dossier_paths(directory: Path) -> list[tuple[Path, Path]]:
+    pairs = []
+    for questions_path in sorted(directory.glob(f'*{QUESTIONS_SUFFIX}')):
+        table_path = questions_path.with_name(questions_path.name.removesuffix(QUESTIONS_SUFFIX) + '.json')
+        if not table_path.exists():
+            raise ValueError(f'{questions_path.name}: нет таблицы досье {table_path.name}')
+        pairs.append((table_path, questions_path))
+    return pairs
+
+
+def main() -> None:
+    """Проверка всех досье без сборки банка: её запускают агенты, пока пишут досье."""
+    root = Path(__file__).resolve().parents[1]
+    for table_path, questions_path in dossier_paths(root / 'data/dossiers'):
+        data, questions = load_dossier(table_path, questions_path)
+        accepted = sum(1 for question in questions if question['status'] == 'accepted')
+        rows = sum(len(table['rows']) for table in data['tables'].values())
+        print(f'{data["id"]}: строк {rows}, вопросов {len(questions)}, принято {accepted} — ошибок нет')
+
+
+if __name__ == '__main__':
+    main()

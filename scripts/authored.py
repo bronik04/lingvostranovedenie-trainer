@@ -73,14 +73,18 @@ def validate_authored(records: list[dict], olympiad_bank: list[dict]) -> list[st
             errors.append(f'{where}: вопрос должен быть строкой')
             question = ''
         options = record.get('options')
-        if not isinstance(options, list) or len(options) != 4:
-            errors.append(f'{where}: нужно ровно четыре варианта')
+        # у вопроса досье неверные варианты — общий набор из таблицы, их может быть больше трёх
+        pooled = 'dossier' in record
+        if not isinstance(options, list) or (len(options) < 4 if pooled else len(options) != 4):
+            errors.append(f'{where}: нужно не меньше четырёх вариантов' if pooled
+                          else f'{where}: нужно ровно четыре варианта')
             option_ids: set[str] = set()
             option_texts: list[str] = []
         else:
             option_ids = {option.get('id') for option in options if isinstance(option, dict)}
             option_texts = [option.get('zh', '') if isinstance(option, dict) else '' for option in options]
-            if len(option_ids) != 4 or any(not isinstance(option_id, str) or not option_id for option_id in option_ids):
+            if len(option_ids) != len(options) or any(not isinstance(option_id, str) or not option_id
+                                                      for option_id in option_ids):
                 errors.append(f'{where}: варианты должны иметь уникальные id')
             errors.extend(f'{where}: {message}' for message in language_errors(question, option_texts))
             errors.extend(f'{where}: {message}' for message in completeness_errors(
