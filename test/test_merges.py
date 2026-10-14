@@ -389,6 +389,9 @@ class MergesInBankTest(unittest.TestCase):
         self.assertEqual(self.bank['2021-22-mun-q833ea2']['topic'], 'История и государство')
         self.assertIn('29 декабря 1911', self.bank['2017-18-zak-1']['explanation']['ru'])
         self.assertIn('Чунцин', self.bank['2016-17-mun-10']['explanation']['ru'])
+        # в 1932 г. правительство «переносило столицу» (迁都) в Лоян, а 洛阳 — неверный вариант:
+        # пояснение обязано сказать, что официальной столицей оставался Нанкин
+        self.assertIn('официальной столицей', self.bank['2016-17-mun-10']['explanation']['ru'])
         for keep_id in ('2016-17-reg-2', '2017-18-reg-1'):
             self.assertNotIn('Поэтому', self.bank[keep_id]['explanation']['ru'], keep_id)
         # китайский текст — исходный текст олимпиады того года: правки его не трогают
