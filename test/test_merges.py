@@ -335,13 +335,16 @@ class MergesInBankTest(unittest.TestCase):
     def test_pooled_records_show_every_wrong_option_once(self):
         pools = {k: v for k, v in self.merges.items() if v.get('distractors') == 'pool'}
         expected = {
-            '2017-18-shk-4': 7, '2015-16-zak-5': 5, '2015-16-mun-9': 7,
+            '2023-24-zak-2': 7, '2017-18-shk-4': 7, '2015-16-zak-5': 6, '2015-16-mun-9': 7,
             '2015-16-zak-7': 5, '2020-21-reg-q094875': 5, '2016-17-reg-5': 5, '2016-17-shk-1': 5,
             '2017-18-reg-1': 5, '2021-22-mun-q833ea2': 6, '2021-22-mun-qd67aaa': 5, '2018-19-shk-6': 5,
             '2022-23-shk-q623963': 5, '2015-16-mun-10': 5, '2017-18-zak-10': 6, '2022-23-shk-q3c7e59': 6,
             '2023-24-shk-29': 6, '2018-19-reg-3': 6, '2017-18-zak-1': 6, '2019-20-mun-qe6c5d3': 5,
             '2016-17-mun-10': 6, '2023-24-shk-30': 6, '2016-17-reg-6': 5, '2016-17-zak-1': 5,
-            '2015-16-mun-5': 5,
+            '2015-16-mun-5': 5, '2018-19-reg-8': 7, '2016-17-reg-4': 6, '2015-16-reg-4': 6,
+            '2016-17-mun-4': 6, '2016-17-reg-8': 6, '2019-20-mun-q727051': 6, '2018-19-zak-7': 7,
+            '2018-19-reg-6': 7, '2022-23-reg-2': 6, '2015-16-zak-8': 5, '2016-17-shk-8': 5,
+            '2015-16-reg-1': 7, '2018-19-mun-55': 6, '2018-19-mun-53': 5, '2016-17-shk-10': 5,
         }
         self.assertEqual(set(pools), set(expected))
         for keep_id in pools:
