@@ -32,7 +32,8 @@ def evidence_errors(evidence: object) -> list[str]:
         if not isinstance(item, dict):
             errors.append(f'источник {index} имеет неверный формат')
             continue
-        parsed = urlparse(item.get('url', ''))
+        url = item.get('url', '')
+        parsed = urlparse(url if isinstance(url, str) else '')
         if parsed.scheme not in {'http', 'https'} or not parsed.netloc:
             errors.append(f'источник {index} имеет небезопасную ссылку')
         if not isinstance(item.get('title'), str) or not item['title'].strip():

@@ -8,12 +8,13 @@
 
 from __future__ import annotations
 
+import json
 import re
 from pathlib import Path
 
 from authored import evidence_errors, sentence_count
-from glosses import MAX_LENGTH
-from normalize import CYRILLIC
+from glosses import gloss_text_errors
+from normalize import CYRILLIC, completeness_errors, fragment_pairs, language_errors, normalize_text
 from strict_json import loads_unique
 from taxonomy import TOPICS
 
@@ -42,10 +43,11 @@ def _cell_errors(where: str, cell: object) -> list[str]:
         errors.append(f'{where}: ru — список русских названий')
     gloss = cell.get('gloss')
     if gloss is not None:
-        if not isinstance(gloss, str) or not gloss.strip() or '\n' in gloss:
+        if not isinstance(gloss, str) or not gloss.strip():
             errors.append(f'{where}: подпись — одна непустая строка')
-        elif len(gloss) > MAX_LENGTH:
-            errors.append(f'{where}: подпись длиннее {MAX_LENGTH} символов')
+        else:
+            # те же правила текста, что у glosses.json: ученик видит подписи одинаково
+            errors += [f'{where}: {message}' for message in gloss_text_errors(gloss, zh if isinstance(zh, str) else '')]
     return errors
 
 
@@ -56,7 +58,7 @@ def _source_errors(where: str, sources: object) -> list[str]:
     for index, item in enumerate(sources, start=1):
         if isinstance(item, dict) and (not isinstance(item.get('quote'), str) or not item['quote'].strip()):
             errors.append(f'{where}: у источника {index} нет цитаты')
-    urls = [item.get('url') for item in sources if isinstance(item, dict)]
+    urls = [item['url'] for item in sources if isinstance(item, dict) and isinstance(item.get('url'), str)]
     if len(set(urls)) != len(urls):
         errors.append(f'{where}: источники повторяются')
     return errors
@@ -116,14 +118,16 @@ def validate_dossier(dossier: object) -> list[str]:
         if unknown:
             errors.append(f'{name}: неизвестные поля таблицы {sorted(unknown)}')
         columns = table.get('columns')
-        if not isinstance(columns, dict) or not columns or any(kind not in KINDS for kind in columns.values()):
+        if not isinstance(columns, dict) or not columns or any(not isinstance(kind, str) or kind not in KINDS
+                                                                   for kind in columns.values()):
             errors.append(f'{name}: колонки — словарь имя → zh или ru')
             continue
         reserved = set(columns) & ROW_SERVICE_FIELDS
         if reserved:
             errors.append(f'{name}: имена колонок заняты служебными полями {sorted(reserved)}')
         required = table.get('required', [])
-        if not isinstance(required, list) or any(column not in columns for column in required):
+        if not isinstance(required, list) or any(not isinstance(column, str) or column not in columns
+                                                 for column in required):
             errors.append(f'{name}: required называет необъявленную колонку')
             table = {**table, 'required': []}
         if not isinstance(table.get('datedQuestions', False), bool):
@@ -214,12 +218,35 @@ STATUSES = {'draft', 'accepted'}
 VERDICTS = {'accept', 'fix', 'drop'}
 MIN_WRONG = 3
 MIN_EXPLICIT = 4
-DATED = re.compile(r'\d{4}|сери', re.IGNORECASE)
+# год выпуска, а не четырёхзначный номинал («2000 рублей», «1000 юаней»)
+YEAR = re.compile(r'(?<!\d)(?:1[6-9]|20)\d\d(?!\d)(?!\s*(?:руб|юан|元|卢布))', re.IGNORECASE)
+SERIES = re.compile(r'сери', re.IGNORECASE)
+# окончания русских слов: подсказка «хризантемой» — та же «хризантема»
+ENDINGS = sorted(['ами', 'ями', 'ого', 'его', 'ому', 'ему', 'ыми', 'ими', 'ых', 'их', 'ой', 'ей', 'ий', 'ый',
+                  'ая', 'яя', 'ое', 'ее', 'ую', 'юю', 'ов', 'ев', 'ам', 'ям', 'ах', 'ях', 'ом', 'ем',
+                  'а', 'я', 'ь', 'й', 'о', 'е', 'ы', 'и', 'у', 'ю'], key=len, reverse=True)
+MIN_STEM = 3
+
+
+def _stem(word: str) -> str:
+    for ending in ENDINGS:
+        if word.endswith(ending) and len(word) - len(ending) >= MIN_STEM:
+            return word[:-len(ending)]
+    return word
+
+
+def _name_pattern(name: str) -> re.Pattern:
+    words = re.findall(r'\w+', name.lower())
+    if not words or not CYRILLIC.search(name):
+        return re.compile(re.escape(name.lower()))
+    return re.compile(r'(?<!\w)' + r'\W+'.join(re.escape(_stem(word)) + r'\w*' for word in words))
 
 
 def _mentions(text: str, cell: dict) -> list[str]:
+    """Названия ответа, которые стоят в тексте: китайское — как есть, русские — в любом падеже."""
     lowered = text.lower()
-    return [name for name in [cell['zh'], *cell.get('ru', [])] if name.strip() and name.lower() in lowered]
+    return [name for name in [cell['zh'], *cell.get('ru', [])]
+            if name.strip() and _name_pattern(name).search(lowered)]
 
 
 def _reference_errors(where: str, question: dict, dossier: dict) -> list[str]:
@@ -230,16 +257,16 @@ def _reference_errors(where: str, question: dict, dossier: dict) -> list[str]:
     unknown = set(fact) - FACT_FIELDS
     if unknown:
         errors.append(f'{where}: неизвестные поля fact {sorted(unknown)}')
-    table = dossier['tables'].get(fact.get('table'))
+    table = dossier['tables'].get(fact['table']) if isinstance(fact.get('table'), str) else None
     if table is None:
         return errors + [f'{where}: нет таблицы {fact.get("table")!r}']
     columns = table['columns']
     rows = {row['id']: row for row in table['rows']}
 
     def cell_ref(label: str, row_id: object, column: object) -> list[str]:
-        if row_id not in rows:
+        if not isinstance(row_id, str) or row_id not in rows:
             return [f'{where}: {label} — нет строки {row_id!r}']
-        if columns.get(column) != 'zh':
+        if not isinstance(column, str) or columns.get(column) != 'zh':
             return [f'{where}: {label} — колонка {column!r} не может быть вариантом']
         if column not in rows[row_id]:
             return [f'{where}: {label} — у строки {row_id} нет ячейки {column}']
@@ -255,7 +282,8 @@ def _reference_errors(where: str, question: dict, dossier: dict) -> list[str]:
             return errors + [f'{where}: options — не меньше четырёх ссылок {{row, column}}']
         for index, ref in enumerate(refs, start=1):
             errors += cell_ref(f'вариант {index}', ref['row'], ref['column'])
-        if len({ref['row'] for ref in refs}) != len(refs):
+        named = [ref['row'] for ref in refs if isinstance(ref['row'], str)]
+        if len(set(named)) != len(named):
             errors.append(f'{where}: одна строка — не больше одного варианта')
         if fact.get('answer') not in refs:
             errors.append(f'{where}: answer — не один из вариантов')
@@ -272,12 +300,12 @@ def _reference_errors(where: str, question: dict, dossier: dict) -> list[str]:
     condition = fact.get('where', {})
     if not isinstance(condition, dict) or any(columns.get(column) != 'zh' for column in condition):
         errors.append(f'{where}: where — равенство по колонкам рода zh')
-    elif fact.get('row') in rows:
+    elif isinstance(fact.get('row'), str) and fact['row'] in rows:
         answer_row = rows[fact['row']]
         if not all(column in answer_row and answer_row[column]['zh'] == value for column, value in condition.items()):
             errors.append(f'{where}: строка ответа не проходит where')
     exclude = question.get('exclude', [])
-    if not isinstance(exclude, list) or any(row_id not in rows for row_id in exclude):
+    if not isinstance(exclude, list) or any(not isinstance(row_id, str) or row_id not in rows for row_id in exclude):
         errors.append(f'{where}: exclude называет строку не из этой таблицы')
     elif fact.get('row') in exclude:
         errors.append(f'{where}: exclude убирает строку ответа')
@@ -306,12 +334,13 @@ def _content_errors(where: str, question: dict, dossier: dict) -> list[str]:
         given = _rows(dossier, fact['table'])[fact['row']][fact['given']]
         if given['zh'] not in text:
             errors.append(f'{where}: вопрос не называет значение given {given["zh"]!r}')
-    if dossier['tables'][fact['table']].get('datedQuestions') and not DATED.search(text):
+    if dossier['tables'][fact['table']].get('datedQuestions') and not (YEAR.search(text) or SERIES.search(text)):
         errors.append(f'{where}: вопрос не называет год или серию')
     return errors
 
 
-def validate_questions(questions: object, dossier: dict) -> list[str]:
+def validate_questions(questions: object, dossier: dict, bank: list[dict] | None = None) -> list[str]:
+    """`bank` — записи банка без вопросов этого досье: с ними сверяются повторы формулировок."""
     if not isinstance(questions, list):
         return ['вопросы досье должны быть списком']
     errors: list[str] = []
@@ -322,37 +351,49 @@ def validate_questions(questions: object, dossier: dict) -> list[str]:
             errors.append(f'вопрос {index} должен быть объектом')
             continue
         question_id = question.get('id')
-        where = question_id if isinstance(question_id, str) else f'вопрос {index}'
-        if not isinstance(question_id, str) or not re.fullmatch(rf'{re.escape(dossier["id"])}-q\d+', question_id):
+        named = isinstance(question_id, str) and re.fullmatch(rf'{re.escape(dossier["id"])}-q\d+', question_id)
+        where = question_id if named else f'вопрос {index}'
+        if not named:
             errors.append(f'{where}: id — «{dossier["id"]}-qNN»')
         elif question_id in seen:
             errors.append(f'{where}: повторяющийся id')
-        seen.add(question_id)
+            named = False
+        else:
+            seen.add(question_id)
         unknown = set(question) - QUESTION_FIELDS
         if unknown:
             errors.append(f'{where}: неизвестные поля вопроса {sorted(unknown)}')
-        if question.get('status') not in STATUSES:
+        status = question.get('status')
+        if not isinstance(status, str) or status not in STATUSES:
             errors.append(f'{where}: status — draft или accepted')
         if question.get('topic') not in TOPICS:
             errors.append(f'{where}: тема вне списка семи категорий')
-        if not isinstance(question.get('questionRu'), str) or not question['questionRu'].strip():
+        text = question.get('questionRu')
+        if not isinstance(text, str) or not text.strip():
             errors.append(f'{where}: нет текста вопроса')
+            text = None
+        else:
+            # те же правила текста, что проверит сборка банка: ловим их ещё у черновика
+            errors += [f'{where}: {message}' for message in language_errors(text, [])]
+            errors += [f'{where}: {message}' for message in completeness_errors(text, None, [])]
         if not isinstance(question.get('explanation'), str) or not question['explanation'].strip():
             errors.append(f'{where}: нет пояснения')
         elif not 3 <= sentence_count(question['explanation']) <= 5:
             # то же правило, что у дополнений: сборка банка проверит его снова
             errors.append(f'{where}: пояснение должно состоять из 3–5 предложений')
         check = question.get('check')
-        if check is not None and (not isinstance(check, dict) or check.get('verdict') not in VERDICTS
+        verdict = check.get('verdict') if isinstance(check, dict) else None
+        if check is not None and (not isinstance(verdict, str) or verdict not in VERDICTS
                                   or not isinstance(check.get('note', ''), str)):
             errors.append(f'{where}: check — {{verdict: accept | fix | drop, note}}')
-        if question.get('status') == 'accepted' and (not isinstance(check, dict) or check.get('verdict') != 'accept'):
+        if status == 'accepted' and verdict != 'accept':
             errors.append(f'{where}: принятый вопрос без вердикта проверки accept')
         broken = _reference_errors(where, question, dossier)
         errors += broken
-        if not broken and isinstance(question.get('questionRu'), str):
+        if not broken and text is not None:
             errors += _content_errors(where, question, dossier)
-            whole.append(question)
+            if named:
+                whole.append(question)
     # утечки: ответ одного вопроса не должен стоять в тексте другого
     answers = {question['id']: answer_cell(question, dossier)[1] for question in whole}
     for question in whole:
@@ -362,16 +403,41 @@ def validate_questions(questions: object, dossier: dict) -> list[str]:
             names = _mentions(question['questionRu'], answer)
             if names:
                 errors.append(f'{question["id"]}: текст называет ответ вопроса {other_id}: {names}')
+    errors += _wording_errors(whole, bank or [])
     return errors
 
 
-def load_dossier(dossier_path: Path, questions_path: Path) -> tuple[dict, list[dict]]:
+def _wording_errors(questions: list[dict], bank: list[dict]) -> list[str]:
+    """Повторы и обрезки формулировок — между вопросами досье и с банком, как в сборке."""
+    errors: list[str] = []
+    known = {normalize_text(record['questionRu']): record['id'] for record in bank}
+    first: dict[str, str] = {}
+    for question in questions:
+        key = normalize_text(question['questionRu'])
+        if key in known:
+            errors.append(f'{question["id"]}: формулировка уже есть в базе ({known[key]})')
+        elif key in first:
+            errors.append(f'{question["id"]}: повторяет формулировку {first[key]}')
+        else:
+            first[key] = question['id']
+    ids = {question['id'] for question in questions}
+    pairs = fragment_pairs([(record['id'], record['questionRu']) for record in bank]
+                           + [(question['id'], question['questionRu']) for question in questions])
+    for left, right in pairs:
+        if left in ids or right in ids:
+            errors.append(f'{right if right in ids else left}: формулировка выглядит обрезком {left if right in ids else right}')
+    return errors
+
+
+def load_dossier(dossier_path: Path, questions_path: Path,
+                 bank: list[dict] | None = None) -> tuple[dict, list[dict]]:
     dossier = loads_unique(dossier_path.read_text('utf-8'), 'досье')
     errors = validate_dossier(dossier)
     if errors:
         raise ValueError(f'некорректное досье {dossier_path.name}:\n - ' + '\n - '.join(errors))
     questions = loads_unique(questions_path.read_text('utf-8'), 'вопросах досье')
-    errors = validate_questions(questions, dossier)
+    errors = validate_questions(questions, dossier, [record for record in bank or []
+                                                     if record.get('dossier') != dossier['id']])
     if errors:
         raise ValueError(f'некорректные вопросы {questions_path.name}:\n - ' + '\n - '.join(errors))
     return dossier, questions
@@ -380,7 +446,12 @@ def load_dossier(dossier_path: Path, questions_path: Path) -> tuple[dict, list[d
 def _report_cell(value: object) -> str:
     if value is None:
         return ''
-    text = value['zh'] if isinstance(value, dict) else str(value)
+    if isinstance(value, dict):
+        # русские названия видны автору: по ним сборка ищет подсказки и утечки
+        names = value.get('ru', [])
+        text = value['zh'] + (f' ({", ".join(names)})' if names else '')
+    else:
+        text = ' '.join(str(value).split())
     return text.replace('|', '\\|')
 
 
@@ -406,7 +477,9 @@ def dossier_report(dossier: dict, questions: list[dict]) -> str:
         lines += [f'### {question["id"]} · {question["status"]} · проверка: {check.get("verdict", "нет")}', '',
                   question['questionRu'], '',
                   f'- Ответ: {options[0]["zh"]}',
-                  '- Неверные: ' + ', '.join(option['zh'] for option in options[1:]),
+                  # подписи принимает автор — значит, он их видит здесь
+                  '- Неверные:', *(f'  - {option["zh"]} — {option.get("gloss", "без подписи")}'
+                                   for option in options[1:]),
                   f'- Тема: {question["topic"]}',
                   f'- Пояснение: {question["explanation"].strip()}']
         if check.get('note'):
@@ -431,8 +504,10 @@ def dossier_paths(directory: Path) -> list[tuple[Path, Path]]:
 def main() -> None:
     """Проверка всех досье без сборки банка: её запускают агенты, пока пишут досье."""
     root = Path(__file__).resolve().parents[1]
+    bank_path = root / 'data/bank.json'
+    bank = json.loads(bank_path.read_text('utf-8')) if bank_path.exists() else []
     for table_path, questions_path in dossier_paths(root / 'data/dossiers'):
-        data, questions = load_dossier(table_path, questions_path)
+        data, questions = load_dossier(table_path, questions_path, bank)
         accepted = sum(1 for question in questions if question['status'] == 'accepted')
         rows = sum(len(table['rows']) for table in data['tables'].values())
         print(f'{data["id"]}: строк {rows}, вопросов {len(questions)}, принято {accepted} — ошибок нет')

@@ -29,7 +29,7 @@ def cell(zh, ru=(), gloss=None):
 def note(row_id, currency, denomination, back, back_ru, flower=None, flower_ru=(),
          series='пятая серия, выпуск 2019 года'):
     row = {'id': row_id, 'currency': cell(currency),
-           'denomination': cell(denomination, gloss=f'Купюра {denomination}'),
+           'denomination': cell(denomination, gloss=f'Купюра номиналом {denomination.split()[0]}'),
            'series': series,
            'back': cell(back, back_ru, gloss=f'{back_ru[0]} — на обороте купюры'),
            'sources': [source(1), source(2)], 'olympiad': []}
@@ -89,7 +89,11 @@ class ValidateDossierTest(unittest.TestCase):
             (lambda d: row(d, 'cny-50').update(back='布达拉宫'), 'должна быть объектом'),
             (lambda d: row(d, 'cny-50')['back'].update(ru='Потала'), 'список русских названий'),
             (lambda d: row(d, 'cny-50')['back'].update(gloss='Д' * 91), 'длиннее 90'),
-            (lambda d: row(d, 'cny-50')['back'].update(gloss='две\nстроки'), 'одна непустая строка'),
+            (lambda d: row(d, 'cny-50')['back'].update(gloss='две\nстроки'), 'не в одну строку'),
+            (lambda d: row(d, 'cny-50')['back'].update(gloss=''), 'одна непустая строка'),
+            (lambda d: row(d, 'cny-50')['back'].update(gloss='Potala Palace on the back'), 'не по-русски'),
+            (lambda d: row(d, 'cny-50')['back'].update(gloss='布达拉宫 — дворец в Лхасе'), 'повторяет сам вариант'),
+            (lambda d: row(d, 'cny-50')['back'].update(gloss='Потала  в Лхасе'), 'лишние пробелы'),
             (lambda d: row(d, 'cny-50')['back'].update(note='x'), 'неизвестные поля ячейки'),
             (lambda d: row(d, 'cny-50').update(series=''), 'описательная ячейка'),
             (lambda d: row(d, 'cny-50').update(sources=[source(1)]), 'не меньше 2 источников'),
@@ -415,11 +419,13 @@ class DossierReportTest(unittest.TestCase):
         report = dossier_report(dossier(), [question(), draft])
         self.assertTrue(report.startswith('# Досье «Деньги»\n'))
         self.assertIn('## Таблица `banknotes` — строк: 6', report)
-        self.assertIn('| cny-50 | 人民币 | 50 元 | пятая серия, выпуск 2019 года | 布达拉宫 | 菊花 |  |', report)
+        self.assertIn('| cny-50 | 人民币 | 50 元 | пятая серия, выпуск 2019 года | 布达拉宫 (Потала) | 菊花 (хризантема) |  |', report)
         self.assertIn('## Вопросы — принято 1 из 2', report)
         self.assertIn('### money-q02 · draft · проверка: fix', report)
         self.assertIn('- Ответ: 布达拉宫', report)
-        self.assertIn('- Неверные: 人民大会堂, 桂林山水, 长江三峡, 泰山', report)
+        # подписи принимает автор — значит, он их видит в отчёте
+        self.assertIn('- Неверные:\n  - 人民大会堂 — Дом народных собраний — на обороте купюры\n'
+                      '  - 桂林山水 — Гуйлинь — на обороте купюры\n', report)
         self.assertIn('- Замечание проверки: неточно', report)
         self.assertTrue(report.endswith('\n') and not report.endswith('\n\n'))
 
@@ -427,6 +433,87 @@ class DossierReportTest(unittest.TestCase):
         draft = question(status='draft')
         draft.pop('check')
         self.assertIn('### money-q01 · draft · проверка: нет', dossier_report(dossier(), [draft]))
+
+class ReviewFindingsTest(unittest.TestCase):
+    """Замечания ревью ветки 2026-10-14: проверка досье не пропускает то, что потом остановит сборку."""
+
+    def errors(self, questions, data=None, bank=None):
+        return validate_questions(questions, data or dossier(), bank)
+
+    def assertRejects(self, questions, fragment, data=None, bank=None):
+        errors = self.errors(questions, data, bank)
+        self.assertTrue(any(fragment in error for error in errors), f'{fragment!r} not in {errors}')
+
+    def test_four_digit_denomination_is_not_a_year(self):
+        for text in ('Какой цветок изображён на лицевой стороне купюры 2000 юаней?',
+                     'Какой цветок изображён на купюре в 1000 рублей?'):
+            with self.subTest(text=text):
+                self.assertRejects([question(questionRu=text)], 'год или серию')
+        self.assertEqual(self.errors([question(questionRu='Какой цветок изображён на купюре 20 юаней образца 2019 года?')]), [])
+
+    def test_inflected_answer_is_still_a_hint(self):
+        data = dossier()
+        hint = question(fact={'table': 'banknotes', 'row': 'cny-50', 'ask': 'flower', 'where': {'currency': '人民币'}},
+                        questionRu='Хризантемой ли украшена купюра 50 юаней выпуска 2019 года?')
+        self.assertRejects([hint], 'называет свой ответ', data)
+
+    def test_inflected_multiword_answer_is_still_a_leak(self):
+        back = question(fact={'table': 'banknotes', 'row': 'cny-100', 'ask': 'back', 'where': {'currency': '人民币'}},
+                        questionRu='Что изображено на обороте купюры 100 юаней выпуска 2015 года?')
+        other = question(id='money-q02', questionRu='Какой цветок соседствует с изображением Дома народных собраний на купюре 2019 года?')
+        self.assertRejects([back, other], 'money-q02: текст называет ответ вопроса money-q01')
+
+    def test_question_text_rules_of_the_build_apply_to_drafts(self):
+        cases = [
+            ('какой цветок изображён на купюре 20 юаней выпуска 2019 года?', 'заглавной'),
+            ('Какой цветок изображён на купюре 20 юаней выпуска 2019 года', 'без знака препинания'),
+            ('Which flower is on the 20 yuan note of 2019?', 'не по-русски'),
+        ]
+        for text, fragment in cases:
+            with self.subTest(fragment=fragment):
+                self.assertRejects([question(status='draft', questionRu=text)], fragment)
+
+    def test_repeated_or_truncated_wording_is_caught_before_acceptance(self):
+        first = question(status='draft')
+        same = question(id='money-q02', status='draft', fact={**question()['fact'], 'row': 'cny-50'})
+        self.assertRejects([first, same], 'повторяет формулировку money-q01')
+        longer = question(id='money-q02', status='draft', fact={**question()['fact'], 'row': 'cny-50'},
+                          questionRu=question()['questionRu'][:-1] + ' пятой серии?')
+        self.assertRejects([first, longer], 'обрезком')
+        bank = [{'id': '2024-25-shk-1', 'questionRu': question()['questionRu']}]
+        self.assertRejects([first], 'уже есть в базе', bank=bank)
+
+    def test_question_without_id_is_reported_not_crashed(self):
+        nameless = question()
+        nameless.pop('id')
+        self.assertRejects([nameless], 'вопрос 1: id')
+
+    def test_malformed_values_are_reported_not_crashed(self):
+        fact = question()['fact']
+        broken_questions = [
+            question(fact={**fact, 'row': ['cny-20']}),
+            question(fact={**fact, 'table': ['banknotes']}),
+            question(fact={**fact, 'ask': ['flower']}),
+            question(exclude=[{'row': 'cny-5'}]),
+            question(status=['accepted']),
+            question(check={'verdict': ['accept']}),
+            question(id=['money-q01']),
+            question(fact={'table': 'banknotes', 'options': [{'row': ['cny-1'], 'column': 'back'}] * 4,
+                           'answer': {'row': ['cny-1'], 'column': 'back'}}),
+        ]
+        for broken in broken_questions:
+            with self.subTest(question=broken):
+                self.assertTrue(self.errors([broken]))
+        broken_dossiers = [
+            lambda d: d['tables']['banknotes']['columns'].update(back=['zh']),
+            lambda d: d['tables']['banknotes'].update(required=[{'series': 1}]),
+            lambda d: row(d, 'cny-50')['sources'][0].update(url=['https://x']),
+        ]
+        for mutate in broken_dossiers:
+            data = dossier()
+            mutate(data)
+            with self.subTest(mutate=mutate):
+                self.assertTrue(validate_dossier(data))
 
 if __name__ == '__main__':
     unittest.main()

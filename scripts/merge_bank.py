@@ -375,7 +375,7 @@ def main() -> None:
     # досье — сразу после дополнений: правки, склейки и подписи дальше работают и для них
     dossier_reports: dict[str, str] = {}
     for table_path, questions_path in dossier_paths(ROOT / 'data/dossiers'):
-        dossier, questions = load_dossier(table_path, questions_path)
+        dossier, questions = load_dossier(table_path, questions_path, bank)
         bank.extend(dossier_records(dossier, questions))
         dossier_reports[dossier['id']] = dossier_report(dossier, questions)
     # правки — последним слоем, чтобы доходить и до дополнений

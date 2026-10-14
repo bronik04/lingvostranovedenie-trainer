@@ -23,6 +23,21 @@ ENTRY_FIELDS = {'reviewedAt', 'options'}
 GLOSS_FIELDS = {'zh', 'ru', 'source'}
 
 
+def gloss_text_errors(text: object, zh: str) -> list[str]:
+    """Правила текста подписи — общие для glosses.json и ячеек досье (scripts/dossiers.py)."""
+    if not isinstance(text, str) or not CYRILLIC.search(text):
+        return ['подпись не по-русски']
+    errors: list[str] = []
+    if len(text) > MAX_LENGTH:
+        errors.append(f'подпись длиннее {MAX_LENGTH} символов')
+    if '— —' in text or ' '.join(text.split()) != text:
+        errors.append('подпись не в одну строку, двойное тире или лишние пробелы')
+    # только китайский текст: вариант-год «1911» подпись начинает с года
+    if CJK.search(zh) and zh in text:
+        errors.append('подпись повторяет сам вариант по-китайски')
+    return errors
+
+
 def _source_ok(source: object) -> bool:
     if not isinstance(source, dict):
         return False
@@ -74,17 +89,7 @@ def validate_glosses(glosses: object, bank: list[dict]) -> list[str]:
             if gloss.get('zh') != current[option_id]:
                 errors.append(f'{where}: вариант изменился ({gloss.get("zh")!r} → {current[option_id]!r}), '
                               'подпись нужно перепроверить')
-            text = gloss.get('ru')
-            if not isinstance(text, str) or not CYRILLIC.search(text):
-                errors.append(f'{where}: подпись не по-русски')
-            else:
-                if len(text) > MAX_LENGTH:
-                    errors.append(f'{where}: подпись длиннее {MAX_LENGTH} символов')
-                if '— —' in text or ' '.join(text.split()) != text:
-                    errors.append(f'{where}: подпись не в одну строку, двойное тире или лишние пробелы')
-                # только китайский текст: вариант-год «1911» подпись начинает с года
-                if CJK.search(current[option_id]) and current[option_id] in text:
-                    errors.append(f'{where}: подпись повторяет сам вариант по-китайски')
+            errors.extend(f'{where}: {message}' for message in gloss_text_errors(gloss.get('ru'), current[option_id]))
             if not _source_ok(gloss.get('source')):
                 errors.append(f'{where}: нет источника с HTTP(S)-ссылкой и названием')
     return errors
