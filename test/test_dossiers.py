@@ -1,13 +1,14 @@
 import copy
 import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from dossiers import dossier_records, question_options, validate_dossier
+from dossiers import dossier_records, load_dossier, question_options, validate_dossier, validate_questions
 
 TOPIC = 'Экономика, образование, наука и спорт'
 
@@ -196,6 +197,155 @@ class DossierRecordsTest(unittest.TestCase):
         [record] = dossier_records(dossier(), [question()])
         self.assertEqual(record['evidence'], [
             {key: value for key, value in source(n).items() if key != 'quote'} for n in (1, 2)])
+
+
+class ValidateQuestionsTest(unittest.TestCase):
+    def errors(self, questions, data=None):
+        return validate_questions(questions, data or dossier())
+
+    def assertRejects(self, questions, fragment, data=None):
+        errors = self.errors(questions, data)
+        self.assertTrue(any(fragment in error for error in errors), f'{fragment!r} not in {errors}')
+
+    def test_accepts_a_valid_question(self):
+        self.assertEqual(self.errors([question()]), [])
+
+    def test_draft_without_check_is_valid(self):
+        draft = question(status='draft')
+        draft.pop('check')
+        self.assertEqual(self.errors([draft]), [])
+
+    def test_rejects_broken_references(self):
+        fact = question()['fact']
+        cases = [
+            ({**fact, 'table': 'coins'}, 'нет таблицы'),
+            ({**fact, 'row': 'cny-3'}, "нет строки 'cny-3'"),
+            ({**fact, 'ask': 'series'}, 'не может быть вариантом'),
+            ({**fact, 'row': 'rub-500', 'where': {'currency': '卢布'}}, 'нет ячейки flower'),
+            ({**fact, 'where': {'series': 'x'}}, 'where'),
+            ({**fact, 'where': {'currency': '卢布'}}, 'не проходит where'),
+            ({**fact, 'answer': {'row': 'cny-20', 'column': 'flower'}}, 'answer бывает только'),
+            ({**fact, 'given': 'flower'}, 'given совпадает с ask'),
+            ({**fact, 'colour': 1}, 'неизвестные поля fact'),
+        ]
+        for broken, fragment in cases:
+            with self.subTest(fragment=fragment):
+                self.assertRejects([question(fact=broken)], fragment)
+
+    def test_draft_with_broken_reference_still_stops_the_build(self):
+        broken = question(status='draft', fact={**question()['fact'], 'row': 'cny-3'})
+        self.assertRejects([broken], "нет строки 'cny-3'")
+
+    def test_rejects_bad_exclude(self):
+        self.assertRejects([question(exclude=['cny-3'])], 'exclude')
+        self.assertRejects([question(exclude=['cny-20'])], 'exclude убирает строку ответа')
+
+    def test_rejects_a_pool_that_is_too_small(self):
+        fact = {'table': 'banknotes', 'row': 'rub-500', 'ask': 'back', 'where': {'currency': '卢布'}}
+        self.assertRejects([question(fact=fact, questionRu='Что изображено на обороте купюры 500 рублей образца 1997 года?')],
+                           'меньше 3 неверных')
+
+    def test_rejects_a_twin_of_the_right_answer(self):
+        data = dossier()
+        row(data, 'cny-50')['flower'] = cell('荷花', ['лотос'], gloss='Лотос — второй')
+        self.assertRejects([question()], 'совпадает с правильным', data)
+
+    def test_rejects_a_wrong_option_without_gloss(self):
+        data = dossier()
+        row(data, 'cny-50')['flower'].pop('gloss')
+        self.assertRejects([question()], 'нет подписи', data)
+
+    def test_rejects_a_question_that_names_its_own_answer(self):
+        self.assertRejects([question(questionRu='Какой цветок, 荷花, изображён на купюре 20 юаней 2019 года?')],
+                           'называет свой ответ')
+        # русское название ловится без учёта регистра
+        self.assertRejects([question(questionRu='Лотос ли изображён на купюре 20 юаней выпуска 2019 года?')],
+                           'называет свой ответ')
+
+    def test_given_value_must_be_named_in_the_question(self):
+        fact = {'table': 'banknotes', 'row': 'cny-50', 'ask': 'denomination', 'given': 'flower',
+                'where': {'currency': '人民币'}}
+        named = question(fact=fact, questionRu='На купюре какого номинала выпуска 2019 года изображён цветок 菊花?')
+        self.assertEqual(self.errors([named]), [])
+        self.assertRejects([question(fact=fact, questionRu='На купюре какого номинала 2019 года изображён этот цветок?')],
+                           'не называет значение given')
+
+    def test_dated_table_needs_a_year_or_series_in_the_question(self):
+        self.assertRejects([question(questionRu='Какой цветок изображён на лицевой стороне купюры 20 юаней?')],
+                           'год или серию')
+        series = question(questionRu='Какой цветок изображён на купюре 20 юаней пятой серии?')
+        self.assertEqual(self.errors([series]), [])
+
+    def test_rejects_a_leak_between_questions(self):
+        reverse = question(id='money-q02', fact={'table': 'banknotes', 'row': 'cny-20', 'ask': 'denomination',
+                                                 'given': 'flower', 'where': {'currency': '人民币'}},
+                           questionRu='На купюре какого номинала выпуска 2019 года изображён цветок 荷花?')
+        self.assertRejects([question(), reverse], 'money-q02: текст называет ответ вопроса money-q01')
+
+    def test_rejects_bad_status_check_id_topic_and_fields(self):
+        cases = [
+            ([question(status='done')], 'status'),
+            ([{k: v for k, v in question().items() if k != 'check'}], 'вердикта проверки accept'),
+            ([question(check={'verdict': 'fix', 'note': 'неточно'})], 'вердикта проверки accept'),
+            ([question(check={'verdict': 'maybe', 'note': ''})], 'verdict'),
+            ([question(id='q1')], 'id'),
+            ([question(), question()], 'повторяющийся id'),
+            ([question(topic='Деньги')], 'тема'),
+            ([question(colour=1)], 'неизвестные поля вопроса'),
+            ([question(explanation=' ')], 'нет пояснения'),
+            ([question(explanation='Одно предложение.')], '3–5 предложений'),
+            ('не список', 'списком'),
+        ]
+        for questions, fragment in cases:
+            with self.subTest(fragment=fragment):
+                self.assertRejects(questions, fragment)
+
+    def test_rejects_broken_explicit_options(self):
+        refs = [{'row': r, 'column': 'back'} for r in ('cny-100', 'cny-50', 'cny-20', 'rub-500')]
+        answer = {'row': 'rub-500', 'column': 'back'}
+        text = 'Что изображено на обороте купюры 500 рублей образца 1997 года?'
+        explicit = lambda **fact: question(fact={'table': 'banknotes', 'options': refs, 'answer': answer, **fact},
+                                           questionRu=text)
+        self.assertEqual(self.errors([explicit()]), [])
+        self.assertRejects([explicit(options=refs[:3])], 'не меньше четырёх')
+        self.assertRejects([explicit(options=refs[:3] + [{'row': 'cny-100', 'column': 'flower'}])],
+                           'не больше одного варианта')
+        self.assertRejects([explicit(answer={'row': 'cny-5', 'column': 'back'})], 'answer — не один из вариантов')
+        self.assertRejects([explicit(row='cny-20')], 'не использует')
+
+
+class LoadDossierTest(unittest.TestCase):
+    def write(self, directory, name, text):
+        path = Path(directory) / name
+        path.write_text(text, encoding='utf-8')
+        return path
+
+    def test_loads_a_valid_dossier(self):
+        with tempfile.TemporaryDirectory() as directory:
+            table = self.write(directory, 'money.json', json.dumps(dossier(), ensure_ascii=False))
+            questions = self.write(directory, 'money-questions.json', json.dumps([question()], ensure_ascii=False))
+            data, loaded = load_dossier(table, questions)
+            self.assertEqual((data['id'], [q['id'] for q in loaded]), ('money', ['money-q01']))
+
+    def test_errors_name_the_file(self):
+        with tempfile.TemporaryDirectory() as directory:
+            broken = dossier()
+            broken.pop('title')
+            table = self.write(directory, 'money.json', json.dumps(broken, ensure_ascii=False))
+            questions = self.write(directory, 'money-questions.json', '[]')
+            with self.assertRaisesRegex(ValueError, 'money.json'):
+                load_dossier(table, questions)
+            table = self.write(directory, 'money.json', json.dumps(dossier(), ensure_ascii=False))
+            questions = self.write(directory, 'money-questions.json', '"x"')
+            with self.assertRaisesRegex(ValueError, 'money-questions.json'):
+                load_dossier(table, questions)
+
+    def test_repeated_key_is_an_error(self):
+        with tempfile.TemporaryDirectory() as directory:
+            table = self.write(directory, 'money.json', '{"id": "money", "id": "cash"}')
+            questions = self.write(directory, 'money-questions.json', '[]')
+            with self.assertRaisesRegex(ValueError, 'повторяются ключи'):
+                load_dossier(table, questions)
 
 if __name__ == '__main__':
     unittest.main()
