@@ -90,6 +90,10 @@ class EditorialInBankTest(unittest.TestCase):
         bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
         merges = json.loads((ROOT / 'data/review/merges.json').read_text('utf-8'))
         absorbed = {record_id for item in merges.values() for record_id in item['absorbs']}
+        # удалённая запись (retired.json) — правка остаётся в файле, но в банк не попадает
+        retired_file = ROOT / 'data/review/retired.json'
+        if retired_file.exists():
+            absorbed |= set(json.loads(retired_file.read_text('utf-8')))
         for record_id, edit in edits.items():
             if record_id in absorbed:
                 # запись влита в другую склейкой дублей: правка сделала своё дело до склейки
