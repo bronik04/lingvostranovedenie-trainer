@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from dossiers import dossier_paths, dossier_records, dossier_report, load_dossier, question_options, validate_dossier, validate_questions
+from dossiers import dossier_paths, dossier_records, dossier_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions
 from editorial import apply_editorial, validate_editorial
 
 TOPIC = 'Экономика, образование, наука и спорт'
@@ -372,6 +372,69 @@ class EmbedQuestionTest(unittest.TestCase):
     def test_embed_takes_no_part_in_text_leaks_inside_the_dossier(self):
         # текст встроенного вопроса — в банке; утечки с ним ловит cross_leak_errors (задача 4)
         self.assertEqual(self.errors([question(), embed(fact={**embed()['fact'], 'row': 'cny-50'})]), [])
+
+
+def plain_row(row_id, **cells):
+    return {'id': row_id, **cells, 'sources': [source(1), source(2)], 'olympiad': []}
+
+
+def myths_dossier():
+    figure = lambda row_id, zh, ru: plain_row(row_id, name=cell(zh, [ru], gloss=f'{ru} — персонаж мифа'),
+                                              role='персонаж мифа')
+    return {'id': 'myths', 'title': 'Мифы и легенды', 'tables': {
+        'figures': {'columns': {'name': 'zh', 'role': 'ru'}, 'rows': [
+            figure('fig-zhurong', '祝融', 'бог огня Чжужун'),
+            figure('fig-change', '嫦娥', 'богиня Чанъэ'),
+            figure('fig-xihe', '羲和', 'богиня Сихэ'),
+            figure('fig-kuafu', '夸父', 'великан Куафу'),
+        ]},
+        'stories': {'columns': {'name': 'zh', 'meaning': 'ru'}, 'rows': [
+            plain_row('story-niulang-zhinv', name=cell('牛郎织女', ['Пастух и Ткачиха'], gloss='Легенда о Пастухе и Ткачихе'),
+                      meaning='народная легенда'),
+        ]}}}
+
+
+def space_dossier():
+    mission = lambda row_id, zh, namesake: plain_row(row_id, name=cell(zh, gloss=f'Аппарат {row_id}'), namesake=namesake)
+    return {'id': 'space', 'title': 'Космос', 'tables': {
+        'missions': {'columns': {'name': 'zh', 'namesake': 'zh'}, 'rows': [
+            mission('mis-zhurong', '祝融号', {'zh': '祝融', 'ref': 'myths/figures/fig-zhurong', 'gloss': 'Бог огня Чжужун'}),
+            mission('mis-queqiao', '鹊桥', {'zh': '鹊桥', 'from': 'myths/stories/story-niulang-zhinv',
+                                           'gloss': 'Сорочий мост из легенды'}),
+            mission('mis-wukong', '悟空', {'zh': '悟空', 'gloss': 'Сунь Укун из романа'}),
+        ]}}}
+
+
+class LinksTest(unittest.TestCase):
+    def links(self, space=None, myths=None):
+        return validate_links({'space': space or space_dossier(), 'myths': myths or myths_dossier()})
+
+    def test_live_links_are_valid(self):
+        self.assertEqual(validate_dossier(space_dossier()), [])
+        self.assertEqual(self.links(), [])
+
+    def test_ref_to_a_missing_row_is_an_error(self):
+        space = space_dossier()
+        space['tables']['missions']['rows'][0]['namesake']['ref'] = 'myths/figures/fig-rongzhu'
+        self.assertTrue(any('несуществующую строку' in e for e in self.links(space)))
+
+    def test_ref_needs_the_same_name(self):
+        myths = myths_dossier()
+        myths['tables']['figures']['rows'][0]['name']['zh'] = '祝融氏'
+        self.assertTrue(any('другое название' in e for e in self.links(myths=myths)))
+
+    def test_from_only_needs_the_row(self):
+        space = space_dossier()
+        space['tables']['missions']['rows'][1]['namesake']['from'] = 'myths/stories/story-baishe'
+        self.assertTrue(any('несуществующую строку' in e for e in self.links(space)))
+
+    def test_link_format_is_checked_with_the_dossier(self):
+        space = space_dossier()
+        space['tables']['missions']['rows'][0]['namesake']['ref'] = 'fig-zhurong'
+        self.assertTrue(any('досье/таблица/строка' in e for e in validate_dossier(space)))
+        space = space_dossier()
+        space['tables']['missions']['rows'][0]['namesake']['from'] = 'myths/stories/story-niulang-zhinv'
+        self.assertTrue(any('ref или from' in e for e in validate_dossier(space)))
 
 class LoadDossierTest(unittest.TestCase):
     def write(self, directory, name, text):

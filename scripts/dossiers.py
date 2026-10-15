@@ -21,7 +21,9 @@ from taxonomy import TOPICS
 KINDS = {'zh', 'ru'}
 TABLE_FIELDS = {'columns', 'rows', 'required', 'datedQuestions'}
 ROW_SERVICE_FIELDS = {'id', 'sources', 'olympiad'}
-CELL_FIELDS = {'zh', 'ru', 'gloss'}
+CELL_FIELDS = {'zh', 'ru', 'gloss', 'ref', 'from'}
+LINK = re.compile(r'[a-z][a-z0-9-]*/[a-z][a-z0-9_-]*/[a-z0-9][a-z0-9-]*')
+LINK_FIELDS = ('ref', 'from')
 MIN_SOURCES = 2
 SLUG = re.compile(r'[a-z0-9][a-z0-9-]*')
 
@@ -48,6 +50,12 @@ def _cell_errors(where: str, cell: object) -> list[str]:
         else:
             # те же правила текста, что у glosses.json: ученик видит подписи одинаково
             errors += [f'{where}: {message}' for message in gloss_text_errors(gloss, zh if isinstance(zh, str) else '')]
+    links = [field for field in LINK_FIELDS if field in cell]
+    if len(links) > 1:
+        errors.append(f'{where}: у ячейки одна ссылка — ref или from')
+    for field in links:
+        if not isinstance(cell[field], str) or not LINK.fullmatch(cell[field]):
+            errors.append(f'{where}: {field} — «досье/таблица/строка»')
     return errors
 
 
@@ -138,6 +146,34 @@ def validate_dossier(dossier: object) -> list[str]:
             continue
         for index, row in enumerate(rows, start=1):
             errors += _row_errors(name, index, row, table, seen_rows)
+    return errors
+
+
+def validate_links(dossiers: dict[str, dict]) -> list[str]:
+    """Ссылки ячеек на строки других досье: `ref` — тот же персонаж (текст совпадает), `from` — назван по."""
+    errors: list[str] = []
+    for dossier_id, dossier in dossiers.items():
+        for table_name, table in dossier['tables'].items():
+            for row in table['rows']:
+                for column, kind in table['columns'].items():
+                    cell = row.get(column)
+                    if kind != 'zh' or not isinstance(cell, dict):
+                        continue
+                    for field in LINK_FIELDS:
+                        if field not in cell:
+                            continue
+                        where = f'{dossier_id}/{table_name}/{row["id"]}.{column}'
+                        target_dossier, target_table, target_row = cell[field].split('/')
+                        rows = {item['id']: item for item in
+                                dossiers.get(target_dossier, {}).get('tables', {}).get(target_table, {}).get('rows', [])}
+                        target = rows.get(target_row)
+                        if target is None:
+                            errors.append(f'{where}: {field} ведёт в несуществующую строку {cell[field]}')
+                        elif field == 'ref':
+                            name = target.get('name', {}).get('zh') if isinstance(target.get('name'), dict) else None
+                            if name != cell['zh']:
+                                errors.append(f'{where}: ref {cell[field]} — у строки другое название '
+                                              f'({name!r} ≠ {cell["zh"]!r})')
     return errors
 
 
