@@ -24,6 +24,16 @@ const TOPIC_MARKS = {
 // до стольких вопросов ход раунда рисуется кружками, длиннее — полосой
 const MAX_STEP_DOTS = 14;
 const THEME_COLORS = { light: '#faf4e8', dark: '#181512' };
+const FORMAT_COPY = {
+  choice: 'Вопрос и четыре варианта — как на олимпиаде.',
+  recall: 'Сначала вспомните ответ сами, варианты — только как подсказка.',
+  truefalse: 'Вопрос и один предложенный ответ: правильный он или нет?',
+};
+const QUIZ_HINTS = {
+  choice: '1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда',
+  recall: 'Пробел — показать ответ · V — варианты · 1 / 2 / 3 — оценка · Esc — выйти из раунда',
+  truefalse: '1 или ← — верно · 2 или → — неверно · Enter — дальше · Esc — выйти из раунда',
+};
 
 const $ = (id) => document.getElementById(id);
 
@@ -32,7 +42,7 @@ const defaultFilters = () => ({
 });
 
 function defaultStudySettings() {
-  return { filters: defaultFilters(), size: 10 };
+  return { filters: defaultFilters(), size: 10, format: 'choice' };
 }
 
 function loadStudySettings() {
@@ -50,6 +60,11 @@ const savedStudySettings = loadStudySettings();
 const state = {
   filters: savedStudySettings.filters,
   size: savedStudySettings.size,
+  format: savedStudySettings.format,
+  // формат замораживается на старте раунда: настройки во время раунда не видны
+  roundFormat: 'choice',
+  // стадия текущего вопроса: 'choice' — сетка вариантов
+  stage: 'choice',
   round: [],
   wrongIds: [],
   // ответ ученика на каждую ошибку раунда (первую попытку) — для списка в итогах
@@ -128,7 +143,7 @@ function saveStudySettings() {
   try {
     localStorage.setItem(STUDY_SETTINGS_KEY, JSON.stringify({
       version: 1,
-      settings: { filters: state.filters, size: state.size },
+      settings: { filters: state.filters, size: state.size, format: state.format },
     }));
   } catch {}
 }
@@ -291,6 +306,10 @@ function renderSetup() {
     due: 'Пройденные вопросы, срок повторения которых наступил.',
   };
   $('modeHelp').textContent = modeCopy[state.filters.mode];
+  for (const input of document.querySelectorAll('input[name="studyFormat"]')) {
+    input.checked = input.value === state.format;
+  }
+  $('formatHelp').textContent = FORMAT_COPY[state.format];
   $('verifiedFilterWrap').hidden = !QUESTION_BANK.some((record) => record.answer.state === 'unverified');
 
   const pool = eligible(QUESTION_BANK, state.filters, state.progress);
@@ -327,7 +346,8 @@ function startRound() {
   startRoundWith(buildRound(QUESTION_BANK, state.filters, state.progress, state.size));
 }
 
-function startRoundWith(round) {
+function startRoundWith(round, format = state.format) {
+  state.roundFormat = format;
   state.round = round;
   state.wrongIds = [];
   state.wrongPicks = {};
@@ -346,7 +366,7 @@ function startRoundWith(round) {
 
 function repeatMistakes() {
   const wrong = wrongQuestions(state.round, state.wrongIds);
-  if (wrong.length) startRoundWith(wrong);
+  if (wrong.length) startRoundWith(wrong, state.roundFormat);
 }
 
 function renderQuestion() {
@@ -373,6 +393,13 @@ function renderQuestion() {
   $('feedback').className = 'feedback hidden';
   $('nextButton').classList.add('hidden');
   $('options').innerHTML = '';
+  $('quizHint').textContent = QUIZ_HINTS[state.roundFormat];
+  state.stage = 'choice';
+  renderOptions(record);
+}
+
+function renderOptions(record) {
+  $('options').innerHTML = '';
   for (const option of labelledOptions(record)) {
     const button = document.createElement('button');
     button.type = 'button';
@@ -387,7 +414,7 @@ function renderQuestion() {
     caption.lang = 'zh-Hans';
     caption.textContent = option.zh;
     button.append(letter, caption);
-    button.addEventListener('click', () => answer(record, option.optionId));
+    button.addEventListener('click', () => chooseOption(record, option.optionId));
     $('options').append(button);
   }
 }
@@ -418,37 +445,45 @@ function renderProgress() {
   }));
 }
 
-function answer(record, optionId) {
-  if (state.answered) return;
+/** Общее для любого формата: прогресс, счёт раунда, повтор ошибки, ход, кнопка «дальше». */
+function commitAnswer(record, outcome, pick = {}) {
   state.answered = true;
-
-  const verdict = grade(record, optionId);
-  const previous = state.progress[record.id] || { attempts: 0, correct: 0 };
-  const review = scheduleReview(previous, verdict.correct);
-  state.progress[record.id] = {
-    attempts: previous.attempts + 1,
-    correct: previous.correct + (verdict.correct ? 1 : 0),
-    completed: true,
-    lastCorrect: verdict.correct,
-    box: review.box,
-    dueAt: review.dueAt,
-  };
+  const right = outcome !== 'wrong';
+  state.progress[record.id] = applyAnswer(state.progress[record.id], outcome);
   saveProgress();
   ({ correct: state.correct, wrongIds: state.wrongIds } =
-    tallyAnswer({ correct: state.correct, wrongIds: state.wrongIds }, record.id, verdict.correct));
-  if (!verdict.correct) {
-    if (!(record.id in state.wrongPicks)) state.wrongPicks[record.id] = optionId;
+    tallyAnswer({ correct: state.correct, wrongIds: state.wrongIds }, record.id, right));
+  if (!right) {
+    if (!(record.id in state.wrongPicks)) state.wrongPicks[record.id] = pick;
     const retry = queueRetry(state.retryQueue, state.retriedIds, record, state.position);
     state.retryQueue = retry.queue;
     state.retriedIds = retry.retriedIds;
   }
-  state.marks[state.position] = verdict.correct;
+  state.marks[state.position] = right;
   renderProgress();
+  $('nextButton').textContent =
+    state.position + 1 < state.round.length ? 'Следующий вопрос' : 'Итоги раунда';
+  $('nextButton').classList.remove('hidden');
+}
 
+function chooseOption(record, optionId) {
+  if (state.answered) return;
+  const verdict = grade(record, optionId);
+  commitAnswer(record, verdict.correct ? 'correct' : 'wrong', { optionId });
+  markOptions(record, optionId);
+  const right = record.options.find((option) => option.id === verdict.answerOptionId);
+  showFeedback(record, verdict.correct ? 'good' : 'bad', [
+    `<strong>${verdict.correct ? 'Верно' : 'Неверно'}</strong>`,
+    verdict.correct ? '' : `<span>Правильный ответ: <span lang="zh-Hans">${escapeHtml(right.zh)}</span>.</span>`,
+  ].join(''));
+}
+
+/** После выбора: верный — нефритом, выбранный неверный — киноварью, подписи под неверными. */
+function markOptions(record, optionId) {
   const glosses = new Map(optionGlosses(record).map((item) => [item.optionId, item.gloss]));
   for (const button of $('options').querySelectorAll('button')) {
     button.disabled = true;
-    if (button.dataset.optionId === verdict.answerOptionId) {
+    if (button.dataset.optionId === record.answer.optionId) {
       button.classList.add('correct');
       const status = document.createElement('span');
       status.className = 'option-status';
@@ -468,25 +503,20 @@ function answer(record, optionId) {
       button.append(note);
     }
   }
+}
 
-  const right = record.options.find((option) => option.id === verdict.answerOptionId);
+/** Разбор под вопросом: строка вердикта (её задаёт формат), пояснение, источники. */
+function showFeedback(record, kind, verdictHtml) {
   const sources = evidenceList(record.evidence);
-
-  $('feedback').className = `feedback ${verdict.correct ? 'good' : 'bad'}`;
+  $('feedback').className = `feedback ${kind}`;
   $('feedback').innerHTML = [
-    `<p class="verdict"><strong>${verdict.correct ? 'Верно' : 'Неверно'}</strong>`,
-    verdict.correct ? '' : `<span>Правильный ответ: <span lang="zh-Hans">${escapeHtml(right.zh)}</span>.</span>`,
-    '</p>',
+    `<p class="verdict">${verdictHtml}</p>`,
     record.explanation.ru ? `<p class="why">${escapeHtml(record.explanation.ru)}</p>` : '',
     sources ? `<ul>${sources}</ul>` : '',
     record.answer.state === 'unverified'
       ? '<p class="unverified">Ответ взят из официального ключа, но ещё не перепроверен по источникам.</p>'
       : '',
   ].join('');
-
-  $('nextButton').textContent =
-    state.position + 1 < state.round.length ? 'Следующий вопрос' : 'Итоги раунда';
-  $('nextButton').classList.remove('hidden');
   requestAnimationFrame(() => {
     const compact = window.matchMedia?.('(max-width: 600px)').matches;
     const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
@@ -558,7 +588,8 @@ function renderMistakes() {
   const wrong = wrongQuestions(state.round, state.wrongIds);
   $('resultMistakes').hidden = wrong.length === 0;
   $('mistakeList').replaceChildren(...wrong.map((record) => {
-    const picked = record.options.find((option) => option.id === state.wrongPicks[record.id]);
+    const pick = state.wrongPicks[record.id] ?? {};
+    const picked = record.options.find((option) => option.id === pick.optionId);
     const right = record.options.find((option) => option.id === record.answer.optionId);
     const item = document.createElement('li');
     item.innerHTML = [
@@ -758,6 +789,13 @@ $('onlyVerified').addEventListener('change', (event) => {
 for (const input of document.querySelectorAll('input[name="studyMode"]')) {
   input.addEventListener('change', (event) => {
     state.filters.mode = event.target.value;
+    saveStudySettings();
+    renderSetup();
+  });
+}
+for (const input of document.querySelectorAll('input[name="studyFormat"]')) {
+  input.addEventListener('change', (event) => {
+    state.format = event.target.value;
     saveStudySettings();
     renderSetup();
   });

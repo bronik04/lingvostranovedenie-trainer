@@ -409,6 +409,24 @@ test('телефон: ни на одном экране нет горизонт�
   assert.deepEqual(page.errors, []);
 });
 
+async function pickFormat(page, label) {
+  await page.locator('#setupView .mode-option', { hasText: label }).click();
+}
+
+test('формат выбирается, объясняется и переживает перезагрузку', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  assert.equal(await page.locator('input[name="studyFormat"]:checked').getAttribute('value'), 'choice');
+  await pickFormat(page, 'Верно или нет');
+  assert.match(await page.locator('#formatHelp').textContent(), /один предложенный ответ/);
+  await page.reload();
+  assert.equal(await page.locator('input[name="studyFormat"]:checked').getAttribute('value'), 'truefalse');
+  // «Сбросить фильтры» не трогает формат: это не фильтр
+  await page.locator('#clearFilters').click();
+  assert.equal(await page.locator('input[name="studyFormat"]:checked').getAttribute('value'), 'truefalse');
+  assert.deepEqual(page.errors, []);
+});
+
 /* ---------- раздел «Чэнъюй» ---------- */
 
 async function openChengyu(page) {

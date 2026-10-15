@@ -74,8 +74,21 @@
       </fieldset>
     </section>
 
-    <section class="chapter" id="settingsPanel">
+    <section class="chapter">
       <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">二</span>
+      <fieldset class="chapter-body mode-picker">
+        <legend class="ink-title-2">Формат</legend>
+        <div class="ink-pills mode-options">
+          <label class="mode-option"><input type="radio" name="studyFormat" value="choice" checked><span class="ink-pill">Выбор ответа</span></label>
+          <label class="mode-option"><input type="radio" name="studyFormat" value="recall"><span class="ink-pill">Вспомни сам</span></label>
+          <label class="mode-option"><input type="radio" name="studyFormat" value="truefalse"><span class="ink-pill">Верно или нет</span></label>
+        </div>
+        <p class="ink-caption mode-help" id="formatHelp"></p>
+      </fieldset>
+    </section>
+
+    <section class="chapter" id="settingsPanel">
+      <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">三</span>
       <fieldset class="chapter-body">
         <legend class="ink-title-2">Темы раунда</legend>
         <p class="ink-caption">Если не выбрать темы, в раунд попадут вопросы из всех разделов.</p>
@@ -92,7 +105,7 @@
     </section>
 
     <section class="chapter">
-      <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">三</span>
+      <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">四</span>
       <fieldset class="chapter-body">
         <legend class="ink-title-2">Длина раунда</legend>
         <div class="ink-choice-cards round-size" id="roundSize">
@@ -152,7 +165,7 @@
       <button class="ink-btn ink-btn--text" id="leaveRound" type="button">Закончить раунд</button>
       <button class="ink-btn ink-btn--primary hidden" id="nextButton" type="button">Следующий вопрос</button>
     </div>
-    <p class="ink-caption hint">1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда</p>
+    <p class="ink-caption hint" id="quizHint">1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда</p>
   </section>
 
   <section class="view results" id="resultsView" hidden>
