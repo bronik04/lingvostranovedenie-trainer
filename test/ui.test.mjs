@@ -193,7 +193,7 @@ test('прогресс переживает перезагрузку, а реж�
   await page.locator('#leaveRound').click();
   await page.reload();
   assert.equal(await page.locator('#bankCount').textContent(), `Пройдено 1 из ${bank.length}`);
-  await page.locator('.mode-option', { hasText: 'Ошибки' }).click();
+  await page.locator('#setupView .mode-option', { hasText: 'Ошибки' }).click();
   assert.equal(await page.locator('#eligibleNotice').textContent(), 'Под фильтры подходит вопросов: 1.');
   assert.deepEqual(page.errors, []);
 });
@@ -308,7 +308,7 @@ test('прогресс склеенного дубля переезжает на
   await page.reload();
   assert.equal(await page.locator('#bankCount').textContent(), `Пройдено 1 из ${bank.length}`);
   assert.deepEqual(await page.evaluate(() => Object.keys(state.progress)), [kept.id]);
-  await page.locator('.mode-option', { hasText: 'Ошибки' }).click();
+  await page.locator('#setupView .mode-option', { hasText: 'Ошибки' }).click();
   assert.equal(await page.locator('#eligibleNotice').textContent(), 'Под фильтры подходит вопросов: 1.');
 
   await page.evaluate(() => localStorage.clear());
@@ -406,5 +406,107 @@ test('телефон: ни на одном экране нет горизонт�
   await first.locator('summary').click();
   assert.equal(await first.locator('.row-answer').isVisible(), true, 'ответ в базе не раскрылся');
   assert.equal(await overflow(), 0, 'база с раскрытым ответом');
+  assert.deepEqual(page.errors, []);
+});
+
+/* ---------- раздел «Чэнъюй» ---------- */
+
+async function openChengyu(page) {
+  await page.locator('#navChengyu').click();
+  await page.locator('#cySetupView').waitFor();
+}
+
+/** Задание на экране: по чэнъюю в клетках, у обратного задания — по русской пословице. */
+async function currentChengyu(page, bank) {
+  const proverbShown = await page.locator('#cyProverb').isVisible();
+  if (proverbShown) {
+    const proverb = (await page.locator('#cyProverb').textContent()).replace(/^«|»$/g, '');
+    return bank.find((r) => r.prompt === proverb);
+  }
+  const chengyu = await page.locator('#cyChengyu').getAttribute('aria-label');
+  return bank.find((r) => r.chengyu === chengyu && r.kind !== 'reverse');
+}
+
+test('чэнъюй: раунд с верным и неверным ответом, разбор, итоги и справочник', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await page.evaluate(() => CHENGYU_BANK);
+  assert.equal(bank.length, 35);
+  await openChengyu(page);
+  assert.equal(await page.locator('#navChengyu').getAttribute('aria-current'), 'page');
+  assert.equal(await page.locator('#cyStatTotal').textContent(), '35');
+  await page.locator('input[name="cySize"][value="5"]').check();
+  await page.locator('#cyStartButton').click();
+  await page.locator('#cyQuizView').waitFor();
+  assert.equal(await page.locator('#cyProgressLabel').textContent(), 'Задание 1 из 5');
+  assert.equal(await page.locator('.site-nav').isVisible(), false, 'в раунде навигация скрыта');
+
+  let wrongRecord = null;
+  for (let n = 0; n < 5; n += 1) {
+    const record = await currentChengyu(page, bank);
+    assert.ok(record, 'задание на экране не найдено в банке');
+    assert.match(await page.locator('#cySourceLabel').textContent(), /^ВсОШ 20\d\d\/\d\d · .+ этап · задание \d+$/);
+    const correct = n !== 0;
+    const optionId = correct ? record.answer : record.options.find((o) => o.id !== record.answer).id;
+    // клавиатура: буква по видимому порядку
+    const shown = await page.locator('#cyOptions button').evaluateAll((b) => b.map((x) => x.dataset.optionId));
+    await page.keyboard.press(`Digit${shown.indexOf(optionId) + 1}`);
+    await page.locator('#cyFeedback.good, #cyFeedback.bad').waitFor();
+    assert.equal(await page.locator('#cyFeedback .verdict strong').textContent(), correct ? 'Верно' : 'Неверно');
+    assert.match(await page.locator('#cyFeedback').textContent(), /Смысл/);
+    if (!correct) wrongRecord = record;
+    await page.keyboard.press('Enter');
+  }
+  await page.locator('#cyResultsView').waitFor();
+  assert.match(await page.locator('#cyFinalScore').textContent(), /^4\s*\/ 5$/);
+  assert.equal(await page.locator('#cyMistakeList li').count(), 1);
+  assert.equal(await page.locator('#cyRepeatMistakes').isVisible(), true);
+
+  // ошибка сохранилась: набор «Ошибки» находит ровно это задание
+  await page.locator('#cyBackToSetup').click();
+  await page.locator('#cySetupView .mode-option', { hasText: 'Ошибки' }).click();
+  assert.match(await page.locator('#cyEligibleNotice').textContent(), /^Доступно 1 задание/);
+  const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('lingvo-trainer:chengyu:v1')));
+  assert.equal(stored.progress[wrongRecord.id].lastCorrect, false);
+  // прогресс основного раздела не тронут
+  assert.equal(await page.evaluate(() => localStorage.getItem('lingvo-trainer:v1')), null);
+
+  await page.locator('#cyOpenReference').click();
+  await page.locator('#cyReferenceView').waitFor();
+  assert.equal(await page.locator('#cyReferenceList article').count(), 35);
+  await page.locator('#cyReferenceSearch').fill('bei gong');
+  assert.equal(await page.locator('#cyReferenceList article').count(), 1);
+  const row = page.locator('#cyReferenceList article').first();
+  await row.locator('summary').click();
+  assert.match(await row.locator('.cy-key').textContent(), /У страха глаза велики/);
+  await page.keyboard.press('Escape');
+  await page.keyboard.press('Escape');
+  await page.locator('#cySetupView').waitFor();
+  // адрес следует за разделом: из «Тренировки» перезагрузка не возвращает в «Чэнъюй»
+  assert.equal(new URL(page.url()).hash, '#chengyu');
+  await page.locator('#navSetup').click();
+  assert.equal(new URL(page.url()).hash, '');
+  await page.reload();
+  assert.equal(await page.locator('#setupView').isVisible(), true);
+  assert.deepEqual(page.errors, []);
+});
+
+test('чэнъюй: ссылка #chengyu открывает раздел, телефон без горизонтальной прокрутки', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 360, height: 780 });
+  if (!page) return;
+  await page.goto(`${baseUrl}#chengyu`);
+  await page.locator('#cySetupView').waitFor();
+  const overflow = () => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+  assert.equal(await overflow(), 0, 'начало раздела');
+  await page.locator('input[name="cySize"][value="all"]').check();
+  await page.locator('#cyStartButton').click();
+  await page.locator('#cyQuizView').waitFor();
+  assert.equal(await page.locator('#cyProgressTrack').isVisible(), true, 'длинный раунд — полоса, а не кружки');
+  await page.locator('#cyOptions button').first().click();
+  assert.equal(await overflow(), 0, 'задание с разбором');
+  await page.locator('#cyLeaveRound').click();
+  await page.locator('#cyOpenReference').click();
+  await page.locator('#cyReferenceList article summary').first().click();
+  assert.equal(await overflow(), 0, 'справочник');
   assert.deepEqual(page.errors, []);
 });

@@ -48,7 +48,7 @@ test('встроенный банк совпадает с data/bank.json цел�
 test('минификация не ломает синтаксис встроенных скриптов', () => {
   const html = build();
   const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map((m) => m[1]);
-  assert.equal(scripts.length, 2, 'ожидались два встроенных <script>');
+  assert.equal(scripts.length, 3, 'ожидались три встроенных <script>: данные с движками и два интерфейса');
   const dir = mkdtempSync(join(tmpdir(), 'lingvo-syntax-'));
   try {
     scripts.forEach((code, index) => {
