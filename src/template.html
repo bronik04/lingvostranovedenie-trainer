@@ -168,6 +168,16 @@
         <button class="ink-btn ink-btn--secondary" id="showHint" type="button">Не помню — показать варианты</button>
       </div>
     </div>
+    <div class="truefalse hidden" id="tfPanel">
+      <div class="tf-card">
+        <p class="ink-caption">Предложенный ответ</p>
+        <p class="tf-option" id="tfOption" lang="zh-Hans"></p>
+      </div>
+      <div class="tf-buttons" role="group" aria-label="Правильный ли это ответ">
+        <button class="ink-btn ink-btn--secondary" id="tfTrue" type="button">Верно</button>
+        <button class="ink-btn ink-btn--secondary" id="tfFalse" type="button">Неверно</button>
+      </div>
+    </div>
     <div class="feedback hidden" id="feedback" role="status" tabindex="-1"></div>
     <div class="recall-rate hidden" id="recallRate" role="group" aria-labelledby="recallRateTitle">
       <p class="recall-rate-title" id="recallRateTitle">Как получилось?</p>

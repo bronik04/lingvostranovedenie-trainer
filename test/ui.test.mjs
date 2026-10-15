@@ -554,6 +554,85 @@ test('телефон: «Вспомни сам» без горизонтальн�
   assert.deepEqual(page.errors, []);
 });
 
+const currentStatement = (page) => page.evaluate(() => ({
+  id: state.round[state.position].id, isTrue: state.statement.isTrue, zh: state.statement.zh,
+}));
+
+test('верно или нет: ошибка объясняется, возвращается в раунде и повторяется в том же формате', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  await pickFormat(page, 'Верно или нет');
+  await startRound(page, 5);
+  let questions = 0;
+  let wrongId = null;
+  while (await page.locator('#quizView').isVisible()) {
+    questions += 1;
+    assert.ok(questions <= 6, 'раунд не заканчивается');
+    assert.equal(await page.locator('#tfPanel').isVisible(), true);
+    assert.equal(await page.locator('#options button').count(), 0);
+    const statement = await currentStatement(page);
+    assert.equal(await page.locator('#tfOption').textContent(), statement.zh);
+    const mistake = questions === 1;
+    // ← — «верно», → — «неверно»; ошибаемся только на первом вопросе
+    const sayTrue = mistake ? !statement.isTrue : statement.isTrue;
+    await page.keyboard.press(sayTrue ? 'ArrowLeft' : 'ArrowRight');
+    await page.locator('#nextButton:not(.hidden)').waitFor();
+    if (mistake) {
+      wrongId = statement.id;
+      const record = bank.find((r) => r.id === statement.id);
+      const right = record.options.find((o) => o.id === record.answer.optionId);
+      assert.equal(await page.locator('#feedback.bad').isVisible(), true);
+      assert.ok((await page.locator('#feedback').textContent()).includes(right.zh), 'нет правильного ответа');
+      assert.match(await page.locator('#scoreLabel').textContent(), /серия 0/);
+    }
+    if (questions === 6) assert.equal(statement.id, wrongId, 'шестым должен вернуться ошибочный вопрос');
+    await page.keyboard.press('Enter');
+  }
+  assert.equal(await page.locator('#finalScore').textContent(), '4 / 5');
+  assert.match(await page.locator('#mistakeList li').first().textContent(), /«(не)?верно» для/);
+  await page.locator('#repeatMistakes').click();
+  assert.equal(await page.locator('#tfPanel').isVisible(), true, 'повтор ошибок — в том же формате');
+  assert.deepEqual(page.errors, []);
+});
+
+test('верно или нет: угаданное «верно» не выводит вопрос из «Ошибок»', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  const target = bank.find((r) => r.answer.state === 'verified');
+  await page.evaluate((id) => localStorage.setItem('lingvo-trainer:v1', JSON.stringify({
+    version: 1,
+    progress: { [id]: { attempts: 1, correct: 0, completed: true, lastCorrect: false, box: 0, dueAt: 0 } },
+  })), target.id);
+  await page.reload();
+  await page.locator('#setupView .mode-option', { hasText: 'Ошибки' }).click();
+  await pickFormat(page, 'Верно или нет');
+  await startRound(page, 5);
+  const statement = await currentStatement(page);
+  assert.equal(statement.id, target.id);
+  await page.locator(statement.isTrue ? '#tfTrue' : '#tfFalse').click();
+  assert.equal(await page.locator('#feedback.good').isVisible(), true);
+  await page.locator('#leaveRound').click();
+  assert.equal(await page.locator('#eligibleNotice').textContent(), 'Под фильтры подходит вопросов: 1.');
+  assert.deepEqual(page.errors, []);
+});
+
+test('телефон: «Верно или нет» с длинным вариантом без горизонтальной прокрутки', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 360, height: 780 });
+  if (!page) return;
+  await page.evaluate(() => {
+    for (const r of QUESTION_BANK) for (const o of r.options) o.zh = `${o.zh}中华人民共和国全国人民代表大会常务委员会`;
+  });
+  const overflow = () => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+  await pickFormat(page, 'Верно или нет');
+  await startRound(page, 5);
+  assert.equal(await overflow(), 0, 'карточка с предложенным ответом');
+  await page.locator('#tfTrue').click();
+  assert.equal(await overflow(), 0, 'разбор ответа');
+  assert.deepEqual(page.errors, []);
+});
+
 /* ---------- раздел «Чэнъюй» ---------- */
 
 async function openChengyu(page) {

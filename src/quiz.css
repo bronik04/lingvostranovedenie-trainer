@@ -379,8 +379,8 @@ select, .search {
 .recall-prompt .actions { justify-content: center; }
 .recall-rate { display: flex; flex-direction: column; gap: var(--s-3); margin-top: var(--s-5); }
 .recall-rate-title { font-weight: var(--t-weight-semibold); }
-/* выбранная оценка — залита тушью, как выбранная пилюля; остальные гаснут как disabled */
-.recall-rate .ink-btn[aria-pressed='true'] {
+/* выбранная оценка или ответ — залиты тушью, как выбранная пилюля; остальные гаснут как disabled */
+.recall-rate .ink-btn[aria-pressed='true'], .tf-buttons .ink-btn[aria-pressed='true'] {
   border-style: solid;
   border-color: var(--text-on-ground);
   background: var(--text-on-ground);
@@ -395,6 +395,27 @@ select, .search {
 }
 .feedback.reveal .verdict strong { font-family: var(--font-han); }
 .result-recall { margin: 0; }
+.tf-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-2);
+  padding: var(--s-6) var(--s-5);
+  border: var(--border-hair) solid var(--line-on-ground-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface-raised);
+}
+.tf-card p { margin: 0; }
+.tf-option {
+  font-family: var(--font-han);
+  font-size: 44px;
+  font-weight: var(--t-weight-bold);
+  line-height: 1.2;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.tf-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-3); margin-top: var(--s-3); }
+.tf-buttons .ink-btn { min-height: 64px; }
 
 /* ---------- итог раунда ---------- */
 
@@ -545,6 +566,7 @@ a:hover { color: var(--accent-on-ground); }
   .option-gloss { grid-column: 2; grid-row: auto; }
   .quiz > .hint { display: none; }
   .recall-prompt .ink-btn, .recall-rate .ink-btn { flex: 1 1 100%; }
+  .tf-option { font-size: 34px; }
   .results { padding: var(--s-7) 0 var(--s-8); }
   .row-panel { padding: var(--s-4); }
 }

@@ -63,10 +63,14 @@ const state = {
   format: savedStudySettings.format,
   // формат замораживается на старте раунда: настройки во время раунда не видны
   roundFormat: 'choice',
-  // стадия вопроса: 'choice' — сетка вариантов; во «Вспомни сам» 'recall' → 'rate' или 'hint'
+  // стадия вопроса: 'choice' — сетка вариантов; во «Вспомни сам» 'recall' → 'rate' или 'hint';
+  // в «Верно или нет» — 'tf'
   stage: 'choice',
   // первые попытки во «Вспомни сам» по самооценке — для строки в итогах
   recallCounts: { correct: 0, partial: 0, wrong: 0 },
+  // «Верно или нет»: утверждение текущего вопроса и верные ответы подряд в раунде
+  statement: null,
+  streak: 0,
   round: [],
   wrongIds: [],
   // ответ ученика на каждую ошибку раунда (первую попытку) — для списка в итогах
@@ -351,6 +355,7 @@ function startRound() {
 function startRoundWith(round, format = state.format) {
   state.roundFormat = format;
   state.recallCounts = { correct: 0, partial: 0, wrong: 0 };
+  state.streak = 0;
   state.round = round;
   state.wrongIds = [];
   state.wrongPicks = {};
@@ -397,10 +402,21 @@ function renderQuestion() {
   $('nextButton').classList.add('hidden');
   $('options').innerHTML = '';
   $('quizHint').textContent = QUIZ_HINTS[state.roundFormat];
-  for (const id of ['recallNote', 'recallPrompt', 'recallRate']) $(id).classList.add('hidden');
+  for (const id of ['recallNote', 'recallPrompt', 'recallRate', 'tfPanel']) $(id).classList.add('hidden');
   for (const button of $('recallRate').querySelectorAll('button')) {
     button.disabled = false;
     button.removeAttribute('aria-pressed');
+  }
+  if (state.roundFormat === 'truefalse') {
+    state.stage = 'tf';
+    state.statement = trueFalseStatement(record);
+    $('tfOption').textContent = state.statement.zh;
+    for (const button of $('tfPanel').querySelectorAll('button')) {
+      button.disabled = false;
+      button.removeAttribute('aria-pressed');
+    }
+    $('tfPanel').classList.remove('hidden');
+    return;
   }
   if (state.roundFormat === 'recall' && !needsOptions(record)) {
     state.stage = 'recall';
@@ -439,7 +455,8 @@ function renderProgress() {
   const dots = state.stepDots;
   $('progressSteps').hidden = !dots;
   $('progressTrack').hidden = dots;
-  $('scoreLabel').textContent = `верно ${state.correct}`;
+  $('scoreLabel').textContent = `верно ${state.correct}${
+    state.roundFormat === 'truefalse' ? ` · серия ${state.streak}` : ''}`;
   if (!dots) {
     const done = state.position + (state.answered ? 1 : 0);
     $('progressFill').style.width = `${(done / total) * 100}%`;
@@ -581,6 +598,30 @@ function rateRecall(outcome) {
   }
 }
 
+/* ---------- «Верно или нет» ---------- */
+
+function answerTrueFalse(saidTrue) {
+  if (state.stage !== 'tf' || state.answered) return;
+  const record = state.round[state.position];
+  const statement = state.statement;
+  const right = statement.isTrue === saidTrue;
+  // серия меняется до commitAnswer: тот перерисовывает ход раунда вместе со строкой серии
+  state.streak = right ? state.streak + 1 : 0;
+  commitAnswer(record, right ? 'checked' : 'wrong',
+    { optionId: statement.optionId, said: saidTrue, isTrue: statement.isTrue });
+  for (const button of $('tfPanel').querySelectorAll('button')) {
+    button.disabled = true;
+    if (button.id === (saidTrue ? 'tfTrue' : 'tfFalse')) button.setAttribute('aria-pressed', 'true');
+  }
+  const answerOption = record.options.find((option) => option.id === record.answer.optionId);
+  const shown = record.options.find((option) => option.id === statement.optionId);
+  const about = statement.isTrue
+    ? `<span lang="zh-Hans">${escapeHtml(shown.zh)}</span> — правильный ответ.`
+    : `${shown.gloss ? `<span lang="zh-Hans">${escapeHtml(shown.zh)}</span> — ${escapeHtml(shown.gloss)}. ` : ''}`
+      + `Правильный ответ: <span lang="zh-Hans">${escapeHtml(answerOption.zh)}</span>.`;
+  showFeedback(record, right ? 'good' : 'bad', `<strong>${right ? 'Правильно' : 'Ошибка'}</strong><span>${about}</span>`);
+}
+
 function evidenceList(evidence = []) {
   return evidence.map((source) => {
     const url = safeSourceUrl(source.url);
@@ -657,7 +698,8 @@ function renderMistakes() {
       '<div>',
       `<p class="mistake-question">${escapeHtml(record.questionRu)}</p>`,
       '<p class="mistake-answers">',
-      picked ? `Ваш ответ <span class="picked" lang="zh-Hans">✕ ${escapeHtml(picked.zh)}</span> · ` : '',
+      picked ? `Ваш ответ ${pick.said === undefined ? '' : `«${pick.said ? 'верно' : 'неверно'}» для `}`
+        + `<span class="picked" lang="zh-Hans">${pick.said !== undefined && pick.isTrue ? '✓' : '✕'} ${escapeHtml(picked.zh)}</span> · ` : '',
       `верно <span class="right" lang="zh-Hans">✓ ${escapeHtml(right.zh)}</span>`,
       '</p></div>',
     ].join('');
@@ -762,6 +804,9 @@ const ANSWER_KEYS = {
 const RATE_KEYS = {
   Digit1: 'correct', Numpad1: 'correct', Digit2: 'partial', Numpad2: 'partial', Digit3: 'wrong', Numpad3: 'wrong',
 };
+const TRUE_FALSE_KEYS = {
+  Digit1: true, Numpad1: true, ArrowLeft: true, Digit2: false, Numpad2: false, ArrowRight: false,
+};
 
 document.addEventListener('keydown', (event) => {
   if (event.metaKey || event.ctrlKey || event.altKey) return;
@@ -811,6 +856,14 @@ document.addEventListener('keydown', (event) => {
     }
     return;
   }
+  if (state.stage === 'tf' && !state.answered) {
+    const said = TRUE_FALSE_KEYS[event.code];
+    if (said !== undefined) {
+      event.preventDefault();
+      answerTrueFalse(said);
+    }
+    return;
+  }
 
   // код клавиши, а не символ: на русской раскладке те же клавиши дают Ф, И, С, В
   const index = ANSWER_KEYS[event.code];
@@ -851,6 +904,8 @@ $('showHint').addEventListener('click', showHint);
 for (const button of $('recallRate').querySelectorAll('button')) {
   button.addEventListener('click', () => rateRecall(button.dataset.outcome));
 }
+$('tfTrue').addEventListener('click', () => answerTrueFalse(true));
+$('tfFalse').addEventListener('click', () => answerTrueFalse(false));
 $('leaveRound').addEventListener('click', backToSetup);
 $('openDatabase').addEventListener('click', openDatabase);
 $('resultsDatabase').addEventListener('click', openDatabase);
