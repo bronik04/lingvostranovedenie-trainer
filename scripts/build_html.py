@@ -17,6 +17,7 @@ from minify import minify_css, minify_js
 from normalize import completeness_errors, fragment_pairs, language_errors
 from taxonomy import TOPICS
 from authored import validate_authored
+import chengyu
 
 TARGET = ROOT / 'dist/lingvostranovedenie-trainer.html'
 
@@ -97,13 +98,15 @@ def stylesheet() -> str:
     """Шрифты, токены и компоненты дизайн-системы, затем стили самого тренажёра."""
     parts = [embedded_fonts()]
     parts += [(ROOT / path).read_text('utf-8')
-              for path in ('src/ink/ink-tokens.css', 'src/ink/bundle.css', 'src/quiz.css')]
+              for path in ('src/ink/ink-tokens.css', 'src/ink/bundle.css', 'src/quiz.css', 'src/chengyu.css')]
     return '\n'.join(parts)
 
 
 def main() -> None:
     bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
     errors = validate(bank)
+    olympiad_chengyu, draft_chengyu = chengyu.load('olympiad.json'), chengyu.load('drafts.json')
+    errors += [f'чэнъюй: {message}' for message in chengyu.validate(olympiad_chengyu, draft_chengyu)]
     if errors:
         print(f'сборка остановлена, нарушений: {len(errors)}')
         for message in errors[:40]:
@@ -117,6 +120,12 @@ def main() -> None:
     html = html.replace('/*QUIZ_ENGINE*/', engine)
     html = html.replace('/*QUESTION_BANK*/', serialize_bank(bank))
     html = html.replace('/*QUIZ_UI*/', minify_js((ROOT / 'src/quiz.ui.js').read_text('utf-8')))
+    # раздел «Чэнъюй»: свой банк (олимпиадные + принятые составленные), движок и интерфейс
+    chengyu_bank = chengyu.published(olympiad_chengyu, draft_chengyu)
+    html = html.replace('/*CHENGYU_BANK*/', serialize_bank(chengyu_bank))
+    cy_engine = minify_js((ROOT / 'src/chengyu.mjs').read_text('utf-8').replace('export ', ''))
+    html = html.replace('/*CHENGYU_ENGINE*/', cy_engine)
+    html = html.replace('/*CHENGYU_UI*/', minify_js((ROOT / 'src/chengyu.ui.js').read_text('utf-8')))
     TARGET.parent.mkdir(parents=True, exist_ok=True)
     # через временный файл и замену: тесты читают dist/ параллельно со сборкой
     # в build.test.mjs и не должны увидеть файл, записанный наполовину

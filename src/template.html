@@ -34,6 +34,7 @@
     <nav class="ink-nav site-nav" aria-label="Разделы">
       <a href="./" id="navSetup" aria-current="page">Тренировка</a>
       <a href="#database" id="navDatabase">Вопросы в базе</a>
+      <a href="#chengyu" id="navChengyu">Чэнъюй</a>
     </nav>
     <div class="ink-header__tools site-tools">
       <span class="count" id="bankCount"></span>
@@ -204,6 +205,153 @@
       <p class="ink-caption hint">/ — поиск · Esc — на главную</p>
     </div>
   </section>
+
+  <!-- Раздел «Чэнъюй»: src/chengyu.mjs, src/chengyu.ui.js, src/chengyu.css -->
+  <section class="view" id="cySetupView" hidden>
+    <div class="hero">
+      <p class="ink-eyebrow">Лексико-грамматический тест · тренажёр ВсОШ</p>
+      <h1 class="hero-title">Чэнъюй</h1>
+      <div class="hero-row">
+        <p class="ink-lead">Задание «Подберите аналог фразеологизму в русском языке» — из настоящих вариантов
+          олимпиады и составленные по той же схеме, сверенные со словарями. Неверные варианты почти
+          всегда повторяют образ чэнъюя — после каждого ответа разбор показывает, в чём ловушка.</p>
+        <dl class="stats">
+          <div><dt id="cyStatTotalLabel">заданий</dt><dd id="cyStatTotal"></dd></div>
+          <div><dt id="cyStatSeasonsLabel">сезонов олимпиады</dt><dd id="cyStatSeasons"></dd></div>
+          <div><dt id="cyStatGroupsLabel">тем</dt><dd id="cyStatGroups"></dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <section class="chapter">
+      <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">一</span>
+      <div class="chapter-body">
+        <h2 class="ink-title-2">Как не попасться на ложного друга</h2>
+        <ol class="cy-steps">
+          <li>Переведите чэнъюй буквально, по иероглифам.</li>
+          <li>Скажите смысл своими словами, ещё не глядя на варианты.</li>
+          <li>Ищите вариант с тем же смыслом, а не с той же картинкой.</li>
+          <li>Вариант повторяет образ чэнъюя — змею, глаза, зайца? Перепроверьте: на региональном
+            и заключительном этапах с 2020/21 верный ответ ни разу не повторял образ.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">二</span>
+      <fieldset class="chapter-body mode-picker">
+        <legend class="ink-title-2">Набор</legend>
+        <div class="ink-pills mode-options">
+          <label class="mode-option"><input type="radio" name="cyMode" value="all" checked><span class="ink-pill">Все задания</span></label>
+          <label class="mode-option"><input type="radio" name="cyMode" value="new"><span class="ink-pill">Новые</span></label>
+          <label class="mode-option"><input type="radio" name="cyMode" value="mistakes"><span class="ink-pill">Ошибки</span></label>
+        </div>
+        <p class="ink-caption mode-help" id="cyModeHelp"></p>
+      </fieldset>
+    </section>
+
+    <section class="chapter">
+      <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">三</span>
+      <fieldset class="chapter-body">
+        <legend class="ink-title-2">Темы</legend>
+        <p class="ink-caption">Если не выбрать темы, в раунд попадут задания всех тем.</p>
+        <div class="topics" id="cyGroupControls"></div>
+      </fieldset>
+    </section>
+
+    <section class="chapter">
+      <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">四</span>
+      <fieldset class="chapter-body">
+        <legend class="ink-title-2">Длина раунда</legend>
+        <div class="ink-choice-cards round-size">
+          <label class="ink-choice-card"><input type="radio" name="cySize" value="5">5 заданий</label>
+          <label class="ink-choice-card"><input type="radio" name="cySize" value="10" checked>10 заданий</label>
+          <label class="ink-choice-card"><input type="radio" name="cySize" value="20">20 заданий</label>
+          <label class="ink-choice-card"><input type="radio" name="cySize" value="all">Все доступные</label>
+        </div>
+      </fieldset>
+    </section>
+
+    <section class="launch">
+      <p class="notice" id="cyEligibleNotice" aria-live="polite"></p>
+      <div class="actions launch-actions">
+        <button class="ink-btn ink-btn--primary" id="cyStartButton" type="button">Начать раунд</button>
+        <button class="ink-btn ink-btn--secondary" id="cyOpenReference" type="button">Справочник чэнъюй</button>
+      </div>
+      <p class="ink-caption hint">Enter — начать раунд</p>
+      <details class="progress-tools">
+        <summary>Управление прогрессом</summary>
+        <div class="actions">
+          <button class="ink-btn ink-btn--text danger" id="cyResetProgress" type="button">Сбросить прогресс по чэнъюй</button>
+        </div>
+      </details>
+    </section>
+  </section>
+
+  <section class="view quiz" id="cyQuizView" hidden>
+    <div class="quiz-top">
+      <p class="progress"><span id="cyProgressLabel"></span><span class="ink-caption" id="cyScoreLabel"></span></p>
+      <ol class="ink-steps" id="cyProgressSteps" aria-label="Ход раунда"></ol>
+      <div class="ink-meter track" id="cyProgressTrack" hidden><span class="fill" id="cyProgressFill"></span></div>
+    </div>
+    <div class="quiz-question">
+      <p class="pills">
+        <span class="ink-eyebrow pill" id="cyGroupLabel"></span>
+        <span class="tag quiet" id="cySourceLabel"></span>
+      </p>
+      <h2 class="question cy-prompt" id="cyPrompt"></h2>
+      <div class="cy-tz" id="cyChengyu" lang="zh-Hans" role="img"></div>
+      <p class="cy-pinyin" id="cyPinyin" lang="zh-Hans"></p>
+      <p class="cy-proverb" id="cyProverb" hidden></p>
+    </div>
+    <div class="options cy-options" id="cyOptions" role="group" aria-label="Варианты ответа"></div>
+    <div class="feedback hidden" id="cyFeedback" role="status" tabindex="-1"></div>
+    <div class="next-row">
+      <button class="ink-btn ink-btn--text" id="cyLeaveRound" type="button">Закончить раунд</button>
+      <button class="ink-btn ink-btn--primary hidden" id="cyNextButton" type="button">Следующее задание</button>
+    </div>
+    <p class="ink-caption hint">1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда</p>
+  </section>
+
+  <section class="view results" id="cyResultsView" hidden>
+    <div class="results-score">
+      <p class="ink-eyebrow">Раунд завершён</p>
+      <p class="score" id="cyFinalScore"></p>
+      <div class="ink-meter" id="cyResultMeter" aria-hidden="true">
+        <span class="ink-meter__correct" id="cyResultMeterCorrect"></span>
+        <span class="ink-meter__wrong" id="cyResultMeterWrong"></span>
+      </div>
+      <p class="ink-caption result-counts" id="cyResultCounts"></p>
+      <div class="actions">
+        <button class="ink-btn ink-btn--primary" id="cyRepeatMistakes" type="button" hidden>Повторить ошибки раунда</button>
+        <button class="ink-btn ink-btn--secondary" id="cyBackToSetup" type="button">К разделу «Чэнъюй»</button>
+      </div>
+      <button class="ink-btn ink-btn--text" id="cyResultsReference" type="button">Открыть справочник чэнъюй <span lang="zh-Hans" aria-hidden="true">→</span></button>
+    </div>
+    <div class="results-mistakes" id="cyResultMistakes">
+      <h2 class="ink-title-2">Ошибки раунда</h2>
+      <ol class="mistakes" id="cyMistakeList"></ol>
+    </div>
+  </section>
+
+  <section class="view database" id="cyReferenceView" hidden>
+    <div class="database-head">
+      <div>
+        <p class="ink-eyebrow">Справочник</p>
+        <h2 class="database-title">Чэнъюй</h2>
+        <p class="ink-caption" id="cyReferenceCount"></p>
+      </div>
+      <button class="ink-btn ink-btn--secondary" id="cyCloseReference" type="button">К разделу «Чэнъюй»</button>
+    </div>
+    <div class="database-bar" role="search">
+      <label class="field field-search">Поиск<input class="search" id="cyReferenceSearch" type="search" placeholder="Иероглифы, пиньинь или русские слова"></label>
+      <label class="field">Тема<select id="cyReferenceGroup"><option value="">Все темы</option></select></label>
+    </div>
+    <div class="db-list" id="cyReferenceList"></div>
+    <div class="actions database-foot">
+      <p class="ink-caption hint">/ — поиск · Esc — к разделу</p>
+    </div>
+  </section>
   </main>
 
   <footer class="ink-footer">
@@ -214,7 +362,10 @@
 <script>
 const QUESTION_BANK = /*QUESTION_BANK*/;
 /*QUIZ_ENGINE*/
+const CHENGYU_BANK = /*CHENGYU_BANK*/;
+/*CHENGYU_ENGINE*/
 </script>
 <script>/*QUIZ_UI*/</script>
+<script>/*CHENGYU_UI*/</script>
 </body>
 </html>

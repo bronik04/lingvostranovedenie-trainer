@@ -169,10 +169,25 @@ function show(view) {
   document.body.dataset.view = view;
   for (const [name, id] of Object.entries({
     setup: 'setupView', quiz: 'quizView', results: 'resultsView', database: 'databaseView',
+    // раздел «Чэнъюй» (src/chengyu.ui.js)
+    'cy-setup': 'cySetupView', 'cy-quiz': 'cyQuizView', 'cy-results': 'cyResultsView',
+    'cy-reference': 'cyReferenceView',
   })) {
     $(id).hidden = name !== view;
   }
-  for (const [link, current] of [['navSetup', view !== 'database'], ['navDatabase', view === 'database']]) {
+  const chengyu = view.startsWith('cy-');
+  // адрес следует за разделом: перезагрузка открывает тот же раздел, а ссылка #chengyu
+  // из другого раздела снова срабатывает (hashchange)
+  if (chengyu !== (location.hash === '#chengyu')) {
+    try {
+      history.replaceState(null, '', `${location.pathname}${location.search}${chengyu ? '#chengyu' : ''}`);
+    } catch { /* без истории адрес просто не меняется */ }
+  }
+  for (const [link, current] of [
+    ['navSetup', !chengyu && view !== 'database'],
+    ['navDatabase', view === 'database'],
+    ['navChengyu', chengyu],
+  ]) {
     if (current) $(link).setAttribute('aria-current', 'page');
     else $(link).removeAttribute('aria-current');
   }
@@ -656,6 +671,8 @@ const ANSWER_KEYS = {
 
 document.addEventListener('keydown', (event) => {
   if (event.metaKey || event.ctrlKey || event.altKey) return;
+  // у раздела «Чэнъюй» своя клавиатура (src/chengyu.ui.js)
+  if (state.view.startsWith('cy-')) return;
   const typing = ['INPUT', 'SELECT', 'TEXTAREA'].includes(document.activeElement?.tagName);
 
   if (event.key === 'Escape') {
