@@ -11,6 +11,20 @@ const STATUS_NAMES = {
   conflict: 'расхождение ключей', 'needs-review': 'нет ответа',
 };
 
+// знак-иероглиф темы на главной; тема без знака получает 文
+const TOPIC_MARKS = {
+  'История и государство': '史',
+  'География и административное устройство': '地',
+  'Культура, традиции и праздники': '节',
+  'Литература, язык, искусство и философия': '文',
+  'Общество: население, этносы и религии': '民',
+  'Экономика, образование, наука и спорт': '经',
+  'Россия и межкультурный блок': '俄',
+};
+// до стольких вопросов ход раунда рисуется кружками, длиннее — полосой
+const MAX_STEP_DOTS = 14;
+const THEME_COLORS = { light: '#faf4e8', dark: '#181512' };
+
 const $ = (id) => document.getElementById(id);
 
 const defaultFilters = () => ({
@@ -38,6 +52,10 @@ const state = {
   size: savedStudySettings.size,
   round: [],
   wrongIds: [],
+  // ответ ученика на каждую ошибку раунда (первую попытку) — для списка в итогах
+  wrongPicks: {},
+  // верно/неверно по позициям раунда — для кружков хода
+  marks: [],
   position: 0,
   correct: 0,
   initialRoundLength: 0,
@@ -57,9 +75,8 @@ function systemTheme() {
 
 function applyTheme(theme) {
   document.documentElement.dataset.theme = theme;
-  $('themeIcon').textContent = theme === 'dark' ? '☾' : '☀';
-  $('themeLabel').textContent = theme === 'dark' ? 'Тёмная' : 'Светлая';
-  $('themeColorMeta')?.setAttribute('content', theme === 'dark' ? '#6f9bff' : '#245eea');
+  $('themeLabel').textContent = theme === 'dark' ? 'Тема: тёмная' : 'Тема: светлая';
+  $('themeColorMeta')?.setAttribute('content', THEME_COLORS[theme]);
 }
 
 function initTheme() {
@@ -149,15 +166,41 @@ function importProgress(file) {
 
 function show(view) {
   state.view = view;
+  document.body.dataset.view = view;
   for (const [name, id] of Object.entries({
     setup: 'setupView', quiz: 'quizView', results: 'resultsView', database: 'databaseView',
   })) {
     $(id).hidden = name !== view;
   }
+  for (const [link, current] of [['navSetup', view !== 'database'], ['navDatabase', view === 'database']]) {
+    if (current) $(link).setAttribute('aria-current', 'page');
+    else $(link).removeAttribute('aria-current');
+  }
+  window.scrollTo?.(0, 0);
+}
+
+function renderStats() {
+  const seasons = new Set(QUESTION_BANK.flatMap((r) => r.occurrences.map((o) => o.year))).size;
+  const topics = new Set(QUESTION_BANK.map((r) => r.topic)).size;
+  const stats = [
+    ['statQuestions', QUESTION_BANK.length, ['вопрос в базе', 'вопроса в базе', 'вопросов в базе']],
+    ['statSeasons', seasons, ['сезон олимпиады', 'сезона олимпиады', 'сезонов олимпиады']],
+    ['statTopics', topics, ['тема', 'темы', 'тем']],
+  ];
+  for (const [id, count, forms] of stats) {
+    $(id).textContent = String(count);
+    $(`${id}Label`).textContent = pluralRu(count, forms);
+  }
 }
 
 function stageLabel(code) {
   return STAGE_NAMES[code] || code;
+}
+
+/** «ВсОШ 2015/16 · региональный этап · задание 9» */
+function occurrenceLabel(occurrence) {
+  return `ВсОШ ${occurrence.year.replace('-', '/')} · ${stageLabel(occurrence.stageCode)} этап${
+    occurrence.number ? ` · задание ${occurrence.number}` : ''}`;
 }
 
 function renderBankCount() {
@@ -171,14 +214,26 @@ function renderSetup() {
     for (const topic of topics) {
       const label = document.createElement('label');
       label.className = 'topic-check';
+      const mark = document.createElement('span');
+      mark.className = 'topic-mark';
+      mark.lang = 'zh-Hans';
+      mark.setAttribute('aria-hidden', 'true');
+      mark.textContent = TOPIC_MARKS[topic] || '文';
+      const text = document.createElement('span');
+      text.className = 'topic-text';
+      const caption = document.createElement('span');
+      caption.className = 'topic-name';
+      caption.textContent = topic;
+      const count = document.createElement('span');
+      count.className = 'topic-count';
+      const progress = document.createElement('span');
+      progress.className = 'topic-progress';
+      count.append('пройдено ', progress);
+      text.append(caption, count);
       const input = document.createElement('input');
       input.type = 'checkbox';
       input.value = topic;
-      const caption = document.createElement('span');
-      caption.textContent = topic;
-      const count = document.createElement('small');
-      count.className = 'topic-progress';
-      label.append(input, caption, count);
+      label.append(mark, text, input);
       input.addEventListener('change', (event) => {
         const list = state.filters.topics;
         if (event.target.checked) list.push(topic);
@@ -206,7 +261,10 @@ function renderSetup() {
   }
   $('yearFilter').value = state.filters.years[0] || '';
   $('stageFilter').value = state.filters.stages[0] || '';
-  $('roundSize').value = state.size === Number.MAX_SAFE_INTEGER ? 'all' : String(state.size);
+  const size = state.size === Number.MAX_SAFE_INTEGER ? 'all' : String(state.size);
+  for (const input of document.querySelectorAll('input[name="roundSize"]')) {
+    input.checked = input.value === size;
+  }
   $('onlyVerified').checked = state.filters.onlyVerified;
   for (const input of document.querySelectorAll('input[name="studyMode"]')) {
     input.checked = input.value === state.filters.mode;
@@ -229,6 +287,9 @@ function renderSetup() {
       ? 'Нет вопросов для повторения по текущим фильтрам.'
       : 'Под текущие фильтры не подходит ни один вопрос — снимите часть ограничений.';
   $('startButton').disabled = pool.length === 0;
+  // главная кнопка на экране одна: без подходящих вопросов это «Начать обычный раунд»
+  $('startButton').classList.toggle('ink-btn--primary', pool.length !== 0);
+  $('startButton').classList.toggle('ink-btn--secondary', pool.length === 0);
   $('emptyActions').hidden = pool.length !== 0;
   renderBankCount();
 }
@@ -254,6 +315,11 @@ function startRound() {
 function startRoundWith(round) {
   state.round = round;
   state.wrongIds = [];
+  state.wrongPicks = {};
+  state.marks = [];
+  // вид хода выбирается по исходной длине: вставленные повторы ошибок удлиняют раунд,
+  // и кружки не должны посреди раунда смениться полосой
+  state.stepDots = round.length <= MAX_STEP_DOTS;
   state.position = 0;
   state.correct = 0;
   state.initialRoundLength = round.length;
@@ -276,17 +342,18 @@ function renderQuestion() {
   const origin = recordOrigin(record);
   const first = origin.isAddition ? null : matchingOccurrence(record, state.filters);
   $('progressLabel').textContent = `Вопрос ${state.position + 1} из ${state.round.length}`;
-  $('scoreLabel').textContent = `Счёт: ${state.correct}`;
-  $('progressFill').style.width = `${(state.position / state.round.length) * 100}%`;
+  renderProgress();
   $('topicLabel').textContent = record.topic;
   $('sourceLabel').textContent = origin.isAddition
     ? 'Проверенное дополнение'
-    : `${first.year}, ${stageLabel(first.stageCode)}${first.number ? ` · №${first.number}` : ''}`;
+    : occurrenceLabel(first);
   $('originPill').textContent = origin.label;
   $('originPill').hidden = !origin.isAddition;
   $('unverifiedPill').hidden = record.answer.state !== 'unverified';
   $('retryPill').hidden = !isRepeatInRound(state.round, state.position);
   $('questionText').textContent = record.questionRu;
+  $('questionZh').textContent = record.questionZh || '';
+  $('questionZh').hidden = !record.questionZh;
 
   $('feedback').className = 'feedback hidden';
   $('nextButton').classList.add('hidden');
@@ -298,13 +365,42 @@ function renderQuestion() {
     button.dataset.optionId = option.optionId;
     const letter = document.createElement('span');
     letter.className = 'letter';
+    letter.setAttribute('aria-hidden', 'true');
     letter.textContent = option.label;
     const caption = document.createElement('span');
+    caption.className = 'option-text';
+    caption.lang = 'zh-Hans';
     caption.textContent = option.zh;
     button.append(letter, caption);
     button.addEventListener('click', () => answer(record, option.optionId));
     $('options').append(button);
   }
+}
+
+/** Ход раунда: кружки ✓/✕ до MAX_STEP_DOTS вопросов, дальше — полоса. */
+function renderProgress() {
+  const total = state.round.length;
+  const dots = state.stepDots;
+  $('progressSteps').hidden = !dots;
+  $('progressTrack').hidden = dots;
+  $('scoreLabel').textContent = `верно ${state.correct}`;
+  if (!dots) {
+    const done = state.position + (state.answered ? 1 : 0);
+    $('progressFill').style.width = `${(done / total) * 100}%`;
+    return;
+  }
+  $('progressSteps').replaceChildren(...state.round.map((_, index) => {
+    const step = document.createElement('li');
+    const mark = state.marks[index];
+    const current = index === state.position;
+    step.className = ['ink-step', mark === true ? 'ink-step--correct' : '', mark === false ? 'ink-step--wrong' : '',
+      current ? 'ink-step--current' : ''].filter(Boolean).join(' ');
+    if (mark !== undefined) step.lang = 'zh-Hans';
+    step.textContent = mark === true ? '✓' : mark === false ? '✕' : current ? String(index + 1) : '';
+    step.setAttribute('aria-label', `${index + 1}${mark === true ? ' — верно' : mark === false ? ' — ошибка' : ''}${
+      current ? ', текущий' : ''}`);
+    return step;
+  }));
 }
 
 function answer(record, optionId) {
@@ -326,11 +422,13 @@ function answer(record, optionId) {
   ({ correct: state.correct, wrongIds: state.wrongIds } =
     tallyAnswer({ correct: state.correct, wrongIds: state.wrongIds }, record.id, verdict.correct));
   if (!verdict.correct) {
+    if (!(record.id in state.wrongPicks)) state.wrongPicks[record.id] = optionId;
     const retry = queueRetry(state.retryQueue, state.retriedIds, record, state.position);
     state.retryQueue = retry.queue;
     state.retriedIds = retry.retriedIds;
   }
-  $('scoreLabel').textContent = `Счёт: ${state.correct}`;
+  state.marks[state.position] = verdict.correct;
+  renderProgress();
 
   const glosses = new Map(optionGlosses(record).map((item) => [item.optionId, item.gloss]));
   for (const button of $('options').querySelectorAll('button')) {
@@ -361,8 +459,8 @@ function answer(record, optionId) {
 
   $('feedback').className = `feedback ${verdict.correct ? 'good' : 'bad'}`;
   $('feedback').innerHTML = [
-    `<p><strong>${verdict.correct ? 'Верно' : 'Неверно'}</strong>`,
-    verdict.correct ? '' : `Правильный ответ: ${escapeHtml(right.zh)}.`,
+    `<p class="verdict"><strong>${verdict.correct ? 'Верно' : 'Неверно'}</strong>`,
+    verdict.correct ? '' : `<span>Правильный ответ: <span lang="zh-Hans">${escapeHtml(right.zh)}</span>.</span>`,
     '</p>',
     record.explanation.ru ? `<p class="why">${escapeHtml(record.explanation.ru)}</p>` : '',
     sources ? `<ul>${sources}</ul>` : '',
@@ -399,7 +497,7 @@ function glossList(record) {
   const items = optionGlosses(record);
   if (!items.length) return '';
   return '<p class="row-sources-title">Другие варианты</p><ul class="row-glosses">'
-    + items.map(({ zh, gloss }) => `<li><span class="zh">${escapeHtml(zh)}</span> — ${escapeHtml(gloss)}</li>`).join('')
+    + items.map(({ zh, gloss }) => `<li><span class="zh" lang="zh-Hans">${escapeHtml(zh)}</span> — ${escapeHtml(gloss)}</li>`).join('')
     + '</ul>';
 }
 
@@ -418,9 +516,19 @@ function nextQuestion() {
 function finishRound() {
   const total = state.initialRoundLength;
   const wrongCount = state.wrongIds.length;
-  $('finalScore').textContent = roundScore(state.correct, total);
+  // «9 / 10»: делитель тише счёта, но текст тот же, что даёт roundScore
+  const [score, outOf] = roundScore(state.correct, total).split(' / ');
+  $('finalScore').innerHTML = `${escapeHtml(score)}<span class="score-total"> / ${escapeHtml(outOf)}</span>`;
+  $('resultMeterCorrect').style.flex = String(state.correct);
+  $('resultMeterWrong').style.flex = String(wrongCount);
+  $('resultCounts').innerHTML = `<span><span class="ok" lang="zh-Hans">✓</span> верно — ${state.correct}</span>`
+    + `<span><span class="bad" lang="zh-Hans">✕</span> с ошибкой — ${wrongCount}</span>`;
   $('repeatMistakes').hidden = wrongCount === 0;
   $('repeatMistakes').textContent = `Повторить ошибки раунда (${wrongCount})`;
+  // на экране одна главная кнопка: «Повторить ошибки», а без ошибок — «На главную»
+  $('backToSetup').classList.toggle('ink-btn--primary', wrongCount === 0);
+  $('backToSetup').classList.toggle('ink-btn--secondary', wrongCount !== 0);
+  renderMistakes();
   const share = total ? state.correct / total : 0;
   $('resultText').textContent = share === 1
     ? 'Весь раунд без ошибок.'
@@ -429,6 +537,26 @@ function finishRound() {
       : 'Есть над чем поработать — загляните в базу, там у каждого ответа есть пояснение.';
   show('results');
   renderSetup();
+}
+
+function renderMistakes() {
+  const wrong = wrongQuestions(state.round, state.wrongIds);
+  $('resultMistakes').hidden = wrong.length === 0;
+  $('mistakeList').replaceChildren(...wrong.map((record) => {
+    const picked = record.options.find((option) => option.id === state.wrongPicks[record.id]);
+    const right = record.options.find((option) => option.id === record.answer.optionId);
+    const item = document.createElement('li');
+    item.innerHTML = [
+      '<span class="ink-seal ink-seal--review ink-seal--md" lang="zh-Hans" aria-hidden="true">复</span>',
+      '<div>',
+      `<p class="mistake-question">${escapeHtml(record.questionRu)}</p>`,
+      '<p class="mistake-answers">',
+      picked ? `Ваш ответ <span class="picked" lang="zh-Hans">✕ ${escapeHtml(picked.zh)}</span> · ` : '',
+      `верно <span class="right" lang="zh-Hans">✓ ${escapeHtml(right.zh)}</span>`,
+      '</p></div>',
+    ].join('');
+    return item;
+  }));
 }
 
 /* ---------- база ---------- */
@@ -450,33 +578,37 @@ function appendDatabaseRows(rows) {
     const answered = record.options.find((option) => option.id === record.answer.optionId);
     const done = state.progress[record.id]?.completed;
     const origin = recordOrigin(record);
-    const appearances = record.occurrences
-      .map((o) => `${o.year} ${stageLabel(o.stageCode)}${o.number ? ` №${o.number}` : ''}`).join(' · ');
+    const appearances = record.occurrences.map(occurrenceLabel).join('; ');
     const sources = evidenceList(record.evidence);
+    const verified = record.answer.state === 'verified';
+    const disputed = record.answer.state === 'needs-review' || record.answer.state === 'conflict';
     article.innerHTML = [
       '<div class="row-top">',
-      `<span class="tag">${escapeHtml(record.topic)}</span>`,
+      `<span class="row-topic">${escapeHtml(record.topic)}</span>`,
+      `<span class="tag${verified ? ' done' : ''}${disputed ? ' review' : ''}">${
+        verified ? '<span lang="zh-Hans" aria-hidden="true">✓</span> ' : ''}${STATUS_NAMES[record.answer.state]}</span>`,
+      done ? '<span class="tag"><span lang="zh-Hans" aria-hidden="true">●</span> пройден</span>' : '',
       origin.isAddition ? `<span class="tag origin">${origin.label}</span>` : '',
       hasOptionPool(record) ? '<span class="tag">варианты меняются</span>' : '',
-      `<span class="tag${record.answer.state === 'verified' ? ' done' : ''}${
-        record.answer.state === 'needs-review' || record.answer.state === 'conflict' ? ' review' : ''
-      }">${STATUS_NAMES[record.answer.state]}</span>`,
-      done ? '<span class="tag done">пройден</span>' : '',
       record.parseWarnings?.length ? `<span class="tag warn">${escapeHtml(record.parseWarnings.join('; '))}</span>` : '',
       '</div>',
       `<h3>${escapeHtml(record.questionRu)}</h3>`,
-      `<div class="row-options">${record.options.map((o) => escapeHtml(o.zh)).join(' · ')}</div>`,
+      record.questionZh ? `<p class="row-zh-question" lang="zh-Hans">${escapeHtml(record.questionZh)}</p>` : '',
+      `<p class="row-options" lang="zh-Hans">${record.options.map((o) => escapeHtml(o.zh)).join(' · ')}</p>`,
+      appearances ? `<p class="row-meta">${escapeHtml(appearances)}</p>` : '',
       answered || record.explanation.ru ? [
-        '<details class="row-reveal"><summary>Показать ответ</summary>',
-        answered ? `<p class="row-answer">Ответ: ${escapeHtml(answered.zh)}</p>` : '',
+        '<details class="row-reveal"><summary>Показать ответ</summary><div class="row-panel">',
+        answered ? `<p class="row-answer">Ответ: <span class="zh" lang="zh-Hans">${escapeHtml(answered.zh)}</span></p>` : '',
         record.explanation.ru ? `<p class="row-why">${escapeHtml(record.explanation.ru)}</p>` : '',
         glossList(record),
         sources ? `<p class="row-sources-title">Источники</p><ul class="row-sources">${sources}</ul>` : '',
-        '</details>',
+        '</div></details>',
       ].join('') : '',
-      record.questionZh ? `<p class="row-zh">${escapeHtml(record.questionZh)}</p>` : '',
-      appearances ? `<p class="row-zh">${escapeHtml(appearances)}</p>` : '',
     ].join('');
+    const reveal = article.querySelector('.row-reveal');
+    reveal?.addEventListener('toggle', () => {
+      reveal.querySelector('summary').textContent = reveal.open ? 'Скрыть ответ' : 'Показать ответ';
+    });
     $('databaseList').append(article);
   }
 }
@@ -533,6 +665,8 @@ document.addEventListener('keydown', (event) => {
   }
 
   if (typing) return;
+  // на кнопке, ссылке или summary Enter и пробел делают своё дело, а не глобальное
+  const onControl = Boolean(document.activeElement?.closest?.('a, button, summary'));
 
   if (state.view === 'database' && event.key === '/') {
     event.preventDefault();
@@ -540,7 +674,7 @@ document.addEventListener('keydown', (event) => {
     return;
   }
 
-  if (state.view === 'setup' && event.key === 'Enter' && !$('startButton').disabled) {
+  if (state.view === 'setup' && event.key === 'Enter' && !onControl && !$('startButton').disabled) {
     event.preventDefault();
     startRound();
     return;
@@ -559,7 +693,7 @@ document.addEventListener('keydown', (event) => {
     return;
   }
 
-  if ((event.key === 'Enter' || event.key === ' ') && state.answered) {
+  if ((event.key === 'Enter' || event.key === ' ') && state.answered && !onControl) {
     event.preventDefault();
     nextQuestion();
   }
@@ -568,6 +702,17 @@ document.addEventListener('keydown', (event) => {
 /* ---------- обвязка ---------- */
 
 $('themeToggle').addEventListener('click', toggleTheme);
+// шапка — ссылки, чтобы работали и без скрипта, но внутри страницы они просто меняют экран
+for (const id of ['homeLink', 'navSetup']) {
+  $(id).addEventListener('click', (event) => {
+    event.preventDefault();
+    backToSetup();
+  });
+}
+$('navDatabase').addEventListener('click', (event) => {
+  event.preventDefault();
+  openDatabase();
+});
 $('startButton').addEventListener('click', startRound);
 $('repeatMistakes').addEventListener('click', repeatMistakes);
 $('nextButton').addEventListener('click', nextQuestion);
@@ -581,11 +726,13 @@ $('databaseTopic').addEventListener('change', renderDatabase);
 $('databaseStatus').addEventListener('change', renderDatabase);
 $('databaseMore').addEventListener('click', () => renderDatabase(false));
 
-$('roundSize').addEventListener('change', (event) => {
-  state.size = event.target.value === 'all' ? Number.MAX_SAFE_INTEGER : Number(event.target.value);
-  saveStudySettings();
-  renderSetup();
-});
+for (const input of document.querySelectorAll('input[name="roundSize"]')) {
+  input.addEventListener('change', (event) => {
+    state.size = event.target.value === 'all' ? Number.MAX_SAFE_INTEGER : Number(event.target.value);
+    saveStudySettings();
+    renderSetup();
+  });
+}
 $('onlyVerified').addEventListener('change', (event) => {
   state.filters.onlyVerified = event.target.checked;
   saveStudySettings();
@@ -640,5 +787,6 @@ $('importProgressFile').addEventListener('change', (event) => {
 $('footerNote').textContent = bankSummary(QUESTION_BANK);
 
 initTheme();
+renderStats();
 renderSetup();
 show('setup');

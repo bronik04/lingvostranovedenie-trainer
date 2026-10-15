@@ -31,11 +31,15 @@ def find_chrome() -> str:
 def main() -> None:
     with tempfile.TemporaryDirectory() as tmp:
         png = Path(tmp) / 'og-image.png'
-        subprocess.run([
+        # код выхода не проверяется: на части macOS Chrome без окна падает при закрытии,
+        # уже записав снимок; признак успеха — сам файл снимка
+        run = subprocess.run([
             find_chrome(), '--headless', '--disable-gpu', '--hide-scrollbars',
             '--force-device-scale-factor=1', '--window-size=1200,630',
             f'--screenshot={png}', SOURCE.as_uri(),
-        ], check=True, capture_output=True)
+        ], capture_output=True, text=True)
+        if not png.exists() or png.stat().st_size == 0:
+            raise SystemExit(f'Chrome не сделал снимок (код {run.returncode}):\n{run.stderr[-2000:]}')
         # sips есть на любом macOS; на Linux подойдёт ImageMagick
         if shutil.which('sips'):
             subprocess.run(['sips', '-s', 'format', 'jpeg', '-s', 'formatOptions', '88',
