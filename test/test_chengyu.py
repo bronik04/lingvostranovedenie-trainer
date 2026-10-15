@@ -77,6 +77,11 @@ class RealDataTest(unittest.TestCase):
         olympiad, drafts = chengyu.load('olympiad.json'), chengyu.load('drafts.json')
         self.assertEqual(len(olympiad), 35)
         self.assertEqual(chengyu.validate(olympiad, drafts), [])
+        # принятые составленные — только с вердиктом проверки и словарными источниками
+        for draft in drafts:
+            if draft['status'] == 'accepted':
+                self.assertEqual(draft['check']['verdict'], 'accept', draft['id'])
+                self.assertTrue(draft.get('sources'), draft['id'])
 
 
 @unittest.skipUnless(shutil.which('pdftotext') and shutil.which('pdftohtml'), 'нужен poppler (pdftotext, pdftohtml)')
