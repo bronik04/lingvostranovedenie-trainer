@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import base64
 import json
+import re
 import sys
 import tempfile
 from html import escape
@@ -77,6 +79,28 @@ def validate(bank: list[dict]) -> list[str]:
     return errors
 
 
+FONT_URL = re.compile(r'url\(([\w.-]+\.woff2)\)')
+
+
+def embedded_fonts() -> str:
+    """@font-face из src/fonts/fonts.css, где файл шрифта заменён data:-адресом."""
+    fonts = ROOT / 'src/fonts'
+
+    def inline(match: re.Match) -> str:
+        data = base64.b64encode((fonts / match.group(1)).read_bytes()).decode('ascii')
+        return f'url(data:font/woff2;base64,{data})'
+
+    return FONT_URL.sub(inline, (fonts / 'fonts.css').read_text('utf-8'))
+
+
+def stylesheet() -> str:
+    """Шрифты, токены и компоненты дизайн-системы, затем стили самого тренажёра."""
+    parts = [embedded_fonts()]
+    parts += [(ROOT / path).read_text('utf-8')
+              for path in ('src/ink/ink-tokens.css', 'src/ink/bundle.css', 'src/quiz.css')]
+    return '\n'.join(parts)
+
+
 def main() -> None:
     bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
     errors = validate(bank)
@@ -88,7 +112,7 @@ def main() -> None:
 
     html = (ROOT / 'src/template.html').read_text('utf-8')
     html = html.replace('/*BANK_DESCRIPTION*/', escape(bank_description(bank)))
-    html = html.replace('/*QUIZ_CSS*/', minify_css((ROOT / 'src/quiz.css').read_text('utf-8')))
+    html = html.replace('/*QUIZ_CSS*/', minify_css(stylesheet()))
     engine = minify_js((ROOT / 'src/quiz.mjs').read_text('utf-8').replace('export ', ''))
     html = html.replace('/*QUIZ_ENGINE*/', engine)
     html = html.replace('/*QUESTION_BANK*/', serialize_bank(bank))
