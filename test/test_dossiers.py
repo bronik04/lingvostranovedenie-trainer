@@ -319,6 +319,60 @@ class ValidateQuestionsTest(unittest.TestCase):
         self.assertRejects([explicit(row='cny-20')], 'не использует')
 
 
+
+def embed(**overrides):
+    item = {'id': 'money-q02', 'embeds': '2024-25-shk-9', 'status': 'accepted',
+            'fact': {'table': 'banknotes', 'row': 'cny-20', 'ask': 'flower', 'where': {'currency': '人民币'}},
+            'exclude': [], 'check': {'verdict': 'accept', 'note': 'ок'}}
+    item.update(overrides)
+    return item
+
+
+class EmbedQuestionTest(unittest.TestCase):
+    def errors(self, questions, data=None):
+        return validate_questions(questions, data or dossier())
+
+    def assertRejects(self, questions, fragment, data=None):
+        errors = self.errors(questions, data)
+        self.assertTrue(any(fragment in error for error in errors), f'{fragment!r} not in {errors}')
+
+    def test_embed_is_valid_without_text_explanation_and_topic(self):
+        self.assertEqual(self.errors([embed()]), [])
+
+    def test_embed_does_not_carry_its_own_text(self):
+        self.assertRejects([embed(questionRu='Какой цветок на купюре 20 юаней 2019 года?')], 'у встраивания нет полей')
+        self.assertRejects([embed(topic=TOPIC)], 'у встраивания нет полей')
+
+    def test_embed_asks_a_column_without_given_or_explicit_options(self):
+        self.assertRejects([embed(fact={**embed()['fact'], 'given': 'denomination'})], 'встраивание спрашивает колонку')
+
+    def test_embed_needs_a_target(self):
+        self.assertRejects([embed(embeds='')], 'embeds — id записи банка')
+        self.assertRejects([embed(embeds=['2024-25-shk-9'])], 'embeds — id записи банка')
+
+    def test_same_record_is_embedded_once(self):
+        self.assertRejects([embed(), embed(id='money-q03')], 'уже встроена')
+
+    def test_embed_still_checks_twins_and_glosses(self):
+        data = dossier()
+        row(data, 'cny-50')['flower'] = cell('荷花', ['лотос'], gloss='Лотос — второй')
+        self.assertRejects([embed()], 'совпадает с правильным', data)
+        data = dossier()
+        row(data, 'cny-50')['flower'].pop('gloss')
+        self.assertRejects([embed()], 'нет подписи', data)
+
+    def test_embed_with_a_small_table_pool_is_valid(self):
+        # исходные олимпиадные варианты сами дают три неверных
+        fact = {'table': 'banknotes', 'row': 'rub-500', 'ask': 'back', 'where': {'currency': '卢布'}}
+        self.assertEqual(self.errors([embed(fact=fact)]), [])
+
+    def test_embed_is_not_a_new_record(self):
+        self.assertEqual(dossier_records(dossier(), [embed()]), [])
+
+    def test_embed_takes_no_part_in_text_leaks_inside_the_dossier(self):
+        # текст встроенного вопроса — в банке; утечки с ним ловит cross_leak_errors (задача 4)
+        self.assertEqual(self.errors([question(), embed(fact={**embed()['fact'], 'row': 'cny-50'})]), [])
+
 class LoadDossierTest(unittest.TestCase):
     def write(self, directory, name, text):
         path = Path(directory) / name

@@ -191,7 +191,7 @@ def dossier_records(dossier: dict, questions: list[dict]) -> list[dict]:
     rows = {row['id']: row for table in dossier['tables'].values() for row in table['rows']}
     records = []
     for question in questions:
-        if question['status'] != 'accepted':
+        if question['status'] != 'accepted' or 'embeds' in question:
             continue
         options, answer_id = question_options(question, dossier)
         records.append({
@@ -212,7 +212,10 @@ def dossier_records(dossier: dict, questions: list[dict]) -> list[dict]:
     return records
 
 
-QUESTION_FIELDS = {'id', 'status', 'topic', 'fact', 'questionRu', 'explanation', 'exclude', 'check'}
+QUESTION_FIELDS = {'id', 'status', 'topic', 'fact', 'questionRu', 'explanation', 'exclude', 'check', 'embeds'}
+# встраивание олимпиадного вопроса: текст, пояснение и тема — у олимпиадной записи
+EMBED_FIELDS = {'id', 'embeds', 'status', 'fact', 'exclude', 'check'}
+EMBED_FACT_FIELDS = {'table', 'row', 'ask', 'where'}
 FACT_FIELDS = {'table', 'row', 'ask', 'given', 'where', 'options', 'answer'}
 STATUSES = {'draft', 'accepted'}
 VERDICTS = {'accept', 'fix', 'drop'}
@@ -312,6 +315,23 @@ def _reference_errors(where: str, question: dict, dossier: dict) -> list[str]:
     return errors
 
 
+def _embed_errors(where: str, question: dict, embedded: set[str]) -> list[str]:
+    target = question.get('embeds')
+    if not isinstance(target, str) or not target.strip():
+        return [f'{where}: embeds — id записи банка']
+    errors: list[str] = []
+    if target in embedded:
+        errors.append(f'{where}: запись {target} уже встроена другим вопросом')
+    embedded.add(target)
+    extra = sorted(set(question) - EMBED_FIELDS)
+    if extra:
+        errors.append(f'{where}: у встраивания нет полей {extra} — текст, пояснение и тема у олимпиадной записи')
+    fact = question.get('fact')
+    if isinstance(fact, dict) and set(fact) - EMBED_FACT_FIELDS:
+        errors.append(f'{where}: встраивание спрашивает колонку — без {sorted(set(fact) - EMBED_FACT_FIELDS)}')
+    return errors
+
+
 def _content_errors(where: str, question: dict, dossier: dict) -> list[str]:
     """Проверки, которым нужны целые ссылки: набор вариантов и текст вопроса."""
     errors: list[str] = []
@@ -321,11 +341,14 @@ def _content_errors(where: str, question: dict, dossier: dict) -> list[str]:
     if twins:
         errors.append(f'{where}: неверный вариант совпадает с правильным: {twins}')
     options, _ = question_options(question, dossier)
-    if len(options) - 1 < MIN_WRONG:
+    embedded = 'embeds' in question
+    if not embedded and len(options) - 1 < MIN_WRONG:
         errors.append(f'{where}: в наборе меньше {MIN_WRONG} неверных вариантов')
     unglossed = [option['id'] for option in options[1:] if 'gloss' not in option]
     if unglossed:
         errors.append(f'{where}: у неверных вариантов нет подписи: {unglossed}')
+    if embedded:
+        return errors
     text = question['questionRu']
     hints = _mentions(text, answer)
     if hints:
@@ -346,6 +369,7 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
     errors: list[str] = []
     seen: set[str] = set()
     whole: list[dict] = []
+    embedded_targets: set[str] = set()
     for index, question in enumerate(questions, start=1):
         if not isinstance(question, dict):
             errors.append(f'вопрос {index} должен быть объектом')
@@ -366,21 +390,26 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
         status = question.get('status')
         if not isinstance(status, str) or status not in STATUSES:
             errors.append(f'{where}: status — draft или accepted')
-        if question.get('topic') not in TOPICS:
-            errors.append(f'{where}: тема вне списка семи категорий')
-        text = question.get('questionRu')
-        if not isinstance(text, str) or not text.strip():
-            errors.append(f'{where}: нет текста вопроса')
-            text = None
+        embeds = 'embeds' in question
+        text = None
+        if embeds:
+            errors += _embed_errors(where, question, embedded_targets)
         else:
-            # те же правила текста, что проверит сборка банка: ловим их ещё у черновика
-            errors += [f'{where}: {message}' for message in language_errors(text, [])]
-            errors += [f'{where}: {message}' for message in completeness_errors(text, None, [])]
-        if not isinstance(question.get('explanation'), str) or not question['explanation'].strip():
-            errors.append(f'{where}: нет пояснения')
-        elif not 3 <= sentence_count(question['explanation']) <= 5:
-            # то же правило, что у дополнений: сборка банка проверит его снова
-            errors.append(f'{where}: пояснение должно состоять из 3–5 предложений')
+            if question.get('topic') not in TOPICS:
+                errors.append(f'{where}: тема вне списка семи категорий')
+            text = question.get('questionRu')
+            if not isinstance(text, str) or not text.strip():
+                errors.append(f'{where}: нет текста вопроса')
+                text = None
+            else:
+                # те же правила текста, что проверит сборка банка: ловим их ещё у черновика
+                errors += [f'{where}: {message}' for message in language_errors(text, [])]
+                errors += [f'{where}: {message}' for message in completeness_errors(text, None, [])]
+            if not isinstance(question.get('explanation'), str) or not question['explanation'].strip():
+                errors.append(f'{where}: нет пояснения')
+            elif not 3 <= sentence_count(question['explanation']) <= 5:
+                # то же правило, что у дополнений: сборка банка проверит его снова
+                errors.append(f'{where}: пояснение должно состоять из 3–5 предложений')
         check = question.get('check')
         verdict = check.get('verdict') if isinstance(check, dict) else None
         if check is not None and (not isinstance(verdict, str) or verdict not in VERDICTS
@@ -390,9 +419,9 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
             errors.append(f'{where}: принятый вопрос без вердикта проверки accept')
         broken = _reference_errors(where, question, dossier)
         errors += broken
-        if not broken and text is not None:
+        if not broken and (embeds or text is not None):
             errors += _content_errors(where, question, dossier)
-            if named:
+            if named and not embeds:
                 whole.append(question)
     # утечки: ответ одного вопроса не должен стоять в тексте другого
     answers = {question['id']: answer_cell(question, dossier)[1] for question in whole}
