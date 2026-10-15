@@ -534,3 +534,50 @@ test('любой исход даёт запись, которую принима
 test('неизвестный исход — ошибка программы, а не тихая порча прогресса', () => {
   assert.throws(() => quiz.applyAnswer(undefined, 'maybe', NOW), /исход/);
 });
+
+const sequence = (...values) => {
+  let index = 0;
+  return () => values[index++];
+};
+
+test('«верно или нет»: при random < ½ предлагается правильный вариант', () => {
+  assert.deepEqual(quiz.trueFalseStatement(record('a'), sequence(0.1)),
+    { optionId: 'o2', zh: '上海', isTrue: true });
+});
+
+test('«верно или нет»: иначе предлагается неверный вариант, и выпасть может любой', () => {
+  const picked = [0, 0.34, 0.67, 0.99].map((x) => quiz.trueFalseStatement(record('a'), sequence(0.5, x)));
+  assert.ok(picked.every((statement) => statement.isTrue === false && statement.optionId !== 'o2'));
+  assert.deepEqual(new Set(picked.map((statement) => statement.optionId)), new Set(['o1', 'o3', 'o4']));
+});
+
+test('«верно или нет»: у записи с общим набором неверный берётся из всего набора', () => {
+  const pooled = record('a', {
+    options: [
+      { id: 'o1', zh: '广州' }, { id: 'o2', zh: '上海' }, { id: 'o3', zh: '北京' },
+      { id: 'o4', zh: '西安' }, { id: 'o5', zh: '天津' }, { id: 'o6', zh: '重庆' },
+    ],
+  });
+  assert.deepEqual(quiz.trueFalseStatement(pooled, sequence(0.5, 0.99)),
+    { optionId: 'o6', zh: '重庆', isTrue: false });
+});
+
+test('вопросы, на которые без вариантов не ответить, узнаются по формулировке', () => {
+  const needs = (questionRu) => quiz.needsOptions(record('a', { questionRu }));
+  assert.equal(needs('Что из перечисленного является специальным административным районом Китая?'), true);
+  assert.equal(needs('Какой из нижеперечисленных городов Китая называют 泉城?'), true);
+  assert.equal(needs('Какое животное не входит в китайский двенадцатилетний зодиак?'), true);
+  assert.equal(needs('Какой город не относится к шести древним столицам Китая?'), true);
+  assert.equal(needs('С какой страной не граничит КНР?'), true);
+});
+
+test('«не» в формулировке ещё не значит, что без вариантов не ответить', () => {
+  const needs = (questionRu) => quiz.needsOptions(record('a', { questionRu }));
+  assert.equal(needs('Как называлась самая ранняя династия Китая?'), false);
+  assert.equal(needs('Обычай в день праздника Ханьши («праздник холодной пищи»), предшествующего Цинмину, '
+    + 'не разводить огонь и есть только холодную пищу, по преданию установил Цзинь Вэнь-гун в память '
+    + 'о своём верном спутнике. О ком идёт речь?'), false);
+  assert.equal(needs('Какой денежный подарок делают не только на Праздник весны, но и на рождение ребёнка, '
+    + 'новоселье и день рождения?'), false);
+  assert.equal(needs('Какой праздник неразрывно связан с луной?'), false);
+});

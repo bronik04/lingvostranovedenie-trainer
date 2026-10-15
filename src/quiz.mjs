@@ -296,6 +296,29 @@ export function optionGlosses(record) {
     .map((option) => ({ optionId: option.id, zh: option.zh, gloss: option.gloss }));
 }
 
+// «Верно или нет»: с вероятностью ½ — правильный вариант, иначе любой неверный,
+// у записи с общим набором — из всего набора.
+export function trueFalseStatement(record, random = Math.random) {
+  const right = record.options.find((option) => option.id === record.answer.optionId);
+  if (!right) throw new Error(`у вопроса нет правильного варианта: ${record.id}`);
+  const isTrue = random() < 0.5;
+  const wrong = record.options.filter((option) => option !== right);
+  const option = isTrue ? right : wrong[Math.floor(random() * wrong.length)];
+  return { optionId: option.id, zh: option.zh, isTrue };
+}
+
+// Вопросы, на которые без вариантов не ответить: «Что из перечисленного…»,
+// «Какое животное не входит в зодиак?». Правило по формулировке эвристическое:
+// промах безвреден — ученик откроет варианты сам, лишний вопрос просто сразу
+// покажет четыре варианта. В регулярках нет кавычек и двух косых подряд — их
+// не поймёт минификатор сборки.
+const LISTED_OPTIONS = /перечисленн|из следующих|из приведённых|из приведенных|из этих|из указанных/i;
+const NEGATED_MEMBERSHIP = /(?<![а-яё])не\s+(является|являлся|являются|входит|входят|относится|относятся|был|была|было|были|граничит|принадлежит)(?![а-яё])/i;
+
+export function needsOptions(record) {
+  return LISTED_OPTIONS.test(record.questionRu) || NEGATED_MEMBERSHIP.test(record.questionRu);
+}
+
 export function pluralRu(count, forms) {
   if (count % 10 === 1 && count % 100 !== 11) return forms[0];
   if (count % 10 >= 2 && count % 10 <= 4 && !(count % 100 >= 12 && count % 100 <= 14)) return forms[1];
