@@ -1,0 +1,35 @@
+{
+  "id": "holidays",
+  "title": "Праздники",
+  "tables": {
+    "holidays": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "kind": "zh",
+        "date": "zh",
+        "people": "zh",
+        "legend": "zh",
+        "origin": "ru"
+      },
+      "rows": []
+    },
+    "customs": {
+      "columns": {
+        "name": "zh",
+        "kind": "zh",
+        "holiday": "zh",
+        "meaning": "ru"
+      },
+      "rows": []
+    },
+    "figures": {
+      "columns": {
+        "name": "zh",
+        "holiday": "zh",
+        "role": "ru"
+      },
+      "rows": []
+    }
+  }
+}
