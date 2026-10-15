@@ -16,6 +16,7 @@ GOOD = {
                 {'id': 'C', 'text': 'три'}, {'id': 'D', 'text': 'четыре'}],
     'answer': 'C', 'group': 'measure', 'literal': 'буквально', 'meaning': 'смысл', 'trap': 'ловушка',
     'occurrences': [{'year': '2018-19', 'stageCode': 'zak', 'number': 15, 'keyCheck': 'table',
+                     'instruction': 'Подберите аналог фразеологизму в русском языке',
                      'tasks': 'a.pdf', 'answers': 'b.pdf'}],
 }
 DRAFT = {key: value for key, value in GOOD.items() if key != 'occurrences'} | {
@@ -39,6 +40,8 @@ class ValidateTest(unittest.TestCase):
             'повторяющийся вариант': {'options': [dict(o, text='раз') for o in GOOD['options']]},
             'без occurrences': {'occurrences': []},
             'keyCheck': {'occurrences': [dict(GOOD['occurrences'][0], keyCheck='угадано')]},
+            'формулировки задания': {'occurrences': [dict(GOOD['occurrences'][0], instruction='')]},
+            'у обратного задания ответ': {'kind': 'reverse', 'prompt': 'Пословица', 'answer': 'E'},
         }
         for expected, change in cases.items():
             with self.subTest(expected):
@@ -97,13 +100,47 @@ class SourcesTest(unittest.TestCase):
                     messages = chengyu.check_sources([tampered])
                     self.assertTrue(messages, 'подменённый ключ прошёл проверку')
 
-    def test_tampered_option_is_caught(self):
-        record = copy.deepcopy(self.olympiad[0])
-        record['options'][1]['text'] = 'Такого варианта в бланке нет'
-        self.assertTrue(any('нет варианта' in m for m in chengyu.check_sources([record])))
+    def tampered(self, change):
+        """Каждое появление с изменением change; возвращает те, что прошли проверку."""
+        missed = []
+        for record in self.olympiad:
+            for occurrence in record['occurrences']:
+                one = copy.deepcopy(record | {'occurrences': [occurrence]})
+                change(one)
+                if not chengyu.check_sources([one]):
+                    missed.append(f'{record["id"]} {occurrence["year"]}')
+        return missed
 
-    def test_visual_keys_are_few_and_listed(self):
-        self.assertLessEqual(len(chengyu.visual_keys(self.olympiad)), 4)
+    def test_swapped_answer_text_is_caught(self):
+        # буква ключа прежняя, но под ней другой текст: таблица ключей этого не видит,
+        # поэтому порядок вариантов сверяется с бланком
+        def swap(record):
+            i = chengyu.LETTERS.index(record['answer'])
+            j = (i + 1) % 4
+            options = record['options']
+            options[i]['text'], options[j]['text'] = options[j]['text'], options[i]['text']
+        self.assertEqual(self.tampered(swap), [])
+
+    def test_wrong_task_number_is_caught(self):
+        def shift(record):
+            record['occurrences'][0]['number'] += 1
+        self.assertEqual(self.tampered(shift), [])
+
+    def test_option_from_another_task_is_caught(self):
+        record = copy.deepcopy(self.olympiad[0])
+        other = next(r for r in self.olympiad[1:] if r['kind'] == record['kind'])
+        record['options'][1]['text'] = other['options'][0]['text']
+        self.assertTrue(chengyu.check_sources([record]))
+
+    def test_visual_keys_are_few_and_listed_in_report(self):
+        visual = chengyu.visual_keys(self.olympiad)
+        self.assertLessEqual(len(visual), 4)
+        report = (ROOT / 'data/review/chengyu.md').read_text('utf-8')
+        for record in self.olympiad:
+            for occurrence in record['occurrences']:
+                if occurrence['keyCheck'] == 'visual':
+                    line = f'{record["chengyu"]} — {occurrence["year"]}, {occurrence["stageCode"]}, задание {occurrence["number"]}'
+                    self.assertIn(line, report)
 
 
 if __name__ == '__main__':

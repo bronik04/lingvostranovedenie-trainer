@@ -176,6 +176,13 @@ function show(view) {
     $(id).hidden = name !== view;
   }
   const chengyu = view.startsWith('cy-');
+  // адрес следует за разделом: перезагрузка открывает тот же раздел, а ссылка #chengyu
+  // из другого раздела снова срабатывает (hashchange)
+  if (chengyu !== (location.hash === '#chengyu')) {
+    try {
+      history.replaceState(null, '', `${location.pathname}${location.search}${chengyu ? '#chengyu' : ''}`);
+    } catch { /* без истории адрес просто не меняется */ }
+  }
   for (const [link, current] of [
     ['navSetup', !chengyu && view !== 'database'],
     ['navDatabase', view === 'database'],

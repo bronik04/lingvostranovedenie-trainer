@@ -84,6 +84,11 @@ test('подпись появления на олимпиаде и самое с
 });
 
 test('настоящие данные: формулировки задания и сводка', () => {
+  // формулировка — из бланка самого свежего появления, у составленных — по виду задания
+  const sample = OLYMPIAD.find((r) => r.chengyu === '杯弓蛇影');
+  assert.equal(cyPrompt(sample), 'Подберите аналог китайскому фразеологизму в русском языке');
+  assert.equal(cyPrompt({ kind: 'odd' }),
+    'Укажите русский фразеологизм, не передающий значение приведенного китайского фразеологизма');
   const kinds = new Set(OLYMPIAD.map((r) => r.kind));
   assert.deepEqual([...kinds].sort(), ['analog', 'odd', 'reverse']);
   for (const item of OLYMPIAD) assert.ok(cyPrompt(item));

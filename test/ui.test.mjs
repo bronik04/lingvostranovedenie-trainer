@@ -482,6 +482,12 @@ test('чэнъюй: раунд с верным и неверным ответо�
   await page.keyboard.press('Escape');
   await page.keyboard.press('Escape');
   await page.locator('#cySetupView').waitFor();
+  // адрес следует за разделом: из «Тренировки» перезагрузка не возвращает в «Чэнъюй»
+  assert.equal(new URL(page.url()).hash, '#chengyu');
+  await page.locator('#navSetup').click();
+  assert.equal(new URL(page.url()).hash, '');
+  await page.reload();
+  assert.equal(await page.locator('#setupView').isVisible(), true);
   assert.deepEqual(page.errors, []);
 });
 

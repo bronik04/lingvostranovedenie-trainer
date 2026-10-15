@@ -83,7 +83,7 @@ def _record_errors(record: dict, olympiad: bool) -> list[str]:
     if record['kind'] == 'reverse':
         if not record.get('prompt'):
             errors.append(f'{where}: у обратного задания нет русской пословицы (prompt)')
-        if record['options'][LETTERS.index(record['answer'])]['text'] != record['chengyu']:
+        if _answer_text(record) != record['chengyu']:
             errors.append(f'{where}: у обратного задания ответ — сам чэнъюй записи')
         for option in options:
             if option['id'] != record['answer'] and not option.get('gloss'):
@@ -99,6 +99,10 @@ def _record_errors(record: dict, olympiad: bool) -> list[str]:
                 errors.append(f'{where}: неизвестный этап {occurrence.get("stageCode")!r}')
             if not isinstance(occurrence.get('number'), int):
                 errors.append(f'{where}: нет номера задания')
+            if not occurrence.get('instruction'):
+                errors.append(f'{where}: нет формулировки задания из бланка (instruction)')
+            if 'part' in occurrence and not isinstance(occurrence['part'], int):
+                errors.append(f'{where}: пункт задания (part) — число')
             if occurrence.get('keyCheck') not in KEY_CHECKS:
                 errors.append(f'{where}: keyCheck — одно из {sorted(KEY_CHECKS)}')
             for field in ('tasks', 'answers'):
@@ -145,22 +149,30 @@ def _pdf_text(name: str, layout: bool = False) -> str:
 
 
 @lru_cache(maxsize=None)
-def _bold_runs(name: str) -> list[str]:
-    """Тексты, набранные полужирным (pdftohtml -xml: тег <b> или шрифт Bold)."""
+def _runs(name: str) -> list[tuple[str, bool]]:
+    """Текстовые фрагменты PDF по порядку и признак полужирного (pdftohtml -xml: тег <b>
+    или шрифт Bold)."""
     xml = subprocess.run(['pdftohtml', '-xml', '-i', '-stdout', '-q', str(SOURCES / name)],
                          capture_output=True, text=True, check=True).stdout
     bold_fonts = {m.group(1) for m in re.finditer(r'<fontspec id="(\d+)"[^>]*family="[^"]*Bold[^"]*"', xml)}
     runs = []
     for m in re.finditer(r'<text [^>]*font="(\d+)"[^>]*>(.*?)</text>', xml):
         raw = m.group(2)
-        if '<b>' in raw or m.group(1) in bold_fonts:
-            runs.append(html.unescape(re.sub(r'<[^>]+>', '', raw)))
+        text = html.unescape(re.sub(r'<[^>]+>', '', raw))
+        if _norm(text):
+            runs.append((text, '<b>' in raw or m.group(1) in bold_fonts))
     return runs
 
 
 CYR_LETTERS = str.maketrans({'А': 'A', 'В': 'B', 'С': 'C'})
 LETTER_LINE = re.compile(r'^\s*(?:[ABCDАВС]\s+)*[ABCDАВС]\s*$')
 NUMBER_LINE = re.compile(r'^\s*(?:\d{1,2}\s+)*\d{1,2}\s*$')
+TASK_NUMBER = re.compile(r'(?:Задание|№)\s*(\d+)|^\s*(\d+)\s*[.．)]')
+SECTION_HEADER = re.compile(r'(Ключи к|ЛИНГВОСТРАНОВЕД|Лингвострановед)', re.I)
+# сколько строк после чэнъюя занимают его варианты (с колонтитулами и пустыми строками)
+OPTION_WINDOW = 30
+# сколько строк над чэнъюем ищется номер задания
+NUMBER_WINDOW = 8
 
 
 def _key_tables(text: str) -> list[dict[int, str]]:
@@ -188,7 +200,11 @@ def table_key(name: str, number: int) -> str | None:
     text = _pdf_text(name, layout=True)
     header = re.search(r'лексико-грамматическ', text, re.I)
     if header:
-        tables = _key_tables(text[header.start():])
+        # раздел ЛГ-теста — до заголовка следующего раздела: иначе ключи
+        # лингвострановедения с продолжающейся нумерацией приклеятся к таблице
+        section = text[header.end():]
+        following = SECTION_HEADER.search(section)
+        tables = _key_tables(section[:following.start()] if following else section)
         return tables[0].get(number) if tables else None
     tables = _key_tables(text)
     if number > 20:
@@ -198,8 +214,74 @@ def table_key(name: str, number: int) -> str | None:
     return lg[0].get(number) if lg else None
 
 
+def _key_lines(lines: list[str], record: dict, occurrence: dict) -> list[int]:
+    """Строки бланка, с которых начинается задание: строка с чэнъюем (у обратного —
+    с пословицей). Если китайский шрифт не извлекается — строка перед первым вариантом."""
+    if occurrence.get('textLayer') == 'garbled':
+        first = _norm(record['options'][0]['text'])
+        return [i - 1 for i, line in enumerate(lines) if first and _norm(line) == first]
+    key = _norm(record['prompt'] if record['kind'] == 'reverse' else record['chengyu'])
+    return [i for i, line in enumerate(lines) if key and key in _norm(line)]
+
+
+def _number_ok(lines: list[str], at: int, occurrence: dict) -> bool:
+    """Номер задания (и пункта) — ближайшие номера над строкой чэнъюя."""
+    found = []
+    for line in reversed(lines[max(0, at - NUMBER_WINDOW):at + 1]):
+        match = TASK_NUMBER.search(line)
+        if match:
+            found.append(int(match.group(1) or match.group(2)))
+    if not occurrence.get('part'):
+        return found[:1] == [occurrence['number']]
+    # пункт задания: ближайший номер — пункт, а «Задание N» может стоять выше, за
+    # колонтитулом страницы, поэтому ищется в окне шире
+    tasks = [int(m.group(1)) for line in reversed(lines[max(0, at - 3 * NUMBER_WINDOW):at + 1])
+             for m in [re.search(r'(?:Задание|№)\s*(\d+)', line)] if m]
+    return found[:1] == [occurrence['part']] and tasks[:1] == [occurrence['number']]
+
+
+def _options_in_order(lines: list[str], at: int, record: dict) -> bool:
+    """Варианты A–D идут по порядку сразу после строки чэнъюя."""
+    tail = _norm(' '.join(lines[at + 1:at + 1 + OPTION_WINDOW]))
+    position = 0
+    for option in record['options']:
+        found = tail.find(_norm(option['text']), position)
+        if found < 0:
+            return False
+        position = found + len(_norm(option['text']))
+    return True
+
+
+def _bold_answer_ok(name: str, record: dict) -> str | None:
+    """Полужирный в PDF ответов: после чэнъюя этого задания выделен ответ и только он
+    (в PDF-формах полужирные все варианты — такое выделение ключом не считается)."""
+    runs = _runs(name)
+    key = _norm(record['prompt'] if record['kind'] == 'reverse' else record['chengyu'])
+    starts = [i for i, (text, _) in enumerate(runs) if key in _norm(text)]
+    if not starts:
+        return 'в PDF ответов нет этого задания'
+    window = runs[starts[0] + 1:starts[0] + 1 + OPTION_WINDOW]
+
+    def bold(text: str) -> bool:
+        target = _norm(text)
+        return any(is_bold and (_norm(run) == target or (len(_norm(run)) > 3 and target.startswith(_norm(run))))
+                   for run, is_bold in window)
+
+    answer = next(o['text'] for o in record['options'] if o['id'] == record['answer'])
+    if not bold(answer):
+        return f'ответ «{answer}» не выделен полужирным'
+    if any(bold(o['text']) for o in record['options'] if o['id'] != record['answer']):
+        return 'полужирным выделен не только ответ'
+    return None
+
+
+def _answer_text(record: dict) -> str | None:
+    return next((o['text'] for o in record['options'] if o.get('id') == record.get('answer')), None)
+
+
 def check_sources(olympiad: list[dict]) -> list[str]:
-    """Каждое задание есть в бланке дословно, ключ подтверждён PDF ответов."""
+    """Каждое задание есть в бланке на своём месте: номер, формулировка, варианты по
+    порядку; ключ подтверждён PDF ответов."""
     errors: list[str] = []
     manifest = json.loads((SOURCES / 'manifest.json').read_text('utf-8'))
     listed = {entry['name']: entry for entry in manifest}
@@ -212,25 +294,34 @@ def check_sources(olympiad: list[dict]) -> list[str]:
             errors.append(f'sources/chengyu/{name}: контрольная сумма не совпадает')
     for record in olympiad:
         where = record['id']
-        answer_text = record['options'][LETTERS.index(record['answer'])]['text']
+        answer_text = _answer_text(record)
+        if answer_text is None:
+            errors.append(f'{where}: ответ не указывает на вариант')
+            continue
         for occurrence in record['occurrences']:
             tasks, answers = occurrence['tasks'], occurrence['answers']
+            label = f'{where} ({occurrence["year"]}, задание {occurrence["number"]})'
             if tasks not in listed or answers not in listed:
-                errors.append(f'{where}: файл не из sources/chengyu: {tasks} / {answers}')
+                errors.append(f'{label}: файл не из sources/chengyu: {tasks} / {answers}')
                 continue
-            blank = _norm(_pdf_text(tasks))
-            if occurrence.get('textLayer') != 'garbled':
-                key = record['prompt'] if record['kind'] == 'reverse' else record['chengyu']
-                if _norm(key) not in blank:
-                    errors.append(f'{where}: в бланке {tasks} нет «{key}»')
-            for option in record['options']:
-                if _norm(option['text']) not in blank:
-                    errors.append(f'{where}: в бланке {tasks} нет варианта «{option["text"]}»')
+            lines = _pdf_text(tasks).splitlines()
+            starts = _key_lines(lines, record, occurrence)
+            if not starts:
+                errors.append(f'{label}: в бланке {tasks} нет этого задания')
+                continue
+            placed = [at for at in starts if _options_in_order(lines, at, record)]
+            if not placed:
+                errors.append(f'{label}: в бланке {tasks} после задания нет вариантов A–D в этом порядке')
+                continue
+            if not any(_number_ok(lines, at, occurrence) for at in placed):
+                errors.append(f'{label}: номер задания не совпадает с бланком')
+            if _norm(occurrence.get('instruction', '')) not in _norm(' '.join(lines)):
+                errors.append(f'{label}: в бланке нет формулировки «{occurrence.get("instruction")}»')
             method = occurrence['keyCheck']
             if method == 'table':
                 letter = table_key(answers, occurrence['number'])
                 if letter != record['answer']:
-                    errors.append(f'{where}: по таблице {answers} ключ {letter}, в данных {record["answer"]}')
+                    errors.append(f'{label}: по таблице {answers} ключ {letter}, в данных {record["answer"]}')
             elif method == 'inline':
                 # «11 B ни рыба ни мясо» или «8. язык мой – враг мой»: номер, буква, если
                 # есть, — та же, что в данных, и текст ответа в той же строке
@@ -243,22 +334,11 @@ def check_sources(olympiad: list[dict]) -> list[str]:
                         if letter_ok and _norm(answer_text) in _norm(line[match.start():]):
                             found = True
                 if not found:
-                    errors.append(f'{where}: в {answers} нет строки «{occurrence["number"]} {answer_text}»')
+                    errors.append(f'{label}: в {answers} нет строки «{occurrence["number"]} {answer_text}»')
             elif method == 'bold':
-                # полужирным должен быть ответ и только он: в PDF-формах полужирные все
-                # варианты, и такое выделение ключом не считается
-                runs = [_norm(run) for run in _bold_runs(answers)]
-
-                def is_bold(text: str) -> bool:
-                    target = _norm(text)
-                    return any(run == target or (len(run) > 3 and target.startswith(run))
-                               for run in runs)
-
-                others = [o['text'] for o in record['options'] if o['id'] != record['answer']]
-                if not is_bold(answer_text):
-                    errors.append(f'{where}: в {answers} ответ «{answer_text}» не выделен полужирным')
-                elif any(is_bold(text) for text in others):
-                    errors.append(f'{where}: в {answers} полужирным выделен не только ответ')
+                problem = _bold_answer_ok(answers, record)
+                if problem:
+                    errors.append(f'{label}: {answers}: {problem}')
     return errors
 
 

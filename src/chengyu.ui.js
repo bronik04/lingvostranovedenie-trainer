@@ -370,9 +370,11 @@ function cyRenderReference() {
       `<h3 class="cy-row-head"><span class="cy-row-han" lang="zh-Hans">${escapeHtml(record.chengyu)}</span>`,
       `<span class="cy-row-pinyin" lang="zh-Hans">${escapeHtml(record.pinyin)}</span></h3>`,
       `<p class="row-meta">${reverse ? `Обратное задание: «${escapeHtml(record.prompt)}»`
-        : record.kind === 'odd' ? 'Найти лишний вариант' : `Аналог: «${escapeHtml(answer)}»`}</p>`,
+        : record.kind === 'odd' ? 'Найти лишний вариант' : 'Подобрать русский аналог'}</p>`,
       appearances ? `<p class="row-meta">${escapeHtml(appearances)}</p>` : '',
       '<details class="row-reveal"><summary>Показать разбор</summary><div class="row-panel">',
+      `<p class="row-answer">${record.kind === 'odd' ? 'Лишний' : 'Ответ'}: ${reverse
+        ? `<span class="zh" lang="zh-Hans">${escapeHtml(answer)}</span>` : `«${escapeHtml(answer)}»`}</p>`,
       `<p class="row-sources-title">Варианты бланка</p><ol class="cy-options-list">${options}</ol>`,
       cyFacts(record),
       '</div></details>',
