@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from dossiers import dossier_paths, dossier_records, dossier_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions
+from dossiers import cross_leak_errors, dossier_paths, dossier_records, dossier_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions
 from editorial import apply_editorial, validate_editorial
 from embeds import apply_embeds
 
@@ -502,6 +502,33 @@ class ApplyEmbedsTest(unittest.TestCase):
         with self.assertRaises(ValueError) as caught:
             apply_embeds([olympiad()], [(dossier(), [embed()]), (dossier(), [embed()])], {})
         self.assertIn('уже встроена', str(caught.exception))
+
+
+def myths_question(**overrides):
+    item = {'id': 'myths-q01', 'status': 'draft', 'topic': 'Культура, традиции и праздники',
+            'fact': {'table': 'figures', 'row': 'fig-xihe', 'ask': 'name'},
+            'questionRu': 'Какая богиня, по преданию, правила колесницей Солнца, а не цветком 荷花?',
+            'explanation': 'Первое предложение. Второе предложение. Третье предложение.', 'exclude': []}
+    item.update(overrides)
+    return item
+
+
+class CrossLeakTest(unittest.TestCase):
+    def test_answer_of_one_dossier_in_the_text_of_another(self):
+        loaded = [(dossier(), [question()]), (myths_dossier(), [myths_question()])]
+        errors = cross_leak_errors([], loaded)
+        self.assertIn("myths/myths-q01: текст называет ответ вопроса money/money-q01: ['荷花']", errors)
+
+    def test_embedded_question_text_comes_from_the_bank(self):
+        record = olympiad(questionRu='Кто из богинь — 羲和 — изображён на купюре 20 юаней?')
+        loaded = [(dossier(), [embed()]), (myths_dossier(), [myths_question(questionRu='Какая богиня правила колесницей Солнца?')])]
+        errors = cross_leak_errors([record], loaded)
+        self.assertTrue(any(e.startswith('money/money-q02: текст называет ответ вопроса myths/myths-q01') for e in errors))
+
+    def test_edited_text_in_the_bank_wins_over_the_file(self):
+        edited = {'id': 'myths-q01', 'questionRu': 'Какая богиня правила колесницей Солнца?'}
+        loaded = [(dossier(), [question()]), (myths_dossier(), [myths_question(status='accepted')])]
+        self.assertEqual(cross_leak_errors([edited], loaded), [])
 
 class LoadDossierTest(unittest.TestCase):
     def write(self, directory, name, text):

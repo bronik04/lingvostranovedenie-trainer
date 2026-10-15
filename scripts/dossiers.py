@@ -472,6 +472,36 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
     return errors
 
 
+def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]]) -> list[str]:
+    """Утечки по всем вопросам всех досье сразу — по окончательным текстам.
+
+    Текст встроенного вопроса есть только в банке; текст своего вопроса берётся из банка, если
+    запись уже там (с правками editorial.json), иначе — из файла вопросов (черновик).
+    """
+    by_id = {record['id']: record for record in bank}
+    entries: list[tuple[str, str, dict]] = []
+    for dossier, questions in loaded:
+        for question in questions:
+            if 'embeds' in question:
+                record = by_id.get(question['embeds'])
+                if record is None:
+                    continue
+                text = record['questionRu']
+            else:
+                record = by_id.get(question['id'])
+                text = record['questionRu'] if record else question['questionRu']
+            entries.append((f'{dossier["id"]}/{question["id"]}', text, answer_cell(question, dossier)[1]))
+    errors: list[str] = []
+    for label, text, _ in entries:
+        for other, _, answer in entries:
+            if other != label:
+                names = _mentions(text, answer)
+                if names:
+                    errors.append(f'{label}: текст называет ответ вопроса {other}: {names}')
+    return errors
+
+
+
 def _wording_errors(questions: list[dict], bank: list[dict]) -> list[str]:
     """Повторы и обрезки формулировок — между вопросами досье и с банком, как в сборке."""
     errors: list[str] = []
