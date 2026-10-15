@@ -10,6 +10,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 
 from dossiers import dossier_paths, dossier_records, dossier_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions
 from editorial import apply_editorial, validate_editorial
+from embeds import apply_embeds
 
 TOPIC = 'Экономика, образование, наука и спорт'
 
@@ -435,6 +436,72 @@ class LinksTest(unittest.TestCase):
         space = space_dossier()
         space['tables']['missions']['rows'][0]['namesake']['from'] = 'myths/stories/story-niulang-zhinv'
         self.assertTrue(any('ref или from' in e for e in validate_dossier(space)))
+
+
+def olympiad(**overrides):
+    item = {'id': '2024-25-shk-9', 'questionRu': 'Какой цветок изображён на купюре 20 юаней?', 'questionZh': None,
+            'topic': TOPIC, 'options': [{'id': 'o1', 'zh': '荷花'}, {'id': 'o2', 'zh': '菊花'},
+                                        {'id': 'o3', 'zh': '梅花'}, {'id': 'o4', 'zh': '水仙花'}],
+            'answer': {'optionId': 'o1', 'state': 'verified'},
+            'explanation': {'ru': 'На лицевой стороне купюры 20 юаней — лотос.'},
+            'occurrences': [{'year': '2024-25', 'stageCode': 'shk', 'number': 9}], 'evidence': []}
+    item.update(overrides)
+    return item
+
+
+class ApplyEmbedsTest(unittest.TestCase):
+    def apply(self, bank=None, questions=None, glosses=None):
+        return apply_embeds(bank or [olympiad()], [(dossier(), questions or [embed()])], glosses or {})
+
+    def assertRejects(self, fragment, **kwargs):
+        with self.assertRaises(ValueError) as caught:
+            self.apply(**kwargs)
+        self.assertIn(fragment, str(caught.exception))
+
+    def test_embedding_adds_the_table_pool_and_glosses_and_keeps_the_question(self):
+        [record] = self.apply()
+        self.assertEqual([o['id'] for o in record['options']], ['o1', 'o2', 'o3', 'o4', 'cny-10'])
+        self.assertEqual(record['questionRu'], olympiad()['questionRu'])
+        self.assertEqual(record['occurrences'], olympiad()['occurrences'])
+        self.assertEqual(record['answer'], {'optionId': 'o1', 'state': 'verified'})
+        self.assertEqual(record['dossier'], 'money')
+        self.assertNotIn('gloss', record['options'][0])
+        self.assertEqual(record['options'][1]['gloss'], 'Хризантема — цветок на купюре')
+        self.assertEqual(record['options'][4], {'id': 'cny-10', 'zh': '月季花', 'gloss': 'Китайская роза — цветок на купюре'})
+
+    def test_only_accepted_embeds_apply_and_the_input_is_untouched(self):
+        bank = [olympiad()]
+        [record] = apply_embeds(bank, [(dossier(), [embed(status='draft')])], {})
+        self.assertIs(record, bank[0])
+        self.apply(bank=bank)
+        self.assertEqual(len(bank[0]['options']), 4)
+
+    def test_pooled_record_keeps_its_options_and_order(self):
+        options = olympiad()['options'] + [{'id': 'o5', 'zh': '月季花'}]
+        [record] = self.apply(bank=[olympiad(options=options)])
+        self.assertEqual([o['id'] for o in record['options']], ['o1', 'o2', 'o3', 'o4', 'o5'])
+
+    def test_option_with_stray_spaces_finds_its_cell(self):
+        options = [{'id': 'o1', 'zh': '荷花'}, {'id': 'o2', 'zh': ' 菊花 '}, {'id': 'o3', 'zh': '梅花'},
+                   {'id': 'o4', 'zh': '水仙花'}]
+        [record] = self.apply(bank=[olympiad(options=options)])
+        self.assertEqual(record['options'][1]['gloss'], 'Хризантема — цветок на купюре')
+
+    def test_rejects_each_broken_embedding(self):
+        self.assertRejects('не совпадает с ячейкой', bank=[olympiad(answer={'optionId': 'o2', 'state': 'verified'})])
+        options = olympiad()['options'][:3] + [{'id': 'o4', 'zh': '兰花'}]
+        self.assertRejects('нет ячейки с подписью', bank=[olympiad(options=options)])
+        self.assertRejects('пояснение', bank=[olympiad(explanation={'ru': 'Не 菊花, а лотос.'})])
+        self.assertRejects('glosses.json', glosses={'2024-25-shk-9': {'options': {}}})
+        self.assertRejects('вопрос досье', bank=[olympiad(dossier='money')])
+        self.assertRejects('влита в 2025-26-mun-1',
+                           bank=[olympiad(id='2025-26-mun-1', mergedIds=['2024-25-shk-9'])])
+        self.assertRejects('в банке нет записи', bank=[olympiad(id='2025-26-mun-1')])
+
+    def test_record_is_embedded_by_one_dossier_only(self):
+        with self.assertRaises(ValueError) as caught:
+            apply_embeds([olympiad()], [(dossier(), [embed()]), (dossier(), [embed()])], {})
+        self.assertIn('уже встроена', str(caught.exception))
 
 class LoadDossierTest(unittest.TestCase):
     def write(self, directory, name, text):
