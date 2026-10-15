@@ -1,0 +1,16 @@
+{
+  "id": "space",
+  "title": "Космос",
+  "tables": {
+    "missions": {
+      "columns": {
+        "name": "zh",
+        "program": "zh",
+        "year": "zh",
+        "namesake": "zh",
+        "achievement": "ru"
+      },
+      "rows": []
+    }
+  }
+}

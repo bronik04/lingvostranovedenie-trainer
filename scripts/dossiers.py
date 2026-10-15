@@ -550,7 +550,7 @@ def _report_cell(value: object) -> str:
     return text.replace('|', '\\|')
 
 
-def dossier_report(dossier: dict, questions: list[dict]) -> str:
+def dossier_report(dossier: dict, questions: list[dict], bank: list[dict] | None = None) -> str:
     lines = [f'# Досье «{dossier["title"]}»', '',
              f'Файл пишет сборка (`scripts/dossiers.py`). Править — `data/dossiers/{dossier["id"]}.json` '
              f'и `data/dossiers/{dossier["id"]}-questions.json`.', '']
@@ -566,17 +566,34 @@ def dossier_report(dossier: dict, questions: list[dict]) -> str:
             lines.append('')
     accepted = sum(1 for question in questions if question['status'] == 'accepted')
     lines += [f'## Вопросы — принято {accepted} из {len(questions)}', '']
+    by_id = {record['id']: record for record in bank or []}
     for question in questions:
-        options, _ = question_options(question, dossier)
         check = question.get('check') or {}
-        lines += [f'### {question["id"]} · {question["status"]} · проверка: {check.get("verdict", "нет")}', '',
-                  question['questionRu'], '',
-                  f'- Ответ: {options[0]["zh"]}',
+        header = f'### {question["id"]} · {question["status"]} · проверка: {check.get("verdict", "нет")}'
+        if 'embeds' in question:
+            record = by_id.get(question['embeds'])
+            header += f' · встраивает {question["embeds"]}'
+            if record is not None and record.get('dossier') == dossier['id']:
+                answer = next(o for o in record['options'] if o['id'] == record['answer']['optionId'])
+                wrong = [o for o in record['options'] if o is not answer]
+                text, topic = record['questionRu'], record.get('topic', '')
+                explanation = record.get('explanation', {}).get('ru', '')
+            else:
+                options, _ = question_options(question, dossier)
+                answer, wrong = options[0], options[1:]
+                text = f'(встраивает {question["embeds"]}; текст и варианты — после сборки)'
+                topic, explanation = '—', '—'
+        else:
+            options, _ = question_options(question, dossier)
+            answer, wrong = options[0], options[1:]
+            text, topic, explanation = question['questionRu'], question['topic'], question['explanation'].strip()
+        lines += [header, '', text, '',
+                  f'- Ответ: {answer["zh"].strip()}',
                   # подписи принимает автор — значит, он их видит здесь
-                  '- Неверные:', *(f'  - {option["zh"]} — {option.get("gloss", "без подписи")}'
-                                   for option in options[1:]),
-                  f'- Тема: {question["topic"]}',
-                  f'- Пояснение: {question["explanation"].strip()}']
+                  '- Неверные:', *(f'  - {option["zh"].strip()} — {option.get("gloss", "без подписи")}'
+                                   for option in wrong),
+                  f'- Тема: {topic}',
+                  f'- Пояснение: {explanation}']
         if check.get('note'):
             lines.append(f'- Замечание проверки: {check["note"]}')
         lines.append('')
@@ -601,8 +618,12 @@ def main() -> None:
     root = Path(__file__).resolve().parents[1]
     bank_path = root / 'data/bank.json'
     bank = json.loads(bank_path.read_text('utf-8')) if bank_path.exists() else []
-    for table_path, questions_path in dossier_paths(root / 'data/dossiers'):
-        data, questions = load_dossier(table_path, questions_path, bank)
+    loaded = [load_dossier(table_path, questions_path, bank)
+              for table_path, questions_path in dossier_paths(root / 'data/dossiers')]
+    errors = validate_links({data['id']: data for data, _ in loaded}) + cross_leak_errors(bank, loaded)
+    if errors:
+        raise SystemExit('ошибки досье:\n - ' + '\n - '.join(errors))
+    for data, questions in loaded:
         accepted = sum(1 for question in questions if question['status'] == 'accepted')
         rows = sum(len(table['rows']) for table in data['tables'].values())
         print(f'{data["id"]}: строк {rows}, вопросов {len(questions)}, принято {accepted} — ошибок нет')

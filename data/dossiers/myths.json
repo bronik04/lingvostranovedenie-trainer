@@ -1,0 +1,22 @@
+{
+  "id": "myths",
+  "title": "Мифы и легенды",
+  "tables": {
+    "figures": {
+      "columns": {
+        "name": "zh",
+        "role": "ru"
+      },
+      "rows": []
+    },
+    "stories": {
+      "columns": {
+        "name": "zh",
+        "kind": "zh",
+        "hero": "zh",
+        "meaning": "ru"
+      },
+      "rows": []
+    }
+  }
+}

@@ -595,13 +595,12 @@ class DossierInBankTest(unittest.TestCase):
         self.bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
         self.pairs = dossier_paths(ROOT / 'data/dossiers')
 
-    def test_money_dossier_is_part_of_the_build(self):
-        self.assertIn((ROOT / 'data/dossiers/money.json', ROOT / 'data/dossiers/money-questions.json'), self.pairs)
-
     def test_accepted_questions_reach_the_bank_and_drafts_do_not(self):
         for table_path, questions_path in self.pairs:
             data, questions = load_dossier(table_path, questions_path)
             for item in questions:
+                if 'embeds' in item:
+                    continue
                 if item['status'] != 'accepted':
                     self.assertNotIn(item['id'], self.bank)
                     continue
@@ -610,6 +609,29 @@ class DossierInBankTest(unittest.TestCase):
                 self.assertEqual(record['answer']['optionId'], answer_id, item['id'])
                 self.assertEqual([o['id'] for o in record['options']], [o['id'] for o in options], item['id'])
                 self.assertTrue(all(o.get('gloss') for o in record['options'] if o['id'] != answer_id), item['id'])
+
+    def test_accepted_embeds_reach_the_bank(self):
+        for table_path, questions_path in self.pairs:
+            data, questions = load_dossier(table_path, questions_path)
+            for item in questions:
+                if 'embeds' not in item or item['status'] != 'accepted':
+                    continue
+                record = self.bank[item['embeds']]
+                answer = next(o for o in record['options'] if o['id'] == record['answer']['optionId'])
+                self.assertEqual(record.get('dossier'), data['id'], item['id'])
+                self.assertEqual(answer['zh'].strip(), question_options(item, data)[0][0]['zh'], item['id'])
+                self.assertTrue(all(o.get('gloss') for o in record['options'] if o is not answer), item['id'])
+
+    def test_links_between_dossiers_are_alive(self):
+        loaded = {}
+        for table_path, questions_path in self.pairs:
+            data, _ = load_dossier(table_path, questions_path)
+            loaded[data['id']] = data
+        self.assertEqual(validate_links(loaded), [])
+
+    def test_all_dossiers_are_part_of_the_build(self):
+        names = {table.name for table, _ in self.pairs}
+        self.assertEqual(names, {'money.json', 'myths.json', 'space.json'})
 
     def test_olympiad_links_point_to_bank_questions(self):
         # олимпиадный вопрос мог быть влит склейкой в другой — его id тогда в mergedIds
@@ -639,6 +661,17 @@ class DossierReportTest(unittest.TestCase):
                       '  - 桂林山水 — Гуйлинь — на обороте купюры\n', report)
         self.assertIn('- Замечание проверки: неточно', report)
         self.assertTrue(report.endswith('\n') and not report.endswith('\n\n'))
+
+    def test_embed_shows_the_olympiad_question_and_its_options(self):
+        [record] = apply_embeds([olympiad()], [(dossier(), [embed()])], {})
+        report = dossier_report(dossier(), [embed()], [record])
+        self.assertIn('### money-q02 · accepted · проверка: accept · встраивает 2024-25-shk-9', report)
+        self.assertIn(olympiad()['questionRu'], report)
+        self.assertIn('  - 月季花 — Китайская роза — цветок на купюре', report)
+
+    def test_embed_before_the_build_says_so(self):
+        report = dossier_report(dossier(), [embed()])
+        self.assertIn('встраивает 2024-25-shk-9; текст и варианты — после сборки', report)
 
     def test_question_without_check_says_so(self):
         draft = question(status='draft')

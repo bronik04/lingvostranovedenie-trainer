@@ -13,8 +13,10 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from normalize import (completeness_errors, fragment_pairs, language_errors, normalize_text,
                        option_key, tidy)
 from authored import load_authored, validate_authored
-from dossiers import dossier_paths, dossier_records, dossier_report, load_dossier
+from dossiers import (cross_leak_errors, dossier_paths, dossier_records, dossier_report, load_dossier,
+                      validate_links)
 from editorial import apply_editorial, load_editorial
+from embeds import apply_embeds
 from explanations import apply_revisions, load_revisions
 from fact_groups import apply_fact_groups, load_fact_groups
 from glosses import apply_glosses, load_glosses
@@ -373,11 +375,14 @@ def main() -> None:
     bank = apply_revisions(bank, revisions)
     bank.extend(load_authored(ROOT / 'data/authored/questions.json', bank))
     # досье — сразу после дополнений: правки, склейки и подписи дальше работают и для них
-    dossier_reports: dict[str, str] = {}
+    loaded: list[tuple[dict, list[dict]]] = []
     for table_path, questions_path in dossier_paths(ROOT / 'data/dossiers'):
         dossier, questions = load_dossier(table_path, questions_path, bank)
         bank.extend(dossier_records(dossier, questions))
-        dossier_reports[dossier['id']] = dossier_report(dossier, questions)
+        loaded.append((dossier, questions))
+    errors = validate_links({dossier['id']: dossier for dossier, _ in loaded})
+    if errors:
+        raise ValueError('некорректные ссылки между досье:\n - ' + '\n - '.join(errors))
     # правки — последним слоем, чтобы доходить и до дополнений
     bank = apply_editorial(bank, load_editorial(ROOT / 'data/review/editorial.json'))
     # склейка дублей — после правок: варианты сверяются уже по исправленному тексту
@@ -386,6 +391,9 @@ def main() -> None:
     report['glued'] = before_merges - len(bank)
     # удаления — после склеек: удалённая запись могла сама принимать влитые id
     bank = apply_retired(bank, load_retired(ROOT / 'data/review/retired.json'))
+    # встраивание олимпиадных вопросов в досье — по итоговым id, до подписей glosses.json
+    glosses = load_glosses(ROOT / 'data/review/glosses.json')
+    bank = apply_embeds(bank, loaded, glosses)
     bank = apply_fact_groups(bank, load_fact_groups(ROOT / 'data/review/fact-groups.json'))
     # дополнения после правок проверяются здесь же, чтобы не записать банк,
     # который сборка потом отвергнет
@@ -393,17 +401,22 @@ def main() -> None:
                                [r for r in bank if r.get('origin') is None])
     if errors:
         raise ValueError('дополнения после правок некорректны:\n - ' + '\n - '.join(errors))
+    # утечки между досье — по окончательным текстам, с правками и встраиваниями
+    errors = cross_leak_errors(bank, loaded)
+    if errors:
+        raise ValueError('утечки между вопросами досье:\n - ' + '\n - '.join(errors))
     # подписи к неверным вариантам — самым последним слоем: они сверяются с
     # текстом варианта уже после всех правок
-    bank = apply_glosses(bank, load_glosses(ROOT / 'data/review/glosses.json'))
+    bank = apply_glosses(bank, glosses)
     bank.sort(key=lambda record: record['id'])
     report['fragments'] = fragment_pairs([(record['id'], record['questionRu']) for record in bank])
     (ROOT / 'data/bank.json').write_text(
         json.dumps(bank, ensure_ascii=False, indent=2, sort_keys=True) + '\n', encoding='utf-8')
     (ROOT / 'data/review').mkdir(parents=True, exist_ok=True)
     _write_report(report, bank)
-    for dossier_id, text in dossier_reports.items():
-        (ROOT / f'data/review/dossier-{dossier_id}.md').write_text(text, encoding='utf-8')
+    for dossier, questions in loaded:
+        (ROOT / f'data/review/dossier-{dossier["id"]}.md').write_text(
+            dossier_report(dossier, questions, bank), encoding='utf-8')
     checked = sum(1 for record in bank if record['answer']['state'] == 'verified')
     print(f'банк: {len(bank)} записей, проверено {checked}; отчёт: data/review/merge.md')
 
