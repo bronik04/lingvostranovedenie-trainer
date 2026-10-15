@@ -63,8 +63,10 @@ const state = {
   format: savedStudySettings.format,
   // формат замораживается на старте раунда: настройки во время раунда не видны
   roundFormat: 'choice',
-  // стадия текущего вопроса: 'choice' — сетка вариантов
+  // стадия вопроса: 'choice' — сетка вариантов; во «Вспомни сам» 'recall' → 'rate' или 'hint'
   stage: 'choice',
+  // первые попытки во «Вспомни сам» по самооценке — для строки в итогах
+  recallCounts: { correct: 0, partial: 0, wrong: 0 },
   round: [],
   wrongIds: [],
   // ответ ученика на каждую ошибку раунда (первую попытку) — для списка в итогах
@@ -348,6 +350,7 @@ function startRound() {
 
 function startRoundWith(round, format = state.format) {
   state.roundFormat = format;
+  state.recallCounts = { correct: 0, partial: 0, wrong: 0 };
   state.round = round;
   state.wrongIds = [];
   state.wrongPicks = {};
@@ -394,7 +397,18 @@ function renderQuestion() {
   $('nextButton').classList.add('hidden');
   $('options').innerHTML = '';
   $('quizHint').textContent = QUIZ_HINTS[state.roundFormat];
+  for (const id of ['recallNote', 'recallPrompt', 'recallRate']) $(id).classList.add('hidden');
+  for (const button of $('recallRate').querySelectorAll('button')) {
+    button.disabled = false;
+    button.removeAttribute('aria-pressed');
+  }
+  if (state.roundFormat === 'recall' && !needsOptions(record)) {
+    state.stage = 'recall';
+    $('recallPrompt').classList.remove('hidden');
+    return;
+  }
   state.stage = 'choice';
+  if (state.roundFormat === 'recall') showRecallNote('На этот вопрос без вариантов не ответить — выберите из четырёх.');
   renderOptions(record);
 }
 
@@ -451,6 +465,9 @@ function commitAnswer(record, outcome, pick = {}) {
   const right = outcome !== 'wrong';
   state.progress[record.id] = applyAnswer(state.progress[record.id], outcome);
   saveProgress();
+  if (state.roundFormat === 'recall' && !isRepeatInRound(state.round, state.position)) {
+    state.recallCounts[outcome] += 1;
+  }
   ({ correct: state.correct, wrongIds: state.wrongIds } =
     tallyAnswer({ correct: state.correct, wrongIds: state.wrongIds }, record.id, right));
   if (!right) {
@@ -469,12 +486,16 @@ function commitAnswer(record, outcome, pick = {}) {
 function chooseOption(record, optionId) {
   if (state.answered) return;
   const verdict = grade(record, optionId);
-  commitAnswer(record, verdict.correct ? 'correct' : 'wrong', { optionId });
+  const hinted = state.stage === 'hint';
+  const outcome = !verdict.correct ? 'wrong' : hinted ? 'partial' : 'correct';
+  commitAnswer(record, outcome, { optionId });
   markOptions(record, optionId);
   const right = record.options.find((option) => option.id === verdict.answerOptionId);
   showFeedback(record, verdict.correct ? 'good' : 'bad', [
     `<strong>${verdict.correct ? 'Верно' : 'Неверно'}</strong>`,
-    verdict.correct ? '' : `<span>Правильный ответ: <span lang="zh-Hans">${escapeHtml(right.zh)}</span>.</span>`,
+    verdict.correct
+      ? hinted ? '<span>С подсказкой — засчитано как «вспомнил неточно».</span>' : ''
+      : `<span>Правильный ответ: <span lang="zh-Hans">${escapeHtml(right.zh)}</span>.</span>`,
   ].join(''));
 }
 
@@ -525,6 +546,41 @@ function showFeedback(record, kind, verdictHtml) {
   });
 }
 
+/* ---------- «Вспомни сам» ---------- */
+
+function showRecallNote(text) {
+  $('recallNote').textContent = text;
+  $('recallNote').classList.remove('hidden');
+}
+
+function revealAnswer() {
+  if (state.stage !== 'recall' || state.answered) return;
+  const record = state.round[state.position];
+  const right = record.options.find((option) => option.id === record.answer.optionId);
+  state.stage = 'rate';
+  $('recallPrompt').classList.add('hidden');
+  showFeedback(record, 'reveal',
+    `<strong lang="zh-Hans">${escapeHtml(right.zh)}</strong><span>Правильный ответ</span>`);
+  $('recallRate').classList.remove('hidden');
+}
+
+function showHint() {
+  if (state.stage !== 'recall' || state.answered) return;
+  state.stage = 'hint';
+  $('recallPrompt').classList.add('hidden');
+  showRecallNote('С подсказкой верный ответ засчитается как «вспомнил неточно».');
+  renderOptions(state.round[state.position]);
+}
+
+function rateRecall(outcome) {
+  if (state.stage !== 'rate' || state.answered) return;
+  commitAnswer(state.round[state.position], outcome);
+  for (const button of $('recallRate').querySelectorAll('button')) {
+    button.disabled = true;
+    if (button.dataset.outcome === outcome) button.setAttribute('aria-pressed', 'true');
+  }
+}
+
 function evidenceList(evidence = []) {
   return evidence.map((source) => {
     const url = safeSourceUrl(source.url);
@@ -568,6 +624,10 @@ function finishRound() {
   $('resultMeterWrong').style.flex = String(wrongCount);
   $('resultCounts').innerHTML = `<span><span class="ok" lang="zh-Hans">✓</span> верно — ${state.correct}</span>`
     + `<span><span class="bad" lang="zh-Hans">✕</span> с ошибкой — ${wrongCount}</span>`;
+  const recall = state.recallCounts;
+  $('resultRecall').hidden = state.roundFormat !== 'recall';
+  $('resultRecall').textContent =
+    `вспомнил сам — ${recall.correct} · неточно — ${recall.partial} · не вспомнил — ${recall.wrong}`;
   $('repeatMistakes').hidden = wrongCount === 0;
   $('repeatMistakes').textContent = `Повторить ошибки раунда (${wrongCount})`;
   // на экране одна главная кнопка: «Повторить ошибки», а без ошибок — «На главную»
@@ -699,6 +759,9 @@ const ANSWER_KEYS = {
   Numpad1: 0, Numpad2: 1, Numpad3: 2, Numpad4: 3,
   KeyA: 0, KeyB: 1, KeyC: 2, KeyD: 3,
 };
+const RATE_KEYS = {
+  Digit1: 'correct', Numpad1: 'correct', Digit2: 'partial', Numpad2: 'partial', Digit3: 'wrong', Numpad3: 'wrong',
+};
 
 document.addEventListener('keydown', (event) => {
   if (event.metaKey || event.ctrlKey || event.altKey) return;
@@ -729,6 +792,25 @@ document.addEventListener('keydown', (event) => {
   }
 
   if (state.view !== 'quiz') return;
+
+  if (state.stage === 'recall') {
+    if ((event.key === 'Enter' || event.key === ' ') && !onControl) {
+      event.preventDefault();
+      revealAnswer();
+    } else if (event.code === 'KeyV') {
+      event.preventDefault();
+      showHint();
+    }
+    return;
+  }
+  if (state.stage === 'rate' && !state.answered) {
+    const outcome = RATE_KEYS[event.code];
+    if (outcome) {
+      event.preventDefault();
+      rateRecall(outcome);
+    }
+    return;
+  }
 
   // код клавиши, а не символ: на русской раскладке те же клавиши дают Ф, И, С, В
   const index = ANSWER_KEYS[event.code];
@@ -764,6 +846,11 @@ $('navDatabase').addEventListener('click', (event) => {
 $('startButton').addEventListener('click', startRound);
 $('repeatMistakes').addEventListener('click', repeatMistakes);
 $('nextButton').addEventListener('click', nextQuestion);
+$('revealAnswer').addEventListener('click', revealAnswer);
+$('showHint').addEventListener('click', showHint);
+for (const button of $('recallRate').querySelectorAll('button')) {
+  button.addEventListener('click', () => rateRecall(button.dataset.outcome));
+}
 $('leaveRound').addEventListener('click', backToSetup);
 $('openDatabase').addEventListener('click', openDatabase);
 $('resultsDatabase').addEventListener('click', openDatabase);

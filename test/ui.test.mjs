@@ -427,6 +427,133 @@ test('формат выбирается, объясняется и пережи�
   assert.deepEqual(page.errors, []);
 });
 
+/** Убирает из банка страницы вопросы, которым нужны варианты (или, наоборот, все остальные),
+ * чтобы стадия первого вопроса во «Вспомни сам» не зависела от случая. */
+async function keepRecallQuestions(page, needs) {
+  await page.evaluate((keepNeeds) => {
+    for (let index = QUESTION_BANK.length - 1; index >= 0; index -= 1) {
+      if (needsOptions(QUESTION_BANK[index]) !== keepNeeds) QUESTION_BANK.splice(index, 1);
+    }
+  }, needs);
+}
+
+test('вспомни сам: ответ открывается пробелом, «не вспомнил» отправляет вопрос в «Ошибки»', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  assert.equal(await page.locator('#recallPrompt').isVisible(), true);
+  assert.equal(await page.locator('#options button').count(), 0);
+  // до открытия ответа оценка ничего не делает
+  await page.keyboard.press('Digit3');
+  assert.equal(await page.locator('#nextButton').isVisible(), false);
+  await page.keyboard.press('Space');
+  assert.equal(await page.locator('#feedback.reveal').isVisible(), true);
+  assert.equal(await page.locator('#recallRate').isVisible(), true);
+  assert.equal(await page.locator('#recallPrompt').isVisible(), false);
+  await page.keyboard.press('Digit3');
+  await page.locator('#nextButton:not(.hidden)').waitFor();
+  assert.equal(await page.locator('#progressSteps li').first().getAttribute('class'), 'ink-step ink-step--wrong ink-step--current');
+  await page.locator('#leaveRound').click();
+  await page.locator('#setupView .mode-option', { hasText: 'Ошибки' }).click();
+  assert.equal(await page.locator('#eligibleNotice').textContent(), 'Под фильтры подходит вопросов: 1.');
+  assert.deepEqual(page.errors, []);
+});
+
+test('вспомни сам: кнопка «Показать ответ» с клавиатуры срабатывает один раз', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  await page.locator('#revealAnswer').focus();
+  await page.keyboard.press('Enter');
+  assert.equal(await page.locator('#recallRate').isVisible(), true);
+  // ответ открыт, оценки ещё нет: Enter не должен ни оценить, ни перелистнуть вопрос
+  await page.keyboard.press('Enter');
+  assert.equal(await page.locator('#nextButton').isVisible(), false);
+  assert.match(await page.locator('#progressLabel').textContent(), /^Вопрос 1 из/);
+  assert.deepEqual(page.errors, []);
+});
+
+test('вспомни сам: подсказка показывает варианты, верный ответ засчитан как «неточно»', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  const bank = await bankOf(page);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  await page.locator('#showHint').click();
+  assert.equal(await page.locator('#options button').count(), 4);
+  assert.match(await page.locator('#recallNote').textContent(), /«вспомнил неточно»/);
+  const record = await currentRecord(page, bank);
+  await answer(page, record, true);
+  const progress = await page.evaluate(() => JSON.parse(localStorage.getItem('lingvo-trainer:v1')).progress);
+  assert.equal(progress[record.id].box, 1);
+  assert.equal(progress[record.id].lastCorrect, true);
+  assert.deepEqual(page.errors, []);
+});
+
+test('вспомни сам: вопрос «из перечисленного» сразу показывает варианты', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, true);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  assert.equal(await page.locator('#options button').count(), 4);
+  assert.equal(await page.locator('#recallPrompt').isVisible(), false);
+  assert.match(await page.locator('#recallNote').textContent(), /без вариантов не ответить/);
+  assert.deepEqual(page.errors, []);
+});
+
+test('вспомни сам: в итогах — разбивка по самооценке', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  for (let question = 0; question < 5; question += 1) {
+    await page.keyboard.press('Space');
+    await page.keyboard.press(question === 0 ? 'Digit2' : 'Digit1');
+    await page.keyboard.press('Enter');
+  }
+  await page.locator('#resultsView').waitFor();
+  assert.equal(await page.locator('#finalScore').textContent(), '5 / 5');
+  assert.equal(await page.locator('#resultRecall').textContent(), 'вспомнил сам — 4 · неточно — 1 · не вспомнил — 0');
+  assert.deepEqual(page.errors, []);
+});
+
+test('уход из раунда посреди стадии не оставляет панелей в раунде другого формата', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  await page.keyboard.press('Space');
+  await page.keyboard.press('Escape');
+  await pickFormat(page, 'Выбор ответа');
+  await startRound(page, 5);
+  assert.equal(await page.locator('#options button').count(), 4);
+  for (const id of ['#recallPrompt', '#recallRate', '#recallNote', '#feedback']) {
+    assert.equal(await page.locator(id).isVisible(), false, id);
+  }
+  assert.deepEqual(page.errors, []);
+});
+
+test('телефон: «Вспомни сам» без горизонтальной прокрутки', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 360, height: 780 });
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  const overflow = () => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  assert.equal(await overflow(), 0, 'стадия «вспомнить»');
+  await page.locator('#revealAnswer').click();
+  assert.equal(await overflow(), 0, 'ответ и самооценка');
+  assert.deepEqual(page.errors, []);
+});
+
 /* ---------- раздел «Чэнъюй» ---------- */
 
 async function openChengyu(page) {

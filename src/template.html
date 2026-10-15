@@ -159,8 +159,24 @@
       <h2 class="question" id="questionText"></h2>
       <p class="question-zh" id="questionZh" lang="zh-Hans" hidden></p>
     </div>
+    <p class="ink-caption recall-note hidden" id="recallNote"></p>
     <div class="options" id="options" role="group" aria-label="Варианты ответа"></div>
+    <div class="recall-prompt hidden" id="recallPrompt">
+      <p>Вспомните ответ, произнесите или запишите его, потом откройте.</p>
+      <div class="actions">
+        <button class="ink-btn ink-btn--primary" id="revealAnswer" type="button">Показать ответ</button>
+        <button class="ink-btn ink-btn--secondary" id="showHint" type="button">Не помню — показать варианты</button>
+      </div>
+    </div>
     <div class="feedback hidden" id="feedback" role="status" tabindex="-1"></div>
+    <div class="recall-rate hidden" id="recallRate" role="group" aria-labelledby="recallRateTitle">
+      <p class="recall-rate-title" id="recallRateTitle">Как получилось?</p>
+      <div class="actions">
+        <button class="ink-btn ink-btn--secondary" type="button" data-outcome="correct">Вспомнил сам</button>
+        <button class="ink-btn ink-btn--secondary" type="button" data-outcome="partial">Вспомнил неточно</button>
+        <button class="ink-btn ink-btn--secondary" type="button" data-outcome="wrong">Не вспомнил</button>
+      </div>
+    </div>
     <div class="next-row">
       <button class="ink-btn ink-btn--text" id="leaveRound" type="button">Закончить раунд</button>
       <button class="ink-btn ink-btn--primary hidden" id="nextButton" type="button">Следующий вопрос</button>
@@ -177,6 +193,7 @@
         <span class="ink-meter__wrong" id="resultMeterWrong"></span>
       </div>
       <p class="ink-caption result-counts" id="resultCounts"></p>
+      <p class="ink-caption result-recall" id="resultRecall" hidden></p>
       <p class="ink-lead result-text" id="resultText"></p>
       <div class="actions">
         <button class="ink-btn ink-btn--primary" id="repeatMistakes" type="button" hidden>Повторить ошибки раунда</button>
