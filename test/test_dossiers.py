@@ -559,6 +559,14 @@ class ApplyEmbedsTest(unittest.TestCase):
         self.assertEqual(embed_errors(bad, [(dossier(), [draft])], {}), [])
         self.assertTrue(any('не совпадает' in e for e in embed_errors(bad, [(dossier(), [draft])], {}, drafts=True)))
 
+    def test_draft_embed_may_keep_glosses_until_it_is_accepted(self):
+        # пока вопрос — черновик, банк живёт с подписями glosses.json; ячейки заменяют их при принятии
+        glosses = {'2024-25-shk-9': {'options': {}}}
+        draft = embed(status='draft')
+        self.assertEqual(embed_errors([olympiad()], [(dossier(), [draft])], glosses, drafts=True), [])
+        accepted = embed()
+        self.assertTrue(any('glosses.json' in e for e in embed_errors([olympiad()], [(dossier(), [accepted])], glosses, drafts=True)))
+
     def test_record_is_embedded_by_one_dossier_only(self):
         with self.assertRaises(ValueError) as caught:
             apply_embeds([olympiad()], [(dossier(), [embed()]), (dossier(), [embed()])], {})

@@ -43,7 +43,8 @@ def embed_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]], glosse
         if target in own_questions:
             errors.append(f'{where}: {target} — вопрос досье, его не встраивают')
             continue
-        if target in glosses:
+        # черновик подписи из glosses.json не трогает: банк живёт с ними, пока вопрос не принят
+        if target in glosses and question['status'] == 'accepted':
             errors.append(f'{where}: у {target} есть подписи в glosses.json — перенесите их в ячейки таблицы')
             continue
         _, problems = embed_record(original_record(record), question, dossier)
