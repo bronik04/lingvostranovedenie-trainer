@@ -8,9 +8,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from dossiers import cross_leak_errors, dossier_paths, dossier_records, dossier_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions
+from dossiers import check_dossiers, cross_leak_errors, dossier_paths, embed_record, original_record, dossier_records, dossier_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions
 from editorial import apply_editorial, validate_editorial
-from embeds import apply_embeds
+from embeds import apply_embeds, embed_errors
 
 TOPIC = 'Экономика, образование, наука и спорт'
 
@@ -85,6 +85,7 @@ class ValidateDossierTest(unittest.TestCase):
             (lambda d: row(d, 'cny-50').update(colour=cell('红')), 'необъявленные колонки'),
             (lambda d: row(d, 'cny-50').update(id='cny-100'), 'повторяющийся id строки'),
             (lambda d: row(d, 'cny-50').update(id='CNY 50'), 'нет id строки'),
+            (lambda d: row(d, 'cny-50').update(id='o5'), 'зарезервирован'),
             (lambda d: row(d, 'cny-50').pop('series'), 'нет обязательной колонки series'),
             (lambda d: row(d, 'cny-50').update(back=cell('Потала')), 'не по-китайски'),
             (lambda d: row(d, 'cny-50').update(back='布达拉宫'), 'должна быть объектом'),
@@ -493,10 +494,70 @@ class ApplyEmbedsTest(unittest.TestCase):
         self.assertRejects('нет ячейки с подписью', bank=[olympiad(options=options)])
         self.assertRejects('пояснение', bank=[olympiad(explanation={'ru': 'Не 菊花, а лотос.'})])
         self.assertRejects('glosses.json', glosses={'2024-25-shk-9': {'options': {}}})
-        self.assertRejects('вопрос досье', bank=[olympiad(dossier='money')])
+        self.assertRejects('вопрос досье', bank=[olympiad(id='money-q01')],
+                           questions=[question(), embed(embeds='money-q01')])
         self.assertRejects('влита в 2025-26-mun-1',
                            bank=[olympiad(id='2025-26-mun-1', mergedIds=['2024-25-shk-9'])])
         self.assertRejects('в банке нет записи', bank=[olympiad(id='2025-26-mun-1')])
+
+    def test_pool_is_added_after_the_options_of_a_pooled_record(self):
+        options = olympiad()['options'] + [{'id': 'o5', 'zh': '牡丹'}]
+        data = dossier()
+        row(data, 'rub-500')['flower'] = cell('牡丹', ['пион'], gloss='Пион — цветок')
+        [record] = apply_embeds([olympiad(options=options)], [(data, [embed()])], {})
+        self.assertEqual([o['id'] for o in record['options']], ['o1', 'o2', 'o3', 'o4', 'o5', 'cny-10'])
+        self.assertEqual(record['options'][4]['gloss'], 'Пион — цветок')
+
+    def test_original_option_takes_the_gloss_of_its_own_pool(self):
+        # строка рубля с тем же цветком стоит раньше юаней: подпись берётся из набора вопроса (where)
+        data = dossier()
+        data['tables']['banknotes']['rows'].insert(0, note('rub-50', '卢布', '50 卢布', '圣彼得堡', ['Петербург'],
+                                                          '菊花', ['хризантема рублёвая'], series='образца 1997 года'))
+        row(data, 'rub-50')['flower']['gloss'] = 'Хризантема рублёвая'
+        [record] = apply_embeds([olympiad()], [(data, [embed()])], {})
+        self.assertEqual(record['options'][1]['gloss'], 'Хризантема — цветок на купюре')
+
+    def test_ambiguous_gloss_outside_the_pool_is_an_error(self):
+        data = dossier()
+        data['tables']['banknotes']['rows'].insert(0, note('rub-50', '卢布', '50 卢布', '圣彼得堡', ['Петербург'],
+                                                          '菊花', ['хризантема рублёвая'], series='образца 1997 года'))
+        row(data, 'rub-50')['flower']['gloss'] = 'Хризантема рублёвая'
+        with self.assertRaises(ValueError) as caught:
+            apply_embeds([olympiad()], [(data, [embed(exclude=['cny-50'])])], {})
+        self.assertIn('несколько подписей', str(caught.exception))
+
+    def test_unverified_answer_is_not_embedded(self):
+        self.assertRejects('не проверен', bank=[olympiad(answer={'optionId': None, 'state': 'needs-review'})])
+
+    def test_explanation_may_contain_the_answer_that_contains_a_wrong_option(self):
+        data = dossier()
+        row(data, 'cny-20')['flower'] = cell('荷花王', ['царский лотос'], gloss='Царский лотос')
+        row(data, 'cny-50')['flower'] = cell('荷花', ['лотос'], gloss='Лотос — цветок')
+        # неверный 荷花 — часть ответа 荷花王; пояснение называет ответ, а не неверный вариант
+        options = [{'id': 'o1', 'zh': '荷花王'}, {'id': 'o2', 'zh': '荷花'}] + olympiad()['options'][2:]
+        record = olympiad(options=options, explanation={'ru': 'Это 荷花王 — царский лотос.'})
+        [embedded] = apply_embeds([record], [(data, [embed()])], {})
+        self.assertEqual(embedded['dossier'], 'money')
+
+    def test_row_id_that_collides_with_an_option_id_is_an_error(self):
+        data = dossier()
+        row(data, 'cny-10')['id'] = 'o5'
+        options = olympiad()['options'] + [{'id': 'o5', 'zh': '牡丹'}]
+        with self.assertRaises(ValueError) as caught:
+            apply_embeds([olympiad(options=options)], [(data, [embed()])], {})
+        self.assertIn('совпадает с id варианта', str(caught.exception))
+
+    def test_embedding_a_built_record_again_gives_the_same_result(self):
+        # bank.json после сборки: у записи уже есть добавленные варианты и подписи
+        [built] = self.apply()
+        preview, problems = embed_record(original_record(built), embed(), dossier())
+        self.assertEqual((preview, problems), (built, []))
+
+    def test_drafts_are_checked_on_request(self):
+        draft = embed(status='draft')
+        bad = [olympiad(answer={'optionId': 'o2', 'state': 'verified'})]
+        self.assertEqual(embed_errors(bad, [(dossier(), [draft])], {}), [])
+        self.assertTrue(any('не совпадает' in e for e in embed_errors(bad, [(dossier(), [draft])], {}, drafts=True)))
 
     def test_record_is_embedded_by_one_dossier_only(self):
         with self.assertRaises(ValueError) as caught:
@@ -529,6 +590,48 @@ class CrossLeakTest(unittest.TestCase):
         edited = {'id': 'myths-q01', 'questionRu': 'Какая богиня правила колесницей Солнца?'}
         loaded = [(dossier(), [question()]), (myths_dossier(), [myths_question(status='accepted')])]
         self.assertEqual(cross_leak_errors([edited], loaded), [])
+
+class CrossLeakChineseTextTest(unittest.TestCase):
+    def test_chinese_text_of_an_embedded_question_counts(self):
+        record = olympiad(questionZh='哪位女神驾驶太阳车？羲和')
+        loaded = [(dossier(), [embed()]), (myths_dossier(), [myths_question(questionRu='Какая богиня правила колесницей Солнца?')])]
+        self.assertTrue(any(e.startswith('money/money-q02') for e in cross_leak_errors([record], loaded)))
+
+
+class CheckDossiersTest(unittest.TestCase):
+    def write(self, directory, name, data):
+        (Path(directory) / name).write_text(json.dumps(data, ensure_ascii=False), encoding='utf-8')
+
+    def test_one_broken_dossier_does_not_hide_the_others(self):
+        with tempfile.TemporaryDirectory() as directory:
+            broken = myths_dossier()
+            broken.pop('title')
+            self.write(directory, 'myths.json', broken)
+            self.write(directory, 'myths-questions.json', [])
+            self.write(directory, 'money.json', dossier())
+            self.write(directory, 'money-questions.json', [question(questionRu='Какой цветок, 荷花, на купюре 2019 года?')])
+            errors, loaded = check_dossiers(Path(directory), [], {})
+        self.assertTrue(any('myths.json' in e for e in errors))
+        self.assertTrue(any('называет свой ответ' in e for e in errors))
+        self.assertEqual(loaded, [])
+
+    def test_draft_embeds_are_checked_against_the_bank(self):
+        with tempfile.TemporaryDirectory() as directory:
+            self.write(directory, 'money.json', dossier())
+            self.write(directory, 'money-questions.json', [embed(status='draft')])
+            errors, loaded = check_dossiers(Path(directory), [olympiad(answer={'optionId': 'o2', 'state': 'verified'})], {})
+        self.assertTrue(any('не совпадает' in e for e in errors))
+        self.assertEqual([d['id'] for d, _ in loaded], ['money'])
+
+    def test_wording_of_an_embedded_record_counts_as_taken(self):
+        [built] = apply_embeds([olympiad()], [(dossier(), [embed()])], {})
+        twin = question(id='money-q04', status='draft', questionRu=built['questionRu'])
+        with tempfile.TemporaryDirectory() as directory:
+            self.write(directory, 'money.json', dossier())
+            self.write(directory, 'money-questions.json', [embed(), twin])
+            errors, _ = check_dossiers(Path(directory), [built], {})
+        self.assertTrue(any('уже есть в базе' in e for e in errors), errors)
+
 
 class LoadDossierTest(unittest.TestCase):
     def write(self, directory, name, text):
@@ -621,6 +724,8 @@ class DossierInBankTest(unittest.TestCase):
                 self.assertEqual(record.get('dossier'), data['id'], item['id'])
                 self.assertEqual(answer['zh'].strip(), question_options(item, data)[0][0]['zh'], item['id'])
                 self.assertTrue(all(o.get('gloss') for o in record['options'] if o is not answer), item['id'])
+                # исходные варианты на месте, набор из таблицы добавлен: сборка повторяема
+                self.assertEqual(embed_record(original_record(record), item, data), (record, []), item['id'])
 
     def test_links_between_dossiers_are_alive(self):
         loaded = {}
@@ -669,9 +774,24 @@ class DossierReportTest(unittest.TestCase):
         self.assertIn(olympiad()['questionRu'], report)
         self.assertIn('  - 月季花 — Китайская роза — цветок на купюре', report)
 
-    def test_embed_before_the_build_says_so(self):
+    def test_draft_embed_shows_the_olympiad_question_and_the_preview(self):
+        report = dossier_report(dossier(), [embed(status='draft')], [olympiad()])
+        self.assertIn(olympiad()['questionRu'], report)
+        self.assertIn('  - 菊花 — Хризантема — цветок на купюре', report)
+        self.assertIn('  - 月季花 — Китайская роза — цветок на купюре', report)
+
+    def test_embed_problems_are_shown_in_the_report(self):
+        report = dossier_report(dossier(), [embed(status='draft')],
+                                [olympiad(explanation={'ru': 'Не 菊花, а лотос.'})])
+        self.assertIn('- Ошибка встраивания: пояснение 2024-25-shk-9 называет неверные варианты', report)
+
+    def test_embed_of_a_missing_record_says_so(self):
         report = dossier_report(dossier(), [embed()])
-        self.assertIn('встраивает 2024-25-shk-9; текст и варианты — после сборки', report)
+        self.assertIn('встраивает 2024-25-shk-9; такой записи нет в банке', report)
+
+    def test_report_shows_links(self):
+        report = dossier_report(space_dossier(), [])
+        self.assertIn('祝融 → myths/figures/fig-zhurong', report)
 
     def test_question_without_check_says_so(self):
         draft = question(status='draft')

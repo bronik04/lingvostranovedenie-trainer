@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -19,6 +20,8 @@ TOPICS = [
     'Культура, традиции и праздники',
 ]
 
+ORIGINAL_OPTION = re.compile(r'o\d+')
+
 
 def _score(text: str, keywords: list[str]) -> int:
     lowered = text.lower()
@@ -30,8 +33,11 @@ def assign_topics(bank: list[dict], rules: dict) -> tuple[list[dict], list[dict]
     for record in bank:
         if record.get('topic') and record.get('topicSource') in {'categories-310', 'authored', 'editorial'}:
             continue
+        # варианты, добавленные встраиванием в досье (id строк таблицы), тему не определяют
+        options = [option for option in record['options']
+                   if 'dossier' not in record or ORIGINAL_OPTION.fullmatch(option['id'])]
         haystack = ' '.join([record['questionRu'], record.get('questionZh') or '']
-                            + [option['zh'] for option in record['options']])
+                            + [option['zh'] for option in options])
         scores = {topic: _score(haystack, keywords) for topic, keywords in rules['topics'].items()}
         best = max(scores, key=lambda topic: (scores[topic], -TOPICS.index(topic)))
         record['topic'] = best if scores[best] else rules['default']

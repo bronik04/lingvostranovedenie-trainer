@@ -26,6 +26,8 @@ LINK = re.compile(r'[a-z][a-z0-9-]*/[a-z][a-z0-9_-]*/[a-z0-9][a-z0-9-]*')
 LINK_FIELDS = ('ref', 'from')
 MIN_SOURCES = 2
 SLUG = re.compile(r'[a-z0-9][a-z0-9-]*')
+# id исходных вариантов записей банка: строка досье не может так называться (встраивание)
+OPTION_ID = re.compile(r'o\d+')
 
 
 def _cell_errors(where: str, cell: object) -> list[str]:
@@ -81,6 +83,8 @@ def _row_errors(name: str, index: int, row: object, table: dict, seen_rows: set[
     errors: list[str] = []
     if not isinstance(row_id, str) or not SLUG.fullmatch(row_id):
         errors.append(f'{where}: нет id строки (латиница, цифры, дефис)')
+    elif OPTION_ID.fullmatch(row_id):
+        errors.append(f'{where}: id строки вида «o5» зарезервирован за вариантами олимпиадных вопросов')
     elif row_id in seen_rows:
         errors.append(f'{where}: повторяющийся id строки')
     else:
@@ -221,6 +225,90 @@ def question_options(question: dict, dossier: dict) -> tuple[list[dict], str]:
             option['gloss'] = cell['gloss'].strip()
         options.append(option)
     return options, answer_id
+
+
+def _candidate_glosses(question: dict, dossier: dict) -> dict[str, str]:
+    glosses: dict[str, str] = {}
+    for _, cell in _candidates(question, dossier):
+        if cell.get('gloss'):
+            glosses.setdefault(cell['zh'].strip(), cell['gloss'].strip())
+    return glosses
+
+
+def _column_glosses(question: dict, dossier: dict) -> dict[str, set[str]]:
+    fact = question['fact']
+    glosses: dict[str, set[str]] = {}
+    for row in dossier['tables'][fact['table']]['rows']:
+        cell = row.get(fact['ask'])
+        if isinstance(cell, dict) and cell.get('gloss'):
+            glosses.setdefault(cell['zh'].strip(), set()).add(cell['gloss'].strip())
+    return glosses
+
+
+def original_record(record: dict) -> dict:
+    """Запись до встраивания. В bank.json после сборки у встроенной записи уже есть добавленные
+    варианты (id строк таблицы) и подписи; исходные варианты — с id вида o1, o2…"""
+    if 'dossier' not in record:
+        return record
+    options = [{key: value for key, value in option.items() if key != 'gloss'}
+               for option in record['options'] if OPTION_ID.fullmatch(option['id'])]
+    return {key: value for key, value in record.items() if key != 'dossier'} | {'options': options}
+
+
+def embed_record(record: dict, question: dict, dossier: dict) -> tuple[dict | None, list[str]]:
+    """Олимпиадная запись со встроенным набором из таблицы и подписями — и что этому мешает.
+
+    Чистая функция: её зовут слой встраивания (scripts/embeds.py), проверка досье и отчёт.
+    """
+    answer_id = record.get('answer', {}).get('optionId')
+    if record.get('answer', {}).get('state') != 'verified' or answer_id is None:
+        return None, [f'ответ {record["id"]} не проверен — встраивать рано']
+    answer = next((option for option in record['options'] if option['id'] == answer_id), None)
+    if answer is None:
+        return None, [f'у {record["id"]} нет варианта-ответа {answer_id}']
+    table_options, _ = question_options(question, dossier)
+    if answer['zh'].strip() != table_options[0]['zh']:
+        return None, [f'ответ {record["id"]} ({answer["zh"].strip()}) не совпадает с ячейкой '
+                      f'({table_options[0]["zh"]})']
+    errors: list[str] = []
+    # подпись исходного варианта — сначала из набора вопроса (where, exclude), иначе из всей
+    # колонки, если у этого текста там одна подпись
+    own = _candidate_glosses(question, dossier)
+    column = _column_glosses(question, dossier)
+    options: list[dict] = []
+    for option in record['options']:
+        option = {key: value for key, value in option.items() if key != 'gloss'}
+        if option['id'] != answer_id:
+            text = option['zh'].strip()
+            gloss = own.get(text)
+            if gloss is None and len(column.get(text, ())) == 1:
+                gloss = next(iter(column[text]))
+            if gloss is not None:
+                option['gloss'] = gloss
+            elif column.get(text):
+                errors.append(f'для варианта {text} в таблице несколько подписей — уточните where или exclude')
+            else:
+                errors.append(f'для варианта {text} нет ячейки с подписью в таблице')
+        options.append(option)
+    ids = {option['id'] for option in options}
+    texts = {option['zh'].strip() for option in options}
+    for added in table_options[1:]:
+        if added['zh'] in texts:
+            continue
+        if added['id'] in ids:
+            errors.append(f'id строки {added["id"]} совпадает с id варианта записи')
+            continue
+        options.append(added)
+        ids.add(added['id'])
+        texts.add(added['zh'])
+    # текст ответа вырезается: неверный вариант может быть частью ответа (荷花 в 荷花王)
+    explanation = record.get('explanation', {}).get('ru', '').replace(answer['zh'].strip(), '')
+    named = [option['zh'].strip() for option in options
+             if option['id'] != answer_id and option['zh'].strip() in explanation]
+    if named:
+        errors.append(f'пояснение {record["id"]} называет неверные варианты {named} — '
+                      'на экране их может не оказаться; правка в editorial.json')
+    return {**record, 'options': options, 'dossier': dossier['id']}, errors
 
 
 def dossier_records(dossier: dict, questions: list[dict]) -> list[dict]:
@@ -486,7 +574,8 @@ def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]]) -
                 record = by_id.get(question['embeds'])
                 if record is None:
                     continue
-                text = record['questionRu']
+                # китайская формулировка ученику тоже видна
+                text = ' '.join([record['questionRu'], record.get('questionZh') or ''])
             else:
                 record = by_id.get(question['id'])
                 text = record['questionRu'] if record else question['questionRu']
@@ -531,8 +620,10 @@ def load_dossier(dossier_path: Path, questions_path: Path,
     if errors:
         raise ValueError(f'некорректное досье {dossier_path.name}:\n - ' + '\n - '.join(errors))
     questions = loads_unique(questions_path.read_text('utf-8'), 'вопросах досье')
+    # свои вопросы досье (дополнения) из прошлой сборки не в счёт; встроенные олимпиадные — в счёт
     errors = validate_questions(questions, dossier, [record for record in bank or []
-                                                     if record.get('dossier') != dossier['id']])
+                                                     if not (record.get('origin') == 'addition'
+                                                             and record.get('dossier') == dossier['id'])])
     if errors:
         raise ValueError(f'некорректные вопросы {questions_path.name}:\n - ' + '\n - '.join(errors))
     return dossier, questions
@@ -545,6 +636,9 @@ def _report_cell(value: object) -> str:
         # русские названия видны автору: по ним сборка ищет подсказки и утечки
         names = value.get('ru', [])
         text = value['zh'] + (f' ({", ".join(names)})' if names else '')
+        link = value.get('ref') or value.get('from')
+        if link:
+            text += f' → {link}'
     else:
         text = ' '.join(str(value).split())
     return text.replace('|', '\\|')
@@ -570,19 +664,25 @@ def dossier_report(dossier: dict, questions: list[dict], bank: list[dict] | None
     for question in questions:
         check = question.get('check') or {}
         header = f'### {question["id"]} · {question["status"]} · проверка: {check.get("verdict", "нет")}'
+        problems: list[str] = []
         if 'embeds' in question:
             record = by_id.get(question['embeds'])
             header += f' · встраивает {question["embeds"]}'
-            if record is not None and record.get('dossier') == dossier['id']:
-                answer = next(o for o in record['options'] if o['id'] == record['answer']['optionId'])
-                wrong = [o for o in record['options'] if o is not answer]
+            preview = None
+            if record is not None:
+                # и черновик, и принятый вопрос автор видит таким, каким его увидит ученик
+                preview, problems = embed_record(original_record(record), question, dossier)
                 text, topic = record['questionRu'], record.get('topic', '')
                 explanation = record.get('explanation', {}).get('ru', '')
             else:
+                text = f'(встраивает {question["embeds"]}; такой записи нет в банке)'
+                topic, explanation = '—', '—'
+            if preview is not None:
+                answer = next(o for o in preview['options'] if o['id'] == preview['answer']['optionId'])
+                wrong = [o for o in preview['options'] if o is not answer]
+            else:
                 options, _ = question_options(question, dossier)
                 answer, wrong = options[0], options[1:]
-                text = f'(встраивает {question["embeds"]}; текст и варианты — после сборки)'
-                topic, explanation = '—', '—'
         else:
             options, _ = question_options(question, dossier)
             answer, wrong = options[0], options[1:]
@@ -594,6 +694,7 @@ def dossier_report(dossier: dict, questions: list[dict], bank: list[dict] | None
                                    for option in wrong),
                   f'- Тема: {topic}',
                   f'- Пояснение: {explanation}']
+        lines += [f'- Ошибка встраивания: {problem}' for problem in problems]
         if check.get('note'):
             lines.append(f'- Замечание проверки: {check["note"]}')
         lines.append('')
@@ -613,20 +714,49 @@ def dossier_paths(directory: Path) -> list[tuple[Path, Path]]:
     return pairs
 
 
+def check_dossiers(directory: Path, bank: list[dict],
+                   glosses: dict[str, dict]) -> tuple[list[str], list[tuple[dict, list[dict]]]]:
+    """Все проверки досье без сборки банка — то, что остановит сборку, видно уже у черновиков.
+
+    Ошибка одного досье не прячет остальные: сборщики и писатель работают параллельно. Свои
+    вопросы досье берутся из файлов (bank.json обновляется только сборкой), встраивания — по
+    записям банка, включая черновики.
+    """
+    from embeds import embed_errors  # embeds импортирует dossiers
+
+    errors: list[str] = []
+    loaded: list[tuple[dict, list[dict]]] = []
+    try:
+        pairs = dossier_paths(directory)
+    except ValueError as error:
+        return [str(error)], []
+    for table_path, questions_path in pairs:
+        try:
+            loaded.append(load_dossier(table_path, questions_path, bank))
+        except ValueError as error:
+            errors.append(str(error))
+    olympiad_view = [record for record in bank if not (record.get('origin') == 'addition' and 'dossier' in record)]
+    errors += validate_links({data['id']: data for data, _ in loaded})
+    errors += cross_leak_errors(olympiad_view, loaded)
+    errors += embed_errors(bank, loaded, glosses, drafts=True)
+    return errors, loaded
+
+
 def main() -> None:
     """Проверка всех досье без сборки банка: её запускают агенты, пока пишут досье."""
+    from glosses import load_glosses
+
     root = Path(__file__).resolve().parents[1]
     bank_path = root / 'data/bank.json'
     bank = json.loads(bank_path.read_text('utf-8')) if bank_path.exists() else []
-    loaded = [load_dossier(table_path, questions_path, bank)
-              for table_path, questions_path in dossier_paths(root / 'data/dossiers')]
-    errors = validate_links({data['id']: data for data, _ in loaded}) + cross_leak_errors(bank, loaded)
-    if errors:
-        raise SystemExit('ошибки досье:\n - ' + '\n - '.join(errors))
+    errors, loaded = check_dossiers(root / 'data/dossiers', bank, load_glosses(root / 'data/review/glosses.json'))
     for data, questions in loaded:
         accepted = sum(1 for question in questions if question['status'] == 'accepted')
         rows = sum(len(table['rows']) for table in data['tables'].values())
-        print(f'{data["id"]}: строк {rows}, вопросов {len(questions)}, принято {accepted} — ошибок нет')
+        print(f'{data["id"]}: строк {rows}, вопросов {len(questions)}, принято {accepted}')
+    if errors:
+        raise SystemExit('ошибки досье:\n - ' + '\n - '.join(errors))
+    print('ошибок нет')
 
 
 if __name__ == '__main__':

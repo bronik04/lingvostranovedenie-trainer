@@ -35,6 +35,14 @@ class TaxonomyTest(unittest.TestCase):
         self.assertEqual(bank[0]['topic'], 'История и государство')
         self.assertEqual(disputed, [])
 
+    def test_options_added_by_a_dossier_do_not_change_the_topic(self):
+        plain = record(questionRu='Кто, согласно мифологии, сотворил мир?', options=[{'id': 'o1', 'zh': '盘古'}])
+        embedded = record(questionRu=plain['questionRu'], dossier='myths',
+                          options=plain['options'] + [{'id': 'fig-liang', 'zh': '梁山伯'}])
+        [before], _ = assign_topics([plain], self.rules)
+        [after], _ = assign_topics([embedded], self.rules)
+        self.assertEqual(after['topic'], before['topic'])
+
     def test_assigns_topic_by_keywords_and_reports_it(self):
         bank, disputed = assign_topics([record()], self.rules)
         self.assertEqual(bank[0]['topic'], 'География и административное устройство')
