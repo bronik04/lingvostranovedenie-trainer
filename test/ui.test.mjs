@@ -431,10 +431,12 @@ test('чэнъюй: раунд с верным и неверным ответо�
   const page = await openPage(t);
   if (!page) return;
   const bank = await page.evaluate(() => CHENGYU_BANK);
-  assert.equal(bank.length, 35);
+  // 35 олимпиадных и принятые составленные
+  assert.equal(bank.filter((r) => r.occurrences).length, 35);
+  assert.ok(bank.length > 35);
   await openChengyu(page);
   assert.equal(await page.locator('#navChengyu').getAttribute('aria-current'), 'page');
-  assert.equal(await page.locator('#cyStatTotal').textContent(), '35');
+  assert.equal(await page.locator('#cyStatTotal').textContent(), String(bank.length));
   await page.locator('input[name="cySize"][value="5"]').check();
   await page.locator('#cyStartButton').click();
   await page.locator('#cyQuizView').waitFor();
@@ -445,7 +447,8 @@ test('чэнъюй: раунд с верным и неверным ответо�
   for (let n = 0; n < 5; n += 1) {
     const record = await currentChengyu(page, bank);
     assert.ok(record, 'задание на экране не найдено в банке');
-    assert.match(await page.locator('#cySourceLabel').textContent(), /^ВсОШ 20\d\d\/\d\d · .+ этап · задание \d+$/);
+    assert.match(await page.locator('#cySourceLabel').textContent(),
+      record.occurrences ? /^ВсОШ 20\d\d\/\d\d · .+ этап · задание \d+$/ : /^Составленное задание$/);
     const correct = n !== 0;
     const optionId = correct ? record.answer : record.options.find((o) => o.id !== record.answer).id;
     // клавиатура: буква по видимому порядку
@@ -473,8 +476,8 @@ test('чэнъюй: раунд с верным и неверным ответо�
 
   await page.locator('#cyOpenReference').click();
   await page.locator('#cyReferenceView').waitFor();
-  assert.equal(await page.locator('#cyReferenceList article').count(), 35);
-  await page.locator('#cyReferenceSearch').fill('bei gong');
+  assert.equal(await page.locator('#cyReferenceList article').count(), bank.length);
+  await page.locator('#cyReferenceSearch').fill('bei gong she');
   assert.equal(await page.locator('#cyReferenceList article').count(), 1);
   const row = page.locator('#cyReferenceList article').first();
   await row.locator('summary').click();

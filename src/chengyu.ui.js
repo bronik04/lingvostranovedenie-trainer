@@ -366,6 +366,7 @@ function cyRenderReference() {
       `<span class="row-topic">${escapeHtml(CY_GROUPS[record.group])}</span>`,
       done ? '<span class="tag"><span lang="zh-Hans" aria-hidden="true">●</span> решено</span>' : '',
       record.disputedKey ? '<span class="tag warn">спорный ключ</span>' : '',
+      record.origin === 'authored' ? '<span class="tag origin">составлено, сверено со словарями</span>' : '',
       '</div>',
       `<h3 class="cy-row-head"><span class="cy-row-han" lang="zh-Hans">${escapeHtml(record.chengyu)}</span>`,
       `<span class="cy-row-pinyin" lang="zh-Hans">${escapeHtml(record.pinyin)}</span></h3>`,
