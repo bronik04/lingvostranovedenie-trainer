@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-  Исходник картинки превью ссылок (og-image.jpg, 1200×630).
+  Исходник картинки превью ссылок (og-image.jpg, 1200×630), в стиле системы «Тушь и киноварь».
   Чисел здесь сознательно нет: они устаревали при каждом пополнении банка.
   Пересобрать: python3 scripts/render_og_image.py (нужен установленный Google Chrome).
 -->
@@ -8,37 +8,44 @@
 <head>
 <meta charset="utf-8">
 <style>
+  @font-face { font-family: 'Cormorant Garamond'; font-weight: 700; src: url(../src/fonts/cormorant-garamond-700-cyrillic.woff2) format('woff2'); unicode-range: U+0400-045F; }
+  @font-face { font-family: 'Cormorant Garamond'; font-weight: 700; src: url(../src/fonts/cormorant-garamond-700-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+2000-206F; }
+  @font-face { font-family: 'Onest'; font-weight: 400 700; src: url(../src/fonts/onest-cyrillic.woff2) format('woff2'); unicode-range: U+0400-045F; }
+  @font-face { font-family: 'Onest'; font-weight: 400 700; src: url(../src/fonts/onest-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+2000-206F; }
   html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
   body {
     position: relative;
-    font-family: -apple-system, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
-    background:
-      radial-gradient(ellipse 720px 520px at 78% 12%, rgba(52, 96, 190, 0.55), transparent 70%),
-      linear-gradient(160deg, #1d2d58 0%, #16223f 55%, #121b33 100%);
-    color: #fff;
+    box-sizing: border-box;
+    padding: 72px 80px;
+    background: #faf4e8;
+    color: #141110;
+    font-family: 'Onest', sans-serif;
   }
-  .glyph {
-    position: absolute; right: -70px; top: 30px;
-    font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif;
-    font-size: 520px; font-weight: 600; line-height: 1;
-    color: rgba(255, 255, 255, 0.075);
+  .frame { position: absolute; inset: 40px; border: 1px solid #141110; }
+  .seal {
+    position: absolute; right: 120px; top: 120px;
+    display: flex; align-items: center; justify-content: center;
+    width: 240px; height: 240px; border-radius: 16px;
+    background: #b8352a; color: #faf4e8;
+    font-family: 'Songti SC', 'Noto Serif SC', serif; font-size: 170px; font-weight: 700; line-height: 1;
   }
-  .content { position: absolute; left: 80px; top: 128px; right: 80px; }
-  .eyebrow { font-size: 25px; font-weight: 800; letter-spacing: 0.16em; color: #6f9bff; }
-  h1 { margin: 26px 0 0; font-size: 96px; font-weight: 800; letter-spacing: -0.02em; line-height: 1; }
-  .subtitle { margin-top: 30px; font-size: 33px; color: #c9d3ea; }
-  .accent { margin-top: 96px; font-size: 29px; font-weight: 700; color: #9db8ff; }
-  .note { margin-top: 18px; font-size: 24px; color: #8f9bb7; }
+  .content { position: absolute; left: 120px; top: 120px; right: 420px; }
+  .eyebrow { font-size: 24px; font-weight: 600; letter-spacing: 0.14em; color: #b8352a; text-transform: uppercase; }
+  h1 { margin: 28px 0 0; font-family: 'Cormorant Garamond', serif; font-size: 104px; font-weight: 700; line-height: 0.95; }
+  .rule { position: absolute; left: 120px; right: 120px; top: 420px; border-top: 1px solid #141110; }
+  .subtitle { position: absolute; left: 120px; right: 120px; top: 448px; font-size: 32px; }
+  .note { position: absolute; left: 120px; right: 120px; top: 500px; font-size: 26px; color: #6b5d4d; }
 </style>
 </head>
 <body>
-  <div class="glyph">中</div>
+  <div class="frame"></div>
+  <div class="seal">中</div>
   <div class="content">
-    <div class="eyebrow">КИТАЙСКИЙ ЯЗЫК · ТРЕНАЖЁР</div>
-    <h1>Лингвострановедение</h1>
-    <div class="subtitle">Вопрос — по-русски, варианты — по-китайски</div>
-    <div class="accent">Задания ВсОШ и проверенные дополнения</div>
-    <div class="note">У каждого ответа — пояснение и ссылка на источник</div>
+    <div class="eyebrow">Китайский язык · тренажёр ВсОШ</div>
+    <h1>Лингво&shy;страноведение</h1>
   </div>
+  <div class="rule"></div>
+  <div class="subtitle">Вопрос — по-русски, варианты — по-китайски</div>
+  <div class="note">У каждого ответа — пояснение и ссылка на источник</div>
 </body>
 </html>

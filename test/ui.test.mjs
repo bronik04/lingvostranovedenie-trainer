@@ -92,8 +92,7 @@ async function answer(page, record, correct) {
 }
 
 async function startRound(page, size) {
-  await page.locator('#settingsPanel > summary').click();
-  await page.locator('#roundSize').selectOption(String(size));
+  await page.locator(`input[name="roundSize"][value="${size}"]`).check();
   await page.locator('#startButton').click();
   await page.locator('#quizView').waitFor();
 }
@@ -186,7 +185,6 @@ test('фильтр по теме считает вопросы темы', LIMIT,
   const bank = await bankOf(page);
   const topic = 'История и государство';
   const expected = eligible(bank, { ...ALL, topics: [topic] }, {}).length;
-  await page.locator('#settingsPanel > summary').click();
   await page.locator('#topicControls label', { hasText: topic }).locator('input').check();
   assert.equal(await page.locator('#eligibleNotice').textContent(), `Под фильтры подходит вопросов: ${expected}.`);
   assert.equal(await page.locator('#topicControls label', { hasText: topic }).locator('.topic-progress').textContent(),
