@@ -7,6 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
+from dossiers import original_record  # noqa: E402
 from merges import apply_merges, load_merges, validate_merges
 
 
@@ -350,7 +351,8 @@ class MergesInBankTest(unittest.TestCase):
         for keep_id in pools:
             record = self.bank[keep_id]
             texts = [o['zh'] for o in record['options']]
-            self.assertEqual(len(texts), expected[keep_id], keep_id)
+            # встроенная в досье запись получает ещё и варианты из таблицы — считаем свои
+            self.assertEqual(len(original_record(record)['options']), expected[keep_id], keep_id)
             self.assertEqual(len(set(texts)), len(texts), keep_id)
             self.assertNotIn('factGroup', record, keep_id)
             wrong = [o['zh'] for o in record['options'] if o['id'] != record['answer']['optionId']]
