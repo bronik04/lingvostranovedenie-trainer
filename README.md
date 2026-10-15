@@ -55,6 +55,17 @@ Cormorant Garamond и Onest (SIL OFL 1.1, тексты лицензий рядо
 `fact-groups.json` (метки «один факт», раунд берёт из группы один вопрос) → `glosses.json`
 (подписи к неверным вариантам).
 
+## Раздел «Чэнъюй»
+
+Задание ЛГ-теста «Подберите аналог фразеологизму в русском языке»: 35 олимпиадных заданий
+(`data/chengyu/olympiad.json`) и составленные черновики (`data/chengyu/drafts.json`, в раздел
+идут только принятые). Бланки и ответы олимпиады — `sources/chengyu/` со своим манифестом.
+Проверка данных — при сборке; сверка с PDF (нужен poppler):
+
+    python3 scripts/chengyu.py --sources
+
+Спецификация: `docs/superpowers/specs/2026-10-15-chengyu-mode-design.md`.
+
 ## Документы
 
 Спецификация: `docs/superpowers/specs/2026-09-18-lingvostranovedenie-trainer-design.md`

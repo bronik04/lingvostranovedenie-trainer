@@ -1,0 +1,62 @@
+/* Раздел «Чэнъюй» (src/chengyu.ui.js). Как и quiz.css — только семантические токены
+   системы «Тушь и киноварь», поэтому тёмная тема работает без правок. */
+
+body[data-view='cy-quiz'] .site-nav { display: none; }
+body[data-view='cy-quiz'] .site-header { padding: var(--s-4) 0; }
+
+/* четыре шага «как не попасться на ложного друга» */
+.cy-steps { display: grid; gap: var(--s-3); max-width: 46em; margin: var(--s-4) 0 0; padding-left: 1.4em; }
+.cy-steps li { padding-left: var(--s-1); font-size: var(--t-size-lead); }
+.cy-steps li::marker { color: var(--accent-on-ground); font-weight: var(--t-weight-semibold); }
+
+/* чэнъюй в клетках 田字格: рамка тушью, крест пунктиром тихой линией */
+.cy-prompt { font-size: var(--t-size-lead); font-weight: var(--t-weight-medium); color: var(--text-soft); }
+.cy-tz { display: flex; justify-content: flex-start; padding-left: var(--border-hair); }
+.cy-tz span {
+  display: grid;
+  place-items: center;
+  width: min(104px, 21vw);
+  aspect-ratio: 1;
+  margin-left: calc(-1 * var(--border-hair));
+  border: var(--border-hair) solid var(--line-on-ground);
+  background:
+    repeating-linear-gradient(90deg, var(--line-quiet) 0 4px, transparent 4px 8px) center / 100% 1px no-repeat,
+    repeating-linear-gradient(0deg, var(--line-quiet) 0 4px, transparent 4px 8px) center / 1px 100% no-repeat,
+    var(--surface-raised);
+  color: var(--text-on-ground);
+  font-family: var(--font-han);
+  font-size: min(60px, 12.5vw);
+  font-weight: var(--t-weight-bold);
+  line-height: 1;
+}
+.cy-pinyin { margin: 0; color: var(--text-on-ground-muted); font-size: 20px; }
+.cy-proverb {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(32px, 5vw, 44px);
+  font-weight: var(--t-weight-bold);
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+/* русские варианты длиннее китайских: одна колонка, текстовый шрифт */
+.cy-options { grid-template-columns: 1fr; }
+.cy-options .option { min-height: 64px; }
+.cy-option-ru { font-family: var(--font-text); font-size: var(--t-size-body); font-weight: var(--t-weight-medium); line-height: 1.35; }
+
+/* разбор после ответа и в справочнике */
+.cy-facts { display: grid; grid-template-columns: max-content minmax(0, 1fr); max-width: 46em; margin: 0; }
+.cy-facts dt, .cy-facts dd { margin: 0; padding: var(--s-2) 0; border-top: var(--border-hair) solid var(--line-on-paper); }
+.cy-facts dt { padding-right: var(--s-4); color: var(--text-on-ground-muted); font-size: var(--t-size-caption); }
+@media (max-width: 600px) {
+  .cy-facts { grid-template-columns: 1fr; }
+  .cy-facts dd { padding-top: 0; border-top: 0; }
+}
+
+.cy-mistake-han { font-size: 24px; font-weight: var(--t-weight-bold); }
+.cy-row-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s-1) var(--s-3); }
+.cy-row-han { font-size: 28px; font-weight: var(--t-weight-bold); }
+.cy-row-pinyin { color: var(--text-on-ground-muted); font-size: var(--t-size-caption); font-weight: var(--t-weight-regular); }
+.cy-options-list { margin: 0; padding-left: 0; list-style: none; font-size: var(--t-size-caption); }
+.cy-options-list li + li { margin-top: 4px; }
+.cy-options-list .cy-key { color: var(--state-correct-on-ground); font-weight: var(--t-weight-semibold); }
