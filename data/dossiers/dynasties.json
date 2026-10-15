@@ -1,0 +1,28 @@
+{
+  "id": "dynasties",
+  "title": "Династии и правители",
+  "tables": {
+    "dynasties": {
+      "columns": {
+        "name": "zh",
+        "chao": "zh",
+        "dai": "zh",
+        "country": "zh",
+        "founder": "zh",
+        "capital": "zh",
+        "people": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    },
+    "rulers": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "dynasty": "zh",
+        "role": "ru"
+      },
+      "rows": []
+    }
+  }
+}
