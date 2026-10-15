@@ -150,6 +150,15 @@ main { display: block; }
   font-weight: var(--t-weight-semibold);
   cursor: pointer;
 }
+.more > summary, .progress-tools > summary { list-style: none; gap: var(--s-2); }
+.more > summary::-webkit-details-marker, .progress-tools > summary::-webkit-details-marker { display: none; }
+/* у summary с display: flex браузер не рисует треугольник — знак раскрытия свой */
+.more > summary::after, .progress-tools > summary::after {
+  content: '▾';
+  color: var(--text-on-ground-muted);
+  transition: transform var(--duration-quick) var(--ease-out);
+}
+.more[open] > summary::after, .progress-tools[open] > summary::after { transform: rotate(180deg); }
 .progress-tools { border-top: 0; margin-top: var(--s-5); }
 
 .field-row { display: flex; flex-wrap: wrap; gap: var(--s-4); padding: var(--s-2) 0 var(--s-1); }
@@ -304,6 +313,8 @@ select, .search {
   background: var(--surface-raised);
 }
 .feedback p { margin: 0; }
+/* фокус на разбор ставится программно — для читалки экрана, рамка глазу не нужна */
+.feedback:focus { outline: none; }
 /* печать 对/错 — вид, а не текст: читалка экрана получает слово «Верно» или «Неверно» */
 .verdict {
   display: grid;
@@ -324,8 +335,9 @@ select, .search {
   font-weight: var(--t-weight-bold);
   line-height: 1;
 }
-.feedback.good .verdict::before { content: '对' / ''; background: var(--fill-correct); color: var(--on-correct); }
+.feedback.good .verdict::before { content: '对'; content: '对' / ''; background: var(--fill-correct); color: var(--on-correct); }
 .feedback.bad .verdict::before {
+  content: '错';
   content: '错' / '';
   border: var(--border-solid) solid var(--state-incorrect);
   background: var(--surface-ground);
@@ -455,6 +467,7 @@ select, .search {
 .row-panel p { margin: 0; }
 .row-answer { display: flex; align-items: center; gap: var(--s-3); font-weight: var(--t-weight-semibold); }
 .row-answer::before {
+  content: '对';
   content: '对' / '';
   display: inline-flex;
   flex: none;

@@ -89,6 +89,7 @@ async function answer(page, record, correct) {
     ? record.answer.optionId
     : shown.find((id) => id !== record.answer.optionId);
   await page.locator(`#options button[data-option-id="${optionId}"]`).click();
+  return optionId;
 }
 
 async function startRound(page, size) {
@@ -118,6 +119,7 @@ test('раунд: верный и неверный ответ, повтор ош
   assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 1 из 10');
 
   let wrongId = null;
+  let wrongPick = null;
   let questions = 0;
   while (await page.locator('#quizView').isVisible()) {
     const record = await currentRecord(page, bank);
@@ -129,8 +131,15 @@ test('раунд: верный и неверный ответ, повтор ош
     assert.equal(await page.locator('#retryPill').isVisible(), isRepeat, `плашка «повтор ошибки» на вопросе ${questions}`);
     // ошибаемся ровно один раз — на втором вопросе; повтор этой ошибки отвечаем верно
     const correct = questions !== 2;
-    if (!correct) wrongId = record.id;
-    await answer(page, record, correct);
+    const picked = await answer(page, record, correct);
+    if (!correct) {
+      wrongId = record.id;
+      wrongPick = record.options.find((o) => o.id === picked).zh;
+    }
+    // ход раунда — кружки до конца раунда, хотя повтор ошибки удлиняет его до 11
+    assert.equal(await page.locator('#progressSteps').isVisible(), true, `кружки хода на вопросе ${questions}`);
+    assert.equal(await page.locator('#progressSteps li.ink-step--wrong').count(), questions >= 2 ? 1 : 0);
+    assert.equal(await page.locator('#progressSteps li.ink-step--correct').count(), questions - (questions >= 2 ? 1 : 0));
     const feedback = page.locator('#feedback');
     assert.match(await feedback.getAttribute('class'), correct ? /\bgood\b/ : /\bbad\b/);
     assert.match(await feedback.textContent(), correct ? /^Верно/ : /^Неверно.*Правильный ответ/);
@@ -143,6 +152,16 @@ test('раунд: верный и неверный ответ, повтор ош
   assert.equal(await page.locator('#finalScore').textContent(), '9 / 10');
   assert.doesNotMatch(await page.locator('#resultText').textContent(), /без ошибок/);
   assert.equal(await page.locator('#repeatMistakes').textContent(), 'Повторить ошибки раунда (1)');
+  // в итогах — ошибка с ответом ученика и верным ответом, и одна главная кнопка
+  const wrongRecord = bank.find((r) => r.id === wrongId);
+  const mistakes = page.locator('#mistakeList li');
+  assert.equal(await mistakes.count(), 1);
+  const mistake = await mistakes.first().textContent();
+  assert.ok(mistake.includes(wrongRecord.questionRu), mistake);
+  assert.ok(mistake.includes(`✕ ${wrongPick}`), mistake);
+  const right = wrongRecord.options.find((o) => o.id === wrongRecord.answer.optionId).zh;
+  assert.ok(mistake.includes(`✓ ${right}`), mistake);
+  assert.equal(await page.locator('#resultsView .ink-btn--primary:visible').count(), 1);
 
   await page.locator('#repeatMistakes').click();
   assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 1 из 1');

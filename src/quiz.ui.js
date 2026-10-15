@@ -287,6 +287,9 @@ function renderSetup() {
       ? 'Нет вопросов для повторения по текущим фильтрам.'
       : 'Под текущие фильтры не подходит ни один вопрос — снимите часть ограничений.';
   $('startButton').disabled = pool.length === 0;
+  // главная кнопка на экране одна: без подходящих вопросов это «Начать обычный раунд»
+  $('startButton').classList.toggle('ink-btn--primary', pool.length !== 0);
+  $('startButton').classList.toggle('ink-btn--secondary', pool.length === 0);
   $('emptyActions').hidden = pool.length !== 0;
   renderBankCount();
 }
@@ -314,6 +317,9 @@ function startRoundWith(round) {
   state.wrongIds = [];
   state.wrongPicks = {};
   state.marks = [];
+  // вид хода выбирается по исходной длине: вставленные повторы ошибок удлиняют раунд,
+  // и кружки не должны посреди раунда смениться полосой
+  state.stepDots = round.length <= MAX_STEP_DOTS;
   state.position = 0;
   state.correct = 0;
   state.initialRoundLength = round.length;
@@ -374,7 +380,7 @@ function renderQuestion() {
 /** Ход раунда: кружки ✓/✕ до MAX_STEP_DOTS вопросов, дальше — полоса. */
 function renderProgress() {
   const total = state.round.length;
-  const dots = total <= MAX_STEP_DOTS;
+  const dots = state.stepDots;
   $('progressSteps').hidden = !dots;
   $('progressTrack').hidden = dots;
   $('scoreLabel').textContent = `верно ${state.correct}`;
@@ -389,7 +395,7 @@ function renderProgress() {
     const current = index === state.position;
     step.className = ['ink-step', mark === true ? 'ink-step--correct' : '', mark === false ? 'ink-step--wrong' : '',
       current ? 'ink-step--current' : ''].filter(Boolean).join(' ');
-    step.lang = 'zh-Hans';
+    if (mark !== undefined) step.lang = 'zh-Hans';
     step.textContent = mark === true ? '✓' : mark === false ? '✕' : current ? String(index + 1) : '';
     step.setAttribute('aria-label', `${index + 1}${mark === true ? ' — верно' : mark === false ? ' — ошибка' : ''}${
       current ? ', текущий' : ''}`);
@@ -659,6 +665,8 @@ document.addEventListener('keydown', (event) => {
   }
 
   if (typing) return;
+  // на кнопке, ссылке или summary Enter и пробел делают своё дело, а не глобальное
+  const onControl = Boolean(document.activeElement?.closest?.('a, button, summary'));
 
   if (state.view === 'database' && event.key === '/') {
     event.preventDefault();
@@ -666,7 +674,7 @@ document.addEventListener('keydown', (event) => {
     return;
   }
 
-  if (state.view === 'setup' && event.key === 'Enter' && !$('startButton').disabled) {
+  if (state.view === 'setup' && event.key === 'Enter' && !onControl && !$('startButton').disabled) {
     event.preventDefault();
     startRound();
     return;
@@ -685,7 +693,7 @@ document.addEventListener('keydown', (event) => {
     return;
   }
 
-  if ((event.key === 'Enter' || event.key === ' ') && state.answered) {
+  if ((event.key === 'Enter' || event.key === ' ') && state.answered && !onControl) {
     event.preventDefault();
     nextQuestion();
   }
