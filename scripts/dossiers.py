@@ -560,14 +560,27 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
     return errors
 
 
+def _answer_place(question: dict, dossier: dict) -> tuple[str, set[str]]:
+    """Строка ответа (`досье/таблица/строка`) и строки других досье, с которыми она связана ref/from."""
+    fact = question['fact']
+    row_id, _ = answer_cell(question, dossier)
+    row = _rows(dossier, fact['table'])[row_id]
+    links = {cell[field] for cell in row.values() if isinstance(cell, dict)
+             for field in LINK_FIELDS if field in cell}
+    return f'{dossier["id"]}/{fact["table"]}/{row_id}', links
+
+
 def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]]) -> list[str]:
     """Утечки по всем вопросам всех досье сразу — по окончательным текстам.
 
     Текст встроенного вопроса есть только в банке; текст своего вопроса берётся из банка, если
     запись уже там (с правками editorial.json), иначе — из файла вопросов (черновик).
+    Решение автора 2026-10-15: мостик — не утечка (аппарат, связанный ссылкой с мифом, может
+    называть его в вопросе о себе), а между досье одиночные иероглифы (唐, 秦) не ищутся — они
+    стоят внутри других слов (唐僧, 秦始皇).
     """
     by_id = {record['id']: record for record in bank}
-    entries: list[tuple[str, str, dict]] = []
+    entries: list[tuple[str, str, str, dict, str, set[str]]] = []
     for dossier, questions in loaded:
         for question in questions:
             if 'embeds' in question:
@@ -579,17 +592,20 @@ def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]]) -
             else:
                 record = by_id.get(question['id'])
                 text = record['questionRu'] if record else question['questionRu']
-            entries.append((f'{dossier["id"]}/{question["id"]}', text, answer_cell(question, dossier)[1]))
+            place, links = _answer_place(question, dossier)
+            entries.append((dossier['id'], f'{dossier["id"]}/{question["id"]}', text,
+                            answer_cell(question, dossier)[1], place, links))
     errors: list[str] = []
-    for label, text, _ in entries:
-        for other, _, answer in entries:
-            if other != label:
-                names = _mentions(text, answer)
-                if names:
-                    errors.append(f'{label}: текст называет ответ вопроса {other}: {names}')
+    for dossier_id, label, text, _, place, links in entries:
+        for other_dossier, other, _, answer, other_place, other_links in entries:
+            if other == label or other_place in links or place in other_links:
+                continue
+            if other_dossier != dossier_id and len(answer['zh'].strip()) == 1:
+                answer = {**answer, 'zh': ''}
+            names = _mentions(text, answer)
+            if names:
+                errors.append(f'{label}: текст называет ответ вопроса {other}: {names}')
     return errors
-
-
 
 def _wording_errors(questions: list[dict], bank: list[dict]) -> list[str]:
     """Повторы и обрезки формулировок — между вопросами досье и с банком, как в сборке."""

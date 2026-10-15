@@ -598,6 +598,42 @@ class CrossLeakChineseTextTest(unittest.TestCase):
         self.assertTrue(any(e.startswith('money/money-q02') for e in cross_leak_errors([record], loaded)))
 
 
+def launches():
+    mission = lambda row_id, zh, year, namesake: plain_row(row_id, name=cell(zh, gloss=f'Аппарат {zh}'),
+                                                           year=cell(year, gloss=f'{year} — запуск'), namesake=namesake)
+    return {'id': 'space', 'title': 'Космос', 'tables': {'missions': {
+        'columns': {'name': 'zh', 'year': 'zh', 'namesake': 'zh'}, 'rows': [
+            mission('mis-change4', '嫦娥四号', '2018 年', {'zh': '嫦娥', 'ref': 'myths/figures/fig-change', 'gloss': 'Богиня Луны'}),
+            mission('mis-zhurong', '祝融号', '2020 年', {'zh': '祝融', 'ref': 'myths/figures/fig-zhurong', 'gloss': 'Бог огня'}),
+        ]}}}
+
+
+def change_question():
+    return myths_question(fact={'table': 'figures', 'row': 'fig-change', 'ask': 'name'},
+                          questionRu='Какая богиня, по преданию, улетела на Луну?')
+
+
+class CrossLeakBridgeTest(unittest.TestCase):
+    def test_naming_a_craft_after_its_myth_is_not_a_leak(self):
+        year = {'id': 'space-q01', 'status': 'draft', 'fact': {'table': 'missions', 'row': 'mis-change4', 'ask': 'year'},
+                'questionRu': 'В каком году запущен лунный аппарат 嫦娥四号?'}
+        errors = cross_leak_errors([], [(myths_dossier(), [change_question()]), (launches(), [year])])
+        self.assertEqual(errors, [])
+
+    def test_naming_the_myth_in_a_question_about_another_craft_is_still_a_leak(self):
+        year = {'id': 'space-q02', 'status': 'draft', 'fact': {'table': 'missions', 'row': 'mis-zhurong', 'ask': 'year'},
+                'questionRu': 'В каком году запущен марсоход 祝融号 — младший брат станций 嫦娥?'}
+        errors = cross_leak_errors([], [(myths_dossier(), [change_question()]), (launches(), [year])])
+        self.assertTrue(any(e.startswith('space/space-q02: текст называет ответ вопроса myths/myths-q01') for e in errors))
+
+    def test_single_character_answer_of_another_dossier_is_not_searched(self):
+        era = question(id='money-q05', fact={'table': 'banknotes', 'row': 'cny-20', 'ask': 'flower'})
+        data = dossier()
+        row(data, 'cny-20')['flower'] = cell('唐', gloss='Эпоха Тан')
+        monk = myths_question(questionRu='Кто сопровождал монаха 唐僧 в романе — по преданию?')
+        self.assertEqual(cross_leak_errors([], [(data, [era]), (myths_dossier(), [monk])]), [])
+
+
 class CheckDossiersTest(unittest.TestCase):
     def write(self, directory, name, data):
         (Path(directory) / name).write_text(json.dumps(data, ensure_ascii=False), encoding='utf-8')
