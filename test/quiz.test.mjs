@@ -581,3 +581,16 @@ test('«не» в формулировке ещё не значит, что бе
     + 'новоселье и день рождения?'), false);
   assert.equal(needs('Какой праздник неразрывно связан с луной?'), false);
 });
+
+test('«верно или нет»: исключённый вариант не предлагается никогда', () => {
+  const plateau = record('a', {
+    options: [
+      { id: 'o1', zh: '3000 米以上', trueFalse: false }, { id: 'o2', zh: '4500 米以上' },
+      { id: 'o3', zh: '1500 米以上', trueFalse: false }, { id: 'o4', zh: '6000 米以上' },
+    ],
+  });
+  const offered = [0, 0.34, 0.5, 0.67, 0.99].map((x) => quiz.trueFalseStatement(plateau, sequence(0.5, x)).optionId);
+  assert.deepEqual(new Set(offered), new Set(['o4']));
+  // правильный вариант исключением не затрагивается
+  assert.equal(quiz.trueFalseStatement(plateau, sequence(0.1)).optionId, 'o2');
+});

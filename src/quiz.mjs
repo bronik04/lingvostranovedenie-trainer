@@ -297,12 +297,14 @@ export function optionGlosses(record) {
 }
 
 // «Верно или нет»: с вероятностью ½ — правильный вариант, иначе любой неверный,
-// у записи с общим набором — из всего набора.
+// у записи с общим набором — из всего набора. Неверный, но верный как отдельное
+// утверждение вариант («выше 3000 м» при ответе «выше 4500 м») помечен
+// trueFalse: false (data/review/truefalse.json) и здесь не предлагается.
 export function trueFalseStatement(record, random = Math.random) {
   const right = record.options.find((option) => option.id === record.answer.optionId);
   if (!right) throw new Error(`у вопроса нет правильного варианта: ${record.id}`);
   const isTrue = random() < 0.5;
-  const wrong = record.options.filter((option) => option !== right);
+  const wrong = record.options.filter((option) => option !== right && option.trueFalse !== false);
   const option = isTrue ? right : wrong[Math.floor(random() * wrong.length)];
   return { optionId: option.id, zh: option.zh, isTrue };
 }
