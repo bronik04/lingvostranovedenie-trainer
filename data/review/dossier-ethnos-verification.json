@@ -1,0 +1,1888 @@
+{
+  "dossier": "ethnos",
+  "scope": "tables-only",
+  "collectionDate": "2026-10-16",
+  "resolvedAt": "2026-10-17",
+  "questions": 0,
+  "rowCount": 78,
+  "countryCounts": {
+    "中国": 54,
+    "俄罗斯": 24
+  },
+  "correctionRows": 13,
+  "rows": [
+    {
+      "id": "ppl-cn-han",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Этноним 汉族, китайский язык/иероглифы и речные районы соответствуют профилю NEAC; стандарт путунхуа отделён от регионального разнообразия. Песни 青海汉族民间小调 подтверждены для восточного Цинхая; регион не объявлен границами расселения.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/201806/1065965.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/12782/",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-zhuang",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "广西 как основной регион, 壮语 с северной и южной группами и латинская основа проекта 1955 года прямо подтверждены. Тяньцинь — сочетание пения, игры и танца; полный текст карточки подтверждает юго-запад Гуанси. Исторические квадратные знаки не объявлены современной единственной системой.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/201806/1066832.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/art/detail/id/23464.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-hui",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "汉语 соответствует современному общему языку в профиле; Нинся — район компактного проживания при широком расселении. 小儿锦 прямо описан как запись китайского арабскими буквами, возникшая при религиозном обучении. Оговорка об историческом и ограниченном употреблении обязательна и уже присутствует; шаньхуаэр подтверждён отдельно.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/huiz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/20073.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-manchu",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Ляонин подтверждён среди основных областей. 满语 дан как исторический традиционный язык; источник говорит о широком переходе на китайский. 满文 правильно привязан к официальному употреблению при Цин. Вырезание 医巫闾山满族剪纸 подтверждено отдельной карточкой, без обобщения на каждого маньчжура.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/manz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/13927.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-uyghur",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Синьцзян и 维吾尔语 подтверждены; описание современной 维吾尔文 опирается на арабскую графику и позднее чагатайское письмо. Мукам действительно объединяет пение, танец и инструментальную музыку. Исторические системы не смешаны с современной.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/wwez/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/12597/",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-miao",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Гуйчжоу подтверждён; три крупные группы 苗语 и три латинские системы описаны в источнике. Строка не сводит письмо к единому алфавиту всех мяо. Восковое крашение и сине-белая местная традиция 珙县 подтверждены; промежуточная машинная тревога о порядке цитаты снята после поиска повторного вхождения 新中国成立后.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/mz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/14302.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-yi",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "凉山 — крупная область компактного проживания, язык имеет шесть названных источником групп. Письмо 彝文 ограничено в русском пояснении нормативным сычуаньским проектом, утверждённым в 1980 году. Варганная традиция привязана к 布拖, что соответствует карточке наследия.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/yz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/12740/",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-tujia",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "武陵山区, местами сохраняющийся 土家语 и длительное употребление 汉文 подтверждены профилем. Традиция ткачества и 西兰卡普 подтверждены полным сохранённым ответом официальной карточки. Нет ложного утверждения, что каждый туцзя знает традиционный язык или что экспериментальных алфавитов не существует.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/tjz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/14282.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [
+        "https://www.ihchina.cn/project_details/14282.html — дословность сверена по полному сохранённому web-ответу сборщика; независимый повторный ответ недоступен/не содержит нужного окна."
+      ],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-tibetan",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Тибетский АР указан как один из регионов; профиль называет также Цинхай, Ганьсу, Сычуань и Юньнань. 藏语 с тремя региональными группами и 藏文 начала VII века соответствуют источнику. 藏娘唐卡 документирована для бассейна 通天河; она не подменяет всё тибетское искусство.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/zz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/art/detail/id/23712.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-mongol",
+      "table": "peoples",
+      "originalVerdict": "fix",
+      "resolution": "applied",
+      "correctedFields": [
+        "sources"
+      ],
+      "note": "内蒙古, 蒙古语 и традиционное письмо на уйгурской основе подтверждены; существование ойратской разновидности и тодо отражено корректно. Протяжная песня и её связь с пастушеской жизнью/обрядами верны. Требуется переставить два фрагмента цитаты ihchina в порядке исходной страницы.",
+      "issues": [
+        "Восстановлен исходный порядок выдержек в составной цитате; значения ячеек не менялись."
+      ],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/mgz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/art/detail/id/11753.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [
+        "https://www.ihchina.cn/art/detail/id/11753.html — дословность сверена по полному сохранённому web-ответу сборщика; независимый повторный ответ недоступен/не содержит нужного окна."
+      ],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-dong",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "黔东南, 侗语 и южная основа латинского проекта 1958 года подтверждены. Чэцзян в уезде Жунцзян указан в источнике как основа произношения. В карточке 大歌 действительно описаны хоровая традиция и обычно два голосовых слоя.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/dz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/12467",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [
+        "https://www.ihchina.cn/project_details/12467 — дословность сверена по полному сохранённому web-ответу сборщика; независимый повторный ответ недоступен/не содержит нужного окна."
+      ],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-buyi",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Гуйчжоу, 布依语 с тремя территориальными группами и латинский проект 1956 года с двумя пересмотрами подтверждены. 八音坐唱 является песенно-повествовательным искусством буи юго-запада Гуйчжоу; название не выдумано.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/byz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/news_1_details/11337.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [
+        "https://www.ihchina.cn/news_1_details/11337.html — дословность сверена по полному сохранённому web-ответу сборщика; независимый повторный ответ недоступен/не содержит нужного окна."
+      ],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-yao",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Мянь указан только одним из языков категории 瑶族. Латинский 瑶文方案 основан на 勉语, разработан в 1982 году и согласован в 1984 году. Танец с длинным барабаном подтверждён в Гуандуне, Гуанси и Хунани. Категория народа не приравнена к одному языку.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/yaoz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/art/detail/id/13041.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [
+        "https://www.ihchina.cn/art/detail/id/13041.html — дословность сверена по полному сохранённому web-ответу сборщика; независимый повторный ответ недоступен/не содержит нужного окна."
+      ],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-bai",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Юньнань, 白语 и 新白文 после пересмотра 1982 года соответствуют профилю. Новое латинское письмо отделено от исторических систем на китайской основе. 扎染 в 周城 близ Дали подтверждён отдельным материалом ihchina.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/bz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/news_1_details/11139.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-korean",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "朝鲜族 корректно относится к корейцам Китая, не к гражданству. 延边 — крупнейший район компактного проживания по профилю. 朝鲜语/朝鲜文 и образование слоговых блоков подтверждены. 象帽舞 действительно форма 农乐舞 с вращением ленты на головном уборе.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/cxz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/art/detail/id/12962.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-hani",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Регион 红河, 哈尼语 с существенно различающимися группами и латинское письмо 1957 года подтверждены профилем. В описании не расширено пробное внедрение на всех хани. Многоголосная традиция документирована в нескольких деревнях 红河县 и связана с террасным рисоводством.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/hnz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/12471/",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-li",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Хайнань, 黎语 и проект латинского письма 1957 года подтверждены; оговорки о китайском языке и письме присутствуют. Название 黎族传统纺染织绣技艺 и составляющие текстильного комплекса подтверждены официальной карточкой.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/lz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/20053.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-dai",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Сишуанбаньна указан одним из регионов. 傣语 имеет несколько региональных разновидностей, а 傣泐文/傣那文 относятся соответственно к Сишуанбаньна/Дэхуну; старые и реформированные системы разделены. Танец павлина документирован в нескольких районах Юньнани.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/daiz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/12970",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [
+        "https://www.ihchina.cn/project_details/12970 — дословность сверена по полному сохранённому web-ответу сборщика; независимый повторный ответ недоступен/не содержит нужного окна."
+      ],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-she",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Регион Фуцзянь/Чжэцзян подтверждён. Ячейка 畲话 намеренно относится только к Тайшуню: муниципальный источник называет её местной китайской речью. Она не отождествлена с отдельным языком 畲语 всех шэ. 汉文 и сохранение преданий/песен подтверждены дополнительным полным сохранённым официальным текстом; народные песни подтверждены ihchina.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/sz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/12418.html",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ts.gov.cn/col/col1229782101/index.html",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.gdwsw.gov.cn/wsgdlnfw/content/post_22099.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [
+        "https://www.ts.gov.cn/col/col1229782101/index.html — дословность сверена по полному сохранённому web-ответу сборщика; независимый повторный ответ недоступен/не содержит нужного окна.",
+        "https://www.gdwsw.gov.cn/wsgdlnfw/content/post_22099.html — дословность сверена по полному сохранённому web-ответу сборщика; независимый повторный ответ недоступен/не содержит нужного окна."
+      ]
+    },
+    {
+      "id": "ppl-cn-lisu",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Нуцзян, 傈僳语 с местными разновидностями и 老傈僳文 подтверждены профилем. Старое письмо не объявлено единственной системой лису. Карточка 民歌 прямо перечисляет 木刮、摆时、优叶, соответствующие русским подписям.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/ssz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/12431.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-naxi",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Лицзян, 纳西语 с восточными и западными разновидностями подтверждены. 东巴图画文字 явно связано с жрецами и религиозными книгами; оно не приписано повседневной грамотности всех наси. Упоминание 格巴 и самостоятельная традиция 东巴画 соответствуют источникам.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/nxz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/13912",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-shui",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Саньду — один из основных регионов. 水语 и 水族古文字 подтверждены. 描述ание 水书 как знаков и книг верований/народных знаний, с китайским письмом в повседневности, соответствует профилю. 马尾绣 использует конский волос; указание других народов также содержится в карточке.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/shuiz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/art/detail/id/13992.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [
+        "https://www.ihchina.cn/art/detail/id/13992.html — дословность сверена по полному сохранённому web-ответу сборщика; независимый повторный ответ недоступен/не содержит нужного окна."
+      ],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-evenki",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Строка ограничена эвенками Китая. Внутренняя Монголия, 鄂温克语 и региональное употребление 蒙古文/汉文 прямо подтверждены. Оно не переносится на всех эвенков мира. Берестяное ремесло документировано в 根河 и не объявлено исключительным.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/ewkz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/art/detail/id/14422.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [
+        "https://www.ihchina.cn/art/detail/id/14422.html — дословность сверена по полному сохранённому web-ответу сборщика; независимый повторный ответ недоступен/не содержит нужного окна."
+      ],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-oroqen",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "内蒙古/黑龙江, традиционный 鄂伦春语 и нынешнее широкое использование китайского письма подтверждены. Самостоятельный орокенский алфавит не выдуман. Берестяные изделия документированы в общей карточке нескольких северных народов.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/elcz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/14420",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "ppl-cn-hezhen",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Хэйлунцзян/Трёхречье и 赫哲语 подтверждены официальным и академическим профилями. 伊玛堪 — устное повествование на языке хэчжэ с речью и пением. Пустая writing является корректным подтверждённым пробелом; кириллицу родственных российских групп переносить сюда нельзя.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/hzz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/directory_details/11896",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://nmlr.muc.edu.cn/info/1119/2642.htm",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-cn-xibe",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Чапчал — один из регионов сибо; языковые различия восточных и западных групп оговорены. 锡伯语 и письмо, реформированное из маньчжурского в 1947 году, подтверждены. 贝伦舞 действительно импровизационный народный танец.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/xbz/gk.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/13088/",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-ru-russians",
+      "table": "peoples",
+      "originalVerdict": "fix",
+      "resolution": "applied",
+      "correctedFields": [
+        "sources"
+      ],
+      "note": "Широкий ареал русских подтверждён заново полученной страницей Культура.РФ, русский язык — ЧелГУ, 俄罗斯族 — МИД КНР. Поморская резьба корректно остаётся локальным примером Беломорья. Для кириллицы подобрана и прочитана академическая замена: Л.П.Жуковская, издание Института русского языка РАН 2020 года, с. 29. Даты реформ из исторического абзаца не перенесены в ячейку.",
+      "issues": [
+        "source-replacement: применить проверенную замену источника в peoples-corrections.json; значения ячеек подтверждены и не меняются."
+      ],
+      "sourcesChecked": [
+        {
+          "url": "https://www.mfa.gov.cn/gjhdq_676201/gj_676203/oz_678770/1206_679110/1206x0_679112/",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.culture.ru/s/narody-rossii/",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://library.csu.ru/ru/news/181/",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://ruslang.ru/doc/books/Zhukovskaya-2020-izbr.pdf",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://collection.ethnomuseum.ru/entity/ARTICLE/2469",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "ppl-ru-tatars",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "鞑靼族 и Татарстан подтверждены китайским консульством. Поволжско-татарский язык и современная кириллица — ИЯз РАН. Кожаная мозаика — первичный материал Национального музея Татарстана. Этноним не подменён китайской категорией 塔塔尔族; регион и владение языком не представлены исключительными.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://kazan.china-consulate.gov.cn/lqgk/202012/t20201202_3820574.htm",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://minlang.iling-ran.ru/lang/tatarskiy-yazyk-povolzhsko-tatarskiy-yazyk",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://tatmuseum.ru/news/istoriya-i-sovremennaya-moda-vystavka-nit-obedinyaet/",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "ppl-ru-bashkirs",
+      "table": "peoples",
+      "originalVerdict": "fix",
+      "resolution": "applied",
+      "correctedFields": [
+        "sources"
+      ],
+      "note": "Этноним/Башкортостан, язык/кириллица и курай как продольная открытая флейта подтверждены независимыми официальными/академическими источниками. Heritage по-китайски является честным описательным переводом. Требуется вернуть порядок цитаты о курае к исходному: описание инструмента стоит перед его значением для башкир.",
+      "issues": [
+        "Восстановлен исходный порядок выдержек в составной цитате; значения ячеек не менялись."
+      ],
+      "sourcesChecked": [
+        {
+          "url": "https://kazan.china-consulate.gov.cn/lqgk/202012/t20201202_3820574.htm",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://minlang.iling-ran.ru/lang/bashkirskiy-yazyk",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://ar.culture.ru/ru/subject/kuray-1",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-ru-chuvash",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "楚瓦什族/楚瓦什共和国, чувашский язык, современная кириллица и вышивка на женских рубахах подтверждены тремя независимыми источниками. Яковлев и русская графическая основа указаны в полном тексте библиотеки; строка не приравнивает этнос к владению языком.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://kazan.china-consulate.gov.cn/lqgk/202012/t20201202_3820574.htm",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://nasledie.nbchr.ru/etnos/chuvashi/",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://collection.ethnomuseum.ru/entity/ARTICLE/2438",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-ru-buryats",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "布里亚特人 прямо встречается в академической китайской публикации, а 格斯尔 — в первичном отчёте Пекинского университета о бурятской традиции. Бурятия как характерный регион и современная кириллица подтверждены отдельно. Эпос не присвоен исключительно бурятам.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.cssn.cn/skgz/bwyc/202303/t20230330_5617042.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://sfl.pku.edu.cn/xyxw/27wyx169358.htm",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://minlang.iling-ran.ru/lang/buryatskiy-yazyk",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://etno.pribaikal.ru/главная/буряты/buryatski_yazik/",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-ru-sakha",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "萨哈族/雅库特人 и Республика Саха подтверждены китайским академическим текстом; язык, самоназвание саха, кириллица и эпос олонхо — ИЯз РАН. Родительский проверяющий заново открыл MCT: строка 60 прямо содержит 雅库特共和国传统文艺形式“奥隆霍”. Китайское написание и культурный факт подтверждены; источник сохраняется.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.cssn.cn/dkzgxp/zgxp_gjshkxzzzwb/2021nd4q_131908/202208/t20220822_5480110.shtml",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://minlang.iling-ran.ru/lang/yakutskiy",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.mct.gov.cn/whzx/bnsj/dwwhllj/201508/t20150812_772934.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "ppl-ru-tuvans",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "图瓦人/图瓦共和国/图瓦语 и 呼麦 подтверждены Центральным университетом национальностей. Тыва и современная кириллица — ИЯз РАН, хоомей — Культура.РФ. Этнос не смешан с гражданством или исключительным владением традицией.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://edu.muc.edu.cn/info/1039/1675.htm",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://minlang.iling-ran.ru/lang/tuvinskiy-yazyk",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://www.culture.ru/s/god-kulturnogo-naslediya/kulturnyj-turizm/tyva/",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-ru-kalmyks",
+      "table": "peoples",
+      "originalVerdict": "fix",
+      "resolution": "applied",
+      "correctedFields": [
+        "sources"
+      ],
+      "note": "Калмыкия, калмыцкий язык и современная кириллица подтверждены ИЯз РАН, традиция 江格尔 — первичным материалом Пекинского университета. Точная китайская форма 卡尔梅克人 заново прочитана в первичном репортаже Пекинского университета; предложена замена источника этнонима. Эпос не объявляется исключительно калмыцким.",
+      "issues": [
+        "source-replacement: применить проверенную замену источника в peoples-corrections.json; значения ячеек подтверждены и не меняются."
+      ],
+      "sourcesChecked": [
+        {
+          "url": "https://news.pku.edu.cn/xwzh/129-108251.htm",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://minlang.iling-ran.ru/lang/kalmyckiy-yazyk",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://sfl.pku.edu.cn/xyxw/27wyx169358.htm",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-ru-karelians",
+      "table": "peoples",
+      "originalVerdict": "fix",
+      "resolution": "applied",
+      "correctedFields": [
+        "sources"
+      ],
+      "note": "卡累利阿人/Карелия подтверждены китайским документом ООН; наречия и современный латинский алфавит Республики Карелия — ИЯз РАН. Вместо корпуса предложена прочитанная академическая статья В.П.Мироновой в «Кижском вестнике»: она прямо документирует народную поэзию карелов, исполнителей рун и рукописные/звуковые записи. Наследие остаётся устной поэтической традицией, не письменными рунами.",
+      "issues": [
+        "source-replacement: применить проверенную замену источника в peoples-corrections.json; значения ячеек подтверждены и не меняются."
+      ],
+      "sourcesChecked": [
+        {
+          "url": "https://documents.un.org/api/symbol/access?l=zh&s=E%2FC.19%2F2021%2F8&t=pdf",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://minlang.iling-ran.ru/lang/sobstvenno-karelskoe-narechie-karelskogo-yazyka",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://site.kizhi.karelia.ru/library/vestnik-17/1850.html",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "ppl-ru-komi",
+      "table": "peoples",
+      "originalVerdict": "fix",
+      "resolution": "applied",
+      "correctedFields": [
+        "sources"
+      ],
+      "note": "Коми-зырянский контекст, регион и современная кириллица подтверждены ИЯз РАН, узорное вязание — собственным материалом РЭМ. Точная форма 科米人 найдена в уже открытом китайском документе ООН E/C.19/2021/8, с. 6; предложена замена источника этнонима. Коми-пермяки не слиты с коми-зырянами.",
+      "issues": [
+        "source-replacement: применить проверенную замену источника в peoples-corrections.json; значения ячеек подтверждены и не меняются."
+      ],
+      "sourcesChecked": [
+        {
+          "url": "https://documents.un.org/api/symbol/access?l=zh&s=E%2FC.19%2F2021%2F8&t=pdf",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://minlang.iling-ran.ru/lang/komi-zyryanskiy-yazyk",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://collection.ethnomuseum.ru/entity/ARTICLE/2339",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "ppl-ru-udmurts",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "乌德穆尔特族/Удмуртия подтверждены консульством; язык и современная кириллица — ИЯз РАН; узорное многоремизное ткачество и особенно северные/центральные группы — первичным материалом Республиканского дома народного творчества.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://kazan.china-consulate.gov.cn/lqgk/202012/t20201202_3820574.htm",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://minlang.iling-ran.ru/lang/udmurtskiy-yazyk",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://rdntur.ru/cultural-heritage/tehnika-mnogoremiznogo-tkachestva-udmurtskaya-respublika/",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "ppl-ru-chechens",
+      "table": "peoples",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "车臣族 допустимо раскрывает перечисление МИД КНР с общим 等族; Чечня, чеченский язык и современная официальная кириллица подтверждены ИЯз РАН. Ловзар как прежде всего свадебное торжество, а также другие поводы, подтверждён региональным официальным каталогом. Китайская подпись является описательным переводом, а не выдуманным собственным именем.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.mfa.gov.cn/gjhdq_676201/gj_676203/oz_678770/1206_679110/1206x0_679112/",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://minlang.iling-ran.ru/lang/chechenskiy-yazyk",
+          "method": "independent-review"
+        },
+        {
+          "url": "https://konknchr.ru/ловзар/",
+          "method": "independent-review"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-ru-matryoshka",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Китайская форма, Сергиев Посад и вложенное устройство подтверждены 人民日报 и независимой музейной карточкой. People обозначает профессиональную общность.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://paper.people.com.cn/rmrb/html/2023-03/28/nw.D110000renmrb_20230328_3-18.htm",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://ar.culture.ru/ru/subject/matreshka-5",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-ru-khokhloma",
+      "table": "heritage",
+      "originalVerdict": "fix",
+      "resolution": "applied",
+      "correctedFields": [
+        "sources"
+      ],
+      "note": "Официальная китайская форма подтверждена перечнем Минкоммерции; независимый российский источник поддерживает географию, сообщество мастеров и технику.",
+      "issues": [
+        "Уточнить фактический заголовок публикации Минкоммерции: это пресс-конференция о выставке, в заголовке нет 例行."
+      ],
+      "sourcesChecked": [
+        {
+          "url": "https://interview.mofcom.gov.cn/detail/202605/ff80808198065e18019e203ddf8368ff.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://www.culture.ru/objects/2872/tradicionnaya-tekhnologiya-khokhlomskoi-rospisi-po-derevu",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-ru-gzhel",
+      "table": "heritage",
+      "originalVerdict": "fix",
+      "resolution": "applied",
+      "correctedFields": [
+        "sources"
+      ],
+      "note": "Официальная китайская форма подтверждена перечнем Минкоммерции; независимый российский источник поддерживает географию, сообщество мастеров и технику.",
+      "issues": [
+        "Уточнить фактический заголовок публикации Минкоммерции: это пресс-конференция о выставке, в заголовке нет 例行."
+      ],
+      "sourcesChecked": [
+        {
+          "url": "https://interview.mofcom.gov.cn/detail/202605/ff80808198065e18019e203ddf8368ff.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://welcome.mosreg.ru/stories/gzhelskiy_farfor",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://www.culture.ru/materials/139105/zagadki-uzorov-russkikh-rospisei",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-ru-zhostovo",
+      "table": "heritage",
+      "originalVerdict": "fix",
+      "resolution": "applied",
+      "correctedFields": [
+        "sources"
+      ],
+      "note": "Официальная китайская форма подтверждена перечнем Минкоммерции; независимый российский источник поддерживает географию, сообщество мастеров и технику.",
+      "issues": [
+        "Уточнить фактический заголовок публикации Минкоммерции: это пресс-конференция о выставке, в заголовке нет 例行."
+      ],
+      "sourcesChecked": [
+        {
+          "url": "https://interview.mofcom.gov.cn/detail/202605/ff80808198065e18019e203ddf8368ff.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://www.culture.ru/s/slovo-dnya/zhostovskaya-rospis/",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-ru-yelets-lace",
+      "table": "heritage",
+      "originalVerdict": "fix",
+      "resolution": "applied",
+      "correctedFields": [
+        "sources",
+        "feature"
+      ],
+      "note": "Официальная китайская форма подтверждена перечнем Минкоммерции; независимый российский источник поддерживает географию, сообщество мастеров и технику.",
+      "issues": [
+        "Уточнить фактический заголовок публикации Минкоммерции: это пресс-конференция о выставке, в заголовке нет 例行.",
+        "木制 добавляет материал коклюшек, прямо не указанный в процитированных текстах; убрать из китайской ячейки либо дать отдельный источник."
+      ],
+      "sourcesChecked": [
+        {
+          "url": "https://interview.mofcom.gov.cn/detail/202605/ff80808198065e18019e203ddf8368ff.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://www.culture.ru/s/slovo-dnya/yeletskoe-kruzhevo/",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://ar.culture.ru/ru/subject/kruzhevo-kray-elochki",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-ru-gus-crystal",
+      "table": "heritage",
+      "originalVerdict": "fix",
+      "resolution": "applied",
+      "correctedFields": [
+        "sources",
+        "feature"
+      ],
+      "note": "Официальная китайская форма подтверждена перечнем Минкоммерции; независимый российский источник поддерживает географию, сообщество мастеров и технику.",
+      "issues": [
+        "Уточнить фактический заголовок публикации Минкоммерции: это пресс-конференция о выставке, в заголовке нет 例行.",
+        "Ограничение признака музейными изделиями должно быть выражено и в feature, а не только в description."
+      ],
+      "sourcesChecked": [
+        {
+          "url": "https://interview.mofcom.gov.cn/detail/202605/ff80808198065e18019e203ddf8368ff.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://vladmuseum.ru/upload/iblock/d32/7.%20%D0%A3%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B2%20%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8%20%D0%9C%D1%83%D0%B7%D0%B5%D1%8F%20%D0%A5%D1%80%D1%83%D1%81%D1%82%D0%B0%D0%BB%D1%8F.pdf",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://www.culture.ru/events/6354781/vystavka-grani-k-270-letiyu-gusevskogo-khrustalnogo-zavoda?institute=22204",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-ru-olonkho",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Название奥隆霍и якутская эпическая традиция подтверждены китайским материалом; российская комиссия ЮНЕСКО самостоятельно описывает речевые и песенные части в Якутии. Добавленная академическая статья CSSN подтверждает китайскую форму萨哈族в контексте Республики Саха; источники не являются зеркалами одной публикации.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/luntan_details/21958.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://unesco.ru/en/news/48-olonkho/",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://www.cssn.cn/dkzgxp/zgxp_gjshkxzzzwb/2021nd4q_131908/202208/t20220822_5480110.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-ru-tuva-khoomei",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Название 图瓦呼麦 засвидетельствовано академическим обзором лекции; регион и одновременность основного тона с призвуками подтверждены Культура.РФ.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://rw.xacom.edu.cn/2021/0712/c431a20730/page.htm",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://www.culture.ru/s/god-kulturnogo-naslediya/kulturnyj-turizm/tyva/",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-ru-kalmyk-jangar",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Академическая конференция Пекинского университета прямо использует форму卡尔梅克《江格尔》и обсуждает российские и монгольские материалы. Независимый полевой отчёт РАН в научном журнале подтверждает калмыцкий героический эпос, сказительскую/песенную передачу и Калмыкию.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://sfl.pku.edu.cn/xyxw/27wyx169358.htm",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://www.tuva.asia/journal/issue_12/4205-basangova2.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-ru-balalaika",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Китайское название употреблено Центральным оркестром народной музыки КНР; три струны и треугольный корпус прямо указаны в музейной карточке. Инструмент не назван танцем.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.cnto.net.cn/ccno/ycyg/202603/cb6ba15549424ec190bd40a7fa02ecb2.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://ar.culture.ru/ru/subject/balalayka-9",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-ru-gusli",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "人民网/新华社 подтверждает китайское название и русскую традицию; Культура.РФ прямо перечисляет былины и плясовые наигрыши. People — носители музыкальной традиции.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://world.people.com.cn/n1/2024/1022/c1002-40344389.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://www.culture.ru/materials/69792/vspominaem-zabytuyu-muzyku-vmeste-s-sergeem-plotnikovym",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-ru-spoon-dance",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Официальный китайский репортаж прямо называет пляску勺子舞и описывает одновременное отбивание ритма деревянными ложками. Российская публикация подтверждает ударный инструмент. People обозначает исполнителей, а не отдельный этнос; происхождение всех ложечных традиций от одного народа не утверждается.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.lf.gov.cn/Item/114053.aspx",
+          "checkedAt": "2026-10-16",
+          "method": "full indexed page returned by search_service; direct403"
+        },
+        {
+          "url": "https://www.culture.ru/events/1049802/chas-istorii-derevyannye-lozhki",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        }
+      ],
+      "limitations": [
+        "Прямое повторное открытие lf.gov.cn вернуло403; прочитан полный индексированный текст этой же публикации, возвращённый search_service. Ранее сборщик прочитал118строк. Повторная HTTP-доступность не подтверждена."
+      ],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-urtiin-duu",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Название, монголы, Внутренняя Монголия и протяжная мелодия с малым числом слов прямо подтверждены реестром. Второй источник — самостоятельный обзор культурной жизни Силингола, включая традицию и совместную монголо-китайскую номинацию; не копия IHChina.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/12410.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/c100898/201210/1098166.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent-review-fetch"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-cn-mongol-khoomei",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Реестр прямо описывает непрерывный низкий тон с верхней мелодией и Внутреннюю Монголию. Академический разбор лекции Сианьской консерватории независимо различает монгольское и тувинское хоомей и объясняет многоголосие одного исполнителя.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/12414.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://rw.xacom.edu.cn/2021/0712/c431a20730/page.htm",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-dong-song",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "В реестре подтверждены Цунцзян, Жунцзян, обычные два регистра и многоголосное пение. Там же явно отмечены формы с инструментами; description аккуратно сохраняет это исключение. Книга《中国少数民族》на сайте 国家民委 независимо описывает хоровые партии.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/12467",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open",
+          "openedUrl": "https://www.ihchina.cn/project_details/12467/"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/dz/fsxg.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-muqam",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Китайское название обозначает весь комплекс мукама. Реестр прямо включает пение, танец, инструменты и разные школы, а двенадцать мукамов выделяет как одну форму. Независимая авторская статья Тао Цзин из университета на сайте 国家民委 подтверждает структуру.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/12595.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/c100593/201211/1095471.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-cn-manas",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Реестр указывает Кызылсу, киргизов и Манаса с семью поколениями потомков; самостоятельное интервью исследователя на сайте 国家民委 — восемь поколений вместе с Манасом. Противоречия в подсчёте нет; внекитайское бытование подтверждено реестром.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/12227",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/c103391/202306/1165068.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-cn-gesar",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Точное имя, многоэтничная принадлежность, Тибетское нагорье и героическая сказительская форма подтверждены реестром. Вторая публикация — отдельное введение в издательский проект《格萨尔文库》, а не зеркало реестровой записи; перечислены другие народы и страны.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/12239/",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open",
+          "openedUrl": "https://www.ihchina.cn/project_details/12239.html"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/c102793/201906/1134022.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-yimakan",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Реестр поддерживает название, хэчжэ, Хэйлунцзян и сочетание речи с пением. Независимый репортаж описывает обучение с чередованием рассказа и пения и необходимость языка хэчжэ. Изменчивый статус ЮНЕСКО в строке не указан.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/13663/",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/xwzx/202605/1189503.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-tibetan-opera",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Обе публикации описывают барабан, тарелки и маски в традиционной площадной форме; современная инструментовка явно отделена. Реестровая страница黄南藏戏содержит также общий обзор藏戏; этнографическая книга подтверждает Тибет и Цинхай.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/20120.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/201806/1066631.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-cn-korean-farmers-dance",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Точное китайское название, корейцы Китая, северо-восточный ареал и танец под гонги и барабаны прямо подтверждены официальной страницей ЮНЕСКО-проекта и независимой этнографической справкой.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/nongyuewu.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/cxz/fsxg.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-cn-peacock-dance",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Реестр подтверждает дай, Жуйли, подражание павлину, одиночные и парные формы. Независимая этнографическая справка описывает подражательные танцы и место павлиньего танца в культуре дай. Один регион не представлен как полный ареал.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/12970",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/daiz/fsxg.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-asi-dance",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Реестровая карточка носителя подтверждает точное название, народ и, Милэ и большие/малые саньсяни. Самостоятельная страница города Милэ прямо определяет аси как彝族阿细人и описывает пятидольный метр. Отдельный этнос не создан.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/ccr_detail/1485/",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.hhml.gov.cn/info/2901/457692.htm",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-cn-haicai-tune",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Название, Шипин, нису как группа народа и и комплексная вокальная сюита с соло, диалогом и хором подтверждены реестром. Второй источник — самостоятельная публикация управления культуры Хунхэ, описывающая ту же местную традицию.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/12481/",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.hh.gov.cn/info/9021/793442.htm",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-aytis",
+      "table": "heritage",
+      "originalVerdict": "fix",
+      "resolution": "applied",
+      "correctedFields": [
+        "description"
+      ],
+      "note": "Реестр подтверждает точное название и перечисленные районы; независимая авторская публикация 中国民族报 прямо определяет акынскую импровизацию под домбру. Feature относится к акынской форме.",
+      "issues": [
+        "Приложенные две страницы не подтверждают фразу о бытовании за пределами Китая. Убрать её из description либо добавить самостоятельный источник."
+      ],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/13667.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/c103536/202606/1191262.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-baisha-music",
+      "table": "heritage",
+      "originalVerdict": "fix",
+      "resolution": "applied",
+      "correctedFields": [
+        "description"
+      ],
+      "note": "Название, наси, Лицзян и сочетание инструментальной музыки, пения и танца прямо подтверждены реестром и независимой этнографической книгой. Исторические версии происхождения источником не разрешены и в строке не утверждаются.",
+      "issues": [
+        "Убрать неясную кальку «Белопесчаная музыка» из description:白沙—часть собственного названия, надёжнее использовать байша сиюэ."
+      ],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/12788.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/nxz/fsxg.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-manchu-papercut",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Официальное реестровое название и религиозно-бытовая тематика совпадают с IHChina. Правительственная публикация Ляонина — самостоятельное сообщение об учебнике, подтверждающее Бэйчжэнь. Принадлежность маньчжурам не запрещает участие мастеров других народов.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/13927.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://mzw.ln.gov.cn/mzw/xxgk/dtxw/zhyw/9DEDDB47B7494107B62DA83EE8DFABE5/index.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-miao-batik",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Региональная форма Гунсяня и сине-белая гамма подтверждены реестром; независимая энциклопедическая справка 国家民委 описывает восковой резерв и современные цветные разновидности. Общая и региональная формы разграничены.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/14302.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent-parent-cache"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/mz/fswh.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-tujia-brocade",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Реестр прямо разделяет силанькапу и пояса и относит обратное ткачество к силанькапу. Этнографическая справка из《中国少数民族》независимо подтверждает туцзяскую традицию. География — бассейн Юшуй в Сянси.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/14282.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/tjz/fsxg.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-zangniang-thangka",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Название школы, тибетская принадлежность, бассейн Тунтяньхэ и Юйшу подтверждены реестром. Вторая публикация — самостоятельный репортаж 中国民族报 на сайте Союза писателей КНР; строгие пропорции и насыщенные цвета подтверждены обеими.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/art/detail/id/23712.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.chinawriter.com.cn/n1/2016/0808/c404098-28619429.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-bai-tiedye",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Расположение Чжоучэна и процесс связывания/крашения/снятия нитей подтверждены этнографическим исследованием 董秀团, опубликованным IHChina со ссылкой на 中国民俗网, и независимым репортажем 中国民族报. Это не две копии IHChina.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/news_1_details/11139.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/xwzx/202609/1194153.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-li-textiles",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Официальное название перечисляет все четыре операции; реестр и независимая энциклопедическая справка поддерживают Хайнань и разнообразие текстильных техник ли. Нет утверждения об одинаковых навыках всех представителей.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/20053.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/lz/fsxg.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-dongba-painting",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Название, наси, Гучэн и Юйлун, три перечисленные формы прямо подтверждены реестром. Независимая книга《中国少数民族》на сайте 国家民委 описывает те же формы; перечень в feature не назван исчерпывающим.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/13912",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/nxz/fsxg.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-shui-horsehair",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Реестр подробно описывает сердцевину из конского волоса, обвитую шёлком, и контурную вышивку. Вторая публикация — самостоятельное сообщение управления 黔南州民宗局; регион и связь с шуй подтверждены. Не утверждается исключительность самого материала.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/art/detail/id/13992.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/xwzx/202304/1162837.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-evenki-birchbark",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "В реестре точно указаны эвенкийская форма, Гэньхэ, размягчение, раскрой и сшивание. Независимая справка《中国少数民族》подтверждает берестяные ремёсла эвенков; другие берестяные традиции присутствуют в самом реестре.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/14422.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/ewkz/fsxg.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-hezhe-fishskin",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Реестр поддерживает название, хэчжэ, Цзецзинькоу/Тунцзян и этапы обработки кожи. Второй источник — независимый репортаж о живой передаче традиций с описанием мастерской рыбьей кожи. В строку не перенесены устаревшие утверждения реестра о единственном живом мастере.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/14425.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/xwzx/202605/1189503.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-zhuang-brocade",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Реестр подтверждает точное название, чжуанов и Цзинси; самостоятельный фоторепортаж 新华社 прямо описывает хлопковую основу, шёлковый уток и通经断纬. Русская подпись передаёт прерывный уток.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/14288.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.xinhuanet.com/photo/20260527/bb34c2e08031494cbfbf4cce260c0a05/c.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-cn-dai-brocade",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Название, народ и Сишуанбаньна подтверждены реестром; белый фон с отдельным или повторным узором дан как характерный принцип. Вторая публикация — независимое сообщение центра Минкультуры о культурной программе, а не перепечатка реестра.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/14495.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.mct.gov.cn/whzx/zsdw/whbmzmjwyfzzx/201811/t20181106_835773.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "id": "her-cn-xiangxi-miao-embroidery",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Точное реестровое название, Хунань/Сянси и техника随手绣 подтверждены. Feature прямо называет частный способ, description перечисляет альтернативы; он не приписан всем изделиям. Второй источник — независимая этнографическая книга на сайте 国家民委.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/art/detail/id/23718.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/mz/fswh.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    },
+    {
+      "id": "her-cn-miao-silversmith",
+      "table": "heritage",
+      "originalVerdict": "ok",
+      "resolution": "confirmed",
+      "correctedFields": [],
+      "note": "Реестр прямо называет Фэнхуан и Лэйшань и перечисляет литьё, ковку, пайку, плетение. Вторая этнографическая публикация независимо подтверждает серебряные ремёсла мяо. Исключительность навыков не заявлена.",
+      "issues": [],
+      "sourcesChecked": [
+        {
+          "url": "https://www.ihchina.cn/project_details/14330.html",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        },
+        {
+          "url": "https://www.neac.gov.cn/seac/ztzl/mz/fswh.shtml",
+          "checkedAt": "2026-10-16",
+          "method": "independent search_service open"
+        }
+      ],
+      "limitations": [],
+      "quoteExcerpted": true
+    }
+  ],
+  "quotationExcerpting": {
+    "changedCitations": 79,
+    "rows": 56,
+    "maxQuotedWordsPerSource": 25,
+    "factsUnchanged": true
+  }
+}
