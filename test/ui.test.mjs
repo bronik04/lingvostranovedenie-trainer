@@ -480,6 +480,13 @@ test('вспомни сам: кнопка «Показать ответ» с к�
 test('вспомни сам: подсказка показывает варианты, верный ответ засчитан как «неточно»', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
+  // все вопросы уже в третьей коробке: «неточно» оставит третью, «вспомнил сам» дал бы четвёртую
+  await page.evaluate(() => localStorage.setItem('lingvo-trainer:v1', JSON.stringify({
+    version: 1,
+    progress: Object.fromEntries(QUESTION_BANK.map((r) => [r.id,
+      { attempts: 3, correct: 3, completed: true, lastCorrect: true, box: 3, dueAt: 0 }])),
+  })));
+  await page.reload();
   await keepRecallQuestions(page, false);
   const bank = await bankOf(page);
   await pickFormat(page, 'Вспомни сам');
@@ -490,8 +497,54 @@ test('вспомни сам: подсказка показывает вариа�
   const record = await currentRecord(page, bank);
   await answer(page, record, true);
   const progress = await page.evaluate(() => JSON.parse(localStorage.getItem('lingvo-trainer:v1')).progress);
-  assert.equal(progress[record.id].box, 1);
+  assert.equal(progress[record.id].box, 3, 'с подсказкой коробка не растёт');
   assert.equal(progress[record.id].lastCorrect, true);
+  assert.deepEqual(page.errors, []);
+});
+
+test('вспомни сам: подсказка клавиш следует за стадией вопроса', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  const hint = () => page.locator('#quizHint').textContent();
+  assert.match(await hint(), /Пробел — показать ответ/);
+  assert.doesNotMatch(await hint(), /оценка|вспомнил/, 'до открытия ответа оценивать нечего');
+  await page.keyboard.press('Space');
+  assert.match(await hint(), /1 — вспомнил сам/);
+  assert.match(await hint(), /Enter — дальше/);
+  await page.keyboard.press('Digit1');
+  await page.keyboard.press('Enter');
+  await page.keyboard.press('KeyV');
+  assert.match(await hint(), /1–4 или A–D — ответить/, 'с подсказкой цифры выбирают вариант');
+  assert.deepEqual(page.errors, []);
+});
+
+test('вспомни сам: вопрос «из перечисленного» подсказывает клавиши выбора, а не оценки', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, true);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  assert.match(await page.locator('#quizHint').textContent(), /1–4 или A–D — ответить/);
+  assert.deepEqual(page.errors, []);
+});
+
+test('вспомни сам: фокус не теряется ни после подсказки, ни после оценки', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  await page.locator('#showHint').click();
+  assert.equal(await page.evaluate(() => document.activeElement === document.querySelector('#options button')), true,
+    'после «Не помню» фокус — на первом варианте');
+  await page.keyboard.press('Escape');
+  await startRound(page, 5);
+  await page.keyboard.press('Space');
+  await page.locator('#recallRate button[data-outcome="correct"]').click();
+  assert.equal(await page.evaluate(() => document.activeElement?.id), 'nextButton', 'после оценки фокус — на «Следующий вопрос»');
   assert.deepEqual(page.errors, []);
 });
 

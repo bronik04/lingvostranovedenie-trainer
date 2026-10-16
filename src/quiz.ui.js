@@ -29,10 +29,13 @@ const FORMAT_COPY = {
   recall: 'Сначала вспомните ответ сами, варианты — только как подсказка.',
   truefalse: 'Вопрос и один предложенный ответ: правильный он или нет?',
 };
+// подсказка клавиш — по стадии вопроса: во «Вспомни сам» цифры то оценивают, то выбирают вариант
 const QUIZ_HINTS = {
   choice: '1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда',
-  recall: 'Пробел — показать ответ · V — варианты · 1 / 2 / 3 — оценка · Esc — выйти из раунда',
-  truefalse: '1 или ← — верно · 2 или → — неверно · Enter — дальше · Esc — выйти из раунда',
+  hint: '1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда',
+  recall: 'Пробел — показать ответ · V — варианты · Esc — выйти из раунда',
+  rate: '1 — вспомнил сам · 2 — неточно · 3 — не вспомнил · Enter — дальше · Esc — выйти из раунда',
+  tf: '1 или ← — верно · 2 или → — неверно · Enter — дальше · Esc — выйти из раунда',
 };
 
 const $ = (id) => document.getElementById(id);
@@ -186,6 +189,9 @@ function importProgress(file) {
 /* ---------- экраны ---------- */
 
 function show(view) {
+  // кнопка, с которой ушли на другой экран, скрывается вместе с ним; пока браузер сам не снял
+  // с неё фокус, быстрый пробел или Enter достались бы ей, а не новому экрану
+  document.activeElement?.blur?.();
   state.view = view;
   document.body.dataset.view = view;
   for (const [name, id] of Object.entries({
@@ -401,14 +407,13 @@ function renderQuestion() {
   $('feedback').className = 'feedback hidden';
   $('nextButton').classList.add('hidden');
   $('options').innerHTML = '';
-  $('quizHint').textContent = QUIZ_HINTS[state.roundFormat];
   for (const id of ['recallNote', 'recallPrompt', 'recallRate', 'tfPanel']) $(id).classList.add('hidden');
   for (const button of $('recallRate').querySelectorAll('button')) {
     button.disabled = false;
     button.removeAttribute('aria-pressed');
   }
   if (state.roundFormat === 'truefalse') {
-    state.stage = 'tf';
+    setStage('tf');
     state.statement = trueFalseStatement(record);
     $('tfOption').textContent = state.statement.zh;
     for (const button of $('tfPanel').querySelectorAll('button')) {
@@ -419,13 +424,18 @@ function renderQuestion() {
     return;
   }
   if (state.roundFormat === 'recall' && !needsOptions(record)) {
-    state.stage = 'recall';
+    setStage('recall');
     $('recallPrompt').classList.remove('hidden');
     return;
   }
-  state.stage = 'choice';
+  setStage('choice');
   if (state.roundFormat === 'recall') showRecallNote('На этот вопрос без вариантов не ответить — выберите из четырёх.');
   renderOptions(record);
+}
+
+function setStage(stage) {
+  state.stage = stage;
+  $('quizHint').textContent = QUIZ_HINTS[stage];
 }
 
 function renderOptions(record) {
@@ -574,7 +584,7 @@ function revealAnswer() {
   if (state.stage !== 'recall' || state.answered) return;
   const record = state.round[state.position];
   const right = record.options.find((option) => option.id === record.answer.optionId);
-  state.stage = 'rate';
+  setStage('rate');
   $('recallPrompt').classList.add('hidden');
   showFeedback(record, 'reveal',
     `<strong lang="zh-Hans">${escapeHtml(right.zh)}</strong><span>Правильный ответ</span>`);
@@ -583,10 +593,12 @@ function revealAnswer() {
 
 function showHint() {
   if (state.stage !== 'recall' || state.answered) return;
-  state.stage = 'hint';
+  setStage('hint');
   $('recallPrompt').classList.add('hidden');
   showRecallNote('С подсказкой верный ответ засчитается как «вспомнил неточно».');
   renderOptions(state.round[state.position]);
+  // кнопка «Не помню» скрылась вместе с фокусом: ставим его на первый вариант
+  $('options').querySelector('button')?.focus();
 }
 
 function rateRecall(outcome) {
@@ -596,6 +608,8 @@ function rateRecall(outcome) {
     button.disabled = true;
     if (button.dataset.outcome === outcome) button.setAttribute('aria-pressed', 'true');
   }
+  // нажатая кнопка оценки погасла вместе с фокусом: следующий шаг — «Следующий вопрос»
+  $('nextButton').focus();
 }
 
 /* ---------- «Верно или нет» ---------- */
@@ -645,6 +659,8 @@ function glossList(record) {
 
 function nextQuestion() {
   if (!state.answered) return;
+  // «Следующий вопрос» сейчас скроется: фокус с него снимаем сразу (см. show)
+  $('nextButton').blur();
   state.position += 1;
   const retryIndex = nextRetryInsertion(state.retryQueue, state.position, state.round.length);
   if (retryIndex !== -1) {
