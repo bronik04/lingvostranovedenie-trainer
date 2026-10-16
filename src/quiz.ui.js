@@ -24,6 +24,19 @@ const TOPIC_MARKS = {
 // до стольких вопросов ход раунда рисуется кружками, длиннее — полосой
 const MAX_STEP_DOTS = 14;
 const THEME_COLORS = { light: '#faf4e8', dark: '#181512' };
+const FORMAT_COPY = {
+  choice: 'Вопрос и четыре варианта — как на олимпиаде.',
+  recall: 'Сначала вспомните ответ сами, варианты — только как подсказка.',
+  truefalse: 'Вопрос и один предложенный ответ: правильный он или нет?',
+};
+// подсказка клавиш — по стадии вопроса: во «Вспомни сам» цифры то оценивают, то выбирают вариант
+const QUIZ_HINTS = {
+  choice: '1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда',
+  hint: '1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда',
+  recall: 'Пробел — показать ответ · V — варианты · Esc — выйти из раунда',
+  rate: '1 — вспомнил сам · 2 — неточно · 3 — не вспомнил · Enter — дальше · Esc — выйти из раунда',
+  tf: '1 или ← — верно · 2 или → — неверно · Enter — дальше · Esc — выйти из раунда',
+};
 
 const $ = (id) => document.getElementById(id);
 
@@ -32,7 +45,7 @@ const defaultFilters = () => ({
 });
 
 function defaultStudySettings() {
-  return { filters: defaultFilters(), size: 10 };
+  return { filters: defaultFilters(), size: 10, format: 'choice' };
 }
 
 function loadStudySettings() {
@@ -50,6 +63,17 @@ const savedStudySettings = loadStudySettings();
 const state = {
   filters: savedStudySettings.filters,
   size: savedStudySettings.size,
+  format: savedStudySettings.format,
+  // формат замораживается на старте раунда: настройки во время раунда не видны
+  roundFormat: 'choice',
+  // стадия вопроса: 'choice' — сетка вариантов; во «Вспомни сам» 'recall' → 'rate' или 'hint';
+  // в «Верно или нет» — 'tf'
+  stage: 'choice',
+  // первые попытки во «Вспомни сам» по самооценке — для строки в итогах
+  recallCounts: { correct: 0, partial: 0, wrong: 0 },
+  // «Верно или нет»: утверждение текущего вопроса и верные ответы подряд в раунде
+  statement: null,
+  streak: 0,
   round: [],
   wrongIds: [],
   // ответ ученика на каждую ошибку раунда (первую попытку) — для списка в итогах
@@ -128,7 +152,7 @@ function saveStudySettings() {
   try {
     localStorage.setItem(STUDY_SETTINGS_KEY, JSON.stringify({
       version: 1,
-      settings: { filters: state.filters, size: state.size },
+      settings: { filters: state.filters, size: state.size, format: state.format },
     }));
   } catch {}
 }
@@ -165,6 +189,9 @@ function importProgress(file) {
 /* ---------- экраны ---------- */
 
 function show(view) {
+  // кнопка, с которой ушли на другой экран, скрывается вместе с ним; пока браузер сам не снял
+  // с неё фокус, быстрый пробел или Enter достались бы ей, а не новому экрану
+  document.activeElement?.blur?.();
   state.view = view;
   document.body.dataset.view = view;
   for (const [name, id] of Object.entries({
@@ -291,6 +318,10 @@ function renderSetup() {
     due: 'Пройденные вопросы, срок повторения которых наступил.',
   };
   $('modeHelp').textContent = modeCopy[state.filters.mode];
+  for (const input of document.querySelectorAll('input[name="studyFormat"]')) {
+    input.checked = input.value === state.format;
+  }
+  $('formatHelp').textContent = FORMAT_COPY[state.format];
   $('verifiedFilterWrap').hidden = !QUESTION_BANK.some((record) => record.answer.state === 'unverified');
 
   const pool = eligible(QUESTION_BANK, state.filters, state.progress);
@@ -327,7 +358,10 @@ function startRound() {
   startRoundWith(buildRound(QUESTION_BANK, state.filters, state.progress, state.size));
 }
 
-function startRoundWith(round) {
+function startRoundWith(round, format = state.format) {
+  state.roundFormat = format;
+  state.recallCounts = { correct: 0, partial: 0, wrong: 0 };
+  state.streak = 0;
   state.round = round;
   state.wrongIds = [];
   state.wrongPicks = {};
@@ -346,7 +380,7 @@ function startRoundWith(round) {
 
 function repeatMistakes() {
   const wrong = wrongQuestions(state.round, state.wrongIds);
-  if (wrong.length) startRoundWith(wrong);
+  if (wrong.length) startRoundWith(wrong, state.roundFormat);
 }
 
 function renderQuestion() {
@@ -373,6 +407,39 @@ function renderQuestion() {
   $('feedback').className = 'feedback hidden';
   $('nextButton').classList.add('hidden');
   $('options').innerHTML = '';
+  for (const id of ['recallNote', 'recallPrompt', 'recallRate', 'tfPanel']) $(id).classList.add('hidden');
+  for (const button of $('recallRate').querySelectorAll('button')) {
+    button.disabled = false;
+    button.removeAttribute('aria-pressed');
+  }
+  if (state.roundFormat === 'truefalse') {
+    setStage('tf');
+    state.statement = trueFalseStatement(record);
+    $('tfOption').textContent = state.statement.zh;
+    for (const button of $('tfPanel').querySelectorAll('button')) {
+      button.disabled = false;
+      button.removeAttribute('aria-pressed');
+    }
+    $('tfPanel').classList.remove('hidden');
+    return;
+  }
+  if (state.roundFormat === 'recall' && !needsOptions(record)) {
+    setStage('recall');
+    $('recallPrompt').classList.remove('hidden');
+    return;
+  }
+  setStage('choice');
+  if (state.roundFormat === 'recall') showRecallNote('На этот вопрос без вариантов не ответить — выберите из четырёх.');
+  renderOptions(record);
+}
+
+function setStage(stage) {
+  state.stage = stage;
+  $('quizHint').textContent = QUIZ_HINTS[stage];
+}
+
+function renderOptions(record) {
+  $('options').innerHTML = '';
   for (const option of labelledOptions(record)) {
     const button = document.createElement('button');
     button.type = 'button';
@@ -387,7 +454,7 @@ function renderQuestion() {
     caption.lang = 'zh-Hans';
     caption.textContent = option.zh;
     button.append(letter, caption);
-    button.addEventListener('click', () => answer(record, option.optionId));
+    button.addEventListener('click', () => chooseOption(record, option.optionId));
     $('options').append(button);
   }
 }
@@ -398,7 +465,8 @@ function renderProgress() {
   const dots = state.stepDots;
   $('progressSteps').hidden = !dots;
   $('progressTrack').hidden = dots;
-  $('scoreLabel').textContent = `верно ${state.correct}`;
+  $('scoreLabel').textContent = `верно ${state.correct}${
+    state.roundFormat === 'truefalse' ? ` · серия ${state.streak}` : ''}`;
   if (!dots) {
     const done = state.position + (state.answered ? 1 : 0);
     $('progressFill').style.width = `${(done / total) * 100}%`;
@@ -418,37 +486,52 @@ function renderProgress() {
   }));
 }
 
-function answer(record, optionId) {
-  if (state.answered) return;
+/** Общее для любого формата: прогресс, счёт раунда, повтор ошибки, ход, кнопка «дальше». */
+function commitAnswer(record, outcome, pick = {}) {
   state.answered = true;
-
-  const verdict = grade(record, optionId);
-  const previous = state.progress[record.id] || { attempts: 0, correct: 0 };
-  const review = scheduleReview(previous, verdict.correct);
-  state.progress[record.id] = {
-    attempts: previous.attempts + 1,
-    correct: previous.correct + (verdict.correct ? 1 : 0),
-    completed: true,
-    lastCorrect: verdict.correct,
-    box: review.box,
-    dueAt: review.dueAt,
-  };
+  const right = outcome !== 'wrong';
+  state.progress[record.id] = applyAnswer(state.progress[record.id], outcome);
   saveProgress();
+  if (state.roundFormat === 'recall' && !isRepeatInRound(state.round, state.position)) {
+    state.recallCounts[outcome] += 1;
+  }
   ({ correct: state.correct, wrongIds: state.wrongIds } =
-    tallyAnswer({ correct: state.correct, wrongIds: state.wrongIds }, record.id, verdict.correct));
-  if (!verdict.correct) {
-    if (!(record.id in state.wrongPicks)) state.wrongPicks[record.id] = optionId;
+    tallyAnswer({ correct: state.correct, wrongIds: state.wrongIds }, record.id, right));
+  if (!right) {
+    if (!(record.id in state.wrongPicks)) state.wrongPicks[record.id] = pick;
     const retry = queueRetry(state.retryQueue, state.retriedIds, record, state.position);
     state.retryQueue = retry.queue;
     state.retriedIds = retry.retriedIds;
   }
-  state.marks[state.position] = verdict.correct;
+  state.marks[state.position] = right;
   renderProgress();
+  $('nextButton').textContent =
+    state.position + 1 < state.round.length ? 'Следующий вопрос' : 'Итоги раунда';
+  $('nextButton').classList.remove('hidden');
+}
 
+function chooseOption(record, optionId) {
+  if (state.answered) return;
+  const verdict = grade(record, optionId);
+  const hinted = state.stage === 'hint';
+  const outcome = !verdict.correct ? 'wrong' : hinted ? 'partial' : 'correct';
+  commitAnswer(record, outcome, { optionId });
+  markOptions(record, optionId);
+  const right = record.options.find((option) => option.id === verdict.answerOptionId);
+  showFeedback(record, verdict.correct ? 'good' : 'bad', [
+    `<strong>${verdict.correct ? 'Верно' : 'Неверно'}</strong>`,
+    verdict.correct
+      ? hinted ? '<span>С подсказкой — засчитано как «вспомнил неточно».</span>' : ''
+      : `<span>Правильный ответ: <span lang="zh-Hans">${escapeHtml(right.zh)}</span>.</span>`,
+  ].join(''));
+}
+
+/** После выбора: верный — нефритом, выбранный неверный — киноварью, подписи под неверными. */
+function markOptions(record, optionId) {
   const glosses = new Map(optionGlosses(record).map((item) => [item.optionId, item.gloss]));
   for (const button of $('options').querySelectorAll('button')) {
     button.disabled = true;
-    if (button.dataset.optionId === verdict.answerOptionId) {
+    if (button.dataset.optionId === record.answer.optionId) {
       button.classList.add('correct');
       const status = document.createElement('span');
       status.className = 'option-status';
@@ -468,31 +551,89 @@ function answer(record, optionId) {
       button.append(note);
     }
   }
+}
 
-  const right = record.options.find((option) => option.id === verdict.answerOptionId);
+/** Разбор под вопросом: строка вердикта (её задаёт формат), пояснение, источники. */
+function showFeedback(record, kind, verdictHtml) {
   const sources = evidenceList(record.evidence);
-
-  $('feedback').className = `feedback ${verdict.correct ? 'good' : 'bad'}`;
+  $('feedback').className = `feedback ${kind}`;
   $('feedback').innerHTML = [
-    `<p class="verdict"><strong>${verdict.correct ? 'Верно' : 'Неверно'}</strong>`,
-    verdict.correct ? '' : `<span>Правильный ответ: <span lang="zh-Hans">${escapeHtml(right.zh)}</span>.</span>`,
-    '</p>',
+    `<p class="verdict">${verdictHtml}</p>`,
     record.explanation.ru ? `<p class="why">${escapeHtml(record.explanation.ru)}</p>` : '',
     sources ? `<ul>${sources}</ul>` : '',
     record.answer.state === 'unverified'
       ? '<p class="unverified">Ответ взят из официального ключа, но ещё не перепроверен по источникам.</p>'
       : '',
   ].join('');
-
-  $('nextButton').textContent =
-    state.position + 1 < state.round.length ? 'Следующий вопрос' : 'Итоги раунда';
-  $('nextButton').classList.remove('hidden');
   requestAnimationFrame(() => {
     const compact = window.matchMedia?.('(max-width: 600px)').matches;
     const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
     $('feedback').focus({ preventScroll: true });
     if (compact) $('feedback').scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'nearest' });
   });
+}
+
+/* ---------- «Вспомни сам» ---------- */
+
+function showRecallNote(text) {
+  $('recallNote').textContent = text;
+  $('recallNote').classList.remove('hidden');
+}
+
+function revealAnswer() {
+  if (state.stage !== 'recall' || state.answered) return;
+  const record = state.round[state.position];
+  const right = record.options.find((option) => option.id === record.answer.optionId);
+  setStage('rate');
+  $('recallPrompt').classList.add('hidden');
+  showFeedback(record, 'reveal',
+    `<strong lang="zh-Hans">${escapeHtml(right.zh)}</strong><span>Правильный ответ</span>`);
+  $('recallRate').classList.remove('hidden');
+}
+
+function showHint() {
+  if (state.stage !== 'recall' || state.answered) return;
+  setStage('hint');
+  $('recallPrompt').classList.add('hidden');
+  showRecallNote('С подсказкой верный ответ засчитается как «вспомнил неточно».');
+  renderOptions(state.round[state.position]);
+  // кнопка «Не помню» скрылась вместе с фокусом: ставим его на первый вариант
+  $('options').querySelector('button')?.focus();
+}
+
+function rateRecall(outcome) {
+  if (state.stage !== 'rate' || state.answered) return;
+  commitAnswer(state.round[state.position], outcome);
+  for (const button of $('recallRate').querySelectorAll('button')) {
+    button.disabled = true;
+    if (button.dataset.outcome === outcome) button.setAttribute('aria-pressed', 'true');
+  }
+  // нажатая кнопка оценки погасла вместе с фокусом: следующий шаг — «Следующий вопрос»
+  $('nextButton').focus();
+}
+
+/* ---------- «Верно или нет» ---------- */
+
+function answerTrueFalse(saidTrue) {
+  if (state.stage !== 'tf' || state.answered) return;
+  const record = state.round[state.position];
+  const statement = state.statement;
+  const right = statement.isTrue === saidTrue;
+  // серия меняется до commitAnswer: тот перерисовывает ход раунда вместе со строкой серии
+  state.streak = right ? state.streak + 1 : 0;
+  commitAnswer(record, right ? 'checked' : 'wrong',
+    { optionId: statement.optionId, said: saidTrue, isTrue: statement.isTrue });
+  for (const button of $('tfPanel').querySelectorAll('button')) {
+    button.disabled = true;
+    if (button.id === (saidTrue ? 'tfTrue' : 'tfFalse')) button.setAttribute('aria-pressed', 'true');
+  }
+  const answerOption = record.options.find((option) => option.id === record.answer.optionId);
+  const shown = record.options.find((option) => option.id === statement.optionId);
+  const about = statement.isTrue
+    ? `<span lang="zh-Hans">${escapeHtml(shown.zh)}</span> — правильный ответ.`
+    : `${shown.gloss ? `<span lang="zh-Hans">${escapeHtml(shown.zh)}</span> — ${escapeHtml(shown.gloss)}. ` : ''}`
+      + `Правильный ответ: <span lang="zh-Hans">${escapeHtml(answerOption.zh)}</span>.`;
+  showFeedback(record, right ? 'good' : 'bad', `<strong>${right ? 'Правильно' : 'Ошибка'}</strong><span>${about}</span>`);
 }
 
 function evidenceList(evidence = []) {
@@ -518,6 +659,8 @@ function glossList(record) {
 
 function nextQuestion() {
   if (!state.answered) return;
+  // «Следующий вопрос» сейчас скроется: фокус с него снимаем сразу (см. show)
+  $('nextButton').blur();
   state.position += 1;
   const retryIndex = nextRetryInsertion(state.retryQueue, state.position, state.round.length);
   if (retryIndex !== -1) {
@@ -538,6 +681,10 @@ function finishRound() {
   $('resultMeterWrong').style.flex = String(wrongCount);
   $('resultCounts').innerHTML = `<span><span class="ok" lang="zh-Hans">✓</span> верно — ${state.correct}</span>`
     + `<span><span class="bad" lang="zh-Hans">✕</span> с ошибкой — ${wrongCount}</span>`;
+  const recall = state.recallCounts;
+  $('resultRecall').hidden = state.roundFormat !== 'recall';
+  $('resultRecall').textContent =
+    `вспомнил сам — ${recall.correct} · неточно — ${recall.partial} · не вспомнил — ${recall.wrong}`;
   $('repeatMistakes').hidden = wrongCount === 0;
   $('repeatMistakes').textContent = `Повторить ошибки раунда (${wrongCount})`;
   // на экране одна главная кнопка: «Повторить ошибки», а без ошибок — «На главную»
@@ -558,7 +705,8 @@ function renderMistakes() {
   const wrong = wrongQuestions(state.round, state.wrongIds);
   $('resultMistakes').hidden = wrong.length === 0;
   $('mistakeList').replaceChildren(...wrong.map((record) => {
-    const picked = record.options.find((option) => option.id === state.wrongPicks[record.id]);
+    const pick = state.wrongPicks[record.id] ?? {};
+    const picked = record.options.find((option) => option.id === pick.optionId);
     const right = record.options.find((option) => option.id === record.answer.optionId);
     const item = document.createElement('li');
     item.innerHTML = [
@@ -566,7 +714,8 @@ function renderMistakes() {
       '<div>',
       `<p class="mistake-question">${escapeHtml(record.questionRu)}</p>`,
       '<p class="mistake-answers">',
-      picked ? `Ваш ответ <span class="picked" lang="zh-Hans">✕ ${escapeHtml(picked.zh)}</span> · ` : '',
+      picked ? `Ваш ответ ${pick.said === undefined ? '' : `«${pick.said ? 'верно' : 'неверно'}» для `}`
+        + `<span class="picked" lang="zh-Hans">${pick.said !== undefined && pick.isTrue ? '✓' : '✕'} ${escapeHtml(picked.zh)}</span> · ` : '',
       `верно <span class="right" lang="zh-Hans">✓ ${escapeHtml(right.zh)}</span>`,
       '</p></div>',
     ].join('');
@@ -668,6 +817,12 @@ const ANSWER_KEYS = {
   Numpad1: 0, Numpad2: 1, Numpad3: 2, Numpad4: 3,
   KeyA: 0, KeyB: 1, KeyC: 2, KeyD: 3,
 };
+const RATE_KEYS = {
+  Digit1: 'correct', Numpad1: 'correct', Digit2: 'partial', Numpad2: 'partial', Digit3: 'wrong', Numpad3: 'wrong',
+};
+const TRUE_FALSE_KEYS = {
+  Digit1: true, Numpad1: true, ArrowLeft: true, Digit2: false, Numpad2: false, ArrowRight: false,
+};
 
 document.addEventListener('keydown', (event) => {
   if (event.metaKey || event.ctrlKey || event.altKey) return;
@@ -698,6 +853,33 @@ document.addEventListener('keydown', (event) => {
   }
 
   if (state.view !== 'quiz') return;
+
+  if (state.stage === 'recall') {
+    if ((event.key === 'Enter' || event.key === ' ') && !onControl) {
+      event.preventDefault();
+      revealAnswer();
+    } else if (event.code === 'KeyV') {
+      event.preventDefault();
+      showHint();
+    }
+    return;
+  }
+  if (state.stage === 'rate' && !state.answered) {
+    const outcome = RATE_KEYS[event.code];
+    if (outcome) {
+      event.preventDefault();
+      rateRecall(outcome);
+    }
+    return;
+  }
+  if (state.stage === 'tf' && !state.answered) {
+    const said = TRUE_FALSE_KEYS[event.code];
+    if (said !== undefined) {
+      event.preventDefault();
+      answerTrueFalse(said);
+    }
+    return;
+  }
 
   // код клавиши, а не символ: на русской раскладке те же клавиши дают Ф, И, С, В
   const index = ANSWER_KEYS[event.code];
@@ -733,6 +915,13 @@ $('navDatabase').addEventListener('click', (event) => {
 $('startButton').addEventListener('click', startRound);
 $('repeatMistakes').addEventListener('click', repeatMistakes);
 $('nextButton').addEventListener('click', nextQuestion);
+$('revealAnswer').addEventListener('click', revealAnswer);
+$('showHint').addEventListener('click', showHint);
+for (const button of $('recallRate').querySelectorAll('button')) {
+  button.addEventListener('click', () => rateRecall(button.dataset.outcome));
+}
+$('tfTrue').addEventListener('click', () => answerTrueFalse(true));
+$('tfFalse').addEventListener('click', () => answerTrueFalse(false));
 $('leaveRound').addEventListener('click', backToSetup);
 $('openDatabase').addEventListener('click', openDatabase);
 $('resultsDatabase').addEventListener('click', openDatabase);
@@ -758,6 +947,13 @@ $('onlyVerified').addEventListener('change', (event) => {
 for (const input of document.querySelectorAll('input[name="studyMode"]')) {
   input.addEventListener('change', (event) => {
     state.filters.mode = event.target.value;
+    saveStudySettings();
+    renderSetup();
+  });
+}
+for (const input of document.querySelectorAll('input[name="studyFormat"]')) {
+  input.addEventListener('change', (event) => {
+    state.format = event.target.value;
     saveStudySettings();
     renderSetup();
   });

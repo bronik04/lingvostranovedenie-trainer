@@ -74,8 +74,21 @@
       </fieldset>
     </section>
 
-    <section class="chapter" id="settingsPanel">
+    <section class="chapter">
       <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">二</span>
+      <fieldset class="chapter-body mode-picker">
+        <legend class="ink-title-2">Формат</legend>
+        <div class="ink-pills mode-options">
+          <label class="mode-option"><input type="radio" name="studyFormat" value="choice" checked><span class="ink-pill">Выбор ответа</span></label>
+          <label class="mode-option"><input type="radio" name="studyFormat" value="recall"><span class="ink-pill">Вспомни сам</span></label>
+          <label class="mode-option"><input type="radio" name="studyFormat" value="truefalse"><span class="ink-pill">Верно или нет</span></label>
+        </div>
+        <p class="ink-caption mode-help" id="formatHelp"></p>
+      </fieldset>
+    </section>
+
+    <section class="chapter" id="settingsPanel">
+      <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">三</span>
       <fieldset class="chapter-body">
         <legend class="ink-title-2">Темы раунда</legend>
         <p class="ink-caption">Если не выбрать темы, в раунд попадут вопросы из всех разделов.</p>
@@ -92,7 +105,7 @@
     </section>
 
     <section class="chapter">
-      <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">三</span>
+      <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">四</span>
       <fieldset class="chapter-body">
         <legend class="ink-title-2">Длина раунда</legend>
         <div class="ink-choice-cards round-size" id="roundSize">
@@ -146,13 +159,39 @@
       <h2 class="question" id="questionText"></h2>
       <p class="question-zh" id="questionZh" lang="zh-Hans" hidden></p>
     </div>
+    <p class="ink-caption recall-note hidden" id="recallNote"></p>
     <div class="options" id="options" role="group" aria-label="Варианты ответа"></div>
+    <div class="recall-prompt hidden" id="recallPrompt">
+      <p>Вспомните ответ, произнесите или запишите его, потом откройте.</p>
+      <div class="actions">
+        <button class="ink-btn ink-btn--primary" id="revealAnswer" type="button">Показать ответ</button>
+        <button class="ink-btn ink-btn--secondary" id="showHint" type="button">Не помню — показать варианты</button>
+      </div>
+    </div>
+    <div class="truefalse hidden" id="tfPanel">
+      <div class="tf-card">
+        <p class="ink-caption">Предложенный ответ</p>
+        <p class="tf-option" id="tfOption" lang="zh-Hans"></p>
+      </div>
+      <div class="tf-buttons" role="group" aria-label="Правильный ли это ответ">
+        <button class="ink-btn ink-btn--secondary" id="tfTrue" type="button">Верно</button>
+        <button class="ink-btn ink-btn--secondary" id="tfFalse" type="button">Неверно</button>
+      </div>
+    </div>
     <div class="feedback hidden" id="feedback" role="status" tabindex="-1"></div>
+    <div class="recall-rate hidden" id="recallRate" role="group" aria-labelledby="recallRateTitle">
+      <p class="recall-rate-title" id="recallRateTitle">Как получилось?</p>
+      <div class="actions">
+        <button class="ink-btn ink-btn--secondary" type="button" data-outcome="correct">Вспомнил сам</button>
+        <button class="ink-btn ink-btn--secondary" type="button" data-outcome="partial">Вспомнил неточно</button>
+        <button class="ink-btn ink-btn--secondary" type="button" data-outcome="wrong">Не вспомнил</button>
+      </div>
+    </div>
     <div class="next-row">
       <button class="ink-btn ink-btn--text" id="leaveRound" type="button">Закончить раунд</button>
       <button class="ink-btn ink-btn--primary hidden" id="nextButton" type="button">Следующий вопрос</button>
     </div>
-    <p class="ink-caption hint">1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда</p>
+    <p class="ink-caption hint" id="quizHint">1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда</p>
   </section>
 
   <section class="view results" id="resultsView" hidden>
@@ -164,6 +203,7 @@
         <span class="ink-meter__wrong" id="resultMeterWrong"></span>
       </div>
       <p class="ink-caption result-counts" id="resultCounts"></p>
+      <p class="ink-caption result-recall" id="resultRecall" hidden></p>
       <p class="ink-lead result-text" id="resultText"></p>
       <div class="actions">
         <button class="ink-btn ink-btn--primary" id="repeatMistakes" type="button" hidden>Повторить ошибки раунда</button>
