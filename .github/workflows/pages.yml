@@ -43,6 +43,10 @@ jobs:
           python3 scripts/merge_bank.py
           python3 scripts/taxonomy.py
 
+      # jieba — разбор текста на слова для проверки уровня книги для чтения (scripts/book_level.py)
+      - name: Установить Python-зависимости
+        run: python3 -m pip install -r requirements.txt
+
       - name: Python-тесты
         run: python3 -m unittest discover -s test -t .
 
