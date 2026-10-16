@@ -1,0 +1,48 @@
+/* Книга для чтения: общий стиль PDF и EPUB. Вёрстка — как в принятом пробном PDF (2026-10-16). */
+@page { size: 170mm 227mm; margin: 14mm 13mm 16mm; }
+body { font-family: "Songti SC", "STSong", "Noto Serif CJK SC", serif; color: #1f2328; background: #fff;
+       font-size: 12.5pt; line-height: 2.05; margin: 0; }
+section { break-after: page; page-break-after: always; }
+.cover { text-align: center; padding-top: 30mm; }
+.cover h1 { font-family: "Kaiti SC", "STKaiti", serif; font-size: 34pt; margin: 0 0 6mm; }
+.cover p { font-family: "PingFang SC", sans-serif; font-size: 11pt; color: #7a6f60; margin: 0; }
+.cover img { max-width: 100%; }
+.toc h2, .howto h2 { font-family: "PingFang SC", sans-serif; font-size: 14pt; color: #b8432f; }
+.toc ol { list-style: none; padding-left: 0; font-size: 11pt; line-height: 1.8; }
+.toc .toc-block { font-family: "PingFang SC", sans-serif; font-weight: 600; margin-top: 3mm; }
+.toc ol ol { padding-left: 6mm; font-weight: normal; }
+.howto p { text-indent: 0; font-family: "PingFang SC", sans-serif; font-size: 10.5pt; line-height: 1.7; }
+.block-title { text-align: center; padding-top: 60mm; }
+.block-title h1 { font-family: "Kaiti SC", "STKaiti", serif; font-size: 32pt; margin: 0; }
+.block-title p { text-indent: 0; text-align: center; font-family: "PingFang SC", sans-serif; color: #b8432f; }
+.block { font-family: "PingFang SC", sans-serif; font-size: 8.5pt; letter-spacing: .08em; color: #b8432f;
+         text-transform: uppercase; text-indent: 0; margin: 0; }
+.lesson h1 { font-family: "Kaiti SC", "STKaiti", serif; font-size: 26pt; margin: 2mm 0 4mm; font-weight: 600; }
+.draft { display: inline-block; font: 600 8.5pt "PingFang SC", sans-serif; color: #fff; background: #b8432f;
+         border-radius: 4px; padding: 0 2mm; text-indent: 0; }
+h3 { font-family: "PingFang SC", sans-serif; font-size: 12pt; color: #b8432f; margin: 5mm 0 1mm; }
+.img-placeholder { border: 1.2px dashed #e2d6c6; border-radius: 6px; height: 42mm; color: #a39886;
+                   font: 9pt "PingFang SC", sans-serif; text-align: center; line-height: 42mm; margin-bottom: 4mm; }
+figure.img { margin: 0 0 4mm; text-align: center; }
+figure.img img { max-width: 100%; max-height: 70mm; }
+p { text-indent: 2em; margin: 0 0 1.5mm; text-align: justify; }
+p.label { text-indent: 0; font-family: "PingFang SC", sans-serif; font-weight: 600; color: #b8432f; margin-top: 3mm; }
+ruby { margin: 0 .12em; ruby-align: center; }
+ruby rt { font-family: "PingFang SC", sans-serif; font-size: 6.5pt; color: #7a6f60; }
+blockquote { font-family: "Kaiti SC", "STKaiti", serif; background: #f6efe6; border-left: 3px solid #b8432f;
+             margin: 3mm 0; padding: 2mm 4mm; line-height: 1.8; }
+ol.examples { margin: 0 0 2mm; }
+.box { background: #f6efe6; border-radius: 8px; padding: 3mm 5mm; margin-top: 4mm; break-inside: avoid; }
+.box h2 { font-family: "PingFang SC", sans-serif; font-size: 11pt; color: #b8432f; margin: 0 0 1.5mm; }
+.gloss { columns: 2; column-gap: 6mm; font-size: 9.5pt; line-height: 1.55; }
+.gloss div { break-inside: avoid; margin-bottom: 1mm; }
+.gloss b { font-family: "Songti SC", "STSong", serif; font-size: 11pt; }
+.gloss i { font-family: "PingFang SC", sans-serif; font-style: normal; color: #7a6f60; font-size: 8.5pt; }
+.ex { font-size: 11pt; line-height: 1.8; }
+.ex ol { margin: 0; padding-left: 6mm; }
+ol.tf { list-style: none; padding-left: 0; }
+ol.tf li::before { content: "☐ "; }
+.note { font-family: "PingFang SC", sans-serif; font-size: 9pt; line-height: 1.6; color: #4a4339;
+        border-top: 1px solid #e2d6c6; margin-top: 4mm; padding-top: 2mm; }
+.key { font-size: 10.5pt; line-height: 1.7; }
+.key p { text-indent: 0; }
