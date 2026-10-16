@@ -304,6 +304,7 @@ test('настройки отбрасывают повреждённые и ус
       topics: [], years: ['2015-16'], stages: ['shk'], mode: 'due', onlyVerified: true,
     },
     size: 20,
+    format: 'choice',
   });
   assert.deepEqual(quiz.normaliseStudySettings({
     filters: { topics: 'не массив', years: [], stages: [], mode: 'не режим', onlyVerified: 'да' },
@@ -311,6 +312,7 @@ test('настройки отбрасывают повреждённые и ус
   }, bank), {
     filters: { topics: [], years: [], stages: [], mode: 'all', onlyVerified: false },
     size: 10,
+    format: 'choice',
   });
 });
 
@@ -477,4 +479,118 @@ test('перенос прогресса не меняет исходный об�
 test('без влитых записей прогресс остаётся тем же объектом', () => {
   const progress = { a: progressItem() };
   assert.equal(quiz.migrateProgress([record('a')], progress), progress);
+});
+
+test('формат раунда хранится в настройках; неизвестный и отсутствующий — «выбор ответа»', () => {
+  const bank = [record('a')];
+  const filters = { topics: [], years: [], stages: [], mode: 'all', onlyVerified: false };
+  assert.equal(quiz.normaliseStudySettings({ filters, size: 10, format: 'recall' }, bank).format, 'recall');
+  assert.equal(quiz.normaliseStudySettings({ filters, size: 10, format: 'truefalse' }, bank).format, 'truefalse');
+  assert.equal(quiz.normaliseStudySettings({ filters, size: 10 }, bank).format, 'choice');
+  assert.equal(quiz.normaliseStudySettings({ filters, size: 10, format: 'blitz' }, bank).format, 'choice');
+  assert.equal(quiz.normaliseStudySettings(null, bank).format, 'choice');
+});
+
+const NOW = 1_000_000_000_000;
+const DAY = 86_400_000;
+
+test('исход correct двигает коробку, wrong сбрасывает — как прежний ответ из четырёх', () => {
+  const first = quiz.applyAnswer(undefined, 'correct', NOW);
+  assert.deepEqual(first, { attempts: 1, correct: 1, completed: true, lastCorrect: true, box: 1, dueAt: NOW + DAY });
+  assert.deepEqual(quiz.applyAnswer(first, 'wrong', NOW),
+    { attempts: 2, correct: 1, completed: true, lastCorrect: false, box: 0, dueAt: NOW });
+});
+
+test('«вспомнил неточно» не поднимает коробку, но и не оставляет вопрос на сегодня', () => {
+  assert.deepEqual(quiz.applyAnswer(undefined, 'partial', NOW),
+    { attempts: 1, correct: 1, completed: true, lastCorrect: true, box: 1, dueAt: NOW + DAY });
+  const learned = { attempts: 5, correct: 5, completed: true, lastCorrect: true, box: 4, dueAt: 0 };
+  assert.deepEqual(quiz.applyAnswer(learned, 'partial', NOW),
+    { attempts: 6, correct: 6, completed: true, lastCorrect: true, box: 4, dueAt: NOW + 16 * DAY });
+  const afterMistake = { attempts: 2, correct: 1, completed: true, lastCorrect: false, box: 0, dueAt: 0 };
+  assert.equal(quiz.applyAnswer(afterMistake, 'partial', NOW).box, 1);
+});
+
+test('верно в «Верно или нет» не сдвигает повторение и не выводит вопрос из «Ошибок»', () => {
+  const mistake = { attempts: 1, correct: 0, completed: true, lastCorrect: false, box: 0, dueAt: 123 };
+  assert.deepEqual(quiz.applyAnswer(mistake, 'checked', NOW),
+    { attempts: 2, correct: 1, completed: true, lastCorrect: false, box: 0, dueAt: 123 });
+  const learned = { attempts: 3, correct: 3, completed: true, lastCorrect: true, box: 3, dueAt: 999 };
+  assert.deepEqual(quiz.applyAnswer(learned, 'checked', NOW),
+    { attempts: 4, correct: 4, completed: true, lastCorrect: true, box: 3, dueAt: 999 });
+  // новый вопрос считается пройденным и сразу ждёт настоящего повторения
+  assert.deepEqual(quiz.applyAnswer(undefined, 'checked', NOW),
+    { attempts: 1, correct: 1, completed: true, lastCorrect: true, box: 0, dueAt: NOW });
+  assert.deepEqual(quiz.applyAnswer({ attempts: 0, correct: 0 }, 'checked', NOW),
+    { attempts: 1, correct: 1, completed: true, lastCorrect: true, box: 0, dueAt: NOW });
+});
+
+test('любой исход даёт запись, которую принимает проверка прогресса', () => {
+  const progress = Object.fromEntries(['correct', 'partial', 'wrong', 'checked']
+    .map((outcome) => [outcome, quiz.applyAnswer(undefined, outcome, NOW)]));
+  assert.equal(isValidProgress(progress), true);
+});
+
+test('неизвестный исход — ошибка программы, а не тихая порча прогресса', () => {
+  assert.throws(() => quiz.applyAnswer(undefined, 'maybe', NOW), /исход/);
+});
+
+const sequence = (...values) => {
+  let index = 0;
+  return () => values[index++];
+};
+
+test('«верно или нет»: при random < ½ предлагается правильный вариант', () => {
+  assert.deepEqual(quiz.trueFalseStatement(record('a'), sequence(0.1)),
+    { optionId: 'o2', zh: '上海', isTrue: true });
+});
+
+test('«верно или нет»: иначе предлагается неверный вариант, и выпасть может любой', () => {
+  const picked = [0, 0.34, 0.67, 0.99].map((x) => quiz.trueFalseStatement(record('a'), sequence(0.5, x)));
+  assert.ok(picked.every((statement) => statement.isTrue === false && statement.optionId !== 'o2'));
+  assert.deepEqual(new Set(picked.map((statement) => statement.optionId)), new Set(['o1', 'o3', 'o4']));
+});
+
+test('«верно или нет»: у записи с общим набором неверный берётся из всего набора', () => {
+  const pooled = record('a', {
+    options: [
+      { id: 'o1', zh: '广州' }, { id: 'o2', zh: '上海' }, { id: 'o3', zh: '北京' },
+      { id: 'o4', zh: '西安' }, { id: 'o5', zh: '天津' }, { id: 'o6', zh: '重庆' },
+    ],
+  });
+  assert.deepEqual(quiz.trueFalseStatement(pooled, sequence(0.5, 0.99)),
+    { optionId: 'o6', zh: '重庆', isTrue: false });
+});
+
+test('вопросы, на которые без вариантов не ответить, узнаются по формулировке', () => {
+  const needs = (questionRu) => quiz.needsOptions(record('a', { questionRu }));
+  assert.equal(needs('Что из перечисленного является специальным административным районом Китая?'), true);
+  assert.equal(needs('Какой из нижеперечисленных городов Китая называют 泉城?'), true);
+  assert.equal(needs('Какое животное не входит в китайский двенадцатилетний зодиак?'), true);
+  assert.equal(needs('Какой город не относится к шести древним столицам Китая?'), true);
+  assert.equal(needs('С какой страной не граничит КНР?'), true);
+});
+
+test('«не» в формулировке ещё не значит, что без вариантов не ответить', () => {
+  const needs = (questionRu) => quiz.needsOptions(record('a', { questionRu }));
+  assert.equal(needs('Как называлась самая ранняя династия Китая?'), false);
+  assert.equal(needs('Обычай в день праздника Ханьши («праздник холодной пищи»), предшествующего Цинмину, '
+    + 'не разводить огонь и есть только холодную пищу, по преданию установил Цзинь Вэнь-гун в память '
+    + 'о своём верном спутнике. О ком идёт речь?'), false);
+  assert.equal(needs('Какой денежный подарок делают не только на Праздник весны, но и на рождение ребёнка, '
+    + 'новоселье и день рождения?'), false);
+  assert.equal(needs('Какой праздник неразрывно связан с луной?'), false);
+});
+
+test('«верно или нет»: исключённый вариант не предлагается никогда', () => {
+  const plateau = record('a', {
+    options: [
+      { id: 'o1', zh: '3000 米以上', trueFalse: false }, { id: 'o2', zh: '4500 米以上' },
+      { id: 'o3', zh: '1500 米以上', trueFalse: false }, { id: 'o4', zh: '6000 米以上' },
+    ],
+  });
+  const offered = [0, 0.34, 0.5, 0.67, 0.99].map((x) => quiz.trueFalseStatement(plateau, sequence(0.5, x)).optionId);
+  assert.deepEqual(new Set(offered), new Set(['o4']));
+  // правильный вариант исключением не затрагивается
+  assert.equal(quiz.trueFalseStatement(plateau, sequence(0.1)).optionId, 'o2');
 });

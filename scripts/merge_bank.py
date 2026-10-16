@@ -22,6 +22,7 @@ from fact_groups import apply_fact_groups, load_fact_groups
 from glosses import apply_glosses, load_glosses
 from merges import STAGE_ORDER, apply_merges, load_merges
 from retired import apply_retired, load_retired
+from truefalse import apply_truefalse, load_truefalse
 
 
 def record_id(occurrence: dict) -> str:
@@ -408,6 +409,8 @@ def main() -> None:
     # подписи к неверным вариантам — самым последним слоем: они сверяются с
     # текстом варианта уже после всех правок
     bank = apply_glosses(bank, glosses)
+    # варианты, которые «Верно или нет» не предлагает, — тоже по окончательному тексту варианта
+    bank = apply_truefalse(bank, load_truefalse(ROOT / 'data/review/truefalse.json'))
     bank.sort(key=lambda record: record['id'])
     report['fragments'] = fragment_pairs([(record['id'], record['questionRu']) for record in bank])
     (ROOT / 'data/bank.json').write_text(

@@ -409,6 +409,283 @@ test('телефон: ни на одном экране нет горизонт�
   assert.deepEqual(page.errors, []);
 });
 
+async function pickFormat(page, label) {
+  await page.locator('#setupView .mode-option', { hasText: label }).click();
+}
+
+test('формат выбирается, объясняется и переживает перезагрузку', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  assert.equal(await page.locator('input[name="studyFormat"]:checked').getAttribute('value'), 'choice');
+  await pickFormat(page, 'Верно или нет');
+  assert.match(await page.locator('#formatHelp').textContent(), /один предложенный ответ/);
+  await page.reload();
+  assert.equal(await page.locator('input[name="studyFormat"]:checked').getAttribute('value'), 'truefalse');
+  // «Сбросить фильтры» не трогает формат: это не фильтр
+  await page.locator('#clearFilters').click();
+  assert.equal(await page.locator('input[name="studyFormat"]:checked').getAttribute('value'), 'truefalse');
+  assert.deepEqual(page.errors, []);
+});
+
+/** Убирает из банка страницы вопросы, которым нужны варианты (или, наоборот, все остальные),
+ * чтобы стадия первого вопроса во «Вспомни сам» не зависела от случая. */
+async function keepRecallQuestions(page, needs) {
+  await page.evaluate((keepNeeds) => {
+    for (let index = QUESTION_BANK.length - 1; index >= 0; index -= 1) {
+      if (needsOptions(QUESTION_BANK[index]) !== keepNeeds) QUESTION_BANK.splice(index, 1);
+    }
+  }, needs);
+}
+
+test('вспомни сам: ответ открывается пробелом, «не вспомнил» отправляет вопрос в «Ошибки»', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  assert.equal(await page.locator('#recallPrompt').isVisible(), true);
+  assert.equal(await page.locator('#options button').count(), 0);
+  // до открытия ответа оценка ничего не делает
+  await page.keyboard.press('Digit3');
+  assert.equal(await page.locator('#nextButton').isVisible(), false);
+  await page.keyboard.press('Space');
+  assert.equal(await page.locator('#feedback.reveal').isVisible(), true);
+  assert.equal(await page.locator('#recallRate').isVisible(), true);
+  assert.equal(await page.locator('#recallPrompt').isVisible(), false);
+  await page.keyboard.press('Digit3');
+  await page.locator('#nextButton:not(.hidden)').waitFor();
+  assert.equal(await page.locator('#progressSteps li').first().getAttribute('class'), 'ink-step ink-step--wrong ink-step--current');
+  await page.locator('#leaveRound').click();
+  await page.locator('#setupView .mode-option', { hasText: 'Ошибки' }).click();
+  assert.equal(await page.locator('#eligibleNotice').textContent(), 'Под фильтры подходит вопросов: 1.');
+  assert.deepEqual(page.errors, []);
+});
+
+test('вспомни сам: кнопка «Показать ответ» с клавиатуры срабатывает один раз', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  await page.locator('#revealAnswer').focus();
+  await page.keyboard.press('Enter');
+  assert.equal(await page.locator('#recallRate').isVisible(), true);
+  // ответ открыт, оценки ещё нет: Enter не должен ни оценить, ни перелистнуть вопрос
+  await page.keyboard.press('Enter');
+  assert.equal(await page.locator('#nextButton').isVisible(), false);
+  assert.match(await page.locator('#progressLabel').textContent(), /^Вопрос 1 из/);
+  assert.deepEqual(page.errors, []);
+});
+
+test('вспомни сам: подсказка показывает варианты, верный ответ засчитан как «неточно»', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  // все вопросы уже в третьей коробке: «неточно» оставит третью, «вспомнил сам» дал бы четвёртую
+  await page.evaluate(() => localStorage.setItem('lingvo-trainer:v1', JSON.stringify({
+    version: 1,
+    progress: Object.fromEntries(QUESTION_BANK.map((r) => [r.id,
+      { attempts: 3, correct: 3, completed: true, lastCorrect: true, box: 3, dueAt: 0 }])),
+  })));
+  await page.reload();
+  await keepRecallQuestions(page, false);
+  const bank = await bankOf(page);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  await page.locator('#showHint').click();
+  assert.equal(await page.locator('#options button').count(), 4);
+  assert.match(await page.locator('#recallNote').textContent(), /«вспомнил неточно»/);
+  const record = await currentRecord(page, bank);
+  await answer(page, record, true);
+  const progress = await page.evaluate(() => JSON.parse(localStorage.getItem('lingvo-trainer:v1')).progress);
+  assert.equal(progress[record.id].box, 3, 'с подсказкой коробка не растёт');
+  assert.equal(progress[record.id].lastCorrect, true);
+  assert.deepEqual(page.errors, []);
+});
+
+test('вспомни сам: подсказка клавиш следует за стадией вопроса', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  const hint = () => page.locator('#quizHint').textContent();
+  assert.match(await hint(), /Пробел — показать ответ/);
+  assert.doesNotMatch(await hint(), /оценка|вспомнил/, 'до открытия ответа оценивать нечего');
+  await page.keyboard.press('Space');
+  assert.match(await hint(), /1 — вспомнил сам/);
+  assert.match(await hint(), /Enter — дальше/);
+  await page.keyboard.press('Digit1');
+  await page.keyboard.press('Enter');
+  await page.keyboard.press('KeyV');
+  assert.match(await hint(), /1–4 или A–D — ответить/, 'с подсказкой цифры выбирают вариант');
+  assert.deepEqual(page.errors, []);
+});
+
+test('вспомни сам: вопрос «из перечисленного» подсказывает клавиши выбора, а не оценки', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, true);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  assert.match(await page.locator('#quizHint').textContent(), /1–4 или A–D — ответить/);
+  assert.deepEqual(page.errors, []);
+});
+
+test('вспомни сам: фокус не теряется ни после подсказки, ни после оценки', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  await page.locator('#showHint').click();
+  assert.equal(await page.evaluate(() => document.activeElement === document.querySelector('#options button')), true,
+    'после «Не помню» фокус — на первом варианте');
+  await page.keyboard.press('Escape');
+  await startRound(page, 5);
+  await page.keyboard.press('Space');
+  await page.locator('#recallRate button[data-outcome="correct"]').click();
+  assert.equal(await page.evaluate(() => document.activeElement?.id), 'nextButton', 'после оценки фокус — на «Следующий вопрос»');
+  assert.deepEqual(page.errors, []);
+});
+
+test('вспомни сам: вопрос «из перечисленного» сразу показывает варианты', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, true);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  assert.equal(await page.locator('#options button').count(), 4);
+  assert.equal(await page.locator('#recallPrompt').isVisible(), false);
+  assert.match(await page.locator('#recallNote').textContent(), /без вариантов не ответить/);
+  assert.deepEqual(page.errors, []);
+});
+
+test('вспомни сам: в итогах — разбивка по самооценке', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  for (let question = 0; question < 5; question += 1) {
+    await page.keyboard.press('Space');
+    await page.keyboard.press(question === 0 ? 'Digit2' : 'Digit1');
+    await page.keyboard.press('Enter');
+  }
+  await page.locator('#resultsView').waitFor();
+  assert.equal(await page.locator('#finalScore').textContent(), '5 / 5');
+  assert.equal(await page.locator('#resultRecall').textContent(), 'вспомнил сам — 4 · неточно — 1 · не вспомнил — 0');
+  assert.deepEqual(page.errors, []);
+});
+
+test('уход из раунда посреди стадии не оставляет панелей в раунде другого формата', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  await page.keyboard.press('Space');
+  await page.keyboard.press('Escape');
+  await pickFormat(page, 'Выбор ответа');
+  await startRound(page, 5);
+  assert.equal(await page.locator('#options button').count(), 4);
+  for (const id of ['#recallPrompt', '#recallRate', '#recallNote', '#feedback']) {
+    assert.equal(await page.locator(id).isVisible(), false, id);
+  }
+  assert.deepEqual(page.errors, []);
+});
+
+test('телефон: «Вспомни сам» без горизонтальной прокрутки', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 360, height: 780 });
+  if (!page) return;
+  await keepRecallQuestions(page, false);
+  const overflow = () => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+  await pickFormat(page, 'Вспомни сам');
+  await startRound(page, 5);
+  assert.equal(await overflow(), 0, 'стадия «вспомнить»');
+  await page.locator('#revealAnswer').click();
+  assert.equal(await overflow(), 0, 'ответ и самооценка');
+  assert.deepEqual(page.errors, []);
+});
+
+const currentStatement = (page) => page.evaluate(() => ({
+  id: state.round[state.position].id, isTrue: state.statement.isTrue, zh: state.statement.zh,
+}));
+
+test('верно или нет: ошибка объясняется, возвращается в раунде и повторяется в том же формате', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  await pickFormat(page, 'Верно или нет');
+  await startRound(page, 5);
+  let questions = 0;
+  let wrongId = null;
+  while (await page.locator('#quizView').isVisible()) {
+    questions += 1;
+    assert.ok(questions <= 6, 'раунд не заканчивается');
+    assert.equal(await page.locator('#tfPanel').isVisible(), true);
+    assert.equal(await page.locator('#options button').count(), 0);
+    const statement = await currentStatement(page);
+    assert.equal(await page.locator('#tfOption').textContent(), statement.zh);
+    const mistake = questions === 1;
+    // ← — «верно», → — «неверно»; ошибаемся только на первом вопросе
+    const sayTrue = mistake ? !statement.isTrue : statement.isTrue;
+    await page.keyboard.press(sayTrue ? 'ArrowLeft' : 'ArrowRight');
+    await page.locator('#nextButton:not(.hidden)').waitFor();
+    if (mistake) {
+      wrongId = statement.id;
+      const record = bank.find((r) => r.id === statement.id);
+      const right = record.options.find((o) => o.id === record.answer.optionId);
+      assert.equal(await page.locator('#feedback.bad').isVisible(), true);
+      assert.ok((await page.locator('#feedback').textContent()).includes(right.zh), 'нет правильного ответа');
+      assert.match(await page.locator('#scoreLabel').textContent(), /серия 0/);
+    }
+    if (questions === 6) assert.equal(statement.id, wrongId, 'шестым должен вернуться ошибочный вопрос');
+    await page.keyboard.press('Enter');
+  }
+  assert.equal(await page.locator('#finalScore').textContent(), '4 / 5');
+  assert.match(await page.locator('#mistakeList li').first().textContent(), /«(не)?верно» для/);
+  await page.locator('#repeatMistakes').click();
+  assert.equal(await page.locator('#tfPanel').isVisible(), true, 'повтор ошибок — в том же формате');
+  assert.deepEqual(page.errors, []);
+});
+
+test('верно или нет: угаданное «верно» не выводит вопрос из «Ошибок»', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  const target = bank.find((r) => r.answer.state === 'verified');
+  await page.evaluate((id) => localStorage.setItem('lingvo-trainer:v1', JSON.stringify({
+    version: 1,
+    progress: { [id]: { attempts: 1, correct: 0, completed: true, lastCorrect: false, box: 0, dueAt: 0 } },
+  })), target.id);
+  await page.reload();
+  await page.locator('#setupView .mode-option', { hasText: 'Ошибки' }).click();
+  await pickFormat(page, 'Верно или нет');
+  await startRound(page, 5);
+  const statement = await currentStatement(page);
+  assert.equal(statement.id, target.id);
+  await page.locator(statement.isTrue ? '#tfTrue' : '#tfFalse').click();
+  assert.equal(await page.locator('#feedback.good').isVisible(), true);
+  await page.locator('#leaveRound').click();
+  assert.equal(await page.locator('#eligibleNotice').textContent(), 'Под фильтры подходит вопросов: 1.');
+  assert.deepEqual(page.errors, []);
+});
+
+test('телефон: «Верно или нет» с длинным вариантом без горизонтальной прокрутки', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 360, height: 780 });
+  if (!page) return;
+  await page.evaluate(() => {
+    for (const r of QUESTION_BANK) for (const o of r.options) o.zh = `${o.zh}中华人民共和国全国人民代表大会常务委员会`;
+  });
+  const overflow = () => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+  await pickFormat(page, 'Верно или нет');
+  await startRound(page, 5);
+  assert.equal(await overflow(), 0, 'карточка с предложенным ответом');
+  await page.locator('#tfTrue').click();
+  assert.equal(await overflow(), 0, 'разбор ответа');
+  assert.deepEqual(page.errors, []);
+});
+
 /* ---------- раздел «Чэнъюй» ---------- */
 
 async function openChengyu(page) {

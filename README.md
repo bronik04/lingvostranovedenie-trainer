@@ -19,6 +19,7 @@
     python3 scripts/import_sources.py     # sources/ -> data/raw/
     python3 scripts/merge_bank.py         # data/raw/ -> data/bank.json + отчёты
     python3 scripts/taxonomy.py           # проставить темы
+    python3 scripts/coverage_map.py       # карта покрытия: data/review/coverage.md
     python3 scripts/build_html.py         # data/bank.json -> dist/
 
 Оформление — дизайн-система «Тушь и киноварь». `src/ink/` — копия её токенов и

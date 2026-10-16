@@ -2,12 +2,13 @@ const PLAYABLE = new Set(['verified', 'unverified']);
 const LABELS = ['A', 'B', 'C', 'D'];
 const STUDY_MODES = new Set(['all', 'new', 'mistakes', 'due']);
 const ROUND_SIZES = new Set([5, 10, 20, 50, Number.MAX_SAFE_INTEGER]);
+export const FORMATS = new Set(['choice', 'recall', 'truefalse']);
+const OUTCOMES = new Set(['correct', 'partial', 'wrong', 'checked']);
 
 // Упрощённый вариант интервального повторения (Leitner-стиль): бокс растёт на
-// верном ответе и сгорает до нуля на ошибке. Полноценный SM-2 просит оценку
-// «насколько легко вспомнилось» по шкале 0–5 — у нас есть только бинарный
-// верно/неверно от клика по варианту, так что более тонкая шкала не даст
-// дополнительного сигнала.
+// верном ответе и сгорает до нуля на ошибке. Полноценный SM-2 со шкалой 0–5 не
+// нужен: выбор из вариантов даёт только верно/неверно, а самооценка во «Вспомни
+// сам» добавляет одну промежуточную ступень — «вспомнил неточно» (applyAnswer).
 const REVIEW_INTERVALS_DAYS = [0, 1, 3, 7, 16, 35, 90];
 const DAY_MS = 86_400_000;
 
@@ -96,6 +97,7 @@ export function normaliseStudySettings(value, bank) {
   const defaults = {
     filters: { topics: [], years: [], stages: [], mode: 'all', onlyVerified: false },
     size: 10,
+    format: 'choice',
   };
   if (!value || typeof value !== 'object' || Array.isArray(value)) return defaults;
 
@@ -117,6 +119,7 @@ export function normaliseStudySettings(value, bank) {
       onlyVerified: typeof filters.onlyVerified === 'boolean' ? filters.onlyVerified : false,
     },
     size: ROUND_SIZES.has(value.size) ? value.size : defaults.size,
+    format: FORMATS.has(value.format) ? value.format : defaults.format,
   };
 }
 
@@ -158,6 +161,29 @@ export function roundScore(correct, initialRoundLength) {
 export function scheduleReview(previous, correct, now = Date.now()) {
   const box = correct ? Math.min((previous?.box ?? 0) + 1, REVIEW_INTERVALS_DAYS.length - 1) : 0;
   return { box, dueAt: now + REVIEW_INTERVALS_DAYS[box] * DAY_MS };
+}
+
+// Исход ответа → новая запись прогресса. correct — знал; partial — вспомнил неточно
+// или верно после подсказки: коробка не растёт (но не ниже первой); wrong — ошибка;
+// checked — верно в «Верно или нет»: угадать можно в половине случаев, поэтому
+// коробка, срок и lastCorrect не меняются, а новый вопрос сразу ждёт повторения.
+export function applyAnswer(previous, outcome, now = Date.now()) {
+  if (!OUTCOMES.has(outcome)) throw new Error(`неизвестный исход ответа: ${outcome}`);
+  const entry = {
+    attempts: (previous?.attempts ?? 0) + 1,
+    correct: (previous?.correct ?? 0) + (outcome === 'wrong' ? 0 : 1),
+    completed: true,
+  };
+  if (outcome === 'checked') {
+    return previous?.completed
+      ? { ...entry, lastCorrect: previous.lastCorrect, box: previous.box, dueAt: previous.dueAt }
+      : { ...entry, lastCorrect: true, box: 0, dueAt: now };
+  }
+  if (outcome === 'partial') {
+    const box = Math.max(previous?.box ?? 0, 1);
+    return { ...entry, lastCorrect: true, box, dueAt: now + REVIEW_INTERVALS_DAYS[box] * DAY_MS };
+  }
+  return { ...entry, lastCorrect: outcome === 'correct', ...scheduleReview(previous, outcome === 'correct', now) };
 }
 
 export function eligible(bank, filters, progress, now = Date.now()) {
@@ -268,6 +294,31 @@ export function optionGlosses(record) {
   return record.options
     .filter((option) => option.id !== record.answer.optionId && option.gloss)
     .map((option) => ({ optionId: option.id, zh: option.zh, gloss: option.gloss }));
+}
+
+// «Верно или нет»: с вероятностью ½ — правильный вариант, иначе любой неверный,
+// у записи с общим набором — из всего набора. Неверный, но верный как отдельное
+// утверждение вариант («выше 3000 м» при ответе «выше 4500 м») помечен
+// trueFalse: false (data/review/truefalse.json) и здесь не предлагается.
+export function trueFalseStatement(record, random = Math.random) {
+  const right = record.options.find((option) => option.id === record.answer.optionId);
+  if (!right) throw new Error(`у вопроса нет правильного варианта: ${record.id}`);
+  const isTrue = random() < 0.5;
+  const wrong = record.options.filter((option) => option !== right && option.trueFalse !== false);
+  const option = isTrue ? right : wrong[Math.floor(random() * wrong.length)];
+  return { optionId: option.id, zh: option.zh, isTrue };
+}
+
+// Вопросы, на которые без вариантов не ответить: «Что из перечисленного…»,
+// «Какое животное не входит в зодиак?». Правило по формулировке эвристическое:
+// промах безвреден — ученик откроет варианты сам, лишний вопрос просто сразу
+// покажет четыре варианта. В регулярках нет кавычек и двух косых подряд — их
+// не поймёт минификатор сборки.
+const LISTED_OPTIONS = /перечисленн|из следующих|из приведённых|из приведенных|из этих|из указанных/i;
+const NEGATED_MEMBERSHIP = /(?<![а-яё])не\s+(является|являлся|являются|входит|входят|относится|относятся|был|была|было|были|граничит|принадлежит)(?![а-яё])/i;
+
+export function needsOptions(record) {
+  return LISTED_OPTIONS.test(record.questionRu) || NEGATED_MEMBERSHIP.test(record.questionRu);
 }
 
 export function pluralRu(count, forms) {
