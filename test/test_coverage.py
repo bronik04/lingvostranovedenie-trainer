@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from coverage_map import coverage_report, theme_matches, topic_shares, validate_themes
+from coverage_map import coverage_report, theme_matches, topic_shares, validate_coverage, validate_themes
 from taxonomy import TOPICS
 
 GEO, HIST = TOPICS[0], TOPICS[3]
@@ -13,6 +13,7 @@ def record(id='2015-16-shk-1', topic=GEO, questionRu='Какая провинц�
            occurrences=True, **extra):
     return {'id': id, 'topic': topic, 'questionRu': questionRu, 'questionZh': None,
             'options': options or [{'id': 'o1', 'zh': '新疆'}, {'id': 'o2', 'zh': '西藏'}],
+            'answer': {'optionId': (options or [{'id': 'o1'}])[0]['id'], 'state': 'verified'},
             'occurrences': [{'year': '2015-16'}] if occurrences else [], **extra}
 
 
@@ -34,23 +35,42 @@ class ValidateThemesTest(unittest.TestCase):
 
     def test_theme_needs_a_source(self):
         self.assertTrue(any('sources' in e for e in validate_themes([theme(sources=[])])))
+        self.assertTrue(any('sources' in e for e in validate_themes([theme(sources=[1])])))
+
+    def test_broken_coverage_file_gives_a_message(self):
+        self.assertTrue(validate_coverage({'themes': [theme()], 'target': '1000'}))
+        self.assertTrue(validate_coverage({'target': 1000}))
+        self.assertTrue(validate_coverage([]))
+        self.assertEqual(validate_coverage({'themes': [theme()], 'target': 1000}), [])
 
 
 class ThemeMatchesTest(unittest.TestCase):
-    def test_question_text_and_options_are_searched_ignoring_case(self):
+    def test_question_text_and_the_answer_are_searched_ignoring_case(self):
         bank = [record(), record(id='b', questionRu='Где течёт Хуанхэ?', options=[{'id': 'o1', 'zh': '山东省'}]),
                 record(id='c', questionRu='Кто написал «Сон в красном тереме»?', options=[{'id': 'o1', 'zh': '曹雪芹'}])]
         self.assertEqual(theme_matches(bank, [theme(match=['ПРОВИНЦИ', '省'])]), {'geo-provinces': ['2015-16-shk-1', 'b']})
+
+    def test_wrong_options_are_not_searched(self):
+        # неверный вариант — соседний факт: 曹雪芹 среди вариантов вопроса о «Речных заводях» не делает его вопросом о «Сне»
+        question = record(questionRu='Кто автор «Речных заводей»?',
+                          options=[{'id': 'o1', 'zh': '施耐庵'}, {'id': 'o2', 'zh': '曹雪芹'}])
+        self.assertEqual(theme_matches([question], [theme(match=['曹雪芹'])]), {'geo-provinces': []})
+
+    def test_russian_words_match_from_the_start_of_a_word(self):
+        bank = [record(questionRu='Какие сады Сучжоу внесены в список?'), record(id='b', questionRu='День посадки деревьев')]
+        self.assertEqual(theme_matches(bank, [theme(match=['сад'])]), {'geo-provinces': ['2015-16-shk-1']})
 
     def test_yo_and_ye_are_the_same_letter(self):
         bank = [record(questionRu='Сколько ступеней учёных степеней в КНР?'),
                 record(id='b', questionRu='Сколько ступеней ученых степеней в КНР?')]
         self.assertEqual(theme_matches(bank, [theme(match=['учёных степеней'])]), {'geo-provinces': ['2015-16-shk-1', 'b']})
 
-    def test_options_added_by_a_dossier_are_not_searched(self):
-        embedded = record(questionRu='Какой праздник отмечают 10 сентября?', dossier='holidays',
-                          options=[{'id': 'o1', 'zh': '教师节'}, {'id': 'hol-x', 'zh': '湖南省'}])
-        self.assertEqual(theme_matches([embedded], [theme()]), {'geo-provinces': []})
+    def test_answer_of_a_dossier_question_is_searched(self):
+        # у вопроса досье id вариантов — id строк таблицы; ответ ищется, соседние строки — нет
+        dossier_question = record(questionRu='Какой праздник отмечают 10 сентября?', dossier='holidays',
+                                  options=[{'id': 'hol-teacher', 'zh': '教师节'}, {'id': 'hol-x', 'zh': '湖南省'}])
+        self.assertEqual(theme_matches([dossier_question], [theme(match=['教师节'])]), {'geo-provinces': ['2015-16-shk-1']})
+        self.assertEqual(theme_matches([dossier_question], [theme()]), {'geo-provinces': []})
 
 
 class TopicSharesTest(unittest.TestCase):

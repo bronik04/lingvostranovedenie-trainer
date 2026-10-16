@@ -2,7 +2,8 @@
 
 Темы — `data/coverage.json`: у каждой категория олимпиады, название, откуда тема (олимпиада, книга
 автора, видеокурс, заметки об идеях) и слова для поиска. Вопрос относится к теме, если слово стоит
-в его тексте или в вариантах (без вариантов, добавленных досье: они о соседних фактах). Отчёт —
+в его тексте или в правильном ответе: неверные варианты — соседние факты, они тему не задают.
+Русское слово ищется с начала слова («сад» не найдёт «посадку»), «ё» и «е» не различаются. Отчёт —
 `data/review/coverage.md`: доли категорий в олимпиаде и в банке, сколько вопросов каждой категории
 нужно к цели, пустые и слабые темы, вопросы вне тем — по ним видно, чего не хватает списку тем.
 """
@@ -19,7 +20,6 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 
 from taxonomy import TOPICS  # noqa: E402
 
-ORIGINAL_OPTION = re.compile(r'o\d+')
 FEW = 3  # тема с меньшим числом вопросов — слабая
 
 
@@ -44,16 +44,30 @@ def validate_themes(themes: object) -> list[str]:
         if not isinstance(match, list) or not match or not all(isinstance(m, str) and m.strip() for m in match):
             errors.append(f'{theme_id}: match — непустой список слов')
         sources = theme.get('sources')
-        if not isinstance(sources, list) or not sources:
-            errors.append(f'{theme_id}: sources — откуда тема (олимпиада, книга, курс, идеи)')
+        if not isinstance(sources, list) or not sources or not all(isinstance(s, str) and s.strip() for s in sources):
+            errors.append(f'{theme_id}: sources — откуда тема (олимпиада, книга, курс, идеи), непустые строки')
+    return errors
+
+
+def validate_coverage(data: object) -> list[str]:
+    """Весь файл data/coverage.json: цель и темы — чтобы сборка падала с понятным сообщением."""
+    if not isinstance(data, dict):
+        return ['data/coverage.json — словарь с ключами target и themes']
+    errors: list[str] = []
+    target = data.get('target')
+    if not isinstance(target, int) or isinstance(target, bool) or target <= 0:
+        errors.append('target — положительное целое число (цель — сколько вопросов)')
+    if 'themes' not in data:
+        errors.append('нет ключа themes')
+    else:
+        errors += validate_themes(data['themes'])
     return errors
 
 
 def _haystack(record: dict) -> str:
-    options = [option for option in record['options']
-               if 'dossier' not in record or ORIGINAL_OPTION.fullmatch(option['id'])]
-    return _fold(' '.join([record['questionRu'], record.get('questionZh') or '']
-                          + [option['zh'] for option in options]))
+    answer_id = (record.get('answer') or {}).get('optionId')
+    answer = [option['zh'] for option in record['options'] if option['id'] == answer_id]
+    return _fold(' '.join([record['questionRu'], record.get('questionZh') or ''] + answer))
 
 
 def _fold(text: str) -> str:
@@ -61,11 +75,22 @@ def _fold(text: str) -> str:
     return text.lower().replace('ё', 'е')
 
 
+CYRILLIC = re.compile(r'[а-я]')
+
+
+def _pattern(word: str) -> re.Pattern:
+    folded = re.escape(_fold(word))
+    # русское слово — с начала слова, иероглифы — где угодно (в китайском нет пробелов)
+    return re.compile(r'(?<![а-я])' + folded if CYRILLIC.match(_fold(word)) else folded)
+
+
 def theme_matches(bank: list[dict], themes: list[dict]) -> dict[str, list[str]]:
     texts = [(record['id'], _haystack(record)) for record in bank]
-    return {theme['id']: [record_id for record_id, text in texts
-                          if any(_fold(word) in text for word in theme['match'])]
-            for theme in themes}
+    result: dict[str, list[str]] = {}
+    for theme in themes:
+        patterns = [_pattern(word) for word in theme['match']]
+        result[theme['id']] = [record_id for record_id, text in texts if any(p.search(text) for p in patterns)]
+    return result
 
 
 def topic_shares(bank: list[dict]) -> dict[str, dict]:
@@ -81,8 +106,8 @@ def coverage_report(bank: list[dict], themes: list[dict], target: int) -> str:
     lines = ['# Карта покрытия', '',
              f'В банке {len(bank)} вопросов. Цель — {target}: доли категорий как в олимпиаде, ни одной '
              'пустой темы из материалов автора. Собирается сборкой (`scripts/coverage_map.py`), темы — '
-             '`data/coverage.json`. Счёт по словам — приблизительный: вопрос может попасть в несколько '
-             'тем, а тема — собрать соседние вопросы; пустые и слабые темы при этом видны точно.', '',
+             '`data/coverage.json`. Счёт по словам в тексте вопроса и правильном ответе — приблизительный: '
+             'вопрос может попасть в несколько тем, а слово — поймать чужой вопрос.', '',
              '## Категории', '',
              '| Категория | Доля в олимпиаде | В банке | Нужно к цели | Не хватает |', '|---|---|---|---|---|']
     for topic in TOPICS:
@@ -112,7 +137,7 @@ def coverage_report(bank: list[dict], themes: list[dict], target: int) -> str:
 def main() -> None:
     bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
     data = json.loads((ROOT / 'data/coverage.json').read_text('utf-8'))
-    errors = validate_themes(data['themes'])
+    errors = validate_coverage(data)
     if errors:
         raise SystemExit('некорректные темы data/coverage.json:\n - ' + '\n - '.join(errors))
     (ROOT / 'data/review/coverage.md').write_text(coverage_report(bank, data['themes'], data['target']), encoding='utf-8')
