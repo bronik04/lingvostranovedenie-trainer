@@ -1,0 +1,30 @@
+{
+  "id": "provinces",
+  "title": "Провинции и города",
+  "tables": {
+    "provinces": {
+      "columns": {
+        "name": "zh",
+        "full": "zh",
+        "kind": "zh",
+        "abbr": "zh",
+        "capital": "zh",
+        "named": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    },
+    "cities": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "region": "zh",
+        "nickname": "zh",
+        "river": "zh",
+        "known": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    }
+  }
+}
