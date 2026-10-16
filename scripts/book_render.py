@@ -61,7 +61,7 @@ def lesson_xhtml(a: Annotated, block: dict, root: Path, draft_mark: bool, img_ba
     parts += [_block(b) for b in a.blocks]
     gloss = ''.join(f'<div><b>{escape(g.word)}</b> <i>{escape(g.pinyin)}</i> — {escape(g.ru)}</div>' for g in l.gloss)
     parts.append(f'<div class="box"><h2>生词</h2><div class="gloss">{gloss}</div></div>')
-    tf = ''.join(f'<li>{escape(i.text)}</li>' for i in l.tf)
+    tf = ''.join(f'<li>{n}) ☐ {escape(i.text)}</li>' for n, i in enumerate(l.tf, 1))
     parts.append(f'<div class="box ex"><h2>判断正误</h2><ol class="tf">{tf}</ol></div>')
     qa = ''.join(f'<li>{escape(i.text)}</li>' for i in l.qa)
     parts.append(f'<div class="box ex"><h2>回答问题</h2><ol>{qa}</ol></div>')

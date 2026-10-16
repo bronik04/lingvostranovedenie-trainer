@@ -121,11 +121,20 @@ def load_blocks(path: Path = BOOK / 'blocks.json') -> list[dict]:
 
 
 def load_lessons(src: Path = BOOK / 'src') -> list[Lesson]:
+    slugs = [b['slug'] for b in load_blocks()]
+    if src.is_dir():
+        stray = sorted(p.name for p in src.iterdir() if p.is_dir() and p.name not in slugs)
+        if stray:
+            raise LessonError(f'{src}: папки не из book/blocks.json — {", ".join(stray)}')
     lessons = []
-    for block in load_blocks():
-        folder = src / block['slug']
+    for slug in slugs:
+        folder = src / slug
         if folder.is_dir():
-            lessons += [parse_lesson(p) for p in sorted(folder.glob('*.md'))]
+            for p in sorted(folder.glob('*.md')):
+                lesson = parse_lesson(p)
+                if lesson.block != slug:
+                    raise LessonError(f'{p}: block «{lesson.block}», а урок лежит в папке {slug}/')
+                lessons.append(lesson)
     return lessons
 
 

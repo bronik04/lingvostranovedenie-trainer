@@ -62,6 +62,27 @@ class AnnotateTest(unittest.TestCase):
         self.assertIn('многозначный', a.errors[0])
         self.assertEqual(book_level.annotate(lesson('很{重|zhòng}。'), v).errors, [])
 
+    def test_single_char_hsk5_needs_mark(self):
+        v = vocab(被=3, 了=1, 倒=(5, 'dào'))
+        a = book_level.annotate(lesson('{砍|kǎn}倒了。'), v)
+        self.assertTrue(any('倒' in e for e in a.errors), a.errors)
+        self.assertEqual(book_level.annotate(lesson('{砍|kǎn}{倒|dǎo}了。'), v).errors, [])
+
+    def test_polyphone_from_shown_word_needs_mark(self):
+        a = book_level.annotate(lesson('{西藏|Xīzàng}的药，藏在盒子里。'), vocab(的=1, 药=2, 在=1, 盒子=4, 里=1))
+        self.assertTrue(any('藏' in e for e in a.errors), a.errors)
+
+    def test_unknown_word_does_not_split_into_hsk5_pieces(self):
+        a = book_level.annotate(lesson('他很刻薄。'), vocab(他=1, 很=1, 刻=(5, 'kè'), 薄=(5, 'báo')))
+        self.assertTrue(a.errors, 'незнакомое 刻薄 прошло через части HSK 5')
+        self.assertNotIn(Run('薄', 'báo'), pinyin_runs(a))
+
+    def test_segmentation_does_not_depend_on_previous_lessons(self):
+        tok = book_level._tokenizer()
+        total = tok.total
+        book_level.annotate(lesson('{逢蒙|Féng Méng}来了。'), vocab(来=1, 了=1))
+        self.assertEqual(tok.total, total)
+
     def test_decomposable_compound_is_known(self):
         a = book_level.annotate(lesson('打不过。'), vocab(打=1, 不=1, 过=1))
         self.assertEqual(a.errors, [])
@@ -69,6 +90,10 @@ class AnnotateTest(unittest.TestCase):
 
     def test_char_from_shown_word_is_known(self):
         a = book_level.annotate(lesson('{射箭|shè jiàn}，射下了。'), vocab(下=1, 了=1))
+        self.assertEqual(a.errors, [])
+
+    def test_shown_char_beats_hsk5_single(self):
+        a = book_level.annotate(lesson('{射箭|shè jiàn}，射了。'), vocab(了=1, 射=(5, 'shè')))
         self.assertEqual(a.errors, [])
 
     def test_gloss_word_gets_gloss_pinyin(self):
@@ -109,6 +134,14 @@ class LoadVocabTest(unittest.TestCase):
             v = book_level.load_vocab(Path(tmp))
             self.assertEqual((v.level['爱'], v.level['温暖'], v.level['们']), (1, 5, 1))
             self.assertEqual(v.pinyin['温暖'], 'wēnnuǎn')
+
+    @needs_jieba
+    def test_fixes_override_deck_pinyin(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            Path(tmp, 'hsk20.tsv').write_text('从此\tcōngcǐ\t5\n', encoding='utf-8')
+            Path(tmp, 'fixes.tsv').write_text('# слово\tпиньинь\tпричина\n从此\tcóngcǐ\tопечатка в колоде\n', encoding='utf-8')
+            v = book_level.load_vocab(Path(tmp))
+            self.assertEqual((v.pinyin['从此'], v.level['从此']), ('cóngcǐ', 5))
 
 
 SRC = ROOT / 'book' / 'src'

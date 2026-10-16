@@ -6,7 +6,7 @@ image: img/chengyu-shouzhudaitu.png
 status: draft
 ---
 
-{古时候|gǔ shíhou}，{宋国|Sòngguó}有一个农民，每天都在{田|tián}里辛辛苦苦地{干活|gàn huó}。他的田边有一个{树桩|shùzhuāng}，是一棵大树被{砍|kǎn}倒以后留下来的。
+{古时候|gǔ shíhou}，{宋国|Sòngguó}有一个农民，每天都在{田|tián}里辛辛苦苦地{干活|gàn huó}。他的田边有一个{树桩|shùzhuāng}，是一棵大树被{砍倒|kǎndǎo}以后留下来的。
 
 有一天，他正在地里{耕地|gēng dì}，忽然看见一只{野兔|yětù}从{草丛|cǎocóng}里飞快地跑了出来。也许是太{慌张|huāngzhāng}了，兔子没看清前面的路，一头{撞|zhuàng}在了树桩上，{折断|zhéduàn}了脖子，死了。
 

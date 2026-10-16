@@ -45,6 +45,10 @@ class LessonXhtmlTest(unittest.TestCase):
         self.assertIn('<ruby>温暖<rt>wēnnuǎn</rt></ruby>', xhtml)
         self.assertNotIn('черновик', xhtml)
 
+    def test_true_false_items_are_numbered_like_key(self):
+        xhtml = book_render.lesson_xhtml(annotated(), MYTHS, ROOT / 'book', False)
+        self.assertIn('1) ☐ 盘古是神。', xhtml)
+
     def test_missing_image_gives_placeholder(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

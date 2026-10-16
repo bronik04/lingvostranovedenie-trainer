@@ -112,6 +112,22 @@ class TextTest(LessonCase):
 
 
 class LoadTest(unittest.TestCase):
+    def test_unknown_folder_is_error(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            src = Path(tmp)
+            (src / 'folktales').mkdir()
+            (src / 'folktales' / '01-myth-test.md').write_text(lesson_text(), encoding='utf-8')
+            with self.assertRaises(book_lesson.LessonError):
+                book_lesson.load_lessons(src)
+
+    def test_block_must_match_folder(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            src = Path(tmp)
+            (src / 'chengyu').mkdir()
+            (src / 'chengyu' / '01-myth-test.md').write_text(lesson_text(block='myths'), encoding='utf-8')
+            with self.assertRaises(book_lesson.LessonError):
+                book_lesson.load_lessons(src)
+
     def test_load_lessons_in_block_order(self):
         with tempfile.TemporaryDirectory() as tmp:
             src = Path(tmp)

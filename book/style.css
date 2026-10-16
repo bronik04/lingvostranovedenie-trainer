@@ -40,8 +40,7 @@ ol.examples { margin: 0 0 2mm; }
 .gloss i { font-family: "PingFang SC", sans-serif; font-style: normal; color: #7a6f60; font-size: 8.5pt; }
 .ex { font-size: 11pt; line-height: 1.8; }
 .ex ol { margin: 0; padding-left: 6mm; }
-ol.tf { list-style: none; padding-left: 0; }
-ol.tf li::before { content: "☐ "; }
+ol.tf { list-style: none; padding-left: 0 !important; }
 .note { font-family: "PingFang SC", sans-serif; font-size: 9pt; line-height: 1.6; color: #4a4339;
         border-top: 1px solid #e2d6c6; margin-top: 4mm; padding-top: 2mm; }
 .key { font-size: 10.5pt; line-height: 1.7; }

@@ -17,8 +17,10 @@ from book_lesson import BOOK, MARK, Lesson
 jieba.setLogLevel(logging.WARNING)
 
 HAN = re.compile(r'[一-鿿]')
-# Одиночные иероглифы HSK 5–6 с несколькими чтениями: пиньинь из списка для них ненадёжен.
-POLYPHONES = frozenset('长行重还得了着调传好干种便藏几朝都为相觉没地乐少只数难教分当应假空背')
+# Многозначные иероглифы: правило «уже был в слове с пиньинем» на них не распространяется
+# (藏 в 西藏 — zàng, в 藏药 — cáng). Одиночное слово HSK 5–6 пометки требует всегда.
+POLYPHONES = frozenset('长行重还得了着调传好干种便藏几朝都为相觉没地乐少只数难教分当应假空背'
+                       '倒圈称露嚷薄曾会处冲差降散似量缝扎折卷弹奔担挑劲落血削恶尽')
 FORCE_FREQ = 10 ** 6
 
 
@@ -63,6 +65,12 @@ def load_vocab(hsk_dir: Path = BOOK / 'hsk') -> Vocab:
             word, py, lv = line.split('\t')[:3]
             if word not in level or int(lv) < level[word]:
                 level[word], pinyin[word] = int(lv), py
+    fixes = hsk_dir / 'fixes.tsv'  # исправленные чтения: в колодах Anki бывают опечатки (从此 cōngcǐ)
+    if fixes.exists():
+        for line in fixes.read_text(encoding='utf-8').splitlines():
+            if line.strip() and not line.startswith('#'):
+                word, py = line.split('\t')[:2]
+                pinyin[word] = py
     return Vocab(level, pinyin)
 
 
@@ -106,10 +114,12 @@ class _Annotator:
 
     def char_shown(self, char: str) -> bool:
         """Иероглиф уже был в слове с пиньинем в этом уроке (射 после 射箭)."""
-        return len(char) == 1 and any(char in w for w in self.shown)
+        return len(char) == 1 and char not in POLYPHONES and any(char in w for w in self.shown)
 
     def known(self, piece: str) -> bool:
-        return (piece in self.vocab.level or piece in self.shown
+        level = self.vocab.level.get(piece, 9)
+        # часть — слово HSK 1–4 или многосложное HSK 5–6 (у одиночного чтение из списка ненадёжно)
+        return (level <= 4 or (level <= 6 and len(piece) > 1) or piece in self.shown
                 or piece in self.gloss or piece in self.marked or self.char_shown(piece))
 
     def split(self, token: str) -> list[str] | None:
@@ -136,12 +146,10 @@ class _Annotator:
             self.error(token, 'первое появление без пиньиня — поставьте пометку здесь')
             return [Run(token)]
         lv = self.vocab.level.get(token)
-        if lv is not None and lv <= 4:
+        if (lv is not None and lv <= 4) or self.char_shown(token):
             return [Run(token)]
         if lv is not None:
             return [self.upper(token, lv)]
-        if self.char_shown(token):
-            return [Run(token)]
         pieces = self.split(token)
         if pieces and len(pieces) > 1:
             return [r for p in pieces for r in self.word(p)]
@@ -151,8 +159,9 @@ class _Annotator:
     def upper(self, token: str, lv: int) -> Run:
         self.shown.add(token)
         (self.hsk5 if lv == 5 else self.hsk6).append(token)
-        if len(token) == 1 and token in POLYPHONES:
-            self.error(token, f'многозначный иероглиф, поставьте {{{token}|…}}')
+        if len(token) == 1:
+            kind = 'многозначный иероглиф' if token in POLYPHONES else 'одиночный иероглиф HSK 5–6'
+            self.error(token, f'{kind}: чтение из списка ненадёжно, поставьте {{{token}|…}} или внесите в «生词»')
             return Run(token)
         return Run(token, self.vocab.pinyin.get(token) or None)
 
@@ -198,6 +207,7 @@ def annotate(lesson: Lesson, vocab: Vocab) -> Annotated:
     a = _Annotator(lesson, vocab, tok)
     words = a.marked | set(a.gloss)
     saved = {w: tok.FREQ.get(w, 0) for w in words}
+    total = tok.total
     try:
         for w in words:
             tok.add_word(w, max(saved[w], FORCE_FREQ))
@@ -208,4 +218,5 @@ def annotate(lesson: Lesson, vocab: Vocab) -> Annotated:
                 tok.add_word(w, freq)
             else:
                 tok.del_word(w)
+        tok.total = total
     return Annotated(lesson, blocks, a.errors, a.hsk5, a.hsk6)
