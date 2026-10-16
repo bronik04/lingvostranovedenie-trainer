@@ -68,6 +68,13 @@
   из бланков `sources/chengyu/`, ключ подтверждается `python3 scripts/chengyu.py --sources`;
   id задания `cy-<чэнъюй>` не менять (на нём прогресс). Составленные задания — только черновики
   `drafts.json`, в раздел идут со `status: "accepted"` после проверки агентом и решения автора.
+- Книга для чтения «中国文化故事» живёт отдельно от тренажёра (`book/`, спецификация
+  `docs/superpowers/specs/2026-10-16-culture-reader-design.md`, порядок работы — `book/README.md`).
+  Уроки правятся только в `book/src/`; проверка — `.venv/bin/python3 scripts/book.py check`
+  (нужен jieba из `requirements.txt`; без него книжные тесты локально пропускаются, в CI
+  обязательны). В книжку идут только уроки со `status: accepted` — принятые автором после
+  проверки фактов отдельным агентом. `book/hsk/extra.tsv` пополняется только словами, которые
+  ученик HSK 4 знает, с причиной; спорному слову ставится пиньинь в уроке.
 - Тесты: `python3 -m unittest discover -s test -t .` и `node --test test/*.test.mjs`.
   Браузерный `test/ui.test.mjs` проходит собранный `dist/` в Chrome без окна; ему нужны
   установленный Google Chrome и `npm ci`. Локально без них он пропускается, в CI падает.
