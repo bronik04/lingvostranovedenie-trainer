@@ -377,8 +377,9 @@ def main() -> None:
     bank.extend(load_authored(ROOT / 'data/authored/questions.json', bank))
     # досье — сразу после дополнений: правки, склейки и подписи дальше работают и для них
     loaded: list[tuple[dict, list[dict]]] = []
+    fact_groups = load_fact_groups(ROOT / 'data/review/fact-groups.json')
     for table_path, questions_path in dossier_paths(ROOT / 'data/dossiers'):
-        dossier, questions = load_dossier(table_path, questions_path, bank)
+        dossier, questions = load_dossier(table_path, questions_path, bank, fact_groups)
         bank.extend(dossier_records(dossier, questions))
         loaded.append((dossier, questions))
     errors = validate_links({dossier['id']: dossier for dossier, _ in loaded})
@@ -395,7 +396,7 @@ def main() -> None:
     # встраивание олимпиадных вопросов в досье — по итоговым id, до подписей glosses.json
     glosses = load_glosses(ROOT / 'data/review/glosses.json')
     bank = apply_embeds(bank, loaded, glosses)
-    bank = apply_fact_groups(bank, load_fact_groups(ROOT / 'data/review/fact-groups.json'))
+    bank = apply_fact_groups(bank, fact_groups)
     # дополнения после правок проверяются здесь же, чтобы не записать банк,
     # который сборка потом отвергнет
     errors = validate_authored([r for r in bank if r.get('origin') == 'addition'],
@@ -403,7 +404,7 @@ def main() -> None:
     if errors:
         raise ValueError('дополнения после правок некорректны:\n - ' + '\n - '.join(errors))
     # утечки между досье — по окончательным текстам, с правками и встраиваниями
-    errors = cross_leak_errors(bank, loaded)
+    errors = cross_leak_errors(bank, loaded, fact_groups)
     if errors:
         raise ValueError('утечки между вопросами досье:\n - ' + '\n - '.join(errors))
     # подписи к неверным вариантам — самым последним слоем: они сверяются с
