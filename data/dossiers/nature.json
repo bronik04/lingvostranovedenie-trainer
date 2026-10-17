@@ -1,0 +1,83 @@
+{
+  "id": "nature",
+  "title": "Природа и инженерия",
+  "tables": {
+    "waters": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "kind": "zh",
+        "source": "zh",
+        "mouth": "zh",
+        "nickname": "zh",
+        "feature": "zh",
+        "era": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    },
+    "lakes": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "kind": "zh",
+        "province": "zh",
+        "river": "zh",
+        "feature": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    },
+    "seas": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "kind": "zh",
+        "ocean": "zh",
+        "province": "zh",
+        "feature": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    },
+    "mountains": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "kind": "zh",
+        "group": "zh",
+        "title": "zh",
+        "province": "zh",
+        "feature": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    },
+    "landforms": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "kind": "zh",
+        "nickname": "zh",
+        "province": "zh",
+        "feature": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    },
+    "engineering": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "kind": "zh",
+        "river": "zh",
+        "province": "zh",
+        "era": "zh",
+        "builder": "zh",
+        "feature": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    }
+  }
+}
