@@ -123,18 +123,18 @@ class LoadTest(unittest.TestCase):
     def test_block_must_match_folder(self):
         with tempfile.TemporaryDirectory() as tmp:
             src = Path(tmp)
-            (src / 'chengyu').mkdir()
-            (src / 'chengyu' / '01-myth-test.md').write_text(lesson_text(block='myths'), encoding='utf-8')
+            (src / 'folk').mkdir()
+            (src / 'folk' / '01-myth-test.md').write_text(lesson_text(block='myths'), encoding='utf-8')
             with self.assertRaises(book_lesson.LessonError):
                 book_lesson.load_lessons(src)
 
     def test_load_lessons_in_block_order(self):
         with tempfile.TemporaryDirectory() as tmp:
             src = Path(tmp)
-            for block, name in [('chengyu', '01-myth-test.md'), ('myths', '02-myth-test.md')]:
+            for block, name in [('folk', '01-myth-test.md'), ('myths', '02-myth-test.md')]:
                 (src / block).mkdir()
                 (src / block / name).write_text(lesson_text(block=block), encoding='utf-8')
-            self.assertEqual([l.block for l in book_lesson.load_lessons(src)], ['myths', 'chengyu'])
+            self.assertEqual([l.block for l in book_lesson.load_lessons(src)], ['myths', 'folk'])
 
 
 if __name__ == '__main__':
