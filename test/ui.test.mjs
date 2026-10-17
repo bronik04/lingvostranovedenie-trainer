@@ -244,6 +244,7 @@ test('подписи появляются под неверными вариан
   const { record, wrongId } = await page.evaluate(() => {
     const target = QUESTION_BANK.find((r) => r.options.length === 4
       && QUESTION_BANK.filter((other) => other.questionRu === r.questionRu).length === 1);
+    if (!target) return { record: null, wrongId: null };
     target.options.forEach((o) => { delete o.gloss; });
     const wrong = target.options.find((o) => o.id !== target.answer.optionId);
     wrong.gloss = 'Тестовая подпись к неверному варианту';
@@ -251,6 +252,7 @@ test('подписи появляются под неверными вариан
     startRoundWith([target]);
     return { record: target, wrongId: wrong.id };
   });
+  assert.ok(record, 'в банке нет вопроса с постоянными четырьмя вариантами');
   assert.equal(await page.locator('.option-gloss').count(), 0, 'подпись видна до ответа');
   // неверный ответ именно на подписанный вариант: на кнопке будут и пометка, и подпись
   await page.locator(`#options button[data-option-id="${wrongId}"]`).click();
