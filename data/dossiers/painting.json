@@ -1,0 +1,58 @@
+{
+  "id": "painting",
+  "title": "Живопись и каллиграфия",
+  "tables": {
+    "painters": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "era": "zh",
+        "genre": "zh",
+        "subject": "zh",
+        "title": "zh",
+        "group": "zh",
+        "work": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    },
+    "calligraphers": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "era": "zh",
+        "script": "zh",
+        "style": "zh",
+        "title": "zh",
+        "group": "zh",
+        "work": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    },
+    "works": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "author": "zh",
+        "era": "zh",
+        "genre": "zh",
+        "script": "zh",
+        "title": "zh",
+        "museum": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    },
+    "terms": {
+      "columns": {
+        "name": "zh",
+        "kind": "zh",
+        "place": "zh",
+        "material": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    }
+  }
+}
