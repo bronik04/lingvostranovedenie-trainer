@@ -21,6 +21,10 @@ HAN = re.compile(r'[一-鿿]')
 # (藏 в 西藏 — zàng, в 藏药 — cáng). Одиночное слово HSK 5–6 пометки требует всегда.
 POLYPHONES = frozenset('长行重还得了着调传好干种便藏几朝都为相觉没地乐少只数难教分当应假空背'
                        '倒圈称露嚷薄曾会处冲差降散似量缝扎折卷弹奔担挑劲落血削恶尽')
+# Многозначные иероглифы, второе чтение которых ученик HSK 4 обычно не знает (当成 — dàng,
+# 背着 — bēi): если такой стоит в слове вне HSK, разобранном на части, нужна пометка.
+# Базовые 地/着/得/了/还/长 ученик читает в обоих чтениях — их здесь нет.
+RARE_READINGS = frozenset('当藏调传倒重朝背数难降散似缝扎折卷弹奔担挑劲削恶尽称露嚷薄曾冲量')
 FORCE_FREQ = 10 ** 6
 
 
@@ -152,6 +156,11 @@ class _Annotator:
             return [self.upper(token, lv)]
         pieces = self.split(token)
         if pieces and len(pieces) > 1:
+            risky = [p for p in pieces if len(p) == 1 and p in RARE_READINGS and p not in self.shown]
+            if risky:  # 当成: 当 здесь dàng, а ученик знает dāng
+                self.shown.add(token)
+                self.error(token, f'многозначный иероглиф {"、".join(risky)} в слове вне HSK: поставьте {{{token}|…}}')
+                return [Run(token)]
             return [r for p in pieces for r in self.word(p)]
         self.error(token, 'нет пиньиня (слово вне HSK) — поставьте {слово|pinyin} или внесите в «生词»')
         return [Run(token)]

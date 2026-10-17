@@ -83,6 +83,12 @@ class AnnotateTest(unittest.TestCase):
         book_level.annotate(lesson('{逢蒙|Féng Méng}来了。'), vocab(来=1, 了=1))
         self.assertEqual(tok.total, total)
 
+    def test_decomposed_word_with_polyphone_needs_mark(self):
+        v = vocab(把=3, 他=1, 当=(3, 'dāng'), 成=3, 祖先=(6, 'zǔxiān'))
+        a = book_level.annotate(lesson('把他当成祖先。'), v)
+        self.assertTrue(any('当成' in e for e in a.errors), a.errors)
+        self.assertEqual(book_level.annotate(lesson('把他{当成|dàngchéng}祖先。'), v).errors, [])
+
     def test_decomposable_compound_is_known(self):
         a = book_level.annotate(lesson('打不过。'), vocab(打=1, 不=1, 过=1))
         self.assertEqual(a.errors, [])

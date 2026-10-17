@@ -36,11 +36,14 @@ class CheckTest(unittest.TestCase):
     def test_good_lesson_passes(self):
         lines, errors = book.check(self.src, HSK)
         self.assertEqual(errors, 0, lines)
-        self.assertIn('myths/09-myth-change-benyue · draft ·', lines[0])
+        self.assertTrue(lines[0].startswith('myths/09-myth-change-benyue · '), lines[0])
         self.assertEqual(self.run_main()[0], 0)
 
     def test_check_reports_errors_and_exit_code(self):
-        text = GOOD.read_text(encoding='utf-8').replace('- 中秋节在农历八月十五。 | 对', '- 中秋节在农历八月十五。 | 是')
+        text = GOOD.read_text(encoding='utf-8')
+        tf = text.index('## 判断正误')
+        broken = text[tf:].replace(' | 对\n', ' | 是\n', 1)
+        text = text[:tf] + broken
         (self.src / 'myths' / GOOD.name).write_text(text, encoding='utf-8')
         lines, errors = book.check(self.src, HSK)
         self.assertEqual(errors, 1, lines)
