@@ -1,0 +1,45 @@
+{
+  "id": "modern-history",
+  "title": "История XIX–XX веков",
+  "tables": {
+    "events": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "kind": "zh",
+        "year": "zh",
+        "leader": "zh",
+        "place": "zh",
+        "slogan": "zh",
+        "memorial": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    },
+    "figures": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "post": "zh",
+        "born": "zh",
+        "idea": "zh",
+        "work": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    },
+    "treaties": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "partner": "zh",
+        "year": "zh",
+        "war": "zh",
+        "land": "zh",
+        "signer": "zh",
+        "about": "ru"
+      },
+      "rows": []
+    }
+  }
+}
