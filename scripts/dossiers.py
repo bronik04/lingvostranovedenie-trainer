@@ -154,7 +154,7 @@ def validate_dossier(dossier: object) -> list[str]:
 
 
 def validate_links(dossiers: dict[str, dict]) -> list[str]:
-    """Ссылки ячеек на строки других досье: `ref` — тот же персонаж (текст совпадает), `from` — назван по."""
+    """Ссылки ячеек на строки того же или других досье: `ref` — тот же персонаж (текст совпадает), `from` — назван по."""
     errors: list[str] = []
     for dossier_id, dossier in dossiers.items():
         for table_name, table in dossier['tables'].items():

@@ -626,6 +626,17 @@ class LocalLeakBridgeTest(unittest.TestCase):
         errors = validate_questions(questions, data)
         self.assertTrue(any('текст называет ответ вопроса' in error for error in errors), errors)
 
+    def test_a_bridge_does_not_hide_a_leak_to_an_unlinked_row(self):
+        # у вопроса есть связь, но текст называет ответ вопроса о другой, несвязанной строке
+        data, questions = self.fixture()
+        data['tables']['peoples']['rows'][0]['heritage']['ref'] = 'ethnos/heritage/olonkho'
+        questions[0]['questionRu'] = 'Какой народ сохраняет олонхо, а не хоомей?'
+        questions.append(question(id='ethnos-q03', status='draft',
+                                  fact={'table': 'heritage', 'row': 'khoomei', 'ask': 'name'},
+                                  questionRu='Как называется горловое пение тувинцев?'))
+        errors = validate_questions(questions, data)
+        self.assertTrue(any('ethnos-q03' in error for error in errors), errors)
+
     def test_a_bridge_does_not_allow_naming_its_own_answer(self):
         data, questions = self.fixture()
         data['tables']['peoples']['rows'][0]['heritage']['ref'] = 'ethnos/heritage/olonkho'
