@@ -596,7 +596,8 @@ def _group_owner(groups: dict[str, list[str]] | None) -> dict[str, str]:
 
 
 def _same_group(group_of: dict[str, str], left: str, right: str) -> bool:
-    """Раунд не покажет двух записей одной группы фактов — их взаимная подсказка не утечка."""
+    """Записи одной группы фактов автор признал одним фактом (раунд старается не ставить их
+    вместе), поэтому их взаимная подсказка не утечка."""
     return left in group_of and group_of[left] == group_of.get(right)
 
 

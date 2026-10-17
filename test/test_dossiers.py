@@ -631,13 +631,30 @@ class LocalLeakBridgeTest(unittest.TestCase):
             "ethnos-q02: текст называет ответ вопроса ethnos-q01: ['саха']"])
 
     def test_questions_of_one_fact_group_are_not_leaks(self):
-        # раунд не покажет двух вопросов одной группы фактов — так автор закрывает такую пару
+        # группа фактов — решение автора «это один факт»: так он закрывает такую пару
         data, questions = self.fixture()
         data['tables']['peoples']['rows'][0]['heritage']['ref'] = 'ethnos/heritage/olonkho'
         groups = {'sakha-olonkho': ['ethnos-q01', 'ethnos-q02']}
         self.assertEqual(validate_questions(questions, data, groups=groups), [])
         other = {'sakha-other': ['ethnos-q01', 'ethnos-q09'], 'olonkho-other': ['ethnos-q02', 'ethnos-q08']}
         self.assertEqual(len(self.leaks(validate_questions(questions, data, groups=other), 'ethnos-q02', 'ethnos-q01')), 1)
+
+    def test_explicit_options_answer_column_decides_the_bridge(self):
+        # колонка ответа вопроса с явными вариантами — из fact.answer, а не из ask
+        data, _ = self.fixture()
+        data['tables']['peoples']['rows'][0]['heritage']['ref'] = 'ethnos/heritage/olonkho'
+        about_sakha = question(id='ethnos-q01', status='draft',
+                               fact={'table': 'peoples', 'row': 'sakha', 'ask': 'region'},
+                               questionRu='Где живёт большинство народа саха, хранящего олонхо?')
+        rows = ('olonkho', 'khoomei', 'jangar', 'geser')
+        for column, leaks in (('name', []), ('people', ["ethnos-q01: текст называет ответ вопроса ethnos-q02: ['саха']"])):
+            with self.subTest(column=column):
+                explicit = question(id='ethnos-q02', status='draft', fact={
+                    'table': 'heritage', 'options': [{'row': r, 'column': column} for r in rows],
+                    'answer': {'row': 'olonkho', 'column': column}},
+                    questionRu='Какая традиция — героический эпос, исполняемый речитативом и пением?')
+                errors = validate_questions([about_sakha, explicit], data)
+                self.assertEqual(self.leaks(errors, 'ethnos-q01', 'ethnos-q02'), leaks, errors)
 
     def test_links_both_ways_let_both_questions_name_each_other(self):
         data, questions = self.fixture()
