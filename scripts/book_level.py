@@ -19,13 +19,15 @@ jieba.setLogLevel(logging.WARNING)
 HAN = re.compile(r'[一-鿿]')
 # Многозначные иероглифы: правило «уже был в слове с пиньинем» на них не распространяется
 # (藏 в 西藏 — zàng, в 藏药 — cáng). Одиночное слово HSK 5–6 пометки требует всегда.
-POLYPHONES = frozenset('长行重还得了着调传好干种便藏几朝都为相觉没地乐少只数难教分当应假空背'
+POLYPHONES = frozenset('长行重还得了着调传好干种便藏几朝都为相觉没地乐少只数难教分当应假空背待'
                        '倒圈称露嚷薄曾会处冲差降散似量缝扎折卷弹奔担挑劲落血削恶尽')
 # Многозначные иероглифы, второе чтение которых ученик HSK 4 обычно не знает (当成 — dàng,
 # 背着 — bēi): если такой стоит в слове вне HSK, разобранном на части, нужна пометка.
 # Базовые 地/着/得/了/还/长 ученик читает в обоих чтениях — их здесь нет.
 RARE_READINGS = frozenset('当藏调传倒重朝背数难降散似缝扎折卷弹奔担挑劲削恶尽称露嚷薄曾冲量')
 FORCE_FREQ = 10 ** 6
+# Знакомыми считаются слова HSK 1–5 (решение автора 2026-10-17); пиньинь — над HSK 6 и словами вне списков.
+KNOWN_LEVEL = 5
 
 
 @dataclass
@@ -103,6 +105,8 @@ class _Annotator:
     def __init__(self, lesson: Lesson, vocab: Vocab, tokenizer):
         self.vocab = vocab
         self.tok = tokenizer
+        # иероглифы знакомых слов: 古 из 古老, 作 из 工作 — часть слова вне списков
+        self.known_chars = {c for w, lv in vocab.level.items() if lv <= KNOWN_LEVEL for c in w}
         self.gloss = {g.word: g.pinyin for g in lesson.gloss if '…' not in g.word}
         self.marked = {w for w, _ in MARK.findall(lesson.body)}
         self.shown: set[str] = set()
@@ -122,8 +126,8 @@ class _Annotator:
 
     def known(self, piece: str) -> bool:
         level = self.vocab.level.get(piece, 9)
-        # часть — слово HSK 1–4 или многосложное HSK 5–6 (у одиночного чтение из списка ненадёжно)
-        return (level <= 4 or (level <= 6 and len(piece) > 1) or piece in self.shown
+        # часть — знакомое слово или многосложное HSK 6 (у одиночного чтение из списка ненадёжно)
+        return (level <= KNOWN_LEVEL or (level <= 6 and len(piece) > 1) or piece in self.shown
                 or piece in self.gloss or piece in self.marked or self.char_shown(piece))
 
     def split(self, token: str) -> list[str] | None:
@@ -131,7 +135,9 @@ class _Annotator:
         pieces, i = [], 0
         while i < len(token):
             for size in range(min(6, len(token) - i), 0, -1):
-                if self.known(token[i:i + size]):
+                piece = token[i:i + size]
+                if self.known(piece) or (size == 1 and len(token) > 1 and piece in self.known_chars
+                                         and piece not in RARE_READINGS):
                     pieces.append(token[i:i + size])
                     i += size
                     break
@@ -150,8 +156,14 @@ class _Annotator:
             self.error(token, 'первое появление без пиньиня — поставьте пометку здесь')
             return [Run(token)]
         lv = self.vocab.level.get(token)
-        if (lv is not None and lv <= 4) or self.char_shown(token):
+        if lv is not None and lv <= KNOWN_LEVEL:
+            if lv == 5 and token not in self.hsk5:
+                self.hsk5.append(token)
             return [Run(token)]
+        if self.char_shown(token) or self.reduplicated(token):
+            return [Run(token)]
+        if len(token) == 1 and token in self.known_chars and token not in POLYPHONES:
+            return [Run(token)]  # 罚 из 罚款, 靠 из 依靠: ученик HSK 5 знает и как отдельное слово
         if lv is not None:
             return [self.upper(token, lv)]
         pieces = self.split(token)
@@ -161,15 +173,27 @@ class _Annotator:
                 self.shown.add(token)
                 self.error(token, f'многозначный иероглиф {"、".join(risky)} в слове вне HSK: поставьте {{{token}|…}}')
                 return [Run(token)]
-            return [r for p in pieces for r in self.word(p)]
+            return [r for p in pieces for r in (self.word(p) if self.known(p) else [Run(p)])]
         self.error(token, 'нет пиньиня (слово вне HSK) — поставьте {слово|pinyin} или внесите в «生词»')
         return [Run(token)]
 
+    def reduplicated(self, token: str) -> bool:
+        """Повтор знакомого слова: 安安静静 (安静), 轻轻 (轻), 研究研究 (研究)."""
+        if len(token) == 2 and token[0] == token[1]:
+            base = token[0]
+        elif len(token) == 4 and token[0] == token[1] and token[2] == token[3]:
+            base = token[0] + token[2]
+        elif len(token) == 4 and token[:2] == token[2:]:
+            base = token[:2]
+        else:
+            return False
+        return self.known(base) and base not in RARE_READINGS
+
     def upper(self, token: str, lv: int) -> Run:
         self.shown.add(token)
-        (self.hsk5 if lv == 5 else self.hsk6).append(token)
+        self.hsk6.append(token)
         if len(token) == 1:
-            kind = 'многозначный иероглиф' if token in POLYPHONES else 'одиночный иероглиф HSK 5–6'
+            kind = 'многозначный иероглиф' if token in POLYPHONES else 'одиночный иероглиф HSK 6'
             self.error(token, f'{kind}: чтение из списка ненадёжно, поставьте {{{token}|…}} или внесите в «生词»')
             return Run(token)
         return Run(token, self.vocab.pinyin.get(token) or None)

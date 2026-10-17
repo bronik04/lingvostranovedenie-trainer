@@ -38,12 +38,41 @@ def pinyin_runs(a):
 
 @needs_jieba
 class AnnotateTest(unittest.TestCase):
-    def test_hsk5_word_gets_pinyin_once(self):
-        a = book_level.annotate(lesson('温暖，温暖。'), vocab(温暖=(5, 'wēnnuǎn')))
+    def test_hsk6_word_gets_pinyin_once(self):
+        a = book_level.annotate(lesson('温暖，温暖。'), vocab(温暖=(6, 'wēnnuǎn')))
         self.assertEqual(pinyin_runs(a), [Run('温暖', 'wēnnuǎn')])
         self.assertEqual(''.join(r.text for r in a.blocks[0].runs), '温暖，温暖。')
-        self.assertIn('温暖', a.hsk5)
+        self.assertIn('温暖', a.hsk6)
         self.assertEqual(a.errors, [])
+
+    def test_hsk5_word_is_known(self):
+        a = book_level.annotate(lesson('温暖，温暖。'), vocab(温暖=(5, 'wēnnuǎn')))
+        self.assertEqual(pinyin_runs(a), [])
+        self.assertEqual(a.errors, [])
+        self.assertEqual(a.hsk5, ['温暖'])
+
+    def test_compound_of_known_morphemes_is_known(self):
+        a = book_level.annotate(lesson('古书上说。'), vocab(古老=5, 书=1, 上=1, 说=1))
+        self.assertEqual(a.errors, [])
+        self.assertEqual(pinyin_runs(a), [])
+
+    def test_unknown_single_char_word_is_error(self):
+        a = book_level.annotate(lesson('他被罚了。'), vocab(他=1, 被=3, 了=1, 处罚=6))
+        self.assertTrue(any('罚' in e for e in a.errors), a.errors)
+
+    def test_single_char_from_known_word_is_known(self):
+        a = book_level.annotate(lesson('他被罚了。'), vocab(他=1, 被=3, 了=1, 罚款=5))
+        self.assertEqual(a.errors, [])
+        self.assertEqual(pinyin_runs(a), [])
+
+    def test_polyphone_single_char_from_known_word_needs_mark(self):
+        a = book_level.annotate(lesson('他把药藏好。'), vocab(他=1, 把=3, 药=2, 好=1, 西藏=5))
+        self.assertTrue(any('藏' in e for e in a.errors), a.errors)
+
+    def test_reduplicated_known_word_is_known(self):
+        a = book_level.annotate(lesson('他安安静静地坐着，轻轻地说。'), vocab(他=1, 安静=3, 地=1, 坐=1, 着=2, 轻=3, 说=1))
+        self.assertEqual(a.errors, [])
+        self.assertEqual(pinyin_runs(a), [])
 
     def test_unknown_word_is_error(self):
         a = book_level.annotate(lesson('他心术不正。'), vocab(他=1, 不=1, 正=2))
@@ -56,14 +85,14 @@ class AnnotateTest(unittest.TestCase):
         self.assertIn('первое появление', a.errors[0])
 
     def test_polyphone_needs_mark(self):
-        v = vocab(很=1, 重=(5, 'zhòng'))
+        v = vocab(很=1, 重=(6, 'zhòng'))
         a = book_level.annotate(lesson('很重。'), v)
         self.assertEqual(len(a.errors), 1, a.errors)
         self.assertIn('многозначный', a.errors[0])
         self.assertEqual(book_level.annotate(lesson('很{重|zhòng}。'), v).errors, [])
 
-    def test_single_char_hsk5_needs_mark(self):
-        v = vocab(被=3, 了=1, 倒=(5, 'dào'))
+    def test_single_char_hsk6_needs_mark(self):
+        v = vocab(被=3, 了=1, 倒=(6, 'dào'))
         a = book_level.annotate(lesson('{砍|kǎn}倒了。'), v)
         self.assertTrue(any('倒' in e for e in a.errors), a.errors)
         self.assertEqual(book_level.annotate(lesson('{砍|kǎn}{倒|dǎo}了。'), v).errors, [])
@@ -72,9 +101,9 @@ class AnnotateTest(unittest.TestCase):
         a = book_level.annotate(lesson('{西藏|Xīzàng}的药，藏在盒子里。'), vocab(的=1, 药=2, 在=1, 盒子=4, 里=1))
         self.assertTrue(any('藏' in e for e in a.errors), a.errors)
 
-    def test_unknown_word_does_not_split_into_hsk5_pieces(self):
-        a = book_level.annotate(lesson('他很刻薄。'), vocab(他=1, 很=1, 刻=(5, 'kè'), 薄=(5, 'báo')))
-        self.assertTrue(a.errors, 'незнакомое 刻薄 прошло через части HSK 5')
+    def test_unknown_word_does_not_split_into_hsk6_pieces(self):
+        a = book_level.annotate(lesson('他很刻薄。'), vocab(他=1, 很=1, 刻=(6, 'kè'), 薄=(6, 'báo')))
+        self.assertTrue(a.errors, 'незнакомое 刻薄 прошло через части HSK 6')
         self.assertNotIn(Run('薄', 'báo'), pinyin_runs(a))
 
     def test_segmentation_does_not_depend_on_previous_lessons(self):
@@ -98,8 +127,8 @@ class AnnotateTest(unittest.TestCase):
         a = book_level.annotate(lesson('{射箭|shè jiàn}，射下了。'), vocab(下=1, 了=1))
         self.assertEqual(a.errors, [])
 
-    def test_shown_char_beats_hsk5_single(self):
-        a = book_level.annotate(lesson('{射箭|shè jiàn}，射了。'), vocab(了=1, 射=(5, 'shè')))
+    def test_shown_char_beats_hsk6_single(self):
+        a = book_level.annotate(lesson('{射箭|shè jiàn}，射了。'), vocab(了=1, 射=(6, 'shè')))
         self.assertEqual(a.errors, [])
 
     def test_gloss_word_gets_gloss_pinyin(self):
