@@ -1,3 +1,4 @@
+<!-- Отчёт пишет сборка (scripts/merge_bank.py): не править, перезапишется. -->
 # Досье «Космос»
 
 Файл пишет сборка (`scripts/dossiers.py`). Править — `data/dossiers/space.json` и `data/dossiers/space-questions.json`.

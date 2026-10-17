@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from dossiers import check_dossiers, cross_leak_errors, dossier_paths, embed_record, original_record, dossier_records, dossier_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions
+from dossiers import REPORT_MARK, check_dossiers, cross_leak_errors, dossier_paths, embed_record, original_record, dossier_records, dossier_report, is_build_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions, write_dossier_reports
 from editorial import apply_editorial, validate_editorial
 from embeds import apply_embeds, embed_errors
 
@@ -952,7 +952,7 @@ class DossierReportTest(unittest.TestCase):
                          fact={'table': 'banknotes', 'row': 'cny-50', 'ask': 'back', 'where': {'currency': '人民币'}},
                          questionRu='Что изображено на обороте купюры 50 юаней выпуска 2019 года?')
         report = dossier_report(dossier(), [question(), draft])
-        self.assertTrue(report.startswith('# Досье «Деньги»\n'))
+        self.assertTrue(report.startswith(REPORT_MARK + '\n# Досье «Деньги»\n'))
         self.assertIn('## Таблица `banknotes` — строк: 6', report)
         self.assertIn('| cny-50 | 人民币 | 50 元 | пятая серия, выпуск 2019 года | 布达拉宫 (Потала) | 菊花 (хризантема) |  |', report)
         self.assertIn('## Вопросы — принято 1 из 2', report)
@@ -994,6 +994,51 @@ class DossierReportTest(unittest.TestCase):
         draft = question(status='draft')
         draft.pop('check')
         self.assertIn('### money-q01 · draft · проверка: нет', dossier_report(dossier(), [draft]))
+
+
+class WriteDossierReportsTest(unittest.TestCase):
+    """17.10.2026 слияние молча затёрло ручной отчёт «Этносов» отчётом сборки под тем же именем."""
+
+    def setUp(self):
+        self.dir = Path(tempfile.mkdtemp())
+        self.path = self.dir / 'dossier-money.md'
+
+    def test_build_report_is_overwritten(self):
+        self.path.write_text(dossier_report(dossier(), []), encoding='utf-8')
+        fresh = dossier_report(dossier(), [question()])
+        write_dossier_reports({self.path: fresh})
+        self.assertEqual(self.path.read_text('utf-8'), fresh)
+
+    def test_missing_report_is_written(self):
+        write_dossier_reports({self.path: dossier_report(dossier(), [])})
+        self.assertTrue(is_build_report(self.path.read_text('utf-8')))
+
+    def test_report_written_before_the_mark_is_overwritten(self):
+        self.path.write_text('# Досье «Деньги»\n\nФайл пишет сборка (`scripts/dossiers.py`). Править — '
+                             '`data/dossiers/money.json`.\n', encoding='utf-8')
+        write_dossier_reports({self.path: dossier_report(dossier(), [])})
+        self.assertTrue(self.path.read_text('utf-8').startswith(REPORT_MARK))
+
+    def test_manual_report_stops_the_build_and_nothing_is_written(self):
+        manual = '# Досье «Деньги»: таблицы\n\nЭтап: сбор и сверка фактов.\n'
+        self.path.write_text(manual, encoding='utf-8')
+        other = self.dir / 'dossier-space.md'
+        with self.assertRaises(ValueError) as caught:
+            write_dossier_reports({other: dossier_report(space_dossier(), []),
+                                   self.path: dossier_report(dossier(), [])})
+        self.assertIn('dossier-money.md написан не сборкой', str(caught.exception))
+        self.assertIn('переименуйте ручной отчёт в dossier-money-<что>.md', str(caught.exception))
+        self.assertEqual(self.path.read_text('utf-8'), manual)
+        self.assertFalse(other.exists())
+
+    def test_mark_must_open_the_file(self):
+        # метка в середине ручного отчёта (скопированный кусок) его не делает отчётом сборки
+        self.assertFalse(is_build_report('# Заметки\n\n' + REPORT_MARK + '\n'))
+
+    def test_reports_on_disk_are_build_reports(self):
+        for table_path, _ in dossier_paths(ROOT / 'data/dossiers'):
+            path = ROOT / f'data/review/dossier-{table_path.stem}.md'
+            self.assertTrue(path.read_text('utf-8').startswith(REPORT_MARK + '\n'), path.name)
 
 class ReviewFindingsTest(unittest.TestCase):
     """Замечания ревью ветки 2026-10-14: проверка досье не пропускает то, что потом остановит сборку."""

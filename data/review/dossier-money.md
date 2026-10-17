@@ -1,3 +1,4 @@
+<!-- Отчёт пишет сборка (scripts/merge_bank.py): не править, перезапишется. -->
 # Досье «Деньги»
 
 Файл пишет сборка (`scripts/dossiers.py`). Править — `data/dossiers/money.json` и `data/dossiers/money-questions.json`.

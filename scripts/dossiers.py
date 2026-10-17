@@ -697,8 +697,30 @@ def _report_cell(value: object) -> str:
     return text.replace('|', '\\|')
 
 
+# первая строка отчёта сборки: по ней сборка отличает свой отчёт от ручного под тем же именем
+REPORT_MARK = '<!-- Отчёт пишет сборка (scripts/merge_bank.py): не править, перезапишется. -->'
+# так начинались отчёты сборки до метки (до 2026-10-17); их тоже можно перезаписать
+LEGACY_REPORT = re.compile(r'# Досье «[^\n]*»\n\nФайл пишет сборка \(`scripts/dossiers\.py`\)\.')
+
+
+def is_build_report(text: str) -> bool:
+    return text.startswith(REPORT_MARK + '\n') or LEGACY_REPORT.match(text) is not None
+
+
+def write_dossier_reports(reports: dict[Path, str]) -> None:
+    """Пишет отчёты досье. Ручной отчёт под именем отчёта сборки не затирается:
+    сборка останавливается, не записав ни одного отчёта."""
+    errors = [f'{path.name} написан не сборкой, сборка его перезаписала бы; переименуйте ручной '
+              f'отчёт в {path.stem}-<что>.md (например, {path.stem}-tables.md)'
+              for path in reports if path.exists() and not is_build_report(path.read_text('utf-8'))]
+    if errors:
+        raise ValueError('ручные отчёты под именем отчёта сборки:\n - ' + '\n - '.join(errors))
+    for path, text in reports.items():
+        path.write_text(text, encoding='utf-8')
+
+
 def dossier_report(dossier: dict, questions: list[dict], bank: list[dict] | None = None) -> str:
-    lines = [f'# Досье «{dossier["title"]}»', '',
+    lines = [REPORT_MARK, f'# Досье «{dossier["title"]}»', '',
              f'Файл пишет сборка (`scripts/dossiers.py`). Править — `data/dossiers/{dossier["id"]}.json` '
              f'и `data/dossiers/{dossier["id"]}-questions.json`.', '']
     for name, table in dossier['tables'].items():

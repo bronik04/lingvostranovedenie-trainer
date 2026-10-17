@@ -14,7 +14,7 @@ from normalize import (completeness_errors, fragment_pairs, language_errors, nor
                        option_key, tidy)
 from authored import load_authored, validate_authored
 from dossiers import (cross_leak_errors, dossier_paths, dossier_records, dossier_report, load_dossier,
-                      validate_links)
+                      validate_links, write_dossier_reports)
 from editorial import apply_editorial, load_editorial
 from embeds import apply_embeds
 from explanations import apply_revisions, load_revisions
@@ -414,13 +414,13 @@ def main() -> None:
     bank = apply_truefalse(bank, load_truefalse(ROOT / 'data/review/truefalse.json'))
     bank.sort(key=lambda record: record['id'])
     report['fragments'] = fragment_pairs([(record['id'], record['questionRu']) for record in bank])
+    (ROOT / 'data/review').mkdir(parents=True, exist_ok=True)
+    # отчёты досье — до банка: ручной отчёт под их именем останавливает сборку, ничего не записав
+    write_dossier_reports({ROOT / f'data/review/dossier-{dossier["id"]}.md': dossier_report(dossier, questions, bank)
+                           for dossier, questions in loaded})
     (ROOT / 'data/bank.json').write_text(
         json.dumps(bank, ensure_ascii=False, indent=2, sort_keys=True) + '\n', encoding='utf-8')
-    (ROOT / 'data/review').mkdir(parents=True, exist_ok=True)
     _write_report(report, bank)
-    for dossier, questions in loaded:
-        (ROOT / f'data/review/dossier-{dossier["id"]}.md').write_text(
-            dossier_report(dossier, questions, bank), encoding='utf-8')
     checked = sum(1 for record in bank if record['answer']['state'] == 'verified')
     print(f'банк: {len(bank)} записей, проверено {checked}; отчёт: data/review/merge.md')
 
