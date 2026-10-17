@@ -1334,9 +1334,12 @@
 - 87 вопросов (Китай 59, Россия 28; из них 25 встраивают олимпиадные) написаны и проверены тремя проверяющими;
   автор принял все. Они в `data/dossiers/literature-questions.json`; банк 642 → 704 (62 новых записи).
   Группы фактов: `pushkin-medny-vsadnik-literature`, `gorky-nizhny-literature`, `mulan-ballad-literature`,
-  `xiyouji-1592-no-author`; подписи четырёх принятых встраиваний убраны из `glosses.json`.
+  `xiyouji-1592-no-author`, `chuci-lisao-literature`, `lu-xun-republic-text`; подписи четырёх принятых встраиваний убраны из `glosses.json`.
 - Правки записей банка (пояснения встраиваний, одно написание имён, замена 罗贯中 → 蒲松龄 в 2025-26-shk-30,
-  тема 2020-21-pri-qa538eb) — в `data/review/editorial.json`; группа фактов `literature-four-novels-names`.
+  тема 2020-21-pri-qa538eb, «не становился лауреатом» в 2021-22-shk-qa608ac) — в `data/review/editorial.json`;
+  группа фактов `literature-four-novels-names`; в `truefalse.json` 水浒传 исключён из 2023-24-zak-9.
+- Ревью ветки (агент на Opus): сборка воспроизводится байт в байт, блокеров нет; исправлены номера в `check.note`,
+  склейки в `reason`, формулировка источника по Ши Найаню, пометка темы «Поэзия Тан и Сун» в `coverage.json`.
 
 ## Не реализовано (сознательно или пока)
 
