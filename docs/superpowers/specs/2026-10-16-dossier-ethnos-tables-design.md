@@ -99,5 +99,6 @@
 ## Результат
 
 `data/dossiers/ethnos.json`, пустой `data/dossiers/ethnos-questions.json`,
-табличный отчёт `data/review/dossier-ethnos.md` и отдельный отчёт сверки.
+табличный отчёт `data/review/dossier-ethnos-tables.md` и отдельный отчёт сверки.
+Имя `data/review/dossier-ethnos.md` занято автоматическим отчётом сборки.
 Готовый банк и файлы сайта остаются вне изменений этого этапа.

@@ -58,4 +58,4 @@
 - `node --test test/*.test.mjs` — 103 теста, OK; в том числе Chrome, без пропусков.
 - Короткие дословные выдержки ограничены 25 словами на публикацию с учётом повторного цитирования; факты подтверждаются полным источником, выдержка не подменяет его.
 
-Полные таблицы и ограничения наборов: `data/review/dossier-ethnos.md`. Машинная история и текущие строки: `data/review/dossier-ethnos-verification.json`.
+Полные таблицы и ограничения наборов: `data/review/dossier-ethnos-tables.md`. Машинная история и текущие строки: `data/review/dossier-ethnos-verification.json`.
