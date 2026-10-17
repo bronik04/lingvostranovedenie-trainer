@@ -154,7 +154,7 @@ def validate_dossier(dossier: object) -> list[str]:
 
 
 def validate_links(dossiers: dict[str, dict]) -> list[str]:
-    """Ссылки ячеек на строки других досье: `ref` — тот же персонаж (текст совпадает), `from` — назван по."""
+    """Ссылки ячеек на строки того же или других досье: `ref` — тот же персонаж (текст совпадает), `from` — назван по."""
     errors: list[str] = []
     for dossier_id, dossier in dossiers.items():
         for table_name, table in dossier['tables'].items():
@@ -486,8 +486,10 @@ def _content_errors(where: str, question: dict, dossier: dict) -> list[str]:
     return errors
 
 
-def validate_questions(questions: object, dossier: dict, bank: list[dict] | None = None) -> list[str]:
-    """`bank` — записи банка без вопросов этого досье: с ними сверяются повторы формулировок."""
+def validate_questions(questions: object, dossier: dict, bank: list[dict] | None = None,
+                       groups: dict[str, list[str]] | None = None) -> list[str]:
+    """`bank` — записи банка без вопросов этого досье: с ними сверяются повторы формулировок.
+    `groups` — группы фактов (`fact-groups.json`): вопросы одной группы друг другу не утечка."""
     if not isinstance(questions, list):
         return ['вопросы досье должны быть списком']
     errors: list[str] = []
@@ -548,10 +550,14 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
             if named and not embeds:
                 whole.append(question)
     # утечки: ответ одного вопроса не должен стоять в тексте другого
-    answers = {question['id']: answer_cell(question, dossier)[1] for question in whole}
+    answers = {question['id']: (answer_cell(question, dossier)[1], _answer_place(question, dossier))
+               for question in whole}
+    group_of = _group_owner(groups)
     for question in whole:
-        for other_id, answer in answers.items():
-            if other_id == question['id']:
+        place = _answer_place(question, dossier)
+        for other_id, (answer, other_place) in answers.items():
+            if (other_id == question['id'] or _bridged(place, other_place)
+                    or _same_group(group_of, question['id'], other_id)):
                 continue
             names = _mentions(question['questionRu'], answer)
             if names:
@@ -560,27 +566,55 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
     return errors
 
 
-def _answer_place(question: dict, dossier: dict) -> tuple[str, set[str]]:
-    """Строка ответа (`досье/таблица/строка`) и строки других досье, с которыми она связана ref/from."""
+def _answer_place(question: dict, dossier: dict) -> tuple[str, str, dict[str, set[str]]]:
+    """Строка ответа (`досье/таблица/строка`), колонка ответа и ссылки строки: куда → из каких колонок."""
     fact = question['fact']
+    column = fact['answer']['column'] if 'options' in fact else fact['ask']
     row_id, _ = answer_cell(question, dossier)
     row = _rows(dossier, fact['table'])[row_id]
-    links = {cell[field] for cell in row.values() if isinstance(cell, dict)
-             for field in LINK_FIELDS if field in cell}
-    return f'{dossier["id"]}/{fact["table"]}/{row_id}', links
+    links: dict[str, set[str]] = {}
+    for name, cell in row.items():
+        if isinstance(cell, dict):
+            for field in LINK_FIELDS:
+                if field in cell:
+                    links.setdefault(cell[field], set()).add(name)
+    return f'{dossier["id"]}/{fact["table"]}/{row_id}', column, links
 
 
-def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]]) -> list[str]:
+def _bridged(place: tuple, other_place: tuple) -> bool:
+    """Мостик: текст вопроса о строке может назвать ответ другого вопроса, только если это
+    название (`name`) строки, на которую ссылается его строка, или ячейка другой строки,
+    которая ссылается на его строку. Остальные ячейки связанной строки — утечка, как у любой."""
+    row, _, links = place
+    other_row, other_column, other_links = other_place
+    return ((other_row in links and other_column == 'name')
+            or other_column in other_links.get(row, set()))
+
+
+def _group_owner(groups: dict[str, list[str]] | None) -> dict[str, str]:
+    return {record_id: group_id for group_id, ids in (groups or {}).items() for record_id in ids}
+
+
+def _same_group(group_of: dict[str, str], left: str, right: str) -> bool:
+    """Записи одной группы фактов автор признал одним фактом (раунд старается не ставить их
+    вместе), поэтому их взаимная подсказка не утечка."""
+    return left in group_of and group_of[left] == group_of.get(right)
+
+
+def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
+                      groups: dict[str, list[str]] | None = None) -> list[str]:
     """Утечки по всем вопросам всех досье сразу — по окончательным текстам.
 
     Текст встроенного вопроса есть только в банке; текст своего вопроса берётся из банка, если
     запись уже там (с правками editorial.json), иначе — из файла вопросов (черновик).
     Решение автора 2026-10-15: мостик — не утечка (аппарат, связанный ссылкой с мифом, может
     называть его в вопросе о себе), а между досье одиночные иероглифы (唐, 秦) не ищутся — они
-    стоят внутри других слов (唐僧, 秦始皇).
+    стоят внутри других слов (唐僧, 秦始皇). Решение автора 2026-10-17: мостик — только название
+    связанной строки или связующая ячейка (`_bridged`); прочие взаимные подсказки связанных строк
+    закрывает группа фактов `groups` — по id записи (у встроенного вопроса — олимпиадной).
     """
     by_id = {record['id']: record for record in bank}
-    entries: list[tuple[str, str, str, dict, str, set[str]]] = []
+    entries: list[tuple[str, str, str, dict, tuple, str]] = []
     for dossier, questions in loaded:
         for question in questions:
             if 'embeds' in question:
@@ -592,13 +626,15 @@ def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]]) -
             else:
                 record = by_id.get(question['id'])
                 text = record['questionRu'] if record else question['questionRu']
-            place, links = _answer_place(question, dossier)
             entries.append((dossier['id'], f'{dossier["id"]}/{question["id"]}', text,
-                            answer_cell(question, dossier)[1], place, links))
+                            answer_cell(question, dossier)[1], _answer_place(question, dossier),
+                            question.get('embeds', question['id'])))
+    group_of = _group_owner(groups)
     errors: list[str] = []
-    for dossier_id, label, text, _, place, links in entries:
-        for other_dossier, other, _, answer, other_place, other_links in entries:
-            if other == label or other_place in links or place in other_links:
+    for dossier_id, label, text, _, place, record_id in entries:
+        for other_dossier, other, _, answer, other_place, other_record in entries:
+            if (other == label or _bridged(place, other_place)
+                    or _same_group(group_of, record_id, other_record)):
                 continue
             if other_dossier != dossier_id and len(answer['zh'].strip()) == 1:
                 answer = {**answer, 'zh': ''}
@@ -629,8 +665,8 @@ def _wording_errors(questions: list[dict], bank: list[dict]) -> list[str]:
     return errors
 
 
-def load_dossier(dossier_path: Path, questions_path: Path,
-                 bank: list[dict] | None = None) -> tuple[dict, list[dict]]:
+def load_dossier(dossier_path: Path, questions_path: Path, bank: list[dict] | None = None,
+                 groups: dict[str, list[str]] | None = None) -> tuple[dict, list[dict]]:
     dossier = loads_unique(dossier_path.read_text('utf-8'), 'досье')
     errors = validate_dossier(dossier)
     if errors:
@@ -639,7 +675,8 @@ def load_dossier(dossier_path: Path, questions_path: Path,
     # свои вопросы досье (дополнения) из прошлой сборки не в счёт; встроенные олимпиадные — в счёт
     errors = validate_questions(questions, dossier, [record for record in bank or []
                                                      if not (record.get('origin') == 'addition'
-                                                             and record.get('dossier') == dossier['id'])])
+                                                             and record.get('dossier') == dossier['id'])],
+                                groups)
     if errors:
         raise ValueError(f'некорректные вопросы {questions_path.name}:\n - ' + '\n - '.join(errors))
     return dossier, questions
@@ -730,8 +767,8 @@ def dossier_paths(directory: Path) -> list[tuple[Path, Path]]:
     return pairs
 
 
-def check_dossiers(directory: Path, bank: list[dict],
-                   glosses: dict[str, dict]) -> tuple[list[str], list[tuple[dict, list[dict]]]]:
+def check_dossiers(directory: Path, bank: list[dict], glosses: dict[str, dict],
+                   groups: dict[str, list[str]] | None = None) -> tuple[list[str], list[tuple[dict, list[dict]]]]:
     """Все проверки досье без сборки банка — то, что остановит сборку, видно уже у черновиков.
 
     Ошибка одного досье не прячет остальные: сборщики и писатель работают параллельно. Свои
@@ -748,24 +785,26 @@ def check_dossiers(directory: Path, bank: list[dict],
         return [str(error)], []
     for table_path, questions_path in pairs:
         try:
-            loaded.append(load_dossier(table_path, questions_path, bank))
+            loaded.append(load_dossier(table_path, questions_path, bank, groups))
         except ValueError as error:
             errors.append(str(error))
     olympiad_view = [record for record in bank if not (record.get('origin') == 'addition' and 'dossier' in record)]
     errors += validate_links({data['id']: data for data, _ in loaded})
-    errors += cross_leak_errors(olympiad_view, loaded)
+    errors += cross_leak_errors(olympiad_view, loaded, groups)
     errors += embed_errors(bank, loaded, glosses, drafts=True)
     return errors, loaded
 
 
 def main() -> None:
     """Проверка всех досье без сборки банка: её запускают агенты, пока пишут досье."""
+    from fact_groups import load_fact_groups
     from glosses import load_glosses
 
     root = Path(__file__).resolve().parents[1]
     bank_path = root / 'data/bank.json'
     bank = json.loads(bank_path.read_text('utf-8')) if bank_path.exists() else []
-    errors, loaded = check_dossiers(root / 'data/dossiers', bank, load_glosses(root / 'data/review/glosses.json'))
+    errors, loaded = check_dossiers(root / 'data/dossiers', bank, load_glosses(root / 'data/review/glosses.json'),
+                                    load_fact_groups(root / 'data/review/fact-groups.json'))
     for data, questions in loaded:
         accepted = sum(1 for question in questions if question['status'] == 'accepted')
         rows = sum(len(table['rows']) for table in data['tables'].values())
