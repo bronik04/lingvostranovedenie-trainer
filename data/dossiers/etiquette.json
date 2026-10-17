@@ -1,0 +1,140 @@
+{
+  "id": "etiquette",
+  "title": "Этикет, символика, одежда",
+  "tables": {
+    "clothing": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "era": "zh",
+        "wearer": "zh",
+        "kind": "zh",
+        "feature": "zh",
+        "origin": "zh",
+        "about": "ru"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": []
+    },
+    "colors": {
+      "columns": {
+        "name": "zh",
+        "element": "zh",
+        "meaning": "zh",
+        "occasion": "zh",
+        "opera": "zh",
+        "rank": "zh",
+        "about": "ru"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": []
+    },
+    "wuxing": {
+      "columns": {
+        "name": "zh",
+        "color": "zh",
+        "direction": "zh",
+        "season": "zh",
+        "guardian": "zh",
+        "generates": "zh",
+        "overcomes": "zh",
+        "about": "ru"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": []
+    },
+    "creatures": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "meaning": "zh",
+        "homophone": "zh",
+        "role": "zh",
+        "set": "zh",
+        "about": "ru"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": []
+    },
+    "plants": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "meaning": "zh",
+        "set": "zh",
+        "season": "zh",
+        "title": "zh",
+        "about": "ru"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": []
+    },
+    "numbers": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "digit": "zh",
+        "homophone": "zh",
+        "meaning": "zh",
+        "custom": "zh",
+        "about": "ru"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": []
+    },
+    "taboos": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "homophone": "zh",
+        "meaning": "zh",
+        "occasion": "zh",
+        "remedy": "zh",
+        "about": "ru"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": []
+    },
+    "customs": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "occasion": "zh",
+        "meaning": "zh",
+        "actor": "zh",
+        "item": "zh",
+        "about": "ru"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": []
+    },
+    "kin": {
+      "columns": {
+        "name": "zh",
+        "who": "zh",
+        "side": "zh",
+        "about": "ru"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": []
+    }
+  }
+}
