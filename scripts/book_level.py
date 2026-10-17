@@ -26,6 +26,9 @@ POLYPHONES = frozenset('长行重还得了着调传好干种便藏几朝都为�
 # Базовые 地/着/得/了/还/长 ученик читает в обоих чтениях — их здесь нет.
 RARE_READINGS = frozenset('当藏调传倒重朝背数难降散似缝扎折卷弹奔担挑劲削恶尽称露嚷薄曾冲量')
 FORCE_FREQ = 10 ** 6
+# Слова, которые jieba часто выделяет неверно на стыке (手拉着手 → 着手 zhuóshǒu, 一口气 → 口气):
+# пиньинь из списка им не ставится — нужна пометка или другая формулировка.
+AMBIGUOUS_SEGMENTS = frozenset({'着手', '把手', '口气', '个人', '人家', '地道', '东西', '大意'})
 # Знакомыми считаются слова HSK 1–5 (решение автора 2026-10-17); пиньинь — над HSK 6 и словами вне списков.
 KNOWN_LEVEL = 5
 
@@ -192,6 +195,9 @@ class _Annotator:
     def upper(self, token: str, lv: int) -> Run:
         self.shown.add(token)
         self.hsk6.append(token)
+        if token in AMBIGUOUS_SEGMENTS:
+            self.error(token, f'возможно неверное деление на слова (手拉着手 → 着手): поставьте {{{token}|…}} или перефразируйте')
+            return Run(token)
         if len(token) == 1:
             kind = 'многозначный иероглиф' if token in POLYPHONES else 'одиночный иероглиф HSK 6'
             self.error(token, f'{kind}: чтение из списка ненадёжно, поставьте {{{token}|…}} или внесите в «生词»')

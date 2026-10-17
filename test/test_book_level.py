@@ -74,6 +74,11 @@ class AnnotateTest(unittest.TestCase):
         self.assertEqual(a.errors, [])
         self.assertEqual(pinyin_runs(a), [])
 
+    def test_ambiguous_segment_gets_no_list_pinyin(self):
+        a = book_level.annotate(lesson('两个人手拉着手往家走。'), vocab(两=2, 个=1, 人=1, 手=2, 拉=4, 往=2, 家=1, 走=1, 着手=(6, 'zhuóshǒu')))
+        self.assertNotIn(Run('着手', 'zhuóshǒu'), pinyin_runs(a))
+        self.assertTrue(any('着手' in e for e in a.errors), a.errors)
+
     def test_unknown_word_is_error(self):
         a = book_level.annotate(lesson('他心术不正。'), vocab(他=1, 不=1, 正=2))
         self.assertEqual(len(a.errors), 1, a.errors)
