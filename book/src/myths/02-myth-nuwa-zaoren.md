@@ -8,19 +8,19 @@ status: checked
 
 {盘古|Pán Gǔ}{开天辟地|kāi tiān pì dì}以后，世界上有了高山和大河，有了太阳和月亮，也有了花草和{树木|shùmù}。可是大地上还是{静悄悄|jìngqiāoqiāo}的，一个人也没有。
 
-那时候，大地上只有一位女神，名叫女娲。世界这么美丽，可是连一个跟她说话的{伙伴|huǒbàn}也没有。女娲每天走来走去，心里总觉得{空荡荡|kōngdàngdàng}的。她自己也不知道，这种感觉就叫{寂寞|jìmò}。
+那时候，大地上住着一位女神，名叫女娲。她看过最高的山，也走过最长的河，可是不管走到哪里，都只能听见风声和水声，找不到一个能跟她说说话的{伙伴|huǒbàn}。{日子|rìzi}久了，她越来越觉得{寂寞|jìmò}。
 
 传说，为了让大地热闹一些，女娲用了六天时间，每天{造|zào}出一种动物：{正月|zhēngyuè}{初一|chūyī}造{鸡|jī}，初二造狗，初三造猪，初四造{羊|yáng}，初五造{牛|niú}，初六造马。鸡叫狗跑，牛羊满山，大地上一下子有了声音。可是，这些动物谁也不会跟她说话，女娲总觉得还少了一点儿什么。
 
-到了第七天，女娲走到一条小河边。她{无意中|wúyì zhōng}低下头，看见{清清|qīngqīng}的河水里{照|zhào}出了自己的{影子|yǐngzi}。她心里忽然有了一个{念头|niàntou}：要是照着这个样子，捏一个小小的“我”，会怎么样呢？
+到了第七天，女娲又累又渴，走到河边去喝水。她{弯下腰|wānxià yāo}，{水面|shuǐmiàn}上忽然出现了一张{熟悉|shúxī}的脸——那正是她自己的{影子|yǐngzi}。女娲看着看着，笑了：动物们不会说话，那么，要是有一些长得像我的小人，能不能陪我说说话呢？
 
-她马上{蹲|dūn}下来，从河边{挖|wā}起{一团|yì tuán}{黄泥|huángní}，认认真真地{捏|niē}了起来。她捏出了头和身体，又捏出了胳膊和腿，很快就捏好了第一个小泥人。女娲把它轻轻地放到地上，没想到，小泥人竟然{活|huó}了过来！它站了起来，又{唱|chàng}又跳，成了一个{活生生|huóshēngshēng}的人。
+她用河水{和泥|huó ní}，{照着|zhàozhe}水里的样子，用{黄泥|huángní}{捏|niē}出了头、{身子|shēnzi}、胳膊和腿。刚捏完最后一下，小泥人就在她手心里{伸|shēn}了伸胳膊，跳到地上，{竟然|jìngrán}开口说出了世界上的{第一句|dì-yī jù}话。
 
-女娲{又惊又喜|yòu jīng yòu xǐ}，接着捏了第二个、第三个……为了分出{阴|yīn}和{阳|yáng}，她把人分成了男人和女人。从早上到晚上，她的手一直没有停下来。看着这些新的{生命|shēngmìng}，她再也不觉得寂寞了。
+这一次，女娲再也不觉得寂寞了。她一边跟小人们说话，一边接着捏，有的捏成男人，有的捏成女人。看着这些新的{生命|shēngmìng}，她心里{暖暖|nuǎnnuǎn}的。
 
-可是，天下实在太大了，只用一双手，要捏到什么时候呢？女娲捏来捏去，累得一点儿力气也没有了。她随手拿起{一根|yì gēn}{藤条|téngtiáo}，在{泥浆|níjiāng}里{搅|jiǎo}了搅，又{用力|yònglì}一{甩|shuǎi}。{泥点儿|ní diǎnr}{纷纷|fēnfēn}{落|luò}在地上，没想到，它们竟然也都变成了{活蹦乱跳|huó bèng luàn tiào}的小人！女娲高兴极了，就这样一甩再甩，山上、河边、{平原|píngyuán}上，很快到处都有了人。
+可是，大地那么大，一双手一天能捏几个人呢？女娲的手{酸|suān}了，腰也{疼|téng}了。她{顺手|shùnshǒu}从{身边|shēnbiān}的树上{扯|chě}下{一根|yì gēn}长长的{藤条|téngtiáo}，伸进{泥浆|níjiāng}里，再{用力|yònglì}一{甩|shuǎi}。{泥点儿|ní diǎnr}像下雨一样{纷纷|fēnfēn}{落|luò}下，一个个都变成了小人，{活蹦乱跳|huó bèng luàn tiào}地跑开了。没过多久，山上、河边、{平原|píngyuán}上都有了人。
 
-人越来越多，女娲又想到了一件事：人总有一天会变老，会死去，难道她还要再捏一遍吗？于是，她为人们{定下|dìngxià}了{婚姻|hūnyīn}的规矩，让男人和女人{结|jié}为{夫妻|fūqī}，自己生孩子、{养|yǎng}孩子。从此，人类就{一代|yí dài}又一代地{繁衍|fányǎn}了下来，再也不用女娲一个一个地去捏了。
+为了让人们自己把生命{传|chuán}下去，女娲又为他们{定下|dìngxià}了{婚姻|hūnyīn}的规矩：男人和女人{结|jié}为{夫妻|fūqī}，自己生孩子、{养|yǎng}孩子。从此，人类就{一代|yí dài}又一代地{繁衍|fányǎn}了下来。所以，后来人们也把女娲叫做“婚姻之神”。
 
 {古书|gǔshū}里的故事和这里讲的有点儿不一样：女娲甩泥用的不是藤条，而是{绳子|shéngzi}。古书还说，用手捏出来的人后来成了富贵的人，用绳子甩出来的人成了{贫穷|pínqióng}的{平民|píngmín}。当然，这只是古人的看法。
 
@@ -63,7 +63,7 @@ status: checked
 
 - 女娲为什么想造人？ | 因为世界很美，可是没有人陪她，她觉得很寂寞；动物也不会跟她说话。
 - 女娲是照着什么造人的？ | 照着自己在河水里的影子（自己的样子）。
-- 女娲为什么后来不再一个一个地捏人了？她用了什么办法？ | 因为天下太大，一个一个地捏太累了。她把藤条放进泥浆里，再用力一甩，泥点儿就变成了人。
+- 女娲为什么后来不再一个一个地捏人了？她用了什么办法？ | 因为大地太大，一个一个地捏太累了：她的手酸了，腰也疼了。她把藤条放进泥浆里，再用力一甩，泥点儿就变成了人。
 - 中国人为什么把正月初七叫作“人日”？ | 因为传说女娲在这一天造出了人，这一天是人类的生日。
 
 ## 来源
@@ -77,7 +77,6 @@ status: checked
 - official | 女娲造人补天 — 济源档案信息网（济源市档案局） | http://www.jyda.gov.cn/jywh/t261165.html | 不经意中，看见河中照出的影子，就产生了照样捏像的念想。……这样揉来捏去，过于劳累，就用藤条抖甩黄泥，没想到泥点子落到地上，竟然变成了活蹦乱跳的小人。……为辨阴阳，分为男女。后来就有了婚丧嫁娶，繁衍后代 | 2026-10-17
 - academic | Nǚwā 女娲 Creates People — David K. Jordan, University of California San Diego | https://pages.ucsd.edu/~dkjordan/chin/chtales/story224.html | One day, as Nǚwā sat in a state of picturesque but rather abstract emotional emptiness beside a sparkling pond, she chanced to see her reflection in the water, and it occurred to her to try to make a small model of herself from the lakeside mud. | 2026-10-17
 - academic | Nǚwā 女娲 Creates People — David K. Jordan, University of California San Diego | https://pages.ucsd.edu/~dkjordan/chin/chtales/story224.html | But she was the only goddess on the earth, and she was lonely, although, having always been lonely, she did not know that it was loneliness from which she suffered. | 2026-10-17
-- retelling | 女娲造人 Nuwa Makes Man — Zhang Ciyun, Chinese Mythology & Thirty-Six Stratagems, 上海译文出版社, 2020, ISBN 9787532780907（QQ阅读） | https://m.appbook.qq.com/read/1036212394/6 | Nuwa later found another problem. All the men and women she created would grow old and die. To make this life form last forever, she taught the human beings how to form families and breed the next generation. | 2026-10-17
 
 ## 注
 
