@@ -1,6 +1,7 @@
+<!-- Отчёт пишет сборка (scripts/merge_bank.py): не править, перезапишется. -->
 # Досье «Мифы и легенды»
 
-Файл пишет сборка (`scripts/dossiers.py`). Править — `data/dossiers/myths.json` и `data/dossiers/myths-questions.json`.
+Файл пишет сборка (`scripts/merge_bank.py`). Править — `data/dossiers/myths.json` и `data/dossiers/myths-questions.json`.
 
 ## Таблица `figures` — строк: 37
 

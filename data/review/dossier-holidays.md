@@ -1,6 +1,7 @@
+<!-- Отчёт пишет сборка (scripts/merge_bank.py): не править, перезапишется. -->
 # Досье «Праздники»
 
-Файл пишет сборка (`scripts/dossiers.py`). Править — `data/dossiers/holidays.json` и `data/dossiers/holidays-questions.json`.
+Файл пишет сборка (`scripts/merge_bank.py`). Править — `data/dossiers/holidays.json` и `data/dossiers/holidays-questions.json`.
 
 ## Таблица `holidays` — строк: 41
 
