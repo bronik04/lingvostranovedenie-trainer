@@ -697,9 +697,11 @@ def _report_cell(value: object) -> str:
     return text.replace('|', '\\|')
 
 
-# первая строка отчёта сборки: по ней сборка отличает свой отчёт от ручного под тем же именем
+# первая строка отчёта сборки: по ней сборка отличает свой отчёт от ручного под тем же именем.
+# Текст не менять: отчёты на диске со старой меткой остановили бы сборку.
 REPORT_MARK = '<!-- Отчёт пишет сборка (scripts/merge_bank.py): не править, перезапишется. -->'
-# так начинались отчёты сборки до метки (до 2026-10-17); их тоже можно перезаписать
+# так начинались отчёты сборки до метки (до 2026-10-17); их тоже можно перезаписать.
+# Убрать, когда все ветки досье сольют master и их отчёты получат метку.
 LEGACY_REPORT = re.compile(r'# Досье «[^\n]*»\n\nФайл пишет сборка \(`scripts/dossiers\.py`\)\.')
 
 
@@ -707,12 +709,18 @@ def is_build_report(text: str) -> bool:
     return text.startswith(REPORT_MARK + '\n') or LEGACY_REPORT.match(text) is not None
 
 
+def report_overwrite_errors(paths) -> list[str]:
+    """Ручные отчёты под именем отчёта сборки — сборка их затёрла бы."""
+    # utf-8-sig: отчёт сборки, пересохранённый редактором с BOM, остаётся отчётом сборки
+    return [f'{path.name} написан не сборкой, сборка его перезаписала бы; переименуйте ручной '
+            f'отчёт в {path.stem}-<что>.md (например, {path.stem}-tables.md)'
+            for path in paths if path.exists() and not is_build_report(path.read_text('utf-8-sig'))]
+
+
 def write_dossier_reports(reports: dict[Path, str]) -> None:
     """Пишет отчёты досье. Ручной отчёт под именем отчёта сборки не затирается:
     сборка останавливается, не записав ни одного отчёта."""
-    errors = [f'{path.name} написан не сборкой, сборка его перезаписала бы; переименуйте ручной '
-              f'отчёт в {path.stem}-<что>.md (например, {path.stem}-tables.md)'
-              for path in reports if path.exists() and not is_build_report(path.read_text('utf-8'))]
+    errors = report_overwrite_errors(reports)
     if errors:
         raise ValueError('ручные отчёты под именем отчёта сборки:\n - ' + '\n - '.join(errors))
     for path, text in reports.items():
@@ -721,7 +729,7 @@ def write_dossier_reports(reports: dict[Path, str]) -> None:
 
 def dossier_report(dossier: dict, questions: list[dict], bank: list[dict] | None = None) -> str:
     lines = [REPORT_MARK, f'# Досье «{dossier["title"]}»', '',
-             f'Файл пишет сборка (`scripts/dossiers.py`). Править — `data/dossiers/{dossier["id"]}.json` '
+             f'Файл пишет сборка (`scripts/merge_bank.py`). Править — `data/dossiers/{dossier["id"]}.json` '
              f'и `data/dossiers/{dossier["id"]}-questions.json`.', '']
     for name, table in dossier['tables'].items():
         columns = list(table['columns'])
@@ -790,8 +798,10 @@ def dossier_paths(directory: Path) -> list[tuple[Path, Path]]:
 
 
 def check_dossiers(directory: Path, bank: list[dict], glosses: dict[str, dict],
-                   groups: dict[str, list[str]] | None = None) -> tuple[list[str], list[tuple[dict, list[dict]]]]:
+                   groups: dict[str, list[str]] | None = None,
+                   reports: Path | None = None) -> tuple[list[str], list[tuple[dict, list[dict]]]]:
     """Все проверки досье без сборки банка — то, что остановит сборку, видно уже у черновиков.
+    `reports` — каталог отчётов досье: ручной отчёт под именем отчёта сборки тоже ошибка.
 
     Ошибка одного досье не прячет остальные: сборщики и писатель работают параллельно. Свои
     вопросы досье берутся из файлов (bank.json обновляется только сборкой), встраивания — по
@@ -814,6 +824,8 @@ def check_dossiers(directory: Path, bank: list[dict], glosses: dict[str, dict],
     errors += validate_links({data['id']: data for data, _ in loaded})
     errors += cross_leak_errors(olympiad_view, loaded, groups)
     errors += embed_errors(bank, loaded, glosses, drafts=True)
+    if reports is not None:
+        errors += report_overwrite_errors(reports / f'dossier-{data["id"]}.md' for data, _ in loaded)
     return errors, loaded
 
 
@@ -826,7 +838,7 @@ def main() -> None:
     bank_path = root / 'data/bank.json'
     bank = json.loads(bank_path.read_text('utf-8')) if bank_path.exists() else []
     errors, loaded = check_dossiers(root / 'data/dossiers', bank, load_glosses(root / 'data/review/glosses.json'),
-                                    load_fact_groups(root / 'data/review/fact-groups.json'))
+                                    load_fact_groups(root / 'data/review/fact-groups.json'), root / 'data/review')
     for data, questions in loaded:
         accepted = sum(1 for question in questions if question['status'] == 'accepted')
         rows = sum(len(table['rows']) for table in data['tables'].values())

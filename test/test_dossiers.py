@@ -1000,7 +1000,9 @@ class WriteDossierReportsTest(unittest.TestCase):
     """17.10.2026 слияние молча затёрло ручной отчёт «Этносов» отчётом сборки под тем же именем."""
 
     def setUp(self):
-        self.dir = Path(tempfile.mkdtemp())
+        directory = tempfile.TemporaryDirectory()
+        self.addCleanup(directory.cleanup)
+        self.dir = Path(directory.name)
         self.path = self.dir / 'dossier-money.md'
 
     def test_build_report_is_overwritten(self):
@@ -1035,10 +1037,30 @@ class WriteDossierReportsTest(unittest.TestCase):
         # метка в середине ручного отчёта (скопированный кусок) его не делает отчётом сборки
         self.assertFalse(is_build_report('# Заметки\n\n' + REPORT_MARK + '\n'))
 
+    def test_build_report_with_bom_is_overwritten(self):
+        self.path.write_text('\ufeff' + dossier_report(dossier(), []), encoding='utf-8')
+        write_dossier_reports({self.path: dossier_report(dossier(), [])})
+        self.assertTrue(self.path.read_text('utf-8').startswith(REPORT_MARK))
+
+    def test_check_without_build_finds_a_manual_report(self):
+        # то, что остановит сборку, видно уже в `python3 scripts/dossiers.py`
+        dossiers = self.dir / 'dossiers'
+        dossiers.mkdir()
+        (dossiers / 'money.json').write_text(json.dumps(dossier(), ensure_ascii=False), encoding='utf-8')
+        (dossiers / 'money-questions.json').write_text('[]', encoding='utf-8')
+        self.assertEqual(check_dossiers(dossiers, [], {}, reports=self.dir)[0], [])
+        self.path.write_text('# Досье «Деньги»: таблицы\n', encoding='utf-8')
+        errors, _ = check_dossiers(dossiers, [], {}, reports=self.dir)
+        self.assertEqual(len(errors), 1)
+        self.assertIn('dossier-money.md написан не сборкой', errors[0])
+
     def test_reports_on_disk_are_build_reports(self):
         for table_path, _ in dossier_paths(ROOT / 'data/dossiers'):
-            path = ROOT / f'data/review/dossier-{table_path.stem}.md'
+            # сборка называет отчёт по id досье, а не по имени файла
+            dossier_id = json.loads(table_path.read_text('utf-8'))['id']
+            path = ROOT / f'data/review/dossier-{dossier_id}.md'
             self.assertTrue(path.read_text('utf-8').startswith(REPORT_MARK + '\n'), path.name)
+
 
 class ReviewFindingsTest(unittest.TestCase):
     """Замечания ревью ветки 2026-10-14: проверка досье не пропускает то, что потом остановит сборку."""

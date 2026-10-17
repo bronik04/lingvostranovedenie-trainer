@@ -1,7 +1,7 @@
 <!-- Отчёт пишет сборка (scripts/merge_bank.py): не править, перезапишется. -->
 # Досье «Этносы и традиционный быт»
 
-Файл пишет сборка (`scripts/dossiers.py`). Править — `data/dossiers/ethnos.json` и `data/dossiers/ethnos-questions.json`.
+Файл пишет сборка (`scripts/merge_bank.py`). Править — `data/dossiers/ethnos.json` и `data/dossiers/ethnos-questions.json`.
 
 ## Таблица `peoples` — строк: 38
 
