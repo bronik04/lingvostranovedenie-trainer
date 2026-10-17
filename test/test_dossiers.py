@@ -582,6 +582,58 @@ def myths_question(**overrides):
     return item
 
 
+class LocalLeakBridgeTest(unittest.TestCase):
+    def fixture(self):
+        pairs = [('sakha', '萨哈族', 'саха', 'olonkho', '奥隆霍', 'олонхо'),
+                 ('tuva', '图瓦人', 'тувинцы', 'khoomei', '图瓦呼麦', 'хоомей'),
+                 ('kalmyk', '卡尔梅克人', 'калмыки', 'jangar', '卡尔梅克《江格尔》', 'Джангар'),
+                 ('buryat', '布里亚特人', 'буряты', 'geser', '格斯尔', 'Гэсэр')]
+        people, traditions = [], []
+        for pid, pzh, pru, tid, tzh, tru in pairs:
+            people.append(plain_row(pid, name=cell(pzh, [pru], gloss=pru.capitalize()),
+                                    heritage=cell(tzh, [tru], gloss=tru.capitalize())))
+            traditions.append(plain_row(tid, name=cell(tzh, [tru], gloss=tru.capitalize()),
+                                        people=cell(pzh, [pru], gloss=pru.capitalize())))
+        data = {'id': 'ethnos', 'title': 'Этносы', 'tables': {
+            'peoples': {'columns': {'name': 'zh', 'heritage': 'zh'}, 'rows': people},
+            'heritage': {'columns': {'name': 'zh', 'people': 'zh'}, 'rows': traditions}}}
+        questions = [
+            question(id='ethnos-q01', status='draft',
+                     fact={'table': 'peoples', 'row': 'sakha', 'ask': 'name'},
+                     questionRu='Какой народ сохраняет традицию олонхо?'),
+            question(id='ethnos-q02', status='draft',
+                     fact={'table': 'heritage', 'row': 'olonkho', 'ask': 'name'},
+                     questionRu='Как называется героический эпос народа саха?')]
+        return data, questions
+
+    def test_linked_rows_in_one_dossier_are_not_leaks(self):
+        for field in ('ref', 'from'):
+            with self.subTest(field=field):
+                data, questions = self.fixture()
+                data['tables']['peoples']['rows'][0]['heritage'][field] = 'ethnos/heritage/olonkho'
+                self.assertEqual(validate_links({'ethnos': data}), [])
+                self.assertEqual(validate_questions(questions, data), [])
+
+    def test_reverse_link_also_exempts_the_bridge(self):
+        data, questions = self.fixture()
+        data['tables']['heritage']['rows'][0]['people']['ref'] = 'ethnos/peoples/sakha'
+        self.assertEqual(validate_links({'ethnos': data}), [])
+        self.assertEqual(validate_questions(questions, data), [])
+
+    def test_a_link_on_another_row_does_not_hide_a_leak(self):
+        data, questions = self.fixture()
+        data['tables']['peoples']['rows'][1]['heritage']['from'] = 'ethnos/heritage/olonkho'
+        errors = validate_questions(questions, data)
+        self.assertTrue(any('текст называет ответ вопроса' in error for error in errors), errors)
+
+    def test_a_bridge_does_not_allow_naming_its_own_answer(self):
+        data, questions = self.fixture()
+        data['tables']['peoples']['rows'][0]['heritage']['ref'] = 'ethnos/heritage/olonkho'
+        questions[0]['questionRu'] = 'Какой народ, саха, сохраняет традицию олонхо?'
+        errors = validate_questions(questions, data)
+        self.assertTrue(any('называет свой ответ' in error for error in errors), errors)
+
+
 class CrossLeakTest(unittest.TestCase):
     def test_answer_of_one_dossier_in_the_text_of_another(self):
         loaded = [(dossier(), [question()]), (myths_dossier(), [myths_question()])]

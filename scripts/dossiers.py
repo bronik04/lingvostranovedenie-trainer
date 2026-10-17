@@ -548,10 +548,12 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
             if named and not embeds:
                 whole.append(question)
     # утечки: ответ одного вопроса не должен стоять в тексте другого
-    answers = {question['id']: answer_cell(question, dossier)[1] for question in whole}
+    answers = {question['id']: (answer_cell(question, dossier)[1], *_answer_place(question, dossier))
+               for question in whole}
     for question in whole:
-        for other_id, answer in answers.items():
-            if other_id == question['id']:
+        place, links = _answer_place(question, dossier)
+        for other_id, (answer, other_place, other_links) in answers.items():
+            if other_id == question['id'] or other_place in links or place in other_links:
                 continue
             names = _mentions(question['questionRu'], answer)
             if names:
@@ -561,7 +563,7 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
 
 
 def _answer_place(question: dict, dossier: dict) -> tuple[str, set[str]]:
-    """Строка ответа (`досье/таблица/строка`) и строки других досье, с которыми она связана ref/from."""
+    """Строка ответа (`досье/таблица/строка`) и строки, с которыми она связана ref/from."""
     fact = question['fact']
     row_id, _ = answer_cell(question, dossier)
     row = _rows(dossier, fact['table'])[row_id]
