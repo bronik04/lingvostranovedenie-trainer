@@ -3,10 +3,10 @@ id: myth-nuwa-butian
 block: myths
 title: 女娲补天
 image: img/myth-nuwa-butian.png
-status: draft
+status: checked
 ---
 
-{女娲|Nǚwā}{造出|zàochū}人类以后，人们在大地上过了很长一段{平静|píngjìng}的{日子|rìzi}。他们的生活虽然简单，却非常{安稳|ānwěn}，谁也没有想到，有一天天会塌下来。
+{女娲|Nǚwā}{造出|zàochū}人类以后，人们在大地上过了很长一段{平静|píngjìng}的{日子|rìzi}。他们的生活虽然简单，却非常{安稳|ānwěn}。谁也没有想到，天会塌下来。
 
 可是有一天，一场可怕的{灾难|zāinàn}突然{降临|jiànglín}了。传说，{水神|shuǐshén}{共工|Gònggōng}和{颛顼|Zhuānxū}都想当天下的{首领|shǒulǐng}，两个人打了起来，结果共工打输了。他气得{发疯|fā fēng}，一头{撞|zhuàng}向了{不周山|Bùzhōu Shān}。不周山本来是{一根|yì gēn}{撑|chēng}着天的大{柱子|zhùzi}，这一撞，柱子竟然断了！
 
@@ -14,13 +14,13 @@ status: draft
 
 女娲看到自己{亲手|qīnshǒu}造的孩子们{受|shòu}了这么大的苦，心里难过极了。她{下定决心|xiàdìng juéxīn}：“我一定要把天补好，让人们重新过上安稳的日子！”
 
-可是，天这么高，这么大，用什么才能补好它呢？女娲想了很久，终于想出了办法。她找来五种颜色的石头，又{堆|duī}起像山一样高的{木柴|mùchái}，点起大火，把{五色石|wǔsèshí}放进火里{炼|liàn}。石头在大火里慢慢{熔化|rónghuà}，变成了{滚烫|gǔntàng}的{浆|jiāng}。女娲把它一点一点地{补|bǔ}在天上的窟窿里，终于把天上的窟窿全都补好了。据说，补过的地方后来变成了{五颜六色|wǔ yán liù sè}的{彩霞|cǎixiá}。
+可是，天这么高，这么大，用什么才能补好它呢？女娲想了很久，终于想出了办法。她找来五种颜色的石头，又从山上{砍|kǎn}来很多{木柴|mùchái}，点起大火，把{五色石|wǔsèshí}放进火里{炼|liàn}。石头在大火里慢慢{熔化|rónghuà}，变成了{滚烫|gǔntàng}的{浆|jiāng}。女娲把它一点一点地{补|bǔ}在天上的窟窿里，终于把天上的窟窿全都补好了。据说，补过的地方后来变成了{五颜六色|wǔ yán liù sè}的{彩霞|cǎixiá}。
 
-天补好了，可是撑天的柱子已经断了。女娲担心天又会塌下来，就想找些东西把天的四个角撑起来。她看到{大海|dàhǎi}里有一只巨大的{鳌|áo}，就{砍|kǎn}下了它的四条腿，把它们{竖|shù}在大地的东、南、西、{北|běi}四个方向，像{四根|sì gēn}大柱子一样，把天稳稳地撑了起来。
+天补好了，可是撑天的柱子已经断了。女娲担心天又会塌下来，就想找些东西把天的四个角撑起来。她看到{大海|dàhǎi}里有一只巨大的{鳌|áo}，就砍下了它的四条腿，把它们{竖|shù}在大地的东、南、西、{北|běi}四个方向，像{四根|sì gēn}大柱子一样，把天稳稳地撑了起来。
 
-接着，女娲又{杀死|shāsǐ}了一条{兴风作浪|xīng fēng zuò làng}、到处{害|hài}人的黑龙，{救|jiù}了{冀州|Jìzhōu}的百姓。她还把河边的{芦苇|lúwěi}{烧成|shāochéng}{灰|huī}，一堆一堆地堆起来，{挡|dǎng}住了到处{泛滥|fànlàn}的洪水。那些吃人的野兽和大鸟，有的被杀死了，有的逃走了，再也不敢出来害人。
+接着，女娲又{杀死|shāsǐ}了一条{兴风作浪|xīng fēng zuò làng}、到处{害|hài}人的黑龙，{救|jiù}了{冀州|Jìzhōu}的百姓。她还把河边的{芦苇|lúwěi}{烧成|shāochéng}{灰|huī}，{一堆|yì duī}一堆地{堆起来|duī qǐlai}，{挡|dǎng}住了到处{泛滥|fànlàn}的洪水。那些危害人们的猛兽和{凶|xiōng}鸟，也一个个被{除掉|chúdiào}了。
 
-天补好了，天的四个角也撑住了，洪水{退|tuì}了，大火灭了，人们终于又能回到家里，安安心心地种地、生活了。看着重新变得平静的大地，女娲这才放心地{松|sōng}了一口气。人们也一直没有忘记她，{直到|zhídào}今天，有的地方还会举行{祭祀|jìsì}女娲的活动。
+就这样，天补好了，天的四个角也稳稳地撑住了，洪水{干|gān}了，冀州也太平了。逃到{各处|gèchù}的人们一个个走了出来，重新开始了平静的生活。看到这一切，女娲这才放心地{松|sōng}了{一口气|yìkǒuqì}。人们也一直没有忘记她，{直到|zhídào}今天，有的地方还会举行{祭祀|jìsì}女娲的活动。
 
 不过，这次灾难还是留下了一点儿{痕迹|hénjì}：天向西北方{倾斜|qīngxié}，所以太阳、月亮和{星星|xīngxing}都向西边{落|luò}下去；大地的{东南|dōngnán}角{陷|xiàn}了下去，所以中国的大河大多向东边{流进|liújìn}大海。{古人|gǔrén}就是用这个神话来解释天上和地上的这些现象的。
 
@@ -37,6 +37,7 @@ status: draft
 - 塌 | tā | обрушиться
 - 凶猛 | xiōngměng | свирепый
 - 逃命 | táo mìng | спасаться бегством
+- 除掉 | chúdiào | истребить, избавиться
 - 炼 | liàn | плавить, выплавлять
 - 熔化 | rónghuà | плавиться
 - 补 | bǔ | латать, чинить
@@ -70,12 +71,13 @@ status: draft
 - academic | 精卫填海，并非自不量力的抗争悲剧 — 中国作家网 | http://www.chinawriter.com.cn/n1/2017/0801/c404063-29442265.html | 往古之时，四极废，九州裂；天不兼覆，地不周载；火滥炎而不灭，水浩洋而不息；猛兽食颛民，鸷乌攫老弱。于是，女娲炼五色石以补苍天，断鳌足以立四极，杀黑龙以济冀州，积芦灰以止淫水。苍天补，四极正，淫水涸，冀州平，狡虫死，颛民生。 | 2026-10-17
 - academic | 中国传统神话的文化价值与当代表达 — 人民论坛（人民日报社） | http://paper.people.com.cn/rmlt/html/2023-05/15/content_25999957.htm | 刘安的《淮南子》具体记述众神即不同的氏族争夺天下，形成不周之山的断裂，天塌地陷人民苦不堪言，女娲斩鳌足以立天地四极稳定，杀黑龙以济冀州，特别是炼五色石以补苍天 | 2026-10-17
 - academic | 创世者与反神话 — 中国社会科学网 | https://www.cssn.cn/dkzgxp/zgxp_zgshkx/2024nd3q/202405/t20240502_5749159.shtml | 其后共工氏与颛顼争为帝，怒而触不周之山，折天柱，绝地维，故天倾西北，日月辰星就焉；地不满东南，故百川水潦归焉。 | 2026-10-15
-- academic | 鲁迅《中国小说史略》第二篇 神话与传说 — 中文马克思主义文库·鲁迅全集 | https://www.marxists.org/chinese/reference-books/luxun/25/004.htm | 天地，亦物也。物有不足，故昔者女娲氏练五色石以补其阙，断鳌之足以立四极。其后共工氏与颛顼争为帝，怒而触不周之山，折天柱，绝地维（《列子》《汤问》） | 2026-10-17
+- academic | 鲁迅《中国小说史略》第二篇 神话与传说 — 中文马克思主义文库·鲁迅全集 | https://www.marxists.org/chinese/reference-books/luxun/25/004.htm | 天地，亦物也。物有不足，故昔者女娲氏练五色石以补其阙，断鳌之足以立四极。其后共工氏与颛顼争为帝，怒而触不周之山，折天柱，绝地维，故天倾西北，日月星辰就焉，地不满东南，故百川水潦归焉。（《列子》《汤问》） | 2026-10-17
 - official | 女娲祭典 — 中国非物质文化遗产网 | https://www.ihchina.cn/project_details/14994.html | 祭拜活动以颂扬人类始祖女娲抟土造人、炼石补天、断鳌足、立四极、治洪水、通婚姻、作笙簧等功德为主 | 2026-10-15
 - academic | 女娲伏羲究竟有着怎样的“神力” — 中国作家网 | http://www.chinawriter.com.cn/n1/2017/0516/c404063-29278829.html | 古书上还说，上古天有缺漏，女娲曾炼石补天。这个故事被曹雪芹写入《红楼梦》，产生了巨大影响。 | 2026-10-17
 - official | 中国古代神话传说与水 — 水利部海河水利委员会 | http://www.hwcc.gov.cn/wwgj/hhwh/swh/201109/t20110928_3723.html | 关于洪水的产生，广为流传的当属共工洪水水神的神话传说。共工与洪水的神话传说包括两方面的内容：一是共工振荡发起洪水。二是共工怒触不周山引起洪水泛滥。 | 2026-10-15
-- retelling | 女娲补天 Nuwa Mends the Sky — Chinese Mythology & Thirty-Six Stratagems（中国神话故事与三十六计），QQ阅读 | https://m.appbook.qq.com/read/1036212394/7 | First, she piled up a mountain of firewood and found rocks of five different colors. She lit the wood with a big tree and melted the rocks into igneous magma and used it to mend the cracks and holes in the sky. Later, the magma became bright and colorful clouds. | 2026-10-17
-- retelling | 女娲补天 Nuwa Mends the Sky — Chinese Mythology & Thirty-Six Stratagems（中国神话故事与三十六计），QQ阅读 | https://m.appbook.qq.com/read/1036212394/7 | She first chased down the vicious Black Dragon which had brutally devoured hundreds of people and stirred up great fear among all the other creatures. | 2026-10-17
+- retelling | 女娲补天 Nuwa Mends the Sky — Zhang Ciyun, Chinese Mythology & Thirty-Six Stratagems, 上海译文出版社, 2020, ISBN 9787532780907（QQ阅读） | https://m.appbook.qq.com/read/1036212394/7 | First, she piled up a mountain of firewood and found rocks of five different colors. She lit the wood with a big tree and melted the rocks into igneous magma and used it to mend the cracks and holes in the sky. Later, the magma became bright and colorful clouds. | 2026-10-17
+- retelling | 女娲补天 Nuwa Mends the Sky — Zhang Ciyun, Chinese Mythology & Thirty-Six Stratagems, 上海译文出版社, 2020, ISBN 9787532780907（QQ阅读） | https://m.appbook.qq.com/read/1036212394/7 | She first chased down the vicious Black Dragon which had brutally devoured hundreds of people and stirred up great fear among all the other creatures. | 2026-10-17
+- retelling | 女娲补天 Nuwa Mends the Sky — Zhang Ciyun, Chinese Mythology & Thirty-Six Stratagems, 上海译文出版社, 2020, ISBN 9787532780907（QQ阅读） | https://m.appbook.qq.com/read/1036212394/7 | When she was at a loss, a giant turtle swam to the shore and offered its own four legs to the goddess. | 2026-10-17
 
 ## 注
 
