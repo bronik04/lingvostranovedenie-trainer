@@ -1,0 +1,4507 @@
+{
+  "dossier": "cuisine",
+  "reviewCompletedAt": "2026-10-18",
+  "sourceCheckedAt": "2026-10-17",
+  "status": "tables verified; no questions or site publication",
+  "counts": {
+    "rows": 90,
+    "countries": {
+      "中国": 63,
+      "俄罗斯": 27
+    },
+    "tables": {
+      "savory": {
+        "rows": 40,
+        "countries": {
+          "中国": 28,
+          "俄罗斯": 12
+        }
+      },
+      "staples": {
+        "rows": 30,
+        "countries": {
+          "中国": 21,
+          "俄罗斯": 9
+        }
+      },
+      "sweets": {
+        "rows": 20,
+        "countries": {
+          "中国": 14,
+          "俄罗斯": 6
+        }
+      }
+    },
+    "citations": 192,
+    "sourceURLs": 141,
+    "errors": []
+  },
+  "quoteAudit": {
+    "citations": 192,
+    "publications": 141,
+    "allFound": true,
+    "overBudget": [],
+    "matching": "Ordered fragments, whitespace and Unicode width normalization; ellipses separate gaps.",
+    "methodsByCitation": {
+      "independent HTTP": 138,
+      "saved web/indexed extraction": 43,
+      "PDF OCR": 11
+    },
+    "freshHTTPSuccessfulURLs": 108,
+    "freshHTTPRequestedURLs": 141
+  },
+  "independentReview": [
+    {
+      "row": "cu-cn-mapo-doufu",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://paper.people.com.cn/rmrb/pad/content/202507/16/content_30088084.html",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://www.mct.gov.cn/wlbphone/wlbydd/xxfb/gzxx/202211/t20221110_937353.html",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-yuxiang-rousi",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://kpzg.people.com.cn/n1/2024/1213/c404214-40381129.html",
+          "access": "Прочитан сохранённый текст источника: indexed full text. Независимый HTTP: 000; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description"
+          ]
+        },
+        {
+          "url": "https://www.mct.gov.cn/wlbphone/wlbydd/xxfb/gzxx/202211/t20221110_937353.html",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://zwb.pku.edu.cn/zwdt/xwdt/7a0ae849b37f42e0987f922a6f6f0eee.htm",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-huiguorou",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://culture.people.com.cn/n/2014/0126/c172318-24232305.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP: 000; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "region"
+          ]
+        },
+        {
+          "url": "https://sc.people.com.cn/n2/2020/0528/c345167-34046975.html",
+          "access": "Прочитан сохранённый текст источника: preserved public HTTP body, TLS certificate verification bypassed after hostname mismatch. Независимый HTTP: 000; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "method",
+            "feature",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-beijing-kaoya",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.beijing.gov.cn/renwen/sy/whkb/201901/t20190104_1865061.html",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.bjdch.gov.cn/ztzl/cyqn/jsmsjy/202407/t20240716_3750667.html",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-gongbao-jiding",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://health.people.com.cn/n/2015/0128/c14739-26463931.html",
+          "access": "Прочитан сохранённый текст источника: preserved HTTP; TLS certificate verification bypassed for public page after verified-domain retrieval error. Независимый HTTP: 000; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method"
+          ]
+        },
+        {
+          "url": "https://culture.people.com.cn/n/2014/0126/c172318-24232305.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP: 000; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature",
+            "region"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "description",
+          "problem": "В рецепте указаны 青、红椒 без определения «сладкий». Мясо ножек и иной набор овощей в закреплённых источниках не описаны.",
+          "correction": "Заменить описание на: «Для состава и техники выбран опубликованный “Жэньминьван” рецепт с куриной грудкой, зелёным и красным перцем. Это конкретный документированный вариант блюда.»",
+          "sourceURL": "https://health.people.com.cn/n/2015/0128/c14739-26463931.html",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "description"
+      ]
+    },
+    {
+      "row": "cu-cn-dongporou",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.hzzx.gov.cn/hzxw/content/2017-01/16/content_6444737.htm",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.gdszx.gov.cn/zxkw/tzgj/2022/05/content/post_29676.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-jiaohuaji",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.changshu.gov.cn/zgcs/c100287/202003/f88916c649834f858d13e4d63ef9b4f2.shtml",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://swsadmin.shanwei.gov.cn/shanweinews/hlf/202407/5e217bc180344af5b2030409d8b4a5e3.shtml",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "method",
+            "feature",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-baiqieji",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.gdwsw.gov.cn/wsbl/content/post_33985.html",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.qingcheng.gov.cn/zjqc/mswh/content/post_1805069.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text; fresh fetch failed. Независимый HTTP: 000; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "method",
+            "feature",
+            "region"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "description",
+          "problem": "Утверждение, что региональные варианты различаются именно бульоном и соусами, не подтверждено двумя приведёнными текстами.",
+          "correction": "Удалить последнее предложение «Региональные варианты отличаются бульоном и соусами.»; первое предложение сохранить.",
+          "sourceURL": "https://www.gdwsw.gov.cn/wsbl/content/post_33985.html",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "description"
+      ]
+    },
+    {
+      "row": "cu-cn-meicai-kourou",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.pingli.gov.cn/Content-2502413.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.xunwu.gov.cn/xwxrmzf/c103794/201812/074ee30776f2411298df34159abf9889.shtml",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-songshu-guiyu",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://sydney.china-consulate.gov.cn/whjw/zxzy/202204/t20220429_10676134.htm",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://nyncj.suzhou.gov.cn/nlj/zwyw/202404/358ba821fabd4a8ea9f01b6e25abd1a7.shtml",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "method",
+            "feature",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-xihu-cuyu",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.gqb.gov.cn/news/2023/0122/56101.shtml",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "region"
+          ]
+        },
+        {
+          "url": "https://m.ccdi.gov.cn/content/cd/95/35865.html",
+          "access": "Прочитан сохранённый текст источника: indexed full text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "method",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-geleshan-laziji",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://whlyw.cq.gov.cn/zjwl/szq/zqms/202412/t20241231_14035867.html",
+          "access": "Прочитан сохранённый текст источника: indexed full text. Независимый HTTP: 000; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "method",
+            "feature",
+            "region"
+          ]
+        },
+        {
+          "url": "https://mzj.cq.gov.cn/sy_218/bmdt/mzyw/202404/t20240401_13096439.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP: 000; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "feature",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-tangcu-liji",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.yantai.gov.cn/art/2024/7/31/art_97611_3206989.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://jyt.xinjiang.gov.cn/edu/xuexiaodt/202504/0aa9406709694a1383f32ec7795677e8.shtml",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-dapanji",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.gqb.gov.cn/news/2024/0703/58850.shtml",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.xjsw.gov.cn/zwdt/swyw/content_31042",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-kou-sansi",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://sydney.china-consulate.gov.cn/whjw/zxzy/202204/t20220429_10676134.htm",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description"
+          ]
+        },
+        {
+          "url": "https://yptimes.shyp.gov.cn/html/2022-12/06/content_9406_15576719.htm",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-congshao-haishen",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://jnbusiness.jinan.gov.cn/col8314/art/2025/art_8314_4784185.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP: 403; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.ytfushan.gov.cn/art/2025/4/28/art_103122_2950087.html",
+          "access": "Прочитан сохранённый текст источника: indexed full text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "method",
+            "feature",
+            "region"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "ingredients",
+          "problem": "В закреплённых источниках встречаются 葱段 и 大葱, но нет ограничения до 葱白. Оно есть в другой уже собранной публикации консульства, которая к этой строке не привязана.",
+          "correction": "Минимальная правка: zh «海参、大葱»; ru и gloss «Трепанг и зелёный лук». Альтернатива — добавить к строке уже прочитанный консульский источник с 葱白, если белая часть принципиальна.",
+          "sourceURL": "https://www.ytfushan.gov.cn/art/2025/4/28/art_103122_2950087.html",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "ingredients"
+      ]
+    },
+    {
+      "row": "cu-cn-jiuzhuan-dachang",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://jgj.sh.gov.cn/shhq/app/qgl_ztc/msj/2020/06/12/2c92f58b720c4d490172a70ad1ad5b66.html?tm=1621834804828",
+          "access": "Прочитан сохранённый текст источника: indexed full text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description"
+          ]
+        },
+        {
+          "url": "https://nmfsj.moa.gov.cn/xwzx_25646/ywjj/201809/t20180913_6157258.htm",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-xiangyou-shanhu",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://dfz.nanjing.gov.cn/gzdt/202607/t20260709_5873874.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://nmfsj.moa.gov.cn/xwzx_25646/ywjj/201809/t20180913_6157258.htm",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "region"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "feature",
+          "problem": "Шипение при подаче подтверждено, но повторяет смысл 响油 в name и результат поливания горячим маслом в method. Это не самостоятельная сторона строки по спецификации.",
+          "correction": "Заменить feature на zh «色泽深红，油润而不腻»; ru и gloss «Тёмно-красный цвет; маслянистое блюдо без ощущения излишней жирности». Это прямо поддержано вторым источником.",
+          "sourceURL": "https://nmfsj.moa.gov.cn/xwzx_25646/ywjj/201809/t20180913_6157258.htm",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "feature"
+      ]
+    },
+    {
+      "row": "cu-cn-kejia-niang-doufu",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.wengyuan.gov.cn/lywy/cyms/content/post_176584.html",
+          "access": "Прочитан сохранённый текст источника: indexed full text. Независимый HTTP: 403; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.gdwsw.gov.cn/wsbl/content/post_33985.html",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-xiefen-shizitou",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.jsstb.gov.cn/ms/201211/t20121115_3370066.htm",
+          "access": "Прочитан сохранённый текст источника: indexed full text. Независимый HTTP: 000; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://zx.huaian.gov.cn/col/14068_734855/art/m/17329824/17337274068917ej5ySPG.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "method",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-bangbangji",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.yaan.gov.cn/xinwen/show/d86e76bf-0862-4966-986c-707010e2fe53.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP: 000; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://zhuanti.mct.gov.cn/fymstslvxlzs/xl_detail/9699.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-lizhuang-bairou",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.sctyzx.gov.cn/yb/202308/54298309.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.gqb.gov.cn/news/2023/0419/56857.shtml",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-fuqi-feipian",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/1553530d391340e09fadfa0996eb523b",
+          "access": "Прочитан сохранённый текст источника: indexed full text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://rst.sc.gov.cn/rst/zxzynlkhgfcx/2025/2/14/ca761ca855694e458fb222c6e39b6e25/files/%E5%9B%9B%E5%B7%9D%E7%9C%81%E5%BC%80%E5%8F%91%E7%9A%84%E4%B8%93%E9%A1%B9%E8%81%8C%E4%B8%9A%E8%83%BD%E5%8A%9B%E8%80%83%E6%A0%B8%E8%A7%84%E8%8C%83%E7%9B%AE%E5%BD%95%EF%BC%882018%E5%B9%B4-2024%E5%B9%B4%EF%BC%89.pdf",
+          "access": "Прочитан сохранённый текст источника: indexed PDF extract, section 84 read. Независимый HTTP: 000; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "method",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-pai-huanggua",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://m.12371.gov.cn/content/2022-07/01/content_416856.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "region"
+          ]
+        },
+        {
+          "url": "https://hunan.gov.cn/hnszf/hnyw/sxsp/202408/t20240817_33433565.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "description",
+          "problem": "Имя автора «Чэнь Янь» не присутствует ни в сохранённом индексированном тексте, ни в независимо полученном тексте страницы; автор обозначен только как член Хубэйского союза писателей.",
+          "correction": "Заменить начало на «Представлен домашний вариант из очерка “细切黄瓜凉欲嚏” на “Цииван”: автор прямо называет блюдо любимой закуской отца к алкоголю.» Остальное описание сохранить.",
+          "sourceURL": "https://m.12371.gov.cn/content/2022-07/01/content_416856.html",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "description"
+      ]
+    },
+    {
+      "row": "cu-cn-hulatang",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.yantai.gov.cn/art/2023/12/21/art_83633_3167927.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://nmfsj.moa.gov.cn/xwzx_25646/ywjj/201809/t20180913_6157258.htm",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-donggua-zhong",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.jiangmen.gov.cn/newzjqx/lyzy/qxms/content/post_3298086.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://dfz.nanjing.gov.cn/gzdt/202409/t20240902_4755299.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-fotiaoqiang",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.fjtb.gov.cn/food/201308/t20130807_4557639.htm",
+          "access": "Прочитан сохранённый текст источника: indexed full text. Независимый HTTP: 000; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/450e2f0897dc4abca9d7a030f3be838b",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-kaishui-baicai",
+      "reviewBlock": "review-savory.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "region",
+        "ru",
+        "gloss",
+        "sources"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://sydney.china-consulate.gov.cn/whjw/zxzy/202204/t20220429_10676134.htm",
+          "access": "Прочитан сохранённый текст источника: fresh web. Независимый HTTP-кэш: 200, цитата также найдена (автоматическое сопоставление).",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://www.zjskw.gov.cn/art/2022/6/12/art_1229614965_47418.html",
+          "access": "Прочитан сохранённый текст источника: indexed substantive text. Независимый HTTP: 403; это не считалось чтением страницы. Повторный запрос не выполнялся.",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-borscht",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://rus.ruc.edu.cn/zjels/whfq/esms/e637656035c24d02aeb7a267be1ef698.htm",
+          "access": "Индексированное содержимое страницы в результате web search; прямой HTTP недоступен (TLS), web open — redirect loop. Сохранён аутентичный ответ инструмента. Независимый HTTP: 000. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/web-ruc-good.json",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature"
+          ]
+        },
+        {
+          "url": "https://rus.ruc.edu.cn/zjels/whfq/esms/9bbae0a6876442c8865e5bc487256ae3.htm",
+          "access": "Индексированное содержимое страницы в результате web search; прямой HTTP недоступен (TLS), web open — redirect loop. Сохранён аутентичный ответ инструмента. Независимый HTTP: 000. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/web-ruc-good.json",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "description"
+          ]
+        },
+        {
+          "url": "https://www.culture.ru/materials/254771/kukhni-rossii-tradicionnye-blyuda-i-ikh-istoriya",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/culture-cuisines.txt",
+          "quoteFound": true,
+          "support": [
+            "country",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-shchi",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://rus.ruc.edu.cn/zjels/whfq/esms/08055eed8172425698bec8d6e17d23e4.htm",
+          "access": "Индексированное содержимое страницы в результате web search; сохранён аутентичный ответ инструмента. Независимый HTTP: 000. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/web-ruc-good.json",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country"
+          ]
+        },
+        {
+          "url": "https://www.culture.ru/materials/257163/recepty-blyud-iz-poemy-mertvye-dushi",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/culture-dead-souls.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "description",
+          "problem": "Исторический рецепт «Щи ленивые» ошибочно приписан Я. Ф. Батюшкову. Его подпись относится к предыдущему рецепту щей из кислой капусты.",
+          "correction": "Заменить первую фразу на: Здесь — исторический вариант «щи ленивые» из «Новейшей поваренной книги» по методе Катерины Авдеевой (1865), приведённый на портале Культура.РФ.",
+          "sourceURL": "https://www.culture.ru/materials/257163/recepty-blyud-iz-poemy-mertvye-dushi",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "description"
+      ]
+    },
+    {
+      "row": "cu-ru-kholodets",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://rus.ruc.edu.cn/zjels/whfq/esms/9bbae0a6876442c8865e5bc487256ae3.htm",
+          "access": "Индексированное содержимое страницы в результате web search; прямой HTTP недоступен (TLS), web open — redirect loop. Сохранён аутентичный ответ инструмента. Независимый HTTP: 000. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/web-ruc-good.json",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description"
+          ]
+        },
+        {
+          "url": "https://russianculture.cn/ru/zh/俄餐10大健康美食/",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-foods.txt",
+          "quoteFound": true,
+          "support": [
+            "country",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-vinegret",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/俄餐10大健康美食/",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-foods.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients"
+          ]
+        },
+        {
+          "url": "https://koncol.ru/files/e_book_10.pdf",
+          "access": "Скачан полный PDF с сайта Константиновского колледжа; выбранная страница отрендерена pdftoppm и прочитана через tesseract rus. PNG и OCR сохранены рядом. Номер PDF-страницы 273, печатная страница 272. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/anf-p273.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-olivier",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.view.sdu.edu.cn/info/1022/195896.htm",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/sdu-olivier.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country"
+          ]
+        },
+        {
+          "url": "https://www.culture.ru/materials/162415/3-recepta-olive",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/salad-olivier.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "description"
+          ]
+        },
+        {
+          "url": "https://russianculture.cn/ru/18375/",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-olivier.txt",
+          "quoteFound": true,
+          "support": [
+            "country",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-herring-fur-coat",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://rus.ruc.edu.cn/zjels/whfq/esms/e637656035c24d02aeb7a267be1ef698.htm",
+          "access": "Индексированное содержимое страницы в результате web search; прямой HTTP недоступен (TLS), web open — redirect loop. Сохранён аутентичный ответ инструмента. Независимый HTTP: 000. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/web-ruc-good.json",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country"
+          ]
+        },
+        {
+          "url": "https://www.culture.ru/materials/256231/seledka-pod-shuboi-istoriya-prazdnichnogo-salata",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/salad-shuba.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-okroshka",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://rus.ruc.edu.cn/zjels/whfq/esms/e637656035c24d02aeb7a267be1ef698.htm",
+          "access": "Индексированное содержимое страницы в результате web search; прямой HTTP недоступен (TLS), web open — redirect loop. Сохранён аутентичный ответ инструмента. Независимый HTTP: 000. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/web-ruc-good.json",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature"
+          ]
+        },
+        {
+          "url": "https://koncol.ru/files/e_book_10.pdf",
+          "access": "Скачан полный PDF с сайта Константиновского колледжа; выбранная страница отрендерена pdftoppm и прочитана через tesseract rus. PNG и OCR сохранены рядом. Номер PDF-страницы 130, печатная страница 129. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/anf-p130.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-solyanka",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://rus.ruc.edu.cn/zjels/whfq/esms/e637656035c24d02aeb7a267be1ef698.htm",
+          "access": "Индексированное содержимое страницы в результате web search; прямой HTTP недоступен (TLS), web open — redirect loop. Сохранён аутентичный ответ инструмента. Независимый HTTP: 000. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/web-ruc-good.json",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country"
+          ]
+        },
+        {
+          "url": "https://koncol.ru/files/e_book_10.pdf",
+          "access": "Скачан полный PDF с сайта Константиновского колледжа; выбранная страница отрендерена pdftoppm и прочитана через tesseract rus. PNG и OCR сохранены рядом. Номер PDF-страницы 114, печатная страница 113. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/anf-p114.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-rassolnik",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/俄餐的10种最佳饮食搭配/",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-pairings.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature"
+          ]
+        },
+        {
+          "url": "https://koncol.ru/files/e_book_10.pdf",
+          "access": "Скачан полный PDF с сайта Константиновского колледжа; выбранная страница отрендерена pdftoppm и прочитана через tesseract rus. PNG и OCR сохранены рядом. Номер PDF-страницы 113, печатная страница 112. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/anf-p113.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "description"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "ingredients.zh",
+          "problem": "薏米 обозначает коикс, а в выбранном рецепте перловая крупа; русский и китайский тексты расходятся. РКЦ использует 大麦米.",
+          "correction": "肉汤、土豆、大麦米、酸黄瓜和腌黄瓜水",
+          "sourceURL": "https://russianculture.cn/ru/zh/俄餐的10种最佳饮食搭配/",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "ingredients"
+      ]
+    },
+    {
+      "row": "cu-ru-stroganoff",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://rus.ruc.edu.cn/zjels/whfq/esms/e637656035c24d02aeb7a267be1ef698.htm",
+          "access": "Индексированное содержимое страницы в результате web search; прямой HTTP недоступен (TLS), web open — redirect loop. Сохранён аутентичный ответ инструмента. Независимый HTTP: 000. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/web-ruc-good.json",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country"
+          ]
+        },
+        {
+          "url": "https://koncol.ru/files/e_book_10.pdf",
+          "access": "Скачан полный PDF с сайта Константиновского колледжа; PDF-страницы 221, 222 (печатные 220, 221) отрендерены pdftoppm и прочитаны через tesseract rus. OCR этих страниц объединён в указанный файл, исходные PNG и OCR сохранены рядом. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/cu-ru-stroganoff-pages.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "description",
+            "feature"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-kotleta",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://rus.ruc.edu.cn/zjels/whfq/esms/e637656035c24d02aeb7a267be1ef698.htm",
+          "access": "Индексированное содержимое страницы в результате web search; прямой HTTP недоступен (TLS), web open — redirect loop. Сохранён аутентичный ответ инструмента. Независимый HTTP: 000. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/web-ruc-good.json",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country"
+          ]
+        },
+        {
+          "url": "https://koncol.ru/files/e_book_10.pdf",
+          "access": "Скачан полный PDF с сайта Константиновского колледжа; PDF-страницы 74, 231 (печатные 73, 230) отрендерены pdftoppm и прочитаны через tesseract rus. OCR этих страниц объединён в указанный файл, исходные PNG и OCR сохранены рядом. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/cu-ru-kotleta-pages.txt Дополнительно прочитан anf-p73.txt (печатная с. 72) для замачивания хлеба.",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "feature",
+            "description",
+            "method"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-shashlyk",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/俄餐的10种最佳饮食搭配/",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-pairings.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://www.culture.ru/materials/254771/kukhni-rossii-tradicionnye-blyuda-i-ikh-istoriya",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/culture-cuisines.txt",
+          "quoteFound": true,
+          "support": [
+            "country",
+            "method",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-daoxiaomian",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.yunzhou.gov.cn/yzqrmzfz/sqglmzzj/202007/e806464524534484962843b6f738a2f3.shtml",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-29.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.dt.gov.cn/english/dining/202501/20ca0a87b3324e66911ebedcc1642342.shtml",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-27.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "feature",
+          "problem": "В двух прикреплённых источниках подтверждена форма ивового листа, но 中厚边薄 отсутствует и в полном HTTP-тексте Юньчжоу. Эта характеристика есть в другом, уже собранном материале Минсельхоза, но он не прикреплён к строке.",
+          "correction": {
+            "zh": "面叶形似柳叶，外滑内筋",
+            "ru": [
+              "Лапша в форме ивовых листьев, гладкая снаружи и упругая внутри"
+            ],
+            "gloss": "Лапша в форме ивовых листьев, гладкая снаружи и упругая внутри"
+          },
+          "sourceURL": "https://www.dt.gov.cn/english/dining/202501/20ca0a87b3324e66911ebedcc1642342.shtml",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "feature"
+      ]
+    },
+    {
+      "row": "cu-cn-dandanmian",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/f6c270c212ad4cfc998168b223807727",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-30.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://nmfsj.moa.gov.cn/xwzx_25646/ywjj/201809/t20180913_6157258.htm",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-26.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-reganmian",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://sw.wuhan.gov.cn/xwdt/gzdt/202204/t20220418_1957174.shtml",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-5.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://sw.wuhan.gov.cn/xwdt/mtbd/202407/t20240731_2435699.shtml",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-6.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "feature",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-roujiamo",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/f1b29e1774c04ec690cdab178e18f8ba",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-23.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.kbs.gov.cn/zjkbs/jqjd/czxylg/202009/t20200921_2758250.html",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-24.txt. Независимый HTTP-кэш: status=404, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "description",
+          "problem": "Опечатка в русском географическом прилагательном: «сяньский».",
+          "correction": "Взят сианьский вариант с тушёной свининой ла-чжи-жоу и лепёшкой байцзимо. Состав мясной начинки и техника лепёшек в других вариантах могут отличаться.",
+          "sourceURL": "https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/f1b29e1774c04ec690cdab178e18f8ba",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "description"
+      ]
+    },
+    {
+      "row": "cu-cn-youtiao",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.gov.cn/fuwu/2018-07/17/5306995/files/3816dd78ba1349c4b4a8ff2bea6b1c91.pdf",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-13.txt. Независимый HTTP-кэш: status=200, exit=0, pdfExit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web2758/site/attach/0/76bcf719a79f49c08c154094ac1e421c.pdf",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-3.txt. Независимый HTTP-кэш: status=200, exit=28, pdfExit=1",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-mantou",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://fgw.ankang.gov.cn/Content-422048.html",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-58.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description"
+          ]
+        },
+        {
+          "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/jyzt_2017nztzl/2017_zt02/17zt02_zjzx/201705/t20170515_304662.html",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-57.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature"
+          ]
+        },
+        {
+          "url": "https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260430/c012ba9f05414f3184be86244a03e950.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-21.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-huajuan",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.zhangye.gov.cn/wjw/ztzl/jkxj/202308/t20230823_1098942_ghb.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-20.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://xy.zhumadian.gov.cn/ar/20220426000338.htm",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-62.txt. Независимый HTTP-кэш: status=508, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "feature",
+          "problem": "Сейчас китайская ячейка сформулирована как операция приготовления, а не самостоятельный признак готового изделия.",
+          "correction": {
+            "zh": "麻花状的翻折造型",
+            "ru": [
+              "Витая форма со сложенными концами"
+            ],
+            "gloss": "Витая форма со сложенными концами"
+          },
+          "sourceURL": "https://www.zhangye.gov.cn/wjw/ztzl/jkxj/202308/t20230823_1098942_ghb.html",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "feature"
+      ]
+    },
+    {
+      "row": "cu-cn-congyoubing",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://touch.shio.gov.cn/jsp/jrsh_detail.jsp?id=2663",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-63.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://nyj.nanyang.gov.cn/2026/08-10/1425592.html",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-61.txt. Независимый HTTP-кэш: status=403, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "feature"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-zongzi",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://hnlyzy.hncourt.gov.cn/public/detail.php?id=2598",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-53.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://www.hunan.gov.cn/hnszf/jxxx/hxwh/cwd/201711/t20171111_4685435.html",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-54.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-changfen",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.lw.gov.cn/zjlw/lwdt/szlw/content/post_9042085.html",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-49.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://igz.gzwxb.gov.cn/context/context/202380",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-50.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-jiaozi",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://study.bjwomen.gov.cn/thought/knowledge/2024/02/05/11463.shtml",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-18.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://www.huaihua.gov.cn/amr/c110027/201901/f0d83c3a4bdb44eb82c3502242d9f888.shtml",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-19.txt. Независимый HTTP-кэш: status=403, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "name",
+          "problem": "Общее 饺子 включает жареные изделия: собственный источник прямо называет приготовленные на сковороде 饺子 словом 锅贴. При отдельной строке 锅贴 возникает общее блюдо и частный вариант. Выбранный в описании варёный вариант уже имеет аттестованное имя 水饺.",
+          "correction": {
+            "zh": "水饺",
+            "ru": [
+              "Шуйцзяо — варёные пельмени"
+            ],
+            "gloss": "Шуйцзяо — варёные пельмени"
+          },
+          "sourceURL": "https://study.bjwomen.gov.cn/thought/knowledge/2024/02/05/11463.shtml",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "name"
+      ]
+    },
+    {
+      "row": "cu-cn-guotie",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://dfz.nanjing.gov.cn/gzdt/202509/t20250928_5658526.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-16.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://daj.shaanxi.gov.cn/Article/View?id=5546",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-17.txt. Независимый HTTP-кэш: status=000, exit=60",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-xiaolongbao",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://zgh.wuxi.gov.cn/doc/2024/05/13/4311615.shtml",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-14.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/5cff3c4172d7480a8fc81c4dc885ee15",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-15.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-shengjianmantou",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260430/c012ba9f05414f3184be86244a03e950.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-21.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202607/35921ecd9b0e4544b88adf85b0fc8a0d.shtml",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-1.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-jianbingguozi",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://dxs.moe.gov.cn/zx/a/xyh_xyh_zndxxsgzbc/210228/1611016.shtml",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-59.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature"
+          ]
+        },
+        {
+          "url": "https://www.tjftz.gov.cn/contents/5992/377840.html",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-25.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "feature",
+            "region"
+          ]
+        },
+        {
+          "url": "https://whly.tj.gov.cn/XWDTYXWZX6562/MTJJ8464/202308/t20230830_6389533.html",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-60.txt. Независимый HTTP-кэш: status=403, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-guoqiaomixian",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/b584cce5257d4eab9360a2a38bc78acf",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-65.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.hh.gov.cn/info/9021/795922.htm",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-66.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "name",
+          "problem": "Русская транскрипция 过桥 ошибочно содержит «цзяо»: 桥 qiáo передаётся «цяо».",
+          "correction": {
+            "zh": "过桥米线",
+            "ru": [
+              "Гоцяо мисянь — рисовая лапша с горячим бульоном"
+            ],
+            "gloss": "Гоцяо мисянь — рисовая лапша с горячим бульоном"
+          },
+          "sourceURL": "https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/b584cce5257d4eab9360a2a38bc78acf",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "name"
+      ]
+    },
+    {
+      "row": "cu-cn-lanzhouniuroumian",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://nmfsj.moa.gov.cn/xwzx_25646/ywjj/201809/t20180913_6157258.htm",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-26.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://wlt.gansu.gov.cn/wlt/c118256/202308/169916340/files/984e9e5f38394c51803e753ad6fa617a.pdf",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-gansu-lanzhou.txt. Независимый HTTP-кэш: status=412, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-qishansaozimian",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://oa.yfyunchengqu.gov.cn/info/2000382153",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-64.txt. Независимый HTTP-кэш: status=000, exit=60",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.kflz.gov.cn/sitesources/nysjwjw/page_pc/xcjd/wh/articleb97bb43384a94c948180674c24803ba5.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-28.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "method",
+          "problem": "Два источника подтверждают мясную заправку, приготовление супа и заливку лапши, но отдельное обжаривание 炒制 не описывают. Не выводить его из названия 臊子.",
+          "correction": {
+            "zh": "肉臊配豆腐、木耳、黄花菜烹汤，浇在熟面上",
+            "ru": [
+              "Приготовить суп с мясной заправкой, тофу, древесными грибами и лилейником и залить сваренную лапшу"
+            ],
+            "gloss": "Приготовить суп с мясной заправкой, тофу, древесными грибами и лилейником и залить сваренную лапшу"
+          },
+          "sourceURL": "https://oa.yfyunchengqu.gov.cn/info/2000382153",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "method"
+      ]
+    },
+    {
+      "row": "cu-cn-liangpi",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.tianshui.gov.cn/wlj/info/2462/155422.htm",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-22.txt. Независимый HTTP-кэш: status=000, exit=28",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://sxwjw.shaanxi.gov.cn/hdjl/dczj/202511/P020251103589745415792.pdf",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-56.txt. Независимый HTTP-кэш: status=000, exit=28",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "feature",
+          "problem": "Тяньшуйский источник подтверждает 黄亮通透、香辣、柔软, но не использованное в ячейке 爽滑; лучше не дополнять характеристику памятью о блюде.",
+          "correction": {
+            "zh": "黄亮通透，香辣柔软",
+            "ru": [
+              "Желтоватые полупрозрачные полоски, пряные и мягкие"
+            ],
+            "gloss": "Желтоватые полупрозрачные полоски, пряные и мягкие"
+          },
+          "sourceURL": "https://www.tianshui.gov.cn/wlj/info/2462/155422.htm",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "feature"
+      ]
+    },
+    {
+      "row": "cu-cn-yangzhouchaofan",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.cnipa.gov.cn/attach/0/3895889a76964ef5a58aba64a9dff117.pdf",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-67.txt. Независимый HTTP-кэш: status=200, exit=0, pdfExit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://nync.xingtai.gov.cn/news_show.aspx?id=7899",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-51.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-baozaifan",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.jiangmen.gov.cn/newzjqx/lyzy/qxms/content/post_2980029.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-55.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://kepu.wjw.gz.gov.cn/home/jktt/content/mpost_4993.html",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-52.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "feature",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "description",
+          "problem": "Репортаж описывает заведение в 蓬江区迦南里, а Тайшань — родина владельца и источник риса/угря. Назвать весь вариант тайшаньским по этим данным нельзя.",
+          "correction": "Выбран современный вариант заведения «Уи нунцзя» в районе Пэнцзян города Цзянмэнь: с угрём, вялеными мясными продуктами и рисом из Тайшаня. Владелец называет использование угря нововведением своего заведения; другие баоцзайфань готовят с рёбрышками, колбасой и другими добавками.",
+          "sourceURL": "https://www.jiangmen.gov.cn/newzjqx/lyzy/qxms/content/post_2980029.html",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        },
+        {
+          "column": "region",
+          "problem": "Регион рецепта ошибочно отождествлён с происхождением владельца и сырья.",
+          "correction": "Гуандун, Цзянмэнь, район Пэнцзян",
+          "sourceURL": "https://www.jiangmen.gov.cn/newzjqx/lyzy/qxms/content/post_2980029.html",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        },
+        {
+          "column": "method",
+          "problem": "Источник говорит о добавлении начинок при 七成熟, тогда как 半熟 обозначает иную степень готовности. Убрать лишнюю точность.",
+          "correction": {
+            "zh": "砂锅煮米至未全熟，加入配料后慢火焖熟",
+            "ru": [
+              "Варить рис в глиняном горшочке до неполной готовности, добавить начинку и довести на слабом огне"
+            ],
+            "gloss": "Варить рис в глиняном горшочке до неполной готовности, добавить начинку и довести на слабом огне"
+          },
+          "sourceURL": "https://www.jiangmen.gov.cn/newzjqx/lyzy/qxms/content/post_2980029.html",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "description",
+        "method",
+        "region"
+      ]
+    },
+    {
+      "row": "cu-ru-bliny",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://rus.ruc.edu.cn/zjels/whfq/esms/e637656035c24d02aeb7a267be1ef698.htm",
+          "access": "Индексированное содержимое страницы в результате web search; прямой HTTP недоступен (TLS), web open — redirect loop. Сохранён аутентичный ответ инструмента. Независимый HTTP: 000. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/web-ruc-good.json",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature"
+          ]
+        },
+        {
+          "url": "https://www.culture.ru/materials/253109/recepty-postnykh-blyud",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/culture-lent.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-pelmeni",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/俄餐的10种最佳饮食搭配/",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-pairings.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature"
+          ]
+        },
+        {
+          "url": "https://koncol.ru/files/e_book_10.pdf",
+          "access": "Скачан полный PDF с сайта Константиновского колледжа; выбранная страница отрендерена pdftoppm и прочитана через tesseract rus. PNG и OCR сохранены рядом. Номер PDF-страницы 332, печатная страница 331. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/anf-p332.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-oladyi",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://rus.ruc.edu.cn/zjels/whfq/esms/e637656035c24d02aeb7a267be1ef698.htm",
+          "access": "Индексированное содержимое страницы в результате web search; прямой HTTP недоступен (TLS), web open — redirect loop. Сохранён аутентичный ответ инструмента. Независимый HTTP: 000. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/web-ruc-good.json",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country"
+          ]
+        },
+        {
+          "url": "https://koncol.ru/files/e_book_10.pdf",
+          "access": "Скачан полный PDF с сайта Константиновского колледжа; выбранная страница отрендерена pdftoppm и прочитана через tesseract rus. PNG и OCR сохранены рядом. Номер PDF-страницы 331, печатная страница 330. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/anf-p331.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-varenyky",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://rus.ruc.edu.cn/zjels/whfq/esms/e637656035c24d02aeb7a267be1ef698.htm",
+          "access": "Индексированное содержимое страницы в результате web search; прямой HTTP недоступен (TLS), web open — redirect loop. Сохранён аутентичный ответ инструмента. Независимый HTTP: 000. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/web-ruc-good.json",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country"
+          ]
+        },
+        {
+          "url": "https://koncol.ru/files/e_book_10.pdf",
+          "access": "Скачан полный PDF с сайта Константиновского колледжа; выбранная страница отрендерена pdftoppm и прочитана через tesseract rus. PNG и OCR сохранены рядом. Номер PDF-страницы 258, печатная страница 257. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/anf-p258.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://www.culture.ru/materials/254771/kukhni-rossii-tradicionnye-blyuda-i-ikh-istoriya",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/culture-cuisines.txt",
+          "quoteFound": true,
+          "support": [
+            "country",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-buckwheat-mushrooms",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/俄餐10大健康美食/",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-foods.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method"
+          ]
+        },
+        {
+          "url": "https://koncol.ru/files/e_book_10.pdf",
+          "access": "Скачан полный PDF с сайта Константиновского колледжа; выбранная страница отрендерена pdftoppm и прочитана через tesseract rus. PNG и OCR сохранены рядом. Номер PDF-страницы 163, печатная страница 162. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/anf-p163.txt Дополнительно прочитан anf-p162.txt (печатная с. 161) для feature.",
+          "quoteFound": true,
+          "support": [
+            "method",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-kolomna-kalach",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/莫斯科郊外7大品牌美食/",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-brands.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country"
+          ]
+        },
+        {
+          "url": "https://welcome.mosreg.ru/museums/vypecka-svoimi-rukami",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/kalach-museum.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://welcome.mosreg.ru/stories/autenticnye-kolomenskie-lakomstva",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/kolomna.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-zur-belish",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/俄罗斯各地的10道新年美食/",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-newyear.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://1997-2011.tatarstan.ru/index.html%40node_id%3D977.html",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/tatar.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-echpochmak",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/俄罗斯各地的10道新年美食/",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-newyear.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature"
+          ]
+        },
+        {
+          "url": "https://1997-2011.tatarstan.ru/index.html%40node_id%3D977.html",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/tatar.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-buuzy",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/俄罗斯各地的10道新年美食/",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-newyear.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "description"
+          ]
+        },
+        {
+          "url": "https://baikaltravel.ru/journal/381-journal/472-food",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/buuzy.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://baikaltravel.ru/journal/381-journal/462-top9",
+          "access": "HTTP HTML, полный текст страницы сохранён Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/buuzy-top.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": [
+        "description"
+      ]
+    },
+    {
+      "row": "cu-cn-wandouhuang",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.beijing.gov.cn/renwen/sy/whkb/201804/t20180404_1863382.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-4.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.visitbeijing.com.cn/article/47QmQvvNqpf",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-7.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-lvdagun",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://s.visitbeijing.com.cn/index.php/food/94",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-8.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.beijing.gov.cn/renwen/sy/whkb/201804/t20180404_1863382.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-4.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-tangyuan",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.beijing.gov.cn/renwen/zt/wmdjr/yxj/202402/t20240226_3569961.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-9.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://zyj.beijing.gov.cn/sy/whkp/202302/t20230206_2912691.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-12.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description"
+          ]
+        },
+        {
+          "url": "https://wjw.fujian.gov.cn/ztzl/jkjy/jksh/202502/t20250213_6714317.htm",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-10.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "method",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-yuanxiao",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.beijing.gov.cn/renwen/zt/wmdjr/yxj/202402/t20240226_3569961.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-9.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://zyj.beijing.gov.cn/sy/whkp/202302/t20230206_2912691.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-12.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description"
+          ]
+        },
+        {
+          "url": "https://wjw.fujian.gov.cn/ztzl/jkjy/jksh/202502/t20250213_6714317.htm",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-10.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "method",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-aiwowo",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.visitbeijing.com.cn/article/4JQvwfal33G",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-46.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.visitbeijing.com.cn/article/47QmPkDM2uk",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-47.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "description",
+          "problem": "В обоих прикреплённых источниках, включая независимые полные HTTP-копии, нет мусульманской атрибуции именно 艾窝窝. Это не опровержение традиции, а отсутствие опоры для этой строки.",
+          "correction": "Пекинская сладость. Здесь вариант из пропаренного клейкого риса с орехами и семенами; состав начинок меняется.",
+          "sourceURL": "https://www.visitbeijing.com.cn/article/4JQvwfal33G",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "description"
+      ]
+    },
+    {
+      "row": "cu-cn-tanghulu",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://nmj.xlgl.gov.cn/nmj/nmyw/syjs/44cc95d6e79c46aaaae5ed72a3e77c1e/index.html",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-41.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://public.zhengzhou.gov.cn/09EBH/212886.jhtml",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-42.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-babaofan",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.shqp.gov.cn/shqp/qpyw/20220124/908805.html",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-33.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://scjgj.xinjiang.gov.cn/xjaic/tzgg/202501/52a0c27e609a4211972e32ef596d1933.shtml",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-31.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "ingredients",
+          "problem": "枣子/红枣 — унаби (китайский финик), а не плод финиковой пальмы. Перевод «финики» без уточнения вводит в заблуждение.",
+          "correction": {
+            "zh": "糯米、豆沙、猪油、白糖、枣子、葡萄干",
+            "ru": [
+              "Клейкий рис, бобовая паста, свиной жир, сахар, унаби и изюм"
+            ],
+            "gloss": "Клейкий рис, бобовая паста, свиной жир, сахар, унаби и изюм"
+          },
+          "sourceURL": "https://www.shqp.gov.cn/shqp/qpyw/20220124/908805.html",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "ingredients"
+      ]
+    },
+    {
+      "row": "cu-cn-xingrendoufu",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.shhk.gov.cn/xwzx/002008/002008040/20230904/379361d2-bd18-41e0-aa98-58c30a5ba36d.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-34.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://szyyj.gd.gov.cn/zyyfw/ysbj/content/post_3255394.html",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-45.txt. Независимый HTTP-кэш: status=000, exit=52",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-shuangpinai",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/d406439d2f2b40d4b87319f20037061d",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-32.txt. Независимый HTTP-кэш: status=000, exit=28",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://zhuanti.mct.gov.cn/fymstslvxlzs/xl_detail/9694.html",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-44.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "region"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "description",
+          "problem": "Рецепт 民信 подтверждён полностью: буйволиное молоко, яйца, сахар, возвращение жидкости под плёнку и пропаривание. Но фраза о белках в других рецептах не раскрыта в прикреплённом втором источнике.",
+          "correction": "Взят вариант «Миньсинь» из Шуньдэ с буйволиным молоком, яйцами и сахаром. Состав и приёмы этого варианта не объявляются универсальными.",
+          "sourceURL": "https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/d406439d2f2b40d4b87319f20037061d",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "description"
+      ]
+    },
+    {
+      "row": "cu-cn-jiangzhuangnai",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.pjq.gov.cn/gzjg/zcbm/pjqwhgdlytyj/gzdt/content/post_2918369.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-11.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.gzwxb.gov.cn/context/contextId/200717",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-2.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-longxutang",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.gcs.gov.mo/news/detail/zh-hans/M23CXQltQC",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-43.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.gov.mo/zh-hans/news/707621/",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-40.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "method",
+            "description",
+            "region"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "feature",
+          "problem": "蚕蛹 — куколка шелкопряда; «кокон» соответствует 茧. Китайская характеристика подтверждена.",
+          "correction": {
+            "zh": "色泽雪白，形似蚕蛹",
+            "ru": [
+              "Белоснежная сладость, похожая на куколку шелкопряда"
+            ],
+            "gloss": "Белоснежная сладость, похожая на куколку шелкопряда"
+          },
+          "sourceURL": "https://www.gcs.gov.mo/news/detail/zh-hans/M23CXQltQC",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "feature"
+      ]
+    },
+    {
+      "row": "cu-cn-saqima",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.pjq.gov.cn/jmpjqwgj/gkmlpt/content/3/3183/post_3183238.html",
+          "access": "Независимо прочитана сохранённая веб-выгрузка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-38.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D75D53D3A7E05397BE0A0AB82A",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-37.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-cn-taosu",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "fix",
+      "finalVerdict": "corrected",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.xlgl.gov.cn/eportal/ui?articleKey=36cd40495f4f42b3867d3f18259af400&columnId=6e17a1ed3b684162abd0322628d20e83&pageId=c449e8dfef194a729e341df57d903d59",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-36.txt. Независимый HTTP-кэш: status=200, exit=0",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://www.xiahe.gov.cn/info/3252/41279.htm",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-48.txt. Независимый HTTP-кэш: status=000, exit=60",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "feature"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "column": "method",
+          "problem": "В конкретном овсяном варианте существенная предварительная операция — пропаривание овсяной и части пшеничной муки. Нынешнее описание подразумевает простое смешивание сырой муки.",
+          "correction": {
+            "zh": "蒸熟燕麦粉和部分小麦粉，混合制饼后烘烤",
+            "ru": [
+              "Пропарить овсяную и часть пшеничной муки, смешать тесто, сформовать печенье и испечь"
+            ],
+            "gloss": "Пропарить овсяную и часть пшеничной муки, смешать тесто, сформовать печенье и испечь"
+          },
+          "sourceURL": "https://www.xlgl.gov.cn/eportal/ui?articleKey=36cd40495f4f42b3867d3f18259af400&columnId=6e17a1ed3b684162abd0322628d20e83&pageId=c449e8dfef194a729e341df57d903d59",
+          "resolution": "applied; итоговая ячейка находится в cuisine.json"
+        }
+      ],
+      "editedColumns": [
+        "method"
+      ]
+    },
+    {
+      "row": "cu-cn-guangshiyuebing",
+      "reviewBlock": "review-staples-sweets.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "region",
+        "description",
+        "sources",
+        "ru",
+        "gloss"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/d7d04cc2803b4e00a59f765446d93624",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-35.txt. Независимый HTTP-кэш: status=000, exit=35",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description",
+            "region"
+          ]
+        },
+        {
+          "url": "https://www.qb.gd.gov.cn/jrqx/content/post_1338980.html",
+          "access": "Независимо прочитана сохранённая содержательная индексированная выдержка; /tmp/dossier-cuisine-research/cn-staples-sweets-cache/final-39.txt. Независимый HTTP-кэш: status=000, exit=60",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "region"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-tvorog-casserole",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/俄餐10大健康美食/",
+          "access": "Сохранённый полный текст ранее полученной HTTP HTML-страницы; прочитан в текущем проходе. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-foods.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country"
+          ]
+        },
+        {
+          "url": "https://koncol.ru/files/e_book_10.pdf",
+          "access": "Сохранённый полный PDF с сайта Константиновского колледжа; PDF-страница 260 (печатная 259) ранее отрендерена pdftoppm и распознана tesseract rus. OCR прочитан в текущем проходе; PNG и OCR сохранены рядом. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/anf-p260.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-baked-apples",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/俄餐10大健康美食/",
+          "access": "Сохранённый полный текст ранее полученной HTTP HTML-страницы; прочитан в текущем проходе. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-foods.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description"
+          ]
+        },
+        {
+          "url": "https://www.culture.ru/materials/254771/kukhni-rossii-tradicionnye-blyuda-i-ikh-istoriya",
+          "access": "Сохранённый полный текст ранее полученной HTTP HTML-страницы; прочитан в текущем проходе. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/culture-cuisines.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-kolomna-pastila",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/莫斯科郊外7大品牌美食/",
+          "access": "Сохранённый полный текст ранее полученной HTTP HTML-страницы; прочитан в текущем проходе. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-brands.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country"
+          ]
+        },
+        {
+          "url": "https://www.culture.ru/materials/94646/zhenskikh-ruk-delo-chem-zhili-mastericy-do-borby-za-svoi-prava",
+          "access": "Сохранённый полный текст ранее полученной HTTP HTML-страницы; прочитан в текущем проходе. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/pastry.txt",
+          "quoteFound": true,
+          "support": [
+            "method",
+            "description"
+          ]
+        },
+        {
+          "url": "https://welcome.mosreg.ru/stories/autenticnye-kolomenskie-lakomstva",
+          "access": "Сохранённый полный текст ранее полученной HTTP HTML-страницы; прочитан в текущем проходе. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/kolomna.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-dmitrov-pryanik",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/莫斯科郊外7大品牌美食/",
+          "access": "Сохранённый полный текст ранее полученной HTTP HTML-страницы; прочитан в текущем проходе. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-brands.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://www.culture.ru/s/vopros/pryaniki/",
+          "access": "Сохранённый полный текст ранее полученной HTTP HTML-страницы; прочитан в текущем проходе. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/pryaniki.txt",
+          "quoteFound": true,
+          "support": [
+            "method",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-zaraysk-kovrizhka",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/莫斯科郊外7大品牌美食/",
+          "access": "Сохранённый полный текст ранее полученной HTTP HTML-страницы; прочитан в текущем проходе. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-brands.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "method",
+            "description"
+          ]
+        },
+        {
+          "url": "https://welcome.mosreg.ru/ideas/zarajskaa-kovrizka",
+          "access": "Сохранённый полный текст ранее полученной HTTP HTML-страницы; прочитан в текущем проходе. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/kovrizhka.txt",
+          "quoteFound": true,
+          "support": [
+            "method",
+            "feature",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    },
+    {
+      "row": "cu-ru-gubadiya",
+      "reviewBlock": "review-russia.json",
+      "initialVerdict": "ok",
+      "finalVerdict": "ok",
+      "checkedColumns": [
+        "name",
+        "country",
+        "ingredients",
+        "method",
+        "feature",
+        "description"
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://russianculture.cn/ru/zh/俄罗斯各地的10道新年美食/",
+          "access": "Сохранённый полный текст ранее полученной HTTP HTML-страницы; прочитан в текущем проходе. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/rkc-newyear.txt",
+          "quoteFound": true,
+          "support": [
+            "name",
+            "country",
+            "ingredients",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://mincult.tatarstan.ru/index.htm/news/846670.htm",
+          "access": "Сохранённый полный текст ранее полученной HTTP HTML-страницы; прочитан в текущем проходе. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/gubadiya-mincult.txt",
+          "quoteFound": true,
+          "support": [
+            "ingredients",
+            "feature",
+            "description"
+          ]
+        },
+        {
+          "url": "https://1997-2011.tatarstan.ru/index.html%40node_id%3D977.html",
+          "access": "Сохранённый полный текст ранее полученной HTTP HTML-страницы; прочитан в текущем проходе. Независимый HTTP: 200. Прочитан сохранённый текст: /tmp/dossier-cuisine-research/ru-cache/tatar.txt",
+          "quoteFound": true,
+          "support": [
+            "method",
+            "description"
+          ]
+        }
+      ],
+      "findings": [],
+      "editedColumns": []
+    }
+  ],
+  "overview": {
+    "reviewedRows": 90,
+    "status": "findings resolved; no remaining blockers",
+    "findings": [
+      {
+        "row": "cu-ru-shchi",
+        "column": "description",
+        "originalFinding": "После перехода имени на 白菜汤 осталось старое предложение о 蔬菜汤 и категорическое утверждение об отсутствии общего значения. Оно противоречило новой оговорке об описательном китайском переводе. Отдельный RU-сверщик также нашёл неверную атрибуцию исторического рецепта Батюшкову.",
+        "resolution": "Исправлено; читаемые таблицы и штатный отчёт заново получены из итогового JSON."
+      },
+      {
+        "row": "cu-ru-buuzy",
+        "column": "ingredients; description",
+        "originalFinding": "На последнем прочитанном снимке в таблице ещё стоит смесь говядины и свинины. Полный по числу строк review-russia.json отмечает, что два источника не подтверждают именно эту смесь совместно. Это уже известное замечание RU-сверщика, а не новая независимая проверка первоисточников этим обзором.",
+        "resolution": "Замечание снято российским сверщиком после чтения третьего источника, прямо подтверждающего говядину и свинину. Состав сохранён; уточнена атрибуция выбранного варианта в description."
+      },
+      {
+        "row": "cu-ru-shchi",
+        "column": "data/review/dossier-cuisine-tables.md",
+        "originalFinding": "Читаемый отчёт отставал от только что исправленного description щей; все 90 id, китайские названия и остальные проверенные китайские ячейки на момент сверки присутствовали. Отчёт нужно обновить и после правки бууз.",
+        "resolution": "Исправлено; читаемые таблицы и штатный отчёт заново получены из итогового JSON."
+      }
+    ]
+  },
+  "limitations": [
+    "Проверка относится к конкретным документированным рецептурам, а не к единственно правильному составу блюда. Страна означает учебный контекст кухни, а не исключительное происхождение.",
+    "Результаты HTTP и содержательная сверка различаются. Ошибка загрузки не засчитывается как чтение; при ней проверяющий читал аутентичное сохранённое веб- или индексированное извлечение. Некоторые извлечения частичные: вывод ограничен присутствующими в них фактами.",
+    "Русский учебник — скан: выбранные страницы прочитаны через OCR, изображения страниц сохранены в рабочем кэше. Отсутствие цитаты в пустом PDF-текстовом слое не скрыто за HTTP 200.",
+    "Official у государственной перепечатки и academic у публикации учебного учреждения обозначают источник публикации; это не утверждение о независимой академической экспертизе каждого рецепта.",
+    "白菜汤 (щи), 杂菜汤 (солянка), 汉堡排 (котлета) — аттестованные контекстные переводы. Без российского контекста названия неоднозначны. Ограничения сохранены в описаниях.",
+    "Таблицы не являются готовыми пулами вопросов. Ингредиенты и технология нередко раскрыты названием; сходные составы 汤圆/元宵 и 无锡小笼包/生煎馒头, вкусы, подача со сметаной и методы не дают однозначного выбора сами по себе.",
+    "Минимум четыре сопоставимых блюда не обеспечен для каждой узкой подгруппы: например, три российских салата, две китайские молочные сладости, отдельные морепродукты. Такие подгруппы нельзя превращать в выбор названия без дособора.",
+    "Связи с праздничной едой приведены в dossier-cuisine-tables.md. Совпадение блюда или семейства не позволяет поставить ref на праздник: это разные сущности. До создания вопросов потребуется проверка взаимных подсказок."
+  ],
+  "checks": {
+    "dossierValidator": "passed",
+    "markdownWidths": "passed",
+    "protectedBankAndDossiers": "unchanged",
+    "python": "366 passed",
+    "node": "103 passed, 0 skipped, Chrome UI included",
+    "questions": 0,
+    "siteOrBankBuild": false
+  }
+}
