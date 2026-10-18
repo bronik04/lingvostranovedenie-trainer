@@ -163,5 +163,55 @@ q(36, RU, F('per-ru-zhukov', 'born', where='俄罗斯'),
   'В Великую Отечественную войну он командовал фронтами. '
   'Звание Маршала Советского Союза он получил 18 января 1943 года — первым во время войны.',
   RU_CITIES)
+
+# --- второй круг: правки check-1 (решения — agree-figures.json) ---
+PRE_PRC = ["per-linzexu", "per-weiyuan", "per-hongxiuquan", "per-zengguofan", "per-lihongzhang", "per-zuozongtang",
+           "per-zhangzhidong", "per-kangyouwei", "per-liangqichao", "per-tansitong", "per-sunzhongshan", "per-yuanshikai",
+           "per-jiangjieshi", "per-chenduxiu", "per-lidazhao"]
+RU_POLITICIANS = ["per-ru-lenin", "per-ru-stalin", "per-ru-khrushchev", "per-ru-gorbachev", "per-ru-yeltsin", "per-ru-stolypin"]
+by = {x['id']: x for x in qs}
+def fix(n, **kw):
+    x = by[f'modern-history-q{n:02d}']
+    for k, v in kw.items():
+        x[k] = v
+for n in (1, 2, 3, 7, 25, 28):
+    fix(n, exclude=PRE_PRC)
+fix(8, exclude=["per-ru-zhukov", "per-ru-stalin", "per-ru-khrushchev", "per-ru-lenin", "per-ru-gorbachev", "per-ru-yeltsin", "per-ru-stolypin"])
+fix(9, exclude=RU_POLITICIANS)
+fix(10, questionRu='Какой труд был составлен под руководством Линь Цзэсюя?',
+    explanation=by['modern-history-q10']['explanation'].replace('двух миллионов цзиней.', 'двух миллионов цзиней опиума.'))
+fix(12, questionRu='Кто создал и возглавил Сянскую армию?',
+    exclude=["per-jiangjieshi", "per-chenduxiu", "per-lidazhao", "per-maozedong", "per-zhouenlai", "per-zhude",
+             "per-dengxiaoping", "per-jiangzemin", "per-hujintao", "per-xijinping", "per-likeqiang", "per-wenjiabao"])
+fix(14, questionRu='Какой пост занимал Цзо Цзунтан в 1875 году?',
+    fact=opts('per-zuozongtang', 'post', ['per-zhangzhidong', 'per-lihongzhang', 'per-zengguofan']),
+    explanation='В 1875 году Цзо Цзунтан (左宗棠, 1812–1885) был наместником Шэньси и Ганьсу (陕甘总督). '
+                'В том же году его назначили ещё и императорским комиссаром по военным делам в Синьцзяне, и он возглавил поход в Синьцзян. '
+                'Цзо Цзунтан родом из Сянъиня провинции Хунань; он также основал Фучжоуское судостроительное управление.')
+fix(17, questionRu='Кто написал статью «少年中国说» («О юном Китае»)?')
+fix(22, questionRu='На какой пост избрали Чэнь Дусю после V съезда КПК?')
+fix(23, exclude=["per-linzexu", "per-weiyuan", "per-hongxiuquan", "per-zengguofan", "per-lihongzhang", "per-zuozongtang",
+                 "per-zhangzhidong", "per-kangyouwei", "per-tansitong"])
+fix(33, questionRu='На какой пост Борис Ельцин был переизбран в 1996 году?')
+fix(34, questionRu='Кто, возглавляя Совет министров, в ноябре 1906 года начал аграрную реформу, разрешившую крестьянам выходить из общины?',
+    fact=F('per-ru-stolypin', 'name', where='俄罗斯'),
+    exclude=["per-ru-kutuzov", "per-ru-suvorov", "per-ru-zhukov", "per-ru-konev", "per-ru-nevsky", "per-ru-donskoy"])
+fix(35, questionRu='Какой пост в середине XIX века занимал Николай Николаевич Муравьёв, родившийся в 1809 году?',
+    explanation='В 1847–1861 годах Николай Муравьёв (穆拉维约夫) был генерал-губернатором Восточной Сибири (东西伯利亚总督). '
+                'На этот пост его назначил император в сентябре 1847 года. '
+                'В 1858 году Муравьёв подписал с российской стороны договор с Китаем и тогда же получил титул графа Амурского.')
+# добор российских
+q(37, RU, F('per-ru-khrushchev', 'born', where='俄罗斯'),
+  'Где родился Никита Хрущёв?',
+  'Никита Хрущёв (赫鲁晓夫) родился в 1894 году в селе Калиновка Курской губернии (库尔斯克省). '
+  'Ныне эти земли входят в Курскую область. '
+  'Время реформ Хрущёва называют «оттепелью».',
+  RU_CITIES)
+q(38, RU, F('per-ru-yeltsin', 'born', where='俄罗斯'),
+  'Где родился Борис Ельцин?',
+  'Борис Ельцин (叶利钦, 1931–2007) родился в селе Бутка. '
+  'Ныне это село относится к Свердловской области (斯维尔德洛夫斯克州). '
+  'В конце 1999 года Ельцин досрочно ушёл в отставку.',
+  RU_CITIES)
 out.write_text(json.dumps(qs, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print(len(qs))
