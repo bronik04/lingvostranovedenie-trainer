@@ -47,7 +47,8 @@ for record in bank:
         if option['id'] in edit.get('options', {}):
             option['zh'] = edit['options'][option['id']]
 questions = []
-names = ['modern-history-questions.json'] if (DRAFTS / 'modern-history-questions.json').exists() else ['modern-history-china.json', 'modern-history-russia.json']
+names = ['modern-history-questions.json'] if (DRAFTS / 'modern-history-questions.json').exists() else sorted(
+    p.name for p in DRAFTS.glob('modern-history-*.json') if 'editorial' not in p.name)
 for name in names:
     if (DRAFTS / name).exists():
         questions += json.loads((DRAFTS / name).read_text('utf-8'))
