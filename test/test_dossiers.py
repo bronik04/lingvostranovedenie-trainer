@@ -935,7 +935,7 @@ class DossierInBankTest(unittest.TestCase):
         names = {table.name for table, _ in self.pairs}
         self.assertEqual(names, {'money.json', 'myths.json', 'space.json', 'holidays.json', 'dynasties.json',
                                  'ethnos.json', 'provinces.json', 'landmarks.json', 'literature.json',
-                                 'modern-history.json'})
+                                 'modern-history.json', 'nature.json'})
 
     def test_olympiad_links_point_to_bank_questions(self):
         # олимпиадный вопрос мог быть влит склейкой в другой — его id тогда в mergedIds
