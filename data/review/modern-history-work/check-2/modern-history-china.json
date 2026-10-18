@@ -1,0 +1,882 @@
+[
+  {
+    "id": "modern-history-q01",
+    "embeds": "2016-17-mun-6",
+    "status": "draft",
+    "fact": {
+      "table": "figures",
+      "row": "per-dengxiaoping",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "exclude": [
+      "per-linzexu",
+      "per-weiyuan",
+      "per-hongxiuquan",
+      "per-zengguofan",
+      "per-lihongzhang",
+      "per-zuozongtang",
+      "per-zhangzhidong",
+      "per-kangyouwei",
+      "per-liangqichao",
+      "per-tansitong",
+      "per-sunzhongshan",
+      "per-yuanshikai",
+      "per-jiangjieshi",
+      "per-chenduxiu",
+      "per-lidazhao"
+    ]
+  },
+  {
+    "id": "modern-history-q02",
+    "embeds": "2015-16-zak-2",
+    "status": "draft",
+    "fact": {
+      "table": "figures",
+      "row": "per-xijinping",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "exclude": [
+      "per-linzexu",
+      "per-weiyuan",
+      "per-hongxiuquan",
+      "per-zengguofan",
+      "per-lihongzhang",
+      "per-zuozongtang",
+      "per-zhangzhidong",
+      "per-kangyouwei",
+      "per-liangqichao",
+      "per-tansitong",
+      "per-sunzhongshan",
+      "per-yuanshikai",
+      "per-jiangjieshi",
+      "per-chenduxiu",
+      "per-lidazhao"
+    ]
+  },
+  {
+    "id": "modern-history-q03",
+    "embeds": "2017-18-zak-6",
+    "status": "draft",
+    "fact": {
+      "table": "figures",
+      "row": "per-likeqiang",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "exclude": [
+      "per-linzexu",
+      "per-weiyuan",
+      "per-hongxiuquan",
+      "per-zengguofan",
+      "per-lihongzhang",
+      "per-zuozongtang",
+      "per-zhangzhidong",
+      "per-kangyouwei",
+      "per-liangqichao",
+      "per-tansitong",
+      "per-sunzhongshan",
+      "per-yuanshikai",
+      "per-jiangjieshi",
+      "per-chenduxiu",
+      "per-lidazhao"
+    ]
+  },
+  {
+    "id": "modern-history-q04",
+    "embeds": "2017-18-zak-1",
+    "status": "draft",
+    "fact": {
+      "table": "figures",
+      "row": "per-sunzhongshan",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    }
+  },
+  {
+    "id": "modern-history-q05",
+    "embeds": "2019-20-mun-q61e036",
+    "status": "draft",
+    "fact": {
+      "table": "figures",
+      "row": "per-sunzhongshan",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    }
+  },
+  {
+    "id": "modern-history-q06",
+    "embeds": "2021-22-mun-q6aaabb",
+    "status": "draft",
+    "fact": {
+      "table": "figures",
+      "row": "per-sunzhongshan",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    }
+  },
+  {
+    "id": "modern-history-q07",
+    "embeds": "2021-22-mun-q6514a2",
+    "status": "draft",
+    "fact": {
+      "table": "figures",
+      "row": "per-zhouenlai",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "exclude": [
+      "per-linzexu",
+      "per-weiyuan",
+      "per-hongxiuquan",
+      "per-zengguofan",
+      "per-lihongzhang",
+      "per-zuozongtang",
+      "per-zhangzhidong",
+      "per-kangyouwei",
+      "per-liangqichao",
+      "per-tansitong",
+      "per-sunzhongshan",
+      "per-yuanshikai",
+      "per-jiangjieshi",
+      "per-chenduxiu",
+      "per-lidazhao"
+    ]
+  },
+  {
+    "id": "modern-history-q08",
+    "embeds": "2019-20-shk-q988836",
+    "status": "draft",
+    "fact": {
+      "table": "figures",
+      "row": "per-ru-konev",
+      "ask": "name",
+      "where": {
+        "country": "俄罗斯"
+      }
+    },
+    "exclude": [
+      "per-ru-zhukov",
+      "per-ru-stalin",
+      "per-ru-khrushchev",
+      "per-ru-lenin",
+      "per-ru-gorbachev",
+      "per-ru-yeltsin",
+      "per-ru-stolypin"
+    ]
+  },
+  {
+    "id": "modern-history-q09",
+    "embeds": "2024-25-reg-3",
+    "status": "draft",
+    "fact": {
+      "table": "figures",
+      "row": "per-ru-kutuzov",
+      "ask": "name",
+      "where": {
+        "country": "俄罗斯"
+      }
+    },
+    "exclude": [
+      "per-ru-lenin",
+      "per-ru-stalin",
+      "per-ru-khrushchev",
+      "per-ru-gorbachev",
+      "per-ru-yeltsin",
+      "per-ru-stolypin"
+    ]
+  },
+  {
+    "id": "modern-history-q10",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-linzexu",
+      "ask": "work",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Какой труд был составлен под руководством Линь Цзэсюя?",
+    "explanation": "Под руководством Линь Цзэсюя (林则徐, 1785–1850) было составлено «Описание четырёх континентов» (四洲志). Чтобы лучше знать положение иностранцев, он нанял переводчиков, и из переведённых ими сведений составили эту книгу. Линь Цзэсюй прибыл в Гуанчжоу императорским комиссаром в 1839 году, чтобы запретить опиум, и уничтожил в Хумэне более двух миллионов цзиней опиума.",
+    "exclude": [
+      "per-weiyuan"
+    ]
+  },
+  {
+    "id": "modern-history-q11",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-weiyuan",
+      "ask": "idea",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Какую идею выдвинул мыслитель Вэй Юань после поражения Китая в опиумной войне?",
+    "explanation": "Вэй Юань (魏源, 1794–1857) выдвинул идею «учиться у варваров передовой технике, чтобы одолеть варваров» (师夷长技以制夷). Он изложил её в «Иллюстрированном описании морских государств», которое составил после поражения в опиумной войне. Вэй Юань — мыслитель и военный теоретик родом из Шаояна провинции Хунань."
+  },
+  {
+    "id": "modern-history-q12",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-zengguofan",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Кто создал и возглавил Сянскую армию?",
+    "explanation": "Сянскую армию создал и возглавил Цзэн Гофань (曾国藩, 1811–1872) — сановник поздней Цин. Он был родом из Сянсяна провинции Хунань. С 1860 года Цзэн Гофань был наместником Лянцзяна, а позднее — наместником Чжили.",
+    "exclude": [
+      "per-jiangjieshi",
+      "per-chenduxiu",
+      "per-lidazhao",
+      "per-maozedong",
+      "per-zhouenlai",
+      "per-zhude",
+      "per-dengxiaoping",
+      "per-jiangzemin",
+      "per-hujintao",
+      "per-xijinping",
+      "per-likeqiang",
+      "per-wenjiabao"
+    ]
+  },
+  {
+    "id": "modern-history-q13",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-lihongzhang",
+      "ask": "born",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Из какой провинции родом цинский сановник Ли Хунчжан, создатель Бэйянского флота?",
+    "explanation": "Ли Хунчжан (李鸿章, 1823–1901) родом из Хэфэя провинции Аньхой (安徽). Аньхой лежит в Восточном Китае, на Янцзы и Хуайхэ, а Хэфэй — её центр. Ли Хунчжан создал Хуайскую армию и Бэйянский флот, а с 1870 года был наместником Чжили и уполномоченным по Северным портам.",
+    "exclude": [
+      "per-chenduxiu",
+      "per-hujintao",
+      "per-likeqiang",
+      "per-wenjiabao"
+    ]
+  },
+  {
+    "id": "modern-history-q14",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "options": [
+        {
+          "row": "per-zuozongtang",
+          "column": "post"
+        },
+        {
+          "row": "per-zhangzhidong",
+          "column": "post"
+        },
+        {
+          "row": "per-lihongzhang",
+          "column": "post"
+        },
+        {
+          "row": "per-zengguofan",
+          "column": "post"
+        }
+      ],
+      "answer": {
+        "row": "per-zuozongtang",
+        "column": "post"
+      }
+    },
+    "questionRu": "Какой пост занимал Цзо Цзунтан в 1875 году?",
+    "explanation": "В 1875 году Цзо Цзунтан (左宗棠, 1812–1885) был наместником Шэньси и Ганьсу (陕甘总督). В том же году его назначили ещё и императорским комиссаром по военным делам в Синьцзяне, и он возглавил поход в Синьцзян. Цзо Цзунтан родом из Сянъиня провинции Хунань; он также основал Фучжоуское судостроительное управление."
+  },
+  {
+    "id": "modern-history-q15",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-zhangzhidong",
+      "ask": "work",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Какое сочинение выпустил Чжан Чжидун, изложив в нём принцип «китайское — основа, западное — для применения»?",
+    "explanation": "Сочинение «Призыв к учению» (劝学篇) Чжан Чжидун (张之洞, 1837–1909) выпустил в 1898 году. В нём он изложил принцип «китайское учение — основа, западное — для применения» (中体西用). Будучи наместником Хугуана, Чжан Чжидун построил в Ухане Ханьянский металлургический завод."
+  },
+  {
+    "id": "modern-history-q16",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-kangyouwei",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Кто автор сочинения «Книга о Великом единении»?",
+    "explanation": "Сочинение «Датун шу» (大同书, «Книга о Великом единении») написал Кан Ювэй (康有为, 1858–1927). Над этой книгой он работал с 1894 года. Кан Ювэй — мыслитель родом из уезда Наньхай провинции Гуандун, вождь сторонников реформ, вдохновлявший реформы 1898 года."
+  },
+  {
+    "id": "modern-history-q17",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-liangqichao",
+      "ask": "name",
+      "given": "work",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Кто написал статью «少年中国说» («О юном Китае»)?",
+    "explanation": "Статью «О юном Китае» (少年中国说) в 1900 году написал Лян Цичао (梁启超, 1873–1929). В ней он противопоставил юный Китай «дряхлой империи». Лян Цичао — мыслитель, писатель и учёный, уроженец Синьхуэя провинции Гуандун, один из вождей реформ 1898 года."
+  },
+  {
+    "id": "modern-history-q18",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-tansitong",
+      "ask": "work",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Какое сочинение написал реформатор Тань Сытун, казнённый после поражения реформ?",
+    "explanation": "«Жэнь сюэ» (仁学, «Учение о гуманности») — сочинение Тань Сытуна (谭嗣同, 1865–1898). Тань Сытун — реформатор и мыслитель родом из Люяна провинции Хунань. После поражения реформ, 28 сентября 1898 года, его казнили в Пекине вместе с пятью соратниками — «шестью мужами 1898 года»."
+  },
+  {
+    "id": "modern-history-q19",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-hongxiuquan",
+      "ask": "born",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Из какой провинции родом Хун Сюцюань?",
+    "explanation": "Хун Сюцюань (洪秀全, 1814–1864) — уроженец уезда Хуасянь провинции Гуандун (广东), из семьи хакка. В январе 1851 года он возглавил восстание в Цзиньтяне и провозгласил Тайпин Тяньго. Тогда же он принял титул Небесного вана.",
+    "exclude": [
+      "per-kangyouwei",
+      "per-liangqichao",
+      "per-sunzhongshan",
+      "per-wenjiabao"
+    ]
+  },
+  {
+    "id": "modern-history-q20",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-yuanshikai",
+      "ask": "born",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Из какой провинции родом Юань Шикай, лидер Бэйянской группировки?",
+    "explanation": "Юань Шикай (袁世凯, 1859–1916) родом из Сянчэна провинции Хэнань (河南). Хэнань лежит в центре Китая, в бассейне Хуанхэ; её центр — Чжэнчжоу. Юань Шикай возглавлял Бэйянскую группировку, был вторым временным президентом, а затем первым президентом Китайской Республики.",
+    "exclude": [
+      "per-wenjiabao"
+    ]
+  },
+  {
+    "id": "modern-history-q21",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-jiangjieshi",
+      "ask": "name",
+      "given": "work",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Под чьим именем вышла книга «中国之命运» («Судьба Китая»)?",
+    "explanation": "Книга «Судьба Китая» (中国之命运) вышла в 1943 году за подписью Чан Кайши (蒋介石, 1887–1975). Чан Кайши — политический деятель, уроженец уезда Фэнхуа провинции Чжэцзян. Он руководил Национальным правительством Китайской Республики."
+  },
+  {
+    "id": "modern-history-q22",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "options": [
+        {
+          "row": "per-chenduxiu",
+          "column": "post"
+        },
+        {
+          "row": "per-maozedong",
+          "column": "post"
+        },
+        {
+          "row": "per-zhouenlai",
+          "column": "post"
+        },
+        {
+          "row": "per-zhude",
+          "column": "post"
+        },
+        {
+          "row": "per-dengxiaoping",
+          "column": "post"
+        },
+        {
+          "row": "per-jiangzemin",
+          "column": "post"
+        }
+      ],
+      "answer": {
+        "row": "per-chenduxiu",
+        "column": "post"
+      }
+    },
+    "questionRu": "На какой пост избрали Чэнь Дусю после V съезда КПК?",
+    "explanation": "После V съезда КПК Чэнь Дусю (陈独秀, 1879–1942) был избран генеральным секретарём ЦК КПК (中共中央总书记). Он родился в Хуайнине провинции Аньхой. В 1915 году Чэнь Дусю основал в Шанхае журнал «Молодёжь» (позже — «Новая молодёжь») и опубликовал в нём «Обращение к молодёжи»."
+  },
+  {
+    "id": "modern-history-q23",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-lidazhao",
+      "ask": "name",
+      "given": "work",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Кто автор работы «我的马克思主义观» («Мой взгляд на марксизм»)?",
+    "explanation": "Работу «Мой взгляд на марксизм» (我的马克思主义观) написал Ли Дачжао (李大钊, 1889–1927) — один из основателей КПК. Он родился в уезде Лэтин провинции Хэбэй. Вернувшись в Китай в 1916 году, Ли Дачжао работал в Пекинском университете заведующим библиотекой и профессором экономики.",
+    "exclude": [
+      "per-linzexu",
+      "per-weiyuan",
+      "per-hongxiuquan",
+      "per-zengguofan",
+      "per-lihongzhang",
+      "per-zuozongtang",
+      "per-zhangzhidong",
+      "per-kangyouwei",
+      "per-tansitong"
+    ]
+  },
+  {
+    "id": "modern-history-q24",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-maozedong",
+      "ask": "idea",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Какой путь китайской революции проложил Мао Цзэдун?",
+    "explanation": "Мао Цзэдун (毛泽东, 1893–1976) проложил революционный путь «окружения городов деревней» (农村包围城市). Он родился в Шаошани (уезд Сянтань) провинции Хунань и стал руководителем КПК. Мао Цзэдун — также автор труда «О затяжной войне»."
+  },
+  {
+    "id": "modern-history-q25",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-zhude",
+      "ask": "name",
+      "given": "post",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Кто был главнокомандующим Народно-освободительной армии Китая (中国人民解放军总司令) в годы Освободительной войны и после образования КНР?",
+    "explanation": "Главнокомандующим НОАК (中国人民解放军总司令) в годы Освободительной войны и после образования КНР был Чжу Дэ (朱德, 1886–1976). Он родился в уезде Илун провинции Сычуань и был одним из создателей китайской армии. Чжу Дэ считается первым из десяти маршалов КНР.",
+    "exclude": [
+      "per-linzexu",
+      "per-weiyuan",
+      "per-hongxiuquan",
+      "per-zengguofan",
+      "per-lihongzhang",
+      "per-zuozongtang",
+      "per-zhangzhidong",
+      "per-kangyouwei",
+      "per-liangqichao",
+      "per-tansitong",
+      "per-sunzhongshan",
+      "per-yuanshikai",
+      "per-jiangjieshi",
+      "per-chenduxiu",
+      "per-lidazhao"
+    ]
+  },
+  {
+    "id": "modern-history-q26",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-jiangzemin",
+      "ask": "idea",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Главным создателем какой важной идеи называют Цзян Цзэминя?",
+    "explanation": "Главным создателем важной идеи «трёх представительств» (三个代表) называют Цзян Цзэминя (江泽民, 1926–2022). Он был родом из Янчжоу провинции Цзянсу. В 1993–2003 годах Цзян Цзэминь был председателем КНР."
+  },
+  {
+    "id": "modern-history-q27",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-hujintao",
+      "ask": "idea",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Какое понятие выдвинул Ху Цзиньтао в 2003 году?",
+    "explanation": "В 2003 году Ху Цзиньтао (胡锦涛) выдвинул понятие «научная концепция развития» (科学发展观). Ху Цзиньтао родом из Цзиси провинции Аньхой. В 2003–2013 годах он был председателем КНР."
+  },
+  {
+    "id": "modern-history-q28",
+    "status": "draft",
+    "topic": "История и государство",
+    "fact": {
+      "table": "figures",
+      "row": "per-dengxiaoping",
+      "ask": "name",
+      "given": "idea",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "questionRu": "Кто выдвинул концепцию «одна страна — две системы» (一国两制)?",
+    "explanation": "Концепцию «одна страна — две системы» (一国两制) выдвинул Дэн Сяопин (邓小平, 1904–1997). Это принцип воссоединения Китая. Дэн Сяопин родился в Гуаньани провинции Сычуань, а с 1981 года был председателем Центрального военного совета КПК.",
+    "exclude": [
+      "per-linzexu",
+      "per-weiyuan",
+      "per-hongxiuquan",
+      "per-zengguofan",
+      "per-lihongzhang",
+      "per-zuozongtang",
+      "per-zhangzhidong",
+      "per-kangyouwei",
+      "per-liangqichao",
+      "per-tansitong",
+      "per-sunzhongshan",
+      "per-yuanshikai",
+      "per-jiangjieshi",
+      "per-chenduxiu",
+      "per-lidazhao"
+    ]
+  },
+  {
+    "id": "modern-history-q29",
+    "status": "draft",
+    "topic": "Россия и межкультурный блок",
+    "fact": {
+      "table": "figures",
+      "options": [
+        {
+          "row": "per-ru-lenin",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-khrushchev",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-gorbachev",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-yeltsin",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-stolypin",
+          "column": "post"
+        }
+      ],
+      "answer": {
+        "row": "per-ru-lenin",
+        "column": "post"
+      }
+    },
+    "questionRu": "Какой пост занимал Владимир Ленин?",
+    "explanation": "Владимир Ленин (列宁, 1870–1924) возглавлял советское правительство как председатель Совета народных комиссаров (人民委员会主席). Он родился в Симбирске и стал основателем Советского государства. В 1917 году Ленин написал «Государство и революцию», а в 1921 году провёл переход к новой экономической политике."
+  },
+  {
+    "id": "modern-history-q30",
+    "status": "draft",
+    "topic": "Россия и межкультурный блок",
+    "fact": {
+      "table": "figures",
+      "row": "per-ru-stalin",
+      "ask": "born",
+      "where": {
+        "country": "俄罗斯"
+      }
+    },
+    "questionRu": "В каком городе родился Иосиф Сталин?",
+    "explanation": "Иосиф Сталин (斯大林, настоящая фамилия — Джугашвили) родился в городе Гори (哥里) в Грузии. В апреле 1922 года его избрали генеральным секретарём ЦК партии. В 1941 году Сталин возглавил и советское правительство.",
+    "exclude": [
+      "per-ru-khrushchev",
+      "per-ru-zhukov",
+      "per-ru-konev",
+      "per-ru-gorbachev",
+      "per-ru-yeltsin"
+    ]
+  },
+  {
+    "id": "modern-history-q31",
+    "status": "draft",
+    "topic": "Россия и межкультурный блок",
+    "fact": {
+      "table": "figures",
+      "options": [
+        {
+          "row": "per-ru-khrushchev",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-lenin",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-stalin",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-gorbachev",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-yeltsin",
+          "column": "post"
+        }
+      ],
+      "answer": {
+        "row": "per-ru-khrushchev",
+        "column": "post"
+      }
+    },
+    "questionRu": "Какой пост занял Никита Хрущёв в сентябре 1953 года?",
+    "explanation": "В сентябре 1953 года Никиту Хрущёва (赫鲁晓夫) избрали первым секретарём ЦК КПСС (苏共中央第一书记). Этот партийный пост ввели в 1953 году. Хрущёв ушёл с него в 1964 году; время его реформ называют «оттепелью»."
+  },
+  {
+    "id": "modern-history-q32",
+    "status": "draft",
+    "topic": "Россия и межкультурный блок",
+    "fact": {
+      "table": "figures",
+      "row": "per-ru-gorbachev",
+      "ask": "born",
+      "where": {
+        "country": "俄罗斯"
+      }
+    },
+    "questionRu": "Где родился Михаил Горбачёв?",
+    "explanation": "Михаил Горбачёв (戈尔巴乔夫, 1931–2022) родился в селе Привольное Ставропольского края (斯塔夫罗波尔边疆区). С 1985 года он был генеральным секретарём ЦК КПСС. В 1990–1991 годах Горбачёв был единственным президентом СССР и провозгласил курс «нового мышления».",
+    "exclude": [
+      "per-ru-lenin",
+      "per-ru-stalin",
+      "per-ru-donskoy",
+      "per-ru-alex1"
+    ]
+  },
+  {
+    "id": "modern-history-q33",
+    "status": "draft",
+    "topic": "Россия и межкультурный блок",
+    "fact": {
+      "table": "figures",
+      "options": [
+        {
+          "row": "per-ru-yeltsin",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-gorbachev",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-lenin",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-khrushchev",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-stolypin",
+          "column": "post"
+        }
+      ],
+      "answer": {
+        "row": "per-ru-yeltsin",
+        "column": "post"
+      }
+    },
+    "questionRu": "На какой пост Борис Ельцин был переизбран в 1996 году?",
+    "explanation": "Борис Ельцин (叶利钦, 1931–2007) в 1991 году был избран первым президентом Российской Федерации (俄罗斯联邦总统). В 1996 году его переизбрали на этот пост. В конце 1999 года Ельцин досрочно ушёл в отставку."
+  },
+  {
+    "id": "modern-history-q34",
+    "status": "draft",
+    "topic": "Россия и межкультурный блок",
+    "fact": {
+      "table": "figures",
+      "row": "per-ru-stolypin",
+      "ask": "name",
+      "where": {
+        "country": "俄罗斯"
+      }
+    },
+    "questionRu": "Кто, возглавляя Совет министров, в ноябре 1906 года начал аграрную реформу, разрешившую крестьянам выходить из общины?",
+    "explanation": "Аграрную реформу начал Пётр Столыпин (斯托雷平, 1862–1911), председатель Совета министров Российской империи с июля 1906 года. Указ 9 (22) ноября 1906 года дал крестьянам право выходить из общины и закреплять землю в собственность. По имени председателя правительства эту реформу называют столыпинской.",
+    "exclude": [
+      "per-ru-kutuzov",
+      "per-ru-suvorov",
+      "per-ru-zhukov",
+      "per-ru-konev",
+      "per-ru-nevsky",
+      "per-ru-donskoy"
+    ]
+  },
+  {
+    "id": "modern-history-q35",
+    "status": "draft",
+    "topic": "Россия и межкультурный блок",
+    "fact": {
+      "table": "figures",
+      "options": [
+        {
+          "row": "per-ru-muravyov",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-stolypin",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-kutuzov",
+          "column": "post"
+        },
+        {
+          "row": "per-ru-suvorov",
+          "column": "post"
+        }
+      ],
+      "answer": {
+        "row": "per-ru-muravyov",
+        "column": "post"
+      }
+    },
+    "questionRu": "Какой пост в середине XIX века занимал Николай Николаевич Муравьёв, родившийся в 1809 году?",
+    "explanation": "В 1847–1861 годах Николай Муравьёв (穆拉维约夫) был генерал-губернатором Восточной Сибири (东西伯利亚总督). На этот пост его назначил император в сентябре 1847 года. В 1858 году Муравьёв подписал с российской стороны договор с Китаем и тогда же получил титул графа Амурского."
+  },
+  {
+    "id": "modern-history-q36",
+    "status": "draft",
+    "topic": "Россия и межкультурный блок",
+    "fact": {
+      "table": "figures",
+      "row": "per-ru-zhukov",
+      "ask": "born",
+      "where": {
+        "country": "俄罗斯"
+      }
+    },
+    "questionRu": "Где родился маршал Георгий Жуков?",
+    "explanation": "Георгий Жуков (朱可夫) родился в 1896 году в деревне Стрелковка Калужской губернии (卡卢加省) в крестьянской семье. В Великую Отечественную войну он командовал фронтами. Звание Маршала Советского Союза он получил 18 января 1943 года — первым во время войны.",
+    "exclude": [
+      "per-ru-lenin",
+      "per-ru-stalin",
+      "per-ru-donskoy",
+      "per-ru-alex1"
+    ]
+  },
+  {
+    "id": "modern-history-q37",
+    "status": "draft",
+    "topic": "Россия и межкультурный блок",
+    "fact": {
+      "table": "figures",
+      "row": "per-ru-khrushchev",
+      "ask": "born",
+      "where": {
+        "country": "俄罗斯"
+      }
+    },
+    "questionRu": "Где родился Никита Хрущёв?",
+    "explanation": "Никита Хрущёв (赫鲁晓夫) родился в 1894 году в селе Калиновка Курской губернии (库尔斯克省). Ныне эти земли входят в Курскую область. Время реформ Хрущёва называют «оттепелью».",
+    "exclude": [
+      "per-ru-lenin",
+      "per-ru-stalin",
+      "per-ru-donskoy",
+      "per-ru-alex1"
+    ]
+  },
+  {
+    "id": "modern-history-q38",
+    "status": "draft",
+    "topic": "Россия и межкультурный блок",
+    "fact": {
+      "table": "figures",
+      "row": "per-ru-yeltsin",
+      "ask": "born",
+      "where": {
+        "country": "俄罗斯"
+      }
+    },
+    "questionRu": "Где родился Борис Ельцин?",
+    "explanation": "Борис Ельцин (叶利钦, 1931–2007) родился в селе Бутка. Ныне это село относится к Свердловской области (斯维尔德洛夫斯克州). В конце 1999 года Ельцин досрочно ушёл в отставку.",
+    "exclude": [
+      "per-ru-lenin",
+      "per-ru-stalin",
+      "per-ru-donskoy",
+      "per-ru-alex1"
+    ]
+  }
+]
