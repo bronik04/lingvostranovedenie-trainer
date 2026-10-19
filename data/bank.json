@@ -34213,6 +34213,2259 @@
   },
   {
     "answer": {
+      "optionId": "cin-cn-red-sorghum",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 红高粱",
+        "url": "https://www.1905.com/mdb/film/48527/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Жэньминь жибао (海外版): 红高粱地的朝圣",
+        "url": "https://paper.people.com.cn/rmrbhwb/html/2013-11/12/content_1323624.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Режиссёр «Красного гаоляна» (红高粱) — Чжан Имоу (张艺谋). Литературной основой стали произведения Мо Яня «Красный гаолян» и «Гаоляновое вино». В 1988 году картина получила главный приз Берлинского кинофестиваля — «Золотого медведя»."
+    },
+    "id": "cinema-q01",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-red-sorghum",
+        "zh": "张艺谋"
+      },
+      {
+        "gloss": "Чэнь Кайгэ — кинорежиссёр",
+        "id": "cin-cn-concubine",
+        "zh": "陈凯歌"
+      },
+      {
+        "gloss": "Ли Ань — кинорежиссёр",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "李安"
+      },
+      {
+        "gloss": "Вонг Карвай — кинорежиссёр",
+        "id": "cin-cn-mood-for-love",
+        "zh": "王家卫"
+      },
+      {
+        "gloss": "Го Фань — кинорежиссёр",
+        "id": "cin-cn-wandering-earth",
+        "zh": "郭帆"
+      },
+      {
+        "gloss": "Цзя Чжанкэ — кинорежиссёр",
+        "id": "cin-cn-still-life",
+        "zh": "贾樟柯"
+      },
+      {
+        "gloss": "Чжан Шичуань — кинорежиссёр",
+        "id": "cin-cn-red-peony",
+        "zh": "张石川"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Кто поставил фильм «Красный гаолян», получивший «Золотого медведя» Берлинского кинофестиваля в 1988 году?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-concubine",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 霸王别姬",
+        "url": "https://www.1905.com/mdb/film/57388/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Каннский фестиваль: BAWANG BIEJI",
+        "url": "https://www.festival-cannes.com/en/f/bawang-bieji/"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Прощай, моя наложница» (霸王别姬), фильм Чэнь Кайгэ. История двух актёров пекинской оперы разворачивается на фоне потрясений китайской истории XX века. В 1993 году картина разделила главный приз Каннского кинофестиваля с другим фильмом."
+    },
+    "id": "cinema-q02",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-concubine",
+        "zh": "霸王别姬"
+      },
+      {
+        "gloss": "«Красный гаолян» — фильм Чжан Имоу по произведениям Мо Яня",
+        "id": "cin-cn-red-sorghum",
+        "zh": "红高粱"
+      },
+      {
+        "gloss": "«Крадущийся тигр, затаившийся дракон» — фильм о мастерах боевых искусств",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "卧虎藏龙"
+      },
+      {
+        "gloss": "«Любовное настроение» — фильм о сближении двух соседей в Гонконге",
+        "id": "cin-cn-mood-for-love",
+        "zh": "花样年华"
+      },
+      {
+        "gloss": "«Блуждающая Земля» — фильм о спасении людей перемещением самой планеты",
+        "id": "cin-cn-wandering-earth",
+        "zh": "流浪地球"
+      },
+      {
+        "gloss": "«Натюрморт» — фильм о поисках близких на фоне переселения у Трёх ущелий",
+        "id": "cin-cn-still-life",
+        "zh": "三峡好人"
+      },
+      {
+        "gloss": "«Певица Красный Пион» — один из первых опытов звукового кино Китая",
+        "id": "cin-cn-red-peony",
+        "zh": "歌女红牡丹"
+      },
+      {
+        "gloss": "«Жить» — фильм о судьбе Фугуя и его семьи в Китае XX века",
+        "id": "cin-cn-to-live",
+        "zh": "活着"
+      },
+      {
+        "gloss": "«Герой» — фильм о встрече воина Безымянного с царём Цинь",
+        "id": "cin-cn-hero",
+        "zh": "英雄"
+      },
+      {
+        "gloss": "«Дом летающих кинжалов» — история любви и обмана на фоне поздней Тан",
+        "id": "cin-cn-flying-daggers",
+        "zh": "十面埋伏"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется фильм о судьбах двух исполнителей пекинской оперы, разделивший «Золотую пальмовую ветвь» Каннского фестиваля в 1993 году?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-crouching-tiger",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 卧虎藏龙",
+        "url": "https://www.1905.com/mdb/film/53745/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Каннский фестиваль: Crouching Tiger, Hidden Dragon",
+        "url": "https://www.festival-cannes.com/en/2019/crouching-tiger-hidden-dragon-ang-lee-s-spectacular-masterpiece/"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Крадущийся тигр, затаившийся дракон» (卧虎藏龙). Фильм Ли Аня появился в 2000 году и основан на романе Ван Дулу. В 2001 году он получил «Оскар» за лучший фильм на иностранном языке."
+    },
+    "id": "cinema-q03",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-crouching-tiger",
+        "zh": "卧虎藏龙"
+      },
+      {
+        "gloss": "«Красный гаолян» — фильм Чжан Имоу по произведениям Мо Яня",
+        "id": "cin-cn-red-sorghum",
+        "zh": "红高粱"
+      },
+      {
+        "gloss": "«Прощай, моя наложница» — фильм о судьбах двух актёров пекинской оперы",
+        "id": "cin-cn-concubine",
+        "zh": "霸王别姬"
+      },
+      {
+        "gloss": "«Любовное настроение» — фильм о сближении двух соседей в Гонконге",
+        "id": "cin-cn-mood-for-love",
+        "zh": "花样年华"
+      },
+      {
+        "gloss": "«Блуждающая Земля» — фильм о спасении людей перемещением самой планеты",
+        "id": "cin-cn-wandering-earth",
+        "zh": "流浪地球"
+      },
+      {
+        "gloss": "«Натюрморт» — фильм о поисках близких на фоне переселения у Трёх ущелий",
+        "id": "cin-cn-still-life",
+        "zh": "三峡好人"
+      },
+      {
+        "gloss": "«Певица Красный Пион» — один из первых опытов звукового кино Китая",
+        "id": "cin-cn-red-peony",
+        "zh": "歌女红牡丹"
+      },
+      {
+        "gloss": "«Жить» — фильм о судьбе Фугуя и его семьи в Китае XX века",
+        "id": "cin-cn-to-live",
+        "zh": "活着"
+      },
+      {
+        "gloss": "«Герой» — фильм о встрече воина Безымянного с царём Цинь",
+        "id": "cin-cn-hero",
+        "zh": "英雄"
+      },
+      {
+        "gloss": "«Дом летающих кинжалов» — история любви и обмана на фоне поздней Тан",
+        "id": "cin-cn-flying-daggers",
+        "zh": "十面埋伏"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В каком фильме Ли Аня о мастерах боевых искусств похищение легендарного меча связывает судьбы двух поколений героев, а сама картина получила «Оскар» за фильм на иностранном языке в 2001 году?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-mood-for-love",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 花样年华",
+        "url": "https://www.1905.com/mdb/film/57802/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Каннский фестиваль: IN THE MOOD FOR LOVE",
+        "url": "https://www.festival-cannes.com/en/f/in-the-mood-for-love-3/"
+      }
+    ],
+    "explanation": {
+      "ru": "«Любовное настроение» поставил Вонг Карвай (王家卫). Фильм вышел в 2000 году и рассказывает о двух соседях, узнающих об измене своих супругов. На Каннском фестивале исполнитель главной мужской роли получил актёрскую награду."
+    },
+    "id": "cinema-q04",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-mood-for-love",
+        "zh": "王家卫"
+      },
+      {
+        "gloss": "Чжан Имоу — кинорежиссёр",
+        "id": "cin-cn-red-sorghum",
+        "zh": "张艺谋"
+      },
+      {
+        "gloss": "Чэнь Кайгэ — кинорежиссёр",
+        "id": "cin-cn-concubine",
+        "zh": "陈凯歌"
+      },
+      {
+        "gloss": "Ли Ань — кинорежиссёр",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "李安"
+      },
+      {
+        "gloss": "Го Фань — кинорежиссёр",
+        "id": "cin-cn-wandering-earth",
+        "zh": "郭帆"
+      },
+      {
+        "gloss": "Цзя Чжанкэ — кинорежиссёр",
+        "id": "cin-cn-still-life",
+        "zh": "贾樟柯"
+      },
+      {
+        "gloss": "Чжан Шичуань — кинорежиссёр",
+        "id": "cin-cn-red-peony",
+        "zh": "张石川"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Кто снял фильм «Любовное настроение» (花样年华), действие которого начинается в Гонконге 1962 года?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-wandering-earth",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 流浪地球",
+        "url": "https://www.1905.com/mdb/film/2228651/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Синьхуа: интервью Лю Цысиня о «Блуждающей Земле»",
+        "url": "https://www.xinhuanet.com/politics/2019-02/03/c_1124084032.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Режиссёр фильма — Го Фань (郭帆). Литературная основа — одноимённый рассказ Лю Цысиня. Человечество пытается спастись от стареющего Солнца, переместив саму Землю."
+    },
+    "id": "cinema-q05",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-wandering-earth",
+        "zh": "郭帆"
+      },
+      {
+        "gloss": "Чжан Имоу — кинорежиссёр",
+        "id": "cin-cn-red-sorghum",
+        "zh": "张艺谋"
+      },
+      {
+        "gloss": "Чэнь Кайгэ — кинорежиссёр",
+        "id": "cin-cn-concubine",
+        "zh": "陈凯歌"
+      },
+      {
+        "gloss": "Ли Ань — кинорежиссёр",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "李安"
+      },
+      {
+        "gloss": "Вонг Карвай — кинорежиссёр",
+        "id": "cin-cn-mood-for-love",
+        "zh": "王家卫"
+      },
+      {
+        "gloss": "Цзя Чжанкэ — кинорежиссёр",
+        "id": "cin-cn-still-life",
+        "zh": "贾樟柯"
+      },
+      {
+        "gloss": "Чжан Шичуань — кинорежиссёр",
+        "id": "cin-cn-red-peony",
+        "zh": "张石川"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Кто поставил фантастический фильм «Блуждающая Земля» (流浪地球, 2019) по рассказу Лю Цысиня?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-still-life",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 三峡好人",
+        "url": "https://www.1905.com/mdb/film/46723/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Кинофестиваль Mulan: Still Life 三峡好人",
+        "url": "https://mulanfestival.com/still-life/"
+      }
+    ],
+    "explanation": {
+      "ru": "«Натюрморт» поставил Цзя Чжанкэ (贾樟柯). Двое людей ищут своих супругов в Фэнцзе на фоне переселения жителей из-за строительства плотины Трёх ущелий. В 2006 году фильм получил главный приз Венецианского кинофестиваля — «Золотого льва»."
+    },
+    "id": "cinema-q06",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-still-life",
+        "zh": "贾樟柯"
+      },
+      {
+        "gloss": "Чжан Имоу — кинорежиссёр",
+        "id": "cin-cn-red-sorghum",
+        "zh": "张艺谋"
+      },
+      {
+        "gloss": "Чэнь Кайгэ — кинорежиссёр",
+        "id": "cin-cn-concubine",
+        "zh": "陈凯歌"
+      },
+      {
+        "gloss": "Ли Ань — кинорежиссёр",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "李安"
+      },
+      {
+        "gloss": "Вонг Карвай — кинорежиссёр",
+        "id": "cin-cn-mood-for-love",
+        "zh": "王家卫"
+      },
+      {
+        "gloss": "Го Фань — кинорежиссёр",
+        "id": "cin-cn-wandering-earth",
+        "zh": "郭帆"
+      },
+      {
+        "gloss": "Чжан Шичуань — кинорежиссёр",
+        "id": "cin-cn-red-peony",
+        "zh": "张石川"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Кто снял «Натюрморт» (三峡好人), получивший «Золотого льва» Венецианского кинофестиваля в 2006 году?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-red-peony",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 歌女红牡丹",
+        "url": "https://www.1905.com/mdb/film/46965/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Цзянсуская федерация литературы и искусства: 歌舞电影与中国歌舞文化",
+        "url": "https://www.jswyw.com/org/xiehui/dy/dypl/201907/t20190705_59306.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Певица Красный Пион» (歌女红牡丹). Фильм поставил Чжан Шичуань, главную роль сыграла Ху Де. Картина 1931 года посвящена певице пекинской оперы, страдающей от жестокого мужа."
+    },
+    "id": "cinema-q07",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-red-peony",
+        "zh": "歌女红牡丹"
+      },
+      {
+        "gloss": "«Красный гаолян» — фильм Чжан Имоу по произведениям Мо Яня",
+        "id": "cin-cn-red-sorghum",
+        "zh": "红高粱"
+      },
+      {
+        "gloss": "«Прощай, моя наложница» — фильм о судьбах двух актёров пекинской оперы",
+        "id": "cin-cn-concubine",
+        "zh": "霸王别姬"
+      },
+      {
+        "gloss": "«Крадущийся тигр, затаившийся дракон» — фильм о мастерах боевых искусств",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "卧虎藏龙"
+      },
+      {
+        "gloss": "«Любовное настроение» — фильм о сближении двух соседей в Гонконге",
+        "id": "cin-cn-mood-for-love",
+        "zh": "花样年华"
+      },
+      {
+        "gloss": "«Блуждающая Земля» — фильм о спасении людей перемещением самой планеты",
+        "id": "cin-cn-wandering-earth",
+        "zh": "流浪地球"
+      },
+      {
+        "gloss": "«Натюрморт» — фильм о поисках близких на фоне переселения у Трёх ущелий",
+        "id": "cin-cn-still-life",
+        "zh": "三峡好人"
+      },
+      {
+        "gloss": "«Жить» — фильм о судьбе Фугуя и его семьи в Китае XX века",
+        "id": "cin-cn-to-live",
+        "zh": "活着"
+      },
+      {
+        "gloss": "«Герой» — фильм о встрече воина Безымянного с царём Цинь",
+        "id": "cin-cn-hero",
+        "zh": "英雄"
+      },
+      {
+        "gloss": "«Дом летающих кинжалов» — история любви и обмана на фоне поздней Тан",
+        "id": "cin-cn-flying-daggers",
+        "zh": "十面埋伏"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется вышедший в 1931 году фильм о певице пекинской оперы, который в истории кино обычно называют первым китайским звуковым фильмом?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-to-live",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 活着",
+        "url": "https://www.1905.com/mdb/film/298218/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Каннский фестиваль: HUOZHE",
+        "url": "https://www.festival-cannes.com/en/f/huozhe/"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-10-19",
+        "title": "Китайский союз писателей: «Жить» — три версии произведения",
+        "url": "https://www.chinawriter.com.cn/n1/2020/0313/c404030-31630564.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Фильм «Жить» (活着) поставил Чжан Имоу (张艺谋). Он основан на романе Юй Хуа и посвящён судьбе Фугуя и его семьи. В Каннах 1994 года картина разделила Гран-при жюри, а исполнитель роли Фугуя получил награду за лучшую мужскую роль."
+    },
+    "id": "cinema-q08",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-to-live",
+        "zh": "张艺谋"
+      },
+      {
+        "gloss": "Чэнь Кайгэ — кинорежиссёр",
+        "id": "cin-cn-concubine",
+        "zh": "陈凯歌"
+      },
+      {
+        "gloss": "Ли Ань — кинорежиссёр",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "李安"
+      },
+      {
+        "gloss": "Вонг Карвай — кинорежиссёр",
+        "id": "cin-cn-mood-for-love",
+        "zh": "王家卫"
+      },
+      {
+        "gloss": "Го Фань — кинорежиссёр",
+        "id": "cin-cn-wandering-earth",
+        "zh": "郭帆"
+      },
+      {
+        "gloss": "Цзя Чжанкэ — кинорежиссёр",
+        "id": "cin-cn-still-life",
+        "zh": "贾樟柯"
+      },
+      {
+        "gloss": "Чжан Шичуань — кинорежиссёр",
+        "id": "cin-cn-red-peony",
+        "zh": "张石川"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Кто поставил фильм «Жить» (1994), в котором Фугуй и его семья переживают исторические потрясения?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-hero",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 英雄",
+        "url": "https://www.1905.com/mdb/film/2092218/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 英雄 — подробное описание",
+        "url": "https://www.1905.com/mdb/film/2092218/info/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Каннский фестиваль: биография Чжан Имоу",
+        "url": "https://www.festival-cannes.com/en/p/yimou-zhang/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 路阳谈《英雄》",
+        "url": "https://m.1905.com/m/news/vivo/1588411.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Это фильм «Герой» (英雄), вышедший в Китае в 2002 году. В центре повествования — встреча Безымянного с царём Цинь. Рассказы о победах воина оказываются разными версиями одной истории."
+    },
+    "id": "cinema-q09",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-hero",
+        "zh": "英雄"
+      },
+      {
+        "gloss": "«Красный гаолян» — фильм Чжан Имоу по произведениям Мо Яня",
+        "id": "cin-cn-red-sorghum",
+        "zh": "红高粱"
+      },
+      {
+        "gloss": "«Прощай, моя наложница» — фильм о судьбах двух актёров пекинской оперы",
+        "id": "cin-cn-concubine",
+        "zh": "霸王别姬"
+      },
+      {
+        "gloss": "«Крадущийся тигр, затаившийся дракон» — фильм о мастерах боевых искусств",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "卧虎藏龙"
+      },
+      {
+        "gloss": "«Любовное настроение» — фильм о сближении двух соседей в Гонконге",
+        "id": "cin-cn-mood-for-love",
+        "zh": "花样年华"
+      },
+      {
+        "gloss": "«Блуждающая Земля» — фильм о спасении людей перемещением самой планеты",
+        "id": "cin-cn-wandering-earth",
+        "zh": "流浪地球"
+      },
+      {
+        "gloss": "«Натюрморт» — фильм о поисках близких на фоне переселения у Трёх ущелий",
+        "id": "cin-cn-still-life",
+        "zh": "三峡好人"
+      },
+      {
+        "gloss": "«Певица Красный Пион» — один из первых опытов звукового кино Китая",
+        "id": "cin-cn-red-peony",
+        "zh": "歌女红牡丹"
+      },
+      {
+        "gloss": "«Жить» — фильм о судьбе Фугуя и его семьи в Китае XX века",
+        "id": "cin-cn-to-live",
+        "zh": "活着"
+      },
+      {
+        "gloss": "«Дом летающих кинжалов» — история любви и обмана на фоне поздней Тан",
+        "id": "cin-cn-flying-daggers",
+        "zh": "十面埋伏"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В каком фильме воин по имени Безымянный рассказывает царю Цинь о победе над тремя опасными противниками, а царь предлагает другую версию этих событий?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-flying-daggers",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 十面埋伏",
+        "url": "https://www.1905.com/mdb/film/55963/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Каннский фестиваль: HOUSE OF FLYING DAGGERS",
+        "url": "https://www.festival-cannes.com/en/f/shi-mian-mai-fu-house-of-flying-daggers/"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Дом летающих кинжалов» (十面埋伏). Действие разворачивается в конце эпохи Тан, когда власти борются с повстанческой организацией. В 2004 году картина была показана в Каннах вне конкурса."
+    },
+    "id": "cinema-q10",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-flying-daggers",
+        "zh": "十面埋伏"
+      },
+      {
+        "gloss": "«Красный гаолян» — фильм Чжан Имоу по произведениям Мо Яня",
+        "id": "cin-cn-red-sorghum",
+        "zh": "红高粱"
+      },
+      {
+        "gloss": "«Прощай, моя наложница» — фильм о судьбах двух актёров пекинской оперы",
+        "id": "cin-cn-concubine",
+        "zh": "霸王别姬"
+      },
+      {
+        "gloss": "«Крадущийся тигр, затаившийся дракон» — фильм о мастерах боевых искусств",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "卧虎藏龙"
+      },
+      {
+        "gloss": "«Любовное настроение» — фильм о сближении двух соседей в Гонконге",
+        "id": "cin-cn-mood-for-love",
+        "zh": "花样年华"
+      },
+      {
+        "gloss": "«Блуждающая Земля» — фильм о спасении людей перемещением самой планеты",
+        "id": "cin-cn-wandering-earth",
+        "zh": "流浪地球"
+      },
+      {
+        "gloss": "«Натюрморт» — фильм о поисках близких на фоне переселения у Трёх ущелий",
+        "id": "cin-cn-still-life",
+        "zh": "三峡好人"
+      },
+      {
+        "gloss": "«Певица Красный Пион» — один из первых опытов звукового кино Китая",
+        "id": "cin-cn-red-peony",
+        "zh": "歌女红牡丹"
+      },
+      {
+        "gloss": "«Жить» — фильм о судьбе Фугуя и его семьи в Китае XX века",
+        "id": "cin-cn-to-live",
+        "zh": "活着"
+      },
+      {
+        "gloss": "«Герой» — фильм о встрече воина Безымянного с царём Цинь",
+        "id": "cin-cn-hero",
+        "zh": "英雄"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется фильм, в котором двое служителей власти пытаются через молодую женщину Мэй проникнуть в повстанческую организацию, но замысел осложняется любовью?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-tieshangongzhu",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "档案记载我国第一部彩色动画长片《大闹天宫》的辉煌历史 — 上海市档案局（馆）",
+        "url": "https://www.shda.gov.cn/dawh/csjy/202512/t20251203_76389.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "《铁扇公主》修复：致敬经典，传承动画之光 — 上海国际电影节",
+        "url": "https://www.siff.com/content?aid=101240607221520568887369504133125233"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Принцесса Железный Веер» (铁扇公主). Картина вышла в 1941 году и стала важной вехой китайской полнометражной анимации. Её сюжет связан с эпизодом романа «Путешествие на Запад» о добывании волшебного веера."
+    },
+    "id": "cinema-q11",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-tieshangongzhu",
+        "zh": "铁扇公主"
+      },
+      {
+        "gloss": "Переполох в небесных чертогах",
+        "id": "cin-cn-danaotiangong",
+        "zh": "大闹天宫"
+      },
+      {
+        "gloss": "Головастики ищут маму",
+        "id": "cin-cn-xiaokedouzhaomama",
+        "zh": "小蝌蚪找妈妈"
+      },
+      {
+        "gloss": "Братья-тыквы",
+        "id": "cin-cn-huluxiongdi",
+        "zh": "葫芦兄弟"
+      },
+      {
+        "gloss": "Истории Афанти",
+        "id": "cin-cn-afantidegushi",
+        "zh": "阿凡提的故事"
+      },
+      {
+        "gloss": "Три монаха",
+        "id": "cin-cn-sangeheshang",
+        "zh": "三个和尚"
+      },
+      {
+        "gloss": "Нэчжа покоряет море",
+        "id": "cin-cn-nezhanaohai",
+        "zh": "哪吒闹海"
+      },
+      {
+        "gloss": "Нэчжа: Рождение демона",
+        "id": "cin-cn-nezhamotongjiangshi",
+        "zh": "哪吒之魔童降世"
+      },
+      {
+        "gloss": "Король обезьян: Возвращение героя",
+        "id": "cin-cn-dashengguilai",
+        "zh": "西游记之大圣归来"
+      },
+      {
+        "gloss": "Девятицветный олень",
+        "id": "cin-cn-jiuselu",
+        "zh": "九色鹿"
+      },
+      {
+        "gloss": "Легенда о небесной книге",
+        "id": "cin-cn-tianshuqitan",
+        "zh": "天书奇谭"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется вышедший в 1941 году фильм, который считают первым китайским полнометражным мультфильмом?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-danaotiangong",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "孙悟空 — 上影元",
+        "url": "https://www.sfi-sh.com/IP/cartoon/27/intro"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "档案记载我国第一部彩色动画长片《大闹天宫》的辉煌历史 — 上海市档案局（馆）",
+        "url": "https://www.shda.gov.cn/dawh/csjy/202512/t20251203_76389.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "从传统奠基到融合创新 — 新华网",
+        "url": "https://www3.xinhuanet.com/ent/20260122/7adf02a3c414429496ebbe4aea9e0ef4/c.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Переполох в небесных чертогах» (大闹天宫). Его литературная основа — роман «Путешествие на Запад». Две части классической картины были завершены в 1961 и 1964 годах."
+    },
+    "id": "cinema-q12",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-danaotiangong",
+        "zh": "大闹天宫"
+      },
+      {
+        "gloss": "Принцесса Железный Веер",
+        "id": "cin-cn-tieshangongzhu",
+        "zh": "铁扇公主"
+      },
+      {
+        "gloss": "Головастики ищут маму",
+        "id": "cin-cn-xiaokedouzhaomama",
+        "zh": "小蝌蚪找妈妈"
+      },
+      {
+        "gloss": "Братья-тыквы",
+        "id": "cin-cn-huluxiongdi",
+        "zh": "葫芦兄弟"
+      },
+      {
+        "gloss": "Истории Афанти",
+        "id": "cin-cn-afantidegushi",
+        "zh": "阿凡提的故事"
+      },
+      {
+        "gloss": "Три монаха",
+        "id": "cin-cn-sangeheshang",
+        "zh": "三个和尚"
+      },
+      {
+        "gloss": "Нэчжа покоряет море",
+        "id": "cin-cn-nezhanaohai",
+        "zh": "哪吒闹海"
+      },
+      {
+        "gloss": "Нэчжа: Рождение демона",
+        "id": "cin-cn-nezhamotongjiangshi",
+        "zh": "哪吒之魔童降世"
+      },
+      {
+        "gloss": "Король обезьян: Возвращение героя",
+        "id": "cin-cn-dashengguilai",
+        "zh": "西游记之大圣归来"
+      },
+      {
+        "gloss": "Девятицветный олень",
+        "id": "cin-cn-jiuselu",
+        "zh": "九色鹿"
+      },
+      {
+        "gloss": "Легенда о небесной книге",
+        "id": "cin-cn-tianshuqitan",
+        "zh": "天书奇谭"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется классический китайский мультфильм о восстании Сунь Укуна против небесных властей, две части которого были завершены в 1961 и 1964 годах?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-xiaokedouzhaomama",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "小蝌蚪找妈妈 — 中国电影资料馆",
+        "url": "https://www.cfa.org.cn/cfa/gz/dymlcx/dy/2023060210450315400/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "特伟电影大全 — 1905电影网",
+        "url": "https://m.1905.com/m/star/workslist/2991904/"
+      }
+    ],
+    "explanation": {
+      "ru": "Это анимация в технике живописи тушью — 水墨动画. Фильм 1960 года рассказывает о головастиках, которые ищут свою мать-лягушку. При создании образов животных авторы опирались на произведения Ци Байши."
+    },
+    "id": "cinema-q13",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-xiaokedouzhaomama",
+        "zh": "水墨动画"
+      },
+      {
+        "gloss": "Бумажная перекладка — покадровая съёмка плоских фигур из бумаги",
+        "id": "cin-cn-huluxiongdi",
+        "zh": "剪纸动画"
+      },
+      {
+        "gloss": "Кукольная анимация — съёмка кукол с покадровым изменением позы",
+        "id": "cin-cn-afantidegushi",
+        "zh": "木偶动画"
+      },
+      {
+        "gloss": "Трёхмерная анимация — движение компьютерных объёмных моделей",
+        "id": "cin-cn-nezhamotongjiangshi",
+        "zh": "三维动画"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В какой технике выполнен классический китайский мультфильм «Головастики ищут маму» (小蝌蚪找妈妈)?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-huluxiongdi",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "葫芦兄弟 — 上影元",
+        "url": "https://www.sfi-sh.com/IP/cartoon/25/intro"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "“葫芦兄弟”维权记 — 中华人民共和国最高人民法院",
+        "url": "https://www.court.gov.cn/zixun/xiangqing/501281.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Классические «Братья-тыквы» созданы в технике бумажной перекладки — 剪纸动画. У семи братьев разные чудесные способности. Победить демонов и спасти близких им помогает единство."
+    },
+    "id": "cinema-q14",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-huluxiongdi",
+        "zh": "剪纸动画"
+      },
+      {
+        "gloss": "Рисованная анимация — движение из последовательности рисунков",
+        "id": "cin-cn-danaotiangong",
+        "zh": "手绘动画"
+      },
+      {
+        "gloss": "Анимация водяной тушью — техника на основе традиционной живописи",
+        "id": "cin-cn-xiaokedouzhaomama",
+        "zh": "水墨动画"
+      },
+      {
+        "gloss": "Кукольная анимация — съёмка кукол с покадровым изменением позы",
+        "id": "cin-cn-afantidegushi",
+        "zh": "木偶动画"
+      },
+      {
+        "gloss": "Трёхмерная анимация — движение компьютерных объёмных моделей",
+        "id": "cin-cn-nezhamotongjiangshi",
+        "zh": "三维动画"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В какой технике выполнен классический цикл «Братья-тыквы» (葫芦兄弟), герои которого спасают близких от демонов?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-afantidegushi",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "阿凡提的故事 — 上影元",
+        "url": "https://www.sfi-sh.com/IP/cartoon/15/intro"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "阿凡提之奇缘历险·幕后花絮 — 1905电影网",
+        "url": "https://www.1905.com/mdb/film/2237524/feature/"
+      }
+    ],
+    "explanation": {
+      "ru": "Это кукольная анимация — 木偶动画. Находчивый Афанти помогает беднякам и наказывает жадного бая. Классический цикл основан на фольклоре Синьцзяна."
+    },
+    "id": "cinema-q15",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-afantidegushi",
+        "zh": "木偶动画"
+      },
+      {
+        "gloss": "Рисованная анимация — движение из последовательности рисунков",
+        "id": "cin-cn-danaotiangong",
+        "zh": "手绘动画"
+      },
+      {
+        "gloss": "Анимация водяной тушью — техника на основе традиционной живописи",
+        "id": "cin-cn-xiaokedouzhaomama",
+        "zh": "水墨动画"
+      },
+      {
+        "gloss": "Бумажная перекладка — покадровая съёмка плоских фигур из бумаги",
+        "id": "cin-cn-huluxiongdi",
+        "zh": "剪纸动画"
+      },
+      {
+        "gloss": "Трёхмерная анимация — движение компьютерных объёмных моделей",
+        "id": "cin-cn-nezhamotongjiangshi",
+        "zh": "三维动画"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В какой технике снят классический цикл «Истории об Афанти» (阿凡提的故事)?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-sangeheshang",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "三个和尚 — 中国电影资料馆",
+        "url": "https://www.cfa.org.cn/cfa/gz/dymlcx/dy/2023060210311042322/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "徐景达·人物资料 — 1905电影网",
+        "url": "https://m.1905.com/m/star/info/1770708/"
+      }
+    ],
+    "explanation": {
+      "ru": "Это мультфильм «Три монаха» (三个和尚) 1980 года. Его поставил Сюй Цзинда, известный также как А Да. В фильме нет диалогов: конфликт и перемены в отношениях героев переданы средствами анимации."
+    },
+    "id": "cinema-q16",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-sangeheshang",
+        "zh": "三个和尚"
+      },
+      {
+        "gloss": "Принцесса Железный Веер",
+        "id": "cin-cn-tieshangongzhu",
+        "zh": "铁扇公主"
+      },
+      {
+        "gloss": "Переполох в небесных чертогах",
+        "id": "cin-cn-danaotiangong",
+        "zh": "大闹天宫"
+      },
+      {
+        "gloss": "Головастики ищут маму",
+        "id": "cin-cn-xiaokedouzhaomama",
+        "zh": "小蝌蚪找妈妈"
+      },
+      {
+        "gloss": "Братья-тыквы",
+        "id": "cin-cn-huluxiongdi",
+        "zh": "葫芦兄弟"
+      },
+      {
+        "gloss": "Истории Афанти",
+        "id": "cin-cn-afantidegushi",
+        "zh": "阿凡提的故事"
+      },
+      {
+        "gloss": "Нэчжа покоряет море",
+        "id": "cin-cn-nezhanaohai",
+        "zh": "哪吒闹海"
+      },
+      {
+        "gloss": "Нэчжа: Рождение демона",
+        "id": "cin-cn-nezhamotongjiangshi",
+        "zh": "哪吒之魔童降世"
+      },
+      {
+        "gloss": "Король обезьян: Возвращение героя",
+        "id": "cin-cn-dashengguilai",
+        "zh": "西游记之大圣归来"
+      },
+      {
+        "gloss": "Девятицветный олень",
+        "id": "cin-cn-jiuselu",
+        "zh": "九色鹿"
+      },
+      {
+        "gloss": "Легенда о небесной книге",
+        "id": "cin-cn-tianshuqitan",
+        "zh": "天书奇谭"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В каком китайском мультфильме монахи сначала перекладывают друг на друга заботу о воде, а после совместного тушения пожара учатся сотрудничать?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-nezhanaohai",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "哪吒闹海 — 上影元",
+        "url": "https://www.sfi-sh.com/IP/cartoon/26/intro"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "哪吒闹海·详细资料 — 1905电影网",
+        "url": "https://www.1905.com/mdb/film/47890/info/"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Нэчжа побеждает царя драконов» (哪吒闹海). Полнометражный мультфильм вышел в 1979 году. Его литературная основа — эпизоды романа «Возвышение в ранг духов»."
+    },
+    "id": "cinema-q17",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-nezhanaohai",
+        "zh": "哪吒闹海"
+      },
+      {
+        "gloss": "Принцесса Железный Веер",
+        "id": "cin-cn-tieshangongzhu",
+        "zh": "铁扇公主"
+      },
+      {
+        "gloss": "Переполох в небесных чертогах",
+        "id": "cin-cn-danaotiangong",
+        "zh": "大闹天宫"
+      },
+      {
+        "gloss": "Головастики ищут маму",
+        "id": "cin-cn-xiaokedouzhaomama",
+        "zh": "小蝌蚪找妈妈"
+      },
+      {
+        "gloss": "Братья-тыквы",
+        "id": "cin-cn-huluxiongdi",
+        "zh": "葫芦兄弟"
+      },
+      {
+        "gloss": "Истории Афанти",
+        "id": "cin-cn-afantidegushi",
+        "zh": "阿凡提的故事"
+      },
+      {
+        "gloss": "Три монаха",
+        "id": "cin-cn-sangeheshang",
+        "zh": "三个和尚"
+      },
+      {
+        "gloss": "Нэчжа: Рождение демона",
+        "id": "cin-cn-nezhamotongjiangshi",
+        "zh": "哪吒之魔童降世"
+      },
+      {
+        "gloss": "Король обезьян: Возвращение героя",
+        "id": "cin-cn-dashengguilai",
+        "zh": "西游记之大圣归来"
+      },
+      {
+        "gloss": "Девятицветный олень",
+        "id": "cin-cn-jiuselu",
+        "zh": "九色鹿"
+      },
+      {
+        "gloss": "Легенда о небесной книге",
+        "id": "cin-cn-tianshuqitan",
+        "zh": "天书奇谭"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется китайский мультфильм 1979 года, в котором юный герой с огненным копьём и огненными колёсами сражается с царём драконов, защищая людей?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-nezhamotongjiangshi",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "首日票房1.37亿 国产动画电影《哪吒之魔童降世》点燃暑期档 — 新华网",
+        "url": "https://www.xinhuanet.com/politics/2019-07/27/c_1124806609.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "哪吒之魔童降世·详细资料 — 1905电影网",
+        "url": "https://www.1905.com/mdb/film/2243707/info/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "“哪吒”汽车摆件著作权纠纷 — 中国保护知识产权网",
+        "url": "https://ipr.mofcom.gov.cn/article/gnxw/bq/202104/1961068.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Нэчжа: Рождение демона» (哪吒之魔童降世). Фильм поставил режиссёр Цзяоцзы, настоящее имя которого — Ян Юй. В картине 2019 года Нэчжа борется с предубеждениями и отказывается покоряться навязанной ему судьбе."
+    },
+    "id": "cinema-q18",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-nezhamotongjiangshi",
+        "zh": "哪吒之魔童降世"
+      },
+      {
+        "gloss": "Принцесса Железный Веер",
+        "id": "cin-cn-tieshangongzhu",
+        "zh": "铁扇公主"
+      },
+      {
+        "gloss": "Переполох в небесных чертогах",
+        "id": "cin-cn-danaotiangong",
+        "zh": "大闹天宫"
+      },
+      {
+        "gloss": "Головастики ищут маму",
+        "id": "cin-cn-xiaokedouzhaomama",
+        "zh": "小蝌蚪找妈妈"
+      },
+      {
+        "gloss": "Братья-тыквы",
+        "id": "cin-cn-huluxiongdi",
+        "zh": "葫芦兄弟"
+      },
+      {
+        "gloss": "Истории Афанти",
+        "id": "cin-cn-afantidegushi",
+        "zh": "阿凡提的故事"
+      },
+      {
+        "gloss": "Три монаха",
+        "id": "cin-cn-sangeheshang",
+        "zh": "三个和尚"
+      },
+      {
+        "gloss": "Нэчжа покоряет море",
+        "id": "cin-cn-nezhanaohai",
+        "zh": "哪吒闹海"
+      },
+      {
+        "gloss": "Король обезьян: Возвращение героя",
+        "id": "cin-cn-dashengguilai",
+        "zh": "西游记之大圣归来"
+      },
+      {
+        "gloss": "Девятицветный олень",
+        "id": "cin-cn-jiuselu",
+        "zh": "九色鹿"
+      },
+      {
+        "gloss": "Легенда о небесной книге",
+        "id": "cin-cn-tianshuqitan",
+        "zh": "天书奇谭"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется китайский анимационный фильм 2019 года, в котором Нэчжа борется с предубеждениями и отказывается покоряться навязанной судьбе?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-dashengguilai",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "西游记之大圣归来·详细资料 — 1905电影网",
+        "url": "https://m.1905.com/m/film/info/2224336.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "《西游记之大圣归来》口碑佳 好莱坞制片人盛赞 — 1905电影网",
+        "url": "https://www.1905.com/news/20150617/902681.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "西游记之大圣归来·幕后花絮 — 1905电影网",
+        "url": "https://www.1905.com/mdb/film/2224336/feature/"
+      }
+    ],
+    "explanation": {
+      "ru": "Режиссёр фильма — Тянь Сяопэн (田晓鹏). Китайское название картины — 西游记之大圣归来. Мальчик Цзян Люэр случайно освобождает Сунь Укуна, и история вновь обращается к героям «Путешествия на Запад»."
+    },
+    "id": "cinema-q19",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-dashengguilai",
+        "zh": "田晓鹏"
+      },
+      {
+        "gloss": "Тэ Вэй, Цянь Цзяцзюнь и Тан Чэн — создатели фильма о головастиках",
+        "id": "cin-cn-xiaokedouzhaomama",
+        "zh": "特伟、钱家骏、唐澄"
+      },
+      {
+        "gloss": "Ху Цзиньцин, Гэ Гуйюнь и Чжоу Кэцинь — режиссёры «Братьев-тыкв»",
+        "id": "cin-cn-huluxiongdi",
+        "zh": "胡进庆、葛桂云、周克勤"
+      },
+      {
+        "gloss": "Цзинь Си, Лю Хуэйи, Цюй Цзяньфан, Цай Юаньлань и Цзинь Фанлин — режиссёры цикла",
+        "id": "cin-cn-afantidegushi",
+        "zh": "靳夕、刘蕙仪、曲建方、蔡渊澜、金芳铃"
+      },
+      {
+        "gloss": "Сюй Цзинда, известный как А Да, — режиссёр «Трёх монахов»",
+        "id": "cin-cn-sangeheshang",
+        "zh": "徐景达"
+      },
+      {
+        "gloss": "Ван Шучэнь, Янь Динсянь и Сюй Цзинда — режиссёры фильма о Нэчжа",
+        "id": "cin-cn-nezhanaohai",
+        "zh": "王树忱、严定宪、徐景达"
+      },
+      {
+        "gloss": "Цзяоцзы — псевдоним режиссёра Ян Юя",
+        "id": "cin-cn-nezhamotongjiangshi",
+        "zh": "饺子"
+      },
+      {
+        "gloss": "Цянь Цзяцзюнь и Дай Телан — режиссёры «Девятицветного оленя»",
+        "id": "cin-cn-jiuselu",
+        "zh": "钱家骏、戴铁郎"
+      },
+      {
+        "gloss": "Ван Шучэнь и Цянь Юньда — режиссёры «Легенды о небесной книге»",
+        "id": "cin-cn-tianshuqitan",
+        "zh": "王树忱、钱运达"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Кто поставил китайский анимационный фильм 2015 года, в котором мальчик Цзян Люэр случайно освобождает Сунь Укуна?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-jiuselu",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "九色鹿 — 上影元",
+        "url": "https://www.sfi-sh.com/IP/cartoon/21/intro"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "九色鹿 — 中国电影资料馆",
+        "url": "https://www.cfa.org.cn/cfa/gz/dymlcx/dy/2023060210294445513/index.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Девятицветный олень» (九色鹿), мультфильм 1981 года. Источником вдохновения стала роспись Дуньхуана о царе оленей. Спасённый оленем человек предаёт своего спасителя."
+    },
+    "id": "cinema-q20",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-jiuselu",
+        "zh": "九色鹿"
+      },
+      {
+        "gloss": "Принцесса Железный Веер",
+        "id": "cin-cn-tieshangongzhu",
+        "zh": "铁扇公主"
+      },
+      {
+        "gloss": "Переполох в небесных чертогах",
+        "id": "cin-cn-danaotiangong",
+        "zh": "大闹天宫"
+      },
+      {
+        "gloss": "Головастики ищут маму",
+        "id": "cin-cn-xiaokedouzhaomama",
+        "zh": "小蝌蚪找妈妈"
+      },
+      {
+        "gloss": "Братья-тыквы",
+        "id": "cin-cn-huluxiongdi",
+        "zh": "葫芦兄弟"
+      },
+      {
+        "gloss": "Истории Афанти",
+        "id": "cin-cn-afantidegushi",
+        "zh": "阿凡提的故事"
+      },
+      {
+        "gloss": "Три монаха",
+        "id": "cin-cn-sangeheshang",
+        "zh": "三个和尚"
+      },
+      {
+        "gloss": "Нэчжа покоряет море",
+        "id": "cin-cn-nezhanaohai",
+        "zh": "哪吒闹海"
+      },
+      {
+        "gloss": "Нэчжа: Рождение демона",
+        "id": "cin-cn-nezhamotongjiangshi",
+        "zh": "哪吒之魔童降世"
+      },
+      {
+        "gloss": "Король обезьян: Возвращение героя",
+        "id": "cin-cn-dashengguilai",
+        "zh": "西游记之大圣归来"
+      },
+      {
+        "gloss": "Легенда о небесной книге",
+        "id": "cin-cn-tianshuqitan",
+        "zh": "天书奇谭"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется китайский мультфильм, в котором спасённый волшебным оленем человек предаёт своего спасителя, а образы восходят к росписи Дуньхуана?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-tianshuqitan",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "天书奇谭 — 上影元",
+        "url": "https://www.sfi-sh.com/IP/cartoon/23/intro"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "天书奇谭·详细资料 — 1905电影网",
+        "url": "https://www.1905.com/mdb/film/2117868/info/"
+      }
+    ],
+    "explanation": {
+      "ru": "Литературная основа — роман «Усмирение нечистой силы» (三遂平妖传). Мультфильм вышел в 1983 году. Восстановленная версия картины появилась в 2021 году."
+    },
+    "id": "cinema-q21",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-tianshuqitan",
+        "zh": "三遂平妖传"
+      },
+      {
+        "gloss": "Два произведения Мо Яня — литературная основа фильма",
+        "id": "cin-cn-red-sorghum",
+        "zh": "红高粱、高粱酒"
+      },
+      {
+        "gloss": "Роман Ли Бихуа — основа одноимённого фильма",
+        "id": "cin-cn-concubine",
+        "zh": "霸王别姬"
+      },
+      {
+        "gloss": "Роман Ван Дулу о мастерах боевых искусств",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "卧虎藏龙"
+      },
+      {
+        "gloss": "Рассказ Лю Цысиня — литературная основа фильма",
+        "id": "cin-cn-wandering-earth",
+        "zh": "流浪地球"
+      },
+      {
+        "gloss": "Роман Юй Хуа о судьбе крестьянина Фугуя",
+        "id": "cin-cn-to-live",
+        "zh": "活着"
+      },
+      {
+        "gloss": "«Путешествие на Запад» — роман о Сунь Укуне и паломничестве в Индию",
+        "id": "cin-cn-tieshangongzhu",
+        "zh": "西游记"
+      },
+      {
+        "gloss": "«Возвышение в ранг духов» — китайский мифологический роман",
+        "id": "cin-cn-nezhanaohai",
+        "zh": "封神演义"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какой роман послужил литературной основой мультфильма «Небесная книга» (天书奇谭, 1983)?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-ru-potemkin",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "中华读书报：爱森斯坦背后的非凡女性 — 南开大学",
+        "url": "https://news.nankai.edu.cn/mtnk/system/2016/07/25/000290554.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Броненосец «Потемкин» — Мосфильм",
+        "url": "https://www.mosfilm.ru/cinema/films/bronenosets-potemkin-1905-god-/"
+      }
+    ],
+    "explanation": {
+      "ru": "Режиссёр картины — Сергей Эйзенштейн (爱森斯坦). Фильм вышел в 1925 году. Он посвящён восстанию матросов броненосца в 1905 году."
+    },
+    "id": "cinema-q22",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-ru-potemkin",
+        "zh": "爱森斯坦"
+      },
+      {
+        "gloss": "Андрей Тарковский — режиссёр «Соляриса»",
+        "id": "cin-ru-solaris",
+        "zh": "塔尔科夫斯基"
+      },
+      {
+        "gloss": "Эльдар Рязанов — режиссёр «Иронии судьбы»",
+        "id": "cin-ru-irony-of-fate",
+        "zh": "梁赞诺夫"
+      },
+      {
+        "gloss": "Сергей Бондарчук — режиссёр и актёр «Войны и мира»",
+        "id": "cin-ru-war-and-peace",
+        "zh": "邦达尔丘克"
+      },
+      {
+        "gloss": "Владимир Меньшов — режиссёр «Москвы слезам не верит»",
+        "id": "cin-ru-moscow-tears",
+        "zh": "缅绍夫"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Кто поставил фильм «Броненосец „Потёмкин“» (1925)?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-ru-solaris",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "academic",
+        "checkedAt": "2026-10-19",
+        "title": "塔尔科夫斯基：末世拯救与诗性叙事 — 南京大学",
+        "url": "https://ptextold.nju.edu.cn/be/6d/c12244a245357/page.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Солярис — Мосфильм",
+        "url": "https://www.mosfilm.ru/cinema/films/solyaris/"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Солярис» (飞向太空). Фильм Андрея Тарковского вышел в 1972 году. Он основан на одноимённом романе Станислава Лема."
+    },
+    "id": "cinema-q23",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-ru-solaris",
+        "zh": "飞向太空"
+      },
+      {
+        "gloss": "«Броненосец „Потёмкин“» — фильм о восстании матросов в 1905 году",
+        "id": "cin-ru-potemkin",
+        "zh": "战舰波将金号"
+      },
+      {
+        "gloss": "«Ирония судьбы, или С лёгким паром!» — новогодняя комедия",
+        "id": "cin-ru-irony-of-fate",
+        "zh": "命运的捉弄"
+      },
+      {
+        "gloss": "«Война и мир» — киноэпопея Сергея Бондарчука по роману Льва Толстого",
+        "id": "cin-ru-war-and-peace",
+        "zh": "战争与和平"
+      },
+      {
+        "gloss": "«Москва слезам не верит» — фильм Владимира Меньшова",
+        "id": "cin-ru-moscow-tears",
+        "zh": "莫斯科不相信眼泪"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется фильм 1972 года по роману Станислава Лема, в котором учёный Крис Кельвин прибывает на космическую станцию у необычной планеты?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-ru-irony-of-fate",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "俄罗斯人每年必看贺岁片《命运的捉弄》 — 人民网",
+        "url": "https://world.people.com.cn/n/2013/0103/c1002-20076211.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Ирония судьбы, или с легким паром! — Мосфильм",
+        "url": "https://www.mosfilm.ru/cinema/films/ironiya-sudby-ili-s-legkim-parom/"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Ирония судьбы, или С лёгким паром!» (命运的捉弄). Телефильм поставил Эльдар Рязанов. Его премьера состоялась 1 января 1976 года, а последующие показы стали новогодней традицией."
+    },
+    "id": "cinema-q24",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-ru-irony-of-fate",
+        "zh": "命运的捉弄"
+      },
+      {
+        "gloss": "«Броненосец „Потёмкин“» — фильм о восстании матросов в 1905 году",
+        "id": "cin-ru-potemkin",
+        "zh": "战舰波将金号"
+      },
+      {
+        "gloss": "«Солярис» — фильм Андрея Тарковского по роману Станислава Лема",
+        "id": "cin-ru-solaris",
+        "zh": "飞向太空"
+      },
+      {
+        "gloss": "«Война и мир» — киноэпопея Сергея Бондарчука по роману Льва Толстого",
+        "id": "cin-ru-war-and-peace",
+        "zh": "战争与和平"
+      },
+      {
+        "gloss": "«Москва слезам не верит» — фильм Владимира Меньшова",
+        "id": "cin-ru-moscow-tears",
+        "zh": "莫斯科不相信眼泪"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется телефильм, премьера которого состоялась 1 января 1976 года, а последующие показы стали новогодней традицией?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-ru-war-and-peace",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "《斯大林格勒》导演 — 新华网",
+        "url": "https://www.xinhuanet.com/world/2015-05/05/c_1115187249.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "«Война и мир»: премьера отреставрированной версии во Франции — Мосфильм",
+        "url": "https://www.mosfilm.ru/about/news/voyna-i-mir-premera-otrestavrirovannoy-versii-vo-frantsii/"
+      }
+    ],
+    "explanation": {
+      "ru": "Режиссёр киноэпопеи — Сергей Бондарчук (邦达尔丘克). Картина вышла в 1965–1967 годах и состоит из четырёх частей. Это экранизация одноимённого романа Льва Толстого."
+    },
+    "id": "cinema-q25",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-ru-war-and-peace",
+        "zh": "邦达尔丘克"
+      },
+      {
+        "gloss": "Сергей Эйзенштейн — режиссёр «Броненосца „Потёмкина“»",
+        "id": "cin-ru-potemkin",
+        "zh": "爱森斯坦"
+      },
+      {
+        "gloss": "Андрей Тарковский — режиссёр «Соляриса»",
+        "id": "cin-ru-solaris",
+        "zh": "塔尔科夫斯基"
+      },
+      {
+        "gloss": "Эльдар Рязанов — режиссёр «Иронии судьбы»",
+        "id": "cin-ru-irony-of-fate",
+        "zh": "梁赞诺夫"
+      },
+      {
+        "gloss": "Владимир Меньшов — режиссёр «Москвы слезам не верит»",
+        "id": "cin-ru-moscow-tears",
+        "zh": "缅绍夫"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Кто поставил советскую четырёхчастную киноэпопею «Война и мир» (1965–1967)?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-ru-moscow-tears",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "“莫斯科不相信眼泪”这句话是何时出现的？ — 喀秋莎",
+        "url": "https://www.katyusha.tv/zh-hans/node/538"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Москва слезам не верит — Мосфильм",
+        "url": "https://www.mosfilm.ru/cinema/films/moskva-slezam-ne-verit/"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Москва слезам не верит» (莫斯科不相信眼泪). Игровой фильм снял Владимир Меньшов. Картина вышла в 1979 году."
+    },
+    "id": "cinema-q26",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-ru-moscow-tears",
+        "zh": "莫斯科不相信眼泪"
+      },
+      {
+        "gloss": "«Броненосец „Потёмкин“» — фильм о восстании матросов в 1905 году",
+        "id": "cin-ru-potemkin",
+        "zh": "战舰波将金号"
+      },
+      {
+        "gloss": "«Солярис» — фильм Андрея Тарковского по роману Станислава Лема",
+        "id": "cin-ru-solaris",
+        "zh": "飞向太空"
+      },
+      {
+        "gloss": "«Ирония судьбы, или С лёгким паром!» — новогодняя комедия",
+        "id": "cin-ru-irony-of-fate",
+        "zh": "命运的捉弄"
+      },
+      {
+        "gloss": "«Война и мир» — киноэпопея Сергея Бондарчука по роману Льва Толстого",
+        "id": "cin-ru-war-and-peace",
+        "zh": "战争与和平"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как в китайских источниках называется игровой фильм Владимира Меньшова 1979 года?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-ru-crocodile-gena",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "“联盟动画电影”制片厂出品的7部经典动画 — 北京俄罗斯文化中心",
+        "url": "https://russianculture.cn/ru/zh/联盟动画电影制片厂出品的7部经典动画/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Крокодил Гена — Культура.РФ (МБУ «Районный Дом культуры» Буинского МР)",
+        "url": "https://www.culture.ru/events/1570737/krokodil-gena"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Крокодил Гена» (鳄鱼根纳). Мультфильм Романа Качанова вышел в 1969 году. Литературной основой стала книга Эдуарда Успенского «Крокодил Гена и его друзья»."
+    },
+    "id": "cinema-q27",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-ru-crocodile-gena",
+        "zh": "鳄鱼根纳"
+      },
+      {
+        "gloss": "Принцесса Железный Веер",
+        "id": "cin-cn-tieshangongzhu",
+        "zh": "铁扇公主"
+      },
+      {
+        "gloss": "Переполох в небесных чертогах",
+        "id": "cin-cn-danaotiangong",
+        "zh": "大闹天宫"
+      },
+      {
+        "gloss": "Головастики ищут маму",
+        "id": "cin-cn-xiaokedouzhaomama",
+        "zh": "小蝌蚪找妈妈"
+      },
+      {
+        "gloss": "Братья-тыквы",
+        "id": "cin-cn-huluxiongdi",
+        "zh": "葫芦兄弟"
+      },
+      {
+        "gloss": "Истории Афанти",
+        "id": "cin-cn-afantidegushi",
+        "zh": "阿凡提的故事"
+      },
+      {
+        "gloss": "Три монаха",
+        "id": "cin-cn-sangeheshang",
+        "zh": "三个和尚"
+      },
+      {
+        "gloss": "Нэчжа покоряет море",
+        "id": "cin-cn-nezhanaohai",
+        "zh": "哪吒闹海"
+      },
+      {
+        "gloss": "Нэчжа: Рождение демона",
+        "id": "cin-cn-nezhamotongjiangshi",
+        "zh": "哪吒之魔童降世"
+      },
+      {
+        "gloss": "Король обезьян: Возвращение героя",
+        "id": "cin-cn-dashengguilai",
+        "zh": "西游记之大圣归来"
+      },
+      {
+        "gloss": "Девятицветный олень",
+        "id": "cin-cn-jiuselu",
+        "zh": "九色鹿"
+      },
+      {
+        "gloss": "Легенда о небесной книге",
+        "id": "cin-cn-tianshuqitan",
+        "zh": "天书奇谭"
+      },
+      {
+        "gloss": "«Ёжик в тумане» — мультфильм Юрия Норштейна 1975 года",
+        "id": "cin-ru-hedgehog-fog",
+        "zh": "迷雾中的小刺猬"
+      },
+      {
+        "gloss": "«Ну, погоди!» — советский мультсериал о Волке и Зайце",
+        "id": "cin-ru-nu-pogodi",
+        "zh": "兔子，等着瞧"
+      },
+      {
+        "gloss": "«Винни-Пух» — советский мультфильм 1969 года",
+        "id": "cin-ru-winnie-pooh",
+        "zh": "小熊维尼"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется советский кукольный мультфильм Романа Качанова 1969 года по книге Эдуарда Успенского?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-ru-hedgehog-fog",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "“联盟动画电影”制片厂出品的7部经典动画 — 北京俄罗斯文化中心",
+        "url": "https://russianculture.cn/ru/zh/联盟动画电影制片厂出品的7部经典动画/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Ёжик в тумане — Культура.РФ",
+        "url": "https://www.culture.ru/live/movies/643/yozhik-v-tumane"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Ёжик в тумане» (迷雾中的小刺猬). Мультфильм Юрия Норштейна вышел в 1975 году. Его литературная основа — сказка Сергея Козлова."
+    },
+    "id": "cinema-q28",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-ru-hedgehog-fog",
+        "zh": "迷雾中的小刺猬"
+      },
+      {
+        "gloss": "Принцесса Железный Веер",
+        "id": "cin-cn-tieshangongzhu",
+        "zh": "铁扇公主"
+      },
+      {
+        "gloss": "Переполох в небесных чертогах",
+        "id": "cin-cn-danaotiangong",
+        "zh": "大闹天宫"
+      },
+      {
+        "gloss": "Головастики ищут маму",
+        "id": "cin-cn-xiaokedouzhaomama",
+        "zh": "小蝌蚪找妈妈"
+      },
+      {
+        "gloss": "Братья-тыквы",
+        "id": "cin-cn-huluxiongdi",
+        "zh": "葫芦兄弟"
+      },
+      {
+        "gloss": "Истории Афанти",
+        "id": "cin-cn-afantidegushi",
+        "zh": "阿凡提的故事"
+      },
+      {
+        "gloss": "Три монаха",
+        "id": "cin-cn-sangeheshang",
+        "zh": "三个和尚"
+      },
+      {
+        "gloss": "Нэчжа покоряет море",
+        "id": "cin-cn-nezhanaohai",
+        "zh": "哪吒闹海"
+      },
+      {
+        "gloss": "Нэчжа: Рождение демона",
+        "id": "cin-cn-nezhamotongjiangshi",
+        "zh": "哪吒之魔童降世"
+      },
+      {
+        "gloss": "Король обезьян: Возвращение героя",
+        "id": "cin-cn-dashengguilai",
+        "zh": "西游记之大圣归来"
+      },
+      {
+        "gloss": "Девятицветный олень",
+        "id": "cin-cn-jiuselu",
+        "zh": "九色鹿"
+      },
+      {
+        "gloss": "Легенда о небесной книге",
+        "id": "cin-cn-tianshuqitan",
+        "zh": "天书奇谭"
+      },
+      {
+        "gloss": "«Крокодил Гена» — кукольный мультфильм 1969 года",
+        "id": "cin-ru-crocodile-gena",
+        "zh": "鳄鱼根纳"
+      },
+      {
+        "gloss": "«Ну, погоди!» — советский мультсериал о Волке и Зайце",
+        "id": "cin-ru-nu-pogodi",
+        "zh": "兔子，等着瞧"
+      },
+      {
+        "gloss": "«Винни-Пух» — советский мультфильм 1969 года",
+        "id": "cin-ru-winnie-pooh",
+        "zh": "小熊维尼"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется советский мультфильм Юрия Норштейна 1975 года по сказке Сергея Козлова?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-ru-nu-pogodi",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "北京儿童夏令营做客俄罗斯文化中心 — 北京俄罗斯文化中心",
+        "url": "https://russianculture.cn/ru/1719/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "5 героев мультиков с голосами известных актеров — Культура.РФ",
+        "url": "https://www.culture.ru/materials/256971/5-geroev-multikov-s-golosami-izvestnykh-akterov"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Ну, погоди!» (兔子，等着瞧). Главные персонажи мультсериала — Волк и Заяц. Анатолий Папанов озвучивал Волка с 1969 года."
+    },
+    "id": "cinema-q29",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-ru-nu-pogodi",
+        "zh": "兔子，等着瞧"
+      },
+      {
+        "gloss": "Принцесса Железный Веер",
+        "id": "cin-cn-tieshangongzhu",
+        "zh": "铁扇公主"
+      },
+      {
+        "gloss": "Переполох в небесных чертогах",
+        "id": "cin-cn-danaotiangong",
+        "zh": "大闹天宫"
+      },
+      {
+        "gloss": "Головастики ищут маму",
+        "id": "cin-cn-xiaokedouzhaomama",
+        "zh": "小蝌蚪找妈妈"
+      },
+      {
+        "gloss": "Братья-тыквы",
+        "id": "cin-cn-huluxiongdi",
+        "zh": "葫芦兄弟"
+      },
+      {
+        "gloss": "Истории Афанти",
+        "id": "cin-cn-afantidegushi",
+        "zh": "阿凡提的故事"
+      },
+      {
+        "gloss": "Три монаха",
+        "id": "cin-cn-sangeheshang",
+        "zh": "三个和尚"
+      },
+      {
+        "gloss": "Нэчжа покоряет море",
+        "id": "cin-cn-nezhanaohai",
+        "zh": "哪吒闹海"
+      },
+      {
+        "gloss": "Нэчжа: Рождение демона",
+        "id": "cin-cn-nezhamotongjiangshi",
+        "zh": "哪吒之魔童降世"
+      },
+      {
+        "gloss": "Король обезьян: Возвращение героя",
+        "id": "cin-cn-dashengguilai",
+        "zh": "西游记之大圣归来"
+      },
+      {
+        "gloss": "Девятицветный олень",
+        "id": "cin-cn-jiuselu",
+        "zh": "九色鹿"
+      },
+      {
+        "gloss": "Легенда о небесной книге",
+        "id": "cin-cn-tianshuqitan",
+        "zh": "天书奇谭"
+      },
+      {
+        "gloss": "«Крокодил Гена» — кукольный мультфильм 1969 года",
+        "id": "cin-ru-crocodile-gena",
+        "zh": "鳄鱼根纳"
+      },
+      {
+        "gloss": "«Ёжик в тумане» — мультфильм Юрия Норштейна 1975 года",
+        "id": "cin-ru-hedgehog-fog",
+        "zh": "迷雾中的小刺猬"
+      },
+      {
+        "gloss": "«Винни-Пух» — советский мультфильм 1969 года",
+        "id": "cin-ru-winnie-pooh",
+        "zh": "小熊维尼"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется советский мультсериал Вячеслава Котёночкина о Волке и Зайце, в котором Волка озвучивал Анатолий Папанов?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
       "optionId": "cr-qinghua",
       "state": "verified"
     },
