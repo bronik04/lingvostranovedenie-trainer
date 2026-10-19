@@ -1,0 +1,1629 @@
+{
+  "reviewedAt": "2026-10-19",
+  "role": "independent fact reviewer",
+  "input": "/Users/bronik04/.codex/worktrees/dossier-cinema/lingvostranovedenie-trainer/data/dossiers/cinema.json",
+  "inputSha256": "e920836356a427f6af08d9b201da0cc7f9edb0a0a72c6fbb76c75d8cb2bf602f",
+  "summary": {
+    "rows": 30,
+    "accept": 25,
+    "fix": 5,
+    "drop": 0,
+    "uniqueUrls": 64,
+    "sourceEntries": 66,
+    "liveFetched": 64,
+    "cacheFallback": 0,
+    "failed": 0,
+    "quoteMatches": 66,
+    "quoteMismatches": 0
+  },
+  "method": "Каждый уникальный URL повторно открыт HTTP-запросом (6 параллельных загрузок); полные исходные HTML и извлечённые тексты сохранены отдельно от сборщиков. Цитаты проверены как непрерывные подстроки после нормализации пробелов. Кодировка People исправлена по meta GB2312. Факты, роли, синопсисы, даты и области версии сопоставлены с полными страницами. Новых вопросов и репозиторных правок нет.",
+  "globalNotes": [
+    "country — согласованная учебная группа, не единственное государство производства; китайская группа включает Тайвань/Гонконг, российская — СССР.",
+    "Две разные официальные/академические страницы есть у каждой строки; требование разных издателей в спецификации отсутствует.",
+    "Отмеченные ошибки других разделов РКЦ/RT/Culture.ru не заимствованы; китайские названия и имена России проверены именно по соответствующим китайским абзацам.",
+    "Вердикт fix относится к указанным полям; остальные populated cells и about принимаются. После удаления спорного director 大闹天宫 из него нельзя строить режиссёрский вопрос.",
+    "Все цитаты ниже — внутренние доказательства фактов; область ручной проверки — таблица, вопросы остаются пустыми."
+  ],
+  "rows": [
+    {
+      "id": "cin-cn-red-sorghum",
+      "verdict": "fix",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "basis"
+      ],
+      "aboutChecked": true,
+      "notes": "Название, Чжан Имоу, две литературные основы, актёры и берлинская награда 1988 подтверждены. Год первого выпуска в строке не заявлен.",
+      "issues": [
+        {
+          "field": "sources[1].title",
+          "problem": "Название источника не совпадает с открытой газетной статьёй.",
+          "action": "replace",
+          "replacement": "Жэньминь жибао (海外版): 红高粱地的朝圣",
+          "evidenceUrls": [
+            "https://paper.people.com.cn/rmrbhwb/html/2013-11/12/content_1323624.htm"
+          ]
+        },
+        {
+          "field": "basis.gloss",
+          "problem": "Выбранные страницы называют два 小说, но не подтверждают жанровую квалификацию обеих вещей как повестей.",
+          "action": "replace",
+          "replacement": "Два произведения Мо Яня — литературная основа фильма",
+          "evidenceUrls": [
+            "https://www.1905.com/mdb/film/48527/"
+          ]
+        },
+        {
+          "field": "name.gloss",
+          "problem": "В выбранных полных страницах явно подтверждена винокурня, но нет полного подтверждения формулировки о сопротивлении вторжению; лучше оставить проверенную литературную привязку.",
+          "action": "replace",
+          "replacement": "«Красный гаолян» — фильм Чжан Имоу по произведениям Мо Яня",
+          "evidenceUrls": [
+            "https://www.1905.com/mdb/film/48527/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.1905.com/mdb/film/48527/",
+          "key": "p00",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://paper.people.com.cn/rmrbhwb/html/2013-11/12/content_1323624.htm",
+          "key": "p01",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Applied exact reviewer correction"
+    },
+    {
+      "id": "cin-cn-concubine",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "basis"
+      ],
+      "aboutChecked": true,
+      "notes": "Карточка 1905 прямо называет роман Ли Бихуа; Cannes подтверждает 1993, двух оперных актёров и разделённую Palme d’or.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.1905.com/mdb/film/57388/",
+          "key": "p02",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.festival-cannes.com/en/f/bawang-bieji/",
+          "key": "p03",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-crouching-tiger",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "basis"
+      ],
+      "aboutChecked": true,
+      "notes": "1905 подтверждает Ли Аня и роман Ван Дулу; Cannes — выпуск 2000, меч, сюжет и Oscar за иностранный фильм 2001. Taiwan/HK/международное производство не противоречат условной китайскоязычной группе.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.1905.com/mdb/film/53745/",
+          "key": "p04",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.festival-cannes.com/en/2019/crouching-tiger-hidden-dragon-ang-lee-s-spectacular-masterpiece/",
+          "key": "p05",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-mood-for-love",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director"
+      ],
+      "aboutChecked": true,
+      "notes": "2000 и награда за мужскую роль — Cannes; 1962, соседи и измена супругов — обе страницы. Новая дата 2025 на 1905 относится к версии для повторного выпуска; она в строку не перенесена.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.1905.com/mdb/film/57802/",
+          "key": "p06",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.festival-cannes.com/en/f/in-the-mood-for-love-3/",
+          "key": "p07",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-wandering-earth",
+      "verdict": "fix",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "basis"
+      ],
+      "aboutChecked": true,
+      "notes": "Го Фань, 2019, рассказ Лю Цысиня, стареющее Солнце и перенос Земли подтверждены. Сведения о приквеле в выбранных страницах не подтверждены.",
+      "issues": [
+        {
+          "field": "about",
+          "problem": "Заключительное утверждение о приквеле 2023 не подтверждается двумя выбранными страницами. Остальной текст подтверждён.",
+          "action": "replace",
+          "replacement": "Фантастический фильм Го Фаня 2019 года по одноимённому рассказу Лю Цысиня. Человечество пытается спасти Землю от стареющего Солнца, переместив саму планету.",
+          "evidenceUrls": [
+            "https://www.xinhuanet.com/politics/2019-02/03/c_1124084032.htm"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.1905.com/mdb/film/2228651/",
+          "key": "p08",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.xinhuanet.com/politics/2019-02/03/c_1124084032.htm",
+          "key": "p09",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Applied exact reviewer correction"
+    },
+    {
+      "id": "cin-cn-still-life",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director"
+      ],
+      "aboutChecked": true,
+      "notes": "2006, Цзя Чжанкэ, Фэнцзе, поиск супругов, переселение из-за плотины и Золотой лев подтверждены. Mulan — официальный каталог показывавшего картину фестиваля, а не агрегатор.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.1905.com/mdb/film/46723/",
+          "key": "p10",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://mulanfestival.com/still-life/",
+          "key": "p11",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-red-peony",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director"
+      ],
+      "aboutChecked": true,
+      "notes": "1931, Чжан Шичуань, Ху Де и жестокий муж — 1905; певица пекинской оперы и первый китайский звуковой фильм — историческая статья Цзянсу. День 1 января из базы не использован.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.1905.com/mdb/film/46965/",
+          "key": "p12",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.jswyw.com/org/xiehui/dy/dypl/201907/t20190705_59306.shtml",
+          "key": "p13",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-to-live",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "basis"
+      ],
+      "aboutChecked": true,
+      "notes": "1994, Чжан Имоу, роман Юй Хуа и семья Фугуя подтверждены; Cannes подтверждает Grand Prix ex-aequo и актёрскую награду. Статья 蒋济永 — научная литературоведческая работа с библиографией, размещённая Союзом писателей.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.1905.com/mdb/film/298218/",
+          "key": "p14",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.festival-cannes.com/en/f/huozhe/",
+          "key": "p15",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.chinawriter.com.cn/n1/2020/0313/c404030-31630564.html",
+          "key": "p16",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-hero",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director"
+      ],
+      "aboutChecked": true,
+      "notes": "2002 — подробная карточка 1905 и отдельная публикация, а не ошибочный заголовок 2004. Безымянный, царь Цинь, три противника и альтернативный рассказ — полный синопсис; Alfred Bauer Prize 2003 — биография Cannes.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.1905.com/mdb/film/2092218/",
+          "key": "p17",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.1905.com/mdb/film/2092218/info/",
+          "key": "p18",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.festival-cannes.com/en/p/yimou-zhang/",
+          "key": "p19",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://m.1905.com/m/news/vivo/1588411.shtml",
+          "key": "p20",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-flying-daggers",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director"
+      ],
+      "aboutChecked": true,
+      "notes": "Вне конкурса Cannes 2004 подтверждено; production 2003 в той же карточке не назван годом премьеры. Поздняя Тан, капитаны и Мэй подтверждены синопсисом.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.1905.com/mdb/film/55963/",
+          "key": "p21",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.festival-cannes.com/en/f/shi-mian-mai-fu-house-of-flying-daggers/",
+          "key": "p22",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-tieshangongzhu",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "basis"
+      ],
+      "aboutChecked": true,
+      "notes": "Версия 1941, анимационный полный метр, эпизод трёх обращений за веером и 西游记 подтверждены архивом и SIFF; статья SIFF о реставрации 2024 прямо различает оригинал 1941.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.shda.gov.cn/dawh/csjy/202512/t20251203_76389.html",
+          "key": "p23",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.siff.com/content?aid=101240607221520568887369504133125233",
+          "key": "p24",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-danaotiangong",
+      "verdict": "fix",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "basis",
+        "technique"
+      ],
+      "aboutChecked": true,
+      "notes": "Оригинальные части завершены в декабре 1961 и сентябре 1964 — архив. 西游记, восстание Сунь Укуна и ручной рисунок подтверждены. Режиссёрская роль Тан Чэн расходится между двумя официальными страницами; см. исправление.",
+      "issues": [
+        {
+          "field": "director",
+          "problem": "Правообладатель печатает обоих как 导演, но Шанхайский архив прямо разводит 万籁鸣导演 и 唐澄副导演. Для бесспорной учебной ячейки удалить необязательный коллективный кредит; не заменять его одним именем без отдельного разрешения расхождения.",
+          "action": "remove",
+          "replacement": null,
+          "evidenceUrls": [
+            "https://www.shda.gov.cn/dawh/csjy/202512/t20251203_76389.html",
+            "https://www.sfi-sh.com/IP/cartoon/27/intro"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.sfi-sh.com/IP/cartoon/27/intro",
+          "key": "p25",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.shda.gov.cn/dawh/csjy/202512/t20251203_76389.html",
+          "key": "p23",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www3.xinhuanet.com/ent/20260122/7adf02a3c414429496ebbe4aea9e0ef4/c.html",
+          "key": "p26",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Applied exact reviewer correction"
+    },
+    {
+      "id": "cin-cn-xiaokedouzhaomama",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "technique"
+      ],
+      "aboutChecked": true,
+      "notes": "1960, трое режиссёров, головастики и лягушка — Китайский киноархив. 水墨动画 и формы животных по Ци Байши — профиль Тэ Вэя 1905 в разделе именно этого фильма.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.cfa.org.cn/cfa/gz/dymlcx/dy/2023060210450315400/index.html",
+          "key": "p27",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://m.1905.com/m/star/workslist/2991904/",
+          "key": "p28",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-huluxiongdi",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "technique"
+      ],
+      "aboutChecked": true,
+      "notes": "Семь братьев, спасение близких, борьба с демонами и единство — официальный правообладатель; бумажная техника — Верховный суд. Три режиссёра приведены в блоке 葫芦兄弟, а не соседнего 葫芦小金刚. Строка не утверждает год/число серий.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.sfi-sh.com/IP/cartoon/25/intro",
+          "key": "p29",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.court.gov.cn/zixun/xiangqing/501281.html",
+          "key": "p30",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-afantidegushi",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "technique"
+      ],
+      "aboutChecked": true,
+      "notes": "Классический кукольный цикл, синьцзянские народные сюжеты, помощь бедным и борьба с баем подтверждены. Совокупный кредит пяти режиссёров — правообладатель. 14 у правообладателя и 13 у 1905 относятся к разному учёту начального фильма; спорное число в строке отсутствует.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.sfi-sh.com/IP/cartoon/15/intro",
+          "key": "p31",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.1905.com/mdb/film/2237524/feature/",
+          "key": "p32",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-sangeheshang",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director"
+      ],
+      "aboutChecked": true,
+      "notes": "1980 и 徐景达 — киноархив; псевдоним 阿达 и отсутствие диалогов — профиль 1905. Совместное тушение пожара и дальнейший набор воды — синопсис архива. Продолжительность 18/20 минут не переносится.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.cfa.org.cn/cfa/gz/dymlcx/dy/2023060210311042322/index.html",
+          "key": "p33",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://m.1905.com/m/star/info/1770708/",
+          "key": "p34",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-nezhanaohai",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "basis"
+      ],
+      "aboutChecked": true,
+      "notes": "Версия 1979, полнометражная анимация, все три режиссёра, 封神演义 и борьба с царём драконов подтверждены. Данные современной картины 2019 сюда не перенесены.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.sfi-sh.com/IP/cartoon/26/intro",
+          "key": "p35",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.1905.com/mdb/film/47890/info/",
+          "key": "p36",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-nezhamotongjiangshi",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "technique"
+      ],
+      "aboutChecked": true,
+      "notes": "2019, 饺子/杨宇, противостояние судьбе и предубеждениям — прямое интервью Синьхуа. Трёхмерность прямо названа в сообщении о споре авторских прав на сайте Минкоммерции; это не вывод из формата IMAX.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.xinhuanet.com/politics/2019-07/27/c_1124806609.htm",
+          "key": "p37",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.1905.com/mdb/film/2243707/info/",
+          "key": "p38",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://ipr.mofcom.gov.cn/article/gnxw/bq/202104/1961068.html",
+          "key": "p39",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-dashengguilai",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "basis",
+        "technique"
+      ],
+      "aboutChecked": true,
+      "notes": "2015, Тянь Сяопэн, роман У Чэнъэня, Цзян Люэр и освобождение Сунь Укуна подтверждены. Трёхмерность — описание производства. Три URL одного официального издателя удовлетворяют условию различных страниц; независимость издателей отдельно не заявлена.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://m.1905.com/m/film/info/2224336.shtml",
+          "key": "p40",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.1905.com/news/20150617/902681.shtml",
+          "key": "p41",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.1905.com/mdb/film/2224336/feature/",
+          "key": "p42",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-jiuselu",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director"
+      ],
+      "aboutChecked": true,
+      "notes": "1981 и оба режиссёра — киноархив и правообладатель; роспись 鹿王本生图 и предательство спасённого — правообладатель. В basis роспись не подменяет литературный текст.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.sfi-sh.com/IP/cartoon/21/intro",
+          "key": "p43",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.cfa.org.cn/cfa/gz/dymlcx/dy/2023060210294445513/index.html",
+          "key": "p44",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-cn-tianshuqitan",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "basis"
+      ],
+      "aboutChecked": true,
+      "notes": "1983 отделён от 4K-реставрации 2021; оба режиссёра, 袁公/蛋生 и литературный источник подтверждены. 三遂平妖传 — полное название из 1905, 平妖传 — сокращение на сайте правообладателя.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.sfi-sh.com/IP/cartoon/23/intro",
+          "key": "p45",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.1905.com/mdb/film/2117868/info/",
+          "key": "p46",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-ru-potemkin",
+      "verdict": "fix",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director"
+      ],
+      "aboutChecked": true,
+      "notes": "战舰波将金号, 爱森斯坦 и 1925 есть в китайском тексте; Мосфильм подтверждает режиссёра, восстание 1905, художественный тип и немой звук. Китайская страница — газетная перепечатка, не научная статья.",
+      "issues": [
+        {
+          "field": "sources[0].authority",
+          "problem": "南开标明转载《中华读书报》，它不是学术论文；可按官方报刊材料保留，不应把大学转载自动等同于 academic.",
+          "action": "replace",
+          "replacement": "official",
+          "evidenceUrls": [
+            "https://news.nankai.edu.cn/mtnk/system/2016/07/25/000290554.shtml"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://news.nankai.edu.cn/mtnk/system/2016/07/25/000290554.shtml",
+          "key": "p47",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.mosfilm.ru/cinema/films/bronenosets-potemkin-1905-god-/",
+          "key": "p48",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Applied exact reviewer correction"
+    },
+    {
+      "id": "cin-ru-solaris",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "basis"
+      ],
+      "aboutChecked": true,
+      "notes": "飞向太空, 塔尔科夫斯基 и 1972 — научная статья Лю Цина с библиографией на сайте Нанкинского университета. Мосфильм подтверждает роман Лема и прибытие Криса Кельвина на станцию. 同名小说 — описательное выражение, не китайское название романа.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://ptextold.nju.edu.cn/be/6d/c12244a245357/page.htm",
+          "key": "p49",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.mosfilm.ru/cinema/films/solyaris/",
+          "key": "p50",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-ru-irony-of-fate",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director"
+      ],
+      "aboutChecked": true,
+      "notes": "命运的捉弄, 梁赞诺夫 и премьера 1 января 1976 подтверждены прямым репортажем People. Мосфильм подтверждает художественный телефильм, комедию, Рязанова и 1976. Год производства 1975 не смешан с телепремьерой.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://world.people.com.cn/n/2013/0103/c1002-20076211.html",
+          "key": "p51",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.mosfilm.ru/cinema/films/ironiya-sudby-ili-s-legkim-parom/",
+          "key": "p52",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-ru-war-and-peace",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "basis"
+      ],
+      "aboutChecked": true,
+      "notes": "战争与和平 и 谢尔盖·邦达尔丘克 подтверждены Синьхуа; Мосфильм подтверждает 1965–1967, четыре части и роман Толстого. Название и ref basis соответствуют одноимённому роману; это советское наследие в российской учебной группе.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.xinhuanet.com/world/2015-05/05/c_1115187249.htm",
+          "key": "p53",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.mosfilm.ru/about/news/voyna-i-mir-premera-otrestavrirovannoy-versii-vo-frantsii/",
+          "key": "p54",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-ru-moscow-tears",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director"
+      ],
+      "aboutChecked": true,
+      "notes": "莫斯科不相信眼泪 и 弗拉基米尔·缅绍夫 прямо связаны на китайской странице телеканала; художественный тип, режиссёр и 1979 подтверждены Мосфильмом.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://www.katyusha.tv/zh-hans/node/538",
+          "key": "p55",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.mosfilm.ru/cinema/films/moskva-slezam-ne-verit/",
+          "key": "p56",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-ru-crocodile-gena",
+      "verdict": "fix",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "basis",
+        "technique"
+      ],
+      "aboutChecked": true,
+      "notes": "鳄鱼根纳, 1969 и 《鳄鱼根纳和他的朋友们》 — официальный РКЦ; кукольность, Качанов и книга Успенского — страница муниципального учреждения культуры. Это афиша учреждения, а не редакционная фильмографическая карточка Culture.ru; статус источника отражён в примечании.",
+      "issues": [
+        {
+          "field": "sources[1].title",
+          "problem": "Открытая страница указывает поставщиком районный Дом культуры; Киятский сельский дом культуры в её текущем тексте не назван.",
+          "action": "replace",
+          "replacement": "Крокодил Гена — Культура.РФ (МБУ «Районный Дом культуры» Буинского МР)",
+          "evidenceUrls": [
+            "https://www.culture.ru/events/1570737/krokodil-gena"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://russianculture.cn/ru/zh/联盟动画电影制片厂出品的7部经典动画/",
+          "key": "p57",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.culture.ru/events/1570737/krokodil-gena",
+          "key": "p58",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Applied exact reviewer correction"
+    },
+    {
+      "id": "cin-ru-hedgehog-fog",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "director",
+        "basis"
+      ],
+      "aboutChecked": true,
+      "notes": "迷雾中的小刺猬, 尤里·诺尔施泰因, 谢尔盖·科兹洛夫 и 1975 — официальный РКЦ; год, режиссёр и одноимённая сказка дополнительно подтверждены фильмовой страницей Culture.ru.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://russianculture.cn/ru/zh/联盟动画电影制片厂出品的7部经典动画/",
+          "key": "p57",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.culture.ru/live/movies/643/yozhik-v-tumane",
+          "key": "p59",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-ru-nu-pogodi",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind"
+      ],
+      "aboutChecked": true,
+      "notes": "兔子，等着瞧 — собственный отчёт РКЦ о показе 2014, поэтому это классический сериал. Котёночкин, Волк/Заяц и начало озвучивания Папановым 1969 подтверждены Culture.ru. Ошибочное расширение озвучивания до 1994 в самой статье в строку не перенесено.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://russianculture.cn/ru/1719/",
+          "key": "p60",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://www.culture.ru/materials/256971/5-geroev-multikov-s-golosami-izvestnykh-akterov",
+          "key": "p61",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    },
+    {
+      "id": "cin-ru-winnie-pooh",
+      "verdict": "accept",
+      "checkedCells": [
+        "name",
+        "country",
+        "kind",
+        "basis"
+      ],
+      "aboutChecked": true,
+      "notes": "RT прямо связывает 小熊维尼 с советским фильмом 1969 и Милном; фестивальная карточка подтверждает 1969/СССР/анимацию и английского автора. Ненадёжные даты/касса других картин на странице RT не использованы.",
+      "issues": [],
+      "sources": [
+        {
+          "url": "https://nihaoeluosi.cn/culture/246595-soyuzmultfilm-iconic-films",
+          "key": "p62",
+          "mode": "live",
+          "quoteMatch": true
+        },
+        {
+          "url": "https://goldenravenfilmfest.ru/vinni_puh",
+          "key": "p63",
+          "mode": "live",
+          "quoteMatch": true
+        }
+      ],
+      "resolution": "Accepted without changes"
+    }
+  ],
+  "urlAudit": [
+    {
+      "key": "p00",
+      "url": "https://www.1905.com/mdb/film/48527/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/48527/",
+      "characters": 3180,
+      "sha256": "0bce332dd2cf0ca43f23167480944a01152cbee5f517b6a17d69f30c26ab2980",
+      "mode": "live"
+    },
+    {
+      "key": "p01",
+      "url": "https://paper.people.com.cn/rmrbhwb/html/2013-11/12/content_1323624.htm",
+      "status": 200,
+      "finalUrl": "https://paper.people.com.cn/rmrbhwb/html/2013-11/12/content_1323624.htm",
+      "characters": 3870,
+      "sha256": "8cf1f1c3f0f8e7faaaf1fbca6af68d86e35a4fcd5e05c383509057b1c170ea01",
+      "mode": "live"
+    },
+    {
+      "key": "p02",
+      "url": "https://www.1905.com/mdb/film/57388/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/57388/",
+      "characters": 3625,
+      "sha256": "1f725a973285d81fe707f70df2f5ed151061048a33e5c048fdeb8f4551ed35e5",
+      "mode": "live"
+    },
+    {
+      "key": "p03",
+      "url": "https://www.festival-cannes.com/en/f/bawang-bieji/",
+      "status": 200,
+      "finalUrl": "https://www.festival-cannes.com/en/f/bawang-bieji/",
+      "characters": 3347,
+      "sha256": "307658415e415b21a0e1d1f943ee735344c3f469a9b3e256fed8e5d8f876a422",
+      "mode": "live"
+    },
+    {
+      "key": "p04",
+      "url": "https://www.1905.com/mdb/film/53745/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/53745/",
+      "characters": 2730,
+      "sha256": "15548628170766ba621ba2b713d2a62c1d0b067a72ecbd1ee6631f5cf1c632e9",
+      "mode": "live"
+    },
+    {
+      "key": "p05",
+      "url": "https://www.festival-cannes.com/en/2019/crouching-tiger-hidden-dragon-ang-lee-s-spectacular-masterpiece/",
+      "status": 200,
+      "finalUrl": "https://www.festival-cannes.com/en/2019/crouching-tiger-hidden-dragon-ang-lee-s-spectacular-masterpiece/",
+      "characters": 4148,
+      "sha256": "1803d593e50d7debfc00d16b0c00f3d581531b8e303955e3b2e2ac5a9af228ef",
+      "mode": "live"
+    },
+    {
+      "key": "p06",
+      "url": "https://www.1905.com/mdb/film/57802/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/57802/",
+      "characters": 3485,
+      "sha256": "982f393410c82df935d7a62ebe3b78707f5812d5bfc74037d46a7d7f0faa9c1d",
+      "mode": "live"
+    },
+    {
+      "key": "p07",
+      "url": "https://www.festival-cannes.com/en/f/in-the-mood-for-love-3/",
+      "status": 200,
+      "finalUrl": "https://www.festival-cannes.com/en/f/in-the-mood-for-love-3/",
+      "characters": 3946,
+      "sha256": "89d79ee26141763bde16d70ef5e3640199d0c854c6b1b991b83029088bbe1761",
+      "mode": "live"
+    },
+    {
+      "key": "p08",
+      "url": "https://www.1905.com/mdb/film/2228651/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/2228651/",
+      "characters": 3221,
+      "sha256": "69519814a9bb445e421ce6e8b4a9e7a80ed05799f57ef140f811ad040effa57a",
+      "mode": "live"
+    },
+    {
+      "key": "p09",
+      "url": "https://www.xinhuanet.com/politics/2019-02/03/c_1124084032.htm",
+      "status": 200,
+      "finalUrl": "https://www.xinhuanet.com/politics/2019-02/03/c_1124084032.htm",
+      "characters": 2951,
+      "sha256": "dc1abb9fbed49765c329cf1eb9a348cdfcc273d455ea669377b8f7e73cafe051",
+      "mode": "live"
+    },
+    {
+      "key": "p10",
+      "url": "https://www.1905.com/mdb/film/46723/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/46723/",
+      "characters": 1620,
+      "sha256": "a0afc61384ce243050bf62c6aa8ce00ee809bee2de2d8d96ca1b128692dadbfa",
+      "mode": "live"
+    },
+    {
+      "key": "p11",
+      "url": "https://mulanfestival.com/still-life/",
+      "status": 200,
+      "finalUrl": "https://mulanfestival.com/still-life/",
+      "characters": 3946,
+      "sha256": "d77a9ca1df5bd6d148e34a77e0571ff55cf9a1e5da4b9fae621116df9761aa70",
+      "mode": "live"
+    },
+    {
+      "key": "p12",
+      "url": "https://www.1905.com/mdb/film/46965/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/46965/",
+      "characters": 854,
+      "sha256": "2fc1f762483813b058a0fbed86df65a59d40113643c3db92ba8e2ebcbf59a93e",
+      "mode": "live"
+    },
+    {
+      "key": "p13",
+      "url": "https://www.jswyw.com/org/xiehui/dy/dypl/201907/t20190705_59306.shtml",
+      "status": 200,
+      "finalUrl": "https://www.jswyw.com/org/xiehui/dy/dypl/201907/t20190705_59306.shtml",
+      "characters": 8374,
+      "sha256": "78cf7d08d2cdeacd6cac0398b6d7749886e767046ff2989bd4efa71212f97ebc",
+      "mode": "live"
+    },
+    {
+      "key": "p14",
+      "url": "https://www.1905.com/mdb/film/298218/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/298218/",
+      "characters": 1649,
+      "sha256": "4c0aeff5e5d2756f0842d29ae733262194bcb78c146999d7472dea54927b9060",
+      "mode": "live"
+    },
+    {
+      "key": "p15",
+      "url": "https://www.festival-cannes.com/en/f/huozhe/",
+      "status": 200,
+      "finalUrl": "https://www.festival-cannes.com/en/f/huozhe/",
+      "characters": 3368,
+      "sha256": "12ba919264d1b3ccb0dbcd80b3800f8a86a1963276f554c790cefe3ba742706c",
+      "mode": "live"
+    },
+    {
+      "key": "p16",
+      "url": "https://www.chinawriter.com.cn/n1/2020/0313/c404030-31630564.html",
+      "status": 200,
+      "finalUrl": "https://www.chinawriter.com.cn/n1/2020/0313/c404030-31630564.html",
+      "characters": 19968,
+      "sha256": "82919c0839c813236692ef0c6efb1f9733d3b8b95d709d9f74915eedc7544568",
+      "mode": "live"
+    },
+    {
+      "key": "p17",
+      "url": "https://www.1905.com/mdb/film/2092218/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/2092218/",
+      "characters": 3422,
+      "sha256": "c487b4a6640936b0742d64dfa81921ba63173ed7ba575eeda64703fbf6446166",
+      "mode": "live"
+    },
+    {
+      "key": "p18",
+      "url": "https://www.1905.com/mdb/film/2092218/info/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/2092218/info/",
+      "characters": 2410,
+      "sha256": "9b8bbbce677ed70ff6b22bc73ec0a45284aae9c5df434cec1b052bde55da24eb",
+      "mode": "live"
+    },
+    {
+      "key": "p19",
+      "url": "https://www.festival-cannes.com/en/p/yimou-zhang/",
+      "status": 200,
+      "finalUrl": "https://www.festival-cannes.com/en/p/yimou-zhang/",
+      "characters": 4112,
+      "sha256": "e4ec138ee89c6710cb42c0d51146eaa9d97be291ce86ca4835bfa7b0ee145019",
+      "mode": "live"
+    },
+    {
+      "key": "p20",
+      "url": "https://m.1905.com/m/news/vivo/1588411.shtml",
+      "status": 200,
+      "finalUrl": "https://m.1905.com/m/news/vivo/1588411.shtml",
+      "characters": 1233,
+      "sha256": "ec94c8c244353910b9ee72ff1055a392d4e7b1460dcaa903f2552e76f08b0a84",
+      "mode": "live"
+    },
+    {
+      "key": "p21",
+      "url": "https://www.1905.com/mdb/film/55963/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/55963/",
+      "characters": 4427,
+      "sha256": "0f5ae10d53be14132017ce14bb6020b09f24658123e71e55d5d9297e9ab57431",
+      "mode": "live"
+    },
+    {
+      "key": "p22",
+      "url": "https://www.festival-cannes.com/en/f/shi-mian-mai-fu-house-of-flying-daggers/",
+      "status": 200,
+      "finalUrl": "https://www.festival-cannes.com/en/f/shi-mian-mai-fu-house-of-flying-daggers/",
+      "characters": 4578,
+      "sha256": "ecc0fd26d5afb1ad80d856300620c924422e0c1acfb8ca2c7aedf993a0db8945",
+      "mode": "live"
+    },
+    {
+      "key": "p23",
+      "url": "https://www.shda.gov.cn/dawh/csjy/202512/t20251203_76389.html",
+      "status": 200,
+      "finalUrl": "https://www.shda.gov.cn/dawh/csjy/202512/t20251203_76389.html",
+      "characters": 4651,
+      "sha256": "24a62bc973bee6197f07d459a635eb32b61079ad8407f2931c9484df479e098f",
+      "mode": "live"
+    },
+    {
+      "key": "p24",
+      "url": "https://www.siff.com/content?aid=101240607221520568887369504133125233",
+      "status": 200,
+      "finalUrl": "https://www.siff.com/content?aid=101240607221520568887369504133125233",
+      "characters": 2115,
+      "sha256": "56cc0421143a8b3b51373a0161343c77c902f95e21cc529f1c2be83413739406",
+      "mode": "live"
+    },
+    {
+      "key": "p25",
+      "url": "https://www.sfi-sh.com/IP/cartoon/27/intro",
+      "status": 200,
+      "finalUrl": "https://www.sfi-sh.com/IP/cartoon/27/intro",
+      "characters": 6321,
+      "sha256": "496ee726e9e06ea14c472c2850d2bb95356293b06e160f3f7f668d8b35432eae",
+      "mode": "live"
+    },
+    {
+      "key": "p26",
+      "url": "https://www3.xinhuanet.com/ent/20260122/7adf02a3c414429496ebbe4aea9e0ef4/c.html",
+      "status": 200,
+      "finalUrl": "https://www3.xinhuanet.com/ent/20260122/7adf02a3c414429496ebbe4aea9e0ef4/c.html",
+      "characters": 1349,
+      "sha256": "13f34772b4611f8234b9c028b466c45ff0755ad956b37b2a8042d4945afb67d4",
+      "mode": "live"
+    },
+    {
+      "key": "p27",
+      "url": "https://www.cfa.org.cn/cfa/gz/dymlcx/dy/2023060210450315400/index.html",
+      "status": 200,
+      "finalUrl": "https://www.cfa.org.cn/cfa/gz/dymlcx/dy/2023060210450315400/index.html",
+      "characters": 993,
+      "sha256": "3a02b7cb9fcbe97009ddc786033e027cd616524f0b661d7636454621c1f5acdd",
+      "mode": "live"
+    },
+    {
+      "key": "p28",
+      "url": "https://m.1905.com/m/star/workslist/2991904/",
+      "status": 200,
+      "finalUrl": "https://m.1905.com/m/star/workslist/2991904/",
+      "characters": 4889,
+      "sha256": "539df4ee859e338b83e4f68869847f7de3203bf6afba28dcde7dd65c67d80d49",
+      "mode": "live"
+    },
+    {
+      "key": "p29",
+      "url": "https://www.sfi-sh.com/IP/cartoon/25/intro",
+      "status": 200,
+      "finalUrl": "https://www.sfi-sh.com/IP/cartoon/25/intro",
+      "characters": 5080,
+      "sha256": "07f9f16c7689f277bffece9c74c46b57460079fcd7a28ee4d9512b89effecfe7",
+      "mode": "live"
+    },
+    {
+      "key": "p30",
+      "url": "https://www.court.gov.cn/zixun/xiangqing/501281.html",
+      "status": 200,
+      "finalUrl": "https://www.court.gov.cn/zixun/xiangqing/501281.html",
+      "characters": 2035,
+      "sha256": "5539d4a94a9b8c910c4afc2a839e5460a45803bcbf75f6b7348e538887552594",
+      "mode": "live"
+    },
+    {
+      "key": "p31",
+      "url": "https://www.sfi-sh.com/IP/cartoon/15/intro",
+      "status": 200,
+      "finalUrl": "https://www.sfi-sh.com/IP/cartoon/15/intro",
+      "characters": 1023,
+      "sha256": "1066407453ba9dd59c413376356a4a73337f1da031e179f45730b9cf52d86282",
+      "mode": "live"
+    },
+    {
+      "key": "p32",
+      "url": "https://www.1905.com/mdb/film/2237524/feature/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/2237524/feature/",
+      "characters": 1495,
+      "sha256": "971ef7ef7c072252aa90b7a3986456bc66898eae7e713d1b28cd8fb245bfc276",
+      "mode": "live"
+    },
+    {
+      "key": "p33",
+      "url": "https://www.cfa.org.cn/cfa/gz/dymlcx/dy/2023060210311042322/index.html",
+      "status": 200,
+      "finalUrl": "https://www.cfa.org.cn/cfa/gz/dymlcx/dy/2023060210311042322/index.html",
+      "characters": 965,
+      "sha256": "febe963f6970afa7f5d80c6793c6601e18a99e8707f079614fac8f9e09f19c7e",
+      "mode": "live"
+    },
+    {
+      "key": "p34",
+      "url": "https://m.1905.com/m/star/info/1770708/",
+      "status": 200,
+      "finalUrl": "https://m.1905.com/m/star/info/1770708/",
+      "characters": 1886,
+      "sha256": "c4ba1947b17b3bdfc5430a89908d0ef9671b3500d6fae28704840d64d489ec15",
+      "mode": "live"
+    },
+    {
+      "key": "p35",
+      "url": "https://www.sfi-sh.com/IP/cartoon/26/intro",
+      "status": 200,
+      "finalUrl": "https://www.sfi-sh.com/IP/cartoon/26/intro",
+      "characters": 2843,
+      "sha256": "5359f0d7653da47afbf36b88c7b760bd4f369450b9bb4a2edc718370811da23a",
+      "mode": "live"
+    },
+    {
+      "key": "p36",
+      "url": "https://www.1905.com/mdb/film/47890/info/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/47890/info/",
+      "characters": 1356,
+      "sha256": "d1a09ae97308abd5aea41d628394506b1e11bc4bb769f12d50471d4e2953fd84",
+      "mode": "live"
+    },
+    {
+      "key": "p37",
+      "url": "https://www.xinhuanet.com/politics/2019-07/27/c_1124806609.htm",
+      "status": 200,
+      "finalUrl": "https://www.xinhuanet.com/politics/2019-07/27/c_1124806609.htm",
+      "characters": 1738,
+      "sha256": "cc5385dff27f8a3feb931d8f6e6573e98cb218de57bf241213c17176f10f8a0b",
+      "mode": "live"
+    },
+    {
+      "key": "p38",
+      "url": "https://www.1905.com/mdb/film/2243707/info/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/2243707/info/",
+      "characters": 1087,
+      "sha256": "a771879679f8a0dab2d31664ca042a5c10d6f2702cc2017f8776a7b067f71251",
+      "mode": "live"
+    },
+    {
+      "key": "p39",
+      "url": "https://ipr.mofcom.gov.cn/article/gnxw/bq/202104/1961068.html",
+      "status": 200,
+      "finalUrl": "https://ipr.mofcom.gov.cn/article/gnxw/bq/202104/1961068.html",
+      "characters": 2275,
+      "sha256": "45b701bfad24150dc67da005f00b34741f5914e2d7b8f059f1e1b89be8381535",
+      "mode": "live"
+    },
+    {
+      "key": "p40",
+      "url": "https://m.1905.com/m/film/info/2224336.shtml",
+      "status": 200,
+      "finalUrl": "https://m.1905.com/m/film/info/2224336.shtml",
+      "characters": 963,
+      "sha256": "ac6396e88067feea8a162411d9a2924e350c1b4b2586831e47a22cf48f2b3501",
+      "mode": "live"
+    },
+    {
+      "key": "p41",
+      "url": "https://www.1905.com/news/20150617/902681.shtml",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/news/20150617/902681.shtml",
+      "characters": 17780,
+      "sha256": "385055c203cf8a3332c68d723cb646e3ef3d1d39f86d99e319e8d3e2cc0edbe3",
+      "mode": "live"
+    },
+    {
+      "key": "p42",
+      "url": "https://www.1905.com/mdb/film/2224336/feature/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/2224336/feature/",
+      "characters": 1473,
+      "sha256": "28140b420c3bf595939663fb84b7025d2db97d15ae0c201393316fe644a77651",
+      "mode": "live"
+    },
+    {
+      "key": "p43",
+      "url": "https://www.sfi-sh.com/IP/cartoon/21/intro",
+      "status": 200,
+      "finalUrl": "https://www.sfi-sh.com/IP/cartoon/21/intro",
+      "characters": 996,
+      "sha256": "638762ace068959eebf3d0a00a6003e31e6bb744b370d7d2061cf4e7f2fa67ba",
+      "mode": "live"
+    },
+    {
+      "key": "p44",
+      "url": "https://www.cfa.org.cn/cfa/gz/dymlcx/dy/2023060210294445513/index.html",
+      "status": 200,
+      "finalUrl": "https://www.cfa.org.cn/cfa/gz/dymlcx/dy/2023060210294445513/index.html",
+      "characters": 975,
+      "sha256": "15180327c22c89742e62b4a8cde8fcaee79391ef6a5a17fd85e926451b34db6c",
+      "mode": "live"
+    },
+    {
+      "key": "p45",
+      "url": "https://www.sfi-sh.com/IP/cartoon/23/intro",
+      "status": 200,
+      "finalUrl": "https://www.sfi-sh.com/IP/cartoon/23/intro",
+      "characters": 1303,
+      "sha256": "249feeb4da96ea08dd097ab7c938faffbd354459360f6f316f2d616c92171da5",
+      "mode": "live"
+    },
+    {
+      "key": "p46",
+      "url": "https://www.1905.com/mdb/film/2117868/info/",
+      "status": 200,
+      "finalUrl": "https://www.1905.com/mdb/film/2117868/info/",
+      "characters": 1450,
+      "sha256": "f2e55fc328758d0233737cbfdce17fcec0d0a1a12d9c7fa5b9b8d1dbeb166330",
+      "mode": "live"
+    },
+    {
+      "key": "p47",
+      "url": "https://news.nankai.edu.cn/mtnk/system/2016/07/25/000290554.shtml",
+      "status": 200,
+      "finalUrl": "https://news.nankai.edu.cn/mtnk/system/2016/07/25/000290554.shtml",
+      "characters": 3616,
+      "sha256": "a438f52a77f47b3bf1d91a0b3e8d49924a30f035c95ab705becbb891c7ee9f29",
+      "mode": "live"
+    },
+    {
+      "key": "p48",
+      "url": "https://www.mosfilm.ru/cinema/films/bronenosets-potemkin-1905-god-/",
+      "status": 200,
+      "finalUrl": "https://www.mosfilm.ru/cinema/films/bronenosets-potemkin-1905-god-/",
+      "characters": 4059,
+      "sha256": "7b965d10aca7337376c0aa3416d57467fb1da63a44e5122a58152ddb0c63ecda",
+      "mode": "live"
+    },
+    {
+      "key": "p49",
+      "url": "https://ptextold.nju.edu.cn/be/6d/c12244a245357/page.htm",
+      "status": 200,
+      "finalUrl": "https://ptextold.nju.edu.cn/be/6d/c12244a245357/page.htm",
+      "characters": 5449,
+      "sha256": "9981f6e66396fc0a4b7fc774f0fdf9976744e0fcf7da87c75097b76418609379",
+      "mode": "live"
+    },
+    {
+      "key": "p50",
+      "url": "https://www.mosfilm.ru/cinema/films/solyaris/",
+      "status": 200,
+      "finalUrl": "https://www.mosfilm.ru/cinema/films/solyaris/",
+      "characters": 3654,
+      "sha256": "dec7062853f0ea0ea138ee2f8464880cdd2cd912b7a389d9d5ebd6aa19752694",
+      "mode": "live"
+    },
+    {
+      "key": "p51",
+      "url": "https://world.people.com.cn/n/2013/0103/c1002-20076211.html",
+      "status": 200,
+      "finalUrl": "https://world.people.com.cn/n/2013/0103/c1002-20076211.html",
+      "characters": 3350,
+      "sha256": "585f2ac38503c1b4bc8db82a53d34a138143d243f7c2ea58964ef01ec6eb5386",
+      "mode": "live",
+      "decoding": "GB18030 from HTML meta GB2312; HTTP charset was misleading"
+    },
+    {
+      "key": "p52",
+      "url": "https://www.mosfilm.ru/cinema/films/ironiya-sudby-ili-s-legkim-parom/",
+      "status": 200,
+      "finalUrl": "https://www.mosfilm.ru/cinema/films/ironiya-sudby-ili-s-legkim-parom/",
+      "characters": 4205,
+      "sha256": "94844653947ffd63340a2d9c2b68b696cf28001b504f992313babdbbdd6c49e9",
+      "mode": "live"
+    },
+    {
+      "key": "p53",
+      "url": "https://www.xinhuanet.com/world/2015-05/05/c_1115187249.htm",
+      "status": 200,
+      "finalUrl": "https://www.xinhuanet.com/world/2015-05/05/c_1115187249.htm",
+      "characters": 1527,
+      "sha256": "405e4f2f694445a9fabb58248908a7502df970fb932764e023f6a905be183adf",
+      "mode": "live"
+    },
+    {
+      "key": "p54",
+      "url": "https://www.mosfilm.ru/about/news/voyna-i-mir-premera-otrestavrirovannoy-versii-vo-frantsii/",
+      "status": 200,
+      "finalUrl": "https://www.mosfilm.ru/about/news/voyna-i-mir-premera-otrestavrirovannoy-versii-vo-frantsii/",
+      "characters": 5275,
+      "sha256": "e4df8914cdab9e70b627fbf0e9fc6b1a885f4797113d79e421cbc742df535912",
+      "mode": "live"
+    },
+    {
+      "key": "p55",
+      "url": "https://www.katyusha.tv/zh-hans/node/538",
+      "status": 200,
+      "finalUrl": "https://www.katyusha.tv/zh-hans/node/538",
+      "characters": 2247,
+      "sha256": "fc561428968a63a5c07107a1f455f7b4859a4213a64cd7285cd2ed94ad0a2dcb",
+      "mode": "live"
+    },
+    {
+      "key": "p56",
+      "url": "https://www.mosfilm.ru/cinema/films/moskva-slezam-ne-verit/",
+      "status": 200,
+      "finalUrl": "https://www.mosfilm.ru/cinema/films/moskva-slezam-ne-verit/",
+      "characters": 4413,
+      "sha256": "dc10f504637a697d4d92034b62233d02da8ea6f094ca71ff12ca049c6e8b1952",
+      "mode": "live"
+    },
+    {
+      "key": "p57",
+      "url": "https://russianculture.cn/ru/zh/联盟动画电影制片厂出品的7部经典动画/",
+      "status": 200,
+      "finalUrl": "https://russianculture.cn/ru/zh/%E8%81%94%E7%9B%9F%E5%8A%A8%E7%94%BB%E7%94%B5%E5%BD%B1%E5%88%B6%E7%89%87%E5%8E%82%E5%87%BA%E5%93%81%E7%9A%847%E9%83%A8%E7%BB%8F%E5%85%B8%E5%8A%A8%E7%94%BB/",
+      "characters": 4109,
+      "sha256": "ea0528859e8fcd441736fbc25208dfd0641fa7cb3ca9daa7cd9c3b55c87eb32c",
+      "mode": "live"
+    },
+    {
+      "key": "p58",
+      "url": "https://www.culture.ru/events/1570737/krokodil-gena",
+      "status": 200,
+      "finalUrl": "https://www.culture.ru/events/1570737/krokodil-gena",
+      "characters": 4105,
+      "sha256": "91396b9301f19f660f24a0b076bffb69f9580481007988cc83168fb65e28a411",
+      "mode": "live"
+    },
+    {
+      "key": "p59",
+      "url": "https://www.culture.ru/live/movies/643/yozhik-v-tumane",
+      "status": 200,
+      "finalUrl": "https://www.culture.ru/live/movies/643/yozhik-v-tumane",
+      "characters": 7331,
+      "sha256": "c155a6edccd74d12bf8c15edf0b99c42578d36bd8658fa3dd9d532a5967b3621",
+      "mode": "live"
+    },
+    {
+      "key": "p60",
+      "url": "https://russianculture.cn/ru/1719/",
+      "status": 200,
+      "finalUrl": "https://russianculture.cn/ru/1719/",
+      "characters": 2616,
+      "sha256": "ecdddf0888fefbe80e7851d9fd53529717361c2c7c81e49633fe555840942cef",
+      "mode": "live"
+    },
+    {
+      "key": "p61",
+      "url": "https://www.culture.ru/materials/256971/5-geroev-multikov-s-golosami-izvestnykh-akterov",
+      "status": 200,
+      "finalUrl": "https://www.culture.ru/materials/256971/5-geroev-multikov-s-golosami-izvestnykh-akterov",
+      "characters": 10070,
+      "sha256": "668d7e8b001793e4dd586e51d5242ec30bb7a75871f8b524dab481fb02a4e33a",
+      "mode": "live"
+    },
+    {
+      "key": "p62",
+      "url": "https://nihaoeluosi.cn/culture/246595-soyuzmultfilm-iconic-films",
+      "status": 200,
+      "finalUrl": "https://nihaoeluosi.cn/culture/246595-soyuzmultfilm-iconic-films",
+      "characters": 5108,
+      "sha256": "8bf9bd49cc7984a28e4c76956a2bc11f4a8c1b72a8408f9c8faa0b7a8eed5555",
+      "mode": "live"
+    },
+    {
+      "key": "p63",
+      "url": "https://goldenravenfilmfest.ru/vinni_puh",
+      "status": 200,
+      "finalUrl": "https://goldenravenfilmfest.ru/vinni_puh",
+      "characters": 2415,
+      "sha256": "7698ba86e906c3e15a47f3de38ad09cb2eb30e2e865659915de3f1241668ce7d",
+      "mode": "live"
+    }
+  ],
+  "resolutions": [
+    {
+      "row": "cin-cn-red-sorghum",
+      "field": "sources[1].title",
+      "before": "Жэньминь жибао: 本网探访莫言高密旧居",
+      "after": "Жэньминь жибао (海外版): 红高粱地的朝圣",
+      "reason": "Название источника не совпадает с открытой газетной статьёй."
+    },
+    {
+      "row": "cin-cn-red-sorghum",
+      "field": "basis.gloss",
+      "before": "Две повести Мо Яня — литературная основа фильма",
+      "after": "Два произведения Мо Яня — литературная основа фильма",
+      "reason": "Выбранные страницы называют два 小说, но не подтверждают жанровую квалификацию обеих вещей как повестей."
+    },
+    {
+      "row": "cin-cn-red-sorghum",
+      "field": "name.gloss",
+      "before": "«Красный гаолян» — фильм о винокурне и сопротивлении японскому вторжению",
+      "after": "«Красный гаолян» — фильм Чжан Имоу по произведениям Мо Яня",
+      "reason": "В выбранных полных страницах явно подтверждена винокурня, но нет полного подтверждения формулировки о сопротивлении вторжению; лучше оставить проверенную литературную привязку."
+    },
+    {
+      "row": "cin-cn-wandering-earth",
+      "field": "about",
+      "before": "Фантастический фильм Го Фаня 2019 года по одноимённому рассказу Лю Цысиня. Человечество пытается спасти Землю от стареющего Солнца, переместив саму планету. Здесь описывается первый фильм, а не его приквел 2023 года.",
+      "after": "Фантастический фильм Го Фаня 2019 года по одноимённому рассказу Лю Цысиня. Человечество пытается спасти Землю от стареющего Солнца, переместив саму планету.",
+      "reason": "Заключительное утверждение о приквеле 2023 не подтверждается двумя выбранными страницами. Остальной текст подтверждён."
+    },
+    {
+      "row": "cin-cn-danaotiangong",
+      "field": "director",
+      "before": {
+        "zh": "万籁鸣、唐澄",
+        "ru": [
+          "Вань Лаймин и Тан Чэн"
+        ],
+        "gloss": "Вань Лаймин и Тан Чэн — режиссёры классического фильма о Сунь Укуне"
+      },
+      "after": null,
+      "reason": "Правообладатель печатает обоих как 导演, но Шанхайский архив прямо разводит 万籁鸣导演 и 唐澄副导演. Для бесспорной учебной ячейки удалить необязательный коллективный кредит; не заменять его одним именем без отдельного разрешения расхождения."
+    },
+    {
+      "row": "cin-ru-potemkin",
+      "field": "sources[0].authority",
+      "before": "academic",
+      "after": "official",
+      "reason": "南开标明转载《中华读书报》，它不是学术论文；可按官方报刊材料保留，不应把大学转载自动等同于 academic."
+    },
+    {
+      "row": "cin-ru-crocodile-gena",
+      "field": "sources[1].title",
+      "before": "Крокодил Гена — Культура.РФ (Киятский сельский дом культуры)",
+      "after": "Крокодил Гена — Культура.РФ (МБУ «Районный Дом культуры» Буинского МР)",
+      "reason": "Открытая страница указывает поставщиком районный Дом культуры; Киятский сельский дом культуры в её текущем тексте не назван."
+    }
+  ],
+  "resolvedTableSha256": "13924b5f8611f0a4236fb871b1399d2491f008788045454f5292d2c451548424"
+}

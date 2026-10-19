@@ -1,0 +1,607 @@
+{
+  "reviewedAt": "2026-10-19",
+  "initialSummary": {
+    "reviewed": 30,
+    "accept": 17,
+    "fix": 13,
+    "drop": 0,
+    "china": 21,
+    "russia": 9
+  },
+  "initialVerification": {
+    "originalSchemaErrors": [],
+    "originalLocalErrors": [],
+    "originalGlobalCrossLeaks": 14,
+    "proposedLocalErrors": [],
+    "proposedCinemaRelatedCrossLeaks": [],
+    "proposedSentenceCountsValid": true,
+    "manualOptions": false,
+    "olympiadDuplicates": []
+  },
+  "findings": [
+    {
+      "id": "cinema-q01",
+      "verdict": "accept",
+      "note": "Режиссёры китайского игрового кино; все прочие строки Чжан Имоу исключены; один ответ.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q02",
+      "verdict": "accept",
+      "note": "Название по опере и разделённой награде1993; прочие9 картин не подходят.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q03",
+      "verdict": "accept",
+      "note": "Название по Ли Аню, мечу и Oscar2001; детали двух поколений есть в p04, награда в p05.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q04",
+      "verdict": "accept",
+      "note": "Режиссёры китайского игрового кино; Гонконг1962 не повторяет чужой ответ.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q05",
+      "verdict": "accept",
+      "note": "Режиссёры китайского игрового кино; Го Фань единственный.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q06",
+      "verdict": "accept",
+      "note": "Режиссёры китайского игрового кино; Венеция2006 и Фэнцзе подтверждены.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q07",
+      "verdict": "accept",
+      "note": "Названия игровых фильмов; SIFF/историческая статья подтверждают1931 и первенство.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q08",
+      "verdict": "fix",
+      "note": "Реальная междосьевая утечка: литература-q51 уже называет 活着. Спросить режиссёра этого фильма; исключить остальные строки Чжан Имоу.",
+      "changes": {
+        "questionRu": "Кто поставил фильм «Жить» (1994), в котором Фугуй и его семья переживают исторические потрясения?",
+        "fact": {
+          "table": "works",
+          "row": "cin-cn-to-live",
+          "ask": "director",
+          "where": {
+            "country": "中国",
+            "kind": "故事片"
+          }
+        },
+        "exclude": [
+          "cin-cn-red-sorghum",
+          "cin-cn-hero",
+          "cin-cn-flying-daggers"
+        ],
+        "explanation": "Фильм «Жить» (活着) поставил Чжан Имоу (张艺谋). Он основан на романе Юй Хуа и посвящён судьбе Фугуя и его семьи. В Каннах 1994 года картина разделила Гран-при жюри, а исполнитель роли Фугуя получил награду за лучшую мужскую роль."
+      }
+    },
+    {
+      "id": "cinema-q09",
+      "verdict": "accept",
+      "note": "Названия игровых фильмов; Безымянный и версия царя однозначны.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q10",
+      "verdict": "fix",
+      "note": "Слова «эпоха Тан» раскрывают ответы landmarks-q13/q53. Удалить ненужное указание эпохи из вопроса.",
+      "changes": {
+        "questionRu": "Как называется фильм, в котором двое служителей власти пытаются через молодую женщину Мэй проникнуть в повстанческую организацию, но замысел осложняется любовью?"
+      }
+    },
+    {
+      "id": "cinema-q11",
+      "verdict": "accept",
+      "note": "SIFF p24 прямо подтверждает первый китайский/азиатский полнометражный мультфильм1941; исходный pool11 однозначен.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q12",
+      "verdict": "fix",
+      "note": "Сам исходный pool8 корректен и однозначен, но literature-q40 уже называет его ответ «Путешествие на Запад». При сохранении старого досье перенести вопрос о basis на q21, здесь спросить название фильма. Не скрывать совпадение удалением alias и не заводить группу без решения автора.",
+      "changes": {
+        "questionRu": "Как называется классический китайский мультфильм о восстании Сунь Укуна против небесных властей, две части которого были завершены в 1961 и 1964 годах?",
+        "fact": {
+          "table": "works",
+          "row": "cin-cn-danaotiangong",
+          "ask": "name",
+          "where": {
+            "country": "中国",
+            "kind": "动画片"
+          }
+        },
+        "exclude": [],
+        "explanation": "Это «Переполох в небесных чертогах» (大闹天宫). Его литературная основа — роман «Путешествие на Запад». Две части классической картины были завершены в 1961 и 1964 годах."
+      }
+    },
+    {
+      "id": "cinema-q13",
+      "verdict": "fix",
+      "note": "Два фактически верных уровня техники: 水墨动画 и общее 手绘动画. Тушевая анимация тоже рисованная. Убрать широкий вариант; останется4 варианта.",
+      "changes": {
+        "exclude": [
+          "cin-cn-danaotiangong"
+        ]
+      }
+    },
+    {
+      "id": "cinema-q14",
+      "verdict": "accept",
+      "note": "Бумажная перекладка однозначна среди5 техник; фраза не содержит ответ.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q15",
+      "verdict": "fix",
+      "note": "Упоминание Шанхая в вопросе раскрывает ответы provinces-q28/q29; место студии для проверки техники не требуется.",
+      "changes": {
+        "questionRu": "В какой технике снят классический цикл «Истории об Афанти» (阿凡提的故事)?"
+      }
+    },
+    {
+      "id": "cinema-q16",
+      "verdict": "accept",
+      "note": "Полныйpool11 названий анимации; сюжет и отсутствие диалогов подтверждены.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q17",
+      "verdict": "accept",
+      "note": "Огненное копьё и колёса найдены в p36; дата1979 исключает другой фильм о Нэчжа.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q18",
+      "verdict": "fix",
+      "note": "Слово «псевдоним» выделяет один вариант среди имён/коллективов, а 饺子 уже назван в cuisine-q59 как часть 俄式饺子. Сменить проверяемую ячейку на название фильма.",
+      "changes": {
+        "questionRu": "Как называется китайский анимационный фильм 2019 года, в котором Нэчжа борется с предубеждениями и отказывается покоряться навязанной судьбе?",
+        "fact": {
+          "table": "works",
+          "row": "cin-cn-nezhamotongjiangshi",
+          "ask": "name",
+          "where": {
+            "country": "中国",
+            "kind": "动画片"
+          }
+        },
+        "explanation": "Это «Нэчжа: Рождение демона» (哪吒之魔童降世). Фильм поставил режиссёр Цзяоцзы, настоящее имя которого — Ян Юй. В картине 2019 года Нэчжа борется с предубеждениями и отказывается покоряться навязанной ему судьбе."
+      }
+    },
+    {
+      "id": "cinema-q19",
+      "verdict": "fix",
+      "note": "Ложное совпадение «Короля» с alias «Королёв» останавливает общий валидатор. Сюжет+год однозначно определяют произведение без этого слова.",
+      "changes": {
+        "questionRu": "Кто поставил китайский анимационный фильм 2015 года, в котором мальчик Цзян Люэр случайно освобождает Сунь Укуна?"
+      }
+    },
+    {
+      "id": "cinema-q20",
+      "verdict": "fix",
+      "note": "Оборот «нарушает благодарность» неестественен по-русски; достаточно точного «предаёт своего спасителя».",
+      "changes": {
+        "explanation": "Это «Девятицветный олень» (九色鹿), мультфильм 1981 года. Источником вдохновения стала роспись Дуньхуана о царе оленей. Спасённый оленем человек предаёт своего спасителя."
+      }
+    },
+    {
+      "id": "cinema-q21",
+      "verdict": "fix",
+      "note": "Физическая форма «свиток» не подтверждена сверенными страницами (там 天书, отпечаток текста со стены). Спросить литературную основу; это сохраняет вопрос по basis после безопасной замены q12.",
+      "changes": {
+        "questionRu": "Какой роман послужил литературной основой мультфильма «Небесная книга» (天书奇谭, 1983)?",
+        "fact": {
+          "table": "works",
+          "row": "cin-cn-tianshuqitan",
+          "ask": "basis",
+          "where": {
+            "country": "中国"
+          }
+        },
+        "explanation": "Литературная основа — роман «Усмирение нечистой силы» (三遂平妖传). Мультфильм вышел в 1983 году. Восстановленная версия картины появилась в 2021 году."
+      }
+    },
+    {
+      "id": "cinema-q22",
+      "verdict": "accept",
+      "note": "Пять режиссёров советского игрового кино; Эйзенштейн единственный.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q23",
+      "verdict": "accept",
+      "note": "Пять названий игрового кино; Лем,1972 и Кельвин однозначно указывают на «Солярис».",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q24",
+      "verdict": "fix",
+      "note": "Ложное совпадение «Рязанова» с «Рязань» останавливает общий валидатор. Даты премьеры и новогодней традиции достаточно.",
+      "changes": {
+        "questionRu": "Как называется телефильм, премьера которого состоялась 1 января 1976 года, а последующие показы стали новогодней традицией?"
+      }
+    },
+    {
+      "id": "cinema-q25",
+      "verdict": "fix",
+      "note": "«Создавалась в1965–1967» ошибочно трактует годы выпуска как весь период производства. Источник подтверждает даты вышедшего фильма; заменить на «вышла».",
+      "changes": {
+        "explanation": "Режиссёр киноэпопеи — Сергей Бондарчук (谢尔盖·邦达尔丘克). Картина вышла в 1965–1967 годах и состоит из четырёх частей. Это экранизация одноимённого романа Льва Толстого."
+      }
+    },
+    {
+      "id": "cinema-q26",
+      "verdict": "fix",
+      "note": "Название фильма раскрывает «Москва» из money-q15, а короткий alias «Меньшов» ложно совпадает с «меньше/меньшинство» других досье. Вопрос о названии по режиссёру и году устраняет обе проблемы, не меняя старые тексты.",
+      "changes": {
+        "questionRu": "Как в китайских источниках называется игровой фильм Владимира Меньшова 1979 года?",
+        "fact": {
+          "table": "works",
+          "row": "cin-ru-moscow-tears",
+          "ask": "name",
+          "where": {
+            "country": "俄罗斯",
+            "kind": "故事片"
+          }
+        },
+        "explanation": "Это «Москва слезам не верит» (莫斯科不相信眼泪). Игровой фильм снял Владимир Меньшов. Картина вышла в 1979 году."
+      }
+    },
+    {
+      "id": "cinema-q27",
+      "verdict": "accept",
+      "note": "Четыре названия советской анимации;1969,Качанов и Успенский выделяют только Гену.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q28",
+      "verdict": "fix",
+      "note": "В наборе один аниматор Норштейн и пять режиссёров игрового кино — ответ можно выделить по специализации. Спросить название среди4 советских мультфильмов.",
+      "changes": {
+        "questionRu": "Как называется советский мультфильм Юрия Норштейна 1975 года по сказке Сергея Козлова?",
+        "fact": {
+          "table": "works",
+          "row": "cin-ru-hedgehog-fog",
+          "ask": "name",
+          "where": {
+            "country": "俄罗斯",
+            "kind": "动画片"
+          }
+        },
+        "explanation": "Это «Ёжик в тумане» (迷雾中的小刺猬). Мультфильм Юрия Норштейна вышел в 1975 году. Его литературная основа — сказка Сергея Козлова."
+      }
+    },
+    {
+      "id": "cinema-q29",
+      "verdict": "accept",
+      "note": "Четыре названия советской анимации; Волк,Заяц,Котёночкин и Папанов подтверждены.",
+      "changes": {}
+    },
+    {
+      "id": "cinema-q30",
+      "verdict": "accept",
+      "note": "Четыре названия советской анимации;1969 и английская сказка о медвежонке однозначны.",
+      "changes": {}
+    }
+  ],
+  "final": {
+    "reviewedAt": "2026-10-19",
+    "scope": "Контрольный просмотр внесённых точных замен; пулы пересчитаны question_options. Полный dossiers.py повторно не запускался.",
+    "summary": {
+      "questions": 30,
+      "accept": 30,
+      "fix": 0,
+      "drop": 0,
+      "previousFixes": 13,
+      "changedFieldsVerified": 27,
+      "allRemainDraft": true,
+      "localValidationErrors": []
+    },
+    "contentSha256": "036e87857d2568cd94284a0feeac3806a658fc74e961e51e5e9c835c35969eae",
+    "hashScope": "Все поля вопросов кроме check и status; канонический JSON: sort_keys=true, ensure_ascii=false, separators=(comma,colon).",
+    "entries": [
+      {
+        "id": "cinema-q01",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 7,
+        "answerId": "cin-cn-red-sorghum",
+        "sentenceCount": 3,
+        "contentSha256": "bcb9c70a6e32a2a0e51f34098f5916d3710765dc8971475cf46c15b1108c1e81"
+      },
+      {
+        "id": "cinema-q02",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 10,
+        "answerId": "cin-cn-concubine",
+        "sentenceCount": 3,
+        "contentSha256": "65bc9d4164c9d96e49e42c6e798363785d0e3fd8c25c18768430c66a94476ad8"
+      },
+      {
+        "id": "cinema-q03",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 10,
+        "answerId": "cin-cn-crouching-tiger",
+        "sentenceCount": 3,
+        "contentSha256": "ae53fe997cca101ee6da451b4ee3734466f00346e308824c69493f1cf15f7fbb"
+      },
+      {
+        "id": "cinema-q04",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 7,
+        "answerId": "cin-cn-mood-for-love",
+        "sentenceCount": 3,
+        "contentSha256": "b7c24e3b75e48c291e9fb5de88c10afd388618cd12fac85b78fddf3fa341b0f0"
+      },
+      {
+        "id": "cinema-q05",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 7,
+        "answerId": "cin-cn-wandering-earth",
+        "sentenceCount": 3,
+        "contentSha256": "bb449e5fb175a6da04e18f153afcb9624670cc69c28df38de5708578297342b4"
+      },
+      {
+        "id": "cinema-q06",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 7,
+        "answerId": "cin-cn-still-life",
+        "sentenceCount": 3,
+        "contentSha256": "9f9762b114d1c34bb60f8a27e50abb82f806b24965884be08048dc62986f3028"
+      },
+      {
+        "id": "cinema-q07",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 10,
+        "answerId": "cin-cn-red-peony",
+        "sentenceCount": 3,
+        "contentSha256": "5de605286b4db93b4be6d3aff943bff5f248bdb7564b29b3a5da4fdcd051d7b4"
+      },
+      {
+        "id": "cinema-q08",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 7,
+        "answerId": "cin-cn-to-live",
+        "sentenceCount": 3,
+        "contentSha256": "156d203955c0d57b0a77eedd379515b97f370f6558a846aedc140c88d076addf"
+      },
+      {
+        "id": "cinema-q09",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 10,
+        "answerId": "cin-cn-hero",
+        "sentenceCount": 3,
+        "contentSha256": "c39dbb07a4a5afbd712fe57059c520d310450478681278647dc5f42e51afbdfc"
+      },
+      {
+        "id": "cinema-q10",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 10,
+        "answerId": "cin-cn-flying-daggers",
+        "sentenceCount": 3,
+        "contentSha256": "a6d02eb099cad1b60a07273f535e4872b53da820e57a1473b464482f45ac2242"
+      },
+      {
+        "id": "cinema-q11",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 11,
+        "answerId": "cin-cn-tieshangongzhu",
+        "sentenceCount": 3,
+        "contentSha256": "3d3ba16aecdf55a4ce4110c941598e49246d0c20dbbdf28b35eb3176607017e7"
+      },
+      {
+        "id": "cinema-q12",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 11,
+        "answerId": "cin-cn-danaotiangong",
+        "sentenceCount": 3,
+        "contentSha256": "27345250f5a35636d90e8acd34c83ef93b5730d5388bbe3880c91f6154c71f62"
+      },
+      {
+        "id": "cinema-q13",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 4,
+        "answerId": "cin-cn-xiaokedouzhaomama",
+        "sentenceCount": 3,
+        "contentSha256": "b9d31241ba72f3c321225c94886b4472c39054d2a2013dae3c5ae0c8ff4dc06a"
+      },
+      {
+        "id": "cinema-q14",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 5,
+        "answerId": "cin-cn-huluxiongdi",
+        "sentenceCount": 3,
+        "contentSha256": "97fbbddb0fe547fd26e16e8ab68775ed10cefe5ee67041b22d8bd9fbef4b1b36"
+      },
+      {
+        "id": "cinema-q15",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 5,
+        "answerId": "cin-cn-afantidegushi",
+        "sentenceCount": 3,
+        "contentSha256": "7344c838194908c135bafb9cffad29bd8ecc4653cb3449394a2e934241a72094"
+      },
+      {
+        "id": "cinema-q16",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 11,
+        "answerId": "cin-cn-sangeheshang",
+        "sentenceCount": 3,
+        "contentSha256": "2831f9c7c93e6b157ea322d008158861f3a44589e36eababd7e73f353c61c1d7"
+      },
+      {
+        "id": "cinema-q17",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 11,
+        "answerId": "cin-cn-nezhanaohai",
+        "sentenceCount": 3,
+        "contentSha256": "c24f7b782c0d18a10a8ae7f6fc4b82ec2d7f6f520c263b2b1967b8a97bc21e4d"
+      },
+      {
+        "id": "cinema-q18",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 11,
+        "answerId": "cin-cn-nezhamotongjiangshi",
+        "sentenceCount": 3,
+        "contentSha256": "c69aa7ea4d08cdba31dfa86290f2ae6ea6ada9806ad6291baf4ca718469c2d37"
+      },
+      {
+        "id": "cinema-q19",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 9,
+        "answerId": "cin-cn-dashengguilai",
+        "sentenceCount": 3,
+        "contentSha256": "33d8600ed0e15e53cbe6f3df331334d96eaa578a2e192e8be3ffb30cf3827b35"
+      },
+      {
+        "id": "cinema-q20",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 11,
+        "answerId": "cin-cn-jiuselu",
+        "sentenceCount": 3,
+        "contentSha256": "246bcc3cc8a302cee5d48f4f62e400d7145d2348713aa898f08258f542d998e8"
+      },
+      {
+        "id": "cinema-q21",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 8,
+        "answerId": "cin-cn-tianshuqitan",
+        "sentenceCount": 3,
+        "contentSha256": "f2d0d06fa7f1dafc77e1dcb43ae78dad7fc41b69262215863edcafe2f9e7231f"
+      },
+      {
+        "id": "cinema-q22",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 5,
+        "answerId": "cin-ru-potemkin",
+        "sentenceCount": 3,
+        "contentSha256": "1abb94b63e220b84446cfa20cb4cb0493bd2df3fa92b37c0d69e7295c69ed45a"
+      },
+      {
+        "id": "cinema-q23",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 5,
+        "answerId": "cin-ru-solaris",
+        "sentenceCount": 3,
+        "contentSha256": "a38e9d57ee2d4a6d87d42b7dbaf2a6a5896b781ac922df4df47ee83b9b283b6c"
+      },
+      {
+        "id": "cinema-q24",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 5,
+        "answerId": "cin-ru-irony-of-fate",
+        "sentenceCount": 3,
+        "contentSha256": "6ff7cd858d5976ae19cdd78dd802aacc30e3f5e988de7989e66c21d6f2e5c530"
+      },
+      {
+        "id": "cinema-q25",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 5,
+        "answerId": "cin-ru-war-and-peace",
+        "sentenceCount": 3,
+        "contentSha256": "84b6384369c458dec06c81d99a6f5c8144318f5ee9c6a62ef7dac99c413153f3"
+      },
+      {
+        "id": "cinema-q26",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 5,
+        "answerId": "cin-ru-moscow-tears",
+        "sentenceCount": 3,
+        "contentSha256": "98645a8faa546a246173a5ff622a497a3612763fed6bf76040c768e95e3e02fa"
+      },
+      {
+        "id": "cinema-q27",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 4,
+        "answerId": "cin-ru-crocodile-gena",
+        "sentenceCount": 3,
+        "contentSha256": "7282fc1341e01d299ee7fe9fca7d1bafbfd2b212e561f6f89a596144178488bc"
+      },
+      {
+        "id": "cinema-q28",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 4,
+        "answerId": "cin-ru-hedgehog-fog",
+        "sentenceCount": 3,
+        "contentSha256": "f76eb0814dea6cfa3a677e2765d55b7fe140d79b8756128d2864179d7ed73d2e"
+      },
+      {
+        "id": "cinema-q29",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 4,
+        "answerId": "cin-ru-nu-pogodi",
+        "sentenceCount": 3,
+        "contentSha256": "62167c3e51756f7a5c1192da8f46910eeca68511bc7251179a80271f2fd6dd14"
+      },
+      {
+        "id": "cinema-q30",
+        "verdict": "accept",
+        "issues": [],
+        "poolSize": 4,
+        "answerId": "cin-ru-winnie-pooh",
+        "sentenceCount": 3,
+        "contentSha256": "82204e32348ca3a1cab40f595ff8491d9697bd560ef1305ec1e68ac3c72e133d"
+      }
+    ],
+    "notes": [
+      "Таблица не менялась; новые источники не загружались.",
+      "Новые тексты/fact/explanation/exclude совпадают с независимо проверенными заменами.",
+      "В предыдущей проверке именно эти рекомендуемые значения прошли локальную валидацию и проверку всех междосьевых пересечений, связанных с cinema.",
+      "Итоговый accept — вердикт проверяющего; status draft остаётся до решения автора."
+    ],
+    "tableSha256": "13924b5f8611f0a4236fb871b1399d2491f008788045454f5292d2c451548424",
+    "tableUnchangedSinceReview": true
+  },
+  "branchReview": {
+    "verdict": "fix",
+    "trackedDiff": "test/test_dossiers.py: только добавление cinema.json в список досье",
+    "newFiles": "Досье, 30 черновых вопросов, ручные отчёты и JSON сверки, штатный отчёт, спецификация и план.",
+    "dataBankChanged": false,
+    "siteOrApplicationChanged": false,
+    "sourcesChanged": false,
+    "priorCollectionChanged": false,
+    "notes": [
+      "git diff --check прошёл.",
+      "План ещё не отмечает завершение этапа проверки; перед коммитом нужны запись CHANGELOG и штатные тесты по принятому процессу.",
+      "Старые документы в основной рабочей папке reviewer не менял; побайтную сохранность подтверждает основной агент отдельно.",
+      "Код генерации вариантов не менялся; таблицы и вопросы остаются отдельно от опубликованного банка."
+    ]
+  }
+}
