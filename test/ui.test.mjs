@@ -48,14 +48,21 @@ after(async () => {
   await new Promise((resolve) => (server ? server.close(resolve) : resolve()));
 });
 
-/** Свежая вкладка с пустым localStorage; ошибки страницы копятся в errors. */
-async function openPage(t, viewport = { width: 1280, height: 900 }) {
+/** Свежая вкладка с пустым localStorage; ошибки страницы копятся в errors. Режим, формат и
+ * темы на главной свёрнуты; тесты раскрывают их при каждой загрузке, а `folded` оставляет
+ * как есть — для проверки самого сворачивания. */
+async function openPage(t, viewport = { width: 1280, height: 900 }, { folded = false } = {}) {
   if (skipReason) {
     t.skip(skipReason);
     return null;
   }
   const context = await browser.newContext({ viewport });
   t.after(() => context.close());
+  if (!folded) {
+    await context.addInitScript(() => document.addEventListener('DOMContentLoaded', () => {
+      for (const fold of document.querySelectorAll('.chapter-fold')) fold.open = true;
+    }));
+  }
   const page = await context.newPage();
   page.errors = [];
   page.on('pageerror', (error) => page.errors.push(error.message));
@@ -854,5 +861,50 @@ test('телефон: с включённым пиньинем ни один в�
   });
   assert.deepEqual(result.overflowing, []);
   assert.ok(result.rubies > 0, 'над китайскими вставками вопроса есть транскрипция');
+  assert.deepEqual(page.errors, []);
+});
+
+test('главная: режим, формат и темы свёрнуты, в заголовке — текущий выбор', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 375, height: 812 }, { folded: true });
+  if (!page) return;
+  for (const id of ['#modeFold', '#formatFold', '#topicsFold']) {
+    assert.equal(await page.locator(id).getAttribute('open'), null, `${id} раскрыт`);
+  }
+  assert.equal(await page.locator('input[name="studyMode"][value="new"]').isVisible(), false);
+  assert.equal(await page.locator('#modeValue').textContent(), 'Все вопросы');
+  assert.equal(await page.locator('#topicsValue').textContent(), 'все темы');
+  await page.locator('#topicsFold > summary').click();
+  await page.locator('input[name="studyOrigin"][value="olympiad"]').check({ force: true });
+  assert.equal(await page.locator('#topicsValue').textContent(), 'все темы · только с олимпиад');
+  await page.locator('#modeFold > summary').click();
+  await page.locator('input[name="studyMode"][value="new"]').check({ force: true });
+  assert.equal(await page.locator('#modeValue').textContent(), 'Новые');
+  // свёрнутое не мешает начать раунд
+  await page.locator('#startButton').click();
+  await page.locator('#quizView').waitFor();
+  assert.deepEqual(page.errors, []);
+});
+
+test('телефон: после ответа с длинным разбором видна кнопка «Следующий вопрос», много источников свёрнуто', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 375, height: 667 });
+  if (!page) return;
+  await page.locator('input[name="roundSize"][value="all"]').check({ force: true });
+  await page.locator('#startButton').click();
+  await page.locator('#quizView').waitFor();
+  // вопрос с самым длинным пояснением и больше чем двумя источниками
+  const longest = await page.evaluate(() => QUESTION_BANK.filter((r) => r.evidence.length > 2)
+    .sort((a, b) => b.explanation.ru.length - a.explanation.ru.length)[0].id);
+  for (let step = 0; step < 2000; step += 1) {
+    const id = await page.evaluate(() => state.round[state.position].id);
+    if (id === longest) break;
+    await page.evaluate(() => { state.position += 1; renderQuestion(); });
+  }
+  await page.locator('#options button').first().click();
+  await page.waitForFunction(() => {
+    const next = document.getElementById('nextButton').getBoundingClientRect();
+    return next.top >= 0 && next.bottom <= innerHeight;
+  }, null, { timeout: 5000 });
+  assert.equal(await page.locator('#feedback details.feedback-sources').count(), 1);
+  assert.equal(await page.locator('#feedback .feedback-sources a').first().isVisible(), false);
   assert.deepEqual(page.errors, []);
 });

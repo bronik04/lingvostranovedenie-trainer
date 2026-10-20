@@ -122,6 +122,27 @@ main { display: block; }
   padding: 0;
   border: 0;
 }
+/* Режим, формат и темы свёрнуты: в заголовке видно текущий выбор, раскрывать — по нажатию. */
+.chapter-fold { display: block; }
+.chapter-fold > summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s-1) var(--s-3);
+  min-height: var(--target-min);
+  list-style: none;
+  cursor: pointer;
+}
+.chapter-fold > summary::-webkit-details-marker { display: none; }
+.chapter-fold > summary::after {
+  content: '▾';
+  margin-left: auto;
+  color: var(--text-on-ground-muted);
+  transition: transform var(--duration-quick) var(--ease-out);
+}
+.chapter-fold[open] > summary::after { transform: rotate(180deg); }
+.fold-value { color: var(--text-on-ground-muted); font-size: var(--t-size-caption); }
+.fold-body { display: flex; flex-direction: column; gap: var(--s-4); min-width: 0; margin: var(--s-4) 0 0; padding: 0; border: 0; }
 /* legend внутри flex-контейнера не встаёт в поток — float возвращает его туда */
 .chapter-body > legend { float: left; width: 100%; padding: 0; }
 .chapter-body > legend + * { clear: both; }
@@ -368,6 +389,14 @@ select, .search {
 .verdict strong { grid-column: 2; font-family: var(--font-display); font-size: var(--t-size-title-2); line-height: var(--t-leading-tight); }
 .verdict span { grid-column: 2; color: var(--text-soft); font-size: var(--t-size-caption); }
 .why { max-width: 46em; font-size: var(--t-size-lead); }
+.feedback-sources > summary {
+  width: fit-content;
+  color: var(--text-on-ground-muted);
+  font-size: var(--t-size-caption);
+  font-weight: var(--t-weight-medium);
+  cursor: pointer;
+}
+.feedback-sources[open] > summary { margin-bottom: var(--s-2); }
 .feedback ul, .row-sources, .row-glosses { margin: 0; padding-left: 20px; font-size: var(--t-size-caption); }
 .feedback li + li, .row-sources li + li, .row-glosses li + li { margin-top: 4px; }
 .muted { color: var(--text-on-ground-muted); }
@@ -581,9 +610,8 @@ a:hover { color: var(--accent-on-ground); }
   .chapter-mark { flex-basis: 100%; font-size: 32px; }
   .launch-actions .ink-btn, .next-row .ink-btn--primary { flex: 1 1 100%; min-width: 0; }
   .next-row { flex-direction: column-reverse; align-items: stretch; }
-  /* поля для прокрутки после ответа (к кнопке) и после «Следующего вопроса» (к ходу раунда) */
-  .next-row .ink-btn--primary, .recall-rate { scroll-margin-bottom: var(--s-4); }
-  .quiz, .feedback { scroll-margin-top: var(--s-2); }
+  /* после «Следующего вопроса» начало раунда встаёт чуть ниже края экрана */
+  .quiz { scroll-margin-top: var(--s-2); }
   .option { grid-template-columns: 32px minmax(0, 1fr); min-height: 72px; padding: 12px 14px; }
   .option.wrong { padding: 11px 13px; }
   .option-text { font-size: 26px; }
