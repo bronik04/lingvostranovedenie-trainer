@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from dossiers import REPORT_MARK, check_dossiers, load_removed, removed_id_errors, cross_leak_errors, dossier_paths, embed_record, original_record, dossier_records, dossier_report, is_build_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions, write_dossier_reports
+from dossiers import REPORT_MARK, _mentions, check_dossiers, load_removed, removed_id_errors, cross_leak_errors, dossier_paths, embed_record, original_record, dossier_records, dossier_report, is_build_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions, write_dossier_reports
 from editorial import apply_editorial, validate_editorial
 from embeds import apply_embeds, embed_errors
 
@@ -1176,6 +1176,20 @@ class RemovedIdsTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 load_removed(path)
             self.assertEqual(load_removed(Path(directory, 'none.json')), {})
+
+
+class SurnameMentionTest(unittest.TestCase):
+    """Фамилия на -ов/-ев/-ин ищется со всем суффиксом: «Меньшов» — не «меньше»."""
+
+    def test_surname_declensions_found_but_not_common_words(self):
+        cell = {'zh': '缅绍夫', 'ru': ['Меньшов']}
+        self.assertEqual(_mentions('Фильм Меньшова вышел в 1979 году', cell), ['Меньшов'])
+        self.assertEqual(_mentions('Кукла, внутри которой фигурки всё меньшего размера', cell), [])
+        self.assertEqual(_mentions('Народ меньше всего живёт на севере', cell), [])
+
+    def test_ordinary_words_still_declined(self):
+        cell = {'zh': '长江', 'ru': ['Янцзы', 'великая река']}
+        self.assertEqual(_mentions('Какой великой реки исток…', cell), ['великая река'])
 
 if __name__ == '__main__':
     unittest.main()

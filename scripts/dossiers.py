@@ -362,11 +362,17 @@ def _stem(word: str) -> str:
     return word
 
 
+SURNAME = re.compile(r'[А-ЯЁ]\w*(?:ов|ев|ёв|ин|ын)$')
+
+
 def _name_pattern(name: str) -> re.Pattern:
-    words = re.findall(r'\w+', name.lower())
+    words = re.findall(r'\w+', name)
     if not words or not CYRILLIC.search(name):
         return re.compile(re.escape(name.lower()))
-    return re.compile(r'(?<!\w)' + r'\W+'.join(re.escape(_stem(word)) + r'\w*' for word in words))
+    # фамилия на -ов/-ев/-ин склоняется после суффикса (Меньшова, Меньшову): без него основа
+    # «меньш» находила бы «меньше» и «меньшего»
+    stems = [word.lower() if SURNAME.match(word) else _stem(word.lower()) for word in words]
+    return re.compile(r'(?<!\w)' + r'\W+'.join(re.escape(stem) + r'\w*' for stem in stems))
 
 
 def _mentions(text: str, cell: dict) -> list[str]:
