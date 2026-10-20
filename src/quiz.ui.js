@@ -24,6 +24,8 @@ const TOPIC_MARKS = {
 };
 // до стольких вопросов ход раунда рисуется кружками, длиннее — полосой
 const MAX_STEP_DOTS = 14;
+// поля прокрутки на телефоне: над разбором и под кнопкой — scroll-margin в quiz.css (8 + 16)
+const SCROLL_GAP = 24;
 const THEME_COLORS = { light: '#faf4e8', dark: '#181512' };
 const FORMAT_COPY = {
   choice: 'Вопрос и четыре варианта — как на олимпиаде.',
@@ -32,11 +34,11 @@ const FORMAT_COPY = {
 };
 // подсказка клавиш — по стадии вопроса: во «Вспомни сам» цифры то оценивают, то выбирают вариант
 const QUIZ_HINTS = {
-  choice: '1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда',
-  hint: '1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда',
-  recall: 'Пробел — показать ответ · V — варианты · Esc — выйти из раунда',
-  rate: '1 — вспомнил сам · 2 — неточно · 3 — не вспомнил · Enter — дальше · Esc — выйти из раунда',
-  tf: '1 или ← — верно · 2 или → — неверно · Enter — дальше · Esc — выйти из раунда',
+  choice: '1–4 или A–D — ответить · Enter — дальше · P — пиньинь · Esc — выйти из раунда',
+  hint: '1–4 или A–D — ответить · Enter — дальше · P — пиньинь · Esc — выйти из раунда',
+  recall: 'Пробел — показать ответ · V — варианты · P — пиньинь · Esc — выйти из раунда',
+  rate: '1 — вспомнил сам · 2 — неточно · 3 — не вспомнил · Enter — дальше · P — пиньинь · Esc — выйти из раунда',
+  tf: '1 или ← — верно · 2 или → — неверно · Enter — дальше · P — пиньинь · Esc — выйти из раунда',
 };
 
 const $ = (id) => document.getElementById(id);
@@ -165,18 +167,21 @@ function pinyinLine(text) {
   return line;
 }
 
-/** Русский вопрос: над китайскими вставками — транскрипция (<ruby>). */
+/** Русский вопрос: над каждым иероглифом китайской вставки — его слог (<ruby>). */
 function questionNodes(text) {
-  return pinyinSegments(text, PINYIN).map((part) => {
-    if (!part.pinyin) return document.createTextNode(part.text);
-    const ruby = document.createElement('ruby');
-    ruby.lang = 'zh-Hans';
-    const reading = document.createElement('rt');
-    reading.className = 'pinyin';
-    reading.lang = 'zh-Latn-pinyin';
-    reading.textContent = part.pinyin;
-    ruby.append(part.text, reading);
-    return ruby;
+  return pinyinSegments(text, PINYIN).flatMap((part) => {
+    if (!part.pinyin) return [document.createTextNode(part.text)];
+    return rubyPairs(part.text, part.pinyin).map((pair) => {
+      if (!pair.pinyin) return document.createTextNode(pair.text);
+      const ruby = document.createElement('ruby');
+      ruby.lang = 'zh-Hans';
+      const reading = document.createElement('rt');
+      reading.className = 'pinyin';
+      reading.lang = 'zh-Latn-pinyin';
+      reading.textContent = pair.pinyin;
+      ruby.append(pair.text, reading);
+      return ruby;
+    });
   });
 }
 
@@ -298,7 +303,8 @@ function occurrenceLabel(occurrence) {
 }
 
 function renderBankCount() {
-  const done = Object.values(state.progress).filter((item) => item.completed).length;
+  // по банку, а не по всем записям прогресса: у снятых вопросов прогресс остаётся в браузере
+  const done = QUESTION_BANK.filter((record) => state.progress[record.id]?.completed).length;
   $('bankCount').textContent = `Пройдено ${done} из ${QUESTION_BANK.length}`;
 }
 
@@ -630,9 +636,13 @@ function showFeedback(record, kind, verdictHtml) {
   requestAnimationFrame(() => {
     $('feedback').focus({ preventScroll: true });
     // на телефоне докручиваем до следующего шага под разбором: кнопки «Следующий вопрос»,
-    // а во «Вспомни сам» до неё — до самооценки
+    // а во «Вспомни сам» до неё — до самооценки. Если длинный разбор с кнопкой на экран не
+    // помещается, важнее начало разбора: вердикт и правильный ответ не должны уехать вверх
     const next = [$('nextButton'), $('recallRate')].find((element) => !element.classList.contains('hidden'));
-    scrollOnPhone(next || $('feedback'), 'nearest');
+    const fits = next && next.getBoundingClientRect().bottom - $('feedback').getBoundingClientRect().top
+      + SCROLL_GAP <= window.innerHeight;
+    if (fits) scrollOnPhone(next, 'nearest');
+    else scrollOnPhone($('feedback'), 'start');
   });
 }
 
@@ -902,9 +912,16 @@ const TRUE_FALSE_KEYS = {
 
 document.addEventListener('keydown', (event) => {
   if (event.metaKey || event.ctrlKey || event.altKey) return;
+  const typing = ['INPUT', 'SELECT', 'TEXTAREA'].includes(document.activeElement?.tagName);
+  // P — пиньинь на любом экране, как кнопка в шапке; код клавиши, а не символ: на русской
+  // раскладке это «З»
+  if (event.code === 'KeyP' && !typing) {
+    event.preventDefault();
+    togglePinyin();
+    return;
+  }
   // у раздела «Чэнъюй» своя клавиатура (src/chengyu.ui.js)
   if (state.view.startsWith('cy-')) return;
-  const typing = ['INPUT', 'SELECT', 'TEXTAREA'].includes(document.activeElement?.tagName);
 
   if (event.key === 'Escape') {
     if (typing) document.activeElement.blur();

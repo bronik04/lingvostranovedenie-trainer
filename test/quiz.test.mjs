@@ -622,3 +622,14 @@ test('фильтр происхождения: только олимпиадны
   const kept = quiz.normaliseStudySettings({ filters: { ...NO_FILTERS, origin: 'addition' }, size: 10 }, bank);
   assert.equal(kept.filters.origin, 'addition');
 });
+
+test('пиньинь по иероглифам: слог над каждым знаком, «·» без слога, несовпадение — одной парой', () => {
+  assert.deepEqual(quiz.rubyPairs('双皮奶', 'shuāng pí nǎi'), [
+    { text: '双', pinyin: 'shuāng' }, { text: '皮', pinyin: 'pí' }, { text: '奶', pinyin: 'nǎi' },
+  ]);
+  assert.deepEqual(quiz.rubyPairs('伊万·希施金', 'yī wàn·xī shī jīn'), [
+    { text: '伊', pinyin: 'yī' }, { text: '万', pinyin: 'wàn' }, { text: '·' },
+    { text: '希', pinyin: 'xī' }, { text: '施', pinyin: 'shī' }, { text: '金', pinyin: 'jīn' },
+  ]);
+  assert.deepEqual(quiz.rubyPairs('坎儿井', 'kǎnr jǐng'), [{ text: '坎儿井', pinyin: 'kǎnr jǐng' }]);
+});

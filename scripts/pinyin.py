@@ -34,6 +34,7 @@ PUNCTUATION = str.maketrans({
     '（': '(', '）': ')', '《': '«', '》': '»', '・': '·',
 })
 MARK = '\x00'
+FIXED_TONE = {'一': 'yī', '不': 'bù'}
 
 
 def texts(bank: list[dict]) -> set[str]:
@@ -58,8 +59,11 @@ def transcriber(phrases: dict[str, str]):
             return phrases[text]
         # не-китайский кусок (цифры, латиница, знаки) помечается и идёт как есть
         items = lazy_pinyin(text, style=Style.TONE, errors=lambda chunk: [MARK + chunk])
-        words = [item[1:].translate(PUNCTUATION).strip() if item.startswith(MARK) else item
-                 for item in items]
+        # по слогу на иероглиф; 一 и 不 — словарным тоном: словарь pypinyin местами пишет
+        # их уже с изменением тона (一月 yí yuè), а ученику нужен тон самого знака
+        han = iter(re.findall(f'[{HAN}]', text))
+        words = [item[1:].translate(PUNCTUATION).strip() if item.startswith(MARK)
+                 else FIXED_TONE.get(next(han), item) for item in items]
         line = ' '.join(word for word in words if word)
         # знаки прилегают к слогу: закрывающие — к предыдущему, открывающие — к следующему
         line = re.sub(r'\s+([,.;:!?)»”…·])', r'\1', line)
@@ -78,7 +82,11 @@ def main() -> None:
     bank = json.loads(BANK.read_text('utf-8'))
     phrases = json.loads(PHRASES.read_text('utf-8'))
     transcribe = transcriber(phrases)
-    table = {text: transcribe(text) for text in sorted(texts(bank))}
+    needed = sorted(texts(bank))
+    table = {text: transcribe(text) for text in needed}
+    unused = [word for word in phrases if not any(word in text for text in needed)]
+    if unused:
+        print(f'исправления, которые больше нигде не встречаются: {", ".join(unused)}')
     TARGET.write_text(json.dumps(table, ensure_ascii=False, indent=0) + '\n', 'utf-8')
     print(f'Пиньинь: {len(table)} строк → {TARGET.relative_to(ROOT)}')
 

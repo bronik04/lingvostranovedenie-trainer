@@ -583,7 +583,7 @@ a:hover { color: var(--accent-on-ground); }
   .next-row { flex-direction: column-reverse; align-items: stretch; }
   /* поля для прокрутки после ответа (к кнопке) и после «Следующего вопроса» (к ходу раунда) */
   .next-row .ink-btn--primary, .recall-rate { scroll-margin-bottom: var(--s-4); }
-  .quiz { scroll-margin-top: var(--s-2); }
+  .quiz, .feedback { scroll-margin-top: var(--s-2); }
   .option { grid-template-columns: 32px minmax(0, 1fr); min-height: 72px; padding: 12px 14px; }
   .option.wrong { padding: 11px 13px; }
   .option-text { font-size: 26px; }

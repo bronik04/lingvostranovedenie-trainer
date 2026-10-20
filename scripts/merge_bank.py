@@ -14,7 +14,7 @@ from normalize import (completeness_errors, fragment_pairs, language_errors, nor
                        option_key, tidy)
 from authored import load_authored, validate_authored
 from dossiers import (cross_leak_errors, dossier_paths, dossier_records, dossier_report, load_dossier,
-                      validate_links, write_dossier_reports)
+                      load_removed, removed_id_errors, validate_links, write_dossier_reports)
 from editorial import apply_editorial, load_editorial
 from embeds import apply_embeds
 from explanations import apply_revisions, load_revisions
@@ -407,6 +407,10 @@ def main() -> None:
     errors = cross_leak_errors(bank, loaded, fact_groups)
     if errors:
         raise ValueError('утечки между вопросами досье:\n - ' + '\n - '.join(errors))
+    # снятый вопрос не возвращается под своим id: прогресс учеников под ним остался в браузерах
+    errors = removed_id_errors((record['id'] for record in bank), load_removed(ROOT / 'data/review/removed.json'))
+    if errors:
+        raise ValueError('id снятых вопросов заняты снова:\n - ' + '\n - '.join(errors))
     # подписи к неверным вариантам — самым последним слоем: они сверяются с
     # текстом варианта уже после всех правок
     bank = apply_glosses(bank, glosses)

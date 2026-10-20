@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from dossiers import REPORT_MARK, check_dossiers, cross_leak_errors, dossier_paths, embed_record, original_record, dossier_records, dossier_report, is_build_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions, write_dossier_reports
+from dossiers import REPORT_MARK, check_dossiers, load_removed, removed_id_errors, cross_leak_errors, dossier_paths, embed_record, original_record, dossier_records, dossier_report, is_build_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions, write_dossier_reports
 from editorial import apply_editorial, validate_editorial
 from embeds import apply_embeds, embed_errors
 
@@ -1145,6 +1145,37 @@ class ReviewFindingsTest(unittest.TestCase):
             mutate(data)
             with self.subTest(mutate=mutate):
                 self.assertTrue(validate_dossier(data))
+
+
+class RemovedIdsTest(unittest.TestCase):
+    """Снятый вопрос не возвращается под своим id: у учеников под ним остался прогресс."""
+
+    def test_removed_id_is_an_error_with_reason(self):
+        removed = {'money-q02': {'reason': 'длинные варианты', 'date': '2026-10-20'}}
+        errors = removed_id_errors(['money-q01', 'money-q02'], removed)
+        self.assertEqual(len(errors), 1)
+        self.assertIn('money-q02', errors[0])
+        self.assertIn('длинные варианты', errors[0])
+        self.assertEqual(removed_id_errors(['money-q01'], removed), [])
+
+    def test_check_dossiers_reports_a_reused_id(self):
+        with tempfile.TemporaryDirectory() as directory:
+            Path(directory, 'money.json').write_text(json.dumps(dossier(), ensure_ascii=False), encoding='utf-8')
+            Path(directory, 'money-questions.json').write_text(
+                json.dumps([question()], ensure_ascii=False), encoding='utf-8')
+            reused = {question()['id']: {'reason': 'снят автором', 'date': '2026-10-20'}}
+            errors, _ = check_dossiers(Path(directory), [], {}, removed=reused)
+        self.assertTrue(any('снят автором' in e for e in errors), errors)
+
+    def test_load_removed_requires_reason_and_date(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory, 'removed.json')
+            path.write_text(json.dumps({'money-q02': {'reason': 'x', 'date': '2026-10-20'}}), encoding='utf-8')
+            self.assertIn('money-q02', load_removed(path))
+            path.write_text(json.dumps({'money-q02': {'reason': ''}}), encoding='utf-8')
+            with self.assertRaises(ValueError):
+                load_removed(path)
+            self.assertEqual(load_removed(Path(directory, 'none.json')), {})
 
 if __name__ == '__main__':
     unittest.main()

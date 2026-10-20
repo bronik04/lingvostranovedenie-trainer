@@ -797,9 +797,28 @@ def dossier_paths(directory: Path) -> list[tuple[Path, Path]]:
     return pairs
 
 
+def load_removed(path: Path) -> dict[str, dict]:
+    """Снятые принятые вопросы (`data/review/removed.json`): id → причина и дата решения автора.
+    Запись из банка удалена, но прогресс учеников под этим id остался в браузерах, поэтому id
+    больше не выдаётся: новый вопрос под ним унаследовал бы чужой прогресс."""
+    if not path.exists():
+        return {}
+    removed = json.loads(path.read_text('utf-8'))
+    for record_id, entry in removed.items():
+        if not isinstance(entry, dict) or not str(entry.get('reason', '')).strip() or not entry.get('date'):
+            raise ValueError(f'{path.name}: {record_id} — нужны reason и date')
+    return removed
+
+
+def removed_id_errors(ids, removed: dict[str, dict]) -> list[str]:
+    return [f'{record_id}: id снятого вопроса ({removed[record_id]["reason"]}) — возьмите новый номер'
+            for record_id in ids if record_id in removed]
+
+
 def check_dossiers(directory: Path, bank: list[dict], glosses: dict[str, dict],
                    groups: dict[str, list[str]] | None = None,
-                   reports: Path | None = None) -> tuple[list[str], list[tuple[dict, list[dict]]]]:
+                   reports: Path | None = None,
+                   removed: dict[str, dict] | None = None) -> tuple[list[str], list[tuple[dict, list[dict]]]]:
     """Все проверки досье без сборки банка — то, что остановит сборку, видно уже у черновиков.
     `reports` — каталог отчётов досье: ручной отчёт под именем отчёта сборки тоже ошибка.
 
@@ -826,6 +845,7 @@ def check_dossiers(directory: Path, bank: list[dict], glosses: dict[str, dict],
     errors += embed_errors(bank, loaded, glosses, drafts=True)
     if reports is not None:
         errors += report_overwrite_errors(reports / f'dossier-{data["id"]}.md' for data, _ in loaded)
+    errors += removed_id_errors((q['id'] for _, questions in loaded for q in questions), removed or {})
     return errors, loaded
 
 
@@ -838,7 +858,8 @@ def main() -> None:
     bank_path = root / 'data/bank.json'
     bank = json.loads(bank_path.read_text('utf-8')) if bank_path.exists() else []
     errors, loaded = check_dossiers(root / 'data/dossiers', bank, load_glosses(root / 'data/review/glosses.json'),
-                                    load_fact_groups(root / 'data/review/fact-groups.json'), root / 'data/review')
+                                    load_fact_groups(root / 'data/review/fact-groups.json'), root / 'data/review',
+                                    load_removed(root / 'data/review/removed.json'))
     for data, questions in loaded:
         accepted = sum(1 for question in questions if question['status'] == 'accepted')
         rows = sum(len(table['rows']) for table in data['tables'].values())

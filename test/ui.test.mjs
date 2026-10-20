@@ -813,16 +813,46 @@ test('фильтр «Откуда вопросы» и пиньинь: раунд
   await page.locator('#pinyinToggle').click();
   assert.equal(await reading.isVisible(), true);
   assert.equal(await page.locator('#pinyinToggle').getAttribute('aria-pressed'), 'true');
+  // клавиша P — то же, что кнопка; по коду клавиши, поэтому и на русской раскладке
+  await page.keyboard.press('KeyP');
+  assert.equal(await reading.isVisible(), false);
+  await page.keyboard.press('KeyP');
+  assert.equal(await reading.isVisible(), true);
   // на телефоне после ответа видна кнопка «Следующий вопрос», после неё — снова начало вопроса
   await page.locator('#options button').first().click();
+  // докрутка к кнопке, но вердикт разбора не уезжает за верх экрана
   await page.waitForFunction(() => {
-    const box = document.getElementById('nextButton').getBoundingClientRect();
-    return box.top >= 0 && box.bottom <= innerHeight;
+    const next = document.getElementById('nextButton').getBoundingClientRect();
+    const verdict = document.querySelector('#feedback .verdict').getBoundingClientRect();
+    return verdict.top >= 0 && (next.bottom <= innerHeight || verdict.top < 40);
   });
   await page.locator('#nextButton').click();
   await page.waitForFunction(() => Math.abs(document.getElementById('quizView').getBoundingClientRect().top) < 40);
   await page.reload();
   assert.equal(await page.evaluate(() => document.documentElement.dataset.pinyin), 'on', 'настройка пережила перезагрузку');
   assert.equal(await page.locator('input[name="studyOrigin"][value="addition"]').isChecked(), true);
+  assert.deepEqual(page.errors, []);
+});
+
+test('телефон: с включённым пиньинем ни один вопрос и вариант не выходит за край экрана', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 375, height: 812 });
+  if (!page) return;
+  await page.locator('#startButton').click();
+  await page.locator('#quizView').waitFor();
+  await page.locator('#pinyinToggle').click();
+  // каждый вопрос банка рисуется в раунде теми же функциями интерфейса
+  const result = await page.evaluate(() => {
+    const overflowing = [];
+    let rubies = 0;
+    for (const record of QUESTION_BANK) {
+      renderOptions(record);
+      document.getElementById('questionText').replaceChildren(...questionNodes(record.questionRu));
+      rubies += document.querySelectorAll('#questionText ruby').length;
+      if (document.documentElement.scrollWidth > document.documentElement.clientWidth) overflowing.push(record.id);
+    }
+    return { overflowing, rubies };
+  });
+  assert.deepEqual(result.overflowing, []);
+  assert.ok(result.rubies > 0, 'над китайскими вставками вопроса есть транскрипция');
   assert.deepEqual(page.errors, []);
 });

@@ -330,6 +330,18 @@ export function needsOptions(record) {
 // HAN_RUN в scripts/pinyin.py: таблица транскрипций собрана по тем же кускам текста
 const HAN = '\\u3400-\\u4dbf\\u4e00-\\u9fff\\uf900-\\ufaff';
 const HAN_RUN = new RegExp(`[${HAN}]+(?:[·・][${HAN}]+)*`, 'g');
+const HAN_CHAR = new RegExp(`[${HAN}]`);
+
+/** Вставка по иероглифам: слог над каждым знаком. Ruby на всю вставку не переносится и на
+ * телефоне выталкивает длинное имя за край экрана, а по знакам строка переносится как обычно.
+ * Если слогов не столько, сколько иероглифов, — одна пара на всю вставку. */
+export function rubyPairs(text, pinyin) {
+  const chars = [...text];
+  const syllables = pinyin.split(/[\s·]+/).filter(Boolean);
+  if (chars.filter((char) => HAN_CHAR.test(char)).length !== syllables.length) return [{ text, pinyin }];
+  let index = 0;
+  return chars.map((char) => (HAN_CHAR.test(char) ? { text: char, pinyin: syllables[index++] } : { text: char }));
+}
 
 /** Русский вопрос по кускам: у китайских вставок — транскрипция из таблицы (если есть). */
 export function pinyinSegments(text, table) {
