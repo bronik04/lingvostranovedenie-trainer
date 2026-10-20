@@ -134,13 +134,14 @@ main { display: block; }
   cursor: pointer;
 }
 .chapter-fold > summary::-webkit-details-marker { display: none; }
-.chapter-fold > summary::after {
-  content: '▾';
+/* стрелка — отдельным элементом с aria-hidden: из ::after она попадала в имя раздела для чтения с экрана */
+.fold-arrow {
+  display: inline-block;
   margin-left: auto;
   color: var(--text-on-ground-muted);
   transition: transform var(--duration-quick) var(--ease-out);
 }
-.chapter-fold[open] > summary::after { transform: rotate(180deg); }
+.chapter-fold[open] .fold-arrow { transform: rotate(180deg); }
 .fold-value { color: var(--text-on-ground-muted); font-size: var(--t-size-caption); }
 .fold-body { display: flex; flex-direction: column; gap: var(--s-4); min-width: 0; margin: var(--s-4) 0 0; padding: 0; border: 0; }
 /* legend внутри flex-контейнера не встаёт в поток — float возвращает его туда */
@@ -390,7 +391,10 @@ select, .search {
 .verdict span { grid-column: 2; color: var(--text-soft); font-size: var(--t-size-caption); }
 .why { max-width: 46em; font-size: var(--t-size-lead); }
 .feedback-sources > summary {
+  display: flex;
+  align-items: center;
   width: fit-content;
+  min-height: var(--target-min);
   color: var(--text-on-ground-muted);
   font-size: var(--t-size-caption);
   font-weight: var(--t-weight-medium);

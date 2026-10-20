@@ -675,8 +675,10 @@ const scrollBehavior = () => (window.matchMedia?.('(prefers-reduced-motion: redu
  * scrollIntoView ставил кнопку под неё. Вверх не прокручивает. */
 function revealOnPhone(element) {
   if (!onPhone()) return;
-  const visible = Math.min(window.innerHeight, window.visualViewport?.height ?? window.innerHeight);
-  const top = window.scrollY + element.getBoundingClientRect().bottom + BOTTOM_GAP - visible;
+  // низ видимой части в координатах окна; при увеличении щипком она сдвинута на offsetTop
+  const viewport = window.visualViewport;
+  const visibleBottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
+  const top = window.scrollY + element.getBoundingClientRect().bottom + BOTTOM_GAP - visibleBottom;
   if (top > window.scrollY + 1) window.scrollTo({ top, behavior: scrollBehavior() });
 }
 

@@ -879,6 +879,13 @@ test('главная: режим, формат и темы свёрнуты, в 
   await page.locator('#modeFold > summary').click();
   await page.locator('input[name="studyMode"][value="new"]').check({ force: true });
   assert.equal(await page.locator('#modeValue').textContent(), 'Новые');
+  // Enter на заголовке раздела раскрывает его, а не начинает раунд («Enter — начать раунд»)
+  await page.locator('#formatFold > summary').focus();
+  await page.keyboard.press('Enter');
+  assert.notEqual(await page.locator('#formatFold').getAttribute('open'), null);
+  assert.equal(await page.evaluate(() => state.view), 'setup');
+  // стрелка раскрытия не входит в имя раздела для чтения с экрана
+  assert.equal(await page.locator('#modeFold .fold-arrow').getAttribute('aria-hidden'), 'true');
   // свёрнутое не мешает начать раунд
   await page.locator('#startButton').click();
   await page.locator('#quizView').waitFor();
@@ -906,5 +913,27 @@ test('телефон: после ответа с длинным разбором
   }, null, { timeout: 5000 });
   assert.equal(await page.locator('#feedback details.feedback-sources').count(), 1);
   assert.equal(await page.locator('#feedback .feedback-sources a').first().isVisible(), false);
+  assert.deepEqual(page.errors, []);
+});
+
+test('телефон: во «Вспомни сам» после самооценки видна кнопка «Следующий вопрос»', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 375, height: 667 });
+  if (!page) return;
+  await page.locator('input[name="studyFormat"][value="recall"]').check({ force: true });
+  await page.locator('#startButton').click();
+  await page.locator('#quizView').waitFor();
+  // вопрос без обязательных вариантов и с самым длинным пояснением
+  await page.evaluate(() => {
+    const longest = QUESTION_BANK.filter((r) => !needsOptions(r))
+      .sort((a, b) => b.explanation.ru.length - a.explanation.ru.length)[0];
+    startRoundWith([longest], 'recall');
+  });
+  await page.locator('#revealAnswer').click();
+  await page.locator('#recallRate button').first().click();
+  await page.waitForFunction(() => {
+    const next = document.getElementById('nextButton').getBoundingClientRect();
+    return next.top >= 0 && next.bottom <= innerHeight;
+  }, null, { timeout: 5000 });
+  assert.equal(await page.evaluate(() => document.activeElement?.id), 'nextButton');
   assert.deepEqual(page.errors, []);
 });
