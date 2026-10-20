@@ -240,19 +240,25 @@ function shuffled(items, random) {
   return copy;
 }
 
-// Из группы «один факт» в раунд берётся одна запись. Это предпочтение, а не запрет:
-// если других вопросов не хватает до нужного размера, оставшиеся записи групп
-// добираются в конец раунда, подальше от своих двойников.
+// Из группы «один факт» и из вопросов об одной строке досье (разные стороны одного
+// факта) в раунд берётся одна запись. Это предпочтение, а не запрет: если других
+// вопросов не хватает до нужного размера, оставшиеся записи добираются в конец
+// раунда, подальше от своих двойников.
+function factKeys(record) {
+  return [record.factGroup && `g:${record.factGroup}`, record.factRow && `r:${record.factRow}`].filter(Boolean);
+}
+
 function onePerFact(ordered, size) {
   const seen = new Set();
   const picked = [];
   const deferred = [];
   for (const record of ordered) {
     if (picked.length === size) break;
-    if (record.factGroup && seen.has(record.factGroup)) {
+    const keys = factKeys(record);
+    if (keys.some((key) => seen.has(key))) {
       deferred.push(record);
     } else {
-      if (record.factGroup) seen.add(record.factGroup);
+      keys.forEach((key) => seen.add(key));
       picked.push(record);
     }
   }
