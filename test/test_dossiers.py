@@ -108,6 +108,35 @@ class ValidateDossierTest(unittest.TestCase):
             with self.subTest(fragment=fragment):
                 self.assertRejects(mutate, fragment)
 
+    def test_core_and_sides_are_accepted(self):
+        data = dossier()
+        data['tables']['banknotes']['sides'] = ['flower', 'back']
+        row(data, 'cny-20')['core'] = True
+        row(data, 'cny-50')['core'] = False
+        self.assertEqual(validate_dossier(data), [])
+
+    def test_rejects_bad_core_and_sides(self):
+        table = lambda d: d['tables']['banknotes']
+        cases = [
+            (lambda d: row(d, 'cny-20').update(core='yes'), 'core — true или false'),
+            (lambda d: table(d).update(sides='flower'), 'sides — список колонок zh'),
+            (lambda d: table(d).update(sides=['series']), 'sides — список колонок zh'),
+            (lambda d: table(d).update(sides=['nope']), 'sides — список колонок zh'),
+            (lambda d: table(d).update(sides=['flower', 'flower']), 'sides: колонки повторяются'),
+        ]
+        for mutate, fragment in cases:
+            with self.subTest(fragment=fragment):
+                self.assertRejects(mutate, fragment)
+
+    def test_report_marks_core_rows_and_sides(self):
+        data = dossier()
+        data['tables']['banknotes']['sides'] = ['flower', 'back']
+        row(data, 'cny-20')['core'] = True
+        report = dossier_report(data, [])
+        self.assertIn('| cny-20 ★ |', report)
+        self.assertIn('| cny-50 |', report)
+        self.assertIn('Стороны: flower, back', report)
+
     def test_cell_without_russian_names_or_gloss_is_valid(self):
         data = dossier()
         row(data, 'cny-50')['back'] = {'zh': '布达拉宫'}

@@ -19,8 +19,9 @@ from strict_json import loads_unique
 from taxonomy import TOPICS
 
 KINDS = {'zh', 'ru'}
-TABLE_FIELDS = {'columns', 'rows', 'required', 'datedQuestions'}
-ROW_SERVICE_FIELDS = {'id', 'sources', 'olympiad'}
+# sides — стороны ядра, core — строка ядра (решение автора 2026-10-21): нет разметки — каркас не утверждён
+TABLE_FIELDS = {'columns', 'rows', 'required', 'datedQuestions', 'sides'}
+ROW_SERVICE_FIELDS = {'id', 'sources', 'olympiad', 'core'}
 CELL_FIELDS = {'zh', 'ru', 'gloss', 'ref', 'from'}
 LINK = re.compile(r'[a-z][a-z0-9-]*/[a-z][a-z0-9_-]*/[a-z0-9][a-z0-9-]*')
 LINK_FIELDS = ('ref', 'from')
@@ -106,6 +107,8 @@ def _row_errors(name: str, index: int, row: object, table: dict, seen_rows: set[
     olympiad = row.get('olympiad', [])
     if not isinstance(olympiad, list) or not all(isinstance(item, str) for item in olympiad):
         errors.append(f'{where}: olympiad — список id олимпиадных вопросов')
+    if not isinstance(row.get('core', False), bool):
+        errors.append(f'{where}: core — true или false')
     return errors
 
 
@@ -144,6 +147,11 @@ def validate_dossier(dossier: object) -> list[str]:
             table = {**table, 'required': []}
         if not isinstance(table.get('datedQuestions', False), bool):
             errors.append(f'{name}: datedQuestions — true или false')
+        sides = table.get('sides', [])
+        if not isinstance(sides, list) or any(columns.get(side) != 'zh' for side in sides):
+            errors.append(f'{name}: sides — список колонок zh этой таблицы')
+        elif len(set(sides)) != len(sides):
+            errors.append(f'{name}: sides: колонки повторяются')
         rows = table.get('rows')
         if not isinstance(rows, list):
             errors.append(f'{name}: rows должен быть списком')
@@ -758,12 +766,15 @@ def dossier_report(dossier: dict, questions: list[dict], bank: list[dict] | None
     for name, table in dossier['tables'].items():
         columns = list(table['columns'])
         lines += [f'## Таблица `{name}` — строк: {len(table["rows"])}', '']
+        if table.get('sides'):
+            lines += [f'Стороны: {", ".join(table["sides"])}. Строки ядра отмечены ★.', '']
         if table['rows']:
             lines.append('| id | ' + ' | '.join(columns) + ' | olympiad |')
             lines.append('|' + '---|' * (len(columns) + 2))
             for row in table['rows']:
                 cells = ' | '.join(_report_cell(row.get(column)) for column in columns)
-                lines.append(f'| {row["id"]} | {cells} | {", ".join(row.get("olympiad", []))} |')
+                mark = ' ★' if row.get('core') else ''
+                lines.append(f'| {row["id"]}{mark} | {cells} | {", ".join(row.get("olympiad", []))} |')
             lines.append('')
     accepted = sum(1 for question in questions if question['status'] == 'accepted')
     lines += [f'## Вопросы — принято {accepted} из {len(questions)}', '']
