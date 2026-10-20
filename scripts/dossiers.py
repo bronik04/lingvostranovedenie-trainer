@@ -565,7 +565,7 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
     for question in whole:
         place = _answer_place(question, dossier)
         for other_id, (answer, other_place) in answers.items():
-            if (other_id == question['id'] or _bridged(place, other_place)
+            if (other_id == question['id'] or _bridged(place, other_place) or _same_row(place, other_place)
                     or _same_group(group_of, question['id'], other_id)):
                 continue
             names = _mentions(question['questionRu'], answer)
@@ -608,6 +608,12 @@ def _bridged(place: tuple, other_place: tuple) -> bool:
             or other_column in other_links.get(row, set()))
 
 
+def _same_row(place: tuple, other_place: tuple) -> bool:
+    """Решение автора 2026-10-21: вопросы об одной строке — разные стороны одного факта, их
+    взаимная подсказка не утечка; в один раунд их не ставит `factRow` (src/quiz.mjs)."""
+    return place[0] == other_place[0]
+
+
 def _group_owner(groups: dict[str, list[str]] | None) -> dict[str, str]:
     return {record_id: group_id for group_id, ids in (groups or {}).items() for record_id in ids}
 
@@ -629,6 +635,7 @@ def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
     стоят внутри других слов (唐僧, 秦始皇). Решение автора 2026-10-17: мостик — только название
     связанной строки или связующая ячейка (`_bridged`); прочие взаимные подсказки связанных строк
     закрывает группа фактов `groups` — по id записи (у встроенного вопроса — олимпиадной).
+    Решение автора 2026-10-21: стороны одной строки — не утечка (`_same_row`).
     """
     by_id = {record['id']: record for record in bank}
     entries: list[tuple[str, str, str, dict, tuple, str]] = []
@@ -650,7 +657,7 @@ def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
     errors: list[str] = []
     for dossier_id, label, text, _, place, record_id in entries:
         for other_dossier, other, _, answer, other_place, other_record in entries:
-            if (other == label or _bridged(place, other_place)
+            if (other == label or _bridged(place, other_place) or _same_row(place, other_place)
                     or _same_group(group_of, record_id, other_record)):
                 continue
             if other_dossier != dossier_id and len(answer['zh'].strip()) == 1:

@@ -294,11 +294,19 @@ class ValidateQuestionsTest(unittest.TestCase):
         series = question(questionRu='Какой цветок изображён на купюре 20 юаней пятой серии?')
         self.assertEqual(self.errors([series]), [])
 
-    def test_rejects_a_leak_between_questions(self):
+    def test_two_sides_of_one_row_are_not_a_leak(self):
+        # решение автора 2026-10-21: прямой и обратный вопрос об одной строке — разные стороны,
+        # раунд разводит их по factRow
         reverse = question(id='money-q02', fact={'table': 'banknotes', 'row': 'cny-20', 'ask': 'denomination',
                                                  'given': 'flower', 'where': {'currency': '人民币'}},
                            questionRu='На купюре какого номинала выпуска 2019 года изображён цветок 荷花?')
-        self.assertRejects([question(), reverse], 'money-q02: текст называет ответ вопроса money-q01')
+        self.assertEqual(self.errors([question(), reverse]), [])
+
+    def test_rejects_a_leak_between_rows(self):
+        other = question(id='money-q02', fact={'table': 'banknotes', 'row': 'cny-50', 'ask': 'flower',
+                                               'where': {'currency': '人民币'}},
+                         questionRu='Какой цветок, кроме 荷花, изображён на купюре 50 юаней выпуска 2019 года?')
+        self.assertRejects([question(), other], 'money-q02: текст называет ответ вопроса money-q01')
 
     def test_rejects_bad_status_check_id_topic_and_fields(self):
         cases = [
@@ -747,6 +755,11 @@ class CrossLeakTest(unittest.TestCase):
         loaded = [(dossier(), [embed()]), (myths_dossier(), [myths_question(questionRu='Какая богиня правила колесницей Солнца?')])]
         errors = cross_leak_errors([record], loaded)
         self.assertTrue(any(e.startswith('money/money-q02: текст называет ответ вопроса myths/myths-q01') for e in errors))
+
+    def test_sides_of_one_row_across_own_and_embedded_questions_are_not_a_leak(self):
+        record = olympiad(questionRu='На купюре какого номинала изображён цветок 荷花?')
+        reverse = embed(fact={'table': 'banknotes', 'row': 'cny-20', 'ask': 'denomination', 'where': {'currency': '人民币'}})
+        self.assertEqual(cross_leak_errors([record], [(dossier(), [question(), reverse])]), [])
 
     def test_edited_text_in_the_bank_wins_over_the_file(self):
         edited = {'id': 'myths-q01', 'questionRu': 'Какая богиня правила колесницей Солнца?'}
