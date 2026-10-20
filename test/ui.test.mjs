@@ -327,12 +327,66 @@ test('прогресс склеенного дубля переезжает на
   await page.evaluate(() => localStorage.clear());
   await page.reload();
   assert.equal(await page.locator('#bankCount').textContent(), `Пройдено 0 из ${bank.length}`);
+  page.once('dialog', (dialog) => dialog.accept());
   await page.locator('#importProgressFile').setInputFiles({
     name: 'progress.json', mimeType: 'application/json', buffer: Buffer.from(stored),
   });
   await page.waitForFunction((id) => state.progress[id], kept.id);
   assert.deepEqual(await page.evaluate(() => Object.keys(state.progress)), [kept.id]);
   assert.equal(await page.locator('#bankCount').textContent(), `Пройдено 1 из ${bank.length}`);
+  assert.deepEqual(page.errors, []);
+});
+
+test('файл прогресса несёт и «Чэнъюй»; загрузка — только после подтверждения', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const [record] = await bankOf(page);
+  const [cyRecord] = await page.evaluate(() => CHENGYU_BANK);
+  const cyProgress = { [cyRecord.id]: { attempts: 1, correct: 0, lastCorrect: false } };
+  await page.evaluate(([id, cyValue]) => {
+    localStorage.setItem('lingvo-trainer:v1', JSON.stringify({ version: 1, progress: { [id]: {
+      attempts: 2, correct: 1, completed: true, lastCorrect: false, box: 0, dueAt: 1 } } }));
+    localStorage.setItem('lingvo-trainer:chengyu:v1', JSON.stringify({ version: 1, progress: cyValue }));
+  }, [record.id, cyProgress]);
+  await page.reload();
+
+  // сохранение: перехватываем Blob, который уходит в ссылку на скачивание
+  const saved = await page.evaluate(async () => {
+    let blob = null;
+    URL.createObjectURL = (value) => { blob = value; return 'blob:test'; };
+    HTMLAnchorElement.prototype.click = () => {};
+    document.getElementById('exportProgress').click();
+    return JSON.parse(await blob.text());
+  });
+  assert.deepEqual(Object.keys(saved.progress), [record.id]);
+  assert.deepEqual(saved.chengyu, cyProgress);
+
+  const upload = (value) => page.locator('#importProgressFile').setInputFiles({
+    name: 'progress.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(value)),
+  });
+  // отказ в подтверждении ничего не меняет
+  await page.evaluate(() => localStorage.clear());
+  await page.reload();
+  const asked = page.waitForEvent('dialog');
+  await upload(saved);
+  const dialog = await asked;
+  assert.match(dialog.message(), /основного тренажёра и «Чэнъюй».*будет заменён/);
+  await dialog.dismiss();
+  assert.deepEqual(await page.evaluate(() => [state.progress, cy.progress]), [{}, {}]);
+
+  // согласие загружает оба раздела
+  page.once('dialog', (dialog) => dialog.accept());
+  await upload(saved);
+  await page.waitForFunction((id) => state.progress[id], record.id);
+  assert.deepEqual(await page.evaluate(() => cy.progress), cyProgress);
+  const storedCy = await page.evaluate(() => JSON.parse(localStorage.getItem('lingvo-trainer:chengyu:v1')));
+  assert.deepEqual(storedCy.progress, cyProgress);
+
+  // файл прежней версии без «Чэнъюй» прогресс этого раздела не стирает
+  page.once('dialog', (dialog) => dialog.accept());
+  await upload({ version: 1, progress: {} });
+  await page.waitForFunction(() => Object.keys(state.progress).length === 0);
+  assert.deepEqual(await page.evaluate(() => cy.progress), cyProgress);
   assert.deepEqual(page.errors, []);
 });
 

@@ -214,9 +214,11 @@ function saveStudySettings() {
   } catch {}
 }
 
+// в файле — прогресс обоих разделов: `chengyu` (cy из src/chengyu.ui.js) прежние версии
+// тренажёра просто не читают, поэтому версия формата остаётся первой
 function exportProgress() {
-  const blob = new Blob([JSON.stringify({ version: 1, progress: state.progress }, null, 2)],
-    { type: 'application/json' });
+  const saved = { version: 1, progress: state.progress, chengyu: cy.progress };
+  const blob = new Blob([JSON.stringify(saved, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
@@ -230,11 +232,20 @@ function importProgress(file) {
   reader.onload = () => {
     try {
       const parsed = JSON.parse(reader.result);
-      if (parsed.version !== 1 || !isValidProgress(parsed.progress)) {
+      if (parsed.version !== 1 || !isValidProgress(parsed.progress)
+          || ('chengyu' in parsed && !cyIsValidProgress(parsed.chengyu))) {
         throw new Error('неверный формат файла');
       }
+      // в файле из прежней версии нет «Чэнъюй» — тогда прогресс этого раздела не трогаем
+      const sections = 'chengyu' in parsed ? 'основного тренажёра и «Чэнъюй»' : 'основного тренажёра';
+      if (!confirm(`Загрузить прогресс из файла? Текущий прогресс ${sections} на этом устройстве будет заменён.`)) return;
       state.progress = migrateProgress(QUESTION_BANK, parsed.progress);
       saveProgress();
+      if ('chengyu' in parsed) {
+        cy.progress = parsed.chengyu;
+        cySaveProgress();
+        cyRenderSetup();
+      }
       renderSetup();
     } catch {
       alert('Не удалось загрузить прогресс: файл повреждён или сохранён другой версией тренажёра.');

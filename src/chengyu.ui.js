@@ -1,7 +1,8 @@
 /*
  * Раздел «Чэнъюй». Работает в той же странице, что и основной тренажёр: берёт у него
  * $, show, escapeHtml, pluralRu и state.view (src/quiz.ui.js, src/quiz.mjs), логика —
- * src/chengyu.mjs. Прогресс и настройки хранятся отдельно от основного раздела.
+ * src/chengyu.mjs. Прогресс и настройки хранятся отдельно от основного раздела; в файл
+ * прогресса (exportProgress/importProgress в src/quiz.ui.js) cy.progress идёт вместе с ним.
  */
 
 const CY_STORAGE_KEY = 'lingvo-trainer:chengyu:v1';
