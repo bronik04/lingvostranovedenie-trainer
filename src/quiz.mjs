@@ -1,6 +1,8 @@
 const PLAYABLE = new Set(['verified', 'unverified']);
 const LABELS = ['A', 'B', 'C', 'D'];
 const STUDY_MODES = new Set(['all', 'new', 'mistakes', 'due']);
+// откуда вопросы раунда: все, только с олимпиад или только дополнения к ним
+const ORIGINS = new Set(['all', 'olympiad', 'addition']);
 const ROUND_SIZES = new Set([5, 10, 20, 50, Number.MAX_SAFE_INTEGER]);
 export const FORMATS = new Set(['choice', 'recall', 'truefalse']);
 const OUTCOMES = new Set(['correct', 'partial', 'wrong', 'checked']);
@@ -95,7 +97,7 @@ export function matchesDatabaseSearch(record, query) {
 
 export function normaliseStudySettings(value, bank) {
   const defaults = {
-    filters: { topics: [], years: [], stages: [], mode: 'all', onlyVerified: false },
+    filters: { topics: [], years: [], stages: [], mode: 'all', onlyVerified: false, origin: 'all' },
     size: 10,
     format: 'choice',
   };
@@ -117,6 +119,7 @@ export function normaliseStudySettings(value, bank) {
       stages: availableValues(filters.stages, stages),
       mode: STUDY_MODES.has(filters.mode) ? filters.mode : defaults.filters.mode,
       onlyVerified: typeof filters.onlyVerified === 'boolean' ? filters.onlyVerified : false,
+      origin: ORIGINS.has(filters.origin) ? filters.origin : defaults.filters.origin,
     },
     size: ROUND_SIZES.has(value.size) ? value.size : defaults.size,
     format: FORMATS.has(value.format) ? value.format : defaults.format,
@@ -195,6 +198,8 @@ export function eligible(bank, filters, progress, now = Date.now()) {
     if (filters.mode === 'due' && (!progress[record.id]?.completed || progress[record.id].dueAt > now)) return false;
     if (filters.topics.length && !filters.topics.includes(record.topic)) return false;
     const isAddition = record.origin === 'addition';
+    if (filters.origin === 'olympiad' && isAddition) return false;
+    if (filters.origin === 'addition' && !isAddition) return false;
     if (isAddition && (filters.years.length || filters.stages.length)) return false;
     if (!isAddition && !matchingOccurrence(record, filters)) return false;
     return true;
@@ -319,6 +324,36 @@ const NEGATED_MEMBERSHIP = /(?<![а-яё])не\s+(является|являлс�
 
 export function needsOptions(record) {
   return LISTED_OPTIONS.test(record.questionRu) || NEGATED_MEMBERSHIP.test(record.questionRu);
+}
+
+// китайская вставка в русском вопросе: иероглифы, имена с «·» внутри. То же выражение —
+// HAN_RUN в scripts/pinyin.py: таблица транскрипций собрана по тем же кускам текста
+const HAN = '\\u3400-\\u4dbf\\u4e00-\\u9fff\\uf900-\\ufaff';
+const HAN_RUN = new RegExp(`[${HAN}]+(?:[·・][${HAN}]+)*`, 'g');
+const HAN_CHAR = new RegExp(`[${HAN}]`);
+
+/** Вставка по иероглифам: слог над каждым знаком. Ruby на всю вставку не переносится и на
+ * телефоне выталкивает длинное имя за край экрана, а по знакам строка переносится как обычно.
+ * Если слогов не столько, сколько иероглифов, — одна пара на всю вставку. */
+export function rubyPairs(text, pinyin) {
+  const chars = [...text];
+  const syllables = pinyin.split(/[\s·]+/).filter(Boolean);
+  if (chars.filter((char) => HAN_CHAR.test(char)).length !== syllables.length) return [{ text, pinyin }];
+  let index = 0;
+  return chars.map((char) => (HAN_CHAR.test(char) ? { text: char, pinyin: syllables[index++] } : { text: char }));
+}
+
+/** Русский вопрос по кускам: у китайских вставок — транскрипция из таблицы (если есть). */
+export function pinyinSegments(text, table) {
+  const parts = [];
+  let last = 0;
+  for (const match of text.matchAll(HAN_RUN)) {
+    if (match.index > last) parts.push({ text: text.slice(last, match.index) });
+    parts.push({ text: match[0], pinyin: table[match[0]] });
+    last = match.index + match[0].length;
+  }
+  if (last < text.length) parts.push({ text: text.slice(last) });
+  return parts;
 }
 
 export function pluralRu(count, forms) {

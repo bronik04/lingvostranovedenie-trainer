@@ -20,7 +20,17 @@
     python3 scripts/merge_bank.py         # data/raw/ -> data/bank.json + отчёты
     python3 scripts/taxonomy.py           # проставить темы
     python3 scripts/coverage_map.py       # карта покрытия: data/review/coverage.md
+    python3 scripts/pinyin.py             # пиньинь: data/bank.json -> data/pinyin.json
     python3 scripts/build_html.py         # data/bank.json -> dist/
+
+`data/pinyin.json` пишет только `scripts/pinyin.py` (нужен `pip install pypinyin==0.55.0`,
+в CI ставится сам); неверное чтение многозначного иероглифа исправляется в
+`data/pinyin-phrases.json`, после чего скрипт запускается заново. Без этого шага сборка не
+падает: текст без записи просто идёт без транскрипции, а сборка пишет, сколько таких строк.
+
+Снятые автором принятые вопросы перечислены в `data/review/removed.json` (причина и дата):
+под их id у учеников остался прогресс, поэтому id не выдаются снова — `scripts/dossiers.py`
+и сборка остановятся на вопросе с таким id.
 
 Оформление — дизайн-система «Тушь и киноварь». `src/ink/` — копия её токенов и
 компонентов: здесь не править, правка идёт в систему, сюда — новая копия. `src/fonts/` —

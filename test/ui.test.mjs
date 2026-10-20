@@ -73,9 +73,10 @@ const bankOf = (page) => page.evaluate(() => QUESTION_BANK);
  * общим набором неверных вариантов на экране только четыре из них, поэтому
  * показанные варианты должны входить в запись, а не совпадать с ней целиком. */
 async function currentRecord(page, bank) {
-  const question = await page.locator('#questionText').textContent();
+  // innerText, а не textContent: скрытая транскрипция (настройка «Пиньинь» выключена) не текст вопроса
+  const question = await page.locator('#questionText').innerText();
   const shown = await page.locator('#options button').evaluateAll((buttons) => buttons
-    .map((b) => `${b.dataset.optionId}=${b.querySelector('span:nth-child(2)').textContent}`));
+    .map((b) => `${b.dataset.optionId}=${b.querySelector('span:nth-child(2)').innerText}`));
   const matches = bank.filter((r) => r.questionRu === question
     && shown.every((item) => r.options.some((o) => `${o.id}=${o.zh}` === item)));
   assert.equal(matches.length, 1, `вопрос на экране не определить однозначно: ${question}`);
@@ -630,7 +631,7 @@ test('верно или нет: ошибка объясняется, возвр�
     assert.equal(await page.locator('#tfPanel').isVisible(), true);
     assert.equal(await page.locator('#options button').count(), 0);
     const statement = await currentStatement(page);
-    assert.equal(await page.locator('#tfOption').textContent(), statement.zh);
+    assert.equal(await page.locator('#tfOption').innerText(), statement.zh);
     const mistake = questions === 1;
     // ← — «верно», → — «неверно»; ошибаемся только на первом вопросе
     const sayTrue = mistake ? !statement.isTrue : statement.isTrue;
@@ -793,5 +794,65 @@ test('чэнъюй: ссылка #chengyu открывает раздел, те�
   await page.locator('#cyOpenReference').click();
   await page.locator('#cyReferenceList article summary').first().click();
   assert.equal(await overflow(), 0, 'справочник');
+  assert.deepEqual(page.errors, []);
+});
+
+test('фильтр «Откуда вопросы» и пиньинь: раунд из дополнений, транскрипция по кнопке в шапке', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 375, height: 812 });
+  if (!page) return;
+  const bank = await page.evaluate(() => QUESTION_BANK);
+  const additions = bank.filter((record) => record.origin === 'addition').length;
+  await page.locator('input[name="studyOrigin"][value="addition"]').check({ force: true });
+  assert.match(await page.locator('#eligibleNotice').textContent(), new RegExp(`: ${additions}\\.`));
+  await page.locator('#startButton').click();
+  await page.locator('#quizView').waitFor();
+  assert.equal(await page.locator('#sourceLabel').textContent(), 'Проверенное дополнение');
+  // транскрипция в разметке есть, но видна только по настройке — и переключается посреди вопроса
+  const reading = page.locator('#options .pinyin').first();
+  assert.equal(await reading.isVisible(), false);
+  await page.locator('#pinyinToggle').click();
+  assert.equal(await reading.isVisible(), true);
+  assert.equal(await page.locator('#pinyinToggle').getAttribute('aria-pressed'), 'true');
+  // клавиша P — то же, что кнопка; по коду клавиши, поэтому и на русской раскладке
+  await page.keyboard.press('KeyP');
+  assert.equal(await reading.isVisible(), false);
+  await page.keyboard.press('KeyP');
+  assert.equal(await reading.isVisible(), true);
+  // на телефоне после ответа видна кнопка «Следующий вопрос», после неё — снова начало вопроса
+  await page.locator('#options button').first().click();
+  // докрутка к кнопке, но вердикт разбора не уезжает за верх экрана
+  await page.waitForFunction(() => {
+    const next = document.getElementById('nextButton').getBoundingClientRect();
+    const verdict = document.querySelector('#feedback .verdict').getBoundingClientRect();
+    return verdict.top >= 0 && (next.bottom <= innerHeight || verdict.top < 40);
+  });
+  await page.locator('#nextButton').click();
+  await page.waitForFunction(() => Math.abs(document.getElementById('quizView').getBoundingClientRect().top) < 40);
+  await page.reload();
+  assert.equal(await page.evaluate(() => document.documentElement.dataset.pinyin), 'on', 'настройка пережила перезагрузку');
+  assert.equal(await page.locator('input[name="studyOrigin"][value="addition"]').isChecked(), true);
+  assert.deepEqual(page.errors, []);
+});
+
+test('телефон: с включённым пиньинем ни один вопрос и вариант не выходит за край экрана', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 375, height: 812 });
+  if (!page) return;
+  await page.locator('#startButton').click();
+  await page.locator('#quizView').waitFor();
+  await page.locator('#pinyinToggle').click();
+  // каждый вопрос банка рисуется в раунде теми же функциями интерфейса
+  const result = await page.evaluate(() => {
+    const overflowing = [];
+    let rubies = 0;
+    for (const record of QUESTION_BANK) {
+      renderOptions(record);
+      document.getElementById('questionText').replaceChildren(...questionNodes(record.questionRu));
+      rubies += document.querySelectorAll('#questionText ruby').length;
+      if (document.documentElement.scrollWidth > document.documentElement.clientWidth) overflowing.push(record.id);
+    }
+    return { overflowing, rubies };
+  });
+  assert.deepEqual(result.overflowing, []);
+  assert.ok(result.rubies > 0, 'над китайскими вставками вопроса есть транскрипция');
   assert.deepEqual(page.errors, []);
 });

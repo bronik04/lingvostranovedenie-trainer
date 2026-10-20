@@ -18,6 +18,7 @@ from normalize import completeness_errors, fragment_pairs, language_errors
 from taxonomy import TOPICS
 from authored import validate_authored
 import chengyu
+import pinyin
 
 TARGET = ROOT / 'dist/lingvostranovedenie-trainer.html'
 
@@ -102,6 +103,17 @@ def stylesheet() -> str:
     return '\n'.join(parts)
 
 
+def pinyin_table(bank: list[dict]) -> dict[str, str]:
+    """Транскрипции для настройки «Пиньинь» — только текст, который есть в банке.
+    Таблицу пишет scripts/pinyin.py; текст без записи просто идёт без транскрипции."""
+    table = json.loads((ROOT / 'data/pinyin.json').read_text('utf-8'))
+    needed = pinyin.texts(bank)
+    missing = needed - table.keys()
+    if missing:
+        print(f'пиньинь: нет транскрипции у {len(missing)} строк — запустите python3 scripts/pinyin.py')
+    return {text: table[text] for text in sorted(needed - missing)}
+
+
 def main() -> None:
     bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
     errors = validate(bank)
@@ -119,6 +131,7 @@ def main() -> None:
     engine = minify_js((ROOT / 'src/quiz.mjs').read_text('utf-8').replace('export ', ''))
     html = html.replace('/*QUIZ_ENGINE*/', engine)
     html = html.replace('/*QUESTION_BANK*/', serialize_bank(bank))
+    html = html.replace('/*PINYIN*/', serialize_bank(pinyin_table(bank)))
     html = html.replace('/*QUIZ_UI*/', minify_js((ROOT / 'src/quiz.ui.js').read_text('utf-8')))
     # раздел «Чэнъюй»: свой банк (олимпиадные + принятые составленные), движок и интерфейс
     chengyu_bank = chengyu.published(olympiad_chengyu, draft_chengyu)
