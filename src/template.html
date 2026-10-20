@@ -38,6 +38,10 @@
     </nav>
     <div class="ink-header__tools site-tools">
       <span class="count" id="bankCount"></span>
+      <button class="ink-btn ink-btn--text theme" id="pinyinToggle" type="button" aria-pressed="false"
+        title="Транскрипция пиньинь к китайскому тексту вопросов и вариантов">
+        <span id="pinyinLabel">Пиньинь: выкл</span>
+      </button>
       <button class="ink-btn ink-btn--text theme" id="themeToggle" type="button">
         <span id="themeLabel">Тема</span>
       </button>
@@ -93,6 +97,15 @@
         <legend class="ink-title-2">Темы раунда</legend>
         <p class="ink-caption">Если не выбрать темы, в раунд попадут вопросы из всех разделов.</p>
         <div class="topics" id="topicControls"></div>
+        <div class="origin-filter">
+          <p class="ink-caption origin-title" id="originTitle">Откуда вопросы</p>
+          <div class="ink-pills mode-options" role="radiogroup" aria-labelledby="originTitle">
+            <label class="mode-option"><input type="radio" name="studyOrigin" value="all" checked><span class="ink-pill">Все</span></label>
+            <label class="mode-option"><input type="radio" name="studyOrigin" value="olympiad"><span class="ink-pill">Были на олимпиаде</span></label>
+            <label class="mode-option"><input type="radio" name="studyOrigin" value="addition"><span class="ink-pill">Дополнения</span></label>
+          </div>
+          <p class="ink-caption mode-help" id="originHelp"></p>
+        </div>
         <details class="more">
           <summary>Год и этап олимпиады</summary>
           <div class="field-row">
@@ -401,6 +414,7 @@
 </div>
 <script>
 const QUESTION_BANK = /*QUESTION_BANK*/;
+const PINYIN = /*PINYIN*/;
 /*QUIZ_ENGINE*/
 const CHENGYU_BANK = /*CHENGYU_BANK*/;
 /*CHENGYU_ENGINE*/

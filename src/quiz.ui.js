@@ -1,6 +1,7 @@
 const STORAGE_KEY = 'lingvo-trainer:v1';
 const STUDY_SETTINGS_KEY = 'lingvo-trainer:settings:v1';
 const THEME_KEY = 'lingvo-trainer:theme';
+const PINYIN_KEY = 'lingvo-trainer:pinyin';
 const STAGE_NAMES = {
   pri: 'пригласительный', shk: 'школьный', mun: 'муниципальный',
   reg: 'региональный', zak: 'заключительный',
@@ -41,7 +42,7 @@ const QUIZ_HINTS = {
 const $ = (id) => document.getElementById(id);
 
 const defaultFilters = () => ({
-  topics: [], years: [], stages: [], mode: 'all', onlyVerified: false,
+  topics: [], years: [], stages: [], mode: 'all', onlyVerified: false, origin: 'all',
 });
 
 function defaultStudySettings() {
@@ -126,6 +127,57 @@ function toggleTheme() {
   } catch {
     /* выбор не переживёт перезагрузку, но в этой сессии работает */
   }
+}
+
+/* ---------- пиньинь ---------- */
+
+// транскрипция лежит в разметке всегда, а показывает её атрибут на <html>: настройку можно
+// переключить посреди вопроса, ничего не перерисовывая
+function applyPinyin(on) {
+  document.documentElement.dataset.pinyin = on ? 'on' : 'off';
+  $('pinyinLabel').textContent = on ? 'Пиньинь: вкл' : 'Пиньинь: выкл';
+  $('pinyinToggle').setAttribute('aria-pressed', String(on));
+}
+
+function initPinyin() {
+  let on = false;
+  try {
+    on = localStorage.getItem(PINYIN_KEY) === 'on';
+  } catch { /* приватный режим: по умолчанию выключено */ }
+  applyPinyin(on);
+}
+
+function togglePinyin() {
+  const on = document.documentElement.dataset.pinyin !== 'on';
+  applyPinyin(on);
+  try {
+    localStorage.setItem(PINYIN_KEY, on ? 'on' : 'off');
+  } catch {}
+}
+
+/** Строка транскрипции под китайским текстом; null, если её нет в таблице. */
+function pinyinLine(text) {
+  if (!PINYIN[text]) return null;
+  const line = document.createElement('span');
+  line.className = 'pinyin';
+  line.lang = 'zh-Latn-pinyin';
+  line.textContent = PINYIN[text];
+  return line;
+}
+
+/** Русский вопрос: над китайскими вставками — транскрипция (<ruby>). */
+function questionNodes(text) {
+  return pinyinSegments(text, PINYIN).map((part) => {
+    if (!part.pinyin) return document.createTextNode(part.text);
+    const ruby = document.createElement('ruby');
+    ruby.lang = 'zh-Hans';
+    const reading = document.createElement('rt');
+    reading.className = 'pinyin';
+    reading.lang = 'zh-Latn-pinyin';
+    reading.textContent = part.pinyin;
+    ruby.append(part.text, reading);
+    return ruby;
+  });
 }
 
 /* ---------- прогресс ---------- */
@@ -322,6 +374,16 @@ function renderSetup() {
     input.checked = input.value === state.format;
   }
   $('formatHelp').textContent = FORMAT_COPY[state.format];
+  for (const input of document.querySelectorAll('input[name="studyOrigin"]')) {
+    input.checked = input.value === state.filters.origin;
+  }
+  const additions = QUESTION_BANK.filter((record) => record.origin === 'addition').length;
+  const olympiad = QUESTION_BANK.length - additions;
+  $('originHelp').textContent = {
+    all: `Задания олимпиад (${olympiad}) и проверенные дополнения к ним (${additions}).`,
+    olympiad: `Только задания, которые были на ВсОШ: ${olympiad}.`,
+    addition: `Только проверенные дополнения — на олимпиаде их не было: ${additions}. Год и этап к ним не относятся.`,
+  }[state.filters.origin];
   $('verifiedFilterWrap').hidden = !QUESTION_BANK.some((record) => record.answer.state === 'unverified');
 
   const pool = eligible(QUESTION_BANK, state.filters, state.progress);
@@ -400,8 +462,8 @@ function renderQuestion() {
   $('originPill').hidden = !origin.isAddition;
   $('unverifiedPill').hidden = record.answer.state !== 'unverified';
   $('retryPill').hidden = !isRepeatInRound(state.round, state.position);
-  $('questionText').textContent = record.questionRu;
-  $('questionZh').textContent = record.questionZh || '';
+  $('questionText').replaceChildren(...questionNodes(record.questionRu));
+  $('questionZh').replaceChildren(...[record.questionZh || '', pinyinLine(record.questionZh)].filter(Boolean));
   $('questionZh').hidden = !record.questionZh;
 
   $('feedback').className = 'feedback hidden';
@@ -415,7 +477,7 @@ function renderQuestion() {
   if (state.roundFormat === 'truefalse') {
     setStage('tf');
     state.statement = trueFalseStatement(record);
-    $('tfOption').textContent = state.statement.zh;
+    $('tfOption').replaceChildren(...[state.statement.zh, pinyinLine(state.statement.zh)].filter(Boolean));
     for (const button of $('tfPanel').querySelectorAll('button')) {
       button.disabled = false;
       button.removeAttribute('aria-pressed');
@@ -452,7 +514,7 @@ function renderOptions(record) {
     const caption = document.createElement('span');
     caption.className = 'option-text';
     caption.lang = 'zh-Hans';
-    caption.textContent = option.zh;
+    caption.append(...[option.zh, pinyinLine(option.zh)].filter(Boolean));
     button.append(letter, caption);
     button.addEventListener('click', () => chooseOption(record, option.optionId));
     $('options').append(button);
@@ -566,11 +628,19 @@ function showFeedback(record, kind, verdictHtml) {
       : '',
   ].join('');
   requestAnimationFrame(() => {
-    const compact = window.matchMedia?.('(max-width: 600px)').matches;
-    const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
     $('feedback').focus({ preventScroll: true });
-    if (compact) $('feedback').scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'nearest' });
+    // на телефоне докручиваем до следующего шага под разбором: кнопки «Следующий вопрос»,
+    // а во «Вспомни сам» до неё — до самооценки
+    const next = [$('nextButton'), $('recallRate')].find((element) => !element.classList.contains('hidden'));
+    scrollOnPhone(next || $('feedback'), 'nearest');
   });
+}
+
+/** Прокрутка только на узком экране: на компьютере вопрос с разбором и так виден целиком. */
+function scrollOnPhone(element, block) {
+  if (!window.matchMedia?.('(max-width: 600px)').matches) return;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  element.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block });
 }
 
 /* ---------- «Вспомни сам» ---------- */
@@ -586,8 +656,10 @@ function revealAnswer() {
   const right = record.options.find((option) => option.id === record.answer.optionId);
   setStage('rate');
   $('recallPrompt').classList.add('hidden');
+  const reading = PINYIN[right.zh]
+    ? `<span class="pinyin" lang="zh-Latn-pinyin">${escapeHtml(PINYIN[right.zh])}</span>` : '';
   showFeedback(record, 'reveal',
-    `<strong lang="zh-Hans">${escapeHtml(right.zh)}</strong><span>Правильный ответ</span>`);
+    `<strong lang="zh-Hans">${escapeHtml(right.zh)}</strong>${reading}<span>Правильный ответ</span>`);
   $('recallRate').classList.remove('hidden');
 }
 
@@ -668,7 +740,11 @@ function nextQuestion() {
     state.round.splice(state.position, 0, retry.record);
   }
   if (state.position >= state.round.length) finishRound();
-  else renderQuestion();
+  else {
+    renderQuestion();
+    // после разбора страница прокручена вниз — новый вопрос начинается выше
+    scrollOnPhone($('quizView'), 'start');
+  }
 }
 
 function finishRound() {
@@ -901,6 +977,7 @@ document.addEventListener('keydown', (event) => {
 /* ---------- обвязка ---------- */
 
 $('themeToggle').addEventListener('click', toggleTheme);
+$('pinyinToggle').addEventListener('click', togglePinyin);
 // шапка — ссылки, чтобы работали и без скрипта, но внутри страницы они просто меняют экран
 for (const id of ['homeLink', 'navSetup']) {
   $(id).addEventListener('click', (event) => {
@@ -947,6 +1024,13 @@ $('onlyVerified').addEventListener('change', (event) => {
 for (const input of document.querySelectorAll('input[name="studyMode"]')) {
   input.addEventListener('change', (event) => {
     state.filters.mode = event.target.value;
+    saveStudySettings();
+    renderSetup();
+  });
+}
+for (const input of document.querySelectorAll('input[name="studyOrigin"]')) {
+  input.addEventListener('change', (event) => {
+    state.filters.origin = event.target.value;
     saveStudySettings();
     renderSetup();
   });
@@ -1000,6 +1084,7 @@ $('importProgressFile').addEventListener('change', (event) => {
 $('footerNote').textContent = bankSummary(QUESTION_BANK);
 
 initTheme();
+initPinyin();
 renderStats();
 renderSetup();
 show('setup');

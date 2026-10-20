@@ -301,16 +301,16 @@ test('настройки отбрасывают повреждённые и ус
     size: 20,
   }, bank), {
     filters: {
-      topics: [], years: ['2015-16'], stages: ['shk'], mode: 'due', onlyVerified: true,
+      topics: [], years: ['2015-16'], stages: ['shk'], mode: 'due', onlyVerified: true, origin: 'all',
     },
     size: 20,
     format: 'choice',
   });
   assert.deepEqual(quiz.normaliseStudySettings({
-    filters: { topics: 'не массив', years: [], stages: [], mode: 'не режим', onlyVerified: 'да' },
+    filters: { topics: 'не массив', years: [], stages: [], mode: 'не режим', onlyVerified: 'да', origin: 'всё' },
     size: 99,
   }, bank), {
-    filters: { topics: [], years: [], stages: [], mode: 'all', onlyVerified: false },
+    filters: { topics: [], years: [], stages: [], mode: 'all', onlyVerified: false, origin: 'all' },
     size: 10,
     format: 'choice',
   });
@@ -593,4 +593,32 @@ test('«верно или нет»: исключённый вариант не �
   assert.deepEqual(new Set(offered), new Set(['o4']));
   // правильный вариант исключением не затрагивается
   assert.equal(quiz.trueFalseStatement(plateau, sequence(0.1)).optionId, 'o2');
+});
+
+test('пиньинь: китайские вставки русского вопроса получают транскрипцию по таблице', () => {
+  const table = { 双皮奶: 'shuāng pí nǎi', '亚历山大·涅夫斯基': 'yà lì shān dà·niè fū sī jī' };
+  assert.deepEqual(quiz.pinyinSegments('Как выглядит десерт 双皮奶?', table), [
+    { text: 'Как выглядит десерт ' }, { text: '双皮奶', pinyin: 'shuāng pí nǎi' }, { text: '?' },
+  ]);
+  // имя с «·» — одна вставка, как в scripts/pinyin.py
+  assert.deepEqual(quiz.pinyinSegments('Кто такой 亚历山大·涅夫斯基', table), [
+    { text: 'Кто такой ' }, { text: '亚历山大·涅夫斯基', pinyin: 'yà lì shān dà·niè fū sī jī' },
+  ]);
+  // нет записи в таблице — кусок остаётся без транскрипции; текст без иероглифов — один кусок
+  assert.deepEqual(quiz.pinyinSegments('Что такое 糖葫芦', {}), [
+    { text: 'Что такое ' }, { text: '糖葫芦', pinyin: undefined },
+  ]);
+  assert.deepEqual(quiz.pinyinSegments('Столица России?', table), [{ text: 'Столица России?' }]);
+});
+
+test('фильтр происхождения: только олимпиадные или только дополнения', () => {
+  const bank = [record('olympiad'), record('addition', { origin: 'addition', occurrences: [] })];
+  const ids = (origin) => quiz.eligible(bank, { ...NO_FILTERS, origin }, {}).map((item) => item.id);
+  assert.deepEqual(ids('all'), ['olympiad', 'addition']);
+  assert.deepEqual(ids('olympiad'), ['olympiad']);
+  assert.deepEqual(ids('addition'), ['addition']);
+  // старые сохранённые настройки без поля — как «все»
+  assert.deepEqual(ids(undefined), ['olympiad', 'addition']);
+  const kept = quiz.normaliseStudySettings({ filters: { ...NO_FILTERS, origin: 'addition' }, size: 10 }, bank);
+  assert.equal(kept.filters.origin, 'addition');
 });

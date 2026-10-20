@@ -36,6 +36,24 @@ input:focus-visible, select:focus-visible, summary:focus-visible, .option:focus-
 .site-tools { gap: var(--s-2) var(--s-5); }
 .count { color: var(--text-on-ground-muted); font-variant-numeric: lining-nums tabular-nums; }
 .theme { font-size: var(--t-size-caption); font-weight: var(--t-weight-medium); }
+
+/* пиньинь: в разметке всегда, виден по настройке в шапке (data-pinyin на <html>) */
+:root:not([data-pinyin='on']) .pinyin { display: none; }
+.pinyin {
+  display: block;
+  color: var(--text-soft);
+  font-family: var(--font-text);
+  font-size: 15px;
+  font-weight: var(--t-weight-regular);
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+rt.pinyin { display: ruby-text; font-size: max(13px, 0.32em); line-height: 1.2; }
+/* с транскрипцией над вставками строкам вопроса нужно больше воздуха */
+:root[data-pinyin='on'] .question { line-height: 1.35; }
+.option.correct .pinyin { color: inherit; opacity: .85; }
+.tf-option .pinyin { margin-top: var(--s-2); font-size: 18px; text-align: center; }
+.question-zh .pinyin { font-size: 16px; }
 /* в раунде навигация не нужна: из него выходят «Закончить раунд» или Esc */
 body[data-view='quiz'] .site-nav { display: none; }
 body[data-view='quiz'] .site-header { padding: var(--s-4) 0; }
@@ -141,6 +159,10 @@ main { display: block; }
 .topic-count { color: var(--text-on-ground-muted); font-size: var(--t-size-caption); }
 .topic-progress { font-variant-numeric: lining-nums tabular-nums; }
 .topic-check input { width: 20px; height: 20px; margin: 0; accent-color: var(--accent); }
+
+.origin-filter { display: grid; gap: var(--s-2); padding: var(--s-4) 0 var(--s-3); border-top: var(--border-hair) solid var(--line-on-ground); }
+.origin-title { margin: 0; font-weight: var(--t-weight-semibold); }
+.origin-filter .mode-help { margin: 0; }
 
 .more, .progress-tools { border-top: var(--border-hair) dashed var(--line-quiet); }
 .more > summary, .progress-tools > summary {
@@ -559,6 +581,9 @@ a:hover { color: var(--accent-on-ground); }
   .chapter-mark { flex-basis: 100%; font-size: 32px; }
   .launch-actions .ink-btn, .next-row .ink-btn--primary { flex: 1 1 100%; min-width: 0; }
   .next-row { flex-direction: column-reverse; align-items: stretch; }
+  /* поля для прокрутки после ответа (к кнопке) и после «Следующего вопроса» (к ходу раунда) */
+  .next-row .ink-btn--primary, .recall-rate { scroll-margin-bottom: var(--s-4); }
+  .quiz { scroll-margin-top: var(--s-2); }
   .option { grid-template-columns: 32px minmax(0, 1fr); min-height: 72px; padding: 12px 14px; }
   .option.wrong { padding: 11px 13px; }
   .option-text { font-size: 26px; }

@@ -43,6 +43,13 @@ jobs:
           python3 scripts/merge_bank.py
           python3 scripts/taxonomy.py
 
+      # транскрипция для настройки «Пиньинь»: data/pinyin.json в репозитории может отстать
+      # от банка, если вопросы добавили без перегенерации — на сайте её не должно не хватать
+      - name: Пиньинь к китайскому тексту банка
+        run: |
+          pip install pypinyin==0.55.0
+          python3 scripts/pinyin.py
+
       - name: Python-тесты
         run: python3 -m unittest discover -s test -t .
 
