@@ -66,8 +66,9 @@
 
     <section class="chapter">
       <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">一</span>
-      <fieldset class="chapter-body mode-picker">
-        <legend class="ink-title-2">Режим</legend>
+      <details class="chapter-body chapter-fold" id="modeFold">
+      <summary><span class="ink-title-2">Режим</span><span class="fold-value" id="modeValue"></span><span class="fold-arrow" aria-hidden="true">▾</span></summary>
+      <fieldset class="fold-body mode-picker" aria-label="Режим">
         <div class="ink-pills mode-options">
           <label class="mode-option"><input type="radio" name="studyMode" value="all" checked><span class="ink-pill">Все вопросы</span></label>
           <label class="mode-option"><input type="radio" name="studyMode" value="new"><span class="ink-pill">Новые</span></label>
@@ -76,12 +77,14 @@
         </div>
         <p class="ink-caption mode-help" id="modeHelp"></p>
       </fieldset>
+      </details>
     </section>
 
     <section class="chapter">
       <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">二</span>
-      <fieldset class="chapter-body mode-picker">
-        <legend class="ink-title-2">Формат</legend>
+      <details class="chapter-body chapter-fold" id="formatFold">
+      <summary><span class="ink-title-2">Формат</span><span class="fold-value" id="formatValue"></span><span class="fold-arrow" aria-hidden="true">▾</span></summary>
+      <fieldset class="fold-body mode-picker" aria-label="Формат">
         <div class="ink-pills mode-options">
           <label class="mode-option"><input type="radio" name="studyFormat" value="choice" checked><span class="ink-pill">Выбор ответа</span></label>
           <label class="mode-option"><input type="radio" name="studyFormat" value="recall"><span class="ink-pill">Вспомни сам</span></label>
@@ -89,12 +92,14 @@
         </div>
         <p class="ink-caption mode-help" id="formatHelp"></p>
       </fieldset>
+      </details>
     </section>
 
     <section class="chapter" id="settingsPanel">
       <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">三</span>
-      <fieldset class="chapter-body">
-        <legend class="ink-title-2">Темы раунда</legend>
+      <details class="chapter-body chapter-fold" id="topicsFold">
+      <summary><span class="ink-title-2">Темы раунда</span><span class="fold-value" id="topicsValue"></span><span class="fold-arrow" aria-hidden="true">▾</span></summary>
+      <fieldset class="fold-body" aria-label="Темы раунда">
         <p class="ink-caption">Если не выбрать темы, в раунд попадут вопросы из всех разделов.</p>
         <div class="topics" id="topicControls"></div>
         <div class="origin-filter">
@@ -115,6 +120,7 @@
         </details>
         <label class="toggle" id="verifiedFilterWrap" hidden><input id="onlyVerified" type="checkbox">Только проверенные</label>
       </fieldset>
+      </details>
     </section>
 
     <section class="chapter">

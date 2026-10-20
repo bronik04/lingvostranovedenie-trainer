@@ -24,8 +24,8 @@ const TOPIC_MARKS = {
 };
 // до стольких вопросов ход раунда рисуется кружками, длиннее — полосой
 const MAX_STEP_DOTS = 14;
-// поля прокрутки на телефоне: над разбором и под кнопкой — scroll-margin в quiz.css (8 + 16)
-const SCROLL_GAP = 24;
+// на телефоне под кнопкой «Следующий вопрос» после докрутки остаётся столько воздуха
+const BOTTOM_GAP = 24;
 const THEME_COLORS = { light: '#faf4e8', dark: '#181512' };
 const FORMAT_COPY = {
   choice: 'Вопрос и четыре варианта — как на олимпиаде.',
@@ -391,6 +391,7 @@ function renderSetup() {
     addition: `Только проверенные дополнения — на олимпиаде их не было: ${additions}. Год и этап к ним не относятся.`,
   }[state.filters.origin];
   $('verifiedFilterWrap').hidden = !QUESTION_BANK.some((record) => record.answer.state === 'unverified');
+  renderFoldValues();
 
   const pool = eligible(QUESTION_BANK, state.filters, state.progress);
   $('eligibleNotice').textContent = pool.length
@@ -406,6 +407,22 @@ function renderSetup() {
   $('startButton').classList.toggle('ink-btn--secondary', pool.length === 0);
   $('emptyActions').hidden = pool.length !== 0;
   renderBankCount();
+}
+
+/** Свёрнутые «Режим», «Формат», «Темы раунда»: в заголовке — что выбрано сейчас. */
+function renderFoldValues() {
+  const picked = (name) => document.querySelector(`input[name="${name}"]:checked`)?.nextElementSibling?.textContent;
+  $('modeValue').textContent = picked('studyMode') || '';
+  $('formatValue').textContent = picked('studyFormat') || '';
+  const { topics, years, stages, origin, onlyVerified } = state.filters;
+  $('topicsValue').textContent = [
+    topics.length === 0 ? 'все темы'
+      : topics.length === 1 ? topics[0] : `${topics.length} ${pluralRu(topics.length, ['тема', 'темы', 'тем'])}`,
+    origin === 'olympiad' ? 'только с олимпиад' : origin === 'addition' ? 'только дополнения' : '',
+    years[0] ? years[0].replace('-', '/') : '',
+    stages[0] ? `${stageLabel(stages[0])} этап` : '',
+    onlyVerified ? 'только проверенные' : '',
+  ].filter(Boolean).join(' · ');
 }
 
 function fillSelect(select, allLabel, pairs) {
@@ -628,7 +645,7 @@ function showFeedback(record, kind, verdictHtml) {
   $('feedback').innerHTML = [
     `<p class="verdict">${verdictHtml}</p>`,
     record.explanation.ru ? `<p class="why">${escapeHtml(record.explanation.ru)}</p>` : '',
-    sources ? `<ul>${sources}</ul>` : '',
+    sources ? sourcesBlock(sources, record.evidence.length) : '',
     record.answer.state === 'unverified'
       ? '<p class="unverified">Ответ взят из официального ключа, но ещё не перепроверен по источникам.</p>'
       : '',
@@ -636,21 +653,38 @@ function showFeedback(record, kind, verdictHtml) {
   requestAnimationFrame(() => {
     $('feedback').focus({ preventScroll: true });
     // на телефоне докручиваем до следующего шага под разбором: кнопки «Следующий вопрос»,
-    // а во «Вспомни сам» до неё — до самооценки. Если длинный разбор с кнопкой на экран не
-    // помещается, важнее начало разбора: вердикт и правильный ответ не должны уехать вверх
-    const next = [$('nextButton'), $('recallRate')].find((element) => !element.classList.contains('hidden'));
-    const fits = next && next.getBoundingClientRect().bottom - $('feedback').getBoundingClientRect().top
-      + SCROLL_GAP <= window.innerHeight;
-    if (fits) scrollOnPhone(next, 'nearest');
-    else scrollOnPhone($('feedback'), 'start');
+    // а во «Вспомни сам» до неё — до самооценки (решение автора: всегда до кнопки)
+    revealOnPhone([$('nextButton'), $('recallRate')].find((element) => !element.classList.contains('hidden'))
+      || $('feedback'));
   });
 }
 
-/** Прокрутка только на узком экране: на компьютере вопрос с разбором и так виден целиком. */
-function scrollOnPhone(element, block) {
-  if (!window.matchMedia?.('(max-width: 600px)').matches) return;
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  element.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block });
+/** Источники: одна-две ссылки видны сразу, больше — под «Источники (N)», чтобы разбор
+ * с кнопкой «Следующий вопрос» помещался на экран телефона. */
+function sourcesBlock(items, count) {
+  return count > 2
+    ? `<details class="feedback-sources"><summary>Источники (${count})</summary><ul>${items}</ul></details>`
+    : `<ul>${items}</ul>`;
+}
+
+const onPhone = () => Boolean(window.matchMedia?.('(max-width: 600px)').matches);
+const scrollBehavior = () => (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth');
+
+/** Телефон: прокрутить вниз ровно настолько, чтобы низ элемента встал над краем экрана.
+ * Высота — видимой части (visualViewport): в Safari нижняя панель закрывает низ окна, и
+ * scrollIntoView ставил кнопку под неё. Вверх не прокручивает. */
+function revealOnPhone(element) {
+  if (!onPhone()) return;
+  // низ видимой части в координатах окна; при увеличении щипком она сдвинута на offsetTop
+  const viewport = window.visualViewport;
+  const visibleBottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
+  const top = window.scrollY + element.getBoundingClientRect().bottom + BOTTOM_GAP - visibleBottom;
+  if (top > window.scrollY + 1) window.scrollTo({ top, behavior: scrollBehavior() });
+}
+
+/** Телефон: начало элемента — к верху экрана (новый вопрос после «Следующего вопроса»). */
+function scrollToTopOnPhone(element) {
+  if (onPhone()) element.scrollIntoView({ behavior: scrollBehavior(), block: 'start' });
 }
 
 /* ---------- «Вспомни сам» ---------- */
@@ -690,8 +724,10 @@ function rateRecall(outcome) {
     button.disabled = true;
     if (button.dataset.outcome === outcome) button.setAttribute('aria-pressed', 'true');
   }
-  // нажатая кнопка оценки погасла вместе с фокусом: следующий шаг — «Следующий вопрос»
-  $('nextButton').focus();
+  // нажатая кнопка оценки погасла вместе с фокусом: следующий шаг — «Следующий вопрос»;
+  // фокус без своей прокрутки — она поставила бы кнопку под нижнюю панель Safari
+  $('nextButton').focus({ preventScroll: true });
+  revealOnPhone($('nextButton'));
 }
 
 /* ---------- «Верно или нет» ---------- */
@@ -753,7 +789,7 @@ function nextQuestion() {
   else {
     renderQuestion();
     // после разбора страница прокручена вниз — новый вопрос начинается выше
-    scrollOnPhone($('quizView'), 'start');
+    scrollToTopOnPhone($('quizView'));
   }
 }
 
