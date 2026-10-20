@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from dossiers import REPORT_MARK, _mentions, check_dossiers, load_removed, removed_id_errors, cross_leak_errors, dossier_paths, embed_record, original_record, dossier_records, dossier_report, is_build_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions, write_dossier_reports
+from dossiers import REPORT_MARK, _mentions, fact_place, check_dossiers, load_removed, removed_id_errors, cross_leak_errors, dossier_paths, embed_record, original_record, dossier_records, dossier_report, is_build_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions, write_dossier_reports
 from editorial import apply_editorial, validate_editorial
 from embeds import apply_embeds, embed_errors
 
@@ -196,6 +196,17 @@ class DossierRecordsTest(unittest.TestCase):
         self.assertEqual(record['explanation'], {'ru': question()['explanation']})
         self.assertEqual((record['occurrences'], record['parseWarnings']), ([], []))
         self.assertEqual(len(record['options']), 5)
+
+    def test_record_carries_its_answer_row(self):
+        [record] = dossier_records(dossier(), [question()])
+        self.assertEqual(record['factRow'], 'money/banknotes/cny-20')
+
+    def test_explicit_options_question_takes_the_answer_row(self):
+        explicit = question(fact={'table': 'banknotes',
+                                  'options': [{'row': r, 'column': 'back'} for r in ('cny-100', 'cny-50', 'cny-20', 'cny-10')],
+                                  'answer': {'row': 'cny-50', 'column': 'back'}})
+        self.assertEqual(fact_place(explicit, dossier()), ('money/banknotes/cny-50', 'back'))
+        self.assertEqual(fact_place(question(), dossier()), ('money/banknotes/cny-20', 'flower'))
 
     def test_draft_stays_out_of_the_bank(self):
         self.assertEqual(dossier_records(dossier(), [question(status='draft')]), [])
@@ -458,6 +469,14 @@ class ApplyEmbedsTest(unittest.TestCase):
         with self.assertRaises(ValueError) as caught:
             self.apply(**kwargs)
         self.assertIn(fragment, str(caught.exception))
+
+    def test_embedded_record_gets_the_row_of_its_question(self):
+        [record] = self.apply()
+        self.assertEqual(record['factRow'], 'money/banknotes/cny-20')
+
+    def test_original_record_drops_fact_row(self):
+        built = {**olympiad(), 'dossier': 'money', 'factRow': 'money/banknotes/cny-20'}
+        self.assertNotIn('factRow', original_record(built))
 
     def test_embedding_adds_the_table_pool_and_glosses_and_keeps_the_question(self):
         [record] = self.apply()

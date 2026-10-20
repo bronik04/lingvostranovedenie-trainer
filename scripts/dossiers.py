@@ -247,12 +247,12 @@ def _column_glosses(question: dict, dossier: dict) -> dict[str, set[str]]:
 
 def original_record(record: dict) -> dict:
     """Запись до встраивания. В bank.json после сборки у встроенной записи уже есть добавленные
-    варианты (id строк таблицы) и подписи; исходные варианты — с id вида o1, o2…"""
+    варианты (id строк таблицы), подписи и строка ответа `factRow`; исходные варианты — с id вида o1, o2…"""
     if 'dossier' not in record:
         return record
     options = [{key: value for key, value in option.items() if key != 'gloss'}
                for option in record['options'] if OPTION_ID.fullmatch(option['id'])]
-    return {key: value for key, value in record.items() if key != 'dossier'} | {'options': options}
+    return {key: value for key, value in record.items() if key not in {'dossier', 'factRow'}} | {'options': options}
 
 
 def embed_record(record: dict, question: dict, dossier: dict) -> tuple[dict | None, list[str]]:
@@ -308,7 +308,8 @@ def embed_record(record: dict, question: dict, dossier: dict) -> tuple[dict | No
     if named:
         errors.append(f'пояснение {record["id"]} называет неверные варианты {named} — '
                       'на экране их может не оказаться; правка в editorial.json')
-    return {**record, 'options': options, 'dossier': dossier['id']}, errors
+    return {**record, 'options': options, 'dossier': dossier['id'],
+            'factRow': fact_place(question, dossier)[0]}, errors
 
 
 def dossier_records(dossier: dict, questions: list[dict]) -> list[dict]:
@@ -322,6 +323,8 @@ def dossier_records(dossier: dict, questions: list[dict]) -> list[dict]:
             'id': question['id'],
             'origin': 'addition',
             'dossier': dossier['id'],
+            # строка ответа: раунд не ставит рядом вопросы об одной строке
+            'factRow': fact_place(question, dossier)[0],
             'topic': question['topic'],
             'topicSource': 'authored',
             'questionRu': question['questionRu'],
@@ -572,10 +575,18 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
     return errors
 
 
-def _answer_place(question: dict, dossier: dict) -> tuple[str, str, dict[str, set[str]]]:
-    """Строка ответа (`досье/таблица/строка`), колонка ответа и ссылки строки: куда → из каких колонок."""
+def fact_place(question: dict, dossier: dict) -> tuple[str, str]:
+    """Строка ответа (`досье/таблица/строка`) и колонка ответа — сторона, с которой вопрос спрашивает строку."""
     fact = question['fact']
     column = fact['answer']['column'] if 'options' in fact else fact['ask']
+    row_id, _ = answer_cell(question, dossier)
+    return f'{dossier["id"]}/{fact["table"]}/{row_id}', column
+
+
+def _answer_place(question: dict, dossier: dict) -> tuple[str, str, dict[str, set[str]]]:
+    """Строка ответа (`досье/таблица/строка`), колонка ответа и ссылки строки: куда → из каких колонок."""
+    place, column = fact_place(question, dossier)
+    fact = question['fact']
     row_id, _ = answer_cell(question, dossier)
     row = _rows(dossier, fact['table'])[row_id]
     links: dict[str, set[str]] = {}
@@ -584,7 +595,7 @@ def _answer_place(question: dict, dossier: dict) -> tuple[str, str, dict[str, se
             for field in LINK_FIELDS:
                 if field in cell:
                     links.setdefault(cell[field], set()).add(name)
-    return f'{dossier["id"]}/{fact["table"]}/{row_id}', column, links
+    return place, column, links
 
 
 def _bridged(place: tuple, other_place: tuple) -> bool:
