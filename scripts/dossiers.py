@@ -148,7 +148,8 @@ def validate_dossier(dossier: object) -> list[str]:
         if not isinstance(table.get('datedQuestions', False), bool):
             errors.append(f'{name}: datedQuestions — true или false')
         sides = table.get('sides', [])
-        if not isinstance(sides, list) or any(columns.get(side) != 'zh' for side in sides):
+        if not isinstance(sides, list) or any(not isinstance(side, str) or columns.get(side) != 'zh'
+                                              for side in sides):
             errors.append(f'{name}: sides — список колонок zh этой таблицы')
         elif len(set(sides)) != len(sides):
             errors.append(f'{name}: sides: колонки повторяются')

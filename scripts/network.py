@@ -98,7 +98,8 @@ def _baseline(dossier: dict, accepted: list[tuple[str, str, str, str]], question
     rows = sum(len(table['rows']) for table in dossier['tables'].values())
     embedded = sum(1 for q in questions if q['status'] == 'accepted' and 'embeds' in q)
     return [f'- строк: {rows}', f'- принятых вопросов: {len(accepted)}', f'- строк с вопросом: {len(sides)}',
-            f'- строк с двумя и более сторонами: {sum(1 for s in sides.values() if len(s) > 1)}',
+            f'- строк, спрошенных с двух и более сторон (разные колонки ответа): '
+            f'{sum(1 for s in sides.values() if len(s) > 1)}',
             f'- встроено олимпиадных: {embedded}']
 
 
@@ -159,7 +160,8 @@ def network_report(loaded: list[tuple[dict, list[dict]]], bank: list[dict]) -> s
     with_core = sum(1 for dossier, _ in loaded if _core_tables(dossier))
     lines = ['# Сеть досье: пробелы', '',
              'Файл пишет сборка (`scripts/network.py`). Ядро размечается в таблицах досье: `core` у строки, '
-             '`sides` у таблицы. Граф для Obsidian — папка `data/review/graph/`.', '',
+             '`sides` у таблицы. Граф для Obsidian — папка `data/review/graph/`: сборка каждый раз стирает в ней '
+             'все заметки `*.md` и пишет заново, поэтому свои заметки в эту папку не кладите.', '',
              f'Досье: {len(loaded)}, с утверждённым каркасом: {with_core}.', '']
     lines += _olympiad_lines(bank)
     lines += ['', '## Досье']
@@ -175,8 +177,8 @@ def network_report(loaded: list[tuple[dict, list[dict]]], bank: list[dict]) -> s
 
 
 def _title(row: dict, table: dict) -> str:
-    first = next(column for column, kind in table['columns'].items() if kind == 'zh')
-    cell = row.get(first)
+    first = next((column for column, kind in table['columns'].items() if kind == 'zh'), None)
+    cell = row.get(first) if first else None
     if not isinstance(cell, dict):
         return row['id']
     ru = cell.get('ru') or []

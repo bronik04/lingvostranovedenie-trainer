@@ -74,7 +74,7 @@ class NetworkReportTest(unittest.TestCase):
         self.assertIn('- строк: 2', report)
         self.assertIn('- принятых вопросов: 3', report)
         self.assertIn('- строк с вопросом: 2', report)
-        self.assertIn('- строк с двумя и более сторонами: 1', report)
+        self.assertIn('- строк, спрошенных с двух и более сторон (разные колонки ответа): 1', report)
 
     def test_core_matrix_counts_questions_per_side_and_marks_empty(self):
         report = network_report([(core_dossier(), core_questions())], bank=[])
@@ -131,6 +131,15 @@ class GraphNotesTest(unittest.TestCase):
         bank = [{'id': 'provinces-q01', 'questionRu': 'Исправленный текст?'}]
         note = graph_notes([(core_dossier(), core_questions())], bank)['provinces.prov-sichuan.md']
         self.assertIn('provinces-q01 — Исправленный текст?', note)
+
+    def test_core_row_in_a_table_without_zh_columns_is_titled_by_id(self):
+        data = core_dossier()
+        data['tables']['notes'] = {'columns': {'about': 'ru'}, 'rows': [{'id': 'note-1', 'about': 'текст', 'core': True,
+                                                                          'sources': [], 'olympiad': []}]}
+        self.assertIn('# note-1', graph_notes([(data, [])], bank=[])['provinces.note-1.md'])
+
+    def test_report_warns_that_the_graph_folder_is_rewritten(self):
+        self.assertIn('свои заметки в эту папку не кладите', network_report([], bank=[]))
 
     def test_write_graph_removes_stale_notes(self):
         with tempfile.TemporaryDirectory() as tmp:

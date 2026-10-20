@@ -122,6 +122,7 @@ class ValidateDossierTest(unittest.TestCase):
             (lambda d: table(d).update(sides='flower'), 'sides — список колонок zh'),
             (lambda d: table(d).update(sides=['series']), 'sides — список колонок zh'),
             (lambda d: table(d).update(sides=['nope']), 'sides — список колонок zh'),
+            (lambda d: table(d).update(sides=[{'column': 'flower'}]), 'sides — список колонок zh'),
             (lambda d: table(d).update(sides=['flower', 'flower']), 'sides: колонки повторяются'),
         ]
         for mutate, fragment in cases:
