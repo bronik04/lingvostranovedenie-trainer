@@ -23,6 +23,15 @@ from taxonomy import TOPICS  # noqa: E402
 FEW = 3  # тема с меньшим числом вопросов — слабая
 
 
+def questions_word(count: int) -> str:
+    """«1 вопрос», «994 вопроса», «1000 вопросов»."""
+    if count % 10 == 1 and count % 100 != 11:
+        return 'вопрос'
+    if 2 <= count % 10 <= 4 and not 12 <= count % 100 <= 14:
+        return 'вопроса'
+    return 'вопросов'
+
+
 def validate_themes(themes: object) -> list[str]:
     if not isinstance(themes, list):
         return ['themes должен быть списком']
@@ -104,7 +113,7 @@ def coverage_report(bank: list[dict], themes: list[dict], target: int) -> str:
     matches = theme_matches(bank, themes)
     shares = topic_shares(bank)
     lines = ['# Карта покрытия', '',
-             f'В банке {len(bank)} вопросов. Цель — {target}: доли категорий как в олимпиаде, ни одной '
+             f'В банке {len(bank)} {questions_word(len(bank))}. Цель — {target}: доли категорий как в олимпиаде, ни одной '
              'пустой темы из материалов автора. Собирается сборкой (`scripts/coverage_map.py`), темы — '
              '`data/coverage.json`. Счёт по словам в тексте вопроса и правильном ответе — приблизительный: '
              'вопрос может попасть в несколько тем, а слово — поймать чужой вопрос.', '',
