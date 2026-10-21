@@ -178,9 +178,9 @@
 | prov-liaoning | — | 1 | — | — | — | прогноз |
 | prov-jilin | — | 1 | — | — | — | прогноз |
 | prov-heilongjiang | — | — | — | — | 1 | да |
-| prov-shandong | — | — | — | — | 2 | да |
-| prov-jiangsu | — | — | — | — | 1 | да |
-| prov-zhejiang | — | — | — | 1 | — | да |
+| prov-shandong | — | — | — | — | 1 | да |
+| prov-jiangsu | — | — | — | — | — | да |
+| prov-zhejiang | — | — | — | — | — | да |
 | prov-anhui | — | — | — | — | 1 | да |
 | prov-fujian | 1 | — | — | — | — | прогноз |
 | prov-jiangxi | — | — | — | — | 1 | да |
@@ -197,7 +197,7 @@
 | prov-shaanxi | — | 1 | — | — | — | прогноз |
 | prov-gansu | — | 1 | — | — | — | прогноз |
 | prov-qinghai | — | — | — | — | 1 | да |
-| prov-ningxia | — | — | — | — | 1 | прогноз |
+| prov-ningxia | — | — | — | — | — | прогноз |
 | prov-xinjiang | — | — | — | — | 1 | да |
 | prov-xianggang | — | — | — | — | — | да |
 | prov-aomen | — | — | — | — | — | да |
