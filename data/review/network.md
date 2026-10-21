@@ -210,7 +210,7 @@
 | city-guangzhou | — | — | — | 1 | да |
 | city-jinan | — | — | — | 1 | да |
 | city-lasa | — | — | — | 1 | да |
-| city-fuzhou | — | — | — | 1 | да |
+| city-fuzhou | — | — | — | 1 | прогноз |
 | city-nanjing | — | — | — | 1 | да |
 | city-chengdu | — | — | — | 1 | да |
 | city-hangzhou | — | — | — | 1 | да |

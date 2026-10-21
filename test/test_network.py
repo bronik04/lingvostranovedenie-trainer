@@ -93,6 +93,18 @@ class NetworkReportTest(unittest.TestCase):
         self.assertNotIn('provinces-q20 —', report)
         self.assertIn('Российские строки (разбирает российская тема): вопросов 1', report)
 
+    def test_an_addition_in_olympiad_field_is_not_olympiad(self):
+        # в поле olympiad строки бывают и наши дополнения: «да» — только при записи с появлениями
+        data = core_dossier()
+        data['tables']['provinces']['rows'][1]['olympiad'] = ['addition-b1-03']
+        bank = [{'id': 'addition-b1-03', 'questionRu': 'Вопрос?', 'occurrences': []},
+                {'id': '2019-20-shk-1', 'questionRu': 'Вопрос?', 'occurrences': [{'year': '2019-20', 'stage': 'школьный'}]}]
+        report = network_report([(data, core_questions())], bank)
+        self.assertIn('| prov-hainan | — | — | — | — | прогноз |', report)
+        self.assertIn('| prov-sichuan | 2 | 1 | — | 1 | да |', report)
+        note = graph_notes([(data, core_questions())], bank)['provinces.prov-hainan.md']
+        self.assertIn('Олимпиада: ещё не спрашивала (прогноз)', note)
+
     def test_questions_outside_core_are_listed(self):
         report = network_report([(core_dossier(), core_questions())], bank=[])
         self.assertIn('provinces-q09', report)

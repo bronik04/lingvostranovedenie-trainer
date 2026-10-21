@@ -111,7 +111,14 @@ def _baseline(dossier: dict, accepted: list[tuple[str, str, str, str]], question
             f'- встроено олимпиадных: {embedded}']
 
 
-def _core_lines(dossier: dict, accepted: list[tuple[str, str, str, str]]) -> list[str]:
+def _olympiad(row: dict, bank: list[dict]) -> list[str]:
+    """Олимпиадные id строки. В поле `olympiad` бывают и наши дополнения: олимпиадная — запись с
+    появлениями на олимпиаде; id, которого нет в банке, считается олимпиадным."""
+    by_id = {record['id']: record for record in bank}
+    return [i for i in row.get('olympiad', []) if i not in by_id or by_id[i].get('occurrences')]
+
+
+def _core_lines(dossier: dict, accepted: list[tuple[str, str, str, str]], bank: list[dict]) -> list[str]:
     lines: list[str] = []
     counts: dict[tuple[str, str], int] = {}
     for _, _, place, side in accepted:
@@ -135,7 +142,7 @@ def _core_lines(dossier: dict, accepted: list[tuple[str, str, str, str]]) -> lis
             # вопросы о строке со сторон вне sides (встроенный «какой город называют 羊城?» — сторона name)
             other = sum(n for (p, side), n in counts.items() if p == place and side not in sides)
             cells.append(str(other) if other else EMPTY)
-            cells.append('да' if row.get('olympiad') else 'прогноз')
+            cells.append('да' if _olympiad(row, bank) else 'прогноз')
             lines.append(f'| {row["id"]} | ' + ' | '.join(cells) + ' |')
         lines.append('')
         prefix = f'{dossier["id"]}/{name}/'
@@ -191,7 +198,7 @@ def network_report(loaded: list[tuple[dict, list[dict]]], bank: list[dict]) -> s
         accepted = _accepted(dossier, questions, bank)
         lines += ['', f'### {dossier["title"]} (`{dossier["id"]}`)', '']
         if _core_tables(dossier):
-            lines += _core_lines(dossier, accepted)
+            lines += _core_lines(dossier, accepted, bank)
         else:
             lines += ['Ядро не размечено: каркас не утверждён.', ''] + _baseline(dossier, accepted, questions)
     lines += [''] + _link_lines(loaded)
@@ -226,7 +233,7 @@ def graph_notes(loaded: list[tuple[dict, list[dict]]], bank: list[dict]) -> dict
                 lines += ['Связи:', *(f'- [[{_node(target)}]]' for target in links), '']
             lines += ['Вопросы:']
             lines += [f'- {_label(side)}: {record_id} — {text}' for record_id, text, p, side in accepted if p == place] or ['- нет']
-            olympiad = row.get('olympiad') or []
+            olympiad = _olympiad(row, bank)
             lines += ['', f'Олимпиада: {", ".join(olympiad)}' if olympiad else 'Олимпиада: ещё не спрашивала (прогноз)']
             notes[f'{_node(place)}.md'] = '\n'.join(lines) + '\n'
     return notes
