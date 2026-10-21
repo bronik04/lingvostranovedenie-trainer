@@ -178,16 +178,16 @@
 | prov-liaoning | — | 1 | — | — | — | прогноз |
 | prov-jilin | — | 1 | — | — | — | прогноз |
 | prov-heilongjiang | — | — | — | — | 1 | да |
-| prov-shandong | — | — | — | — | 1 | да |
+| prov-shandong | 1 | — | — | — | 1 | да |
 | prov-jiangsu | — | — | — | — | — | да |
 | prov-zhejiang | — | — | — | — | — | да |
 | prov-anhui | — | — | — | — | 1 | да |
 | prov-fujian | 1 | — | — | — | — | прогноз |
 | prov-jiangxi | — | — | — | — | 1 | да |
-| prov-henan | 1 | — | — | — | — | да |
-| prov-hubei | — | — | — | — | 1 | да |
+| prov-henan | 1 | — | — | 1 | — | да |
+| prov-hubei | 1 | — | — | 1 | 1 | да |
 | prov-hunan | 1 | — | — | — | — | прогноз |
-| prov-guangdong | — | — | — | — | 3 | да |
+| prov-guangdong | 1 | — | — | — | 3 | да |
 | prov-guangxi | 1 | — | — | — | — | прогноз |
 | prov-hainan | — | — | — | — | 1 | да |
 | prov-sichuan | — | — | — | — | 3 | да |
@@ -197,10 +197,10 @@
 | prov-shaanxi | — | 1 | — | — | — | прогноз |
 | prov-gansu | — | 1 | — | — | — | прогноз |
 | prov-qinghai | — | — | — | — | 1 | да |
-| prov-ningxia | — | — | — | — | — | прогноз |
-| prov-xinjiang | — | — | — | — | 1 | да |
+| prov-ningxia | — | 1 | — | — | — | прогноз |
+| prov-xinjiang | — | 1 | — | — | 1 | да |
 | prov-xianggang | — | — | — | — | — | да |
-| prov-aomen | — | — | — | — | — | да |
+| prov-aomen | — | — | 1 | — | — | да |
 | prov-taiwan | — | — | — | — | — | да |
 
 #### Таблица `cities`
