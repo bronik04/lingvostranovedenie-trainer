@@ -134,8 +134,14 @@ class GraphNotesTest(unittest.TestCase):
         note = graph_notes([(core_dossier(), core_questions())], bank=[])['provinces.prov-sichuan.md']
         self.assertIn('# 四川', note)
         self.assertIn('Тема: [[provinces]]', note)
-        self.assertIn('- abbr: provinces-q01 — Вопрос provinces-q01?', note)
+        self.assertIn('- сокращение: provinces-q01 — Вопрос provinces-q01?', note)
         self.assertIn('2019-20-shk-1', note)
+
+    def test_row_note_names_its_empty_sides(self):
+        notes = graph_notes([(core_dossier(), core_questions())], bank=[])
+        self.assertIn('Не хватает сторон: происхождение названия', notes['provinces.prov-sichuan.md'])
+        # черновик не закрывает сторону
+        self.assertIn('Не хватает сторон: сокращение, центр, происхождение названия', notes['provinces.prov-hainan.md'])
 
     def test_bank_text_wins_over_the_file(self):
         bank = [{'id': 'provinces-q01', 'questionRu': 'Исправленный текст?'}]

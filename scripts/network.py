@@ -25,6 +25,14 @@ from taxonomy import TOPICS  # noqa: E402
 
 STAGES = ['школьный', 'муниципальный', 'региональный', 'заключительный', 'пригласительный']
 EMPTY = '—'
+# подписи сторон в заметках графа — для чтения в Obsidian; незнакомая колонка показывается как есть
+SIDE_LABELS = {'name': 'название', 'full': 'полное название', 'abbr': 'сокращение', 'capital': 'центр',
+               'kind': 'тип единицы', 'named': 'происхождение названия', 'region': 'провинция',
+               'nickname': 'прозвище', 'river': 'река', 'known': 'чем известен'}
+
+
+def _label(side: str) -> str:
+    return SIDE_LABELS.get(side, side)
 
 
 def _accepted(dossier: dict, questions: list[dict], bank: list[dict]) -> list[tuple[str, str, str, str]]:
@@ -209,11 +217,15 @@ def graph_notes(loaded: list[tuple[dict, list[dict]]], bank: list[dict]) -> dict
         for name, row in core_rows:
             place = f'{dossier["id"]}/{name}/{row["id"]}'
             lines = [f'# {_title(row, dossier["tables"][name])}', '', f'Тема: [[{dossier["id"]}]]', '']
+            asked = {side for _, _, p, side in accepted if p == place}
+            empty = [side for side in dossier['tables'][name].get('sides', []) if side not in asked]
+            if empty:
+                lines += [f'Не хватает сторон: {", ".join(_label(side) for side in empty)}', '']
             links = _links(row)
             if links:
                 lines += ['Связи:', *(f'- [[{_node(target)}]]' for target in links), '']
             lines += ['Вопросы:']
-            lines += [f'- {side}: {record_id} — {text}' for record_id, text, p, side in accepted if p == place] or ['- нет']
+            lines += [f'- {_label(side)}: {record_id} — {text}' for record_id, text, p, side in accepted if p == place] or ['- нет']
             olympiad = row.get('olympiad') or []
             lines += ['', f'Олимпиада: {", ".join(olympiad)}' if olympiad else 'Олимпиада: ещё не спрашивала (прогноз)']
             notes[f'{_node(place)}.md'] = '\n'.join(lines) + '\n'
