@@ -584,18 +584,23 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
     return errors
 
 
+def _answer_column(fact: dict) -> str:
+    return fact['answer']['column'] if 'options' in fact else fact['ask']
+
+
 def fact_place(question: dict, dossier: dict) -> tuple[str, str]:
-    """Строка ответа (`досье/таблица/строка`) и колонка ответа — сторона, с которой вопрос спрашивает строку."""
+    """Строка ответа (`досье/таблица/строка`) и сторона, с которой вопрос спрашивает строку: у
+    обратного вопроса («какая провинция сокращённо называется 豫?») это `given`, иначе колонка ответа."""
     fact = question['fact']
-    column = fact['answer']['column'] if 'options' in fact else fact['ask']
     row_id, _ = answer_cell(question, dossier)
-    return f'{dossier["id"]}/{fact["table"]}/{row_id}', column
+    return f'{dossier["id"]}/{fact["table"]}/{row_id}', fact.get('given') or _answer_column(fact)
 
 
 def _answer_place(question: dict, dossier: dict) -> tuple[str, str, dict[str, set[str]]]:
     """Строка ответа (`досье/таблица/строка`), колонка ответа и ссылки строки: куда → из каких колонок."""
-    place, column = fact_place(question, dossier)
+    place, _ = fact_place(question, dossier)
     fact = question['fact']
+    column = _answer_column(fact)
     row_id, _ = answer_cell(question, dossier)
     row = _rows(dossier, fact['table'])[row_id]
     links: dict[str, set[str]] = {}

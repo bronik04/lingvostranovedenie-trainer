@@ -42,7 +42,9 @@ def q(qid, row, ask, status='accepted', **extra):
 
 
 def core_questions():
+    # q04 — вопрос «какая провинция…» без given: его сторона «name» не в sides, он идёт в «другие»
     return [q('provinces-q01', 'prov-sichuan', 'abbr'), q('provinces-q02', 'prov-sichuan', 'abbr'),
+            q('provinces-q04', 'prov-sichuan', 'name'),
             q('provinces-q03', 'prov-sichuan', 'capital'), q('provinces-q09', 'prov-guizhou', 'abbr'),
             q('provinces-q10', 'prov-hainan', 'abbr', status='draft')]
 
@@ -78,10 +80,18 @@ class NetworkReportTest(unittest.TestCase):
 
     def test_core_matrix_counts_questions_per_side_and_marks_empty(self):
         report = network_report([(core_dossier(), core_questions())], bank=[])
-        self.assertIn('| строка | abbr | capital | named | олимпиада |', report)
-        self.assertIn('| prov-sichuan | 2 | 1 | — | да |', report)
+        self.assertIn('| строка | abbr | capital | named | другие | олимпиада |', report)
+        self.assertIn('| prov-sichuan | 2 | 1 | — | 1 | да |', report)
         # черновик не считается: у Хайнаня пусто
-        self.assertIn('| prov-hainan | — | — | — | прогноз |', report)
+        self.assertIn('| prov-hainan | — | — | — | — | прогноз |', report)
+
+    def test_russian_rows_are_left_to_the_russian_topic(self):
+        data = core_dossier()
+        data['tables']['provinces']['columns']['country'] = 'zh'
+        data['tables']['provinces']['rows'].append(province('city-ru-tula', '图拉', '图', '图拉', country=cell('俄罗斯')))
+        report = network_report([(data, core_questions() + [q('provinces-q20', 'city-ru-tula', 'abbr')])], bank=[])
+        self.assertNotIn('provinces-q20 —', report)
+        self.assertIn('Российские строки (разбирает российская тема): вопросов 1', report)
 
     def test_questions_outside_core_are_listed(self):
         report = network_report([(core_dossier(), core_questions())], bank=[])

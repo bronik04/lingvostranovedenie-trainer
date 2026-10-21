@@ -2,7 +2,7 @@
 
 Файл пишет сборка (`scripts/network.py`). Ядро размечается в таблицах досье: `core` у строки, `sides` у таблицы. Граф для Obsidian — папка `data/review/graph/`: сборка каждый раз стирает в ней все заметки `*.md` и пишет заново, поэтому свои заметки в эту папку не кладите.
 
-Досье: 15, с утверждённым каркасом: 0.
+Досье: 15, с утверждённым каркасом: 1.
 
 ## Олимпиада по годам
 
@@ -79,7 +79,7 @@
 - строк: 90
 - принятых вопросов: 50
 - строк с вопросом: 49
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 0
+- строк, спрошенных с двух и более сторон (разные колонки ответа): 1
 - встроено олимпиадных: 2
 
 ### Праздники (`holidays`)
@@ -109,7 +109,7 @@
 - строк: 110
 - принятых вопросов: 87
 - строк с вопросом: 77
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 0
+- строк, спрошенных с двух и более сторон (разные колонки ответа): 4
 - встроено олимпиадных: 25
 
 ### История XIX–XX веков (`modern-history`)
@@ -119,7 +119,7 @@
 - строк: 102
 - принятых вопросов: 70
 - строк с вопросом: 67
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 1
+- строк, спрошенных с двух и более сторон (разные колонки ответа): 2
 - встроено олимпиадных: 12
 
 ### Деньги (`money`)
@@ -149,7 +149,7 @@
 - строк: 116
 - принятых вопросов: 83
 - строк с вопросом: 79
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 1
+- строк, спрошенных с двух и более сторон (разные колонки ответа): 3
 - встроено олимпиадных: 16
 
 ### Живопись и каллиграфия (`painting`)
@@ -164,13 +164,81 @@
 
 ### Провинции и города (`provinces`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `provinces`
 
-- строк: 83
-- принятых вопросов: 86
-- строк с вопросом: 75
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 3
-- встроено олимпиадных: 39
+| строка | abbr | capital | kind | named | другие | олимпиада |
+|---|---|---|---|---|---|---|
+| prov-beijing | — | — | — | — | — | прогноз |
+| prov-tianjin | — | — | — | — | — | да |
+| prov-shanghai | 1 | — | — | — | — | да |
+| prov-chongqing | 1 | — | — | — | — | да |
+| prov-hebei | — | 1 | — | — | — | прогноз |
+| prov-shanxi | 1 | — | — | — | 1 | да |
+| prov-neimenggu | — | 1 | — | — | — | прогноз |
+| prov-liaoning | — | 1 | — | — | — | прогноз |
+| prov-jilin | — | 1 | — | — | — | прогноз |
+| prov-heilongjiang | — | — | — | — | 1 | да |
+| prov-shandong | — | — | — | — | 2 | да |
+| prov-jiangsu | — | — | — | — | 1 | да |
+| prov-zhejiang | — | — | — | 1 | — | да |
+| prov-anhui | — | — | — | — | 1 | да |
+| prov-fujian | 1 | — | — | — | — | прогноз |
+| prov-jiangxi | — | — | — | — | 1 | да |
+| prov-henan | 1 | — | — | — | — | да |
+| prov-hubei | — | — | — | — | 1 | да |
+| prov-hunan | 1 | — | — | — | — | прогноз |
+| prov-guangdong | — | — | — | — | 3 | да |
+| prov-guangxi | 1 | — | — | — | — | прогноз |
+| prov-hainan | — | — | — | — | 1 | да |
+| prov-sichuan | — | — | — | — | 3 | да |
+| prov-guizhou | 1 | — | — | — | — | прогноз |
+| prov-yunnan | — | — | — | — | 2 | да |
+| prov-xizang | — | — | — | — | — | да |
+| prov-shaanxi | — | 1 | — | — | — | прогноз |
+| prov-gansu | — | 1 | — | — | — | прогноз |
+| prov-qinghai | — | — | — | — | 1 | да |
+| prov-ningxia | — | — | — | — | 1 | прогноз |
+| prov-xinjiang | — | — | — | — | 1 | да |
+| prov-xianggang | — | — | — | — | — | да |
+| prov-aomen | — | — | — | — | — | да |
+| prov-taiwan | — | — | — | — | — | да |
+
+#### Таблица `cities`
+
+| строка | region | nickname | river | другие | олимпиада |
+|---|---|---|---|---|---|
+| city-guangzhou | — | — | — | 1 | да |
+| city-jinan | — | — | — | 1 | да |
+| city-lasa | — | — | — | 1 | да |
+| city-fuzhou | — | — | — | 1 | да |
+| city-nanjing | — | — | — | 1 | да |
+| city-chengdu | — | — | — | 1 | да |
+| city-hangzhou | — | — | — | 1 | да |
+| city-xian | — | — | 1 | — | прогноз |
+| city-kunming | — | 1 | — | — | прогноз |
+| city-haerbin | — | 1 | — | — | прогноз |
+| city-wuhan | — | — | — | 1 | прогноз |
+| city-shanghai | — | — | — | 2 | да |
+| city-beijing | — | — | 1 | 1 | да |
+| city-tianjin | — | — | 1 | — | да |
+| city-chongqing | — | — | — | 2 | да |
+| city-jingdezhen | — | — | — | 1 | да |
+| city-suzhou | — | — | — | 1 | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- provinces-q51 — Какое прозвище у Гуйяна?
+- provinces-q53 — Какой город Китая носит прозвище 星城, «город звёзд»?
+- provinces-q54 — Какой город, где издавна выращивают пионы, называют 牡丹花城?
+- provinces-q55 — Какой город Китая называют 鹏城?
+- provinces-q59 — Чем славится город Исин?
+- provinces-q60 — Какому городу принадлежит остров Гулансюй (鼓浪屿) — объект Всемирного наследия с 2017 года?
+- provinces-q61 — В каком городе с 2004 года постоянно проходит ярмарка «Китай — АСЕАН» (中国—东盟博览会)?
+- provinces-q62 — В какой провинции находится город Жэньхуай, где делают знаменитый маотай (茅台酒)?
+
+Российские строки (разбирает российская тема): вопросов 23.
 
 ### Космос (`space`)
 
@@ -188,12 +256,32 @@
 
 Строки ядра без ссылок наружу и на себя.
 
-- нет
+- provinces/provinces/prov-aomen
+- provinces/provinces/prov-ningxia
 
 ### Ссылка из ядра ведёт в тему без каркаса
 
-- нет
+- provinces/cities/city-chongqing → nature/waters/wat-changjiang
+- provinces/cities/city-guangzhou → nature/waters/wat-zhujiang
+- provinces/cities/city-haerbin → nature/waters/wat-songhuajiang
+- provinces/cities/city-hangzhou → nature/waters/wat-qiantangjiang
+- provinces/cities/city-jinan → nature/waters/wat-huanghe
+- provinces/cities/city-nanjing → nature/waters/wat-changjiang
+- provinces/cities/city-shanghai → nature/waters/wat-huangpujiang
+- provinces/cities/city-tianjin → nature/waters/wat-haihe
+- provinces/cities/city-wuhan → nature/waters/wat-changjiang
+- provinces/provinces/prov-hebei → nature/waters/wat-huanghe
+- provinces/provinces/prov-heilongjiang → nature/waters/wat-heilongjiang
+- provinces/provinces/prov-henan → nature/waters/wat-huanghe
+- provinces/provinces/prov-hubei → nature/lakes/lake-dongtinghu
+- provinces/provinces/prov-hunan → nature/lakes/lake-dongtinghu
+- provinces/provinces/prov-qinghai → nature/lakes/lake-qinghaihu
+- provinces/provinces/prov-shandong → nature/mountains/mtn-taihang
+- provinces/provinces/prov-shanxi → nature/mountains/mtn-taihang
+- provinces/provinces/prov-zhejiang → nature/waters/wat-qiantangjiang
 
 ### Ссылка из ядра ведёт в строку вне ядра
 
-- нет
+- provinces/provinces/prov-guangxi → provinces/cities/city-nanning
+- provinces/provinces/prov-guizhou → provinces/cities/city-guiyang
+- provinces/provinces/prov-hunan → provinces/cities/city-changsha

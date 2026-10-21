@@ -238,6 +238,12 @@ class DossierRecordsTest(unittest.TestCase):
         self.assertEqual(fact_place(explicit, dossier()), ('money/banknotes/cny-50', 'back'))
         self.assertEqual(fact_place(question(), dossier()), ('money/banknotes/cny-20', 'flower'))
 
+    def test_reverse_question_takes_its_side_from_given(self):
+        # «На купюре какого номинала изображён 荷花?» — сторона «цветок», а не «номинал»
+        reverse = question(fact={'table': 'banknotes', 'row': 'cny-20', 'ask': 'denomination', 'given': 'flower',
+                                 'where': {'currency': '人民币'}})
+        self.assertEqual(fact_place(reverse, dossier()), ('money/banknotes/cny-20', 'flower'))
+
     def test_draft_stays_out_of_the_bank(self):
         self.assertEqual(dossier_records(dossier(), [question(status='draft')]), [])
 

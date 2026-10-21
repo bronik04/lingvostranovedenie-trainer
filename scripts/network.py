@@ -109,13 +109,14 @@ def _core_lines(dossier: dict, accepted: list[tuple[str, str, str, str]]) -> lis
     for _, _, place, side in accepted:
         counts[(place, side)] = counts.get((place, side), 0) + 1
     outside: list[str] = []
+    russian: set[str] = set()
     for name in _core_tables(dossier):
         table = dossier['tables'][name]
         sides = table.get('sides', [])
         lines += [f'#### Таблица `{name}`', '']
         if not sides:
             lines += ['Стороны не утверждены (`sides`).', '']
-        lines += ['| строка | ' + ' | '.join(sides + ['олимпиада']) + ' |', '|' + '---|' * (len(sides) + 2)]
+        lines += ['| строка | ' + ' | '.join(sides + ['другие', 'олимпиада']) + ' |', '|' + '---|' * (len(sides) + 3)]
         core = set()
         for row in table['rows']:
             if not row.get('core'):
@@ -123,16 +124,29 @@ def _core_lines(dossier: dict, accepted: list[tuple[str, str, str, str]]) -> lis
             place = f'{dossier["id"]}/{name}/{row["id"]}'
             core.add(place)
             cells = [str(counts[(place, side)]) if counts.get((place, side)) else EMPTY for side in sides]
+            # вопросы о строке со сторон вне sides (встроенный «какой город называют 羊城?» — сторона name)
+            other = sum(n for (p, side), n in counts.items() if p == place and side not in sides)
+            cells.append(str(other) if other else EMPTY)
             cells.append('да' if row.get('olympiad') else 'прогноз')
             lines.append(f'| {row["id"]} | ' + ' | '.join(cells) + ' |')
         lines.append('')
         prefix = f'{dossier["id"]}/{name}/'
+        russian.update(f'{prefix}{row["id"]}' for row in table['rows'] if _is_russian(row))
         outside += [f'- {record_id} — {text}' for record_id, text, place, _ in accepted
-                    if place.startswith(prefix) and place not in core]
+                    if place.startswith(prefix) and place not in core and place not in russian]
     lines += ['#### Вопросы о строках вне ядра', '',
               'Кандидаты на перебор: встроить в ядро, переделать или снять в архив.', '']
     lines += outside or ['- нет']
+    on_russian = sum(1 for _, _, place, _ in accepted if place in russian)
+    if on_russian:
+        # решение автора 2026-10-21: российские строки китайской темы ждут российскую тему
+        lines += ['', f'Российские строки (разбирает российская тема): вопросов {on_russian}.']
     return lines
+
+
+def _is_russian(row: dict) -> bool:
+    country = row.get('country')
+    return isinstance(country, dict) and country.get('zh') == '俄罗斯'
 
 
 def _link_lines(loaded: list[tuple[dict, list[dict]]]) -> list[str]:
