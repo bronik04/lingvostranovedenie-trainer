@@ -2282,8 +2282,7 @@
       },
       "sides": [
         "region",
-        "nickname",
-        "river"
+        "nickname"
       ],
       "rows": [
         {
@@ -2582,9 +2581,7 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": [
-            "addition-b1-03"
-          ],
+          "olympiad": [],
           "core": true
         },
         {
@@ -3542,7 +3539,8 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "city-jingdezhen",
@@ -3912,7 +3910,8 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "city-shenzhen",
@@ -3972,7 +3971,8 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "city-yixing",

@@ -205,38 +205,34 @@
 
 #### Таблица `cities`
 
-| строка | region | nickname | river | другие | олимпиада |
-|---|---|---|---|---|---|
-| city-guangzhou | — | — | — | 1 | да |
-| city-jinan | — | — | — | 1 | да |
-| city-lasa | — | — | — | 1 | да |
-| city-fuzhou | — | — | — | 1 | прогноз |
-| city-nanjing | — | — | — | 1 | да |
-| city-chengdu | — | — | — | 1 | да |
-| city-hangzhou | — | — | — | 1 | да |
-| city-xian | — | — | 1 | — | прогноз |
-| city-kunming | — | 1 | — | — | прогноз |
-| city-haerbin | — | 1 | — | — | прогноз |
-| city-wuhan | — | — | — | 1 | прогноз |
-| city-shanghai | — | — | — | 2 | да |
-| city-beijing | — | — | 1 | 1 | да |
-| city-tianjin | — | — | 1 | — | да |
-| city-chongqing | — | — | — | 2 | да |
-| city-jingdezhen | — | — | — | 1 | да |
-| city-suzhou | — | — | — | 1 | прогноз |
+| строка | region | nickname | другие | олимпиада |
+|---|---|---|---|---|
+| city-guangzhou | — | — | 1 | да |
+| city-jinan | — | — | 1 | да |
+| city-lasa | — | — | 1 | да |
+| city-fuzhou | — | — | — | прогноз |
+| city-nanjing | — | — | 1 | да |
+| city-chengdu | — | — | 1 | да |
+| city-hangzhou | — | — | 1 | да |
+| city-xian | — | — | — | прогноз |
+| city-kunming | — | 1 | — | прогноз |
+| city-haerbin | — | 1 | — | прогноз |
+| city-wuhan | — | — | 1 | прогноз |
+| city-shanghai | — | — | 2 | да |
+| city-beijing | — | — | 1 | да |
+| city-tianjin | — | — | — | да |
+| city-chongqing | — | — | 2 | да |
+| city-luoyang | — | — | — | прогноз |
+| city-jingdezhen | — | — | — | да |
+| city-suzhou | — | 1 | — | прогноз |
+| city-guiyang | — | — | — | прогноз |
+| city-shenzhen | — | — | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
-- provinces-q51 — Какое прозвище у Гуйяна?
 - provinces-q53 — Какой город Китая носит прозвище 星城, «город звёзд»?
-- provinces-q54 — Какой город, где издавна выращивают пионы, называют 牡丹花城?
-- provinces-q55 — Какой город Китая называют 鹏城?
-- provinces-q59 — Чем славится город Исин?
-- provinces-q60 — Какому городу принадлежит остров Гулансюй (鼓浪屿) — объект Всемирного наследия с 2017 года?
-- provinces-q61 — В каком городе с 2004 года постоянно проходит ярмарка «Китай — АСЕАН» (中国—东盟博览会)?
-- provinces-q62 — В какой провинции находится город Жэньхуай, где делают знаменитый маотай (茅台酒)?
 
 Российские строки (разбирает российская тема): вопросов 23.
 
@@ -283,5 +279,4 @@
 ### Ссылка из ядра ведёт в строку вне ядра
 
 - provinces/provinces/prov-guangxi → provinces/cities/city-nanning
-- provinces/provinces/prov-guizhou → provinces/cities/city-guiyang
 - provinces/provinces/prov-hunan → provinces/cities/city-changsha

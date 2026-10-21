@@ -49,5 +49,8 @@
 [[provinces.city-beijing]]
 [[provinces.city-tianjin]]
 [[provinces.city-chongqing]]
+[[provinces.city-luoyang]]
 [[provinces.city-jingdezhen]]
 [[provinces.city-suzhou]]
+[[provinces.city-guiyang]]
+[[provinces.city-shenzhen]]
