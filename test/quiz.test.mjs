@@ -413,6 +413,26 @@ test('раунд берёт из группы «один факт» одну з�
   }
 });
 
+test('раунд берёт из вопросов об одной строке досье одну запись', () => {
+  const bank = [record('a', { factRow: 'p/t/r1' }), record('b', { factRow: 'p/t/r1' }), record('c'), record('d')];
+  for (const random of [() => 0, () => 0.5, () => 0.99]) {
+    const round = buildRound(bank, NO_FILTERS, {}, 3, random);
+    assert.equal(round.filter((r) => r.factRow === 'p/t/r1').length, 1, round.map((r) => r.id).join());
+  }
+});
+
+test('в раунде никакие две записи не делят ни строку досье, ни группу фактов', () => {
+  // a и b — одна строка, b и c — одна группа; a и c вместе допустимы: общего факта у них нет
+  const bank = [record('a', { factRow: 'p/t/r1' }), record('b', { factRow: 'p/t/r1', factGroup: 'g' }),
+    record('c', { factGroup: 'g' }), record('d'), record('e')];
+  const keys = (r) => [r.factRow && `r:${r.factRow}`, r.factGroup && `g:${r.factGroup}`].filter(Boolean);
+  for (const random of [() => 0, () => 0.5, () => 0.99]) {
+    const round = buildRound(bank, NO_FILTERS, {}, 3, random);
+    const all = round.flatMap(keys);
+    assert.equal(new Set(all).size, all.length, round.map((r) => r.id).join());
+  }
+});
+
 test('двойник не пропадает, если других вопросов не хватает: он идёт в конец раунда', () => {
   const bank = [record('a', { factGroup: 'g' }), record('b', { factGroup: 'g' }), record('c')];
   // random = 0.99 оставляет порядок [a, b, c]: без отбора двойники стояли бы подряд в начале

@@ -19,8 +19,9 @@ from strict_json import loads_unique
 from taxonomy import TOPICS
 
 KINDS = {'zh', 'ru'}
-TABLE_FIELDS = {'columns', 'rows', 'required', 'datedQuestions'}
-ROW_SERVICE_FIELDS = {'id', 'sources', 'olympiad'}
+# sides — стороны ядра, core — строка ядра (решение автора 2026-10-21): нет разметки — каркас не утверждён
+TABLE_FIELDS = {'columns', 'rows', 'required', 'datedQuestions', 'sides'}
+ROW_SERVICE_FIELDS = {'id', 'sources', 'olympiad', 'core'}
 CELL_FIELDS = {'zh', 'ru', 'gloss', 'ref', 'from'}
 LINK = re.compile(r'[a-z][a-z0-9-]*/[a-z][a-z0-9_-]*/[a-z0-9][a-z0-9-]*')
 LINK_FIELDS = ('ref', 'from')
@@ -106,6 +107,8 @@ def _row_errors(name: str, index: int, row: object, table: dict, seen_rows: set[
     olympiad = row.get('olympiad', [])
     if not isinstance(olympiad, list) or not all(isinstance(item, str) for item in olympiad):
         errors.append(f'{where}: olympiad — список id олимпиадных вопросов')
+    if not isinstance(row.get('core', False), bool):
+        errors.append(f'{where}: core — true или false')
     return errors
 
 
@@ -144,6 +147,12 @@ def validate_dossier(dossier: object) -> list[str]:
             table = {**table, 'required': []}
         if not isinstance(table.get('datedQuestions', False), bool):
             errors.append(f'{name}: datedQuestions — true или false')
+        sides = table.get('sides', [])
+        if not isinstance(sides, list) or any(not isinstance(side, str) or columns.get(side) != 'zh'
+                                              for side in sides):
+            errors.append(f'{name}: sides — список колонок zh этой таблицы')
+        elif len(set(sides)) != len(sides):
+            errors.append(f'{name}: sides: колонки повторяются')
         rows = table.get('rows')
         if not isinstance(rows, list):
             errors.append(f'{name}: rows должен быть списком')
@@ -247,12 +256,12 @@ def _column_glosses(question: dict, dossier: dict) -> dict[str, set[str]]:
 
 def original_record(record: dict) -> dict:
     """Запись до встраивания. В bank.json после сборки у встроенной записи уже есть добавленные
-    варианты (id строк таблицы) и подписи; исходные варианты — с id вида o1, o2…"""
+    варианты (id строк таблицы), подписи и строка ответа `factRow`; исходные варианты — с id вида o1, o2…"""
     if 'dossier' not in record:
         return record
     options = [{key: value for key, value in option.items() if key != 'gloss'}
                for option in record['options'] if OPTION_ID.fullmatch(option['id'])]
-    return {key: value for key, value in record.items() if key != 'dossier'} | {'options': options}
+    return {key: value for key, value in record.items() if key not in {'dossier', 'factRow'}} | {'options': options}
 
 
 def embed_record(record: dict, question: dict, dossier: dict) -> tuple[dict | None, list[str]]:
@@ -308,7 +317,8 @@ def embed_record(record: dict, question: dict, dossier: dict) -> tuple[dict | No
     if named:
         errors.append(f'пояснение {record["id"]} называет неверные варианты {named} — '
                       'на экране их может не оказаться; правка в editorial.json')
-    return {**record, 'options': options, 'dossier': dossier['id']}, errors
+    return {**record, 'options': options, 'dossier': dossier['id'],
+            'factRow': fact_place(question, dossier)[0]}, errors
 
 
 def dossier_records(dossier: dict, questions: list[dict]) -> list[dict]:
@@ -322,6 +332,8 @@ def dossier_records(dossier: dict, questions: list[dict]) -> list[dict]:
             'id': question['id'],
             'origin': 'addition',
             'dossier': dossier['id'],
+            # строка ответа: раунд не ставит рядом вопросы об одной строке
+            'factRow': fact_place(question, dossier)[0],
             'topic': question['topic'],
             'topicSource': 'authored',
             'questionRu': question['questionRu'],
@@ -562,7 +574,7 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
     for question in whole:
         place = _answer_place(question, dossier)
         for other_id, (answer, other_place) in answers.items():
-            if (other_id == question['id'] or _bridged(place, other_place)
+            if (other_id == question['id'] or _bridged(place, other_place) or _same_row(place, other_place)
                     or _same_group(group_of, question['id'], other_id)):
                 continue
             names = _mentions(question['questionRu'], answer)
@@ -572,10 +584,18 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
     return errors
 
 
-def _answer_place(question: dict, dossier: dict) -> tuple[str, str, dict[str, set[str]]]:
-    """Строка ответа (`досье/таблица/строка`), колонка ответа и ссылки строки: куда → из каких колонок."""
+def fact_place(question: dict, dossier: dict) -> tuple[str, str]:
+    """Строка ответа (`досье/таблица/строка`) и колонка ответа — сторона, с которой вопрос спрашивает строку."""
     fact = question['fact']
     column = fact['answer']['column'] if 'options' in fact else fact['ask']
+    row_id, _ = answer_cell(question, dossier)
+    return f'{dossier["id"]}/{fact["table"]}/{row_id}', column
+
+
+def _answer_place(question: dict, dossier: dict) -> tuple[str, str, dict[str, set[str]]]:
+    """Строка ответа (`досье/таблица/строка`), колонка ответа и ссылки строки: куда → из каких колонок."""
+    place, column = fact_place(question, dossier)
+    fact = question['fact']
     row_id, _ = answer_cell(question, dossier)
     row = _rows(dossier, fact['table'])[row_id]
     links: dict[str, set[str]] = {}
@@ -584,7 +604,7 @@ def _answer_place(question: dict, dossier: dict) -> tuple[str, str, dict[str, se
             for field in LINK_FIELDS:
                 if field in cell:
                     links.setdefault(cell[field], set()).add(name)
-    return f'{dossier["id"]}/{fact["table"]}/{row_id}', column, links
+    return place, column, links
 
 
 def _bridged(place: tuple, other_place: tuple) -> bool:
@@ -595,6 +615,12 @@ def _bridged(place: tuple, other_place: tuple) -> bool:
     other_row, other_column, other_links = other_place
     return ((other_row in links and other_column == 'name')
             or other_column in other_links.get(row, set()))
+
+
+def _same_row(place: tuple, other_place: tuple) -> bool:
+    """Решение автора 2026-10-21: вопросы об одной строке — разные стороны одного факта, их
+    взаимная подсказка не утечка; в один раунд их не ставит `factRow` (src/quiz.mjs)."""
+    return place[0] == other_place[0]
 
 
 def _group_owner(groups: dict[str, list[str]] | None) -> dict[str, str]:
@@ -618,6 +644,7 @@ def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
     стоят внутри других слов (唐僧, 秦始皇). Решение автора 2026-10-17: мостик — только название
     связанной строки или связующая ячейка (`_bridged`); прочие взаимные подсказки связанных строк
     закрывает группа фактов `groups` — по id записи (у встроенного вопроса — олимпиадной).
+    Решение автора 2026-10-21: стороны одной строки — не утечка (`_same_row`).
     """
     by_id = {record['id']: record for record in bank}
     entries: list[tuple[str, str, str, dict, tuple, str]] = []
@@ -639,7 +666,7 @@ def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
     errors: list[str] = []
     for dossier_id, label, text, _, place, record_id in entries:
         for other_dossier, other, _, answer, other_place, other_record in entries:
-            if (other == label or _bridged(place, other_place)
+            if (other == label or _bridged(place, other_place) or _same_row(place, other_place)
                     or _same_group(group_of, record_id, other_record)):
                 continue
             if other_dossier != dossier_id and len(answer['zh'].strip()) == 1:
@@ -740,12 +767,15 @@ def dossier_report(dossier: dict, questions: list[dict], bank: list[dict] | None
     for name, table in dossier['tables'].items():
         columns = list(table['columns'])
         lines += [f'## Таблица `{name}` — строк: {len(table["rows"])}', '']
+        if table.get('sides'):
+            lines += [f'Стороны: {", ".join(table["sides"])}. Строки ядра отмечены ★.', '']
         if table['rows']:
             lines.append('| id | ' + ' | '.join(columns) + ' | olympiad |')
             lines.append('|' + '---|' * (len(columns) + 2))
             for row in table['rows']:
                 cells = ' | '.join(_report_cell(row.get(column)) for column in columns)
-                lines.append(f'| {row["id"]} | {cells} | {", ".join(row.get("olympiad", []))} |')
+                mark = ' ★' if row.get('core') else ''
+                lines.append(f'| {row["id"]}{mark} | {cells} | {", ".join(row.get("olympiad", []))} |')
             lines.append('')
     accepted = sum(1 for question in questions if question['status'] == 'accepted')
     lines += [f'## Вопросы — принято {accepted} из {len(questions)}', '']
