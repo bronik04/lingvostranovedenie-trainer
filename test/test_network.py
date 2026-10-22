@@ -155,6 +155,16 @@ class GraphNotesTest(unittest.TestCase):
         # черновик не закрывает сторону
         self.assertIn('Не хватает сторон: сокращение, центр, происхождение названия', notes['provinces.prov-hainan.md'])
 
+    def test_side_without_a_cell_or_skipped_by_the_author_is_not_a_gap(self):
+        data = core_dossier()
+        hainan = data['tables']['provinces']['rows'][1]
+        del hainan['capital']                  # у строки нет ячейки — сторона к ней не относится
+        hainan['skipSides'] = ['named']        # решение автора: эту сторону у строки не спрашиваем
+        note = graph_notes([(data, core_questions())], bank=[])['provinces.prov-hainan.md']
+        self.assertIn('Не хватает сторон: сокращение\n', note)
+        report = network_report([(data, core_questions())], bank=[])
+        self.assertIn('| prov-hainan | — | × | × | — | прогноз |', report)
+
     def test_bank_text_wins_over_the_file(self):
         bank = [{'id': 'provinces-q01', 'questionRu': 'Исправленный текст?'}]
         note = graph_notes([(core_dossier(), core_questions())], bank)['provinces.prov-sichuan.md']

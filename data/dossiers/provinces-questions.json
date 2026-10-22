@@ -808,8 +808,12 @@
     "questionRu": "Как называют Куньмин?",
     "explanation": "Куньмин (昆明) называют 春城 — «городом весны»: климат здесь мягкий, круглый год как весной. Это имя первым дал городу минский поэт Ян Шэнь в строке «春城风物近元宵». Куньмин — центр провинции Юньнань; через город течёт Паньлунцзян, а у южной окраины лежит озеро Дяньчи.",
     "exclude": [
+      "city-fuzhou",
+      "city-guiyang",
+      "city-luoyang",
       "city-nanning",
       "city-renhuai",
+      "city-shenzhen",
       "city-xiamen",
       "city-yixing"
     ],
@@ -910,10 +914,14 @@
     "questionRu": "Как называют Сучжоу?",
     "explanation": "园林之城, «город садов», — прозвище Сучжоу (苏州) в провинции Цзянсу. В городе сохранилось больше 60 классических садов. Девять из них, в том числе Чжочжэнъюань (拙政园), Лююань (留园) и Ваншиюань (网师园), внесены в Список всемирного наследия ЮНЕСКО.",
     "exclude": [
-      "city-yixing",
+      "city-fuzhou",
+      "city-guiyang",
+      "city-luoyang",
+      "city-nanning",
       "city-renhuai",
+      "city-shenzhen",
       "city-xiamen",
-      "city-nanning"
+      "city-yixing"
     ],
     "check": {
       "verdict": "accept",

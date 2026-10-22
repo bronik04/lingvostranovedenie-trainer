@@ -166,44 +166,48 @@
 
 #### Таблица `provinces`
 
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
 | строка | abbr | capital | kind | named | другие | олимпиада |
 |---|---|---|---|---|---|---|
-| prov-beijing | — | — | — | — | — | прогноз |
-| prov-tianjin | — | — | — | — | — | да |
-| prov-shanghai | 1 | — | — | — | — | да |
-| prov-chongqing | 1 | — | — | — | — | да |
+| prov-beijing | — | × | — | × | — | прогноз |
+| prov-tianjin | — | × | — | × | — | да |
+| prov-shanghai | 1 | × | — | × | — | да |
+| prov-chongqing | 1 | × | — | × | — | да |
 | prov-hebei | — | 1 | — | — | — | прогноз |
 | prov-shanxi | 1 | — | — | — | 1 | да |
-| prov-neimenggu | — | 1 | — | — | — | прогноз |
-| prov-liaoning | — | 1 | — | — | — | прогноз |
-| prov-jilin | — | 1 | — | — | — | прогноз |
+| prov-neimenggu | × | 1 | — | × | — | прогноз |
+| prov-liaoning | — | 1 | — | × | — | прогноз |
+| prov-jilin | — | 1 | — | × | — | прогноз |
 | prov-heilongjiang | — | — | — | — | 1 | да |
 | prov-shandong | 1 | — | — | — | 1 | да |
-| prov-jiangsu | — | — | — | — | — | да |
-| prov-zhejiang | — | — | — | — | — | да |
-| prov-anhui | — | — | — | — | 1 | да |
-| prov-fujian | 1 | — | — | — | — | прогноз |
-| prov-jiangxi | — | — | — | — | 1 | да |
+| prov-jiangsu | — | — | — | × | — | да |
+| prov-zhejiang | — | — | — | × | — | да |
+| prov-anhui | — | — | — | × | 1 | да |
+| prov-fujian | 1 | — | — | × | — | прогноз |
+| prov-jiangxi | — | — | — | × | 1 | да |
 | prov-henan | 1 | — | — | 1 | — | да |
 | prov-hubei | 1 | — | — | 1 | 1 | да |
 | prov-hunan | 1 | — | — | — | — | прогноз |
-| prov-guangdong | 1 | — | — | — | 3 | да |
-| prov-guangxi | 1 | — | — | — | — | прогноз |
-| prov-hainan | — | — | — | — | 1 | да |
-| prov-sichuan | — | — | — | — | 3 | да |
-| prov-guizhou | 1 | — | — | — | — | прогноз |
-| prov-yunnan | — | — | — | — | 2 | да |
-| prov-xizang | — | — | — | — | — | да |
-| prov-shaanxi | — | 1 | — | — | — | прогноз |
-| prov-gansu | — | 1 | — | — | — | прогноз |
+| prov-guangdong | 1 | — | — | × | 3 | да |
+| prov-guangxi | 1 | — | — | × | — | прогноз |
+| prov-hainan | — | — | — | × | 1 | да |
+| prov-sichuan | — | — | — | × | 3 | да |
+| prov-guizhou | 1 | — | — | × | — | прогноз |
+| prov-yunnan | — | — | — | × | 2 | да |
+| prov-xizang | — | — | — | × | — | да |
+| prov-shaanxi | — | 1 | — | × | — | прогноз |
+| prov-gansu | — | 1 | — | × | — | прогноз |
 | prov-qinghai | — | — | — | — | 1 | да |
-| prov-ningxia | — | 1 | — | — | — | прогноз |
-| prov-xinjiang | — | 1 | — | — | 1 | да |
-| prov-xianggang | — | — | — | — | — | да |
-| prov-aomen | — | — | 1 | — | — | да |
-| prov-taiwan | — | — | — | — | — | да |
+| prov-ningxia | — | 1 | — | × | — | прогноз |
+| prov-xinjiang | — | 1 | — | × | 1 | да |
+| prov-xianggang | — | × | — | × | — | да |
+| prov-aomen | — | × | 1 | × | — | да |
+| prov-taiwan | × | × | — | × | — | да |
 
 #### Таблица `cities`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
 | строка | region | nickname | другие | олимпиада |
 |---|---|---|---|---|
@@ -211,16 +215,16 @@
 | city-jinan | — | — | 1 | да |
 | city-lasa | — | — | 1 | да |
 | city-fuzhou | — | — | — | прогноз |
-| city-nanjing | — | — | 1 | да |
+| city-nanjing | — | × | 1 | да |
 | city-chengdu | — | — | 1 | да |
-| city-hangzhou | — | — | 1 | да |
-| city-xian | — | — | — | прогноз |
+| city-hangzhou | — | × | 1 | да |
+| city-xian | — | × | — | прогноз |
 | city-kunming | — | 1 | — | прогноз |
 | city-haerbin | — | 1 | — | прогноз |
 | city-wuhan | — | — | 1 | прогноз |
-| city-shanghai | — | — | 2 | да |
-| city-beijing | — | — | 1 | да |
-| city-tianjin | — | — | — | да |
+| city-shanghai | — | × | 2 | да |
+| city-beijing | — | × | 1 | да |
+| city-tianjin | — | × | — | да |
 | city-chongqing | — | — | 2 | да |
 | city-luoyang | — | — | — | прогноз |
 | city-jingdezhen | — | — | — | да |

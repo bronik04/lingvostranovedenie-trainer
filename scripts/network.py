@@ -25,6 +25,7 @@ from taxonomy import TOPICS  # noqa: E402
 
 STAGES = ['школьный', 'муниципальный', 'региональный', 'заключительный', 'пригласительный']
 EMPTY = '—'
+NOT_ASKED = '×'  # сторона к строке не относится: нет ячейки или автор её снял
 # подписи сторон в заметках графа — для чтения в Obsidian; незнакомая колонка показывается как есть
 SIDE_LABELS = {'name': 'название', 'full': 'полное название', 'abbr': 'сокращение', 'capital': 'центр',
                'kind': 'тип единицы', 'named': 'происхождение названия', 'region': 'провинция',
@@ -118,6 +119,13 @@ def _olympiad(row: dict, bank: list[dict]) -> list[str]:
     return [i for i in row.get('olympiad', []) if i not in by_id or by_id[i].get('occurrences')]
 
 
+def _asked_sides(row: dict, table: dict) -> list[str]:
+    """Стороны таблицы, которые относятся к строке: у строки есть ячейка, и автор не снял сторону
+    (`skipSides`). Сторона без ячейки (центр у города центрального подчинения) — не пробел."""
+    skip = set(row.get('skipSides', []))
+    return [side for side in table.get('sides', []) if isinstance(row.get(side), dict) and side not in skip]
+
+
 def _core_lines(dossier: dict, accepted: list[tuple[str, str, str, str]], bank: list[dict]) -> list[str]:
     lines: list[str] = []
     counts: dict[tuple[str, str], int] = {}
@@ -129,6 +137,7 @@ def _core_lines(dossier: dict, accepted: list[tuple[str, str, str, str]], bank: 
         table = dossier['tables'][name]
         sides = table.get('sides', [])
         lines += [f'#### Таблица `{name}`', '']
+        lines += [f'`{EMPTY}` — сторона пуста, `{NOT_ASKED}` — к строке не относится (нет ячейки или автор снял её в `skipSides`).', '']
         if not sides:
             lines += ['Стороны не утверждены (`sides`).', '']
         lines += ['| строка | ' + ' | '.join(sides + ['другие', 'олимпиада']) + ' |', '|' + '---|' * (len(sides) + 3)]
@@ -138,7 +147,9 @@ def _core_lines(dossier: dict, accepted: list[tuple[str, str, str, str]], bank: 
                 continue
             place = f'{dossier["id"]}/{name}/{row["id"]}'
             core.add(place)
-            cells = [str(counts[(place, side)]) if counts.get((place, side)) else EMPTY for side in sides]
+            asked = _asked_sides(row, table)
+            cells = [(str(counts[(place, side)]) if counts.get((place, side)) else EMPTY) if side in asked else NOT_ASKED
+                     for side in sides]
             # вопросы о строке со сторон вне sides (встроенный «какой город называют 羊城?» — сторона name)
             other = sum(n for (p, side), n in counts.items() if p == place and side not in sides)
             cells.append(str(other) if other else EMPTY)
@@ -225,7 +236,7 @@ def graph_notes(loaded: list[tuple[dict, list[dict]]], bank: list[dict]) -> dict
             place = f'{dossier["id"]}/{name}/{row["id"]}'
             lines = [f'# {_title(row, dossier["tables"][name])}', '', f'Тема: [[{dossier["id"]}]]', '']
             asked = {side for _, _, p, side in accepted if p == place}
-            empty = [side for side in dossier['tables'][name].get('sides', []) if side not in asked]
+            empty = [side for side in _asked_sides(row, dossier['tables'][name]) if side not in asked]
             if empty:
                 lines += [f'Не хватает сторон: {", ".join(_label(side) for side in empty)}', '']
             links = _links(row)
