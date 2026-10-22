@@ -2,8 +2,6 @@
 
 Тема: [[cuisine]]
 
-Не хватает сторон: type
-
 Связи:
 - [[cuisine.tt-red]]
 - [[provinces.prov-anhui]]

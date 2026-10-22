@@ -189,7 +189,9 @@
               "checkedAt": "2026-10-22"
             }
           ],
-          "olympiad": [],
+          "olympiad": [
+            "2020-21-zak-qf17a29"
+          ],
           "core": true
         },
         {
@@ -6389,7 +6391,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "type"
+          ]
         },
         {
           "id": "te-huangshan-maofeng",
