@@ -2,7 +2,7 @@
 
 Файл пишет сборка (`scripts/network.py`). Ядро размечается в таблицах досье: `core` у строки, `sides` у таблицы. Граф для Obsidian — папка `data/review/graph/`: сборка каждый раз стирает в ней все заметки `*.md` и пишет заново, поэтому свои заметки в эту папку не кладите.
 
-Досье: 15, с утверждённым каркасом: 1.
+Досье: 15, с утверждённым каркасом: 2.
 
 ## Олимпиада по годам
 
@@ -54,13 +54,114 @@
 
 ### Кухня и блюда (`cuisine`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `cuisines`
 
-- строк: 93
-- принятых вопросов: 13
-- строк с вопросом: 13
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 0
-- встроено олимпиадных: 2
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | region | taste | dish | другие | олимпиада |
+|---|---|---|---|---|---|
+| cs-lu | — | 1 | — | 1 | да |
+| cs-chuan | — | 1 | — | — | прогноз |
+| cs-yue | 1 | 1 | — | 1 | да |
+| cs-su | — | 1 | — | — | прогноз |
+| cs-min | 1 | × | 1 | — | прогноз |
+| cs-zhe | — | × | — | — | прогноз |
+| cs-xiang | 1 | 1 | — | — | прогноз |
+| cs-hui | — | × | — | — | прогноз |
+
+#### Таблица `savory`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | school | другие | олимпиада |
+|---|---|---|---|
+| cu-cn-mapo-doufu | 1 | — | прогноз |
+| cu-cn-yuxiang-rousi | — | — | прогноз |
+| cu-cn-huiguorou | — | — | прогноз |
+| cu-cn-beijing-kaoya | × | 1 | прогноз |
+| cu-cn-gongbao-jiding | 1 | — | прогноз |
+| cu-cn-dongporou | 1 | — | прогноз |
+| cu-cn-baiqieji | 1 | — | прогноз |
+| cu-cn-songshu-guiyu | 1 | — | прогноз |
+| cu-cn-xihu-cuyu | — | — | прогноз |
+| cu-cn-congshao-haishen | — | — | прогноз |
+| cu-cn-jiuzhuan-dachang | 1 | — | прогноз |
+| cu-cn-xiefen-shizitou | — | — | прогноз |
+| cu-cn-pai-huanggua | × | — | прогноз |
+| cu-cn-fotiaoqiang | 1 | — | прогноз |
+| cu-cn-duojiao-yutou | 1 | — | прогноз |
+| cu-cn-maoshi-hongshaorou | — | — | прогноз |
+| cu-cn-chou-guiyu | 1 | — | прогноз |
+| cu-cn-mayi-shangshu | — | — | да |
+
+#### Таблица `staples`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+Стороны не утверждены (`sides`).
+
+| строка | другие | олимпиада |
+|---|---|---|
+| cu-cn-daoxiaomian | — | прогноз |
+| cu-cn-reganmian | — | прогноз |
+| cu-cn-roujiamo | — | прогноз |
+| cu-cn-youtiao | — | прогноз |
+| cu-cn-mantou | — | прогноз |
+| cu-cn-changfen | — | прогноз |
+| cu-cn-jiaozi | — | прогноз |
+| cu-cn-xiaolongbao | — | прогноз |
+| cu-cn-jianbingguozi | — | прогноз |
+| cu-cn-guoqiaomixian | — | прогноз |
+| cu-cn-lanzhouniuroumian | — | прогноз |
+| cu-cn-yangzhouchaofan | — | прогноз |
+
+#### Таблица `sweets`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+Стороны не утверждены (`sides`).
+
+| строка | другие | олимпиада |
+|---|---|---|
+| cu-cn-tangyuan | — | прогноз |
+| cu-cn-tanghulu | — | прогноз |
+
+#### Таблица `teatypes`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+Стороны не утверждены (`sides`).
+
+| строка | другие | олимпиада |
+|---|---|---|
+| tt-green | — | прогноз |
+| tt-white | — | прогноз |
+| tt-yellow | — | прогноз |
+| tt-oolong | — | прогноз |
+| tt-red | — | прогноз |
+| tt-dark | — | прогноз |
+
+#### Таблица `teas`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | type | region | другие | олимпиада |
+|---|---|---|---|---|
+| te-longjing | 1 | 1 | — | да |
+| te-biluochun | 1 | 1 | — | прогноз |
+| te-tieguanyin | 1 | 1 | — | прогноз |
+| te-dahongpao | 1 | 1 | — | прогноз |
+| te-puer | × | 1 | — | прогноз |
+| te-qimen | × | 1 | — | прогноз |
+| te-huangshan-maofeng | 1 | 1 | — | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- нет
+
+Российские строки (разбирает российская тема): вопросов 1.
 
 ### Династии и правители (`dynasties`)
 
@@ -168,42 +269,42 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | abbr | capital | kind | named | другие | олимпиада |
-|---|---|---|---|---|---|---|
-| prov-beijing | — | × | — | × | — | прогноз |
-| prov-tianjin | — | × | — | × | — | да |
-| prov-shanghai | 1 | × | — | × | — | да |
-| prov-chongqing | 1 | × | — | × | — | да |
-| prov-hebei | — | 1 | — | — | — | прогноз |
-| prov-shanxi | 1 | — | — | — | 1 | да |
-| prov-neimenggu | × | 1 | — | × | — | прогноз |
-| prov-liaoning | — | 1 | — | × | — | прогноз |
-| prov-jilin | — | 1 | — | × | — | прогноз |
-| prov-heilongjiang | — | — | — | — | 1 | да |
-| prov-shandong | 1 | — | — | — | 1 | да |
-| prov-jiangsu | — | — | — | × | — | да |
-| prov-zhejiang | — | — | — | × | — | да |
-| prov-anhui | — | — | — | × | 1 | да |
-| prov-fujian | 1 | — | — | × | — | прогноз |
-| prov-jiangxi | — | — | — | × | 1 | да |
-| prov-henan | 1 | — | — | 1 | — | да |
-| prov-hubei | 1 | — | — | 1 | 1 | да |
-| prov-hunan | 1 | — | — | — | — | прогноз |
-| prov-guangdong | 1 | — | — | × | 3 | да |
-| prov-guangxi | 1 | — | — | × | — | прогноз |
-| prov-hainan | — | — | — | × | 1 | да |
-| prov-sichuan | — | — | — | × | 3 | да |
-| prov-guizhou | 1 | — | — | × | — | прогноз |
-| prov-yunnan | — | — | — | × | 2 | да |
-| prov-xizang | — | — | — | × | — | да |
-| prov-shaanxi | — | 1 | — | × | — | прогноз |
-| prov-gansu | — | 1 | — | × | — | прогноз |
-| prov-qinghai | — | — | — | — | 1 | да |
-| prov-ningxia | — | 1 | — | × | — | прогноз |
-| prov-xinjiang | — | 1 | — | × | 1 | да |
-| prov-xianggang | — | × | — | × | — | да |
-| prov-aomen | — | × | 1 | × | — | да |
-| prov-taiwan | × | × | — | × | — | да |
+| строка | abbr | abbr2 | capital | kind | named | другие | олимпиада |
+|---|---|---|---|---|---|---|---|
+| prov-beijing | — | × | × | 1 | × | — | прогноз |
+| prov-tianjin | — | × | × | — | × | — | да |
+| prov-shanghai | 1 | × | × | — | × | — | да |
+| prov-chongqing | 1 | × | × | — | × | — | да |
+| prov-hebei | 1 | × | 1 | × | × | — | прогноз |
+| prov-shanxi | 1 | × | — | × | × | 1 | да |
+| prov-neimenggu | × | × | 1 | — | × | — | прогноз |
+| prov-liaoning | — | × | 1 | × | × | — | прогноз |
+| prov-jilin | — | × | 1 | × | × | — | прогноз |
+| prov-heilongjiang | — | × | — | × | × | 1 | да |
+| prov-shandong | 1 | × | — | × | × | 1 | да |
+| prov-jiangsu | — | × | — | × | × | — | да |
+| prov-zhejiang | — | × | 1 | × | × | — | да |
+| prov-anhui | — | × | — | × | × | 1 | да |
+| prov-fujian | 1 | × | — | × | × | — | прогноз |
+| prov-jiangxi | — | × | — | × | × | 1 | да |
+| prov-henan | 1 | × | — | × | 1 | — | да |
+| prov-hubei | 1 | × | 1 | × | 1 | 1 | да |
+| prov-hunan | 1 | × | — | × | × | — | прогноз |
+| prov-guangdong | 1 | × | 1 | × | × | 3 | да |
+| prov-guangxi | 1 | × | — | — | × | — | прогноз |
+| prov-hainan | — | × | — | × | × | 1 | да |
+| prov-sichuan | — | 1 | — | × | × | 3 | да |
+| prov-guizhou | 1 | × | — | × | × | — | прогноз |
+| prov-yunnan | — | × | — | × | × | 2 | да |
+| prov-xizang | — | × | — | — | × | — | да |
+| prov-shaanxi | — | × | 1 | × | × | — | прогноз |
+| prov-gansu | — | × | 1 | × | × | — | прогноз |
+| prov-qinghai | — | × | — | × | — | 1 | да |
+| prov-ningxia | — | × | 1 | — | × | — | прогноз |
+| prov-xinjiang | — | × | 1 | — | × | 1 | да |
+| prov-xianggang | — | × | × | — | × | — | да |
+| prov-aomen | — | × | × | 1 | × | — | да |
+| prov-taiwan | × | × | × | × | × | — | да |
 
 #### Таблица `cities`
 
@@ -256,11 +357,30 @@
 
 Строки ядра без ссылок наружу и на себя.
 
+- cuisine/savory/cu-cn-beijing-kaoya
+- cuisine/savory/cu-cn-pai-huanggua
+- cuisine/staples/cu-cn-changfen
+- cuisine/staples/cu-cn-daoxiaomian
+- cuisine/staples/cu-cn-guoqiaomixian
+- cuisine/staples/cu-cn-jianbingguozi
+- cuisine/staples/cu-cn-lanzhouniuroumian
+- cuisine/staples/cu-cn-mantou
+- cuisine/staples/cu-cn-reganmian
+- cuisine/staples/cu-cn-roujiamo
+- cuisine/staples/cu-cn-xiaolongbao
+- cuisine/staples/cu-cn-yangzhouchaofan
+- cuisine/staples/cu-cn-youtiao
+- cuisine/sweets/cu-cn-tanghulu
+- cuisine/teatypes/tt-white
+- cuisine/teatypes/tt-yellow
 - provinces/provinces/prov-aomen
 - provinces/provinces/prov-ningxia
 
 ### Ссылка из ядра ведёт в тему без каркаса
 
+- cuisine/savory/cu-cn-yuxiang-rousi → holidays/customs/cus-yuxiangrousi
+- cuisine/staples/cu-cn-jiaozi → holidays/customs/cus-jiaozi
+- cuisine/sweets/cu-cn-tangyuan → holidays/customs/cus-tangyuan
 - provinces/cities/city-chongqing → nature/waters/wat-changjiang
 - provinces/cities/city-guangzhou → nature/waters/wat-zhujiang
 - provinces/cities/city-haerbin → nature/waters/wat-songhuajiang
