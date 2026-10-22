@@ -122,7 +122,6 @@ class QuestionHintsTest(unittest.TestCase):
         '2019-20-reg-5': '河',
         'addition-b1-08': '天京',
         'addition-b1-11': '神武门',
-        'addition-b2-07': '梁山',
         '2022-23-reg-2': '高中',
     }
 

@@ -124,10 +124,17 @@ class ValidateDossierTest(unittest.TestCase):
             (lambda d: table(d).update(sides=['nope']), 'sides — список колонок zh'),
             (lambda d: table(d).update(sides=[{'column': 'flower'}]), 'sides — список колонок zh'),
             (lambda d: table(d).update(sides=['flower', 'flower']), 'sides: колонки повторяются'),
+            (lambda d: row(d, 'cny-20').update(skipSides=['back']), 'skipSides — стороны из sides таблицы'),
         ]
         for mutate, fragment in cases:
             with self.subTest(fragment=fragment):
                 self.assertRejects(mutate, fragment)
+
+    def test_skip_sides_name_sides_of_the_table(self):
+        data = dossier()
+        data['tables']['banknotes']['sides'] = ['flower', 'back']
+        row(data, 'cny-20')['skipSides'] = ['back']
+        self.assertEqual(validate_dossier(data), [])
 
     def test_report_marks_core_rows_and_sides(self):
         data = dossier()
@@ -237,6 +244,12 @@ class DossierRecordsTest(unittest.TestCase):
                                   'answer': {'row': 'cny-50', 'column': 'back'}})
         self.assertEqual(fact_place(explicit, dossier()), ('money/banknotes/cny-50', 'back'))
         self.assertEqual(fact_place(question(), dossier()), ('money/banknotes/cny-20', 'flower'))
+
+    def test_reverse_question_takes_its_side_from_given(self):
+        # «На купюре какого номинала изображён 荷花?» — сторона «цветок», а не «номинал»
+        reverse = question(fact={'table': 'banknotes', 'row': 'cny-20', 'ask': 'denomination', 'given': 'flower',
+                                 'where': {'currency': '人民币'}})
+        self.assertEqual(fact_place(reverse, dossier()), ('money/banknotes/cny-20', 'flower'))
 
     def test_draft_stays_out_of_the_bank(self):
         self.assertEqual(dossier_records(dossier(), [question(status='draft')]), [])

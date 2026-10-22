@@ -12,6 +12,12 @@
         "named": "zh",
         "about": "ru"
       },
+      "sides": [
+        "abbr",
+        "capital",
+        "kind",
+        "named"
+      ],
       "rows": [
         {
           "id": "prov-beijing",
@@ -69,7 +75,8 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "prov-tianjin",
@@ -122,7 +129,8 @@
           ],
           "olympiad": [
             "2015-16-reg-1"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "prov-shanghai",
@@ -175,7 +183,8 @@
           ],
           "olympiad": [
             "2018-19-shk-10"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "prov-chongqing",
@@ -228,7 +237,8 @@
           ],
           "olympiad": [
             "2023-24-zak-2"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "prov-hebei",
@@ -301,7 +311,8 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "prov-shanxi",
@@ -375,7 +386,8 @@
           ],
           "olympiad": [
             "2018-19-mun-55"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "prov-neimenggu",
@@ -428,7 +440,8 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "prov-liaoning",
@@ -499,7 +512,11 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "named"
+          ]
         },
         {
           "id": "prov-jilin",
@@ -563,7 +580,11 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "named"
+          ]
         },
         {
           "id": "prov-heilongjiang",
@@ -628,7 +649,8 @@
           ],
           "olympiad": [
             "2020-21-zak-q1f0e35"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "prov-shandong",
@@ -695,9 +717,9 @@
             }
           ],
           "olympiad": [
-            "2017-18-shk-6",
-            "addition-b2-07"
-          ]
+            "2017-18-shk-6"
+          ],
+          "core": true
         },
         {
           "id": "prov-jiangsu",
@@ -758,6 +780,10 @@
           ],
           "olympiad": [
             "2023-24-mun-32"
+          ],
+          "core": true,
+          "skipSides": [
+            "named"
           ]
         },
         {
@@ -828,6 +854,10 @@
           ],
           "olympiad": [
             "2016-17-reg-9"
+          ],
+          "core": true,
+          "skipSides": [
+            "named"
           ]
         },
         {
@@ -896,6 +926,10 @@
           "olympiad": [
             "addition-b1-02",
             "2024-25-zak-qe05919"
+          ],
+          "core": true,
+          "skipSides": [
+            "named"
           ]
         },
         {
@@ -976,7 +1010,11 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "named"
+          ]
         },
         {
           "id": "prov-jiangxi",
@@ -1036,6 +1074,10 @@
           ],
           "olympiad": [
             "2022-23-reg-3"
+          ],
+          "core": true,
+          "skipSides": [
+            "named"
           ]
         },
         {
@@ -1112,7 +1154,8 @@
           ],
           "olympiad": [
             "2017-18-reg-8"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "prov-hubei",
@@ -1181,7 +1224,8 @@
           ],
           "olympiad": [
             "2018-19-zak-3"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "prov-hunan",
@@ -1249,7 +1293,8 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "prov-guangdong",
@@ -1340,6 +1385,10 @@
             "2018-19-shk-4",
             "2018-19-shk-3",
             "2023-24-mun-33"
+          ],
+          "core": true,
+          "skipSides": [
+            "named"
           ]
         },
         {
@@ -1413,7 +1462,11 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "named"
+          ]
         },
         {
           "id": "prov-hainan",
@@ -1474,7 +1527,8 @@
           "olympiad": [
             "2024-25-zak-qf78e62",
             "2016-17-zak-1"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "prov-sichuan",
@@ -1566,6 +1620,10 @@
             "2024-25-pri-33",
             "2024-25-reg-8",
             "2024-25-shk-34"
+          ],
+          "core": true,
+          "skipSides": [
+            "named"
           ]
         },
         {
@@ -1614,7 +1672,8 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "prov-yunnan",
@@ -1683,7 +1742,8 @@
             "2015-16-reg-4",
             "2019-20-shk-q048752",
             "addition-b1-05"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "prov-xizang",
@@ -1741,7 +1801,8 @@
           ],
           "olympiad": [
             "2021-22-mun-qd67aaa"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "prov-shaanxi",
@@ -1800,7 +1861,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "named"
+          ]
         },
         {
           "id": "prov-gansu",
@@ -1861,7 +1926,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "named"
+          ]
         },
         {
           "id": "prov-qinghai",
@@ -1915,7 +1984,8 @@
           ],
           "olympiad": [
             "2024-25-pri-34"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "prov-ningxia",
@@ -1993,7 +2063,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "named"
+          ]
         },
         {
           "id": "prov-xinjiang",
@@ -2066,7 +2140,8 @@
           ],
           "olympiad": [
             "2021-22-reg-q3e8cc7"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "prov-xianggang",
@@ -2127,7 +2202,8 @@
           "olympiad": [
             "2015-16-shk-64",
             "2020-21-reg-q4b4176"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "prov-aomen",
@@ -2179,7 +2255,8 @@
           ],
           "olympiad": [
             "2016-17-shk-3"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "prov-taiwan",
@@ -2227,7 +2304,8 @@
           ],
           "olympiad": [
             "2015-16-mun-10"
-          ]
+          ],
+          "core": true
         }
       ]
     },
@@ -2241,6 +2319,10 @@
         "known": "zh",
         "about": "ru"
       },
+      "sides": [
+        "region",
+        "nickname"
+      ],
       "rows": [
         {
           "id": "city-guangzhou",
@@ -2321,7 +2403,8 @@
           ],
           "olympiad": [
             "2016-17-zak-2"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "city-jinan",
@@ -2394,7 +2477,8 @@
           ],
           "olympiad": [
             "2021-22-reg-qd842f6"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "city-lasa",
@@ -2466,7 +2550,8 @@
           ],
           "olympiad": [
             "2018-19-zak-6"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "city-fuzhou",
@@ -2535,9 +2620,8 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": [
-            "addition-b1-03"
-          ]
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "city-nanjing",
@@ -2611,7 +2695,8 @@
           ],
           "olympiad": [
             "2023-24-mun-32"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "city-chengdu",
@@ -2689,7 +2774,8 @@
           ],
           "olympiad": [
             "2024-25-shk-34"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "city-hangzhou",
@@ -2746,7 +2832,8 @@
           ],
           "olympiad": [
             "2015-16-shk-65"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "city-xian",
@@ -2814,7 +2901,8 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "city-kunming",
@@ -2881,7 +2969,8 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "city-haerbin",
@@ -2965,7 +3054,8 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "city-changsha",
@@ -3116,7 +3206,8 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "city-shanghai",
@@ -3211,7 +3302,8 @@
             "2015-16-shk-63",
             "2015-16-zak-1",
             "addition-b2-15"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "city-beijing",
@@ -3289,7 +3381,8 @@
           "olympiad": [
             "2022-23-shk-q623963",
             "2016-17-mun-8"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "city-tianjin",
@@ -3345,7 +3438,8 @@
           ],
           "olympiad": [
             "2015-16-reg-1"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "city-chongqing",
@@ -3409,7 +3503,8 @@
           "olympiad": [
             "2018-19-reg-3",
             "2023-24-zak-2"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "city-luoyang",
@@ -3483,7 +3578,8 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "city-jingdezhen",
@@ -3558,7 +3654,8 @@
           ],
           "olympiad": [
             "2017-18-mun-10"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "city-suzhou",
@@ -3630,7 +3727,8 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "city-xiamen",
@@ -3851,7 +3949,8 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "city-shenzhen",
@@ -3911,7 +4010,8 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "city-yixing",

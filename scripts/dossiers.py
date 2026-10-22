@@ -21,7 +21,7 @@ from taxonomy import TOPICS
 KINDS = {'zh', 'ru'}
 # sides — стороны ядра, core — строка ядра (решение автора 2026-10-21): нет разметки — каркас не утверждён
 TABLE_FIELDS = {'columns', 'rows', 'required', 'datedQuestions', 'sides'}
-ROW_SERVICE_FIELDS = {'id', 'sources', 'olympiad', 'core'}
+ROW_SERVICE_FIELDS = {'id', 'sources', 'olympiad', 'core', 'skipSides'}
 CELL_FIELDS = {'zh', 'ru', 'gloss', 'ref', 'from'}
 LINK = re.compile(r'[a-z][a-z0-9-]*/[a-z][a-z0-9_-]*/[a-z0-9][a-z0-9-]*')
 LINK_FIELDS = ('ref', 'from')
@@ -109,6 +109,11 @@ def _row_errors(name: str, index: int, row: object, table: dict, seen_rows: set[
         errors.append(f'{where}: olympiad — список id олимпиадных вопросов')
     if not isinstance(row.get('core', False), bool):
         errors.append(f'{where}: core — true или false')
+    # стороны, которые автор решил у этой строки не спрашивать (например, узкое происхождение названия)
+    skip = row.get('skipSides', [])
+    sides = table.get('sides', [])
+    if not isinstance(skip, list) or any(not isinstance(side, str) or side not in sides for side in skip):
+        errors.append(f'{where}: skipSides — стороны из sides таблицы')
     return errors
 
 
@@ -584,18 +589,23 @@ def validate_questions(questions: object, dossier: dict, bank: list[dict] | None
     return errors
 
 
+def _answer_column(fact: dict) -> str:
+    return fact['answer']['column'] if 'options' in fact else fact['ask']
+
+
 def fact_place(question: dict, dossier: dict) -> tuple[str, str]:
-    """Строка ответа (`досье/таблица/строка`) и колонка ответа — сторона, с которой вопрос спрашивает строку."""
+    """Строка ответа (`досье/таблица/строка`) и сторона, с которой вопрос спрашивает строку: у
+    обратного вопроса («какая провинция сокращённо называется 豫?») это `given`, иначе колонка ответа."""
     fact = question['fact']
-    column = fact['answer']['column'] if 'options' in fact else fact['ask']
     row_id, _ = answer_cell(question, dossier)
-    return f'{dossier["id"]}/{fact["table"]}/{row_id}', column
+    return f'{dossier["id"]}/{fact["table"]}/{row_id}', fact.get('given') or _answer_column(fact)
 
 
 def _answer_place(question: dict, dossier: dict) -> tuple[str, str, dict[str, set[str]]]:
     """Строка ответа (`досье/таблица/строка`), колонка ответа и ссылки строки: куда → из каких колонок."""
-    place, column = fact_place(question, dossier)
+    place, _ = fact_place(question, dossier)
     fact = question['fact']
+    column = _answer_column(fact)
     row_id, _ = answer_cell(question, dossier)
     row = _rows(dossier, fact['table'])[row_id]
     links: dict[str, set[str]] = {}
@@ -628,8 +638,9 @@ def _group_owner(groups: dict[str, list[str]] | None) -> dict[str, str]:
 
 
 def _same_group(group_of: dict[str, str], left: str, right: str) -> bool:
-    """Записи одной группы фактов автор признал одним фактом (раунд старается не ставить их
-    вместе), поэтому их взаимная подсказка не утечка."""
+    """Записи одной группы фактов автор оставил вместе, хотя они подсказывают друг другу: это один
+    факт или слово из ответа одного стоит в тексте другого (раунд не ставит их рядом), поэтому их
+    взаимная подсказка не утечка."""
     return left in group_of and group_of[left] == group_of.get(right)
 
 

@@ -25,6 +25,15 @@ from taxonomy import TOPICS  # noqa: E402
 
 STAGES = ['школьный', 'муниципальный', 'региональный', 'заключительный', 'пригласительный']
 EMPTY = '—'
+NOT_ASKED = '×'  # сторона к строке не относится: нет ячейки или автор её снял
+# подписи сторон в заметках графа — для чтения в Obsidian; незнакомая колонка показывается как есть
+SIDE_LABELS = {'name': 'название', 'full': 'полное название', 'abbr': 'сокращение', 'capital': 'центр',
+               'kind': 'тип единицы', 'named': 'происхождение названия', 'region': 'провинция',
+               'nickname': 'прозвище', 'river': 'река', 'known': 'чем известен'}
+
+
+def _label(side: str) -> str:
+    return SIDE_LABELS.get(side, side)
 
 
 def _accepted(dossier: dict, questions: list[dict], bank: list[dict]) -> list[tuple[str, str, str, str]]:
@@ -103,36 +112,67 @@ def _baseline(dossier: dict, accepted: list[tuple[str, str, str, str]], question
             f'- встроено олимпиадных: {embedded}']
 
 
-def _core_lines(dossier: dict, accepted: list[tuple[str, str, str, str]]) -> list[str]:
+def _olympiad(row: dict, bank: list[dict]) -> list[str]:
+    """Олимпиадные id строки. В поле `olympiad` бывают и наши дополнения: олимпиадная — запись с
+    появлениями на олимпиаде; id, которого нет в банке, считается олимпиадным."""
+    by_id = {record['id']: record for record in bank}
+    return [i for i in row.get('olympiad', []) if i not in by_id or by_id[i].get('occurrences')]
+
+
+def _asked_sides(row: dict, table: dict) -> list[str]:
+    """Стороны таблицы, которые относятся к строке: у строки есть ячейка, и автор не снял сторону
+    (`skipSides`). Сторона без ячейки (центр у города центрального подчинения) — не пробел."""
+    skip = set(row.get('skipSides', []))
+    return [side for side in table.get('sides', []) if isinstance(row.get(side), dict) and side not in skip]
+
+
+def _core_lines(dossier: dict, accepted: list[tuple[str, str, str, str]], bank: list[dict]) -> list[str]:
     lines: list[str] = []
     counts: dict[tuple[str, str], int] = {}
     for _, _, place, side in accepted:
         counts[(place, side)] = counts.get((place, side), 0) + 1
     outside: list[str] = []
+    russian: set[str] = set()
     for name in _core_tables(dossier):
         table = dossier['tables'][name]
         sides = table.get('sides', [])
         lines += [f'#### Таблица `{name}`', '']
+        lines += [f'`{EMPTY}` — сторона пуста, `{NOT_ASKED}` — к строке не относится (нет ячейки или автор снял её в `skipSides`).', '']
         if not sides:
             lines += ['Стороны не утверждены (`sides`).', '']
-        lines += ['| строка | ' + ' | '.join(sides + ['олимпиада']) + ' |', '|' + '---|' * (len(sides) + 2)]
+        lines += ['| строка | ' + ' | '.join(sides + ['другие', 'олимпиада']) + ' |', '|' + '---|' * (len(sides) + 3)]
         core = set()
         for row in table['rows']:
             if not row.get('core'):
                 continue
             place = f'{dossier["id"]}/{name}/{row["id"]}'
             core.add(place)
-            cells = [str(counts[(place, side)]) if counts.get((place, side)) else EMPTY for side in sides]
-            cells.append('да' if row.get('olympiad') else 'прогноз')
+            asked = _asked_sides(row, table)
+            cells = [(str(counts[(place, side)]) if counts.get((place, side)) else EMPTY) if side in asked else NOT_ASKED
+                     for side in sides]
+            # вопросы о строке со сторон вне sides (встроенный «какой город называют 羊城?» — сторона name)
+            other = sum(n for (p, side), n in counts.items() if p == place and side not in sides)
+            cells.append(str(other) if other else EMPTY)
+            cells.append('да' if _olympiad(row, bank) else 'прогноз')
             lines.append(f'| {row["id"]} | ' + ' | '.join(cells) + ' |')
         lines.append('')
         prefix = f'{dossier["id"]}/{name}/'
+        russian.update(f'{prefix}{row["id"]}' for row in table['rows'] if _is_russian(row))
         outside += [f'- {record_id} — {text}' for record_id, text, place, _ in accepted
-                    if place.startswith(prefix) and place not in core]
+                    if place.startswith(prefix) and place not in core and place not in russian]
     lines += ['#### Вопросы о строках вне ядра', '',
               'Кандидаты на перебор: встроить в ядро, переделать или снять в архив.', '']
     lines += outside or ['- нет']
+    on_russian = sum(1 for _, _, place, _ in accepted if place in russian)
+    if on_russian:
+        # решение автора 2026-10-21: российские строки китайской темы ждут российскую тему
+        lines += ['', f'Российские строки (разбирает российская тема): вопросов {on_russian}.']
     return lines
+
+
+def _is_russian(row: dict) -> bool:
+    country = row.get('country')
+    return isinstance(country, dict) and country.get('zh') == '俄罗斯'
 
 
 def _link_lines(loaded: list[tuple[dict, list[dict]]]) -> list[str]:
@@ -169,7 +209,7 @@ def network_report(loaded: list[tuple[dict, list[dict]]], bank: list[dict]) -> s
         accepted = _accepted(dossier, questions, bank)
         lines += ['', f'### {dossier["title"]} (`{dossier["id"]}`)', '']
         if _core_tables(dossier):
-            lines += _core_lines(dossier, accepted)
+            lines += _core_lines(dossier, accepted, bank)
         else:
             lines += ['Ядро не размечено: каркас не утверждён.', ''] + _baseline(dossier, accepted, questions)
     lines += [''] + _link_lines(loaded)
@@ -195,12 +235,16 @@ def graph_notes(loaded: list[tuple[dict, list[dict]]], bank: list[dict]) -> dict
         for name, row in core_rows:
             place = f'{dossier["id"]}/{name}/{row["id"]}'
             lines = [f'# {_title(row, dossier["tables"][name])}', '', f'Тема: [[{dossier["id"]}]]', '']
+            asked = {side for _, _, p, side in accepted if p == place}
+            empty = [side for side in _asked_sides(row, dossier['tables'][name]) if side not in asked]
+            if empty:
+                lines += [f'Не хватает сторон: {", ".join(_label(side) for side in empty)}', '']
             links = _links(row)
             if links:
                 lines += ['Связи:', *(f'- [[{_node(target)}]]' for target in links), '']
             lines += ['Вопросы:']
-            lines += [f'- {side}: {record_id} — {text}' for record_id, text, p, side in accepted if p == place] or ['- нет']
-            olympiad = row.get('olympiad') or []
+            lines += [f'- {_label(side)}: {record_id} — {text}' for record_id, text, p, side in accepted if p == place] or ['- нет']
+            olympiad = _olympiad(row, bank)
             lines += ['', f'Олимпиада: {", ".join(olympiad)}' if olympiad else 'Олимпиада: ещё не спрашивала (прогноз)']
             notes[f'{_node(place)}.md'] = '\n'.join(lines) + '\n'
     return notes

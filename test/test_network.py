@@ -42,7 +42,9 @@ def q(qid, row, ask, status='accepted', **extra):
 
 
 def core_questions():
+    # q04 — вопрос «какая провинция…» без given: его сторона «name» не в sides, он идёт в «другие»
     return [q('provinces-q01', 'prov-sichuan', 'abbr'), q('provinces-q02', 'prov-sichuan', 'abbr'),
+            q('provinces-q04', 'prov-sichuan', 'name'),
             q('provinces-q03', 'prov-sichuan', 'capital'), q('provinces-q09', 'prov-guizhou', 'abbr'),
             q('provinces-q10', 'prov-hainan', 'abbr', status='draft')]
 
@@ -78,10 +80,30 @@ class NetworkReportTest(unittest.TestCase):
 
     def test_core_matrix_counts_questions_per_side_and_marks_empty(self):
         report = network_report([(core_dossier(), core_questions())], bank=[])
-        self.assertIn('| строка | abbr | capital | named | олимпиада |', report)
-        self.assertIn('| prov-sichuan | 2 | 1 | — | да |', report)
+        self.assertIn('| строка | abbr | capital | named | другие | олимпиада |', report)
+        self.assertIn('| prov-sichuan | 2 | 1 | — | 1 | да |', report)
         # черновик не считается: у Хайнаня пусто
-        self.assertIn('| prov-hainan | — | — | — | прогноз |', report)
+        self.assertIn('| prov-hainan | — | — | — | — | прогноз |', report)
+
+    def test_russian_rows_are_left_to_the_russian_topic(self):
+        data = core_dossier()
+        data['tables']['provinces']['columns']['country'] = 'zh'
+        data['tables']['provinces']['rows'].append(province('city-ru-tula', '图拉', '图', '图拉', country=cell('俄罗斯')))
+        report = network_report([(data, core_questions() + [q('provinces-q20', 'city-ru-tula', 'abbr')])], bank=[])
+        self.assertNotIn('provinces-q20 —', report)
+        self.assertIn('Российские строки (разбирает российская тема): вопросов 1', report)
+
+    def test_an_addition_in_olympiad_field_is_not_olympiad(self):
+        # в поле olympiad строки бывают и наши дополнения: «да» — только при записи с появлениями
+        data = core_dossier()
+        data['tables']['provinces']['rows'][1]['olympiad'] = ['addition-b1-03']
+        bank = [{'id': 'addition-b1-03', 'questionRu': 'Вопрос?', 'occurrences': []},
+                {'id': '2019-20-shk-1', 'questionRu': 'Вопрос?', 'occurrences': [{'year': '2019-20', 'stage': 'школьный'}]}]
+        report = network_report([(data, core_questions())], bank)
+        self.assertIn('| prov-hainan | — | — | — | — | прогноз |', report)
+        self.assertIn('| prov-sichuan | 2 | 1 | — | 1 | да |', report)
+        note = graph_notes([(data, core_questions())], bank)['provinces.prov-hainan.md']
+        self.assertIn('Олимпиада: ещё не спрашивала (прогноз)', note)
 
     def test_questions_outside_core_are_listed(self):
         report = network_report([(core_dossier(), core_questions())], bank=[])
@@ -124,8 +146,24 @@ class GraphNotesTest(unittest.TestCase):
         note = graph_notes([(core_dossier(), core_questions())], bank=[])['provinces.prov-sichuan.md']
         self.assertIn('# 四川', note)
         self.assertIn('Тема: [[provinces]]', note)
-        self.assertIn('- abbr: provinces-q01 — Вопрос provinces-q01?', note)
+        self.assertIn('- сокращение: provinces-q01 — Вопрос provinces-q01?', note)
         self.assertIn('2019-20-shk-1', note)
+
+    def test_row_note_names_its_empty_sides(self):
+        notes = graph_notes([(core_dossier(), core_questions())], bank=[])
+        self.assertIn('Не хватает сторон: происхождение названия', notes['provinces.prov-sichuan.md'])
+        # черновик не закрывает сторону
+        self.assertIn('Не хватает сторон: сокращение, центр, происхождение названия', notes['provinces.prov-hainan.md'])
+
+    def test_side_without_a_cell_or_skipped_by_the_author_is_not_a_gap(self):
+        data = core_dossier()
+        hainan = data['tables']['provinces']['rows'][1]
+        del hainan['capital']                  # у строки нет ячейки — сторона к ней не относится
+        hainan['skipSides'] = ['named']        # решение автора: эту сторону у строки не спрашиваем
+        note = graph_notes([(data, core_questions())], bank=[])['provinces.prov-hainan.md']
+        self.assertIn('Не хватает сторон: сокращение\n', note)
+        report = network_report([(data, core_questions())], bank=[])
+        self.assertIn('| prov-hainan | — | × | × | — | прогноз |', report)
 
     def test_bank_text_wins_over_the_file(self):
         bank = [{'id': 'provinces-q01', 'questionRu': 'Исправленный текст?'}]
