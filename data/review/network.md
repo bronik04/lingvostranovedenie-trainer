@@ -2,7 +2,7 @@
 
 Файл пишет сборка (`scripts/network.py`). Ядро размечается в таблицах досье: `core` у строки, `sides` у таблицы. Граф для Obsidian — папка `data/review/graph/`: сборка каждый раз стирает в ней все заметки `*.md` и пишет заново, поэтому свои заметки в эту папку не кладите.
 
-Досье: 15, с утверждённым каркасом: 1.
+Досье: 15, с утверждённым каркасом: 2.
 
 ## Олимпиада по годам
 
@@ -54,13 +54,87 @@
 
 ### Кухня и блюда (`cuisine`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `cuisines`
 
-- строк: 93
-- принятых вопросов: 13
-- строк с вопросом: 13
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 0
-- встроено олимпиадных: 2
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | region | taste | dish | другие | олимпиада |
+|---|---|---|---|---|---|
+| cs-lu | — | — | — | — | да |
+| cs-chuan | — | — | — | — | прогноз |
+| cs-yue | — | — | — | — | прогноз |
+| cs-su | — | — | — | — | прогноз |
+| cs-min | — | × | — | — | прогноз |
+| cs-zhe | — | × | — | — | прогноз |
+| cs-xiang | — | — | — | — | прогноз |
+| cs-hui | — | × | — | — | прогноз |
+
+#### Таблица `savory`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | school | другие | олимпиада |
+|---|---|---|---|
+| cu-cn-mapo-doufu | — | — | прогноз |
+| cu-cn-yuxiang-rousi | — | — | прогноз |
+| cu-cn-huiguorou | — | 1 | прогноз |
+| cu-cn-beijing-kaoya | × | 1 | прогноз |
+| cu-cn-gongbao-jiding | 1 | — | прогноз |
+| cu-cn-dongporou | — | — | прогноз |
+| cu-cn-baiqieji | — | — | прогноз |
+| cu-cn-songshu-guiyu | — | — | прогноз |
+| cu-cn-xihu-cuyu | — | — | прогноз |
+| cu-cn-congshao-haishen | — | — | прогноз |
+| cu-cn-jiuzhuan-dachang | — | — | прогноз |
+| cu-cn-xiefen-shizitou | — | — | прогноз |
+| cu-cn-pai-huanggua | × | — | прогноз |
+| cu-cn-fotiaoqiang | 1 | — | прогноз |
+| cu-cn-duojiao-yutou | — | — | прогноз |
+| cu-cn-maoshi-hongshaorou | — | — | прогноз |
+| cu-cn-chou-guiyu | — | — | прогноз |
+
+#### Таблица `staples`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+Стороны не утверждены (`sides`).
+
+| строка | другие | олимпиада |
+|---|---|---|
+| cu-cn-daoxiaomian | — | прогноз |
+| cu-cn-reganmian | — | прогноз |
+| cu-cn-roujiamo | — | прогноз |
+| cu-cn-youtiao | 1 | прогноз |
+| cu-cn-mantou | 1 | прогноз |
+| cu-cn-changfen | — | прогноз |
+| cu-cn-jiaozi | — | прогноз |
+| cu-cn-xiaolongbao | — | прогноз |
+| cu-cn-jianbingguozi | 1 | прогноз |
+| cu-cn-guoqiaomixian | — | прогноз |
+| cu-cn-lanzhouniuroumian | — | прогноз |
+| cu-cn-yangzhouchaofan | 1 | прогноз |
+
+#### Таблица `sweets`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+Стороны не утверждены (`sides`).
+
+| строка | другие | олимпиада |
+|---|---|---|
+| cu-cn-tangyuan | — | прогноз |
+| cu-cn-tanghulu | — | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- cuisine-q28 — Какую сладость готовят так: основу разваривают, уваривают с сахаром до густоты, охлаждают и режут кусками (煮烂后加糖熬稠，冷却切块)?
+- cuisine-q29 — Какую сладость делают из клейкого риса, сахара, кунжута, грецких орехов и семечек дыни (糯米、白糖、芝麻、核桃仁、瓜子仁)?
+- cuisine-q33 — Какая белоснежная сладость похожа на куколку шелкопряда (色泽雪白，形似蚕蛹)?
+- cuisine-q34 — Какую сладость готовят так: тесто режут полосками, обжаривают во фритюре, смешивают с сиропом и формуют (面团切条油炸，拌糖浆后成型)?
+
+Российские строки (разбирает российская тема): вопросов 1.
 
 ### Династии и правители (`dynasties`)
 
@@ -256,11 +330,34 @@
 
 Строки ядра без ссылок наружу и на себя.
 
+- cuisine/savory/cu-cn-beijing-kaoya
+- cuisine/savory/cu-cn-congshao-haishen
+- cuisine/savory/cu-cn-dongporou
+- cuisine/savory/cu-cn-gongbao-jiding
+- cuisine/savory/cu-cn-huiguorou
+- cuisine/savory/cu-cn-maoshi-hongshaorou
+- cuisine/savory/cu-cn-pai-huanggua
+- cuisine/savory/cu-cn-xiefen-shizitou
+- cuisine/staples/cu-cn-changfen
+- cuisine/staples/cu-cn-daoxiaomian
+- cuisine/staples/cu-cn-guoqiaomixian
+- cuisine/staples/cu-cn-jianbingguozi
+- cuisine/staples/cu-cn-lanzhouniuroumian
+- cuisine/staples/cu-cn-mantou
+- cuisine/staples/cu-cn-reganmian
+- cuisine/staples/cu-cn-roujiamo
+- cuisine/staples/cu-cn-xiaolongbao
+- cuisine/staples/cu-cn-yangzhouchaofan
+- cuisine/staples/cu-cn-youtiao
+- cuisine/sweets/cu-cn-tanghulu
 - provinces/provinces/prov-aomen
 - provinces/provinces/prov-ningxia
 
 ### Ссылка из ядра ведёт в тему без каркаса
 
+- cuisine/savory/cu-cn-yuxiang-rousi → holidays/customs/cus-yuxiangrousi
+- cuisine/staples/cu-cn-jiaozi → holidays/customs/cus-jiaozi
+- cuisine/sweets/cu-cn-tangyuan → holidays/customs/cus-tangyuan
 - provinces/cities/city-chongqing → nature/waters/wat-changjiang
 - provinces/cities/city-guangzhou → nature/waters/wat-zhujiang
 - provinces/cities/city-haerbin → nature/waters/wat-songhuajiang

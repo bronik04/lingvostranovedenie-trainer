@@ -2,6 +2,477 @@
   "id": "cuisine",
   "title": "Кухня и блюда",
   "tables": {
+    "cuisines": {
+      "columns": {
+        "name": "zh",
+        "region": "zh",
+        "taste": "zh",
+        "dish": "zh",
+        "about": "ru"
+      },
+      "sides": [
+        "region",
+        "taste",
+        "dish"
+      ],
+      "rows": [
+        {
+          "id": "cs-lu",
+          "name": {
+            "zh": "鲁菜",
+            "ru": [
+              "шаньдунская кухня"
+            ],
+            "gloss": "Шаньдунская кухня — одна из восьми великих кухонь Китая"
+          },
+          "region": {
+            "zh": "山东",
+            "ref": "provinces/provinces/prov-shandong",
+            "gloss": "Шаньдун — приморская провинция в низовьях Хуанхэ"
+          },
+          "taste": {
+            "zh": "咸鲜",
+            "ru": [
+              "солёно-свежий вкус"
+            ],
+            "gloss": "Солёно-свежий вкус, подчёркивающий естественный вкус продуктов, — шаньдунская кухня"
+          },
+          "dish": {
+            "zh": "九转大肠",
+            "ref": "cuisine/savory/cu-cn-jiuzhuan-dachang",
+            "gloss": "Свиные кишки «девять оборотов» — традиционное блюдо Цзинаня, шаньдунская кухня"
+          },
+          "about": "Шаньдунская кухня — одна из восьми великих кухонь Китая. Её вкус описывают как «咸鲜纯正»: солёно-свежий, чистый, с упором на естественный вкус продуктов. Свиные кишки «девять оборотов» — традиционное блюдо Цзинаня (провинция Шаньдун), относятся к шаньдунской кухне.",
+          "sources": [
+            {
+              "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+              "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
+              "quote": "比较著名的是中国的“八大菜系”，鲁菜（山东）、川菜（四川）、粤菜（广东）、苏菜（江苏）、闽菜（福建）、浙菜（浙江）、湘菜（湖南）、徽菜（安徽）。",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "“宇宙第一”鲁菜：蕴含儒家哲理 — 山东宣传网",
+              "url": "https://www.sdxc.gov.cn/whql/nslt/202408/t20240829_14723198.htm",
+              "quote": "鲁菜的风格特点进一步得到了升华，调味讲求咸鲜纯正、突出本味。",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "五味俱全的九转大肠 — 央视网",
+              "url": "https://livechina.cctv.com/2022/03/09/VIDE4Wu2IxxMKkb7wqmDdrpN220309.shtml",
+              "quote": "九转大肠原名为红烧大肠，是山东省济南市的一道传统名菜，属于鲁菜系。",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+              "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml",
+              "quote": "鲁菜擅长爆、炒、烤、熘等，代表年夜饭有：蒸饽饽、做年糕、包饺子、红烧肘子、九转大肠",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            }
+          ],
+          "olympiad": [
+            "2024-25-pri-38"
+          ],
+          "core": true
+        },
+        {
+          "id": "cs-chuan",
+          "name": {
+            "zh": "川菜",
+            "ru": [
+              "сычуаньская кухня"
+            ],
+            "gloss": "Сычуаньская кухня — одна из восьми великих кухонь Китая"
+          },
+          "region": {
+            "zh": "四川",
+            "ref": "provinces/provinces/prov-sichuan",
+            "gloss": "Сычуань — провинция в верховьях Янцзы на юго-западе Китая"
+          },
+          "taste": {
+            "zh": "麻辣",
+            "ru": [
+              "острый с онемением"
+            ],
+            "gloss": "Острота с онемением от сычуаньского перца — визитный вкус сычуаньской кухни"
+          },
+          "dish": {
+            "zh": "麻婆豆腐",
+            "ref": "cuisine/savory/cu-cn-mapo-doufu",
+            "gloss": "Тофу мапо — знаменитое сычуаньское блюдо, образец остроты с онемением"
+          },
+          "about": "Сычуаньская кухня зародилась в Сычуани и Чунцине, её визитная черта — «麻、辣、鲜、香»: онемение, острота, свежесть, аромат. Тофу мапо — рекомендуемое блюдо кухни и, по описанию CCTV, образец остроты с онемением.",
+          "sources": [
+            {
+              "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+              "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
+              "quote": "川菜 调味多变，菜式多样，口味清鲜醇浓并重，善用麻辣调味。 推荐菜：宫保鸡丁、麻婆豆腐",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+              "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml",
+              "quote": "川菜起源于四川、重庆等地，最早可追溯到秦汉时期。川菜以麻、辣、鲜、香为特色",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "味道中国：四川味道 — 央视网",
+              "url": "https://tv.cctv.com/yskd/special/sc/index.shtml",
+              "quote": "【麻婆豆腐】麻辣的代表辣有尽而味无穷的传奇美味",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "cs-yue",
+          "name": {
+            "zh": "粤菜",
+            "ru": [
+              "кантонская кухня",
+              "гуандунская кухня"
+            ],
+            "gloss": "Кантонская (гуандунская) кухня — одна из восьми великих кухонь Китая"
+          },
+          "region": {
+            "zh": "广东",
+            "ref": "provinces/provinces/prov-guangdong",
+            "gloss": "Гуандун — провинция на юге материкового Китая, центр — Гуанчжоу"
+          },
+          "taste": {
+            "zh": "清淡",
+            "ru": [
+              "лёгкий вкус"
+            ],
+            "gloss": "Лёгкий вкус, при котором ценится свежесть продуктов, — кантонская кухня"
+          },
+          "dish": {
+            "zh": "白切鸡",
+            "ref": "cuisine/savory/cu-cn-baiqieji",
+            "gloss": "Белая нарезанная курица — отварная курица в собственном вкусе, кантонская кухня"
+          },
+          "about": "Кантонская кухня — это кухня провинции Гуандун, она складывается из гуанчжоуской, чаочжоуской и дунцзянской (хакка) кухонь. По описанию CCTV, вкус её скорее лёгкий, с упором на свежесть. Белая нарезанная курица — одно из её известных блюд.",
+          "sources": [
+            {
+              "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+              "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
+              "quote": "比较著名的是中国的“八大菜系”，鲁菜（山东）、川菜（四川）、粤菜（广东）、苏菜（江苏）、闽菜（福建）、浙菜（浙江）、湘菜（湖南）、徽菜（安徽）。",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+              "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml",
+              "quote": "粤菜即广东菜，由广府菜（即广州府菜）、潮州菜（也称潮汕菜）、东江菜（也称客家菜）三种地方风味组成，三者各具特色。在烹调上，粤菜以炒、爆为主，兼有烩、煎、烤，讲究清而不淡、鲜而不俗、嫩而不生、油而不腻。 代表年夜饭有：盆菜、白切鸡",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "味道中国之粤菜 — 央视网",
+              "url": "https://tv.cctv.com/yskd/special/yc/index.shtml",
+              "quote": "粤菜用料广博、选料珍奇、配料精巧，烹饪时注重质和味，口味比较清淡，清中求鲜，淡中求美，鲜而不俗，嫩而不生，油而不腻。",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "白切鸡 — 广州市人民政府门户网站",
+              "url": "https://www.gz.gov.cn/zlgz/gzly/msgz/tsmc/content/post_8313422.html",
+              "quote": "白切鸡是粤菜鸡肴中最普通的一种，属浸鸡类，以其制作简易，刚熟不烂，不加配料且保持原味为特点",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "cs-su",
+          "name": {
+            "zh": "苏菜",
+            "ru": [
+              "цзянсуская кухня"
+            ],
+            "gloss": "Цзянсуская кухня, её называют и хуайянской, — одна из восьми великих кухонь Китая"
+          },
+          "region": {
+            "zh": "江苏",
+            "ref": "provinces/provinces/prov-jiangsu",
+            "gloss": "Цзянсу — приморская провинция в низовьях Янцзы, центр — Нанкин"
+          },
+          "taste": {
+            "zh": "偏甜",
+            "ru": [
+              "слегка сладковатый вкус"
+            ],
+            "gloss": "Сладковатый вкус — так описывают цзянсускую кухню"
+          },
+          "dish": {
+            "zh": "松鼠鳜鱼",
+            "ref": "cuisine/savory/cu-cn-songshu-guiyu",
+            "gloss": "Мандариновый окунь в форме белки — традиционное блюдо Сучжоу, цзянсуская кухня"
+          },
+          "about": "Цзянсуская кухня (в кулинарной науке её называют и хуайянской) складывается из нанкинской, хуайянской, сучжоуско-уксиской и сюйхайской кухонь. Источники отмечают тщательный выбор продуктов, тонкую нарезку и сладковатый вкус. Мандариновый окунь в форме белки — рекомендуемое блюдо кухни, CCTV называет его традиционным блюдом сучжоуской кухни.",
+          "sources": [
+            {
+              "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+              "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
+              "quote": "比较著名的是中国的“八大菜系”，鲁菜（山东）、川菜（四川）、粤菜（广东）、苏菜（江苏）、闽菜（福建）、浙菜（浙江）、湘菜（湖南）、徽菜（安徽）。",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+              "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html",
+              "quote": "苏菜︵淮扬菜︶ 用料严谨，注重配色，讲究造型，四季有别。烹调技艺以炖、焖、煨著称，重视调 汤，保持原汁。 推荐菜：松鼠鳜鱼、太湖银鱼",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+              "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml",
+              "quote": "江苏菜系在烹饪学术上一般称为“苏菜”“淮扬菜”，主要以金陵菜、淮扬菜、苏锡菜、徐海菜等地方菜组成。江苏菜系选料讲究，刀工精细，口味偏甜，造型讲究，特色鲜明。",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "江浙菜清鲜爽嫩 专家提醒：油糖含量偏高不适合糖尿病患者 — 人民网",
+              "url": "http://health.people.com.cn/n1/2016/1006/c21471-28757572.html",
+              "quote": "苏菜由金陵菜、淮扬菜、苏锡菜、徐海菜组成，其味清鲜、咸中偏甜、刀工精细、重视调汤。",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "味道中国：江苏味道 — 央视网",
+              "url": "https://tv.cctv.com/yskd/special/jswd/index.shtml",
+              "quote": "【松鼠鳜鱼】苏帮菜中的传统名菜 餐桌上的养生智慧",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "江苏四大菜系 — 江苏与台湾（江苏省台办）",
+              "url": "http://www.jsstb.gov.cn/special/weihuaxhou_34380/weihuazhou/201405/t20140527_6222765.htm",
+              "quote": "苏菜为八大菜系之一，主要由淮扬菜（淮安、扬州、镇江）、金陵菜（南京）、徐海菜（徐州、连云港）、及苏锡菜（苏州、无锡、常州）四种风味组成。",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "cs-min",
+          "name": {
+            "zh": "闽菜",
+            "ru": [
+              "фуцзяньская кухня"
+            ],
+            "gloss": "Фуцзяньская кухня — одна из восьми великих кухонь Китая"
+          },
+          "region": {
+            "zh": "福建",
+            "ref": "provinces/provinces/prov-fujian",
+            "gloss": "Фуцзянь — прибрежная провинция на юго-востоке, напротив Тайваня"
+          },
+          "dish": {
+            "zh": "佛跳墙",
+            "ref": "cuisine/savory/cu-cn-fotiaoqiang",
+            "gloss": "Фотяоцян — блюдо, томлённое в винном сосуде, визитная карточка фуцзяньской кухни"
+          },
+          "about": "Фуцзяньская кухня сложилась в провинции Фуцзянь, ведущая в ней — фучжоуская кухня. Её стиль описывают как свежий и мягкий, без жирности; она сильна в бульонах и супах. Фотяоцян — её рекомендуемое и представительное блюдо.",
+          "sources": [
+            {
+              "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+              "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
+              "quote": "比较著名的是中国的“八大菜系”，鲁菜（山东）、川菜（四川）、粤菜（广东）、苏菜（江苏）、闽菜（福建）、浙菜（浙江）、湘菜（湖南）、徽菜（安徽）。",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+              "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html",
+              "quote": "尤以“香”、“味”见长，风格清鲜、和醇、荤香、不腻。三大特色，一长于红糟调 闽菜 味，二长于制汤，三长于使用糖醋。 推荐菜：佛跳墙、醉糟鸡",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+              "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml",
+              "quote": "闽菜是以福州菜为代表，以闽东、闽南、闽西、闽北、闽中、莆田地方风味菜为主形成的菜系。闽菜的烹调方法有醉、扣、糟等，口味偏于甜酸，汤菜众多。 代表年夜饭有：爆炒双脆、酒糟鱼、佛跳墙",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "cs-zhe",
+          "name": {
+            "zh": "浙菜",
+            "ru": [
+              "чжэцзянская кухня"
+            ],
+            "gloss": "Чжэцзянская кухня — одна из восьми великих кухонь Китая"
+          },
+          "region": {
+            "zh": "浙江",
+            "ref": "provinces/provinces/prov-zhejiang",
+            "gloss": "Чжэцзян — провинция на юге дельты Янцзы, центр — Ханчжоу"
+          },
+          "dish": {
+            "zh": "西湖醋鱼",
+            "ref": "cuisine/savory/cu-cn-xihu-cuyu",
+            "gloss": "Рыба озера Сиху в уксусном соусе — знаменитое блюдо Ханчжоу, чжэцзянская кухня"
+          },
+          "about": "Чжэцзянская кухня представлена ханчжоуской, нинбоской, шаосинской и вэньчжоуской кухнями. Её блюда небольшие и изящные, нежные и свежие на вкус. Рыба озера Сиху в уксусном соусе — рекомендуемое блюдо кухни, CCTV описывает её вкус как нежный и кисло-сладкий.",
+          "sources": [
+            {
+              "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+              "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
+              "quote": "比较著名的是中国的“八大菜系”，鲁菜（山东）、川菜（四川）、粤菜（广东）、苏菜（江苏）、闽菜（福建）、浙菜（浙江）、湘菜（湖南）、徽菜（安徽）。",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+              "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html",
+              "quote": "浙菜 菜式小巧玲珑，清俊逸秀，菜品鲜美滑嫩，脆软清爽。 推荐菜：龙井虾仁、虾爆鳝背、西湖醋鱼",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "味道中国：浙江味道 — 央视网",
+              "url": "https://tv.cctv.com/yskd/wdzg/zjwd/ml/index.shtml",
+              "quote": "品一口鲜嫩酸甜的西湖醋鱼，尝一道茶香飘逸的龙井虾仁",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+              "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml",
+              "quote": "浙菜是以杭州、宁波、绍兴和温州四种风味为代表的地方菜系。浙菜采用原料十分广泛，强调原料鲜嫩，现取现做。",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "cs-xiang",
+          "name": {
+            "zh": "湘菜",
+            "ru": [
+              "хунаньская кухня"
+            ],
+            "gloss": "Хунаньская кухня — одна из восьми великих кухонь Китая"
+          },
+          "region": {
+            "zh": "湖南",
+            "ref": "provinces/provinces/prov-hunan",
+            "gloss": "Хунань — провинция в среднем течении Янцзы, к югу от Дунтинху"
+          },
+          "taste": {
+            "zh": "香辣",
+            "ru": [
+              "ароматно-острый вкус"
+            ],
+            "gloss": "Ароматная острота — так описывают хунаньскую кухню"
+          },
+          "dish": {
+            "zh": "剁椒鱼头",
+            "ref": "cuisine/savory/cu-cn-duojiao-yutou",
+            "gloss": "Рыбья голова под рубленым перцем — знаменитое блюдо хунаньской кухни"
+          },
+          "about": "Хунаньская кухня — это кухня провинции Хунань, она сложилась из кухонь бассейна реки Сянцзян, озера Дунтин и гор Западной Хунани. Для неё характерны ароматная острота, насыщенный цвет и нежная текстура. Рыбья голова под рубленым перцем — рекомендуемое блюдо кухни, CCTV называет её традиционным знаменитым блюдом.",
+          "sources": [
+            {
+              "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+              "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
+              "quote": "比较著名的是中国的“八大菜系”，鲁菜（山东）、川菜（四川）、粤菜（广东）、苏菜（江苏）、闽菜（福建）、浙菜（浙江）、湘菜（湖南）、徽菜（安徽）。",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+              "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html",
+              "quote": "口味多变，品种繁多；色泽上油重色浓，讲求实惠；香辣、香鲜、软嫩。重视原料 湘菜 互相搭配，滋味互相渗透。 推荐菜：剁椒鱼头、浏阳蒸菜、冰糖湘莲",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+              "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml",
+              "quote": "湘菜即湖南菜，早在汉朝就已经形成菜系。以湘江流域、洞庭湖区和湘西山区三种地方风味为主。湘菜品味上注重香辣、香鲜、软嫩",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "味道中国之湘菜 — 央视网",
+              "url": "https://tv.cctv.com/yskd/special/wdzgzxc/index.shtml",
+              "quote": "湘菜是中国历史悠久的八大菜系之一，湘菜用料广泛，口味多变，色泽上油重色浓，注重鲜香、酸辣、软嫩。剁椒鱼头、小炒黄牛肉、口味虾、糖油粑粑等传统名菜令人回味悠长",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "cs-hui",
+          "name": {
+            "zh": "徽菜",
+            "ru": [
+              "аньхойская кухня"
+            ],
+            "gloss": "Аньхойская кухня — одна из восьми великих кухонь Китая"
+          },
+          "region": {
+            "zh": "安徽",
+            "ref": "provinces/provinces/prov-anhui",
+            "gloss": "Аньхой — провинция в Восточном Китае, на Янцзы и Хуайхэ, центр — Хэфэй"
+          },
+          "dish": {
+            "zh": "臭鳜鱼",
+            "ref": "cuisine/savory/cu-cn-chou-guiyu",
+            "gloss": "«Вонючий» мандариновый окунь — визитная карточка аньхойской кухни"
+          },
+          "about": "Аньхойская кухня возникла в области Хуэйчжоу при Южной Сун. Она сильна в тушении и приготовлении на пару; блюда жирные, насыщенного цвета, требуют умелого обращения с огнём, соус у них густой, вкус насыщенный. Её представительное блюдо — «вонючий» мандариновый окунь.",
+          "sources": [
+            {
+              "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+              "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
+              "quote": "比较著名的是中国的“八大菜系”，鲁菜（山东）、川菜（四川）、粤菜（广东）、苏菜（江苏）、闽菜（福建）、浙菜（浙江）、湘菜（湖南）、徽菜（安徽）。",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "味道中国之徽菜 — 央视网",
+              "url": "https://tv.cctv.com/yskd/wdzg/huicai/index.shtml",
+              "quote": "徽菜是中国八大菜系之一。古徽州独特的地理人文环境，塑造了徽菜独有的味道。徽菜烹调方法上擅长烧、炖、蒸，而爆、炒菜少，重油、重色、重火功，绝大部分菜品都娴于烧炖，独到的技法烹制出的成品汤汁醇厚、味道浓郁，代表菜品有徽州毛豆腐、红烧臭鳜鱼",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+              "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml",
+              "quote": "徽菜起源于南宋时期的徽州府，是皖南菜、皖江菜、合肥菜、淮南菜、皖北菜的总称。徽菜在烹调方法上擅长烧、炖、蒸，而爆、炒菜少，重油、重色，重火功。代表年夜饭有：徽州臭鳜鱼、八公山豆腐",
+              "authority": "official",
+              "checkedAt": "2026-10-22"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        }
+      ]
+    },
     "savory": {
       "columns": {
         "name": "zh",
@@ -80,7 +551,8 @@
               "checkedAt": "2026-10-18",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-yuxiang-rousi",
@@ -148,7 +620,8 @@
               "checkedAt": "2026-10-17",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-huiguorou",
@@ -215,7 +688,8 @@
               "checkedAt": "2026-10-18",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-beijing-kaoya",
@@ -268,7 +742,8 @@
               "checkedAt": "2026-10-17",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-gongbao-jiding",
@@ -335,7 +810,8 @@
               "checkedAt": "2026-10-18",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-dongporou",
@@ -402,7 +878,8 @@
               "checkedAt": "2026-10-18",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-jiaohuaji",
@@ -522,7 +999,8 @@
               "checkedAt": "2026-10-18",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-meicai-kourou",
@@ -642,7 +1120,8 @@
               "checkedAt": "2026-10-18",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-xihu-cuyu",
@@ -709,7 +1188,8 @@
               "checkedAt": "2026-10-18",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-geleshan-laziji",
@@ -981,7 +1461,8 @@
               "checkedAt": "2026-10-18",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-jiuzhuan-dachang",
@@ -1048,7 +1529,8 @@
               "checkedAt": "2026-10-18",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-xiangyou-shanhu",
@@ -1235,7 +1717,8 @@
               "checkedAt": "2026-10-18",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-bangbangji",
@@ -1454,7 +1937,8 @@
               "checkedAt": "2026-10-17",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-hulatang",
@@ -1620,7 +2104,8 @@
               "checkedAt": "2026-10-18",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-kaishui-baicai",
@@ -1747,7 +2232,8 @@
               "checkedAt": "2026-10-18",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-maoshi-hongshaorou",
@@ -1821,7 +2307,8 @@
               "checkedAt": "2026-10-18",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-chou-guiyu",
@@ -1881,7 +2368,8 @@
               "checkedAt": "2026-10-18",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-mao-doufu",
@@ -2588,6 +3076,9 @@
             }
           ]
         }
+      ],
+      "sides": [
+        "school"
       ]
     },
     "staples": {
@@ -2660,7 +3151,8 @@
               "authority": "official"
             }
           ],
-          "region": "Шаньси, Датун"
+          "region": "Шаньси, Датун",
+          "core": true
         },
         {
           "id": "cu-cn-dandanmian",
@@ -2766,7 +3258,8 @@
               "authority": "official"
             }
           ],
-          "region": "Хубэй, Ухань"
+          "region": "Хубэй, Ухань",
+          "core": true
         },
         {
           "id": "cu-cn-roujiamo",
@@ -2819,7 +3312,8 @@
               "authority": "official"
             }
           ],
-          "region": "Шэньси, Сиань"
+          "region": "Шэньси, Сиань",
+          "core": true
         },
         {
           "id": "cu-cn-youtiao",
@@ -2871,7 +3365,8 @@
               "checkedAt": "2026-10-17",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-mantou",
@@ -2930,7 +3425,8 @@
               "checkedAt": "2026-10-17",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-huajuan",
@@ -3141,7 +3637,8 @@
               "authority": "official"
             }
           ],
-          "region": "Гуандун, Гуанчжоу"
+          "region": "Гуандун, Гуанчжоу",
+          "core": true
         },
         {
           "id": "cu-cn-jiaozi",
@@ -3194,7 +3691,8 @@
               "checkedAt": "2026-10-17",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-guotie",
@@ -3300,7 +3798,8 @@
               "authority": "official"
             }
           ],
-          "region": "Цзянсу, Уси"
+          "region": "Цзянсу, Уси",
+          "core": true
         },
         {
           "id": "cu-cn-shengjianmantou",
@@ -3413,7 +3912,8 @@
               "authority": "official"
             }
           ],
-          "region": "Тяньцзинь"
+          "region": "Тяньцзинь",
+          "core": true
         },
         {
           "id": "cu-cn-guoqiaomixian",
@@ -3466,7 +3966,8 @@
               "authority": "official"
             }
           ],
-          "region": "Юньнань"
+          "region": "Юньнань",
+          "core": true
         },
         {
           "id": "cu-cn-lanzhouniuroumian",
@@ -3519,7 +4020,8 @@
               "authority": "official"
             }
           ],
-          "region": "Ганьсу, Ланьчжоу"
+          "region": "Ганьсу, Ланьчжоу",
+          "core": true
         },
         {
           "id": "cu-cn-qishansaozimian",
@@ -3678,7 +4180,8 @@
               "authority": "official"
             }
           ],
-          "region": "Цзянсу, Янчжоу"
+          "region": "Цзянсу, Янчжоу",
+          "core": true
         },
         {
           "id": "cu-cn-baozaifan",
@@ -4352,7 +4855,8 @@
               "checkedAt": "2026-10-17",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-yuanxiao",
@@ -4516,7 +5020,8 @@
               "checkedAt": "2026-10-17",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "cu-cn-babaofan",
