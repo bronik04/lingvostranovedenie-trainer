@@ -943,6 +943,7 @@
     "explanation": {
       "ru": "Тяньцзинь (天津) — один из четырёх городов центрального подчинения КНР, наряду с Пекином, Шанхаем и Чунцином."
     },
+    "factGroup": "beijing-tianjin-municipality",
     "id": "2015-16-reg-1",
     "mergedIds": [
       "2025-26-shk-28"
@@ -31425,6 +31426,7 @@
     "explanation": {
       "ru": "После «смуты годов Цзинкан» (靖康之变, 1127), когда чжурчжэни захватили север и столицу Северной Сун, двор Гао-цзуна ушёл на юг. В 1129 году Ханчжоу получил название Линьань (临安), а с 1138 года стал «временной резиденцией» двора (行在). Официально город считался лишь временной столицей, но фактически Линьань оставался столицей Южной Сун до её падения в 1279 году."
     },
+    "factGroup": "hangzhou-nansong-zhejiang",
     "factRow": "dynasties/dynasties/dyn-nansong",
     "id": "addition-b1-06",
     "occurrences": [],
@@ -79053,6 +79055,653 @@
   },
   {
     "answer": {
+      "optionId": "prov-hubei",
+      "state": "verified"
+    },
+    "dossier": "provinces",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "湖北省情概况（湖北省人民政府门户网站）— 商务部外资司",
+        "url": "https://fdi.mofcom.gov.cn/resource/pdf/2019/12/28/a3f4603a11e244cdb1cd1f75d13b4ca6.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "湖北省情概况 — 中国湖北人大",
+        "url": "https://www.hppc.gov.cn/ztzl/znlsrd/ythjl/1859480276204695553.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "湖北省 — 福建省粮食和物资储备局（协作省展示区）",
+        "url": "https://lsj.fujian.gov.cn/ztzl/yslqh/xzszsq/202606/t20260612_7162382.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Административный центр провинции Хубэй — Ухань (武汉). Его издавна называют «перекрёстком девяти провинций» (九省通衢): это один из главных транспортных узлов страны. Хубэй лежит в центральной части Китая, к северу от озера Дунтинху."
+    },
+    "factRow": "provinces/provinces/prov-hubei",
+    "id": "provinces-q100",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "prov-hubei",
+        "zh": "武汉"
+      },
+      {
+        "gloss": "Шицзячжуан — центр провинции Хэбэй",
+        "id": "prov-hebei",
+        "zh": "石家庄"
+      },
+      {
+        "gloss": "Тайюань — центр провинции Шаньси",
+        "id": "prov-shanxi",
+        "zh": "太原"
+      },
+      {
+        "gloss": "Хух-Хото («Синий город») — центр Внутренней Монголии",
+        "id": "prov-neimenggu",
+        "zh": "呼和浩特"
+      },
+      {
+        "gloss": "Шэньян — центр провинции Ляонин",
+        "id": "prov-liaoning",
+        "zh": "沈阳"
+      },
+      {
+        "gloss": "Чанчунь — центр провинции Цзилинь",
+        "id": "prov-jilin",
+        "zh": "长春"
+      },
+      {
+        "gloss": "Харбин — центр провинции Хэйлунцзян",
+        "id": "prov-heilongjiang",
+        "zh": "哈尔滨"
+      },
+      {
+        "gloss": "Цзинань — центр провинции Шаньдун",
+        "id": "prov-shandong",
+        "zh": "济南"
+      },
+      {
+        "gloss": "Нанкин — центр провинции Цзянсу",
+        "id": "prov-jiangsu",
+        "zh": "南京"
+      },
+      {
+        "gloss": "Ханчжоу — центр провинции Чжэцзян",
+        "id": "prov-zhejiang",
+        "zh": "杭州"
+      },
+      {
+        "gloss": "Хэфэй — центр провинции Аньхой",
+        "id": "prov-anhui",
+        "zh": "合肥"
+      },
+      {
+        "gloss": "Фучжоу — центр провинции Фуцзянь",
+        "id": "prov-fujian",
+        "zh": "福州"
+      },
+      {
+        "gloss": "Наньчан — центр провинции Цзянси",
+        "id": "prov-jiangxi",
+        "zh": "南昌"
+      },
+      {
+        "gloss": "Чжэнчжоу — центр провинции Хэнань",
+        "id": "prov-henan",
+        "zh": "郑州"
+      },
+      {
+        "gloss": "Чанша — центр провинции Хунань",
+        "id": "prov-hunan",
+        "zh": "长沙"
+      },
+      {
+        "gloss": "Гуанчжоу — центр провинции Гуандун",
+        "id": "prov-guangdong",
+        "zh": "广州"
+      },
+      {
+        "gloss": "Наньнин — центр Гуанси-Чжуанского автономного района",
+        "id": "prov-guangxi",
+        "zh": "南宁"
+      },
+      {
+        "gloss": "Хайкоу — центр провинции Хайнань",
+        "id": "prov-hainan",
+        "zh": "海口"
+      },
+      {
+        "gloss": "Чэнду — административный центр провинции Сычуань",
+        "id": "prov-sichuan",
+        "zh": "成都"
+      },
+      {
+        "gloss": "Гуйян — административный центр провинции Гуйчжоу",
+        "id": "prov-guizhou",
+        "zh": "贵阳"
+      },
+      {
+        "gloss": "Куньмин — административный центр провинции Юньнань",
+        "id": "prov-yunnan",
+        "zh": "昆明"
+      },
+      {
+        "gloss": "Лхаса — административный центр Тибетского автономного района",
+        "id": "prov-xizang",
+        "zh": "拉萨"
+      },
+      {
+        "gloss": "Сиань — административный центр провинции Шэньси",
+        "id": "prov-shaanxi",
+        "zh": "西安"
+      },
+      {
+        "gloss": "Ланьчжоу — административный центр провинции Ганьсу",
+        "id": "prov-gansu",
+        "zh": "兰州"
+      },
+      {
+        "gloss": "Синин — административный центр провинции Цинхай",
+        "id": "prov-qinghai",
+        "zh": "西宁"
+      },
+      {
+        "gloss": "Иньчуань — административный центр района Нинся",
+        "id": "prov-ningxia",
+        "zh": "银川"
+      },
+      {
+        "gloss": "Урумчи — центр Синьцзян-Уйгурского автономного района",
+        "id": "prov-xinjiang",
+        "zh": "乌鲁木齐"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какой город — административный центр провинции Хубэй?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "prov-zhejiang",
+      "state": "verified"
+    },
+    "dossier": "provinces",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "浙江概况 — 中国新闻网",
+        "url": "http://www.chinanews.com.cn/gj/kong/news/2007/09-13/1026210.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "浙江概况（浙江省人民政府网）— 商务部外资司",
+        "url": "https://fdi.mofcom.gov.cn/resource/pdf/2020/10/21/d5d3074c89e640b582276183fba6fe96.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "主管单位名称与代码（五）外省市 — 上海市统计局",
+        "url": "https://tjj.sh.gov.cn/xzqh/20111204/0014-236756.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Административный центр провинции Чжэцзян — Ханчжоу (杭州). Сокращённое название провинции — 浙. И сокращение, и само название провинции — от её крупнейшей реки Цяньтан, которую из-за извилистого русла называют также Чжэцзян (浙江)."
+    },
+    "factGroup": "hangzhou-nansong-zhejiang",
+    "factRow": "provinces/provinces/prov-zhejiang",
+    "id": "provinces-q101",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "prov-zhejiang",
+        "zh": "杭州"
+      },
+      {
+        "gloss": "Шицзячжуан — центр провинции Хэбэй",
+        "id": "prov-hebei",
+        "zh": "石家庄"
+      },
+      {
+        "gloss": "Тайюань — центр провинции Шаньси",
+        "id": "prov-shanxi",
+        "zh": "太原"
+      },
+      {
+        "gloss": "Хух-Хото («Синий город») — центр Внутренней Монголии",
+        "id": "prov-neimenggu",
+        "zh": "呼和浩特"
+      },
+      {
+        "gloss": "Шэньян — центр провинции Ляонин",
+        "id": "prov-liaoning",
+        "zh": "沈阳"
+      },
+      {
+        "gloss": "Чанчунь — центр провинции Цзилинь",
+        "id": "prov-jilin",
+        "zh": "长春"
+      },
+      {
+        "gloss": "Харбин — центр провинции Хэйлунцзян",
+        "id": "prov-heilongjiang",
+        "zh": "哈尔滨"
+      },
+      {
+        "gloss": "Цзинань — центр провинции Шаньдун",
+        "id": "prov-shandong",
+        "zh": "济南"
+      },
+      {
+        "gloss": "Нанкин — центр провинции Цзянсу",
+        "id": "prov-jiangsu",
+        "zh": "南京"
+      },
+      {
+        "gloss": "Хэфэй — центр провинции Аньхой",
+        "id": "prov-anhui",
+        "zh": "合肥"
+      },
+      {
+        "gloss": "Фучжоу — центр провинции Фуцзянь",
+        "id": "prov-fujian",
+        "zh": "福州"
+      },
+      {
+        "gloss": "Наньчан — центр провинции Цзянси",
+        "id": "prov-jiangxi",
+        "zh": "南昌"
+      },
+      {
+        "gloss": "Чжэнчжоу — центр провинции Хэнань",
+        "id": "prov-henan",
+        "zh": "郑州"
+      },
+      {
+        "gloss": "Ухань — центр провинции Хубэй",
+        "id": "prov-hubei",
+        "zh": "武汉"
+      },
+      {
+        "gloss": "Чанша — центр провинции Хунань",
+        "id": "prov-hunan",
+        "zh": "长沙"
+      },
+      {
+        "gloss": "Гуанчжоу — центр провинции Гуандун",
+        "id": "prov-guangdong",
+        "zh": "广州"
+      },
+      {
+        "gloss": "Наньнин — центр Гуанси-Чжуанского автономного района",
+        "id": "prov-guangxi",
+        "zh": "南宁"
+      },
+      {
+        "gloss": "Хайкоу — центр провинции Хайнань",
+        "id": "prov-hainan",
+        "zh": "海口"
+      },
+      {
+        "gloss": "Чэнду — административный центр провинции Сычуань",
+        "id": "prov-sichuan",
+        "zh": "成都"
+      },
+      {
+        "gloss": "Гуйян — административный центр провинции Гуйчжоу",
+        "id": "prov-guizhou",
+        "zh": "贵阳"
+      },
+      {
+        "gloss": "Куньмин — административный центр провинции Юньнань",
+        "id": "prov-yunnan",
+        "zh": "昆明"
+      },
+      {
+        "gloss": "Лхаса — административный центр Тибетского автономного района",
+        "id": "prov-xizang",
+        "zh": "拉萨"
+      },
+      {
+        "gloss": "Сиань — административный центр провинции Шэньси",
+        "id": "prov-shaanxi",
+        "zh": "西安"
+      },
+      {
+        "gloss": "Ланьчжоу — административный центр провинции Ганьсу",
+        "id": "prov-gansu",
+        "zh": "兰州"
+      },
+      {
+        "gloss": "Синин — административный центр провинции Цинхай",
+        "id": "prov-qinghai",
+        "zh": "西宁"
+      },
+      {
+        "gloss": "Иньчуань — административный центр района Нинся",
+        "id": "prov-ningxia",
+        "zh": "银川"
+      },
+      {
+        "gloss": "Урумчи — центр Синьцзян-Уйгурского автономного района",
+        "id": "prov-xinjiang",
+        "zh": "乌鲁木齐"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какой город — административный центр провинции Чжэцзян?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "prov-hebei",
+      "state": "verified"
+    },
+    "dossier": "provinces",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "河北概况 — 河北省人民政府网（转载于商务部中国投资指南网）",
+        "url": "https://fdi.mofcom.gov.cn/resource/pdf/2020/10/27/39b56b9a72e44bfd96303db339c340e4.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "河北简称“冀”代称“燕赵”与大禹治水有关 — 中国新闻网",
+        "url": "https://www.chinanews.com.cn/n/2003-09-16/26/347180.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "“地名里的河北”微视频丨河北为啥简称冀？— 新华网河北频道",
+        "url": "http://www.he.news.cn/20230608/140ca7a91c0d47d080685fb6b339ecc9/c.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "河北概况 — 中国新闻网",
+        "url": "https://www.chinanews.com.cn/gj/kong/news/2007/04-21/921052.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Сокращённое название Хэбэя — 冀. По преданию, при династии Ся Китай делили на девять областей, первой из них была Цзичжоу (冀州), и нынешний Хэбэй входил в неё. Центр провинции — Шицзячжуан."
+    },
+    "factRow": "provinces/provinces/prov-hebei",
+    "id": "provinces-q102",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "prov-hebei",
+        "zh": "冀"
+      },
+      {
+        "gloss": "Сокращение Пекина; иероглиф означает «столица»",
+        "id": "prov-beijing",
+        "zh": "京"
+      },
+      {
+        "gloss": "Сокращение Тяньцзиня; значит «переправа», название — «переправа Сына Неба»",
+        "id": "prov-tianjin",
+        "zh": "津"
+      },
+      {
+        "gloss": "Сокращение Шанхая — от старого названия низовьев реки Сунцзян, «Худу»",
+        "id": "prov-shanghai",
+        "zh": "沪"
+      },
+      {
+        "gloss": "Сокращение Чунцина — от древнего названия реки Цзялинцзян, Юйшуй",
+        "id": "prov-chongqing",
+        "zh": "渝"
+      },
+      {
+        "gloss": "Сокращение Шаньси — по царству Цзинь, владевшему большей частью этих земель",
+        "id": "prov-shanxi",
+        "zh": "晋"
+      },
+      {
+        "gloss": "Сокращение Ляонина; в названии провинции — река Ляохэ",
+        "id": "prov-liaoning",
+        "zh": "辽"
+      },
+      {
+        "gloss": "Сокращение Цзилиня — первый иероглиф названия провинции",
+        "id": "prov-jilin",
+        "zh": "吉"
+      },
+      {
+        "gloss": "Сокращение Хэйлунцзяна — иероглиф со значением «чёрный»",
+        "id": "prov-heilongjiang",
+        "zh": "黑"
+      },
+      {
+        "gloss": "Сокращение Шаньдуна — по древнему царству Лу",
+        "id": "prov-shandong",
+        "zh": "鲁"
+      },
+      {
+        "gloss": "Сокращение Цзянсу; название провинции составлено из Цзяннина и Сучжоу",
+        "id": "prov-jiangsu",
+        "zh": "苏"
+      },
+      {
+        "gloss": "Сокращение Чжэцзяна — по реке Цяньтан, которую зовут и Чжэцзян",
+        "id": "prov-zhejiang",
+        "zh": "浙"
+      },
+      {
+        "gloss": "Сокращение Аньхоя — по горе Ваньшань, реке Ваньхэ и царству Вань",
+        "id": "prov-anhui",
+        "zh": "皖"
+      },
+      {
+        "gloss": "Сокращение Фуцзяни — от древнего названия края Минь, известного со времён Чжоу",
+        "id": "prov-fujian",
+        "zh": "闽"
+      },
+      {
+        "gloss": "Сокращение Цзянси — по главной реке провинции Ганьцзян",
+        "id": "prov-jiangxi",
+        "zh": "赣"
+      },
+      {
+        "gloss": "Сокращение Хэнани — от древней области Юйчжоу",
+        "id": "prov-henan",
+        "zh": "豫"
+      },
+      {
+        "gloss": "Сокращение Хубэя — провинции к северу от озера Дунтинху",
+        "id": "prov-hubei",
+        "zh": "鄂"
+      },
+      {
+        "gloss": "Сокращение Хунани — по главной реке провинции Сянцзян",
+        "id": "prov-hunan",
+        "zh": "湘"
+      },
+      {
+        "gloss": "Сокращение Гуандуна — от древнего названия южных земель «Юэ»",
+        "id": "prov-guangdong",
+        "zh": "粤"
+      },
+      {
+        "gloss": "Сокращение Гуанси — Гуй; край славится коричными деревьями и зовётся «Багуй»",
+        "id": "prov-guangxi",
+        "zh": "桂"
+      },
+      {
+        "gloss": "Сокращение Хайнани; центр провинции — Хайкоу",
+        "id": "prov-hainan",
+        "zh": "琼"
+      },
+      {
+        "gloss": "Сокращение Сычуани — Чуань; второе её сокращение — 蜀",
+        "id": "prov-sichuan",
+        "zh": "川"
+      },
+      {
+        "gloss": "Сокращение Гуйчжоу — Цянь; второе её сокращение — 贵",
+        "id": "prov-guizhou",
+        "zh": "黔"
+      },
+      {
+        "gloss": "Сокращение Юньнани — Дянь; второе её сокращение — 云",
+        "id": "prov-yunnan",
+        "zh": "滇"
+      },
+      {
+        "gloss": "Сокращение Тибетского автономного района — Цзан",
+        "id": "prov-xizang",
+        "zh": "藏"
+      },
+      {
+        "gloss": "Сокращение Шэньси — Шэнь; второе её сокращение — 秦",
+        "id": "prov-shaanxi",
+        "zh": "陕"
+      },
+      {
+        "gloss": "Сокращение Ганьсу — Гань; второе её сокращение — 陇 (по горам Лун)",
+        "id": "prov-gansu",
+        "zh": "甘"
+      },
+      {
+        "gloss": "Сокращение Цинхая — Цин",
+        "id": "prov-qinghai",
+        "zh": "青"
+      },
+      {
+        "gloss": "Сокращение Нинся — Нин",
+        "id": "prov-ningxia",
+        "zh": "宁"
+      },
+      {
+        "gloss": "Сокращение Синьцзяна — Синь",
+        "id": "prov-xinjiang",
+        "zh": "新"
+      },
+      {
+        "gloss": "Сокращение Сянгана — Ган; утверждено Госсоветом в 1997 году",
+        "id": "prov-xianggang",
+        "zh": "港"
+      },
+      {
+        "gloss": "Сокращение Аомэня — Ао; утверждено Госсоветом в 2000 году",
+        "id": "prov-aomen",
+        "zh": "澳"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какое сокращённое название у провинции Хэбэй?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "prov-sichuan",
+      "state": "verified"
+    },
+    "dossier": "provinces",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "四川概况 — 中华人民共和国驻日本国大使馆",
+        "url": "https://jp.china-embassy.gov.cn/ztnew/xbdkfnew/xbgknew/200402/t20040205_9460731.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "四川（2017年度经济社会发展概况） — 中国网",
+        "url": "http://about.china.com.cn/2020-05/07/content_75954391.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "川流不息（大地风华）— 人民日报 2024-05-29",
+        "url": "https://paper.people.com.cn/rmrbwap/html/2024-05/29/nw.D110000renmrb_20240529_1-20.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "主管单位名称与代码（五）外省市 — 上海市统计局",
+        "url": "https://tjj.sh.gov.cn/xzqh/20111204/0014-236756.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "四川省天然气 — 国家发展和改革委员会",
+        "url": "https://www.ndrc.gov.cn/fzggw/jgsj/zhs/sijudt/202111/t20211130_1306534.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "四川天然气（页岩气） — 全国政协",
+        "url": "http://www.cppcc.gov.cn/zxww/2022/06/13/ARTI1655090923441450.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "汶川地震十二年 — 中国新闻网",
+        "url": "https://www.chinanews.com/sh/2020/05-12/9181660.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "壮丽70年巨变看四川！快收藏双语版“四川宝典” — 川观新闻（四川日报）",
+        "url": "https://cbgc.scol.com.cn/news/147868"
+      }
+    ],
+    "explanation": {
+      "ru": "Кроме 川, у Сычуани есть второе сокращённое название — 蜀. Оба сокращения приводят официальные справки о провинции: «简称川或蜀». Само название «Сычуань» — сокращение от сунских «четырёх округов Чуанься» (川峡四路)."
+    },
+    "factRow": "provinces/provinces/prov-sichuan",
+    "id": "provinces-q103",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "prov-sichuan",
+        "zh": "蜀"
+      },
+      {
+        "gloss": "Цинь — второе сокращённое название Шэньси",
+        "id": "prov-shaanxi",
+        "zh": "秦"
+      },
+      {
+        "gloss": "Сокращение Гуйчжоу — Цянь; второе её сокращение — 贵",
+        "id": "prov-guizhou",
+        "zh": "黔"
+      },
+      {
+        "gloss": "Сокращение Юньнани — Дянь; второе её сокращение — 云",
+        "id": "prov-yunnan",
+        "zh": "滇"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какое второе сокращённое название, кроме 川, у провинции Сычуань?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
       "optionId": "prov-chongqing",
       "state": "verified"
     },
@@ -80038,6 +80687,12 @@
         "checkedAt": "2026-10-17",
         "title": "从先秦的雍州到元代的行省 陕西省是这样形成的 — 陕西师范大学档案馆（西部网）",
         "url": "http://archives.snnu.edu.cn/info/2294/14840.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "陕西省概况 — 商务部（中国投资指南）",
+        "url": "https://fdi.mofcom.gov.cn/resource/pdf/2019/12/28/a45af446aa024393b7375cc3cb0557fa.pdf"
       }
     ],
     "explanation": {
@@ -84704,6 +85359,266 @@
     "origin": "addition",
     "parseWarnings": [],
     "questionRu": "Какой город — административный центр автономного района Нинся?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "prov-beijing",
+      "state": "verified"
+    },
+    "dossier": "provinces",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "北京概况 — 北京市人民政府网（转载于商务部中国投资指南网）",
+        "url": "https://fdi.mofcom.gov.cn/resource/pdf/2020/10/27/fe59821b6c8549afa26fb5186a63e4b8.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "首都和直辖市 — 驻哈萨克斯坦共和国大使馆（《中国2005》）",
+        "url": "https://kz.china-embassy.gov.cn/chn/gyzg/zggk/xingzhengquhua/201008/t20100804_1364740.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "中华人民共和国首都 — 中央人民政府驻香港特别行政区联络办公室",
+        "url": "http://www.locpg.gov.cn/zggq/2014-01/04/c_125956259.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "“京”“师”“都”义考 北京何以称“北京” — 中国新闻网（北京日报）",
+        "url": "https://www.chinanews.com.cn/m/cul/2019/07-15/8894987.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Пекин (北京市) — город центрального подчинения (直辖市): единица провинциального уровня, которая подчиняется прямо центральному правительству. Таких городов в Китае четыре. Пекин — столица КНР, политический и культурный центр страны."
+    },
+    "factGroup": "beijing-tianjin-municipality",
+    "factRow": "provinces/provinces/prov-beijing",
+    "id": "provinces-q98",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "prov-beijing",
+        "zh": "直辖市"
+      },
+      {
+        "gloss": "Провинция — основная единица провинциального уровня",
+        "id": "prov-hebei",
+        "zh": "省"
+      },
+      {
+        "gloss": "Автономный район — единица провинциального уровня с национальной автономией",
+        "id": "prov-neimenggu",
+        "zh": "自治区"
+      },
+      {
+        "gloss": "Особый административный район — Сянган и Аомэнь",
+        "id": "prov-xianggang",
+        "zh": "特别行政区"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Каков статус Пекина в административном делении КНР?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "prov-guangdong",
+      "state": "verified"
+    },
+    "dossier": "provinces",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "广东概况 — 中共广东省委港澳工作办公室",
+        "url": "https://www.gdhmo.gov.cn/gaikuang/content/mpost_68514.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "广州概况 — 中国网一带一路网",
+        "url": "http://ydyl.china.com.cn/2016-10/31/content_39606217.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "建置沿革 — 广东省人民政府门户网站",
+        "url": "https://www.gd.gov.cn/zjgd/sqgk/jzyg/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "广东与广西的“广”指哪里 — 人民周刊",
+        "url": "http://paper.people.com.cn/rmzk/html/2021-04/23/content_3047879.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "广东省概况（广东省人民政府）— 商务部外资司",
+        "url": "https://fdi.mofcom.gov.cn/resource/pdf/2020/10/21/3d5d02a2b4184ace859d5f06bde7d7aa.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "2016年广东省国民经济和社会发展统计公报 — 广东省统计局",
+        "url": "http://stats.gd.gov.cn/tjgb/content/post_1430126.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Административный центр провинции Гуандун — Гуанчжоу (广州), политический, экономический, научный, образовательный и культурный центр провинции. Гуандун лежит на самом юге материкового Китая. Сокращённое название провинции — 粤."
+    },
+    "factRow": "provinces/provinces/prov-guangdong",
+    "id": "provinces-q99",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "prov-guangdong",
+        "zh": "广州"
+      },
+      {
+        "gloss": "Шицзячжуан — центр провинции Хэбэй",
+        "id": "prov-hebei",
+        "zh": "石家庄"
+      },
+      {
+        "gloss": "Тайюань — центр провинции Шаньси",
+        "id": "prov-shanxi",
+        "zh": "太原"
+      },
+      {
+        "gloss": "Хух-Хото («Синий город») — центр Внутренней Монголии",
+        "id": "prov-neimenggu",
+        "zh": "呼和浩特"
+      },
+      {
+        "gloss": "Шэньян — центр провинции Ляонин",
+        "id": "prov-liaoning",
+        "zh": "沈阳"
+      },
+      {
+        "gloss": "Чанчунь — центр провинции Цзилинь",
+        "id": "prov-jilin",
+        "zh": "长春"
+      },
+      {
+        "gloss": "Харбин — центр провинции Хэйлунцзян",
+        "id": "prov-heilongjiang",
+        "zh": "哈尔滨"
+      },
+      {
+        "gloss": "Цзинань — центр провинции Шаньдун",
+        "id": "prov-shandong",
+        "zh": "济南"
+      },
+      {
+        "gloss": "Нанкин — центр провинции Цзянсу",
+        "id": "prov-jiangsu",
+        "zh": "南京"
+      },
+      {
+        "gloss": "Ханчжоу — центр провинции Чжэцзян",
+        "id": "prov-zhejiang",
+        "zh": "杭州"
+      },
+      {
+        "gloss": "Хэфэй — центр провинции Аньхой",
+        "id": "prov-anhui",
+        "zh": "合肥"
+      },
+      {
+        "gloss": "Фучжоу — центр провинции Фуцзянь",
+        "id": "prov-fujian",
+        "zh": "福州"
+      },
+      {
+        "gloss": "Наньчан — центр провинции Цзянси",
+        "id": "prov-jiangxi",
+        "zh": "南昌"
+      },
+      {
+        "gloss": "Чжэнчжоу — центр провинции Хэнань",
+        "id": "prov-henan",
+        "zh": "郑州"
+      },
+      {
+        "gloss": "Ухань — центр провинции Хубэй",
+        "id": "prov-hubei",
+        "zh": "武汉"
+      },
+      {
+        "gloss": "Чанша — центр провинции Хунань",
+        "id": "prov-hunan",
+        "zh": "长沙"
+      },
+      {
+        "gloss": "Наньнин — центр Гуанси-Чжуанского автономного района",
+        "id": "prov-guangxi",
+        "zh": "南宁"
+      },
+      {
+        "gloss": "Хайкоу — центр провинции Хайнань",
+        "id": "prov-hainan",
+        "zh": "海口"
+      },
+      {
+        "gloss": "Чэнду — административный центр провинции Сычуань",
+        "id": "prov-sichuan",
+        "zh": "成都"
+      },
+      {
+        "gloss": "Гуйян — административный центр провинции Гуйчжоу",
+        "id": "prov-guizhou",
+        "zh": "贵阳"
+      },
+      {
+        "gloss": "Куньмин — административный центр провинции Юньнань",
+        "id": "prov-yunnan",
+        "zh": "昆明"
+      },
+      {
+        "gloss": "Лхаса — административный центр Тибетского автономного района",
+        "id": "prov-xizang",
+        "zh": "拉萨"
+      },
+      {
+        "gloss": "Сиань — административный центр провинции Шэньси",
+        "id": "prov-shaanxi",
+        "zh": "西安"
+      },
+      {
+        "gloss": "Ланьчжоу — административный центр провинции Ганьсу",
+        "id": "prov-gansu",
+        "zh": "兰州"
+      },
+      {
+        "gloss": "Синин — административный центр провинции Цинхай",
+        "id": "prov-qinghai",
+        "zh": "西宁"
+      },
+      {
+        "gloss": "Иньчуань — административный центр района Нинся",
+        "id": "prov-ningxia",
+        "zh": "银川"
+      },
+      {
+        "gloss": "Урумчи — центр Синьцзян-Уйгурского автономного района",
+        "id": "prov-xinjiang",
+        "zh": "乌鲁木齐"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какой город — административный центр провинции Гуандун?",
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "authored"

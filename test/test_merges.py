@@ -357,7 +357,7 @@ class MergesInBankTest(unittest.TestCase):
             # группа у склеенной записи — только ради взаимной подсказки с вопросом о другом факте
             # (решение автора 2026-10-22, порция 3 провинций); дубль одного факта в группе ловит следующий тест
             if 'factGroup' in record:
-                self.assertIn(record['factGroup'], {'province-names-river-lake'}, keep_id)
+                self.assertIn(record['factGroup'], {'province-names-river-lake', 'beijing-tianjin-municipality'}, keep_id)
             wrong = [o['zh'] for o in record['options'] if o['id'] != record['answer']['optionId']]
             for text in wrong:
                 self.assertNotIn(text, record['explanation']['ru'], keep_id)
