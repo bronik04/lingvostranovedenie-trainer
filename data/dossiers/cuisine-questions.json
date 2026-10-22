@@ -9,11 +9,12 @@
       "ask": "school"
     },
     "exclude": [
-      "cu-cn-mapo-doufu",
-      "cu-cn-yuxiang-rousi",
-      "cu-cn-huiguorou",
       "cu-cn-fuqi-feipian",
-      "cu-cn-kaishui-baicai"
+      "cu-cn-huiguorou",
+      "cu-cn-kaishui-baicai",
+      "cu-cn-mapo-doufu",
+      "cu-cn-mayi-shangshu",
+      "cu-cn-yuxiang-rousi"
     ],
     "check": {
       "verdict": "accept",
@@ -355,12 +356,16 @@
   {
     "id": "cuisine-q67",
     "embeds": "2024-25-pri-38",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "cuisines",
       "row": "cs-lu",
       "ask": "name"
     },
-    "exclude": []
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Встраивание 2024-25-pri-38 (ответ o2 鲁菜, verified) в cs-lu, ask name. Набор: исходные 川菜, 粤菜, 苏菜 и из колонки 闽菜, 浙菜, 湘菜, 徽菜 — все восемь великих кухонь, провинции Шаньдун соответствует только 鲁菜; подписи из ячеек верны. Пояснение неверных вариантов не называет, утечек нет."
+    }
   }
 ]

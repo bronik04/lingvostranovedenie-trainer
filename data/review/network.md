@@ -60,7 +60,7 @@
 
 | строка | region | taste | dish | другие | олимпиада |
 |---|---|---|---|---|---|
-| cs-lu | — | — | — | — | да |
+| cs-lu | — | — | — | 1 | да |
 | cs-chuan | — | — | — | — | прогноз |
 | cs-yue | — | — | — | — | прогноз |
 | cs-su | — | — | — | — | прогноз |
@@ -92,6 +92,7 @@
 | cu-cn-duojiao-yutou | — | — | прогноз |
 | cu-cn-maoshi-hongshaorou | — | — | прогноз |
 | cu-cn-chou-guiyu | — | — | прогноз |
+| cu-cn-mayi-shangshu | — | — | да |
 
 #### Таблица `staples`
 
@@ -124,6 +125,35 @@
 |---|---|---|
 | cu-cn-tangyuan | — | прогноз |
 | cu-cn-tanghulu | — | прогноз |
+
+#### Таблица `teatypes`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+Стороны не утверждены (`sides`).
+
+| строка | другие | олимпиада |
+|---|---|---|
+| tt-green | — | прогноз |
+| tt-white | — | прогноз |
+| tt-yellow | — | прогноз |
+| tt-oolong | — | прогноз |
+| tt-red | — | прогноз |
+| tt-dark | — | прогноз |
+
+#### Таблица `teas`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | type | region | другие | олимпиада |
+|---|---|---|---|---|
+| te-longjing | — | — | — | да |
+| te-biluochun | — | — | — | прогноз |
+| te-tieguanyin | — | — | — | прогноз |
+| te-dahongpao | — | — | — | прогноз |
+| te-puer | × | — | — | прогноз |
+| te-qimen | — | — | — | прогноз |
+| te-huangshan-maofeng | — | — | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
@@ -336,6 +366,7 @@
 - cuisine/savory/cu-cn-gongbao-jiding
 - cuisine/savory/cu-cn-huiguorou
 - cuisine/savory/cu-cn-maoshi-hongshaorou
+- cuisine/savory/cu-cn-mayi-shangshu
 - cuisine/savory/cu-cn-pai-huanggua
 - cuisine/savory/cu-cn-xiefen-shizitou
 - cuisine/staples/cu-cn-changfen
@@ -350,6 +381,8 @@
 - cuisine/staples/cu-cn-yangzhouchaofan
 - cuisine/staples/cu-cn-youtiao
 - cuisine/sweets/cu-cn-tanghulu
+- cuisine/teatypes/tt-white
+- cuisine/teatypes/tt-yellow
 - provinces/provinces/prov-aomen
 - provinces/provinces/prov-ningxia
 
