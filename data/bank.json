@@ -5244,6 +5244,7 @@
     "explanation": {
       "ru": "Чжэцзян знаменит лунцзинем (龙井茶) — прежде всего сортом Сиху Лунцзин из окрестностей Ханчжоу, одним из десяти самых известных чаёв Китая. 铁观音茶 (те гуань инь) — фуцзяньский улун, 茉莉花茶 не привязан к одной провинции, 红茶 — общая категория."
     },
+    "factGroup": "longjing-xihu",
     "id": "2016-17-reg-9",
     "occurrences": [
       {
@@ -11864,6 +11865,7 @@
     "explanation": {
       "ru": "Гунбао цзидин (宫保鸡丁) и юйсян жоусы (鱼香肉丝) — классические блюда сычуаньской кухни (川菜), известной острыми и пряными вкусами. Для гунбао цзидин маринованные кубики куриной грудки быстро обжаривают на сильном огне с зелёным и красным перцем и в конце добавляют жареный арахис; во вкусе кисло-сладкое соединяется с остротой и онемением от сычуаньского перца. Юйсян жоусы — соломка из свинины со стеблем салата-латука и древесными грибами в соусе, где уравновешены солёное, кислое, сладкое и острое."
     },
+    "factGroup": "cuisine-dishes-zak-1",
     "factRow": "cuisine/savory/cu-cn-gongbao-jiding",
     "id": "2018-19-zak-1",
     "occurrences": [
@@ -32629,6 +32631,7 @@
     "explanation": {
       "ru": "«佛跳墙» — классика фуцзяньской кухни 闽菜. Блюдо связывают с поваром Чжэн Чуньфа (郑春发) и фучжоуским рестораном 聚春园, основанным в 1865 г. (изначально назывался «三友斋»). Технология его приготовления в «Цзюйчуньюане» внесена в государственный список нематериального культурного наследия КНР. Трепанги, морское ушко, гребешок, курицу и утку сначала обрабатывают по отдельности, а затем долго томят с бульоном и шаосинским вином в запечатанном винном кувшине."
     },
+    "factGroup": "fotiaoqiang-min",
     "factRow": "cuisine/savory/cu-cn-fotiaoqiang",
     "id": "addition-b2-03",
     "occurrences": [],
@@ -32754,6 +32757,7 @@
     "explanation": {
       "ru": "Родина улуна «Железная Гуаньинь» (铁观音) — посёлок Сипин (西坪) уезда Аньси (安溪) на юго-востоке Фуцзяни. Сорт обнаружили и стали распространять в годы Юнчжэна; по одной легенде (魏说), чайный куст привиделся во сне старому крестьянину Вэй Иню, по другой (王说) название дал император Цяньлун. В 2014 г. «чайная культурная система Аньси» вошла во второй список важного сельскохозяйственного наследия Китая. Остальные варианты — тоже улуны, но других мест: 大红袍 — горы Уишань (Фуцзянь), 冻顶乌龙 — Тайвань, 凤凰单丛 — гора Фэнхуан в Гуандуне."
     },
+    "factGroup": "tieguanyin-anxi",
     "id": "addition-b2-05",
     "occurrences": [],
     "options": [
@@ -42272,6 +42276,2033 @@
     "questionRu": "Какое блюдо едят руками: сначала надкусывают тесто и выпивают бульон?",
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cs-yue",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+        "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+        "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "味道中国之粤菜 — 央视网",
+        "url": "https://tv.cctv.com/yskd/special/yc/index.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "白切鸡 — 广州市人民政府门户网站",
+        "url": "https://www.gz.gov.cn/zlgz/gzly/msgz/tsmc/content/post_8313422.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Кантонская кухня (粤菜) — это кухня провинции Гуандун (广东). Она складывается из гуанчжоуской, чаочжоуской и дунцзянской (хакка) кухонь. Вкус её скорее лёгкий, с упором на свежесть продуктов."
+    },
+    "factRow": "cuisine/cuisines/cs-yue",
+    "id": "cuisine-q68",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cs-yue",
+        "zh": "广东"
+      },
+      {
+        "gloss": "Шаньдун — приморская провинция в низовьях Хуанхэ",
+        "id": "cs-lu",
+        "zh": "山东"
+      },
+      {
+        "gloss": "Сычуань — провинция в верховьях Янцзы на юго-западе Китая",
+        "id": "cs-chuan",
+        "zh": "四川"
+      },
+      {
+        "gloss": "Цзянсу — приморская провинция в низовьях Янцзы, центр — Нанкин",
+        "id": "cs-su",
+        "zh": "江苏"
+      },
+      {
+        "gloss": "Фуцзянь — прибрежная провинция на юго-востоке, напротив Тайваня",
+        "id": "cs-min",
+        "zh": "福建"
+      },
+      {
+        "gloss": "Чжэцзян — провинция на юге дельты Янцзы, центр — Ханчжоу",
+        "id": "cs-zhe",
+        "zh": "浙江"
+      },
+      {
+        "gloss": "Хунань — провинция в среднем течении Янцзы, к югу от Дунтинху",
+        "id": "cs-xiang",
+        "zh": "湖南"
+      },
+      {
+        "gloss": "Аньхой — провинция в Восточном Китае, на Янцзы и Хуайхэ, центр — Хэфэй",
+        "id": "cs-hui",
+        "zh": "安徽"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какая провинция — родина кухни 粤菜?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cs-min",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+        "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+        "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+        "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Фуцзяньская кухня (闽菜) сложилась в провинции Фуцзянь (福建). Ведущая в ней — фучжоуская кухня. Она сильна в бульонах и супах, а её представительное блюдо — Фотяоцян."
+    },
+    "factRow": "cuisine/cuisines/cs-min",
+    "id": "cuisine-q70",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cs-min",
+        "zh": "福建"
+      },
+      {
+        "gloss": "Шаньдун — приморская провинция в низовьях Хуанхэ",
+        "id": "cs-lu",
+        "zh": "山东"
+      },
+      {
+        "gloss": "Сычуань — провинция в верховьях Янцзы на юго-западе Китая",
+        "id": "cs-chuan",
+        "zh": "四川"
+      },
+      {
+        "gloss": "Гуандун — провинция на юге материкового Китая, центр — Гуанчжоу",
+        "id": "cs-yue",
+        "zh": "广东"
+      },
+      {
+        "gloss": "Цзянсу — приморская провинция в низовьях Янцзы, центр — Нанкин",
+        "id": "cs-su",
+        "zh": "江苏"
+      },
+      {
+        "gloss": "Чжэцзян — провинция на юге дельты Янцзы, центр — Ханчжоу",
+        "id": "cs-zhe",
+        "zh": "浙江"
+      },
+      {
+        "gloss": "Хунань — провинция в среднем течении Янцзы, к югу от Дунтинху",
+        "id": "cs-xiang",
+        "zh": "湖南"
+      },
+      {
+        "gloss": "Аньхой — провинция в Восточном Китае, на Янцзы и Хуайхэ, центр — Хэфэй",
+        "id": "cs-hui",
+        "zh": "安徽"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какая провинция — родина кухни 闽菜?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cs-xiang",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+        "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+        "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+        "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "味道中国之湘菜 — 央视网",
+        "url": "https://tv.cctv.com/yskd/special/wdzgzxc/index.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Хунаньская кухня (湘菜) — кухня провинции Хунань (湖南). Она сложилась из кухонь бассейна реки Сянцзян, озера Дунтин и гор Западной Хунани. Её представительное блюдо — рыбья голова под рубленым перцем."
+    },
+    "factRow": "cuisine/cuisines/cs-xiang",
+    "id": "cuisine-q71",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cs-xiang",
+        "zh": "湖南"
+      },
+      {
+        "gloss": "Шаньдун — приморская провинция в низовьях Хуанхэ",
+        "id": "cs-lu",
+        "zh": "山东"
+      },
+      {
+        "gloss": "Сычуань — провинция в верховьях Янцзы на юго-западе Китая",
+        "id": "cs-chuan",
+        "zh": "四川"
+      },
+      {
+        "gloss": "Гуандун — провинция на юге материкового Китая, центр — Гуанчжоу",
+        "id": "cs-yue",
+        "zh": "广东"
+      },
+      {
+        "gloss": "Цзянсу — приморская провинция в низовьях Янцзы, центр — Нанкин",
+        "id": "cs-su",
+        "zh": "江苏"
+      },
+      {
+        "gloss": "Фуцзянь — прибрежная провинция на юго-востоке, напротив Тайваня",
+        "id": "cs-min",
+        "zh": "福建"
+      },
+      {
+        "gloss": "Чжэцзян — провинция на юге дельты Янцзы, центр — Ханчжоу",
+        "id": "cs-zhe",
+        "zh": "浙江"
+      },
+      {
+        "gloss": "Аньхой — провинция в Восточном Китае, на Янцзы и Хуайхэ, центр — Хэфэй",
+        "id": "cs-hui",
+        "zh": "安徽"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какая провинция — родина кухни 湘菜?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cs-lu",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+        "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "“宇宙第一”鲁菜：蕴含儒家哲理 — 山东宣传网",
+        "url": "https://www.sdxc.gov.cn/whql/nslt/202408/t20240829_14723198.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "五味俱全的九转大肠 — 央视网",
+        "url": "https://livechina.cctv.com/2022/03/09/VIDE4Wu2IxxMKkb7wqmDdrpN220309.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+        "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Вкус шаньдунской кухни (鲁菜) описывают как 咸鲜 — солёно-свежий. Источники уточняют: «咸鲜纯正» — чистый вкус с упором на естественный вкус продуктов. Шаньдунская кухня — одна из восьми великих кухонь Китая."
+    },
+    "factRow": "cuisine/cuisines/cs-lu",
+    "id": "cuisine-q72",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cs-lu",
+        "zh": "咸鲜"
+      },
+      {
+        "gloss": "Острота с онемением от сычуаньского перца — визитный вкус сычуаньской кухни",
+        "id": "cs-chuan",
+        "zh": "麻辣"
+      },
+      {
+        "gloss": "Лёгкий вкус, при котором ценится свежесть продуктов, — кантонская кухня",
+        "id": "cs-yue",
+        "zh": "清淡"
+      },
+      {
+        "gloss": "Сладковатый вкус — так описывают цзянсускую кухню",
+        "id": "cs-su",
+        "zh": "偏甜"
+      },
+      {
+        "gloss": "Ароматная острота — так описывают хунаньскую кухню",
+        "id": "cs-xiang",
+        "zh": "香辣"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Каким вкусом славится кухня 鲁菜?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cs-chuan",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+        "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+        "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "味道中国：四川味道 — 央视网",
+        "url": "https://tv.cctv.com/yskd/special/sc/index.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Визитный вкус сычуаньской кухни (川菜) — 麻辣: острота с онемением от сычуаньского перца. Её черты описывают как «麻、辣、鲜、香» — онемение, острота, свежесть, аромат. Образец этого вкуса — тофу мапо."
+    },
+    "factRow": "cuisine/cuisines/cs-chuan",
+    "id": "cuisine-q73",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cs-chuan",
+        "zh": "麻辣"
+      },
+      {
+        "gloss": "Солёно-свежий вкус, подчёркивающий естественный вкус продуктов, — шаньдунская кухня",
+        "id": "cs-lu",
+        "zh": "咸鲜"
+      },
+      {
+        "gloss": "Лёгкий вкус, при котором ценится свежесть продуктов, — кантонская кухня",
+        "id": "cs-yue",
+        "zh": "清淡"
+      },
+      {
+        "gloss": "Сладковатый вкус — так описывают цзянсускую кухню",
+        "id": "cs-su",
+        "zh": "偏甜"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Каким вкусом славится кухня 川菜?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cs-yue",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+        "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+        "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "味道中国之粤菜 — 央视网",
+        "url": "https://tv.cctv.com/yskd/special/yc/index.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "白切鸡 — 广州市人民政府门户网站",
+        "url": "https://www.gz.gov.cn/zlgz/gzly/msgz/tsmc/content/post_8313422.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Вкус кантонской кухни (粤菜) — 清淡: мягкий, лёгкий, нежирный. По описанию CCTV, в нём ищут свежесть: «清中求鲜». Кантонская кухня — это кухня провинции Гуандун."
+    },
+    "factRow": "cuisine/cuisines/cs-yue",
+    "id": "cuisine-q74",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cs-yue",
+        "zh": "清淡"
+      },
+      {
+        "gloss": "Солёно-свежий вкус, подчёркивающий естественный вкус продуктов, — шаньдунская кухня",
+        "id": "cs-lu",
+        "zh": "咸鲜"
+      },
+      {
+        "gloss": "Острота с онемением от сычуаньского перца — визитный вкус сычуаньской кухни",
+        "id": "cs-chuan",
+        "zh": "麻辣"
+      },
+      {
+        "gloss": "Сладковатый вкус — так описывают цзянсускую кухню",
+        "id": "cs-su",
+        "zh": "偏甜"
+      },
+      {
+        "gloss": "Ароматная острота — так описывают хунаньскую кухню",
+        "id": "cs-xiang",
+        "zh": "香辣"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Каким вкусом славится кухня 粤菜?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cs-su",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+        "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+        "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+        "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "江浙菜清鲜爽嫩 专家提醒：油糖含量偏高不适合糖尿病患者 — 人民网",
+        "url": "http://health.people.com.cn/n1/2016/1006/c21471-28757572.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "味道中国：江苏味道 — 央视网",
+        "url": "https://tv.cctv.com/yskd/special/jswd/index.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "江苏四大菜系 — 江苏与台湾（江苏省台办）",
+        "url": "http://www.jsstb.gov.cn/special/weihuaxhou_34380/weihuazhou/201405/t20140527_6222765.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Вкус цзянсуской кухни (苏菜) описывают как 偏甜 — сладковатый. Обзор восьми кухонь CNR описывает её так: тщательный выбор продуктов, тонкая нарезка, «口味偏甜». Её рекомендуемое блюдо — мандариновый окунь в форме белки."
+    },
+    "factRow": "cuisine/cuisines/cs-su",
+    "id": "cuisine-q75",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cs-su",
+        "zh": "偏甜"
+      },
+      {
+        "gloss": "Солёно-свежий вкус, подчёркивающий естественный вкус продуктов, — шаньдунская кухня",
+        "id": "cs-lu",
+        "zh": "咸鲜"
+      },
+      {
+        "gloss": "Острота с онемением от сычуаньского перца — визитный вкус сычуаньской кухни",
+        "id": "cs-chuan",
+        "zh": "麻辣"
+      },
+      {
+        "gloss": "Ароматная острота — так описывают хунаньскую кухню",
+        "id": "cs-xiang",
+        "zh": "香辣"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Каким вкусом славится кухня 苏菜?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cs-xiang",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+        "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+        "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+        "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "味道中国之湘菜 — 央视网",
+        "url": "https://tv.cctv.com/yskd/special/wdzgzxc/index.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Вкус хунаньской кухни (湘菜) — 香辣: ароматная, пряная острота. Для неё характерны также насыщенный цвет и нежная текстура блюд. Её рекомендуемое блюдо — рыбья голова под рубленым перцем."
+    },
+    "factRow": "cuisine/cuisines/cs-xiang",
+    "id": "cuisine-q76",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cs-xiang",
+        "zh": "香辣"
+      },
+      {
+        "gloss": "Солёно-свежий вкус, подчёркивающий естественный вкус продуктов, — шаньдунская кухня",
+        "id": "cs-lu",
+        "zh": "咸鲜"
+      },
+      {
+        "gloss": "Острота с онемением от сычуаньского перца — визитный вкус сычуаньской кухни",
+        "id": "cs-chuan",
+        "zh": "麻辣"
+      },
+      {
+        "gloss": "Лёгкий вкус, при котором ценится свежесть продуктов, — кантонская кухня",
+        "id": "cs-yue",
+        "zh": "清淡"
+      },
+      {
+        "gloss": "Сладковатый вкус — так описывают цзянсускую кухню",
+        "id": "cs-su",
+        "zh": "偏甜"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Каким вкусом славится кухня 湘菜?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cu-cn-songshu-guiyu",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "从几道菜了解中国",
+        "url": "https://sydney.china-consulate.gov.cn/whjw/zxzy/202204/t20220429_10676134.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "春季“苏州十大碗”，哪碗你最爱？",
+        "url": "https://nyncj.suzhou.gov.cn/nlj/zwyw/202404/358ba821fabd4a8ea9f01b6e25abd1a7.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-18",
+        "title": "台媒看大陆：寻味江苏苏州 经典松鼠桂鱼",
+        "url": "https://www.chinanews.com.cn/gn/2022/09-25/9860221.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Мандариновый окунь в форме белки (松鼠鳜鱼) — рекомендуемое блюдо цзянсуской кухни (苏菜). CCTV называет его традиционным блюдом сучжоуской кухни. Цзянсускую кухню в кулинарной науке называют и хуайянской."
+    },
+    "factRow": "cuisine/savory/cu-cn-songshu-guiyu",
+    "id": "cuisine-q77",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cu-cn-songshu-guiyu",
+        "zh": "苏菜"
+      },
+      {
+        "gloss": "Сычуаньская кухня",
+        "id": "cu-cn-mapo-doufu",
+        "zh": "川菜"
+      },
+      {
+        "gloss": "Чжэцзянская кухня",
+        "id": "cu-cn-dongporou",
+        "zh": "浙菜"
+      },
+      {
+        "gloss": "Кантонская кухня",
+        "id": "cu-cn-baiqieji",
+        "zh": "粤菜"
+      },
+      {
+        "gloss": "Шаньдунская кухня",
+        "id": "cu-cn-congshao-haishen",
+        "zh": "鲁菜"
+      },
+      {
+        "gloss": "Фуцзяньская кухня",
+        "id": "cu-cn-fotiaoqiang",
+        "zh": "闽菜"
+      },
+      {
+        "gloss": "Хунаньская кухня",
+        "id": "cu-cn-duojiao-yutou",
+        "zh": "湘菜"
+      },
+      {
+        "gloss": "Аньхойская кухня",
+        "id": "cu-cn-chou-guiyu",
+        "zh": "徽菜"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "К какой из восьми великих кухонь Китая относится блюдо 松鼠鳜鱼?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cu-cn-chou-guiyu",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-18",
+        "title": "【寻味中华】徽菜头牌臭鳜鱼：臭恶犹美，皆有所以",
+        "url": "https://www.chinanews.com.cn/sh/2022/09-01/9841752.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-18",
+        "title": "“徽”派美味 岂止臭鳜鱼",
+        "url": "http://travel.people.com.cn/n1/2016/0224/c41570-28145726.html"
+      }
+    ],
+    "explanation": {
+      "ru": "«Вонючий» мандариновый окунь (臭鳜鱼) — представительное блюдо аньхойской кухни (徽菜). Эта кухня возникла в области Хуэйчжоу при Южной Сун. Она сильна в тушении и приготовлении на пару, вкус её блюд насыщенный."
+    },
+    "factRow": "cuisine/savory/cu-cn-chou-guiyu",
+    "id": "cuisine-q78",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cu-cn-chou-guiyu",
+        "zh": "徽菜"
+      },
+      {
+        "gloss": "Сычуаньская кухня",
+        "id": "cu-cn-mapo-doufu",
+        "zh": "川菜"
+      },
+      {
+        "gloss": "Чжэцзянская кухня",
+        "id": "cu-cn-dongporou",
+        "zh": "浙菜"
+      },
+      {
+        "gloss": "Кантонская кухня",
+        "id": "cu-cn-baiqieji",
+        "zh": "粤菜"
+      },
+      {
+        "gloss": "Цзянсуская кухня",
+        "id": "cu-cn-songshu-guiyu",
+        "zh": "苏菜"
+      },
+      {
+        "gloss": "Шаньдунская кухня",
+        "id": "cu-cn-congshao-haishen",
+        "zh": "鲁菜"
+      },
+      {
+        "gloss": "Фуцзяньская кухня",
+        "id": "cu-cn-fotiaoqiang",
+        "zh": "闽菜"
+      },
+      {
+        "gloss": "Хунаньская кухня",
+        "id": "cu-cn-duojiao-yutou",
+        "zh": "湘菜"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "К какой из восьми великих кухонь Китая относится блюдо 臭鳜鱼?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cu-cn-jiuzhuan-dachang",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "美食节",
+        "url": "https://jgj.sh.gov.cn/shhq/app/qgl_ztc/msj/2020/06/12/2c92f58b720c4d490172a70ad1ad5b66.html?tm=1621834804828"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "100个乡村美食名单",
+        "url": "https://nmfsj.moa.gov.cn/xwzx_25646/ywjj/201809/t20180913_6157258.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-18",
+        "title": "色香味形品鲁菜",
+        "url": "http://sd.people.com.cn/n2/2023/0228/c364532-40318259.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Свиные кишки «девять оборотов» (九转大肠) — традиционное блюдо Цзинаня, столицы провинции Шаньдун. Оно относится к шаньдунской кухне (鲁菜). Вкус этой кухни описывают как солёно-свежий (咸鲜)."
+    },
+    "factRow": "cuisine/savory/cu-cn-jiuzhuan-dachang",
+    "id": "cuisine-q79",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cu-cn-jiuzhuan-dachang",
+        "zh": "鲁菜"
+      },
+      {
+        "gloss": "Сычуаньская кухня",
+        "id": "cu-cn-mapo-doufu",
+        "zh": "川菜"
+      },
+      {
+        "gloss": "Чжэцзянская кухня",
+        "id": "cu-cn-dongporou",
+        "zh": "浙菜"
+      },
+      {
+        "gloss": "Кантонская кухня",
+        "id": "cu-cn-baiqieji",
+        "zh": "粤菜"
+      },
+      {
+        "gloss": "Цзянсуская кухня",
+        "id": "cu-cn-songshu-guiyu",
+        "zh": "苏菜"
+      },
+      {
+        "gloss": "Фуцзяньская кухня",
+        "id": "cu-cn-fotiaoqiang",
+        "zh": "闽菜"
+      },
+      {
+        "gloss": "Хунаньская кухня",
+        "id": "cu-cn-duojiao-yutou",
+        "zh": "湘菜"
+      },
+      {
+        "gloss": "Аньхойская кухня",
+        "id": "cu-cn-chou-guiyu",
+        "zh": "徽菜"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "К какой из восьми великих кухонь Китая относится блюдо 九转大肠?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cu-cn-mapo-doufu",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "关于麻婆豆腐（多味斋）",
+        "url": "https://paper.people.com.cn/rmrb/pad/content/202507/16/content_30088084.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-18",
+        "title": "柏林中国文化中心重启线下烹饪教学首推美味川菜",
+        "url": "https://www.mct.gov.cn/wlbphone/wlbydd/xxfb/gzxx/202211/t20221110_937353.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Тофу мапо (麻婆豆腐) — рекомендуемое блюдо сычуаньской кухни (川菜). По описанию CCTV, это образец её остроты с онемением (麻辣). Сычуаньская кухня зародилась в Сычуани и Чунцине."
+    },
+    "factGroup": "cuisine-dishes-zak-1",
+    "factRow": "cuisine/savory/cu-cn-mapo-doufu",
+    "id": "cuisine-q80",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cu-cn-mapo-doufu",
+        "zh": "川菜"
+      },
+      {
+        "gloss": "Чжэцзянская кухня",
+        "id": "cu-cn-dongporou",
+        "zh": "浙菜"
+      },
+      {
+        "gloss": "Кантонская кухня",
+        "id": "cu-cn-baiqieji",
+        "zh": "粤菜"
+      },
+      {
+        "gloss": "Цзянсуская кухня",
+        "id": "cu-cn-songshu-guiyu",
+        "zh": "苏菜"
+      },
+      {
+        "gloss": "Шаньдунская кухня",
+        "id": "cu-cn-congshao-haishen",
+        "zh": "鲁菜"
+      },
+      {
+        "gloss": "Фуцзяньская кухня",
+        "id": "cu-cn-fotiaoqiang",
+        "zh": "闽菜"
+      },
+      {
+        "gloss": "Хунаньская кухня",
+        "id": "cu-cn-duojiao-yutou",
+        "zh": "湘菜"
+      },
+      {
+        "gloss": "Аньхойская кухня",
+        "id": "cu-cn-chou-guiyu",
+        "zh": "徽菜"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "К какой из восьми великих кухонь Китая относится блюдо 麻婆豆腐?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cu-cn-dongporou",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "你知道杭州人一年吃掉了多少烤鸡和老鸭煲吗？",
+        "url": "https://www.hzzx.gov.cn/hzxw/content/2017-01/16/content_6444737.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "聊聊杭帮菜",
+        "url": "https://www.gdszx.gov.cn/zxkw/tzgj/2022/05/content/post_29676.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-18",
+        "title": "要问浙菜几许味 鲜咸甜臭辣各领风骚",
+        "url": "https://zjnews.zjol.com.cn/zjnews/202412/t20241224_30729903.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Свинина Дунпо (东坡肉) относится к чжэцзянской кухне (浙菜). Её готовят, например, в ханчжоуском ресторане «Лоувайлоу»: после тушения мясо доводят на пару. Чжэцзянская кухня представлена ханчжоуской, нинбоской, шаосинской и вэньчжоуской кухнями."
+    },
+    "factGroup": "cuisine-dishes-zak-1",
+    "factRow": "cuisine/savory/cu-cn-dongporou",
+    "id": "cuisine-q81",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cu-cn-dongporou",
+        "zh": "浙菜"
+      },
+      {
+        "gloss": "Сычуаньская кухня",
+        "id": "cu-cn-mapo-doufu",
+        "zh": "川菜"
+      },
+      {
+        "gloss": "Кантонская кухня",
+        "id": "cu-cn-baiqieji",
+        "zh": "粤菜"
+      },
+      {
+        "gloss": "Цзянсуская кухня",
+        "id": "cu-cn-songshu-guiyu",
+        "zh": "苏菜"
+      },
+      {
+        "gloss": "Шаньдунская кухня",
+        "id": "cu-cn-congshao-haishen",
+        "zh": "鲁菜"
+      },
+      {
+        "gloss": "Фуцзяньская кухня",
+        "id": "cu-cn-fotiaoqiang",
+        "zh": "闽菜"
+      },
+      {
+        "gloss": "Хунаньская кухня",
+        "id": "cu-cn-duojiao-yutou",
+        "zh": "湘菜"
+      },
+      {
+        "gloss": "Аньхойская кухня",
+        "id": "cu-cn-chou-guiyu",
+        "zh": "徽菜"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "К какой из восьми великих кухонь Китая относится блюдо 东坡肉?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cu-cn-duojiao-yutou",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-18",
+        "title": "去湘潭，在半部湘菜史写就的小城尝一回地道美食",
+        "url": "https://whhlyt.hunan.gov.cn/whhlyt/news/sxxw/202406/t20240626_33337326.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-18",
+        "title": "Here Comes the“Spicy” | 上菜啦！",
+        "url": "https://www.hunan.gov.cn/topic/ccjhl/djz/202107/t20210709_19875790.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-18",
+        "title": "湘菜如何在不影响口味的前提下减盐",
+        "url": "https://wjw.hunan.gov.cn/wjw/2025jy1/202504/t20250411_33638995.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Рыбья голова под рубленым перцем (剁椒鱼头) — рекомендуемое блюдо хунаньской кухни (湘菜). Это голова толстолобика под рубленым перцем, приготовленная на пару. Вкус хунаньской кухни — ароматная острота (香辣)."
+    },
+    "factGroup": "cuisine-dishes-zak-1",
+    "factRow": "cuisine/savory/cu-cn-duojiao-yutou",
+    "id": "cuisine-q82",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cu-cn-duojiao-yutou",
+        "zh": "湘菜"
+      },
+      {
+        "gloss": "Сычуаньская кухня",
+        "id": "cu-cn-mapo-doufu",
+        "zh": "川菜"
+      },
+      {
+        "gloss": "Чжэцзянская кухня",
+        "id": "cu-cn-dongporou",
+        "zh": "浙菜"
+      },
+      {
+        "gloss": "Кантонская кухня",
+        "id": "cu-cn-baiqieji",
+        "zh": "粤菜"
+      },
+      {
+        "gloss": "Цзянсуская кухня",
+        "id": "cu-cn-songshu-guiyu",
+        "zh": "苏菜"
+      },
+      {
+        "gloss": "Шаньдунская кухня",
+        "id": "cu-cn-congshao-haishen",
+        "zh": "鲁菜"
+      },
+      {
+        "gloss": "Фуцзяньская кухня",
+        "id": "cu-cn-fotiaoqiang",
+        "zh": "闽菜"
+      },
+      {
+        "gloss": "Аньхойская кухня",
+        "id": "cu-cn-chou-guiyu",
+        "zh": "徽菜"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "К какой из восьми великих кухонь Китая относится блюдо 剁椒鱼头?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cu-cn-baiqieji",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "客家名食——酿豆腐、白切鸡与“三及第”小考",
+        "url": "https://www.gdwsw.gov.cn/wsbl/content/post_33985.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "清城区省级非物质文化遗产——清远白切鸡烹饪技艺",
+        "url": "https://www.qingcheng.gov.cn/zjqc/mswh/content/post_1805069.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-18",
+        "title": "美食家庄臣鸡年谈鸡",
+        "url": "http://paper.people.com.cn/rmrbhwb/html/2017-02/24/content_1752946.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Белая нарезанная курица (白切鸡) — одно из известных блюд кантонской кухни (粤菜). Целую курицу после приготовления охлаждают и подают кусочками с имбирной приправой. Кантонская кухня — это кухня провинции Гуандун."
+    },
+    "factGroup": "cuisine-dishes-zak-1",
+    "factRow": "cuisine/savory/cu-cn-baiqieji",
+    "id": "cuisine-q83",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cu-cn-baiqieji",
+        "zh": "粤菜"
+      },
+      {
+        "gloss": "Сычуаньская кухня",
+        "id": "cu-cn-mapo-doufu",
+        "zh": "川菜"
+      },
+      {
+        "gloss": "Чжэцзянская кухня",
+        "id": "cu-cn-dongporou",
+        "zh": "浙菜"
+      },
+      {
+        "gloss": "Цзянсуская кухня",
+        "id": "cu-cn-songshu-guiyu",
+        "zh": "苏菜"
+      },
+      {
+        "gloss": "Шаньдунская кухня",
+        "id": "cu-cn-congshao-haishen",
+        "zh": "鲁菜"
+      },
+      {
+        "gloss": "Фуцзяньская кухня",
+        "id": "cu-cn-fotiaoqiang",
+        "zh": "闽菜"
+      },
+      {
+        "gloss": "Хунаньская кухня",
+        "id": "cu-cn-duojiao-yutou",
+        "zh": "湘菜"
+      },
+      {
+        "gloss": "Аньхойская кухня",
+        "id": "cu-cn-chou-guiyu",
+        "zh": "徽菜"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "К какой из восьми великих кухонь Китая относится блюдо 白切鸡?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cs-min",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+        "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+        "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+        "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Фотяоцян (佛跳墙) — рекомендуемое и представительное блюдо фуцзяньской кухни (闽菜). Его томят в винном сосуде из множества продуктов. Фуцзяньская кухня сильна в бульонах и супах."
+    },
+    "factGroup": "fotiaoqiang-min",
+    "factRow": "cuisine/cuisines/cs-min",
+    "id": "cuisine-q84",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cs-min",
+        "zh": "佛跳墙"
+      },
+      {
+        "gloss": "Свиные кишки «девять оборотов» — традиционное блюдо Цзинаня, шаньдунская кухня",
+        "id": "cs-lu",
+        "zh": "九转大肠"
+      },
+      {
+        "gloss": "Тофу мапо — знаменитое сычуаньское блюдо, образец остроты с онемением",
+        "id": "cs-chuan",
+        "zh": "麻婆豆腐"
+      },
+      {
+        "gloss": "Белая нарезанная курица — отварная курица в собственном вкусе, кантонская кухня",
+        "id": "cs-yue",
+        "zh": "白切鸡"
+      },
+      {
+        "gloss": "Мандариновый окунь в форме белки — традиционное блюдо Сучжоу, цзянсуская кухня",
+        "id": "cs-su",
+        "zh": "松鼠鳜鱼"
+      },
+      {
+        "gloss": "Рыба озера Сиху в уксусном соусе — знаменитое блюдо Ханчжоу, чжэцзянская кухня",
+        "id": "cs-zhe",
+        "zh": "西湖醋鱼"
+      },
+      {
+        "gloss": "Рыбья голова под рубленым перцем — знаменитое блюдо хунаньской кухни",
+        "id": "cs-xiang",
+        "zh": "剁椒鱼头"
+      },
+      {
+        "gloss": "«Вонючий» мандариновый окунь — визитная карточка аньхойской кухни",
+        "id": "cs-hui",
+        "zh": "臭鳜鱼"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какое из этих блюд относится к кухне 闽菜?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "te-tieguanyin",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国好茶知多少？喝茶怎能不懂茶！— 新华网",
+        "url": "https://www.xinhuanet.com/food/20210624/C96C5431DAF000013BB91A6B1F901564/c.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "“铁观音”探源趣说 — 央广网",
+        "url": "https://xm.cnr.cn/lywh/mnfq/200704/t20070406_504437080.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "名茶铁观音发源地福建安溪喊山开茶 — 中新网",
+        "url": "https://www.chinanews.com.cn/sh/2025/04-20/10402826.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Тегуаньинь (铁观音) — один из самых известных улунов, то есть чаёв вида 青茶. Улун — полуферментированный чай. Родина Тегуаньиня — уезд Аньси в провинции Фуцзянь."
+    },
+    "factGroup": "tieguanyin-anxi",
+    "factRow": "cuisine/teas/te-tieguanyin",
+    "id": "cuisine-q85",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "te-tieguanyin",
+        "zh": "青茶"
+      },
+      {
+        "gloss": "Зелёный чай — неферментированный, лист сразу прогревают, чтобы остановить окисление",
+        "id": "te-longjing",
+        "zh": "绿茶"
+      },
+      {
+        "gloss": "Тёмный чай (не «чёрный») — постферментированный, лист выдерживают в куче",
+        "id": "te-puer",
+        "zh": "黑茶"
+      },
+      {
+        "gloss": "Красный чай (по-русски чёрный) — полностью ферментированный, настой красный",
+        "id": "te-qimen",
+        "zh": "红茶"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "К какому виду чая относится 铁观音?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "te-dahongpao",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "茶说：武夷大红袍 — 中国网",
+        "url": "http://food.china.com.cn/2020-07/06/content_76241747.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "岩岩有茶，非岩不茶 — 农业农村部驻联合国粮农机构代表团",
+        "url": "https://cnafun.moa.gov.cn/zt/gjcr/202005/t20200518_6344431.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国好茶知多少？喝茶怎能不懂茶！— 新华网",
+        "url": "https://www.xinhuanet.com/food/20210624/C96C5431DAF000013BB91A6B1F901564/c.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Дахунпао (大红袍) — самый известный сорт скального чая гор Уи (Фуцзянь). Скальный чай Уи относится к полуферментированным чаям вида 青茶 (улун). Настоящих материнских кустов Дахунпао всего шесть."
+    },
+    "factRow": "cuisine/teas/te-dahongpao",
+    "id": "cuisine-q86",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "te-dahongpao",
+        "zh": "青茶"
+      },
+      {
+        "gloss": "Зелёный чай — неферментированный, лист сразу прогревают, чтобы остановить окисление",
+        "id": "te-longjing",
+        "zh": "绿茶"
+      },
+      {
+        "gloss": "Тёмный чай (не «чёрный») — постферментированный, лист выдерживают в куче",
+        "id": "te-puer",
+        "zh": "黑茶"
+      },
+      {
+        "gloss": "Красный чай (по-русски чёрный) — полностью ферментированный, настой красный",
+        "id": "te-qimen",
+        "zh": "红茶"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "К какому виду чая относится 大红袍?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "te-biluochun",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国好茶知多少？喝茶怎能不懂茶！— 新华网",
+        "url": "https://www.xinhuanet.com/food/20210624/C96C5431DAF000013BB91A6B1F901564/c.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "碧螺春：太湖孕育的茶仙子（寻访中国十大绿茶之四）— 人民日报",
+        "url": "http://paper.people.com.cn/rmrbhwb/html/2013-05/24/content_1244555.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "苏州洞庭山碧螺春茶3月15日正式开采 — 中新网",
+        "url": "https://www.chinanews.com.cn/sh/2025/03-12/10381792.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国传统制茶技艺及其相关习俗知多少 — 中国非物质文化遗产网（中国非物质文化遗产保护中心）",
+        "url": "https://www.ihchina.cn/project_details/26313.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Билочунь (碧螺春) — нежный зелёный чай (绿茶). Его выращивают в горах Дунтиншань на озере Тайху близ Сучжоу (Цзянсу). Лист у него тонкий, пушистый, скручен в спираль."
+    },
+    "factRow": "cuisine/teas/te-biluochun",
+    "id": "cuisine-q87",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "te-biluochun",
+        "zh": "绿茶"
+      },
+      {
+        "gloss": "Улун (цинча) — полуферментированный чай, по ферментации между зелёным и красным",
+        "id": "te-tieguanyin",
+        "zh": "青茶"
+      },
+      {
+        "gloss": "Тёмный чай (не «чёрный») — постферментированный, лист выдерживают в куче",
+        "id": "te-puer",
+        "zh": "黑茶"
+      },
+      {
+        "gloss": "Красный чай (по-русски чёрный) — полностью ферментированный, настой красный",
+        "id": "te-qimen",
+        "zh": "红茶"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "К какому виду чая относится 碧螺春?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "te-longjing",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "茶说：西湖龙井 — 中国网",
+        "url": "http://food.china.com.cn/2020-06/22/content_76189511.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国好茶知多少？喝茶怎能不懂茶！— 新华网",
+        "url": "https://www.xinhuanet.com/food/20210624/C96C5431DAF000013BB91A6B1F901564/c.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国传统制茶技艺及其相关习俗知多少 — 中国非物质文化遗产网（中国非物质文化遗产保护中心）",
+        "url": "https://www.ihchina.cn/project_details/26313.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Лунцзин с озера Сиху (西湖龙井) — зелёный чай (绿茶) из окрестностей Ханчжоу. Он известен «четырьмя совершенствами»: цветом, ароматом, вкусом и формой. Его история насчитывает более 1200 лет, а сам чай называют «царицей зелёных чаёв» (绿茶皇后)."
+    },
+    "factGroup": "longjing-xihu",
+    "factRow": "cuisine/teas/te-longjing",
+    "id": "cuisine-q88",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "te-longjing",
+        "zh": "绿茶"
+      },
+      {
+        "gloss": "Улун (цинча) — полуферментированный чай, по ферментации между зелёным и красным",
+        "id": "te-tieguanyin",
+        "zh": "青茶"
+      },
+      {
+        "gloss": "Тёмный чай (не «чёрный») — постферментированный, лист выдерживают в куче",
+        "id": "te-puer",
+        "zh": "黑茶"
+      },
+      {
+        "gloss": "Красный чай (по-русски чёрный) — полностью ферментированный, настой красный",
+        "id": "te-qimen",
+        "zh": "红茶"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "К какому виду чая относится 西湖龙井?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "te-huangshan-maofeng",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "佳茗产于黄山上 香气如兰味悠长——黄山毛峰 — 农业农村部国际合作司",
+        "url": "https://gjcr.moa.gov.cn/cxf/202005/t20200516_6344249.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "黄山毛峰：名山出名茶 甘醇韵味长 — 中新网安徽",
+        "url": "http://www.ah.chinanews.com.cn/news/2022/1207/311632.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国传统制茶技艺及其相关习俗知多少 — 中国非物质文化遗产网（中国非物质文化遗产保护中心）",
+        "url": "https://www.ihchina.cn/project_details/26313.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Хуаншань маофэн (黄山毛峰) — традиционный зелёный чай (绿茶). Его выращивают в районе гор Хуаншань в провинции Аньхой. Аромат чая напоминает орхидею."
+    },
+    "factGroup": "huangshan-maofeng",
+    "factRow": "cuisine/teas/te-huangshan-maofeng",
+    "id": "cuisine-q89",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "te-huangshan-maofeng",
+        "zh": "绿茶"
+      },
+      {
+        "gloss": "Улун (цинча) — полуферментированный чай, по ферментации между зелёным и красным",
+        "id": "te-tieguanyin",
+        "zh": "青茶"
+      },
+      {
+        "gloss": "Тёмный чай (не «чёрный») — постферментированный, лист выдерживают в куче",
+        "id": "te-puer",
+        "zh": "黑茶"
+      },
+      {
+        "gloss": "Красный чай (по-русски чёрный) — полностью ферментированный, настой красный",
+        "id": "te-qimen",
+        "zh": "红茶"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "К какому виду чая относится 黄山毛峰?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "te-puer",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "academic",
+        "checkedAt": "2026-10-22",
+        "title": "喝对茶才养人：绿茶黄茶抗氧化 红茶黑茶解油腻（受访专家：中国农科院茶叶研究所副所长）— 人民网",
+        "url": "http://health.people.com.cn/n1/2017/0922/c14739-29551694.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国好茶知多少？喝茶怎能不懂茶！— 新华网",
+        "url": "https://www.xinhuanet.com/food/20210624/C96C5431DAF000013BB91A6B1F901564/c.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "普洱茶制作技艺（大益茶制作技艺）— 云南省农业农村厅",
+        "url": "https://nync.yn.gov.cn/html/2025/yzycfycj_0407/1418144.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国普洱古茶园与茶文化系统 — 农业农村部驻联合国粮农机构代表团",
+        "url": "https://cnafun.moa.gov.cn/zt/gjcr/202005/t20200527_6345406.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国传统制茶技艺及其相关习俗知多少 — 中国非物质文化遗产网（中国非物质文化遗产保护中心）",
+        "url": "https://www.ihchina.cn/project_details/26313.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Пуэр (普洱茶) — знаменитый чай из провинции Юньнань (云南). Его обычно относят к тёмному чаю (黑茶). Пуэр бывает двух разновидностей — шэн (生茶) и шу (熟茶)."
+    },
+    "factRow": "cuisine/teas/te-puer",
+    "id": "cuisine-q90",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "te-puer",
+        "zh": "云南"
+      },
+      {
+        "gloss": "Чжэцзян — провинция на юге дельты Янцзы, центр — Ханчжоу",
+        "id": "te-longjing",
+        "zh": "浙江"
+      },
+      {
+        "gloss": "Цзянсу — приморская провинция в низовьях Янцзы, центр — Нанкин",
+        "id": "te-biluochun",
+        "zh": "江苏"
+      },
+      {
+        "gloss": "Фуцзянь — прибрежная провинция на юго-востоке, напротив Тайваня, центр — Фучжоу",
+        "id": "te-tieguanyin",
+        "zh": "福建"
+      },
+      {
+        "gloss": "Аньхой — провинция в Восточном Китае, на Янцзы и Хуайхэ, центр — Хэфэй",
+        "id": "te-qimen",
+        "zh": "安徽"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Из какой провинции чай 普洱茶?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "te-tieguanyin",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国好茶知多少？喝茶怎能不懂茶！— 新华网",
+        "url": "https://www.xinhuanet.com/food/20210624/C96C5431DAF000013BB91A6B1F901564/c.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "“铁观音”探源趣说 — 央广网",
+        "url": "https://xm.cnr.cn/lywh/mnfq/200704/t20070406_504437080.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "名茶铁观音发源地福建安溪喊山开茶 — 中新网",
+        "url": "https://www.chinanews.com.cn/sh/2025/04-20/10402826.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Тегуаньинь (铁观音) — чай из провинции Фуцзянь (福建): его родина — уезд Аньси. Это один из самых известных улунов. У него плотный лист, свёрнутый спиралью, и аромат орхидеи."
+    },
+    "factGroup": "tieguanyin-anxi",
+    "factRow": "cuisine/teas/te-tieguanyin",
+    "id": "cuisine-q91",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "te-tieguanyin",
+        "zh": "福建"
+      },
+      {
+        "gloss": "Чжэцзян — провинция на юге дельты Янцзы, центр — Ханчжоу",
+        "id": "te-longjing",
+        "zh": "浙江"
+      },
+      {
+        "gloss": "Цзянсу — приморская провинция в низовьях Янцзы, центр — Нанкин",
+        "id": "te-biluochun",
+        "zh": "江苏"
+      },
+      {
+        "gloss": "Юньнань — пограничная провинция на юго-западе Китая, центр — Куньмин",
+        "id": "te-puer",
+        "zh": "云南"
+      },
+      {
+        "gloss": "Аньхой — провинция в Восточном Китае, на Янцзы и Хуайхэ, центр — Хэфэй",
+        "id": "te-qimen",
+        "zh": "安徽"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Из какой провинции чай 铁观音?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "te-biluochun",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国好茶知多少？喝茶怎能不懂茶！— 新华网",
+        "url": "https://www.xinhuanet.com/food/20210624/C96C5431DAF000013BB91A6B1F901564/c.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "碧螺春：太湖孕育的茶仙子（寻访中国十大绿茶之四）— 人民日报",
+        "url": "http://paper.people.com.cn/rmrbhwb/html/2013-05/24/content_1244555.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "苏州洞庭山碧螺春茶3月15日正式开采 — 中新网",
+        "url": "https://www.chinanews.com.cn/sh/2025/03-12/10381792.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国传统制茶技艺及其相关习俗知多少 — 中国非物质文化遗产网（中国非物质文化遗产保护中心）",
+        "url": "https://www.ihchina.cn/project_details/26313.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Билочунь (碧螺春) — чай из провинции Цзянсу (江苏). Его выращивают в горах Дунтиншань на озере Тайху близ Сучжоу. Это нежный зелёный чай со скрученным в спираль листом."
+    },
+    "factRow": "cuisine/teas/te-biluochun",
+    "id": "cuisine-q92",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "te-biluochun",
+        "zh": "江苏"
+      },
+      {
+        "gloss": "Чжэцзян — провинция на юге дельты Янцзы, центр — Ханчжоу",
+        "id": "te-longjing",
+        "zh": "浙江"
+      },
+      {
+        "gloss": "Фуцзянь — прибрежная провинция на юго-востоке, напротив Тайваня, центр — Фучжоу",
+        "id": "te-tieguanyin",
+        "zh": "福建"
+      },
+      {
+        "gloss": "Юньнань — пограничная провинция на юго-западе Китая, центр — Куньмин",
+        "id": "te-puer",
+        "zh": "云南"
+      },
+      {
+        "gloss": "Аньхой — провинция в Восточном Китае, на Янцзы и Хуайхэ, центр — Хэфэй",
+        "id": "te-qimen",
+        "zh": "安徽"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Из какой провинции чай 碧螺春?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "te-dahongpao",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "茶说：武夷大红袍 — 中国网",
+        "url": "http://food.china.com.cn/2020-07/06/content_76241747.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "岩岩有茶，非岩不茶 — 农业农村部驻联合国粮农机构代表团",
+        "url": "https://cnafun.moa.gov.cn/zt/gjcr/202005/t20200518_6344431.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国好茶知多少？喝茶怎能不懂茶！— 新华网",
+        "url": "https://www.xinhuanet.com/food/20210624/C96C5431DAF000013BB91A6B1F901564/c.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Дахунпао (大红袍) — чай из провинции Фуцзянь (福建), самый известный сорт скального чая гор Уи. Он относится к улунам. Настоящих материнских кустов Дахунпао всего шесть."
+    },
+    "factRow": "cuisine/teas/te-dahongpao",
+    "id": "cuisine-q93",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "te-dahongpao",
+        "zh": "福建"
+      },
+      {
+        "gloss": "Чжэцзян — провинция на юге дельты Янцзы, центр — Ханчжоу",
+        "id": "te-longjing",
+        "zh": "浙江"
+      },
+      {
+        "gloss": "Цзянсу — приморская провинция в низовьях Янцзы, центр — Нанкин",
+        "id": "te-biluochun",
+        "zh": "江苏"
+      },
+      {
+        "gloss": "Юньнань — пограничная провинция на юго-западе Китая, центр — Куньмин",
+        "id": "te-puer",
+        "zh": "云南"
+      },
+      {
+        "gloss": "Аньхой — провинция в Восточном Китае, на Янцзы и Хуайхэ, центр — Хэфэй",
+        "id": "te-qimen",
+        "zh": "安徽"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Из какой провинции чай 大红袍?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "te-qimen",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国好茶知多少？喝茶怎能不懂茶！— 新华网",
+        "url": "https://www.xinhuanet.com/food/20210624/C96C5431DAF000013BB91A6B1F901564/c.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国故事｜祁门红茶香飘世界 — 新华网",
+        "url": "https://www.news.cn/politics/2023-04/13/c_1129519309.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "2022“国际茶日”云推介 茶故事·祁门红茶 — 农业农村部农业贸易促进中心",
+        "url": "https://gjcr.moa.gov.cn/cxf/202205/t20220518_6399623.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国传统制茶技艺及其相关习俗知多少 — 中国非物质文化遗产网（中国非物质文化遗产保护中心）",
+        "url": "https://www.ihchina.cn/project_details/26313.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Цимэнь (祁门红茶) — знаменитый красный чай из уезда Цимэнь в провинции Аньхой (安徽). Его создали в эпоху Цин. Он славится особым ароматом, который называют «цимэньским»."
+    },
+    "factRow": "cuisine/teas/te-qimen",
+    "id": "cuisine-q94",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "te-qimen",
+        "zh": "安徽"
+      },
+      {
+        "gloss": "Чжэцзян — провинция на юге дельты Янцзы, центр — Ханчжоу",
+        "id": "te-longjing",
+        "zh": "浙江"
+      },
+      {
+        "gloss": "Цзянсу — приморская провинция в низовьях Янцзы, центр — Нанкин",
+        "id": "te-biluochun",
+        "zh": "江苏"
+      },
+      {
+        "gloss": "Фуцзянь — прибрежная провинция на юго-востоке, напротив Тайваня, центр — Фучжоу",
+        "id": "te-tieguanyin",
+        "zh": "福建"
+      },
+      {
+        "gloss": "Юньнань — пограничная провинция на юго-западе Китая, центр — Куньмин",
+        "id": "te-puer",
+        "zh": "云南"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Из какой провинции чай 祁门红茶?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "te-longjing",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "茶说：西湖龙井 — 中国网",
+        "url": "http://food.china.com.cn/2020-06/22/content_76189511.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国好茶知多少？喝茶怎能不懂茶！— 新华网",
+        "url": "https://www.xinhuanet.com/food/20210624/C96C5431DAF000013BB91A6B1F901564/c.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国传统制茶技艺及其相关习俗知多少 — 中国非物质文化遗产网（中国非物质文化遗产保护中心）",
+        "url": "https://www.ihchina.cn/project_details/26313.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Лунцзин с озера Сиху (西湖龙井) — чай из провинции Чжэцзян (浙江), из окрестностей Ханчжоу. Это зелёный чай, известный «четырьмя совершенствами»: цветом, ароматом, вкусом и формой. Его история насчитывает более 1200 лет, а сам чай называют «царицей зелёных чаёв» (绿茶皇后)."
+    },
+    "factGroup": "longjing-xihu",
+    "factRow": "cuisine/teas/te-longjing",
+    "id": "cuisine-q95",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "te-longjing",
+        "zh": "浙江"
+      },
+      {
+        "gloss": "Цзянсу — приморская провинция в низовьях Янцзы, центр — Нанкин",
+        "id": "te-biluochun",
+        "zh": "江苏"
+      },
+      {
+        "gloss": "Фуцзянь — прибрежная провинция на юго-востоке, напротив Тайваня, центр — Фучжоу",
+        "id": "te-tieguanyin",
+        "zh": "福建"
+      },
+      {
+        "gloss": "Юньнань — пограничная провинция на юго-западе Китая, центр — Куньмин",
+        "id": "te-puer",
+        "zh": "云南"
+      },
+      {
+        "gloss": "Аньхой — провинция в Восточном Китае, на Янцзы и Хуайхэ, центр — Хэфэй",
+        "id": "te-qimen",
+        "zh": "安徽"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Из какой провинции чай 西湖龙井?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "te-huangshan-maofeng",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "佳茗产于黄山上 香气如兰味悠长——黄山毛峰 — 农业农村部国际合作司",
+        "url": "https://gjcr.moa.gov.cn/cxf/202005/t20200516_6344249.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "黄山毛峰：名山出名茶 甘醇韵味长 — 中新网安徽",
+        "url": "http://www.ah.chinanews.com.cn/news/2022/1207/311632.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-22",
+        "title": "中国传统制茶技艺及其相关习俗知多少 — 中国非物质文化遗产网（中国非物质文化遗产保护中心）",
+        "url": "https://www.ihchina.cn/project_details/26313.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Хуаншань маофэн (黄山毛峰) — чай из провинции Аньхой (安徽). Его выращивают в районе гор Хуаншань. Это традиционный зелёный чай с ароматом, напоминающим орхидею."
+    },
+    "factGroup": "huangshan-maofeng",
+    "factRow": "cuisine/teas/te-huangshan-maofeng",
+    "id": "cuisine-q96",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "te-huangshan-maofeng",
+        "zh": "安徽"
+      },
+      {
+        "gloss": "Чжэцзян — провинция на юге дельты Янцзы, центр — Ханчжоу",
+        "id": "te-longjing",
+        "zh": "浙江"
+      },
+      {
+        "gloss": "Цзянсу — приморская провинция в низовьях Янцзы, центр — Нанкин",
+        "id": "te-biluochun",
+        "zh": "江苏"
+      },
+      {
+        "gloss": "Фуцзянь — прибрежная провинция на юго-востоке, напротив Тайваня, центр — Фучжоу",
+        "id": "te-tieguanyin",
+        "zh": "福建"
+      },
+      {
+        "gloss": "Юньнань — пограничная провинция на юго-западе Китая, центр — Куньмин",
+        "id": "te-puer",
+        "zh": "云南"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Из какой провинции чай 黄山毛峰?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
     "topicSource": "authored"
   },
   {
@@ -65980,6 +68011,7 @@
     "explanation": {
       "ru": "На обороте купюры 1 юань пятой серии изображено Западное озеро (西湖, Сиху). На лицевой стороне — портрет Мао Цзэдуна и орхидея (兰花), которая видна и в водяном знаке. Выпуск 2019 года сохранил рисунок выпуска 1999 года."
     },
+    "factGroup": "longjing-xihu",
     "factRow": "money/banknotes/cny-1",
     "id": "money-q06",
     "occurrences": [],
@@ -73433,6 +75465,7 @@
     "explanation": {
       "ru": "«Четырьмя чудесами» (黄山四绝) — соснами, камнями, морем облаков и горячими источниками — славится Хуаншань (黄山) на юге провинции Аньхой. Три главные вершины — Лотосовая (1873 м), Гуанмин и Тяньду, все выше 1800 м. В 1990 году Хуаншань внесена в список Всемирного наследия ЮНЕСКО как культурный и природный объект."
     },
+    "factGroup": "huangshan-maofeng",
     "factRow": "nature/mountains/mtn-huangshan",
     "id": "nature-q51",
     "occurrences": [],

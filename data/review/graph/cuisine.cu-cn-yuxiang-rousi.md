@@ -6,6 +6,7 @@
 
 Связи:
 - [[holidays.cus-yuxiangrousi]]
+- [[cuisine.cs-chuan]]
 
 Вопросы:
 - нет

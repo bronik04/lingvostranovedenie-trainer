@@ -60,13 +60,13 @@
 
 | строка | region | taste | dish | другие | олимпиада |
 |---|---|---|---|---|---|
-| cs-lu | — | — | — | 1 | да |
-| cs-chuan | — | — | — | — | прогноз |
-| cs-yue | — | — | — | — | прогноз |
-| cs-su | — | — | — | — | прогноз |
-| cs-min | — | × | — | — | прогноз |
+| cs-lu | — | 1 | — | 1 | да |
+| cs-chuan | — | 1 | — | — | прогноз |
+| cs-yue | 1 | 1 | — | — | прогноз |
+| cs-su | — | 1 | — | — | прогноз |
+| cs-min | 1 | × | 1 | — | прогноз |
 | cs-zhe | — | × | — | — | прогноз |
-| cs-xiang | — | — | — | — | прогноз |
+| cs-xiang | 1 | 1 | — | — | прогноз |
 | cs-hui | — | × | — | — | прогноз |
 
 #### Таблица `savory`
@@ -75,23 +75,23 @@
 
 | строка | school | другие | олимпиада |
 |---|---|---|---|
-| cu-cn-mapo-doufu | — | — | прогноз |
+| cu-cn-mapo-doufu | 1 | — | прогноз |
 | cu-cn-yuxiang-rousi | — | — | прогноз |
 | cu-cn-huiguorou | — | — | прогноз |
 | cu-cn-beijing-kaoya | × | 1 | прогноз |
 | cu-cn-gongbao-jiding | 1 | — | прогноз |
-| cu-cn-dongporou | — | — | прогноз |
-| cu-cn-baiqieji | — | — | прогноз |
-| cu-cn-songshu-guiyu | — | — | прогноз |
+| cu-cn-dongporou | 1 | — | прогноз |
+| cu-cn-baiqieji | 1 | — | прогноз |
+| cu-cn-songshu-guiyu | 1 | — | прогноз |
 | cu-cn-xihu-cuyu | — | — | прогноз |
 | cu-cn-congshao-haishen | — | — | прогноз |
-| cu-cn-jiuzhuan-dachang | — | — | прогноз |
+| cu-cn-jiuzhuan-dachang | 1 | — | прогноз |
 | cu-cn-xiefen-shizitou | — | — | прогноз |
 | cu-cn-pai-huanggua | × | — | прогноз |
 | cu-cn-fotiaoqiang | 1 | — | прогноз |
-| cu-cn-duojiao-yutou | — | — | прогноз |
+| cu-cn-duojiao-yutou | 1 | — | прогноз |
 | cu-cn-maoshi-hongshaorou | — | — | прогноз |
-| cu-cn-chou-guiyu | — | — | прогноз |
+| cu-cn-chou-guiyu | 1 | — | прогноз |
 | cu-cn-mayi-shangshu | — | — | да |
 
 #### Таблица `staples`
@@ -147,13 +147,13 @@
 
 | строка | type | region | другие | олимпиада |
 |---|---|---|---|---|
-| te-longjing | — | — | — | да |
-| te-biluochun | — | — | — | прогноз |
-| te-tieguanyin | — | — | — | прогноз |
-| te-dahongpao | — | — | — | прогноз |
-| te-puer | × | — | — | прогноз |
-| te-qimen | — | — | — | прогноз |
-| te-huangshan-maofeng | — | — | — | прогноз |
+| te-longjing | 1 | 1 | — | да |
+| te-biluochun | 1 | 1 | — | прогноз |
+| te-tieguanyin | 1 | 1 | — | прогноз |
+| te-dahongpao | 1 | 1 | — | прогноз |
+| te-puer | × | 1 | — | прогноз |
+| te-qimen | — | 1 | — | прогноз |
+| te-huangshan-maofeng | 1 | 1 | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
@@ -358,14 +358,7 @@
 Строки ядра без ссылок наружу и на себя.
 
 - cuisine/savory/cu-cn-beijing-kaoya
-- cuisine/savory/cu-cn-congshao-haishen
-- cuisine/savory/cu-cn-dongporou
-- cuisine/savory/cu-cn-gongbao-jiding
-- cuisine/savory/cu-cn-huiguorou
-- cuisine/savory/cu-cn-maoshi-hongshaorou
-- cuisine/savory/cu-cn-mayi-shangshu
 - cuisine/savory/cu-cn-pai-huanggua
-- cuisine/savory/cu-cn-xiefen-shizitou
 - cuisine/staples/cu-cn-changfen
 - cuisine/staples/cu-cn-daoxiaomian
 - cuisine/staples/cu-cn-guoqiaomixian
