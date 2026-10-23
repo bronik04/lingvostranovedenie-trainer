@@ -9547,6 +9547,7 @@
       "optionId": "o4",
       "state": "verified"
     },
+    "dossier": "ethnos",
     "evidence": [
       {
         "checkedAt": "2026-09-18",
@@ -9557,6 +9558,7 @@
     "explanation": {
       "ru": "В основе путунхуа лежит северный диалект (北方方言), а фонетическая норма — пекинское произношение."
     },
+    "factRow": "ethnos/dialects/dia-beifang",
     "id": "2018-19-mun-47",
     "occurrences": [
       {
@@ -9575,20 +9577,38 @@
     ],
     "options": [
       {
+        "gloss": "Диалект у — диалект Шанхая, юга Цзянсу и большей части Чжэцзяна",
         "id": "o1",
         "zh": "吴方言"
       },
       {
+        "gloss": "Сянский диалект — диалект большей части Хунани",
         "id": "o2",
         "zh": "湘方言"
       },
       {
+        "gloss": "Юэский (кантонский) диалект — диалект Гуандуна, Гонконга и Макао",
         "id": "o3",
         "zh": "粤方言"
       },
       {
         "id": "o4",
         "zh": "北方方言"
+      },
+      {
+        "gloss": "Ганьский диалект — диалект большей части Цзянси",
+        "id": "dia-gan",
+        "zh": "赣方言"
+      },
+      {
+        "gloss": "Диалект хакка (кэцзя) — диалект переселенцев-хакка",
+        "id": "dia-kejia",
+        "zh": "客家方言"
+      },
+      {
+        "gloss": "Миньский диалект — диалект Фуцзяни и соседних земель",
+        "id": "dia-min",
+        "zh": "闽方言"
       }
     ],
     "parseWarnings": [],
@@ -11232,6 +11252,7 @@
     "explanation": {
       "ru": "Самая населённая провинция Китая — Гуандун (广东省). По статистическому бюллетеню провинции за 2016 год, на конец года в ней жили 109,99 млн постоянных жителей. Гуандун лежит на самом юге материкового Китая; его центр — Гуанчжоу, сокращение — 粤."
     },
+    "factGroup": "guangdong-yue",
     "factRow": "provinces/provinces/prov-guangdong",
     "id": "2018-19-shk-3",
     "occurrences": [
@@ -11391,6 +11412,7 @@
     "explanation": {
       "ru": "Материковая береговая линия Гуандуна (广东省) — 4114 км, первое место в стране (по данным правительства провинции). Если считать и берега островов, первенство оспаривают другие провинции, поэтому в вопросе речь именно о материковой линии. Гуандун лежит на юге материкового Китая; его центр — Гуанчжоу."
     },
+    "factGroup": "guangdong-yue",
     "factRow": "provinces/provinces/prov-guangdong",
     "id": "2018-19-shk-4",
     "occurrences": [
@@ -32876,7 +32898,7 @@
     "explanation": {
       "ru": "Родина улуна «Железная Гуаньинь» (铁观音) — посёлок Сипин (西坪) уезда Аньси (安溪) на юго-востоке Фуцзяни. Сорт обнаружили и стали распространять в годы Юнчжэна; по одной легенде (魏说), чайный куст привиделся во сне старому крестьянину Вэй Иню, по другой (王说) название дал император Цяньлун. В 2014 г. «чайная культурная система Аньси» вошла во второй список важного сельскохозяйственного наследия Китая. Остальные варианты — тоже улуны, но других мест: 大红袍 — горы Уишань (Фуцзянь), 冻顶乌龙 — Тайвань, 凤凰单丛 — гора Фэнхуан в Гуандуне."
     },
-    "factGroup": "tieguanyin-anxi",
+    "factGroup": "fujian-min",
     "id": "addition-b2-05",
     "occurrences": [],
     "options": [
@@ -39678,7 +39700,7 @@
     "explanation": {
       "ru": "Тегуаньинь (铁观音) — один из самых известных улунов, то есть чаёв вида 青茶. Улун — полуферментированный чай. Родина Тегуаньиня — уезд Аньси в провинции Фуцзянь."
     },
-    "factGroup": "tieguanyin-anxi",
+    "factGroup": "fujian-min",
     "factRow": "cuisine/teas/te-tieguanyin",
     "id": "cuisine-q85",
     "occurrences": [],
@@ -40064,7 +40086,7 @@
     "explanation": {
       "ru": "Тегуаньинь (铁观音) — чай из провинции Фуцзянь (福建): его родина — уезд Аньси. Это один из самых известных улунов. У него плотный лист, свёрнутый спиралью, и аромат орхидеи."
     },
-    "factGroup": "tieguanyin-anxi",
+    "factGroup": "fujian-min",
     "factRow": "cuisine/teas/te-tieguanyin",
     "id": "cuisine-q91",
     "occurrences": [],
@@ -40201,6 +40223,7 @@
     "explanation": {
       "ru": "Дахунпао (大红袍) — чай из провинции Фуцзянь (福建), самый известный сорт скального чая гор Уи. Он относится к улунам. Настоящих материнских кустов Дахунпао всего шесть."
     },
+    "factGroup": "fujian-min",
     "factRow": "cuisine/teas/te-dahongpao",
     "id": "cuisine-q93",
     "occurrences": [],
@@ -43901,165 +43924,6 @@
   },
   {
     "answer": {
-      "optionId": "ppl-cn-hui",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "回族 — 概况 — 国家民族事务委员会",
-        "url": "https://www.neac.gov.cn/seac/ztzl/huiz/gk.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "花儿（宁夏回族山花儿） — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/20073.html"
-      }
-    ],
-    "explanation": {
-      "ru": "Сяоэрцзин возникла в среде мусульманского религиозного обучения у хуэй (回族) как запись китайской речи арабскими буквами. Это не всеобщая повседневная письменность хуэй: общий язык современных хуэй — китайский, с местными различиями. Хуэй живут во всех регионах Китая провинциального уровня, а главный район их компактного проживания — Нинся. С районами проживания хуэй в Нинся связаны народные песни шаньхуаэр."
-    },
-    "factRow": "ethnos/peoples/ppl-cn-hui",
-    "id": "ethnos-q03",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "ppl-cn-hui",
-        "zh": "回族"
-      },
-      {
-        "gloss": "Ханьцы — народ Китая",
-        "id": "ppl-cn-han",
-        "zh": "汉族"
-      },
-      {
-        "gloss": "Чжуаны — народ Китая",
-        "id": "ppl-cn-zhuang",
-        "zh": "壮族"
-      },
-      {
-        "gloss": "Маньчжуры — народ Китая",
-        "id": "ppl-cn-manchu",
-        "zh": "满族"
-      },
-      {
-        "gloss": "Мяо — народ Китая",
-        "id": "ppl-cn-miao",
-        "zh": "苗族"
-      },
-      {
-        "gloss": "И — народ Китая",
-        "id": "ppl-cn-yi",
-        "zh": "彝族"
-      },
-      {
-        "gloss": "Туцзя — народ Китая",
-        "id": "ppl-cn-tujia",
-        "zh": "土家族"
-      },
-      {
-        "gloss": "Тибетцы — народ Китая",
-        "id": "ppl-cn-tibetan",
-        "zh": "藏族"
-      },
-      {
-        "gloss": "Монголы — народ Китая",
-        "id": "ppl-cn-mongol",
-        "zh": "蒙古族"
-      },
-      {
-        "gloss": "Дун — народ Китая",
-        "id": "ppl-cn-dong",
-        "zh": "侗族"
-      },
-      {
-        "gloss": "Буи — народ Китая",
-        "id": "ppl-cn-buyi",
-        "zh": "布依族"
-      },
-      {
-        "gloss": "Яо — народ Китая",
-        "id": "ppl-cn-yao",
-        "zh": "瑶族"
-      },
-      {
-        "gloss": "Бай — народ Китая",
-        "id": "ppl-cn-bai",
-        "zh": "白族"
-      },
-      {
-        "gloss": "Корейцы Китая — народ Китая",
-        "id": "ppl-cn-korean",
-        "zh": "朝鲜族"
-      },
-      {
-        "gloss": "Хани — народ Китая",
-        "id": "ppl-cn-hani",
-        "zh": "哈尼族"
-      },
-      {
-        "gloss": "Ли — народ Китая",
-        "id": "ppl-cn-li",
-        "zh": "黎族"
-      },
-      {
-        "gloss": "Дай — народ Китая",
-        "id": "ppl-cn-dai",
-        "zh": "傣族"
-      },
-      {
-        "gloss": "Шэ — народ Китая",
-        "id": "ppl-cn-she",
-        "zh": "畲族"
-      },
-      {
-        "gloss": "Лису — народ Китая",
-        "id": "ppl-cn-lisu",
-        "zh": "傈僳族"
-      },
-      {
-        "gloss": "Наси — народ Китая",
-        "id": "ppl-cn-naxi",
-        "zh": "纳西族"
-      },
-      {
-        "gloss": "Шуй — народ Китая",
-        "id": "ppl-cn-shui",
-        "zh": "水族"
-      },
-      {
-        "gloss": "Эвенки Китая — народ Китая",
-        "id": "ppl-cn-evenki",
-        "zh": "鄂温克族"
-      },
-      {
-        "gloss": "Орокены — народ Китая",
-        "id": "ppl-cn-oroqen",
-        "zh": "鄂伦春族"
-      },
-      {
-        "gloss": "Хэчжэ — народ Китая",
-        "id": "ppl-cn-hezhen",
-        "zh": "赫哲族"
-      },
-      {
-        "gloss": "Сибо — народ Китая",
-        "id": "ppl-cn-xibe",
-        "zh": "锡伯族"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "С каким народом Китая исторически связана сяоэрцзин — запись китайской речи арабскими буквами?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
       "optionId": "ppl-cn-miao",
       "state": "verified"
     },
@@ -44087,428 +43951,32 @@
     "options": [
       {
         "id": "ppl-cn-miao",
-        "zh": "贵州省"
+        "zh": "贵州"
       },
       {
         "gloss": "Юньнань — основная область расселения бай",
         "id": "ppl-cn-bai",
-        "zh": "云南省"
+        "zh": "云南"
       },
       {
         "gloss": "Хайнань — основная область проживания ли",
         "id": "ppl-cn-li",
-        "zh": "海南省"
+        "zh": "海南"
       },
       {
         "gloss": "Хэчжэ Китая живут прежде всего в районе трёх рек Хэйлунцзяна",
         "id": "ppl-cn-hezhen",
-        "zh": "黑龙江省"
+        "zh": "黑龙江"
       },
       {
         "gloss": "Ляонин — одна из основных областей расселения маньчжуров",
         "id": "ppl-cn-manchu",
-        "zh": "辽宁省"
+        "zh": "辽宁"
       }
     ],
     "origin": "addition",
     "parseWarnings": [],
     "questionRu": "В какой провинции Китая живёт больше всего мяо?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "ppl-cn-bai",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "白族 — 概况 — 国家民族事务委员会",
-        "url": "https://www.neac.gov.cn/seac/ztzl/bz/gk.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "大理周城白族的扎染工艺 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/news_1_details/11139.html"
-      }
-    ],
-    "explanation": {
-      "ru": "Бай (白族) живут в нескольких провинциях, но больше всего их в Юньнани (云南省). Язык бай делится на южную, центральную и северную группы говоров, и многие бай знают также китайский. Новое латинское письмо бай пересмотрено в 1982 году. Известная традиция бай — узелковое крашение деревни Чжоучэн в Дали."
-    },
-    "factRow": "ethnos/peoples/ppl-cn-bai",
-    "id": "ethnos-q05",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "ppl-cn-bai",
-        "zh": "云南省"
-      },
-      {
-        "gloss": "Гуйчжоу — одна из основных областей расселения мяо",
-        "id": "ppl-cn-miao",
-        "zh": "贵州省"
-      },
-      {
-        "gloss": "Хайнань — основная область проживания ли",
-        "id": "ppl-cn-li",
-        "zh": "海南省"
-      },
-      {
-        "gloss": "Хэчжэ Китая живут прежде всего в районе трёх рек Хэйлунцзяна",
-        "id": "ppl-cn-hezhen",
-        "zh": "黑龙江省"
-      },
-      {
-        "gloss": "Ляонин — одна из основных областей расселения маньчжуров",
-        "id": "ppl-cn-manchu",
-        "zh": "辽宁省"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "В какой провинции Китая живёт больше всего бай?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "ppl-cn-li",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "黎族 — 概况 — 国家民族事务委员会",
-        "url": "https://www.neac.gov.cn/seac/ztzl/lz/gk.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "黎族传统纺染织绣技艺 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/20053.html"
-      }
-    ],
-    "explanation": {
-      "ru": "Народ ли (黎族) главным образом живёт на Хайнане (海南省). Традиционный язык — язык ли; большинство ли также говорит по-китайски и пользуется китайским письмом. В 1957 году для языка ли создан проект латинской письменности. Известное наследие ли — комплекс текстильных навыков: прядение, крашение, ткачество и вышивка."
-    },
-    "factRow": "ethnos/peoples/ppl-cn-li",
-    "id": "ethnos-q06",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "ppl-cn-li",
-        "zh": "海南省"
-      },
-      {
-        "gloss": "Гуйчжоу — одна из основных областей расселения мяо",
-        "id": "ppl-cn-miao",
-        "zh": "贵州省"
-      },
-      {
-        "gloss": "Юньнань — основная область расселения бай",
-        "id": "ppl-cn-bai",
-        "zh": "云南省"
-      },
-      {
-        "gloss": "Хэчжэ Китая живут прежде всего в районе трёх рек Хэйлунцзяна",
-        "id": "ppl-cn-hezhen",
-        "zh": "黑龙江省"
-      },
-      {
-        "gloss": "Ляонин — одна из основных областей расселения маньчжуров",
-        "id": "ppl-cn-manchu",
-        "zh": "辽宁省"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "В какой провинции Китая главным образом живёт народ ли?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "ppl-cn-hezhen",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "赫哲族 — 概况 — 国家民族事务委员会",
-        "url": "https://www.neac.gov.cn/seac/ztzl/hzz/gk.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "赫哲族伊玛堪 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/directory_details/11896"
-      },
-      {
-        "authority": "academic",
-        "checkedAt": "2026-10-16",
-        "title": "赫哲族（少数民族语言文字使用、发展和保护情况）— 国家语言资源监测与研究民族语言中心",
-        "url": "https://nmlr.muc.edu.cn/info/1119/2642.htm"
-      }
-    ],
-    "explanation": {
-      "ru": "Хэчжэ (赫哲族) живут в провинции Хэйлунцзян (黑龙江省) — на равнине Саньцзян, где сливаются Амур (по-китайски Хэйлунцзян), Сунгари и Уссури. Их традиционный язык звучит в устной сказительской традиции имакан, где речь чередуется с пением. Сейчас этим языком владеют немногие, он относится к исчезающим. Собственной письменности у хэчжэ нет."
-    },
-    "factRow": "ethnos/peoples/ppl-cn-hezhen",
-    "id": "ethnos-q07",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "ppl-cn-hezhen",
-        "zh": "黑龙江省"
-      },
-      {
-        "gloss": "Гуйчжоу — одна из основных областей расселения мяо",
-        "id": "ppl-cn-miao",
-        "zh": "贵州省"
-      },
-      {
-        "gloss": "Юньнань — основная область расселения бай",
-        "id": "ppl-cn-bai",
-        "zh": "云南省"
-      },
-      {
-        "gloss": "Хайнань — основная область проживания ли",
-        "id": "ppl-cn-li",
-        "zh": "海南省"
-      },
-      {
-        "gloss": "Ляонин — одна из основных областей расселения маньчжуров",
-        "id": "ppl-cn-manchu",
-        "zh": "辽宁省"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "В какой провинции Китая, в краю слияния трёх рек, живут хэчжэ?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "ppl-cn-evenki",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "鄂温克族 — 概况 — 国家民族事务委员会",
-        "url": "https://www.neac.gov.cn/seac/ztzl/ewkz/gk.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "桦树皮制作技艺（鄂温克族桦树皮制作技艺） — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/art/detail/id/14422.html"
-      }
-    ],
-    "explanation": {
-      "ru": "Эвенки Китая (鄂温克族) живут главным образом во Внутренней Монголии (内蒙古自治区), часть — в провинции Хэйлунцзян. Их традиционный язык имеет три местные разновидности. В пастбищных районах эвенки пользуются монгольским языком и письмом, в земледельческих и предгорных — китайским. Известное ремесло эвенков — изготовление изделий из бересты."
-    },
-    "factRow": "ethnos/peoples/ppl-cn-evenki",
-    "id": "ethnos-q08",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "ppl-cn-evenki",
-        "zh": "内蒙古自治区"
-      },
-      {
-        "gloss": "Гуанси — основная область расселения чжуанов",
-        "id": "ppl-cn-zhuang",
-        "zh": "广西壮族自治区"
-      },
-      {
-        "gloss": "Нинся — один из основных районов компактного проживания хуэй",
-        "id": "ppl-cn-hui",
-        "zh": "宁夏回族自治区"
-      },
-      {
-        "gloss": "Синьцзян — основная область компактного проживания уйгуров в Китае",
-        "id": "ppl-cn-uyghur",
-        "zh": "新疆维吾尔自治区"
-      },
-      {
-        "gloss": "Тибетский автономный район — одна из основных областей проживания тибетцев",
-        "id": "ppl-cn-tibetan",
-        "zh": "西藏自治区"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "В каком автономном районе главным образом живут эвенки Китая?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "ppl-cn-tujia",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "土家族 — 概况 — 国家民族事务委员会",
-        "url": "https://www.neac.gov.cn/seac/ztzl/tjz/gk.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "土家族织锦技艺 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/14282.html"
-      }
-    ],
-    "explanation": {
-      "ru": "Это туцзя (土家族): основная область их расселения — горы Улин (武陵山区) на стыке Хунани, Хубэя, Чунцина и Гуйчжоу. Традиционный язык туцзя сохраняется лишь у части народа, большинство говорит по-китайски. Туцзя давно пользуются китайской письменностью. Известная традиция туцзя — узорное ткачество."
-    },
-    "factRow": "ethnos/peoples/ppl-cn-tujia",
-    "id": "ethnos-q09",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "ppl-cn-tujia",
-        "zh": "土家族"
-      },
-      {
-        "gloss": "Ханьцы — народ Китая",
-        "id": "ppl-cn-han",
-        "zh": "汉族"
-      },
-      {
-        "gloss": "Чжуаны — народ Китая",
-        "id": "ppl-cn-zhuang",
-        "zh": "壮族"
-      },
-      {
-        "gloss": "Хуэй — народ Китая",
-        "id": "ppl-cn-hui",
-        "zh": "回族"
-      },
-      {
-        "gloss": "Маньчжуры — народ Китая",
-        "id": "ppl-cn-manchu",
-        "zh": "满族"
-      },
-      {
-        "gloss": "Уйгуры — народ Китая",
-        "id": "ppl-cn-uyghur",
-        "zh": "维吾尔族"
-      },
-      {
-        "gloss": "И — народ Китая",
-        "id": "ppl-cn-yi",
-        "zh": "彝族"
-      },
-      {
-        "gloss": "Тибетцы — народ Китая",
-        "id": "ppl-cn-tibetan",
-        "zh": "藏族"
-      },
-      {
-        "gloss": "Монголы — народ Китая",
-        "id": "ppl-cn-mongol",
-        "zh": "蒙古族"
-      },
-      {
-        "gloss": "Буи — народ Китая",
-        "id": "ppl-cn-buyi",
-        "zh": "布依族"
-      },
-      {
-        "gloss": "Яо — народ Китая",
-        "id": "ppl-cn-yao",
-        "zh": "瑶族"
-      },
-      {
-        "gloss": "Бай — народ Китая",
-        "id": "ppl-cn-bai",
-        "zh": "白族"
-      },
-      {
-        "gloss": "Корейцы Китая — народ Китая",
-        "id": "ppl-cn-korean",
-        "zh": "朝鲜族"
-      },
-      {
-        "gloss": "Хани — народ Китая",
-        "id": "ppl-cn-hani",
-        "zh": "哈尼族"
-      },
-      {
-        "gloss": "Ли — народ Китая",
-        "id": "ppl-cn-li",
-        "zh": "黎族"
-      },
-      {
-        "gloss": "Дай — народ Китая",
-        "id": "ppl-cn-dai",
-        "zh": "傣族"
-      },
-      {
-        "gloss": "Шэ — народ Китая",
-        "id": "ppl-cn-she",
-        "zh": "畲族"
-      },
-      {
-        "gloss": "Лису — народ Китая",
-        "id": "ppl-cn-lisu",
-        "zh": "傈僳族"
-      },
-      {
-        "gloss": "Наси — народ Китая",
-        "id": "ppl-cn-naxi",
-        "zh": "纳西族"
-      },
-      {
-        "gloss": "Шуй — народ Китая",
-        "id": "ppl-cn-shui",
-        "zh": "水族"
-      },
-      {
-        "gloss": "Эвенки Китая — народ Китая",
-        "id": "ppl-cn-evenki",
-        "zh": "鄂温克族"
-      },
-      {
-        "gloss": "Орокены — народ Китая",
-        "id": "ppl-cn-oroqen",
-        "zh": "鄂伦春族"
-      },
-      {
-        "gloss": "Хэчжэ — народ Китая",
-        "id": "ppl-cn-hezhen",
-        "zh": "赫哲族"
-      },
-      {
-        "gloss": "Сибо — народ Китая",
-        "id": "ppl-cn-xibe",
-        "zh": "锡伯族"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Какой народ Китая живёт главным образом в горном районе 武陵山区 на стыке трёх провинций и города центрального подчинения?",
     "questionZh": null,
     "topic": "Общество: население, этносы и религии",
     "topicSource": "authored"
@@ -44531,6 +43999,24 @@
         "checkedAt": "2026-10-16",
         "title": "藏族唐卡（藏娘唐卡） — 中国非物质文化遗产网",
         "url": "https://www.ihchina.cn/art/detail/id/23712.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "藏族 — 中国驻印度尼西亚大使馆（五十六个民族）",
+        "url": "https://id.china-embassy.gov.cn/chn/zggk/wslgmz/200404/t20040421_2343356.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "中国的少数民族政策及其实践（国务院新闻办公室白皮书）— 中华人民共和国外交部",
+        "url": "https://www.mfa.gov.cn/ziliao_674904/zt_674979/ywzt_675099/wzzt_675579/2296_675789/200207/t20020705_9288319.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "少数民族概况 — 中国驻哈萨克斯坦大使馆",
+        "url": "https://kz.china-embassy.gov.cn/chn/gyzg/zggk/renkouminzu/201008/t20100804_1364748.htm"
       }
     ],
     "explanation": {
@@ -44679,176 +44165,13 @@
   },
   {
     "answer": {
-      "optionId": "ppl-cn-korean",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "朝鲜族 — 概况 — 国家民族事务委员会",
-        "url": "https://www.neac.gov.cn/seac/ztzl/cxz/gk.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "朝鲜族农乐舞（象帽舞） — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/art/detail/id/12962.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "中国朝鲜族农乐舞 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/nongyuewu.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "朝鲜族：风俗习惯 — 国家民委，《中国少数民族》",
-        "url": "https://www.neac.gov.cn/seac/ztzl/cxz/fsxg.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Это письменность корейцев Китая (朝鲜族): буквы корейского алфавита объединяются в слоговые блоки. Традиционный язык корейцев Китая — корейский. Крупнейшая область их компактного проживания — Яньбянь в провинции Цзилинь, хотя живут они не только там. Известная традиция — крестьянский танец (农乐舞), который исполняют под удары гонгов и барабанов."
-    },
-    "factRow": "ethnos/peoples/ppl-cn-korean",
-    "id": "ethnos-q11",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "ppl-cn-korean",
-        "zh": "朝鲜族"
-      },
-      {
-        "gloss": "Ханьцы — народ Китая",
-        "id": "ppl-cn-han",
-        "zh": "汉族"
-      },
-      {
-        "gloss": "Чжуаны — народ Китая",
-        "id": "ppl-cn-zhuang",
-        "zh": "壮族"
-      },
-      {
-        "gloss": "Хуэй — народ Китая",
-        "id": "ppl-cn-hui",
-        "zh": "回族"
-      },
-      {
-        "gloss": "Маньчжуры — народ Китая",
-        "id": "ppl-cn-manchu",
-        "zh": "满族"
-      },
-      {
-        "gloss": "Уйгуры — народ Китая",
-        "id": "ppl-cn-uyghur",
-        "zh": "维吾尔族"
-      },
-      {
-        "gloss": "Мяо — народ Китая",
-        "id": "ppl-cn-miao",
-        "zh": "苗族"
-      },
-      {
-        "gloss": "И — народ Китая",
-        "id": "ppl-cn-yi",
-        "zh": "彝族"
-      },
-      {
-        "gloss": "Туцзя — народ Китая",
-        "id": "ppl-cn-tujia",
-        "zh": "土家族"
-      },
-      {
-        "gloss": "Монголы — народ Китая",
-        "id": "ppl-cn-mongol",
-        "zh": "蒙古族"
-      },
-      {
-        "gloss": "Дун — народ Китая",
-        "id": "ppl-cn-dong",
-        "zh": "侗族"
-      },
-      {
-        "gloss": "Буи — народ Китая",
-        "id": "ppl-cn-buyi",
-        "zh": "布依族"
-      },
-      {
-        "gloss": "Яо — народ Китая",
-        "id": "ppl-cn-yao",
-        "zh": "瑶族"
-      },
-      {
-        "gloss": "Бай — народ Китая",
-        "id": "ppl-cn-bai",
-        "zh": "白族"
-      },
-      {
-        "gloss": "Хани — народ Китая",
-        "id": "ppl-cn-hani",
-        "zh": "哈尼族"
-      },
-      {
-        "gloss": "Ли — народ Китая",
-        "id": "ppl-cn-li",
-        "zh": "黎族"
-      },
-      {
-        "gloss": "Шэ — народ Китая",
-        "id": "ppl-cn-she",
-        "zh": "畲族"
-      },
-      {
-        "gloss": "Лису — народ Китая",
-        "id": "ppl-cn-lisu",
-        "zh": "傈僳族"
-      },
-      {
-        "gloss": "Наси — народ Китая",
-        "id": "ppl-cn-naxi",
-        "zh": "纳西族"
-      },
-      {
-        "gloss": "Шуй — народ Китая",
-        "id": "ppl-cn-shui",
-        "zh": "水族"
-      },
-      {
-        "gloss": "Эвенки Китая — народ Китая",
-        "id": "ppl-cn-evenki",
-        "zh": "鄂温克族"
-      },
-      {
-        "gloss": "Орокены — народ Китая",
-        "id": "ppl-cn-oroqen",
-        "zh": "鄂伦春族"
-      },
-      {
-        "gloss": "Хэчжэ — народ Китая",
-        "id": "ppl-cn-hezhen",
-        "zh": "赫哲族"
-      },
-      {
-        "gloss": "Сибо — народ Китая",
-        "id": "ppl-cn-xibe",
-        "zh": "锡伯族"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Письменность какого народа Китая буквенная, причём буквы в ней объединяются в слоговые блоки?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
       "optionId": "ppl-cn-uyghur",
       "state": "verified"
     },
     "dossier": "ethnos",
+    "editorial": {
+      "reason": "перебор народов (решение автора 2026-10-23): убрано узкое «развилась из чагатайского письма»; из пояснения убран мукам — ответ ethnos-q80"
+    },
     "evidence": [
       {
         "authority": "official",
@@ -44861,10 +44184,28 @@
         "checkedAt": "2026-10-16",
         "title": "新疆维吾尔木卡姆艺术（哈密木卡姆） — 中国非物质文化遗产网",
         "url": "https://www.ihchina.cn/project_details/12597/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "维吾尔族 — 中国驻印度尼西亚大使馆（五十六个民族）",
+        "url": "https://id.china-embassy.gov.cn/chn/zggk/wslgmz/200404/t20040421_2343234.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "中国的少数民族政策及其实践（国务院新闻办公室白皮书）— 中华人民共和国外交部",
+        "url": "https://www.mfa.gov.cn/ziliao_674904/zt_674979/ywzt_675099/wzzt_675579/2296_675789/200207/t20020705_9288319.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "少数民族概况 — 中国驻哈萨克斯坦大使馆",
+        "url": "https://kz.china-embassy.gov.cn/chn/gyzg/zggk/renkouminzu/201008/t20100804_1364748.htm"
       }
     ],
     "explanation": {
-      "ru": "Это уйгуры (维吾尔族): их современная письменность основана на арабском алфавите и развилась из позднего чагатайского письма. Раньше, в IX–XV веках, уйгуры пользовались другим письмом — древнеуйгурским, созданным на основе согдийского алфавита. Главная область проживания уйгуров в Китае — Синьцзян. Известная традиция — мукам, соединяющий пение, танец и инструментальную музыку."
+      "ru": "Это уйгуры (维吾尔族): их современная письменность основана на арабском алфавите и развилась из позднего чагатайского письма. Раньше, в IX–XV веках, уйгуры пользовались другим письмом — древнеуйгурским, созданным на основе согдийского алфавита. Главная область проживания уйгуров в Китае — Синьцзян."
     },
     "factRow": "ethnos/peoples/ppl-cn-uyghur",
     "id": "ethnos-q12",
@@ -44997,658 +44338,7 @@
     ],
     "origin": "addition",
     "parseWarnings": [],
-    "questionRu": "Современная письменность какого народа Китая основана на арабском алфавите и развилась из чагатайского письма?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "ppl-cn-yao",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "瑶族 — 概况 — 国家民族事务委员会",
-        "url": "https://www.neac.gov.cn/seac/ztzl/yaoz/gk.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "瑶族长鼓舞 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/13041.html"
-      }
-    ],
-    "explanation": {
-      "ru": "Это яо (瑶族): на языке мянь говорят паньяо (盘瑶) — одна из ветвей этого народа. Категория 瑶族 объединяет общины с разными языками, и мянь — один из них, а не общий язык всех яо; некоторые яо говорят только по-китайски. В 1982 году на основе мянь разработан проект латинского письма. Больше всего яо живёт в Гуанси."
-    },
-    "factRow": "ethnos/peoples/ppl-cn-yao",
-    "id": "ethnos-q14",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "ppl-cn-yao",
-        "zh": "瑶族"
-      },
-      {
-        "gloss": "Ханьцы — народ Китая",
-        "id": "ppl-cn-han",
-        "zh": "汉族"
-      },
-      {
-        "gloss": "Чжуаны — народ Китая",
-        "id": "ppl-cn-zhuang",
-        "zh": "壮族"
-      },
-      {
-        "gloss": "Хуэй — народ Китая",
-        "id": "ppl-cn-hui",
-        "zh": "回族"
-      },
-      {
-        "gloss": "Маньчжуры — народ Китая",
-        "id": "ppl-cn-manchu",
-        "zh": "满族"
-      },
-      {
-        "gloss": "Уйгуры — народ Китая",
-        "id": "ppl-cn-uyghur",
-        "zh": "维吾尔族"
-      },
-      {
-        "gloss": "Мяо — народ Китая",
-        "id": "ppl-cn-miao",
-        "zh": "苗族"
-      },
-      {
-        "gloss": "И — народ Китая",
-        "id": "ppl-cn-yi",
-        "zh": "彝族"
-      },
-      {
-        "gloss": "Туцзя — народ Китая",
-        "id": "ppl-cn-tujia",
-        "zh": "土家族"
-      },
-      {
-        "gloss": "Тибетцы — народ Китая",
-        "id": "ppl-cn-tibetan",
-        "zh": "藏族"
-      },
-      {
-        "gloss": "Монголы — народ Китая",
-        "id": "ppl-cn-mongol",
-        "zh": "蒙古族"
-      },
-      {
-        "gloss": "Дун — народ Китая",
-        "id": "ppl-cn-dong",
-        "zh": "侗族"
-      },
-      {
-        "gloss": "Буи — народ Китая",
-        "id": "ppl-cn-buyi",
-        "zh": "布依族"
-      },
-      {
-        "gloss": "Бай — народ Китая",
-        "id": "ppl-cn-bai",
-        "zh": "白族"
-      },
-      {
-        "gloss": "Корейцы Китая — народ Китая",
-        "id": "ppl-cn-korean",
-        "zh": "朝鲜族"
-      },
-      {
-        "gloss": "Хани — народ Китая",
-        "id": "ppl-cn-hani",
-        "zh": "哈尼族"
-      },
-      {
-        "gloss": "Ли — народ Китая",
-        "id": "ppl-cn-li",
-        "zh": "黎族"
-      },
-      {
-        "gloss": "Дай — народ Китая",
-        "id": "ppl-cn-dai",
-        "zh": "傣族"
-      },
-      {
-        "gloss": "Шэ — народ Китая",
-        "id": "ppl-cn-she",
-        "zh": "畲族"
-      },
-      {
-        "gloss": "Лису — народ Китая",
-        "id": "ppl-cn-lisu",
-        "zh": "傈僳族"
-      },
-      {
-        "gloss": "Наси — народ Китая",
-        "id": "ppl-cn-naxi",
-        "zh": "纳西族"
-      },
-      {
-        "gloss": "Шуй — народ Китая",
-        "id": "ppl-cn-shui",
-        "zh": "水族"
-      },
-      {
-        "gloss": "Эвенки Китая — народ Китая",
-        "id": "ppl-cn-evenki",
-        "zh": "鄂温克族"
-      },
-      {
-        "gloss": "Орокены — народ Китая",
-        "id": "ppl-cn-oroqen",
-        "zh": "鄂伦春族"
-      },
-      {
-        "gloss": "Хэчжэ — народ Китая",
-        "id": "ppl-cn-hezhen",
-        "zh": "赫哲族"
-      },
-      {
-        "gloss": "Сибо — народ Китая",
-        "id": "ppl-cn-xibe",
-        "zh": "锡伯族"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "На языке мянь (勉语) говорят общины какого народа Китая?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "ppl-cn-yao",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "瑶族 — 概况 — 国家民族事务委员会",
-        "url": "https://www.neac.gov.cn/seac/ztzl/yaoz/gk.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "瑶族长鼓舞 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/13041.html"
-      }
-    ],
-    "explanation": {
-      "ru": "Танец с длинным барабаном (瑶族长鼓舞) — народный танец яо (瑶族). Он распространён в районах компактного проживания яо в Гуандуне, Гуанси и Хунани и имеет там местные формы. Больше всего яо живёт в Гуанси."
-    },
-    "factRow": "ethnos/peoples/ppl-cn-yao",
-    "id": "ethnos-q15",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "ppl-cn-yao",
-        "zh": "瑶族"
-      },
-      {
-        "gloss": "Ханьцы — народ Китая",
-        "id": "ppl-cn-han",
-        "zh": "汉族"
-      },
-      {
-        "gloss": "Чжуаны — народ Китая",
-        "id": "ppl-cn-zhuang",
-        "zh": "壮族"
-      },
-      {
-        "gloss": "Хуэй — народ Китая",
-        "id": "ppl-cn-hui",
-        "zh": "回族"
-      },
-      {
-        "gloss": "Маньчжуры — народ Китая",
-        "id": "ppl-cn-manchu",
-        "zh": "满族"
-      },
-      {
-        "gloss": "Уйгуры — народ Китая",
-        "id": "ppl-cn-uyghur",
-        "zh": "维吾尔族"
-      },
-      {
-        "gloss": "Мяо — народ Китая",
-        "id": "ppl-cn-miao",
-        "zh": "苗族"
-      },
-      {
-        "gloss": "И — народ Китая",
-        "id": "ppl-cn-yi",
-        "zh": "彝族"
-      },
-      {
-        "gloss": "Туцзя — народ Китая",
-        "id": "ppl-cn-tujia",
-        "zh": "土家族"
-      },
-      {
-        "gloss": "Тибетцы — народ Китая",
-        "id": "ppl-cn-tibetan",
-        "zh": "藏族"
-      },
-      {
-        "gloss": "Монголы — народ Китая",
-        "id": "ppl-cn-mongol",
-        "zh": "蒙古族"
-      },
-      {
-        "gloss": "Дун — народ Китая",
-        "id": "ppl-cn-dong",
-        "zh": "侗族"
-      },
-      {
-        "gloss": "Буи — народ Китая",
-        "id": "ppl-cn-buyi",
-        "zh": "布依族"
-      },
-      {
-        "gloss": "Бай — народ Китая",
-        "id": "ppl-cn-bai",
-        "zh": "白族"
-      },
-      {
-        "gloss": "Хани — народ Китая",
-        "id": "ppl-cn-hani",
-        "zh": "哈尼族"
-      },
-      {
-        "gloss": "Ли — народ Китая",
-        "id": "ppl-cn-li",
-        "zh": "黎族"
-      },
-      {
-        "gloss": "Дай — народ Китая",
-        "id": "ppl-cn-dai",
-        "zh": "傣族"
-      },
-      {
-        "gloss": "Шэ — народ Китая",
-        "id": "ppl-cn-she",
-        "zh": "畲族"
-      },
-      {
-        "gloss": "Лису — народ Китая",
-        "id": "ppl-cn-lisu",
-        "zh": "傈僳族"
-      },
-      {
-        "gloss": "Наси — народ Китая",
-        "id": "ppl-cn-naxi",
-        "zh": "纳西族"
-      },
-      {
-        "gloss": "Шуй — народ Китая",
-        "id": "ppl-cn-shui",
-        "zh": "水族"
-      },
-      {
-        "gloss": "Эвенки Китая — народ Китая",
-        "id": "ppl-cn-evenki",
-        "zh": "鄂温克族"
-      },
-      {
-        "gloss": "Орокены — народ Китая",
-        "id": "ppl-cn-oroqen",
-        "zh": "鄂伦春族"
-      },
-      {
-        "gloss": "Хэчжэ — народ Китая",
-        "id": "ppl-cn-hezhen",
-        "zh": "赫哲族"
-      },
-      {
-        "gloss": "Сибо — народ Китая",
-        "id": "ppl-cn-xibe",
-        "zh": "锡伯族"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Какой народ Китая исполняет танец с длинным барабаном 长鼓舞, распространённый на юге Китая?",
-    "questionZh": null,
-    "topic": "Культура, традиции и праздники",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "ppl-cn-xibe",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "锡伯族 — 概况 — 国家民族事务委员会",
-        "url": "https://www.neac.gov.cn/seac/ztzl/xbz/gk.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "锡伯族贝伦舞 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/13088/"
-      }
-    ],
-    "explanation": {
-      "ru": "Это сибо (锡伯族): в 1947 году сибинская интеллигенция реформировала маньчжурское письмо (满文), которым пользовался народ, и так появилась сибинская письменность. Лучше всего язык и письмо сохраняются у сибо Синьцзяна, которые живут компактно, — прежде всего в Чапчал-Сибоском автономном уезде. Другая часть сибо живёт на северо-востоке Китая."
-    },
-    "factRow": "ethnos/peoples/ppl-cn-xibe",
-    "id": "ethnos-q17",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "ppl-cn-xibe",
-        "zh": "锡伯族"
-      },
-      {
-        "gloss": "Ханьцы — народ Китая",
-        "id": "ppl-cn-han",
-        "zh": "汉族"
-      },
-      {
-        "gloss": "Чжуаны — народ Китая",
-        "id": "ppl-cn-zhuang",
-        "zh": "壮族"
-      },
-      {
-        "gloss": "Хуэй — народ Китая",
-        "id": "ppl-cn-hui",
-        "zh": "回族"
-      },
-      {
-        "gloss": "Маньчжуры — народ Китая",
-        "id": "ppl-cn-manchu",
-        "zh": "满族"
-      },
-      {
-        "gloss": "Уйгуры — народ Китая",
-        "id": "ppl-cn-uyghur",
-        "zh": "维吾尔族"
-      },
-      {
-        "gloss": "Мяо — народ Китая",
-        "id": "ppl-cn-miao",
-        "zh": "苗族"
-      },
-      {
-        "gloss": "И — народ Китая",
-        "id": "ppl-cn-yi",
-        "zh": "彝族"
-      },
-      {
-        "gloss": "Туцзя — народ Китая",
-        "id": "ppl-cn-tujia",
-        "zh": "土家族"
-      },
-      {
-        "gloss": "Тибетцы — народ Китая",
-        "id": "ppl-cn-tibetan",
-        "zh": "藏族"
-      },
-      {
-        "gloss": "Монголы — народ Китая",
-        "id": "ppl-cn-mongol",
-        "zh": "蒙古族"
-      },
-      {
-        "gloss": "Дун — народ Китая",
-        "id": "ppl-cn-dong",
-        "zh": "侗族"
-      },
-      {
-        "gloss": "Буи — народ Китая",
-        "id": "ppl-cn-buyi",
-        "zh": "布依族"
-      },
-      {
-        "gloss": "Яо — народ Китая",
-        "id": "ppl-cn-yao",
-        "zh": "瑶族"
-      },
-      {
-        "gloss": "Бай — народ Китая",
-        "id": "ppl-cn-bai",
-        "zh": "白族"
-      },
-      {
-        "gloss": "Корейцы Китая — народ Китая",
-        "id": "ppl-cn-korean",
-        "zh": "朝鲜族"
-      },
-      {
-        "gloss": "Хани — народ Китая",
-        "id": "ppl-cn-hani",
-        "zh": "哈尼族"
-      },
-      {
-        "gloss": "Ли — народ Китая",
-        "id": "ppl-cn-li",
-        "zh": "黎族"
-      },
-      {
-        "gloss": "Дай — народ Китая",
-        "id": "ppl-cn-dai",
-        "zh": "傣族"
-      },
-      {
-        "gloss": "Шэ — народ Китая",
-        "id": "ppl-cn-she",
-        "zh": "畲族"
-      },
-      {
-        "gloss": "Лису — народ Китая",
-        "id": "ppl-cn-lisu",
-        "zh": "傈僳族"
-      },
-      {
-        "gloss": "Наси — народ Китая",
-        "id": "ppl-cn-naxi",
-        "zh": "纳西族"
-      },
-      {
-        "gloss": "Шуй — народ Китая",
-        "id": "ppl-cn-shui",
-        "zh": "水族"
-      },
-      {
-        "gloss": "Эвенки Китая — народ Китая",
-        "id": "ppl-cn-evenki",
-        "zh": "鄂温克族"
-      },
-      {
-        "gloss": "Орокены — народ Китая",
-        "id": "ppl-cn-oroqen",
-        "zh": "鄂伦春族"
-      },
-      {
-        "gloss": "Хэчжэ — народ Китая",
-        "id": "ppl-cn-hezhen",
-        "zh": "赫哲族"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Письменность какого народа Китая была создана в 1947 году реформой письма 满文?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "ppl-cn-naxi",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "纳西族 — 概况 — 国家民族事务委员会",
-        "url": "https://www.neac.gov.cn/seac/ztzl/nxz/gk.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "纳西族东巴画 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/13912"
-      }
-    ],
-    "explanation": {
-      "ru": "Это наси (纳西族): рисуночным письмом дунба жрецы-дунба записывали религиозные книги, а повседневным письмом всего народа оно не было. Кроме него, у наси было и другое письмо — гэба. Основная область расселения наси — Лицзян в Юньнани."
-    },
-    "factRow": "ethnos/peoples/ppl-cn-naxi",
-    "id": "ethnos-q19",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "ppl-cn-naxi",
-        "zh": "纳西族"
-      },
-      {
-        "gloss": "Ханьцы — народ Китая",
-        "id": "ppl-cn-han",
-        "zh": "汉族"
-      },
-      {
-        "gloss": "Чжуаны — народ Китая",
-        "id": "ppl-cn-zhuang",
-        "zh": "壮族"
-      },
-      {
-        "gloss": "Хуэй — народ Китая",
-        "id": "ppl-cn-hui",
-        "zh": "回族"
-      },
-      {
-        "gloss": "Маньчжуры — народ Китая",
-        "id": "ppl-cn-manchu",
-        "zh": "满族"
-      },
-      {
-        "gloss": "Уйгуры — народ Китая",
-        "id": "ppl-cn-uyghur",
-        "zh": "维吾尔族"
-      },
-      {
-        "gloss": "Мяо — народ Китая",
-        "id": "ppl-cn-miao",
-        "zh": "苗族"
-      },
-      {
-        "gloss": "И — народ Китая",
-        "id": "ppl-cn-yi",
-        "zh": "彝族"
-      },
-      {
-        "gloss": "Туцзя — народ Китая",
-        "id": "ppl-cn-tujia",
-        "zh": "土家族"
-      },
-      {
-        "gloss": "Тибетцы — народ Китая",
-        "id": "ppl-cn-tibetan",
-        "zh": "藏族"
-      },
-      {
-        "gloss": "Монголы — народ Китая",
-        "id": "ppl-cn-mongol",
-        "zh": "蒙古族"
-      },
-      {
-        "gloss": "Дун — народ Китая",
-        "id": "ppl-cn-dong",
-        "zh": "侗族"
-      },
-      {
-        "gloss": "Буи — народ Китая",
-        "id": "ppl-cn-buyi",
-        "zh": "布依族"
-      },
-      {
-        "gloss": "Яо — народ Китая",
-        "id": "ppl-cn-yao",
-        "zh": "瑶族"
-      },
-      {
-        "gloss": "Бай — народ Китая",
-        "id": "ppl-cn-bai",
-        "zh": "白族"
-      },
-      {
-        "gloss": "Корейцы Китая — народ Китая",
-        "id": "ppl-cn-korean",
-        "zh": "朝鲜族"
-      },
-      {
-        "gloss": "Хани — народ Китая",
-        "id": "ppl-cn-hani",
-        "zh": "哈尼族"
-      },
-      {
-        "gloss": "Ли — народ Китая",
-        "id": "ppl-cn-li",
-        "zh": "黎族"
-      },
-      {
-        "gloss": "Дай — народ Китая",
-        "id": "ppl-cn-dai",
-        "zh": "傣族"
-      },
-      {
-        "gloss": "Шэ — народ Китая",
-        "id": "ppl-cn-she",
-        "zh": "畲族"
-      },
-      {
-        "gloss": "Лису — народ Китая",
-        "id": "ppl-cn-lisu",
-        "zh": "傈僳族"
-      },
-      {
-        "gloss": "Шуй — народ Китая",
-        "id": "ppl-cn-shui",
-        "zh": "水族"
-      },
-      {
-        "gloss": "Эвенки Китая — народ Китая",
-        "id": "ppl-cn-evenki",
-        "zh": "鄂温克族"
-      },
-      {
-        "gloss": "Орокены — народ Китая",
-        "id": "ppl-cn-oroqen",
-        "zh": "鄂伦春族"
-      },
-      {
-        "gloss": "Хэчжэ — народ Китая",
-        "id": "ppl-cn-hezhen",
-        "zh": "赫哲族"
-      },
-      {
-        "gloss": "Сибо — народ Китая",
-        "id": "ppl-cn-xibe",
-        "zh": "锡伯族"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Рисуночным письмом дунба жрецы какого народа Китая записывали религиозные книги?",
+    "questionRu": "Современная письменность какого народа Китая основана на арабском алфавите?",
     "questionZh": null,
     "topic": "Общество: население, этносы и религии",
     "topicSource": "authored"
@@ -45960,181 +44650,6 @@
   },
   {
     "answer": {
-      "optionId": "her-cn-yimakan",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "赫哲族伊玛堪 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/13663/"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "新声续古韵 伊玛堪在黑土地上活态传承 — 国家民委",
-        "url": "https://www.neac.gov.cn/seac/xwzx/202605/1189503.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Имакан (伊玛堪) — устное сказительство народа хэчжэ (赫哲族). Исполнитель на языке хэчжэ чередует рассказ и пение: «говорит отрывок, поёт отрывок». Традиция бытует в районах, где компактно живут хэчжэ, в провинции Хэйлунцзян."
-    },
-    "factRow": "ethnos/heritage/her-cn-yimakan",
-    "id": "ethnos-q31",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "her-cn-yimakan",
-        "zh": "赫哲族"
-      },
-      {
-        "gloss": "Киргизы",
-        "id": "her-cn-manas",
-        "zh": "柯尔克孜族"
-      },
-      {
-        "gloss": "Монголы",
-        "id": "her-cn-jangar",
-        "zh": "蒙古族"
-      },
-      {
-        "gloss": "Маньчжуры",
-        "id": "her-cn-manchu-shuobu",
-        "zh": "满族"
-      },
-      {
-        "gloss": "Орокены",
-        "id": "her-cn-oroqen-mosukun",
-        "zh": "鄂伦春族"
-      },
-      {
-        "gloss": "Дауры",
-        "id": "her-cn-daur-wuqin",
-        "zh": "达斡尔族"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Какой народ Китая сохраняет имакан — сказительство, в котором рассказ чередуется с пением?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "her-cn-dombra",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "“文化润疆”主题旅游列车为何“刷屏” — 山东宣传网",
-        "url": "https://www.sdxc.gov.cn/waplm/bjjx/202606/t20260625_17872653.htm"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "欢声笑语与阿克卓勒村亲戚同庆双节 — 新疆维吾尔自治区交通运输厅",
-        "url": "https://jtyst.xinjiang.gov.cn/xjjtysj/zxdt/201906/6534c710e3674957a8ce24d722e90cc4.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Домбра (冬不拉) — характерный народный инструмент казахов (哈萨克族). Обычно у неё две струны. В Китае на домбре играют казахи Синьцзяна. Казахскую домбру не стоит путать с русской домрой: это разные инструменты с разными китайскими названиями."
-    },
-    "factRow": "ethnos/heritage/her-cn-dombra",
-    "id": "ethnos-q35",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "her-cn-dombra",
-        "zh": "哈萨克族"
-      },
-      {
-        "gloss": "Монголы",
-        "id": "her-cn-morin-khuur",
-        "zh": "蒙古族"
-      },
-      {
-        "gloss": "Цзин",
-        "id": "her-cn-jing-monochord",
-        "zh": "京族"
-      },
-      {
-        "gloss": "Чжуаны",
-        "id": "her-cn-zhuang-tianqin",
-        "zh": "壮族"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Какой народ Китая считает домбру, у которой обычно две струны, своим характерным народным инструментом?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "her-cn-jing-monochord",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "editorial": {
-      "reason": "решение автора 2026-10-20, ревью вопросов досье: вопрос «на каком инструменте»: варианты — инструменты, а не пункты реестра «…艺术»"
-    },
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "京族独弦琴艺术 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/12790/"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "“全国少数民族非物质文化遗产项目调演活动”系列报道（七） — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/10778/"
-      }
-    ],
-    "explanation": {
-      "ru": "Это искусство игры на однострунном инструменте народа цзин (京族独弦琴艺术). Левой рукой музыкант держит рычаг и, толкая или оттягивая его, меняет натяжение струны и высоту звука. Традиция связана с городом Дунсин в Гуанси. Она включает и изготовление инструмента, и исполнение."
-    },
-    "factRow": "ethnos/heritage/her-cn-jing-monochord",
-    "id": "ethnos-q36",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "her-cn-jing-monochord",
-        "zh": "独弦琴"
-      },
-      {
-        "gloss": "Монгольская музыка моринхура",
-        "id": "her-cn-morin-khuur",
-        "zh": "马头琴"
-      },
-      {
-        "gloss": "Казахская домбра",
-        "id": "her-cn-dombra",
-        "zh": "冬不拉"
-      },
-      {
-        "gloss": "Искусство чжуанского тяньциня",
-        "id": "her-cn-zhuang-tianqin",
-        "zh": "天琴"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "На каком инструменте высоту звука меняют рычагом: музыкант держит его левой рукой и, толкая или оттягивая, меняет натяжение струны?",
-    "questionZh": null,
-    "topic": "Культура, традиции и праздники",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
       "optionId": "her-cn-morin-khuur",
       "state": "verified"
     },
@@ -46189,64 +44704,13 @@
   },
   {
     "answer": {
-      "optionId": "her-cn-zhuang-tianqin",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "壮族天琴艺术 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/23464/"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "加强壮族天琴艺术民间文献的翻译与出版传播 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/27854/"
-      }
-    ],
-    "explanation": {
-      "ru": "Тяньцинь (天琴) — традиция чжуанов (壮族), которая соединяет игру на инструменте, пение и танец. Корпус инструмента делают из тыквы-горлянки. Основная форма — пение под собственный аккомпанемент сидя. Традиция бытует в Чунцзо и других районах на юго-западе Гуанси, в бассейне реки Цзоцзян."
-    },
-    "factRow": "ethnos/heritage/her-cn-zhuang-tianqin",
-    "id": "ethnos-q38",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "her-cn-zhuang-tianqin",
-        "zh": "壮族"
-      },
-      {
-        "gloss": "Монголы",
-        "id": "her-cn-morin-khuur",
-        "zh": "蒙古族"
-      },
-      {
-        "gloss": "Казахи",
-        "id": "her-cn-dombra",
-        "zh": "哈萨克族"
-      },
-      {
-        "gloss": "Цзин",
-        "id": "her-cn-jing-monochord",
-        "zh": "京族"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Какой народ Китая сохраняет искусство тяньциня — пения под щипковый инструмент с корпусом из тыквы-горлянки?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
       "optionId": "her-cn-dong-song",
       "state": "verified"
     },
     "dossier": "ethnos",
+    "editorial": {
+      "reason": "перебор народов (решение автора 2026-10-23): убраны уезды Цунцзян и Жунцзян — узко"
+    },
     "evidence": [
       {
         "authority": "official",
@@ -46315,7 +44779,7 @@
     ],
     "origin": "addition",
     "parseWarnings": [],
-    "questionRu": "Какое многоголосное хоровое пение, где запевала сочетается с хором, а голоса делятся на высокие и низкие, бытует в Цунцзяне и Жунцзяне?",
+    "questionRu": "Как называется многоголосное хоровое пение, где запевала сочетается с хором, а голоса делятся на высокие и низкие?",
     "questionZh": null,
     "topic": "Культура, традиции и праздники",
     "topicSource": "authored"
@@ -46395,91 +44859,6 @@
     "origin": "addition",
     "parseWarnings": [],
     "questionRu": "Какая народная песня отличается неторопливой, широкой мелодией и распевом, когда на немногие слова приходится много звуков?",
-    "questionZh": null,
-    "topic": "Культура, традиции и праздники",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "her-cn-mongol-khoomei",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "蒙古族呼麦 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/12414.html"
-      },
-      {
-        "authority": "academic",
-        "checkedAt": "2026-10-16",
-        "title": "讲座综述：巴依勒格《潮尔音乐体系及其相关问题研究》— 西安音乐学院",
-        "url": "https://rw.xacom.edu.cn/2021/0712/c431a20730/page.htm"
-      }
-    ],
-    "explanation": {
-      "ru": "Это монгольское горловое пение хоомей (蒙古族呼麦). Основа его звучания — непрерывный низкий тон, над которым движется мелодия; оба звука певец издаёт одновременно. В Китае традиция связана с Внутренней Монголией. Похожие техники есть и у других народов, например у тувинцев."
-    },
-    "factGroup": "ethnos-khoomei",
-    "factRow": "ethnos/heritage/her-cn-mongol-khoomei",
-    "id": "ethnos-q41",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "her-cn-mongol-khoomei",
-        "zh": "蒙古族呼麦"
-      },
-      {
-        "gloss": "монгольская протяжная песня уртын дуу",
-        "id": "her-cn-urtiin-duu",
-        "zh": "蒙古族长调民歌"
-      },
-      {
-        "gloss": "большое пение народа дун",
-        "id": "her-cn-dong-song",
-        "zh": "侗族大歌"
-      },
-      {
-        "gloss": "искусство уйгурского мукама Синьцзяна",
-        "id": "her-cn-muqam",
-        "zh": "新疆维吾尔木卡姆艺术"
-      },
-      {
-        "gloss": "тибетская опера",
-        "id": "her-cn-tibetan-opera",
-        "zh": "藏戏"
-      },
-      {
-        "gloss": "крестьянский танец корейцев Китая",
-        "id": "her-cn-korean-farmers-dance",
-        "zh": "中国朝鲜族农乐舞"
-      },
-      {
-        "gloss": "павлиний танец народа дай",
-        "id": "her-cn-peacock-dance",
-        "zh": "傣族孔雀舞"
-      },
-      {
-        "gloss": "песенные сюиты хайцайцян народа и",
-        "id": "her-cn-haicai-tune",
-        "zh": "彝族海菜腔"
-      },
-      {
-        "gloss": "казахское песенное состязание айтыс",
-        "id": "her-cn-aytis",
-        "zh": "哈萨克族阿依特斯"
-      },
-      {
-        "gloss": "байша сиюэ — музыкальная сюита наси",
-        "id": "her-cn-baisha-music",
-        "zh": "纳西族白沙细乐"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "В какой певческой традиции певец одновременно ведёт непрерывный низкий тон и мелодию, которая движется над ним?",
     "questionZh": null,
     "topic": "Культура, традиции и праздники",
     "topicSource": "authored"
@@ -46621,568 +45000,6 @@
     "questionRu": "Какой народ Китая исполняет танец, подражающий облику и повадкам павлина?",
     "questionZh": null,
     "topic": "Культура, традиции и праздники",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "her-cn-aytis",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "哈萨克族阿依特斯 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/13667.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "新时代阿肯弹唱助力中华民族共有精神家园建设 — 国家民委，中国民族报",
-        "url": "https://www.neac.gov.cn/seac/c103536/202606/1191262.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Это айтыс казахов (哈萨克族阿依特斯). Акыны — народные поэты — состязаются в импровизации: задают друг другу вопросы и отвечают в песне под домбру (冬不拉). В Китае айтыс бытует в Или, Тачэне, Алтае и других районах Синьцзяна."
-    },
-    "factRow": "ethnos/heritage/her-cn-aytis",
-    "id": "ethnos-q47",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "her-cn-aytis",
-        "zh": "哈萨克族阿依特斯"
-      },
-      {
-        "gloss": "монгольская протяжная песня уртын дуу",
-        "id": "her-cn-urtiin-duu",
-        "zh": "蒙古族长调民歌"
-      },
-      {
-        "gloss": "монгольское горловое пение хоомей",
-        "id": "her-cn-mongol-khoomei",
-        "zh": "蒙古族呼麦"
-      },
-      {
-        "gloss": "большое пение народа дун",
-        "id": "her-cn-dong-song",
-        "zh": "侗族大歌"
-      },
-      {
-        "gloss": "искусство уйгурского мукама Синьцзяна",
-        "id": "her-cn-muqam",
-        "zh": "新疆维吾尔木卡姆艺术"
-      },
-      {
-        "gloss": "тибетская опера",
-        "id": "her-cn-tibetan-opera",
-        "zh": "藏戏"
-      },
-      {
-        "gloss": "крестьянский танец корейцев Китая",
-        "id": "her-cn-korean-farmers-dance",
-        "zh": "中国朝鲜族农乐舞"
-      },
-      {
-        "gloss": "павлиний танец народа дай",
-        "id": "her-cn-peacock-dance",
-        "zh": "傣族孔雀舞"
-      },
-      {
-        "gloss": "песенные сюиты хайцайцян народа и",
-        "id": "her-cn-haicai-tune",
-        "zh": "彝族海菜腔"
-      },
-      {
-        "gloss": "байша сиюэ — музыкальная сюита наси",
-        "id": "her-cn-baisha-music",
-        "zh": "纳西族白沙细乐"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Какое песенное состязание ведут акыны — народные поэты, которые под домбру импровизируют вопросы и ответы?",
-    "questionZh": null,
-    "topic": "Культура, традиции и праздники",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "her-cn-korean-farmers-dance",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "中国朝鲜族农乐舞 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/nongyuewu.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "朝鲜族：风俗习惯 — 国家民委，《中国少数民族》",
-        "url": "https://www.neac.gov.cn/seac/ztzl/cxz/fsxg.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Это крестьянский танец корейцев Китая (中国朝鲜族农乐舞). Представление открывают ударные — гонги и барабаны, а ведёт его музыкант с медным гонгом. Танец соединяет инструментальную музыку, пение и движение и связан с земледелием. Он распространён в районах северо-востока Китая, где компактно живут корейцы."
-    },
-    "factRow": "ethnos/heritage/her-cn-korean-farmers-dance",
-    "id": "ethnos-q48",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "her-cn-korean-farmers-dance",
-        "zh": "中国朝鲜族农乐舞"
-      },
-      {
-        "gloss": "монгольская протяжная песня уртын дуу",
-        "id": "her-cn-urtiin-duu",
-        "zh": "蒙古族长调民歌"
-      },
-      {
-        "gloss": "монгольское горловое пение хоомей",
-        "id": "her-cn-mongol-khoomei",
-        "zh": "蒙古族呼麦"
-      },
-      {
-        "gloss": "большое пение народа дун",
-        "id": "her-cn-dong-song",
-        "zh": "侗族大歌"
-      },
-      {
-        "gloss": "искусство уйгурского мукама Синьцзяна",
-        "id": "her-cn-muqam",
-        "zh": "新疆维吾尔木卡姆艺术"
-      },
-      {
-        "gloss": "тибетская опера",
-        "id": "her-cn-tibetan-opera",
-        "zh": "藏戏"
-      },
-      {
-        "gloss": "павлиний танец народа дай",
-        "id": "her-cn-peacock-dance",
-        "zh": "傣族孔雀舞"
-      },
-      {
-        "gloss": "песенные сюиты хайцайцян народа и",
-        "id": "her-cn-haicai-tune",
-        "zh": "彝族海菜腔"
-      },
-      {
-        "gloss": "казахское песенное состязание айтыс",
-        "id": "her-cn-aytis",
-        "zh": "哈萨克族阿依特斯"
-      },
-      {
-        "gloss": "байша сиюэ — музыкальная сюита наси",
-        "id": "her-cn-baisha-music",
-        "zh": "纳西族白沙细乐"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Какой танец открывают ударные — гонги и барабаны, а ведёт представление музыкант с медным гонгом?",
-    "questionZh": null,
-    "topic": "Культура, традиции и праздники",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "her-cn-bai-tiedye",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "editorial": {
-      "reason": "решение автора 2026-10-20, ревью вопросов досье: варианты — короткие названия вместо записей реестра «…技艺» и скобок | Доработка по проверке переделки (2026-10-20): 土家锦 → 土家织锦, 赫哲族鱼皮制作 → 赫哲族鱼皮技艺 (по источникам)"
-    },
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "大理周城白族的扎染工艺 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/news_1_details/11139.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "苍山洱海间，“一染一刻”焕新表达 — 国家民委，中国民族报",
-        "url": "https://www.neac.gov.cn/seac/xwzx/202609/1194153.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Это узелковое крашение бай (白族扎染技艺). Ткань связывают и прошивают, погружают в краситель, а затем распускают нитки — на месте перевязок проявляется узор. Один из центров традиции — деревня Чжоучэн близ Дали в Юньнани. Сине-белая гамма для таких тканей обычна, но главное в ремесле — сам способ резервного крашения."
-    },
-    "factRow": "ethnos/heritage/her-cn-bai-tiedye",
-    "id": "ethnos-q50",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "her-cn-bai-tiedye",
-        "zh": "白族扎染"
-      },
-      {
-        "gloss": "ткачество парчи туцзя",
-        "id": "her-cn-tujia-brocade",
-        "zh": "土家织锦"
-      },
-      {
-        "gloss": "живопись дунба народа наси",
-        "id": "her-cn-dongba-painting",
-        "zh": "东巴画"
-      },
-      {
-        "gloss": "вышивка шуй с конским волосом",
-        "id": "her-cn-shui-horsehair",
-        "zh": "水族马尾绣"
-      },
-      {
-        "gloss": "изготовление изделий из рыбьей кожи хэчжэ",
-        "id": "her-cn-hezhe-fishskin",
-        "zh": "赫哲族鱼皮技艺"
-      },
-      {
-        "gloss": "ткачество чжуанской парчи",
-        "id": "her-cn-zhuang-brocade",
-        "zh": "壮锦"
-      },
-      {
-        "gloss": "ткачество парчи дай",
-        "id": "her-cn-dai-brocade",
-        "zh": "傣锦"
-      },
-      {
-        "gloss": "кузнечное изготовление серебряных украшений мяо",
-        "id": "her-cn-miao-silversmith",
-        "zh": "苗族银饰"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "В каком ремесле ткань перевязывают и прошивают нитками, окрашивают погружением, а затем распускают швы, чтобы проявился узор?",
-    "questionZh": null,
-    "topic": "Культура, традиции и праздники",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "her-cn-shui-horsehair",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "editorial": {
-      "reason": "решение автора 2026-10-20, ревью вопросов досье: варианты — короткие названия без скобок и записей реестра «…技艺»"
-    },
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "水族马尾绣 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/art/detail/id/13992.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "贵州黔南发展水族马尾绣让群众走上“致富路” — 国家民委，黔南州民宗局",
-        "url": "https://www.neac.gov.cn/seac/xwzx/202304/1162837.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Это вышивка шуй с конским волосом (水族马尾绣). Конский волос обматывают шёлковыми нитями и такой нитью выкладывают узор. Ремесло передаётся у женщин шуй из поколения в поколение. Центр традиции — Саньду-Шуйский автономный уезд в Гуйчжоу."
-    },
-    "factRow": "ethnos/heritage/her-cn-shui-horsehair",
-    "id": "ethnos-q51",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "her-cn-shui-horsehair",
-        "zh": "水族马尾绣"
-      },
-      {
-        "gloss": "вышивка мяо Сянси",
-        "id": "her-cn-xiangxi-miao-embroidery",
-        "zh": "湘西苗绣"
-      },
-      {
-        "gloss": "традиционные прядение, крашение, ткачество и вышивка ли",
-        "id": "her-cn-li-textiles",
-        "zh": "黎锦"
-      },
-      {
-        "gloss": "ткачество чжуанской парчи",
-        "id": "her-cn-zhuang-brocade",
-        "zh": "壮锦"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "В каком ремесле нитью служит волос, туго обвитый шёлком, — такой нитью выкладывают контуры узора?",
-    "questionZh": null,
-    "topic": "Культура, традиции и праздники",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "her-cn-hezhe-fishskin",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "赫哲族鱼皮制作技艺 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/14425.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "新声续古韵 伊玛堪在黑土地上活态传承 — 国家民委",
-        "url": "https://www.neac.gov.cn/seac/xwzx/202605/1189503.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Это хэчжэ (赫哲族). Изделия из рыбьей кожи (赫哲族鱼皮制作技艺) делают по этапам: кожу снимают, сушат, размягчают, раскраивают и сшивают, а затем украшают. Традиция документирована у хэчжэ волости Цзецзинькоу города Тунцзян в Хэйлунцзяне. Похожие изделия из рыбьей кожи известны и другим народам."
-    },
-    "factRow": "ethnos/heritage/her-cn-hezhe-fishskin",
-    "id": "ethnos-q52",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "her-cn-hezhe-fishskin",
-        "zh": "赫哲族"
-      },
-      {
-        "gloss": "Мяо",
-        "id": "her-cn-miao-batik",
-        "zh": "苗族"
-      },
-      {
-        "gloss": "Туцзя",
-        "id": "her-cn-tujia-brocade",
-        "zh": "土家族"
-      },
-      {
-        "gloss": "Тибетцы",
-        "id": "her-cn-zangniang-thangka",
-        "zh": "藏族"
-      },
-      {
-        "gloss": "Бай",
-        "id": "her-cn-bai-tiedye",
-        "zh": "白族"
-      },
-      {
-        "gloss": "Ли",
-        "id": "her-cn-li-textiles",
-        "zh": "黎族"
-      },
-      {
-        "gloss": "Наси",
-        "id": "her-cn-dongba-painting",
-        "zh": "纳西族"
-      },
-      {
-        "gloss": "Шуй",
-        "id": "her-cn-shui-horsehair",
-        "zh": "水族"
-      },
-      {
-        "gloss": "Чжуаны",
-        "id": "her-cn-zhuang-brocade",
-        "zh": "壮族"
-      },
-      {
-        "gloss": "Дай",
-        "id": "her-cn-dai-brocade",
-        "zh": "傣族"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Какой народ Китая делает изделия из рыбьей кожи: её снимают, сушат, размягчают, раскраивают и сшивают?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "her-cn-li-textiles",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "editorial": {
-      "reason": "решение автора 2026-10-20, ревью вопросов досье: варианты — короткие названия вместо записей реестра «…技艺» и скобок | Доработка по проверке переделки (2026-10-20): 土家锦 → 土家织锦, 赫哲族鱼皮制作 → 赫哲族鱼皮技艺 (по источникам)"
-    },
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "黎族传统纺染织绣技艺 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/20053.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "黎族：风俗习惯 — 国家民委，《中国少数民族》",
-        "url": "https://www.neac.gov.cn/seac/ztzl/lz/fsxg.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Это традиционные прядение, крашение, ткачество и вышивка народа ли (黎族传统纺染织绣技艺). Жемчужина этого ремесла — «драконовые покрывала» (龙被): в них соединены прядение, крашение, ткачество и вышивка, в старину их называли покрывалами Ячжоу и подносили ко двору как дань. Ли ткут на ножном и на древнем поясном станке, а красят ткань прежде всего узелковым способом. Традиция бытует на Хайнане."
-    },
-    "factRow": "ethnos/heritage/her-cn-li-textiles",
-    "id": "ethnos-q54",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "her-cn-li-textiles",
-        "zh": "黎锦"
-      },
-      {
-        "gloss": "ткачество парчи туцзя",
-        "id": "her-cn-tujia-brocade",
-        "zh": "土家织锦"
-      },
-      {
-        "gloss": "узелковое крашение бай",
-        "id": "her-cn-bai-tiedye",
-        "zh": "白族扎染"
-      },
-      {
-        "gloss": "живопись дунба народа наси",
-        "id": "her-cn-dongba-painting",
-        "zh": "东巴画"
-      },
-      {
-        "gloss": "вышивка шуй с конским волосом",
-        "id": "her-cn-shui-horsehair",
-        "zh": "水族马尾绣"
-      },
-      {
-        "gloss": "изготовление изделий из рыбьей кожи хэчжэ",
-        "id": "her-cn-hezhe-fishskin",
-        "zh": "赫哲族鱼皮技艺"
-      },
-      {
-        "gloss": "ткачество чжуанской парчи",
-        "id": "her-cn-zhuang-brocade",
-        "zh": "壮锦"
-      },
-      {
-        "gloss": "ткачество парчи дай",
-        "id": "her-cn-dai-brocade",
-        "zh": "傣锦"
-      },
-      {
-        "gloss": "кузнечное изготовление серебряных украшений мяо",
-        "id": "her-cn-miao-silversmith",
-        "zh": "苗族银饰"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "В какой текстильной традиции высшим достижением считаются «драконовые покрывала» (龙被), которые веками подносили ко двору как дань?",
-    "questionZh": null,
-    "topic": "Культура, традиции и праздники",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "her-cn-tujia-brocade",
-      "state": "verified"
-    },
-    "dossier": "ethnos",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-17",
-        "title": "土家族织锦技艺 — 中国非物质文化遗产网",
-        "url": "https://www.ihchina.cn/project_details/14282.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-16",
-        "title": "土家族：风俗习惯 — 国家民委，《中国少数民族》",
-        "url": "https://www.neac.gov.cn/seac/ztzl/tjz/fsxg.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Силанькапу (西兰卡普) — узорные покрывала туцзя (土家族); так на языке туцзя называют покрывало с местными узорами. Узор выбирают вручную и ткут с изнанки. Один из районов традиции — бассейн реки Юшуй в Сянси, провинция Хунань."
-    },
-    "factRow": "ethnos/heritage/her-cn-tujia-brocade",
-    "id": "ethnos-q55",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "her-cn-tujia-brocade",
-        "zh": "土家族"
-      },
-      {
-        "gloss": "Маньчжуры",
-        "id": "her-cn-manchu-papercut",
-        "zh": "满族"
-      },
-      {
-        "gloss": "Мяо",
-        "id": "her-cn-miao-batik",
-        "zh": "苗族"
-      },
-      {
-        "gloss": "Тибетцы",
-        "id": "her-cn-zangniang-thangka",
-        "zh": "藏族"
-      },
-      {
-        "gloss": "Бай",
-        "id": "her-cn-bai-tiedye",
-        "zh": "白族"
-      },
-      {
-        "gloss": "Ли",
-        "id": "her-cn-li-textiles",
-        "zh": "黎族"
-      },
-      {
-        "gloss": "Наси",
-        "id": "her-cn-dongba-painting",
-        "zh": "纳西族"
-      },
-      {
-        "gloss": "Шуй",
-        "id": "her-cn-shui-horsehair",
-        "zh": "水族"
-      },
-      {
-        "gloss": "Эвенки",
-        "id": "her-cn-evenki-birchbark",
-        "zh": "鄂温克族"
-      },
-      {
-        "gloss": "Хэчжэ",
-        "id": "her-cn-hezhe-fishskin",
-        "zh": "赫哲族"
-      },
-      {
-        "gloss": "Чжуаны",
-        "id": "her-cn-zhuang-brocade",
-        "zh": "壮族"
-      },
-      {
-        "gloss": "Дай",
-        "id": "her-cn-dai-brocade",
-        "zh": "傣族"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Какой народ Китая ткёт узорные покрывала силанькапу, выбирая узор с изнанки ткани?",
-    "questionZh": null,
-    "topic": "Общество: население, этносы и религии",
     "topicSource": "authored"
   },
   {
@@ -47582,7 +45399,6 @@
     "explanation": {
       "ru": "Хоомей (图瓦呼麦) — горловое пение тувинцев (图瓦人), традиция тувинского народа в Республике Тыва. Певец одновременно ведёт выдержанный низкий звук и мелодию призвуков-обертонов. Родственные формы горлового пения есть и у других народов, в том числе у монголов Китая."
     },
-    "factGroup": "ethnos-khoomei",
     "factRow": "ethnos/heritage/her-ru-tuva-khoomei",
     "id": "ethnos-q69",
     "occurrences": [],
@@ -47965,6 +45781,785 @@
     "questionRu": "Какой народ России сохраняет свою версию героического эпоса «Гэсэр»?",
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "ppl-cn-dai",
+      "state": "verified"
+    },
+    "dossier": "ethnos",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "傣族 — 概况 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/seac/ztzl/daiz/gk.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "傣族孔雀舞 — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/project_details/12970"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "傣族 — 中国驻印度尼西亚大使馆（五十六个民族）",
+        "url": "https://id.china-embassy.gov.cn/chn/zggk/wslgmz/200404/t20040421_2343348.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "少数民族概况 — 中国驻哈萨克斯坦大使馆",
+        "url": "https://kz.china-embassy.gov.cn/chn/gyzg/zggk/renkouminzu/201008/t20100804_1364748.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "佛教 — 北京市民族宗教事务委员会",
+        "url": "https://mzzjw.beijing.gov.cn/bjmz/bjdzj/zjzhjs/fj/"
+      }
+    ],
+    "explanation": {
+      "ru": "Дай (傣族) живут главным образом в провинции Юньнань (云南省). Их основные районы — Сишуанбаньна-Дайский и Дэхун-Дай-Цзинпоский автономные округа, а также автономные уезды Гэнма и Мэнлянь. Самый известный танец дай — павлиний (孔雀舞)."
+    },
+    "factRow": "ethnos/peoples/ppl-cn-dai",
+    "id": "ethnos-q78",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "ppl-cn-dai",
+        "zh": "云南"
+      },
+      {
+        "gloss": "Гуйчжоу — одна из основных областей расселения мяо",
+        "id": "ppl-cn-miao",
+        "zh": "贵州"
+      },
+      {
+        "gloss": "Ляонин — одна из основных областей расселения маньчжуров",
+        "id": "ppl-cn-manchu",
+        "zh": "辽宁"
+      },
+      {
+        "gloss": "Цзилинь — здесь Яньбянь, главная область проживания корейцев Китая",
+        "id": "ppl-cn-korean",
+        "zh": "吉林"
+      },
+      {
+        "gloss": "Хайнань — основная область проживания ли",
+        "id": "ppl-cn-li",
+        "zh": "海南"
+      },
+      {
+        "gloss": "Хэчжэ Китая живут прежде всего в районе трёх рек Хэйлунцзяна",
+        "id": "ppl-cn-hezhen",
+        "zh": "黑龙江"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В какой провинции Китая главным образом живут дай?",
+    "questionZh": null,
+    "topic": "Общество: население, этносы и религии",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "ppl-cn-korean",
+      "state": "verified"
+    },
+    "dossier": "ethnos",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "朝鲜族 — 概况 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/seac/ztzl/cxz/gk.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "朝鲜族农乐舞（象帽舞） — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/art/detail/id/12962.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "中国朝鲜族农乐舞 — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/nongyuewu.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "朝鲜族：风俗习惯 — 国家民委，《中国少数民族》",
+        "url": "https://www.neac.gov.cn/seac/ztzl/cxz/fsxg.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Яньбянь-Корейский автономный округ (延边朝鲜族自治州) — крупнейший район компактного проживания корейцев Китая (朝鲜族) — находится в провинции Цзилинь (吉林省). Корейцы живут и в других районах страны. Их язык — корейский (朝鲜语)."
+    },
+    "factRow": "ethnos/peoples/ppl-cn-korean",
+    "id": "ethnos-q79",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "ppl-cn-korean",
+        "zh": "吉林"
+      },
+      {
+        "gloss": "Гуйчжоу — одна из основных областей расселения мяо",
+        "id": "ppl-cn-miao",
+        "zh": "贵州"
+      },
+      {
+        "gloss": "Ляонин — одна из основных областей расселения маньчжуров",
+        "id": "ppl-cn-manchu",
+        "zh": "辽宁"
+      },
+      {
+        "gloss": "Юньнань — здесь Сишуанбаньна-Дайский и Дэхун-Дай-Цзинпоский автономные округа",
+        "id": "ppl-cn-dai",
+        "zh": "云南"
+      },
+      {
+        "gloss": "Хайнань — основная область проживания ли",
+        "id": "ppl-cn-li",
+        "zh": "海南"
+      },
+      {
+        "gloss": "Хэчжэ Китая живут прежде всего в районе трёх рек Хэйлунцзяна",
+        "id": "ppl-cn-hezhen",
+        "zh": "黑龙江"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В какой провинции находится Яньбянь — главный район расселения корейцев Китая?",
+    "questionZh": null,
+    "topic": "Общество: население, этносы и религии",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "her-cn-muqam",
+      "state": "verified"
+    },
+    "dossier": "ethnos",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "新疆维吾尔木卡姆艺术（十二木卡姆）— 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/project_details/12595.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "维吾尔木卡姆艺术：如何实现开发与保护的良性互动 — 国家民委，中国民族报",
+        "url": "https://www.neac.gov.cn/seac/c100593/201211/1095471.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Мукам (新疆维吾尔木卡姆艺术) — большая музыкальная традиция уйгуров (维吾尔族): пение, танец и инструментальная музыка в ней соединены в одно целое. Одна из её форм — «Двенадцать мукамов» (十二木卡姆). Мукам бытует в южном, северном и восточном Синьцзяне."
+    },
+    "factRow": "ethnos/heritage/her-cn-muqam",
+    "id": "ethnos-q80",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "her-cn-muqam",
+        "zh": "维吾尔族"
+      },
+      {
+        "gloss": "Монголы",
+        "id": "her-cn-urtiin-duu",
+        "zh": "蒙古族"
+      },
+      {
+        "gloss": "Дун",
+        "id": "her-cn-dong-song",
+        "zh": "侗族"
+      },
+      {
+        "gloss": "Тибетцы",
+        "id": "her-cn-tibetan-opera",
+        "zh": "藏族"
+      },
+      {
+        "gloss": "Корейцы Китая",
+        "id": "her-cn-korean-farmers-dance",
+        "zh": "朝鲜族"
+      },
+      {
+        "gloss": "Дай",
+        "id": "her-cn-peacock-dance",
+        "zh": "傣族"
+      },
+      {
+        "gloss": "Аси — группа народа и; традиция описана именно для аси",
+        "id": "her-cn-asi-dance",
+        "zh": "彝族"
+      },
+      {
+        "gloss": "Казахи",
+        "id": "her-cn-aytis",
+        "zh": "哈萨克族"
+      },
+      {
+        "gloss": "Наси",
+        "id": "her-cn-baisha-music",
+        "zh": "纳西族"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какой народ Китая хранит музыкальную традицию мукам?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "ppl-cn-hui",
+      "state": "verified"
+    },
+    "dossier": "ethnos",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "回族 — 概况 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/seac/ztzl/huiz/gk.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "花儿（宁夏回族山花儿） — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/project_details/20073.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "回族 — 中国驻印度尼西亚大使馆（五十六个民族）",
+        "url": "https://id.china-embassy.gov.cn/chn/zggk/wslgmz/200404/t20040421_2343308.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "中国的少数民族政策及其实践（国务院新闻办公室白皮书）— 中华人民共和国外交部",
+        "url": "https://www.mfa.gov.cn/ziliao_674904/zt_674979/ywzt_675099/wzzt_675579/2296_675789/200207/t20020705_9288319.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "少数民族概况 — 中国驻哈萨克斯坦大使馆",
+        "url": "https://kz.china-embassy.gov.cn/chn/gyzg/zggk/renkouminzu/201008/t20100804_1364748.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Хуэй (回族) традиционно исповедуют ислам (伊斯兰教). Ислам в Китае исповедуют и другие народы — уйгуры, казахи, киргизы, дунсяне, салары и баоань. Хуэй живут по всему Китаю, а главный район их компактного проживания — Нинся. Язык современных хуэй — китайский."
+    },
+    "factRow": "ethnos/peoples/ppl-cn-hui",
+    "id": "ethnos-q81",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "ppl-cn-hui",
+        "zh": "回族"
+      },
+      {
+        "gloss": "Тибетцы — народ Китая",
+        "id": "ppl-cn-tibetan",
+        "zh": "藏族"
+      },
+      {
+        "gloss": "Монголы — народ Китая",
+        "id": "ppl-cn-mongol",
+        "zh": "蒙古族"
+      },
+      {
+        "gloss": "Дай — народ Китая",
+        "id": "ppl-cn-dai",
+        "zh": "傣族"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какой из этих народов Китая традиционно исповедует ислам?",
+    "questionZh": null,
+    "topic": "Общество: население, этносы и религии",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "ppl-cn-mongol",
+      "state": "verified"
+    },
+    "dossier": "ethnos",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-16",
+        "title": "蒙古族 — 概况 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/seac/ztzl/mgz/gk.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "蒙古族长调民歌 — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/project_details/12410.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "蒙古族 — 中国驻印度尼西亚大使馆（五十六个民族）",
+        "url": "https://id.china-embassy.gov.cn/chn/zggk/wslgmz/200404/t20040421_2343269.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "中国的少数民族政策及其实践（国务院新闻办公室白皮书）— 中华人民共和国外交部",
+        "url": "https://www.mfa.gov.cn/ziliao_674904/zt_674979/ywzt_675099/wzzt_675579/2296_675789/200207/t20020705_9288319.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "蒙古族 — 黑龙江省人民政府",
+        "url": "https://www.hlj.gov.cn/hlj/c108504/202503/c00_31820378.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Монголы (蒙古族), как и тибетцы, традиционно исповедуют тибетский буддизм (藏传佛教), который прежде называли ламаизмом. Он рано пришёл в монгольские земли и стал главной религией монголов. Тибетский буддизм исповедуют и некоторые другие народы Китая — ту, юйгу, мэньба."
+    },
+    "factRow": "ethnos/peoples/ppl-cn-mongol",
+    "id": "ethnos-q82",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "ppl-cn-mongol",
+        "zh": "蒙古族"
+      },
+      {
+        "gloss": "Хуэй — народ Китая",
+        "id": "ppl-cn-hui",
+        "zh": "回族"
+      },
+      {
+        "gloss": "Уйгуры — народ Китая",
+        "id": "ppl-cn-uyghur",
+        "zh": "维吾尔族"
+      },
+      {
+        "gloss": "Корейцы Китая — народ Китая",
+        "id": "ppl-cn-korean",
+        "zh": "朝鲜族"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какой из этих народов Китая традиционно исповедует ламаизм?",
+    "questionZh": null,
+    "topic": "Общество: население, этносы и религии",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "dw-siheyuan",
+      "state": "verified"
+    },
+    "dossier": "ethnos",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "北京传统民居——老北京四合院 — 首都之窗（北京市人民政府门户网站）",
+        "url": "https://www.beijing.gov.cn/tsbj/sxym/202007/t20200713_1946380.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "北京为四合院“立传” — 光明日报（中国共产党新闻网）",
+        "url": "http://cpc.people.com.cn/n/2014/0520/c83083-25039984.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Это сыхэюань (四合院) — традиционная усадьба Северного Китая: главный дом, дом напротив и два боковых флигеля стоят вокруг внутреннего двора. Правительство Пекина называет сыхэюань самой старой и самой распространённой формой китайского жилья и типичным жильём ханьцев. Самые известные сыхэюани — пекинские."
+    },
+    "factGroup": "ming-beijing-word",
+    "factRow": "ethnos/dwellings/dw-siheyuan",
+    "id": "ethnos-q83",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "dw-siheyuan",
+        "zh": "四合院"
+      },
+      {
+        "gloss": "Тулоу — большие земляные жилые дома, в которых вместе жили десятки семей",
+        "id": "dw-tulou",
+        "zh": "土楼"
+      },
+      {
+        "gloss": "Яодун — традиционное жильё-пещера лёссового плато",
+        "id": "dw-yaodong",
+        "zh": "窑洞"
+      },
+      {
+        "gloss": "Юрта — разборное войлочное жилище кочевников-монголов",
+        "id": "dw-menggubao",
+        "zh": "蒙古包"
+      },
+      {
+        "gloss": "Дяоцзяолоу — деревянный дом на склоне: передняя часть поднята на столбах над землёй",
+        "id": "dw-diaojiaolou",
+        "zh": "吊脚楼"
+      },
+      {
+        "gloss": "Чжулоу — дом на высоких столбах: внизу пусто или держат скот, жильё наверху",
+        "id": "dw-zhulou",
+        "zh": "竹楼"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется традиционное жильё Пекина (北京)?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "dw-yaodong",
+      "state": "verified"
+    },
+    "dossier": "ethnos",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "中国黄土高原约3000万人居住在各类型窑洞中 — 人民网（新华网）",
+        "url": "http://politics.people.com.cn/n/2013/0731/c70731-22390444.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "文化中国行丨一孔窑洞，一抹乡愁 — 新华网",
+        "url": "http://www.news.cn/politics/20240916/5b5a1fa0fbf645189685364d06658f7e/c.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Пещерные жилища яодун (窑洞) — традиционное жильё Лёссового плато (黄土高原) на северо-западе Китая. Лёссовое плато — крупнейшая в мире область отложений лёсса. Для крестьян этого района яодун долго был основным домом, и во многих сёлах в них живут до сих пор."
+    },
+    "factRow": "ethnos/dwellings/dw-yaodong",
+    "id": "ethnos-q84",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "dw-yaodong",
+        "zh": "黄土高原"
+      },
+      {
+        "gloss": "Пекин — столица Китая; классический сыхэюань — пекинский",
+        "id": "dw-siheyuan",
+        "zh": "北京"
+      },
+      {
+        "gloss": "Фуцзянь — провинция на юго-востоке Китая",
+        "id": "dw-tulou",
+        "zh": "福建"
+      },
+      {
+        "gloss": "Улиншань — горный край на западе Хунани и Хубэя, где живут туцзя",
+        "id": "dw-diaojiaolou",
+        "zh": "武陵山区"
+      },
+      {
+        "gloss": "Юньнань — провинция на юго-западе Китая",
+        "id": "dw-zhulou",
+        "zh": "云南"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Где традиционно живут в пещерных жилищах 窑洞?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "dw-zhulou",
+      "state": "verified"
+    },
+    "dossier": "ethnos",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "傣族 - 风俗习惯 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/seac/ztzl/daiz/fsxg.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "雨林深处有人居（文化中国行·传统民居） — 人民日报",
+        "url": "https://paper.people.com.cn/rmrb/pc/content/202605/02/content_30154629.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Дома на сваях чжулоу (竹楼) — жильё народа дай (傣族) в Юньнани. Это постройки ганьлань: жилые комнаты подняты над землёй, а нижний ярус оставлен для хозяйства. Своим особым стилем выделяются чжулоу Сишуанбаньны и окрестностей Жуйли."
+    },
+    "factGroup": "dai-people",
+    "factRow": "ethnos/dwellings/dw-zhulou",
+    "id": "ethnos-q85",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "dw-zhulou",
+        "zh": "傣族"
+      },
+      {
+        "gloss": "Ханьцы — основной народ Китая; сыхэюань — типичное ханьское жильё",
+        "id": "dw-siheyuan",
+        "zh": "汉族"
+      },
+      {
+        "gloss": "Монголы — народ Китая, традиционно кочевники-скотоводы",
+        "id": "dw-menggubao",
+        "zh": "蒙古族"
+      },
+      {
+        "gloss": "Туцзя — один из народов Китая",
+        "id": "dw-diaojiaolou",
+        "zh": "土家族"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какой народ Китая живёт в домах на сваях 竹楼?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "dia-yue",
+      "state": "verified"
+    },
+    "dossier": "ethnos",
+    "evidence": [
+      {
+        "authority": "academic",
+        "checkedAt": "2026-10-23",
+        "title": "七大方言区概况 — 唐山学院现代汉语课程网站",
+        "url": "https://xdhy.tsu.edu.cn/1_fangyanqu.html"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-10-23",
+        "title": "粤方言 — 河南师范大学语言文字工作",
+        "url": "https://www.htu.edu.cn/yw/2010/0708/c14252a31434/page.htm"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-10-23",
+        "title": "我国汉语七大方言区 — 河南师范大学语言文字工作",
+        "url": "https://www.htu.edu.cn/yw/2010/0708/c14252a31441/page.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "人民日报海外版（人民网）2016-05-23",
+        "url": "http://paper.people.com.cn/rmrbhwb/html/2016-05/23/content_1681388.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Это юэский, или кантонский, диалект (粤方言). Кроме Гуандуна, на нём говорят в Сянгане и Аомэне, а также в части Гуанси. Его представитель — гуанчжоуский говор (广州话). 粤 — сокращённое название Гуандуна."
+    },
+    "factGroup": "guangdong-yue",
+    "factRow": "ethnos/dialects/dia-yue",
+    "id": "ethnos-q86",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "dia-yue",
+        "zh": "粤方言"
+      },
+      {
+        "gloss": "Северное наречие (гуаньхуа) — самое распространённое китайское наречие, основа путунхуа",
+        "id": "dia-beifang",
+        "zh": "北方方言"
+      },
+      {
+        "gloss": "Диалект у — диалект Шанхая, юга Цзянсу и большей части Чжэцзяна",
+        "id": "dia-wu",
+        "zh": "吴方言"
+      },
+      {
+        "gloss": "Сянский диалект — диалект большей части Хунани",
+        "id": "dia-xiang",
+        "zh": "湘方言"
+      },
+      {
+        "gloss": "Ганьский диалект — диалект большей части Цзянси",
+        "id": "dia-gan",
+        "zh": "赣方言"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "На каком диалекте говорят в провинции Гуандун (广东)?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "dia-min",
+      "state": "verified"
+    },
+    "dossier": "ethnos",
+    "evidence": [
+      {
+        "authority": "academic",
+        "checkedAt": "2026-10-23",
+        "title": "七大方言区概况 — 唐山学院现代汉语课程网站",
+        "url": "https://xdhy.tsu.edu.cn/1_fangyanqu.html"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-10-23",
+        "title": "闽方言 — 河南师范大学语言文字工作",
+        "url": "https://www.htu.edu.cn/yw/2010/0708/c14252a31430/page.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "“十大最难懂方言”排名引发热议 — 人民日报海外版（中国共产党新闻网）",
+        "url": "http://cpc.people.com.cn/n/2013/1223/c83083-23918534.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "人民日报海外版（人民网）2016-05-23",
+        "url": "http://paper.people.com.cn/rmrbhwb/html/2016-05/23/content_1681388.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Это миньский диалект (闽方言): он звучит в большей части Фуцзяни, на Тайване и в части Гуандуна и Хайнаня. Внутри него самые большие различия среди семи больших диалектов, его делят на пять подгрупп. Представители — фучжоуский говор (подгруппа миньдун) и сямэньский (миньнань). 闽 — сокращённое название Фуцзяни."
+    },
+    "factGroup": "fujian-min",
+    "factRow": "ethnos/dialects/dia-min",
+    "id": "ethnos-q87",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "dia-min",
+        "zh": "闽方言"
+      },
+      {
+        "gloss": "Северное наречие (гуаньхуа) — самое распространённое китайское наречие, основа путунхуа",
+        "id": "dia-beifang",
+        "zh": "北方方言"
+      },
+      {
+        "gloss": "Диалект у — диалект Шанхая, юга Цзянсу и большей части Чжэцзяна",
+        "id": "dia-wu",
+        "zh": "吴方言"
+      },
+      {
+        "gloss": "Сянский диалект — диалект большей части Хунани",
+        "id": "dia-xiang",
+        "zh": "湘方言"
+      },
+      {
+        "gloss": "Ганьский диалект — диалект большей части Цзянси",
+        "id": "dia-gan",
+        "zh": "赣方言"
+      },
+      {
+        "gloss": "Юэский (кантонский) диалект — диалект Гуандуна, Гонконга и Макао",
+        "id": "dia-yue",
+        "zh": "粤方言"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "На каком диалекте говорят в большей части провинции Фуцзянь (福建) и на Тайване?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "dia-gan",
+      "state": "verified"
+    },
+    "dossier": "ethnos",
+    "evidence": [
+      {
+        "authority": "academic",
+        "checkedAt": "2026-10-23",
+        "title": "七大方言区概况 — 唐山学院现代汉语课程网站",
+        "url": "https://xdhy.tsu.edu.cn/1_fangyanqu.html"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-10-23",
+        "title": "我国汉语七大方言区 — 河南师范大学语言文字工作",
+        "url": "https://www.htu.edu.cn/yw/2010/0708/c14252a31441/page.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "人民日报海外版（人民网）2016-05-23",
+        "url": "http://paper.people.com.cn/rmrbhwb/html/2016-05/23/content_1681388.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Это ганьский диалект (赣方言) — один из семи больших диалектов китайского языка. Его представитель — наньчанский говор (南昌话). 赣 — сокращённое название Цзянси."
+    },
+    "factRow": "ethnos/dialects/dia-gan",
+    "id": "ethnos-q88",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "dia-gan",
+        "zh": "赣方言"
+      },
+      {
+        "gloss": "Северное наречие (гуаньхуа) — самое распространённое китайское наречие, основа путунхуа",
+        "id": "dia-beifang",
+        "zh": "北方方言"
+      },
+      {
+        "gloss": "Диалект у — диалект Шанхая, юга Цзянсу и большей части Чжэцзяна",
+        "id": "dia-wu",
+        "zh": "吴方言"
+      },
+      {
+        "gloss": "Сянский диалект — диалект большей части Хунани",
+        "id": "dia-xiang",
+        "zh": "湘方言"
+      },
+      {
+        "gloss": "Миньский диалект — диалект Фуцзяни и соседних земель",
+        "id": "dia-min",
+        "zh": "闽方言"
+      },
+      {
+        "gloss": "Юэский (кантонский) диалект — диалект Гуандуна, Гонконга и Макао",
+        "id": "dia-yue",
+        "zh": "粤方言"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "На каком диалекте говорят в большей части провинции Цзянси (江西)?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
     "topicSource": "authored"
   },
   {
@@ -58847,6 +57442,7 @@
     "explanation": {
       "ru": "Хун Сюцюань (洪秀全, 1814–1864) — уроженец уезда Хуасянь провинции Гуандун (广东), из семьи хакка. Он возглавил восстание в Цзиньтяне и провозгласил Тайпин тяньго. Тогда же он принял титул Небесного вана."
     },
+    "factGroup": "guangdong-yue",
     "factRow": "modern-history/figures/per-hongxiuquan",
     "id": "modern-history-q19",
     "occurrences": [],

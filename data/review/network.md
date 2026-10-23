@@ -2,7 +2,7 @@
 
 Файл пишет сборка (`scripts/network.py`). Ядро размечается в таблицах досье: `core` у строки, `sides` у таблицы. Граф для Obsidian — папка `data/review/graph/`: сборка каждый раз стирает в ней все заметки `*.md` и пишет заново, поэтому свои заметки в эту папку не кладите.
 
-Досье: 15, с утверждённым каркасом: 5.
+Досье: 15, с утверждённым каркасом: 6.
 
 ## Олимпиада по годам
 
@@ -199,13 +199,74 @@
 
 ### Этносы и традиционный быт (`ethnos`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `peoples`
 
-- строк: 90
-- принятых вопросов: 50
-- строк с вопросом: 49
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 1
-- встроено олимпиадных: 2
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | region | religion | другие | олимпиада |
+|---|---|---|---|---|
+| ppl-cn-han | × | × | 1 | прогноз |
+| ppl-cn-zhuang | × | × | 1 | да |
+| ppl-cn-hui | × | — | 1 | прогноз |
+| ppl-cn-manchu | — | × | — | да |
+| ppl-cn-uyghur | × | — | 1 | прогноз |
+| ppl-cn-miao | 1 | × | — | прогноз |
+| ppl-cn-tibetan | × | — | 1 | прогноз |
+| ppl-cn-mongol | × | — | 1 | прогноз |
+| ppl-cn-korean | 1 | × | — | прогноз |
+| ppl-cn-dai | 1 | — | — | прогноз |
+
+#### Таблица `heritage`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | people | другие | олимпиада |
+|---|---|---|---|
+| her-cn-urtiin-duu | — | 1 | прогноз |
+| her-cn-dong-song | — | 1 | прогноз |
+| her-cn-muqam | 1 | — | прогноз |
+| her-cn-manas | 1 | — | прогноз |
+| her-cn-gesar | × | — | прогноз |
+| her-cn-tibetan-opera | — | 1 | прогноз |
+| her-cn-peacock-dance | 1 | — | прогноз |
+| her-cn-miao-batik | — | 1 | прогноз |
+| her-cn-jangar | — | — | прогноз |
+| her-cn-morin-khuur | 1 | — | прогноз |
+
+#### Таблица `dwellings`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | region | people | другие | олимпиада |
+|---|---|---|---|---|
+| dw-siheyuan | 1 | × | — | прогноз |
+| dw-tulou | × | × | — | прогноз |
+| dw-yaodong | 1 | × | — | прогноз |
+| dw-menggubao | × | × | — | прогноз |
+| dw-diaojiaolou | × | × | — | прогноз |
+| dw-zhulou | × | 1 | — | прогноз |
+
+#### Таблица `dialects`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | region | другие | олимпиада |
+|---|---|---|---|
+| dia-beifang | × | 1 | прогноз |
+| dia-wu | — | — | прогноз |
+| dia-xiang | — | — | прогноз |
+| dia-gan | 1 | — | прогноз |
+| dia-kejia | × | — | прогноз |
+| dia-min | 1 | — | прогноз |
+| dia-yue | 1 | — | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- нет
+
+Российские строки (разбирает российская тема): вопросов 15.
 
 ### Праздники (`holidays`)
 
@@ -593,6 +654,10 @@
 - cuisine/sweets/cu-cn-tanghulu
 - cuisine/teatypes/tt-white
 - cuisine/teatypes/tt-yellow
+- ethnos/dialects/dia-kejia
+- ethnos/heritage/her-cn-gesar
+- ethnos/heritage/her-cn-manas
+- ethnos/peoples/ppl-cn-hui
 - landmarks/fortifications/lm-cn-great-wall
 - landmarks/fortifications/lm-cn-xian-wall
 - landmarks/gardens/lm-cn-summer-palace-garden
@@ -628,7 +693,6 @@
 - nature/landforms/land-changjiang
 - nature/landforms/land-dongbei
 - nature/landforms/land-huabei
-- nature/landforms/land-huangtu
 - nature/landforms/land-qingzang
 - nature/landforms/land-yungui
 - nature/mountains/mtn-kunlun
@@ -648,6 +712,13 @@
 
 ### Ссылка из ядра ведёт в строку вне ядра
 
+- ethnos/dialects/dia-xiang → provinces/cities/city-changsha
+- ethnos/dwellings/dw-diaojiaolou → ethnos/peoples/ppl-cn-tujia
+- ethnos/heritage/her-cn-dong-song → ethnos/peoples/ppl-cn-dong
+- ethnos/peoples/ppl-cn-korean → ethnos/heritage/her-cn-korean-farmers-dance
+- ethnos/peoples/ppl-cn-manchu → ethnos/heritage/her-cn-manchu-papercut
+- ethnos/peoples/ppl-cn-tibetan → ethnos/heritage/her-cn-zangniang-thangka
+- ethnos/peoples/ppl-cn-zhuang → ethnos/heritage/her-cn-zhuang-tianqin
 - nature/waters/wat-heilongjiang → nature/seas/sea-ru-okhotsk
 - provinces/cities/city-haerbin → nature/waters/wat-songhuajiang
 - provinces/cities/city-hangzhou → nature/waters/wat-qiantangjiang
