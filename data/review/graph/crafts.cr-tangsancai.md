@@ -2,8 +2,6 @@
 
 Тема: [[crafts]]
 
-Не хватает сторон: center
-
 Связи:
 - [[provinces.city-luoyang]]
 - [[provinces.prov-henan]]

@@ -2,8 +2,6 @@
 
 Тема: [[crafts]]
 
-Не хватает сторон: unesco
-
 Связи:
 - [[provinces.prov-zhejiang]]
 

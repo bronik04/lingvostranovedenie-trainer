@@ -2,8 +2,6 @@
 
 Тема: [[crafts]]
 
-Не хватает сторон: провинция
-
 Связи:
 - [[provinces.city-chengdu]]
 - [[provinces.prov-sichuan]]

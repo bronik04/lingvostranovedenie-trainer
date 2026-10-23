@@ -2,8 +2,6 @@
 
 Тема: [[crafts]]
 
-Не хватает сторон: unesco
-
 Связи:
 - [[provinces.city-nanjing]]
 - [[provinces.prov-jiangsu]]
