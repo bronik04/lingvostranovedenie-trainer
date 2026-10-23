@@ -105,6 +105,7 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
+            "center",
             "region"
           ]
         },
@@ -272,11 +273,7 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": [],
-          "core": true,
-          "skipSides": [
-            "region"
-          ]
+          "olympiad": []
         },
         {
           "id": "cr-longquan",
@@ -1059,12 +1056,7 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": [],
-          "core": true,
-          "skipSides": [
-            "center",
-            "era"
-          ]
+          "olympiad": []
         },
         {
           "id": "cr-shuxiu",
@@ -1193,12 +1185,7 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": [],
-          "core": true,
-          "skipSides": [
-            "center",
-            "era"
-          ]
+          "olympiad": []
         },
         {
           "id": "cr-guxiu",
@@ -2723,11 +2710,7 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": [],
-          "core": true,
-          "skipSides": [
-            "region"
-          ]
+          "olympiad": []
         },
         {
           "id": "cr-huasi",
@@ -4989,11 +4972,7 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": [],
-          "core": true,
-          "skipSides": [
-            "era"
-          ]
+          "olympiad": []
         },
         {
           "id": "fk-taohuawu",
@@ -5060,11 +5039,7 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": [],
-          "core": true,
-          "skipSides": [
-            "era"
-          ]
+          "olympiad": []
         },
         {
           "id": "fk-yangjiabu",
@@ -5963,12 +5938,7 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": [],
-          "core": true,
-          "skipSides": [
-            "center",
-            "era"
-          ]
+          "olympiad": []
         },
         {
           "id": "fk-qinhuai",
@@ -6639,8 +6609,7 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": [],
-          "core": true
+          "olympiad": []
         },
         {
           "id": "fk-huishan",
@@ -6977,11 +6946,7 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": [],
-          "core": true,
-          "skipSides": [
-            "era"
-          ]
+          "olympiad": []
         },
         {
           "id": "fk-mianren",
