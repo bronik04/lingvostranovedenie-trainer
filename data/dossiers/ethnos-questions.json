@@ -985,48 +985,6 @@
     ]
   },
   {
-    "id": "ethnos-q89",
-    "embeds": "2021-22-reg-q814d54",
-    "status": "draft",
-    "fact": {
-      "table": "dwellings",
-      "row": "dw-tulou",
-      "ask": "name",
-      "where": {
-        "country": "中国"
-      }
-    }
-  },
-  {
-    "id": "ethnos-q90",
-    "embeds": "2020-21-pri-qac236e",
-    "status": "draft",
-    "fact": {
-      "table": "dialects",
-      "row": "dia-wu",
-      "ask": "name",
-      "where": {
-        "country": "中国"
-      }
-    }
-  },
-  {
-    "id": "ethnos-q91",
-    "embeds": "2021-22-mun-qa05d78",
-    "status": "draft",
-    "fact": {
-      "table": "dialects",
-      "row": "dia-xiang",
-      "ask": "name",
-      "where": {
-        "country": "中国"
-      }
-    },
-    "exclude": [
-      "dia-kejia"
-    ]
-  },
-  {
     "id": "ethnos-q92",
     "embeds": "2018-19-mun-47",
     "status": "draft",
