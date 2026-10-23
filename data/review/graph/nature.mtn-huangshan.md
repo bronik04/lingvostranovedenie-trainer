@@ -2,7 +2,7 @@
 
 Тема: [[nature]]
 
-Не хватает сторон: feature
+Не хватает сторон: feature, unesco
 
 Связи:
 - [[provinces.prov-anhui]]

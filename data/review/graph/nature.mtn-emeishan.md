@@ -2,7 +2,7 @@
 
 Тема: [[nature]]
 
-Не хватает сторон: province
+Не хватает сторон: province, unesco
 
 Связи:
 - [[provinces.prov-sichuan]]

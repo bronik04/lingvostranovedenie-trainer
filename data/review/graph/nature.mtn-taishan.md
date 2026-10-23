@@ -2,7 +2,7 @@
 
 Тема: [[nature]]
 
-Не хватает сторон: title
+Не хватает сторон: title, unesco
 
 Связи:
 - [[provinces.prov-shandong]]

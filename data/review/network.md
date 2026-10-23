@@ -199,43 +199,79 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | city | era | другие | олимпиада |
-|---|---|---|---|---|
-| lm-cn-beijing-gugong | — | — | — | прогноз |
-| lm-cn-chengde-resort | — | — | — | прогноз |
-| lm-cn-potala | — | × | — | прогноз |
+| строка | city | era | unesco | другие | олимпиада |
+|---|---|---|---|---|---|
+| lm-cn-beijing-gugong | — | — | — | — | прогноз |
+| lm-cn-chengde-resort | — | — | — | — | прогноз |
+| lm-cn-potala | — | × | — | — | прогноз |
 
 #### Таблица `gardens`
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | city | era | другие | олимпиада |
-|---|---|---|---|---|
-| lm-cn-zhuozheng-garden | — | — | 1 | прогноз |
-| lm-cn-summer-palace-garden | — | — | 1 | прогноз |
-| lm-cn-yuanmingyuan | — | — | 1 | прогноз |
+| строка | city | era | unesco | другие | олимпиада |
+|---|---|---|---|---|---|
+| lm-cn-zhuozheng-garden | — | — | — | 1 | прогноз |
+| lm-cn-summer-palace-garden | — | — | — | 1 | прогноз |
+| lm-cn-yuanmingyuan | — | — | × | 1 | прогноз |
 
 #### Таблица `sacred`
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | city | era | другие | олимпиада |
-|---|---|---|---|---|
-| lm-cn-tiantan | — | — | — | прогноз |
-| lm-cn-qufu-confucius | — | — | — | прогноз |
-| lm-cn-mogao | — | — | — | прогноз |
-| lm-cn-shaolin | — | 1 | — | прогноз |
-| lm-cn-longmen | — | — | — | прогноз |
-| lm-cn-yungang | 1 | — | — | прогноз |
-| lm-cn-dayan | — | — | 1 | прогноз |
+| строка | city | era | unesco | другие | олимпиада |
+|---|---|---|---|---|---|
+| lm-cn-tiantan | — | — | — | — | прогноз |
+| lm-cn-qufu-confucius | — | — | — | — | прогноз |
+| lm-cn-mogao | — | — | — | — | прогноз |
+| lm-cn-shaolin | — | 1 | — | — | прогноз |
+| lm-cn-longmen | — | — | — | — | прогноз |
+| lm-cn-yungang | 1 | — | — | — | прогноз |
+| lm-cn-dayan | — | — | — | 1 | прогноз |
+| lm-cn-dazu | — | × | — | — | прогноз |
 
 #### Таблица `fortifications`
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | city | era | другие | олимпиада |
-|---|---|---|---|---|
-| lm-cn-xian-wall | — | — | — | прогноз |
+| строка | city | era | unesco | другие | олимпиада |
+|---|---|---|---|---|---|
+| lm-cn-xian-wall | — | — | × | — | прогноз |
+| lm-cn-great-wall | × | — | — | — | прогноз |
+
+#### Таблица `sites`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | city | era | unesco | другие | олимпиада |
+|---|---|---|---|---|---|
+| lm-cn-terracotta | — | — | — | — | прогноз |
+| lm-cn-ming-tombs | — | — | — | — | прогноз |
+| lm-cn-pingyao | — | — | — | — | прогноз |
+| lm-cn-lijiang | — | × | — | — | прогноз |
+| lm-cn-bund | — | × | × | — | прогноз |
+| lm-cn-oriental-pearl | — | × | × | — | прогноз |
+| lm-cn-sun-island | — | × | × | — | прогноз |
+| lm-cn-sun-moon-lake | × | × | × | — | прогноз |
+| lm-cn-yellow-crane | — | — | × | — | прогноз |
+
+#### Таблица `intangible`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | unesco | другие | олимпиада |
+|---|---|---|---|
+| int-jingju | — | — | прогноз |
+| int-kunqu | — | — | прогноз |
+| int-yueju-guangdong | — | — | прогноз |
+| int-guqin | — | — | прогноз |
+| int-shufa | — | — | прогноз |
+| int-zhuanke | — | — | прогноз |
+| int-zhenjiu | — | — | прогноз |
+| int-zhusuan | — | — | прогноз |
+| int-jieqi | — | — | прогноз |
+| int-taijiquan | — | — | прогноз |
+| int-zhicha | — | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
@@ -293,29 +329,29 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | mouth | nickname | feature | другие | олимпиада |
-|---|---|---|---|---|---|
-| wat-changjiang | 1 | 1 | — | 1 | да |
-| wat-huanghe | 1 | — | — | 1 | да |
-| wat-zhujiang | — | × | — | — | да |
-| wat-heilongjiang | 1 | × | — | — | прогноз |
-| wat-huaihe | — | × | — | — | прогноз |
-| wat-lancangjiang | — | — | — | 1 | прогноз |
-| wat-yarlung | — | × | — | — | прогноз |
-| wat-talimuhe | × | × | — | 1 | прогноз |
-| wat-dayunhe | × | × | — | — | да |
+| строка | mouth | nickname | feature | unesco | другие | олимпиада |
+|---|---|---|---|---|---|---|
+| wat-changjiang | 1 | 1 | — | × | 1 | да |
+| wat-huanghe | 1 | — | — | × | 1 | да |
+| wat-zhujiang | — | × | — | × | — | да |
+| wat-heilongjiang | 1 | × | — | × | — | прогноз |
+| wat-huaihe | — | × | — | × | — | прогноз |
+| wat-lancangjiang | — | — | — | × | 1 | прогноз |
+| wat-yarlung | — | × | — | × | — | прогноз |
+| wat-talimuhe | × | × | — | × | 1 | прогноз |
+| wat-dayunhe | × | × | — | — | — | да |
 
 #### Таблица `lakes`
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | province | feature | другие | олимпиада |
-|---|---|---|---|---|
-| lake-poyanghu | — | — | — | да |
-| lake-dongtinghu | 1 | — | 1 | прогноз |
-| lake-taihu | 1 | — | — | да |
-| lake-qinghaihu | — | 1 | — | да |
-| lake-xihu | — | × | — | да |
+| строка | province | feature | unesco | другие | олимпиада |
+|---|---|---|---|---|---|
+| lake-poyanghu | — | — | × | — | да |
+| lake-dongtinghu | 1 | — | × | 1 | прогноз |
+| lake-taihu | 1 | — | × | — | да |
+| lake-qinghaihu | — | 1 | × | — | да |
+| lake-xihu | — | × | — | — | да |
 
 #### Таблица `seas`
 
@@ -335,24 +371,24 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | title | province | feature | другие | олимпиада |
-|---|---|---|---|---|---|
-| mtn-ximalaya | × | × | — | — | прогноз |
-| mtn-zhumulangma | × | — | — | 1 | да |
-| mtn-kunlun | × | × | 1 | — | прогноз |
-| mtn-tianshan | × | 1 | × | — | прогноз |
-| mtn-qinling | × | — | — | 1 | прогноз |
-| mtn-changbai | × | — | — | 1 | прогноз |
-| mtn-taishan | — | 1 | 1 | — | прогноз |
-| mtn-huashan | 1 | — | × | — | прогноз |
-| mtn-hengshan-hunan | — | — | × | 1 | прогноз |
-| mtn-hengshan-shanxi | 1 | — | × | — | прогноз |
-| mtn-songshan | — | 1 | × | — | прогноз |
-| mtn-wutaishan | × | 1 | × | — | прогноз |
-| mtn-emeishan | × | — | × | 1 | да |
-| mtn-jiuhuashan | × | 1 | × | — | прогноз |
-| mtn-putuoshan | × | — | × | — | да |
-| mtn-huangshan | × | 1 | — | 1 | прогноз |
+| строка | title | province | feature | unesco | другие | олимпиада |
+|---|---|---|---|---|---|---|
+| mtn-ximalaya | × | × | — | × | — | прогноз |
+| mtn-zhumulangma | × | — | — | × | 1 | да |
+| mtn-kunlun | × | × | 1 | × | — | прогноз |
+| mtn-tianshan | × | 1 | × | — | — | прогноз |
+| mtn-qinling | × | — | — | × | 1 | прогноз |
+| mtn-changbai | × | — | — | × | 1 | прогноз |
+| mtn-taishan | — | 1 | 1 | — | — | прогноз |
+| mtn-huashan | 1 | — | × | × | — | прогноз |
+| mtn-hengshan-hunan | — | — | × | × | 1 | прогноз |
+| mtn-hengshan-shanxi | 1 | — | × | × | — | прогноз |
+| mtn-songshan | — | 1 | × | × | — | прогноз |
+| mtn-wutaishan | × | 1 | × | — | — | прогноз |
+| mtn-emeishan | × | — | × | — | 1 | да |
+| mtn-jiuhuashan | × | 1 | × | × | — | прогноз |
+| mtn-putuoshan | × | — | × | × | — | да |
+| mtn-huangshan | × | 1 | — | — | 1 | прогноз |
 
 #### Таблица `landforms`
 
@@ -378,16 +414,28 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | river | province | era | feature | другие | олимпиада |
-|---|---|---|---|---|---|---|
-| eng-dujiangyan | 1 | — | — | × | — | прогноз |
-| eng-sanxia | 1 | — | × | — | 1 | прогноз |
-| eng-nanshuibeidiao | × | × | × | — | — | прогноз |
-| eng-gangzhuao | × | × | × | — | 1 | прогноз |
-| eng-zhaozhouqiao | × | 1 | — | × | — | прогноз |
-| eng-qingzang-railway | × | × | × | — | 1 | прогноз |
-| eng-fast | × | 1 | × | — | — | прогноз |
-| eng-karez | × | 1 | × | × | 1 | прогноз |
+| строка | river | province | era | feature | unesco | другие | олимпиада |
+|---|---|---|---|---|---|---|---|
+| eng-dujiangyan | 1 | — | — | × | — | — | прогноз |
+| eng-sanxia | 1 | — | × | — | × | 1 | прогноз |
+| eng-nanshuibeidiao | × | × | × | — | × | — | прогноз |
+| eng-gangzhuao | × | × | × | — | × | 1 | прогноз |
+| eng-zhaozhouqiao | × | 1 | — | × | × | — | прогноз |
+| eng-qingzang-railway | × | × | × | — | × | 1 | прогноз |
+| eng-fast | × | 1 | × | — | × | — | прогноз |
+| eng-karez | × | 1 | × | × | × | 1 | прогноз |
+
+#### Таблица `scenic`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | province | другие | олимпиада |
+|---|---|---|---|
+| sc-jiuzhaigou | — | — | прогноз |
+| sc-wulingyuan | — | — | прогноз |
+| sc-guilin | — | — | прогноз |
+| sc-shilin | — | — | прогноз |
+| sc-huanglong | — | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
@@ -520,10 +568,22 @@
 - cuisine/sweets/cu-cn-tanghulu
 - cuisine/teatypes/tt-white
 - cuisine/teatypes/tt-yellow
+- landmarks/fortifications/lm-cn-great-wall
 - landmarks/fortifications/lm-cn-xian-wall
 - landmarks/gardens/lm-cn-summer-palace-garden
 - landmarks/gardens/lm-cn-yuanmingyuan
 - landmarks/gardens/lm-cn-zhuozheng-garden
+- landmarks/intangible/int-guqin
+- landmarks/intangible/int-jieqi
+- landmarks/intangible/int-jingju
+- landmarks/intangible/int-kunqu
+- landmarks/intangible/int-shufa
+- landmarks/intangible/int-taijiquan
+- landmarks/intangible/int-yueju-guangdong
+- landmarks/intangible/int-zhenjiu
+- landmarks/intangible/int-zhicha
+- landmarks/intangible/int-zhuanke
+- landmarks/intangible/int-zhusuan
 - landmarks/palaces/lm-cn-beijing-gugong
 - landmarks/palaces/lm-cn-chengde-resort
 - landmarks/palaces/lm-cn-potala
@@ -534,6 +594,9 @@
 - landmarks/sacred/lm-cn-shaolin
 - landmarks/sacred/lm-cn-tiantan
 - landmarks/sacred/lm-cn-yungang
+- landmarks/sites/lm-cn-lijiang
+- landmarks/sites/lm-cn-pingyao
+- landmarks/sites/lm-cn-sun-moon-lake
 - nature/engineering/eng-gangzhuao
 - nature/engineering/eng-nanshuibeidiao
 - nature/engineering/eng-qingzang-railway

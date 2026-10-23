@@ -10,7 +10,8 @@
         "date": "zh",
         "people": "zh",
         "legend": "zh",
-        "origin": "ru"
+        "origin": "ru",
+        "unesco": "zh"
       },
       "rows": [
         {
@@ -80,11 +81,29 @@
               "quote": "直到有一年，一位智者发现“年”兽害怕红色、火光和炸响。于是，人们便在除夕之夜，在家门口贴上红色的春联，点燃竹子，竹子燃烧时发出“噼里啪啦”的响声，成功地将“年”兽吓跑。",
               "checkedAt": "2026-10-15",
               "authority": "official"
+            },
+            {
+              "title": "Spring festival, social practices of the Chinese people in celebration of traditional new year — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/spring-festival-social-practices-of-the-chinese-people-in-celebration-of-traditional-new-year-02126",
+              "quote": "Inscribed in 2024 ( 19.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "2024 春节——中国人庆祝传统新年的社会实践 羌年",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [
             "2017-18-mun-7"
-          ]
+          ],
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          }
         },
         {
           "id": "hol-chuxi",
@@ -171,7 +190,11 @@
           ],
           "olympiad": [
             "2021-22-shk-qfce22f"
-          ]
+          ],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-xiaonian",
@@ -212,7 +235,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-hanshi",
@@ -271,7 +298,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-qingming",
@@ -389,12 +420,30 @@
               "quote": "（五）端午节，放假１天（农历端午当日）；",
               "checkedAt": "2026-10-15",
               "authority": "official"
+            },
+            {
+              "title": "Dragon Boat festival — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/dragon-boat-festival-00225",
+              "quote": "Inscribed in 2009 ( 4.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "2009 中国篆刻 中国雕版印刷技艺 中国书法 中国剪纸 中国传统木结构建筑营造技艺 南京云锦织造技艺 端午节",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [
             "2015-16-mun-8",
             "2016-17-shk-5"
-          ]
+          ],
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          }
         },
         {
           "id": "hol-qixi",
@@ -444,7 +493,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-zhongqiu",
@@ -501,7 +554,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-chongyang",
@@ -542,7 +599,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-laba",
@@ -589,7 +650,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-poshui",
@@ -641,7 +706,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-huoba",
@@ -681,7 +750,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-naadam",
@@ -783,7 +856,11 @@
           ],
           "olympiad": [
             "addition-b1-15"
-          ]
+          ],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-qiuxi",
@@ -835,7 +912,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-yuandan",
@@ -882,7 +963,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-guoqing",
@@ -923,7 +1008,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-jianjun",
@@ -978,7 +1067,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-qingnian",
@@ -1034,7 +1127,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-zhishu",
@@ -1098,7 +1195,11 @@
           ],
           "olympiad": [
             "2018-19-reg-6"
-          ]
+          ],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-jiaoshi",
@@ -1148,7 +1249,11 @@
           "olympiad": [
             "2015-16-reg-7",
             "2017-18-mun-1"
-          ]
+          ],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-jizhe",
@@ -1209,7 +1314,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-hushi",
@@ -1265,7 +1374,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-jingcha",
@@ -1312,7 +1425,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-nongmin",
@@ -1356,7 +1473,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-guanggun",
@@ -1402,7 +1523,11 @@
           ],
           "olympiad": [
             "2021-22-reg-q536b95"
-          ]
+          ],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "hol-laodong",

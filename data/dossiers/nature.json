@@ -11,13 +11,15 @@
         "mouth": "zh",
         "nickname": "zh",
         "feature": "zh",
+        "unesco": "zh",
         "era": "zh",
         "about": "ru"
       },
       "sides": [
         "mouth",
         "nickname",
-        "feature"
+        "feature",
+        "unesco"
       ],
       "rows": [
         {
@@ -249,7 +251,14 @@
           "olympiad": [
             "2023-24-zak-1"
           ],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "wat-heilongjiang",
@@ -309,7 +318,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "wat-songhuajiang",
@@ -444,7 +460,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "wat-haihe",
@@ -816,7 +839,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "wat-talimuhe",
@@ -878,8 +908,13 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "mouth"
-          ]
+            "mouth",
+            "unesco"
+          ],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "wat-qiantangjiang",
@@ -1129,12 +1164,30 @@
               "quote": "京杭运河北起北京、南到杭州 … 全长1801公里",
               "checkedAt": "2026-10-18",
               "authority": "official"
+            },
+            {
+              "title": "The Grand Canal — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1443/",
+              "quote": "Date of Inscription: 2014 Minor boundary modification inscribed year: 2016 Criteria: (i)(iii)(iv)(vi)",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "让古老大运河焕发时代新风貌——写在大运河申遗成功十周年之际 — 中国政府网",
+              "url": "https://www.gov.cn/yaowen/liebiao/202406/content_6958794.htm",
+              "quote": "2014年6月22日，中国大运河在第三十八届世界遗产大会上被正式列入《世界遗产名录》",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [
             "2018-19-zak-10"
           ],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化遗产",
+            "gloss": "Объект всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "wat-lingqu",
@@ -1678,11 +1731,13 @@
         "province": "zh",
         "river": "zh",
         "feature": "zh",
+        "unesco": "zh",
         "about": "ru"
       },
       "sides": [
         "province",
-        "feature"
+        "feature",
+        "unesco"
       ],
       "rows": [
         {
@@ -1753,7 +1808,14 @@
             "2017-18-zak-10",
             "2022-23-reg-3"
           ],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "lake-dongtinghu",
@@ -1823,7 +1885,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "lake-taihu",
@@ -1875,7 +1944,14 @@
           "olympiad": [
             "2022-23-zak-4"
           ],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "lake-qinghaihu",
@@ -1930,7 +2006,14 @@
           "olympiad": [
             "2024-25-pri-34"
           ],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "lake-jingpohu",
@@ -2050,12 +2133,30 @@
               "quote": "杭州西湖在第35届世界遗产委员会大会上通过审议表决，正式列入世界遗产名录",
               "checkedAt": "2026-10-18",
               "authority": "official"
+            },
+            {
+              "title": "West Lake Cultural Landscape of Hangzhou — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1334/",
+              "quote": "Date of Inscription: 2011 Criteria: (ii)(iii)(vi)",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "一湖千年 再续华章——世界遗产保护发展的“西湖答卷” — 新华网",
+              "url": "http://www.news.cn/politics/20240730/bec3cc961bda439a80494401b66a0932/c.html",
+              "quote": "2011年6月24日，第35届世界遗产大会上，中国“杭州西湖文化景观”被列入《世界遗产名录》",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [
             "2015-16-shk-65"
           ],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化遗产",
+            "gloss": "Объект всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lake-namtso",
@@ -2425,6 +2526,7 @@
         "ocean": "zh",
         "province": "zh",
         "feature": "zh",
+        "unesco": "zh",
         "about": "ru"
       },
       "sides": [
@@ -2600,7 +2702,11 @@
           "olympiad": [
             "2024-25-mun-34"
           ],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "sea-nanhai",
@@ -2661,7 +2767,11 @@
           "olympiad": [
             "2024-25-mun-34"
           ],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "sea-taiwandao",
@@ -2723,7 +2833,11 @@
           "olympiad": [
             "2015-16-mun-10"
           ],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "sea-hainandao",
@@ -2777,7 +2891,11 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "sea-chongmingdao",
@@ -3676,12 +3794,14 @@
         "title": "zh",
         "province": "zh",
         "feature": "zh",
+        "unesco": "zh",
         "about": "ru"
       },
       "sides": [
         "title",
         "province",
-        "feature"
+        "feature",
+        "unesco"
       ],
       "rows": [
         {
@@ -3840,7 +3960,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "mtn-tianshan",
@@ -3889,10 +4016,28 @@
               "quote": "将中国新疆天山列入世界遗产名录",
               "checkedAt": "2026-10-18",
               "authority": "official"
+            },
+            {
+              "title": "Xinjiang Tianshan — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1414/",
+              "quote": "Date of Inscription: 2013 Criteria: (vii)(ix)",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国“新疆天山”成功列入世界自然遗产 — 人民网",
+              "url": "http://politics.people.com.cn/n/2013/0621/c14562-21926440.html",
+              "quote": "21日上午，正在柬埔寨王国首都金边召开的第37届世界遗产大会正式公布，中国“新疆天山”列入世界自然遗产。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界自然遗产",
+            "gloss": "Объект всемирного природного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "mtn-qinling",
@@ -3944,7 +4089,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "mtn-taihang",
@@ -4054,7 +4206,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "mtn-taishan",
@@ -4125,10 +4284,35 @@
               "quote": "主峰玉皇顶 … 海拔1545米",
               "checkedAt": "2026-10-18",
               "authority": "official"
+            },
+            {
+              "title": "Китай — список Всемирного наследия (страница государства-участника) — ЮНЕСКО",
+              "url": "https://whc.unesco.org/en/statesparties/cn",
+              "quote": "Mixed 4 Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area (1996) Mount Huangshan (1990) Mount Taishan (1987) Mount Wuyi (1999)",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Mount Taishan — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/437/",
+              "quote": "Date of Inscription: 1987 Criteria: (i)(ii)(iii)(iv)(v)(vi)(vii)",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "新华视点丨守护双遗瑰宝 绘就生态文旅共生新画卷 — 新华网",
+              "url": "https://www.news.cn/politics/20260617/85fb8dfd6e9743a186783f66c62b9eeb/c.html",
+              "quote": "于1987年被联合国教科文组织批准列为中国第一个世界文化与自然双重遗产",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化与自然双重遗产",
+            "gloss": "Смешанный объект Всемирного наследия ЮНЕСКО: одновременно культурный и природный"
+          }
         },
         {
           "id": "mtn-huashan",
@@ -4196,8 +4380,13 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "feature"
-          ]
+            "feature",
+            "unesco"
+          ],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "mtn-hengshan-hunan",
@@ -4275,8 +4464,13 @@
           ],
           "core": true,
           "skipSides": [
-            "feature"
-          ]
+            "feature",
+            "unesco"
+          ],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "mtn-hengshan-shanxi",
@@ -4358,8 +4552,13 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "feature"
-          ]
+            "feature",
+            "unesco"
+          ],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "mtn-songshan",
@@ -4497,6 +4696,20 @@
               "quote": "文殊菩萨道场，中国佛教四大名山之首",
               "checkedAt": "2026-10-18",
               "authority": "official"
+            },
+            {
+              "title": "Mount Wutai — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1279/",
+              "quote": "Date of Inscription: 2009 Criteria: (ii)(iii)(iv)(vi)",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "世界文化景观遗产五台山 — 央视网",
+              "url": "https://tv.cctv.com/yskd/special/wts/index.shtml",
+              "quote": "2009年，五台山成为世界文化景观遗产。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
@@ -4504,7 +4717,11 @@
           "skipSides": [
             "title",
             "feature"
-          ]
+          ],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "gloss": "Объект всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "mtn-emeishan",
@@ -4575,6 +4792,27 @@
               "quote": "万佛顶为峨眉山最高峰，海拔3099米，取名“普贤住处，万佛围绕”之意",
               "checkedAt": "2026-10-18",
               "authority": "official"
+            },
+            {
+              "title": "Китай — список Всемирного наследия (страница государства-участника) — ЮНЕСКО",
+              "url": "https://whc.unesco.org/en/statesparties/cn",
+              "quote": "Mixed 4 Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area (1996) Mount Huangshan (1990) Mount Taishan (1987) Mount Wuyi (1999)",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/779/",
+              "quote": "Date of Inscription: 1996 Criteria: (iv)(vi)(x)",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "新华视点丨守护双遗瑰宝 绘就生态文旅共生新画卷 — 新华网",
+              "url": "https://www.news.cn/politics/20260617/85fb8dfd6e9743a186783f66c62b9eeb/c.html",
+              "quote": "1996年，峨眉山-乐山大佛景区整体被联合国教科文组织列入世界文化与自然遗产名录",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [
@@ -4583,7 +4821,11 @@
           "core": true,
           "skipSides": [
             "title"
-          ]
+          ],
+          "unesco": {
+            "zh": "世界文化与自然双重遗产",
+            "gloss": "Смешанный объект Всемирного наследия ЮНЕСКО: одновременно культурный и природный"
+          }
         },
         {
           "id": "mtn-jiuhuashan",
@@ -4652,8 +4894,13 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "title"
-          ]
+            "title",
+            "unesco"
+          ],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "mtn-putuoshan",
@@ -4733,8 +4980,13 @@
           "core": true,
           "skipSides": [
             "title",
-            "feature"
-          ]
+            "feature",
+            "unesco"
+          ],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "mtn-huangshan",
@@ -4784,10 +5036,35 @@
               "quote": "1990年，黄山被联合国教科文组织批准列为世界文化与自然遗产",
               "checkedAt": "2026-10-18",
               "authority": "official"
+            },
+            {
+              "title": "Китай — список Всемирного наследия (страница государства-участника) — ЮНЕСКО",
+              "url": "https://whc.unesco.org/en/statesparties/cn",
+              "quote": "Mixed 4 Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area (1996) Mount Huangshan (1990) Mount Taishan (1987) Mount Wuyi (1999)",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Mount Huangshan — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/547/",
+              "quote": "Date of Inscription: 1990 Minor boundary modification inscribed year: 2012 Criteria: (ii)(vii)(x)",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "新华视点丨守护双遗瑰宝 绘就生态文旅共生新画卷 — 新华网",
+              "url": "https://www.news.cn/politics/20260617/85fb8dfd6e9743a186783f66c62b9eeb/c.html",
+              "quote": "黄山位于安徽省南部，以雄奇秀逸著称，是享誉全球的世界文化与自然双重遗产地",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化与自然双重遗产",
+            "gloss": "Смешанный объект Всемирного наследия ЮНЕСКО: одновременно культурный и природный"
+          }
         },
         {
           "id": "mtn-ru-ural",
@@ -5126,6 +5403,7 @@
         "nickname": "zh",
         "province": "zh",
         "feature": "zh",
+        "unesco": "zh",
         "about": "ru"
       },
       "sides": [
@@ -5193,7 +5471,11 @@
             "2016-17-zak-4",
             "2018-19-reg-2"
           ],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "land-yungui",
@@ -5251,7 +5533,11 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "land-huangtu",
@@ -5302,7 +5588,11 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "land-neimenggu",
@@ -5354,7 +5644,11 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "land-talimu",
@@ -5414,7 +5708,11 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "land-zhungeer",
@@ -5474,7 +5772,11 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "land-chaidamu",
@@ -5540,7 +5842,11 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "land-sichuan",
@@ -5609,7 +5915,11 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "land-taklamakan",
@@ -5682,7 +5992,11 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "land-badanjilin",
@@ -5738,9 +6052,27 @@
               "quote": "世界最高的固定沙山——必鲁图峰",
               "checkedAt": "2026-10-18",
               "authority": "official"
+            },
+            {
+              "title": "Badain Jaran Desert – Towers of Sand and Lakes — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1638/",
+              "quote": "Date of Inscription: 2024 Criteria: (vii)(viii)",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "巴丹吉林沙漠—沙山湖泊群申遗成功 — 中国政府网（人民日报海外版）",
+              "url": "https://www.gov.cn/lianbo/bumen/202407/content_6964696.htm",
+              "quote": "中国申报的巴丹吉林沙漠—沙山湖泊群顺利通过评审，成功列入《世界遗产名录》。至此，中国已拥有15项世界自然遗产、4项文化和自然双遗产。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界自然遗产",
+            "gloss": "Объект всемирного природного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "land-gurbantunggut",
@@ -5849,7 +6181,11 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "land-huabei",
@@ -5901,7 +6237,11 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "land-changjiang",
@@ -5959,7 +6299,11 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "land-tulufan",
@@ -6027,7 +6371,11 @@
           "olympiad": [
             "2016-17-shk-6"
           ],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         }
       ]
     },
@@ -6041,13 +6389,15 @@
         "era": "zh",
         "builder": "zh",
         "feature": "zh",
+        "unesco": "zh",
         "about": "ru"
       },
       "sides": [
         "river",
         "province",
         "era",
-        "feature"
+        "feature",
+        "unesco"
       ],
       "rows": [
         {
@@ -6125,13 +6475,31 @@
               "quote": "始建于战国晚期的都江堰水利工程，是世界上现存最早的无坝引水水利工程之一",
               "checkedAt": "2026-10-18",
               "authority": "official"
+            },
+            {
+              "title": "Mount Qingcheng and the Dujiangyan Irrigation System — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1001/",
+              "quote": "Date of Inscription: 2000 Criteria: (ii)(iv)(vi)",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "千古奇迹都江堰：见证中国之治奔腾不息 — 新华网",
+              "url": "https://www.news.cn/politics/20251206/4696af41c08e4487a3bdff6778bae02c/c.html",
+              "quote": "都江堰2000年被联合国教科文组织列入世界文化遗产，2018年入选世界灌溉工程遗产名录",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
           "core": true,
           "skipSides": [
             "feature"
-          ]
+          ],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "gloss": "Объект всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "eng-sanxia",
@@ -6207,7 +6575,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "eng-nanshuibeidiao",
@@ -6251,7 +6626,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "eng-gangzhuao",
@@ -6295,7 +6677,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "eng-nanjing-bridge",
@@ -6436,8 +6825,13 @@
           "core": true,
           "skipSides": [
             "river",
-            "feature"
-          ]
+            "feature",
+            "unesco"
+          ],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "eng-qingzang-railway",
@@ -6495,7 +6889,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "eng-jinghu-hsr",
@@ -6598,7 +6999,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "eng-karez",
@@ -6659,8 +7067,13 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "feature"
-          ]
+            "feature",
+            "unesco"
+          ],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "eng-baihetan",
@@ -7330,6 +7743,302 @@
             }
           ],
           "olympiad": []
+        }
+      ]
+    },
+    "scenic": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "province": "zh",
+        "unesco": "zh",
+        "feature": "zh",
+        "about": "ru"
+      },
+      "sides": [
+        "province"
+      ],
+      "rows": [
+        {
+          "id": "sc-jiuzhaigou",
+          "name": {
+            "zh": "九寨沟",
+            "ru": [
+              "Цзючжайгоу",
+              "долина Цзючжайгоу"
+            ],
+            "gloss": "Цзючжайгоу — долина разноцветных озёр и водопадов на севере Сычуани"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "province": {
+            "zh": "四川",
+            "ru": [
+              "Сычуань"
+            ],
+            "gloss": "Сычуань — провинция в верховьях Янцзы на юго-западе Китая, центр — Чэнду",
+            "ref": "provinces/provinces/prov-sichuan"
+          },
+          "unesco": {
+            "zh": "世界自然遗产",
+            "gloss": "Объект всемирного природного наследия ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "海子与瀑布",
+            "ru": [
+              "озёра-«хайцзы» и водопады"
+            ],
+            "gloss": "Озёра-«хайцзы» (по данным Синьхуа — 108) и водопады Шучжэн и Норилан"
+          },
+          "about": "Цзючжайгоу («Долина девяти селений») — горная долина на севере Сычуани, названная так по девяти тибетским селениям, стоявшим в ней прежде. Здесь свыше ста озёр-«хайцзы» (по Синьхуа — 108) и водопады Шучжэн и Норилан, а долина поднимается выше 4800 м. В 1992 году Цзючжайгоу вошла в список Всемирного природного наследия ЮНЕСКО (критерий vii) — одновременно с Хуанлуном и Улинюанем.",
+          "sources": [
+            {
+              "title": "Jiuzhaigou Valley Scenic and Historic Interest Area — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/637/",
+              "quote": "Date of Inscription: 1992 Criteria: (vii) … Stretching over 72,000 ha in the northern part of Sichuan Province, the jagged Jiuzhaigou valley reaches a height of more than 4,800 m",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "浪漫中国丨世界遗产图鉴：九寨沟 — 新华网",
+              "url": "http://www.news.cn/video/20231219/b5281b2fac9a4779b403ce87f066d64e/c.html",
+              "quote": "沟内原有九个藏族村寨，故名九寨沟 … 分布有108个海子（湖泊），各湖之间多飞瀑，如树正瀑布、诺日朗瀑布 … 1992年被列入《世界自然遗产名录》",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "sc-wulingyuan",
+          "name": {
+            "zh": "武陵源",
+            "ru": [
+              "Улинюань",
+              "Улиньюань",
+              "Чжанцзяцзе"
+            ],
+            "gloss": "Улинюань (район Чжанцзяцзе) — «лес» кварцево-песчаниковых столбов в Хунани"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "province": {
+            "zh": "湖南",
+            "ru": [
+              "провинция Хунань"
+            ],
+            "gloss": "Хунань — провинция, где лежит озеро Дунтинху",
+            "ref": "provinces/provinces/prov-hunan"
+          },
+          "unesco": {
+            "zh": "世界自然遗产",
+            "gloss": "Объект всемирного природного наследия ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "石英砂岩峰林",
+            "ru": [
+              "лес кварцево-песчаниковых столбов"
+            ],
+            "gloss": "Тысячи узких кварцево-песчаниковых столбов, названных «рельефом Чжанцзяцзе»"
+          },
+          "about": "Улинюань — живописный район в городе Чжанцзяцзе (Хунань), где возвышаются свыше 3000 узких песчаниковых столбов и пиков, многие выше 200 м, а между ними — ущелья, ручьи, пещеры и два больших природных моста. Геоморфологи называют этот кварцево-песчаниковый рельеф «рельефом Чжанцзяцзе» (张家界地貌). В 1992 году район площадью более 26 тыс. га внесён в список Всемирного природного наследия (критерий vii).",
+          "sources": [
+            {
+              "title": "Wulingyuan Scenic and Historic Interest Area — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/640/",
+              "quote": "Date of Inscription: 1992 Criteria: (vii) … the site is dominated by more than 3,000 narrow sandstone pillars and peaks, many over 200 m high",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "世界自然遗产地武陵源的生态“加减法” — 新华网",
+              "url": "http://www.news.cn/2022-06/11/c_1128733078.htm",
+              "quote": "武陵源1992年被联合国教科文组织列入世界自然遗产名录。这里拥有世界罕见的石英砂岩峰林地貌，国际地貌学术界将其命名为“张家界地貌”。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "全球连线丨天空之眼瞰武陵源 — 新华网",
+              "url": "http://www.news.cn/local/2022-04/29/c_1128609966.htm",
+              "quote": "世界自然遗产武陵源风景名胜区位于湖南省张家界市，拥有独特的石英砂岩峰林地貌",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "sc-guilin",
+          "name": {
+            "zh": "桂林山水",
+            "ru": [
+              "пейзажи Гуйлиня",
+              "Гуйлиньский карст",
+              "Гуйлинь"
+            ],
+            "gloss": "Гуйлинь — знаменитые карстовые пейзажи на реке Лицзян в Гуанси"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "province": {
+            "zh": "广西",
+            "ru": [
+              "Гуанси"
+            ],
+            "gloss": "Гуанси — автономный район на юге Китая, центр — Наньнин",
+            "ref": "provinces/provinces/prov-guangxi"
+          },
+          "unesco": {
+            "zh": "世界自然遗产",
+            "gloss": "Объект всемирного природного наследия ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "峰林与漓江",
+            "ru": [
+              "башенный карст и река Лицзян"
+            ],
+            "gloss": "Одиночные карстовые горы-«башни» (фэнлинь) вдоль реки Лицзян"
+          },
+          "about": "Пейзажи Гуйлиня в Гуанси — одиночные остроконечные карстовые горы-башни (фэнлинь) и конусный карст (фэнцун) вдоль реки Лицзян. В списке ЮНЕСКО они входят не отдельным объектом, а серийным «Южно-Китайским карстом» (中国南方喀斯特) как компонент «Карст Гуйлиня»: первая очередь (2007) включила Шилинь, Либо и Улун, вторая очередь (2014) добавила Гуйлинь, Шибин, Цзиньфошань и Хуаньцзян. ЮНЕСКО считает Гуйлиньский карст лучшим известным примером континентального фэнлиня.",
+          "sources": [
+            {
+              "title": "South China Karst — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1248/",
+              "quote": "The Guilin Karst component in Guangxi province is located within Lijiang National Park and contains fenglin (tower) and fengcong (cone) karst formations … Guilin Karst is considered the best known example of continental fenglin … Phase II inscribed in 2014 includes four clusters",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国之城丨桂林：山水是这座城市当之无愧的主角 — 新华网",
+              "url": "http://www.news.cn/20250327/aaf804ce3623437fac7fa39185a123f2/c.html",
+              "quote": "2014年，桂林喀斯特作为“中国南方喀斯特”二期被列入世界自然遗产名录",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "sc-shilin",
+          "name": {
+            "zh": "石林",
+            "ru": [
+              "Шилинь",
+              "Каменный лес"
+            ],
+            "gloss": "Шилинь («Каменный лес») — карстовое плато с каменными «деревьями» под Куньмином"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "province": {
+            "zh": "云南",
+            "ru": [
+              "Юньнань"
+            ],
+            "ref": "provinces/provinces/prov-yunnan",
+            "gloss": "Юньнань — пограничная провинция на юго-западе Китая, центр — Куньмин"
+          },
+          "unesco": {
+            "zh": "世界自然遗产",
+            "gloss": "Объект всемирного природного наследия ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "石峰、石芽、落水洞",
+            "ru": [
+              "каменные пики и карровые гребни"
+            ],
+            "gloss": "Скопление каменных пиков, карровых гребней и воронок-поноров"
+          },
+          "about": "Шилинь («Каменный лес») — карстовое плато в Шилинь-Исском автономном уезде городского округа Куньмин (Юньнань), где тесно стоят каменные пики, карровые гребни и воронки. ЮНЕСКО называет каменные леса Шилиня исключительными природными явлениями, мировым эталоном. В 2007 году Шилинь вошёл в первую очередь серийного объекта «Южно-Китайский карст» вместе с Либо и Улуном.",
+          "sources": [
+            {
+              "title": "South China Karst — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1248/",
+              "quote": "The stone forests of Shilin are considered superlative natural phenomena and a world reference … Phase I inscribed in 2007, include three clusters",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "走进世界自然遗产地云南石林 — 新华网",
+              "url": "http://www.news.cn/local/2022-08/22/c_1128936803.htm",
+              "quote": "石林位于云南省昆明市石林彝族自治县境内，众多石峰、石芽、落水洞遍布其中 … 2007年，中国南方喀斯特被列入《世界遗产名录》",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "sc-huanglong",
+          "name": {
+            "zh": "黄龙",
+            "ru": [
+              "Хуанлун",
+              "Хуанлунская долина"
+            ],
+            "gloss": "Хуанлун («Жёлтый дракон») — долина ступенчатых травертиновых озёр в Сычуани"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "province": {
+            "zh": "四川",
+            "ru": [
+              "Сычуань"
+            ],
+            "gloss": "Сычуань — провинция в верховьях Янцзы на юго-западе Китая, центр — Чэнду",
+            "ref": "provinces/provinces/prov-sichuan"
+          },
+          "unesco": {
+            "zh": "世界自然遗产",
+            "gloss": "Объект всемирного природного наследия ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "钙华彩池",
+            "ru": [
+              "цветные травертиновые озёра-террасы"
+            ],
+            "gloss": "Ступенчатые озёра-террасы «цайчи» на известковых отложениях (钙华)"
+          },
+          "about": "Хуанлун («Жёлтый дракон») — долина на северо-западе Сычуани (уезд Сунпань) с заснеженными вершинами, самым восточным ледником Китая, водопадами и горячими источниками. Главная достопримечательность — Хуанлунгоу длиной около 3,6 км: ступенчатые озёра-террасы «цайчи» на известковых отложениях (钙华). В 1992 году Хуанлун вошёл в список Всемирного природного наследия вместе с Цзючжайгоу и Улинюанем (критерий vii).",
+          "sources": [
+            {
+              "title": "Huanglong Scenic and Historic Interest Area — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/638/",
+              "quote": "Date of Inscription: 1992 Criteria: (vii) … Situated in the north-west of Sichuan Province, the Huanglong valley is made up of snow-capped peaks and the easternmost of all the Chinese glaciers",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "浪漫中国丨世界遗产图鉴：黄龙风景名胜区 — 新华网",
+              "url": "http://www.news.cn/video/20231215/85dea39490c9456d82d36e8ecc739152/c.html",
+              "quote": "主要景观集中于长约3.6公里的黄龙沟，沟内遍布碳酸钙华沉积。并呈梯田状排列",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "走进川渝世界自然遗产保护现场 — 国家林业和草原局",
+              "url": "https://www.forestry.gov.cn/lyj/1/zrzryc/20260623/677548.html",
+              "quote": "黄龙于1992年列入《世界自然遗产名录》 … 四川省松潘县黄龙风景名胜区的天然彩池",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
         }
       ]
     }

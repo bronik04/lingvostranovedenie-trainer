@@ -9,13 +9,15 @@
         "city": "zh",
         "era": "zh",
         "feature": "zh",
+        "unesco": "zh",
         "address": "ru",
         "dates": "ru",
         "description": "ru"
       },
       "sides": [
         "city",
-        "era"
+        "era",
+        "unesco"
       ],
       "required": [
         "name",
@@ -81,7 +83,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-shenyang-gugong",
@@ -136,7 +145,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-gongwangfu",
@@ -191,7 +207,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-chengde-resort",
@@ -244,10 +267,24 @@
               "quote": "承德避暑山庄又称“热河行宫”，始建于1703年，建成于1792年",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Mountain Resort and its Outlying Temples, Chengde — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/703/",
+              "quote": "The Mountain Resort (the Qing dynasty's summer palace), in Hebei Province, was built between 1703 and 1792.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-potala",
@@ -296,7 +333,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-norbulingka",
@@ -358,7 +402,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-kongfu",
@@ -413,7 +464,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-puyi-palace",
@@ -461,7 +519,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-nanjing-presidential-palace",
@@ -516,7 +581,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-chunwangfu",
@@ -571,7 +643,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-daming-palace-site",
@@ -624,9 +703,30 @@
               "quote": "含元殿遗址保护工程",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1442/maps",
+              "quote": "Site of Daming Palace in Chang’an City of Tang Dynasty China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "浪漫中国丨世界遗产图鉴：丝绸之路：长安-天山廊道的路网 — 新华网",
+              "url": "https://www.news.cn/video/20231219/6549459587c14768b61362acdb10b48f/c.html",
+              "quote": "汉长安城未央宫遗址、张骞墓、唐长安城大明宫遗址、大雁塔、小雁塔、兴教寺塔、彬县大佛寺石窟",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-nanyue-palace-site",
@@ -681,7 +781,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-kalaqin-palace",
@@ -736,7 +843,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-weiyang-palace-site",
@@ -789,9 +903,30 @@
               "quote": "汉长安城未央宫国家遗址公园景区…陕西省西安市未央区邓六路",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1442/maps",
+              "quote": "Site of Weiyang Palace in Chang’an City of the Western Han Dynasty China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "浪漫中国丨世界遗产图鉴：丝绸之路：长安-天山廊道的路网 — 新华网",
+              "url": "https://www.news.cn/video/20231219/6549459587c14768b61362acdb10b48f/c.html",
+              "quote": "汉长安城未央宫遗址、张骞墓、唐长安城大明宫遗址",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-ru-winter-palace",
@@ -1132,13 +1267,15 @@
         "city": "zh",
         "era": "zh",
         "feature": "zh",
+        "unesco": "zh",
         "address": "ru",
         "dates": "ru",
         "description": "ru"
       },
       "sides": [
         "city",
-        "era"
+        "era",
+        "unesco"
       ],
       "required": [
         "name",
@@ -1201,10 +1338,52 @@
               "quote": "拙政园",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Classical Gardens of Suzhou — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/813/",
+              "quote": "the Humble Administrator’s Garden, Lingering Garden, Net Master’s Garden, the Mountain Villa with Embracing Beauty, the Canglang Pavilion, the Lion Grove Garden, the Garden of Cultivation, the Couple’s Garden Retreat, and the Retreat & Reflection Garden",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Classical Gardens of Suzhou — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/813/maps",
+              "quote": "The Humble Administrator's Garden China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "拙政园与加拿大“姐妹”再续情缘 — 苏州市人民政府",
+              "url": "https://www.suzhou.gov.cn/szsrmzf/szyw/202411/8f023083151c47cb935e74fcd9f5077d.shtml",
+              "quote": "拙政园作为苏州现存规模最大的古典园林，1997年被联合国教科文组织列入《世界遗产名录》",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "拙政园五彩斑斓 — 中共江苏省委新闻网（新华日报）",
+              "url": "http://www.zgjssw.gov.cn/shixianchuanzhen/suzhou/202311/t20231126_8156836.shtml",
+              "quote": "拙政园是江南古典园林的代表，也是苏州现存最大的古典园林。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "拙政园 — 苏州市发展和改革委员会",
+              "url": "https://fg.suzhou.gov.cn/szfgw/szyl/202311/e31de791ab254942ab931e9e74c31526.shtml",
+              "quote": "拙政园是江南园林的代表，也是苏州古典园林中面积最大的古典山水园林",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-liuyuan",
@@ -1257,9 +1436,30 @@
               "quote": "留园",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Classical Gardens of Suzhou — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/813/",
+              "quote": "the Humble Administrator’s Garden, Lingering Garden, Net Master’s Garden, the Mountain Villa with Embracing Beauty, the Canglang Pavilion, the Lion Grove Garden, the Garden of Cultivation, the Couple’s Garden Retreat, and the Retreat & Reflection Garden",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Classical Gardens of Suzhou — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/813/maps",
+              "quote": "The Lingering Garden China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-wangshi-garden",
@@ -1312,9 +1512,30 @@
               "quote": "网师园",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Classical Gardens of Suzhou — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/813/",
+              "quote": "the Humble Administrator’s Garden, Lingering Garden, Net Master’s Garden, the Mountain Villa with Embracing Beauty, the Canglang Pavilion, the Lion Grove Garden, the Garden of Cultivation, the Couple’s Garden Retreat, and the Retreat & Reflection Garden",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Classical Gardens of Suzhou — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/813/maps",
+              "quote": "The Master-of-Nets Garden China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-shizilin",
@@ -1367,9 +1588,30 @@
               "quote": "狮子林",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Classical Gardens of Suzhou — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/813/",
+              "quote": "the Humble Administrator’s Garden, Lingering Garden, Net Master’s Garden, the Mountain Villa with Embracing Beauty, the Canglang Pavilion, the Lion Grove Garden, the Garden of Cultivation, the Couple’s Garden Retreat, and the Retreat & Reflection Garden",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Classical Gardens of Suzhou — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/813/maps",
+              "quote": "The Lion Forest Garden China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-canglang-pavilion",
@@ -1422,9 +1664,30 @@
               "quote": "沧浪亭",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Classical Gardens of Suzhou — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/813/",
+              "quote": "the Humble Administrator’s Garden, Lingering Garden, Net Master’s Garden, the Mountain Villa with Embracing Beauty, the Canglang Pavilion, the Lion Grove Garden, the Garden of Cultivation, the Couple’s Garden Retreat, and the Retreat & Reflection Garden",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Classical Gardens of Suzhou — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/813/maps",
+              "quote": "The Canglang Pavilion China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-tuisi-garden",
@@ -1477,9 +1740,30 @@
               "quote": "退思园是一座“贴水园”",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Classical Gardens of Suzhou — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/813/",
+              "quote": "the Humble Administrator’s Garden, Lingering Garden, Net Master’s Garden, the Mountain Villa with Embracing Beauty, the Canglang Pavilion, the Lion Grove Garden, the Garden of Cultivation, the Couple’s Garden Retreat, and the Retreat & Reflection Garden",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Classical Gardens of Suzhou — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/813/maps",
+              "quote": "The Retreat & Reflection Garden China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-summer-palace-garden",
@@ -1532,10 +1816,24 @@
               "quote": "以万寿山、昆明湖构成其基本框架",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Summer Palace, an Imperial Garden in Beijing — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/880/",
+              "quote": "The Summer Palace in Beijing – first built in 1750, largely destroyed in the war of 1860 and restored on its original foundations in 1886 – is a masterpiece of Chinese landscape garden design.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-yuanmingyuan",
@@ -1592,7 +1890,17 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "lm-cn-yuyuan",
@@ -1647,7 +1955,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-jichang-garden",
@@ -1702,7 +2017,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-qinghui-garden",
@@ -1750,7 +2072,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-yuyin-shanfang",
@@ -1805,7 +2134,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-dongguan-keyuan",
@@ -1860,7 +2196,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-geyuan",
@@ -1913,9 +2256,23 @@
               "quote": "清嘉庆二十三年（1818年）",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "扬州境内大运河遗产点，你都知道吗？ — 中国江苏网",
+              "url": "http://jsnews.jschina.com.cn/zt2020/xnzdy/yunhenueying/202012/t20201221_2694104.shtml",
+              "quote": "其中，10个遗产点分别为：刘堡减水闸、盂城驿、邵伯古堤、邵伯码头、瘦西湖、天宁寺行宫（含重宁寺）、个园、汪鲁门宅、卢绍绪盐商住宅、盐宗庙。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-beihai",
@@ -1970,7 +2327,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-jingshan",
@@ -2016,9 +2380,30 @@
               "quote": "景山公园位于北京内城南北中轴线中心点上，是元、明、清三代的皇宫后苑…山上五亭横列，中峰万春亭",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "“北京中轴线——中国理想都城秩序的杰作”成功列入《世界遗产名录》— 国家文物局",
+              "url": "http://www.ncha.gov.cn/art/2024/8/16/art_722_190822.html",
+              "quote": "中轴线北端为钟鼓楼，向南经万宁桥、景山，过故宫、端门、天安门",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Beijing Central Axis: A Building Ensemble Exhibiting the Ideal Order of the Chinese Capital — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1714/",
+              "quote": "the Forbidden City, the Drum and Bell Towers, Jingshan Hill, the Temple of Heaven",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-xiangshan",
@@ -2074,7 +2459,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-ru-summer-garden",
@@ -2436,13 +2828,15 @@
         "city": "zh",
         "era": "zh",
         "feature": "zh",
+        "unesco": "zh",
         "address": "ru",
         "dates": "ru",
         "description": "ru"
       },
       "sides": [
         "city",
-        "era"
+        "era",
+        "unesco"
       ],
       "required": [
         "name",
@@ -2512,10 +2906,24 @@
               "quote": "北京市公园管理中心-天坛公园简介…天坛是明、清两代皇帝“祭天”“祈谷”的场所，位于正阳门外东侧",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Temple of Heaven: an Imperial Sacrificial Altar in Beijing — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/881/",
+              "quote": "The Temple of Heaven, founded in the first half of the 15th century, is a dignified complex of fine cult buildings",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-qufu-confucius",
@@ -2578,10 +2986,24 @@
               "quote": "孔庙作为纪念性建筑群体，共保存了历代石碑1172块…其中包括汉画像石刻",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Temple and Cemetery of Confucius and the Kong Family Mansion in Qufu — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/704/",
+              "quote": "Built to commemorate him in 478 B.C., the temple has been destroyed and reconstructed over the centuries",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-mogao",
@@ -2634,10 +3056,24 @@
               "quote": "以其雕像和壁画闻名于世",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Mogao Caves — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/440/",
+              "quote": "the 492 cells and cave sanctuaries in Mogao are famous for their statues and wall paintings",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-yonghe",
@@ -2692,7 +3128,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-shaolin",
@@ -2745,10 +3188,31 @@
               "quote": "北魏太和二十年",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Historic Monuments of Dengfeng in “The Centre of Heaven and Earth” — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1305/maps",
+              "quote": "Architectural Complex of Shaolin Temple (Kernel Compound, Chuzu Temple, Pagoda Forest)",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国世界文化遗产提名项目“登封‘天地之中’历史建筑群”成功列入《世界遗产名录》— 国家文物局",
+              "url": "http://www.ncha.gov.cn/art/2010/8/1/art_723_25565.html",
+              "quote": "少林寺建筑群（包括常住院、塔林和初祖庵）等8处11项优秀历史建筑",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-longmen",
@@ -2801,10 +3265,24 @@
               "quote": "位于洛阳市南郊13公里处…凿于北魏孝文帝迁都洛阳前后(A.D.493年)…卢舍那佛",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Longmen Grottoes — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1003/",
+              "quote": "The grottoes and niches of Longmen contain the largest and most impressive collection of Chinese art of the late Northern Wei and Tang Dynasties",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-yungang",
@@ -2857,10 +3335,24 @@
               "quote": "在大同的第三个考察点是城西武州（周）山南麓的云冈石窟…云冈石窟开凿于北魏文成帝和平元年（公元460年）",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Yungang Grottoes — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1039/",
+              "quote": "The Yungang Grottoes, in Datong city, Shanxi Province, with their 252 caves and 51,000 statues",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-jokhang",
@@ -2908,7 +3400,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-tashilhunpo",
@@ -2963,7 +3462,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-hanging-temple",
@@ -3018,7 +3524,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-foguang",
@@ -3064,9 +3577,30 @@
               "quote": "唐木构",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Mount Wutai — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1279/",
+              "quote": "includes the East Main Hall of Foguang Temple, the highest surviving timber building of the Tang dynasty",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Mount Wutai — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1279/maps",
+              "quote": "1279-002 Foguang Temple China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-nanchan",
@@ -3121,7 +3655,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-yingxian",
@@ -3176,7 +3717,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-hanshan",
@@ -3238,7 +3786,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-lingyin",
@@ -3291,9 +3846,30 @@
               "quote": "印度僧人慧理",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "西湖申遗已经进入倒计时 — 杭州网",
+              "url": "https://hznews.hangzhou.com.cn/chengshi/content/2010-05/30/content_3294655.htm",
+              "quote": "西湖文化史迹（包括保俶塔、雷峰塔、六和塔、净慈寺、灵隐寺、飞来峰造像、岳飞墓（庙）、文澜阁、抱朴道院",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "杭州灵隐飞来峰景区12月1日起向公众免费开放 — 新华网",
+              "url": "http://zj.xinhuanet.com/20251119/0febbc28b3454f3b89a71850cc79fbfe/c.html",
+              "quote": "灵隐飞来峰作为西湖的重要构成，成为世界遗产的一部分",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-quanzhou-kaiyuan",
@@ -3346,9 +3922,30 @@
               "quote": "仁寿塔",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "泉州市22个申遗遗产点图文介绍版上线 — 泉州市人民政府",
+              "url": "http://www.quanzhou.gov.cn/zfb/xxgk/zfxxgkzl/qzdt/qzyw/202104/t20210409_2541128.htm",
+              "quote": "这22处代表性古迹遗址，包括九日山祈风石刻、市舶司遗址、德济门遗址、天后宫、真武庙、南外宗正司遗址、泉州文庙及学宫、开元寺",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Quanzhou: Emporium of the World in Song-Yuan China — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1561/",
+              "quote": "The serial site of Quanzhou illustrates the city’s vibrancy as a maritime emporium during the Song and Yuan periods",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-nanputuo",
@@ -3403,7 +4000,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-dayan",
@@ -3456,10 +4060,31 @@
               "quote": "大慈恩寺内",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1442/maps",
+              "quote": "Great Wild Goose Pagoda China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "浪漫中国丨世界遗产图鉴：丝绸之路：长安-天山廊道的路网 — 新华网",
+              "url": "https://www.news.cn/video/20231219/6549459587c14768b61362acdb10b48f/c.html",
+              "quote": "汉长安城未央宫遗址、张骞墓、唐长安城大明宫遗址、大雁塔、小雁塔、兴教寺塔",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-xiaoyan",
@@ -3512,9 +4137,30 @@
               "quote": "大、小雁塔作为西安市的标志性建筑…小雁塔位于荐福寺内",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1442/maps",
+              "quote": "Small Wild Goose Pagoda China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "浪漫中国丨世界遗产图鉴：丝绸之路：长安-天山廊道的路网 — 新华网",
+              "url": "https://www.news.cn/video/20231219/6549459587c14768b61362acdb10b48f/c.html",
+              "quote": "唐长安城大明宫遗址、大雁塔、小雁塔、兴教寺塔",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-xian-mosque",
@@ -3562,7 +4208,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-labrang",
@@ -3624,7 +4277,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-ru-st-basil",
@@ -4127,6 +4787,71 @@
             }
           ],
           "olympiad": []
+        },
+        {
+          "id": "lm-cn-dazu",
+          "name": {
+            "zh": "大足石刻",
+            "ru": [
+              "Скальные рельефы Дацзу",
+              "Дацзу"
+            ],
+            "gloss": "Скальные рельефы Дацзу — буддийские, даосские и конфуцианские изваяния близ Чунцина"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "city": {
+            "zh": "重庆",
+            "ru": [
+              "город Чунцин"
+            ],
+            "gloss": "Чунцин — город центрального подчинения на юго-западе Китая",
+            "ref": "provinces/cities/city-chongqing"
+          },
+          "feature": {
+            "zh": "佛、道、儒三教造像并陈",
+            "ru": [
+              "Рядом стоят буддийские, даосские и конфуцианские изваяния"
+            ],
+            "gloss": "Буддийские, даосские и конфуцианские изваяния рядом"
+          },
+          "address": "Чунцин, район Дацзу (горы Баодиншань, Бэйшань, Наньшань, Шимэньшань, Шичжуаньшань)",
+          "dates": "IX–XIII века (от поздней Тан до Сун); в списке ЮНЕСКО с 1999 года",
+          "description": "Скальные рельефы и изваяния в окрестностях района Дацзу в Чунцине, созданные в IX–XIII веках. Начаты в эпоху Тан, расцвет пришёлся на эпоху Сун. Преобладают буддийские сюжеты, но рядом есть даосские и конфуцианские. Самые известные участки — Баодиншань и Бэйшань.",
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "Dazu Rock Carvings — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/912/",
+              "quote": "The steep hillsides of the Dazu area contain an exceptional series of rock carvings dating from the 9th to the 13th century.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "大足石刻 — CCTV.com",
+              "url": "http://discovery.cctv.com/special/C18370/20070428/100701.shtml",
+              "quote": "其以佛教造像为主，儒、道教造像并陈，是中国晚期石窟造像艺术的典范",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "守护石窟艺术丰碑 — 人民日报海外版",
+              "url": "http://paper.people.com.cn/rmrbhwb/html/2023-06/13/content_25996562.htm",
+              "quote": "大足石刻始建于初唐，鼎盛于两宋，延续至明清，凿刻历经1200多年。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
         }
       ]
     },
@@ -4137,18 +4862,19 @@
         "city": "zh",
         "era": "zh",
         "feature": "zh",
+        "unesco": "zh",
         "address": "ru",
         "dates": "ru",
         "description": "ru"
       },
       "sides": [
         "city",
-        "era"
+        "era",
+        "unesco"
       ],
       "required": [
         "name",
         "country",
-        "city",
         "feature",
         "address",
         "dates",
@@ -4209,7 +4935,17 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "lm-cn-nanjing-wall",
@@ -4264,7 +5000,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-pingyao-wall",
@@ -4310,9 +5053,23 @@
               "quote": "明洪武三年",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Ancient City of Ping Yao — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/812/",
+              "quote": "the property includes three parts: the entire area within the walls of Ping Yao, Shuanglin Temple 6 kilometers southwest of the county seat, and Zhenguo Temple 12 kilometers northeast of the county seat",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-jingzhou-wall",
@@ -4360,7 +5117,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-xingcheng-wall",
@@ -4415,7 +5179,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-shouxian-wall",
@@ -4470,7 +5241,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-datong-wall",
@@ -4518,7 +5296,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-kaifeng-wall",
@@ -4574,7 +5359,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-taizhou-wall",
@@ -4629,7 +5421,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-xiangyang-wall",
@@ -4677,7 +5476,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-zhengding-wall",
@@ -4725,7 +5531,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-chongwu",
@@ -4780,7 +5593,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-jiayuguan",
@@ -4833,9 +5653,30 @@
               "quote": "嘉峪关关城巍峨矗立…明洪武五年（公元1372年），征虏大将军冯胜在此筑…筑城设关",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "The Great Wall — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/438/maps",
+              "quote": "438-003 Jiayuguan China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "嘉峪关：守好用好长城资源 做大做强长城文旅 — 甘肃省文物局",
+              "url": "https://www.gswbj.gov.cn/a/2024/08/06/21491.html",
+              "quote": "1987年，被联合国教科文组织列入世界文化遗产地",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-shanhaiguan",
@@ -4888,9 +5729,30 @@
               "quote": "秦皇岛市东北部",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "The Great Wall — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/438/maps",
+              "quote": "438-002 Shanhaiguan China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "接续努力 久久为功 河北长城保护回望 — 河北省文物局",
+              "url": "https://wenwu.hebei.gov.cn/system/2024/09/27/030307615.shtml",
+              "quote": "1987年，长城被联合国教科文组织列入《世界遗产名录》，成为中国首批世界文化遗产，其中包括山海关长城。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-cn-badaling",
@@ -4950,9 +5812,23 @@
               "quote": "Badaling Great Wall 八达岭长城…Location: Yanqing district, Beijing…the most typical section of China's Great Wall dating back to the Ming Dynasty",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "The Great Wall — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/438/maps",
+              "quote": "438-001 Badaling China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "lm-ru-moscow-kremlin",
@@ -5272,6 +6148,1594 @@
               "url": "https://visit-petersburg.ru/zh/leisure/places/petropavlovskaya-krepost/",
               "quote": "于1703年根据彼得一世的诏令奠基。",
               "checkedAt": "2026-10-17",
+              "authority": "official"
+            }
+          ],
+          "olympiad": []
+        },
+        {
+          "id": "lm-cn-great-wall",
+          "name": {
+            "zh": "长城",
+            "ru": [
+              "Великая Китайская стена",
+              "Великая стена"
+            ],
+            "gloss": "Великая Китайская стена — система оборонительных сооружений на севере Китая"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "era": {
+            "zh": "明",
+            "ru": [
+              "эпоха Мин"
+            ],
+            "gloss": "Эпоха Мин (1368–1644)"
+          },
+          "feature": {
+            "zh": "东起山海关、西至嘉峪关",
+            "ru": [
+              "Тянется от Шаньхайгуаня на востоке до Цзяюйгуаня на западе"
+            ],
+            "gloss": "Тянется от Шаньхайгуаня до Цзяюйгуаня"
+          },
+          "address": "Север Китая: от Шаньхайгуаня (Хэбэй) на востоке до Цзяюйгуаня (Ганьсу) на западе; участки в нескольких провинциях",
+          "dates": "Строительство с III века до н. э. до XVII века; нынешний облик — эпоха Мин (1368–1644)",
+          "description": "Система оборонительных сооружений на севере Китая: стены, башни, заставы и крепости. Её строили в разные эпохи, начиная с объединения участков при Цинь Шихуане около 220 года до н. э. Нынешний облик большей части стены сложился в эпоху Мин, поэтому эпоха указана как Мин, хотя отдельные участки старше. Город в строке не указан: стена проходит через много провинций.",
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "The Great Wall — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/438/",
+              "quote": "Construction continued up to the Ming dynasty (1368–1644), when the Great Wall became the world's largest military structure. … The Great Wall begins in the east at Shanhaiguan in Hebei province and ends at Jiayuguan in Gansu province to the west.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "浪漫中国丨世界遗产图鉴：长城 — 新华网",
+              "url": "http://www.news.cn/video/20231219/619eb0bb44034860a1b83a1d6af1d63c/c.html",
+              "quote": "到了明代（1368年至1644年），在旧有的基础上逐渐改建成如今的面貌。万里长城气魄雄伟，是世界历史上伟大的工程之一。1987年被列入《世界文化遗产名录》。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        }
+      ]
+    },
+    "sites": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "city": "zh",
+        "era": "zh",
+        "feature": "zh",
+        "address": "ru",
+        "dates": "ru",
+        "description": "ru",
+        "unesco": "zh"
+      },
+      "sides": [
+        "city",
+        "era",
+        "unesco"
+      ],
+      "required": [
+        "name",
+        "country",
+        "feature",
+        "address",
+        "dates",
+        "description",
+        "unesco"
+      ],
+      "rows": [
+        {
+          "id": "lm-cn-terracotta",
+          "name": {
+            "zh": "秦始皇兵马俑",
+            "ru": [
+              "Терракотовая армия",
+              "Терракотовое войско",
+              "Терракотовые воины"
+            ],
+            "gloss": "Терракотовая армия — глиняные воины у гробницы первого императора Цинь"
+          },
+          "city": {
+            "zh": "西安",
+            "ru": [
+              "город Сиань"
+            ],
+            "gloss": "Сиань — город на северо-западе Китая, в провинции Шэньси",
+            "ref": "provinces/cities/city-xian"
+          },
+          "era": {
+            "zh": "秦",
+            "ru": [
+              "эпоха Цинь"
+            ],
+            "gloss": "Эпоха Цинь (221–206 до н. э.)"
+          },
+          "feature": {
+            "zh": "形态逼真的陶俑军阵",
+            "ru": [
+              "Строй реалистичных глиняных фигур воинов"
+            ],
+            "gloss": "Строй реалистичных глиняных воинов"
+          },
+          "address": "Сиань, район Линьтун, рядом с гробницей Цинь Шихуана",
+          "dates": "Обнаружена в марте 1974 года; музей открыт 1 октября 1979 года; в списке ЮНЕСКО с 1987 года",
+          "description": "Войско глиняных воинов и лошадей, захороненное рядом с гробницей Цинь Шихуана, первого императора объединённого Китая. Фигуры обнаружили в 1974 году, на месте раскопок открыли музей. Лица и облик воинов не повторяются. Комплекс входит в объект ЮНЕСКО «Мавзолей первого императора Цинь».",
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "概况 — 秦始皇帝陵博物院官网",
+              "url": "https://bmy.com.cn/about/",
+              "quote": "1974年03月，秦兵马俑坑被发现 … 1979年10月01日，秦始皇兵马俑博物馆建成开放。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Mausoleum of the First Qin Emperor — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/441/",
+              "quote": "Qin (d. 210 B.C.), the first unifier of China, is buried, surrounded by the famous terracotta warriors",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "打卡古都西安的文化地标——秦兵马俑 — 新华网",
+              "url": "https://www.news.cn/culture/20230511/82236a8d9e54439097703444eec2d17c/c.html",
+              "quote": "形态逼真的陶俑、威武严整的军阵向人们展示出古代东方文化的灿烂辉煌",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "lm-cn-ming-tombs",
+          "name": {
+            "zh": "明十三陵",
+            "ru": [
+              "Гробницы династии Мин",
+              "Тринадцать гробниц Мин",
+              "Мингские гробницы"
+            ],
+            "gloss": "Мингские гробницы — усыпальницы тринадцати императоров эпохи Мин близ Пекина"
+          },
+          "city": {
+            "zh": "北京",
+            "ru": [
+              "город Пекин"
+            ],
+            "gloss": "Пекин — столица КНР и город центрального подчинения",
+            "ref": "provinces/cities/city-beijing"
+          },
+          "era": {
+            "zh": "明",
+            "ru": [
+              "эпоха Мин"
+            ],
+            "gloss": "Эпоха Мин (1368–1644)"
+          },
+          "feature": {
+            "zh": "十三位明代皇帝的陵寝建筑群",
+            "ru": [
+              "Комплекс усыпальниц тринадцати императоров Мин"
+            ],
+            "gloss": "Усыпальницы тринадцати императоров Мин"
+          },
+          "address": "Пекин, район Чанпин, у южного подножия горы Тяньшоу",
+          "dates": "Усыпальницы императоров Мин (1368–1644); в списке ЮНЕСКО с 2003 года как часть «Императорских гробниц династий Мин и Цин»",
+          "description": "Комплекс гробниц тринадцати императоров династии Мин у подножия горы Тяньшоу к северу от Пекина. Самая известная — Чанлин, гробница императора Юнлэ. Мингские гробницы включили в список ЮНЕСКО в 2003 году как расширение объекта «Императорские гробницы династий Мин и Цин».",
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "北京市文物局-明十三陵",
+              "url": "https://wwj.beijing.gov.cn/bjww/362771/362778/364356/index.html",
+              "quote": "明十三陵位于北京市昌平区境内天寿山南麓，是明朝（1368年-1644年）十三位皇帝的陵寝建筑群",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "明十三陵 — 首都之窗",
+              "url": "https://www.beijing.gov.cn/renwen/rwzyd/lyjq/4A/mssl/202210/t20221018_2838761.html",
+              "quote": "2003年被世界遗产委员会以“明清皇家陵寝”的扩展项目，列入《世界遗产名录》",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Imperial Tombs of the Ming and Qing Dynasties — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1004/",
+              "quote": "to the Ming tombs inscribed in 2000 and 2003",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "lm-cn-pingyao",
+          "name": {
+            "zh": "平遥古城",
+            "ru": [
+              "Старый город Пинъяо",
+              "Пинъяо",
+              "Древний город Пинъяо"
+            ],
+            "gloss": "Пинъяо — старый город в провинции Шаньси, хорошо сохранившийся город эпох Мин и Цин"
+          },
+          "city": {
+            "zh": "平遥",
+            "ru": [
+              "город Пинъяо",
+              "уезд Пинъяо"
+            ],
+            "gloss": "Пинъяо — уездный город в провинции Шаньси"
+          },
+          "era": {
+            "zh": "明",
+            "ru": [
+              "эпоха Мин"
+            ],
+            "gloss": "Эпоха Мин (1368–1644)"
+          },
+          "feature": {
+            "zh": "保存完整的明清县城与城墙",
+            "ru": [
+              "Хорошо сохранившийся уездный город с городской стеной эпох Мин и Цин"
+            ],
+            "gloss": "Сохранившийся уездный город эпох Мин и Цин с городской стеной"
+          },
+          "address": "Провинция Шаньси, уезд Пинъяо",
+          "dates": "Нынешняя стена расширена в 1370 году (эпоха Мин); в списке ЮНЕСКО с 1997 года",
+          "description": "Старый город Пинъяо в провинции Шаньси сохранил облик уездного города эпох Мин и Цин: городскую стену, улицы и переулки, лавки, дома и храмы. В XIX — начале XX века здесь был главный центр банковского дела Китая. Целиком вошёл в список ЮНЕСКО в 1997 году.",
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "Ancient City of Ping Yao — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/812/",
+              "quote": "Ping Yao is an exceptionally well-preserved example of a traditional Han Chinese city, founded in the 14th century.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "晋中市平遥古城景区 — 生态中国网",
+              "url": "http://www.eco.gov.cn/news_info/40332.html",
+              "quote": "明洪武三年（1370年）扩建",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "鉴往知来，跟着总书记学历史丨走进平遥 — 新华网",
+              "url": "http://www.news.cn/politics/2022-01/29/c_1128314326.htm",
+              "quote": "1997年，平遥古城以整座古城入选世界文化遗产名录。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "lm-cn-lijiang",
+          "name": {
+            "zh": "丽江古城",
+            "ru": [
+              "Старый город Лицзян",
+              "Лицзян",
+              "Древний город Лицзян"
+            ],
+            "gloss": "Лицзян — старый город в провинции Юньнань с древней системой водоснабжения"
+          },
+          "city": {
+            "zh": "丽江",
+            "ru": [
+              "город Лицзян"
+            ],
+            "gloss": "Лицзян — город на северо-западе провинции Юньнань"
+          },
+          "feature": {
+            "zh": "水系纵横的古城",
+            "ru": [
+              "Старый город с древней системой каналов и водоснабжения"
+            ],
+            "gloss": "Старый город с древней системой водоснабжения"
+          },
+          "address": "Провинция Юньнань, город Лицзян, район Гучэн",
+          "dates": "Основан в конце эпохи Сун — начале Юань; расцвет в эпохи Мин и Цин; в списке ЮНЕСКО с 1997 года",
+          "description": "Старый город в провинции Юньнань, приспособленный к неровному рельефу. Его архитектура соединяет черты нескольких культур, а древняя сложная система водоснабжения работает до сих пор. Основан в конце эпохи Сун — начале Юань, расцвет пришёлся на эпохи Мин и Цин, поэтому одна эпоха не указана.",
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "Old Town of Lijiang — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/811/",
+              "quote": "Lijiang also possesses an ancient water-supply system of great complexity and ingenuity that still functions effectively today.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "世界文化遗产丽江古城 — 新华网",
+              "url": "http://www.news.cn/travel/20210810/29efa60116f54d97be8269707d595591/c.html",
+              "quote": "丽江古城始建于宋末元初，盛于明清，距今已有八百多年历史。 … 1997年被联合国教科文组织世界遗产委员会列入《世界遗产名录》",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "lm-cn-zhoukoudian",
+          "name": {
+            "zh": "周口店北京人遗址",
+            "ru": [
+              "Стоянка пекинского человека в Чжоукоудяне",
+              "Чжоукоудянь"
+            ],
+            "gloss": "Чжоукоудянь — стоянка «пекинского человека» близ Пекина"
+          },
+          "city": {
+            "zh": "北京",
+            "ru": [
+              "город Пекин"
+            ],
+            "gloss": "Пекин — столица КНР и город центрального подчинения",
+            "ref": "provinces/cities/city-beijing"
+          },
+          "feature": {
+            "zh": "发现北京猿人头盖骨的遗址",
+            "ru": [
+              "Место находки черепа пекинского человека"
+            ],
+            "gloss": "Место находки черепа «пекинского человека»"
+          },
+          "address": "Пекин, район Фаншань, гора Лунгушань, в 42 км к юго-западу от центра города",
+          "dates": "Первый череп пекинского человека найден 2 декабря 1929 года Пэй Вэньчжуном; в списке ЮНЕСКО с 1987 года",
+          "description": "Стоянка древних людей на горе Лунгушань близ Пекина. В 1929 году здесь нашли первый череп «пекинского человека» — прямоходящего человека. Находка стала одним из важнейших открытий XX века в науке о происхождении человека. Объект входит в список ЮНЕСКО с 1987 года.",
+          "unesco": {
+            "zh": "世界文化遗产",
+            "ru": [
+              "Всемирное культурное наследие"
+            ],
+            "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "北京猿人头盖骨出土90周年 不断丰富史前文化遗产 — 新华网（人民日报）",
+              "url": "http://www.xinhuanet.com/politics/2019-11/30/c_1125291474.htm",
+              "quote": "1929年12月2日，在北京市房山县龙骨山上的周口店遗址第1地点，裴文中发现第一个北京猿人头盖骨化石。 … 1987年，联合国教科文组织将其列入世界文化遗产名录。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Peking Man Site at Zhoukoudian — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/449/",
+              "quote": "Scientific work at the site, which lies 42 km south-west of Beijing, is still underway.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "olympiad": []
+        },
+        {
+          "id": "lm-cn-bund",
+          "name": {
+            "zh": "外滩",
+            "ru": [
+              "Бунд",
+              "Набережная Вайтань",
+              "Вайтань"
+            ],
+            "gloss": "Бунд — набережная реки Хуанпу в Шанхае с ансамблем зданий разных стилей"
+          },
+          "city": {
+            "zh": "上海",
+            "ru": [
+              "Шанхай"
+            ],
+            "gloss": "Шанхай — город центрального подчинения у устья Янцзы",
+            "ref": "provinces/cities/city-shanghai"
+          },
+          "feature": {
+            "zh": "万国建筑博览群",
+            "ru": [
+              "Музей зданий разных стран и стилей"
+            ],
+            "gloss": "Ансамбль зданий разных стилей на берегу реки"
+          },
+          "address": "Шанхай, берег реки Хуанпу, длина около 1,5 км",
+          "dates": "Памятник общекитайского значения с ноября 1996 года; около 52 зданий в стиле классического возрождения",
+          "description": "Набережная реки Хуанпу в центре Шанхая, где выстроены около 52 зданий в стилях готики, романского стиля, барокко и классического возрождения. Это «музей зданий разных стран» (万国建筑博览群). Напротив, на другом берегу, стоит район Пудун с телебашней «Восточная жемчужина». Памятник общекитайского значения с 1996 года.",
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "外滩风景区 — 上海市人民政府",
+              "url": "https://www.shanghai.gov.cn/citywalk/20260625/9dfb6f86b9664e018607b5cc9ec9a53c.html",
+              "quote": "包含哥特式、罗马式、巴洛克式等 52 幢风格迥异的古典复兴大楼，素有 “外滩万国建筑博览群” 之称",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "上海景点 — 上海市人力资源和社会保障局",
+              "url": "https://rsj.sh.gov.cn/t05_17891/20260611/t0035_1441416.html",
+              "quote": "外滩位于上海市中心黄浦江畔，全长1.5公里 … 1996年11月，国务院将其列入第四批全国重点文物保护单位。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "unesco"
+          ]
+        },
+        {
+          "id": "lm-cn-oriental-pearl",
+          "name": {
+            "zh": "东方明珠",
+            "ru": [
+              "Телебашня «Восточная жемчужина»",
+              "Восточная жемчужина",
+              "Ориентал Перл"
+            ],
+            "gloss": "«Восточная жемчужина» — телебашня в Шанхае высотой 468 м"
+          },
+          "city": {
+            "zh": "上海",
+            "ru": [
+              "Шанхай"
+            ],
+            "gloss": "Шанхай — город центрального подчинения у устья Янцзы",
+            "ref": "provinces/cities/city-shanghai"
+          },
+          "feature": {
+            "zh": "塔总高468米的广播电视塔",
+            "ru": [
+              "Телебашня общей высотой 468 м"
+            ],
+            "gloss": "Телебашня высотой 468 м"
+          },
+          "address": "Шанхай, район Пудун, Луцзяцзуй, проспект Шицзи, 1",
+          "dates": "Строительство начато 30 июля 1991 года; для посетителей открыта 18 ноября 1994 года",
+          "description": "Телебашня в финансовом районе Луцзяцзуй в Шанхае, на другом берегу реки Хуанпу от Бунда. Общая высота 468 метров, основная конструкция — 350 метров. Одна из самых узнаваемых современных построек Шанхая.",
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "【读档学史·跟着档案看上海】东方明珠电视塔 — 上海档案信息网",
+              "url": "https://www.shda.gov.cn/dawh/csjy/202509/t20250919_75918.html",
+              "quote": "塔主体结构高350米，塔总高度为468米，于1991年7月30日动工建造",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "这个上海地标，迎来第一亿名游客 — 新华网",
+              "url": "http://www.news.cn/20240929/5076ce52e7e94bd68f67b4812ff339ac/c.html",
+              "quote": "自1994年11月18日正式对外营业的东方明珠塔",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "unesco"
+          ]
+        },
+        {
+          "id": "lm-cn-sun-island",
+          "name": {
+            "zh": "太阳岛",
+            "ru": [
+              "Остров Солнца",
+              "Тайяндао",
+              "Солнечный остров"
+            ],
+            "gloss": "Остров Солнца — парковая зона на берегу Сунгари в Харбине"
+          },
+          "city": {
+            "zh": "哈尔滨",
+            "ru": [
+              "город Харбин"
+            ],
+            "gloss": "Харбин — главный город провинции Хэйлунцзян",
+            "ref": "provinces/cities/city-haerbin"
+          },
+          "feature": {
+            "zh": "松花江北岸的江漫滩湿地风景区",
+            "ru": [
+              "Пойменный ландшафтный район на северном берегу Сунгари"
+            ],
+            "gloss": "Ландшафтный район на северном берегу реки Сунгари"
+          },
+          "address": "Харбин, северный берег реки Сунгари",
+          "dates": "Ландшафтный район и национальный парк AAAAA; дата основания в источниках не названа",
+          "description": "Ландшафтный район на северном берегу реки Сунгари в Харбине. Объявлен национальным ландшафтным районом, туристической зоной уровня AAAAA и национальным парком водно-болотных угодий. Общая площадь 88 кв. км, «собственно остров Солнца» — 7,05 кв. км.",
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "哈尔滨市太阳岛风景区 — 黑龙江省人民政府",
+              "url": "https://www.hlj.gov.cn/hlj/c108519/202503/c00_31816708.shtml",
+              "quote": "哈尔滨市太阳岛风景区是中国目前最大的城市沿江生态区、国家级风景名胜区、国家AAAAA级旅游景区 … 太阳岛风景区总面积88平方公里 … 太阳岛文化风情景区即传统意义上的太阳岛，包括太阳岛东、中、西三区，总面积7.05平方公里。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "美丽的太阳岛 — 新华网",
+              "url": "http://www.news.cn/info/20240822/0d365e27440a4b0b8a23f6628d428d23/c.html",
+              "quote": "位于哈尔滨市松花江北岸的太阳岛国家湿地公园总面积超过1万公顷",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "unesco"
+          ]
+        },
+        {
+          "id": "lm-cn-sun-moon-lake",
+          "name": {
+            "zh": "日月潭",
+            "ru": [
+              "Озеро Жиюэтань",
+              "Озеро Солнца и Луны",
+              "Жиюэтань"
+            ],
+            "gloss": "Жиюэтань — «озеро Солнца и Луны», самое известное озеро Тайваня"
+          },
+          "feature": {
+            "zh": "以拉鲁岛为界，北似日、南似月的湖泊",
+            "ru": [
+              "Озеро, разделённое островом Лалу на «солнце» и «луну»"
+            ],
+            "gloss": "Озеро, которое остров разделяет на «солнце» и «луну»"
+          },
+          "address": "Остров Тайвань, уезд Наньтоу, между горами Юйшань и Алишань",
+          "dates": "Природное озеро на высоте около 760 м над уровнем моря",
+          "description": "Озеро в горах центрального Тайваня, названное по форме: остров Лалу делит его на часть, круглую, как солнце, и часть, изогнутую, как месяц. В источниках КНР его называют самым большим естественным озером Тайваня; в других источниках — самым большим пресноводным озером острова. Одно из самых известных мест острова.",
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "台湾日月潭 — 江苏与台湾（中国台湾网）",
+              "url": "http://www.jsstb.gov.cn/meijing/202012/t20201210_12310710.htm",
+              "quote": "以这个岛为界，湖的北半部分圆圆的像太阳，湖的南半部分弯弯的像月牙，这就是日月潭名字的来源。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "日月潭 — 生态中国网",
+              "url": "http://www.eco.gov.cn/news_info/40549.html",
+              "quote": "岛的东北面湖水形圆如日，称日潭，西南面湖水形觚如月，称月潭，统称日月潭。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "unesco"
+          ]
+        },
+        {
+          "id": "lm-cn-yellow-crane",
+          "name": {
+            "zh": "黄鹤楼",
+            "ru": [
+              "Башня Жёлтого журавля",
+              "Хуанхэлоу"
+            ],
+            "gloss": "Башня Жёлтого журавля — знаменитая башня на горе Шэшань в Ухане"
+          },
+          "city": {
+            "zh": "武汉",
+            "ru": [
+              "город Ухань"
+            ],
+            "gloss": "Ухань — главный город провинции Хубэй на Янцзы",
+            "ref": "provinces/cities/city-wuhan"
+          },
+          "era": {
+            "zh": "三国",
+            "ru": [
+              "эпоха Троецарствия"
+            ],
+            "gloss": "Эпоха Троецарствия (основание в 223 году)"
+          },
+          "feature": {
+            "zh": "江南三大名楼之一",
+            "ru": [
+              "Одна из трёх знаменитых башен к югу от Янцзы"
+            ],
+            "gloss": "Одна из «трёх знаменитых башен» Цзяннани"
+          },
+          "address": "Ухань, район Учан, вершина горы Шэшань на берегу Янцзы",
+          "dates": "Основана около 223 года (по преданию); нынешнее здание построено с 1981 года на новом месте",
+          "description": "Башня на горе Шэшань над Янцзы в Ухане. По преданию её основали в 223 году, при царстве У эпохи Троецарствия. Много раз погибала и отстраивалась. Нынешнее здание начали возводить в 1981 году примерно в километре от прежнего места, поэтому эпоха указана по основанию башни, а не по нынешней постройке. Вместе с башнями Юэян и Тэнвана входит в «три знаменитые башни».",
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "5A级旅游景区 - 武汉市黄鹤楼公园 — 文化和旅游部数据服务",
+              "url": "https://sjfw.mct.gov.cn/site/dataservice/culdetails?id=34973&curId=10",
+              "quote": "黄鹤楼始建于三国时代吴黄武二年（公元223年） … 1981年重建黄鹤楼时，选址在距旧址约1000米的蛇山上",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "黄鹤楼 — 中共湖北省委外事工作委员会办公室（湖北省人民政府）",
+              "url": "https://www.fohb.gov.cn/info/2022-08/20220810161400_204.html",
+              "quote": "与湖南岳阳楼、江西滕王阁并称为“江南三大名楼”",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "unesco"
+          ]
+        },
+        {
+          "id": "lm-cn-tang-paradise",
+          "name": {
+            "zh": "大唐芙蓉园",
+            "ru": [
+              "Парк Датан Фужун",
+              "Парк «Великая Тан — Фужун»",
+              "Датан Фужунъюань"
+            ],
+            "gloss": "Датан Фужунъюань — парк в Сиани, воссоздающий облик императорского сада эпохи Тан"
+          },
+          "city": {
+            "zh": "西安",
+            "ru": [
+              "город Сиань"
+            ],
+            "gloss": "Сиань — город на северо-западе Китая, в провинции Шэньси",
+            "ref": "provinces/cities/city-xian"
+          },
+          "feature": {
+            "zh": "仿唐皇家园林式样的文化主题公园",
+            "ru": [
+              "Тематический парк в стиле императорского сада эпохи Тан"
+            ],
+            "gloss": "Тематический парк в стиле императорского сада Тан"
+          },
+          "address": "Сиань, новый район Цюйцзян",
+          "dates": "Современный парк, построен на севере от места танского сада Фужунъюань; открыт в 2004 году",
+          "description": "Тематический парк в Сиани, построенный к северу от места древнего танского сада Фужунъюань и воссоздающий облик императорского сада эпохи Тан. Это современная постройка, а не памятник эпохи Тан, поэтому эпоха не указана. Площадь около 66,7 га, из них водная поверхность — 20 га.",
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "大唐芙蓉园 — 西安市地方志办公室",
+              "url": "http://xadfz.xa.gov.cn/xadq/rwxa/1755435871439486978.html",
+              "quote": "位于曲江新区，占地66.67公顷，其中水面20公顷，2004年建成并对外开放。建在唐代芙蓉园遗址以北，是中国第一个全方位展示盛唐风貌的大型皇家园林式文化主题公园。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国-中亚峰会丨西安大唐芙蓉园里的文化韵味 — 新华网",
+              "url": "https://www.news.cn/world/2023-05/18/c_1129625511.htm",
+              "quote": "是在唐代芙蓉园遗址以北、仿照唐代皇家园林式样重建的一座全方位展示盛唐风貌的大型文化主题遗址公园",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "olympiad": []
+        },
+        {
+          "id": "lm-cn-huaqing",
+          "name": {
+            "zh": "华清池",
+            "ru": [
+              "Бассейн Хуацин",
+              "Горячие источники Хуацин",
+              "Хуацинчи"
+            ],
+            "gloss": "Хуацинчи — императорский дворец с горячими источниками у подножия горы Лишань близ Сианя"
+          },
+          "city": {
+            "zh": "西安",
+            "ru": [
+              "город Сиань"
+            ],
+            "gloss": "Сиань — город на северо-западе Китая, в провинции Шэньси",
+            "ref": "provinces/cities/city-xian"
+          },
+          "era": {
+            "zh": "唐",
+            "ru": [
+              "эпоха Тан"
+            ],
+            "gloss": "Эпоха Тан (618–907)"
+          },
+          "feature": {
+            "zh": "唐玄宗扩建的温泉行宫华清宫",
+            "ru": [
+              "Загородный дворец с горячими источниками Хуацин, расширенный Сюаньцзуном"
+            ],
+            "gloss": "Дворец Хуацин с горячими источниками, расширенный императором Сюаньцзуном"
+          },
+          "address": "Сиань, район Линьтун, у подножия горы Лишань, около 30 км от центра города",
+          "dates": "В 747 году при Сюаньцзуне (Тан) дворец получил имя Хуацин; нынешние здания — реставрации после 1949 года",
+          "description": "Императорский дворец с горячими источниками у подножия горы Лишань. В 747 году император Сюаньцзун (Тан) расширил его и назвал Хуацин. С этим местом связана история Сюаньцзуна и Ян гуйфэй. В 1936 году здесь произошёл Сианьский инцидент. Нынешние здания в основном восстановлены после 1949 года.",
+          "unesco": {
+            "zh": "未列入世界遗产名录",
+            "ru": [
+              "Не входит в список Всемирного наследия"
+            ],
+            "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "陕西华清池 — CCTV旅游频道",
+              "url": "https://www.cctv.com/travel/special/hqc/20040916/100900.shtml",
+              "quote": "唐玄宗天宝六年（747年），又在此大兴土木，就山势兴建行宫，改名为“华清宫” … 现今华清池许多古色古香的亭台楼阁、名泉名池，都是1949年以来修建恢复的。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "春色满园关不住 — 人民日报海外版",
+              "url": "http://paper.people.com.cn/rmrbhwb/html/2015-04/18/content_1555292.htm",
+              "quote": "这座皇家宫苑以周幽王烽火戏诸侯、唐玄宗与杨贵妃的传奇爱情故事和震惊中外的西安事变而广为人们所关注",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "olympiad": []
+        }
+      ]
+    },
+    "intangible": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "unesco": "zh",
+        "feature": "zh",
+        "about": "ru"
+      },
+      "sides": [
+        "unesco"
+      ],
+      "rows": [
+        {
+          "id": "int-jingju",
+          "name": {
+            "zh": "京剧",
+            "ru": [
+              "Пекинская опера",
+              "цзинцзюй"
+            ],
+            "gloss": "Пекинская опера (цзинцзюй) — самый известный вид китайской музыкальной драмы"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "唱念做打",
+            "ru": [
+              "пение, речитатив, игра и боевые приёмы"
+            ],
+            "gloss": "Четыре средства актёра: пение, речитатив, игра и боевые приёмы"
+          },
+          "about": "Пекинская опера (京剧, цзинцзюй) сочетает пение, речитатив, игру и боевые приёмы; её исполняют в основном на пекинском диалекте, а центрами считаются Пекин, Тяньцзинь и Шанхай. В 2010 году ЮНЕСКО внесло её в Репрезентативный список нематериального культурного наследия человечества (в тот же год — китайское иглоукалывание и прижигание).",
+          "sources": [
+            {
+              "title": "Peking opera — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/peking-opera-00418",
+              "quote": "Inscribed in 2010 ( 5.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … Peking opera is a performance art incorporating singing, reciting, acting, martial arts.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "2010 中医针灸 京剧",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "int-kunqu",
+          "name": {
+            "zh": "昆曲",
+            "ru": [
+              "куньцюй",
+              "опера куньцюй"
+            ],
+            "gloss": "Куньцюй — одна из древнейших форм китайской оперы, возникшая в Куньшане"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "发源于昆山",
+            "ru": [
+              "возникла в Куньшане"
+            ],
+            "gloss": "Куньцюй возникла при Мин в Куньшане близ Сучжоу"
+          },
+          "about": "Куньцюй (昆曲) возникла при династии Мин в городе Куньшань, в районе Сучжоу, и остаётся одной из древнейших форм китайской оперы; классические пьесы — «Пионовая беседка» и «Дворец долголетия». Провозглашённая шедевром в 2001 году, она в 2008 году вошла в Репрезентативный список ЮНЕСКО.",
+          "sources": [
+            {
+              "title": "Kun Qu opera — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/kun-qu-opera-00004",
+              "quote": "Inscribed in 2008 ( 3.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … Kun Qu Opera developed under the Ming dynasty (fourteenth to seventeenth centuries) in the city of Kunshan, situated in the region of Suzhou in southeast China.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "（中国的昆曲、古琴艺术、新疆维吾尔木卡姆艺术、蒙古族长调民歌涵盖其中）纳入人类非物质文化遗产代表作名录 … 2008 昆曲 古琴艺术 新疆维吾尔木卡姆艺术 蒙古族长调民歌 2009",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "int-yueju-guangdong",
+          "name": {
+            "zh": "粤剧",
+            "ru": [
+              "Юэцзюй",
+              "кантонская опера",
+              "гуандунская опера"
+            ],
+            "gloss": "Юэцзюй — кантонская опера Гуандуна и Гуанси"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "用粤方言演唱",
+            "ru": [
+              "поётся на кантонском диалекте"
+            ],
+            "gloss": "Кантонская опера исполняется на кантонском (юэском) диалекте в Гуандуне и Гуанси"
+          },
+          "about": "Юэцзюй (粤剧, кантонская опера) соединяет традиции мандаринской оперы с кантонским диалектом и распространена в Гуандуне и Гуанси; для неё характерны струнные и ударные инструменты, пышные костюмы, раскрашенные лица и боевые сцены. В 2009 году внесена в Репрезентативный список ЮНЕСКО (в списке — «Yueju opera»). 越剧 из Чжэцзяна — другой жанр, в списки ЮНЕСКО не внесён.",
+          "sources": [
+            {
+              "title": "Yueju opera — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/yueju-opera-00203",
+              "quote": "Inscribed in 2009 ( 4.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … The Chinese tradition of Yueju opera combines Mandarin operatic traditions and Cantonese dialect.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "2009 中国篆刻 中国雕版印刷技艺 中国书法 中国剪纸 中国传统木结构建筑营造技艺 南京云锦织造技艺 端午节 中国朝鲜族农乐舞 妈祖信俗 呼麦 南音 热贡艺术 中国蚕桑丝织技艺 龙泉青瓷传统烧制技艺 宣纸传统制作技艺 西安鼓乐 粤剧",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "int-guqin",
+          "name": {
+            "zh": "古琴艺术",
+            "ru": [
+              "искусство гуцинь",
+              "гуцинь"
+            ],
+            "gloss": "Гуцинь — семиструнная китайская цитра, древнейший сольный инструмент Китая"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "七弦琴",
+            "ru": [
+              "семиструнная цитра"
+            ],
+            "gloss": "У гуциня семь струн и тринадцать отмеченных позиций (хуэй)"
+          },
+          "about": "Гуцинь (古琴) — китайская цитра с семью струнами, существующая более 3000 лет; это главный сольный инструмент Китая, на нём играли учёные и аристократы в узком кругу. Гуцинь входил в «четыре искусства» учёного (вместе с каллиграфией, живописью и древней шахматной игрой). Объявленный шедевром в 2003 году, он в 2008 году вошёл в Репрезентативный список ЮНЕСКО.",
+          "sources": [
+            {
+              "title": "Guqin and its music — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/guqin-and-its-music-00061",
+              "quote": "Inscribed in 2008 ( 3.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … The Chinese zither, called guqin, has existed for over 3,000 years and represents China’s foremost solo musical instrument tradition.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "2008 昆曲 古琴艺术 新疆维吾尔木卡姆艺术 蒙古族长调民歌 2009 … （中国的昆曲、古琴艺术、新疆维吾尔木卡姆艺术、蒙古族长调民歌涵盖其中）纳入人类非物质文化遗产代表作名录",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "int-shufa",
+          "name": {
+            "zh": "中国书法",
+            "ru": [
+              "китайская каллиграфия"
+            ],
+            "gloss": "Китайская каллиграфия — искусство письма кистью пятью основными стилями"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "篆隶草行楷五体",
+            "ru": [
+              "пять стилей письма"
+            ],
+            "gloss": "Пять стилей письма кистью: чжуаньшу, лишу, цаошу, синшу и кайшу"
+          },
+          "about": "Китайская каллиграфия (中国书法) давно стала не только средством записи, но и искусством: кистью пишут пятью стилями — чжуань («печатным»), ли («служебным»), цао («скорописью»), син («беглым») и кай («уставным»). В 2009 году её внесли в Репрезентативный список ЮНЕСКО вместе с искусством резьбы печатей.",
+          "sources": [
+            {
+              "title": "Chinese calligraphy — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/chinese-calligraphy-00216",
+              "quote": "Inscribed in 2009 ( 4.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … calligraphers’ brushes are used to ink five different styles of script, known as ‘seal’, ‘official’, ‘cursive’, ‘running’ and ‘regular’.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "2009 中国篆刻 中国雕版印刷技艺 中国书法",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "int-zhuanke",
+          "name": {
+            "zh": "中国篆刻",
+            "ru": [
+              "искусство китайской печати",
+              "резьба печатей",
+              "чжуанькэ"
+            ],
+            "gloss": "Чжуанькэ — резьба печатей ножом по камню"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "以刀刻石为印",
+            "ru": [
+              "печать вырезают ножом на камне"
+            ],
+            "gloss": "Рисунок наносят на бумаге, затем зеркально вырезают на камне ножом"
+          },
+          "about": "Искусство резьбы печатей (中国篆刻) — основа китайских изящных искусств: сначала рисунок эскизируют на бумаге, затем зеркально вырезают на камне ножом, на крошечной поверхности. Печать сначала служила подписью и знаком власти. Хранит традицию, в частности, Общество резчиков печатей Силин (西泠印社) в Чжэцзяне; в 2009 году искусство внесено в Репрезентативный список ЮНЕСКО.",
+          "sources": [
+            {
+              "title": "Art of Chinese seal engraving — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/art-of-chinese-seal-engraving-00217",
+              "quote": "Inscribed in 2009 ( 4.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … The art of seal engraving is a cornerstone of Chinese fine arts.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "2009 中国篆刻",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "int-zhenjiu",
+          "name": {
+            "zh": "中医针灸",
+            "ru": [
+              "иглоукалывание и прижигание",
+              "чжэньцзю",
+              "акупунктура и моксибустия"
+            ],
+            "gloss": "Чжэньцзю — иглоукалывание и прижигание полынью в китайской медицине"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "针刺与艾灸",
+            "ru": [
+              "иглы и прижигание полынью"
+            ],
+            "gloss": "Воздействие иглами и прижиганием полынью"
+          },
+          "about": "Иглоукалывание и прижигание (中医针灸) — приёмы традиционной китайской медицины, где тело считают «малой вселенной», пронизанной каналами: на их точки воздействуют иглами или сжигают полынь (моксу), чтобы восстановить равновесие. В 2010 году этот элемент внесён в Репрезентативный список ЮНЕСКО — в один год с пекинской оперой.",
+          "sources": [
+            {
+              "title": "Acupuncture and moxibustion of traditional Chinese medicine — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/acupuncture-and-moxibustion-of-traditional-chinese-medicine-00425",
+              "quote": "Inscribed in 2010 ( 5.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … Acupuncture and moxibustion are forms of traditional Chinese medicine widely practised in China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "2010 中医针灸 京剧",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "int-zhusuan",
+          "name": {
+            "zh": "中国珠算",
+            "ru": [
+              "чжусуань",
+              "вычисления на китайских счётах",
+              "китайский абак"
+            ],
+            "gloss": "Чжусуань — вычисления на китайских счётах (суаньпань)"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "算盘与珠算口诀",
+            "ru": [
+              "счёты и рифмованные формулы"
+            ],
+            "gloss": "Расчёты по рифмованным формулам, передвигая бусины на счётах"
+          },
+          "about": "Чжусуань (中国珠算) — традиционный способ вычислений на китайских счётах: бусины на спицах передвигают по правилам, заданным рифмованными устными формулами. Метод позволяет складывать, вычитать, умножать, делить и извлекать корни. В 2013 году чжусуань внесён в Репрезентативный список ЮНЕСКО.",
+          "sources": [
+            {
+              "title": "Chinese Zhusuan — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/chinese-zhusuan-knowledge-and-practices-of-mathematical-calculation-through-the-abacus-00853",
+              "quote": "Inscribed in 2013 ( 8.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … Chinese Zhusuan is a time-honoured traditional method of performing mathematical calculations with an abacus.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "2013 中国珠算 2016",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "int-jieqi",
+          "name": {
+            "zh": "二十四节气",
+            "ru": [
+              "24 сезонных периода",
+              "двадцать четыре сезонных периода",
+              "эр-ши-сы цзеци"
+            ],
+            "gloss": "24 цзеци — календарь из 24 сезонных периодов, выведенный по годовому движению Солнца"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "始于立春，终于大寒",
+            "ru": [
+              "от «Начала весны» до «Великого холода»"
+            ],
+            "gloss": "Цикл идёт от «Начала весны» до «Великого холода»"
+          },
+          "about": "Двадцать четыре сезонных периода (二十四节气) — календарная система, которая делит годовое движение Солнца на 24 отрезка; она возникла в бассейне Хуанхэ и служит ориентиром для земледелия и быта. Цикл начинается с «Начала весны» и заканчивается «Великим холодом». В 2016 году элемент внесён в Репрезентативный список ЮНЕСКО.",
+          "sources": [
+            {
+              "title": "The Twenty-Four Solar Terms — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/the-twenty-four-solar-terms-knowledge-in-china-of-time-and-practices-developed-through-observation-of-the-sun-s-annual-motion-00647",
+              "quote": "Inscribed in 2016 ( 11.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … It starts from the Beginning of Spring and ends with the Greater Cold, moving in cycles.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "2016 二十四节气 2018",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "int-taijiquan",
+          "name": {
+            "zh": "太极拳",
+            "ru": [
+              "тайцзицюань",
+              "тайцзи-цюань"
+            ],
+            "gloss": "Тайцзицюань — традиционная практика плавных круговых движений в связке с дыханием"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "发源于河南温县",
+            "ru": [
+              "возник в уезде Вэнь, Хэнань"
+            ],
+            "gloss": "Возник в середине XVII века в уезде Вэнь (Хэнань)"
+          },
+          "about": "Тайцзицюань (太极拳) — практика, для которой характерны расслабленные круговые движения, согласованные с дыханием; она зародилась в середине XVII века в уезде Вэнь провинции Хэнань. Теперь ею занимаются по всей стране люди любого возраста. Внесён в Репрезентативный список ЮНЕСКО в 2020 году.",
+          "sources": [
+            {
+              "title": "Taijiquan — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/taijiquan-00424",
+              "quote": "Inscribed in 2020 ( 15.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … Originating during the mid-seventeenth century in Wenxian County in the Henan Province of central China",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "2020 太极拳 送王船",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "int-zhicha",
+          "name": {
+            "zh": "中国传统制茶技艺及其相关习俗",
+            "ru": [
+              "традиционные техники обработки чая и связанные с ними обычаи",
+              "китайские традиционные технологии производства чая"
+            ],
+            "gloss": "Традиционные китайские техники обработки чая и связанные с чаем обычаи"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "六大茶类",
+            "ru": [
+              "шесть категорий чая"
+            ],
+            "gloss": "Шесть категорий чая: зелёный, жёлтый, тёмный, белый, улун и чёрный (красный)"
+          },
+          "about": "Элемент «Традиционные техники обработки чая и связанные с ними обычаи» охватывает знания и навыки: уход за плантациями, сбор листа, ручную обработку, питьё и совместное чаепитие. Производители выработали шесть категорий чая — зелёный, жёлтый, тёмный, белый, улун и чёрный; с переработанными сортами это свыше 2000 видов. Внесён в Репрезентативный список ЮНЕСКО в 2022 году.",
+          "sources": [
+            {
+              "title": "Traditional tea processing techniques and associated social practices in China — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/traditional-tea-processing-techniques-and-associated-social-practices-in-china-01884",
+              "quote": "Inscribed in 2022 ( 17.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … Based on natural conditions and local customs, tea producers have developed six categories of tea: green, yellow, dark, white, oolong and black teas.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "2022 中国传统制茶技艺及其相关习俗 2024",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": [],
+          "core": true
+        },
+        {
+          "id": "int-yueju-zhejiang",
+          "name": {
+            "zh": "越剧",
+            "ru": [
+              "Юэцзюй (чжэцзянская)",
+              "чжэцзянская опера юэ",
+              "юэюй"
+            ],
+            "gloss": "Юэцзюй — чжэцзянская опера, которую исполняют женщины"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "发源于浙江嵊县",
+            "ru": [
+              "возник в уезде Шэнсянь (Чжэцзян)"
+            ],
+            "gloss": "Возник в районе Шэнсянь города Шаосина (Чжэцзян), в XX веке стал «женской» оперой"
+          },
+          "about": "Юэцзюй (越剧) возник в Шэнсяне (район Шаосина, Чжэцзян), в 1916 году пришёл в Шанхай, а с 1930-х годов стал оперой, где все роли исполняют женщины. Распространён в Чжэцзяне, Шанхае, Цзянсу. Это национальное нематериальное наследие Китая (2006), но не элемент списков ЮНЕСКО; в списке стоит другой жанр — 粤剧.",
+          "sources": [
+            {
+              "title": "越剧 — 国家级非物质文化遗产代表性项目名录 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/13266",
+              "quote": "越剧流行于浙江、上海、江苏等许多省、市、地区，它发源于浙江省绍兴地区嵊县一带 … 越剧 项目序号：197 项目编号：Ⅳ-53 公布时间：2006(第一批) 类别：传统戏剧",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "国务院关于公布第一批国家级非物质文化遗产名录的通知 — 中国政府网",
+              "url": "https://www.gov.cn/zwgk/2006-06/02/content_297946.htm",
+              "quote": "197 Ⅳ—53 越剧 浙江",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": []
+        },
+        {
+          "id": "int-yuju",
+          "name": {
+            "zh": "豫剧",
+            "ru": [
+              "Юйцзюй",
+              "хэнаньская опера",
+              "хэнаньская банцзы"
+            ],
+            "gloss": "Юйцзюй — хэнаньская опера жанра «банцзы»"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "又称河南梆子",
+            "ru": [
+              "также называется «хэнаньская банцзы»"
+            ],
+            "gloss": "Юйцзюй называют также «хэнаньской банцзы»"
+          },
+          "about": "Юйцзюй (豫剧) — один из важнейших жанров оперы «банцзы», распространённый главным образом в провинции Хэнань. Его называют также «хэнаньской банцзы» (河南梆子); к эпохе Цяньлуна он уже был известен в Хэнани. Это национальное нематериальное наследие Китая (2006), но не элемент списков ЮНЕСКО.",
+          "sources": [
+            {
+              "title": "豫剧 — 国家级非物质文化遗产代表性项目名录 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/13186",
+              "quote": "豫剧也叫河南梆子、河南高调、河南讴，豫西山区则称之为靠山吼。 … 豫剧 项目序号：167 项目编号：Ⅳ-23 公布时间：2006(第一批) 类别：传统戏剧",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "国务院关于公布第一批国家级非物质文化遗产名录的通知 — 中国政府网",
+              "url": "https://www.gov.cn/zwgk/2006-06/02/content_297946.htm",
+              "quote": "167 Ⅳ—23 豫剧 河南",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": []
+        },
+        {
+          "id": "int-huangmeixi",
+          "name": {
+            "zh": "黄梅戏",
+            "ru": [
+              "Хуанмэйси",
+              "хуанмэйская опера",
+              "опера хуанмэй"
+            ],
+            "gloss": "Хуанмэйси — аньхойская опера, выросшая из чайных песен Хуанмэя"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "源于湖北黄梅采茶调",
+            "ru": [
+              "выросла из чайных песен Хуанмэя (Хубэй)"
+            ],
+            "gloss": "Из чайных песен Хуанмэя (Хубэй) выросла в Аньхое вокруг Аньцина"
+          },
+          "about": "Хуанмэйси (黄梅戏) выросла из чайных песен уезда Хуанмэй (Хубэй), проникших в Аньхой; позднее, с центром в Аньцине, стала основным местным жанром провинции. Это национальное нематериальное наследие Китая (2006), но не элемент списков ЮНЕСКО.",
+          "sources": [
+            {
+              "title": "黄梅戏 — 国家级非物质文化遗产代表性项目名录 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/13280",
+              "quote": "黄梅戏原名黄梅调、采茶戏等，现流布于安徽省安庆市、湖北省黄梅县等地。 … 黄梅戏 项目序号：204 项目编号：Ⅳ-60 公布时间：2006(第一批) 类别：传统戏剧",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "国务院关于公布第一批国家级非物质文化遗产名录的通知 — 中国政府网",
+              "url": "https://www.gov.cn/zwgk/2006-06/02/content_297946.htm",
+              "quote": "204 Ⅳ—60 黄梅戏 安徽",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": []
+        },
+        {
+          "id": "int-xiangsheng",
+          "name": {
+            "zh": "相声",
+            "ru": [
+              "сяншэн",
+              "сян-шэн",
+              "китайский комический диалог"
+            ],
+            "gloss": "Сяншэн — комический диалог, жанр сказовых искусств"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "逗哏与捧哏",
+            "ru": [
+              "«дохэнь» и «пэнхэнь»"
+            ],
+            "gloss": "В диалоге один артист «дразнит», другой «подыгрывает»"
+          },
+          "about": "Сяншэн (相声) — один из самых популярных жанров цюйи; он сложился в Пекине в эпоху Сяньфэн–Тунчжи (династия Цин) и особенно распространён в Пекине и Тяньцзине. Чаще всего это диалог двух артистов — «дохэнь» шутит, «пэнхэнь» подыгрывает. Это национальное нематериальное наследие Китая (2008), но не элемент списков ЮНЕСКО.",
+          "sources": [
+            {
+              "title": "相声 — 国家级非物质文化遗产代表性项目名录 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/13670",
+              "quote": "它大约在清代咸丰、同治年间形成于北京，而后在广大北方地区广泛流传，尤以京津一带最为活跃 … 相声 项目序号：740 项目编号：Ⅴ-47 公布时间：2008(第二批) 类别：曲艺 … 甲负责逗哏，乙负责捧哏",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "国务院关于公布第二批国家级非物质文化遗产名录和第一批国家级非物质文化遗产扩展项目名录的通知 — 中国政府网",
+              "url": "https://www.gov.cn/zwgk/2008-06/14/content_1016331.htm",
+              "quote": "740 Ⅴ-47 相声",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "olympiad": []
+        },
+        {
+          "id": "int-xiangqi",
+          "name": {
+            "zh": "中国象棋",
+            "ru": [
+              "китайские шахматы",
+              "сянцы"
+            ],
+            "gloss": "Сянци — китайские шахматы с «дворцом» и «рекой»"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
+          },
+          "feature": {
+            "zh": "九宫内的帅（将）",
+            "ru": [
+              "генерал в «девятидворцовом» квадрате"
+            ],
+            "gloss": "Полководец ходит только внутри «дворца» из девяти пунктов"
+          },
+          "about": "Сянцы (象棋, китайские шахматы) — традиционная интеллектуальная игра: «девять дворцов» на доске изображают императорский дворец, и генерал (帅/将) с советниками (士) не выходят за его пределы. Это национальное нематериальное наследие Китая (2008), но не элемент списков ЮНЕСКО; Синьхуа/Пэнбай и ihchina.cn прямо отмечают, что сянцы не подавались в Репрезентативный список.",
+          "sources": [
+            {
+              "title": "象棋 — 国家级非物质文化遗产代表性项目名录 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/13813",
+              "quote": "棋盘中的九宫象征皇宫，代表皇帝的帅（将）及代表皇帝身边近卫的士只能在九宫中活动 … 象棋 项目序号：791 项目编号：Ⅵ-19 公布时间：2008(第二批) 类别：传统体育、游艺与杂技",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "印度6次申遗中国象棋？没有的事！ — 中国非物质文化遗产网（转载澎湃新闻）",
+              "url": "https://www.ihchina.cn/project_details/20763",
+              "quote": "虽然“象棋”尚未申报人类非物质文化遗产代表作名录，但这并不代表象棋的地位被忽视。",
+              "checkedAt": "2026-10-23",
               "authority": "official"
             }
           ],
