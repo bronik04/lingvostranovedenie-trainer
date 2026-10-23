@@ -293,18 +293,18 @@
 
 | строка | title | province | feature | другие | олимпиада |
 |---|---|---|---|---|---|
-| mtn-ximalaya | × | × | — | 1 | прогноз |
+| mtn-ximalaya | × | × | — | — | прогноз |
 | mtn-zhumulangma | × | — | — | — | да |
 | mtn-kunlun | × | × | 1 | — | прогноз |
 | mtn-tianshan | × | — | × | — | прогноз |
 | mtn-qinling | × | — | — | 1 | прогноз |
 | mtn-changbai | × | — | — | 1 | прогноз |
-| mtn-taishan | — | — | × | — | прогноз |
+| mtn-taishan | — | — | 1 | — | прогноз |
 | mtn-huashan | 1 | — | × | — | прогноз |
 | mtn-hengshan-hunan | — | — | × | 1 | прогноз |
 | mtn-hengshan-shanxi | 1 | — | × | — | прогноз |
 | mtn-songshan | — | — | × | 1 | прогноз |
-| mtn-wutaishan | × | — | × | 1 | прогноз |
+| mtn-wutaishan | × | — | × | — | прогноз |
 | mtn-emeishan | × | — | × | 1 | да |
 | mtn-jiuhuashan | × | — | × | — | прогноз |
 | mtn-putuoshan | × | — | × | — | да |
