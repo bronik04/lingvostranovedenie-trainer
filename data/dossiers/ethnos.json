@@ -13,6 +13,9 @@
         "description": "ru",
         "heritage_note": "ru"
       },
+      "sides": [
+        "region"
+      ],
       "required": [
         "name",
         "country",
@@ -56,6 +59,10 @@
             }
           ],
           "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ],
           "region": {
             "zh": "黄河、淮河、长江、珠江等地区",
             "ru": [
@@ -118,6 +125,10 @@
           "olympiad": [
             "2019-20-mun-q727051"
           ],
+          "core": true,
+          "skipSides": [
+            "region"
+          ],
           "region": {
             "zh": "广西壮族自治区",
             "ru": [
@@ -172,6 +183,10 @@
             }
           ],
           "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ],
           "region": {
             "zh": "宁夏回族自治区",
             "ru": [
@@ -227,6 +242,7 @@
           "olympiad": [
             "2018-19-shk-6"
           ],
+          "core": true,
           "region": {
             "zh": "辽宁省",
             "ru": [
@@ -282,6 +298,10 @@
             }
           ],
           "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ],
           "region": {
             "zh": "新疆维吾尔自治区",
             "ru": [
@@ -336,6 +356,7 @@
             }
           ],
           "olympiad": [],
+          "core": true,
           "region": {
             "zh": "贵州省",
             "ru": [
@@ -498,6 +519,10 @@
             }
           ],
           "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ],
           "region": {
             "zh": "西藏自治区",
             "ru": [
@@ -552,6 +577,10 @@
             }
           ],
           "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ],
           "region": {
             "zh": "内蒙古自治区",
             "ru": [
@@ -835,12 +864,13 @@
             }
           ],
           "olympiad": [],
+          "core": true,
           "region": {
-            "zh": "吉林省延边朝鲜族自治州",
+            "zh": "吉林省",
             "ru": [
-              "Яньбянь-Корейский автономный округ провинции Цзилинь"
+              "Провинция Цзилинь"
             ],
-            "gloss": "Яньбянь в Цзилине — крупнейшая область компактного проживания корейцев Китая"
+            "gloss": "Цзилинь — здесь Яньбянь, главная область проживания корейцев Китая"
           },
           "language": {
             "zh": "朝鲜语",
@@ -997,12 +1027,13 @@
             }
           ],
           "olympiad": [],
+          "core": true,
           "region": {
-            "zh": "云南省西双版纳傣族自治州",
+            "zh": "云南省",
             "ru": [
-              "Сишуанбаньна-Дайский автономный округ провинции Юньнань"
+              "Провинция Юньнань"
             ],
-            "gloss": "Сишуанбаньна — одна из основных областей проживания дай"
+            "gloss": "Юньнань — здесь Сишуанбаньна-Дайский и Дэхун-Дай-Цзинпоский автономные округа"
           },
           "language": {
             "zh": "傣语",
@@ -2233,6 +2264,9 @@
         "description": "ru",
         "community": "ru"
       },
+      "sides": [
+        "people"
+      ],
       "required": [
         "name",
         "country",
@@ -3025,7 +3059,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "her-cn-mongol-khoomei",
@@ -3147,7 +3182,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "her-cn-muqam",
@@ -3208,7 +3244,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "her-cn-manas",
@@ -3268,7 +3305,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "her-cn-gesar",
@@ -3323,6 +3361,7 @@
             }
           ],
           "olympiad": [],
+          "core": true,
           "community": "Тибетцы, монголы, ту и другие народы"
         },
         {
@@ -3445,7 +3484,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "her-cn-korean-farmers-dance",
@@ -3567,7 +3607,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "her-cn-asi-dance",
@@ -3932,7 +3973,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "her-cn-tujia-brocade",
@@ -4943,6 +4985,7 @@
             }
           ],
           "olympiad": [],
+          "core": true,
           "people": {
             "zh": "蒙古族",
             "ru": [
@@ -5182,6 +5225,7 @@
             }
           ],
           "olympiad": [],
+          "core": true,
           "people": {
             "zh": "蒙古族",
             "ru": [
