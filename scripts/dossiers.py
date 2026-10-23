@@ -504,6 +504,24 @@ def _content_errors(where: str, question: dict, dossier: dict) -> list[str]:
         given = _rows(dossier, fact['table'])[fact['row']][fact['given']]
         if given['zh'] not in text:
             errors.append(f'{where}: вопрос не называет значение given {given["zh"]!r}')
+        if fact['given'] != 'name':
+            # строка с тем же given — второй верный ответ. Строка без ячейки given опасна, только если
+            # значение общее (колонка-набор вроде unesco): уникального названия или прозвища у неё быть не может.
+            # Колонку-категорию (сюжет, жанр, город) с уникальным значением ответа проверка не видит
+            column = fact['given']
+            rows = _rows(dossier, fact['table'])
+            candidates = [row_id for row_id, _ in _candidates(question, dossier)]
+            same = [row_id for row_id in candidates
+                    if column in rows[row_id] and rows[row_id][column]['zh'].strip() == given['zh'].strip()]
+            shared = sum(column in row and row[column]['zh'].strip() == given['zh'].strip()
+                         for row in rows.values()) > 1
+            missing = [row_id for row_id in candidates if column not in rows[row_id]] if shared else []
+            if same:
+                errors.append(f'{where}: у неверного варианта та же ячейка {column} {given["zh"]!r}: {same}'
+                              ' — второй верный ответ, убрать через exclude')
+            if missing:
+                errors.append(f'{where}: у неверного варианта нет ячейки {column} — не проверить: {missing}'
+                              ' — убрать через exclude')
     if dossier['tables'][fact['table']].get('datedQuestions') and not (YEAR.search(text) or SERIES.search(text)):
         errors.append(f'{where}: вопрос не называет год или серию')
     return errors
