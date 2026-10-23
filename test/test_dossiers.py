@@ -368,10 +368,11 @@ class ValidateQuestionsTest(unittest.TestCase):
         self.assertEqual(self.errors([named], data), [])
 
     def test_given_name_does_not_check_wrong_options(self):
-        # given: name только называет строку — у соседей имени может не быть
+        # given: name только называет строку — у соседей имени может не быть, повтор имени тоже не второй ответ
         data = dossier()
         data['tables']['banknotes']['columns']['name'] = 'zh'
         row(data, 'cny-50')['name'] = cell('伍拾圆')
+        row(data, 'cny-10')['name'] = cell('伍拾圆')
         fact = {'table': 'banknotes', 'row': 'cny-50', 'ask': 'flower', 'given': 'name', 'where': {'currency': '人民币'}}
         named = question(fact=fact, questionRu='Какой цветок изображён на купюре 伍拾圆 выпуска 2019 года?')
         self.assertEqual(self.errors([named], data), [])

@@ -506,7 +506,8 @@ def _content_errors(where: str, question: dict, dossier: dict) -> list[str]:
             errors.append(f'{where}: вопрос не называет значение given {given["zh"]!r}')
         if fact['given'] != 'name':
             # строка с тем же given — второй верный ответ. Строка без ячейки given опасна, только если
-            # значение общее (колонка-набор вроде unesco): уникальное название у неё быть не может
+            # значение общее (колонка-набор вроде unesco): уникального названия или прозвища у неё быть не может.
+            # Колонку-категорию (сюжет, жанр, город) с уникальным значением ответа проверка не видит
             column = fact['given']
             rows = _rows(dossier, fact['table'])
             candidates = [row_id for row_id, _ in _candidates(question, dossier)]
