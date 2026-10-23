@@ -205,14 +205,14 @@
 
 | строка | region | religion | другие | олимпиада |
 |---|---|---|---|---|
-| ppl-cn-han | × | × | 1 | прогноз |
+| ppl-cn-han | × | × | 1 | да |
 | ppl-cn-zhuang | × | × | 1 | да |
-| ppl-cn-hui | × | — | 1 | прогноз |
+| ppl-cn-hui | × | — | 1 | да |
 | ppl-cn-manchu | — | × | — | да |
-| ppl-cn-uyghur | × | — | 1 | прогноз |
+| ppl-cn-uyghur | × | — | 1 | да |
 | ppl-cn-miao | 1 | × | — | прогноз |
-| ppl-cn-tibetan | × | — | 1 | прогноз |
-| ppl-cn-mongol | × | — | 1 | прогноз |
+| ppl-cn-tibetan | × | — | 1 | да |
+| ppl-cn-mongol | × | — | 1 | да |
 | ppl-cn-korean | 1 | × | — | прогноз |
 | ppl-cn-dai | 1 | — | — | прогноз |
 
@@ -240,7 +240,7 @@
 | строка | region | people | другие | олимпиада |
 |---|---|---|---|---|
 | dw-siheyuan | 1 | × | — | прогноз |
-| dw-tulou | × | × | — | прогноз |
+| dw-tulou | × | × | — | да |
 | dw-yaodong | 1 | × | — | прогноз |
 | dw-menggubao | × | × | — | прогноз |
 | dw-diaojiaolou | × | × | — | прогноз |
@@ -252,9 +252,9 @@
 
 | строка | region | другие | олимпиада |
 |---|---|---|---|
-| dia-beifang | × | 1 | прогноз |
-| dia-wu | — | — | прогноз |
-| dia-xiang | — | — | прогноз |
+| dia-beifang | × | 1 | да |
+| dia-wu | — | — | да |
+| dia-xiang | — | — | да |
 | dia-gan | 1 | — | прогноз |
 | dia-kejia | × | — | прогноз |
 | dia-min | 1 | — | прогноз |
