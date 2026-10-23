@@ -251,8 +251,8 @@
 
 | строка | mouth | nickname | feature | другие | олимпиада |
 |---|---|---|---|---|---|
-| wat-changjiang | — | — | — | 1 | да |
-| wat-huanghe | 1 | — | — | — | да |
+| wat-changjiang | 1 | 1 | — | 1 | да |
+| wat-huanghe | 1 | — | — | 1 | да |
 | wat-zhujiang | — | × | — | — | да |
 | wat-heilongjiang | 1 | × | — | — | прогноз |
 | wat-huaihe | — | × | — | — | прогноз |
@@ -268,9 +268,9 @@
 | строка | province | feature | другие | олимпиада |
 |---|---|---|---|---|
 | lake-poyanghu | — | — | — | да |
-| lake-dongtinghu | — | — | 1 | прогноз |
+| lake-dongtinghu | 1 | — | 1 | прогноз |
 | lake-taihu | 1 | — | — | да |
-| lake-qinghaihu | — | — | — | да |
+| lake-qinghaihu | — | 1 | — | да |
 | lake-xihu | — | × | — | да |
 
 #### Таблица `seas`
@@ -294,21 +294,21 @@
 | строка | title | province | feature | другие | олимпиада |
 |---|---|---|---|---|---|
 | mtn-ximalaya | × | × | — | — | прогноз |
-| mtn-zhumulangma | × | — | — | — | да |
+| mtn-zhumulangma | × | — | — | 1 | да |
 | mtn-kunlun | × | × | 1 | — | прогноз |
-| mtn-tianshan | × | — | × | — | прогноз |
+| mtn-tianshan | × | 1 | × | — | прогноз |
 | mtn-qinling | × | — | — | 1 | прогноз |
 | mtn-changbai | × | — | — | 1 | прогноз |
-| mtn-taishan | — | — | 1 | — | прогноз |
+| mtn-taishan | — | 1 | 1 | — | прогноз |
 | mtn-huashan | 1 | — | × | — | прогноз |
 | mtn-hengshan-hunan | — | — | × | 1 | прогноз |
 | mtn-hengshan-shanxi | 1 | — | × | — | прогноз |
-| mtn-songshan | — | — | × | 1 | прогноз |
-| mtn-wutaishan | × | — | × | — | прогноз |
+| mtn-songshan | — | 1 | × | — | прогноз |
+| mtn-wutaishan | × | 1 | × | — | прогноз |
 | mtn-emeishan | × | — | × | 1 | да |
-| mtn-jiuhuashan | × | — | × | — | прогноз |
+| mtn-jiuhuashan | × | 1 | × | — | прогноз |
 | mtn-putuoshan | × | — | × | — | да |
-| mtn-huangshan | × | — | — | 1 | прогноз |
+| mtn-huangshan | × | 1 | — | 1 | прогноз |
 
 #### Таблица `landforms`
 
@@ -324,10 +324,10 @@
 | land-zhungeer | × | — | 1 | прогноз |
 | land-chaidamu | 1 | — | — | прогноз |
 | land-sichuan | 1 | — | — | прогноз |
-| land-taklamakan | — | — | 1 | прогноз |
+| land-taklamakan | 1 | 1 | — | прогноз |
 | land-dongbei | × | × | — | прогноз |
 | land-huabei | × | × | — | прогноз |
-| land-changjiang | — | × | 1 | прогноз |
+| land-changjiang | 1 | × | 1 | прогноз |
 | land-tulufan | — | — | — | да |
 
 #### Таблица `engineering`
@@ -337,13 +337,13 @@
 | строка | river | province | era | feature | другие | олимпиада |
 |---|---|---|---|---|---|---|
 | eng-dujiangyan | 1 | — | — | × | — | прогноз |
-| eng-sanxia | — | — | × | — | 1 | прогноз |
+| eng-sanxia | 1 | — | × | — | 1 | прогноз |
 | eng-nanshuibeidiao | × | × | × | — | — | прогноз |
 | eng-gangzhuao | × | × | × | — | 1 | прогноз |
-| eng-zhaozhouqiao | × | — | — | × | 1 | прогноз |
+| eng-zhaozhouqiao | × | 1 | — | × | — | прогноз |
 | eng-qingzang-railway | × | × | × | — | 1 | прогноз |
-| eng-fast | × | — | × | — | — | прогноз |
-| eng-karez | × | — | × | × | 1 | прогноз |
+| eng-fast | × | 1 | × | — | — | прогноз |
+| eng-karez | × | 1 | × | × | 1 | прогноз |
 
 #### Вопросы о строках вне ядра
 
