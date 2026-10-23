@@ -12,6 +12,7 @@
         "material": "zh",
         "era": "zh",
         "feature": "zh",
+        "unesco": "zh",
         "about": "ru"
       },
       "required": [
@@ -102,7 +103,17 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "center",
+            "region",
+            "unesco"
+          ],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-tangsancai",
@@ -184,7 +195,18 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region",
+            "era",
+            "unesco",
+            "center"
+          ],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-zisha",
@@ -263,7 +285,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-longquan",
@@ -336,9 +362,34 @@
               "quote": "龙泉青瓷取材于龙泉本地的矿石和高岭土",
               "authority": "official",
               "checkedAt": "2026-10-17"
+            },
+            {
+              "title": "Traditional firing technology of Longquan celadon — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/traditional-firing-technology-of-longquan-celadon-00205",
+              "quote": "Inscribed in 2009 ( 4.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … The city of Longquan in the coastal Chinese province of Zhejian is known for its celadon pottery and the traditional firing technology that imparts its distinctive glaze.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "中国蚕桑丝织技艺 龙泉青瓷传统烧制技艺",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "center",
+            "region",
+            "era",
+            "unesco"
+          ],
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          }
         },
         {
           "id": "cr-dehua",
@@ -419,7 +470,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-junci",
@@ -484,7 +539,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ruci",
@@ -558,7 +617,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-dingci",
@@ -624,7 +687,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-jianzhan",
@@ -692,7 +759,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-liling",
@@ -759,7 +830,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-yaozhou",
@@ -832,7 +907,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-cizhou",
@@ -898,7 +977,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-suxiu",
@@ -961,7 +1044,18 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "center",
+            "era",
+            "unesco",
+            "region"
+          ],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-xiangxiu",
@@ -1035,7 +1129,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-shuxiu",
@@ -1098,7 +1196,18 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "center",
+            "era",
+            "unesco",
+            "region"
+          ],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-yuexiu",
@@ -1159,7 +1268,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-guxiu",
@@ -1239,7 +1352,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-bianxiu",
@@ -1306,7 +1423,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-yunjin",
@@ -1368,9 +1489,34 @@
               "quote": "南京云锦与四川蜀锦、苏州宋锦并称为我国“三大名锦”，系中国织锦工艺中的一种传统提花丝织锦缎。",
               "authority": "official",
               "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "Craftsmanship of Nanjing Yunjin brocade — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/craftsmanship-of-nanjing-yunjin-brocade-00200",
+              "quote": "Inscribed in 2009 ( 4.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … In the Chinese tradition of weaving Nanjing Yunjin brocade, two craftspeople operate the upper and lower parts of a large, complicated loom",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "中国传统木结构建筑营造技艺 南京云锦织造技艺",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "center",
+            "region",
+            "era",
+            "unesco"
+          ],
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          }
         },
         {
           "id": "cr-songjin",
@@ -1439,9 +1585,34 @@
               "quote": "与南京云锦、四川蜀锦并称中国三大名锦。",
               "authority": "official",
               "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "苏州宋锦织造技艺保护实践总结 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/tenyear_protect_detail/20192.html",
+              "quote": "2009年，宋锦织造技艺作为中国蚕桑丝织技艺重要组成部分，被列入联合国教科文组织人类非物质文化遗产代表作名录",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国传统桑蚕丝织技艺 — 中国非物质文化遗产网（10周年专题，艺人）",
+              "url": "https://www.ihchina.cn/sangcansi.html",
+              "quote": "个人：生产绫绢、杭罗、宋锦、蜀锦、缂丝等的丝织艺人",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Sericulture and silk craftsmanship of China — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/sericulture-and-silk-craftsmanship-of-china-00197",
+              "quote": "Sericulture and silk craftsmanship of China, based in Zhejiang and Jiangsu Provinces near Shanghai and Chengdu in Sichuan Province, have an ancient history. … Inscribed in 2009 ( 4.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          }
         },
         {
           "id": "cr-shujin",
@@ -1506,9 +1677,34 @@
               "quote": "蜀锦，专指蜀地（四川成都地区）生产的丝织提花织锦。",
               "authority": "official",
               "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "蜀锦织造技艺保护实践总结 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/tenyear_protect_detail/20195.html",
+              "quote": "2009年，蜀锦织造技艺作为中国传统蚕桑丝织技艺重要组成部分，被联合国教科文组织列入人类非物质文化遗产代表作名录",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国传统桑蚕丝织技艺 — 中国非物质文化遗产网（10周年专题）",
+              "url": "https://www.ihchina.cn/sangcansi.html",
+              "quote": "社区：浙江杭州、嘉兴、湖州和江苏苏州、四川成都等社区。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Sericulture and silk craftsmanship of China — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/sericulture-and-silk-craftsmanship-of-china-00197",
+              "quote": "Sericulture and silk craftsmanship of China, based in Zhejiang and Jiangsu Provinces near Shanghai and Chengdu in Sichuan Province, have an ancient history. … Inscribed in 2009 ( 4.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          }
         },
         {
           "id": "cr-kesi",
@@ -1570,9 +1766,34 @@
               "quote": "缂丝所采用的是“通经断纬”式织造技艺，用同色蚕丝贯通作经，用各色彩丝作纬",
               "authority": "official",
               "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "苏州缂丝织造技艺保护实践总结 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/tenyear_protect_detail/20194.html",
+              "quote": "2009年，苏州缂丝织造技艺作为中国传统蚕桑丝织技艺的重要组成部分，列入联合国教科文组织人类非物质文化遗产代表作名录",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国传统桑蚕丝织技艺 — 中国非物质文化遗产网（10周年专题，艺人）",
+              "url": "https://www.ihchina.cn/sangcansi.html",
+              "quote": "个人：生产绫绢、杭罗、宋锦、蜀锦、缂丝等的丝织艺人",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Sericulture and silk craftsmanship of China — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/sericulture-and-silk-craftsmanship-of-china-00197",
+              "quote": "Sericulture and silk craftsmanship of China, based in Zhejiang and Jiangsu Provinces near Shanghai and Chengdu in Sichuan Province, have an ancient history. … Inscribed in 2009 ( 4.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          }
         },
         {
           "id": "cr-xiangyunsha",
@@ -1639,7 +1860,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-yangzhou-yudiao",
@@ -1701,7 +1926,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-xiuyan-yudiao",
@@ -1771,7 +2000,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-zhenping-yudiao",
@@ -1830,7 +2063,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-suzhou-yudiao",
@@ -1883,7 +2120,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-shoushan",
@@ -1951,7 +2192,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-qingtian",
@@ -2021,7 +2266,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-dongyang",
@@ -2220,7 +2469,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-jiading",
@@ -2289,7 +2542,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-guangfu-hediao",
@@ -2358,7 +2615,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-diaoqi",
@@ -2425,7 +2686,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-yangzhou-qiqi",
@@ -2481,7 +2746,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-tuotai",
@@ -2542,7 +2811,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-pingyao",
@@ -2601,7 +2874,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-jingtailan",
@@ -2679,7 +2956,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-huasi",
@@ -2753,7 +3034,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-tiehua",
@@ -2833,7 +3118,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-bantong",
@@ -2903,7 +3192,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-longquan-jian",
@@ -2977,7 +3270,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-youzhisan",
@@ -3043,7 +3340,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-palekh",
@@ -3133,7 +3434,11 @@
           ],
           "olympiad": [
             "addition-b2-19"
-          ]
+          ],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-mstera",
@@ -3199,7 +3504,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-kholui",
@@ -3261,7 +3570,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-fedoskino",
@@ -3341,7 +3654,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-khokhloma",
@@ -3426,7 +3743,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-gorodets",
@@ -3495,7 +3816,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-zhostovo",
@@ -3580,7 +3905,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-polkhov-maidan",
@@ -3649,7 +3978,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-gzhel",
@@ -3726,7 +4059,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-skopin",
@@ -3791,7 +4128,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-vologda-lace",
@@ -3884,7 +4225,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-yelets-lace",
@@ -3962,7 +4307,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-pavlovo-posad",
@@ -4028,7 +4377,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-orenburg",
@@ -4098,7 +4451,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-torzhok",
@@ -4175,6 +4532,10 @@
           "era": {
             "zh": "13世纪",
             "gloss": "XIII век — 1201–1300 годы"
+          },
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
           }
         },
         {
@@ -4255,7 +4616,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-krasnoe",
@@ -4321,7 +4686,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-kubachi",
@@ -4388,7 +4757,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-velikiy-ustyug",
@@ -4459,7 +4832,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-kasli",
@@ -4530,7 +4907,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "cr-ru-gus-crystal",
@@ -4593,8 +4974,208 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
+        },
+        {
+          "id": "cr-laran",
+          "name": {
+            "zh": "蜡染",
+            "ru": [
+              "батик",
+              "лажань"
+            ],
+            "gloss": "Лажань — батик: узор наносят воском, который не пропускает краску"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "kind": {
+            "zh": "印染",
+            "ru": [
+              "крашение тканей"
+            ],
+            "gloss": "Иньжань — нанесение узоров на ткань и её крашение"
+          },
+          "region": {
+            "zh": "贵州",
+            "ru": [
+              "Гуйчжоу"
+            ],
+            "gloss": "Гуйчжоу — горная провинция на юго-западе Китая, центр — Гуйян",
+            "ref": "provinces/provinces/prov-guizhou"
+          },
+          "material": {
+            "zh": "蜡",
+            "ru": [
+              "воск"
+            ],
+            "gloss": "Ла — воск: им рисуют узор, и он защищает ткань от краски"
+          },
+          "feature": {
+            "zh": "冰纹",
+            "ru": [
+              "«ледяной» узор",
+              "трещины воска"
+            ],
+            "gloss": "Бинвэнь — «ледяной узор»: прожилки там, где краска затекла в трещины воска"
+          },
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          },
+          "about": "Лажань (蜡染, в древности 蜡缬) — ручное крашение ткани с воском: рисунок наносят на ткань расплавленным воском, потом красят её индиго, и воск не пропускает краску. Пока ткань мокнет в красильном чане, воск трескается, и на синем фоне остаётся «ледяной узор» (бинвэнь). В Гуйчжоу батиком славятся мяо, буи и другие народы; аньшуньский батик внесён в национальный список нематериального наследия в 2008 году, а батик мяо уезда Даньчжай — в первую партию списка в 2006 году.",
+          "olympiad": [],
+          "sources": [
+            {
+              "title": "蜡染技艺（安顺）— 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/14301",
+              "quote": "公布时间：2008(第二批) 类别：传统技艺 所属地区：贵州省 … 安顺蜡染主要分为苗族蜡染和布依族蜡染两大类 … 均是以铜制蜡刀蘸蜡液后在白布上勾勒图案，经过浸染等工序制成蜡染品",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "学习绘文丨蜡染之美，惊艳时光 — 新华网",
+              "url": "https://www.news.cn/politics/leaders/20250318/64e666f5fd1c460eac743a91837d9532/c.html",
+              "quote": "蜡染，贵州众多文化名片之一，古称“蜡缬”，是一种以蜡为防染剂进行防染的手工印染技艺 … 染色，就是将画好图案的土布，放入蓝靛染缸中，反复浸泡多次，确保其上色。其间，作为防染剂的蜡自然龟裂，使布面呈现特殊的“冰纹”",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "苗族蜡染绘就乡村振兴新图景 — 新华网",
+              "url": "https://www.news.cn/culture/20260526/3cf2e2563b3d484ba73e62678854a9f1/c.html",
+              "quote": "苗族蜡染是贵州省黔东南苗族侗族自治州丹寨县苗族群众世代相传的传统技艺，以蜡刀蘸熔蜡绘画于布面 … 2006年，苗族蜡染技艺被列入第一批国家级非物质文化遗产名录",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "蜡染：绽放黔中的艺术奇葩 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/news_1_details/11316.html",
+              "quote": "浸染时色料也会渗入蜡液风干的裂缝，布面呈现出裂纹（又称“冰纹”或“龟纹”） … 目前，贵州擅长绘制蜡染的县（市）就有40多个",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "core": true,
+          "skipSides": [
+            "center",
+            "era",
+            "unesco"
+          ]
+        },
+        {
+          "id": "cr-matafeiyan",
+          "name": {
+            "zh": "马踏飞燕",
+            "ru": [
+              "Летящий конь",
+              "бронзовый скакун"
+            ],
+            "gloss": "Матафэйянь — бронзовый скачущий конь из Ганьсу, одним копытом на летящей птице"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "kind": {
+            "zh": "青铜器",
+            "ru": [
+              "бронзовое изделие"
+            ],
+            "gloss": "Цинтунци — изделия из бронзы"
+          },
+          "center": {
+            "zh": "武威",
+            "ru": [
+              "Увэй"
+            ],
+            "gloss": "Увэй — город в провинции Ганьсу, где в 1969 году нашли эту статуэтку"
+          },
+          "region": {
+            "zh": "甘肃",
+            "ru": [
+              "провинция Ганьсу"
+            ],
+            "gloss": "Ганьсу — провинция на северо-западе Китая, центр — Ланьчжоу",
+            "ref": "provinces/provinces/prov-gansu"
+          },
+          "material": {
+            "zh": "青铜",
+            "ru": [
+              "бронза"
+            ],
+            "gloss": "Цинтун — бронза, сплав меди с оловом"
+          },
+          "era": {
+            "zh": "东汉",
+            "ru": [
+              "Восточная Хань"
+            ],
+            "gloss": "Дун Хань — Восточная Хань, 25–220 годы"
+          },
+          "feature": {
+            "zh": "中国旅游标志",
+            "ru": [
+              "символ китайского туризма"
+            ],
+            "gloss": "Чжунго люйю бяочжи — эмблема китайского туризма, утверждённая в 1983 году"
+          },
+          "about": "Бронзовая статуэтка скачущего коня (в музее — 铜奔马, в народе — 马踏飞燕) найдена в 1969 году в ханьской гробнице Лэйтай в городе Увэй провинции Ганьсу и относится к Восточной Хань. Конь мчится, три его ноги в воздухе, а одно копыто опирается на спину летящей птицы. В 1983 году его силуэт стал эмблемой китайского туризма; ныне статуэтка — главное сокровище Ганьсуского провинциального музея.",
+          "olympiad": [],
+          "sources": [
+            {
+              "title": "天马行空：中国旅游标志“铜奔马”的墓主人到底是谁？ — 新华网",
+              "url": "https://www.news.cn/local/2023-04/26/c_1129565705.htm",
+              "quote": "1969年9月，甘肃武威雷台汉墓出土了一批青铜俑 … 1983年铜奔马被国家旅游局确定为中国旅游标志 … 现藏于甘肃省博物馆，为甘肃省博物馆镇馆之宝",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "铜奔马：定格恣意飞扬的大汉王朝 — 新华网（光明日报）",
+              "url": "http://www.news.cn/politics/20250719/149c9ecad6e9437ba94f789d4646c9f4/c.html",
+              "quote": "甘肃省博物馆的镇馆之宝——东汉时期的铜奔马",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "“马踏飞燕”在创意表达中奔腾新生 — 人民日报",
+              "url": "https://paper.people.com.cn/rmrb/pc/content/202609/16/content_30181241.html",
+              "quote": "铜奔马，被观众俗称为“马踏飞燕”。玻璃展柜内那件高不过34.5厘米的青铜文物 … 铜奔马1969年出土于甘肃武威雷台汉墓 … 1983年，其侧面剪影被定为中国旅游图形标志",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "甘肃省博推出的文创产品惹游客“爱不释手” — 中国新闻网",
+              "url": "https://www.chinanews.com.cn/tp/2023/03-26/9979100.shtml",
+              "quote": "铜奔马，又称“马踏飞燕”，20世纪60年代出土于甘肃省武威市雷台汉墓，1983年被确定为中国旅游标志",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "王琦：绝世孤品铜奔马，何以成为东西方交流的文化符号 — 丝绸之路（敦煌）国际文化博览会（gswbj.gov.cn）",
+              "url": "https://www.gswbj.gov.cn/a/2022/03/21/12987.html",
+              "quote": "藏于甘肃省博物馆的国宝级东汉文物铜奔马 … 造型独特，铸造精美，成为中国古代青铜艺术品中罕见的杰作",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "core": true,
+          "skipSides": [
+            "center",
+            "region",
+            "unesco"
+          ]
         }
+      ],
+      "sides": [
+        "center",
+        "region",
+        "era",
+        "unesco"
       ]
     },
     "folk": {
@@ -4607,6 +5188,7 @@
         "material": "zh",
         "era": "zh",
         "feature": "zh",
+        "unesco": "zh",
         "about": "ru"
       },
       "required": [
@@ -4680,9 +5262,34 @@
               "quote": "其“阴刻为主、阳刻为辅、彩色点染”的精妙技艺，在全国独树一帜",
               "authority": "official",
               "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "剪纸（蔚县剪纸）保护实践总结 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/tenyear_protect_detail/20231.html",
+              "quote": "蔚县剪纸于2006年5月入选第一批国家级非物质文化遗产名录，2009年作为中国剪纸的重要组成部分，被列入联合国教科文组织非物质文化遗产代表作名录",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国剪纸 — 中国非物质文化遗产网（10周年专题，相关社区）",
+              "url": "https://www.ihchina.cn/jianzhi.html",
+              "quote": "社区：陕西省安塞县、河北省蔚县、河北省丰宁满族自治县、山西省中阳县、江苏省扬州市、云南省潞西市、辽宁省锦州市、浙江省乐清市。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Chinese paper-cut — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/chinese-paper-cut-00219",
+              "quote": "Inscribed in 2009 ( 4.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          }
         },
         {
           "id": "fk-foshan-jianzhi",
@@ -4802,9 +5409,27 @@
               "quote": "江苏扬州是中国剪纸流行最早的地区之一。唐宋时期，立春之日",
               "authority": "official",
               "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "中国剪纸 — 中国非物质文化遗产网（10周年专题，相关社区）",
+              "url": "https://www.ihchina.cn/jianzhi.html",
+              "quote": "社区：陕西省安塞县、河北省蔚县、河北省丰宁满族自治县、山西省中阳县、江苏省扬州市、云南省潞西市、辽宁省锦州市、浙江省乐清市。 … 张秀芳（扬州）",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Chinese paper-cut — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/chinese-paper-cut-00219",
+              "quote": "Inscribed in 2009 ( 4.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          }
         },
         {
           "id": "fk-ansai-jianzhi",
@@ -4864,9 +5489,27 @@
               "quote": "2009年中国剪纸列入联合国教科文组织人类非物质文化遗产代表作名录",
               "authority": "official",
               "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "中国剪纸 — 中国非物质文化遗产网（10周年专题，相关社区）",
+              "url": "https://www.ihchina.cn/jianzhi.html",
+              "quote": "社区：陕西省安塞县、河北省蔚县、河北省丰宁满族自治县、山西省中阳县、江苏省扬州市、云南省潞西市、辽宁省锦州市、浙江省乐清市。 … 代表性传承人高金爱、李秀芳（安塞）",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "Chinese paper-cut — UNESCO Intangible Cultural Heritage (авторство фото)",
+              "url": "https://ich.unesco.org/en/RL/chinese-paper-cut-00219",
+              "quote": "© Ansai County, Shaanxi Province … Inscribed in 2009 ( 4.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          }
         },
         {
           "id": "fk-yangliuqing",
@@ -5329,9 +5972,34 @@
               "quote": "“通天鼻，樱桃口，尖下巴，这是唐山皮影区别于其他地区皮影的主要特征。”",
               "authority": "official",
               "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "Chinese shadow puppetry — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/chinese-shadow-puppetry-00421",
+              "quote": "Inscribed in 2011 ( 6.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "千年中国皮影 今日世界瞩目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/news_1_details/10652.html",
+              "quote": "包括河北的唐山皮影戏、冀南皮影戏，山西的孝义碗碗腔皮影戏，辽宁的复州皮影戏、凌源皮影戏，浙江的海宁皮影戏，湖北的江汉平原皮影戏，广东的陆丰皮影戏，陕西的华县皮影戏、华阴老腔皮影戏、阿宫腔皮影戏、弦板腔皮影戏和甘肃的环县道情皮影戏",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "UNESCO nomination file 00421 «Chinese shadow puppetry» (.doc, ich.unesco.org)",
+              "url": "https://ich.unesco.org/doc/src/00421-Nomination_form.doc?v=1320418068",
+              "quote": "On May 20th, 2006, the State Council of the People's Republic of China promulgated the first list of state-level Intangible Cultural Heritage, including 13 relevant communities and groups: Tangshan and Handan in Hebei Province, Xiaoyi in Shanxi Province, Wafangdian and Lingyuan in Liaoning Province, Haining in Zhejiang Province, Qianjiang in Hubei Province, Lufeng in Guangdong Province, Huaxian, Huayin, Qianxian and Fuping in Shaanxi Province, and Huanxian in Gansu Province. … China Puppet and Shadow Art Society, 27 state-level conservation units for the protection of intangible cultural heritage shadow puppetry, and 33 inheritors of shadow puppetry nominated by the State for Intangible Cultural Heritage have affixed their signatures to express free, prior and informed consent … State-level conservation units for the protection of Intangible Cultural Heritage shadow puppetry (27) … On June 7th, 2008, the State Council of the People's Republic of China promulgated the extended program of state-level Intangible Cultural Heritage, involving 14 conservation units of shadow puppetry",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          }
         },
         {
           "id": "fk-huaxian-piying",
@@ -5399,9 +6067,34 @@
               "quote": "华县皮影戏以细腻悠扬的碗碗腔为主，是陕西东路皮影戏的代表",
               "authority": "official",
               "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "Chinese shadow puppetry — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/chinese-shadow-puppetry-00421",
+              "quote": "Inscribed in 2011 ( 6.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "千年中国皮影 今日世界瞩目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/news_1_details/10652.html",
+              "quote": "包括河北的唐山皮影戏、冀南皮影戏，山西的孝义碗碗腔皮影戏，辽宁的复州皮影戏、凌源皮影戏，浙江的海宁皮影戏，湖北的江汉平原皮影戏，广东的陆丰皮影戏，陕西的华县皮影戏、华阴老腔皮影戏、阿宫腔皮影戏、弦板腔皮影戏和甘肃的环县道情皮影戏",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "UNESCO nomination file 00421 «Chinese shadow puppetry» (.doc, ich.unesco.org)",
+              "url": "https://ich.unesco.org/doc/src/00421-Nomination_form.doc?v=1320418068",
+              "quote": "On May 20th, 2006, the State Council of the People's Republic of China promulgated the first list of state-level Intangible Cultural Heritage, including 13 relevant communities and groups: Tangshan and Handan in Hebei Province, Xiaoyi in Shanxi Province, Wafangdian and Lingyuan in Liaoning Province, Haining in Zhejiang Province, Qianjiang in Hubei Province, Lufeng in Guangdong Province, Huaxian, Huayin, Qianxian and Fuping in Shaanxi Province, and Huanxian in Gansu Province. … China Puppet and Shadow Art Society, 27 state-level conservation units for the protection of intangible cultural heritage shadow puppetry, and 33 inheritors of shadow puppetry nominated by the State for Intangible Cultural Heritage have affixed their signatures to express free, prior and informed consent … State-level conservation units for the protection of Intangible Cultural Heritage shadow puppetry (27) … On June 7th, 2008, the State Council of the People's Republic of China promulgated the extended program of state-level Intangible Cultural Heritage, involving 14 conservation units of shadow puppetry",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          }
         },
         {
           "id": "fk-huanxian-piying",
@@ -5458,9 +6151,34 @@
               "quote": "皮影是环县道情皮影戏的主要表演道具，俗称“线子”，用牛皮刻制",
               "authority": "official",
               "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "Chinese shadow puppetry — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/chinese-shadow-puppetry-00421",
+              "quote": "Inscribed in 2011 ( 6.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "千年中国皮影 今日世界瞩目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/news_1_details/10652.html",
+              "quote": "包括河北的唐山皮影戏、冀南皮影戏，山西的孝义碗碗腔皮影戏，辽宁的复州皮影戏、凌源皮影戏，浙江的海宁皮影戏，湖北的江汉平原皮影戏，广东的陆丰皮影戏，陕西的华县皮影戏、华阴老腔皮影戏、阿宫腔皮影戏、弦板腔皮影戏和甘肃的环县道情皮影戏",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "UNESCO nomination file 00421 «Chinese shadow puppetry» (.doc, ich.unesco.org)",
+              "url": "https://ich.unesco.org/doc/src/00421-Nomination_form.doc?v=1320418068",
+              "quote": "On May 20th, 2006, the State Council of the People's Republic of China promulgated the first list of state-level Intangible Cultural Heritage, including 13 relevant communities and groups: Tangshan and Handan in Hebei Province, Xiaoyi in Shanxi Province, Wafangdian and Lingyuan in Liaoning Province, Haining in Zhejiang Province, Qianjiang in Hubei Province, Lufeng in Guangdong Province, Huaxian, Huayin, Qianxian and Fuping in Shaanxi Province, and Huanxian in Gansu Province. … China Puppet and Shadow Art Society, 27 state-level conservation units for the protection of intangible cultural heritage shadow puppetry, and 33 inheritors of shadow puppetry nominated by the State for Intangible Cultural Heritage have affixed their signatures to express free, prior and informed consent … State-level conservation units for the protection of Intangible Cultural Heritage shadow puppetry (27) … On June 7th, 2008, the State Council of the People's Republic of China promulgated the extended program of state-level Intangible Cultural Heritage, involving 14 conservation units of shadow puppetry",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          }
         },
         {
           "id": "fk-haining-piying",
@@ -5525,9 +6243,34 @@
               "quote": "主要特点是：少雕镂、重彩绘、单线平涂。",
               "authority": "academic",
               "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "Chinese shadow puppetry — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/chinese-shadow-puppetry-00421",
+              "quote": "Inscribed in 2011 ( 6.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "千年中国皮影 今日世界瞩目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/news_1_details/10652.html",
+              "quote": "包括河北的唐山皮影戏、冀南皮影戏，山西的孝义碗碗腔皮影戏，辽宁的复州皮影戏、凌源皮影戏，浙江的海宁皮影戏，湖北的江汉平原皮影戏，广东的陆丰皮影戏，陕西的华县皮影戏、华阴老腔皮影戏、阿宫腔皮影戏、弦板腔皮影戏和甘肃的环县道情皮影戏",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "UNESCO nomination file 00421 «Chinese shadow puppetry» (.doc, ich.unesco.org)",
+              "url": "https://ich.unesco.org/doc/src/00421-Nomination_form.doc?v=1320418068",
+              "quote": "On May 20th, 2006, the State Council of the People's Republic of China promulgated the first list of state-level Intangible Cultural Heritage, including 13 relevant communities and groups: Tangshan and Handan in Hebei Province, Xiaoyi in Shanxi Province, Wafangdian and Lingyuan in Liaoning Province, Haining in Zhejiang Province, Qianjiang in Hubei Province, Lufeng in Guangdong Province, Huaxian, Huayin, Qianxian and Fuping in Shaanxi Province, and Huanxian in Gansu Province. … China Puppet and Shadow Art Society, 27 state-level conservation units for the protection of intangible cultural heritage shadow puppetry, and 33 inheritors of shadow puppetry nominated by the State for Intangible Cultural Heritage have affixed their signatures to express free, prior and informed consent … State-level conservation units for the protection of Intangible Cultural Heritage shadow puppetry (27) … On June 7th, 2008, the State Council of the People's Republic of China promulgated the extended program of state-level Intangible Cultural Heritage, involving 14 conservation units of shadow puppetry",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          }
         },
         {
           "id": "fk-quanzhou-muou",
@@ -5696,7 +6439,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-xiangdong-nuomianju",
@@ -5766,7 +6513,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-dixi-mianju",
@@ -5843,7 +6594,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-zigong",
@@ -6285,7 +7040,16 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "era",
+            "unesco"
+          ],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-beijing-fengzheng",
@@ -6358,7 +7122,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-tianjin-fengzheng",
@@ -6421,7 +7189,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-nantong-fengzheng",
@@ -6498,7 +7270,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-nirenzhang",
@@ -6569,7 +7345,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-huishan",
@@ -6636,7 +7416,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-fengxiang",
@@ -6703,7 +7487,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-xunxian",
@@ -6785,7 +7573,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-huaiyang",
@@ -6849,7 +7641,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-tuerye",
@@ -6906,7 +7702,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-mianren",
@@ -6966,7 +7766,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-bulaohu",
@@ -7029,7 +7833,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-ru-dymkovo",
@@ -7102,7 +7910,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-ru-filimonovo",
@@ -7175,7 +7987,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-ru-kargopol",
@@ -7248,7 +8064,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-ru-abashevo",
@@ -7314,7 +8134,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-ru-bogorodskoe",
@@ -7383,7 +8207,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-ru-matryoshka",
@@ -7443,7 +8271,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-ru-semenov",
@@ -7512,7 +8344,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-ru-lubok",
@@ -7568,7 +8404,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
         },
         {
           "id": "fk-ru-petrushka",
@@ -7616,8 +8456,128 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "unesco": {
+            "zh": "未列入人类非物质文化遗产名录",
+            "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          }
+        },
+        {
+          "id": "fk-jianzhi",
+          "name": {
+            "zh": "中国剪纸",
+            "ru": [
+              "китайское вырезание из бумаги",
+              "китайская вырезка из бумаги",
+              "цзяньчжи"
+            ],
+            "gloss": "Цзяньчжи — искусство вырезать узоры из бумаги, распространённое по всему Китаю"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "kind": {
+            "zh": "剪纸",
+            "gloss": "Цзяньчжи — вырезание узоров из бумаги ножницами или ножом"
+          },
+          "material": {
+            "zh": "纸",
+            "ru": [
+              "бумага"
+            ],
+            "gloss": "Чжи — бумага: узор вырезают из неё, цветной или белой"
+          },
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          },
+          "about": "Цзяньчжи — искусство вырезать узоры из бумаги ножницами или ножом-резцом. Оно распространено по всему Китаю среди разных народов; вырезками украшают окна, постели и потолки, вырезки делают к свадьбам и праздникам. Мастерство передаётся главным образом от матери к дочери, а в 2009 году «Китайское вырезание из бумаги» внесено в Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО.",
+          "olympiad": [],
+          "sources": [
+            {
+              "title": "Chinese paper-cut — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/chinese-paper-cut-00219",
+              "quote": "Inscribed in 2009 ( 4.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … Present throughout China and in various ethnic groups, paper-cut is a popular art integral to everyday lives. A predominantly female pursuit, it is transmitted from mother to daughter over a long period of time … the paper can be cut or engraved with a chisel, coloured or left blank … interior decor (windows, beds and ceilings), festivities (weddings, birthdays and ceremonies)",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国剪纸 — 中国非物质文化遗产网（10周年专题）",
+              "url": "https://www.ihchina.cn/jianzhi.html",
+              "quote": "中国剪纸是用剪刀或刻刀在纸上剪刻花纹，用于装点生活或配合其他民俗活动的一种民间艺术 … 2009年，中国剪纸列入联合国教科文组织《保护非物质文化遗产公约》人类非物质文化遗产代表作名录",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ],
+          "core": true,
+          "skipSides": [
+            "center",
+            "era",
+            "unesco"
+          ]
+        },
+        {
+          "id": "fk-piyingxi",
+          "name": {
+            "zh": "中国皮影戏",
+            "ru": [
+              "китайский театр теней",
+              "театр теней",
+              "пиинси"
+            ],
+            "gloss": "Пиинси — китайский театр теней: плоские цветные фигурки на освещённом экране"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "kind": {
+            "zh": "皮影戏",
+            "gloss": "Пиинси — театр теней: плоские фигурки из кожи, освещённые за экраном"
+          },
+          "material": {
+            "zh": "皮革",
+            "ru": [
+              "кожа"
+            ],
+            "gloss": "Пигэ — кожа: из неё режут и красят фигурки (бывают и бумажные)"
+          },
+          "unesco": {
+            "zh": "人类非物质文化遗产代表作名录",
+            "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
+          },
+          "about": "Пиинси — театр, в котором играют цветные плоские фигурки из кожи или бумаги, под музыку и пение. Кукловоды водят их палочками за полупрозрачным экраном, освещённым сзади, а многие сами вырезают фигурки с двенадцатью–двадцатью четырьмя подвижными суставами. В 2011 году «Китайский театр теней» внесён в Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО.",
+          "olympiad": [],
+          "sources": [
+            {
+              "title": "Chinese shadow puppetry — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/chinese-shadow-puppetry-00421",
+              "quote": "Inscribed in 2011 ( 6.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … Chinese shadow puppetry is a form of theatre acted by colourful silhouette figures made from leather or paper, accompanied by music and singing. … Manipulated by puppeteers using rods, the figures create the illusion of moving images on a translucent cloth screen illuminated from behind. … Many puppeteers also carve the puppets, which can have between twelve and twenty-four moveable joints.",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国皮影戏 — 中国非物质文化遗产网（教科文组织名录）",
+              "url": "https://www.ihchina.cn/directory_details/11905",
+              "quote": "中国皮影戏是一种以皮制或纸制的彩色影偶形象，伴随音乐和演唱进行表演的戏剧形式。皮影艺人在幕后用木杆操控影偶，通过光线照射在半透明的幕布上创造出动态的形象。 … 列入年份 2011",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "中国皮影戏入选“人类非物质文化遗产代表作名录” — 中国非物质文化遗产网（新华社）",
+              "url": "https://www.ihchina.cn/news_other_details/16608.html",
+              "quote": "把中国皮影戏列入“人类非物质文化遗产代表作名录”",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ]
         }
+      ],
+      "sides": [
+        "center",
+        "era",
+        "unesco"
       ]
     }
   }
