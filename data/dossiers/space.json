@@ -1891,6 +1891,10 @@
         "year": "zh",
         "role": "ru"
       },
+      "sides": [
+        "name",
+        "craft"
+      ],
       "rows": [
         {
           "id": "ppl-yangliwei",
@@ -1947,7 +1951,8 @@
           "olympiad": [
             "2016-17-zak-6",
             "2020-21-zak-q244298"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "ppl-zhaizhigang",
@@ -2007,7 +2012,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ppl-liuboming",
@@ -2113,7 +2119,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ppl-wangyaping",

@@ -1,3 +1,6 @@
 # Праздники
 
-Каркас не утверждён.
+[[holidays.fig-quyuan]]
+[[holidays.fig-jiezitui]]
+[[holidays.fig-nianshou]]
+[[holidays.fig-change]]

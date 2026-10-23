@@ -1565,6 +1565,10 @@
         "deed": "zh",
         "role": "ru"
       },
+      "sides": [
+        "dynasty",
+        "deed"
+      ],
       "rows": [
         {
           "id": "rul-qinshihuang",
@@ -1627,6 +1631,10 @@
           "olympiad": [
             "2015-16-shk-59",
             "2019-20-mun-qe6c5d3"
+          ],
+          "core": true,
+          "skipSides": [
+            "dynasty"
           ]
         },
         {
@@ -1861,6 +1869,10 @@
           ],
           "olympiad": [
             "2021-22-shk-qadd856"
+          ],
+          "core": true,
+          "skipSides": [
+            "dynasty"
           ]
         },
         {
@@ -1909,7 +1921,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rul-yangjian",
@@ -1957,7 +1970,11 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "dynasty"
+          ]
         },
         {
           "id": "rul-liyuan",
@@ -2070,7 +2087,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rul-wuzetian",
@@ -2121,7 +2139,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rul-zhaokuangyin",
@@ -2177,7 +2196,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "dynasty"
+          ]
         },
         {
           "id": "rul-hubilie",
@@ -2225,7 +2248,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "dynasty"
+          ]
         },
         {
           "id": "rul-zhuyuanzhang",
@@ -2291,7 +2318,12 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "dynasty",
+            "deed"
+          ]
         },
         {
           "id": "rul-yongle",
@@ -2462,7 +2494,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rul-yongzheng",
@@ -2572,7 +2605,8 @@
           ],
           "olympiad": [
             "addition-b1-07"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "rul-jiaqing",
@@ -2682,7 +2716,8 @@
           ],
           "olympiad": [
             "2022-23-shk-qa664f6"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "rul-yu",
@@ -3199,7 +3234,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "deed"
+          ]
         },
         {
           "id": "rul-xiaozhuang",

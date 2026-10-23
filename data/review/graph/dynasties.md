@@ -1,3 +1,15 @@
 # Династии и правители
 
-Каркас не утверждён.
+[[dynasties.rul-qinshihuang]]
+[[dynasties.rul-liubang]]
+[[dynasties.rul-hanwudi]]
+[[dynasties.rul-yangjian]]
+[[dynasties.rul-tangtaizong]]
+[[dynasties.rul-wuzetian]]
+[[dynasties.rul-zhaokuangyin]]
+[[dynasties.rul-hubilie]]
+[[dynasties.rul-zhuyuanzhang]]
+[[dynasties.rul-kangxi]]
+[[dynasties.rul-qianlong]]
+[[dynasties.rul-puyi]]
+[[dynasties.rul-cixi]]

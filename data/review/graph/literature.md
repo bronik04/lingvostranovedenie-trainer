@@ -1,3 +1,16 @@
 # Литература: авторы и произведения
 
-Каркас не утверждён.
+[[literature.lit-a-quyuan]]
+[[literature.lit-a-simaqian]]
+[[literature.lit-a-caocao]]
+[[literature.lit-a-taoyuanming]]
+[[literature.lit-a-libai]]
+[[literature.lit-a-dufu]]
+[[literature.lit-a-luoguanzhong]]
+[[literature.lit-a-shinaian]]
+[[literature.lit-a-wuchengen]]
+[[literature.lit-a-caoxueqin]]
+[[literature.lit-a-luxun]]
+[[literature.lit-a-laoshe]]
+[[literature.lit-a-moyan]]
+[[literature.lit-a-yuhua]]

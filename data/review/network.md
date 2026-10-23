@@ -2,7 +2,7 @@
 
 Файл пишет сборка (`scripts/network.py`). Ядро размечается в таблицах досье: `core` у строки, `sides` у таблицы. Граф для Obsidian — папка `data/review/graph/`: сборка каждый раз стирает в ней все заметки `*.md` и пишет заново, поэтому свои заметки в эту папку не кладите.
 
-Досье: 15, с утверждённым каркасом: 4.
+Досье: 15, с утверждённым каркасом: 11.
 
 ## Олимпиада по годам
 
@@ -165,13 +165,35 @@
 
 ### Династии и правители (`dynasties`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `rulers`
 
-- строк: 74
-- принятых вопросов: 57
-- строк с вопросом: 44
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 8
-- встроено олимпиадных: 22
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | dynasty | deed | другие | олимпиада |
+|---|---|---|---|---|
+| rul-qinshihuang | × | — | 2 | да |
+| rul-liubang | × | — | — | да |
+| rul-hanwudi | — | — | 1 | прогноз |
+| rul-yangjian | × | × | — | прогноз |
+| rul-tangtaizong | — | — | — | прогноз |
+| rul-wuzetian | — | — | 1 | прогноз |
+| rul-zhaokuangyin | × | — | — | прогноз |
+| rul-hubilie | × | — | — | прогноз |
+| rul-zhuyuanzhang | × | × | — | прогноз |
+| rul-kangxi | — | — | 1 | прогноз |
+| rul-qianlong | — | — | 1 | прогноз |
+| rul-puyi | — | — | 1 | да |
+| rul-cixi | — | × | 1 | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- dynasties-q30 — Какой правитель в 1636 году провозгласил себя императором и дал своему государству название Великая Цин?
+- dynasties-q31 — Какой вождь чжурчжэней создал систему Восьми знамён и в 1616 году основал государство Поздняя Цзинь?
+- dynasties-q35 — Какой цинский император в 1898 году начал «Сто дней реформ»?
+
+Российские строки (разбирает российская тема): вопросов 18.
 
 ### Этносы и традиционный быт (`ethnos`)
 
@@ -185,13 +207,22 @@
 
 ### Праздники (`holidays`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `figures`
 
-- строк: 82
-- принятых вопросов: 31
-- строк с вопросом: 29
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 1
-- встроено олимпиадных: 12
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | holiday | другие | олимпиада |
+|---|---|---|---|
+| fig-quyuan | — | — | да |
+| fig-jiezitui | — | 1 | прогноз |
+| fig-nianshou | — | — | прогноз |
+| fig-change | — | — | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- нет
 
 ### Достопримечательности и архитектура (`landmarks`)
 
@@ -285,23 +316,71 @@
 
 ### Литература: авторы и произведения (`literature`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `authors`
 
-- строк: 110
-- принятых вопросов: 87
-- строк с вопросом: 77
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 4
-- встроено олимпиадных: 25
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | work | era | title | alias | другие | олимпиада |
+|---|---|---|---|---|---|---|
+| lit-a-quyuan | 1 | — | × | × | — | прогноз |
+| lit-a-simaqian | — | — | × | × | 1 | да |
+| lit-a-caocao | — | — | × | × | 1 | да |
+| lit-a-taoyuanming | — | — | × | × | 1 | прогноз |
+| lit-a-libai | — | — | 1 | × | — | прогноз |
+| lit-a-dufu | — | — | 1 | × | 1 | да |
+| lit-a-luoguanzhong | — | — | × | × | — | прогноз |
+| lit-a-shinaian | — | — | × | × | 1 | да |
+| lit-a-wuchengen | — | — | × | × | 1 | прогноз |
+| lit-a-caoxueqin | — | — | × | × | — | прогноз |
+| lit-a-luxun | — | — | × | 1 | 1 | да |
+| lit-a-laoshe | — | — | × | × | 2 | да |
+| lit-a-moyan | — | — | × | × | 1 | прогноз |
+| lit-a-yuhua | — | — | × | × | 1 | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- literature-q25 — Кто из поэтов эпохи Тан написал длинную повествовательную поэму «Песнь о лютнистке» (琵琶行)?
+- literature-q35 — Какой поэт эпохи Сун оставил более девяти тысяч стихотворений?
+- literature-q37 — Какого драматурга эпохи Мин, умершего в один год с Шекспиром, называют «восточным Шекспиром» (东方的莎士比亚)?
+- literature-q46 — Кто автор сборника стихов «Богини» (女神, 1921), впоследствии президент Академии наук КНР?
+
+Российские строки (разбирает российская тема): вопросов 13.
 
 ### История XIX–XX веков (`modern-history`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `figures`
 
-- строк: 102
-- принятых вопросов: 70
-- строк с вопросом: 67
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 2
-- встроено олимпиадных: 12
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | idea | post | другие | олимпиада |
+|---|---|---|---|---|
+| per-linzexu | × | — | — | прогноз |
+| per-hongxiuquan | × | — | — | прогноз |
+| per-lihongzhang | × | — | — | прогноз |
+| per-kangyouwei | — | × | — | прогноз |
+| per-sunzhongshan | — | — | 2 | да |
+| per-yuanshikai | × | — | — | прогноз |
+| per-jiangjieshi | × | — | — | прогноз |
+| per-maozedong | 1 | — | — | прогноз |
+| per-zhouenlai | — | — | 1 | да |
+| per-dengxiaoping | 1 | — | 1 | да |
+| per-xijinping | × | — | 1 | да |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- 2017-18-zak-6 — Кто был премьером Государственного совета КНР в 2017–2018 годах?
+- modern-history-q11 — Какую идею выдвинул мыслитель Вэй Юань после поражения Китая в опиумной войне?
+- modern-history-q12 — Кто создал и возглавил Сянскую армию?
+- modern-history-q17 — Кто написал статью «少年中国说» («О юном Китае»)?
+- modern-history-q25 — Кто был главнокомандующим Народно-освободительной армии Китая (中国人民解放军总司令) в годы Освободительной войны и после образования КНР?
+- modern-history-q26 — Главным создателем какой важной идеи называют Цзян Цзэминя?
+- modern-history-q27 — Какое понятие выдвинул Ху Цзиньтао в 2003 году?
+
+Российские строки (разбирает российская тема): вопросов 9.
 
 ### Деньги (`money`)
 
@@ -315,13 +394,38 @@
 
 ### Мифы и легенды (`myths`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `figures`
 
-- строк: 53
-- принятых вопросов: 27
-- строк с вопросом: 25
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 0
-- встроено олимпиадных: 12
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| fig-pangu | 2 | — | да |
+| fig-nuwa | — | — | прогноз |
+| fig-shennong | 1 | — | да |
+| fig-huangdi | 1 | — | да |
+| fig-dayu | 1 | — | да |
+| fig-fuxi | 1 | — | да |
+| fig-houyi | 1 | — | прогноз |
+| fig-change | 2 | — | да |
+| fig-cangjie | 1 | — | прогноз |
+| fig-kuafu | 1 | — | да |
+| fig-gonggong | 1 | — | прогноз |
+| fig-jingwei | 1 | — | прогноз |
+| fig-niulang | — | — | прогноз |
+| fig-zhinv | — | — | прогноз |
+| fig-mengjiangnu | 1 | — | прогноз |
+| fig-bainiangzi | 1 | — | прогноз |
+| fig-mulan | 1 | — | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- myths-q15 — Какую богиню «Каталог гор и морей» называет матерью десяти солнц и женой верховного бога Дицзюня?
+- myths-q16 — Кого, по преданию, за провинность во время обучения бессмертию сослали на Луну рубить коричное дерево, которое тут же срастается?
+
+Российские строки (разбирает российская тема): вопросов 4.
 
 ### Природа и инженерия (`nature`)
 
@@ -450,13 +554,37 @@
 
 ### Живопись и каллиграфия (`painting`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `painters`
 
-- строк: 114
-- принятых вопросов: 49
-- строк с вопросом: 48
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 0
-- встроено олимпиадных: 4
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | work | subject | era | другие | олимпиада |
+|---|---|---|---|---|---|
+| art-p-guokaizhi | — | × | — | 1 | прогноз |
+| art-p-wudaozi | — | × | — | 1 | прогноз |
+| art-p-zhangzeduan | 1 | × | — | — | прогноз |
+| art-p-wangximeng | — | × | — | 1 | прогноз |
+| art-p-xubeihong | — | — | — | 2 | да |
+| art-p-qibaishi | × | 1 | — | — | прогноз |
+
+#### Таблица `calligraphers`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | work | title | style | другие | олимпиада |
+|---|---|---|---|---|---|
+| art-c-wangxizhi | — | 1 | × | — | прогноз |
+| art-c-ouyangxun | — | × | — | — | прогноз |
+| art-c-yanzhenqing | 1 | × | — | — | прогноз |
+| art-c-liugongquan | 1 | × | — | — | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- painting-q06 — Какой китайский художник особенно прославился бамбуком, написанным тушью?
+
+Российские строки (разбирает российская тема): вопросов 7.
 
 ### Провинции и города (`provinces`)
 
@@ -538,13 +666,25 @@
 
 ### Космос (`space`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `people`
 
-- строк: 43
-- принятых вопросов: 16
-- строк с вопросом: 16
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 0
-- встроено олимпиадных: 4
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | craft | другие | олимпиада |
+|---|---|---|---|---|
+| ppl-yangliwei | 1 | — | — | да |
+| ppl-zhaizhigang | 1 | — | — | прогноз |
+| ppl-liuyang | 1 | — | — | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- space-q14 — На каком корабле Юрий Гагарин 12 апреля 1961 года совершил первый в мире полёт человека в космос?
+- space-q15 — Чей полёт на корабле «Восток-6» в июне 1963 года длился трое суток — 48 витков вокруг Земли?
+- space-q17 — Под чьим руководством созданы первый искусственный спутник Земли и корабль, на котором полетел первый космонавт?
+
+Российские строки (разбирает российская тема): вопросов 1.
 
 ## Связи
 
@@ -597,6 +737,24 @@
 - landmarks/sites/lm-cn-lijiang
 - landmarks/sites/lm-cn-pingyao
 - landmarks/sites/lm-cn-sun-moon-lake
+- literature/authors/lit-a-caocao
+- literature/authors/lit-a-dufu
+- literature/authors/lit-a-libai
+- literature/authors/lit-a-taoyuanming
+- myths/figures/fig-bainiangzi
+- myths/figures/fig-cangjie
+- myths/figures/fig-fuxi
+- myths/figures/fig-gonggong
+- myths/figures/fig-houyi
+- myths/figures/fig-huangdi
+- myths/figures/fig-jingwei
+- myths/figures/fig-mengjiangnu
+- myths/figures/fig-mulan
+- myths/figures/fig-niulang
+- myths/figures/fig-nuwa
+- myths/figures/fig-pangu
+- myths/figures/fig-shennong
+- myths/figures/fig-zhinv
 - nature/engineering/eng-gangzhuao
 - nature/engineering/eng-nanshuibeidiao
 - nature/engineering/eng-qingzang-railway
@@ -612,17 +770,58 @@
 - nature/waters/wat-dayunhe
 - nature/waters/wat-talimuhe
 - nature/waters/wat-yarlung
+- painting/painters/art-p-qibaishi
+- painting/painters/art-p-wudaozi
 - provinces/provinces/prov-aomen
 - provinces/provinces/prov-ningxia
+- space/people/ppl-liuyang
+- space/people/ppl-zhaizhigang
 
 ### Ссылка из ядра ведёт в тему без каркаса
 
 - cuisine/savory/cu-cn-yuxiang-rousi → holidays/customs/cus-yuxiangrousi
 - cuisine/staples/cu-cn-jiaozi → holidays/customs/cus-jiaozi
 - cuisine/sweets/cu-cn-tangyuan → holidays/customs/cus-tangyuan
+- dynasties/rulers/rul-cixi → dynasties/dynasties/dyn-qing
+- dynasties/rulers/rul-hanwudi → dynasties/dynasties/dyn-han
+- dynasties/rulers/rul-hubilie → dynasties/dynasties/dyn-yuan
+- dynasties/rulers/rul-kangxi → dynasties/dynasties/dyn-qing
+- dynasties/rulers/rul-liubang → dynasties/dynasties/dyn-han
+- dynasties/rulers/rul-puyi → dynasties/dynasties/dyn-qing
+- dynasties/rulers/rul-qianlong → dynasties/dynasties/dyn-qing
+- dynasties/rulers/rul-qinshihuang → dynasties/dynasties/dyn-qin
+- dynasties/rulers/rul-tangtaizong → dynasties/dynasties/dyn-tang
+- dynasties/rulers/rul-wuzetian → dynasties/dynasties/dyn-tang
+- dynasties/rulers/rul-yangjian → dynasties/dynasties/dyn-sui
+- dynasties/rulers/rul-zhaokuangyin → dynasties/dynasties/dyn-beisong
+- dynasties/rulers/rul-zhuyuanzhang → dynasties/dynasties/dyn-ming
+- holidays/figures/fig-change → holidays/holidays/hol-zhongqiu
+- holidays/figures/fig-jiezitui → holidays/holidays/hol-hanshi
+- holidays/figures/fig-nianshou → holidays/holidays/hol-chunjie
+- holidays/figures/fig-quyuan → holidays/holidays/hol-duanwu
+- literature/authors/lit-a-caoxueqin → literature/works/lit-w-hongloumeng
+- literature/authors/lit-a-laoshe → literature/works/lit-w-luotuoxiangzi
+- literature/authors/lit-a-luoguanzhong → literature/works/lit-w-sanguoyanyi
+- literature/authors/lit-a-luxun → literature/works/lit-w-aqzhengzhuan
+- literature/authors/lit-a-moyan → literature/works/lit-w-hongaoliang
+- literature/authors/lit-a-shinaian → literature/works/lit-w-shuihuzhuan
+- literature/authors/lit-a-simaqian → literature/works/lit-w-shiji
+- literature/authors/lit-a-wuchengen → literature/works/lit-w-xiyouji
+- literature/authors/lit-a-yuhua → literature/works/lit-w-huozhe
+- painting/calligraphers/art-c-liugongquan → painting/works/art-w-xuanmita
+- painting/calligraphers/art-c-ouyangxun → painting/works/art-w-jiuchenggong
+- painting/calligraphers/art-c-wangxizhi → painting/works/art-w-lantingxu
+- painting/calligraphers/art-c-yanzhenqing → painting/works/art-w-jizhiwengao
+- painting/painters/art-p-guokaizhi → painting/works/art-w-luoshenfutu
+- painting/painters/art-p-wangximeng → painting/works/art-w-qianlijiangshantu
+- painting/painters/art-p-xubeihong → painting/works/art-w-benmatu
+- painting/painters/art-p-zhangzeduan → painting/works/art-w-qingmingshanghetu
+- space/people/ppl-yangliwei → space/missions/mis-shenzhou5
 
 ### Ссылка из ядра ведёт в строку вне ядра
 
+- modern-history/figures/per-sunzhongshan → holidays/figures/fig-sunzhongshan
+- modern-history/figures/per-zhouenlai → literature/authors/lit-a-zhouenlai
 - nature/waters/wat-heilongjiang → nature/seas/sea-ru-okhotsk
 - provinces/cities/city-haerbin → nature/waters/wat-songhuajiang
 - provinces/cities/city-hangzhou → nature/waters/wat-qiantangjiang

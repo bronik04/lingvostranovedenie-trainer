@@ -2872,6 +2872,10 @@
         "work": "zh",
         "about": "ru"
       },
+      "sides": [
+        "idea",
+        "post"
+      ],
       "rows": [
         {
           "id": "per-linzexu",
@@ -2946,7 +2950,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "per-weiyuan",
@@ -3075,7 +3080,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "per-zengguofan",
@@ -3199,7 +3205,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "per-zuozongtang",
@@ -3426,7 +3433,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "per-liangqichao",
@@ -3638,7 +3646,8 @@
             "2017-18-zak-1",
             "2019-20-mun-q61e036",
             "2021-22-mun-q6aaabb"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "per-yuanshikai",
@@ -3685,7 +3694,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "per-jiangjieshi",
@@ -3748,7 +3758,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "per-chenduxiu",
@@ -3958,7 +3969,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "per-zhouenlai",
@@ -4025,7 +4037,8 @@
           ],
           "olympiad": [
             "2021-22-mun-q6514a2"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "per-zhude",
@@ -4147,7 +4160,8 @@
           ],
           "olympiad": [
             "2016-17-mun-6"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "per-jiangzemin",
@@ -4335,7 +4349,8 @@
           "olympiad": [
             "2015-16-zak-2",
             "2023-24-mun-30"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "per-likeqiang",

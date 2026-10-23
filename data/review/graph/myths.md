@@ -1,3 +1,19 @@
 # Мифы и легенды
 
-Каркас не утверждён.
+[[myths.fig-pangu]]
+[[myths.fig-nuwa]]
+[[myths.fig-shennong]]
+[[myths.fig-huangdi]]
+[[myths.fig-dayu]]
+[[myths.fig-fuxi]]
+[[myths.fig-houyi]]
+[[myths.fig-change]]
+[[myths.fig-cangjie]]
+[[myths.fig-kuafu]]
+[[myths.fig-gonggong]]
+[[myths.fig-jingwei]]
+[[myths.fig-niulang]]
+[[myths.fig-zhinv]]
+[[myths.fig-mengjiangnu]]
+[[myths.fig-bainiangzi]]
+[[myths.fig-mulan]]

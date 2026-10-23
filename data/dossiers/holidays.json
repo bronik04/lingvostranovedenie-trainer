@@ -4011,6 +4011,9 @@
         "holiday": "zh",
         "role": "ru"
       },
+      "sides": [
+        "holiday"
+      ],
       "rows": [
         {
           "id": "fig-quyuan",
@@ -4019,7 +4022,8 @@
             "ru": [
               "Цюй Юань"
             ],
-            "gloss": "Цюй Юань — поэт царства Чу; по преданию, в его память отмечают Дуаньу"
+            "gloss": "Цюй Юань — поэт царства Чу; по преданию, в его память отмечают Дуаньу",
+            "ref": "literature/authors/lit-a-quyuan"
           },
           "holiday": {
             "zh": "端午节",
@@ -4056,7 +4060,8 @@
           ],
           "olympiad": [
             "2016-17-shk-5"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "fig-wuzixu",
@@ -4184,7 +4189,8 @@
           ],
           "olympiad": [
             "addition-b1-10"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "fig-sunzhongshan",
@@ -4268,7 +4274,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "fig-change",
@@ -4306,7 +4313,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         }
       ]
     }
