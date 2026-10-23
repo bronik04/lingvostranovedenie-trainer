@@ -500,6 +500,7 @@
     "explanation": {
       "ru": "Ворота Тяньаньмэнь начали строить при династии Мин (明代) в 1417 году, в 15-й год правления Юнлэ; закончены они были в 1420 году. Сначала ворота назывались Чэнтяньмэнь (承天门) и служили главным входом в Императорский город Пекина. После пожаров в 1651 году их перестроили и дали им нынешнее название — Тяньаньмэнь (天安门)."
     },
+    "factGroup": "ming-beijing-word",
     "factRow": "dynasties/dynasties/dyn-ming",
     "id": "2015-16-mun-6",
     "occurrences": [
@@ -1745,6 +1746,7 @@
     "explanation": {
       "ru": "Великая Китайская стена (长城) в её объединённом виде была построена при династии Цинь после объединения страны в 221 г. до н. э. — соединение и укрепление более ранних стен отдельных царств."
     },
+    "factGroup": "great-wall-word",
     "id": "2015-16-reg-9",
     "occurrences": [
       {
@@ -4323,6 +4325,7 @@
     "explanation": {
       "ru": "Императорский дворец династий Мин и Цин в Пекине сейчас называют Гугун (故宫, «Прежний дворец») — это музей Запретного города."
     },
+    "factGroup": "ming-beijing-word",
     "id": "2016-17-mun-8",
     "occurrences": [
       {
@@ -9497,6 +9500,7 @@
     "explanation": {
       "ru": "Потала (布达拉宫) в Лхасе — главный архитектурный символ Тибета: первые постройки на её месте относят к VII веку, а резиденцией далай-лам дворец стал в XVII веке. С 1994 года это объект всемирного наследия ЮНЕСКО. 故宫 в Пекине, 滕王阁 в Наньчане и 东方明珠塔 в Шанхае к Тибету отношения не имеют."
     },
+    "factGroup": "potala-tibet",
     "id": "2018-19-mun-46",
     "occurrences": [
       {
@@ -11023,6 +11027,7 @@
     },
     "explanationReviewedAt": "2026-09-21",
     "explanationRevision": 2,
+    "factGroup": "shanghai-word",
     "factRow": "provinces/provinces/prov-shanghai",
     "id": "2018-19-shk-10",
     "occurrences": [
@@ -12050,6 +12055,7 @@
     },
     "explanationReviewedAt": "2026-09-21",
     "explanationRevision": 2,
+    "factGroup": "shanghai-word",
     "id": "2018-19-zak-2",
     "occurrences": [
       {
@@ -16951,6 +16957,7 @@
     "explanation": {
       "ru": "Вайтань (外滩, «Бунд») — историческая набережная в центре Шанхая с колониальной застройкой начала XX века. 日月潭 на Тайване, 太阳岛 в Харбине, 颐和园 в Пекине."
     },
+    "factGroup": "shanghai-word",
     "id": "2021-22-mun-q5434f2",
     "occurrences": [
       {
@@ -17474,6 +17481,7 @@
     "explanation": {
       "ru": "Лхаса (拉萨) — административный центр Тибетского автономного района с 1965 года."
     },
+    "factGroup": "potala-tibet",
     "id": "2021-22-mun-qd67aaa",
     "mergedIds": [
       "2024-25-mun-30"
@@ -19058,8 +19066,9 @@
       "optionId": "o1",
       "state": "verified"
     },
+    "dossier": "landmarks",
     "editorial": {
-      "reason": "Фраза построена как утверждение («Самый … вид … является национальным достоянием»), а не как описание-загадка; читается как оборванная."
+      "reason": "Фраза построена как утверждение («Самый … вид … является национальным достоянием»), а не как описание-загадка; читается как оборванная.; встраивание в досье (landmarks-q89): пояснение не называет неверных вариантов"
     },
     "evidence": [
       {
@@ -19069,8 +19078,10 @@
       }
     ],
     "explanation": {
-      "ru": "Пекинская опера (京剧) — самый распространённый и влиятельный вид китайского оперного искусства, сложившийся к концу XVIII — началу XIX века."
+      "ru": "Пекинская опера (京剧) — самый распространённый и влиятельный вид китайского оперного искусства; её называют национальным достоянием (国粹). Она сложилась в Пекине после 1790 года, когда в столицу на юбилей императора Цяньлуна приехали аньхойские труппы и соединили свои напевы с другими стилями. В спектакле сочетаются пение, речитатив, игра и акробатика, а роли делятся на четыре амплуа: шэн, дань, цзин и чоу. В 2010 году пекинская опера внесена в Репрезентативный список нематериального наследия ЮНЕСКО."
     },
+    "factGroup": "peking-opera-word",
+    "factRow": "landmarks/intangible/int-jingju",
     "id": "2021-22-zak-q36aaab",
     "occurrences": [
       {
@@ -19091,16 +19102,29 @@
         "zh": "京剧"
       },
       {
+        "gloss": "Юэцзюй — чжэцзянская опера, которую исполняют женщины",
         "id": "o2",
         "zh": "越剧"
       },
       {
+        "gloss": "Юйцзюй — хэнаньская опера жанра «банцзы»",
         "id": "o3",
         "zh": "豫剧"
       },
       {
+        "gloss": "Юэцзюй — кантонская опера Гуандуна и Гуанси",
         "id": "o4",
         "zh": "粤剧"
+      },
+      {
+        "gloss": "Куньцюй — одна из древнейших форм китайской оперы, возникшая в Куньшане",
+        "id": "int-kunqu",
+        "zh": "昆曲"
+      },
+      {
+        "gloss": "Хуанмэйси — аньхойская опера, выросшая из чайных песен Хуанмэя",
+        "id": "int-huangmeixi",
+        "zh": "黄梅戏"
       }
     ],
     "parseWarnings": [],
@@ -21811,6 +21835,7 @@
     "explanation": {
       "ru": "Храм Неба (天坛) в Пекине был построен для ежегодных жертвоприношений Небу, которые совершали императоры династий Мин и Цин; объект списка ЮНЕСКО с 1998 года."
     },
+    "factGroup": "ming-beijing-word",
     "id": "2022-23-zak-2",
     "occurrences": [
       {
@@ -33925,6 +33950,7 @@
     "explanation": {
       "ru": "Это «Прощай, моя наложница» (霸王别姬), фильм Чэнь Кайгэ. История двух актёров пекинской оперы разворачивается на фоне потрясений китайской истории XX века. В 1993 году картина разделила главный приз Каннского кинофестиваля с другим фильмом."
     },
+    "factGroup": "peking-opera-word",
     "factRow": "cinema/works/cin-cn-concubine",
     "id": "cinema-q02",
     "occurrences": [],
@@ -34303,6 +34329,7 @@
     "explanation": {
       "ru": "Это «Певица Красный Пион» (歌女红牡丹). Фильм поставил Чжан Шичуань, главную роль сыграла Ху Де. Картина 1931 года посвящена певице пекинской оперы, страдающей от жестокого мужа."
     },
+    "factGroup": "peking-opera-word",
     "factRow": "cinema/works/cin-cn-red-peony",
     "id": "cinema-q07",
     "occurrences": [],
@@ -39696,6 +39723,7 @@
     "explanation": {
       "ru": "Пинъяоские лаки (平遥推光漆器) появились в уезде Пинъяо в центральной части провинции Шаньси и распространились по всему северу Китая. Их знаменитая черта — полировка вручную («туйгуан»): поверхность натирают до зеркального блеска, а потом расписывают золотом и красками (描金彩绘). Пинъяо — родина шаньсийских купцов, а эти лаки считаются одним из «трёх чудес» города. В 2006 году ремесло вошло в первую партию национального списка нематериального наследия."
     },
+    "factGroup": "pingyao-word",
     "factRow": "crafts/crafts/cr-pingyao",
     "id": "crafts-q37",
     "occurrences": [],
@@ -53420,6 +53448,170 @@
   },
   {
     "answer": {
+      "optionId": "hol-chunjie",
+      "state": "verified"
+    },
+    "dossier": "holidays",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "春节 — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/project_details/14904.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "“春节——中国人庆祝传统新年的社会实践”列入人类非物质文化遗产代表作名录 — 中国政府网（新华社）",
+        "url": "https://www.gov.cn/yaowen/liebiao/202412/content_6991015.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "国务院关于修改《全国年节及纪念日放假办法》的决定（2024） — 新华网",
+        "url": "https://www.news.cn/politics/20241112/53da215f46c546a480f0a01d339dafa2/c.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "年兽变形记（文汇报） — 中国作家网",
+        "url": "https://www.chinawriter.com.cn/n1/2025/0209/c442005-40415244.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "开门爆竹：除旧迎新，奏响新年序曲 — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/special2025/details/29626.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Spring festival, social practices of the Chinese people in celebration of traditional new year — UNESCO Intangible Cultural Heritage",
+        "url": "https://ich.unesco.org/en/RL/spring-festival-social-practices-of-the-chinese-people-in-celebration-of-traditional-new-year-02126"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/chinadirectory.html"
+      }
+    ],
+    "explanation": {
+      "ru": "В декабре 2024 года ЮНЕСКО внесла в Репрезентативный список нематериального наследия «Праздник Весны (春节) — социальные практики празднования китайцами традиционного Нового года». Решение приняли на 19-й сессии Межправительственного комитета в Асунсьоне. Праздник Весны — Новый год по лунному календарю и главный праздник года в Китае."
+    },
+    "factRow": "holidays/holidays/hol-chunjie",
+    "id": "holidays-q32",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "hol-chunjie",
+        "zh": "春节"
+      },
+      {
+        "gloss": "Ханьши — праздник холодной пищи накануне Цинмина: огня не разводят",
+        "id": "hol-hanshi",
+        "zh": "寒食节"
+      },
+      {
+        "gloss": "Циси — 7-е число 7-го лунного месяца, праздник девушек и влюблённых",
+        "id": "hol-qixi",
+        "zh": "七夕"
+      },
+      {
+        "gloss": "Праздник середины осени — 15-е число 8-го лунного месяца: луна и юэбины",
+        "id": "hol-zhongqiu",
+        "zh": "中秋节"
+      },
+      {
+        "gloss": "Чунъян — 9-е число 9-го лунного месяца, День пожилых людей",
+        "id": "hol-chongyang",
+        "zh": "重阳节"
+      },
+      {
+        "gloss": "Праздник воды — Новый год дайцев: обливают друг друга водой на счастье",
+        "id": "hol-poshui",
+        "zh": "泼水节"
+      },
+      {
+        "gloss": "Праздник факелов — главный праздник народа И, лето, 6-й лунный месяц",
+        "id": "hol-huoba",
+        "zh": "火把节"
+      },
+      {
+        "gloss": "«Третье число третьего месяца» — праздник чжуанов с песенными перекличками",
+        "id": "hol-sanyuesan",
+        "zh": "三月三"
+      },
+      {
+        "gloss": "Чхусок — осенний праздник корейцев Китая: поминают предков, едят рисовые лепёшки",
+        "id": "hol-qiuxi",
+        "zh": "秋夕节"
+      },
+      {
+        "gloss": "Юаньдань — Новый год по солнечному календарю, 1 января",
+        "id": "hol-yuandan",
+        "zh": "元旦"
+      },
+      {
+        "gloss": "День образования КНР — 1 октября, провозглашение КНР в 1949 году",
+        "id": "hol-guoqing",
+        "zh": "国庆节"
+      },
+      {
+        "gloss": "День основания НОАК — 1 августа, в память Наньчанского восстания 1927 года",
+        "id": "hol-jianjun",
+        "zh": "建军节"
+      },
+      {
+        "gloss": "День молодёжи — 4 мая, в память «Движения 4 мая» 1919 года",
+        "id": "hol-qingnian",
+        "zh": "青年节"
+      },
+      {
+        "gloss": "День посадки деревьев — 12 марта, установлен в 1979 году",
+        "id": "hol-zhishu",
+        "zh": "植树节"
+      },
+      {
+        "gloss": "День учителя — 10 сентября, учреждён в 1985 году",
+        "id": "hol-jiaoshi",
+        "zh": "教师节"
+      },
+      {
+        "gloss": "День журналиста — 8 ноября, дата утверждена в 2000 году",
+        "id": "hol-jizhe",
+        "zh": "记者节"
+      },
+      {
+        "gloss": "Международный день медсестры — 12 мая, день рождения Найтингейл",
+        "id": "hol-hushi",
+        "zh": "护士节"
+      },
+      {
+        "gloss": "День народной полиции — 10 января, учреждён в 2020 году, отмечается с 2021-го",
+        "id": "hol-jingcha",
+        "zh": "警察节"
+      },
+      {
+        "gloss": "Праздник урожая крестьян — в день осеннего равноденствия, учреждён в 2018 году",
+        "id": "hol-nongmin",
+        "zh": "中国农民丰收节"
+      },
+      {
+        "gloss": "«День холостяка» — 11 ноября, неофициальный праздник и день онлайн-распродаж",
+        "id": "hol-guanggun",
+        "zh": "光棍节"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какой праздник в 2024 году внесён в список нематериального культурного наследия ЮНЕСКО (人类非物质文化遗产代表作名录)?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
       "optionId": "lm-cn-puyi-palace",
       "state": "verified"
     },
@@ -53495,6 +53687,630 @@
     "questionRu": "В каком городе находится бывший дворец Пу И, где он жил в годы Маньчжоу-го?",
     "questionZh": null,
     "topic": "История и государство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-bund",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "外滩风景区 — 上海市人民政府",
+        "url": "https://www.shanghai.gov.cn/citywalk/20260625/9dfb6f86b9664e018607b5cc9ec9a53c.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "上海景点 — 上海市人力资源和社会保障局",
+        "url": "https://rsj.sh.gov.cn/t05_17891/20260611/t0035_1441416.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Набережная Вайтань (外滩) тянется на 1,5 км вдоль реки Хуанпу в центре Шанхая (上海). Около 52 зданий в стилях готики, барокко и классицизма называют «выставкой архитектуры всех стран». Напротив, в районе Пудун, стоит телебашня «Восточная жемчужина»."
+    },
+    "factGroup": "shanghai-word",
+    "factRow": "landmarks/sites/lm-cn-bund",
+    "id": "landmarks-q100",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-bund",
+        "zh": "上海"
+      },
+      {
+        "gloss": "Сиань — город на северо-западе Китая, в провинции Шэньси",
+        "id": "lm-cn-terracotta",
+        "zh": "西安"
+      },
+      {
+        "gloss": "Пекин — столица КНР и город центрального подчинения",
+        "id": "lm-cn-ming-tombs",
+        "zh": "北京"
+      },
+      {
+        "gloss": "Пинъяо — уездный город в провинции Шаньси",
+        "id": "lm-cn-pingyao",
+        "zh": "平遥"
+      },
+      {
+        "gloss": "Лицзян — город на северо-западе провинции Юньнань",
+        "id": "lm-cn-lijiang",
+        "zh": "丽江"
+      },
+      {
+        "gloss": "Харбин — главный город провинции Хэйлунцзян",
+        "id": "lm-cn-sun-island",
+        "zh": "哈尔滨"
+      },
+      {
+        "gloss": "Ухань — главный город провинции Хубэй на Янцзы",
+        "id": "lm-cn-yellow-crane",
+        "zh": "武汉"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В каком городе находится набережная Вайтань (外滩) с «выставкой архитектуры всех стран»?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-sun-island",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "哈尔滨市太阳岛风景区 — 黑龙江省人民政府",
+        "url": "https://www.hlj.gov.cn/hlj/c108519/202503/c00_31816708.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "美丽的太阳岛 — 新华网",
+        "url": "http://www.news.cn/info/20240822/0d365e27440a4b0b8a23f6628d428d23/c.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Остров Солнца (太阳岛) — ландшафтный район на северном берегу реки Сунгари в Харбине (哈尔滨), центре провинции Хэйлунцзян. Это национальный ландшафтный район и национальный парк водно-болотных угодий площадью около 88 км². Зимой здесь проходит выставка снежных скульптур."
+    },
+    "factGroup": "shanghai-word",
+    "factRow": "landmarks/sites/lm-cn-sun-island",
+    "id": "landmarks-q101",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-sun-island",
+        "zh": "哈尔滨"
+      },
+      {
+        "gloss": "Сиань — город на северо-западе Китая, в провинции Шэньси",
+        "id": "lm-cn-terracotta",
+        "zh": "西安"
+      },
+      {
+        "gloss": "Пекин — столица КНР и город центрального подчинения",
+        "id": "lm-cn-ming-tombs",
+        "zh": "北京"
+      },
+      {
+        "gloss": "Пинъяо — уездный город в провинции Шаньси",
+        "id": "lm-cn-pingyao",
+        "zh": "平遥"
+      },
+      {
+        "gloss": "Лицзян — город на северо-западе провинции Юньнань",
+        "id": "lm-cn-lijiang",
+        "zh": "丽江"
+      },
+      {
+        "gloss": "Шанхай — город центрального подчинения у устья Янцзы",
+        "id": "lm-cn-bund",
+        "zh": "上海"
+      },
+      {
+        "gloss": "Ухань — главный город провинции Хубэй на Янцзы",
+        "id": "lm-cn-yellow-crane",
+        "zh": "武汉"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В каком городе находится остров Солнца (太阳岛)?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-beijing-gugong",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "About the Palace Museum — The Palace Museum",
+        "url": "https://intl.dpm.org.cn/about_us/126.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "Imperial Palaces of the Ming and Qing Dynasties in Beijing and Shenyang — UNESCO",
+        "url": "https://whc.unesco.org/en/list/439/"
+      }
+    ],
+    "explanation": {
+      "ru": "В список Всемирного наследия ЮНЕСКО в 1987 году внесён императорский дворец в Пекине (北京故宫) — Запретный город династий Мин и Цин. Позднее к этому объекту добавили и дворец Цин в Шэньяне. Это крупнейший сохранившийся деревянный дворцовый ансамбль Китая."
+    },
+    "factRow": "landmarks/palaces/lm-cn-beijing-gugong",
+    "id": "landmarks-q102",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-beijing-gugong",
+        "zh": "北京故宫"
+      },
+      {
+        "gloss": "Резиденция князя Гуна",
+        "id": "lm-cn-gongwangfu",
+        "zh": "恭王府"
+      },
+      {
+        "gloss": "Бывший дворец Пу И в Маньчжоу-го",
+        "id": "lm-cn-puyi-palace",
+        "zh": "伪满皇宫"
+      },
+      {
+        "gloss": "Президентский дворец в Нанкине",
+        "id": "lm-cn-nanjing-presidential-palace",
+        "zh": "南京总统府"
+      },
+      {
+        "gloss": "Резиденция князя Чуня",
+        "id": "lm-cn-chunwangfu",
+        "zh": "醇亲王府"
+      },
+      {
+        "gloss": "Руины дворца царства Наньюэ",
+        "id": "lm-cn-nanyue-palace-site",
+        "zh": "南越国宫署遗址"
+      },
+      {
+        "gloss": "Резиденция князей Харачин",
+        "id": "lm-cn-kalaqin-palace",
+        "zh": "喀喇沁亲王府"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какой из этих дворцов внесён в список Всемирного культурного наследия ЮНЕСКО (世界文化遗产)?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-summer-palace-garden",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "颐和园 — 北京市公园管理中心",
+        "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_lsmy/201911/t20191129_732237.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "颐和园 — 北京市文物局",
+        "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738088/1742735/364350/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Summer Palace, an Imperial Garden in Beijing — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/880/"
+      }
+    ],
+    "explanation": {
+      "ru": "Летний дворец Ихэюань (颐和园) в Пекине внесён в список Всемирного наследия ЮНЕСКО в 1998 году. ЮНЕСКО называет его выдающимся образцом китайского садово-паркового искусства, где природный пейзаж соединён с павильонами и храмами. Сад построен при Цин вокруг холма Ваньшоушань и озера Куньминху."
+    },
+    "factRow": "landmarks/gardens/lm-cn-summer-palace-garden",
+    "id": "landmarks-q103",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-summer-palace-garden",
+        "zh": "颐和园"
+      },
+      {
+        "gloss": "Юаньминъюань — бывший императорский сад, ныне парк руин",
+        "id": "lm-cn-yuanmingyuan",
+        "zh": "圆明园"
+      },
+      {
+        "gloss": "Сад Юйюань",
+        "id": "lm-cn-yuyuan",
+        "zh": "豫园"
+      },
+      {
+        "gloss": "Сад Цзичанъюань",
+        "id": "lm-cn-jichang-garden",
+        "zh": "寄畅园"
+      },
+      {
+        "gloss": "Сад Цинхуэйюань",
+        "id": "lm-cn-qinghui-garden",
+        "zh": "清晖园"
+      },
+      {
+        "gloss": "Сад Юйиньшаньфан",
+        "id": "lm-cn-yuyin-shanfang",
+        "zh": "余荫山房"
+      },
+      {
+        "gloss": "Сад Кэюань в Дунгуане",
+        "id": "lm-cn-dongguan-keyuan",
+        "zh": "东莞可园"
+      },
+      {
+        "gloss": "Парк Бэйхай — бывший императорский сад в центре Пекина",
+        "id": "lm-cn-beihai",
+        "zh": "北海公园"
+      },
+      {
+        "gloss": "Парк Сяншань — горный парк на северо-западе Пекина, бывший императорский сад",
+        "id": "lm-cn-xiangshan",
+        "zh": "香山公园"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какой из этих садов внесён в список Всемирного культурного наследия ЮНЕСКО (世界文化遗产)?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-mogao",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "敦煌研究院：莫高窟简介",
+        "url": "https://www.dha.ac.cn/info/1425/3659.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "UNESCO：莫高窟",
+        "url": "https://whc.unesco.org/zh/list/440"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Mogao Caves — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/440/"
+      }
+    ],
+    "explanation": {
+      "ru": "Пещеры Могао (莫高窟) у Дуньхуана внесены в список Всемирного наследия ЮНЕСКО в 1987 году. В 492 пещерах сохранились статуи и росписи, созданные за тысячу лет. Это одно из главных собраний буддийского искусства на Шёлковом пути."
+    },
+    "factRow": "landmarks/sacred/lm-cn-mogao",
+    "id": "landmarks-q104",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-mogao",
+        "zh": "莫高窟"
+      },
+      {
+        "gloss": "Юнхэгун",
+        "id": "lm-cn-yonghe",
+        "zh": "雍和宫"
+      },
+      {
+        "gloss": "Монастырь Ташилунпо",
+        "id": "lm-cn-tashilhunpo",
+        "zh": "扎什伦布寺"
+      },
+      {
+        "gloss": "Висячий монастырь Сюанькунсы",
+        "id": "lm-cn-hanging-temple",
+        "zh": "悬空寺"
+      },
+      {
+        "gloss": "Главный зал монастыря Наньчаньсы",
+        "id": "lm-cn-nanchan",
+        "zh": "南禅寺大殿"
+      },
+      {
+        "gloss": "Деревянная пагода в Инсяне",
+        "id": "lm-cn-yingxian",
+        "zh": "应县木塔"
+      },
+      {
+        "gloss": "Храм Ханьшаньсы",
+        "id": "lm-cn-hanshan",
+        "zh": "寒山寺"
+      },
+      {
+        "gloss": "Монастырь Наньпутосы",
+        "id": "lm-cn-nanputuo",
+        "zh": "南普陀寺"
+      },
+      {
+        "gloss": "Большая мечеть Сианя",
+        "id": "lm-cn-xian-mosque",
+        "zh": "西安清真寺"
+      },
+      {
+        "gloss": "Монастырь Лабранг",
+        "id": "lm-cn-labrang",
+        "zh": "拉卜楞寺"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Что из этого внесено в список Всемирного культурного наследия ЮНЕСКО (世界文化遗产)?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-great-wall",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "The Great Wall — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/438/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "浪漫中国丨世界遗产图鉴：长城 — 新华网",
+        "url": "http://www.news.cn/video/20231219/619eb0bb44034860a1b83a1d6af1d63c/c.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Великая Китайская стена (长城) внесена в список Всемирного наследия ЮНЕСКО в 1987 году. Первые оборонительные стены строили ещё отдельные царства до объединения Китая, а около 220 года до н. э. Цинь Шихуан соединил их участки; нынешний облик большая часть стены получила при Мин. В состав объекта входят, например, Бадалин, Шаньхайгуань и Цзяюйгуань."
+    },
+    "factGroup": "great-wall-word",
+    "factRow": "landmarks/fortifications/lm-cn-great-wall",
+    "id": "landmarks-q105",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-great-wall",
+        "zh": "长城"
+      },
+      {
+        "gloss": "Городская стена Сианя",
+        "id": "lm-cn-xian-wall",
+        "zh": "西安城墙"
+      },
+      {
+        "gloss": "Городская стена Нанкина",
+        "id": "lm-cn-nanjing-wall",
+        "zh": "南京城墙"
+      },
+      {
+        "gloss": "Городская стена Цзинчжоу",
+        "id": "lm-cn-jingzhou-wall",
+        "zh": "荆州城墙"
+      },
+      {
+        "gloss": "Городская стена Синчэна",
+        "id": "lm-cn-xingcheng-wall",
+        "zh": "兴城城墙"
+      },
+      {
+        "gloss": "Старинная городская стена Шоусяня",
+        "id": "lm-cn-shouxian-wall",
+        "zh": "寿县古城墙"
+      },
+      {
+        "gloss": "Стена старого города Датуна",
+        "id": "lm-cn-datong-wall",
+        "zh": "大同古城墙"
+      },
+      {
+        "gloss": "Городская стена Кайфэна",
+        "id": "lm-cn-kaifeng-wall",
+        "zh": "开封城墙"
+      },
+      {
+        "gloss": "Городская стена исторической управы Тайчжоу",
+        "id": "lm-cn-taizhou-wall",
+        "zh": "台州府城墙"
+      },
+      {
+        "gloss": "Городская стена Сянъяна",
+        "id": "lm-cn-xiangyang-wall",
+        "zh": "襄阳城墙"
+      },
+      {
+        "gloss": "Городская стена Чжэндина",
+        "id": "lm-cn-zhengding-wall",
+        "zh": "正定城墙"
+      },
+      {
+        "gloss": "Укреплённый город Чунъу",
+        "id": "lm-cn-chongwu",
+        "zh": "崇武古城"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какое укрепление внесено в список Всемирного культурного наследия ЮНЕСКО (世界文化遗产)?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-pingyao",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Ancient City of Ping Yao — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/812/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "晋中市平遥古城景区 — 生态中国网",
+        "url": "http://www.eco.gov.cn/news_info/40332.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "鉴往知来，跟着总书记学历史丨走进平遥 — 新华网",
+        "url": "http://www.news.cn/politics/2022-01/29/c_1128314326.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Древний город Пинъяо (平遥古城) в провинции Шаньси целиком внесён в список Всемирного наследия ЮНЕСКО в 1997 году. Он сохранил облик уездного города эпох Мин и Цин: стену, расширенную в 1370 году, улицы, лавки, дома и храмы. В XIX — начале XX века Пинъяо был главным центром банковского дела Китая."
+    },
+    "factGroup": "pingyao-word",
+    "factRow": "landmarks/sites/lm-cn-pingyao",
+    "id": "landmarks-q106",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-pingyao",
+        "zh": "平遥古城"
+      },
+      {
+        "gloss": "Вайтань — набережная реки Хуанпу в Шанхае с ансамблем зданий разных стилей",
+        "id": "lm-cn-bund",
+        "zh": "外滩"
+      },
+      {
+        "gloss": "«Восточная жемчужина» — телебашня в Шанхае высотой 468 м",
+        "id": "lm-cn-oriental-pearl",
+        "zh": "东方明珠"
+      },
+      {
+        "gloss": "Остров Солнца — парковая зона на берегу Сунгари в Харбине",
+        "id": "lm-cn-sun-island",
+        "zh": "太阳岛"
+      },
+      {
+        "gloss": "Жиюэтань — «озеро Солнца и Луны», самое известное озеро Тайваня",
+        "id": "lm-cn-sun-moon-lake",
+        "zh": "日月潭"
+      },
+      {
+        "gloss": "Башня Жёлтого журавля — знаменитая башня на горе Шэшань в Ухане",
+        "id": "lm-cn-yellow-crane",
+        "zh": "黄鹤楼"
+      },
+      {
+        "gloss": "Датан Фужунъюань — парк в Сиани, воссоздающий облик императорского сада эпохи Тан",
+        "id": "lm-cn-tang-paradise",
+        "zh": "大唐芙蓉园"
+      },
+      {
+        "gloss": "Хуацинчи — императорский дворец с горячими источниками у подножия горы Лишань близ Сианя",
+        "id": "lm-cn-huaqing",
+        "zh": "华清池"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какое из этих мест внесено в список Всемирного культурного наследия ЮНЕСКО (世界文化遗产)?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "int-kunqu",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Kun Qu opera — UNESCO Intangible Cultural Heritage",
+        "url": "https://ich.unesco.org/en/RL/kun-qu-opera-00004"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/chinadirectory.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Куньцюй (昆曲) — одна из древнейших форм китайской оперы: она возникла при Мин в Куньшане близ Сучжоу. В 2001 году ЮНЕСКО провозгласила её шедевром устного и нематериального наследия, а в 2008 году она вошла в Репрезентативный список. Классические пьесы — «Пионовая беседка» и «Дворец долголетия»."
+    },
+    "factRow": "landmarks/intangible/int-kunqu",
+    "id": "landmarks-q107",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "int-kunqu",
+        "zh": "昆曲"
+      },
+      {
+        "gloss": "Юэцзюй — чжэцзянская опера, которую исполняют женщины",
+        "id": "int-yueju-zhejiang",
+        "zh": "越剧"
+      },
+      {
+        "gloss": "Юйцзюй — хэнаньская опера жанра «банцзы»",
+        "id": "int-yuju",
+        "zh": "豫剧"
+      },
+      {
+        "gloss": "Хуанмэйси — аньхойская опера, выросшая из чайных песен Хуанмэя",
+        "id": "int-huangmeixi",
+        "zh": "黄梅戏"
+      },
+      {
+        "gloss": "Сяншэн — комический диалог, жанр сказовых искусств",
+        "id": "int-xiangsheng",
+        "zh": "相声"
+      },
+      {
+        "gloss": "Сянци — китайские шахматы с «дворцом» и «рекой»",
+        "id": "int-xiangqi",
+        "zh": "中国象棋"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Что из этого внесено в список нематериального культурного наследия ЮНЕСКО (人类非物质文化遗产代表作名录)?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
     "topicSource": "authored"
   },
   {
@@ -53695,6 +54511,9 @@
       "state": "verified"
     },
     "dossier": "landmarks",
+    "editorial": {
+      "reason": "перебор достопримечательностей (решение автора 2026-10-23): прежний текст не объяснял, чем сад важен"
+    },
     "evidence": [
       {
         "authority": "official",
@@ -53740,7 +54559,7 @@
       }
     ],
     "explanation": {
-      "ru": "Это Сад скромного чиновника (拙政园) на улице Дунбэйцзе в Сучжоу. Главное в его композиции — вода; сад делится на восточную, центральную и западную части. Его основал в 1509 году, в эпоху Мин, Ван Сяньчэнь после ухода со службы. Позднее сад делился и перестраивался, поэтому три нынешние части датируются по-разному."
+      "ru": "Самый большой из сохранившихся классических садов Сучжоу — Сад скромного чиновника (拙政园). Его основал в 1509 году, в эпоху Мин, Ван Сяньчэнь после ухода со службы. Главное в композиции сада — вода; он делится на восточную, центральную и западную части. В 1997 году сад вошёл в список Всемирного наследия ЮНЕСКО в составе классических садов Сучжоу."
     },
     "factRow": "landmarks/gardens/lm-cn-zhuozheng-garden",
     "id": "landmarks-q23",
@@ -53778,7 +54597,7 @@
     ],
     "origin": "addition",
     "parseWarnings": [],
-    "questionRu": "Какой сад Сучжоу, основанный при Мин, построен вокруг воды и делится на восточную, центральную и западную части?",
+    "questionRu": "Какой сад — самый большой из классических садов Сучжоу, внесённых в список ЮНЕСКО?",
     "questionZh": null,
     "topic": "География и административное устройство",
     "topicSource": "authored"
@@ -54886,6 +55705,916 @@
     "questionRu": "Какой кремль называют Кромом?",
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-beijing-gugong",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "About the Palace Museum — The Palace Museum",
+        "url": "https://intl.dpm.org.cn/about_us/126.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "Imperial Palaces of the Ming and Qing Dynasties in Beijing and Shenyang — UNESCO",
+        "url": "https://whc.unesco.org/en/list/439/"
+      }
+    ],
+    "explanation": {
+      "ru": "Императорский дворец в Пекине (北京故宫), Запретный город, построен в 1406–1420 годах при династии Мин (明): его возвели по приказу императора Юнлэ, перенёсшего столицу в Пекин. Почти пять веков здесь правили императоры Мин и Цин. В 1987 году дворец внесён в список Всемирного наследия ЮНЕСКО."
+    },
+    "factGroup": "ming-beijing-word",
+    "factRow": "landmarks/palaces/lm-cn-beijing-gugong",
+    "id": "landmarks-q90",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-beijing-gugong",
+        "zh": "明"
+      },
+      {
+        "gloss": "Эпоха Цин (1644–1912)",
+        "id": "lm-cn-gongwangfu",
+        "zh": "清"
+      },
+      {
+        "gloss": "Эпоха Тан (618–907)",
+        "id": "lm-cn-daming-palace-site",
+        "zh": "唐"
+      },
+      {
+        "gloss": "Эпоха Западная Хань (206 до н. э. – 8 н. э.)",
+        "id": "lm-cn-nanyue-palace-site",
+        "zh": "西汉"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "При какой династии построен Запретный город — императорский дворец Гугун?",
+    "questionZh": null,
+    "topic": "История и государство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-chengde-resort",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "Mountain Resort and its Outlying Temples, Chengde — UNESCO",
+        "url": "https://whc.unesco.org/en/list/703"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "〖道中华〗承德避暑山庄：各民族交往交流交融的历史见证｜总书记讲过的民族团结进步故事 — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/seac/c103391/202309/1167585.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Mountain Resort and its Outlying Temples, Chengde — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/703/"
+      }
+    ],
+    "explanation": {
+      "ru": "Горную резиденцию для летнего отдыха в Чэндэ (承德避暑山庄) строили в 1703–1792 годах при династии Цин (清). Здесь цинские императоры проводили лето и занимались государственными делами. Резиденция с дворцами, садами и окружающими храмами в 1994 году внесена в список Всемирного наследия ЮНЕСКО."
+    },
+    "factRow": "landmarks/palaces/lm-cn-chengde-resort",
+    "id": "landmarks-q91",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-chengde-resort",
+        "zh": "清"
+      },
+      {
+        "gloss": "Эпоха Мин (1368–1644)",
+        "id": "lm-cn-beijing-gugong",
+        "zh": "明"
+      },
+      {
+        "gloss": "Эпоха Тан (618–907)",
+        "id": "lm-cn-daming-palace-site",
+        "zh": "唐"
+      },
+      {
+        "gloss": "Эпоха Западная Хань (206 до н. э. – 8 н. э.)",
+        "id": "lm-cn-nanyue-palace-site",
+        "zh": "西汉"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "При какой династии построена горная резиденция для летнего отдыха в Чэндэ (承德避暑山庄)?",
+    "questionZh": null,
+    "topic": "История и государство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-tiantan",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "UNESCO：北京皇家祭坛—天坛",
+        "url": "https://whc.unesco.org/zh/list/881"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "北京市政府：天坛",
+        "url": "https://www.beijing.gov.cn/renwen/rwzyd/qgzdwwbhdw/tt/202210/t20221027_2845910.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "天坛公园简介 — 北京市公园管理中心",
+        "url": "https://gygl.beijing.gov.cn/dwjj/dwjj_zsdw/201911/t20191129_728918.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Temple of Heaven: an Imperial Sacrificial Altar in Beijing — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/881/"
+      }
+    ],
+    "explanation": {
+      "ru": "Храм Неба (天坛) основан в 1420 году, при династии Мин (明), и позднее расширялся при Мин и Цин. Здесь императоры совершали жертвоприношения Небу и молились об урожае. В 1998 году комплекс внесён в список Всемирного наследия ЮНЕСКО."
+    },
+    "factGroup": "ming-beijing-word",
+    "factRow": "landmarks/sacred/lm-cn-tiantan",
+    "id": "landmarks-q92",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-tiantan",
+        "zh": "明"
+      },
+      {
+        "gloss": "Эпоха Чуньцю (770–476 до н. э.)",
+        "id": "lm-cn-qufu-confucius",
+        "zh": "春秋"
+      },
+      {
+        "gloss": "Эпоха Ранняя Цинь (351–394)",
+        "id": "lm-cn-mogao",
+        "zh": "前秦"
+      },
+      {
+        "gloss": "Эпоха Цин (1644–1912)",
+        "id": "lm-cn-yonghe",
+        "zh": "清"
+      },
+      {
+        "gloss": "Эпоха Северная Вэй (386–534)",
+        "id": "lm-cn-shaolin",
+        "zh": "北魏"
+      },
+      {
+        "gloss": "Эпоха Тан (618–907)",
+        "id": "lm-cn-nanchan",
+        "zh": "唐"
+      },
+      {
+        "gloss": "Эпоха Ляо (907–1125)",
+        "id": "lm-cn-yingxian",
+        "zh": "辽"
+      },
+      {
+        "gloss": "Эпоха Лян Южных династий (502–557)",
+        "id": "lm-cn-hanshan",
+        "zh": "南朝梁"
+      },
+      {
+        "gloss": "Эпоха Восточная Цзинь (317–420)",
+        "id": "lm-cn-lingyin",
+        "zh": "东晋"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "При какой династии построен Храм Неба (天坛) в Пекине?",
+    "questionZh": null,
+    "topic": "История и государство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-yuanmingyuan",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "圆明园遗址公园 — 北京市园林绿化局",
+        "url": "https://yllhj.beijing.gov.cn/ggfw/bjsggml/lsmy/lsmy2/202206/t20220620_2746573.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "圆明园遗址公园 — 北京市人民政府",
+        "url": "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/myhdlzqzh/ymyyzhgy/202309/t20230921_3263781.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Юаньминъюань (圆明园) основан в 1707 году, при династии Цин (清), и состоял из трёх садов. Его называли «садом всех садов». В 1860 году, во время Второй опиумной войны, сад разграбили и сожгли англо-французские войска; сегодня это парк руин."
+    },
+    "factGroup": "ming-beijing-word",
+    "factRow": "landmarks/gardens/lm-cn-yuanmingyuan",
+    "id": "landmarks-q93",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-yuanmingyuan",
+        "zh": "清"
+      },
+      {
+        "gloss": "Эпоха Мин (1368–1644)",
+        "id": "lm-cn-zhuozheng-garden",
+        "zh": "明"
+      },
+      {
+        "gloss": "Эпоха Южная Сун (1127–1279)",
+        "id": "lm-cn-wangshi-garden",
+        "zh": "南宋"
+      },
+      {
+        "gloss": "Эпоха Юань (1271–1368)",
+        "id": "lm-cn-shizilin",
+        "zh": "元"
+      },
+      {
+        "gloss": "Эпоха Северная Сун (960–1127)",
+        "id": "lm-cn-canglang-pavilion",
+        "zh": "北宋"
+      },
+      {
+        "gloss": "Эпоха Цзинь, чжурчжэньская династия (1115–1234)",
+        "id": "lm-cn-xiangshan",
+        "zh": "金"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "При какой династии создан сад Юаньминъюань (圆明园), сожжённый в 1860 году?",
+    "questionZh": null,
+    "topic": "История и государство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-potala",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "〖道中华〗布达拉宫是一座怎样的文化地标？ — 国家民族事务委员会",
+        "url": "https://www.neac.gov.cn/seac/c103391/202210/1159312.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "Historic Ensemble of the Potala Palace, Lhasa — UNESCO",
+        "url": "https://whc.unesco.org/en/list/707/"
+      }
+    ],
+    "explanation": {
+      "ru": "Дворец Потала (布达拉宫) стоит в Лхасе (拉萨), административном центре Тибета. Первую резиденцию на этом месте связывают с VII веком и царём Сонгценгампо, а нынешний ансамбль из Белого и Красного дворцов восходит к перестройке, начатой в 1645 году. Потала — символ Тибета; в 1994 году дворец внесён в список Всемирного наследия ЮНЕСКО."
+    },
+    "factGroup": "potala-tibet",
+    "factRow": "landmarks/palaces/lm-cn-potala",
+    "id": "landmarks-q94",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-potala",
+        "zh": "拉萨"
+      },
+      {
+        "gloss": "Город Пекин",
+        "id": "lm-cn-beijing-gugong",
+        "zh": "北京"
+      },
+      {
+        "gloss": "Город Шэньян",
+        "id": "lm-cn-shenyang-gugong",
+        "zh": "沈阳"
+      },
+      {
+        "gloss": "Город Чэндэ",
+        "id": "lm-cn-chengde-resort",
+        "zh": "承德"
+      },
+      {
+        "gloss": "Город Цюйфу",
+        "id": "lm-cn-kongfu",
+        "zh": "曲阜"
+      },
+      {
+        "gloss": "Город Чанчунь",
+        "id": "lm-cn-puyi-palace",
+        "zh": "长春"
+      },
+      {
+        "gloss": "Город Нанкин",
+        "id": "lm-cn-nanjing-presidential-palace",
+        "zh": "南京"
+      },
+      {
+        "gloss": "Город Сиань",
+        "id": "lm-cn-daming-palace-site",
+        "zh": "西安"
+      },
+      {
+        "gloss": "Город Гуанчжоу",
+        "id": "lm-cn-nanyue-palace-site",
+        "zh": "广州"
+      },
+      {
+        "gloss": "Хошун Харачин",
+        "id": "lm-cn-kalaqin-palace",
+        "zh": "喀喇沁旗"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В каком городе стоит дворец Потала (布达拉宫)?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-summer-palace-garden",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "颐和园 — 北京市公园管理中心",
+        "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_lsmy/201911/t20191129_732237.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "颐和园 — 北京市文物局",
+        "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738088/1742735/364350/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Summer Palace, an Imperial Garden in Beijing — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/880/"
+      }
+    ],
+    "explanation": {
+      "ru": "Летний дворец Ихэюань (颐和园) находится в Пекине (北京), на северо-западной окраине города. Основу сада составляют холм Ваньшоушань и озеро Куньминху. Первоначальный сад основан в 1750 году, разрушен в 1860-м и перестроен с 1886 года; в 1998 году Ихэюань внесён в список Всемирного наследия ЮНЕСКО."
+    },
+    "factGroup": "ming-beijing-word",
+    "factRow": "landmarks/gardens/lm-cn-summer-palace-garden",
+    "id": "landmarks-q95",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-summer-palace-garden",
+        "zh": "北京"
+      },
+      {
+        "gloss": "Город Сучжоу",
+        "id": "lm-cn-zhuozheng-garden",
+        "zh": "苏州"
+      },
+      {
+        "gloss": "Город Шанхай",
+        "id": "lm-cn-yuyuan",
+        "zh": "上海"
+      },
+      {
+        "gloss": "Город Уси",
+        "id": "lm-cn-jichang-garden",
+        "zh": "无锡"
+      },
+      {
+        "gloss": "Город Фошань",
+        "id": "lm-cn-qinghui-garden",
+        "zh": "佛山"
+      },
+      {
+        "gloss": "Город Гуанчжоу",
+        "id": "lm-cn-yuyin-shanfang",
+        "zh": "广州"
+      },
+      {
+        "gloss": "Город Дунгуань",
+        "id": "lm-cn-dongguan-keyuan",
+        "zh": "东莞"
+      },
+      {
+        "gloss": "Город Янчжоу",
+        "id": "lm-cn-geyuan",
+        "zh": "扬州"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В каком городе находится Летний дворец Ихэюань (颐和园)?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-dayan",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "西安市地方志办公室：大雁塔",
+        "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1802954373708996609.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "文化和旅游部：梦想丝路国际行走进西安",
+        "url": "https://www.mct.gov.cn/whzx/bnsj/dwwhllj/201507/t20150702_772780.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/1442/maps"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "浪漫中国丨世界遗产图鉴：丝绸之路：长安-天山廊道的路网 — 新华网",
+        "url": "https://www.news.cn/video/20231219/6549459587c14768b61362acdb10b48f/c.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Большая пагода диких гусей (大雁塔) стоит в Сиане (西安), в монастыре Дацыэньсы. Её построили в 652 году, при Тан, чтобы хранить сутры, привезённые монахом Сюаньцзаном из Индии. Пагода входит в объект ЮНЕСКО «Шёлковые пути»."
+    },
+    "factRow": "landmarks/sacred/lm-cn-dayan",
+    "id": "landmarks-q96",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-dayan",
+        "zh": "西安"
+      },
+      {
+        "gloss": "Город Пекин",
+        "id": "lm-cn-tiantan",
+        "zh": "北京"
+      },
+      {
+        "gloss": "Город Цюйфу",
+        "id": "lm-cn-qufu-confucius",
+        "zh": "曲阜"
+      },
+      {
+        "gloss": "Город Дуньхуан",
+        "id": "lm-cn-mogao",
+        "zh": "敦煌"
+      },
+      {
+        "gloss": "Город Дэнфэн",
+        "id": "lm-cn-shaolin",
+        "zh": "登封"
+      },
+      {
+        "gloss": "Город Лоян",
+        "id": "lm-cn-longmen",
+        "zh": "洛阳"
+      },
+      {
+        "gloss": "Город Датун",
+        "id": "lm-cn-yungang",
+        "zh": "大同"
+      },
+      {
+        "gloss": "Город Лхаса",
+        "id": "lm-cn-jokhang",
+        "zh": "拉萨"
+      },
+      {
+        "gloss": "Город Шигадзе",
+        "id": "lm-cn-tashilhunpo",
+        "zh": "日喀则"
+      },
+      {
+        "gloss": "Уезд Хуньюань",
+        "id": "lm-cn-hanging-temple",
+        "zh": "浑源"
+      },
+      {
+        "gloss": "Уезд Утай",
+        "id": "lm-cn-foguang",
+        "zh": "五台"
+      },
+      {
+        "gloss": "Уезд Инсянь",
+        "id": "lm-cn-yingxian",
+        "zh": "应县"
+      },
+      {
+        "gloss": "Город Сучжоу",
+        "id": "lm-cn-hanshan",
+        "zh": "苏州"
+      },
+      {
+        "gloss": "Город Ханчжоу",
+        "id": "lm-cn-lingyin",
+        "zh": "杭州"
+      },
+      {
+        "gloss": "Город Цюаньчжоу",
+        "id": "lm-cn-quanzhou-kaiyuan",
+        "zh": "泉州"
+      },
+      {
+        "gloss": "Город Сямэнь",
+        "id": "lm-cn-nanputuo",
+        "zh": "厦门"
+      },
+      {
+        "gloss": "Уезд Сяхэ",
+        "id": "lm-cn-labrang",
+        "zh": "夏河"
+      },
+      {
+        "gloss": "Чунцин — город центрального подчинения на юго-западе Китая",
+        "id": "lm-cn-dazu",
+        "zh": "重庆"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В каком городе стоит Большая пагода диких гусей (大雁塔)?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-mogao",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "敦煌研究院：莫高窟简介",
+        "url": "https://www.dha.ac.cn/info/1425/3659.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "UNESCO：莫高窟",
+        "url": "https://whc.unesco.org/zh/list/440"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Mogao Caves — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/440/"
+      }
+    ],
+    "explanation": {
+      "ru": "Пещеры Могао (莫高窟), «пещеры тысячи Будд», находятся в 25 км к юго-востоку от Дуньхуана (敦煌) в провинции Ганьсу. Их высекали и расписывали много веков, обычно начало ведут с 366 года. Могао славится статуями и росписями; в 1987 году пещеры внесены в список Всемирного наследия ЮНЕСКО."
+    },
+    "factRow": "landmarks/sacred/lm-cn-mogao",
+    "id": "landmarks-q97",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-mogao",
+        "zh": "敦煌"
+      },
+      {
+        "gloss": "Город Пекин",
+        "id": "lm-cn-tiantan",
+        "zh": "北京"
+      },
+      {
+        "gloss": "Город Цюйфу",
+        "id": "lm-cn-qufu-confucius",
+        "zh": "曲阜"
+      },
+      {
+        "gloss": "Город Дэнфэн",
+        "id": "lm-cn-shaolin",
+        "zh": "登封"
+      },
+      {
+        "gloss": "Город Лоян",
+        "id": "lm-cn-longmen",
+        "zh": "洛阳"
+      },
+      {
+        "gloss": "Город Датун",
+        "id": "lm-cn-yungang",
+        "zh": "大同"
+      },
+      {
+        "gloss": "Город Лхаса",
+        "id": "lm-cn-jokhang",
+        "zh": "拉萨"
+      },
+      {
+        "gloss": "Город Шигадзе",
+        "id": "lm-cn-tashilhunpo",
+        "zh": "日喀则"
+      },
+      {
+        "gloss": "Уезд Хуньюань",
+        "id": "lm-cn-hanging-temple",
+        "zh": "浑源"
+      },
+      {
+        "gloss": "Уезд Утай",
+        "id": "lm-cn-foguang",
+        "zh": "五台"
+      },
+      {
+        "gloss": "Уезд Инсянь",
+        "id": "lm-cn-yingxian",
+        "zh": "应县"
+      },
+      {
+        "gloss": "Город Сучжоу",
+        "id": "lm-cn-hanshan",
+        "zh": "苏州"
+      },
+      {
+        "gloss": "Город Ханчжоу",
+        "id": "lm-cn-lingyin",
+        "zh": "杭州"
+      },
+      {
+        "gloss": "Город Цюаньчжоу",
+        "id": "lm-cn-quanzhou-kaiyuan",
+        "zh": "泉州"
+      },
+      {
+        "gloss": "Город Сямэнь",
+        "id": "lm-cn-nanputuo",
+        "zh": "厦门"
+      },
+      {
+        "gloss": "Город Сиань",
+        "id": "lm-cn-dayan",
+        "zh": "西安"
+      },
+      {
+        "gloss": "Уезд Сяхэ",
+        "id": "lm-cn-labrang",
+        "zh": "夏河"
+      },
+      {
+        "gloss": "Чунцин — город центрального подчинения на юго-западе Китая",
+        "id": "lm-cn-dazu",
+        "zh": "重庆"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Возле какого города находятся пещеры Могао (莫高窟)?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-longmen",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "UNESCO：龙门石窟",
+        "url": "https://whc.unesco.org/zh/list/1003"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-17",
+        "title": "河南省政府豫台视窗：洛阳龙门石窟",
+        "url": "https://ytsc.rootinhenan.gov.cn/sitesources/ytsc/page_pc/hnly/zywh/article2e3e536f173e4a58ae57dc484166cd7c.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Longmen Grottoes — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/1003/"
+      }
+    ],
+    "explanation": {
+      "ru": "Пещеры Лунмэнь (龙门石窟) высечены в 13 км к югу от Лояна (洛阳) в провинции Хэнань. Работы начались около 493 года, когда Северная Вэй перенесла столицу в Лоян, и продолжались до Тан. Самая знаменитая скульптура — Будда Вайрочана; в 2000 году пещеры внесены в список Всемирного наследия ЮНЕСКО."
+    },
+    "factRow": "landmarks/sacred/lm-cn-longmen",
+    "id": "landmarks-q98",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-longmen",
+        "zh": "洛阳"
+      },
+      {
+        "gloss": "Город Пекин",
+        "id": "lm-cn-tiantan",
+        "zh": "北京"
+      },
+      {
+        "gloss": "Город Цюйфу",
+        "id": "lm-cn-qufu-confucius",
+        "zh": "曲阜"
+      },
+      {
+        "gloss": "Город Дуньхуан",
+        "id": "lm-cn-mogao",
+        "zh": "敦煌"
+      },
+      {
+        "gloss": "Город Дэнфэн",
+        "id": "lm-cn-shaolin",
+        "zh": "登封"
+      },
+      {
+        "gloss": "Город Датун",
+        "id": "lm-cn-yungang",
+        "zh": "大同"
+      },
+      {
+        "gloss": "Город Лхаса",
+        "id": "lm-cn-jokhang",
+        "zh": "拉萨"
+      },
+      {
+        "gloss": "Город Шигадзе",
+        "id": "lm-cn-tashilhunpo",
+        "zh": "日喀则"
+      },
+      {
+        "gloss": "Уезд Хуньюань",
+        "id": "lm-cn-hanging-temple",
+        "zh": "浑源"
+      },
+      {
+        "gloss": "Уезд Утай",
+        "id": "lm-cn-foguang",
+        "zh": "五台"
+      },
+      {
+        "gloss": "Уезд Инсянь",
+        "id": "lm-cn-yingxian",
+        "zh": "应县"
+      },
+      {
+        "gloss": "Город Сучжоу",
+        "id": "lm-cn-hanshan",
+        "zh": "苏州"
+      },
+      {
+        "gloss": "Город Ханчжоу",
+        "id": "lm-cn-lingyin",
+        "zh": "杭州"
+      },
+      {
+        "gloss": "Город Цюаньчжоу",
+        "id": "lm-cn-quanzhou-kaiyuan",
+        "zh": "泉州"
+      },
+      {
+        "gloss": "Город Сямэнь",
+        "id": "lm-cn-nanputuo",
+        "zh": "厦门"
+      },
+      {
+        "gloss": "Город Сиань",
+        "id": "lm-cn-dayan",
+        "zh": "西安"
+      },
+      {
+        "gloss": "Уезд Сяхэ",
+        "id": "lm-cn-labrang",
+        "zh": "夏河"
+      },
+      {
+        "gloss": "Чунцин — город центрального подчинения на юго-западе Китая",
+        "id": "lm-cn-dazu",
+        "zh": "重庆"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Возле какого города находятся пещеры Лунмэнь (龙门石窟)?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "lm-cn-ming-tombs",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "北京市文物局-明十三陵",
+        "url": "https://wwj.beijing.gov.cn/bjww/362771/362778/364356/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "明十三陵 — 首都之窗",
+        "url": "https://www.beijing.gov.cn/renwen/rwzyd/lyjq/4A/mssl/202210/t20221018_2838761.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Imperial Tombs of the Ming and Qing Dynasties — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/1004/"
+      }
+    ],
+    "explanation": {
+      "ru": "Гробницы тринадцати императоров Мин (明十三陵) находятся в Пекине (北京), в районе Чанпин, у подножия горы Тяньшоу к северу от центра. Самая известная из них — Чанлин, гробница императора Юнлэ. В 2003 году гробницы внесены в список Всемирного наследия ЮНЕСКО как часть «Императорских гробниц династий Мин и Цин»."
+    },
+    "factGroup": "ming-beijing-word",
+    "factRow": "landmarks/sites/lm-cn-ming-tombs",
+    "id": "landmarks-q99",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "lm-cn-ming-tombs",
+        "zh": "北京"
+      },
+      {
+        "gloss": "Сиань — город на северо-западе Китая, в провинции Шэньси",
+        "id": "lm-cn-terracotta",
+        "zh": "西安"
+      },
+      {
+        "gloss": "Пинъяо — уездный город в провинции Шаньси",
+        "id": "lm-cn-pingyao",
+        "zh": "平遥"
+      },
+      {
+        "gloss": "Лицзян — город на северо-западе провинции Юньнань",
+        "id": "lm-cn-lijiang",
+        "zh": "丽江"
+      },
+      {
+        "gloss": "Шанхай — город центрального подчинения у устья Янцзы",
+        "id": "lm-cn-bund",
+        "zh": "上海"
+      },
+      {
+        "gloss": "Харбин — главный город провинции Хэйлунцзян",
+        "id": "lm-cn-sun-island",
+        "zh": "哈尔滨"
+      },
+      {
+        "gloss": "Ухань — главный город провинции Хубэй на Янцзы",
+        "id": "lm-cn-yellow-crane",
+        "zh": "武汉"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В каком городе находятся гробницы императоров Мин (明十三陵)?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
     "topicSource": "authored"
   },
   {
@@ -56187,6 +57916,7 @@
     "explanation": {
       "ru": "«Восточным Шекспиром» (东方的莎士比亚) называют Тан Сяньцзу (汤显祖, 1550–1616) — драматурга эпохи Мин из Линьчуани. Его имя ставят рядом с Шекспиром ещё и потому, что оба умерли в 1616 году. Тан Сяньцзу — автор «Четырёх снов из Линьчуани»: в каждой из этих пьес есть сон. Самая известная из них — «Пионовая беседка» (牡丹亭)."
     },
+    "factGroup": "ming-beijing-word",
     "factRow": "literature/authors/lit-a-tangxianzu",
     "id": "literature-q37",
     "occurrences": [],
@@ -65774,6 +67504,7 @@
     "explanation": {
       "ru": "Горы и реки Гуйлиня (桂林山水) изображены на обороте купюры 20 юаней пятой серии. На лицевой стороне этой купюры — портрет Мао Цзэдуна. Нынешний выпуск купюры — 2019 года."
     },
+    "factGroup": "guilin-word",
     "factRow": "money/banknotes/cny-20",
     "id": "money-q07",
     "occurrences": [],
@@ -68442,6 +70173,7 @@
     "explanation": {
       "ru": "Мэн Цзяннюй (孟姜女) — героиня сказания «Мэн Цзяннюй оплакивает Великую стену» (孟姜女哭长城), одного из четырёх великих народных сказаний Китая. Её мужа угнали строить Великую стену, и она прошла тысячи ли, чтобы его найти. Узнав, что муж погиб, она плакала так горько, что стена обрушилась. Со времён Тан действие сказания относят к эпохе Цинь, а стену называют Циньской."
     },
+    "factGroup": "great-wall-word",
     "factRow": "myths/figures/fig-mengjiangnu",
     "id": "myths-q19",
     "occurrences": [],
@@ -72313,6 +74045,279 @@
   },
   {
     "answer": {
+      "optionId": "mtn-taishan",
+      "state": "verified"
+    },
+    "dossier": "nature",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-18",
+        "title": "“双遗产”名山在中国——泰山 — 新华网",
+        "url": "http://www.news.cn/culture/20220607/02afccab91a44ee1b2478afe0a5ab6a6/c.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-18",
+        "title": "天下之“道”·第6期|海拔不算高地位却很高的山东泰山 — 生态中国网",
+        "url": "https://www.eco.gov.cn/index.php/news_info/48869.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-18",
+        "title": "旅游天地之泰山 — 山东省民政厅",
+        "url": "http://mzt.shandong.gov.cn/art/2011/12/12/art_92441_10297372.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Китай — список Всемирного наследия (страница государства-участника) — ЮНЕСКО",
+        "url": "https://whc.unesco.org/en/statesparties/cn"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Mount Taishan — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/437/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "新华视点丨守护双遗瑰宝 绘就生态文旅共生新画卷 — 新华网",
+        "url": "https://www.news.cn/politics/20260617/85fb8dfd6e9743a186783f66c62b9eeb/c.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Гора Тайшань (泰山) в провинции Шаньдун в 1987 году первой в Китае внесена в список Всемирного наследия ЮНЕСКО как объект и культурного, и природного наследия. Это Восточный пик и «глава» пяти священных гор. Императоры веками совершали на ней обряд фэншань (封禅)."
+    },
+    "factRow": "nature/mountains/mtn-taishan",
+    "id": "nature-q156",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "mtn-taishan",
+        "zh": "泰山"
+      },
+      {
+        "gloss": "Куньлунь — хребет на западе Китая длиной свыше 2500 км",
+        "id": "mtn-kunlun",
+        "zh": "昆仑山"
+      },
+      {
+        "gloss": "Циньлин — хребет в Шэньси, граница Севера и Юга Китая",
+        "id": "mtn-qinling",
+        "zh": "秦岭"
+      },
+      {
+        "gloss": "Чанбайшань — вулканическая гора на границе Китая и КНДР, в Цзилине",
+        "id": "mtn-changbai",
+        "zh": "长白山"
+      },
+      {
+        "gloss": "Хуашань — Западный пик пяти священных гор, в Шэньси",
+        "id": "mtn-huashan",
+        "zh": "华山"
+      },
+      {
+        "gloss": "Хэншань в Хунани — Южный пик пяти священных гор",
+        "id": "mtn-hengshan-hunan",
+        "zh": "衡山"
+      },
+      {
+        "gloss": "Хэншань в Шаньси — Северный пик пяти священных гор",
+        "id": "mtn-hengshan-shanxi",
+        "zh": "恒山"
+      },
+      {
+        "gloss": "Цзюхуашань — буддийская гора в Аньхое, высшая точка — 1344 м",
+        "id": "mtn-jiuhuashan",
+        "zh": "九华山"
+      },
+      {
+        "gloss": "Путошань — остров с буддийскими храмами у берегов Чжэцзяна",
+        "id": "mtn-putuoshan",
+        "zh": "普陀山"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какая гора первой в Китае внесена в список ЮНЕСКО как объект культурного и природного наследия (世界文化与自然双重遗产)?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "sc-wulingyuan",
+      "state": "verified"
+    },
+    "dossier": "nature",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "Wulingyuan Scenic and Historic Interest Area — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/640/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "世界自然遗产地武陵源的生态“加减法” — 新华网",
+        "url": "http://www.news.cn/2022-06/11/c_1128733078.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "全球连线丨天空之眼瞰武陵源 — 新华网",
+        "url": "http://www.news.cn/local/2022-04/29/c_1128609966.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Живописный район Улинъюань (武陵源) находится в городе Чжанцзяцзе на северо-западе провинции Хунань (湖南). Здесь стоят более 3000 узких песчаниковых столбов и пиков, многие выше 200 м. В 1992 году район внесён в список Всемирного природного наследия ЮНЕСКО."
+    },
+    "factGroup": "province-names-river-lake",
+    "factRow": "nature/scenic/sc-wulingyuan",
+    "id": "nature-q157",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "sc-wulingyuan",
+        "zh": "湖南"
+      },
+      {
+        "gloss": "Сычуань — провинция в верховьях Янцзы на юго-западе Китая, центр — Чэнду",
+        "id": "sc-jiuzhaigou",
+        "zh": "四川"
+      },
+      {
+        "gloss": "Гуанси — автономный район на юге Китая, центр — Наньнин",
+        "id": "sc-guilin",
+        "zh": "广西"
+      },
+      {
+        "gloss": "Юньнань — пограничная провинция на юго-западе Китая, центр — Куньмин",
+        "id": "sc-shilin",
+        "zh": "云南"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В какой провинции находится район Улинъюань (武陵源) с каменными столбами Чжанцзяцзе?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "sc-guilin",
+      "state": "verified"
+    },
+    "dossier": "nature",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "South China Karst — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/1248/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "中国之城丨桂林：山水是这座城市当之无愧的主角 — 新华网",
+        "url": "http://www.news.cn/20250327/aaf804ce3623437fac7fa39185a123f2/c.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Карстовые пейзажи Гуйлиня (桂林山水) находятся в Гуанси-Чжуанском автономном районе (广西): остроконечные горы-башни стоят вдоль реки Лицзян. Пословица говорит: «Пейзажи Гуйлиня — первые в Поднебесной». С 2014 года Гуйлинь входит в объект Всемирного природного наследия ЮНЕСКО «Южно-Китайский карст»."
+    },
+    "factGroup": "guilin-word",
+    "factRow": "nature/scenic/sc-guilin",
+    "id": "nature-q158",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "sc-guilin",
+        "zh": "广西"
+      },
+      {
+        "gloss": "Сычуань — провинция в верховьях Янцзы на юго-западе Китая, центр — Чэнду",
+        "id": "sc-jiuzhaigou",
+        "zh": "四川"
+      },
+      {
+        "gloss": "Хунань — провинция, где лежит озеро Дунтинху",
+        "id": "sc-wulingyuan",
+        "zh": "湖南"
+      },
+      {
+        "gloss": "Юньнань — пограничная провинция на юго-западе Китая, центр — Куньмин",
+        "id": "sc-shilin",
+        "zh": "云南"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В каком регионе Китая находятся карстовые пейзажи Гуйлиня (桂林山水)?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "sc-shilin",
+      "state": "verified"
+    },
+    "dossier": "nature",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "South China Karst — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/1248/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-23",
+        "title": "走进世界自然遗产地云南石林 — 新华网",
+        "url": "http://www.news.cn/local/2022-08/22/c_1128936803.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Каменный лес (石林) — карстовое плато в Шилинь-Иском автономном уезде под Куньмином в провинции Юньнань (云南). Здесь тесно стоят высокие каменные пики и гребни. В 2007 году Каменный лес вошёл в объект Всемирного природного наследия ЮНЕСКО «Южно-Китайский карст»."
+    },
+    "factRow": "nature/scenic/sc-shilin",
+    "id": "nature-q159",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "sc-shilin",
+        "zh": "云南"
+      },
+      {
+        "gloss": "Сычуань — провинция в верховьях Янцзы на юго-западе Китая, центр — Чэнду",
+        "id": "sc-jiuzhaigou",
+        "zh": "四川"
+      },
+      {
+        "gloss": "Хунань — провинция, где лежит озеро Дунтинху",
+        "id": "sc-wulingyuan",
+        "zh": "湖南"
+      },
+      {
+        "gloss": "Гуанси — автономный район на юге Китая, центр — Наньнин",
+        "id": "sc-guilin",
+        "zh": "广西"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В какой провинции находится Каменный лес (石林)?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
       "optionId": "wat-talimuhe",
       "state": "verified"
     },
@@ -74548,6 +76553,7 @@
     "explanation": {
       "ru": "Вместе с Великой стеной и Великим каналом тремя великими древними сооружениями Китая называют кяризы (坎儿井). Это подземная оросительная система засушливого Синьцзяна, особенно Турфанской котловины: вертикальные колодцы, подземные и открытые каналы и пруды-накопители, по которым вода самотёком выходит на поля. По данным Синьхуа, в Синьцзяне сохранилось более 1500 кяризов, из них свыше 1100 — в Турфане. Министерство сельского хозяйства КНР называет их крупнейшей в мире подземной оросительной системой общей длиной около 5000 км."
     },
+    "factGroup": "great-wall-word",
     "factRow": "nature/engineering/eng-karez",
     "id": "nature-q70",
     "occurrences": [],
