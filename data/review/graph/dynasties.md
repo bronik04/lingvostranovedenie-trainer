@@ -1,3 +1,15 @@
 # Династии и правители
 
-Каркас не утверждён.
+[[dynasties.dyn-han]]
+[[dynasties.dyn-tang]]
+[[dynasties.dyn-yuan]]
+[[dynasties.dyn-ming]]
+[[dynasties.dyn-qing]]
+[[dynasties.dyn-xia]]
+[[dynasties.dyn-shang]]
+[[dynasties.dyn-xizhou]]
+[[dynasties.dyn-dongzhou]]
+[[dynasties.dyn-qin]]
+[[dynasties.dyn-sui]]
+[[dynasties.dyn-beisong]]
+[[dynasties.dyn-nansong]]
