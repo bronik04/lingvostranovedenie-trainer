@@ -13,6 +13,10 @@
         "dates": "ru",
         "description": "ru"
       },
+      "sides": [
+        "city",
+        "era"
+      ],
       "required": [
         "name",
         "country",
@@ -76,7 +80,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lm-cn-shenyang-gugong",
@@ -241,7 +246,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lm-cn-potala",
@@ -289,7 +295,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lm-cn-norbulingka",
@@ -1129,6 +1136,10 @@
         "dates": "ru",
         "description": "ru"
       },
+      "sides": [
+        "city",
+        "era"
+      ],
       "required": [
         "name",
         "country",
@@ -1192,7 +1203,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lm-cn-liuyuan",
@@ -1522,7 +1534,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lm-cn-yuanmingyuan",
@@ -1578,7 +1591,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lm-cn-yuyuan",
@@ -2426,6 +2440,10 @@
         "dates": "ru",
         "description": "ru"
       },
+      "sides": [
+        "city",
+        "era"
+      ],
       "required": [
         "name",
         "country",
@@ -2496,7 +2514,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lm-cn-qufu-confucius",
@@ -2561,7 +2580,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lm-cn-mogao",
@@ -2616,7 +2636,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lm-cn-yonghe",
@@ -2726,7 +2747,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lm-cn-longmen",
@@ -2781,7 +2803,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lm-cn-yungang",
@@ -2836,7 +2859,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lm-cn-jokhang",
@@ -3434,7 +3458,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lm-cn-xiaoyan",
@@ -4116,6 +4141,10 @@
         "dates": "ru",
         "description": "ru"
       },
+      "sides": [
+        "city",
+        "era"
+      ],
       "required": [
         "name",
         "country",
@@ -4179,7 +4208,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lm-cn-nanjing-wall",

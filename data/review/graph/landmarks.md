@@ -1,3 +1,16 @@
 # Достопримечательности и архитектура
 
-Каркас не утверждён.
+[[landmarks.lm-cn-beijing-gugong]]
+[[landmarks.lm-cn-chengde-resort]]
+[[landmarks.lm-cn-potala]]
+[[landmarks.lm-cn-zhuozheng-garden]]
+[[landmarks.lm-cn-summer-palace-garden]]
+[[landmarks.lm-cn-yuanmingyuan]]
+[[landmarks.lm-cn-tiantan]]
+[[landmarks.lm-cn-qufu-confucius]]
+[[landmarks.lm-cn-mogao]]
+[[landmarks.lm-cn-shaolin]]
+[[landmarks.lm-cn-longmen]]
+[[landmarks.lm-cn-yungang]]
+[[landmarks.lm-cn-dayan]]
+[[landmarks.lm-cn-xian-wall]]
