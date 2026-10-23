@@ -2,6 +2,8 @@
 
 Тема: [[nature]]
 
+Не хватает сторон: unesco
+
 Связи:
 - [[provinces.prov-xinjiang]]
 

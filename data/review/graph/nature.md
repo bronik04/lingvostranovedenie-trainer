@@ -58,3 +58,8 @@
 [[nature.eng-qingzang-railway]]
 [[nature.eng-fast]]
 [[nature.eng-karez]]
+[[nature.sc-jiuzhaigou]]
+[[nature.sc-wulingyuan]]
+[[nature.sc-guilin]]
+[[nature.sc-shilin]]
+[[nature.sc-huanglong]]
