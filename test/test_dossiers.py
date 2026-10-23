@@ -341,6 +341,41 @@ class ValidateQuestionsTest(unittest.TestCase):
         self.assertRejects([question(fact=fact, questionRu='На купюре какого номинала 2019 года изображён этот цветок?')],
                            'не называет значение given')
 
+    def test_wrong_option_of_a_given_question_must_differ_in_the_given_column(self):
+        # «что из этого внесено в список»: строка с тем же given или без ячейки given — второй верный ответ
+        fact = {'table': 'banknotes', 'row': 'cny-50', 'ask': 'denomination', 'given': 'flower',
+                'where': {'currency': '人民币'}}
+        text = 'На купюре какого номинала выпуска 2019 года изображён цветок 菊花?'
+        same = dossier()
+        row(same, 'cny-10')['flower'] = cell('菊花', ['хризантема'], gloss='Хризантема — ещё раз')
+        self.assertRejects([question(fact=fact, questionRu=text)], "та же ячейка flower '菊花': ['cny-10']", same)
+        self.assertEqual(self.errors([question(fact=fact, questionRu=text, exclude=['cny-10'])], same), [])
+        # пустая ячейка опасна, когда значение given — общее (колонка-набор вроде unesco)
+        bare = copy.deepcopy(same)
+        row(bare, 'cny-5').pop('flower')
+        self.assertRejects([question(fact=fact, questionRu=text, exclude=['cny-10'])],
+                           "нет ячейки flower — не проверить: ['cny-5']", bare)
+        left = self.errors([question(fact=fact, questionRu=text, exclude=['cny-10', 'cny-5'])], bare)
+        self.assertFalse([error for error in left if 'ячейк' in error], left)
+
+    def test_missing_given_cell_is_fine_when_the_given_value_is_unique(self):
+        # значение given одно на таблицу (название, прозвище) — строка без ячейки им быть не может
+        data = dossier()
+        row(data, 'cny-5').pop('flower')
+        fact = {'table': 'banknotes', 'row': 'cny-50', 'ask': 'denomination', 'given': 'flower',
+                'where': {'currency': '人民币'}}
+        named = question(fact=fact, questionRu='На купюре какого номинала выпуска 2019 года изображён цветок 菊花?')
+        self.assertEqual(self.errors([named], data), [])
+
+    def test_given_name_does_not_check_wrong_options(self):
+        # given: name только называет строку — у соседей имени может не быть
+        data = dossier()
+        data['tables']['banknotes']['columns']['name'] = 'zh'
+        row(data, 'cny-50')['name'] = cell('伍拾圆')
+        fact = {'table': 'banknotes', 'row': 'cny-50', 'ask': 'flower', 'given': 'name', 'where': {'currency': '人民币'}}
+        named = question(fact=fact, questionRu='Какой цветок изображён на купюре 伍拾圆 выпуска 2019 года?')
+        self.assertEqual(self.errors([named], data), [])
+
     def test_dated_table_needs_a_year_or_series_in_the_question(self):
         self.assertRejects([question(questionRu='Какой цветок изображён на лицевой стороне купюры 20 юаней?')],
                            'год или серию')
