@@ -2,7 +2,7 @@
 
 Файл пишет сборка (`scripts/network.py`). Ядро размечается в таблицах досье: `core` у строки, `sides` у таблицы. Граф для Obsidian — папка `data/review/graph/`: сборка каждый раз стирает в ней все заметки `*.md` и пишет заново, поэтому свои заметки в эту папку не кладите.
 
-Досье: 15, с утверждённым каркасом: 2.
+Досье: 15, с утверждённым каркасом: 3.
 
 ## Олимпиада по годам
 
@@ -245,13 +245,116 @@
 
 ### Природа и инженерия (`nature`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `waters`
 
-- строк: 116
-- принятых вопросов: 83
-- строк с вопросом: 79
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 3
-- встроено олимпиадных: 16
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | mouth | nickname | feature | другие | олимпиада |
+|---|---|---|---|---|---|
+| wat-changjiang | 1 | 1 | — | 1 | да |
+| wat-huanghe | 1 | — | — | 1 | да |
+| wat-zhujiang | — | × | — | — | да |
+| wat-heilongjiang | 1 | × | — | — | прогноз |
+| wat-huaihe | — | × | — | — | прогноз |
+| wat-lancangjiang | — | — | — | 1 | прогноз |
+| wat-yarlung | — | × | — | — | прогноз |
+| wat-talimuhe | × | × | — | 1 | прогноз |
+| wat-dayunhe | × | × | — | — | да |
+
+#### Таблица `lakes`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | province | feature | другие | олимпиада |
+|---|---|---|---|---|
+| lake-poyanghu | — | — | — | да |
+| lake-dongtinghu | 1 | — | 1 | прогноз |
+| lake-taihu | 1 | — | — | да |
+| lake-qinghaihu | — | 1 | — | да |
+| lake-xihu | — | × | — | да |
+
+#### Таблица `seas`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | province | feature | другие | олимпиада |
+|---|---|---|---|---|
+| sea-bohai | × | — | 1 | да |
+| sea-huanghai | × | × | 1 | да |
+| sea-donghai | × | — | 1 | да |
+| sea-nanhai | × | — | 1 | да |
+| sea-taiwandao | — | — | 1 | да |
+| sea-hainandao | — | — | 1 | прогноз |
+| sea-chongmingdao | — | — | 1 | прогноз |
+
+#### Таблица `mountains`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | title | province | feature | другие | олимпиада |
+|---|---|---|---|---|---|
+| mtn-ximalaya | × | × | — | — | прогноз |
+| mtn-zhumulangma | × | — | — | 1 | да |
+| mtn-kunlun | × | × | 1 | — | прогноз |
+| mtn-tianshan | × | 1 | × | — | прогноз |
+| mtn-qinling | × | — | — | 1 | прогноз |
+| mtn-changbai | × | — | — | 1 | прогноз |
+| mtn-taishan | — | 1 | 1 | — | прогноз |
+| mtn-huashan | 1 | — | × | — | прогноз |
+| mtn-hengshan-hunan | — | — | × | 1 | прогноз |
+| mtn-hengshan-shanxi | 1 | — | × | — | прогноз |
+| mtn-songshan | — | 1 | × | — | прогноз |
+| mtn-wutaishan | × | 1 | × | — | прогноз |
+| mtn-emeishan | × | — | × | 1 | да |
+| mtn-jiuhuashan | × | 1 | × | — | прогноз |
+| mtn-putuoshan | × | — | × | — | да |
+| mtn-huangshan | × | 1 | — | 1 | прогноз |
+
+#### Таблица `landforms`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | nickname | province | другие | олимпиада |
+|---|---|---|---|---|
+| land-qingzang | — | × | 1 | да |
+| land-yungui | × | × | 1 | прогноз |
+| land-huangtu | × | × | 1 | прогноз |
+| land-neimenggu | × | — | — | прогноз |
+| land-talimu | × | — | 1 | прогноз |
+| land-zhungeer | × | — | 1 | прогноз |
+| land-chaidamu | 1 | — | — | прогноз |
+| land-sichuan | 1 | — | — | прогноз |
+| land-taklamakan | 1 | 1 | — | прогноз |
+| land-dongbei | × | × | — | прогноз |
+| land-huabei | × | × | — | прогноз |
+| land-changjiang | 1 | × | 1 | прогноз |
+| land-tulufan | — | — | — | да |
+
+#### Таблица `engineering`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | river | province | era | feature | другие | олимпиада |
+|---|---|---|---|---|---|---|
+| eng-dujiangyan | 1 | — | — | × | — | прогноз |
+| eng-sanxia | 1 | — | × | — | 1 | прогноз |
+| eng-nanshuibeidiao | × | × | × | — | — | прогноз |
+| eng-gangzhuao | × | × | × | — | 1 | прогноз |
+| eng-zhaozhouqiao | × | 1 | — | × | — | прогноз |
+| eng-qingzang-railway | × | × | × | — | 1 | прогноз |
+| eng-fast | × | 1 | × | — | — | прогноз |
+| eng-karez | × | 1 | × | × | 1 | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- nature-q104 — Какая река течёт с юга на север по границе Китая и России и впадает в главную пограничную реку двух стран?
+- nature-q106 — Какая река — единственный водный путь из внутренних районов Китая в Японское море?
+- nature-q107 — Какое озеро — крупнейшее в Азии пресное пограничное озеро (亚洲最大的淡水界湖)?
+- nature-q45 — Какие горы называют «хребтом Поднебесной» (天下之脊)?
+
+Российские строки (разбирает российская тема): вопросов 24.
 
 ### Живопись и каллиграфия (`painting`)
 
@@ -373,6 +476,21 @@
 - cuisine/sweets/cu-cn-tanghulu
 - cuisine/teatypes/tt-white
 - cuisine/teatypes/tt-yellow
+- nature/engineering/eng-gangzhuao
+- nature/engineering/eng-nanshuibeidiao
+- nature/engineering/eng-qingzang-railway
+- nature/landforms/land-changjiang
+- nature/landforms/land-dongbei
+- nature/landforms/land-huabei
+- nature/landforms/land-huangtu
+- nature/landforms/land-qingzang
+- nature/landforms/land-yungui
+- nature/mountains/mtn-kunlun
+- nature/mountains/mtn-ximalaya
+- nature/seas/sea-huanghai
+- nature/waters/wat-dayunhe
+- nature/waters/wat-talimuhe
+- nature/waters/wat-yarlung
 - provinces/provinces/prov-aomen
 - provinces/provinces/prov-ningxia
 
@@ -381,26 +499,16 @@
 - cuisine/savory/cu-cn-yuxiang-rousi → holidays/customs/cus-yuxiangrousi
 - cuisine/staples/cu-cn-jiaozi → holidays/customs/cus-jiaozi
 - cuisine/sweets/cu-cn-tangyuan → holidays/customs/cus-tangyuan
-- provinces/cities/city-chongqing → nature/waters/wat-changjiang
-- provinces/cities/city-guangzhou → nature/waters/wat-zhujiang
-- provinces/cities/city-haerbin → nature/waters/wat-songhuajiang
-- provinces/cities/city-hangzhou → nature/waters/wat-qiantangjiang
-- provinces/cities/city-jinan → nature/waters/wat-huanghe
-- provinces/cities/city-nanjing → nature/waters/wat-changjiang
-- provinces/cities/city-shanghai → nature/waters/wat-huangpujiang
-- provinces/cities/city-tianjin → nature/waters/wat-haihe
-- provinces/cities/city-wuhan → nature/waters/wat-changjiang
-- provinces/provinces/prov-hebei → nature/waters/wat-huanghe
-- provinces/provinces/prov-heilongjiang → nature/waters/wat-heilongjiang
-- provinces/provinces/prov-henan → nature/waters/wat-huanghe
-- provinces/provinces/prov-hubei → nature/lakes/lake-dongtinghu
-- provinces/provinces/prov-hunan → nature/lakes/lake-dongtinghu
-- provinces/provinces/prov-qinghai → nature/lakes/lake-qinghaihu
-- provinces/provinces/prov-shandong → nature/mountains/mtn-taihang
-- provinces/provinces/prov-shanxi → nature/mountains/mtn-taihang
-- provinces/provinces/prov-zhejiang → nature/waters/wat-qiantangjiang
 
 ### Ссылка из ядра ведёт в строку вне ядра
 
+- nature/waters/wat-heilongjiang → nature/seas/sea-ru-okhotsk
+- provinces/cities/city-haerbin → nature/waters/wat-songhuajiang
+- provinces/cities/city-hangzhou → nature/waters/wat-qiantangjiang
+- provinces/cities/city-shanghai → nature/waters/wat-huangpujiang
+- provinces/cities/city-tianjin → nature/waters/wat-haihe
 - provinces/provinces/prov-guangxi → provinces/cities/city-nanning
 - provinces/provinces/prov-hunan → provinces/cities/city-changsha
+- provinces/provinces/prov-shandong → nature/mountains/mtn-taihang
+- provinces/provinces/prov-shanxi → nature/mountains/mtn-taihang
+- provinces/provinces/prov-zhejiang → nature/waters/wat-qiantangjiang

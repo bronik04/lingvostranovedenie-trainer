@@ -595,10 +595,12 @@ def _answer_column(fact: dict) -> str:
 
 def fact_place(question: dict, dossier: dict) -> tuple[str, str]:
     """Строка ответа (`досье/таблица/строка`) и сторона, с которой вопрос спрашивает строку: у
-    обратного вопроса («какая провинция сокращённо называется 豫?») это `given`, иначе колонка ответа."""
+    обратного вопроса («какая провинция сокращённо называется 豫?») это `given`, иначе колонка ответа.
+    `given: name` только называет строку («в какой провинции гора 嵩山?») — сторона тогда колонка ответа."""
     fact = question['fact']
     row_id, _ = answer_cell(question, dossier)
-    return f'{dossier["id"]}/{fact["table"]}/{row_id}', fact.get('given') or _answer_column(fact)
+    given = fact.get('given')
+    return f'{dossier["id"]}/{fact["table"]}/{row_id}', given if given and given != 'name' else _answer_column(fact)
 
 
 def _answer_place(question: dict, dossier: dict) -> tuple[str, str, dict[str, set[str]]]:

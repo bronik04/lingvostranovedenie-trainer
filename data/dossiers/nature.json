@@ -14,6 +14,11 @@
         "era": "zh",
         "about": "ru"
       },
+      "sides": [
+        "mouth",
+        "nickname",
+        "feature"
+      ],
       "rows": [
         {
           "id": "wat-changjiang",
@@ -92,7 +97,8 @@
             "2015-16-reg-2",
             "2020-21-zak-qec0067",
             "2025-26-reg-10"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "wat-huanghe",
@@ -172,7 +178,8 @@
             "2019-20-reg-5",
             "2018-19-shk-5",
             "2018-19-mun-52"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "wat-zhujiang",
@@ -241,7 +248,8 @@
           ],
           "olympiad": [
             "2023-24-zak-1"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "wat-heilongjiang",
@@ -300,7 +308,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "wat-songhuajiang",
@@ -434,7 +443,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "wat-haihe",
@@ -688,7 +698,8 @@
           ],
           "olympiad": [
             "addition-b1-01"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "wat-nujiang",
@@ -804,7 +815,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "wat-talimuhe",
@@ -863,7 +875,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "mouth"
+          ]
         },
         {
           "id": "wat-qiantangjiang",
@@ -1117,7 +1133,8 @@
           ],
           "olympiad": [
             "2018-19-zak-10"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "wat-lingqu",
@@ -1663,6 +1680,10 @@
         "feature": "zh",
         "about": "ru"
       },
+      "sides": [
+        "province",
+        "feature"
+      ],
       "rows": [
         {
           "id": "lake-poyanghu",
@@ -1731,7 +1752,8 @@
           "olympiad": [
             "2017-18-zak-10",
             "2022-23-reg-3"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "lake-dongtinghu",
@@ -1800,7 +1822,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lake-taihu",
@@ -1851,7 +1874,8 @@
           ],
           "olympiad": [
             "2022-23-zak-4"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "lake-qinghaihu",
@@ -1905,7 +1929,8 @@
           ],
           "olympiad": [
             "2024-25-pri-34"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "lake-jingpohu",
@@ -2029,7 +2054,8 @@
           ],
           "olympiad": [
             "2015-16-shk-65"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "lake-namtso",
@@ -2401,6 +2427,10 @@
         "feature": "zh",
         "about": "ru"
       },
+      "sides": [
+        "province",
+        "feature"
+      ],
       "rows": [
         {
           "id": "sea-bohai",
@@ -2461,7 +2491,8 @@
           ],
           "olympiad": [
             "2024-25-mun-34"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "sea-huanghai",
@@ -2514,7 +2545,8 @@
           "olympiad": [
             "2025-26-mun-6",
             "2024-25-mun-34"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "sea-donghai",
@@ -2567,7 +2599,8 @@
           ],
           "olympiad": [
             "2024-25-mun-34"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "sea-nanhai",
@@ -2627,7 +2660,8 @@
           ],
           "olympiad": [
             "2024-25-mun-34"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "sea-taiwandao",
@@ -2688,7 +2722,8 @@
           ],
           "olympiad": [
             "2015-16-mun-10"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "sea-hainandao",
@@ -2741,7 +2776,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "sea-chongmingdao",
@@ -2800,7 +2836,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "sea-changxingdao",
@@ -3641,6 +3678,11 @@
         "feature": "zh",
         "about": "ru"
       },
+      "sides": [
+        "title",
+        "province",
+        "feature"
+      ],
       "rows": [
         {
           "id": "mtn-ximalaya",
@@ -3683,7 +3725,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "mtn-zhumulangma",
@@ -3752,7 +3795,8 @@
           ],
           "olympiad": [
             "2019-20-reg-7"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "mtn-kunlun",
@@ -3795,7 +3839,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "mtn-tianshan",
@@ -3846,7 +3891,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "mtn-qinling",
@@ -3897,7 +3943,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "mtn-taihang",
@@ -4006,7 +4053,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "mtn-taishan",
@@ -4079,7 +4127,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "mtn-huashan",
@@ -4144,7 +4193,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "feature"
+          ]
         },
         {
           "id": "mtn-hengshan-hunan",
@@ -4219,6 +4272,10 @@
           ],
           "olympiad": [
             "addition-b1-04"
+          ],
+          "core": true,
+          "skipSides": [
+            "feature"
           ]
         },
         {
@@ -4298,7 +4355,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "feature"
+          ]
         },
         {
           "id": "mtn-songshan",
@@ -4364,7 +4425,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "mtn-wutaishan",
@@ -4437,8 +4499,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": [
-            "addition-b2-10"
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "title",
+            "feature"
           ]
         },
         {
@@ -4514,6 +4579,10 @@
           ],
           "olympiad": [
             "2018-19-reg-4"
+          ],
+          "core": true,
+          "skipSides": [
+            "title"
           ]
         },
         {
@@ -4580,7 +4649,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "title"
+          ]
         },
         {
           "id": "mtn-putuoshan",
@@ -4656,6 +4729,11 @@
           ],
           "olympiad": [
             "2023-24-shk-35"
+          ],
+          "core": true,
+          "skipSides": [
+            "title",
+            "feature"
           ]
         },
         {
@@ -4708,7 +4786,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "mtn-ru-ural",
@@ -5049,6 +5128,10 @@
         "feature": "zh",
         "about": "ru"
       },
+      "sides": [
+        "nickname",
+        "province"
+      ],
       "rows": [
         {
           "id": "land-qingzang",
@@ -5109,7 +5192,8 @@
           "olympiad": [
             "2016-17-zak-4",
             "2018-19-reg-2"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "land-yungui",
@@ -5166,7 +5250,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "land-huangtu",
@@ -5216,7 +5301,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "land-neimenggu",
@@ -5267,7 +5353,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "land-talimu",
@@ -5326,7 +5413,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "land-zhungeer",
@@ -5385,7 +5473,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "land-chaidamu",
@@ -5450,7 +5539,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "land-sichuan",
@@ -5518,7 +5608,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "land-taklamakan",
@@ -5590,7 +5681,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "land-badanjilin",
@@ -5756,7 +5848,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "land-huabei",
@@ -5807,7 +5900,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "land-changjiang",
@@ -5864,7 +5958,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "land-tulufan",
@@ -5931,7 +6026,8 @@
           ],
           "olympiad": [
             "2016-17-shk-6"
-          ]
+          ],
+          "core": true
         }
       ]
     },
@@ -5947,6 +6043,12 @@
         "feature": "zh",
         "about": "ru"
       },
+      "sides": [
+        "river",
+        "province",
+        "era",
+        "feature"
+      ],
       "rows": [
         {
           "id": "eng-dujiangyan",
@@ -6025,7 +6127,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "feature"
+          ]
         },
         {
           "id": "eng-sanxia",
@@ -6100,7 +6206,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "eng-nanshuibeidiao",
@@ -6143,7 +6250,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "eng-gangzhuao",
@@ -6186,7 +6294,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "eng-nanjing-bridge",
@@ -6323,7 +6432,12 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "river",
+            "feature"
+          ]
         },
         {
           "id": "eng-qingzang-railway",
@@ -6380,7 +6494,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "eng-jinghu-hsr",
@@ -6482,7 +6597,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "eng-karez",
@@ -6540,7 +6656,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "feature"
+          ]
         },
         {
           "id": "eng-baihetan",

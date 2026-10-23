@@ -11,6 +11,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from dossiers import REPORT_MARK, _mentions, fact_place, check_dossiers, load_removed, removed_id_errors, cross_leak_errors, dossier_paths, embed_record, original_record, dossier_records, dossier_report, is_build_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions, write_dossier_reports
 from editorial import apply_editorial, validate_editorial
 from embeds import apply_embeds, embed_errors
+from fact_groups import load_fact_groups
 
 TOPIC = 'Экономика, образование, наука и спорт'
 
@@ -250,6 +251,15 @@ class DossierRecordsTest(unittest.TestCase):
         reverse = question(fact={'table': 'banknotes', 'row': 'cny-20', 'ask': 'denomination', 'given': 'flower',
                                  'where': {'currency': '人民币'}})
         self.assertEqual(fact_place(reverse, dossier()), ('money/banknotes/cny-20', 'flower'))
+
+    def test_given_name_does_not_take_the_side(self):
+        # «В какой провинции гора 嵩山?» называет строку по имени — сторона «провинция», а не «название»
+        data = {'id': 'nature', 'title': 'Природа', 'tables': {'mountains': {
+            'columns': {'name': 'zh', 'province': 'zh'},
+            'rows': [{'id': 'mtn-songshan', 'name': {'zh': '嵩山', 'ru': []}, 'province': {'zh': '河南', 'ru': []},
+                      'sources': [], 'olympiad': []}]}}}
+        by_name = question(fact={'table': 'mountains', 'row': 'mtn-songshan', 'ask': 'province', 'given': 'name'})
+        self.assertEqual(fact_place(by_name, data), ('nature/mountains/mtn-songshan', 'province'))
 
     def test_draft_stays_out_of_the_bank(self):
         self.assertEqual(dossier_records(dossier(), [question(status='draft')]), [])
@@ -969,10 +979,12 @@ class DossierInBankTest(unittest.TestCase):
     def setUp(self):
         self.bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
         self.pairs = dossier_paths(ROOT / 'data/dossiers')
+        # как сборка: группы фактов снимают взаимные подсказки «словом» внутри досье
+        self.groups = load_fact_groups(ROOT / 'data/review/fact-groups.json')
 
     def test_accepted_questions_reach_the_bank_and_drafts_do_not(self):
         for table_path, questions_path in self.pairs:
-            data, questions = load_dossier(table_path, questions_path)
+            data, questions = load_dossier(table_path, questions_path, groups=self.groups)
             for item in questions:
                 if 'embeds' in item:
                     continue
@@ -987,7 +999,7 @@ class DossierInBankTest(unittest.TestCase):
 
     def test_accepted_embeds_reach_the_bank(self):
         for table_path, questions_path in self.pairs:
-            data, questions = load_dossier(table_path, questions_path)
+            data, questions = load_dossier(table_path, questions_path, groups=self.groups)
             for item in questions:
                 if 'embeds' not in item or item['status'] != 'accepted':
                     continue
@@ -1002,7 +1014,7 @@ class DossierInBankTest(unittest.TestCase):
     def test_links_between_dossiers_are_alive(self):
         loaded = {}
         for table_path, questions_path in self.pairs:
-            data, _ = load_dossier(table_path, questions_path)
+            data, _ = load_dossier(table_path, questions_path, groups=self.groups)
             loaded[data['id']] = data
         self.assertEqual(validate_links(loaded), [])
 
@@ -1017,7 +1029,7 @@ class DossierInBankTest(unittest.TestCase):
         # олимпиадный вопрос мог быть влит склейкой в другой — его id тогда в mergedIds
         known = set(self.bank) | {i for r in self.bank.values() for i in r.get('mergedIds', [])}
         for table_path, questions_path in self.pairs:
-            data, _ = load_dossier(table_path, questions_path)
+            data, _ = load_dossier(table_path, questions_path, groups=self.groups)
             for table in data['tables'].values():
                 for item in table['rows']:
                     for olympiad_id in item.get('olympiad', []):
