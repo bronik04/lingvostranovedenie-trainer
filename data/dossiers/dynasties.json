@@ -823,7 +823,10 @@
             ],
             "gloss": "Система уделов — чжоуские ваны жаловали земли родичам и союзникам"
           },
-          "core": true
+          "core": true,
+          "skipSides": [
+            "capital"
+          ]
         },
         {
           "id": "dyn-dongzhou",
