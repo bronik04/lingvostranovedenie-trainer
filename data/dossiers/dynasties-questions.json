@@ -13,7 +13,12 @@
     },
     "exclude": [
       "dyn-nantang",
-      "dyn-shang"
+      "dyn-shang",
+      "dyn-chunqiu",
+      "dyn-zhanguo",
+      "dyn-sanguo",
+      "dyn-nanbeichao",
+      "dyn-wudaishiguo"
     ],
     "check": {
       "verdict": "accept",
@@ -121,7 +126,10 @@
       "dyn-nantang",
       "dyn-zhou",
       "dyn-chunqiu",
-      "dyn-zhanguo"
+      "dyn-zhanguo",
+      "dyn-sanguo",
+      "dyn-nanbeichao",
+      "dyn-wudaishiguo"
     ],
     "check": {
       "verdict": "accept",
@@ -388,7 +396,12 @@
     "questionRu": "При какой династии Би Шэн изобрёл наборное книгопечатание?",
     "explanation": "Наборное книгопечатание изобрёл Би Шэн при Северной Сун (北宋, 960–1127). Столицей династии был Бяньцзин — Восточная столица, нынешний Кайфэн. Северная Сун пала в 1127 году («смута годов Цзинкан»), когда враги взяли столицу и увели в плен двух императоров.",
     "exclude": [
-      "dyn-nantang"
+      "dyn-nantang",
+      "dyn-chunqiu",
+      "dyn-zhanguo",
+      "dyn-sanguo",
+      "dyn-nanbeichao",
+      "dyn-wudaishiguo"
     ],
     "check": {
       "verdict": "accept",
@@ -1291,7 +1304,9 @@
     "questionRu": "Как называлась столица Северной Сун?",
     "explanation": "Столицей Северной Сун (960–1127) был Бяньцзин (汴京) — нынешний Кайфэн; его называли также Восточной столицей. В 1127 году чжурчжэни взяли Бяньцзин и увели в плен императоров Хуэй-цзуна и Цинь-цзуна. После этого двор ушёл на юг, и началась Южная Сун.",
     "exclude": [
-      "dyn-dongzhou"
+      "dyn-dongzhou",
+      "dyn-ming",
+      "dyn-qing"
     ],
     "check": {
       "verdict": "accept",
@@ -1366,7 +1381,10 @@
       "dyn-dongzhou",
       "dyn-zhou",
       "dyn-chunqiu",
-      "dyn-zhanguo"
+      "dyn-zhanguo",
+      "dyn-sanguo",
+      "dyn-nanbeichao",
+      "dyn-wudaishiguo"
     ],
     "check": {
       "verdict": "accept",
@@ -1392,7 +1410,10 @@
       "dyn-nantang",
       "dyn-zhou",
       "dyn-chunqiu",
-      "dyn-zhanguo"
+      "dyn-zhanguo",
+      "dyn-sanguo",
+      "dyn-nanbeichao",
+      "dyn-wudaishiguo"
     ],
     "check": {
       "verdict": "accept",
