@@ -2,7 +2,7 @@
 
 Файл пишет сборка (`scripts/network.py`). Ядро размечается в таблицах досье: `core` у строки, `sides` у таблицы. Граф для Obsidian — папка `data/review/graph/`: сборка каждый раз стирает в ней все заметки `*.md` и пишет заново, поэтому свои заметки в эту папку не кладите.
 
-Досье: 15, с утверждённым каркасом: 4.
+Досье: 15, с утверждённым каркасом: 5.
 
 ## Олимпиада по годам
 
@@ -165,13 +165,31 @@
 
 ### Династии и правители (`dynasties`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `dynasties`
 
-- строк: 74
-- принятых вопросов: 57
-- строк с вопросом: 44
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 8
-- встроено олимпиадных: 22
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | founder | capital | known | people | другие | олимпиада |
+|---|---|---|---|---|---|---|
+| dyn-han | — | × | — | × | 2 | да |
+| dyn-tang | 1 | 1 | × | × | — | прогноз |
+| dyn-yuan | 1 | 1 | — | — | 1 | да |
+| dyn-ming | 1 | 1 | 1 | × | 1 | да |
+| dyn-qing | × | × | 1 | 1 | 2 | да |
+| dyn-xia | 1 | × | × | × | 1 | да |
+| dyn-shang | 1 | × | — | × | 1 | да |
+| dyn-xizhou | 1 | × | 1 | × | — | да |
+| dyn-dongzhou | × | × | 1 | × | 1 | да |
+| dyn-qin | × | 1 | 1 | × | 1 | да |
+| dyn-sui | 1 | × | 1 | × | 1 | да |
+| dyn-beisong | 1 | 1 | — | × | 1 | прогноз |
+| dyn-nansong | × | 1 | × | × | — | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- dynasties-q24 — От названия какого народа, основавшего династию Ляо, произошло русское слово «Китай»?
 
 ### Этносы и традиционный быт (`ethnos`)
 
@@ -620,6 +638,19 @@
 - cuisine/savory/cu-cn-yuxiang-rousi → holidays/customs/cus-yuxiangrousi
 - cuisine/staples/cu-cn-jiaozi → holidays/customs/cus-jiaozi
 - cuisine/sweets/cu-cn-tangyuan → holidays/customs/cus-tangyuan
+- dynasties/dynasties/dyn-beisong → dynasties/rulers/rul-zhaokuangyin
+- dynasties/dynasties/dyn-dongzhou → dynasties/rulers/rul-zhoupingwang
+- dynasties/dynasties/dyn-han → dynasties/rulers/rul-liubang
+- dynasties/dynasties/dyn-ming → dynasties/rulers/rul-zhuyuanzhang
+- dynasties/dynasties/dyn-nansong → dynasties/rulers/rul-zhaogou
+- dynasties/dynasties/dyn-qin → dynasties/rulers/rul-qinshihuang
+- dynasties/dynasties/dyn-qing → dynasties/rulers/rul-huangtaiji
+- dynasties/dynasties/dyn-shang → dynasties/rulers/rul-shangtang
+- dynasties/dynasties/dyn-sui → dynasties/rulers/rul-yangjian
+- dynasties/dynasties/dyn-tang → dynasties/rulers/rul-liyuan
+- dynasties/dynasties/dyn-xia → dynasties/rulers/rul-yu
+- dynasties/dynasties/dyn-xizhou → dynasties/rulers/rul-zhouwuwang
+- dynasties/dynasties/dyn-yuan → dynasties/rulers/rul-hubilie
 
 ### Ссылка из ядра ведёт в строку вне ядра
 

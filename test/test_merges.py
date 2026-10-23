@@ -355,11 +355,11 @@ class MergesInBankTest(unittest.TestCase):
             self.assertEqual(len(original_record(record)['options']), expected[keep_id], keep_id)
             self.assertEqual(len(set(texts)), len(texts), keep_id)
             # группа у склеенной записи — только ради взаимной подсказки с вопросом о другом факте
-            # (решения автора 2026-10-22: порции 3–4 провинций, кухня; 2026-10-23: Потала и центр Тибета); дубль
-            # одного факта в группе ловит следующий тест
+            # (решения автора 2026-10-22: порции 3–4 провинций, кухня; 2026-10-23: Потала и центр Тибета,
+            # маньчжуры — народ династии Цин); дубль одного факта в группе ловит следующий тест
             if 'factGroup' in record:
                 self.assertIn(record['factGroup'], {'province-names-river-lake', 'beijing-tianjin-municipality',
-                                                    'potala-tibet'}, keep_id)
+                                                    'potala-tibet', 'manchu-word'}, keep_id)
             wrong = [o['zh'] for o in record['options'] if o['id'] != record['answer']['optionId']]
             for text in wrong:
                 self.assertNotIn(text, record['explanation']['ru'], keep_id)
