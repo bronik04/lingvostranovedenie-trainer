@@ -102,7 +102,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ]
         },
         {
           "id": "cr-tangsancai",
@@ -184,7 +188,12 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region",
+            "era"
+          ]
         },
         {
           "id": "cr-zisha",
@@ -263,7 +272,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ]
         },
         {
           "id": "cr-longquan",
@@ -338,7 +351,13 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "center",
+            "region",
+            "era"
+          ]
         },
         {
           "id": "cr-dehua",
@@ -961,7 +980,12 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "center",
+            "era"
+          ]
         },
         {
           "id": "cr-xiangxiu",
@@ -1035,7 +1059,12 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "center",
+            "era"
+          ]
         },
         {
           "id": "cr-shuxiu",
@@ -1098,7 +1127,12 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "center",
+            "era"
+          ]
         },
         {
           "id": "cr-yuexiu",
@@ -1159,7 +1193,12 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "center",
+            "era"
+          ]
         },
         {
           "id": "cr-guxiu",
@@ -1370,7 +1409,12 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region",
+            "era"
+          ]
         },
         {
           "id": "cr-songjin",
@@ -2679,7 +2723,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ]
         },
         {
           "id": "cr-huasi",
@@ -4595,6 +4643,11 @@
           ],
           "olympiad": []
         }
+      ],
+      "sides": [
+        "center",
+        "region",
+        "era"
       ]
     },
     "folk": {
@@ -4936,7 +4989,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "era"
+          ]
         },
         {
           "id": "fk-taohuawu",
@@ -5003,7 +5060,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "era"
+          ]
         },
         {
           "id": "fk-yangjiabu",
@@ -5902,7 +5963,12 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "center",
+            "era"
+          ]
         },
         {
           "id": "fk-qinhuai",
@@ -6285,7 +6351,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "era"
+          ]
         },
         {
           "id": "fk-beijing-fengzheng",
@@ -6569,7 +6639,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "fk-huishan",
@@ -6906,7 +6977,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "era"
+          ]
         },
         {
           "id": "fk-mianren",
@@ -7618,6 +7693,10 @@
           ],
           "olympiad": []
         }
+      ],
+      "sides": [
+        "center",
+        "era"
       ]
     }
   }
