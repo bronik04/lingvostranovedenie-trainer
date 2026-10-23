@@ -1566,7 +1566,6 @@
         "role": "ru"
       },
       "sides": [
-        "dynasty",
         "deed"
       ],
       "rows": [
@@ -1632,10 +1631,7 @@
             "2015-16-shk-59",
             "2019-20-mun-qe6c5d3"
           ],
-          "core": true,
-          "skipSides": [
-            "dynasty"
-          ]
+          "core": true
         },
         {
           "id": "rul-chongzhen",
@@ -1870,10 +1866,7 @@
           "olympiad": [
             "2021-22-shk-qadd856"
           ],
-          "core": true,
-          "skipSides": [
-            "dynasty"
-          ]
+          "core": true
         },
         {
           "id": "rul-hanwudi",
@@ -1971,10 +1964,7 @@
             }
           ],
           "olympiad": [],
-          "core": true,
-          "skipSides": [
-            "dynasty"
-          ]
+          "core": true
         },
         {
           "id": "rul-liyuan",
@@ -2197,10 +2187,7 @@
             }
           ],
           "olympiad": [],
-          "core": true,
-          "skipSides": [
-            "dynasty"
-          ]
+          "core": true
         },
         {
           "id": "rul-hubilie",
@@ -2249,10 +2236,7 @@
             }
           ],
           "olympiad": [],
-          "core": true,
-          "skipSides": [
-            "dynasty"
-          ]
+          "core": true
         },
         {
           "id": "rul-zhuyuanzhang",
@@ -2321,7 +2305,6 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "dynasty",
             "deed"
           ]
         },

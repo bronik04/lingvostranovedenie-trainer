@@ -29,7 +29,7 @@
 
 ## Таблица `rulers` — строк: 55
 
-Стороны: dynasty, deed. Строки ядра отмечены ★.
+Стороны: deed. Строки ядра отмечены ★.
 
 | id | name | country | dynasty | title | deed | role | olympiad |
 |---|---|---|---|---|---|---|---|

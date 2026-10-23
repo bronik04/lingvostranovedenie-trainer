@@ -2,8 +2,6 @@
 
 Тема: [[dynasties]]
 
-Не хватает сторон: dynasty
-
 Связи:
 - [[dynasties.dyn-qing]]
 

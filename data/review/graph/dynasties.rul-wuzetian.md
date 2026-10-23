@@ -2,7 +2,7 @@
 
 Тема: [[dynasties]]
 
-Не хватает сторон: dynasty, deed
+Не хватает сторон: deed
 
 Связи:
 - [[dynasties.dyn-tang]]

@@ -2,7 +2,7 @@
 
 Тема: [[painting]]
 
-Не хватает сторон: work, subject, era
+Не хватает сторон: work, subject
 
 Связи:
 - [[painting.art-w-benmatu]]

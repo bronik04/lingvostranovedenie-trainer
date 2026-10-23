@@ -5,7 +5,7 @@
 
 ## Таблица `authors` — строк: 57
 
-Стороны: work, era, title, alias. Строки ядра отмечены ★.
+Стороны: work, title, alias. Строки ядра отмечены ★.
 
 | id | name | country | era | title | alias | genre | work | prize | about | olympiad |
 |---|---|---|---|---|---|---|---|---|---|---|

@@ -5,7 +5,7 @@
 
 ## Таблица `painters` — строк: 45
 
-Стороны: work, subject, era. Строки ядра отмечены ★.
+Стороны: work, subject. Строки ядра отмечены ★.
 
 | id | name | country | era | genre | subject | title | group | work | about | olympiad |
 |---|---|---|---|---|---|---|---|---|---|---|

@@ -2,8 +2,6 @@
 
 Тема: [[painting]]
 
-Не хватает сторон: era
-
 Связи:
 - [[painting.art-w-qingmingshanghetu]]
 

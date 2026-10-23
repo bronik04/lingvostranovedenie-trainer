@@ -2,7 +2,7 @@
 
 Файл пишет сборка (`scripts/network.py`). Ядро размечается в таблицах досье: `core` у строки, `sides` у таблицы. Граф для Obsidian — папка `data/review/graph/`: сборка каждый раз стирает в ней все заметки `*.md` и пишет заново, поэтому свои заметки в эту папку не кладите.
 
-Досье: 15, с утверждённым каркасом: 11.
+Досье: 16, с утверждённым каркасом: 12.
 
 ## Олимпиада по годам
 
@@ -169,21 +169,21 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | dynasty | deed | другие | олимпиада |
-|---|---|---|---|---|
-| rul-qinshihuang | × | — | 2 | да |
-| rul-liubang | × | — | — | да |
-| rul-hanwudi | — | — | 1 | прогноз |
-| rul-yangjian | × | × | — | прогноз |
-| rul-tangtaizong | — | — | — | прогноз |
-| rul-wuzetian | — | — | 1 | прогноз |
-| rul-zhaokuangyin | × | — | — | прогноз |
-| rul-hubilie | × | — | — | прогноз |
-| rul-zhuyuanzhang | × | × | — | прогноз |
-| rul-kangxi | — | — | 1 | прогноз |
-| rul-qianlong | — | — | 1 | прогноз |
-| rul-puyi | — | — | 1 | да |
-| rul-cixi | — | × | 1 | прогноз |
+| строка | deed | другие | олимпиада |
+|---|---|---|---|
+| rul-qinshihuang | — | 2 | да |
+| rul-liubang | — | — | да |
+| rul-hanwudi | — | 1 | прогноз |
+| rul-yangjian | × | — | прогноз |
+| rul-tangtaizong | — | — | прогноз |
+| rul-wuzetian | — | 1 | прогноз |
+| rul-zhaokuangyin | — | — | прогноз |
+| rul-hubilie | — | — | прогноз |
+| rul-zhuyuanzhang | × | — | прогноз |
+| rul-kangxi | — | 1 | прогноз |
+| rul-qianlong | — | 1 | прогноз |
+| rul-puyi | — | 1 | да |
+| rul-cixi | × | 1 | прогноз |
 
 #### Вопросы о строках вне ядра
 
@@ -320,22 +320,22 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | work | era | title | alias | другие | олимпиада |
-|---|---|---|---|---|---|---|
-| lit-a-quyuan | 1 | — | × | × | — | прогноз |
-| lit-a-simaqian | — | — | × | × | 1 | да |
-| lit-a-caocao | — | — | × | × | 1 | да |
-| lit-a-taoyuanming | — | — | × | × | 1 | прогноз |
-| lit-a-libai | — | — | 1 | × | — | прогноз |
-| lit-a-dufu | — | — | 1 | × | 1 | да |
-| lit-a-luoguanzhong | — | — | × | × | — | прогноз |
-| lit-a-shinaian | — | — | × | × | 1 | да |
-| lit-a-wuchengen | — | — | × | × | 1 | прогноз |
-| lit-a-caoxueqin | — | — | × | × | — | прогноз |
-| lit-a-luxun | — | — | × | 1 | 1 | да |
-| lit-a-laoshe | — | — | × | × | 2 | да |
-| lit-a-moyan | — | — | × | × | 1 | прогноз |
-| lit-a-yuhua | — | — | × | × | 1 | прогноз |
+| строка | work | title | alias | другие | олимпиада |
+|---|---|---|---|---|---|
+| lit-a-quyuan | 1 | × | × | — | прогноз |
+| lit-a-simaqian | — | × | × | 1 | да |
+| lit-a-caocao | — | × | × | 1 | да |
+| lit-a-taoyuanming | — | × | × | 1 | прогноз |
+| lit-a-libai | — | 1 | × | — | прогноз |
+| lit-a-dufu | — | 1 | × | 1 | да |
+| lit-a-luoguanzhong | — | × | × | — | прогноз |
+| lit-a-shinaian | — | × | × | 1 | да |
+| lit-a-wuchengen | — | × | × | 1 | прогноз |
+| lit-a-caoxueqin | — | × | × | — | прогноз |
+| lit-a-luxun | — | × | 1 | 1 | да |
+| lit-a-laoshe | — | × | × | 2 | да |
+| lit-a-moyan | — | × | × | 1 | прогноз |
+| lit-a-yuhua | — | × | × | 1 | прогноз |
 
 #### Вопросы о строках вне ядра
 
@@ -558,14 +558,14 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | work | subject | era | другие | олимпиада |
-|---|---|---|---|---|---|
-| art-p-guokaizhi | — | × | — | 1 | прогноз |
-| art-p-wudaozi | — | × | — | 1 | прогноз |
-| art-p-zhangzeduan | 1 | × | — | — | прогноз |
-| art-p-wangximeng | — | × | — | 1 | прогноз |
-| art-p-xubeihong | — | — | — | 2 | да |
-| art-p-qibaishi | × | 1 | — | — | прогноз |
+| строка | work | subject | другие | олимпиада |
+|---|---|---|---|---|
+| art-p-guokaizhi | — | × | 1 | прогноз |
+| art-p-wudaozi | — | × | 1 | прогноз |
+| art-p-zhangzeduan | 1 | × | — | прогноз |
+| art-p-wangximeng | — | × | 1 | прогноз |
+| art-p-xubeihong | — | — | 2 | да |
+| art-p-qibaishi | × | 1 | — | прогноз |
 
 #### Таблица `calligraphers`
 
@@ -585,6 +585,54 @@
 - painting-q06 — Какой китайский художник особенно прославился бамбуком, написанным тушью?
 
 Российские строки (разбирает российская тема): вопросов 7.
+
+### Люди (`people`)
+
+#### Таблица `thinkers`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | school | book | другие | олимпиада |
+|---|---|---|---|---|
+| th-kongzi | — | 1 | 2 | прогноз |
+| th-laozi | — | 1 | 1 | прогноз |
+| th-zhuangzi | 1 | × | — | прогноз |
+| th-mengzi | 1 | × | — | прогноз |
+| th-mozi | — | × | 1 | прогноз |
+| th-sunzi | 1 | — | — | прогноз |
+
+#### Таблица `scholars`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | deed | другие | олимпиада |
+|---|---|---|---|
+| sci-cailun | 1 | — | прогноз |
+| sci-bisheng | 1 | — | прогноз |
+| sci-zhangheng | — | 1 | прогноз |
+| sci-lishizhen | — | — | прогноз |
+| sci-huatuo | 1 | — | прогноз |
+| sci-zhantianyou | 1 | — | прогноз |
+| sci-qianxuesen | 1 | — | прогноз |
+| sci-yuanlongping | 1 | — | прогноз |
+| sci-tuyouyou | 1 | — | прогноз |
+
+#### Таблица `travelers`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | deed | другие | олимпиада |
+|---|---|---|---|
+| trv-zhangqian | 1 | — | прогноз |
+| trv-zhenghe | 1 | — | прогноз |
+| trv-xuanzang | 1 | — | прогноз |
+| trv-xuxiake | × | — | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- нет
 
 ### Провинции и города (`provinces`)
 
@@ -772,6 +820,22 @@
 - nature/waters/wat-yarlung
 - painting/painters/art-p-qibaishi
 - painting/painters/art-p-wudaozi
+- people/scholars/sci-bisheng
+- people/scholars/sci-cailun
+- people/scholars/sci-huatuo
+- people/scholars/sci-lishizhen
+- people/scholars/sci-qianxuesen
+- people/scholars/sci-tuyouyou
+- people/scholars/sci-yuanlongping
+- people/scholars/sci-zhangheng
+- people/scholars/sci-zhantianyou
+- people/thinkers/th-laozi
+- people/thinkers/th-mengzi
+- people/thinkers/th-zhuangzi
+- people/travelers/trv-xuanzang
+- people/travelers/trv-xuxiake
+- people/travelers/trv-zhangqian
+- people/travelers/trv-zhenghe
 - provinces/provinces/prov-aomen
 - provinces/provinces/prov-ningxia
 - space/people/ppl-liuyang
@@ -816,6 +880,7 @@
 - painting/painters/art-p-wangximeng → painting/works/art-w-qianlijiangshantu
 - painting/painters/art-p-xubeihong → painting/works/art-w-benmatu
 - painting/painters/art-p-zhangzeduan → painting/works/art-w-qingmingshanghetu
+- people/thinkers/th-sunzi → literature/works/lit-w-sunzibingfa
 - space/people/ppl-yangliwei → space/missions/mis-shenzhou5
 
 ### Ссылка из ядра ведёт в строку вне ядра

@@ -2,7 +2,7 @@
 
 Тема: [[painting]]
 
-Не хватает сторон: work, era
+Не хватает сторон: work
 
 Связи:
 - [[painting.art-w-luoshenfutu]]
