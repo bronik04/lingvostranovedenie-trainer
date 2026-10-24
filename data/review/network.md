@@ -808,6 +808,19 @@
 | fig-ru-snegurochka | 1 | — | прогноз |
 | fig-ru-zhar-ptitsa | 1 | — | прогноз |
 
+#### Таблица `stories`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| story-pangu-kaitian | 1 | — | да |
+| story-nuwa-zaoren | 1 | — | да |
+| story-dayu-zhishui | 1 | — | прогноз |
+| story-niulang-zhinv | 1 | — | прогноз |
+| story-liangzhu | 1 | — | да |
+| story-baishezhuan | — | — | да |
+
 #### Вопросы о строках вне ядра
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
@@ -1207,10 +1220,17 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | year | другие | олимпиада |
-|---|---|---|---|
-| mis-sputnik1 | 1 | — | да |
-| mis-mir | × | 1 | прогноз |
+| строка | year | name | namesake | другие | олимпиада |
+|---|---|---|---|---|---|
+| mis-change4 | × | 1 | × | — | прогноз |
+| mis-yutu | × | × | 1 | — | прогноз |
+| mis-queqiao | × | × | 1 | — | прогноз |
+| mis-shenzhou5 | × | 1 | × | — | да |
+| mis-tiangong | × | — | × | — | прогноз |
+| mis-zhurong | × | × | 1 | — | прогноз |
+| mis-dongfanghong1 | × | — | × | — | прогноз |
+| mis-sputnik1 | 1 | × | × | — | да |
+| mis-mir | × | 1 | × | — | прогноз |
 
 #### Таблица `people`
 
@@ -1232,8 +1252,6 @@
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
 - нет
-
-Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 7.
 
 ## Связи
 
@@ -1408,6 +1426,11 @@
 - myths/figures/fig-ru-zhar-ptitsa
 - myths/figures/fig-shennong
 - myths/figures/fig-zhinv
+- myths/stories/story-baishezhuan
+- myths/stories/story-dayu-zhishui
+- myths/stories/story-liangzhu
+- myths/stories/story-nuwa-zaoren
+- myths/stories/story-pangu-kaitian
 - nature/engineering/eng-gangzhuao
 - nature/engineering/eng-nanshuibeidiao
 - nature/engineering/eng-qingzang-railway
@@ -1477,8 +1500,10 @@
 - provinces/cities/city-ru-yekaterinburg
 - provinces/provinces/prov-aomen
 - provinces/provinces/prov-ningxia
+- space/missions/mis-dongfanghong1
 - space/missions/mis-mir
 - space/missions/mis-sputnik1
+- space/missions/mis-tiangong
 - space/people/ppl-korolev
 - space/people/ppl-liuyang
 - space/people/ppl-tsiolkovsky
@@ -1486,8 +1511,7 @@
 
 ### Ссылка из ядра ведёт в тему без каркаса
 
-- holidays/holidays/hol-qixi → myths/stories/story-niulang-zhinv
-- holidays/holidays/hol-zhongqiu → myths/stories/story-change-benyue
+- нет
 
 ### Ссылка из ядра ведёт в строку вне ядра
 
@@ -1527,6 +1551,7 @@
 - holidays/holidays/hol-huoba → ethnos/peoples/ppl-cn-yi
 - holidays/holidays/hol-jianjun → modern-history/events/ev-nanchang
 - holidays/holidays/hol-qingnian → modern-history/events/ev-wusi
+- holidays/holidays/hol-zhongqiu → myths/stories/story-change-benyue
 - literature/authors/lit-a-ru-bunin → literature/works/lit-w-ru-arsenyev
 - literature/authors/lit-a-ru-lermontov → literature/works/lit-w-ru-demon
 - literature/works/lit-w-ru-gulag → literature/authors/lit-a-ru-solzhenitsyn
@@ -1547,7 +1572,8 @@
 - provinces/provinces/prov-shandong → nature/mountains/mtn-taihang
 - provinces/provinces/prov-shanxi → nature/mountains/mtn-taihang
 - provinces/provinces/prov-zhejiang → nature/waters/wat-qiantangjiang
+- space/missions/mis-yutu → myths/figures/fig-yutu
+- space/missions/mis-zhurong → myths/figures/fig-zhurong
 - space/people/ppl-gagarin → space/missions/mis-vostok1
 - space/people/ppl-leonov → space/missions/mis-voskhod2
 - space/people/ppl-tereshkova → space/missions/mis-vostok6
-- space/people/ppl-yangliwei → space/missions/mis-shenzhou5
