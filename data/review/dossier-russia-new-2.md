@@ -78,3 +78,16 @@ addition-b1-20), Ломоносова (олимпиадная 2023-24-shk-33). �
 («Владивосток»); holidays-q49 — в группу `dai-people` к holidays-q18 («Новый год»); landmarks-q114 — в
 `moscow-kremlin-word`; literature-q93 — в `pushkin-medny-vsadnik-literature` к 2022-23-reg-5 («Пушкин»); ethnos-q94 и
 ethnos-q81 («ислам»); people-q28 и addition-b2-18 («Павлов»).
+
+## Решение автора (2026-10-24) и проверка
+
+Автор принял все 49 при предложении. Проверяющий (Opus): 36 приняты как есть, 13 с правками формулировки или
+пояснения, ответы не менялись — provinces-q106 (столица с перерывом 1728–1732), q107 («Какое прозвище носит
+Казань?»), holidays-q51 (закон 2004 года, отмечают с 2005-го), painting-q105 («икону» выдавало ответ; «Троица» с 2023
+года в Троице-Сергиевой лавре), landmarks-q110 (Зимний — главное здание Эрмитажа), q113 (без «острова» — его выдавал
+иероглиф 岛), crafts-q134, q135 (exclude вариантов 木), cuisine-q98 (без «русский суп»), q99 (через поговорку), q100
+(без «русские»), q102 (через отдых на природе), people-q24 (Рахманинов — с 1918 года в основном в США).
+
+Группы фактов: `vladivostok-word`, `islam-word`, `pavlov-word`, `shchi-word` («щипковый» содержит «щи»);
+holidays-q49 — в `dai-people`, landmarks-q114 — в `moscow-kremlin-word`, literature-q93 — в
+`pushkin-medny-vsadnik-literature`, cuisine-q100 — в `spring-festival-word` (holidays-q42 называет 饺子 «пельменями»).
