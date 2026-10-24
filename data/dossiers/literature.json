@@ -3938,8 +3938,13 @@
         "era": "zh",
         "genre": "zh",
         "set": "zh",
+        "hero": "zh",
         "about": "ru"
       },
+      "sides": [
+        "author",
+        "hero"
+      ],
       "rows": [
         {
           "id": "lit-w-shijing",
@@ -4007,7 +4012,8 @@
           ],
           "olympiad": [
             "2019-20-mun-q5616d1"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "lit-w-chuci",
@@ -4066,7 +4072,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "author"
+          ]
         },
         {
           "id": "lit-w-shiji",
@@ -4120,7 +4130,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "author"
+          ]
         },
         {
           "id": "lit-w-gushishijiu",
@@ -4280,7 +4294,8 @@
           ],
           "olympiad": [
             "2023-24-zak-9"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "lit-w-shuihuzhuan",
@@ -4364,6 +4379,10 @@
           "olympiad": [
             "2018-19-zak-4",
             "2020-21-pri-qa538eb"
+          ],
+          "core": true,
+          "skipSides": [
+            "author"
           ]
         },
         {
@@ -4441,6 +4460,10 @@
             "2016-17-shk-2",
             "2016-17-reg-7",
             "2024-25-pri-32"
+          ],
+          "core": true,
+          "skipSides": [
+            "author"
           ]
         },
         {
@@ -4509,7 +4532,8 @@
           ],
           "olympiad": [
             "2023-24-mun-38"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "lit-w-jinpingmei",
@@ -4885,7 +4909,8 @@
           ],
           "olympiad": [
             "2017-18-shk-4"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "lit-w-mulanci",
@@ -4929,7 +4954,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-w-tangshisanbaishou",
@@ -5049,7 +5075,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "author"
+          ]
         },
         {
           "id": "lit-w-kuangrenriji",
@@ -5114,6 +5144,10 @@
           ],
           "olympiad": [
             "2023-24-reg-9"
+          ],
+          "core": true,
+          "skipSides": [
+            "author"
           ]
         },
         {
@@ -5185,6 +5219,10 @@
           ],
           "olympiad": [
             "2023-24-shk-34"
+          ],
+          "core": true,
+          "skipSides": [
+            "author"
           ]
         },
         {
@@ -5264,7 +5302,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "author"
+          ]
         },
         {
           "id": "lit-w-maochengji",
@@ -5695,7 +5737,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "author"
+          ]
         },
         {
           "id": "lit-w-hongaoliang",
@@ -5764,7 +5810,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "author"
+          ]
         },
         {
           "id": "lit-w-nahan",
@@ -5816,7 +5866,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "author"
+          ]
         },
         {
           "id": "lit-w-sishitongtang",

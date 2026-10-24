@@ -494,6 +494,29 @@
 | lit-a-moyan | 1 | × | × | 1 | прогноз |
 | lit-a-yuhua | — | × | × | 1 | прогноз |
 
+#### Таблица `works`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | author | hero | другие | олимпиада |
+|---|---|---|---|---|
+| lit-w-shijing | × | × | 2 | да |
+| lit-w-chuci | × | × | 1 | прогноз |
+| lit-w-shiji | × | × | — | прогноз |
+| lit-w-sanguoyanyi | — | × | 1 | да |
+| lit-w-shuihuzhuan | × | × | 2 | да |
+| lit-w-xiyouji | × | × | 2 | да |
+| lit-w-hongloumeng | — | × | 1 | да |
+| lit-w-sunzibingfa | × | × | — | да |
+| lit-w-mulanci | × | × | 1 | прогноз |
+| lit-w-aqzhengzhuan | × | × | — | прогноз |
+| lit-w-kuangrenriji | × | × | 1 | да |
+| lit-w-luotuoxiangzi | × | × | 1 | да |
+| lit-w-chaguan | × | × | — | прогноз |
+| lit-w-huozhe | × | × | — | прогноз |
+| lit-w-hongaoliang | × | × | — | прогноз |
+| lit-w-nahan | × | × | 1 | прогноз |
+
 #### Вопросы о строках вне ядра
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
@@ -502,8 +525,9 @@
 - literature-q35 — Какой поэт эпохи Сун оставил более девяти тысяч стихотворений?
 - literature-q37 — Какого драматурга эпохи Мин, умершего в один год с Шекспиром, называют «восточным Шекспиром» (东方的莎士比亚)?
 - literature-q46 — Кто автор сборника стихов «Богини» (女神, 1921), впоследствии президент Академии наук КНР?
+- 2020-21-reg-qce4bc2 — Какое из нижеперечисленных произведений не относится к четырем классическим китайским романам?
 
-Российские строки (разбирает российская тема): вопросов 13.
+Российские строки (разбирает российская тема): вопросов 28.
 
 ### История XIX–XX веков (`modern-history`)
 
@@ -735,13 +759,56 @@
 | art-c-yanzhenqing | 1 | × | — | — | прогноз |
 | art-c-liugongquan | 1 | × | — | — | прогноз |
 
+#### Таблица `works`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+Стороны не утверждены (`sides`).
+
+| строка | другие | олимпиада |
+|---|---|---|
+| art-w-qingmingshanghetu | — | да |
+| art-w-qianlijiangshantu | — | прогноз |
+| art-w-luoshenfutu | — | прогноз |
+| art-w-benmatu | — | прогноз |
+| art-w-lantingxu | 1 | прогноз |
+| art-w-jizhiwengao | — | прогноз |
+| art-w-xuanmita | — | прогноз |
+| art-w-jiuchenggong | — | прогноз |
+
+#### Таблица `terms`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | place | другие | олимпиада |
+|---|---|---|---|
+| art-t-shanshuihua | × | — | да |
+| art-t-huaniaohua | × | — | да |
+| art-t-renwuhua | × | 1 | прогноз |
+| art-t-gongbi | × | — | прогноз |
+| art-t-xieyi | × | 1 | прогноз |
+| art-t-baimiao | × | 1 | прогноз |
+| art-t-zhuanshu | × | 1 | прогноз |
+| art-t-lishu | × | 1 | прогноз |
+| art-t-kaishu | × | — | прогноз |
+| art-t-xingshu | × | — | прогноз |
+| art-t-caoshu | × | 1 | прогноз |
+| art-t-hubi | — | — | прогноз |
+| art-t-huimo | — | — | прогноз |
+| art-t-xuanzhi | 1 | — | прогноз |
+| art-t-duanyan | — | 1 | прогноз |
+
 #### Вопросы о строках вне ядра
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
 - painting-q06 — Какой китайский художник особенно прославился бамбуком, написанным тушью?
+- painting-q11 — Какую картину написал северосунский пейзажист Фань Куань (范宽), спрятавший свою подпись в тени деревьев?
+- painting-q12 — Какую картину считают древнейшей из сохранившихся китайских картин на бумаге?
+- painting-q23 — Где хранится свиток «Стихи о Холодной пище» (寒食帖) — «третье синшу Поднебесной»?
+- painting-q24 — Где хранится экземпляр свитка 《女史箴图》, который обычно считают танской копией с картины Гу Кайчжи?
 
-Российские строки (разбирает российская тема): вопросов 7.
+Российские строки (разбирает российская тема): вопросов 14.
 
 ### Люди (`people`)
 
@@ -957,6 +1024,8 @@
 - literature/authors/lit-a-dufu
 - literature/authors/lit-a-libai
 - literature/authors/lit-a-taoyuanming
+- literature/works/lit-w-mulanci
+- literature/works/lit-w-shijing
 - myths/figures/fig-bainiangzi
 - myths/figures/fig-cangjie
 - myths/figures/fig-fuxi
@@ -987,6 +1056,21 @@
 - nature/waters/wat-yarlung
 - painting/painters/art-p-qibaishi
 - painting/painters/art-p-wudaozi
+- painting/terms/art-t-baimiao
+- painting/terms/art-t-caoshu
+- painting/terms/art-t-duanyan
+- painting/terms/art-t-gongbi
+- painting/terms/art-t-huaniaohua
+- painting/terms/art-t-hubi
+- painting/terms/art-t-huimo
+- painting/terms/art-t-kaishu
+- painting/terms/art-t-lishu
+- painting/terms/art-t-renwuhua
+- painting/terms/art-t-shanshuihua
+- painting/terms/art-t-xieyi
+- painting/terms/art-t-xingshu
+- painting/terms/art-t-xuanzhi
+- painting/terms/art-t-zhuanshu
 - people/scholars/sci-bisheng
 - people/scholars/sci-cailun
 - people/scholars/sci-huatuo
@@ -1014,24 +1098,6 @@
 - holidays/holidays/hol-qingnian → modern-history/events/ev-wusi
 - holidays/holidays/hol-qixi → myths/stories/story-niulang-zhinv
 - holidays/holidays/hol-zhongqiu → myths/stories/story-change-benyue
-- literature/authors/lit-a-caoxueqin → literature/works/lit-w-hongloumeng
-- literature/authors/lit-a-laoshe → literature/works/lit-w-luotuoxiangzi
-- literature/authors/lit-a-luoguanzhong → literature/works/lit-w-sanguoyanyi
-- literature/authors/lit-a-luxun → literature/works/lit-w-aqzhengzhuan
-- literature/authors/lit-a-moyan → literature/works/lit-w-hongaoliang
-- literature/authors/lit-a-shinaian → literature/works/lit-w-shuihuzhuan
-- literature/authors/lit-a-simaqian → literature/works/lit-w-shiji
-- literature/authors/lit-a-wuchengen → literature/works/lit-w-xiyouji
-- literature/authors/lit-a-yuhua → literature/works/lit-w-huozhe
-- painting/calligraphers/art-c-liugongquan → painting/works/art-w-xuanmita
-- painting/calligraphers/art-c-ouyangxun → painting/works/art-w-jiuchenggong
-- painting/calligraphers/art-c-wangxizhi → painting/works/art-w-lantingxu
-- painting/calligraphers/art-c-yanzhenqing → painting/works/art-w-jizhiwengao
-- painting/painters/art-p-guokaizhi → painting/works/art-w-luoshenfutu
-- painting/painters/art-p-wangximeng → painting/works/art-w-qianlijiangshantu
-- painting/painters/art-p-xubeihong → painting/works/art-w-benmatu
-- painting/painters/art-p-zhangzeduan → painting/works/art-w-qingmingshanghetu
-- people/thinkers/th-sunzi → literature/works/lit-w-sunzibingfa
 - space/people/ppl-yangliwei → space/missions/mis-shenzhou5
 
 ### Ссылка из ядра ведёт в строку вне ядра
