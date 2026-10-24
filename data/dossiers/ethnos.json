@@ -2572,7 +2572,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "people"
+          ]
         },
         {
           "id": "her-ru-gzhel",
@@ -2694,7 +2698,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "people"
+          ]
         },
         {
           "id": "her-ru-yelets-lace",

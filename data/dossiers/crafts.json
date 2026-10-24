@@ -3435,20 +3435,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": [
-            "addition-b2-19"
-          ],
+          "olympiad": [],
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
-          },
-          "core": true,
-          "skipSides": [
-            "center",
-            "region",
-            "era",
-            "unesco"
-          ]
+          }
         },
         {
           "id": "cr-ru-mstera",
@@ -3932,7 +3923,8 @@
             "center",
             "region",
             "era",
-            "unesco"
+            "unesco",
+            "material"
           ]
         },
         {
