@@ -3383,7 +3383,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-a-ru-mayakovsky",
@@ -3501,7 +3502,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-a-ru-turgenev",
@@ -3677,7 +3679,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-a-qianzhongshu",
@@ -6313,10 +6316,7 @@
             }
           ],
           "olympiad": [],
-          "core": true,
-          "skipSides": [
-            "genre"
-          ]
+          "core": true
         },
         {
           "id": "lit-w-ru-warpeace",
@@ -6685,7 +6685,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-ru-quietdon",
@@ -6852,7 +6856,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-ru-fathers",
@@ -6966,7 +6974,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-ru-gulag",
@@ -7017,7 +7029,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-w-ru-cloud",
