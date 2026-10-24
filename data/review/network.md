@@ -2,7 +2,7 @@
 
 Файл пишет сборка (`scripts/network.py`). Ядро размечается в таблицах досье: `core` у строки, `sides` у таблицы. Граф для Obsidian — папка `data/review/graph/`: сборка каждый раз стирает в ней все заметки `*.md` и пишет заново, поэтому свои заметки в эту папку не кладите.
 
-Досье: 16, с утверждённым каркасом: 14.
+Досье: 16, с утверждённым каркасом: 16.
 
 ## Олимпиада по годам
 
@@ -34,39 +34,18 @@
 
 ### Кино и анимация (`cinema`)
 
-Ядро не размечено: каркас не утверждён.
-
-- строк: 30
-- принятых вопросов: 27
-- строк с вопросом: 27
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 0
-- встроено олимпиадных: 0
-
-### Ремёсла и народные искусства (`crafts`)
-
-#### Таблица `crafts`
+#### Таблица `works`
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | center | region | era | unesco | другие | олимпиада |
-|---|---|---|---|---|---|---|
-| cr-qinghua | × | × | 1 | × | — | прогноз |
-| cr-tangsancai | × | × | × | × | 1 | прогноз |
-| cr-longquan | × | × | × | × | 1 | прогноз |
-| cr-suxiu | × | × | × | × | 1 | прогноз |
-| cr-shuxiu | × | × | × | × | 1 | прогноз |
-| cr-yunjin | × | × | × | × | 1 | прогноз |
-| cr-laran | × | 1 | × | × | — | прогноз |
-| cr-matafeiyan | × | × | 1 | × | — | прогноз |
-
-#### Таблица `folk`
-
-`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
-
-| строка | center | era | unesco | другие | олимпиада |
-|---|---|---|---|---|---|
-| fk-weifang-fengzheng | 1 | × | × | — | прогноз |
-| fk-jianzhi | × | × | × | 1 | прогноз |
+| строка | director | другие | олимпиада |
+|---|---|---|---|
+| cin-ru-potemkin | 1 | — | прогноз |
+| cin-ru-irony-of-fate | × | 1 | прогноз |
+| cin-ru-moscow-tears | × | 1 | прогноз |
+| cin-ru-crocodile-gena | × | 1 | прогноз |
+| cin-ru-hedgehog-fog | × | 1 | прогноз |
+| cin-ru-nu-pogodi | × | 1 | прогноз |
 
 #### Вопросы о строках вне ядра
 
@@ -74,7 +53,45 @@
 
 - нет
 
-Российские строки (разбирает российская тема): вопросов 15.
+Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 19.
+
+### Ремёсла и народные искусства (`crafts`)
+
+#### Таблица `crafts`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | center | region | era | unesco | material | другие | олимпиада |
+|---|---|---|---|---|---|---|---|
+| cr-qinghua | × | × | 1 | × | × | — | прогноз |
+| cr-tangsancai | × | × | × | × | × | 1 | прогноз |
+| cr-longquan | × | × | × | × | × | 1 | прогноз |
+| cr-suxiu | × | × | × | × | × | 1 | прогноз |
+| cr-shuxiu | × | × | × | × | × | 1 | прогноз |
+| cr-yunjin | × | × | × | × | × | 1 | прогноз |
+| cr-ru-khokhloma | × | × | × | × | — | — | прогноз |
+| cr-ru-zhostovo | × | × | × | × | × | — | прогноз |
+| cr-ru-gzhel | × | × | × | × | — | 1 | прогноз |
+| cr-ru-pavlovo-posad | × | × | × | × | — | 1 | прогноз |
+| cr-laran | × | 1 | × | × | × | — | прогноз |
+| cr-matafeiyan | × | × | 1 | × | × | — | прогноз |
+
+#### Таблица `folk`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | center | era | unesco | material | другие | олимпиада |
+|---|---|---|---|---|---|---|
+| fk-weifang-fengzheng | 1 | × | × | × | — | прогноз |
+| fk-ru-dymkovo | × | × | × | — | 1 | прогноз |
+| fk-ru-matryoshka | × | × | × | 1 | 1 | прогноз |
+| fk-jianzhi | × | × | × | × | 1 | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- нет
 
 ### Кухня и блюда (`cuisine`)
 
@@ -116,6 +133,11 @@
 | cu-cn-duojiao-yutou | 1 | — | прогноз |
 | cu-cn-maoshi-hongshaorou | — | — | прогноз |
 | cu-cn-chou-guiyu | 1 | — | прогноз |
+| cu-ru-borscht | × | 1 | прогноз |
+| cu-ru-shchi | × | 1 | прогноз |
+| cu-ru-olivier | × | 1 | прогноз |
+| cu-ru-okroshka | × | 1 | прогноз |
+| cu-ru-shashlyk | × | 1 | прогноз |
 | cu-cn-mayi-shangshu | — | — | да |
 
 #### Таблица `staples`
@@ -138,6 +160,8 @@
 | cu-cn-guoqiaomixian | — | прогноз |
 | cu-cn-lanzhouniuroumian | — | прогноз |
 | cu-cn-yangzhouchaofan | — | прогноз |
+| cu-ru-bliny | — | прогноз |
+| cu-ru-pelmeni | 1 | прогноз |
 
 #### Таблица `sweets`
 
@@ -179,13 +203,19 @@
 | te-qimen | × | 1 | — | прогноз |
 | te-huangshan-maofeng | 1 | 1 | — | прогноз |
 
+#### Таблица `drinks`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| cu-ru-kvas | 1 | — | прогноз |
+
 #### Вопросы о строках вне ядра
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
 - нет
-
-Российские строки (разбирает российская тема): вопросов 1.
 
 ### Династии и правители (`dynasties`)
 
@@ -213,21 +243,34 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | deed | другие | олимпиада |
-|---|---|---|---|
-| rul-qinshihuang | — | 2 | да |
-| rul-liubang | 1 | — | да |
-| rul-hanwudi | — | 1 | прогноз |
-| rul-yangjian | × | — | прогноз |
-| rul-tangtaizong | 1 | — | прогноз |
-| rul-wuzetian | — | 1 | прогноз |
-| rul-zhaokuangyin | 1 | — | прогноз |
-| rul-hubilie | — | — | прогноз |
-| rul-zhuyuanzhang | × | — | прогноз |
-| rul-kangxi | — | 1 | прогноз |
-| rul-qianlong | — | 1 | прогноз |
-| rul-puyi | — | 1 | да |
-| rul-cixi | × | 1 | прогноз |
+| строка | deed | title | другие | олимпиада |
+|---|---|---|---|---|
+| rul-qinshihuang | — | × | 2 | да |
+| rul-liubang | 1 | × | — | да |
+| rul-hanwudi | — | × | 1 | прогноз |
+| rul-yangjian | × | × | — | прогноз |
+| rul-tangtaizong | 1 | × | — | прогноз |
+| rul-wuzetian | — | × | 1 | прогноз |
+| rul-zhaokuangyin | 1 | × | — | прогноз |
+| rul-hubilie | — | × | — | прогноз |
+| rul-zhuyuanzhang | × | × | — | прогноз |
+| rul-kangxi | — | × | 1 | прогноз |
+| rul-qianlong | — | × | 1 | прогноз |
+| rul-puyi | — | × | 1 | да |
+| rul-cixi | × | × | 1 | прогноз |
+| rul-ru-rurik | — | × | 1 | прогноз |
+| rul-ru-vladimir1 | 1 | × | — | да |
+| rul-ru-yaroslav | — | — | 1 | прогноз |
+| rul-ru-nevsky | — | × | 1 | прогноз |
+| rul-ru-donskoy | — | × | 1 | прогноз |
+| rul-ru-ivan3 | 1 | × | 2 | да |
+| rul-ru-ivan4 | — | 1 | 1 | прогноз |
+| rul-ru-mikhail1 | — | × | 1 | прогноз |
+| rul-ru-peter1 | 1 | 1 | 3 | да |
+| rul-ru-alex1 | — | × | 1 | прогноз |
+| rul-ru-alex2 | 1 | — | 1 | да |
+| rul-ru-nik2 | — | — | 1 | да |
+| rul-ru-cat2 | 1 | × | 1 | да |
 
 #### Вопросы о строках вне ядра
 
@@ -237,8 +280,7 @@
 - dynasties-q30 — Какой правитель в 1636 году провозгласил себя императором и дал своему государству название Великая Цин?
 - dynasties-q31 — Какой вождь чжурчжэней создал систему Восьми знамён и в 1616 году основал государство Поздняя Цзинь?
 - dynasties-q35 — Какой цинский император в 1898 году начал «Сто дней реформ»?
-
-Российские строки (разбирает российская тема): вопросов 18.
+- 2020-21-zak-qdf339a — Какому российскому императору А. И. Герцен дал прозвище «Палкин» за любовь к применению телесных наказаний с помощью длинных прутьев?
 
 ### Этносы и традиционный быт (`ethnos`)
 
@@ -258,6 +300,12 @@
 | ppl-cn-mongol | × | — | 1 | да |
 | ppl-cn-korean | 1 | × | — | прогноз |
 | ppl-cn-dai | 1 | — | — | прогноз |
+| ppl-ru-russians | × | — | — | прогноз |
+| ppl-ru-tatars | × | 1 | — | прогноз |
+| ppl-ru-bashkirs | × | — | — | прогноз |
+| ppl-ru-buryats | × | 1 | — | прогноз |
+| ppl-ru-tuvans | × | — | — | прогноз |
+| ppl-ru-kalmyks | × | — | — | прогноз |
 
 #### Таблица `heritage`
 
@@ -265,6 +313,13 @@
 
 | строка | people | другие | олимпиада |
 |---|---|---|---|
+| her-ru-khokhloma | × | 1 | прогноз |
+| her-ru-zhostovo | × | 1 | прогноз |
+| her-ru-olonkho | 1 | — | прогноз |
+| her-ru-tuva-khoomei | 1 | — | прогноз |
+| her-ru-kalmyk-jangar | 1 | — | прогноз |
+| her-ru-balalaika | × | 1 | прогноз |
+| her-ru-gusli | × | 1 | прогноз |
 | her-cn-urtiin-duu | — | 1 | прогноз |
 | her-cn-dong-song | — | 1 | прогноз |
 | her-cn-muqam | 1 | — | прогноз |
@@ -273,6 +328,8 @@
 | her-cn-tibetan-opera | — | 1 | прогноз |
 | her-cn-peacock-dance | 1 | — | прогноз |
 | her-cn-miao-batik | — | 1 | прогноз |
+| her-ru-buryat-geser | 1 | — | прогноз |
+| her-ru-domra | × | 1 | прогноз |
 | her-cn-jangar | — | — | прогноз |
 | her-cn-morin-khuur | 1 | — | прогноз |
 
@@ -309,8 +366,6 @@
 
 - нет
 
-Российские строки (разбирает российская тема): вопросов 15.
-
 ### Праздники (`holidays`)
 
 #### Таблица `holidays`
@@ -342,6 +397,16 @@
 | hol-laodong | × | × | × | — | прогноз |
 | hol-funv | × | × | × | 1 | да |
 | hol-ertong | × | × | × | — | прогноз |
+| hol-ru-xinnian | × | × | × | — | да |
+| hol-ru-shengdan | 1 | × | × | 1 | да |
+| hol-ru-xierou | × | × | × | 1 | прогноз |
+| hol-ru-fuhuo | × | × | × | — | прогноз |
+| hol-ru-zuguo | — | × | × | 1 | прогноз |
+| hol-ru-yuhang | — | × | × | 1 | да |
+| hol-ru-shengli | 1 | × | × | — | прогноз |
+| hol-ru-eluosi | × | × | × | — | да |
+| hol-ru-tuanjie | 1 | × | × | 1 | прогноз |
+| hol-ru-zhishi | 1 | × | × | — | прогноз |
 
 #### Таблица `customs`
 
@@ -361,6 +426,10 @@
 | cus-chazhuyu | 1 | — | прогноз |
 | cus-qiqiao | × | 1 | прогноз |
 | cus-jizao | × | — | прогноз |
+| cus-ru-bliny | 1 | — | прогноз |
+| cus-ru-caidan | 1 | — | прогноз |
+| cus-ru-yolka | 1 | — | прогноз |
+| cus-ru-polk | 1 | — | прогноз |
 
 #### Таблица `figures`
 
@@ -379,8 +448,6 @@
 
 - нет
 
-Российские строки (разбирает российская тема): вопросов 10.
-
 ### Достопримечательности и архитектура (`landmarks`)
 
 #### Таблица `palaces`
@@ -392,6 +459,9 @@
 | lm-cn-beijing-gugong | — | 1 | 1 | — | прогноз |
 | lm-cn-chengde-resort | — | 1 | — | — | прогноз |
 | lm-cn-potala | 1 | × | — | — | прогноз |
+| lm-ru-winter-palace | — | — | × | 1 | прогноз |
+| lm-ru-catherine-palace | — | — | × | 1 | прогноз |
+| lm-ru-armoury | — | × | × | — | прогноз |
 
 #### Таблица `gardens`
 
@@ -402,6 +472,8 @@
 | lm-cn-zhuozheng-garden | — | — | — | 1 | прогноз |
 | lm-cn-summer-palace-garden | 1 | — | 1 | 1 | прогноз |
 | lm-cn-yuanmingyuan | — | 1 | × | 1 | прогноз |
+| lm-ru-alexander-garden-moscow | — | — | × | 1 | прогноз |
+| lm-ru-peterhof-lower-park | — | — | × | 1 | прогноз |
 
 #### Таблица `sacred`
 
@@ -416,7 +488,17 @@
 | lm-cn-longmen | 1 | — | — | — | прогноз |
 | lm-cn-yungang | 1 | — | — | — | прогноз |
 | lm-cn-dayan | 1 | — | — | 1 | прогноз |
+| lm-ru-st-basil | — | — | × | — | прогноз |
+| lm-ru-christ-saviour | — | — | × | 1 | да |
+| lm-ru-kazan-cathedral | — | — | × | 1 | прогноз |
+| lm-ru-st-isaac | — | × | × | 1 | прогноз |
+| lm-ru-saviour-blood | — | — | × | 1 | прогноз |
+| lm-ru-trinity-sergius | — | 1 | × | — | прогноз |
+| lm-ru-kizhi-pogost | — | — | × | 1 | прогноз |
 | lm-cn-dazu | — | × | — | — | прогноз |
+| lm-ru-assumption-kremlin | — | — | × | 1 | прогноз |
+| lm-ru-archangel-kremlin | — | — | × | 1 | да |
+| lm-ru-annunciation-kremlin | — | — | × | — | прогноз |
 
 #### Таблица `fortifications`
 
@@ -425,6 +507,9 @@
 | строка | city | era | unesco | другие | олимпиада |
 |---|---|---|---|---|---|
 | lm-cn-xian-wall | — | — | × | — | прогноз |
+| lm-ru-moscow-kremlin | — | — | × | 1 | прогноз |
+| lm-ru-kazan-kremlin | — | × | × | 1 | прогноз |
+| lm-ru-peter-paul-fortress | — | — | × | 1 | прогноз |
 | lm-cn-great-wall | × | — | 1 | — | прогноз |
 
 #### Таблица `sites`
@@ -469,53 +554,79 @@
 - landmarks-q55 — В каком храме хранятся стелы со стихотворением Чжан Цзи «Ночная стоянка у Кленового моста»?
 - landmarks-q72 — Над восточными воротами Чжэньдунмэнь какой заставы висит надпись «天下第一关» — «Первая застава Поднебесной»?
 
-Российские строки (разбирает российская тема): вопросов 12.
-
 ### Литература: авторы и произведения (`literature`)
 
 #### Таблица `authors`
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | work | title | alias | другие | олимпиада |
-|---|---|---|---|---|---|
-| lit-a-quyuan | 1 | × | × | — | прогноз |
-| lit-a-simaqian | × | × | × | 1 | да |
-| lit-a-caocao | — | × | × | 1 | да |
-| lit-a-taoyuanming | — | × | × | 1 | прогноз |
-| lit-a-libai | 1 | 1 | × | — | прогноз |
-| lit-a-dufu | 1 | 1 | × | 1 | да |
-| lit-a-luoguanzhong | × | × | × | — | прогноз |
-| lit-a-shinaian | — | × | × | 1 | да |
-| lit-a-wuchengen | × | × | × | 1 | прогноз |
-| lit-a-caoxueqin | × | × | × | — | прогноз |
-| lit-a-luxun | 1 | × | 1 | 1 | да |
-| lit-a-laoshe | 1 | × | × | 2 | да |
-| lit-a-moyan | 1 | × | × | 1 | прогноз |
-| lit-a-yuhua | — | × | × | 1 | прогноз |
+| строка | work | title | alias | prize | другие | олимпиада |
+|---|---|---|---|---|---|---|
+| lit-a-quyuan | 1 | × | × | × | — | прогноз |
+| lit-a-simaqian | × | × | × | × | 1 | да |
+| lit-a-caocao | — | × | × | × | 1 | да |
+| lit-a-taoyuanming | — | × | × | × | 1 | прогноз |
+| lit-a-libai | 1 | 1 | × | × | — | прогноз |
+| lit-a-dufu | 1 | 1 | × | × | 1 | да |
+| lit-a-luoguanzhong | × | × | × | × | — | прогноз |
+| lit-a-shinaian | — | × | × | × | 1 | да |
+| lit-a-wuchengen | × | × | × | × | 1 | прогноз |
+| lit-a-caoxueqin | × | × | × | × | — | прогноз |
+| lit-a-luxun | 1 | × | 1 | × | 1 | да |
+| lit-a-laoshe | 1 | × | × | × | 2 | да |
+| lit-a-moyan | 1 | × | × | × | 1 | прогноз |
+| lit-a-ru-pushkin | — | 1 | × | × | — | прогноз |
+| lit-a-ru-lermontov | — | × | × | × | 2 | да |
+| lit-a-ru-gogol | 1 | × | × | × | — | прогноз |
+| lit-a-ru-tolstoy | — | × | × | × | — | прогноз |
+| lit-a-ru-dostoevsky | — | × | × | × | 1 | да |
+| lit-a-ru-chekhov | — | × | × | × | 2 | да |
+| lit-a-ru-gorky | — | × | 1 | × | — | прогноз |
+| lit-a-ru-sholokhov | — | × | × | — | — | прогноз |
+| lit-a-ru-bunin | × | × | × | — | 1 | прогноз |
+| lit-a-ru-pasternak | — | × | × | — | 1 | прогноз |
+| lit-a-ru-blok | — | × | × | × | — | прогноз |
+| lit-a-ru-turgenev | — | × | × | × | — | прогноз |
+| lit-a-ru-brodsky | × | × | × | — | 1 | прогноз |
+| lit-a-yuhua | — | × | × | × | 1 | прогноз |
 
 #### Таблица `works`
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | author | hero | другие | олимпиада |
-|---|---|---|---|---|
-| lit-w-shijing | × | × | 2 | да |
-| lit-w-chuci | × | × | 1 | прогноз |
-| lit-w-shiji | × | × | — | прогноз |
-| lit-w-sanguoyanyi | 1 | 1 | 1 | да |
-| lit-w-shuihuzhuan | × | — | 2 | да |
-| lit-w-xiyouji | × | — | 3 | да |
-| lit-w-hongloumeng | 1 | 1 | 1 | да |
-| lit-w-sunzibingfa | × | × | — | да |
-| lit-w-mulanci | × | × | 1 | прогноз |
-| lit-w-aqzhengzhuan | × | × | — | прогноз |
-| lit-w-kuangrenriji | × | × | 1 | да |
-| lit-w-luotuoxiangzi | × | × | 1 | да |
-| lit-w-chaguan | × | × | — | прогноз |
-| lit-w-huozhe | × | × | — | прогноз |
-| lit-w-hongaoliang | × | × | — | прогноз |
-| lit-w-nahan | × | × | 1 | прогноз |
+| строка | author | genre | hero | другие | олимпиада |
+|---|---|---|---|---|---|
+| lit-w-shijing | × | × | × | 2 | да |
+| lit-w-chuci | × | × | × | 1 | прогноз |
+| lit-w-shiji | × | × | × | — | прогноз |
+| lit-w-sanguoyanyi | 1 | × | 1 | 1 | да |
+| lit-w-shuihuzhuan | × | × | — | 2 | да |
+| lit-w-xiyouji | × | × | — | 3 | да |
+| lit-w-hongloumeng | 1 | × | 1 | 1 | да |
+| lit-w-sunzibingfa | × | × | × | — | да |
+| lit-w-mulanci | × | × | × | 1 | прогноз |
+| lit-w-aqzhengzhuan | × | × | × | — | прогноз |
+| lit-w-kuangrenriji | × | × | × | 1 | да |
+| lit-w-luotuoxiangzi | × | × | × | 1 | да |
+| lit-w-chaguan | × | × | × | — | прогноз |
+| lit-w-huozhe | × | × | × | — | прогноз |
+| lit-w-hongaoliang | × | × | × | — | прогноз |
+| lit-w-nahan | × | × | × | 1 | прогноз |
+| lit-w-ru-onegin | 1 | 1 | × | — | прогноз |
+| lit-w-ru-geroi | — | × | × | 1 | прогноз |
+| lit-w-ru-deadsouls | — | × | × | — | прогноз |
+| lit-w-ru-inspector | — | 1 | × | — | прогноз |
+| lit-w-ru-warpeace | 1 | × | × | — | прогноз |
+| lit-w-ru-karenina | 1 | × | × | 1 | да |
+| lit-w-ru-crime | 1 | × | × | — | прогноз |
+| lit-w-ru-cherry | — | × | × | 1 | прогноз |
+| lit-w-ru-seagull | 1 | × | × | — | прогноз |
+| lit-w-ru-quietdon | 1 | × | × | — | прогноз |
+| lit-w-ru-mother | — | × | × | 1 | прогноз |
+| lit-w-ru-twelve | 1 | × | × | — | прогноз |
+| lit-w-ru-fathers | 1 | × | × | — | прогноз |
+| lit-w-ru-zhivago | — | × | × | 1 | прогноз |
+| lit-w-ru-gulag | 1 | × | × | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
@@ -527,9 +638,30 @@
 - literature-q46 — Кто автор сборника стихов «Богини» (女神, 1921), впоследствии президент Академии наук КНР?
 - 2020-21-reg-qce4bc2 — Какое из нижеперечисленных произведений не относится к четырем классическим китайским романам?
 
-Российские строки (разбирает российская тема): вопросов 28.
-
 ### История XIX–XX веков (`modern-history`)
+
+#### Таблица `events`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | year | leader | memorial | другие | олимпиада |
+|---|---|---|---|---|---|
+| ev-ru-decembrists | 1 | × | × | — | прогноз |
+| ev-ru-crimea | 1 | × | × | — | прогноз |
+| ev-ru-serfdom | 1 | — | × | — | прогноз |
+| ev-ru-russojapanese | — | × | × | — | да |
+| ev-ru-1905 | — | × | × | — | да |
+| ev-ru-february | 1 | × | × | — | прогноз |
+| ev-ru-october | — | 1 | × | — | прогноз |
+| ev-ru-ussr | — | × | × | — | да |
+| ev-ru-ww2 | 1 | × | 1 | — | прогноз |
+| ev-ru-ussr-end | 1 | × | × | — | прогноз |
+| ev-ru-ice | — | — | × | — | прогноз |
+| ev-ru-kulikovo | — | — | × | — | прогноз |
+| ev-ru-poltava | — | 1 | × | — | прогноз |
+| ev-ru-borodino | — | — | × | — | да |
+| ev-ru-leningrad | — | × | 1 | — | да |
+| ev-ru-stalingrad | — | × | — | 1 | да |
 
 #### Таблица `figures`
 
@@ -548,12 +680,33 @@
 | per-zhouenlai | — | — | 1 | да |
 | per-dengxiaoping | 1 | — | 1 | да |
 | per-xijinping | × | — | 1 | да |
+| per-ru-lenin | × | 1 | — | прогноз |
+| per-ru-stalin | × | 1 | — | прогноз |
+| per-ru-khrushchev | × | 1 | — | прогноз |
+| per-ru-gorbachev | × | 1 | — | прогноз |
+| per-ru-yeltsin | × | 1 | — | прогноз |
+| per-ru-kutuzov | × | — | 1 | да |
+| per-ru-suvorov | × | — | 1 | прогноз |
+| per-ru-zhukov | × | — | 1 | прогноз |
+
+#### Таблица `treaties`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | year | другие | олимпиада |
+|---|---|---|---|
+| tr-ru-nerchinsk | — | — | прогноз |
+| tr-ru-aihui | — | 1 | прогноз |
+| tr-ru-beijing | — | 1 | прогноз |
+| tr-ru-1950 | 1 | — | прогноз |
+| tr-ru-2001 | — | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
 - 2017-18-zak-6 — Кто был премьером Государственного совета КНР в 2017–2018 годах?
+- 2019-20-shk-q988836 — Кто из перечисленных полководцев прославился в годы Великой Отечественной войны 1941–1945 годов?
 - modern-history-q11 — Какую идею выдвинул мыслитель Вэй Юань после поражения Китая в опиумной войне?
 - modern-history-q12 — Кто создал и возглавил Сянскую армию?
 - modern-history-q17 — Кто написал статью «少年中国说» («О юном Китае»)?
@@ -561,17 +714,36 @@
 - modern-history-q26 — Главным создателем какой важной идеи называют Цзян Цзэминя?
 - modern-history-q27 — Какое понятие выдвинул Ху Цзиньтао в 2003 году?
 
-Российские строки (разбирает российская тема): вопросов 9.
+Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 26.
 
 ### Деньги (`money`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `banknotes`
 
-- строк: 37
-- принятых вопросов: 31
-- строк с вопросом: 29
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 2
-- встроено олимпиадных: 0
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | city | denomination | другие | олимпиада |
+|---|---|---|---|---|
+| rub-5-1997 | 1 | — | — | прогноз |
+| rub-10-1997 | 1 | — | — | прогноз |
+| rub-50-1997 | — | — | — | да |
+| rub-100-1997 | — | 1 | — | да |
+| rub-100-2022 | 1 | — | — | да |
+| rub-200-2017 | 1 | — | — | да |
+| rub-500-1997 | 1 | — | — | да |
+| rub-1000-1997 | 1 | — | — | прогноз |
+| rub-1000-2025 | 1 | — | — | прогноз |
+| rub-2000-2017 | × | — | — | прогноз |
+| rub-5000-1997 | 1 | — | — | прогноз |
+| rub-5000-2023 | 1 | — | — | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- нет
+
+Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 7.
 
 ### Мифы и легенды (`myths`)
 
@@ -598,6 +770,9 @@
 | fig-mengjiangnu | 1 | — | прогноз |
 | fig-bainiangzi | 1 | — | прогноз |
 | fig-mulan | 1 | — | прогноз |
+| fig-ru-ded-moroz | 1 | — | прогноз |
+| fig-ru-snegurochka | 1 | — | прогноз |
+| fig-ru-zhar-ptitsa | 1 | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
@@ -605,8 +780,6 @@
 
 - myths-q15 — Какую богиню «Каталог гор и морей» называет матерью десяти солнц и женой верховного бога Дицзюня?
 - myths-q16 — Кого, по преданию, за провинность во время обучения бессмертию сослали на Луну рубить коричное дерево, которое тут же срастается?
-
-Российские строки (разбирает российская тема): вопросов 4.
 
 ### Природа и инженерия (`nature`)
 
@@ -625,6 +798,12 @@
 | wat-yarlung | — | × | — | × | — | прогноз |
 | wat-talimuhe | × | × | — | × | 1 | прогноз |
 | wat-dayunhe | × | × | — | — | — | да |
+| wat-ru-volga | 1 | × | — | × | 1 | прогноз |
+| wat-ru-yenisei | — | × | — | × | 1 | прогноз |
+| wat-ru-lena | — | × | × | × | 1 | да |
+| wat-ru-ob | — | × | — | × | 1 | прогноз |
+| wat-ru-irtysh | 1 | × | — | × | — | прогноз |
+| wat-ru-angara | — | × | × | × | 1 | прогноз |
 
 #### Таблица `lakes`
 
@@ -637,6 +816,8 @@
 | lake-taihu | 1 | — | × | — | да |
 | lake-qinghaihu | — | 1 | × | — | да |
 | lake-xihu | — | × | — | — | да |
+| lake-ru-baikal | × | — | × | 1 | да |
+| lake-ru-ladoga | × | 1 | × | 1 | прогноз |
 
 #### Таблица `seas`
 
@@ -651,6 +832,11 @@
 | sea-taiwandao | — | — | 1 | да |
 | sea-hainandao | — | — | 1 | прогноз |
 | sea-chongmingdao | — | — | 1 | прогноз |
+| sea-ru-japan | × | × | 1 | да |
+| sea-ru-black | × | × | 1 | прогноз |
+| sea-ru-kamchatka | × | — | 1 | да |
+| sea-ru-taymyr | × | — | 2 | да |
+| sea-ru-yamal | × | — | 1 | прогноз |
 
 #### Таблица `mountains`
 
@@ -674,6 +860,10 @@
 | mtn-jiuhuashan | × | 1 | × | × | — | прогноз |
 | mtn-putuoshan | × | — | × | × | — | да |
 | mtn-huangshan | × | 1 | — | — | 1 | прогноз |
+| mtn-ru-ural | × | × | — | × | 2 | прогноз |
+| mtn-ru-caucasus | × | × | — | × | 1 | да |
+| mtn-ru-altai | × | × | 1 | × | — | прогноз |
+| mtn-ru-elbrus | × | × | — | × | 1 | прогноз |
 
 #### Таблица `landforms`
 
@@ -709,6 +899,7 @@
 | eng-qingzang-railway | × | × | × | — | × | 1 | прогноз |
 | eng-fast | × | 1 | × | — | × | — | прогноз |
 | eng-karez | × | 1 | × | × | × | 1 | прогноз |
+| eng-ru-transsib | × | × | × | — | × | 1 | прогноз |
 
 #### Таблица `scenic`
 
@@ -731,22 +922,31 @@
 - nature-q107 — Какое озеро — крупнейшее в Азии пресное пограничное озеро (亚洲最大的淡水界湖)?
 - nature-q45 — Какие горы называют «хребтом Поднебесной» (天下之脊)?
 
-Российские строки (разбирает российская тема): вопросов 24.
-
 ### Живопись и каллиграфия (`painting`)
 
 #### Таблица `painters`
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | work | subject | другие | олимпиада |
-|---|---|---|---|---|
-| art-p-guokaizhi | — | × | 1 | прогноз |
-| art-p-wudaozi | — | × | 1 | прогноз |
-| art-p-zhangzeduan | 1 | × | — | прогноз |
-| art-p-wangximeng | — | × | 1 | прогноз |
-| art-p-xubeihong | 1 | — | 2 | да |
-| art-p-qibaishi | × | 1 | — | прогноз |
+| строка | work | subject | genre | другие | олимпиада |
+|---|---|---|---|---|---|
+| art-p-guokaizhi | — | × | × | 1 | прогноз |
+| art-p-wudaozi | — | × | × | 1 | прогноз |
+| art-p-zhangzeduan | 1 | × | × | — | прогноз |
+| art-p-wangximeng | — | × | × | 1 | прогноз |
+| art-p-xubeihong | 1 | — | × | 2 | да |
+| art-p-qibaishi | × | 1 | × | — | прогноз |
+| art-p-ru-rublev | 1 | × | 1 | — | прогноз |
+| art-p-ru-bryullov | — | × | — | — | прогноз |
+| art-p-ru-aivazovsky | — | × | 1 | — | прогноз |
+| art-p-ru-shishkin | — | × | — | — | прогноз |
+| art-p-ru-levitan | — | × | — | — | прогноз |
+| art-p-ru-repin | — | × | — | — | прогноз |
+| art-p-ru-surikov | — | × | — | — | прогноз |
+| art-p-ru-vasnetsov | — | × | × | 1 | да |
+| art-p-ru-serov | — | × | — | — | прогноз |
+| art-p-ru-savrasov | — | × | — | — | прогноз |
+| art-p-ru-malevich | — | × | — | 1 | прогноз |
 
 #### Таблица `calligraphers`
 
@@ -763,18 +963,28 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-Стороны не утверждены (`sides`).
-
-| строка | другие | олимпиада |
-|---|---|---|
-| art-w-qingmingshanghetu | — | да |
-| art-w-qianlijiangshantu | — | прогноз |
-| art-w-luoshenfutu | — | прогноз |
-| art-w-benmatu | — | прогноз |
-| art-w-lantingxu | 1 | прогноз |
-| art-w-jizhiwengao | — | прогноз |
-| art-w-xuanmita | — | прогноз |
-| art-w-jiuchenggong | — | прогноз |
+| строка | author | другие | олимпиада |
+|---|---|---|---|
+| art-w-qingmingshanghetu | × | — | да |
+| art-w-qianlijiangshantu | × | — | прогноз |
+| art-w-luoshenfutu | × | — | прогноз |
+| art-w-benmatu | × | — | прогноз |
+| art-w-lantingxu | × | 1 | прогноз |
+| art-w-jizhiwengao | × | — | прогноз |
+| art-w-xuanmita | × | — | прогноз |
+| art-w-jiuchenggong | × | — | прогноз |
+| art-w-ru-troitsa | — | — | прогноз |
+| art-w-ru-pompeii | 1 | — | прогноз |
+| art-w-ru-ninthwave | 1 | — | прогноз |
+| art-w-ru-morning | 1 | — | прогноз |
+| art-w-ru-rooks | 1 | — | прогноз |
+| art-w-ru-eternalpeace | 1 | — | прогноз |
+| art-w-ru-burlaki | 1 | — | прогноз |
+| art-w-ru-morozova | — | — | прогноз |
+| art-w-ru-streltsy | 1 | — | прогноз |
+| art-w-ru-bogatyri | — | — | да |
+| art-w-ru-peaches | 1 | — | прогноз |
+| art-w-ru-blacksquare | — | — | прогноз |
 
 #### Таблица `terms`
 
@@ -799,8 +1009,6 @@
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
 - painting-q06 — Какой китайский художник особенно прославился бамбуком, написанным тушью?
-
-Российские строки (разбирает российская тема): вопросов 14.
 
 ### Люди (`people`)
 
@@ -832,6 +1040,11 @@
 | sci-qianxuesen | 1 | — | прогноз |
 | sci-yuanlongping | 1 | — | прогноз |
 | sci-tuyouyou | 1 | — | прогноз |
+| sci-ru-lomonosov | — | — | прогноз |
+| sci-ru-mendeleev | 1 | — | прогноз |
+| sci-ru-pavlov | 1 | — | прогноз |
+| sci-ru-lobachevsky | 1 | — | прогноз |
+| sci-ru-popov | 1 | — | прогноз |
 
 #### Таблица `travelers`
 
@@ -843,6 +1056,18 @@
 | trv-zhenghe | 1 | — | да |
 | trv-xuanzang | 1 | — | прогноз |
 | trv-xuxiake | × | — | прогноз |
+
+#### Таблица `composers`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | work | другие | олимпиада |
+|---|---|---|---|
+| cmp-ru-glinka | — | — | прогноз |
+| cmp-ru-tchaikovsky | 1 | — | прогноз |
+| cmp-ru-mussorgsky | 1 | — | прогноз |
+| cmp-ru-rimsky-korsakov | 1 | — | прогноз |
+| cmp-ru-rachmaninoff | 1 | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
@@ -897,38 +1122,61 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | region | nickname | другие | олимпиада |
-|---|---|---|---|---|
-| city-guangzhou | — | — | 1 | да |
-| city-jinan | — | — | 1 | да |
-| city-lasa | — | — | 1 | да |
-| city-fuzhou | — | — | — | прогноз |
-| city-nanjing | — | × | 1 | да |
-| city-chengdu | — | — | 1 | да |
-| city-hangzhou | — | × | 1 | да |
-| city-xian | — | × | — | прогноз |
-| city-kunming | — | 1 | — | прогноз |
-| city-haerbin | — | 1 | — | прогноз |
-| city-wuhan | — | — | 1 | прогноз |
-| city-shanghai | — | × | 2 | да |
-| city-beijing | — | × | 1 | да |
-| city-tianjin | — | × | — | да |
-| city-chongqing | — | — | 2 | да |
-| city-luoyang | — | — | — | прогноз |
-| city-jingdezhen | — | — | — | да |
-| city-suzhou | — | 1 | — | прогноз |
-| city-guiyang | — | — | — | прогноз |
-| city-shenzhen | — | — | — | прогноз |
+| строка | region | nickname | river | другие | олимпиада |
+|---|---|---|---|---|---|
+| city-guangzhou | — | — | × | 1 | да |
+| city-jinan | — | — | × | 1 | да |
+| city-lasa | — | — | × | 1 | да |
+| city-fuzhou | — | — | × | — | прогноз |
+| city-nanjing | — | × | × | 1 | да |
+| city-chengdu | — | — | × | 1 | да |
+| city-hangzhou | — | × | × | 1 | да |
+| city-xian | — | × | × | — | прогноз |
+| city-kunming | — | 1 | × | — | прогноз |
+| city-haerbin | — | 1 | × | — | прогноз |
+| city-wuhan | — | — | × | 1 | прогноз |
+| city-shanghai | — | × | × | 2 | да |
+| city-beijing | — | × | × | 1 | да |
+| city-tianjin | — | × | × | — | да |
+| city-chongqing | — | — | × | 2 | да |
+| city-luoyang | — | — | × | — | прогноз |
+| city-jingdezhen | — | — | × | — | да |
+| city-suzhou | — | 1 | × | — | прогноз |
+| city-guiyang | — | — | × | — | прогноз |
+| city-shenzhen | — | — | × | — | прогноз |
+| city-ru-moscow | × | × | 1 | 1 | да |
+| city-ru-saint-petersburg | × | 1 | 1 | 1 | да |
+| city-ru-nizhny-novgorod | × | × | — | 1 | да |
+| city-ru-kazan | 1 | 1 | — | — | прогноз |
+| city-ru-volgograd | × | × | × | 1 | да |
+| city-ru-tula | × | × | × | 1 | да |
+| city-ru-vladimir | × | × | × | 1 | прогноз |
+| city-ru-sochi | × | × | × | — | да |
+| city-ru-yekaterinburg | × | × | — | 1 | да |
+| city-ru-novosibirsk | × | × | — | 1 | да |
+| city-ru-irkutsk | × | × | — | 1 | да |
+| city-ru-yakutsk | × | × | × | 1 | прогноз |
+| city-ru-elista | × | × | × | 1 | прогноз |
+| city-ru-blagoveshchensk | × | × | 1 | — | да |
+| city-ru-vladivostok | × | × | × | 1 | прогноз |
 
 #### Вопросы о строках вне ядра
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
 - provinces-q53 — Какой город Китая носит прозвище 星城, «город звёзд»?
-
-Российские строки (разбирает российская тема): вопросов 23.
+- 2022-23-zak-7 — Какой из нижеперечисленных городов является столицей Республики Башкортостан (РФ)?
 
 ### Космос (`space`)
+
+#### Таблица `missions`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | year | другие | олимпиада |
+|---|---|---|---|
+| mis-sputnik1 | 1 | — | да |
+| mis-mir | × | 1 | прогноз |
 
 #### Таблица `people`
 
@@ -939,16 +1187,19 @@
 | ppl-yangliwei | 1 | × | — | да |
 | ppl-zhaizhigang | 1 | × | — | прогноз |
 | ppl-liuyang | 1 | × | — | прогноз |
+| ppl-gagarin | — | 1 | — | да |
+| ppl-tereshkova | 1 | — | — | прогноз |
+| ppl-leonov | 1 | — | — | прогноз |
+| ppl-korolev | 1 | × | — | прогноз |
+| ppl-tsiolkovsky | 1 | × | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
-- space-q14 — На каком корабле Юрий Гагарин 12 апреля 1961 года совершил первый в мире полёт человека в космос?
-- space-q15 — Чей полёт на корабле «Восток-6» в июне 1963 года длился трое суток — 48 витков вокруг Земли?
-- space-q17 — Под чьим руководством созданы первый искусственный спутник Земли и корабль, на котором полетел первый космонавт?
+- нет
 
-Российские строки (разбирает российская тема): вопросов 1.
+Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 7.
 
 ## Связи
 
@@ -956,9 +1207,23 @@
 
 Строки ядра без ссылок наружу и на себя.
 
+- cinema/works/cin-ru-crocodile-gena
+- cinema/works/cin-ru-hedgehog-fog
+- cinema/works/cin-ru-irony-of-fate
+- cinema/works/cin-ru-moscow-tears
+- cinema/works/cin-ru-nu-pogodi
+- cinema/works/cin-ru-potemkin
+- crafts/crafts/cr-ru-pavlovo-posad
 - crafts/folk/fk-jianzhi
+- crafts/folk/fk-ru-dymkovo
+- cuisine/drinks/cu-ru-kvas
 - cuisine/savory/cu-cn-beijing-kaoya
 - cuisine/savory/cu-cn-pai-huanggua
+- cuisine/savory/cu-ru-borscht
+- cuisine/savory/cu-ru-okroshka
+- cuisine/savory/cu-ru-olivier
+- cuisine/savory/cu-ru-shashlyk
+- cuisine/savory/cu-ru-shchi
 - cuisine/staples/cu-cn-changfen
 - cuisine/staples/cu-cn-daoxiaomian
 - cuisine/staples/cu-cn-guoqiaomixian
@@ -970,24 +1235,39 @@
 - cuisine/staples/cu-cn-xiaolongbao
 - cuisine/staples/cu-cn-yangzhouchaofan
 - cuisine/staples/cu-cn-youtiao
+- cuisine/staples/cu-ru-bliny
+- cuisine/staples/cu-ru-pelmeni
 - cuisine/sweets/cu-cn-tanghulu
 - cuisine/teatypes/tt-white
 - cuisine/teatypes/tt-yellow
 - ethnos/dialects/dia-kejia
 - ethnos/heritage/her-cn-gesar
 - ethnos/heritage/her-cn-manas
+- ethnos/heritage/her-ru-domra
+- ethnos/heritage/her-ru-gusli
 - ethnos/peoples/ppl-cn-hui
+- ethnos/peoples/ppl-ru-tatars
 - holidays/holidays/hol-ertong
 - holidays/holidays/hol-funv
 - holidays/holidays/hol-guoqing
 - holidays/holidays/hol-jiaoshi
 - holidays/holidays/hol-laodong
+- holidays/holidays/hol-ru-eluosi
+- holidays/holidays/hol-ru-shengdan
+- holidays/holidays/hol-ru-tuanjie
+- holidays/holidays/hol-ru-zhishi
+- holidays/holidays/hol-ru-zuguo
 - holidays/holidays/hol-yuandan
 - landmarks/fortifications/lm-cn-great-wall
 - landmarks/fortifications/lm-cn-xian-wall
+- landmarks/fortifications/lm-ru-kazan-kremlin
+- landmarks/fortifications/lm-ru-moscow-kremlin
+- landmarks/fortifications/lm-ru-peter-paul-fortress
 - landmarks/gardens/lm-cn-summer-palace-garden
 - landmarks/gardens/lm-cn-yuanmingyuan
 - landmarks/gardens/lm-cn-zhuozheng-garden
+- landmarks/gardens/lm-ru-alexander-garden-moscow
+- landmarks/gardens/lm-ru-peterhof-lower-park
 - landmarks/intangible/int-guqin
 - landmarks/intangible/int-jieqi
 - landmarks/intangible/int-jingju
@@ -1002,6 +1282,9 @@
 - landmarks/palaces/lm-cn-beijing-gugong
 - landmarks/palaces/lm-cn-chengde-resort
 - landmarks/palaces/lm-cn-potala
+- landmarks/palaces/lm-ru-armoury
+- landmarks/palaces/lm-ru-catherine-palace
+- landmarks/palaces/lm-ru-winter-palace
 - landmarks/sacred/lm-cn-dayan
 - landmarks/sacred/lm-cn-longmen
 - landmarks/sacred/lm-cn-mogao
@@ -1009,15 +1292,53 @@
 - landmarks/sacred/lm-cn-shaolin
 - landmarks/sacred/lm-cn-tiantan
 - landmarks/sacred/lm-cn-yungang
+- landmarks/sacred/lm-ru-annunciation-kremlin
+- landmarks/sacred/lm-ru-archangel-kremlin
+- landmarks/sacred/lm-ru-assumption-kremlin
+- landmarks/sacred/lm-ru-christ-saviour
+- landmarks/sacred/lm-ru-kazan-cathedral
+- landmarks/sacred/lm-ru-kizhi-pogost
+- landmarks/sacred/lm-ru-saviour-blood
+- landmarks/sacred/lm-ru-st-basil
+- landmarks/sacred/lm-ru-st-isaac
+- landmarks/sacred/lm-ru-trinity-sergius
 - landmarks/sites/lm-cn-lijiang
 - landmarks/sites/lm-cn-pingyao
 - landmarks/sites/lm-cn-sun-moon-lake
 - literature/authors/lit-a-caocao
 - literature/authors/lit-a-dufu
 - literature/authors/lit-a-libai
+- literature/authors/lit-a-ru-brodsky
 - literature/authors/lit-a-taoyuanming
 - literature/works/lit-w-mulanci
 - literature/works/lit-w-shijing
+- modern-history/events/ev-ru-crimea
+- modern-history/events/ev-ru-february
+- modern-history/events/ev-ru-leningrad
+- modern-history/events/ev-ru-russojapanese
+- modern-history/events/ev-ru-stalingrad
+- modern-history/events/ev-ru-ussr
+- modern-history/events/ev-ru-ussr-end
+- modern-history/events/ev-ru-ww2
+- modern-history/figures/per-ru-gorbachev
+- modern-history/figures/per-ru-khrushchev
+- modern-history/figures/per-ru-stalin
+- modern-history/figures/per-ru-suvorov
+- modern-history/figures/per-ru-yeltsin
+- modern-history/figures/per-ru-zhukov
+- modern-history/treaties/tr-ru-aihui
+- modern-history/treaties/tr-ru-nerchinsk
+- money/banknotes/rub-10-1997
+- money/banknotes/rub-100-1997
+- money/banknotes/rub-100-2022
+- money/banknotes/rub-1000-1997
+- money/banknotes/rub-1000-2025
+- money/banknotes/rub-200-2017
+- money/banknotes/rub-5-1997
+- money/banknotes/rub-50-1997
+- money/banknotes/rub-500-1997
+- money/banknotes/rub-5000-1997
+- money/banknotes/rub-5000-2023
 - myths/figures/fig-bainiangzi
 - myths/figures/fig-cangjie
 - myths/figures/fig-fuxi
@@ -1030,19 +1351,29 @@
 - myths/figures/fig-niulang
 - myths/figures/fig-nuwa
 - myths/figures/fig-pangu
+- myths/figures/fig-ru-snegurochka
+- myths/figures/fig-ru-zhar-ptitsa
 - myths/figures/fig-shennong
 - myths/figures/fig-zhinv
 - nature/engineering/eng-gangzhuao
 - nature/engineering/eng-nanshuibeidiao
 - nature/engineering/eng-qingzang-railway
+- nature/lakes/lake-ru-ladoga
 - nature/landforms/land-changjiang
 - nature/landforms/land-dongbei
 - nature/landforms/land-huabei
 - nature/landforms/land-qingzang
 - nature/landforms/land-yungui
 - nature/mountains/mtn-kunlun
+- nature/mountains/mtn-ru-caucasus
+- nature/mountains/mtn-ru-elbrus
+- nature/mountains/mtn-ru-ural
 - nature/mountains/mtn-ximalaya
 - nature/seas/sea-huanghai
+- nature/seas/sea-ru-black
+- nature/seas/sea-ru-kamchatka
+- nature/seas/sea-ru-taymyr
+- nature/seas/sea-ru-yamal
 - nature/waters/wat-dayunhe
 - nature/waters/wat-talimuhe
 - nature/waters/wat-yarlung
@@ -1057,11 +1388,21 @@
 - painting/terms/art-t-xingshu
 - painting/terms/art-t-xuanzhi
 - painting/terms/art-t-zhuanshu
+- people/composers/cmp-ru-glinka
+- people/composers/cmp-ru-mussorgsky
+- people/composers/cmp-ru-rachmaninoff
+- people/composers/cmp-ru-rimsky-korsakov
+- people/composers/cmp-ru-tchaikovsky
 - people/scholars/sci-bisheng
 - people/scholars/sci-cailun
 - people/scholars/sci-huatuo
 - people/scholars/sci-lishizhen
 - people/scholars/sci-qianxuesen
+- people/scholars/sci-ru-lobachevsky
+- people/scholars/sci-ru-lomonosov
+- people/scholars/sci-ru-mendeleev
+- people/scholars/sci-ru-pavlov
+- people/scholars/sci-ru-popov
 - people/scholars/sci-tuyouyou
 - people/scholars/sci-yuanlongping
 - people/scholars/sci-zhangheng
@@ -1073,21 +1414,32 @@
 - people/travelers/trv-xuxiake
 - people/travelers/trv-zhangqian
 - people/travelers/trv-zhenghe
+- provinces/cities/city-ru-blagoveshchensk
+- provinces/cities/city-ru-elista
+- provinces/cities/city-ru-sochi
+- provinces/cities/city-ru-tula
+- provinces/cities/city-ru-vladimir
+- provinces/cities/city-ru-vladivostok
+- provinces/cities/city-ru-volgograd
+- provinces/cities/city-ru-yekaterinburg
 - provinces/provinces/prov-aomen
 - provinces/provinces/prov-ningxia
+- space/missions/mis-mir
+- space/missions/mis-sputnik1
+- space/people/ppl-korolev
 - space/people/ppl-liuyang
+- space/people/ppl-tsiolkovsky
 - space/people/ppl-zhaizhigang
 
 ### Ссылка из ядра ведёт в тему без каркаса
 
-- holidays/holidays/hol-jianjun → modern-history/events/ev-nanchang
-- holidays/holidays/hol-qingnian → modern-history/events/ev-wusi
 - holidays/holidays/hol-qixi → myths/stories/story-niulang-zhinv
 - holidays/holidays/hol-zhongqiu → myths/stories/story-change-benyue
-- space/people/ppl-yangliwei → space/missions/mis-shenzhou5
 
 ### Ссылка из ядра ведёт в строку вне ядра
 
+- crafts/crafts/cr-ru-gzhel → ethnos/heritage/her-ru-gzhel
+- crafts/folk/fk-ru-matryoshka → ethnos/heritage/her-ru-matryoshka
 - cuisine/savory/cu-cn-yuxiang-rousi → holidays/customs/cus-yuxiangrousi
 - dynasties/dynasties/dyn-dongzhou → dynasties/rulers/rul-zhoupingwang
 - dynasties/dynasties/dyn-nansong → dynasties/rulers/rul-zhaogou
@@ -1096,18 +1448,43 @@
 - dynasties/dynasties/dyn-tang → dynasties/rulers/rul-liyuan
 - dynasties/dynasties/dyn-xia → dynasties/rulers/rul-yu
 - dynasties/dynasties/dyn-xizhou → dynasties/rulers/rul-zhouwuwang
+- dynasties/rulers/rul-ru-alex1 → dynasties/dynasties/dyn-ru-romanov
+- dynasties/rulers/rul-ru-alex2 → dynasties/dynasties/dyn-ru-romanov
+- dynasties/rulers/rul-ru-cat2 → dynasties/dynasties/dyn-ru-romanov
+- dynasties/rulers/rul-ru-donskoy → dynasties/dynasties/dyn-ru-rurik
+- dynasties/rulers/rul-ru-ivan3 → dynasties/dynasties/dyn-ru-rurik
+- dynasties/rulers/rul-ru-ivan4 → dynasties/dynasties/dyn-ru-rurik
+- dynasties/rulers/rul-ru-mikhail1 → dynasties/dynasties/dyn-ru-romanov
+- dynasties/rulers/rul-ru-nevsky → dynasties/dynasties/dyn-ru-rurik
+- dynasties/rulers/rul-ru-nik2 → dynasties/dynasties/dyn-ru-romanov
+- dynasties/rulers/rul-ru-peter1 → dynasties/dynasties/dyn-ru-romanov
+- dynasties/rulers/rul-ru-rurik → dynasties/dynasties/dyn-ru-rurik
+- dynasties/rulers/rul-ru-vladimir1 → dynasties/dynasties/dyn-ru-rurik
+- dynasties/rulers/rul-ru-yaroslav → dynasties/dynasties/dyn-ru-rurik
 - ethnos/dialects/dia-xiang → provinces/cities/city-changsha
 - ethnos/dwellings/dw-diaojiaolou → ethnos/peoples/ppl-cn-tujia
 - ethnos/heritage/her-cn-dong-song → ethnos/peoples/ppl-cn-dong
+- ethnos/heritage/her-ru-olonkho → ethnos/peoples/ppl-ru-sakha
 - ethnos/peoples/ppl-cn-korean → ethnos/heritage/her-cn-korean-farmers-dance
 - ethnos/peoples/ppl-cn-manchu → ethnos/heritage/her-cn-manchu-papercut
 - ethnos/peoples/ppl-cn-tibetan → ethnos/heritage/her-cn-zangniang-thangka
 - ethnos/peoples/ppl-cn-zhuang → ethnos/heritage/her-cn-zhuang-tianqin
+- ethnos/peoples/ppl-ru-bashkirs → ethnos/heritage/her-ru-kurai
 - holidays/figures/fig-jiezitui → holidays/holidays/hol-hanshi
 - holidays/holidays/hol-huoba → ethnos/peoples/ppl-cn-yi
+- holidays/holidays/hol-jianjun → modern-history/events/ev-nanchang
+- holidays/holidays/hol-qingnian → modern-history/events/ev-wusi
+- literature/authors/lit-a-ru-bunin → literature/works/lit-w-ru-arsenyev
+- literature/authors/lit-a-ru-lermontov → literature/works/lit-w-ru-demon
+- literature/works/lit-w-ru-gulag → literature/authors/lit-a-ru-solzhenitsyn
 - modern-history/figures/per-sunzhongshan → holidays/figures/fig-sunzhongshan
 - modern-history/figures/per-zhouenlai → literature/authors/lit-a-zhouenlai
+- modern-history/treaties/tr-ru-2001 → modern-history/figures/per-jiangzemin
+- modern-history/treaties/tr-ru-beijing → modern-history/events/ev-yapian2
+- money/banknotes/rub-2000-2017 → nature/engineering/eng-ru-russky-bridge
 - nature/waters/wat-heilongjiang → nature/seas/sea-ru-okhotsk
+- nature/waters/wat-ru-lena → nature/seas/sea-ru-laptev
+- nature/waters/wat-ru-yenisei → nature/mountains/mtn-ru-sayan
 - provinces/cities/city-haerbin → nature/waters/wat-songhuajiang
 - provinces/cities/city-hangzhou → nature/waters/wat-qiantangjiang
 - provinces/cities/city-shanghai → nature/waters/wat-huangpujiang
@@ -1117,3 +1494,7 @@
 - provinces/provinces/prov-shandong → nature/mountains/mtn-taihang
 - provinces/provinces/prov-shanxi → nature/mountains/mtn-taihang
 - provinces/provinces/prov-zhejiang → nature/waters/wat-qiantangjiang
+- space/people/ppl-gagarin → space/missions/mis-vostok1
+- space/people/ppl-leonov → space/missions/mis-voskhod2
+- space/people/ppl-tereshkova → space/missions/mis-vostok6
+- space/people/ppl-yangliwei → space/missions/mis-shenzhou5

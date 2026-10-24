@@ -17,3 +17,6 @@
 [[myths.fig-mengjiangnu]]
 [[myths.fig-bainiangzi]]
 [[myths.fig-mulan]]
+[[myths.fig-ru-ded-moroz]]
+[[myths.fig-ru-snegurochka]]
+[[myths.fig-ru-zhar-ptitsa]]

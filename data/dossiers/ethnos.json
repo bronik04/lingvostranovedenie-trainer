@@ -1747,10 +1747,28 @@
               "quote": "Этнос: Русские … хохломской росписи",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "俄罗斯宗教 — 中国社会科学院俄罗斯东欧中亚研究网",
+              "url": "http://euroasia.cssn.cn/eoybl/eoybl_gggk/gggk_els/200911/t20091130_1846421.shtml",
+              "quote": "俄罗斯国内大多数居民信奉东正教，教徒约有7000万，遍及全国，约占全国人口一半左右。主要是俄罗斯人、乌克兰人、白俄罗斯人",
+              "authority": "academic",
+              "checkedAt": "2026-10-24"
             }
           ],
           "olympiad": [],
-          "heritage_note": "Поморская резьба по дереву — местная традиция русского населения Беломорья."
+          "heritage_note": "Поморская резьба по дереву — местная традиция русского населения Беломорья.",
+          "core": true,
+          "skipSides": [
+            "region"
+          ],
+          "religion": {
+            "zh": "东正教",
+            "ru": [
+              "православие"
+            ],
+            "gloss": "Православие — традиционная религия русских"
+          }
         },
         {
           "id": "ppl-ru-tatars",
@@ -1801,10 +1819,35 @@
               "quote": "ремеслах, которыми издавна славились татарские мастера и мастерицы. В фокусе внимания – ювелирное искусство, вышивка (в том числе золотное шитье, тамбур), кожаная мозаика.",
               "checkedAt": "2026-10-16",
               "authority": "official"
+            },
+            {
+              "title": "Народы России — Культура.РФ",
+              "url": "https://www.culture.ru/s/narody-rossii/",
+              "quote": "Большинство верующих — мусульмане, но есть и православные татары — кряшены.",
+              "authority": "official",
+              "checkedAt": "2026-10-24"
+            },
+            {
+              "title": "俄罗斯宗教 — 中国社会科学院俄罗斯东欧中亚研究网",
+              "url": "http://euroasia.cssn.cn/eoybl/eoybl_gggk/gggk_els/200911/t20091130_1846421.shtml",
+              "quote": "其主要信徒是伏尔加河中下游的巴什基尔人、鞑靼人 … 俄罗斯大多数伊斯兰教徒是逊尼教派。",
+              "authority": "academic",
+              "checkedAt": "2026-10-24"
             }
           ],
           "olympiad": [],
-          "heritage_note": "Искусство кожаной мозаики. Кожаная мозаика — традиция татарского декоративного искусства"
+          "heritage_note": "Искусство кожаной мозаики. Кожаная мозаика — традиция татарского декоративного искусства",
+          "core": true,
+          "skipSides": [
+            "region"
+          ],
+          "religion": {
+            "zh": "伊斯兰教",
+            "ru": [
+              "ислам"
+            ],
+            "gloss": "Ислам — религия большинства верующих татар (православные татары — кряшены)"
+          }
         },
         {
           "id": "ppl-ru-bashkirs",
@@ -1870,9 +1913,34 @@
               "quote": "男子一般手拿“库莱”（类似竖笛的乐器）",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "О Республике — Официальный портал Республики Башкортостан",
+              "url": "https://www.bashkortostan.ru/republic/about/",
+              "quote": "С X века среди башкир распространяется ислам, ставший в XIV веке господствующей религией",
+              "authority": "official",
+              "checkedAt": "2026-10-24"
+            },
+            {
+              "title": "俄罗斯宗教 — 中国社会科学院俄罗斯东欧中亚研究网",
+              "url": "http://euroasia.cssn.cn/eoybl/eoybl_gggk/gggk_els/200911/t20091130_1846421.shtml",
+              "quote": "其主要信徒是伏尔加河中下游的巴什基尔人、鞑靼人 … 俄罗斯大多数伊斯兰教徒是逊尼教派。",
+              "authority": "academic",
+              "checkedAt": "2026-10-24"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ],
+          "religion": {
+            "zh": "伊斯兰教",
+            "ru": [
+              "ислам"
+            ],
+            "gloss": "Ислам — традиционная религия башкир"
+          }
         },
         {
           "id": "ppl-ru-chuvash",
@@ -1992,9 +2060,41 @@
               "quote": "До 1931 года старомонгольская письменность употреблялась в официальном документообороте … В 1931 году бурятская письменность … была переведена на латинскую графику … В 1939 году за основу бурятской письменности была взята кириллица с добавлением трех дополнительных букв: Һһ, Өө и Үү.",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Народы России — Культура.РФ",
+              "url": "https://www.culture.ru/s/narody-rossii/",
+              "quote": "Долгое время они исповедовали тибетско-монгольский буддизм-ламаизм.",
+              "authority": "official",
+              "checkedAt": "2026-10-24"
+            },
+            {
+              "title": "俄罗斯宗教 — 中国社会科学院俄罗斯东欧中亚研究网",
+              "url": "http://euroasia.cssn.cn/eoybl/eoybl_gggk/gggk_els/200911/t20091130_1846421.shtml",
+              "quote": "在俄罗斯流行的佛教主要是17世纪由蒙藏地区传入的藏语系佛教（俗称喇嘛教）。 … 教徒主要分布在西伯利亚和远东的布里亚特、卡尔梅克和图瓦三个共和国",
+              "authority": "academic",
+              "checkedAt": "2026-10-24"
+            },
+            {
+              "title": "[地区]藏传佛教在前苏联 — 中国西藏网",
+              "url": "http://media.tibet.cn/09zcfj/wzz/200907/t20090701_485898.htm",
+              "quote": "前苏联境内信奉藏传佛教的主要是布里亚特蒙古人、卡尔梅克人和图瓦人。",
+              "authority": "official",
+              "checkedAt": "2026-10-24"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ],
+          "religion": {
+            "zh": "藏传佛教",
+            "ru": [
+              "тибетский буддизм"
+            ],
+            "gloss": "Тибетский буддизм (в старых текстах — «ламаизм») — традиционная религия бурят"
+          }
         },
         {
           "id": "ppl-ru-sakha",
@@ -2115,9 +2215,41 @@
               "quote": "Тувинское горловое пение хоомей — музыкально-поэтический вид вокального музицирования",
               "checkedAt": "2026-10-16",
               "authority": "official"
+            },
+            {
+              "title": "История — Официальный портал Республики Тыва",
+              "url": "https://rtyva.ru/region/history/",
+              "quote": "Конец XVIII в. — ламаизм утверждается в Туве в качестве официальной религии.",
+              "authority": "official",
+              "checkedAt": "2026-10-24"
+            },
+            {
+              "title": "俄罗斯宗教 — 中国社会科学院俄罗斯东欧中亚研究网",
+              "url": "http://euroasia.cssn.cn/eoybl/eoybl_gggk/gggk_els/200911/t20091130_1846421.shtml",
+              "quote": "尔后佛教又从蒙古、西藏传入俄国叶尼塞河上游的图瓦 … 教徒主要分布在西伯利亚和远东的布里亚特、卡尔梅克和图瓦三个共和国",
+              "authority": "academic",
+              "checkedAt": "2026-10-24"
+            },
+            {
+              "title": "[地区]藏传佛教在前苏联 — 中国西藏网",
+              "url": "http://media.tibet.cn/09zcfj/wzz/200907/t20090701_485898.htm",
+              "quote": "前苏联境内信奉藏传佛教的主要是布里亚特蒙古人、卡尔梅克人和图瓦人。 … 尽管如此，传统的萨满教依然流行，众多的萨满在民间相当活跃。",
+              "authority": "official",
+              "checkedAt": "2026-10-24"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ],
+          "religion": {
+            "zh": "藏传佛教",
+            "ru": [
+              "тибетский буддизм"
+            ],
+            "gloss": "Тибетский буддизм («ламаизм») — главная религия тувинцев; жив и шаманизм"
+          }
         },
         {
           "id": "ppl-ru-kalmyks",
@@ -2177,9 +2309,48 @@
               "quote": "卡尔梅克《江格尔》",
               "checkedAt": "2026-10-17",
               "authority": "academic"
+            },
+            {
+              "title": "Народы России — Культура.РФ",
+              "url": "https://www.culture.ru/s/narody-rossii/",
+              "quote": "Они также исповедовали буддизм-ламаизм",
+              "authority": "official",
+              "checkedAt": "2026-10-24"
+            },
+            {
+              "title": "卡尔梅克——欧洲唯一信奉佛教的国家 — 中国宗教学术网（中国社会科学院世界宗教研究所）",
+              "url": "http://iwr.cssn.cn/xw/201403/t20140321_3047919.shtml",
+              "quote": "卡尔梅克人至今还信奉藏传佛教，讲卫拉特蒙古语。",
+              "authority": "academic",
+              "checkedAt": "2026-10-24"
+            },
+            {
+              "title": "俄罗斯宗教 — 中国社会科学院俄罗斯东欧中亚研究网",
+              "url": "http://euroasia.cssn.cn/eoybl/eoybl_gggk/gggk_els/200911/t20091130_1846421.shtml",
+              "quote": "在俄罗斯流行的佛教主要是17世纪由蒙藏地区传入的藏语系佛教（俗称喇嘛教）。",
+              "authority": "academic",
+              "checkedAt": "2026-10-24"
+            },
+            {
+              "title": "[地区]藏传佛教在前苏联 — 中国西藏网",
+              "url": "http://media.tibet.cn/09zcfj/wzz/200907/t20090701_485898.htm",
+              "quote": "前苏联境内信奉藏传佛教的主要是布里亚特蒙古人、卡尔梅克人和图瓦人。",
+              "authority": "official",
+              "checkedAt": "2026-10-24"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ],
+          "religion": {
+            "zh": "藏传佛教",
+            "ru": [
+              "тибетский буддизм"
+            ],
+            "gloss": "Тибетский буддизм (в старых текстах — «ламаизм») — традиционная религия калмыков"
+          }
         },
         {
           "id": "ppl-ru-karelians",
@@ -2548,7 +2719,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "people"
+          ]
         },
         {
           "id": "her-ru-gzhel",
@@ -2670,7 +2845,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "people"
+          ]
         },
         {
           "id": "her-ru-yelets-lace",
@@ -2860,7 +3039,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "her-ru-tuva-khoomei",
@@ -2921,7 +3101,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "her-ru-kalmyk-jangar",
@@ -2989,7 +3170,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "her-ru-balalaika",
@@ -3050,7 +3232,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "people"
+          ]
         },
         {
           "id": "her-ru-gusli",
@@ -3104,7 +3290,8 @@
             }
           ],
           "olympiad": [],
-          "community": "Носители русской народной музыкальной традиции"
+          "community": "Носители русской народной музыкальной традиции",
+          "core": true
         },
         {
           "id": "her-ru-spoon-dance",
@@ -4926,7 +5113,8 @@
               "Эпосы и повествовательные традиции"
             ],
             "gloss": "Эпосы и повествовательные традиции"
-          }
+          },
+          "core": true
         },
         {
           "id": "her-ru-kalevala",
@@ -5099,7 +5287,8 @@
               "Традиционные инструменты и игра на них"
             ],
             "gloss": "Традиционные инструменты и игра на них"
-          }
+          },
+          "core": true
         },
         {
           "id": "her-cn-jangar",

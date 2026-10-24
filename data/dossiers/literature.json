@@ -17,7 +17,8 @@
       "sides": [
         "work",
         "title",
-        "alias"
+        "alias",
+        "prize"
       ],
       "rows": [
         {
@@ -2383,7 +2384,8 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "alias"
+            "alias",
+            "prize"
           ]
         },
         {
@@ -2744,7 +2746,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-a-ru-lermontov",
@@ -2820,6 +2823,10 @@
           "olympiad": [
             "2021-22-mun-q0b125d",
             "2025-26-mun-3"
+          ],
+          "core": true,
+          "skipSides": [
+            "title"
           ]
         },
         {
@@ -2876,7 +2883,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-a-ru-tolstoy",
@@ -2932,7 +2940,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-a-ru-dostoevsky",
@@ -3000,6 +3009,10 @@
           ],
           "olympiad": [
             "2018-19-mun-53"
+          ],
+          "core": true,
+          "skipSides": [
+            "title"
           ]
         },
         {
@@ -3081,6 +3094,10 @@
             "2023-24-zak-6",
             "2021-22-shk-qa608ac",
             "2023-24-reg-2"
+          ],
+          "core": true,
+          "skipSides": [
+            "alias"
           ]
         },
         {
@@ -3158,7 +3175,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "title"
+          ]
         },
         {
           "id": "lit-a-ru-sholokhov",
@@ -3234,7 +3255,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-a-ru-bunin",
@@ -3292,7 +3314,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "work"
+          ]
         },
         {
           "id": "lit-a-ru-pasternak",
@@ -3357,7 +3383,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-a-ru-mayakovsky",
@@ -3475,7 +3502,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-a-ru-turgenev",
@@ -3530,7 +3558,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-a-ru-solzhenitsyn",
@@ -3650,7 +3679,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-a-qianzhongshu",
@@ -3787,7 +3817,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "prize"
+          ]
         },
         {
           "id": "lit-a-chenzhongshi",
@@ -3943,6 +3976,7 @@
       },
       "sides": [
         "author",
+        "genre",
         "hero"
       ],
       "rows": [
@@ -4013,7 +4047,10 @@
           "olympiad": [
             "2019-20-mun-q5616d1"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-chuci",
@@ -4075,7 +4112,8 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "author"
+            "author",
+            "genre"
           ]
         },
         {
@@ -4133,7 +4171,8 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "author"
+            "author",
+            "genre"
           ]
         },
         {
@@ -4309,7 +4348,10 @@
           "olympiad": [
             "2023-24-zak-9"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-shuihuzhuan",
@@ -4417,7 +4459,8 @@
           ],
           "core": true,
           "skipSides": [
-            "author"
+            "author",
+            "genre"
           ]
         },
         {
@@ -4519,7 +4562,8 @@
           ],
           "core": true,
           "skipSides": [
-            "author"
+            "author",
+            "genre"
           ]
         },
         {
@@ -4603,7 +4647,10 @@
           "olympiad": [
             "2023-24-mun-38"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-jinpingmei",
@@ -5025,7 +5072,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-tangshisanbaishou",
@@ -5148,7 +5198,8 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "author"
+            "author",
+            "genre"
           ]
         },
         {
@@ -5217,7 +5268,8 @@
           ],
           "core": true,
           "skipSides": [
-            "author"
+            "author",
+            "genre"
           ]
         },
         {
@@ -5292,7 +5344,8 @@
           ],
           "core": true,
           "skipSides": [
-            "author"
+            "author",
+            "genre"
           ]
         },
         {
@@ -5375,7 +5428,8 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "author"
+            "author",
+            "genre"
           ]
         },
         {
@@ -5810,7 +5864,8 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "author"
+            "author",
+            "genre"
           ]
         },
         {
@@ -5883,7 +5938,8 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "author"
+            "author",
+            "genre"
           ]
         },
         {
@@ -5939,7 +5995,8 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "author"
+            "author",
+            "genre"
           ]
         },
         {
@@ -6172,7 +6229,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-w-ru-demon",
@@ -6286,7 +6344,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-ru-deadsouls",
@@ -6342,7 +6404,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-ru-inspector",
@@ -6397,7 +6463,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-w-ru-warpeace",
@@ -6453,7 +6520,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-ru-karenina",
@@ -6511,6 +6582,10 @@
           ],
           "olympiad": [
             "2025-26-reg-8"
+          ],
+          "core": true,
+          "skipSides": [
+            "genre"
           ]
         },
         {
@@ -6573,7 +6648,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-ru-karamazov",
@@ -6698,7 +6777,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-ru-seagull",
@@ -6750,7 +6833,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-ru-quietdon",
@@ -6812,7 +6899,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-ru-mother",
@@ -6864,7 +6955,11 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-ru-twelve",
@@ -6909,7 +7004,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-ru-fathers",
@@ -6964,7 +7063,11 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-ru-zhivago",
@@ -7019,7 +7122,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "lit-w-ru-gulag",
@@ -7070,7 +7177,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-w-ru-cloud",
