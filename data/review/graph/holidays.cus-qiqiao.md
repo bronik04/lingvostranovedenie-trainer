@@ -2,8 +2,6 @@
 
 Тема: [[holidays]]
 
-Не хватает сторон: holiday
-
 Связи:
 - [[holidays.hol-qixi]]
 

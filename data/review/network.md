@@ -359,7 +359,7 @@
 | cus-sailongzhou | × | 1 | да |
 | cus-saomu | 1 | — | прогноз |
 | cus-chazhuyu | 1 | — | прогноз |
-| cus-qiqiao | — | 1 | прогноз |
+| cus-qiqiao | × | 1 | прогноз |
 | cus-jizao | × | — | прогноз |
 
 #### Таблица `figures`
