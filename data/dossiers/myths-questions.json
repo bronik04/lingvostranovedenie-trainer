@@ -739,5 +739,97 @@
       "verdict": "accept",
       "note": "Ответ единственный, факты подтверждены (ir.nwnu.edu.cn: 诺夫哥罗德的客商…经过抽签萨特阔被抛进了大海…弹起了古斯里琴; опера — cssn). Набор слабый (Дед Мороз, Снегурочка, Жар-птица), но других российских строк нет."
     }
+  },
+  {
+    "id": "myths-q28",
+    "status": "accepted",
+    "topic": "Культура, традиции и праздники",
+    "fact": {
+      "table": "figures",
+      "row": "fig-nuwa",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "exclude": [
+      "fig-pangu",
+      "fig-shennong",
+      "fig-huangdi",
+      "fig-zhuanxu",
+      "fig-yao",
+      "fig-shun",
+      "fig-dayu",
+      "fig-kongzi",
+      "fig-fuxi",
+      "fig-houyi",
+      "fig-yudi",
+      "fig-cangjie",
+      "fig-kuafu",
+      "fig-gonggong",
+      "fig-chiyou",
+      "fig-xingtian",
+      "fig-wugang",
+      "fig-zhurong",
+      "fig-niulang",
+      "fig-liangshanbo",
+      "fig-yutu",
+      "fig-zhuyingtai",
+      "fig-mengjiangnu",
+      "fig-mulan",
+      "fig-guanyin",
+      "fig-hexiangu",
+      "fig-zhinv",
+      "fig-bainiangzi",
+      "fig-jingwei"
+    ],
+    "questionRu": "Какая богиня, по преданию, вылепила первых людей из жёлтой глины, а когда небо раскололось, залатала его камнями пяти цветов?",
+    "explanation": "Это Нюйва (女娲) — богиня-прародительница китайских преданий. Самые известные мифы о ней — «вылепила людей из глины» и «переплавила камни, чтобы залатать небо». В преданиях она сестра и супруга Фуси.",
+    "check": {
+      "verdict": "accept",
+      "note": "Ответ единственный (chinanews «“抟土造人”“炼石补天”»). «Какая богиня» при наборе с мужскими персонажами отсеивается по полу; у принятого myths-q15 («Какую богиню…») исключены все не-богини, повторяю тот же exclude: остаются 嫦娥, 西王母, 羲和. Связь с 2017-18-reg-3 (myths-q01: ответ 女娲造人, варианты 女娲造人/女娲补天 называют нашу героиню; наш текст пересказывает этот миф) — группа nuwa-creates-people. [проверяющий предложил правки; они внесены]"
+    }
+  },
+  {
+    "id": "myths-q29",
+    "status": "accepted",
+    "topic": "Культура, традиции и праздники",
+    "fact": {
+      "table": "figures",
+      "row": "fig-zhinv",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "exclude": [
+      "fig-pangu",
+      "fig-shennong",
+      "fig-huangdi",
+      "fig-zhuanxu",
+      "fig-yao",
+      "fig-shun",
+      "fig-dayu",
+      "fig-kongzi",
+      "fig-fuxi",
+      "fig-houyi",
+      "fig-yudi",
+      "fig-cangjie",
+      "fig-kuafu",
+      "fig-gonggong",
+      "fig-chiyou",
+      "fig-xingtian",
+      "fig-wugang",
+      "fig-zhurong",
+      "fig-niulang",
+      "fig-liangshanbo",
+      "fig-yutu"
+    ],
+    "questionRu": "Как зовут героиню легенды, внучку Небесного владыки, которая ткала облака, тайно спустилась на землю и стала женой пастуха, но её вернули на небо?",
+    "explanation": "Это Ткачиха — Чжинюй (织女), героиня легенды «Пастух и Ткачиха». По преданию, внучка Небесного владыки ткала на небе разноцветные облака, а потом тайно спустилась на землю и вышла замуж за пастуха. Разгневанный владыка вернул её на небо; с этой легендой связан праздник Цисицзе.",
+    "check": {
+      "verdict": "accept",
+      "note": "Ответ верен (news.cn «天帝的孙女织女…偷偷下到凡间，嫁给了河西的牛郎…天帝把织女捉回天宫»). Текст о героине, а набор содержит мужчин, в том числе самого «пастуха» 牛郎; повторяю exclude принятых myths-q19/q23. Наш текст пересказывает легенду 牛郎织女, а пояснение называет Цисицзе — ответ и вопрос myths-q21; группа niulang-zhinv-legend. [проверяющий предложил правки; они внесены]"
+    }
   }
 ]

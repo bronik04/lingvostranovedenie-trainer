@@ -172,12 +172,12 @@
 | строка | deed | другие | олимпиада |
 |---|---|---|---|
 | rul-qinshihuang | — | 2 | да |
-| rul-liubang | — | — | да |
+| rul-liubang | 1 | — | да |
 | rul-hanwudi | — | 1 | прогноз |
 | rul-yangjian | × | — | прогноз |
-| rul-tangtaizong | — | — | прогноз |
+| rul-tangtaizong | 1 | — | прогноз |
 | rul-wuzetian | — | 1 | прогноз |
-| rul-zhaokuangyin | — | — | прогноз |
+| rul-zhaokuangyin | 1 | — | прогноз |
 | rul-hubilie | — | — | прогноз |
 | rul-zhuyuanzhang | × | — | прогноз |
 | rul-kangxi | — | 1 | прогноз |
@@ -214,8 +214,8 @@
 | строка | holiday | другие | олимпиада |
 |---|---|---|---|
 | fig-quyuan | — | — | да |
-| fig-jiezitui | — | 1 | прогноз |
-| fig-nianshou | — | — | прогноз |
+| fig-jiezitui | 1 | 1 | прогноз |
+| fig-nianshou | 1 | — | прогноз |
 | fig-change | — | — | прогноз |
 
 #### Вопросы о строках вне ядра
@@ -326,15 +326,15 @@
 | lit-a-simaqian | — | × | × | 1 | да |
 | lit-a-caocao | — | × | × | 1 | да |
 | lit-a-taoyuanming | — | × | × | 1 | прогноз |
-| lit-a-libai | — | 1 | × | — | прогноз |
-| lit-a-dufu | — | 1 | × | 1 | да |
+| lit-a-libai | 1 | 1 | × | — | прогноз |
+| lit-a-dufu | 1 | 1 | × | 1 | да |
 | lit-a-luoguanzhong | — | × | × | — | прогноз |
 | lit-a-shinaian | — | × | × | 1 | да |
 | lit-a-wuchengen | — | × | × | 1 | прогноз |
 | lit-a-caoxueqin | — | × | × | — | прогноз |
-| lit-a-luxun | — | × | 1 | 1 | да |
-| lit-a-laoshe | — | × | × | 2 | да |
-| lit-a-moyan | — | × | × | 1 | прогноз |
+| lit-a-luxun | 1 | × | 1 | 1 | да |
+| lit-a-laoshe | 1 | × | × | 2 | да |
+| lit-a-moyan | 1 | × | × | 1 | прогноз |
 | lit-a-yuhua | — | × | × | 1 | прогноз |
 
 #### Вопросы о строках вне ядра
@@ -356,11 +356,11 @@
 
 | строка | idea | post | другие | олимпиада |
 |---|---|---|---|---|
-| per-linzexu | × | — | — | прогноз |
+| per-linzexu | × | 1 | — | прогноз |
 | per-hongxiuquan | × | — | — | прогноз |
 | per-lihongzhang | × | — | — | прогноз |
 | per-kangyouwei | — | × | — | прогноз |
-| per-sunzhongshan | — | — | 2 | да |
+| per-sunzhongshan | 1 | — | 3 | да |
 | per-yuanshikai | × | — | — | прогноз |
 | per-jiangjieshi | × | — | — | прогноз |
 | per-maozedong | 1 | — | — | прогноз |
@@ -401,7 +401,7 @@
 | строка | name | другие | олимпиада |
 |---|---|---|---|
 | fig-pangu | 2 | — | да |
-| fig-nuwa | — | — | прогноз |
+| fig-nuwa | 1 | — | прогноз |
 | fig-shennong | 1 | — | да |
 | fig-huangdi | 1 | — | да |
 | fig-dayu | 1 | — | да |
@@ -413,7 +413,7 @@
 | fig-gonggong | 1 | — | прогноз |
 | fig-jingwei | 1 | — | прогноз |
 | fig-niulang | — | — | прогноз |
-| fig-zhinv | — | — | прогноз |
+| fig-zhinv | 1 | — | прогноз |
 | fig-mengjiangnu | 1 | — | прогноз |
 | fig-bainiangzi | 1 | — | прогноз |
 | fig-mulan | 1 | — | прогноз |
@@ -564,7 +564,7 @@
 | art-p-wudaozi | — | × | 1 | прогноз |
 | art-p-zhangzeduan | 1 | × | — | прогноз |
 | art-p-wangximeng | — | × | 1 | прогноз |
-| art-p-xubeihong | — | — | 2 | да |
+| art-p-xubeihong | 1 | — | 2 | да |
 | art-p-qibaishi | × | 1 | — | прогноз |
 
 #### Таблица `calligraphers`
@@ -573,7 +573,7 @@
 
 | строка | work | title | style | другие | олимпиада |
 |---|---|---|---|---|---|
-| art-c-wangxizhi | — | 1 | × | — | прогноз |
+| art-c-wangxizhi | 1 | 1 | × | — | прогноз |
 | art-c-ouyangxun | — | × | — | — | прогноз |
 | art-c-yanzhenqing | 1 | × | — | — | прогноз |
 | art-c-liugongquan | 1 | × | — | — | прогноз |
