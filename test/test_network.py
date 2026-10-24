@@ -85,14 +85,21 @@ class NetworkReportTest(unittest.TestCase):
         # черновик не считается: у Хайнаня пусто
         self.assertIn('| prov-hainan | — | — | — | — | прогноз |', report)
 
-    def test_russian_rows_outside_the_core_are_triage_candidates(self):
-        # российская тема перебрана (2026-10-24): вопрос о российской строке вне ядра — такой же кандидат
+    def test_part_of_a_mixed_table_without_its_own_core_is_not_a_candidate(self):
+        # ядро размечено только у российских строк: вопросы о китайских — не кандидаты, их тема впереди
         data = core_dossier()
-        data['tables']['provinces']['columns']['country'] = 'zh'
-        data['tables']['provinces']['rows'].append(province('city-ru-tula', '图拉', '图', '图拉', country=cell('俄罗斯')))
-        report = network_report([(data, core_questions() + [q('provinces-q20', 'city-ru-tula', 'abbr')])], bank=[])
+        table = data['tables']['provinces']
+        table['columns']['country'] = 'zh'
+        for row in table['rows']:
+            row.pop('core', None)
+            row['country'] = cell('中国')
+        table['rows'].append(province('city-ru-tula', '图拉', '图', '图拉', core=True, country=cell('俄罗斯')))
+        table['rows'].append(province('city-ru-tver', '特维尔', '特', '特维尔', country=cell('俄罗斯')))
+        questions = core_questions() + [q('provinces-q20', 'city-ru-tver', 'abbr')]
+        report = network_report([(data, questions)], bank=[])
         self.assertIn('- provinces-q20 — Вопрос provinces-q20?', report)
-        self.assertNotIn('Российские строки', report)
+        self.assertNotIn('provinces-q09 —', report)
+        self.assertIn('где ядро ещё не размечено (её тема впереди): вопросов 5', report)
 
     def test_an_addition_in_olympiad_field_is_not_olympiad(self):
         # в поле olympiad строки бывают и наши дополнения: «да» — только при записи с появлениями

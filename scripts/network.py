@@ -132,6 +132,7 @@ def _core_lines(dossier: dict, accepted: list[tuple[str, str, str, str]], bank: 
     for _, _, place, side in accepted:
         counts[(place, side)] = counts.get((place, side), 0) + 1
     outside: list[str] = []
+    unmarked = 0
     for name in _core_tables(dossier):
         table = dossier['tables'][name]
         sides = table.get('sides', [])
@@ -156,13 +157,31 @@ def _core_lines(dossier: dict, accepted: list[tuple[str, str, str, str]], bank: 
             lines.append(f'| {row["id"]} | ' + ' | '.join(cells) + ' |')
         lines.append('')
         prefix = f'{dossier["id"]}/{name}/'
-        # российские строки перебраны российской темой (2026-10-24): вопрос вне ядра — тоже кандидат
-        outside += [f'- {record_id} — {text}' for record_id, text, place, _ in accepted
-                    if place.startswith(prefix) and place not in core]
+        # в смешанной таблице ядро размечают по частям (китайские строки — китайская тема, российские —
+        # российская): строка вне ядра — кандидат, только если у её части ядро уже есть
+        groups = {f'{prefix}{row["id"]}': _core_group(row) for row in table['rows']}
+        with_core = {groups[place] for place in core}
+        for record_id, text, place, _ in accepted:
+            if not place.startswith(prefix) or place in core:
+                continue
+            if groups.get(place) in with_core:
+                outside.append(f'- {record_id} — {text}')
+            else:
+                unmarked += 1
     lines += ['#### Вопросы о строках вне ядра', '',
               'Кандидаты на перебор: встроить в ядро, переделать или снять в архив.', '']
     lines += outside or ['- нет']
+    if unmarked:
+        lines += ['', f'Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов {unmarked}.']
     return lines
+
+
+def _core_group(row: dict) -> str | None:
+    """Часть смешанной таблицы: страна строки, а у купюр — валюта."""
+    for column in ('country', 'currency'):
+        if isinstance(row.get(column), dict):
+            return row[column].get('zh')
+    return None
 
 
 def _link_lines(loaded: list[tuple[dict, list[dict]]]) -> list[str]:
