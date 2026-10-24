@@ -88,7 +88,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cny-5",
@@ -160,7 +161,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cny-10",
@@ -231,7 +233,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cny-20",
@@ -301,7 +304,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cny-50",
@@ -372,7 +376,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cny-100",
@@ -446,7 +451,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rub-5-1997",
@@ -651,7 +657,10 @@
           "olympiad": [
             "2025-26-mun-2"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "back"
+          ]
         },
         {
           "id": "rub-100-2022",
@@ -749,7 +758,10 @@
           "olympiad": [
             "2025-26-shk-37"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "back"
+          ]
         },
         {
           "id": "rub-500-1997",
@@ -946,7 +958,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "back"
+          ]
         },
         {
           "id": "rub-5000-1997",
@@ -1037,7 +1052,8 @@
       ],
       "sides": [
         "city",
-        "denomination"
+        "denomination",
+        "back"
       ]
     },
     "history": {
@@ -1046,6 +1062,9 @@
         "era": "zh",
         "meaning": "ru"
       },
+      "sides": [
+        "name"
+      ],
       "rows": [
         {
           "id": "beibi",
@@ -1089,7 +1108,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "bubi",
@@ -1135,7 +1155,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "daobi",
@@ -1181,7 +1202,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "yibiqian",
@@ -1266,7 +1288,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "wuzhu",
@@ -1311,7 +1334,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "kaiyuan-tongbao",
@@ -1395,7 +1419,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "huizi",
@@ -1514,6 +1539,9 @@
         "occasion": "zh",
         "meaning": "ru"
       },
+      "sides": [
+        "name"
+      ],
       "rows": [
         {
           "id": "hongbao",
@@ -1552,7 +1580,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "yasuiqian",
@@ -1592,7 +1621,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "caishen",
