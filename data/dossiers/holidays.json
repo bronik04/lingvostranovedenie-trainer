@@ -3565,7 +3565,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "holiday"
+          ]
         },
         {
           "id": "cus-jizao",
