@@ -41,6 +41,7 @@ jobs:
         run: |
           python3 scripts/import_sources.py
           python3 scripts/merge_bank.py
+          python3 scripts/regions.py
           python3 scripts/taxonomy.py
 
       # транскрипция для настройки «Пиньинь»: data/pinyin.json в репозитории может отстать

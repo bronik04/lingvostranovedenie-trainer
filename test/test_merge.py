@@ -26,6 +26,33 @@ class RecordIdTest(unittest.TestCase):
     def test_id_is_built_from_year_stage_and_number(self):
         self.assertEqual(record_id({'year': '2015-16', 'stageCode': 'shk', 'number': 56}), '2015-16-shk-56')
 
+    def test_regional_variant_puts_the_region_into_the_id(self):
+        occurrence = {'year': '2025-26', 'stageCode': 'mun', 'regionCode': 'spb', 'number': 3}
+        self.assertEqual(record_id(occurrence), '2025-26-mun-spb-3')
+
+
+class RegionalOccurrenceTest(unittest.TestCase):
+    def regional(self, region, code, **overrides):
+        return raw(year='2025-26', stage='муниципальный', stageCode='mun', region=region, regionCode=code,
+                   number=3, sourceFile='01-Варианты/2025-26/2-Муниципальный/x/9-11_Задания.pdf', **overrides)
+
+    def test_same_number_in_two_regions_is_two_appearances(self):
+        bank, _ = merge([self.regional('Санкт-Петербург', 'spb'), self.regional('Татарстан', 'tat')], {})
+        self.assertEqual(len(bank), 1)
+        self.assertEqual([o['regionCode'] for o in bank[0]['occurrences']], ['spb', 'tat'])
+        self.assertEqual(bank[0]['id'], '2025-26-mun-spb-3')
+
+    def test_regional_number_does_not_collide_with_the_moscow_one(self):
+        moscow = raw(year='2025-26', stage='муниципальный', stageCode='mun', number=3,
+                     questionRu='Какой город — столица провинции Цзянсу?', options=['苏州', '无锡', '常州', '南京'])
+        bank, _ = merge([moscow, self.regional('Санкт-Петербург', 'spb')], {})
+        self.assertEqual(sorted(r['id'] for r in bank), ['2025-26-mun-3', '2025-26-mun-spb-3'])
+
+    def test_record_without_a_region_keeps_its_occurrence_unchanged(self):
+        bank, _ = merge([raw()], {})
+        self.assertNotIn('region', bank[0]['occurrences'][0])
+        self.assertNotIn('regionCode', bank[0]['occurrences'][0])
+
 
 class MergeTest(unittest.TestCase):
     def test_merges_duplicates_by_option_set(self):

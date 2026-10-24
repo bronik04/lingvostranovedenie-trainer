@@ -102,8 +102,12 @@ def _lines(pieces: list[tuple[int, int, int, int, str, bool]]) -> list[tuple[int
     return lines
 
 
-def parse(path: Path, year: str) -> list[dict]:
-    return records(_lines(_pieces(path)), path.name, year)
+def parse(path: Path, year: str, region: str | None = None) -> list[dict]:
+    tasks = records(_lines(_pieces(path)), path.name, year)
+    if region:
+        for task in tasks:
+            task['region'] = region
+    return tasks
 
 
 def records(lines: list[tuple[int, str, bool]], source_file: str, year: str) -> list[dict]:

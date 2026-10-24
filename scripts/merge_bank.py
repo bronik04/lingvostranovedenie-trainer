@@ -33,10 +33,12 @@ def record_id(occurrence: dict) -> str:
     документа, а не по олимпиадному бланку. Там, где номера нет, вместо него идёт
     короткий отпечаток текста вопроса — он так же устойчив и не зависит от темы.
     """
+    # у регионального варианта в id есть регион: задание 3 Петербурга и задание 3 Москвы — разные
+    stage = '-'.join(filter(None, [occurrence['stageCode'], occurrence.get('regionCode')]))
     if occurrence.get('number') is not None:
-        return f"{occurrence['year']}-{occurrence['stageCode']}-{occurrence['number']}"
+        return f"{occurrence['year']}-{stage}-{occurrence['number']}"
     fingerprint = hashlib.sha1(occurrence.get('fingerprint', '').encode('utf-8')).hexdigest()[:6]
-    return f"{occurrence['year']}-{occurrence['stageCode']}-q{fingerprint}"
+    return f"{occurrence['year']}-{stage}-q{fingerprint}"
 
 
 def _authority(source_file: str) -> int:
@@ -210,19 +212,20 @@ def merge(raw: list[dict], translations: dict[str, str],
         # порядок чтения файлов не должен влиять на результат: всё, что дальше выбирает
         # «лучшего» кандидата, обязано получать участников в устойчивом порядке
         members = sorted(members, key=lambda m: (
-            m['sourceFile'], m['year'], STAGE_ORDER.get(m['stageCode'], 9),
+            m['sourceFile'], m['year'], STAGE_ORDER.get(m['stageCode'], 9), m.get('regionCode') or '',
             m['number'] if m['number'] is not None else -1,
             m['sourceOrdinal'] if m['sourceOrdinal'] is not None else -1))
         # появление — это выход вопроса на конкретном этапе конкретного года, а не строка
         # в файле: один и тот же вопрос лежит сразу в нескольких источниках, и без
         # схлопывания «2023-24, муниципальный» повторилось бы четыре раза подряд
-        appearances: dict[tuple[str, str, int | None], dict] = {}
+        appearances: dict[tuple[str, str, str | None, int | None], dict] = {}
         for member in members:
-            spot = (member['year'], member['stageCode'], member['number'])
+            spot = (member['year'], member['stageCode'], member.get('regionCode'), member['number'])
             entry = appearances.setdefault(spot, {
                 'year': member['year'], 'stage': member['stage'], 'stageCode': member['stageCode'],
                 'grades': member['grades'], 'number': member['number'],
                 'officialKey': None, 'sourceFiles': [],
+                **{field: member[field] for field in ('region', 'regionCode') if member.get(field)},
             })
             entry['sourceFiles'].append(member['sourceFile'])
             entry['grades'] = entry['grades'] or member['grades']
@@ -231,9 +234,9 @@ def merge(raw: list[dict], translations: dict[str, str],
 
         # запись из банка 423 не знает номера задания; если для того же года и этапа
         # номер известен из бланка или сборника, это одно и то же появление
-        for spot in [spot for spot in appearances if spot[2] is None]:
+        for spot in [spot for spot in appearances if spot[3] is None]:
             numbered = [other for other in appearances
-                        if other[0] == spot[0] and other[1] == spot[1] and other[2] is not None]
+                        if other[:3] == spot[:3] and other[3] is not None]
             if len(numbered) != 1:
                 continue
             nameless = appearances.pop(spot)
@@ -245,7 +248,7 @@ def merge(raw: list[dict], translations: dict[str, str],
         for entry in appearances.values():
             entry['sourceFiles'] = sorted(set(entry['sourceFiles']))
         occurrences = sorted(appearances.values(),
-                             key=lambda o: (o['year'], STAGE_ORDER.get(o['stageCode'], 9),
+                             key=lambda o: (o['year'], STAGE_ORDER.get(o['stageCode'], 9), o.get('regionCode') or '',
                                             o['number'] if o['number'] is not None else 10_000))
 
         russian = [(_authority(m['sourceFile']), m['questionRu']) for m in members if m['questionRu']]
