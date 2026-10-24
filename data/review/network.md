@@ -2,7 +2,7 @@
 
 Файл пишет сборка (`scripts/network.py`). Ядро размечается в таблицах досье: `core` у строки, `sides` у таблицы. Граф для Obsidian — папка `data/review/graph/`: сборка каждый раз стирает в ней все заметки `*.md` и пишет заново, поэтому свои заметки в эту папку не кладите.
 
-Досье: 16, с утверждённым каркасом: 12.
+Досье: 16, с утверждённым каркасом: 14.
 
 ## Олимпиада по годам
 
@@ -44,13 +44,37 @@
 
 ### Ремёсла и народные искусства (`crafts`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `crafts`
 
-- строк: 111
-- принятых вопросов: 68
-- строк с вопросом: 68
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 0
-- встроено олимпиадных: 1
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | center | region | era | unesco | другие | олимпиада |
+|---|---|---|---|---|---|---|
+| cr-qinghua | × | × | 1 | × | — | прогноз |
+| cr-tangsancai | × | × | × | × | 1 | прогноз |
+| cr-longquan | × | × | × | × | 1 | прогноз |
+| cr-suxiu | × | × | × | × | 1 | прогноз |
+| cr-shuxiu | × | × | × | × | 1 | прогноз |
+| cr-yunjin | × | × | × | × | 1 | прогноз |
+| cr-laran | × | 1 | × | × | — | прогноз |
+| cr-matafeiyan | × | × | 1 | × | — | прогноз |
+
+#### Таблица `folk`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | center | era | unesco | другие | олимпиада |
+|---|---|---|---|---|---|
+| fk-weifang-fengzheng | 1 | × | × | — | прогноз |
+| fk-jianzhi | × | × | × | 1 | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- нет
+
+Российские строки (разбирает российская тема): вопросов 15.
 
 ### Кухня и блюда (`cuisine`)
 
@@ -165,6 +189,26 @@
 
 ### Династии и правители (`dynasties`)
 
+#### Таблица `dynasties`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | founder | capital | known | people | другие | олимпиада |
+|---|---|---|---|---|---|---|
+| dyn-han | — | × | — | × | 2 | да |
+| dyn-tang | 1 | 1 | × | × | — | прогноз |
+| dyn-yuan | 1 | 1 | — | — | 1 | да |
+| dyn-ming | 1 | 1 | 1 | × | 1 | да |
+| dyn-qing | × | × | 1 | 1 | 2 | да |
+| dyn-xia | 1 | × | × | × | 1 | да |
+| dyn-shang | 1 | × | — | × | 1 | да |
+| dyn-xizhou | 1 | × | 1 | × | — | да |
+| dyn-dongzhou | × | × | 1 | × | 1 | да |
+| dyn-qin | × | 1 | 1 | × | 1 | да |
+| dyn-sui | 1 | × | 1 | × | 1 | да |
+| dyn-beisong | 1 | 1 | — | × | 1 | прогноз |
+| dyn-nansong | × | 1 | × | × | — | прогноз |
+
 #### Таблица `rulers`
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
@@ -189,6 +233,7 @@
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
+- dynasties-q24 — От названия какого народа, основавшего династию Ляо, произошло русское слово «Китай»?
 - dynasties-q30 — Какой правитель в 1636 году провозгласил себя императором и дал своему государству название Великая Цин?
 - dynasties-q31 — Какой вождь чжурчжэней создал систему Восьми знамён и в 1616 году основал государство Поздняя Цзинь?
 - dynasties-q35 — Какой цинский император в 1898 году начал «Сто дней реформ»?
@@ -197,13 +242,74 @@
 
 ### Этносы и традиционный быт (`ethnos`)
 
-Ядро не размечено: каркас не утверждён.
+#### Таблица `peoples`
 
-- строк: 90
-- принятых вопросов: 50
-- строк с вопросом: 49
-- строк, спрошенных с двух и более сторон (разные колонки ответа): 1
-- встроено олимпиадных: 2
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | region | religion | другие | олимпиада |
+|---|---|---|---|---|
+| ppl-cn-han | × | × | 1 | да |
+| ppl-cn-zhuang | × | × | 1 | да |
+| ppl-cn-hui | × | — | 1 | да |
+| ppl-cn-manchu | — | × | — | да |
+| ppl-cn-uyghur | × | — | 1 | да |
+| ppl-cn-miao | 1 | × | — | прогноз |
+| ppl-cn-tibetan | × | — | 1 | да |
+| ppl-cn-mongol | × | — | 1 | да |
+| ppl-cn-korean | 1 | × | — | прогноз |
+| ppl-cn-dai | 1 | — | — | прогноз |
+
+#### Таблица `heritage`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | people | другие | олимпиада |
+|---|---|---|---|
+| her-cn-urtiin-duu | — | 1 | прогноз |
+| her-cn-dong-song | — | 1 | прогноз |
+| her-cn-muqam | 1 | — | прогноз |
+| her-cn-manas | 1 | — | прогноз |
+| her-cn-gesar | × | — | прогноз |
+| her-cn-tibetan-opera | — | 1 | прогноз |
+| her-cn-peacock-dance | 1 | — | прогноз |
+| her-cn-miao-batik | — | 1 | прогноз |
+| her-cn-jangar | — | — | прогноз |
+| her-cn-morin-khuur | 1 | — | прогноз |
+
+#### Таблица `dwellings`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | region | people | другие | олимпиада |
+|---|---|---|---|---|
+| dw-siheyuan | 1 | × | — | прогноз |
+| dw-tulou | × | × | — | да |
+| dw-yaodong | 1 | × | — | прогноз |
+| dw-menggubao | × | × | — | прогноз |
+| dw-diaojiaolou | × | × | — | прогноз |
+| dw-zhulou | × | 1 | — | прогноз |
+
+#### Таблица `dialects`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | region | другие | олимпиада |
+|---|---|---|---|
+| dia-beifang | × | 1 | да |
+| dia-wu | — | — | да |
+| dia-xiang | — | — | да |
+| dia-gan | 1 | — | прогноз |
+| dia-kejia | × | — | прогноз |
+| dia-min | 1 | — | прогноз |
+| dia-yue | 1 | — | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- нет
+
+Российские строки (разбирает российская тема): вопросов 15.
 
 ### Праздники (`holidays`)
 
@@ -740,6 +846,7 @@
 
 Строки ядра без ссылок наружу и на себя.
 
+- crafts/folk/fk-jianzhi
 - cuisine/savory/cu-cn-beijing-kaoya
 - cuisine/savory/cu-cn-pai-huanggua
 - cuisine/staples/cu-cn-changfen
@@ -756,6 +863,10 @@
 - cuisine/sweets/cu-cn-tanghulu
 - cuisine/teatypes/tt-white
 - cuisine/teatypes/tt-yellow
+- ethnos/dialects/dia-kejia
+- ethnos/heritage/her-cn-gesar
+- ethnos/heritage/her-cn-manas
+- ethnos/peoples/ppl-cn-hui
 - landmarks/fortifications/lm-cn-great-wall
 - landmarks/fortifications/lm-cn-xian-wall
 - landmarks/gardens/lm-cn-summer-palace-garden
@@ -809,7 +920,6 @@
 - nature/landforms/land-changjiang
 - nature/landforms/land-dongbei
 - nature/landforms/land-huabei
-- nature/landforms/land-huangtu
 - nature/landforms/land-qingzang
 - nature/landforms/land-yungui
 - nature/mountains/mtn-kunlun
@@ -846,19 +956,6 @@
 - cuisine/savory/cu-cn-yuxiang-rousi → holidays/customs/cus-yuxiangrousi
 - cuisine/staples/cu-cn-jiaozi → holidays/customs/cus-jiaozi
 - cuisine/sweets/cu-cn-tangyuan → holidays/customs/cus-tangyuan
-- dynasties/rulers/rul-cixi → dynasties/dynasties/dyn-qing
-- dynasties/rulers/rul-hanwudi → dynasties/dynasties/dyn-han
-- dynasties/rulers/rul-hubilie → dynasties/dynasties/dyn-yuan
-- dynasties/rulers/rul-kangxi → dynasties/dynasties/dyn-qing
-- dynasties/rulers/rul-liubang → dynasties/dynasties/dyn-han
-- dynasties/rulers/rul-puyi → dynasties/dynasties/dyn-qing
-- dynasties/rulers/rul-qianlong → dynasties/dynasties/dyn-qing
-- dynasties/rulers/rul-qinshihuang → dynasties/dynasties/dyn-qin
-- dynasties/rulers/rul-tangtaizong → dynasties/dynasties/dyn-tang
-- dynasties/rulers/rul-wuzetian → dynasties/dynasties/dyn-tang
-- dynasties/rulers/rul-yangjian → dynasties/dynasties/dyn-sui
-- dynasties/rulers/rul-zhaokuangyin → dynasties/dynasties/dyn-beisong
-- dynasties/rulers/rul-zhuyuanzhang → dynasties/dynasties/dyn-ming
 - holidays/figures/fig-change → holidays/holidays/hol-zhongqiu
 - holidays/figures/fig-jiezitui → holidays/holidays/hol-hanshi
 - holidays/figures/fig-nianshou → holidays/holidays/hol-chunjie
@@ -885,6 +982,20 @@
 
 ### Ссылка из ядра ведёт в строку вне ядра
 
+- dynasties/dynasties/dyn-dongzhou → dynasties/rulers/rul-zhoupingwang
+- dynasties/dynasties/dyn-nansong → dynasties/rulers/rul-zhaogou
+- dynasties/dynasties/dyn-qing → dynasties/rulers/rul-huangtaiji
+- dynasties/dynasties/dyn-shang → dynasties/rulers/rul-shangtang
+- dynasties/dynasties/dyn-tang → dynasties/rulers/rul-liyuan
+- dynasties/dynasties/dyn-xia → dynasties/rulers/rul-yu
+- dynasties/dynasties/dyn-xizhou → dynasties/rulers/rul-zhouwuwang
+- ethnos/dialects/dia-xiang → provinces/cities/city-changsha
+- ethnos/dwellings/dw-diaojiaolou → ethnos/peoples/ppl-cn-tujia
+- ethnos/heritage/her-cn-dong-song → ethnos/peoples/ppl-cn-dong
+- ethnos/peoples/ppl-cn-korean → ethnos/heritage/her-cn-korean-farmers-dance
+- ethnos/peoples/ppl-cn-manchu → ethnos/heritage/her-cn-manchu-papercut
+- ethnos/peoples/ppl-cn-tibetan → ethnos/heritage/her-cn-zangniang-thangka
+- ethnos/peoples/ppl-cn-zhuang → ethnos/heritage/her-cn-zhuang-tianqin
 - modern-history/figures/per-sunzhongshan → holidays/figures/fig-sunzhongshan
 - modern-history/figures/per-zhouenlai → literature/authors/lit-a-zhouenlai
 - nature/waters/wat-heilongjiang → nature/seas/sea-ru-okhotsk
