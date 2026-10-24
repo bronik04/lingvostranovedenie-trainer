@@ -594,23 +594,39 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | author | genre | другие | олимпиада |
-|---|---|---|---|---|
-| lit-w-ru-onegin | 1 | 1 | — | прогноз |
-| lit-w-ru-geroi | — | × | 1 | прогноз |
-| lit-w-ru-deadsouls | — | × | — | прогноз |
-| lit-w-ru-inspector | — | 1 | — | прогноз |
-| lit-w-ru-warpeace | 1 | × | — | прогноз |
-| lit-w-ru-karenina | 1 | × | 1 | да |
-| lit-w-ru-crime | 1 | × | — | прогноз |
-| lit-w-ru-cherry | — | × | 1 | прогноз |
-| lit-w-ru-seagull | 1 | × | — | прогноз |
-| lit-w-ru-quietdon | 1 | × | — | прогноз |
-| lit-w-ru-mother | — | × | 1 | прогноз |
-| lit-w-ru-twelve | 1 | × | — | прогноз |
-| lit-w-ru-fathers | 1 | × | — | прогноз |
-| lit-w-ru-zhivago | — | × | 1 | прогноз |
-| lit-w-ru-gulag | 1 | × | — | прогноз |
+| строка | author | genre | hero | другие | олимпиада |
+|---|---|---|---|---|---|
+| lit-w-shijing | × | × | × | 2 | да |
+| lit-w-chuci | × | × | × | 1 | прогноз |
+| lit-w-shiji | × | × | × | — | прогноз |
+| lit-w-sanguoyanyi | 1 | × | 1 | 1 | да |
+| lit-w-shuihuzhuan | × | × | — | 2 | да |
+| lit-w-xiyouji | × | × | — | 3 | да |
+| lit-w-hongloumeng | 1 | × | 1 | 1 | да |
+| lit-w-sunzibingfa | × | × | × | — | да |
+| lit-w-mulanci | × | × | × | 1 | прогноз |
+| lit-w-aqzhengzhuan | × | × | × | — | прогноз |
+| lit-w-kuangrenriji | × | × | × | 1 | да |
+| lit-w-luotuoxiangzi | × | × | × | 1 | да |
+| lit-w-chaguan | × | × | × | — | прогноз |
+| lit-w-huozhe | × | × | × | — | прогноз |
+| lit-w-hongaoliang | × | × | × | — | прогноз |
+| lit-w-nahan | × | × | × | 1 | прогноз |
+| lit-w-ru-onegin | 1 | 1 | × | — | прогноз |
+| lit-w-ru-geroi | — | × | × | 1 | прогноз |
+| lit-w-ru-deadsouls | — | × | × | — | прогноз |
+| lit-w-ru-inspector | — | 1 | × | — | прогноз |
+| lit-w-ru-warpeace | 1 | × | × | — | прогноз |
+| lit-w-ru-karenina | 1 | × | × | 1 | да |
+| lit-w-ru-crime | 1 | × | × | — | прогноз |
+| lit-w-ru-cherry | — | × | × | 1 | прогноз |
+| lit-w-ru-seagull | 1 | × | × | — | прогноз |
+| lit-w-ru-quietdon | 1 | × | × | — | прогноз |
+| lit-w-ru-mother | — | × | × | 1 | прогноз |
+| lit-w-ru-twelve | 1 | × | × | — | прогноз |
+| lit-w-ru-fathers | 1 | × | × | — | прогноз |
+| lit-w-ru-zhivago | — | × | × | 1 | прогноз |
+| lit-w-ru-gulag | 1 | × | × | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
@@ -620,8 +636,7 @@
 - literature-q35 — Какой поэт эпохи Сун оставил более девяти тысяч стихотворений?
 - literature-q37 — Какого драматурга эпохи Мин, умершего в один год с Шекспиром, называют «восточным Шекспиром» (东方的莎士比亚)?
 - literature-q46 — Кто автор сборника стихов «Богини» (女神, 1921), впоследствии президент Академии наук КНР?
-
-Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 23.
+- 2020-21-reg-qce4bc2 — Какое из нижеперечисленных произведений не относится к четырем классическим китайским романам?
 
 ### История XIX–XX веков (`modern-history`)
 
@@ -950,6 +965,14 @@
 
 | строка | author | другие | олимпиада |
 |---|---|---|---|
+| art-w-qingmingshanghetu | × | — | да |
+| art-w-qianlijiangshantu | × | — | прогноз |
+| art-w-luoshenfutu | × | — | прогноз |
+| art-w-benmatu | × | — | прогноз |
+| art-w-lantingxu | × | 1 | прогноз |
+| art-w-jizhiwengao | × | — | прогноз |
+| art-w-xuanmita | × | — | прогноз |
+| art-w-jiuchenggong | × | — | прогноз |
 | art-w-ru-troitsa | — | — | прогноз |
 | art-w-ru-pompeii | 1 | — | прогноз |
 | art-w-ru-ninthwave | 1 | — | прогноз |
@@ -963,13 +986,29 @@
 | art-w-ru-peaches | 1 | — | прогноз |
 | art-w-ru-blacksquare | — | — | прогноз |
 
+#### Таблица `terms`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+Стороны не утверждены (`sides`).
+
+| строка | другие | олимпиада |
+|---|---|---|
+| art-t-zhuanshu | 1 | прогноз |
+| art-t-lishu | 1 | прогноз |
+| art-t-kaishu | 1 | прогноз |
+| art-t-xingshu | 1 | прогноз |
+| art-t-caoshu | — | прогноз |
+| art-t-hubi | — | прогноз |
+| art-t-huimo | — | прогноз |
+| art-t-xuanzhi | — | прогноз |
+| art-t-duanyan | 1 | прогноз |
+
 #### Вопросы о строках вне ядра
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
 - painting-q06 — Какой китайский художник особенно прославился бамбуком, написанным тушью?
-
-Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 5.
 
 ### Люди (`people`)
 
@@ -1271,6 +1310,8 @@
 - literature/authors/lit-a-libai
 - literature/authors/lit-a-ru-brodsky
 - literature/authors/lit-a-taoyuanming
+- literature/works/lit-w-mulanci
+- literature/works/lit-w-shijing
 - modern-history/events/ev-ru-crimea
 - modern-history/events/ev-ru-february
 - modern-history/events/ev-ru-leningrad
@@ -1338,6 +1379,15 @@
 - nature/waters/wat-yarlung
 - painting/painters/art-p-qibaishi
 - painting/painters/art-p-wudaozi
+- painting/terms/art-t-caoshu
+- painting/terms/art-t-duanyan
+- painting/terms/art-t-hubi
+- painting/terms/art-t-huimo
+- painting/terms/art-t-kaishu
+- painting/terms/art-t-lishu
+- painting/terms/art-t-xingshu
+- painting/terms/art-t-xuanzhi
+- painting/terms/art-t-zhuanshu
 - people/composers/cmp-ru-glinka
 - people/composers/cmp-ru-mussorgsky
 - people/composers/cmp-ru-rachmaninoff
@@ -1424,17 +1474,8 @@
 - holidays/holidays/hol-huoba → ethnos/peoples/ppl-cn-yi
 - holidays/holidays/hol-jianjun → modern-history/events/ev-nanchang
 - holidays/holidays/hol-qingnian → modern-history/events/ev-wusi
-- literature/authors/lit-a-caoxueqin → literature/works/lit-w-hongloumeng
-- literature/authors/lit-a-laoshe → literature/works/lit-w-luotuoxiangzi
-- literature/authors/lit-a-luoguanzhong → literature/works/lit-w-sanguoyanyi
-- literature/authors/lit-a-luxun → literature/works/lit-w-aqzhengzhuan
-- literature/authors/lit-a-moyan → literature/works/lit-w-hongaoliang
 - literature/authors/lit-a-ru-bunin → literature/works/lit-w-ru-arsenyev
 - literature/authors/lit-a-ru-lermontov → literature/works/lit-w-ru-demon
-- literature/authors/lit-a-shinaian → literature/works/lit-w-shuihuzhuan
-- literature/authors/lit-a-simaqian → literature/works/lit-w-shiji
-- literature/authors/lit-a-wuchengen → literature/works/lit-w-xiyouji
-- literature/authors/lit-a-yuhua → literature/works/lit-w-huozhe
 - literature/works/lit-w-ru-gulag → literature/authors/lit-a-ru-solzhenitsyn
 - modern-history/figures/per-sunzhongshan → holidays/figures/fig-sunzhongshan
 - modern-history/figures/per-zhouenlai → literature/authors/lit-a-zhouenlai
@@ -1444,15 +1485,6 @@
 - nature/waters/wat-heilongjiang → nature/seas/sea-ru-okhotsk
 - nature/waters/wat-ru-lena → nature/seas/sea-ru-laptev
 - nature/waters/wat-ru-yenisei → nature/mountains/mtn-ru-sayan
-- painting/calligraphers/art-c-liugongquan → painting/works/art-w-xuanmita
-- painting/calligraphers/art-c-ouyangxun → painting/works/art-w-jiuchenggong
-- painting/calligraphers/art-c-wangxizhi → painting/works/art-w-lantingxu
-- painting/calligraphers/art-c-yanzhenqing → painting/works/art-w-jizhiwengao
-- painting/painters/art-p-guokaizhi → painting/works/art-w-luoshenfutu
-- painting/painters/art-p-wangximeng → painting/works/art-w-qianlijiangshantu
-- painting/painters/art-p-xubeihong → painting/works/art-w-benmatu
-- painting/painters/art-p-zhangzeduan → painting/works/art-w-qingmingshanghetu
-- people/thinkers/th-sunzi → literature/works/lit-w-sunzibingfa
 - provinces/cities/city-haerbin → nature/waters/wat-songhuajiang
 - provinces/cities/city-hangzhou → nature/waters/wat-qiantangjiang
 - provinces/cities/city-shanghai → nature/waters/wat-huangpujiang

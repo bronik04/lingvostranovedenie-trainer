@@ -3851,6 +3851,10 @@
           ],
           "olympiad": [
             "2025-26-zak-q7c8228"
+          ],
+          "core": true,
+          "skipSides": [
+            "author"
           ]
         },
         {
@@ -3916,6 +3920,10 @@
           ],
           "olympiad": [
             "addition-b2-06"
+          ],
+          "core": true,
+          "skipSides": [
+            "author"
           ]
         },
         {
@@ -4041,7 +4049,11 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "author"
+          ]
         },
         {
           "id": "art-w-nushizhentu",
@@ -4455,7 +4467,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "author"
+          ]
         },
         {
           "id": "art-w-quehuaqiuse",
@@ -4721,7 +4737,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "author"
+          ]
         },
         {
           "id": "art-w-jizhiwengao",
@@ -4799,7 +4819,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "author"
+          ]
         },
         {
           "id": "art-w-hanshitie",
@@ -5009,7 +5033,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "author"
+          ]
         },
         {
           "id": "art-w-jiuchenggong",
@@ -5077,7 +5105,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "author"
+          ]
         },
         {
           "id": "art-w-zixutie",
@@ -6811,7 +6843,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-t-lishu",
@@ -6843,7 +6876,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-t-kaishu",
@@ -6875,7 +6909,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-t-xingshu",
@@ -6914,7 +6949,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-t-caoshu",
@@ -6953,7 +6989,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-t-hubi",
@@ -6997,7 +7034,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-t-huimo",
@@ -7041,7 +7079,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-t-xuanzhi",
@@ -7092,7 +7131,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-t-duanyan",
@@ -7139,7 +7179,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-t-mogu",
