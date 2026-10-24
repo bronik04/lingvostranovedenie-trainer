@@ -23,6 +23,7 @@ from glosses import apply_glosses, load_glosses
 from merges import STAGE_ORDER, apply_merges, load_merges
 from retired import apply_retired, load_retired
 from truefalse import apply_truefalse, load_truefalse
+from withheld import apply_withheld, load_withheld, reference_errors
 
 
 def record_id(occurrence: dict) -> str:
@@ -389,12 +390,30 @@ def main() -> None:
     bank = apply_editorial(bank, load_editorial(ROOT / 'data/review/editorial.json'))
     # склейка дублей — после правок: варианты сверяются уже по исправленному тексту
     before_merges = len(bank)
-    bank = apply_merges(bank, load_merges(ROOT / 'data/review/merges.json'))
+    merges = load_merges(ROOT / 'data/review/merges.json')
+    bank = apply_merges(bank, merges)
     report['glued'] = before_merges - len(bank)
     # удаления — после склеек: удалённая запись могла сама принимать влитые id
-    bank = apply_retired(bank, load_retired(ROOT / 'data/review/retired.json'))
-    # встраивание олимпиадных вопросов в досье — по итоговым id, до подписей glosses.json
+    retired = load_retired(ROOT / 'data/review/retired.json')
+    bank = apply_retired(bank, retired)
+    # задания, которые автор пока не публикует, — тоже после склеек: их правки и проверки остаются в файлах,
+    # а слои, которые на них ссылаются, называются заранее, а не падают потом на «записи нет»
+    withheld = load_withheld(ROOT / 'data/review/withheld.json')
     glosses = load_glosses(ROOT / 'data/review/glosses.json')
+    truefalse = load_truefalse(ROOT / 'data/review/truefalse.json')
+    errors = reference_errors(withheld, {
+        'fact-groups.json': {record_id for ids in fact_groups.values() for record_id in ids},
+        'glosses.json': set(glosses),
+        'truefalse.json': set(truefalse),
+        'встраивание в досье': {question['embeds'] for _, questions in loaded
+                                for question in questions if 'embeds' in question},
+        'merges.json': {*merges, *(record_id for item in merges.values() for record_id in item.get('absorbs', []))},
+        'retired.json': {*retired, *(item.get('keptIn') for item in retired.values() if isinstance(item, dict))},
+    })
+    if errors:
+        raise ValueError('на отложенные задания ссылаются другие слои:\n - ' + '\n - '.join(errors))
+    bank = apply_withheld(bank, withheld)
+    # встраивание олимпиадных вопросов в досье — по итоговым id, до подписей glosses.json
     bank = apply_embeds(bank, loaded, glosses)
     bank = apply_fact_groups(bank, fact_groups)
     # дополнения после правок проверяются здесь же, чтобы не записать банк,
@@ -415,7 +434,7 @@ def main() -> None:
     # текстом варианта уже после всех правок
     bank = apply_glosses(bank, glosses)
     # варианты, которые «Верно или нет» не предлагает, — тоже по окончательному тексту варианта
-    bank = apply_truefalse(bank, load_truefalse(ROOT / 'data/review/truefalse.json'))
+    bank = apply_truefalse(bank, truefalse)
     bank.sort(key=lambda record: record['id'])
     report['fragments'] = fragment_pairs([(record['id'], record['questionRu']) for record in bank])
     (ROOT / 'data/review').mkdir(parents=True, exist_ok=True)
