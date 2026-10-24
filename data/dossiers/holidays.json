@@ -1843,6 +1843,10 @@
           ],
           "olympiad": [
             "2018-19-zak-7"
+          ],
+          "core": true,
+          "skipSides": [
+            "date"
           ]
         },
         {
@@ -1907,7 +1911,8 @@
           ],
           "olympiad": [
             "2023-24-shk-30"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "hol-ru-xierou",
@@ -1950,7 +1955,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "hol-ru-fuhuo",
@@ -1994,7 +2000,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "hol-ru-kupala",
@@ -2110,7 +2117,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "hol-ru-yuhang",
@@ -2168,7 +2176,8 @@
           ],
           "olympiad": [
             "2023-24-zak-4"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "hol-ru-shengli",
@@ -2222,7 +2231,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "hol-ru-eluosi",
@@ -2271,6 +2281,10 @@
           ],
           "olympiad": [
             "2019-20-reg-10"
+          ],
+          "core": true,
+          "skipSides": [
+            "date"
           ]
         },
         {
@@ -2334,7 +2348,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "hol-ru-zhishi",
@@ -2381,7 +2396,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         }
       ]
     },
@@ -3812,7 +3828,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cus-ru-caidan",
@@ -3865,7 +3882,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cus-ru-kulich",
@@ -3969,7 +3987,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cus-ru-chuchelo",
@@ -4126,7 +4145,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         }
       ]
     },
