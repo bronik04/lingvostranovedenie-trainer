@@ -358,12 +358,14 @@ class MergesInBankTest(unittest.TestCase):
             # группа у склеенной записи — только ради взаимной подсказки с вопросом о другом факте
             # (решения автора 2026-10-22: порции 3–4 провинций, кухня; 2026-10-23: Потала и центр Тибета,
             # маньчжуры — народ династии Цин; 2026-10-24: «Искусство войны» и школа Сунь-цзы, Сунь Ятсен и
-            # Китайская Республика словом, «движение 4 мая» и дата Дня молодёжи); дубль одного факта в группе
-            # ловит следующий тест
+            # Китайская Республика словом, «движение 4 мая» и дата Дня молодёжи; четыре вопроса о 四大发明 —
+            # тексты называют ответы друг друга, по ревью ветки муниципального этапа 2026/27); дубль одного
+            # факта в группе ловит следующий тест
             if 'factGroup' in record:
                 self.assertIn(record['factGroup'], {'province-names-river-lake', 'beijing-tianjin-municipality',
                                                     'potala-tibet', 'manchu-word', 'sunzi-art-of-war',
-                                                    'lu-xun-republic-text', 'may-fourth-date'}, keep_id)
+                                                    'lu-xun-republic-text', 'may-fourth-date',
+                                                    'four-inventions'}, keep_id)
             wrong = [o['zh'] for o in record['options'] if o['id'] != record['answer']['optionId']]
             for text in wrong:
                 self.assertNotIn(text, record['explanation']['ru'], keep_id)

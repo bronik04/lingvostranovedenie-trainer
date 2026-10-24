@@ -3,9 +3,16 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from parsers.cifrium import parse
+from parsers.cifrium import _is_key, _joined, parse, records
 
 PAPER = ROOT / 'sources/Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf'
+
+
+def task(*options):
+    """Строки одного задания раздела: (левый край, текст, отмечена ли зелёным)."""
+    return [(125, 'Муниципальный этап по китайскому языку', False), (125, 'Китайский язык. 9–11 классы.', False),
+            (125, 'ЛИНГВОСТРАНОВЕДЕНИЕ / 国情知识 #1', False), (125, 'Какая пустыня расположена в Китае?', False),
+            *((170, text, marked) for text, marked in options), (125, 'За решение задачи 1 балл', False)]
 
 
 class CifriumTest(unittest.TestCase):
@@ -44,6 +51,28 @@ class CifriumTest(unittest.TestCase):
         self.assertEqual(deng['questionRu'],
                          'Имя какого политического деятеля связано с началом проведения в КНР политики «改革开放»？')
         self.assertTrue(all('Выберите верный' not in r['questionRu'] for r in self.records))
+
+
+class CifriumRulesTest(unittest.TestCase):
+    def test_space_comes_from_the_gap_not_from_the_piece(self):
+        """Другая версия poppler может отдать «1905» без хвостового пробела — вариант не должен слипнуться."""
+        self.assertEqual(_joined([(1, 294, 170, 32, '1905', True), (1, 297, 210, 18, '年', True)]), '1905 年')
+        self.assertEqual(_joined([(1, 294, 170, 40, '1905 ', True), (1, 297, 210, 18, '年', True)]), '1905 年')
+        self.assertEqual(_joined([(1, 389, 170, 18, '邓', True), (1, 389, 188, 36, '小平', True)]), '邓小平')
+
+    def test_any_green_marks_the_key(self):
+        self.assertTrue(_is_key('#85d16a'))
+        self.assertTrue(_is_key('#7ec82e'))  # зелёный ключей ЛГ-теста в той же выгрузке
+        for color in ('#333333', '#404040', '#1a95f6', '#000000', ''):
+            self.assertFalse(_is_key(color), color)
+
+    def test_unreadable_task_is_flagged_not_guessed(self):
+        both = records(task(('戈壁', True), ('撒哈拉', True), ('纳米布', False), ('阿塔卡马', False)), 'x.pdf', '2026-27')
+        self.assertIsNone(both[0]['officialKeyIndex'])
+        self.assertIn('отмечено вариантов: 2', both[0]['parseWarnings'])
+        radical = records(task(('戈壁', True), ('⺁', False), ('纳米布', False), ('阿塔卡马', False)), 'x.pdf', '2026-27')
+        self.assertIn('знаки-ключи без замены: ⺁', radical[0]['parseWarnings'])
+        self.assertEqual((radical[0]['stageCode'], radical[0]['grades']), ('mun', '9-11'))
 
 
 if __name__ == '__main__':
