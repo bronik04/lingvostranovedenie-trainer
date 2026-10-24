@@ -23,6 +23,7 @@ from glosses import apply_glosses, load_glosses
 from merges import STAGE_ORDER, apply_merges, load_merges
 from retired import apply_retired, load_retired
 from truefalse import apply_truefalse, load_truefalse
+from withheld import apply_withheld, load_withheld
 
 
 def record_id(occurrence: dict) -> str:
@@ -393,6 +394,8 @@ def main() -> None:
     report['glued'] = before_merges - len(bank)
     # удаления — после склеек: удалённая запись могла сама принимать влитые id
     bank = apply_retired(bank, load_retired(ROOT / 'data/review/retired.json'))
+    # задания, которые автор пока не публикует, — тоже после склеек: их правки и проверки остаются в файлах
+    bank = apply_withheld(bank, load_withheld(ROOT / 'data/review/withheld.json'))
     # встраивание олимпиадных вопросов в досье — по итоговым id, до подписей glosses.json
     glosses = load_glosses(ROOT / 'data/review/glosses.json')
     bank = apply_embeds(bank, loaded, glosses)
