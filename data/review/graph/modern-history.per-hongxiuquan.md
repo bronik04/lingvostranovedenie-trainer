@@ -2,8 +2,6 @@
 
 Тема: [[modern-history]]
 
-Не хватает сторон: post
-
 Связи:
 - [[provinces.prov-guangdong]]
 

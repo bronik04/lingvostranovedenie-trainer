@@ -2,8 +2,6 @@
 
 Тема: [[space]]
 
-Не хватает сторон: craft
-
 Связи:
 - [[space.mis-shenzhou5]]
 

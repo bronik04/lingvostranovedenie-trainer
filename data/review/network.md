@@ -429,15 +429,15 @@
 | строка | work | title | alias | другие | олимпиада |
 |---|---|---|---|---|---|
 | lit-a-quyuan | 1 | × | × | — | прогноз |
-| lit-a-simaqian | — | × | × | 1 | да |
+| lit-a-simaqian | × | × | × | 1 | да |
 | lit-a-caocao | — | × | × | 1 | да |
 | lit-a-taoyuanming | — | × | × | 1 | прогноз |
 | lit-a-libai | 1 | 1 | × | — | прогноз |
 | lit-a-dufu | 1 | 1 | × | 1 | да |
-| lit-a-luoguanzhong | — | × | × | — | прогноз |
+| lit-a-luoguanzhong | × | × | × | — | прогноз |
 | lit-a-shinaian | — | × | × | 1 | да |
-| lit-a-wuchengen | — | × | × | 1 | прогноз |
-| lit-a-caoxueqin | — | × | × | — | прогноз |
+| lit-a-wuchengen | × | × | × | 1 | прогноз |
+| lit-a-caoxueqin | × | × | × | — | прогноз |
 | lit-a-luxun | 1 | × | 1 | 1 | да |
 | lit-a-laoshe | 1 | × | × | 2 | да |
 | lit-a-moyan | 1 | × | × | 1 | прогноз |
@@ -463,7 +463,7 @@
 | строка | idea | post | другие | олимпиада |
 |---|---|---|---|---|
 | per-linzexu | × | 1 | — | прогноз |
-| per-hongxiuquan | × | — | — | прогноз |
+| per-hongxiuquan | × | × | — | прогноз |
 | per-lihongzhang | × | — | — | прогноз |
 | per-kangyouwei | — | × | — | прогноз |
 | per-sunzhongshan | 1 | — | 3 | да |
@@ -700,12 +700,12 @@
 
 | строка | school | book | другие | олимпиада |
 |---|---|---|---|---|
-| th-kongzi | — | 1 | 2 | прогноз |
-| th-laozi | — | 1 | 1 | прогноз |
+| th-kongzi | — | 1 | 2 | да |
+| th-laozi | — | 1 | 1 | да |
 | th-zhuangzi | 1 | × | — | прогноз |
 | th-mengzi | 1 | × | — | прогноз |
-| th-mozi | — | × | 1 | прогноз |
-| th-sunzi | 1 | — | — | прогноз |
+| th-mozi | × | × | 1 | прогноз |
+| th-sunzi | 1 | × | — | да |
 
 #### Таблица `scholars`
 
@@ -715,8 +715,8 @@
 |---|---|---|---|
 | sci-cailun | 1 | — | прогноз |
 | sci-bisheng | 1 | — | прогноз |
-| sci-zhangheng | — | 1 | прогноз |
-| sci-lishizhen | — | — | прогноз |
+| sci-zhangheng | — | 1 | да |
+| sci-lishizhen | — | — | да |
 | sci-huatuo | 1 | — | прогноз |
 | sci-zhantianyou | 1 | — | прогноз |
 | sci-qianxuesen | 1 | — | прогноз |
@@ -730,7 +730,7 @@
 | строка | deed | другие | олимпиада |
 |---|---|---|---|
 | trv-zhangqian | 1 | — | прогноз |
-| trv-zhenghe | 1 | — | прогноз |
+| trv-zhenghe | 1 | — | да |
 | trv-xuanzang | 1 | — | прогноз |
 | trv-xuxiake | × | — | прогноз |
 
@@ -826,9 +826,9 @@
 
 | строка | name | craft | другие | олимпиада |
 |---|---|---|---|---|
-| ppl-yangliwei | 1 | — | — | да |
-| ppl-zhaizhigang | 1 | — | — | прогноз |
-| ppl-liuyang | 1 | — | — | прогноз |
+| ppl-yangliwei | 1 | × | — | да |
+| ppl-zhaizhigang | 1 | × | — | прогноз |
+| ppl-liuyang | 1 | × | — | прогноз |
 
 #### Вопросы о строках вне ядра
 

@@ -3081,7 +3081,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "post"
+          ]
         },
         {
           "id": "per-zengguofan",

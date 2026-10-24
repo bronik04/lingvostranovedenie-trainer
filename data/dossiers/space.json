@@ -1953,7 +1953,10 @@
             "2016-17-zak-6",
             "2020-21-zak-q244298"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "craft"
+          ]
         },
         {
           "id": "ppl-zhaizhigang",
@@ -2014,7 +2017,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "craft"
+          ]
         },
         {
           "id": "ppl-liuboming",
@@ -2121,7 +2127,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "craft"
+          ]
         },
         {
           "id": "ppl-wangyaping",

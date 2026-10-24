@@ -2,8 +2,6 @@
 
 Тема: [[literature]]
 
-Не хватает сторон: work
-
 Связи:
 - [[literature.lit-w-shiji]]
 
