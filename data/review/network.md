@@ -503,10 +503,10 @@
 | lit-w-shijing | × | × | 2 | да |
 | lit-w-chuci | × | × | 1 | прогноз |
 | lit-w-shiji | × | × | — | прогноз |
-| lit-w-sanguoyanyi | — | × | 1 | да |
-| lit-w-shuihuzhuan | × | × | 2 | да |
-| lit-w-xiyouji | × | × | 2 | да |
-| lit-w-hongloumeng | — | × | 1 | да |
+| lit-w-sanguoyanyi | 1 | 1 | 1 | да |
+| lit-w-shuihuzhuan | × | — | 2 | да |
+| lit-w-xiyouji | × | — | 3 | да |
+| lit-w-hongloumeng | 1 | 1 | 1 | да |
 | lit-w-sunzibingfa | × | × | — | да |
 | lit-w-mulanci | × | × | 1 | прогноз |
 | lit-w-aqzhengzhuan | × | × | — | прогноз |
@@ -782,20 +782,14 @@
 
 | строка | place | другие | олимпиада |
 |---|---|---|---|
-| art-t-shanshuihua | × | — | да |
-| art-t-huaniaohua | × | — | да |
-| art-t-renwuhua | × | 1 | прогноз |
-| art-t-gongbi | × | — | прогноз |
-| art-t-xieyi | × | 1 | прогноз |
-| art-t-baimiao | × | 1 | прогноз |
 | art-t-zhuanshu | × | 1 | прогноз |
 | art-t-lishu | × | 1 | прогноз |
-| art-t-kaishu | × | — | прогноз |
-| art-t-xingshu | × | — | прогноз |
-| art-t-caoshu | × | 1 | прогноз |
+| art-t-kaishu | × | 1 | прогноз |
+| art-t-xingshu | × | 1 | прогноз |
+| art-t-caoshu | × | — | прогноз |
 | art-t-hubi | — | — | прогноз |
 | art-t-huimo | — | — | прогноз |
-| art-t-xuanzhi | 1 | — | прогноз |
+| art-t-xuanzhi | — | — | прогноз |
 | art-t-duanyan | — | 1 | прогноз |
 
 #### Вопросы о строках вне ядра
@@ -803,10 +797,6 @@
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
 - painting-q06 — Какой китайский художник особенно прославился бамбуком, написанным тушью?
-- painting-q11 — Какую картину написал северосунский пейзажист Фань Куань (范宽), спрятавший свою подпись в тени деревьев?
-- painting-q12 — Какую картину считают древнейшей из сохранившихся китайских картин на бумаге?
-- painting-q23 — Где хранится свиток «Стихи о Холодной пище» (寒食帖) — «третье синшу Поднебесной»?
-- painting-q24 — Где хранится экземпляр свитка 《女史箴图》, который обычно считают танской копией с картины Гу Кайчжи?
 
 Российские строки (разбирает российская тема): вопросов 14.
 
@@ -1056,18 +1046,12 @@
 - nature/waters/wat-yarlung
 - painting/painters/art-p-qibaishi
 - painting/painters/art-p-wudaozi
-- painting/terms/art-t-baimiao
 - painting/terms/art-t-caoshu
 - painting/terms/art-t-duanyan
-- painting/terms/art-t-gongbi
-- painting/terms/art-t-huaniaohua
 - painting/terms/art-t-hubi
 - painting/terms/art-t-huimo
 - painting/terms/art-t-kaishu
 - painting/terms/art-t-lishu
-- painting/terms/art-t-renwuhua
-- painting/terms/art-t-shanshuihua
-- painting/terms/art-t-xieyi
 - painting/terms/art-t-xingshu
 - painting/terms/art-t-xuanzhi
 - painting/terms/art-t-zhuanshu

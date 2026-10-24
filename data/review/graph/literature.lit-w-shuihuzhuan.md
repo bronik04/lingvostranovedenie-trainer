@@ -2,6 +2,8 @@
 
 Тема: [[literature]]
 
+Не хватает сторон: hero
+
 Связи:
 - [[literature.lit-a-shinaian]]
 
