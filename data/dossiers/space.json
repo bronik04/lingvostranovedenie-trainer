@@ -1333,7 +1333,8 @@
             "ru": [
               "философ Мо-цзы"
             ],
-            "gloss": "Мо-цзы — древнекитайский мыслитель, описавший опыт с камерой-обскурой"
+            "gloss": "Мо-цзы — древнекитайский мыслитель, описавший опыт с камерой-обскурой",
+            "ref": "people/thinkers/th-mozi"
           },
           "achievement": "Первый в мире спутник для квантовых экспериментов: квантовая связь «спутник — Земля», квантовая запутанность между наземными станциями на расстоянии более 1200 км.",
           "sources": [
@@ -1891,6 +1892,10 @@
         "year": "zh",
         "role": "ru"
       },
+      "sides": [
+        "name",
+        "craft"
+      ],
       "rows": [
         {
           "id": "ppl-yangliwei",
@@ -1947,6 +1952,10 @@
           "olympiad": [
             "2016-17-zak-6",
             "2020-21-zak-q244298"
+          ],
+          "core": true,
+          "skipSides": [
+            "craft"
           ]
         },
         {
@@ -2007,7 +2016,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "craft"
+          ]
         },
         {
           "id": "ppl-liuboming",
@@ -2113,7 +2126,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "craft"
+          ]
         },
         {
           "id": "ppl-wangyaping",

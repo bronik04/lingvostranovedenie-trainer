@@ -8,6 +8,9 @@
         "country": "zh",
         "role": "ru"
       },
+      "sides": [
+        "name"
+      ],
       "rows": [
         {
           "id": "fig-pangu",
@@ -49,7 +52,8 @@
           "olympiad": [
             "2020-21-reg-q588b1b",
             "2024-25-zak-q082614"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "fig-nuwa",
@@ -88,7 +92,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "fig-shennong",
@@ -123,7 +128,8 @@
           ],
           "olympiad": [
             "2022-23-shk-q92d9cf"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "fig-huangdi",
@@ -165,7 +171,8 @@
           ],
           "olympiad": [
             "2020-21-zak-q2c2d90"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "fig-zhuanxu",
@@ -324,7 +331,8 @@
           ],
           "olympiad": [
             "2022-23-reg-7"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "fig-kongzi",
@@ -333,7 +341,8 @@
             "ru": [
               "Конфуций"
             ],
-            "gloss": "Конфуций — мыслитель эпохи Чуньцю, основатель конфуцианства"
+            "gloss": "Конфуций — мыслитель эпохи Чуньцю, основатель конфуцианства",
+            "ref": "people/thinkers/th-kongzi"
           },
           "country": {
             "zh": "中国",
@@ -399,7 +408,8 @@
           ],
           "olympiad": [
             "2023-24-reg-5"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "fig-houyi",
@@ -438,7 +448,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "fig-yudi",
@@ -512,7 +523,8 @@
           "olympiad": [
             "2024-25-pri-37",
             "2024-25-zak-qa37e63"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "fig-xiwangmu",
@@ -617,7 +629,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "fig-kuafu",
@@ -658,7 +671,8 @@
           ],
           "olympiad": [
             "2025-26-reg-7"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "fig-gonggong",
@@ -699,7 +713,8 @@
           ],
           "olympiad": [
             "addition-b1-12"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "fig-chiyou",
@@ -975,7 +990,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "fig-niulang",
@@ -1007,7 +1023,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "fig-zhinv",
@@ -1040,7 +1057,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "fig-liangshanbo",
@@ -1150,7 +1168,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "fig-bainiangzi",
@@ -1183,7 +1202,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "fig-mulan",
@@ -1216,7 +1236,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "fig-ru-ded-moroz",

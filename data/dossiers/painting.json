@@ -14,6 +14,10 @@
         "work": "zh",
         "about": "ru"
       },
+      "sides": [
+        "work",
+        "subject"
+      ],
       "rows": [
         {
           "id": "art-p-guokaizhi",
@@ -75,7 +79,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-p-wudaozi",
@@ -144,7 +149,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-p-yanliben",
@@ -540,7 +546,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-p-wangximeng",
@@ -596,7 +603,8 @@
           ],
           "olympiad": [
             "addition-b2-06"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "art-p-guoxi",
@@ -933,7 +941,8 @@
             "2016-17-zak-5",
             "2020-21-reg-q2ffb5e",
             "2023-24-reg-7"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "art-p-qibaishi",
@@ -1002,7 +1011,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-p-likeran",
@@ -2929,6 +2939,11 @@
         "work": "zh",
         "about": "ru"
       },
+      "sides": [
+        "work",
+        "title",
+        "style"
+      ],
       "rows": [
         {
           "id": "art-c-wangxizhi",
@@ -3005,7 +3020,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-c-wangxianzhi",
@@ -3134,7 +3150,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-c-yanzhenqing",
@@ -3201,7 +3218,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-c-liugongquan",
@@ -3269,7 +3287,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-c-zhangxu",

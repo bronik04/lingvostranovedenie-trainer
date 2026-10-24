@@ -14,6 +14,11 @@
         "prize": "zh",
         "about": "ru"
       },
+      "sides": [
+        "work",
+        "title",
+        "alias"
+      ],
       "rows": [
         {
           "id": "lit-a-quyuan",
@@ -91,7 +96,12 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "title",
+            "alias"
+          ]
         },
         {
           "id": "lit-a-simaqian",
@@ -167,6 +177,12 @@
           ],
           "olympiad": [
             "2016-17-reg-5"
+          ],
+          "core": true,
+          "skipSides": [
+            "title",
+            "alias",
+            "work"
           ]
         },
         {
@@ -245,6 +261,11 @@
           ],
           "olympiad": [
             "2015-16-zak-7"
+          ],
+          "core": true,
+          "skipSides": [
+            "title",
+            "alias"
           ]
         },
         {
@@ -325,7 +346,12 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "title",
+            "alias"
+          ]
         },
         {
           "id": "lit-a-libai",
@@ -395,7 +421,11 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "alias"
+          ]
         },
         {
           "id": "lit-a-dufu",
@@ -474,6 +504,10 @@
           ],
           "olympiad": [
             "2023-24-zak-3"
+          ],
+          "core": true,
+          "skipSides": [
+            "alias"
           ]
         },
         {
@@ -695,9 +729,7 @@
               "authority": "official"
             }
           ],
-          "olympiad": [
-            "addition-b1-13"
-          ]
+          "olympiad": []
         },
         {
           "id": "lit-a-liuyuxi",
@@ -1410,7 +1442,12 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "alias",
+            "work"
+          ]
         },
         {
           "id": "lit-a-shinaian",
@@ -1468,6 +1505,10 @@
           ],
           "olympiad": [
             "2025-26-shk-30"
+          ],
+          "core": true,
+          "skipSides": [
+            "title"
           ]
         },
         {
@@ -1526,7 +1567,12 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "alias",
+            "work"
+          ]
         },
         {
           "id": "lit-a-caoxueqin",
@@ -1591,7 +1637,12 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "alias",
+            "work"
+          ]
         },
         {
           "id": "lit-a-pusongling",
@@ -1914,6 +1965,10 @@
           ],
           "olympiad": [
             "2017-18-shk-2"
+          ],
+          "core": true,
+          "skipSides": [
+            "title"
           ]
         },
         {
@@ -1987,6 +2042,11 @@
             "2015-16-zak-8",
             "2021-22-zak-q3eaa02",
             "2017-18-mun-2"
+          ],
+          "core": true,
+          "skipSides": [
+            "title",
+            "alias"
           ]
         },
         {
@@ -2320,7 +2380,11 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "alias"
+          ]
         },
         {
           "id": "lit-a-caoyu",
@@ -2396,9 +2460,7 @@
               "authority": "official"
             }
           ],
-          "olympiad": [
-            "addition-b2-08"
-          ]
+          "olympiad": []
         },
         {
           "id": "lit-a-tianhan",
@@ -3724,7 +3786,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lit-a-chenzhongshi",
