@@ -6,7 +6,9 @@
 строку отсюда убирают, и запись выходит под своим id.
 
 Слой идёт после удалений `retired.json`: правки и проверки отложенной записи остаются в
-файлах, но в банк не попадают.
+`editorial.json` и `verification.json`, но в банк не попадают. Подписи, группы фактов,
+встраивания, «Верно или нет», склейки и удаления на отложенную запись ссылаться не могут —
+`reference_errors` называет их до того, как запись уйдёт из банка.
 """
 
 from __future__ import annotations
@@ -32,7 +34,7 @@ def validate_withheld(withheld: object, bank: list[dict]) -> list[str]:
                           'принятый вопрос досье снимают через removed.json')
         elif record.get('mergedIds'):
             errors.append(f'{record_id}: в запись влиты {record["mergedIds"]} — '
-                          'перенесённый на неё прогресс учеников пропал бы')
+                          'отложить её значит снять с сайта и их, опубликованные раньше')
         if not isinstance(item, dict):
             errors.append(f'{record_id}: запись должна быть объектом')
             continue
@@ -44,6 +46,17 @@ def validate_withheld(withheld: object, bank: list[dict]) -> list[str]:
         if not isinstance(item.get('date'), str) or not item['date'].strip():
             errors.append(f'{record_id}: не указана дата решения')
     return errors
+
+
+def reference_errors(withheld: dict[str, dict], references: dict[str, set[str]]) -> list[str]:
+    """Слои, которые ссылаются на отложенное задание (`references`: слой → id записей).
+
+    Без этой проверки сборка остановилась бы на таком слое с общим «такой записи в банке нет»,
+    и чинить её захотелось бы удалением принятых автором подписей или групп.
+    """
+    return [f'{record_id}: задание отложено, но на него ссылается {layer} — '
+            'сначала решите, что с этой ссылкой делать, или верните задание'
+            for layer, ids in references.items() for record_id in sorted(set(withheld) & ids)]
 
 
 def apply_withheld(bank: list[dict], withheld: dict[str, dict]) -> list[dict]:

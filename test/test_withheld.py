@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from withheld import apply_withheld, load_withheld, validate_withheld
+from withheld import apply_withheld, load_withheld, reference_errors, validate_withheld
 
 
 def bank():
@@ -40,12 +40,16 @@ class ValidateWithheldTest(unittest.TestCase):
     def test_rejects_unknown_record(self):
         self.assertRejects({'z': WITHHELD['b']}, 'такой записи в банке нет')
 
-    def test_rejects_dossier_question(self):
-        # вопрос досье снимают через removed.json, а черновик просто не принимают
+    def test_rejects_record_without_olympiad_appearances(self):
+        # принятый вопрос досье или дополнение снимают через removed.json, черновик просто не принимают
         self.assertRejects({'nature-q01': WITHHELD['b']}, 'только олимпиадные')
 
+    def test_rejects_entry_that_is_not_an_object(self):
+        self.assertRejects({'b': 'ответ не подтверждён'}, 'объектом')
+        self.assertRejects(['b'], 'словарём')
+
     def test_rejects_record_that_absorbed_others(self):
-        # прогресс учеников, перенесённый на неё со склеенных записей, пропал бы
+        # влитые записи уже опубликованы: отложить её значит снять с сайта и их
         records = bank()
         records[1]['mergedIds'] = ['old']
         self.assertRejects(WITHHELD, 'влиты', records)
@@ -54,6 +58,13 @@ class ValidateWithheldTest(unittest.TestCase):
         self.assertRejects({'b': {'date': '2026-10-24'}}, 'причина')
         self.assertRejects({'b': {'reason': 'Сомнение'}}, 'дата')
         self.assertRejects({'b': {**WITHHELD['b'], 'keptIn': 'a'}}, 'неизвестные поля')
+
+    def test_layers_pointing_at_a_withheld_record_are_named(self):
+        errors = reference_errors(WITHHELD, {'glosses.json': {'a', 'b'}, 'fact-groups.json': {'a'}})
+        self.assertEqual(len(errors), 1)
+        self.assertIn('glosses.json', errors[0])
+        self.assertTrue(errors[0].startswith('b:'))
+        self.assertEqual(reference_errors({}, {'glosses.json': {'b'}}), [])
 
     def test_loader_rejects_duplicate_ids(self):
         with tempfile.TemporaryDirectory() as folder:
