@@ -4,12 +4,13 @@ from __future__ import annotations
 
 import json
 import sys
+from functools import partial
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from parsers import bank423, categories310, pdf_papers, vsosh
+from parsers import bank423, categories310, cifrium, pdf_papers, vsosh
 
 JOBS = [
     ('bank423', 'Банк вопросов — лингвострановедение (423, с ответами).docx', bank423.parse),
@@ -20,6 +21,12 @@ JOBS = [
     ('paper-2022-23-zak', 'Лингвострановедение 2022-23 — Заключительный.pdf', pdf_papers.parse),
     ('paper-2023-24', 'Лингвострановедение 2023-24.pdf', pdf_papers.parse),
     ('paper-2024-25', 'Лингвострановедение 2024-25.pdf', pdf_papers.parse),
+    # в выгрузке Цифриума год не напечатан; муниципальный этап 2026/27 — со слов автора (2026-10-24).
+    # Номер задания — порядок в разделе, классов и региона в id нет: вариант того же этапа для 7–8
+    # классов или другого региона получил бы те же id и суффиксы -a/-b в зависимости от порядка —
+    # такой выгрузке до первой сборки нужен свой сдвиг номеров
+    ('cifrium-2026-27-mun', 'Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf',
+     partial(cifrium.parse, year='2026-27')),
 ]
 
 

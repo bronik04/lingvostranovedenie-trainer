@@ -32,13 +32,18 @@ def plural_ru(count: int, forms: tuple[str, str, str]) -> str:
     return forms[2]
 
 
+def answer_sources(bank: list[dict], explanation: str = 'пояснение') -> str:
+    """«У каждого ответа…» — только когда проверены все: непроверенный ответ взят из ключа без пояснения."""
+    every_verified = all(record['answer']['state'] == 'verified' for record in bank)
+    return (f'у каждого ответа — {explanation} и ссылка на источник' if every_verified
+            else f'у проверенных ответов — {explanation} и ссылка на источник')
+
+
 def bank_description(bank: list[dict]) -> str:
     """Описание для поисковиков и превью ссылок — считается по банку при сборке,
     чтобы число вопросов не устаревало."""
     count = len(bank)
-    every_verified = all(record['answer']['state'] == 'verified' for record in bank)
-    sources = ('у каждого ответа — пояснение и ссылка на источник' if every_verified
-               else 'у проверенных ответов — пояснение и ссылка на источник')
+    sources = answer_sources(bank)
     return (f'{count} {plural_ru(count, ("вопрос", "вопроса", "вопросов"))} '
             f'по лингвострановедению Китая для подготовки к ВсОШ: вопрос по-русски, '
             f'варианты по-китайски, {sources}.')
@@ -127,6 +132,7 @@ def main() -> None:
 
     html = (ROOT / 'src/template.html').read_text('utf-8')
     html = html.replace('/*BANK_DESCRIPTION*/', escape(bank_description(bank)))
+    html = html.replace('/*ANSWER_SOURCES*/', escape(answer_sources(bank, 'разбор')))
     html = html.replace('/*QUIZ_CSS*/', minify_css(stylesheet()))
     engine = minify_js((ROOT / 'src/quiz.mjs').read_text('utf-8').replace('export ', ''))
     html = html.replace('/*QUIZ_ENGINE*/', engine)

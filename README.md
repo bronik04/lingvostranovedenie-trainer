@@ -3,8 +3,8 @@
 [![Deploy to GitHub Pages](https://github.com/bronik04/lingvostranovedenie-trainer/actions/workflows/pages.yml/badge.svg)](https://github.com/bronik04/lingvostranovedenie-trainer/actions/workflows/pages.yml)
 
 Банк вопросов раздела «Лингвострановедение» Всероссийской олимпиады школьников
-за 2015/16 — 2025/26 и тренажёр к нему: вопрос по-русски, варианты по-китайски,
-у каждого ответа пояснение и ссылка на источник.
+за 2015/16 — 2026/27 и тренажёр к нему: вопрос по-русски, варианты по-китайски,
+у каждого проверенного ответа пояснение и ссылка на источник.
 
 **Демо:** https://bronik04.github.io/lingvostranovedenie-trainer/
 (GitHub Pages, `.github/workflows/pages.yml` — при каждом push в `master`
