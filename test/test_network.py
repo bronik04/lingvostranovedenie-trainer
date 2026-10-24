@@ -85,13 +85,14 @@ class NetworkReportTest(unittest.TestCase):
         # черновик не считается: у Хайнаня пусто
         self.assertIn('| prov-hainan | — | — | — | — | прогноз |', report)
 
-    def test_russian_rows_are_left_to_the_russian_topic(self):
+    def test_russian_rows_outside_the_core_are_triage_candidates(self):
+        # российская тема перебрана (2026-10-24): вопрос о российской строке вне ядра — такой же кандидат
         data = core_dossier()
         data['tables']['provinces']['columns']['country'] = 'zh'
         data['tables']['provinces']['rows'].append(province('city-ru-tula', '图拉', '图', '图拉', country=cell('俄罗斯')))
         report = network_report([(data, core_questions() + [q('provinces-q20', 'city-ru-tula', 'abbr')])], bank=[])
-        self.assertNotIn('provinces-q20 —', report)
-        self.assertIn('Российские строки (разбирает российская тема): вопросов 1', report)
+        self.assertIn('- provinces-q20 — Вопрос provinces-q20?', report)
+        self.assertNotIn('Российские строки', report)
 
     def test_an_addition_in_olympiad_field_is_not_olympiad(self):
         # в поле olympiad строки бывают и наши дополнения: «да» — только при записи с появлениями
