@@ -8,27 +8,27 @@
 
 Число появлений олимпиадных заданий по категориям: сколько раз тему спрашивали.
 
-| Категория | 2015-16 | 2016-17 | 2017-18 | 2018-19 | 2019-20 | 2020-21 | 2021-22 | 2022-23 | 2023-24 | 2024-25 | 2025-26 | Всего |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| География и административное устройство | 11 | 9 | 8 | 15 | 7 | 6 | 15 | 9 | 6 | 14 | 13 | 113 |
-| Россия и межкультурный блок | 0 | 0 | 0 | 5 | 6 | 5 | 4 | 11 | 15 | 14 | 13 | 73 |
-| Литература, язык, искусство и философия | 2 | 9 | 8 | 7 | 2 | 5 | 3 | 4 | 5 | 3 | 3 | 51 |
-| История и государство | 10 | 10 | 9 | 1 | 5 | 5 | 9 | 6 | 9 | 6 | 4 | 74 |
-| Общество: население, этносы и религии | 8 | 3 | 3 | 5 | 2 | 2 | 2 | 3 | 1 | 3 | 0 | 32 |
-| Экономика, образование, наука и спорт | 3 | 6 | 4 | 3 | 2 | 0 | 0 | 4 | 1 | 6 | 2 | 31 |
-| Культура, традиции и праздники | 6 | 2 | 7 | 3 | 3 | 7 | 7 | 3 | 3 | 4 | 5 | 50 |
+| Категория | 2015-16 | 2016-17 | 2017-18 | 2018-19 | 2019-20 | 2020-21 | 2021-22 | 2022-23 | 2023-24 | 2024-25 | 2025-26 | 2026-27 | Всего |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| География и административное устройство | 11 | 9 | 8 | 15 | 7 | 6 | 15 | 9 | 6 | 14 | 13 | 1 | 114 |
+| Россия и межкультурный блок | 0 | 0 | 0 | 5 | 6 | 5 | 4 | 11 | 15 | 14 | 13 | 1 | 74 |
+| Литература, язык, искусство и философия | 2 | 9 | 8 | 7 | 2 | 5 | 3 | 4 | 5 | 3 | 3 | 1 | 52 |
+| История и государство | 10 | 10 | 9 | 1 | 5 | 5 | 9 | 6 | 9 | 6 | 4 | 2 | 76 |
+| Общество: население, этносы и религии | 8 | 3 | 3 | 5 | 2 | 2 | 2 | 3 | 1 | 3 | 0 | 0 | 32 |
+| Экономика, образование, наука и спорт | 3 | 6 | 4 | 3 | 2 | 0 | 0 | 4 | 1 | 6 | 2 | 1 | 32 |
+| Культура, традиции и праздники | 6 | 2 | 7 | 3 | 3 | 7 | 7 | 3 | 3 | 4 | 5 | 1 | 51 |
 
 ## Олимпиада по этапам
 
 | Категория | школьный | муниципальный | региональный | заключительный | пригласительный | Всего |
 |---|---|---|---|---|---|---|
-| География и административное устройство | 28 | 29 | 22 | 28 | 6 | 113 |
-| Россия и межкультурный блок | 16 | 13 | 23 | 18 | 3 | 73 |
-| Литература, язык, искусство и философия | 9 | 14 | 8 | 16 | 4 | 51 |
-| История и государство | 15 | 21 | 23 | 13 | 2 | 74 |
+| География и административное устройство | 28 | 30 | 22 | 28 | 6 | 114 |
+| Россия и межкультурный блок | 16 | 14 | 23 | 18 | 3 | 74 |
+| Литература, язык, искусство и философия | 9 | 15 | 8 | 16 | 4 | 52 |
+| История и государство | 15 | 23 | 23 | 13 | 2 | 76 |
 | Общество: население, этносы и религии | 9 | 8 | 11 | 4 | 0 | 32 |
-| Экономика, образование, наука и спорт | 11 | 5 | 8 | 6 | 1 | 31 |
-| Культура, традиции и праздники | 9 | 9 | 15 | 13 | 4 | 50 |
+| Экономика, образование, наука и спорт | 11 | 6 | 8 | 6 | 1 | 32 |
+| Культура, традиции и праздники | 9 | 10 | 15 | 13 | 4 | 51 |
 
 ## Досье
 
@@ -646,6 +646,27 @@
 
 | строка | year | leader | memorial | другие | олимпиада |
 |---|---|---|---|---|---|
+| ev-humen | 1 | 1 | × | — | прогноз |
+| ev-yapian1 | 1 | × | × | — | да |
+| ev-yapian2 | 1 | × | × | — | да |
+| ev-taiping | 1 | 1 | × | — | прогноз |
+| ev-jiawu | 1 | × | × | — | прогноз |
+| ev-wuxu | × | 1 | × | — | прогноз |
+| ev-yihetuan | × | × | × | 1 | прогноз |
+| ev-baguo | 1 | × | × | — | прогноз |
+| ev-xinhai | × | 1 | × | 1 | да |
+| ev-xinwenhua | × | × | × | 1 | прогноз |
+| ev-wusi | × | × | × | — | да |
+| ev-jiandang | × | × | × | 1 | да |
+| ev-beifa | × | 1 | × | — | прогноз |
+| ev-changzheng | 1 | × | × | — | прогноз |
+| ev-jiuyiba | × | × | × | 1 | прогноз |
+| ev-qiqi | 1 | × | × | — | прогноз |
+| ev-kaiguo | 1 | 1 | × | — | прогноз |
+| ev-wenge | 1 | × | × | — | прогноз |
+| ev-gaige | 1 | × | × | — | да |
+| ev-xianggang | × | × | × | — | да |
+| ev-aomen | × | × | × | — | да |
 | ev-ru-decembrists | 1 | × | × | — | прогноз |
 | ev-ru-crimea | 1 | × | × | — | прогноз |
 | ev-ru-serfdom | 1 | — | × | — | прогноз |
@@ -693,13 +714,16 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | year | другие | олимпиада |
-|---|---|---|---|
-| tr-ru-nerchinsk | — | — | прогноз |
-| tr-ru-aihui | — | 1 | прогноз |
-| tr-ru-beijing | — | 1 | прогноз |
-| tr-ru-1950 | 1 | — | прогноз |
-| tr-ru-2001 | — | — | прогноз |
+| строка | year | land | другие | олимпиада |
+|---|---|---|---|---|
+| tr-nanjing | × | 1 | — | да |
+| tr-maguan | 1 | 1 | — | прогноз |
+| tr-xinchou | × | × | 1 | прогноз |
+| tr-ru-nerchinsk | — | × | — | прогноз |
+| tr-ru-aihui | — | × | 1 | прогноз |
+| tr-ru-beijing | — | × | 1 | прогноз |
+| tr-ru-1950 | 1 | × | — | прогноз |
+| tr-ru-2001 | — | × | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
@@ -713,8 +737,6 @@
 - modern-history-q25 — Кто был главнокомандующим Народно-освободительной армии Китая (中国人民解放军总司令) в годы Освободительной войны и после образования КНР?
 - modern-history-q26 — Главным создателем какой важной идеи называют Цзян Цзэминя?
 - modern-history-q27 — Какое понятие выдвинул Ху Цзиньтао в 2003 году?
-
-Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 26.
 
 ### Деньги (`money`)
 
@@ -1312,6 +1334,10 @@
 - literature/authors/lit-a-taoyuanming
 - literature/works/lit-w-mulanci
 - literature/works/lit-w-shijing
+- modern-history/events/ev-aomen
+- modern-history/events/ev-changzheng
+- modern-history/events/ev-jiuyiba
+- modern-history/events/ev-qiqi
 - modern-history/events/ev-ru-crimea
 - modern-history/events/ev-ru-february
 - modern-history/events/ev-ru-leningrad
@@ -1320,6 +1346,8 @@
 - modern-history/events/ev-ru-ussr
 - modern-history/events/ev-ru-ussr-end
 - modern-history/events/ev-ru-ww2
+- modern-history/events/ev-xianggang
+- modern-history/events/ev-yihetuan
 - modern-history/figures/per-ru-gorbachev
 - modern-history/figures/per-ru-khrushchev
 - modern-history/figures/per-ru-stalin
@@ -1473,14 +1501,13 @@
 - holidays/figures/fig-jiezitui → holidays/holidays/hol-hanshi
 - holidays/holidays/hol-huoba → ethnos/peoples/ppl-cn-yi
 - holidays/holidays/hol-jianjun → modern-history/events/ev-nanchang
-- holidays/holidays/hol-qingnian → modern-history/events/ev-wusi
 - literature/authors/lit-a-ru-bunin → literature/works/lit-w-ru-arsenyev
 - literature/authors/lit-a-ru-lermontov → literature/works/lit-w-ru-demon
 - literature/works/lit-w-ru-gulag → literature/authors/lit-a-ru-solzhenitsyn
+- modern-history/events/ev-xinwenhua → modern-history/figures/per-chenduxiu
 - modern-history/figures/per-sunzhongshan → holidays/figures/fig-sunzhongshan
 - modern-history/figures/per-zhouenlai → literature/authors/lit-a-zhouenlai
 - modern-history/treaties/tr-ru-2001 → modern-history/figures/per-jiangzemin
-- modern-history/treaties/tr-ru-beijing → modern-history/events/ev-yapian2
 - money/banknotes/rub-2000-2017 → nature/engineering/eng-ru-russky-bridge
 - nature/waters/wat-heilongjiang → nature/seas/sea-ru-okhotsk
 - nature/waters/wat-ru-lena → nature/seas/sea-ru-laptev
