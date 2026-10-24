@@ -7967,6 +7967,7 @@
     "explanation": {
       "ru": "Гимн КНР — «Марш добровольцев» (义勇军进行曲), написанный Не Эром на слова Тянь Ханя в 1935 году и утверждённый государственным гимном в 1949 (официально в 2004 внесён в конституцию)."
     },
+    "factGroup": "anthem-volunteers-march",
     "id": "2017-18-reg-5",
     "occurrences": [
       {
@@ -35887,6 +35888,339 @@
     "questionRu": "Какой советский фильм Владимира Меньшова получил премию «Оскар» в 1981 году?",
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-wandering-earth",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 流浪地球",
+        "url": "https://www.1905.com/mdb/film/2228651/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Синьхуа: интервью Лю Цысиня о «Блуждающей Земле»",
+        "url": "https://www.xinhuanet.com/politics/2019-02/03/c_1124084032.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Блуждающая Земля» (流浪地球) режиссёра Го Фаня. Фильм снят по одноимённому рассказу Лю Цысиня. Чтобы спастись от стареющего Солнца, люди перемещают саму планету."
+    },
+    "factRow": "cinema/works/cin-cn-wandering-earth",
+    "id": "cinema-q31",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-wandering-earth",
+        "zh": "流浪地球"
+      },
+      {
+        "gloss": "«Красный гаолян» — фильм Чжан Имоу по произведениям Мо Яня",
+        "id": "cin-cn-red-sorghum",
+        "zh": "红高粱"
+      },
+      {
+        "gloss": "«Прощай, моя наложница» — фильм о судьбах двух актёров пекинской оперы",
+        "id": "cin-cn-concubine",
+        "zh": "霸王别姬"
+      },
+      {
+        "gloss": "«Крадущийся тигр, затаившийся дракон» — фильм о мастерах боевых искусств",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "卧虎藏龙"
+      },
+      {
+        "gloss": "«Любовное настроение» — фильм о сближении двух соседей в Гонконге",
+        "id": "cin-cn-mood-for-love",
+        "zh": "花样年华"
+      },
+      {
+        "gloss": "«Натюрморт» — фильм о поисках близких на фоне переселения у Трёх ущелий",
+        "id": "cin-cn-still-life",
+        "zh": "三峡好人"
+      },
+      {
+        "gloss": "«Певица Красный Пион» — один из первых опытов звукового кино Китая",
+        "id": "cin-cn-red-peony",
+        "zh": "歌女红牡丹"
+      },
+      {
+        "gloss": "«Жить» — фильм о судьбе Фугуя и его семьи в Китае XX века",
+        "id": "cin-cn-to-live",
+        "zh": "活着"
+      },
+      {
+        "gloss": "«Герой» — фильм о встрече воина Безымянного с царём Цинь",
+        "id": "cin-cn-hero",
+        "zh": "英雄"
+      },
+      {
+        "gloss": "«Дом летающих кинжалов» — история любви и обмана на фоне поздней Тан",
+        "id": "cin-cn-flying-daggers",
+        "zh": "十面埋伏"
+      },
+      {
+        "gloss": "«Дети грозных лет» — фильм 1935 года, для которого написан «Марш добровольцев»",
+        "id": "cin-cn-fengyun-ernv",
+        "zh": "风云儿女"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется фантастический фильм 2019 года, снятый по одноимённому рассказу Лю Цысиня?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-concubine",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 霸王别姬",
+        "url": "https://www.1905.com/mdb/film/57388/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Каннский фестиваль: BAWANG BIEJI",
+        "url": "https://www.festival-cannes.com/en/f/bawang-bieji/"
+      }
+    ],
+    "explanation": {
+      "ru": "Фильм «Прощай, моя наложница» (霸王别姬) поставил Чэнь Кайгэ (陈凯歌). Это история двух актёров пекинской оперы по роману Ли Бихуа. В 1993 году картина разделила главный приз Каннского кинофестиваля с другим фильмом."
+    },
+    "factRow": "cinema/works/cin-cn-concubine",
+    "id": "cinema-q32",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-concubine",
+        "zh": "陈凯歌"
+      },
+      {
+        "gloss": "Чжан Имоу — кинорежиссёр",
+        "id": "cin-cn-red-sorghum",
+        "zh": "张艺谋"
+      },
+      {
+        "gloss": "Ли Ань — кинорежиссёр",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "李安"
+      },
+      {
+        "gloss": "Вонг Карвай — кинорежиссёр",
+        "id": "cin-cn-mood-for-love",
+        "zh": "王家卫"
+      },
+      {
+        "gloss": "Го Фань — кинорежиссёр",
+        "id": "cin-cn-wandering-earth",
+        "zh": "郭帆"
+      },
+      {
+        "gloss": "Цзя Чжанкэ — кинорежиссёр",
+        "id": "cin-cn-still-life",
+        "zh": "贾樟柯"
+      },
+      {
+        "gloss": "Чжан Шичуань — кинорежиссёр",
+        "id": "cin-cn-red-peony",
+        "zh": "张石川"
+      },
+      {
+        "gloss": "Сюй Синчжи — кинорежиссёр",
+        "id": "cin-cn-fengyun-ernv",
+        "zh": "许幸之"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Кто поставил фильм «Прощай, моя наложница» (霸王别姬), разделивший «Золотую пальмовую ветвь» в 1993 году?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-crouching-tiger",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 卧虎藏龙",
+        "url": "https://www.1905.com/mdb/film/53745/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Каннский фестиваль: Crouching Tiger, Hidden Dragon",
+        "url": "https://www.festival-cannes.com/en/2019/crouching-tiger-hidden-dragon-ang-lee-s-spectacular-masterpiece/"
+      }
+    ],
+    "explanation": {
+      "ru": "Фильм «Крадущийся тигр, затаившийся дракон» (卧虎藏龙) поставил Ли Ань (李安). Картина 2000 года снята по роману Ван Дулу. В 2001 году она получила «Оскар» за лучший фильм на иностранном языке."
+    },
+    "factRow": "cinema/works/cin-cn-crouching-tiger",
+    "id": "cinema-q33",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-crouching-tiger",
+        "zh": "李安"
+      },
+      {
+        "gloss": "Чжан Имоу — кинорежиссёр",
+        "id": "cin-cn-red-sorghum",
+        "zh": "张艺谋"
+      },
+      {
+        "gloss": "Чэнь Кайгэ — кинорежиссёр",
+        "id": "cin-cn-concubine",
+        "zh": "陈凯歌"
+      },
+      {
+        "gloss": "Вонг Карвай — кинорежиссёр",
+        "id": "cin-cn-mood-for-love",
+        "zh": "王家卫"
+      },
+      {
+        "gloss": "Го Фань — кинорежиссёр",
+        "id": "cin-cn-wandering-earth",
+        "zh": "郭帆"
+      },
+      {
+        "gloss": "Цзя Чжанкэ — кинорежиссёр",
+        "id": "cin-cn-still-life",
+        "zh": "贾樟柯"
+      },
+      {
+        "gloss": "Чжан Шичуань — кинорежиссёр",
+        "id": "cin-cn-red-peony",
+        "zh": "张石川"
+      },
+      {
+        "gloss": "Сюй Синчжи — кинорежиссёр",
+        "id": "cin-cn-fengyun-ernv",
+        "zh": "许幸之"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Кто поставил фильм «Крадущийся тигр, затаившийся дракон» (卧虎藏龙), получивший «Оскар» в 2001 году?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-fengyun-ernv",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-24",
+        "title": "《义勇军进行曲》是如何成为国歌的？ — 共产党员网",
+        "url": "https://www.12371.cn/2021/10/15/ARTI1634273299208217.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-24",
+        "title": "《义勇军进行曲》：一个民族的精神歌咏 — 共产党员网",
+        "url": "https://www.12371.cn/2023/03/31/ARTI1680218916275292.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-24",
+        "title": "中华人民共和国国歌 — 中国政府网",
+        "url": "https://www.gov.cn/guoqing/guoge/index.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "«Марш добровольцев» — главная песня фильма «Дети грозных лет» (风云儿女) студии «Дяньтун». Фильм вышел в Шанхае 24 мая 1935 года, и с тех пор песня разошлась по всей стране. Сейчас «Марш добровольцев» — государственный гимн КНР."
+    },
+    "factGroup": "anthem-volunteers-march",
+    "factRow": "cinema/works/cin-cn-fengyun-ernv",
+    "id": "cinema-q34",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-fengyun-ernv",
+        "zh": "风云儿女"
+      },
+      {
+        "gloss": "«Красный гаолян» — фильм Чжан Имоу по произведениям Мо Яня",
+        "id": "cin-cn-red-sorghum",
+        "zh": "红高粱"
+      },
+      {
+        "gloss": "«Прощай, моя наложница» — фильм о судьбах двух актёров пекинской оперы",
+        "id": "cin-cn-concubine",
+        "zh": "霸王别姬"
+      },
+      {
+        "gloss": "«Крадущийся тигр, затаившийся дракон» — фильм о мастерах боевых искусств",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "卧虎藏龙"
+      },
+      {
+        "gloss": "«Любовное настроение» — фильм о сближении двух соседей в Гонконге",
+        "id": "cin-cn-mood-for-love",
+        "zh": "花样年华"
+      },
+      {
+        "gloss": "«Блуждающая Земля» — фильм о спасении людей перемещением самой планеты",
+        "id": "cin-cn-wandering-earth",
+        "zh": "流浪地球"
+      },
+      {
+        "gloss": "«Натюрморт» — фильм о поисках близких на фоне переселения у Трёх ущелий",
+        "id": "cin-cn-still-life",
+        "zh": "三峡好人"
+      },
+      {
+        "gloss": "«Певица Красный Пион» — один из первых опытов звукового кино Китая",
+        "id": "cin-cn-red-peony",
+        "zh": "歌女红牡丹"
+      },
+      {
+        "gloss": "«Жить» — фильм о судьбе Фугуя и его семьи в Китае XX века",
+        "id": "cin-cn-to-live",
+        "zh": "活着"
+      },
+      {
+        "gloss": "«Герой» — фильм о встрече воина Безымянного с царём Цинь",
+        "id": "cin-cn-hero",
+        "zh": "英雄"
+      },
+      {
+        "gloss": "«Дом летающих кинжалов» — история любви и обмана на фоне поздней Тан",
+        "id": "cin-cn-flying-daggers",
+        "zh": "十面埋伏"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Для какого фильма была написана песня «Марш добровольцев», ставшая гимном КНР?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
     "topicSource": "authored"
   },
   {
@@ -66011,6 +66345,171 @@
   },
   {
     "answer": {
+      "optionId": "cny-100",
+      "state": "verified"
+    },
+    "dossier": "money",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "2015年版第五套人民币100元纸币发行准备工作基本就绪 — 中国人民银行",
+        "url": "https://www.pbc.gov.cn/huobijinyinju/147948/147950/2942355/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "2015年版100元纸币票面特征和公众防伪特征简介 — 中国人民银行哈尔滨中心支行",
+        "url": "https://haerbin.pbc.gov.cn/haerbin/112718/3381691/2017091508322549080.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "2005版第五套人民币票样 100元 — 中国人民银行",
+        "url": "https://www.pbc.gov.cn/huobijinyinju/147948/147954/148021/176764/2820779/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "新版人民币正式发行！原来人民币里藏着这么多中药，快找找看！— 国家中医药管理局",
+        "url": "http://www.natcm.gov.cn/hudongjiaoliu/guanfangweixin/2019-09-04/10785.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "人民币与中国名花 — 中国人民银行武汉分行",
+        "url": "https://wuhan.pbc.gov.cn/wuhan/123537/123545/125019/127415/2628903/index.html"
+      }
+    ],
+    "explanation": {
+      "ru": "На обороте купюры 100 юаней пятой серии изображён Дом народных собраний (人民大会堂) в Пекине. На лицевой стороне — портрет Мао Цзэдуна и цветы сливы мэйхуа. Выпуск 2015 года вышел в обращение 12 ноября 2015 года."
+    },
+    "factRow": "money/banknotes/cny-100",
+    "id": "money-q39",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cny-100",
+        "zh": "人民大会堂"
+      },
+      {
+        "gloss": "Западное озеро (Сиху) — на обороте купюры 1 юань",
+        "id": "cny-1",
+        "zh": "西湖"
+      },
+      {
+        "gloss": "Гора Тайшань — на обороте купюры 5 юаней",
+        "id": "cny-5",
+        "zh": "泰山"
+      },
+      {
+        "gloss": "Три ущелья Янцзы — на обороте купюры 10 юаней",
+        "id": "cny-10",
+        "zh": "长江三峡"
+      },
+      {
+        "gloss": "Горы и реки Гуйлиня — на обороте купюры 20 юаней",
+        "id": "cny-20",
+        "zh": "桂林山水"
+      },
+      {
+        "gloss": "Дворец Потала в Лхасе — на обороте купюры 50 юаней",
+        "id": "cny-50",
+        "zh": "布达拉宫"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Что изображено на обороте купюры 100 юаней пятой серии (выпуск 2015 года)?",
+    "questionZh": null,
+    "topic": "Экономика, образование, наука и спорт",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cny-50",
+      "state": "verified"
+    },
+    "dossier": "money",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "中国人民银行公告〔2019〕第4号 — 中国人民银行",
+        "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212545747507/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "第五套人民币50元纸币防伪特征 — 中国人民银行",
+        "url": "https://www.pbc.gov.cn/huobijinyinju/147948/147954/148021/176741/2880740/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "2019年版第五套人民币50元纸币 — 中国人民银行",
+        "url": "https://www.pbc.gov.cn/huobijinyinju/147948/147954/148021/3871396/3871424/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "新版人民币正式发行！原来人民币里藏着这么多中药，快找找看！— 国家中医药管理局",
+        "url": "http://www.natcm.gov.cn/hudongjiaoliu/guanfangweixin/2019-09-04/10785.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "人民币与中国名花 — 中国人民银行武汉分行",
+        "url": "https://wuhan.pbc.gov.cn/wuhan/123537/123545/125019/127415/2628903/index.html"
+      }
+    ],
+    "explanation": {
+      "ru": "На обороте купюры 50 юаней пятой серии изображён дворец Потала (布达拉宫). На лицевой стороне — портрет Мао Цзэдуна и хризантема. Выпуск 2019 года сохранил рисунок и цвет купюры выпуска 2005 года."
+    },
+    "factGroup": "potala-tibet",
+    "factRow": "money/banknotes/cny-50",
+    "id": "money-q40",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cny-50",
+        "zh": "布达拉宫"
+      },
+      {
+        "gloss": "Западное озеро (Сиху) — на обороте купюры 1 юань",
+        "id": "cny-1",
+        "zh": "西湖"
+      },
+      {
+        "gloss": "Гора Тайшань — на обороте купюры 5 юаней",
+        "id": "cny-5",
+        "zh": "泰山"
+      },
+      {
+        "gloss": "Три ущелья Янцзы — на обороте купюры 10 юаней",
+        "id": "cny-10",
+        "zh": "长江三峡"
+      },
+      {
+        "gloss": "Горы и реки Гуйлиня — на обороте купюры 20 юаней",
+        "id": "cny-20",
+        "zh": "桂林山水"
+      },
+      {
+        "gloss": "Дом народных собраний в Пекине — на обороте купюры 100 юаней",
+        "id": "cny-100",
+        "zh": "人民大会堂"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Что изображено на обороте купюры 50 юаней пятой серии (выпуск 2019 года)?",
+    "questionZh": null,
+    "topic": "Экономика, образование, наука и спорт",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
       "optionId": "fig-houyi",
       "state": "verified"
     },
@@ -67519,6 +68018,66 @@
     "origin": "addition",
     "parseWarnings": [],
     "questionRu": "Как зовут героиню легенды, внучку Небесного владыки, которая ткала облака, тайно спустилась на землю и стала женой пастуха, но её вернули на небо?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "story-mulan-congjun",
+      "state": "verified"
+    },
+    "dossier": "myths",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "木兰传说 — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/project_details/12280.html"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-10-15",
+        "title": "史金波：《木兰辞》中“军书十二卷”新解 — 全国哲学社会科学工作办公室",
+        "url": "http://www.nopss.gov.cn/n1/2021/0802/c219544-32177765.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "木兰传说：忠孝丹心铸 英雄美名扬 — 根在中原（河南省委统战部）",
+        "url": "https://sq.rootinhenan.gov.cn/sitesources/sq/page_pc/gqwh/articled1cfe8f3b70246dca5e69d06cbce1260.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Сказание о Хуа Мулань (木兰从军), которая ушла на войну вместо отца, — народная легенда, но в «четыре великие народные легенды» (四大民间传说) оно не входит. Эти четыре предания считают самой заметной частью китайской народной культуры. Все они — истории о любви, а сказание о Мулань — о дочернем долге и воинской доблести."
+    },
+    "factRow": "myths/stories/story-mulan-congjun",
+    "id": "myths-q30",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "story-mulan-congjun",
+        "zh": "木兰从军"
+      },
+      {
+        "gloss": "«Пастух и Ткачиха» — влюблённые, встречающиеся раз в год на сорочьем мосту",
+        "id": "story-niulang-zhinv",
+        "zh": "牛郎织女"
+      },
+      {
+        "gloss": "«Легенда о Белой змее» — любовь девы-змеи к юноше Сюй Сяню",
+        "id": "story-baishezhuan",
+        "zh": "白蛇传"
+      },
+      {
+        "gloss": "«Мэн Цзяннюй оплакивает стену» — от её плача обрушилась Великая стена",
+        "id": "story-mengjiangnu",
+        "zh": "孟姜女哭长城"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какое из этих сказаний не входит в четыре великие народные легенды Китая?",
     "questionZh": null,
     "topic": "Культура, традиции и праздники",
     "topicSource": "authored"
@@ -84151,6 +84710,184 @@
     "questionRu": "Кто первым в мире вышел в открытый космос?",
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "mis-dongfanghong1",
+      "state": "verified"
+    },
+    "dossier": "space",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "中国第一颗人造卫星 东方红一号 — 国家航天局",
+        "url": "https://www.cnsa.gov.cn/n6758968/n6758972/c10004149/content.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "国博云端揭秘“永远的东方红” — 人民网",
+        "url": "http://bj.people.com.cn/n2/2020/0511/c82846-34009189.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "东方红一号，你想知道的都在这里 — 新华网",
+        "url": "http://www.xinhuanet.com/politics/2016-04/21/c_1118699133.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "太空奏响“东方红” — 中国航天科技集团",
+        "url": "http://zhuanti.spacechina.com/n1449297/n1449403/c1458982/content.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "听听第一颗人造卫星上的《东方红》 — 江苏省档案馆",
+        "url": "https://dajs.gov.cn/art/2022/4/27/art_39_5069.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "1970年“东方红一号”成功发射 — 中国经济周刊（人民网）",
+        "url": "http://paper.people.com.cn/zgjjzk/html/2009-09/28/content_355714.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Первый искусственный спутник Китая — «Дунфанхун-1» (东方红一号). Его запустили 24 апреля 1970 года ракетой «Чанчжэн-1» с космодрома Цзюцюань, и из космоса он передавал мелодию песни «Алеет Восток». Китай стал пятой страной, которая сама создала и запустила спутник."
+    },
+    "factRow": "space/missions/mis-dongfanghong1",
+    "id": "space-q20",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "mis-dongfanghong1",
+        "zh": "东方红一号"
+      },
+      {
+        "gloss": "Чанъэ-1 — первый лунный зонд Китая, 2007",
+        "id": "mis-change1",
+        "zh": "嫦娥一号"
+      },
+      {
+        "gloss": "Чанъэ-2 — лунный зонд 2010 года, позже пролетел мимо астероида Таутатис",
+        "id": "mis-change2",
+        "zh": "嫦娥二号"
+      },
+      {
+        "gloss": "Чанъэ-3 — первая мягкая посадка Китая на Луну, 2013",
+        "id": "mis-change3",
+        "zh": "嫦娥三号"
+      },
+      {
+        "gloss": "Чанъэ-4 — первая мягкая посадка на обратной стороне Луны, 2019",
+        "id": "mis-change4",
+        "zh": "嫦娥四号"
+      },
+      {
+        "gloss": "Чанъэ-5 — первая доставка Китаем лунного грунта на Землю, 2020",
+        "id": "mis-change5",
+        "zh": "嫦娥五号"
+      },
+      {
+        "gloss": "Чанъэ-6 — первый в мире грунт с обратной стороны Луны, 2024",
+        "id": "mis-change6",
+        "zh": "嫦娥六号"
+      },
+      {
+        "gloss": "Юйту — первый китайский луноход, его доставил на Луну «Чанъэ-3» в 2013",
+        "id": "mis-yutu",
+        "zh": "玉兔号"
+      },
+      {
+        "gloss": "Юйту-2 — луноход, доставленный на обратную сторону Луны станцией «Чанъэ-4»",
+        "id": "mis-yutu2",
+        "zh": "玉兔二号"
+      },
+      {
+        "gloss": "Цюэцяо — спутник-ретранслятор у точки L2 для связи с «Чанъэ-4», 2018",
+        "id": "mis-queqiao",
+        "zh": "鹊桥"
+      },
+      {
+        "gloss": "Цюэцяо-2 — спутник-ретранслятор на орбите Луны для «Чанъэ-6», 2024",
+        "id": "mis-queqiao2",
+        "zh": "鹊桥二号"
+      },
+      {
+        "gloss": "Мэнчжоу — новый пилотируемый корабль для полётов к Луне, испытывается с 2025",
+        "id": "mis-mengzhou",
+        "zh": "梦舟"
+      },
+      {
+        "gloss": "Ланьюэ — лунный посадочный модуль для двух космонавтов, испытан в 2025",
+        "id": "mis-lanyue",
+        "zh": "揽月"
+      },
+      {
+        "gloss": "«Шэньчжоу-5» — корабль первого пилотируемого полёта Китая (2003, Ян Ливэй)",
+        "id": "mis-shenzhou5",
+        "zh": "神舟五号"
+      },
+      {
+        "gloss": "«Шэньчжоу-11» — корабль, чей экипаж месяц работал на «Тяньгун-2» (2016)",
+        "id": "mis-shenzhou11",
+        "zh": "神舟十一号"
+      },
+      {
+        "gloss": "«Тяньгун-1» — первый китайский орбитальный модуль, запущен в 2011 году",
+        "id": "mis-tiangong1",
+        "zh": "天宫一号"
+      },
+      {
+        "gloss": "«Тяньгун» — китайская орбитальная станция; базовый модуль запущен в 2021 году",
+        "id": "mis-tiangong",
+        "zh": "天宫空间站"
+      },
+      {
+        "gloss": "«Тяньвэнь-1» — первая китайская экспедиция к Марсу, запущена в 2020 году",
+        "id": "mis-tianwen1",
+        "zh": "天问一号"
+      },
+      {
+        "gloss": "«Чжужун» — первый китайский марсоход, на поверхности Марса с мая 2021 года",
+        "id": "mis-zhurong",
+        "zh": "祝融号"
+      },
+      {
+        "gloss": "«Укун» — китайский спутник для поиска тёмной материи (2015)",
+        "id": "mis-wukong",
+        "zh": "悟空"
+      },
+      {
+        "gloss": "«Сихэ» — первый китайский спутник для изучения Солнца (2021)",
+        "id": "mis-xihe",
+        "zh": "羲和号"
+      },
+      {
+        "gloss": "«Куафу-1» — китайская космическая солнечная обсерватория (2022)",
+        "id": "mis-kuafu1",
+        "zh": "夸父一号"
+      },
+      {
+        "gloss": "«Мо-цзы» — первый в мире спутник для квантовых экспериментов (2016)",
+        "id": "mis-mozi",
+        "zh": "墨子号"
+      },
+      {
+        "gloss": "«Бэйдоу-3» — глобальная спутниковая навигация Китая, введена в 2020 году",
+        "id": "mis-beidou",
+        "zh": "北斗三号"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как назывался первый искусственный спутник Китая, запущенный 24 апреля 1970 года?",
+    "questionZh": null,
+    "topic": "Экономика, образование, наука и спорт",
     "topicSource": "authored"
   }
 ]
