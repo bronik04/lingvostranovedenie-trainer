@@ -4811,7 +4811,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ]
         },
         {
           "id": "city-ru-ryazan",
@@ -5385,7 +5389,12 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region",
+            "river"
+          ]
         },
         {
           "id": "city-ru-ulan-ude",
@@ -5530,6 +5539,10 @@
           ],
           "olympiad": [
             "addition-b2-20"
+          ],
+          "core": true,
+          "skipSides": [
+            "region"
           ]
         },
         {
@@ -5636,6 +5649,10 @@
           ],
           "olympiad": [
             "2020-21-zak-q1f0e35"
+          ],
+          "core": true,
+          "skipSides": [
+            "region"
           ]
         }
       ]

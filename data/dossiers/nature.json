@@ -1613,7 +1613,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "wat-ru-angara",
@@ -3676,7 +3677,11 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "province"
+          ]
         },
         {
           "id": "sea-ru-kola",
