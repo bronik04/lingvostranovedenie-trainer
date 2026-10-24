@@ -38,22 +38,30 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | director | другие | олимпиада |
-|---|---|---|---|
-| cin-ru-potemkin | 1 | — | прогноз |
-| cin-ru-irony-of-fate | × | 1 | прогноз |
-| cin-ru-moscow-tears | × | 1 | прогноз |
-| cin-ru-crocodile-gena | × | 1 | прогноз |
-| cin-ru-hedgehog-fog | × | 1 | прогноз |
-| cin-ru-nu-pogodi | × | 1 | прогноз |
+| строка | director | name | technique | другие | олимпиада |
+|---|---|---|---|---|---|
+| cin-cn-red-sorghum | 1 | × | × | — | прогноз |
+| cin-cn-concubine | — | 1 | × | — | прогноз |
+| cin-cn-crouching-tiger | — | 1 | × | — | прогноз |
+| cin-cn-wandering-earth | × | — | × | — | прогноз |
+| cin-cn-hero | × | 1 | × | — | прогноз |
+| cin-cn-danaotiangong | × | 1 | × | — | прогноз |
+| cin-cn-xiaokedouzhaomama | × | × | 1 | — | прогноз |
+| cin-cn-huluxiongdi | × | × | 1 | — | прогноз |
+| cin-cn-nezhamotongjiangshi | × | 1 | × | — | прогноз |
+| cin-cn-fengyun-ernv | × | — | × | — | прогноз |
+| cin-ru-potemkin | 1 | — | × | — | прогноз |
+| cin-ru-irony-of-fate | × | 1 | × | — | прогноз |
+| cin-ru-moscow-tears | × | 1 | × | — | прогноз |
+| cin-ru-crocodile-gena | × | 1 | × | — | прогноз |
+| cin-ru-hedgehog-fog | × | 1 | × | — | прогноз |
+| cin-ru-nu-pogodi | × | 1 | × | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
 - нет
-
-Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 19.
 
 ### Ремёсла и народные искусства (`crafts`)
 
@@ -1233,6 +1241,15 @@
 
 Строки ядра без ссылок наружу и на себя.
 
+- cinema/works/cin-cn-concubine
+- cinema/works/cin-cn-crouching-tiger
+- cinema/works/cin-cn-fengyun-ernv
+- cinema/works/cin-cn-hero
+- cinema/works/cin-cn-huluxiongdi
+- cinema/works/cin-cn-nezhamotongjiangshi
+- cinema/works/cin-cn-red-sorghum
+- cinema/works/cin-cn-wandering-earth
+- cinema/works/cin-cn-xiaokedouzhaomama
 - cinema/works/cin-ru-crocodile-gena
 - cinema/works/cin-ru-hedgehog-fog
 - cinema/works/cin-ru-irony-of-fate
