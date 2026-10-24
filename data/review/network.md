@@ -646,6 +646,26 @@
 
 | строка | year | leader | memorial | другие | олимпиада |
 |---|---|---|---|---|---|
+| ev-humen | 1 | — | × | — | прогноз |
+| ev-yapian1 | 1 | × | × | — | да |
+| ev-yapian2 | 1 | × | × | — | да |
+| ev-taiping | 1 | — | × | — | прогноз |
+| ev-jiawu | 1 | × | × | — | прогноз |
+| ev-wuxu | × | 1 | × | — | прогноз |
+| ev-yihetuan | × | × | × | 1 | прогноз |
+| ev-baguo | 1 | × | × | — | прогноз |
+| ev-xinhai | × | — | × | 1 | да |
+| ev-xinwenhua | × | × | × | 1 | прогноз |
+| ev-wusi | × | × | × | — | да |
+| ev-jiandang | × | × | × | — | да |
+| ev-beifa | × | 1 | × | — | прогноз |
+| ev-changzheng | 1 | × | × | — | прогноз |
+| ev-jiuyiba | × | × | × | 1 | прогноз |
+| ev-qiqi | 1 | × | × | — | прогноз |
+| ev-kaiguo | — | — | × | — | прогноз |
+| ev-gaige | 1 | × | × | — | да |
+| ev-xianggang | × | × | × | — | да |
+| ev-aomen | × | × | × | — | прогноз |
 | ev-ru-decembrists | 1 | × | × | — | прогноз |
 | ev-ru-crimea | 1 | × | × | — | прогноз |
 | ev-ru-serfdom | 1 | — | × | — | прогноз |
@@ -693,13 +713,16 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | year | другие | олимпиада |
-|---|---|---|---|
-| tr-ru-nerchinsk | — | — | прогноз |
-| tr-ru-aihui | — | 1 | прогноз |
-| tr-ru-beijing | — | 1 | прогноз |
-| tr-ru-1950 | 1 | — | прогноз |
-| tr-ru-2001 | — | — | прогноз |
+| строка | year | land | другие | олимпиада |
+|---|---|---|---|---|
+| tr-nanjing | × | — | — | да |
+| tr-maguan | 1 | — | — | прогноз |
+| tr-xinchou | × | × | 1 | прогноз |
+| tr-ru-nerchinsk | — | × | — | прогноз |
+| tr-ru-aihui | — | × | 1 | прогноз |
+| tr-ru-beijing | — | × | 1 | прогноз |
+| tr-ru-1950 | 1 | × | — | прогноз |
+| tr-ru-2001 | — | × | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
@@ -713,8 +736,6 @@
 - modern-history-q25 — Кто был главнокомандующим Народно-освободительной армии Китая (中国人民解放军总司令) в годы Освободительной войны и после образования КНР?
 - modern-history-q26 — Главным создателем какой важной идеи называют Цзян Цзэминя?
 - modern-history-q27 — Какое понятие выдвинул Ху Цзиньтао в 2003 году?
-
-Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 26.
 
 ### Деньги (`money`)
 
@@ -1312,6 +1333,10 @@
 - literature/authors/lit-a-taoyuanming
 - literature/works/lit-w-mulanci
 - literature/works/lit-w-shijing
+- modern-history/events/ev-aomen
+- modern-history/events/ev-changzheng
+- modern-history/events/ev-jiuyiba
+- modern-history/events/ev-qiqi
 - modern-history/events/ev-ru-crimea
 - modern-history/events/ev-ru-february
 - modern-history/events/ev-ru-leningrad
@@ -1320,6 +1345,8 @@
 - modern-history/events/ev-ru-ussr
 - modern-history/events/ev-ru-ussr-end
 - modern-history/events/ev-ru-ww2
+- modern-history/events/ev-xianggang
+- modern-history/events/ev-yihetuan
 - modern-history/figures/per-ru-gorbachev
 - modern-history/figures/per-ru-khrushchev
 - modern-history/figures/per-ru-stalin
@@ -1473,14 +1500,13 @@
 - holidays/figures/fig-jiezitui → holidays/holidays/hol-hanshi
 - holidays/holidays/hol-huoba → ethnos/peoples/ppl-cn-yi
 - holidays/holidays/hol-jianjun → modern-history/events/ev-nanchang
-- holidays/holidays/hol-qingnian → modern-history/events/ev-wusi
 - literature/authors/lit-a-ru-bunin → literature/works/lit-w-ru-arsenyev
 - literature/authors/lit-a-ru-lermontov → literature/works/lit-w-ru-demon
 - literature/works/lit-w-ru-gulag → literature/authors/lit-a-ru-solzhenitsyn
+- modern-history/events/ev-xinwenhua → modern-history/figures/per-chenduxiu
 - modern-history/figures/per-sunzhongshan → holidays/figures/fig-sunzhongshan
 - modern-history/figures/per-zhouenlai → literature/authors/lit-a-zhouenlai
 - modern-history/treaties/tr-ru-2001 → modern-history/figures/per-jiangzemin
-- modern-history/treaties/tr-ru-beijing → modern-history/events/ev-yapian2
 - money/banknotes/rub-2000-2017 → nature/engineering/eng-ru-russky-bridge
 - nature/waters/wat-heilongjiang → nature/seas/sea-ru-okhotsk
 - nature/waters/wat-ru-lena → nature/seas/sea-ru-laptev

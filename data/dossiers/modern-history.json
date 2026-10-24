@@ -78,7 +78,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ev-yapian1",
@@ -128,7 +129,8 @@
           ],
           "olympiad": [
             "2021-22-shk-q54821d"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "ev-yapian2",
@@ -178,7 +180,8 @@
           ],
           "olympiad": [
             "2021-22-shk-q54821d"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "ev-taiping",
@@ -244,7 +247,8 @@
           ],
           "olympiad": [
             "addition-b1-08"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "ev-yangwu",
@@ -356,7 +360,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ev-wuxu",
@@ -415,6 +420,10 @@
           ],
           "olympiad": [
             "addition-b2-13"
+          ],
+          "core": true,
+          "skipSides": [
+            "year"
           ]
         },
         {
@@ -466,7 +475,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ev-baguo",
@@ -522,7 +532,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ev-xinhai",
@@ -597,6 +608,10 @@
             "2015-16-shk-60",
             "2015-16-shk-61",
             "2020-21-reg-q227d55"
+          ],
+          "core": true,
+          "skipSides": [
+            "year"
           ]
         },
         {
@@ -660,7 +675,12 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "year",
+            "leader"
+          ]
         },
         {
           "id": "ev-wusi",
@@ -732,6 +752,10 @@
           ],
           "olympiad": [
             "2016-17-reg-6"
+          ],
+          "core": true,
+          "skipSides": [
+            "year"
           ]
         },
         {
@@ -804,6 +828,11 @@
           ],
           "olympiad": [
             "2025-26-shk-31"
+          ],
+          "core": true,
+          "skipSides": [
+            "year",
+            "memorial"
           ]
         },
         {
@@ -862,7 +891,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "year"
+          ]
         },
         {
           "id": "ev-nanchang",
@@ -974,7 +1007,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ev-zunyi",
@@ -1087,7 +1121,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "year"
+          ]
         },
         {
           "id": "ev-xian",
@@ -1199,7 +1237,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ev-nanjing",
@@ -1547,7 +1586,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ev-gaige",
@@ -1613,6 +1653,10 @@
           ],
           "olympiad": [
             "2024-25-reg-6"
+          ],
+          "core": true,
+          "skipSides": [
+            "leader"
           ]
         },
         {
@@ -1714,6 +1758,10 @@
           ],
           "olympiad": [
             "2016-17-mun-4"
+          ],
+          "core": true,
+          "skipSides": [
+            "year"
           ]
         },
         {
@@ -1763,7 +1811,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "year"
+          ]
         },
         {
           "id": "ev-fensui",
@@ -5462,6 +5514,10 @@
           ],
           "olympiad": [
             "2023-24-zak-8"
+          ],
+          "core": true,
+          "skipSides": [
+            "year"
           ]
         },
         {
@@ -5803,7 +5859,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "tr-xinchou",
@@ -5857,7 +5914,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "year"
+          ]
         },
         {
           "id": "tr-ru-nerchinsk",
@@ -6035,7 +6096,10 @@
           "olympiad": [
             "addition-b1-18"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "land"
+          ]
         },
         {
           "id": "tr-ru-beijing",
@@ -6114,7 +6178,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "land"
+          ]
         },
         {
           "id": "tr-ru-ili",
@@ -6383,7 +6450,8 @@
         }
       ],
       "sides": [
-        "year"
+        "year",
+        "land"
       ]
     }
   }
