@@ -17,6 +17,7 @@
 [[modern-history.ev-jiuyiba]]
 [[modern-history.ev-qiqi]]
 [[modern-history.ev-kaiguo]]
+[[modern-history.ev-wenge]]
 [[modern-history.ev-gaige]]
 [[modern-history.ev-xianggang]]
 [[modern-history.ev-aomen]]
