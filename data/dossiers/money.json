@@ -502,7 +502,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rub-10-1997",
@@ -551,7 +552,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rub-50-1997",
@@ -596,7 +598,8 @@
           ],
           "olympiad": [
             "2024-25-zak-qe3452d"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "rub-100-1997",
@@ -647,7 +650,8 @@
           ],
           "olympiad": [
             "2025-26-mun-2"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "rub-100-2022",
@@ -691,7 +695,8 @@
           ],
           "olympiad": [
             "2025-26-mun-2"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "rub-200-2017",
@@ -743,7 +748,8 @@
           ],
           "olympiad": [
             "2025-26-shk-37"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "rub-500-1997",
@@ -794,7 +800,8 @@
           ],
           "olympiad": [
             "2024-25-shk-29"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "rub-1000-1997",
@@ -843,7 +850,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rub-1000-2025",
@@ -885,7 +893,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rub-2000-2017",
@@ -936,7 +945,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rub-5000-1997",
@@ -978,7 +988,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rub-5000-2023",
@@ -1020,8 +1031,12 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         }
+      ],
+      "sides": [
+        "city"
       ]
     },
     "history": {

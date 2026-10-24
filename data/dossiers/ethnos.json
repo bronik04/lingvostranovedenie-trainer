@@ -1750,7 +1750,11 @@
             }
           ],
           "olympiad": [],
-          "heritage_note": "Поморская резьба по дереву — местная традиция русского населения Беломорья."
+          "heritage_note": "Поморская резьба по дереву — местная традиция русского населения Беломорья.",
+          "core": true,
+          "skipSides": [
+            "region"
+          ]
         },
         {
           "id": "ppl-ru-tatars",
@@ -1804,7 +1808,11 @@
             }
           ],
           "olympiad": [],
-          "heritage_note": "Искусство кожаной мозаики. Кожаная мозаика — традиция татарского декоративного искусства"
+          "heritage_note": "Искусство кожаной мозаики. Кожаная мозаика — традиция татарского декоративного искусства",
+          "core": true,
+          "skipSides": [
+            "region"
+          ]
         },
         {
           "id": "ppl-ru-bashkirs",
@@ -1872,7 +1880,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ]
         },
         {
           "id": "ppl-ru-chuvash",
@@ -1994,7 +2006,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ]
         },
         {
           "id": "ppl-ru-sakha",
@@ -2117,7 +2133,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ]
         },
         {
           "id": "ppl-ru-kalmyks",
@@ -2179,7 +2199,11 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ]
         },
         {
           "id": "ppl-ru-karelians",
@@ -2860,7 +2884,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "her-ru-tuva-khoomei",
@@ -2921,7 +2946,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "her-ru-kalmyk-jangar",
@@ -2989,7 +3015,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "her-ru-balalaika",
@@ -3050,7 +3077,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "people"
+          ]
         },
         {
           "id": "her-ru-gusli",
@@ -3104,7 +3135,8 @@
             }
           ],
           "olympiad": [],
-          "community": "Носители русской народной музыкальной традиции"
+          "community": "Носители русской народной музыкальной традиции",
+          "core": true
         },
         {
           "id": "her-ru-spoon-dance",
@@ -4926,7 +4958,8 @@
               "Эпосы и повествовательные традиции"
             ],
             "gloss": "Эпосы и повествовательные традиции"
-          }
+          },
+          "core": true
         },
         {
           "id": "her-ru-kalevala",
@@ -5099,7 +5132,8 @@
               "Традиционные инструменты и игра на них"
             ],
             "gloss": "Традиционные инструменты и игра на них"
-          }
+          },
+          "core": true
         },
         {
           "id": "her-cn-jangar",

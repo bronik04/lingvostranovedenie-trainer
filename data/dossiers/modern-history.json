@@ -1871,7 +1871,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ev-ru-crimea",
@@ -1926,7 +1927,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ev-ru-serfdom",
@@ -1983,7 +1985,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ev-ru-russojapanese",
@@ -2040,7 +2043,8 @@
           ],
           "olympiad": [
             "2022-23-mun-5"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "ev-ru-1905",
@@ -2098,7 +2102,8 @@
           ],
           "olympiad": [
             "2022-23-shk-q3c7e59"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "ev-ru-february",
@@ -2153,7 +2158,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ev-ru-october",
@@ -2252,7 +2258,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "memorial"
+          ]
         },
         {
           "id": "ev-ru-ussr",
@@ -2302,7 +2312,8 @@
           ],
           "olympiad": [
             "2023-24-mun-36"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "ev-ru-ww2",
@@ -2364,7 +2375,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ev-ru-ussr-end",
@@ -2419,7 +2431,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ev-ru-ice",
@@ -2483,7 +2496,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "memorial"
+          ]
         },
         {
           "id": "ev-ru-kulikovo",
@@ -2547,7 +2564,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "memorial"
+          ]
         },
         {
           "id": "ev-ru-poltava",
@@ -2611,7 +2632,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "memorial"
+          ]
         },
         {
           "id": "ev-ru-borodino",
@@ -2677,6 +2702,10 @@
           ],
           "olympiad": [
             "2024-25-reg-3"
+          ],
+          "core": true,
+          "skipSides": [
+            "memorial"
           ]
         },
         {
@@ -2735,7 +2764,8 @@
           ],
           "olympiad": [
             "2019-20-reg-3"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "ev-ru-stalingrad",
@@ -2802,7 +2832,8 @@
             "2019-20-shk-q07892b",
             "2022-23-zak-6",
             "2019-20-mun-qce7da2"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "ev-ru-kursk",
@@ -2860,6 +2891,11 @@
           ],
           "olympiad": []
         }
+      ],
+      "sides": [
+        "year",
+        "leader",
+        "memorial"
       ]
     },
     "figures": {
@@ -4543,7 +4579,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "idea"
+          ]
         },
         {
           "id": "per-ru-stalin",
@@ -4610,7 +4650,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "per-ru-khrushchev",
@@ -4677,7 +4718,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "per-ru-gorbachev",
@@ -4751,7 +4793,11 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "idea"
+          ]
         },
         {
           "id": "per-ru-yeltsin",
@@ -4824,7 +4870,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "per-ru-stolypin",
@@ -4979,7 +5026,8 @@
           ],
           "olympiad": [
             "2024-25-reg-3"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "per-ru-suvorov",
@@ -5046,7 +5094,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "per-ru-zhukov",
@@ -5112,7 +5161,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "per-ru-konev",
@@ -5866,7 +5916,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "tr-ru-kyakhta",
@@ -5985,7 +6036,8 @@
           ],
           "olympiad": [
             "addition-b1-18"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "tr-ru-beijing",
@@ -6063,7 +6115,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "tr-ru-ili",
@@ -6259,7 +6312,8 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "tr-ru-2001",
@@ -6326,8 +6380,12 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         }
+      ],
+      "sides": [
+        "year"
       ]
     }
   }

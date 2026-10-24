@@ -108,7 +108,8 @@
           "skipSides": [
             "center",
             "region",
-            "unesco"
+            "unesco",
+            "material"
           ],
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
@@ -201,7 +202,8 @@
             "region",
             "era",
             "unesco",
-            "center"
+            "center",
+            "material"
           ],
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
@@ -384,7 +386,8 @@
             "center",
             "region",
             "era",
-            "unesco"
+            "unesco",
+            "material"
           ],
           "unesco": {
             "zh": "人类非物质文化遗产代表作名录",
@@ -3438,7 +3441,14 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "center",
+            "region",
+            "era",
+            "unesco"
+          ]
         },
         {
           "id": "cr-ru-mstera",
@@ -3747,7 +3757,14 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "center",
+            "region",
+            "era",
+            "unesco"
+          ]
         },
         {
           "id": "cr-ru-gorodets",
@@ -3909,7 +3926,14 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "center",
+            "region",
+            "era",
+            "unesco"
+          ]
         },
         {
           "id": "cr-ru-polkhov-maidan",
@@ -4063,7 +4087,13 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "center",
+            "region",
+            "unesco"
+          ]
         },
         {
           "id": "cr-ru-skopin",
@@ -4381,7 +4411,13 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "center",
+            "region",
+            "unesco"
+          ]
         },
         {
           "id": "cr-ru-orenburg",
@@ -5064,7 +5100,8 @@
           "skipSides": [
             "center",
             "era",
-            "unesco"
+            "unesco",
+            "material"
           ]
         },
         {
@@ -5167,7 +5204,8 @@
           "skipSides": [
             "center",
             "region",
-            "unesco"
+            "unesco",
+            "material"
           ]
         }
       ],
@@ -5175,7 +5213,8 @@
         "center",
         "region",
         "era",
-        "unesco"
+        "unesco",
+        "material"
       ]
     },
     "folk": {
@@ -7044,7 +7083,8 @@
           "core": true,
           "skipSides": [
             "era",
-            "unesco"
+            "unesco",
+            "material"
           ],
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
@@ -7914,7 +7954,12 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "center",
+            "unesco"
+          ]
         },
         {
           "id": "fk-ru-filimonovo",
@@ -8275,7 +8320,12 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "era",
+            "unesco"
+          ]
         },
         {
           "id": "fk-ru-semenov",
@@ -8514,7 +8564,8 @@
           "skipSides": [
             "center",
             "era",
-            "unesco"
+            "unesco",
+            "material"
           ]
         },
         {
@@ -8577,7 +8628,8 @@
       "sides": [
         "center",
         "era",
-        "unesco"
+        "unesco",
+        "material"
       ]
     }
   }

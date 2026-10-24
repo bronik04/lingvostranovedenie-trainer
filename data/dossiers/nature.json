@@ -1325,7 +1325,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "wat-ru-yenisei",
@@ -1406,7 +1407,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "wat-ru-lena",
@@ -1459,7 +1461,8 @@
           ],
           "olympiad": [
             "2025-26-shk-37-a"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "wat-ru-ob",
@@ -1542,7 +1545,8 @@
           ],
           "olympiad": [
             "addition-b1-19"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "wat-ru-irtysh",
@@ -1675,7 +1679,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "wat-ru-volgadon",
@@ -2284,7 +2289,8 @@
           ],
           "olympiad": [
             "2021-22-shk-q09899d"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "lake-ru-ladoga",
@@ -2349,7 +2355,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "lake-ru-onega",
@@ -3254,7 +3261,8 @@
           ],
           "olympiad": [
             "2025-26-reg-4"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "sea-ru-okhotsk",
@@ -3376,7 +3384,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "sea-ru-laptev",
@@ -3507,6 +3516,10 @@
           ],
           "olympiad": [
             "2023-24-zak-7"
+          ],
+          "core": true,
+          "skipSides": [
+            "province"
           ]
         },
         {
@@ -3589,6 +3602,10 @@
           ],
           "olympiad": [
             "2025-26-shk-35"
+          ],
+          "core": true,
+          "skipSides": [
+            "province"
           ]
         },
         {
@@ -5122,7 +5139,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "mtn-ru-caucasus",
@@ -5175,7 +5193,8 @@
           ],
           "olympiad": [
             "2025-26-mun-1"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "mtn-ru-altai",
@@ -5223,7 +5242,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "mtn-ru-sayan",
@@ -5326,7 +5346,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "mtn-ru-klyuchevskaya",
@@ -7263,7 +7284,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "eng-ru-bam",
