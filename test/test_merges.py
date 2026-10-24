@@ -346,6 +346,7 @@ class MergesInBankTest(unittest.TestCase):
             '2016-17-mun-4': 6, '2016-17-reg-8': 6, '2019-20-mun-q727051': 6, '2018-19-zak-7': 7,
             '2018-19-reg-6': 7, '2022-23-reg-2': 6, '2015-16-zak-8': 5, '2016-17-shk-8': 5,
             '2015-16-reg-1': 7, '2018-19-mun-55': 6, '2018-19-mun-53': 5, '2016-17-shk-10': 5,
+            '2016-17-mun-6': 5,
         }
         self.assertEqual(set(pools), set(expected))
         for keep_id in pools:

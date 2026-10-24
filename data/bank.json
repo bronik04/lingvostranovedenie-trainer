@@ -4257,6 +4257,11 @@
         "checkedAt": "2026-09-18",
         "title": "邓小平 — 维基百科",
         "url": "https://zh.wikipedia.org/wiki/%E9%82%93%E5%B0%8F%E5%B9%B3"
+      },
+      {
+        "checkedAt": "2026-10-24",
+        "title": "改革开放 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E6%94%B9%E9%9D%A9%E5%BC%80%E6%94%BE"
       }
     ],
     "explanation": {
@@ -4265,7 +4270,8 @@
     "factRow": "modern-history/figures/per-dengxiaoping",
     "id": "2016-17-mun-6",
     "mergedIds": [
-      "2020-21-reg-q089604"
+      "2020-21-reg-q089604",
+      "2026-27-mun-7"
     ],
     "occurrences": [
       {
@@ -4291,6 +4297,17 @@
         "stage": "региональный",
         "stageCode": "reg",
         "year": "2020-21"
+      },
+      {
+        "grades": "9-11",
+        "number": 7,
+        "officialKey": "o1",
+        "sourceFiles": [
+          "Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2026-27"
       }
     ],
     "options": [
@@ -4314,6 +4331,11 @@
         "zh": "周恩来"
       },
       {
+        "gloss": "Ху Цзиньтао — председатель КНР в 2003–2013 гг.",
+        "id": "o5",
+        "zh": "胡锦涛"
+      },
+      {
         "gloss": "Чжу Дэ — главнокомандующий НОАК, первый из десяти маршалов КНР",
         "id": "per-zhude",
         "zh": "朱德"
@@ -4322,11 +4344,6 @@
         "gloss": "Цзян Цзэминь — председатель КНР в 1993–2003 гг.",
         "id": "per-jiangzemin",
         "zh": "江泽民"
-      },
-      {
-        "gloss": "Ху Цзиньтао — председатель КНР в 2003–2013 гг.",
-        "id": "per-hujintao",
-        "zh": "胡锦涛"
       },
       {
         "gloss": "Ли Кэцян — премьер Госсовета в 2013–2023 гг.",
@@ -7457,6 +7474,7 @@
     "explanation": {
       "ru": "Алхимия (炼丹术) не входит в число четырёх великих изобретений Китая — ими считаются бумага, книгопечатание, порох и компас."
     },
+    "factGroup": "four-inventions-not",
     "id": "2017-18-mun-8",
     "occurrences": [
       {
@@ -31709,6 +31727,513 @@
     "topic": "Культура, традиции и праздники",
     "topicSource": "assigned",
     "wave": 4
+  },
+  {
+    "answer": {
+      "optionId": "o2",
+      "state": "verified"
+    },
+    "editorial": {
+      "reason": "Тема — как у других вопросов о четырёх великих изобретениях (2017-18-mun-8, 2016-17-shk-1)"
+    },
+    "evidence": [
+      {
+        "checkedAt": "2026-10-24",
+        "title": "四大发明 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E5%9B%9B%E5%A4%A7%E5%8F%91%E6%98%8E"
+      }
+    ],
+    "explanation": {
+      "ru": "Четыре великих изобретения Древнего Китая (四大发明) — бумага (造纸术), компас (指南针), порох (火药) и книгопечатание (印刷术). Шёлк (丝绸) Китай тоже дал миру, но в этот список он не входит."
+    },
+    "factGroup": "four-inventions-not",
+    "id": "2026-27-mun-1",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 1,
+        "officialKey": "o2",
+        "sourceFiles": [
+          "Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2026-27"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "印刷术"
+      },
+      {
+        "id": "o2",
+        "zh": "丝绸"
+      },
+      {
+        "id": "o3",
+        "zh": "指南针"
+      },
+      {
+        "id": "o4",
+        "zh": "火药"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Что из перечисленного НЕ является одним из «四大发明» Древнего Китая?",
+    "questionZh": null,
+    "topic": "Экономика, образование, наука и спорт",
+    "topicSource": "editorial",
+    "wave": 7
+  },
+  {
+    "answer": {
+      "optionId": "o1",
+      "state": "verified"
+    },
+    "editorial": {
+      "reason": "Лишний пробел перед вопросительным знаком"
+    },
+    "evidence": [
+      {
+        "checkedAt": "2026-10-24",
+        "title": "礼物 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-cn/%E7%A4%BC%E7%89%A9"
+      },
+      {
+        "checkedAt": "2026-10-24",
+        "title": "过年千万别送这10种礼物 — China Daily",
+        "url": "https://language.chinadaily.com.cn/a/201802/17/WS5b21cb9fa31001b825721fde.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Зонт (伞 sǎn) в Китае не принято дарить: его название созвучно слову 散 sàn — «расходиться, расставаться», и такой подарок можно понять как намёк на разлуку."
+    },
+    "id": "2026-27-mun-10",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 10,
+        "officialKey": "o1",
+        "sourceFiles": [
+          "Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2026-27"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "伞"
+      },
+      {
+        "id": "o2",
+        "zh": "书包"
+      },
+      {
+        "id": "o3",
+        "zh": "红包"
+      },
+      {
+        "id": "o4",
+        "zh": "花儿"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Что из нижеперечисленного не принято дарить в Китае?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "assigned",
+    "wave": 7
+  },
+  {
+    "answer": {
+      "optionId": "o2",
+      "state": "verified"
+    },
+    "evidence": [
+      {
+        "checkedAt": "2026-10-24",
+        "title": "戈壁沙漠 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E6%88%88%E5%A3%81%E6%B2%99%E6%BC%A0"
+      }
+    ],
+    "explanation": {
+      "ru": "Пустыня Гоби (戈壁) — обширная холодная пустыня и степь на юге Монголии и на севере Китая."
+    },
+    "id": "2026-27-mun-2",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 2,
+        "officialKey": "o2",
+        "sourceFiles": [
+          "Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2026-27"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "阿塔卡马利亚"
+      },
+      {
+        "id": "o2",
+        "zh": "戈壁"
+      },
+      {
+        "id": "o3",
+        "zh": "撒哈拉"
+      },
+      {
+        "id": "o4",
+        "zh": "那泊"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Какая пустыня расположена на территории Китая?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "assigned",
+    "wave": 7
+  },
+  {
+    "answer": {
+      "optionId": "o3",
+      "state": "verified"
+    },
+    "editorial": {
+      "reason": "Тема: вопрос о пиньине — язык и письменность, как 2016-17-zak-9"
+    },
+    "evidence": [
+      {
+        "checkedAt": "2026-10-24",
+        "title": "汉语拼音方案 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E6%B1%89%E8%AF%AD%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88"
+      }
+    ],
+    "explanation": {
+      "ru": "«Схему китайского фонетического алфавита» (《汉语拼音方案》) официально утвердила 11 февраля 1958 года 5-я сессия Всекитайского собрания народных представителей 1-го созыва."
+    },
+    "id": "2026-27-mun-3",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 3,
+        "officialKey": "o3",
+        "sourceFiles": [
+          "Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2026-27"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "1949"
+      },
+      {
+        "id": "o2",
+        "zh": "1980"
+      },
+      {
+        "id": "o3",
+        "zh": "1958"
+      },
+      {
+        "id": "o4",
+        "zh": "1964"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "В каком году была официально принята система пиньинь?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "editorial",
+    "wave": 7
+  },
+  {
+    "answer": {
+      "optionId": "o4",
+      "state": "verified"
+    },
+    "evidence": [
+      {
+        "checkedAt": "2026-10-24",
+        "title": "香港 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E9%A6%99%E6%B8%AF"
+      }
+    ],
+    "explanation": {
+      "ru": "Гонконг (香港) — специальный административный район (特别行政区) КНР: под суверенитет Китая он вернулся 1 июля 1997 года."
+    },
+    "factGroup": "aomen-xianggang-sar",
+    "id": "2026-27-mun-4",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 4,
+        "officialKey": "o4",
+        "sourceFiles": [
+          "Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2026-27"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "直辖市"
+      },
+      {
+        "id": "o2",
+        "zh": "自治区"
+      },
+      {
+        "id": "o3",
+        "zh": "省"
+      },
+      {
+        "id": "o4",
+        "zh": "特别行政区"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Укажите статус Гонконга как территориально-административной единицы КНР:",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "assigned",
+    "wave": 7
+  },
+  {
+    "answer": {
+      "optionId": "o3",
+      "state": "verified"
+    },
+    "editorial": {
+      "reason": "Тема: российский праздник, как 2019-20-reg-10 и 2023-24-zak-4"
+    },
+    "evidence": [
+      {
+        "checkedAt": "2026-10-24",
+        "title": "День учителя — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BD%D1%8C_%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8F"
+      }
+    ],
+    "explanation": {
+      "ru": "5 октября в России отмечают День учителя (教师节): эту дату закрепил указ Президента 1994 года «О праздновании Дня учителя»."
+    },
+    "id": "2026-27-mun-5",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 5,
+        "officialKey": "o3",
+        "sourceFiles": [
+          "Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2026-27"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "国庆节"
+      },
+      {
+        "id": "o2",
+        "zh": "胜利节"
+      },
+      {
+        "id": "o3",
+        "zh": "教师节"
+      },
+      {
+        "id": "o4",
+        "zh": "中秋节"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Какой праздник отмечают в России 5 октября?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": 7
+  },
+  {
+    "answer": {
+      "optionId": "o1",
+      "state": "verified"
+    },
+    "evidence": [
+      {
+        "checkedAt": "2026-10-24",
+        "title": "科举 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E7%A7%91%E4%B8%BE"
+      }
+    ],
+    "explanation": {
+      "ru": "Государственные экзамены на должность (科举) просуществовали до конца эпохи Цин: их отменили в 1905 году по воле вдовствующей императрицы Цыси."
+    },
+    "id": "2026-27-mun-6",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 6,
+        "officialKey": "o1",
+        "sourceFiles": [
+          "Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2026-27"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "1905 年"
+      },
+      {
+        "id": "o2",
+        "zh": "1911 年"
+      },
+      {
+        "id": "o3",
+        "zh": "1925 年"
+      },
+      {
+        "id": "o4",
+        "zh": "1949 年"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "В каком году была отменена система государственных экзаменов «科举»?",
+    "questionZh": null,
+    "topic": "История и государство",
+    "topicSource": "assigned",
+    "wave": 7
+  },
+  {
+    "answer": {
+      "optionId": "o4",
+      "state": "unverified"
+    },
+    "editorial": {
+      "reason": "В цитате дефис вместо тире; вторая половина поговорки в бланке уже с тире"
+    },
+    "evidence": [],
+    "explanation": {
+      "ru": ""
+    },
+    "id": "2026-27-mun-8",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 8,
+        "officialKey": "o4",
+        "sourceFiles": [
+          "Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2026-27"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "器"
+      },
+      {
+        "id": "o2",
+        "zh": "木"
+      },
+      {
+        "id": "o3",
+        "zh": "茶叶"
+      },
+      {
+        "id": "o4",
+        "zh": "火"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Согласно знаменитой китайской поговорке, «Вода — мать чая, посуда — его отец», кто является его учителем?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "assigned",
+    "wave": 0
+  },
+  {
+    "answer": {
+      "optionId": "o4",
+      "state": "verified"
+    },
+    "evidence": [
+      {
+        "checkedAt": "2026-10-24",
+        "title": "Иакинф (Бичурин) — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%98%D0%B0%D0%BA%D0%B8%D0%BD%D1%84_%28%D0%91%D0%B8%D1%87%D1%83%D1%80%D0%B8%D0%BD%29"
+      },
+      {
+        "checkedAt": "2026-10-24",
+        "title": "Кяхта — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9A%D1%8F%D1%85%D1%82%D0%B0"
+      }
+    ],
+    "explanation": {
+      "ru": "Училище китайского языка Иакинф (Бичурин) открыл в Кяхте (恰克图) — торговом городе на границе с Китаем: официально оно открылось в 1832 году, а в 1835-м — заново, при Кяхтинской таможне. Его четырёхлетняя программа заложила методику изучения китайского языка в России."
+    },
+    "id": "2026-27-mun-9",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 9,
+        "officialKey": "o4",
+        "sourceFiles": [
+          "Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2026-27"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "在莫斯科"
+      },
+      {
+        "id": "o2",
+        "zh": "在伊尔库茨克"
+      },
+      {
+        "id": "o3",
+        "zh": "在喀山"
+      },
+      {
+        "id": "o4",
+        "zh": "在恰克图"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Где Иакинф Бичурин открыл первую в России школу китайского языка?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "assigned",
+    "wave": 7
   },
   {
     "answer": {
