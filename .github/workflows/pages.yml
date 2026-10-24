@@ -34,7 +34,7 @@ jobs:
       - name: Установить зависимости тестов
         run: npm ci
 
-      - name: Установить pdftotext (для парсера PDF-бюллетеней)
+      - name: Установить poppler-utils (pdftotext и pdftohtml для парсеров PDF-бюллетеней)
         run: sudo apt-get update && sudo apt-get install -y poppler-utils
 
       - name: Пересобрать банк вопросов из первоисточников

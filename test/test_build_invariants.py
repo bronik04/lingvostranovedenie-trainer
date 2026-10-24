@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from build_html import bank_description, plural_ru, serialize_bank, validate
+from build_html import answer_sources, bank_description, plural_ru, serialize_bank, validate
 
 
 def record(**overrides):
@@ -79,6 +79,11 @@ class DescriptionTest(unittest.TestCase):
     def test_description_does_not_overclaim_unverified_answers(self):
         bank = [record(), record(id='q2', answer={'optionId': 'o2', 'state': 'unverified'})]
         self.assertNotIn('у каждого ответа', bank_description(bank))
+
+    def test_hero_text_does_not_overclaim_unverified_answers(self):
+        self.assertEqual(answer_sources([record()], 'разбор'), 'у каждого ответа — разбор и ссылка на источник')
+        bank = [record(), record(id='q2', answer={'optionId': 'o2', 'state': 'unverified'})]
+        self.assertEqual(answer_sources(bank, 'разбор'), 'у проверенных ответов — разбор и ссылка на источник')
 
 
 if __name__ == '__main__':

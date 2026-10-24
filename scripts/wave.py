@@ -62,6 +62,33 @@ def apply_results(bank: list[dict], results: list[dict], wave: int) -> tuple[lis
     return bank, mismatches
 
 
+def remember(verification: dict[str, dict], bank: list[dict], results: list[dict]) -> dict[str, dict]:
+    """verification.json с результатами этой волны.
+
+    Пишутся только записи волны: остальной банк собран со слоями поверх проверки (правки
+    editorial.json, склейки, встраивания в досье), и записать его обратно значило бы
+    подменить результаты прошлых волн их отредактированным видом.
+    """
+    overridden = {result['id'] for result in results if result.get('overrideOfficialKey')}
+    by_id = {record['id']: record for record in bank}
+    updated = dict(verification)
+    for result in results:
+        record = by_id[result['id']]
+        entry = {
+            'optionId': record['answer']['optionId'],
+            'state': record['answer']['state'],
+            'explanation': record['explanation']['ru'],
+            'evidence': record['evidence'],
+            'wave': record['wave'],
+        }
+        # флаг переживает и эту, и будущие пересборки: он либо выставлен в этой волне,
+        # либо уже был выставлен раньше и не должен потеряться при перезаписи записи
+        if record['id'] in overridden or verification.get(record['id'], {}).get('overrideOfficialKey'):
+            entry['overrideOfficialKey'] = True
+        updated[record['id']] = entry
+    return dict(sorted(updated.items()))
+
+
 def _text(record: dict, option_id: str) -> str:
     for option in record['options']:
         if option['id'] == option_id:
@@ -98,29 +125,14 @@ def main() -> None:
         return
 
     results = json.loads(args.results.read_text('utf-8'))
-    overridden = {result['id'] for result in results if result.get('overrideOfficialKey')}
     bank, mismatches = apply_results(bank, results, args.wave)
 
     # результаты живут отдельно от банка: банк пересобирается из источников, и без
     # этого файла очередной прогон слияния стёр бы работу целой волны
     verification_file = ROOT / 'data/verification.json'
     verification = json.loads(verification_file.read_text('utf-8')) if verification_file.exists() else {}
-    for record in bank:
-        if record['wave']:
-            entry = {
-                'optionId': record['answer']['optionId'],
-                'state': record['answer']['state'],
-                'explanation': record['explanation']['ru'],
-                'evidence': record['evidence'],
-                'wave': record['wave'],
-            }
-            # флаг переживает и эту, и будущие пересборки: он либо выставлен в этой волне,
-            # либо уже был выставлен раньше и не должен потеряться при перезаписи записи
-            if record['id'] in overridden or verification.get(record['id'], {}).get('overrideOfficialKey'):
-                entry['overrideOfficialKey'] = True
-            verification[record['id']] = entry
     verification_file.write_text(
-        json.dumps(dict(sorted(verification.items())), ensure_ascii=False, indent=2) + '\n',
+        json.dumps(remember(verification, bank, results), ensure_ascii=False, indent=2) + '\n',
         encoding='utf-8')
 
     subprocess.run([sys.executable, str(ROOT / 'scripts/merge_bank.py')], check=True)

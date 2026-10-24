@@ -2,7 +2,7 @@ import hashlib, json, unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED = 8
+EXPECTED = 9
 
 
 class ManifestTest(unittest.TestCase):

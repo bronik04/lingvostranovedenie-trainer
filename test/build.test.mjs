@@ -22,6 +22,7 @@ test('сборка выпускает один файл без внешних с
   assert.equal(html.includes('/*QUIZ_UI*/'), false, 'обвязка не подставлена');
   assert.equal(html.includes('/*QUIZ_CSS*/'), false, 'стили не подставлены');
   assert.equal(html.includes('/*BANK_DESCRIPTION*/'), false, 'описание не подставлено');
+  assert.equal(html.includes('/*ANSWER_SOURCES*/'), false, 'подпись об источниках не подставлена');
   const bank = JSON.parse(html.match(/const QUESTION_BANK = (\[.*?\]);\n/s)[1]);
   const description = html.match(/<meta name="description" content="([^"]*)">/)[1];
   assert.ok(description.startsWith(`${bank.length} `), `описание не совпадает с банком: ${description}`);

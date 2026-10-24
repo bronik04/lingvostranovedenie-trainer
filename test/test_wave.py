@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from wave import apply_results, select_wave
+from wave import apply_results, remember, select_wave
 
 
 def record(record_id, state, option_id='o2', official='o2', topic='География и административное устройство'):
@@ -91,6 +91,29 @@ class ApplyResultsTest(unittest.TestCase):
         bank = [record('a', 'unverified')]
         with self.assertRaises(ValueError):
             apply_results(bank, [{'id': 'a', 'optionId': 'o9', **GOOD}], wave=1)
+
+
+class RememberTest(unittest.TestCase):
+    def test_only_this_wave_is_written_back(self):
+        """Банк собран со слоями поверх проверки: записи прошлых волн в нём уже с правками editorial.json."""
+        earlier = {'optionId': 'o2', 'state': 'verified', 'explanation': 'Исходное пояснение.',
+                   'evidence': [{'title': 'x', 'url': 'https://example.org', 'checkedAt': '2026-09-18'}], 'wave': 1}
+        edited = dict(record('old', 'verified'), explanation={'ru': 'Пояснение после правки.'}, wave=1)
+        # у вопросов досье поля wave нет вовсе
+        dossier = {key: value for key, value in record('dossier-q01', 'verified').items() if key != 'wave'}
+        bank, _ = apply_results([edited, dossier, record('a', 'unverified')],
+                                [{'id': 'a', 'optionId': 'o2', **GOOD}], wave=2)
+        saved = remember({'old': earlier}, bank, [{'id': 'a', 'optionId': 'o2', **GOOD}])
+        self.assertEqual(set(saved), {'old', 'a'})
+        self.assertEqual(saved['old'], earlier)
+        self.assertEqual(saved['a']['wave'], 2)
+        self.assertEqual(saved['a']['explanation'], GOOD['explanation'])
+
+    def test_override_flag_survives(self):
+        bank, _ = apply_results([record('a', 'unverified', official='o1')],
+                                [{'id': 'a', 'optionId': 'o2', 'overrideOfficialKey': True, **GOOD}], wave=2)
+        saved = remember({}, bank, [{'id': 'a', 'optionId': 'o2', 'overrideOfficialKey': True, **GOOD}])
+        self.assertTrue(saved['a']['overrideOfficialKey'])
 
 
 if __name__ == '__main__':
