@@ -13,6 +13,11 @@
         "origin": "ru",
         "unesco": "zh"
       },
+      "sides": [
+        "date",
+        "people",
+        "unesco"
+      ],
       "rows": [
         {
           "id": "hol-chunjie",
@@ -103,7 +108,11 @@
           "unesco": {
             "zh": "人类非物质文化遗产代表作名录",
             "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "date"
+          ]
         },
         {
           "id": "hol-chuxi",
@@ -147,7 +156,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "hol-yuanxiao",
@@ -190,7 +200,8 @@
           ],
           "olympiad": [
             "2021-22-shk-qfce22f"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "hol-xiaonian",
@@ -231,7 +242,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "hol-hanshi",
@@ -351,7 +363,8 @@
           ],
           "olympiad": [
             "2015-16-zak-10"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "hol-duanwu",
@@ -435,7 +448,11 @@
           "unesco": {
             "zh": "人类非物质文化遗产代表作名录",
             "gloss": "Репрезентативный список нематериального культурного наследия человечества ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "date"
+          ]
         },
         {
           "id": "hol-qixi",
@@ -489,7 +506,12 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "date",
+            "unesco"
+          ]
         },
         {
           "id": "hol-zhongqiu",
@@ -550,7 +572,11 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "hol-chongyang",
@@ -595,7 +621,11 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "hol-laba",
@@ -642,7 +672,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "date"
+          ]
         },
         {
           "id": "hol-poshui",
@@ -699,7 +733,12 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "people",
+            "unesco"
+          ]
         },
         {
           "id": "hol-huoba",
@@ -744,7 +783,11 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "hol-naadam",
@@ -789,7 +832,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "hol-sanyuesan",
@@ -852,7 +896,12 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "date",
+            "unesco"
+          ]
         },
         {
           "id": "hol-qiuxi",
@@ -960,7 +1009,12 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "date",
+            "unesco"
+          ]
         },
         {
           "id": "hol-guoqing",
@@ -1005,7 +1059,11 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "hol-jianjun",
@@ -1034,7 +1092,8 @@
             "ru": [
               "Наньчанское восстание"
             ],
-            "gloss": "Наньчанское восстание 1 августа 1927 года — начало армии КНР"
+            "gloss": "Наньчанское восстание 1 августа 1927 года — начало армии КНР",
+            "ref": "modern-history/events/ev-nanchang"
           },
           "origin": "День основания Народно-освободительной армии Китая. 1 августа 1927 года коммунисты подняли Наньчанское восстание — «первый выстрел» вооружённой борьбы против Гоминьдана, с которого ведёт начало армия. В 1933 году Реввоенсовет и временное центральное правительство Китайской Советской Республики объявили 1 августа днём основания Красной армии. В порядке праздничных дней назван памятным днём: военнослужащим — полдня выходного.",
           "sources": [
@@ -1064,7 +1123,11 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "hol-qingnian",
@@ -1094,7 +1157,8 @@
               "Движение 4 мая",
               "Движение четвёртого мая"
             ],
-            "gloss": "«Движение 4 мая» 1919 года — патриотическое выступление студентов"
+            "gloss": "«Движение 4 мая» 1919 года — патриотическое выступление студентов",
+            "ref": "modern-history/events/ev-wusi"
           },
           "origin": "Праздник молодёжи в память «Движения 4 мая» — антиимпериалистического патриотического выступления студентов Пекина 4 мая 1919 года. В 1939 году Северо-Западный союз молодёжи за спасение родины Пограничного района Шэньси-Ганьсу-Нинся назначил 4 мая Днём китайской молодёжи, в декабре 1949 года Государственный административный совет КНР утвердил его официально. Молодёжи от 14 лет — полдня выходного.",
           "sources": [
@@ -1124,7 +1188,11 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "unesco"
+          ]
         },
         {
           "id": "hol-zhishu",
@@ -1192,7 +1260,12 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "date",
+            "unesco"
+          ]
         },
         {
           "id": "hol-jiaoshi",
@@ -1246,7 +1319,12 @@
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не входит в списки нематериального культурного наследия ЮНЕСКО"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "date",
+            "unesco"
+          ]
         },
         {
           "id": "hol-jizhe",
@@ -1576,7 +1654,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "date"
+          ]
         },
         {
           "id": "hol-funv",
@@ -1641,6 +1723,10 @@
           ],
           "olympiad": [
             "2022-23-zak-5"
+          ],
+          "core": true,
+          "skipSides": [
+            "date"
           ]
         },
         {
@@ -1689,7 +1775,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "date"
+          ]
         },
         {
           "id": "hol-ru-xinnian",
@@ -2303,6 +2393,9 @@
         "holiday": "zh",
         "meaning": "ru"
       },
+      "sides": [
+        "holiday"
+      ],
       "rows": [
         {
           "id": "cus-jiaozi",
@@ -2355,7 +2448,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cus-niangao",
@@ -2454,7 +2548,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cus-zongzi",
@@ -2506,7 +2601,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cus-yuebing",
@@ -2562,6 +2658,10 @@
           ],
           "olympiad": [
             "2019-20-mun-q81216d"
+          ],
+          "core": true,
+          "skipSides": [
+            "holiday"
           ]
         },
         {
@@ -2607,7 +2707,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "holiday"
+          ]
         },
         {
           "id": "cus-chongyanggao",
@@ -2760,7 +2864,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cus-baozhu",
@@ -2858,7 +2963,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cus-wushi",
@@ -3057,6 +3163,10 @@
           ],
           "olympiad": [
             "2017-18-mun-9"
+          ],
+          "core": true,
+          "skipSides": [
+            "holiday"
           ]
         },
         {
@@ -3261,7 +3371,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cus-taqing",
@@ -3399,7 +3510,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cus-qiqiao",
@@ -3452,7 +3564,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "holiday"
+          ]
         },
         {
           "id": "cus-jizao",
@@ -3505,7 +3621,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "holiday"
+          ]
         },
         {
           "id": "cus-hanshi-buhuo",

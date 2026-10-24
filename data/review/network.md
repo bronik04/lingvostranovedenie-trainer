@@ -313,6 +313,55 @@
 
 ### Праздники (`holidays`)
 
+#### Таблица `holidays`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | date | people | unesco | другие | олимпиада |
+|---|---|---|---|---|---|
+| hol-chunjie | × | × | 1 | 1 | да |
+| hol-chuxi | × | × | × | — | прогноз |
+| hol-yuanxiao | 1 | × | × | 1 | да |
+| hol-xiaonian | 1 | × | × | — | прогноз |
+| hol-qingming | 1 | × | × | — | да |
+| hol-duanwu | × | × | 1 | 2 | да |
+| hol-qixi | × | × | × | — | прогноз |
+| hol-zhongqiu | 1 | × | × | — | прогноз |
+| hol-chongyang | 1 | × | × | — | прогноз |
+| hol-laba | × | × | × | 1 | прогноз |
+| hol-poshui | × | × | × | 1 | прогноз |
+| hol-huoba | × | 1 | × | — | прогноз |
+| hol-naadam | × | 1 | × | — | прогноз |
+| hol-sanyuesan | × | 1 | × | — | прогноз |
+| hol-yuandan | × | × | × | — | прогноз |
+| hol-guoqing | 1 | × | × | — | прогноз |
+| hol-jianjun | 1 | × | × | — | прогноз |
+| hol-qingnian | 1 | × | × | — | прогноз |
+| hol-zhishu | × | × | × | — | да |
+| hol-jiaoshi | × | × | × | 1 | да |
+| hol-laodong | × | × | × | — | прогноз |
+| hol-funv | × | × | × | 1 | да |
+| hol-ertong | × | × | × | — | прогноз |
+
+#### Таблица `customs`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | holiday | другие | олимпиада |
+|---|---|---|---|
+| cus-jiaozi | 1 | — | прогноз |
+| cus-tangyuan | 1 | — | прогноз |
+| cus-zongzi | 1 | — | прогноз |
+| cus-yuebing | × | 1 | да |
+| cus-labazhou | × | — | прогноз |
+| cus-chunlian | 1 | — | прогноз |
+| cus-shousui | 1 | — | прогноз |
+| cus-sailongzhou | × | 1 | да |
+| cus-saomu | 1 | — | прогноз |
+| cus-chazhuyu | 1 | — | прогноз |
+| cus-qiqiao | × | 1 | прогноз |
+| cus-jizao | × | — | прогноз |
+
 #### Таблица `figures`
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
@@ -329,6 +378,8 @@
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
 - нет
+
+Российские строки (разбирает российская тема): вопросов 10.
 
 ### Достопримечательности и архитектура (`landmarks`)
 
@@ -867,6 +918,12 @@
 - ethnos/heritage/her-cn-gesar
 - ethnos/heritage/her-cn-manas
 - ethnos/peoples/ppl-cn-hui
+- holidays/holidays/hol-ertong
+- holidays/holidays/hol-funv
+- holidays/holidays/hol-guoqing
+- holidays/holidays/hol-jiaoshi
+- holidays/holidays/hol-laodong
+- holidays/holidays/hol-yuandan
 - landmarks/fortifications/lm-cn-great-wall
 - landmarks/fortifications/lm-cn-xian-wall
 - landmarks/gardens/lm-cn-summer-palace-garden
@@ -953,13 +1010,10 @@
 
 ### Ссылка из ядра ведёт в тему без каркаса
 
-- cuisine/savory/cu-cn-yuxiang-rousi → holidays/customs/cus-yuxiangrousi
-- cuisine/staples/cu-cn-jiaozi → holidays/customs/cus-jiaozi
-- cuisine/sweets/cu-cn-tangyuan → holidays/customs/cus-tangyuan
-- holidays/figures/fig-change → holidays/holidays/hol-zhongqiu
-- holidays/figures/fig-jiezitui → holidays/holidays/hol-hanshi
-- holidays/figures/fig-nianshou → holidays/holidays/hol-chunjie
-- holidays/figures/fig-quyuan → holidays/holidays/hol-duanwu
+- holidays/holidays/hol-jianjun → modern-history/events/ev-nanchang
+- holidays/holidays/hol-qingnian → modern-history/events/ev-wusi
+- holidays/holidays/hol-qixi → myths/stories/story-niulang-zhinv
+- holidays/holidays/hol-zhongqiu → myths/stories/story-change-benyue
 - literature/authors/lit-a-caoxueqin → literature/works/lit-w-hongloumeng
 - literature/authors/lit-a-laoshe → literature/works/lit-w-luotuoxiangzi
 - literature/authors/lit-a-luoguanzhong → literature/works/lit-w-sanguoyanyi
@@ -982,6 +1036,7 @@
 
 ### Ссылка из ядра ведёт в строку вне ядра
 
+- cuisine/savory/cu-cn-yuxiang-rousi → holidays/customs/cus-yuxiangrousi
 - dynasties/dynasties/dyn-dongzhou → dynasties/rulers/rul-zhoupingwang
 - dynasties/dynasties/dyn-nansong → dynasties/rulers/rul-zhaogou
 - dynasties/dynasties/dyn-qing → dynasties/rulers/rul-huangtaiji
@@ -996,6 +1051,8 @@
 - ethnos/peoples/ppl-cn-manchu → ethnos/heritage/her-cn-manchu-papercut
 - ethnos/peoples/ppl-cn-tibetan → ethnos/heritage/her-cn-zangniang-thangka
 - ethnos/peoples/ppl-cn-zhuang → ethnos/heritage/her-cn-zhuang-tianqin
+- holidays/figures/fig-jiezitui → holidays/holidays/hol-hanshi
+- holidays/holidays/hol-huoba → ethnos/peoples/ppl-cn-yi
 - modern-history/figures/per-sunzhongshan → holidays/figures/fig-sunzhongshan
 - modern-history/figures/per-zhouenlai → literature/authors/lit-a-zhouenlai
 - nature/waters/wat-heilongjiang → nature/seas/sea-ru-okhotsk
