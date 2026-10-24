@@ -1956,7 +1956,8 @@
         "role": "ru"
       },
       "sides": [
-        "deed"
+        "deed",
+        "title"
       ],
       "rows": [
         {
@@ -2468,7 +2469,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "title"
+          ]
         },
         {
           "id": "rul-wuzetian",
@@ -2577,7 +2581,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "title"
+          ]
         },
         {
           "id": "rul-hubilie",
@@ -2626,7 +2633,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "title"
+          ]
         },
         {
           "id": "rul-zhuyuanzhang",
@@ -2695,7 +2705,8 @@
           "olympiad": [],
           "core": true,
           "skipSides": [
-            "deed"
+            "deed",
+            "title"
           ]
         },
         {
@@ -2868,7 +2879,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "title"
+          ]
         },
         {
           "id": "rul-yongzheng",
@@ -2979,7 +2993,10 @@
           "olympiad": [
             "addition-b1-07"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "title"
+          ]
         },
         {
           "id": "rul-jiaqing",
@@ -3764,7 +3781,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rul-ru-vladimir1",
@@ -3827,7 +3845,8 @@
           ],
           "olympiad": [
             "2022-23-shk-qcd7a28"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "rul-ru-yaroslav",
@@ -3883,7 +3902,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rul-ru-monomakh",
@@ -3997,7 +4017,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rul-ru-donskoy",
@@ -4051,7 +4072,8 @@
           ],
           "olympiad": [
             "addition-b2-16"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "rul-ru-ivan3",
@@ -4107,7 +4129,8 @@
           "olympiad": [
             "2022-23-shk-qde2687",
             "2025-26-reg-9"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "rul-ru-vasily3",
@@ -4230,7 +4253,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rul-ru-mikhail1",
@@ -4283,7 +4307,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rul-ru-alexei",
@@ -4448,7 +4473,8 @@
             "2024-25-mun-28",
             "2025-26-zak-q387588",
             "2021-22-mun-q60cd54"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "rul-ru-pavel1",
@@ -4552,7 +4578,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "rul-ru-nik1",
@@ -4693,7 +4720,8 @@
           ],
           "olympiad": [
             "2023-24-mun-35"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "rul-ru-alex3",
@@ -4797,7 +4825,8 @@
           ],
           "olympiad": [
             "2020-21-pri-q59b606"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "rul-ru-cat1",
@@ -5009,7 +5038,8 @@
           ],
           "olympiad": [
             "2025-26-mun-4"
-          ]
+          ],
+          "core": true
         }
       ]
     }

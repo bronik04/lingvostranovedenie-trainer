@@ -16,7 +16,8 @@
       },
       "sides": [
         "work",
-        "subject"
+        "subject",
+        "genre"
       ],
       "rows": [
         {
@@ -150,7 +151,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "art-p-yanliben",
@@ -547,7 +551,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "art-p-wangximeng",
@@ -604,7 +611,10 @@
           "olympiad": [
             "addition-b2-06"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "art-p-guoxi",
@@ -1012,7 +1022,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "genre"
+          ]
         },
         {
           "id": "art-p-likeran",
@@ -2081,7 +2094,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-p-ru-bryullov",
@@ -2136,7 +2150,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-p-ru-aivazovsky",
@@ -2198,7 +2213,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-p-ru-shishkin",
@@ -2281,7 +2297,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "subject"
+          ]
         },
         {
           "id": "art-p-ru-levitan",
@@ -2357,7 +2377,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-p-ru-repin",
@@ -2426,7 +2447,8 @@
               "checkedAt": "2026-10-17",
               "authority": "official"
             }
-          ]
+          ],
+          "core": true
         },
         {
           "id": "art-p-ru-surikov",
@@ -2495,7 +2517,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-p-ru-vasnetsov",
@@ -2558,6 +2581,10 @@
               "checkedAt": "2026-10-17",
               "authority": "official"
             }
+          ],
+          "core": true,
+          "skipSides": [
+            "subject"
           ]
         },
         {
@@ -2626,7 +2653,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-p-ru-kramskoy",
@@ -2750,7 +2778,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-p-ru-vrubel",
@@ -2857,7 +2886,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-p-ru-kandinsky",
@@ -5621,7 +5651,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-w-ru-pompeii",
@@ -5697,7 +5728,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-w-ru-ninthwave",
@@ -5766,7 +5798,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-w-ru-morning",
@@ -5836,7 +5869,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-w-ru-rooks",
@@ -5906,7 +5940,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-w-ru-eternalpeace",
@@ -5976,7 +6011,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-w-ru-burlaki",
@@ -6044,7 +6080,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-w-ru-morozova",
@@ -6121,7 +6158,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-w-ru-streltsy",
@@ -6198,7 +6236,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-w-ru-bogatyri",
@@ -6269,7 +6308,8 @@
           ],
           "olympiad": [
             "2025-26-zak-q233def"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "art-w-ru-peaches",
@@ -6338,7 +6378,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "art-w-ru-unknown",
@@ -6479,8 +6520,12 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         }
+      ],
+      "sides": [
+        "author"
       ]
     },
     "terms": {

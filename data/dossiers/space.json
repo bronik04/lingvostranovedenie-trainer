@@ -1558,7 +1558,8 @@
           ],
           "olympiad": [
             "2025-26-zak-q66aba2"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "mis-vostok1",
@@ -1833,7 +1834,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "year"
+          ]
         },
         {
           "id": "mis-buran",
@@ -1882,6 +1887,9 @@
           ],
           "olympiad": []
         }
+      ],
+      "sides": [
+        "year"
       ]
     },
     "people": {
@@ -2286,7 +2294,8 @@
           ],
           "olympiad": [
             "2023-24-zak-4"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "ppl-titov",
@@ -2401,7 +2410,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ppl-leonov",
@@ -2463,7 +2473,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ppl-korolev",
@@ -2504,7 +2515,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "ppl-tsiolkovsky",
@@ -2551,7 +2563,8 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         }
       ]
     }

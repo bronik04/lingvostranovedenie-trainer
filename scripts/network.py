@@ -132,7 +132,7 @@ def _core_lines(dossier: dict, accepted: list[tuple[str, str, str, str]], bank: 
     for _, _, place, side in accepted:
         counts[(place, side)] = counts.get((place, side), 0) + 1
     outside: list[str] = []
-    russian: set[str] = set()
+    unmarked = 0
     for name in _core_tables(dossier):
         table = dossier['tables'][name]
         sides = table.get('sides', [])
@@ -157,22 +157,31 @@ def _core_lines(dossier: dict, accepted: list[tuple[str, str, str, str]], bank: 
             lines.append(f'| {row["id"]} | ' + ' | '.join(cells) + ' |')
         lines.append('')
         prefix = f'{dossier["id"]}/{name}/'
-        russian.update(f'{prefix}{row["id"]}' for row in table['rows'] if _is_russian(row))
-        outside += [f'- {record_id} — {text}' for record_id, text, place, _ in accepted
-                    if place.startswith(prefix) and place not in core and place not in russian]
+        # в смешанной таблице ядро размечают по частям (китайские строки — китайская тема, российские —
+        # российская): строка вне ядра — кандидат, только если у её части ядро уже есть
+        groups = {f'{prefix}{row["id"]}': _core_group(row) for row in table['rows']}
+        with_core = {groups[place] for place in core}
+        for record_id, text, place, _ in accepted:
+            if not place.startswith(prefix) or place in core:
+                continue
+            if groups.get(place) in with_core:
+                outside.append(f'- {record_id} — {text}')
+            else:
+                unmarked += 1
     lines += ['#### Вопросы о строках вне ядра', '',
               'Кандидаты на перебор: встроить в ядро, переделать или снять в архив.', '']
     lines += outside or ['- нет']
-    on_russian = sum(1 for _, _, place, _ in accepted if place in russian)
-    if on_russian:
-        # решение автора 2026-10-21: российские строки китайской темы ждут российскую тему
-        lines += ['', f'Российские строки (разбирает российская тема): вопросов {on_russian}.']
+    if unmarked:
+        lines += ['', f'Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов {unmarked}.']
     return lines
 
 
-def _is_russian(row: dict) -> bool:
-    country = row.get('country')
-    return isinstance(country, dict) and country.get('zh') == '俄罗斯'
+def _core_group(row: dict) -> str | None:
+    """Часть смешанной таблицы: страна строки, а у купюр — валюта."""
+    for column in ('country', 'currency'):
+        if isinstance(row.get(column), dict):
+            return row[column].get('zh')
+    return None
 
 
 def _link_lines(loaded: list[tuple[dict, list[dict]]]) -> list[str]:

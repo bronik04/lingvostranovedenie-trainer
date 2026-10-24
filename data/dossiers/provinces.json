@@ -2398,7 +2398,8 @@
       },
       "sides": [
         "region",
-        "nickname"
+        "nickname",
+        "river"
       ],
       "rows": [
         {
@@ -2481,7 +2482,10 @@
           "olympiad": [
             "2016-17-zak-2"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-jinan",
@@ -2555,7 +2559,10 @@
           "olympiad": [
             "2021-22-reg-qd842f6"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-lasa",
@@ -2628,7 +2635,10 @@
           "olympiad": [
             "2018-19-zak-6"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-fuzhou",
@@ -2698,7 +2708,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-nanjing",
@@ -2773,7 +2786,10 @@
           "olympiad": [
             "2023-24-mun-32"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-chengdu",
@@ -2852,7 +2868,10 @@
           "olympiad": [
             "2024-25-shk-34"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-hangzhou",
@@ -2910,7 +2929,10 @@
           "olympiad": [
             "2015-16-shk-65"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-xian",
@@ -2979,7 +3001,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-kunming",
@@ -3047,7 +3072,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-haerbin",
@@ -3132,7 +3160,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-changsha",
@@ -3284,7 +3315,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-shanghai",
@@ -3380,7 +3414,10 @@
             "2015-16-zak-1",
             "addition-b2-15"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-beijing",
@@ -3459,7 +3496,10 @@
             "2022-23-shk-q623963",
             "2016-17-mun-8"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-tianjin",
@@ -3516,7 +3556,10 @@
           "olympiad": [
             "2015-16-reg-1"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-chongqing",
@@ -3581,7 +3624,10 @@
             "2018-19-reg-3",
             "2023-24-zak-2"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-luoyang",
@@ -3656,7 +3702,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-jingdezhen",
@@ -3732,7 +3781,10 @@
           "olympiad": [
             "2017-18-mun-10"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-suzhou",
@@ -4027,7 +4079,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "river"
+          ]
         },
         {
           "id": "city-shenzhen",
@@ -4287,7 +4342,11 @@
               "столица в лесу"
             ],
             "gloss": "«Столица в лесу» — так называют Москву: город утопает в лесах и парках"
-          }
+          },
+          "core": true,
+          "skipSides": [
+            "nickname"
+          ]
         },
         {
           "id": "city-ru-saint-petersburg",
@@ -4344,7 +4403,8 @@
             "2020-21-pri-q4e8b0e",
             "2024-25-zak-qe3452d",
             "2025-26-zak-q387588"
-          ]
+          ],
+          "core": true
         },
         {
           "id": "city-ru-nizhny-novgorod",
@@ -4406,6 +4466,10 @@
           ],
           "olympiad": [
             "2022-23-mun-6"
+          ],
+          "core": true,
+          "skipSides": [
+            "region"
           ]
         },
         {
@@ -4473,7 +4537,8 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "city-ru-volgograd",
@@ -4527,6 +4592,10 @@
           ],
           "olympiad": [
             "2019-20-mun-qce7da2"
+          ],
+          "core": true,
+          "skipSides": [
+            "region"
           ]
         },
         {
@@ -4640,6 +4709,10 @@
           ],
           "olympiad": [
             "2023-24-zak-10"
+          ],
+          "core": true,
+          "skipSides": [
+            "region"
           ]
         },
         {
@@ -4738,7 +4811,11 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
+          ]
         },
         {
           "id": "city-ru-ryazan",
@@ -4838,6 +4915,11 @@
           "olympiad": [
             "2020-21-reg-q1df3bd",
             "2022-23-zak-8"
+          ],
+          "core": true,
+          "skipSides": [
+            "region",
+            "nickname"
           ]
         },
         {
@@ -5019,6 +5101,10 @@
           ],
           "olympiad": [
             "2025-26-reg-6"
+          ],
+          "core": true,
+          "skipSides": [
+            "region"
           ]
         },
         {
@@ -5096,6 +5182,10 @@
           "olympiad": [
             "2022-23-reg-4",
             "addition-b1-19"
+          ],
+          "core": true,
+          "skipSides": [
+            "region"
           ]
         },
         {
@@ -5189,6 +5279,10 @@
           ],
           "olympiad": [
             "2023-24-zak-5"
+          ],
+          "core": true,
+          "skipSides": [
+            "region"
           ]
         },
         {
@@ -5295,7 +5389,12 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region",
+            "river"
+          ]
         },
         {
           "id": "city-ru-ulan-ude",
@@ -5440,6 +5539,10 @@
           ],
           "olympiad": [
             "addition-b2-20"
+          ],
+          "core": true,
+          "skipSides": [
+            "region"
           ]
         },
         {
@@ -5546,6 +5649,67 @@
           ],
           "olympiad": [
             "2020-21-zak-q1f0e35"
+          ],
+          "core": true,
+          "skipSides": [
+            "region"
+          ]
+        },
+        {
+          "id": "city-ru-vladivostok",
+          "name": {
+            "zh": "符拉迪沃斯托克",
+            "ru": [
+              "Владивосток"
+            ],
+            "gloss": "Владивосток — центр Приморского края, портовый город на Японском море"
+          },
+          "country": {
+            "zh": "俄罗斯",
+            "gloss": "Россия"
+          },
+          "region": {
+            "zh": "滨海边疆区",
+            "ru": [
+              "Приморский край"
+            ],
+            "gloss": "Приморский край — на юго-востоке России, центр Владивосток"
+          },
+          "known": {
+            "zh": "西伯利亚铁路终点",
+            "ru": [
+              "конечная станция Транссиба"
+            ],
+            "gloss": "Конечная станция Транссибирской магистрали"
+          },
+          "about": "Владивосток — административный центр Приморского края, город-порт на берегу Японского моря, на полуострове Муравьёва-Амурского; раскинулся по склонам сопок вокруг бухты Золотой Рог. Военный пост Владивосток основан 2 июля 1860 года, статус города получен в 1880 году. Китайская сторона до основания русского поста называла это место 海参崴 (Хайшэньвэй), нынешнее китайское название города — 符拉迪沃斯托克. Конечная станция Транссибирской магистрали и место, где находится штаб Тихоокеанского флота.",
+          "sources": [
+            {
+              "title": "滨海边疆区 — 中华人民共和国驻符拉迪沃斯托克总领事馆",
+              "url": "https://vladivostok.china-consulate.gov.cn/lqjs/lqgk/bhbjq/",
+              "quote": "符拉迪沃斯托克市 ：滨海边疆区首府， 1860 年 7 月 2 日建立 … 符拉迪沃斯托克市是西伯利亚大铁路终点站 … 也是俄罗斯太平洋舰队司令部所在地",
+              "authority": "official",
+              "checkedAt": "2026-10-24"
+            },
+            {
+              "title": "О городе — Администрация города Владивостока",
+              "url": "https://www.vlc.ru/city/aboutcity/",
+              "quote": "Владивосток - город-порт на побережье Японского моря, ворота России в Азиатско-Тихоокеанский регион. Расположен на побережье Японского моря на полуострове Муравьева-Амурского. … Город раскинулся на живописных сопках по берегам бухты Золотой Рог … 2 июля 1860 года по его указанию был основан город Владивосток … 1880 г. Владивосток получил статус города.",
+              "authority": "official",
+              "checkedAt": "2026-10-24"
+            },
+            {
+              "title": "俄罗斯城市概况（符拉迪沃斯托克）— 中国社会科学院俄罗斯东欧中亚研究网",
+              "url": "http://euroasia.cssn.cn/eoybl/eoybl_eoyly/201007/t20100726_1847787.shtml",
+              "quote": "符拉迪沃斯托克原属中国版图，称海参崴。1860年《中俄北京条约》签订后割让给沙俄，改名为符拉迪沃斯托克。",
+              "authority": "academic",
+              "checkedAt": "2026-10-24"
+            }
+          ],
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "region"
           ]
         }
       ]

@@ -1136,7 +1136,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cin-ru-solaris",
@@ -1240,7 +1241,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "director"
+          ]
         },
         {
           "id": "cin-ru-war-and-peace",
@@ -1344,7 +1349,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "director"
+          ]
         },
         {
           "id": "cin-ru-crocodile-gena",
@@ -1398,7 +1407,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cin-ru-hedgehog-fog",
@@ -1454,7 +1464,11 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "director"
+          ]
         },
         {
           "id": "cin-ru-nu-pogodi",
@@ -1495,7 +1509,8 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true
         },
         {
           "id": "cin-ru-winnie-pooh",
@@ -1545,6 +1560,9 @@
           ],
           "olympiad": []
         }
+      ],
+      "sides": [
+        "director"
       ]
     }
   }
