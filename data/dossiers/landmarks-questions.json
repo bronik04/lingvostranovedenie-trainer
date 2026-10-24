@@ -862,5 +862,31 @@
       "verdict": "accept",
       "note": "проверяющий (Opus) 2026-10-23: accept: ответ и набор верны, второго верного варианта нет. Одобрен автором на этапе предложения."
     }
+  },
+  {
+    "id": "landmarks-q108",
+    "embeds": "2024-25-pri-31",
+    "status": "draft",
+    "fact": {
+      "table": "sacred",
+      "row": "lm-ru-archangel-kremlin",
+      "ask": "name",
+      "where": {
+        "country": "俄罗斯"
+      }
+    }
+  },
+  {
+    "id": "landmarks-q109",
+    "embeds": "2021-22-zak-q3ba1dd",
+    "status": "draft",
+    "fact": {
+      "table": "sacred",
+      "row": "lm-ru-christ-saviour",
+      "ask": "name",
+      "where": {
+        "country": "俄罗斯"
+      }
+    }
   }
 ]
