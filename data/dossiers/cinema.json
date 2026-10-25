@@ -1226,7 +1226,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "cin-ru-solaris",
