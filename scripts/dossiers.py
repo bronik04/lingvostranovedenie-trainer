@@ -262,14 +262,25 @@ def _column_glosses(question: dict, dossier: dict) -> dict[str, set[str]]:
     return glosses
 
 
+def answer_with_gloss(answer: dict, cell: dict) -> dict:
+    """Ответ записи досье с русским названием верного варианта — подписью его ячейки (решение
+    автора 2026-10-25: ученик видит, что за 莫高窟, и у верного ответа). Подписи к неверным
+    вариантам остаются у вариантов, название верного — у ответа: вариант-ответ подписи не несёт."""
+    answer = {key: value for key, value in answer.items() if key != 'gloss'}
+    return answer | {'gloss': cell['gloss'].strip()} if cell.get('gloss') else answer
+
+
 def original_record(record: dict) -> dict:
     """Запись до встраивания. В bank.json после сборки у встроенной записи уже есть добавленные
-    варианты (id строк таблицы), подписи и строка ответа `factRow`; исходные варианты — с id вида o1, o2…"""
+    варианты (id строк таблицы), подписи, название верного ответа и строка ответа `factRow`;
+    исходные варианты — с id вида o1, o2…"""
     if 'dossier' not in record:
         return record
     options = [{key: value for key, value in option.items() if key != 'gloss'}
                for option in record['options'] if OPTION_ID.fullmatch(option['id'])]
-    return {key: value for key, value in record.items() if key not in {'dossier', 'factRow'}} | {'options': options}
+    answer = {key: value for key, value in record['answer'].items() if key != 'gloss'}
+    return ({key: value for key, value in record.items() if key not in {'dossier', 'factRow'}}
+            | {'options': options, 'answer': answer})
 
 
 def embed_record(record: dict, question: dict, dossier: dict) -> tuple[dict | None, list[str]]:
@@ -325,8 +336,9 @@ def embed_record(record: dict, question: dict, dossier: dict) -> tuple[dict | No
     if named:
         errors.append(f'пояснение {record["id"]} называет неверные варианты {named} — '
                       'на экране их может не оказаться; правка в editorial.json')
-    return {**record, 'options': options, 'dossier': dossier['id'],
-            'factRow': fact_place(question, dossier)[0]}, errors
+    _, cell = answer_cell(question, dossier)
+    return {**record, 'options': options, 'answer': answer_with_gloss(record['answer'], cell),
+            'dossier': dossier['id'], 'factRow': fact_place(question, dossier)[0]}, errors
 
 
 def dossier_records(dossier: dict, questions: list[dict]) -> list[dict]:
@@ -336,6 +348,7 @@ def dossier_records(dossier: dict, questions: list[dict]) -> list[dict]:
         if question['status'] != 'accepted' or 'embeds' in question:
             continue
         options, answer_id = question_options(question, dossier)
+        _, cell = answer_cell(question, dossier)
         records.append({
             'id': question['id'],
             'origin': 'addition',
@@ -347,7 +360,7 @@ def dossier_records(dossier: dict, questions: list[dict]) -> list[dict]:
             'questionRu': question['questionRu'],
             'questionZh': None,
             'options': options,
-            'answer': {'optionId': answer_id, 'state': 'verified'},
+            'answer': answer_with_gloss({'optionId': answer_id, 'state': 'verified'}, cell),
             'explanation': {'ru': question['explanation'].strip()},
             'evidence': [{key: item[key] for key in EVIDENCE_FIELDS} for item in rows[answer_id]['sources']],
             'occurrences': [],

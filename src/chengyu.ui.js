@@ -3,6 +3,7 @@
  * $, show, escapeHtml, pluralRu и state.view (src/quiz.ui.js, src/quiz.mjs), логика —
  * src/chengyu.mjs. Прогресс и настройки хранятся отдельно от основного раздела; в файл
  * прогресса (exportProgress/importProgress в src/quiz.ui.js) cy.progress идёт вместе с ним.
+ * Счёт в шапке на экранах раздела пишет cyRenderCount — его зовёт show из quiz.ui.js.
  */
 
 const CY_STORAGE_KEY = 'lingvo-trainer:chengyu:v1';
@@ -67,6 +68,12 @@ function cyRenderStats() {
     $(id).textContent = String(count);
     $(`${id}Label`).textContent = pluralRu(count, forms);
   }
+}
+
+/** Шапка в разделе: решённые задания «Чэнъюй», а не прогресс основного банка. */
+function cyRenderCount() {
+  const solved = CHENGYU_BANK.filter((record) => cy.progress[record.id]).length;
+  $('bankCount').textContent = `Решено ${solved} из ${CHENGYU_BANK.length}`;
 }
 
 function cyRenderSetup() {
@@ -232,6 +239,7 @@ function cyAnswer(record, optionId) {
   const verdict = cyGrade(record, optionId);
   cy.progress[record.id] = cyRecordAnswer(cy.progress[record.id], verdict.correct);
   cySaveProgress();
+  cyRenderCount();
   if (verdict.correct) cy.correct += 1;
   else if (!cy.wrongIds.includes(record.id)) {
     cy.wrongIds.push(record.id);
@@ -449,6 +457,7 @@ $('cyResetProgress').addEventListener('click', () => {
   cy.progress = {};
   cySaveProgress();
   cyRenderSetup();
+  cyRenderCount();
 });
 for (const input of document.querySelectorAll('input[name="cyMode"]')) {
   input.addEventListener('change', (event) => {
