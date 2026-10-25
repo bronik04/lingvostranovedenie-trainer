@@ -307,6 +307,10 @@ test('поиск базы — с начала слова: «чай» наход�
   // несколько слов — каждое где-то в тексте
   assert.equal(quiz.matchesDatabaseSearch(item('Каким чаем славится Чжэцзян?'), 'чжэцзян чай'), true);
   assert.equal(quiz.matchesDatabaseSearch(item('Каким чаем славится Чжэцзян?'), 'чай фуцзянь'), false);
+  // имена и понятия в русской записи не теряют гласную: «мао» не находит «мая», «дао» — «дай»
+  assert.equal(quiz.matchesDatabaseSearch(item('Что произошло 4 мая 1919 года?'), 'мао'), false);
+  assert.equal(quiz.matchesDatabaseSearch(item('Кто такой Мао Цзэдун?'), 'мао'), true);
+  assert.equal(quiz.matchesDatabaseSearch(item('Дай ответ'), 'дао'), false);
   // китайский — куском текста
   assert.equal(quiz.matchesDatabaseSearch(record('a', { options: [{ id: 'o1', zh: '龙井茶' }] }), '井茶'), true);
 });
@@ -326,6 +330,10 @@ test('русское название верного ответа — из по�
   assert.equal(quiz.answerName(record('a', { answer: { optionId: 'o2', state: 'verified', gloss: 'Чжан Имоу — кинорежиссёр' } })),
     'Чжан Имоу');
   assert.equal(quiz.answerName(record('a')), '');
+  // запятая перед тире в подписи ячейки к названию не прилипает
+  assert.equal(quiz.answerName(record('a', { answer: { optionId: 'o2', state: 'verified',
+    gloss: 'Солёно-свежий вкус, подчёркивающий вкус продуктов, — шаньдунская кухня' } })),
+  'Солёно-свежий вкус, подчёркивающий вкус продуктов');
   // поиск находит вопрос и по названию ответа
   assert.equal(quiz.matchesDatabaseSearch(record('a', { answer: { optionId: 'o2', state: 'verified', gloss: 'Пещеры Могао' } }), 'могао'), true);
 });

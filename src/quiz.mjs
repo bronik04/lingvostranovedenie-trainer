@@ -83,14 +83,19 @@ export function recordOrigin(record) {
 }
 
 // Поиск по базе — с начала слова: «чай» находит «чай», «чайный» и «чая», «чаем», но не
-// «величайший» и «случай». Окончание слова запроса отбрасывается (основа — не короче двух букв),
+// «величайший» и «случай». Окончание слова запроса отбрасывается (основа — не короче трёх букв, из двух —
+// только перед мягким окончанием, см. SOFT_ENDING_START),
 // и слово текста подходит, если это основа и одно из окончаний. Список окончаний — тот же, что
 // ENDINGS в scripts/dossiers.py. Китайский запрос ищется куском текста: слов в нём не выделить.
 const RU_ENDINGS = ['ами', 'ями', 'ого', 'его', 'ому', 'ему', 'ыми', 'ими', 'ых', 'их', 'ой', 'ей', 'ий', 'ый',
   'ая', 'яя', 'ое', 'ее', 'ую', 'юю', 'ов', 'ев', 'ам', 'ям', 'ах', 'ях', 'ом', 'ем',
   'а', 'я', 'ь', 'й', 'о', 'е', 'ы', 'и', 'у', 'ю'];
 const ENDING_SET = new Set(RU_ENDINGS);
-const MIN_SEARCH_STEM = 2;
+const MIN_SEARCH_STEM = 3;
+// основа из двух букв допустима только перед мягким окончанием (на й, ь, я, е, ю, и): «чай», «чаем» → «ча»
+// находят «чая», «чаем», а «мао», «дао» (имена и понятия в русской записи) не превращаются в «ма» и «да»
+// и не находят «мая», «дай»
+const SOFT_ENDING_START = new Set(['й', 'ь', 'я', 'е', 'ю', 'и']);
 const SEARCH_WORD = /[\p{L}\p{N}]+/gu;
 
 const searchFold = (text) => String(text ?? '').toLocaleLowerCase('ru').replaceAll('ё', 'е');
@@ -99,7 +104,8 @@ const searchFold = (text) => String(text ?? '').toLocaleLowerCase('ru').replaceA
 function searchTerms(query) {
   return (searchFold(query).match(SEARCH_WORD) ?? []).map((term) => {
     if (HAN_CHAR.test(term)) return { term, han: true };
-    const ending = RU_ENDINGS.find((item) => term.endsWith(item) && term.length - item.length >= MIN_SEARCH_STEM);
+    const ending = RU_ENDINGS.find((item) => term.endsWith(item) && (term.length - item.length >= MIN_SEARCH_STEM
+      || (term.length - item.length === MIN_SEARCH_STEM - 1 && SOFT_ENDING_START.has(item[0]))));
     const stem = ending ? term.slice(0, -ending.length) : term;
     return {
       term,
@@ -160,7 +166,8 @@ export function searchSegments(text, query) {
 /** Русское название верного ответа — у вопроса досье из ячейки ответа (подпись до первого
  * « — »: «Пещеры Могао», «Чжан Имоу»); у остальных вопросов его нет. */
 export function answerName(record) {
-  return record.answer.gloss ? record.answer.gloss.split(' — ')[0] : '';
+  // «…вкус продуктов, — шаньдунская кухня»: запятая перед тире названию не нужна
+  return record.answer.gloss ? record.answer.gloss.split(' — ')[0].replace(/[,;:]+$/, '') : '';
 }
 
 export function normaliseStudySettings(value, bank) {

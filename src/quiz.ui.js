@@ -344,9 +344,13 @@ function restoreRound() {
     const byId = new Map(QUESTION_BANK.map((record) => [record.id, record]));
     const round = saved.round.map((id) => byId.get(id));
     const retryQueue = saved.retryQueue.map(({ id, afterPosition }) => ({ record: byId.get(id), afterPosition }));
-    // банк сменился между загрузками — такой раунд не восстановить
+    // банк сменился между загрузками или снимок неполный — такой раунд не восстановить
+    const filters = saved.settings?.filters;
     if (!round.length || round.some((record) => !record) || retryQueue.some((entry) => !entry.record)
-        || !FORMATS.has(saved.format) || !saved.settings?.filters) {
+        || !FORMATS.has(saved.format) || !Number.isInteger(saved.position) || saved.position < 0
+        || ![saved.marks, saved.wrongIds, saved.retriedIds].every(Array.isArray)
+        || !saved.wrongPicks || typeof saved.wrongPicks !== 'object' || !saved.recallCounts
+        || ![filters?.topics, filters?.years, filters?.stages].every(Array.isArray)) {
       discardRound();
       return;
     }
@@ -368,15 +372,15 @@ function restoreRound() {
       roundSettings: saved.settings,
       finished: saved.finished,
     });
+    if (state.finished) renderResults();
+    else if (state.answered && !advance()) completeRound();
+    else {
+      renderQuestion();
+      saveRound();
+    }
   } catch {
+    // что бы ни случилось со снимком, главная должна открыться
     discardRound();
-    return;
-  }
-  if (state.finished) renderResults();
-  else if (state.answered && !advance()) completeRound();
-  else {
-    renderQuestion();
-    saveRound();
   }
 }
 
@@ -407,6 +411,8 @@ function importProgress(file) {
       if (!confirm(`Загрузить прогресс из файла? Текущий прогресс ${sections} на этом устройстве будет заменён.`)) return;
       state.progress = migrateProgress(QUESTION_BANK, parsed.progress);
       saveProgress();
+      // плашка незаконченного раунда обещает, что его ответы сохранены, — прогресс заменён
+      discardRound();
       if ('chengyu' in parsed) {
         cy.progress = parsed.chengyu;
         cySaveProgress();
@@ -624,6 +630,8 @@ function renderHome(modeCounts) {
       : `${state.size} случайных вопросов из всех тем`}. Режим, формат и темы — ниже.`;
 
   for (const id of ['firstStart', 'startButton', 'barStart']) $(id).disabled = available === 0;
+  // на плашке подсказки «не подходит ни один вопрос» нет — кнопка, которая ничего не сделает, не показывается
+  $('resumeNew').hidden = available === 0;
   // главная кнопка на экране одна: без подходящих вопросов это «Начать обычный раунд»
   for (const id of ['startButton', 'barStart']) {
     $(id).classList.toggle('ink-btn--primary', available !== 0);
@@ -664,7 +672,8 @@ function topicsLabel({ topics, dossiers = [] }, inSentence = false) {
   if (!list.length) return 'все темы';
   if (inSentence) {
     const kind = sets ? (list.length === 1 ? 'подборка' : 'подборки') : list.length === 1 ? 'раздел' : 'разделы';
-    return `${kind}: ${list.map((item) => (sets ? DOSSIER_SHORT[item] : TOPIC_SHORT[item]) || item).join(', ')}`;
+    const short = (item) => (sets ? DOSSIER_SHORT[item] || dossierTitle(item).toLocaleLowerCase('ru') : TOPIC_SHORT[item] || item);
+    return `${kind}: ${list.map(short).join(', ')}`;
   }
   return list.length === 1 ? (sets ? dossierTitle(list[0]) : list[0]) : chosenCount({ topics, dossiers });
 }
@@ -745,12 +754,13 @@ function renderFoldValues() {
   $('topicsValue').textContent = filterLabels(state.filters).join(' · ');
 }
 
-/** Телефон: кнопка раунда внизу экрана — только пока верхняя («Начать раунд», «Начать первый
- * раунд» или «Продолжить раунд») за краем: на экране всегда видна одна главная кнопка. */
+/** Телефон: кнопка раунда внизу экрана — только пока верхняя «Начать раунд» («Начать первый раунд»)
+ * за краем: на экране всегда видна одна главная кнопка. При плашке «Раунд не закончен» полосы нет:
+ * её «Начать раунд» молча заменил бы незаконченный раунд вместо «Продолжить». */
 function updateStartBar() {
   let shown = false;
   if (state.view === 'setup' && onPhone()) {
-    const top = [$('firstStart'), $('startButton'), $('resumeButton')].find((button) => button.offsetParent);
+    const top = [$('firstStart'), $('startButton')].find((button) => button.offsetParent);
     const viewport = window.visualViewport;
     const visibleBottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
     const rect = top?.getBoundingClientRect();
@@ -826,13 +836,16 @@ function renderQuestion() {
 
   state.answered = false;
   const origin = recordOrigin(record);
-  const first = origin.isAddition ? null : matchingOccurrence(record, state.filters);
+  // подпись источника — по фильтрам самого раунда: он мог быть собран не по нынешним настройкам главной
+  // («Тренировать найденные», «Продолжить раунд» после смены года); нет подходящего — первое появление
+  const first = origin.isAddition ? null
+    : matchingOccurrence(record, state.roundSettings?.filters ?? state.filters) ?? record.occurrences[0];
   $('progressLabel').textContent = `Вопрос ${state.position + 1} из ${state.round.length}`;
   renderProgress();
   $('topicLabel').textContent = record.topic;
   // у дополнения года и этапа нет — над ним одна метка «Дополнение»
-  $('sourceLabel').textContent = origin.isAddition ? '' : occurrenceLabel(first);
-  $('sourceLabel').hidden = origin.isAddition;
+  $('sourceLabel').textContent = first ? occurrenceLabel(first) : '';
+  $('sourceLabel').hidden = !first;
   $('originPill').textContent = 'Дополнение';
   $('originPill').hidden = !origin.isAddition;
   $('unverifiedPill').hidden = record.answer.state !== 'unverified';

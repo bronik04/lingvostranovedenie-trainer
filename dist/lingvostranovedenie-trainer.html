@@ -582,11 +582,16 @@ function recordOrigin(record) {
 
 
 
+
 const RU_ENDINGS = ['ами', 'ями', 'ого', 'его', 'ому', 'ему', 'ыми', 'ими', 'ых', 'их', 'ой', 'ей', 'ий', 'ый',
   'ая', 'яя', 'ое', 'ее', 'ую', 'юю', 'ов', 'ев', 'ам', 'ям', 'ах', 'ях', 'ом', 'ем',
   'а', 'я', 'ь', 'й', 'о', 'е', 'ы', 'и', 'у', 'ю'];
 const ENDING_SET = new Set(RU_ENDINGS);
-const MIN_SEARCH_STEM = 2;
+const MIN_SEARCH_STEM = 3;
+
+
+
+const SOFT_ENDING_START = new Set(['й', 'ь', 'я', 'е', 'ю', 'и']);
 const SEARCH_WORD = /[\p{L}\p{N}]+/gu;
 
 const searchFold = (text) => String(text ?? '').toLocaleLowerCase('ru').replaceAll('ё', 'е');
@@ -595,7 +600,8 @@ const searchFold = (text) => String(text ?? '').toLocaleLowerCase('ru').replaceA
 function searchTerms(query) {
   return (searchFold(query).match(SEARCH_WORD) ?? []).map((term) => {
     if (HAN_CHAR.test(term)) return { term, han: true };
-    const ending = RU_ENDINGS.find((item) => term.endsWith(item) && term.length - item.length >= MIN_SEARCH_STEM);
+    const ending = RU_ENDINGS.find((item) => term.endsWith(item) && (term.length - item.length >= MIN_SEARCH_STEM
+      || (term.length - item.length === MIN_SEARCH_STEM - 1 && SOFT_ENDING_START.has(item[0]))));
     const stem = ending ? term.slice(0, -ending.length) : term;
     return {
       term,
@@ -655,7 +661,8 @@ function searchSegments(text, query) {
 
 
 function answerName(record) {
-  return record.answer.gloss ? record.answer.gloss.split(' — ')[0] : '';
+  
+  return record.answer.gloss ? record.answer.gloss.split(' — ')[0].replace(/[,;:]+$/, '') : '';
 }
 
 function normaliseStudySettings(value, bank) {
@@ -1455,8 +1462,12 @@ function restoreRound() {
     const round = saved.round.map((id) => byId.get(id));
     const retryQueue = saved.retryQueue.map(({ id, afterPosition }) => ({ record: byId.get(id), afterPosition }));
     
+    const filters = saved.settings?.filters;
     if (!round.length || round.some((record) => !record) || retryQueue.some((entry) => !entry.record)
-        || !FORMATS.has(saved.format) || !saved.settings?.filters) {
+        || !FORMATS.has(saved.format) || !Number.isInteger(saved.position) || saved.position < 0
+        || ![saved.marks, saved.wrongIds, saved.retriedIds].every(Array.isArray)
+        || !saved.wrongPicks || typeof saved.wrongPicks !== 'object' || !saved.recallCounts
+        || ![filters?.topics, filters?.years, filters?.stages].every(Array.isArray)) {
       discardRound();
       return;
     }
@@ -1478,15 +1489,15 @@ function restoreRound() {
       roundSettings: saved.settings,
       finished: saved.finished,
     });
+    if (state.finished) renderResults();
+    else if (state.answered && !advance()) completeRound();
+    else {
+      renderQuestion();
+      saveRound();
+    }
   } catch {
+    
     discardRound();
-    return;
-  }
-  if (state.finished) renderResults();
-  else if (state.answered && !advance()) completeRound();
-  else {
-    renderQuestion();
-    saveRound();
   }
 }
 
@@ -1517,6 +1528,8 @@ function importProgress(file) {
       if (!confirm(`Загрузить прогресс из файла? Текущий прогресс ${sections} на этом устройстве будет заменён.`)) return;
       state.progress = migrateProgress(QUESTION_BANK, parsed.progress);
       saveProgress();
+      
+      discardRound();
       if ('chengyu' in parsed) {
         cy.progress = parsed.chengyu;
         cySaveProgress();
@@ -1733,6 +1746,8 @@ function renderHome(modeCounts) {
 
   for (const id of ['firstStart', 'startButton', 'barStart']) $(id).disabled = available === 0;
   
+  $('resumeNew').hidden = available === 0;
+  
   for (const id of ['startButton', 'barStart']) {
     $(id).classList.toggle('ink-btn--primary', available !== 0);
     $(id).classList.toggle('ink-btn--secondary', available === 0);
@@ -1771,7 +1786,8 @@ function topicsLabel({ topics, dossiers = [] }, inSentence = false) {
   if (!list.length) return 'все темы';
   if (inSentence) {
     const kind = sets ? (list.length === 1 ? 'подборка' : 'подборки') : list.length === 1 ? 'раздел' : 'разделы';
-    return `${kind}: ${list.map((item) => (sets ? DOSSIER_SHORT[item] : TOPIC_SHORT[item]) || item).join(', ')}`;
+    const short = (item) => (sets ? DOSSIER_SHORT[item] || dossierTitle(item).toLocaleLowerCase('ru') : TOPIC_SHORT[item] || item);
+    return `${kind}: ${list.map(short).join(', ')}`;
   }
   return list.length === 1 ? (sets ? dossierTitle(list[0]) : list[0]) : chosenCount({ topics, dossiers });
 }
@@ -1855,7 +1871,7 @@ function renderFoldValues() {
 function updateStartBar() {
   let shown = false;
   if (state.view === 'setup' && onPhone()) {
-    const top = [$('firstStart'), $('startButton'), $('resumeButton')].find((button) => button.offsetParent);
+    const top = [$('firstStart'), $('startButton')].find((button) => button.offsetParent);
     const viewport = window.visualViewport;
     const visibleBottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
     const rect = top?.getBoundingClientRect();
@@ -1930,13 +1946,16 @@ function renderQuestion() {
 
   state.answered = false;
   const origin = recordOrigin(record);
-  const first = origin.isAddition ? null : matchingOccurrence(record, state.filters);
+  
+  
+  const first = origin.isAddition ? null
+    : matchingOccurrence(record, state.roundSettings?.filters ?? state.filters) ?? record.occurrences[0];
   $('progressLabel').textContent = `Вопрос ${state.position + 1} из ${state.round.length}`;
   renderProgress();
   $('topicLabel').textContent = record.topic;
   
-  $('sourceLabel').textContent = origin.isAddition ? '' : occurrenceLabel(first);
-  $('sourceLabel').hidden = origin.isAddition;
+  $('sourceLabel').textContent = first ? occurrenceLabel(first) : '';
+  $('sourceLabel').hidden = !first;
   $('originPill').textContent = 'Дополнение';
   $('originPill').hidden = !origin.isAddition;
   $('unverifiedPill').hidden = record.answer.state !== 'unverified';

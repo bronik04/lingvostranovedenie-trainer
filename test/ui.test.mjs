@@ -1259,8 +1259,16 @@ test('«назад» из раунда, итогов и базы ведёт на
   assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 1 из 5');
   assert.equal(await page.locator('#progressSteps li.ink-step--correct').count(), 0);
   await page.goBack();
+  await page.locator('#resumePanel').waitFor();
   assert.equal(await page.locator('#resumeProgress').textContent(), 'Вопрос 1 из 5, верно 0.');
   assert.equal(await page.locator('#resumeSaved').isVisible(), false, 'ответов в новом раунде ещё нет');
+  // загруженный из файла прогресс заменяет и незаконченный раунд: плашка обещала бы сохранённые ответы
+  page.once('dialog', (dialog) => dialog.accept());
+  await page.locator('#importProgressFile').setInputFiles({
+    name: 'progress.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify({ version: 1, progress: {} })),
+  });
+  await page.locator('#resumePanel').waitFor({ state: 'hidden' });
+  assert.equal(await page.locator('#firstHero').isVisible(), true);
   assert.deepEqual(page.errors, []);
 });
 
@@ -1407,6 +1415,14 @@ test('телефон: кнопка раунда внизу — только ко
   await page.locator('#barStart').click();
   await page.locator('#quizView').waitFor();
   assert.equal(await bar.isVisible(), false);
+  // при плашке «Раунд не закончен» полосы нет: её «Начать раунд» заменил бы незаконченный раунд
+  await page.goBack();
+  await page.locator('#resumePanel').waitFor();
+  await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
+  await page.evaluate(() => new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+  assert.equal(await page.evaluate(() => document.getElementById('startBar').classList.contains('is-shown')), false);
+  await page.locator('#resumeButton').click();
+  await page.locator('#quizView').waitFor();
   // на ноутбуке полосы нет
   await page.setViewportSize({ width: 1280, height: 860 });
   await page.locator('#leaveRound').click();
@@ -1431,6 +1447,9 @@ test('темы раунда: разделы или подборки — один
   // названия — из досье, два заменены
   assert.ok(names.includes('Четыре великих и другие наборы') && names.includes('Известные люди'), names.join(', '));
   assert.ok(!names.includes('Наборы') && !names.includes('Люди'));
+  // у каждой подборки банка свой знак и короткое имя для строки настроек: новое досье их требует
+  assert.deepEqual(await page.evaluate(() => [...new Set(QUESTION_BANK.map((r) => r.dossier).filter(Boolean))]
+    .filter((id) => !DOSSIER_MARKS[id] || !DOSSIER_SHORT[id])), []);
   const inSets = bank.filter((r) => r.dossier).length;
   assert.equal(await page.locator('#topicsHelp').textContent(),
     `Подборки собраны по темам досье: ${inSets} из ${bank.length} вопросов.`);
@@ -1497,8 +1516,49 @@ test('база: «Мои ответы», строка найденного, по
   await page.locator('#quizView').waitFor();
   assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 1 из 1');
   assert.equal(await page.evaluate(() => state.round[0].id), wrongId);
-  // «назад» — на главную: раунд из базы тоже ушёл с главной записи истории
+  // «назад» — на главную: база и раунд из неё заняли одну запись истории после главной
   assert.equal(hashOf(page), '#round');
+  await page.goBack();
+  await page.locator('#setupView').waitFor();
+  assert.equal(hashOf(page), '');
+  assert.deepEqual(page.errors, []);
+});
+
+test('раунд, собранный не по фильтрам главной, показывает подпись источника и переживает перезагрузку', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  // на главной — год, которого у части найденных вопросов нет
+  const year = await page.evaluate(() => QUESTION_BANK.flatMap((r) => r.occurrences.map((o) => o.year)).sort()[0]);
+  await page.locator('#topicsFold details.more > summary').click();
+  await page.locator('#yearFilter').selectOption(year);
+  await page.locator('#navDatabase').click();
+  await page.locator('#databaseSearch').fill('чай');
+  await page.locator('#trainFound').click();
+  await page.locator('#quizView').waitFor();
+  // каждый вопрос раунда рисуется: подпись — по фильтрам раунда, иначе первое появление вопроса
+  const labels = await page.evaluate(() => state.round.map((record, index) => {
+    state.position = index;
+    renderQuestion();
+    const label = document.getElementById('sourceLabel');
+    // у олимпиадного вопроса подпись есть всегда, у дополнения её нет
+    return record.origin === 'addition' ? label.hidden : !label.hidden && label.textContent.startsWith('ВсОШ ');
+  }));
+  assert.ok(labels.length > 1 && labels.every(Boolean));
+  assert.ok(await page.evaluate((y) => state.round.some((r) => r.origin !== 'addition'
+    && !r.occurrences.some((o) => o.year === y)), year), 'в раунде есть вопрос без выбранного года');
+  await page.evaluate(() => { state.position = 0; renderQuestion(); saveRound(); });
+  await page.reload();
+  await page.locator('#quizView').waitFor();
+  assert.match(await page.locator('#progressLabel').textContent(), /^Вопрос 1 из \d+$/);
+  // повреждённый снимок раунда не ломает главную
+  await page.evaluate(() => {
+    const saved = JSON.parse(sessionStorage.getItem('lingvo-trainer:round:v1'));
+    delete saved.wrongIds;
+    sessionStorage.setItem('lingvo-trainer:round:v1', JSON.stringify(saved));
+  });
+  await page.reload();
+  await page.locator('#setupView').waitFor();
+  assert.equal(await page.locator('#firstHero').isVisible(), true);
   assert.deepEqual(page.errors, []);
 });
 
