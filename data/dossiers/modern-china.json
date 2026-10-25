@@ -10,6 +10,9 @@
         "year": "zh",
         "about": "ru"
       },
+      "sides": [
+        "name"
+      ],
       "rows": [
         {
           "id": "zone-shenzhen",
@@ -130,7 +133,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "zone-shantou",
@@ -254,7 +260,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "zone-hainan",
@@ -310,13 +319,6 @@
               "title": "海南党史百件大事|海南建省办全国最大的经济特区 — 人民网",
               "url": "http://hi.people.com.cn/n2/2021/0420/c231190-34684842.html",
               "quote": "《决议》的内容为：划定海南岛为海南经济特区。",
-              "authority": "official",
-              "checkedAt": "2026-10-25"
-            },
-            {
-              "title": "海南党史百件大事|海南建省办全国最大的经济特区 — 人民网",
-              "url": "http://hi.people.com.cn/n2/2021/0420/c231190-34684842.html",
-              "quote": "国务院提议把海南行政区从广东省划出，成立海南省",
               "authority": "official",
               "checkedAt": "2026-10-25"
             }
@@ -474,6 +476,9 @@
         "short": "zh",
         "about": "ru"
       },
+      "sides": [
+        "name"
+      ],
       "rows": [
         {
           "id": "org-wto",
@@ -519,7 +524,10 @@
           "olympiad": [
             "2015-16-mun-9"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "org-bri",
@@ -553,7 +561,10 @@
             "2017-18-reg-1",
             "addition-b2-02"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "org-sco",
@@ -643,7 +654,7 @@
             {
               "title": "新闻背景：亚太经济合作组织 — 中国政府网",
               "url": "https://www.gov.cn/xinwen/2022-11/17/content_5727434.htm",
-              "quote": "亚太经济合作组织，简称“亚太经合组织”或“APEC”",
+              "quote": "亚太经济合作组织，简称“亚太经合组织”或“APEC”，是亚太地区层级最高、领域最广、最具影响力的经济合作机制。 20世纪80年代末，经济全球化、贸易投资自由化和区域集团化趋势渐成潮流。随着亚太地区经济在世界经济中的比重明显上升，时任澳大利亚总理霍克于1989年1月提议召开亚太地区部长级会议，讨论加强经济合作问题。 1989年11月，澳大利亚、美国、日本、韩国、新西兰、加拿大及当时的东盟六国，在澳大利亚首都堪培拉举行亚太经合组织首届部长级会议，标志着这一组织正式成立。1991年11月，中国正式加入亚太经合组织。",
               "authority": "official",
               "checkedAt": "2026-10-25"
             },
@@ -651,20 +662,6 @@
               "title": "亚太经济合作组织简介 — 中国民用航空局",
               "url": "http://www.caac.gov.cn/PHONE/XXGK_17/XXGK/DWGX/201601/t20160112_26499.html",
               "quote": "1991年11月，中国、中国台北和中国香港加入；1993年11月，墨西哥、巴布亚新几内亚加入；1994年智利加入；1998年11月，秘鲁、俄罗斯、越南加入。",
-              "authority": "official",
-              "checkedAt": "2026-10-25"
-            },
-            {
-              "title": "新闻背景：亚太经济合作组织 — 中国政府网",
-              "url": "https://www.gov.cn/xinwen/2022-11/17/content_5727434.htm",
-              "quote": "目前，亚太经合组织共有21个成员。",
-              "authority": "official",
-              "checkedAt": "2026-10-25"
-            },
-            {
-              "title": "新闻背景：亚太经济合作组织 — 中国政府网",
-              "url": "https://www.gov.cn/xinwen/2022-11/17/content_5727434.htm",
-              "quote": "1991年11月，中国正式加入亚太经合组织。",
               "authority": "official",
               "checkedAt": "2026-10-25"
             }
@@ -807,6 +804,10 @@
         "mascot": "zh",
         "about": "ru"
       },
+      "sides": [
+        "city",
+        "mascot"
+      ],
       "rows": [
         {
           "id": "evt-beijing2008",
@@ -872,7 +873,10 @@
             "2017-18-zak-5",
             "2023-24-shk-mosobl-2"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "city"
+          ]
         },
         {
           "id": "evt-beijing2022",
@@ -945,7 +949,10 @@
             "2021-22-zak-q38d33e",
             "2023-24-shk-mosobl-2"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "city"
+          ]
         },
         {
           "id": "evt-expo2010",
@@ -1001,7 +1008,10 @@
           "olympiad": [
             "2024-25-mun-kursk-1"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "mascot"
+          ]
         },
         {
           "id": "evt-g20-2016",
@@ -1111,6 +1121,10 @@
         "city": "zh",
         "about": "ru"
       },
+      "sides": [
+        "founder",
+        "name"
+      ],
       "rows": [
         {
           "id": "co-alibaba",
@@ -1158,7 +1172,10 @@
           "olympiad": [
             "2020-21-mun-kgd-8"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "co-tencent",
@@ -1206,7 +1223,11 @@
             "2021-22-mun-lenobl-3",
             "2025-26-mun-irk-3"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "founder",
+            "name"
+          ]
         },
         {
           "id": "co-huawei",
@@ -1258,7 +1279,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "founder"
+          ]
         },
         {
           "id": "co-xiaomi",
@@ -1310,7 +1334,11 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "founder",
+            "name"
+          ]
         },
         {
           "id": "co-jd",
@@ -1430,6 +1458,9 @@
         "country": "zh",
         "about": "ru"
       },
+      "sides": [
+        "name"
+      ],
       "rows": [
         {
           "id": "sp-pingpong",
@@ -1529,7 +1560,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "sp-taiji",
@@ -1567,7 +1601,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "sp-qigong",
@@ -1603,7 +1640,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "sp-judo",
@@ -1829,6 +1869,10 @@
         "year": "zh",
         "about": "ru"
       },
+      "sides": [
+        "name",
+        "sport"
+      ],
       "rows": [
         {
           "id": "ath-xuhaifeng",
@@ -1881,7 +1925,10 @@
           "olympiad": [
             "2017-18-zak-7"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "sport"
+          ]
         },
         {
           "id": "ath-yaoming",
@@ -1920,7 +1967,11 @@
           "olympiad": [
             "2021-22-mun-lenobl-9"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name",
+            "sport"
+          ]
         },
         {
           "id": "ath-liuxiang",
@@ -1964,7 +2015,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "ath-lina",
@@ -2008,7 +2062,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "ath-dengyaping",
@@ -2054,6 +2111,9 @@
         "name": "zh",
         "about": "ru"
       },
+      "sides": [
+        "name"
+      ],
       "rows": [
         {
           "id": "med-zhongyi",
@@ -2093,7 +2153,10 @@
           "olympiad": [
             "2024-25-shk-mosobl-16"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "med-sizhen",
@@ -2132,7 +2195,10 @@
           "olympiad": [
             "2018-19-zak-9"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "med-zhenjiu",
@@ -2171,7 +2237,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "med-zhongyao",
@@ -2201,7 +2270,10 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "med-tuina",
@@ -2304,6 +2376,9 @@
         "author": "zh",
         "about": "ru"
       },
+      "sides": [
+        "name"
+      ],
       "rows": [
         {
           "id": "bk-neijing",
@@ -2387,7 +2462,10 @@
           "olympiad": [
             "2025-26-reg-2"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "bk-shanghan",
