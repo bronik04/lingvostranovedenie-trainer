@@ -19,6 +19,7 @@ from editorial import apply_editorial, load_editorial
 from embeds import apply_embeds
 from explanations import apply_revisions, load_revisions
 from fact_groups import apply_fact_groups, load_fact_groups
+from fact_rows import apply_fact_rows
 from glosses import apply_glosses, load_glosses
 from merges import STAGE_ORDER, apply_merges, load_merges
 from retired import apply_retired, load_retired
@@ -421,6 +422,8 @@ def main() -> None:
     bank = apply_withheld(bank, withheld)
     # встраивание олимпиадных вопросов в досье — по итоговым id, до подписей glosses.json
     bank = apply_embeds(bank, loaded, glosses)
+    # строка досье у олимпиадных записей, которые к ней только привязаны (списки olympiad), — после встраиваний
+    bank = apply_fact_rows(bank, loaded)
     bank = apply_fact_groups(bank, fact_groups)
     # дополнения после правок проверяются здесь же, чтобы не записать банк,
     # который сборка потом отвергнет

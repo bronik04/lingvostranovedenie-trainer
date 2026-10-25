@@ -15,6 +15,7 @@ from functools import lru_cache
 from pathlib import Path
 
 from authored import evidence_errors, sentence_count
+from fact_rows import attached_rows
 from glosses import gloss_text_errors
 from normalize import CJK, CYRILLIC, completeness_errors, fragment_pairs, language_errors, normalize_text
 from strict_json import loads_unique
@@ -823,7 +824,8 @@ def gloss_leaks(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
     банка; русские названия ответа олимпиадной записи берутся из ячеек досье с тем же текстом.
 
     Исключения те же, что у `cross_leak_errors`: мостик, стороны одной строки, группа фактов,
-    одиночный иероглиф из другого досье. Подпись правильного ответа не ищется: раунд её не
+    одиночный иероглиф из другого досье. Строка олимпиадной записи, привязанной к досье, — из списков
+    `olympiad` (`scripts/fact_rows.py`): раунд не ставит её рядом с вопросами о той же строке. Подпись правильного ответа не ищется: раунд её не
     показывает (`optionGlosses`, src/quiz.mjs).
     """
     ru_of: dict[str, set[str]] = {}
@@ -863,6 +865,11 @@ def gloss_leaks(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
     for number, entry in enumerate(others):
         by_key.setdefault(_zh_key(entry[3][0]), set()).add(number)
 
+    # строки записей: у вопроса досье — строка ответа, у привязанной олимпиадной — строки её списков olympiad
+    rows_of = {record_id: set(rows) for record_id, rows in attached_rows(bank, loaded).items()}
+    for entry in others:
+        if entry[4] is not None:
+            rows_of.setdefault(entry[5], set()).add(entry[4][0])
     group_of = _group_owner(groups)
     found_in: dict[str, set[str]] = {}
     leaks: list[dict] = []
@@ -879,8 +886,8 @@ def gloss_leaks(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
             for number in sorted(candidates):
                 other_dossier, other, text, answer_names, other_place, other_record = others[number]
                 if (other_record == record_id or _same_group(group_of, record_id, other_record)
-                        or (place is not None and other_place is not None
-                            and (_bridged(place, other_place) or _same_row(place, other_place)))):
+                        or (place is not None and other_place is not None and _bridged(place, other_place))
+                        or rows_of.get(record_id, set()) & rows_of.get(other_record, set())):
                     continue
                 own = _zh_key(answer_names[0]) == key
                 single = other_dossier != dossier_id
@@ -901,8 +908,8 @@ def gloss_leaks(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
                                   'other': other, 'answer': _named(f'{option["zh"]} {gloss}', answer_names),
                                   'clues': sorted(clues),
                                   # подпись о той же строке, о которой спрашивает соседний вопрос
-                                  'row': place is not None and other_place is not None
-                                  and f'{place[0].rsplit("/", 1)[0]}/{option["id"]}' == other_place[0]})
+                                  'row': place is not None
+                                  and f'{place[0].rsplit("/", 1)[0]}/{option["id"]}' in rows_of.get(other_record, ())})
     return leaks
 
 

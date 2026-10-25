@@ -1005,6 +1005,23 @@ class GlossLeakTest(unittest.TestCase):
         self.assertEqual(leaked, ["space/space-q02: подпись варианта mis-change4 (2018 年) называет ответ вопроса "
                                   "myths/myths-q01 ['богиня Чанъэ'] и его зацепку ['2018 год']"])
 
+    def test_attached_olympiad_record_on_the_same_row_is_not_a_leak(self):
+        data = self.money('cny-100', 'flower', 'Мэйхуа — цветок купюры, на обороте которой Дом народных собраний')
+        record = olympiad(id='2023-24-shk-1', questionRu='Что изображено на обороте купюры 100 юаней с цветком 梅花?',
+                          options=[{'id': 'o1', 'zh': '人民大会堂'}, {'id': 'o2', 'zh': '布达拉宫'},
+                                   {'id': 'o3', 'zh': '泰山'}, {'id': 'o4', 'zh': '长江三峡'}])
+        self.assertEqual(gloss_leak_errors([record], [(data, [question()])]),
+                         ["money/money-q01: подпись варианта cny-100 (梅花) называет ответ вопроса 2023-24-shk-1 "
+                          "['Дом народных собраний'] и его зацепку ['梅花']"])
+        # привязанная к строке вопроса money-q01 запись — та же строка: раунд их не ставит рядом
+        row(data, 'cny-20')['olympiad'] = ['2023-24-shk-1']
+        self.assertEqual(gloss_leak_errors([record], [(data, [question()])]), [])
+        # привязанная к строке варианта — утечка «о той же строке»
+        row(data, 'cny-20')['olympiad'] = []
+        row(data, 'cny-100')['olympiad'] = ['2023-24-shk-1']
+        [leak] = gloss_leaks([record], [(data, [question()])])
+        self.assertTrue(leak['row'])
+
     def test_report_groups_findings_by_gloss(self):
         data = self.money('cny-100', 'flower', 'Мэйхуа — цветок купюры, на обороте которой Дом народных собраний')
         report = gloss_leak_report(gloss_leaks([], [(data, [question(), self.back()])]))

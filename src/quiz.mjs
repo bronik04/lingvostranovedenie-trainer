@@ -245,9 +245,11 @@ function shuffled(items, random) {
 // Из группы «один факт» и из вопросов об одной строке досье (разные стороны одного
 // факта) в раунд берётся одна запись. Это предпочтение, а не запрет: если других
 // вопросов не хватает до нужного размера, оставшиеся записи добираются в конец
-// раунда, подальше от своих двойников.
+// раунда, подальше от своих двойников. Олимпиадная запись, привязанная к нескольким
+// строкам досье, несёт их список (scripts/fact_rows.py).
 function factKeys(record) {
-  return [record.factGroup && `g:${record.factGroup}`, record.factRow && `r:${record.factRow}`].filter(Boolean);
+  const rows = [].concat(record.factRow ?? []).map((row) => `r:${row}`);
+  return [record.factGroup && `g:${record.factGroup}`, ...rows].filter(Boolean);
 }
 
 function onePerFact(ordered, size) {

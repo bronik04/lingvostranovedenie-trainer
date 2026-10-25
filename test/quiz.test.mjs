@@ -428,6 +428,15 @@ test('раунд берёт из вопросов об одной строке �
   }
 });
 
+test('запись, привязанная к нескольким строкам досье, не встаёт рядом с вопросом ни об одной из них', () => {
+  const bank = [record('a', { factRow: ['p/t/r1', 'p/t/r2'] }), record('b', { factRow: 'p/t/r1' }),
+    record('c', { factRow: 'p/t/r2' }), record('d'), record('e')];
+  for (const random of [() => 0, () => 0.5, () => 0.99]) {
+    const ids = buildRound(bank, NO_FILTERS, {}, 3, random).map((r) => r.id);
+    assert.ok(!(ids.includes('a') && (ids.includes('b') || ids.includes('c'))), ids.join());
+  }
+});
+
 test('в раунде никакие две записи не делят ни строку досье, ни группу фактов', () => {
   // a и b — одна строка, b и c — одна группа; a и c вместе допустимы: общего факта у них нет
   const bank = [record('a', { factRow: 'p/t/r1' }), record('b', { factRow: 'p/t/r1', factGroup: 'g' }),
