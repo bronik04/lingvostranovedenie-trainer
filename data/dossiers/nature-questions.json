@@ -1849,5 +1849,49 @@
       "verdict": "accept",
       "note": "Проверяющий (Opus, 2026-10-25) предложил правку набора, она внесена: В набор попадали каналы (大运河, 灵渠, Волго-Дон) — отбрасываются на вопрос «какая река»; where kind 河流, exclude Уссури и Туманной оставлен. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
     }
+  },
+  {
+    "id": "nature-q18",
+    "embeds": "2018-19-mun-vrn-6",
+    "status": "draft",
+    "fact": {
+      "table": "waters",
+      "row": "wat-huanghe",
+      "ask": "name",
+      "where": {
+        "country": "中国",
+        "kind": "河流"
+      }
+    }
+  },
+  {
+    "id": "nature-q22",
+    "embeds": "2023-24-mun-komi-4",
+    "status": "draft",
+    "fact": {
+      "table": "waters",
+      "row": "wat-huanghe",
+      "ask": "name",
+      "where": {
+        "country": "中国",
+        "kind": "河流"
+      }
+    }
+  },
+  {
+    "id": "nature-q23",
+    "embeds": "2025-26-shk-mosobl-4",
+    "status": "draft",
+    "fact": {
+      "table": "mountains",
+      "row": "mtn-huashan",
+      "ask": "province",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "exclude": [
+      "mtn-qinling"
+    ]
   }
 ]

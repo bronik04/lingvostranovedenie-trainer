@@ -1821,5 +1821,109 @@
       "verdict": "accept",
       "note": "Проверяющий (Opus, 2026-10-25) предложил правку набора, она внесена: Сиань в местных планах тоже называл себя финансовым центром запада — исключён вместе с Чэнду, чтобы не было второго верного ответа. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
     }
+  },
+  {
+    "id": "provinces-q117",
+    "embeds": "2021-22-mun-volog-1",
+    "status": "draft",
+    "fact": {
+      "table": "cities",
+      "row": "city-beijing",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    }
+  },
+  {
+    "id": "provinces-q118",
+    "embeds": "2018-19-mun-spb-9",
+    "status": "draft",
+    "fact": {
+      "table": "cities",
+      "row": "city-hangzhou",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    }
+  },
+  {
+    "id": "provinces-q119",
+    "embeds": "2020-21-mun-spb-7",
+    "status": "draft",
+    "fact": {
+      "table": "cities",
+      "row": "city-beijing",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    }
+  },
+  {
+    "id": "provinces-q120",
+    "embeds": "2021-22-mun-amur-3",
+    "status": "draft",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-hunan",
+      "ask": "full",
+      "where": {
+        "kind": "省"
+      }
+    }
+  },
+  {
+    "id": "provinces-q121",
+    "embeds": "2021-22-mun-mosobl-54",
+    "status": "draft",
+    "fact": {
+      "table": "cities",
+      "row": "city-suzhou",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    }
+  },
+  {
+    "id": "provinces-q122",
+    "embeds": "2022-23-mun-krsk-4",
+    "status": "draft",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-shaanxi",
+      "ask": "name",
+      "where": {
+        "kind": "省"
+      }
+    }
+  },
+  {
+    "id": "provinces-q123",
+    "embeds": "2025-26-shk-mosobl-2",
+    "status": "draft",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-gansu",
+      "ask": "full"
+    }
+  },
+  {
+    "id": "provinces-q124",
+    "embeds": "2023-24-mun-kem-9",
+    "status": "draft",
+    "fact": {
+      "table": "cities",
+      "row": "city-ru-blagoveshchensk",
+      "ask": "name",
+      "where": {
+        "country": "俄罗斯"
+      }
+    },
+    "exclude": [
+      "city-ru-vladivostok"
+    ]
   }
 ]

@@ -1728,5 +1728,31 @@
       "verdict": "accept",
       "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25. Новая строка писателя, в честь которого названа крупная премия (например, 冰心), войдёт в набор — при добавлении авторов дополнять exclude."
     }
+  },
+  {
+    "id": "literature-q102",
+    "embeds": "2022-23-shk-mosobl-4",
+    "status": "draft",
+    "fact": {
+      "table": "works",
+      "row": "lit-w-xiyouji",
+      "ask": "name",
+      "where": {
+        "set": "四大名著"
+      }
+    }
+  },
+  {
+    "id": "literature-q103",
+    "embeds": "2025-26-mun-mosobl-4",
+    "status": "draft",
+    "fact": {
+      "table": "works",
+      "row": "lit-w-sanguoyanyi",
+      "ask": "name",
+      "where": {
+        "set": "四大名著"
+      }
+    }
   }
 ]
