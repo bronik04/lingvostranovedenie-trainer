@@ -2,12 +2,10 @@
 
 Тема: [[modern-china]]
 
-Не хватает сторон: founder
-
 Связи:
 - [[provinces.city-hangzhou]]
 
 Вопросы:
-- нет
+- founder: 2020-21-mun-kgd-8 — Кто является основателем Alibaba Group?
 
 Олимпиада: 2020-21-mun-kgd-8

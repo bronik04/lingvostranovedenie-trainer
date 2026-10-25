@@ -2,12 +2,10 @@
 
 Тема: [[modern-china]]
 
-Не хватает сторон: mascot
-
 Связи:
 - [[provinces.city-beijing]]
 
 Вопросы:
-- нет
+- mascot: modern-china-q13 — Как назывались талисманы летних Олимпийских игр 2008 года?
 
 Олимпиада: 2019-20-shk-mosobl-54, 2015-16-reg-6, 2017-18-zak-5, 2023-24-shk-mosobl-2
