@@ -303,7 +303,7 @@
 | ppl-cn-hui | × | — | 1 | да |
 | ppl-cn-manchu | — | × | 1 | да |
 | ppl-cn-uyghur | × | — | 1 | да |
-| ppl-cn-miao | 1 | × | — | прогноз |
+| ppl-cn-miao | 1 | × | 1 | прогноз |
 | ppl-cn-tibetan | × | — | 1 | да |
 | ppl-cn-mongol | × | — | 1 | да |
 | ppl-cn-korean | 1 | × | — | прогноз |
@@ -382,7 +382,7 @@
 
 | строка | date | people | unesco | другие | олимпиада |
 |---|---|---|---|---|---|
-| hol-chunjie | × | × | 1 | 1 | да |
+| hol-chunjie | × | × | 1 | 2 | да |
 | hol-chuxi | × | × | × | — | прогноз |
 | hol-yuanxiao | 1 | × | × | 1 | да |
 | hol-xiaonian | 1 | × | × | — | прогноз |
@@ -607,9 +607,9 @@
 | lit-w-shijing | × | × | × | 2 | да |
 | lit-w-chuci | × | × | × | 1 | прогноз |
 | lit-w-shiji | × | × | × | — | прогноз |
-| lit-w-sanguoyanyi | 1 | × | 1 | 1 | да |
+| lit-w-sanguoyanyi | 1 | × | 1 | 2 | да |
 | lit-w-shuihuzhuan | × | × | — | 2 | да |
-| lit-w-xiyouji | × | × | — | 3 | да |
+| lit-w-xiyouji | × | × | — | 4 | да |
 | lit-w-hongloumeng | 1 | × | 1 | 1 | да |
 | lit-w-sunzibingfa | × | × | × | — | да |
 | lit-w-mulanci | × | × | × | 1 | прогноз |
@@ -806,7 +806,7 @@
 | per-sunzhongshan | 1 | — | 3 | да |
 | per-yuanshikai | × | — | — | прогноз |
 | per-jiangjieshi | × | — | — | прогноз |
-| per-maozedong | 1 | — | — | прогноз |
+| per-maozedong | 1 | — | 1 | прогноз |
 | per-zhouenlai | — | — | 1 | да |
 | per-dengxiaoping | 1 | — | 1 | да |
 | per-xijinping | × | — | 1 | да |
@@ -961,7 +961,7 @@
 | строка | mouth | nickname | feature | unesco | другие | олимпиада |
 |---|---|---|---|---|---|---|
 | wat-changjiang | 1 | 1 | — | × | 2 | да |
-| wat-huanghe | 1 | — | — | × | 1 | да |
+| wat-huanghe | 1 | — | — | × | 3 | да |
 | wat-zhujiang | — | × | — | × | — | да |
 | wat-heilongjiang | 1 | × | — | × | 1 | прогноз |
 | wat-huaihe | — | × | — | × | — | прогноз |
@@ -1022,7 +1022,7 @@
 | mtn-qinling | × | — | — | × | 1 | прогноз |
 | mtn-changbai | × | — | — | × | 1 | прогноз |
 | mtn-taishan | — | 1 | 1 | 1 | — | прогноз |
-| mtn-huashan | 1 | — | × | × | — | прогноз |
+| mtn-huashan | 1 | 1 | × | × | — | прогноз |
 | mtn-hengshan-hunan | — | — | × | × | 1 | прогноз |
 | mtn-hengshan-shanxi | 1 | 1 | × | × | — | прогноз |
 | mtn-songshan | — | 1 | × | × | — | прогноз |
@@ -1189,7 +1189,7 @@
 
 | строка | school | book | другие | олимпиада |
 |---|---|---|---|---|
-| th-kongzi | — | 1 | 2 | да |
+| th-kongzi | — | 1 | 3 | да |
 | th-laozi | — | 1 | 1 | да |
 | th-zhuangzi | 1 | × | — | прогноз |
 | th-mengzi | 1 | × | — | прогноз |
@@ -1280,8 +1280,8 @@
 | prov-guizhou | 1 | × | — | × | × | 1 | прогноз |
 | prov-yunnan | — | × | — | × | × | 3 | да |
 | prov-xizang | — | × | — | — | × | — | да |
-| prov-shaanxi | — | × | 1 | × | × | — | прогноз |
-| prov-gansu | — | × | 1 | × | × | — | прогноз |
+| prov-shaanxi | — | × | 1 | × | × | 1 | прогноз |
+| prov-gansu | — | × | 1 | × | × | 1 | прогноз |
 | prov-qinghai | — | × | — | × | — | 1 | да |
 | prov-ningxia | — | × | 1 | — | × | — | прогноз |
 | prov-xinjiang | — | × | 1 | — | × | 1 | да |
@@ -1307,12 +1307,12 @@
 | city-haerbin | — | 1 | × | — | прогноз |
 | city-wuhan | — | — | × | 1 | прогноз |
 | city-shanghai | — | × | × | 3 | да |
-| city-beijing | — | × | × | 1 | да |
+| city-beijing | — | × | × | 3 | да |
 | city-tianjin | — | × | × | — | да |
 | city-chongqing | — | — | × | 3 | да |
 | city-luoyang | — | — | × | — | прогноз |
 | city-jingdezhen | — | — | × | — | да |
-| city-suzhou | — | 1 | × | — | прогноз |
+| city-suzhou | — | 1 | × | 1 | прогноз |
 | city-guiyang | — | — | × | — | прогноз |
 | city-shenzhen | — | — | × | — | прогноз |
 | city-ru-moscow | × | × | 1 | 2 | да |
@@ -1328,7 +1328,7 @@
 | city-ru-irkutsk | × | × | — | 1 | да |
 | city-ru-yakutsk | × | × | × | 2 | прогноз |
 | city-ru-elista | × | × | × | 1 | прогноз |
-| city-ru-blagoveshchensk | × | × | 1 | — | да |
+| city-ru-blagoveshchensk | × | × | 1 | 1 | да |
 | city-ru-vladivostok | × | × | × | 1 | прогноз |
 
 #### Вопросы о строках вне ядра

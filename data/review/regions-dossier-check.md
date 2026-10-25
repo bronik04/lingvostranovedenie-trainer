@@ -41,6 +41,23 @@
 2021-22-mun-tat-57 (landmarks-q76), 2023-24-shk-mosobl-12 (literature-q101), 2025-26-mun-ryaz-3 (holidays-q52),
 2016-17-mun-spb-6 (ethnos-q27). Остальные предложения раздела ждут правок: группы фактов, правки ответа, строки досье.
 
+## Встраивания, порция 2 (2026-10-25)
+
+Внесены 15 встраиваний (подробности — запись в CHANGELOG.md «Встраивания региональных вопросов, порция 2»):
+2021-22-mun-volog-1 (provinces-q117), 2020-21-mun-spb-7 (q119), 2021-22-mun-mosobl-54 (q121),
+2022-23-mun-krsk-4 (q122), 2025-26-shk-mosobl-2 (q123), 2023-24-mun-kem-9 (q124), 2018-19-mun-vrn-6 (nature-q18),
+2023-24-mun-komi-4 (nature-q22), 2025-26-shk-mosobl-4 (nature-q23), 2022-23-shk-mosobl-4 (literature-q102),
+2025-26-mun-mosobl-4 (literature-q103), 2024-25-mun-mosobl-1 (modern-history-q04), 2024-25-mun-tula-2 (holidays-q53),
+2023-24-mun-krsk-4 (people-q29), 2019-20-mun-lip-4 (ethnos-q28). 2018-19-mun-spb-9 (G20) уже встроена досье «Современный Китай» (modern-china-q06).
+
+Ждёт решения автора — 2021-22-mun-amur-3 (родина Мао и Чжанцзяцзе → 湖南省), принят автором, но сборка нашла утечку:
+текст встроенного дополнения addition-b1-04 (nature-q10, Южный пик «в провинции Хунань») называет ответ, а записи в разных
+группах (province-names-river-lake и prc-founding-1949). Закрыть — слить группы или не встраивать. Черновик, чтобы вернуть:
+
+```json
+{"id": "provinces-q120", "embeds": "2021-22-mun-amur-3", "status": "draft", "fact": {"table": "provinces", "row": "prov-hunan", "ask": "full", "where": {"kind": "省"}}}
+```
+
 | Находка | Сколько |
 |---|---|
 | Дубли | 12 |
