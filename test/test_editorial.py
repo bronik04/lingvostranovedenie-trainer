@@ -94,6 +94,10 @@ class EditorialInBankTest(unittest.TestCase):
         retired_file = ROOT / 'data/review/retired.json'
         if retired_file.exists():
             absorbed |= set(json.loads(retired_file.read_text('utf-8')))
+        # отложенное задание (withheld.json) — тоже: правка ждёт в файле, пока автор не снимет сомнение
+        withheld_file = ROOT / 'data/review/withheld.json'
+        if withheld_file.exists():
+            absorbed |= set(json.loads(withheld_file.read_text('utf-8')))
         for record_id, edit in edits.items():
             if record_id in absorbed:
                 # запись влита в другую склейкой дублей: правка сделала своё дело до склейки
