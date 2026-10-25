@@ -13,8 +13,8 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from normalize import (completeness_errors, fragment_pairs, language_errors, normalize_text,
                        option_key, tidy)
 from authored import load_authored, validate_authored
-from dossiers import (cross_leak_errors, dossier_paths, dossier_records, dossier_report, load_dossier,
-                      load_removed, removed_id_errors, validate_links, write_dossier_reports)
+from dossiers import (cross_leak_errors, dossier_paths, dossier_records, dossier_report, gloss_leak_report,
+                      gloss_leaks, load_dossier, load_removed, removed_id_errors, validate_links, write_dossier_reports)
 from editorial import apply_editorial, load_editorial
 from embeds import apply_embeds
 from explanations import apply_revisions, load_revisions
@@ -447,6 +447,9 @@ def main() -> None:
     # отчёты досье — до банка: ручной отчёт под их именем останавливает сборку, ничего не записав
     write_dossier_reports({ROOT / f'data/review/dossier-{dossier["id"]}.md': dossier_report(dossier, questions, bank)
                            for dossier, questions in loaded})
+    # подписи, которые выдают ответы соседних вопросов, — отчётом: сборку не останавливают, решает автор
+    (ROOT / 'data/review/gloss-leaks.md').write_text(gloss_leak_report(gloss_leaks(bank, loaded, fact_groups)),
+                                                     encoding='utf-8')
     (ROOT / 'data/bank.json').write_text(
         json.dumps(bank, ensure_ascii=False, indent=2, sort_keys=True) + '\n', encoding='utf-8')
     _write_report(report, bank)

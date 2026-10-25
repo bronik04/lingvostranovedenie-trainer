@@ -10,11 +10,13 @@ from __future__ import annotations
 
 import json
 import re
+from collections import Counter
+from functools import lru_cache
 from pathlib import Path
 
 from authored import evidence_errors, sentence_count
 from glosses import gloss_text_errors
-from normalize import CYRILLIC, completeness_errors, fragment_pairs, language_errors, normalize_text
+from normalize import CJK, CYRILLIC, completeness_errors, fragment_pairs, language_errors, normalize_text
 from strict_json import loads_unique
 from taxonomy import TOPICS
 
@@ -382,6 +384,8 @@ def _stem(word: str) -> str:
 SURNAME = re.compile(r'[А-ЯЁ]\w*(?:ов|ев|ёв|ин|ын)$')
 
 
+# проверки утечек сверяют каждое название ответа с тысячами текстов и подписей
+@lru_cache(maxsize=None)
 def _name_pattern(name: str) -> re.Pattern:
     words = re.findall(r'\w+', name)
     if not words or not CYRILLIC.search(name):
@@ -664,19 +668,8 @@ def _same_group(group_of: dict[str, str], left: str, right: str) -> bool:
     return left in group_of and group_of[left] == group_of.get(right)
 
 
-def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
-                      groups: dict[str, list[str]] | None = None) -> list[str]:
-    """Утечки по всем вопросам всех досье сразу — по окончательным текстам.
-
-    Текст встроенного вопроса есть только в банке; текст своего вопроса берётся из банка, если
-    запись уже там (с правками editorial.json), иначе — из файла вопросов (черновик).
-    Решение автора 2026-10-15: мостик — не утечка (аппарат, связанный ссылкой с мифом, может
-    называть его в вопросе о себе), а между досье одиночные иероглифы (唐, 秦) не ищутся — они
-    стоят внутри других слов (唐僧, 秦始皇). Решение автора 2026-10-17: мостик — только название
-    связанной строки или связующая ячейка (`_bridged`); прочие взаимные подсказки связанных строк
-    закрывает группа фактов `groups` — по id записи (у встроенного вопроса — олимпиадной).
-    Решение автора 2026-10-21: стороны одной строки — не утечка (`_same_row`).
-    """
+def _leak_entries(bank: list[dict], loaded: list[tuple[dict, list[dict]]]) -> list[tuple[str, str, str, dict, tuple, str]]:
+    """Вопросы всех досье: досье, метка, окончательный текст, ячейка ответа, место ответа, id записи."""
     by_id = {record['id']: record for record in bank}
     entries: list[tuple[str, str, str, dict, tuple, str]] = []
     for dossier, questions in loaded:
@@ -693,6 +686,23 @@ def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
             entries.append((dossier['id'], f'{dossier["id"]}/{question["id"]}', text,
                             answer_cell(question, dossier)[1], _answer_place(question, dossier),
                             question.get('embeds', question['id'])))
+    return entries
+
+
+def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
+                      groups: dict[str, list[str]] | None = None) -> list[str]:
+    """Утечки по всем вопросам всех досье сразу — по окончательным текстам.
+
+    Текст встроенного вопроса есть только в банке; текст своего вопроса берётся из банка, если
+    запись уже там (с правками editorial.json), иначе — из файла вопросов (черновик).
+    Решение автора 2026-10-15: мостик — не утечка (аппарат, связанный ссылкой с мифом, может
+    называть его в вопросе о себе), а между досье одиночные иероглифы (唐, 秦) не ищутся — они
+    стоят внутри других слов (唐僧, 秦始皇). Решение автора 2026-10-17: мостик — только название
+    связанной строки или связующая ячейка (`_bridged`); прочие взаимные подсказки связанных строк
+    закрывает группа фактов `groups` — по id записи (у встроенного вопроса — олимпиадной).
+    Решение автора 2026-10-21: стороны одной строки — не утечка (`_same_row`).
+    """
+    entries = _leak_entries(bank, loaded)
     group_of = _group_owner(groups)
     errors: list[str] = []
     for dossier_id, label, text, _, place, record_id in entries:
@@ -706,6 +716,233 @@ def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
             if names:
                 errors.append(f'{label}: текст называет ответ вопроса {other}: {names}')
     return errors
+
+
+def _gloss_sources(bank: list[dict], loaded: list[tuple[dict, list[dict]]]) -> list[tuple]:
+    """Записи с подписями: досье (или None), метка, id записи, место ответа (или None), варианты, id ответа.
+
+    Свой вопрос досье — из банка, если запись уже там, иначе из файла (черновик). Встроенный — с
+    набором и подписями из таблицы, как его соберёт слой встраивания. Прочие записи банка — как
+    есть, с подписями glosses.json."""
+    by_id = {record['id']: record for record in bank}
+    sources: list[tuple] = []
+    covered: set[str] = set()
+    for dossier, questions in loaded:
+        for question in questions:
+            record_id = question.get('embeds', question['id'])
+            covered.add(record_id)
+            record = by_id.get(record_id)
+            if 'embeds' in question:
+                if record is None:
+                    continue
+                embedded, _ = embed_record(original_record(record), question, dossier)
+                options, answer_id = (embedded or record)['options'], record['answer']['optionId']
+            elif record is not None:
+                options, answer_id = record['options'], record['answer']['optionId']
+            else:
+                options, answer_id = question_options(question, dossier)
+            sources.append((dossier['id'], f'{dossier["id"]}/{question["id"]}', record_id,
+                            _answer_place(question, dossier), options, answer_id))
+    for record in bank:
+        if record['id'] not in covered and any(option.get('gloss') for option in record['options']):
+            sources.append((None, record['id'], record['id'], None, record['options'],
+                            record.get('answer', {}).get('optionId')))
+    return sources
+
+
+# кавычки и пробелы не различают названия: “本草纲目” в бланке — то же, что 本草纲目 в ячейке
+_ZH_NOISE = re.compile(r'[\s“”"«»《》「」『』]')
+# название, которое стоит в текстах вопросов чаще этого, зацепкой не считается: «Китай», «Россия»
+COMMON_SHARE, COMMON_MIN = 0.02, 20
+
+
+def _zh_key(text: str) -> str:
+    return _ZH_NOISE.sub('', text)
+
+
+@lru_cache(maxsize=None)
+def _pattern(name: str) -> re.Pattern:
+    # число — целиком: ответ «21» не стоит в «2021»
+    if name.isdigit():
+        return re.compile(rf'(?<!\d){name}(?!\d)')
+    # короткое русское слово — тоже целиком: основа «шэ» народа шэ находила бы «Шэньси», «бай» — «Байкал»
+    if CYRILLIC.search(name) and re.fullmatch(r'\w{1,4}', name.strip()):
+        return re.compile(rf'(?<!\w){re.escape(name.strip().lower())}(?!\w)')
+    return _name_pattern(name)
+
+
+def _named(text: str, names) -> list[str]:
+    lowered = text.lower()
+    return [name for name in names if name.strip() and _pattern(name).search(lowered)]
+
+
+class _NameIndex:
+    """Названия ячеек досье и ответов с указателем по первым буквам: каждое название сверяется только
+    с текстами, где есть слово на те же буквы, а не с каждым текстом банка."""
+
+    def __init__(self, names):
+        self.by_key: dict[str, set[str]] = {}
+        for name in names:
+            key = self._key(name)
+            if key:
+                self.by_key.setdefault(key, set()).add(name)
+
+    @staticmethod
+    def _key(name: str) -> str | None:
+        lowered = name.lower().strip()
+        if CJK.match(lowered):
+            # одиночный иероглиф (唐, 秦) стоит внутри других слов — не ищется, как и в текстах
+            return lowered[0] if len(lowered) > 1 else None
+        word = re.search(r'\w+', lowered)
+        return word.group()[:2] if word else None
+
+    def find(self, text: str) -> set[str]:
+        lowered = text.lower()
+        keys = set(CJK.findall(lowered)) | {word[:2] for word in re.findall(r'\w+', lowered)}
+        return {name for key in keys for name in self.by_key.get(key, ())
+                if _pattern(name).search(lowered)}
+
+
+def _gloss_head(gloss: str) -> str | None:
+    """Русское название варианта — начало подписи до тире («Хайбао — талисман…»)."""
+    head = re.split(r'\s[—–]\s', gloss, maxsplit=1)
+    name = head[0].strip(' «»"') if len(head) == 2 else ''
+    return name if name and len(name.split()) <= 4 else None
+
+
+def gloss_leaks(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
+                groups: dict[str, list[str]] | None = None) -> list[dict]:
+    """Подписи неверных вариантов, которые выдают ответ соседнего вопроса: ученик видит подпись после
+    ответа и встречает соседний вопрос уже с подсказкой (海宝 — «талисман выставки в Шанхае»).
+
+    Слово ответа в подписи само по себе не утечка: подписи называют провинции и города, которые где-то
+    служат ответом. Утечка — когда вариант с подписью называет и ответ соседнего вопроса, и то, о чём
+    тот спрашивает: сам вариант («Девятый вал» — картина Айвазовского ↔ «Кто написал «Девятый вал»?»)
+    или другое название из его текста (本草纲目 — «свод Ли Шичжэня» ↔ «труд Ли Шичжэня»). Хотя бы одно
+    из двух должна дать подпись: вариант без неё ученик видит и так. Соседний вопрос — любая запись
+    банка; русские названия ответа олимпиадной записи берутся из ячеек досье с тем же текстом.
+
+    Исключения те же, что у `cross_leak_errors`: мостик, стороны одной строки, группа фактов,
+    одиночный иероглиф из другого досье. Подпись правильного ответа не ищется: раунд её не
+    показывает (`optionGlosses`, src/quiz.mjs).
+    """
+    ru_of: dict[str, set[str]] = {}
+    vocabulary: set[str] = set()
+    for dossier, _ in loaded:
+        for table in dossier['tables'].values():
+            for row in table['rows']:
+                for cell in row.values():
+                    if isinstance(cell, dict) and isinstance(cell.get('zh'), str):
+                        ru_of.setdefault(_zh_key(cell['zh']), set()).update(cell.get('ru', []))
+                        vocabulary.update([_zh_key(cell['zh']), *cell.get('ru', [])])
+    # соседние вопросы: вопросы досье (с ячейкой ответа и местом), затем остальные записи банка
+    others = [(dossier_id, label, text, [answer['zh'].strip(), *answer.get('ru', [])], place, record_id)
+              for dossier_id, label, text, answer, place, record_id in _leak_entries(bank, loaded)]
+    covered = {entry[5] for entry in others}
+    for record in bank:
+        answer_id = record.get('answer', {}).get('optionId')
+        answer = next((option for option in record['options'] if option['id'] == answer_id), None)
+        if record['id'] in covered or answer is None:
+            continue
+        key = _zh_key(answer['zh'])
+        year = re.fullmatch(r'(\d{2,4})年', key)
+        names = [key, *sorted(ru_of.get(key, ())), *([year.group(1)] if year else [])]
+        others.append((None, record['id'], ' '.join([record['questionRu'], record.get('questionZh') or '']),
+                       names, None, record['id']))
+    for entry in others:
+        vocabulary.update(entry[3])
+    index = _NameIndex(vocabulary)
+    in_text = [index.find(entry[2]) for entry in others]
+    seen_in = Counter(name for names in in_text for name in names)
+    common = {name for name, count in seen_in.items() if count > max(COMMON_MIN, COMMON_SHARE * len(others))}
+    by_answer: dict[str, set[int]] = {}
+    for number, entry in enumerate(others):
+        for name in entry[3]:
+            by_answer.setdefault(name, set()).add(number)
+    by_key = {}
+    for number, entry in enumerate(others):
+        by_key.setdefault(_zh_key(entry[3][0]), set()).add(number)
+
+    group_of = _group_owner(groups)
+    found_in: dict[str, set[str]] = {}
+    leaks: list[dict] = []
+    for dossier_id, label, record_id, place, options, answer_id in _gloss_sources(bank, loaded):
+        for option in options:
+            gloss = option.get('gloss')
+            if option['id'] == answer_id or not gloss:
+                continue
+            if gloss not in found_in:
+                found_in[gloss] = index.find(gloss)
+            in_gloss = found_in[gloss]
+            key = _zh_key(option['zh'])
+            candidates = set(by_key.get(key, ())).union(*(by_answer.get(name, ()) for name in in_gloss))
+            for number in sorted(candidates):
+                other_dossier, other, text, answer_names, other_place, other_record = others[number]
+                if (other_record == record_id or _same_group(group_of, record_id, other_record)
+                        or (place is not None and other_place is not None
+                            and (_bridged(place, other_place) or _same_row(place, other_place)))):
+                    continue
+                own = _zh_key(answer_names[0]) == key
+                single = other_dossier != dossier_id
+                answer_set = {name for name in answer_names if not (single and len(_zh_key(name)) == 1)}
+                if not own and not answer_set & in_gloss:
+                    continue
+                clues = (in_gloss & in_text[number]) - answer_set - common
+                if not own:
+                    # сам вариант назван в тексте соседнего вопроса: он и есть то, о чём тот спрашивает
+                    names = [key if len(key) > 1 or not single else '', *sorted(ru_of.get(key, ())), _gloss_head(gloss) or '']
+                    clues |= set(_named(text, names)) - answer_set
+                # «Хэйлунцзян» внутри «провинция Хэйлунцзян» — одна зацепка
+                clues = {clue.lower(): clue for clue in sorted(clues)}
+                clues = {clue for lowered, clue in clues.items()
+                         if not any(lowered in longer and lowered != longer for longer in clues)}
+                if clues:
+                    leaks.append({'record': label, 'option': option['id'], 'zh': option['zh'].strip(), 'gloss': gloss,
+                                  'other': other, 'answer': _named(f'{option["zh"]} {gloss}', answer_names),
+                                  'clues': sorted(clues),
+                                  # подпись о той же строке, о которой спрашивает соседний вопрос
+                                  'row': place is not None and other_place is not None
+                                  and f'{place[0].rsplit("/", 1)[0]}/{option["id"]}' == other_place[0]})
+    return leaks
+
+
+GLOSS_LEAKS_MARK = '<!-- Отчёт пишет сборка (scripts/merge_bank.py): не править, перезапишется. -->'
+
+
+def gloss_leak_report(leaks: list[dict]) -> str:
+    """Отчёт `data/review/gloss-leaks.md`: по подписи — чьи ответы она выдаёт и в каких вопросах видна."""
+    by_gloss: dict[tuple[str, str], dict] = {}
+    for leak in leaks:
+        item = by_gloss.setdefault((leak['zh'], leak['gloss']), {'shown': set(), 'others': {}})
+        item['shown'].add(leak['record'])
+        item['others'][leak['other']] = leak
+    pairs = len({(leak['record'], leak['other']) for leak in leaks})
+    same_row = sum(1 for leak in leaks if leak['row'])
+    lines = [GLOSS_LEAKS_MARK, '', '# Утечки через подписи вариантов', '',
+             'Подпись неверного варианта ученик видит после ответа. Утечка — когда вариант с подписью называет',
+             'ответ соседнего вопроса и то, о чём тот спрашивает: сам вариант или другое название из его текста',
+             '(зацепку). Проверка — `gloss_leaks` в `scripts/dossiers.py`, исключения те же, что у текстов: группы',
+             'фактов, одна строка, мостик. Сборку не останавливает: закрыть утечку — правка подписи (с «да» автора)',
+             'или группа фактов.', '',
+             f'Подписей с утечкой: {len(by_gloss)}; выданных вопросов: {len({leak["other"] for leak in leaks})}; '
+             f'пар «вопрос с подписью → соседний вопрос»: {pairs}, из них {same_row} — подпись о той же строке досье, '
+             'о которой спрашивает соседний вопрос («та же строка»).']
+    for (zh, gloss), item in sorted(by_gloss.items(), key=lambda pair: (-len(pair[1]['others']), pair[0])):
+        lines += ['', f'## {zh} — {gloss}', '']
+        for other, leak in sorted(item['others'].items()):
+            row_note = ', та же строка' if leak['row'] else ''
+            lines.append(f'- выдаёт {other}: ответ {", ".join(leak["answer"])}; '
+                         f'зацепка {", ".join(leak["clues"])}{row_note}')
+        lines.append(f'- видна в {len(item["shown"])}: {", ".join(sorted(item["shown"]))}')
+    return '\n'.join(lines) + '\n'
+
+
+def gloss_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
+                      groups: dict[str, list[str]] | None = None) -> list[str]:
+    return [f'{leak["record"]}: подпись варианта {leak["option"]} ({leak["zh"]}) называет ответ вопроса '
+            f'{leak["other"]} {leak["answer"]} и его зацепку {leak["clues"]}'
+            for leak in gloss_leaks(bank, loaded, groups)]
+
 
 def _wording_errors(questions: list[dict], bank: list[dict]) -> list[str]:
     """Повторы и обрезки формулировок — между вопросами досье и с банком, как в сборке."""
@@ -924,13 +1161,25 @@ def main() -> None:
     root = Path(__file__).resolve().parents[1]
     bank_path = root / 'data/bank.json'
     bank = json.loads(bank_path.read_text('utf-8')) if bank_path.exists() else []
+    groups = load_fact_groups(root / 'data/review/fact-groups.json')
     errors, loaded = check_dossiers(root / 'data/dossiers', bank, load_glosses(root / 'data/review/glosses.json'),
-                                    load_fact_groups(root / 'data/review/fact-groups.json'), root / 'data/review',
+                                    groups, root / 'data/review',
                                     load_removed(root / 'data/review/removed.json'))
     for data, questions in loaded:
         accepted = sum(1 for question in questions if question['status'] == 'accepted')
         rows = sum(len(table['rows']) for table in data['tables'].values())
         print(f'{data["id"]}: строк {rows}, вопросов {len(questions)}, принято {accepted}')
+    # подписи сборку не останавливают (отчёт data/review/gloss-leaks.md); здесь — те, что касаются черновиков
+    olympiad_view = [record for record in bank if not (record.get('origin') == 'addition' and 'dossier' in record)]
+    leaks = gloss_leaks(olympiad_view, loaded, groups)
+    drafts = {f'{data["id"]}/{question["id"]}' for data, questions in loaded
+              for question in questions if question['status'] == 'draft'}
+    print(f'подписи: пар с утечкой {len({(leak["record"], leak["other"]) for leak in leaks})}, '
+          'список — data/review/gloss-leaks.md (пишет сборка)')
+    for leak in leaks:
+        if leak['record'] in drafts or leak['other'] in drafts:
+            print(f' - {leak["record"]}: подпись {leak["zh"]} выдаёт ответ {leak["other"]} {leak["answer"]}, '
+                  f'зацепка {leak["clues"]}')
     if errors:
         raise SystemExit('ошибки досье:\n - ' + '\n - '.join(errors))
     print('ошибок нет')
