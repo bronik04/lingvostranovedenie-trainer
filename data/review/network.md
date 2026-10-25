@@ -301,7 +301,7 @@
 | ppl-cn-han | × | × | 1 | да |
 | ppl-cn-zhuang | × | × | 1 | да |
 | ppl-cn-hui | × | — | 1 | да |
-| ppl-cn-manchu | — | × | — | да |
+| ppl-cn-manchu | — | × | 1 | да |
 | ppl-cn-uyghur | × | — | 1 | да |
 | ppl-cn-miao | 1 | × | — | прогноз |
 | ppl-cn-tibetan | × | — | 1 | да |
@@ -411,7 +411,7 @@
 | hol-ru-fuhuo | × | × | × | — | прогноз |
 | hol-ru-zuguo | — | × | × | 1 | прогноз |
 | hol-ru-yuhang | — | × | × | 1 | да |
-| hol-ru-shengli | 1 | × | × | — | прогноз |
+| hol-ru-shengli | 1 | × | × | 1 | прогноз |
 | hol-ru-eluosi | × | × | × | — | да |
 | hol-ru-tuanjie | 1 | × | × | 1 | прогноз |
 | hol-ru-zhishi | 1 | × | × | — | прогноз |
@@ -543,7 +543,7 @@
 | строка | unesco | другие | олимпиада |
 |---|---|---|---|
 | int-jingju | — | 1 | прогноз |
-| int-kunqu | 1 | — | прогноз |
+| int-kunqu | 1 | 1 | прогноз |
 | int-yueju-guangdong | — | — | прогноз |
 | int-guqin | — | — | прогноз |
 | int-shufa | — | — | прогноз |
@@ -644,6 +644,7 @@
 - literature-q35 — Какой поэт эпохи Сун оставил более девяти тысяч стихотворений?
 - literature-q37 — Какого драматурга эпохи Мин, умершего в один год с Шекспиром, называют «восточным Шекспиром» (东方的莎士比亚)?
 - 2024-25-mun-udm-8 — Назовите имя выдающегося деятеля культуры Китая 20 века, являющегося крупным общественным деятелем, мыслителем, автором сборника стихов «Богини».
+- 2023-24-shk-mosobl-12 — В честь какого китайского писателя учреждена одна из самых главных литературных премий в Китае?
 - 2020-21-reg-qce4bc2 — Какое из нижеперечисленных произведений не относится к четырем классическим китайским романам?
 
 ### История XIX–XX веков (`modern-history`)
@@ -859,10 +860,10 @@
 
 | строка | mouth | nickname | feature | unesco | другие | олимпиада |
 |---|---|---|---|---|---|---|
-| wat-changjiang | 1 | 1 | — | × | 1 | да |
+| wat-changjiang | 1 | 1 | — | × | 2 | да |
 | wat-huanghe | 1 | — | — | × | 1 | да |
 | wat-zhujiang | — | × | — | × | — | да |
-| wat-heilongjiang | 1 | × | — | × | — | прогноз |
+| wat-heilongjiang | 1 | × | — | × | 1 | прогноз |
 | wat-huaihe | — | × | — | × | — | прогноз |
 | wat-lancangjiang | — | — | — | × | 1 | прогноз |
 | wat-yarlung | — | × | — | × | — | прогноз |
@@ -923,7 +924,7 @@
 | mtn-taishan | — | 1 | 1 | 1 | — | прогноз |
 | mtn-huashan | 1 | — | × | × | — | прогноз |
 | mtn-hengshan-hunan | — | — | × | × | 1 | прогноз |
-| mtn-hengshan-shanxi | 1 | — | × | × | — | прогноз |
+| mtn-hengshan-shanxi | 1 | 1 | × | × | — | прогноз |
 | mtn-songshan | — | 1 | × | × | — | прогноз |
 | mtn-wutaishan | × | 1 | × | — | — | прогноз |
 | mtn-emeishan | × | — | × | — | 1 | да |
@@ -1166,9 +1167,9 @@
 | prov-shandong | 1 | × | — | × | × | 1 | да |
 | prov-jiangsu | — | × | — | × | × | — | да |
 | prov-zhejiang | — | × | 1 | × | × | — | да |
-| prov-anhui | — | × | — | × | × | 1 | да |
+| prov-anhui | — | × | 1 | × | × | 1 | да |
 | prov-fujian | 1 | × | — | × | × | — | прогноз |
-| prov-jiangxi | — | × | — | × | × | 1 | да |
+| prov-jiangxi | — | × | — | × | × | 2 | да |
 | prov-henan | 1 | × | — | × | 1 | — | да |
 | prov-hubei | 1 | × | 1 | × | 1 | 1 | да |
 | prov-hunan | 1 | × | — | × | × | — | прогноз |
@@ -1176,8 +1177,8 @@
 | prov-guangxi | 1 | × | — | — | × | — | прогноз |
 | prov-hainan | — | × | — | × | × | 1 | да |
 | prov-sichuan | — | 1 | — | × | × | 3 | да |
-| prov-guizhou | 1 | × | — | × | × | — | прогноз |
-| prov-yunnan | — | × | — | × | × | 2 | да |
+| prov-guizhou | 1 | × | — | × | × | 1 | прогноз |
+| prov-yunnan | — | × | — | × | × | 3 | да |
 | prov-xizang | — | × | — | — | × | — | да |
 | prov-shaanxi | — | × | 1 | × | × | — | прогноз |
 | prov-gansu | — | × | 1 | × | × | — | прогноз |
@@ -1194,7 +1195,7 @@
 
 | строка | region | nickname | river | другие | олимпиада |
 |---|---|---|---|---|---|
-| city-guangzhou | — | — | × | 1 | да |
+| city-guangzhou | — | — | × | 2 | да |
 | city-jinan | — | — | × | 1 | да |
 | city-lasa | — | — | × | 1 | да |
 | city-fuzhou | — | — | × | — | прогноз |
@@ -1205,16 +1206,16 @@
 | city-kunming | — | 1 | × | — | прогноз |
 | city-haerbin | — | 1 | × | — | прогноз |
 | city-wuhan | — | — | × | 1 | прогноз |
-| city-shanghai | — | × | × | 2 | да |
+| city-shanghai | — | × | × | 3 | да |
 | city-beijing | — | × | × | 1 | да |
 | city-tianjin | — | × | × | — | да |
-| city-chongqing | — | — | × | 2 | да |
+| city-chongqing | — | — | × | 3 | да |
 | city-luoyang | — | — | × | — | прогноз |
 | city-jingdezhen | — | — | × | — | да |
 | city-suzhou | — | 1 | × | — | прогноз |
 | city-guiyang | — | — | × | — | прогноз |
 | city-shenzhen | — | — | × | — | прогноз |
-| city-ru-moscow | × | × | 1 | 1 | да |
+| city-ru-moscow | × | × | 1 | 2 | да |
 | city-ru-saint-petersburg | × | 1 | 1 | 1 | да |
 | city-ru-nizhny-novgorod | × | × | — | 1 | да |
 | city-ru-kazan | 1 | 1 | — | — | прогноз |
@@ -1225,7 +1226,7 @@
 | city-ru-yekaterinburg | × | × | — | 1 | да |
 | city-ru-novosibirsk | × | × | — | 1 | да |
 | city-ru-irkutsk | × | × | — | 1 | да |
-| city-ru-yakutsk | × | × | × | 1 | прогноз |
+| city-ru-yakutsk | × | × | × | 2 | прогноз |
 | city-ru-elista | × | × | × | 1 | прогноз |
 | city-ru-blagoveshchensk | × | × | 1 | — | да |
 | city-ru-vladivostok | × | × | × | 1 | прогноз |
