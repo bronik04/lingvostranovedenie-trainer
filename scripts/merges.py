@@ -43,7 +43,8 @@ def _option_texts(record: dict) -> set[str]:
 
 
 def _spot(occurrence: dict) -> tuple:
-    return occurrence['year'], occurrence['stageCode'], occurrence['number']
+    return (occurrence['year'], occurrence['stageCode'], occurrence.get('regionCode') or occurrence.get('region'),
+            occurrence['number'])
 
 
 def _pooled_options(keep: dict, absorbed: list[dict]) -> list[dict]:
@@ -191,7 +192,7 @@ def apply_merges(bank: list[dict], merges: dict[str, dict]) -> list[dict]:
         absorbed = [by_id[absorbed_id] for absorbed_id in item['absorbs']]
         occurrences = sorted(
             [*record['occurrences'], *(o for other in absorbed for o in _reindexed(other, record))],
-            key=lambda o: (o['year'], STAGE_ORDER.get(o['stageCode'], 9),
+            key=lambda o: (o['year'], STAGE_ORDER.get(o['stageCode'], 9), o.get('regionCode') or '',
                            o['number'] if o['number'] is not None else 10_000))
         # источники влитых записей не теряются: лишняя ссылка укрепляет ответ
         evidence = list(record.get('evidence', []))

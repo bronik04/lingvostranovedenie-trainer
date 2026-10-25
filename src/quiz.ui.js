@@ -307,9 +307,10 @@ function stageLabel(code) {
   return STAGE_NAMES[code] || code;
 }
 
-/** «ВсОШ 2015/16 · региональный этап · задание 9» */
+/** «ВсОШ 2015/16 · региональный этап · задание 9», «ВсОШ 2025/26 · муниципальный этап, Санкт-Петербург · задание 3» */
 function occurrenceLabel(occurrence) {
   return `ВсОШ ${occurrence.year.replace('-', '/')} · ${stageLabel(occurrence.stageCode)} этап${
+    occurrence.region ? `, ${occurrence.region}` : ''}${
     occurrence.number ? ` · задание ${occurrence.number}` : ''}`;
 }
 
@@ -367,7 +368,7 @@ function renderSetup() {
   for (const label of $('topicControls').children) {
     const input = label.querySelector('input');
     input.checked = state.filters.topics.includes(input.value);
-    const { completed, total } = counts[input.value];
+    const { completed, total } = counts[input.value] ?? { completed: 0, total: 0 };
     label.querySelector('.topic-progress').textContent = `${completed}/${total}`;
   }
   $('yearFilter').value = state.filters.years[0] || '';
