@@ -117,8 +117,9 @@ class RegionsValidationTest(unittest.TestCase):
         bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
         spots = {(o['year'], o['stageCode'], o.get('regionCode'), o['number'])
                  for r in bank for o in r.get('occurrences', [])}
-        # склеенное или оставленное в пользу другой записи задание живёт в mergedIds, отложенное — в withheld.json
-        gone = {i for r in bank for i in r.get('mergedIds', [])}
+        # оставленное в пользу другой записи (retired.json) и отложенное (withheld.json) задание уходит из банка
+        # вместе с появлением; склейка (merges.json) появление переносит, так что склеенные проверяются как все
+        gone = set(json.loads((ROOT / 'data/review/retired.json').read_text('utf-8')))
         gone |= set(json.loads((ROOT / 'data/review/withheld.json').read_text('utf-8')))
         # задание с тем же набором вариантов сборка собрала в одну запись с более ранним; эта запись
         # оставлена в пользу вопроса досье (retired.json), и появление ушло вместе с ней
