@@ -1825,7 +1825,7 @@
   {
     "id": "provinces-q117",
     "embeds": "2021-22-mun-volog-1",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "cities",
       "row": "city-beijing",
@@ -1833,12 +1833,16 @@
       "where": {
         "country": "中国"
       }
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
     }
   },
   {
     "id": "provinces-q118",
     "embeds": "2018-19-mun-spb-9",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "cities",
       "row": "city-hangzhou",
@@ -1846,12 +1850,16 @@
       "where": {
         "country": "中国"
       }
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
     }
   },
   {
     "id": "provinces-q119",
     "embeds": "2020-21-mun-spb-7",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "cities",
       "row": "city-beijing",
@@ -1859,25 +1867,16 @@
       "where": {
         "country": "中国"
       }
-    }
-  },
-  {
-    "id": "provinces-q120",
-    "embeds": "2021-22-mun-amur-3",
-    "status": "draft",
-    "fact": {
-      "table": "provinces",
-      "row": "prov-hunan",
-      "ask": "full",
-      "where": {
-        "kind": "省"
-      }
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
     }
   },
   {
     "id": "provinces-q121",
     "embeds": "2021-22-mun-mosobl-54",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "cities",
       "row": "city-suzhou",
@@ -1885,12 +1884,16 @@
       "where": {
         "country": "中国"
       }
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
     }
   },
   {
     "id": "provinces-q122",
     "embeds": "2022-23-mun-krsk-4",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "provinces",
       "row": "prov-shaanxi",
@@ -1898,22 +1901,30 @@
       "where": {
         "kind": "省"
       }
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
     }
   },
   {
     "id": "provinces-q123",
     "embeds": "2025-26-shk-mosobl-2",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "provinces",
       "row": "prov-gansu",
       "ask": "full"
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
     }
   },
   {
     "id": "provinces-q124",
     "embeds": "2023-24-mun-kem-9",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "cities",
       "row": "city-ru-blagoveshchensk",
@@ -1924,6 +1935,10 @@
     },
     "exclude": [
       "city-ru-vladivostok"
-    ]
+    ],
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
+    }
   }
 ]

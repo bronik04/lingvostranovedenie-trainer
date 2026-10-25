@@ -939,7 +939,7 @@
   {
     "id": "ethnos-q28",
     "embeds": "2019-20-mun-lip-4",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "peoples",
       "row": "ppl-cn-miao",
@@ -947,6 +947,13 @@
       "where": {
         "country": "中国"
       }
+    },
+    "exclude": [
+      "ppl-cn-yi"
+    ],
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25) предложил правку набора, она внесена: у народа и (彝族) тоже «300 с лишним фасонов» (ihchina.cn/project_details/24841.html) — спорный второй ответ на «больше сотни видов нарядов», и исключён. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
     }
   }
 ]
