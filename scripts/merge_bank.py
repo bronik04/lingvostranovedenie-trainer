@@ -220,7 +220,10 @@ def merge(raw: list[dict], translations: dict[str, str],
         # схлопывания «2023-24, муниципальный» повторилось бы четыре раза подряд
         appearances: dict[tuple[str, str, str | None, int | None], dict] = {}
         for member in members:
-            spot = (member['year'], member['stageCode'], member.get('regionCode'), member['number'])
+            # регион без кода (подпись у выгрузки Цифриума) тоже разводит появления: иначе вариант
+            # Московской области слился бы с московским заданием того же года и номера
+            spot = (member['year'], member['stageCode'], member.get('regionCode') or member.get('region'),
+                    member['number'])
             entry = appearances.setdefault(spot, {
                 'year': member['year'], 'stage': member['stage'], 'stageCode': member['stageCode'],
                 'grades': member['grades'], 'number': member['number'],

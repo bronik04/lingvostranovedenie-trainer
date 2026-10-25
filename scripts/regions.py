@@ -63,8 +63,8 @@ def tasks_by_id(variants: list[dict]) -> dict[str, tuple[dict, dict]]:
     return {task_id(variant, task): (variant, task) for variant in variants for task in variant['tasks']}
 
 
-def validate(variants: list[dict], decisions: object, bank_ids: set[str] | None = None) -> list[str]:
-    """Ошибки решений. `bank_ids` — id записей банка и влитых в них: на них ссылается `in-bank`."""
+def validate(variants: list[dict], decisions: object, bank: list[dict] | None = None) -> list[str]:
+    """Ошибки решений; с собранным банком — ещё и ссылок `in-bank` и вливания в старые записи."""
     if not isinstance(decisions, dict):
         return ['решения должны быть словарём id задания → решение']
     errors: list[str] = []
@@ -75,8 +75,21 @@ def validate(variants: list[dict], decisions: object, bank_ids: set[str] | None 
         errors.append(f'{missing}: нет решения')
     for extra in sorted(set(decisions) - set(tasks)):
         errors.append(f'{extra}: решение есть, а задания в расшифровке нет')
+    bank_ids = None
+    if bank is not None:
+        bank_ids = {record['id'] for record in bank} | {i for record in bank for i in record.get('mergedIds', [])}
+        # задание `add` с тем же набором вариантов, что у старой записи, сборка молча вливает в неё,
+        # а id записи берётся по самому раннему появлению: старый id мог бы смениться (прогресс учеников)
+        for record in bank:
+            regional = [bool(o.get('regionCode')) for o in record.get('occurrences', [])]
+            if any(regional) and not all(regional):
+                errors.append(f"{record['id']}: региональное задание влилось в запись банка — "
+                              'это пересечение, решение должно быть in-bank')
     for key, item in decisions.items():
-        if key not in tasks or not isinstance(item, dict):
+        if key not in tasks:
+            continue
+        if not isinstance(item, dict):
+            errors.append(f'{key}: решение должно быть объектом')
             continue
         status = item.get('status')
         if status not in STATUSES:
@@ -85,8 +98,8 @@ def validate(variants: list[dict], decisions: object, bank_ids: set[str] | None 
         if status in WITH_REASON and not str(item.get('reason', '')).strip():
             errors.append(f'{key}: не указана причина')
         if status == 'repeat':
-            target = decisions.get(item.get('sameAs'), {})
-            if target.get('status') != 'add':
+            target = decisions.get(item.get('sameAs')) if isinstance(item.get('sameAs'), str) else None
+            if not isinstance(target, dict) or target.get('status') != 'add':
                 errors.append(f'{key}: повтор задания {item.get("sameAs")!r}, которое не идёт в банк')
         if status == 'in-bank' and bank_ids is not None and item.get('bankId') not in bank_ids:
             errors.append(f'{key}: в банке нет записи {item.get("bankId")!r}')
@@ -192,8 +205,7 @@ def main() -> None:
     args = parser.parse_args()
     variants, decisions = load()
     bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
-    bank_ids = {record['id'] for record in bank} | {i for record in bank for i in record.get('mergedIds', [])}
-    errors = validate(variants, decisions, bank_ids)
+    errors = validate(variants, decisions, bank)
     if args.sources:
         errors += check_sources(variants, args.sources)
     if errors:

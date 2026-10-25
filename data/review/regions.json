@@ -18,7 +18,8 @@
     "status": "add"
   },
   "2015-16-mun-spb-5": {
-    "status": "add"
+    "status": "in-bank",
+    "bankId": "2021-22-zak-q33f857"
   },
   "2015-16-mun-spb-6": {
     "status": "add"
@@ -31,7 +32,8 @@
     "reason": "ответ подсказан в вопросе — чайная названа по Лао Шэ, ответ 老舍茶馆"
   },
   "2015-16-mun-spb-9": {
-    "status": "add"
+    "status": "in-bank",
+    "bankId": "money-q25"
   },
   "2016-17-mun-spb-1": {
     "status": "doubtful",
@@ -59,7 +61,8 @@
     "status": "add"
   },
   "2016-17-mun-spb-7": {
-    "status": "add"
+    "status": "doubtful",
+    "reason": "Ошибочная посылка: «Лян Шаньбо и Чжу Интай» — скрипичный концерт 1959 года, а не древнее музыкальное произведение (ревью ветки)"
   },
   "2016-17-mun-spb-8": {
     "status": "in-bank",
@@ -124,7 +127,8 @@
     "bankId": "2015-16-reg-10"
   },
   "2018-19-mun-lenobl-46": {
-    "status": "add"
+    "status": "in-bank",
+    "bankId": "modern-history-q112"
   },
   "2018-19-mun-lenobl-47": {
     "status": "in-bank",
@@ -240,7 +244,8 @@
     "status": "add"
   },
   "2018-19-mun-vrn-2": {
-    "status": "add"
+    "status": "doubtful",
+    "reason": "Спорный ключ: Чунцин — самый населённый по всей территории города центрального подчинения, а по городскому населению первый Шанхай, он среди вариантов (ревью ветки)"
   },
   "2018-19-mun-vrn-3": {
     "status": "add"
@@ -268,7 +273,8 @@
     "bankId": "2024-25-reg-6"
   },
   "2019-20-mun-kgd-1": {
-    "status": "add"
+    "status": "doubtful",
+    "reason": "Устаревшая посылка: особых экономических зон с 2010 года больше пяти (Кашгар, Хоргос) (ревью ветки)"
   },
   "2019-20-mun-kgd-10": {
     "status": "add"
@@ -342,8 +348,8 @@
     "reason": "расплывчато: «самая известная река» — субъективная оценка"
   },
   "2019-20-mun-lenobl-2": {
-    "status": "repeat",
-    "sameAs": "2018-19-mun-lenobl-46"
+    "status": "in-bank",
+    "bankId": "modern-history-q112"
   },
   "2019-20-mun-lenobl-3": {
     "status": "in-bank",
@@ -371,7 +377,8 @@
     "status": "add"
   },
   "2019-20-mun-lip-5": {
-    "status": "add"
+    "status": "in-bank",
+    "bankId": "2025-26-mun-1"
   },
   "2019-20-mun-mosobl-46": {
     "status": "in-bank",
@@ -522,7 +529,8 @@
     "status": "add"
   },
   "2020-21-mun-lenobl-10": {
-    "status": "add"
+    "status": "doubtful",
+    "reason": "Два верных варианта: 喜 и 囍 оба означают «радость» на свадьбе; «счастье» буквально — 福 (ревью ветки)"
   },
   "2020-21-mun-lenobl-2": {
     "status": "add"
@@ -649,7 +657,8 @@
     "status": "add"
   },
   "2020-21-mun-spb-8": {
-    "status": "add"
+    "status": "in-bank",
+    "bankId": "nature-q35"
   },
   "2020-21-mun-spb-9": {
     "status": "in-bank",
@@ -708,7 +717,8 @@
     "bankId": "2025-26-mun-8"
   },
   "2020-21-mun-yak-3": {
-    "status": "add"
+    "status": "in-bank",
+    "bankId": "2023-24-mun-31"
   },
   "2020-21-mun-yak-4": {
     "status": "add"
@@ -722,8 +732,8 @@
     "bankId": "2019-20-mun-qcfa774"
   },
   "2020-21-mun-yak-7": {
-    "status": "repeat",
-    "sameAs": "2018-19-mun-lenobl-46"
+    "status": "in-bank",
+    "bankId": "modern-history-q112"
   },
   "2020-21-mun-yak-8": {
     "status": "doubtful",
@@ -893,7 +903,8 @@
     "status": "add"
   },
   "2021-22-mun-mosobl-57": {
-    "status": "add"
+    "status": "in-bank",
+    "bankId": "2019-20-reg-1"
   },
   "2021-22-mun-mosobl-58": {
     "status": "add"
@@ -931,8 +942,8 @@
     "bankId": "2020-21-reg-q4b4176"
   },
   "2021-22-mun-omsk-7": {
-    "status": "in-bank",
-    "bankId": "2015-16-mun-10"
+    "status": "doubtful",
+    "reason": "Ошибка ключа бланка: ключ 海南岛, крупнейший остров Китая — 台湾岛 (как в 2015-16-mun-10) (ревью ветки)"
   },
   "2021-22-mun-omsk-8": {
     "status": "add"
@@ -995,8 +1006,8 @@
     "reason": "三鲜豆皮 — местное блюдо Хубэя"
   },
   "2021-22-mun-tat-55": {
-    "status": "repeat",
-    "sameAs": "2015-16-mun-spb-5"
+    "status": "in-bank",
+    "bankId": "2021-22-zak-q33f857"
   },
   "2021-22-mun-tat-56": {
     "status": "doubtful",
@@ -1065,7 +1076,8 @@
     "bankId": "2025-26-mun-8"
   },
   "2021-22-mun-yak-3": {
-    "status": "add"
+    "status": "in-bank",
+    "bankId": "2023-24-mun-31"
   },
   "2021-22-mun-yak-4": {
     "status": "add"
@@ -1079,8 +1091,8 @@
     "bankId": "2019-20-mun-qcfa774"
   },
   "2021-22-mun-yak-7": {
-    "status": "repeat",
-    "sameAs": "2018-19-mun-lenobl-46"
+    "status": "in-bank",
+    "bankId": "modern-history-q112"
   },
   "2021-22-mun-yak-8": {
     "status": "doubtful",
@@ -1215,15 +1227,16 @@
     "status": "add"
   },
   "2022-23-mun-kam-2": {
-    "status": "repeat",
-    "sameAs": "2018-19-mun-lenobl-46"
+    "status": "in-bank",
+    "bankId": "modern-history-q112"
   },
   "2022-23-mun-kam-3": {
     "status": "repeat",
     "sameAs": "2021-22-mun-volog-1"
   },
   "2022-23-mun-kam-4": {
-    "status": "add"
+    "status": "repeat",
+    "sameAs": "2016-17-mun-spb-4"
   },
   "2022-23-mun-kam-5": {
     "status": "in-bank",
@@ -1344,8 +1357,8 @@
     "status": "add"
   },
   "2022-23-mun-mosobl-9": {
-    "status": "repeat",
-    "sameAs": "2018-19-mun-vrn-2"
+    "status": "doubtful",
+    "reason": "Спорный ключ: Чунцин — самый населённый по всей территории города центрального подчинения, а по городскому населению первый Шанхай, он среди вариантов (ревью ветки)"
   },
   "2022-23-mun-orel-1": {
     "status": "add"
@@ -1408,7 +1421,8 @@
     "reason": "спорный ключ: особых экономических зон пять, ключ — семь"
   },
   "2022-23-mun-spb-10": {
-    "status": "add"
+    "status": "doubtful",
+    "reason": "Спорный ключ: идейная линия III пленума — 解放思想、实事求是, а 改革开放 — курс, принятый на нём (ревью ветки)"
   },
   "2022-23-mun-spb-2": {
     "status": "add"
@@ -1527,7 +1541,8 @@
     "status": "add"
   },
   "2022-23-shk-mosobl-12": {
-    "status": "add"
+    "status": "in-bank",
+    "bankId": "2023-24-shk-38"
   },
   "2022-23-shk-mosobl-13": {
     "status": "narrow",
@@ -1601,8 +1616,8 @@
     "bankId": "2022-23-shk-q637921"
   },
   "2023-24-mun-bash-4": {
-    "status": "in-bank",
-    "bankId": "2022-23-shk-q92d9cf"
+    "status": "doubtful",
+    "reason": "Ошибка ключа бланка: ключ 黄帝, покровитель земледелия и медицины — 神农 (как в 2022-23-shk-q92d9cf) (ревью ветки)"
   },
   "2023-24-mun-bash-5": {
     "status": "ru-options",
@@ -1641,8 +1656,8 @@
     "reason": "варианты ответа по-русски"
   },
   "2023-24-mun-chel-4": {
-    "status": "repeat",
-    "sameAs": "2023-24-mun-omsk-8"
+    "status": "in-bank",
+    "bankId": "2015-16-shk-62"
   },
   "2023-24-mun-chel-5": {
     "status": "ru-options",
@@ -1718,8 +1733,8 @@
     "status": "add"
   },
   "2023-24-mun-kem-3": {
-    "status": "repeat",
-    "sameAs": "2018-19-mun-lenobl-48"
+    "status": "doubtful",
+    "reason": "Ошибка ключа бланка: ключ 北京烤鸭 на Праздник фонарей, традиционное блюдо — 汤圆 (ревью ветки)"
   },
   "2023-24-mun-kem-4": {
     "status": "in-bank",
@@ -1813,8 +1828,8 @@
     "bankId": "2016-17-reg-8"
   },
   "2023-24-mun-krsk-1": {
-    "status": "in-bank",
-    "bankId": "2015-16-mun-1"
+    "status": "doubtful",
+    "reason": "Ошибка ключа бланка: ключ 秦朝 на вопрос о первой династии, а первой считается 夏 (как в 2015-16-mun-1) (ревью ветки)"
   },
   "2023-24-mun-krsk-10": {
     "status": "in-bank",
@@ -1852,7 +1867,8 @@
     "status": "add"
   },
   "2023-24-mun-lenobl-10": {
-    "status": "add"
+    "status": "doubtful",
+    "reason": "Два верных варианта: 喜 и 囍 оба означают «радость» на свадьбе; «счастье» буквально — 福 (ревью ветки)"
   },
   "2023-24-mun-lenobl-2": {
     "status": "add"
@@ -1985,7 +2001,8 @@
     "reason": "варианты ответа по-русски"
   },
   "2023-24-mun-omsk-8": {
-    "status": "add"
+    "status": "in-bank",
+    "bankId": "2015-16-shk-62"
   },
   "2023-24-mun-omsk-9": {
     "status": "ru-options",
@@ -2170,8 +2187,8 @@
     "bankId": "2015-16-mun-5"
   },
   "2023-24-mun-udm-7": {
-    "status": "repeat",
-    "sameAs": "2019-20-shk-mosobl-54"
+    "status": "doubtful",
+    "reason": "Ошибка ключа бланка: ключ 2022, а летние Олимпийские игры в Пекине прошли в 2008 году (ревью ветки)"
   },
   "2023-24-mun-udm-8": {
     "status": "in-bank",
@@ -2367,7 +2384,8 @@
     "sameAs": "2018-19-mun-vrn-10"
   },
   "2024-25-mun-kem-10": {
-    "status": "add"
+    "status": "doubtful",
+    "reason": "Политически спорная посылка: статус Севастополя как города федерального значения международно не признан — решение за автором (ревью ветки)"
   },
   "2024-25-mun-kem-2": {
     "status": "doubtful",
@@ -2563,7 +2581,8 @@
     "status": "add"
   },
   "2024-25-mun-novg-1": {
-    "status": "add"
+    "status": "doubtful",
+    "reason": "Устаревшая посылка: особых экономических зон с 2010 года больше пяти (Кашгар, Хоргос) (ревью ветки)"
   },
   "2024-25-mun-novg-10": {
     "status": "add"
@@ -2822,8 +2841,8 @@
     "status": "add"
   },
   "2024-25-mun-tula-9": {
-    "status": "repeat",
-    "sameAs": "2023-24-mun-omsk-8"
+    "status": "in-bank",
+    "bankId": "2015-16-shk-62"
   },
   "2024-25-mun-udm-1": {
     "status": "add"
@@ -3168,8 +3187,8 @@
     "sameAs": "2020-21-mun-spb-7"
   },
   "2025-26-mun-komi-60": {
-    "status": "repeat",
-    "sameAs": "2018-19-mun-lenobl-46"
+    "status": "in-bank",
+    "bankId": "modern-history-q112"
   },
   "2025-26-mun-krym-1": {
     "status": "add"
@@ -3623,8 +3642,8 @@
     "reason": "варианты ответа по-русски"
   },
   "2025-26-mun-tula-3": {
-    "status": "repeat",
-    "sameAs": "2023-24-mun-omsk-8"
+    "status": "in-bank",
+    "bankId": "2015-16-shk-62"
   },
   "2025-26-mun-tula-4": {
     "status": "ru-options",
@@ -3651,8 +3670,8 @@
     "reason": "варианты ответа по-русски"
   },
   "2025-26-mun-vlad-1": {
-    "status": "repeat",
-    "sameAs": "2018-19-mun-lenobl-46"
+    "status": "in-bank",
+    "bankId": "modern-history-q112"
   },
   "2025-26-mun-vlad-10": {
     "status": "doubtful",

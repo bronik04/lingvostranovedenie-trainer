@@ -43,7 +43,8 @@ def _option_texts(record: dict) -> set[str]:
 
 
 def _spot(occurrence: dict) -> tuple:
-    return occurrence['year'], occurrence['stageCode'], occurrence.get('regionCode'), occurrence['number']
+    return (occurrence['year'], occurrence['stageCode'], occurrence.get('regionCode') or occurrence.get('region'),
+            occurrence['number'])
 
 
 def _pooled_options(keep: dict, absorbed: list[dict]) -> list[dict]:

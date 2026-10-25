@@ -48,6 +48,14 @@ class RegionalOccurrenceTest(unittest.TestCase):
         bank, _ = merge([moscow, self.regional('Санкт-Петербург', 'spb')], {})
         self.assertEqual(sorted(r['id'] for r in bank), ['2025-26-mun-3', '2025-26-mun-spb-3'])
 
+    def test_region_without_a_code_still_separates_appearances(self):
+        labelled = raw(year='2026-27', stage='муниципальный', stageCode='mun', number=3, region='Московская область')
+        moscow = raw(year='2026-27', stage='муниципальный', stageCode='mun', number=3,
+                     sourceFile='Лингвострановедение ВсОШ.docx')
+        bank, _ = merge([labelled, moscow], {})
+        self.assertEqual(len(bank[0]['occurrences']), 2)
+        self.assertEqual(bank[0]['id'], '2026-27-mun-3')
+
     def test_record_without_a_region_keeps_its_occurrence_unchanged(self):
         bank, _ = merge([raw()], {})
         self.assertNotIn('region', bank[0]['occurrences'][0])

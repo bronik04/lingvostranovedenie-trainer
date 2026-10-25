@@ -11,7 +11,7 @@ def variant(*tasks):
     return {'id': '2025-26-mun-spb', 'year': '2025-26', 'stage': 'муниципальный', 'stageCode': 'mun',
             'region': 'Санкт-Петербург', 'regionCode': 'spb', 'grades': '9-11',
             'origin': [{'file': '01-Варианты/2025-26/2-Муниципальный/Санкт-Петербург/9-11_Задания.pdf',
-                        'url': '', 'sha256': '0' * 64}],
+                        'sha256': '0' * 64}],
             'tasks': list(tasks)}
 
 
@@ -50,7 +50,7 @@ class RegionsValidationTest(unittest.TestCase):
 
     def test_in_bank_must_name_an_existing_record(self):
         errors = validate([variant(task())], {'2025-26-mun-spb-3': {'status': 'in-bank', 'bankId': 'нет'}},
-                          bank_ids={'2016-17-mun-1'})
+                          bank=[{'id': '2016-17-mun-1', 'occurrences': []}])
         self.assertIn("2025-26-mun-spb-3: в банке нет записи 'нет'", errors)
 
     def test_task_going_to_the_bank_needs_chinese_options(self):
@@ -62,11 +62,20 @@ class RegionsValidationTest(unittest.TestCase):
         errors = validate([variant(task())], {'2025-26-mun-spb-3': {'status': 'doubtful'}})
         self.assertIn('2025-26-mun-spb-3: не указана причина', errors)
 
+    def test_regional_task_must_not_join_an_old_record(self):
+        record = {'id': '2017-18-mun-6', 'occurrences': [{'year': '2017-18', 'stageCode': 'mun'},
+                                                         {'year': '2018-19', 'stageCode': 'mun', 'regionCode': 'tyum'}]}
+        errors = validate([variant(task())], {'2025-26-mun-spb-3': {'status': 'add'}}, bank=[record])
+        self.assertTrue(any('влилось в запись банка' in e for e in errors))
+
+    def test_decision_that_is_not_an_object_is_an_error(self):
+        errors = validate([variant(task())], {'2025-26-mun-spb-3': 'add'})
+        self.assertIn('2025-26-mun-spb-3: решение должно быть объектом', errors)
+
     def test_repository_decisions_are_valid(self):
         variants, decisions = load()
         bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
-        ids = {r['id'] for r in bank} | {i for r in bank for i in r.get('mergedIds', [])}
-        self.assertEqual(validate(variants, decisions, ids), [])
+        self.assertEqual(validate(variants, decisions, bank), [])
 
     def test_every_added_task_is_in_the_bank(self):
         variants, decisions = load()
