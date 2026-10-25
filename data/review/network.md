@@ -2,7 +2,7 @@
 
 Файл пишет сборка (`scripts/network.py`). Ядро размечается в таблицах досье: `core` у строки, `sides` у таблицы. Граф для Obsidian — папка `data/review/graph/`: сборка каждый раз стирает в ней все заметки `*.md` и пишет заново, поэтому свои заметки в эту папку не кладите.
 
-Досье: 18, с утверждённым каркасом: 18.
+Досье: 19, с утверждённым каркасом: 19.
 
 ## Олимпиада по годам
 
@@ -647,6 +647,106 @@
 - 2023-24-shk-mosobl-12 — В честь какого китайского писателя учреждена одна из самых главных литературных премий в Китае?
 - 2020-21-reg-qce4bc2 — Какое из нижеперечисленных произведений не относится к четырем классическим китайским романам?
 
+### Современный Китай (`modern-china`)
+
+#### Таблица `zones`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| zone-shenzhen | 1 | — | прогноз |
+| zone-zhuhai | × | — | прогноз |
+| zone-shantou | 1 | — | да |
+| zone-xiamen | × | — | прогноз |
+| zone-hainan | 1 | — | да |
+
+#### Таблица `world`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| org-wto | × | — | да |
+| org-bri | × | — | да |
+| org-sco | 1 | — | да |
+| org-brics | 1 | — | да |
+| org-apec | 1 | — | да |
+
+#### Таблица `events`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | city | mascot | другие | олимпиада |
+|---|---|---|---|---|
+| evt-beijing2008 | × | 1 | — | да |
+| evt-beijing2022 | × | 1 | — | да |
+| evt-expo2010 | × | × | — | да |
+
+#### Таблица `companies`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | founder | name | другие | олимпиада |
+|---|---|---|---|---|
+| co-alibaba | 1 | × | — | да |
+| co-tencent | × | × | — | да |
+| co-huawei | × | 1 | — | прогноз |
+| co-xiaomi | × | × | — | прогноз |
+
+#### Таблица `sports`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| sp-pingpong | — | 1 | прогноз |
+| sp-wushu | × | — | прогноз |
+| sp-taiji | × | — | прогноз |
+| sp-qigong | × | — | прогноз |
+
+#### Таблица `athletes`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | sport | другие | олимпиада |
+|---|---|---|---|---|
+| ath-xuhaifeng | 1 | × | — | да |
+| ath-yaoming | × | × | — | да |
+| ath-liuxiang | × | 1 | — | прогноз |
+| ath-lina | × | 1 | — | прогноз |
+
+#### Таблица `medicine`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| med-zhongyi | × | — | да |
+| med-sizhen | × | — | да |
+| med-zhenjiu | × | — | прогноз |
+| med-zhongyao | × | — | прогноз |
+| med-tuina | 1 | — | прогноз |
+
+#### Таблица `books`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| bk-neijing | 1 | — | прогноз |
+| bk-bencao | × | — | да |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- 2023-24-shk-32 — Какой из нижеперечисленных городов не является специальной экономической зоной Китая?
+- 2018-19-mun-spb-9 — В каком городе Китая проходил саммит «Большой двадцатки» (G20)?
+- modern-china-q20 — Как называется лечение банками, которые присасываются к коже, потому что из них удалён воздух?
+
+Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 1.
+
 ### История XIX–XX веков (`modern-history`)
 
 #### Таблица `events`
@@ -1201,7 +1301,7 @@
 | city-fuzhou | — | — | × | — | прогноз |
 | city-nanjing | — | × | × | 1 | да |
 | city-chengdu | — | — | × | 1 | да |
-| city-hangzhou | — | × | × | 2 | да |
+| city-hangzhou | — | × | × | 1 | да |
 | city-xian | — | × | × | — | прогноз |
 | city-kunming | — | 1 | × | — | прогноз |
 | city-haerbin | — | 1 | × | — | прогноз |
@@ -1489,7 +1589,6 @@
 - landmarks/intangible/int-jingju
 - landmarks/intangible/int-kunqu
 - landmarks/intangible/int-shufa
-- landmarks/intangible/int-taijiquan
 - landmarks/intangible/int-yueju-guangdong
 - landmarks/intangible/int-zhenjiu
 - landmarks/intangible/int-zhicha
@@ -1528,6 +1627,20 @@
 - literature/authors/lit-a-taoyuanming
 - literature/works/lit-w-mulanci
 - literature/works/lit-w-shijing
+- modern-china/athletes/ath-lina
+- modern-china/athletes/ath-liuxiang
+- modern-china/athletes/ath-xuhaifeng
+- modern-china/books/bk-neijing
+- modern-china/medicine/med-sizhen
+- modern-china/medicine/med-tuina
+- modern-china/medicine/med-zhongyao
+- modern-china/medicine/med-zhongyi
+- modern-china/sports/sp-wushu
+- modern-china/world/org-apec
+- modern-china/world/org-bri
+- modern-china/world/org-brics
+- modern-china/world/org-sco
+- modern-china/world/org-wto
 - modern-history/events/ev-aomen
 - modern-history/events/ev-changzheng
 - modern-history/events/ev-jiuyiba
@@ -1585,7 +1698,6 @@
 - myths/figures/fig-pangu
 - myths/figures/fig-ru-snegurochka
 - myths/figures/fig-ru-zhar-ptitsa
-- myths/figures/fig-shennong
 - myths/figures/fig-zhinv
 - myths/stories/story-baishezhuan
 - myths/stories/story-dayu-zhishui
@@ -1631,7 +1743,6 @@
 - people/composers/cmp-ru-rimsky-korsakov
 - people/composers/cmp-ru-tchaikovsky
 - people/scholars/sci-huatuo
-- people/scholars/sci-lishizhen
 - people/scholars/sci-qianxuesen
 - people/scholars/sci-ru-lobachevsky
 - people/scholars/sci-ru-lomonosov
@@ -1740,6 +1851,9 @@
 - literature/authors/lit-a-ru-bunin → literature/works/lit-w-ru-arsenyev
 - literature/authors/lit-a-ru-lermontov → literature/works/lit-w-ru-demon
 - literature/works/lit-w-ru-gulag → literature/authors/lit-a-ru-solzhenitsyn
+- modern-china/athletes/ath-yaoming → space/people/ppl-yaoming
+- modern-china/medicine/med-zhenjiu → sets/inventions/inv-zhenjiu
+- modern-china/zones/zone-xiamen → provinces/cities/city-xiamen
 - modern-history/events/ev-xinwenhua → modern-history/figures/per-chenduxiu
 - modern-history/figures/per-sunzhongshan → holidays/figures/fig-sunzhongshan
 - modern-history/figures/per-zhouenlai → literature/authors/lit-a-zhouenlai

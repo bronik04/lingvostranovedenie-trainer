@@ -291,6 +291,53 @@ test('поиск базы проверяет вопрос, тему, вариа�
   assert.equal(quiz.matchesDatabaseSearch(item, ''), true);
 });
 
+test('поиск базы — с начала слова: «чай» находит «чая» и «чаем», но не «величайший» и «случай»', () => {
+  const item = (questionRu) => record('a', { questionRu, explanation: { ru: '' } });
+  for (const text of ['Какой чай не является китайским?', 'К какому виду чая относится пуэр?',
+    'Каким чаем славится Чжэцзян?', 'Кто открыл первый чайный дом?']) {
+    assert.equal(quiz.matchesDatabaseSearch(item(text), 'чай'), true, text);
+  }
+  for (const text of ['Кто величайший поэт Тан?', 'В каком случае дарят часы?', 'Сколько длится час?']) {
+    assert.equal(quiz.matchesDatabaseSearch(item(text), 'чай'), false, text);
+  }
+  // окончание запроса тоже отбрасывается, «ё» — как «е»
+  assert.equal(quiz.matchesDatabaseSearch(item('Какой чай не является китайским?'), 'чаем'), true);
+  assert.equal(quiz.matchesDatabaseSearch(item('Чем знаменит Пекин?'), 'пекине'), true);
+  assert.equal(quiz.matchesDatabaseSearch(item('Как зовут ёжика?'), 'ежик'), true);
+  // несколько слов — каждое где-то в тексте
+  assert.equal(quiz.matchesDatabaseSearch(item('Каким чаем славится Чжэцзян?'), 'чжэцзян чай'), true);
+  assert.equal(quiz.matchesDatabaseSearch(item('Каким чаем славится Чжэцзян?'), 'чай фуцзянь'), false);
+  // имена и понятия в русской записи не теряют гласную: «мао» не находит «мая», «дао» — «дай»
+  assert.equal(quiz.matchesDatabaseSearch(item('Что произошло 4 мая 1919 года?'), 'мао'), false);
+  assert.equal(quiz.matchesDatabaseSearch(item('Кто такой Мао Цзэдун?'), 'мао'), true);
+  assert.equal(quiz.matchesDatabaseSearch(item('Дай ответ'), 'дао'), false);
+  // китайский — куском текста
+  assert.equal(quiz.matchesDatabaseSearch(record('a', { options: [{ id: 'o1', zh: '龙井茶' }] }), '井茶'), true);
+});
+
+test('найденное слово подсвечивается целиком, китайское — куском', () => {
+  assert.deepEqual(quiz.searchSegments('Величайший случай: каким чаем славится?', 'чай'), [
+    { text: 'Величайший случай: каким ' }, { text: 'чаем', mark: true }, { text: ' славится?' },
+  ]);
+  assert.deepEqual(quiz.searchSegments('红茶 · 龙井茶', '龙井'), [
+    { text: '红茶 · ' }, { text: '龙井', mark: true }, { text: '茶' },
+  ]);
+  assert.deepEqual(quiz.searchSegments('Без поиска', ''), [{ text: 'Без поиска' }]);
+});
+
+test('русское название верного ответа — из подписи ячейки досье, до первого тире', () => {
+  assert.equal(quiz.answerName(record('a', { answer: { optionId: 'o2', state: 'verified', gloss: 'Пещеры Могао' } })), 'Пещеры Могао');
+  assert.equal(quiz.answerName(record('a', { answer: { optionId: 'o2', state: 'verified', gloss: 'Чжан Имоу — кинорежиссёр' } })),
+    'Чжан Имоу');
+  assert.equal(quiz.answerName(record('a')), '');
+  // запятая перед тире в подписи ячейки к названию не прилипает
+  assert.equal(quiz.answerName(record('a', { answer: { optionId: 'o2', state: 'verified',
+    gloss: 'Солёно-свежий вкус, подчёркивающий вкус продуктов, — шаньдунская кухня' } })),
+  'Солёно-свежий вкус, подчёркивающий вкус продуктов');
+  // поиск находит вопрос и по названию ответа
+  assert.equal(quiz.matchesDatabaseSearch(record('a', { answer: { optionId: 'o2', state: 'verified', gloss: 'Пещеры Могао' } }), 'могао'), true);
+});
+
 test('поиск базы находит и подписи к неверным вариантам', () => {
   const item = record('a', { options: [
     { id: 'o1', zh: '广州', gloss: 'Гуанчжоу, центр провинции Гуандун' },
@@ -308,19 +355,51 @@ test('настройки отбрасывают повреждённые и ус
     size: 20,
   }, bank), {
     filters: {
-      topics: [], years: ['2015-16'], stages: ['shk'], mode: 'due', onlyVerified: true, origin: 'all',
+      topics: [], dossiers: [], years: ['2015-16'], stages: ['shk'], mode: 'due', onlyVerified: true, origin: 'all',
     },
     size: 20,
     format: 'choice',
+    topicsBy: 'sections',
   });
   assert.deepEqual(quiz.normaliseStudySettings({
     filters: { topics: 'не массив', years: [], stages: [], mode: 'не режим', onlyVerified: 'да', origin: 'всё' },
     size: 99,
   }, bank), {
-    filters: { topics: [], years: [], stages: [], mode: 'all', onlyVerified: false, origin: 'all' },
+    filters: { topics: [], dossiers: [], years: [], stages: [], mode: 'all', onlyVerified: false, origin: 'all' },
     size: 10,
     format: 'choice',
+    topicsBy: 'sections',
   });
+});
+
+test('подборки: досье банка, сохраняются вместе с настройками, способ выбора тем один', () => {
+  const bank = [
+    record('a', { dossier: 'cuisine' }),
+    record('b', { dossier: 'holidays', topic: 'Культура, традиции и праздники' }),
+    record('c'),
+  ];
+  const settings = (value) => quiz.normaliseStudySettings({ filters: { ...NO_FILTERS, ...value.filters }, size: 10, ...value }, bank);
+  const bySets = settings({ topicsBy: 'dossiers', filters: { dossiers: ['cuisine', 'нет такого'], topics: ['География и административное устройство'] } });
+  assert.equal(bySets.topicsBy, 'dossiers');
+  assert.deepEqual(bySets.filters.dossiers, ['cuisine']);
+  // разделы и подборки сразу не отмечаются: остаётся выбор того способа, который включён
+  assert.deepEqual(bySets.filters.topics, []);
+  const bySections = settings({ filters: { dossiers: ['cuisine'], topics: ['География и административное устройство'] } });
+  assert.equal(bySections.topicsBy, 'sections');
+  assert.deepEqual(bySections.filters.dossiers, []);
+  assert.equal(settings({ topicsBy: 'всё' }).topicsBy, 'sections');
+  const ids = (filters) => quiz.eligible(bank, { ...NO_FILTERS, ...filters }, {}).map((item) => item.id);
+  assert.deepEqual(ids({ dossiers: ['cuisine', 'holidays'] }), ['a', 'b']);
+  // старые настройки без поля — все вопросы
+  assert.deepEqual(ids({ dossiers: undefined }), ['a', 'b', 'c']);
+  assert.deepEqual(quiz.progressByDossier(bank, { a: { completed: true } }),
+    { cuisine: { completed: 1, total: 1 }, holidays: { completed: 0, total: 1 } });
+});
+
+test('раунд из найденного в базе: только эти вопросы', () => {
+  const bank = [record('a'), record('b'), record('c')];
+  assert.deepEqual(quiz.eligible(bank, { ...NO_FILTERS, ids: ['c', 'a'] }, {}).map((item) => item.id), ['a', 'c']);
+  assert.deepEqual(quiz.eligible(bank, { ...NO_FILTERS, ids: [] }, {}), []);
 });
 
 test('ошибка возвращается после пяти следующих карточек', () => {
@@ -359,14 +438,14 @@ test('склонение по числу', () => {
   }
 });
 
-test('подвал считает вопросы, дополнения и годы по банку', () => {
+test('подвал считает вопросы, дополнения, сезоны и темы по банку', () => {
   const bank = [
-    record('a', { occurrences: [{ year: '2015-16', stageCode: 'shk' }] }),
-    record('b', { occurrences: [{ year: '2025-26', stageCode: 'reg' }] }),
+    record('a', { occurrences: [{ year: '2015-16', stageCode: 'shk' }, { year: '2016-17', stageCode: 'mun' }] }),
+    record('b', { topic: 'История и государство', occurrences: [{ year: '2025-26', stageCode: 'reg' }] }),
     record('c', { origin: 'addition', occurrences: [] }),
   ];
   assert.equal(quiz.bankSummary(bank),
-    'В базе 2 вопроса из материалов ВсОШ 2015/16 — 2025/26 и 1 проверенное дополнение к ним. '
+    'В базе 3 вопроса: 2 из заданий ВсОШ за 3 сезона (2015/16—2025/26) и 1 проверенное дополнение к ним, 2 темы. '
     + 'У каждого ответа есть пояснение и ссылка на источник.');
 });
 
@@ -374,7 +453,7 @@ test('подвал не говорит о непроверенных ответ�
   const verified = [record('a'), record('b')];
   assert.doesNotMatch(quiz.bankSummary(verified), /остальные|перепроверки/);
   const mixed = [record('a'), record('b', { answer: { optionId: 'o2', state: 'unverified' } })];
-  assert.match(quiz.bankSummary(mixed), /^В базе 2 вопроса из материалов ВсОШ 2015\/16\. У 1 ответа есть пояснение/);
+  assert.match(quiz.bankSummary(mixed), /^В базе 2 вопроса из заданий ВсОШ за 1 сезон \(2015\/16\), 1 тема\. У 1 ответа есть пояснение/);
   assert.match(quiz.bankSummary(mixed), /остальные ответы взяты из официального ключа/);
 });
 
@@ -425,6 +504,15 @@ test('раунд берёт из вопросов об одной строке �
   for (const random of [() => 0, () => 0.5, () => 0.99]) {
     const round = buildRound(bank, NO_FILTERS, {}, 3, random);
     assert.equal(round.filter((r) => r.factRow === 'p/t/r1').length, 1, round.map((r) => r.id).join());
+  }
+});
+
+test('запись, привязанная к нескольким строкам досье, не встаёт рядом с вопросом ни об одной из них', () => {
+  const bank = [record('a', { factRow: ['p/t/r1', 'p/t/r2'] }), record('b', { factRow: 'p/t/r1' }),
+    record('c', { factRow: 'p/t/r2' }), record('d'), record('e')];
+  for (const random of [() => 0, () => 0.5, () => 0.99]) {
+    const ids = buildRound(bank, NO_FILTERS, {}, 3, random).map((r) => r.id);
+    assert.ok(!(ids.includes('a') && (ids.includes('b') || ids.includes('c'))), ids.join());
   }
 });
 

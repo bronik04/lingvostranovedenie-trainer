@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from dossiers import REPORT_MARK, _mentions, fact_place, check_dossiers, load_removed, removed_id_errors, cross_leak_errors, dossier_paths, embed_record, original_record, dossier_records, dossier_report, is_build_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions, write_dossier_reports
+from dossiers import REPORT_MARK, _mentions, answer_cell, fact_place, check_dossiers, load_removed, removed_id_errors, cross_leak_errors, GLOSS_LEAKS_MARK, gloss_leak_errors, gloss_leak_report, gloss_leaks, dossier_paths, embed_record, original_record, dossier_records, dossier_report, is_build_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions, write_dossier_reports
 from editorial import apply_editorial, validate_editorial
 from embeds import apply_embeds, embed_errors
 from fact_groups import load_fact_groups
@@ -230,7 +230,9 @@ class DossierRecordsTest(unittest.TestCase):
         self.assertEqual(record['topic'], TOPIC)
         self.assertEqual(record['topicSource'], 'authored')
         self.assertIsNone(record['questionZh'])
-        self.assertEqual(record['answer'], {'optionId': 'cny-20', 'state': 'verified'})
+        # у ответа — русское название верного варианта: подпись его ячейки (решение автора 2026-10-25)
+        self.assertEqual(record['answer'], {'optionId': 'cny-20', 'state': 'verified', 'gloss': 'Лотос — цветок на купюре'})
+        self.assertNotIn('gloss', record['options'][0])
         self.assertEqual(record['explanation'], {'ru': question()['explanation']})
         self.assertEqual((record['occurrences'], record['parseWarnings']), ([], []))
         self.assertEqual(len(record['options']), 5)
@@ -575,12 +577,23 @@ class ApplyEmbedsTest(unittest.TestCase):
         built = {**olympiad(), 'dossier': 'money', 'factRow': 'money/banknotes/cny-20'}
         self.assertNotIn('factRow', original_record(built))
 
+    def test_original_record_drops_the_answer_name_and_embedding_restores_it(self):
+        [record] = self.apply()
+        self.assertEqual(original_record(record)['answer'], {'optionId': 'o1', 'state': 'verified'})
+        self.assertEqual(embed_record(original_record(record), embed(), dossier()), (record, []))
+
+    def test_answer_without_a_cell_gloss_has_no_name(self):
+        data = dossier()
+        del row(data, 'cny-20')['flower']['gloss']
+        [record] = apply_embeds([olympiad()], [(data, [embed()])], {})
+        self.assertEqual(record['answer'], {'optionId': 'o1', 'state': 'verified'})
+
     def test_embedding_adds_the_table_pool_and_glosses_and_keeps_the_question(self):
         [record] = self.apply()
         self.assertEqual([o['id'] for o in record['options']], ['o1', 'o2', 'o3', 'o4', 'cny-10'])
         self.assertEqual(record['questionRu'], olympiad()['questionRu'])
         self.assertEqual(record['occurrences'], olympiad()['occurrences'])
-        self.assertEqual(record['answer'], {'optionId': 'o1', 'state': 'verified'})
+        self.assertEqual(record['answer'], {'optionId': 'o1', 'state': 'verified', 'gloss': 'Лотос — цветок на купюре'})
         self.assertEqual(record['dossier'], 'money')
         self.assertNotIn('gloss', record['options'][0])
         self.assertEqual(record['options'][1]['gloss'], 'Хризантема — цветок на купюре')
@@ -916,6 +929,144 @@ class CrossLeakBridgeTest(unittest.TestCase):
         self.assertEqual(cross_leak_errors([], [(data, [era]), (myths_dossier(), [monk])]), [])
 
 
+class GlossLeakTest(unittest.TestCase):
+    """Подпись неверного варианта видна после ответа. Утечка — если вариант с подписью называет
+    ответ соседнего вопроса и то, о чём тот спрашивает: сам вариант или другую его зацепку."""
+
+    def back(self, **overrides):
+        return question(**{'id': 'money-q03', 'fact': {'table': 'banknotes', 'row': 'cny-100', 'ask': 'back',
+                                                       'where': {'currency': '人民币'}},
+                           'questionRu': 'Что изображено на обороте купюры 100 юаней с цветком 梅花 выпуска 2019 года?',
+                           **overrides})
+
+    def money(self, row_id, column, gloss):
+        data = dossier()
+        row(data, row_id)[column]['gloss'] = gloss
+        return data
+
+    def test_gloss_names_the_answer_of_a_question_about_the_option(self):
+        data = self.money('cny-100', 'flower', 'Мэйхуа — цветок купюры, на обороте которой Дом народных собраний')
+        self.assertEqual(gloss_leak_errors([], [(data, [question(), self.back()])]),
+                         ["money/money-q01: подпись варианта cny-100 (梅花) называет ответ вопроса money/money-q03 "
+                          "['Дом народных собраний'] и его зацепку ['梅花']"])
+
+    def test_answer_alone_is_not_a_leak(self):
+        # подпись называет ответ, но соседний вопрос спрашивает не о её варианте
+        data = self.money('cny-100', 'flower', 'Мэйхуа — цветок купюры, на обороте которой Дом народных собраний')
+        back = self.back(questionRu='Что изображено на обороте купюры 100 юаней выпуска 2019 года?')
+        self.assertEqual(gloss_leak_errors([], [(data, [question(), back])]), [])
+
+    def test_gloss_from_glosses_json_in_the_bank_counts(self):
+        record = olympiad(id='2023-24-shk-1', questionRu='Какая площадь в центре Пекина?',
+                          options=[{'id': 'o1', 'zh': '天安门广场'},
+                                   {'id': 'o2', 'zh': '天安门', 'gloss': 'Тяньаньмэнь — ворота, рядом Дом народных собраний'},
+                                   {'id': 'o3', 'zh': '王府井'}, {'id': 'o4', 'zh': '前门'}])
+        back = self.back(questionRu='Какое здание у ворот Тяньаньмэнь — на обороте купюры 100 юаней 2019 года?')
+        self.assertEqual(gloss_leak_errors([record], [(dossier(), [back])]),
+                         ["2023-24-shk-1: подпись варианта o2 (天安门) называет ответ вопроса money/money-q03 "
+                          "['Дом народных собраний'] и его зацепку ['Тяньаньмэнь']"])
+
+    def test_option_that_is_the_answer_with_a_gloss_naming_the_clue(self):
+        # вариант 菊花 сам ответ соседнего вопроса, а подпись называет его зацепку — Потала
+        data = self.money('cny-50', 'flower', 'Хризантема — цветок купюры с дворцом Потала')
+        chrysanthemum = question(id='money-q04', fact={'table': 'banknotes', 'row': 'cny-50', 'ask': 'flower',
+                                                       'where': {'currency': '人民币'}},
+                                 questionRu='Какой цветок на купюре 50 юаней с дворцом Потала выпуска 2019 года?')
+        self.assertEqual(gloss_leak_errors([], [(data, [question(), chrysanthemum])]),
+                         ["money/money-q01: подпись варианта cny-50 (菊花) называет ответ вопроса money/money-q04 "
+                          "['菊花', 'хризантема'] и его зацепку ['Потала']"])
+
+    def test_gloss_naming_only_its_own_option_is_not_a_leak(self):
+        # подпись 嫦娥 называет Чанъэ — ответ вопроса о ней, но больше ничего из его текста
+        change = {**change_question(), 'id': 'myths-q02'}
+        xihe = myths_question(questionRu='Какая богиня, по преданию, правила колесницей Солнца?')
+        self.assertEqual(gloss_leak_errors([], [(myths_dossier(), [xihe, change])]), [])
+
+    def test_gloss_of_the_answer_option_is_not_searched(self):
+        record = olympiad(id='2023-24-shk-1', options=[
+            {'id': 'o1', 'zh': '人民大会堂', 'gloss': 'Дом народных собраний — здание с купюры с 梅花'},
+            {'id': 'o2', 'zh': '故宫'}, {'id': 'o3', 'zh': '天坛'}, {'id': 'o4', 'zh': '颐和园'}])
+        self.assertEqual(gloss_leak_errors([record], [(dossier(), [self.back()])]), [])
+
+    def test_a_fact_group_closes_the_pair(self):
+        data = self.money('cny-100', 'flower', 'Мэйхуа — цветок купюры, на обороте которой Дом народных собраний')
+        self.assertEqual(gloss_leak_errors([], [(data, [question(), self.back()])],
+                                           groups={'g': ['money-q01', 'money-q03']}), [])
+
+    def test_sides_of_one_row_are_not_a_leak(self):
+        flower = question(fact={'table': 'banknotes', 'row': 'cny-100', 'ask': 'flower', 'where': {'currency': '人民币'}},
+                          questionRu='Какой цветок на купюре 100 юаней выпуска 2019 года?')
+        # варианты вопроса о цветке 100 юаней — цветы других купюр, их подписи о своих строках
+        data = self.money('cny-20', 'flower', 'Лотос — с купюры, на обороте 100 юаней — Дом народных собраний')
+        back = self.back(questionRu='Что изображено на обороте купюры 100 юаней — не той, где цветок 荷花, — 2019 года?')
+        self.assertEqual(gloss_leak_errors([], [(data, [flower, back])]), [])
+
+    def test_bridge_rule_is_the_same_as_for_texts(self):
+        def year(question_id, row_id):
+            return {'id': question_id, 'status': 'draft', 'fact': {'table': 'missions', 'row': row_id, 'ask': 'year'},
+                    'questionRu': 'В каком году запущен аппарат?'}
+        space = launches()
+        rows = {r['id']: r for r in space['tables']['missions']['rows']}
+        rows['mis-zhurong']['year']['gloss'] = '2020 год — запуск марсохода 祝融号, позже аппарата богини Чанъэ'
+        rows['mis-change4']['year']['gloss'] = '2018 год — запуск аппарата богини Чанъэ'
+        change = myths_question(fact={'table': 'figures', 'row': 'fig-change', 'ask': 'name'},
+                                questionRu='Какая богиня дала имя аппарату, запущенному в 2018 году, — а не марсоходу 2020 года?')
+        # строка 嫦娥四号 названа по Чанъэ: подпись в вопросе о ней может назвать имя связанной строки
+        bridged = gloss_leak_errors([], [(myths_dossier(), [change]), (space, [year('space-q01', 'mis-change4')])])
+        self.assertEqual(bridged, [])
+        leaked = gloss_leak_errors([], [(myths_dossier(), [change]), (space, [year('space-q02', 'mis-zhurong')])])
+        self.assertEqual(leaked, ["space/space-q02: подпись варианта mis-change4 (2018 年) называет ответ вопроса "
+                                  "myths/myths-q01 ['богиня Чанъэ'] и его зацепку ['2018 год']"])
+
+    def test_attached_olympiad_record_on_the_same_row_is_not_a_leak(self):
+        data = self.money('cny-100', 'flower', 'Мэйхуа — цветок купюры, на обороте которой Дом народных собраний')
+        record = olympiad(id='2023-24-shk-1', questionRu='Что изображено на обороте купюры 100 юаней с цветком 梅花?',
+                          options=[{'id': 'o1', 'zh': '人民大会堂'}, {'id': 'o2', 'zh': '布达拉宫'},
+                                   {'id': 'o3', 'zh': '泰山'}, {'id': 'o4', 'zh': '长江三峡'}])
+        self.assertEqual(gloss_leak_errors([record], [(data, [question()])]),
+                         ["money/money-q01: подпись варианта cny-100 (梅花) называет ответ вопроса 2023-24-shk-1 "
+                          "['Дом народных собраний'] и его зацепку ['梅花']"])
+        # привязанная к строке вопроса money-q01 запись — та же строка: раунд их не ставит рядом
+        row(data, 'cny-20')['olympiad'] = ['2023-24-shk-1']
+        self.assertEqual(gloss_leak_errors([record], [(data, [question()])]), [])
+        # привязанная к строке варианта — утечка «о той же строке»
+        row(data, 'cny-20')['olympiad'] = []
+        row(data, 'cny-100')['olympiad'] = ['2023-24-shk-1']
+        [leak] = gloss_leaks([record], [(data, [question()])])
+        self.assertTrue(leak['row'])
+
+    def test_draft_embed_is_checked_with_the_glosses_the_bank_shows(self):
+        # черновик встраивания ещё не встроен: ученик видит подписи glosses.json, а не ячеек
+        record = olympiad(options=[{'id': 'o1', 'zh': '荷花'},
+                                   {'id': 'o2', 'zh': '菊花', 'gloss': 'Хризантема — с купюры, на обороте которой Потала'},
+                                   {'id': 'o3', 'zh': '梅花'}, {'id': 'o4', 'zh': '水仙花'}])
+        back = question(id='money-q03', fact={'table': 'banknotes', 'row': 'cny-50', 'ask': 'back',
+                                              'where': {'currency': '人民币'}},
+                        questionRu='Что изображено на обороте купюры 50 юаней с цветком 菊花 выпуска 2019 года?')
+        leaks = gloss_leaks([record], [(dossier(), [embed(status='draft'), back])])
+        self.assertEqual([(leak['record'], leak['option'], leak['recordDraft']) for leak in leaks],
+                         [('money/money-q02', 'o2', True)])
+
+    def test_report_merges_findings_of_one_gloss_and_one_question(self):
+        leak = {'zh': '梅花', 'gloss': 'Мэйхуа', 'other': 'money/money-q03', 'answer': ['Дом народных собраний'],
+                'recordDraft': False, 'otherDraft': False}
+        report = gloss_leak_report([{**leak, 'record': 'money/money-q01', 'clues': ['梅花'], 'row': True},
+                                    {**leak, 'record': 'money/money-q05', 'clues': ['Мэйхуа'], 'row': False},
+                                    {**leak, 'record': 'money/money-q05', 'clues': ['梅花'], 'row': False,
+                                     'other': 'money/money-q04', 'otherDraft': True}])
+        self.assertIn('- выдаёт money/money-q03: ответ Дом народных собраний; зацепка Мэйхуа, 梅花, та же строка', report)
+        self.assertIn('- выдаёт money/money-q04 (черновик): ответ', report)
+        self.assertIn('пар «вопрос с подписью → соседний вопрос»: 3, из них 1 —', report)
+
+    def test_report_groups_findings_by_gloss(self):
+        data = self.money('cny-100', 'flower', 'Мэйхуа — цветок купюры, на обороте которой Дом народных собраний')
+        report = gloss_leak_report(gloss_leaks([], [(data, [question(), self.back()])]))
+        self.assertTrue(report.startswith(GLOSS_LEAKS_MARK + '\n'))
+        self.assertIn('## 梅花 — Мэйхуа — цветок купюры, на обороте которой Дом народных собраний', report)
+        self.assertIn('- выдаёт money/money-q03: ответ Дом народных собраний; зацепка 梅花', report)
+        self.assertIn('- видна в 1: money/money-q01', report)
+
+
 class CheckDossiersTest(unittest.TestCase):
     def write(self, directory, name, data):
         (Path(directory) / name).write_text(json.dumps(data, ensure_ascii=False), encoding='utf-8')
@@ -940,6 +1091,21 @@ class CheckDossiersTest(unittest.TestCase):
             errors, loaded = check_dossiers(Path(directory), [olympiad(answer={'optionId': 'o2', 'state': 'verified'})], {})
         self.assertTrue(any('не совпадает' in e for e in errors))
         self.assertEqual([d['id'] for d, _ in loaded], ['money'])
+
+    def test_text_of_an_embedded_addition_is_checked_like_in_the_build(self):
+        # встроенное дополнение — тоже origin: addition и dossier, но это не свой вопрос досье
+        [built] = apply_embeds([olympiad(id='addition-b1-01', origin='addition',
+                                         questionRu='Кто из богинь — 羲和 — изображён на купюре 20 юаней?')],
+                               [(dossier(), [embed(embeds='addition-b1-01')])], {})
+        with tempfile.TemporaryDirectory() as directory:
+            self.write(directory, 'money.json', dossier())
+            self.write(directory, 'money-questions.json', [embed(embeds='addition-b1-01')])
+            self.write(directory, 'myths.json', myths_dossier())
+            self.write(directory, 'myths-questions.json',
+                       [myths_question(questionRu='Какая богиня правила колесницей Солнца?')])
+            errors, _ = check_dossiers(Path(directory), [built], {})
+        self.assertTrue(any(e.startswith('money/money-q02: текст называет ответ вопроса myths/myths-q01')
+                            for e in errors), errors)
 
     def test_wording_of_an_embedded_record_counts_as_taken(self):
         [built] = apply_embeds([olympiad()], [(dossier(), [embed()])], {})
@@ -1032,6 +1198,8 @@ class DossierInBankTest(unittest.TestCase):
                 self.assertEqual(record['answer']['optionId'], answer_id, item['id'])
                 self.assertEqual([o['id'] for o in record['options']], [o['id'] for o in options], item['id'])
                 self.assertTrue(all(o.get('gloss') for o in record['options'] if o['id'] != answer_id), item['id'])
+                # русское название верного ответа — подпись его ячейки
+                self.assertEqual(record['answer'].get('gloss'), answer_cell(item, data)[1].get('gloss'), item['id'])
 
     def test_accepted_embeds_reach_the_bank(self):
         for table_path, questions_path in self.pairs:
@@ -1059,7 +1227,7 @@ class DossierInBankTest(unittest.TestCase):
         self.assertEqual(names, {'money.json', 'myths.json', 'space.json', 'holidays.json', 'dynasties.json',
                                  'ethnos.json', 'provinces.json', 'landmarks.json', 'literature.json',
                                  'modern-history.json', 'nature.json', 'crafts.json', 'painting.json', 'cuisine.json',
-                                 'cinema.json', 'people.json', 'sets.json', 'state.json'})
+                                 'cinema.json', 'people.json', 'sets.json', 'state.json', 'modern-china.json'})
 
     def test_olympiad_links_point_to_bank_questions(self):
         # олимпиадный вопрос мог быть влит склейкой в другой — его id тогда в mergedIds

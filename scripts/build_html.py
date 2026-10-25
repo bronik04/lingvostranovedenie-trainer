@@ -119,6 +119,22 @@ def pinyin_table(bank: list[dict]) -> dict[str, str]:
     return {text: table[text] for text in sorted(needed - missing)}
 
 
+def dossier_titles(bank: list[dict]) -> dict[str, str]:
+    """Названия подборок в «Темах раунда» — из `title` досье, только тех, чьи вопросы есть в банке."""
+    used = {record['dossier'] for record in bank if record.get('dossier')}
+    titles = {}
+    for path in sorted((ROOT / 'data/dossiers').glob('*.json')):
+        if path.name.endswith('-questions.json'):
+            continue
+        dossier = json.loads(path.read_text('utf-8'))
+        if dossier['id'] in used:
+            titles[dossier['id']] = dossier['title']
+    missing = used - titles.keys()
+    if missing:
+        raise SystemExit(f'у подборок нет досье с названием: {sorted(missing)}')
+    return titles
+
+
 def main() -> None:
     bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
     errors = validate(bank)
@@ -138,6 +154,7 @@ def main() -> None:
     html = html.replace('/*QUIZ_ENGINE*/', engine)
     html = html.replace('/*QUESTION_BANK*/', serialize_bank(bank))
     html = html.replace('/*PINYIN*/', serialize_bank(pinyin_table(bank)))
+    html = html.replace('/*DOSSIERS*/', serialize_bank(dossier_titles(bank)))
     html = html.replace('/*QUIZ_UI*/', minify_js((ROOT / 'src/quiz.ui.js').read_text('utf-8')))
     # раздел «Чэнъюй»: свой банк (олимпиадные + принятые составленные), движок и интерфейс
     chengyu_bank = chengyu.published(olympiad_chengyu, draft_chengyu)

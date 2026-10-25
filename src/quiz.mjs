@@ -4,6 +4,8 @@ const STUDY_MODES = new Set(['all', 'new', 'mistakes', 'due']);
 // откуда вопросы раунда: все, только с олимпиад или только дополнения к ним
 const ORIGINS = new Set(['all', 'olympiad', 'addition']);
 const ROUND_SIZES = new Set([5, 10, 20, 50, Number.MAX_SAFE_INTEGER]);
+// темы раунда выбираются разделами (поле topic) или подборками — досье (поле dossier); включён один способ
+const TOPICS_BY = new Set(['sections', 'dossiers']);
 export const FORMATS = new Set(['choice', 'recall', 'truefalse']);
 const OUTCOMES = new Set(['correct', 'partial', 'wrong', 'checked']);
 
@@ -80,26 +82,100 @@ export function recordOrigin(record) {
     : { label: 'Олимпиадная база', isAddition: false };
 }
 
-export function matchesDatabaseSearch(record, query) {
-  const needle = String(query ?? '').trim().toLocaleLowerCase('ru');
-  if (!needle) return true;
+// Поиск по базе — с начала слова: «чай» находит «чай», «чайный» и «чая», «чаем», но не
+// «величайший» и «случай». Окончание слова запроса отбрасывается (основа — не короче трёх букв, из двух —
+// только перед мягким окончанием, см. SOFT_ENDING_START),
+// и слово текста подходит, если это основа и одно из окончаний. Список окончаний — тот же, что
+// ENDINGS в scripts/dossiers.py. Китайский запрос ищется куском текста: слов в нём не выделить.
+const RU_ENDINGS = ['ами', 'ями', 'ого', 'его', 'ому', 'ему', 'ыми', 'ими', 'ых', 'их', 'ой', 'ей', 'ий', 'ый',
+  'ая', 'яя', 'ое', 'ее', 'ую', 'юю', 'ов', 'ев', 'ам', 'ям', 'ах', 'ях', 'ом', 'ем',
+  'а', 'я', 'ь', 'й', 'о', 'е', 'ы', 'и', 'у', 'ю'];
+const ENDING_SET = new Set(RU_ENDINGS);
+const MIN_SEARCH_STEM = 3;
+// основа из двух букв допустима только перед мягким окончанием (на й, ь, я, е, ю, и): «чай», «чаем» → «ча»
+// находят «чая», «чаем», а «мао», «дао» (имена и понятия в русской записи) не превращаются в «ма» и «да»
+// и не находят «мая», «дай»
+const SOFT_ENDING_START = new Set(['й', 'ь', 'я', 'е', 'ю', 'и']);
+const SEARCH_WORD = /[\p{L}\p{N}]+/gu;
+
+const searchFold = (text) => String(text ?? '').toLocaleLowerCase('ru').replaceAll('ё', 'е');
+
+/** Слова запроса: у русского — проверка «с начала слова или основа с окончанием», у китайского — null. */
+function searchTerms(query) {
+  return (searchFold(query).match(SEARCH_WORD) ?? []).map((term) => {
+    if (HAN_CHAR.test(term)) return { term, han: true };
+    const ending = RU_ENDINGS.find((item) => term.endsWith(item) && (term.length - item.length >= MIN_SEARCH_STEM
+      || (term.length - item.length === MIN_SEARCH_STEM - 1 && SOFT_ENDING_START.has(item[0]))));
+    const stem = ending ? term.slice(0, -ending.length) : term;
+    return {
+      term,
+      han: false,
+      matches: (word) => word.startsWith(term)
+        || (word.startsWith(stem) && (word.length === stem.length || ENDING_SET.has(word.slice(stem.length)))),
+    };
+  });
+}
+
+function searchText(record) {
   const right = record.options.find((option) => option.id === record.answer.optionId);
-  const text = [
+  return [
     record.questionRu,
     record.topic,
     ...record.options.map((option) => option.zh),
     right?.zh,
+    record.answer.gloss,
     record.explanation?.ru,
     ...record.options.map((option) => option.gloss),
-  ].filter(Boolean).join(' ').toLocaleLowerCase('ru');
-  return text.includes(needle);
+  ].filter(Boolean).join(' ');
+}
+
+export function matchesDatabaseSearch(record, query) {
+  const terms = searchTerms(query);
+  if (!terms.length) return true;
+  const text = searchFold(searchText(record));
+  const words = text.match(SEARCH_WORD) ?? [];
+  return terms.every((item) => (item.han ? text.includes(item.term) : words.some(item.matches)));
+}
+
+/** Текст карточки базы по кускам: найденные слова (у китайского запроса — куски) помечены mark. */
+export function searchSegments(text, query) {
+  const terms = searchTerms(query);
+  const source = String(text ?? '');
+  if (!terms.length || !source) return [{ text: source }];
+  const folded = searchFold(source);
+  const marked = new Array(source.length).fill(false);
+  for (const match of folded.matchAll(SEARCH_WORD)) {
+    if (terms.some((item) => !item.han && item.matches(match[0]))) {
+      marked.fill(true, match.index, match.index + match[0].length);
+    }
+  }
+  for (const item of terms.filter((entry) => entry.han)) {
+    for (let at = folded.indexOf(item.term); at !== -1; at = folded.indexOf(item.term, at + 1)) {
+      marked.fill(true, at, at + item.term.length);
+    }
+  }
+  const segments = [];
+  for (let index = 0; index < source.length; index += 1) {
+    const last = segments[segments.length - 1];
+    if (last && last.mark === marked[index]) last.text += source[index];
+    else segments.push({ text: source[index], mark: marked[index] });
+  }
+  return segments.map((segment) => (segment.mark ? segment : { text: segment.text }));
+}
+
+/** Русское название верного ответа — у вопроса досье из ячейки ответа (подпись до первого
+ * « — »: «Пещеры Могао», «Чжан Имоу»); у остальных вопросов его нет. */
+export function answerName(record) {
+  // «…вкус продуктов, — шаньдунская кухня»: запятая перед тире названию не нужна
+  return record.answer.gloss ? record.answer.gloss.split(' — ')[0].replace(/[,;:]+$/, '') : '';
 }
 
 export function normaliseStudySettings(value, bank) {
   const defaults = {
-    filters: { topics: [], years: [], stages: [], mode: 'all', onlyVerified: false, origin: 'all' },
+    filters: { topics: [], dossiers: [], years: [], stages: [], mode: 'all', onlyVerified: false, origin: 'all' },
     size: 10,
     format: 'choice',
+    topicsBy: 'sections',
   };
   if (!value || typeof value !== 'object' || Array.isArray(value)) return defaults;
 
@@ -107,6 +183,8 @@ export function normaliseStudySettings(value, bank) {
   if (!filters || typeof filters !== 'object' || Array.isArray(filters)) return defaults;
 
   const topics = new Set(bank.map((record) => record.topic));
+  const dossiers = new Set(bank.map((record) => record.dossier).filter(Boolean));
+  const topicsBy = TOPICS_BY.has(value.topicsBy) ? value.topicsBy : defaults.topicsBy;
   const years = new Set(bank.flatMap((record) => record.occurrences.map((occurrence) => occurrence.year)));
   const stages = new Set(bank.flatMap((record) => record.occurrences.map((occurrence) => occurrence.stageCode)));
   const availableValues = (selected, available) => Array.isArray(selected)
@@ -114,7 +192,9 @@ export function normaliseStudySettings(value, bank) {
 
   return {
     filters: {
-      topics: availableValues(filters.topics, topics),
+      // выбор другого способа сбрасывается: и в разделах, и в подборках сразу отмеченным быть нельзя
+      topics: topicsBy === 'sections' ? availableValues(filters.topics, topics) : [],
+      dossiers: topicsBy === 'dossiers' ? availableValues(filters.dossiers, dossiers) : [],
       years: availableValues(filters.years, years),
       stages: availableValues(filters.stages, stages),
       mode: STUDY_MODES.has(filters.mode) ? filters.mode : defaults.filters.mode,
@@ -123,6 +203,7 @@ export function normaliseStudySettings(value, bank) {
     },
     size: ROUND_SIZES.has(value.size) ? value.size : defaults.size,
     format: FORMATS.has(value.format) ? value.format : defaults.format,
+    topicsBy,
   };
 }
 
@@ -197,6 +278,9 @@ export function eligible(bank, filters, progress, now = Date.now()) {
     if (filters.mode === 'mistakes' && progress[record.id]?.lastCorrect !== false) return false;
     if (filters.mode === 'due' && (!progress[record.id]?.completed || progress[record.id].dueAt > now)) return false;
     if (filters.topics.length && !filters.topics.includes(record.topic)) return false;
+    if (filters.dossiers?.length && !filters.dossiers.includes(record.dossier)) return false;
+    // раунд из найденного в базе: только эти вопросы
+    if (filters.ids && !filters.ids.includes(record.id)) return false;
     const isAddition = record.origin === 'addition';
     if (filters.origin === 'olympiad' && isAddition) return false;
     if (filters.origin === 'addition' && !isAddition) return false;
@@ -207,14 +291,23 @@ export function eligible(bank, filters, progress, now = Date.now()) {
 }
 
 export function progressByTopic(bank, progress) {
+  return progressBy(bank, progress, 'topic');
+}
+
+/** То же по подборкам: вопросы вне досье ни в одну подборку не входят. */
+export function progressByDossier(bank, progress) {
+  return progressBy(bank, progress, 'dossier');
+}
+
+function progressBy(bank, progress, field) {
   const counts = {};
   for (const record of bank) {
     // вопрос без установленного ответа в раунд не попадает — и в счётчик темы тоже
-    if (!PLAYABLE.has(record.answer.state) || !record.answer.optionId) continue;
-    const topic = counts[record.topic] ?? { completed: 0, total: 0 };
-    topic.total += 1;
-    if (progress[record.id]?.completed) topic.completed += 1;
-    counts[record.topic] = topic;
+    if (!PLAYABLE.has(record.answer.state) || !record.answer.optionId || !record[field]) continue;
+    const group = counts[record[field]] ?? { completed: 0, total: 0 };
+    group.total += 1;
+    if (progress[record.id]?.completed) group.completed += 1;
+    counts[record[field]] = group;
   }
   return counts;
 }
@@ -245,9 +338,11 @@ function shuffled(items, random) {
 // Из группы «один факт» и из вопросов об одной строке досье (разные стороны одного
 // факта) в раунд берётся одна запись. Это предпочтение, а не запрет: если других
 // вопросов не хватает до нужного размера, оставшиеся записи добираются в конец
-// раунда, подальше от своих двойников.
+// раунда, подальше от своих двойников. Олимпиадная запись, привязанная к нескольким
+// строкам досье, несёт их список (scripts/fact_rows.py).
 function factKeys(record) {
-  return [record.factGroup && `g:${record.factGroup}`, record.factRow && `r:${record.factRow}`].filter(Boolean);
+  const rows = [].concat(record.factRow ?? []).map((row) => `r:${row}`);
+  return [record.factGroup && `g:${record.factGroup}`, ...rows].filter(Boolean);
 }
 
 function onePerFact(ordered, size) {
@@ -370,22 +465,28 @@ export function pluralRu(count, forms) {
   return forms[2];
 }
 
+// «В базе 1270 вопросов: 697 из заданий ВсОШ за 12 сезонов (2015/16—2026/27) и 573 проверенных
+// дополнения к ним, 7 тем.» — числа считаются по банку, а не пишутся в разметку
 export function bankSummary(bank) {
   const additions = bank.filter((record) => record.origin === 'addition').length;
   const olympiad = bank.length - additions;
-  const years = bank.flatMap((record) => record.occurrences.map((o) => o.year)).sort();
+  const years = [...new Set(bank.flatMap((record) => record.occurrences.map((o) => o.year)))].sort();
   const first = years[0]?.replace('-', '/');
   const last = years[years.length - 1]?.replace('-', '/');
-  const span = !years.length ? '' : first === last ? ` ${first}` : ` ${first} — ${last}`;
-  const verified = bank.filter((record) => record.answer.state === 'verified').length;
-  const additionNote = additions
-    ? ` и ${additions} ${pluralRu(additions,
-      ['проверенное дополнение', 'проверенных дополнения', 'проверенных дополнений'])} к ним`
+  const seasons = years.length
+    ? ` за ${years.length} ${pluralRu(years.length, ['сезон', 'сезона', 'сезонов'])} (${
+      first === last ? first : `${first}—${last}`})`
     : '';
+  const topics = new Set(bank.map((record) => record.topic)).size;
+  const verified = bank.filter((record) => record.answer.state === 'verified').length;
+  const questions = (count) => `${count} ${pluralRu(count, ['вопрос', 'вопроса', 'вопросов'])}`;
+  const contents = additions
+    ? `${questions(bank.length)}: ${olympiad} из заданий ВсОШ${seasons} и ${additions} ${pluralRu(additions,
+      ['проверенное дополнение', 'проверенных дополнения', 'проверенных дополнений'])} к ним`
+    : `${questions(olympiad)} из заданий ВсОШ${seasons}`;
   const sources = verified === bank.length
     ? 'У каждого ответа есть пояснение и ссылка на источник.'
     : `У ${verified} ${pluralRu(verified, ['ответа', 'ответов', 'ответов'])} есть пояснение и ссылка `
       + 'на источник; остальные ответы взяты из официального ключа и ждут перепроверки.';
-  return `В базе ${olympiad} ${pluralRu(olympiad, ['вопрос', 'вопроса', 'вопросов'])} из материалов ВсОШ`
-    + `${span}${additionNote}. ${sources}`;
+  return `В базе ${contents}, ${topics} ${pluralRu(topics, ['тема', 'темы', 'тем'])}. ${sources}`;
 }
