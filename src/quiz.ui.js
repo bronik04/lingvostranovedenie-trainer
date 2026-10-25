@@ -1077,6 +1077,8 @@ $('questionZhToggle').addEventListener('click', toggleQuestionZh);
 $('questionZhReveal').addEventListener('click', () => {
   $('questionZh').classList.add('revealed');
   $('questionZhReveal').hidden = true;
+  // кнопка исчезает — фокус переходит на открытый текст, а не теряется на <body>
+  $('questionZh').focus();
 });
 // шапка — ссылки, чтобы работали и без скрипта, но внутри страницы они просто меняют экран
 for (const id of ['homeLink', 'navSetup']) {
