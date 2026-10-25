@@ -13,6 +13,8 @@
    иначе скрытая плашка вроде «не проверено» продолжает показываться. */
 [hidden] { display: none !important; }
 .hidden { display: none !important; }
+/* текст для ноутбука и короткий для телефона: в разметке оба, виден один */
+.phone-only { display: none; }
 
 body {
   font-variant-numeric: lining-nums;
@@ -298,6 +300,7 @@ main { display: block; }
 .topic-count { color: var(--text-on-ground-muted); font-size: var(--t-size-caption); }
 .topic-progress { font-variant-numeric: lining-nums tabular-nums; }
 .topic-check input { width: 20px; height: 20px; margin: 0; accent-color: var(--accent); }
+.topics-foot { margin: 0; padding-top: var(--s-3); border-top: var(--border-hair) solid var(--line-on-ground); }
 
 .origin-filter { display: grid; gap: var(--s-2); padding: var(--s-4) 0 var(--s-3); border-top: var(--border-hair) solid var(--line-on-ground); }
 .origin-title { margin: 0; font-weight: var(--t-weight-semibold); }
@@ -471,6 +474,8 @@ select, .search {
 .option.wrong { border: var(--border-solid) solid var(--state-incorrect); padding: 13px 17px; }
 .option.wrong .option-status { color: var(--state-incorrect); }
 .option.wrong .option-gloss { color: var(--text-soft); }
+/* под верным вариантом — его русское название (у вопросов досье) */
+.option.correct .option-gloss { font-weight: var(--t-weight-semibold); }
 
 .feedback {
   display: flex;
@@ -700,7 +705,7 @@ select, .search {
 
 /* ---------- база ---------- */
 
-.database { padding: 64px 0 0; }
+.database { padding: 56px 0 0; }
 .database-head {
   display: flex;
   flex-wrap: wrap;
@@ -716,8 +721,22 @@ select, .search {
   flex-wrap: wrap;
   gap: var(--s-3);
   padding: 20px 0;
+  border-top: var(--border-hair) solid var(--line-on-ground);
+}
+/* найденное: сколько и мои ответы на них, рядом — раунд из найденных */
+.found {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3) var(--s-5);
+  padding: 20px 0;
   border-block: var(--border-hair) solid var(--line-on-ground);
 }
+.found-text { display: flex; flex-direction: column; gap: 2px; }
+.found-text p { margin: 0; }
+.found-count { font-size: var(--t-size-lead); font-weight: var(--t-weight-medium); }
+.found .ink-btn--primary, .found .ink-btn--secondary { min-width: 300px; }
 .field-search { flex: 999 1 320px; }
 .db-list { display: flex; flex-direction: column; }
 .row {
@@ -728,6 +747,13 @@ select, .search {
   border-bottom: var(--border-hair) solid var(--line-on-ground);
 }
 .row-top { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2) var(--s-4); }
+/* мой результат по вопросу — по последнему ответу */
+.my { display: inline-flex; align-items: center; gap: 4px; font-size: var(--t-size-eyebrow); font-weight: var(--t-weight-semibold); }
+.my.bad { color: var(--state-incorrect); }
+.my.ok { color: var(--state-correct-on-ground); }
+.my.none { color: var(--text-on-ground-muted); font-weight: var(--t-weight-regular); }
+/* найденное слово */
+mark { padding: 0 2px; border-radius: 3px; background: var(--surface-pressed); color: inherit; }
 .row-topic {
   color: var(--accent-on-ground);
   font-size: var(--t-size-eyebrow);
@@ -801,6 +827,8 @@ a:hover { color: var(--accent-on-ground); }
 /* ---------- телефон ---------- */
 
 @media (max-width: 600px) {
+  .wide-only { display: none; }
+  .phone-only { display: inline; }
   /* шапка: переключатели вида — в меню «Вид» */
   .site-header { gap: var(--s-1) var(--s-3); padding: var(--s-3) 0; }
   .site-header .ink-header__brand .ink-seal { width: 36px; height: 36px; font-size: 21px; }
@@ -862,6 +890,14 @@ a:hover { color: var(--accent-on-ground); }
   .option-text { font-size: 26px; }
   .option-status { grid-column: 2; }
   .option-gloss { grid-column: 2; grid-row: auto; }
+  /* короткие варианты — два на два; пометка и подпись после ответа — в той же клетке */
+  .options.is-compact { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-2); }
+  .is-compact .option { grid-template-columns: 28px minmax(0, 1fr); align-content: center; gap: 6px 10px; min-height: 96px; padding: 12px; }
+  .is-compact .option.wrong { padding: 11px; }
+  .is-compact .letter { width: 28px; height: 28px; }
+  /* четыре знака в клетку шириной в полэкрана — без переноса */
+  .is-compact .option-text { font-size: 22px; }
+  .is-compact .option-status, .is-compact .option-gloss { grid-column: 1 / -1; }
   .quiz > .hint { display: none; }
   .recall-prompt .ink-btn, .recall-rate .ink-btn { flex: 1 1 100%; }
   .tf-option { font-size: 34px; }
@@ -874,4 +910,9 @@ a:hover { color: var(--accent-on-ground); }
   .mistake-head .ink-seal { width: 40px; height: 40px; font-size: 22px; }
   .mistake-panel { margin-left: 0; padding: var(--s-4); }
   .row-panel { padding: var(--s-4); }
+  .database { padding-top: var(--s-6); }
+  .found .ink-btn--primary, .found .ink-btn--secondary { flex: 1 1 100%; min-width: 0; }
+  .row { padding: 20px 0; }
+  .row h3 { font-size: var(--t-size-body); }
+  .row-options { font-size: 18px; }
 }

@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from dossiers import REPORT_MARK, _mentions, fact_place, check_dossiers, load_removed, removed_id_errors, cross_leak_errors, dossier_paths, embed_record, original_record, dossier_records, dossier_report, is_build_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions, write_dossier_reports
+from dossiers import REPORT_MARK, _mentions, answer_cell, fact_place, check_dossiers, load_removed, removed_id_errors, cross_leak_errors, dossier_paths, embed_record, original_record, dossier_records, dossier_report, is_build_report, load_dossier, question_options, validate_dossier, validate_links, validate_questions, write_dossier_reports
 from editorial import apply_editorial, validate_editorial
 from embeds import apply_embeds, embed_errors
 from fact_groups import load_fact_groups
@@ -230,7 +230,9 @@ class DossierRecordsTest(unittest.TestCase):
         self.assertEqual(record['topic'], TOPIC)
         self.assertEqual(record['topicSource'], 'authored')
         self.assertIsNone(record['questionZh'])
-        self.assertEqual(record['answer'], {'optionId': 'cny-20', 'state': 'verified'})
+        # у ответа — русское название верного варианта: подпись его ячейки (решение автора 2026-10-25)
+        self.assertEqual(record['answer'], {'optionId': 'cny-20', 'state': 'verified', 'gloss': 'Лотос — цветок на купюре'})
+        self.assertNotIn('gloss', record['options'][0])
         self.assertEqual(record['explanation'], {'ru': question()['explanation']})
         self.assertEqual((record['occurrences'], record['parseWarnings']), ([], []))
         self.assertEqual(len(record['options']), 5)
@@ -575,12 +577,23 @@ class ApplyEmbedsTest(unittest.TestCase):
         built = {**olympiad(), 'dossier': 'money', 'factRow': 'money/banknotes/cny-20'}
         self.assertNotIn('factRow', original_record(built))
 
+    def test_original_record_drops_the_answer_name_and_embedding_restores_it(self):
+        [record] = self.apply()
+        self.assertEqual(original_record(record)['answer'], {'optionId': 'o1', 'state': 'verified'})
+        self.assertEqual(embed_record(original_record(record), embed(), dossier()), (record, []))
+
+    def test_answer_without_a_cell_gloss_has_no_name(self):
+        data = dossier()
+        del row(data, 'cny-20')['flower']['gloss']
+        [record] = apply_embeds([olympiad()], [(data, [embed()])], {})
+        self.assertEqual(record['answer'], {'optionId': 'o1', 'state': 'verified'})
+
     def test_embedding_adds_the_table_pool_and_glosses_and_keeps_the_question(self):
         [record] = self.apply()
         self.assertEqual([o['id'] for o in record['options']], ['o1', 'o2', 'o3', 'o4', 'cny-10'])
         self.assertEqual(record['questionRu'], olympiad()['questionRu'])
         self.assertEqual(record['occurrences'], olympiad()['occurrences'])
-        self.assertEqual(record['answer'], {'optionId': 'o1', 'state': 'verified'})
+        self.assertEqual(record['answer'], {'optionId': 'o1', 'state': 'verified', 'gloss': 'Лотос — цветок на купюре'})
         self.assertEqual(record['dossier'], 'money')
         self.assertNotIn('gloss', record['options'][0])
         self.assertEqual(record['options'][1]['gloss'], 'Хризантема — цветок на купюре')
@@ -1032,6 +1045,8 @@ class DossierInBankTest(unittest.TestCase):
                 self.assertEqual(record['answer']['optionId'], answer_id, item['id'])
                 self.assertEqual([o['id'] for o in record['options']], [o['id'] for o in options], item['id'])
                 self.assertTrue(all(o.get('gloss') for o in record['options'] if o['id'] != answer_id), item['id'])
+                # русское название верного ответа — подпись его ячейки
+                self.assertEqual(record['answer'].get('gloss'), answer_cell(item, data)[1].get('gloss'), item['id'])
 
     def test_accepted_embeds_reach_the_bank(self):
         for table_path, questions_path in self.pairs:

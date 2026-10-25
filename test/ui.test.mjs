@@ -310,7 +310,7 @@ test('фильтр по теме считает вопросы темы', LIMIT,
   assert.equal(await page.locator('#eligibleNotice').textContent(), notice);
   // первый визит: настройки тронуты — под кнопкой строка настроек и счёт
   assert.equal(await page.locator('#firstCaption').textContent(),
-    `Все вопросы, выбор ответа, 10 вопросов, тема «${topic}». ${notice}`);
+    `Все вопросы, выбор ответа, 10 вопросов, раздел: история. ${notice}`);
   assert.equal(await page.locator('#topicControls label', { hasText: topic }).locator('.topic-progress').textContent(),
     `0/${expected}`);
   await page.locator('#clearFilters').click();
@@ -347,7 +347,7 @@ test('база: поиск по-китайски и раскрытие отве�
   await page.locator('#navDatabase').click();
   await page.locator('#databaseView').waitFor();
   await page.locator('#databaseSearch').fill('颐和园');
-  assert.match(await page.locator('#databaseCount').textContent(), /^Показано [1-9]\d* из [1-9]\d* вопрос/);
+  assert.match(await page.locator('#foundCount').textContent(), /^Найден[о]? [1-9]\d* вопрос/);
   const first = page.locator('#databaseList article').first();
   assert.equal(await first.locator('.row-answer').isVisible(), false, 'ответ виден до нажатия');
   await first.locator('summary').click();
@@ -373,6 +373,8 @@ test('подписи появляются под неверными вариан
       && QUESTION_BANK.filter((other) => other.questionRu === r.questionRu).length === 1);
     if (!target) return { record: null, wrongId: null };
     target.options.forEach((o) => { delete o.gloss; });
+    // русское название верного ответа (у вопросов досье) здесь не проверяется — его отдельный тест
+    delete target.answer.gloss;
     const wrong = target.options.find((o) => o.id !== target.answer.optionId);
     wrong.gloss = 'Тестовая подпись к неверному варианту';
     target.options.find((o) => o.id === target.answer.optionId).gloss = 'Подпись правильного — не показывать';
@@ -419,9 +421,11 @@ test('настоящие подписи из банка стоят под все
   await page.evaluate((id) => startRoundWith([QUESTION_BANK.find((r) => r.id === id)]), record.id);
   await page.locator(`#options button[data-option-id="${record.answer.optionId}"]`).click();
   for (const option of record.options) {
+    // под верным вариантом — русское название ответа, если оно есть (у вопросов досье)
+    const gloss = option.id === record.answer.optionId ? record.answer.gloss : option.gloss;
     const note = page.locator(`#options button[data-option-id="${option.id}"] .option-gloss`);
-    assert.equal(await note.count(), option.gloss ? 1 : 0, `${record.id}/${option.id}: число подписей`);
-    if (option.gloss) assert.equal(await note.textContent(), option.gloss, `${record.id}/${option.id}`);
+    assert.equal(await note.count(), gloss ? 1 : 0, `${record.id}/${option.id}: число подписей`);
+    if (gloss) assert.equal(await note.textContent(), gloss, `${record.id}/${option.id}`);
   }
   assert.deepEqual(page.errors, []);
 });
@@ -1390,7 +1394,7 @@ test('телефон: кнопка раунда внизу — только ко
   await page.waitForFunction(() => document.getElementById('startBar').classList.contains('is-shown'));
   assert.equal(await bar.isVisible(), true);
   assert.equal(await page.locator('#startBarText').textContent(),
-    `Все вопросы, 10 из ${eligible(bank, ALL, {}).length} подходящих`);
+    `Все темы, 10 из ${eligible(bank, ALL, {}).length} подходящих`);
   assert.equal(await primariesInView(), 1);
   // полоса не закрывает подвал
   const footer = await page.locator('.ink-footer p').last().boundingBox();
@@ -1405,5 +1409,149 @@ test('телефон: кнопка раунда внизу — только ко
   await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
   await page.evaluate(() => new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))));
   assert.equal(await bar.isVisible(), false);
+  assert.deepEqual(page.errors, []);
+});
+
+/* ---------- подборки, база, сетка вариантов, русское название ответа ---------- */
+
+test('темы раунда: разделы или подборки — один способ, выбор сохраняется и попадает в раунд', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  const dossiers = [...new Set(bank.map((r) => r.dossier).filter(Boolean))];
+  await page.locator('input[name="topicsBy"][value="dossiers"]').check({ force: true });
+  assert.equal(await page.locator('#topicControls').isVisible(), false);
+  const names = await page.locator('#dossierControls .topic-name').allTextContents();
+  assert.equal(names.length, dossiers.length);
+  assert.equal(await page.locator('#dossiersCount').textContent(), String(dossiers.length));
+  // названия — из досье, два заменены
+  assert.ok(names.includes('Четыре великих и другие наборы') && names.includes('Известные люди'), names.join(', '));
+  assert.ok(!names.includes('Наборы') && !names.includes('Люди'));
+  const inSets = bank.filter((r) => r.dossier).length;
+  assert.equal(await page.locator('#topicsHelp').textContent(),
+    `Подборки собраны по темам досье: ${inSets} из ${bank.length} вопросов.`);
+  for (const name of ['Кухня и блюда', 'Праздники']) {
+    await page.locator('#dossierControls label', { hasText: name }).locator('input').check();
+  }
+  const filters = { ...ALL, dossiers: ['cuisine', 'holidays'] };
+  const expected = eligible(bank, filters, {}).length;
+  assert.equal(await page.locator('#eligibleNotice').textContent(), `Подходит вопросов: ${expected}, в раунде будет 10.`);
+  assert.match(await page.locator('#firstCaption').textContent(), /, подборки: кухня и блюда, праздники\. /);
+  assert.equal(await page.locator('#topicsValue').textContent(), '2 подборки');
+  assert.equal(await page.locator('#topicsFoot').textContent(), `Выбрано: 2 подборки, ${expected} вопросов.`);
+  // выбор переживает перезагрузку и попадает в раунд
+  await page.reload();
+  assert.equal(await page.locator('input[name="topicsBy"][value="dossiers"]').isChecked(), true);
+  await startRound(page, 10);
+  const round = await page.evaluate(() => state.round.map((r) => r.dossier));
+  assert.ok(round.every((id) => id === 'cuisine' || id === 'holidays'), round.join(', '));
+  await page.keyboard.press('Escape');
+  // переключение на разделы сбрасывает отметки подборок: в раунд снова идут все вопросы
+  await page.locator('input[name="topicsBy"][value="sections"]').check({ force: true });
+  assert.equal(await page.evaluate(() => state.filters.dossiers.length), 0);
+  assert.equal(await page.locator('#topicsValue').textContent(), 'все темы');
+  assert.equal(await page.locator('#eligibleNotice').textContent(),
+    `Подходит вопросов: ${eligible(bank, ALL, {}).length}, в раунде будет 10.`);
+  assert.deepEqual(page.errors, []);
+});
+
+test('база: «Мои ответы», строка найденного, подсветка и «Тренировать найденные»', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  const found = await page.evaluate(() => QUESTION_BANK.filter((r) => matchesDatabaseSearch(r, 'чай')).map((r) => r.id));
+  const [wrongId, rightId] = found;
+  await page.evaluate(([wrong, right]) => localStorage.setItem('lingvo-trainer:v1', JSON.stringify({ version: 1, progress: {
+    [wrong]: { attempts: 1, correct: 0, completed: true, lastCorrect: false, box: 0, dueAt: 0 },
+    [right]: { attempts: 1, correct: 1, completed: true, lastCorrect: true, box: 1, dueAt: Date.now() + 1e9 },
+  } })), [wrongId, rightId]);
+  await page.reload();
+  await page.locator('#navDatabase').click();
+  await page.locator('#databaseView').waitFor();
+  // фильтр «Мои ответы» вместо «Статуса»; без поиска и фильтра раунда из найденного нет
+  assert.deepEqual(await page.locator('#databaseMine option').allTextContents(), ['Все', 'С ошибкой', 'Верно', 'Не отвечал']);
+  assert.equal(await page.locator('#trainFound').isVisible(), false);
+  await page.locator('#databaseSearch').fill('чай');
+  const n = found.length;
+  assert.equal(await page.locator('#foundCount').textContent(),
+    `${n % 10 === 1 && n % 100 !== 11 ? 'Найден' : 'Найдено'} ${n} вопрос${n % 10 === 1 && n % 100 !== 11 ? '' : (n % 10 >= 2 && n % 10 <= 4 && !(n % 100 >= 12 && n % 100 <= 14) ? 'а' : 'ов')}`);
+  assert.equal(await page.locator('#foundMine').textContent(), `1 с ошибкой, 1 верно, ${n - 2} ещё не отвечали`);
+  assert.equal(await page.locator('#trainFound').textContent(), `Тренировать найденные (${n})`);
+  assert.match(await page.locator('#trainFound').getAttribute('class'), /ink-btn--primary/);
+  // у каждой карточки — свой результат; найденное слово подсвечено, и только с начала слова
+  const wrongCard = page.locator('#databaseList article', { hasText: bank.find((r) => r.id === wrongId).questionRu }).first();
+  assert.equal(await wrongCard.locator('.my.bad').innerText(), '✕ последний ответ — ошибка');
+  assert.ok(await page.locator('#databaseList .my.none').count() > 0);
+  const marks = await page.locator('#databaseList h3 mark').allTextContents();
+  assert.ok(marks.length > 0);
+  assert.ok(marks.every((text) => /^ча[йяюеи]/i.test(text)), marks.join(', '));
+  // «С ошибкой» оставляет одну карточку, «Тренировать найденные» — раунд из неё
+  await page.locator('#databaseMine').selectOption('wrong');
+  assert.equal(await page.locator('#databaseList article').count(), 1);
+  assert.equal(await page.locator('#foundMine').textContent(), '1 с ошибкой, 0 верно, 0 ещё не отвечали');
+  await page.locator('#trainFound').click();
+  await page.locator('#quizView').waitFor();
+  assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 1 из 1');
+  assert.equal(await page.evaluate(() => state.round[0].id), wrongId);
+  // «назад» — на главную: раунд из базы тоже ушёл с главной записи истории
+  assert.equal(hashOf(page), '#round');
+  assert.deepEqual(page.errors, []);
+});
+
+test('телефон: короткие варианты — два на два, подписи после ответа в тех же клетках', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 375, height: 812 });
+  if (!page) return;
+  const short = await page.evaluate(() => QUESTION_BANK.find((r) => r.options.length === 4 && r.answer.gloss
+    && r.options.every((o) => [...o.zh.trim()].length <= 4) && r.options.filter((o) => o.gloss).length === 3).id);
+  await page.evaluate((id) => startRoundWith([QUESTION_BANK.find((r) => r.id === id)], 'choice'), short);
+  assert.match(await page.locator('#options').getAttribute('class'), /\bis-compact\b/);
+  const boxes = await page.locator('#options button').evaluateAll((buttons) => buttons.map((b) => b.getBoundingClientRect())
+    .map((r) => ({ x: Math.round(r.x), y: Math.round(r.y), right: r.right })));
+  assert.equal(new Set(boxes.map((b) => b.y)).size, 2, 'две строки');
+  assert.equal(new Set(boxes.map((b) => b.x)).size, 2, 'два столбца');
+  assert.ok(boxes.every((b) => b.right <= 375));
+  // варианты не переносятся внутри клетки
+  const heights = await page.locator('#options .option-text').evaluateAll((items) => items.map((i) => i.getBoundingClientRect().height));
+  assert.ok(Math.max(...heights) < 40, heights.join(', '));
+  await page.locator('#options button').first().click();
+  for (const button of await page.locator('#options button').all()) {
+    assert.equal(await button.locator('.option-gloss').count(), 1, 'подпись в клетке варианта');
+  }
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth), 0);
+  // длинные варианты — столбиком
+  const long = await page.evaluate(() => QUESTION_BANK.find((r) => r.options.length === 4
+    && r.options.some((o) => [...o.zh.trim()].length > 4)).id);
+  await page.evaluate((id) => startRoundWith([QUESTION_BANK.find((r) => r.id === id)], 'choice'), long);
+  assert.doesNotMatch(await page.locator('#options').getAttribute('class'), /\bis-compact\b/);
+  const xs = await page.locator('#options button').evaluateAll((buttons) => buttons.map((b) => Math.round(b.getBoundingClientRect().x)));
+  assert.equal(new Set(xs).size, 1, 'один столбец');
+  assert.deepEqual(page.errors, []);
+});
+
+test('русское название верного ответа: под вариантом, в разборе и в итогах; у вопроса вне досье — как раньше', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  const named = bank.find((r) => r.answer.gloss && r.options.length === 4 && r.answer.gloss.includes(' — '));
+  const plain = bank.find((r) => !r.dossier && r.answer.state === 'verified' && r.options.length === 4);
+  const name = named.answer.gloss.split(' — ')[0];
+  const right = named.options.find((o) => o.id === named.answer.optionId).zh;
+  await page.evaluate((ids) => startRoundWith(ids.map((id) => QUESTION_BANK.find((r) => r.id === id)), 'choice'),
+    [named.id, plain.id]);
+  await answer(page, named, false);
+  const correct = page.locator(`#options button[data-option-id="${named.answer.optionId}"]`);
+  assert.equal(await correct.locator('.option-gloss').textContent(), named.answer.gloss);
+  assert.equal(await page.locator('#feedback .verdict span').first().textContent(), `Правильный ответ: ${right} — ${name}.`);
+  await page.locator('#nextButton').click();
+  // вне досье: под верным вариантом подписи нет, в разборе — только иероглифы
+  await answer(page, plain, false);
+  assert.equal(await page.locator(`#options button[data-option-id="${plain.answer.optionId}"] .option-gloss`).count(), 0);
+  const plainRight = plain.options.find((o) => o.id === plain.answer.optionId).zh;
+  assert.equal(await page.locator('#feedback .verdict span').first().textContent(), `Правильный ответ: ${plainRight}.`);
+  await page.locator('#leaveRound').click();
+  await page.locator('#resultsView').waitFor();
+  const answers = page.locator('#mistakeList .mistake-answers');
+  assert.ok((await answers.first().textContent()).endsWith(`✓ ${right} — ${name}`));
+  assert.ok((await answers.nth(1).textContent()).endsWith(`✓ ${plainRight}`));
   assert.deepEqual(page.errors, []);
 });

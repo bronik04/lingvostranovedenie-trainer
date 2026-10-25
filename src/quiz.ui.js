@@ -25,6 +25,34 @@ const TOPIC_MARKS = {
   'Экономика, образование, наука и спорт': '经',
   'Россия и межкультурный блок': '俄',
 };
+// раздел в строке настроек («разделы: география, история») и на карточке базы на телефоне
+const TOPIC_SHORT = {
+  'География и административное устройство': 'география',
+  'История и государство': 'история',
+  'Культура, традиции и праздники': 'культура и праздники',
+  'Литература, язык, искусство и философия': 'литература и искусство',
+  'Общество: население, этносы и религии': 'общество',
+  'Россия и межкультурный блок': 'Россия',
+  'Экономика, образование, наука и спорт': 'экономика и наука',
+};
+// подборки — досье банка: знак и короткое имя для строки настроек; название — из досье (DOSSIERS),
+// а два названия заменены по решению автора (2026-10-25)
+const DOSSIER_TITLES = { sets: 'Четыре великих и другие наборы', people: 'Известные люди' };
+const DOSSIER_MARKS = {
+  money: '钱', dynasties: '朝', landmarks: '塔', painting: '画', people: '人', 'modern-history': '近',
+  cinema: '影', space: '天', cuisine: '食', literature: '书', myths: '神', holidays: '节', nature: '山',
+  provinces: '省', crafts: '艺', sets: '四', ethnos: '族', state: '国',
+};
+const DOSSIER_SHORT = {
+  money: 'деньги', dynasties: 'династии и правители', landmarks: 'достопримечательности',
+  painting: 'живопись и каллиграфия', people: 'известные люди', 'modern-history': 'история XIX–XX веков',
+  cinema: 'кино и анимация', space: 'космос', cuisine: 'кухня и блюда', literature: 'литература',
+  myths: 'мифы и легенды', holidays: 'праздники', nature: 'природа и инженерия', provinces: 'провинции и города',
+  crafts: 'ремёсла', sets: 'четыре великих', ethnos: 'этносы и быт', state: 'государство и символы',
+};
+const dossierTitle = (id) => DOSSIER_TITLES[id] || DOSSIERS[id] || id;
+// «Семь разделов олимпиады…»
+const COUNT_WORDS = ['', 'Один', 'Два', 'Три', 'Четыре', 'Пять', 'Шесть', 'Семь', 'Восемь', 'Девять', 'Десять'];
 // до стольких вопросов ход раунда рисуется кружками, длиннее — полосой
 const MAX_STEP_DOTS = 14;
 // на телефоне под кнопкой «Следующий вопрос» после докрутки остаётся столько воздуха
@@ -59,11 +87,11 @@ const QUIZ_HINTS = {
 const $ = (id) => document.getElementById(id);
 
 const defaultFilters = () => ({
-  topics: [], years: [], stages: [], mode: 'all', onlyVerified: false, origin: 'all',
+  topics: [], dossiers: [], years: [], stages: [], mode: 'all', onlyVerified: false, origin: 'all',
 });
 
 function defaultStudySettings() {
-  return { filters: defaultFilters(), size: 10, format: 'choice' };
+  return { filters: defaultFilters(), size: 10, format: 'choice', topicsBy: 'sections' };
 }
 
 function loadStudySettings() {
@@ -82,6 +110,8 @@ const state = {
   filters: savedStudySettings.filters,
   size: savedStudySettings.size,
   format: savedStudySettings.format,
+  // как выбираются темы раунда: 'sections' — разделами, 'dossiers' — подборками
+  topicsBy: savedStudySettings.topicsBy,
   // формат замораживается на старте раунда: настройки во время раунда не видны
   roundFormat: 'choice',
   // фильтры (с режимом) и длина, с которыми начат раунд: «Новый раунд» в итогах повторяет их
@@ -267,7 +297,7 @@ function saveStudySettings() {
   try {
     localStorage.setItem(STUDY_SETTINGS_KEY, JSON.stringify({
       version: 1,
-      settings: { filters: state.filters, size: state.size, format: state.format },
+      settings: { filters: state.filters, size: state.size, format: state.format, topicsBy: state.topicsBy },
     }));
   } catch {}
 }
@@ -476,41 +506,50 @@ function renderBankCount() {
   $('bankCount').textContent = `Пройдено ${done} из ${QUESTION_BANK.length}`;
 }
 
+/** Строка выбора темы: знак, название, «пройдено N/M» и флажок; отмеченные — в state.filters[key]. */
+function topicCheck(value, name, markText, key) {
+  const label = document.createElement('label');
+  label.className = 'topic-check';
+  const mark = document.createElement('span');
+  mark.className = 'topic-mark';
+  mark.lang = 'zh-Hans';
+  mark.setAttribute('aria-hidden', 'true');
+  mark.textContent = markText;
+  const text = document.createElement('span');
+  text.className = 'topic-text';
+  const caption = document.createElement('span');
+  caption.className = 'topic-name';
+  caption.textContent = name;
+  const count = document.createElement('span');
+  count.className = 'topic-count';
+  const progress = document.createElement('span');
+  progress.className = 'topic-progress';
+  count.append('пройдено ', progress);
+  text.append(caption, count);
+  const input = document.createElement('input');
+  input.type = 'checkbox';
+  input.value = value;
+  label.append(mark, text, input);
+  input.addEventListener('change', (event) => {
+    const list = state.filters[key];
+    if (event.target.checked) list.push(value);
+    else list.splice(list.indexOf(value), 1);
+    saveStudySettings();
+    renderSetup();
+  });
+  return label;
+}
+
+const bankTopics = () => [...new Set(QUESTION_BANK.map((r) => r.topic))].sort();
+const bankDossiers = () => [...new Set(QUESTION_BANK.map((r) => r.dossier).filter(Boolean))]
+  .sort((a, b) => dossierTitle(a).localeCompare(dossierTitle(b), 'ru'));
+
 function renderSetup() {
-  const topics = [...new Set(QUESTION_BANK.map((r) => r.topic))].sort();
   if (!$('topicControls').children.length) {
-    for (const topic of topics) {
-      const label = document.createElement('label');
-      label.className = 'topic-check';
-      const mark = document.createElement('span');
-      mark.className = 'topic-mark';
-      mark.lang = 'zh-Hans';
-      mark.setAttribute('aria-hidden', 'true');
-      mark.textContent = TOPIC_MARKS[topic] || '文';
-      const text = document.createElement('span');
-      text.className = 'topic-text';
-      const caption = document.createElement('span');
-      caption.className = 'topic-name';
-      caption.textContent = topic;
-      const count = document.createElement('span');
-      count.className = 'topic-count';
-      const progress = document.createElement('span');
-      progress.className = 'topic-progress';
-      count.append('пройдено ', progress);
-      text.append(caption, count);
-      const input = document.createElement('input');
-      input.type = 'checkbox';
-      input.value = topic;
-      label.append(mark, text, input);
-      input.addEventListener('change', (event) => {
-        const list = state.filters.topics;
-        if (event.target.checked) list.push(topic);
-        else list.splice(list.indexOf(topic), 1);
-        saveStudySettings();
-        renderSetup();
-      });
-      $('topicControls').append(label);
-    }
+    const topics = bankTopics();
+    $('topicControls').append(...topics.map((topic) => topicCheck(topic, topic, TOPIC_MARKS[topic] || '文', 'topics')));
+    $('dossierControls').append(...bankDossiers().map((id) =>
+      topicCheck(id, dossierTitle(id), DOSSIER_MARKS[id] || '文', 'dossiers')));
 
     const years = [...new Set(QUESTION_BANK.flatMap((r) => r.occurrences.map((o) => o.year)))].sort();
     fillSelect($('yearFilter'), 'Все годы', years.map((y) => [y, y]));
@@ -519,14 +558,7 @@ function renderSetup() {
     fillSelect($('stageFilter'), 'Все этапы', stages.map((code) => [code, stageLabel(code)]));
     fillSelect($('databaseTopic'), 'Все темы', topics.map((t) => [t, t]));
   }
-
-  const counts = progressByTopic(QUESTION_BANK, state.progress);
-  for (const label of $('topicControls').children) {
-    const input = label.querySelector('input');
-    input.checked = state.filters.topics.includes(input.value);
-    const { completed, total } = counts[input.value] ?? { completed: 0, total: 0 };
-    label.querySelector('.topic-progress').textContent = `${completed}/${total}`;
-  }
+  renderTopicChoice();
   $('yearFilter').value = state.filters.years[0] || '';
   $('stageFilter').value = state.filters.stages[0] || '';
   const size = state.size === ALL_SIZE ? 'all' : String(state.size);
@@ -584,7 +616,8 @@ function renderHome(modeCounts) {
   $('eligibleNotice').textContent = notice;
   // первый визит: пока настройки не трогали, подпись под кнопкой просто объясняет раунд
   const { filters } = state;
-  const plain = filters.mode === 'all' && state.format === 'choice' && !filters.topics.length && !filters.years.length
+  const plain = filters.mode === 'all' && state.format === 'choice' && !filters.topics.length
+    && !filters.dossiers.length && !filters.years.length
     && !filters.stages.length && filters.origin === 'all' && !filters.onlyVerified;
   $('firstCaption').textContent = !plain || !available ? `${summary} ${notice}`
     : `${state.size === ALL_SIZE ? 'Все вопросы базы в случайном порядке'
@@ -598,7 +631,7 @@ function renderHome(modeCounts) {
   }
   $('emptyActions').hidden = available !== 0;
   $('startBarText').textContent = available
-    ? `${MODE_SUMMARY[filters.mode]}, ${inRound} из ${available} подходящих`
+    ? `${chosenCount(filters) || 'Все темы'}, ${inRound} из ${available} подходящих`
     : 'Под фильтры не подходит ни один вопрос';
 
   // быстрые входы: раунд из ошибок или из вопросов, которые пора повторить; пустой не показывается
@@ -623,13 +656,33 @@ function renderHome(modeCounts) {
   updateStartBar();
 }
 
-/** Фильтры словами: «все темы», «История и государство», «только с олимпиад», «2015/16»… В строке
- * настроек одна тема берётся в кавычки, чтобы название не читалось как начало предложения. */
-function filterLabels({ topics, years, stages, origin, onlyVerified }, inSentence = false) {
+/** Темы словами. В строке настроек — коротко: «разделы: география, история», «подборка: кухня и
+ * блюда»; в заголовке раздела — название одной темы или «2 подборки». */
+function topicsLabel({ topics, dossiers = [] }, inSentence = false) {
+  const sets = dossiers.length > 0;
+  const list = sets ? dossiers : topics;
+  if (!list.length) return 'все темы';
+  if (inSentence) {
+    const kind = sets ? (list.length === 1 ? 'подборка' : 'подборки') : list.length === 1 ? 'раздел' : 'разделы';
+    return `${kind}: ${list.map((item) => (sets ? DOSSIER_SHORT[item] : TOPIC_SHORT[item]) || item).join(', ')}`;
+  }
+  return list.length === 1 ? (sets ? dossierTitle(list[0]) : list[0]) : chosenCount({ topics, dossiers });
+}
+
+/** «2 подборки», «3 раздела»; ничего не выбрано — пустая строка. */
+function chosenCount({ topics, dossiers = [] }) {
+  const sets = dossiers.length > 0;
+  const count = sets ? dossiers.length : topics.length;
+  return count ? `${count} ${pluralRu(count, sets ? ['подборка', 'подборки', 'подборок'] : ['раздел', 'раздела', 'разделов'])}` : '';
+}
+
+/** Фильтры словами: темы, «только с олимпиад», «2015/16», «муниципальный этап»… У раунда из
+ * найденного в базе фильтр один — сами найденные вопросы. */
+function filterLabels(filters, inSentence = false) {
+  if (filters.ids) return ['найденные в базе'];
+  const { years, stages, origin, onlyVerified } = filters;
   return [
-    topics.length === 0 ? 'все темы'
-      : topics.length > 1 ? `${topics.length} ${pluralRu(topics.length, ['тема', 'темы', 'тем'])}`
-        : inSentence ? `тема «${topics[0]}»` : topics[0],
+    topicsLabel(filters, inSentence),
     origin === 'olympiad' ? 'только с олимпиад' : origin === 'addition' ? 'только дополнения' : '',
     years[0] ? years[0].replace('-', '/') : '',
     stages[0] ? `${stageLabel(stages[0])} этап` : '',
@@ -646,6 +699,41 @@ function sizeLabel(size) {
 function settingsLine({ filters, size }, format, withSize = true) {
   return `${[MODE_SUMMARY[filters.mode], FORMAT_SUMMARY[format], withSize ? sizeLabel(size) : '',
     ...filterLabels(filters, true)].filter(Boolean).join(', ')}.`;
+}
+
+/** «Темы раунда»: разделы или подборки — отметки, «пройдено N/M», подсказка и итог выбора. */
+function renderTopicChoice() {
+  const bySections = state.topicsBy === 'sections';
+  for (const input of document.querySelectorAll('input[name="topicsBy"]')) input.checked = input.value === state.topicsBy;
+  $('topicControls').hidden = !bySections;
+  $('dossierControls').hidden = bySections;
+  const groups = [
+    [$('topicControls'), progressByTopic(QUESTION_BANK, state.progress), state.filters.topics],
+    [$('dossierControls'), progressByDossier(QUESTION_BANK, state.progress), state.filters.dossiers],
+  ];
+  for (const [container, counts, picked] of groups) {
+    for (const label of container.children) {
+      const input = label.querySelector('input');
+      input.checked = picked.includes(input.value);
+      const { completed, total } = counts[input.value] ?? { completed: 0, total: 0 };
+      label.querySelector('.topic-progress').textContent = `${completed}/${total}`;
+    }
+  }
+  const sections = $('topicControls').children.length;
+  $('sectionsCount').textContent = String(sections);
+  $('dossiersCount').textContent = String($('dossierControls').children.length);
+  const questions = (count) => `${count} ${pluralRu(count, ['вопрос', 'вопроса', 'вопросов'])}`;
+  const bank = QUESTION_BANK.length;
+  $('topicsHelp').textContent = bySections
+    ? `${COUNT_WORDS[sections] || sections} ${pluralRu(sections, ['раздел', 'раздела', 'разделов'])} олимпиады: в них все ${questions(bank)}.`
+    : `Подборки собраны по темам досье: ${QUESTION_BANK.filter((r) => r.dossier).length} из ${bank} ${ofQuestions(bank)}.`;
+  $('topicsHelpMore').textContent = bySections
+    ? ' Если не выбрать ни одного, в раунд попадут все.' : ' Отметьте одну или несколько.';
+  const [, counts, picked] = groups[bySections ? 0 : 1];
+  const chosen = picked.reduce((sum, item) => sum + (counts[item]?.total ?? 0), 0);
+  $('topicsFoot').textContent = picked.length
+    ? `Выбрано: ${chosenCount(state.filters)}, ${questions(chosen)}.`
+    : 'Ничего не выбрано — в раунд попадут вопросы из всех тем.';
 }
 
 /** Свёрнутые «Режим», «Формат», «Темы раунда»: в заголовке — что выбрано сейчас. */
@@ -789,9 +877,15 @@ function setStage(stage) {
   $('quizHint').textContent = QUIZ_HINTS[stage];
 }
 
+// на телефоне короткие варианты (города, династии, виды чая) встают сеткой два на два — вопрос
+// и все четыре варианта помещаются на один экран; длинные остаются столбиком
+const COMPACT_OPTION = 4;
+
 function renderOptions(record) {
   $('options').innerHTML = '';
-  for (const option of labelledOptions(record)) {
+  const options = labelledOptions(record);
+  $('options').classList.toggle('is-compact', options.every((option) => [...option.zh.trim()].length <= COMPACT_OPTION));
+  for (const option of options) {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'option';
@@ -873,18 +967,19 @@ function chooseOption(record, optionId) {
   const outcome = !verdict.correct ? 'wrong' : hinted ? 'partial' : 'correct';
   commitAnswer(record, outcome, { optionId });
   markOptions(record, optionId);
-  const right = record.options.find((option) => option.id === verdict.answerOptionId);
   showFeedback(record, verdict.correct ? 'good' : 'bad', [
     `<strong>${verdict.correct ? 'Верно' : 'Неверно'}</strong>`,
     verdict.correct
       ? hinted ? '<span>С подсказкой — засчитано как «вспомнил неточно».</span>' : ''
-      : `<span>Правильный ответ: <span lang="zh-Hans">${escapeHtml(right.zh)}</span>.</span>`,
+      : `<span>${rightAnswerHtml(record)}</span>`,
   ].join(''));
 }
 
-/** После выбора: верный — нефритом, выбранный неверный — киноварью, подписи под неверными. */
+/** После выбора: верный — нефритом, выбранный неверный — киноварью, подписи под неверными, а под
+ * верным — его русское название (у вопросов досье). */
 function markOptions(record, optionId) {
   const glosses = new Map(optionGlosses(record).map((item) => [item.optionId, item.gloss]));
+  if (record.answer.gloss) glosses.set(record.answer.optionId, record.answer.gloss);
   for (const button of $('options').querySelectorAll('button')) {
     button.disabled = true;
     if (button.dataset.optionId === record.answer.optionId) {
@@ -907,6 +1002,13 @@ function markOptions(record, optionId) {
       button.append(note);
     }
   }
+}
+
+/** «Правильный ответ: 莫高窟 — Пещеры Могао.» — русское название есть у вопросов досье. */
+function rightAnswerHtml(record) {
+  const right = record.options.find((option) => option.id === record.answer.optionId);
+  const name = answerName(record);
+  return `Правильный ответ: <span lang="zh-Hans">${escapeHtml(right.zh)}</span>${name ? ` — ${escapeHtml(name)}` : ''}.`;
 }
 
 /** Разбор под вопросом: строка вердикта (её задаёт формат), пояснение, источники. */
@@ -973,8 +1075,10 @@ function revealAnswer() {
   $('recallPrompt').classList.add('hidden');
   const reading = PINYIN[right.zh]
     ? `<span class="pinyin" lang="zh-Latn-pinyin">${escapeHtml(PINYIN[right.zh])}</span>` : '';
+  const name = answerName(record);
   showFeedback(record, 'reveal',
-    `<strong lang="zh-Hans">${escapeHtml(right.zh)}</strong>${reading}<span>Правильный ответ</span>`);
+    `<strong lang="zh-Hans">${escapeHtml(right.zh)}</strong>${reading}<span>Правильный ответ${
+      name ? ` — ${escapeHtml(name)}` : ''}</span>`);
   $('recallRate').classList.remove('hidden');
 }
 
@@ -1016,12 +1120,11 @@ function answerTrueFalse(saidTrue) {
     button.disabled = true;
     if (button.id === (saidTrue ? 'tfTrue' : 'tfFalse')) button.setAttribute('aria-pressed', 'true');
   }
-  const answerOption = record.options.find((option) => option.id === record.answer.optionId);
   const shown = record.options.find((option) => option.id === statement.optionId);
   const about = statement.isTrue
-    ? `<span lang="zh-Hans">${escapeHtml(shown.zh)}</span> — правильный ответ.`
+    ? rightAnswerHtml(record)
     : `${shown.gloss ? `<span lang="zh-Hans">${escapeHtml(shown.zh)}</span> — ${escapeHtml(shown.gloss)}. ` : ''}`
-      + `Правильный ответ: <span lang="zh-Hans">${escapeHtml(answerOption.zh)}</span>.`;
+      + rightAnswerHtml(record);
   showFeedback(record, right ? 'good' : 'bad', `<strong>${right ? 'Правильно' : 'Ошибка'}</strong><span>${about}</span>`);
 }
 
@@ -1155,6 +1258,7 @@ function renderMistakes() {
         + `<span class="picked" lang="zh-Hans">${pick.said !== undefined && pick.isTrue ? '✓' : '✕'} ${escapeHtml(picked.zh)}</span>, верно `
         : 'Верно ',
       `<span class="right" lang="zh-Hans">✓ ${escapeHtml(right.zh)}</span>`,
+      answerName(record) ? ` — ${escapeHtml(answerName(record))}` : '',
       '</span></span>',
       '<span class="mistake-arrow" aria-hidden="true">▾</span>',
       '</button>',
@@ -1182,14 +1286,37 @@ function openMistake(index) {
 
 /* ---------- база ---------- */
 
+// мой результат по вопросу — по последнему ответу: класс метки, текст на ноутбуке и на телефоне
+const MY_RESULTS = {
+  wrong: ['bad', '✕ последний ответ — ошибка', '✕ ошибка'],
+  right: ['ok', '✓ верно', '✓ верно'],
+  new: ['none', 'ещё не отвечали', 'не отвечали'],
+};
+
+function myResult(record) {
+  const entry = state.progress[record.id];
+  return !entry?.completed ? 'new' : entry.lastCorrect === false ? 'wrong' : 'right';
+}
+
+/** Текст карточки с подсвеченными словами поиска. */
+function marked(text) {
+  return searchSegments(text, $('databaseSearch').value)
+    .map((segment) => (segment.mark ? `<mark>${escapeHtml(segment.text)}</mark>` : escapeHtml(segment.text))).join('');
+}
+
+/** Текст для ноутбука и короткий для телефона — оба в разметке, виден один (wide-only / phone-only). */
+const wideOrShort = (wide, short) => (wide === short ? escapeHtml(wide)
+  : `<span class="wide-only">${escapeHtml(wide)}</span><span class="phone-only">${escapeHtml(short)}</span>`);
+
+const databaseFiltered = () => Boolean($('databaseSearch').value.trim() || $('databaseTopic').value || $('databaseMine').value);
+
 function filteredDatabaseRows() {
   const topic = $('databaseTopic').value;
-  const status = $('databaseStatus').value;
+  const mine = $('databaseMine').value;
   return QUESTION_BANK.filter((record) =>
     matchesDatabaseSearch(record, $('databaseSearch').value)
     && (!topic || record.topic === topic)
-    && (!status || record.answer.state === status));
-
+    && (!mine || myResult(record) === mine));
 }
 
 function appendDatabaseRows(rows) {
@@ -1197,30 +1324,32 @@ function appendDatabaseRows(rows) {
     const article = document.createElement('article');
     article.className = 'row';
     const answered = record.options.find((option) => option.id === record.answer.optionId);
-    const done = state.progress[record.id]?.completed;
     const origin = recordOrigin(record);
-    const appearances = record.occurrences.map(occurrenceLabel).join('; ');
+    const appearances = record.occurrences.map(occurrenceLabel).join('; ') || (origin.isAddition ? origin.label : '');
     const sources = evidenceList(record.evidence);
-    const verified = record.answer.state === 'verified';
     const disputed = record.answer.state === 'needs-review' || record.answer.state === 'conflict';
+    const [kind, wide, short] = MY_RESULTS[myResult(record)];
+    const shortTopic = TOPIC_SHORT[record.topic] || record.topic;
+    const name = answerName(record);
     article.innerHTML = [
       '<div class="row-top">',
-      `<span class="row-topic">${escapeHtml(record.topic)}</span>`,
-      `<span class="tag${verified ? ' done' : ''}${disputed ? ' review' : ''}">${
-        verified ? '<span lang="zh-Hans" aria-hidden="true">✓</span> ' : ''}${STATUS_NAMES[record.answer.state]}</span>`,
-      done ? '<span class="tag"><span lang="zh-Hans" aria-hidden="true">●</span> пройден</span>' : '',
-      origin.isAddition ? `<span class="tag origin">${origin.label}</span>` : '',
+      `<span class="row-topic">${wideOrShort(record.topic, shortTopic[0].toLocaleUpperCase('ru') + shortTopic.slice(1))}</span>`,
+      `<span class="my ${kind}">${wideOrShort(wide, short)}</span>`,
+      // проверенный ответ — норма; метка только у ответа, который ещё не перепроверен или спорен
+      record.answer.state === 'verified' ? ''
+        : `<span class="tag${disputed ? ' review' : ''}">${STATUS_NAMES[record.answer.state]}</span>`,
       hasOptionPool(record) ? '<span class="tag">варианты меняются</span>' : '',
       record.parseWarnings?.length ? `<span class="tag warn">${escapeHtml(record.parseWarnings.join('; '))}</span>` : '',
       '</div>',
-      `<h3>${escapeHtml(record.questionRu)}</h3>`,
+      `<h3>${marked(record.questionRu)}</h3>`,
       record.questionZh ? `<p class="row-zh-question" lang="zh-Hans">${escapeHtml(record.questionZh)}</p>` : '',
-      `<p class="row-options" lang="zh-Hans">${record.options.map((o) => escapeHtml(o.zh)).join(' · ')}</p>`,
+      `<p class="row-options" lang="zh-Hans">${record.options.map((o) => marked(o.zh)).join(' · ')}</p>`,
       appearances ? `<p class="row-meta">${escapeHtml(appearances)}</p>` : '',
       answered || record.explanation.ru ? [
         '<details class="row-reveal"><summary>Показать ответ</summary><div class="row-panel">',
-        answered ? `<p class="row-answer">Ответ: <span class="zh" lang="zh-Hans">${escapeHtml(answered.zh)}</span></p>` : '',
-        record.explanation.ru ? `<p class="row-why">${escapeHtml(record.explanation.ru)}</p>` : '',
+        answered ? `<p class="row-answer"><span>Ответ: <span class="zh" lang="zh-Hans">${escapeHtml(answered.zh)}</span>${
+          name ? ` — ${escapeHtml(name)}` : ''}</span></p>` : '',
+        record.explanation.ru ? `<p class="row-why">${marked(record.explanation.ru)}</p>` : '',
         glossList(record),
         sources ? `<p class="row-sources-title">Источники</p><ul class="row-sources">${sources}</ul>` : '',
         '</div></details>',
@@ -1237,14 +1366,40 @@ function appendDatabaseRows(rows) {
 // «из 461 вопроса», «из 50 вопросов»: после «из» родительный падеж
 const ofQuestions = (count) => pluralRu(count, ['вопроса', 'вопросов', 'вопросов']);
 
+/** Раунд из найденного в базе: только эти вопросы, все сразу; режим и формат — с главной. */
+const foundSettings = (rows) => ({
+  filters: { ...defaultFilters(), mode: state.filters.mode, ids: rows.map((record) => record.id) },
+  size: ALL_SIZE,
+});
+
+/** Строка над списком: сколько найдено и мои ответы на них; «Тренировать найденные» — главная
+ * кнопка, когда поиск или фильтр что-то отобрали. */
+function renderFound(rows) {
+  const filtered = databaseFiltered();
+  const tally = { wrong: 0, right: 0, new: 0 };
+  for (const record of rows) tally[myResult(record)] += 1;
+  const questions = pluralRu(rows.length, ['вопрос', 'вопроса', 'вопросов']);
+  $('databaseFound').hidden = rows.length === 0;
+  $('foundCount').textContent = filtered
+    ? `${pluralRu(rows.length, ['Найден', 'Найдено', 'Найдено'])} ${rows.length} ${questions}`
+    : `Все ${rows.length} ${questions}`;
+  $('foundMine').textContent = `${tally.wrong} с ошибкой, ${tally.right} верно, ${tally.new} ещё не отвечали`;
+  const trainable = eligible(QUESTION_BANK, foundSettings(rows).filters, state.progress).length;
+  $('trainFound').hidden = !filtered;
+  $('trainFound').disabled = trainable === 0;
+  $('trainFound').classList.toggle('ink-btn--primary', trainable > 0);
+  $('trainFound').classList.toggle('ink-btn--secondary', trainable === 0);
+  $('trainFound').textContent = `Тренировать найденные (${trainable})`;
+}
+
 function renderDatabase(reset = true) {
   const rows = filteredDatabaseRows();
   if (reset) {
     state.databasePage = 0;
     $('databaseList').innerHTML = '';
+    renderFound(rows);
   }
   if (!rows.length) {
-    $('databaseCount').textContent = `Показано 0 из ${QUESTION_BANK.length} ${ofQuestions(QUESTION_BANK.length)}`;
     $('databaseList').innerHTML = '<p class="empty">Ничего не найдено.</p>';
     $('databaseMore').hidden = true;
     return;
@@ -1252,7 +1407,6 @@ function renderDatabase(reset = true) {
   appendDatabaseRows(databasePage(rows, state.databasePage, 50));
   state.databasePage += 1;
   const shown = Math.min(state.databasePage * 50, rows.length);
-  $('databaseCount').textContent = `Показано ${shown} из ${rows.length} ${ofQuestions(rows.length)}`;
   $('databaseMore').hidden = shown >= rows.length;
   $('databaseMore').textContent = `Показать ещё (${rows.length - shown})`;
 }
@@ -1430,7 +1584,8 @@ $('closeDatabase').addEventListener('click', backToSetup);
 $('backToSetup').addEventListener('click', backToSetup);
 $('databaseSearch').addEventListener('input', renderDatabase);
 $('databaseTopic').addEventListener('change', renderDatabase);
-$('databaseStatus').addEventListener('change', renderDatabase);
+$('databaseMine').addEventListener('change', renderDatabase);
+$('trainFound').addEventListener('click', () => startRoundFrom(foundSettings(filteredDatabaseRows()), state.format));
 $('databaseMore').addEventListener('click', () => renderDatabase(false));
 
 for (const input of document.querySelectorAll('input[name="roundSize"]')) {
@@ -1486,6 +1641,16 @@ $('stageFilter').addEventListener('change', (event) => {
   saveStudySettings();
   renderSetup();
 });
+for (const input of document.querySelectorAll('input[name="topicsBy"]')) {
+  input.addEventListener('change', (event) => {
+    // способ выбора один: переключение сбрасывает отметки обоих списков
+    state.topicsBy = event.target.value;
+    state.filters.topics = [];
+    state.filters.dossiers = [];
+    saveStudySettings();
+    renderSetup();
+  });
+}
 // кнопка стоит в «Темах раунда» и сбрасывает их фильтры; режим — отдельный раздел, его не трогает
 $('clearFilters').addEventListener('click', () => {
   state.filters = { ...defaultFilters(), mode: state.filters.mode };
@@ -1509,6 +1674,9 @@ $('importProgressFile').addEventListener('change', (event) => {
 });
 
 $('footerNote').textContent = bankSummary(QUESTION_BANK);
+// шапка базы: на телефоне — короче
+$('databaseCount').innerHTML = `${QUESTION_BANK.length} ${pluralRu(QUESTION_BANK.length, ['вопрос', 'вопроса', 'вопросов'])} с ответами`
+  + '<span class="wide-only">, пояснениями и источниками</span><span class="phone-only"> и пояснениями</span>';
 
 let startBarFrame = 0;
 const scheduleStartBar = () => {

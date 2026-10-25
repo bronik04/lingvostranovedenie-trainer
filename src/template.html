@@ -163,8 +163,15 @@
       <details class="chapter-body chapter-fold" id="topicsFold">
       <summary><span class="ink-title-2">Темы раунда</span><span class="fold-value" id="topicsValue"></span><span class="fold-arrow" aria-hidden="true">▾</span></summary>
       <fieldset class="fold-body" aria-label="Темы раунда">
-        <p class="ink-caption">Если не выбрать темы, в раунд попадут вопросы из всех разделов.</p>
+        <!-- два способа выбрать темы: разделы олимпиады или подборки по досье; включён один -->
+        <div class="ink-pills mode-options" role="radiogroup" aria-label="Как выбрать темы">
+          <label class="mode-option"><input type="radio" name="topicsBy" value="sections" checked><span class="ink-pill">Разделы <span class="pill-count" id="sectionsCount"></span></span></label>
+          <label class="mode-option"><input type="radio" name="topicsBy" value="dossiers"><span class="ink-pill">Подборки <span class="pill-count" id="dossiersCount"></span></span></label>
+        </div>
+        <p class="ink-caption"><span id="topicsHelp"></span><span class="wide-only" id="topicsHelpMore"></span></p>
         <div class="topics" id="topicControls"></div>
+        <div class="topics" id="dossierControls" hidden></div>
+        <p class="ink-caption topics-foot wide-only" id="topicsFoot"></p>
         <div class="origin-filter">
           <p class="ink-caption origin-title" id="originTitle">Откуда вопросы</p>
           <div class="ink-pills mode-options" role="radiogroup" aria-labelledby="originTitle">
@@ -298,24 +305,29 @@
   <section class="view database" id="databaseView" hidden>
     <div class="database-head">
       <div>
-        <p class="ink-eyebrow">Справочник</p>
         <h2 class="database-title">Вопросы в базе</h2>
         <p class="ink-caption" id="databaseCount"></p>
       </div>
-      <button class="ink-btn ink-btn--secondary" id="closeDatabase" type="button">На главную</button>
+      <button class="ink-btn ink-btn--secondary wide-only" id="closeDatabase" type="button">На главную</button>
     </div>
     <div class="database-bar" role="search">
       <label class="field field-search">Поиск<input class="search" id="databaseSearch" type="search" placeholder="Вопрос, ответ, тема или пояснение"></label>
       <label class="field">Тема<select id="databaseTopic"><option value="">Все темы</option></select></label>
-      <label class="field">Статус
-        <select id="databaseStatus">
-          <option value="">Любой статус</option>
-          <option value="verified">Проверено</option>
-          <option value="unverified">Не проверено</option>
-          <option value="conflict">Расхождение ключей</option>
-          <option value="needs-review">Нет ответа</option>
+      <label class="field">Мои ответы
+        <select id="databaseMine">
+          <option value="">Все</option>
+          <option value="wrong">С ошибкой</option>
+          <option value="right">Верно</option>
+          <option value="new">Не отвечал</option>
         </select>
       </label>
+    </div>
+    <div class="found" id="databaseFound">
+      <div class="found-text">
+        <p class="found-count" id="foundCount" aria-live="polite"></p>
+        <p class="ink-caption" id="foundMine"></p>
+      </div>
+      <button class="ink-btn ink-btn--primary" id="trainFound" type="button">Тренировать найденные</button>
     </div>
     <div class="db-list" id="databaseList"></div>
     <div class="actions database-foot">
@@ -480,6 +492,8 @@
 <script>
 const QUESTION_BANK = /*QUESTION_BANK*/;
 const PINYIN = /*PINYIN*/;
+// названия подборок (досье) для «Тем раунда»: id → title
+const DOSSIERS = /*DOSSIERS*/;
 /*QUIZ_ENGINE*/
 const CHENGYU_BANK = /*CHENGYU_BANK*/;
 /*CHENGYU_ENGINE*/
