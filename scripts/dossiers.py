@@ -722,9 +722,9 @@ def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
 def _gloss_sources(bank: list[dict], loaded: list[tuple[dict, list[dict]]]) -> list[tuple]:
     """Записи с подписями: досье (или None), метка, id записи, место ответа (или None), варианты, id ответа.
 
-    Свой вопрос досье — из банка, если запись уже там, иначе из файла (черновик). Встроенный — с
-    набором и подписями из таблицы, как его соберёт слой встраивания. Прочие записи банка — как
-    есть, с подписями glosses.json."""
+    Свой вопрос досье — из банка, если запись уже там, иначе из файла (черновик). Принятый
+    встроенный — с набором и подписями из таблицы, как его соберёт слой встраивания; черновик
+    встраивания и прочие записи банка — как есть, с подписями glosses.json."""
     by_id = {record['id']: record for record in bank}
     sources: list[tuple] = []
     covered: set[str] = set()
@@ -736,7 +736,9 @@ def _gloss_sources(bank: list[dict], loaded: list[tuple[dict, list[dict]]]) -> l
             if 'embeds' in question:
                 if record is None:
                     continue
-                embedded, _ = embed_record(original_record(record), question, dossier)
+                # черновик встраивания ещё не встроен: ученик видит запись как есть, с подписями glosses.json
+                embedded = (embed_record(original_record(record), question, dossier)[0]
+                            if question['status'] == 'accepted' else None)
                 options, answer_id = (embedded or record)['options'], record['answer']['optionId']
             elif record is not None:
                 options, answer_id = record['options'], record['answer']['optionId']
@@ -823,8 +825,9 @@ def gloss_leaks(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
     из двух должна дать подпись: вариант без неё ученик видит и так. Соседний вопрос — любая запись
     банка; русские названия ответа олимпиадной записи берутся из ячеек досье с тем же текстом.
 
-    Исключения те же, что у `cross_leak_errors`: мостик, стороны одной строки, группа фактов,
-    одиночный иероглиф из другого досье. Строка олимпиадной записи, привязанной к досье, — из списков
+    Исключения те же, что у `cross_leak_errors`: мостик, стороны одной строки, группа фактов. Одиночный
+    иероглиф (唐, 秦) в подписях не ищется совсем, а не только из другого досье: подписи русские, а
+    иероглиф стоит внутри других слов; вариант из одного иероглифа зацепкой считается только в своём досье. Строка олимпиадной записи, привязанной к досье, — из списков
     `olympiad` (`scripts/fact_rows.py`): раунд не ставит её рядом с вопросами о той же строке. Подпись правильного ответа не ищется: раунд её не
     показывает (`optionGlosses`, src/quiz.mjs).
     """
@@ -870,6 +873,8 @@ def gloss_leaks(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
     for entry in others:
         if entry[4] is not None:
             rows_of.setdefault(entry[5], set()).add(entry[4][0])
+    drafts = {f'{dossier["id"]}/{question["id"]}' for dossier, questions in loaded
+              for question in questions if question['status'] == 'draft'}
     group_of = _group_owner(groups)
     found_in: dict[str, set[str]] = {}
     leaks: list[dict] = []
@@ -909,7 +914,9 @@ def gloss_leaks(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
                                   'clues': sorted(clues),
                                   # подпись о той же строке, о которой спрашивает соседний вопрос
                                   'row': place is not None
-                                  and f'{place[0].rsplit("/", 1)[0]}/{option["id"]}' in rows_of.get(other_record, ())})
+                                  and f'{place[0].rsplit("/", 1)[0]}/{option["id"]}' in rows_of.get(other_record, ()),
+                                  # черновика в банке нет: ученик этой пары пока не видит
+                                  'recordDraft': label in drafts, 'otherDraft': other in drafts})
     return leaks
 
 
@@ -918,13 +925,21 @@ GLOSS_LEAKS_MARK = '<!-- Отчёт пишет сборка (scripts/merge_bank.
 
 def gloss_leak_report(leaks: list[dict]) -> str:
     """Отчёт `data/review/gloss-leaks.md`: по подписи — чьи ответы она выдаёт и в каких вопросах видна."""
+    def mark(label: str, draft: bool) -> str:
+        return f'{label} (черновик)' if draft else label
+
     by_gloss: dict[tuple[str, str], dict] = {}
     for leak in leaks:
         item = by_gloss.setdefault((leak['zh'], leak['gloss']), {'shown': set(), 'others': {}})
-        item['shown'].add(leak['record'])
-        item['others'][leak['other']] = leak
-    pairs = len({(leak['record'], leak['other']) for leak in leaks})
-    same_row = sum(1 for leak in leaks if leak['row'])
+        item['shown'].add(mark(leak['record'], leak['recordDraft']))
+        # одну подпись с одним соседом находят из разных вопросов: ответы, зацепки и «та же строка» — по всем
+        other = item['others'].setdefault(mark(leak['other'], leak['otherDraft']),
+                                          {'answer': [], 'clues': set(), 'row': False})
+        other['answer'] += [name for name in leak['answer'] if name not in other['answer']]
+        other['clues'] |= set(leak['clues'])
+        other['row'] = other['row'] or leak['row']
+    pairs = {(leak['record'], leak['other']) for leak in leaks}
+    same_row = len({(leak['record'], leak['other']) for leak in leaks if leak['row']})
     lines = [GLOSS_LEAKS_MARK, '', '# Утечки через подписи вариантов', '',
              'Подпись неверного варианта ученик видит после ответа. Утечка — когда вариант с подписью называет',
              'ответ соседнего вопроса и то, о чём тот спрашивает: сам вариант или другое название из его текста',
@@ -932,14 +947,15 @@ def gloss_leak_report(leaks: list[dict]) -> str:
              'фактов, одна строка, мостик. Сборку не останавливает: закрыть утечку — правка подписи (с «да» автора)',
              'или группа фактов.', '',
              f'Подписей с утечкой: {len(by_gloss)}; выданных вопросов: {len({leak["other"] for leak in leaks})}; '
-             f'пар «вопрос с подписью → соседний вопрос»: {pairs}, из них {same_row} — подпись о той же строке досье, '
-             'о которой спрашивает соседний вопрос («та же строка»).']
+             f'пар «вопрос с подписью → соседний вопрос»: {len(pairs)}, из них {same_row} — подпись о той же строке досье, '
+             'о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними '
+             'помечены «(черновик)».']
     for (zh, gloss), item in sorted(by_gloss.items(), key=lambda pair: (-len(pair[1]['others']), pair[0])):
         lines += ['', f'## {zh} — {gloss}', '']
         for other, leak in sorted(item['others'].items()):
             row_note = ', та же строка' if leak['row'] else ''
             lines.append(f'- выдаёт {other}: ответ {", ".join(leak["answer"])}; '
-                         f'зацепка {", ".join(leak["clues"])}{row_note}')
+                         f'зацепка {", ".join(sorted(leak["clues"]))}{row_note}')
         lines.append(f'- видна в {len(item["shown"])}: {", ".join(sorted(item["shown"]))}')
     return '\n'.join(lines) + '\n'
 
@@ -1126,6 +1142,15 @@ def removed_id_errors(ids, removed: dict[str, dict]) -> list[str]:
             for record_id in ids if record_id in removed]
 
 
+def bank_view(bank: list[dict], loaded: list[tuple[dict, list[dict]]]) -> list[dict]:
+    """bank.json без своих вопросов досье: они берутся из файлов (bank.json обновляет только сборка).
+    Встроенное дополнение (`addition-*` с `embeds`) — тоже `origin: addition` и `dossier`, но это
+    запись банка, как олимпиадная: её текст есть только в банке."""
+    embedded = {question['embeds'] for _, questions in loaded for question in questions if 'embeds' in question}
+    return [record for record in bank
+            if not (record.get('origin') == 'addition' and 'dossier' in record and record['id'] not in embedded)]
+
+
 def check_dossiers(directory: Path, bank: list[dict], glosses: dict[str, dict],
                    groups: dict[str, list[str]] | None = None,
                    reports: Path | None = None,
@@ -1150,7 +1175,7 @@ def check_dossiers(directory: Path, bank: list[dict], glosses: dict[str, dict],
             loaded.append(load_dossier(table_path, questions_path, bank, groups))
         except ValueError as error:
             errors.append(str(error))
-    olympiad_view = [record for record in bank if not (record.get('origin') == 'addition' and 'dossier' in record)]
+    olympiad_view = bank_view(bank, loaded)
     errors += validate_links({data['id']: data for data, _ in loaded})
     errors += cross_leak_errors(olympiad_view, loaded, groups)
     errors += embed_errors(bank, loaded, glosses, drafts=True)
@@ -1177,14 +1202,12 @@ def main() -> None:
         rows = sum(len(table['rows']) for table in data['tables'].values())
         print(f'{data["id"]}: строк {rows}, вопросов {len(questions)}, принято {accepted}')
     # подписи сборку не останавливают (отчёт data/review/gloss-leaks.md); здесь — те, что касаются черновиков
-    olympiad_view = [record for record in bank if not (record.get('origin') == 'addition' and 'dossier' in record)]
-    leaks = gloss_leaks(olympiad_view, loaded, groups)
-    drafts = {f'{data["id"]}/{question["id"]}' for data, questions in loaded
-              for question in questions if question['status'] == 'draft'}
+    # число считается по файлам досье (тексты без правок editorial.json), поэтому может отличаться от отчёта
+    leaks = gloss_leaks(bank_view(bank, loaded), loaded, groups)
     print(f'подписи: пар с утечкой {len({(leak["record"], leak["other"]) for leak in leaks})}, '
           'список — data/review/gloss-leaks.md (пишет сборка)')
     for leak in leaks:
-        if leak['record'] in drafts or leak['other'] in drafts:
+        if leak['recordDraft'] or leak['otherDraft']:
             print(f' - {leak["record"]}: подпись {leak["zh"]} выдаёт ответ {leak["other"]} {leak["answer"]}, '
                   f'зацепка {leak["clues"]}')
     if errors:

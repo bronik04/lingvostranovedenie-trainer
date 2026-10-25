@@ -8,7 +8,7 @@
 фактов, одна строка, мостик. Сборку не останавливает: закрыть утечку — правка подписи (с «да» автора)
 или группа фактов.
 
-Подписей с утечкой: 493; выданных вопросов: 343; пар «вопрос с подписью → соседний вопрос»: 2531, из них 1396 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»).
+Подписей с утечкой: 493; выданных вопросов: 343; пар «вопрос с подписью → соседний вопрос»: 2531, из них 1396 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
 
 ## 特别行政区 — Особый административный район — Сянган и Аомэнь
 
@@ -50,7 +50,7 @@
 
 - выдаёт modern-history/modern-history-q109: ответ 林则徐, Линь Цзэсюй; зацепка Хумэнь, та же строка
 - выдаёт modern-history/modern-history-q54: ответ 1839 год; зацепка Линь Цзэсюй, Хумэнь, императорский комиссар, та же строка
-- выдаёт modern-history/modern-history-q95: ответ императорский комиссар; зацепка Линь Цзэсюй, 林则徐
+- выдаёт modern-history/modern-history-q95: ответ императорский комиссар; зацепка Линь Цзэсюй, 林则徐, та же строка
 - видна в 9: modern-history/modern-history-q05, modern-history/modern-history-q06, modern-history/modern-history-q110, modern-history/modern-history-q111, modern-history/modern-history-q113, modern-history/modern-history-q12, modern-history/modern-history-q17, modern-history/modern-history-q60, modern-history/modern-history-q96
 
 ## 粤绣 — Гуандунская (кантонская) вышивка, центр — Гуанчжоу
@@ -62,9 +62,9 @@
 
 ## 鲁迅 — Лу Синь — автор «Дневника сумасшедшего» и «Подлинной истории А-Кью»
 
-- выдаёт literature/literature-q04: ответ 鲁迅, Лу Синь; зацепка Подлинная история А-Кью
+- выдаёт literature/literature-q04: ответ 鲁迅, Лу Синь; зацепка Подлинная история А-Кью, та же строка
 - выдаёт literature/literature-q19: ответ Дневник сумасшедшего; зацепка Лу Синь
-- выдаёт literature/literature-q90: ответ Подлинная история А-Кью, история А-Кью; зацепка Лу Синь, 鲁迅
+- выдаёт literature/literature-q90: ответ Подлинная история А-Кью, история А-Кью; зацепка Лу Синь, 鲁迅, та же строка
 - видна в 8: literature/literature-q01, literature/literature-q02, literature/literature-q03, literature/literature-q05, literature/literature-q44, literature/literature-q46, literature/literature-q96, literature/literature-q97
 
 ## 黄山 — Хуаншань — гора в Аньхое, известная причудливыми соснами и морем облаков
@@ -143,7 +143,7 @@
 ## 圣彼得堡 — Санкт-Петербург — «Северная столица» в устье Невы
 
 - выдаёт 2025-26-mun-chel-5: ответ 圣彼得堡, Петербург, Санкт-Петербург; зацепка Северная столица
-- выдаёт provinces/provinces-q106: ответ Северная столица; зацепка Санкт-Петербург
+- выдаёт provinces/provinces-q106: ответ Северная столица; зацепка Санкт-Петербург, та же строка
 - видна в 14: provinces/provinces-q108, provinces/provinces-q113, provinces/provinces-q114, provinces/provinces-q64, provinces/provinces-q65, provinces/provinces-q66, provinces/provinces-q67, provinces/provinces-q68, provinces/provinces-q69, provinces/provinces-q70, provinces/provinces-q71, provinces/provinces-q75, provinces/provinces-q77, provinces/provinces-q85
 
 ## 孙中山 — Сунь Ятсен — революционер, в 1912 г. временный президент Китайской Республики
@@ -161,25 +161,25 @@
 ## 春节 — Праздник весны — Новый год по лунному календарю, с 2024 года в списке ЮНЕСКО
 
 - выдаёт 2024-25-mun-tula-2: ответ 春节, Новый год по лунному календарю, Праздник весны; зацепка Новый год
-- выдаёт holidays/holidays-q32: ответ 春节, Праздник весны; зацепка 2024 год
+- выдаёт holidays/holidays-q32: ответ 春节, Праздник весны; зацепка 2024 год, та же строка
 - видна в 11: holidays/holidays-q01, holidays/holidays-q02, holidays/holidays-q04, holidays/holidays-q08, holidays/holidays-q09, holidays/holidays-q13, holidays/holidays-q16, holidays/holidays-q34, holidays/holidays-q46, holidays/holidays-q47, holidays/holidays-q52
 
 ## 曹雪芹 — Цао Сюэцинь — автор романа «Сон в красном тереме»
 
-- выдаёт literature/literature-q16: ответ Сон в красном тереме; зацепка Цао Сюэцинь
-- выдаёт literature/literature-q97: ответ 曹雪芹, Цао Сюэцинь; зацепка Сон в красном тереме
+- выдаёт literature/literature-q16: ответ Сон в красном тереме; зацепка Цао Сюэцинь, та же строка
+- выдаёт literature/literature-q97: ответ 曹雪芹, Цао Сюэцинь; зацепка Сон в красном тереме, та же строка
 - видна в 6: literature/literature-q01, literature/literature-q03, literature/literature-q09, literature/literature-q101, literature/literature-q40, literature/literature-q96
 
 ## 李白 — Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»
 
 - выдаёт literature/literature-q23: ответ 李白, Ли Бо; зацепка бессмертный поэт, эпоха Тан
-- выдаёт literature/literature-q88: ответ Думы тихой ночью; зацепка Ли Бо, 李白
+- выдаёт literature/literature-q88: ответ Думы тихой ночью; зацепка Ли Бо, 李白, та же строка
 - видна в 8: literature/literature-q01, literature/literature-q02, literature/literature-q03, literature/literature-q07, literature/literature-q101, literature/literature-q24, literature/literature-q25, literature/literature-q46
 
 ## 杜甫 — Ду Фу — поэт эпохи Тан, прозванный «мудрецом поэзии»
 
-- выдаёт literature/literature-q07: ответ 杜甫, Ду Фу; зацепка эпоха Тан
-- выдаёт literature/literature-q24: ответ 杜甫, Ду Фу; зацепка мудрец поэзии, эпоха Тан
+- выдаёт literature/literature-q07: ответ 杜甫, Ду Фу; зацепка эпоха Тан, та же строка
+- выдаёт literature/literature-q24: ответ 杜甫, Ду Фу; зацепка мудрец поэзии, эпоха Тан, та же строка
 - видна в 3: literature/literature-q01, literature/literature-q03, literature/literature-q101
 
 ## 杨利伟 — Ян Ливэй — первый китайский космонавт, полёт на «Шэньчжоу-5» (2003)
@@ -220,7 +220,7 @@
 
 ## 湖南 — Хунань — провинция, где лежит озеро Дунтинху
 
-- выдаёт nature/nature-q142: ответ 湖南; зацепка озеро Дунтинху
+- выдаёт nature/nature-q142: ответ 湖南; зацепка озеро Дунтинху, та же строка
 - выдаёт provinces/provinces-q90: ответ озеро Дунтинху, Дунтинху; зацепка Хунань
 - видна в 3: nature/nature-q158, nature/nature-q159, nature/nature-q31
 
@@ -250,8 +250,8 @@
 
 ## 罗贯中 — Ло Гуаньчжун — автор романа «Троецарствие»
 
-- выдаёт literature/literature-q17: ответ Троецарствие, Троецарствия; зацепка Ло Гуаньчжун
-- выдаёт literature/literature-q96: ответ 罗贯中, Ло Гуаньчжун; зацепка Троецарствие, Троецарствия
+- выдаёт literature/literature-q17: ответ Троецарствие, Троецарствия; зацепка Ло Гуаньчжун, та же строка
+- выдаёт literature/literature-q96: ответ 罗贯中, Ло Гуаньчжун; зацепка Троецарствие, Троецарствия, та же строка
 - видна в 4: literature/literature-q01, literature/literature-q03, literature/literature-q101, literature/literature-q97
 
 ## 罪与罚 — «Преступление и наказание» — роман Достоевского из «великого пятикнижия»
@@ -268,20 +268,20 @@
 
 ## 老舍 — Лао Шэ — автор романа «Рикша» и пьесы «Чайная»
 
-- выдаёт literature/literature-q02: ответ 老舍, Лао Шэ; зацепка Чайная, роман «Рикша»
-- выдаёт literature/literature-q91: ответ роман «Рикша»; зацепка Лао Шэ, 老舍
+- выдаёт literature/literature-q02: ответ 老舍, Лао Шэ; зацепка Чайная, роман «Рикша», та же строка
+- выдаёт literature/literature-q91: ответ роман «Рикша»; зацепка Лао Шэ, 老舍, та же строка
 - видна в 7: literature/literature-q01, literature/literature-q03, literature/literature-q04, literature/literature-q43, literature/literature-q46, literature/literature-q96, literature/literature-q97
 
 ## 莫言 — Мо Янь — лауреат Нобелевской премии 2012 г., автор «Красного гаоляна»
 
-- выдаёт literature/literature-q49: ответ 莫言, Мо Янь; зацепка Нобелевская премия
-- выдаёт literature/literature-q92: ответ Красный гаолян; зацепка 莫言
+- выдаёт literature/literature-q49: ответ 莫言, Мо Янь; зацепка Нобелевская премия, та же строка
+- выдаёт literature/literature-q92: ответ Красный гаолян; зацепка 莫言, та же строка
 - видна в 7: literature/literature-q01, literature/literature-q03, literature/literature-q05, literature/literature-q101, literature/literature-q51, literature/literature-q96, literature/literature-q97
 
 ## 西安 — Сиань — древняя столица 13 династий, прежде Чанъань (Шэньси)
 
 - выдаёт provinces/provinces-q37: ответ 西安; зацепка Шэньси
-- выдаёт state/state-q06: ответ 西安, Сиань; зацепка Чанъань
+- выдаёт state/state-q06: ответ 西安, Сиань; зацепка Чанъань, та же строка
 - видна в 3: state/state-q07, state/state-q08, state/state-q09
 
 ## 西湖醋鱼 — Рыба озера Сиху в уксусном соусе — знаменитое блюдо Ханчжоу, чжэцзянская кухня
@@ -340,7 +340,7 @@
 
 ## 陀思妥耶夫斯基 — Достоевский — автор «Преступления и наказания» и «Братьев Карамазовых»
 
-- выдаёт literature/literature-q60: ответ 陀思妥耶夫斯基, Достоевский; зацепка Братья Карамазовы, Преступление и наказание
+- выдаёт literature/literature-q60: ответ 陀思妥耶夫斯基, Достоевский; зацепка Братья Карамазовы, Преступление и наказание, та же строка
 - выдаёт literature/literature-q94: ответ 陀思妥耶夫斯基, Достоевский; зацепка Преступление и наказание, та же строка
 - видна в 12: literature/literature-q61, literature/literature-q62, literature/literature-q63, literature/literature-q71, literature/literature-q73, literature/literature-q80, literature/literature-q81, literature/literature-q82, literature/literature-q86, literature/literature-q87, literature/literature-q93, literature/literature-q95
 
@@ -386,7 +386,7 @@
 
 ## 1000 卢布 — 1000 рублей образца 1997 года: Ярославль
 
-- выдаёт money/money-q10: ответ Ярославль; зацепка 1997 год
+- выдаёт money/money-q10: ответ Ярославль; зацепка 1997 год, та же строка
 - видна в 2: money/money-q08, money/money-q38
 
 ## 1812 年 — 1812 год: Бородинское сражение
@@ -516,12 +516,12 @@
 
 ## 50 卢布 — 50 рублей образца 1997 года: Санкт-Петербург
 
-- выдаёт 2024-25-zak-qe3452d: ответ Петербург, Санкт-Петербург; зацепка 1997 год
+- выдаёт 2024-25-zak-qe3452d: ответ Петербург, Санкт-Петербург; зацепка 1997 год, та же строка
 - видна в 2: money/money-q08, money/money-q38
 
 ## 5000 卢布 — 5000 рублей образца 1997 года: Хабаровск
 
-- выдаёт money/money-q12: ответ Хабаровск; зацепка 1997 год
+- выдаёт money/money-q12: ответ Хабаровск; зацепка 1997 год, та же строка
 - видна в 2: money/money-q08, money/money-q38
 
 ## 一国两制 — «Одна страна — две системы» — принцип воссоединения Китая, выдвинутый Дэн Сяопином
@@ -906,12 +906,12 @@
 
 ## 南京 — Нанкин — «столица шести династий», с 1927 года столица Китайской Республики
 
-- выдаёт state/state-q09: ответ 南京, Нанкин; зацепка 1927 год
+- выдаёт state/state-q09: ответ 南京, Нанкин; зацепка 1927 год, та же строка
 - видна в 3: state/state-q06, state/state-q07, state/state-q08
 
 ## 南京 — Нанкин — город на востоке Китая, в провинции Цзянсу
 
-- выдаёт provinces/provinces-q24: ответ 南京, Нанкин; зацепка Цзянси, Цзянсу
+- выдаёт provinces/provinces-q24: ответ 南京, Нанкин; зацепка Цзянси, Цзянсу, та же строка
 - видна в 15: crafts/crafts-q84, provinces/provinces-q115, provinces/provinces-q116, provinces/provinces-q20, provinces/provinces-q21, provinces/provinces-q22, provinces/provinces-q25, provinces/provinces-q26, provinces/provinces-q27, provinces/provinces-q28, provinces/provinces-q29, provinces/provinces-q30, provinces/provinces-q52, provinces/provinces-q53, provinces/provinces-q87
 
 ## 南京 — Нанкин — центр провинции Цзянсу
@@ -1001,7 +1001,7 @@
 
 ## 吴方言 — Диалект у — диалект Шанхая, юга Цзянсу и большей части Чжэцзяна
 
-- выдаёт 2020-21-pri-qac236e: ответ 吴方言, диалект у; зацепка Цзянси, Цзянсу, Чжэцзян, Шанхай
+- выдаёт 2020-21-pri-qac236e: ответ 吴方言, диалект у; зацепка Цзянси, Цзянсу, Чжэцзян, Шанхай, та же строка
 - видна в 4: ethnos/ethnos-q86, ethnos/ethnos-q87, ethnos/ethnos-q88, ethnos/ethnos-q92
 
 ## 吴道子 — У Даоцзы — танский «святой живописи», мастер буддийских и даосских фигур
@@ -1036,7 +1036,7 @@
 
 ## 哈巴罗夫斯克 — Хабаровск — город на купюре 5000 рублей образца 1997 года
 
-- выдаёт money/money-q12: ответ 哈巴罗夫斯克, Хабаровск; зацепка 1997 год
+- выдаёт money/money-q12: ответ 哈巴罗夫斯克, Хабаровск; зацепка 1997 год, та же строка
 - видна в 7: money/money-q09, money/money-q10, money/money-q11, money/money-q13, money/money-q14, money/money-q15, money/money-q37
 
 ## 唐 — Династия Тан — 618–907, основал Ли Юань, столица Чанъань
@@ -1096,7 +1096,7 @@
 
 ## 圣彼得堡 — Санкт-Петербург — город на купюре 50 рублей образца 1997 года
 
-- выдаёт 2024-25-zak-qe3452d: ответ 圣彼得堡, Петербург, Санкт-Петербург; зацепка 1997 год
+- выдаёт 2024-25-zak-qe3452d: ответ 圣彼得堡, Петербург, Санкт-Петербург; зацепка 1997 год, та же строка
 - видна в 8: money/money-q09, money/money-q10, money/money-q11, money/money-q12, money/money-q13, money/money-q14, money/money-q15, money/money-q37
 
 ## 圣母升天大教堂 — Успенский собор Московского Кремля
@@ -1181,17 +1181,17 @@
 
 ## 天津 — Тяньцзинь — город центрального подчинения на севере Китая, на берегу Бохая
 
-- выдаёт 2015-16-reg-1: ответ 天津, Тяньцзинь; зацепка город центрального подчинения
+- выдаёт 2015-16-reg-1: ответ 天津, Тяньцзинь; зацепка город центрального подчинения, та же строка
 - видна в 16: crafts/crafts-q84, provinces/provinces-q115, provinces/provinces-q116, provinces/provinces-q20, provinces/provinces-q21, provinces/provinces-q22, provinces/provinces-q24, provinces/provinces-q25, provinces/provinces-q26, provinces/provinces-q27, provinces/provinces-q28, provinces/provinces-q29, provinces/provinces-q30, provinces/provinces-q52, provinces/provinces-q53, provinces/provinces-q87
 
 ## 天津市 — Тяньцзинь — город центрального подчинения рядом с Пекином
 
-- выдаёт 2015-16-reg-1: ответ 天津, Тяньцзинь; зацепка город центрального подчинения
+- выдаёт 2015-16-reg-1: ответ 天津, Тяньцзинь; зацепка город центрального подчинения, та же строка
 - видна в 2: provinces/provinces-q112, provinces/provinces-q16
 
 ## 太原 — Тайюань — центр провинции Шаньси
 
-- выдаёт provinces/provinces-q03: ответ провинция Шаньси; зацепка Тайюань, 太原
+- выдаёт provinces/provinces-q03: ответ провинция Шаньси; зацепка Тайюань, 太原, та же строка
 - видна в 11: provinces/provinces-q100, provinces/provinces-q101, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q37, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
 
 ## 契丹族 — Кидани — народ, основавший династию Ляо
@@ -1251,7 +1251,7 @@
 
 ## 安德烈·鲁勃廖夫 — Рублёв — иконописец XV века, автор иконы «Троица»
 
-- выдаёт painting/painting-q105: ответ икона Троица; зацепка Андрей Рублёв, 安德烈·鲁勃廖夫
+- выдаёт painting/painting-q105: ответ икона Троица; зацепка Андрей Рублёв, 安德烈·鲁勃廖夫, та же строка
 - видна в 7: painting/painting-q106, painting/painting-q107, painting/painting-q80, painting/painting-q82, painting/painting-q83, painting/painting-q85, painting/painting-q89
 
 ## 屠呦呦 — Ту Юю — фармаколог, лауреат Нобелевской премии за артемизинин
@@ -1611,7 +1611,7 @@
 
 ## 果戈理 — Гоголь — автор поэмы «Мёртвые души» и комедии «Ревизор»
 
-- выдаёт literature/literature-q67: ответ Мёртвые души; зацепка Гоголь
+- выдаёт literature/literature-q67: ответ Мёртвые души; зацепка Гоголь, та же строка
 - видна в 14: literature/literature-q60, literature/literature-q61, literature/literature-q62, literature/literature-q63, literature/literature-q71, literature/literature-q73, literature/literature-q80, literature/literature-q81, literature/literature-q82, literature/literature-q86, literature/literature-q87, literature/literature-q93, literature/literature-q94, literature/literature-q95
 
 ## 桂 — Сокращение Гуанси — Гуй; край славится коричными деревьями и зовётся «Багуй»
@@ -1836,7 +1836,7 @@
 
 ## 浙江 — Чжэцзян — провинция на юге дельты Янцзы, центр — Ханчжоу
 
-- выдаёт provinces/provinces-q101: ответ Ханчжоу; зацепка провинция Чжэцзян
+- выдаёт provinces/provinces-q101: ответ Ханчжоу; зацепка провинция Чжэцзян, та же строка
 - видна в 29: crafts/crafts-q132, cuisine/cuisine-q68, cuisine/cuisine-q70, cuisine/cuisine-q71, cuisine/cuisine-q90, cuisine/cuisine-q91, cuisine/cuisine-q92, cuisine/cuisine-q93, cuisine/cuisine-q94, cuisine/cuisine-q96, nature/nature-q03, nature/nature-q145, nature/nature-q146, nature/nature-q147, nature/nature-q148, nature/nature-q149, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q32, provinces/provinces-q42
 
 ## 浙江省 — Провинция Чжэцзян, административный центр — Ханчжоу
@@ -1861,7 +1861,7 @@
 
 ## 清 — Династия Цин — маньчжурская, правила Китаем с 1644 по 1912 год
 
-- выдаёт dynasties/dynasties-q113: ответ маньчжуры; зацепка династия Цинь
+- выдаёт dynasties/dynasties-q113: ответ маньчжуры; зацепка династия Цинь, та же строка
 - видна в 6: dynasties/dynasties-q01, dynasties/dynasties-q07, dynasties/dynasties-q107, dynasties/dynasties-q108, dynasties/dynasties-q115, dynasties/dynasties-q22
 
 ## 清代 — Династия Цин — маньчжурская, правила Китаем с 1644 по 1912 год
@@ -1896,7 +1896,7 @@
 
 ## 湘方言 — Сянский диалект — диалект большей части Хунани
 
-- выдаёт 2021-22-mun-qa05d78: ответ 湘方言, сянский диалект; зацепка Хунань
+- выдаёт 2021-22-mun-qa05d78: ответ 湘方言, сянский диалект; зацепка Хунань, та же строка
 - видна в 4: ethnos/ethnos-q86, ethnos/ethnos-q87, ethnos/ethnos-q88, ethnos/ethnos-q92
 
 ## 满族 — Маньчжуры — народ, основавший династию Цин
@@ -1966,7 +1966,7 @@
 
 ## 甘肃省 — Ганьсу — провинция на северо-западе Китая, её центр — Ланьчжоу
 
-- выдаёт provinces/provinces-q38: ответ Ланьчжоу; зацепка провинция Ганьсу
+- выдаёт provinces/provinces-q38: ответ Ланьчжоу; зацепка провинция Ганьсу, та же строка
 - видна в 7: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q12, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q15, provinces/provinces-q16
 
 ## 白切鸡 — Белая нарезанная курица — отварная курица в собственном вкусе, кантонская кухня
@@ -1991,7 +1991,7 @@
 
 ## 石家庄 — Шицзячжуан — центр провинции Хэбэй
 
-- выдаёт provinces/provinces-q33: ответ 石家庄, Шицзячжуан; зацепка провинция Хэбэй
+- выдаёт provinces/provinces-q33: ответ 石家庄, Шицзячжуан; зацепка провинция Хэбэй, та же строка
 - видна в 10: provinces/provinces-q100, provinces/provinces-q101, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q37, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
 
 ## 祭侄文稿 — «Черновик надгробного слова племяннику» — синшу Янь Чжэньцина, 758 г.
@@ -2066,7 +2066,7 @@
 
 ## 粤方言 — Юэский (кантонский) диалект — диалект Гуандуна, Гонконга и Макао
 
-- выдаёт ethnos/ethnos-q86: ответ 粤方言, кантонский; зацепка Гуандун
+- выдаёт ethnos/ethnos-q86: ответ 粤方言, кантонский; зацепка Гуандун, та же строка
 - видна в 3: ethnos/ethnos-q87, ethnos/ethnos-q88, ethnos/ethnos-q92
 
 ## 粤菜 — Кантонская (гуандунская) кухня — одна из восьми великих кухонь Китая
@@ -2186,7 +2186,7 @@
 
 ## 西安 — Сиань — административный центр провинции Шэньси
 
-- выдаёт provinces/provinces-q37: ответ 西安; зацепка провинция Шэньси
+- выдаёт provinces/provinces-q37: ответ 西安; зацепка провинция Шэньси, та же строка
 - видна в 10: provinces/provinces-q100, provinces/provinces-q101, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
 
 ## 西安 — Сиань — город в Шэньси, где в декабре 1936 года арестовали Чан Кайши
@@ -2326,7 +2326,7 @@
 
 ## 那达慕 — Надом — праздник монголов: борьба, скачки и стрельба из лука
 
-- выдаёт holidays/holidays-q40: ответ монголы; зацепка скачки, стрельба, 那达慕
+- выдаёт holidays/holidays-q40: ответ монголы; зацепка скачки, стрельба, 那达慕, та же строка
 - видна в 9: holidays/holidays-q02, holidays/holidays-q16, holidays/holidays-q18, holidays/holidays-q42, holidays/holidays-q43, holidays/holidays-q44, holidays/holidays-q45, holidays/holidays-q46, holidays/holidays-q47
 
 ## 都江堰 — Дуцзянъянь — древняя оросительная система на реке Миньцзян в Сычуани
@@ -2461,7 +2461,7 @@
 
 ## 额尔齐斯河 — Иртыш — главный приток Оби, берёт начало в Китае, в Синьцзяне
 
-- выдаёт nature/nature-q102: ответ 额尔齐斯河; зацепка Синьцзян
+- выдаёт nature/nature-q102: ответ 额尔齐斯河; зацепка Синьцзян, та же строка
 - видна в 9: nature/nature-q05, nature/nature-q100, nature/nature-q101, nature/nature-q103, nature/nature-q104, nature/nature-q105, nature/nature-q106, nature/nature-q127, nature/nature-q128
 
 ## 风云儿女 — «Дети грозных лет» — фильм 1935 года, для которого написан «Марш добровольцев»
@@ -2526,7 +2526,7 @@
 
 ## 鼠 — Крыса — одно из двенадцати животных китайского зодиака
 
-- выдаёт sets/sets-q12: ответ 鼠, крыса; зацепка китайский зодиак
+- выдаёт sets/sets-q12: ответ 鼠, крыса; зацепка китайский зодиак, та же строка
 - видна в 2: sets/sets-q03, sets/sets-q04
 
 ## 齐白石 — Ци Байши — художник XX века, мастер креветок и цветов-птиц
