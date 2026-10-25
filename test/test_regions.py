@@ -4,6 +4,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from parsers.regions import records, task_id
+import regions
 from regions import load, validate
 
 
@@ -76,6 +77,25 @@ class RegionsValidationTest(unittest.TestCase):
         variants, decisions = load()
         bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
         self.assertEqual(validate(variants, decisions, bank), [])
+
+    def test_page_lists_only_withheld_tasks(self):
+        import tempfile
+        v = variant(task(3), task(4), task(5))
+        decisions = {'2025-26-mun-spb-3': {'status': 'narrow', 'reason': 'узко'},
+                     '2025-26-mun-spb-4': {'status': 'in-bank', 'bankId': '2016-17-mun-1'},
+                     '2025-26-mun-spb-5': {'status': 'repeat', 'sameAs': '2025-26-mun-spb-3'}}
+        with tempfile.TemporaryDirectory() as folder:
+            target = Path(folder) / 'page.html'
+            original, regions.PAGE = regions.PAGE, target
+            try:
+                regions.write_page([v], decisions)
+            finally:
+                regions.PAGE = original
+            page = target.read_text('utf-8')
+        self.assertIn('"id":"2025-26-mun-spb-3"', page)
+        self.assertNotIn('2025-26-mun-spb-4', page)
+        self.assertNotIn('2025-26-mun-spb-5', page)
+        self.assertIn('всего 1: узких 1', page)
 
     def test_every_added_task_is_in_the_bank(self):
         variants, decisions = load()

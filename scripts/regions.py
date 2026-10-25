@@ -14,7 +14,8 @@
   вариантов или задание по картинке; у всех четырёх обязательна `reason`.
 
 Отложенное автор возвращает правкой статуса на `add` (решение автора 2026-10-25: узкие — в отдельный
-список, «если что, потом приму»).
+список, «если что, потом приму»). Отложенное скрипт выписывает ещё и страницей
+`data/review/regions-excluded.html`: она открывается в браузере без сервера.
 """
 
 from __future__ import annotations
@@ -39,6 +40,10 @@ from strict_json import loads_unique
 VARIANTS = ROOT / 'data/regions/variants.json'
 DECISIONS = ROOT / 'data/review/regions.json'
 REPORT = ROOT / 'data/review/regions.md'
+PAGE = ROOT / 'data/review/regions-excluded.html'
+PAGE_TEMPLATE = ROOT / 'scripts/templates/regions-excluded.html'
+# отложенное, к которому автор хочет вернуться (решение автора 2026-10-25); «уже в банке» и повторы — нет
+PAGE_STATUSES = ('narrow', 'doubtful', 'ru-options', 'format')
 STATUSES = {'add', 'in-bank', 'repeat', 'narrow', 'doubtful', 'ru-options', 'format'}
 WITH_REASON = {'narrow', 'doubtful', 'ru-options', 'format'}
 # шрифт выгрузок Цифриума отдаёт часть иероглифов дополнительными ключами, их NFKC не сводит
@@ -139,6 +144,25 @@ def write_report(variants: list[dict], decisions: dict[str, dict]) -> None:
     REPORT.write_text('\n'.join(lines), encoding='utf-8')
 
 
+def write_page(variants: list[dict], decisions: dict[str, dict]) -> None:
+    """Страница отложенных заданий: открывается в браузере без сервера, данные вписаны в неё."""
+    rows = []
+    for key, (variant, task) in sorted(tasks_by_id(variants).items()):
+        item = decisions[key]
+        if item['status'] not in PAGE_STATUSES:
+            continue
+        rows.append({'id': key, 's': item['status'], 'r': variant['region'], 'y': variant['year'].replace('-', '/'),
+                     'st': variant['stage'], 'n': task['number'], 'q': task['questionRu'] or task['questionZh'],
+                     'zh': task['questionZh'] if task['questionRu'] else None, 'o': task['options'],
+                     'k': task['officialKeyIndex'], 'why': item.get('reason', '')})
+    counts = Counter(row['s'] for row in rows)
+    summary = (f"всего {len(rows)}: узких {counts['narrow']}, сомнительных {counts['doubtful']}, "
+               f"с вариантами по-русски {counts['ru-options']}, не того формата {counts['format']}.")
+    data = json.dumps(rows, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+    page = PAGE_TEMPLATE.read_text('utf-8').replace('__SUMMARY__', summary).replace('__DATA__', data)
+    PAGE.write_text(page, encoding='utf-8')
+
+
 def _squash(text: str) -> str:
     """Текст бланка для сравнения: без пробелов и подчёркиваний, с ключами иероглифов, сведёнными к иероглифам.
 
@@ -211,6 +235,7 @@ def main() -> None:
     if errors:
         raise SystemExit('региональные варианты:\n - ' + '\n - '.join(errors))
     write_report(variants, decisions)
+    write_page(variants, decisions)
     print(f'региональные варианты: {len(variants)} вариантов, решений {len(decisions)}')
 
 
