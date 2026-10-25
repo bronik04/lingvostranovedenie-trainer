@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Отложенные региональные задания</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: шапка со сводкой и вкладками решений, ниже — лента карточек заданий с поиском */
+:root{
+  --bg:#f3f5f7; --card:#ffffff; --fg:#17202b; --muted:#5b6876; --line:#d9dfe6;
+  --accent:#1f4e8c; --seal:#b3261e; --chip:#e8eef6;
+  --narrow:#7a5a00; --doubtful:#a3321f; --ru:#4b3f8f; --format:#5b6876;
+  --f-body:"Golos Text",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-zh:"Noto Serif SC","Songti SC","SimSun",serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11161c; --card:#19212a; --fg:#e4e9ef; --muted:#97a3b0; --line:#2b3642;
+  --accent:#8db4ea; --seal:#f08a80; --chip:#22303d;
+  --narrow:#e0b54a; --doubtful:#f0907a; --ru:#b4a8f0; --format:#a7b2bd; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11161c; --card:#19212a; --fg:#e4e9ef; --muted:#97a3b0; --line:#2b3642;
+  --accent:#8db4ea; --seal:#f08a80; --chip:#22303d;
+  --narrow:#e0b54a; --doubtful:#f0907a; --ru:#b4a8f0; --format:#a7b2bd; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--f-body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:960px;margin:0 auto;display:grid;gap:20px}
+h1{font-size:1.75rem;line-height:1.2;margin:0;text-wrap:balance;font-weight:700}
+.lede{color:var(--muted);margin:6px 0 0;max-width:68ch}
+code,.mono{font-family:var(--f-mono);font-size:.82em}
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tab{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:6px 14px;font:inherit;font-size:.9rem;cursor:pointer;display:flex;gap:8px;align-items:center}
+.tab .n{font-variant-numeric:tabular-nums;color:var(--muted)}
+.tab[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.tab[aria-pressed="true"] .n{color:var(--bg);opacity:.75}
+.tab:focus-visible,.search:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.dot{width:8px;height:8px;border-radius:50%;flex:none}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.search{flex:1 1 260px;min-width:0;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:8px;padding:9px 12px;font:inherit}
+.about{color:var(--muted);font-size:.88rem;max-width:72ch}
+.count{color:var(--muted);font-size:.88rem;font-variant-numeric:tabular-nums}
+.list{display:grid;gap:10px}
+.item{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:6px;padding:12px 14px;display:grid;gap:6px;min-width:0}
+.meta{display:flex;flex-wrap:wrap;gap:6px 12px;color:var(--muted);font-size:.82rem;align-items:baseline}
+.badge{color:var(--c);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:.72rem}
+.q{font-weight:500;overflow-wrap:anywhere}
+.q.zh,.zhline{font-family:var(--f-zh)}
+.zhline{color:var(--muted);font-size:.9rem}
+.opts{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.opts li{background:var(--chip);border-radius:4px;padding:2px 8px;font-family:var(--f-zh);font-size:.92rem;overflow-wrap:anywhere;max-width:100%}
+.opts li.key{outline:1.5px solid var(--seal);color:var(--seal);font-weight:600}
+.opts li .l{font-family:var(--f-body);color:var(--muted);margin-right:4px;font-size:.78rem}
+.opts li.key .l{color:var(--seal)}
+.why{font-size:.88rem;overflow-wrap:anywhere}
+.nokey{color:var(--muted);font-size:.8rem}
+.more{justify-self:center;appearance:none;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:8px;padding:8px 16px;font:inherit;cursor:pointer}
+@media (prefers-reduced-motion:no-preference){.tab{transition:background .15s,color .15s}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Отложенные региональные задания</h1>
+    <p class="lede">Школьный и муниципальный этапы ВсОШ, 9–11 классы. Задания, которые пока не вошли в банк, но к ним можно вернуться: __SUMMARY__ Страницу пишет <code>python3 scripts/regions.py</code> по решениям <code>data/review/regions.json</code>; чтобы взять задание, поменяйте его статус на <code>add</code> и пересоберите банк.</p>
+  </header>
+  <nav class="tabs" id="tabs" aria-label="Решение"></nav>
+  <p class="about" id="about"></p>
+  <div class="tools">
+    <input class="search" id="search" type="search" placeholder="Поиск: вопрос, вариант, регион, id" aria-label="Поиск">
+    <span class="count" id="count"></span>
+  </div>
+  <div class="list" id="list"></div>
+  <button class="more" id="more" type="button" hidden>Показать ещё</button>
+</div>
+<script>
+const DATA = __DATA__;
+const KINDS = [
+  ['narrow','Узкие','--narrow','Узкие местные детали. Вы просили вынести их отдельным списком: решаете, какие взять.'],
+  ['doubtful','Сомнительные','--doubtful','Спорный ключ, ошибочная посылка, вопрос зависит от года, нет одного верного варианта или ошибка ключа бланка (найдено волной проверки 8).'],
+  ['ru-options','Варианты по-русски','--ru','В бланке варианты ответа по-русски, а в банке варианты должны быть по-китайски. Взять можно только с переводом вариантов.'],
+  ['format','Не тот формат','--format','Меньше трёх вариантов, задание по картинке, «верно / неверно», слишком короткая формулировка.'],
+];
+const LETTERS = 'ABCDEFG';
+let kind = 'narrow', shown = 60;
+try { const saved = localStorage.getItem('regions-excluded-kind'); if (KINDS.some(k => k[0] === saved)) kind = saved; } catch (e) {}
+if (KINDS.some(k => k[0] === location.hash.slice(1))) kind = location.hash.slice(1);
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const isZh = (s) => s && !/[А-Яа-яЁё]/.test(s);
+function renderTabs() {
+  $('tabs').innerHTML = KINDS.map(([k, label, color]) => {
+    const n = DATA.filter((d) => d.s === k).length;
+    return `<button class="tab" type="button" data-k="${k}" aria-pressed="${k === kind}"><span class="dot" style="background:var(${color})"></span>${label}<span class="n">${n}</span></button>`;
+  }).join('');
+  $('about').textContent = KINDS.find((k) => k[0] === kind)[3];
+}
+function render() {
+  const term = $('search').value.trim().toLowerCase();
+  const color = KINDS.find((k) => k[0] === kind)[2];
+  const rows = DATA.filter((d) => d.s === kind).filter((d) => !term ||
+    [d.q, d.zh, d.r, d.id, d.why, ...d.o].join(' ').toLowerCase().includes(term));
+  $('count').textContent = `${rows.length} из ${DATA.filter((d) => d.s === kind).length}`;
+  $('list').innerHTML = rows.slice(0, shown).map((d) => `
+    <article class="item" style="--c:var(${color})">
+      <div class="meta"><span class="badge">${esc(d.r)}</span><span>${esc(d.y)}, ${esc(d.st)} этап, задание ${d.n}</span><span class="mono">${esc(d.id)}</span></div>
+      <div class="q${isZh(d.q) ? ' zh' : ''}">${esc(d.q)}</div>
+      ${d.zh ? `<div class="zhline">${esc(d.zh)}</div>` : ''}
+      <ul class="opts">${d.o.map((o, i) => `<li class="${i === d.k ? 'key' : ''}"><span class="l">${LETTERS[i]}</span>${esc(o)}</li>`).join('')}</ul>
+      ${d.k === null ? '<div class="nokey">Официального ключа нет</div>' : ''}
+      ${d.why ? `<div class="why">${esc(d.why)}</div>` : ''}
+    </article>`).join('');
+  $('more').hidden = rows.length <= shown;
+}
+$('tabs').addEventListener('click', (e) => {
+  const b = e.target.closest('.tab'); if (!b) return;
+  kind = b.dataset.k; shown = 60;
+  try { localStorage.setItem('regions-excluded-kind', kind); } catch (err) {}
+  history.replaceState(null, '', '#' + kind);
+  renderTabs(); render();
+});
+$('search').addEventListener('input', () => { shown = 60; render(); });
+$('more').addEventListener('click', () => { shown += 60; render(); });
+renderTabs(); render();
+</script>
+</body>
+</html>
