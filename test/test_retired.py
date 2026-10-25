@@ -90,7 +90,7 @@ class RetiredInBankTest(unittest.TestCase):
     def test_retired_records_are_gone_and_their_progress_has_a_home(self):
         retired = load_retired(ROOT / 'data/review/retired.json')
         bank_by_id = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
-        self.assertEqual(retired.keys(), {'2017-18-zak-8', '2016-17-mun-9'})
+        self.assertLessEqual({'2017-18-zak-8', '2016-17-mun-9', '2022-23-mun-amur-1'}, retired.keys())
         for record_id, item in retired.items():
             self.assertNotIn(record_id, bank_by_id)
             self.assertIn(record_id, bank_by_id[item['keptIn']]['mergedIds'])

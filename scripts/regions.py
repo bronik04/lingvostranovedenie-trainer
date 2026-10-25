@@ -84,10 +84,14 @@ def validate(variants: list[dict], decisions: object, bank: list[dict] | None = 
     if bank is not None:
         bank_ids = {record['id'] for record in bank} | {i for record in bank for i in record.get('mergedIds', [])}
         # задание `add` с тем же набором вариантов, что у старой записи, сборка молча вливает в неё,
-        # а id записи берётся по самому раннему появлению: старый id мог бы смениться (прогресс учеников)
+        # а id записи берётся по самому раннему появлению: старый id мог бы смениться (прогресс учеников).
+        # Склейка в merges.json — другое дело: id влитого задания лежит в mergedIds, прогресс переезжает
         for record in bank:
+            merged = set(record.get('mergedIds', []))
             regional = [bool(o.get('regionCode')) for o in record.get('occurrences', [])]
-            if any(regional) and not all(regional):
+            silent = [o for o in record.get('occurrences', []) if o.get('regionCode') and
+                      f"{o['year']}-{o['stageCode']}-{o['regionCode']}-{o['number']}" not in merged]
+            if any(regional) and not all(regional) and silent:
                 errors.append(f"{record['id']}: региональное задание влилось в запись банка — "
                               'это пересечение, решение должно быть in-bank')
     for key, item in decisions.items():

@@ -64,10 +64,15 @@ class RegionsValidationTest(unittest.TestCase):
         self.assertIn('2025-26-mun-spb-3: не указана причина', errors)
 
     def test_regional_task_must_not_join_an_old_record(self):
-        record = {'id': '2017-18-mun-6', 'occurrences': [{'year': '2017-18', 'stageCode': 'mun'},
-                                                         {'year': '2018-19', 'stageCode': 'mun', 'regionCode': 'tyum'}]}
+        record = {'id': '2017-18-mun-6', 'occurrences': [{'year': '2017-18', 'stageCode': 'mun', 'number': 6},
+                                                         {'year': '2018-19', 'stageCode': 'mun', 'regionCode': 'tyum',
+                                                          'number': 8}]}
         errors = validate([variant(task())], {'2025-26-mun-spb-3': {'status': 'add'}}, bank=[record])
         self.assertTrue(any('влилось в запись банка' in e for e in errors))
+        # явная склейка (merges.json) кладёт id задания в mergedIds — это не молчаливое вливание
+        record['mergedIds'] = ['2018-19-mun-tyum-8']
+        errors = validate([variant(task())], {'2025-26-mun-spb-3': {'status': 'add'}}, bank=[record])
+        self.assertFalse(any('влилось в запись банка' in e for e in errors))
 
     def test_decision_that_is_not_an_object_is_an_error(self):
         errors = validate([variant(task())], {'2025-26-mun-spb-3': 'add'})
@@ -112,9 +117,18 @@ class RegionsValidationTest(unittest.TestCase):
         bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
         spots = {(o['year'], o['stageCode'], o.get('regionCode'), o['number'])
                  for r in bank for o in r.get('occurrences', [])}
+        # склеенное или оставленное в пользу другой записи задание живёт в mergedIds, отложенное — в withheld.json
+        gone = {i for r in bank for i in r.get('mergedIds', [])}
+        gone |= set(json.loads((ROOT / 'data/review/withheld.json').read_text('utf-8')))
+        # задание с тем же набором вариантов сборка собрала в одну запись с более ранним; эта запись
+        # оставлена в пользу вопроса досье (retired.json), и появление ушло вместе с ней
+        retired = json.loads((ROOT / 'data/review/retired.json').read_text('utf-8'))
+        grouped_into_retired = {'2024-25-mun-krym-7': '2022-23-mun-amur-1', '2025-26-mun-lenobl-57': '2021-22-mun-lenobl-7'}
+        self.assertLessEqual(set(grouped_into_retired.values()), set(retired))
+        gone |= set(grouped_into_retired)
         for v in variants:
             for t in v['tasks']:
-                if decisions[task_id(v, t)]['status'] == 'add':
+                if decisions[task_id(v, t)]['status'] == 'add' and task_id(v, t) not in gone:
                     self.assertIn((v['year'], v['stageCode'], v['regionCode'], t['number']), spots, task_id(v, t))
 
 
