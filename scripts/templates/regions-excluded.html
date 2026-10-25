@@ -116,6 +116,7 @@ $('tabs').addEventListener('click', (e) => {
   const b = e.target.closest('.tab'); if (!b) return;
   kind = b.dataset.k; shown = 60;
   try { localStorage.setItem('regions-excluded-kind', kind); } catch (err) {}
+  history.replaceState(null, '', '#' + kind);
   renderTabs(); render();
 });
 $('search').addEventListener('input', () => { shown = 60; render(); });

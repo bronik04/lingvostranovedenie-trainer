@@ -147,7 +147,9 @@ def write_report(variants: list[dict], decisions: dict[str, dict]) -> None:
 def write_page(variants: list[dict], decisions: dict[str, dict]) -> None:
     """Страница отложенных заданий: открывается в браузере без сервера, данные вписаны в неё."""
     rows = []
-    for key, (variant, task) in sorted(tasks_by_id(variants).items()):
+    # номер задания — числом: «…-2» раньше «…-10»
+    order = lambda pair: [int(part) if part.isdigit() else part for part in re.split(r'(\d+)', pair[0])]
+    for key, (variant, task) in sorted(tasks_by_id(variants).items(), key=order):
         item = decisions[key]
         if item['status'] not in PAGE_STATUSES:
             continue
@@ -158,7 +160,8 @@ def write_page(variants: list[dict], decisions: dict[str, dict]) -> None:
     counts = Counter(row['s'] for row in rows)
     summary = (f"всего {len(rows)}: узких {counts['narrow']}, сомнительных {counts['doubtful']}, "
                f"с вариантами по-русски {counts['ru-options']}, не того формата {counts['format']}.")
-    data = json.dumps(rows, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+    # ни одного «<» внутри <script>: ни «</script>», ни «<!--» не собьют разбор страницы
+    data = json.dumps(rows, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
     page = PAGE_TEMPLATE.read_text('utf-8').replace('__SUMMARY__', summary).replace('__DATA__', data)
     PAGE.write_text(page, encoding='utf-8')
 

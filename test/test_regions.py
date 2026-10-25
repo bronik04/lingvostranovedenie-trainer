@@ -1,4 +1,4 @@
-import json, sys, unittest
+import json, re, sys, unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -80,10 +80,18 @@ class RegionsValidationTest(unittest.TestCase):
 
     def test_page_lists_only_withheld_tasks(self):
         import tempfile
-        v = variant(task(3), task(4), task(5))
-        decisions = {'2025-26-mun-spb-3': {'status': 'narrow', 'reason': 'узко'},
+        v = variant(*(task(n) for n in range(1, 11)))
+        v['tasks'][9]['questionRu'] = 'Что значит </script><!--<script> в задании?'
+        decisions = {'2025-26-mun-spb-1': {'status': 'add'},
+                     '2025-26-mun-spb-2': {'status': 'narrow', 'reason': 'узко'},
+                     '2025-26-mun-spb-3': {'status': 'doubtful', 'reason': 'ключ не подтверждён'},
                      '2025-26-mun-spb-4': {'status': 'in-bank', 'bankId': '2016-17-mun-1'},
-                     '2025-26-mun-spb-5': {'status': 'repeat', 'sameAs': '2025-26-mun-spb-3'}}
+                     '2025-26-mun-spb-5': {'status': 'repeat', 'sameAs': '2025-26-mun-spb-1'},
+                     '2025-26-mun-spb-6': {'status': 'ru-options', 'reason': 'варианты по-русски'},
+                     '2025-26-mun-spb-7': {'status': 'format', 'reason': 'не выбор ответа'},
+                     '2025-26-mun-spb-8': {'status': 'add'},
+                     '2025-26-mun-spb-9': {'status': 'in-bank', 'bankId': '2016-17-mun-1'},
+                     '2025-26-mun-spb-10': {'status': 'narrow', 'reason': 'узко'}}
         with tempfile.TemporaryDirectory() as folder:
             target = Path(folder) / 'page.html'
             original, regions.PAGE = regions.PAGE, target
@@ -92,10 +100,12 @@ class RegionsValidationTest(unittest.TestCase):
             finally:
                 regions.PAGE = original
             page = target.read_text('utf-8')
-        self.assertIn('"id":"2025-26-mun-spb-3"', page)
-        self.assertNotIn('2025-26-mun-spb-4', page)
-        self.assertNotIn('2025-26-mun-spb-5', page)
-        self.assertIn('всего 1: узких 1', page)
+        rows = json.loads(re.search(r'const DATA = (.*?);\n', page).group(1))
+        # в банке, повторы и уже добавленные — не на странице; номера по порядку чисел
+        self.assertEqual([row['id'].rsplit('-', 1)[1] for row in rows], ['2', '3', '6', '7', '10'])
+        self.assertEqual({row['s'] for row in rows}, set(regions.PAGE_STATUSES))
+        self.assertIn('всего 5: узких 2, сомнительных 1, с вариантами по-русски 1, не того формата 1', page)
+        self.assertNotIn('</script><!--', page.split('const DATA')[1].split('\n')[0])
 
     def test_every_added_task_is_in_the_bank(self):
         variants, decisions = load()
