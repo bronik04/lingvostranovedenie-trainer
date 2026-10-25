@@ -370,22 +370,28 @@ export function pluralRu(count, forms) {
   return forms[2];
 }
 
+// «В базе 1270 вопросов: 697 из заданий ВсОШ за 12 сезонов (2015/16—2026/27) и 573 проверенных
+// дополнения к ним, 7 тем.» — числа считаются по банку, а не пишутся в разметку
 export function bankSummary(bank) {
   const additions = bank.filter((record) => record.origin === 'addition').length;
   const olympiad = bank.length - additions;
-  const years = bank.flatMap((record) => record.occurrences.map((o) => o.year)).sort();
+  const years = [...new Set(bank.flatMap((record) => record.occurrences.map((o) => o.year)))].sort();
   const first = years[0]?.replace('-', '/');
   const last = years[years.length - 1]?.replace('-', '/');
-  const span = !years.length ? '' : first === last ? ` ${first}` : ` ${first} — ${last}`;
-  const verified = bank.filter((record) => record.answer.state === 'verified').length;
-  const additionNote = additions
-    ? ` и ${additions} ${pluralRu(additions,
-      ['проверенное дополнение', 'проверенных дополнения', 'проверенных дополнений'])} к ним`
+  const seasons = years.length
+    ? ` за ${years.length} ${pluralRu(years.length, ['сезон', 'сезона', 'сезонов'])} (${
+      first === last ? first : `${first}—${last}`})`
     : '';
+  const topics = new Set(bank.map((record) => record.topic)).size;
+  const verified = bank.filter((record) => record.answer.state === 'verified').length;
+  const questions = (count) => `${count} ${pluralRu(count, ['вопрос', 'вопроса', 'вопросов'])}`;
+  const contents = additions
+    ? `${questions(bank.length)}: ${olympiad} из заданий ВсОШ${seasons} и ${additions} ${pluralRu(additions,
+      ['проверенное дополнение', 'проверенных дополнения', 'проверенных дополнений'])} к ним`
+    : `${questions(olympiad)} из заданий ВсОШ${seasons}`;
   const sources = verified === bank.length
     ? 'У каждого ответа есть пояснение и ссылка на источник.'
     : `У ${verified} ${pluralRu(verified, ['ответа', 'ответов', 'ответов'])} есть пояснение и ссылка `
       + 'на источник; остальные ответы взяты из официального ключа и ждут перепроверки.';
-  return `В базе ${olympiad} ${pluralRu(olympiad, ['вопрос', 'вопроса', 'вопросов'])} из материалов ВсОШ`
-    + `${span}${additionNote}. ${sources}`;
+  return `В базе ${contents}, ${topics} ${pluralRu(topics, ['тема', 'темы', 'тем'])}. ${sources}`;
 }

@@ -359,14 +359,14 @@ test('склонение по числу', () => {
   }
 });
 
-test('подвал считает вопросы, дополнения и годы по банку', () => {
+test('подвал считает вопросы, дополнения, сезоны и темы по банку', () => {
   const bank = [
-    record('a', { occurrences: [{ year: '2015-16', stageCode: 'shk' }] }),
-    record('b', { occurrences: [{ year: '2025-26', stageCode: 'reg' }] }),
+    record('a', { occurrences: [{ year: '2015-16', stageCode: 'shk' }, { year: '2016-17', stageCode: 'mun' }] }),
+    record('b', { topic: 'История и государство', occurrences: [{ year: '2025-26', stageCode: 'reg' }] }),
     record('c', { origin: 'addition', occurrences: [] }),
   ];
   assert.equal(quiz.bankSummary(bank),
-    'В базе 2 вопроса из материалов ВсОШ 2015/16 — 2025/26 и 1 проверенное дополнение к ним. '
+    'В базе 3 вопроса: 2 из заданий ВсОШ за 3 сезона (2015/16—2025/26) и 1 проверенное дополнение к ним, 2 темы. '
     + 'У каждого ответа есть пояснение и ссылка на источник.');
 });
 
@@ -374,7 +374,7 @@ test('подвал не говорит о непроверенных ответ�
   const verified = [record('a'), record('b')];
   assert.doesNotMatch(quiz.bankSummary(verified), /остальные|перепроверки/);
   const mixed = [record('a'), record('b', { answer: { optionId: 'o2', state: 'unverified' } })];
-  assert.match(quiz.bankSummary(mixed), /^В базе 2 вопроса из материалов ВсОШ 2015\/16\. У 1 ответа есть пояснение/);
+  assert.match(quiz.bankSummary(mixed), /^В базе 2 вопроса из заданий ВсОШ за 1 сезон \(2015\/16\), 1 тема\. У 1 ответа есть пояснение/);
   assert.match(quiz.bankSummary(mixed), /остальные ответы взяты из официального ключа/);
 });
 

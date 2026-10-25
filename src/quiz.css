@@ -22,7 +22,9 @@ body {
 button, input, select { font: inherit; }
 button { cursor: pointer; }
 input:focus-visible, select:focus-visible, summary:focus-visible, .option:focus-visible,
-.mode-option:has(input:focus-visible) .ink-pill, .topic-check:has(input:focus-visible) {
+.mode-option:has(input:focus-visible) .ink-pill, .topic-check:has(input:focus-visible),
+.quick-row:focus-visible, .mistake-head:focus-visible, .view-menu button:focus-visible, .feedback a:focus-visible,
+.mistake-panel a:focus-visible {
   outline: var(--border-focus) solid var(--focus-on-ground);
   outline-offset: var(--border-focus);
 }
@@ -36,6 +38,31 @@ input:focus-visible, select:focus-visible, summary:focus-visible, .option:focus-
 .site-tools { gap: var(--s-2) var(--s-5); }
 .count { color: var(--text-on-ground-muted); font-variant-numeric: lining-nums tabular-nums; }
 .theme { font-size: var(--t-size-caption); font-weight: var(--t-weight-medium); }
+
+/* Меню «Вид» — только на телефоне (см. конец файла): на ноутбуке переключатели стоят в шапке. */
+.view-toggle, .view-menu { display: none; }
+.view-toggle { font-size: var(--t-size-caption); font-weight: var(--t-weight-medium); }
+.view-menu {
+  flex-direction: column;
+  width: 100%;
+  border: var(--border-hair) solid var(--line-on-ground);
+  border-radius: var(--radius-sm);
+  background: var(--surface-raised);
+}
+.view-menu button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3);
+  min-height: 48px;
+  padding: 0 var(--s-4);
+  border: 0;
+  background: none;
+  color: var(--text-on-ground);
+  text-align: start;
+}
+.view-menu button + button { border-top: var(--border-hair) solid var(--line-on-paper); }
+.view-state { color: var(--text-on-ground-muted); font-size: var(--t-size-caption); }
 
 /* пиньинь: в разметке всегда, виден по настройке в шапке (data-pinyin на <html>) */
 :root:not([data-pinyin='on']) .pinyin { display: none; }
@@ -95,6 +122,96 @@ main { display: block; }
   line-height: 1;
   font-variant-numeric: lining-nums tabular-nums;
 }
+
+/* Первый визит: заголовок, вводный абзац и кнопка первого раунда — одним блоком. */
+#firstHero { padding-bottom: 56px; }
+.hero-start { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-3); }
+.hero-start .ink-btn--primary { min-width: 280px; }
+
+/* Следующий раунд: настройки одной строкой и кнопка на первом экране, справа — быстрые входы. */
+.next {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: var(--s-7) 72px;
+  align-items: start;
+  padding: 56px 0;
+}
+.next-main { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-4); }
+.next-title {
+  margin: 0;
+  color: var(--text-on-ground-strong);
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: var(--t-weight-bold);
+  line-height: 1;
+}
+.next-summary { max-width: 34em; margin: 0; font-size: var(--t-size-lead); }
+.next-note { margin: 0; color: var(--text-on-ground-muted); font-size: var(--t-size-caption); }
+.next-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-3) var(--s-5); margin-top: var(--s-2); }
+.next-actions .ink-btn--primary { min-width: 260px; }
+
+.quick { display: flex; flex-direction: column; border-bottom: var(--border-hair) solid var(--line-on-ground); }
+.quick-row {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--s-4);
+  width: 100%;
+  min-height: 84px;
+  padding: var(--s-3) var(--s-2);
+  border: 0;
+  border-top: var(--border-hair) solid var(--line-on-ground);
+  background: none;
+  color: var(--text-on-ground);
+  text-align: start;
+  transition: background var(--duration-quick) var(--ease-out);
+}
+.quick-row:hover { background: var(--surface-hover); }
+.quick-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.quick-name { font-weight: var(--t-weight-semibold); }
+.quick-help { color: var(--text-on-ground-muted); font-size: var(--t-size-caption); }
+.quick-help--short { display: none; }
+.quick-count {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: var(--t-weight-bold);
+  line-height: 1;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.quick-unit { color: var(--text-on-ground-muted); font-family: var(--font-text); font-size: var(--t-size-caption); font-weight: var(--t-weight-regular); }
+
+/* Незаконченный раунд: из него ушли «назад» — вместо «Следующего раунда». */
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s-4);
+  padding: var(--s-6);
+  border: var(--border-hair) solid var(--line-on-ground);
+  border-radius: var(--radius-sm);
+  background: var(--surface-raised);
+}
+.resume-head { display: flex; align-items: center; gap: var(--s-4); }
+.resume-title {
+  margin: 0;
+  color: var(--text-on-ground-strong);
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: var(--t-weight-bold);
+  line-height: 1;
+}
+.resume p { margin: 0; }
+.resume .track { align-self: stretch; max-width: 460px; }
+
+/* число подходящих вопросов на пилюле режима */
+.pill-count { margin-left: var(--s-1); color: var(--text-on-ground-muted); font-weight: var(--t-weight-regular); font-variant-numeric: tabular-nums; }
+.mode-option input:checked + .ink-pill .pill-count { color: inherit; opacity: 0.75; }
+
+/* Телефон: кнопка раунда внизу, пока верхняя за краем экрана (quiz.ui.js, updateStartBar). */
+.start-bar { display: none; }
 
 /* Раздел главной: знак главы киноварью слева, на телефоне — над содержимым. */
 .chapter {
@@ -204,6 +321,8 @@ main { display: block; }
 }
 .more[open] > summary::after, .progress-tools[open] > summary::after { transform: rotate(180deg); }
 .progress-tools { border-top: 0; margin-top: var(--s-5); }
+#setupView > .progress-tools { margin: var(--s-5) 0 var(--s-7); }
+.clear-filters { align-self: flex-start; font-size: var(--t-size-caption); }
 
 .field-row { display: flex; flex-wrap: wrap; gap: var(--s-4); padding: var(--s-2) 0 var(--s-1); }
 .field {
@@ -501,7 +620,8 @@ select, .search {
 .result-counts { display: flex; flex-wrap: wrap; gap: var(--s-5); }
 .result-counts .ok { color: var(--state-correct-on-ground); }
 .result-counts .bad { color: var(--state-incorrect); }
-.result-text { margin: 0; }
+.result-text { max-width: 30em; margin: 0; }
+.new-round-note { margin: 0; }
 .results-mistakes { display: flex; flex-direction: column; gap: var(--s-4); }
 .mistakes { margin: 0; padding: 0; list-style: none; }
 .mistakes li {
@@ -517,6 +637,66 @@ select, .search {
 .mistake-answers { margin-top: 6px !important; color: var(--text-on-ground-muted); font-size: var(--t-size-caption); }
 .mistake-answers .picked { color: var(--state-incorrect); }
 .mistake-answers .right { color: var(--state-correct-on-ground); font-weight: var(--t-weight-bold); }
+
+/* Ошибки основного раунда раскрываются: заголовок — кнопка, под ним разбор (у «Чэнъюй» — строка выше). */
+.mistakes--fold { border-bottom: var(--border-hair) solid var(--line-on-ground); }
+.mistakes--fold > li { display: block; padding: 0; }
+.mistakes--fold > li:last-child { border-bottom: 0; }
+.mistake-head {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 24px;
+  align-items: start;
+  gap: var(--s-4);
+  width: 100%;
+  padding: 20px 0;
+  border: 0;
+  background: none;
+  color: var(--text-on-ground);
+  text-align: start;
+}
+.mistake-head:hover .mistake-question { text-decoration: underline; text-underline-offset: 4px; }
+.mistake-text { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.mistake-head .mistake-answers { margin-top: 0 !important; }
+.mistake-arrow {
+  padding-top: 2px;
+  color: var(--text-on-ground-muted);
+  text-align: center;
+  transition: transform var(--duration-quick) var(--ease-out);
+}
+.mistake-head[aria-expanded='true'] .mistake-arrow { transform: rotate(180deg); }
+.mistake-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0 0 20px 64px;
+  padding: 20px 24px;
+  border: var(--border-hair) solid var(--line-on-ground);
+  border-radius: var(--radius-sm);
+  background: var(--surface-raised);
+}
+.mistake-why { font-size: var(--t-size-body); }
+.mistake-gloss { color: var(--text-soft); font-size: var(--t-size-caption); }
+.mistake-sources > summary {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  min-height: var(--target-min);
+  color: var(--text-on-ground-muted);
+  font-size: var(--t-size-caption);
+  font-weight: var(--t-weight-medium);
+  list-style: none;
+  cursor: pointer;
+}
+.mistake-sources > summary::-webkit-details-marker { display: none; }
+.mistake-sources > summary::after {
+  content: '▾';
+  content: '▾' / '';
+  margin-left: var(--s-1);
+  transition: transform var(--duration-quick) var(--ease-out);
+}
+.mistake-sources[open] > summary::after { transform: rotate(180deg); }
+.mistake-sources ul { margin: 0; padding-left: 20px; font-size: var(--t-size-caption); }
+.mistake-sources li + li { margin-top: 4px; }
 
 /* ---------- база ---------- */
 
@@ -612,9 +792,63 @@ a:hover { color: var(--accent-on-ground); }
 .empty { padding: var(--s-6) 0; color: var(--text-on-ground-muted); text-align: center; }
 .database-foot { justify-content: space-between; padding: var(--s-6) 0 88px; }
 
+/* ---------- планшет ---------- */
+
+@media (max-width: 860px) {
+  .next { grid-template-columns: minmax(0, 1fr); }
+}
+
 /* ---------- телефон ---------- */
 
 @media (max-width: 600px) {
+  /* шапка: переключатели вида — в меню «Вид» */
+  .site-header { gap: var(--s-1) var(--s-3); padding: var(--s-3) 0; }
+  .site-header .ink-header__brand .ink-seal { width: 36px; height: 36px; font-size: 21px; }
+  .site-header .ink-header__name { font-size: 22px; }
+  .site-nav { width: 100%; margin-left: 0; gap: var(--s-1) 20px; font-size: 15px; }
+  .site-tools { justify-content: space-between; width: 100%; gap: var(--s-3); }
+  .site-tools .theme { display: none; }
+  .view-toggle { display: inline-flex; }
+  .view-menu:not([hidden]) { display: flex; }
+
+  #firstHero { padding-bottom: var(--s-7); }
+  .hero-start, .hero-start .ink-btn--primary { width: 100%; min-width: 0; }
+  .next { gap: var(--s-5); padding: var(--s-6) 0 var(--s-5); }
+  .next-title { font-size: 40px; }
+  .next-summary { font-size: var(--t-size-body); }
+  .next-actions { width: 100%; gap: var(--s-2); }
+  .next-actions .ink-btn--primary { flex: 1 1 100%; min-width: 0; }
+  .next-main .hint { display: none; }
+  .quick-row { min-height: 72px; padding: var(--s-2) 0; }
+  .quick-count { font-size: 32px; }
+  .quick-unit, .quick-help--long { display: none; }
+  .quick-help--short { display: inline; }
+  .resume { padding: var(--s-5) var(--s-4); }
+  .resume-title { font-size: 32px; }
+  .resume-head .ink-seal { width: 48px; height: 48px; font-size: 26px; }
+  .resume-settings, .resume-saved { display: none; }
+
+  .start-bar {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: var(--s-3);
+    padding: var(--s-3) var(--s-4) calc(var(--s-3) + env(safe-area-inset-bottom, 0px));
+    border-top: var(--border-hair) solid var(--line-on-ground);
+    background: var(--surface-ground);
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: transform var(--duration-quick) var(--ease-out), visibility 0s linear var(--duration-quick);
+  }
+  .start-bar.is-shown { visibility: visible; transform: none; transition: transform var(--duration-quick) var(--ease-out); }
+  .start-bar p { flex: 1 1 auto; min-width: 0; margin: 0; color: var(--text-on-ground-muted); font-size: var(--t-size-caption); line-height: 1.3; }
+  .start-bar .ink-btn { flex: 0 0 auto; padding: 0 22px; }
+  /* полоса не закрывает подвал и элемент в фокусе */
+  body[data-view='setup'] .ink-footer { padding-bottom: 96px; }
+  html:has(body[data-view='setup']) { scroll-padding-bottom: 96px; }
+
   .hero { padding: var(--s-7) 0 var(--s-7); }
   .stats dd { font-size: 44px; }
   .stats > div { padding: var(--s-4) var(--s-2); }
@@ -632,5 +866,12 @@ a:hover { color: var(--accent-on-ground); }
   .recall-prompt .ink-btn, .recall-rate .ink-btn { flex: 1 1 100%; }
   .tf-option { font-size: 34px; }
   .results { padding: var(--s-7) 0 var(--s-8); }
+  .results .actions { width: 100%; }
+  .results .actions .ink-btn { flex: 1 1 100%; }
+  .result-text { font-size: var(--t-size-body); }
+  .new-round-note { display: none; }
+  .mistake-head { grid-template-columns: 40px minmax(0, 1fr) 20px; gap: var(--s-3); }
+  .mistake-head .ink-seal { width: 40px; height: 40px; font-size: 22px; }
+  .mistake-panel { margin-left: 0; padding: var(--s-4); }
   .row-panel { padding: var(--s-4); }
 }

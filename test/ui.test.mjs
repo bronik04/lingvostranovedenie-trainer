@@ -100,10 +100,29 @@ async function answer(page, record, correct) {
   return optionId;
 }
 
+/** Кнопка раунда наверху главной: при пустом прогрессе — «Начать первый раунд». */
+const startButton = (page) => page.locator('#firstStart:visible, #startButton:visible');
+
 async function startRound(page, size) {
   await page.locator(`input[name="roundSize"][value="${size}"]`).check();
-  await page.locator('#startButton').click();
+  await startButton(page).click();
   await page.locator('#quizView').waitFor();
+}
+
+const hashOf = (page) => new URL(page.url()).hash;
+
+/** Ответ на вопрос на экране и переход дальше; record — запись банка (см. currentRecord). */
+async function answerAndNext(page, bank, correct) {
+  const record = await currentRecord(page, bank);
+  await answer(page, record, correct);
+  await page.locator('#nextButton').click();
+  return record;
+}
+
+/** Телефон: пиньинь и вопрос по-китайски — в меню «Вид». */
+async function viewMenuItem(page, id) {
+  if (!(await page.locator('#viewMenu').isVisible())) await page.locator('#viewToggle').click();
+  await page.locator(`#${id}`).click();
 }
 
 test('главная открывается без ошибок и считает банк', LIMIT, async (t) => {
@@ -112,10 +131,67 @@ test('главная открывается без ошибок и считае�
   const bank = await bankOf(page);
   assert.ok(bank.length > 400);
   assert.equal(await page.locator('#bankCount').textContent(), `Пройдено 0 из ${bank.length}`);
-  assert.match(await page.locator('#footerNote').textContent(), /^В базе \d+ вопрос/);
-  assert.equal(await page.locator('#startButton').isEnabled(), true);
+  // числа банка — в подвале, а не над заголовком
+  const seasons = new Set(bank.flatMap((r) => r.occurrences.map((o) => o.year))).size;
+  const footer = await page.locator('#footerNote').textContent();
+  assert.match(footer, new RegExp(`^В базе ${bank.length} вопрос\\S*: \\d+ из заданий ВсОШ за ${seasons} сезон`), footer);
+  assert.match(footer, /, 7 тем\. /, footer);
+  // первый визит: заголовок, вводный абзац и кнопка первого раунда; надзаголовка и ряда чисел нет
+  assert.equal(await page.locator('#firstHero').isVisible(), true);
+  assert.equal(await page.locator('#nextRound').isVisible(), false);
+  assert.equal(await page.locator('#setupView .ink-eyebrow, #setupView .stats').count(), 0);
+  assert.equal(await page.locator('#firstStart').textContent(), 'Начать первый раунд');
+  assert.equal(await page.locator('#firstStart').isEnabled(), true);
+  assert.equal(await page.locator('#firstCaption').textContent(),
+    '10 случайных вопросов из всех тем. Режим, формат и темы — ниже.');
+  assert.equal(await page.locator('#setupView .ink-btn--primary:visible').count(), 1);
   const description = await page.locator('meta[name="description"]').getAttribute('content');
   assert.ok(description.startsWith(`${bank.length} `), description);
+  assert.deepEqual(page.errors, []);
+});
+
+test('главная после первых ответов: «Следующий раунд», быстрые входы, длина в строке настроек', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  // длина раунда — в подписи первого визита
+  await page.locator('input[name="roundSize"][value="20"]').check();
+  assert.equal(await page.locator('#firstCaption').textContent(),
+    '20 случайных вопросов из всех тем. Режим, формат и темы — ниже.');
+  await page.locator('input[name="roundSize"][value="all"]').check();
+  assert.match(await page.locator('#firstCaption').textContent(), /^Все вопросы базы в случайном порядке\./);
+  // одна ошибка в прогрессе: главная — «Следующий раунд»
+  const record = bank.find((r) => r.answer.state === 'verified');
+  await page.evaluate((id) => localStorage.setItem('lingvo-trainer:v1', JSON.stringify({
+    version: 1, progress: { [id]: { attempts: 1, correct: 0, completed: true, lastCorrect: false, box: 0, dueAt: 0 } },
+  })), record.id);
+  await page.reload();
+  assert.equal(await page.locator('#firstHero').isVisible(), false);
+  assert.equal(await page.locator('#nextTitle').textContent(), 'Следующий раунд');
+  await page.locator('input[name="roundSize"][value="5"]').check();
+  assert.equal(await page.locator('#nextSummary').textContent(), 'Все вопросы, выбор ответа, 5 вопросов, все темы.');
+  const all = eligible(bank, ALL, {}).length;
+  assert.equal(await page.locator('#eligibleNotice').textContent(), `Подходит вопросов: ${all}, в раунде будет 5.`);
+  assert.equal(await page.locator('#setupView .ink-btn--primary:visible').count(), 1);
+  // быстрые входы: «Ошибки» и «Пора повторить» — с числом; режим главной они не меняют
+  assert.equal(await page.locator('#quickMistakes').isVisible(), true);
+  assert.equal(await page.locator('#quickMistakes .quick-number').textContent(), '1');
+  assert.equal(await page.locator('#quickMistakes .quick-unit').textContent(), 'вопрос');
+  assert.equal(await page.locator('#quickDue .quick-number').textContent(), '1');
+  await page.locator('#quickMistakes').click();
+  await page.locator('#quizView').waitFor();
+  assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 1 из 1');
+  assert.equal((await currentRecord(page, bank)).id, record.id);
+  assert.equal(await page.evaluate(() => state.filters.mode), 'all');
+  // без ошибок и сроков быстрых входов нет
+  await page.evaluate((id) => localStorage.setItem('lingvo-trainer:v1', JSON.stringify({
+    version: 1, progress: { [id]: { attempts: 1, correct: 1, completed: true, lastCorrect: true, box: 1, dueAt: Date.now() + 1e9 } },
+  })), record.id);
+  await page.evaluate(() => sessionStorage.clear());
+  await page.goto(baseUrl);
+  await page.reload();
+  assert.equal(await page.locator('#nextMain').isVisible(), true);
+  assert.equal(await page.locator('#quickStarts').isVisible(), false);
   assert.deepEqual(page.errors, []);
 });
 
@@ -158,18 +234,23 @@ test('раунд: верный и неверный ответ, повтор ош
   await page.locator('#resultsView').waitFor();
   // повтор ошибки закрепляет ответ, но не исправляет счёт: из десяти вопросов верно девять
   assert.equal(await page.locator('#finalScore').textContent(), '9 / 10');
-  assert.doesNotMatch(await page.locator('#resultText').textContent(), /без ошибок/);
+  assert.equal(await page.locator('#resultText').textContent(), 'Вопросы с ошибками вернутся в режиме «Ошибки» и при повторении.');
   assert.equal(await page.locator('#repeatMistakes').textContent(), 'Повторить ошибки раунда (1)');
   // в итогах — ошибка с ответом ученика и верным ответом, и одна главная кнопка
   const wrongRecord = bank.find((r) => r.id === wrongId);
-  const mistakes = page.locator('#mistakeList li');
+  const mistakes = page.locator('#mistakeList > li');
   assert.equal(await mistakes.count(), 1);
-  const mistake = await mistakes.first().textContent();
+  const mistake = await mistakes.first().locator('.mistake-head').textContent();
   assert.ok(mistake.includes(wrongRecord.questionRu), mistake);
   assert.ok(mistake.includes(`✕ ${wrongPick}`), mistake);
   const right = wrongRecord.options.find((o) => o.id === wrongRecord.answer.optionId).zh;
   assert.ok(mistake.includes(`✓ ${right}`), mistake);
   assert.equal(await page.locator('#resultsView .ink-btn--primary:visible').count(), 1);
+  assert.equal(await page.locator('#repeatMistakes').getAttribute('class'), 'ink-btn ink-btn--primary');
+  assert.match(await page.locator('#newRound').getAttribute('class'), /ink-btn--secondary/);
+  assert.equal(await page.locator('#newRoundNote').textContent(), 'Новый раунд — снова 10 вопросов, все вопросы, все темы.');
+  // совета заглянуть в базу и ссылки на неё в итогах больше нет
+  assert.doesNotMatch(await page.locator('#resultsView .results-score').textContent(), /базу/);
 
   await page.locator('#repeatMistakes').click();
   assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 1 из 1');
@@ -180,6 +261,12 @@ test('раунд: верный и неверный ответ, повтор ош
 test('клавиатура: цифра отвечает, Enter ведёт дальше, Esc выходит', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
+  // Esc без ответов — на главную, и раунд не остаётся незаконченным
+  await page.keyboard.press('Enter');
+  await page.locator('#quizView').waitFor();
+  await page.keyboard.press('Escape');
+  await page.locator('#setupView').waitFor();
+  assert.equal(await page.locator('#resumePanel').isVisible(), false);
   await page.keyboard.press('Enter');
   await page.locator('#quizView').waitFor();
   await page.keyboard.press('Digit1');
@@ -187,6 +274,10 @@ test('клавиатура: цифра отвечает, Enter ведёт дал
   assert.equal(await page.locator('#options button:not(:disabled)').count(), 0);
   await page.keyboard.press('Enter');
   assert.match(await page.locator('#progressLabel').textContent(), /^Вопрос 2 из/);
+  // Esc после ответа — итоги по отвеченным, второй Esc — главная
+  await page.keyboard.press('Escape');
+  await page.locator('#resultsView').waitFor();
+  assert.match(await page.locator('#finalScore').textContent(), /^[01] \/ 1$/);
   await page.keyboard.press('Escape');
   await page.locator('#setupView').waitFor();
   assert.deepEqual(page.errors, []);
@@ -199,10 +290,12 @@ test('прогресс переживает перезагрузку, а реж�
   await startRound(page, 5);
   await answer(page, await currentRecord(page, bank), false);
   await page.locator('#leaveRound').click();
+  await page.locator('#resultsView').waitFor();
+  await page.locator('#backToSetup').click();
   await page.reload();
   assert.equal(await page.locator('#bankCount').textContent(), `Пройдено 1 из ${bank.length}`);
   await page.locator('#setupView .mode-option', { hasText: 'Ошибки' }).click();
-  assert.equal(await page.locator('#eligibleNotice').textContent(), 'Под фильтры подходит вопросов: 1.');
+  assert.equal(await page.locator('#eligibleNotice').textContent(), 'Подходит вопросов: 1, в раунде будет 1.');
   assert.deepEqual(page.errors, []);
 });
 
@@ -213,19 +306,45 @@ test('фильтр по теме считает вопросы темы', LIMIT,
   const topic = 'История и государство';
   const expected = eligible(bank, { ...ALL, topics: [topic] }, {}).length;
   await page.locator('#topicControls label', { hasText: topic }).locator('input').check();
-  assert.equal(await page.locator('#eligibleNotice').textContent(), `Под фильтры подходит вопросов: ${expected}.`);
+  const notice = `Подходит вопросов: ${expected}, в раунде будет 10.`;
+  assert.equal(await page.locator('#eligibleNotice').textContent(), notice);
+  // первый визит: настройки тронуты — под кнопкой строка настроек и счёт
+  assert.equal(await page.locator('#firstCaption').textContent(),
+    `Все вопросы, выбор ответа, 10 вопросов, тема «${topic}». ${notice}`);
   assert.equal(await page.locator('#topicControls label', { hasText: topic }).locator('.topic-progress').textContent(),
     `0/${expected}`);
   await page.locator('#clearFilters').click();
   assert.equal(await page.locator('#eligibleNotice').textContent(),
-    `Под фильтры подходит вопросов: ${eligible(bank, ALL, {}).length}.`);
+    `Подходит вопросов: ${eligible(bank, ALL, {}).length}, в раунде будет 10.`);
+  assert.deepEqual(page.errors, []);
+});
+
+test('числа на пилюлях режима считаются под фильтры', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  const modes = ['all', 'new', 'mistakes', 'due'];
+  const counts = () => page.locator('input[name="studyMode"] + .ink-pill .pill-count').allTextContents();
+  const expected = (filters, progress) => modes.map((mode) => String(eligible(bank, { ...filters, mode }, progress).length));
+  assert.deepEqual(await counts(), expected(ALL, {}));
+  const topic = 'Россия и межкультурный блок';
+  await page.locator('#topicControls label', { hasText: topic }).locator('input').check();
+  assert.deepEqual(await counts(), expected({ ...ALL, topics: [topic] }, {}));
+  // ошибка по теме — в «Ошибках» и в «Повторении»; в заголовок свёрнутого режима число не идёт
+  const record = bank.find((r) => r.topic === topic && r.answer.state === 'verified');
+  const progress = { [record.id]: { attempts: 1, correct: 0, completed: true, lastCorrect: false, box: 0, dueAt: 0 } };
+  await page.evaluate((value) => localStorage.setItem('lingvo-trainer:v1', JSON.stringify({ version: 1, progress: value })), progress);
+  await page.reload();
+  assert.deepEqual(await counts(), expected({ ...ALL, topics: [topic] }, progress));
+  assert.deepEqual((await counts()).slice(2), ['1', '1']);
+  assert.equal(await page.locator('#modeValue').textContent(), 'Все вопросы');
   assert.deepEqual(page.errors, []);
 });
 
 test('база: поиск по-китайски и раскрытие ответа', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
-  await page.locator('#openDatabase').click();
+  await page.locator('#navDatabase').click();
   await page.locator('#databaseView').waitFor();
   await page.locator('#databaseSearch').fill('颐和园');
   assert.match(await page.locator('#databaseCount').textContent(), /^Показано [1-9]\d* из [1-9]\d* вопрос/);
@@ -275,7 +394,8 @@ test('подписи появляются под неверными вариан
   assert.ok(Math.abs(note.x - caption.x) <= 1, 'подпись не выровнена по тексту варианта');
 
   await page.locator('#leaveRound').click();
-  await page.locator('#openDatabase').click();
+  await page.locator('#resultsView').waitFor();
+  await page.locator('#navDatabase').click();
   await page.locator('#databaseSearch').fill(record.questionRu);
   assert.equal(await page.locator('#databaseList article').count(), 1, 'поиск должен найти одну запись');
   const row = page.locator('#databaseList article').first();
@@ -322,7 +442,7 @@ test('прогресс склеенного дубля переезжает на
   assert.equal(await page.locator('#bankCount').textContent(), `Пройдено 1 из ${bank.length}`);
   assert.deepEqual(await page.evaluate(() => Object.keys(state.progress)), [kept.id]);
   await page.locator('#setupView .mode-option', { hasText: 'Ошибки' }).click();
-  assert.equal(await page.locator('#eligibleNotice').textContent(), 'Под фильтры подходит вопросов: 1.');
+  assert.equal(await page.locator('#eligibleNotice').textContent(), 'Подходит вопросов: 1, в раунде будет 1.');
 
   await page.evaluate(() => localStorage.clear());
   await page.reload();
@@ -432,7 +552,8 @@ test('у вопроса с общим набором в раунде четыр�
   assert.match(await page.locator('#feedback').textContent(), /Верно/);
 
   await page.locator('#leaveRound').click();
-  await page.locator('#openDatabase').click();
+  await page.locator('#resultsView').waitFor();
+  await page.locator('#navDatabase').click();
   await page.locator('#databaseSearch').fill(pooled.questionRu);
   const row = page.locator('#databaseList .row', { hasText: pooled.questionRu }).first();
   await row.waitFor();
@@ -468,11 +589,18 @@ test('телефон: ни на одном экране нет горизонт�
   await answer(page, await currentRecord(page, bank), false);
   assert.equal(await overflow(), 0, 'вопрос с разбором ответа');
   await page.locator('#leaveRound').click();
-  await page.locator('#openDatabase').click();
+  await page.locator('#resultsView').waitFor();
+  assert.equal(await overflow(), 0, 'итоги с раскрытой ошибкой');
+  await page.locator('#navDatabase').click();
   const first = page.locator('#databaseList article').first();
   await first.locator('summary').click();
   assert.equal(await first.locator('.row-answer').isVisible(), true, 'ответ в базе не раскрылся');
   assert.equal(await overflow(), 0, 'база с раскрытым ответом');
+  // главная после первого ответа: «Следующий раунд», быстрые входы и открытое меню «Вид»
+  await page.locator('#navSetup').click();
+  await page.locator('#viewToggle').click();
+  assert.equal(await page.locator('#quickMistakes').isVisible(), true);
+  assert.equal(await overflow(), 0, 'главная с быстрыми входами');
   assert.deepEqual(page.errors, []);
 });
 
@@ -523,8 +651,10 @@ test('вспомни сам: ответ открывается пробелом,
   await page.locator('#nextButton:not(.hidden)').waitFor();
   assert.equal(await page.locator('#progressSteps li').first().getAttribute('class'), 'ink-step ink-step--wrong ink-step--current');
   await page.locator('#leaveRound').click();
+  await page.locator('#resultsView').waitFor();
+  await page.locator('#backToSetup').click();
   await page.locator('#setupView .mode-option', { hasText: 'Ошибки' }).click();
-  assert.equal(await page.locator('#eligibleNotice').textContent(), 'Под фильтры подходит вопросов: 1.');
+  assert.equal(await page.locator('#eligibleNotice').textContent(), 'Подходит вопросов: 1, в раунде будет 1.');
   assert.deepEqual(page.errors, []);
 });
 
@@ -715,7 +845,7 @@ test('верно или нет: ошибка объясняется, возвр�
     await page.keyboard.press('Enter');
   }
   assert.equal(await page.locator('#finalScore').textContent(), '4 / 5');
-  assert.match(await page.locator('#mistakeList li').first().textContent(), /«(не)?верно» для/);
+  assert.match(await page.locator('#mistakeList > li').first().textContent(), /«(не)?верно» для/);
   await page.locator('#repeatMistakes').click();
   assert.equal(await page.locator('#tfPanel').isVisible(), true, 'повтор ошибок — в том же формате');
   assert.deepEqual(page.errors, []);
@@ -739,7 +869,9 @@ test('верно или нет: угаданное «верно» не выво�
   await page.locator(statement.isTrue ? '#tfTrue' : '#tfFalse').click();
   assert.equal(await page.locator('#feedback.good').isVisible(), true);
   await page.locator('#leaveRound').click();
-  assert.equal(await page.locator('#eligibleNotice').textContent(), 'Под фильтры подходит вопросов: 1.');
+  await page.locator('#resultsView').waitFor();
+  await page.locator('#backToSetup').click();
+  assert.equal(await page.locator('#eligibleNotice').textContent(), 'Подходит вопросов: 1, в раунде будет 1.');
   assert.deepEqual(page.errors, []);
 });
 
@@ -786,6 +918,8 @@ test('чэнъюй: раунд с верным и неверным ответо�
   await openChengyu(page);
   assert.equal(await page.locator('#navChengyu').getAttribute('aria-current'), 'page');
   assert.equal(await page.locator('#cyStatTotal').textContent(), String(bank.length));
+  // в шапке раздела — его счёт, а не прогресс основного банка
+  assert.equal(await page.locator('#bankCount').textContent(), `Решено 0 из ${bank.length}`);
   await page.locator('input[name="cySize"][value="5"]').check();
   await page.locator('#cyStartButton').click();
   await page.locator('#cyQuizView').waitFor();
@@ -811,6 +945,7 @@ test('чэнъюй: раунд с верным и неверным ответо�
   }
   await page.locator('#cyResultsView').waitFor();
   assert.match(await page.locator('#cyFinalScore').textContent(), /^4\s*\/ 5$/);
+  assert.equal(await page.locator('#bankCount').textContent(), `Решено 5 из ${bank.length}`);
   assert.equal(await page.locator('#cyMistakeList li').count(), 1);
   assert.equal(await page.locator('#cyRepeatMistakes').isVisible(), true);
 
@@ -838,6 +973,7 @@ test('чэнъюй: раунд с верным и неверным ответо�
   assert.equal(new URL(page.url()).hash, '#chengyu');
   await page.locator('#navSetup').click();
   assert.equal(new URL(page.url()).hash, '');
+  assert.match(await page.locator('#bankCount').textContent(), /^Пройдено 0 из \d+$/);
   await page.reload();
   assert.equal(await page.locator('#setupView').isVisible(), true);
   assert.deepEqual(page.errors, []);
@@ -848,6 +984,10 @@ test('чэнъюй: ссылка #chengyu открывает раздел, те�
   if (!page) return;
   await page.goto(`${baseUrl}#chengyu`);
   await page.locator('#cySetupView').waitFor();
+  // и при загрузке страницы сразу по такой ссылке: адрес не теряется
+  await page.reload();
+  await page.locator('#cySetupView').waitFor();
+  assert.equal(hashOf(page), '#chengyu');
   const overflow = () => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
   assert.equal(await overflow(), 0, 'начало раздела');
   await page.locator('input[name="cySize"][value="all"]').check();
@@ -863,27 +1003,43 @@ test('чэнъюй: ссылка #chengyu открывает раздел, те�
   assert.deepEqual(page.errors, []);
 });
 
-test('фильтр «Откуда вопросы» и пиньинь: раунд из дополнений, транскрипция по кнопке в шапке', LIMIT, async (t) => {
+test('фильтр «Откуда вопросы» и пиньинь: раунд из дополнений, транскрипция из меню «Вид»', LIMIT, async (t) => {
   const page = await openPage(t, { width: 375, height: 812 });
   if (!page) return;
   const bank = await page.evaluate(() => QUESTION_BANK);
   const additions = bank.filter((record) => record.origin === 'addition').length;
   await page.locator('input[name="studyOrigin"][value="addition"]').check({ force: true });
-  assert.match(await page.locator('#eligibleNotice').textContent(), new RegExp(`: ${additions}\\.`));
-  await page.locator('#startButton').click();
+  assert.match(await page.locator('#eligibleNotice').textContent(), new RegExp(`: ${additions},`));
+  await startButton(page).click();
   await page.locator('#quizView').waitFor();
-  assert.equal(await page.locator('#sourceLabel').textContent(), 'Проверенное дополнение');
+  // над дополнением одна метка «Дополнение», без «Проверенного дополнения» рядом
+  assert.equal(await page.locator('#sourceLabel').isVisible(), false);
+  assert.equal(await page.locator('#originPill').textContent(), 'Дополнение');
+  assert.equal(await page.locator('#originPill').isVisible(), true);
+  // на телефоне переключатели вида — не в шапке, а в меню «Вид»
+  for (const id of ['#pinyinToggle', '#questionZhToggle', '#themeToggle', '#viewMenu']) {
+    assert.equal(await page.locator(id).isVisible(), false, id);
+  }
   // транскрипция в разметке есть, но видна только по настройке — и переключается посреди вопроса
   const reading = page.locator('#options .pinyin').first();
   assert.equal(await reading.isVisible(), false);
-  await page.locator('#pinyinToggle').click();
+  await page.locator('#viewToggle').click();
+  assert.equal(await page.locator('#viewToggle').getAttribute('aria-expanded'), 'true');
+  await page.locator('#pinyinMenu').click();
   assert.equal(await reading.isVisible(), true);
-  assert.equal(await page.locator('#pinyinToggle').getAttribute('aria-pressed'), 'true');
+  assert.equal(await page.locator('#pinyinMenu').getAttribute('aria-pressed'), 'true');
+  assert.equal(await page.locator('#pinyinState').textContent(), 'вкл');
   // клавиша P — то же, что кнопка; по коду клавиши, поэтому и на русской раскладке
   await page.keyboard.press('KeyP');
   assert.equal(await reading.isVisible(), false);
+  assert.equal(await page.locator('#pinyinState').textContent(), 'выкл');
   await page.keyboard.press('KeyP');
   assert.equal(await reading.isVisible(), true);
+  // Esc закрывает меню, а не раунд; фокус возвращается на «Вид»
+  await page.keyboard.press('Escape');
+  assert.equal(await page.locator('#viewMenu').isVisible(), false);
+  assert.equal(await page.locator('#quizView').isVisible(), true);
+  assert.equal(await page.evaluate(() => document.activeElement.id), 'viewToggle');
   // на телефоне после ответа видна кнопка «Следующий вопрос», после неё — снова начало вопроса
   await page.locator('#options button').first().click();
   // докрутка к кнопке, но вердикт разбора не уезжает за верх экрана
@@ -935,6 +1091,8 @@ test('китайский текст вопроса: скрыт по умолча
   assert.equal(await page.evaluate(() => document.documentElement.dataset.questionZh), 'on');
   assert.equal(await page.locator('#questionZhToggle').getAttribute('aria-pressed'), 'true');
   assert.equal(await page.locator('#questionZhLabel').textContent(), 'Вопрос 中文: вкл');
+  // перезагрузка вернула в тот же раунд, где навигации нет: из раунда — в итоги, оттуда в базу
+  await page.locator('#leaveRound').click();
   await page.locator('#navDatabase').click();
   const rowZh = page.locator('.row-zh-question').first();
   await rowZh.waitFor();
@@ -947,9 +1105,9 @@ test('китайский текст вопроса: скрыт по умолча
 test('телефон: с включённым пиньинем ни один вопрос и вариант не выходит за край экрана', LIMIT, async (t) => {
   const page = await openPage(t, { width: 375, height: 812 });
   if (!page) return;
-  await page.locator('#startButton').click();
+  await startButton(page).click();
   await page.locator('#quizView').waitFor();
-  await page.locator('#pinyinToggle').click();
+  await viewMenuItem(page, 'pinyinMenu');
   // каждый вопрос банка рисуется в раунде теми же функциями интерфейса
   const result = await page.evaluate(() => {
     const overflowing = [];
@@ -990,7 +1148,7 @@ test('главная: режим, формат и темы свёрнуты, в 
   // стрелка раскрытия не входит в имя раздела для чтения с экрана
   assert.equal(await page.locator('#modeFold .fold-arrow').getAttribute('aria-hidden'), 'true');
   // свёрнутое не мешает начать раунд
-  await page.locator('#startButton').click();
+  await startButton(page).click();
   await page.locator('#quizView').waitFor();
   assert.deepEqual(page.errors, []);
 });
@@ -999,7 +1157,7 @@ test('телефон: после ответа с длинным разбором
   const page = await openPage(t, { width: 375, height: 667 });
   if (!page) return;
   await page.locator('input[name="roundSize"][value="all"]').check({ force: true });
-  await page.locator('#startButton').click();
+  await startButton(page).click();
   await page.locator('#quizView').waitFor();
   // вопрос с самым длинным пояснением и больше чем двумя источниками
   const longest = await page.evaluate(() => QUESTION_BANK.filter((r) => r.evidence.length > 2)
@@ -1023,7 +1181,7 @@ test('телефон: во «Вспомни сам» после самооцен
   const page = await openPage(t, { width: 375, height: 667 });
   if (!page) return;
   await page.locator('input[name="studyFormat"][value="recall"]').check({ force: true });
-  await page.locator('#startButton').click();
+  await startButton(page).click();
   await page.locator('#quizView').waitFor();
   // вопрос без обязательных вариантов и с самым длинным пояснением
   await page.evaluate(() => {
@@ -1038,5 +1196,214 @@ test('телефон: во «Вспомни сам» после самооцен
     return next.top >= 0 && next.bottom <= innerHeight;
   }, null, { timeout: 5000 });
   assert.equal(await page.evaluate(() => document.activeElement?.id), 'nextButton');
+  assert.deepEqual(page.errors, []);
+});
+
+/* ---------- адреса экранов, незаконченный раунд, итоги ---------- */
+
+test('«назад» из раунда, итогов и базы ведёт на главную; незаконченный раунд продолжается', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  await startRound(page, 10);
+  assert.equal(hashOf(page), '#round');
+  await answerAndNext(page, bank, true);
+  const second = await currentRecord(page, bank);
+  await answer(page, second, false);
+  await page.goBack();
+  await page.locator('#setupView').waitFor();
+  assert.equal(hashOf(page), '');
+  // вместо «Следующего раунда» — плашка: ход раунда и две кнопки, главная из них одна
+  assert.equal(await page.locator('#nextMain').isVisible(), false);
+  assert.equal(await page.locator('#resumeTitle').textContent(), 'Раунд не закончен');
+  assert.equal(await page.locator('#resumeProgress').textContent(), 'Вопрос 2 из 10, верно 1.');
+  assert.equal(await page.locator('#resumeSettings').textContent(), ' Все вопросы, выбор ответа, все темы.');
+  assert.equal(await page.locator('#resumeSteps li.ink-step--correct').count(), 1);
+  assert.equal(await page.locator('#resumeSteps li.ink-step--wrong').count(), 1);
+  assert.equal(await page.locator('#resumeSaved').textContent(), 'Ответы на первые два вопроса уже сохранены в прогрессе.');
+  assert.equal(await page.locator('#setupView .ink-btn--primary:visible').count(), 1);
+  // «вперёд» и Enter на плашке возвращают в тот же раунд, к тому же разбору
+  await page.goForward();
+  await page.locator('#quizView').waitFor();
+  assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 2 из 10');
+  await page.goBack();
+  await page.locator('#setupView').waitFor();
+  await page.keyboard.press('Enter');
+  await page.locator('#quizView').waitFor();
+  assert.equal((await currentRecord(page, bank)).id, second.id);
+  assert.equal(await page.locator('#feedback.bad').isVisible(), true, 'разбор ответа остался на месте');
+  // итоги: «назад» — на главную, раунд закончен, плашки нет
+  await page.locator('#leaveRound').click();
+  await page.locator('#resultsView').waitFor();
+  assert.equal(hashOf(page), '#results');
+  await page.goBack();
+  await page.locator('#setupView').waitFor();
+  assert.equal(await page.locator('#nextMain').isVisible(), true);
+  assert.equal(await page.locator('#resumePanel').isVisible(), false);
+  // база: «назад» — на главную
+  await page.locator('#navDatabase').click();
+  await page.locator('#databaseView').waitFor();
+  assert.equal(hashOf(page), '#database');
+  await page.goBack();
+  await page.locator('#setupView').waitFor();
+  // «Начать новый раунд» заменяет незаконченный без вопроса
+  await startRound(page, 5);
+  await answer(page, await currentRecord(page, bank), true);
+  await page.goBack();
+  await page.locator('#resumeNew').click();
+  await page.locator('#quizView').waitFor();
+  assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 1 из 5');
+  assert.equal(await page.locator('#progressSteps li.ink-step--correct').count(), 0);
+  await page.goBack();
+  assert.equal(await page.locator('#resumeProgress').textContent(), 'Вопрос 1 из 5, верно 0.');
+  assert.equal(await page.locator('#resumeSaved').isVisible(), false, 'ответов в новом раунде ещё нет');
+  assert.deepEqual(page.errors, []);
+});
+
+test('перезагрузка посреди раунда возвращает на тот же вопрос, итоги — на итоги', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  await startRound(page, 5);
+  const wrong = await answerAndNext(page, bank, false);
+  const second = await currentRecord(page, bank);
+  await page.reload();
+  await page.locator('#quizView').waitFor();
+  assert.equal(hashOf(page), '#round');
+  assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 2 из 5');
+  assert.equal((await currentRecord(page, bank)).id, second.id);
+  assert.equal(await page.locator('#progressSteps li.ink-step--wrong').count(), 1);
+  // отвеченный вопрос второй раз не задаётся: после перезагрузки — следующий
+  await answer(page, second, true);
+  await page.reload();
+  await page.locator('#quizView').waitFor();
+  assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 3 из 5');
+  // повтор ошибки пережил перезагрузку: шестым вернётся первый вопрос
+  await answerAndNext(page, bank, true);
+  await answerAndNext(page, bank, true);
+  await answerAndNext(page, bank, true);
+  assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 6 из 6');
+  assert.equal(await page.locator('#retryPill').isVisible(), true);
+  await answerAndNext(page, bank, true);
+  await page.locator('#resultsView').waitFor();
+  assert.equal(await page.locator('#finalScore').textContent(), '4 / 5');
+  await page.reload();
+  await page.locator('#resultsView').waitFor();
+  assert.equal(hashOf(page), '#results');
+  assert.equal(await page.locator('#finalScore').textContent(), '4 / 5');
+  assert.ok((await page.locator('#mistakeList').textContent()).includes(wrong.questionRu));
+  assert.deepEqual(page.errors, []);
+});
+
+test('«Закончить раунд»: итоги по отвеченным, «Новый раунд» с теми же настройками, без ошибок главная — «Новый раунд»', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  await startRound(page, 20);
+  await answerAndNext(page, bank, true);
+  await answer(page, await currentRecord(page, bank), false);
+  await page.locator('#leaveRound').click();
+  await page.locator('#resultsView').waitFor();
+  assert.equal(await page.locator('#finalScore').textContent(), '1 / 2');
+  assert.equal(await page.locator('#resultCounts').textContent(), '✓ верно — 1✕ с ошибкой — 1');
+  assert.equal(await page.locator('#newRoundNote').textContent(), 'Новый раунд — снова 20 вопросов, все вопросы, все темы.');
+  // настройки главной после раунда меняются, а «Новый раунд» повторяет раунд
+  await page.evaluate(() => { state.size = 5; state.format = 'truefalse'; });
+  await page.locator('#newRound').click();
+  await page.locator('#quizView').waitFor();
+  assert.equal(await page.locator('#progressLabel').textContent(), 'Вопрос 1 из 20');
+  assert.equal(await page.locator('#options button').count() > 0, true, 'формат раунда — выбор ответа');
+  assert.equal(hashOf(page), '#round');
+  // раунд без ошибок: главная кнопка — «Новый раунд», «Повторить ошибки» нет
+  await page.evaluate(() => startRoundWith([QUESTION_BANK.find((r) => r.answer.state === 'verified')], 'choice'));
+  await answerAndNext(page, bank, true);
+  await page.locator('#resultsView').waitFor();
+  assert.equal(await page.locator('#resultText').textContent(), 'Весь раунд без ошибок.');
+  assert.equal(await page.locator('#repeatMistakes').isVisible(), false);
+  assert.equal(await page.locator('#resultMistakes').isVisible(), false);
+  assert.match(await page.locator('#newRound').getAttribute('class'), /ink-btn--primary/);
+  assert.equal(await page.locator('#resultsView .ink-btn--primary:visible').count(), 1);
+  await page.locator('#backToSetup').click();
+  await page.locator('#setupView').waitFor();
+  assert.equal(hashOf(page), '');
+  assert.deepEqual(page.errors, []);
+});
+
+test('ошибки в итогах раскрываются: пояснение, подпись выбранного варианта, свёрнутые источники', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  // два вопроса с постоянными четырьмя вариантами и подписью у неверного варианта
+  const picked = bank.filter((r) => r.options.length === 4 && r.evidence.length && r.explanation.ru
+    && r.options.some((o) => o.id !== r.answer.optionId && o.gloss)).slice(0, 2);
+  assert.equal(picked.length, 2);
+  await page.evaluate((ids) => startRoundWith(ids.map((id) => QUESTION_BANK.find((r) => r.id === id)), 'choice'),
+    picked.map((r) => r.id));
+  const wrongOptions = [];
+  for (const record of picked) {
+    const wrong = record.options.find((o) => o.id !== record.answer.optionId && o.gloss);
+    wrongOptions.push(wrong);
+    await page.locator(`#options button[data-option-id="${wrong.id}"]`).click();
+    await page.locator('#nextButton').click();
+  }
+  // повторы ошибок в конце раунда
+  while (await page.locator('#quizView').isVisible()) await answerAndNext(page, bank, true);
+  await page.locator('#resultsView').waitFor();
+  const heads = page.locator('#mistakeList .mistake-head');
+  const panels = page.locator('#mistakeList .mistake-panel');
+  assert.equal(await heads.count(), 2);
+  assert.deepEqual([await heads.nth(0).getAttribute('aria-expanded'), await heads.nth(1).getAttribute('aria-expanded')],
+    ['true', 'false']);
+  assert.equal(await panels.nth(0).isVisible(), true);
+  assert.equal(await panels.nth(1).isVisible(), false);
+  assert.ok((await heads.nth(0).textContent()).includes(`Ваш ответ ✕ ${wrongOptions[0].zh}, верно ✓ `));
+  assert.equal(await panels.nth(0).locator('.mistake-why').textContent(), picked[0].explanation.ru);
+  assert.equal(await panels.nth(0).locator('.mistake-gloss').textContent(),
+    `Ваш ответ ${wrongOptions[0].zh} — ${wrongOptions[0].gloss.replace(/\.$/, '')}.`);
+  assert.equal(await panels.nth(0).locator('.mistake-sources summary').textContent(), `Источники (${picked[0].evidence.length})`);
+  assert.equal(await panels.nth(0).locator('.mistake-sources a').first().isVisible(), false, 'источники свёрнуты');
+  // с клавиатуры: Enter раскрывает вторую ошибку и сворачивает первую, повторный — сворачивает
+  await heads.nth(1).focus();
+  await page.keyboard.press('Enter');
+  assert.equal(await heads.nth(1).getAttribute('aria-expanded'), 'true');
+  assert.equal(await panels.nth(1).isVisible(), true);
+  assert.equal(await panels.nth(0).isVisible(), false);
+  await page.keyboard.press('Enter');
+  assert.equal(await panels.nth(1).isVisible(), false);
+  assert.deepEqual(page.errors, []);
+});
+
+test('телефон: кнопка раунда внизу — только когда верхняя ушла за край экрана', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 375, height: 812 });
+  if (!page) return;
+  const bank = await bankOf(page);
+  // главные кнопки, которые сейчас видны в окне
+  const primariesInView = () => page.evaluate(() => [...document.querySelectorAll('.ink-btn--primary')].filter((button) => {
+    const rect = button.getBoundingClientRect();
+    return button.getClientRects().length && getComputedStyle(button).visibility !== 'hidden'
+      && rect.bottom > 0 && rect.top < innerHeight;
+  }).length);
+  const bar = page.locator('#startBar');
+  assert.equal(await bar.isVisible(), false);
+  assert.equal(await primariesInView(), 1);
+  await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
+  await page.waitForFunction(() => document.getElementById('startBar').classList.contains('is-shown'));
+  assert.equal(await bar.isVisible(), true);
+  assert.equal(await page.locator('#startBarText').textContent(),
+    `Все вопросы, 10 из ${eligible(bank, ALL, {}).length} подходящих`);
+  assert.equal(await primariesInView(), 1);
+  // полоса не закрывает подвал
+  const footer = await page.locator('.ink-footer p').last().boundingBox();
+  const barBox = await bar.boundingBox();
+  assert.ok(footer.y + footer.height <= barBox.y, 'подвал под полосой');
+  await page.locator('#barStart').click();
+  await page.locator('#quizView').waitFor();
+  assert.equal(await bar.isVisible(), false);
+  // на ноутбуке полосы нет
+  await page.setViewportSize({ width: 1280, height: 860 });
+  await page.locator('#leaveRound').click();
+  await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
+  await page.evaluate(() => new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+  assert.equal(await bar.isVisible(), false);
   assert.deepEqual(page.errors, []);
 });
