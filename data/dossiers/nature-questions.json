@@ -1790,5 +1790,49 @@
       "verdict": "accept",
       "note": "«Дорога жизни» шла по льду Ладоги в 1941–1943 гг.; Ладога — крупнейшее озеро Европы. Второго верного нет."
     }
+  },
+  {
+    "id": "nature-q02",
+    "embeds": "2022-23-mun-kam-10",
+    "status": "draft",
+    "fact": {
+      "table": "waters",
+      "row": "wat-changjiang",
+      "ask": "name",
+      "where": {
+        "country": "中国",
+        "kind": "河流"
+      }
+    }
+  },
+  {
+    "id": "nature-q03",
+    "embeds": "2025-26-shk-mosobl-14",
+    "status": "draft",
+    "fact": {
+      "table": "mountains",
+      "row": "mtn-hengshan-shanxi",
+      "ask": "province",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "exclude": [
+      "mtn-wutaishan"
+    ]
+  },
+  {
+    "id": "nature-q05",
+    "embeds": "2025-26-mun-ryaz-4",
+    "status": "draft",
+    "fact": {
+      "table": "waters",
+      "row": "wat-heilongjiang",
+      "ask": "name"
+    },
+    "exclude": [
+      "wat-wusulijiang",
+      "wat-tumenjiang"
+    ]
   }
 ]

@@ -991,5 +991,30 @@
       "verdict": "accept",
       "note": "Успенский собор: венчания на царство и коронации (до 1896 г.); здание Фиораванти 1475–1479. Архангельский и Благовещенский соборы есть среди вариантов, но коронаций там не было — второго верного нет."
     }
+  },
+  {
+    "id": "landmarks-q76",
+    "embeds": "2021-22-mun-tat-57",
+    "status": "draft",
+    "fact": {
+      "table": "intangible",
+      "row": "int-kunqu",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "exclude": [
+      "int-guqin",
+      "int-shufa",
+      "int-zhuanke",
+      "int-zhenjiu",
+      "int-zhusuan",
+      "int-jieqi",
+      "int-taijiquan",
+      "int-zhicha",
+      "int-xiangsheng",
+      "int-xiangqi"
+    ]
   }
 ]

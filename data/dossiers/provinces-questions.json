@@ -1648,5 +1648,141 @@
       "verdict": "accept",
       "note": "Ответ верен: Гонконг — специальный административный район (特别行政区). Аомэнь исключён правильно, другие варианты (直辖市, 自治区, 省) ответом не являются. Пояснение неверных вариантов не называет. По смыслу совпадает с provinces-q88 (статус Аомэня), но тексты друг друга не подсказывают. [принято автором 2026-10-25]"
     }
+  },
+  {
+    "id": "provinces-q91",
+    "embeds": "2016-17-mun-spb-3",
+    "status": "draft",
+    "fact": {
+      "table": "cities",
+      "row": "city-guangzhou",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "exclude": [
+      "city-changsha",
+      "city-chengdu",
+      "city-fuzhou",
+      "city-guiyang",
+      "city-haerbin",
+      "city-hangzhou",
+      "city-jinan",
+      "city-jingdezhen",
+      "city-kunming",
+      "city-lasa",
+      "city-luoyang",
+      "city-nanjing",
+      "city-nanning",
+      "city-renhuai",
+      "city-shenzhen",
+      "city-suzhou",
+      "city-wuhan",
+      "city-xiamen",
+      "city-xian",
+      "city-yixing"
+    ]
+  },
+  {
+    "id": "provinces-q92",
+    "embeds": "2019-20-mun-khab-1",
+    "status": "draft",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-anhui",
+      "ask": "capital"
+    }
+  },
+  {
+    "id": "provinces-q110",
+    "embeds": "2019-20-mun-khab-7",
+    "status": "draft",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-jiangxi",
+      "ask": "name",
+      "where": {
+        "kind": "省"
+      }
+    }
+  },
+  {
+    "id": "provinces-q111",
+    "embeds": "2025-26-mun-novg-3",
+    "status": "draft",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-guizhou",
+      "ask": "full",
+      "where": {
+        "kind": "省"
+      }
+    }
+  },
+  {
+    "id": "provinces-q112",
+    "embeds": "2025-26-shk-mosobl-12",
+    "status": "draft",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-yunnan",
+      "ask": "full"
+    }
+  },
+  {
+    "id": "provinces-q113",
+    "embeds": "2025-26-mun-mosobl-9",
+    "status": "draft",
+    "fact": {
+      "table": "cities",
+      "row": "city-ru-yakutsk",
+      "ask": "name",
+      "where": {
+        "country": "俄罗斯"
+      }
+    }
+  },
+  {
+    "id": "provinces-q114",
+    "embeds": "2025-26-mun-nnov-1",
+    "status": "draft",
+    "fact": {
+      "table": "cities",
+      "row": "city-ru-moscow",
+      "ask": "name",
+      "where": {
+        "country": "俄罗斯"
+      }
+    }
+  },
+  {
+    "id": "provinces-q115",
+    "embeds": "2024-25-mun-kursk-1",
+    "status": "draft",
+    "fact": {
+      "table": "cities",
+      "row": "city-shanghai",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    }
+  },
+  {
+    "id": "provinces-q116",
+    "embeds": "2024-25-shk-mosobl-8",
+    "status": "draft",
+    "fact": {
+      "table": "cities",
+      "row": "city-chongqing",
+      "ask": "name",
+      "where": {
+        "country": "中国"
+      }
+    },
+    "exclude": [
+      "city-chengdu"
+    ]
   }
 ]
