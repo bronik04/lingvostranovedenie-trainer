@@ -209,6 +209,8 @@ export function eligible(bank, filters, progress, now = Date.now()) {
 export function progressByTopic(bank, progress) {
   const counts = {};
   for (const record of bank) {
+    // вопрос без установленного ответа в раунд не попадает — и в счётчик темы тоже
+    if (!PLAYABLE.has(record.answer.state) || !record.answer.optionId) continue;
     const topic = counts[record.topic] ?? { completed: 0, total: 0 };
     topic.total += 1;
     if (progress[record.id]?.completed) topic.completed += 1;

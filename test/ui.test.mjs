@@ -619,9 +619,12 @@ test('вспомни сам: вопрос «из перечисленного» 
   const page = await openPage(t);
   if (!page) return;
   await keepRecallQuestions(page, true);
+  const bank = await bankOf(page);
   await pickFormat(page, 'Вспомни сам');
   await startRound(page, 5);
-  assert.equal(await page.locator('#options button').count(), 4);
+  // в региональных бланках бывает и три варианта: на экране столько, сколько у вопроса, но не больше четырёх
+  const record = await currentRecord(page, bank);
+  assert.equal(await page.locator('#options button').count(), Math.min(4, record.options.length));
   assert.equal(await page.locator('#recallPrompt').isVisible(), false);
   assert.match(await page.locator('#recallNote').textContent(), /без вариантов не ответить/);
   assert.deepEqual(page.errors, []);
