@@ -900,6 +900,50 @@ test('фильтр «Откуда вопросы» и пиньинь: раунд
   assert.deepEqual(page.errors, []);
 });
 
+test('китайский текст вопроса: скрыт по умолчанию, открывается кнопкой для одного вопроса и настройкой в шапке', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  assert.equal(await page.locator('#questionZhToggle').getAttribute('aria-pressed'), 'false');
+  await page.evaluate(() => {
+    const [withZh, other] = QUESTION_BANK.filter((r) => r.questionZh);
+    startRoundWith([withZh, other, QUESTION_BANK.find((r) => !r.questionZh)], 'choice');
+  });
+  await page.locator('#quizView').waitFor();
+  const zh = page.locator('#questionZh');
+  const reveal = page.locator('#questionZhReveal');
+  assert.equal(await zh.isVisible(), false);
+  // кнопка открывает текст только у этого вопроса
+  await reveal.click();
+  assert.equal(await zh.isVisible(), true);
+  assert.equal(await reveal.isVisible(), false);
+  assert.equal(await page.evaluate(() => document.activeElement.id), 'questionZh', 'фокус не теряется');
+  await page.locator('#options button').first().click();
+  await page.locator('#nextButton').click();
+  assert.equal(await zh.isVisible(), false, 'у следующего вопроса текст снова скрыт');
+  assert.equal(await reveal.isVisible(), true);
+  // настройка в шапке показывает его у всех вопросов
+  await page.locator('#questionZhToggle').click();
+  assert.equal(await zh.isVisible(), true);
+  assert.equal(await reveal.isVisible(), false);
+  // у вопроса без китайского текста нет ни текста, ни кнопки
+  await page.locator('#options button').first().click();
+  await page.locator('#nextButton').click();
+  assert.equal(await zh.isVisible(), false);
+  assert.equal(await reveal.isVisible(), false);
+  // настройка переживает перезагрузку и действует в «Вопросах в базе»
+  await page.reload();
+  assert.equal(await page.evaluate(() => document.documentElement.dataset.questionZh), 'on');
+  assert.equal(await page.locator('#questionZhToggle').getAttribute('aria-pressed'), 'true');
+  assert.equal(await page.locator('#questionZhLabel').textContent(), 'Вопрос 中文: вкл');
+  await page.locator('#navDatabase').click();
+  const rowZh = page.locator('.row-zh-question').first();
+  await rowZh.waitFor();
+  assert.equal(await rowZh.isVisible(), true);
+  await page.locator('#questionZhToggle').click();
+  assert.equal(await rowZh.isVisible(), false);
+  assert.deepEqual(page.errors, []);
+});
+
 test('телефон: с включённым пиньинем ни один вопрос и вариант не выходит за край экрана', LIMIT, async (t) => {
   const page = await openPage(t, { width: 375, height: 812 });
   if (!page) return;

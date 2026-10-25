@@ -279,6 +279,13 @@ select, .search {
   text-wrap: balance;
 }
 .question-zh { margin: 0; color: var(--text-soft); font-size: 22px; line-height: 1.5; }
+.question-zh:focus { outline: none; }
+/* китайский текст вопроса: по умолчанию скрыт, виден по настройке в шапке (data-question-zh на
+   <html>) или в раунде — для одного вопроса по кнопке под формулировкой */
+:root:not([data-question-zh='on']) .question-zh:not(.revealed),
+:root:not([data-question-zh='on']) .row-zh-question,
+:root[data-question-zh='on'] .question-zh-reveal { display: none; }
+.question-zh-reveal { align-self: flex-start; padding-inline: 0; font-size: var(--t-size-caption); }
 
 /* Метки: словом и знаком, без цветных плашек. */
 .tag {
