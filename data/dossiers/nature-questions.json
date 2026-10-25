@@ -1794,7 +1794,7 @@
   {
     "id": "nature-q02",
     "embeds": "2022-23-mun-kam-10",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "waters",
       "row": "wat-changjiang",
@@ -1803,12 +1803,16 @@
         "country": "中国",
         "kind": "河流"
       }
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
     }
   },
   {
     "id": "nature-q03",
     "embeds": "2025-26-shk-mosobl-14",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "mountains",
       "row": "mtn-hengshan-shanxi",
@@ -1819,20 +1823,31 @@
     },
     "exclude": [
       "mtn-wutaishan"
-    ]
+    ],
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
+    }
   },
   {
     "id": "nature-q05",
     "embeds": "2025-26-mun-ryaz-4",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "waters",
       "row": "wat-heilongjiang",
-      "ask": "name"
+      "ask": "name",
+      "where": {
+        "kind": "河流"
+      }
     },
     "exclude": [
       "wat-wusulijiang",
       "wat-tumenjiang"
-    ]
+    ],
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25) предложил правку набора, она внесена: В набор попадали каналы (大运河, 灵渠, Волго-Дон) — отбрасываются на вопрос «какая река»; where kind 河流, exclude Уссури и Туманной оставлен. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
+    }
   }
 ]

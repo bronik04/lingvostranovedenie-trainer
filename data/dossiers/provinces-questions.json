@@ -1652,7 +1652,7 @@
   {
     "id": "provinces-q91",
     "embeds": "2016-17-mun-spb-3",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "cities",
       "row": "city-guangzhou",
@@ -1682,22 +1682,30 @@
       "city-xiamen",
       "city-xian",
       "city-yixing"
-    ]
+    ],
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
+    }
   },
   {
     "id": "provinces-q92",
     "embeds": "2019-20-mun-khab-1",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "provinces",
       "row": "prov-anhui",
       "ask": "capital"
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
     }
   },
   {
     "id": "provinces-q110",
     "embeds": "2019-20-mun-khab-7",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "provinces",
       "row": "prov-jiangxi",
@@ -1705,12 +1713,16 @@
       "where": {
         "kind": "省"
       }
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
     }
   },
   {
     "id": "provinces-q111",
     "embeds": "2025-26-mun-novg-3",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "provinces",
       "row": "prov-guizhou",
@@ -1718,22 +1730,30 @@
       "where": {
         "kind": "省"
       }
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
     }
   },
   {
     "id": "provinces-q112",
     "embeds": "2025-26-shk-mosobl-12",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "provinces",
       "row": "prov-yunnan",
       "ask": "full"
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
     }
   },
   {
     "id": "provinces-q113",
     "embeds": "2025-26-mun-mosobl-9",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "cities",
       "row": "city-ru-yakutsk",
@@ -1741,12 +1761,16 @@
       "where": {
         "country": "俄罗斯"
       }
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
     }
   },
   {
     "id": "provinces-q114",
     "embeds": "2025-26-mun-nnov-1",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "cities",
       "row": "city-ru-moscow",
@@ -1754,12 +1778,16 @@
       "where": {
         "country": "俄罗斯"
       }
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
     }
   },
   {
     "id": "provinces-q115",
     "embeds": "2024-25-mun-kursk-1",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "cities",
       "row": "city-shanghai",
@@ -1767,12 +1795,16 @@
       "where": {
         "country": "中国"
       }
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
     }
   },
   {
     "id": "provinces-q116",
     "embeds": "2024-25-shk-mosobl-8",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "cities",
       "row": "city-chongqing",
@@ -1782,7 +1814,12 @@
       }
     },
     "exclude": [
-      "city-chengdu"
-    ]
+      "city-chengdu",
+      "city-xian"
+    ],
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25) предложил правку набора, она внесена: Сиань в местных планах тоже называл себя финансовым центром запада — исключён вместе с Чэнду, чтобы не было второго верного ответа. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
+    }
   }
 ]

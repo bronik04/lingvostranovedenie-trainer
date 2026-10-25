@@ -1706,7 +1706,7 @@
   {
     "id": "literature-q101",
     "embeds": "2023-24-shk-mosobl-12",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "authors",
       "row": "lit-a-maodun",
@@ -1723,6 +1723,10 @@
       "lit-a-tianhan",
       "lit-a-zhouenlai",
       "lit-a-lipeng"
-    ]
+    ],
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
+    }
   }
 ]

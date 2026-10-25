@@ -995,7 +995,7 @@
   {
     "id": "landmarks-q76",
     "embeds": "2021-22-mun-tat-57",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "intangible",
       "row": "int-kunqu",
@@ -1015,6 +1015,10 @@
       "int-zhicha",
       "int-xiangsheng",
       "int-xiangqi"
-    ]
+    ],
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
+    }
   }
 ]

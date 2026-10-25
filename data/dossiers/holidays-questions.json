@@ -1040,11 +1040,18 @@
   {
     "id": "holidays-q52",
     "embeds": "2025-26-mun-ryaz-3",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "holidays",
       "row": "hol-ru-shengli",
-      "ask": "name"
+      "ask": "name",
+      "where": {
+        "country": "俄罗斯"
+      }
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-25) предложил правку набора, она внесена: Без where в наборе ~30 китайских праздников — один российский находился бы отсевом; where country 俄罗斯: три исходных китайских и 12 российских. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
     }
   }
 ]
