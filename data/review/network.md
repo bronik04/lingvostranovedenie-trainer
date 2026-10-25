@@ -2,7 +2,7 @@
 
 Файл пишет сборка (`scripts/network.py`). Ядро размечается в таблицах досье: `core` у строки, `sides` у таблицы. Граф для Obsidian — папка `data/review/graph/`: сборка каждый раз стирает в ней все заметки `*.md` и пишет заново, поэтому свои заметки в эту папку не кладите.
 
-Досье: 17, с утверждённым каркасом: 17.
+Досье: 18, с утверждённым каркасом: 18.
 
 ## Олимпиада по годам
 
@@ -1237,6 +1237,69 @@
 - provinces-q53 — Какой город Китая носит прозвище 星城, «город звёзд»?
 - 2022-23-zak-7 — Какой из нижеперечисленных городов является столицей Республики Башкортостан (РФ)?
 
+### Наборы (`sets`)
+
+#### Таблица `inventions`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| inv-zaozhishu | × | — | прогноз |
+| inv-yinshuashu | × | — | да |
+| inv-zhinanzhen | × | — | да |
+| inv-huoyao | 1 | — | да |
+
+#### Таблица `plants`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| pl-mei | × | — | да |
+| pl-lan | × | — | да |
+| pl-zhu | × | — | да |
+| pl-ju | × | — | да |
+| pl-song | × | — | да |
+
+#### Таблица `beauties`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| bt-xishi | 1 | — | да |
+| bt-wangzhaojun | 1 | — | да |
+| bt-diaochan | 1 | — | да |
+| bt-yangguifei | 2 | — | да |
+
+#### Таблица `zodiac`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| zd-shu | 2 | — | да |
+| zd-niu | × | — | прогноз |
+| zd-hu | × | — | прогноз |
+| zd-tu | × | — | прогноз |
+| zd-long | × | — | да |
+| zd-she | × | — | да |
+| zd-ma | × | — | прогноз |
+| zd-yang | × | — | прогноз |
+| zd-hou | × | — | прогноз |
+| zd-ji | × | — | прогноз |
+| zd-gou | × | — | прогноз |
+| zd-zhu | × | — | прогноз |
+
+#### Вопросы о строках вне ядра
+
+Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
+
+- 2017-18-mun-8 — Что из перечисленного не относится к четырём великим изобретениям древнего Китая?
+- 2015-16-reg-3 — Какое животное не входит в китайский двенадцатилетний зодиак?
+- 2025-26-mun-chel-7 — Какое из следующих животных не входит в число 12 зодиакальных животных, соответствующих 12-летнему циклу?
+
 ### Космос (`space`)
 
 #### Таблица `missions`
@@ -1339,6 +1402,7 @@
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
+- 2023-24-mun-komi-2 — Высший орган судебной власти в КНР, ведёт надзор за судебной деятельностью местных и специальных народных судов всех уровней.
 - 2015-16-zak-6 — Какой город не относится к шести древним столицам Китая?
 - 2021-22-shk-q39d834 — Какой из перечисленных городов никогда не был столицей объединённого Китая?
 - state-q15 — Какой город был временной столицей Китая во время войны с Японией 1937–1945 годов?
@@ -1565,8 +1629,6 @@
 - people/composers/cmp-ru-rachmaninoff
 - people/composers/cmp-ru-rimsky-korsakov
 - people/composers/cmp-ru-tchaikovsky
-- people/scholars/sci-bisheng
-- people/scholars/sci-cailun
 - people/scholars/sci-huatuo
 - people/scholars/sci-lishizhen
 - people/scholars/sci-qianxuesen
@@ -1577,7 +1639,6 @@
 - people/scholars/sci-ru-popov
 - people/scholars/sci-tuyouyou
 - people/scholars/sci-yuanlongping
-- people/scholars/sci-zhangheng
 - people/scholars/sci-zhantianyou
 - people/thinkers/th-laozi
 - people/thinkers/th-mengzi
@@ -1596,6 +1657,28 @@
 - provinces/cities/city-ru-yekaterinburg
 - provinces/provinces/prov-aomen
 - provinces/provinces/prov-ningxia
+- sets/beauties/bt-wangzhaojun
+- sets/beauties/bt-xishi
+- sets/beauties/bt-yangguifei
+- sets/inventions/inv-huoyao
+- sets/inventions/inv-zhinanzhen
+- sets/plants/pl-ju
+- sets/plants/pl-lan
+- sets/plants/pl-mei
+- sets/plants/pl-song
+- sets/plants/pl-zhu
+- sets/zodiac/zd-gou
+- sets/zodiac/zd-hou
+- sets/zodiac/zd-hu
+- sets/zodiac/zd-ji
+- sets/zodiac/zd-long
+- sets/zodiac/zd-ma
+- sets/zodiac/zd-niu
+- sets/zodiac/zd-she
+- sets/zodiac/zd-shu
+- sets/zodiac/zd-tu
+- sets/zodiac/zd-yang
+- sets/zodiac/zd-zhu
 - space/missions/mis-dongfanghong1
 - space/missions/mis-mir
 - space/missions/mis-sputnik1

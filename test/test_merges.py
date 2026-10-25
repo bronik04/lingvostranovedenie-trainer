@@ -359,13 +359,14 @@ class MergesInBankTest(unittest.TestCase):
             # (решения автора 2026-10-22: порции 3–4 провинций, кухня; 2026-10-23: Потала и центр Тибета,
             # маньчжуры — народ династии Цин; 2026-10-24: «Искусство войны» и школа Сунь-цзы, Сунь Ятсен и
             # Китайская Республика словом, «движение 4 мая» и дата Дня молодёжи; четыре вопроса о 四大发明 —
-            # тексты называют ответы друг друга, по ревью ветки муниципального этапа 2026/27); дубль одного
+            # тексты называют ответы друг друга, по ревью ветки муниципального этапа 2026/27; 2026-10-25: ВСНП
+            # словом в addition-b1-09 — группа образования КНР, по ревью ветки «Государство»); дубль одного
             # факта в группе ловит следующий тест
             if 'factGroup' in record:
                 self.assertIn(record['factGroup'], {'province-names-river-lake', 'beijing-tianjin-municipality',
                                                     'potala-tibet', 'manchu-word', 'sunzi-art-of-war',
                                                     'lu-xun-republic-text', 'may-fourth-date',
-                                                    'four-inventions'}, keep_id)
+                                                    'four-inventions', 'prc-founding-1949'}, keep_id)
             wrong = [o['zh'] for o in record['options'] if o['id'] != record['answer']['optionId']]
             for text in wrong:
                 self.assertNotIn(text, record['explanation']['ru'], keep_id)
@@ -381,9 +382,10 @@ class MergesInBankTest(unittest.TestCase):
 
     def test_merged_wording_keeps_the_precise_edition(self):
         # формулировка, при которой неверный вариант можно защитить, заменена точной
-        # редакцией влитой записи: Шэньчжэнь крупнее по экономике, Гуанчжоу был базой до 1927 г.
+        # редакцией влитой записи: Шэньчжэнь крупнее по экономике, Гуанчжоу был базой до 1927 г.;
+        # «куда перенесена» допускало и Гуанчжоу 1949 года — решение автора 2026-10-25: вопрос о 1927 годе
         self.assertIn('по площади', self.bank['2016-17-zak-1']['questionRu'])
-        self.assertIn('перенесена', self.bank['2016-17-mun-10']['questionRu'])
+        self.assertIn('в 1927 году', self.bank['2016-17-mun-10']['questionRu'])
 
     def test_merged_record_takes_the_fuller_wording_of_the_absorbed_one(self):
         # решение автора 2026-10-13: у склеенной записи — полная формулировка влитой
