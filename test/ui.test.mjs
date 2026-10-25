@@ -559,9 +559,10 @@ test('вспомни сам: подсказка показывает вариа�
   await pickFormat(page, 'Вспомни сам');
   await startRound(page, 5);
   await page.locator('#showHint').click();
-  assert.equal(await page.locator('#options button').count(), 4);
-  assert.match(await page.locator('#recallNote').textContent(), /«вспомнил неточно»/);
   const record = await currentRecord(page, bank);
+  // в банке есть задания с тремя вариантами
+  assert.equal(await page.locator('#options button').count(), Math.min(4, record.options.length));
+  assert.match(await page.locator('#recallNote').textContent(), /«вспомнил неточно»/);
   await answer(page, record, true);
   const progress = await page.evaluate(() => JSON.parse(localStorage.getItem('lingvo-trainer:v1')).progress);
   assert.equal(progress[record.id].box, 3, 'с подсказкой коробка не растёт');
@@ -657,7 +658,8 @@ test('уход из раунда посреди стадии не оставля
   await page.keyboard.press('Escape');
   await pickFormat(page, 'Выбор ответа');
   await startRound(page, 5);
-  assert.equal(await page.locator('#options button').count(), 4);
+  const record = await currentRecord(page, await bankOf(page));
+  assert.equal(await page.locator('#options button').count(), Math.min(4, record.options.length));
   for (const id of ['#recallPrompt', '#recallRate', '#recallNote', '#feedback']) {
     assert.equal(await page.locator(id).isVisible(), false, id);
   }

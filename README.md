@@ -18,7 +18,8 @@
 
     python3 scripts/import_sources.py     # sources/ -> data/raw/
     python3 scripts/merge_bank.py         # data/raw/ -> data/bank.json + отчёты
-    python3 scripts/regions.py            # решения по региональным вариантам: data/review/regions.md
+    python3 scripts/regions.py            # решения по региональным вариантам: data/review/regions.md и
+                                          # страница отложенных заданий data/review/regions-excluded.html
     python3 scripts/taxonomy.py           # проставить темы
     python3 scripts/coverage_map.py       # карта покрытия: data/review/coverage.md
     python3 scripts/pinyin.py             # пиньинь: data/bank.json -> data/pinyin.json
