@@ -41,7 +41,7 @@ const DOSSIER_TITLES = { sets: 'Четыре великих и другие на
 const DOSSIER_MARKS = {
   money: '钱', dynasties: '朝', landmarks: '塔', painting: '画', people: '人', 'modern-history': '近',
   cinema: '影', space: '天', cuisine: '食', literature: '书', myths: '神', holidays: '节', nature: '山',
-  provinces: '省', crafts: '艺', sets: '四', ethnos: '族', state: '国',
+  provinces: '省', crafts: '艺', sets: '四', ethnos: '族', state: '国', 'modern-china': '今',
 };
 const DOSSIER_SHORT = {
   money: 'деньги', dynasties: 'династии и правители', landmarks: 'достопримечательности',
@@ -49,6 +49,7 @@ const DOSSIER_SHORT = {
   cinema: 'кино и анимация', space: 'космос', cuisine: 'кухня и блюда', literature: 'литература',
   myths: 'мифы и легенды', holidays: 'праздники', nature: 'природа и инженерия', provinces: 'провинции и города',
   crafts: 'ремёсла', sets: 'четыре великих', ethnos: 'этносы и быт', state: 'государство и символы',
+  'modern-china': 'современный Китай',
 };
 const dossierTitle = (id) => DOSSIER_TITLES[id] || DOSSIERS[id] || id;
 // «Семь разделов олимпиады…»
