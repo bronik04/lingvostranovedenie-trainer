@@ -267,6 +267,11 @@
           ],
           "olympiad": [
             "addition-b1-17"
+          ],
+          "core": true,
+          "skipSides": [
+            "year",
+            "namesake"
           ]
         },
         {
@@ -461,7 +466,12 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "year",
+            "name"
+          ]
         },
         {
           "id": "mis-yutu2",
@@ -589,7 +599,12 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "year",
+            "name"
+          ]
         },
         {
           "id": "mis-queqiao2",
@@ -817,6 +832,10 @@
           "olympiad": [
             "2020-21-zak-q244298",
             "2016-17-zak-6"
+          ],
+          "core": true,
+          "skipSides": [
+            "year"
           ]
         },
         {
@@ -982,7 +1001,12 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "year",
+            "namesake"
+          ]
         },
         {
           "id": "mis-tianwen1",
@@ -1132,7 +1156,12 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "year",
+            "name"
+          ]
         },
         {
           "id": "mis-wukong",
@@ -1503,7 +1532,12 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "core": true,
+          "skipSides": [
+            "year",
+            "namesake"
+          ]
         },
         {
           "id": "mis-sputnik1",
@@ -1559,7 +1593,10 @@
           "olympiad": [
             "2025-26-zak-q66aba2"
           ],
-          "core": true
+          "core": true,
+          "skipSides": [
+            "name"
+          ]
         },
         {
           "id": "mis-vostok1",
@@ -1889,7 +1926,9 @@
         }
       ],
       "sides": [
-        "year"
+        "year",
+        "name",
+        "namesake"
       ]
     },
     "people": {

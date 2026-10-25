@@ -8688,6 +8688,7 @@
     "explanation": {
       "ru": "Гимн КНР — «Марш добровольцев» (义勇军进行曲), написанный Не Эром на слова Тянь Ханя в 1935 году и утверждённый государственным гимном в 1949 (официально в 2004 внесён в конституцию)."
     },
+    "factGroup": "anthem-volunteers-march",
     "id": "2017-18-reg-5",
     "occurrences": [
       {
@@ -51015,6 +51016,64 @@
   },
   {
     "answer": {
+      "optionId": "o2",
+      "state": "verified"
+    },
+    "editorial": {
+      "reason": "Ошибки бланка в неверных вариантах (решение автора 2026-10-24): 阿塔卡马利亚 — искажённое 阿塔卡马 (Атакама; так в zh-hans тексте zh.wikipedia, статья «阿他加马沙漠»); 那泊 — не название пустыни, вероятно, Намиб (не исключена и опечатка в 罗布泊), заменено на 纳米布 (zh.wikipedia «纳米布沙漠») — пустыню вне Китая, так что второго верного ответа нет; суффикс 沙漠 не пишется, как у 戈壁 и 撒哈拉"
+    },
+    "evidence": [
+      {
+        "checkedAt": "2026-10-24",
+        "title": "戈壁沙漠 — 维基百科",
+        "url": "https://zh.wikipedia.org/zh-hans/%E6%88%88%E5%A3%81%E6%B2%99%E6%BC%A0"
+      }
+    ],
+    "explanation": {
+      "ru": "Пустыня Гоби (戈壁) — обширная холодная пустыня и степь на юге Монголии и на севере Китая."
+    },
+    "id": "2026-27-mun-2",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 2,
+        "officialKey": "o2",
+        "region": "Московская область",
+        "sourceFiles": [
+          "Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2026-27"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "阿塔卡马"
+      },
+      {
+        "id": "o2",
+        "zh": "戈壁"
+      },
+      {
+        "id": "o3",
+        "zh": "撒哈拉"
+      },
+      {
+        "id": "o4",
+        "zh": "纳米布"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Какая пустыня расположена на территории Китая?",
+    "questionZh": null,
+    "topic": "География и административное устройство",
+    "topicSource": "assigned",
+    "wave": 7
+  },
+  {
+    "answer": {
       "optionId": "o3",
       "state": "verified"
     },
@@ -51238,6 +51297,69 @@
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "assigned",
+    "wave": 7
+  },
+  {
+    "answer": {
+      "optionId": "o4",
+      "state": "verified"
+    },
+    "editorial": {
+      "reason": "Посылка «первую в России» неверна (решение автора 2026-10-24): школа китайского и маньчжурского языков И. К. Россохина при Академии наук работала в 1741–1751 годах (сборник «Азиатский музей — Ленинградское отделение Института востоковедения АН СССР», 1972, orientalstudies.ru), задолго до училища Бичурина в Кяхте; тема — «Россия и межкультурный блок», как до правки: без слова «России» рубрикация по словам относит вопрос к географии"
+    },
+    "evidence": [
+      {
+        "checkedAt": "2026-10-24",
+        "title": "Иакинф (Бичурин) — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%98%D0%B0%D0%BA%D0%B8%D0%BD%D1%84_%28%D0%91%D0%B8%D1%87%D1%83%D1%80%D0%B8%D0%BD%29"
+      },
+      {
+        "checkedAt": "2026-10-24",
+        "title": "Кяхта — Википедия",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9A%D1%8F%D1%85%D1%82%D0%B0"
+      }
+    ],
+    "explanation": {
+      "ru": "Училище китайского языка Иакинф (Бичурин) открыл в Кяхте (恰克图) — торговом городе на границе с Китаем: официально оно открылось в 1832 году, а в 1835-м — заново, при Кяхтинской таможне. Его четырёхлетняя программа заложила методику изучения китайского языка в России."
+    },
+    "id": "2026-27-mun-9",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 9,
+        "officialKey": "o4",
+        "region": "Московская область",
+        "sourceFiles": [
+          "Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2026-27"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "在莫斯科"
+      },
+      {
+        "id": "o2",
+        "zh": "在伊尔库茨克"
+      },
+      {
+        "id": "o3",
+        "zh": "在喀山"
+      },
+      {
+        "id": "o4",
+        "zh": "在恰克图"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Где Иакинф Бичурин открыл школу китайского языка?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
     "wave": 7
   },
   {
@@ -53773,6 +53895,11 @@
         "gloss": "Чжан Шичуань — кинорежиссёр",
         "id": "cin-cn-red-peony",
         "zh": "张石川"
+      },
+      {
+        "gloss": "Сюй Синчжи — кинорежиссёр",
+        "id": "cin-cn-fengyun-ernv",
+        "zh": "许幸之"
       }
     ],
     "origin": "addition",
@@ -53858,6 +53985,11 @@
         "gloss": "«Дом летающих кинжалов» — история любви и обмана на фоне поздней Тан",
         "id": "cin-cn-flying-daggers",
         "zh": "十面埋伏"
+      },
+      {
+        "gloss": "«Дети грозных лет» — фильм 1935 года, для которого написан «Марш добровольцев»",
+        "id": "cin-cn-fengyun-ernv",
+        "zh": "风云儿女"
       }
     ],
     "origin": "addition",
@@ -53942,381 +54074,16 @@
         "gloss": "«Дом летающих кинжалов» — история любви и обмана на фоне поздней Тан",
         "id": "cin-cn-flying-daggers",
         "zh": "十面埋伏"
+      },
+      {
+        "gloss": "«Дети грозных лет» — фильм 1935 года, для которого написан «Марш добровольцев»",
+        "id": "cin-cn-fengyun-ernv",
+        "zh": "风云儿女"
       }
     ],
     "origin": "addition",
     "parseWarnings": [],
     "questionRu": "В каком фильме Ли Аня о мастерах боевых искусств похищение легендарного меча связывает судьбы двух поколений героев, а сама картина получила «Оскар» за фильм на иностранном языке в 2001 году?",
-    "questionZh": null,
-    "topic": "Литература, язык, искусство и философия",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "cin-cn-mood-for-love",
-      "state": "verified"
-    },
-    "dossier": "cinema",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "CCTV-6 / 1905: 花样年华",
-        "url": "https://www.1905.com/mdb/film/57802/"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "Каннский фестиваль: IN THE MOOD FOR LOVE",
-        "url": "https://www.festival-cannes.com/en/f/in-the-mood-for-love-3/"
-      }
-    ],
-    "explanation": {
-      "ru": "«Любовное настроение» поставил Вонг Карвай (王家卫). Фильм вышел в 2000 году и рассказывает о двух соседях, узнающих об измене своих супругов. На Каннском фестивале исполнитель главной мужской роли получил актёрскую награду."
-    },
-    "factRow": "cinema/works/cin-cn-mood-for-love",
-    "id": "cinema-q04",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "cin-cn-mood-for-love",
-        "zh": "王家卫"
-      },
-      {
-        "gloss": "Чжан Имоу — кинорежиссёр",
-        "id": "cin-cn-red-sorghum",
-        "zh": "张艺谋"
-      },
-      {
-        "gloss": "Чэнь Кайгэ — кинорежиссёр",
-        "id": "cin-cn-concubine",
-        "zh": "陈凯歌"
-      },
-      {
-        "gloss": "Ли Ань — кинорежиссёр",
-        "id": "cin-cn-crouching-tiger",
-        "zh": "李安"
-      },
-      {
-        "gloss": "Го Фань — кинорежиссёр",
-        "id": "cin-cn-wandering-earth",
-        "zh": "郭帆"
-      },
-      {
-        "gloss": "Цзя Чжанкэ — кинорежиссёр",
-        "id": "cin-cn-still-life",
-        "zh": "贾樟柯"
-      },
-      {
-        "gloss": "Чжан Шичуань — кинорежиссёр",
-        "id": "cin-cn-red-peony",
-        "zh": "张石川"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Кто снял фильм «Любовное настроение» (花样年华), действие которого начинается в Гонконге 1962 года?",
-    "questionZh": null,
-    "topic": "Литература, язык, искусство и философия",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "cin-cn-wandering-earth",
-      "state": "verified"
-    },
-    "dossier": "cinema",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "CCTV-6 / 1905: 流浪地球",
-        "url": "https://www.1905.com/mdb/film/2228651/"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "Синьхуа: интервью Лю Цысиня о «Блуждающей Земле»",
-        "url": "https://www.xinhuanet.com/politics/2019-02/03/c_1124084032.htm"
-      }
-    ],
-    "explanation": {
-      "ru": "Режиссёр фильма — Го Фань (郭帆). Литературная основа — одноимённый рассказ Лю Цысиня. Человечество пытается спастись от стареющего Солнца, переместив саму Землю."
-    },
-    "factRow": "cinema/works/cin-cn-wandering-earth",
-    "id": "cinema-q05",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "cin-cn-wandering-earth",
-        "zh": "郭帆"
-      },
-      {
-        "gloss": "Чжан Имоу — кинорежиссёр",
-        "id": "cin-cn-red-sorghum",
-        "zh": "张艺谋"
-      },
-      {
-        "gloss": "Чэнь Кайгэ — кинорежиссёр",
-        "id": "cin-cn-concubine",
-        "zh": "陈凯歌"
-      },
-      {
-        "gloss": "Ли Ань — кинорежиссёр",
-        "id": "cin-cn-crouching-tiger",
-        "zh": "李安"
-      },
-      {
-        "gloss": "Вонг Карвай — кинорежиссёр",
-        "id": "cin-cn-mood-for-love",
-        "zh": "王家卫"
-      },
-      {
-        "gloss": "Цзя Чжанкэ — кинорежиссёр",
-        "id": "cin-cn-still-life",
-        "zh": "贾樟柯"
-      },
-      {
-        "gloss": "Чжан Шичуань — кинорежиссёр",
-        "id": "cin-cn-red-peony",
-        "zh": "张石川"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Кто поставил фантастический фильм «Блуждающая Земля» (流浪地球, 2019) по рассказу Лю Цысиня?",
-    "questionZh": null,
-    "topic": "Литература, язык, искусство и философия",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "cin-cn-still-life",
-      "state": "verified"
-    },
-    "dossier": "cinema",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "CCTV-6 / 1905: 三峡好人",
-        "url": "https://www.1905.com/mdb/film/46723/"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "Кинофестиваль Mulan: Still Life 三峡好人",
-        "url": "https://mulanfestival.com/still-life/"
-      }
-    ],
-    "explanation": {
-      "ru": "«Натюрморт» поставил Цзя Чжанкэ (贾樟柯). Двое людей ищут своих супругов в Фэнцзе на фоне переселения жителей из-за строительства плотины Трёх ущелий. В 2006 году фильм получил главный приз Венецианского кинофестиваля — «Золотого льва»."
-    },
-    "factRow": "cinema/works/cin-cn-still-life",
-    "id": "cinema-q06",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "cin-cn-still-life",
-        "zh": "贾樟柯"
-      },
-      {
-        "gloss": "Чжан Имоу — кинорежиссёр",
-        "id": "cin-cn-red-sorghum",
-        "zh": "张艺谋"
-      },
-      {
-        "gloss": "Чэнь Кайгэ — кинорежиссёр",
-        "id": "cin-cn-concubine",
-        "zh": "陈凯歌"
-      },
-      {
-        "gloss": "Ли Ань — кинорежиссёр",
-        "id": "cin-cn-crouching-tiger",
-        "zh": "李安"
-      },
-      {
-        "gloss": "Вонг Карвай — кинорежиссёр",
-        "id": "cin-cn-mood-for-love",
-        "zh": "王家卫"
-      },
-      {
-        "gloss": "Го Фань — кинорежиссёр",
-        "id": "cin-cn-wandering-earth",
-        "zh": "郭帆"
-      },
-      {
-        "gloss": "Чжан Шичуань — кинорежиссёр",
-        "id": "cin-cn-red-peony",
-        "zh": "张石川"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Кто снял «Натюрморт» (三峡好人), получивший «Золотого льва» Венецианского кинофестиваля в 2006 году?",
-    "questionZh": null,
-    "topic": "Литература, язык, искусство и философия",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "cin-cn-red-peony",
-      "state": "verified"
-    },
-    "dossier": "cinema",
-    "editorial": {
-      "reason": "решение автора 2026-10-20, ревью вопросов досье: слово «певица» в вопросе подсказывало ответ 歌女红牡丹"
-    },
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "CCTV-6 / 1905: 歌女红牡丹",
-        "url": "https://www.1905.com/mdb/film/46965/"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "Цзянсуская федерация литературы и искусства: 歌舞电影与中国歌舞文化",
-        "url": "https://www.jswyw.com/org/xiehui/dy/dypl/201907/t20190705_59306.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Это «Певица Красный Пион» (歌女红牡丹). Фильм поставил Чжан Шичуань, главную роль сыграла Ху Де. Картина 1931 года посвящена певице пекинской оперы, страдающей от жестокого мужа."
-    },
-    "factGroup": "peking-opera-word",
-    "factRow": "cinema/works/cin-cn-red-peony",
-    "id": "cinema-q07",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "cin-cn-red-peony",
-        "zh": "歌女红牡丹"
-      },
-      {
-        "gloss": "«Красный гаолян» — фильм Чжан Имоу по произведениям Мо Яня",
-        "id": "cin-cn-red-sorghum",
-        "zh": "红高粱"
-      },
-      {
-        "gloss": "«Прощай, моя наложница» — фильм о судьбах двух актёров пекинской оперы",
-        "id": "cin-cn-concubine",
-        "zh": "霸王别姬"
-      },
-      {
-        "gloss": "«Крадущийся тигр, затаившийся дракон» — фильм о мастерах боевых искусств",
-        "id": "cin-cn-crouching-tiger",
-        "zh": "卧虎藏龙"
-      },
-      {
-        "gloss": "«Любовное настроение» — фильм о сближении двух соседей в Гонконге",
-        "id": "cin-cn-mood-for-love",
-        "zh": "花样年华"
-      },
-      {
-        "gloss": "«Блуждающая Земля» — фильм о спасении людей перемещением самой планеты",
-        "id": "cin-cn-wandering-earth",
-        "zh": "流浪地球"
-      },
-      {
-        "gloss": "«Натюрморт» — фильм о поисках близких на фоне переселения у Трёх ущелий",
-        "id": "cin-cn-still-life",
-        "zh": "三峡好人"
-      },
-      {
-        "gloss": "«Жить» — фильм о судьбе Фугуя и его семьи в Китае XX века",
-        "id": "cin-cn-to-live",
-        "zh": "活着"
-      },
-      {
-        "gloss": "«Герой» — фильм о встрече воина Безымянного с царём Цинь",
-        "id": "cin-cn-hero",
-        "zh": "英雄"
-      },
-      {
-        "gloss": "«Дом летающих кинжалов» — история любви и обмана на фоне поздней Тан",
-        "id": "cin-cn-flying-daggers",
-        "zh": "十面埋伏"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Как называется вышедший в 1931 году фильм, который в истории кино обычно называют первым китайским звуковым фильмом?",
-    "questionZh": null,
-    "topic": "Литература, язык, искусство и философия",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "cin-cn-to-live",
-      "state": "verified"
-    },
-    "dossier": "cinema",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "CCTV-6 / 1905: 活着",
-        "url": "https://www.1905.com/mdb/film/298218/"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "Каннский фестиваль: HUOZHE",
-        "url": "https://www.festival-cannes.com/en/f/huozhe/"
-      },
-      {
-        "authority": "academic",
-        "checkedAt": "2026-10-19",
-        "title": "Китайский союз писателей: «Жить» — три версии произведения",
-        "url": "https://www.chinawriter.com.cn/n1/2020/0313/c404030-31630564.html"
-      }
-    ],
-    "explanation": {
-      "ru": "Фильм «Жить» (活着) поставил Чжан Имоу (张艺谋). Он основан на романе Юй Хуа и посвящён судьбе Фугуя и его семьи. В Каннах 1994 года картина разделила Гран-при жюри, а исполнитель роли Фугуя получил награду за лучшую мужскую роль."
-    },
-    "factRow": "cinema/works/cin-cn-to-live",
-    "id": "cinema-q08",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "cin-cn-to-live",
-        "zh": "张艺谋"
-      },
-      {
-        "gloss": "Чэнь Кайгэ — кинорежиссёр",
-        "id": "cin-cn-concubine",
-        "zh": "陈凯歌"
-      },
-      {
-        "gloss": "Ли Ань — кинорежиссёр",
-        "id": "cin-cn-crouching-tiger",
-        "zh": "李安"
-      },
-      {
-        "gloss": "Вонг Карвай — кинорежиссёр",
-        "id": "cin-cn-mood-for-love",
-        "zh": "王家卫"
-      },
-      {
-        "gloss": "Го Фань — кинорежиссёр",
-        "id": "cin-cn-wandering-earth",
-        "zh": "郭帆"
-      },
-      {
-        "gloss": "Цзя Чжанкэ — кинорежиссёр",
-        "id": "cin-cn-still-life",
-        "zh": "贾樟柯"
-      },
-      {
-        "gloss": "Чжан Шичуань — кинорежиссёр",
-        "id": "cin-cn-red-peony",
-        "zh": "张石川"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Кто поставил фильм «Жить» (1994), в котором Фугуй и его семья переживают исторические потрясения?",
     "questionZh": null,
     "topic": "Литература, язык, искусство и философия",
     "topicSource": "authored"
@@ -54408,188 +54175,16 @@
         "gloss": "«Дом летающих кинжалов» — история любви и обмана на фоне поздней Тан",
         "id": "cin-cn-flying-daggers",
         "zh": "十面埋伏"
+      },
+      {
+        "gloss": "«Дети грозных лет» — фильм 1935 года, для которого написан «Марш добровольцев»",
+        "id": "cin-cn-fengyun-ernv",
+        "zh": "风云儿女"
       }
     ],
     "origin": "addition",
     "parseWarnings": [],
     "questionRu": "В каком фильме воин по имени Безымянный рассказывает царю Цинь о победе над тремя опасными противниками, а царь предлагает другую версию этих событий?",
-    "questionZh": null,
-    "topic": "Литература, язык, искусство и философия",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "cin-cn-flying-daggers",
-      "state": "verified"
-    },
-    "dossier": "cinema",
-    "editorial": {
-      "reason": "решение автора 2026-10-20, ревью вопросов досье: неестественное «двое служителей власти»"
-    },
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "CCTV-6 / 1905: 十面埋伏",
-        "url": "https://www.1905.com/mdb/film/55963/"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "Каннский фестиваль: HOUSE OF FLYING DAGGERS",
-        "url": "https://www.festival-cannes.com/en/f/shi-mian-mai-fu-house-of-flying-daggers/"
-      }
-    ],
-    "explanation": {
-      "ru": "Это «Дом летающих кинжалов» (十面埋伏). Действие разворачивается в конце эпохи Тан, когда власти борются с повстанческой организацией. В 2004 году картина была показана в Каннах вне конкурса."
-    },
-    "factRow": "cinema/works/cin-cn-flying-daggers",
-    "id": "cinema-q10",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "cin-cn-flying-daggers",
-        "zh": "十面埋伏"
-      },
-      {
-        "gloss": "«Красный гаолян» — фильм Чжан Имоу по произведениям Мо Яня",
-        "id": "cin-cn-red-sorghum",
-        "zh": "红高粱"
-      },
-      {
-        "gloss": "«Прощай, моя наложница» — фильм о судьбах двух актёров пекинской оперы",
-        "id": "cin-cn-concubine",
-        "zh": "霸王别姬"
-      },
-      {
-        "gloss": "«Крадущийся тигр, затаившийся дракон» — фильм о мастерах боевых искусств",
-        "id": "cin-cn-crouching-tiger",
-        "zh": "卧虎藏龙"
-      },
-      {
-        "gloss": "«Любовное настроение» — фильм о сближении двух соседей в Гонконге",
-        "id": "cin-cn-mood-for-love",
-        "zh": "花样年华"
-      },
-      {
-        "gloss": "«Блуждающая Земля» — фильм о спасении людей перемещением самой планеты",
-        "id": "cin-cn-wandering-earth",
-        "zh": "流浪地球"
-      },
-      {
-        "gloss": "«Натюрморт» — фильм о поисках близких на фоне переселения у Трёх ущелий",
-        "id": "cin-cn-still-life",
-        "zh": "三峡好人"
-      },
-      {
-        "gloss": "«Певица Красный Пион» — один из первых опытов звукового кино Китая",
-        "id": "cin-cn-red-peony",
-        "zh": "歌女红牡丹"
-      },
-      {
-        "gloss": "«Жить» — фильм о судьбе Фугуя и его семьи в Китае XX века",
-        "id": "cin-cn-to-live",
-        "zh": "活着"
-      },
-      {
-        "gloss": "«Герой» — фильм о встрече воина Безымянного с царём Цинь",
-        "id": "cin-cn-hero",
-        "zh": "英雄"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Как называется фильм, в котором двое капитанов стражи пытаются через девушку Мэй выйти на тайное общество повстанцев, но замысел осложняет любовь?",
-    "questionZh": null,
-    "topic": "Литература, язык, искусство и философия",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "cin-cn-tieshangongzhu",
-      "state": "verified"
-    },
-    "dossier": "cinema",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "档案记载我国第一部彩色动画长片《大闹天宫》的辉煌历史 — 上海市档案局（馆）",
-        "url": "https://www.shda.gov.cn/dawh/csjy/202512/t20251203_76389.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "《铁扇公主》修复：致敬经典，传承动画之光 — 上海国际电影节",
-        "url": "https://www.siff.com/content?aid=101240607221520568887369504133125233"
-      }
-    ],
-    "explanation": {
-      "ru": "Это «Принцесса Железный Веер» (铁扇公主). Картина вышла в 1941 году и стала важной вехой китайской полнометражной анимации. Её сюжет связан с эпизодом романа «Путешествие на Запад» о добывании волшебного веера."
-    },
-    "factGroup": "year-1941-word",
-    "factRow": "cinema/works/cin-cn-tieshangongzhu",
-    "id": "cinema-q11",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "cin-cn-tieshangongzhu",
-        "zh": "铁扇公主"
-      },
-      {
-        "gloss": "Переполох в небесных чертогах",
-        "id": "cin-cn-danaotiangong",
-        "zh": "大闹天宫"
-      },
-      {
-        "gloss": "Головастики ищут маму",
-        "id": "cin-cn-xiaokedouzhaomama",
-        "zh": "小蝌蚪找妈妈"
-      },
-      {
-        "gloss": "Братья-тыквы",
-        "id": "cin-cn-huluxiongdi",
-        "zh": "葫芦兄弟"
-      },
-      {
-        "gloss": "Истории Афанти",
-        "id": "cin-cn-afantidegushi",
-        "zh": "阿凡提的故事"
-      },
-      {
-        "gloss": "Три монаха",
-        "id": "cin-cn-sangeheshang",
-        "zh": "三个和尚"
-      },
-      {
-        "gloss": "Нэчжа покоряет море",
-        "id": "cin-cn-nezhanaohai",
-        "zh": "哪吒闹海"
-      },
-      {
-        "gloss": "Нэчжа: Рождение демона",
-        "id": "cin-cn-nezhamotongjiangshi",
-        "zh": "哪吒之魔童降世"
-      },
-      {
-        "gloss": "Король обезьян: Возвращение героя",
-        "id": "cin-cn-dashengguilai",
-        "zh": "西游记之大圣归来"
-      },
-      {
-        "gloss": "Девятицветный олень",
-        "id": "cin-cn-jiuselu",
-        "zh": "九色鹿"
-      },
-      {
-        "gloss": "Легенда о небесной книге",
-        "id": "cin-cn-tianshuqitan",
-        "zh": "天书奇谭"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Как называется вышедший в 1941 году фильм, который считают первым китайским полнометражным мультфильмом?",
     "questionZh": null,
     "topic": "Литература, язык, искусство и философия",
     "topicSource": "authored"
@@ -54804,249 +54399,6 @@
   },
   {
     "answer": {
-      "optionId": "cin-cn-afantidegushi",
-      "state": "verified"
-    },
-    "dossier": "cinema",
-    "editorial": {
-      "reason": "решение автора 2026-10-20, ревью вопросов досье: одно русское название мультфильма во всём досье: «Истории Афанти», как в таблице"
-    },
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "阿凡提的故事 — 上影元",
-        "url": "https://www.sfi-sh.com/IP/cartoon/15/intro"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "阿凡提之奇缘历险·幕后花絮 — 1905电影网",
-        "url": "https://www.1905.com/mdb/film/2237524/feature/"
-      }
-    ],
-    "explanation": {
-      "ru": "Это кукольная анимация — 木偶动画. Находчивый Афанти помогает беднякам и наказывает жадного бая. Классический цикл основан на фольклоре Синьцзяна."
-    },
-    "factRow": "cinema/works/cin-cn-afantidegushi",
-    "id": "cinema-q15",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "cin-cn-afantidegushi",
-        "zh": "木偶动画"
-      },
-      {
-        "gloss": "Рисованная анимация — движение из последовательности рисунков",
-        "id": "cin-cn-danaotiangong",
-        "zh": "手绘动画"
-      },
-      {
-        "gloss": "Анимация водяной тушью — техника на основе традиционной живописи",
-        "id": "cin-cn-xiaokedouzhaomama",
-        "zh": "水墨动画"
-      },
-      {
-        "gloss": "Бумажная перекладка — покадровая съёмка плоских фигур из бумаги",
-        "id": "cin-cn-huluxiongdi",
-        "zh": "剪纸动画"
-      },
-      {
-        "gloss": "Трёхмерная анимация — движение компьютерных объёмных моделей",
-        "id": "cin-cn-nezhamotongjiangshi",
-        "zh": "三维动画"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "В какой технике снят классический цикл «Истории Афанти» (阿凡提的故事)?",
-    "questionZh": null,
-    "topic": "Литература, язык, искусство и философия",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "cin-cn-sangeheshang",
-      "state": "verified"
-    },
-    "dossier": "cinema",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "三个和尚 — 中国电影资料馆",
-        "url": "https://www.cfa.org.cn/cfa/gz/dymlcx/dy/2023060210311042322/index.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "徐景达·人物资料 — 1905电影网",
-        "url": "https://m.1905.com/m/star/info/1770708/"
-      }
-    ],
-    "explanation": {
-      "ru": "Это мультфильм «Три монаха» (三个和尚) 1980 года. Его поставил Сюй Цзинда, известный также как А Да. В фильме нет диалогов: конфликт и перемены в отношениях героев переданы средствами анимации."
-    },
-    "factRow": "cinema/works/cin-cn-sangeheshang",
-    "id": "cinema-q16",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "cin-cn-sangeheshang",
-        "zh": "三个和尚"
-      },
-      {
-        "gloss": "Принцесса Железный Веер",
-        "id": "cin-cn-tieshangongzhu",
-        "zh": "铁扇公主"
-      },
-      {
-        "gloss": "Переполох в небесных чертогах",
-        "id": "cin-cn-danaotiangong",
-        "zh": "大闹天宫"
-      },
-      {
-        "gloss": "Головастики ищут маму",
-        "id": "cin-cn-xiaokedouzhaomama",
-        "zh": "小蝌蚪找妈妈"
-      },
-      {
-        "gloss": "Братья-тыквы",
-        "id": "cin-cn-huluxiongdi",
-        "zh": "葫芦兄弟"
-      },
-      {
-        "gloss": "Истории Афанти",
-        "id": "cin-cn-afantidegushi",
-        "zh": "阿凡提的故事"
-      },
-      {
-        "gloss": "Нэчжа покоряет море",
-        "id": "cin-cn-nezhanaohai",
-        "zh": "哪吒闹海"
-      },
-      {
-        "gloss": "Нэчжа: Рождение демона",
-        "id": "cin-cn-nezhamotongjiangshi",
-        "zh": "哪吒之魔童降世"
-      },
-      {
-        "gloss": "Король обезьян: Возвращение героя",
-        "id": "cin-cn-dashengguilai",
-        "zh": "西游记之大圣归来"
-      },
-      {
-        "gloss": "Девятицветный олень",
-        "id": "cin-cn-jiuselu",
-        "zh": "九色鹿"
-      },
-      {
-        "gloss": "Легенда о небесной книге",
-        "id": "cin-cn-tianshuqitan",
-        "zh": "天书奇谭"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "В каком китайском мультфильме монахи сначала перекладывают друг на друга заботу о воде, а после совместного тушения пожара учатся сотрудничать?",
-    "questionZh": null,
-    "topic": "Литература, язык, искусство и философия",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "cin-cn-nezhanaohai",
-      "state": "verified"
-    },
-    "dossier": "cinema",
-    "editorial": {
-      "reason": "решение автора 2026-10-20, ревью вопросов досье: одно русское название мультфильма во всём досье: «Нэчжа покоряет море», как в таблице"
-    },
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "哪吒闹海 — 上影元",
-        "url": "https://www.sfi-sh.com/IP/cartoon/26/intro"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "哪吒闹海·详细资料 — 1905电影网",
-        "url": "https://www.1905.com/mdb/film/47890/info/"
-      }
-    ],
-    "explanation": {
-      "ru": "Это «Нэчжа покоряет море» (哪吒闹海). Полнометражный мультфильм вышел в 1979 году. Его литературная основа — эпизоды романа «Возвышение в ранг духов»."
-    },
-    "factRow": "cinema/works/cin-cn-nezhanaohai",
-    "id": "cinema-q17",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "cin-cn-nezhanaohai",
-        "zh": "哪吒闹海"
-      },
-      {
-        "gloss": "Принцесса Железный Веер",
-        "id": "cin-cn-tieshangongzhu",
-        "zh": "铁扇公主"
-      },
-      {
-        "gloss": "Переполох в небесных чертогах",
-        "id": "cin-cn-danaotiangong",
-        "zh": "大闹天宫"
-      },
-      {
-        "gloss": "Головастики ищут маму",
-        "id": "cin-cn-xiaokedouzhaomama",
-        "zh": "小蝌蚪找妈妈"
-      },
-      {
-        "gloss": "Братья-тыквы",
-        "id": "cin-cn-huluxiongdi",
-        "zh": "葫芦兄弟"
-      },
-      {
-        "gloss": "Истории Афанти",
-        "id": "cin-cn-afantidegushi",
-        "zh": "阿凡提的故事"
-      },
-      {
-        "gloss": "Три монаха",
-        "id": "cin-cn-sangeheshang",
-        "zh": "三个和尚"
-      },
-      {
-        "gloss": "Нэчжа: Рождение демона",
-        "id": "cin-cn-nezhamotongjiangshi",
-        "zh": "哪吒之魔童降世"
-      },
-      {
-        "gloss": "Король обезьян: Возвращение героя",
-        "id": "cin-cn-dashengguilai",
-        "zh": "西游记之大圣归来"
-      },
-      {
-        "gloss": "Девятицветный олень",
-        "id": "cin-cn-jiuselu",
-        "zh": "九色鹿"
-      },
-      {
-        "gloss": "Легенда о небесной книге",
-        "id": "cin-cn-tianshuqitan",
-        "zh": "天书奇谭"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Как называется китайский мультфильм 1979 года, в котором юный герой с огненным копьём и огненными колёсами сражается с царём драконов, защищая людей?",
-    "questionZh": null,
-    "topic": "Литература, язык, искусство и философия",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
       "optionId": "cin-cn-nezhamotongjiangshi",
       "state": "verified"
     },
@@ -55136,95 +54488,6 @@
     "origin": "addition",
     "parseWarnings": [],
     "questionRu": "Как называется китайский анимационный фильм 2019 года, в котором Нэчжа борется с предубеждениями и отказывается покоряться навязанной судьбе?",
-    "questionZh": null,
-    "topic": "Литература, язык, искусство и философия",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "cin-cn-jiuselu",
-      "state": "verified"
-    },
-    "dossier": "cinema",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "九色鹿 — 上影元",
-        "url": "https://www.sfi-sh.com/IP/cartoon/21/intro"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-19",
-        "title": "九色鹿 — 中国电影资料馆",
-        "url": "https://www.cfa.org.cn/cfa/gz/dymlcx/dy/2023060210294445513/index.html"
-      }
-    ],
-    "explanation": {
-      "ru": "Это «Девятицветный олень» (九色鹿), мультфильм 1981 года. Источником вдохновения стала роспись Дуньхуана о царе оленей. Спасённый оленем человек предаёт своего спасителя."
-    },
-    "factRow": "cinema/works/cin-cn-jiuselu",
-    "id": "cinema-q20",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "cin-cn-jiuselu",
-        "zh": "九色鹿"
-      },
-      {
-        "gloss": "Принцесса Железный Веер",
-        "id": "cin-cn-tieshangongzhu",
-        "zh": "铁扇公主"
-      },
-      {
-        "gloss": "Переполох в небесных чертогах",
-        "id": "cin-cn-danaotiangong",
-        "zh": "大闹天宫"
-      },
-      {
-        "gloss": "Головастики ищут маму",
-        "id": "cin-cn-xiaokedouzhaomama",
-        "zh": "小蝌蚪找妈妈"
-      },
-      {
-        "gloss": "Братья-тыквы",
-        "id": "cin-cn-huluxiongdi",
-        "zh": "葫芦兄弟"
-      },
-      {
-        "gloss": "Истории Афанти",
-        "id": "cin-cn-afantidegushi",
-        "zh": "阿凡提的故事"
-      },
-      {
-        "gloss": "Три монаха",
-        "id": "cin-cn-sangeheshang",
-        "zh": "三个和尚"
-      },
-      {
-        "gloss": "Нэчжа покоряет море",
-        "id": "cin-cn-nezhanaohai",
-        "zh": "哪吒闹海"
-      },
-      {
-        "gloss": "Нэчжа: Рождение демона",
-        "id": "cin-cn-nezhamotongjiangshi",
-        "zh": "哪吒之魔童降世"
-      },
-      {
-        "gloss": "Король обезьян: Возвращение героя",
-        "id": "cin-cn-dashengguilai",
-        "zh": "西游记之大圣归来"
-      },
-      {
-        "gloss": "Легенда о небесной книге",
-        "id": "cin-cn-tianshuqitan",
-        "zh": "天书奇谭"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Как называется китайский мультфильм, в котором спасённый волшебным оленем человек предаёт своего спасителя, а образы восходят к росписи Дуньхуана?",
     "questionZh": null,
     "topic": "Литература, язык, искусство и философия",
     "topicSource": "authored"
@@ -55751,6 +55014,339 @@
     "questionRu": "Какой советский фильм Владимира Меньшова получил премию «Оскар» в 1981 году?",
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-wandering-earth",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 流浪地球",
+        "url": "https://www.1905.com/mdb/film/2228651/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Синьхуа: интервью Лю Цысиня о «Блуждающей Земле»",
+        "url": "https://www.xinhuanet.com/politics/2019-02/03/c_1124084032.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Это «Блуждающая Земля» (流浪地球) режиссёра Го Фаня. Фильм снят по одноимённому рассказу Лю Цысиня. Чтобы спастись от стареющего Солнца, люди перемещают саму планету."
+    },
+    "factRow": "cinema/works/cin-cn-wandering-earth",
+    "id": "cinema-q31",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-wandering-earth",
+        "zh": "流浪地球"
+      },
+      {
+        "gloss": "«Красный гаолян» — фильм Чжан Имоу по произведениям Мо Яня",
+        "id": "cin-cn-red-sorghum",
+        "zh": "红高粱"
+      },
+      {
+        "gloss": "«Прощай, моя наложница» — фильм о судьбах двух актёров пекинской оперы",
+        "id": "cin-cn-concubine",
+        "zh": "霸王别姬"
+      },
+      {
+        "gloss": "«Крадущийся тигр, затаившийся дракон» — фильм о мастерах боевых искусств",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "卧虎藏龙"
+      },
+      {
+        "gloss": "«Любовное настроение» — фильм о сближении двух соседей в Гонконге",
+        "id": "cin-cn-mood-for-love",
+        "zh": "花样年华"
+      },
+      {
+        "gloss": "«Натюрморт» — фильм о поисках близких на фоне переселения у Трёх ущелий",
+        "id": "cin-cn-still-life",
+        "zh": "三峡好人"
+      },
+      {
+        "gloss": "«Певица Красный Пион» — один из первых опытов звукового кино Китая",
+        "id": "cin-cn-red-peony",
+        "zh": "歌女红牡丹"
+      },
+      {
+        "gloss": "«Жить» — фильм о судьбе Фугуя и его семьи в Китае XX века",
+        "id": "cin-cn-to-live",
+        "zh": "活着"
+      },
+      {
+        "gloss": "«Герой» — фильм о встрече воина Безымянного с царём Цинь",
+        "id": "cin-cn-hero",
+        "zh": "英雄"
+      },
+      {
+        "gloss": "«Дом летающих кинжалов» — история любви и обмана на фоне поздней Тан",
+        "id": "cin-cn-flying-daggers",
+        "zh": "十面埋伏"
+      },
+      {
+        "gloss": "«Дети грозных лет» — фильм 1935 года, для которого написан «Марш добровольцев»",
+        "id": "cin-cn-fengyun-ernv",
+        "zh": "风云儿女"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется фантастический фильм 2019 года, снятый по одноимённому рассказу Лю Цысиня?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-concubine",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 霸王别姬",
+        "url": "https://www.1905.com/mdb/film/57388/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Каннский фестиваль: BAWANG BIEJI",
+        "url": "https://www.festival-cannes.com/en/f/bawang-bieji/"
+      }
+    ],
+    "explanation": {
+      "ru": "Фильм «Прощай, моя наложница» (霸王别姬) поставил Чэнь Кайгэ (陈凯歌). Это история двух актёров пекинской оперы по роману Ли Бихуа. В 1993 году картина разделила главный приз Каннского кинофестиваля с другим фильмом."
+    },
+    "factRow": "cinema/works/cin-cn-concubine",
+    "id": "cinema-q32",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-concubine",
+        "zh": "陈凯歌"
+      },
+      {
+        "gloss": "Чжан Имоу — кинорежиссёр",
+        "id": "cin-cn-red-sorghum",
+        "zh": "张艺谋"
+      },
+      {
+        "gloss": "Ли Ань — кинорежиссёр",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "李安"
+      },
+      {
+        "gloss": "Вонг Карвай — кинорежиссёр",
+        "id": "cin-cn-mood-for-love",
+        "zh": "王家卫"
+      },
+      {
+        "gloss": "Го Фань — кинорежиссёр",
+        "id": "cin-cn-wandering-earth",
+        "zh": "郭帆"
+      },
+      {
+        "gloss": "Цзя Чжанкэ — кинорежиссёр",
+        "id": "cin-cn-still-life",
+        "zh": "贾樟柯"
+      },
+      {
+        "gloss": "Чжан Шичуань — кинорежиссёр",
+        "id": "cin-cn-red-peony",
+        "zh": "张石川"
+      },
+      {
+        "gloss": "Сюй Синчжи — кинорежиссёр",
+        "id": "cin-cn-fengyun-ernv",
+        "zh": "许幸之"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Кто поставил фильм «Прощай, моя наложница» (霸王别姬), разделивший «Золотую пальмовую ветвь» в 1993 году?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-crouching-tiger",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "CCTV-6 / 1905: 卧虎藏龙",
+        "url": "https://www.1905.com/mdb/film/53745/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-19",
+        "title": "Каннский фестиваль: Crouching Tiger, Hidden Dragon",
+        "url": "https://www.festival-cannes.com/en/2019/crouching-tiger-hidden-dragon-ang-lee-s-spectacular-masterpiece/"
+      }
+    ],
+    "explanation": {
+      "ru": "Фильм «Крадущийся тигр, затаившийся дракон» (卧虎藏龙) поставил Ли Ань (李安). Картина 2000 года снята по роману Ван Дулу. В 2001 году она получила «Оскар» за лучший фильм на иностранном языке."
+    },
+    "factRow": "cinema/works/cin-cn-crouching-tiger",
+    "id": "cinema-q33",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-crouching-tiger",
+        "zh": "李安"
+      },
+      {
+        "gloss": "Чжан Имоу — кинорежиссёр",
+        "id": "cin-cn-red-sorghum",
+        "zh": "张艺谋"
+      },
+      {
+        "gloss": "Чэнь Кайгэ — кинорежиссёр",
+        "id": "cin-cn-concubine",
+        "zh": "陈凯歌"
+      },
+      {
+        "gloss": "Вонг Карвай — кинорежиссёр",
+        "id": "cin-cn-mood-for-love",
+        "zh": "王家卫"
+      },
+      {
+        "gloss": "Го Фань — кинорежиссёр",
+        "id": "cin-cn-wandering-earth",
+        "zh": "郭帆"
+      },
+      {
+        "gloss": "Цзя Чжанкэ — кинорежиссёр",
+        "id": "cin-cn-still-life",
+        "zh": "贾樟柯"
+      },
+      {
+        "gloss": "Чжан Шичуань — кинорежиссёр",
+        "id": "cin-cn-red-peony",
+        "zh": "张石川"
+      },
+      {
+        "gloss": "Сюй Синчжи — кинорежиссёр",
+        "id": "cin-cn-fengyun-ernv",
+        "zh": "许幸之"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Кто поставил фильм «Крадущийся тигр, затаившийся дракон» (卧虎藏龙), получивший «Оскар» в 2001 году?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cin-cn-fengyun-ernv",
+      "state": "verified"
+    },
+    "dossier": "cinema",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-24",
+        "title": "《义勇军进行曲》是如何成为国歌的？ — 共产党员网",
+        "url": "https://www.12371.cn/2021/10/15/ARTI1634273299208217.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-24",
+        "title": "《义勇军进行曲》：一个民族的精神歌咏 — 共产党员网",
+        "url": "https://www.12371.cn/2023/03/31/ARTI1680218916275292.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-24",
+        "title": "中华人民共和国国歌 — 中国政府网",
+        "url": "https://www.gov.cn/guoqing/guoge/index.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "«Марш добровольцев» — главная песня фильма «Дети грозных лет» (风云儿女) студии «Дяньтун». Фильм вышел в Шанхае 24 мая 1935 года, и с тех пор песня разошлась по всей стране. Сейчас «Марш добровольцев» — государственный гимн КНР."
+    },
+    "factGroup": "anthem-volunteers-march",
+    "factRow": "cinema/works/cin-cn-fengyun-ernv",
+    "id": "cinema-q34",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cin-cn-fengyun-ernv",
+        "zh": "风云儿女"
+      },
+      {
+        "gloss": "«Красный гаолян» — фильм Чжан Имоу по произведениям Мо Яня",
+        "id": "cin-cn-red-sorghum",
+        "zh": "红高粱"
+      },
+      {
+        "gloss": "«Прощай, моя наложница» — фильм о судьбах двух актёров пекинской оперы",
+        "id": "cin-cn-concubine",
+        "zh": "霸王别姬"
+      },
+      {
+        "gloss": "«Крадущийся тигр, затаившийся дракон» — фильм о мастерах боевых искусств",
+        "id": "cin-cn-crouching-tiger",
+        "zh": "卧虎藏龙"
+      },
+      {
+        "gloss": "«Любовное настроение» — фильм о сближении двух соседей в Гонконге",
+        "id": "cin-cn-mood-for-love",
+        "zh": "花样年华"
+      },
+      {
+        "gloss": "«Блуждающая Земля» — фильм о спасении людей перемещением самой планеты",
+        "id": "cin-cn-wandering-earth",
+        "zh": "流浪地球"
+      },
+      {
+        "gloss": "«Натюрморт» — фильм о поисках близких на фоне переселения у Трёх ущелий",
+        "id": "cin-cn-still-life",
+        "zh": "三峡好人"
+      },
+      {
+        "gloss": "«Певица Красный Пион» — один из первых опытов звукового кино Китая",
+        "id": "cin-cn-red-peony",
+        "zh": "歌女红牡丹"
+      },
+      {
+        "gloss": "«Жить» — фильм о судьбе Фугуя и его семьи в Китае XX века",
+        "id": "cin-cn-to-live",
+        "zh": "活着"
+      },
+      {
+        "gloss": "«Герой» — фильм о встрече воина Безымянного с царём Цинь",
+        "id": "cin-cn-hero",
+        "zh": "英雄"
+      },
+      {
+        "gloss": "«Дом летающих кинжалов» — история любви и обмана на фоне поздней Тан",
+        "id": "cin-cn-flying-daggers",
+        "zh": "十面埋伏"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Для какого фильма была написана песня «Марш добровольцев», ставшая гимном КНР?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
     "topicSource": "authored"
   },
   {
@@ -84412,7 +84008,6 @@
     "explanation": {
       "ru": "Великая Отечественная война началась 22 июня 1941 года (1941 年), когда Германия без объявления войны напала на Советский Союз. Она шла почти четыре года и закончилась победой 9 мая 1945 года. Война унесла жизни около 27 миллионов советских людей."
     },
-    "factGroup": "year-1941-word",
     "factRow": "modern-history/events/ev-ru-ww2",
     "id": "modern-history-q99",
     "occurrences": [],
@@ -84502,252 +84097,6 @@
     "questionRu": "В каком году началась Великая Отечественная война?",
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "cny-20",
-      "state": "verified"
-    },
-    "dossier": "money",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "中国人民银行公告〔2019〕第4号 — 中国人民银行",
-        "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212545747507/index.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "第五套人民币20元纸币防伪特征 — 中国人民银行",
-        "url": "https://www.pbc.gov.cn/huobijinyinju/147948/147954/148021/176741/2820932/index.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "2019年版第五套人民币20元纸币 — 中国人民银行",
-        "url": "https://www.pbc.gov.cn/huobijinyinju/147948/147954/148021/3871396/3871429/index.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "新版人民币正式发行！原来人民币里藏着这么多中药，快找找看！— 国家中医药管理局",
-        "url": "http://www.natcm.gov.cn/hudongjiaoliu/guanfangweixin/2019-09-04/10785.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "人民币与中国名花 — 中国人民银行武汉分行",
-        "url": "https://wuhan.pbc.gov.cn/wuhan/123537/123545/125019/127415/2628903/index.html"
-      }
-    ],
-    "explanation": {
-      "ru": "На лицевой стороне купюры 20 юаней пятой серии рядом с портретом Мао Цзэдуна изображён лотос (荷花). Тот же цветок виден и в водяном знаке купюры. У каждой купюры пятой серии свой цветок, поэтому цветок помогает запомнить номинал."
-    },
-    "factRow": "money/banknotes/cny-20",
-    "id": "money-q01",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "cny-20",
-        "zh": "荷花"
-      },
-      {
-        "gloss": "Орхидея — на лицевой стороне и в водяном знаке купюры 1 юань",
-        "id": "cny-1",
-        "zh": "兰花"
-      },
-      {
-        "gloss": "Нарцисс — на лицевой стороне и в водяном знаке купюры 5 юаней",
-        "id": "cny-5",
-        "zh": "水仙花"
-      },
-      {
-        "gloss": "Китайская роза — на лицевой стороне и в водяном знаке купюры 10 юаней",
-        "id": "cny-10",
-        "zh": "月季花"
-      },
-      {
-        "gloss": "Хризантема — цветок на лицевой стороне купюры 50 юаней",
-        "id": "cny-50",
-        "zh": "菊花"
-      },
-      {
-        "gloss": "Цветы сливы мэйхуа — на лицевой стороне купюры 100 юаней",
-        "id": "cny-100",
-        "zh": "梅花"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Какой цветок изображён на лицевой стороне купюры 20 юаней пятой серии (выпуск 2019 года)?",
-    "questionZh": null,
-    "topic": "Экономика, образование, наука и спорт",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "cny-50",
-      "state": "verified"
-    },
-    "dossier": "money",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "中国人民银行公告〔2019〕第4号 — 中国人民银行",
-        "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212545747507/index.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "第五套人民币50元纸币防伪特征 — 中国人民银行",
-        "url": "https://www.pbc.gov.cn/huobijinyinju/147948/147954/148021/176741/2880740/index.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "2019年版第五套人民币50元纸币 — 中国人民银行",
-        "url": "https://www.pbc.gov.cn/huobijinyinju/147948/147954/148021/3871396/3871424/index.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "新版人民币正式发行！原来人民币里藏着这么多中药，快找找看！— 国家中医药管理局",
-        "url": "http://www.natcm.gov.cn/hudongjiaoliu/guanfangweixin/2019-09-04/10785.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "人民币与中国名花 — 中国人民银行武汉分行",
-        "url": "https://wuhan.pbc.gov.cn/wuhan/123537/123545/125019/127415/2628903/index.html"
-      }
-    ],
-    "explanation": {
-      "ru": "Хризантема (菊花) изображена на лицевой стороне купюры 50 юаней пятой серии. На обороте этой купюры — дворец Потала (布达拉宫) в Лхасе. Портрет Мао Цзэдуна стоит на лицевой стороне всех купюр пятой серии, поэтому различать их помогают цветы и рисунки оборота."
-    },
-    "factRow": "money/banknotes/cny-50",
-    "id": "money-q02",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "cny-50",
-        "zh": "50 元"
-      },
-      {
-        "gloss": "1 юань: на обороте Западное озеро (Сиху)",
-        "id": "cny-1",
-        "zh": "1 元"
-      },
-      {
-        "gloss": "5 юаней: на обороте гора Тайшань",
-        "id": "cny-5",
-        "zh": "5 元"
-      },
-      {
-        "gloss": "10 юаней: на обороте Три ущелья Янцзы",
-        "id": "cny-10",
-        "zh": "10 元"
-      },
-      {
-        "gloss": "20 юаней: на обороте пейзаж Гуйлиня",
-        "id": "cny-20",
-        "zh": "20 元"
-      },
-      {
-        "gloss": "100 юаней: на обороте Дом народных собраний",
-        "id": "cny-100",
-        "zh": "100 元"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "На лицевой стороне купюры какого номинала пятой серии изображён цветок 菊花?",
-    "questionZh": null,
-    "topic": "Экономика, образование, наука и спорт",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "cny-100",
-      "state": "verified"
-    },
-    "dossier": "money",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "2015年版第五套人民币100元纸币发行准备工作基本就绪 — 中国人民银行",
-        "url": "https://www.pbc.gov.cn/huobijinyinju/147948/147950/2942355/index.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "2015年版100元纸币票面特征和公众防伪特征简介 — 中国人民银行哈尔滨中心支行",
-        "url": "https://haerbin.pbc.gov.cn/haerbin/112718/3381691/2017091508322549080.pdf"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "2005版第五套人民币票样 100元 — 中国人民银行",
-        "url": "https://www.pbc.gov.cn/huobijinyinju/147948/147954/148021/176764/2820779/index.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "新版人民币正式发行！原来人民币里藏着这么多中药，快找找看！— 国家中医药管理局",
-        "url": "http://www.natcm.gov.cn/hudongjiaoliu/guanfangweixin/2019-09-04/10785.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "人民币与中国名花 — 中国人民银行武汉分行",
-        "url": "https://wuhan.pbc.gov.cn/wuhan/123537/123545/125019/127415/2628903/index.html"
-      }
-    ],
-    "explanation": {
-      "ru": "На лицевой стороне купюры 100 юаней пятой серии изображены цветы сливы мэйхуа (梅花). На обороте этой купюры — Дом народных собраний (人民大会堂) в Пекине. Нынешний рисунок самой крупной купюры пятой серии относится к выпуску 2015 года."
-    },
-    "factRow": "money/banknotes/cny-100",
-    "id": "money-q03",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "cny-100",
-        "zh": "梅花"
-      },
-      {
-        "gloss": "Орхидея — на лицевой стороне и в водяном знаке купюры 1 юань",
-        "id": "cny-1",
-        "zh": "兰花"
-      },
-      {
-        "gloss": "Нарцисс — на лицевой стороне и в водяном знаке купюры 5 юаней",
-        "id": "cny-5",
-        "zh": "水仙花"
-      },
-      {
-        "gloss": "Китайская роза — на лицевой стороне и в водяном знаке купюры 10 юаней",
-        "id": "cny-10",
-        "zh": "月季花"
-      },
-      {
-        "gloss": "Лотос — на лицевой стороне и в водяном знаке купюры 20 юаней",
-        "id": "cny-20",
-        "zh": "荷花"
-      },
-      {
-        "gloss": "Хризантема — цветок на лицевой стороне купюры 50 юаней",
-        "id": "cny-50",
-        "zh": "菊花"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Цветы какого растения украшают лицевую сторону купюры 100 юаней пятой серии выпуска 2015 года?",
-    "questionZh": null,
-    "topic": "Экономика, образование, наука и спорт",
     "topicSource": "authored"
   },
   {
@@ -85908,92 +85257,6 @@
   },
   {
     "answer": {
-      "optionId": "kaiyuan-tongbao",
-      "state": "verified"
-    },
-    "dossier": "money",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "开元通宝 — 中国国家博物馆",
-        "url": "https://www.chnmuseum.cn/zp/zpml/hb/202203/t20220301_253935.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "中国历代货币馆 — 上海博物馆",
-        "url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/RI00004034"
-      },
-      {
-        "authority": "academic",
-        "checkedAt": "2026-10-14",
-        "title": "张松：中国古代的货币金融立法 — 中国法学网（中国社会科学院法学研究所）",
-        "url": "http://iolaw.cssn.cn/gdfls/200411/t20041111_4593915.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Монету кайюань тунбао (开元通宝) ввёл в 621 г. основатель династии Тан (唐). На ней впервые вместо веса стоит слово «тунбао» — «ходячее сокровище», а десять монет весили ровно один лян. Надпись, по преданию, написал каллиграф Оуян Сюнь."
-    },
-    "factGroup": "tang-changan-word",
-    "factRow": "money/history/kaiyuan-tongbao",
-    "id": "money-q20",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "kaiyuan-tongbao",
-        "zh": "唐"
-      },
-      {
-        "gloss": "Шан и Чжоу — эпохи бронзового века, II–I тыс. до н. э.",
-        "id": "beibi",
-        "zh": "商周"
-      },
-      {
-        "gloss": "Чуньцю и Чжаньго — эпоха раздробленности, 770–221 гг. до н. э.",
-        "id": "bubi",
-        "zh": "春秋战国"
-      },
-      {
-        "gloss": "Цинь — первая единая империя, 221–207 гг. до н. э.",
-        "id": "qin-banliang",
-        "zh": "秦"
-      },
-      {
-        "gloss": "Хань — империя 206 г. до н. э. – 220 г. н. э.",
-        "id": "wuzhu",
-        "zh": "汉"
-      },
-      {
-        "gloss": "Северная Сун (960–1127), столица Кайфын",
-        "id": "jiaozi",
-        "zh": "北宋"
-      },
-      {
-        "gloss": "Южная Сун (1127–1279), столица Линьань (Ханчжоу)",
-        "id": "huizi",
-        "zh": "南宋"
-      },
-      {
-        "gloss": "Юань — монгольская династия в Китае, 1271–1368",
-        "id": "yuanbao",
-        "zh": "元"
-      },
-      {
-        "gloss": "Китайская Республика — период 1912–1949 гг. на материке",
-        "id": "yuan-datou",
-        "zh": "民国"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "В какую эпоху появилась монета 开元通宝?",
-    "questionZh": null,
-    "topic": "История и государство",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
       "optionId": "beibi",
       "state": "verified"
     },
@@ -86083,245 +85346,6 @@
     "origin": "addition",
     "parseWarnings": [],
     "questionRu": "Что считается древнейшими деньгами Китая?",
-    "questionZh": null,
-    "topic": "История и государство",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "yuan-datou",
-      "state": "verified"
-    },
-    "dossier": "money",
-    "evidence": [
-      {
-        "authority": "academic",
-        "checkedAt": "2026-10-14",
-        "title": "清代户部造币总厂的前世今生 — 中国社会科学网",
-        "url": "https://cssn.cn/kgxc/kgxc_kgsb/202207/t20220728_5431170.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "“袁大头”不是银币的开始 最早出现在光绪时期 — 人民网",
-        "url": "http://art.people.com.cn/n/2013/0305/c226026-20676896.html"
-      }
-    ],
-    "explanation": {
-      "ru": "Юань датоу (袁大头, «голова Юаня») — серебряная монета в один юань с профилем Юань Шикая. Её ввело «Положение о государственной монете» 1914 г., то есть в период Китайской Республики (民国). Около десяти лет она была единственной серебряной монетой, ходившей по всему Китаю."
-    },
-    "factGroup": "lu-xun-republic-text",
-    "factRow": "money/history/yuan-datou",
-    "id": "money-q22",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "yuan-datou",
-        "zh": "民国"
-      },
-      {
-        "gloss": "Шан и Чжоу — эпохи бронзового века, II–I тыс. до н. э.",
-        "id": "beibi",
-        "zh": "商周"
-      },
-      {
-        "gloss": "Чуньцю и Чжаньго — эпоха раздробленности, 770–221 гг. до н. э.",
-        "id": "bubi",
-        "zh": "春秋战国"
-      },
-      {
-        "gloss": "Цинь — первая единая империя, 221–207 гг. до н. э.",
-        "id": "qin-banliang",
-        "zh": "秦"
-      },
-      {
-        "gloss": "Хань — империя 206 г. до н. э. – 220 г. н. э.",
-        "id": "wuzhu",
-        "zh": "汉"
-      },
-      {
-        "gloss": "Тан — империя 618–907 гг.",
-        "id": "kaiyuan-tongbao",
-        "zh": "唐"
-      },
-      {
-        "gloss": "Северная Сун (960–1127), столица Кайфын",
-        "id": "jiaozi",
-        "zh": "北宋"
-      },
-      {
-        "gloss": "Южная Сун (1127–1279), столица Линьань (Ханчжоу)",
-        "id": "huizi",
-        "zh": "南宋"
-      },
-      {
-        "gloss": "Юань — монгольская династия в Китае, 1271–1368",
-        "id": "yuanbao",
-        "zh": "元"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "В какой период выпускалась серебряная монета 袁大头?",
-    "questionZh": null,
-    "topic": "История и государство",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "daobi",
-      "state": "verified"
-    },
-    "dossier": "money",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "先秦货币 — 中国人民银行湖北省分行（湖北省钱币陈列馆）",
-        "url": "https://wuhan.pbc.gov.cn/wuhan/123537/123545/125010/127399/2526024/index.html"
-      },
-      {
-        "authority": "academic",
-        "checkedAt": "2026-10-14",
-        "title": "张松：中国古代的货币金融立法 — 中国法学网（中国社会科学院法学研究所）",
-        "url": "http://iolaw.cssn.cn/gdfls/200411/t20041111_4593915.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "齐刀（即墨大刀） — 中国国家博物馆",
-        "url": "https://www.chnmuseum.cn/zp/zpml/hb/201812/t20181218_23297.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Монеты-ножи (刀币) ходили в эпоху Чуньцю и Чжаньго (春秋战国). Это бронзовые монеты в форме ножа с кольцом на конце рукояти. Они были главными деньгами восточных царств Ци и Янь, позднее их отливало и Чжао."
-    },
-    "factRow": "money/history/daobi",
-    "id": "money-q23",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "daobi",
-        "zh": "春秋战国"
-      },
-      {
-        "gloss": "Цинь — первая единая империя, 221–207 гг. до н. э.",
-        "id": "qin-banliang",
-        "zh": "秦"
-      },
-      {
-        "gloss": "Хань — империя 206 г. до н. э. – 220 г. н. э.",
-        "id": "wuzhu",
-        "zh": "汉"
-      },
-      {
-        "gloss": "Тан — империя 618–907 гг.",
-        "id": "kaiyuan-tongbao",
-        "zh": "唐"
-      },
-      {
-        "gloss": "Северная Сун (960–1127), столица Кайфын",
-        "id": "jiaozi",
-        "zh": "北宋"
-      },
-      {
-        "gloss": "Южная Сун (1127–1279), столица Линьань (Ханчжоу)",
-        "id": "huizi",
-        "zh": "南宋"
-      },
-      {
-        "gloss": "Юань — монгольская династия в Китае, 1271–1368",
-        "id": "yuanbao",
-        "zh": "元"
-      },
-      {
-        "gloss": "Китайская Республика — период 1912–1949 гг. на материке",
-        "id": "yuan-datou",
-        "zh": "民国"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "К какой эпохе относятся монеты 刀币?",
-    "questionZh": null,
-    "topic": "История и государство",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "huizi",
-      "state": "verified"
-    },
-    "dossier": "money",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "“行在会子库”铜钞版 — 中国国家博物馆",
-        "url": "https://www.chnmuseum.cn/zp/zpml/hb/202202/t20220228_253802.shtml"
-      },
-      {
-        "authority": "academic",
-        "checkedAt": "2026-10-14",
-        "title": "张松：中国古代的货币金融立法 — 中国法学网（中国社会科学院法学研究所）",
-        "url": "http://iolaw.cssn.cn/gdfls/200411/t20041111_4593915.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Хуэйцзы (会子) — бумажные деньги Южной Сун (南宋). Впервые их выпустили при императоре Гао-цзуне, а печатали в столице Линьань (Ханчжоу). Медная доска «Хуэйцзы-ку» для их печати — древнейшая сохранившаяся форма для печати денег."
-    },
-    "factRow": "money/history/huizi",
-    "id": "money-q24",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "huizi",
-        "zh": "南宋"
-      },
-      {
-        "gloss": "Шан и Чжоу — эпохи бронзового века, II–I тыс. до н. э.",
-        "id": "beibi",
-        "zh": "商周"
-      },
-      {
-        "gloss": "Чуньцю и Чжаньго — эпоха раздробленности, 770–221 гг. до н. э.",
-        "id": "bubi",
-        "zh": "春秋战国"
-      },
-      {
-        "gloss": "Цинь — первая единая империя, 221–207 гг. до н. э.",
-        "id": "qin-banliang",
-        "zh": "秦"
-      },
-      {
-        "gloss": "Хань — империя 206 г. до н. э. – 220 г. н. э.",
-        "id": "wuzhu",
-        "zh": "汉"
-      },
-      {
-        "gloss": "Тан — империя 618–907 гг.",
-        "id": "kaiyuan-tongbao",
-        "zh": "唐"
-      },
-      {
-        "gloss": "Северная Сун (960–1127), столица Кайфын",
-        "id": "jiaozi",
-        "zh": "北宋"
-      },
-      {
-        "gloss": "Юань — монгольская династия в Китае, 1271–1368",
-        "id": "yuanbao",
-        "zh": "元"
-      },
-      {
-        "gloss": "Китайская Республика — период 1912–1949 гг. на материке",
-        "id": "yuan-datou",
-        "zh": "民国"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "В какую эпоху выпускались бумажные деньги 会子?",
     "questionZh": null,
     "topic": "История и государство",
     "topicSource": "authored"
@@ -86613,198 +85637,6 @@
   },
   {
     "answer": {
-      "optionId": "yibiqian",
-      "state": "verified"
-    },
-    "dossier": "money",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "先秦货币 — 中国人民银行湖北省分行（湖北省钱币陈列馆）",
-        "url": "https://wuhan.pbc.gov.cn/wuhan/123537/123545/125010/127399/2526024/index.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "青铜贝币 — 中国国家博物馆",
-        "url": "https://www.chnmuseum.cn/zp/zpml/hb/202008/t20200824_247118.shtml"
-      }
-    ],
-    "explanation": {
-      "ru": "Ибицянь (蚁鼻钱) — маленькие бронзовые монеты в форме раковины, главные деньги южного царства Чу в эпоху Чжаньго. Надпись на них похожа то ли на муравья, то ли на нос, то ли на рожицу. Отсюда и второе имя монеты — «лицо демона»."
-    },
-    "factRow": "money/history/yibiqian",
-    "id": "money-q28",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "yibiqian",
-        "zh": "蚁鼻钱"
-      },
-      {
-        "gloss": "Бу-би — бронзовые монеты в форме лопатки, эпоха Чуньцю и Чжаньго",
-        "id": "bubi",
-        "zh": "布币"
-      },
-      {
-        "gloss": "Дао-би — бронзовые монеты-ножи царств Ци и Янь, эпоха Чуньцю и Чжаньго",
-        "id": "daobi",
-        "zh": "刀币"
-      },
-      {
-        "gloss": "Баньлян — монета Цинь Шихуанди с квадратным отверстием, единая с 221 г. до н. э.",
-        "id": "qin-banliang",
-        "zh": "秦半两"
-      },
-      {
-        "gloss": "Учжу («пять чжу») — монета ханьского У-ди, ходила более семисот лет",
-        "id": "wuzhu",
-        "zh": "五铢钱"
-      },
-      {
-        "gloss": "Кайюань тунбао — танская монета 621 года, первая с «тунбао» вместо веса",
-        "id": "kaiyuan-tongbao",
-        "zh": "开元通宝"
-      },
-      {
-        "gloss": "Цзяоцзы — первые бумажные деньги, Северная Сун, Сычуань",
-        "id": "jiaozi",
-        "zh": "交子"
-      },
-      {
-        "gloss": "Хуэйцзы — бумажные деньги Южной Сун, печатались в Линьани (Ханчжоу)",
-        "id": "huizi",
-        "zh": "会子"
-      },
-      {
-        "gloss": "Юаньбао — слиток серебра; так слитки зовут со времён Юань",
-        "id": "yuanbao",
-        "zh": "元宝"
-      },
-      {
-        "gloss": "Юань датоу — серебряный юань с профилем Юань Шикая, выпуск с 1914 года",
-        "id": "yuan-datou",
-        "zh": "袁大头"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Какие маленькие бронзовые монеты в форме раковины были главными деньгами царства Чу?",
-    "questionZh": null,
-    "topic": "История и государство",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "yuanbao",
-      "state": "verified"
-    },
-    "dossier": "money",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "中国历代货币馆 — 上海博物馆",
-        "url": "https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/RI00004034"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "“元宝”说法始于唐代对“开元通宝”的误读 — 人民网",
-        "url": "http://culture.people.com.cn/n/2015/0515/c22219-27006415.html"
-      }
-    ],
-    "explanation": {
-      "ru": "Юаньбао (元宝) — слиток серебра, а не бронзовая монета. Название закрепилось при династии Юань — по 50-лянным слиткам с надписью «юаньбао». Затем оно стало общим именем серебряных слитков."
-    },
-    "factRow": "money/history/yuanbao",
-    "id": "money-q29",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "yuanbao",
-        "zh": "元宝"
-      },
-      {
-        "gloss": "Бу-би — бронзовые монеты в форме лопатки, эпоха Чуньцю и Чжаньго",
-        "id": "bubi",
-        "zh": "布币"
-      },
-      {
-        "gloss": "Дао-би — бронзовые монеты-ножи царств Ци и Янь, эпоха Чуньцю и Чжаньго",
-        "id": "daobi",
-        "zh": "刀币"
-      },
-      {
-        "gloss": "Ибицянь («муравьиный нос») — бронзовые монеты-раковины царства Чу",
-        "id": "yibiqian",
-        "zh": "蚁鼻钱"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Что из перечисленного НЕ было бронзовой монетой?",
-    "questionZh": null,
-    "topic": "История и государство",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "yashengqian",
-      "state": "verified"
-    },
-    "dossier": "money",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "十二生肖压胜钱 — 故宫博物院",
-        "url": "https://www.dpm.org.cn/collection/bronze/246317.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-14",
-        "title": "意趣无穷厌胜钱 — 上海市民政局",
-        "url": "https://mzj.sh.gov.cn/lnb-lyxx/20210415/0ddc6155e43849538c9344d94febc518.html"
-      }
-    ],
-    "explanation": {
-      "ru": "Яшэнцянь (压胜钱) — монеты-обереги с благопожеланиями. В обращении они не ходили: их носили на себе, особенно дети, чтобы отогнать зло и привлечь удачу. Такая монета служила талисманом, а не платёжным средством."
-    },
-    "factRow": "money/customs/yashengqian",
-    "id": "money-q32",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "yashengqian",
-        "zh": "压胜钱"
-      },
-      {
-        "gloss": "Красный конверт с деньгами — праздничный подарок",
-        "id": "hongbao",
-        "zh": "红包"
-      },
-      {
-        "gloss": "Юаньбао — слиток-ладья, символ богатства; на него похожи пельмени",
-        "id": "jin-yuanbao",
-        "zh": "元宝"
-      },
-      {
-        "gloss": "Деньги, которые гости вносят в подарок молодожёнам",
-        "id": "fenziqian",
-        "zh": "份子钱"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Как называются монеты с благопожеланиями, которые не ходили в обращении: их носили на себе, чтобы отогнать зло?",
-    "questionZh": null,
-    "topic": "Культура, традиции и праздники",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
       "optionId": "hongbao",
       "state": "verified"
     },
@@ -86856,6 +85688,171 @@
     "questionRu": "Какой денежный подарок делают не только на Праздник весны, но и на рождение ребёнка, новоселье и день рождения?",
     "questionZh": null,
     "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cny-100",
+      "state": "verified"
+    },
+    "dossier": "money",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "2015年版第五套人民币100元纸币发行准备工作基本就绪 — 中国人民银行",
+        "url": "https://www.pbc.gov.cn/huobijinyinju/147948/147950/2942355/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "2015年版100元纸币票面特征和公众防伪特征简介 — 中国人民银行哈尔滨中心支行",
+        "url": "https://haerbin.pbc.gov.cn/haerbin/112718/3381691/2017091508322549080.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "2005版第五套人民币票样 100元 — 中国人民银行",
+        "url": "https://www.pbc.gov.cn/huobijinyinju/147948/147954/148021/176764/2820779/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "新版人民币正式发行！原来人民币里藏着这么多中药，快找找看！— 国家中医药管理局",
+        "url": "http://www.natcm.gov.cn/hudongjiaoliu/guanfangweixin/2019-09-04/10785.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "人民币与中国名花 — 中国人民银行武汉分行",
+        "url": "https://wuhan.pbc.gov.cn/wuhan/123537/123545/125019/127415/2628903/index.html"
+      }
+    ],
+    "explanation": {
+      "ru": "На обороте купюры 100 юаней пятой серии изображён Дом народных собраний (人民大会堂) в Пекине. На лицевой стороне — портрет Мао Цзэдуна и цветы сливы мэйхуа. Выпуск 2015 года вышел в обращение 12 ноября 2015 года."
+    },
+    "factRow": "money/banknotes/cny-100",
+    "id": "money-q39",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cny-100",
+        "zh": "人民大会堂"
+      },
+      {
+        "gloss": "Западное озеро (Сиху) — на обороте купюры 1 юань",
+        "id": "cny-1",
+        "zh": "西湖"
+      },
+      {
+        "gloss": "Гора Тайшань — на обороте купюры 5 юаней",
+        "id": "cny-5",
+        "zh": "泰山"
+      },
+      {
+        "gloss": "Три ущелья Янцзы — на обороте купюры 10 юаней",
+        "id": "cny-10",
+        "zh": "长江三峡"
+      },
+      {
+        "gloss": "Горы и реки Гуйлиня — на обороте купюры 20 юаней",
+        "id": "cny-20",
+        "zh": "桂林山水"
+      },
+      {
+        "gloss": "Дворец Потала в Лхасе — на обороте купюры 50 юаней",
+        "id": "cny-50",
+        "zh": "布达拉宫"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Что изображено на обороте купюры 100 юаней пятой серии (выпуск 2015 года)?",
+    "questionZh": null,
+    "topic": "Экономика, образование, наука и спорт",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "cny-50",
+      "state": "verified"
+    },
+    "dossier": "money",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "中国人民银行公告〔2019〕第4号 — 中国人民银行",
+        "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2025092212545747507/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "第五套人民币50元纸币防伪特征 — 中国人民银行",
+        "url": "https://www.pbc.gov.cn/huobijinyinju/147948/147954/148021/176741/2880740/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "2019年版第五套人民币50元纸币 — 中国人民银行",
+        "url": "https://www.pbc.gov.cn/huobijinyinju/147948/147954/148021/3871396/3871424/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "新版人民币正式发行！原来人民币里藏着这么多中药，快找找看！— 国家中医药管理局",
+        "url": "http://www.natcm.gov.cn/hudongjiaoliu/guanfangweixin/2019-09-04/10785.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-14",
+        "title": "人民币与中国名花 — 中国人民银行武汉分行",
+        "url": "https://wuhan.pbc.gov.cn/wuhan/123537/123545/125019/127415/2628903/index.html"
+      }
+    ],
+    "explanation": {
+      "ru": "На обороте купюры 50 юаней пятой серии изображён дворец Потала (布达拉宫). На лицевой стороне — портрет Мао Цзэдуна и хризантема. Выпуск 2019 года сохранил рисунок и цвет купюры выпуска 2005 года."
+    },
+    "factGroup": "potala-tibet",
+    "factRow": "money/banknotes/cny-50",
+    "id": "money-q40",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "cny-50",
+        "zh": "布达拉宫"
+      },
+      {
+        "gloss": "Западное озеро (Сиху) — на обороте купюры 1 юань",
+        "id": "cny-1",
+        "zh": "西湖"
+      },
+      {
+        "gloss": "Гора Тайшань — на обороте купюры 5 юаней",
+        "id": "cny-5",
+        "zh": "泰山"
+      },
+      {
+        "gloss": "Три ущелья Янцзы — на обороте купюры 10 юаней",
+        "id": "cny-10",
+        "zh": "长江三峡"
+      },
+      {
+        "gloss": "Горы и реки Гуйлиня — на обороте купюры 20 юаней",
+        "id": "cny-20",
+        "zh": "桂林山水"
+      },
+      {
+        "gloss": "Дом народных собраний в Пекине — на обороте купюры 100 юаней",
+        "id": "cny-100",
+        "zh": "人民大会堂"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Что изображено на обороте купюры 50 юаней пятой серии (выпуск 2019 года)?",
+    "questionZh": null,
+    "topic": "Экономика, образование, наука и спорт",
     "topicSource": "authored"
   },
   {
@@ -87726,6 +86723,18 @@
         "checkedAt": "2026-10-15",
         "title": "七夕传说中的它们 也是夏季星空的主角 — 国家航天局",
         "url": "https://www.cnsa.gov.cn/n6758968/n6758973/c6807093/content.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-24",
+        "title": "牛郎织女传说 — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/project_details/12254.html"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-10-24",
+        "title": "吴林森：如何鉴赏《白蛇传》 — 江苏省社科联（江苏人文社会科学讲座）",
+        "url": "https://www.js-skl.org.cn/uploads/Files/2018-03/13/1-1520905114-742.pdf"
       }
     ],
     "explanation": {
@@ -87837,6 +86846,18 @@
         "checkedAt": "2026-10-15",
         "title": "梁山伯与祝英台谁是主角 — 光明网（文摘报）",
         "url": "https://www.gmw.cn/01wzb/2009-09/10/content_978910.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-24",
+        "title": "牛郎织女传说 — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/project_details/12254.html"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-10-24",
+        "title": "吴林森：如何鉴赏《白蛇传》 — 江苏省社科联（江苏人文社会科学讲座）",
+        "url": "https://www.js-skl.org.cn/uploads/Files/2018-03/13/1-1520905114-742.pdf"
       }
     ],
     "explanation": {
@@ -88344,6 +87365,66 @@
     "origin": "addition",
     "parseWarnings": [],
     "questionRu": "Как зовут героиню легенды, внучку Небесного владыки, которая ткала облака, тайно спустилась на землю и стала женой пастуха, но её вернули на небо?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "story-mulan-congjun",
+      "state": "verified"
+    },
+    "dossier": "myths",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "木兰传说 — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/project_details/12280.html"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-10-15",
+        "title": "史金波：《木兰辞》中“军书十二卷”新解 — 全国哲学社会科学工作办公室",
+        "url": "http://www.nopss.gov.cn/n1/2021/0802/c219544-32177765.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "木兰传说：忠孝丹心铸 英雄美名扬 — 根在中原（河南省委统战部）",
+        "url": "https://sq.rootinhenan.gov.cn/sitesources/sq/page_pc/gqwh/articled1cfe8f3b70246dca5e69d06cbce1260.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Сказание о Хуа Мулань (木兰从军), которая ушла на войну вместо отца, — народная легенда, но в «четыре великие народные легенды» (四大民间传说) оно не входит. Эти четыре предания считают самой заметной частью китайской народной культуры. Все они — истории о любви, а сказание о Мулань — о дочернем долге и воинской доблести."
+    },
+    "factRow": "myths/stories/story-mulan-congjun",
+    "id": "myths-q30",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "story-mulan-congjun",
+        "zh": "木兰从军"
+      },
+      {
+        "gloss": "«Пастух и Ткачиха» — влюблённые, встречающиеся раз в год на сорочьем мосту",
+        "id": "story-niulang-zhinv",
+        "zh": "牛郎织女"
+      },
+      {
+        "gloss": "«Легенда о Белой змее» — любовь девы-змеи к юноше Сюй Сяню",
+        "id": "story-baishezhuan",
+        "zh": "白蛇传"
+      },
+      {
+        "gloss": "«Мэн Цзяннюй оплакивает стену» — от её плача обрушилась Великая стена",
+        "id": "story-mengjiangnu",
+        "zh": "孟姜女哭长城"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какое из этих сказаний не входит в четыре великие народные легенды Китая?",
     "questionZh": null,
     "topic": "Культура, традиции и праздники",
     "topicSource": "authored"
@@ -104285,236 +103366,6 @@
   },
   {
     "answer": {
-      "optionId": "mis-xihe",
-      "state": "verified"
-    },
-    "dossier": "space",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-15",
-        "title": "我国首颗太阳探测科学技术试验卫星“羲和号”成功发射 — 国家航天局",
-        "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c6812709/content.html"
-      },
-      {
-        "authority": "academic",
-        "checkedAt": "2026-10-15",
-        "title": "“羲和号”来了！我国首颗太阳探测科学技术试验卫星发射成功！ — 南京大学",
-        "url": "https://www.nju.edu.cn/info/3181/89541.htm"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-15",
-        "title": "闪耀太空！宇宙级中国式浪漫都藏在这些名字里 — 新华网",
-        "url": "http://www.xinhuanet.com/tech/2023-04/24/c_1129555626.htm"
-      }
-    ],
-    "explanation": {
-      "ru": "Спутник «Сихэ» (羲和号) назван в честь Сихэ (羲和) — богини Солнца из древних китайских мифов. По преданию, она мать десяти солнц и правит солнечной колесницей, а ещё покровительствует календарю. Это первый китайский спутник для исследования Солнца: он запущен 14 октября 2021 года и впервые в мире получает из космоса спектральные изображения Солнца в линии H-альфа."
-    },
-    "factRow": "space/missions/mis-xihe",
-    "id": "space-q06",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "mis-xihe",
-        "zh": "羲和"
-      },
-      {
-        "gloss": "Чанъэ — богиня Луны из мифа: выпила снадобье бессмертия и улетела на Луну",
-        "id": "mis-change1",
-        "zh": "嫦娥"
-      },
-      {
-        "gloss": "Нефритовый заяц — по преданию, живёт в лунном дворце и толчёт снадобье",
-        "id": "mis-yutu",
-        "zh": "玉兔"
-      },
-      {
-        "gloss": "Чжужун — бог огня в китайской мифологии",
-        "id": "mis-zhurong",
-        "zh": "祝融"
-      },
-      {
-        "gloss": "Сунь Укун — Царь обезьян из романа «Путешествие на Запад»",
-        "id": "mis-wukong",
-        "zh": "孙悟空"
-      },
-      {
-        "gloss": "Куафу — великан из мифа, гнавшийся за Солнцем",
-        "id": "mis-kuafu1",
-        "zh": "夸父"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "В честь какого мифологического персонажа назван первый китайский спутник для исследования Солнца, запущенный в октябре 2021 года?",
-    "questionZh": null,
-    "topic": "Экономика, образование, наука и спорт",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
-      "optionId": "mis-kuafu1",
-      "state": "verified"
-    },
-    "dossier": "space",
-    "evidence": [
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-15",
-        "title": "我国成功发射综合性太阳探测卫星“夸父一号” — 中国科学院",
-        "url": "https://www.cas.cn/yw/202210/t20221009_4850182.shtml"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-15",
-        "title": "太阳探测卫星“夸父一号”成功发射 — 国家航天局",
-        "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c6840977/content.html"
-      },
-      {
-        "authority": "official",
-        "checkedAt": "2026-10-15",
-        "title": "太阳探测卫星“夸父一号”成功发射 — 新华网",
-        "url": "http://www.news.cn/tech/20221010/22dc0d6bd8644b02952b3477520fdbde/c.html"
-      }
-    ],
-    "explanation": {
-      "ru": "Это «Куафу-1» (夸父一号) — первая китайская комплексная солнечная обсерватория, запущенная 9 октября 2022 года. Она названа в честь великана Куафу, который, по мифу, погнался за Солнцем, выпил досуха Хуанхэ и Вэйхэ и умер в пути от жажды. По словам Национального космического агентства Китая, этот миф выражает стремление древних людей познать природу и их упорство. Обсерватория впервые с одного околоземного спутника одновременно наблюдает магнитное поле Солнца, солнечные вспышки и корональные выбросы массы."
-    },
-    "factRow": "space/missions/mis-kuafu1",
-    "id": "space-q07",
-    "occurrences": [],
-    "options": [
-      {
-        "id": "mis-kuafu1",
-        "zh": "夸父一号"
-      },
-      {
-        "gloss": "Чанъэ-1 — первый лунный зонд Китая, 2007",
-        "id": "mis-change1",
-        "zh": "嫦娥一号"
-      },
-      {
-        "gloss": "Чанъэ-2 — лунный зонд 2010 года, позже пролетел мимо астероида Таутатис",
-        "id": "mis-change2",
-        "zh": "嫦娥二号"
-      },
-      {
-        "gloss": "Чанъэ-3 — первая мягкая посадка Китая на Луну, 2013",
-        "id": "mis-change3",
-        "zh": "嫦娥三号"
-      },
-      {
-        "gloss": "Чанъэ-4 — первая мягкая посадка на обратной стороне Луны, 2019",
-        "id": "mis-change4",
-        "zh": "嫦娥四号"
-      },
-      {
-        "gloss": "Чанъэ-5 — первая доставка Китаем лунного грунта на Землю, 2020",
-        "id": "mis-change5",
-        "zh": "嫦娥五号"
-      },
-      {
-        "gloss": "Чанъэ-6 — первый в мире грунт с обратной стороны Луны, 2024",
-        "id": "mis-change6",
-        "zh": "嫦娥六号"
-      },
-      {
-        "gloss": "Юйту — первый китайский луноход, его доставил на Луну «Чанъэ-3» в 2013",
-        "id": "mis-yutu",
-        "zh": "玉兔号"
-      },
-      {
-        "gloss": "Юйту-2 — луноход, доставленный на обратную сторону Луны станцией «Чанъэ-4»",
-        "id": "mis-yutu2",
-        "zh": "玉兔二号"
-      },
-      {
-        "gloss": "Цюэцяо — спутник-ретранслятор у точки L2 для связи с «Чанъэ-4», 2018",
-        "id": "mis-queqiao",
-        "zh": "鹊桥"
-      },
-      {
-        "gloss": "Цюэцяо-2 — спутник-ретранслятор на орбите Луны для «Чанъэ-6», 2024",
-        "id": "mis-queqiao2",
-        "zh": "鹊桥二号"
-      },
-      {
-        "gloss": "Мэнчжоу — новый пилотируемый корабль для полётов к Луне, испытывается с 2025",
-        "id": "mis-mengzhou",
-        "zh": "梦舟"
-      },
-      {
-        "gloss": "Ланьюэ — лунный посадочный модуль для двух космонавтов, испытан в 2025",
-        "id": "mis-lanyue",
-        "zh": "揽月"
-      },
-      {
-        "gloss": "«Шэньчжоу-5» — корабль первого пилотируемого полёта Китая (2003, Ян Ливэй)",
-        "id": "mis-shenzhou5",
-        "zh": "神舟五号"
-      },
-      {
-        "gloss": "«Шэньчжоу-11» — корабль, чей экипаж месяц работал на «Тяньгун-2» (2016)",
-        "id": "mis-shenzhou11",
-        "zh": "神舟十一号"
-      },
-      {
-        "gloss": "«Тяньгун-1» — первый китайский орбитальный модуль, запущен в 2011 году",
-        "id": "mis-tiangong1",
-        "zh": "天宫一号"
-      },
-      {
-        "gloss": "«Тяньгун» — китайская орбитальная станция; базовый модуль запущен в 2021 году",
-        "id": "mis-tiangong",
-        "zh": "天宫空间站"
-      },
-      {
-        "gloss": "«Тяньвэнь-1» — первая китайская экспедиция к Марсу, запущена в 2020 году",
-        "id": "mis-tianwen1",
-        "zh": "天问一号"
-      },
-      {
-        "gloss": "«Чжужун» — первый китайский марсоход, на поверхности Марса с мая 2021 года",
-        "id": "mis-zhurong",
-        "zh": "祝融号"
-      },
-      {
-        "gloss": "«Укун» — китайский спутник для поиска тёмной материи (2015)",
-        "id": "mis-wukong",
-        "zh": "悟空"
-      },
-      {
-        "gloss": "«Сихэ» — первый китайский спутник для изучения Солнца (2021)",
-        "id": "mis-xihe",
-        "zh": "羲和号"
-      },
-      {
-        "gloss": "«Мо-цзы» — первый в мире спутник для квантовых экспериментов (2016)",
-        "id": "mis-mozi",
-        "zh": "墨子号"
-      },
-      {
-        "gloss": "«Бэйдоу-3» — глобальная спутниковая навигация Китая, введена в 2020 году",
-        "id": "mis-beidou",
-        "zh": "北斗三号"
-      },
-      {
-        "gloss": "«Дунфанхун-1» — первый искусственный спутник Китая (1970)",
-        "id": "mis-dongfanghong1",
-        "zh": "东方红一号"
-      }
-    ],
-    "origin": "addition",
-    "parseWarnings": [],
-    "questionRu": "Как называется китайская солнечная обсерватория, запущенная в 2022 году и названная в честь великана из мифа, который погнался за Солнцем?",
-    "questionZh": null,
-    "topic": "Экономика, образование, наука и спорт",
-    "topicSource": "authored"
-  },
-  {
-    "answer": {
       "optionId": "mis-yutu",
       "state": "verified"
     },
@@ -105206,6 +104057,184 @@
     "questionRu": "Кто первым в мире вышел в открытый космос?",
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "optionId": "mis-dongfanghong1",
+      "state": "verified"
+    },
+    "dossier": "space",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "中国第一颗人造卫星 东方红一号 — 国家航天局",
+        "url": "https://www.cnsa.gov.cn/n6758968/n6758972/c10004149/content.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "国博云端揭秘“永远的东方红” — 人民网",
+        "url": "http://bj.people.com.cn/n2/2020/0511/c82846-34009189.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "东方红一号，你想知道的都在这里 — 新华网",
+        "url": "http://www.xinhuanet.com/politics/2016-04/21/c_1118699133.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "太空奏响“东方红” — 中国航天科技集团",
+        "url": "http://zhuanti.spacechina.com/n1449297/n1449403/c1458982/content.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "听听第一颗人造卫星上的《东方红》 — 江苏省档案馆",
+        "url": "https://dajs.gov.cn/art/2022/4/27/art_39_5069.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-10-15",
+        "title": "1970年“东方红一号”成功发射 — 中国经济周刊（人民网）",
+        "url": "http://paper.people.com.cn/zgjjzk/html/2009-09/28/content_355714.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Первый искусственный спутник Китая — «Дунфанхун-1» (东方红一号). Его запустили 24 апреля 1970 года ракетой «Чанчжэн-1» с космодрома Цзюцюань, и из космоса он передавал мелодию песни «Алеет Восток». Китай стал пятой страной, которая сама создала и запустила спутник."
+    },
+    "factRow": "space/missions/mis-dongfanghong1",
+    "id": "space-q20",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "mis-dongfanghong1",
+        "zh": "东方红一号"
+      },
+      {
+        "gloss": "Чанъэ-1 — первый лунный зонд Китая, 2007",
+        "id": "mis-change1",
+        "zh": "嫦娥一号"
+      },
+      {
+        "gloss": "Чанъэ-2 — лунный зонд 2010 года, позже пролетел мимо астероида Таутатис",
+        "id": "mis-change2",
+        "zh": "嫦娥二号"
+      },
+      {
+        "gloss": "Чанъэ-3 — первая мягкая посадка Китая на Луну, 2013",
+        "id": "mis-change3",
+        "zh": "嫦娥三号"
+      },
+      {
+        "gloss": "Чанъэ-4 — первая мягкая посадка на обратной стороне Луны, 2019",
+        "id": "mis-change4",
+        "zh": "嫦娥四号"
+      },
+      {
+        "gloss": "Чанъэ-5 — первая доставка Китаем лунного грунта на Землю, 2020",
+        "id": "mis-change5",
+        "zh": "嫦娥五号"
+      },
+      {
+        "gloss": "Чанъэ-6 — первый в мире грунт с обратной стороны Луны, 2024",
+        "id": "mis-change6",
+        "zh": "嫦娥六号"
+      },
+      {
+        "gloss": "Юйту — первый китайский луноход, его доставил на Луну «Чанъэ-3» в 2013",
+        "id": "mis-yutu",
+        "zh": "玉兔号"
+      },
+      {
+        "gloss": "Юйту-2 — луноход, доставленный на обратную сторону Луны станцией «Чанъэ-4»",
+        "id": "mis-yutu2",
+        "zh": "玉兔二号"
+      },
+      {
+        "gloss": "Цюэцяо — спутник-ретранслятор у точки L2 для связи с «Чанъэ-4», 2018",
+        "id": "mis-queqiao",
+        "zh": "鹊桥"
+      },
+      {
+        "gloss": "Цюэцяо-2 — спутник-ретранслятор на орбите Луны для «Чанъэ-6», 2024",
+        "id": "mis-queqiao2",
+        "zh": "鹊桥二号"
+      },
+      {
+        "gloss": "Мэнчжоу — новый пилотируемый корабль для полётов к Луне, испытывается с 2025",
+        "id": "mis-mengzhou",
+        "zh": "梦舟"
+      },
+      {
+        "gloss": "Ланьюэ — лунный посадочный модуль для двух космонавтов, испытан в 2025",
+        "id": "mis-lanyue",
+        "zh": "揽月"
+      },
+      {
+        "gloss": "«Шэньчжоу-5» — корабль первого пилотируемого полёта Китая (2003, Ян Ливэй)",
+        "id": "mis-shenzhou5",
+        "zh": "神舟五号"
+      },
+      {
+        "gloss": "«Шэньчжоу-11» — корабль, чей экипаж месяц работал на «Тяньгун-2» (2016)",
+        "id": "mis-shenzhou11",
+        "zh": "神舟十一号"
+      },
+      {
+        "gloss": "«Тяньгун-1» — первый китайский орбитальный модуль, запущен в 2011 году",
+        "id": "mis-tiangong1",
+        "zh": "天宫一号"
+      },
+      {
+        "gloss": "«Тяньгун» — китайская орбитальная станция; базовый модуль запущен в 2021 году",
+        "id": "mis-tiangong",
+        "zh": "天宫空间站"
+      },
+      {
+        "gloss": "«Тяньвэнь-1» — первая китайская экспедиция к Марсу, запущена в 2020 году",
+        "id": "mis-tianwen1",
+        "zh": "天问一号"
+      },
+      {
+        "gloss": "«Чжужун» — первый китайский марсоход, на поверхности Марса с мая 2021 года",
+        "id": "mis-zhurong",
+        "zh": "祝融号"
+      },
+      {
+        "gloss": "«Укун» — китайский спутник для поиска тёмной материи (2015)",
+        "id": "mis-wukong",
+        "zh": "悟空"
+      },
+      {
+        "gloss": "«Сихэ» — первый китайский спутник для изучения Солнца (2021)",
+        "id": "mis-xihe",
+        "zh": "羲和号"
+      },
+      {
+        "gloss": "«Куафу-1» — китайская космическая солнечная обсерватория (2022)",
+        "id": "mis-kuafu1",
+        "zh": "夸父一号"
+      },
+      {
+        "gloss": "«Мо-цзы» — первый в мире спутник для квантовых экспериментов (2016)",
+        "id": "mis-mozi",
+        "zh": "墨子号"
+      },
+      {
+        "gloss": "«Бэйдоу-3» — глобальная спутниковая навигация Китая, введена в 2020 году",
+        "id": "mis-beidou",
+        "zh": "北斗三号"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как назывался первый искусственный спутник Китая, запущенный 24 апреля 1970 года?",
+    "questionZh": null,
+    "topic": "Экономика, образование, наука и спорт",
     "topicSource": "authored"
   }
 ]

@@ -10,8 +10,8 @@
 
 | Категория | 2015-16 | 2016-17 | 2017-18 | 2018-19 | 2019-20 | 2020-21 | 2021-22 | 2022-23 | 2023-24 | 2024-25 | 2025-26 | 2026-27 | Всего |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| География и административное устройство | 11 | 11 | 8 | 18 | 11 | 12 | 24 | 17 | 12 | 19 | 30 | 1 | 174 |
-| Россия и межкультурный блок | 0 | 0 | 0 | 5 | 7 | 9 | 8 | 21 | 33 | 22 | 37 | 1 | 143 |
+| География и административное устройство | 11 | 11 | 8 | 18 | 11 | 12 | 24 | 17 | 12 | 19 | 30 | 2 | 175 |
+| Россия и межкультурный блок | 0 | 0 | 0 | 5 | 7 | 9 | 8 | 21 | 33 | 22 | 37 | 2 | 144 |
 | Литература, язык, искусство и философия | 2 | 10 | 8 | 11 | 8 | 14 | 13 | 10 | 16 | 10 | 14 | 1 | 117 |
 | История и государство | 10 | 13 | 9 | 4 | 7 | 7 | 12 | 12 | 13 | 13 | 11 | 2 | 113 |
 | Общество: население, этносы и религии | 8 | 4 | 3 | 5 | 3 | 2 | 2 | 5 | 1 | 4 | 0 | 0 | 37 |
@@ -22,8 +22,8 @@
 
 | Категория | школьный | муниципальный | региональный | заключительный | пригласительный | Всего |
 |---|---|---|---|---|---|---|
-| География и административное устройство | 39 | 79 | 22 | 28 | 6 | 174 |
-| Россия и межкультурный блок | 24 | 75 | 23 | 18 | 3 | 143 |
+| География и административное устройство | 39 | 80 | 22 | 28 | 6 | 175 |
+| Россия и межкультурный блок | 24 | 76 | 23 | 18 | 3 | 144 |
 | Литература, язык, искусство и философия | 15 | 74 | 8 | 16 | 4 | 117 |
 | История и государство | 23 | 52 | 23 | 13 | 2 | 113 |
 | Общество: население, этносы и религии | 10 | 12 | 11 | 4 | 0 | 37 |
@@ -38,22 +38,30 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | director | другие | олимпиада |
-|---|---|---|---|
-| cin-ru-potemkin | 1 | — | прогноз |
-| cin-ru-irony-of-fate | × | 1 | прогноз |
-| cin-ru-moscow-tears | × | 1 | прогноз |
-| cin-ru-crocodile-gena | × | 1 | прогноз |
-| cin-ru-hedgehog-fog | × | 1 | прогноз |
-| cin-ru-nu-pogodi | × | 1 | прогноз |
+| строка | director | name | technique | другие | олимпиада |
+|---|---|---|---|---|---|
+| cin-cn-red-sorghum | 1 | × | × | — | прогноз |
+| cin-cn-concubine | 1 | 1 | × | — | прогноз |
+| cin-cn-crouching-tiger | 1 | 1 | × | — | прогноз |
+| cin-cn-wandering-earth | × | 1 | × | — | прогноз |
+| cin-cn-hero | × | 1 | × | — | прогноз |
+| cin-cn-danaotiangong | × | 1 | × | — | прогноз |
+| cin-cn-xiaokedouzhaomama | × | × | 1 | — | прогноз |
+| cin-cn-huluxiongdi | × | × | 1 | — | прогноз |
+| cin-cn-nezhamotongjiangshi | × | 1 | × | — | прогноз |
+| cin-cn-fengyun-ernv | × | 1 | × | — | прогноз |
+| cin-ru-potemkin | 1 | × | × | — | прогноз |
+| cin-ru-irony-of-fate | × | 1 | × | — | прогноз |
+| cin-ru-moscow-tears | × | 1 | × | — | прогноз |
+| cin-ru-crocodile-gena | × | 1 | × | — | прогноз |
+| cin-ru-hedgehog-fog | × | 1 | × | — | прогноз |
+| cin-ru-nu-pogodi | × | 1 | × | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
 - нет
-
-Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 19.
 
 ### Ремёсла и народные искусства (`crafts`)
 
@@ -744,28 +752,54 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | city | denomination | другие | олимпиада |
-|---|---|---|---|---|
-| rub-5-1997 | 1 | — | — | прогноз |
-| rub-10-1997 | 1 | — | — | прогноз |
-| rub-50-1997 | — | — | — | да |
-| rub-100-1997 | — | 1 | — | да |
-| rub-100-2022 | 1 | — | — | да |
-| rub-200-2017 | 1 | — | — | да |
-| rub-500-1997 | 1 | — | — | да |
-| rub-1000-1997 | 1 | — | — | прогноз |
-| rub-1000-2025 | 1 | — | — | прогноз |
-| rub-2000-2017 | × | — | — | прогноз |
-| rub-5000-1997 | 1 | — | — | прогноз |
-| rub-5000-2023 | 1 | — | — | прогноз |
+| строка | city | denomination | back | другие | олимпиада |
+|---|---|---|---|---|---|
+| cny-1 | × | — | 1 | — | прогноз |
+| cny-5 | × | — | 1 | — | прогноз |
+| cny-10 | × | — | 1 | — | прогноз |
+| cny-20 | × | — | 1 | — | прогноз |
+| cny-50 | × | — | 1 | — | прогноз |
+| cny-100 | × | — | 1 | — | прогноз |
+| rub-5-1997 | 1 | — | × | — | прогноз |
+| rub-10-1997 | 1 | — | × | — | прогноз |
+| rub-50-1997 | — | — | × | — | да |
+| rub-100-1997 | — | 1 | × | — | да |
+| rub-100-2022 | 1 | — | × | — | да |
+| rub-200-2017 | 1 | — | × | — | да |
+| rub-500-1997 | 1 | — | × | — | да |
+| rub-1000-1997 | 1 | — | × | — | прогноз |
+| rub-1000-2025 | 1 | — | × | — | прогноз |
+| rub-2000-2017 | × | — | × | — | прогноз |
+| rub-5000-1997 | 1 | — | × | — | прогноз |
+| rub-5000-2023 | 1 | — | × | — | прогноз |
+
+#### Таблица `history`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| beibi | 1 | — | прогноз |
+| bubi | 1 | — | прогноз |
+| daobi | — | — | прогноз |
+| qin-banliang | 1 | — | прогноз |
+| wuzhu | 1 | — | прогноз |
+| jiaozi | 1 | — | прогноз |
+
+#### Таблица `customs`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| hongbao | 1 | — | прогноз |
+| yasuiqian | — | — | прогноз |
 
 #### Вопросы о строках вне ядра
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
 - нет
-
-Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 7.
 
 ### Мифы и легенды (`myths`)
 
@@ -796,12 +830,26 @@
 | fig-ru-snegurochka | 1 | — | прогноз |
 | fig-ru-zhar-ptitsa | 1 | — | прогноз |
 
+#### Таблица `stories`
+
+`—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
+
+| строка | name | другие | олимпиада |
+|---|---|---|---|
+| story-pangu-kaitian | 1 | — | да |
+| story-nuwa-zaoren | 1 | — | да |
+| story-dayu-zhishui | 1 | — | прогноз |
+| story-niulang-zhinv | 1 | — | прогноз |
+| story-liangzhu | 1 | — | да |
+| story-baishezhuan | — | — | да |
+
 #### Вопросы о строках вне ядра
 
 Кандидаты на перебор: встроить в ядро, переделать или снять в архив.
 
 - myths-q15 — Какую богиню «Каталог гор и морей» называет матерью десяти солнц и женой верховного бога Дицзюня?
 - myths-q16 — Кого, по преданию, за провинность во время обучения бессмертию сослали на Луну рубить коричное дерево, которое тут же срастается?
+- myths-q30 — Какое из этих сказаний не входит в четыре великие народные легенды Китая?
 
 ### Природа и инженерия (`nature`)
 
@@ -1195,10 +1243,17 @@
 
 `—` — сторона пуста, `×` — к строке не относится (нет ячейки или автор снял её в `skipSides`).
 
-| строка | year | другие | олимпиада |
-|---|---|---|---|
-| mis-sputnik1 | 1 | — | да |
-| mis-mir | × | 1 | прогноз |
+| строка | year | name | namesake | другие | олимпиада |
+|---|---|---|---|---|---|
+| mis-change4 | × | 1 | × | — | прогноз |
+| mis-yutu | × | × | 1 | — | прогноз |
+| mis-queqiao | × | × | 1 | — | прогноз |
+| mis-shenzhou5 | × | 1 | × | — | да |
+| mis-tiangong | × | — | × | — | прогноз |
+| mis-zhurong | × | × | 1 | — | прогноз |
+| mis-dongfanghong1 | × | 1 | × | — | прогноз |
+| mis-sputnik1 | 1 | × | × | — | да |
+| mis-mir | × | 1 | × | — | прогноз |
 
 #### Таблица `people`
 
@@ -1221,14 +1276,21 @@
 
 - нет
 
-Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 7.
-
 ## Связи
 
 ### Строки ядра без связей — изолированные узлы
 
 Строки ядра без ссылок наружу и на себя.
 
+- cinema/works/cin-cn-concubine
+- cinema/works/cin-cn-crouching-tiger
+- cinema/works/cin-cn-fengyun-ernv
+- cinema/works/cin-cn-hero
+- cinema/works/cin-cn-huluxiongdi
+- cinema/works/cin-cn-nezhamotongjiangshi
+- cinema/works/cin-cn-red-sorghum
+- cinema/works/cin-cn-wandering-earth
+- cinema/works/cin-cn-xiaokedouzhaomama
 - cinema/works/cin-ru-crocodile-gena
 - cinema/works/cin-ru-hedgehog-fog
 - cinema/works/cin-ru-irony-of-fate
@@ -1356,6 +1418,10 @@
 - modern-history/figures/per-ru-zhukov
 - modern-history/treaties/tr-ru-aihui
 - modern-history/treaties/tr-ru-nerchinsk
+- money/banknotes/cny-10
+- money/banknotes/cny-100
+- money/banknotes/cny-20
+- money/banknotes/cny-50
 - money/banknotes/rub-10-1997
 - money/banknotes/rub-100-1997
 - money/banknotes/rub-100-2022
@@ -1367,6 +1433,12 @@
 - money/banknotes/rub-500-1997
 - money/banknotes/rub-5000-1997
 - money/banknotes/rub-5000-2023
+- money/history/beibi
+- money/history/bubi
+- money/history/daobi
+- money/history/jiaozi
+- money/history/qin-banliang
+- money/history/wuzhu
 - myths/figures/fig-bainiangzi
 - myths/figures/fig-cangjie
 - myths/figures/fig-fuxi
@@ -1383,6 +1455,11 @@
 - myths/figures/fig-ru-zhar-ptitsa
 - myths/figures/fig-shennong
 - myths/figures/fig-zhinv
+- myths/stories/story-baishezhuan
+- myths/stories/story-dayu-zhishui
+- myths/stories/story-liangzhu
+- myths/stories/story-nuwa-zaoren
+- myths/stories/story-pangu-kaitian
 - nature/engineering/eng-gangzhuao
 - nature/engineering/eng-nanshuibeidiao
 - nature/engineering/eng-qingzang-railway
@@ -1452,8 +1529,10 @@
 - provinces/cities/city-ru-yekaterinburg
 - provinces/provinces/prov-aomen
 - provinces/provinces/prov-ningxia
+- space/missions/mis-dongfanghong1
 - space/missions/mis-mir
 - space/missions/mis-sputnik1
+- space/missions/mis-tiangong
 - space/people/ppl-korolev
 - space/people/ppl-liuyang
 - space/people/ppl-tsiolkovsky
@@ -1461,8 +1540,7 @@
 
 ### Ссылка из ядра ведёт в тему без каркаса
 
-- holidays/holidays/hol-qixi → myths/stories/story-niulang-zhinv
-- holidays/holidays/hol-zhongqiu → myths/stories/story-change-benyue
+- нет
 
 ### Ссылка из ядра ведёт в строку вне ядра
 
@@ -1501,6 +1579,7 @@
 - holidays/figures/fig-jiezitui → holidays/holidays/hol-hanshi
 - holidays/holidays/hol-huoba → ethnos/peoples/ppl-cn-yi
 - holidays/holidays/hol-jianjun → modern-history/events/ev-nanchang
+- holidays/holidays/hol-zhongqiu → myths/stories/story-change-benyue
 - literature/authors/lit-a-ru-bunin → literature/works/lit-w-ru-arsenyev
 - literature/authors/lit-a-ru-lermontov → literature/works/lit-w-ru-demon
 - literature/works/lit-w-ru-gulag → literature/authors/lit-a-ru-solzhenitsyn
@@ -1521,7 +1600,8 @@
 - provinces/provinces/prov-shandong → nature/mountains/mtn-taihang
 - provinces/provinces/prov-shanxi → nature/mountains/mtn-taihang
 - provinces/provinces/prov-zhejiang → nature/waters/wat-qiantangjiang
+- space/missions/mis-yutu → myths/figures/fig-yutu
+- space/missions/mis-zhurong → myths/figures/fig-zhurong
 - space/people/ppl-gagarin → space/missions/mis-vostok1
 - space/people/ppl-leonov → space/missions/mis-voskhod2
 - space/people/ppl-tereshkova → space/missions/mis-vostok6
-- space/people/ppl-yangliwei → space/missions/mis-shenzhou5
