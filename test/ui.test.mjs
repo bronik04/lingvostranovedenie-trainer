@@ -559,9 +559,10 @@ test('вспомни сам: подсказка показывает вариа�
   await pickFormat(page, 'Вспомни сам');
   await startRound(page, 5);
   await page.locator('#showHint').click();
-  assert.equal(await page.locator('#options button').count(), 4);
-  assert.match(await page.locator('#recallNote').textContent(), /«вспомнил неточно»/);
   const record = await currentRecord(page, bank);
+  // в банке есть задания с тремя вариантами
+  assert.equal(await page.locator('#options button').count(), Math.min(4, record.options.length));
+  assert.match(await page.locator('#recallNote').textContent(), /«вспомнил неточно»/);
   await answer(page, record, true);
   const progress = await page.evaluate(() => JSON.parse(localStorage.getItem('lingvo-trainer:v1')).progress);
   assert.equal(progress[record.id].box, 3, 'с подсказкой коробка не растёт');
@@ -657,7 +658,8 @@ test('уход из раунда посреди стадии не оставля
   await page.keyboard.press('Escape');
   await pickFormat(page, 'Выбор ответа');
   await startRound(page, 5);
-  assert.equal(await page.locator('#options button').count(), 4);
+  const record = await currentRecord(page, await bankOf(page));
+  assert.equal(await page.locator('#options button').count(), Math.min(4, record.options.length));
   for (const id of ['#recallPrompt', '#recallRate', '#recallNote', '#feedback']) {
     assert.equal(await page.locator(id).isVisible(), false, id);
   }
@@ -895,6 +897,50 @@ test('фильтр «Откуда вопросы» и пиньинь: раунд
   await page.reload();
   assert.equal(await page.evaluate(() => document.documentElement.dataset.pinyin), 'on', 'настройка пережила перезагрузку');
   assert.equal(await page.locator('input[name="studyOrigin"][value="addition"]').isChecked(), true);
+  assert.deepEqual(page.errors, []);
+});
+
+test('китайский текст вопроса: скрыт по умолчанию, открывается кнопкой для одного вопроса и настройкой в шапке', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  assert.equal(await page.locator('#questionZhToggle').getAttribute('aria-pressed'), 'false');
+  await page.evaluate(() => {
+    const [withZh, other] = QUESTION_BANK.filter((r) => r.questionZh);
+    startRoundWith([withZh, other, QUESTION_BANK.find((r) => !r.questionZh)], 'choice');
+  });
+  await page.locator('#quizView').waitFor();
+  const zh = page.locator('#questionZh');
+  const reveal = page.locator('#questionZhReveal');
+  assert.equal(await zh.isVisible(), false);
+  // кнопка открывает текст только у этого вопроса
+  await reveal.click();
+  assert.equal(await zh.isVisible(), true);
+  assert.equal(await reveal.isVisible(), false);
+  assert.equal(await page.evaluate(() => document.activeElement.id), 'questionZh', 'фокус не теряется');
+  await page.locator('#options button').first().click();
+  await page.locator('#nextButton').click();
+  assert.equal(await zh.isVisible(), false, 'у следующего вопроса текст снова скрыт');
+  assert.equal(await reveal.isVisible(), true);
+  // настройка в шапке показывает его у всех вопросов
+  await page.locator('#questionZhToggle').click();
+  assert.equal(await zh.isVisible(), true);
+  assert.equal(await reveal.isVisible(), false);
+  // у вопроса без китайского текста нет ни текста, ни кнопки
+  await page.locator('#options button').first().click();
+  await page.locator('#nextButton').click();
+  assert.equal(await zh.isVisible(), false);
+  assert.equal(await reveal.isVisible(), false);
+  // настройка переживает перезагрузку и действует в «Вопросах в базе»
+  await page.reload();
+  assert.equal(await page.evaluate(() => document.documentElement.dataset.questionZh), 'on');
+  assert.equal(await page.locator('#questionZhToggle').getAttribute('aria-pressed'), 'true');
+  assert.equal(await page.locator('#questionZhLabel').textContent(), 'Вопрос 中文: вкл');
+  await page.locator('#navDatabase').click();
+  const rowZh = page.locator('.row-zh-question').first();
+  await rowZh.waitFor();
+  assert.equal(await rowZh.isVisible(), true);
+  await page.locator('#questionZhToggle').click();
+  assert.equal(await rowZh.isVisible(), false);
   assert.deepEqual(page.errors, []);
 });
 
