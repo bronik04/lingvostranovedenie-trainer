@@ -1059,7 +1059,7 @@ class DossierInBankTest(unittest.TestCase):
         self.assertEqual(names, {'money.json', 'myths.json', 'space.json', 'holidays.json', 'dynasties.json',
                                  'ethnos.json', 'provinces.json', 'landmarks.json', 'literature.json',
                                  'modern-history.json', 'nature.json', 'crafts.json', 'painting.json', 'cuisine.json',
-                                 'cinema.json', 'people.json'})
+                                 'cinema.json', 'people.json', 'sets.json'})
 
     def test_olympiad_links_point_to_bank_questions(self):
         # олимпиадный вопрос мог быть влит склейкой в другой — его id тогда в mergedIds
