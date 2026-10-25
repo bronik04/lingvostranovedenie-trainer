@@ -1,0 +1,4694 @@
+[
+ {
+  "id": "2016-17-mun-spb-3",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "beijing-tianjin-municipality",
+    "note": "Уже в группе с 2015-16-reg-1, provinces-q98 и 2025-26-mun-chel-6 (тот же вопрос «что не город центрального подчинения», другой ответ — склеивать нельзя)."
+   },
+   {
+    "kind": "embed",
+    "target": "provinces/cities/city-guangzhou",
+    "ask": "name",
+    "note": "Можно встроить как отрицательный вопрос (как provinces-q11): where country 中国, exclude все строки, кроме city-beijing/tianjin/shanghai/chongqing — иначе любой неподчинённый город стал бы вторым ответом. Добавятся 北京 и 上海 и подписи; утечек по досье нет."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2016-17-mun-yar-5",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "nature/mountains/mtn-ximalaya",
+    "ask": "name",
+    "note": "Ответ — строка Гималаев (feature 世界海拔最高的山脉). where country 中国, kind 山脉 даёт 昆仑山/天山/秦岭/太行山 — второго ответа нет; утечек нет. Вариант бланка 喜马拉雅山 (без 脉) остаётся как есть."
+   },
+   {
+    "kind": "fact-group",
+    "target": "everest-highest",
+    "note": "Китайская формулировка «中国最高的山是哪座山» почти совпадает с nature-q144 («высочайшая гора» → 珠穆朗玛峰, группа everest-highest): разные ответы на близкий вопрос, раунд не должен ставить их рядом."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2018-19-mun-lenobl-49",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "landmarks/sites/lm-cn-oriental-pearl",
+    "ask": "city",
+    "note": "Строка ядра есть, вопроса о ней нет. ask city, where country 中国, exclude lm-cn-bund (тоже 上海 — второй верный). НО сборка найдёт утечки: иероглиф 明 в «东方明珠» — ответ landmarks-q90/q92 (группа ming-beijing-word), а текст provinces-q19 (2018-19-shk-10, «сокращённое название Шанхая», группа shanghai-word) называет 上海. Запись может быть только в одной группе, так что встраивание возможно лишь при слиянии этих двух групп."
+   },
+   {
+    "kind": "fact-group",
+    "target": "shanghai-word",
+    "note": "Ответ 上海 назван словом в тексте 2018-19-shk-10 (provinces-q19); тот же ответ у landmarks-q100 (Вайтань). Даже без встраивания — в группу shanghai-word."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "geo"
+ },
+ {
+  "id": "2018-19-mun-lenobl-52",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2020-21-mun-mosobl-47",
+    "note": "Верный вариант («哈尔滨、牡丹江…») подсказывает ответ вопроса о центре Хэйлунцзяна (哈尔滨) и наоборот: вопрос mosobl-47 называет Харбин городом Хэйлунцзяна."
+   },
+   {
+    "kind": "narrow",
+    "target": null,
+    "note": "Варианты — списки местных городов (Муданьцзян, Цзямусы, Суйфэньхэ); решается только по Харбину, остальное — краеведение. Только пометка для автора. Встроить нельзя: варианты — списки."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2018-19-mun-vrn-6",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "nature/waters/wat-huanghe",
+    "ask": "name",
+    "note": "ask name, where country 中国, kind 河流 (как nature-q137). Строка: Хуанхэ — вторая по длине, 5464 км. Нужна группа province-names-river-lake: текст provinces-q03 (2018-19-mun-55) называет «Хуанхэ»."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2018-19-shk-5",
+    "note": "Тот же факт с обратной стороны: 2018-19-shk-5 «Хуанхэ… какое место по длине?» → 第二大河. Её текст называет ответ vrn-6. Удобно положить обе в province-names-river-lake."
+   },
+   {
+    "kind": "conflict",
+    "target": "nature/waters/wat-zhujiang",
+    "note": "Ключ верный, но формулировка двусмысленна: «вторая по величине» — по водности вторая Чжуцзян (about wat-zhujiang: «по водности — вторая река страны после Янцзы»), а она есть среди вариантов. Китайское 第二大河 по традиции — Хуанхэ. Предложение: в editorial.json «вторая по длине»."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2019-20-mun-khab-1",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/provinces/prov-anhui",
+    "ask": "capital",
+    "note": "ask capital (как provinces-q33…q38). Все варианты бланка есть в колонке capital, второго ответа нет, утечек нет. О центре Аньхоя в досье вопроса нет — не дубль."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2019-20-mun-khab-7",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/provinces/prov-jiangxi",
+    "ask": "name",
+    "given": "abbr",
+    "note": "ask name, given abbr, where kind 省 (как provinces-q42 о 豫). Все варианты бланка — ячейки name. Утечек нет: текст ethnos-q88 («Цзянси (江西)») связан мостиком через строку диалекта. О 赣 в досье вопроса нет."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2019-20-mun-lip-1",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2023-24-mun-mosobl-4",
+    "note": "Тот же факт с другой стороны: в 2023-24-mun-mosobl-4 («что не на северо-востоке» → 河北) варианты 黑龙江/辽宁/吉林 раскрывают ответ lip-1, и наоборот. Текст provinces-q35 называет Ляонин провинцией «на юге Северо-Востока» — слабая подсказка."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Встроить нельзя: варианты — списки, колонки «район» (东北/华北…) в таблице provinces нет."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2019-20-shk-mosobl-51",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "yangtze-longest-river",
+    "note": "Ответ «长江与黄河» раскрывает 2015-16-reg-2 (самая длинная — 长江, группа yangtze-longest-river) и вместе с ним 2018-19-mun-vrn-6 / 2018-19-shk-5 (Хуанхэ вторая). Связанный факт: 2023-24-zak-1 (Чжуцзян — третья по длине)."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Встроить нельзя: варианты — пары рек. Факты сходятся со строками wat-changjiang и wat-huanghe."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2020-21-mun-lenobl-2",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "nature/waters/wat-dayunhe",
+    "ask": "name",
+    "note": "ask name, where kind 运河 → в наборе 灵渠 (уже есть в бланке) и 伏尔加河-顿河运河; второго ответа нет, выигрыш — в основном подписи. Утечки: текст nature-q70 (группа great-wall-word) и dynasties-q06 (2018-19-zak-10, без группы) называют «Великий канал». Решение: lenobl-2 и 2018-19-zak-10 добавить в great-wall-word."
+   },
+   {
+    "kind": "fact-group",
+    "target": "great-wall-word",
+    "note": "Нужна для встраивания (см. выше); и без встраивания 2018-19-zak-10 («при какой династии построен Великий канал») называет ответ словом."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2020-21-mun-mosobl-47",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/provinces/prov-heilongjiang",
+    "ask": "capital",
+    "note": "ask capital. Набор capital — второго ответа нет (厦门 из бланка — не центр, остаётся вариантом бланка). Утечек нет: «黑龙江» в тексте — та же строка (provinces-q05) или мостик к реке (nature-q105)."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2018-19-mun-lenobl-52",
+    "note": "Взаимная подсказка: верный вариант lenobl-52 называет Харбин городом Хэйлунцзяна."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2020-21-mun-mosobl-51",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "nature/mountains/mtn-changbai",
+    "ask": "name",
+    "note": "Тот же факт, что у nature-q46 (Чанбайшань — спящий вулкан с озером Тяньчи в кратере). Встраивание в ту же строку (ask name, where country 中国, как nature-q46) лучше группы: стороны одной строки не утечка, раунд разводит их по factRow. Второго ответа в наборе гор нет, утечек нет."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2020-21-mun-mosobl-55",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "landmarks/sites/lm-cn-gulangyu",
+    "note": "Гуланъюй есть только ячейкой known у city-xiamen; встраивать через known нельзя: колонка разнотипная (趵突泉, 中山陵, 大熊猫…), а вопрос спрашивает остров. Завести строку sites 鼓浪屿 (city 厦门, unesco 世界文化遗产 с 2017 г.) — тогда ask name, where country 中国; 太阳岛 из бланка уже строка sites."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Факт известный (объект ЮНЕСКО), не узкий; длинная вводная с площадью 1516 км² — лишняя деталь, но ответа не меняет."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "geo"
+ },
+ {
+  "id": "2020-21-mun-novg-9",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "ming-beijing-word",
+    "note": "Тот же факт с другой стороны, что 2016-17-mun-8 («как называется императорский дворец Мин и Цин в Пекине» → 故宫); её текст называет «Пекин» — ответ novg-9. 2016-17-mun-8 уже в ming-beijing-word — туда же."
+   },
+   {
+    "kind": "ok",
+    "target": "landmarks/palaces/lm-cn-beijing-gugong",
+    "note": "Встраивать не советую: формулировка размыта («императорский дворец» без «Мин и Цин»/«Гугун»), а набор city из palaces даёт вторые верные ответы — 沈阳 (Мукденский 故宫), 长春 (伪满皇宫), 南京, 西安 (дворцы Тан/Хань), 承德; пришлось бы исключать почти всё. Утечки: dynasties-q02, ethnos-q83 называют 北京."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "geo"
+ },
+ {
+  "id": "2021-22-mun-amur-2",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/provinces/prov-sichuan",
+    "ask": "name",
+    "note": "ask name, where kind 省, exclude prov-shaanxi и prov-gansu (дикие панды и питомники есть и там — вторые ответы). С ask full сборка найдёт утечки: nature-q11 (2018-19-reg-4, группа buddhist-four-mountains) и provinces-q25 (2024-25-shk-34, группа crafts-shu-chengdu) называют Сычуань, а двух групп у записи быть не может. С ask name обе связаны мостиком (проверено). Минус: варианты бланка с 省, набор — без."
+   },
+   {
+    "kind": "fact-group",
+    "target": null,
+    "note": "Текст «разводят панд» называет ответ 熊猫 у 2024-25-mun-bash-2, 2022-23-mun-kam-6 и 2017-18-zak-5 (вне досье). Если автор оставляет все — общая группа «панда»."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2021-22-mun-amur-3",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/provinces/prov-hunan",
+    "ask": "full",
+    "note": "ask full, where kind 省 (варианты бланка с 省). Утечка: текст называет «Мао Цзэдун» — ответ modern-history-q113; amur-3 нужно добавить в группу prc-founding-1949. Альтернатива — modern-history/figures/per-maozedong ask born (ячейка 湖南), но колонка born — не сторона таблицы (места рождения автор снимал как узкие)."
+   },
+   {
+    "kind": "fact-group",
+    "target": "nature-q157",
+    "note": "Вторая половина вопроса — тот же факт, что nature-q157 (Улинъюань с Чжанцзяцзе → 湖南). Для сборки это мостик (строка sc-wulingyuan ссылается на prov-hunan), но рядом в раунде они подсказывают друг другу. Группа одна, и сборке нужна prc-founding-1949."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2021-22-mun-amur-4",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2022-23-shk-mosobl-5",
+    "note": "Тот же факт с обратной стороны: варианты 2022-23-shk-mosobl-5 («с какими регионами граничит РФ» → 内蒙古、新疆、黑龙江、吉林) сразу дают ответ amur-4."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Ключ сходится с досье (about prov-xinjiang: граничит в том числе с Россией). Колонки «граница» в provinces нет — встроить нельзя. Ошибка бланка в варианте: 新疆维吾尔族自治区 — официально 新疆维吾尔自治区 (без 族); править через editorial.json."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2021-22-mun-lenobl-6",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2022-23-mun-1",
+    "note": "Пара о климатических поясах: 2022-23-mun-1 («большая часть Китая» → 温带) с тем же набором вариантов. Рядом они решаются отсевом."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Досье по климату нет. Посылка упрощена: юг Китая в основном субтропический (亚热带), тропики — крайний юг; 亚热带 среди вариантов нет, так что ключ 热带 лучший из данных."
+   }
+  ],
+  "dossier": null,
+  "part": "geo"
+ },
+ {
+  "id": "2021-22-mun-mosobl-54",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/cities/city-suzhou",
+    "ask": "name",
+    "note": "ask name, where country 中国, exclude Russian rows (как provinces-q20). «Китайской Венеции» в ячейках нет (nickname — 园林之城), но второго ответа в наборе городов нет. Утечка: текст landmarks-q23 («классических садов Сучжоу») называет ответ — нужна новая группа landmarks-q23 + mosobl-54 (у landmarks-q23 группы нет)."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2021-22-mun-mosobl-59",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "nature/mountains/mtn-huangshan",
+    "ask": "name",
+    "note": "ask name, where country 中国 (как nature-q51 «четыре чуда — сосны…»). Та же строка, что nature-q51/q147, — не утечка. Утечки: cuisine-q89 и cuisine-q96 называют «黄山毛峰»; они в группе huangshan-maofeng — mosobl-59 добавить туда же."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2021-22-mun-omsk-3",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "tiananmen-square",
+    "note": "Уже в группе с 2023-24-mun-kem-8 и 2024-25-mun-bash-9."
+   },
+   {
+    "kind": "embed-missing-row",
+    "target": "landmarks/sites/lm-cn-tiananmen",
+    "note": "Тяньаньмэнь (ворота и площадь) — ядро любой темы о Пекине, но строки в landmarks нет; о нём спрашивают ещё 2015-16-mun-6, 2018-19-mun-spb-7, 2024-25-mun-mosobl-1. Завести строку 天安门 (city 北京, era 明): omsk-3 — ask city (exclude другие пекинские строки), kem-8/bash-9 — ask name. Предупреждение: текст dynasties-q02 (2015-16-mun-6, группа ming-beijing-word) называет «Тяньаньмэнь» — понадобится слить группы tiananmen-square и ming-beijing-word."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "geo"
+ },
+ {
+  "id": "2021-22-mun-volog-1",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/cities/city-beijing",
+    "ask": "name",
+    "note": "ask name, where country 中国, exclude Russian rows (как provinces-q30 — та же строка). Второго ответа нет, утечек по досье нет (проверено)."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2023-24-mun-kem-8",
+    "note": "Текст kem-8 («в центре Пекина – столицы КНР») прямо называет ответ volog-1. kem-8 в группе tiananmen-square — volog-1 добавить туда же."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2021-22-mun-volog-9",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Ключ 23 сходится с досье: в таблице provinces 23 строки kind 省, включая Тайвань. Счётный вопрос — встроить нельзя. Соседи-«счёт»: 2015-16-mun-3 (5 автономных районов), 2025-26-mun-8 (4 города центрального подчинения), 2022-23-shk-q637921 (2 САР) — разные факты, не дубли."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2022-23-mun-amur-4",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "nature-q27",
+    "note": "Текст прямо называет ответ nature-q27 («самая длинная внутренняя река Китая» → 塔里木河): «самая длинная внутренняя река в Китае Тарим». Сборка этого не поймает (ru строки «река Тарим» в тексте не подряд), но для ученика это готовый ответ. У nature-q27 группы нет — можно положить обе в xinjiang-word."
+   },
+   {
+    "kind": "embed",
+    "target": "provinces/provinces/prov-xinjiang",
+    "ask": "full",
+    "note": "В waters нет колонки province, поэтому только через строку региона: ask full, where kind 自治区 (内蒙古/广西/西藏/宁夏 — Тарим только в Синьцзяне); та же строка, что provinces-q17/q96. Утечек по досье нет. Ошибка бланка: 新疆维吾尔族自治区 → 新疆维吾尔自治区 (editorial)."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2022-23-mun-kam-10",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "nature/waters/wat-changjiang",
+    "ask": "name",
+    "note": "По сути тот же факт, что nature-q140 («золотой водный путь» 黄金水道 → 长江), но формулировка другая — не склейка. Встроить в ту же строку (ask name, where country 中国, kind 河流, как nature-q01): стороны одной строки не утечка. Второго ответа нет, утечек нет."
+   },
+   {
+    "kind": "fact-group",
+    "target": "yangtze-longest-river",
+    "note": "Для порядка: 2025-26-reg-10 в этой группе называет «Янцзы» (вне досье) — kam-10 добавить в группу."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2022-23-mun-kam-7",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Сходится с досье: в таблице seas четыре китайских моря (渤海, 黄海, 东海, 南海). Счётный вопрос — встроить нельзя. Связаны, но не дубли: 2025-26-mun-6 (какое море омывает → 黄海), 2024-25-mun-34 (океан)."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2022-23-mun-krsk-4",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/provinces/prov-shaanxi",
+    "ask": "name",
+    "note": "ask name, where kind 省 (варианты бланка без 省). В landmarks колонки «провинция» нет (у Терракотовой армии city 西安). Утечки: текст называет «Цинь Шихуан» — ответ dynasties-q09 (2015-16-shk-59), dynasties-q10 (2019-20-mun-qe6c5d3), dynasties-q116 (у всех трёх группы нет), а текст provinces-q03 (2018-19-mun-55, группа province-names-river-lake) называет «провинция Шэньси». Встраивание возможно, только если все они войдут в province-names-river-lake (группа сильно разрастётся) — решает автор."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2016-17-shk-4",
+    "note": "Связанный факт: 2016-17-shk-4 (Терракотовая армия → 西安, Сиань в Шэньси) и 2023-24-reg-4 (Терракотовая армия — часть комплекса гробницы Цинь Шихуана). Взаимные подсказки по сути."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2022-23-mun-lenobl-59",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "nature/waters/wat-ru-lena",
+    "ask": "name",
+    "note": "ask name, where country 俄罗斯, kind 河流, exclude wat-ru-yenisei и wat-ru-ob: по about строк Енисей от истока Селенги — 5539 км, Обь от Катуни — 4315 км (с Иртышом система длиннее Лены); без исключений будет второй верный ответ. Останутся 伏尔加河, 额尔齐斯河 (4248 < 4400), 安加拉河. Та же строка, что nature-q127, утечек нет."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Ключ сходится с досье: Лена 4400–4420 км — длиннее Волги (3530), Оби (3650) и Енисея (3487 по РГО). «Самая длинная река России» верно только для отдельной реки, не для речной системы."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2022-23-shk-mosobl-18",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "nature-q35",
+    "note": "Текст называет «Бохайский залив» — ответ nature-q35 («самое большое внутреннее море» → 渤海) и 2018-19-mun-52 (nature-q06, куда впадает Хуанхэ → 渤海). Вне досье это только подсказка словом; если автор оставляет — группа."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Встроить нельзя: варианты — списки регионов, у sea-bohai нет колонки province. Ключ сходится с about sea-bohai (между Ляодунским и Шаньдунским полуостровами)."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2022-23-shk-mosobl-2",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/provinces/prov-fujian",
+    "ask": "name",
+    "given": "capital",
+    "note": "ask name, given capital, where kind 省 (как provinces-q34). 广州 из бланка — не провинция, остаётся вариантом бланка. Утечек нет: ethnos-q87 («Фуцзянь (福建)») связан мостиком. О центре Фуцзяни как обратном вопросе в досье ничего нет — не дубль."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2022-23-shk-mosobl-5",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2021-22-mun-amur-4",
+    "note": "Тот же факт: верный вариант раскрывает ответ amur-4 (не граничит с РФ → 辽宁)."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Встроить нельзя: варианты — списки, колонки «граница» в provinces нет. Ключ сходится с about prov-xinjiang (граничит с Россией)."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2023-24-mun-kem-8",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "tiananmen-square",
+    "note": "Уже в группе с omsk-3 и bash-9. Сюда же 2021-22-mun-volog-1: текст «Пекина – столицы КНР» — готовый ответ на вопрос о столице Китая."
+   },
+   {
+    "kind": "embed-missing-row",
+    "target": "landmarks/sites/lm-cn-tiananmen",
+    "note": "Нет строки 天安门 (см. omsk-3); после неё — ask name, where city 北京. Посылка сомнительна: «до XX века крупнейшая в мире площадь» — площадь расширили до нынешних размеров в 1950-х, до XX века это была Т-образная дворцовая площадь; стоит проверить по источнику или снять оборот в editorial.json."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "geo"
+ },
+ {
+  "id": "2023-24-mun-komi-4",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "nature/waters/wat-huanghe",
+    "ask": "name",
+    "note": "ask name, where country 中国, kind 河流. Прозвища «река тысячи бедствий» в ячейках нет (nickname — 母亲河), но второго ответа в наборе нет. Утечка: provinces-q03 (2018-19-mun-55) называет «Хуанхэ» — komi-4 добавить в province-names-river-lake. Заодно можно встроить 2017-18-shk-9 («мать-река» → 黄河, вне порции): ask name, given nickname."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2017-18-shk-9",
+    "note": "Два прозвища одной реки (мать-река / река бедствий). При встраивании обеих в wat-huanghe это одна строка, отдельная группа не нужна."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2023-24-mun-mosobl-4",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2019-20-mun-lip-1",
+    "note": "Обратная сторона «трёх северо-восточных провинций» — взаимная подсказка через варианты."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Колонки «район» в provinces нет — встроить нельзя."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2023-24-mun-spb-8",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "modern-history/events/ev-ru-russojapanese",
+    "ask": "place",
+    "note": "Ячейка place = 旅顺 есть у строки «Русско-японская война». ask place без where: набор 虎门, 金田村, 武昌, 北京, 上海, 广州, 南昌, 遵义, 沈阳, 西安, 南京, 圣彼得堡, 彼得格勒 — Порт-Артуром не был ни один, утечек нет. Минус: подписи будут о событиях (Хумэнь — уничтожение опиума…), а вопрос о названии города; ценность умеренная."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Не узко: Порт-Артур знаменит в истории России. Близкий, но другой факт: 2025-26-mun-kgd-58 (Дальний → 大连); сейчас Люйшунь — район Даляня."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "geo"
+ },
+ {
+  "id": "2024-25-mun-bash-2",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": null,
+    "note": "Тот же ответ 熊猫 у 2022-23-mun-kam-6 (символ Китая) и 2017-18-zak-5 (талисман Олимпиады); текст 2021-22-mun-amur-2 («разводят панд») называет ответ. Если автор оставляет все — общая группа «панда»."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Досье с животными нет (только ячейка known 大熊猫 у city-chengdu). Вопрос тривиален: среди домашних животных одно дикое."
+   }
+  ],
+  "dossier": null,
+  "part": "geo"
+ },
+ {
+  "id": "2024-25-mun-bash-9",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "tiananmen-square",
+    "note": "Уже в группе. Текст называет «Гугун» — ответ 2016-17-mun-8 (группа ming-beijing-word): нужна ещё одна группа, а запись может быть только в одной."
+   },
+   {
+    "kind": "embed-missing-row",
+    "target": "landmarks/sites/lm-cn-tiananmen",
+    "note": "После строки 天安门 — ask name, where city 北京 (故宫 из той же колонки — сначала проверить, что текст «Гугун» не называет ответ другого вопроса о Гугуне: landmarks-q90/q102 — его строка). Посылка грубовата: главный вход в Гугун — ворота Умэнь, площадь лежит южнее ворот Тяньаньмэнь."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "geo"
+ },
+ {
+  "id": "2024-25-mun-kem-4",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Колонки «выход к морю» в provinces нет — встроить нельзя. Дублей нет; тот же ответ 贵州 у 2025-26-mun-novg-3 — другой факт."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2024-25-mun-kursk-2",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "provinces/cities/city-beijing",
+    "note": "Строка есть, но нет ячейки nickname 燕京 — в about city-beijing это прозвище уже названо, источник с цитатой («北京又被称作燕京») есть. После неё — ask nickname, where country 中国 (как provinces-q50); второго ответа в наборе прозвищ нет. Утечка: китайский текст «北京别名是» называет ответ landmarks-q95 (группа ming-beijing-word) — kursk-2 туда же."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2024-25-shk-mosobl-3",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Общеизвестный образ («карта Китая похожа на петуха»), в досье некуда встроить, дублей нет."
+   }
+  ],
+  "dossier": null,
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-mun-chel-6",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "beijing-tianjin-municipality",
+    "note": "Уже в группе с 2016-17-mun-spb-3 (тот же вопрос, другой ответ — склеивать нельзя)."
+   },
+   {
+    "kind": "embed-missing-row",
+    "target": "provinces/cities/city-changchun",
+    "note": "Чанчунь есть только ячейкой capital у prov-jilin, а неверные варианты (города центрального подчинения) — строки cities. Встроить можно, если завести в cities строку 长春 (region 吉林); тогда как spb-3: exclude всё, кроме четырёх городов центрального подчинения. Ценность низкая — по желанию."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-mun-chel-9",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/provinces/prov-xianggang",
+    "ask": "name",
+    "note": "ask name без where (where kind 特别行政区 дало бы только 澳门): набор всех названий провинциального уровня, второго ответа нет, утечек нет."
+   },
+   {
+    "kind": "fact-group",
+    "target": "aomen-xianggang-sar",
+    "note": "Текст «особый административный район Китая Гонконг» — готовый ответ 2026-27-mun-4 (статус Гонконга) и 2015-16-shk-64 (что является САР → 香港). Добавить chel-9 в группу."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-mun-irk-2",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Досье нет, дублей нет. Посылка: официально один пояс (пекинское время), географически Китай лежит в пяти; среди вариантов «пять» нет, ключ однозначен."
+   }
+  ],
+  "dossier": null,
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-mun-kursk-6",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Встроить нельзя: ответ 湖 — не ячейка (отрицательный вопрос, ответа нет в колонке abbr). Остальные варианты — ячейки abbr (黑, 冀, 青); 冀 — ответ provinces-q102, но это вариант, а не текст: не утечка."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-mun-novg-3",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/provinces/prov-guizhou",
+    "ask": "full",
+    "note": "ask full, where kind 省 (варианты бланка с 省). Поговорка относится только к Гуйчжоу — второго ответа нет; утечек нет (provinces-q45 — та же строка)."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-mun-novg-6",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Досье нет, дублей нет. Связаны, но другой факт: 2016-17-mun-5 и 2024-25-mun-32 (рис — главная культура)."
+   }
+  ],
+  "dossier": null,
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-mun-spb-5",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2023-24-zak-2",
+    "note": "Текст 2023-24-zak-2 (provinces-q26: «город центрального подчинения на юго-западе Китая…» → 重庆) отвечает на spb-5 по сути — обратная сторона."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Колонки «часть страны» у cities нет (region — провинция), встроить нельзя. Сходится с about city-chongqing («на юго-западе Китая»)."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-mun-sverd-56",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Досье нет, дублей нет; связаны 2024-25-reg-10 и 2025-26-mun-7 (с кем не граничит). Опечатка в questionZh: «中华人民和国» → «中华人民共和国» (editorial)."
+   }
+  ],
+  "dossier": null,
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-mun-sverd-57",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Досье нет, дублей нет. Варианты — списки стран. Это стандартный учебный перечень (6 стран), не краеведение."
+   }
+  ],
+  "dossier": null,
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-mun-sverd-58",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Три равнины — строки ядра landforms (land-dongbei, land-huabei, land-changjiang), но варианты — списки, встроить нельзя. Неверные варианты отличаются одним-двумя иероглифами (北平原, 华东平原, 长江下游平原) — похоже на ловушки бланка, но «北平原» может быть и опечаткой: стоит посмотреть бланк."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-shk-mosobl-12",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/provinces/prov-yunnan",
+    "ask": "full",
+    "given": "abbr",
+    "note": "ask full, given abbr, без where (варианты бланка разных видов: 宁夏回族自治区, 天津市…). 滇 — ячейка abbr, второго ответа нет, утечек нет."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Формулировка неточна: 滇 — основное сокращение Юньнани, а не «второе название» (второе — у 陇 в паре вопросов); можно поправить в editorial.json."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-shk-mosobl-13",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Колонки соседей в provinces нет — встроить нельзя. Ответ очевиден по карте, дублей нет."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-shk-mosobl-14",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "nature/mountains/mtn-hengshan-shanxi",
+    "ask": "province",
+    "given": "name",
+    "note": "ask province, given name, where country 中国 (как nature-q146), exclude mtn-wutaishan (тоже 山西 — повтор ответа). Та же строка, что nature-q49 (恒山 — Северный пик), — не утечка; других утечек нет."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-shk-mosobl-2",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/provinces/prov-gansu",
+    "ask": "full",
+    "note": "ask full без where (варианты бланка разных видов). Утечка: текст crafts-q133 («в провинции Ганьсу») называет ответ — mosobl-2 добавить в группу eastern-han-word (других групп у неё нет)."
+   },
+   {
+    "kind": "embed-missing-row",
+    "target": "provinces/provinces/prov-gansu",
+    "note": "Ячейки abbr2 陇 нет, хотя второе сокращение названо в подписи abbr и about с цитатой China.com.cn. Если завести (как 蜀 у Сычуани, 秦 у Шэньси) — given abbr2."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-shk-mosobl-3",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Колонки соседей в provinces нет — встроить нельзя. Ключ верен: Внутренняя Монголия граничит с восемью регионами, Хэнани среди них нет."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2025-26-shk-mosobl-4",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "nature/mountains/mtn-huashan",
+    "ask": "province",
+    "given": "name",
+    "note": "ask province, given name, where country 中国, exclude mtn-qinling (тоже 陕西). Утечка: текст provinces-q03 (2018-19-mun-55) называет «провинция Шэньси» — mosobl-4 добавить в province-names-river-lake."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Пара с shk-mosobl-14 (恒山 → 山西 и 华山 → 陕西, одни и те же варианты): это разные факты, не утечка."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2026-27-mun-2",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "nature/landforms",
+    "note": "Встроить нельзя: строки 戈壁 нет, а если её завести, набор колонки name (kind 沙漠) — 塔克拉玛干, 巴丹吉林, 古尔班通古特, то есть все тоже в Китае: второй верный ответ. Неверные варианты (Атакама, Сахара, Намиб) в досье не войдут."
+   }
+  ],
+  "dossier": "nature",
+  "part": "geo"
+ },
+ {
+  "id": "2026-27-mun-4",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/provinces/prov-xianggang",
+    "ask": "kind",
+    "note": "ask kind, exclude prov-aomen (тоже 特别行政区) — так же устроен provinces-q88 об Аомэне. Набор kind совпадает с бланком (直辖市/自治区/省), выигрыш — подписи. Утечек нет."
+   },
+   {
+    "kind": "fact-group",
+    "target": "aomen-xianggang-sar",
+    "note": "Уже в группе (provinces-q88 — тот же вопрос об Аомэне). Сюда же 2025-26-mun-chel-9: его текст называет Гонконг особым административным районом."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "geo"
+ },
+ {
+  "id": "2015-16-mun-spb-10",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "landmarks/gardens/lm-cn-liuyuan",
+    "ask": "name",
+    "note": "Ответ 留园 — строка садов. Набор из name при where city 苏州; 拙政园, 狮子林, 沧浪亭 названы в тексте как члены «четырёх садов» — исключить через exclude (иначе второй верный), останутся 网师园, 退思园 + 环秀山庄 из исходных. Пояснение «Лююань цинской эпохи» расходится с ячейкой era=明 (описание строки: сад с Мин, облик цинский) — при встраивании поправить пояснение."
+   },
+   {
+    "kind": "fact-group",
+    "target": "landmarks-q23",
+    "note": "Текст называет 拙政园 — ответ landmarks-q23 (самый большой сад Сучжоу) — словом, без подсказки по сути; если автор оставляет оба, нужна общая группа."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "culture"
+ },
+ {
+  "id": "2015-16-mun-spb-4",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Чайная культура (оценка воды по «Чайному канону»: родник лучше реки и колодца). В досье нет строки; дублей в банке нет."
+   }
+  ],
+  "dossier": "cuisine",
+  "part": "culture"
+ },
+ {
+  "id": "2015-16-mun-spb-6",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Языковой факт (巾帼 — женский головной убор). В досье и банке нет; 巾帼 встречается только в цитате myths о Хуа Мулань."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2015-16-mun-spb-7",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2024-25-mun-irk-2",
+    "note": "Текст прямо говорит, что 喜/囍 клеят на свадьбу, — это подсказывает ответ 2024-25-mun-irk-2 (贴囍字 не делают на Праздник весны)."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2017-18-mun-yak-4",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "holidays/holidays/hol-qixi",
+    "ask": "name",
+    "given": "date",
+    "note": "Дата 七月初七 — ячейка date. Встраивается как holidays-q01 (2015-16-mun-8): ask name при given date, where country 中国, kind 传统节日; исходный ответ 七夕节 остаётся текстом варианта."
+   },
+   {
+    "kind": "fact-group",
+    "target": "myths-q21",
+    "note": "myths-q21 в тексте называет «праздник Циси … седьмого числа седьмого лунного месяца» — прямая подсказка ответа; группа niulang-zhinv-legend."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2018-19-mun-lenobl-48",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "cuisine/sweets/cu-cn-yuanxiao",
+    "ask": "name",
+    "note": "Ответ 元宵 есть строкой сладостей (колонки «праздник» нет, ask name как у landmarks-q02). Исключить cu-cn-tangyuan (то же блюдо под южным именем — второй верный); остальные сладости годятся. Альтернатива — завести 元宵 в holidays/customs, но тогда пару 汤圆/元宵 придётся взаимно исключать."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2021-22-shk-qfce22f",
+    "note": "Текст называет «Праздник фонарей» — ответ 2021-22-shk-qfce22f (какой праздник называют Праздником фонарей → 元宵节); там же holidays-q45 (汤圆 → 元宵节) и 2021-22-mun-mosobl-53 (южное название — 汤圆): одна сторона факта «что едят на Юаньсяо», разные ответы — не склеивать, группа."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2018-19-mun-lenobl-55",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "cuisine/cuisines/cs-zhe",
+    "ask": "name",
+    "note": "Ответ — строка cs-zhe (浙菜), ask name. Но варианты олимпиады в полной форме (山东菜/浙江菜/湖南菜) дублируют ячейки 鲁菜 и 湘菜 — их исключить; набор смешает две формы названий, к тому же текст называет Ханчжоу (ответ 2015-16-shk-65 и 2020-21-mun-mosobl-46) — проверить утечку. Встраивание на усмотрение автора, можно оставить как есть."
+   }
+  ],
+  "dossier": "cuisine",
+  "part": "culture"
+ },
+ {
+  "id": "2018-19-mun-spb-6",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "landmarks/sites/lm-cn-terracotta",
+    "ask": "name",
+    "note": "Ответ — строка lm-cn-terracotta, ask name; ни одна строка sites («восьмым чудом» не называют) не даёт второго ответа. Близкие, но разные факты: 2016-17-mun-yar-9 и 2023-24-reg-4 (оба → 兵马俑) — не дубли."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "culture"
+ },
+ {
+  "id": "2019-20-mun-kgd-7",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "holidays/holidays/hol-chuxi",
+    "ask": "name",
+    "note": "Ответ 除夕 — строка hol-chuxi, ask name, where country 中国, kind 传统节日 (小年 — 23-е число 12-го месяца, вторым ответом не будет). Текст называет «Праздник весны» — проверить утечку к записям с ответом 春节 вне группы spring-festival-word (holidays-q32, 2017-18-mun-7)."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2019-20-mun-kgd-9",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Составные варианты (четыре кухни через запятую) не встраиваются. Ответ (鲁、川、粤 + 淮扬/扬州) не противоречит таблице cuisine/cuisines: 淮扬 — ядро 苏菜."
+   }
+  ],
+  "dossier": "cuisine",
+  "part": "culture"
+ },
+ {
+  "id": "2019-20-mun-khab-8",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "«Четыре драгоценности кабинета» есть в painting/terms (kind=文房四宝: 湖笔, 徽墨, 宣纸, 端砚), но варианты олимпиады — общие слова 纸/墨/砚/架, а вопрос «что не входит»: встроить нельзя. Противоречия нет."
+   }
+  ],
+  "dossier": "painting",
+  "part": "culture"
+ },
+ {
+  "id": "2019-20-mun-mosobl-55",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2024-25-pri-38",
+    "note": "Обратная сторона 2024-25-pri-38 (кухня Шаньдуна → 鲁菜): текст называет 鲁菜, ответ — 山东菜. Ответы различаются по форме, поэтому не склейка, а группа shandong-lu. Текст называет и Цзинань — ответ 2021-22-reg-qd842f6 (泉城 → 济南), но только словом."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Встраивать в cs-lu бессмысленно: текст сам даёт 鲁菜, а варианты в полной форме (江苏菜/湖南菜) дублируют ячейки 苏菜/湘菜."
+   }
+  ],
+  "dossier": "cuisine",
+  "part": "culture"
+ },
+ {
+  "id": "2019-20-shk-mosobl-50",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "holidays-q43",
+    "note": "Обратная сторона holidays-q43 (парные надписи → 春节): текст называет Праздник весны и спрашивает, что клеят, ответ — 春联. Группа spring-festival-word. Составные варианты не встраиваются."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2019-20-shk-mosobl-55",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "cuisine-q76",
+    "note": "Текст («очень острый вкус, красный и зелёный перец») подсказывает ответ cuisine-q76 (вкус 湘菜 → 香辣), а реки Сянцзян, Дунтинху и запад Хунани — ответ cuisine-q71 (родина 湘菜 → 湖南). Группа hunan-xiang."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Встраивать в cs-xiang невыгодно: варианты в полной форме (山东菜/江苏菜/湖南菜) дублируют ячейки 鲁菜/苏菜, а текст называет провинцию Хунань."
+   }
+  ],
+  "dossier": "cuisine",
+  "part": "culture"
+ },
+ {
+  "id": "2020-21-mun-mosobl-46",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "landmarks/sacred",
+    "note": "Строки для пагоды Лэйфэн нет (она есть только в цитате к Западному озеру). Предложение: landmarks/sacred — 雷峰塔, city 杭州 (era 吴越/北宋, unesco — компонент «Западного озера»). Тогда ask city."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2020-21-mun-mosobl-54",
+    "note": "Связка «Белая змея — пагода Лэйфэн — Западное озеро — Ханчжоу»: пояснение и сюжет соседнего вопроса подсказывают ответ; кроме того, 2015-16-shk-65 (Сиху → 杭州) — тот же ответ из того же клубка."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "culture"
+ },
+ {
+  "id": "2020-21-mun-mosobl-54",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "myths-q20",
+    "note": "Текст называет 《白蛇传》 — подсказывает ответ myths-q20 (белая змея → 白娘子). Рядом: 2022-23-zak-3 (храм Цзиньшань → 镇江) и 2020-21-mun-mosobl-46 (Лэйфэн → 杭州)."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "В myths/stories у 白蛇传 нет колонки места действия; встроить некуда."
+   }
+  ],
+  "dossier": "myths",
+  "part": "culture"
+ },
+ {
+  "id": "2020-21-mun-novg-1",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2022-23-mun-kam-6",
+    "note": "Пара «символ Китая»: здесь 熊猫 — неверный вариант («мифическое животное» → 龙), а в 2022-23-mun-kam-6 ответ 熊猫. Противоречия нет благодаря слову «мифическое», но рядом их ставить не стоит; туда же 2024-25-mun-tula-8 (龙 — императорская власть). Таблицы символов в досье нет."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2020-21-mun-spb-10",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2023-24-mun-klg-6",
+    "note": "Оба вопроса о пионе (здесь «царь цветов», там «символ государства»); текст этого вопроса подсказывает ответ соседнего. Таблицы цветов-символов нет (цветы есть только на купюрах money/banknotes)."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2020-21-mun-yak-4",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Год Крысы 2020 верен (с 25.01.2020). Таблицы зодиака в досье нет — кандидат в каркас темы «Праздники/обычаи»."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2020-21-mun-yak-9",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "cuisine/teas/te-puer",
+    "ask": "type",
+    "note": "type=黑茶 — ячейка. Встраивание как cuisine-q85…89: ask type; набор из cuisine/teatypes добавит 白茶, 青茶. cuisine-q90 (провинция пуэра) — та же строка, утечкой не считается."
+   }
+  ],
+  "dossier": "cuisine",
+  "part": "culture"
+ },
+ {
+  "id": "2020-21-shk-mosobl-47",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "landmarks/gardens/lm-cn-summer-palace-garden",
+    "ask": "name",
+    "note": "Ответ — строка 颐和园; озеро Куньмин есть только в нём, ask name (как landmarks-q02). Ни 圆明园 (тоже Хайдянь), ни другие сады вторым ответом не будут. Текст называет Пекин — при встраивании проверить утечки к записям с ответом 北京 (landmarks-q95 — та же строка)."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "culture"
+ },
+ {
+  "id": "2020-21-shk-mosobl-52",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Застольный этикет; в досье и банке нет."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2020-21-shk-mosobl-55",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Правильный вариант совпадает с восемью строками cuisine/cuisines; составные варианты не встраиваются. В первом неверном варианте 广东菜 повторён дважды — видимо, так в бланке."
+   }
+  ],
+  "dossier": "cuisine",
+  "part": "culture"
+ },
+ {
+  "id": "2021-22-mun-mosobl-53",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "holidays/customs/cus-tangyuan",
+    "ask": "name",
+    "given": "holiday",
+    "note": "汤圆 — строка обычаев с holiday=元宵节: ask name при given holiday, where kind 食物, country 中国 (饺子, 粽子, 月饼, 腊八粥… вторым ответом не будут; 元宵 в таблице нет). holidays-q45 — та же строка."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2021-22-shk-qfce22f",
+    "note": "Текст называет «Праздник фонарей» — ответ 2021-22-shk-qfce22f; там же 2018-19-mun-lenobl-48 (тот же факт, ответ 元宵) — разные ответы, склеивать нельзя."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2021-22-mun-tat-52",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "cuisine/staples",
+    "note": "Строки 狗不理包子 нет. Предложение: cuisine/staples — 狗不理包子 (Тяньцзинь). Колонка region в staples русская, поэтому для вопроса «откуда блюдо» нужна zh-колонка провинции. Мелочь: Тяньцзинь — город центрального подчинения, а не провинция."
+   }
+  ],
+  "dossier": "cuisine",
+  "part": "culture"
+ },
+ {
+  "id": "2021-22-mun-tat-53",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "cuisine/staples",
+    "note": "Строки 羊肉泡馍 нет. Предложение: cuisine/staples — 羊肉泡馍 (Шэньси, Сиань); то же ограничение по колонке region (ru). С 2021-22-mun-tat-52 — одинаковые варианты, но факты разные, не группа."
+   }
+  ],
+  "dossier": "cuisine",
+  "part": "culture"
+ },
+ {
+  "id": "2021-22-mun-volog-6",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2015-16-zak-10",
+    "note": "Тот же факт, что в 2015-16-zak-10 (дата Цинмина 四月五日), но ответ — месяц 四月, а не дата: склеить нельзя, группа qingming-graves. Встроить нельзя: ответ — месяц, а не ячейка date."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2022-23-mun-amur-1",
+  "findings": [
+   {
+    "kind": "duplicate",
+    "target": "myths-q13",
+    "how": "pool",
+    "note": "Тот же вопрос и ответ (стрелок, сбивший девять солнц → 后羿), неверные варианты другие (神农/关羽/吴刚). Склейка с общим набором; оставить предпочтительно олимпиадную запись, а myths-q13 влить в неё (absorbs, distractors: pool)."
+   }
+  ],
+  "dossier": "myths",
+  "part": "culture"
+ },
+ {
+  "id": "2022-23-mun-kam-6",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2017-18-zak-5",
+    "note": "Текст 2017-18-zak-5 называет 大熊猫 «национальным сокровищем Китая» — подсказка ответа. И пара с 2020-21-mun-novg-1, где 熊猫 — неверный вариант на «мифический символ Китая». Официально панда символом не объявлена (ключ олимпиады)."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2022-23-mun-krsk-1",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "holidays/holidays/hol-zhongqiu",
+    "ask": "name",
+    "note": "Ответ 中秋节 — строка праздников, ask name, where country 中国, kind 传统节日. Ячейка legend=嫦娥奔月, а не Хоу И, поэтому given не задаётся; ни один другой праздник с Хоу И не связан."
+   },
+   {
+    "kind": "fact-group",
+    "target": "myths-q13",
+    "note": "Запись уже в группе mid-autumn-date (с 2024-25-pri-37, holidays-q36, 2023-24-mun-kem-7). Но текст («легенда о стрелке Хоу И») подсказывает и ответ myths-q13 / 2022-23-mun-amur-1 (стрелок → 后羿): их нужно добавить в ту же группу, иначе утечка останется."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2022-23-mun-lenobl-52",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "landmarks/sacred/lm-cn-tiantan",
+    "ask": "name",
+    "given": "city",
+    "note": "Все три варианта — строки landmarks (太阳岛 → 哈尔滨, 日月潭, 天坛 → 北京). Ask name при given city=北京; из набора sacred исключить 雍和宫 (тоже Пекин — второй ответ, scripts/dossiers.py его поймает)."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2018-19-zak-2",
+    "note": "Тот же шаблон с теми же вариантами (日月潭/太阳岛) и другим ответом (Хэйлунцзян → 太阳岛). У 2024-25-mun-mosobl-4 строка та же, утечкой не считается, если обе встроить."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "culture"
+ },
+ {
+  "id": "2022-23-mun-spb-3",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "holidays/holidays/hol-guoqing",
+    "ask": "name",
+    "note": "Ответ 国庆节 — строка праздников, ask name, where country 中国. Исключить hol-chunjie (у Праздника весны тоже 7-дневная «золотая неделя») и hol-laodong (была «золотой неделей» до 2008 года). holidays-q38 — та же строка."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2022-23-mun-tat-5",
+  "findings": [
+   {
+    "kind": "duplicate",
+    "target": "2015-16-mun-8",
+    "how": "pool",
+    "note": "«Праздник двойной пятёрки» (重五, 端五) — это 5-е число 5-го месяца, тот же факт и ответ, что в 2015-16-mun-8 (встроен holidays-q01 в hol-duanwu). Неверные варианты другие (七夕节, 清明节) — склейка с общим набором. Если автор сочтёт формулировки разными, встроить в hol-duanwu (ask name)."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2022-23-shk-mosobl-7",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2015-16-reg-3",
+    "note": "Тот же вопрос («кого нет в зодиаке»), но ответ другой (龟; у 2015-16-reg-3 — 狐狸, у 2025-26-mun-chel-7 — 狼): склеить нельзя, группа. Туда же обратный 2025-26-mun-vlad-7 (кто входит → 龙). Таблицы зодиака нет."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2023-24-mun-kem-7",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "myths/figures/fig-houyi",
+    "ask": "name",
+    "note": "Ответ 后羿 — строка мифов, ask name. Исключить 嫦娥, 吴刚, 玉兔 (все в лунном цикле праздника — вторые ответы) и 西王母 (дала Хоу И эликсир). Альтернатива — завести 后羿 в holidays/figures (holiday=中秋节, ref myths/figures/fig-houyi): там сторона holiday и меньше исключений (только 嫦娥). myths-q13 — та же строка."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2022-23-mun-krsk-1",
+    "note": "Уже в группе mid-autumn-date вместе с обратным вопросом 2022-23-mun-krsk-1 (Хоу И → 中秋节)."
+   }
+  ],
+  "dossier": "myths",
+  "part": "culture"
+ },
+ {
+  "id": "2023-24-mun-klg-3",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Длинные ногти как знак знатности; в досье и банке нет."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2023-24-mun-klg-6",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2020-21-mun-spb-10",
+    "note": "Пара о пионе с 2020-21-mun-spb-10. Посылка «стал символом государства» расходится с собственным пояснением (цветок неофициальный: 2019 — только рекомендация ассоциации) — автору стоит поправить формулировку в editorial.json."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2023-24-mun-krsk-5",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Четыре искусства 琴棋书画; в досье нет, дублей нет."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2023-24-mun-mosobl-6",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2021-22-reg-q5d6afc",
+    "note": "Тот же ответ 成龙: тут «китайское имя Джеки Чана», там «звезда кунфу, почётный „Оскар“ 2017». Если школьник знает, что Джеки Чан — 成龙, второй вопрос решается. В cinema нет таблицы актёров."
+   }
+  ],
+  "dossier": "cinema",
+  "part": "culture"
+ },
+ {
+  "id": "2023-24-mun-omsk-1",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2016-17-mun-spb-6",
+    "note": "Текст 2016-17-mun-spb-6 (旗袍 — «женская одежда с ярким национальным колоритом») прямо подсказывает этот ответ. Таблицы одежды нет."
+   }
+  ],
+  "dossier": "ethnos",
+  "part": "culture"
+ },
+ {
+  "id": "2023-24-mun-perm-6",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Меры веса (1 цзинь = 10 лян в современной системе). В досье нет."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2023-24-mun-sverd-59",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "crafts/crafts/cr-jingtailan",
+    "ask": "name",
+    "note": "景泰蓝 — строка ремёсел; ask name, where country 中国 (российская 罗斯托夫珐琅 — тоже эмаль, хоть и расписная, — так уйдёт). Исходные 元代蓝/友好节 — заведомая бессмыслица, набор из колонки сделает вопрос осмысленным; ни одна другая строка не перегородчатая эмаль."
+   }
+  ],
+  "dossier": "crafts",
+  "part": "culture"
+ },
+ {
+  "id": "2023-24-shk-mosobl-10",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "crafts/crafts/cr-suxiu",
+    "ask": "center",
+    "note": "Ответ 苏州 — ячейка center, ask center. Исключить другие строки вышивки (cr-xiangxiu 长沙, cr-shuxiu 成都, cr-yuexiu 广州, cr-guxiu 上海, cr-bianxiu 开封) — иначе вторые ответы. Оговорка: исходный вариант 杭州 тоже знает вышивку 杭绣, но знаменита сучжоуская. crafts-q129 — та же строка."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2024-25-mun-irk-10",
+    "note": "Текст 2024-25-mun-irk-10 называет «сучжоускую вышивку провинции Цзянсу» — подсказывает этот ответ."
+   }
+  ],
+  "dossier": "crafts",
+  "part": "culture"
+ },
+ {
+  "id": "2023-24-shk-mosobl-19",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Сезон 夏至 из 24 сезонов. В landmarks/intangible есть только строка 二十四节气 целиком; с 2020-21-zak-q624620 (самый холодный → 大寒) — разные факты."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2023-24-shk-mosobl-2",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "张艺谋 — ячейка director в cinema/works, но церемонии Олимпиад — не фильм, встроить некуда. С cinema-q01 (张艺谋 — «Красный гаолян») и 2020-21-mun-kgd-3 ответ общий, а факты разные."
+   }
+  ],
+  "dossier": "cinema",
+  "part": "culture"
+ },
+ {
+  "id": "2023-24-shk-mosobl-20",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Поговорка «吃在广州»; в досье нет. Ближе всего provinces/cities (city-guangzhou)."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-irk-10",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "crafts-shu-chengdu",
+    "note": "Текст перечисляет сучжоускую, хунаньскую и сычуанскую вышивки (ответы crafts-q129, crafts-q14 и 2023-24-shk-mosobl-10). Подходит группа crafts-shu-chengdu."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Встроить в cr-yuexiu (ask name, given region) нельзя: текст называет три провинции — Цзянсу, Хунань, Сычуань, а они ответы вопросов разных групп (например, cuisine-q71 в hunan-xiang)."
+   }
+  ],
+  "dossier": "crafts",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-irk-2",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2015-16-mun-spb-7",
+    "note": "2015-16-mun-spb-7 прямо говорит, что 喜 клеят на свадьбу, — подсказка ответа (贴囍字). Вопрос «чего не делают» не встраивается."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-irk-7",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "抹茶 как «не китайский чай». Оговорка для автора: порошковый чай (点茶) пришёл в Японию из сунского Китая, так что посылка спорная. Строки нет."
+   }
+  ],
+  "dossier": "cuisine",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-irk-8",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "《茶经》 Лу Юя: в досье нет (литература, люди), дублей нет. Встраивание в literature/works дало бы набор из реальных книг не о чае — вопрос стал бы проще."
+   }
+  ],
+  "dossier": "cuisine",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-kem-8",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Траурный белый цвет. В досье нет; с 2015-16-mun-5 (красный — радость) и 2016-17-shk-10 (жёлтый — император) факты разные."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-klg-6",
+  "findings": [
+   {
+    "kind": "narrow",
+    "target": null,
+    "note": "«Горячая вода — универсальное лекарство» — бытовой стереотип или мем, а не факт культуры; школьник на олимпиаде вряд ли его встретит. Только пометка."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-krsk-6",
+  "findings": [
+   {
+    "kind": "narrow",
+    "target": null,
+    "note": "Термин 软玉 (нефрит) как «царь минералов» узковат: школьник знает 玉 вообще, а не минералогическое 软玉. В crafts есть резьба по нефриту (岫玉, 独山玉), но ячейки 软玉 нет."
+   }
+  ],
+  "dossier": "crafts",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-krym-4",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "叶问 (Ип Ман) известен по фильмам; неверные варианты (易门/们以/星系) — бессмыслица. В досье нет."
+   }
+  ],
+  "dossier": "cinema",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-mosobl-3",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "landmarks/gardens/lm-cn-yuyuan",
+    "ask": "city",
+    "note": "Ячейка city=上海, ask city; набор из колонки (苏州, 北京, 无锡, 佛山, 广州, 东莞, 扬州) второго ответа не даёт. Текст город не называет — утечек нет."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-mosobl-4",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "landmarks/sacred/lm-cn-tiantan",
+    "ask": "name",
+    "note": "Ответ — строка 天坛, ask name, where city 北京. Из sacred добавится только 雍和宫 (набор маленький, остальное — исходные 颐和园/北海/故宫). Та же строка, что у 2022-23-mun-lenobl-52 и landmarks-q92, — при встраивании группа не нужна, иначе текст («достопримечательность Пекина… круглый храм») подсказывает ответ 2022-23-mun-lenobl-52."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-mosobl-5",
+  "findings": [
+   {
+    "kind": "narrow",
+    "target": null,
+    "note": "Скульптура Ян Гуйфэй у источников Хуацин — местная деталь (статуя на объекте). Знаменита связь Ян Гуйфэй с Хуацином («Вечная печаль»), но не статуя. В landmarks/sites есть строка 华清池 (city 西安), колонки персонажа нет."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2022-23-shk-mosobl-11",
+    "note": "Варианты — те же четыре красавицы, что в ответе 2022-23-shk-mosobl-11; текст называет «четырёх красавиц». Слабая связь, на усмотрение автора."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-tat-51",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "holidays/holidays/hol-qixi",
+    "ask": "name",
+    "given": "legend",
+    "note": "legend=牛郎织女 — ячейка; ask name при given legend, where country 中国, kind 传统节日. Та же строка, что у 2017-18-mun-yak-4."
+   },
+   {
+    "kind": "fact-group",
+    "target": "myths-q21",
+    "note": "Обратный вопрос к myths-q21 (Циси → 牛郎织女); текст называет Пастуха и Ткачиху — это и ответ myths-q29 (织女). Обе в группе niulang-zhinv-legend — туда же."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-tula-10",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "money-q36",
+    "note": "Тот же ответ 红包 и тот же обычай (money-q36: подарок на Праздник весны и не только); группа spring-festival-word."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Встроить в money/customs/hongbao (ask name) можно только с исключением 压岁钱 (это и есть новогодние деньги детям) и 压胜钱; оставшийся набор (财神, 份子钱, 八…) разнородный и слабый — лучше не встраивать."
+   }
+  ],
+  "dossier": "money",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-tula-2",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "holidays/holidays/hol-chunjie",
+    "ask": "name",
+    "note": "Ответ — строка 春节, ask name, where country 中国, kind 传统节日. Исключить hol-xiaonian («малый Новый год») и hol-chuxi (канун). Та же строка, что у holidays-q32 и 2017-18-mun-7."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-tula-4",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2022-23-reg-7",
+    "note": "Текст 2022-23-reg-7 («благодаря кому появились палочки для еды») называет ответ этого вопроса (筷子) словом; если оба остаются — группа."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-tula-7",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "landmarks/fortifications/lm-cn-great-wall",
+    "ask": "name",
+    "note": "Ответ — строка 长城, ask name. Исключить 八达岭长城, 山海关关城, 嘉峪关关城 (участки самой стены — вторые ответы). landmarks-q105 — та же строка."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-tula-8",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2020-21-mun-novg-1",
+    "note": "Вместе с 2020-21-mun-novg-1 (мифический символ Китая → 龙) и 2022-23-mun-kam-6 (символ → 熊猫) — клубок «символ Китая». Факты разные, но ответы перекрываются."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-mun-volog-1",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2021-22-shk-qf19779",
+    "note": "Протяжённость стены: здесь вся стена (21 196 км), в 2021-22-shk-qf19779 — минская (8851 км). Не противоречие, но легко спутать; текст называет Великую стену — ответ записей группы great-wall-word (landmarks-q105, 2015-16-reg-9…). Подходит группа great-wall-word."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Числовой ответ — не ячейка; в строке lm-cn-great-wall длины нет."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-shk-mosobl-13",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Год Дракона 2024 верен (с 10.02.2024). Таблицы зодиака нет; с вопросами «кого нет в зодиаке» факт другой."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2024-25-shk-mosobl-7",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "紫 в 紫禁城. В landmarks строка 北京故宫, название 紫禁城 не ячейка. С 2016-17-mun-8 (нынешнее название → 故宫) — разные стороны названия, текст ответа не подсказывает."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "culture"
+ },
+ {
+  "id": "2025-26-mun-chel-7",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2015-16-reg-3",
+    "note": "«Кого нет в зодиаке»: ответ 狼, у 2015-16-reg-3 — 狐狸, у 2022-23-shk-mosobl-7 — 龟. Один вопрос с разными ответами — только группа, не склейка."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2025-26-mun-kem-5",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Год Змеи с 29.01.2025 верен. Таблицы зодиака нет."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2025-26-mun-kgd-54",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "landmarks/sacred",
+    "note": "Строки Лэшаньского Будды нет (он есть только в цитатах nature о Эмэйшань — Лэшань, ЮНЕСКО 1996). Предложение: landmarks/sacred — 乐山大佛, city 乐山, era 唐, unesco 世界文化与自然遗产 (компонент «Эмэйшань — Лэшаньский Будда»). Тогда ask city; текст город не называет."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "culture"
+ },
+ {
+  "id": "2025-26-mun-krym-3",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "nature/engineering/eng-zhaozhouqiao",
+    "ask": "name",
+    "note": "Ответ 安济桥 — другое имя строки 赵州桥 (оно есть в about). Ask name, where kind 桥: добавятся 港珠澳大桥, 南京/武汉长江大桥. nature-q67 — та же строка (его текст «старейший арочный мост» иначе подсказывал бы ответ)."
+   },
+   {
+    "kind": "conflict",
+    "target": "nature/engineering/eng-zhaozhouqiao",
+    "note": "Посылка шире досье: «самый древний мост, сохранившийся в Китае», а досье и nature-q67 — «старейший из сохранившихся арочных мостов с „открытыми плечами“». Ответ не меняется, но формулировку стоит уточнить в editorial.json."
+   }
+  ],
+  "dossier": "nature",
+  "part": "culture"
+ },
+ {
+  "id": "2025-26-mun-perm-4",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Юньнань — родина чая. С cuisine-q90 (пуэр → 云南) ответ общий, а факты разные: текст пуэра не называет. Строки «родина чая» нет."
+   }
+  ],
+  "dossier": "cuisine",
+  "part": "culture"
+ },
+ {
+  "id": "2025-26-mun-ryaz-7",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "«Кто не из китайской мифологии» → 宙斯. Неверные варианты (嫦娥, 精卫, 牛郎织女) — строки myths, но ответ (Зевс) не ячейка: встроить нельзя."
+   }
+  ],
+  "dossier": "myths",
+  "part": "culture"
+ },
+ {
+  "id": "2025-26-mun-tat-51",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "myths-q28",
+    "note": "Текст («Нюйва вылепила людей из жёлтой земли») прямо отвечает на myths-q28 (кто вылепил людей из жёлтой глины → 女娲) и 2017-18-reg-3 (миф о происхождении людей → 女娲造人). Группа nuwa-creates-people."
+   },
+   {
+    "kind": "narrow",
+    "target": null,
+    "note": "Деталь «Фэнсу тунъи» (из жёлтой земли — знать, из брызг глины — простолюдины) узковата рядом с общеизвестным «Нюйва создала людей». Олимпиадную запись это не снимает — только пометка."
+   }
+  ],
+  "dossier": "myths",
+  "part": "culture"
+ },
+ {
+  "id": "2025-26-mun-tat-57",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2024-25-zak-q082614",
+    "note": "Текст («когда Паньгу умер, его тело превратилось во Вселенную») почти дословно отвечает на 2024-25-zak-q082614 (из чьего тела возник мир → 盘古) и подсказывает 2020-21-reg-q588b1b и 2021-22-reg-qdc153d. Группы для Паньгу ещё нет — завести."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Ответ 月日 — не ячейка (role в myths/figures — русский текст)."
+   }
+  ],
+  "dossier": "myths",
+  "part": "culture"
+ },
+ {
+  "id": "2025-26-mun-vlad-3",
+  "findings": [
+   {
+    "kind": "duplicate",
+    "target": "2021-22-zak-q36aaab",
+    "how": "pool",
+    "note": "Тот же факт и ответ: 京剧 — 国粹, «национальное достояние» (2021-22-zak-q36aaab встроен landmarks-q89 в int-jingju). Неверные варианты другие (书法, 剪纸) — склейка с общим набором. Оговорка: 书法 тоже иногда называют 国粹. Если формулировки сочтут разными — группа peking-opera-word."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "culture"
+ },
+ {
+  "id": "2025-26-mun-vlad-7",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2015-16-reg-3",
+    "note": "Обратная сторона вопросов «кого нет в зодиаке» (2015-16-reg-3, 2022-23-shk-mosobl-7, 2025-26-mun-chel-7); в одну группу с ними."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "culture"
+ },
+ {
+  "id": "2025-26-shk-mosobl-15",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Материал 笙 — бамбук. В досье 笙 есть только в цитатах мифов (Нюйва создала 笙簧); таблицы инструментов нет."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2025-26-shk-mosobl-16",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Цвет центра (жёлтый) по пяти первоэлементам. С 2016-17-shk-10 (жёлтый — цвет императора) ответ общий, а факты разные; таблицы нет."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2025-26-shk-mosobl-6",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Цвет севера (чёрный). С 2025-26-shk-mosobl-16 — один шаблон, ответы разные, текст не подсказывает."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2026-27-mun-10",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Запрет дарить 伞 (омоним 散). В досье и банке нет."
+   }
+  ],
+  "dossier": null,
+  "part": "culture"
+ },
+ {
+  "id": "2016-17-mun-yar-8",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "peking-opera-word (2021-22-zak-q36aaab, 2025-26-mun-vlad-3)",
+    "note": "Текст называет 京剧 — ответ landmarks-q89/2021-22-zak-q36aaab и 2025-26-mun-vlad-3 («国粹»). Подсказка лишь словом — в группу peking-opera-word. Сам вопрос угадывается по 京 в 京剧."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Колонки «город происхождения» у int-jingju нет — встроить некуда. Ответ 北京 верен (徽班进京)."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "lit"
+ },
+ {
+  "id": "2018-19-mun-spb-5",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "confucius-word (2017-18-shk-6, people-q09 и др.)",
+    "note": "Китайский текст «孔子是春秋时期哪国人» называет 孔子 — ответ 2021-22-mun-omsk-4, 2023-24-mun-krsk-4, 2024-25-mun-krym-9. Связан и с 2017-18-shk-6 (Цюйфу, родина Конфуция → 山东): 鲁 — сокращение Шаньдуна (группа shandong-lu), слабая подсказка словом."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "В th-kongzi нет колонки «царство», встроить некуда. Факт известный, не узкий."
+   }
+  ],
+  "dossier": "people",
+  "part": "lit"
+ },
+ {
+  "id": "2018-19-mun-tyum-9",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "literature-four-novels-names (2016-17-shk-2), 2020-21-reg-qce4bc2, 2023-24-shk-34, 2020-21-mun-kgd-7",
+    "note": "Верный вариант перечисляет все четыре романа — прямо отвечает на 2016-17-shk-2 (literature-q10) и на «что не входит в четыре романа» (literature-q14, literature-q15, 2020-21-mun-kgd-7)."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Варианты — списки, встраивать нельзя. Ошибки бланка в неверных вариантах: «猫成绩» вместо 猫城记, «风筝飘带», «夜的眼» (малоизвестные рассказы Ван Мэна и др.) — автору решить: правка в editorial.json или withheld.json."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2018-19-mun-vrn-3",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "literature",
+    "note": "Вопрос-роль («кто из — писатель»): набор из колонки дал бы второй верный ответ (все строки — писатели), исходные 齐白石/孔子/雷锋 не из таблицы authors. Однотипны 2024-25-mun-udm-6 (поэт), 2023-24-reg-7 (художник), 2020-21-mun-kgd-3 (режиссёр) — не дубли, ответы разные."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2018-19-mun-vrn-4",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "xuanzang-sutras (people-q20, landmarks-q59)",
+    "note": "people-q20 («Чем прославился Сюаньцзан (玄奘)») и landmarks-q59 («сутры, привезённые монахом Сюаньцзаном») называют ответ 玄奘, а ответ q20 西行取经 — суть этого же факта. Добавить в группу xuanzang-sutras."
+   },
+   {
+    "kind": "embed",
+    "target": "people/travelers/trv-xuanzang",
+    "ask": "name",
+    "note": "Ответ — ячейка name строки trv-xuanzang, набор 张骞/郑和/徐霞客 второго верного не даёт. Но встраивание сейчас упадёт: у исходных вариантов 鲁智深, 朱元璋, 老子 нет ячеек в колонке name таблицы travelers. Без правки вариантов не встроить, достаточно группы фактов."
+   }
+  ],
+  "dossier": "people",
+  "part": "lit"
+ },
+ {
+  "id": "2019-20-mun-kgd-10",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Чэнъюй 沧海桑田 нет ни в банке, ни в разделе «Чэнъюй». Досье не подходит."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2019-20-mun-kgd-5",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "literature/works: строка 望庐山瀑布 (author 李白)",
+    "note": "Спрашивают автора конкретного стихотворения, а в lit-a-libai ячейка work = 静夜思. Можно завести в works строки стихов (望庐山瀑布, 将进酒 — 李白; 水调歌头·明月几时有 — 苏轼; 静夜思, 春望) и спрашивать author. Помеха: у 李颀, 王績 нет строк, а 王維/王績 в вариантах написаны полными знаками (в таблице 王维) — подписи не найдутся без правки."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Стихотворение школьное, не узкое. С 2023-24-mun-krsk-2 (将进酒 → 李白) ответ тот же, но факт другой — не дубль."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2019-20-mun-khab-6",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "suihan-sanyou-not (2021-22-mun-mosobl-55)",
+    "note": "Уже в группе suihan-sanyou-not. Тот же вопрос, что 2021-22-mun-mosobl-55, но ответы разные (兰 и 牡丹), склеивать нельзя. 2017-18-zak-4 (四君子 梅兰竹菊) — соседний факт, текст не подсказывает."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "В painting/terms нет строк символических растений. Встроить некуда."
+   }
+  ],
+  "dossier": "painting",
+  "part": "lit"
+ },
+ {
+  "id": "2019-20-mun-lip-2",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2018-19-mun-48; myths-q22 (та же строка story-liangzhu)",
+    "note": "Текст 2018-19-mun-48 («梁山伯与祝英台» — визитная карточка 越剧) называет ответ лишь словом, по правилу 2026-10-22 — в одну группу. myths-q22 (превратились в бабочек) спрашивает ту же строку с другой стороны: не утечка, если запись получит factRow."
+   },
+   {
+    "kind": "embed",
+    "target": "myths/stories/story-liangzhu",
+    "ask": "name",
+    "note": "Ответ — ячейка name. Помеха: исходные 后羿与嫦娥, 习近平与彭丽媛, 三毛与荷西 — не ячейки колонки (там 后羿射日, 嫦娥奔月), подписей не будет. Без правки вариантов встраивание не пройдёт. Вариант 习近平与彭丽媛 сомнителен для учебного банка — автору на заметку."
+   }
+  ],
+  "dossier": "myths",
+  "part": "lit"
+ },
+ {
+  "id": "2019-20-mun-mosobl-49",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "suzhou-hangzhou-paradise (2021-22-mun-lenobl-8)",
+    "note": "Уже в группе с 2021-22-mun-lenobl-8. Колонки «прозвище» у Сучжоу и Ханчжоу в provinces/cities нет."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2019-20-shk-mosobl-49",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2020-21-shk-mosobl-49",
+    "note": "Неверный вариант o2 у 2020-21-shk-mosobl-49 — дословно правильный ответ этого вопроса («欢迎远方的朋友，是一件高兴的事»). Подсказка через варианты, если раунд поставит их рядом."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Изречение из «Лунь юя». Строки th-kongzi хватает только для связи, колонки цитат нет."
+   }
+  ],
+  "dossier": "people",
+  "part": "lit"
+ },
+ {
+  "id": "2020-21-mun-kgd-3",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "cinema",
+    "note": "Вопрос-роль («кто из — режиссёр»): пул директоров из cinema/works дал бы второй верный ответ. 2023-24-shk-mosobl-2 (режиссёр олимпийских церемоний → 张艺谋) — тот же ответ, другой факт; cinema-q01 — тоже. Утечек нет."
+   }
+  ],
+  "dossier": "cinema",
+  "part": "lit"
+ },
+ {
+  "id": "2020-21-mun-kgd-4",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Чэнъюй 人山人海, дублей нет."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2020-21-mun-kgd-7",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2020-21-reg-qce4bc2 (literature-q14), 2023-24-shk-34 (literature-q15)",
+    "note": "Тот же вопрос «что не входит в четыре романа» с другими ответами (金瓶梅, 骆驼祥子). Склеивать нельзя — связать группой (literature-q14 об этом уже говорит)."
+   },
+   {
+    "kind": "embed-missing-row",
+    "target": "literature/works: строка 孽海花",
+    "note": "Ответ 孽海花 (Цзэн Пу, поздняя Цин) — не строка works. Заводить её ради дистрактора-ответа узко; скорее оставить без встраивания."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2020-21-mun-lenobl-7",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2025-26-mun-chel-3, 2017-18-shk-10 (dynasties-q114), addition-b2-09",
+    "note": "Текст 2025-26-mun-chel-3 («Цзягувэнь является самой ранней формой китайской письменности») прямо даёт ответ; 2017-18-shk-10 («гадательные надписи на костях — древнейшая письменность», «甲骨文是中国最早的文字») тоже. Утечка по сути — нужна группа."
+   },
+   {
+    "kind": "embed-missing-row",
+    "target": "painting/terms: строка 甲骨文",
+    "note": "篆书/草书/楷书 — ячейки painting/terms (書体), а 甲骨文 строки нет. Таблица terms не спрашивается (sides нет), так что это низкий приоритет. В dyn-shang 甲骨文 — ячейка known, но набор из known не годится."
+   }
+  ],
+  "dossier": "painting",
+  "part": "lit"
+ },
+ {
+  "id": "2020-21-mun-novg-7",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "confucius-word",
+    "note": "Китайский текст «谁是孔子» называет 孔子 — ответ 2021-22-mun-omsk-4, 2023-24-mun-krsk-4, 2024-25-mun-krym-9."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Колонки «род занятий» нет. Варианты 藝術家, 領袖 написаны полными знаками — бланк как есть."
+   }
+  ],
+  "dossier": "people",
+  "part": "lit"
+ },
+ {
+  "id": "2020-21-mun-spb-1",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "people",
+    "note": "Ответ 论语 — ячейка book строки th-kongzi, но встраивание не пройдёт: варианты в кавычках 《》 (《论语》 ≠ 论语), а у 《大学》 нет строки. people-q09 (книга слов Конфуция → 论语) — тот же ответ, другой факт, текст не подсказывает."
+   }
+  ],
+  "dossier": "people",
+  "part": "lit"
+ },
+ {
+  "id": "2020-21-mun-spb-3",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2024-25-mun-kursk-8",
+    "note": "У 2024-25-mun-kursk-8 неверный вариант 落汤鸡 — готовый ответ этого вопроса (подсказка через варианты)."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Выражение употребительное, не узкое."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2020-21-mun-spb-4",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "literature/works: строка 水调歌头·明月几时有 (author 苏轼)",
+    "note": "В lit-a-sushi ячейка work = 念奴娇·赤壁怀古, стихотворение о луне — не ячейка. Нужна строка стихотворения в works. Но у 李白, 杜甫 там нет ячеек author: подписи появятся, только если завести строки их стихов (как для 2019-20-mun-kgd-5, 2023-24-mun-krsk-2)."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Строки к Празднику середины осени известны. Утечек нет."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2020-21-shk-mosobl-49",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2019-20-shk-mosobl-49",
+    "note": "Вариант o2 «欢迎远方的朋友，是一件高兴的事» — дословно ответ 2019-20-shk-mosobl-49, o3 — толкование 远亲不如近邻. Ошибка бланка: варианты взяты из других заданий, а o1 «趁着铁烧红时立刻锤打» — буквальный смысл, тоже можно счесть верным. Кандидат в withheld.json или правку вариантов — автору решить."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2021-22-mun-amur-1",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "holidays/holidays: строка 联合国中文日 (date 四月二十日, country 国际)",
+    "note": "Дат-колонка есть, строки нет. Помеха: варианты записаны с 号 (四月八号, 十月一号), в таблице — с 日 (十月一日), подписи не сойдутся без правки."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Для изучающих китайский факт уместен, не узкий. Дублей нет."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "lit"
+ },
+ {
+  "id": "2021-22-mun-amur-9",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "literature-q43 (lit-a-luxun)",
+    "note": "Обратная сторона literature-q43 («Под каким псевдонимом писал Чжоу Шужэнь» → 鲁迅): каждый текст называет ответ другого. Встраивание в ту же строку снимает утечку (одна строка — разные стороны); без него нужна группа."
+   },
+   {
+    "kind": "embed",
+    "target": "literature/authors/lit-a-luxun",
+    "ask": "alias",
+    "given": "name",
+    "note": "周树人 — ячейка alias, 舒庆春 (老舍) и 李尧棠 (巴金) тоже ячейки alias. Помеха: 冰心 — сам псевдоним (настоящее имя 谢婉莹), ячейки alias с этим текстом нет, подпись не найдётся. Встраивание пройдёт, только если поправить вариант или подписать иначе."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2021-22-mun-lenobl-8",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "suzhou-hangzhou-paradise (2019-20-mun-mosobl-49)",
+    "note": "Уже в группе. Вариант «地上有锅包肉» шуточный — бланк как есть."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2021-22-mun-mosobl-55",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "suihan-sanyou-not (2019-20-mun-khab-6)",
+    "note": "Уже в группе. Тот же вопрос с другим ответом (牡丹 и 兰): не склеивать."
+   }
+  ],
+  "dossier": "painting",
+  "part": "lit"
+ },
+ {
+  "id": "2021-22-mun-mosobl-56",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2025-26-mun-krym-1",
+    "note": "Текст «не относится к гохуа» называет ответ 2025-26-mun-krym-1 (国画) транскрипцией — подсказка словом."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Ответ 戏剧 — не строка. Жанры 山水画/花鸟画/人物画 есть в painting/terms, но варианты без 画, а таблица terms не спрашивается. Встроить нельзя."
+   }
+  ],
+  "dossier": "painting",
+  "part": "lit"
+ },
+ {
+  "id": "2021-22-mun-mosobl-58",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "landmarks",
+    "note": "Обобщающий термин 曲艺. В landmarks/intangible есть int-xiangsheng, но колонки «род искусства» нет. Дублей нет."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "lit"
+ },
+ {
+  "id": "2021-22-mun-omsk-10",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Простой языковой вопрос (фамилия в имени 毛志明). Досье нет."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2021-22-mun-omsk-4",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "confucius-word",
+    "note": "Ответ 孔子 называют тексты группы confucius-word (people-q09 «Конфуция (孔子)», 2017-18-shk-6 «孔子的故乡…» и др.) и новые 2018-19-mun-spb-5, 2020-21-mun-novg-7. Подсказка словом — в группу."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Вопрос тривиален (варианты-омофоны 空字/控子). Встраивать не нужно."
+   }
+  ],
+  "dossier": "people",
+  "part": "lit"
+ },
+ {
+  "id": "2021-22-mun-omsk-8",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2018-19-mun-47 (ethnos-q92), 2024-25-shk-mosobl-1",
+    "note": "Текст 2018-19-mun-47 («в основе путунхуа», «普通话以哪个方言为基础») называет ответ 普通话. У 2024-25-shk-mosobl-1 (язык Китайской Республики → 国语) ответ и неверный вариант этого вопроса поменялись местами, это соседний факт."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Посылка «какой диалект — официальный язык» неточна (путунхуа — норма, а не диалект), но ответ верен."
+   }
+  ],
+  "dossier": "ethnos",
+  "part": "lit"
+ },
+ {
+  "id": "2021-22-mun-tat-57",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "landmarks/intangible/int-kunqu",
+    "ask": "name",
+    "note": "Как landmarks-q89 (int-jingju): where country 中国, exclude не-опер (int-guqin, int-shufa, int-zhuanke, int-zhenjiu, int-zhusuan, int-jieqi, int-taijiquan, int-zhicha, int-xiangsheng, int-xiangqi). Исходные 京剧/豫剧/粤剧 — ячейки name, добавятся 越剧, 黄梅戏. Второго «百戏之祖» нет, пояснение неверных вариантов не называет."
+   },
+   {
+    "kind": "fact-group",
+    "target": "landmarks-q107 (та же строка int-kunqu)",
+    "note": "landmarks-q107 (что внесено в список ЮНЕСКО → 昆曲) — та же строка с другой стороны. После встраивания утечкой не считается."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "lit"
+ },
+ {
+  "id": "2022-23-mun-krsk-2",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "landmarks",
+    "note": "Варианты — пары инструментов, встраивать нельзя (int-guqin в intangible есть, 二胡 нет). Дублей нет. С 2022-23-mun-mosobl-5 общий только неверный вариант 三角琴."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "lit"
+ },
+ {
+  "id": "2022-23-mun-krsk-9",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Термин 文言文, дублей нет. Набор 白话/普通话/国语 пересекается с 2021-22-mun-omsk-8 и 2024-25-shk-mosobl-1, но тексты не подсказывают."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2022-23-mun-mosobl-5",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дублей нет. Инструмента 琵琶 в досье нет (в ethnos/heritage есть 马头琴, 冬不拉 и др.)."
+   }
+  ],
+  "dossier": "ethnos",
+  "part": "lit"
+ },
+ {
+  "id": "2022-23-mun-orel-1",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "confucius-word (2016-17-zak-10); people-q10",
+    "note": "Тот же факт (состав 四书), что 2016-17-zak-10 (大学, 中庸, 孟子 + … → 论语). Текст people-q10 («книгу приписывают Лао-цзы (老子)») совпадает словом с ответом 《老子》 и подсказывает, что это даосская книга."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Таблицы канонов нет, варианты в 《》 — встроить нельзя."
+   }
+  ],
+  "dossier": "people",
+  "part": "lit"
+ },
+ {
+  "id": "2022-23-shk-mosobl-17",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2023-24-mun-kem-5, 2023-24-mun-komi-10",
+    "note": "Верный вариант 儒家、佛教、道家 перечисляет ответы kem-5 (儒学) и komi-10 (儒教) и неверный 道教 у komi-10. Подсказка через варианты, слабая."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Варианты — списки, встраивать нельзя."
+   }
+  ],
+  "dossier": "people",
+  "part": "lit"
+ },
+ {
+  "id": "2022-23-shk-mosobl-4",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "literature/works/lit-w-xiyouji",
+    "ask": "name",
+    "note": "where set 四大名著: набор совпадает с исходными 水浒传/红楼梦/三国演义, подписи будут из ячеек. Второго верного нет. Строку уже встраивают literature-q10 и literature-q100, ещё одна запись допустима."
+   },
+   {
+    "kind": "fact-group",
+    "target": "literature-four-novels-names; literature-q40, 2018-19-mun-vrn-4, 2016-17-shk-6",
+    "note": "Тексты literature-q40, 2018-19-mun-vrn-4, 2016-17-shk-6 называют «Путешествие на Запад» — слабая подсказка словом, как отмечено у literature-q10."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2023-24-mun-kem-2",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "guangdong-yue (ethnos-q86)",
+    "note": "Обратная сторона ethnos-q86 («На каком диалекте говорят в Гуандуне» → 粤方言): текст q86 называет ответ 广东. Добавить в группу guangdong-yue."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "В dia-yue есть ячейка region = 广东, но ответ — 广东省 (текст не совпадает), а у 陕西省/黑龙江省/湖北省 нет ячеек region. Встроить без правок нельзя."
+   }
+  ],
+  "dossier": "ethnos",
+  "part": "lit"
+ },
+ {
+  "id": "2023-24-mun-kem-5",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2023-24-mun-komi-10, 2022-23-shk-mosobl-17",
+    "note": "Почти тот же вопрос, что komi-10 (учение Китая → 儒教), с другим текстом ответа (儒学) и другими вариантами. Не склеивать (ответы записаны по-разному), связать группой."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Тривиальный вопрос. В thinkers ячейка school = 儒家, текст не совпадает — не встроить."
+   }
+  ],
+  "dossier": "people",
+  "part": "lit"
+ },
+ {
+  "id": "2023-24-mun-komi-10",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2023-24-mun-kem-5, 2022-23-shk-mosobl-17",
+    "note": "См. kem-5: тот же факт (конфуцианство), ответ записан как 儒教."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Встроить нельзя: у 佛教/道教/伊斯兰教 нет ячеек."
+   }
+  ],
+  "dossier": "people",
+  "part": "lit"
+ },
+ {
+  "id": "2023-24-mun-krsk-2",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "literature/works: строка 将进酒 (author 李白)",
+    "note": "Как 2019-20-mun-kgd-5: в lit-a-libai ячейка work = 静夜思. Нужны строки стихов в works. Помеха: у 王之涣 нет строки (можно завести lit-a-wangzhihuan, 登鹳雀楼), у 杜甫 и 白居易 нет ячеек в works.author."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Стихотворение известное, не узкое."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2023-24-mun-krsk-4",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "people/thinkers/th-kongzi",
+    "ask": "name",
+    "note": "Как people-q02/q03 (те же встраивания в th-kongzi): исходные 老子/孙子/韩非子 — ячейки name. Добавятся 庄子, 孟子, 墨子, 荀子, 杨朱. Второго верного нет: 孟子 — 亚圣, «второй мудрец», так и в подписи. Колонки title (至圣) у thinkers нет."
+   },
+   {
+    "kind": "fact-group",
+    "target": "confucius-word",
+    "note": "Ответ 孔子 называют тексты группы (people-q09, 2017-18-shk-6 и др.)."
+   }
+  ],
+  "dossier": "people",
+  "part": "lit"
+ },
+ {
+  "id": "2023-24-mun-krsk-6",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "tang-era-literature (literature-q25)",
+    "note": "Обратная сторона literature-q25 («Кто написал 琵琶行» → 白居易): каждый текст называет ответ другого. Добавить в группу tang-era-literature."
+   },
+   {
+    "kind": "embed",
+    "target": "literature/authors/lit-a-baijuyi",
+    "ask": "work",
+    "given": "name",
+    "note": "琵琶行 — ячейка work, 静夜思 (李白) тоже. Но у 乌衣巷 (刘禹锡, в таблице 竹枝词) и 七步诗 (曹植, строки нет) ячеек нет — встраивание упадёт без правки вариантов. Пока достаточно группы."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2023-24-mun-spb-9",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "literature",
+    "note": "Ответ 诗歌 согласуется с literature-q12 (诗经 — первый поэтический свод). Подсказки по тексту нет, встроить некуда."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2023-24-mun-sverd-58",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Поговорка 骑驴找驴. Дублей нет, досье нет."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2023-24-shk-mosobl-12",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "literature/authors/lit-a-maodun",
+    "ask": "name",
+    "note": "Исходные 杜甫/莫言/李白 — ячейки name. Но пул authors даёт спорные «вторые верные»: 鲁迅文学奖 — тоже одна из четырёх главных литпремий Китая, есть премии имени 老舍, 曹禺 и 夏衍. Встраивать только с exclude lit-a-luxun, lit-a-laoshe, lit-a-caoyu, lit-a-xiayan (или where по набору). Подпись lit-a-maodun называет премию — это подпись ответа, не утечка."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Конфликта с lit-a-chenzhongshi (prize 茅盾文学奖) нет. Вопросов о премии Мао Дуня в банке нет."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2023-24-shk-mosobl-5",
+  "findings": [
+   {
+    "kind": "conflict",
+    "target": "myths-q07 (2023-24-reg-5), myths-q17",
+    "note": "Посылка: 仓颉, 神农, 伏羲 «имеют отношение к изобретению письменности», 神农 — через узелковое письмо (по «Шовэнь»). А myths-q07 («божество, подарившее людям письменность» → 伏羲) держит 神农 неверным вариантом. Прямого противоречия нет, но 神农 и письменность — натяжка. Стоит проверить, не создаёт ли это спорную посылку (кандидат в withheld)."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Вопрос «кто не…» в myths/figures не встраивается: пул дал бы много верных."
+   }
+  ],
+  "dossier": "myths",
+  "part": "lit"
+ },
+ {
+  "id": "2024-25-mun-bash-6",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Языковой факт (заимствования из английского). Дублей нет, досье нет."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2024-25-mun-krym-9",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "confucius-word",
+    "note": "Ответ 孔子 называют тексты группы."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Не встроить: 倪瓒 (art-p-nizan), 郑和 (trv-zhenghe), 周深 (певец) — не из thinkers, а пул thinkers дал бы второй верный ответ (老子 тоже почитаемый мудрец)."
+   }
+  ],
+  "dossier": "people",
+  "part": "lit"
+ },
+ {
+  "id": "2024-25-mun-kursk-8",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2020-21-mun-spb-3",
+    "note": "Неверный вариант 落汤鸡 — ответ 2020-21-mun-spb-3, связь через варианты."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Разговорное выражение 旱鸭子, не узкое."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2024-25-mun-udm-6",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "literature",
+    "note": "Вопрос-роль («кто из — поэт»), как 2023-24-reg-7 (художник → 徐悲鸿, тот же набор 聂耳/老舍) и 2018-19-mun-vrn-3. Встроить нельзя: пул поэтов дал бы второй верный. Утечек нет."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2024-25-mun-udm-8",
+  "findings": [
+   {
+    "kind": "duplicate",
+    "target": "literature-q46",
+    "how": "pool",
+    "note": "literature-q46 — тот же вопрос («Кто автор сборника «Богини» (女神, 1921)» → 郭沫若) с набором из authors. Вариант: встроить udm-8 в lit-a-guomoruo (ask name, given work; 鲁迅/老舍/李白 — ячейки name, вторых верных нет), а literature-q46 снять в removed.json. В тексте udm-8 «поэма «Богиня»» — это сборник «Богини»; можно поправить в editorial.json."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2025-26-mun-chel-3",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2020-21-mun-lenobl-7, 2017-18-shk-10 (dynasties-q114)",
+    "note": "Текст называет 甲骨文 самой ранней письменностью — это ответ 2020-21-mun-lenobl-7. 2017-18-shk-10 («надписи на костях») подсказывает материал. Одна группа с lenobl-7."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Колонки «материал» у письменности нет (dyn-shang: known = 甲骨文). Встроить некуда."
+   }
+  ],
+  "dossier": "dynasties",
+  "part": "lit"
+ },
+ {
+  "id": "2025-26-mun-krym-1",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2021-22-mun-mosobl-56",
+    "note": "Текст 2021-22-mun-mosobl-56 («не относится к гохуа») называет ответ 国画 транскрипцией."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Строки 国画 в painting/terms нет, а 书法/文言 — не ячейки одной колонки. Встроить нельзя."
+   }
+  ],
+  "dossier": "painting",
+  "part": "lit"
+ },
+ {
+  "id": "2025-26-mun-kursk-10",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "cinema-q31",
+    "note": "Текст cinema-q31 («фантастический фильм… по рассказу Лю Цысиня») прямо говорит, что Лю Цысинь — фантаст. Подсказка по сути."
+   },
+   {
+    "kind": "embed-missing-row",
+    "target": "literature/authors: строка lit-a-liucixin (刘慈欣, work 三体, genre 科幻小说, prize 雨果奖)",
+    "note": "Лю Цысиня в досье literature нет, хотя «Задача трёх тел» общеизвестна (и связана с cin-cn-wandering-earth). Встраивание ask genre упрётся в подписи: ячеек 爱情小说/恐怖小说/历史小说 в genre нет (есть 历史演义小说)."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2025-26-mun-mosobl-4",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "literature/works/lit-w-sanguoyanyi",
+    "ask": "name",
+    "note": "where set 四大名著: набор = исходные 西游记/水浒传/红楼梦, подписи из ячеек. Строку уже встраивает literature-q17, допустимо."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2015-16-zak-7 (literature-q01); literature-four-novels-names",
+    "note": "Текст «说曹操，曹操就到» называет 曹操 — ответ 2015-16-zak-7 («老骥伏枥» → 曹操), подсказка словом. 2016-17-shk-2 и literature-q96 называют 三国演义 (группа literature-four-novels-names)."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2025-26-mun-novg-10",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "В банке дубля нет, но 画蛇添足 уже есть в разделе «Чэнъюй» (cy-画蛇添足, accepted, формат «аналог»). Раздел живёт отдельно, fact-groups туда не ведут — автору на заметку. Опечатка бланка в o2: «时团结合作很重要»."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2025-26-mun-nsk-1",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "people",
+    "note": "Ответ 无为而治 верен; 苦谛/八正道 — буддийские, 性善论 — Мэн-цзы. Колонки «идея» у thinkers нет, встроить некуда. Дублей нет."
+   }
+  ],
+  "dossier": "people",
+  "part": "lit"
+ },
+ {
+  "id": "2025-26-mun-perm-2",
+  "findings": [
+   {
+    "kind": "conflict",
+    "target": "people/thinkers/th-xunzi",
+    "note": "Посылка противоречит ячейке school = 儒家 и подписи («Сюнь-цзы — конфуцианец»): текст противопоставляет его учение конфуцианству («хотя и не было столь популярным, как конфуцианство»). Сюнь-цзы — конфуцианец; поправить формулировку в editorial.json."
+   },
+   {
+    "kind": "embed",
+    "target": "people/thinkers/th-xunzi",
+    "ask": "name",
+    "note": "Ответ — ячейка name, 庄子/孟子 — ячейки. Помеха: вариант 韩非 ≠ ячейка 韩非子 — нужна правка o4 в editorial.json. Пул (孔子, 老子, 墨子, 孙子, 杨朱) второго верного не даёт."
+   }
+  ],
+  "dossier": "people",
+  "part": "lit"
+ },
+ {
+  "id": "2025-26-mun-perm-8",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2025-26-mun-ryaz-8",
+    "note": "2025-26-mun-ryaz-8 («что не является приветствием», среди приветствий 吃了吗) прямо даёт ответ этого вопроса."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Бытовой языковой факт, досье нет."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2025-26-mun-ryaz-8",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2025-26-mun-perm-8",
+    "note": "Варианты и текст подсказывают ответ 2025-26-mun-perm-8 (吃了吗 — приветствие)."
+   },
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Досье нет."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2025-26-mun-tat-56",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "literature/authors: строка lit-a-gaoxingjian (高行健, prize 诺贝尔文学奖, гражданство Франции)",
+    "note": "Строки нет. Встраивание через given prize не пройдёт: у исходного варианта 莫言 та же ячейка prize (второй «нобелевец»), а убрать исходный вариант нельзя. Подойдёт только вопрос с явными вариантами."
+   },
+   {
+    "kind": "fact-group",
+    "target": "literature-q49",
+    "note": "Соседний факт: literature-q49 («2012 — первым из писателей с гражданством КНР» → 莫言) существует как раз из-за Гао Синцзяня. Противоречия нет, утечка слабая (莫言 — вариант здесь)."
+   }
+  ],
+  "dossier": "literature",
+  "part": "lit"
+ },
+ {
+  "id": "2026-27-mun-3",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "1958 (утверждение «Схемы пиньиня» ВСНП) верно. Связан по теме с 2016-17-zak-9 (словарь по пиньиню), но не подсказывает. Досье нет."
+   }
+  ],
+  "dossier": null,
+  "part": "lit"
+ },
+ {
+  "id": "2019-20-shk-mosobl-46",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2022-23-mun-orel-2",
+    "note": "Один факт: установление отношений КНР–СССР в 1949 г.; 70-летие = 2019 — арифметика от года 1949, пояснение прямо называет 1949. Если оставлять оба — одна группа fact-groups."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "russia"
+ },
+ {
+  "id": "2020-21-mun-lenobl-1",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет (2016-17-reg-10 о странах больше Китая по площади — другой факт). Таблицы с площадью стран нет."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2020-21-mun-lenobl-3",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "dynasties/rulers/rul-ru-alex2",
+    "ask": "name",
+    "given": "deed",
+    "note": "Ответ 亚历山大二世 — ячейка name; встроить ask name, given deed (农奴制改革), where dynasty 罗曼诺夫王朝 (как dynasties-q45). Препятствие: исходные варианты 彼得一世, 凯瑟琳大帝 не совпадают с ячейками (彼得大帝, 叶卡捷琳娜二世), а 亚历山大二十 — ошибка бланка без ячейки; нужна правка вариантов в editorial.json."
+   },
+   {
+    "kind": "fact-group",
+    "target": "dynasties-q119",
+    "note": "Обратная сторона того же факта: dynasties-q119 спрашивает реформу Александра II (农奴制改革). После встраивания в rul-ru-alex2 их разведёт factRow; без встраивания — группа. Рядом также 2023-24-mun-35 (Освободитель, встроен в ту же строку) и modern-history-q97 (год отмены, ev-ru-serfdom)."
+   }
+  ],
+  "dossier": "dynasties",
+  "part": "russia"
+ },
+ {
+  "id": "2020-21-mun-lenobl-6",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Разгром Квантунской армии 1945 г. Дубля и строки в modern-history нет (можно бы завести событие «Маньчжурская операция», но это не обязательно)."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "russia"
+ },
+ {
+  "id": "2020-21-mun-lenobl-9",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Число народов РФ (190+). Дубля нет; в ethnos/peoples нет счётной колонки."
+   }
+  ],
+  "dossier": "ethnos",
+  "part": "russia"
+ },
+ {
+  "id": "2021-22-mun-lenobl-7",
+  "findings": [
+   {
+    "kind": "duplicate",
+    "target": "modern-history-q100",
+    "how": "pool",
+    "note": "Тот же вопрос и ответ («В каком году распался Советский Союз?» — 1991, ev-ru-ussr-end), неверные варианты другие. Чище всего превратить modern-history-q100 во встраивание этой записи; для этого ответ 一九九一年 и варианты (二零零零年 и т. д.) нужно привести к формату колонки year («1991 年») через editorial.json."
+   },
+   {
+    "kind": "embed",
+    "target": "modern-history/events/ev-ru-ussr-end",
+    "ask": "year",
+    "note": "ask year; препятствие — формат ответа (一九九一年 ≠ «1991 年») и варианты без ячеек в колонке year."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "russia"
+ },
+ {
+  "id": "2022-23-mun-lenobl-53",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "people-q25",
+    "note": "Та же строка sci-ru-mendeleev (people-q25: с чем связано имя Менделеева → 元素周期律, варианты которого выдают, что он учёный). Сам вопрос почти без выбора: 皇帝/作家/科学家."
+   }
+  ],
+  "dossier": "people",
+  "part": "russia"
+ },
+ {
+  "id": "2022-23-mun-lenobl-56",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Сказка «Теремок»; в myths/stories есть только 拔萝卜 и «Рыбак и рыбка». Вопрос на отрицание — встраивать некуда."
+   }
+  ],
+  "dossier": "myths",
+  "part": "russia"
+ },
+ {
+  "id": "2022-23-mun-lenobl-57",
+  "findings": [
+   {
+    "kind": "duplicate",
+    "target": "2018-19-shk-8",
+    "how": "pool",
+    "note": "Тот же факт: 1147 — год основания (первого летописного упоминания) Москвы; у 2018-19-shk-8 другие неверные варианты (1201/1247/1148). Склейка с общим набором требует одинакового текста ответа: 一一四七年 против 1147 — сначала правка в editorial.json. Формулировка «основана» здесь неточна: 1147 — год первого упоминания (так и в about строки city-ru-moscow)."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2022-23-mun-lenobl-58",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Китай, а не Россия (тема записи сбита): 34 единицы провинциального уровня. Дубля нет (2015-16-mun-3 и 2022-23-shk-q637921 — счёт автономных районов и САР, другие факты)."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2022-23-mun-mosobl-10",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Год китайского языка в России (2010). Дубля нет, досье по межкультурным связям нет."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2022-23-mun-mosobl-2",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Субъекты РФ (республика, край, город федерального значения — но не «провинция»). Ячейка 省 есть только в колонке kind провинций Китая — встраивать некуда."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2022-23-mun-mosobl-4",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "АТЭС: в него входят и Россия, и Китай. Дубля нет."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2022-23-mun-orel-2",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2019-20-shk-mosobl-46",
+    "note": "Тот же факт (отношения КНР–СССР с 1949 г.) — у 2019-20-shk-mosobl-46 спрашивается 70-летие (2019). В modern-history строки нет (ev-kaiguo — образование КНР, year 1949 — другой факт)."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "russia"
+ },
+ {
+  "id": "2022-23-mun-tat-10",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Калининград не был столицей. Вопрос на отрицание; строки Калининграда в provinces/cities нет — встраивать некуда."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2022-23-shk-mosobl-16",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Автор музыки гимна РФ — А. Александров. В people/composers строки нет; 2021-22-reg-qbb2e02 (год утверждения гимна) — другой факт."
+   }
+  ],
+  "dossier": "people",
+  "part": "russia"
+ },
+ {
+  "id": "2023-24-mun-chel-7",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "День флага РФ — 22 августа (вариант — одно число). Строки в holidays нет; можно завести hol-ru-flag, но праздник не выходной и встретится нечасто."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "russia"
+ },
+ {
+  "id": "2023-24-mun-kem-10",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "dynasties-q118",
+    "note": "Тот же факт с другой стороны: dynasties-q118 (Пётр в 1703 г. → 建立圣彼得堡), 2025-26-zak-q387588 (в каком году по приказу Петра I столицей стал Петербург), а текст 2025-26-mun-ryaz-2 («город, основанный Петром I и бывший столицей») прямо даёт ответ. Если оставлять все — одна группа."
+   },
+   {
+    "kind": "embed",
+    "target": "dynasties/rulers/rul-ru-peter1",
+    "ask": "name",
+    "given": "deed",
+    "note": "ask name (given deed 建立圣彼得堡 — близко, но не «перенос столицы»). Препятствия: ответ 彼得一世 ≠ ячейка 彼得大帝, варианты 凯瑟琳大帝 и ошибка бланка 亚历山大二十 без ячеек; на строке уже четыре встроенные записи."
+   }
+  ],
+  "dossier": "dynasties",
+  "part": "russia"
+ },
+ {
+  "id": "2023-24-mun-kem-9",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/cities/city-ru-blagoveshchensk",
+    "ask": "name",
+    "note": "ask name, where country 俄罗斯; все исходные варианты (莫斯科/圣彼得堡/弗拉基米尔) — ячейки name. Второго верного в наборе нет: Владивосток, Чита, Кызыл на границе с Китаем не стоят. Проверяющему стоит посмотреть набор."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2020-21-zak-q1f0e35",
+    "note": "Утечка: текст 2020-21-zak-q1f0e35 («С какой провинцией Китая граничит российский город Благовещенск?») прямо говорит, что Благовещенск — на границе с Китаем. provinces-q83 — та же строка, после встраивания её разведёт factRow."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2023-24-mun-mosobl-10",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "painting-q82",
+    "note": "Утечка: текст «картине К. Брюллова „Последний день Помпеи“» даёт ответ painting-q82 (кто написал 庞贝城的末日 → 卡尔·布留洛夫). Колонки сюжета/стихии в painting/works нет, встраивать некуда."
+   }
+  ],
+  "dossier": "painting",
+  "part": "russia"
+ },
+ {
+  "id": "2023-24-mun-mosobl-3",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "literature/authors",
+    "note": "Строки Грибоедова нет: завести lit-a-ru-griboedov (work 智慧的痛苦 / «Горе от ума»). Варианты даны полными именами (伊万·屠格涅夫 и т. п.), а в таблице — короткие (屠格涅夫), для встраивания нужна правка."
+   }
+  ],
+  "dossier": "literature",
+  "part": "russia"
+ },
+ {
+  "id": "2023-24-mun-spb-3",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "provinces/cities",
+    "note": "Хабаровска нет среди городов (есть только ячейка money rub-5000-1997.city): завести city-ru-khabarovsk; Мурманска тоже нет. При встраивании набор из колонки name даст второй верный ответ: Владивосток, Благовещенск, Якутск, Чита, Улан-Удэ — все на Дальнем Востоке; их нужно исключить через exclude."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2023-24-mun-tat-10",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Кремли Москвы, Нижнего и Казани — три строки landmarks/fortifications, но ответ — родовое 克里姆林宫, встраивать некуда. В вопросе только три варианта."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "russia"
+ },
+ {
+  "id": "2023-24-mun-udm-1",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Владивосток основан в 1860 г. Колонки года основания в provinces/cities нет; дубля нет."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2023-24-mun-udm-4",
+  "findings": [
+   {
+    "kind": "duplicate",
+    "target": "2021-22-zak-q0ee7de",
+    "how": "retire",
+    "note": "Тот же вопрос («высший законодательный орган РФ»), но ответ записан иначе: здесь родовое 议会, там точное 联邦会议. Склеивать записи с разным текстом ответа нельзя: оставить 2021-22-zak-q0ee7de (точнее, и у неё нет китайских органов 全国人大/国务院 среди вариантов), эту — в retired.json; или связать их группой fact-groups."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2023-24-mun-udm-5",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2021-22-mun-lenobl-7",
+    "note": "Тот же год и та же цепочка событий (распад СССР в 1991 г. — modern-history-q100 / 2021-22-mun-lenobl-7). Посылка спорная: название «Российская Федерация» принято 25.12.1991, но День России (hol-ru-eluosi) отмечает декларацию 1990 г. — ученик может ответить «1990»; в вариантах его нет, так что ключ однозначен."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "russia"
+ },
+ {
+  "id": "2023-24-shk-mosobl-15",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Гастроли Мэй Ланьфана в СССР (1935). Других вопросов об этом нет (2016-17-reg-3 и 2020-21-pri-q26db53 с ответом 梅兰芳 — о нём как об актёре, другой факт). Досье по театру нет."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2023-24-shk-mosobl-4",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "people/composers",
+    "note": "Бородина нет в таблице: завести cmp-ru-borodin (work 伊戈尔王 / «Князь Игорь»); 鲍罗丁 уже встречается вариантом в addition-b1-20. Хачатуряна (哈恰图良) в таблице тоже нет."
+   }
+  ],
+  "dossier": "people",
+  "part": "russia"
+ },
+ {
+  "id": "2023-24-shk-mosobl-6",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "nature-q161",
+    "note": "Утечка: текст «самой высокой горной вершины России и Европы, Эльбруса» даёт ответ nature-q161 (высочайшая вершина России и Европы → 厄尔布鲁士山). Колонки высоты нет (высота 5642 м только в about строки mtn-ru-elbrus, совпадает с ключом)."
+   }
+  ],
+  "dossier": "nature",
+  "part": "russia"
+ },
+ {
+  "id": "2023-24-shk-mosobl-7",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Берёза — символ России. Таблицы растений нет, дубля нет."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2024-25-mun-kem-9",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "provinces/cities",
+    "note": "Ульяновска нет в таблице: завести city-ru-ulyanovsk (known 列宁的故乡). С per-ru-lenin (born 辛比尔斯克 — прежнее название того же города) не расходится."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2024-25-mun-klg-8",
+  "findings": [
+   {
+    "kind": "narrow",
+    "target": null,
+    "note": "Город-побратим Шанхая — Петербург (1988): местная деталь, которую школьник вряд ли встретит. Дубля нет."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2024-25-mun-mosobl-9",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Толстой и переводы «Дао дэ цзин»/«Лунь юя» — известный межкультурный факт. Колонки нет, встраивать некуда. Вариант 米哈伊尔·列尔蒙托夫 — нестандартная запись (в банке 莱蒙托夫)."
+   }
+  ],
+  "dossier": "literature",
+  "part": "russia"
+ },
+ {
+  "id": "2024-25-mun-nsk-5",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Саммит БРИКС 2024 в Казани. У city-ru-kazan ячейка known = 体育之都 (у Уфы known — 金砖国家领导人第七次会晤), так что встраивать некуда; Перми (彼尔姆) в таблице нет."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2024-25-mun-udm-1",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Растрелли — архитектор Зимнего дворца (lm-ru-winter-palace). Колонки архитектора в landmarks нет. Неверные варианты (Пушкин, Толстой, Попов) — не архитекторы, ответ угадывается отсевом."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "russia"
+ },
+ {
+  "id": "2024-25-mun-udm-2",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "modern-history/events/ev-ru-borodino",
+    "ask": "year",
+    "note": "ask year. Препятствия: ответ «1812» ≠ ячейка «1812 年», варианты 1772/1801/1872 не ячейки колонки year — нужны правки в editorial.json."
+   },
+   {
+    "kind": "fact-group",
+    "target": "dynasties-q56",
+    "note": "Утечка словом: тексты dynasties-q56 («Отечественной войне 1812 года»), literature-q87 и 2021-22-zak-q3ba1dd называют год 1812. Если оставлять — одна группа (решение 2026-10-22). 2024-25-reg-3 (Кутузов при Бородине) — другая сторона, утечки нет."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "russia"
+ },
+ {
+  "id": "2024-25-mun-udm-3",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "literature-q85",
+    "note": "Обратная сторона строки lit-w-ru-cherry: literature-q85 («последняя пьеса Чехова» → 樱桃园) своим текстом называет и Чехова, и ответ. Встроить в ту же строку (ask author) мешают варианты 列宾 и 拉斯特雷利 — их нет в колонке author. Из четырёх вариантов писатели только Чехов и Пушкин — отсев."
+   }
+  ],
+  "dossier": "literature",
+  "part": "russia"
+ },
+ {
+  "id": "2024-25-shk-mosobl-15",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Нефть. Рядом 2024-25-reg-5 (по запасам Россия первая — 天然气, а 石油 там неверный вариант): это другой факт, противоречия нет. Вариант 麦 — не полезное ископаемое."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-chel-10",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2022-23-zak-8",
+    "note": "Мягкая подсказка: текст 2022-23-zak-8 называет Сочи-2014, а 2018-19-reg-5 — Олимпиаду в Москве; вместе они дают ответ «два раза». У city-ru-sochi known = 冬季奥运会."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-chel-2",
+  "findings": [
+   {
+    "kind": "duplicate",
+    "target": "literature-q87",
+    "how": "pool",
+    "note": "Тот же вопрос и ответ (автор «Войны и мира» — Толстой), другие неверные варианты. Текст ответа расходится: 列夫·托尔斯泰 против 托尔斯泰 (и 费奥多尔·杜斯妥也夫斯基 — иная запись 陀思妥耶夫斯基). Лучше сделать literature-q87 встраиванием этой записи (lit-w-ru-warpeace, ask author), приведя имена к ячейкам через editorial.json."
+   },
+   {
+    "kind": "embed",
+    "target": "literature/works/lit-w-ru-warpeace",
+    "ask": "author",
+    "note": "ask author; после правки имён на короткие формы таблицы."
+   }
+  ],
+  "dossier": "literature",
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-chel-5",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/cities/city-ru-saint-petersburg",
+    "ask": "name",
+    "given": "nickname",
+    "note": "ask name, given nickname (北方首都); в колонке nickname второго «Северной столицы» нет. Препятствие: варианта 摩尔曼斯克 нет в таблице (нужна строка city-ru-murmansk или правка)."
+   },
+   {
+    "kind": "fact-group",
+    "target": "provinces-q106",
+    "note": "Обратная сторона: provinces-q106 спрашивает прозвище Петербурга (北方首都). После встраивания в ту же строку их разведёт factRow."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-kem-7",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Присоединение Сибири началось в XVI веке (поход Ермака, 1582). Строки нет; можно завести событие ev-ru-yermak в modern-history/events."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-kgd-58",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "provinces/cities",
+    "note": "Даляня (大连) нет ни в одной таблице: завести city-dalian (region 辽宁). Остальные варианты (哈尔滨, 上海, 广州) — ячейки name."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2023-24-mun-spb-8",
+    "note": "Мягко: тот же сюжет русской аренды Ляодуна (Порт-Артур → 旅顺, сейчас район Даляня), а текст 2022-23-mun-5 называет «Дальний» — русское имя Даляня."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-mosobl-10",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "literature/authors",
+    "note": "Бажова нет в таблице: можно завести lit-a-ru-bazhov (work 孔雀石箱 / «Малахитовая шкатулка»). Вариант 尼古拉•列斯科夫 записан с «•»."
+   }
+  ],
+  "dossier": "literature",
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-mosobl-9",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/cities/city-ru-yakutsk",
+    "ask": "name",
+    "given": "river",
+    "note": "ask name, given river (勒拿河), where country 俄罗斯. Других городов с river 勒拿河 нет; все исходные варианты (伊尔库茨克, 新西伯利亚, 叶卡捷琳堡) — ячейки name. Чистое встраивание; provinces-q77 — та же строка, их разведёт factRow."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-nnov-1",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/cities/city-ru-moscow",
+    "ask": "name",
+    "note": "ask name, where country 俄罗斯: все варианты — ячейки name, второго верного нет. На строке уже встроена 2022-23-mun-4. Вопрос предельно лёгкий."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-nnov-10",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "«Ледовый шёлковый путь» — освоение Арктики. Дубля нет."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-nnov-4",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Порядок цветов флага РФ. Дубля нет (2023-24-mun-chel-7 — дата Дня флага)."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-nsk-6",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Кокошник. Таблицы одежды нет; дубля нет."
+   }
+  ],
+  "dossier": "ethnos",
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-ryaz-2",
+  "findings": [
+   {
+    "kind": "duplicate",
+    "target": "2020-21-pri-q4e8b0e",
+    "how": "pool",
+    "note": "Тот же вопрос о Петербурге («основан Петром I…»; 2020-21-pri-q4e8b0e встроена в city-ru-saint-petersburg как provinces-q63). Исходные варианты (莫斯科, 喀山, 符拉迪沃斯托克) входят в её общий набор."
+   },
+   {
+    "kind": "fact-group",
+    "target": "dynasties-q118",
+    "note": "Утечка: текст («основанный Петром I и бывший столицей») даёт ответы dynasties-q118 (Пётр → 建立圣彼得堡) и 2023-24-mun-kem-10 (кто перенёс столицу в Петербург → Пётр I); рядом 2025-26-zak-q387588."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-ryaz-3",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "holidays/holidays/hol-ru-shengli",
+    "ask": "name",
+    "given": "date",
+    "note": "ask name, given date (五月九日), как holidays-q23/q24. Исходные 春节/国庆节/劳动节 — ячейки name китайских строк, подписи есть; второго праздника 9 мая нет."
+   },
+   {
+    "kind": "fact-group",
+    "target": "holidays-q31",
+    "note": "Обратная сторона: holidays-q31 спрашивает дату Дня Победы (五月九日), а этот текст называет «9 мая». После встраивания в hol-ru-shengli их разведёт factRow."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-ryaz-4",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "nature/waters/wat-heilongjiang",
+    "ask": "name",
+    "given": "feature",
+    "note": "ask name, given feature (中俄界河). Все исходные варианты (黄河, 长江, 额尔齐斯河) — ячейки name. Обязательно exclude 乌苏里江 (тоже пограничная река на востоке, без ячейки feature) и 图们江 — иначе второй верный ответ."
+   },
+   {
+    "kind": "fact-group",
+    "target": "nature-q105",
+    "note": "nature-q105 — та же строка с другой стороны (впадает в Охотское море); после встраивания их разведёт factRow. Мягко: текст nature-q104 упоминает «главную пограничную реку двух стран», не называя её."
+   }
+  ],
+  "dossier": "nature",
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-ryaz-5",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "modern-history/treaties/tr-ru-2001",
+    "ask": "year",
+    "note": "ask year (given name — договор назван в тексте). Других вопросов по tr-ru-2001 нет. Препятствия: ответ 二〇〇一年 ≠ «2001 年», варианты 一九九一年/二〇一一年/二〇二一年 не ячейки колонки year — нужны правки в editorial.json."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-spb-9",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дальневосточный леопард. Таблицы животных нет; дубля нет."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-sverd-59",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Перевод поговорки (中看不中用). Не про Россию и не про досье; в разделе «Чэнъюй» записи нет. Неверные варианты — бессмысленные наборы знаков (金看不中钱, 买不卖), ответ находится отсевом."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-sverd-60",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Перевод выражения (走南闯北). В data/chengyu нет; неверные варианты — бессмысленные перестановки, ответ находится отсевом."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-mun-tat-58",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Табель о рангах (1722, Пётр I). Колонки нет (у rul-ru-peter1 deed = 建立圣彼得堡); дубля нет. Перевод 官秩表 встречается реже, чем 官阶表, но допустим."
+   }
+  ],
+  "dossier": "dynasties",
+  "part": "russia"
+ },
+ {
+  "id": "2025-26-shk-mosobl-8",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "provinces/cities",
+    "note": "Ярославля нет среди городов (ячейка 雅罗斯拉夫尔 есть только у money rub-1000-1997.city): завести city-ru-yaroslavl (Золотое кольцо, ~1010). Сергиев Посад записан как 谢尔吉耶夫波萨德, а в landmarks — 谢尔盖耶夫镇."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "russia"
+ },
+ {
+  "id": "2026-27-mun-5",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "holidays/holidays",
+    "note": "Ответ 教师节 совпадает с ячейкой китайской строки hol-jiaoshi (9月10日), встраивать туда нельзя. Нужна строка hol-ru-jiaoshi (5 октября), но тогда в колонке name будет два одинаковых 教师节 — набор надо развести через where country. Вариант 胜利节 — нестандартная запись (в таблице 胜利日)."
+   }
+  ],
+  "dossier": "holidays",
+  "part": "russia"
+ },
+ {
+  "id": "2026-27-mun-9",
+  "findings": [
+   {
+    "kind": "narrow",
+    "target": null,
+    "note": "Где Бичурин открыл школу (Кяхта) — деталь биографии. Сам Бичурин — ключевая фигура русского китаеведения, но место школы школьник вряд ли встретит. Ячейка 恰克图 есть только в названии договора tr-ru-kyakhta (恰克图条约)."
+   }
+  ],
+  "dossier": null,
+  "part": "russia"
+ },
+ {
+  "id": "2016-17-mun-spb-4",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2020-21-mun-spb-7, 2021-22-zak-q38d33e",
+    "note": "Тексты обоих вопросов называют «зимние Олимпийские игры 2022 года» — ответ этого вопроса (2022 年). Предлагаю общую группу «зимняя Олимпиада 2022»."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2016-17-mun-spb-6",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "ethnos/peoples/ppl-cn-manchu",
+    "ask": "name",
+    "note": "Вопрос «чей халат дал ципао» — ответ 满族 и оба неверных (傣族, 汉族) есть строками колонки name; общий набор народов Китая второго верного не даёт (ципао — от халата маньчжурских «знамённых» женщин). Встраивать как dynasties-q01: ask name, where country 中国."
+   }
+  ],
+  "dossier": "ethnos",
+  "part": "hist"
+ },
+ {
+  "id": "2016-17-mun-yar-1",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2021-22-shk-qadd856",
+    "note": "qadd856 спрашивает, как стали называть страну после Лю Бана (汉) — та же связь «Хань → название», текст одного подсказывает другой."
+   },
+   {
+    "kind": "ok",
+    "target": "dynasties/dynasties",
+    "note": "Встроить в колонку dai (汉代) сейчас нельзя: у dyn-shang и dyn-xia нет ячеек dai (商代, 夏代) для подписей исходных вариантов. Если завести эти ячейки — встраивается (ask dai)."
+   }
+  ],
+  "dossier": "dynasties",
+  "part": "hist"
+ },
+ {
+  "id": "2016-17-mun-yar-4",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "landmarks/fortifications/lm-cn-great-wall",
+    "note": "Ответ 长城 — ячейка name, но неверные 兵马俑 и 故宫 в колонке укреплений не встречаются (они в других таблицах и под другими названиями: 秦始皇兵马俑, 北京故宫), встраивать нельзя. Формулировка «первое военное сооружение» необычна, но дубля в банке нет."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "hist"
+ },
+ {
+  "id": "2016-17-mun-yar-9",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "landmarks/sites/lm-cn-terracotta",
+    "note": "Ячейка name — 秦始皇兵马俑, а ответ 兵马俑; неверные 故宫/长城 не из таблицы sites — встраивать нельзя. Близкие, но разные описания того же объекта: 2018-19-mun-spb-6 («восьмое чудо света»), 2023-24-reg-4 (часть комплекса гробницы), 2024-25-mun-krym-10 (материал) — подсказок друг другу не дают."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "hist"
+ },
+ {
+  "id": "2018-19-mun-lenobl-51",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "landmarks/fortifications/lm-cn-badaling",
+    "note": "Строка Бадалина есть (era=明), но ответ 明代 не совпадает с ячейкой 明, а неверные (文化大革命, 秦朝, 唐朝) — не ячейки колонки era; встраивать нельзя. Противоречия нет: dynasties-q109 (стену объединили при Цинь) о другом."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "hist"
+ },
+ {
+  "id": "2018-19-mun-spb-7",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2024-25-mun-nsk-10",
+    "note": "Вопрос nsk-10 «что НЕ изображено на гербе» показывает 天安门 среди изображённого — подсказывает ответ этого вопроса."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2018-19-mun-spb-9",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/cities/city-hangzhou",
+    "ask": "name",
+    "note": "Ответ 杭州 и неверные 北京, 上海 — ячейки name таблицы cities; второго верного в наборе нет (саммит G20 в Китае — только Ханчжоу, 2016). ask name."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "hist"
+ },
+ {
+  "id": "2018-19-mun-vrn-10",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2017-18-zak-9",
+    "note": "Ответ 2017-18-zak-9 «五星红旗» (с вариантами 四星/六星红旗) прямо называет число звёзд — утечка."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2019-20-mun-kgd-2",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет; близкие 2020-21-zak-q131194 (Китай первый по добыче угля) и 2018-19-mun-55 (Шаньси — угольная провинция) — о других фактах, ответ не подсказывают. Досье по экономике нет."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2019-20-mun-lip-4",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "ethnos/peoples/ppl-cn-miao",
+    "ask": "name",
+    "note": "Ответ 苗族 и неверные 蒙古族, 汉族, 壮族 — строки колонки name. ask name, where country 中国; проверяющему посмотреть, не даст ли общий набор второй «самый богатый костюм» (например, 彝族) — по источникам чаще называют мяо."
+   }
+  ],
+  "dossier": "ethnos",
+  "part": "hist"
+ },
+ {
+  "id": "2019-20-mun-mosobl-52",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет. Рядом 2021-22-shk-qf1333c (португальцы первыми из европейцев прибыли морем) — другой факт, но тот же ответ 葡萄牙; утечки нет. В досье modern-history события XVI века нет, у prov-aomen колонки колонизатора тоже."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "hist"
+ },
+ {
+  "id": "2019-20-shk-mosobl-47",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "ming-beijing-word (2022-23-zak-2, landmarks-q92)",
+    "note": "Ответ 2022-23-zak-2 «明清两代皇帝祭天的地方» содержит ответ этого вопроса (明清两代) — тот же факт с другой стороны; landmarks-q92 (Храм Неба построен при Мин) — соседний факт. Добавить в группу ming-beijing-word."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "hist"
+ },
+ {
+  "id": "2019-20-shk-mosobl-54",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2015-16-reg-6",
+    "note": "Обратная пара: reg-6 «в каком городе Олимпиада 2008 → 北京», этот — «в каком году Олимпиада в Пекине → 2008». Тексты взаимно называют ответы."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2020-21-mun-kgd-1",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Полное название КНР; дубля нет. Рядом 2017-18-zak-9 (название флага) и 2016-17-reg-1 (глава государства) — о другом."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2020-21-mun-kgd-8",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет, досье по экономике нет."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2020-21-mun-mosobl-52",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "opium-wars-two (modern-history-q115)",
+    "note": "modern-history-q115: Нанкинский договор 1842 г. уступил Англии 香港岛 — тот же факт (переход Гонконга к Британии) с другой стороны. Противоречия с tr-nanjing (year=1842) нет: 1841 — фактическая оккупация, пояснение это различает; ответ 1842 среди вариантов отсутствует."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "hist"
+ },
+ {
+  "id": "2020-21-mun-spb-7",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/cities/city-beijing",
+    "ask": "name",
+    "note": "Ответ 北京 и неверные 上海, 西安 — ячейки name таблицы cities; второго верного в наборе нет (张家口 в таблице нет). ask name."
+   },
+   {
+    "kind": "fact-group",
+    "target": "2016-17-mun-spb-4, 2021-22-zak-q38d33e",
+    "note": "Текст этого вопроса называет год 2022 (ответ spb-4), а текст q38d33e («помимо Пекина…») называет ответ этого вопроса. Общая группа «зимняя Олимпиада 2022»."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "hist"
+ },
+ {
+  "id": "2021-22-mun-amur-6",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "holidays-q21",
+    "note": "Текст holidays-q21 («День основания НОАК — годовщина Наньчанского восстания») называет город и связь с созданием армии — прямая утечка ответа."
+   },
+   {
+    "kind": "ok",
+    "target": "modern-history/events/ev-nanchang",
+    "note": "Строка есть (place=南昌), но place — не сторона таблицы, ответ 南昌市 ≠ 南昌, а неверные 武昌市/南京市/武汉市 — с «市» и 武汉 в колонке нет; встраивать без правок нельзя."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "hist"
+ },
+ {
+  "id": "2021-22-mun-amur-7",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет. Посылка «официальная резиденция председателя КНР» упрощённая: Чжуннаньхай — место работы ЦК КПК и Госсовета (пояснение так и говорит); автору — на заметку. В landmarks строки 中南海 нет."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "hist"
+ },
+ {
+  "id": "2021-22-mun-lenobl-3",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет. Тот же ответ 微信 у 2025-26-mun-irk-3 (платёжная система), но факт другой и подсказки нет."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2021-22-mun-lenobl-9",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет; спортивной таблицы нет (姚明 есть только строкой-подставой в space/people)."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2021-22-mun-mosobl-52",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "modern-history/figures/per-sunzhongshan",
+    "note": "Строка Сунь Ятсена есть, но неверные 孙春兰 и 孙子 не ячейки колонки name таблицы figures — встраивать нельзя. С вопросами группы lu-xun-republic-text (о Суне) утечки нет."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "hist"
+ },
+ {
+  "id": "2021-22-mun-omsk-9",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "money/banknotes",
+    "note": "Ответ записан необычно — 元人民币 (ячейка currency — 人民币), неверные 欧元/美元 в таблице не встречаются; встраивать нельзя. Дубля нет."
+   }
+  ],
+  "dossier": "money",
+  "part": "hist"
+ },
+ {
+  "id": "2021-22-mun-volog-7",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "four-inventions (2022-23-mun-mosobl-8)",
+    "note": "Уже в группе four-inventions. С mosobl-8 почти дубль (тот же ответ 指南针), но склеивать с общим набором нельзя: неверные mosobl-8 丝绸 и 茶叶 для этого вопроса («что изобретено в древнем Китае») были бы вторым верным ответом."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2021-22-mun-volog-8",
+  "findings": [
+   {
+    "kind": "narrow",
+    "target": null,
+    "note": "Статистика добычи (Китай — первый по золоту) — узкий и меняющийся факт; школьник вряд ли его встретит. Дубля нет; 2020-21-zak-q131194 (первое место по углю) — другой факт, уголь среди вариантов отсутствует."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2022-23-mun-krsk-5",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "prc-founding-1949 (modern-history-q112), 2021-22-mun-volog-1",
+    "note": "modern-history-q112 «в каком году образована КНР → 1949» — тот же год с другой стороны; текст этого вопроса («Пекин провозглашён столицей КНР») называет ответ 2021-22-mun-volog-1 («столица Китая → 北京»)."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "hist"
+ },
+ {
+  "id": "2022-23-mun-mosobl-8",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "four-inventions (2021-22-mun-volog-7)",
+    "note": "Уже в группе four-inventions. Почти дубль volog-7 (ответ 指南针), но склейка с общим набором невозможна: 丝绸/茶叶 из этого вопроса стали бы вторым верным для volog-7."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2022-23-mun-orel-3",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "modern-history/figures (строка 朱镕基)",
+    "ask": "name",
+    "note": "Ответ 周恩来 — ячейка name строки per-zhouenlai; 李克强 и 江泽民 есть, а 朱镕基 нет. Если завести строку 朱镕基 (post=国务院总理) — встраивается: ask name без given (post повторяется у 李克强/温家宝, сборка остановится на given post)."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "hist"
+ },
+ {
+  "id": "2022-23-mun-orel-4",
+  "findings": [
+   {
+    "kind": "conflict",
+    "target": "modern-history/events/ev-yapian1 (year=1840 年), modern-history-q55",
+    "note": "Посылка «опиумная война 1842 года» расходится с досье: война началась в 1840 (ячейка year, ответ modern-history-q55), 1842 — год Нанкинского договора. Ответ 英国 верен; формулировку поправить в editorial.json («1840–1842 годов»)."
+   },
+   {
+    "kind": "fact-group",
+    "target": "opium-wars-two (2023-24-zak-8, modern-history-q115)",
+    "note": "Тексты 2023-24-zak-8 («договор, навязанный Великобританией… в Первой опиумной войне») и modern-history-q115 («уступил Англии… Первую опиумную войну») называют ответ 英国 — утечка; добавить в opium-wars-two."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "hist"
+ },
+ {
+  "id": "2022-23-mun-spb-2",
+  "findings": [
+   {
+    "kind": "duplicate",
+    "target": "nature-q68",
+    "how": "pool",
+    "note": "Тот же факт: «крыша мира» = самая высокогорная железная дорога, ответ 青藏铁路; у nature-q68 другие неверные (京沪高速铁路, 西伯利亚大铁路, 贝阿铁路). Встроить в nature/engineering/eng-qingzang-railway нельзя: 包兰铁路, 成昆铁路, 京海铁路 не ячейки таблицы (京海铁路 к тому же сомнителен — такой линии, похоже, нет). Автору: склеить с общим набором или оставить одну (retire)."
+   }
+  ],
+  "dossier": "nature",
+  "part": "hist"
+ },
+ {
+  "id": "2022-23-mun-spb-8",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "ethnos/peoples",
+    "note": "Вопрос «какая не входит в пять религий» — с «НЕ», встраивать нельзя (колонка religion есть). Дубля нет."
+   }
+  ],
+  "dossier": "ethnos",
+  "part": "hist"
+ },
+ {
+  "id": "2022-23-mun-tat-2",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "dynasties-q13 (zhangqian-western-regions)",
+    "note": "dynasties-q13 спрашивает ту же дату с другой стороны: Шёлковый путь открыт при Хань после посольств Чжан Цяня (II в. до н. э.)."
+   }
+  ],
+  "dossier": "dynasties",
+  "part": "hist"
+ },
+ {
+  "id": "2022-23-mun-tat-6",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет; рядом 2017-18-reg-5 (название гимна) и 2016-17-zak-7 (композитор) — о другом."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2022-23-shk-mosobl-11",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет. 2024-25-mun-mosobl-5 (скульптура Ян Гуйфэй в Хуацинчи) — другой факт; список четырёх красавиц его ответа не выдаёт (все четыре — его варианты). Таблицы красавиц в досье нет."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2022-23-shk-mosobl-20",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "provinces/cities/city-lasa",
+    "note": "Встроить нельзя: 呼和浩特 и 乌鲁木齐 не ячейки таблицы cities. Посылка «центр буддизма в Китае» спорная: 洛阳 (Белая Лошадь, 白马寺 — «колыбель китайского буддизма») может читаться как второй верный; пояснение уточняет «тибетского буддизма» — возможно, стоит поправить формулировку."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "hist"
+ },
+ {
+  "id": "2022-23-shk-mosobl-6",
+  "findings": [
+   {
+    "kind": "narrow",
+    "target": null,
+    "note": "Число экономик АТЭС — справочная цифра международной организации, к лингвострановедению Китая относится слабо. Дубля нет."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2023-24-mun-klg-10",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет. В landmarks/sites есть 东方明珠 и 外滩, но 上海中心大厦 и неверных (上海环球金融中心, 金茂大厦) нет."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "hist"
+ },
+ {
+  "id": "2023-24-mun-klg-4",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "dynasties/rulers",
+    "note": "Посмертное имя — дубля нет; колонка title (храмовые имена 太宗, 高宗) близка по теме, но встраивать некуда."
+   }
+  ],
+  "dossier": "dynasties",
+  "part": "hist"
+ },
+ {
+  "id": "2023-24-mun-klg-7",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2023-24-mun-komi-2",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет; соседние вопросы о высших органах (2016-17-reg-2, 2020-21-reg-q094875, 2025-26-zak-q11165a) — о других органах, подсказок не дают."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2023-24-mun-komi-5",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "dynasties-q116, money-q27, dynasties-q20",
+    "note": "Тексты dynasties-q116 («в 221 г. до н. э. покорил шесть царств…»), money-q27 («после объединения Китая в 221 г. до н. э.») и dynasties-q20 («империи Цинь (221–207 гг. до н. э.)») прямо называют ответ."
+   }
+  ],
+  "dossier": "dynasties",
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-mun-irk-3",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-mun-irk-4",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "four-inventions (2016-17-shk-1)",
+    "note": "Уже в группе four-inventions; тот же шаблон, что 2016-17-shk-1 (компас, бумага, книгопечатание и … → 火药), с другим ответом — склеивать нельзя. people-q12 (Би Шэн → 活字印刷术) — соседний факт."
+   }
+  ],
+  "dossier": "people",
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-mun-krym-10",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "landmarks/sites/lm-cn-terracotta",
+    "note": "Материал — колонки нет, встраивать некуда; дубля нет."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-mun-kursk-1",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/cities/city-shanghai",
+    "ask": "name",
+    "note": "Ответ 上海 и неверные 北京, 广州, 杭州 — ячейки name таблицы cities; второго верного нет (ЭКСПО-2010 — только Шанхай). ask name (к строке уже встроены provinces-q28/q29, это допустимо)."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-mun-kursk-7",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет."
+   }
+  ],
+  "dossier": "ethnos",
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-mun-mosobl-1",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "modern-history/figures/per-maozedong",
+    "ask": "name",
+    "note": "Ответ 毛泽东 и неверные 胡锦涛, 习近平, 邓小平 — ячейки name таблицы figures; второго верного в наборе нет (портрет Сунь Ятсена ставят на площади по праздникам, не на воротах — проверяющему подтвердить). ask name, where country 中国."
+   },
+   {
+    "kind": "fact-group",
+    "target": "tiananmen-square, 2018-19-mun-spb-7",
+    "note": "Текст («Ворота Небесного Спокойствия») словом называет ответ 天安门 вопросов группы tiananmen-square и spb-7 — по решению автора 2026-10-22 такие пары идут в одну группу."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-mun-nsk-1",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-mun-nsk-10",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2018-19-mun-spb-7",
+    "note": "Варианты этого вопроса (天安门 среди изображённого на гербе) выдают ответ spb-7."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-mun-nsk-2",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "provinces/cities (строка 香港)",
+    "ask": "name",
+    "note": "Ответ 上海, неверные 北京 и 广州 — ячейки cities, а 香港 строкой cities нет (есть только prov-xianggang в provinces). С ячейкой 香港 встраивается: ask name; второго верного нет."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-mun-spb-8",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "modern-history/figures/per-maozedong",
+    "note": "Год смерти — колонки нет; дубля нет."
+   }
+  ],
+  "dossier": "modern-history",
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-shk-mosobl-1",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2021-22-mun-omsk-8",
+    "note": "Зеркальная пара: omsk-8 «официальный язык сейчас → 普通话» с вариантом 国语, этот — «язык Китайской Республики → 国语» с вариантом 普通话. Не дубль, но стоят рядом."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-shk-mosobl-11",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "money/banknotes",
+    "note": "Колонка front у всех купюр юаня — 毛泽东, но неверные 老舍, 普京, 习近平 — не ячейки колонки front, встраивать нельзя. Своего вопроса о лицевой стороне в досье нет — дубля нет."
+   }
+  ],
+  "dossier": "money",
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-shk-mosobl-16",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет (очень лёгкий: неверные 大学/中学 не медицина)."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-shk-mosobl-19",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "landmarks-q90 (ming-beijing-word)",
+    "note": "landmarks-q90 «при какой династии построен Запретный город → 明» — тот же факт с другой стороны (XV век — начало Мин в Пекине)."
+   }
+  ],
+  "dossier": "landmarks",
+  "part": "hist"
+ },
+ {
+  "id": "2024-25-shk-mosobl-8",
+  "findings": [
+   {
+    "kind": "embed",
+    "target": "provinces/cities/city-chongqing",
+    "ask": "name",
+    "note": "Ответ 重庆 и неверные 南京, 天津, 上海 — ячейки cities. Нужен exclude city-chengdu: по плану 2021 г. «成渝共建西部金融中心» Чэнду — со-центр, в общем наборе он был бы вторым верным."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "hist"
+ },
+ {
+  "id": "2025-26-mun-irk-3",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет. Ответ 微信 (а не 微信支付) — допустимо; тот же ответ у 2021-22-mun-lenobl-3, факт другой."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2025-26-mun-irk-5",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2016-17-shk-8",
+    "note": "2016-17-shk-8 спрашивает ту же систему с другой стороны (девятилетнее обязательное образование с 1986 г. = 小学和初中)."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2025-26-mun-irk-6",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "dynasties/dynasties/dyn-han",
+    "note": "Роль Шёлкового пути — дубля нет (dyn-han known=丝绸之路, но спрашивается не это)."
+   }
+  ],
+  "dossier": "dynasties",
+  "part": "hist"
+ },
+ {
+  "id": "2025-26-mun-irk-7",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": null,
+    "note": "Дубля нет."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2025-26-mun-irk-8",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "2023-24-mun-32, 2015-16-zak-6",
+    "note": "2023-24-mun-32 (Нанкин — «одна из четырёх древних столиц», варианты 西安/北京/洛阳) раскрывает состав четвёрки; 2015-16-zak-6 — тот же вопрос «какой город не древняя столица» с другим ответом (苏州)."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "hist"
+ },
+ {
+  "id": "2025-26-mun-kgd-55",
+  "findings": [
+   {
+    "kind": "duplicate",
+    "target": "nature-q64",
+    "how": "pool",
+    "note": "Тот же факт «крупнейшая ГЭС мира»: у nature-q64 ответ 三峡电站, здесь 长江三峡大坝. Склеивать — только после правки текста ответа в editorial.json на 三峡电站 (или оставить одну — retire). Встроить в eng-sanxia нельзя: 伊泰普水坝, 关州水坝, 溪洛渡水坝 не ячейки таблицы; 关州水坝, похоже, ошибка бланка (葛洲坝?)."
+   },
+   {
+    "kind": "fact-group",
+    "target": "sanxia-word (nature-q153, money-q05)",
+    "note": "Вопросы группы sanxia-word о той же ГЭС; если запись остаётся отдельной — в эту группу."
+   }
+  ],
+  "dossier": "nature",
+  "part": "hist"
+ },
+ {
+  "id": "2025-26-mun-komi-55",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "dynasties/dynasties/dyn-qing",
+    "note": "Годов правления в таблице нет — встраивать некуда; дубля нет. Близкие 2025-26-shk-mosobl-11 (Мин 1368–1644) и 2020-21-reg-q227d55 (Республика 1912) — тексты называют 1644/1912 лишь как смежные даты; при желании автора — в одну группу."
+   }
+  ],
+  "dossier": "dynasties",
+  "part": "hist"
+ },
+ {
+  "id": "2025-26-mun-mosobl-2",
+  "findings": [
+   {
+    "kind": "embed-missing-row",
+    "target": "provinces/cities (строка city-changchun, known=第一汽车制造厂)",
+    "ask": "name",
+    "note": "Ответ 长春 — в cities строки нет (есть только capital у prov-jilin); неверные 深圳, 西安, 哈尔滨 — ячейки cities. С новой строкой Чанчуня встраивается: ask name (given known, если завести ячейку «一汽»)."
+   }
+  ],
+  "dossier": "provinces",
+  "part": "hist"
+ },
+ {
+  "id": "2025-26-mun-tat-55",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "yang-liwei-shenzhou-5",
+    "note": "Уже в группе (текст 2020-21-zak-q244298 называет 2003 год)."
+   },
+   {
+    "kind": "embed-missing-row",
+    "target": "space/missions (строки 神舟一号 1999 年, 神舟七号 2008 年)",
+    "ask": "year",
+    "note": "Ответ 2003 年 — ячейка year строки mis-shenzhou5, 2011 年 есть (天宫一号), а 1999 年 и 2008 年 в колонке year таблицы missions нет. С этими строками встраивается: ask year."
+   }
+  ],
+  "dossier": "space",
+  "part": "hist"
+ },
+ {
+  "id": "2025-26-mun-vlad-9",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "four-inventions",
+    "note": "Уже в группе four-inventions; тот же вопрос «что НЕ входит», что 2026-27-mun-1 и 2017-18-mun-8, но с другими ответами — склеивать нельзя."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2025-26-shk-mosobl-1",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "dynasties-q27",
+    "note": "Текст dynasties-q27 («в 618 году основал Танскую династию») называет начало периода и династию — утечка."
+   },
+   {
+    "kind": "ok",
+    "target": "dynasties/dynasties/dyn-tang",
+    "note": "Встраивать нельзя: в таблице нет колонки лет правления, а 宋朝 ячейкой chao нет (есть 北宋/南宋 без chao)."
+   }
+  ],
+  "dossier": "dynasties",
+  "part": "hist"
+ },
+ {
+  "id": "2025-26-shk-mosobl-11",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "dynasties-q28, ming-beijing-word",
+    "note": "Текст dynasties-q28 («в 1368 году основал Минскую династию») выдаёт ответ."
+   },
+   {
+    "kind": "ok",
+    "target": "dynasties/dynasties/dyn-ming",
+    "note": "Как и 618–907: колонки лет нет, 宋朝 ячейкой chao нет — встраивать нельзя."
+   }
+  ],
+  "dossier": "dynasties",
+  "part": "hist"
+ },
+ {
+  "id": "2025-26-shk-mosobl-17",
+  "findings": [
+   {
+    "kind": "duplicate",
+    "target": "dynasties-q102",
+    "how": "pool",
+    "note": "Тот же факт: основатель Чжоу — dynasties-q102 (ответ 周武王, общий набор founder). Здесь ответ 武王 — для склейки или встраивания в dyn-xizhou (ask founder) нужна правка текста в editorial.json на 周武王, а неверные 黄帝 и 文王 ячейками founder не являются. Автору: склеить с общим набором после правки или оставить одну (retire)."
+   }
+  ],
+  "dossier": "dynasties",
+  "part": "hist"
+ },
+ {
+  "id": "2025-26-shk-mosobl-7",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "myths/figures/fig-yao",
+    "note": "Строка 尧 есть, но ответ 唐尧 ≠ 尧, а 秦始皇 в мифах нет — встраивать нельзя; к тому же 舜 (и 禹) из общего набора — тоже «совершенномудрые государи», второй верный. Дубля нет."
+   }
+  ],
+  "dossier": "myths",
+  "part": "hist"
+ },
+ {
+  "id": "2026-27-mun-1",
+  "findings": [
+   {
+    "kind": "fact-group",
+    "target": "four-inventions",
+    "note": "Уже в группе four-inventions; «что НЕ входит» с ответом 丝绸 — тот же вопрос, что 2025-26-mun-vlad-9 (瓷器) и 2017-18-mun-8 (炼丹术), склеивать нельзя (разные ответы)."
+   }
+  ],
+  "dossier": null,
+  "part": "hist"
+ },
+ {
+  "id": "2026-27-mun-6",
+  "findings": [
+   {
+    "kind": "ok",
+    "target": "dynasties/dynasties/dyn-sui",
+    "note": "Отмена кэцзюй (1905) — дубля нет; dynasties-q110 (кэцзюй появились при Суй) — другая сторона, ответа не подсказывает."
+   }
+  ],
+  "dossier": "dynasties",
+  "part": "hist"
+ }
+]

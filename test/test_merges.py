@@ -347,6 +347,8 @@ class MergesInBankTest(unittest.TestCase):
             '2018-19-reg-6': 7, '2022-23-reg-2': 6, '2015-16-zak-8': 5, '2016-17-shk-8': 5,
             '2015-16-reg-1': 7, '2018-19-mun-55': 6, '2018-19-mun-53': 5, '2016-17-shk-10': 5,
             '2016-17-mun-6': 5,
+            # склейки по проверке региональных вопросов (решение автора 2026-10-25)
+            '2018-19-shk-8': 6, '2020-21-pri-q4e8b0e': 5, '2015-16-mun-8': 6,
         }
         self.assertEqual(set(pools), set(expected))
         for keep_id in pools:
@@ -360,13 +362,15 @@ class MergesInBankTest(unittest.TestCase):
             # маньчжуры — народ династии Цин; 2026-10-24: «Искусство войны» и школа Сунь-цзы, Сунь Ятсен и
             # Китайская Республика словом, «движение 4 мая» и дата Дня молодёжи; четыре вопроса о 四大发明 —
             # тексты называют ответы друг друга, по ревью ветки муниципального этапа 2026/27; 2026-10-25: ВСНП
-            # словом в addition-b1-09 — группа образования КНР, по ревью ветки «Государство»); дубль одного
+            # словом в addition-b1-09 — группа образования КНР, по ревью ветки «Государство»; Петербург «основан
+            # Петром I» подсказывает вопрос о первом императоре); дубль одного
             # факта в группе ловит следующий тест
             if 'factGroup' in record:
                 self.assertIn(record['factGroup'], {'province-names-river-lake', 'beijing-tianjin-municipality',
                                                     'potala-tibet', 'manchu-word', 'sunzi-art-of-war',
                                                     'lu-xun-republic-text', 'may-fourth-date',
-                                                    'four-inventions', 'prc-founding-1949'}, keep_id)
+                                                    'four-inventions', 'prc-founding-1949',
+                                                    'peter1-first-emperor'}, keep_id)
             wrong = [o['zh'] for o in record['options'] if o['id'] != record['answer']['optionId']]
             for text in wrong:
                 self.assertNotIn(text, record['explanation']['ru'], keep_id)
