@@ -2,6 +2,7 @@ const STORAGE_KEY = 'lingvo-trainer:v1';
 const STUDY_SETTINGS_KEY = 'lingvo-trainer:settings:v1';
 const THEME_KEY = 'lingvo-trainer:theme';
 const PINYIN_KEY = 'lingvo-trainer:pinyin';
+const QUESTION_ZH_KEY = 'lingvo-trainer:question-zh';
 const STAGE_NAMES = {
   pri: 'пригласительный', shk: 'школьный', mun: 'муниципальный',
   reg: 'региональный', zak: 'заключительный',
@@ -157,6 +158,33 @@ function togglePinyin() {
   } catch {}
 }
 
+/* ---------- китайский текст вопроса ---------- */
+
+// у части олимпиадных заданий вопрос в бланке дан и по-китайски; по умолчанию он скрыт, чтобы
+// русская формулировка читалась без подсказки. Как и пиньинь, показ решает атрибут на <html>, а
+// в раунде его можно открыть для одного вопроса кнопкой под формулировкой
+function applyQuestionZh(on) {
+  document.documentElement.dataset.questionZh = on ? 'on' : 'off';
+  $('questionZhLabel').textContent = on ? 'Вопрос 中文: вкл' : 'Вопрос 中文: выкл';
+  $('questionZhToggle').setAttribute('aria-pressed', String(on));
+}
+
+function initQuestionZh() {
+  let on = false;
+  try {
+    on = localStorage.getItem(QUESTION_ZH_KEY) === 'on';
+  } catch { /* приватный режим: по умолчанию скрыт */ }
+  applyQuestionZh(on);
+}
+
+function toggleQuestionZh() {
+  const on = document.documentElement.dataset.questionZh !== 'on';
+  applyQuestionZh(on);
+  try {
+    localStorage.setItem(QUESTION_ZH_KEY, on ? 'on' : 'off');
+  } catch {}
+}
+
 /** Строка транскрипции под китайским текстом; null, если её нет в таблице. */
 function pinyinLine(text) {
   if (!PINYIN[text]) return null;
@@ -307,9 +335,10 @@ function stageLabel(code) {
   return STAGE_NAMES[code] || code;
 }
 
-/** «ВсОШ 2015/16 · региональный этап · задание 9» */
+/** «ВсОШ 2015/16 · региональный этап · задание 9», «ВсОШ 2025/26 · муниципальный этап, Санкт-Петербург · задание 3» */
 function occurrenceLabel(occurrence) {
   return `ВсОШ ${occurrence.year.replace('-', '/')} · ${stageLabel(occurrence.stageCode)} этап${
+    occurrence.region ? `, ${occurrence.region}` : ''}${
     occurrence.number ? ` · задание ${occurrence.number}` : ''}`;
 }
 
@@ -367,7 +396,7 @@ function renderSetup() {
   for (const label of $('topicControls').children) {
     const input = label.querySelector('input');
     input.checked = state.filters.topics.includes(input.value);
-    const { completed, total } = counts[input.value];
+    const { completed, total } = counts[input.value] ?? { completed: 0, total: 0 };
     label.querySelector('.topic-progress').textContent = `${completed}/${total}`;
   }
   $('yearFilter').value = state.filters.years[0] || '';
@@ -499,6 +528,8 @@ function renderQuestion() {
   $('questionText').replaceChildren(...questionNodes(record.questionRu));
   $('questionZh').replaceChildren(...[record.questionZh || '', pinyinLine(record.questionZh)].filter(Boolean));
   $('questionZh').hidden = !record.questionZh;
+  $('questionZh').classList.remove('revealed');
+  $('questionZhReveal').hidden = !record.questionZh;
 
   $('feedback').className = 'feedback hidden';
   $('nextButton').classList.add('hidden');
@@ -1042,6 +1073,13 @@ document.addEventListener('keydown', (event) => {
 
 $('themeToggle').addEventListener('click', toggleTheme);
 $('pinyinToggle').addEventListener('click', togglePinyin);
+$('questionZhToggle').addEventListener('click', toggleQuestionZh);
+$('questionZhReveal').addEventListener('click', () => {
+  $('questionZh').classList.add('revealed');
+  $('questionZhReveal').hidden = true;
+  // кнопка исчезает — фокус переходит на открытый текст, а не теряется на <body>
+  $('questionZh').focus();
+});
 // шапка — ссылки, чтобы работали и без скрипта, но внутри страницы они просто меняют экран
 for (const id of ['homeLink', 'navSetup']) {
   $(id).addEventListener('click', (event) => {
@@ -1149,6 +1187,7 @@ $('footerNote').textContent = bankSummary(QUESTION_BANK);
 
 initTheme();
 initPinyin();
+initQuestionZh();
 renderStats();
 renderSetup();
 show('setup');

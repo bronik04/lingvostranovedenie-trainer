@@ -42,6 +42,10 @@
         title="Транскрипция пиньинь к китайскому тексту вопросов и вариантов (клавиша P)">
         <span id="pinyinLabel">Пиньинь: выкл</span>
       </button>
+      <button class="ink-btn ink-btn--text theme" id="questionZhToggle" type="button" aria-pressed="false"
+        title="Вопрос по-китайски, если он есть в бланке олимпиады; по умолчанию скрыт">
+        <span id="questionZhLabel">Вопрос 中文: выкл</span>
+      </button>
       <button class="ink-btn ink-btn--text theme" id="themeToggle" type="button">
         <span id="themeLabel">Тема</span>
       </button>
@@ -176,7 +180,8 @@
         <span class="tag warn" id="retryPill" hidden>повтор ошибки</span>
       </p>
       <h2 class="question" id="questionText"></h2>
-      <p class="question-zh" id="questionZh" lang="zh-Hans" hidden></p>
+      <p class="question-zh" id="questionZh" lang="zh-Hans" tabindex="-1" hidden></p>
+      <button class="ink-btn ink-btn--text question-zh-reveal" id="questionZhReveal" type="button" hidden>Показать вопрос по-китайски</button>
     </div>
     <p class="ink-caption recall-note hidden" id="recallNote"></p>
     <div class="options" id="options" role="group" aria-label="Варианты ответа"></div>

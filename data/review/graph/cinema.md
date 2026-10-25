@@ -1,5 +1,15 @@
 # Кино и анимация
 
+[[cinema.cin-cn-red-sorghum]]
+[[cinema.cin-cn-concubine]]
+[[cinema.cin-cn-crouching-tiger]]
+[[cinema.cin-cn-wandering-earth]]
+[[cinema.cin-cn-hero]]
+[[cinema.cin-cn-danaotiangong]]
+[[cinema.cin-cn-xiaokedouzhaomama]]
+[[cinema.cin-cn-huluxiongdi]]
+[[cinema.cin-cn-nezhamotongjiangshi]]
+[[cinema.cin-cn-fengyun-ernv]]
 [[cinema.cin-ru-potemkin]]
 [[cinema.cin-ru-irony-of-fate]]
 [[cinema.cin-ru-moscow-tears]]

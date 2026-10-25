@@ -12,7 +12,9 @@ class ImportSourcesTest(unittest.TestCase):
 
     def test_every_source_produced_a_file(self):
         manifest = json.loads((ROOT / 'sources/manifest.json').read_text('utf-8'))
-        self.assertEqual(len(self.index), len(manifest))
+        # плюс расшифровка региональных вариантов: её PDF лежат вне репозитория, в манифесте их нет
+        self.assertEqual(len(self.index), len(manifest) + 1)
+        self.assertIn('regions', {entry['slug'] for entry in self.index})
         for entry in self.index:
             self.assertTrue((ROOT / 'data/raw' / f"{entry['slug']}.json").exists(), entry['slug'])
 

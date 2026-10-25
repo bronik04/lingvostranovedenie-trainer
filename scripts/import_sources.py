@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
-from parsers import bank423, categories310, cifrium, pdf_papers, vsosh
+from parsers import bank423, categories310, cifrium, pdf_papers, regions, vsosh
 
 JOBS = [
     ('bank423', 'Банк вопросов — лингвострановедение (423, с ответами).docx', bank423.parse),
@@ -25,8 +25,14 @@ JOBS = [
     # Номер задания — порядок в разделе, классов и региона в id нет: вариант того же этапа для 7–8
     # классов или другого региона получил бы те же id и суффиксы -a/-b в зависимости от порядка —
     # такой выгрузке до первой сборки нужен свой сдвиг номеров
+    # выгрузка оказалась вариантом Московской области (тот же файл лежит в папке региональных
+    # вариантов); регион здесь только подпись, без кода региона: код вошёл бы в id и сбросил прогресс
     ('cifrium-2026-27-mun', 'Муниципальный этап 2026-27, 9–11 классы (Цифриум).pdf',
-     partial(cifrium.parse, year='2026-27')),
+     partial(cifrium.parse, year='2026-27', region='Московская область')),
+]
+# региональные варианты: сами PDF лежат вне репозитория, источник — расшифровка (см. parsers/regions.py)
+DATA_JOBS = [
+    ('regions', 'data/regions/variants.json', regions.parse),
 ]
 
 
@@ -34,8 +40,8 @@ def main() -> None:
     raw = ROOT / 'data/raw'
     raw.mkdir(parents=True, exist_ok=True)
     index = []
-    for slug, filename, parse in JOBS:
-        path = ROOT / 'sources' / filename
+    for slug, filename, parse in [*JOBS, *DATA_JOBS]:
+        path = ROOT / ('' if filename.startswith('data/') else 'sources') / filename
         if not path.exists():
             print(f'пропуск, файла нет: {filename}')
             continue

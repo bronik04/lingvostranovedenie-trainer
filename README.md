@@ -18,6 +18,8 @@
 
     python3 scripts/import_sources.py     # sources/ -> data/raw/
     python3 scripts/merge_bank.py         # data/raw/ -> data/bank.json + отчёты
+    python3 scripts/regions.py            # решения по региональным вариантам: data/review/regions.md и
+                                          # страница отложенных заданий data/review/regions-excluded.html
     python3 scripts/taxonomy.py           # проставить темы
     python3 scripts/coverage_map.py       # карта покрытия: data/review/coverage.md
     python3 scripts/pinyin.py             # пиньинь: data/bank.json -> data/pinyin.json
@@ -52,6 +54,10 @@ Cormorant Garamond и Onest (SIL OFL 1.1, тексты лицензий рядо
 ## Данные
 
 `sources/` — неизменяемые первоисточники, их контрольные суммы в `sources/manifest.json`.
+Региональные варианты школьного и муниципального этапов (9–11 классы, 35 регионов) в репозиторий
+не кладутся — это больше 100 МБ PDF: источник для них — расшифровка `data/regions/variants.json`
+(текст задания из бланка, ключ, путь в папке вариантов, контрольная сумма файла), решение по каждому заданию — `data/review/regions.json`. Сверить расшифровку с бланками:
+`python3 scripts/regions.py --sources <папка 03-ВСОШ>`.
 `data/bank.json` — канонический банк, единственный источник правды для сборки.
 `data/review/` — отчёты слияния, рубрикации и волн проверки ответов.
 

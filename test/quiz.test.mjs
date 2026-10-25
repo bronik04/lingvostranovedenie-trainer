@@ -192,6 +192,13 @@ test('счётчики тем считают уникальные пройден
   });
 });
 
+test('счётчик темы не считает вопрос без установленного ответа: в раунд он не попадёт', () => {
+  const bank = [record('a'), record('b', { answer: { optionId: null, state: 'needs-review' } })];
+  assert.deepEqual(quiz.progressByTopic(bank, {}), {
+    'География и административное устройство': { completed: 0, total: 1 },
+  });
+});
+
 test('повтор ошибок берёт вопросы только завершённого раунда и сохраняет порядок', () => {
   const round = [record('a'), record('b'), record('c')];
   assert.deepEqual(quiz.wrongQuestions(round, ['c', 'outside', 'a', 'a']).map((item) => item.id), ['a', 'c']);

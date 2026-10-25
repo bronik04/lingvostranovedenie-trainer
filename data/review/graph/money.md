@@ -1,5 +1,11 @@
 # Деньги
 
+[[money.cny-1]]
+[[money.cny-5]]
+[[money.cny-10]]
+[[money.cny-20]]
+[[money.cny-50]]
+[[money.cny-100]]
 [[money.rub-5-1997]]
 [[money.rub-10-1997]]
 [[money.rub-50-1997]]
@@ -12,3 +18,11 @@
 [[money.rub-2000-2017]]
 [[money.rub-5000-1997]]
 [[money.rub-5000-2023]]
+[[money.beibi]]
+[[money.bubi]]
+[[money.daobi]]
+[[money.qin-banliang]]
+[[money.wuzhu]]
+[[money.jiaozi]]
+[[money.hongbao]]
+[[money.yasuiqian]]
