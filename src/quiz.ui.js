@@ -877,15 +877,9 @@ function setStage(stage) {
   $('quizHint').textContent = QUIZ_HINTS[stage];
 }
 
-// на телефоне короткие варианты (города, династии, виды чая) встают сеткой два на два — вопрос
-// и все четыре варианта помещаются на один экран; длинные остаются столбиком
-const COMPACT_OPTION = 4;
-
 function renderOptions(record) {
   $('options').innerHTML = '';
-  const options = labelledOptions(record);
-  $('options').classList.toggle('is-compact', options.every((option) => [...option.zh.trim()].length <= COMPACT_OPTION));
-  for (const option of options) {
+  for (const option of labelledOptions(record)) {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'option';

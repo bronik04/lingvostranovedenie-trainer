@@ -1391,7 +1391,11 @@ test('телефон: кнопка раунда внизу — только ко
   assert.equal(await bar.isVisible(), false);
   assert.equal(await primariesInView(), 1);
   await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
-  await page.waitForFunction(() => document.getElementById('startBar').classList.contains('is-shown'));
+  // полоса выезжает снизу: считаем кнопки, когда она встала на место
+  await page.waitForFunction(() => {
+    const element = document.getElementById('startBar');
+    return element.classList.contains('is-shown') && element.getBoundingClientRect().bottom <= innerHeight + 0.5;
+  });
   assert.equal(await bar.isVisible(), true);
   assert.equal(await page.locator('#startBarText').textContent(),
     `Все темы, 10 из ${eligible(bank, ALL, {}).length} подходящих`);
@@ -1498,33 +1502,29 @@ test('база: «Мои ответы», строка найденного, по
   assert.deepEqual(page.errors, []);
 });
 
-test('телефон: короткие варианты — два на два, подписи после ответа в тех же клетках', LIMIT, async (t) => {
+test('телефон: варианты столбиком, русское название верного — под иероглифами, как подписи неверных', LIMIT, async (t) => {
   const page = await openPage(t, { width: 375, height: 812 });
   if (!page) return;
+  // сетку два на два для коротких вариантов автор отклонил 2026-10-25: и короткие — столбиком
   const short = await page.evaluate(() => QUESTION_BANK.find((r) => r.options.length === 4 && r.answer.gloss
     && r.options.every((o) => [...o.zh.trim()].length <= 4) && r.options.filter((o) => o.gloss).length === 3).id);
   await page.evaluate((id) => startRoundWith([QUESTION_BANK.find((r) => r.id === id)], 'choice'), short);
-  assert.match(await page.locator('#options').getAttribute('class'), /\bis-compact\b/);
-  const boxes = await page.locator('#options button').evaluateAll((buttons) => buttons.map((b) => b.getBoundingClientRect())
-    .map((r) => ({ x: Math.round(r.x), y: Math.round(r.y), right: r.right })));
-  assert.equal(new Set(boxes.map((b) => b.y)).size, 2, 'две строки');
-  assert.equal(new Set(boxes.map((b) => b.x)).size, 2, 'два столбца');
-  assert.ok(boxes.every((b) => b.right <= 375));
-  // варианты не переносятся внутри клетки
-  const heights = await page.locator('#options .option-text').evaluateAll((items) => items.map((i) => i.getBoundingClientRect().height));
-  assert.ok(Math.max(...heights) < 40, heights.join(', '));
-  await page.locator('#options button').first().click();
-  for (const button of await page.locator('#options button').all()) {
-    assert.equal(await button.locator('.option-gloss').count(), 1, 'подпись в клетке варианта');
-  }
-  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth), 0);
-  // длинные варианты — столбиком
-  const long = await page.evaluate(() => QUESTION_BANK.find((r) => r.options.length === 4
-    && r.options.some((o) => [...o.zh.trim()].length > 4)).id);
-  await page.evaluate((id) => startRoundWith([QUESTION_BANK.find((r) => r.id === id)], 'choice'), long);
-  assert.doesNotMatch(await page.locator('#options').getAttribute('class'), /\bis-compact\b/);
   const xs = await page.locator('#options button').evaluateAll((buttons) => buttons.map((b) => Math.round(b.getBoundingClientRect().x)));
   assert.equal(new Set(xs).size, 1, 'один столбец');
+  await page.locator('#options button').first().click();
+  const record = await page.evaluate((id) => QUESTION_BANK.find((r) => r.id === id), short);
+  // подпись — в своём варианте, под текстом и по его левому краю; оба прямоугольника — одним замером:
+  // после ответа страница на телефоне плавно докручивается
+  const places = await page.locator('#options button').evaluateAll((buttons) => buttons.map((button) => {
+    const notes = button.querySelectorAll('.option-gloss');
+    const caption = button.querySelector('.option-text').getBoundingClientRect();
+    const note = notes[0]?.getBoundingClientRect();
+    return notes.length === 1 && note.y >= caption.bottom - 1 && Math.abs(note.x - caption.x) <= 1;
+  }));
+  assert.deepEqual(places, [true, true, true, true]);
+  const correct = page.locator(`#options button[data-option-id="${record.answer.optionId}"] .option-gloss`);
+  assert.equal(await correct.textContent(), record.answer.gloss);
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth), 0);
   assert.deepEqual(page.errors, []);
 });
 

@@ -890,14 +890,6 @@ a:hover { color: var(--accent-on-ground); }
   .option-text { font-size: 26px; }
   .option-status { grid-column: 2; }
   .option-gloss { grid-column: 2; grid-row: auto; }
-  /* короткие варианты — два на два; пометка и подпись после ответа — в той же клетке */
-  .options.is-compact { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-2); }
-  .is-compact .option { grid-template-columns: 28px minmax(0, 1fr); align-content: center; gap: 6px 10px; min-height: 96px; padding: 12px; }
-  .is-compact .option.wrong { padding: 11px; }
-  .is-compact .letter { width: 28px; height: 28px; }
-  /* четыре знака в клетку шириной в полэкрана — без переноса */
-  .is-compact .option-text { font-size: 22px; }
-  .is-compact .option-status, .is-compact .option-gloss { grid-column: 1 / -1; }
   .quiz > .hint { display: none; }
   .recall-prompt .ink-btn, .recall-rate .ink-btn { flex: 1 1 100%; }
   .tf-option { font-size: 34px; }
