@@ -1010,6 +1010,7 @@
           ],
           "core": true,
           "skipSides": [
+            "city",
             "mascot"
           ]
         },
