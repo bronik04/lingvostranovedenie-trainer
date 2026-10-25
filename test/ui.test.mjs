@@ -898,6 +898,35 @@ test('фильтр «Откуда вопросы» и пиньинь: раунд
   assert.deepEqual(page.errors, []);
 });
 
+test('китайский текст вопроса: скрыт по умолчанию, открывается кнопкой для одного вопроса и настройкой в шапке', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  assert.equal(await page.locator('#questionZhToggle').getAttribute('aria-pressed'), 'false');
+  await page.evaluate(() => {
+    const [withZh, other] = QUESTION_BANK.filter((r) => r.questionZh);
+    startRoundWith([withZh, other], 'choice');
+  });
+  await page.locator('#quizView').waitFor();
+  const zh = page.locator('#questionZh');
+  const reveal = page.locator('#questionZhReveal');
+  assert.equal(await zh.isVisible(), false);
+  // кнопка открывает текст только у этого вопроса
+  await reveal.click();
+  assert.equal(await zh.isVisible(), true);
+  assert.equal(await reveal.isVisible(), false);
+  await page.locator('#options button').first().click();
+  await page.locator('#nextButton').click();
+  assert.equal(await zh.isVisible(), false, 'у следующего вопроса текст снова скрыт');
+  assert.equal(await reveal.isVisible(), true);
+  // настройка в шапке показывает его у всех вопросов и переживает перезагрузку
+  await page.locator('#questionZhToggle').click();
+  assert.equal(await zh.isVisible(), true);
+  assert.equal(await reveal.isVisible(), false);
+  await page.reload();
+  assert.equal(await page.evaluate(() => document.documentElement.dataset.questionZh), 'on');
+  assert.deepEqual(page.errors, []);
+});
+
 test('телефон: с включённым пиньинем ни один вопрос и вариант не выходит за край экрана', LIMIT, async (t) => {
   const page = await openPage(t, { width: 375, height: 812 });
   if (!page) return;
