@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { mkdtempSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdtempSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import test from 'node:test';
@@ -44,19 +44,21 @@ test('встроенный банк совпадает с data/bank.json цел�
   const html = build();
   const embedded = JSON.parse(html.match(/const QUESTION_BANK = (\[.*?\]);\n/s)[1]);
   const bank = JSON.parse(readFileSync(new URL('data/bank.json', ROOT), 'utf8'));
-  const settings = JSON.parse(readFileSync(new URL('data/site.json', ROOT), 'utf8'));
+  const siteFile = new URL('data/site.json', ROOT);
+  const settings = existsSync(siteFile) ? JSON.parse(readFileSync(siteFile, 'utf8')) : {};
+  const showRegional = settings.showRegional ?? true;
   // то же правило, что scripts/site_bank.py: скрытые региональные варианты не идут на сайт, кроме встроенных
   // досье из showEmbeddedIn и записей из showRegionalIds
   const embeddedIn = {};
   const dossiers = new URL('data/dossiers/', ROOT);
   for (const name of readdirSync(dossiers).filter((n) => n.endsWith('-questions.json'))) {
     for (const question of JSON.parse(readFileSync(new URL(name, dossiers), 'utf8'))) {
-      if (question.embeds) embeddedIn[question.embeds] = name.replace(/-questions\.json$/, '');
+      if (question.embeds && question.status === 'accepted') embeddedIn[question.embeds] = name.replace(/-questions\.json$/, '');
     }
   }
   const keep = (record) => (settings.showRegionalIds ?? []).includes(record.id)
     || (settings.showEmbeddedIn ?? []).includes(embeddedIn[record.id]);
-  const expected = settings.showRegional ? bank : bank.flatMap((record) => {
+  const expected = showRegional ? bank : bank.flatMap((record) => {
     if (keep(record)) return [record];
     const occurrences = record.occurrences ?? [];
     const kept = occurrences.filter((o) => !o.regionCode);
@@ -64,7 +66,7 @@ test('встроенный банк совпадает с data/bank.json цел�
     return [kept.length === occurrences.length ? record : { ...record, occurrences: kept }];
   });
   assert.deepEqual(embedded, expected);
-  if (!settings.showRegional) {
+  if (!showRegional) {
     assert.ok(embedded.filter((record) => !keep(record))
       .every((record) => (record.occurrences ?? []).every((o) => !o.regionCode)),
       'на сайте не осталось региональных появлений, кроме оставленных настройкой');

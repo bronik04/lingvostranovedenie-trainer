@@ -42,6 +42,14 @@ class SiteBankTest(unittest.TestCase):
         for rid in ['2025-26-mun-nnov-1', '2021-22-mun-tat-57', '2019-20-mun-lip-4']:
             self.assertNotIn(rid, shown)
 
+    def test_draft_embed_does_not_open_a_record(self):
+        import tempfile, json as j
+        with tempfile.TemporaryDirectory() as folder:
+            (Path(folder) / 'sets-questions.json').write_text(j.dumps([
+                {'id': 'sets-q90', 'embeds': 'b', 'status': 'draft'},
+                {'id': 'sets-q91', 'embeds': 'e', 'status': 'accepted'}]), 'utf-8')
+            self.assertEqual(embedded_by(Path(folder)), {'e': 'sets'})
+
     def test_switch_on_shows_everything(self):
         bank = [record('b', self.regional)]
         self.assertIs(site_bank(bank, {'showRegional': True}), bank)

@@ -23,7 +23,7 @@
     python3 scripts/taxonomy.py           # проставить темы
     python3 scripts/coverage_map.py       # карта покрытия: data/review/coverage.md
     python3 scripts/pinyin.py             # пиньинь: data/bank.json -> data/pinyin.json
-    python3 scripts/build_html.py         # data/bank.json -> dist/
+    python3 scripts/build_html.py         # data/bank.json -> dist/ (на сайт — что разрешает data/site.json)
 
 `data/pinyin.json` пишет только `scripts/pinyin.py` (нужен `pip install pypinyin==0.55.0`,
 в CI ставится сам); неверное чтение многозначного иероглифа исправляется в
@@ -58,7 +58,9 @@ Cormorant Garamond и Onest (SIL OFL 1.1, тексты лицензий рядо
 не кладутся — это больше 100 МБ PDF: источник для них — расшифровка `data/regions/variants.json`
 (текст задания из бланка, ключ, путь в папке вариантов, контрольная сумма файла), решение по каждому заданию — `data/review/regions.json`. Сверить расшифровку с бланками:
 `python3 scripts/regions.py --sources <папка 03-ВСОШ>`.
-`data/bank.json` — канонический банк, единственный источник правды для сборки.
+`data/bank.json` — канонический банк, единственный источник правды для сборки. На сайт идёт то, что разрешает
+`data/site.json`: с 2026-10-26 вопросы из региональных вариантов скрыты (кроме встроенных темами «Четыре великих»,
+«Государство», «Современный Китай»), план возвращения — `data/review/regions-later.md`.
 `data/review/` — отчёты слияния, рубрикации и волн проверки ответов.
 
 К олимпиадным вопросам `merge_bank.py` добавляет дополнения `data/authored/questions.json`, затем

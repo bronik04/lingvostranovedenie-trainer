@@ -23,11 +23,11 @@ def load_settings(path: Path = SETTINGS) -> dict:
 
 
 def embedded_by(dossiers: Path = ROOT / 'data/dossiers') -> dict[str, str]:
-    """Олимпиадная запись → досье, вопрос которого её встраивает."""
+    """Олимпиадная запись → досье, принятый вопрос которого её встраивает (черновик запись не открывает)."""
     result = {}
     for path in sorted(dossiers.glob('*-questions.json')):
         for question in json.loads(path.read_text('utf-8')):
-            if question.get('embeds'):
+            if question.get('embeds') and question.get('status') == 'accepted':
                 result[question['embeds']] = path.name.removesuffix('-questions.json')
     return result
 
