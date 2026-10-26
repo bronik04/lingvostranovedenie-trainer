@@ -1,7 +1,11 @@
-"""Подписи к неверным вариантам поверх собранного банка.
+"""Подписи к неверным вариантам и названия верных ответов поверх собранного банка.
 
 Подпись — одна строка по-русски о том, что такое неверный вариант: название и
-один опознавательный факт. Она хранится вместе с копией текста варианта: если
+один опознавательный факт. Подпись к варианту-ответу — русское название верного
+ответа (решение автора 2026-10-26): сборка кладёт её в `answer.gloss`, как у
+вопросов досье, и в разборе ученик видит название — часть до « — ».
+
+Любая подпись хранится вместе с копией текста варианта: если
 вариант потом исправят через editorial.json, подпись перестанет совпадать, и
 сборка остановится, чтобы подпись перепроверили, а не показали к другому тексту.
 Источник подписи хранится для аудита и в интерфейс не попадает.
@@ -48,6 +52,13 @@ def _source_ok(source: object) -> bool:
     return url.scheme in {'http', 'https'} and bool(url.netloc) and isinstance(title, str) and bool(title.strip())
 
 
+def answer_name_errors(text: object) -> list[str]:
+    """Название верного ответа — «Название — факт»: в разборе показывается часть до « — »."""
+    if isinstance(text, str) and ' — ' in text and text.split(' — ')[0].strip():
+        return []
+    return ['название верного ответа — «Название — факт»']
+
+
 def validate_glosses(glosses: object, bank: list[dict]) -> list[str]:
     if not isinstance(glosses, dict):
         return ['подписи должны быть словарём id → запись']
@@ -78,11 +89,13 @@ def validate_glosses(glosses: object, bank: list[dict]) -> list[str]:
             if option_id not in current:
                 errors.append(f'{where}: такого варианта нет')
                 continue
-            if option_id == record['answer']['optionId']:
-                errors.append(f'{where}: подпись у правильного варианта')
             if not isinstance(gloss, dict):
                 errors.append(f'{where}: подпись должна быть объектом')
                 continue
+            if option_id == record['answer']['optionId']:
+                if 'dossier' in record:
+                    errors.append(f'{where}: название верного ответа берётся из ячейки досье')
+                errors.extend(f'{where}: {message}' for message in answer_name_errors(gloss.get('ru')))
             unknown = set(gloss) - GLOSS_FIELDS
             if unknown:
                 errors.append(f'{where}: неизвестные поля {sorted(unknown)}')
@@ -105,9 +118,13 @@ def apply_glosses(bank: list[dict], glosses: dict[str, dict]) -> list[dict]:
         if item is None:
             updated.append(record)
             continue
+        answer_id = record['answer']['optionId']
         updated.append({**record, 'options': [
-            {**option, 'gloss': item['options'][option['id']]['ru']} if option['id'] in item['options'] else option
-            for option in record['options']]})
+            {**option, 'gloss': item['options'][option['id']]['ru']}
+            if option['id'] in item['options'] and option['id'] != answer_id else option
+            for option in record['options']]}
+            | ({'answer': {**record['answer'], 'gloss': item['options'][answer_id]['ru']}}
+               if answer_id in item['options'] else {}))
     return updated
 
 
