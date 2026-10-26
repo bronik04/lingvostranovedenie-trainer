@@ -843,6 +843,7 @@ function renderQuestion() {
     : matchingOccurrence(record, state.roundSettings?.filters ?? state.filters) ?? record.occurrences[0];
   $('progressLabel').textContent = `Вопрос ${state.position + 1} из ${state.round.length}`;
   renderProgress();
+  $('topicMark').textContent = TOPIC_MARKS[record.topic] || '文';
   $('topicLabel').textContent = record.topic;
   // у дополнения года и этапа нет — над ним одна метка «Дополнение»
   $('sourceLabel').textContent = first ? occurrenceLabel(first) : '';
@@ -1341,7 +1342,8 @@ function appendDatabaseRows(rows) {
     const name = answerName(record);
     article.innerHTML = [
       '<div class="row-top">',
-      `<span class="row-topic">${wideOrShort(record.topic, shortTopic[0].toLocaleUpperCase('ru') + shortTopic.slice(1))}</span>`,
+      `<span class="topic-line"><span class="topic-mark" lang="zh-Hans" aria-hidden="true">${TOPIC_MARKS[record.topic] || '文'}</span>`
+        + `${wideOrShort(record.topic, shortTopic[0].toLocaleUpperCase('ru') + shortTopic.slice(1))}</span>`,
       `<span class="my ${kind}">${wideOrShort(wide, short)}</span>`,
       // проверенный ответ — норма; метка только у ответа, который ещё не перепроверен или спорен
       record.answer.state === 'verified' ? ''
