@@ -106,27 +106,9 @@ main { display: block; }
   gap: var(--s-6) 72px;
   align-items: end;
 }
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin: 0;
-  border-block: var(--border-hair) solid var(--line-on-ground);
-}
-.stats > div { display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: var(--s-1); padding: 20px var(--s-4); }
-.stats > div:first-child { padding-left: 0; }
-.stats > div + div { border-left: var(--border-hair) solid var(--line-on-ground); }
-.stats dt { color: var(--text-on-ground-muted); font-size: var(--t-size-caption); line-height: 1.3; }
-.stats dd {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: 56px;
-  font-weight: var(--t-weight-bold);
-  line-height: 1;
-  font-variant-numeric: lining-nums tabular-nums;
-}
 
-/* Первый визит: заголовок, вводный абзац и кнопка первого раунда — одним блоком. */
-#firstHero { padding-bottom: 56px; }
+/* Первый визит: заголовок, вводный абзац и кнопка первого раунда — одним блоком (и у «Чэнъюй»). */
+#firstHero, #cyFirstHero { padding-bottom: 56px; }
 .hero-start { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-3); }
 .hero-start .ink-btn--primary { min-width: 280px; }
 
@@ -351,16 +333,7 @@ select, .search {
 
 .round-size { grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); }
 
-.launch {
-  display: flex;
-  flex-direction: column;
-  gap: var(--s-4);
-  padding: 40px 0 88px;
-  border-top: var(--border-hair) solid var(--line-on-ground);
-}
-.notice { margin: 0; font-size: var(--t-size-lead); }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-3); }
-.launch-actions .ink-btn--primary { min-width: 240px; }
 .hint { margin: 0; }
 .danger { color: var(--accent-on-ground); }
 
@@ -621,7 +594,7 @@ select, .search {
   font-variant-numeric: lining-nums tabular-nums;
 }
 .score-total { color: var(--text-on-ground-muted); font-size: 0.56em; }
-#resultMeter { align-self: stretch; max-width: 460px; }
+#resultMeter, #cyResultMeter { align-self: stretch; max-width: 460px; }
 .result-counts { display: flex; flex-wrap: wrap; gap: var(--s-5); }
 .result-counts .ok { color: var(--state-correct-on-ground); }
 .result-counts .bad { color: var(--state-incorrect); }
@@ -643,7 +616,7 @@ select, .search {
 .mistake-answers .picked { color: var(--state-incorrect); }
 .mistake-answers .right { color: var(--state-correct-on-ground); font-weight: var(--t-weight-bold); }
 
-/* Ошибки основного раунда раскрываются: заголовок — кнопка, под ним разбор (у «Чэнъюй» — строка выше). */
+/* Ошибки раунда раскрываются: заголовок — кнопка, под ним разбор. */
 .mistakes--fold { border-bottom: var(--border-hair) solid var(--line-on-ground); }
 .mistakes--fold > li { display: block; padding: 0; }
 .mistakes--fold > li:last-child { border-bottom: 0; }
@@ -839,7 +812,7 @@ a:hover { color: var(--accent-on-ground); }
   .view-toggle { display: inline-flex; }
   .view-menu:not([hidden]) { display: flex; }
 
-  #firstHero { padding-bottom: var(--s-7); }
+  #firstHero, #cyFirstHero { padding-bottom: var(--s-7); }
   .hero-start, .hero-start .ink-btn--primary { width: 100%; min-width: 0; }
   .next { gap: var(--s-5); padding: var(--s-6) 0 var(--s-5); }
   .next-title { font-size: 40px; }
@@ -874,14 +847,12 @@ a:hover { color: var(--accent-on-ground); }
   .start-bar p { flex: 1 1 auto; min-width: 0; margin: 0; color: var(--text-on-ground-muted); font-size: var(--t-size-caption); line-height: 1.3; }
   .start-bar .ink-btn { flex: 0 0 auto; padding: 0 22px; }
   /* полоса не закрывает подвал и элемент в фокусе */
-  body[data-view='setup'] .ink-footer { padding-bottom: 96px; }
-  html:has(body[data-view='setup']) { scroll-padding-bottom: 96px; }
+  body:is([data-view='setup'], [data-view='cy-setup']) .ink-footer { padding-bottom: 96px; }
+  html:has(body:is([data-view='setup'], [data-view='cy-setup'])) { scroll-padding-bottom: 96px; }
 
   .hero { padding: var(--s-7) 0 var(--s-7); }
-  .stats dd { font-size: 44px; }
-  .stats > div { padding: var(--s-4) var(--s-2); }
   .chapter-mark { flex-basis: 100%; font-size: 32px; }
-  .launch-actions .ink-btn, .next-row .ink-btn--primary { flex: 1 1 100%; min-width: 0; }
+  .next-row .ink-btn--primary { flex: 1 1 100%; min-width: 0; }
   .next-row { flex-direction: column-reverse; align-items: stretch; }
   /* после «Следующего вопроса» начало раунда встаёт чуть ниже края экрана */
   .quiz { scroll-margin-top: var(--s-2); }

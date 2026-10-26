@@ -3,11 +3,16 @@
  * $, show, escapeHtml, pluralRu и state.view (src/quiz.ui.js, src/quiz.mjs), логика —
  * src/chengyu.mjs. Прогресс и настройки хранятся отдельно от основного раздела; в файл
  * прогресса (exportProgress/importProgress в src/quiz.ui.js) cy.progress идёт вместе с ним.
- * Счёт в шапке на экранах раздела пишет cyRenderCount — его зовёт show из quiz.ui.js.
+ * Счёт в шапке на экранах раздела пишет cyRenderCount, подвал — cyFooterNote; их зовёт show из
+ * quiz.ui.js. У раунда, итогов и справочника свои адреса (#chengyu/round, #chengyu/results,
+ * #chengyu/reference): «назад» с них ведёт к началу раздела, раунд переживает перезагрузку.
  */
 
 const CY_STORAGE_KEY = 'lingvo-trainer:chengyu:v1';
 const CY_SETTINGS_KEY = 'lingvo-trainer:chengyu-settings:v1';
+// раунд — в sessionStorage, как у основного раздела: перезагрузка возвращает на то же задание
+const CY_ROUND_KEY = 'lingvo-trainer:chengyu-round:v1';
+const CY_HASH = /^#chengyu(?:\/|$)/;
 
 const cy = {
   filters: cyDefaultFilters(),
@@ -20,6 +25,9 @@ const cy = {
   marks: [],
   wrongIds: [],
   wrongPicks: {},
+  finished: false,
+  // настройки, с которыми начат раунд: для плашки «Раунд не закончен» и «Нового раунда»
+  roundSettings: null,
 };
 
 function cyLoad() {
@@ -50,6 +58,82 @@ function cySaveSettings() {
   } catch { /* хранилище недоступно */ }
 }
 
+/** Снимок раунда: задания по id, ход, счёт и настройки, с которыми он начат. */
+function cySaveRound() {
+  try {
+    sessionStorage.setItem(CY_ROUND_KEY, JSON.stringify({
+      version: 1,
+      round: cy.round.map((record) => record.id),
+      position: cy.position,
+      answered: cy.answered,
+      correct: cy.correct,
+      marks: cy.marks,
+      wrongIds: cy.wrongIds,
+      wrongPicks: cy.wrongPicks,
+      settings: { filters: cy.roundSettings.filters, size: cy.roundSettings.size === Number.MAX_SAFE_INTEGER ? 'all' : cy.roundSettings.size },
+      finished: cy.finished,
+    }));
+  } catch { /* без sessionStorage раунд не переживёт перезагрузку, но идёт как обычно */ }
+}
+
+function cyDiscardRound() {
+  cy.round = [];
+  cy.finished = false;
+  try {
+    sessionStorage.removeItem(CY_ROUND_KEY);
+  } catch {}
+}
+
+/** После перезагрузки — тот же раунд. Задание, на которое уже ответили, второй раз не задаётся:
+ * ответ сохранён в прогрессе, поэтому раунд продолжается со следующего (или кончается). */
+function cyRestoreRound() {
+  try {
+    const saved = JSON.parse(sessionStorage.getItem(CY_ROUND_KEY) || 'null');
+    if (saved?.version !== 1) return;
+    const byId = new Map(CHENGYU_BANK.map((record) => [record.id, record]));
+    const round = saved.round.map((id) => byId.get(id));
+    const size = saved.settings?.size;
+    // задания сменились между загрузками или снимок неполный — такой раунд не восстановить
+    if (!round.length || round.some((record) => !record) || !Number.isInteger(saved.position)
+        || saved.position < 0 || saved.position > round.length
+        || ![saved.marks, saved.wrongIds].every(Array.isArray) || !saved.wrongPicks
+        || typeof saved.wrongPicks !== 'object' || !Array.isArray(saved.settings?.filters?.groups)
+        || !(size === 'all' || Number.isInteger(size))) {
+      cyDiscardRound();
+      return;
+    }
+    Object.assign(cy, {
+      round,
+      position: saved.position,
+      answered: Boolean(saved.answered),
+      correct: saved.correct,
+      marks: saved.marks,
+      wrongIds: saved.wrongIds,
+      wrongPicks: saved.wrongPicks,
+      roundSettings: {
+        filters: cyNormaliseFilters(saved.settings.filters),
+        size: size === 'all' ? Number.MAX_SAFE_INTEGER : size,
+      },
+      finished: Boolean(saved.finished),
+    });
+    if (cy.finished) cyRenderResults();
+    else if (cy.answered || cy.position >= round.length) {
+      cy.position += cy.answered ? 1 : 0;
+      if (cy.position >= round.length) cyCompleteRound();
+      else {
+        cyRenderQuestion();
+        cySaveRound();
+      }
+    } else {
+      cyRenderQuestion();
+      cySaveRound();
+    }
+  } catch {
+    // что бы ни случилось со снимком, раздел должен открыться
+    cyDiscardRound();
+  }
+}
+
 /* ---------- начало раздела ---------- */
 
 const CY_MODE_HELP = {
@@ -58,16 +142,33 @@ const CY_MODE_HELP = {
   mistakes: 'Задания, в которых последний ответ был неверным.',
 };
 
-function cyRenderStats() {
-  const summary = cySummary(CHENGYU_BANK);
-  for (const [id, count, forms] of [
-    ['cyStatTotal', summary.total, ['задание', 'задания', 'заданий']],
-    ['cyStatSeasons', summary.seasons, ['сезон олимпиады', 'сезона олимпиады', 'сезонов олимпиады']],
-    ['cyStatGroups', summary.groups, ['тема', 'темы', 'тем']],
-  ]) {
-    $(id).textContent = String(count);
-    $(`${id}Label`).textContent = pluralRu(count, forms);
-  }
+const CY_MODE_SUMMARY = { all: 'Все задания', new: 'Новые задания', mistakes: 'Ошибки' };
+const CY_TASKS = ['задание', 'задания', 'заданий'];
+
+/** Подвал на экранах раздела: числа, которые раньше стояли рядом под заголовком. */
+function cyFooterNote() {
+  const { total, olympiad, seasons, groups } = cySummary(CHENGYU_BANK);
+  const authored = total - olympiad;
+  return `В разделе ${total} ${pluralRu(total, CY_TASKS)}: ${olympiad} из вариантов ВсОШ за ${seasons} ${
+    pluralRu(seasons, ['сезон', 'сезона', 'сезонов'])} и ${authored} ${pluralRu(authored, ['составленное', 'составленных', 'составленных'])}`
+    + ` по той же схеме и сверенных со словарями, ${groups} ${pluralRu(groups, ['тема', 'темы', 'тем'])}.`;
+}
+
+/** «10 заданий», «все доступные». */
+function cySizeLabel(size) {
+  return size === Number.MAX_SAFE_INTEGER ? 'все доступные' : `${size} ${pluralRu(size, CY_TASKS)}`;
+}
+
+/** «все темы», «тема «Притчи и истории»», «3 темы». */
+function cyGroupsLabel(groups) {
+  if (!groups.length) return 'все темы';
+  return groups.length === 1 ? `тема «${CY_GROUPS[groups[0]]}»` : `${groups.length} ${pluralRu(groups.length, ['тема', 'темы', 'тем'])}`;
+}
+
+/** «Все задания, 10 заданий, все темы.» — без длины на плашке незаконченного раунда. */
+function cySettingsLine({ filters, size }, withSize = true) {
+  return `${[CY_MODE_SUMMARY[filters.mode], withSize ? cySizeLabel(size) : '', cyGroupsLabel(filters.groups)]
+    .filter(Boolean).join(', ')}.`;
 }
 
 /** Шапка в разделе: решённые задания «Чэнъюй», а не прогресс основного банка. */
@@ -105,21 +206,68 @@ function cyRenderSetup() {
     const done = records.filter((record) => cy.progress[record.id]).length;
     label.querySelector('.topic-progress').textContent = `${done} из ${records.length}`;
   }
+  // на пилюле набора — сколько заданий он даст при выбранных темах
+  const modeCounts = {};
   for (const input of document.querySelectorAll('input[name="cyMode"]')) {
     input.checked = input.value === cy.filters.mode;
+    modeCounts[input.value] = cyEligible(CHENGYU_BANK, { ...cy.filters, mode: input.value }, cy.progress).length;
+    input.nextElementSibling.querySelector('.pill-count').textContent = String(modeCounts[input.value]);
   }
   for (const input of document.querySelectorAll('input[name="cySize"]')) {
     input.checked = input.value === (cy.size === Number.MAX_SAFE_INTEGER ? 'all' : String(cy.size));
   }
   $('cyModeHelp').textContent = CY_MODE_HELP[cy.filters.mode];
-  const count = cyEligible(CHENGYU_BANK, cy.filters, cy.progress).length;
-  const inRound = Math.min(count, cy.size);
-  $('cyEligibleNotice').textContent = count
-    ? `Доступно ${count} ${pluralRu(count, ['задание', 'задания', 'заданий'])}, в раунде будет ${inRound}.`
+  cyRenderHome(modeCounts);
+}
+
+/** Верх раздела: первый визит, «Следующий раунд» или «Раунд не закончен»; полоса внизу. */
+function cyRenderHome(modeCounts) {
+  const available = modeCounts[cy.filters.mode];
+  const unfinished = cy.round.length > 0 && !cy.finished;
+  const fresh = !unfinished && !CHENGYU_BANK.some((record) => cy.progress[record.id]);
+  $('cyFirstHero').hidden = !fresh;
+  $('cyNextRound').hidden = fresh;
+  $('cyNextMain').hidden = unfinished;
+  $('cyResumePanel').hidden = !unfinished;
+
+  const { groups } = cy.filters;
+  const summary = cySettingsLine({ filters: cy.filters, size: cy.size });
+  const inRound = Math.min(cy.size, available);
+  const notice = available
+    ? `Подходит заданий: ${available}, в раунде будет ${inRound}.`
     : cy.filters.mode === 'mistakes'
       ? 'Ошибок пока нет: сюда попадает задание, в котором последний ответ был неверным.'
       : 'Под выбранные условия нет заданий. Выберите другие темы или набор.';
-  $('cyStartButton').disabled = count === 0;
+  $('cyNextSummary').textContent = summary;
+  $('cyEligibleNotice').textContent = notice;
+  // первый визит: пока настройки не трогали, подпись под кнопкой просто объясняет раунд
+  const plain = cy.filters.mode === 'all' && !groups.length;
+  $('cyFirstCaption').textContent = !plain || !available ? `${summary} ${notice}`
+    : `${cy.size === Number.MAX_SAFE_INTEGER ? 'Все задания раздела в случайном порядке'
+      : `${cy.size} случайных заданий из всех тем`}. Набор, темы и длина — ниже.`;
+  for (const id of ['cyFirstStart', 'cyStartButton', 'cyBarStart']) $(id).disabled = available === 0;
+  $('cyResumeNew').hidden = available === 0;
+  $('cyStartBarText').textContent = available
+    ? `${groups.length ? `${groups.length} ${pluralRu(groups.length, ['тема', 'темы', 'тем'])}` : 'Все темы'}, ${inRound} из ${available} подходящих`
+    : 'Под условия не подходит ни одно задание';
+
+  // быстрые входы: раунд из ошибок (пустой не показывается) и справочник
+  const mistakes = modeCounts.mistakes;
+  $('cyQuickMistakes').hidden = mistakes === 0;
+  $('cyQuickMistakes').querySelector('.quick-number').textContent = String(mistakes);
+  $('cyQuickMistakes').querySelector('.quick-unit').textContent = pluralRu(mistakes, CY_TASKS);
+  $('cyQuickReference').querySelector('.quick-number').textContent = String(CHENGYU_BANK.length);
+
+  if (unfinished) {
+    $('cyResumeProgress').textContent = `Задание ${cy.position + 1} из ${cy.round.length}, верно ${cy.correct}.`;
+    $('cyResumeSettings').textContent = ` ${cySettingsLine(cy.roundSettings, false)}`;
+    cyRenderSteps($('cyResumeSteps'), $('cyResumeTrack'), $('cyResumeFill'));
+    const answered = cy.position + (cy.answered ? 1 : 0);
+    $('cyResumeSaved').hidden = answered === 0;
+    $('cyResumeSaved').textContent = answered === 1 ? 'Ответ на первое задание уже сохранён в прогрессе.'
+      : `Ответы на первые ${NUMBER_WORDS[answered] || answered} ${pluralRu(answered, CY_TASKS)} уже сохранены в прогрессе.`;
+  }
+  updateStartBar();
 }
 
 function cyOpenSetup() {
@@ -129,30 +277,52 @@ function cyOpenSetup() {
 
 /* ---------- раунд ---------- */
 
-function cyStartRoundWith(round) {
-  if (!round.length) return;
-  Object.assign(cy, {
-    round, position: 0, answered: false, correct: 0, marks: [], wrongIds: [], wrongPicks: {},
-  });
-  show('cy-quiz');
-  cyRenderQuestion();
+/** Раунд по настройкам раздела; быстрый вход «Ошибки» подменяет только набор. Незаконченный
+ * раунд новый заменяет без вопроса: его ответы уже сохранены в прогрессе. */
+function cyStartRound(mode = cy.filters.mode) {
+  cyStartRoundFrom({ filters: { ...cy.filters, mode }, size: cy.size });
 }
 
-function cyStartRound() {
-  cyStartRoundWith(cyBuildRound(CHENGYU_BANK, cy.filters, cy.progress, cy.size));
+function cyStartRoundFrom(settings) {
+  cyStartRoundWith(cyBuildRound(CHENGYU_BANK, settings.filters, cy.progress, settings.size), settings);
+}
+
+function cyStartRoundWith(round, settings = { filters: cy.filters, size: cy.size }) {
+  if (!round.length) return;
+  Object.assign(cy, {
+    round, position: 0, answered: false, correct: 0, marks: [], wrongIds: [], wrongPicks: {}, finished: false,
+    // копия: настройки раздела меняются на месте, а «Новый раунд» должен повторить эти
+    roundSettings: JSON.parse(JSON.stringify(settings)),
+  });
+  // с начала раздела раунд — новая запись в истории («назад» вернёт к началу), из итогов — та же
+  setAddress('#chengyu/round', state.view === 'cy-setup', 'fromCyHome');
+  show('cy-quiz');
+  cyRenderQuestion();
+  cySaveRound();
+}
+
+/** «Продолжить раунд» с плашки: экран раунда остался как был — то же задание, тот же разбор. */
+function cyContinueRound() {
+  if (!cy.round.length || cy.finished) return;
+  setAddress('#chengyu/round', true, 'fromCyHome');
+  show('cy-quiz');
 }
 
 function cyRenderProgress() {
-  const total = cy.round.length;
-  const dots = total <= MAX_STEP_DOTS;
-  $('cyProgressSteps').hidden = !dots;
-  $('cyProgressTrack').hidden = dots;
   $('cyScoreLabel').textContent = `верно ${cy.correct}`;
+  cyRenderSteps($('cyProgressSteps'), $('cyProgressTrack'), $('cyProgressFill'));
+}
+
+/** Ход раунда — в раунде и на плашке «Раунд не закончен»: кружки ✓/✕, в длинном раунде — полоса. */
+function cyRenderSteps(steps, track, fill) {
+  const dots = cy.round.length <= MAX_STEP_DOTS;
+  steps.hidden = !dots;
+  track.hidden = dots;
   if (!dots) {
-    $('cyProgressFill').style.width = `${((cy.position + (cy.answered ? 1 : 0)) / total) * 100}%`;
+    fill.style.width = `${((cy.position + (cy.answered ? 1 : 0)) / cy.round.length) * 100}%`;
     return;
   }
-  $('cyProgressSteps').replaceChildren(...cy.round.map((_, index) => {
+  steps.replaceChildren(...cy.round.map((_, index) => {
     const step = document.createElement('li');
     const mark = cy.marks[index];
     const current = index === cy.position;
@@ -246,6 +416,7 @@ function cyAnswer(record, optionId) {
     cy.wrongPicks[record.id] = optionId;
   }
   cy.marks[cy.position] = verdict.correct;
+  cySaveRound();
   cyRenderProgress();
 
   const odd = record.kind === 'odd';
@@ -297,52 +468,120 @@ function cyAnswer(record, optionId) {
 function cyNextQuestion() {
   if (!cy.answered) return;
   cy.position += 1;
-  if (cy.position >= cy.round.length) cyFinishRound();
-  else cyRenderQuestion();
+  if (cy.position >= cy.round.length) {
+    cyFinishRound();
+    return;
+  }
+  cyRenderQuestion();
+  cySaveRound();
+}
+
+/** «Закончить раунд» и Esc: после хотя бы одного ответа — итоги по отвеченным заданиям, без
+ * ответов — начало раздела (такой раунд не остаётся незаконченным). */
+function cyLeaveRound() {
+  if (cy.correct + cy.wrongIds.length > 0) {
+    cyFinishRound();
+    return;
+  }
+  cyDiscardRound();
+  cyOpenSetup();
 }
 
 function cyFinishRound() {
-  const total = cy.round.length;
+  cyCompleteRound();
+  show('cy-results');
+}
+
+function cyCompleteRound() {
+  cy.finished = true;
+  cySaveRound();
+  cyRenderResults();
+}
+
+function cyRenderResults() {
   const wrong = cy.wrongIds.length;
+  // по отвеченным заданиям: после «Закончить раунд» это не весь раунд
+  const total = cy.correct + wrong;
   $('cyFinalScore').innerHTML = `${cy.correct}<span class="score-total"> / ${total}</span>`;
   $('cyResultMeterCorrect').style.flex = String(cy.correct);
   $('cyResultMeterWrong').style.flex = String(wrong);
   $('cyResultCounts').innerHTML = `<span><span class="ok" lang="zh-Hans">✓</span> верно — ${cy.correct}</span>`
     + `<span><span class="bad" lang="zh-Hans">✕</span> с ошибкой — ${wrong}</span>`;
+  $('cyResultText').textContent = wrong
+    ? 'Задания с ошибками вернутся в наборе «Ошибки».'
+    : 'Весь раунд без ошибок.';
   $('cyRepeatMistakes').hidden = wrong === 0;
   $('cyRepeatMistakes').textContent = `Повторить ошибки раунда (${wrong})`;
-  $('cyBackToSetup').classList.toggle('ink-btn--primary', wrong === 0);
-  $('cyBackToSetup').classList.toggle('ink-btn--secondary', wrong !== 0);
+  // «Новый раунд» — тот же набор, длина и темы; после раунда «Ошибки» без ошибок подходящих
+  // заданий может не остаться
+  const { filters, size } = cy.roundSettings;
+  const renewable = cyEligible(CHENGYU_BANK, filters, cy.progress).length > 0;
+  $('cyNewRound').hidden = !renewable;
+  $('cyNewRoundNote').hidden = !renewable;
+  $('cyNewRoundNote').textContent = `Новый раунд — снова ${size === Number.MAX_SAFE_INTEGER ? 'все доступные задания' : cySizeLabel(size)}, ${
+    CY_MODE_SUMMARY[filters.mode].toLowerCase()}, ${cyGroupsLabel(filters.groups)}.`;
+  // на экране одна главная кнопка: «Повторить ошибки», без ошибок — «Новый раунд», а если и его
+  // нет — «К разделу»
+  $('cyNewRound').classList.toggle('ink-btn--primary', wrong === 0);
+  $('cyNewRound').classList.toggle('ink-btn--secondary', wrong !== 0);
+  const homeIsMain = wrong === 0 && !renewable;
+  $('cyBackToSetup').classList.toggle('ink-btn--primary', homeIsMain);
+  $('cyBackToSetup').classList.toggle('ink-btn--text', !homeIsMain);
+  cyRenderMistakes();
+}
+
+/** Ошибки раунда: строка — кнопка, под ней разбор (буквально, смысл, ловушка) и подпись выбранного
+ * варианта. Раскрыт один разбор, сначала — первый. */
+function cyRenderMistakes() {
   const records = cy.round.filter((record) => cy.wrongIds.includes(record.id));
   $('cyResultMistakes').hidden = records.length === 0;
-  $('cyMistakeList').replaceChildren(...records.map((record) => {
+  $('cyMistakeList').replaceChildren(...records.map((record, index) => {
     const picked = record.options.find((option) => option.id === cy.wrongPicks[record.id]);
     const right = cyAnswerText(record);
     const reverse = record.kind === 'reverse';
     const shown = (text) => (reverse ? `<span lang="zh-Hans">${escapeHtml(text)}</span>` : escapeHtml(text));
+    const gloss = picked?.gloss?.replace(/\.$/, '');
     const item = document.createElement('li');
     item.innerHTML = [
+      `<button class="mistake-head" type="button" aria-expanded="false" aria-controls="cyMistake${index}">`,
       '<span class="ink-seal ink-seal--review ink-seal--md" lang="zh-Hans" aria-hidden="true">复</span>',
-      '<div>',
-      `<p class="mistake-question">${reverse ? `«${escapeHtml(record.prompt)}»`
-        : `<span class="cy-mistake-han" lang="zh-Hans">${escapeHtml(record.chengyu)}</span>`}</p>`,
-      '<p class="mistake-answers">',
-      picked ? `Ваш ответ <span class="picked">✕ ${shown(picked.text)}</span> · ` : '',
-      `верно <span class="right">✓ ${shown(right)}</span>`,
-      '</p></div>',
+      '<span class="mistake-text">',
+      `<span class="mistake-question">${reverse ? `«${escapeHtml(record.prompt)}»`
+        : `<span class="cy-mistake-han" lang="zh-Hans">${escapeHtml(record.chengyu)}</span>`}</span>`,
+      '<span class="mistake-answers">',
+      picked ? `Ваш ответ <span class="picked">✕ ${shown(picked.text)}</span>, верно ` : 'Верно ',
+      `<span class="right">✓ ${shown(right)}</span>`,
+      '</span></span>',
+      '<span class="mistake-arrow" aria-hidden="true">▾</span>',
+      '</button>',
+      `<div class="mistake-panel" id="cyMistake${index}" hidden>`,
+      cyFacts(record),
+      gloss ? `<p class="mistake-gloss">Ваш ответ ${shown(picked.text)} — ${escapeHtml(gloss)}.</p>` : '',
+      '</div>',
     ].join('');
+    item.querySelector('.mistake-head').addEventListener('click', (event) => {
+      cyOpenMistake(event.currentTarget.getAttribute('aria-expanded') === 'true' ? -1 : index);
+    });
     return item;
   }));
-  show('cy-results');
+  cyOpenMistake(0);
+}
+
+function cyOpenMistake(index) {
+  for (const [position, item] of [...$('cyMistakeList').children].entries()) {
+    item.querySelector('.mistake-head').setAttribute('aria-expanded', String(position === index));
+    item.querySelector('.mistake-panel').hidden = position !== index;
+  }
 }
 
 function cyRepeatMistakes() {
-  cyStartRoundWith(cy.round.filter((record) => cy.wrongIds.includes(record.id)));
+  cyStartRoundWith(cy.round.filter((record) => cy.wrongIds.includes(record.id)), cy.roundSettings);
 }
 
 /* ---------- справочник ---------- */
 
 function cyOpenReference() {
+  setAddress('#chengyu/reference', true, 'fromCyHome');
   show('cy-reference');
   cyRenderReference();
 }
@@ -405,6 +644,7 @@ document.addEventListener('keydown', (event) => {
   const typing = ['INPUT', 'SELECT', 'TEXTAREA'].includes(document.activeElement?.tagName);
   if (event.key === 'Escape') {
     if (typing) document.activeElement.blur();
+    else if (state.view === 'cy-quiz') cyLeaveRound();
     else if (state.view !== 'cy-setup') cyOpenSetup();
     return;
   }
@@ -415,9 +655,13 @@ document.addEventListener('keydown', (event) => {
     $('cyReferenceSearch').focus();
     return;
   }
-  if (state.view === 'cy-setup' && event.key === 'Enter' && !onControl && !$('cyStartButton').disabled) {
-    event.preventDefault();
-    cyStartRound();
+  // Enter в начале раздела — главная кнопка его верха: начать раунд или продолжить незаконченный
+  if (state.view === 'cy-setup' && event.key === 'Enter' && !onControl) {
+    const main = [$('cyFirstStart'), $('cyStartButton'), $('cyResumeButton')].find((button) => button.offsetParent);
+    if (main && !main.disabled) {
+      event.preventDefault();
+      main.click();
+    }
     return;
   }
   if (state.view !== 'cy-quiz') return;
@@ -442,20 +686,34 @@ $('navChengyu').addEventListener('click', (event) => {
   event.preventDefault();
   cyOpenSetup();
 });
-$('cyStartButton').addEventListener('click', cyStartRound);
-$('cyOpenReference').addEventListener('click', cyOpenReference);
-$('cyResultsReference').addEventListener('click', cyOpenReference);
+for (const id of ['cyFirstStart', 'cyStartButton', 'cyBarStart', 'cyResumeNew']) {
+  $(id).addEventListener('click', () => cyStartRound());
+}
+$('cyQuickMistakes').addEventListener('click', () => cyStartRound('mistakes'));
+$('cyResumeButton').addEventListener('click', cyContinueRound);
+// «Настроить раунд» — к «Набору», без записи в адресе
+$('cySettingsLink').addEventListener('click', (event) => {
+  event.preventDefault();
+  $('cySettings').scrollIntoView({ behavior: scrollBehavior(), block: 'start' });
+  document.querySelector('input[name="cyMode"]:checked')?.focus({ preventScroll: true });
+});
+for (const id of ['cyFirstReference', 'cyQuickReference', 'cyResultsReference']) {
+  $(id).addEventListener('click', cyOpenReference);
+}
 $('cyCloseReference').addEventListener('click', cyOpenSetup);
 $('cyBackToSetup').addEventListener('click', cyOpenSetup);
-$('cyLeaveRound').addEventListener('click', cyOpenSetup);
+$('cyLeaveRound').addEventListener('click', cyLeaveRound);
 $('cyNextButton').addEventListener('click', cyNextQuestion);
 $('cyRepeatMistakes').addEventListener('click', cyRepeatMistakes);
+$('cyNewRound').addEventListener('click', () => cyStartRoundFrom(cy.roundSettings));
 $('cyReferenceSearch').addEventListener('input', cyRenderReference);
 $('cyReferenceGroup').addEventListener('change', cyRenderReference);
 $('cyResetProgress').addEventListener('click', () => {
   if (!confirm('Сбросить прогресс по чэнъюй? Прогресс основного тренажёра останется.')) return;
   cy.progress = {};
   cySaveProgress();
+  // плашка незаконченного раунда обещает, что его ответы сохранены, — после сброса это не так
+  cyDiscardRound();
   cyRenderSetup();
   cyRenderCount();
 });
@@ -480,11 +738,29 @@ for (const [group, name] of Object.entries(CY_GROUPS)) {
   $('cyReferenceGroup').append(option);
 }
 
+/** Экран раздела по адресу — при загрузке и когда ученик ходит «назад» и «вперёд». Адреса вне
+ * раздела разбирает route в quiz.ui.js. */
+function cyRoute() {
+  const hash = location.hash;
+  if ((hash === '#chengyu/round' || hash === '#chengyu/results') && cy.round.length) {
+    const view = cy.finished ? 'cy-results' : 'cy-quiz';
+    if (state.view !== view) show(view);
+  } else if (hash === '#chengyu/reference') {
+    if (state.view !== 'cy-reference') {
+      show('cy-reference');
+      cyRenderReference();
+    }
+  } else if (state.view !== 'cy-setup' || hash !== '#chengyu') {
+    // «назад» из раунда оставляет его незаконченным: начало раздела покажет плашку «Раунд не закончен»
+    cyOpenSetup();
+  }
+}
+
 cyLoad();
-cyRenderStats();
+cyRestoreRound();
 cyRenderSetup();
 // ссылка вида …/#chengyu открывает раздел сразу — и при загрузке, и в открытой странице
-if (location.hash === '#chengyu') cyOpenSetup();
-window.addEventListener('hashchange', () => {
-  if (location.hash === '#chengyu' && !state.view.startsWith('cy-')) cyOpenSetup();
+if (CY_HASH.test(location.hash)) cyRoute();
+window.addEventListener('popstate', () => {
+  if (CY_HASH.test(location.hash)) cyRoute();
 });

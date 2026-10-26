@@ -913,6 +913,28 @@ async function currentChengyu(page, bank) {
   return bank.find((r) => r.chengyu === chengyu && r.kind !== 'reverse');
 }
 
+/** Ответ на задание на экране (верный или любой неверный); возвращает запись банка. */
+async function cyAnswer(page, bank, correct) {
+  const record = await currentChengyu(page, bank);
+  const optionId = correct ? record.answer : record.options.find((o) => o.id !== record.answer).id;
+  await page.locator(`#cyOptions button[data-option-id="${optionId}"]`).click();
+  return record;
+}
+
+/** Ответ и переход к следующему заданию (или к итогам). */
+async function cyAnswerAndNext(page, bank, correct) {
+  const record = await cyAnswer(page, bank, correct);
+  await page.locator('#cyNextButton').click();
+  return record;
+}
+
+/** Раунд из начала раздела: кнопка наверху — «Начать первый раунд» или «Начать раунд». */
+async function cyStartRound(page, size) {
+  await page.locator(`input[name="cySize"][value="${size}"]`).check();
+  await page.locator('#cyFirstStart:visible, #cyStartButton:visible').click();
+  await page.locator('#cyQuizView').waitFor();
+}
+
 test('чэнъюй: раунд с верным и неверным ответом, разбор, итоги и справочник', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
@@ -922,12 +944,9 @@ test('чэнъюй: раунд с верным и неверным ответо�
   assert.ok(bank.length > 35);
   await openChengyu(page);
   assert.equal(await page.locator('#navChengyu').getAttribute('aria-current'), 'page');
-  assert.equal(await page.locator('#cyStatTotal').textContent(), String(bank.length));
   // в шапке раздела — его счёт, а не прогресс основного банка
   assert.equal(await page.locator('#bankCount').textContent(), `Решено 0 из ${bank.length}`);
-  await page.locator('input[name="cySize"][value="5"]').check();
-  await page.locator('#cyStartButton').click();
-  await page.locator('#cyQuizView').waitFor();
+  await cyStartRound(page, 5);
   assert.equal(await page.locator('#cyProgressLabel').textContent(), 'Задание 1 из 5');
   assert.equal(await page.locator('.site-nav').isVisible(), false, 'в раунде навигация скрыта');
 
@@ -951,20 +970,21 @@ test('чэнъюй: раунд с верным и неверным ответо�
   await page.locator('#cyResultsView').waitFor();
   assert.match(await page.locator('#cyFinalScore').textContent(), /^4\s*\/ 5$/);
   assert.equal(await page.locator('#bankCount').textContent(), `Решено 5 из ${bank.length}`);
-  assert.equal(await page.locator('#cyMistakeList li').count(), 1);
+  assert.equal(await page.locator('#cyMistakeList > li').count(), 1);
   assert.equal(await page.locator('#cyRepeatMistakes').isVisible(), true);
 
   // ошибка сохранилась: набор «Ошибки» находит ровно это задание
   await page.locator('#cyBackToSetup').click();
   await page.locator('#cySetupView .mode-option', { hasText: 'Ошибки' }).click();
-  assert.match(await page.locator('#cyEligibleNotice').textContent(), /^Доступно 1 задание/);
+  assert.equal(await page.locator('#cyEligibleNotice').textContent(), 'Подходит заданий: 1, в раунде будет 1.');
   const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('lingvo-trainer:chengyu:v1')));
   assert.equal(stored.progress[wrongRecord.id].lastCorrect, false);
   // прогресс основного раздела не тронут
   assert.equal(await page.evaluate(() => localStorage.getItem('lingvo-trainer:v1')), null);
 
-  await page.locator('#cyOpenReference').click();
+  await page.locator('#cyQuickReference').click();
   await page.locator('#cyReferenceView').waitFor();
+  assert.equal(hashOf(page), '#chengyu/reference');
   assert.equal(await page.locator('#cyReferenceList article').count(), bank.length);
   await page.locator('#cyReferenceSearch').fill('bei gong she');
   assert.equal(await page.locator('#cyReferenceList article').count(), 1);
@@ -995,16 +1015,263 @@ test('чэнъюй: ссылка #chengyu открывает раздел, те�
   assert.equal(hashOf(page), '#chengyu');
   const overflow = () => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
   assert.equal(await overflow(), 0, 'начало раздела');
-  await page.locator('input[name="cySize"][value="all"]').check();
-  await page.locator('#cyStartButton').click();
-  await page.locator('#cyQuizView').waitFor();
+  await cyStartRound(page, 'all');
   assert.equal(await page.locator('#cyProgressTrack').isVisible(), true, 'длинный раунд — полоса, а не кружки');
   await page.locator('#cyOptions button').first().click();
   assert.equal(await overflow(), 0, 'задание с разбором');
   await page.locator('#cyLeaveRound').click();
-  await page.locator('#cyOpenReference').click();
+  await page.locator('#cyResultsView').waitFor();
+  assert.equal(await overflow(), 0, 'итоги с раскрытой ошибкой');
+  await page.locator('#cyResultsReference').click();
   await page.locator('#cyReferenceList article summary').first().click();
   assert.equal(await overflow(), 0, 'справочник');
+  assert.deepEqual(page.errors, []);
+});
+
+test('чэнъюй: первый визит, «Следующий раунд» с быстрыми входами, числа на пилюлях и в подвале', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await page.evaluate(() => CHENGYU_BANK);
+  await openChengyu(page);
+  // первый визит: заголовок, вводный абзац и кнопка — одним блоком; ряда чисел и надписи над заголовком нет
+  assert.equal(await page.locator('#cyFirstHero').isVisible(), true);
+  assert.equal(await page.locator('#cyNextRound').isVisible(), false);
+  assert.equal(await page.locator('#cySetupView .ink-eyebrow, #cySetupView .stats').count(), 0);
+  assert.equal(await page.locator('#cyFirstCaption').textContent(), '10 случайных заданий из всех тем. Набор, темы и длина — ниже.');
+  assert.equal(await page.locator('#cySetupView .ink-btn--primary:visible').count(), 1);
+  // «Как не попасться на ложного друга» — ниже кнопки
+  const button = await page.locator('#cyFirstStart').boundingBox();
+  const steps = await page.locator('.cy-steps').boundingBox();
+  assert.ok(steps.y > button.y + button.height, 'советы под кнопкой');
+  // числа — в подвале
+  const olympiad = bank.filter((r) => r.occurrences?.length).length;
+  assert.equal(await page.locator('#footerNote').textContent(),
+    `В разделе ${bank.length} заданий: ${olympiad} из вариантов ВсОШ за 8 сезонов и ${bank.length - olympiad} составленных`
+    + ' по той же схеме и сверенных со словарями, 8 тем.');
+  const pills = () => page.locator('#cySetupView .mode-option .pill-count').allTextContents();
+  assert.deepEqual(await pills(), [String(bank.length), String(bank.length), '0']);
+
+  // после раунда с ошибкой: «Следующий раунд», быстрый вход «Ошибки», числа на пилюлях
+  await cyStartRound(page, 5);
+  await cyAnswerAndNext(page, bank, false);
+  for (let n = 0; n < 4; n += 1) await cyAnswerAndNext(page, bank, true);
+  await page.locator('#cyBackToSetup').click();
+  await page.locator('#cySetupView').waitFor();
+  assert.equal(await page.locator('#cyFirstHero').isVisible(), false);
+  assert.equal(await page.locator('#cyNextMain').isVisible(), true);
+  assert.equal(await page.locator('#cyNextSummary').textContent(), 'Все задания, 5 заданий, все темы.');
+  assert.equal(await page.locator('#cyEligibleNotice').textContent(), `Подходит заданий: ${bank.length}, в раунде будет 5.`);
+  assert.deepEqual(await pills(), [String(bank.length), String(bank.length - 5), '1']);
+  assert.equal(await page.locator('#cyQuickMistakes').isVisible(), true);
+  assert.equal(await page.locator('#cyQuickMistakes .quick-count').textContent(), '1задание');
+  assert.equal(await page.locator('#cyQuickReference .quick-number').textContent(), String(bank.length));
+  // строка настроек следует за темами и набором; быстрый вход — раунд из ошибок, набор не меняется
+  await page.locator('#cyGroupControls label').first().click();
+  assert.match(await page.locator('#cyNextSummary').textContent(), /^Все задания, 5 заданий, тема «Труд и старание»\.$/);
+  await page.locator('#cyGroupControls label').first().click();
+  // «Настроить раунд» — к «Набору», фокус на выбранном наборе; адрес не меняется
+  await page.locator('#cySettingsLink').click();
+  assert.equal(await page.evaluate(() => document.activeElement.name + ':' + document.activeElement.value), 'cyMode:all');
+  assert.equal(hashOf(page), '#chengyu');
+  await page.locator('#cyQuickMistakes').click();
+  await page.locator('#cyQuizView').waitFor();
+  assert.equal(await page.locator('#cyProgressLabel').textContent(), 'Задание 1 из 1');
+  await page.goBack();
+  await page.locator('#cySetupView').waitFor();
+  assert.equal(await page.locator('input[name="cyMode"]:checked').getAttribute('value'), 'all');
+  assert.deepEqual(page.errors, []);
+});
+
+test('чэнъюй: «назад» из раунда, итогов и справочника ведёт к началу раздела; незаконченный раунд продолжается', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await page.evaluate(() => CHENGYU_BANK);
+  await openChengyu(page);
+  assert.equal(hashOf(page), '#chengyu');
+  await cyStartRound(page, 10);
+  assert.equal(hashOf(page), '#chengyu/round');
+  await cyAnswerAndNext(page, bank, true);
+  const second = await cyAnswer(page, bank, false);
+  await page.goBack();
+  await page.locator('#cySetupView').waitFor();
+  assert.equal(hashOf(page), '#chengyu');
+  // вместо «Следующего раунда» — плашка: ход раунда и две кнопки, главная из них одна
+  assert.equal(await page.locator('#cyNextMain').isVisible(), false);
+  assert.equal(await page.locator('#cyResumePanel').isVisible(), true);
+  assert.equal(await page.locator('#cyResumeProgress').textContent(), 'Задание 2 из 10, верно 1.');
+  assert.equal(await page.locator('#cyResumeSettings').textContent(), ' Все задания, все темы.');
+  assert.equal(await page.locator('#cyResumeSteps li.ink-step--correct').count(), 1);
+  assert.equal(await page.locator('#cyResumeSteps li.ink-step--wrong').count(), 1);
+  assert.equal(await page.locator('#cyResumeSaved').textContent(), 'Ответы на первые два задания уже сохранены в прогрессе.');
+  assert.equal(await page.locator('#cySetupView .ink-btn--primary:visible').count(), 1);
+  // «вперёд» и Enter на плашке возвращают в тот же раунд, к тому же разбору
+  await page.goForward();
+  await page.locator('#cyQuizView').waitFor();
+  assert.equal(await page.locator('#cyProgressLabel').textContent(), 'Задание 2 из 10');
+  await page.goBack();
+  await page.locator('#cySetupView').waitFor();
+  await page.keyboard.press('Enter');
+  await page.locator('#cyQuizView').waitFor();
+  assert.equal((await currentChengyu(page, bank)).id, second.id);
+  assert.equal(await page.locator('#cyFeedback.bad').isVisible(), true, 'разбор ответа остался на месте');
+  // итоги: «назад» — к началу раздела, раунд закончен, плашки нет
+  await page.keyboard.press('Escape');
+  await page.locator('#cyResultsView').waitFor();
+  assert.equal(hashOf(page), '#chengyu/results');
+  await page.goBack();
+  await page.locator('#cySetupView').waitFor();
+  assert.equal(await page.locator('#cyNextMain').isVisible(), true);
+  assert.equal(await page.locator('#cyResumePanel').isVisible(), false);
+  // справочник: «назад» — к началу раздела
+  await page.locator('#cyQuickReference').click();
+  await page.locator('#cyReferenceView').waitFor();
+  assert.equal(hashOf(page), '#chengyu/reference');
+  await page.goBack();
+  await page.locator('#cySetupView').waitFor();
+  assert.equal(hashOf(page), '#chengyu');
+  // «Закончить раунд» без ответов — к началу раздела, раунд не остаётся незаконченным
+  await cyStartRound(page, 5);
+  await page.locator('#cyLeaveRound').click();
+  await page.locator('#cySetupView').waitFor();
+  assert.equal(await page.locator('#cyResumePanel').isVisible(), false);
+  // основной раздел своим «назад» не задет: из главной «назад» в «Чэнъюй» не попадает раунд «Чэнъюй»
+  await page.locator('#navSetup').click();
+  await page.locator('#setupView').waitFor();
+  assert.equal(hashOf(page), '');
+  assert.deepEqual(page.errors, []);
+});
+
+test('чэнъюй: перезагрузка посреди раунда возвращает на то же задание, итоги — на итоги', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await page.evaluate(() => CHENGYU_BANK);
+  await openChengyu(page);
+  await cyStartRound(page, 5);
+  const wrong = await cyAnswerAndNext(page, bank, false);
+  const second = await currentChengyu(page, bank);
+  await page.reload();
+  await page.locator('#cyQuizView').waitFor();
+  assert.equal(hashOf(page), '#chengyu/round');
+  assert.equal(await page.locator('#cyProgressLabel').textContent(), 'Задание 2 из 5');
+  assert.equal((await currentChengyu(page, bank)).id, second.id);
+  assert.equal(await page.locator('#cyProgressSteps li.ink-step--wrong').count(), 1);
+  assert.equal(await page.locator('#bankCount').textContent(), `Решено 1 из ${bank.length}`);
+  // отвеченное задание второй раз не задаётся: после перезагрузки — следующее
+  await cyAnswer(page, bank, true);
+  await page.reload();
+  await page.locator('#cyQuizView').waitFor();
+  assert.equal(await page.locator('#cyProgressLabel').textContent(), 'Задание 3 из 5');
+  for (let n = 0; n < 3; n += 1) await cyAnswerAndNext(page, bank, true);
+  await page.locator('#cyResultsView').waitFor();
+  assert.match(await page.locator('#cyFinalScore').textContent(), /^4\s*\/ 5$/);
+  await page.reload();
+  await page.locator('#cyResultsView').waitFor();
+  assert.equal(hashOf(page), '#chengyu/results');
+  assert.match(await page.locator('#cyFinalScore').textContent(), /^4\s*\/ 5$/);
+  assert.ok((await page.locator('#cyMistakeList').textContent()).includes(wrong.kind === 'reverse' ? wrong.prompt : wrong.chengyu));
+  // «назад» после перезагрузки итогов ведёт к началу раздела
+  await page.goBack();
+  await page.locator('#cySetupView').waitFor();
+  assert.deepEqual(page.errors, []);
+});
+
+test('чэнъюй: «Закончить раунд» — итоги по отвеченным, ошибки раскрываются, «Новый раунд» и «Повторить ошибки»', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await page.evaluate(() => CHENGYU_BANK);
+  // обратное задание с подписями неверных вариантов (подписи есть только у них) и прямое
+  const picked = [
+    bank.find((r) => r.kind === 'reverse' && r.options.some((o) => o.id !== r.answer && o.gloss)),
+    bank.find((r) => r.kind === 'analog'),
+  ];
+  assert.ok(picked.every(Boolean));
+  await openChengyu(page);
+  await page.locator('input[name="cySize"][value="20"]').check();
+  await page.evaluate((ids) => cyStartRoundWith(ids.map((id) => CHENGYU_BANK.find((r) => r.id === id)).concat(
+    CHENGYU_BANK.filter((r) => !ids.includes(r.id)).slice(0, 3))), picked.map((r) => r.id));
+  const wrongOptions = [];
+  for (const record of picked) {
+    const wrong = record.options.find((o) => o.id !== record.answer && (o.gloss || record.kind === 'analog'));
+    wrongOptions.push(wrong);
+    await page.locator(`#cyOptions button[data-option-id="${wrong.id}"]`).click();
+    await page.locator('#cyNextButton').click();
+  }
+  await cyAnswer(page, bank, true);
+  await page.locator('#cyLeaveRound').click();
+  await page.locator('#cyResultsView').waitFor();
+  assert.equal(hashOf(page), '#chengyu/results');
+  assert.match(await page.locator('#cyFinalScore').textContent(), /^1\s*\/ 3$/, 'по отвеченным, а не по всему раунду');
+  assert.equal(await page.locator('#cyRepeatMistakes').textContent(), 'Повторить ошибки раунда (2)');
+  assert.equal(await page.locator('#cyNewRoundNote').textContent(), 'Новый раунд — снова 20 заданий, все задания, все темы.');
+  assert.equal(await page.locator('#cyResultsView .ink-btn--primary:visible').count(), 1);
+  assert.equal(await page.locator('#cyResultsReference').textContent(), 'Открыть справочник чэнъюй');
+  const heads = page.locator('#cyMistakeList .mistake-head');
+  const panels = page.locator('#cyMistakeList .mistake-panel');
+  assert.equal(await heads.count(), 2);
+  assert.equal(await heads.nth(0).getAttribute('aria-expanded'), 'true');
+  assert.equal(await panels.nth(1).isVisible(), false);
+  assert.ok((await heads.nth(0).textContent()).includes(`Ваш ответ ✕ ${wrongOptions[0].text}, верно ✓ `));
+  assert.deepEqual(await panels.nth(0).locator('.cy-facts dt').allTextContents(), ['Ответ', 'Смысл', 'Ловушка']);
+  assert.equal(await panels.nth(0).locator('.mistake-gloss').textContent(),
+    `Ваш ответ ${wrongOptions[0].text} — ${wrongOptions[0].gloss.replace(/\.$/, '')}.`);
+  // с клавиатуры: Enter раскрывает вторую ошибку и сворачивает первую; у прямого — буквально, смысл, ловушка
+  await heads.nth(1).focus();
+  await page.keyboard.press('Enter');
+  assert.equal(await panels.nth(1).isVisible(), true);
+  assert.equal(await panels.nth(0).isVisible(), false);
+  assert.deepEqual((await panels.nth(1).locator('.cy-facts dt').allTextContents()).slice(0, 3), ['Буквально', 'Смысл', 'Ловушка']);
+  assert.equal(await panels.nth(1).locator('.cy-facts dd').nth(1).textContent(), picked[1].meaning);
+  assert.ok((await heads.nth(1).textContent()).includes(`Ваш ответ ✕ ${wrongOptions[1].text}, верно ✓ `));
+  // «Повторить ошибки» — раунд из двух ошибок, той же записью истории
+  await page.locator('#cyRepeatMistakes').click();
+  await page.locator('#cyQuizView').waitFor();
+  assert.equal(await page.locator('#cyProgressLabel').textContent(), 'Задание 1 из 2');
+  await cyAnswerAndNext(page, bank, true);
+  await cyAnswerAndNext(page, bank, true);
+  await page.locator('#cyResultsView').waitFor();
+  // без ошибок: главная кнопка — «Новый раунд»; он повторяет настройки раунда, а не раздела
+  assert.equal(await page.locator('#cyResultText').textContent(), 'Весь раунд без ошибок.');
+  assert.equal(await page.locator('#cyRepeatMistakes').isVisible(), false);
+  assert.equal(await page.locator('#cyResultMistakes').isVisible(), false);
+  assert.match(await page.locator('#cyNewRound').getAttribute('class'), /ink-btn--primary/);
+  await page.evaluate(() => { cy.size = 5; });
+  await page.locator('#cyNewRound').click();
+  await page.locator('#cyQuizView').waitFor();
+  assert.equal(await page.locator('#cyProgressLabel').textContent(), 'Задание 1 из 20');
+  await page.goBack();
+  await page.locator('#cySetupView').waitFor();
+  assert.deepEqual(page.errors, []);
+});
+
+test('чэнъюй, телефон: кнопка раунда внизу — только когда верхняя ушла за край экрана', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 375, height: 812 });
+  if (!page) return;
+  const bank = await page.evaluate(() => CHENGYU_BANK);
+  await openChengyu(page);
+  const bar = page.locator('#cyStartBar');
+  const shownBar = () => page.waitForFunction(() => {
+    const element = document.getElementById('cyStartBar');
+    return element.classList.contains('is-shown') && element.getBoundingClientRect().bottom <= innerHeight + 0.5;
+  });
+  assert.equal(await bar.isVisible(), false);
+  await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
+  await shownBar();
+  assert.equal(await page.locator('#cyStartBarText').textContent(), `Все темы, 10 из ${bank.length} подходящих`);
+  // полоса не закрывает подвал
+  const footer = await page.locator('.ink-footer p').last().boundingBox();
+  assert.ok(footer.y + footer.height <= (await bar.boundingBox()).y, 'подвал под полосой');
+  await page.locator('#cyBarStart').click();
+  await page.locator('#cyQuizView').waitFor();
+  assert.equal(await bar.isVisible(), false);
+  // при плашке «Раунд не закончен» полосы нет
+  await cyAnswer(page, bank, true);
+  await page.goBack();
+  await page.locator('#cyResumePanel').waitFor();
+  await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
+  await page.evaluate(() => new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+  assert.equal(await page.evaluate(() => document.getElementById('cyStartBar').classList.contains('is-shown')), false);
+  // полоса основного раздела в «Чэнъюй» не появляется, и наоборот
+  assert.equal(await page.evaluate(() => document.getElementById('startBar').classList.contains('is-shown')), false);
   assert.deepEqual(page.errors, []);
 });
 

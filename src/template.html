@@ -338,20 +338,68 @@
 
   <!-- Раздел «Чэнъюй»: src/chengyu.mjs, src/chengyu.ui.js, src/chengyu.css -->
   <section class="view" id="cySetupView" hidden>
-    <div class="hero">
-      <p class="ink-eyebrow">Лексико-грамматический тест · тренажёр ВсОШ</p>
+    <!-- Верх раздела — как у главной: первый визит (прогресс «Чэнъюй» пуст), «Следующий раунд» или
+         «Раунд не закончен» (из раунда ушли «назад»). Выбирает cyRenderHome в chengyu.ui.js. -->
+    <section class="hero" id="cyFirstHero" hidden>
       <h1 class="hero-title">Чэнъюй</h1>
       <div class="hero-row">
         <p class="ink-lead">Задание «Подберите аналог фразеологизму в русском языке» — из настоящих вариантов
           олимпиады и составленные по той же схеме, сверенные со словарями. Неверные варианты почти
           всегда повторяют образ чэнъюя — после каждого ответа разбор показывает, в чём ловушка.</p>
-        <dl class="stats">
-          <div><dt id="cyStatTotalLabel">заданий</dt><dd id="cyStatTotal"></dd></div>
-          <div><dt id="cyStatSeasonsLabel">сезонов олимпиады</dt><dd id="cyStatSeasons"></dd></div>
-          <div><dt id="cyStatGroupsLabel">тем</dt><dd id="cyStatGroups"></dd></div>
-        </dl>
+        <div class="hero-start">
+          <button class="ink-btn ink-btn--primary" id="cyFirstStart" type="button">Начать первый раунд</button>
+          <p class="ink-caption" id="cyFirstCaption" aria-live="polite"></p>
+          <button class="ink-btn ink-btn--text" id="cyFirstReference" type="button">Справочник чэнъюй</button>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section class="next" id="cyNextRound" hidden>
+      <div class="next-main" id="cyNextMain">
+        <h1 class="next-title">Следующий раунд</h1>
+        <p class="next-summary" id="cyNextSummary"></p>
+        <p class="next-note" id="cyEligibleNotice" aria-live="polite"></p>
+        <div class="next-actions">
+          <button class="ink-btn ink-btn--primary" id="cyStartButton" type="button">Начать раунд</button>
+          <a class="ink-btn ink-btn--text" id="cySettingsLink" href="#chengyu">Настроить раунд</a>
+        </div>
+        <p class="ink-caption hint">Enter — начать раунд</p>
+      </div>
+      <div class="resume" id="cyResumePanel" hidden>
+        <div class="resume-head">
+          <span class="ink-seal ink-seal--neutral" lang="zh-Hans" aria-hidden="true">续</span>
+          <h1 class="resume-title">Раунд не закончен</h1>
+        </div>
+        <p><span id="cyResumeProgress"></span><span class="resume-settings" id="cyResumeSettings"></span></p>
+        <ol class="ink-steps" id="cyResumeSteps" aria-label="Ход раунда"></ol>
+        <div class="ink-meter track" id="cyResumeTrack" hidden><span class="fill" id="cyResumeFill"></span></div>
+        <div class="next-actions">
+          <button class="ink-btn ink-btn--primary" id="cyResumeButton" type="button">Продолжить раунд</button>
+          <button class="ink-btn ink-btn--text" id="cyResumeNew" type="button">Начать новый раунд</button>
+        </div>
+        <p class="ink-caption resume-saved" id="cyResumeSaved"></p>
+      </div>
+      <div class="quick">
+        <button class="quick-row" id="cyQuickMistakes" type="button">
+          <span class="ink-seal ink-seal--retry ink-seal--md" lang="zh-Hans" aria-hidden="true">再</span>
+          <span class="quick-text">
+            <span class="quick-name">Ошибки</span>
+            <span class="quick-help quick-help--long">Последний ответ был неверным — раунд только из них</span>
+            <span class="quick-help quick-help--short">Раунд только из них</span>
+          </span>
+          <span class="quick-count"><span class="quick-number"></span><span class="quick-unit"></span></span>
+        </button>
+        <button class="quick-row" id="cyQuickReference" type="button">
+          <span class="ink-seal ink-seal--neutral ink-seal--md" lang="zh-Hans" aria-hidden="true">典</span>
+          <span class="quick-text">
+            <span class="quick-name">Справочник</span>
+            <span class="quick-help quick-help--long">Все задания раздела с разбором и поиском</span>
+            <span class="quick-help quick-help--short">Разбор и поиск</span>
+          </span>
+          <span class="quick-count"><span class="quick-number"></span><span class="quick-unit">чэнъюй</span></span>
+        </button>
+      </div>
+    </section>
 
     <section class="chapter">
       <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">一</span>
@@ -367,14 +415,14 @@
       </div>
     </section>
 
-    <section class="chapter">
+    <section class="chapter" id="cySettings">
       <span class="chapter-mark" lang="zh-Hans" aria-hidden="true">二</span>
       <fieldset class="chapter-body mode-picker">
         <legend class="ink-title-2">Набор</legend>
         <div class="ink-pills mode-options">
-          <label class="mode-option"><input type="radio" name="cyMode" value="all" checked><span class="ink-pill">Все задания</span></label>
-          <label class="mode-option"><input type="radio" name="cyMode" value="new"><span class="ink-pill">Новые</span></label>
-          <label class="mode-option"><input type="radio" name="cyMode" value="mistakes"><span class="ink-pill">Ошибки</span></label>
+          <label class="mode-option"><input type="radio" name="cyMode" value="all" checked><span class="ink-pill">Все задания <span class="pill-count"></span></span></label>
+          <label class="mode-option"><input type="radio" name="cyMode" value="new"><span class="ink-pill">Новые <span class="pill-count"></span></span></label>
+          <label class="mode-option"><input type="radio" name="cyMode" value="mistakes"><span class="ink-pill">Ошибки <span class="pill-count"></span></span></label>
         </div>
         <p class="ink-caption mode-help" id="cyModeHelp"></p>
       </fieldset>
@@ -402,20 +450,18 @@
       </fieldset>
     </section>
 
-    <section class="launch">
-      <p class="notice" id="cyEligibleNotice" aria-live="polite"></p>
-      <div class="actions launch-actions">
-        <button class="ink-btn ink-btn--primary" id="cyStartButton" type="button">Начать раунд</button>
-        <button class="ink-btn ink-btn--secondary" id="cyOpenReference" type="button">Справочник чэнъюй</button>
+    <details class="progress-tools">
+      <summary>Управление прогрессом</summary>
+      <div class="actions">
+        <button class="ink-btn ink-btn--text danger" id="cyResetProgress" type="button">Сбросить прогресс по чэнъюй</button>
       </div>
-      <p class="ink-caption hint">Enter — начать раунд</p>
-      <details class="progress-tools">
-        <summary>Управление прогрессом</summary>
-        <div class="actions">
-          <button class="ink-btn ink-btn--text danger" id="cyResetProgress" type="button">Сбросить прогресс по чэнъюй</button>
-        </div>
-      </details>
-    </section>
+    </details>
+
+    <!-- телефон: появляется, когда кнопка раунда наверху ушла за край экрана -->
+    <div class="start-bar" id="cyStartBar">
+      <p id="cyStartBarText"></p>
+      <button class="ink-btn ink-btn--primary" id="cyBarStart" type="button">Начать раунд</button>
+    </div>
   </section>
 
   <section class="view quiz" id="cyQuizView" hidden>
@@ -452,15 +498,20 @@
         <span class="ink-meter__wrong" id="cyResultMeterWrong"></span>
       </div>
       <p class="ink-caption result-counts" id="cyResultCounts"></p>
+      <p class="ink-lead result-text" id="cyResultText"></p>
       <div class="actions">
         <button class="ink-btn ink-btn--primary" id="cyRepeatMistakes" type="button" hidden>Повторить ошибки раунда</button>
-        <button class="ink-btn ink-btn--secondary" id="cyBackToSetup" type="button">К разделу «Чэнъюй»</button>
+        <button class="ink-btn ink-btn--secondary" id="cyNewRound" type="button">Новый раунд</button>
       </div>
-      <button class="ink-btn ink-btn--text" id="cyResultsReference" type="button">Открыть справочник чэнъюй <span lang="zh-Hans" aria-hidden="true">→</span></button>
+      <p class="ink-caption new-round-note" id="cyNewRoundNote"></p>
+      <div class="actions cy-results-links">
+        <button class="ink-btn ink-btn--text" id="cyBackToSetup" type="button">К разделу «Чэнъюй»</button>
+        <button class="ink-btn ink-btn--text" id="cyResultsReference" type="button">Открыть справочник чэнъюй</button>
+      </div>
     </div>
     <div class="results-mistakes" id="cyResultMistakes">
       <h2 class="ink-title-2">Ошибки раунда</h2>
-      <ol class="mistakes" id="cyMistakeList"></ol>
+      <ol class="mistakes mistakes--fold" id="cyMistakeList"></ol>
     </div>
   </section>
 
