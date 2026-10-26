@@ -963,6 +963,8 @@ test('чэнъюй: раунд с верным и неверным ответо�
     await page.keyboard.press(`Digit${shown.indexOf(optionId) + 1}`);
     await page.locator('#cyFeedback.good, #cyFeedback.bad').waitFor();
     assert.equal(await page.locator('#cyFeedback .verdict strong').textContent(), correct ? 'Верно' : 'Неверно');
+    // удар печати — только в основном раунде: «Чэнъюй» пока без движения
+    assert.deepEqual(await cssAnimations(page), []);
     assert.match(await page.locator('#cyFeedback').textContent(), /Смысл/);
     if (!correct) wrongRecord = record;
     await page.keyboard.press('Enter');
@@ -1959,5 +1961,136 @@ test('русское название верного ответа: под вар
   const answers = page.locator('#mistakeList .mistake-answers');
   assert.ok((await answers.first().textContent()).endsWith(`✓ ${right} — ${name}`));
   assert.ok((await answers.nth(1).textContent()).endsWith(`✓ ${plainRight}`));
+  assert.deepEqual(page.errors, []);
+});
+
+/** CSS-анимации страницы: «элемент::псевдоэлемент:имя». Переходы (CSSTransition) не в счёт; законченная
+ * анимация с заливкой (fill) остаётся в списке, поэтому повтор удара ловит runningAnimations. */
+function cssAnimations(page) {
+  return page.evaluate(() => document.getAnimations()
+    .filter((animation) => animation instanceof CSSAnimation)
+    .map((animation) => `${animation.effect.target.id || animation.effect.target.className}`
+      + `${animation.effect.pseudoElement ?? ''}:${animation.animationName}`)
+    .sort());
+}
+
+/** Идущие сейчас CSS-анимации — после finishAnimations их быть не должно, пока печать не ставят заново. */
+function runningAnimations(page) {
+  return page.evaluate(() => document.getAnimations()
+    .filter((animation) => animation instanceof CSSAnimation && animation.playState === 'running')
+    .map((animation) => animation.animationName)
+    .sort());
+}
+
+function finishAnimations(page) {
+  return page.evaluate(() => { for (const animation of document.getAnimations()) animation.finish(); });
+}
+
+/** Печать разбора и круг краски: вид псевдоэлементов .verdict. */
+const sealStyle = (page) => page.locator('#feedback .verdict').evaluate((verdict) => {
+  const seal = getComputedStyle(verdict, '::before');
+  const ring = getComputedStyle(verdict, '::after');
+  return { sealAnimation: seal.animationName, ringDisplay: ring.display, ringColor: ring.color,
+    sealColor: seal.color, sealFill: seal.backgroundColor };
+});
+
+test('удар печати: движется только печать разбора, а при «уменьшить движение» она сразу на месте и без круга', LIMIT, async (t) => {
+  for (const reducedMotion of ['no-preference', 'reduce']) {
+    const page = await openPage(t);
+    if (!page) return;
+    await page.emulateMedia({ reducedMotion });
+    const moving = reducedMotion === 'no-preference';
+    const expected = moving ? ['verdict::after:seal-ring', 'verdict::before:seal-stamp'] : [];
+    const bank = await bankOf(page);
+    const choice = bank.find((r) => r.options.length === 4 && r.answer.state === 'verified');
+    await page.evaluate((id) => startRoundWith([QUESTION_BANK.find((r) => r.id === id)], 'choice'), choice.id);
+    assert.deepEqual(await cssAnimations(page), [], `${reducedMotion}: до ответа ничего не движется`);
+    // ошибка — печать 错, круг краски киноварью, как сама печать
+    await answer(page, choice, false);
+    assert.deepEqual(await cssAnimations(page), expected, `${reducedMotion}: 错`);
+    let style = await sealStyle(page);
+    assert.equal(style.sealAnimation, moving ? 'seal-stamp' : 'none');
+    assert.equal(style.ringDisplay, moving ? 'block' : 'none');
+    if (moving) assert.equal(style.ringColor, style.sealColor, 'круг 错 — цвета печати');
+    // верный ответ — печать 对, круг нефритом, как заливка печати
+    await page.evaluate((id) => startRoundWith([QUESTION_BANK.find((r) => r.id === id)], 'choice'), choice.id);
+    await answer(page, choice, true);
+    assert.deepEqual(await cssAnimations(page), expected, `${reducedMotion}: 对`);
+    style = await sealStyle(page);
+    if (moving) assert.equal(style.ringColor, style.sealFill, 'круг 对 — цвета печати');
+    // «Вспомни сам»: печать 答 — по тому же правилу; самооценка печать заново не ставит
+    await page.evaluate(() => startRoundWith([QUESTION_BANK.find((r) => !needsOptions(r))], 'recall'));
+    assert.deepEqual(await cssAnimations(page), [], `${reducedMotion}: до «Показать ответ»`);
+    await page.locator('#revealAnswer').click();
+    assert.match(await page.locator('#feedback').getAttribute('class'), /\breveal\b/);
+    assert.deepEqual(await cssAnimations(page), expected, `${reducedMotion}: 答`);
+    style = await sealStyle(page);
+    assert.equal(style.ringDisplay, moving ? 'block' : 'none');
+    if (moving) assert.equal(style.ringColor, style.sealColor, 'круг 答 — цвета печати');
+    await finishAnimations(page);
+    await page.locator('#recallRate button').first().click();
+    assert.deepEqual(await runningAnimations(page), [], `${reducedMotion}: самооценка печать заново не ставит`);
+    assert.deepEqual(page.errors, []);
+  }
+});
+
+test('удар печати не повторяется, когда ученик возвращается к отвеченному вопросу', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  await startRound(page, 5);
+  await answer(page, await currentRecord(page, bank), false);
+  assert.deepEqual(await runningAnimations(page), ['seal-ring', 'seal-stamp'], 'ответ ставит печать');
+  await finishAnimations(page);
+  // знак сайта → «Продолжить раунд»: тот же вопрос с разбором, печать уже стоит
+  await page.locator('#homeLink').click();
+  await page.locator('#setupView').waitFor();
+  await page.locator('#resumeButton').click();
+  await page.locator('#quizView').waitFor();
+  assert.equal(await page.locator('#feedback').isVisible(), true);
+  assert.deepEqual(await runningAnimations(page), [], '«Продолжить раунд»');
+  // системные «назад» и «вперёд»
+  await page.goBack();
+  await page.locator('#setupView').waitFor();
+  await page.goForward();
+  await page.locator('#quizView').waitFor();
+  assert.equal(await page.locator('#feedback').isVisible(), true);
+  assert.deepEqual(await runningAnimations(page), [], '«назад» и «вперёд»');
+  assert.deepEqual(page.errors, []);
+});
+
+test('надписи без капслока: тема со знаком над вопросом и в базе, заголовок итогов', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  // знаки тем — те же, что в списке тем на главной
+  const marks = Object.fromEntries(await page.locator('#topicControls .topic-check').evaluateAll((labels) => labels
+    .map((label) => [label.querySelector('.topic-name').textContent, label.querySelector('.topic-mark').textContent])));
+  assert.ok(Object.keys(marks).length >= 7, 'список тем на главной');
+  await startRound(page, 5);
+  const record = await currentRecord(page, bank);
+  assert.equal(await page.locator('#topicLabel').textContent(), record.topic);
+  assert.equal(await page.locator('#topicMark').textContent(), marks[record.topic]);
+  const line = page.locator('#quizView .topic-line');
+  assert.equal(await line.evaluate((element) => getComputedStyle(element).textTransform), 'none');
+  assert.equal(await page.locator('#quizView .ink-eyebrow').count(), 0);
+  await answer(page, record, true);
+  await page.locator('#leaveRound').click();
+  await page.locator('#resultsView').waitFor();
+  const title = page.locator('#resultsView .results-score h2');
+  assert.equal(await title.textContent(), 'Раунд завершён');
+  assert.equal(await title.evaluate((element) => getComputedStyle(element).textTransform), 'none');
+  assert.equal(await page.locator('#resultsView .ink-eyebrow').count(), 0);
+  // карточки базы: знак темы киноварью перед названием темы
+  await page.locator('#navDatabase').click();
+  await page.locator('#databaseView').waitFor();
+  const cards = await page.locator('#databaseList article .topic-line').evaluateAll((lines) => lines.slice(0, 20)
+    .map((topicLine) => [topicLine.querySelector('.wide-only')?.textContent ?? topicLine.lastChild.textContent,
+      topicLine.querySelector('.topic-mark').textContent, getComputedStyle(topicLine).textTransform]));
+  assert.equal(cards.length, 20);
+  for (const [topic, mark, transform] of cards) {
+    assert.equal(mark, marks[topic], topic);
+    assert.equal(transform, 'none');
+  }
   assert.deepEqual(page.errors, []);
 });

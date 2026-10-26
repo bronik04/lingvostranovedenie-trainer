@@ -348,6 +348,7 @@ function cyRenderQuestion() {
   cy.answered = false;
   $('cyProgressLabel').textContent = `Задание ${cy.position + 1} из ${cy.round.length}`;
   cyRenderProgress();
+  $('cyGroupMark').textContent = CY_GROUP_MARKS[record.group];
   $('cyGroupLabel').textContent = CY_GROUPS[record.group];
   const occurrence = cyLatestOccurrence(record);
   $('cySourceLabel').textContent = occurrence ? cyOccurrenceLabel(occurrence) : 'Составленное задание';
