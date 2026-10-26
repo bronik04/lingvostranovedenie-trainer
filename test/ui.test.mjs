@@ -944,6 +944,8 @@ test('чэнъюй: раунд с верным и неверным ответо�
     await page.keyboard.press(`Digit${shown.indexOf(optionId) + 1}`);
     await page.locator('#cyFeedback.good, #cyFeedback.bad').waitFor();
     assert.equal(await page.locator('#cyFeedback .verdict strong').textContent(), correct ? 'Верно' : 'Неверно');
+    // удар печати — только в основном раунде: «Чэнъюй» пока без движения
+    assert.deepEqual(await cssAnimations(page), []);
     assert.match(await page.locator('#cyFeedback').textContent(), /Смысл/);
     if (!correct) wrongRecord = record;
     await page.keyboard.press('Enter');
@@ -1617,12 +1619,27 @@ test('русское название верного ответа: под вар
   assert.deepEqual(page.errors, []);
 });
 
-/** CSS-анимации страницы: «элемент::псевдоэлемент:имя». Переходы (CSSTransition) не в счёт. */
-const cssAnimations = (page) => page.evaluate(() => document.getAnimations()
-  .filter((animation) => animation instanceof CSSAnimation)
-  .map((animation) => `${animation.effect.target.id || animation.effect.target.className}`
-    + `${animation.effect.pseudoElement ?? ''}:${animation.animationName}`)
-  .sort());
+/** CSS-анимации страницы: «элемент::псевдоэлемент:имя». Переходы (CSSTransition) не в счёт; законченная
+ * анимация с заливкой (fill) остаётся в списке, поэтому повтор удара ловит runningAnimations. */
+function cssAnimations(page) {
+  return page.evaluate(() => document.getAnimations()
+    .filter((animation) => animation instanceof CSSAnimation)
+    .map((animation) => `${animation.effect.target.id || animation.effect.target.className}`
+      + `${animation.effect.pseudoElement ?? ''}:${animation.animationName}`)
+    .sort());
+}
+
+/** Идущие сейчас CSS-анимации — после finishAnimations их быть не должно, пока печать не ставят заново. */
+function runningAnimations(page) {
+  return page.evaluate(() => document.getAnimations()
+    .filter((animation) => animation instanceof CSSAnimation && animation.playState === 'running')
+    .map((animation) => animation.animationName)
+    .sort());
+}
+
+function finishAnimations(page) {
+  return page.evaluate(() => { for (const animation of document.getAnimations()) animation.finish(); });
+}
 
 /** Печать разбора и круг краски: вид псевдоэлементов .verdict. */
 const sealStyle = (page) => page.locator('#feedback .verdict').evaluate((verdict) => {
@@ -1660,15 +1677,41 @@ test('удар печати: движется только печать разб
     await page.evaluate(() => startRoundWith([QUESTION_BANK.find((r) => !needsOptions(r))], 'recall'));
     assert.deepEqual(await cssAnimations(page), [], `${reducedMotion}: до «Показать ответ»`);
     await page.locator('#revealAnswer').click();
-    assert.equal(await page.locator('#feedback').getAttribute('class'), 'feedback reveal');
+    assert.match(await page.locator('#feedback').getAttribute('class'), /\breveal\b/);
     assert.deepEqual(await cssAnimations(page), expected, `${reducedMotion}: 答`);
     style = await sealStyle(page);
     assert.equal(style.ringDisplay, moving ? 'block' : 'none');
     if (moving) assert.equal(style.ringColor, style.sealColor, 'круг 答 — цвета печати');
+    await finishAnimations(page);
     await page.locator('#recallRate button').first().click();
-    assert.deepEqual(await cssAnimations(page), expected, `${reducedMotion}: после самооценки`);
+    assert.deepEqual(await runningAnimations(page), [], `${reducedMotion}: самооценка печать заново не ставит`);
     assert.deepEqual(page.errors, []);
   }
+});
+
+test('удар печати не повторяется, когда ученик возвращается к отвеченному вопросу', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await bankOf(page);
+  await startRound(page, 5);
+  await answer(page, await currentRecord(page, bank), false);
+  assert.deepEqual(await runningAnimations(page), ['seal-ring', 'seal-stamp'], 'ответ ставит печать');
+  await finishAnimations(page);
+  // знак сайта → «Продолжить раунд»: тот же вопрос с разбором, печать уже стоит
+  await page.locator('#homeLink').click();
+  await page.locator('#setupView').waitFor();
+  await page.locator('#resumeButton').click();
+  await page.locator('#quizView').waitFor();
+  assert.equal(await page.locator('#feedback').isVisible(), true);
+  assert.deepEqual(await runningAnimations(page), [], '«Продолжить раунд»');
+  // системные «назад» и «вперёд»
+  await page.goBack();
+  await page.locator('#setupView').waitFor();
+  await page.goForward();
+  await page.locator('#quizView').waitFor();
+  assert.equal(await page.locator('#feedback').isVisible(), true);
+  assert.deepEqual(await runningAnimations(page), [], '«назад» и «вперёд»');
+  assert.deepEqual(page.errors, []);
 });
 
 test('надписи без капслока: тема со знаком над вопросом и в базе, заголовок итогов', LIMIT, async (t) => {

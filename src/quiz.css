@@ -530,12 +530,16 @@ select, .search {
   background: var(--surface-ground);
   color: var(--state-incorrect);
 }
-/* удар печати — единственное движение на сайте и только в ответ на ответ ученика (решение автора
- * 2026-10-26): печать в разборе раунда опускается под углом, чуть пружинит и замирает, следом от неё
- * расходится и гаснет круг краски цвета печати. До удара круга не видно. Варианты, разбор и кнопки —
- * без движения; «Чэнъюй» (#cyFeedback) печать пока не «ставит» */
-#feedback .verdict::before { animation: seal-stamp 320ms cubic-bezier(0.2, 0.8, 0.2, 1) both; }
-#feedback .verdict::after {
+/* удар печати — единственная анимация на сайте и только в ответ на ответ ученика (решение автора
+ * 2026-10-26; прежние короткие переходы при наведении и раскрытии остались): печать в разборе раунда
+ * опускается под углом, чуть пружинит и замирает, следом от неё расходится и гаснет круг краски цвета
+ * печати. До удара круга не видно. Класс .stamp ставит ответ (showFeedback), а снимает любая смена
+ * экрана (show): иначе печать била бы заново при возврате к отвеченному вопросу — анимация
+ * псевдоэлемента перезапускается, когда экран снова становится видимым. Варианты, разбор и кнопки —
+ * без движения; «Чэнъюй» (#cyFeedback) печать пока не «ставит». Длительности и кривая удара — из
+ * макета, в шкале --duration-* таких нет */
+#feedback.stamp .verdict::before { animation: seal-stamp 320ms cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+#feedback.stamp .verdict::after {
   content: '';
   grid-row: 1 / span 2;
   grid-column: 1;
@@ -545,7 +549,7 @@ select, .search {
   border-radius: var(--radius-sm);
   opacity: 0;
   pointer-events: none;
-  animation: seal-ring 460ms ease-out 200ms forwards;
+  animation: seal-ring 460ms var(--ease-out) 200ms forwards;
 }
 #feedback.good .verdict::after { color: var(--fill-correct); }
 #feedback.bad .verdict::after { color: var(--state-incorrect); }
@@ -562,8 +566,8 @@ select, .search {
 }
 /* «уменьшить движение»: печать сразу на месте, круга нет */
 @media (prefers-reduced-motion: reduce) {
-  #feedback .verdict::before { animation: none; }
-  #feedback .verdict::after { display: none; }
+  #feedback.stamp .verdict::before { animation: none; }
+  #feedback.stamp .verdict::after { display: none; }
 }
 .verdict strong { grid-column: 2; font-family: var(--font-display); font-size: var(--t-size-title-2); line-height: var(--t-leading-tight); }
 .verdict span { grid-column: 2; color: var(--text-soft); font-size: var(--t-size-caption); }
