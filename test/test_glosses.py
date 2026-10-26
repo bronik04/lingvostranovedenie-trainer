@@ -150,17 +150,14 @@ class GlossesInBankTest(unittest.TestCase):
 
     def test_same_option_of_pooled_questions_is_glossed_alike(self):
         # где вопросу не нужна своя формулировка, у варианта одна подпись (правило пилота);
-        # в чужом досье подпись своя — называет свою строку: 天津 в вопросе о промыслах —
-        # «здесь, в Янлюцине, печатают лубки» (решение автора 2026-10-26)
+        # исключение — 天津 в вопросе о промыслах: подпись называет свою строку, «здесь, в
+        # Янлюцине, печатают лубки» (решение автора 2026-10-26)
+        own_row = {('天津', 'crafts')}
         bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
         for zh in ('天津', '李白', '深圳', '珠海', '汕头'):
-            by_dossier: dict[str, set[str]] = {}
-            for r in bank:
-                for o in r['options']:
-                    if o['zh'] == zh and o.get('gloss'):
-                        by_dossier.setdefault(r.get('dossier', ''), set()).add(o['gloss'])
-            for dossier, texts in by_dossier.items():
-                self.assertEqual(len(texts), 1, (zh, dossier, texts))
+            texts = {o['gloss'] for r in bank for o in r['options']
+                     if o['zh'] == zh and o.get('gloss') and (zh, r.get('dossier')) not in own_row}
+            self.assertEqual(len(texts), 1, (zh, texts))
 
     def test_blue_in_the_traditional_culture_question_is_the_temple_of_heaven_tile(self):
         # решение автора 2026-10-13: в вопросе о цвете в традиционной культуре синий
