@@ -415,7 +415,8 @@ test('настоящие подписи из банка стоят под все
   if (!page) return;
   // вся цепочка на реальных данных: data/bank.json → dist → интерфейс; ответ верный,
   // поэтому подписи должны быть под каждым неверным вариантом, а не только под выбранным
-  const bank = JSON.parse(readFileSync(new URL('../data/bank.json', import.meta.url), 'utf8'));
+  // банк страницы, а не data/bank.json: часть записей data/site.json не пускает на сайт
+  const bank = await bankOf(page);
   const record = bank.find((r) => r.options.filter((o) => o.gloss).length === 3);
   assert.ok(record, 'в банке нет вопроса с подписями у всех трёх неверных вариантов');
   await page.evaluate((id) => startRoundWith([QUESTION_BANK.find((r) => r.id === id)]), record.id);
