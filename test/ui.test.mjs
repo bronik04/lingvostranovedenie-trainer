@@ -373,7 +373,7 @@ test('подписи появляются под неверными вариан
       && QUESTION_BANK.filter((other) => other.questionRu === r.questionRu).length === 1);
     if (!target) return { record: null, wrongId: null };
     target.options.forEach((o) => { delete o.gloss; });
-    // русское название верного ответа (у вопросов досье) здесь не проверяется — его отдельный тест
+    // русское название верного ответа здесь не проверяется — его отдельный тест
     delete target.answer.gloss;
     const wrong = target.options.find((o) => o.id !== target.answer.optionId);
     wrong.gloss = 'Тестовая подпись к неверному варианту';
@@ -1589,12 +1589,14 @@ test('телефон: варианты столбиком, русское наз
   assert.deepEqual(page.errors, []);
 });
 
-test('русское название верного ответа: под вариантом, в разборе и в итогах; у вопроса вне досье — как раньше', LIMIT, async (t) => {
+test('русское название верного ответа: под вариантом, в разборе и в итогах; у вопроса без названия — как раньше', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
   const bank = await bankOf(page);
-  const named = bank.find((r) => r.answer.gloss && r.options.length === 4 && r.answer.gloss.includes(' — '));
-  const plain = bank.find((r) => !r.dossier && r.answer.state === 'verified' && r.options.length === 4);
+  // название вне досье — из glosses.json (решение автора 2026-10-26), у досье — из ячейки; показ один
+  const withName = (r) => r.answer.gloss && r.options.length === 4 && r.answer.gloss.includes(' — ');
+  const named = bank.find((r) => !r.dossier && withName(r)) ?? bank.find(withName);
+  const plain = bank.find((r) => !r.answer.gloss && r.answer.state === 'verified' && r.options.length === 4);
   const name = named.answer.gloss.split(' — ')[0];
   const right = named.options.find((o) => o.id === named.answer.optionId).zh;
   await page.evaluate((ids) => startRoundWith(ids.map((id) => QUESTION_BANK.find((r) => r.id === id)), 'choice'),
@@ -1604,7 +1606,7 @@ test('русское название верного ответа: под вар
   assert.equal(await correct.locator('.option-gloss').textContent(), named.answer.gloss);
   assert.equal(await page.locator('#feedback .verdict span').first().textContent(), `Правильный ответ: ${right} — ${name}.`);
   await page.locator('#nextButton').click();
-  // вне досье: под верным вариантом подписи нет, в разборе — только иероглифы
+  // без названия: под верным вариантом подписи нет, в разборе — только иероглифы
   await answer(page, plain, false);
   assert.equal(await page.locator(`#options button[data-option-id="${plain.answer.optionId}"] .option-gloss`).count(), 0);
   const plainRight = plain.options.find((o) => o.id === plain.answer.optionId).zh;

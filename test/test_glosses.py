@@ -39,6 +39,32 @@ class GlossesTest(unittest.TestCase):
                                                 'gloss': 'Династия Хань, 206 г. до н. э. — 220 г.'})
         self.assertNotIn('gloss', result['options'][0])
 
+    def test_puts_answer_name_into_the_answer(self):
+        # решение автора 2026-10-26: у вопросов вне досье название верного ответа — подпись
+        # к варианту-ответу в glosses.json; сборка кладёт её в answer.gloss, как ячейку досье
+        name = gloss(zh='秦朝', ru='Династия Цинь — первая единая империя, 221–207 гг. до н. э.')
+        [result] = apply_glosses([record()], {'2015-16-zak-4': entry({'o1': name, 'o2': gloss()})})
+        self.assertEqual(result['answer'], {'optionId': 'o1', 'state': 'verified',
+                                            'gloss': 'Династия Цинь — первая единая империя, 221–207 гг. до н. э.'})
+        self.assertEqual(result['options'][0], {'id': 'o1', 'zh': '秦朝'})
+        self.assertEqual(result['options'][1]['gloss'], 'Династия Хань, 206 г. до н. э. — 220 г.')
+
+    def test_answer_name_alone_is_enough(self):
+        name = gloss(zh='秦朝', ru='Династия Цинь — первая единая империя')
+        [result] = apply_glosses([record()], {'2015-16-zak-4': entry({'o1': name})})
+        self.assertEqual(result['answer']['gloss'], 'Династия Цинь — первая единая империя')
+        self.assertTrue(all('gloss' not in option for option in result['options']))
+
+    def test_dossier_record_takes_answer_name_from_its_cell(self):
+        dossier = record(dossier='history', answer={'optionId': 'o1', 'state': 'verified', 'gloss': 'Династия Цинь'})
+        name = gloss(zh='秦朝', ru='Династия Цинь — первая единая империя')
+        self.assertRejected({'2015-16-zak-4': entry({'o1': name})}, 'берётся из ячейки досье', [dossier])
+
+    def test_changed_answer_text_stops_the_build(self):
+        name = gloss(zh='秦', ru='Династия Цинь — первая единая империя')
+        with self.assertRaisesRegex(ValueError, 'вариант изменился'):
+            apply_glosses([record()], {'2015-16-zak-4': entry({'o1': name})})
+
     def test_keeps_untouched_records(self):
         other = record(id='other')
         result = apply_glosses([record(), other], {'2015-16-zak-4': entry({'o2': gloss()})})
@@ -55,7 +81,8 @@ class GlossesTest(unittest.TestCase):
         cases = [
             ({'missing': entry({'o2': gloss()})}, 'такой записи в банке нет'),
             ({'2015-16-zak-4': entry({'o9': gloss()})}, 'такого варианта нет'),
-            ({'2015-16-zak-4': entry({'o1': gloss(zh='秦朝', ru='Династия Цинь')})}, 'у правильного варианта'),
+            ({'2015-16-zak-4': entry({'o1': gloss(zh='秦朝', ru='Династия Цинь')})}, 'название верного ответа — «Название — факт»'),
+            ({'2015-16-zak-4': entry({'o1': gloss(zh='秦朝', ru=' — первая единая империя')})}, 'название верного ответа — «Название — факт»'),
             ({'2015-16-zak-4': entry({'o2': gloss(zh='汉代')})}, 'вариант изменился'),
             ({'2015-16-zak-4': entry({'o2': gloss(ru='Han dynasty')})}, 'не по-русски'),
             ({'2015-16-zak-4': entry({'o2': gloss(ru='   ')})}, 'не по-русски'),
@@ -118,10 +145,13 @@ class GlossesInBankTest(unittest.TestCase):
         expected = {(record_id, option_id): value['ru']
                     for record_id, item in glosses.items() for option_id, value in item['options'].items()}
         # в обе стороны: и каждая подпись дошла, и лишних подписей в банке нет;
-        # у вопросов досье подписи из ячеек таблицы (data/dossiers/), а не из glosses.json
+        # у вопросов досье подписи из ячеек таблицы (data/dossiers/), а не из glosses.json;
+        # подпись к варианту-ответу — название верного ответа, оно у ответа, а не у варианта
         actual = {(record['id'], option['id']): option['gloss']
                   for record in bank.values() if 'dossier' not in record
                   for option in record['options'] if 'gloss' in option}
+        actual |= {(record['id'], record['answer']['optionId']): record['answer']['gloss']
+                   for record in bank.values() if 'dossier' not in record and 'gloss' in record['answer']}
         self.assertEqual(actual, expected)
 
     def test_wrong_options_of_pooled_questions_are_glossed(self):
