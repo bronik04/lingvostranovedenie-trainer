@@ -388,7 +388,7 @@
 | hol-xiaonian | 1 | × | × | — | прогноз |
 | hol-qingming | 1 | × | × | — | да |
 | hol-duanwu | × | × | 1 | 2 | да |
-| hol-qixi | × | × | × | — | прогноз |
+| hol-qixi | × | × | × | 2 | прогноз |
 | hol-zhongqiu | 1 | × | × | — | прогноз |
 | hol-chongyang | 1 | × | × | — | прогноз |
 | hol-laba | × | × | × | 1 | прогноз |
@@ -1015,7 +1015,7 @@
 
 | строка | title | province | feature | unesco | другие | олимпиада |
 |---|---|---|---|---|---|---|
-| mtn-ximalaya | × | × | — | × | — | прогноз |
+| mtn-ximalaya | × | × | — | × | 1 | прогноз |
 | mtn-zhumulangma | × | — | — | × | 1 | да |
 | mtn-kunlun | × | × | 1 | × | — | прогноз |
 | mtn-tianshan | × | 1 | × | — | — | прогноз |
@@ -1276,7 +1276,7 @@
 | prov-guangdong | 1 | × | 1 | × | × | 3 | да |
 | prov-guangxi | 1 | × | — | — | × | — | прогноз |
 | prov-hainan | — | × | — | × | × | 1 | да |
-| prov-sichuan | — | 1 | — | × | × | 3 | да |
+| prov-sichuan | — | 1 | — | × | × | 4 | да |
 | prov-guizhou | 1 | × | — | × | × | 1 | прогноз |
 | prov-yunnan | — | × | — | × | × | 3 | да |
 | prov-xizang | — | × | — | — | × | — | да |
@@ -1284,7 +1284,7 @@
 | prov-gansu | — | × | 1 | × | × | 1 | прогноз |
 | prov-qinghai | — | × | — | × | — | 1 | да |
 | prov-ningxia | — | × | 1 | — | × | — | прогноз |
-| prov-xinjiang | — | × | 1 | — | × | 1 | да |
+| prov-xinjiang | — | × | 1 | — | × | 2 | да |
 | prov-xianggang | — | × | × | 1 | × | — | да |
 | prov-aomen | — | × | × | 1 | × | — | да |
 | prov-taiwan | × | × | × | × | × | — | да |

@@ -1927,7 +1927,7 @@
   {
     "id": "provinces-q125",
     "embeds": "2022-23-mun-amur-4",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "provinces",
       "row": "prov-xinjiang",
@@ -1935,12 +1935,16 @@
       "where": {
         "kind": "自治区"
       }
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-26): правка написания смысла не меняет, второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов набора. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 3, принято автором 2026-10-26."
     }
   },
   {
     "id": "provinces-q126",
     "embeds": "2021-22-mun-amur-2",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "provinces",
       "row": "prov-sichuan",
@@ -1952,6 +1956,10 @@
     "exclude": [
       "prov-shaanxi",
       "prov-gansu"
-    ]
+    ],
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-26): правка написания смысла не меняет, второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов набора. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 3, принято автором 2026-10-26."
+    }
   }
 ]

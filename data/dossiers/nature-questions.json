@@ -1909,7 +1909,7 @@
   {
     "id": "nature-q34",
     "embeds": "2016-17-mun-yar-5",
-    "status": "draft",
+    "status": "accepted",
     "fact": {
       "table": "mountains",
       "row": "mtn-ximalaya",
@@ -1920,6 +1920,10 @@
     },
     "exclude": [
       "mtn-zhumulangma"
-    ]
+    ],
+    "check": {
+      "verdict": "accept",
+      "note": "Проверяющий (Opus, 2026-10-26): правка написания смысла не меняет, второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов набора. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 3, принято автором 2026-10-26."
+    }
   }
 ]

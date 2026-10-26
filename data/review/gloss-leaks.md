@@ -8,7 +8,7 @@
 фактов, одна строка, мостик. Сборку не останавливает: закрыть утечку — правка подписи (с «да» автора)
 или группа фактов.
 
-Подписей с утечкой: 493; выданных вопросов: 342; пар «вопрос с подписью → соседний вопрос»: 2611, из них 1434 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
+Подписей с утечкой: 493; выданных вопросов: 342; пар «вопрос с подписью → соседний вопрос»: 2646, из них 1453 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
 
 ## 特别行政区 — Особый административный район — Сянган и Аомэнь
 
@@ -72,7 +72,7 @@
 - выдаёт 2021-22-mun-mosobl-59: ответ 黄山; зацепка сосна
 - выдаёт nature/nature-q147: ответ Аньхой; зацепка гора Хуаншань, 黄山, та же строка
 - выдаёт nature/nature-q51: ответ 黄山; зацепка сосна, та же строка
-- видна в 2: nature/nature-q144, nature/nature-q46
+- видна в 3: nature/nature-q144, nature/nature-q34, nature/nature-q46
 
 ## 1839 年 — 1839 год: Линь Цзэсюй уничтожил опиум в Хумэне
 
@@ -156,7 +156,7 @@
 
 - выдаёт holidays/holidays-q32: ответ 春节, Праздник весны; зацепка 2024 год, та же строка
 - выдаёт holidays/holidays-q53: ответ 春节, Праздник весны; зацепка Новый год, та же строка
-- видна в 11: holidays/holidays-q01, holidays/holidays-q02, holidays/holidays-q04, holidays/holidays-q08, holidays/holidays-q09, holidays/holidays-q13, holidays/holidays-q16, holidays/holidays-q34, holidays/holidays-q46, holidays/holidays-q47, holidays/holidays-q52
+- видна в 13: holidays/holidays-q01, holidays/holidays-q02, holidays/holidays-q04, holidays/holidays-q08, holidays/holidays-q09, holidays/holidays-q13, holidays/holidays-q16, holidays/holidays-q34, holidays/holidays-q46, holidays/holidays-q47, holidays/holidays-q52, holidays/holidays-q54, holidays/holidays-q55
 
 ## 曹雪芹 — Цао Сюэцинь — автор романа «Сон в красном тереме»
 
@@ -210,7 +210,7 @@
 
 - выдаёт nature/nature-q142: ответ 湖南; зацепка Дунтинху
 - выдаёт provinces/provinces-q90: ответ Дунтинху; зацепка Хунань
-- видна в 20: crafts/crafts-q132, nature/nature-q03, nature/nature-q145, nature/nature-q146, nature/nature-q147, nature/nature-q148, nature/nature-q149, nature/nature-q50, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q32, provinces/provinces-q42
+- видна в 21: crafts/crafts-q132, nature/nature-q03, nature/nature-q145, nature/nature-q146, nature/nature-q147, nature/nature-q148, nature/nature-q149, nature/nature-q50, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q126, provinces/provinces-q32, provinces/provinces-q42
 
 ## 湖南 — Хунань — провинция, где лежит озеро Дунтинху
 
@@ -596,7 +596,7 @@
 ## 中秋节 — Праздник середины осени — 15-е число 8-го лунного месяца: луна и юэбины
 
 - выдаёт holidays/holidays-q07: ответ юэбины; зацепка Праздник середины осени, 中秋节, та же строка
-- видна в 19: holidays/holidays-q01, holidays/holidays-q02, holidays/holidays-q04, holidays/holidays-q05, holidays/holidays-q08, holidays/holidays-q09, holidays/holidays-q13, holidays/holidays-q16, holidays/holidays-q32, holidays/holidays-q33, holidays/holidays-q34, holidays/holidays-q41, holidays/holidays-q42, holidays/holidays-q43, holidays/holidays-q44, holidays/holidays-q45, holidays/holidays-q46, holidays/holidays-q47, holidays/holidays-q53
+- видна в 21: holidays/holidays-q01, holidays/holidays-q02, holidays/holidays-q04, holidays/holidays-q05, holidays/holidays-q08, holidays/holidays-q09, holidays/holidays-q13, holidays/holidays-q16, holidays/holidays-q32, holidays/holidays-q33, holidays/holidays-q34, holidays/holidays-q41, holidays/holidays-q42, holidays/holidays-q43, holidays/holidays-q44, holidays/holidays-q45, holidays/holidays-q46, holidays/holidays-q47, holidays/holidays-q53, holidays/holidays-q54, holidays/holidays-q55
 
 ## 中苏友好同盟互助条约 — Договор о дружбе, союзе и взаимной помощи СССР и КНР, подписан 14 февраля 1950 года
 
@@ -626,7 +626,7 @@
 ## 九华山 — Цзюхуашань — буддийская гора в Аньхое, высшая точка — 1344 м
 
 - выдаёт nature/nature-q149: ответ Аньхой; зацепка Цзюхуашань, 九华山, та же строка
-- видна в 4: nature/nature-q144, nature/nature-q156, nature/nature-q46, nature/nature-q51
+- видна в 5: nature/nature-q144, nature/nature-q156, nature/nature-q34, nature/nature-q46, nature/nature-q51
 
 ## 九月一日 — 1 сентября по григорианскому календарю — День знаний в России
 
@@ -801,7 +801,7 @@
 ## 内蒙古自治区 — Внутренняя Монголия — автономный район на севере Китая, центр — Хух-Хото
 
 - выдаёт provinces/provinces-q34: ответ 内蒙古自治区, Внутренняя Монголия; зацепка Хух-Хото, та же строка
-- видна в 4: provinces/provinces-q112, provinces/provinces-q123, provinces/provinces-q16, provinces/provinces-q17
+- видна в 5: provinces/provinces-q112, provinces/provinces-q123, provinces/provinces-q125, provinces/provinces-q16, provinces/provinces-q17
 
 ## 农村包围城市 — «Окружение городов деревней» — революционный путь, который проложил Мао Цзэдун
 
@@ -901,7 +901,7 @@
 ## 华山 — Хуашань — Западный пик пяти священных гор, в Шэньси
 
 - выдаёт nature/nature-q48: ответ Западный пик; зацепка Хуашань, пять священных гор, та же строка
-- видна в 7: nature/nature-q10, nature/nature-q144, nature/nature-q156, nature/nature-q46, nature/nature-q47, nature/nature-q49, nature/nature-q51
+- видна в 8: nature/nature-q10, nature/nature-q144, nature/nature-q156, nature/nature-q34, nature/nature-q46, nature/nature-q47, nature/nature-q49, nature/nature-q51
 
 ## 南京 — Нанкин — «столица шести династий», с 1927 года столица Китайской Республики
 
@@ -986,7 +986,7 @@
 ## 吉林 — Цзилинь — провинция на Северо-Востоке, центр — Чанчунь
 
 - выдаёт provinces/provinces-q36: ответ Чанчунь; зацепка Провинция Цзилинь, та же строка
-- видна в 21: nature/nature-q03, nature/nature-q145, nature/nature-q146, nature/nature-q147, nature/nature-q148, nature/nature-q149, nature/nature-q23, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 22: nature/nature-q03, nature/nature-q145, nature/nature-q146, nature/nature-q147, nature/nature-q148, nature/nature-q149, nature/nature-q23, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q126, provinces/provinces-q32, provinces/provinces-q42
 
 ## 吉林省 — Цзилинь — провинция на Северо-Востоке, центр — Чанчунь
 
@@ -1166,7 +1166,7 @@
 ## 天山 — Тянь-Шань — хребет в центре Синьцзяна длиной около 1760 км в Китае
 
 - выдаёт nature/nature-q145: ответ Синьцзян; зацепка 天山, та же строка
-- видна в 6: nature/nature-q144, nature/nature-q42, nature/nature-q44, nature/nature-q45, nature/nature-q46, nature/nature-q51
+- видна в 7: nature/nature-q144, nature/nature-q34, nature/nature-q42, nature/nature-q44, nature/nature-q45, nature/nature-q46, nature/nature-q51
 
 ## 天府之国 — Страна изобилия — так издавна зовут плодородную Сычуаньскую котловину
 
@@ -1266,7 +1266,7 @@
 ## 山西 — Шаньси — провинция к западу от гор Тайханшань, центр — Тайюань
 
 - выдаёт provinces/provinces-q03: ответ 山西; зацепка Тайюань, та же строка
-- видна в 17: crafts/crafts-q132, nature/nature-q145, nature/nature-q146, nature/nature-q147, nature/nature-q149, nature/nature-q50, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q42
+- видна в 18: crafts/crafts-q132, nature/nature-q145, nature/nature-q146, nature/nature-q147, nature/nature-q149, nature/nature-q50, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q126, provinces/provinces-q42
 
 ## 岷江 — Миньцзян — приток Янцзы в Сычуани, на нём стоит Дуцзянъянь
 
@@ -1276,12 +1276,12 @@
 ## 峨眉山 — Эмэйшань — буддийская гора в Сычуани, высшая точка — 3099 м
 
 - выдаёт nature/nature-q11: ответ 峨眉山, Эмэйшань; зацепка Сычуань, та же строка
-- видна в 3: nature/nature-q144, nature/nature-q46, nature/nature-q51
+- видна в 4: nature/nature-q144, nature/nature-q34, nature/nature-q46, nature/nature-q51
 
 ## 嵩山 — Суншань — Центральный пик пяти священных гор, в Хэнани
 
 - выдаёт nature/nature-q50: ответ Хэнань; зацепка гора Суншань, пять священных гор, 嵩山, та же строка
-- видна в 6: nature/nature-q10, nature/nature-q144, nature/nature-q46, nature/nature-q47, nature/nature-q49, nature/nature-q51
+- видна в 7: nature/nature-q10, nature/nature-q144, nature/nature-q34, nature/nature-q46, nature/nature-q47, nature/nature-q49, nature/nature-q51
 
 ## 布币 — Бу-би — бронзовые монеты в форме лопатки, эпоха Чуньцю и Чжаньго
 
@@ -1301,7 +1301,7 @@
 ## 广东 — Гуандун — провинция на юге материкового Китая, центр — Гуанчжоу
 
 - выдаёт provinces/provinces-q99: ответ Гуанчжоу; зацепка провинция Гуандун, та же строка
-- видна в 16: crafts/crafts-q132, cuisine/cuisine-q70, cuisine/cuisine-q71, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 17: crafts/crafts-q132, cuisine/cuisine-q70, cuisine/cuisine-q71, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q126, provinces/provinces-q32, provinces/provinces-q42
 
 ## 广东 — Провинция Гуандун на юге Китая, центр — Гуанчжоу
 
@@ -1406,7 +1406,7 @@
 ## 恒山 — Хэншань в Шаньси — Северный пик пяти священных гор
 
 - выдаёт nature/nature-q49: ответ 恒山, Хэншань в Шаньси; зацепка Северный пик, пять священных гор, та же строка
-- видна в 6: nature/nature-q10, nature/nature-q144, nature/nature-q156, nature/nature-q46, nature/nature-q47, nature/nature-q51
+- видна в 7: nature/nature-q10, nature/nature-q144, nature/nature-q156, nature/nature-q34, nature/nature-q46, nature/nature-q47, nature/nature-q51
 
 ## 恶魔 — «Демон» — романтическая поэма Лермонтова
 
@@ -1731,7 +1731,7 @@
 ## 江苏 — Цзянсу — приморская провинция в низовьях Янцзы, центр — Нанкин
 
 - выдаёт provinces/provinces-q24: ответ Нанкин; зацепка Цзянси, Цзянсу
-- видна в 27: crafts/crafts-q132, cuisine/cuisine-q68, cuisine/cuisine-q70, cuisine/cuisine-q71, cuisine/cuisine-q90, cuisine/cuisine-q91, cuisine/cuisine-q93, cuisine/cuisine-q94, cuisine/cuisine-q95, cuisine/cuisine-q96, nature/nature-q154, nature/nature-q155, nature/nature-q67, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 28: crafts/crafts-q132, cuisine/cuisine-q68, cuisine/cuisine-q70, cuisine/cuisine-q71, cuisine/cuisine-q90, cuisine/cuisine-q91, cuisine/cuisine-q93, cuisine/cuisine-q94, cuisine/cuisine-q95, cuisine/cuisine-q96, nature/nature-q154, nature/nature-q155, nature/nature-q67, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q126, provinces/provinces-q32, provinces/provinces-q42
 
 ## 江苏 — Цзянсу — провинция, где лежит основная часть озера Тайху
 
@@ -1766,7 +1766,7 @@
 ## 河北 — Хэбэй — провинция вокруг Пекина и Тяньцзиня, центр — Шицзячжуан
 
 - выдаёт provinces/provinces-q33: ответ Шицзячжуан; зацепка провинция Хэбэй, та же строка
-- видна в 17: crafts/crafts-q132, nature/nature-q154, nature/nature-q155, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 18: crafts/crafts-q132, nature/nature-q154, nature/nature-q155, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q126, provinces/provinces-q32, provinces/provinces-q42
 
 ## 河北省 — Хэбэй — провинция вокруг Пекина и Тяньцзиня, центр — Шицзячжуан
 
@@ -1776,7 +1776,7 @@
 ## 河南 — Хэнань — провинция в центре Китая, в бассейне Хуанхэ, центр — Чжэнчжоу
 
 - выдаёт provinces/provinces-q89: ответ Хуанхэ; зацепка провинция Хэнань, та же строка
-- видна в 18: crafts/crafts-q132, nature/nature-q03, nature/nature-q145, nature/nature-q146, nature/nature-q147, nature/nature-q148, nature/nature-q149, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q32
+- видна в 19: crafts/crafts-q132, nature/nature-q03, nature/nature-q145, nature/nature-q146, nature/nature-q147, nature/nature-q148, nature/nature-q149, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q126, provinces/provinces-q32
 
 ## 河南省 — Хэнань — провинция в центре Китая, на Хуанхэ, центр — Чжэнчжоу
 
@@ -1791,7 +1791,7 @@
 ## 泰山 — Тайшань — Восточный пик пяти священных гор, в Шаньдуне
 
 - выдаёт nature/nature-q47: ответ 泰山, Тайшань; зацепка пять священных гор, та же строка
-- видна в 5: nature/nature-q10, nature/nature-q144, nature/nature-q46, nature/nature-q49, nature/nature-q51
+- видна в 6: nature/nature-q10, nature/nature-q144, nature/nature-q34, nature/nature-q46, nature/nature-q49, nature/nature-q51
 
 ## 泼水节 — Праздник воды — Новый год дайцев: обливают друг друга водой на счастье
 
@@ -1836,7 +1836,7 @@
 ## 浙江 — Чжэцзян — провинция на юге дельты Янцзы, центр — Ханчжоу
 
 - выдаёт provinces/provinces-q101: ответ Ханчжоу; зацепка провинция Чжэцзян, та же строка
-- видна в 31: crafts/crafts-q132, cuisine/cuisine-q68, cuisine/cuisine-q70, cuisine/cuisine-q71, cuisine/cuisine-q90, cuisine/cuisine-q91, cuisine/cuisine-q92, cuisine/cuisine-q93, cuisine/cuisine-q94, cuisine/cuisine-q96, nature/nature-q03, nature/nature-q145, nature/nature-q146, nature/nature-q147, nature/nature-q148, nature/nature-q149, nature/nature-q23, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 32: crafts/crafts-q132, cuisine/cuisine-q68, cuisine/cuisine-q70, cuisine/cuisine-q71, cuisine/cuisine-q90, cuisine/cuisine-q91, cuisine/cuisine-q92, cuisine/cuisine-q93, cuisine/cuisine-q94, cuisine/cuisine-q96, nature/nature-q03, nature/nature-q145, nature/nature-q146, nature/nature-q147, nature/nature-q148, nature/nature-q149, nature/nature-q23, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q126, provinces/provinces-q32, provinces/provinces-q42
 
 ## 浙江省 — Провинция Чжэцзян, административный центр — Ханчжоу
 
@@ -2011,7 +2011,7 @@
 ## 福建 — Фуцзянь — прибрежная провинция на юго-востоке, напротив Тайваня, центр — Фучжоу
 
 - выдаёт 2022-23-shk-mosobl-2: ответ 福建, Фуцзянь; зацепка Фучжоу
-- видна в 20: crafts/crafts-q132, cuisine/cuisine-q90, cuisine/cuisine-q92, cuisine/cuisine-q94, cuisine/cuisine-q95, cuisine/cuisine-q96, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 21: crafts/crafts-q132, cuisine/cuisine-q90, cuisine/cuisine-q92, cuisine/cuisine-q94, cuisine/cuisine-q95, cuisine/cuisine-q96, provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q126, provinces/provinces-q32, provinces/provinces-q42
 
 ## 福建省 — Фуцзянь — провинция на юго-востоке Китая у Тайваньского пролива, центр — Фучжоу
 
@@ -2021,7 +2021,7 @@
 ## 秦岭 — Циньлин — хребет в Шэньси, граница Севера и Юга Китая
 
 - выдаёт nature/nature-q44: ответ 秦岭; зацепка граница Севера и Юга Китая, та же строка
-- видна в 6: nature/nature-q144, nature/nature-q156, nature/nature-q42, nature/nature-q45, nature/nature-q46, nature/nature-q51
+- видна в 7: nature/nature-q144, nature/nature-q156, nature/nature-q34, nature/nature-q42, nature/nature-q45, nature/nature-q46, nature/nature-q51
 
 ## 窑洞 — Яодун — традиционное жильё-пещера лёссового плато
 
@@ -2031,7 +2031,7 @@
 ## 端午节 — Дуаньу — 5-е число 5-го лунного месяца: лодки-драконы и цзунцзы
 
 - выдаёт holidays/holidays-q47: ответ 端午节; зацепка цзунцзы, та же строка
-- видна в 14: holidays/holidays-q02, holidays/holidays-q05, holidays/holidays-q08, holidays/holidays-q09, holidays/holidays-q13, holidays/holidays-q16, holidays/holidays-q33, holidays/holidays-q34, holidays/holidays-q42, holidays/holidays-q43, holidays/holidays-q44, holidays/holidays-q45, holidays/holidays-q46, holidays/holidays-q53
+- видна в 16: holidays/holidays-q02, holidays/holidays-q05, holidays/holidays-q08, holidays/holidays-q09, holidays/holidays-q13, holidays/holidays-q16, holidays/holidays-q33, holidays/holidays-q34, holidays/holidays-q42, holidays/holidays-q43, holidays/holidays-q44, holidays/holidays-q45, holidays/holidays-q46, holidays/holidays-q53, holidays/holidays-q54, holidays/holidays-q55
 
 ## 符拉迪沃斯托克 — Владивосток — центр Приморского края, портовый город на Японском море
 
@@ -2176,7 +2176,7 @@
 ## 衡山 — Хэншань в Хунани — Южный пик пяти священных гор
 
 - выдаёт nature/nature-q10: ответ 衡山, Хэншань в Хунани; зацепка Хунань, Южный пик, пять священных гор, та же строка
-- видна в 6: nature/nature-q144, nature/nature-q156, nature/nature-q46, nature/nature-q47, nature/nature-q49, nature/nature-q51
+- видна в 7: nature/nature-q144, nature/nature-q156, nature/nature-q34, nature/nature-q46, nature/nature-q47, nature/nature-q49, nature/nature-q51
 
 ## 袁隆平 — Юань Лунпин — агроном, «отец гибридного риса»
 
@@ -2281,7 +2281,7 @@
 ## 辽宁 — Ляонин — приморская провинция на юге Северо-Востока, центр — Шэньян
 
 - выдаёт provinces/provinces-q35: ответ Шэньян; зацепка провинция Ляонин, та же строка
-- видна в 14: provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 15: provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q126, provinces/provinces-q32, provinces/provinces-q42
 
 ## 辽宁 — Ляонин — провинция на северо-востоке Китая, на Ляодунском полуострове, центр — Шэньян
 
@@ -2411,7 +2411,7 @@
 ## 除夕 — Чуси — канун Праздника весны, последний вечер года: семейный ужин и бдение
 
 - выдаёт 2019-20-mun-kgd-7: ответ 除夕, канун Праздника весны, последний вечер года; зацепка Праздник весны
-- видна в 10: holidays/holidays-q01, holidays/holidays-q02, holidays/holidays-q04, holidays/holidays-q05, holidays/holidays-q08, holidays/holidays-q09, holidays/holidays-q13, holidays/holidays-q16, holidays/holidays-q47, holidays/holidays-q53
+- видна в 12: holidays/holidays-q01, holidays/holidays-q02, holidays/holidays-q04, holidays/holidays-q05, holidays/holidays-q08, holidays/holidays-q09, holidays/holidays-q13, holidays/holidays-q16, holidays/holidays-q47, holidays/holidays-q53, holidays/holidays-q54, holidays/holidays-q55
 
 ## 雅罗斯拉夫尔 — Ярославль — город на купюре 1000 рублей образца 1997 года
 
@@ -2511,7 +2511,7 @@
 ## 黑龙江 — Хэйлунцзян — самая северная провинция Китая, центр — Харбин
 
 - выдаёт 2020-21-mun-mosobl-47: ответ Харбин; зацепка провинция Хэйлунцзян, 黑龙江
-- видна в 13: provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 14: provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q126, provinces/provinces-q32, provinces/provinces-q42
 
 ## 黑龙江省 — Хэйлунцзян — самая северная провинция Китая, центр — Харбин
 
