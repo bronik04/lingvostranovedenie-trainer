@@ -15,7 +15,7 @@ const STATUS_NAMES = {
   conflict: 'расхождение ключей', 'needs-review': 'нет ответа',
 };
 
-// знак-иероглиф темы на главной; тема без знака получает 文
+// знак-иероглиф темы — на главной, над вопросом и на карточке базы; тема без знака получает 文
 const TOPIC_MARKS = {
   'История и государство': '史',
   'География и административное устройство': '地',
@@ -25,6 +25,7 @@ const TOPIC_MARKS = {
   'Экономика, образование, наука и спорт': '经',
   'Россия и межкультурный блок': '俄',
 };
+const topicMark = (topic) => TOPIC_MARKS[topic] || '文';
 // раздел в строке настроек («разделы: география, история») и на карточке базы на телефоне
 const TOPIC_SHORT = {
   'География и административное устройство': 'география',
@@ -459,6 +460,8 @@ function show(view) {
   })) {
     $(id).hidden = name !== view;
   }
+  // печать уже стоит: вернувшись к отвеченному вопросу, ученик не должен видеть удар снова
+  $('feedback').classList.remove('stamp');
   const chengyu = view.startsWith('cy-');
   setAddress(viewHash(view));
   for (const [link, current] of [
@@ -554,7 +557,7 @@ const bankDossiers = () => [...new Set(QUESTION_BANK.map((r) => r.dossier).filte
 function renderSetup() {
   if (!$('topicControls').children.length) {
     const topics = bankTopics();
-    $('topicControls').append(...topics.map((topic) => topicCheck(topic, topic, TOPIC_MARKS[topic] || '文', 'topics')));
+    $('topicControls').append(...topics.map((topic) => topicCheck(topic, topic, topicMark(topic), 'topics')));
     $('dossierControls').append(...bankDossiers().map((id) =>
       topicCheck(id, dossierTitle(id), DOSSIER_MARKS[id] || '文', 'dossiers')));
 
@@ -843,6 +846,7 @@ function renderQuestion() {
     : matchingOccurrence(record, state.roundSettings?.filters ?? state.filters) ?? record.occurrences[0];
   $('progressLabel').textContent = `Вопрос ${state.position + 1} из ${state.round.length}`;
   renderProgress();
+  $('topicMark').textContent = topicMark(record.topic);
   $('topicLabel').textContent = record.topic;
   // у дополнения года и этапа нет — над ним одна метка «Дополнение»
   $('sourceLabel').textContent = first ? occurrenceLabel(first) : '';
@@ -1022,7 +1026,8 @@ function rightAnswerHtml(record) {
 /** Разбор под вопросом: строка вердикта (её задаёт формат), пояснение, источники. */
 function showFeedback(record, kind, verdictHtml) {
   const sources = evidenceList(record.evidence);
-  $('feedback').className = `feedback ${kind}`;
+  // stamp — удар печати (quiz.css); его снимает show(), чтобы возврат на экран не ставил печать заново
+  $('feedback').className = `feedback ${kind} stamp`;
   $('feedback').innerHTML = [
     `<p class="verdict">${verdictHtml}</p>`,
     record.explanation.ru ? `<p class="why">${escapeHtml(record.explanation.ru)}</p>` : '',
@@ -1341,7 +1346,8 @@ function appendDatabaseRows(rows) {
     const name = answerName(record);
     article.innerHTML = [
       '<div class="row-top">',
-      `<span class="row-topic">${wideOrShort(record.topic, shortTopic[0].toLocaleUpperCase('ru') + shortTopic.slice(1))}</span>`,
+      `<span class="topic-line"><span class="topic-mark" lang="zh-Hans" aria-hidden="true">${topicMark(record.topic)}</span>`
+        + `${wideOrShort(record.topic, shortTopic[0].toLocaleUpperCase('ru') + shortTopic.slice(1))}</span>`,
       `<span class="my ${kind}">${wideOrShort(wide, short)}</span>`,
       // проверенный ответ — норма; метка только у ответа, который ещё не перепроверен или спорен
       record.answer.state === 'verified' ? ''
