@@ -130,5 +130,10 @@ export function cyMatchesSearch(record, query) {
 
 export function cySummary(bank) {
   const seasons = new Set(bank.flatMap((record) => (record.occurrences || []).map((o) => o.year)));
-  return { total: bank.length, seasons: seasons.size, groups: new Set(bank.map((r) => r.group)).size };
+  return {
+    total: bank.length,
+    olympiad: bank.filter((record) => record.occurrences?.length).length,
+    seasons: seasons.size,
+    groups: new Set(bank.map((r) => r.group)).size,
+  };
 }
