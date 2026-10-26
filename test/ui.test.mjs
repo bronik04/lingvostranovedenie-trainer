@@ -1079,6 +1079,17 @@ test('чэнъюй: первый визит, «Следующий раунд» �
   await page.goBack();
   await page.locator('#cySetupView').waitFor();
   assert.equal(await page.locator('input[name="cyMode"]:checked').getAttribute('value'), 'all');
+  // набор без подходящих заданий: главная кнопка — «Начать обычный раунд» (все задания всех тем)
+  await page.evaluate(() => { cy.progress = {}; cyDiscardRound(); });
+  await page.locator('#cySetupView .mode-option', { hasText: 'Новые' }).click();
+  await page.evaluate(() => { for (const r of CHENGYU_BANK) cy.progress[r.id] = { attempts: 1, correct: 1, lastCorrect: true }; cyRenderSetup(); });
+  assert.equal(await page.locator('#cyEligibleNotice').textContent(), 'Под выбранные условия нет заданий. Выберите другие темы или набор.');
+  assert.equal(await page.locator('#cyStartButton').isDisabled(), true);
+  assert.equal(await page.locator('#cySetupView .ink-btn--primary:visible').count(), 1);
+  await page.locator('#cyEmptyAll').click();
+  await page.locator('#cyQuizView').waitFor();
+  assert.equal(await page.locator('#cyProgressLabel').textContent(), 'Задание 1 из 5');
+  assert.equal(await page.evaluate(() => cy.filters.mode), 'all');
   assert.deepEqual(page.errors, []);
 });
 
@@ -1134,10 +1145,70 @@ test('чэнъюй: «назад» из раунда, итогов и справ
   await page.locator('#cyLeaveRound').click();
   await page.locator('#cySetupView').waitFor();
   assert.equal(await page.locator('#cyResumePanel').isVisible(), false);
-  // основной раздел своим «назад» не задет: из главной «назад» в «Чэнъюй» не попадает раунд «Чэнъюй»
+  // переход шапкой в «Тренировку» и обратно: «назад» ведёт на прежний экран, а не в раунд «Чэнъюй»
   await page.locator('#navSetup').click();
   await page.locator('#setupView').waitFor();
   assert.equal(hashOf(page), '');
+  await page.goBack();
+  await page.locator('#cySetupView').waitFor();
+  assert.equal(hashOf(page), '#chengyu');
+  assert.deepEqual(page.errors, []);
+});
+
+test('переходы шапкой между разделами: раунд каждого раздела — своя запись, «назад» ведёт к началу раздела', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const bank = await page.evaluate(() => CHENGYU_BANK);
+  const mainBank = await bankOf(page);
+  // из итогов основного раунда в «Чэнъюй»: «назад» из раунда «Чэнъюй» — к началу раздела, а не на главную
+  await startRound(page, 5);
+  await page.keyboard.press('Escape');
+  await page.locator('#setupView').waitFor();
+  await openChengyu(page);
+  await cyStartRound(page, 5);
+  await page.goBack();
+  await page.locator('#cySetupView').waitFor();
+  assert.equal(hashOf(page), '#chengyu');
+  // плашка: продолжить и выйти без ответов — раунд не остаётся незаконченным
+  await page.keyboard.press('Enter');
+  await page.locator('#cyQuizView').waitFor();
+  await page.keyboard.press('Escape');
+  await page.locator('#cySetupView').waitFor();
+  // три раза: итоги раунда «Чэнъюй», «Тренировка», итоги основного раунда, снова «Чэнъюй»
+  for (let n = 0; n < 3; n += 1) {
+    await openChengyu(page);
+    await cyStartRound(page, 5);
+    await cyAnswer(page, bank, true);
+    await page.locator('#cyLeaveRound').click();
+    await page.locator('#cyResultsView').waitFor();
+    await page.locator('#navSetup').click();
+    await page.locator('#setupView').waitFor();
+    await startButton(page).click();
+    await page.locator('#quizView').waitFor();
+    await answer(page, await currentRecord(page, mainBank), true);
+    await page.keyboard.press('Escape');
+    await page.locator('#resultsView').waitFor();
+  }
+  // каждое «назад» меняет экран: двух записей одного экрана подряд нет
+  const screens = [await page.evaluate(() => `${state.view} ${location.hash}`)];
+  for (let n = 0; n < 4; n += 1) {
+    await page.goBack();
+    await page.waitForFunction((last) => `${state.view} ${location.hash}` !== last, screens.at(-1));
+    screens.push(await page.evaluate(() => `${state.view} ${location.hash}`));
+  }
+  assert.deepEqual(screens, ['results #results', 'setup ', 'cy-setup #chengyu', 'setup ', 'cy-setup #chengyu']);
+  // итоги «Чэнъюй» → «Тренировка» → снова «Чэнъюй»: новый раунд — новая запись, «назад» — к началу раздела
+  await cyStartRound(page, 5);
+  await cyAnswer(page, bank, true);
+  await page.locator('#cyLeaveRound').click();
+  await page.locator('#cyResultsView').waitFor();
+  await page.locator('#navSetup').click();
+  await page.locator('#setupView').waitFor();
+  await openChengyu(page);
+  await cyStartRound(page, 5);
+  await page.goBack();
+  await page.locator('#cySetupView').waitFor();
+  assert.equal(hashOf(page), '#chengyu');
   assert.deepEqual(page.errors, []);
 });
 
@@ -1223,8 +1294,10 @@ test('чэнъюй: «Закончить раунд» — итоги по отв
   assert.equal(await panels.nth(1).locator('.cy-facts dd').nth(1).textContent(), picked[1].meaning);
   assert.ok((await heads.nth(1).textContent()).includes(`Ваш ответ ✕ ${wrongOptions[1].text}, верно ✓ `));
   // «Повторить ошибки» — раунд из двух ошибок, той же записью истории
+  const historyLength = await page.evaluate(() => history.length);
   await page.locator('#cyRepeatMistakes').click();
   await page.locator('#cyQuizView').waitFor();
+  assert.equal(await page.evaluate(() => history.length), historyLength);
   assert.equal(await page.locator('#cyProgressLabel').textContent(), 'Задание 1 из 2');
   await cyAnswerAndNext(page, bank, true);
   await cyAnswerAndNext(page, bank, true);
@@ -1272,6 +1345,11 @@ test('чэнъюй, телефон: кнопка раунда внизу — т�
   assert.equal(await page.evaluate(() => document.getElementById('cyStartBar').classList.contains('is-shown')), false);
   // полоса основного раздела в «Чэнъюй» не появляется, и наоборот
   assert.equal(await page.evaluate(() => document.getElementById('startBar').classList.contains('is-shown')), false);
+  await page.locator('#navSetup').click();
+  await page.locator('#setupView').waitFor();
+  await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
+  await page.waitForFunction(() => document.getElementById('startBar').classList.contains('is-shown'));
+  assert.equal(await page.evaluate(() => document.getElementById('cyStartBar').classList.contains('is-shown')), false);
   assert.deepEqual(page.errors, []);
 });
 

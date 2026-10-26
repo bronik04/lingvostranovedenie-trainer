@@ -247,6 +247,12 @@ function cyRenderHome(modeCounts) {
       : `${cy.size} случайных заданий из всех тем`}. Набор, темы и длина — ниже.`;
   for (const id of ['cyFirstStart', 'cyStartButton', 'cyBarStart']) $(id).disabled = available === 0;
   $('cyResumeNew').hidden = available === 0;
+  // главная кнопка на экране одна: без подходящих заданий это «Начать обычный раунд»
+  for (const id of ['cyStartButton', 'cyBarStart']) {
+    $(id).classList.toggle('ink-btn--primary', available !== 0);
+    $(id).classList.toggle('ink-btn--secondary', available === 0);
+  }
+  $('cyEmptyActions').hidden = available !== 0;
   $('cyStartBarText').textContent = available
     ? `${groups.length ? `${groups.length} ${pluralRu(groups.length, ['тема', 'темы', 'тем'])}` : 'Все темы'}, ${inRound} из ${available} подходящих`
     : 'Под условия не подходит ни одно задание';
@@ -474,6 +480,8 @@ function cyNextQuestion() {
   }
   cyRenderQuestion();
   cySaveRound();
+  // после разбора страница прокручена вниз — новое задание начинается выше
+  scrollToTopOnPhone($('cyQuizView'));
 }
 
 /** «Закончить раунд» и Esc: после хотя бы одного ответа — итоги по отвеченным заданиям, без
@@ -690,6 +698,12 @@ for (const id of ['cyFirstStart', 'cyStartButton', 'cyBarStart', 'cyResumeNew'])
   $(id).addEventListener('click', () => cyStartRound());
 }
 $('cyQuickMistakes').addEventListener('click', () => cyStartRound('mistakes'));
+// подходящих заданий нет: обычный раунд — все задания всех тем
+$('cyEmptyAll').addEventListener('click', () => {
+  cy.filters = cyDefaultFilters();
+  cySaveSettings();
+  cyStartRound();
+});
 $('cyResumeButton').addEventListener('click', cyContinueRound);
 // «Настроить раунд» — к «Набору», без записи в адресе
 $('cySettingsLink').addEventListener('click', (event) => {
