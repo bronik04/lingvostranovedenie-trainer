@@ -19,7 +19,7 @@ from taxonomy import TOPICS
 from authored import validate_authored
 import chengyu
 import pinyin
-from site_bank import load_settings, site_bank
+from site_bank import embedded_by, load_settings, site_bank
 
 TARGET = ROOT / 'dist/lingvostranovedenie-trainer.html'
 
@@ -147,7 +147,7 @@ def main() -> None:
             print(' -', message)
         raise SystemExit(1)
     # проверяется весь банк, а на сайт идёт то, что разрешает data/site.json (скрытые региональные варианты)
-    bank = site_bank(full_bank, load_settings())
+    bank = site_bank(full_bank, load_settings(), embedded_by())
 
     html = (ROOT / 'src/template.html').read_text('utf-8')
     html = html.replace('/*BANK_DESCRIPTION*/', escape(bank_description(bank)))
