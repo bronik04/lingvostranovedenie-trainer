@@ -48,7 +48,12 @@ body[data-view='cy-quiz'] .site-header { padding: var(--s-4) 0; }
 .cy-facts { display: grid; grid-template-columns: max-content minmax(0, 1fr); max-width: 46em; margin: 0; }
 .cy-facts dt, .cy-facts dd { margin: 0; padding: var(--s-2) 0; border-top: var(--border-hair) solid var(--line-on-paper); }
 .cy-facts dt { padding-right: var(--s-4); color: var(--text-on-ground-muted); font-size: var(--t-size-caption); }
+/* в разборе ошибки на итогах рамку даёт сама панель: у первой строки линии сверху нет */
+.mistake-panel .cy-facts > :nth-child(-n + 2) { padding-top: 0; border-top: 0; }
+.cy-results-links { gap: var(--s-2) var(--s-5); }
 @media (max-width: 600px) {
+  /* текстовые кнопки итогов — по ширине текста, а не во всю строку, как главные */
+  .results .cy-results-links .ink-btn--text { flex: 0 1 auto; }
   .cy-facts { grid-template-columns: 1fr; }
   .cy-facts dd { padding-top: 0; border-top: 0; }
 }

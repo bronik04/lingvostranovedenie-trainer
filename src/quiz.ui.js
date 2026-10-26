@@ -418,6 +418,7 @@ function importProgress(file) {
       if ('chengyu' in parsed) {
         cy.progress = parsed.chengyu;
         cySaveProgress();
+        cyDiscardRound();
         cyRenderSetup();
       }
       renderSetup();
@@ -431,17 +432,22 @@ function importProgress(file) {
 /* ---------- экраны и адреса ---------- */
 
 // у раунда, итогов и базы свои адреса: системное «назад» с них ведёт на главную, а не прочь
-// с сайта, а перезагрузка открывает тот же экран. «Чэнъюй» весь живёт под #chengyu
-const VIEW_HASHES = { setup: '', quiz: '#round', results: '#results', database: '#database' };
-const viewHash = (view) => (view.startsWith('cy-') ? '#chengyu' : VIEW_HASHES[view]);
+// с сайта, а перезагрузка открывает тот же экран. У «Чэнъюй» так же, от начала раздела #chengyu
+const VIEW_HASHES = {
+  setup: '', quiz: '#round', results: '#results', database: '#database',
+  'cy-setup': '#chengyu', 'cy-quiz': '#chengyu/round', 'cy-results': '#chengyu/results',
+  'cy-reference': '#chengyu/reference',
+};
 
 /** Адрес экрана. С push уход с главной добавляет запись в историю, иначе адрес заменяется.
- * Добавленная запись помечена fromHome: когда с неё вернулись на главную кнопкой, следующий уход
- * снова займёт её — в истории за главной всегда не больше одного экрана тренажёра. */
-function setAddress(hash, push = false) {
+ * Добавленная запись помечена (mark — fromHome, у «Чэнъюй» fromCyHome): когда с неё вернулись
+ * на главную кнопкой, следующий уход снова займёт её — в истории за началом раздела не больше
+ * одного экрана этого раздела. Метку каждого раздела читает только он сам: переход шапкой
+ * заменяет текущую запись, и раунд другого раздела добавит свою. */
+function setAddress(hash, push = false, mark = 'fromHome') {
   const url = `${location.pathname}${location.search}${hash}`;
   try {
-    if (push && !history.state?.fromHome) history.pushState({ fromHome: true }, '', url);
+    if (push && !history.state?.[mark]) history.pushState({ [mark]: true }, '', url);
     else if (location.hash !== hash) history.replaceState(history.state, '', url);
   } catch { /* без истории адрес просто не меняется */ }
 }
@@ -463,7 +469,7 @@ function show(view) {
   // печать уже стоит: вернувшись к отвеченному вопросу, ученик не должен видеть удар снова
   $('feedback').classList.remove('stamp');
   const chengyu = view.startsWith('cy-');
-  setAddress(viewHash(view));
+  setAddress(VIEW_HASHES[view]);
   for (const [link, current] of [
     ['navSetup', !chengyu && view !== 'database'],
     ['navDatabase', view === 'database'],
@@ -475,6 +481,7 @@ function show(view) {
   // в шапке — счёт своего раздела: у «Чэнъюй» решённые задания (cyRenderCount в src/chengyu.ui.js)
   if (chengyu) cyRenderCount();
   else renderBankCount();
+  $('footerNote').textContent = chengyu ? cyFooterNote() : bankSummary(QUESTION_BANK);
   setViewMenu(false);
   window.scrollTo?.(0, 0);
   updateStartBar();
@@ -483,8 +490,8 @@ function show(view) {
 /** Экран по адресу — при загрузке и когда ученик ходит «назад» и «вперёд» в браузере. */
 function route() {
   const hash = location.hash;
-  // раздел открывает src/chengyu.ui.js
-  if (hash === '#chengyu') return;
+  // адреса раздела разбирает src/chengyu.ui.js (cyRoute)
+  if (/^#chengyu(?:\/|$)/.test(hash)) return;
   if ((hash === '#round' || hash === '#results') && state.round.length) {
     const view = state.finished ? 'results' : 'quiz';
     if (state.view !== view) show(view);
@@ -760,17 +767,23 @@ function renderFoldValues() {
 
 /** Телефон: кнопка раунда внизу экрана — только пока верхняя «Начать раунд» («Начать первый раунд»)
  * за краем: на экране всегда видна одна главная кнопка. При плашке «Раунд не закончен» полосы нет:
- * её «Начать раунд» молча заменил бы незаконченный раунд вместо «Продолжить». */
+ * её «Начать раунд» молча заменил бы незаконченный раунд вместо «Продолжить». У «Чэнъюй» — своя
+ * полоса с теми же правилами. */
 function updateStartBar() {
-  let shown = false;
-  if (state.view === 'setup' && onPhone()) {
-    const top = [$('firstStart'), $('startButton')].find((button) => button.offsetParent);
-    const viewport = window.visualViewport;
-    const visibleBottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
-    const rect = top?.getBoundingClientRect();
-    shown = Boolean(rect) && (rect.bottom < 0 || rect.top > visibleBottom - $('startBar').offsetHeight);
+  for (const [view, bar, buttons] of [
+    ['setup', 'startBar', ['firstStart', 'startButton']],
+    ['cy-setup', 'cyStartBar', ['cyFirstStart', 'cyStartButton']],
+  ]) {
+    let shown = false;
+    if (state.view === view && onPhone()) {
+      const top = buttons.map($).find((button) => button.offsetParent);
+      const viewport = window.visualViewport;
+      const visibleBottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
+      const rect = top?.getBoundingClientRect();
+      shown = Boolean(rect) && (rect.bottom < 0 || rect.top > visibleBottom - $(bar).offsetHeight);
+    }
+    $(bar).classList.toggle('is-shown', shown);
   }
-  $('startBar').classList.toggle('is-shown', shown);
 }
 
 function fillSelect(select, allLabel, pairs) {

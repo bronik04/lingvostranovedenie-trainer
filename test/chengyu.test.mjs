@@ -94,6 +94,7 @@ test('настоящие данные: формулировки задания �
   for (const item of OLYMPIAD) assert.ok(cyPrompt(item));
   const summary = cySummary(OLYMPIAD);
   assert.equal(summary.total, 35);
+  assert.equal(summary.olympiad, 35);
   assert.equal(summary.groups, 8);
   assert.equal(summary.seasons, 8);
 });
