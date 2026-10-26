@@ -1001,7 +1001,7 @@ function chooseOption(record, optionId) {
 }
 
 /** После выбора: верный — нефритом, выбранный неверный — киноварью, подписи под неверными, а под
- * верным — его русское название (у вопросов досье). */
+ * верным — его русское название (`answer.gloss`, если есть). */
 function markOptions(record, optionId) {
   const glosses = new Map(optionGlosses(record).map((item) => [item.optionId, item.gloss]));
   if (record.answer.gloss) glosses.set(record.answer.optionId, record.answer.gloss);
@@ -1029,7 +1029,7 @@ function markOptions(record, optionId) {
   }
 }
 
-/** «Правильный ответ: 莫高窟 — Пещеры Могао.» — русское название есть у вопросов досье. */
+/** «Правильный ответ: 莫高窟 — Пещеры Могао.» — если у ответа есть русское название. */
 function rightAnswerHtml(record) {
   const right = record.options.find((option) => option.id === record.answer.optionId);
   const name = answerName(record);

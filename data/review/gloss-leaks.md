@@ -2,23 +2,25 @@
 
 # Утечки через подписи вариантов
 
-Подпись неверного варианта ученик видит после ответа. Утечка — когда вариант с подписью называет
+Подпись неверного варианта и название верного ответа (подпись под ним, решение автора 2026-10-26)
+ученик видит после ответа. Утечка — когда вариант с подписью называет
 ответ соседнего вопроса и то, о чём тот спрашивает: сам вариант или другое название из его текста
 (зацепку). Проверка — `gloss_leaks` в `scripts/dossiers.py`, исключения те же, что у текстов: группы
 фактов, одна строка, мостик. Сборку не останавливает: закрыть утечку — правка подписи (с «да» автора)
 или группа фактов. Подпись ячейки досье называет свою строку, и её пары с вопросами о том же факте
 («та же строка», тот же факт в связанной таблице или в олимпиадном вопросе) в счёте ниже есть, но это
-повторение, а не утечка (решение автора 2026-10-26).
+повторение, а не утечка (решение автора 2026-10-26). Название верного ответа рядом с вопросом с тем же
+ответом утечкой не считается: ответ выдаёт сам вариант. Названия помечены «(название ответа)».
 
-Подписей с утечкой: 602; выданных вопросов: 407; пар «вопрос с подписью → соседний вопрос»: 2841, из них 1670 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
+Подписей с утечкой: 605; выданных вопросов: 407; пар «вопрос с подписью → соседний вопрос»: 2869, из них 1670 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
 
-## 特别行政区 — Особый административный район — Сянган и Аомэнь
+## 特别行政区 — Особый административный район — Сянган и Аомэнь (название ответа)
 
 - выдаёт 2015-16-shk-64: ответ Сянган; зацепка 特别行政区, та же строка
 - выдаёт 2016-17-shk-3: ответ Аомэнь; зацепка 特别行政区
 - выдаёт 2025-26-mun-chel-9: ответ Сянган; зацепка Особый административный район
 - выдаёт provinces/provinces-q88: ответ 特别行政区; зацепка Аомэнь
-- видна в 1: provinces/provinces-q98
+- видна в 3: provinces/provinces-q109, provinces/provinces-q88, provinces/provinces-q98
 
 ## 2001 年 — 2001 — основание Шанхайской организации сотрудничества
 
@@ -27,12 +29,12 @@
 - выдаёт provinces/provinces-q29: ответ Шанхай; зацепка 2001 год
 - видна в 1: 2021-22-mun-q833ea2
 
-## 农奴制改革 — Отмена крепостного права: манифест Александра II 19 февраля 1861 года
+## 农奴制改革 — Отмена крепостного права: манифест Александра II 19 февраля 1861 года (название ответа)
 
 - выдаёт 2020-21-mun-lenobl-3: ответ Александр II; зацепка Отмена крепостного права
 - выдаёт dynasties/dynasties-q119: ответ 农奴制改革; зацепка Александр II, та же строка
 - выдаёт modern-history/modern-history-q97: ответ 1861 год; зацепка Отмена крепостного права
-- видна в 4: dynasties/dynasties-q117, dynasties/dynasties-q118, dynasties/dynasties-q121, dynasties/dynasties-q122
+- видна в 5: dynasties/dynasties-q117, dynasties/dynasties-q118, dynasties/dynasties-q119, dynasties/dynasties-q121, dynasties/dynasties-q122
 
 ## 外滩 — Вайтань — набережная вдоль реки Хуанпу в Шанхае
 
@@ -62,12 +64,12 @@
 - выдаёт provinces/provinces-q99: ответ Гуанчжоу; зацепка Гуандун
 - видна в 2: crafts/crafts-q129, crafts/crafts-q14
 
-## 鲁迅 — Лу Синь — автор «Дневника сумасшедшего» и «Подлинной истории А-Кью»
+## 鲁迅 — Лу Синь — автор «Дневника сумасшедшего» и «Подлинной истории А-Кью» (название ответа)
 
 - выдаёт literature/literature-q04: ответ 鲁迅, Лу Синь; зацепка Подлинная история А-Кью, та же строка
 - выдаёт literature/literature-q19: ответ Дневник сумасшедшего; зацепка Лу Синь
 - выдаёт literature/literature-q90: ответ Подлинная история А-Кью, история А-Кью; зацепка Лу Синь, 鲁迅, та же строка
-- видна в 8: literature/literature-q01, literature/literature-q02, literature/literature-q03, literature/literature-q05, literature/literature-q44, literature/literature-q46, literature/literature-q96, literature/literature-q97
+- видна в 10: literature/literature-q01, literature/literature-q02, literature/literature-q03, literature/literature-q04, literature/literature-q05, literature/literature-q43, literature/literature-q44, literature/literature-q46, literature/literature-q96, literature/literature-q97
 
 ## 黄山 — Хуаншань — гора в Аньхое, известная причудливыми соснами и морем облаков
 
@@ -124,11 +126,11 @@
 - выдаёт modern-history/modern-history-q02: ответ 习近平, Си Цзиньпин; зацепка председатель КНР, та же строка
 - видна в 9: modern-history/modern-history-q01, modern-history/modern-history-q03, modern-history/modern-history-q04, modern-history/modern-history-q05, modern-history/modern-history-q07, modern-history/modern-history-q17, modern-history/modern-history-q25, modern-history/modern-history-q28, modern-history/modern-history-q96
 
-## 亚历山大二世 — Александр II — император в 1855–1881 годах, в 1861 году отменил крепостное право
+## 亚历山大二世 — Александр II — император в 1855–1881 годах, в 1861 году отменил крепостное право (название ответа)
 
 - выдаёт 2020-21-mun-lenobl-3: ответ 亚历山大二世, Александр II; зацепка Отмена крепостного права
 - выдаёт modern-history/modern-history-q97: ответ 1861 год; зацепка Отмена крепостного права
-- видна в 9: dynasties/dynasties-q41, dynasties/dynasties-q42, dynasties/dynasties-q43, dynasties/dynasties-q44, dynasties/dynasties-q47, dynasties/dynasties-q49, dynasties/dynasties-q50, dynasties/dynasties-q55, dynasties/dynasties-q56
+- видна в 10: dynasties/dynasties-q41, dynasties/dynasties-q42, dynasties/dynasties-q43, dynasties/dynasties-q44, dynasties/dynasties-q45, dynasties/dynasties-q47, dynasties/dynasties-q49, dynasties/dynasties-q50, dynasties/dynasties-q55, dynasties/dynasties-q56
 
 ## 亚历山大二世 — Александр II — император, при котором в 1861 году отменили крепостное право
 
@@ -136,17 +138,17 @@
 - выдаёт modern-history/modern-history-q97: ответ 1861 год; зацепка Отмена крепостного права, та же строка
 - видна в 2: modern-history/modern-history-q101, modern-history/modern-history-q98
 
-## 俄罗斯联邦总统 — Президент Российской Федерации — первым на этот пост в 1991 году избран Борис Ельцин
+## 俄罗斯联邦总统 — Президент Российской Федерации — первым на этот пост в 1991 году избран Борис Ельцин (название ответа)
 
 - выдаёт 2023-24-mun-udm-5: ответ 1991; зацепка Российская Федерация
 - выдаёт modern-history/modern-history-q33: ответ 俄罗斯联邦总统, президент Российской Федерации; зацепка 1991 год, Борис Ельцин, та же строка
-- видна в 4: modern-history/modern-history-q103, modern-history/modern-history-q104, modern-history/modern-history-q29, modern-history/modern-history-q31
+- видна в 5: modern-history/modern-history-q103, modern-history/modern-history-q104, modern-history/modern-history-q29, modern-history/modern-history-q31, modern-history/modern-history-q33
 
-## 元宵节 — Праздник фонарей — 15-е число 1-го лунного месяца, едят танъюань
+## 元宵节 — Праздник фонарей — 15-е число 1-го лунного месяца, едят танъюань (название ответа)
 
 - выдаёт 2021-22-mun-mosobl-53: ответ танъюань; зацепка Праздник фонарей
 - выдаёт holidays/holidays-q45: ответ 元宵节, Праздник фонарей; зацепка танъюань, та же строка
-- видна в 5: holidays/holidays-q16, holidays/holidays-q43, holidays/holidays-q44, holidays/holidays-q46, holidays/holidays-q47
+- видна в 6: holidays/holidays-q16, holidays/holidays-q43, holidays/holidays-q44, holidays/holidays-q45, holidays/holidays-q46, holidays/holidays-q47
 
 ## 刘邦 — Лю Бан — основатель династии Хань, победитель в войне Чу и Хань
 
@@ -166,11 +168,11 @@
 - выдаёт 2024-25-mun-mosobl-4: ответ Храм Неба; зацепка Пекин
 - видна в 4: landmarks/landmarks-q48, landmarks/landmarks-q96, landmarks/landmarks-q97, landmarks/landmarks-q98
 
-## 北方首都 — «Северная столица» — прозвище Санкт-Петербурга
+## 北方首都 — «Северная столица» — прозвище Санкт-Петербурга (название ответа)
 
 - выдаёт 2025-26-mun-chel-5: ответ Петербург, Санкт-Петербург; зацепка Северная столица
 - выдаёт provinces/provinces-q106: ответ 北方首都, Северная столица; зацепка Санкт-Петербург, та же строка
-- видна в 1: provinces/provinces-q107
+- видна в 2: provinces/provinces-q106, provinces/provinces-q107
 
 ## 台湾 — Тайвань отошёл Японии по Симоносекскому договору 1895 года
 
@@ -448,11 +450,11 @@
 - выдаёт literature/literature-q94: ответ 陀思妥耶夫斯基, Достоевский; зацепка Преступление и наказание, та же строка
 - видна в 12: literature/literature-q61, literature/literature-q62, literature/literature-q63, literature/literature-q71, literature/literature-q73, literature/literature-q80, literature/literature-q81, literature/literature-q82, literature/literature-q86, literature/literature-q87, literature/literature-q93, literature/literature-q95
 
-## 霸王别姬 — «Прощай, моя наложница» — фильм о судьбах двух актёров пекинской оперы
+## 霸王别姬 — «Прощай, моя наложница» — фильм о судьбах двух актёров пекинской оперы (название ответа)
 
 - выдаёт 2016-17-mun-yar-8: ответ Пекин; зацепка Пекинская опера
 - выдаёт cinema/cinema-q02: ответ 霸王别姬, Прощай, моя наложница; зацепка Пекинская опера, та же строка
-- видна в 4: cinema/cinema-q03, cinema/cinema-q09, cinema/cinema-q31, cinema/cinema-q34
+- видна в 5: cinema/cinema-q02, cinema/cinema-q03, cinema/cinema-q09, cinema/cinema-q31, cinema/cinema-q34
 
 ## 饺子 — Цзяоцзы — пельмени, их едят в новогоднюю ночь на Праздник весны
 
@@ -683,6 +685,11 @@
 - выдаёт cinema/cinema-q18: ответ Нэчжа: Рождение демона; зацепка 2019, та же строка
 - видна в 2: cinema/cinema-q13, cinema/cinema-q14
 
+## 上海合作组织 — ШОС — организация, основанная в 2001 году в Шанхае; Россия и Китай — её члены (название ответа)
+
+- выдаёт provinces/provinces-q29: ответ 上海, Шанхай; зацепка 2001 год
+- видна в 1: modern-china/modern-china-q10
+
 ## 下西洋 — Плавания в «Западный океан» — семь походов флота Чжэн Хэ, 1405–1433 гг.
 
 - выдаёт people/people-q19: ответ 下西洋, плавания в Западный океан; зацепка Чжэн Хэ, та же строка
@@ -843,20 +850,20 @@
 - выдаёт dynasties/dynasties-q58: ответ 亚历山大·涅夫斯基, Александр Невский; зацепка 1242 год
 - видна в 2: modern-history/modern-history-q101, modern-history/modern-history-q98
 
-## 京剧 — Пекинская опера (цзинцзюй) — самый известный вид китайской музыкальной драмы
+## 京剧 — Пекинская опера (цзинцзюй) — самый известный вид китайской музыкальной драмы (название ответа)
 
 - выдаёт 2016-17-mun-yar-8: ответ Пекин; зацепка Пекинская опера, 京剧
-- видна в 1: landmarks/landmarks-q76
+- видна в 2: landmarks/landmarks-q76, landmarks/landmarks-q89
 
 ## 京张铁路 — Железная дорога Пекин — Чжанцзякоу — её строил Чжань Тянью в 1905–1909 гг.
 
 - выдаёт people/people-q14: ответ 京张铁路, железная дорога Пекин — Чжанцзякоу; зацепка Чжань Тянью, та же строка
 - видна в 6: people/people-q11, people/people-q12, people/people-q13, people/people-q15, people/people-q16, people/people-q17
 
-## 人民团结日 — День народного единства — 4 ноября, освобождение Москвы ополчением в 1612 году
+## 人民团结日 — День народного единства — 4 ноября, освобождение Москвы ополчением в 1612 году (название ответа)
 
 - выдаёт 2023-24-shk-29: ответ 1612; зацепка Москва
-- видна в 5: holidays/holidays-q10, holidays/holidays-q23, holidays/holidays-q24, holidays/holidays-q28, holidays/holidays-q52
+- видна в 6: holidays/holidays-q10, holidays/holidays-q23, holidays/holidays-q24, holidays/holidays-q25, holidays/holidays-q28, holidays/holidays-q52
 
 ## 伊万·希施金 — Шишкин — пейзажист XIX века, автор «Утра в сосновом лесу»
 
@@ -1423,10 +1430,10 @@
 - выдаёт dynasties/dynasties-q24: ответ 契丹族, кидани; зацепка династия Ляо, та же строка
 - видна в 1: dynasties/dynasties-q113
 
-## 契诃夫 — Чехов — автор пьесы «Вишнёвый сад» и рассказов
+## 契诃夫 — Чехов — автор пьесы «Вишнёвый сад» и рассказов (название ответа)
 
 - выдаёт literature/literature-q85: ответ Вишнёвый сад; зацепка Чехов, та же строка
-- видна в 12: literature/literature-q60, literature/literature-q61, literature/literature-q63, literature/literature-q71, literature/literature-q73, literature/literature-q80, literature/literature-q81, literature/literature-q82, literature/literature-q87, literature/literature-q93, literature/literature-q94, literature/literature-q95
+- видна в 13: literature/literature-q60, literature/literature-q61, literature/literature-q63, literature/literature-q71, literature/literature-q73, literature/literature-q80, literature/literature-q81, literature/literature-q82, literature/literature-q86, literature/literature-q87, literature/literature-q93, literature/literature-q94, literature/literature-q95
 
 ## 女神 — «Богини» — первый сборник стихов Го Можо, 1921 г.
 
@@ -1648,10 +1655,10 @@
 - выдаёт literature/literature-q84: ответ 当代英雄, Герой нашего времени; зацепка Лермонтов, та же строка
 - видна в 4: literature/literature-q65, literature/literature-q72, literature/literature-q77, literature/literature-q85
 
-## 彝族 — Народ И — живёт в Юньнани, Сычуани и Гуйчжоу; главный праздник — факелов
+## 彝族 — Народ И — живёт в Юньнани, Сычуани и Гуйчжоу; главный праздник — факелов (название ответа)
 
 - выдаёт crafts/crafts-q132: ответ Гуйчжоу; зацепка И
-- видна в 1: holidays/holidays-q40
+- видна в 2: holidays/holidays-q17, holidays/holidays-q40
 
 ## 彼得大帝 — Пётр Великий — царь, одержал победу над шведами под Полтавой в 1709 году
 
@@ -1783,10 +1790,10 @@
 - выдаёт modern-history/modern-history-q103: ответ генеральный секретарь ЦК; зацепка Иосиф Сталин, та же строка
 - видна в 2: modern-history/modern-history-q105, modern-history/modern-history-q106
 
-## 新疆 — Синьцзян — автономный район на северо-западе Китая, центр — Урумчи
+## 新疆 — Синьцзян — автономный район на северо-западе Китая, центр — Урумчи (название ответа)
 
 - выдаёт provinces/provinces-q96: ответ Урумчи; зацепка Синьцзян, та же строка
-- видна в 2: provinces/provinces-q11, provinces/provinces-q44
+- видна в 3: nature/nature-q150, provinces/provinces-q11, provinces/provinces-q44
 
 ## 新疆 — Синьцзян — здесь кяризы, подземная оросительная система Турфана
 
@@ -1963,6 +1970,16 @@
 - выдаёт state/state-q12: ответ 梁思成, Лян Сычэн; зацепка Герб КНР, та же строка
 - видна в 2: state/state-q10, state/state-q11
 
+## 梅兰芳 — Мэй Ланьфан — артист пекинской оперы, исполнитель женских ролей дань (название ответа)
+
+- выдаёт 2016-17-mun-yar-8: ответ Пекин; зацепка Пекинская опера
+- видна в 1: 2016-17-reg-3
+
+## 梅兰芳 — Мэй Ланьфан — звезда пекинской оперы, в 1935 году гастролировал в СССР (название ответа)
+
+- выдаёт 2016-17-mun-yar-8: ответ Пекин; зацепка Пекинская опера
+- видна в 1: 2020-21-pri-q26db53
+
 ## 楚汉战争 — Война Чу и Хань — кончилась победой Лю Бана над Сян Юем в 202 г. до н. э.
 
 - выдаёт dynasties/dynasties-q92: ответ 楚汉战争, война Чу и Хань; зацепка Лю Бан, та же строка
@@ -2018,10 +2035,10 @@
 - выдаёт dynasties/dynasties-q22: ответ Северная Сун; зацепка Би Шэн
 - видна в 1: people/people-q05
 
-## 毛泽东 — Мао Цзэдун — председатель ЦК КПК, руководил партией до своей смерти в 1976 году
+## 毛泽东 — Мао Цзэдун — председатель ЦК КПК, руководил партией до своей смерти в 1976 году (название ответа)
 
 - выдаёт 2024-25-mun-spb-8: ответ 1976 год, 1976; зацепка Мао Цзэдун
-- видна в 10: modern-history/modern-history-q01, modern-history/modern-history-q02, modern-history/modern-history-q03, modern-history/modern-history-q05, modern-history/modern-history-q06, modern-history/modern-history-q07, modern-history/modern-history-q17, modern-history/modern-history-q25, modern-history/modern-history-q28, modern-history/modern-history-q96
+- видна в 11: modern-history/modern-history-q01, modern-history/modern-history-q02, modern-history/modern-history-q03, modern-history/modern-history-q04, modern-history/modern-history-q05, modern-history/modern-history-q06, modern-history/modern-history-q07, modern-history/modern-history-q17, modern-history/modern-history-q25, modern-history/modern-history-q28, modern-history/modern-history-q96
 
 ## 民主与科学 — «Демократия и наука» — лозунг Движения за новую культуру
 
@@ -2493,10 +2510,10 @@
 - выдаёт ethnos/ethnos-q86: ответ 粤方言, кантонский; зацепка Гуандун, та же строка
 - видна в 3: ethnos/ethnos-q87, ethnos/ethnos-q88, ethnos/ethnos-q92
 
-## 粤菜 — Кантонская (гуандунская) кухня — одна из восьми великих кухонь Китая
+## 粤菜 — Кантонская (гуандунская) кухня — одна из восьми великих кухонь Китая (название ответа)
 
 - выдаёт ethnos/ethnos-q86: ответ кантонский; зацепка Гуандун
-- видна в 1: cuisine/cuisine-q67
+- видна в 2: cuisine/cuisine-q67, cuisine/cuisine-q97
 
 ## 粽子 — Цзунцзы — клейкий рис в листьях, еда праздника Дуаньу
 
@@ -2613,10 +2630,10 @@
 - выдаёт cinema/cinema-q30: ответ 莫斯科不相信眼泪, Москва слезам не верит; зацепка Владимир Меньшов, та же строка
 - видна в 1: cinema/cinema-q24
 
-## 莱蒙托夫 — Лермонтов — автор поэм «Демон» и «Мцыри» и романа «Герой нашего времени»
+## 莱蒙托夫 — Лермонтов — автор поэм «Демон» и «Мцыри» и романа «Герой нашего времени» (название ответа)
 
 - выдаёт literature/literature-q84: ответ Герой нашего времени; зацепка Лермонтов
-- видна в 13: literature/literature-q60, literature/literature-q62, literature/literature-q66, literature/literature-q71, literature/literature-q73, literature/literature-q80, literature/literature-q81, literature/literature-q82, literature/literature-q86, literature/literature-q87, literature/literature-q93, literature/literature-q94, literature/literature-q95
+- видна в 15: literature/literature-q60, literature/literature-q61, literature/literature-q62, literature/literature-q63, literature/literature-q66, literature/literature-q71, literature/literature-q73, literature/literature-q80, literature/literature-q81, literature/literature-q82, literature/literature-q86, literature/literature-q87, literature/literature-q93, literature/literature-q94, literature/literature-q95
 
 ## 萨哈族 — Саха (якуты) — их героический эпос олонхо
 
@@ -2673,10 +2690,10 @@
 - выдаёт 2016-17-shk-4: ответ 西安, Сиань; зацепка Цинь Шихуан, терракотовая армия
 - видна в 3: landmarks/landmarks-q100, landmarks/landmarks-q101, landmarks/landmarks-q99
 
-## 西游记 — «Путешествие на Запад» — роман о паломничестве монаха Сюаньцзана
+## 西游记 — «Путешествие на Запад» — роман о паломничестве монаха Сюаньцзана (название ответа)
 
 - выдаёт 2018-19-mun-vrn-4: ответ Сюаньцзан; зацепка Путешествие на Запад, 西游记
-- видна в 9: literature/literature-q103, literature/literature-q11, literature/literature-q13, literature/literature-q14, literature/literature-q15, literature/literature-q16, literature/literature-q17, literature/literature-q98, literature/literature-q99
+- видна в 13: literature/literature-q10, literature/literature-q100, literature/literature-q102, literature/literature-q103, literature/literature-q11, literature/literature-q13, literature/literature-q14, literature/literature-q15, literature/literature-q16, literature/literature-q17, literature/literature-q18, literature/literature-q98, literature/literature-q99
 
 ## 西游记 — «Путешествие на Запад» — роман, по традиции приписываемый У Чэнъэню
 
@@ -3073,10 +3090,10 @@
 - выдаёт 2020-21-mun-mosobl-47: ответ Харбин; зацепка провинция Хэйлунцзян, 黑龙江
 - видна в 2: 2015-16-reg-4, 2018-19-shk-6
 
-## 黑龙江 — Хэйлунцзян — самая северная провинция Китая, центр — Харбин
+## 黑龙江 — Хэйлунцзян — самая северная провинция Китая, центр — Харбин (название ответа)
 
 - выдаёт 2020-21-mun-mosobl-47: ответ Харбин; зацепка провинция Хэйлунцзян, 黑龙江
-- видна в 13: provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 14: provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
 
 ## 黑龙江省 — Хэйлунцзян — самая северная провинция Китая, центр — Харбин
 

@@ -163,8 +163,8 @@ export function searchSegments(text, query) {
   return segments.map((segment) => (segment.mark ? segment : { text: segment.text }));
 }
 
-/** Русское название верного ответа — у вопроса досье из ячейки ответа (подпись до первого
- * « — »: «Пещеры Могао», «Чжан Имоу»); у остальных вопросов его нет. */
+/** Русское название верного ответа — подпись `answer.gloss` до первого « — »: «Пещеры Могао», «Чжан Имоу».
+ * У вопроса досье она из ячейки ответа, у остальных — из glosses.json (не у всех: годы, числа). */
 export function answerName(record) {
   // «…вкус продуктов, — шаньдунская кухня»: запятая перед тире названию не нужна
   return record.answer.gloss ? record.answer.gloss.split(' — ')[0].replace(/[,;:]+$/, '') : '';

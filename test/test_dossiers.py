@@ -983,10 +983,44 @@ class GlossLeakTest(unittest.TestCase):
         self.assertEqual(gloss_leak_errors([], [(myths_dossier(), [xihe, change])]), [])
 
     def test_gloss_of_the_answer_option_is_not_searched(self):
-        record = olympiad(id='2023-24-shk-1', options=[
-            {'id': 'o1', 'zh': '人民大会堂', 'gloss': 'Дом народных собраний — здание с купюры с 梅花'},
+        # подпись у самого варианта-ответа раунд не показывает (optionGlosses); название ответа — answer.gloss
+        record = olympiad(id='2023-24-shk-1', questionRu='Какое здание стоит на площади Тяньаньмэнь?', options=[
+            {'id': 'o1', 'zh': '天安门', 'gloss': 'Тяньаньмэнь — ворота, рядом Дом народных собраний'},
             {'id': 'o2', 'zh': '故宫'}, {'id': 'o3', 'zh': '天坛'}, {'id': 'o4', 'zh': '颐和园'}])
+        back = self.back(questionRu='Какое здание у ворот Тяньаньмэнь — на обороте купюры 100 юаней 2019 года?')
+        self.assertEqual(gloss_leak_errors([record], [(dossier(), [back])]), [])
+
+    def test_answer_name_is_searched(self):
+        # решение автора 2026-10-26: название верного ответа ученик видит под вариантом целиком —
+        # его факт может выдать ответ соседнего вопроса так же, как подпись неверного варианта
+        record = olympiad(id='2023-24-shk-1', questionRu='Какое здание стоит на площади Тяньаньмэнь?',
+                          options=[{'id': 'o1', 'zh': '天安门'}, {'id': 'o2', 'zh': '故宫'},
+                                   {'id': 'o3', 'zh': '天坛'}, {'id': 'o4', 'zh': '颐和园'}],
+                          answer={'optionId': 'o1', 'state': 'verified',
+                                  'gloss': 'Тяньаньмэнь — ворота, рядом Дом народных собраний'})
+        back = self.back(questionRu='Какое здание у ворот Тяньаньмэнь — на обороте купюры 100 юаней 2019 года?')
+        self.assertEqual(gloss_leak_errors([record], [(dossier(), [back])]),
+                         ["2023-24-shk-1: название верного ответа o1 (天安门) называет ответ вопроса money/money-q03 "
+                          "['Дом народных собраний'] и его зацепку ['Тяньаньмэнь']"])
+
+    def test_answer_name_of_the_same_answer_is_a_repeat(self):
+        # у соседа тот же ответ: его выдаёт сам вариант-ответ, а не название
+        record = olympiad(id='2023-24-shk-1', questionRu='Какое здание на обороте купюры 100 юаней?', options=[
+            {'id': 'o1', 'zh': '人民大会堂'}, {'id': 'o2', 'zh': '故宫'}, {'id': 'o3', 'zh': '天坛'}, {'id': 'o4', 'zh': '颐和园'}],
+            answer={'optionId': 'o1', 'state': 'verified', 'gloss': 'Дом народных собраний — на купюре с цветком 梅花'})
         self.assertEqual(gloss_leak_errors([record], [(dossier(), [self.back()])]), [])
+
+    def test_answer_name_of_a_dossier_question_is_searched(self):
+        data = dossier()
+        row(data, 'cny-100')['back']['gloss'] = 'Дом народных собраний — здание у ворот 天安门'
+        square = question(id='money-q05', fact={'table': 'banknotes', 'row': 'cny-100', 'ask': 'back',
+                                                'where': {'currency': '人民币'}},
+                          questionRu='Какое здание на обороте купюры 100 юаней?')
+        gate = olympiad(id='2023-24-shk-1', questionRu='Как называются ворота, рядом с которыми Дом народных собраний?',
+                        options=[{'id': 'o1', 'zh': '天安门'}, {'id': 'o2', 'zh': '前门'},
+                                 {'id': 'o3', 'zh': '午门'}, {'id': 'o4', 'zh': '神武门'}])
+        errors = gloss_leak_errors([gate], [(data, [square])])
+        self.assertTrue(any(e.startswith('money/money-q05: название верного ответа') for e in errors), errors)
 
     def test_a_fact_group_closes_the_pair(self):
         data = self.money('cny-100', 'flower', 'Мэйхуа — цветок купюры, на обороте которой Дом народных собраний')
@@ -1015,7 +1049,10 @@ class GlossLeakTest(unittest.TestCase):
         bridged = gloss_leak_errors([], [(myths_dossier(), [change]), (space, [year('space-q01', 'mis-change4')])])
         self.assertEqual(bridged, [])
         leaked = gloss_leak_errors([], [(myths_dossier(), [change]), (space, [year('space-q02', 'mis-zhurong')])])
-        self.assertEqual(leaked, ["space/space-q02: подпись варианта mis-change4 (2018 年) называет ответ вопроса "
+        # название верного ответа (ячейка 2020 年) ученик тоже видит — оно ищется так же (решение автора 2026-10-26)
+        self.assertEqual(leaked, ["space/space-q02: название верного ответа mis-zhurong (2020 年) называет ответ вопроса "
+                                  "myths/myths-q01 ['богиня Чанъэ'] и его зацепку ['2020 год']",
+                                  "space/space-q02: подпись варианта mis-change4 (2018 年) называет ответ вопроса "
                                   "myths/myths-q01 ['богиня Чанъэ'] и его зацепку ['2018 год']"])
 
     def test_attached_olympiad_record_on_the_same_row_is_not_a_leak(self):

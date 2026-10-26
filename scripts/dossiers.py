@@ -732,12 +732,24 @@ def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
     return errors
 
 
+def _named_answer(options: list[dict], answer_id: str | None, gloss: str | None) -> list[dict]:
+    """Варианты, где у варианта-ответа — название верного ответа (`answer.gloss`), которое ученик видит
+    под ним, а не подпись самого варианта: её раунд не показывает (`optionGlosses`, src/quiz.mjs)."""
+    named = []
+    for option in options:
+        if option['id'] == answer_id:
+            option = {key: value for key, value in option.items() if key != 'gloss'} | ({'gloss': gloss} if gloss else {})
+        named.append(option)
+    return named
+
+
 def _gloss_sources(bank: list[dict], loaded: list[tuple[dict, list[dict]]]) -> list[tuple]:
     """Записи с подписями: досье (или None), метка, id записи, место ответа (или None), варианты, id ответа.
 
     Свой вопрос досье — из банка, если запись уже там, иначе из файла (черновик). Принятый
     встроенный — с набором и подписями из таблицы, как его соберёт слой встраивания; черновик
-    встраивания и прочие записи банка — как есть, с подписями glosses.json."""
+    встраивания и прочие записи банка — как есть, с подписями glosses.json. У варианта-ответа подпись —
+    название верного ответа (решение автора 2026-10-26)."""
     by_id = {record['id']: record for record in bank}
     sources: list[tuple] = []
     covered: set[str] = set()
@@ -752,17 +764,23 @@ def _gloss_sources(bank: list[dict], loaded: list[tuple[dict, list[dict]]]) -> l
                 # черновик встраивания ещё не встроен: ученик видит запись как есть, с подписями glosses.json
                 embedded = (embed_record(original_record(record), question, dossier)[0]
                             if question['status'] == 'accepted' else None)
-                options, answer_id = (embedded or record)['options'], record['answer']['optionId']
+                shown = embedded or record
+                options, answer_id = shown['options'], record['answer']['optionId']
+                name = shown['answer'].get('gloss')
             elif record is not None:
-                options, answer_id = record['options'], record['answer']['optionId']
+                options, answer_id, name = record['options'], record['answer']['optionId'], record['answer'].get('gloss')
             else:
                 options, answer_id = question_options(question, dossier)
+                name = (answer_cell(question, dossier)[1].get('gloss') or '').strip() or None
             sources.append((dossier['id'], f'{dossier["id"]}/{question["id"]}', record_id,
-                            _answer_place(question, dossier), options, answer_id))
+                            _answer_place(question, dossier), _named_answer(options, answer_id, name), answer_id))
     for record in bank:
-        if record['id'] not in covered and any(option.get('gloss') for option in record['options']):
-            sources.append((None, record['id'], record['id'], None, record['options'],
-                            record.get('answer', {}).get('optionId')))
+        answer = record.get('answer', {})
+        if record['id'] not in covered and (answer.get('gloss') or any(
+                option.get('gloss') for option in record['options'] if option['id'] != answer.get('optionId'))):
+            sources.append((None, record['id'], record['id'], None,
+                            _named_answer(record['options'], answer.get('optionId'), answer.get('gloss')),
+                            answer.get('optionId')))
     return sources
 
 
@@ -841,8 +859,10 @@ def gloss_leaks(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
     Исключения те же, что у `cross_leak_errors`: мостик, стороны одной строки, группа фактов. Одиночный
     иероглиф (唐, 秦) в подписях не ищется совсем, а не только из другого досье: подписи русские, а
     иероглиф стоит внутри других слов; вариант из одного иероглифа зацепкой считается только в своём досье. Строка олимпиадной записи, привязанной к досье, — из списков
-    `olympiad` (`scripts/fact_rows.py`): раунд не ставит её рядом с вопросами о той же строке. Подпись правильного ответа не ищется: раунд её не
-    показывает (`optionGlosses`, src/quiz.mjs).
+    `olympiad` (`scripts/fact_rows.py`): раунд не ставит её рядом с вопросами о той же строке. У варианта-ответа
+    ищется название верного ответа (`answer.gloss`, решение автора 2026-10-26: ученик видит его под вариантом), а не
+    подпись самого варианта — её раунд не показывает (`optionGlosses`, src/quiz.mjs). Соседний вопрос с тем же
+    ответом — повтор, а не утечка: ответ выдаёт сам вариант, а не название.
     """
     ru_of: dict[str, set[str]] = {}
     vocabulary: set[str] = set()
@@ -894,8 +914,9 @@ def gloss_leaks(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
     for dossier_id, label, record_id, place, options, answer_id in _gloss_sources(bank, loaded):
         for option in options:
             gloss = option.get('gloss')
-            if option['id'] == answer_id or not gloss:
+            if not gloss:
                 continue
+            is_answer = option['id'] == answer_id
             if gloss not in found_in:
                 found_in[gloss] = index.find(gloss)
             in_gloss = found_in[gloss]
@@ -908,6 +929,8 @@ def gloss_leaks(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
                         or rows_of.get(record_id, set()) & rows_of.get(other_record, set())):
                     continue
                 own = _zh_key(answer_names[0]) == key
+                if own and is_answer:
+                    continue
                 single = other_dossier != dossier_id
                 answer_set = {name for name in answer_names if not (single and len(_zh_key(name)) == 1)}
                 if not own and not answer_set & in_gloss:
@@ -923,6 +946,7 @@ def gloss_leaks(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
                          if not any(lowered in longer and lowered != longer for longer in clues)}
                 if clues:
                     leaks.append({'record': label, 'option': option['id'], 'zh': option['zh'].strip(), 'gloss': gloss,
+                                  'isAnswer': is_answer,
                                   'other': other, 'answer': _named(f'{option["zh"]} {gloss}', answer_names),
                                   'clues': sorted(clues),
                                   # подпись о той же строке, о которой спрашивает соседний вопрос
@@ -943,7 +967,8 @@ def gloss_leak_report(leaks: list[dict]) -> str:
 
     by_gloss: dict[tuple[str, str], dict] = {}
     for leak in leaks:
-        item = by_gloss.setdefault((leak['zh'], leak['gloss']), {'shown': set(), 'others': {}})
+        item = by_gloss.setdefault((leak['zh'], leak['gloss']), {'shown': set(), 'others': {}, 'answer': False})
+        item['answer'] = item['answer'] or leak.get('isAnswer', False)
         item['shown'].add(mark(leak['record'], leak['recordDraft']))
         # одну подпись с одним соседом находят из разных вопросов: ответы, зацепки и «та же строка» — по всем
         other = item['others'].setdefault(mark(leak['other'], leak['otherDraft']),
@@ -954,19 +979,21 @@ def gloss_leak_report(leaks: list[dict]) -> str:
     pairs = {(leak['record'], leak['other']) for leak in leaks}
     same_row = len({(leak['record'], leak['other']) for leak in leaks if leak['row']})
     lines = [GLOSS_LEAKS_MARK, '', '# Утечки через подписи вариантов', '',
-             'Подпись неверного варианта ученик видит после ответа. Утечка — когда вариант с подписью называет',
+             'Подпись неверного варианта и название верного ответа (подпись под ним, решение автора 2026-10-26)',
+             'ученик видит после ответа. Утечка — когда вариант с подписью называет',
              'ответ соседнего вопроса и то, о чём тот спрашивает: сам вариант или другое название из его текста',
              '(зацепку). Проверка — `gloss_leaks` в `scripts/dossiers.py`, исключения те же, что у текстов: группы',
              'фактов, одна строка, мостик. Сборку не останавливает: закрыть утечку — правка подписи (с «да» автора)',
              'или группа фактов. Подпись ячейки досье называет свою строку, и её пары с вопросами о том же факте',
              '(«та же строка», тот же факт в связанной таблице или в олимпиадном вопросе) в счёте ниже есть, но это',
-             'повторение, а не утечка (решение автора 2026-10-26).', '',
+             'повторение, а не утечка (решение автора 2026-10-26). Название верного ответа рядом с вопросом с тем же',
+             'ответом утечкой не считается: ответ выдаёт сам вариант. Названия помечены «(название ответа)».', '',
              f'Подписей с утечкой: {len(by_gloss)}; выданных вопросов: {len({leak["other"] for leak in leaks})}; '
              f'пар «вопрос с подписью → соседний вопрос»: {len(pairs)}, из них {same_row} — подпись о той же строке досье, '
              'о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними '
              'помечены «(черновик)».']
     for (zh, gloss), item in sorted(by_gloss.items(), key=lambda pair: (-len(pair[1]['others']), pair[0])):
-        lines += ['', f'## {zh} — {gloss}', '']
+        lines += ['', f'## {zh} — {gloss}{" (название ответа)" if item["answer"] else ""}', '']
         for other, leak in sorted(item['others'].items()):
             row_note = ', та же строка' if leak['row'] else ''
             lines.append(f'- выдаёт {other}: ответ {", ".join(leak["answer"])}; '
@@ -977,7 +1004,8 @@ def gloss_leak_report(leaks: list[dict]) -> str:
 
 def gloss_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
                       groups: dict[str, list[str]] | None = None) -> list[str]:
-    return [f'{leak["record"]}: подпись варианта {leak["option"]} ({leak["zh"]}) называет ответ вопроса '
+    return [f'{leak["record"]}: {"название верного ответа" if leak["isAnswer"] else "подпись варианта"} '
+            f'{leak["option"]} ({leak["zh"]}) называет ответ вопроса '
             f'{leak["other"]} {leak["answer"]} и его зацепку {leak["clues"]}'
             for leak in gloss_leaks(bank, loaded, groups)]
 

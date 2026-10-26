@@ -439,8 +439,8 @@ def main() -> None:
     errors = removed_id_errors((record['id'] for record in bank), load_removed(ROOT / 'data/review/removed.json'))
     if errors:
         raise ValueError('id снятых вопросов заняты снова:\n - ' + '\n - '.join(errors))
-    # подписи к неверным вариантам — самым последним слоем: они сверяются с
-    # текстом варианта уже после всех правок
+    # подписи к неверным вариантам и названия верных ответов — самым последним слоем:
+    # они сверяются с текстом варианта уже после всех правок
     bank = apply_glosses(bank, glosses)
     # варианты, которые «Верно или нет» не предлагает, — тоже по окончательному тексту варианта
     bank = apply_truefalse(bank, truefalse)

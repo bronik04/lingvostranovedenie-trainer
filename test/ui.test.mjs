@@ -1942,7 +1942,8 @@ test('русское название верного ответа: под вар
   const bank = await bankOf(page);
   // название вне досье — из glosses.json (решение автора 2026-10-26), у досье — из ячейки; показ один
   const withName = (r) => r.answer.gloss && r.options.length === 4 && r.answer.gloss.includes(' — ');
-  const named = bank.find((r) => !r.dossier && withName(r)) ?? bank.find(withName);
+  const named = bank.find((r) => !r.dossier && withName(r));
+  assert.ok(named, 'на сайте нет вопроса вне досье с названием верного ответа');
   const plain = bank.find((r) => !r.answer.gloss && r.answer.state === 'verified' && r.options.length === 4);
   const name = named.answer.gloss.split(' — ')[0];
   const right = named.options.find((o) => o.id === named.answer.optionId).zh;
