@@ -1923,5 +1923,35 @@
       "verdict": "accept",
       "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
     }
+  },
+  {
+    "id": "provinces-q125",
+    "embeds": "2022-23-mun-amur-4",
+    "status": "draft",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-xinjiang",
+      "ask": "full",
+      "where": {
+        "kind": "自治区"
+      }
+    }
+  },
+  {
+    "id": "provinces-q126",
+    "embeds": "2021-22-mun-amur-2",
+    "status": "draft",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-sichuan",
+      "ask": "name",
+      "where": {
+        "kind": "省"
+      }
+    },
+    "exclude": [
+      "prov-shaanxi",
+      "prov-gansu"
+    ]
   }
 ]

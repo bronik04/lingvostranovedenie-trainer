@@ -1074,5 +1074,33 @@
       "verdict": "accept",
       "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
     }
+  },
+  {
+    "id": "holidays-q54",
+    "embeds": "2017-18-mun-yak-4",
+    "status": "draft",
+    "fact": {
+      "table": "holidays",
+      "row": "hol-qixi",
+      "ask": "name",
+      "where": {
+        "country": "中国",
+        "kind": "传统节日"
+      }
+    }
+  },
+  {
+    "id": "holidays-q55",
+    "embeds": "2024-25-mun-tat-51",
+    "status": "draft",
+    "fact": {
+      "table": "holidays",
+      "row": "hol-qixi",
+      "ask": "name",
+      "where": {
+        "country": "中国",
+        "kind": "传统节日"
+      }
+    }
   }
 ]
