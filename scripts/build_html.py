@@ -19,6 +19,7 @@ from taxonomy import TOPICS
 from authored import validate_authored
 import chengyu
 import pinyin
+from site_bank import load_settings, site_bank
 
 TARGET = ROOT / 'dist/lingvostranovedenie-trainer.html'
 
@@ -136,8 +137,8 @@ def dossier_titles(bank: list[dict]) -> dict[str, str]:
 
 
 def main() -> None:
-    bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
-    errors = validate(bank)
+    full_bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
+    errors = validate(full_bank)
     olympiad_chengyu, draft_chengyu = chengyu.load('olympiad.json'), chengyu.load('drafts.json')
     errors += [f'чэнъюй: {message}' for message in chengyu.validate(olympiad_chengyu, draft_chengyu)]
     if errors:
@@ -145,6 +146,8 @@ def main() -> None:
         for message in errors[:40]:
             print(' -', message)
         raise SystemExit(1)
+    # проверяется весь банк, а на сайт идёт то, что разрешает data/site.json (скрытые региональные варианты)
+    bank = site_bank(full_bank, load_settings())
 
     html = (ROOT / 'src/template.html').read_text('utf-8')
     html = html.replace('/*BANK_DESCRIPTION*/', escape(bank_description(bank)))
@@ -173,7 +176,8 @@ def main() -> None:
     finally:
         Path(partial.name).unlink(missing_ok=True)
     verified = sum(1 for record in bank if record['answer']['state'] == 'verified')
-    print(f'собрано: {TARGET} ({TARGET.stat().st_size // 1024} КБ), проверено {verified} из {len(bank)}')
+    hidden = f', скрыто по data/site.json: {len(full_bank) - len(bank)}' if len(bank) != len(full_bank) else ''
+    print(f'собрано: {TARGET} ({TARGET.stat().st_size // 1024} КБ), проверено {verified} из {len(bank)}{hidden}')
 
 
 if __name__ == '__main__':

@@ -40,10 +40,23 @@ test('в собранном файле вопросы по-русски, а ва
   }
 });
 
-test('встроенный банк совпадает с data/bank.json целиком, вместе с подписями', () => {
+test('встроенный банк совпадает с data/bank.json целиком, вместе с подписями (кроме скрытого data/site.json)', () => {
   const html = build();
   const embedded = JSON.parse(html.match(/const QUESTION_BANK = (\[.*?\]);\n/s)[1]);
-  assert.deepEqual(embedded, JSON.parse(readFileSync(new URL('data/bank.json', ROOT), 'utf8')));
+  const bank = JSON.parse(readFileSync(new URL('data/bank.json', ROOT), 'utf8'));
+  const settings = JSON.parse(readFileSync(new URL('data/site.json', ROOT), 'utf8'));
+  // то же правило, что scripts/site_bank.py: скрытые региональные варианты не идут на сайт
+  const expected = settings.showRegional ? bank : bank.flatMap((record) => {
+    const occurrences = record.occurrences ?? [];
+    const kept = occurrences.filter((o) => !o.regionCode);
+    if (occurrences.length && !kept.length) return [];
+    return [kept.length === occurrences.length ? record : { ...record, occurrences: kept }];
+  });
+  assert.deepEqual(embedded, expected);
+  if (!settings.showRegional) {
+    assert.ok(embedded.every((record) => (record.occurrences ?? []).every((o) => !o.regionCode)),
+      'на сайте не осталось региональных появлений');
+  }
 });
 
 test('минификация не ломает синтаксис встроенных скриптов', () => {
