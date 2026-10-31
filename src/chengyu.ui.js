@@ -345,6 +345,7 @@ function cyRenderSteps(steps, track, fill) {
 function cyRenderQuestion() {
   const record = cy.round[cy.position];
   if (!record) return cyFinishRound();
+  document.dispatchEvent(new Event('reviewchange'));
   cy.answered = false;
   $('cyProgressLabel').textContent = `Задание ${cy.position + 1} из ${cy.round.length}`;
   cyRenderProgress();
@@ -648,6 +649,7 @@ function cyRenderReference() {
 /* ---------- клавиатура ---------- */
 
 document.addEventListener('keydown', (event) => {
+  if (document.querySelector('dialog[open]')) return;
   if (event.metaKey || event.ctrlKey || event.altKey) return;
   if (!state.view.startsWith('cy-')) return;
   const typing = ['INPUT', 'SELECT', 'TEXTAREA'].includes(document.activeElement?.tagName);

@@ -164,7 +164,10 @@ def main() -> None:
     html = html.replace('/*CHENGYU_BANK*/', serialize_bank(chengyu_bank))
     cy_engine = minify_js((ROOT / 'src/chengyu.mjs').read_text('utf-8').replace('export ', ''))
     html = html.replace('/*CHENGYU_ENGINE*/', cy_engine)
-    html = html.replace('/*CHENGYU_UI*/', minify_js((ROOT / 'src/chengyu.ui.js').read_text('utf-8')))
+    # замечания запускаются после обоих интерфейсов: читают текущий вопрос из state/cy
+    ui = '\n;\n'.join((ROOT / path).read_text('utf-8')
+                       for path in ('src/chengyu.ui.js', 'src/review.ui.js'))
+    html = html.replace('/*CHENGYU_UI*/', minify_js(ui))
     TARGET.parent.mkdir(parents=True, exist_ok=True)
     # через временный файл и замену: тесты читают dist/ параллельно со сборкой
     # в build.test.mjs и не должны увидеть файл, записанный наполовину

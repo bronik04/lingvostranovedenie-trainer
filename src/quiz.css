@@ -843,6 +843,70 @@ a:hover { color: var(--accent-on-ground); }
 .empty { padding: var(--s-6) 0; color: var(--text-on-ground-muted); text-align: center; }
 .database-foot { justify-content: space-between; padding: var(--s-6) 0 88px; }
 
+/* ---------- замечания к вопросам ---------- */
+:root:not([data-review='on']) .review-only { display: none; }
+.review-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-4);
+  padding: var(--s-3) var(--s-4);
+  margin: var(--s-4) 0;
+  background: var(--surface-raised);
+  border: var(--border-hair) solid var(--line-on-ground);
+  border-radius: var(--radius-sm);
+  font-size: var(--t-size-caption);
+}
+.review-bar > span { flex: 1 1 auto; }
+.review-bar .ink-btn { min-height: 44px; }
+.review-warning { flex-basis: 100%; margin: 0; color: var(--text-on-ground); }
+.review-actions { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); margin-top: var(--s-2); }
+.review-actions .ink-btn { min-height: 44px; font-size: var(--t-size-caption); }
+.review-actions [data-marked='true'] { font-weight: var(--t-weight-bold); }
+.review-dialog {
+  width: min(680px, calc(100% - 24px));
+  max-width: 100%;
+  max-height: calc(100dvh - 24px);
+  margin: auto;
+  padding: var(--s-5);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--surface-raised);
+  color: var(--text-on-ground);
+  border: var(--border-hair) solid var(--line-on-ground);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-float);
+  font-family: var(--font-text);
+}
+.review-dialog::backdrop { background: var(--surface-ground); opacity: .8; }
+body:has(.review-dialog[open]) { overflow: hidden; }
+.review-dialog-head { display: flex; align-items: start; justify-content: space-between; gap: var(--s-3); }
+.review-dialog-head h2 { margin: 0; font-family: var(--font-display); font-size: 28px; }
+.review-dialog-head button { flex-shrink: 0; min-height: 44px; }
+.review-list { list-style: none; padding: 0; margin: var(--s-4) 0; }
+.review-list li + li { border-top: var(--border-hair) solid var(--line-on-ground); }
+.review-list button {
+  display: block; width: 100%; padding: var(--s-4) 0;
+  border: 0; background: none; color: inherit; text-align: left;
+}
+.review-list strong, .review-list small { display: block; }
+.review-list small { margin-top: var(--s-2); color: var(--text-on-ground-muted); white-space: pre-wrap; }
+.review-question, .review-list button, .review-meta, .review-options { overflow-wrap: anywhere; }
+.review-question { font-size: 20px; line-height: 1.45; }
+.review-options { padding-left: var(--s-5); }
+.review-label { display: block; margin: var(--s-4) 0 var(--s-2); }
+.review-dialog textarea {
+  display: block; width: 100%; min-height: 120px; padding: var(--s-3);
+  border: var(--border-hair) solid var(--line-on-ground); border-radius: var(--radius-sm);
+  background: var(--surface-ground); color: var(--text-on-ground);
+  font: inherit; font-size: 16px; line-height: 1.5; resize: vertical;
+}
+.review-dialog :is(button, textarea):focus-visible {
+  outline: var(--border-focus) solid var(--focus-on-ground); outline-offset: var(--border-focus);
+}
+.review-export { display: flex; flex-wrap: wrap; gap: var(--s-2); margin-top: var(--s-5); }
+.review-export .ink-btn { min-height: 44px; }
+
 /* ---------- планшет ---------- */
 
 @media (max-width: 860px) {
@@ -852,6 +916,9 @@ a:hover { color: var(--accent-on-ground); }
 /* ---------- телефон ---------- */
 
 @media (max-width: 600px) {
+  /* Выключение есть в меню «Вид»; полоса замечаний остаётся в одну строку. */
+  #reviewDisable { display: none; }
+  .review-dialog { padding: var(--s-4); }
   .wide-only { display: none; }
   .phone-only { display: inline; }
   /* шапка: переключатели вида — в меню «Вид» */

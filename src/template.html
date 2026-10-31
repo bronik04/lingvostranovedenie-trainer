@@ -49,6 +49,8 @@
       <button class="ink-btn ink-btn--text theme" id="themeToggle" type="button">
         <span id="themeLabel">Тема</span>
       </button>
+      <button class="ink-btn ink-btn--text theme" id="reviewToggle" type="button" aria-pressed="false"
+        title="Отметки и комментарии к вопросам (Ctrl/⌘ + Shift + E)">Отладка: выкл</button>
       <!-- телефон: три переключателя выше прячутся в меню «Вид» -->
       <button class="ink-btn ink-btn--text view-toggle" id="viewToggle" type="button" aria-expanded="false"
         aria-controls="viewMenu">Вид <span class="view-arrow" aria-hidden="true">▾</span></button>
@@ -57,10 +59,17 @@
       <button type="button" id="pinyinMenu" aria-pressed="false">Пиньинь <span class="view-state" id="pinyinState">выкл</span></button>
       <button type="button" id="questionZhMenu" aria-pressed="false">Вопрос по-китайски <span class="view-state" id="questionZhState">выкл</span></button>
       <button type="button" id="themeMenu">Тема <span class="view-state" id="themeState">светлая</span></button>
+      <button type="button" id="reviewMenu" aria-pressed="false">Отладка вопросов <span class="view-state" id="reviewState">выкл</span></button>
     </div>
   </header>
 
   <main>
+  <aside class="review-bar" id="reviewBar" aria-label="Отладка вопросов" hidden>
+    <span><strong>Отладка</strong><span class="wide-only"> · отмечайте вопросы для проверки</span></span>
+    <button class="ink-btn ink-btn--secondary" id="reviewOpenList" type="button">Замечания <span id="reviewCount">0</span></button>
+    <button class="ink-btn ink-btn--text" id="reviewDisable" type="button">Выключить</button>
+    <p class="review-warning" id="reviewStorageWarning" role="status" hidden></p>
+  </aside>
   <section class="view" id="setupView">
     <!-- Верх главной — одно из трёх: первый визит (прогресс пуст), «Следующий раунд» или
          «Раунд не закончен» (из раунда ушли «назад»). Выбирает renderSetup в quiz.ui.js. -->
@@ -240,6 +249,10 @@
         <span class="tag warn" id="retryPill" hidden>повтор ошибки</span>
       </p>
       <h2 class="question" id="questionText"></h2>
+      <div class="review-actions review-only">
+        <button class="ink-btn ink-btn--text" id="reviewFlag" type="button">Отметить вопрос</button>
+        <button class="ink-btn ink-btn--text" id="reviewCommentOpen" type="button">Комментарий</button>
+      </div>
       <p class="question-zh" id="questionZh" lang="zh-Hans" tabindex="-1" hidden></p>
       <button class="ink-btn ink-btn--text question-zh-reveal" id="questionZhReveal" type="button" hidden>Показать вопрос по-китайски</button>
     </div>
@@ -482,6 +495,10 @@
       <div class="cy-tz" id="cyChengyu" lang="zh-Hans" role="img"></div>
       <p class="cy-pinyin" id="cyPinyin" lang="zh-Hans"></p>
       <p class="cy-proverb" id="cyProverb" hidden></p>
+      <div class="review-actions review-only">
+        <button class="ink-btn ink-btn--text" id="cyReviewFlag" type="button">Отметить вопрос</button>
+        <button class="ink-btn ink-btn--text" id="cyReviewCommentOpen" type="button">Комментарий</button>
+      </div>
     </div>
     <div class="options cy-options" id="cyOptions" role="group" aria-label="Варианты ответа"></div>
     <div class="feedback hidden" id="cyFeedback" role="status" tabindex="-1"></div>
@@ -543,6 +560,35 @@
     <p>Прогресс хранится только в этом браузере.</p>
   </footer>
 </div>
+<dialog class="review-dialog" id="reviewDialog" aria-labelledby="reviewTitle" aria-describedby="reviewHelp">
+  <div class="review-dialog-head">
+    <h2 id="reviewTitle">Замечания к вопросам</h2>
+    <button class="ink-btn ink-btn--text" id="reviewClose" type="button" autofocus>Закрыть</button>
+  </div>
+  <p class="ink-caption" id="reviewHelp">Замечания хранятся в этом браузере. Выгрузите файл и передайте его Codex для проверки и исправления вопросов.</p>
+  <p class="review-warning" id="reviewDialogWarning" role="status" hidden></p>
+  <div id="reviewListPanel">
+    <p id="reviewEmpty">Пока нет замечаний. Отметьте сомнительный вопрос во время раунда.</p>
+    <ul class="review-list" id="reviewList"></ul>
+  </div>
+  <div id="reviewEditor" hidden>
+    <button class="ink-btn ink-btn--text" id="reviewBack" type="button">← Все замечания</button>
+    <p class="review-question" id="reviewQuestion"></p>
+    <p class="ink-caption review-meta" id="reviewMeta"></p>
+    <ul class="review-options" id="reviewShownOptions"></ul>
+    <label class="review-label" for="reviewComment">Комментарий <span class="ink-caption">— необязательно</span></label>
+    <textarea id="reviewComment" rows="4" placeholder="Что вызывает сомнение или как лучше сформулировать?"></textarea>
+    <p class="ink-caption" id="reviewSaveState" role="status"></p>
+    <button class="ink-btn ink-btn--text danger" id="reviewRemove" type="button">Снять отметку</button>
+  </div>
+  <div class="review-export">
+    <button class="ink-btn ink-btn--primary" id="reviewExport" type="button">Выгрузить для Codex</button>
+    <button class="ink-btn ink-btn--secondary" id="reviewCopy" type="button">Копировать отчёт</button>
+    <button class="ink-btn ink-btn--secondary" id="reviewShare" type="button" hidden>Поделиться</button>
+  </div>
+  <p class="ink-caption" id="reviewStatus" role="status"></p>
+  <textarea id="reviewCopyText" rows="6" aria-label="Отчёт для ручного копирования" readonly hidden></textarea>
+</dialog>
 <script>
 const QUESTION_BANK = /*QUESTION_BANK*/;
 const PINYIN = /*PINYIN*/;

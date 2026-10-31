@@ -111,6 +111,187 @@ async function startRound(page, size) {
 
 const hashOf = (page) => new URL(page.url()).hash;
 
+const reviewEntries = (page) => page.evaluate(() =>
+  JSON.parse(localStorage.getItem('lingvo-trainer:review:v1')).entries);
+
+test('отладка: отметка, комментарий, перезагрузка и выгрузка точного контекста', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  assert.equal(await page.locator('#reviewToggle').count(), 1);
+  await startRound(page, 10);
+  assert.equal(await page.locator('#reviewBar').isVisible(), false);
+  await page.keyboard.press('Control+Shift+KeyE');
+  assert.equal(await page.locator('#reviewBar').isVisible(), true);
+  const record = await currentRecord(page, await bankOf(page));
+  const shown = await page.locator('#options button').evaluateAll((buttons) => buttons.map((b) => ({
+    optionId: b.dataset.optionId, text: b.querySelector('.option-text').firstChild.textContent,
+  })));
+  await page.locator('#reviewFlag').click();
+  let [entry] = await reviewEntries(page);
+  assert.equal(entry.questionId, record.id);
+  assert.equal(entry.comment, '');
+  assert.deepEqual(entry.context.shownOptions, shown);
+  assert.deepEqual(entry.snapshot, record);
+  await page.locator('#reviewCommentOpen').click();
+  const comment = 'Два ответа выглядят верными <img src=x onerror=alert(1)>';
+  await page.locator('#reviewComment').fill(comment);
+  await page.keyboard.press('Escape');
+  assert.equal(hashOf(page), '#round');
+  assert.equal(await page.locator('#reviewDialog').isVisible(), false);
+  await page.reload();
+  assert.equal(await page.locator('#reviewBar').isVisible(), true);
+  [entry] = await reviewEntries(page);
+  assert.equal(entry.comment, comment);
+  assert.deepEqual(entry.context.shownOptions, shown, 'снимок не заменился после перемешивания');
+  await page.locator('#reviewOpenList').click();
+  assert.equal(await page.locator('#reviewList img').count(), 0);
+  assert.match(await page.locator('#reviewList').innerText(), /Два ответа/);
+  const saved = await page.evaluate(async () => {
+    let blob;
+    URL.createObjectURL = (value) => { blob = value; return 'blob:test'; };
+    HTMLAnchorElement.prototype.click = () => {};
+    document.getElementById('reviewExport').click();
+    return JSON.parse(await blob.text());
+  });
+  assert.equal(saved.type, 'lingvo-question-review');
+  assert.deepEqual(saved.entries, [entry]);
+  assert.equal((await reviewEntries(page)).length, 1, 'выгрузка оставляет отметки');
+  assert.deepEqual(await page.evaluate(() => state.progress), {});
+  assert.deepEqual(page.errors, []);
+});
+
+test('отладка: предложенный ответ «Верно или нет» и клавиши внутри окна', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await page.locator('label:has(input[name="studyFormat"][value="truefalse"])').click();
+  await startRound(page, 10);
+  await page.keyboard.press('Meta+Shift+KeyE');
+  const statement = await page.evaluate(() => state.statement);
+  await page.locator('#reviewCommentOpen').click();
+  assert.deepEqual((await reviewEntries(page))[0].context.statement, statement);
+  await page.locator('#reviewClose').focus();
+  await page.keyboard.press('1');
+  await page.keyboard.press('p');
+  assert.equal(await page.evaluate(() => state.answered), false);
+  assert.notEqual(await page.locator('html').getAttribute('data-pinyin'), 'on');
+  await page.keyboard.press('Escape');
+  await page.locator('#tfTrue').click();
+  await page.locator('#nextButton').click();
+  assert.equal(await page.locator('#reviewFlag').innerText(), 'Отметить вопрос');
+  assert.equal((await reviewEntries(page)).length, 1);
+});
+
+test('отладка: телефон, чэнъюй, редактирование и снятие отметки', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 375, height: 667 });
+  if (!page) return;
+  await viewMenuItem(page, 'reviewMenu');
+  await page.locator('#navChengyu').click();
+  await page.locator('#cyFirstStart').click();
+  await page.locator('#cyReviewFlag').click();
+  const record = await page.evaluate(() => cy.round[cy.position]);
+  assert.equal((await reviewEntries(page))[0].section, 'chengyu');
+  assert.equal((await reviewEntries(page))[0].questionId, record.id);
+  await page.locator('#reviewOpenList').click();
+  await page.locator('#reviewList button').first().click();
+  await page.locator('#reviewComment').fill('Проверить русский аналог');
+  await page.locator('#reviewBack').click();
+  assert.match(await page.locator('#reviewList').innerText(), /Проверить русский аналог/);
+  const box = await page.locator('#reviewDialog').boundingBox();
+  assert.ok(box.x >= 0 && box.x + box.width <= 375);
+  assert.ok(box.y >= 0 && box.y + box.height <= 667);
+  await page.locator('#reviewList button').first().click();
+  await page.locator('#reviewRemove').click();
+  assert.equal((await reviewEntries(page)).length, 0);
+  assert.equal(await page.locator('#reviewExport').isDisabled(), true);
+  await page.locator('#reviewClose').click();
+  assert.equal(await page.locator('#cyQuizView').isVisible(), true);
+  assert.deepEqual(page.errors, []);
+});
+
+test('отладка: «Вспомни сам» не раскрывает ответ при отметке', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await page.evaluate(() => {
+    const record = QUESTION_BANK.find((r) => !needsOptions(r));
+    startRoundWith([record], 'recall');
+  });
+  await page.keyboard.press('Control+Shift+KeyE');
+  await page.locator('#reviewFlag').click();
+  const [entry] = await reviewEntries(page);
+  assert.equal(entry.context.format, 'recall');
+  assert.equal(entry.context.stage, 'recall');
+  assert.deepEqual(entry.context.shownOptions, []);
+  assert.equal(await page.locator('#recallPrompt').isVisible(), true);
+  assert.equal(await page.locator('#feedback').isVisible(), false);
+});
+
+test('отладка: недоступное хранилище явно сообщает об отсутствии сохранения', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await page.evaluate(() => {
+    Storage.prototype.setItem = () => { throw new Error('quota'); };
+  });
+  await startRound(page, 10);
+  await page.keyboard.press('Control+Shift+KeyE');
+  await page.locator('#reviewFlag').click();
+  assert.match(await page.locator('#reviewStorageWarning').innerText(), /выгрузите/i);
+  await page.locator('#reviewOpenList').click();
+  assert.equal(await page.locator('#reviewList button').count(), 1);
+  assert.equal(await page.locator('#reviewExport').isEnabled(), true);
+});
+
+test('отладка: повреждённый список не перезаписывается новой отметкой', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await page.evaluate(() => localStorage.setItem('lingvo-trainer:review:v1', '{broken'));
+  await page.reload();
+  await startRound(page, 10);
+  await page.keyboard.press('Control+Shift+KeyE');
+  await page.locator('#reviewFlag').click();
+  assert.equal(await page.evaluate(() => localStorage.getItem('lingvo-trainer:review:v1')), '{broken');
+  assert.match(await page.locator('#reviewStorageWarning').innerText(), /выгрузите/i);
+});
+
+test('отладка: удаление в другой вкладке закрывает устаревший редактор с объяснением', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await startRound(page, 10);
+  await page.keyboard.press('Control+Shift+KeyE');
+  await page.locator('#reviewCommentOpen').click();
+  await page.locator('#reviewComment').fill('Первый комментарий');
+  const other = await page.context().newPage();
+  await other.goto(baseUrl);
+  await other.locator('#reviewOpenList').click();
+  await other.locator('#reviewList button').first().click();
+  await other.locator('#reviewRemove').click();
+  await page.waitForFunction(() => document.getElementById('reviewCount').textContent === '0');
+  assert.equal(await page.locator('#reviewEditor').isVisible(), false);
+  assert.match(await page.locator('#reviewStatus').innerText(), /другой вкладке/);
+  assert.deepEqual(await reviewEntries(page), []);
+});
+
+test('отладка: копирование отчёта с запасным ручным способом', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await startRound(page, 10);
+  await page.keyboard.press('Control+Shift+KeyE');
+  await page.locator('#reviewCommentOpen').click();
+  await page.locator('#reviewComment').fill('Проверить формулировку');
+  await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', {
+    configurable: true, value: { writeText: async (text) => { window.copiedReview = text; } },
+  }));
+  await page.locator('#reviewCopy').click();
+  const copied = await page.evaluate(() => window.copiedReview);
+  assert.ok(copied.includes((await reviewEntries(page))[0].questionId));
+  assert.match(copied, /Проверить формулировку/);
+  await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', {
+    configurable: true, value: { writeText: async () => { throw new Error('denied'); } },
+  }));
+  await page.locator('#reviewCopy').click();
+  await page.locator('#reviewCopyText').waitFor();
+  assert.equal(await page.locator('#reviewCopyText').inputValue(), copied);
+});
+
 /** Ответ на вопрос на экране и переход дальше; record — запись банка (см. currentRecord). */
 async function answerAndNext(page, bank, correct) {
   const record = await currentRecord(page, bank);

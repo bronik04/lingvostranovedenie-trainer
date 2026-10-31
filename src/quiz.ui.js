@@ -850,6 +850,7 @@ function repeatMistakes() {
 function renderQuestion() {
   const record = state.round[state.position];
   if (!record) return finishRound();
+  document.dispatchEvent(new Event('reviewchange'));
 
   state.answered = false;
   const origin = recordOrigin(record);
@@ -1464,6 +1465,7 @@ const TRUE_FALSE_KEYS = {
 };
 
 document.addEventListener('keydown', (event) => {
+  if (document.querySelector('dialog[open]')) return;
   if (event.metaKey || event.ctrlKey || event.altKey) return;
   const typing = ['INPUT', 'SELECT', 'TEXTAREA'].includes(document.activeElement?.tagName);
   // P — пиньинь на любом экране, как кнопка в шапке; код клавиши, а не символ: на русской
