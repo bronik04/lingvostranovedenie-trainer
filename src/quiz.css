@@ -35,36 +35,62 @@ input:focus-visible, select:focus-visible, summary:focus-visible, .option:focus-
 
 /* ---------- шапка ---------- */
 
-.site-header { gap: var(--s-3) var(--s-6); }
+.site-header { position: relative; gap: var(--s-3) var(--s-6); }
 .site-nav { margin-left: auto; }
-.site-tools { gap: var(--s-2) var(--s-5); }
+.site-tools { justify-content: space-between; width: 100%; gap: var(--s-3); }
 .count { color: var(--text-on-ground-muted); font-variant-numeric: lining-nums tabular-nums; }
-.theme { font-size: var(--t-size-caption); font-weight: var(--t-weight-medium); }
-
-/* Меню «Вид» — только на телефоне (см. конец файла): на ноутбуке переключатели стоят в шапке. */
-.view-toggle, .view-menu { display: none; }
-.view-toggle { font-size: var(--t-size-caption); font-weight: var(--t-weight-medium); }
-.view-menu {
-  flex-direction: column;
-  width: 100%;
-  border: var(--border-hair) solid var(--line-on-ground);
+.view-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  min-height: var(--target-min);
+  padding: var(--s-2) var(--s-3);
+  border: var(--border-hair) solid var(--line-on-paper);
   border-radius: var(--radius-sm);
   background: var(--surface-raised);
+  color: var(--text-on-ground);
+  font-size: var(--t-size-caption);
 }
+.view-toggle:hover, .view-menu button:hover { background: var(--surface-hover); }
+.view-toggle:focus-visible { outline: var(--border-focus) solid var(--focus-on-ground); outline-offset: var(--border-focus); }
+.view-menu {
+  position: absolute;
+  top: calc(100% - var(--s-2));
+  right: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  width: min(300px, 100%);
+  padding: var(--s-2);
+  border: var(--border-hair) solid var(--line-on-paper);
+  border-radius: var(--radius-md);
+  background: var(--surface-raised);
+  box-shadow: var(--shadow-float);
+}
+.view-menu-title { margin: 0; padding: var(--s-2) var(--s-3); color: var(--text-on-ground-muted); font-size: 13px; }
 .view-menu button {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--s-3);
   min-height: 48px;
-  padding: 0 var(--s-4);
+  padding: var(--s-2) var(--s-3);
   border: 0;
+  border-radius: var(--radius-sm);
   background: none;
   color: var(--text-on-ground);
   text-align: start;
+  font-size: var(--t-size-caption);
 }
-.view-menu button + button { border-top: var(--border-hair) solid var(--line-on-paper); }
 .view-state { color: var(--text-on-ground-muted); font-size: var(--t-size-caption); }
+.setting-control { display: inline-flex; align-items: center; }
+.setting-state { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.setting-switch { position: relative; width: 30px; height: 18px; border-radius: 12px; background: var(--line-on-paper); }
+.setting-switch::after { content: ''; position: absolute; top: 3px; left: 3px; width: 12px; height: 12px; border-radius: 50%; background: var(--text-on-ground-muted); }
+[aria-pressed='true'] .setting-switch { background: var(--fill-accent); }
+[aria-pressed='true'] .setting-switch::after { left: 15px; background: var(--on-accent); }
+#reviewMenu { display: none; margin-top: var(--s-2); border-top: var(--border-hair) solid var(--line-on-paper); border-radius: 0; }
 
 /* пиньинь: в разметке всегда, виден по настройке в шапке (data-pinyin на <html>) */
 :root:not([data-pinyin='on']) .pinyin { display: none; }
@@ -916,20 +942,21 @@ body:has(.review-dialog[open]) { overflow: hidden; }
 /* ---------- телефон ---------- */
 
 @media (max-width: 600px) {
-  /* Выключение есть в меню «Вид»; полоса замечаний остаётся в одну строку. */
+  /* Выключение есть в настройках; полоса замечаний остаётся в одну строку. */
   #reviewDisable { display: none; }
   .review-dialog { padding: var(--s-4); }
   .wide-only { display: none; }
   .phone-only { display: inline; }
-  /* шапка: переключатели вида — в меню «Вид» */
-  .site-header { gap: var(--s-1) var(--s-3); padding: var(--s-3) 0; }
+  .site-header { display: grid; grid-template-columns: minmax(0, 1fr) 44px; gap: var(--s-1) var(--s-2); padding: var(--s-3) 0; }
+  .site-header .ink-header__brand { grid-column: 1; grid-row: 1; gap: var(--s-2); }
   .site-header .ink-header__brand .ink-seal { width: 36px; height: 36px; font-size: 21px; }
-  .site-header .ink-header__name { font-size: 22px; }
-  .site-nav { width: 100%; margin-left: 0; gap: var(--s-1) 20px; font-size: 15px; }
-  .site-tools { justify-content: space-between; width: 100%; gap: var(--s-3); }
-  .site-tools .theme { display: none; }
-  .view-toggle { display: inline-flex; }
-  .view-menu:not([hidden]) { display: flex; }
+  .site-header .ink-header__name { font-size: clamp(18px, 5.6vw, 22px); }
+  .site-nav { grid-row: 3; grid-column: 1 / -1; width: 100%; margin-left: 0; gap: var(--s-1) 20px; font-size: 15px; }
+  .site-tools { display: contents; }
+  .site-tools .count { grid-row: 2; grid-column: 1 / -1; font-size: 13px; }
+  .view-toggle { grid-row: 1; grid-column: 2; padding: 0; width: 44px; }
+  .view-toggle-label, .view-toggle .view-arrow { display: none; }
+  #reviewMenu { display: flex; }
 
   #firstHero, #cyFirstHero { padding-bottom: var(--s-7); }
   .hero-start, .hero-start .ink-btn--primary { width: 100%; min-width: 0; }
@@ -973,6 +1000,18 @@ body:has(.review-dialog[open]) { overflow: hidden; }
   .chapter-mark { flex-basis: 100%; font-size: 32px; }
   .next-row .ink-btn--primary { flex: 1 1 100%; min-width: 0; }
   .next-row { flex-direction: column-reverse; align-items: stretch; }
+  .next-row .ink-btn--primary:not(.hidden) {
+    position: fixed;
+    z-index: 4;
+    inset-inline: var(--s-4);
+    bottom: calc(var(--s-4) + env(safe-area-inset-bottom, 0px));
+    width: auto;
+    min-height: 52px;
+    box-shadow: 0 0 0 6px var(--surface-ground), var(--shadow-float);
+  }
+  .next-row:has(.ink-btn--primary:not(.hidden)) { padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px)); }
+  html:has(body:is([data-view='quiz'], [data-view='cy-quiz'])) { scroll-padding-bottom: 100px; }
+  body:is([data-view='quiz'], [data-view='cy-quiz']) .ink-footer { padding-bottom: 100px; }
   /* после «Следующего вопроса» начало раунда встаёт чуть ниже края экрана */
   .quiz { scroll-margin-top: var(--s-2); }
   .option { grid-template-columns: 32px minmax(0, 1fr); min-height: 72px; padding: 12px 14px; }

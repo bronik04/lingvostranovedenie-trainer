@@ -1,5 +1,5 @@
 const PLAYABLE = new Set(['verified', 'unverified']);
-const LABELS = ['A', 'B', 'C', 'D'];
+const LABELS = ['1', '2', '3', '4'];
 const STUDY_MODES = new Set(['all', 'new', 'mistakes', 'due']);
 // откуда вопросы раунда: все, только с олимпиад или только дополнения к ним
 const ORIGINS = new Set(['all', 'olympiad', 'addition']);

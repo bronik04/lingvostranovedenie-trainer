@@ -30,9 +30,9 @@ const NO_FILTERS = {
   topics: [], years: [], stages: [], mode: 'all', onlyVerified: false,
 };
 
-test('метки идут A–D по видимому порядку при любом перемешивании', () => {
+test('метки идут 1–4 по видимому порядку при любом перемешивании', () => {
   const reversed = labelledOptions(record('a'), () => 0.99);
-  assert.deepEqual(reversed.map((option) => option.label), ['A', 'B', 'C', 'D']);
+  assert.deepEqual(reversed.map((option) => option.label), ['1', '2', '3', '4']);
   assert.equal(new Set(reversed.map((option) => option.optionId)).size, 4);
 });
 
@@ -59,7 +59,7 @@ test('у вопроса с общим набором на экране четы�
   const seen = new Set();
   for (let index = 0; index < 300; index += 1) {
     const shown = labelledOptions(pooled(), random);
-    assert.deepEqual(shown.map((option) => option.label), ['A', 'B', 'C', 'D']);
+    assert.deepEqual(shown.map((option) => option.label), ['1', '2', '3', '4']);
     assert.equal(new Set(shown.map((option) => option.optionId)).size, 4);
     assert.ok(shown.some((option) => option.optionId === 'o1'));
     assert.equal(grade(pooled(), 'o1').correct, true);

@@ -57,7 +57,7 @@ const dossierTitle = (id) => DOSSIER_TITLES[id] || DOSSIERS[id] || id;
 const COUNT_WORDS = ['', 'Один', 'Два', 'Три', 'Четыре', 'Пять', 'Шесть', 'Семь', 'Восемь', 'Девять', 'Десять'];
 // до стольких вопросов ход раунда рисуется кружками, длиннее — полосой
 const MAX_STEP_DOTS = 14;
-// на телефоне под кнопкой «Следующий вопрос» после докрутки остаётся столько воздуха
+// На телефоне оставляем отступ под элементом, до которого докручиваем (самооценка).
 const BOTTOM_GAP = 24;
 const THEME_COLORS = { light: '#faf4e8', dark: '#181512' };
 const FORMAT_COPY = {
@@ -153,7 +153,6 @@ function systemTheme() {
 
 function applyTheme(theme) {
   document.documentElement.dataset.theme = theme;
-  $('themeLabel').textContent = theme === 'dark' ? 'Тема: тёмная' : 'Тема: светлая';
   $('themeState').textContent = theme === 'dark' ? 'тёмная' : 'светлая';
   $('themeColorMeta')?.setAttribute('content', THEME_COLORS[theme]);
 }
@@ -189,9 +188,8 @@ function toggleTheme() {
 // переключить посреди вопроса, ничего не перерисовывая
 function applyPinyin(on) {
   document.documentElement.dataset.pinyin = on ? 'on' : 'off';
-  $('pinyinLabel').textContent = on ? 'Пиньинь: вкл' : 'Пиньинь: выкл';
   $('pinyinState').textContent = on ? 'вкл' : 'выкл';
-  for (const id of ['pinyinToggle', 'pinyinMenu']) $(id).setAttribute('aria-pressed', String(on));
+  $('pinyinMenu').setAttribute('aria-pressed', String(on));
 }
 
 function initPinyin() {
@@ -217,14 +215,11 @@ function togglePinyin() {
 // в раунде его можно открыть для одного вопроса кнопкой под формулировкой
 function applyQuestionZh(on) {
   document.documentElement.dataset.questionZh = on ? 'on' : 'off';
-  $('questionZhLabel').textContent = on ? 'Вопрос 中文: вкл' : 'Вопрос 中文: выкл';
   $('questionZhState').textContent = on ? 'вкл' : 'выкл';
-  for (const id of ['questionZhToggle', 'questionZhMenu']) $(id).setAttribute('aria-pressed', String(on));
+  $('questionZhMenu').setAttribute('aria-pressed', String(on));
 }
 
-/* ---------- меню «Вид» (телефон) ---------- */
-
-// на телефоне три переключателя шапки заняли бы две строки на каждом экране — они в меню
+/* ---------- общие настройки отображения ---------- */
 function setViewMenu(open) {
   $('viewMenu').hidden = !open;
   $('viewToggle').setAttribute('aria-expanded', String(open));
@@ -1052,10 +1047,9 @@ function showFeedback(record, kind, verdictHtml) {
   ].join('');
   requestAnimationFrame(() => {
     $('feedback').focus({ preventScroll: true });
-    // на телефоне докручиваем до следующего шага под разбором: кнопки «Следующий вопрос»,
-    // а во «Вспомни сам» до неё — до самооценки (решение автора: всегда до кнопки)
-    revealOnPhone([$('nextButton'), $('recallRate')].find((element) => !element.classList.contains('hidden'))
-      || $('feedback'));
+    // Следующий вопрос закреплён внизу. Докрутка нужна только до самооценки,
+    // пока во «Вспомни сам» ещё нельзя переходить дальше.
+    if (!$('recallRate').classList.contains('hidden')) revealOnPhone($('recallRate'));
   });
 }
 
@@ -1129,7 +1123,6 @@ function rateRecall(outcome) {
   // нажатая кнопка оценки погасла вместе с фокусом: следующий шаг — «Следующий вопрос»;
   // фокус без своей прокрутки — она поставила бы кнопку под нижнюю панель Safari
   $('nextButton').focus({ preventScroll: true });
-  revealOnPhone($('nextButton'));
 }
 
 /* ---------- «Верно или нет» ---------- */
@@ -1475,8 +1468,9 @@ document.addEventListener('keydown', (event) => {
     togglePinyin();
     return;
   }
-  // открытое меню «Вид» Esc сначала закрывает — и в «Чэнъюй», поэтому до его клавиатуры
-  if (event.key === 'Escape' && !$('viewMenu').hidden && onPhone()) {
+  // Esc сначала закрывает настройки — и в «Чэнъюй», поэтому до его клавиатуры.
+  if (event.key === 'Escape' && !$('viewMenu').hidden) {
+    event.preventDefault();
     event.stopImmediatePropagation();
     setViewMenu(false);
     $('viewToggle').focus();
@@ -1560,10 +1554,10 @@ document.addEventListener('keydown', (event) => {
 
 /* ---------- обвязка ---------- */
 
-$('themeToggle').addEventListener('click', toggleTheme);
-$('pinyinToggle').addEventListener('click', togglePinyin);
-$('questionZhToggle').addEventListener('click', toggleQuestionZh);
 $('viewToggle').addEventListener('click', () => setViewMenu($('viewMenu').hidden));
+document.addEventListener('pointerdown', (event) => {
+  if (!event.target.closest('.site-header')) setViewMenu(false);
+});
 $('themeMenu').addEventListener('click', toggleTheme);
 $('pinyinMenu').addEventListener('click', togglePinyin);
 $('questionZhMenu').addEventListener('click', toggleQuestionZh);

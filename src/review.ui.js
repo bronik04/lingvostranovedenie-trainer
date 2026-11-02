@@ -57,9 +57,8 @@
   function renderControls() {
     document.documentElement.dataset.review = enabled ? 'on' : 'off';
     $('reviewBar').hidden = !enabled;
-    $('reviewToggle').textContent = enabled ? 'Отладка: вкл' : 'Отладка: выкл';
     $('reviewState').textContent = enabled ? 'вкл' : 'выкл';
-    for (const id of ['reviewToggle', 'reviewMenu']) $(id).setAttribute('aria-pressed', String(enabled));
+    $('reviewMenu').setAttribute('aria-pressed', String(enabled));
     $('reviewCount').textContent = entries.length;
     for (const [section, id] of [['quiz', 'reviewFlag'], ['chengyu', 'cyReviewFlag']]) {
       const marked = entries.some((entry) => entry.section === section && entry.questionId === current(section)?.id);
@@ -244,7 +243,7 @@
       if (error.name !== 'AbortError') $('reviewStatus').textContent = 'Не удалось поделиться. Используйте выгрузку файла или копирование отчёта.';
     }
   });
-  for (const id of ['reviewToggle', 'reviewMenu', 'reviewDisable']) $(id).addEventListener('click', toggleMode);
+  for (const id of ['reviewMenu', 'reviewDisable']) $(id).addEventListener('click', toggleMode);
   for (const [section, prefix] of [['quiz', 'review'], ['chengyu', 'cyReview']]) {
     $(`${prefix}Flag`).addEventListener('click', () => mark(section));
     $(`${prefix}CommentOpen`).addEventListener('click', () => mark(section, true));

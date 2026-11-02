@@ -1,4 +1,4 @@
-// Логика раздела «Чэнъюй» (src/chengyu.mjs): отбор заданий, раунд, буквы вариантов, оценка.
+// Логика раздела «Чэнъюй» (src/chengyu.mjs): отбор заданий, раунд, номера вариантов, оценка.
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
@@ -39,9 +39,9 @@ test('раунд не длиннее выбранного и без повтор
   assert.equal(cyBuildRound(BANK, { mode: 'all', groups: [] }, {}, 99).length, 3);
 });
 
-test('буквы — по видимому порядку, id варианта — буква бланка', () => {
+test('цифры — по видимому порядку, id варианта — буква бланка', () => {
   const shown = cyLabelledOptions(BANK[0], seeded(7));
-  assert.deepEqual(shown.map((o) => o.label), ['A', 'B', 'C', 'D']);
+  assert.deepEqual(shown.map((o) => o.label), ['1', '2', '3', '4']);
   assert.deepEqual(shown.map((o) => o.optionId).sort(), ['A', 'B', 'C', 'D']);
   for (const option of shown) {
     assert.equal(option.text, BANK[0].options.find((o) => o.id === option.optionId).text);

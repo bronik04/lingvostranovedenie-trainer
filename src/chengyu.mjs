@@ -93,10 +93,10 @@ export function cyBuildRound(bank, filters, progress, size, random = Math.random
   return cyShuffle(cyEligible(bank, filters, progress), random).slice(0, size);
 }
 
-/** Варианты в случайном порядке; буквы A–D — по видимому порядку, а не по бланку. */
+/** Варианты в случайном порядке; цифры 1–4 — по видимому порядку, id — по бланку. */
 export function cyLabelledOptions(record, random = Math.random) {
   return cyShuffle(record.options, random).map((option, index) => ({
-    optionId: option.id, label: 'ABCD'[index], text: option.text, gloss: option.gloss || '',
+    optionId: option.id, label: String(index + 1), text: option.text, gloss: option.gloss || '',
   }));
 }
 

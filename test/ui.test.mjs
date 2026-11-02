@@ -117,7 +117,7 @@ const reviewEntries = (page) => page.evaluate(() =>
 test('отладка: отметка, комментарий, перезагрузка и выгрузка точного контекста', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
-  assert.equal(await page.locator('#reviewToggle').count(), 1);
+  assert.equal(await page.locator('#reviewToggle').count(), 0);
   await startRound(page, 10);
   assert.equal(await page.locator('#reviewBar').isVisible(), false);
   await page.keyboard.press('Control+Shift+KeyE');
@@ -300,11 +300,72 @@ async function answerAndNext(page, bank, correct) {
   return record;
 }
 
-/** Телефон: пиньинь и вопрос по-китайски — в меню «Вид». */
+/** Настройки отображения в едином меню на любом экране. */
 async function viewMenuItem(page, id) {
   if (!(await page.locator('#viewMenu').isVisible())) await page.locator('#viewToggle').click();
   await page.locator(`#${id}`).click();
 }
+
+test('единые настройки: меню на компьютере, отладка только на телефоне, Escape закрывает меню', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  assert.equal(await page.getByRole('button', { name: 'Настройки', exact: true }).count(), 1);
+  await startRound(page, 5);
+  assert.deepEqual(await page.locator('#options .letter').allTextContents(), ['1', '2', '3', '4']);
+  await page.locator('#viewToggle').click();
+  assert.equal(await page.locator('#pinyinMenu').isVisible(), true);
+  assert.equal(await page.locator('#reviewMenu').isVisible(), false);
+  await page.keyboard.press('Escape');
+  assert.equal(await page.locator('#viewMenu').isVisible(), false);
+  assert.equal(await page.locator('#quizView').isVisible(), true);
+  await page.keyboard.press('Control+Shift+KeyE');
+  assert.equal(await page.locator('#reviewBar').isVisible(), true);
+  await page.setViewportSize({ width: 320, height: 740 });
+  await page.locator('#viewToggle').click();
+  assert.equal(await page.locator('#reviewMenu').isVisible(), true);
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  await page.locator('#reviewMenu').click();
+  assert.equal(await page.locator('#reviewBar').isVisible(), false);
+  assert.deepEqual(page.errors, []);
+});
+
+test('парящий переход: прокрутка, новый вопрос, итог и смена ширины', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 375, height: 667 });
+  if (!page) return;
+  await page.evaluate(() => {
+    const records = QUESTION_BANK.slice(0, 2);
+    records[0].explanation.ru = 'Длинное пояснение для проверки прокрутки. '.repeat(80);
+    startRoundWith(records, 'choice');
+  });
+  const next = page.locator('#nextButton');
+  assert.equal(await next.isVisible(), false);
+  await page.evaluate(() => chooseOption(state.round[state.position], state.round[state.position].answer.optionId));
+  assert.equal(await next.innerText(), 'Следующий вопрос');
+  const check = async () => {
+    const box = await next.boundingBox();
+    assert.ok(box.y >= 0 && box.y + box.height <= 667, `переход за краем экрана: ${JSON.stringify(box)}`);
+    return box.y;
+  };
+  await page.evaluate(() => scrollTo(0, 0));
+  const top = await check();
+  await page.evaluate(() => scrollTo(0, document.body.scrollHeight));
+  assert.equal(await check(), top);
+  await page.evaluate(() => scrollTo(0, 0));
+  assert.equal(await check(), top);
+  await page.setViewportSize({ width: 1280, height: 900 });
+  assert.notEqual(await next.evaluate(e => getComputedStyle(e).position), 'fixed');
+  await page.setViewportSize({ width: 375, height: 667 });
+  await next.click();
+  assert.equal(await next.isVisible(), false);
+  await page.waitForFunction(() => Math.abs(document.getElementById('quizView').getBoundingClientRect().top) < 40);
+  await page.evaluate(() => chooseOption(state.round[state.position], state.round[state.position].answer.optionId));
+  assert.equal(await next.innerText(), 'Итоги раунда');
+  await check();
+  await next.click();
+  assert.equal(await page.locator('#resultsView').isVisible(), true);
+  assert.equal(await next.isVisible(), false);
+  assert.deepEqual(page.errors, []);
+});
 
 test('главная открывается без ошибок и считает банк', LIMIT, async (t) => {
   const page = await openPage(t);
@@ -753,7 +814,7 @@ test('тема переключается и запоминается', LIMIT, a
   const page = await openPage(t);
   if (!page) return;
   const before = await page.locator('html').getAttribute('data-theme');
-  await page.locator('#themeToggle').click();
+  await viewMenuItem(page, 'themeMenu');
   const after = await page.locator('html').getAttribute('data-theme');
   assert.notEqual(after, before);
   await page.reload();
@@ -782,7 +843,7 @@ test('телефон: ни на одном экране нет горизонт�
   await first.locator('summary').click();
   assert.equal(await first.locator('.row-answer').isVisible(), true, 'ответ в базе не раскрылся');
   assert.equal(await overflow(), 0, 'база с раскрытым ответом');
-  // главная после первого ответа: «Следующий раунд», быстрые входы и открытое меню «Вид»
+  // Главная после первого ответа: «Следующий раунд», быстрые входы и открытые настройки.
   await page.locator('#navSetup').click();
   await page.locator('#viewToggle').click();
   assert.equal(await page.locator('#quickMistakes').isVisible(), true);
@@ -1116,6 +1177,25 @@ async function cyStartRound(page, size) {
   await page.locator('#cyQuizView').waitFor();
 }
 
+test('чэнъюй: парящий переход и цифры вариантов на телефоне', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 320, height: 740 });
+  if (!page) return;
+  await openChengyu(page);
+  await cyStartRound(page, 5);
+  assert.deepEqual(await page.locator('#cyOptions .letter').allTextContents(), ['1', '2', '3', '4']);
+  await cyAnswer(page, await page.evaluate(() => CHENGYU_BANK), true);
+  const next = page.locator('#cyNextButton');
+  for (const bottom of [true, false]) {
+    await page.evaluate(bottom => scrollTo(0, bottom ? document.body.scrollHeight : 0), bottom);
+    const box = await next.boundingBox();
+    assert.ok(box.y >= 0 && box.y + box.height <= 740);
+  }
+  await next.click();
+  assert.equal(await next.isVisible(), false);
+  await page.waitForFunction(() => Math.abs(document.getElementById('cyQuizView').getBoundingClientRect().top) < 40);
+  assert.deepEqual(page.errors, []);
+});
+
 test('чэнъюй: раунд с верным и неверным ответом, разбор, итоги и справочник', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
@@ -1139,7 +1219,7 @@ test('чэнъюй: раунд с верным и неверным ответо�
       record.occurrences ? /^ВсОШ 20\d\d\/\d\d · .+ этап · задание \d+$/ : /^Составленное задание$/);
     const correct = n !== 0;
     const optionId = correct ? record.answer : record.options.find((o) => o.id !== record.answer).id;
-    // клавиатура: буква по видимому порядку
+    // Клавиатура: цифра по видимому порядку.
     const shown = await page.locator('#cyOptions button').evaluateAll((b) => b.map((x) => x.dataset.optionId));
     await page.keyboard.press(`Digit${shown.indexOf(optionId) + 1}`);
     await page.locator('#cyFeedback.good, #cyFeedback.bad').waitFor();
@@ -1536,7 +1616,7 @@ test('чэнъюй, телефон: кнопка раунда внизу — т�
   assert.deepEqual(page.errors, []);
 });
 
-test('фильтр «Откуда вопросы» и пиньинь: раунд из дополнений, транскрипция из меню «Вид»', LIMIT, async (t) => {
+test('фильтр «Откуда вопросы» и пиньинь: раунд из дополнений, транскрипция из настроек', LIMIT, async (t) => {
   const page = await openPage(t, { width: 375, height: 812 });
   if (!page) return;
   const bank = await page.evaluate(() => QUESTION_BANK);
@@ -1549,7 +1629,7 @@ test('фильтр «Откуда вопросы» и пиньинь: раунд
   assert.equal(await page.locator('#sourceLabel').isVisible(), false);
   assert.equal(await page.locator('#originPill').textContent(), 'Дополнение');
   assert.equal(await page.locator('#originPill').isVisible(), true);
-  // на телефоне переключатели вида — не в шапке, а в меню «Вид»
+  // На телефоне переключатели отображения собраны в настройках.
   for (const id of ['#pinyinToggle', '#questionZhToggle', '#themeToggle', '#viewMenu']) {
     assert.equal(await page.locator(id).isVisible(), false, id);
   }
@@ -1568,18 +1648,17 @@ test('фильтр «Откуда вопросы» и пиньинь: раунд
   assert.equal(await page.locator('#pinyinState').textContent(), 'выкл');
   await page.keyboard.press('KeyP');
   assert.equal(await reading.isVisible(), true);
-  // Esc закрывает меню, а не раунд; фокус возвращается на «Вид»
+  // Esc закрывает меню, а не раунд; фокус возвращается на кнопку настроек.
   await page.keyboard.press('Escape');
   assert.equal(await page.locator('#viewMenu').isVisible(), false);
   assert.equal(await page.locator('#quizView').isVisible(), true);
   assert.equal(await page.evaluate(() => document.activeElement.id), 'viewToggle');
   // на телефоне после ответа видна кнопка «Следующий вопрос», после неё — снова начало вопроса
   await page.locator('#options button').first().click();
-  // докрутка к кнопке, но вердикт разбора не уезжает за верх экрана
+  // Переход доступен без прокрутки до конца разбора.
   await page.waitForFunction(() => {
     const next = document.getElementById('nextButton').getBoundingClientRect();
-    const verdict = document.querySelector('#feedback .verdict').getBoundingClientRect();
-    return verdict.top >= 0 && (next.bottom <= innerHeight || verdict.top < 40);
+    return next.top >= 0 && next.bottom <= innerHeight;
   });
   await page.locator('#nextButton').click();
   await page.waitForFunction(() => Math.abs(document.getElementById('quizView').getBoundingClientRect().top) < 40);
@@ -1592,7 +1671,7 @@ test('фильтр «Откуда вопросы» и пиньинь: раунд
 test('китайский текст вопроса: скрыт по умолчанию, открывается кнопкой для одного вопроса и настройкой в шапке', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
-  assert.equal(await page.locator('#questionZhToggle').getAttribute('aria-pressed'), 'false');
+  assert.equal(await page.locator('#questionZhMenu').getAttribute('aria-pressed'), 'false');
   await page.evaluate(() => {
     const [withZh, other] = QUESTION_BANK.filter((r) => r.questionZh);
     startRoundWith([withZh, other, QUESTION_BANK.find((r) => !r.questionZh)], 'choice');
@@ -1611,7 +1690,7 @@ test('китайский текст вопроса: скрыт по умолча
   assert.equal(await zh.isVisible(), false, 'у следующего вопроса текст снова скрыт');
   assert.equal(await reveal.isVisible(), true);
   // настройка в шапке показывает его у всех вопросов
-  await page.locator('#questionZhToggle').click();
+  await viewMenuItem(page, 'questionZhMenu');
   assert.equal(await zh.isVisible(), true);
   assert.equal(await reveal.isVisible(), false);
   // у вопроса без китайского текста нет ни текста, ни кнопки
@@ -1622,15 +1701,15 @@ test('китайский текст вопроса: скрыт по умолча
   // настройка переживает перезагрузку и действует в «Вопросах в базе»
   await page.reload();
   assert.equal(await page.evaluate(() => document.documentElement.dataset.questionZh), 'on');
-  assert.equal(await page.locator('#questionZhToggle').getAttribute('aria-pressed'), 'true');
-  assert.equal(await page.locator('#questionZhLabel').textContent(), 'Вопрос 中文: вкл');
+  assert.equal(await page.locator('#questionZhMenu').getAttribute('aria-pressed'), 'true');
+  assert.equal(await page.locator('#questionZhState').textContent(), 'вкл');
   // перезагрузка вернула в тот же раунд, где навигации нет: из раунда — в итоги, оттуда в базу
   await page.locator('#leaveRound').click();
   await page.locator('#navDatabase').click();
   const rowZh = page.locator('.row-zh-question').first();
   await rowZh.waitFor();
   assert.equal(await rowZh.isVisible(), true);
-  await page.locator('#questionZhToggle').click();
+  await viewMenuItem(page, 'questionZhMenu');
   assert.equal(await rowZh.isVisible(), false);
   assert.deepEqual(page.errors, []);
 });
