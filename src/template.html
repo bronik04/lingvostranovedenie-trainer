@@ -294,9 +294,9 @@
       <div class="actions">
         <button class="ink-btn ink-btn--primary" id="repeatMistakes" type="button" hidden>Повторить ошибки раунда</button>
         <button class="ink-btn ink-btn--secondary" id="newRound" type="button">Новый раунд</button>
+        <button class="ink-btn ink-btn--secondary" id="backToSetup" type="button">На главную</button>
       </div>
       <p class="ink-caption new-round-note" id="newRoundNote"></p>
-      <button class="ink-btn ink-btn--text" id="backToSetup" type="button">На главную</button>
     </div>
     <div class="results-mistakes" id="resultMistakes">
       <h2 class="ink-title-2">Ошибки раунда</h2>
@@ -511,10 +511,10 @@
       <div class="actions">
         <button class="ink-btn ink-btn--primary" id="cyRepeatMistakes" type="button" hidden>Повторить ошибки раунда</button>
         <button class="ink-btn ink-btn--secondary" id="cyNewRound" type="button">Новый раунд</button>
+        <button class="ink-btn ink-btn--secondary" id="cyBackToSetup" type="button">К разделу «Чэнъюй»</button>
       </div>
       <p class="ink-caption new-round-note" id="cyNewRoundNote"></p>
       <div class="actions cy-results-links">
-        <button class="ink-btn ink-btn--text" id="cyBackToSetup" type="button">К разделу «Чэнъюй»</button>
         <button class="ink-btn ink-btn--text" id="cyResultsReference" type="button">Открыть справочник чэнъюй</button>
       </div>
     </div>
@@ -552,31 +552,39 @@
 <dialog class="review-dialog" id="reviewDialog" aria-labelledby="reviewTitle" aria-describedby="reviewHelp">
   <div class="review-dialog-head">
     <h2 id="reviewTitle">Замечания к вопросам</h2>
-    <button class="ink-btn ink-btn--text" id="reviewClose" type="button" autofocus>Закрыть</button>
+    <button class="ink-btn ink-btn--text" id="reviewBack" type="button" hidden>Все замечания</button>
   </div>
-  <p class="ink-caption" id="reviewHelp">Замечания хранятся в этом браузере. Выгрузите файл и передайте его Codex для проверки и исправления вопросов.</p>
-  <p class="review-warning" id="reviewDialogWarning" role="status" hidden></p>
-  <div id="reviewListPanel">
-    <p id="reviewEmpty">Пока нет замечаний. Отметьте сомнительный вопрос во время раунда.</p>
-    <ul class="review-list" id="reviewList"></ul>
+  <div class="review-dialog-body" id="reviewDialogBody">
+    <p class="review-warning" id="reviewDialogWarning" role="status" hidden></p>
+    <div id="reviewListPanel">
+      <p class="ink-caption" id="reviewHelp">Замечания хранятся в этом браузере. Выгрузите файл и передайте его Codex для проверки и исправления вопросов.</p>
+      <p id="reviewEmpty">Пока нет замечаний. Отметьте сомнительный вопрос во время раунда.</p>
+      <ul class="review-list" id="reviewList"></ul>
+      <div class="review-export">
+        <button class="ink-btn ink-btn--primary" id="reviewExport" type="button">Выгрузить для Codex</button>
+        <button class="ink-btn ink-btn--secondary" id="reviewCopy" type="button">Копировать отчёт</button>
+        <button class="ink-btn ink-btn--secondary" id="reviewShare" type="button" hidden>Поделиться</button>
+      </div>
+      <p class="ink-caption" id="reviewStatus" role="status"></p>
+      <textarea id="reviewCopyText" rows="6" aria-label="Отчёт для ручного копирования" readonly hidden></textarea>
+    </div>
+    <div id="reviewEditor" hidden>
+      <p class="review-question" id="reviewQuestion"></p>
+      <p class="ink-caption review-meta" id="reviewMeta"></p>
+      <details class="review-context" id="reviewContext">
+        <summary id="reviewContextTitle">Варианты в этом вопросе</summary>
+        <ol class="review-options" id="reviewShownOptions"></ol>
+      </details>
+      <label class="review-label" for="reviewComment">Комментарий <span class="ink-caption">— необязательно</span></label>
+      <textarea id="reviewComment" rows="5" placeholder="Что вызывает сомнение или как лучше сформулировать?"></textarea>
+      <p class="ink-caption" id="reviewSaveState" role="status"></p>
+    </div>
   </div>
-  <div id="reviewEditor" hidden>
-    <button class="ink-btn ink-btn--text" id="reviewBack" type="button">← Все замечания</button>
-    <p class="review-question" id="reviewQuestion"></p>
-    <p class="ink-caption review-meta" id="reviewMeta"></p>
-    <ul class="review-options" id="reviewShownOptions"></ul>
-    <label class="review-label" for="reviewComment">Комментарий <span class="ink-caption">— необязательно</span></label>
-    <textarea id="reviewComment" rows="4" placeholder="Что вызывает сомнение или как лучше сформулировать?"></textarea>
-    <p class="ink-caption" id="reviewSaveState" role="status"></p>
-    <button class="ink-btn ink-btn--text danger" id="reviewRemove" type="button">Снять отметку</button>
+  <div class="review-dialog-foot">
+    <button class="ink-btn ink-btn--text danger" id="reviewRemove" type="button" hidden>Снять отметку</button>
+    <button class="ink-btn ink-btn--primary" id="reviewConfirm" type="button" hidden>Подтвердить</button>
+    <button class="ink-btn ink-btn--secondary" id="reviewClose" type="button">Закрыть</button>
   </div>
-  <div class="review-export">
-    <button class="ink-btn ink-btn--primary" id="reviewExport" type="button">Выгрузить для Codex</button>
-    <button class="ink-btn ink-btn--secondary" id="reviewCopy" type="button">Копировать отчёт</button>
-    <button class="ink-btn ink-btn--secondary" id="reviewShare" type="button" hidden>Поделиться</button>
-  </div>
-  <p class="ink-caption" id="reviewStatus" role="status"></p>
-  <textarea id="reviewCopyText" rows="6" aria-label="Отчёт для ручного копирования" readonly hidden></textarea>
 </dialog>
 <script>
 const QUESTION_BANK = /*QUESTION_BANK*/;

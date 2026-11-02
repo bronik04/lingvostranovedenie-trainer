@@ -114,6 +114,163 @@ const hashOf = (page) => new URL(page.url()).hash;
 const reviewEntries = (page) => page.evaluate(() =>
   JSON.parse(localStorage.getItem('lingvo-trainer:review:v1')).entries);
 
+test('комментарий: подтверждение закрывает окно, сохраняет текст и возвращает фокус', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await startRound(page, 5);
+  await page.keyboard.press('Control+Shift+KeyE');
+  await page.locator('#reviewCommentOpen').click();
+  assert.equal(await page.getByRole('button', { name: 'Подтвердить', exact: true }).count(), 1);
+  assert.equal(await page.locator('#reviewClose').isVisible(), false);
+  assert.equal(await page.locator('#reviewExport').isVisible(), false);
+  assert.equal(await page.locator('#reviewShownOptions').isVisible(), false);
+  await page.locator('#reviewContext summary').click();
+  assert.equal(await page.locator('#reviewShownOptions').isVisible(), true);
+  const comment = 'Уточнить формулировку.\nПроверить источник.';
+  await page.locator('#reviewComment').fill(comment);
+  await page.locator('#reviewConfirm').click();
+  assert.equal(await page.locator('#reviewDialog').isVisible(), false);
+  assert.equal(await page.evaluate(() => document.activeElement.id), 'reviewCommentOpen');
+  assert.equal(await page.evaluate(() => state.answered), false);
+  assert.deepEqual(await page.evaluate(() => state.progress), {});
+  assert.equal((await reviewEntries(page))[0].comment, comment);
+  await page.reload();
+  await page.locator('#reviewCommentOpen').click();
+  assert.equal(await page.locator('#reviewComment').inputValue(), comment);
+  assert.equal(await page.locator('#reviewShownOptions').isVisible(), false);
+  await page.locator('#reviewBack').click();
+  assert.equal(await page.locator('#reviewConfirm').isVisible(), false);
+  assert.equal(await page.locator('#reviewExport').isVisible(), true);
+  assert.equal(await page.locator('#reviewClose').isVisible(), true);
+  await page.locator('#reviewClose').click();
+  assert.equal(hashOf(page), '#round');
+  assert.deepEqual(page.errors, []);
+});
+
+for (const width of [320, 375]) {
+  test(`комментарий: нижняя панель при прокрутке и экранной клавиатуре, ${width}px`, LIMIT, async (t) => {
+    const page = await openPage(t, { width, height: 667 });
+    if (!page) return;
+    await page.evaluate(() => {
+      const record = structuredClone(QUESTION_BANK[0]);
+      record.questionRu = 'Длинная формулировка вопроса для проверки окна. '.repeat(20);
+      startRoundWith([record], 'choice');
+    });
+    await page.keyboard.press('Control+Shift+KeyE');
+    await page.locator('#reviewCommentOpen').click();
+    assert.equal(await page.locator('#reviewConfirm').count(), 1);
+    const button = page.locator('#reviewConfirm');
+    const initial = await button.boundingBox();
+    assert.ok(initial.y >= 0 && initial.y + initial.height <= 667);
+    await page.locator('#reviewContext summary').click();
+    for (const bottom of [false, true]) {
+      await page.locator('#reviewDialogBody').evaluate((body, bottom) => {
+        body.scrollTop = bottom ? body.scrollHeight : 0;
+      }, bottom);
+      assert.equal((await button.boundingBox()).y, initial.y);
+    }
+    await page.locator('#reviewComment').fill('Комментарий с телефона');
+    // Safari уменьшает visualViewport при клавиатуре, сохраняя layout viewport.
+    await page.evaluate(() => {
+      Object.defineProperties(visualViewport, {
+        height: { configurable: true, value: 340 },
+        offsetTop: { configurable: true, value: 70 },
+      });
+      visualViewport.dispatchEvent(new Event('resize'));
+    });
+    await page.waitForFunction(() => {
+      const box = document.getElementById('reviewConfirm').getBoundingClientRect();
+      return box.top >= 70 && box.bottom <= 410;
+    }, null, { timeout: 3000 });
+    const dialog = await page.locator('#reviewDialog').boundingBox();
+    assert.ok(dialog.x >= 0 && dialog.x + dialog.width <= width);
+    assert.equal(await page.locator('#reviewDialog').evaluate(e => e.scrollWidth > e.clientWidth), false);
+    await button.click();
+    assert.equal((await reviewEntries(page))[0].comment, 'Комментарий с телефона');
+    assert.equal(await page.locator('#reviewDialog').isVisible(), false);
+    assert.deepEqual(page.errors, []);
+  });
+}
+
+test('комментарий: вводимый текст остаётся виден при открытии экранной клавиатуры', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 320, height: 667 });
+  if (!page) return;
+  await page.evaluate(() => startRoundWith([QUESTION_BANK[0]], 'choice'));
+  await page.keyboard.press('Control+Shift+KeyE');
+  await page.locator('#reviewCommentOpen').click();
+  await page.locator('#reviewComment').fill('Комментарий при открытой клавиатуре');
+  await page.evaluate(() => {
+    Object.defineProperties(visualViewport, {
+      height: { configurable: true, value: 340 },
+      offsetTop: { configurable: true, value: 70 },
+    });
+    visualViewport.dispatchEvent(new Event('resize'));
+  });
+  await page.waitForFunction(() => {
+    const field = document.getElementById('reviewComment').getBoundingClientRect();
+    const body = document.getElementById('reviewDialogBody').getBoundingClientRect();
+    const next = document.getElementById('reviewConfirm').getBoundingClientRect();
+    return Math.min(field.bottom, body.bottom) - Math.max(field.top, body.top) >= 100 && next.bottom <= 410;
+  }, null, { timeout: 3000 });
+  assert.equal(await page.evaluate(() => document.activeElement.id), 'reviewComment');
+  assert.deepEqual(page.errors, []);
+});
+
+test('комментарий: курсор в конце длинного текста виден при низкой экранной клавиатуре', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 320, height: 667 });
+  if (!page) return;
+  await page.evaluate(() => startRoundWith([QUESTION_BANK[0]], 'choice'));
+  await page.keyboard.press('Control+Shift+KeyE');
+  await page.locator('#reviewCommentOpen').click();
+  await page.locator('#reviewComment').fill(Array.from({ length: 20 }, (_, i) => `Строка ${i + 1}`).join('\n'));
+  await page.locator('#reviewComment').evaluate(field => { field.scrollTop = field.scrollHeight; });
+  for (const height of [280, 240]) for (const line of [20, 10, 1]) {
+    await page.evaluate(({ height, line }) => {
+      const field = document.getElementById('reviewComment');
+      const lines = field.value.split('\n');
+      const caret = lines.slice(0, line).join('\n').length;
+      field.setSelectionRange(caret, caret);
+      field.scrollTop = line === 20 ? field.scrollHeight : Math.max(0, (line - 2) * 24);
+      Object.defineProperties(visualViewport, {
+        height: { configurable: true, value: height },
+        offsetTop: { configurable: true, value: 70 },
+      });
+      visualViewport.dispatchEvent(new Event('resize'));
+    }, { height, line });
+    await page.waitForFunction(({ height, line }) => {
+      const field = document.getElementById('reviewComment');
+      const box = field.getBoundingClientRect();
+      const body = document.getElementById('reviewDialogBody').getBoundingClientRect();
+      const next = document.getElementById('reviewConfirm').getBoundingClientRect();
+      const style = getComputedStyle(field);
+      // Каждая короткая строка занимает одну строку; проверяем место ввода, не рамку поля.
+      const lineHeight = parseFloat(style.lineHeight);
+      const caretTop = box.top + field.clientTop + parseFloat(style.paddingTop) + (line - 1) * lineHeight - field.scrollTop;
+      return caretTop >= body.top && caretTop + lineHeight <= body.bottom && next.bottom <= 70 + height;
+    }, { height, line }, { timeout: 3000 });
+  }
+  assert.equal(await page.locator('#reviewComment').inputValue(), Array.from({ length: 20 }, (_, i) => `Строка ${i + 1}`).join('\n'));
+  assert.deepEqual(page.errors, []);
+});
+
+test('комментарий: подтверждение не возвращает удалённую в другой вкладке отметку', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await startRound(page, 5);
+  await page.keyboard.press('Control+Shift+KeyE');
+  await page.locator('#reviewCommentOpen').click();
+  assert.equal(await page.locator('#reviewConfirm').count(), 1);
+  await page.locator('#reviewComment').fill('Комментарий');
+  // Список уже изменился, но событие storage ещё не доставлено.
+  await page.evaluate(() => localStorage.setItem('lingvo-trainer:review:v1', JSON.stringify({ version: 1, entries: [] })));
+  await page.locator('#reviewConfirm').click();
+  assert.deepEqual(await reviewEntries(page), []);
+  assert.equal(await page.locator('#reviewEditor').isVisible(), false);
+  assert.equal(await page.locator('#reviewDialog').isVisible(), true);
+  assert.match(await page.locator('#reviewStatus').innerText(), /другой вкладке/);
+  assert.deepEqual(page.errors, []);
+});
+
 test('отладка: отметка, комментарий, перезагрузка и выгрузка точного контекста', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
@@ -169,7 +326,7 @@ test('отладка: предложенный ответ «Верно или н
   const statement = await page.evaluate(() => state.statement);
   await page.locator('#reviewCommentOpen').click();
   assert.deepEqual((await reviewEntries(page))[0].context.statement, statement);
-  await page.locator('#reviewClose').focus();
+  await page.locator('#reviewConfirm').focus();
   await page.keyboard.press('1');
   await page.keyboard.press('p');
   assert.equal(await page.evaluate(() => state.answered), false);
@@ -223,6 +380,11 @@ test('отладка: «Вспомни сам» не раскрывает отв
   assert.deepEqual(entry.context.shownOptions, []);
   assert.equal(await page.locator('#recallPrompt').isVisible(), true);
   assert.equal(await page.locator('#feedback').isVisible(), false);
+  await page.locator('#reviewCommentOpen').click();
+  assert.equal(await page.locator('#reviewContext').isVisible(), false);
+  await page.locator('#reviewConfirm').click();
+  assert.equal(await page.locator('#recallPrompt').isVisible(), true);
+  assert.equal(await page.locator('#feedback').isVisible(), false);
 });
 
 test('отладка: недоступное хранилище явно сообщает об отсутствии сохранения', LIMIT, async (t) => {
@@ -237,6 +399,13 @@ test('отладка: недоступное хранилище явно соо�
   assert.match(await page.locator('#reviewStorageWarning').innerText(), /выгрузите/i);
   await page.locator('#reviewOpenList').click();
   assert.equal(await page.locator('#reviewList button').count(), 1);
+  assert.equal(await page.locator('#reviewExport').isEnabled(), true);
+  await page.locator('#reviewList button').first().click();
+  await page.locator('#reviewComment').fill('Временный комментарий');
+  assert.match(await page.locator('#reviewSaveState').innerText(), /временный/);
+  await page.locator('#reviewConfirm').click();
+  await page.locator('#reviewOpenList').click();
+  assert.match(await page.locator('#reviewList').innerText(), /Временный комментарий/);
   assert.equal(await page.locator('#reviewExport').isEnabled(), true);
 });
 
@@ -277,6 +446,7 @@ test('отладка: копирование отчёта с запасным р
   await page.keyboard.press('Control+Shift+KeyE');
   await page.locator('#reviewCommentOpen').click();
   await page.locator('#reviewComment').fill('Проверить формулировку');
+  await page.locator('#reviewBack').click();
   await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', {
     configurable: true, value: { writeText: async (text) => { window.copiedReview = text; } },
   }));

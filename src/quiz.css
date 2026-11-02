@@ -890,13 +890,17 @@ a:hover { color: var(--accent-on-ground); }
 .review-actions .ink-btn { min-height: 44px; font-size: var(--t-size-caption); }
 .review-actions [data-marked='true'] { font-weight: var(--t-weight-bold); }
 .review-dialog {
+  position: fixed;
+  inset: auto 0;
+  top: calc(var(--review-viewport-top, 0px) + var(--review-viewport-height, 100dvh) / 2);
+  transform: translateY(-50%);
   width: min(680px, calc(100% - 24px));
   max-width: 100%;
-  max-height: calc(100dvh - 24px);
-  margin: auto;
-  padding: var(--s-5);
-  overflow-y: auto;
-  overscroll-behavior: contain;
+  height: min(590px, calc(var(--review-viewport-height, 100dvh) - 24px));
+  max-height: calc(var(--review-viewport-height, 100dvh) - 24px);
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
   background: var(--surface-raised);
   color: var(--text-on-ground);
   border: var(--border-hair) solid var(--line-on-ground);
@@ -904,11 +908,28 @@ a:hover { color: var(--accent-on-ground); }
   box-shadow: var(--shadow-float);
   font-family: var(--font-text);
 }
+.review-dialog[open] { display: flex; flex-direction: column; }
 .review-dialog::backdrop { background: var(--surface-ground); opacity: .8; }
 body:has(.review-dialog[open]) { overflow: hidden; }
-.review-dialog-head { display: flex; align-items: start; justify-content: space-between; gap: var(--s-3); }
-.review-dialog-head h2 { margin: 0; font-family: var(--font-display); font-size: 28px; }
-.review-dialog-head button { flex-shrink: 0; min-height: 44px; }
+.review-dialog-head {
+  flex: none; display: flex; align-items: center; justify-content: space-between; gap: var(--s-4);
+  padding: var(--s-5); border-bottom: var(--border-hair) solid var(--line-on-paper);
+}
+.review-dialog-head h2 { margin: 0; font-family: var(--font-display); font-size: var(--t-size-title-2); line-height: 1.12; }
+.review-dialog-head button { flex-shrink: 0; min-height: 44px; font-size: var(--t-size-caption); white-space: nowrap; }
+.review-dialog-body {
+  flex: 1; min-height: 0; padding: var(--s-5); overflow-y: auto; overscroll-behavior: contain;
+  scrollbar-color: var(--line-on-paper) var(--surface-raised);
+}
+.review-dialog-body > .review-warning:not([hidden]) { margin-bottom: var(--s-4); }
+.review-dialog-foot {
+  flex: none; display: flex; align-items: center; justify-content: space-between; gap: var(--s-4);
+  padding: var(--s-4) var(--s-5); border-top: var(--border-hair) solid var(--line-on-paper);
+  background: var(--surface-raised);
+}
+.review-dialog-foot .ink-btn { min-height: 48px; }
+#reviewConfirm { min-height: 52px; }
+#reviewClose { margin-left: auto; }
 .review-list { list-style: none; padding: 0; margin: var(--s-4) 0; }
 .review-list li + li { border-top: var(--border-hair) solid var(--line-on-ground); }
 .review-list button {
@@ -918,20 +939,28 @@ body:has(.review-dialog[open]) { overflow: hidden; }
 .review-list strong, .review-list small { display: block; }
 .review-list small { margin-top: var(--s-2); color: var(--text-on-ground-muted); white-space: pre-wrap; }
 .review-question, .review-list button, .review-meta, .review-options { overflow-wrap: anywhere; }
-.review-question { font-size: 20px; line-height: 1.45; }
+.review-question { margin: 0; font-size: var(--t-size-lead); font-weight: var(--t-weight-medium); line-height: 1.45; }
+.review-meta { margin: var(--s-2) 0 0; }
+.review-context { margin-top: var(--s-3); }
+.review-context summary { min-height: 44px; padding: var(--s-3) 0; cursor: pointer; font-size: var(--t-size-caption); text-decoration: underline; text-underline-offset: 4px; }
 .review-options { padding-left: var(--s-5); }
-.review-label { display: block; margin: var(--s-4) 0 var(--s-2); }
+.review-options li + li { margin-top: var(--s-2); }
+.review-label { display: block; margin: var(--s-5) 0 var(--s-2); font-weight: var(--t-weight-semibold); }
+.review-label .ink-caption { font-weight: var(--t-weight-regular); }
 .review-dialog textarea {
-  display: block; width: 100%; min-height: 120px; padding: var(--s-3);
+  display: block; width: 100%; min-height: 148px; padding: var(--s-3);
   border: var(--border-hair) solid var(--line-on-ground); border-radius: var(--radius-sm);
   background: var(--surface-ground); color: var(--text-on-ground);
-  font: inherit; font-size: 16px; line-height: 1.5; resize: vertical;
+  font: inherit; font-size: 16px; line-height: 1.5; resize: vertical; caret-color: var(--accent-on-ground);
 }
-.review-dialog :is(button, textarea):focus-visible {
+.review-dialog :is(button, textarea, summary):focus-visible {
   outline: var(--border-focus) solid var(--focus-on-ground); outline-offset: var(--border-focus);
 }
 .review-export { display: flex; flex-wrap: wrap; gap: var(--s-2); margin-top: var(--s-5); }
 .review-export .ink-btn { min-height: 44px; }
+.review-dialog[data-compact='true'] .review-dialog-head { padding: var(--s-2) var(--s-4); }
+.review-dialog[data-compact='true'] .review-dialog-head h2 { font-size: 24px; }
+.review-dialog[data-compact='true'] .review-dialog-foot { padding: var(--s-2) var(--s-4); }
 
 /* ---------- планшет ---------- */
 
@@ -944,7 +973,17 @@ body:has(.review-dialog[open]) { overflow: hidden; }
 @media (max-width: 600px) {
   /* Выключение есть в настройках; полоса замечаний остаётся в одну строку. */
   #reviewDisable { display: none; }
-  .review-dialog { padding: var(--s-4); }
+  .review-dialog { height: calc(var(--review-viewport-height, 100dvh) - 24px); }
+  .review-dialog-head { align-items: flex-start; flex-direction: column; gap: var(--s-2); padding: var(--s-5) var(--s-4) var(--s-3); }
+  .review-dialog-body { padding: var(--s-4); }
+  .review-dialog-foot { flex-direction: column; align-items: stretch; gap: var(--s-2); padding: var(--s-2) var(--s-4) var(--s-4); }
+  .review-dialog-foot .ink-btn, .review-export .ink-btn { width: 100%; }
+  #reviewRemove { min-height: 36px; font-size: var(--t-size-caption); }
+  .review-dialog[data-compact='true'] .review-dialog-head { flex-direction: row; align-items: center; }
+  .review-dialog[data-compact='true'] .review-dialog-head h2 { flex: 1; }
+  .review-dialog[data-compact='true'] .review-dialog-foot { flex-direction: row; gap: var(--s-2); }
+  .review-dialog[data-compact='true'] #reviewRemove { width: auto; flex: none; }
+  .review-dialog[data-compact='true'] #reviewConfirm { flex: 1; min-width: 0; width: auto; padding-inline: var(--s-3); }
   .wide-only { display: none; }
   .phone-only { display: inline; }
   .site-header { display: grid; grid-template-columns: minmax(0, 1fr) 44px; gap: var(--s-1) var(--s-2); padding: var(--s-3) 0; }

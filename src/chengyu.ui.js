@@ -536,7 +536,7 @@ function cyRenderResults() {
   $('cyNewRound').classList.toggle('ink-btn--secondary', wrong !== 0);
   const homeIsMain = wrong === 0 && !renewable;
   $('cyBackToSetup').classList.toggle('ink-btn--primary', homeIsMain);
-  $('cyBackToSetup').classList.toggle('ink-btn--text', !homeIsMain);
+  $('cyBackToSetup').classList.toggle('ink-btn--secondary', !homeIsMain);
   cyRenderMistakes();
 }
 

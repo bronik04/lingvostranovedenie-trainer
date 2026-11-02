@@ -1259,7 +1259,7 @@ function renderResults() {
   $('newRound').classList.toggle('ink-btn--secondary', wrongCount !== 0);
   const homeIsMain = wrongCount === 0 && !renewable;
   $('backToSetup').classList.toggle('ink-btn--primary', homeIsMain);
-  $('backToSetup').classList.toggle('ink-btn--text', !homeIsMain);
+  $('backToSetup').classList.toggle('ink-btn--secondary', !homeIsMain);
   renderMistakes();
 }
 

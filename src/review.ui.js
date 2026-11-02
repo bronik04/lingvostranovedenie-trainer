@@ -70,8 +70,8 @@
       $(id).hidden = !warning;
     }
     $('reviewSaveState').textContent = storageBlocked
-      ? 'Комментарий временный — выгрузите замечания до закрытия страницы.'
-      : 'Отметка и комментарий сохраняются автоматически.';
+      ? 'Комментарий временный — выгрузите его через «Все замечания» до закрытия страницы.'
+      : 'Сохранено в этом браузере';
     for (const id of ['reviewExport', 'reviewCopy', 'reviewShare']) $(id).disabled = !entries.length;
   }
 
@@ -133,33 +133,99 @@
     }));
   }
 
+  function revealEditorField(field) {
+    field.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'instant' });
+    const body = $('reviewDialogBody');
+    if (field.offsetHeight <= body.clientHeight) return;
+// В очень низком окне поле целиком не помещается. Измеряем строку курсора с теми
+// же переносами, не меняя текст, выделение и историю ввода в textarea.
+    const style = getComputedStyle(field);
+    const mirror = document.createElement('div');
+    Object.assign(mirror.style, {
+      position: 'fixed', top: '0', left: '0', visibility: 'hidden',
+      boxSizing: 'border-box', width: `${field.clientWidth}px`, padding: style.padding,
+      fontFamily: style.fontFamily, fontSize: style.fontSize, fontWeight: style.fontWeight,
+      fontStyle: style.fontStyle, fontStretch: style.fontStretch, lineHeight: style.lineHeight,
+      letterSpacing: style.letterSpacing, wordSpacing: style.wordSpacing,
+      whiteSpace: 'pre-wrap', overflowWrap: style.overflowWrap, wordBreak: style.wordBreak,
+      tabSize: style.tabSize, direction: style.direction,
+    });
+    const caret = field.selectionDirection === 'backward' ? field.selectionStart : field.selectionEnd;
+    const marker = document.createElement('span');
+    marker.textContent = '\u200b';
+    mirror.append(document.createTextNode(field.value.slice(0, caret)), marker);
+    document.body.append(mirror);
+    const lineTop = marker.offsetTop;
+    const lineHeight = parseFloat(style.lineHeight);
+    mirror.remove();
+    if (lineTop < field.scrollTop) field.scrollTop = lineTop;
+    else if (lineTop + lineHeight > field.scrollTop + field.clientHeight) {
+      field.scrollTop = lineTop + lineHeight - field.clientHeight;
+    }
+    const top = field.getBoundingClientRect().top + field.clientTop + lineTop - field.scrollTop;
+    const bounds = body.getBoundingClientRect();
+    const gap = Math.max(0, Math.min(8, (body.clientHeight - lineHeight) / 2));
+    if (top < bounds.top + gap) body.scrollTop += top - bounds.top - gap;
+    else if (top + lineHeight > bounds.bottom - gap) body.scrollTop += top + lineHeight - bounds.bottom + gap;
+  }
+
+  function updateDialogViewport() {
+    if (!dialog.open) return;
+    const viewport = window.visualViewport;
+    const height = viewport?.height || window.innerHeight;
+    dialog.style.setProperty('--review-viewport-height', `${height}px`);
+    dialog.style.setProperty('--review-viewport-top', `${viewport?.offsetTop || 0}px`);
+    dialog.dataset.compact = String(height < 480);
+// После появления клавиатуры поле может оказаться под нижней панелью.
+    const field = document.activeElement;
+    if (field === $('reviewComment') || field === $('reviewCopyText')) {
+      requestAnimationFrame(() => {
+        if (dialog.open && document.activeElement === field) {
+          revealEditorField(field);
+        }
+      });
+    }
+  }
+
+  function setDialogPanel(editor) {
+    $('reviewTitle').textContent = editor ? 'Комментарий к вопросу' : 'Замечания к вопросам';
+    $('reviewEditor').hidden = !editor;
+    $('reviewListPanel').hidden = editor;
+    for (const id of ['reviewBack', 'reviewRemove', 'reviewConfirm']) $(id).hidden = !editor;
+    $('reviewClose').hidden = editor;
+    dialog.setAttribute('aria-describedby', editor ? 'reviewSaveState' : 'reviewHelp');
+    $('reviewDialogBody').scrollTop = 0;
+  }
+
   function openDialog() {
     $('reviewStatus').textContent = '';
     $('reviewCopyText').hidden = true;
     if (!dialog.open) dialog.showModal();
+    updateDialogViewport();
     try { $('reviewShare').hidden = !navigator.canShare?.({ files: [reportFile()] }); }
     catch { $('reviewShare').hidden = true; }
   }
 
   function openList() {
     editing = null;
-    $('reviewEditor').hidden = true;
-    $('reviewListPanel').hidden = false;
+    setDialogPanel(false);
     renderList();
     openDialog();
-    $('reviewClose').focus();
+    $('reviewClose').focus({ preventScroll: true });
   }
 
   function openEditor(key) {
     const entry = entries.find((item) => keyOf(item) === key);
     if (!entry) return openList();
     editing = key;
-    $('reviewListPanel').hidden = true;
-    $('reviewEditor').hidden = false;
+    setDialogPanel(true);
     $('reviewQuestion').textContent = titleOf(entry);
     $('reviewMeta').textContent = `${formats[entry.context.format] || entry.section} · ${entry.questionId}`;
     const shown = entry.context.statement
       ? [{ text: `Предложенный ответ: ${entry.context.statement.zh}` }] : entry.context.shownOptions;
+    $('reviewContext').open = false;
+    $('reviewContext').hidden = shown.length === 0;
+    $('reviewContextTitle').textContent = entry.context.statement ? 'Предложенный ответ' : 'Варианты в этом вопросе';
     $('reviewShownOptions').replaceChildren(...shown.map((option) => {
       const item = document.createElement('li');
       item.textContent = option.text;
@@ -199,13 +265,20 @@
     $('reviewStatus').textContent = 'Отметка снята в другой вкладке. Чтобы добавить новый комментарий, отметьте вопрос снова.';
   }
 
-  $('reviewComment').addEventListener('input', () => {
+  function saveComment() {
+    let saved = false;
     updateEntries(() => {
       const entry = entries.find((item) => keyOf(item) === editing);
       if (!entry) return removedElsewhere();
       entry.comment = $('reviewComment').value;
       entry.updatedAt = new Date().toISOString();
+      saved = true;
     });
+    return saved;
+  }
+  $('reviewComment').addEventListener('input', saveComment);
+  $('reviewConfirm').addEventListener('click', () => {
+    if (saveComment()) dialog.close();
   });
   $('reviewRemove').addEventListener('click', () => {
     updateEntries(() => { entries = entries.filter((entry) => keyOf(entry) !== editing); });
@@ -251,6 +324,9 @@
   $('reviewOpenList').addEventListener('click', openList);
   $('reviewBack').addEventListener('click', openList);
   $('reviewClose').addEventListener('click', () => dialog.close());
+  window.addEventListener('resize', updateDialogViewport);
+  window.visualViewport?.addEventListener('resize', updateDialogViewport);
+  window.visualViewport?.addEventListener('scroll', updateDialogViewport);
   dialog.addEventListener('close', () => { editing = null; });
   document.addEventListener('reviewchange', renderControls);
   document.addEventListener('keydown', (event) => {
