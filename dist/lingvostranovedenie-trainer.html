@@ -2249,8 +2249,7 @@ function showFeedback(record, kind, verdictHtml) {
   requestAnimationFrame(() => {
     $('feedback').focus({ preventScroll: true });
     
-    
-    if (!$('recallRate').classList.contains('hidden')) revealOnPhone($('recallRate'));
+    revealOnPhone(!$('recallRate').classList.contains('hidden') ? $('recallRate') : $('feedback'));
   });
 }
 
@@ -2270,7 +2269,14 @@ function revealOnPhone(element) {
   
   const viewport = window.visualViewport;
   const visibleBottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
-  const top = window.scrollY + element.getBoundingClientRect().bottom + BOTTOM_GAP - visibleBottom;
+  const availableBottom = $('nextButton').classList.contains('hidden')
+    ? visibleBottom : Math.min(visibleBottom, $('nextButton').getBoundingClientRect().top);
+  const rect = element.getBoundingClientRect();
+  const visibleTop = viewport?.offsetTop || 0;
+  const top = window.scrollY + Math.min(
+    rect.bottom + BOTTOM_GAP - availableBottom,
+    rect.top - visibleTop - BOTTOM_GAP,
+  );
   if (top > window.scrollY + 1) window.scrollTo({ top, behavior: scrollBehavior() });
 }
 

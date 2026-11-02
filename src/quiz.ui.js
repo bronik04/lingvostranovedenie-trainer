@@ -57,7 +57,7 @@ const dossierTitle = (id) => DOSSIER_TITLES[id] || DOSSIERS[id] || id;
 const COUNT_WORDS = ['', 'Один', 'Два', 'Три', 'Четыре', 'Пять', 'Шесть', 'Семь', 'Восемь', 'Девять', 'Десять'];
 // до стольких вопросов ход раунда рисуется кружками, длиннее — полосой
 const MAX_STEP_DOTS = 14;
-// На телефоне оставляем отступ под элементом, до которого докручиваем (самооценка).
+// На телефоне оставляем отступ вокруг разбора или самооценки при докрутке.
 const BOTTOM_GAP = 24;
 const THEME_COLORS = { light: '#faf4e8', dark: '#181512' };
 const FORMAT_COPY = {
@@ -1047,9 +1047,8 @@ function showFeedback(record, kind, verdictHtml) {
   ].join('');
   requestAnimationFrame(() => {
     $('feedback').focus({ preventScroll: true });
-    // Следующий вопрос закреплён внизу. Докрутка нужна только до самооценки,
-    // пока во «Вспомни сам» ещё нельзя переходить дальше.
-    if (!$('recallRate').classList.contains('hidden')) revealOnPhone($('recallRate'));
+    // Парящий переход не заменяет докрутку к разбору ответа.
+    revealOnPhone(!$('recallRate').classList.contains('hidden') ? $('recallRate') : $('feedback'));
   });
 }
 
@@ -1064,7 +1063,8 @@ function sourcesBlock(items, count) {
 const onPhone = () => Boolean(window.matchMedia?.('(max-width: 600px)').matches);
 const scrollBehavior = () => (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth');
 
-/** Телефон: прокрутить вниз ровно настолько, чтобы низ элемента встал над краем экрана.
+/** Телефон: показать элемент над нижним краем экрана или парящей кнопкой.
+ * Если элемент длиннее экрана, оставить его начало видимым.
  * Высота — видимой части (visualViewport): в Safari нижняя панель закрывает низ окна, и
  * scrollIntoView ставил кнопку под неё. Вверх не прокручивает. */
 function revealOnPhone(element) {
@@ -1072,7 +1072,14 @@ function revealOnPhone(element) {
   // низ видимой части в координатах окна; при увеличении щипком она сдвинута на offsetTop
   const viewport = window.visualViewport;
   const visibleBottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
-  const top = window.scrollY + element.getBoundingClientRect().bottom + BOTTOM_GAP - visibleBottom;
+  const availableBottom = $('nextButton').classList.contains('hidden')
+    ? visibleBottom : Math.min(visibleBottom, $('nextButton').getBoundingClientRect().top);
+  const rect = element.getBoundingClientRect();
+  const visibleTop = viewport?.offsetTop || 0;
+  const top = window.scrollY + Math.min(
+    rect.bottom + BOTTOM_GAP - availableBottom,
+    rect.top - visibleTop - BOTTOM_GAP,
+  );
   if (top > window.scrollY + 1) window.scrollTo({ top, behavior: scrollBehavior() });
 }
 

@@ -367,6 +367,37 @@ test('парящий переход: прокрутка, новый вопрос
   assert.deepEqual(page.errors, []);
 });
 
+for (const { format, width, long, reducedMotion } of [
+  { format: 'choice', width: 375, long: false, reducedMotion: 'no-preference' },
+  { format: 'choice', width: 320, long: true, reducedMotion: 'reduce' },
+  { format: 'truefalse', width: 375, long: false, reducedMotion: 'reduce' },
+]) {
+  test(`телефон: автопрокрутка к разбору (${format}, ${width}, ${long ? 'длинный' : 'короткий'})`, LIMIT, async (t) => {
+    const page = await openPage(t, { width, height: 667 });
+    if (!page) return;
+    await page.emulateMedia({ reducedMotion });
+    await page.evaluate(({ format, long }) => {
+      const records = structuredClone(QUESTION_BANK.slice(0, 2));
+      records[0].questionRu = 'Длинный вопрос на телефоне. '.repeat(25);
+      records[0].explanation.ru = 'Пояснение правильного ответа. '.repeat(long ? 100 : 6);
+      records[0].evidence = [];
+      startRoundWith(records, format);
+    }, { format, long });
+    const answerButton = page.locator(format === 'choice' ? '#options button' : '#tfPanel button').first();
+    await answerButton.scrollIntoViewIfNeeded();
+    const before = await page.evaluate(() => scrollY);
+    await answerButton.click();
+    await page.waitForFunction(({ before, long }) => {
+      const feedback = document.getElementById('feedback').getBoundingClientRect();
+      const verdict = document.querySelector('#feedback .verdict').getBoundingClientRect();
+      const next = document.getElementById('nextButton').getBoundingClientRect();
+      return scrollY > before + 5 && verdict.top >= 0 && verdict.bottom < next.top
+        && (long ? feedback.top < 40 : feedback.bottom <= next.top - 20);
+    }, { before, long }, { timeout: 5000 });
+    assert.deepEqual(page.errors, []);
+  });
+}
+
 test('главная открывается без ошибок и считает банк', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
