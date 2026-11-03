@@ -479,6 +479,12 @@ function show(view) {
   $('footerNote').textContent = chengyu ? cyFooterNote() : bankSummary(QUESTION_BANK);
   setViewMenu(false);
   window.scrollTo?.(0, 0);
+  document.querySelector('.ink-page').scrollTop = 0;
+  if (onPhone() && ['quiz', 'cy-quiz'].includes(view)) {
+    requestAnimationFrame(() => {
+      if (state.view === view && document.activeElement === document.body) focusRoundQuestion();
+    });
+  }
   updateStartBar();
 }
 
@@ -869,6 +875,7 @@ function renderQuestion() {
   $('questionZh').hidden = !record.questionZh;
   $('questionZh').classList.remove('revealed');
   $('questionZhReveal').hidden = !record.questionZh;
+  focusRoundQuestion();
 
   $('feedback').className = 'feedback hidden';
   $('nextButton').classList.add('hidden');
@@ -1047,7 +1054,7 @@ function showFeedback(record, kind, verdictHtml) {
   ].join('');
   requestAnimationFrame(() => {
     $('feedback').focus({ preventScroll: true });
-    // Парящий переход не заменяет докрутку к разбору ответа.
+    // Нижняя панель не заменяет докрутку к разбору ответа.
     revealOnPhone(!$('recallRate').classList.contains('hidden') ? $('recallRate') : $('feedback'));
   });
 }
@@ -1063,7 +1070,20 @@ function sourcesBlock(items, count) {
 const onPhone = () => Boolean(window.matchMedia?.('(max-width: 600px)').matches);
 const scrollBehavior = () => (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth');
 
-/** Телефон: показать элемент над нижним краем экрана или парящей кнопкой.
+/** На телефоне содержимое раунда прокручивается в области над нижней панелью. */
+function roundScroller() {
+  return onPhone() && ['quiz', 'cy-quiz'].includes(state.view)
+    ? document.querySelector('.ink-page') : document.scrollingElement;
+}
+
+/** PageDown и стрелки должны прокручивать раунд, а не неподвижный body. */
+function focusRoundQuestion() {
+  if (!onPhone()) return;
+  const id = state.view === 'quiz' ? 'questionText' : state.view === 'cy-quiz' ? 'cyPrompt' : null;
+  if (id) $(id).focus({ preventScroll: true });
+}
+
+/** Телефон: показать элемент в области над нижней панелью.
  * Если элемент длиннее экрана, оставить его начало видимым.
  * Высота — видимой части (visualViewport): в Safari нижняя панель закрывает низ окна, и
  * scrollIntoView ставил кнопку под неё. Вверх не прокручивает. */
@@ -1072,15 +1092,15 @@ function revealOnPhone(element) {
   // низ видимой части в координатах окна; при увеличении щипком она сдвинута на offsetTop
   const viewport = window.visualViewport;
   const visibleBottom = viewport ? viewport.offsetTop + viewport.height : window.innerHeight;
-  const availableBottom = $('nextButton').classList.contains('hidden')
-    ? visibleBottom : Math.min(visibleBottom, $('nextButton').getBoundingClientRect().top);
+  const scroller = roundScroller();
+  const availableBottom = Math.min(visibleBottom, scroller.getBoundingClientRect().bottom);
   const rect = element.getBoundingClientRect();
   const visibleTop = viewport?.offsetTop || 0;
-  const top = window.scrollY + Math.min(
+  const top = scroller.scrollTop + Math.min(
     rect.bottom + BOTTOM_GAP - availableBottom,
     rect.top - visibleTop - BOTTOM_GAP,
   );
-  if (top > window.scrollY + 1) window.scrollTo({ top, behavior: scrollBehavior() });
+  if (top > scroller.scrollTop + 1) scroller.scrollTo({ top, behavior: scrollBehavior() });
 }
 
 /** Телефон: начало элемента — к верху экрана (новый вопрос после «Следующего вопроса»). */
@@ -1721,6 +1741,14 @@ window.addEventListener('scroll', scheduleStartBar, { passive: true });
 window.addEventListener('resize', scheduleStartBar);
 window.visualViewport?.addEventListener('resize', scheduleStartBar);
 window.addEventListener('popstate', route);
+
+// Реальная высота панели учитывает перенос кнопки, размер шрифта и safe area.
+// Панель не зависит от высоты области прокрутки, поэтому цикла измерений нет.
+const roundPanelObserver = new ResizeObserver(entries => {
+  const height = Math.max(...entries.map(entry => entry.target.getBoundingClientRect().height));
+  if (height > 0) document.documentElement.style.setProperty('--round-panel-height', `${height}px`);
+});
+document.querySelectorAll('.round-action-panel').forEach(panel => roundPanelObserver.observe(panel));
 
 initTheme();
 initPinyin();

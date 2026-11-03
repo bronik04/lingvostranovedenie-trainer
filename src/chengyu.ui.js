@@ -354,6 +354,7 @@ function cyRenderQuestion() {
   const occurrence = cyLatestOccurrence(record);
   $('cySourceLabel').textContent = occurrence ? cyOccurrenceLabel(occurrence) : 'Составленное задание';
   $('cyPrompt').textContent = cyPrompt(record);
+  focusRoundQuestion();
   const reverse = record.kind === 'reverse';
   $('cyChengyu').hidden = reverse;
   $('cyPinyin').hidden = reverse;
@@ -466,10 +467,8 @@ function cyAnswer(record, optionId) {
   $('cyNextButton').textContent = cy.position + 1 < cy.round.length ? 'Следующее задание' : 'Итоги раунда';
   $('cyNextButton').classList.remove('hidden');
   requestAnimationFrame(() => {
-    const compact = window.matchMedia?.('(max-width: 600px)').matches;
-    const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
     $('cyFeedback').focus({ preventScroll: true });
-    if (compact) $('cyFeedback').scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'nearest' });
+    revealOnPhone($('cyFeedback'));
   });
 }
 

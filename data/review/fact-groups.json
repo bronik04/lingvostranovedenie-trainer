@@ -21,15 +21,6 @@
     "2022-23-shk-qa664f6",
     "dynasties-q112"
   ],
-  "hunan-xiang": [
-    "2021-22-mun-qa05d78",
-    "provinces-q43",
-    "cuisine-q71",
-    "cuisine-q76",
-    "provinces-q31",
-    "state-q15",
-    "2025-26-mun-spb-5"
-  ],
   "jingdezhen-porcelain-capital": [
     "2017-18-mun-10",
     "crafts-q01"
@@ -92,22 +83,9 @@
     "2022-23-reg-4",
     "nature-q163"
   ],
-  "yangtze-longest-river": [
-    "2015-16-reg-2",
-    "2025-26-reg-10",
-    "2020-21-zak-qec0067",
-    "nature-q140",
-    "nature-q141"
-  ],
   "qingzang-roof-of-world": [
     "2016-17-zak-4",
     "2018-19-reg-2"
-  ],
-  "buddhist-four-mountains": [
-    "2018-19-reg-4",
-    "2023-24-shk-35",
-    "nature-q148",
-    "nature-q149"
   ],
   "xi-jinping-chairman-2013": [
     "2015-16-zak-2",
@@ -158,11 +136,6 @@
     "provinces-q98",
     "2016-17-mun-spb-3",
     "2025-26-mun-chel-6"
-  ],
-  "hangzhou-nansong-zhejiang": [
-    "addition-b1-06",
-    "provinces-q101",
-    "2018-19-mun-spb-9"
   ],
   "cuisine-dishes-zak-1": [
     "2018-19-zak-1",
@@ -225,19 +198,6 @@
   "guilin-word": [
     "money-q07",
     "nature-q158"
-  ],
-  "ming-beijing-word": [
-    "landmarks-q90",
-    "landmarks-q92",
-    "landmarks-q93",
-    "landmarks-q95",
-    "landmarks-q99",
-    "2015-16-mun-6",
-    "literature-q37",
-    "2016-17-mun-8",
-    "2022-23-zak-2",
-    "ethnos-q83",
-    "dynasties-q106"
   ],
   "peking-opera-word": [
     "2021-22-zak-q36aaab",
@@ -379,11 +339,6 @@
     "holidays-q46",
     "addition-b1-10"
   ],
-  "mongols-word": [
-    "holidays-q40",
-    "dynasties-q105",
-    "nature-q115"
-  ],
   "may-fourth-date": [
     "2016-17-reg-6",
     "holidays-q39"
@@ -502,17 +457,6 @@
     "2025-26-mun-chel-7",
     "myths-q25"
   ],
-  "four-beauties": [
-    "sets-q08",
-    "sets-q09",
-    "sets-q10",
-    "sets-q11",
-    "2024-25-mun-mosobl-5",
-    "2022-23-shk-mosobl-11",
-    "landmarks-q96",
-    "dynasties-q103",
-    "2023-24-shk-38"
-  ],
   "blagoveshchensk-border": [
     "2023-24-mun-kem-9",
     "2020-21-zak-q1f0e35"
@@ -548,5 +492,70 @@
   "daoism-laozi-zhuangzi": [
     "2017-18-mun-4",
     "people-q07"
+  ],
+  "contextual-geography-1": [
+    "2015-16-mun-6",
+    "2016-17-mun-8",
+    "2017-18-reg-8",
+    "2018-19-mun-spb-9",
+    "2019-20-mun-qcfa774",
+    "2021-22-mun-qa05d78",
+    "2022-23-mun-7",
+    "2022-23-shk-mosobl-11",
+    "2022-23-zak-2",
+    "2023-24-shk-38",
+    "2024-25-mun-mosobl-5",
+    "2024-25-zak-qfce692",
+    "2025-26-mun-spb-5",
+    "2025-26-zak-q7c8228",
+    "addition-b1-06",
+    "cuisine-q71",
+    "cuisine-q76",
+    "dynasties-q103",
+    "dynasties-q104",
+    "dynasties-q105",
+    "dynasties-q106",
+    "ethnos-q83",
+    "holidays-q40",
+    "landmarks-q90",
+    "landmarks-q92",
+    "landmarks-q93",
+    "landmarks-q95",
+    "landmarks-q96",
+    "landmarks-q99",
+    "literature-q37",
+    "nature-q115",
+    "provinces-q101",
+    "provinces-q31",
+    "provinces-q37",
+    "provinces-q43",
+    "sets-q08",
+    "sets-q09",
+    "sets-q10",
+    "sets-q11",
+    "state-q15"
+  ],
+  "contextual-geography-2": [
+    "2015-16-reg-2",
+    "2020-21-zak-qec0067",
+    "2023-24-zak-1",
+    "2025-26-reg-10",
+    "nature-q140",
+    "nature-q141"
+  ],
+  "contextual-geography-3": [
+    "2015-16-shk-65",
+    "2017-18-zak-10"
+  ],
+  "contextual-geography-4": [
+    "2018-19-reg-4",
+    "2023-24-shk-35",
+    "nature-q148",
+    "nature-q149",
+    "nature-q50"
+  ],
+  "contextual-geography-5": [
+    "2018-19-shk-7",
+    "2019-20-reg-6"
   ]
 }

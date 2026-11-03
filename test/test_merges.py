@@ -366,7 +366,12 @@ class MergesInBankTest(unittest.TestCase):
             # Петром I» подсказывает вопрос о первом императоре; пословица «说曹操» встроенной 2025-26-mun-mosobl-4
             # называет Цао Цао — ответ 2015-16-zak-7); дубль одного
             # факта в группе ловит следующий тест
-            if 'factGroup' in record:
+            if keep_id == '2017-18-zak-10':
+                # 2026-11-03: принятая подпись Сиху у вопроса о крупнейшем озере
+                # называет Ханчжоу — ответ отдельного вопроса о местоположении Сиху.
+                self.assertIn('factGroup', record)
+                self.assertEqual(record['factGroup'], self.bank['2015-16-shk-65'].get('factGroup'))
+            elif 'factGroup' in record:
                 self.assertIn(record['factGroup'], {'province-names-river-lake', 'beijing-tianjin-municipality',
                                                     'potala-tibet', 'manchu-word', 'sunzi-art-of-war',
                                                     'lu-xun-republic-text', 'may-fourth-date',

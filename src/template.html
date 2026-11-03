@@ -237,7 +237,7 @@
         <span class="tag warn" id="unverifiedPill" hidden>не проверено</span>
         <span class="tag warn" id="retryPill" hidden>повтор ошибки</span>
       </p>
-      <h2 class="question" id="questionText"></h2>
+      <h2 class="question" id="questionText" tabindex="-1"></h2>
       <div class="review-actions review-only">
         <button class="ink-btn ink-btn--text" id="reviewFlag" type="button">Отметить вопрос</button>
         <button class="ink-btn ink-btn--text" id="reviewCommentOpen" type="button">Комментарий</button>
@@ -275,7 +275,9 @@
     </div>
     <div class="next-row">
       <button class="ink-btn ink-btn--text" id="leaveRound" type="button">Закончить раунд</button>
-      <button class="ink-btn ink-btn--primary hidden" id="nextButton" type="button">Следующий вопрос</button>
+      <div class="round-action-panel">
+        <button class="ink-btn ink-btn--primary hidden" id="nextButton" type="button">Следующий вопрос</button>
+      </div>
     </div>
     <p class="ink-caption hint" id="quizHint">1–4 или A–D — ответить · Enter — дальше · P — пиньинь · Esc — выйти из раунда</p>
   </section>
@@ -480,7 +482,7 @@
         <span class="topic-line"><span class="topic-mark" id="cyGroupMark" lang="zh-Hans" aria-hidden="true"></span><span id="cyGroupLabel"></span></span>
         <span class="tag quiet" id="cySourceLabel"></span>
       </p>
-      <h2 class="question cy-prompt" id="cyPrompt"></h2>
+      <h2 class="question cy-prompt" id="cyPrompt" tabindex="-1"></h2>
       <div class="cy-tz" id="cyChengyu" lang="zh-Hans" role="img"></div>
       <p class="cy-pinyin" id="cyPinyin" lang="zh-Hans"></p>
       <p class="cy-proverb" id="cyProverb" hidden></p>
@@ -493,7 +495,9 @@
     <div class="feedback hidden" id="cyFeedback" role="status" tabindex="-1"></div>
     <div class="next-row">
       <button class="ink-btn ink-btn--text" id="cyLeaveRound" type="button">Закончить раунд</button>
-      <button class="ink-btn ink-btn--primary hidden" id="cyNextButton" type="button">Следующее задание</button>
+      <div class="round-action-panel">
+        <button class="ink-btn ink-btn--primary hidden" id="cyNextButton" type="button">Следующее задание</button>
+      </div>
     </div>
     <p class="ink-caption hint">1–4 или A–D — ответить · Enter — дальше · Esc — выйти из раунда</p>
   </section>

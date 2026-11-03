@@ -499,7 +499,62 @@ test('единые настройки: меню на компьютере, от�
   assert.deepEqual(page.errors, []);
 });
 
-test('парящий переход: прокрутка, новый вопрос, итог и смена ширины', LIMIT, async (t) => {
+test('телефон: нижняя панель отделена от прокручиваемого текста', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 320, height: 740 });
+  if (!page) return;
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.evaluate(() => {
+    const record = structuredClone(QUESTION_BANK.find(r => r.id === '2018-19-reg-10'));
+    record.explanation.ru = 'Длинный разбор должен читаться целиком над нижней панелью. '.repeat(30);
+    startRoundWith([record], 'choice');
+    chooseOption(state.round[0], record.answer.optionId);
+  });
+  const next = page.locator('#nextButton');
+  await next.waitFor();
+  const bounds = await page.evaluate(() => ({
+    content: document.querySelector('.ink-page').getBoundingClientRect().toJSON(),
+    button: document.getElementById('nextButton').getBoundingClientRect().toJSON(),
+    height: innerHeight,
+  }));
+  assert.ok(bounds.content.bottom <= bounds.button.top - 8, 'для кнопки не выделено место вне области текста');
+  assert.ok(bounds.button.bottom <= bounds.height, 'кнопка за нижним краем');
+  // В конце разбора ссылка видна целиком и доступна над панелью.
+  const source = page.locator('#feedback a').last();
+  await source.scrollIntoViewIfNeeded();
+  const link = await source.boundingBox();
+  assert.ok(link.y >= 0 && link.y + link.height < (await next.boundingBox()).y);
+  await page.locator('#options .option.correct').scrollIntoViewIfNeeded();
+  const caption = await page.locator('#options .option.correct .option-gloss').boundingBox();
+  assert.ok(caption.y >= 0 && caption.y + caption.height < (await next.boundingBox()).y);
+  await next.click();
+  assert.equal(await page.locator('#resultsView').isVisible(), true);
+  assert.deepEqual(page.errors, []);
+});
+
+for (const chengyu of [false, true]) {
+  test(`телефон: PageDown прокручивает раунд после старта и перехода (${chengyu ? 'чэнъюй' : 'основной'})`, LIMIT, async (t) => {
+    const page = await openPage(t, { width: 320, height: 740 });
+    if (!page) return;
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await page.evaluate(chengyu => {
+      if (chengyu) cyStartRoundWith(CHENGYU_BANK.slice(0, 2));
+      else startRoundWith(QUESTION_BANK.slice(0, 2), 'choice');
+    }, chengyu);
+    for (let step = 0; step < 2; step++) {
+      const before = await page.locator('.ink-page').evaluate(el => el.scrollTop);
+      await page.keyboard.press('PageDown');
+      await page.waitForFunction(before => document.querySelector('.ink-page').scrollTop > before + 5,
+        before, { timeout: 1500 });
+      if (step === 0) {
+        await page.locator(chengyu ? '#cyOptions button' : '#options button').first().click();
+        await page.locator(chengyu ? '#cyNextButton' : '#nextButton').click();
+      }
+    }
+    assert.deepEqual(page.errors, []);
+  });
+}
+
+test('нижняя панель: прокрутка, новый вопрос, итог и смена ширины', LIMIT, async (t) => {
   const page = await openPage(t, { width: 375, height: 667 });
   if (!page) return;
   await page.evaluate(() => {
@@ -516,11 +571,14 @@ test('парящий переход: прокрутка, новый вопрос
     assert.ok(box.y >= 0 && box.y + box.height <= 667, `переход за краем экрана: ${JSON.stringify(box)}`);
     return box.y;
   };
-  await page.evaluate(() => scrollTo(0, 0));
+  await page.evaluate(() => document.querySelector('.ink-page').scrollTo(0, 0));
   const top = await check();
-  await page.evaluate(() => scrollTo(0, document.body.scrollHeight));
+  await page.evaluate(() => {
+    const content = document.querySelector('.ink-page');
+    content.scrollTo(0, content.scrollHeight);
+  });
   assert.equal(await check(), top);
-  await page.evaluate(() => scrollTo(0, 0));
+  await page.evaluate(() => document.querySelector('.ink-page').scrollTo(0, 0));
   assert.equal(await check(), top);
   await page.setViewportSize({ width: 1280, height: 900 });
   assert.notEqual(await next.evaluate(e => getComputedStyle(e).position), 'fixed');
@@ -555,13 +613,13 @@ for (const { format, width, long, reducedMotion } of [
     }, { format, long });
     const answerButton = page.locator(format === 'choice' ? '#options button' : '#tfPanel button').first();
     await answerButton.scrollIntoViewIfNeeded();
-    const before = await page.evaluate(() => scrollY);
+    const before = await page.evaluate(() => document.querySelector('.ink-page').scrollTop);
     await answerButton.click();
     await page.waitForFunction(({ before, long }) => {
       const feedback = document.getElementById('feedback').getBoundingClientRect();
       const verdict = document.querySelector('#feedback .verdict').getBoundingClientRect();
       const next = document.getElementById('nextButton').getBoundingClientRect();
-      return scrollY > before + 5 && verdict.top >= 0 && verdict.bottom < next.top
+      return document.querySelector('.ink-page').scrollTop > before + 5 && verdict.top >= 0 && verdict.bottom < next.top
         && (long ? feedback.top < 40 : feedback.bottom <= next.top - 20);
     }, { before, long }, { timeout: 5000 });
     assert.deepEqual(page.errors, []);
@@ -1378,7 +1436,7 @@ async function cyStartRound(page, size) {
   await page.locator('#cyQuizView').waitFor();
 }
 
-test('чэнъюй: парящий переход и цифры вариантов на телефоне', LIMIT, async (t) => {
+test('чэнъюй: нижняя панель и цифры вариантов на телефоне', LIMIT, async (t) => {
   const page = await openPage(t, { width: 320, height: 740 });
   if (!page) return;
   await openChengyu(page);
@@ -1387,9 +1445,13 @@ test('чэнъюй: парящий переход и цифры варианто
   await cyAnswer(page, await page.evaluate(() => CHENGYU_BANK), true);
   const next = page.locator('#cyNextButton');
   for (const bottom of [true, false]) {
-    await page.evaluate(bottom => scrollTo(0, bottom ? document.body.scrollHeight : 0), bottom);
+    await page.evaluate(bottom => {
+      const content = document.querySelector('.ink-page');
+      content.scrollTo(0, bottom ? content.scrollHeight : 0);
+    }, bottom);
     const box = await next.boundingBox();
     assert.ok(box.y >= 0 && box.y + box.height <= 740);
+    assert.ok((await page.locator('.ink-page').boundingBox()).height <= box.y - 8, 'текст попал за нижнюю панель');
   }
   await next.click();
   assert.equal(await next.isVisible(), false);

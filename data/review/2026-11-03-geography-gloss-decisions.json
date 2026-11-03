@@ -1,0 +1,53 @@
+{
+  "schema": "lingvo-gloss-decisions-v1",
+  "reviewId": "lingvo-geography-glosses-2026-11-03-v1",
+  "manifestHash": "499ae481c14ad8fd00f10430cd63c955d70c783543091f6da873f9d26dbf1da1",
+  "createdAt": "2026-11-03T17:42:17.170336+00:00",
+  "submittedByAuthor": true,
+  "decisions": [
+    {
+      "key": "G:2015-16-reg-1",
+      "questionId": "2015-16-reg-1",
+      "action": "glosses",
+      "decision": "approve",
+      "comment": ""
+    },
+    {
+      "key": "G:2018-19-reg-10",
+      "questionId": "2018-19-reg-10",
+      "action": "glosses",
+      "decision": "discuss",
+      "comment": "кажется нужна подписть не где находится город а почему это верный вариант"
+    },
+    {
+      "key": "G:2019-20-mun-qcfa774",
+      "questionId": "2019-20-mun-qcfa774",
+      "action": "glosses",
+      "decision": "discuss",
+      "comment": "пояснения должны согласоваться с вопросами, дальше проверку не провожу проверь сам потом вернись с согласованием "
+    }
+  ],
+  "undecided": [
+    "G:2016-17-shk-7",
+    "G:2017-18-zak-10",
+    "G:2018-19-shk-7",
+    "G:2018-19-zak-2",
+    "G:2019-20-mun-qce7da2",
+    "G:2019-20-reg-7",
+    "G:2019-20-shk-qe5cbe0",
+    "G:2021-22-mun-q5434f2",
+    "G:2021-22-shk-q2cb94e",
+    "G:2021-22-zak-q38d33e",
+    "G:2022-23-mun-7",
+    "G:2023-24-mun-37",
+    "G:2023-24-shk-35",
+    "G:2023-24-zak-1",
+    "G:2024-25-mun-34",
+    "G:2024-25-zak-qe3452d",
+    "G:2024-25-zak-qfce692",
+    "G:2025-26-mun-7",
+    "G:2025-26-zak-q7c8228",
+    "G:2026-27-mun-2",
+    "G:2025-26-zak-q92942d"
+  ]
+}

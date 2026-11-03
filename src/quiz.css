@@ -596,6 +596,7 @@ select, .search {
   margin-top: 28px;
 }
 .next-row .ink-btn--primary { min-width: 260px; }
+.round-action-panel { display: contents; }
 .quiz > .hint { margin-top: var(--s-3); }
 
 /* ---------- «Вспомни сам» и «Верно или нет» ---------- */
@@ -1039,18 +1040,37 @@ body:has(.review-dialog[open]) { overflow: hidden; }
   .chapter-mark { flex-basis: 100%; font-size: 32px; }
   .next-row .ink-btn--primary { flex: 1 1 100%; min-width: 0; }
   .next-row { flex-direction: column-reverse; align-items: stretch; }
-  .next-row .ink-btn--primary:not(.hidden) {
+  /* У раунда своя область прокрутки. Нижняя панель занимает оставшуюся полосу
+     окна, поэтому ни подписи, ни разбор не оказываются за её кнопкой. */
+  body:is([data-view='quiz'], [data-view='cy-quiz']) { height: 100vh; height: 100dvh; overflow: hidden; }
+  body:is([data-view='quiz'], [data-view='cy-quiz']) .ink-page {
+    height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-padding-block: var(--s-2) var(--s-6);
+  }
+  body[data-view='quiz']:has(#nextButton:not(.hidden)) .ink-page,
+  body[data-view='cy-quiz']:has(#cyNextButton:not(.hidden)) .ink-page {
+    height: calc(100vh - var(--round-panel-height, 81px));
+    height: calc(100dvh - var(--round-panel-height, 81px));
+  }
+  .round-action-panel { display: none; }
+  .round-action-panel:has(.ink-btn--primary:not(.hidden)) {
+    display: flex;
     position: fixed;
     z-index: 4;
-    inset-inline: var(--s-4);
-    bottom: calc(var(--s-4) + env(safe-area-inset-bottom, 0px));
-    width: auto;
-    min-height: 52px;
-    box-shadow: 0 0 0 6px var(--surface-ground), var(--shadow-float);
+    inset-inline: 0;
+    bottom: 0;
+    padding: var(--s-3) var(--s-4) calc(var(--s-4) + env(safe-area-inset-bottom, 0px));
+    border-top: var(--border-hair) solid var(--line-on-ground);
+    background: var(--surface-ground);
   }
-  .next-row:has(.ink-btn--primary:not(.hidden)) { padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px)); }
-  html:has(body:is([data-view='quiz'], [data-view='cy-quiz'])) { scroll-padding-bottom: 100px; }
-  body:is([data-view='quiz'], [data-view='cy-quiz']) .ink-footer { padding-bottom: 100px; }
+  .round-action-panel .ink-btn--primary {
+    width: 100%;
+    min-height: 52px;
+    box-shadow: none;
+  }
   /* после «Следующего вопроса» начало раунда встаёт чуть ниже края экрана */
   .quiz { scroll-margin-top: var(--s-2); }
   .option { grid-template-columns: 32px minmax(0, 1fr); min-height: 72px; padding: 12px 14px; }

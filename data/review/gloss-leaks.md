@@ -12,7 +12,7 @@
 повторение, а не утечка (решение автора 2026-10-26). Название верного ответа рядом с вопросом с тем же
 ответом утечкой не считается: ответ выдаёт сам вариант. Названия помечены «(название ответа)».
 
-Подписей с утечкой: 604; выданных вопросов: 406; пар «вопрос с подписью → соседний вопрос»: 2864, из них 1666 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
+Подписей с утечкой: 601; выданных вопросов: 406; пар «вопрос с подписью → соседний вопрос»: 2833, из них 1651 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
 
 ## 特别行政区 — Особый административный район — Сянган и Аомэнь (название ответа)
 
@@ -421,12 +421,6 @@
 - выдаёт people/people-q10: ответ 道德经, «Дао дэ цзин»; зацепка Лао-цзы, та же строка
 - видна в 1: people/people-q09
 
-## 长安 — Чанъань (ныне Сиань) — столица Западной Хань и династии Тан
-
-- выдаёт dynasties/dynasties-q103: ответ 长安, Чанъань; зацепка династия Тан
-- выдаёт state/state-q06: ответ Сиань; зацепка Тан, Чанъань
-- видна в 4: dynasties/dynasties-q08, dynasties/dynasties-q104, dynasties/dynasties-q105, dynasties/dynasties-q106
-
 ## 长安 — Чанъань — прежнее название Сианя, столицы Хань и Тан
 
 - выдаёт dynasties/dynasties-q103: ответ 长安, Чанъань; зацепка Тан
@@ -749,7 +743,7 @@
 ## 临安 — Линьань (ныне Ханчжоу) — столица Южной Сун
 
 - выдаёт dynasties/dynasties-q08: ответ 临安, Линьань; зацепка Ханчжоу, Южная Сун, та же строка
-- видна в 5: dynasties/dynasties-q103, dynasties/dynasties-q104, dynasties/dynasties-q105, dynasties/dynasties-q106, dynasties/dynasties-q20
+- видна в 1: dynasties/dynasties-q20
 
 ## 临安 — Линьань — название Ханчжоу как столицы Южной Сун
 
@@ -1026,6 +1020,11 @@
 - выдаёт dynasties/dynasties-q31: ответ 努尔哈赤, Нурхаци; зацепка чжурчжэни, та же строка
 - видна в 8: dynasties/dynasties-q09, dynasties/dynasties-q10, dynasties/dynasties-q11, dynasties/dynasties-q12, dynasties/dynasties-q30, dynasties/dynasties-q32, dynasties/dynasties-q35, dynasties/dynasties-q39
 
+## 北京 — Пекин — в парке стены эпохи Мин сохранён её участок длиной 1,5 км
+
+- выдаёт landmarks/landmarks-q92: ответ эпоха Мин; зацепка Пекин
+- видна в 1: 2019-20-shk-qe5cbe0
+
 ## 北京 — Пекин — здесь Запретный город, императорский дворец Мин и Цин
 
 - выдаёт 2016-17-mun-8: ответ Запретный город; зацепка Пекин, 北京
@@ -1249,12 +1248,12 @@
 ## 唐 — Тан (618–907) — при ней построен дворец Дамин, ныне руины в Сиане
 
 - выдаёт state/state-q06: ответ Сиань; зацепка Тан
-- видна в 2: landmarks/landmarks-q90, landmarks/landmarks-q91
+- видна в 1: landmarks/landmarks-q91
 
 ## 唐代 — Династия Тан — 618–907, основал Ли Юань, столица Чанъань
 
 - выдаёт dynasties/dynasties-q103: ответ Чанъань; зацепка династия Тан, та же строка
-- видна в 3: dynasties/dynasties-q02, dynasties/dynasties-q05, dynasties/dynasties-q15
+- видна в 2: dynasties/dynasties-q05, dynasties/dynasties-q15
 
 ## 唐朝 — Династия Тан — 618–907, основал Ли Юань, столица Чанъань
 
@@ -1351,11 +1350,6 @@
 - выдаёт people/people-q04: ответ 墨子, Мо-цзы; зацепка Конфуций, та же строка
 - видна в 1: people/people-q01
 
-## 大兴城 — Дасин — столица Суй, при Тан переименована в Чанъань
-
-- выдаёт dynasties/dynasties-q103: ответ Чанъань; зацепка Тан
-- видна в 4: dynasties/dynasties-q08, dynasties/dynasties-q104, dynasties/dynasties-q105, dynasties/dynasties-q106
-
 ## 大同 — Датун — возле него высечены пещеры Юньган
 
 - выдаёт landmarks/landmarks-q48: ответ 大同; зацепка Пещеры Юньган, та же строка
@@ -1389,7 +1383,7 @@
 ## 大都 — Даду — столица династии Юань на месте нынешнего Пекина
 
 - выдаёт dynasties/dynasties-q105: ответ 大都; зацепка династия Юань, та же строка
-- видна в 4: dynasties/dynasties-q08, dynasties/dynasties-q103, dynasties/dynasties-q104, dynasties/dynasties-q20
+- видна в 1: dynasties/dynasties-q20
 
 ## 天使长大教堂 — Архангельский собор Московского Кремля
 
@@ -1425,6 +1419,11 @@
 
 - выдаёт provinces/provinces-q03: ответ провинция Шаньси; зацепка Тайюань, 太原, та же строка
 - видна в 11: provinces/provinces-q100, provinces/provinces-q101, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q37, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
+
+## 太阳岛 — Остров Солнца — парк в Харбине, столице провинции Хэйлунцзян (название ответа)
+
+- выдаёт 2020-21-mun-mosobl-47: ответ Харбин; зацепка провинция Хэйлунцзян
+- видна в 1: 2018-19-zak-2
 
 ## 契丹族 — Кидани — народ, основавший династию Ляо
 
@@ -1515,6 +1514,11 @@
 
 - выдаёт cuisine/cuisine-q67: ответ шаньдунская кухня; зацепка провинция Шаньдун, та же строка
 - видна в 3: cuisine/cuisine-q68, cuisine/cuisine-q70, cuisine/cuisine-q71
+
+## 山东泰山 — Тайшань в Шаньдуне — восточная из Пяти священных гор, место императорского культа
+
+- выдаёт nature/nature-q47: ответ 泰山, Тайшань; зацепка пять священных гор
+- видна в 1: 2023-24-shk-35
 
 ## 山西 — Шаньси — провинция к западу от гор Тайханшань, центр — Тайюань
 
@@ -1639,7 +1643,7 @@
 ## 开封 — Кайфэн — столица Северной Сун, в старину Бяньлян, Бяньцзин, Дунцзин
 
 - выдаёт dynasties/dynasties-q104: ответ Бяньцзин; зацепка Северная Сун
-- видна в 4: state/state-q06, state/state-q07, state/state-q09, state/state-q15
+- видна в 2: state/state-q07, state/state-q09
 
 ## 弗拉基米尔 — Владимир — центр Владимирской области, город «Золотого кольца»
 
@@ -1864,7 +1868,7 @@
 ## 曲阜 — Цюйфу — здесь храм Конфуция, основанный в 478 году до н. э.
 
 - выдаёт 2022-23-mun-7: ответ 曲阜; зацепка Конфуций
-- видна в 4: landmarks/landmarks-q48, landmarks/landmarks-q96, landmarks/landmarks-q97, landmarks/landmarks-q98
+- видна в 3: landmarks/landmarks-q48, landmarks/landmarks-q97, landmarks/landmarks-q98
 
 ## 曾联松 — Цзэн Ляньсун — шанхайский служащий, автор эскиза флага КНР
 
@@ -1914,12 +1918,12 @@
 ## 杭州 — Ханчжоу — столица Южной Сун под названием Линьань
 
 - выдаёт dynasties/dynasties-q08: ответ Линьань; зацепка Ханчжоу, Южная Сун
-- видна в 4: state/state-q06, state/state-q07, state/state-q09, state/state-q15
+- видна в 2: state/state-q07, state/state-q09
 
 ## 杭州 — Ханчжоу — центр провинции Чжэцзян
 
 - выдаёт provinces/provinces-q101: ответ 杭州, Ханчжоу; зацепка провинция Чжэцзян, та же строка
-- видна в 10: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q37, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
+- видна в 9: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
 
 ## 松林里的早晨 — «Утро в сосновом лесу» — картина Ивана Шишкина 1889 года с медвежатами
 
@@ -2104,7 +2108,7 @@
 ## 汴京 — Бяньцзин (ныне Кайфэн) — столица Северной Сун
 
 - выдаёт dynasties/dynasties-q104: ответ 汴京, Бяньцзин; зацепка Северная Сун, та же строка
-- видна в 5: dynasties/dynasties-q08, dynasties/dynasties-q103, dynasties/dynasties-q105, dynasties/dynasties-q106, dynasties/dynasties-q20
+- видна в 1: dynasties/dynasties-q20
 
 ## 沈阳 — Шэньян (Мукден) — город, у которого 18 сентября 1931 года японцы взорвали железную дорогу
 
@@ -2139,7 +2143,7 @@
 ## 河南 — Хэнань — здесь Суншань, Центральный пик пяти священных гор
 
 - выдаёт nature/nature-q50: ответ 河南, Хэнань; зацепка пять священных гор, та же строка
-- видна в 7: nature/nature-q03, nature/nature-q145, nature/nature-q146, nature/nature-q147, nature/nature-q148, nature/nature-q149, nature/nature-q23
+- видна в 5: nature/nature-q03, nature/nature-q145, nature/nature-q146, nature/nature-q147, nature/nature-q23
 
 ## 河南 — Хэнань — провинция в центре Китая, в бассейне Хуанхэ, центр — Чжэнчжоу
 
@@ -2181,11 +2185,6 @@
 - выдаёт 2024-25-zak-qfce692: ответ 洛阳, Лоян; зацепка Северная Вэй
 - видна в 3: state/state-q07, state/state-q08, state/state-q09
 
-## 洞庭湖 — Дунтинху в Хунани: по нему названы провинции Хубэй и Хунань
-
-- выдаёт provinces/provinces-q90: ответ 洞庭湖, Дунтинху; зацепка Хунань, провинция Хубэй
-- видна в 1: 2017-18-zak-10
-
 ## 洨河 — Сяохэ — река в уезде Чжаосянь провинции Хэбэй, над ней стоит мост Чжаочжоу
 
 - выдаёт nature/nature-q67: ответ провинция Хэбэй; зацепка мост Чжаочжоу, та же строка
@@ -2220,11 +2219,6 @@
 
 - выдаёт cuisine/cuisine-q105: ответ Чжэцзянская кухня; зацепка Рыба озера Сиху в уксусном соусе, озеро Сиху
 - видна в 3: cuisine/cuisine-q68, cuisine/cuisine-q70, cuisine/cuisine-q71
-
-## 浙江省 — Провинция Чжэцзян, административный центр — Ханчжоу
-
-- выдаёт provinces/provinces-q101: ответ Ханчжоу; зацепка провинция Чжэцзян
-- видна в 1: 2017-18-reg-8
 
 ## 浙江省 — Чжэцзян — приморская провинция на юго-востоке Китая, центр — Ханчжоу
 
@@ -2679,7 +2673,7 @@
 ## 西安 — Сиань — административный центр провинции Шэньси
 
 - выдаёт provinces/provinces-q37: ответ 西安; зацепка провинция Шэньси, та же строка
-- видна в 10: provinces/provinces-q100, provinces/provinces-q101, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
+- видна в 9: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
 
 ## 西安 — Сиань — город в Шэньси, где в декабре 1936 года арестовали Чан Кайши
 
@@ -2710,11 +2704,6 @@
 
 - выдаёт literature/literature-q40: ответ У Чэнъэнь; зацепка Путешествие на Запад
 - видна в 1: 2017-18-shk-4
-
-## 西湖 — Сиху в Ханчжоу, объект Всемирного наследия ЮНЕСКО с 2011 г.
-
-- выдаёт provinces/provinces-q87: ответ Ханчжоу; зацепка озеро Сиху, 西湖
-- видна в 1: 2017-18-zak-10
 
 ## 西湖 — Сиху — озеро в Ханчжоу, объект Всемирного наследия ЮНЕСКО с 2011 г.
 
@@ -2870,11 +2859,6 @@
 
 - выдаёт provinces/provinces-q27: ответ 重庆, Чунцин; зацепка Дацзу
 - видна в 4: landmarks/landmarks-q48, landmarks/landmarks-q96, landmarks/landmarks-q97, landmarks/landmarks-q98
-
-## 重庆 — Чунцин — временная столица Китайской Республики в войну с Японией (с 1937 года)
-
-- выдаёт state/state-q15: ответ 重庆, Чунцин; зацепка Япония, та же строка
-- видна в 1: state/state-q06
 
 ## 重庆 — Чунцин — город центрального подчинения на юго-западе Китая
 
