@@ -1,0 +1,52 @@
+{
+  "schema": "lingvo-editorial-decisions-v1",
+  "reviewId": "lingvo-editorial-followup-2026-11-03-v2",
+  "manifestHash": "b777e63db52ba0ea47f6f21563ee77e3efb41176d1c03a5d4afb34fe4ea6cec5",
+  "manifestPath": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/question-followup-data.json",
+  "createdAt": "2026-11-03T16:31:30.376Z",
+  "decisions": [
+    {
+      "key": "R:cinema-q29",
+      "questionId": "cinema-q29",
+      "action": "replace",
+      "decision": "approve",
+      "comment": ""
+    },
+    {
+      "key": "R:crafts-q130",
+      "questionId": "crafts-q130",
+      "action": "edit",
+      "decision": "approve",
+      "comment": ""
+    },
+    {
+      "key": "R:modern-china-q20",
+      "questionId": "modern-china-q20",
+      "action": "edit",
+      "decision": "approve",
+      "comment": ""
+    },
+    {
+      "key": "R:ethnos-q57",
+      "questionId": "ethnos-q57",
+      "action": "replace",
+      "decision": "approve",
+      "comment": ""
+    },
+    {
+      "key": "R:crafts-q137",
+      "questionId": "crafts-q137",
+      "action": "replace",
+      "decision": "approve",
+      "comment": ""
+    },
+    {
+      "key": "R:cuisine-q100",
+      "questionId": "cuisine-q100",
+      "action": "replace",
+      "decision": "approve",
+      "comment": ""
+    }
+  ],
+  "undecided": []
+}

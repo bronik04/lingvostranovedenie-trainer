@@ -58,7 +58,8 @@ test('встроенный банк совпадает с data/bank.json цел�
   }
   const keep = (record) => (settings.showRegionalIds ?? []).includes(record.id)
     || (settings.showEmbeddedIn ?? []).includes(embeddedIn[record.id]);
-  const expected = showRegional ? bank : bank.flatMap((record) => {
+  const available = bank.filter((record) => !Object.hasOwn(settings.hiddenQuestions ?? {}, record.id));
+  const expected = showRegional ? available : available.flatMap((record) => {
     if (keep(record)) return [record];
     const occurrences = record.occurrences ?? [];
     const kept = occurrences.filter((o) => !o.regionCode);

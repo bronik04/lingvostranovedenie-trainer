@@ -2270,7 +2270,9 @@ test('темы раунда: разделы или подборки — один
   assert.equal(await page.locator('#eligibleNotice').textContent(), `Подходит вопросов: ${expected}, в раунде будет 10.`);
   assert.match(await page.locator('#firstCaption').textContent(), /, подборки: кухня и блюда, праздники\. /);
   assert.equal(await page.locator('#topicsValue').textContent(), '2 подборки');
-  assert.equal(await page.locator('#topicsFoot').textContent(), `Выбрано: 2 подборки, ${expected} вопросов.`);
+  // Состав банка меняется; склонение для разных чисел проверяется отдельно в quiz.test.mjs.
+  assert.match(await page.locator('#topicsFoot').textContent(),
+    new RegExp(`^Выбрано: 2 подборки, ${expected} вопрос(?:а|ов)?\\.$`));
   // выбор переживает перезагрузку и попадает в раунд
   await page.reload();
   assert.equal(await page.locator('input[name="topicsBy"][value="dossiers"]').isChecked(), true);

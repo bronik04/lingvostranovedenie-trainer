@@ -60,6 +60,27 @@ class SiteBankTest(unittest.TestCase):
         self.assertIsInstance(settings.get('showRegional'), bool)
         self.assertTrue(settings.get('reason'))
 
+    def test_editorial_hiding_wins_over_regional_switch_and_exceptions(self):
+        bank = [record('a', self.old), record('b', self.regional), record('c', self.old)]
+        for show_regional in [True, False]:
+            with self.subTest(showRegional=show_regional):
+                settings = {'showRegional': show_regional, 'showRegionalIds': ['b'],
+                            'showEmbeddedIn': ['sets'], 'hiddenQuestions': {
+                                'a': {'reason': 'решение автора', 'date': '2026-11-03'},
+                                'b': {'reason': 'решение автора', 'date': '2026-11-03'}}}
+                self.assertEqual([r['id'] for r in site_bank(bank, settings, {'b': 'sets'})], ['c'])
+                self.assertEqual([r['id'] for r in bank], ['a', 'b', 'c'])
+
+    def test_unknown_hidden_id_is_not_silently_ignored(self):
+        with self.assertRaisesRegex(ValueError, 'missing'):
+            site_bank([record('a', self.old)], {'hiddenQuestions': {
+                'missing': {'reason': 'решение автора', 'date': '2026-11-03'}}})
+
+    def test_hiding_requires_a_reason_and_date(self):
+        for entry in [{}, {'reason': 'решение автора'}, {'date': '2026-11-03'}]:
+            with self.subTest(entry=entry), self.assertRaisesRegex(ValueError, 'a'):
+                site_bank([record('a', self.old)], {'hiddenQuestions': {'a': entry}})
+
 
 if __name__ == '__main__':
     unittest.main()
