@@ -103,11 +103,6 @@
     "2024-25-shk-34",
     "crafts-q129"
   ],
-  "moscow-100-rubles": [
-    "money-q15",
-    "2025-26-mun-2",
-    "2021-22-zak-q3ba1dd"
-  ],
   "province-names-river-lake": [
     "2018-19-mun-55",
     "addition-b1-01",
@@ -156,15 +151,6 @@
     "nature-q51",
     "cuisine-q96",
     "nature-q147"
-  ],
-  "guangdong-yue": [
-    "provinces-q93",
-    "cuisine-q68",
-    "cuisine-q74",
-    "ethnos-q86",
-    "2018-19-shk-4",
-    "2018-19-shk-3",
-    "2024-25-zak-qe05919"
   ],
   "fujian-min": [
     "provinces-q41",
@@ -235,15 +221,6 @@
     "ethnos-q96",
     "2019-20-mun-lip-4"
   ],
-  "zhenghe-ming": [
-    "dynasties-q111",
-    "2018-19-reg-1",
-    "people-q19"
-  ],
-  "manchu-word": [
-    "dynasties-q113",
-    "2018-19-shk-6"
-  ],
   "confucius-word": [
     "dynasties-q39",
     "literature-q59",
@@ -307,10 +284,6 @@
   "zhao-kuangyin-chenqiao": [
     "dynasties-q23",
     "dynasties-q91"
-  ],
-  "xu-beihong-painter": [
-    "2023-24-reg-7",
-    "painting-q103"
   ],
   "nuwa-creates-people": [
     "2017-18-reg-3",
@@ -493,48 +466,6 @@
     "2017-18-mun-4",
     "people-q07"
   ],
-  "contextual-geography-1": [
-    "2015-16-mun-6",
-    "2016-17-mun-8",
-    "2017-18-reg-8",
-    "2018-19-mun-spb-9",
-    "2019-20-mun-qcfa774",
-    "2021-22-mun-qa05d78",
-    "2022-23-mun-7",
-    "2022-23-shk-mosobl-11",
-    "2022-23-zak-2",
-    "2023-24-shk-38",
-    "2024-25-mun-mosobl-5",
-    "2024-25-zak-qfce692",
-    "2025-26-mun-spb-5",
-    "2025-26-zak-q7c8228",
-    "addition-b1-06",
-    "cuisine-q71",
-    "cuisine-q76",
-    "dynasties-q103",
-    "dynasties-q104",
-    "dynasties-q105",
-    "dynasties-q106",
-    "ethnos-q83",
-    "holidays-q40",
-    "landmarks-q90",
-    "landmarks-q92",
-    "landmarks-q93",
-    "landmarks-q95",
-    "landmarks-q96",
-    "landmarks-q99",
-    "literature-q37",
-    "nature-q115",
-    "provinces-q101",
-    "provinces-q31",
-    "provinces-q37",
-    "provinces-q43",
-    "sets-q08",
-    "sets-q09",
-    "sets-q10",
-    "sets-q11",
-    "state-q15"
-  ],
   "contextual-geography-2": [
     "2015-16-reg-2",
     "2020-21-zak-qec0067",
@@ -557,5 +488,86 @@
   "contextual-geography-5": [
     "2018-19-shk-7",
     "2019-20-reg-6"
+  ],
+  "contextual-next20-20261104-2": [
+    "2015-16-zak-8",
+    "2016-17-zak-7",
+    "2023-24-reg-7",
+    "literature-q91",
+    "painting-q103"
+  ],
+  "contextual-next20-20261104-3": [
+    "2016-17-reg-8",
+    "2018-19-reg-7",
+    "people-q10"
+  ],
+  "contextual-next20-20261104-4": [
+    "2018-19-reg-1",
+    "2018-19-shk-6",
+    "dynasties-q111",
+    "dynasties-q113",
+    "people-q19"
+  ],
+  "contextual-batch3-20261104-1": [
+    "2015-16-mun-6",
+    "2016-17-mun-8",
+    "2017-18-mun-2",
+    "2017-18-reg-8",
+    "2018-19-mun-spb-9",
+    "2018-19-shk-3",
+    "2018-19-shk-4",
+    "2019-20-mun-qcfa774",
+    "2020-21-pri-qac236e",
+    "2021-22-mun-qa05d78",
+    "2022-23-mun-7",
+    "2022-23-mun-8",
+    "2022-23-shk-mosobl-11",
+    "2022-23-zak-2",
+    "2023-24-shk-38",
+    "2024-25-mun-mosobl-5",
+    "2024-25-zak-qe05919",
+    "2024-25-zak-qfce692",
+    "2025-26-mun-spb-5",
+    "2025-26-zak-q7c8228",
+    "addition-b1-06",
+    "cuisine-q68",
+    "cuisine-q71",
+    "cuisine-q74",
+    "cuisine-q76",
+    "dynasties-q103",
+    "dynasties-q104",
+    "dynasties-q105",
+    "dynasties-q106",
+    "ethnos-q83",
+    "ethnos-q86",
+    "holidays-q40",
+    "landmarks-q90",
+    "landmarks-q92",
+    "landmarks-q93",
+    "landmarks-q95",
+    "landmarks-q96",
+    "landmarks-q99",
+    "literature-q37",
+    "nature-q115",
+    "provinces-q101",
+    "provinces-q31",
+    "provinces-q37",
+    "provinces-q43",
+    "provinces-q93",
+    "sets-q08",
+    "sets-q09",
+    "sets-q10",
+    "sets-q11",
+    "state-q15"
+  ],
+  "contextual-batch4-20261104-1": [
+    "2020-21-reg-q7a4710",
+    "2021-22-zak-q3ba1dd",
+    "2025-26-mun-2",
+    "money-q15"
+  ],
+  "contextual-batch5-20261105-1": [
+    "2021-22-zak-q33f857",
+    "2025-26-reg-1"
   ]
 }

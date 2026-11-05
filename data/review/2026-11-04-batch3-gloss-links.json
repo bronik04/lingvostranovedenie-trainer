@@ -1,0 +1,244 @@
+{
+  "reviewId": "lingvo-contextual-glosses-batch3-2026-11-04-v1",
+  "manifestHash": "1fefc93c02529e8daf0d85d070b3178ec4c48129f4197aff3e8bcff8e3fd4db7",
+  "baseBankSha256": "7d9f5b32aaec64c90191e2ff8a2ba4ffe9ad6c7f332368f3252c57351716c05e",
+  "validationErrors": [],
+  "delta": [
+    {
+      "record": "2015-16-mun-5",
+      "option": "o4",
+      "zh": "红色",
+      "gloss": "Красный — цвет конвертов, в которых дарят деньги на китайский Новый год",
+      "isAnswer": true,
+      "other": "holidays/holidays-q43",
+      "answer": [
+        "китайский Новый год"
+      ],
+      "clues": [
+        "Красный"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2015-16-mun-5",
+      "otherId": "holidays-q43",
+      "publishedPair": true
+    },
+    {
+      "record": "2015-16-mun-5",
+      "option": "o4",
+      "zh": "红色",
+      "gloss": "Красный — цвет конвертов, в которых дарят деньги на китайский Новый год",
+      "isAnswer": true,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "китайский Новый год"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2015-16-mun-5",
+      "otherId": "2024-25-mun-tula-2",
+      "publishedPair": false
+    },
+    {
+      "record": "2020-21-pri-qac236e",
+      "option": "o3",
+      "zh": "粤方言",
+      "gloss": "Юэ — диалекты Гуандуна и Гуанси; представительный говор — гуанчжоуский",
+      "isAnswer": false,
+      "other": "provinces/provinces-q99",
+      "answer": [
+        "Гуанчжоу"
+      ],
+      "clues": [
+        "Гуандун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2020-21-pri-qac236e",
+      "otherId": "provinces-q99",
+      "publishedPair": true
+    },
+    {
+      "record": "2021-22-mun-qa05d78",
+      "option": "o4",
+      "zh": "粤方言",
+      "gloss": "Юэ — диалекты Гуандуна и Гуанси; представительный говор — гуанчжоуский",
+      "isAnswer": false,
+      "other": "provinces/provinces-q99",
+      "answer": [
+        "Гуанчжоу"
+      ],
+      "clues": [
+        "Гуандун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2021-22-mun-qa05d78",
+      "otherId": "provinces-q99",
+      "publishedPair": true
+    },
+    {
+      "record": "2022-23-mun-8",
+      "option": "o3",
+      "zh": "粤剧",
+      "gloss": "Кантонская опера — традиция Гуандуна и Гуанси, с пением на кантонском",
+      "isAnswer": false,
+      "other": "ethnos/ethnos-q86",
+      "answer": [
+        "кантонский"
+      ],
+      "clues": [
+        "Гуандун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2022-23-mun-8",
+      "otherId": "ethnos-q86",
+      "publishedPair": true
+    },
+    {
+      "record": "2026-27-mun-10",
+      "option": "o3",
+      "zh": "红包",
+      "gloss": "Хунбао — красный конверт с деньгами, который дарят на китайский Новый год",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "китайский Новый год"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2026-27-mun-10",
+      "otherId": "2024-25-mun-tula-2",
+      "publishedPair": false
+    },
+    {
+      "record": "2026-27-mun-10",
+      "option": "o3",
+      "zh": "红包",
+      "gloss": "Хунбао — красный конверт с деньгами, который дарят на китайский Новый год",
+      "isAnswer": false,
+      "other": "2024-25-mun-tula-10",
+      "answer": [
+        "红包",
+        "красный конверт",
+        "хунбао"
+      ],
+      "clues": [
+        "китайский Новый год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2026-27-mun-10",
+      "otherId": "2024-25-mun-tula-10",
+      "publishedPair": false
+    }
+  ],
+  "pairs": [
+    [
+      "2015-16-mun-5",
+      "holidays-q43"
+    ],
+    [
+      "2020-21-pri-qac236e",
+      "provinces-q99"
+    ],
+    [
+      "2021-22-mun-qa05d78",
+      "provinces-q99"
+    ],
+    [
+      "2022-23-mun-8",
+      "ethnos-q86"
+    ]
+  ],
+  "applied": false,
+  "relations": [
+    {
+      "recordId": "2015-16-mun-5",
+      "otherId": "holidays-q43",
+      "sourceKey": "2015-16-mun-5:o4",
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Красные денежные конверты к Новому году не сообщают, к какому празднику клеят парные надписи по сторонам двери. Совпадение цвета и праздника не раскрывает спрашиваемый обычай.",
+      "action": "No repository grouping edited. Parent integrates the one visible real relation after author approval."
+    },
+    {
+      "recordId": "2015-16-mun-5",
+      "otherId": "2024-25-mun-tula-2",
+      "sourceKey": "2015-16-mun-5:o4",
+      "publishedPair": false,
+      "verdict": "hidden false positive; recheck before publication",
+      "reason": "Вопрос спрашивает китайское название Нового года (春节). Подпись называет праздник по-русски и обычай, но не даёт слово 春节 или Чуньцзе.",
+      "action": "No grouping now; destination currently hidden."
+    },
+    {
+      "recordId": "2020-21-pri-qac236e",
+      "otherId": "provinces-q99",
+      "sourceKey": "2020-21-pri-qac236e:o3",
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Упоминание гуанчжоуского говора как представительного для юэ не устанавливает административный статус Гуанчжоу. Столицу нельзя вывести из этой подписи.",
+      "action": "No repository grouping edited. Parent integrates the one visible real relation after author approval."
+    },
+    {
+      "recordId": "2021-22-mun-qa05d78",
+      "otherId": "provinces-q99",
+      "sourceKey": "2021-22-mun-qa05d78:o4",
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Упоминание гуанчжоуского говора как представительного для юэ не устанавливает административный статус Гуанчжоу. Столицу нельзя вывести из этой подписи.",
+      "action": "No repository grouping edited. Parent integrates the one visible real relation after author approval."
+    },
+    {
+      "recordId": "2022-23-mun-8",
+      "otherId": "ethnos-q86",
+      "sourceKey": "2022-23-mun-8:o3",
+      "publishedPair": true,
+      "verdict": "real semantic clue; group if approved",
+      "reason": "Подпись связывает Гуандун с пением на кантонском, что прямо помогает ответить, на каком диалекте говорят в Гуандуне.",
+      "action": "No repository grouping edited. Parent integrates the one visible real relation after author approval."
+    },
+    {
+      "recordId": "2026-27-mun-10",
+      "otherId": "2024-25-mun-tula-2",
+      "sourceKey": "2026-27-mun-10:o3",
+      "publishedPair": false,
+      "verdict": "hidden false positive; recheck before publication",
+      "reason": "Вопрос спрашивает китайское название Нового года (春节). Подпись называет праздник по-русски и обычай, но не даёт слово 春节 или Чуньцзе.",
+      "action": "No grouping now; destination currently hidden."
+    },
+    {
+      "recordId": "2026-27-mun-10",
+      "otherId": "2024-25-mun-tula-10",
+      "sourceKey": "2026-27-mun-10:o3",
+      "publishedPair": false,
+      "verdict": "hidden real semantic clue; recheck/group before publication",
+      "reason": "Подпись хунбао прямо объясняет дарение красного денежного конверта на Новый год; это ответ на вопрос о подарке детям, хотя получатели в подписи не уточнены.",
+      "action": "No grouping now; destination currently hidden."
+    }
+  ],
+  "reviewedAgainstPreviewHash": "8b15e90f41950270ddd095d6de4c85b653bfe6af0821ec301cc40fd391c5e379",
+  "allReviewedRelationTextsUnchangedInFinalManifest": true,
+  "realPairsRequiringGroupingAfterApproval": [
+    [
+      "2022-23-mun-8",
+      "ethnos-q86"
+    ]
+  ],
+  "visibleFalsePositivePairs": 3,
+  "hiddenPairsRecheckBeforePublication": 3
+}

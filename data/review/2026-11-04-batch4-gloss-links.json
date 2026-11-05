@@ -1,0 +1,92 @@
+{
+  "reviewId": "lingvo-contextual-glosses-batch4-2026-11-04-v1",
+  "manifestHash": "66f9f1a138844734fdaf5101833461fa1f1c3140860d62d30ad467be5ce612c4",
+  "baseBankSha256": "a6a3f593a7913d786e14f2c9916a3471dee4cc8324fd1d90249a342300fdd073",
+  "validationErrors": [],
+  "delta": [
+    {
+      "record": "2020-21-reg-q7a4710",
+      "option": "o3",
+      "zh": "救世主大教堂",
+      "gloss": "Храм Христа Спасителя — возведён в память о победе в Отечественной войне 1812 года",
+      "isAnswer": false,
+      "other": "landmarks/landmarks-q109",
+      "answer": [
+        "救世主大教堂",
+        "Храм Христа Спасителя"
+      ],
+      "clues": [
+        "1812 год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2020-21-reg-q7a4710",
+      "otherId": "2021-22-zak-q3ba1dd",
+      "publishedPair": true
+    },
+    {
+      "record": "addition-b1-09",
+      "option": "o1",
+      "zh": "中国人民政治协商会议",
+      "gloss": "Народный политический консультативный совет Китая — утвердил флаг КНР в 1949 г.",
+      "isAnswer": true,
+      "other": "2017-18-zak-9",
+      "answer": [
+        "Флаг КНР"
+      ],
+      "clues": [
+        "Флаг"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "addition-b1-09",
+      "otherId": "2017-18-zak-9",
+      "publishedPair": true
+    }
+  ],
+  "pairs": [
+    [
+      "2017-18-zak-9",
+      "addition-b1-09"
+    ],
+    [
+      "2020-21-reg-q7a4710",
+      "2021-22-zak-q3ba1dd"
+    ]
+  ],
+  "applied": false,
+  "relations": [
+    {
+      "questions": [
+        "2020-21-reg-q7a4710",
+        "2021-22-zak-q3ba1dd"
+      ],
+      "verdict": "real-answer-leak",
+      "captionSourceKey": "2020-21-reg-q7a4710:o3",
+      "reason": "Подпись именует Храм Христа Спасителя и связывает его с победой 1812 года — прямым опознавательным признаком другого вопроса.",
+      "action": "После авторского принятия добавить/проверить общую тематическую группу для разнесения в тренировке; в этом ревью банк и группы не менялись."
+    },
+    {
+      "questions": [
+        "addition-b1-09",
+        "2017-18-zak-9"
+      ],
+      "verdict": "false-positive",
+      "captionSourceKey": "addition-b1-09:o1",
+      "reason": "Другой вопрос спрашивает китайское название флага 五星红旗. Подпись сообщает лишь орган и год утверждения флага, не содержит ни имени 五星红旗, ни цвета, ни числа звёзд.",
+      "action": "Не создавать группу только на основании совпадения слова «флаг»."
+    }
+  ],
+  "reviewedAgainstPreviewHash": "9c5421ebb0c377b52198ccb3bc413e53fefa20cff97604a2f717a51c70f6dc0c",
+  "allReviewedRelationTextsUnchangedInFinalManifest": true,
+  "realPairsRequiringGroupingAfterApproval": [
+    [
+      "2020-21-reg-q7a4710",
+      "2021-22-zak-q3ba1dd"
+    ]
+  ],
+  "visibleFalsePositivePairs": 1,
+  "hiddenPairsRecheckBeforePublication": 0
+}

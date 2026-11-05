@@ -1,0 +1,437 @@
+{
+  "reviewId": "lingvo-contextual-glosses-batch5-2026-11-04-v1",
+  "manifestHash": "d8be44a821e159330a07e0e4dc137b94c5ff36b275d0fcdb4cde9e65499b6908",
+  "baseBankSha256": "ddd4b309fa6bddf0583e51983102a5f85bcee0d1b3b9231f45b7a00cfc6ad288",
+  "validationErrors": [],
+  "delta": [
+    {
+      "record": "2017-18-reg-8",
+      "option": "o4",
+      "zh": "广东省",
+      "gloss": "Гуандун — Гуанчжоу был столицей государства Наньюэ",
+      "isAnswer": false,
+      "other": "provinces/provinces-q99",
+      "answer": [
+        "Гуанчжоу"
+      ],
+      "clues": [
+        "провинция Гуандун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2017-18-reg-8",
+      "otherId": "provinces-q99",
+      "publishedPair": true
+    },
+    {
+      "record": "2018-19-shk-6",
+      "option": "o1",
+      "zh": "吉林",
+      "gloss": "Гирин — маньчжуры живут, в частности, в Чанчуне, Гирине, Тунхуа и Сыпине",
+      "isAnswer": false,
+      "other": "provinces/provinces-q36",
+      "answer": [
+        "Чанчунь"
+      ],
+      "clues": [
+        "Провинция Цзилинь"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2018-19-shk-6",
+      "otherId": "provinces-q36",
+      "publishedPair": true
+    },
+    {
+      "record": "2018-19-shk-6",
+      "option": "o4",
+      "zh": "广东",
+      "gloss": "Гуандун — местные маньчжуры живут главным образом в Гуанчжоу",
+      "isAnswer": false,
+      "other": "provinces/provinces-q99",
+      "answer": [
+        "Гуанчжоу"
+      ],
+      "clues": [
+        "провинция Гуандун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2018-19-shk-6",
+      "otherId": "provinces-q99",
+      "publishedPair": true
+    },
+    {
+      "record": "2021-22-zak-q33f857",
+      "option": "o4",
+      "zh": "北京人",
+      "gloss": "Пекинский человек — находки из Чжоукоудяня возрастом около 780–400 тысяч лет",
+      "isAnswer": false,
+      "other": "2025-26-reg-1",
+      "answer": [
+        "北京人"
+      ],
+      "clues": [
+        "Чжоукоудянь"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2021-22-zak-q33f857",
+      "otherId": "2025-26-reg-1",
+      "publishedPair": true
+    },
+    {
+      "record": "2023-24-zak-8",
+      "option": "o1",
+      "zh": "北京条约",
+      "gloss": "Пекинские договоры — соглашения 1860 года, завершившие Вторую опиумную войну",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q108",
+      "answer": [
+        "北京条约",
+        "Пекинский договор"
+      ],
+      "clues": [
+        "1860 год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-zak-8",
+      "otherId": "modern-history-q108",
+      "publishedPair": true
+    },
+    {
+      "record": "2024-25-reg-1",
+      "option": "o1",
+      "zh": "中国",
+      "gloss": "Китай — более 4 тысяч километров границы с Россией, большая часть проходит по рекам",
+      "isAnswer": false,
+      "other": "2025-26-mun-8",
+      "answer": [
+        "4"
+      ],
+      "clues": [
+        "Китай"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-reg-1",
+      "otherId": "2025-26-mun-8",
+      "publishedPair": true
+    },
+    {
+      "record": "2024-25-zak-qe05919",
+      "option": "o4",
+      "zh": "广东省",
+      "gloss": "Гуандун — наряду с кантонским распространены хакка и миньские диалекты",
+      "isAnswer": false,
+      "other": "2023-24-mun-kem-2",
+      "answer": [
+        "广东省"
+      ],
+      "clues": [
+        "кантонский"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-zak-qe05919",
+      "otherId": "2023-24-mun-kem-2",
+      "publishedPair": false
+    },
+    {
+      "record": "2025-26-reg-1",
+      "option": "o2",
+      "zh": "元谋人",
+      "gloss": "Юаньмоуский человек — найден в 1965 году в провинции Юньнань",
+      "isAnswer": false,
+      "other": "2021-22-zak-q33f857",
+      "answer": [
+        "元谋人"
+      ],
+      "clues": [
+        "провинция Юньнань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-reg-1",
+      "otherId": "2021-22-zak-q33f857",
+      "publishedPair": true
+    },
+    {
+      "record": "addition-b2-01",
+      "option": "o1",
+      "zh": "深圳",
+      "gloss": "Шэньчжэнь — в Цяньхае развивают сотрудничество с Гонконгом",
+      "isAnswer": false,
+      "other": "modern-china/modern-china-q09",
+      "answer": [
+        "深圳",
+        "Шэньчжэнь"
+      ],
+      "clues": [
+        "Гонконг"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "addition-b2-01",
+      "otherId": "modern-china-q09",
+      "publishedPair": true
+    }
+  ],
+  "pairs": [
+    [
+      "2017-18-reg-8",
+      "provinces-q99"
+    ],
+    [
+      "2018-19-shk-6",
+      "provinces-q36"
+    ],
+    [
+      "2018-19-shk-6",
+      "provinces-q99"
+    ],
+    [
+      "2021-22-zak-q33f857",
+      "2025-26-reg-1"
+    ],
+    [
+      "2023-24-zak-8",
+      "modern-history-q108"
+    ],
+    [
+      "2024-25-reg-1",
+      "2025-26-mun-8"
+    ],
+    [
+      "addition-b2-01",
+      "modern-china-q09"
+    ]
+  ],
+  "applied": false,
+  "relations": [
+    {
+      "recordId": "2017-18-reg-8",
+      "otherId": "provinces-q99",
+      "questions": [
+        "2017-18-reg-8",
+        "provinces-q99"
+      ],
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Столица древнего государства Наньюэ и административный центр современной провинции — разные отношения. Подпись называет Гуанчжоу в историческом контексте, но не сообщает его современную административную функцию; обратный вопрос о современном центре не раскрывает расположение Аньяна, Лояна и Кайфэна.",
+      "independentReview": "part-a",
+      "captionEvidence": [
+        {
+          "sourceKey": "2017-18-reg-8:o4",
+          "caption": "Гуандун — Гуанчжоу был столицей государства Наньюэ"
+        }
+      ],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "2017-18-reg-8:o4",
+          "caption": "Гуандун — Гуанчжоу был столицей государства Наньюэ"
+        }
+      ],
+      "finalTextReviewNote": "Final caption text matches independently reviewed evidence."
+    },
+    {
+      "recordId": "2018-19-shk-6",
+      "otherId": "provinces-q36",
+      "questions": [
+        "2018-19-shk-6",
+        "provinces-q36"
+      ],
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Места проживания маньчжуров перечислены как четыре города, без указания столицы. Из списка нельзя вывести административный статус Чанчуня; вопрос о столице Цзилиня также не сообщает главный регион проживания маньчжуров.",
+      "independentReview": "part-a",
+      "captionEvidence": [
+        {
+          "sourceKey": "2018-19-shk-6:o1",
+          "caption": "Гирин — маньчжуры живут, в частности, в Чанчуне, Гирине, Тунхуа и Сыпине"
+        }
+      ],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "2018-19-shk-6:o1",
+          "caption": "Гирин — маньчжуры живут, в частности, в Чанчуне, Гирине, Тунхуа и Сыпине"
+        }
+      ],
+      "finalTextReviewNote": "Final caption text matches independently reviewed evidence."
+    },
+    {
+      "recordId": "2018-19-shk-6",
+      "otherId": "provinces-q99",
+      "questions": [
+        "2018-19-shk-6",
+        "provinces-q99"
+      ],
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Главный центр проживания местной этнической общины не тождествен административному центру провинции. Подпись не даёт искомой административной функции Гуанчжоу; обратное направление не раскрывает основной регион расселения маньчжуров в Китае.",
+      "independentReview": "part-a",
+      "captionEvidence": [
+        {
+          "sourceKey": "2018-19-shk-6:o4",
+          "caption": "Гуандун — местные маньчжуры живут главным образом в Гуанчжоу"
+        }
+      ],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "2018-19-shk-6:o4",
+          "caption": "Гуандун — местные маньчжуры живут главным образом в Гуанчжоу"
+        }
+      ],
+      "finalTextReviewNote": "Final caption text matches independently reviewed evidence."
+    },
+    {
+      "recordId": "2021-22-zak-q33f857",
+      "otherId": "2025-26-reg-1",
+      "questions": [
+        "2021-22-zak-q33f857",
+        "2025-26-reg-1"
+      ],
+      "publishedPair": true,
+      "verdict": "real semantic clue; group if approved",
+      "reason": "Оба направления оценены по полной формулировке вопросов, включая proposedQuestionRu; пара требует общей группы фактов после решения автора.",
+      "independentReview": "part-a",
+      "captionEvidence": [
+        {
+          "from": "2021-22-zak-q33f857",
+          "to": "2025-26-reg-1",
+          "sourceKey": "2021-22-zak-q33f857:o4",
+          "caption": "Пекинский человек — находки из Чжоукоудяня возрастом около 780–400 тысяч лет",
+          "reason": "Подпись прямо связывает пекинского человека с Чжоукоудянем — центральным диагностическим признаком вопроса 2025–26. Дополнительная подпись о Homo sapiens помогает исключить человека Верхней пещеры."
+        },
+        {
+          "from": "2025-26-reg-1",
+          "to": "2021-22-zak-q33f857",
+          "sourceKey": "2025-26-reg-1:o2",
+          "caption": "Юаньмоуский человек, найден в 1965 г. в провинции Юньнань",
+          "reason": "Сохранённая подпись прямо связывает юаньмоуского человека с Юньнанью. После предложенного добавления Юньнани в вопрос 2021–22 это существенный признак для выбора; среди перечисленных находок он отличает нужный вариант."
+        }
+      ],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "2021-22-zak-q33f857:o4",
+          "caption": "Пекинский человек — находки из Чжоукоудяня возрастом около 780–400 тысяч лет"
+        },
+        {
+          "sourceKey": "2025-26-reg-1:o2",
+          "caption": "Юаньмоуский человек — найден в 1965 году в провинции Юньнань"
+        }
+      ],
+      "finalTextReviewNote": "Compared final texts with independent verdicts; Yuanmou punctuation formatting does not change the fact or relationship."
+    },
+    {
+      "recordId": "2024-25-reg-1",
+      "otherId": "2025-26-mun-8",
+      "questions": [
+        "2024-25-reg-1",
+        "2025-26-mun-8"
+      ],
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Проверены полные вопросы: более 4 тысяч километров границы не сообщает число 4 городов центрального подчинения. Совпадение цифры и слова «Китай» не передаёт проверяемый факт.",
+      "independentReview": "part-b",
+      "captionEvidence": [],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "2024-25-reg-1:o1",
+          "caption": "Китай — более 4 тысяч километров границы с Россией, большая часть проходит по рекам"
+        }
+      ],
+      "finalTextReviewNote": "Final caption text matches independently reviewed evidence."
+    },
+    {
+      "recordId": "addition-b2-01",
+      "otherId": "modern-china-q09",
+      "questions": [
+        "addition-b2-01",
+        "modern-china-q09"
+      ],
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Проверены полные вопросы: сотрудничество Цяньхая с Гонконгом не сообщает сухопутную границу Шэньчжэня или создание СЭЗ в 1980 году. Гонконг сотрудничает и с другими городами; требуемая связь не дана.",
+      "independentReview": "part-b",
+      "captionEvidence": [],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "addition-b2-01:o1",
+          "caption": "Шэньчжэнь — в Цяньхае развивают сотрудничество с Гонконгом"
+        }
+      ],
+      "finalTextReviewNote": "Final caption text matches independently reviewed evidence."
+    },
+    {
+      "recordId": "2024-25-zak-qe05919",
+      "otherId": "2023-24-mun-kem-2",
+      "questions": [
+        "2024-25-zak-qe05919",
+        "2023-24-mun-kem-2"
+      ],
+      "publishedPair": false,
+      "verdict": "hidden real semantic clue; recheck/group before publication",
+      "reason": "Полный скрытый вопрос спрашивает провинцию распространения кантонского; подпись Гуандуна прямо даёт её. Сохранить полезный факт, проверить/сгруппировать перед возвращением скрытого вопроса. Сейчас группы не менялись.",
+      "independentReview": "part-b",
+      "captionEvidence": [],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "2024-25-zak-qe05919:o4",
+          "caption": "Гуандун — наряду с кантонским распространены хакка и миньские диалекты"
+        }
+      ],
+      "finalTextReviewNote": "Final caption text matches independently reviewed evidence."
+    },
+    {
+      "recordId": "2023-24-zak-8",
+      "otherId": "modern-history-q108",
+      "questions": [
+        "2023-24-zak-8",
+        "modern-history-q108"
+      ],
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Проверены полные записи банка, включая все 15 вариантов modern-history-q108. Подпись сообщает об общем комплексе Пекинских соглашений 1860 года и окончании Второй опиумной войны, но не о русско-китайском соглашении, России, Уссури или передаче территории. В другом вопросе есть и 北京条约, и 中英北京条约: общие название и дата не раскрывают требуемую русско-китайскую связь и не различают эти договоры. Совпадение частично сужает круг названий, но не передаёт спрашиваемый факт. Прежняя подпись уже содержала тот же год, название и завершение войны; форматная замена нового исторического сведения не добавила.",
+      "independentReview": "part-b",
+      "captionEvidence": [
+        {
+          "sourceKey": "2023-24-zak-8:o1",
+          "caption": "Пекинские договоры — соглашения 1860 года, завершившие Вторую опиумную войну"
+        }
+      ],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "2023-24-zak-8:o1",
+          "caption": "Пекинские договоры — соглашения 1860 года, завершившие Вторую опиумную войну"
+        }
+      ],
+      "finalTextReviewNote": "Final caption text matches independently reviewed evidence."
+    }
+  ],
+  "reviewedAgainstPreviewHash": "d22c78f36a6b13c589d024fdb7f7c79a7b62ae4aec3c8b865fa2fef829dcc129",
+  "finalAdditionalPairReviewed": [
+    [
+      "2023-24-zak-8",
+      "modern-history-q108"
+    ]
+  ],
+  "realPairsRequiringGroupingAfterApproval": [
+    [
+      "2021-22-zak-q33f857",
+      "2025-26-reg-1"
+    ]
+  ],
+  "visibleFalsePositivePairs": 6,
+  "hiddenPairsRecheckBeforePublication": 1
+}

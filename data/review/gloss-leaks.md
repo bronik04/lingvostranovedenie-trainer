@@ -12,7 +12,7 @@
 повторение, а не утечка (решение автора 2026-10-26). Название верного ответа рядом с вопросом с тем же
 ответом утечкой не считается: ответ выдаёт сам вариант. Названия помечены «(название ответа)».
 
-Подписей с утечкой: 601; выданных вопросов: 406; пар «вопрос с подписью → соседний вопрос»: 2833, из них 1651 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
+Подписей с утечкой: 606; выданных вопросов: 410; пар «вопрос с подписью → соседний вопрос»: 2829, из них 1643 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
 
 ## 特别行政区 — Особый административный район — Сянган и Аомэнь (название ответа)
 
@@ -331,6 +331,12 @@
 - выдаёт literature/literature-q21: ответ Чуские строфы; зацепка Цюй Юань
 - видна в 5: literature/literature-q88, literature/literature-q89, literature/literature-q90, literature/literature-q91, literature/literature-q92
 
+## 红包 — Хунбао — красный конверт с деньгами, который дарят на китайский Новый год
+
+- выдаёт 2024-25-mun-tula-10: ответ 红包, красный конверт, хунбао; зацепка китайский Новый год
+- выдаёт holidays/holidays-q53: ответ китайский Новый год; зацепка Новый год
+- видна в 1: 2026-27-mun-10
+
 ## 红楼梦 — «Сон в красном тереме» — роман Цао Сюэциня об упадке семьи Цзя
 
 - выдаёт literature/literature-q16: ответ 红楼梦, Сон в красном тереме; зацепка Цао Сюэцинь
@@ -342,6 +348,12 @@
 - выдаёт literature/literature-q16: ответ 红楼梦, Сон в красном тереме; зацепка Цао Сюэцинь
 - выдаёт literature/literature-q97: ответ Цао Сюэцинь; зацепка Сон в красном тереме, 红楼梦
 - видна в 1: 2017-18-shk-4
+
+## 红色 — Красный — цвет конвертов, в которых дарят деньги на китайский Новый год (название ответа)
+
+- выдаёт holidays/holidays-q43: ответ китайский Новый год; зацепка Красный
+- выдаёт holidays/holidays-q53: ответ китайский Новый год; зацепка Новый год
+- видна в 1: 2015-16-mun-5
 
 ## 罗贯中 — Ло Гуаньчжун — автор романа «Троецарствие»
 
@@ -720,6 +732,16 @@
 - выдаёт 2016-17-reg-1: ответ 主席, Председатель; зацепка Глава государства, та же строка
 - видна в 3: state/state-q01, state/state-q04, state/state-q16
 
+## 中国 — Китай — более 4 тысяч километров границы с Россией, большая часть проходит по рекам
+
+- выдаёт 2025-26-mun-8: ответ 4; зацепка Китай
+- видна в 1: 2024-25-reg-1
+
+## 中国人民政治协商会议 — Народный политический консультативный совет Китая — утвердил флаг КНР в 1949 г. (название ответа)
+
+- выдаёт 2017-18-zak-9: ответ Флаг КНР; зацепка Флаг
+- видна в 1: addition-b1-09
+
 ## 中国人民银行 — Народный банк Китая — центральный банк КНР, ведомство Госсовета
 
 - выдаёт 2016-17-mun-3: ответ 中国人民银行, Народный банк Китая; зацепка Центральный банк
@@ -1040,9 +1062,9 @@
 - выдаёт ethnos/ethnos-q83: ответ сыхэюань; зацепка Пекин, 北京, та же строка
 - видна в 1: ethnos/ethnos-q84
 
-## 北京条约 — Пекинские договоры 1860 г., завершившие Вторую опиумную войну
+## 北京条约 — Пекинские договоры — соглашения 1860 года, завершившие Вторую опиумную войну
 
-- выдаёт modern-history/modern-history-q108: ответ 北京条约, Пекинский договор; зацепка 1860
+- выдаёт modern-history/modern-history-q108: ответ 北京条约, Пекинский договор; зацепка 1860 год
 - видна в 1: 2023-24-zak-8
 
 ## 北京条约 — Русско-китайский Пекинский договор 1860 года: к России отошёл Уссурийский край
@@ -1165,7 +1187,7 @@
 - выдаёт provinces/provinces-q92: ответ 合肥; зацепка провинция Аньхой, та же строка
 - видна в 10: provinces/provinces-q100, provinces/provinces-q101, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q37, provinces/provinces-q38, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
 
-## 吉林 — Провинция Гирин (Цзилинь), административный центр — Чанчунь
+## 吉林 — Гирин — маньчжуры живут, в частности, в Чанчуне, Гирине, Тунхуа и Сыпине
 
 - выдаёт provinces/provinces-q36: ответ Чанчунь; зацепка Провинция Цзилинь
 - видна в 1: 2018-19-shk-6
@@ -1198,7 +1220,7 @@
 ## 吴方言 — Диалект у — диалект Шанхая, юга Цзянсу и большей части Чжэцзяна
 
 - выдаёт 2020-21-pri-qac236e: ответ 吴方言, диалект у; зацепка Цзянси, Цзянсу, Чжэцзян, Шанхай, та же строка
-- видна в 4: ethnos/ethnos-q86, ethnos/ethnos-q87, ethnos/ethnos-q88, ethnos/ethnos-q92
+- видна в 3: ethnos/ethnos-q87, ethnos/ethnos-q88, ethnos/ethnos-q92
 
 ## 吴道子 — У Даоцзы — танский «святой живописи», мастер буддийских и даосских фигур
 
@@ -1289,11 +1311,6 @@
 
 - выдаёт holidays/holidays-q24: ответ День космонавтики; зацепка 12, та же строка
 - видна в 4: holidays/holidays-q26, holidays/holidays-q31, holidays/holidays-q50, holidays/holidays-q51
-
-## 回族 — Хуэй (хуэйцзу), народ Китая, исповедующий ислам
-
-- выдаёт ethnos/ethnos-q81: ответ 回族, Хуэй; зацепка ислам
-- видна в 1: 2015-16-zak-5
 
 ## 园林之城 — «Город садов» — прозвище Сучжоу, где сохранилось больше 60 классических садов
 
@@ -1560,6 +1577,11 @@
 - выдаёт literature/literature-q77: ответ Доктор Живаго; зацепка Пастернак, та же строка
 - видна в 18: literature/literature-q60, literature/literature-q61, literature/literature-q62, literature/literature-q63, literature/literature-q64, literature/literature-q66, literature/literature-q71, literature/literature-q73, literature/literature-q74, literature/literature-q80, literature/literature-q81, literature/literature-q82, literature/literature-q83, literature/literature-q86, literature/literature-q87, literature/literature-q93, literature/literature-q94, literature/literature-q95
 
+## 广东 — Гуандун — местные маньчжуры живут главным образом в Гуанчжоу
+
+- выдаёт provinces/provinces-q99: ответ Гуанчжоу; зацепка провинция Гуандун
+- видна в 1: 2018-19-shk-6
+
 ## 广东 — Гуандун — провинция на юге материкового Китая, центр — Гуанчжоу
 
 - выдаёт provinces/provinces-q99: ответ Гуанчжоу; зацепка провинция Гуандун, та же строка
@@ -1568,22 +1590,27 @@
 ## 广东 — Гуандун — родина кантонской кухни с белой нарезанной курицей
 
 - выдаёт ethnos/ethnos-q86: ответ кантонский; зацепка провинция Гуандун, 广东
-- видна в 2: cuisine/cuisine-q70, cuisine/cuisine-q71
+- видна в 1: cuisine/cuisine-q70
 
 ## 广东 — Провинция Гуандун на юге Китая, центр — Гуанчжоу
 
 - выдаёт provinces/provinces-q99: ответ Гуанчжоу; зацепка провинция Гуандун
-- видна в 2: 2015-16-reg-1, 2018-19-shk-6
+- видна в 1: 2015-16-reg-1
+
+## 广东省 — Гуандун — Гуанчжоу был столицей государства Наньюэ
+
+- выдаёт provinces/provinces-q99: ответ Гуанчжоу; зацепка провинция Гуандун
+- видна в 1: 2017-18-reg-8
+
+## 广东省 — Гуандун — наряду с кантонским распространены хакка и миньские диалекты
+
+- выдаёт 2023-24-mun-kem-2: ответ 广东省; зацепка кантонский
+- видна в 1: 2024-25-zak-qe05919
 
 ## 广东省 — Гуандун — южная провинция материкового Китая, центр — Гуанчжоу
 
 - выдаёт provinces/provinces-q99: ответ Гуанчжоу; зацепка провинция Гуандун, та же строка
 - видна в 6: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q123, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q16
-
-## 广东省 — Провинция Гуандун, административный центр — Гуанчжоу
-
-- выдаёт provinces/provinces-q99: ответ Гуанчжоу; зацепка провинция Гуандун
-- видна в 1: 2017-18-reg-8
 
 ## 广州 — Гуанчжоу (Кантон), столица провинции Гуандун
 
@@ -2005,11 +2032,6 @@
 - выдаёт modern-history/modern-history-q63: ответ 武昌, Учанское восстание; зацепка 10, та же строка
 - видна в 2: modern-history/modern-history-q114, modern-history/modern-history-q69
 
-## 武昌 — Учан, ныне район города Ухань в провинции Хубэй
-
-- выдаёт provinces/provinces-q100: ответ город Ухань; зацепка провинция Хубэй
-- видна в 1: addition-b1-08
-
 ## 武汉 — Ухань — город в центре Китая, в провинции Хубэй
 
 - выдаёт provinces/provinces-q100: ответ 武汉; зацепка провинция Хубэй
@@ -2223,7 +2245,7 @@
 ## 浙江省 — Чжэцзян — приморская провинция на юго-востоке Китая, центр — Ханчжоу
 
 - выдаёт provinces/provinces-q101: ответ Ханчжоу; зацепка провинция Чжэцзян, та же строка
-- видна в 8: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q12, provinces/provinces-q123, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q15, provinces/provinces-q16
+- видна в 6: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q123, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q16
 
 ## 涅瓦河 — Нева — река, в устье которой основан Санкт-Петербург
 
@@ -2234,6 +2256,11 @@
 
 - выдаёт modern-china/modern-china-q09: ответ 深圳, Шэньчжэнь; зацепка 1980 год, особая экономическая зона
 - видна в 20: modern-china/modern-china-q01, modern-china/modern-china-q02, provinces/provinces-q115, provinces/provinces-q116, provinces/provinces-q117, provinces/provinces-q119, provinces/provinces-q121, provinces/provinces-q20, provinces/provinces-q21, provinces/provinces-q22, provinces/provinces-q24, provinces/provinces-q25, provinces/provinces-q26, provinces/provinces-q27, provinces/provinces-q28, provinces/provinces-q29, provinces/provinces-q30, provinces/provinces-q52, provinces/provinces-q53, provinces/provinces-q87
+
+## 深圳 — Шэньчжэнь — в Цяньхае развивают сотрудничество с Гонконгом
+
+- выдаёт modern-china/modern-china-q09: ответ 深圳, Шэньчжэнь; зацепка Гонконг
+- видна в 1: addition-b2-01
 
 ## 清 — Династия Цин — маньчжурская, правила Китаем с 1644 по 1912 год
 
@@ -2253,12 +2280,12 @@
 ## 清朝 — Династия Цин — маньчжурская, правила Китаем с 1644 по 1912 год
 
 - выдаёт dynasties/dynasties-q113: ответ маньчжуры; зацепка династия Цинь, та же строка
-- видна в 7: dynasties/dynasties-q04, dynasties/dynasties-q06, dynasties/dynasties-q109, dynasties/dynasties-q110, dynasties/dynasties-q111, dynasties/dynasties-q114, dynasties/dynasties-q13
+- видна в 6: dynasties/dynasties-q04, dynasties/dynasties-q06, dynasties/dynasties-q109, dynasties/dynasties-q110, dynasties/dynasties-q114, dynasties/dynasties-q13
 
 ## 渝 — Сокращение Чунцина — от древнего названия реки Цзялинцзян, Юйшуй
 
 - выдаёт provinces/provinces-q31: ответ 渝; зацепка Чунцин, та же строка
-- видна в 7: provinces/provinces-q102, provinces/provinces-q19, provinces/provinces-q41, provinces/provinces-q45, provinces/provinces-q93, provinces/provinces-q94, provinces/provinces-q95
+- видна в 6: provinces/provinces-q102, provinces/provinces-q19, provinces/provinces-q41, provinces/provinces-q45, provinces/provinces-q94, provinces/provinces-q95
 
 ## 渤海 — Бохай — внутреннее море Китая, сюда впадают Хуанхэ и Хайхэ
 
@@ -2278,12 +2305,12 @@
 ## 湘 — Сокращение Хунани — по главной реке провинции Сянцзян
 
 - выдаёт provinces/provinces-q43: ответ 湘; зацепка Хунань, та же строка
-- видна в 7: provinces/provinces-q102, provinces/provinces-q19, provinces/provinces-q41, provinces/provinces-q45, provinces/provinces-q93, provinces/provinces-q94, provinces/provinces-q95
+- видна в 6: provinces/provinces-q102, provinces/provinces-q19, provinces/provinces-q41, provinces/provinces-q45, provinces/provinces-q94, provinces/provinces-q95
 
 ## 湘方言 — Сянский диалект — диалект большей части Хунани
 
 - выдаёт 2021-22-mun-qa05d78: ответ 湘方言, сянский диалект; зацепка Хунань, та же строка
-- видна в 4: ethnos/ethnos-q86, ethnos/ethnos-q87, ethnos/ethnos-q88, ethnos/ethnos-q92
+- видна в 3: ethnos/ethnos-q87, ethnos/ethnos-q88, ethnos/ethnos-q92
 
 ## 满族 — Маньчжуры — народ, основавший династию Цин
 
@@ -2493,12 +2520,17 @@
 ## 粤 — Сокращение Гуандуна — от древнего названия южных земель «Юэ»
 
 - выдаёт provinces/provinces-q93: ответ 粤; зацепка Гуандун, та же строка
-- видна в 8: provinces/provinces-q102, provinces/provinces-q19, provinces/provinces-q31, provinces/provinces-q41, provinces/provinces-q43, provinces/provinces-q45, provinces/provinces-q94, provinces/provinces-q95
+- видна в 6: provinces/provinces-q102, provinces/provinces-q19, provinces/provinces-q41, provinces/provinces-q45, provinces/provinces-q94, provinces/provinces-q95
 
 ## 粤剧 — Юэцзюй — кантонская опера Гуандуна и Гуанси
 
 - выдаёт ethnos/ethnos-q86: ответ кантонский; зацепка Гуандун
 - видна в 2: landmarks/landmarks-q76, landmarks/landmarks-q89
+
+## 粤方言 — Юэ — диалекты Гуандуна и Гуанси; представительный говор — гуанчжоуский
+
+- выдаёт provinces/provinces-q99: ответ Гуанчжоу; зацепка Гуандун
+- видна в 2: 2020-21-pri-qac236e, 2021-22-mun-qa05d78
 
 ## 粤方言 — Юэский (кантонский) диалект — диалект Гуандуна, Гонконга и Макао
 
@@ -3064,11 +3096,6 @@
 
 - выдаёт nature/nature-q112: ответ 黑海, Чёрное море; зацепка Краснодарский край
 - видна в 2: nature/nature-q08, nature/nature-q130
-
-## 黑龙江 — Провинция Хэйлунцзян на границе с Россией, центр — Харбин
-
-- выдаёт 2020-21-mun-mosobl-47: ответ Харбин; зацепка провинция Хэйлунцзян, 黑龙江
-- видна в 2: 2015-16-reg-4, 2018-19-shk-6
 
 ## 黑龙江 — Хэйлунцзян — самая северная провинция Китая, центр — Харбин (название ответа)
 

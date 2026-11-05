@@ -1,0 +1,1031 @@
+{
+  "schema": "lingvo-approved-gloss-application-v1",
+  "reviewId": "lingvo-contextual-glosses-batch3-2026-11-04-v1",
+  "manifestHash": "1fefc93c02529e8daf0d85d070b3178ec4c48129f4197aff3e8bcff8e3fd4db7",
+  "appliedAt": "2026-11-04",
+  "authorSubmittedAt": "2026-11-04T10:11:51.364929+00:00",
+  "authorRevision": 1793787109436,
+  "counts": {
+    "questions": 20,
+    "newAnswerNames": 20,
+    "proposedGlosses": 69,
+    "existingGlossEdits": 2,
+    "skippedOptions": 4,
+    "companionEdits": 2
+  },
+  "authorComments": {},
+  "companionQuestionIds": [
+    "2016-17-shk-10",
+    "2025-26-mun-10"
+  ],
+  "previousEditorialEntries": {
+    "2016-17-shk-10": {
+      "reason": "Объединение в один вопрос с общим набором неверных вариантов (решение автора 2026-10-14, раздел Б data/review/similar-questions.md): в пояснение добавлены крыши императорских дворцов из влитой записи 2025-26-zak-qbd468e",
+      "explanation": "Со времён династии Тан жёлтый цвет (黄色) закрепился как исключительно императорский — его запрещалось использовать простолюдинам; жёлтой черепицей покрывали и крыши императорских дворцов."
+    },
+    "2025-26-mun-10": {
+      "reason": "Фактическая ошибка: фарфор не изобретали в VI в. до н. э. Пояснение само противоречит вопросу: протофарфор появился при Шан/Чжоу, зрелый фарфор при Восточной Хань. Кроме того, придаточное «из которого» оторвано от слова «материал».",
+      "questionRu": "Какой материал, из которого стали делать чашки и красивые вазы, впервые изобрели китайские мастера?"
+    }
+  },
+  "groupedPairs": [
+    [
+      "2022-23-mun-8",
+      "ethnos-q86"
+    ]
+  ],
+  "groupChanges": [
+    {
+      "id": "contextual-batch3-20261104-1",
+      "records": [
+        "2015-16-mun-6",
+        "2016-17-mun-8",
+        "2017-18-mun-2",
+        "2017-18-reg-8",
+        "2018-19-mun-spb-9",
+        "2018-19-shk-3",
+        "2018-19-shk-4",
+        "2019-20-mun-qcfa774",
+        "2020-21-pri-qac236e",
+        "2021-22-mun-qa05d78",
+        "2022-23-mun-7",
+        "2022-23-mun-8",
+        "2022-23-shk-mosobl-11",
+        "2022-23-zak-2",
+        "2023-24-shk-38",
+        "2024-25-mun-mosobl-5",
+        "2024-25-zak-qe05919",
+        "2024-25-zak-qfce692",
+        "2025-26-mun-spb-5",
+        "2025-26-zak-q7c8228",
+        "addition-b1-06",
+        "cuisine-q68",
+        "cuisine-q71",
+        "cuisine-q74",
+        "cuisine-q76",
+        "dynasties-q103",
+        "dynasties-q104",
+        "dynasties-q105",
+        "dynasties-q106",
+        "ethnos-q83",
+        "ethnos-q86",
+        "holidays-q40",
+        "landmarks-q90",
+        "landmarks-q92",
+        "landmarks-q93",
+        "landmarks-q95",
+        "landmarks-q96",
+        "landmarks-q99",
+        "literature-q37",
+        "nature-q115",
+        "provinces-q101",
+        "provinces-q31",
+        "provinces-q37",
+        "provinces-q43",
+        "provinces-q93",
+        "sets-q08",
+        "sets-q09",
+        "sets-q10",
+        "sets-q11",
+        "state-q15"
+      ],
+      "replaces": [
+        "contextual-next20-20261104-1"
+      ]
+    }
+  ],
+  "diagnosticFalsePositives": [
+    {
+      "recordId": "2015-16-mun-5",
+      "otherId": "holidays-q43",
+      "sourceKey": "2015-16-mun-5:o4",
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Красные денежные конверты к Новому году не сообщают, к какому празднику клеят парные надписи по сторонам двери. Совпадение цвета и праздника не раскрывает спрашиваемый обычай.",
+      "action": "No repository grouping edited. Parent integrates the one visible real relation after author approval."
+    },
+    {
+      "recordId": "2020-21-pri-qac236e",
+      "otherId": "provinces-q99",
+      "sourceKey": "2020-21-pri-qac236e:o3",
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Упоминание гуанчжоуского говора как представительного для юэ не устанавливает административный статус Гуанчжоу. Столицу нельзя вывести из этой подписи.",
+      "action": "No repository grouping edited. Parent integrates the one visible real relation after author approval."
+    },
+    {
+      "recordId": "2021-22-mun-qa05d78",
+      "otherId": "provinces-q99",
+      "sourceKey": "2021-22-mun-qa05d78:o4",
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Упоминание гуанчжоуского говора как представительного для юэ не устанавливает административный статус Гуанчжоу. Столицу нельзя вывести из этой подписи.",
+      "action": "No repository grouping edited. Parent integrates the one visible real relation after author approval."
+    }
+  ],
+  "hiddenDiagnostics": [
+    {
+      "recordId": "2015-16-mun-5",
+      "otherId": "2024-25-mun-tula-2",
+      "sourceKey": "2015-16-mun-5:o4",
+      "publishedPair": false,
+      "verdict": "hidden false positive; recheck before publication",
+      "reason": "Вопрос спрашивает китайское название Нового года (春节). Подпись называет праздник по-русски и обычай, но не даёт слово 春节 или Чуньцзе.",
+      "action": "No grouping now; destination currently hidden."
+    },
+    {
+      "recordId": "2026-27-mun-10",
+      "otherId": "2024-25-mun-tula-2",
+      "sourceKey": "2026-27-mun-10:o3",
+      "publishedPair": false,
+      "verdict": "hidden false positive; recheck before publication",
+      "reason": "Вопрос спрашивает китайское название Нового года (春节). Подпись называет праздник по-русски и обычай, но не даёт слово 春节 или Чуньцзе.",
+      "action": "No grouping now; destination currently hidden."
+    },
+    {
+      "recordId": "2026-27-mun-10",
+      "otherId": "2024-25-mun-tula-10",
+      "sourceKey": "2026-27-mun-10:o3",
+      "publishedPair": false,
+      "verdict": "hidden real semantic clue; recheck/group before publication",
+      "reason": "Подпись хунбао прямо объясняет дарение красного денежного конверта на Новый год; это ответ на вопрос о подарке детям, хотя получатели в подписи не уточнены.",
+      "action": "No grouping now; destination currently hidden."
+    }
+  ],
+  "status": "applied-and-verified-locally",
+  "published": false,
+  "dataValidation": {
+    "exactlyMatchesApprovedChangesAndAmendments": true,
+    "questionCount": 1269,
+    "publishedQuestions": 964,
+    "missingAnswerNames": 50,
+    "answerKeysAndOptionsUnchanged": true,
+    "newRemainingDiagnostics": [
+      {
+        "record": "2015-16-mun-5",
+        "option": "o4",
+        "zh": "红色",
+        "gloss": "Красный — цвет конвертов, в которых дарят деньги на китайский Новый год",
+        "isAnswer": true,
+        "other": "holidays/holidays-q43",
+        "answer": [
+          "китайский Новый год"
+        ],
+        "clues": [
+          "Красный"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2015-16-mun-5",
+        "otherId": "holidays-q43"
+      },
+      {
+        "record": "2020-21-pri-qac236e",
+        "option": "o3",
+        "zh": "粤方言",
+        "gloss": "Юэ — диалекты Гуандуна и Гуанси; представительный говор — гуанчжоуский",
+        "isAnswer": false,
+        "other": "provinces/provinces-q99",
+        "answer": [
+          "Гуанчжоу"
+        ],
+        "clues": [
+          "Гуандун"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2020-21-pri-qac236e",
+        "otherId": "provinces-q99"
+      },
+      {
+        "record": "2021-22-mun-qa05d78",
+        "option": "o4",
+        "zh": "粤方言",
+        "gloss": "Юэ — диалекты Гуандуна и Гуанси; представительный говор — гуанчжоуский",
+        "isAnswer": false,
+        "other": "provinces/provinces-q99",
+        "answer": [
+          "Гуанчжоу"
+        ],
+        "clues": [
+          "Гуандун"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2021-22-mun-qa05d78",
+        "otherId": "provinces-q99"
+      }
+    ],
+    "captionCount": 69
+  },
+  "independentApplicationReview": {
+    "schema": "lingvo-independent-application-review-v1",
+    "reviewId": "lingvo-contextual-glosses-batch3-2026-11-04-v1",
+    "manifestHash": "1fefc93c02529e8daf0d85d070b3178ec4c48129f4197aff3e8bcff8e3fd4db7",
+    "reviewedAt": "2026-11-04T10:24:42.242154+00:00",
+    "status": "pass",
+    "scope": "Read-only comparison against saved before-application baseline; reconstructed all expected production data independently of apply-approved.py and expected-bank.json. No test suite, build, commit, merge or deployment performed.",
+    "checks": [
+      {
+        "check": "manifest canonical SHA256",
+        "pass": true
+      },
+      {
+        "check": "all authority artifacts bind same review/hash",
+        "pass": true
+      },
+      {
+        "check": "20 unique approved decisions and no comments/undecided",
+        "pass": true
+      },
+      {
+        "check": "persisted latest browser state matches decisions/revision",
+        "pass": true
+      },
+      {
+        "check": "approval page displayed exact final manifest",
+        "pass": true
+      },
+      {
+        "check": "baseline raw bank hash matches manifest",
+        "pass": true
+      },
+      {
+        "check": "review snapshots match baseline question/options/key",
+        "pass": true
+      },
+      {
+        "check": "all 78 reviewed facts/sources equal final manifest",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2015-16-mun-5:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2015-16-mun-5:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2015-16-mun-5:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2015-16-mun-5:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2015-16-mun-5:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2015-16-mun-5:o5",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2016-17-shk-10:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2016-17-shk-10:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2016-17-shk-10:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2016-17-shk-10:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2016-17-shk-10:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2016-17-shk-10:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2016-17-shk-10:o5",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2024-25-reg-7:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2024-25-reg-7:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2024-25-reg-7:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2024-25-reg-7:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2024-25-reg-7:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2024-25-reg-7:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2024-25-reg-7:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2024-25-reg-7:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2026-27-mun-10:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2026-27-mun-10:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2026-27-mun-10:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2026-27-mun-10:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2026-27-mun-10:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2026-27-mun-10:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot addition-b1-11:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity addition-b1-11:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot addition-b1-11:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity addition-b1-11:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot addition-b1-11:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity addition-b1-11:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot addition-b1-11:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity addition-b1-11:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2017-18-mun-1:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2017-18-mun-1:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2017-18-mun-1:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2017-18-mun-1:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2017-18-mun-1:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2017-18-mun-1:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2017-18-mun-1:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2026-27-mun-5:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2026-27-mun-5:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2026-27-mun-5:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2026-27-mun-5:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2026-27-mun-5:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2026-27-mun-5:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2026-27-mun-5:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2026-27-mun-5:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2022-23-zak-10:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2022-23-zak-10:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2022-23-zak-10:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2022-23-zak-10:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2022-23-zak-10:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2022-23-zak-10:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2022-23-zak-10:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2022-23-zak-10:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2025-26-mun-10:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2025-26-mun-10:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2025-26-mun-10:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2025-26-mun-10:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2025-26-mun-10:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2025-26-mun-10:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2025-26-mun-10:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2025-26-mun-10:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2026-27-mun-1:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2026-27-mun-1:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2026-27-mun-1:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2026-27-mun-1:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2026-27-mun-1:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2026-27-mun-1:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2026-27-mun-1:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2026-27-mun-1:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2016-17-mun-5:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2016-17-mun-5:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2016-17-mun-5:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2016-17-mun-5:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2016-17-mun-5:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2016-17-mun-5:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2016-17-mun-5:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2016-17-mun-5:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2018-19-mun-48:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2018-19-mun-48:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2018-19-mun-48:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2018-19-mun-48:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2018-19-mun-48:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2018-19-mun-48:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2018-19-mun-48:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2018-19-mun-48:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2022-23-mun-8:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2022-23-mun-8:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2022-23-mun-8:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2022-23-mun-8:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2022-23-mun-8:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2022-23-mun-8:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2022-23-mun-8:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2022-23-mun-8:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot addition-b2-04:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity addition-b2-04:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot addition-b2-04:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity addition-b2-04:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot addition-b2-04:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity addition-b2-04:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot addition-b2-04:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity addition-b2-04:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2016-17-zak-9:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2016-17-zak-9:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2016-17-zak-9:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2016-17-zak-9:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2016-17-zak-9:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2016-17-zak-9:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2016-17-zak-9:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2020-21-pri-qac236e:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2020-21-pri-qac236e:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2020-21-pri-qac236e:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2020-21-pri-qac236e:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2020-21-pri-qac236e:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2020-21-pri-qac236e:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2020-21-pri-qac236e:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2020-21-pri-qac236e:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2021-22-mun-qa05d78:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2021-22-mun-qa05d78:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2021-22-mun-qa05d78:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2021-22-mun-qa05d78:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2021-22-mun-qa05d78:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2021-22-mun-qa05d78:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2021-22-mun-qa05d78:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2021-22-mun-qa05d78:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2015-16-zak-9:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2015-16-zak-9:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2015-16-zak-9:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2015-16-zak-9:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2015-16-zak-9:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2015-16-zak-9:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2015-16-zak-9:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2015-16-zak-9:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2018-19-zak-5:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2018-19-zak-5:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2018-19-zak-5:o2",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2018-19-zak-5:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2018-19-zak-5:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2018-19-zak-5:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2018-19-zak-5:o4",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2018-19-zak-5:o4",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2022-23-shk-qcd7a28:o1",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2022-23-shk-qcd7a28:o1",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2022-23-shk-qcd7a28:o2",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2022-23-shk-qcd7a28:o3",
+        "pass": true
+      },
+      {
+        "check": "proposed fact identity 2022-23-shk-qcd7a28:o3",
+        "pass": true
+      },
+      {
+        "check": "baseline caption snapshot 2022-23-shk-qcd7a28:o4",
+        "pass": true
+      },
+      {
+        "check": "caption/action counts",
+        "pass": true,
+        "details": {
+          "proposed": 69,
+          "new": 67,
+          "replacements": 2,
+          "retained": 9,
+          "skipped": 4,
+          "newCorrectNames": 20,
+          "companions": [
+            "2016-17-shk-10",
+            "2025-26-mun-10"
+          ]
+        }
+      },
+      {
+        "check": "complete gloss layer equals independent reconstruction",
+        "pass": true,
+        "details": {
+          "unexpectedEntries": []
+        }
+      },
+      {
+        "check": "complete editorial layer equals independent reconstruction",
+        "pass": true,
+        "details": {
+          "unexpectedEntries": []
+        }
+      },
+      {
+        "check": "review authorizes exactly one visible semantic cue",
+        "pass": true
+      },
+      {
+        "check": "fact-group layer exactly preserves full union and unrelated groups",
+        "pass": true,
+        "details": {
+          "mergedOldGroups": [
+            "contextual-next20-20261104-1"
+          ],
+          "oldMembership": 49,
+          "unionMembership": 50,
+          "newGroup": "contextual-batch3-20261104-1",
+          "unexpectedGroups": []
+        }
+      },
+      {
+        "check": "full bank equals independent reconstruction",
+        "pass": true,
+        "details": {
+          "unexpectedRecords": []
+        }
+      },
+      {
+        "check": "all record IDs and order unchanged",
+        "pass": true
+      },
+      {
+        "check": "all option IDs/text/order and answer keys/states unchanged",
+        "pass": true
+      },
+      {
+        "check": "retained full layer objects unchanged",
+        "pass": true
+      },
+      {
+        "check": "three false positives and three hidden diagnostics recorded",
+        "pass": true
+      },
+      {
+        "check": "no false-positive/hidden pair newly grouped",
+        "pass": true
+      },
+      {
+        "check": "published set/order unchanged at 964",
+        "pass": true
+      },
+      {
+        "check": "dist embeds exact current published bank",
+        "pass": true
+      },
+      {
+        "check": "diagnostic visibility matches current site",
+        "pass": true
+      },
+      {
+        "check": "remaining eligible correct-answer names decline 70 to 50",
+        "pass": true,
+        "details": {
+          "before": 70,
+          "after": 50
+        }
+      },
+      {
+        "check": "application metadata binds approved companion edits and prior entries",
+        "pass": true
+      },
+      {
+        "check": "data/authority files stable during independent review",
+        "pass": true
+      }
+    ],
+    "blockers": [],
+    "summary": {
+      "checks": 176,
+      "passed": 176,
+      "proposedCaptions": 69,
+      "newCaptions": 67,
+      "replacementCaptions": 2,
+      "retainedCaptions": 9,
+      "newCorrectNames": 20,
+      "companionEdits": 2,
+      "unionGroupMembers": 50,
+      "fullBank": 1269,
+      "publishedBank": 964,
+      "missingAnswerNames": 50
+    },
+    "baselineHashes": {
+      "bank": "7d9f5b32aaec64c90191e2ff8a2ba4ffe9ad6c7f332368f3252c57351716c05e",
+      "glosses": "6f65accf74c03f2a366aeb805796d5abce7508cf1cd64a602c8a40a044f64de2",
+      "editorial": "b6dd0074ea67ca2e6df21310fd17d3d32e3d36d51e8cb5377f06b90070e657b2",
+      "fact-groups": "e51bce443ce4621d21650c69d168d39551e53634ef86ce627330a1e8238b6a82"
+    },
+    "verifiedFileHashes": {
+      "proposals": "8f392e5b78382be9ef50ac56494182c7347211702c4c132a598c291079a9c6bf",
+      "decisions": "9acd9bad47bea99672852eac1ff6af579778c12f7cb74438262f6ef53e9085e7",
+      "browser-state": "aab14f7a85ecfbb5b57bb204affcbacbdbced9bdd1b89fee3c3865a2541d6fcb",
+      "verification": "8f695875e0d5fc49431f71eb504fc91976cc66ceb68d025c8aa5a9c4ab57db02",
+      "links": "ae7b36c8556510193aed7cd553ab73004c19b36d889c334181fd0bdbda1231e1",
+      "application": "74518d9a1534a96f9bd922fd212d7c01a234e86f29bd2d323dd967e71b0f0367",
+      "glosses": "3531dfe02562fd1902a9a20302718ac7717c440ec67ef322d41b53ac80adb7eb",
+      "editorial": "19db208008391034910c7eeccc0d471bcacda1537c8300ac200e0d25eb03541c",
+      "fact-groups": "04ff09cebbe160d911375b5110825998ca5f9f54c4876419b29c9564fb93cd77",
+      "bank": "a6a3f593a7913d786e14f2c9916a3471dee4cc8324fd1d90249a342300fdd073",
+      "dist": "a46539e1987667f54a615ca1441e501c48c2ab865e4e57a13e65665f04dba6c8"
+    },
+    "limitations": [
+      "External factual-source review was not repeated; all 78 fact captions and sources were checked for exact equality with the independent content-verification artifact.",
+      "Full Python/Node test suites and build are owned by controller and were not rerun.",
+      "Persisted browser state/revision was verified; live browser state freshness is based on the controller-provided latest-browser observation.",
+      "Known pending status-document wording was excluded from findings as requested."
+    ]
+  },
+  "validation": {
+    "build": {
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    "python": {
+      "command": "python3 -m unittest discover -s test -t .",
+      "tests": 478,
+      "skipped": 0,
+      "exitCode": 0
+    },
+    "node": {
+      "command": "node --test test/*.test.mjs",
+      "tests": 166,
+      "skipped": 0,
+      "exitCode": 0
+    },
+    "exactApprovedBankMatch": true
+  }
+}

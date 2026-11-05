@@ -1,0 +1,1696 @@
+{
+  "reviewId": "lingvo-contextual-glosses-next20-2026-11-03-v1",
+  "approvedManifestHash": "518573f5ad06c33ade06f96780d6a141e000aecb53bfe84a3472c6c2d0601f4d",
+  "amendmentHash": "256e1358d035457f47b8844fe08dde86678569fd2a25a75fd82b073b89a16f08",
+  "review": {
+    "schema": "lingvo-next20-amendment-review-v1",
+    "reviewId": "lingvo-contextual-glosses-next20-2026-11-03-v1",
+    "manifestHash": "518573f5ad06c33ade06f96780d6a141e000aecb53bfe84a3472c6c2d0601f4d",
+    "checkedAt": "2026-11-04",
+    "reviewer": "independent-next20-amendment-review",
+    "verdict": "pass",
+    "blockingFindings": [],
+    "method": "Read current CLAUDE.md and signed manifest/decisions. Explicitly compared each original and amended correct caption with question+answer. Independently opened or targeted-searched all 26 amended/new captions against authoritative sources. Preserved meaningful unchanged captions and approved editorial companion. Checked <=90 characters, no Chinese repetition, matching zh/source/fact, stable question/answer/option ids and texts. No production files edited.",
+    "counts": {
+      "questions": 20,
+      "captionsIncludingExisting": 68,
+      "changedCaptions": 26,
+      "changedCorrectCaptions": 19,
+      "newDistractorCaptions": 7,
+      "maximumCaptionCharacters": 81,
+      "reviewerCaptionTextEdits": 0,
+      "reviewerSourceOrQuoteCorrections": 3
+    },
+    "formalChecks": {
+      "questionIdsKeysAnswersOptionsUnchanged": true,
+      "approvedHuaToQuestionPreserved": true,
+      "allCaptionsAtMost90Characters": true,
+      "noChineseCharactersInRussianCaptions": true,
+      "sourceFactCopiesMatchOptions": true,
+      "allCorrectCaptionsAddKnowledge": true,
+      "signedManifestNotEdited": true
+    },
+    "items": [
+      {
+        "questionId": "2016-17-reg-1",
+        "questionRu": "Как называется должность главы государства в КНР?",
+        "answer": "主席",
+        "originalGloss": "Председатель — название главы государства в КНР",
+        "originalComparison": "Повторяет должность главы государства; нужен способ избрания, функция или иной существенный факт.",
+        "revisedGloss": "Председатель — избирается Всекитайским собранием народных представителей",
+        "addedKnowledgeComparison": "Порядок избрания председателя ВСНП; в вопросе спрашивается только название должности.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "总统",
+            "correct": false,
+            "caption": "Президент, глава государства в Китайской Республике (ныне — на Тайване)",
+            "characters": 71,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "總統 — 中華民國總統府",
+              "url": "https://www.president.gov.tw/POP/286"
+            },
+            "quote": "總統為國家元首",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "总理",
+            "correct": false,
+            "caption": "Премьер Госсовета, глава центрального правительства КНР",
+            "characters": 55,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "中华人民共和国国务院组织法 — 国家统计局",
+              "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250312_1958941.html"
+            },
+            "quote": "总理领导国务院的工作",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "主席",
+            "correct": true,
+            "caption": "Председатель — избирается Всекитайским собранием народных представителей",
+            "characters": 72,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "中华人民共和国宪法 — 国家统计局",
+              "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250312_1958942.html"
+            },
+            "quote": "由全国人民代表大会选举",
+            "verification": "independently-indexed",
+            "remainingLimitations": [
+              "Полный прямой open страницы был неполным, дал таймаут или 404 старого пути; факт и точная короткая цитата независимо подтверждены индексированным текстом указанного источника."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "皇帝",
+            "correct": false,
+            "caption": "Император, титул монарха, введённый Цинь Шихуаном",
+            "characters": 49,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "图片语境下的清代皇权 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/learing_detail/249435.html"
+            },
+            "quote": "皇帝一词始称于秦始皇",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "2019-20-reg-4",
+        "questionRu": "Как в Китае называли отца правящего императора, который ещё при жизни уступил сыну трон?",
+        "answer": "太上皇",
+        "originalGloss": "Тайшанхуан — титул отца императора, уступившего сыну престол",
+        "originalComparison": "Определение целиком дано в вопросе; нужен пример конкретного носителя титула.",
+        "revisedGloss": "Тайшанхуан — этот титул носил Цяньлун, передавший престол Цзяцину в 1796 году",
+        "addedKnowledgeComparison": "Пример носителя титула — Цяньлун, его преемник и 1796 год; в вопросе лишь определение титула.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [
+          {
+            "questionId": "2019-20-reg-4",
+            "optionId": "o2",
+            "type": "source",
+            "before": {
+              "title": "乾隆皇帝一箭双鹿图 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/collection/paint/233342.html"
+            },
+            "after": {
+              "title": "青玉交龙纽“太上皇帝之宝” — 故宫博物院",
+              "url": "https://www.dpm.org.cn/collection/seal/233620.html"
+            },
+            "reason": "Исходная карточка paint/233342 не извлечена; более прямая карточка императорской печати у того же музея независимо подтверждает дату и носителя титула. Подпись и цитата сохранены."
+          }
+        ],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "太子",
+            "correct": false,
+            "caption": "Наследный принц (тайцзы), официальный наследник императора, обычно его сын",
+            "characters": 74,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "太子 — 教育部《國語辭典簡編本》",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=10120&la=0&powerMode=0"
+            },
+            "quote": "預備繼承王位的兒子",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "太上皇",
+            "correct": true,
+            "caption": "Тайшанхуан — этот титул носил Цяньлун, передавший престол Цзяцину в 1796 году",
+            "characters": 77,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "青玉交龙纽“太上皇帝之宝” — 故宫博物院",
+              "url": "https://www.dpm.org.cn/collection/seal/233620.html"
+            },
+            "quote": "于1796年自愿传位于嘉庆皇帝",
+            "verification": "independently-indexed",
+            "remainingLimitations": [
+              "Полный прямой open страницы был неполным, дал таймаут или 404 старого пути; факт и точная короткая цитата независимо подтверждены индексированным текстом указанного источника."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "皇后",
+            "correct": false,
+            "caption": "Императрица (хуанхоу), главная жена императора",
+            "characters": 46,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "皇后 — 教育部《國語辭典簡編本》",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=20961&la=0&powerMode=0"
+            },
+            "quote": "皇帝的正妻",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "太后",
+            "correct": false,
+            "caption": "Вдовствующая императрица (тайхоу), мать правящего императора",
+            "characters": 60,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "太后 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=49798&la=1&powerMode=0"
+            },
+            "quote": "皇帝的母親，稱為「皇太后」",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "2016-17-zak-7",
+        "questionRu": "Кто написал музыку государственного гимна Китая?",
+        "answer": "聂耳",
+        "originalGloss": "Не Эр — композитор, написавший музыку государственного гимна Китая",
+        "originalComparison": "Авторство музыки гимна уже является ответом; нужны обстоятельства создания или название исходной песни/фильма.",
+        "revisedGloss": "Не Эр — мелодия гимна была написана для кинофильма 1935 года",
+        "addedKnowledgeComparison": "Кинематографическое происхождение мелодии в 1935 году; в вопросе только композитор. Лао Шэ дан узнаваемый роман без выдуманной связи с гимном.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "郭沫若",
+            "correct": false,
+            "caption": "Го Можо — предлагал слова для нового гимна в 1949 году",
+            "characters": 54,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "1949年的政协诗篇 — 黑龙江省政协",
+              "url": "https://www.hljzx.gov.cn/contents/68/7216.html"
+            },
+            "quote": "郭沫若为新中国国歌拟出的歌词",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "聂耳",
+            "correct": true,
+            "caption": "Не Эр — мелодия гимна была написана для кинофильма 1935 года",
+            "characters": 60,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "新中国英雄模范人物：聂耳 — 共产党员网",
+              "url": "https://www.12371.cn/2013/08/05/ARTI1375670261247563.shtml"
+            },
+            "quote": "为电影《风云儿女》所作主题歌",
+            "verification": "independently-opened",
+            "remainingLimitations": []
+          },
+          {
+            "optionId": "o3",
+            "zh": "周恩来",
+            "correct": false,
+            "caption": "Чжоу Эньлай — при выборе гимна отстаивал сохранение прежних слов",
+            "characters": 64,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "《义勇军进行曲》成为国歌，为何周恩来厥功至伟？— 央广网 / 人民政协报",
+              "url": "https://military.cnr.cn/nrjx/20221002/t20221002_526025974.shtml"
+            },
+            "quote": "就用旧的歌词",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "老舍",
+            "correct": false,
+            "caption": "Лао Шэ — писатель, автор романа «Рикша»",
+            "characters": 39,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "老舍 — 中国作家网",
+              "url": "https://www.chinawriter.com.cn/xdzj/383.shtml"
+            },
+            "quote": "骆驼祥子",
+            "verification": "independently-opened",
+            "remainingLimitations": []
+          }
+        ]
+      },
+      {
+        "questionId": "2017-18-mun-2",
+        "questionRu": "На каком диалекте писал свои произведения известный китайский писатель Лао Шэ?",
+        "answer": "北京方言",
+        "originalGloss": "Пекинский диалект — его лексику Лао Шэ использовал в своих романах",
+        "originalComparison": "Использование пекинской лексики в романах лишь смягчает вопрос; не добавляет самостоятельного знания.",
+        "revisedGloss": "Пекинский диалект — его произношение служит фонетическим образцом для путунхуа",
+        "addedKnowledgeComparison": "Фонетическая роль пекинского произношения в путунхуа; в вопросе лишь связь с Лао Шэ. Весь диалект с путунхуа не отождествляется.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "吴方言",
+            "correct": false,
+            "caption": "Диалекты у — южная группа, к которой относятся шанхайские говоры",
+            "characters": 64,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "国家通用语言文字知识 — 兰州文理学院",
+              "url": "https://yywz.luas.edu.cn/2024/0909/c2149a119825/page.htm"
+            },
+            "quote": "上海、江苏南部",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "湘方言",
+            "correct": false,
+            "caption": "Диалекты сян — южная группа, распространённая в Хунани",
+            "characters": 54,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "国家通用语言文字知识 — 兰州文理学院",
+              "url": "https://yywz.luas.edu.cn/2024/0909/c2149a119825/page.htm"
+            },
+            "quote": "分布于湖南大部",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "粤方言",
+            "correct": false,
+            "caption": "Диалекты юэ — южная группа, распространённая в Гуандуне и Гуанси",
+            "characters": 64,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "国家通用语言文字知识 — 兰州文理学院",
+              "url": "https://yywz.luas.edu.cn/2024/0909/c2149a119825/page.htm"
+            },
+            "quote": "广东中部和西南部",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "北京方言",
+            "correct": true,
+            "caption": "Пекинский диалект — его произношение служит фонетическим образцом для путунхуа",
+            "characters": 78,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "推广普通话宣传提纲和宣传口号 — 教育部",
+              "url": "https://www.moe.gov.cn/s78/A18/s8357/moe_808/tnull_17134.html"
+            },
+            "quote": "以北京语音为标准音",
+            "verification": "independently-indexed",
+            "remainingLimitations": [
+              "Полный прямой open страницы был неполным, дал таймаут или 404 старого пути; факт и точная короткая цитата независимо подтверждены индексированным текстом указанного источника."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "2023-24-reg-2",
+        "questionRu": "Кем по профессии был известный русский писатель А. П. Чехов?",
+        "answer": "医生",
+        "originalGloss": "Врач — Чехов принимал пациентов и бесплатно выдавал лекарства",
+        "originalComparison": "Бесплатная выдача лекарств раскрывает врачебную практику, которой в вопросе нет; сохранить.",
+        "revisedGloss": "Врач — Чехов принимал пациентов и бесплатно выдавал лекарства",
+        "addedKnowledgeComparison": "Бесплатная выдача лекарств, конкретная врачебная практика; исходная полезная подпись сохранена.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "老师",
+            "verdict": "accepted-no-new-caption",
+            "reason": "Обычное название профессии, вида искусства или животного: один перевод был бы словарным наполнителем; содержательная новая подпись не предлагается.",
+            "remainingLimitations": [
+              "Новая подпись отсутствует: обычный словарный перевод или искусственный дистрактор не дают полезной справки."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "律师",
+            "verdict": "accepted-no-new-caption",
+            "reason": "Обычное название профессии, вида искусства или животного: один перевод был бы словарным наполнителем; содержательная новая подпись не предлагается.",
+            "remainingLimitations": [
+              "Новая подпись отсутствует: обычный словарный перевод или искусственный дистрактор не дают полезной справки."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "医生",
+            "correct": true,
+            "caption": "Врач — Чехов принимал пациентов и бесплатно выдавал лекарства",
+            "characters": 61,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "Амбулатория — музей-заповедник А. П. Чехова «Мелихово»",
+              "url": "https://chekhovmuseum.com/museum/objects/17/872?type=section"
+            },
+            "quote": "Чехов, знакомясь с крестьянами, представился как врач и вел прием больных совершенно бескорыстно, выдавал бесплатно лекарства.",
+            "verification": "independently-opened",
+            "remainingLimitations": []
+          },
+          {
+            "optionId": "o4",
+            "zh": "商人",
+            "verdict": "accepted-no-new-caption",
+            "reason": "Обычное название профессии, вида искусства или животного: один перевод был бы словарным наполнителем; содержательная новая подпись не предлагается.",
+            "remainingLimitations": [
+              "Новая подпись отсутствует: обычный словарный перевод или искусственный дистрактор не дают полезной справки."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "2023-24-reg-7",
+        "questionRu": "Кто из нижеперечисленных китайских деятелей культуры является художником?",
+        "answer": "徐悲鸿",
+        "originalGloss": "Сюй Бэйхун — художник, работавший в китайской живописи и маслом",
+        "originalComparison": "Техники живописи добавляют знание, но обязательный комментарий автора требует знаменитых лошадей.",
+        "revisedGloss": "Сюй Бэйхун — мастер изображения лошадей; изучал их анатомию и движения",
+        "addedKnowledgeComparison": "Знаменитые изображения лошадей и работа с анатомией/движением; вопрос сообщает лишь профессию художника.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "聂耳",
+            "correct": false,
+            "caption": "Не Эр — композитор, автор музыки гимна Китая",
+            "characters": 44,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "聂耳故居 — 上海市虹口区人民政府",
+              "url": "https://www.shhk.gov.cn/zjhk/001003/001003002/20140902/78dcbb54-b522-48c4-b766-309a3eed9f4b.html"
+            },
+            "quote": "作曲家。…国歌《义勇军进行曲》曲作者",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "老舍",
+            "correct": false,
+            "caption": "Лао Шэ — писатель и драматург, автор «Рикши» и «Чайной»",
+            "characters": 55,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "老舍 — 中国作家网",
+              "url": "https://www.chinawriter.com.cn/xdzj/383.shtml"
+            },
+            "quote": "骆驼祥子（长篇小说）…茶馆（话剧",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "徐悲鸿",
+            "correct": true,
+            "caption": "Сюй Бэйхун — мастер изображения лошадей; изучал их анатомию и движения",
+            "characters": 70,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "徐悲鸿鸣马图轴 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/collection/paint/230490.html"
+            },
+            "quote": "徐悲鸿擅长画马…马的肌肉、骨骼、神情动态",
+            "verification": "independently-indexed",
+            "remainingLimitations": [
+              "Полный прямой open страницы был неполным, дал таймаут или 404 старого пути; факт и точная короткая цитата независимо подтверждены индексированным текстом указанного источника."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "施耐庵",
+            "correct": false,
+            "caption": "Ши Найань — писатель-романист",
+            "characters": 29,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "施耐庵 — 盐城市史志网",
+              "url": "https://szw.yancheng.gov.cn/art/2017/12/28/art_540_328272.html"
+            },
+            "quote": "小说家",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "addition-b1-20",
+        "questionRu": "Кто автор оперы «Жизнь за царя» («Иван Сусанин», премьера 1836 г.), с которой принято отсчитывать историю русской национальной оперы?",
+        "answer": "格林卡",
+        "originalGloss": "Михаил Глинка — автор оперы «Жизнь за царя» («Иван Сусанин»)",
+        "originalComparison": "Полностью повторяет авторство и оба названия из вопроса; обязательна содержательная деталь.",
+        "revisedGloss": "Михаил Глинка — в финале этой оперы звучит знаменитый хор «Славься»",
+        "addedKnowledgeComparison": "Конкретная музыкальная часть оперы — хор «Славься» в финале; название оперы и авторство не пересказываются.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "柴可夫斯基",
+            "correct": false,
+            "caption": "Пётр Чайковский — автор оперы «Евгений Онегин»",
+            "characters": 46,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "Евгений Онегин — Приморская сцена Мариинского театра",
+              "url": "https://prim.mariinsky.ru/playbill/playbill/2026/1/25/1_1700/"
+            },
+            "quote": "Музыка Петра Чайковского",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "格林卡",
+            "correct": true,
+            "caption": "Михаил Глинка — в финале этой оперы звучит знаменитый хор «Славься»",
+            "characters": 67,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "В Челябинском театре оперы и балета состоялась премьера оперы «Жизнь за царя»",
+              "url": "https://www.chelopera.ru/events/2012/11/19/v-chelyabinskom-teatre-opery-i-baleta-sostoyalas-p/"
+            },
+            "quote": "Финал, в котором звучит широко известный хор «Славься!»",
+            "verification": "independently-opened",
+            "remainingLimitations": []
+          },
+          {
+            "optionId": "o3",
+            "zh": "穆索尔斯基",
+            "correct": false,
+            "caption": "Модест Мусоргский — автор оперы «Борис Годунов»",
+            "characters": 47,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "Борис Годунов — Мариинский театр",
+              "url": "https://www.mariinsky.ru/playbill/playbill/2026/3/14/2_1300/"
+            },
+            "quote": "Музыка Модеста Мусоргского",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "鲍罗丁",
+            "correct": false,
+            "caption": "Александр Бородин — автор оперы «Князь Игорь»",
+            "characters": 45,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "Князь Игорь — Мариинский театр",
+              "url": "https://www.mariinsky.ru/ru/playbill/playbill/2026/2/23/1_1900/"
+            },
+            "quote": "Музыка Александра Бородина",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "2025-26-shk-33",
+        "questionRu": "В каком виде искусства в Китае есть такие жанры, как «цветы-птицы», «горы-воды»?",
+        "answer": "绘画",
+        "originalGloss": "Живопись — к ней относятся жанры «цветы-птицы» и «горы-воды»",
+        "originalComparison": "Повторяет оба названных в вопросе жанра; нужен смысл жанров или иная существенная подробность.",
+        "revisedGloss": "Живопись — в китайской традиции пишут тушью и красками на бумаге или шёлке",
+        "addedKnowledgeComparison": "Материалы традиционной китайской живописи — тушь, краски, бумага, шёлк; вопрос называет только жанры.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "建筑艺术",
+            "verdict": "accepted-no-new-caption",
+            "reason": "Обычное название профессии, вида искусства или животного: один перевод был бы словарным наполнителем; содержательная новая подпись не предлагается.",
+            "remainingLimitations": [
+              "Новая подпись отсутствует: обычный словарный перевод или искусственный дистрактор не дают полезной справки."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "绘画",
+            "correct": true,
+            "caption": "Живопись — в китайской традиции пишут тушью и красками на бумаге или шёлке",
+            "characters": 74,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "中国画 — 广东美术馆",
+              "url": "https://www.gdmoa.org/Public_Education/Classroom/Online_Academy/201612/t20161202_2584.shtml"
+            },
+            "quote": "使用国画颜料和墨在帛或宣纸上作画",
+            "verification": "independently-opened",
+            "remainingLimitations": []
+          },
+          {
+            "optionId": "o3",
+            "zh": "文学",
+            "verdict": "accepted-no-new-caption",
+            "reason": "Обычное название профессии, вида искусства или животного: один перевод был бы словарным наполнителем; содержательная новая подпись не предлагается.",
+            "remainingLimitations": [
+              "Новая подпись отсутствует: обычный словарный перевод или искусственный дистрактор не дают полезной справки."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "雕塑",
+            "verdict": "accepted-no-new-caption",
+            "reason": "Обычное название профессии, вида искусства или животного: один перевод был бы словарным наполнителем; содержательная новая подпись не предлагается.",
+            "remainingLimitations": [
+              "Новая подпись отсутствует: обычный словарный перевод или искусственный дистрактор не дают полезной справки."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "2017-18-mun-10",
+        "questionRu": "Как называют город Цзиндэчжэнь в провинции Цзянси?",
+        "answer": "瓷都",
+        "originalGloss": "Фарфоровая столица — Цзиндэчжэнь славится многовековым производством фарфора",
+        "originalComparison": "Многовековое производство раскрывает происхождение прозвища; исходное знание полезно, конкретизация допустима.",
+        "revisedGloss": "Фарфоровая столица — здесь обжигали фарфор для императорского двора Мин и Цин",
+        "addedKnowledgeComparison": "Императорское производство эпох Мин и Цин конкретизирует происхождение прозвища; полезнее исходной общей многовековой истории.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "酒都",
+            "correct": false,
+            "caption": "Винная столица — так называют Ибинь, известный производством байцзю",
+            "characters": 67,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "宜宾历史文化名城保护规划（2022—2035）— 四川省人民政府",
+              "url": "https://www.sc.gov.cn/10462/10778/10876/2023/1/16/1235a74c94284404979250f4308dabec/files/%E5%AE%9C%E5%AE%BE%E5%B8%82%E5%8E%86%E5%8F%B2%E6%96%87%E5%8C%96%E5%90%8D%E5%9F%8E%E4%BF%9D%E6%8A%A4%E8%A7%84%E5%88%92-%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf"
+            },
+            "quote": "宜宾是中国酒都，浓香型白酒文化的代表性遗产地",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "花都",
+            "correct": false,
+            "caption": "Цветочная столица — так называют Куньмин, крупный центр торговли цветами",
+            "characters": 72,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "鄂州50万枝鲜花反向“飞”往花都昆明 — 鄂州市人民政府",
+              "url": "https://www.ezhou.gov.cn/zt/zdzt/hkcs/cyfz/202606/t20260616_768308.html"
+            },
+            "quote": "“中国花都”云南昆明",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "陶都",
+            "correct": false,
+            "caption": "Гончарная столица — так называют Исин, знаменитый чайниками из исинской глины",
+            "characters": 77,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "访中国陶都——江苏宜兴 — 福建省委台港澳工作办公室",
+              "url": "https://www.fjtb.gov.cn/focus/201701hxlw/201703/t20170328_11732855.html"
+            },
+            "quote": "江苏宜兴，号称“中国陶都”",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "瓷都",
+            "correct": true,
+            "caption": "Фарфоровая столица — здесь обжигали фарфор для императорского двора Мин и Цин",
+            "characters": 77,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "“千年瓷都”熠熠生辉 — 景德镇市人民政府",
+              "url": "https://jdz.gov.cn/zwzx/jrcd/t1009598.shtml"
+            },
+            "quote": "是明、清两代的皇家瓷厂",
+            "verification": "independently-indexed",
+            "remainingLimitations": [
+              "Полный прямой open страницы был неполным, дал таймаут или 404 старого пути; факт и точная короткая цитата независимо подтверждены индексированным текстом указанного источника."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "2017-18-reg-4",
+        "questionRu": "Как заканчивается идиома, означающая надежду родителей на то, что сын станет успешным: «надеяться, что сын станет …»?",
+        "answer": "龙",
+        "originalGloss": "Дракон — в этой идиоме символизирует будущий успех сына",
+        "originalComparison": "Символ успеха сына целиком дан в вопросе; нужен смысл образа дракона или его культурный контекст.",
+        "revisedGloss": "Дракон — о дочери говорят аналогично: «надеяться, что станет фениксом»",
+        "addedKnowledgeComparison": "Парное выражение о дочери и фениксе; не повторяет уже объяснённую надежду на успех сына.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "马",
+            "verdict": "accepted-no-new-caption",
+            "reason": "Обычное название профессии, вида искусства или животного: один перевод был бы словарным наполнителем; содержательная новая подпись не предлагается.",
+            "remainingLimitations": [
+              "Новая подпись отсутствует: обычный словарный перевод или искусственный дистрактор не дают полезной справки."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "龙",
+            "correct": true,
+            "caption": "Дракон — о дочери говорят аналогично: «надеяться, что станет фениксом»",
+            "characters": 70,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "望子成龍 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=162988&la=1&powerMode=0"
+            },
+            "quote": "望子成龍，望女成鳳",
+            "verification": "independently-indexed",
+            "remainingLimitations": [
+              "Полный прямой open страницы был неполным, дал таймаут или 404 старого пути; факт и точная короткая цитата независимо подтверждены индексированным текстом указанного источника."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "虎",
+            "verdict": "accepted-no-new-caption",
+            "reason": "Обычное название профессии, вида искусства или животного: один перевод был бы словарным наполнителем; содержательная новая подпись не предлагается.",
+            "remainingLimitations": [
+              "Новая подпись отсутствует: обычный словарный перевод или искусственный дистрактор не дают полезной справки."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "狮",
+            "verdict": "accepted-no-new-caption",
+            "reason": "Обычное название профессии, вида искусства или животного: один перевод был бы словарным наполнителем; содержательная новая подпись не предлагается.",
+            "remainingLimitations": [
+              "Новая подпись отсутствует: обычный словарный перевод или искусственный дистрактор не дают полезной справки."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "2017-18-shk-3",
+        "questionRu": "Какой цвет грима в пекинской опере символизирует верность и храбрость?",
+        "answer": "红色",
+        "originalGloss": "Красный — в пекинской опере символизирует верность и храбрость",
+        "originalComparison": "Повторяет верность и храбрость из вопроса; нужен персонаж-пример.",
+        "revisedGloss": "Красный — таким гримом изображают Гуань Юя, героя «Троецарствия»",
+        "addedKnowledgeComparison": "Гуань Юй как пример красного грима и герой «Троецарствия»; вопрос сообщает только символику цвета.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [
+          {
+            "questionId": "2017-18-shk-3",
+            "optionId": "o2",
+            "type": "quote-order",
+            "before": "关羽是古典小说《三国演义》中的人物…关羽就画红脸了",
+            "after": "关羽就画红脸了…关羽是古典小说《三国演义》中的人物",
+            "reason": "Два достоверных фрагмента переставлены в порядок исходной страницы: красный грим в строке 57, персонаж романа в строке 59. Подпись не меняется."
+          }
+        ],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "白色",
+            "correct": false,
+            "caption": "Белый — в оперном гриме обозначает коварство и хитрость",
+            "characters": 55,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "二、京剧脸谱 — 国家京剧院",
+              "url": "https://www.cnpoc.cn/cnpoc/gjkt/200807/f1f8824fe1f4433a8f95a53f8e9278fa.shtml"
+            },
+            "quote": "阴险、狡诈",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "红色",
+            "correct": true,
+            "caption": "Красный — таким гримом изображают Гуань Юя, героя «Троецарствия»",
+            "characters": 64,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "关公为什么画红脸？ — 国家京剧院",
+              "url": "https://www.cnpoc.cn/cnpoc/gjkt/200902/af1f2a271f144f44aa929075acce5f3e.shtml"
+            },
+            "quote": "关羽就画红脸了…关羽是古典小说《三国演义》中的人物",
+            "verification": "independently-opened",
+            "remainingLimitations": []
+          },
+          {
+            "optionId": "o3",
+            "zh": "蓝色",
+            "correct": false,
+            "caption": "Синий — в оперном гриме обозначает силу характера и непокорность",
+            "characters": 64,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "二、京剧脸谱 — 国家京剧院",
+              "url": "https://www.cnpoc.cn/cnpoc/gjkt/200807/f1f8824fe1f4433a8f95a53f8e9278fa.shtml"
+            },
+            "quote": "刚强、粗犷、骁勇、桀傲不驯",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "黑色",
+            "correct": false,
+            "caption": "Чёрный — в оперном гриме обозначает прямоту и неподкупность",
+            "characters": 59,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "京剧脸谱 — 人民日报海外版",
+              "url": "https://paper.people.com.cn/rmrbhwb/html/2013-07/10/content_1266505.htm"
+            },
+            "quote": "正直、无私、刚直不阿",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "2017-18-zak-4",
+        "questionRu": "Какие растения называют «четырьмя благородными» в китайской живописи?",
+        "answer": "梅、兰、竹、菊",
+        "originalGloss": "Слива, орхидея, бамбук, хризантема — это «четыре благородных» китайской живописи",
+        "originalComparison": "Только переводит список ответа и повторяет вопрос; нужна символика растений.",
+        "revisedGloss": "Слива, орхидея, бамбук, хризантема — стойкость, чистота, прямота и независимость",
+        "addedKnowledgeComparison": "Символические качества четырёх растений в соответствующем порядке; вопрос спрашивает их состав.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "松、竹、梅、桂",
+            "correct": false,
+            "caption": "Сосна, бамбук, слива, османтус — здесь нет орхидеи и хризантемы",
+            "characters": 63,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "菊花的文化内涵 — 北京市园林绿化局",
+              "url": "https://yllhj.beijing.gov.cn/ztxx/bjhx/hhzs/201809/t20180913_118637.shtml"
+            },
+            "quote": "梅兰竹菊",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "梅、兰、竹、菊",
+            "correct": true,
+            "caption": "Слива, орхидея, бамбук, хризантема — стойкость, чистота, прямота и независимость",
+            "characters": 80,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "傲幽澹逸四君子——馆藏梅兰竹菊绘画作品展 — 沈阳故宫博物院",
+              "url": "https://www.sypm.org.cn/zhanlan_3/112.html"
+            },
+            "quote": "一身傲骨…高洁幽芳…虚心劲节…不趋炎势",
+            "verification": "independently-indexed",
+            "remainingLimitations": [
+              "Полный прямой open страницы был неполным, дал таймаут или 404 старого пути; факт и точная короткая цитата независимо подтверждены индексированным текстом указанного источника."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "松、竹、梅、菊",
+            "correct": false,
+            "caption": "Сосна, бамбук, слива, хризантема — сосна здесь заняла место орхидеи",
+            "characters": 67,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "菊花的文化内涵 — 北京市园林绿化局",
+              "url": "https://yllhj.beijing.gov.cn/ztxx/bjhx/hhzs/201809/t20180913_118637.shtml"
+            },
+            "quote": "梅兰竹菊",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "梅、兰、竹、桂",
+            "correct": false,
+            "caption": "Слива, орхидея, бамбук, османтус — османтус здесь занял место хризантемы",
+            "characters": 72,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "菊花的文化内涵 — 北京市园林绿化局",
+              "url": "https://yllhj.beijing.gov.cn/ztxx/bjhx/hhzs/201809/t20180913_118637.shtml"
+            },
+            "quote": "梅兰竹菊",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "2018-19-reg-7",
+        "questionRu": "К какой религии относится распространённый в Тибете ламаизм?",
+        "answer": "佛教",
+        "originalGloss": "Буддизм — к нему относится тибетская традиция, известная как ламаизм",
+        "originalComparison": "Принадлежность ламаизма буддизму — сам проверяемый факт; нужно дополнительное понятие.",
+        "revisedGloss": "Буддизм — «лама» в тибетской традиции означает духовного наставника",
+        "addedKnowledgeComparison": "Значение слова «лама» — духовный наставник; вопрос лишь классифицирует ламаизм. Неверные религии получают краткие идентифицирующие факты.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "佛教",
+            "correct": true,
+            "caption": "Буддизм — «лама» в тибетской традиции означает духовного наставника",
+            "characters": 67,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "喇嘛 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=59209&la=1&powerMode=0"
+            },
+            "quote": "上師。為藏語blama的音譯。",
+            "verification": "independently-opened",
+            "remainingLimitations": []
+          },
+          {
+            "optionId": "o2",
+            "zh": "道教",
+            "correct": false,
+            "caption": "Даосизм — почитает Лао-цзы и считает «Дао дэ цзин» главным каноном",
+            "characters": 66,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "什么是道教？ — 福建省人民政府",
+              "url": "https://www.fujian.gov.cn/hdjl/hdjlzsk/mzzjt/zj/201809/t20180929_4521598.htm"
+            },
+            "quote": "尊老子为教主…《道德经》为主要经典",
+            "verification": "independently-indexed",
+            "remainingLimitations": [
+              "Полный прямой open страницы был неполным, дал таймаут или 404 старого пути; факт и точная короткая цитата независимо подтверждены индексированным текстом указанного источника."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "伊斯兰教",
+            "correct": false,
+            "caption": "Ислам — его священная книга Коран, а последователей называют мусульманами",
+            "characters": 73,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "伊斯兰教 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956458.htm"
+            },
+            "quote": "被称为“穆斯林”…信奉经典是《古兰经》",
+            "verification": "independently-opened",
+            "remainingLimitations": []
+          },
+          {
+            "optionId": "o4",
+            "zh": "天主教",
+            "correct": false,
+            "caption": "Католицизм — одно из основных направлений христианства",
+            "characters": 54,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "什么是天主教？ — 福建省人民政府",
+              "url": "https://www.fj.gov.cn/hdjl/hdjlzsk/mzzjt/zj/201809/t20180929_4521615.htm"
+            },
+            "quote": "天主教(Catholicism)是基督教(Christianity)的三大派别之一",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "2018-19-reg-9",
+        "questionRu": "Как называется древний обычай, когда ребёнку в первый день рождения предлагают выбрать предметы, предсказывающие его будущее?",
+        "answer": "抓周",
+        "originalGloss": "Чжуачжоу — в год ребёнок выбирает предмет, по которому гадают о его будущем",
+        "originalComparison": "Первый день рождения, выбор вещей и гадание уже изложены в вопросе; нужен пример предмета или иной факт.",
+        "revisedGloss": "Чжуачжоу — кисть предвещает учёность, счёты — умение вести денежные дела",
+        "addedKnowledgeComparison": "Конкретные предметы гадания (кисть, счёты) и их значения; общий механизм обряда уже есть в вопросе.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "起名",
+            "correct": false,
+            "caption": "Наречение имени — ребёнку выбирают имя, а не предмет для гадания о будущем",
+            "characters": 74,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "重庆民俗风情——汉族人生礼仪 — 重庆市地方志办公室",
+              "url": "https://dfz.cq.gov.cn/zqlswh/msmf_417820/202311/t20231102_12510455.html"
+            },
+            "quote": "家长就要给他取名字",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "满月",
+            "correct": false,
+            "caption": "Мань юэ — празднование первого месяца жизни, а не первого дня рождения",
+            "characters": 70,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "生辰礼仪 — 天门市人民政府",
+              "url": "https://www.tianmen.gov.cn/zjtm/tmwh/tmms/201604/t20160419_1931007.shtml"
+            },
+            "quote": "足月时",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "抓周",
+            "correct": true,
+            "caption": "Чжуачжоу — кисть предвещает учёность, счёты — умение вести денежные дела",
+            "characters": 72,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "抓周 — 中国孔子网",
+              "url": "https://www.chinakongzi.org/zt/zhonghualiyue/201905/t20190509_194722.htm"
+            },
+            "quote": "笔墨、书卷…好学之士…账册、算盘…善于理财",
+            "verification": "independently-opened",
+            "remainingLimitations": []
+          },
+          {
+            "optionId": "o4",
+            "zh": "坐月子",
+            "correct": false,
+            "caption": "Цзо юэцзы — отдых и восстановление матери в первый месяц после родов",
+            "characters": 68,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "坐月子 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=135153&ver=4"
+            },
+            "quote": "婦人產後一個月內的休息調養",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "2018-19-zak-9",
+        "questionRu": "В традиционной китайской медицине есть четыре способа диагностики: осмотр, слушание и обоняние, расспрос и …",
+        "answer": "切",
+        "originalGloss": "Пальпация — ощупывание тела, четвёртый метод традиционной диагностики",
+        "originalComparison": "Раскрывает технический термин как ощупывание тела; полезное дополнение, сохранять можно.",
+        "revisedGloss": "Пальпация — включает прощупывание пульса на запястье и ощупывание тела",
+        "addedKnowledgeComparison": "Раскрытие пальпации через пульс на запястье и ощупывание тела; вопрос только перечисляет прочие методы.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [
+          {
+            "questionId": "2018-19-zak-9",
+            "optionId": "o1",
+            "type": "source-url",
+            "before": "https://www.cacm.org.cn/wp-content/uploads/2022/03/%E4%B8%AD%E5%8C%BB%E5%9B%9B%E8%AF%8A%E6%93%8D%E4%BD%9C%E8%A7%84%E8%8C%83-%E7%AC%AC4%E9%83%A8%E5%88%86%EF%BC%9A%E5%88%87%E8%AF%8A.pdf",
+            "after": "https://shangia.oss-cn-beijing.aliyuncs.com/p/cacm/uploads/2022/03/%E4%B8%AD%E5%8C%BB%E5%9B%9B%E8%AF%8A%E6%93%8D%E4%BD%9C%E8%A7%84%E8%8C%83-%E7%AC%AC4%E9%83%A8%E5%88%86%EF%BC%9A%E5%88%87%E8%AF%8A.pdf",
+            "reason": "Старый адрес cacm.org.cn/wp-content даёт 404. Найдено актуальное CDN-размещение того же документа GB/T 40665.4—2021; индексированный текст пунктов 3.1–3.6 подтверждает пульс на запястье и ощупывание тела."
+          }
+        ],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "切",
+            "correct": true,
+            "caption": "Пальпация — включает прощупывание пульса на запястье и ощупывание тела",
+            "characters": 70,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "GB/T 40665.4—2021 中医四诊操作规范 第4部分：切诊 — 中华中医药学会",
+              "url": "https://shangia.oss-cn-beijing.aliyuncs.com/p/cacm/uploads/2022/03/%E4%B8%AD%E5%8C%BB%E5%9B%9B%E8%AF%8A%E6%93%8D%E4%BD%9C%E8%A7%84%E8%8C%83-%E7%AC%AC4%E9%83%A8%E5%88%86%EF%BC%9A%E5%88%87%E8%AF%8A.pdf"
+            },
+            "quote": "两手腕部…是进行脉诊的部位",
+            "verification": "independently-indexed",
+            "remainingLimitations": [
+              "Полный прямой open страницы был неполным, дал таймаут или 404 старого пути; факт и точная короткая цитата независимо подтверждены индексированным текстом указанного источника."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "尝",
+            "verdict": "accepted-no-new-caption",
+            "reason": "尝 — обычный глагол «пробовать на вкус»; не подтверждён как название одного из четырёх методов. Новая подпись не предлагается.",
+            "remainingLimitations": [
+              "Новая подпись отсутствует: обычный словарный перевод или искусственный дистрактор не дают полезной справки."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "动",
+            "verdict": "accepted-no-new-caption",
+            "reason": "动 не подтверждён как самостоятельный диагностический термин в этой классификации; не добавлять произвольный словарный факт.",
+            "remainingLimitations": [
+              "Новая подпись отсутствует: обычный словарный перевод или искусственный дистрактор не дают полезной справки."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "争",
+            "verdict": "accepted-no-new-caption",
+            "reason": "争 не подтверждён как диагностический термин; искусственный дистрактор оставлен без подписи.",
+            "remainingLimitations": [
+              "Новая подпись отсутствует: обычный словарный перевод или искусственный дистрактор не дают полезной справки."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "2025-26-reg-2",
+        "questionRu": "Как называется самый известный труд великого китайского медика и фармаколога Ли Шичжэня?",
+        "answer": "“本草纲目”",
+        "originalGloss": "«Бэньцао ганму» — свод Ли Шичжэня о лекарственных средствах",
+        "originalComparison": "Называет содержание книги, но оно частично подразумевается профессией фармаколога; исходное можно сохранить, конкретизация предпочтительна.",
+        "revisedGloss": "«Бэньцао ганму» — описывает 1892 лекарственных вещества и более 11 тысяч рецептов",
+        "addedKnowledgeComparison": "Масштаб труда — 1892 лекарственных вещества и более 11 тысяч рецептов; в вопросе лишь имя автора и профессия.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "“神农本草经”",
+            "correct": false,
+            "caption": "«Шэньнун бэньцао цзин» — древний свод лекарств, сложившийся в эпоху Хань",
+            "characters": 72,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "《神农本草经》 — 神农架国家公园",
+              "url": "https://www.snjnationalpark.com/zyjs/whms/ydwh/202110/t4319857.shtml"
+            },
+            "quote": "于东汉时期集结整理成书",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "“本草纲目”",
+            "correct": true,
+            "caption": "«Бэньцао ганму» — описывает 1892 лекарственных вещества и более 11 тысяч рецептов",
+            "characters": 81,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "中医药学的宝库 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33259.shtml"
+            },
+            "quote": "收入药物1892种…附方11000多种",
+            "verification": "independently-opened",
+            "remainingLimitations": []
+          },
+          {
+            "optionId": "o3",
+            "zh": "“脉经”",
+            "correct": false,
+            "caption": "«Май цзин» — трактат Ван Шухэ о диагностике по пульсу",
+            "characters": 53,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "王叔和 — 国家中医药博物馆",
+              "url": "https://www.nmtcm.cn/stars_detail/243.html"
+            },
+            "quote": "专门讲求脉法的著作《脉经》",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "“素问”",
+            "correct": false,
+            "caption": "«Сувэнь» — часть древнего медицинского канона «Хуанди нэйцзин»",
+            "characters": 62,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "素问 — 中国医药信息查询平台, статья проекта 国家中医药管理局",
+              "url": "https://m.dayi.org.cn/classics/100056.html"
+            },
+            "quote": "合之而为《黄帝内经》",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "addition-b2-12",
+        "questionRu": "Какой врач конца эпохи Восточной Хань, согласно древним письменным источникам, делал полостные операции, давая больному обезболивающее снадобье «мафэйсань» (麻沸散), и создал гимнастику «Игры пяти зверей» (五禽戏)?",
+        "answer": "华佗",
+        "originalGloss": "Хуа То — врач, которому приписывают создание «Игр пяти зверей»",
+        "originalComparison": "Игры пяти зверей названы в вопросе; нужен состав упражнений или иной факт.",
+        "revisedGloss": "Хуа То — его гимнастика подражает тигру, оленю, медведю, обезьяне и птице",
+        "addedKnowledgeComparison": "Состав пяти животных в гимнастике; само название гимнастики уже дано в вопросе. Согласованная оговорка «согласно древним письменным источникам» сохранена.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "张仲景",
+            "correct": false,
+            "caption": "Чжан Чжунцзин — врач Восточной Хань, автор «Шанхань цзабин лунь»",
+            "characters": 64,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "伤寒杂病论 — 中国医药信息查询平台, статья проекта 国家中医药管理局",
+              "url": "https://www.dayi.org.cn/classics/1123036"
+            },
+            "quote": "《伤寒杂病论》，十六卷，东汉张仲景撰",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "扁鹊",
+            "correct": false,
+            "caption": "Бянь Цюэ — легендарный врач доимперской эпохи, известный пульсовой диагностикой",
+            "characters": 79,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "扁鹊 — 国家中医药博物馆",
+              "url": "https://www.nmtcm.cn/stars_detail/236.html"
+            },
+            "quote": "先秦时代医师…切脉诊断方法",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "华佗",
+            "correct": true,
+            "caption": "Хуа То — его гимнастика подражает тигру, оленю, медведю, обезьяне и птице",
+            "characters": 73,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "五禽戏 — 河北省体育局",
+              "url": "https://sport.hebei.gov.cn/quanminjianshenzhinan/2019/0409/11494.html"
+            },
+            "quote": "一曰虎，二曰鹿，三曰熊，四曰猿，五曰鸟",
+            "verification": "independently-indexed",
+            "remainingLimitations": [
+              "Полный прямой open страницы был неполным, дал таймаут или 404 старого пути; факт и точная короткая цитата независимо подтверждены индексированным текстом указанного источника."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "孙思邈",
+            "correct": false,
+            "caption": "Сунь Сымяо — врач эпохи Тан, автор «Тысячи золотых рецептов»",
+            "characters": 60,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "孙思邈 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/244123.html"
+            },
+            "quote": "唐代…医学家…著有《备急千金要方》",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          }
+        ]
+      },
+      {
+        "questionId": "2018-19-reg-1",
+        "questionRu": "К какому народу принадлежал Чжэн Хэ — знаменитый мореплаватель эпохи Мин?",
+        "answer": "回族",
+        "originalGloss": "Хуэй — народ, к которому принадлежал мореплаватель Чжэн Хэ",
+        "originalComparison": "Повторяет этническую принадлежность Чжэн Хэ; нужна краткая характеристика хуэй.",
+        "revisedGloss": "Хуэй — китайскоязычный народ с исламской культурной традицией",
+        "addedKnowledgeComparison": "Язык и исламская культурная традиция хуэй; вопрос только об этническом происхождении Чжэн Хэ. Другим народам даны узнаваемые факты без искусственной связи с мореплавателем.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "汉族",
+            "correct": false,
+            "caption": "Ханьцы — самый многочисленный народ Китая",
+            "characters": 41,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "汉族 — 西藏自治区民族事务委员会",
+              "url": "https://mw.xizang.gov.cn/zsbk/mzgk/201903/t20190327_66873.html"
+            },
+            "quote": "我国的主体民族，也是世界上人口最多的民族",
+            "verification": "independently-indexed",
+            "remainingLimitations": [
+              "Полный прямой open страницы был неполным, дал таймаут или 404 старого пути; факт и точная короткая цитата независимо подтверждены индексированным текстом указанного источника."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "满族",
+            "correct": false,
+            "caption": "Маньчжуры — их знать правила Китаем при династии Цин",
+            "characters": 52,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "满族：历史沿革 — 国家民族事务委员会",
+              "url": "https://www.neac.gov.cn/seac/ztzl/manz/lsyg.shtml"
+            },
+            "quote": "清顺治元年…满族贵族对全国的统治",
+            "verification": "independently-indexed",
+            "remainingLimitations": [
+              "Полный прямой open страницы был неполным, дал таймаут или 404 старого пути; факт и точная короткая цитата независимо подтверждены индексированным текстом указанного источника."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "回族",
+            "correct": true,
+            "caption": "Хуэй — китайскоязычный народ с исламской культурной традицией",
+            "characters": 61,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "回族 — 西藏自治区民族事务委员会, материал 国家民委",
+              "url": "https://mw.xizang.gov.cn/zsbk/mzgk/201903/t20190327_66871.html"
+            },
+            "quote": "通用汉语，普遍信仰伊斯兰教",
+            "verification": "independently-indexed",
+            "remainingLimitations": [
+              "Полный прямой open страницы был неполным, дал таймаут или 404 старого пути; факт и точная короткая цитата независимо подтверждены индексированным текстом указанного источника."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "藏族",
+            "correct": false,
+            "caption": "Тибетцы — в их культуре известен героический эпос «Гэсэр»",
+            "characters": 57,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "格萨（斯）尔 — 国家民族事务委员会",
+              "url": "https://www.neac.gov.cn/seac/c103546/202305/1163429.shtml"
+            },
+            "quote": "关于藏族古代英雄格萨尔神圣业绩的宏大叙事",
+            "verification": "independently-opened",
+            "remainingLimitations": []
+          }
+        ]
+      },
+      {
+        "questionId": "addition-b1-16",
+        "questionRu": "Кто автор «天工开物» (1637) — иллюстрированной энциклопедии земледелия и ремёсел эпохи Мин, описывающей выплавку металлов, производство бумаги, фарфора, шёлка и др.?",
+        "answer": "宋应星",
+        "originalGloss": "Сун Инсин — автор «Тяньгун кайу», энциклопедии земледелия и ремёсел",
+        "originalComparison": "Авторство, название и тип энциклопедии даны в вопросе; обязательна содержательная деталь.",
+        "revisedGloss": "Сун Инсин — изучал технологии на месте и опирался на опыт мастеров",
+        "addedKnowledgeComparison": "Метод работы Сун Инсина — наблюдения на местах и опыт мастеров; вопрос уже перечисляет название, дату, авторство и содержание книги.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "沈括",
+            "correct": false,
+            "caption": "Шэнь Ко — автор научных записок «Мэнси битань» эпохи Сун",
+            "characters": 56,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "《梦溪笔谈》 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/zp/zpml/gjwxbt/202203/t20220301_254035.shtml"
+            },
+            "quote": "北宋著名科学家…编著《梦溪笔谈》一书",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "贾思勰",
+            "correct": false,
+            "caption": "Цзя Сысе — автор агрономического трактата «Циминь яошу», VI век",
+            "characters": 63,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "贾思勰 — 中国科学院自然科学史研究所",
+              "url": "https://agri-history.ihns.ac.cn/agriculturists/jsx.htm"
+            },
+            "quote": "约在公元533—544年间撰成农学巨著《齐民要术》",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "徐光启",
+            "correct": false,
+            "caption": "Сюй Гуанци — автор агрономического свода «Нунчжэн цюаньшу»",
+            "characters": 58,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "农政全书 — 中国科学院自然科学史研究所",
+              "url": "https://agri-history.ihns.ac.cn/books/treatise%20records/nongzhenquanshu.htm"
+            },
+            "quote": "《农政全书》的作者是徐光启",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o4",
+            "zh": "宋应星",
+            "correct": true,
+            "caption": "Сун Инсин — изучал технологии на месте и опирался на опыт мастеров",
+            "characters": 66,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "天人合一 开发万物：宋应星与《天工开物》 — 吉林省纪委省监委, статья 田心",
+              "url": "https://www.ccdijl.gov.cn/ztjc/ljwh/202103/t20210312_7964549.html"
+            },
+            "quote": "重视实地调查和劳动者实践经验",
+            "verification": "independently-opened",
+            "remainingLimitations": []
+          }
+        ]
+      },
+      {
+        "questionId": "addition-b2-18",
+        "questionRu": "Какой учёный стал первым в России лауреатом Нобелевской премии: в 1904 г. он получил премию по физиологии и медицине за работы по физиологии пищеварения?",
+        "answer": "巴甫洛夫",
+        "originalGloss": "Иван Павлов — нобелевский лауреат 1904 года за исследования пищеварения",
+        "originalComparison": "Год и причина Нобелевской премии целиком даны в вопросе; нужно другое известное достижение.",
+        "revisedGloss": "Иван Павлов — исследовал условные рефлексы и высшую нервную деятельность",
+        "addedKnowledgeComparison": "Условные рефлексы и высшая нервная деятельность; вопрос уже сообщает Нобелевскую премию за пищеварение. Сеченов получает узнаваемый труд без выдуманного нобелевского статуса.",
+        "verdict": "pass",
+        "questionAnswerOptionBoundaries": "unchanged-from-signed-manifest",
+        "corrections": [],
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "梅契尼科夫",
+            "correct": false,
+            "caption": "Илья Мечников — нобелевский лауреат 1908 года за исследования иммунитета",
+            "characters": 72,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "Ilya Mechnikov — Institut Pasteur",
+              "url": "https://www.pasteur.fr/en/about-us/ilya-mechnikov-elie-metchnikoff-french-1845-1916"
+            },
+            "quote": "He was jointly awarded the Nobel Prize with Paul Ehrlich in 1908. … For his work on immunity.",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o2",
+            "zh": "门捷列夫",
+            "correct": false,
+            "caption": "Дмитрий Менделеев — выдвигался на Нобелевскую премию, но не получил её",
+            "characters": 70,
+            "changedFromSignedManifest": false,
+            "verdict": "pass",
+            "source": {
+              "title": "The Uncertain Role of Nominations for the Nobel Prize in Chemistry — Chemistry – A European Journal",
+              "url": "https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/chem.202203985"
+            },
+            "quote": "Mendeleev is an interesting case of a nominee who did not receive the Nobel Prize",
+            "verification": "prior-independent-review-retained",
+            "remainingLimitations": [
+              "Подпись без изменения; использована предыдущая независимая сверка утверждённого manifest. Повторная полная проверка источника вне объёма этих поправок."
+            ]
+          },
+          {
+            "optionId": "o3",
+            "zh": "巴甫洛夫",
+            "correct": true,
+            "caption": "Иван Павлов — исследовал условные рефлексы и высшую нервную деятельность",
+            "characters": 72,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "Родился учёный, физиолог Иван Петрович Павлов — Президентская библиотека",
+              "url": "https://www.prlib.ru/history/1278600"
+            },
+            "quote": "физиологии высшей нервной деятельности. Эти достижения связаны с открытием условных рефлексов",
+            "verification": "independently-opened",
+            "remainingLimitations": []
+          },
+          {
+            "optionId": "o4",
+            "zh": "谢切诺夫",
+            "correct": false,
+            "caption": "Иван Сеченов — автор труда «Рефлексы головного мозга»",
+            "characters": 53,
+            "changedFromSignedManifest": true,
+            "verdict": "pass",
+            "source": {
+              "title": "Рефлексы головного мозга / [Соч.] И. Сеченова — Российская государственная библиотека",
+              "url": "https://search.rsl.ru/ru/record/01003584366"
+            },
+            "quote": "Рефлексы головного мозга / [Соч.] И. Сеченова",
+            "verification": "independently-opened",
+            "remainingLimitations": []
+          }
+        ]
+      }
+    ],
+    "corrections": [
+      {
+        "questionId": "2019-20-reg-4",
+        "optionId": "o2",
+        "type": "source",
+        "before": {
+          "title": "乾隆皇帝一箭双鹿图 — 故宫博物院",
+          "url": "https://www.dpm.org.cn/collection/paint/233342.html"
+        },
+        "after": {
+          "title": "青玉交龙纽“太上皇帝之宝” — 故宫博物院",
+          "url": "https://www.dpm.org.cn/collection/seal/233620.html"
+        },
+        "reason": "Исходная карточка paint/233342 не извлечена; более прямая карточка императорской печати у того же музея независимо подтверждает дату и носителя титула. Подпись и цитата сохранены."
+      },
+      {
+        "questionId": "2018-19-zak-9",
+        "optionId": "o1",
+        "type": "source-url",
+        "before": "https://www.cacm.org.cn/wp-content/uploads/2022/03/%E4%B8%AD%E5%8C%BB%E5%9B%9B%E8%AF%8A%E6%93%8D%E4%BD%9C%E8%A7%84%E8%8C%83-%E7%AC%AC4%E9%83%A8%E5%88%86%EF%BC%9A%E5%88%87%E8%AF%8A.pdf",
+        "after": "https://shangia.oss-cn-beijing.aliyuncs.com/p/cacm/uploads/2022/03/%E4%B8%AD%E5%8C%BB%E5%9B%9B%E8%AF%8A%E6%93%8D%E4%BD%9C%E8%A7%84%E8%8C%83-%E7%AC%AC4%E9%83%A8%E5%88%86%EF%BC%9A%E5%88%87%E8%AF%8A.pdf",
+        "reason": "Старый адрес cacm.org.cn/wp-content даёт 404. Найдено актуальное CDN-размещение того же документа GB/T 40665.4—2021; индексированный текст пунктов 3.1–3.6 подтверждает пульс на запястье и ощупывание тела."
+      },
+      {
+        "questionId": "2017-18-shk-3",
+        "optionId": "o2",
+        "type": "quote-order",
+        "before": "关羽是古典小说《三国演义》中的人物…关羽就画红脸了",
+        "after": "关羽就画红脸了…关羽是古典小说《三国演义》中的人物",
+        "reason": "Два достоверных фрагмента переставлены в порядок исходной страницы: красный грим в строке 57, персонаж романа в строке 59. Подпись не меняется."
+      }
+    ],
+    "remainingLimitations": [
+      "Некоторые официальные сайты ненадёжно отвечают на прямой open; использованы точные индексированные извлечения тех же страниц. Это отражено у соответствующих подписей.",
+      "Новые межвопросные связи требуют отдельной машинной проверки утечек при сборке; они не являются основанием удалить полезные сведения из подписи.",
+      "Неизменённые неверные подписи сохраняют предыдущую независимую сверку; эта проверка заново проверила все изменённые подписи и сохранённую верную подпись Чехова."
+    ],
+    "feedbackBasis": {
+      "nonemptySavedDecisionComments": 4,
+      "additionalGeneralChatDirective": 1,
+      "note": "Четыре сохранённых комментария: Лао Шэ, Сюй Бэйхун, Глинка, Сун Инсин; общее правило не повторять Q+A дополнительно задано в чате."
+    }
+  },
+  "validationErrors": []
+}

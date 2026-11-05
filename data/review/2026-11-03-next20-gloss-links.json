@@ -1,0 +1,164 @@
+{
+  "reviewId": "lingvo-contextual-glosses-next20-2026-11-03-v1",
+  "manifestHash": "518573f5ad06c33ade06f96780d6a141e000aecb53bfe84a3472c6c2d0601f4d",
+  "checkedAt": "2026-11-04",
+  "scope": "Только копия банка в памяти; правки не применены",
+  "validationErrors": [],
+  "newDiagnostics": [
+    {
+      "record": "2017-18-mun-2",
+      "option": "o1",
+      "zh": "吴方言",
+      "gloss": "Диалекты у — южная группа, к которой относятся шанхайские говоры",
+      "isAnswer": false,
+      "other": "2020-21-pri-qac236e",
+      "answer": [
+        "吴方言",
+        "диалект у"
+      ],
+      "clues": [
+        "Шанхай"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2017-18-mun-2",
+      "otherId": "2020-21-pri-qac236e",
+      "publishedPair": true
+    },
+    {
+      "record": "2017-18-mun-2",
+      "option": "o2",
+      "zh": "湘方言",
+      "gloss": "Диалекты сян — южная группа, распространённая в Хунани",
+      "isAnswer": false,
+      "other": "2021-22-mun-qa05d78",
+      "answer": [
+        "湘方言"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2017-18-mun-2",
+      "otherId": "2021-22-mun-qa05d78",
+      "publishedPair": true
+    },
+    {
+      "record": "2017-18-mun-2",
+      "option": "o3",
+      "zh": "粤方言",
+      "gloss": "Диалекты юэ — южная группа, распространённая в Гуандуне и Гуанси",
+      "isAnswer": false,
+      "other": "ethnos/ethnos-q86",
+      "answer": [
+        "粤方言"
+      ],
+      "clues": [
+        "Гуандун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2017-18-mun-2",
+      "otherId": "ethnos-q86",
+      "publishedPair": true
+    },
+    {
+      "record": "2017-18-shk-3",
+      "option": "o2",
+      "zh": "红色",
+      "gloss": "Красный — в пекинской опере символизирует верность и храбрость",
+      "isAnswer": true,
+      "other": "2016-17-mun-yar-8",
+      "answer": [
+        "Пекин"
+      ],
+      "clues": [
+        "Пекинская опера"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2017-18-shk-3",
+      "otherId": "2016-17-mun-yar-8",
+      "publishedPair": false
+    },
+    {
+      "record": "2023-24-reg-7",
+      "option": "o2",
+      "zh": "老舍",
+      "gloss": "Лао Шэ — писатель и драматург, автор «Рикши» и «Чайной»",
+      "isAnswer": false,
+      "other": "literature/literature-q02",
+      "answer": [
+        "老舍",
+        "Лао Шэ"
+      ],
+      "clues": [
+        "Чайная"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-reg-7",
+      "otherId": "2015-16-zak-8",
+      "publishedPair": true
+    }
+  ],
+  "publishedDistinctPairs": [
+    [
+      "2015-16-zak-8",
+      "2023-24-reg-7"
+    ],
+    [
+      "2017-18-mun-2",
+      "2020-21-pri-qac236e"
+    ],
+    [
+      "2017-18-mun-2",
+      "2021-22-mun-qa05d78"
+    ],
+    [
+      "2017-18-mun-2",
+      "ethnos-q86"
+    ]
+  ],
+  "nextStep": "При применении одобренных пунктов вручную разобрать пары; реальные взаимные подсказки объединить существующим слоем fact-groups, сохранив объясняющий смысл подписей.",
+  "manualAssessment": [
+    {
+      "ids": [
+        "2015-16-zak-8",
+        "2023-24-reg-7"
+      ],
+      "classification": "real-context-cue",
+      "resolutionAfterApproval": "Объединить с учётом уже существующих групп фактов: подпись сообщает существенный факт соседнего задания."
+    },
+    {
+      "ids": [
+        "2017-18-mun-2",
+        "2020-21-pri-qac236e"
+      ],
+      "classification": "real-context-cue",
+      "resolutionAfterApproval": "Объединить с учётом уже существующих групп фактов: подпись сообщает существенный факт соседнего задания."
+    },
+    {
+      "ids": [
+        "2017-18-mun-2",
+        "2021-22-mun-qa05d78"
+      ],
+      "classification": "real-context-cue",
+      "resolutionAfterApproval": "Объединить с учётом уже существующих групп фактов: подпись сообщает существенный факт соседнего задания."
+    },
+    {
+      "ids": [
+        "2017-18-mun-2",
+        "ethnos-q86"
+      ],
+      "classification": "real-context-cue",
+      "resolutionAfterApproval": "Объединить с учётом уже существующих групп фактов: подпись сообщает существенный факт соседнего задания."
+    }
+  ]
+}

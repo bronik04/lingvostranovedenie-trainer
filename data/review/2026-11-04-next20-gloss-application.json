@@ -1,0 +1,596 @@
+{
+  "schema": "lingvo-approved-gloss-application-v1",
+  "reviewId": "lingvo-contextual-glosses-next20-2026-11-03-v1",
+  "approvedManifestHash": "518573f5ad06c33ade06f96780d6a141e000aecb53bfe84a3472c6c2d0601f4d",
+  "amendmentHash": "256e1358d035457f47b8844fe08dde86678569fd2a25a75fd82b073b89a16f08",
+  "appliedAt": "2026-11-04",
+  "authorSubmittedAt": "2026-11-04T08:25:11.376017+00:00",
+  "counts": {
+    "questions": 20,
+    "proposedGlosses": 62,
+    "answerNames": 20,
+    "changedAfterComments": 26,
+    "correctCaptionsRevised": 19,
+    "addedFallbackCaptions": 7,
+    "companionEdits": 1
+  },
+  "authorComments": {
+    "2016-17-zak-7": "у лаоше если нет связи просто говори что автор произведения например рикша",
+    "2023-24-reg-7": "кажется его звестные работы это лошади ",
+    "addition-b1-20": "Если русское пояснение просто повторяет вопрос, это плохое пояснение.",
+    "addition-b1-16": "опять же плохое пояснение "
+  },
+  "companionQuestionIds": [
+    "addition-b2-12"
+  ],
+  "previousEditorialEntries": {
+    "addition-b2-12": {
+      "reason": "Название эпохи не согласовано: «конца эпохи Восточная Хань».",
+      "questionRu": "Какой врач конца эпохи Восточной Хань прославился тем, что делал полостные операции, давая больному обезболивающее снадобье «мафэйсань» (麻沸散), и создал гимнастику «Игры пяти зверей» (五禽戏)?"
+    }
+  },
+  "groupedPairs": [
+    [
+      "2015-16-zak-8",
+      "2016-17-zak-7"
+    ],
+    [
+      "2015-16-zak-8",
+      "2023-24-reg-7"
+    ],
+    [
+      "2016-17-reg-8",
+      "2018-19-reg-7"
+    ],
+    [
+      "2016-17-zak-7",
+      "literature-q91"
+    ],
+    [
+      "2017-18-mun-2",
+      "2020-21-pri-qac236e"
+    ],
+    [
+      "2017-18-mun-2",
+      "2021-22-mun-qa05d78"
+    ],
+    [
+      "2017-18-mun-2",
+      "ethnos-q86"
+    ],
+    [
+      "2018-19-reg-1",
+      "dynasties-q113"
+    ],
+    [
+      "2018-19-reg-7",
+      "people-q10"
+    ]
+  ],
+  "diagnosticFalsePositives": [],
+  "groupChanges": [
+    {
+      "id": "contextual-next20-20261104-1",
+      "records": [
+        "2015-16-mun-6",
+        "2016-17-mun-8",
+        "2017-18-mun-2",
+        "2017-18-reg-8",
+        "2018-19-mun-spb-9",
+        "2018-19-shk-3",
+        "2018-19-shk-4",
+        "2019-20-mun-qcfa774",
+        "2020-21-pri-qac236e",
+        "2021-22-mun-qa05d78",
+        "2022-23-mun-7",
+        "2022-23-shk-mosobl-11",
+        "2022-23-zak-2",
+        "2023-24-shk-38",
+        "2024-25-mun-mosobl-5",
+        "2024-25-zak-qe05919",
+        "2024-25-zak-qfce692",
+        "2025-26-mun-spb-5",
+        "2025-26-zak-q7c8228",
+        "addition-b1-06",
+        "cuisine-q68",
+        "cuisine-q71",
+        "cuisine-q74",
+        "cuisine-q76",
+        "dynasties-q103",
+        "dynasties-q104",
+        "dynasties-q105",
+        "dynasties-q106",
+        "ethnos-q83",
+        "ethnos-q86",
+        "holidays-q40",
+        "landmarks-q90",
+        "landmarks-q92",
+        "landmarks-q93",
+        "landmarks-q95",
+        "landmarks-q96",
+        "landmarks-q99",
+        "literature-q37",
+        "nature-q115",
+        "provinces-q101",
+        "provinces-q31",
+        "provinces-q37",
+        "provinces-q43",
+        "provinces-q93",
+        "sets-q08",
+        "sets-q09",
+        "sets-q10",
+        "sets-q11",
+        "state-q15"
+      ],
+      "replaces": [
+        "guangdong-yue",
+        "contextual-geography-1"
+      ]
+    },
+    {
+      "id": "contextual-next20-20261104-2",
+      "records": [
+        "2015-16-zak-8",
+        "2016-17-zak-7",
+        "2023-24-reg-7",
+        "literature-q91",
+        "painting-q103"
+      ],
+      "replaces": [
+        "xu-beihong-painter"
+      ]
+    },
+    {
+      "id": "contextual-next20-20261104-3",
+      "records": [
+        "2016-17-reg-8",
+        "2018-19-reg-7",
+        "people-q10"
+      ],
+      "replaces": []
+    },
+    {
+      "id": "contextual-next20-20261104-4",
+      "records": [
+        "2018-19-reg-1",
+        "2018-19-shk-6",
+        "dynasties-q111",
+        "dynasties-q113",
+        "people-q19"
+      ],
+      "replaces": [
+        "zhenghe-ming",
+        "manchu-word"
+      ]
+    }
+  ],
+  "validation": {
+    "build": {
+      "command": "npm run build",
+      "exitCode": 0,
+      "log": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-next20/application-build.log"
+    },
+    "python": {
+      "command": "python3 -m unittest discover -s test -t .",
+      "exitCode": 0,
+      "tests": 478,
+      "skipped": 0,
+      "log": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-next20/application-python.log"
+    },
+    "node": {
+      "command": "node --test test/*.test.mjs",
+      "exitCode": 0,
+      "tests": 166,
+      "skipped": 0,
+      "log": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-next20/application-node.log"
+    },
+    "testMaintenance": "Первый Python-прогон обнаружил устаревший список имён factGroup в test_merges.py. Для затронутых склеенных записей проверяются конкретные связанные вопросы; существующая проверка Сиху и остальные ограничения сохранены. Целевой тест и повторный полный Python-прогон прошли; отдельное ревью правки теста — pass."
+  },
+  "status": "applied-and-verified-locally",
+  "published": false,
+  "dataValidation": {
+    "exactlyMatchesApprovedChangesAndAmendments": true,
+    "questionCount": 1269,
+    "publishedQuestions": 964,
+    "missingAnswerNames": 70,
+    "answerKeysAndOptionsUnchanged": true,
+    "newRemainingDiagnostics": [],
+    "captionCount": 62
+  },
+  "independentApplicationReview": {
+    "schema": "lingvo-next20-application-independent-review-v1",
+    "reviewId": "lingvo-contextual-glosses-next20-2026-11-03-v1",
+    "checkedAt": "2026-11-04",
+    "verdict": "pass",
+    "blockingFindings": [],
+    "checks": {
+      "originalHash": true,
+      "amendmentsHash": true,
+      "all20AuthorApprovals": true,
+      "fourCommentsPreserved": true,
+      "fact-2016-17-reg-1:o3": true,
+      "fact-2019-20-reg-4:o2": true,
+      "fact-2016-17-zak-7:o1": true,
+      "fact-2016-17-zak-7:o2": true,
+      "fact-2016-17-zak-7:o3": true,
+      "fact-2016-17-zak-7:o4": true,
+      "fact-2017-18-mun-2:o1": true,
+      "fact-2017-18-mun-2:o2": true,
+      "fact-2017-18-mun-2:o3": true,
+      "fact-2017-18-mun-2:o4": true,
+      "fact-2023-24-reg-2:o3": true,
+      "fact-2023-24-reg-7:o1": true,
+      "fact-2023-24-reg-7:o2": true,
+      "fact-2023-24-reg-7:o3": true,
+      "fact-2023-24-reg-7:o4": true,
+      "fact-addition-b1-20:o1": true,
+      "fact-addition-b1-20:o2": true,
+      "fact-addition-b1-20:o3": true,
+      "fact-addition-b1-20:o4": true,
+      "fact-2025-26-shk-33:o2": true,
+      "fact-2017-18-mun-10:o1": true,
+      "fact-2017-18-mun-10:o2": true,
+      "fact-2017-18-mun-10:o3": true,
+      "fact-2017-18-mun-10:o4": true,
+      "fact-2017-18-reg-4:o2": true,
+      "fact-2017-18-shk-3:o1": true,
+      "fact-2017-18-shk-3:o2": true,
+      "fact-2017-18-shk-3:o3": true,
+      "fact-2017-18-shk-3:o4": true,
+      "fact-2017-18-zak-4:o1": true,
+      "fact-2017-18-zak-4:o2": true,
+      "fact-2017-18-zak-4:o3": true,
+      "fact-2017-18-zak-4:o4": true,
+      "fact-2018-19-reg-7:o1": true,
+      "fact-2018-19-reg-7:o2": true,
+      "fact-2018-19-reg-7:o3": true,
+      "fact-2018-19-reg-7:o4": true,
+      "fact-2018-19-reg-9:o1": true,
+      "fact-2018-19-reg-9:o2": true,
+      "fact-2018-19-reg-9:o3": true,
+      "fact-2018-19-reg-9:o4": true,
+      "fact-2018-19-zak-9:o1": true,
+      "fact-2025-26-reg-2:o1": true,
+      "fact-2025-26-reg-2:o2": true,
+      "fact-2025-26-reg-2:o3": true,
+      "fact-2025-26-reg-2:o4": true,
+      "fact-addition-b2-12:o1": true,
+      "fact-addition-b2-12:o2": true,
+      "fact-addition-b2-12:o3": true,
+      "fact-addition-b2-12:o4": true,
+      "fact-2018-19-reg-1:o1": true,
+      "fact-2018-19-reg-1:o2": true,
+      "fact-2018-19-reg-1:o3": true,
+      "fact-2018-19-reg-1:o4": true,
+      "fact-addition-b1-16:o1": true,
+      "fact-addition-b1-16:o2": true,
+      "fact-addition-b1-16:o3": true,
+      "fact-addition-b1-16:o4": true,
+      "fact-addition-b2-18:o1": true,
+      "fact-addition-b2-18:o2": true,
+      "fact-addition-b2-18:o3": true,
+      "fact-addition-b2-18:o4": true,
+      "glossLayerExactMatch": true,
+      "captionCounts": true,
+      "editorialOnlyApprovedQuestion": true,
+      "originalQuestionClarificationPreserved": true,
+      "bankIdsAndOrderingUnchanged": true,
+      "bankOnlyExactApprovedEditsAndGroupMetadata": true,
+      "allOldMembershipsPreservedAndNoUnrelatedMerges": true,
+      "bankGroupMetadataExact": true,
+      "fourGroupChangesExact": true,
+      "noPublicDeploymentClaim": true
+    },
+    "counts": {
+      "bankRecords": 1269,
+      "newCaptions": 62,
+      "correctCaptions": 20,
+      "preservedExistingCaptions": 6,
+      "manuallyReviewedRealDiagnosticPairs": 9,
+      "newConnectedComponents": 4
+    },
+    "semanticReview": {
+      "all20CorrectCaptionsAddKnowledge": true,
+      "allFourUserCommentsFulfilled": true,
+      "examples": {
+        "2016-17-zak-7": "Лао Шэ identified by Рикша; correct caption adds film origin and date.",
+        "2023-24-reg-7": "Сюй Бэйхун caption identifies horses, anatomy and motion.",
+        "addition-b1-20": "Glinka caption adds finale chorus Славься.",
+        "addition-b1-16": "Song Yingxing caption adds field observation and craftsmen experience."
+      },
+      "diagnosticPairs": "All nine independently read against question+answer and relevant caption; real overlaps covered by exact transitive grouping."
+    },
+    "limitations": [
+      "Full Python/Node suites intentionally not repeated; parent is running them.",
+      "Source verification relies on separately completed independent amendment/source review; this pass checks exact application and meaning.",
+      "Application and changelog final test/status text being updated by parent; known pending status is not a substantive finding."
+    ],
+    "focusedTestFollowup": {
+      "file": "test/test_merges.py",
+      "checkedAt": "2026-11-04",
+      "verdict": "pass",
+      "blockingFindings": [],
+      "scope": "Reviewed only existing pooled-record integration test diff and immediate surrounding assertions; no suites rerun.",
+      "assessment": [
+        "Change is narrow: three newly affected pooled records get concrete related-record membership assertions rather than acceptance by obsolete group-name whitelist.",
+        "Existing Sihu/Hangzhou relation remains enforced exactly as before.",
+        "All four special-case records must have factGroup; each named related record must share it, so removing a required link or leaving an old disconnected group fails.",
+        "The other pooled records retain the same whitelist. Exact pooled record IDs, option counts, uniqueness, and no wrong-option references in explanations remain unchanged.",
+        "Adjacent check requiring more than one answer in every fact group remains unchanged."
+      ],
+      "coverageConclusion": "Meaningful strengthened membership coverage for approved transitive grouping; no substantive weakening or blanket suppression of the failure."
+    }
+  },
+  "diagnosticsBeforeGrouping": {
+    "amendmentHash": "256e1358d035457f47b8844fe08dde86678569fd2a25a75fd82b073b89a16f08",
+    "delta": [
+      {
+        "record": "2016-17-zak-7",
+        "option": "o4",
+        "zh": "老舍",
+        "gloss": "Лао Шэ — писатель, автор романа «Рикша»",
+        "isAnswer": false,
+        "other": "literature/literature-q02",
+        "answer": [
+          "老舍",
+          "Лао Шэ"
+        ],
+        "clues": [
+          "роман «Рикша»"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2016-17-zak-7",
+        "otherId": "2015-16-zak-8",
+        "publishedPair": true
+      },
+      {
+        "record": "2016-17-zak-7",
+        "option": "o4",
+        "zh": "老舍",
+        "gloss": "Лао Шэ — писатель, автор романа «Рикша»",
+        "isAnswer": false,
+        "other": "literature/literature-q91",
+        "answer": [
+          "роман «Рикша»"
+        ],
+        "clues": [
+          "Лао Шэ",
+          "老舍"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2016-17-zak-7",
+        "otherId": "literature-q91",
+        "publishedPair": true
+      },
+      {
+        "record": "2017-18-mun-2",
+        "option": "o1",
+        "zh": "吴方言",
+        "gloss": "Диалекты у — южная группа, к которой относятся шанхайские говоры",
+        "isAnswer": false,
+        "other": "2020-21-pri-qac236e",
+        "answer": [
+          "吴方言",
+          "диалект у"
+        ],
+        "clues": [
+          "Шанхай"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2017-18-mun-2",
+        "otherId": "2020-21-pri-qac236e",
+        "publishedPair": true
+      },
+      {
+        "record": "2017-18-mun-2",
+        "option": "o2",
+        "zh": "湘方言",
+        "gloss": "Диалекты сян — южная группа, распространённая в Хунани",
+        "isAnswer": false,
+        "other": "2021-22-mun-qa05d78",
+        "answer": [
+          "湘方言"
+        ],
+        "clues": [
+          "Хунань"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2017-18-mun-2",
+        "otherId": "2021-22-mun-qa05d78",
+        "publishedPair": true
+      },
+      {
+        "record": "2017-18-mun-2",
+        "option": "o3",
+        "zh": "粤方言",
+        "gloss": "Диалекты юэ — южная группа, распространённая в Гуандуне и Гуанси",
+        "isAnswer": false,
+        "other": "ethnos/ethnos-q86",
+        "answer": [
+          "粤方言"
+        ],
+        "clues": [
+          "Гуандун"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2017-18-mun-2",
+        "otherId": "ethnos-q86",
+        "publishedPair": true
+      },
+      {
+        "record": "2018-19-reg-1",
+        "option": "o2",
+        "zh": "满族",
+        "gloss": "Маньчжуры — их знать правила Китаем при династии Цин",
+        "isAnswer": false,
+        "other": "dynasties/dynasties-q113",
+        "answer": [
+          "满族",
+          "маньчжуры"
+        ],
+        "clues": [
+          "династия Цинь"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2018-19-reg-1",
+        "otherId": "dynasties-q113",
+        "publishedPair": true
+      },
+      {
+        "record": "2018-19-reg-7",
+        "option": "o2",
+        "zh": "道教",
+        "gloss": "Даосизм — почитает Лао-цзы и считает «Дао дэ цзин» главным каноном",
+        "isAnswer": false,
+        "other": "people/people-q01",
+        "answer": [
+          "Лао-цзы"
+        ],
+        "clues": [
+          "«Дао дэ цзин»",
+          "道教"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2018-19-reg-7",
+        "otherId": "2016-17-reg-8",
+        "publishedPair": true
+      },
+      {
+        "record": "2018-19-reg-7",
+        "option": "o2",
+        "zh": "道教",
+        "gloss": "Даосизм — почитает Лао-цзы и считает «Дао дэ цзин» главным каноном",
+        "isAnswer": false,
+        "other": "people/people-q10",
+        "answer": [
+          "«Дао дэ цзин»"
+        ],
+        "clues": [
+          "Лао-цзы"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2018-19-reg-7",
+        "otherId": "people-q10",
+        "publishedPair": true
+      },
+      {
+        "record": "2023-24-reg-7",
+        "option": "o2",
+        "zh": "老舍",
+        "gloss": "Лао Шэ — писатель и драматург, автор «Рикши» и «Чайной»",
+        "isAnswer": false,
+        "other": "literature/literature-q02",
+        "answer": [
+          "老舍",
+          "Лао Шэ"
+        ],
+        "clues": [
+          "Чайная"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2023-24-reg-7",
+        "otherId": "2015-16-zak-8",
+        "publishedPair": true
+      }
+    ],
+    "pairs": [
+      [
+        "2015-16-zak-8",
+        "2016-17-zak-7"
+      ],
+      [
+        "2015-16-zak-8",
+        "2023-24-reg-7"
+      ],
+      [
+        "2016-17-reg-8",
+        "2018-19-reg-7"
+      ],
+      [
+        "2016-17-zak-7",
+        "literature-q91"
+      ],
+      [
+        "2017-18-mun-2",
+        "2020-21-pri-qac236e"
+      ],
+      [
+        "2017-18-mun-2",
+        "2021-22-mun-qa05d78"
+      ],
+      [
+        "2017-18-mun-2",
+        "ethnos-q86"
+      ],
+      [
+        "2018-19-reg-1",
+        "dynasties-q113"
+      ],
+      [
+        "2018-19-reg-7",
+        "people-q10"
+      ]
+    ]
+  },
+  "pairResolutions": {
+    "amendmentHash": "256e1358d035457f47b8844fe08dde86678569fd2a25a75fd82b073b89a16f08",
+    "realPairs": [
+      [
+        "2015-16-zak-8",
+        "2016-17-zak-7"
+      ],
+      [
+        "2015-16-zak-8",
+        "2023-24-reg-7"
+      ],
+      [
+        "2016-17-reg-8",
+        "2018-19-reg-7"
+      ],
+      [
+        "2016-17-zak-7",
+        "literature-q91"
+      ],
+      [
+        "2017-18-mun-2",
+        "2020-21-pri-qac236e"
+      ],
+      [
+        "2017-18-mun-2",
+        "2021-22-mun-qa05d78"
+      ],
+      [
+        "2017-18-mun-2",
+        "ethnos-q86"
+      ],
+      [
+        "2018-19-reg-1",
+        "dynasties-q113"
+      ],
+      [
+        "2018-19-reg-7",
+        "people-q10"
+      ]
+    ],
+    "excluded": [],
+    "reason": "Каждая из девяти пар сообщает существенный факт соседнего вопроса: автор и произведение, диалект и регион, Лао-цзы и канон, этническая принадлежность династии Цин. Подписи сохраняются; пары разводятся существующим механизмом групп фактов."
+  }
+}

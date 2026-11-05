@@ -1,0 +1,521 @@
+{
+  "reviewId": "lingvo-contextual-glosses-next20-2026-11-03-v1",
+  "manifestHash": "518573f5ad06c33ade06f96780d6a141e000aecb53bfe84a3472c6c2d0601f4d",
+  "checkedAt": "2026-11-04",
+  "content": {
+    "reviewer": "independent-content-source-review",
+    "date": "2026-11-03",
+    "scope": "21 reviewed: original20 plus replacement; final package20; proposals only",
+    "method": "Read CLAUDE.md; compared baseline and existing dossiers; independently opened or targeted-searched cited sources. Timeout alone not treated as falsity; indexed official excerpts used where full open failed. Reviewed Russian names, question relevance, options/key stability and <=90 characters.",
+    "items": [
+      {
+        "questionId": "2016-17-reg-1",
+        "verdict": "pass-after-fixes",
+        "issues": [],
+        "fixes": [
+          {
+            "questionId": "2016-17-reg-1",
+            "optionId": "o2",
+            "type": "source-url",
+            "before": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250312_1958942.html",
+            "after": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250312_1958941.html",
+            "reason": "Заменена недоступная ссылка на непосредственно проверенную публикацию закона Госсовета; подпись не меняется.",
+            "quote": "总理领导国务院的工作"
+          }
+        ],
+        "sourcesChecked": [
+          "https://cpc.people.com.cn/n/2013/0314/c64387-20784337.html",
+          "https://www.dpm.org.cn/learing_detail/249435.html",
+          "https://www.president.gov.tw/POP/286",
+          "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250312_1958941.html"
+        ]
+      },
+      {
+        "questionId": "2016-17-zak-7",
+        "verdict": "pass",
+        "issues": [
+          "Полная веб-выгрузка статьи hljzx пропускала абзац; целевой поиск по тому же URL подтвердил 国歌拟出的歌词. Ошибки ссылки нет."
+        ],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://military.cnr.cn/nrjx/20221002/t20221002_526025974.shtml",
+          "https://www.hljzx.gov.cn/contents/68/7216.html",
+          "https://www.shhk.gov.cn/zjhk/001003/001003002/20140902/78dcbb54-b522-48c4-b766-309a3eed9f4b.html"
+        ]
+      },
+      {
+        "questionId": "2017-18-mun-2",
+        "verdict": "pass",
+        "issues": [
+          "Полная веб-выгрузка источника пропускала абзац; целевой поиск по тому же URL подтвердил географию диалектов. Ошибки ссылки нет. География здесь различает диалектные группы, а не заменяет объяснение связи Лао Шэ с пекинской речью."
+        ],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://bhdx.cbpt.cnki.net/portal/journal/portal/client/paper/e756088eacddfc0f4658eb390bb8eba3",
+          "https://yywz.luas.edu.cn/2024/0909/c2149a119825/page.htm"
+        ]
+      },
+      {
+        "questionId": "2017-18-reg-4",
+        "verdict": "pass-after-fixes",
+        "issues": [],
+        "fixes": [
+          {
+            "questionId": "2017-18-reg-4",
+            "optionId": "o2",
+            "before": "Дракон — в идиоме 望子成龙 выражает надежду на будущий успех сына",
+            "after": "Дракон — в этой идиоме символизирует будущий успех сына",
+            "reason": "Механически убрано повторение китайского варианта 龙 внутри 望子成龙; факт и подтверждающий словарь сохранены.",
+            "source": {
+              "title": "望子成龍 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=162988&la=1&powerMode=0"
+            },
+            "quote": "希望自己的兒子能成大器"
+          }
+        ],
+        "sourcesChecked": [
+          "https://dict.revised.moe.edu.tw/dictView.jsp?ID=162988&la=1&powerMode=0"
+        ]
+      },
+      {
+        "questionId": "2017-18-shk-3",
+        "verdict": "pass",
+        "issues": [],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://paper.people.com.cn/rmrbhwb/html/2013-07/10/content_1266505.htm",
+          "https://www.cnpoc.cn/cnpoc/gjkt/200807/f1f8824fe1f4433a8f95a53f8e9278fa.shtml"
+        ]
+      },
+      {
+        "questionId": "2017-18-zak-4",
+        "verdict": "pass",
+        "issues": [],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://yllhj.beijing.gov.cn/ztxx/bjhx/hhzs/201809/t20180913_118637.shtml"
+        ]
+      },
+      {
+        "questionId": "2018-19-reg-1",
+        "verdict": "pass",
+        "issues": [],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://igsnrr.cas.cn/cbkx/kpyd/dlxj/202009/t20200910_5692679.html"
+        ]
+      },
+      {
+        "questionId": "2018-19-reg-7",
+        "verdict": "pass-after-fixes",
+        "issues": [],
+        "fixes": [
+          {
+            "questionId": "2018-19-reg-7",
+            "optionId": "o3",
+            "before": "Ислам — в Тибете есть отдельные мусульманские общины и мечети",
+            "after": null,
+            "reason": "Наличие мусульманских общин в Тибете не объясняет, к какой религии относится ламаизм. Новая подпись не предлагается."
+          },
+          {
+            "questionId": "2018-19-reg-7",
+            "optionId": "o4",
+            "before": "Католицизм — в Тибете есть и католическая община со своим храмом",
+            "after": "Католицизм — одно из основных направлений христианства",
+            "reason": "Классификация католицизма внутри христианства — содержательное различие с тибетской ветвью буддизма; наличие храма в Тибете было посторонним фактом.",
+            "source": {
+              "title": "什么是天主教？ — 福建省人民政府",
+              "url": "https://www.fj.gov.cn/hdjl/hdjlzsk/mzzjt/zj/201809/t20180929_4521615.htm"
+            },
+            "quote": "天主教(Catholicism)是基督教(Christianity)的三大派别之一"
+          }
+        ],
+        "sourcesChecked": [
+          "https://saintpetersburg.china-consulate.gov.cn/zt_1/zgzj/200912/t20091216_4204259.htm",
+          "https://www.fj.gov.cn/hdjl/hdjlzsk/mzzjt/zj/201809/t20180929_4521615.htm"
+        ]
+      },
+      {
+        "questionId": "2018-19-reg-9",
+        "verdict": "pass",
+        "issues": [],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://dfz.cq.gov.cn/zqlswh/msmf_417820/202311/t20231102_12510455.html",
+          "https://dict.revised.moe.edu.tw/dictView.jsp?ID=135153&ver=4",
+          "https://www.dpm.org.cn/lemmas/244623.html",
+          "https://www.tianmen.gov.cn/zjtm/tmwh/tmms/201604/t20160419_1931007.shtml"
+        ]
+      },
+      {
+        "questionId": "2018-19-shk-1",
+        "verdict": "defer-replace",
+        "issues": [
+          "女文 употребляется о нюйшу в академической литературе. Добавление «общепринятое» не устанавливает объективного критерия, позволяющего исключить синоним. Не показывать предложенную companionEdit как исправление неоднозначности."
+        ],
+        "fixes": [],
+        "sourcesChecked": [],
+        "replacement": "2017-18-mun-10",
+        "evidence": {
+          "url": "https://journal.ccnu.edu.cn/sk/CN/volumn/volumn_1273_abs.shtml",
+          "quote": "全书共录女文六万余字",
+          "title": "华中师范大学学报（人文社会科学版） — 江永女书之谜"
+        }
+      },
+      {
+        "questionId": "2018-19-zak-9",
+        "verdict": "pass",
+        "issues": [],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://www.samr.gov.cn/bzjss/bzjd/art/2022/art_d96f4e909dd04ed082b20b5fdf87e84a.html"
+        ]
+      },
+      {
+        "questionId": "2019-20-reg-4",
+        "verdict": "pass",
+        "issues": [],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://dict.concised.moe.edu.tw/dictView.jsp?ID=10120&la=0&powerMode=0",
+          "https://dict.concised.moe.edu.tw/dictView.jsp?ID=20961&la=0&powerMode=0",
+          "https://dict.revised.moe.edu.tw/dictView.jsp?ID=49798&la=1&powerMode=0",
+          "https://www.dpm.org.cn/court/lineage/226263.html"
+        ]
+      },
+      {
+        "questionId": "2023-24-reg-2",
+        "verdict": "pass",
+        "issues": [],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://chekhovmuseum.com/museum/objects/17/872?type=section"
+        ]
+      },
+      {
+        "questionId": "2023-24-reg-7",
+        "verdict": "pass",
+        "issues": [],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://szw.yancheng.gov.cn/art/2017/12/28/art_540_328272.html",
+          "https://www.chinawriter.com.cn/xdzj/383.shtml",
+          "https://www.dpm.org.cn/lemmas/241713.html",
+          "https://www.shhk.gov.cn/zjhk/001003/001003002/20140902/78dcbb54-b522-48c4-b766-309a3eed9f4b.html"
+        ]
+      },
+      {
+        "questionId": "2025-26-reg-2",
+        "verdict": "pass",
+        "issues": [],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://m.dayi.org.cn/classics/100056.html",
+          "https://www.chnmuseum.cn/zp/zpml/gjwxbt/202203/t20220301_254064.shtml",
+          "https://www.nmtcm.cn/stars_detail/243.html",
+          "https://www.snjnationalpark.com/zyjs/whms/ydwh/202110/t4319857.shtml"
+        ]
+      },
+      {
+        "questionId": "2025-26-shk-33",
+        "verdict": "pass",
+        "issues": [],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://www.chnmuseum.cn/zl/ztcl/202609/t20260904_282499.shtml"
+        ]
+      },
+      {
+        "questionId": "addition-b1-16",
+        "verdict": "pass",
+        "issues": [],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://agri-history.ihns.ac.cn/agriculturists/jsx.htm",
+          "https://agri-history.ihns.ac.cn/books/treatise%20records/nongzhenquanshu.htm",
+          "https://www.chnmuseum.cn/zp/zpml/gjwxbt/202203/t20220301_254035.shtml",
+          "https://www.chnmuseum.cn/zp/zpml/gjwxbt/202203/t20220301_254061.shtml"
+        ]
+      },
+      {
+        "questionId": "addition-b1-20",
+        "verdict": "pass",
+        "issues": [],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://prim.mariinsky.ru/playbill/playbill/2026/1/25/1_1700/",
+          "https://www.mariinsky.ru/playbill/opera_conchall_m3/lifefortsar_kz/",
+          "https://www.mariinsky.ru/playbill/playbill/2026/3/14/2_1300/",
+          "https://www.mariinsky.ru/ru/playbill/playbill/2026/2/23/1_1900/"
+        ]
+      },
+      {
+        "questionId": "addition-b2-12",
+        "verdict": "pass-with-visible-companion-edit",
+        "issues": [
+          "Обязательная companionEdit: оговорка «согласно древним письменным источникам» должна быть видна автору; китайского исходного вопроса нет."
+        ],
+        "fixes": [
+          {
+            "questionId": "addition-b2-12",
+            "optionId": "o1",
+            "before": "Чжан Чжунцзин — врач Восточной Хань, автор «Шанхань цзабинь лунь»",
+            "after": "Чжан Чжунцзин — врач Восточной Хань, автор «Шанхань цзабин лунь»",
+            "reason": "Исправлена транскрипция 病 bìng: бин, без мягкого знака; согласовано с уже принятым досье modern-china (bk-shanghan).",
+            "source": {
+              "title": "伤寒杂病论 — 中国医药信息查询平台, статья проекта 国家中医药管理局",
+              "url": "https://www.dayi.org.cn/classics/1123036"
+            },
+            "quote": "《伤寒杂病论》，十六卷，东汉张仲景撰"
+          }
+        ],
+        "sourcesChecked": [
+          "https://sport.hebei.gov.cn/quanminjianshenzhinan/2019/0409/11494.html",
+          "https://www.dayi.org.cn/classics/1123036",
+          "https://www.dpm.org.cn/lemmas/244123.html",
+          "https://www.nmtcm.cn/stars_detail/236.html"
+        ],
+        "evidence": {
+          "url": "https://pdf.hanspub.org/tcm20220300000_44108471.pdf",
+          "quote": "对麻沸散是否真实存在仍有部分人持有怀疑态度",
+          "note": "Статья цитирует 三国志 и 后汉书; оговорка верно описывает характер свидетельств."
+        }
+      },
+      {
+        "questionId": "addition-b2-18",
+        "verdict": "pass",
+        "issues": [],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/chem.202203985",
+          "https://www.nobelprize.org/prizes/medicine/1904/summary/",
+          "https://www.pasteur.fr/en/about-us/ilya-mechnikov-elie-metchnikoff-french-1845-1916"
+        ]
+      },
+      {
+        "questionId": "2017-18-mun-10",
+        "verdict": "pass",
+        "issues": [
+          "酒都/花都/陶都 не уникальные названия; «так называют» не утверждает уникальности. 花都 здесь читается как прозвище; район Гуанчжоу не мешает подтверждённому употреблению о Куньмине."
+        ],
+        "fixes": [],
+        "sourcesChecked": [
+          "https://jdz.gov.cn/zwzx/jrcd/t1009598.shtml",
+          "https://www.ezhou.gov.cn/zt/zdzt/hkcs/cyfz/202606/t20260616_768308.html",
+          "https://www.fjtb.gov.cn/focus/201701hxlw/201703/t20170328_11732855.html",
+          "https://www.sc.gov.cn/10462/10778/10876/2023/1/16/1235a74c94284404979250f4308dabec/files/%E5%AE%9C%E5%AE%BE%E5%B8%82%E5%8E%86%E5%8F%B2%E6%96%87%E5%8C%96%E5%90%8D%E5%9F%8E%E4%BF%9D%E6%8A%A4%E8%A7%84%E5%88%92-%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf"
+        ],
+        "evidence": [
+          {
+            "url": "https://www.sc.gov.cn/10462/10778/10876/2023/1/16/1235a74c94284404979250f4308dabec/files/%E5%AE%9C%E5%AE%BE%E5%B8%82%E5%8E%86%E5%8F%B2%E6%96%87%E5%8C%96%E5%90%8D%E5%9F%8E%E4%BF%9D%E6%8A%A4%E8%A7%84%E5%88%92-%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf",
+            "quote": "宜宾是中国酒都，浓香型白酒文化的代表性遗产地"
+          },
+          {
+            "url": "https://www.ezhou.gov.cn/zt/zdzt/hkcs/cyfz/202606/t20260616_768308.html",
+            "quote": "“中国花都”云南昆明"
+          },
+          {
+            "url": "https://www.fjtb.gov.cn/focus/201701hxlw/201703/t20170328_11732855.html",
+            "quote": "江苏宜兴，号称“中国陶都”"
+          },
+          {
+            "url": "https://jdz.gov.cn/zwzx/jrcd/t1009598.shtml",
+            "quote": "千年瓷都"
+          }
+        ]
+      }
+    ],
+    "changes": [
+      {
+        "questionId": "2018-19-reg-7",
+        "optionId": "o3",
+        "before": "Ислам — в Тибете есть отдельные мусульманские общины и мечети",
+        "after": null,
+        "reason": "Наличие мусульманских общин в Тибете не объясняет, к какой религии относится ламаизм. Новая подпись не предлагается."
+      },
+      {
+        "questionId": "2018-19-reg-7",
+        "optionId": "o4",
+        "before": "Католицизм — в Тибете есть и католическая община со своим храмом",
+        "after": "Католицизм — одно из основных направлений христианства",
+        "reason": "Классификация католицизма внутри христианства — содержательное различие с тибетской ветвью буддизма; наличие храма в Тибете было посторонним фактом.",
+        "source": {
+          "title": "什么是天主教？ — 福建省人民政府",
+          "url": "https://www.fj.gov.cn/hdjl/hdjlzsk/mzzjt/zj/201809/t20180929_4521615.htm"
+        },
+        "quote": "天主教(Catholicism)是基督教(Christianity)的三大派别之一"
+      },
+      {
+        "questionId": "addition-b2-12",
+        "optionId": "o1",
+        "before": "Чжан Чжунцзин — врач Восточной Хань, автор «Шанхань цзабинь лунь»",
+        "after": "Чжан Чжунцзин — врач Восточной Хань, автор «Шанхань цзабин лунь»",
+        "reason": "Исправлена транскрипция 病 bìng: бин, без мягкого знака; согласовано с уже принятым досье modern-china (bk-shanghan).",
+        "source": {
+          "title": "伤寒杂病论 — 中国医药信息查询平台, статья проекта 国家中医药管理局",
+          "url": "https://www.dayi.org.cn/classics/1123036"
+        },
+        "quote": "《伤寒杂病论》，十六卷，东汉张仲景撰"
+      },
+      {
+        "questionId": "2016-17-reg-1",
+        "optionId": "o2",
+        "type": "source-url",
+        "before": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250312_1958942.html",
+        "after": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250312_1958941.html",
+        "reason": "Заменена недоступная ссылка на непосредственно проверенную публикацию закона Госсовета; подпись не меняется.",
+        "quote": "总理领导国务院的工作"
+      },
+      {
+        "questionId": "2017-18-reg-4",
+        "optionId": "o2",
+        "before": "Дракон — в идиоме 望子成龙 выражает надежду на будущий успех сына",
+        "after": "Дракон — в этой идиоме символизирует будущий успех сына",
+        "reason": "Механически убрано повторение китайского варианта 龙 внутри 望子成龙; факт и подтверждающий словарь сохранены.",
+        "source": {
+          "title": "望子成龍 — 教育部《重編國語辭典修訂本》",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=162988&la=1&powerMode=0"
+        },
+        "quote": "希望自己的兒子能成大器"
+      }
+    ],
+    "checks": {
+      "finalQuestionCount": 20,
+      "optionTextsAndKeysMatchBank": true,
+      "maxProposedGlossLength": 80,
+      "productionFilesEdited": false,
+      "draftWritersFilesOverwritten": false,
+      "newProposedGlossCount": 55,
+      "glossTextErrors": [],
+      "proposedCaptionsValidated": 55
+    },
+    "sourceAccessNotes": [
+      "Часть страниц (Шэньнун бэньцао цзин, Не Эр, Го Можо, диалекты, Бянь Цюэ, Цзя Сысе, 孙思邈, наречение имени, Глинка, Nobel, Исин и PDF Ибиня) независимо подтверждена целевым поиском по официальному URL: полное open давало тайм-аут или опускало нужный абзац.",
+      "Предварительное замечание о несовпадении источников Го Можо и диалектов снято: точные цитаты обнаружены на тех же страницах."
+    ]
+  },
+  "formalValidation": {
+    "questions": 20,
+    "proposedGlosses": 55,
+    "errors": []
+  },
+  "ui": {
+    "flows": [
+      {
+        "name": "all approvals and last approval / undo / explicit submit",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "group skips decisions and comments; cross group and back",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "double-click approves only one",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "mobile and desktop layout / idle growth",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "local copy recovers after server failure",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "submission after navigating feedback",
+        "feedback": "Согласование сохранено. Напиши «готово» в чате — я заберу решения и комментарии.",
+        "saveStatus": "Выбор сохранён. Решения записаны в проект.",
+        "state": {
+          "activeKey": "G:2016-17-zak-7"
+        }
+      },
+      {
+        "name": "submission permits harmless navigation",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "collapsed panel state",
+        "mainVisible": true,
+        "sidebarVisible": true,
+        "closeVisible": false,
+        "approveDisabled": false
+      },
+      {
+        "name": "collapsed panel",
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "undoPreservesComments": [
+      {
+        "name": "undo comment result",
+        "comment": "Must keep next question note"
+      },
+      {
+        "name": "undo saved entries",
+        "entries": {
+          "G:2019-20-reg-4": [
+            "",
+            "Must keep next question note"
+          ]
+        }
+      },
+      {
+        "name": "undo after writing next question comment",
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "cards": [
+      {
+        "name": "card renders",
+        "count": 60
+      },
+      {
+        "name": "all 20 question cards match manifest at phone and desktop widths",
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "overlayFix": [
+      {
+        "name": "collapsed panels recover workspace",
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "storageError": [
+      {
+        "name": "dual failure details",
+        "feedback": "Не удалось сохранить ни в проект, ни в браузер. Не закрывай страницу: скопируй решения или повтори сохранение.",
+        "saveStatus": "Нет записи ни в проект, ни в браузер."
+      },
+      {
+        "name": "dual failure after reload",
+        "progress": "Разобрано 0 из 24. Согласовано: 0, отклонено: 0, с вопросом или комментарием: 0."
+      },
+      {
+        "name": "dual storage failure message",
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "hotkeys": [
+      {
+        "name": "keyboard shortcuts / comment typing / group confirm / undo",
+        "passed": true,
+        "errors": []
+      }
+    ]
+  },
+  "limits": [
+    "Проверено в Chrome, в том числе с ширинами телефона; физические iOS/Android не проверены.",
+    "Решения автора ещё не получены; банк и сайт не изменены."
+  ]
+}

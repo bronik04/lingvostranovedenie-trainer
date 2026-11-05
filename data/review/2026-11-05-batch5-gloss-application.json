@@ -1,0 +1,562 @@
+{
+  "schema": "lingvo-approved-gloss-application-v1",
+  "reviewId": "lingvo-contextual-glosses-batch5-2026-11-04-v1",
+  "manifestHash": "d8be44a821e159330a07e0e4dc137b94c5ff36b275d0fcdb4cde9e65499b6908",
+  "appliedAt": "2026-11-05",
+  "authorSubmittedAt": "2026-11-05T07:01:23.541133+00:00",
+  "authorRevision": 1793862080005,
+  "counts": {
+    "questions": 30,
+    "newAnswerNames": 30,
+    "proposedGlosses": 112,
+    "existingGlossEdits": 25,
+    "skippedOptions": 11,
+    "companionEdits": 15
+  },
+  "authorComments": {},
+  "companionQuestionIds": [
+    "2022-23-mun-1",
+    "2015-16-reg-4",
+    "2018-19-shk-6",
+    "2024-25-reg-1",
+    "2017-18-reg-7",
+    "2018-19-shk-1",
+    "2021-22-shk-qf1333c",
+    "2021-22-zak-q33f857",
+    "2017-18-shk-8",
+    "2023-24-reg-6",
+    "2024-25-mun-32",
+    "2024-25-reg-5",
+    "2024-25-shk-37",
+    "addition-b2-01",
+    "2020-21-zak-q624620"
+  ],
+  "previousEditorialEntries": {
+    "2022-23-mun-1": null,
+    "2015-16-reg-4": {
+      "reason": "Двусмысленно: «больше всего национальных меньшинств» можно понять как численность (тогда первым был бы Гуанси). Имеется в виду число народностей; объединение в один вопрос с общим набором неверных вариантов (решение автора 2026-10-14, раздел Б data/review/similar-questions.md): полная формулировка влитой записи 2017-18-reg-9; пояснение «Поэтому нужно выбрать 云南» заменено точным",
+      "questionRu": "В какой административной единице провинциального уровня Китая самый разнообразный национальный состав?",
+      "explanation": "В Юньнани (云南) представлены 52 из 56 национальностей Китая, 25 из них — коренные для провинции."
+    },
+    "2018-19-shk-6": {
+      "reason": "Объединение в один вопрос с общим набором неверных вариантов: пояснение «Поэтому нужно выбрать 辽宁» заменено точным, из влитой записи 2024-25-shk-32, без названий неверных вариантов; решение автора 2026-10-13 — у склеенной записи полная или более точная формулировка влитой записи 2024-25-shk-32",
+      "explanation": "Больше половины маньчжуров Китая живёт в Ляонине (辽宁) — свыше 5,3 млн человек, около 51 % всей численности народа.",
+      "questionRu": "В какой провинции Китая в основном проживают маньчжуры?"
+    },
+    "2024-25-reg-1": null,
+    "2017-18-reg-7": {
+      "reason": "Пояснение обосновывало 汉唐 открытием Шёлкового пути, но путь открыт при Хань, то есть и в периоде 秦汉. Теперь ответ объяснён приходом буддизма при Хань и его слиянием с китайской мыслью при Суй и Тан.",
+      "explanation": "Первой масштабной встречей китайской культуры с иноземной в китайской науке считают приход буддизма. Он проник в Китай из Индии через Западный край на рубеже эр, при Хань, а по-настоящему слился с китайской мыслью при Суй и Тан, когда сложились китайские школы буддизма. Поэтому ответ — 汉唐, от Хань до Тан. Вариант 秦汉 охватывает лишь начало процесса: при Хань буддизм только пришёл в Китай."
+    },
+    "2018-19-shk-1": null,
+    "2021-22-shk-qf1333c": null,
+    "2021-22-zak-q33f857": null,
+    "2017-18-shk-8": {
+      "reason": "«Самая длинная железная дорога Китая» без даты: сейчас это неверно, так было на момент открытия в 1996 году. Пояснение говорит о другом («крупнейшая по объёму строительства»)",
+      "questionRu": "Какая железная дорога, на момент открытия в 1996 году самая длинная в Китае, идёт от Пекина до Шэньчжэня и соединяется с Коулуном в Гонконге?",
+      "explanation": "Железная дорога Пекин — Коулун (京九铁路) открыта в 1996 году; она связывает Пекин с Шэньчжэнем и далее с Коулуном в Гонконге. На момент открытия это была самая протяжённая железнодорожная магистраль Китая, построенная за один раз.",
+      "topic": "Экономика, образование, наука и спорт"
+    },
+    "2023-24-reg-6": {
+      "reason": "Тавтология «изобретение … было изобретено».",
+      "questionRu": "Что из перечисленного было изобретено не в Китае?"
+    },
+    "2024-25-mun-32": {
+      "reason": "Несколько верных вариантов: Китай — первый в мире не только по рису, но и по пшенице (小麦) и по картофелю/батату (薯类)",
+      "options": {
+        "o1": "玉米",
+        "o3": "甘蔗"
+      },
+      "explanation": "По сбору риса (水稻) Китай занимает первое место в мире. По кукурузе (玉米) первенствуют США, по сахарному тростнику (甘蔗) и сое (大豆) — Бразилия."
+    },
+    "2024-25-reg-5": null,
+    "2024-25-shk-37": {
+      "reason": "Города не могут «относиться к отрасли». Конструкция неловкая.",
+      "questionRu": "Крупнейшими центрами какой отрасли промышленности Китая являются Аньшань, Бэньси, Баотоу и Ухань?"
+    },
+    "addition-b2-01": {
+      "reason": "Пропущена точка между предложениями: «(система двух председателей) Шэньчжэнь…».",
+      "explanation": "Остров Хэнцинь (横琴) находится на южной оконечности Чжухая и отделён от Аомэня лишь проливом и мостом («横琴地处珠海南端，与澳门一水一桥之隔»). В сентябре 2021 г. ЦК КПК и Госсовет опубликовали «Общий план строительства зоны глубокого сотрудничества Гуандун–Аомэнь в Хэнцине». Управляющим комитетом зоны совместно руководят губернатор провинции Гуандун и глава администрации Аомэня (система двух председателей). Шэньчжэнь, Чжуншань и Цзянмэнь — тоже города дельты Жемчужной реки, но Хэнцинь в их состав не входит."
+    },
+    "2020-21-zak-q624620": {
+      "reason": "24 сезона (节气) определяются по солнечному, а не по лунному календарю. Вариант «小雨» — не название сезона",
+      "questionRu": "В Древнем Китае сроки сельскохозяйственных работ определяли по 24 сезонам (цзеци), на которые делили солнечный год. Какой из этих сезонов самый холодный?",
+      "options": {
+        "o4": "小雪"
+      },
+      "explanation": "Дахань («Большие холода», 大寒) — последний из 24 сезонов (节气) солнечного года и самый холодный период. 雨水, 立冬 и 小雪 приходятся на более тёплое время."
+    }
+  },
+  "groupedPairs": [
+    [
+      "2021-22-zak-q33f857",
+      "2025-26-reg-1"
+    ]
+  ],
+  "groupChanges": [
+    {
+      "id": "contextual-batch5-20261105-1",
+      "records": [
+        "2021-22-zak-q33f857",
+        "2025-26-reg-1"
+      ],
+      "replaces": []
+    }
+  ],
+  "diagnosticFalsePositives": [
+    {
+      "recordId": "2017-18-reg-8",
+      "otherId": "provinces-q99",
+      "questions": [
+        "2017-18-reg-8",
+        "provinces-q99"
+      ],
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Столица древнего государства Наньюэ и административный центр современной провинции — разные отношения. Подпись называет Гуанчжоу в историческом контексте, но не сообщает его современную административную функцию; обратный вопрос о современном центре не раскрывает расположение Аньяна, Лояна и Кайфэна.",
+      "independentReview": "part-a",
+      "captionEvidence": [
+        {
+          "sourceKey": "2017-18-reg-8:o4",
+          "caption": "Гуандун — Гуанчжоу был столицей государства Наньюэ"
+        }
+      ],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "2017-18-reg-8:o4",
+          "caption": "Гуандун — Гуанчжоу был столицей государства Наньюэ"
+        }
+      ],
+      "finalTextReviewNote": "Final caption text matches independently reviewed evidence."
+    },
+    {
+      "recordId": "2018-19-shk-6",
+      "otherId": "provinces-q36",
+      "questions": [
+        "2018-19-shk-6",
+        "provinces-q36"
+      ],
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Места проживания маньчжуров перечислены как четыре города, без указания столицы. Из списка нельзя вывести административный статус Чанчуня; вопрос о столице Цзилиня также не сообщает главный регион проживания маньчжуров.",
+      "independentReview": "part-a",
+      "captionEvidence": [
+        {
+          "sourceKey": "2018-19-shk-6:o1",
+          "caption": "Гирин — маньчжуры живут, в частности, в Чанчуне, Гирине, Тунхуа и Сыпине"
+        }
+      ],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "2018-19-shk-6:o1",
+          "caption": "Гирин — маньчжуры живут, в частности, в Чанчуне, Гирине, Тунхуа и Сыпине"
+        }
+      ],
+      "finalTextReviewNote": "Final caption text matches independently reviewed evidence."
+    },
+    {
+      "recordId": "2018-19-shk-6",
+      "otherId": "provinces-q99",
+      "questions": [
+        "2018-19-shk-6",
+        "provinces-q99"
+      ],
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Главный центр проживания местной этнической общины не тождествен административному центру провинции. Подпись не даёт искомой административной функции Гуанчжоу; обратное направление не раскрывает основной регион расселения маньчжуров в Китае.",
+      "independentReview": "part-a",
+      "captionEvidence": [
+        {
+          "sourceKey": "2018-19-shk-6:o4",
+          "caption": "Гуандун — местные маньчжуры живут главным образом в Гуанчжоу"
+        }
+      ],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "2018-19-shk-6:o4",
+          "caption": "Гуандун — местные маньчжуры живут главным образом в Гуанчжоу"
+        }
+      ],
+      "finalTextReviewNote": "Final caption text matches independently reviewed evidence."
+    },
+    {
+      "recordId": "2024-25-reg-1",
+      "otherId": "2025-26-mun-8",
+      "questions": [
+        "2024-25-reg-1",
+        "2025-26-mun-8"
+      ],
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Проверены полные вопросы: более 4 тысяч километров границы не сообщает число 4 городов центрального подчинения. Совпадение цифры и слова «Китай» не передаёт проверяемый факт.",
+      "independentReview": "part-b",
+      "captionEvidence": [],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "2024-25-reg-1:o1",
+          "caption": "Китай — более 4 тысяч километров границы с Россией, большая часть проходит по рекам"
+        }
+      ],
+      "finalTextReviewNote": "Final caption text matches independently reviewed evidence."
+    },
+    {
+      "recordId": "addition-b2-01",
+      "otherId": "modern-china-q09",
+      "questions": [
+        "addition-b2-01",
+        "modern-china-q09"
+      ],
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Проверены полные вопросы: сотрудничество Цяньхая с Гонконгом не сообщает сухопутную границу Шэньчжэня или создание СЭЗ в 1980 году. Гонконг сотрудничает и с другими городами; требуемая связь не дана.",
+      "independentReview": "part-b",
+      "captionEvidence": [],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "addition-b2-01:o1",
+          "caption": "Шэньчжэнь — в Цяньхае развивают сотрудничество с Гонконгом"
+        }
+      ],
+      "finalTextReviewNote": "Final caption text matches independently reviewed evidence."
+    },
+    {
+      "recordId": "2023-24-zak-8",
+      "otherId": "modern-history-q108",
+      "questions": [
+        "2023-24-zak-8",
+        "modern-history-q108"
+      ],
+      "publishedPair": true,
+      "verdict": "false positive",
+      "reason": "Проверены полные записи банка, включая все 15 вариантов modern-history-q108. Подпись сообщает об общем комплексе Пекинских соглашений 1860 года и окончании Второй опиумной войны, но не о русско-китайском соглашении, России, Уссури или передаче территории. В другом вопросе есть и 北京条约, и 中英北京条约: общие название и дата не раскрывают требуемую русско-китайскую связь и не различают эти договоры. Совпадение частично сужает круг названий, но не передаёт спрашиваемый факт. Прежняя подпись уже содержала тот же год, название и завершение войны; форматная замена нового исторического сведения не добавила.",
+      "independentReview": "part-b",
+      "captionEvidence": [
+        {
+          "sourceKey": "2023-24-zak-8:o1",
+          "caption": "Пекинские договоры — соглашения 1860 года, завершившие Вторую опиумную войну"
+        }
+      ],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "2023-24-zak-8:o1",
+          "caption": "Пекинские договоры — соглашения 1860 года, завершившие Вторую опиумную войну"
+        }
+      ],
+      "finalTextReviewNote": "Final caption text matches independently reviewed evidence."
+    }
+  ],
+  "hiddenDiagnostics": [
+    {
+      "recordId": "2024-25-zak-qe05919",
+      "otherId": "2023-24-mun-kem-2",
+      "questions": [
+        "2024-25-zak-qe05919",
+        "2023-24-mun-kem-2"
+      ],
+      "publishedPair": false,
+      "verdict": "hidden real semantic clue; recheck/group before publication",
+      "reason": "Полный скрытый вопрос спрашивает провинцию распространения кантонского; подпись Гуандуна прямо даёт её. Сохранить полезный факт, проверить/сгруппировать перед возвращением скрытого вопроса. Сейчас группы не менялись.",
+      "independentReview": "part-b",
+      "captionEvidence": [],
+      "finalCaptionEvidence": [
+        {
+          "sourceKey": "2024-25-zak-qe05919:o4",
+          "caption": "Гуандун — наряду с кантонским распространены хакка и миньские диалекты"
+        }
+      ],
+      "finalTextReviewNote": "Final caption text matches independently reviewed evidence."
+    }
+  ],
+  "status": "applied-and-verified-locally",
+  "published": false,
+  "captionChanges": {
+    "new": 87,
+    "replacements": 25,
+    "retained": 0,
+    "skipped": 11
+  },
+  "companionChanges": {
+    "questionChanges": 9,
+    "explanationOnlyChanges": 6
+  },
+  "dataValidation": {
+    "exactlyMatchesApprovedChangesAndAmendments": true,
+    "questionCount": 1269,
+    "publishedQuestions": 964,
+    "missingAnswerNames": 0,
+    "answerKeysAndOptionsUnchanged": true,
+    "newRemainingDiagnostics": [
+      {
+        "record": "2017-18-reg-8",
+        "option": "o4",
+        "zh": "广东省",
+        "gloss": "Гуандун — Гуанчжоу был столицей государства Наньюэ",
+        "isAnswer": false,
+        "other": "provinces/provinces-q99",
+        "answer": [
+          "Гуанчжоу"
+        ],
+        "clues": [
+          "провинция Гуандун"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2017-18-reg-8",
+        "otherId": "provinces-q99"
+      },
+      {
+        "record": "2018-19-shk-6",
+        "option": "o1",
+        "zh": "吉林",
+        "gloss": "Гирин — маньчжуры живут, в частности, в Чанчуне, Гирине, Тунхуа и Сыпине",
+        "isAnswer": false,
+        "other": "provinces/provinces-q36",
+        "answer": [
+          "Чанчунь"
+        ],
+        "clues": [
+          "Провинция Цзилинь"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2018-19-shk-6",
+        "otherId": "provinces-q36"
+      },
+      {
+        "record": "2018-19-shk-6",
+        "option": "o4",
+        "zh": "广东",
+        "gloss": "Гуандун — местные маньчжуры живут главным образом в Гуанчжоу",
+        "isAnswer": false,
+        "other": "provinces/provinces-q99",
+        "answer": [
+          "Гуанчжоу"
+        ],
+        "clues": [
+          "провинция Гуандун"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2018-19-shk-6",
+        "otherId": "provinces-q99"
+      },
+      {
+        "record": "2023-24-zak-8",
+        "option": "o1",
+        "zh": "北京条约",
+        "gloss": "Пекинские договоры — соглашения 1860 года, завершившие Вторую опиумную войну",
+        "isAnswer": false,
+        "other": "modern-history/modern-history-q108",
+        "answer": [
+          "北京条约",
+          "Пекинский договор"
+        ],
+        "clues": [
+          "1860 год"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2023-24-zak-8",
+        "otherId": "modern-history-q108"
+      },
+      {
+        "record": "2024-25-reg-1",
+        "option": "o1",
+        "zh": "中国",
+        "gloss": "Китай — более 4 тысяч километров границы с Россией, большая часть проходит по рекам",
+        "isAnswer": false,
+        "other": "2025-26-mun-8",
+        "answer": [
+          "4"
+        ],
+        "clues": [
+          "Китай"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "2024-25-reg-1",
+        "otherId": "2025-26-mun-8"
+      },
+      {
+        "record": "addition-b2-01",
+        "option": "o1",
+        "zh": "深圳",
+        "gloss": "Шэньчжэнь — в Цяньхае развивают сотрудничество с Гонконгом",
+        "isAnswer": false,
+        "other": "modern-china/modern-china-q09",
+        "answer": [
+          "深圳",
+          "Шэньчжэнь"
+        ],
+        "clues": [
+          "Гонконг"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "addition-b2-01",
+        "otherId": "modern-china-q09"
+      }
+    ],
+    "captionCount": 112,
+    "automaticallyRecomputedTopics": []
+  },
+  "tests": {
+    "build": {
+      "command": "npm run build",
+      "exitCode": 0,
+      "log": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch5/application-build.log"
+    },
+    "python": {
+      "command": "python3 -m unittest discover -s test -t .",
+      "exitCode": 0,
+      "passed": 479,
+      "log": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch5/application-python.log"
+    },
+    "node": {
+      "command": "node --test test/*.test.mjs",
+      "exitCode": 0,
+      "passed": 166,
+      "failed": 0,
+      "skipped": 0,
+      "log": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch5/application-node.log"
+    },
+    "targetedGlossTests": {
+      "command": "python3 -m unittest test.test_glosses",
+      "exitCode": 0,
+      "passed": 20,
+      "log": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch5/application-gloss-tests.log"
+    },
+    "totalPassed": 645
+  },
+  "testAdjustment": {
+    "file": "test/test_glosses.py",
+    "reason": "The old pilot assertion required one global caption per Chinese text. Author-approved contextual captions for Tianjin and Shenzhen correctly differ between questions; CLAUDE.md explicitly permits this.",
+    "change": "Uniformity is checked within the same dossier context, with nonempty coverage and required captions. A separate regression check preserves the approved contextual facts for free-trade/cooperation questions.",
+    "productionChangedForTest": false,
+    "initialFailureLog": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch5/application-python-before-test-update.log",
+    "beforeFile": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch5/before-application-test_glosses.py"
+  },
+  "independentReview": {
+    "schema": "lingvo-batch5-independent-application-review-v1",
+    "reviewId": "lingvo-contextual-glosses-batch5-2026-11-04-v1",
+    "reviewedAt": "2026-11-05",
+    "scope": "Read-only independent approved-application review; no repository, index, HEAD or branch mutations. Local completion only.",
+    "status": "completed",
+    "findings": [],
+    "derivedTopicShifts": [],
+    "outputHashes": {
+      "data/bank.json": "f3d509fbe761f6de774526303ad11ea516d9a0d7c3fc78b7bb8cb8ded446838b",
+      "dist/lingvostranovedenie-trainer.html": "6aba2614054763f1171a0f361623a37b2d98321e981d0ed31a5363e1e43cbe0f",
+      "data/review/glosses.json": "50cc70711921567c7640414c63aab14693612ba188c614fc31312216bbf2b9b8",
+      "data/review/editorial.json": "b34e66c11123eabee481dfeebc53c529203277cf10773d2bdc26981486ca99e9",
+      "data/review/fact-groups.json": "80e08539c45d34802eff2ffb13def69850a9941bd6d30b0bb066b59f1c3dfde9",
+      "data/review/2026-11-04-batch5-gloss-proposals.json": "c5876e3391a5154a7e998ddd4dc79cce1baaa7647b6382d0d467cfb011c4c1de",
+      "data/review/2026-11-04-batch5-gloss-decisions.json": "566093d31cce8d3967365fbcdefdf5aefe330292c14b8c4c342ac9becfbb0b5e",
+      "data/review/2026-11-04-batch5-gloss-browser-state.json": "c2e83226f77565653f686fe4ffc0e630e1acca0761408d268288cf0f3a98770b",
+      "data/review/2026-11-05-batch5-gloss-application.json": "1d0d35fa3d2adb3c800c3939fa843dc4f78db8ef6e5b3324b67f07a397a888c7",
+      "test/test_glosses.py": "03137a1c6662858a1eb6bf351b30d9e8f90bf15586b0d33d265966c71659b961"
+    },
+    "declinedToJudge": [
+      "Did not re-research the 112 facts already independently checked during proposal review.",
+      "Did not rerun full Python or Node suites; independently inspected their final logs and parent-confirmed exit codes.",
+      "Did not approve merge, push or deployment.",
+      "Closure applies to the fixed 2026-11-03 answer-name inventory, not an exhaustive new inventory.",
+      "The historical baseline is the exact before-application snapshots, not HEAD, because earlier local batches were already applied."
+    ],
+    "readyForLocalCompletion": true,
+    "readyForPublication": false,
+    "freshGlossDiagnostics": {
+      "visiblePairs": [
+        [
+          "2017-18-reg-8",
+          "provinces-q99"
+        ],
+        [
+          "2018-19-shk-6",
+          "provinces-q36"
+        ],
+        [
+          "2018-19-shk-6",
+          "provinces-q99"
+        ],
+        [
+          "2023-24-zak-8",
+          "modern-history-q108"
+        ],
+        [
+          "2024-25-reg-1",
+          "2025-26-mun-8"
+        ],
+        [
+          "addition-b2-01",
+          "modern-china-q09"
+        ]
+      ],
+      "hiddenPairs": [
+        [
+          "2023-24-mun-kem-2",
+          "2024-25-zak-qe05919"
+        ]
+      ],
+      "visibleMatchesAcceptedFalsePositives": true,
+      "hiddenMatchesDeferredRealPair": true,
+      "freshGeneratedReportMatchesBuild": true,
+      "groupedPairAbsent": true,
+      "allDiagnostics": 2861,
+      "captionDiagnostics": 7
+    },
+    "diagnosticSemanticReview": {
+      "method": "Read the complete final questions and captions; inspected all 15 options for modern-history-q108. No external factual research repeated.",
+      "visibleFalsePositiveRationale": [
+        "An ancient Nanyue capital does not establish the modern provincial administrative role of Guangzhou.",
+        "Listing Manchu communities in four Jilin cities does not identify the provincial capital.",
+        "A local ethnic community being concentrated in Guangzhou does not establish the provincial capital role.",
+        "More than 4 thousand border kilometres does not convey a count of 4 centrally administered cities.",
+        "Cooperation between Qianhai and Hong Kong does not convey the land border or 1980 SEZ founding.",
+        "The general 1860 Beijing agreements and end of the Second Opium War do not convey the separate Russian territorial relationship; both 北京条约 and 中英北京条约 are among the 15 options. The earlier caption already conveyed the same year and general historical connection."
+      ],
+      "hiddenRealPair": "The Guangdong caption directly reveals the province for the Cantonese question; 2023-24-mun-kem-2 remains absent from the site payload. Recheck/group is deferred until its return.",
+      "groupingLimitation": "The new fact group controls training selection according to existing behavior; this review does not claim a hard guarantee that the pair can never appear together."
+    },
+    "findingCounts": {
+      "Critical": 0,
+      "Important": 0,
+      "Minor": 0
+    },
+    "testChangeReview": {
+      "file": "test/test_glosses.py",
+      "baseline": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch5/before-application-test_glosses.py",
+      "verdict": "accepted",
+      "findings": [],
+      "reason": "The old test required globally identical glosses for identical Chinese options, contrary to the accepted contextual caption policy. The before snapshot satisfied the old assertion; exactly the approved Tianjin free-trade-zone and Shenzhen Qianhai captions introduce the two new contextual variants.",
+      "preservedCoverage": "Six explicit dossier contexts require more than one distractor occurrence, nonempty glosses and identical captions within each shared context. Answer options are appropriately excluded from this distractor check.",
+      "newCoverage": "Two approved city contexts require relevant content and differences from their general province/SEZ captions, preventing a return to global caption normalization.",
+      "scope": "Only the outdated assertion and its explanatory comments changed, and one focused regression test was added. No product code was changed."
+    },
+    "testAndBuildLogHashes": {
+      "application-build.log": "6c8f8ba1b2938c6d1acb8432ebdf14810b5f9ffe811dcbef1146b1c4b69a90af",
+      "application-python.log": "5fe07ceb825e3571239d4610ac96cb6c5287dd550f9c696587d6b3a6fe35bab8",
+      "application-node.log": "05069bd98c2f178a1c3e105e51b77345307f53d639783ed791fd0e601f738ff6",
+      "application-python-before-test-update.log": "85b01ed19a9a9c1246b23cd0050c16abc8f79eed7dfedf8cdd10ea8e2b2194ee"
+    },
+    "hashScopeNote": "Hashes capture reviewed files at final review. The parent may subsequently append this review outcome to the application report; bank, layers, dist and test hashes identify the validated implementation.",
+    "assessment": "Ready for local completion only; no Critical, Important or Minor findings. Publication remains deferred to an explicit author instruction.",
+    "checksPassed": 31,
+    "fullReport": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch5/application-independent-review.json"
+  },
+  "reviewLimitationsAccepted": [
+    "Source facts were independently checked before approval and preserved exactly.",
+    "Parent ran both full suites; reviewer checked final logs, reconstructed data and independently recalculated diagnostics.",
+    "Queue closure concerns the original inventory, not every possible future editorial task.",
+    "Exact snapshots preserve already approved local batches; HEAD alone is not the baseline.",
+    "Application report metadata was updated by the parent after review; all data, distribution, test and author-input hashes remain identical.",
+    "Merge, push and deployment remain deferred."
+  ],
+  "queueClosed": true
+}

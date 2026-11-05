@@ -178,16 +178,38 @@ class GlossesInBankTest(unittest.TestCase):
                    if option['id'] != bank[keep_id]['answer']['optionId'] and not option.get('gloss')}
         self.assertEqual(missing, unglossed_on_purpose)
 
-    def test_same_option_of_pooled_questions_is_glossed_alike(self):
-        # где вопросу не нужна своя формулировка, у варианта одна подпись (правило пилота);
-        # исключение — 天津 в вопросе о промыслах: подпись называет свою строку, «здесь, в
-        # Янлюцине, печатают лубки» (решение автора 2026-10-26)
-        own_row = {('天津', 'crafts')}
+    def test_shared_dossier_options_are_glossed_alike_within_the_same_context(self):
+        # Общая строка досье даёт одинаковую подпись в вопросах по этой теме.
+        # В другом контексте подпись может отличаться (решение автора 2026-11-03/04).
+        contexts = (('天津', 'provinces'), ('李白', 'literature'),
+                    ('深圳', 'provinces'), ('深圳', 'modern-china'),
+                    ('珠海', 'modern-china'), ('汕头', 'modern-china'))
         bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
-        for zh in ('天津', '李白', '深圳', '珠海', '汕头'):
-            texts = {o['gloss'] for r in bank for o in r['options']
-                     if o['zh'] == zh and o.get('gloss') and (zh, r.get('dossier')) not in own_row}
-            self.assertEqual(len(texts), 1, (zh, texts))
+        for zh, dossier in contexts:
+            with self.subTest(zh=zh, dossier=dossier):
+                options = [o for r in bank if r.get('dossier') == dossier
+                           for o in r['options'] if o['zh'] == zh
+                           and o['id'] != r['answer']['optionId']]
+                self.assertGreater(len(options), 1)
+                self.assertTrue(all(o.get('gloss') for o in options))
+                self.assertEqual(len({o['gloss'] for o in options}), 1)
+
+    def test_city_glosses_keep_the_approved_question_context(self):
+        bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}
+        # СЭЗ, зона свободной торговли и совместная зона сотрудничества — разные темы.
+        cases = (
+            ('天津', 'addition-b2-15', 'зона свободной торговли',
+             'provinces-q52', 'город центрального подчинения'),
+            ('深圳', 'addition-b2-01', 'Цяньхае',
+             '2016-17-zak-1', 'одна из четырёх первых особых экономических зон'),
+        )
+        for zh, contextual_id, contextual_fact, shared_id, shared_fact in cases:
+            with self.subTest(zh=zh):
+                contextual = next(o['gloss'] for o in bank[contextual_id]['options'] if o['zh'] == zh)
+                shared = next(o['gloss'] for o in bank[shared_id]['options'] if o['zh'] == zh)
+                self.assertIn(contextual_fact, contextual)
+                self.assertIn(shared_fact, shared)
+                self.assertNotEqual(contextual, shared)
 
     def test_blue_in_the_traditional_culture_question_is_the_temple_of_heaven_tile(self):
         # решение автора 2026-10-13: в вопросе о цвете в традиционной культуре синий

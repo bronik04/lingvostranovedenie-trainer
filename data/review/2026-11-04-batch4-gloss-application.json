@@ -1,0 +1,254 @@
+{
+  "schema": "lingvo-approved-gloss-application-v1",
+  "reviewId": "lingvo-contextual-glosses-batch4-2026-11-04-v1",
+  "manifestHash": "66f9f1a138844734fdaf5101833461fa1f1c3140860d62d30ad467be5ce612c4",
+  "appliedAt": "2026-11-04",
+  "authorSubmittedAt": "2026-11-04T16:37:28.916614+00:00",
+  "authorRevision": 1793810247523,
+  "counts": {
+    "questions": 20,
+    "newAnswerNames": 20,
+    "proposedGlosses": 78,
+    "existingGlossEdits": 14,
+    "skippedOptions": 1,
+    "companionEdits": 5
+  },
+  "authorComments": {},
+  "companionQuestionIds": [
+    "2021-22-reg-q814d54",
+    "2025-26-reg-5",
+    "2016-17-reg-4",
+    "2021-22-reg-qc30076",
+    "2021-22-zak-qac2753"
+  ],
+  "previousEditorialEntries": {
+    "2021-22-reg-q814d54": {
+      "reason": "Лексическая ошибка: «нападки» — словесные упрёки, нужно «нападения»",
+      "questionRu": "Как называются жилые комплексы крепостного типа, которые распространены в провинциях Фуцзянь и Гуандун? Первые подобные сооружения были построены представителями народности хакка для защиты от нападений местного населения."
+    },
+    "2025-26-reg-5": {
+      "reason": "Неуклюжая конструкция: «река в каком городе... не называется так же, как сам город».",
+      "questionRu": "Какой из этих городов России стоит на реке, название которой не совпадает с названием города?"
+    },
+    "2016-17-reg-4": null,
+    "2021-22-reg-qc30076": {
+      "reason": "Неточное русское название вуза и китайского соучредителя: официально «Университет МГУ-ППИ в Шэньчжэне», а 北京理工大学 по-русски — Пекинский политехнический институт.",
+      "explanation": "Соучредитель Университета МГУ-ППИ в Шэньчжэне (深圳北理莫斯科大学, соглашение подписано в мае 2014 года) — Московский государственный университет имени М. В. Ломоносова (莫斯科罗蒙诺索夫国立大学) совместно с Пекинским политехническим институтом."
+    },
+    "2021-22-zak-qac2753": {
+      "reason": "То же, что в qc30076: «МГУ-ПТУ» и «Пекинский технологический институт» вместо официальных «МГУ-ППИ» и «Пекинский политехнический институт».",
+      "explanation": "С китайской стороны соучредитель Университета МГУ-ППИ в Шэньчжэне — Пекинский политехнический институт (北京理工大学), подписавший соглашение с МГУ и правительством Шэньчжэня в 2014 году."
+    }
+  },
+  "groupedPairs": [
+    [
+      "2020-21-reg-q7a4710",
+      "2021-22-zak-q3ba1dd"
+    ]
+  ],
+  "groupChanges": [
+    {
+      "id": "contextual-batch4-20261104-1",
+      "records": [
+        "2020-21-reg-q7a4710",
+        "2021-22-zak-q3ba1dd",
+        "2025-26-mun-2",
+        "money-q15"
+      ],
+      "replaces": [
+        "moscow-100-rubles"
+      ]
+    }
+  ],
+  "diagnosticFalsePositives": [
+    {
+      "recordId": "addition-b1-09",
+      "otherId": "2017-18-zak-9",
+      "questions": [
+        "addition-b1-09",
+        "2017-18-zak-9"
+      ],
+      "verdict": "false-positive",
+      "captionSourceKey": "addition-b1-09:o1",
+      "reason": "Другой вопрос спрашивает китайское название флага 五星红旗. Подпись сообщает лишь орган и год утверждения флага, не содержит ни имени 五星红旗, ни цвета, ни числа звёзд.",
+      "action": "Не создавать группу только на основании совпадения слова «флаг»."
+    }
+  ],
+  "hiddenDiagnostics": [],
+  "status": "applied-and-verified-locally",
+  "published": false,
+  "dataValidation": {
+    "exactlyMatchesApprovedChangesAndAmendments": true,
+    "questionCount": 1269,
+    "publishedQuestions": 964,
+    "missingAnswerNames": 30,
+    "answerKeysAndOptionsUnchanged": true,
+    "newRemainingDiagnostics": [
+      {
+        "record": "addition-b1-09",
+        "option": "o1",
+        "zh": "中国人民政治协商会议",
+        "gloss": "Народный политический консультативный совет Китая — утвердил флаг КНР в 1949 г.",
+        "isAnswer": true,
+        "other": "2017-18-zak-9",
+        "answer": [
+          "Флаг КНР"
+        ],
+        "clues": [
+          "Флаг"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false,
+        "recordId": "addition-b1-09",
+        "otherId": "2017-18-zak-9"
+      }
+    ],
+    "captionCount": 78,
+    "automaticallyRecomputedTopics": [
+      {
+        "questionId": "2021-22-reg-q814d54",
+        "before": "Общество: население, этносы и религии",
+        "after": "География и административное устройство"
+      }
+    ]
+  },
+  "captionChanges": {
+    "new": 64,
+    "replacements": 14,
+    "retained": 5,
+    "skipped": 1
+  },
+  "companionChanges": {
+    "questionAndExplanation": 4,
+    "explanationOnly": 1
+  },
+  "verificationNotes": [
+    "Exact-bank verification includes the standard automatic taxonomy pass after approved question edits. Тулоу moved from assigned society to assigned geography; no manual topic override was added."
+  ],
+  "tests": {
+    "build": {
+      "command": "npm run build",
+      "exitCode": 0,
+      "log": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch4/application-build.log"
+    },
+    "python": {
+      "command": "python3 -m unittest discover -s test -t .",
+      "exitCode": 0,
+      "passed": 478,
+      "log": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch4/application-python.log"
+    },
+    "node": {
+      "command": "node --test test/*.test.mjs",
+      "exitCode": 0,
+      "passed": 166,
+      "failed": 0,
+      "skipped": 0,
+      "log": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch4/application-node.log"
+    },
+    "totalPassed": 644
+  },
+  "independentReview": {
+    "schema": "lingvo-batch4-independent-application-review-v1",
+    "reviewedAt": "2026-11-04T16:43:23.120690+00:00",
+    "scope": "Read-only review of approved batch4 application against exact before-application snapshots; no repository mutations or full suite reruns.",
+    "reviewId": "lingvo-contextual-glosses-batch4-2026-11-04-v1",
+    "manifestHash": "66f9f1a138844734fdaf5101833461fa1f1c3140860d62d30ad467be5ce612c4",
+    "authorRevision": 1793810247523,
+    "baseCommit": "abba46c5ea297f53505a52191ce8333a3f6c8196",
+    "failedChecks": [],
+    "counts": {
+      "bank": 1269,
+      "visible": 964,
+      "approvedQuestions": 20,
+      "captionChanges": 78,
+      "newCaptions": 64,
+      "replacementCaptions": 14,
+      "retainedCaptions": 5,
+      "skippedOptions": 1,
+      "questionAndExplanationChanges": 4,
+      "explanationOnlyChanges": 1,
+      "groupedRelations": 1,
+      "remainingAnswerNames": 30
+    },
+    "derivedTopicChanges": [
+      {
+        "questionId": "2021-22-reg-q814d54",
+        "before": "Общество: население, этносы и религии",
+        "after": "География и административное устройство",
+        "scores": {
+          "География и административное устройство": 1,
+          "Россия и межкультурный блок": 0,
+          "Литература, язык, искусство и философия": 0,
+          "История и государство": 0,
+          "Общество: население, этносы и религии": 0,
+          "Экономика, образование, наука и спорт": 0,
+          "Культура, традиции и праздники": 0
+        },
+        "topicSource": "assigned"
+      }
+    ],
+    "criticalIssues": [],
+    "importantIssues": [],
+    "minorIssues": [],
+    "observations": [
+      {
+        "title": "Automatic category change is a real visible side effect",
+        "detail": "The approved tulou question removes population/ethnicity keywords. The unchanged taxonomy rules consequently reassign this question from society to geography, affecting the thematic filter. It remains visible, with stable ID/options/key. This is deterministic pipeline behavior, explicitly recorded in the parent application report, not an unexplained or separately authored content edit. No blocking application defect found."
+      },
+      {
+        "title": "Unchanged manifest Chinese text is correctly treated as no-op",
+        "detail": "2016-17-reg-4 includes proposedQuestionZh equal to the baseline. Its application changes the explanation only, and no redundant Chinese-question editorial override is introduced."
+      }
+    ],
+    "tests": {
+      "independent": "Exact full layer/bank/dist reconstruction checks in this report; did not invoke parent application helpers or write repository data.",
+      "parentPython": {
+        "log": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch4/application-python.log",
+        "observed": "Final log: 478 tests, OK; parent confirmed exit 0."
+      },
+      "parentNode": {
+        "log": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch4/application-node.log",
+        "observed": "Final log: 166 tests, 166 passed, 0 failed, 0 skipped; parent confirmed exit 0."
+      },
+      "parentBuild": {
+        "log": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch4/application-build.log",
+        "observed": "Build log completed with 1269 bank and 964 visible; parent reported exit code 0."
+      },
+      "totalParentTestsPassed": 644
+    },
+    "declinedToJudge": [
+      "Did not re-research historical/factual claims or redo the prior independent content review of 83 captions; relied on the hash-bound preapproval review and exact preservation.",
+      "Did not rerun full Python/Node suites; recorded observed parent logs.",
+      "Did not perform a fresh browser/physical-device rendering review; parsed generated distribution data and relied on parent UI suite.",
+      "Did not independently regenerate the heuristic cross-question leak scan; verified the reviewed true relation was grouped transitively, old memberships were retained, and false-positive grouping was not introduced.",
+      "Remaining 30 answer names refers to the existing 2026-11-03 inventory, not a new semantic inventory of all records.",
+      "This is review of batch4 only; pre-existing approved batch2/batch3 and unrelated working-tree changes are outside scope.",
+      "No authorization to commit, merge, push, or deploy."
+    ],
+    "readiness": {
+      "applicationDataReady": true,
+      "localCompletionReady": true,
+      "pending": [],
+      "mergeOrPublicationAuthorized": false,
+      "note": "Ready for local completion of the approved batch4 application. Parent is finalizing status documentation. This review does not authorize commit, merge, push, or deployment."
+    },
+    "reviewedOutputHashes": {
+      "data/bank.json": "ddd4b309fa6bddf0583e51983102a5f85bcee0d1b3b9231f45b7a00cfc6ad288",
+      "data/review/glosses.json": "68df5a777fd3af05d522bf7048ba429773a5d7f77d3cc2c49f8f953c0352cd25",
+      "data/review/editorial.json": "0d9b6b411bdab3e27eb3417c25e1685695708c7c092b6489a4b2c18ea5e0b738",
+      "data/review/fact-groups.json": "7d2d8586d40598c9e17b1d6ba49ddbe492c072b0491d04e91ad833f6c0079500",
+      "dist/lingvostranovedenie-trainer.html": "60b9694d7d49f1c22be62cba0ddf101a2e66ba79494c00204665e9956926b7b4"
+    },
+    "checksPassed": 285,
+    "fullReport": "/Users/bronik04/.codex/visualizations/2026/11/03/01a1a1f6-61fc-7631-9e1a-dcbf82de0eda/contextual-glosses-batch4/application-independent-review.json"
+  },
+  "reviewLimitationsAccepted": [
+    "Source/content review already completed before approval; preserved unchanged.",
+    "Parent ran required suites and data diagnostics; reviewer independently reconstructed all data.",
+    "No fresh physical-device review required for data-only application; browser suite passed.",
+    "Existing answer-name inventory used for remaining queue; broader content audit is separate.",
+    "Other local batches retain their independent application reports; this review covers batch4.",
+    "Merge and publication remain deferred by author."
+  ]
+}

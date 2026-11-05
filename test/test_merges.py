@@ -366,11 +366,20 @@ class MergesInBankTest(unittest.TestCase):
             # Петром I» подсказывает вопрос о первом императоре; пословица «说曹操» встроенной 2025-26-mun-mosobl-4
             # называет Цао Цао — ответ 2015-16-zak-7); дубль одного
             # факта в группе ловит следующий тест
-            if keep_id == '2017-18-zak-10':
-                # 2026-11-03: принятая подпись Сиху у вопроса о крупнейшем озере
-                # называет Ханчжоу — ответ отдельного вопроса о местоположении Сиху.
+            # Принятые подписи могут объединять старые группы. Проверяем связанные
+            # вопросы, а не имя получившейся группы: Сиху/Ханчжоу, маньчжуры/Цин,
+            # Лао-цзы/«Дао дэ цзин», Лао Шэ/«Рикша» (согласования 2026-11-03/04).
+            related_questions = {
+                '2017-18-zak-10': ('2015-16-shk-65',),
+                '2018-19-shk-6': ('dynasties-q113', '2018-19-reg-1'),
+                '2016-17-reg-8': ('people-q10', '2018-19-reg-7'),
+                '2015-16-zak-8': ('2016-17-zak-7', '2023-24-reg-7', 'literature-q91'),
+            }
+            if keep_id in related_questions:
                 self.assertIn('factGroup', record)
-                self.assertEqual(record['factGroup'], self.bank['2015-16-shk-65'].get('factGroup'))
+                for related_id in related_questions[keep_id]:
+                    self.assertEqual(record['factGroup'], self.bank[related_id].get('factGroup'),
+                                     f'{keep_id} / {related_id}')
             elif 'factGroup' in record:
                 self.assertIn(record['factGroup'], {'province-names-river-lake', 'beijing-tianjin-municipality',
                                                     'potala-tibet', 'manchu-word', 'sunzi-art-of-war',
