@@ -33,7 +33,7 @@ GROUPS = {
     'mind': 'Знание и понимание',
     'people': 'Люди вместе',
 }
-KINDS = {'analog', 'reverse', 'odd'}
+KINDS = {'analog', 'meaning', 'reverse', 'odd'}
 STAGES = {'pri', 'shk', 'mun', 'reg', 'zak'}
 KEY_CHECKS = {'table', 'inline', 'bold', 'visual'}
 LETTERS = ['A', 'B', 'C', 'D']

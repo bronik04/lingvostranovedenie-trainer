@@ -25,6 +25,8 @@ const cy = {
   marks: [],
   wrongIds: [],
   wrongPicks: {},
+  retryQueue: [],
+  retriedIds: new Set(),
   finished: false,
   // настройки, с которыми начат раунд: для плашки «Раунд не закончен» и «Нового раунда»
   roundSettings: null,
@@ -70,6 +72,8 @@ function cySaveRound() {
       marks: cy.marks,
       wrongIds: cy.wrongIds,
       wrongPicks: cy.wrongPicks,
+      retryQueue: cy.retryQueue.map(({ record, afterPosition }) => ({ id: record.id, afterPosition })),
+      retriedIds: [...cy.retriedIds],
       settings: { filters: cy.roundSettings.filters, size: cy.roundSettings.size === Number.MAX_SAFE_INTEGER ? 'all' : cy.roundSettings.size },
       finished: cy.finished,
     }));
@@ -85,18 +89,26 @@ function cyDiscardRound() {
 }
 
 /** После перезагрузки — тот же раунд. Задание, на которое уже ответили, второй раз не задаётся:
- * ответ сохранён в прогрессе, поэтому раунд продолжается со следующего (или кончается). */
+ * ответ сохранён в прогрессе, поэтому раунд продолжается со следующего (или кончается).
+ * В прежних снимках без очереди отложенные повторы восстанавливаются из первых ошибок. */
 function cyRestoreRound() {
   try {
     const saved = JSON.parse(sessionStorage.getItem(CY_ROUND_KEY) || 'null');
     if (saved?.version !== 1) return;
     const byId = new Map(CHENGYU_BANK.map((record) => [record.id, record]));
     const round = saved.round.map((id) => byId.get(id));
+    const pending = saved.retryQueue ?? saved.wrongIds.map((id) => ({
+      id, afterPosition: queueRetry([], new Set(), byId.get(id), saved.round.indexOf(id)).queue[0].afterPosition,
+    }));
+    const retryQueue = pending.map(({ id, afterPosition }) => ({ record: byId.get(id), afterPosition }));
+    const retriedIds = saved.retriedIds ?? saved.wrongIds;
     const size = saved.settings?.size;
     // задания сменились между загрузками или снимок неполный — такой раунд не восстановить
     if (!round.length || round.some((record) => !record) || !Number.isInteger(saved.position)
         || saved.position < 0 || saved.position > round.length
         || ![saved.marks, saved.wrongIds].every(Array.isArray) || !saved.wrongPicks
+        || !Array.isArray(retriedIds) || retriedIds.some((id) => !byId.has(id))
+        || retryQueue.some(({ record, afterPosition }) => !record || !Number.isInteger(afterPosition) || afterPosition < 0)
         || typeof saved.wrongPicks !== 'object' || !Array.isArray(saved.settings?.filters?.groups)
         || !(size === 'all' || Number.isInteger(size))) {
       cyDiscardRound();
@@ -110,6 +122,8 @@ function cyRestoreRound() {
       marks: saved.marks,
       wrongIds: saved.wrongIds,
       wrongPicks: saved.wrongPicks,
+      retryQueue,
+      retriedIds: new Set(retriedIds),
       roundSettings: {
         filters: cyNormaliseFilters(saved.settings.filters),
         size: size === 'all' ? Number.MAX_SAFE_INTEGER : size,
@@ -118,8 +132,8 @@ function cyRestoreRound() {
     });
     if (cy.finished) cyRenderResults();
     else if (cy.answered || cy.position >= round.length) {
-      cy.position += cy.answered ? 1 : 0;
-      if (cy.position >= round.length) cyCompleteRound();
+      const remaining = cy.answered ? cyAdvance() : cy.position < round.length;
+      if (!remaining) cyCompleteRound();
       else {
         cyRenderQuestion();
         cySaveRound();
@@ -297,6 +311,7 @@ function cyStartRoundWith(round, settings = { filters: cy.filters, size: cy.size
   if (!round.length) return;
   Object.assign(cy, {
     round, position: 0, answered: false, correct: 0, marks: [], wrongIds: [], wrongPicks: {}, finished: false,
+    retryQueue: [], retriedIds: new Set(),
     // копия: настройки раздела меняются на месте, а «Новый раунд» должен повторить эти
     roundSettings: JSON.parse(JSON.stringify(settings)),
   });
@@ -347,7 +362,8 @@ function cyRenderQuestion() {
   if (!record) return cyFinishRound();
   document.dispatchEvent(new Event('reviewchange'));
   cy.answered = false;
-  $('cyProgressLabel').textContent = `Задание ${cy.position + 1} из ${cy.round.length}`;
+  $('cyProgressLabel').textContent = `Задание ${cy.position + 1} из ${cy.round.length}`
+    + (isRepeatInRound(cy.round, cy.position) ? ' · повтор ошибки' : '');
   cyRenderProgress();
   $('cyGroupMark').textContent = CY_GROUP_MARKS[record.group];
   $('cyGroupLabel').textContent = CY_GROUPS[record.group];
@@ -419,10 +435,13 @@ function cyAnswer(record, optionId) {
   cy.progress[record.id] = cyRecordAnswer(cy.progress[record.id], verdict.correct);
   cySaveProgress();
   cyRenderCount();
-  if (verdict.correct) cy.correct += 1;
-  else if (!cy.wrongIds.includes(record.id)) {
-    cy.wrongIds.push(record.id);
-    cy.wrongPicks[record.id] = optionId;
+  ({ correct: cy.correct, wrongIds: cy.wrongIds } =
+    tallyAnswer({ correct: cy.correct, wrongIds: cy.wrongIds }, record.id, verdict.correct));
+  if (!verdict.correct) {
+    if (!(record.id in cy.wrongPicks)) cy.wrongPicks[record.id] = optionId;
+    const retry = queueRetry(cy.retryQueue, cy.retriedIds, record, cy.position);
+    cy.retryQueue = retry.queue;
+    cy.retriedIds = retry.retriedIds;
   }
   cy.marks[cy.position] = verdict.correct;
   cySaveRound();
@@ -464,7 +483,8 @@ function cyAnswer(record, optionId) {
       : '',
   ].join('');
 
-  $('cyNextButton').textContent = cy.position + 1 < cy.round.length ? 'Следующее задание' : 'Итоги раунда';
+  $('cyNextButton').textContent = cy.position + 1 < cy.round.length ? 'Следующее задание'
+    : cy.retryQueue.length ? 'Повторить ошибку' : 'Итоги раунда';
   $('cyNextButton').classList.remove('hidden');
   requestAnimationFrame(() => {
     $('cyFeedback').focus({ preventScroll: true });
@@ -472,10 +492,20 @@ function cyAnswer(record, optionId) {
   });
 }
 
+/** Общая с обычным режимом пауза: пять других заданий или конец короткого раунда. */
+function cyAdvance() {
+  cy.position += 1;
+  const retryIndex = nextRetryInsertion(cy.retryQueue, cy.position, cy.round.length);
+  if (retryIndex !== -1) {
+    const [retry] = cy.retryQueue.splice(retryIndex, 1);
+    cy.round.splice(cy.position, 0, retry.record);
+  }
+  return cy.position < cy.round.length;
+}
+
 function cyNextQuestion() {
   if (!cy.answered) return;
-  cy.position += 1;
-  if (cy.position >= cy.round.length) {
+  if (!cyAdvance()) {
     cyFinishRound();
     return;
   }
@@ -517,7 +547,7 @@ function cyRenderResults() {
   $('cyResultCounts').innerHTML = `<span><span class="ok" lang="zh-Hans">✓</span> верно — ${cy.correct}</span>`
     + `<span><span class="bad" lang="zh-Hans">✕</span> с ошибкой — ${wrong}</span>`;
   $('cyResultText').textContent = wrong
-    ? 'Задания с ошибками вернутся в наборе «Ошибки».'
+    ? 'Счёт — по первой попытке. В наборе «Ошибки» остаются задания, в которых последний ответ был неверным.'
     : 'Весь раунд без ошибок.';
   $('cyRepeatMistakes').hidden = wrong === 0;
   $('cyRepeatMistakes').textContent = `Повторить ошибки раунда (${wrong})`;
@@ -542,7 +572,7 @@ function cyRenderResults() {
 /** Ошибки раунда: строка — кнопка, под ней разбор (буквально, смысл, ловушка) и подпись выбранного
  * варианта. Раскрыт один разбор, сначала — первый. */
 function cyRenderMistakes() {
-  const records = cy.round.filter((record) => cy.wrongIds.includes(record.id));
+  const records = wrongQuestions(cy.round, cy.wrongIds);
   $('cyResultMistakes').hidden = records.length === 0;
   $('cyMistakeList').replaceChildren(...records.map((record, index) => {
     const picked = record.options.find((option) => option.id === cy.wrongPicks[record.id]);
@@ -584,7 +614,7 @@ function cyOpenMistake(index) {
 }
 
 function cyRepeatMistakes() {
-  cyStartRoundWith(cy.round.filter((record) => cy.wrongIds.includes(record.id)), cy.roundSettings);
+  cyStartRoundWith(wrongQuestions(cy.round, cy.wrongIds), cy.roundSettings);
 }
 
 /* ---------- справочник ---------- */
@@ -628,13 +658,16 @@ function cyRenderReference() {
       `<h3 class="cy-row-head"><span class="cy-row-han" lang="zh-Hans">${escapeHtml(record.chengyu)}</span>`,
       `<span class="cy-row-pinyin" lang="zh-Hans">${escapeHtml(record.pinyin)}</span></h3>`,
       `<p class="row-meta">${reverse ? `Обратное задание: «${escapeHtml(record.prompt)}»`
-        : record.kind === 'odd' ? 'Найти лишний вариант' : 'Подобрать русский аналог'}</p>`,
+        : record.kind === 'odd' ? 'Найти лишний вариант'
+          : record.kind === 'meaning' ? 'Выбрать верное значение' : 'Подобрать русский аналог'}</p>`,
       appearances ? `<p class="row-meta">${escapeHtml(appearances)}</p>` : '',
       '<details class="row-reveal"><summary>Показать разбор</summary><div class="row-panel">',
       `<p class="row-answer">${record.kind === 'odd' ? 'Лишний' : 'Ответ'}: ${reverse
         ? `<span class="zh" lang="zh-Hans">${escapeHtml(answer)}</span>` : `«${escapeHtml(answer)}»`}</p>`,
-      `<p class="row-sources-title">Варианты бланка</p><ol class="cy-options-list">${options}</ol>`,
+      `<p class="row-sources-title">${record.occurrences?.length ? 'Варианты бланка' : 'Варианты ответа'}</p><ol class="cy-options-list">${options}</ol>`,
       cyFacts(record),
+      record.sources?.length
+        ? `<p class="row-sources-title">Словарные источники</p><ul class="row-sources">${evidenceList(record.sources)}</ul>` : '',
       '</div></details>',
     ].join('');
     const reveal = article.querySelector('.row-reveal');

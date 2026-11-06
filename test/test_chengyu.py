@@ -29,6 +29,7 @@ class ValidateTest(unittest.TestCase):
 
     def test_good_records_pass(self):
         self.assertEqual(self.errors([GOOD], [DRAFT]), [])
+        self.assertEqual(self.errors(drafts=[DRAFT | {'kind': 'meaning'}]), [])
 
     def test_broken_records_are_reported(self):
         cases = {

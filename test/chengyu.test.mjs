@@ -98,3 +98,7 @@ test('настоящие данные: формулировки задания �
   assert.equal(summary.groups, 8);
   assert.equal(summary.seasons, 8);
 });
+
+test('точный перевод не выдаётся за русский фразеологический аналог', () => {
+  assert.equal(cyPrompt({ kind: 'meaning' }), 'Выберите верное значение китайского фразеологизма');
+});
