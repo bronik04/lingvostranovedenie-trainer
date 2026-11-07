@@ -9,7 +9,8 @@
         "era": "zh",
         "school": "zh",
         "book": "zh",
-        "about": "ru"
+        "about": "ru",
+        "shortname": "zh"
       },
       "sides": [
         "school",
@@ -184,29 +185,36 @@
               "title": "庄子 — 中国关键词",
               "url": "http://keywords.china.org.cn/2024-08/28/content_117392957.html",
               "quote": "庄子（约前369—前286），战国中期著名哲学家、文学家，道家学派代表人物，与老子并称“老庄”。庄子崇尚自由，曾担任管理漆树园的小吏，后来辞官过着隐居生活。庄子最早提出“内圣外王”思想，其代表作收录于《庄子》。",
-              "authority": "official",
-              "checkedAt": "2026-10-23"
+              "checkedAt": "2026-11-07",
+              "authority": "official"
             },
             {
               "title": "哲学社会科学名家小传：庄子 — 中国社会科学网",
               "url": "https://www.cssn.cn/zx/zgzx/202210/t20221027_5554650.shtml",
               "quote": "庄子（前369—前286），宋国蒙（今河南商丘东北）人。战国时期哲学家，道家学派的代表人物。",
-              "authority": "academic",
-              "checkedAt": "2026-10-23"
+              "checkedAt": "2026-10-23",
+              "authority": "academic"
             },
             {
               "title": "Zhuangzi — China Keywords (SCIO)",
               "url": "http://english.scio.gov.cn/m/featured/chinakeywords/2024-08/30/content_117397346.htm",
               "quote": "Zhuangzi (c. 369-286 B.C.) was a famous philosopher and literary writer during the middle Warring States period (475-221 BC). A representative figure of the Taoist school of philosophy, he is often mentioned together with Laozi as \"Lao-Zhuang\".",
-              "authority": "official",
-              "checkedAt": "2026-10-23"
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             }
           ],
           "olympiad": [],
           "core": true,
           "skipSides": [
             "book"
-          ]
+          ],
+          "shortname": {
+            "zh": "庄子",
+            "ru": [
+              "Чжуан-цзы"
+            ],
+            "gloss": "Чжуан-цзы — даосский философ Сражающихся царств; сочинения вошли в одноимённую книгу"
+          }
         },
         {
           "id": "th-mengzi",
@@ -249,29 +257,43 @@
               "title": "孟子 — 中国关键词",
               "url": "http://keywords.china.org.cn/2024-08/28/content_117392970.html",
               "quote": "孟子（约前372—前289），战国中期著名思想家、教育家，是继孔子之后儒家学派的代表人物，与孔子并称“孔孟”。孟子一生经历与孔子非常相似，游历诸国都未得重用。孟子重要言行被编纂整理为《孟子》一书",
-              "authority": "official",
-              "checkedAt": "2026-10-23"
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             },
             {
               "title": "Mencius — China Keywords (SCIO)",
               "url": "http://english.scio.gov.cn/m/featured/chinakeywords/2024-08/30/content_117397348.htm",
               "quote": "Mencius (c. 372-289 B.C.) was a famous thinker and educator during the middle Warring States period (475-221 B.C.) and a representative figure of the Confucian school of thought after Confucius.",
-              "authority": "official",
-              "checkedAt": "2026-10-23"
+              "checkedAt": "2026-10-23",
+              "authority": "official"
             },
             {
               "title": "孟子 — 济宁党史史志网",
               "url": "http://zgjnds.jining.gov.cn/art/2015/4/29/art_62661_2657010.html",
               "quote": "中国古代著名思想家，战国时期儒家代表人物。孟子著有《孟子》一书。有《孟子》七篇传世，为儒家经典之一。孟子师承子思，继承、发挥了孔子的思想，成为仅次于孔子的一代儒家宗师，有“亚圣”之称，与孔子并称为“孔孟”。",
-              "authority": "official",
-              "checkedAt": "2026-10-23"
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "荀子的“性恶论” —《讽刺与幽默》/人民网",
+              "url": "http://paper.people.com.cn/fcyym/html/2023-05/12/content_25984232.htm",
+              "quote": "虽然孔子、孟子和荀子都是儒家的代表人物，都推崇“仁”和“民本”思想，但他们还是有一些不同的观点。尤其是在人性论上，孔子认为“性相近”，孟子主张“性善论”，而荀子则坚持“性恶论”，与孟子的看法截然相反。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
             }
           ],
           "olympiad": [],
           "core": true,
           "skipSides": [
             "book"
-          ]
+          ],
+          "shortname": {
+            "zh": "孟子",
+            "ru": [
+              "Мэн-цзы"
+            ],
+            "gloss": "Мэн-цзы — конфуцианский мыслитель, отстаивавший изначальную доброту человеческой природы"
+          }
         },
         {
           "id": "th-mozi",
@@ -437,25 +459,32 @@
               "title": "中国古代著名思想家、法家代表人物韩非子 — 中国驻委内瑞拉使馆",
               "url": "https://ve.china-embassy.gov.cn/chn/zwgx/whjl/qian561/200510/t20051031_4787096.htm",
               "quote": "韩非子（约前281年-前233年），生活于战国末期，为中国古代著名思想家法家的代表人物。韩非(约前280-前233)是韩国的贵族，\"喜刑名法术之学\"，后世称他为韩非子。他和李斯都是荀子的弟子。",
-              "authority": "official",
-              "checkedAt": "2026-10-24"
+              "checkedAt": "2026-11-07",
+              "authority": "official"
             },
             {
               "title": "韩非 — 中国关键词（中国外文局当代中国与世界研究院）",
               "url": "http://keywords.china.org.cn/m/2024-08/28/content_117392927.html",
               "quote": "韩非（约前280—前233），战国末期著名思想家、哲学家，法家学派代表人物。",
-              "authority": "official",
-              "checkedAt": "2026-10-24"
+              "checkedAt": "2026-10-24",
+              "authority": "official"
             },
             {
               "title": "简论韩非法思想的学术源流 — 中国法学网（中国社会科学院）",
               "url": "http://iolaw.cssn.cn/zxzp/201603/t20160322_4639488.shtml",
               "quote": "韩非作为法家思想的集大成者，成功的完成了将法家思想的归纳，整合和改良，使之系统化与体系化。",
-              "authority": "academic",
-              "checkedAt": "2026-10-24"
+              "checkedAt": "2026-10-24",
+              "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "shortname": {
+            "zh": "韩非",
+            "ru": [
+              "Хань Фэй"
+            ],
+            "gloss": "Хань Фэй — выходец из знати княжества Хань, легист, ученик Сюнь-цзы"
+          }
         },
         {
           "id": "th-xunzi",
@@ -490,25 +519,39 @@
               "title": "【专栏】《荀子》：以“礼”为中心的思想世界 — 中国社会科学网",
               "url": "https://www.cssn.cn/zx/zgzx/202603/t20260331_5978865.shtml",
               "quote": "荀子（生卒年有争议），名况，字卿，时称荀卿，战国晚期赵国思想家，被誉为“先秦儒家最后一位大师”。",
-              "authority": "academic",
-              "checkedAt": "2026-10-24"
+              "checkedAt": "2026-10-24",
+              "authority": "academic"
             },
             {
-              "title": "荀子的“性恶论” — 人民日报海外版",
+              "title": "荀子的“性恶论” —《讽刺与幽默》/人民网",
               "url": "http://paper.people.com.cn/fcyym/html/2023-05/12/content_25984232.htm",
               "quote": "虽然孔子、孟子和荀子都是儒家的代表人物，都推崇“仁”和“民本”思想，但他们还是有一些不同的观点。尤其是在人性论上，孔子认为“性相近”，孟子主张“性善论”，而荀子则坚持“性恶论”，与孟子的看法截然相反。",
-              "authority": "official",
-              "checkedAt": "2026-10-24"
+              "checkedAt": "2026-10-24",
+              "authority": "official"
             },
             {
               "title": "简论韩非法思想的学术源流 — 中国法学网（中国社会科学院）",
               "url": "http://iolaw.cssn.cn/zxzp/201603/t20160322_4639488.shtml",
               "quote": "韩非师承于儒家代表人物之一的荀子",
-              "authority": "academic",
-              "checkedAt": "2026-10-24"
+              "checkedAt": "2026-10-24",
+              "authority": "academic"
+            },
+            {
+              "title": "中国古代著名思想家、法家代表人物韩非子 — 中国驻委内瑞拉使馆",
+              "url": "https://ve.china-embassy.gov.cn/chn/zwgx/whjl/qian561/200510/t20051031_4787096.htm",
+              "quote": "韩非子（约前281年-前233年），生活于战国末期，为中国古代著名思想家法家的代表人物。韩非(约前280-前233)是韩国的贵族，\"喜刑名法术之学\"，后世称他为韩非子。他和李斯都是荀子的弟子。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "shortname": {
+            "zh": "荀子",
+            "ru": [
+              "Сюнь-цзы"
+            ],
+            "gloss": "Сюнь-цзы — конфуцианский мыслитель; у него учился будущий теоретик легизма Хань Фэй"
+          }
         },
         {
           "id": "th-yangzhu",
@@ -1683,7 +1726,8 @@
         "country": "zh",
         "era": "zh",
         "work": "zh",
-        "about": "ru"
+        "about": "ru",
+        "biography": "zh"
       },
       "required": [
         "name",
@@ -1727,26 +1771,40 @@
               "title": "米哈伊尔·伊万诺维奇·格林卡 — 俄罗斯国情网（中国社会科学院俄罗斯东欧中亚研究所）",
               "url": "http://euroasia.cssn.cn/elsgqw/elswy/elsyy/elsyy_egyyj/201004/t20100426_1890986.shtml",
               "quote": "格林卡是俄罗斯民族音乐真正的奠基人，被尊称为“俄罗斯音乐之父” … 他的两部歌剧《伊凡·苏萨宁》和《鲁斯兰与柳德米拉》不仅是俄罗斯歌剧宝库中的珍品",
-              "authority": "academic",
-              "checkedAt": "2026-10-24"
+              "checkedAt": "2026-10-24",
+              "authority": "academic"
             },
             {
               "title": "文汇报｜贝文力：民族乐派与斯拉夫作曲家 — 华东师范大学",
               "url": "https://www.ecnu.edu.cn/info/1095/4972.htm",
               "quote": "歌剧《伊万·苏萨宁》在彼得堡首演。 … 格林卡以此开启了俄罗斯音乐时期。",
-              "authority": "academic",
-              "checkedAt": "2026-10-24"
+              "checkedAt": "2026-10-24",
+              "authority": "academic"
             },
             {
               "title": "深沉的爱，勇敢的艺术追求 — 人民网",
               "url": "http://world.people.com.cn/n1/2019/0707/c1002-31217908.html",
               "quote": "立志继承格林卡的民族化道路",
-              "authority": "official",
-              "checkedAt": "2026-10-24"
+              "checkedAt": "2026-10-24",
+              "authority": "official"
+            },
+            {
+              "title": "Михаил Глинка — Культура.РФ",
+              "url": "https://www.culture.ru/persons/8279/mikhail-glinka",
+              "quote": "Занятия в пансионе Михаил Глинка совмещал с частными уроками музыки.",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "biography": {
+            "zh": "格林卡",
+            "ru": [
+              "Михаил Глинка"
+            ],
+            "gloss": "Михаил Глинка — учился в Благородном пансионе, параллельно брал частные уроки музыки."
+          }
         },
         {
           "id": "cmp-ru-tchaikovsky",
@@ -1781,33 +1839,47 @@
               "title": "彼得·柴科夫斯基 — 俄罗斯国情网（中国社会科学院俄罗斯东欧中亚研究所）",
               "url": "http://euroasia.cssn.cn/elsgqw/egrw/egrw_ysj/201004/t20100426_1852921.shtml",
               "quote": "19世纪俄国最著名的作曲家，俄罗斯民族音乐与西欧古典音乐的集大成者 … 芭蕾舞剧《天鹅湖》、《胡桃夹子》、《睡美人》 … 歌剧《叶甫根尼.奥涅金》、《黑桃皇后》 … 主要有6部交响乐、10部歌剧、3部芭蕾舞剧",
-              "authority": "academic",
-              "checkedAt": "2026-10-24"
+              "checkedAt": "2026-10-24",
+              "authority": "academic"
             },
             {
               "title": "芭蕾舞剧《天鹅湖》— 俄罗斯国情网（中国社会科学院俄罗斯东欧中亚研究所）",
               "url": "http://euroasia.cssn.cn/elsgqw/elswy/elsbl/elsbl_bljpxs/201004/t20100426_1890943.shtml",
               "quote": "《天鹅湖》是柴可夫斯基1876年开始创作的。",
-              "authority": "academic",
-              "checkedAt": "2026-10-24"
+              "checkedAt": "2026-10-24",
+              "authority": "academic"
             },
             {
               "title": "柴可夫斯基故居 — 中华人民共和国驻俄罗斯大使馆",
               "url": "https://ru.china-embassy.gov.cn/wlhz/lyjdjs_142844/msk_143119/202504/t20250430_11611405.htm",
               "quote": "柴可夫斯基故居坐落在莫斯科西北约 … 1892 年 5 月，柴可夫斯基从科林市郊迁居此处，度过了他生命中最后的 17 个月。",
-              "authority": "official",
-              "checkedAt": "2026-10-24"
+              "checkedAt": "2026-10-24",
+              "authority": "official"
             },
             {
               "title": "中央芭蕾舞团芭蕾舞剧《天鹅湖》清华上演 — 清华大学",
               "url": "https://www.tsinghua.edu.cn/info/1660/33391.htm",
               "quote": "三幕芭蕾舞剧《天鹅湖》是西方经典芭蕾舞剧，由俄国著名作曲家柴可夫斯基作曲。",
-              "authority": "academic",
-              "checkedAt": "2026-10-24"
+              "checkedAt": "2026-10-24",
+              "authority": "academic"
+            },
+            {
+              "title": "Пётр Чайковский — Московская консерватория",
+              "url": "https://www.mosconsv.ru/ru/Person/122234",
+              "quote": "окончил Училище правоведения в Петербурге и в чине титулярного советника был определен на службу в Министерство юстиции",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "biography": {
+            "zh": "柴可夫斯基",
+            "ru": [
+              "Пётр Чайковский"
+            ],
+            "gloss": "Пётр Чайковский — до музыкальной карьеры окончил Училище правоведения и служил в Минюсте."
+          }
         },
         {
           "id": "cmp-ru-mussorgsky",
@@ -1970,6 +2042,333 @@
           ],
           "olympiad": [],
           "core": true
+        },
+        {
+          "id": "cmp-ru-borodin",
+          "name": {
+            "zh": "鲍罗丁",
+            "ru": [
+              "Александр Бородин"
+            ],
+            "gloss": "Александр Бородин — с 1864 года возглавлял кафедру химии Медико-хирургической академии."
+          },
+          "sources": [
+            {
+              "title": "Кафедра химии — Военно-медицинская академия имени С. М. Кирова",
+              "url": "https://www.vmeda.org/wp-content/uploads/2024/12/ds-02-28-2024.pdf",
+              "quote": "В связи с выходом Зинина Н.Н. в отставку в 1864 г. руководителем кафедры становится его ученик Бородин Александр Порфирьевич",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "Краски востока: Александр Бородин — Культура.РФ",
+              "url": "https://www.culture.ru/live/movies/4140/kraski-vostoka",
+              "quote": "Однако более всего Бородина привлекала не музыка, а химия, которая и стала его профессией.",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ],
+          "country": {
+            "zh": "俄罗斯"
+          },
+          "about": "Александр Бородин — с 1864 года возглавлял кафедру химии Медико-хирургической академии.",
+          "biography": {
+            "zh": "鲍罗丁",
+            "ru": [
+              "Александр Бородин"
+            ],
+            "gloss": "Александр Бородин — с 1864 года возглавлял кафедру химии Медико-хирургической академии."
+          }
+        },
+        {
+          "id": "cmp-am-khachaturian",
+          "name": {
+            "zh": "哈恰图良",
+            "ru": [
+              "Арам Хачатурян"
+            ],
+            "gloss": "Арам Хачатурян — виолончель в техникуме Гнесиных, композиция в Московской консерватории."
+          },
+          "sources": [
+            {
+              "title": "Хачатурян Арам Ильич — Московская консерватория",
+              "url": "https://www.mosconsv.ru/ru/person/45795",
+              "quote": "В 1929 году поступил в Московскую консерваторию (класс композиции Н. Я. Мясковского)",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "Биография — Дом-Музей Арама Хачатуряна",
+              "url": "https://akhachaturianmuseum.am/ru/khachaturian/biography/",
+              "quote": "Поступление в Московский музыкальный техникум им. Гнесиных по классу виолончели",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ],
+          "country": {
+            "zh": "苏联"
+          },
+          "about": "Арам Хачатурян — учился игре на виолончели в техникуме Гнесиных, затем композиции в Московской консерватории.",
+          "biography": {
+            "zh": "哈恰图良",
+            "ru": [
+              "Арам Хачатурян"
+            ],
+            "gloss": "Арам Хачатурян — виолончель в техникуме Гнесиных, композиция в Московской консерватории."
+          }
+        }
+      ]
+    },
+    "figures": {
+      "columns": {
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "fig-luzhishen",
+          "name": {
+            "zh": "鲁智深",
+            "ru": [
+              "Лу Чжишэнь"
+            ],
+            "gloss": "Лу Чжишэнь — герой «Речных заводей», Лу Да; скрываясь от властей, стал буддийским монахом."
+          },
+          "sources": [
+            {
+              "title": "从鲁智深看侠与法的关系 — 教育部全国青少年普法网",
+              "url": "https://qspfw.moe.gov.cn/html/story/20211015/18605.html",
+              "quote": "鲁智深，本名鲁达，因打抱不平，三拳打死恶霸郑屠，为了躲避官府缉拿，便出家做了和尚。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "鲁智深 — 汕头职业技术学院",
+              "url": "https://www.stpt.edu.cn/yinggewu/2025/0304/c4722a41046/page.htm",
+              "quote": "本名鲁达，原是渭州经略府提辖，因打抱不平三拳打死恶霸镇关西，为了躲避官府缉捕便出家做了和尚，法名智深。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ]
+        },
+        {
+          "id": "fig-xuanzang",
+          "name": {
+            "zh": "玄奘",
+            "ru": [
+              "Сюаньцзан"
+            ],
+            "gloss": "Сюаньцзан — буддийский монах эпохи Тан, ходивший за сутрами в Индию в 629–645 годах",
+            "ref": "people/travelers/trv-xuanzang"
+          },
+          "sources": [
+            {
+              "title": "玄奘 — 中国关键词",
+              "url": "http://keywords.china.org.cn/m/2025-06/12/content_117923386.html",
+              "quote": "玄奘（公元602年—公元664年），姓陈名祎，唐朝高僧，河南洛州（今河南省洛阳市）人，中国汉传佛教四大佛经翻译家之一，中国汉传佛教唯识宗创始人。玄奘从小学习各种佛法，因为感到各师所说不一，各种经典也不尽相同，于是决定西行求法，以解迷惑。公元629年，玄奘从长安出发，历经千难万险，后入天竺，诚心求学问贤，于公元645年携佛经佛像等抵达故土。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "历史上真实的玄奘 — 中国网",
+              "url": "http://www.china.org.cn/chinese/2023-02/28/content_85133813.htm",
+              "quote": "玄奘西行取经，行程五万里，历时十七年",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "《大唐西域记》，记录丝路文明交往史 — 人民日报",
+              "url": "https://paper.people.com.cn/rmrb/html/2024-06/07/nw.D110000renmrb_20240607_2-17.htm",
+              "quote": "习近平主席指出：“中国唐代玄奘西行取经，历尽磨难，体现的是中国人学习域外文化的坚韧精神。”",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "fig-zhuyuanzhang",
+          "name": {
+            "zh": "朱元璋",
+            "ru": [
+              "Чжу Юаньчжан"
+            ],
+            "gloss": "Чжу Юаньчжан — основатель династии Мин (1368), император Хунъу",
+            "ref": "dynasties/rulers/rul-zhuyuanzhang"
+          },
+          "sources": [
+            {
+              "title": "古代中国：明清时期 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/portals/0/web/zt/gudai/detail8.html",
+              "quote": "公元1368年，明太祖朱元璋在南京称帝，建立明朝。",
+              "checkedAt": "2026-10-16",
+              "authority": "official"
+            },
+            {
+              "title": "宋、元、明、清（960-1911年） — 中华人民共和国驻哈萨克斯坦共和国大使馆",
+              "url": "https://kz.china-embassy.gov.cn/chn/gyzg/zggk/jianshi/201008/t20100804_1364731.htm",
+              "quote": "1368年，明太祖朱元璋在南京建立了明朝（1368—1644年）。",
+              "checkedAt": "2026-10-16",
+              "authority": "official"
+            },
+            {
+              "title": "洪武皇帝 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/court/lineage/226244.html",
+              "quote": "朱元璋幼时家境贫困，投于皇觉寺为僧。 … 洪武元年（1368年）朱元璋于应天称帝，国号大明。同年八月，明军攻克大都（今北京），元朝灭亡。 … 卒谥圣神文武钦明启运俊德成功统天大孝高皇帝，庙号太祖。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "胡惟庸：中国最后一个被诛九族的宰相 — 央视网（CCTV.com）",
+              "url": "http://news.cctv.com/china/20090130/102325_7.shtml",
+              "quote": "于是就有了洪武十三年的胡惟庸案，朱元璋接着就宣布裁撤中书省。丞相废除后，其事由六部分理，六部直接对皇帝负责，朱元璋大权独揽。",
+              "checkedAt": "2026-10-16",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "fig-laozi",
+          "name": {
+            "zh": "老子",
+            "ru": [
+              "Лао-цзы"
+            ],
+            "gloss": "Лао-цзы — мыслитель конца эпохи Чуньцю, основатель даосизма",
+            "ref": "people/thinkers/th-laozi"
+          },
+          "sources": [
+            {
+              "title": "老子 — 中国关键词",
+              "url": "http://keywords.china.org.cn/2024-08/28/content_117392960.html",
+              "quote": "老子是春秋末期著名思想家、哲学家，道家创始人和主要代表人物，被尊为道祖，称“太上老君”。春秋末年战乱，老子辞官归隐，西出函谷关，著有《道德经》。《道德经》分《道经》《德经》两篇，共八十一章",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "老子 — 驻委内瑞拉使馆",
+              "url": "https://ve.china-embassy.gov.cn/zwgx/whjl/qian560/200510/t20051031_4787091.htm",
+              "quote": "老子（前570年左右-前470年左右），思想家。姓李名耳，字伯阳，有人说又称老聃。相传生活在春秋时期。道家学派创始人。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            },
+            {
+              "title": "老子 — 周口市人民政府",
+              "url": "https://www.zhoukou.gov.cn/page_pc/zjzk/zkyx/rwzk/articleCC2213D142524D24A197B757822AE753.html",
+              "quote": "老子的成就主要体现在《道德经》一书里。",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
+    },
+    "concepts": {
+      "columns": {
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "concept-wuwei",
+          "name": {
+            "zh": "无为而治",
+            "ru": [
+              "Управление через недеяние"
+            ],
+            "gloss": "Управление через недеяние — следование естественному ходу вещей без лишнего вмешательства"
+          },
+          "sources": [
+            {
+              "title": "無為而治 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=159397&la=0&powerMode=0",
+              "quote": "在位者順勢而為，不妄加干涉，天下自然大治。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "先秦“无为而治”思想的民本内涵 — 中国社会科学报/中国社会科学网（赵清文）",
+              "url": "https://cssn.cn/zx/zgzx/202607/t20260722_6060530.shtml",
+              "quote": "先秦时期的儒、道、法诸家，都曾经明确表达过“无为”或“无为而治”的观念。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ]
+        },
+        {
+          "id": "concept-duhkha",
+          "name": {
+            "zh": "苦谛",
+            "ru": [
+              "Истина о страдании"
+            ],
+            "gloss": "Истина о страдании — первая из четырёх благородных истин буддизма"
+          },
+          "sources": [
+            {
+              "title": "四川理工学院课程实施大纲, с. 34",
+              "url": "https://jjxy.suse.edu.cn/_upload/article/files/3e/61/5db19b2042a9b2ec19b2eaadb6dc/e88b7a08-eaf7-4778-84cb-f66bef11baf7.pdf",
+              "quote": "“四谛”，即苦谛、集谛、灭谛、道谛，是佛教提出的一套说明苦难和解脱苦难的学说。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "释尊与释尊的教诲：过去、现在与将来 — 中国人民大学佛教与宗教学理论研究所",
+              "url": "https://isbrt.ruc.edu.cn/xszl/rucfojiaoallcmsZiyuan247.htm",
+              "quote": "四圣谛是：\n　　(1)苦谛，有关世俗之一切本质皆苦的真理；",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ]
+        },
+        {
+          "id": "concept-eightfold",
+          "name": {
+            "zh": "八正道",
+            "ru": [
+              "Благородный восьмеричный путь"
+            ],
+            "gloss": "Восьмеричный путь — буддийский путь к освобождению: мораль, сосредоточение, мудрость"
+          },
+          "sources": [
+            {
+              "title": "释尊与释尊的教诲：过去、现在与将来 — 中国人民大学佛教与宗教学理论研究所",
+              "url": "https://isbrt.ruc.edu.cn/xszl/rucfojiaoallcmsZiyuan247.htm",
+              "quote": "八正道从(1)对基本存在的实相持有正见和(2)对修行证悟的正思开始",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "四川理工学院课程实施大纲，p.34 — 四川轻化工大学经济学院",
+              "url": "https://jjxy.suse.edu.cn/_upload/article/files/3e/61/5db19b2042a9b2ec19b2eaadb6dc/e88b7a08-eaf7-4778-84cb-f66bef11baf7.pdf",
+              "quote": "“道谛”就是讲实现佛教理想所应遵循的手段和方法，主要是“八正道”",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ]
+        },
+        {
+          "id": "concept-goodnature",
+          "name": {
+            "zh": "性善论",
+            "ru": [
+              "Учение об изначальной доброте человеческой природы"
+            ],
+            "gloss": "Изначальная доброта человеческой природы — конфуцианское учение Мэн-цзы"
+          },
+          "sources": [
+            {
+              "title": "荀子的“性恶论” —《讽刺与幽默》/人民网",
+              "url": "http://paper.people.com.cn/fcyym/html/2023-05/12/content_25984232.htm",
+              "quote": "虽然孔子、孟子和荀子都是儒家的代表人物，都推崇“仁”和“民本”思想，但他们还是有一些不同的观点。尤其是在人性论上，孔子认为“性相近”，孟子主张“性善论”，而荀子则坚持“性恶论”，与孟子的看法截然相反。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "孟子“性善论”的发生与形成 — 中国社会科学报/中国社会科学网（张培高、张江海）",
+              "url": "https://www.cssn.cn/skgz/bwyc/202411/t20241106_5799991.shtml",
+              "quote": "孟子提出“性善”说是中国哲学史上的一件大事，因为这意味着一种全新人性论的出现。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ]
         }
       ]
     }

@@ -999,10 +999,11 @@
     "fact": {
       "table": "intangible",
       "row": "int-kunqu",
-      "ask": "name",
-      "where": {
-        "country": "中国"
-      }
+      "ask": "name"
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
     },
     "exclude": [
       "int-guqin",
@@ -1013,12 +1014,10 @@
       "int-jieqi",
       "int-taijiquan",
       "int-zhicha",
+      "int-yueju-zhejiang",
+      "int-huangmeixi",
       "int-xiangsheng",
       "int-xiangqi"
-    ],
-    "check": {
-      "verdict": "accept",
-      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25. Набор держится на exclude неоперного наследия — при добавлении строк в intangible дополнять exclude."
-    }
+    ]
   }
 ]

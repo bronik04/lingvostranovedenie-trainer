@@ -1,0 +1,735 @@
+{
+  "date": "2026-11-07",
+  "scope": "Supporting dossier sources for the accepted nineteen questions; quotes and access methods from independent source checks. Approved student-facing captions unchanged.",
+  "parts": {
+    "a": {
+      "高速动车": {
+        "sources": [
+          {
+            "title": "动车组车厢席别设置及坐席号编排是怎样规定的？ — 国家铁路局",
+            "url": "https://www.nra.gov.cn/ztzl/hy/kjcx/kpdd/201605/t20160526_145850.shtml",
+            "quote": "在一列高速动车组内一般都编挂有一等座车和二等座车",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "火车上的字母和数字分别有什么含义？ — 中国铁路微信公众号 / 新华网客户端",
+            "url": "https://app.xinhuanet.com/news/article.html?articleId=fbcb6e9d-bcc7-4895-89c0-b3df746f879d",
+            "quote": "G读“高”\n\n代表高速动车组旅客列车，运行速度可达300-350公里/时。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ],
+        "notes": [
+          "Approved caption preserved. First source directly supports first/second-class seats; second supports the G classification.",
+          "First page returned a redirect loop on full open; exact official indexed extract was read and verified on 2026-11-07. No speed or new prefix claims need to be added to student text."
+        ]
+      },
+      "普通动车": {
+        "sources": [
+          {
+            "title": "和谐1A/1B/1E型动车组四级检修规程 — 国家铁路局",
+            "url": "https://www.nra.gov.cn/jglz/fgzd/gfwj/zt/qt/202204/P020220406007607663293.pdf",
+            "quote": "CRH1E 为16 编组卧车。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "想从动车组8号车厢走到9号车厢？除非停车… — 北京党员教育 / 科普中国",
+            "url": "https://www.bjcc.gov.cn/article/600490390.html",
+            "quote": "在票务系统中，“（普通）动车组列车”车次开头以大写字母“D”作为前缀（源于“动”字汉语拼音字母），简称“D字头列车”。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ],
+        "notes": [
+          "Approved caption preserved. Technical regulation supports the specific CRH1E sleeping-car example; second source explicitly identifies the ordinary EMU category.",
+          "Both exact extracts verified in official indexed text; first full open returned 403, second full open timed out. Whitespace in the technical PDF is retained.",
+          "The historical D classification in evidence must not be promoted into a permanent modern rule in the caption; the approved caption contains no prefix."
+        ]
+      },
+      "特快列车": {
+        "sources": [
+          {
+            "title": "火车、动车以及高铁的区别 — 北京党员教育 / 科普中国",
+            "url": "https://www.bjcc.gov.cn/article/600535944.html",
+            "quote": "而普通火车，是传统的靠车头拉车厢，只有车头有动力。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "铁路技术管理规程（2006年铁道部令第29号） — 国家铁路局",
+            "url": "https://www.nra.gov.cn/xxgk/gkml/ztjg/gfzd/bmgz/202206/t20220624_327439.shtml",
+            "quote": "特快旅客列车不准编挂货车，编入的客车车辆最高运行速度等级必须符合该列车规定的速度要求。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ],
+        "notes": [
+          "Approved caption preserved. The first source explicitly includes T/特快 among ordinary trains before explaining locomotive-hauled ordinary trains. Second source independently confirms 特快 as a passenger-train category with assembled passenger cars.",
+          "First official full page timed out; its complete indexed official extract was read. Second is a historical technical regulation, used for entity/category evidence only, without asserting that its whole legal regime remains current.",
+          "No T prefix, speed, fare, or route assertion is added to the accepted caption."
+        ]
+      },
+      "城际列车": {
+        "sources": [
+          {
+            "title": "想从动车组8号车厢走到9号车厢？除非停车… — 北京党员教育 / 科普中国",
+            "url": "https://www.bjcc.gov.cn/article/600490390.html",
+            "quote": "城际动车组列车简称“C字头列车”，是专用于中短途城市或城郊之间列车",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "火车上的字母和数字分别有什么含义？ — 中国铁路微信公众号 / 新华网客户端",
+            "url": "https://app.xinhuanet.com/news/article.html?articleId=fbcb6e9d-bcc7-4895-89c0-b3df746f879d",
+            "quote": "代表城际动车组旅客列车，它是往返于相邻城市或城市群之间的客运列车。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ],
+        "notes": [
+          "Approved caption preserved. Both sources support interurban operation; first explicitly supports short/medium distances and suburban links.",
+          "First full page timed out; the exact official indexed extract was read. Actual page title is recorded above; prior proposal used a descriptive source title 动车组分类科普.",
+          "No C-prefix or speed assertion is added to the approved caption."
+        ]
+      },
+      "鲍罗丁": {
+        "sources": [
+          {
+            "title": "Кафедра химии — Военно-медицинская академия имени С. М. Кирова",
+            "url": "https://www.vmeda.org/wp-content/uploads/2024/12/ds-02-28-2024.pdf",
+            "quote": "В связи с выходом Зинина Н.Н. в отставку в 1864 г. руководителем кафедры становится его ученик Бородин Александр Порфирьевич",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          },
+          {
+            "title": "Краски востока: Александр Бородин — Культура.РФ",
+            "url": "https://www.culture.ru/live/movies/4140/kraski-vostoka",
+            "quote": "Однако более всего Бородина привлекала не музыка, а химия, которая и стала его профессией.",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ],
+        "notes": [
+          "Approved caption preserved. Academy source directly supports chemistry department leadership from 1864; independent Ministry of Culture portal supports professional chemistry work.",
+          "Academy PDF opened successfully, and its relevant passage was separately verified through the exact indexed extract after a subsequent find request timed out.",
+          "Accepted revised stem about a composer who was also a scientist-chemist resolves the already identified medical-education and Russian/Armenian wording issues."
+        ]
+      },
+      "哈恰图良": {
+        "sources": [
+          {
+            "title": "Хачатурян Арам Ильич — Московская консерватория",
+            "url": "https://www.mosconsv.ru/ru/person/45795",
+            "quote": "В 1929 году поступил в Московскую консерваторию (класс композиции Н. Я. Мясковского)",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          },
+          {
+            "title": "Биография — Дом-Музей Арама Хачатуряна",
+            "url": "https://akhachaturianmuseum.am/ru/khachaturian/biography/",
+            "quote": "Поступление в Московский музыкальный техникум им. Гнесиных по классу виолончели",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ],
+        "notes": [
+          "Approved caption preserved. Both full pages read. Conservatory text also explicitly places him in the Gnesin cello class; museum timeline separately confirms conservatory composition study.",
+          "Quote whitespace normalized from nonbreaking spaces. No new biographical details are introduced."
+        ]
+      },
+      "爱情小说": {
+        "sources": [
+          {
+            "title": "言情小說 — 教育部《重編國語辭典修訂本》",
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=155042&la=0&powerMode=0",
+            "quote": "以男女情愛為主要描寫內容的小說。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "Romance — OpenLearn, A Glossary of terms relating to Creative Writing, The Open University",
+            "url": "https://www.open.edu/openlearn/mod/glossary/showentry.php?displayformat=dictionary&eid=887",
+            "quote": "Now it is often more taken to refer to a novel where the fiction centres on one or more love stories.",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "Approved caption preserved. Both full pages read. The Chinese dictionary uses the synonym 言情小說; independent university glossary supports the central-love-story meaning without importing a mandatory happy ending."
+        ]
+      },
+      "恐怖小说": {
+        "sources": [
+          {
+            "title": "恐怖小說 — 教育部《重編國語辭典修訂本》",
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=79044&la=0&powerMode=0",
+            "quote": "充滿恐怖、鬼魂、凶宅等離奇神怪之事。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "Horror for teens — National Library Board Singapore, hosted by Ahmad Ibrahim Secondary School",
+            "url": "https://www.ahmadibrahimsec.moe.edu.sg/files/Resource%20List%20for%20Teens%20-%20Horror.pdf",
+            "quote": "Horror fiction refers to stories written to horrify or scare its readers.",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ],
+        "notes": [
+          "Approved caption preserved. MOE dictionary full page read; second exact extract verified in the official school-hosted National Library Board resource.",
+          "The MOE dictionary entry is historically narrow (late eighteenth/early nineteenth centuries), but its ghost/haunted-house examples support the accepted nonexclusive examples. The second official source supplies the broader genre definition and also lists Ghosts & haunted houses as a subgenre."
+        ]
+      },
+      "科幻小说": {
+        "sources": [
+          {
+            "title": "科幻小說 — 教育部《重編國語辭典修訂本》",
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=76013&la=0&powerMode=0",
+            "quote": "以現有的科技資料作根據，對未來世界或過去情景作幻想式的描述。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "Glossary of Genres — Science Fiction, University of Texas at Austin Libraries",
+            "url": "https://guides.lib.utexas.edu/c.php?g=849284&p=9855392",
+            "quote": "Science fiction - Fiction that explores worlds with imagined innovations in science and/or technology.",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "Approved caption preserved. Both full pages read. Independent sources support imagined events or worlds built around scientific and technical ideas; no new work-specific claim is added."
+        ]
+      },
+      "历史小说": {
+        "sources": [
+          {
+            "title": "歷史小說 — 教育部《重編國語辭典修訂本》",
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=62638&q=1&word=%E5%8F%B2",
+            "quote": "以歷史故事為題材的小說。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "五、小說 — 國立臺中教育大學數位學習教材",
+            "url": "https://elearning.ntcu.edu.tw/base/10001/course/10010322/content/public/3-1-5.htm",
+            "quote": "以歷史上的人物或事件為題材，然後加上作者的想像和渲染寫成的。",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "Approved caption preserved. Dictionary full page read. Exact university course passage read in indexed source text, where it is explicitly headed 歷史小說."
+        ]
+      },
+      "李颀": {
+        "sources": [
+          {
+            "title": "杨镰《诗词中的新疆》之《古从军行》 — 新疆大学新疆文献研究中心",
+            "url": "https://wxyj.xju.edu.cn/info/1056/1407.htm",
+            "quote": "李颀，盛唐诗人。颍阳（河南登封）人。开元二十三年（735）进士。所写边塞诗颇有名。",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          },
+          {
+            "title": "墨韵唐风——唐代河南诗人诗作书法长廊 — 洛阳理工学院人文与社会科学学院",
+            "url": "https://www.lit.edu.cn/rwyshxy/info/1512/37557.htm",
+            "quote": "工诗，尤以边塞诗著称。",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "Approved caption preserved. Xinjiang University full page read; it prints 古从军行 under 李颀 and supports the detailed caption. Independent Luoyang Institute university page indexed text read; quote occurs in section 9.李颀.",
+          "No uncertain birth date or disputed biographical detail is introduced."
+        ]
+      },
+      "王績": {
+        "sources": [
+          {
+            "title": "王绩《野望》鉴赏 — 南通大学",
+            "url": "https://sxss.ntu.edu.cn/2018/0124/c6266a165731/page.htm",
+            "quote": "《野望》写的是山野秋景，在闲逸的基调中，透露出几分忧郁和苦闷，是王绩的代表作。",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          },
+          {
+            "title": "王绩诗歌与河汾文化精神 — 北京大学机构知识库（陈瑜、杜晓勤；陕西师范大学学报，2007）",
+            "url": "https://ir.pku.edu.cn/handle/20.500.11897/277871",
+            "quote": "王绩是唐初诗坛别具风格的诗人",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "Approved caption preserved. Canonical simplified dossier name may be 王绩; original approved question option 王績 must remain traditional.",
+          "Nantong University full page read and explicitly supports the autumn rural landscape in 野望. Independent Peking University indexed academic abstract read and supports the early-Tang identity.",
+          "No birth date is added; source biographies differ on precise dating, outside the accepted caption."
+        ]
+      }
+    },
+    "b": {
+      "普通话": {
+        "sources": [
+          {
+            "title": "新中国初期语言文字工作重要大事 — 中华人民共和国教育部",
+            "url": "https://www.moe.gov.cn/s78/A18/s8357/moe_808/tnull_14054.html",
+            "quote": "2月6日，国务院发出《关于推广普通话的指示》。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "推广普通话宣传提纲和宣传口号 — 中华人民共和国教育部",
+            "url": "https://www.moe.gov.cn/s78/A18/s8357/moe_808/tnull_17134.html",
+            "quote": "普通话以北京语音为标准音，以北方话为基础方言，以典范的现代白话文著作为语法规范。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "什么是汉民族共同语？普通话就是北京话吗？ — 南阳医专公共教学部",
+            "url": "https://gjb.nymc.edu.cn/info/1076/1438.htm",
+            "quote": "普通话“以北京语音为标准音，以北方话为基础方言，以典范的现代白话文为语法规范”",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "Shared term for reviewNumbers 12 and 16. Sources[0] is approved source for 12; sources[1] is approved source for 16. The 2月6日 passage is under the explicit 1956年 heading; the next sentence defines the pronunciation/dialect/grammar standard.",
+          "MOE direct opens sometimes redirect/timeout. Exact first and second source texts were recovered through search results for the exact approved URLs; the direct Nanyang university page was also fetched."
+        ],
+        "gaps": []
+      },
+      "国语": {
+        "sources": [
+          {
+            "title": "近百年来汉字的简化与规范(苏培成) — 中华人民共和国教育部",
+            "url": "https://www.moe.gov.cn/jyb_xwfb/xw_fbh/moe_2069/s7135/s7562/s7569/201308/t20130827_156355.html",
+            "quote": "1932年民国政府教育部颁布《国音常用字汇》初步实现了汉字的四定（定量、定形、定音、定序）。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "什么是汉民族共同语？普通话就是北京话吗？ — 南阳医专公共教学部",
+            "url": "https://gjb.nymc.edu.cn/info/1076/1438.htm",
+            "quote": "辛亥革命后民族共同语称为“国语”，中华人民共和国成立后把民族共同语正式定名为“普通话”（台湾省仍沿称“国语”）。",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          },
+          {
+            "title": "“国音”的三次变革与“京音”的强势回归 —《语言学论丛》2022年第2期（北京大学学术期刊平台）",
+            "url": "https://ccj.pku.edu.cn/Article/DownLoad?id=519798731432005&type=ArticleFile",
+            "quote": "1932年5月，《国音常用字汇》由商务印书馆出版发行，同时废止1920年公布的《国音字典》。",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "Shared term for reviewNumbers 12 and 16. Sources[0] is approved source for 12; sources[1] is approved source for 16.",
+          "The Peking University-hosted paper additionally quotes the dictionary's 1932 explanation: 本书所定的音，是以现代的北平音为标准的。 This supports the approved pronunciation-standard caption.",
+          "Do not infer exclusive modern official-language status in Taiwan from the historical naming fact."
+        ],
+        "gaps": []
+      },
+      "中文": {
+        "sources": [
+          {
+            "title": "華文 — 教育部《重編國語辭典修訂本》",
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=83701&la=0&powerMode=0",
+            "quote": "中國的語言文字。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "GB 12200.1—90 汉语信息处理词汇 01部分：基本术语 — 教育部语言文字应用研究所资料站",
+            "url": "https://gf.ywky.edu.cn/uploads/pdf/GB12200.1-90%E6%B1%89%E8%AF%AD%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86%E8%AF%8D%E6%B1%87%2001%E9%83%A8%E5%88%86%EF%BC%9A%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD.pdf",
+            "quote": "4.1.3.2 中文 Chinese\n特指汉语。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ],
+        "notes": [
+          "The approved first source is the 華文 entry; its 相似詞 field explicitly lists 漢文、中文. Thus the short approved definition plus the synonym field supports the accepted caption.",
+          "GB12200.1-90 is used only as a second source for basic terminology, not as a claim about current standard status."
+        ],
+        "gaps": []
+      },
+      "汉语": {
+        "sources": [
+          {
+            "title": "漢語 — 教育部《國語辭典簡編本》",
+            "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=19740&la=0&powerMode=0",
+            "quote": "漢族的語言，為漢藏語系中的一支。包括北方話、吳語、湘語、贛語、客語、粵語、閩語等七種主要方言。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "GB 12200.1—90 汉语信息处理词汇 01部分：基本术语 — 教育部语言文字应用研究所资料站",
+            "url": "https://gf.ywky.edu.cn/uploads/pdf/GB12200.1-90%E6%B1%89%E8%AF%AD%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86%E8%AF%8D%E6%B1%87%2001%E9%83%A8%E5%88%86%EF%BC%9A%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD.pdf",
+            "quote": "汉族的语言。中国境内主要的通用语言，也是国际通用语言之一。属汉藏语系。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ],
+        "notes": [
+          "The first-source full definition explicitly includes 吴语/粵語, so the accepted examples are supported.",
+          "The different traditional/simplified forms in the quote are preserved exactly as on the dictionary page."
+        ],
+        "gaps": []
+      },
+      "白话": {
+        "sources": [
+          {
+            "title": "白話文 — 教育部《重編國語辭典修訂本》",
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=13804&la=0&powerMode=0",
+            "quote": "以口語為基礎的書面語言，相對於文言文而言。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "文言与白话的千年之争——《新青年》媒介分析 — 中国传媒大学（张烨）",
+            "url": "https://rirt.cuc.edu.cn/2011/0917/c3801a93611/page.htm",
+            "quote": "文言文是建立在先秦口语基础上的上古汉语书面语言，白话文则是建立在以唐宋以来北方话的基础上。",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "In this literary question 白话 is used for 白话文, as already disclosed in the approved manifest warning; retain approved caption."
+        ],
+        "gaps": []
+      },
+      "文言文": {
+        "sources": [
+          {
+            "title": "文言文 — 教育部《重編國語辭典修訂本》",
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=162304&la=1&powerMode=0",
+            "quote": "經過文飾、與口語不同的文體。通常詞句較精簡。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "文言与白话的千年之争——《新青年》媒介分析 — 中国传媒大学（张烨）",
+            "url": "https://rirt.cuc.edu.cn/2011/0917/c3801a93611/page.htm",
+            "quote": "文言文是建立在先秦口语基础上的上古汉语书面语言，白话文则是建立在以唐宋以来北方话的基础上。",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "Same university article explains the historical departure from everyday speech and the early-twentieth-century transition; the dictionary directly supports brevity."
+        ],
+        "gaps": []
+      },
+      "鲁智深": {
+        "sources": [
+          {
+            "title": "从鲁智深看侠与法的关系 — 教育部全国青少年普法网（喻平，来源：人民法院报）",
+            "url": "https://qspfw.moe.gov.cn/html/story/20211015/18605.html",
+            "quote": "鲁智深，本名鲁达，因打抱不平，三拳打死恶霸郑屠，为了躲避官府缉拿，便出家做了和尚。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "鲁智深 — 汕头职业技术学院",
+            "url": "https://www.stpt.edu.cn/yinggewu/2025/0304/c4722a41046/page.htm",
+            "quote": "本名鲁达，原是渭州经略府提辖，因打抱不平三拳打死恶霸镇关西，为了躲避官府缉捕便出家做了和尚，法名智深。",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "The first source explicitly discusses the character in 水浒传; both sources support the original name and becoming a monk to escape arrest."
+        ],
+        "gaps": []
+      },
+      "曲艺": {
+        "sources": [
+          {
+            "title": "曲艺保护传承：从历史中走来 在现实中奋斗 向未来处眺望 — 中国非物质文化遗产网",
+            "url": "https://www.ihchina.cn/Article/Index/detail?id=7381",
+            "quote": "以本色身份出现在观众面前，进行第三人称统领的口语性说唱式叙述。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "非物质文化遗产概况 — 湖北省文化和旅游厅",
+            "url": "https://wlt.hubei.gov.cn/bsfw/bmcxfw/fwzwhyc/fwzwhycgk/201911/t20191121_1363875.shtml",
+            "quote": "曲艺是中国民族民间各种说唱艺术的总称",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ],
+        "notes": [
+          "Exact first-source passage recovered from the same article also served at https://www.ihchina.cn/art/detail/id/7381.html. Original approved URL retained.",
+          "The source distinguishes narrative demonstration from an actor continuously assuming a dramatic character; keep the accepted wording."
+        ],
+        "gaps": []
+      },
+      "戏剧": {
+        "sources": [
+          {
+            "title": "戲劇 — 教育部《國語辭典簡編本》",
+            "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=26509&q=1",
+            "quote": "透過演員將某種故事或情節，以動作、歌唱、對白等方式表演出來的藝術。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "〖川大艺坛〗第11期 李蔷：论教育戏剧的游戏精神 — 四川大学艺术学院",
+            "url": "https://art.scu.edu.cn/info/1182/8606.htm",
+            "quote": "戏剧是由演员扮演角色在舞台上当众表演故事的一种综合艺术。",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [],
+        "gaps": []
+      },
+      "民乐": {
+        "sources": [
+          {
+            "title": "“非物质文化遗产多媒体资源库建设与示范应用—民族器乐音频资源部分”项目通过验收 — 中华人民共和国文化和旅游部",
+            "url": "https://www.mct.gov.cn/whzx/bnsj/whkjs/201608/t20160805_750847.html",
+            "quote": "该项目依据民族乐器实际发展及大众需求,以及民乐将来的发展和传播趋势,形成了民族器乐音频数据库的元数据标准和分类标准",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "民乐系 — 中央音乐学院",
+            "url": "https://www.ccom.edu.cn/jgk/jxdw/mlx.htm",
+            "quote": "出版各类民族器乐教材和理论著作百余部",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "The accepted caption says 'in particular, instrumental music'; it does not exhaustively define all uses of 民乐. The approved ministry source explicitly links 民乐 to 民族乐器/民族器乐.",
+          "The conservatory department source is an institutional academic corroboration of instrumental 民乐; selecting a short continuous excerpt avoids unrelated current staff figures."
+        ],
+        "gaps": []
+      },
+      "无为而治": {
+        "sources": [
+          {
+            "title": "無為而治 — 教育部《重編國語辭典修訂本》",
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=159397&la=0&powerMode=0",
+            "quote": "在位者順勢而為，不妄加干涉，天下自然大治。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "先秦“无为而治”思想的民本内涵 — 中国社会科学报/中国社会科学网（赵清文）",
+            "url": "https://cssn.cn/zx/zgzx/202607/t20260722_6060530.shtml",
+            "quote": "先秦时期的儒、道、法诸家，都曾经明确表达过“无为”或“无为而治”的观念。",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "Accepted warning is supported: the term occurs in more than the Daoist tradition, so it must not be presented as an exclusive Daoist concept. This is not a new reason to rewrite the approved question.",
+          "The second source also specifically discusses 老子“无为而治”思想, so connection to Daoist philosophy is supported."
+        ],
+        "gaps": []
+      },
+      "苦谛": {
+        "sources": [
+          {
+            "title": "四川理工学院课程实施大纲，p.34 — 四川轻化工大学经济学院",
+            "url": "https://jjxy.suse.edu.cn/_upload/article/files/3e/61/5db19b2042a9b2ec19b2eaadb6dc/e88b7a08-eaf7-4778-84cb-f66bef11baf7.pdf",
+            "quote": "“四谛”，即苦谛、集谛、灭谛、道谛，是佛教提出的一套说明苦难和解脱苦难的学说。",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          },
+          {
+            "title": "释尊与释尊的教诲：过去、现在与将来 — 中国人民大学佛教与宗教学理论研究所",
+            "url": "https://isbrt.ruc.edu.cn/xszl/rucfojiaoallcmsZiyuan247.htm",
+            "quote": "四圣谛是：\n　　(1)苦谛，有关世俗之一切本质皆苦的真理；",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "The RUC source directly numbers 苦谛 as (1), supporting 'first of four noble truths' without inferring order from a plain list.",
+          "The first PDF was verified in indexed extracted text at printed p.34; surrounding syllabus contains OCR defects, but the chosen approved passage is clear."
+        ],
+        "gaps": []
+      },
+      "八正道": {
+        "sources": [
+          {
+            "title": "释尊与释尊的教诲：过去、现在与将来 — 中国人民大学佛教与宗教学理论研究所",
+            "url": "https://isbrt.ruc.edu.cn/xszl/rucfojiaoallcmsZiyuan247.htm",
+            "quote": "八正道从(1)对基本存在的实相持有正见和(2)对修行证悟的正思开始",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          },
+          {
+            "title": "四川理工学院课程实施大纲，p.34 — 四川轻化工大学经济学院",
+            "url": "https://jjxy.suse.edu.cn/_upload/article/files/3e/61/5db19b2042a9b2ec19b2eaadb6dc/e88b7a08-eaf7-4778-84cb-f66bef11baf7.pdf",
+            "quote": "“道谛”就是讲实现佛教理想所应遵循的手段和方法，主要是“八正道”",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "The first source continues: 然后通过(3)正语、(4)正业、(5)正命三个有关道德方面的修养，再深入到(6)正精进、(7)正念、(8)正定三个有关定慧方面的修持。 This directly supports morality/concentration/wisdom in the approved caption.",
+          "The RUC text also says completing these eight aspects brings 全然解脱. The second source is a different university course syllabus and supports the basic Buddhist path meaning."
+        ],
+        "gaps": []
+      },
+      "性善论": {
+        "sources": [
+          {
+            "title": "荀子的“性恶论” —《讽刺与幽默》/人民网",
+            "url": "http://paper.people.com.cn/fcyym/html/2023-05/12/content_25984232.htm",
+            "quote": "孔子认为“性相近”，孟子主张“性善论”，而荀子则坚持“性恶论”",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "孟子“性善论”的发生与形成 — 中国社会科学报/中国社会科学网（张培高、张江海）",
+            "url": "https://www.cssn.cn/skgz/bwyc/202411/t20241106_5799991.shtml",
+            "quote": "孟子提出“性善”说是中国哲学史上的一件大事，因为这意味着一种全新人性论的出现。",
+            "checkedAt": "2026-11-07",
+            "authority": "academic"
+          }
+        ],
+        "notes": [
+          "Material source-title correction only: approved source metadata calls this 人民日报海外版, but the fetched page explicitly identifies 《讽刺与幽默》2023年05月12日第11版. It remains an official 人民网 source. Caption and question unchanged.",
+          "The scholarly second source links the concept to the Confucian account of human nature."
+        ],
+        "gaps": []
+      }
+    },
+    "root": {
+      "南京": {
+        "sources": [
+          {
+            "title": "中华民国临时大总统孙中山颁布的陆军官制及暂行编制 — 中国国家博物馆",
+            "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202104/t20210406_249552.shtml",
+            "quote": "1912年1月1日，孙中山在南京宣誓就任临时大总统，改国号为中华民国，并组成中华民国临时政府。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "《孙中山与广州•南京》 — 南京市档案馆",
+            "url": "https://dag.nanjing.gov.cn/dawh/bycg/201711/t20171101_522720.html",
+            "quote": "1912年1月1日，孙中山在南京就任中华民国临时大总统。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ]
+      },
+      "武汉": {
+        "sources": [
+          {
+            "title": "赤都武汉——武汉成为全国革命中心 — 中共湖北省委党史研究室",
+            "url": "https://www.hbdsw.org.cn/tbgz/zggcd/fjlc/202104/t20210412_173376.shtml",
+            "quote": "1927年1月1日，临时联席会议宣布国民政府正式开始在汉口办公，划汉口、武昌、汉阳为“京兆区”，定名武汉，作为革命首都。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "红色的历史 英雄的城市 — 武汉市互联网行业网上党群服务中心",
+            "url": "https://www.whhlwdj.gov.cn/view/2059.html",
+            "quote": "1927年1月1日，联席会议发布命令，宣布国民政府正式在汉办公。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ]
+      },
+      "唐尧": {
+        "sources": [
+          {
+            "title": "我国历史上的选贤制度 — 河北省市场监督管理局",
+            "url": "https://scjg.hebei.gov.cn/info/60199",
+            "quote": "尧将自己的两个女儿嫁给舜，以此来考察他齐家的能力；让自己的九个儿子与舜交朋友，观察他为人处世的能力。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "“允执厥中”的理论内涵与司法实践 — 中华人民共和国最高人民法院",
+            "url": "https://www.court.gov.cn/jianshe/xiangqing/423322.html",
+            "quote": "相传尧在将帝位禅让给舜时，传授了“四字方略”。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ]
+      },
+      "幼儿园和小学": {
+        "sources": [
+          {
+            "title": "幼儿园工作规程 — Министерство образования КНР",
+            "url": "https://www.moe.gov.cn/jyb_xxgk/xxgk/zhengce/guizhang/202112/t20211206_585104.html",
+            "quote": "幼儿园适龄幼儿一般为3周岁至6周岁。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "现代国民教育体系 — Министерство образования КНР",
+            "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3582/s3602/s3603/201004/t20100420_86780.html",
+            "quote": "一般包括学前教育、小学教育、初中教育、高中阶段教育和高等教育等层级。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ]
+      },
+      "小学和初中": {
+        "sources": [
+          {
+            "title": "中华人民共和国义务教育法 — Министерство образования КНР",
+            "url": "https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyfl/202110/t20211029_575949.html",
+            "quote": "国家实行九年义务教育制度。实施义务教育，不收学费、杂费。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "现代国民教育体系 — Министерство образования КНР",
+            "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3582/s3602/s3603/201004/t20100420_86780.html",
+            "quote": "一般包括学前教育、小学教育、初中教育、高中阶段教育和高等教育等层级。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ]
+      },
+      "初中和高中": {
+        "sources": [
+          {
+            "title": "教育部对十二届全国人大五次会议第1817号建议的答复",
+            "url": "https://www.moe.gov.cn/jyb_xxgk/xxgk_jyta/jyta_jijiaosi/201712/t20171219_321934.html",
+            "quote": "普通高中课程按三年设置。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "现代国民教育体系 — Министерство образования КНР",
+            "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3582/s3602/s3603/201004/t20100420_86780.html",
+            "quote": "一般包括学前教育、小学教育、初中教育、高中阶段教育和高等教育等层级。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ]
+      },
+      "高中和大学": {
+        "sources": [
+          {
+            "title": "现代国民教育体系 — Министерство образования КНР",
+            "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3582/s3602/s3603/201004/t20100420_86780.html",
+            "quote": "一般包括学前教育、小学教育、初中教育、高中阶段教育和高等教育等层级。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          },
+          {
+            "title": "教育部对十二届全国人大五次会议第1817号建议的答复",
+            "url": "https://www.moe.gov.cn/jyb_xxgk/xxgk_jyta/jyta_jijiaosi/201712/t20171219_321934.html",
+            "quote": "普通高中课程按三年设置。",
+            "checkedAt": "2026-11-07",
+            "authority": "official"
+          }
+        ]
+      }
+    }
+  }
+}

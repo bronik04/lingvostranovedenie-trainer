@@ -552,5 +552,61 @@
       "verdict": "accept",
       "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
     }
+  },
+  {
+    "id": "people-q30",
+    "embeds": "2025-26-mun-perm-2",
+    "status": "accepted",
+    "fact": {
+      "table": "thinkers",
+      "row": "th-xunzi",
+      "ask": "shortname"
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
+    }
+  },
+  {
+    "id": "people-q31",
+    "embeds": "2023-24-shk-mosobl-4",
+    "status": "accepted",
+    "fact": {
+      "table": "composers",
+      "row": "cmp-ru-borodin",
+      "ask": "biography"
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
+    }
+  },
+  {
+    "id": "people-q32",
+    "embeds": "2018-19-mun-vrn-4",
+    "status": "accepted",
+    "fact": {
+      "table": "figures",
+      "row": "fig-xuanzang",
+      "ask": "name"
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
+    }
+  },
+  {
+    "id": "people-q33",
+    "embeds": "2025-26-mun-nsk-1",
+    "status": "accepted",
+    "fact": {
+      "table": "concepts",
+      "row": "concept-wuwei",
+      "ask": "name"
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
+    }
   }
 ]

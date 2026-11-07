@@ -12,7 +12,8 @@
         "genre": "zh",
         "work": "zh",
         "prize": "zh",
-        "about": "ru"
+        "about": "ru",
+        "poetryname": "zh"
       },
       "sides": [
         "work",
@@ -404,7 +405,7 @@
               "title": "历史名人 李白 — 金乡县人民政府",
               "url": "http://www.jinxiang.gov.cn/art/2025/4/23/art_18110_725579.html",
               "quote": "李白 （701-762）。字太白，号青莲居士。唐浪漫主义诗人，被后人尊称“诗仙”。",
-              "checkedAt": "2026-10-17",
+              "checkedAt": "2026-11-07",
               "authority": "official"
             },
             {
@@ -426,7 +427,14 @@
           "core": true,
           "skipSides": [
             "alias"
-          ]
+          ],
+          "poetryname": {
+            "zh": "李白",
+            "ru": [
+              "Ли Бо"
+            ],
+            "gloss": "Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»"
+          }
         },
         {
           "id": "lit-a-dufu",
@@ -478,7 +486,7 @@
               "title": "2011高考语文资料：中国古代著名人物及作品 — 中国广播网",
               "url": "http://edu.cnr.cn/xbgk/ywfd/201012/t20101227_507506073_1.html",
               "quote": "杜甫：字子美，自称少陵野老，曾任左拾遗、检校工部员外郎，世称杜工部。与李白齐名，人称“诗圣”，唐代三大诗人之一。主要作品有《望岳》《春望》",
-              "checkedAt": "2026-10-17",
+              "checkedAt": "2026-11-07",
               "authority": "official"
             },
             {
@@ -640,8 +648,8 @@
               "title": "王维与陶渊明的相似与不似 — 中国作家网",
               "url": "http://www.chinawriter.com.cn/n1/2020/1020/c404063-31898505.html",
               "quote": "王维，字摩诘，河东蒲州（今山西运城）人，自幼聪颖，饱读诗书，9岁便能作诗写文章，17岁写出《九月九日忆山东兄弟》",
-              "checkedAt": "2026-10-17",
-              "authority": "academic"
+              "checkedAt": "2026-11-07",
+              "authority": "official"
             },
             {
               "title": "【跟着公号学诗词】终南山下“诗佛”的隐居生活，你心动吗？ — 新华网",
@@ -658,7 +666,14 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "poetryname": {
+            "zh": "王維",
+            "ru": [
+              "Ван Вэй"
+            ],
+            "gloss": "Ван Вэй — поэт и художник эпохи Тан, мастер пейзажной лирики"
+          }
         },
         {
           "id": "lit-a-lihe",
@@ -2130,7 +2145,7 @@
             "ru": [
               "Мао Дунь"
             ],
-            "gloss": "Мао Дунь — автор романа «Полночь»; его именем названа премия"
+            "gloss": "Мао Дунь — автор романа «Полночь» и повести «Весенние шелкопряды»"
           },
           "country": {
             "zh": "中国",
@@ -2180,7 +2195,7 @@
               "title": "茅盾的青春曲：文学与政治双重奏 — 中国社会科学网",
               "url": "https://www.cssn.cn/mkszy/mkszy_mkszyfzs/202302/t20230207_5586507.shtml",
               "quote": "茅盾创造了《子夜》、《春蚕》和文学评论《夜读偶记》等代表作，为革新中国文艺发展立下了不朽的功勋。1981年3月14日，茅盾在弥留之际，把自己的全部稿费25万元人民币捐出设立茅盾文学奖，旨在鼓舞长篇小说作者继续创作。",
-              "checkedAt": "2026-10-17",
+              "checkedAt": "2026-11-07",
               "authority": "academic"
             }
           ],
@@ -2363,7 +2378,7 @@
               "title": "Mo Yan – Facts, NobelPrize.org",
               "url": "https://www.nobelprize.org/prizes/literature/2012/yan/facts/",
               "quote": "He published his first novel in 1981 and went on to achieve his international breakthrough with the novel Hong gaoliang jiazu (Red Sorghum), which was later adapted for film.",
-              "checkedAt": "2026-10-17",
+              "checkedAt": "2026-11-07",
               "authority": "official"
             },
             {
@@ -3960,6 +3975,84 @@
             }
           ],
           "olympiad": []
+        },
+        {
+          "id": "lit-a-liqi",
+          "name": {
+            "zh": "李颀",
+            "ru": [
+              "Ли Ци"
+            ],
+            "gloss": "Ли Ци — танский поэт пограничной лирики, автор «Старинной песни о военном походе»"
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "era": {
+            "zh": "唐"
+          },
+          "sources": [
+            {
+              "title": "杨镰《诗词中的新疆》之《古从军行》 — 新疆大学新疆文献研究中心",
+              "url": "https://wxyj.xju.edu.cn/info/1056/1407.htm",
+              "quote": "李颀，盛唐诗人。颍阳（河南登封）人。开元二十三年（735）进士。所写边塞诗颇有名。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "墨韵唐风——唐代河南诗人诗作书法长廊 — 洛阳理工学院人文与社会科学学院",
+              "url": "https://www.lit.edu.cn/rwyshxy/info/1512/37557.htm",
+              "quote": "工诗，尤以边塞诗著称。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ],
+          "poetryname": {
+            "zh": "李颀",
+            "ru": [
+              "Ли Ци"
+            ],
+            "gloss": "Ли Ци — танский поэт пограничной лирики, автор «Старинной песни о военном походе»"
+          }
+        },
+        {
+          "id": "lit-a-wangji",
+          "name": {
+            "zh": "王绩",
+            "ru": [
+              "Ван Цзи"
+            ],
+            "gloss": "Ван Цзи — поэт начала Тан; «Смотрю вдаль» (野望) — осенний сельский пейзаж"
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "era": {
+            "zh": "唐"
+          },
+          "sources": [
+            {
+              "title": "王绩《野望》鉴赏 — 南通大学",
+              "url": "https://sxss.ntu.edu.cn/2018/0124/c6266a165731/page.htm",
+              "quote": "《野望》写的是山野秋景，在闲逸的基调中，透露出几分忧郁和苦闷，是王绩的代表作。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "王绩诗歌与河汾文化精神 — 北京大学机构知识库（陈瑜、杜晓勤；陕西师范大学学报，2007）",
+              "url": "https://ir.pku.edu.cn/handle/20.500.11897/277871",
+              "quote": "王绩是唐初诗坛别具风格的诗人",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ],
+          "poetryname": {
+            "zh": "王績",
+            "ru": [
+              "Ван Цзи"
+            ],
+            "gloss": "Ван Цзи — поэт начала Тан; «Смотрю вдаль» (野望) — осенний сельский пейзаж"
+          }
         }
       ]
     },
@@ -7282,6 +7375,229 @@
             }
           ],
           "olympiad": []
+        }
+      ]
+    },
+    "novelgenres": {
+      "columns": {
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "genre-romance",
+          "name": {
+            "zh": "爱情小说",
+            "ru": [
+              "Любовный роман"
+            ],
+            "gloss": "Любовный роман — произведение, в центре которого любовные отношения героев"
+          },
+          "sources": [
+            {
+              "title": "言情小說 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=155042&la=0&powerMode=0",
+              "quote": "以男女情愛為主要描寫內容的小說。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "Romance — OpenLearn, A Glossary of terms relating to Creative Writing, The Open University",
+              "url": "https://www.open.edu/openlearn/mod/glossary/showentry.php?displayformat=dictionary&eid=887",
+              "quote": "Now it is often more taken to refer to a novel where the fiction centres on one or more love stories.",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ]
+        },
+        {
+          "id": "genre-horror",
+          "name": {
+            "zh": "恐怖小说",
+            "ru": [
+              "Роман ужасов"
+            ],
+            "gloss": "Роман ужасов — проза о страшном: призраках, зловещих домах и других пугающих событиях"
+          },
+          "sources": [
+            {
+              "title": "恐怖小說 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=79044&la=0&powerMode=0",
+              "quote": "充滿恐怖、鬼魂、凶宅等離奇神怪之事。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "Horror for teens — National Library Board Singapore, hosted by Ahmad Ibrahim Secondary School",
+              "url": "https://www.ahmadibrahimsec.moe.edu.sg/files/Resource%20List%20for%20Teens%20-%20Horror.pdf",
+              "quote": "Horror fiction refers to stories written to horrify or scare its readers.",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "genre-scifi",
+          "name": {
+            "zh": "科幻小说",
+            "ru": [
+              "Научная фантастика"
+            ],
+            "gloss": "Научная фантастика — проза, где научные знания и технические идеи — основа вымысла"
+          },
+          "sources": [
+            {
+              "title": "科幻小說 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=76013&la=0&powerMode=0",
+              "quote": "以現有的科技資料作根據，對未來世界或過去情景作幻想式的描述。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "Glossary of Genres — Science Fiction, University of Texas at Austin Libraries",
+              "url": "https://guides.lib.utexas.edu/c.php?g=849284&p=9855392",
+              "quote": "Science fiction - Fiction that explores worlds with imagined innovations in science and/or technology.",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ]
+        },
+        {
+          "id": "genre-historical",
+          "name": {
+            "zh": "历史小说",
+            "ru": [
+              "Исторический роман"
+            ],
+            "gloss": "Исторический роман — художественное произведение, основанное на событиях прошлого"
+          },
+          "sources": [
+            {
+              "title": "歷史小說 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=62638&q=1&word=%E5%8F%B2",
+              "quote": "以歷史故事為題材的小說。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "五、小說 — 國立臺中教育大學數位學習教材",
+              "url": "https://elearning.ntcu.edu.tw/base/10001/course/10010322/content/public/3-1-5.htm",
+              "quote": "以歷史上的人物或事件為題材，然後加上作者的想像和渲染寫成的。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ]
+        }
+      ]
+    },
+    "performingarts": {
+      "columns": {
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "art-quyi",
+          "name": {
+            "zh": "曲艺",
+            "ru": [
+              "жанры цюйи"
+            ],
+            "gloss": "Цюйи — разговорные и песенно-повествовательные жанры; рассказчик не играет постоянную роль"
+          },
+          "sources": [
+            {
+              "title": "曲艺保护传承：从历史中走来 在现实中奋斗 向未来处眺望 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/Article/Index/detail?id=7381",
+              "quote": "以本色身份出现在观众面前，进行第三人称统领的口语性说唱式叙述。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "非物质文化遗产概况 — 湖北省文化和旅游厅",
+              "url": "https://wlt.hubei.gov.cn/bsfw/bmcxfw/fwzwhyc/fwzwhycgk/201911/t20191121_1363875.shtml",
+              "quote": "曲艺是中国民族民间各种说唱艺术的总称",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "art-theatre",
+          "name": {
+            "zh": "戏剧",
+            "ru": [
+              "Театр, драматическое искусство"
+            ],
+            "gloss": "Театр — актёры представляют сюжет через действие, диалог и пение."
+          },
+          "sources": [
+            {
+              "title": "戲劇 — 教育部《國語辭典簡編本》",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=26509&q=1",
+              "quote": "透過演員將某種故事或情節，以動作、歌唱、對白等方式表演出來的藝術。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "〖川大艺坛〗第11期 李蔷：论教育戏剧的游戏精神 — 四川大学艺术学院",
+              "url": "https://art.scu.edu.cn/info/1182/8606.htm",
+              "quote": "戏剧是由演员扮演角色在舞台上当众表演故事的一种综合艺术。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ]
+        },
+        {
+          "id": "art-jingju",
+          "name": {
+            "zh": "京剧",
+            "ru": [
+              "Пекинская опера (цзинцзюй)"
+            ],
+            "gloss": "Пекинская опера (цзинцзюй) — театр пения, речитатива, актёрской игры и боевых приёмов.",
+            "ref": "landmarks/intangible/int-jingju"
+          },
+          "sources": [
+            {
+              "title": "Peking opera — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/peking-opera-00418",
+              "quote": "Inscribed in 2010 ( 5.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … Peking opera is a performance art incorporating singing, reciting, acting, martial arts.",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "中国列入联合国教科文组织非物质文化遗产名录、名册项目 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/chinadirectory.html",
+              "quote": "2010 中医针灸 京剧",
+              "checkedAt": "2026-10-23",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "art-folkmusic",
+          "name": {
+            "zh": "民乐",
+            "ru": [
+              "Китайская традиционная музыка"
+            ],
+            "gloss": "Китайская традиционная музыка — в частности, музыка для китайских народных инструментов."
+          },
+          "sources": [
+            {
+              "title": "民族器乐音频资源项目通过验收 — Министерство культуры КНР",
+              "url": "https://www.mct.gov.cn/whzx/bnsj/whkjs/201608/t20160805_750847.html",
+              "quote": "该项目依据民族乐器实际发展及大众需求,以及民乐将来的发展和传播趋势",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "民乐系 — 中央音乐学院",
+              "url": "https://www.ccom.edu.cn/jgk/jxdw/mlx.htm",
+              "quote": "出版各类民族器乐教材和理论著作百余部",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ]
         }
       ]
     }

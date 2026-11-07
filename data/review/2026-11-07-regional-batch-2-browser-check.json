@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-07",
+  "questions": 19,
+  "renderedCards": 152,
+  "checkedOptionDisplays": 608,
+  "checks": [
+    "exact approved option IDs",
+    "four captions after answer",
+    "one correct option",
+    "no horizontal overflow",
+    "no clipped captions",
+    "mobile next button inside viewport; desktop button present in scrollable flow",
+    "no browser page errors"
+  ],
+  "results": [
+    {
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "theme": "light",
+      "pinyin": false,
+      "questionsChecked": 19,
+      "passed": true
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "theme": "light",
+      "pinyin": true,
+      "questionsChecked": 19,
+      "passed": true
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "theme": "dark",
+      "pinyin": false,
+      "questionsChecked": 19,
+      "passed": true
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "theme": "dark",
+      "pinyin": true,
+      "questionsChecked": 19,
+      "passed": true
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "theme": "light",
+      "pinyin": false,
+      "questionsChecked": 19,
+      "passed": true
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "theme": "light",
+      "pinyin": true,
+      "questionsChecked": 19,
+      "passed": true
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "theme": "dark",
+      "pinyin": false,
+      "questionsChecked": 19,
+      "passed": true
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "theme": "dark",
+      "pinyin": true,
+      "questionsChecked": 19,
+      "passed": true
+    }
+  ],
+  "errors": []
+}

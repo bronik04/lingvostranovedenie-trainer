@@ -2545,6 +2545,228 @@
           "olympiad": []
         }
       ]
+    },
+    "trains": {
+      "columns": {
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "train-highspeed",
+          "name": {
+            "zh": "高速动车",
+            "ru": [
+              "Высокоскоростной электропоезд"
+            ],
+            "gloss": "Высокоскоростной электропоезд — обычно с местами первого и второго классов."
+          },
+          "sources": [
+            {
+              "title": "高速动车组座席编排 — Государственное управление железных дорог КНР",
+              "url": "https://www.nra.gov.cn/ztzl/hy/kjcx/kpdd/201605/t20160526_145850.shtml",
+              "quote": "在一列高速动车组内一般都编挂有一等座车和二等座车",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "火车上的字母和数字分别有什么含义？ — 中国铁路微信公众号 / 新华网客户端",
+              "url": "https://app.xinhuanet.com/news/article.html?articleId=fbcb6e9d-bcc7-4895-89c0-b3df746f879d",
+              "quote": "G读“高”\n\n代表高速动车组旅客列车，运行速度可达300-350公里/时。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "train-emu",
+          "name": {
+            "zh": "普通动车",
+            "ru": [
+              "Обычный электропоезд"
+            ],
+            "gloss": "Обычный электропоезд — такие составы бывают и спальными, например CRH1E."
+          },
+          "sources": [
+            {
+              "title": "和谐1A/1B/1E型动车组四级检修规程 — Государственное управление железных дорог КНР",
+              "url": "https://www.nra.gov.cn/jglz/fgzd/gfwj/zt/qt/202204/P020220406007607663293.pdf",
+              "quote": "CRH1E为16编组卧车。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "想从动车组8号车厢走到9号车厢？除非停车… — 北京党员教育 / 科普中国",
+              "url": "https://www.bjcc.gov.cn/article/600490390.html",
+              "quote": "在票务系统中，“（普通）动车组列车”车次开头以大写字母“D”作为前缀（源于“动”字汉语拼音字母），简称“D字头列车”。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "train-express",
+          "name": {
+            "zh": "特快列车",
+            "ru": [
+              "Поезд-экспресс"
+            ],
+            "gloss": "Поезд-экспресс — традиционный пассажирский состав с отдельным локомотивом."
+          },
+          "sources": [
+            {
+              "title": "火车、动车以及高铁的区别 — 北京党员教育 / 科普中国",
+              "url": "https://www.bjcc.gov.cn/article/600535944.html",
+              "quote": "而普通火车，是传统的靠车头拉车厢，只有车头有动力。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "铁路技术管理规程（2006年铁道部令第29号） — 国家铁路局",
+              "url": "https://www.nra.gov.cn/xxgk/gkml/ztjg/gfzd/bmgz/202206/t20220624_327439.shtml",
+              "quote": "特快旅客列车不准编挂货车，编入的客车车辆最高运行速度等级必须符合该列车规定的速度要求。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "train-intercity",
+          "name": {
+            "zh": "城际列车",
+            "ru": [
+              "Междугородный поезд"
+            ],
+            "gloss": "Междугородный поезд — для коротких и средних маршрутов между городами или пригородами."
+          },
+          "sources": [
+            {
+              "title": "动车组分类科普 — 北京党员教育",
+              "url": "https://www.bjcc.gov.cn/article/600490390.html",
+              "quote": "城际动车组列车简称“C字头列车”，是专用于中短途城市或城郊之间列车",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "火车上的字母和数字分别有什么含义？ — 中国铁路微信公众号 / 新华网客户端",
+              "url": "https://app.xinhuanet.com/news/article.html?articleId=fbcb6e9d-bcc7-4895-89c0-b3df746f879d",
+              "quote": "代表城际动车组旅客列车，它是往返于相邻城市或城市群之间的客运列车。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
+    },
+    "educationpairs": {
+      "columns": {
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "edu-preschool-primary",
+          "name": {
+            "zh": "幼儿园和小学",
+            "ru": [
+              "Детский сад и начальная школа"
+            ],
+            "gloss": "Детский сад и начальная школа — детсад: дошкольное образование, обычно для детей 3–6 лет."
+          },
+          "sources": [
+            {
+              "title": "幼儿园工作规程 — Министерство образования КНР",
+              "url": "https://www.moe.gov.cn/jyb_xxgk/xxgk/zhengce/guizhang/202112/t20211206_585104.html",
+              "quote": "幼儿园适龄幼儿一般为3周岁至6周岁。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "现代国民教育体系 — Министерство образования КНР",
+              "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3582/s3602/s3603/201004/t20100420_86780.html",
+              "quote": "一般包括学前教育、小学教育、初中教育、高中阶段教育和高等教育等层级。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "edu-primary-junior",
+          "name": {
+            "zh": "小学和初中",
+            "ru": [
+              "Начальная и младшая средняя школа"
+            ],
+            "gloss": "Начальная и младшая средняя школа — девять лет без платы за учёбу и школьных сборов."
+          },
+          "sources": [
+            {
+              "title": "中华人民共和国义务教育法 — Министерство образования КНР",
+              "url": "https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyfl/202110/t20211029_575949.html",
+              "quote": "国家实行九年义务教育制度。实施义务教育，不收学费、杂费。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "现代国民教育体系 — Министерство образования КНР",
+              "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3582/s3602/s3603/201004/t20100420_86780.html",
+              "quote": "一般包括学前教育、小学教育、初中教育、高中阶段教育和高等教育等层级。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "edu-junior-senior",
+          "name": {
+            "zh": "初中和高中",
+            "ru": [
+              "Младшая и старшая средняя школа"
+            ],
+            "gloss": "Младшая и старшая средняя школа — старшая следует за младшей и обычно длится 3 года."
+          },
+          "sources": [
+            {
+              "title": "教育部对十二届全国人大五次会议第1817号建议的答复",
+              "url": "https://www.moe.gov.cn/jyb_xxgk/xxgk_jyta/jyta_jijiaosi/201712/t20171219_321934.html",
+              "quote": "普通高中课程按三年设置。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "现代国民教育体系 — Министерство образования КНР",
+              "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3582/s3602/s3603/201004/t20100420_86780.html",
+              "quote": "一般包括学前教育、小学教育、初中教育、高中阶段教育和高等教育等层级。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "edu-senior-higher",
+          "name": {
+            "zh": "高中和大学",
+            "ru": [
+              "Старшая средняя школа и вуз"
+            ],
+            "gloss": "Старшая средняя школа и вуз — здесь объединены ступени среднего и высшего образования."
+          },
+          "sources": [
+            {
+              "title": "现代国民教育体系 — Министерство образования КНР",
+              "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3582/s3602/s3603/201004/t20100420_86780.html",
+              "quote": "一般包括学前教育、小学教育、初中教育、高中阶段教育和高等教育等层级。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "教育部对十二届全国人大五次会议第1817号建议的答复",
+              "url": "https://www.moe.gov.cn/jyb_xxgk/xxgk_jyta/jyta_jijiaosi/201712/t20171219_321934.html",
+              "quote": "普通高中课程按三年设置。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
     }
   }
 }

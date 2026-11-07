@@ -1710,24 +1710,69 @@
     "fact": {
       "table": "authors",
       "row": "lit-a-maodun",
-      "ask": "name",
-      "where": {
-        "country": "中国"
-      }
+      "ask": "name"
     },
-    "exclude": [
-      "lit-a-luxun",
-      "lit-a-laoshe",
-      "lit-a-caoyu",
-      "lit-a-xiayan",
-      "lit-a-tianhan",
-      "lit-a-zhouenlai",
-      "lit-a-lipeng"
-    ],
     "check": {
       "verdict": "accept",
-      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25. Новая строка писателя, в честь которого названа крупная премия (например, 冰心), войдёт в набор — при добавлении авторов дополнять exclude."
-    }
+      "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
+    },
+    "exclude": [
+      "lit-a-quyuan",
+      "lit-a-simaqian",
+      "lit-a-caocao",
+      "lit-a-taoyuanming",
+      "lit-a-baijuyi",
+      "lit-a-wangwei",
+      "lit-a-lihe",
+      "lit-a-liuyuxi",
+      "lit-a-menghaoran",
+      "lit-a-liuzongyuan",
+      "lit-a-hanyu",
+      "lit-a-sushi",
+      "lit-a-liqingzhao",
+      "lit-a-xinqiji",
+      "lit-a-guanhanqing",
+      "lit-a-tangxianzu",
+      "lit-a-luoguanzhong",
+      "lit-a-shinaian",
+      "lit-a-wuchengen",
+      "lit-a-caoxueqin",
+      "lit-a-pusongling",
+      "lit-a-ouyangxiu",
+      "lit-a-luyou",
+      "lit-a-wujingzi",
+      "lit-a-luxun",
+      "lit-a-laoshe",
+      "lit-a-bajin",
+      "lit-a-guomoruo",
+      "lit-a-shencongwen",
+      "lit-a-caoyu",
+      "lit-a-tianhan",
+      "lit-a-xiayan",
+      "lit-a-zhouenlai",
+      "lit-a-lipeng",
+      "lit-a-ru-pushkin",
+      "lit-a-ru-lermontov",
+      "lit-a-ru-gogol",
+      "lit-a-ru-tolstoy",
+      "lit-a-ru-dostoevsky",
+      "lit-a-ru-chekhov",
+      "lit-a-ru-gorky",
+      "lit-a-ru-sholokhov",
+      "lit-a-ru-bunin",
+      "lit-a-ru-pasternak",
+      "lit-a-ru-mayakovsky",
+      "lit-a-ru-blok",
+      "lit-a-ru-turgenev",
+      "lit-a-ru-solzhenitsyn",
+      "lit-a-ru-brodsky",
+      "lit-a-qianzhongshu",
+      "lit-a-yuhua",
+      "lit-a-chenzhongshi",
+      "lit-a-wangshifu",
+      "lit-a-liqi",
+      "lit-a-wangji"
+    ]
   },
   {
     "id": "literature-q102",
@@ -1743,7 +1788,7 @@
     },
     "check": {
       "verdict": "accept",
-      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
+      "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
     }
   },
   {
@@ -1760,7 +1805,49 @@
     },
     "check": {
       "verdict": "accept",
-      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
+      "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
+    }
+  },
+  {
+    "id": "literature-q104",
+    "embeds": "2025-26-mun-kursk-10",
+    "status": "accepted",
+    "fact": {
+      "table": "novelgenres",
+      "row": "genre-scifi",
+      "ask": "name"
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
+    }
+  },
+  {
+    "id": "literature-q105",
+    "embeds": "2021-22-mun-mosobl-58",
+    "status": "accepted",
+    "fact": {
+      "table": "performingarts",
+      "row": "art-quyi",
+      "ask": "name"
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
+    }
+  },
+  {
+    "id": "literature-q106",
+    "embeds": "2019-20-mun-kgd-5",
+    "status": "accepted",
+    "fact": {
+      "table": "authors",
+      "row": "lit-a-libai",
+      "ask": "poetryname"
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
     }
   }
 ]

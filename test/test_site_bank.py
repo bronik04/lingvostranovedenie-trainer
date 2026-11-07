@@ -37,9 +37,9 @@ class SiteBankTest(unittest.TestCase):
         bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
         shown = {r['id'] for r in site_bank(bank, load_settings(), embedded_by())}
         for rid in ['2024-25-mun-mosobl-5', '2018-19-mun-spb-9', '2023-24-mun-komi-2', '2024-25-mun-udm-8',
-                    '2025-26-mun-chel-2']:
+                    '2025-26-mun-chel-2', '2021-22-mun-tat-57']:
             self.assertIn(rid, shown)
-        for rid in ['2025-26-mun-nnov-1', '2021-22-mun-tat-57', '2019-20-mun-lip-4']:
+        for rid in ['2025-26-mun-nnov-1', '2020-21-shk-mosobl-52', '2019-20-mun-lip-4']:
             self.assertNotIn(rid, shown)
 
     def test_draft_embed_does_not_open_a_record(self):

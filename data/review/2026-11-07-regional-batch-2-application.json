@@ -1,0 +1,1600 @@
+{
+  "reviewId": "regional-2026-11-07-batch-2",
+  "date": "2026-11-07",
+  "state": "approved-for-release",
+  "publicationAuthorized": true,
+  "visibleCountBefore": 979,
+  "expectedVisibleCountAfter": 998,
+  "selectedCount": 19,
+  "excludedPermanently": [
+    "2020-21-shk-mosobl-52"
+  ],
+  "items": [
+    {
+      "reviewNumber": 1,
+      "questionId": "2016-17-mun-spb-6",
+      "dossier": "ethnos",
+      "dossierQuestion": "ethnos-q27",
+      "fact": {
+        "table": "peoples",
+        "row": "ppl-cn-manchu",
+        "ask": "name"
+      },
+      "exclude": [
+        "ppl-cn-hui",
+        "ppl-cn-uyghur",
+        "ppl-cn-miao",
+        "ppl-cn-yi",
+        "ppl-cn-tujia",
+        "ppl-cn-tibetan",
+        "ppl-cn-mongol",
+        "ppl-cn-dong",
+        "ppl-cn-buyi",
+        "ppl-cn-yao",
+        "ppl-cn-bai",
+        "ppl-cn-korean",
+        "ppl-cn-hani",
+        "ppl-cn-li",
+        "ppl-cn-she",
+        "ppl-cn-lisu",
+        "ppl-cn-naxi",
+        "ppl-cn-shui",
+        "ppl-cn-evenki",
+        "ppl-cn-oroqen",
+        "ppl-cn-hezhen",
+        "ppl-cn-xibe",
+        "ppl-ru-russians",
+        "ppl-ru-tatars",
+        "ppl-ru-bashkirs",
+        "ppl-ru-chuvash",
+        "ppl-ru-buryats",
+        "ppl-ru-sakha",
+        "ppl-ru-tuvans",
+        "ppl-ru-kalmyks",
+        "ppl-ru-karelians",
+        "ppl-ru-komi",
+        "ppl-ru-udmurts",
+        "ppl-ru-chechens"
+      ]
+    },
+    {
+      "reviewNumber": 2,
+      "questionId": "2021-22-mun-amur-6",
+      "dossier": "modern-history",
+      "dossierQuestion": "modern-history-q118",
+      "fact": {
+        "table": "events",
+        "row": "ev-nanchang",
+        "ask": "revolution"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 3,
+      "questionId": "2021-22-mun-tat-57",
+      "dossier": "landmarks",
+      "dossierQuestion": "landmarks-q76",
+      "fact": {
+        "table": "intangible",
+        "row": "int-kunqu",
+        "ask": "name"
+      },
+      "exclude": [
+        "int-guqin",
+        "int-shufa",
+        "int-zhuanke",
+        "int-zhenjiu",
+        "int-zhusuan",
+        "int-jieqi",
+        "int-taijiquan",
+        "int-zhicha",
+        "int-yueju-zhejiang",
+        "int-huangmeixi",
+        "int-xiangsheng",
+        "int-xiangqi"
+      ]
+    },
+    {
+      "reviewNumber": 4,
+      "questionId": "2025-26-mun-irk-7",
+      "dossier": "modern-china",
+      "dossierQuestion": "modern-china-q22",
+      "fact": {
+        "table": "trains",
+        "row": "train-highspeed",
+        "ask": "name"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 5,
+      "questionId": "2023-24-shk-mosobl-12",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q101",
+      "fact": {
+        "table": "authors",
+        "row": "lit-a-maodun",
+        "ask": "name"
+      },
+      "exclude": [
+        "lit-a-quyuan",
+        "lit-a-simaqian",
+        "lit-a-caocao",
+        "lit-a-taoyuanming",
+        "lit-a-baijuyi",
+        "lit-a-wangwei",
+        "lit-a-lihe",
+        "lit-a-liuyuxi",
+        "lit-a-menghaoran",
+        "lit-a-liuzongyuan",
+        "lit-a-hanyu",
+        "lit-a-sushi",
+        "lit-a-liqingzhao",
+        "lit-a-xinqiji",
+        "lit-a-guanhanqing",
+        "lit-a-tangxianzu",
+        "lit-a-luoguanzhong",
+        "lit-a-shinaian",
+        "lit-a-wuchengen",
+        "lit-a-caoxueqin",
+        "lit-a-pusongling",
+        "lit-a-ouyangxiu",
+        "lit-a-luyou",
+        "lit-a-wujingzi",
+        "lit-a-luxun",
+        "lit-a-laoshe",
+        "lit-a-bajin",
+        "lit-a-guomoruo",
+        "lit-a-shencongwen",
+        "lit-a-caoyu",
+        "lit-a-tianhan",
+        "lit-a-xiayan",
+        "lit-a-zhouenlai",
+        "lit-a-lipeng",
+        "lit-a-ru-pushkin",
+        "lit-a-ru-lermontov",
+        "lit-a-ru-gogol",
+        "lit-a-ru-tolstoy",
+        "lit-a-ru-dostoevsky",
+        "lit-a-ru-chekhov",
+        "lit-a-ru-gorky",
+        "lit-a-ru-sholokhov",
+        "lit-a-ru-bunin",
+        "lit-a-ru-pasternak",
+        "lit-a-ru-mayakovsky",
+        "lit-a-ru-blok",
+        "lit-a-ru-turgenev",
+        "lit-a-ru-solzhenitsyn",
+        "lit-a-ru-brodsky",
+        "lit-a-qianzhongshu",
+        "lit-a-yuhua",
+        "lit-a-chenzhongshi",
+        "lit-a-wangshifu",
+        "lit-a-liqi",
+        "lit-a-wangji"
+      ]
+    },
+    {
+      "reviewNumber": 6,
+      "questionId": "2025-26-mun-mosobl-2",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q125",
+      "fact": {
+        "table": "cities",
+        "row": "city-changchun",
+        "ask": "industry"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 7,
+      "questionId": "2025-26-mun-perm-2",
+      "dossier": "people",
+      "dossierQuestion": "people-q30",
+      "fact": {
+        "table": "thinkers",
+        "row": "th-xunzi",
+        "ask": "shortname"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 8,
+      "questionId": "2023-24-shk-mosobl-4",
+      "dossier": "people",
+      "dossierQuestion": "people-q31",
+      "fact": {
+        "table": "composers",
+        "row": "cmp-ru-borodin",
+        "ask": "biography"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 9,
+      "questionId": "2025-26-mun-kursk-10",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q104",
+      "fact": {
+        "table": "novelgenres",
+        "row": "genre-scifi",
+        "ask": "name"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 10,
+      "questionId": "2025-26-shk-mosobl-7",
+      "dossier": "dynasties",
+      "dossierQuestion": "dynasties-q123",
+      "fact": {
+        "table": "rulers",
+        "row": "rul-yao",
+        "ask": "wisename"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 12,
+      "questionId": "2024-25-shk-mosobl-1",
+      "dossier": "ethnos",
+      "dossierQuestion": "ethnos-q97",
+      "fact": {
+        "table": "languageforms",
+        "row": "lang-guoyu",
+        "ask": "standard"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 13,
+      "questionId": "2022-23-shk-mosobl-4",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q102",
+      "fact": {
+        "table": "works",
+        "row": "lit-w-xiyouji",
+        "ask": "name",
+        "where": {
+          "set": "四大名著"
+        }
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 14,
+      "questionId": "2025-26-mun-irk-5",
+      "dossier": "modern-china",
+      "dossierQuestion": "modern-china-q23",
+      "fact": {
+        "table": "educationpairs",
+        "row": "edu-primary-junior",
+        "ask": "name"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 15,
+      "questionId": "2025-26-mun-mosobl-4",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q103",
+      "fact": {
+        "table": "works",
+        "row": "lit-w-sanguoyanyi",
+        "ask": "name",
+        "where": {
+          "set": "四大名著"
+        }
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 16,
+      "questionId": "2022-23-mun-krsk-9",
+      "dossier": "ethnos",
+      "dossierQuestion": "ethnos-q98",
+      "fact": {
+        "table": "languageforms",
+        "row": "lang-wenyan",
+        "ask": "written"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 17,
+      "questionId": "2018-19-mun-vrn-4",
+      "dossier": "people",
+      "dossierQuestion": "people-q32",
+      "fact": {
+        "table": "figures",
+        "row": "fig-xuanzang",
+        "ask": "name"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 18,
+      "questionId": "2021-22-mun-mosobl-58",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q105",
+      "fact": {
+        "table": "performingarts",
+        "row": "art-quyi",
+        "ask": "name"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 19,
+      "questionId": "2025-26-mun-nsk-1",
+      "dossier": "people",
+      "dossierQuestion": "people-q33",
+      "fact": {
+        "table": "concepts",
+        "row": "concept-wuwei",
+        "ask": "name"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 20,
+      "questionId": "2019-20-mun-kgd-5",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q106",
+      "fact": {
+        "table": "authors",
+        "row": "lit-a-libai",
+        "ask": "poetryname"
+      },
+      "exclude": []
+    }
+  ],
+  "changedCells": [
+    {
+      "cell": "ethnos/peoples/ppl-cn-dai.name",
+      "before": {
+        "zh": "傣族",
+        "ru": [
+          "Дай"
+        ],
+        "gloss": "Дай — народ Китая"
+      },
+      "after": {
+        "zh": "傣族",
+        "ru": [
+          "Дай"
+        ],
+        "gloss": "Дай — народ Юньнани; одна из основных областей расселения — Сишуанбаньна"
+      }
+    },
+    {
+      "cell": "ethnos/peoples/ppl-cn-han.name",
+      "before": {
+        "zh": "汉族",
+        "ru": [
+          "Ханьцы"
+        ],
+        "gloss": "Ханьцы — народ Китая"
+      },
+      "after": {
+        "zh": "汉族",
+        "ru": [
+          "Ханьцы"
+        ],
+        "gloss": "Ханьцы — основной по численности народ Китая; говорят на китайском языке"
+      }
+    },
+    {
+      "cell": "ethnos/peoples/ppl-cn-manchu.name",
+      "before": {
+        "zh": "满族",
+        "ru": [
+          "Маньчжуры"
+        ],
+        "gloss": "Маньчжуры — народ Китая"
+      },
+      "after": {
+        "zh": "满族",
+        "ru": [
+          "Маньчжуры"
+        ],
+        "gloss": "Маньчжуры — народ, одна из основных областей расселения которого — провинция Ляонин"
+      }
+    },
+    {
+      "cell": "ethnos/peoples/ppl-cn-zhuang.name",
+      "before": {
+        "zh": "壮族",
+        "ru": [
+          "народ чжуан"
+        ],
+        "gloss": "Чжуаны — народ Китая"
+      },
+      "after": {
+        "zh": "壮族",
+        "ru": [
+          "Чжуаны"
+        ],
+        "gloss": "Чжуаны — крупнейшее национальное меньшинство Китая; основной район расселения — Гуанси"
+      }
+    },
+    {
+      "cell": "landmarks/intangible/int-jingju.name",
+      "before": {
+        "zh": "京剧",
+        "ru": [
+          "Пекинская опера",
+          "цзинцзюй"
+        ],
+        "gloss": "Пекинская опера (цзинцзюй) — самый известный вид китайской музыкальной драмы"
+      },
+      "after": {
+        "zh": "京剧",
+        "ru": [
+          "Пекинская опера (цзинцзюй)"
+        ],
+        "gloss": "Пекинская опера (цзинцзюй) — сочетает пение, речитатив, актёрскую игру и боевые приёмы"
+      }
+    },
+    {
+      "cell": "landmarks/intangible/int-kunqu.name",
+      "before": {
+        "zh": "昆曲",
+        "ru": [
+          "куньцюй",
+          "опера куньцюй"
+        ],
+        "gloss": "Куньцюй — одна из древнейших форм китайской оперы, возникшая в Куньшане"
+      },
+      "after": {
+        "zh": "昆曲",
+        "ru": [
+          "Куньцюй"
+        ],
+        "gloss": "Куньцюй — одна из древнейших форм китайской оперы, возникшая в Куньшане"
+      }
+    },
+    {
+      "cell": "landmarks/intangible/int-yuju.name",
+      "before": {
+        "zh": "豫剧",
+        "ru": [
+          "Юйцзюй",
+          "хэнаньская опера",
+          "хэнаньская банцзы"
+        ],
+        "gloss": "Юйцзюй — хэнаньская опера жанра «банцзы»"
+      },
+      "after": {
+        "zh": "豫剧",
+        "ru": [
+          "Юйцзюй"
+        ],
+        "gloss": "Юйцзюй — хэнаньская опера жанра «банцзы»"
+      }
+    },
+    {
+      "cell": "landmarks/intangible/int-yueju-guangdong.name",
+      "before": {
+        "zh": "粤剧",
+        "ru": [
+          "Юэцзюй",
+          "кантонская опера",
+          "гуандунская опера"
+        ],
+        "gloss": "Юэцзюй — кантонская опера Гуандуна и Гуанси"
+      },
+      "after": {
+        "zh": "粤剧",
+        "ru": [
+          "Юэцзюй"
+        ],
+        "gloss": "Юэцзюй — кантонская опера Гуандуна и Гуанси"
+      }
+    },
+    {
+      "cell": "literature/authors/lit-a-dufu.name",
+      "before": {
+        "zh": "杜甫",
+        "ru": [
+          "Ду Фу"
+        ],
+        "gloss": "Ду Фу — поэт эпохи Тан, прозванный «мудрецом поэзии»"
+      },
+      "after": {
+        "zh": "杜甫",
+        "ru": [
+          "Ду Фу"
+        ],
+        "gloss": "Ду Фу — поэт эпохи Тан, прозванный «мудрецом поэзии»"
+      }
+    },
+    {
+      "cell": "literature/authors/lit-a-moyan.name",
+      "before": {
+        "zh": "莫言",
+        "ru": [
+          "Мо Янь"
+        ],
+        "gloss": "Мо Янь — лауреат Нобелевской премии 2012 г., автор «Красного гаоляна»"
+      },
+      "after": {
+        "zh": "莫言",
+        "ru": [
+          "Мо Янь"
+        ],
+        "gloss": "Мо Янь — лауреат Нобелевской премии 2012 г., автор «Красного гаоляна»"
+      }
+    },
+    {
+      "cell": "literature/authors/lit-a-maodun.name",
+      "before": {
+        "zh": "茅盾",
+        "ru": [
+          "Мао Дунь"
+        ],
+        "gloss": "Мао Дунь — автор романа «Полночь»; его именем названа премия"
+      },
+      "after": {
+        "zh": "茅盾",
+        "ru": [
+          "Мао Дунь"
+        ],
+        "gloss": "Мао Дунь — автор романа «Полночь» и повести «Весенние шелкопряды»"
+      }
+    },
+    {
+      "cell": "literature/authors/lit-a-libai.name",
+      "before": {
+        "zh": "李白",
+        "ru": [
+          "Ли Бо",
+          "Ли Бай"
+        ],
+        "gloss": "Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»"
+      },
+      "after": {
+        "zh": "李白",
+        "ru": [
+          "Ли Бо"
+        ],
+        "gloss": "Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»"
+      }
+    },
+    {
+      "cell": "modern-history/events/ev-nanchang.revolution",
+      "before": null,
+      "after": {
+        "zh": "南昌",
+        "ru": [
+          "Наньчан"
+        ],
+        "gloss": "Наньчан — восстание началось 1 августа; эта дата стала Днём основания НОАК."
+      }
+    },
+    {
+      "cell": "modern-history/events/ev-xinhai.revolution",
+      "before": null,
+      "after": {
+        "zh": "武昌",
+        "ru": [
+          "Учан"
+        ],
+        "gloss": "Учан — здесь 10 октября 1911 года началось восстание, открывшее Синьхайскую революцию."
+      }
+    },
+    {
+      "cell": "modern-history/events/ev-roc-founded.revolution",
+      "before": null,
+      "after": {
+        "zh": "南京",
+        "ru": [
+          "Нанкин"
+        ],
+        "gloss": "Нанкин — в январе 1912 года Сунь Ятсен вступил здесь в должность временного президента республики."
+      }
+    },
+    {
+      "cell": "modern-history/events/ev-wuhan-government.revolution",
+      "before": null,
+      "after": {
+        "zh": "武汉",
+        "ru": [
+          "Ухань"
+        ],
+        "gloss": "Ухань — в 1927 году здесь работало национальное правительство Гоминьдана, переехавшее из Гуанчжоу."
+      }
+    },
+    {
+      "cell": "provinces/cities/city-shenzhen.industry",
+      "before": null,
+      "after": {
+        "zh": "深圳",
+        "ru": [
+          "Шэньчжэнь"
+        ],
+        "gloss": "Шэньчжэнь — в районе Пиншань находится штаб-квартира автопроизводителя BYD."
+      }
+    },
+    {
+      "cell": "provinces/cities/city-xian.industry",
+      "before": null,
+      "after": {
+        "zh": "西安",
+        "ru": [
+          "Сиань"
+        ],
+        "gloss": "Сиань — в его районе Яньлян развито авиастроение: выпускают самолёты и авиационные детали."
+      }
+    },
+    {
+      "cell": "provinces/cities/city-haerbin.industry",
+      "before": null,
+      "after": {
+        "zh": "哈尔滨",
+        "ru": [
+          "Харбин"
+        ],
+        "gloss": "Харбин — один из центров авиастроения; предприятие «Хафэй» выпускает вертолёты."
+      }
+    },
+    {
+      "cell": "provinces/cities/city-changchun.industry",
+      "before": null,
+      "after": {
+        "zh": "长春",
+        "ru": [
+          "Чанчунь"
+        ],
+        "gloss": "Чанчунь — в 1956 году здесь выпустили первые грузовики «Цзефан» (解放)."
+      }
+    },
+    {
+      "cell": "people/thinkers/th-zhuangzi.shortname",
+      "before": null,
+      "after": {
+        "zh": "庄子",
+        "ru": [
+          "Чжуан-цзы"
+        ],
+        "gloss": "Чжуан-цзы — даосский философ эпохи Сражающихся царств; его сочинения вошли в одноимённую книгу"
+      }
+    },
+    {
+      "cell": "people/thinkers/th-mengzi.shortname",
+      "before": null,
+      "after": {
+        "zh": "孟子",
+        "ru": [
+          "Мэн-цзы"
+        ],
+        "gloss": "Мэн-цзы — конфуцианский мыслитель, отстаивавший изначальную доброту человеческой природы"
+      }
+    },
+    {
+      "cell": "people/thinkers/th-xunzi.shortname",
+      "before": null,
+      "after": {
+        "zh": "荀子",
+        "ru": [
+          "Сюнь-цзы"
+        ],
+        "gloss": "Сюнь-цзы — конфуцианский мыслитель; у него учился будущий теоретик легизма Хань Фэй"
+      }
+    },
+    {
+      "cell": "people/thinkers/th-hanfeizi.shortname",
+      "before": null,
+      "after": {
+        "zh": "韩非",
+        "ru": [
+          "Хань Фэй"
+        ],
+        "gloss": "Хань Фэй — выходец из знати княжества Хань, легист, ученик Сюнь-цзы"
+      }
+    },
+    {
+      "cell": "people/composers/cmp-ru-glinka.biography",
+      "before": null,
+      "after": {
+        "zh": "格林卡",
+        "ru": [
+          "Михаил Глинка"
+        ],
+        "gloss": "Михаил Глинка — учился в Благородном пансионе, параллельно брал частные уроки музыки."
+      }
+    },
+    {
+      "cell": "people/composers/cmp-ru-borodin.biography",
+      "before": null,
+      "after": {
+        "zh": "鲍罗丁",
+        "ru": [
+          "Александр Бородин"
+        ],
+        "gloss": "Александр Бородин — с 1864 года возглавлял кафедру химии Медико-хирургической академии."
+      }
+    },
+    {
+      "cell": "people/composers/cmp-am-khachaturian.biography",
+      "before": null,
+      "after": {
+        "zh": "哈恰图良",
+        "ru": [
+          "Арам Хачатурян"
+        ],
+        "gloss": "Арам Хачатурян — учился игре на виолончели в техникуме Гнесиных, затем композиции в Московской консерватории."
+      }
+    },
+    {
+      "cell": "people/composers/cmp-ru-tchaikovsky.biography",
+      "before": null,
+      "after": {
+        "zh": "柴可夫斯基",
+        "ru": [
+          "Пётр Чайковский"
+        ],
+        "gloss": "Пётр Чайковский — окончил Училище правоведения и до музыкальной карьеры служил в Министерстве юстиции."
+      }
+    },
+    {
+      "cell": "dynasties/rulers/rul-fuxi.wisename",
+      "before": null,
+      "after": {
+        "zh": "伏羲",
+        "ru": [
+          "Фуси"
+        ],
+        "gloss": "Фуси — легендарный первопредок, которому приписывают создание восьми триграмм."
+      }
+    },
+    {
+      "cell": "dynasties/rulers/rul-huangdi.wisename",
+      "before": null,
+      "after": {
+        "zh": "黄帝",
+        "ru": [
+          "Хуанди"
+        ],
+        "gloss": "Хуанди — Жёлтый император; по преданию, победил Чию в битве при Чжолу."
+      }
+    },
+    {
+      "cell": "dynasties/rulers/rul-yao.wisename",
+      "before": null,
+      "after": {
+        "zh": "唐尧",
+        "ru": [
+          "Яо"
+        ],
+        "gloss": "Яо — по преданию, передал престол достойному Шуню после испытаний."
+      }
+    },
+    {
+      "cell": "dynasties/rulers/rul-qinshihuang.wisename",
+      "before": null,
+      "after": {
+        "zh": "秦始皇",
+        "ru": [
+          "Цинь Шихуан"
+        ],
+        "gloss": "Цинь Шихуан — после объединения Китая ввёл единые письменность, денежную систему и меры."
+      }
+    },
+    {
+      "cell": "ethnos/languageforms/lang-putonghua.standard",
+      "before": null,
+      "after": {
+        "zh": "普通话",
+        "ru": [
+          "Путунхуа"
+        ],
+        "gloss": "Путунхуа — название общенационального языкового стандарта КНР, чьи нормы официально определены в 1956 году."
+      }
+    },
+    {
+      "cell": "ethnos/languageforms/lang-guoyu.standard",
+      "before": null,
+      "after": {
+        "zh": "国语",
+        "ru": [
+          "Гоюй"
+        ],
+        "gloss": "Гоюй — его стандарт произношения закрепил выпущенный в 1932 году словарь «Гоинь чанъюн цзыхуэй»."
+      }
+    },
+    {
+      "cell": "ethnos/languageforms/lang-zhongwen.standard",
+      "before": null,
+      "after": {
+        "zh": "中文",
+        "ru": [
+          "Чжунвэнь"
+        ],
+        "gloss": "Чжунвэнь — общее обозначение китайского языка и письменности; близкое название — хуавэнь (华文)."
+      }
+    },
+    {
+      "cell": "ethnos/languageforms/lang-hanyu.standard",
+      "before": null,
+      "after": {
+        "zh": "汉语",
+        "ru": [
+          "Ханьюй"
+        ],
+        "gloss": "Ханьюй — язык ханьцев, включающий разные диалекты, например у и юэ."
+      }
+    },
+    {
+      "cell": "ethnos/languageforms/lang-baihua.written",
+      "before": null,
+      "after": {
+        "zh": "白话",
+        "ru": [
+          "Байхуа"
+        ],
+        "gloss": "Байхуа — письменный язык на основе разговорной речи, в противоположность вэньяню"
+      }
+    },
+    {
+      "cell": "ethnos/languageforms/lang-putonghua.written",
+      "before": null,
+      "after": {
+        "zh": "普通话",
+        "ru": [
+          "Путунхуа"
+        ],
+        "gloss": "Путунхуа — современный стандартный китайский язык с пекинской нормой произношения"
+      }
+    },
+    {
+      "cell": "ethnos/languageforms/lang-wenyan.written",
+      "before": null,
+      "after": {
+        "zh": "文言文",
+        "ru": [
+          "Вэньянь"
+        ],
+        "gloss": "Вэньянь — классический письменный язык; для него характерны краткие, сжатые фразы, отличающиеся от разговорной речи"
+      }
+    },
+    {
+      "cell": "ethnos/languageforms/lang-guoyu.written",
+      "before": null,
+      "after": {
+        "zh": "国语",
+        "ru": [
+          "Гоюй"
+        ],
+        "gloss": "Гоюй — название стандартного китайского языка, употреблявшееся в республиканском Китае и сохраняющееся на Тайване"
+      }
+    },
+    {
+      "cell": "literature/authors/lit-a-liqi.poetryname",
+      "before": null,
+      "after": {
+        "zh": "李颀",
+        "ru": [
+          "Ли Ци"
+        ],
+        "gloss": "Ли Ци — поэт эпохи Тан, известный стихами о пограничной службе, в том числе «Старинной песней о военном походе»"
+      }
+    },
+    {
+      "cell": "literature/authors/lit-a-libai.poetryname",
+      "before": null,
+      "after": {
+        "zh": "李白",
+        "ru": [
+          "Ли Бо"
+        ],
+        "gloss": "Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»"
+      }
+    },
+    {
+      "cell": "literature/authors/lit-a-wangwei.poetryname",
+      "before": null,
+      "after": {
+        "zh": "王維",
+        "ru": [
+          "Ван Вэй"
+        ],
+        "gloss": "Ван Вэй — поэт и художник эпохи Тан, мастер пейзажной лирики"
+      }
+    },
+    {
+      "cell": "literature/authors/lit-a-wangji.poetryname",
+      "before": null,
+      "after": {
+        "zh": "王績",
+        "ru": [
+          "Ван Цзи"
+        ],
+        "gloss": "Ван Цзи — поэт начала эпохи Тан; в стихотворении «Смотрю вдаль» (野望) изображён осенний сельский пейзаж"
+      }
+    }
+  ],
+  "approvedManifestHash": "e213e29942db204dfcae1561bb6827bc27cf9ce5d95b19314fe407413edea69e",
+  "sourceReports": [
+    "2026-11-07-regional-batch-2-evidence.json"
+  ],
+  "captionCompactions": [
+    {
+      "reviewNumber": 2,
+      "questionId": "2021-22-mun-amur-6",
+      "optionId": "o3",
+      "approvedRu": "Нанкин — в январе 1912 года Сунь Ятсен вступил здесь в должность временного президента республики.",
+      "appliedRu": "Нанкин — в январе 1912 г. Сунь Ятсен стал временным президентом республики.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 2,
+      "questionId": "2021-22-mun-amur-6",
+      "optionId": "o4",
+      "approvedRu": "Ухань — в 1927 году здесь работало национальное правительство Гоминьдана, переехавшее из Гуанчжоу.",
+      "appliedRu": "Ухань — в 1927 г. здесь работало правительство Гоминьдана, прибывшее из Гуанчжоу.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 4,
+      "questionId": "2025-26-mun-irk-7",
+      "optionId": "o1",
+      "approvedRu": "Высокоскоростной электропоезд — в таких составах обычно есть места первого и второго классов.",
+      "appliedRu": "Высокоскоростной электропоезд — обычно с местами первого и второго классов.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 4,
+      "questionId": "2025-26-mun-irk-7",
+      "optionId": "o4",
+      "approvedRu": "Междугородный поезд — рассчитан на короткие и средние маршруты между городами или пригородами.",
+      "appliedRu": "Междугородный поезд — для коротких и средних маршрутов между городами или пригородами.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 7,
+      "questionId": "2025-26-mun-perm-2",
+      "optionId": "o1",
+      "approvedRu": "Чжуан-цзы — даосский философ эпохи Сражающихся царств; его сочинения вошли в одноимённую книгу",
+      "appliedRu": "Чжуан-цзы — даосский философ Сражающихся царств; сочинения вошли в одноимённую книгу",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 8,
+      "questionId": "2023-24-shk-mosobl-4",
+      "optionId": "o3",
+      "approvedRu": "Арам Хачатурян — учился игре на виолончели в техникуме Гнесиных, затем композиции в Московской консерватории.",
+      "appliedRu": "Арам Хачатурян — виолончель в техникуме Гнесиных, композиция в Московской консерватории.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 8,
+      "questionId": "2023-24-shk-mosobl-4",
+      "optionId": "o4",
+      "approvedRu": "Пётр Чайковский — окончил Училище правоведения и до музыкальной карьеры служил в Министерстве юстиции.",
+      "appliedRu": "Пётр Чайковский — до музыкальной карьеры окончил Училище правоведения и служил в Минюсте.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 9,
+      "questionId": "2025-26-mun-kursk-10",
+      "optionId": "o2",
+      "approvedRu": "Роман ужасов — произведение со страшными событиями, например появлениями призраков или историями о зловещих домах",
+      "appliedRu": "Роман ужасов — проза о страшном: призраках, зловещих домах и других пугающих событиях",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 9,
+      "questionId": "2025-26-mun-kursk-10",
+      "optionId": "o3",
+      "approvedRu": "Научная фантастика — проза, в которой научные знания и технические идеи служат основой вымышленных событий",
+      "appliedRu": "Научная фантастика — проза, где научные знания и технические идеи — основа вымысла",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 12,
+      "questionId": "2024-25-shk-mosobl-1",
+      "optionId": "o1",
+      "approvedRu": "Путунхуа — название общенационального языкового стандарта КНР, чьи нормы официально определены в 1956 году.",
+      "appliedRu": "Путунхуа — языковой стандарт КНР; его нормы официально определены в 1956 г.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 12,
+      "questionId": "2024-25-shk-mosobl-1",
+      "optionId": "o2",
+      "approvedRu": "Гоюй — его стандарт произношения закрепил выпущенный в 1932 году словарь «Гоинь чанъюн цзыхуэй».",
+      "appliedRu": "Гоюй — норму произношения закрепил словарь «Гоинь чанъюн цзыхуэй» (1932).",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 12,
+      "questionId": "2024-25-shk-mosobl-1",
+      "optionId": "o3",
+      "approvedRu": "Чжунвэнь — общее обозначение китайского языка и письменности; близкое название — хуавэнь (华文).",
+      "appliedRu": "Чжунвэнь — китайский язык и письменность; близкое название — хуавэнь (华文).",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 14,
+      "questionId": "2025-26-mun-irk-5",
+      "optionId": "o1",
+      "approvedRu": "Детский сад и начальная школа — детский сад относится к дошкольному образованию и обычно принимает детей 3–6 лет.",
+      "appliedRu": "Детский сад и начальная школа — детсад: дошкольное образование, обычно для детей 3–6 лет.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 14,
+      "questionId": "2025-26-mun-irk-5",
+      "optionId": "o2",
+      "approvedRu": "Начальная и младшая средняя школа — вместе составляют девять лет обучения без платы за учёбу и школьных сборов.",
+      "appliedRu": "Начальная и младшая средняя школа — девять лет без платы за учёбу и школьных сборов.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 14,
+      "questionId": "2025-26-mun-irk-5",
+      "optionId": "o3",
+      "approvedRu": "Младшая и старшая средняя школа — старшая ступень следует за младшей и обычно рассчитана ещё на три года.",
+      "appliedRu": "Младшая и старшая средняя школа — старшая следует за младшей и обычно длится 3 года.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 16,
+      "questionId": "2022-23-mun-krsk-9",
+      "optionId": "o3",
+      "approvedRu": "Вэньянь — классический письменный язык; для него характерны краткие, сжатые фразы, отличающиеся от разговорной речи",
+      "appliedRu": "Вэньянь — классический письменный язык, отличный от разговорной речи; фразы обычно сжаты.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 16,
+      "questionId": "2022-23-mun-krsk-9",
+      "optionId": "o4",
+      "approvedRu": "Гоюй — название стандартного китайского языка, употреблявшееся в республиканском Китае и сохраняющееся на Тайване",
+      "appliedRu": "Гоюй — стандарт китайского языка республиканского Китая; название сохранилось на Тайване.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 17,
+      "questionId": "2018-19-mun-vrn-4",
+      "optionId": "o1",
+      "approvedRu": "Лу Чжишэнь — герой «Речных заводей»; прежде носил имя Лу Да и стал буддийским монахом, скрываясь от властей",
+      "appliedRu": "Лу Чжишэнь — герой «Речных заводей», Лу Да; скрываясь от властей, стал буддийским монахом.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 18,
+      "questionId": "2021-22-mun-mosobl-58",
+      "optionId": "o1",
+      "approvedRu": "Цюйи — разговорные и песенно-повествовательные искусства; исполнитель рассказывает историю, а не играет одну постоянную роль",
+      "appliedRu": "Цюйи — разговорные и песенно-повествовательные жанры; рассказчик не играет постоянную роль",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 18,
+      "questionId": "2021-22-mun-mosobl-58",
+      "optionId": "o2",
+      "approvedRu": "Театр, драматическое искусство — представление сюжета актёрами через действие, диалог и пение",
+      "appliedRu": "Театр — актёры представляют сюжет через действие, диалог и пение.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 18,
+      "questionId": "2021-22-mun-mosobl-58",
+      "optionId": "o3",
+      "approvedRu": "Пекинская опера (цзинцзюй) — музыкальный театр, сочетающий пение, речитатив, актёрскую игру и боевые приёмы",
+      "appliedRu": "Пекинская опера (цзинцзюй) — театр пения, речитатива, актёрской игры и боевых приёмов.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 18,
+      "questionId": "2021-22-mun-mosobl-58",
+      "optionId": "o4",
+      "approvedRu": "Китайская традиционная музыка — в частности, инструментальная музыка для китайских народных инструментов",
+      "appliedRu": "Китайская традиционная музыка — в частности, музыка для китайских народных инструментов.",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 19,
+      "questionId": "2025-26-mun-nsk-1",
+      "optionId": "o1",
+      "approvedRu": "Управление через недеяние — правитель следует естественному ходу вещей и избегает излишнего вмешательства",
+      "appliedRu": "Управление через недеяние — следование естественному ходу вещей без лишнего вмешательства",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 19,
+      "questionId": "2025-26-mun-nsk-1",
+      "optionId": "o3",
+      "approvedRu": "Благородный восьмеричный путь — буддийский путь освобождения от страдания, включающий нравственность, сосредоточение и мудрость",
+      "appliedRu": "Восьмеричный путь — буддийский путь к освобождению: мораль, сосредоточение, мудрость",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 19,
+      "questionId": "2025-26-mun-nsk-1",
+      "optionId": "o4",
+      "approvedRu": "Учение об изначальной доброте человеческой природы — положение конфуцианской философии Мэн-цзы",
+      "appliedRu": "Изначальная доброта человеческой природы — конфуцианское учение Мэн-цзы",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 20,
+      "questionId": "2019-20-mun-kgd-5",
+      "optionId": "o1",
+      "approvedRu": "Ли Ци — поэт эпохи Тан, известный стихами о пограничной службе, в том числе «Старинной песней о военном походе»",
+      "appliedRu": "Ли Ци — танский поэт пограничной лирики, автор «Старинной песни о военном походе»",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    },
+    {
+      "reviewNumber": 20,
+      "questionId": "2019-20-mun-kgd-5",
+      "optionId": "o4",
+      "approvedRu": "Ван Цзи — поэт начала эпохи Тан; в стихотворении «Смотрю вдаль» (野望) изображён осенний сельский пейзаж",
+      "appliedRu": "Ван Цзи — поэт начала Тан; «Смотрю вдаль» (野望) — осенний сельский пейзаж",
+      "reason": "Сокращение до существующего предела 90 символов; названия и факты сохранены."
+    }
+  ],
+  "compactedCells": [
+    {
+      "cell": "literature/authors/lit-a-liqi.name",
+      "before": "Ли Ци — поэт эпохи Тан, известный стихами о пограничной службе, в том числе «Старинной песней о военном походе»",
+      "after": "Ли Ци — танский поэт пограничной лирики, автор «Старинной песни о военном походе»"
+    },
+    {
+      "cell": "literature/authors/lit-a-liqi.poetryname",
+      "before": "Ли Ци — поэт эпохи Тан, известный стихами о пограничной службе, в том числе «Старинной песней о военном походе»",
+      "after": "Ли Ци — танский поэт пограничной лирики, автор «Старинной песни о военном походе»"
+    },
+    {
+      "cell": "literature/authors/lit-a-wangji.name",
+      "before": "Ван Цзи — поэт начала эпохи Тан; в стихотворении «Смотрю вдаль» (野望) изображён осенний сельский пейзаж",
+      "after": "Ван Цзи — поэт начала Тан; «Смотрю вдаль» (野望) — осенний сельский пейзаж"
+    },
+    {
+      "cell": "literature/authors/lit-a-wangji.poetryname",
+      "before": "Ван Цзи — поэт начала эпохи Тан; в стихотворении «Смотрю вдаль» (野望) изображён осенний сельский пейзаж",
+      "after": "Ван Цзи — поэт начала Тан; «Смотрю вдаль» (野望) — осенний сельский пейзаж"
+    },
+    {
+      "cell": "literature/novelgenres/genre-horror.name",
+      "before": "Роман ужасов — произведение со страшными событиями, например появлениями призраков или историями о зловещих домах",
+      "after": "Роман ужасов — проза о страшном: призраках, зловещих домах и других пугающих событиях"
+    },
+    {
+      "cell": "literature/novelgenres/genre-scifi.name",
+      "before": "Научная фантастика — проза, в которой научные знания и технические идеи служат основой вымышленных событий",
+      "after": "Научная фантастика — проза, где научные знания и технические идеи — основа вымысла"
+    },
+    {
+      "cell": "literature/performingarts/art-quyi.name",
+      "before": "Цюйи — разговорные и песенно-повествовательные искусства; исполнитель рассказывает историю, а не играет одну постоянную роль",
+      "after": "Цюйи — разговорные и песенно-повествовательные жанры; рассказчик не играет постоянную роль"
+    },
+    {
+      "cell": "literature/performingarts/art-theatre.name",
+      "before": "Театр, драматическое искусство — представление сюжета актёрами через действие, диалог и пение",
+      "after": "Театр — актёры представляют сюжет через действие, диалог и пение."
+    },
+    {
+      "cell": "literature/performingarts/art-jingju.name",
+      "before": "Пекинская опера (цзинцзюй) — музыкальный театр, сочетающий пение, речитатив, актёрскую игру и боевые приёмы",
+      "after": "Пекинская опера (цзинцзюй) — театр пения, речитатива, актёрской игры и боевых приёмов."
+    },
+    {
+      "cell": "literature/performingarts/art-folkmusic.name",
+      "before": "Китайская традиционная музыка — в частности, инструментальная музыка для китайских народных инструментов",
+      "after": "Китайская традиционная музыка — в частности, музыка для китайских народных инструментов."
+    },
+    {
+      "cell": "modern-history/events/ev-roc-founded.revolution",
+      "before": "Нанкин — в январе 1912 года Сунь Ятсен вступил здесь в должность временного президента республики.",
+      "after": "Нанкин — в январе 1912 г. Сунь Ятсен стал временным президентом республики."
+    },
+    {
+      "cell": "modern-history/events/ev-wuhan-government.revolution",
+      "before": "Ухань — в 1927 году здесь работало национальное правительство Гоминьдана, переехавшее из Гуанчжоу.",
+      "after": "Ухань — в 1927 г. здесь работало правительство Гоминьдана, прибывшее из Гуанчжоу."
+    },
+    {
+      "cell": "ethnos/languageforms/lang-putonghua.name",
+      "before": "Путунхуа — название общенационального языкового стандарта КНР, чьи нормы официально определены в 1956 году.",
+      "after": "Путунхуа — языковой стандарт КНР; его нормы официально определены в 1956 г."
+    },
+    {
+      "cell": "ethnos/languageforms/lang-putonghua.standard",
+      "before": "Путунхуа — название общенационального языкового стандарта КНР, чьи нормы официально определены в 1956 году.",
+      "after": "Путунхуа — языковой стандарт КНР; его нормы официально определены в 1956 г."
+    },
+    {
+      "cell": "ethnos/languageforms/lang-guoyu.name",
+      "before": "Гоюй — его стандарт произношения закрепил выпущенный в 1932 году словарь «Гоинь чанъюн цзыхуэй».",
+      "after": "Гоюй — норму произношения закрепил словарь «Гоинь чанъюн цзыхуэй» (1932)."
+    },
+    {
+      "cell": "ethnos/languageforms/lang-guoyu.standard",
+      "before": "Гоюй — его стандарт произношения закрепил выпущенный в 1932 году словарь «Гоинь чанъюн цзыхуэй».",
+      "after": "Гоюй — норму произношения закрепил словарь «Гоинь чанъюн цзыхуэй» (1932)."
+    },
+    {
+      "cell": "ethnos/languageforms/lang-guoyu.written",
+      "before": "Гоюй — название стандартного китайского языка, употреблявшееся в республиканском Китае и сохраняющееся на Тайване",
+      "after": "Гоюй — стандарт китайского языка республиканского Китая; название сохранилось на Тайване."
+    },
+    {
+      "cell": "ethnos/languageforms/lang-zhongwen.name",
+      "before": "Чжунвэнь — общее обозначение китайского языка и письменности; близкое название — хуавэнь (华文).",
+      "after": "Чжунвэнь — китайский язык и письменность; близкое название — хуавэнь (华文)."
+    },
+    {
+      "cell": "ethnos/languageforms/lang-zhongwen.standard",
+      "before": "Чжунвэнь — общее обозначение китайского языка и письменности; близкое название — хуавэнь (华文).",
+      "after": "Чжунвэнь — китайский язык и письменность; близкое название — хуавэнь (华文)."
+    },
+    {
+      "cell": "ethnos/languageforms/lang-wenyan.name",
+      "before": "Вэньянь — классический письменный язык; для него характерны краткие, сжатые фразы, отличающиеся от разговорной речи",
+      "after": "Вэньянь — классический письменный язык, отличный от разговорной речи; фразы обычно сжаты."
+    },
+    {
+      "cell": "ethnos/languageforms/lang-wenyan.written",
+      "before": "Вэньянь — классический письменный язык; для него характерны краткие, сжатые фразы, отличающиеся от разговорной речи",
+      "after": "Вэньянь — классический письменный язык, отличный от разговорной речи; фразы обычно сжаты."
+    },
+    {
+      "cell": "modern-china/trains/train-highspeed.name",
+      "before": "Высокоскоростной электропоезд — в таких составах обычно есть места первого и второго классов.",
+      "after": "Высокоскоростной электропоезд — обычно с местами первого и второго классов."
+    },
+    {
+      "cell": "modern-china/trains/train-intercity.name",
+      "before": "Междугородный поезд — рассчитан на короткие и средние маршруты между городами или пригородами.",
+      "after": "Междугородный поезд — для коротких и средних маршрутов между городами или пригородами."
+    },
+    {
+      "cell": "modern-china/educationpairs/edu-preschool-primary.name",
+      "before": "Детский сад и начальная школа — детский сад относится к дошкольному образованию и обычно принимает детей 3–6 лет.",
+      "after": "Детский сад и начальная школа — детсад: дошкольное образование, обычно для детей 3–6 лет."
+    },
+    {
+      "cell": "modern-china/educationpairs/edu-primary-junior.name",
+      "before": "Начальная и младшая средняя школа — вместе составляют девять лет обучения без платы за учёбу и школьных сборов.",
+      "after": "Начальная и младшая средняя школа — девять лет без платы за учёбу и школьных сборов."
+    },
+    {
+      "cell": "modern-china/educationpairs/edu-junior-senior.name",
+      "before": "Младшая и старшая средняя школа — старшая ступень следует за младшей и обычно рассчитана ещё на три года.",
+      "after": "Младшая и старшая средняя школа — старшая следует за младшей и обычно длится 3 года."
+    },
+    {
+      "cell": "people/thinkers/th-zhuangzi.shortname",
+      "before": "Чжуан-цзы — даосский философ эпохи Сражающихся царств; его сочинения вошли в одноимённую книгу",
+      "after": "Чжуан-цзы — даосский философ Сражающихся царств; сочинения вошли в одноимённую книгу"
+    },
+    {
+      "cell": "people/composers/cmp-ru-tchaikovsky.biography",
+      "before": "Пётр Чайковский — окончил Училище правоведения и до музыкальной карьеры служил в Министерстве юстиции.",
+      "after": "Пётр Чайковский — до музыкальной карьеры окончил Училище правоведения и служил в Минюсте."
+    },
+    {
+      "cell": "people/composers/cmp-am-khachaturian.name",
+      "before": "Арам Хачатурян — учился игре на виолончели в техникуме Гнесиных, затем композиции в Московской консерватории.",
+      "after": "Арам Хачатурян — виолончель в техникуме Гнесиных, композиция в Московской консерватории."
+    },
+    {
+      "cell": "people/composers/cmp-am-khachaturian.biography",
+      "before": "Арам Хачатурян — учился игре на виолончели в техникуме Гнесиных, затем композиции в Московской консерватории.",
+      "after": "Арам Хачатурян — виолончель в техникуме Гнесиных, композиция в Московской консерватории."
+    },
+    {
+      "cell": "people/figures/fig-luzhishen.name",
+      "before": "Лу Чжишэнь — герой «Речных заводей»; прежде носил имя Лу Да и стал буддийским монахом, скрываясь от властей",
+      "after": "Лу Чжишэнь — герой «Речных заводей», Лу Да; скрываясь от властей, стал буддийским монахом."
+    },
+    {
+      "cell": "people/concepts/concept-wuwei.name",
+      "before": "Управление через недеяние — правитель следует естественному ходу вещей и избегает излишнего вмешательства",
+      "after": "Управление через недеяние — следование естественному ходу вещей без лишнего вмешательства"
+    },
+    {
+      "cell": "people/concepts/concept-eightfold.name",
+      "before": "Благородный восьмеричный путь — буддийский путь освобождения от страдания, включающий нравственность, сосредоточение и мудрость",
+      "after": "Восьмеричный путь — буддийский путь к освобождению: мораль, сосредоточение, мудрость"
+    },
+    {
+      "cell": "people/concepts/concept-goodnature.name",
+      "before": "Учение об изначальной доброте человеческой природы — положение конфуцианской философии Мэн-цзы",
+      "after": "Изначальная доброта человеческой природы — конфуцианское учение Мэн-цзы"
+    }
+  ],
+  "restoredOriginalAliases": [
+    "literature/authors/lit-a-libai.name",
+    "ethnos/peoples/ppl-cn-zhuang.name",
+    "landmarks/intangible/int-jingju.name",
+    "landmarks/intangible/int-kunqu.name",
+    "landmarks/intangible/int-yueju-guangdong.name",
+    "landmarks/intangible/int-yuju.name"
+  ],
+  "quyiAliasDecision": "Русская ячейка названа «жанры цюйи»; голое «Цюйи» при морфологическом поиске ошибочно совпадало с именем Цюй Юань. Китайский текст 曲艺 и подпись сохранены.",
+  "initialHintGroups": [
+    {
+      "group": "confucius-word",
+      "added": [
+        "2025-26-shk-mosobl-7"
+      ],
+      "reason": "Слово «конфуцианской» в принятой формулировке №10; сохраняем принятый текст и прежнее правило группы confucius-word."
+    },
+    {
+      "group": "prc-founding-1949",
+      "added": [
+        "2024-25-shk-mosobl-1"
+      ],
+      "reason": "№12 сохраняет по просьбе автора период 1912–1949; конечный год совпадает с ответом о создании КНР."
+    },
+    {
+      "group": "nanchang-uprising-army-day",
+      "added": [
+        "holidays-q21",
+        "2021-22-mun-amur-6"
+      ],
+      "reason": "Годовщина Наньчанского восстания в вопросе о Дне основания НОАК называет ответ №2."
+    },
+    {
+      "group": "xuanzang-sutras",
+      "added": [
+        "2018-19-mun-vrn-4",
+        "2016-17-shk-2",
+        "2024-25-pri-32",
+        "2016-17-reg-7",
+        "2022-23-shk-mosobl-4"
+      ],
+      "reason": "№17 называет «Путешествие на Запад»; вопрос о пагоде называет Сюаньцзана. Разводим связанные сведения о монахе и романе."
+    }
+  ],
+  "captionHintTriage": "2026-11-07-regional-batch-2-hint-triage.json",
+  "affectedPreviousQuestions": [
+    {
+      "id": "2015-16-mun-7",
+      "questionRu": "Какая национальность является самой многочисленной в Китае?",
+      "optionsBefore": 26,
+      "optionsAfter": 26,
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "2015-16-zak-7",
+      "questionRu": "Кто является автором знаменитой строки «Старый скакун у коновязи всё ещё стремится проскакать тысячу ли»?",
+      "optionsBefore": 42,
+      "optionsAfter": 44,
+      "added": [
+        "李颀",
+        "王绩"
+      ],
+      "removed": []
+    },
+    {
+      "id": "2015-16-zak-8",
+      "questionRu": "Великий китайский писатель. Среди его произведений роман «Рикша», пьеса «Чайная» и др.",
+      "optionsBefore": 12,
+      "optionsAfter": 12,
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "2016-17-reg-5",
+      "questionRu": "Кто является автором «Исторических записок»?",
+      "optionsBefore": 40,
+      "optionsAfter": 42,
+      "added": [
+        "李颀",
+        "王绩"
+      ],
+      "removed": []
+    },
+    {
+      "id": "2017-18-shk-2",
+      "questionRu": "Повесть «Подлинная история А-Кью» — самое известное произведение какого крупного китайского писателя XX века?",
+      "optionsBefore": 10,
+      "optionsAfter": 10,
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "2019-20-mun-lip-4",
+      "questionRu": "Одежда какого народа отличается особым разнообразием фасонов и яркостью красок: у женщин больше сотни видов нарядов, и она считается самой богатой среди национальных костюмов Китая?",
+      "optionsBefore": 25,
+      "optionsAfter": 25,
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "2019-20-mun-q727051",
+      "questionRu": "Какое национальное меньшинство Китая самое многочисленное?",
+      "optionsBefore": 25,
+      "optionsAfter": 25,
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "2021-22-zak-q36aaab",
+      "questionRu": "Самый распространённый и влиятельный вид китайского оперного искусства с историей около 200 лет, признанный национальным достоянием.",
+      "optionsBefore": 6,
+      "optionsAfter": 6,
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "2021-22-zak-q3eaa02",
+      "questionRu": "Известный китайский писатель, драматург и публицист, автор романа «Записки о кошачьем городе».",
+      "optionsBefore": 11,
+      "optionsAfter": 11,
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "2023-24-zak-3",
+      "questionRu": "Один из выдающихся поэтов эпохи Тан, которого называли «поэтом-историком».",
+      "optionsBefore": 11,
+      "optionsAfter": 13,
+      "added": [
+        "李颀",
+        "王绩"
+      ],
+      "removed": []
+    },
+    {
+      "id": "2024-25-mun-udm-8",
+      "questionRu": "Назовите имя выдающегося деятеля культуры Китая 20 века, являющегося крупным общественным деятелем, мыслителем, автором сборника стихов «Богини».",
+      "optionsBefore": 11,
+      "optionsAfter": 11,
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "2025-26-shk-30",
+      "questionRu": "Кто считается автором романа «Речные заводи» — одного из четырёх классических китайских романов?",
+      "optionsBefore": 8,
+      "optionsAfter": 10,
+      "added": [
+        "李颀",
+        "王绩"
+      ],
+      "removed": []
+    },
+    {
+      "id": "ethnos-q10",
+      "questionRu": "Письменность какого народа Китая создана в начале VII века?",
+      "optionsBefore": 26,
+      "optionsAfter": 26,
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "ethnos-q12",
+      "questionRu": "Современная письменность какого народа Китая основана на арабском алфавите?",
+      "optionsBefore": 25,
+      "optionsAfter": 25,
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "ethnos-q81",
+      "questionRu": "Какой из этих народов Китая традиционно исповедует ислам?",
+      "optionsBefore": 4,
+      "optionsAfter": 4,
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "literature-q23",
+      "questionRu": "Какого поэта эпохи Тан прозвали «бессмертным поэтом»?",
+      "optionsBefore": 9,
+      "optionsAfter": 11,
+      "added": [
+        "李颀",
+        "王绩"
+      ],
+      "removed": []
+    },
+    {
+      "id": "literature-q24",
+      "questionRu": "Кого из поэтов эпохи Тан называют «мудрецом поэзии»?",
+      "optionsBefore": 9,
+      "optionsAfter": 11,
+      "added": [
+        "李颀",
+        "王绩"
+      ],
+      "removed": []
+    },
+    {
+      "id": "literature-q25",
+      "questionRu": "Кто из поэтов эпохи Тан написал длинную повествовательную поэму «Песнь о лютнистке» (琵琶行)?",
+      "optionsBefore": 9,
+      "optionsAfter": 11,
+      "added": [
+        "李颀",
+        "王绩"
+      ],
+      "removed": []
+    },
+    {
+      "id": "literature-q43",
+      "questionRu": "Под каким псевдонимом писал Чжоу Шужэнь (周树人)?",
+      "optionsBefore": 10,
+      "optionsAfter": 10,
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "literature-q44",
+      "questionRu": "Под каким псевдонимом известен писатель Шу Цинчунь (舒庆春)?",
+      "optionsBefore": 10,
+      "optionsAfter": 10,
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "literature-q49",
+      "questionRu": "Кто в 2012 году первым из писателей с гражданством КНР получил Нобелевскую премию по литературе?",
+      "optionsBefore": 5,
+      "optionsAfter": 5,
+      "added": [],
+      "removed": []
+    }
+  ],
+  "oldPoolGrowthReview": "Семь прежних наборов получили Ли Ци и Ван Цзи: авторство строки Цао Цао, «Исторических записок», «Речных заводей», прозвища Ду Фу/Ли Бо и авторство «Песни о лютнистке». Ни один из двух новых поэтов не является вторым правильным ответом.",
+  "currentManifestHash": "7b45c2059226f2427653bd04e0dbffe01c77aad9d6864b454b4a25eaade8c852",
+  "authorApproval": {
+    "date": "2026-11-07",
+    "instruction": "Остальные 19 вопросов принимаем. Встраивай в досье, проверь подписи и взаимные подсказки, затем публикуй на сайте.",
+    "approvedPreviewManifestHash": "e213e29942db204dfcae1561bb6827bc27cf9ce5d95b19314fe407413edea69e",
+    "excludedQuestion": "2020-21-shk-mosobl-52",
+    "scope": "19 retained questions, proposed stems and displayed captions; permanent exclusion of №11 remains."
+  },
+  "validation": {
+    "visibleCount": 998,
+    "canonicalCount": 1269,
+    "exactNewIds": 19,
+    "embeddedAcceptedQuestions": 19,
+    "approvedOptionsChecked": 76,
+    "wordingOnlyCaptionCompactions": 27,
+    "build": "passed",
+    "pinyin": "complete",
+    "fullTests": {
+      "python": {
+        "passed": 483,
+        "failed": 0
+      },
+      "node": {
+        "passed": 170,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    "independentReview": {
+      "verdict": "ready-to-merge-no-material-findings",
+      "report": "2026-11-07-regional-batch-2-release-review.md"
+    },
+    "publication": "authorized-ready-release-snapshot",
+    "browser": {
+      "renderedCards": 152,
+      "optionDisplays": 608,
+      "report": "2026-11-07-regional-batch-2-browser-check.json"
+    },
+    "publicHints": {
+      "blocking": 0,
+      "initialNewCandidates": 32,
+      "sameRowRepeats": 13,
+      "protectedPairs": 19,
+      "remainingNewCandidates": 12,
+      "remainingAreAllowedSameRowRepeats": true
+    }
+  },
+  "testExpectationUpdates": [
+    "Контекст одинаковой подписи уточнён до таблицы/колонки досье: география и промышленность города различаются.",
+    "Уже принятый вопрос о куньцюй проверяется как доступный; окончательно исключённый №11 — как скрытый.",
+    "После объединения групп проверяется сохранение связей о Цао Цао и маньчжурах, а не прежнее имя группы."
+  ]
+}

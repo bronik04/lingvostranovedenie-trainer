@@ -31,7 +31,7 @@
             "ru": [
               "Ханьцы"
             ],
-            "gloss": "Ханьцы — народ Китая"
+            "gloss": "Ханьцы — основной по численности народ Китая; говорят на китайском языке"
           },
           "country": {
             "zh": "中国"
@@ -42,7 +42,7 @@
               "title": "汉族 — 概况 — 国家民族事务委员会",
               "url": "https://www.neac.gov.cn/seac/ztzl/201806/1065965.shtml",
               "quote": "汉族是中国的主体民族。 … 黄河、淮河、长江、珠江等农业发达地区及城市集中分布 … 汉族的语言通称汉语 … 现代汉语…",
-              "checkedAt": "2026-10-16",
+              "checkedAt": "2026-11-07",
               "authority": "official"
             },
             {
@@ -55,9 +55,9 @@
             {
               "title": "我国的少数民族及其地理分布（资料单张 3）— 香港特别行政区政府教育局",
               "url": "https://www.edb.gov.hk/attachment/sc/curriculum-development/kla/pshe/national-geography/national-geography-resource-portal/Infosheets/Info_Sheet_03-ethnic_minorities-chi.pdf",
+              "quote": "截至 2020 年的第七次全国人口普查，汉族人口约占 91.11%。",
               "checkedAt": "2026-10-17",
-              "authority": "official",
-              "quote": "截至 2020 年的第七次全国人口普查，汉族人口约占 91.11%。"
+              "authority": "official"
             }
           ],
           "olympiad": [
@@ -97,7 +97,7 @@
             "ru": [
               "народ чжуан"
             ],
-            "gloss": "Чжуаны — народ Китая"
+            "gloss": "Чжуаны — крупнейшее национальное меньшинство Китая; основной район расселения — Гуанси"
           },
           "country": {
             "zh": "中国"
@@ -108,7 +108,7 @@
               "title": "壮族 — 概况 — 国家民族事务委员会",
               "url": "https://www.neac.gov.cn/seac/ztzl/201806/1066832.shtml",
               "quote": "壮族是我国少数民族中人口最多的一个民族 … 广西壮族自治区是壮族的主要分布区 … 有南北两个…",
-              "checkedAt": "2026-10-16",
+              "checkedAt": "2026-11-07",
               "authority": "official"
             },
             {
@@ -121,9 +121,9 @@
             {
               "title": "我国的少数民族及其地理分布（资料单张 3）— 香港特别行政区政府教育局",
               "url": "https://www.edb.gov.hk/attachment/sc/curriculum-development/kla/pshe/national-geography/national-geography-resource-portal/Infosheets/Info_Sheet_03-ethnic_minorities-chi.pdf",
+              "quote": "表一：我国主要少数民族人口 … 壮族 19,568,546 1.39% … 资料来源：中国人口普查年鉴 2020",
               "checkedAt": "2026-10-17",
-              "authority": "official",
-              "quote": "表一：我国主要少数民族人口 … 壮族 19,568,546 1.39% … 资料来源：中国人口普查年鉴 2020"
+              "authority": "official"
             }
           ],
           "olympiad": [
@@ -251,7 +251,7 @@
             "ru": [
               "Маньчжуры"
             ],
-            "gloss": "Маньчжуры — народ Китая"
+            "gloss": "Маньчжуры — народ, одна из основных областей расселения которого — провинция Ляонин"
           },
           "country": {
             "zh": "中国"
@@ -262,7 +262,7 @@
               "title": "满族 — 概况 — 国家民族事务委员会",
               "url": "https://www.neac.gov.cn/seac/ztzl/manz/gk.shtml",
               "quote": "满族分布于全国各地，以辽宁、河北、黑龙江、吉林和内蒙古自治区、北京等省、自治区、直辖市为多 … 满族有…",
-              "checkedAt": "2026-10-16",
+              "checkedAt": "2026-11-07",
               "authority": "official"
             },
             {
@@ -1155,7 +1155,7 @@
             "ru": [
               "Дай"
             ],
-            "gloss": "Дай — народ Китая"
+            "gloss": "Дай — народ Юньнани; одна из основных областей расселения — Сишуанбаньна"
           },
           "country": {
             "zh": "中国"
@@ -1166,7 +1166,7 @@
               "title": "傣族 — 概况 — 国家民族事务委员会",
               "url": "https://www.neac.gov.cn/seac/ztzl/daiz/gk.shtml",
               "quote": "主要聚居在云南省西双版纳傣族自治州、德宏傣族景颇族自治州以及耿马和孟连两个自治县…",
-              "checkedAt": "2026-10-16",
+              "checkedAt": "2026-11-07",
               "authority": "official"
             },
             {
@@ -6696,6 +6696,241 @@
           ],
           "olympiad": [],
           "core": true
+        }
+      ]
+    },
+    "languageforms": {
+      "columns": {
+        "name": "zh",
+        "standard": "zh",
+        "written": "zh"
+      },
+      "rows": [
+        {
+          "id": "lang-putonghua",
+          "name": {
+            "zh": "普通话",
+            "ru": [
+              "Путунхуа"
+            ],
+            "gloss": "Путунхуа — языковой стандарт КНР; его нормы официально определены в 1956 г."
+          },
+          "sources": [
+            {
+              "title": "新中国初期语言文字工作重要大事 — Министерство образования КНР",
+              "url": "https://www.moe.gov.cn/s78/A18/s8357/moe_808/tnull_14054.html",
+              "quote": "2月6日，国务院发出《关于推广普通话的指示》",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "推广普通话宣传提纲和宣传口号 — Министерство образования КНР",
+              "url": "https://www.moe.gov.cn/s78/A18/s8357/moe_808/tnull_17134.html",
+              "quote": "普通话以北京语音为标准音，以北方话为基础方言，以典范的现代白话文著作为语法规范。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "什么是汉民族共同语？普通话就是北京话吗？ — 南阳医专公共教学部",
+              "url": "https://gjb.nymc.edu.cn/info/1076/1438.htm",
+              "quote": "普通话“以北京语音为标准音，以北方话为基础方言，以典范的现代白话文为语法规范”",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ],
+          "standard": {
+            "zh": "普通话",
+            "ru": [
+              "Путунхуа"
+            ],
+            "gloss": "Путунхуа — языковой стандарт КНР; его нормы официально определены в 1956 г."
+          },
+          "written": {
+            "zh": "普通话",
+            "ru": [
+              "Путунхуа"
+            ],
+            "gloss": "Путунхуа — современный стандартный китайский язык с пекинской нормой произношения"
+          }
+        },
+        {
+          "id": "lang-guoyu",
+          "name": {
+            "zh": "国语",
+            "ru": [
+              "Гоюй"
+            ],
+            "gloss": "Гоюй — норму произношения закрепил словарь «Гоинь чанъюн цзыхуэй» (1932)."
+          },
+          "sources": [
+            {
+              "title": "近百年来汉字的简化与规范 — Министерство образования КНР",
+              "url": "https://www.moe.gov.cn/jyb_xwfb/xw_fbh/moe_2069/s7135/s7562/s7569/201308/t20130827_156355.html",
+              "quote": "1932年民国政府教育部颁布《国音常用字汇》",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "什么是汉民族共同语？普通话就是北京话吗？ — 南阳医专公共教学部",
+              "url": "https://gjb.nymc.edu.cn/info/1076/1438.htm",
+              "quote": "辛亥革命后民族共同语称为“国语”，中华人民共和国成立后把民族共同语正式定名为“普通话”（台湾省仍沿称“国语”）。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "“国音”的三次变革与“京音”的强势回归 —《语言学论丛》2022年第2期（北京大学学术期刊平台）",
+              "url": "https://ccj.pku.edu.cn/Article/DownLoad?id=519798731432005&type=ArticleFile",
+              "quote": "1932年5月，《国音常用字汇》由商务印书馆出版发行，同时废止1920年公布的《国音字典》。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ],
+          "standard": {
+            "zh": "国语",
+            "ru": [
+              "Гоюй"
+            ],
+            "gloss": "Гоюй — норму произношения закрепил словарь «Гоинь чанъюн цзыхуэй» (1932)."
+          },
+          "written": {
+            "zh": "国语",
+            "ru": [
+              "Гоюй"
+            ],
+            "gloss": "Гоюй — стандарт китайского языка республиканского Китая; название сохранилось на Тайване."
+          }
+        },
+        {
+          "id": "lang-zhongwen",
+          "name": {
+            "zh": "中文",
+            "ru": [
+              "Чжунвэнь"
+            ],
+            "gloss": "Чжунвэнь — китайский язык и письменность; близкое название — хуавэнь (华文)."
+          },
+          "sources": [
+            {
+              "title": "華文 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=83701&la=0&powerMode=0",
+              "quote": "中國的語言文字。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "GB 12200.1—90 汉语信息处理词汇 01部分：基本术语 — 教育部语言文字应用研究所资料站",
+              "url": "https://gf.ywky.edu.cn/uploads/pdf/GB12200.1-90%E6%B1%89%E8%AF%AD%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86%E8%AF%8D%E6%B1%87%2001%E9%83%A8%E5%88%86%EF%BC%9A%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD.pdf",
+              "quote": "4.1.3.2 中文 Chinese\n特指汉语。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ],
+          "standard": {
+            "zh": "中文",
+            "ru": [
+              "Чжунвэнь"
+            ],
+            "gloss": "Чжунвэнь — китайский язык и письменность; близкое название — хуавэнь (华文)."
+          }
+        },
+        {
+          "id": "lang-hanyu",
+          "name": {
+            "zh": "汉语",
+            "ru": [
+              "Ханьюй"
+            ],
+            "gloss": "Ханьюй — язык ханьцев, включающий разные диалекты, например у и юэ."
+          },
+          "sources": [
+            {
+              "title": "漢語 — 教育部《國語辭典簡編本》",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=19740&la=0&powerMode=0",
+              "quote": "漢族的語言，為漢藏語系中的一支。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "GB 12200.1—90 汉语信息处理词汇 01部分：基本术语 — 教育部语言文字应用研究所资料站",
+              "url": "https://gf.ywky.edu.cn/uploads/pdf/GB12200.1-90%E6%B1%89%E8%AF%AD%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86%E8%AF%8D%E6%B1%87%2001%E9%83%A8%E5%88%86%EF%BC%9A%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD.pdf",
+              "quote": "汉族的语言。中国境内主要的通用语言，也是国际通用语言之一。属汉藏语系。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ],
+          "standard": {
+            "zh": "汉语",
+            "ru": [
+              "Ханьюй"
+            ],
+            "gloss": "Ханьюй — язык ханьцев, включающий разные диалекты, например у и юэ."
+          }
+        },
+        {
+          "id": "lang-baihua",
+          "name": {
+            "zh": "白话",
+            "ru": [
+              "Байхуа"
+            ],
+            "gloss": "Байхуа — письменный язык на основе разговорной речи, в противоположность вэньяню"
+          },
+          "sources": [
+            {
+              "title": "白話文 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=13804&la=0&powerMode=0",
+              "quote": "以口語為基礎的書面語言，相對於文言文而言。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "文言与白话的千年之争——《新青年》媒介分析 — 中国传媒大学（张烨）",
+              "url": "https://rirt.cuc.edu.cn/2011/0917/c3801a93611/page.htm",
+              "quote": "文言文是建立在先秦口语基础上的上古汉语书面语言，白话文则是建立在以唐宋以来北方话的基础上。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ],
+          "written": {
+            "zh": "白话",
+            "ru": [
+              "Байхуа"
+            ],
+            "gloss": "Байхуа — письменный язык на основе разговорной речи, в противоположность вэньяню"
+          }
+        },
+        {
+          "id": "lang-wenyan",
+          "name": {
+            "zh": "文言文",
+            "ru": [
+              "Вэньянь"
+            ],
+            "gloss": "Вэньянь — классический письменный язык, отличный от разговорной речи; фразы обычно сжаты."
+          },
+          "sources": [
+            {
+              "title": "文言文 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=162304&la=1&powerMode=0",
+              "quote": "經過文飾、與口語不同的文體。通常詞句較精簡。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            },
+            {
+              "title": "文言与白话的千年之争——《新青年》媒介分析 — 中国传媒大学（张烨）",
+              "url": "https://rirt.cuc.edu.cn/2011/0917/c3801a93611/page.htm",
+              "quote": "文言文是建立在先秦口语基础上的上古汉语书面语言，白话文则是建立在以唐宋以来北方话的基础上。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic"
+            }
+          ],
+          "written": {
+            "zh": "文言文",
+            "ru": [
+              "Вэньянь"
+            ],
+            "gloss": "Вэньянь — классический письменный язык, отличный от разговорной речи; фразы обычно сжаты."
+          }
         }
       ]
     }

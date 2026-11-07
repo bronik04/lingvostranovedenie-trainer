@@ -1,0 +1,2416 @@
+{
+  "reviewId": "regional-2026-11-07-batch-2",
+  "date": "2026-11-07",
+  "batch": 2,
+  "state": "approved-for-release",
+  "baseCommit": "59ac848377137689453e84e90aaea3464ae26ed1",
+  "baselineVisibleCount": 979,
+  "eligibleConservedCount": 283,
+  "questionCount": 19,
+  "presentation": "mixed-topics-four-options-with-russian-glosses",
+  "publicationAuthorized": true,
+  "items": [
+    {
+      "id": "2016-17-mun-spb-6",
+      "questionRu": "Из длинного халата женщин какого народа произошло ципао — женская одежда с ярким национальным колоритом?",
+      "answerOptionId": "o3",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "傣族",
+          "correct": false,
+          "ru": "Дай — народ Юньнани; одна из основных областей расселения — Сишуанбаньна",
+          "source": {
+            "title": "傣族 — 概况 — 国家民族事务委员会",
+            "url": "https://www.neac.gov.cn/seac/ztzl/daiz/gk.shtml",
+            "quote": "主要聚居在云南省西双版纳傣族自治州、德宏傣族景颇族自治州以及耿马和孟连两个自治县…",
+            "checkedAt": "2026-10-16",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки ethnos/peoples/ppl-cn-dai; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "汉族",
+          "correct": false,
+          "ru": "Ханьцы — основной по численности народ Китая; говорят на китайском языке",
+          "source": {
+            "title": "汉族 — 概况 — 国家民族事务委员会",
+            "url": "https://www.neac.gov.cn/seac/ztzl/201806/1065965.shtml",
+            "quote": "汉族是中国的主体民族。 … 黄河、淮河、长江、珠江等农业发达地区及城市集中分布 … 汉族的语言通称汉语 … 现代汉语…",
+            "checkedAt": "2026-10-16",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки ethnos/peoples/ppl-cn-han; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "满族",
+          "correct": true,
+          "ru": "Маньчжуры — народ, одна из основных областей расселения которого — провинция Ляонин",
+          "source": {
+            "title": "满族 — 概况 — 国家民族事务委员会",
+            "url": "https://www.neac.gov.cn/seac/ztzl/manz/gk.shtml",
+            "quote": "满族分布于全国各地，以辽宁、河北、黑龙江、吉林和内蒙古自治区、北京等省、自治区、直辖市为多 … 满族有…",
+            "checkedAt": "2026-10-16",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки ethnos/peoples/ppl-cn-manchu; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "ppl-cn-zhuang",
+          "zh": "壮族",
+          "correct": false,
+          "ru": "Чжуаны — крупнейшее национальное меньшинство Китая; основной район расселения — Гуанси",
+          "source": {
+            "title": "壮族 — 概况 — 国家民族事务委员会",
+            "url": "https://www.neac.gov.cn/seac/ztzl/201806/1066832.shtml",
+            "quote": "壮族是我国少数民族中人口最多的一个民族 … 广西壮族自治区是壮族的主要分布区 … 有南北两个…",
+            "checkedAt": "2026-10-16",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки ethnos/peoples/ppl-cn-zhuang; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        }
+      ],
+      "warnings": [
+        "Существующие четыре подписи «… — народ Китая» не помогают различать варианты; предложены факты о расселении и численном статусе из принятых строк этнического досье."
+      ],
+      "proposedActions": [
+        "Согласовать новые подписи ячеек name этнического досье; изменения общих ячеек затронут другие вопросы. Это предложение, не применённая правка."
+      ],
+      "reviewNumber": 1,
+      "originalQuestionRu": "Из длинного халата женщин какого народа произошло ципао — женская одежда с ярким национальным колоритом?",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "Из длинного халата женщин какого народа произошло ципао — женская одежда с ярким национальным колоритом?",
+      "topic": "Общество: население, этносы и религии",
+      "currentOptionPool": [
+        {
+          "gloss": "Дай — народ Китая",
+          "id": "o1",
+          "zh": "傣族"
+        },
+        {
+          "gloss": "Ханьцы — народ Китая",
+          "id": "o2",
+          "zh": "汉族"
+        },
+        {
+          "id": "o3",
+          "zh": "满族"
+        },
+        {
+          "gloss": "Чжуаны — народ Китая",
+          "id": "ppl-cn-zhuang",
+          "zh": "壮族"
+        },
+        {
+          "gloss": "Хуэй — народ Китая",
+          "id": "ppl-cn-hui",
+          "zh": "回族"
+        },
+        {
+          "gloss": "Уйгуры — народ Китая",
+          "id": "ppl-cn-uyghur",
+          "zh": "维吾尔族"
+        },
+        {
+          "gloss": "Мяо — народ Китая",
+          "id": "ppl-cn-miao",
+          "zh": "苗族"
+        },
+        {
+          "gloss": "И — народ Китая",
+          "id": "ppl-cn-yi",
+          "zh": "彝族"
+        },
+        {
+          "gloss": "Туцзя — народ Китая",
+          "id": "ppl-cn-tujia",
+          "zh": "土家族"
+        },
+        {
+          "gloss": "Тибетцы — народ Китая",
+          "id": "ppl-cn-tibetan",
+          "zh": "藏族"
+        },
+        {
+          "gloss": "Монголы — народ Китая",
+          "id": "ppl-cn-mongol",
+          "zh": "蒙古族"
+        },
+        {
+          "gloss": "Дун — народ Китая",
+          "id": "ppl-cn-dong",
+          "zh": "侗族"
+        },
+        {
+          "gloss": "Буи — народ Китая",
+          "id": "ppl-cn-buyi",
+          "zh": "布依族"
+        },
+        {
+          "gloss": "Яо — народ Китая",
+          "id": "ppl-cn-yao",
+          "zh": "瑶族"
+        },
+        {
+          "gloss": "Бай — народ Китая",
+          "id": "ppl-cn-bai",
+          "zh": "白族"
+        },
+        {
+          "gloss": "Корейцы Китая — народ Китая",
+          "id": "ppl-cn-korean",
+          "zh": "朝鲜族"
+        },
+        {
+          "gloss": "Хани — народ Китая",
+          "id": "ppl-cn-hani",
+          "zh": "哈尼族"
+        },
+        {
+          "gloss": "Ли — народ Китая",
+          "id": "ppl-cn-li",
+          "zh": "黎族"
+        },
+        {
+          "gloss": "Шэ — народ Китая",
+          "id": "ppl-cn-she",
+          "zh": "畲族"
+        },
+        {
+          "gloss": "Лису — народ Китая",
+          "id": "ppl-cn-lisu",
+          "zh": "傈僳族"
+        },
+        {
+          "gloss": "Наси — народ Китая",
+          "id": "ppl-cn-naxi",
+          "zh": "纳西族"
+        },
+        {
+          "gloss": "Шуй — народ Китая",
+          "id": "ppl-cn-shui",
+          "zh": "水族"
+        },
+        {
+          "gloss": "Эвенки Китая — народ Китая",
+          "id": "ppl-cn-evenki",
+          "zh": "鄂温克族"
+        },
+        {
+          "gloss": "Орокены — народ Китая",
+          "id": "ppl-cn-oroqen",
+          "zh": "鄂伦春族"
+        },
+        {
+          "gloss": "Хэчжэ — народ Китая",
+          "id": "ppl-cn-hezhen",
+          "zh": "赫哲族"
+        },
+        {
+          "gloss": "Сибо — народ Китая",
+          "id": "ppl-cn-xibe",
+          "zh": "锡伯族"
+        }
+      ],
+      "currentAnswer": {
+        "gloss": "Маньчжуры — народ Китая",
+        "optionId": "o3",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2021-22-mun-amur-6",
+      "questionRu": "Как называется город, где в 1927 году произошло восстание коммунистов против Гоминьдана, приведшее к созданию Народно-освободительной армии КНР?",
+      "answerOptionId": "o1",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "南昌",
+          "correct": true,
+          "ru": "Наньчан — восстание началось 1 августа; эта дата стала Днём основания НОАК.",
+          "source": {
+            "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4916330.html",
+            "title": "«八一»建军节的确立 — Министерство обороны КНР",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "1927年8月1日，中国共产党领导发动了南昌起义"
+          },
+          "originalZh": "南昌市"
+        },
+        {
+          "id": "o2",
+          "zh": "武昌",
+          "correct": false,
+          "ru": "Учан — здесь 10 октября 1911 года началось восстание, открывшее Синьхайскую революцию.",
+          "source": {
+            "url": "http://jds.cssn.cn/xscg/xslw/201605/t20160506_5252664.shtml",
+            "title": "中国近代历史上的丰碑——辛亥革命 — 中国社会科学院近代史研究所（jds.cssn.cn）",
+            "verificationMethod": "existing_accepted_dossier_quote_read: data/dossiers/modern-history.json :: events/ev-xinhai sources[0]; 2026-10-18"
+          },
+          "originalZh": "武昌市"
+        },
+        {
+          "id": "o3",
+          "zh": "南京",
+          "correct": false,
+          "ru": "Нанкин — в январе 1912 года Сунь Ятсен вступил здесь в должность временного президента республики.",
+          "source": {
+            "url": "https://in.china-embassy.gov.cn/ssygd/xinhai/201110/t20111009_2357539.htm",
+            "title": "沿着复兴之路奋勇前进——纪念辛亥革命百年 — 中国驻印度使馆（gov.cn）",
+            "verificationMethod": "existing_accepted_dossier_quote_read: data/dossiers/modern-history.json :: events/ev-xinhai sources[1]; 2026-10-18"
+          },
+          "originalZh": "南京市"
+        },
+        {
+          "id": "o4",
+          "zh": "武汉",
+          "correct": false,
+          "ru": "Ухань — в 1927 году здесь работало национальное правительство Гоминьдана, переехавшее из Гуанчжоу.",
+          "source": {
+            "url": "https://www.hbdsw.org.cn/tbgz/zggcd/fjlc/202104/t20210412_173376.shtml",
+            "title": "赤都武汉——武汉成为全国革命中心 — Исследовательский отдел истории КПК провинции Хубэй",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "1927年1月1日，临时联席会议宣布国民政府正式开始在汉口办公"
+          },
+          "originalZh": "武汉市"
+        }
+      ],
+      "semanticReview": {
+        "baselineCount": 979,
+        "verdict": "no_exact_semantic_duplicate_found",
+        "neighborIds": [
+          "holidays-q21",
+          "2016-17-mun-10"
+        ],
+        "reason": "Праздник → дата и восстание → город — разные отношения. Нанкин1927 — иное событие. Прямого/обратного дубля города Наньчан в active979 нет.",
+        "method": "independent exact-answer/fact/entity keyword scan and reading relevant active979 questions; direct and reverse relation comparison"
+      },
+      "warnings": [
+        "Формулировка ретроспективно называет будущую НОАК: в1927 это начало создания коммунистических вооружённых сил; не утверждать, что современное название армии принято тогда же.",
+        "武昌市 — историческое обозначение; сейчас Учан — район Уханя. Текст исходного варианта сохранён."
+      ],
+      "reviewNumber": 2,
+      "originalQuestionRu": "Как называется город, где в 1927 году произошло восстание коммунистов против Гоминьдана, приведшее к созданию Народно-освободительной армии КНР?",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "Как называется город, где в 1927 году произошло восстание коммунистов против Гоминьдана, приведшее к созданию Народно-освободительной армии КНР?",
+      "topic": "История и государство",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "南昌市"
+        },
+        {
+          "id": "o2",
+          "zh": "武昌市"
+        },
+        {
+          "id": "o3",
+          "zh": "南京市"
+        },
+        {
+          "id": "o4",
+          "zh": "武汉市"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o1",
+        "state": "verified"
+      },
+      "proposedOptionEdits": [
+        {
+          "optionId": "o1",
+          "originalZh": "南昌市",
+          "zh": "南昌",
+          "reason": "Замечание автора: названия городов и провинций без 市/省."
+        },
+        {
+          "optionId": "o2",
+          "originalZh": "武昌市",
+          "zh": "武昌",
+          "reason": "Замечание автора: названия городов и провинций без 市/省."
+        },
+        {
+          "optionId": "o3",
+          "originalZh": "南京市",
+          "zh": "南京",
+          "reason": "Замечание автора: названия городов и провинций без 市/省."
+        },
+        {
+          "optionId": "o4",
+          "originalZh": "武汉市",
+          "zh": "武汉",
+          "reason": "Замечание автора: названия городов и провинций без 市/省."
+        }
+      ],
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2021-22-mun-tat-57",
+      "questionRu": "Какой театральный жанр называют «прародителем всех видов театра» (百戏之祖)? Это один из древнейших жанров китайской оперы: ему больше шестисот лет, он соединяет поэзию, музыку, пение, танец и драму и повлиял на множество других жанров.",
+      "answerOptionId": "o2",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "京剧",
+          "correct": false,
+          "ru": "Пекинская опера (цзинцзюй) — сочетает пение, речитатив, актёрскую игру и боевые приёмы",
+          "source": {
+            "title": "Peking opera — UNESCO Intangible Cultural Heritage",
+            "url": "https://ich.unesco.org/en/RL/peking-opera-00418",
+            "quote": "Inscribed in 2010 ( 5.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … Peking opera is a performance art incorporating singing, reciting, acting, martial arts.",
+            "checkedAt": "2026-10-23",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки landmarks/intangible/int-jingju; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "昆曲",
+          "correct": true,
+          "ru": "Куньцюй — одна из древнейших форм китайской оперы, возникшая в Куньшане",
+          "source": {
+            "title": "Kun Qu opera — UNESCO Intangible Cultural Heritage",
+            "url": "https://ich.unesco.org/en/RL/kun-qu-opera-00004",
+            "quote": "Inscribed in 2008 ( 3.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … Kun Qu Opera developed under the Ming dynasty (fourteenth to seventeenth centuries) in the city of Kunshan, situated in the region of Suzhou in southeast China.",
+            "checkedAt": "2026-10-23",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки landmarks/intangible/int-kunqu; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "豫剧",
+          "correct": false,
+          "ru": "Юйцзюй — хэнаньская опера жанра «банцзы»",
+          "source": {
+            "title": "豫剧 — 国家级非物质文化遗产代表性项目名录 — 中国非物质文化遗产网",
+            "url": "https://www.ihchina.cn/project_details/13186",
+            "quote": "豫剧也叫河南梆子、河南高调、河南讴，豫西山区则称之为靠山吼。 … 豫剧 项目序号：167 项目编号：Ⅳ-23 公布时间：2006(第一批) 类别：传统戏剧",
+            "checkedAt": "2026-10-23",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки landmarks/intangible/int-yuju; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "粤剧",
+          "correct": false,
+          "ru": "Юэцзюй — кантонская опера Гуандуна и Гуанси",
+          "source": {
+            "title": "Yueju opera — UNESCO Intangible Cultural Heritage",
+            "url": "https://ich.unesco.org/en/RL/yueju-opera-00203",
+            "quote": "Inscribed in 2009 ( 4.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … The Chinese tradition of Yueju opera combines Mandarin operatic traditions and Cantonese dialect.",
+            "checkedAt": "2026-10-23",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки landmarks/intangible/int-yueju-guangdong; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        }
+      ],
+      "warnings": [
+        "У Пекинской оперы оценочное «самый известный вид» заменено подтверждёнными четырьмя средствами актёра. Куньшань в подписи правильного варианта добавляет факт сверх вопроса."
+      ],
+      "proposedActions": [],
+      "reviewNumber": 3,
+      "originalQuestionRu": "Какой театральный жанр называют «прародителем всех видов театра» (百戏之祖)? Это один из древнейших жанров китайской оперы: ему больше шестисот лет, он соединяет поэзию, музыку, пение, танец и драму и повлиял на множество других жанров.",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "Какой театральный жанр называют «прародителем всех видов театра» (百戏之祖)? Это один из древнейших жанров китайской оперы: ему больше шестисот лет, он соединяет поэзию, музыку, пение, танец и драму и повлиял на множество других жанров.",
+      "topic": "Литература, язык, искусство и философия",
+      "currentOptionPool": [
+        {
+          "gloss": "Пекинская опера (цзинцзюй) — самый известный вид китайской музыкальной драмы",
+          "id": "o1",
+          "zh": "京剧"
+        },
+        {
+          "id": "o2",
+          "zh": "昆曲"
+        },
+        {
+          "gloss": "Юйцзюй — хэнаньская опера жанра «банцзы»",
+          "id": "o3",
+          "zh": "豫剧"
+        },
+        {
+          "gloss": "Юэцзюй — кантонская опера Гуандуна и Гуанси",
+          "id": "o4",
+          "zh": "粤剧"
+        },
+        {
+          "gloss": "Юэцзюй — чжэцзянская опера, которую исполняют женщины",
+          "id": "int-yueju-zhejiang",
+          "zh": "越剧"
+        },
+        {
+          "gloss": "Хуанмэйси — аньхойская опера, выросшая из чайных песен Хуанмэя",
+          "id": "int-huangmeixi",
+          "zh": "黄梅戏"
+        }
+      ],
+      "currentAnswer": {
+        "gloss": "Куньцюй — одна из древнейших форм китайской оперы, возникшая в Куньшане",
+        "optionId": "o2",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2025-26-mun-irk-7",
+      "questionRu": "Что означает буква \"G\" на билетах на поезд в Китае?",
+      "answerOptionId": "o1",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "高速动车",
+          "correct": true,
+          "ru": "Высокоскоростной электропоезд — в таких составах обычно есть места первого и второго классов.",
+          "source": {
+            "url": "https://www.nra.gov.cn/ztzl/hy/kjcx/kpdd/201605/t20160526_145850.shtml",
+            "title": "高速动车组座席编排 — Государственное управление железных дорог КНР",
+            "verificationMethod": "official_search_extract_read_2026-11-07; full-page open hit redirect loop; extract directly supports seating fact",
+            "quote": "在一列高速动车组内一般都编挂有一等座车和二等座车"
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "普通动车",
+          "correct": false,
+          "ru": "Обычный электропоезд — такие составы бывают и спальными, например CRH1E.",
+          "source": {
+            "url": "https://www.nra.gov.cn/jglz/fgzd/gfwj/zt/qt/202204/P020220406007607663293.pdf",
+            "title": "和谐1A/1B/1E型动车组四级检修规程 — Государственное управление железных дорог КНР",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "CRH1E为16编组卧车。"
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "特快列车",
+          "correct": false,
+          "ru": "Поезд-экспресс — традиционный пассажирский состав с отдельным локомотивом.",
+          "source": {
+            "url": "https://www.bjcc.gov.cn/article/600535944.html",
+            "title": "火车、动车以及高铁的区别 — 北京党员教育 / 科普中国",
+            "verificationMethod": "official_educational_page_read_2026-11-07; article classifies 特快 among ordinary locomotive-hauled trains; prefix/speed claims deliberately not reused",
+            "quote": "而普通火车，是传统的靠车头拉车厢，只有车头有动力。"
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "城际列车",
+          "correct": false,
+          "ru": "Междугородный поезд — рассчитан на короткие и средние маршруты между городами или пригородами.",
+          "source": {
+            "url": "https://www.bjcc.gov.cn/article/600490390.html",
+            "title": "动车组分类科普 — 北京党员教育",
+            "verificationMethod": "official_search_extract_read_2026-11-07; full-page open timed out; route description is explicit in extract, no prefix in draft gloss",
+            "quote": "城际动车组列车简称“C字头列车”，是专用于中短途城市或城郊之间列车"
+          }
+        }
+      ],
+      "semanticReview": {
+        "baselineCount": 979,
+        "verdict": "no_exact_semantic_duplicate_found",
+        "neighborIds": [
+          "2021-22-zak-q4bfeed"
+        ],
+        "reason": "Название поезда Фусин по описанию скорости/маршрута отличается от значения буквенного индекса G.",
+        "method": "independent exact-answer/fact/entity keyword scan and reading relevant active979 questions; direct and reverse relation comparison"
+      },
+      "warnings": [
+        "Официальная реформа индексов уже объявлена: с25ноября2026 меняются обычные поезда, с конца декабря — скоростные/моторвагонные/междугородные. G сохраняет связь со скоростными поездами; нельзя закреплять T=特快 и D=普通动车 как вечное современное правило. Поэтому в отвлекающих подписях нет этих индексов.",
+        "Источники реформы: https://kyfw.12306.cn/mormhweb/zxdt/202611/t20261105_46591.html ; https://kfqgw.beijing.gov.cn/zmhdkfq/hygq/202610/t20261019_4909292.html",
+        "У G подпись добавляет пассажирские классы, а не повторяет значение буквы. Для D факт о спальных составах подтверждён конкретной моделью; не обобщать на каждый рейс."
+      ],
+      "reviewNumber": 4,
+      "originalQuestionRu": "Что означает буква \"G\" на билетах на поезд в Китае?",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "Что означает буква \"G\" на билетах на поезд в Китае?",
+      "topic": "Экономика, образование, наука и спорт",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "高速动车"
+        },
+        {
+          "id": "o2",
+          "zh": "普通动车"
+        },
+        {
+          "id": "o3",
+          "zh": "特快列车"
+        },
+        {
+          "id": "o4",
+          "zh": "城际列车"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o1",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2023-24-shk-mosobl-12",
+      "questionRu": "В честь какого китайского писателя учреждена одна из самых главных литературных премий в Китае?",
+      "answerOptionId": "o3",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "杜甫",
+          "correct": false,
+          "ru": "Ду Фу — поэт эпохи Тан, прозванный «мудрецом поэзии»",
+          "source": {
+            "title": "2011高考语文资料：中国古代著名人物及作品 — 中国广播网",
+            "url": "http://edu.cnr.cn/xbgk/ywfd/201012/t20101227_507506073_1.html",
+            "quote": "杜甫：字子美，自称少陵野老，曾任左拾遗、检校工部员外郎，世称杜工部。与李白齐名，人称“诗圣”，唐代三大诗人之一。主要作品有《望岳》《春望》",
+            "checkedAt": "2026-10-17",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки literature/authors/lit-a-dufu; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "莫言",
+          "correct": false,
+          "ru": "Мо Янь — лауреат Нобелевской премии 2012 г., автор «Красного гаоляна»",
+          "source": {
+            "title": "Mo Yan – Facts, NobelPrize.org",
+            "url": "https://www.nobelprize.org/prizes/literature/2012/yan/facts/",
+            "quote": "He published his first novel in 1981 and went on to achieve his international breakthrough with the novel Hong gaoliang jiazu (Red Sorghum), which was later adapted for film.",
+            "checkedAt": "2026-10-17",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки literature/authors/lit-a-moyan; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "茅盾",
+          "correct": true,
+          "ru": "Мао Дунь — автор романа «Полночь» и повести «Весенние шелкопряды»",
+          "source": {
+            "title": "茅盾的青春曲：文学与政治双重奏 — 中国社会科学网",
+            "url": "https://www.cssn.cn/mkszy/mkszy_mkszyfzs/202302/t20230207_5586507.shtml",
+            "quote": "茅盾创造了《子夜》、《春蚕》和文学评论《夜读偶记》等代表作，为革新中国文艺发展立下了不朽的功勋。1981年3月14日，茅盾在弥留之际，把自己的全部稿费25万元人民币捐出设立茅盾文学奖，旨在鼓舞长篇小说作者继续创作。",
+            "checkedAt": "2026-10-17",
+            "authority": "academic",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки literature/authors/lit-a-maodun; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "李白",
+          "correct": false,
+          "ru": "Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»",
+          "source": {
+            "title": "历史名人 李白 — 金乡县人民政府",
+            "url": "http://www.jinxiang.gov.cn/art/2025/4/23/art_18110_725579.html",
+            "quote": "李白 （701-762）。字太白，号青莲居士。唐浪漫主义诗人，被后人尊称“诗仙”。",
+            "checkedAt": "2026-10-17",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки literature/authors/lit-a-libai; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита.",
+            "supportingSources": [
+              {
+                "title": "李白《静夜思》的文本奥秘 — 中国作家网",
+                "url": "http://www.chinawriter.com.cn/n1/2020/1116/c404064-31932366.html",
+                "quote": "李白的《静夜思》脍炙人口",
+                "checkedAt": "2026-10-17",
+                "authority": "academic"
+              }
+            ]
+          }
+        }
+      ],
+      "warnings": [
+        "В текущем банке 35 вариантов из общей колонки авторов. Широкая формулировка допускает другие именные литературные премии; безопасный предпросмотр использует только исходные o1–o4. Нынешний пул не изменён.",
+        "Существующая подпись Мао Дуня повторяет факт о премии из вопроса; предложена справка о двух его произведениях."
+      ],
+      "proposedActions": [
+        "Отдельно согласовать ограничение будущего пула четырьмя исходными вариантами 杜甫 / 莫言 / 茅盾 / 李白, сохранив нынешнюю полную формулировку и ключ o3. До такого ограничения не включать вопрос в публикацию.",
+        "Принять новую подпись Мао Дуня только после решения автора; данных досье не менять автоматически."
+      ],
+      "reviewNumber": 5,
+      "originalQuestionRu": "В честь какого китайского писателя учреждена одна из самых главных литературных премий в Китае?",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "В честь какого китайского писателя учреждена одна из самых главных литературных премий в Китае?",
+      "topic": "Литература, язык, искусство и философия",
+      "currentOptionPool": [
+        {
+          "gloss": "Ду Фу — поэт эпохи Тан, прозванный «мудрецом поэзии»",
+          "id": "o1",
+          "zh": "杜甫"
+        },
+        {
+          "gloss": "Мо Янь — лауреат Нобелевской премии 2012 г., автор «Красного гаоляна»",
+          "id": "o2",
+          "zh": "莫言"
+        },
+        {
+          "id": "o3",
+          "zh": "茅盾"
+        },
+        {
+          "gloss": "Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»",
+          "id": "o4",
+          "zh": "李白"
+        },
+        {
+          "gloss": "Цюй Юань — поэт царства Чу, автор «Лисао»",
+          "id": "lit-a-quyuan",
+          "zh": "屈原"
+        },
+        {
+          "gloss": "Сыма Цянь — историк Западной Хань, автор «Исторических записок»",
+          "id": "lit-a-simaqian",
+          "zh": "司马迁"
+        },
+        {
+          "gloss": "Цао Цао — правитель и поэт конца Восточной Хань, автор «Короткой песни»",
+          "id": "lit-a-caocao",
+          "zh": "曹操"
+        },
+        {
+          "gloss": "Тао Юаньмин — поэт Цзинь, певец сельской жизни и отшельничества",
+          "id": "lit-a-taoyuanming",
+          "zh": "陶渊明"
+        },
+        {
+          "gloss": "Бо Цзюйи — поэт эпохи Тан, автор «Песни о лютнистке»",
+          "id": "lit-a-baijuyi",
+          "zh": "白居易"
+        },
+        {
+          "gloss": "Ван Вэй — поэт и художник эпохи Тан, мастер пейзажной лирики",
+          "id": "lit-a-wangwei",
+          "zh": "王维"
+        },
+        {
+          "gloss": "Ли Хэ — поэт эпохи Тан, умерший молодым, мастер причудливых образов",
+          "id": "lit-a-lihe",
+          "zh": "李贺"
+        },
+        {
+          "gloss": "Лю Юйси — поэт и мыслитель эпохи Тан, друг Бо Цзюйи",
+          "id": "lit-a-liuyuxi",
+          "zh": "刘禹锡"
+        },
+        {
+          "gloss": "Мэн Хаожань — поэт эпохи Тан, пейзажная лирика, пара «Ван и Мэн»",
+          "id": "lit-a-menghaoran",
+          "zh": "孟浩然"
+        },
+        {
+          "gloss": "Лю Цзунъюань — прозаик и поэт Тан, участник движения за «древнюю прозу»",
+          "id": "lit-a-liuzongyuan",
+          "zh": "柳宗元"
+        },
+        {
+          "gloss": "Хань Юй — прозаик Тан, вождь движения за «древнюю прозу»",
+          "id": "lit-a-hanyu",
+          "zh": "韩愈"
+        },
+        {
+          "gloss": "Су Ши (Су Дунпо) — поэт Сун, мастер цы, прозы и каллиграфии",
+          "id": "lit-a-sushi",
+          "zh": "苏轼"
+        },
+        {
+          "gloss": "Ли Цинчжао — поэтесса Сун, мастер цы",
+          "id": "lit-a-liqingzhao",
+          "zh": "李清照"
+        },
+        {
+          "gloss": "Синь Цицзи — поэт и военачальник Южной Сун, мастер цы",
+          "id": "lit-a-xinqiji",
+          "zh": "辛弃疾"
+        },
+        {
+          "gloss": "Гуань Ханьцин — драматург Юань, автор цзацзюй «Обида Доу Э»",
+          "id": "lit-a-guanhanqing",
+          "zh": "关汉卿"
+        },
+        {
+          "gloss": "Тан Сяньцзу — драматург Мин, автор «Пионовой беседки»",
+          "id": "lit-a-tangxianzu",
+          "zh": "汤显祖"
+        },
+        {
+          "gloss": "Ло Гуаньчжун — автор романа «Троецарствие»",
+          "id": "lit-a-luoguanzhong",
+          "zh": "罗贯中"
+        },
+        {
+          "gloss": "Ши Найань — по традиции автор романа «Речные заводи»",
+          "id": "lit-a-shinaian",
+          "zh": "施耐庵"
+        },
+        {
+          "gloss": "У Чэнъэнь — по традиции автор романа «Путешествие на Запад»",
+          "id": "lit-a-wuchengen",
+          "zh": "吴承恩"
+        },
+        {
+          "gloss": "Цао Сюэцинь — автор романа «Сон в красном тереме»",
+          "id": "lit-a-caoxueqin",
+          "zh": "曹雪芹"
+        },
+        {
+          "gloss": "Пу Сунлин — автор «Рассказов Ляо Чжая о необычайном»",
+          "id": "lit-a-pusongling",
+          "zh": "蒲松龄"
+        },
+        {
+          "gloss": "Оуян Сю — писатель Северной Сун, автор «Записок о беседке Пьяного старца»",
+          "id": "lit-a-ouyangxiu",
+          "zh": "欧阳修"
+        },
+        {
+          "gloss": "Лу Ю — поэт Южной Сун, автор около 9000 стихотворений",
+          "id": "lit-a-luyou",
+          "zh": "陆游"
+        },
+        {
+          "gloss": "У Цзинцзы — автор сатирического романа «Неофициальная история конфуцианцев»",
+          "id": "lit-a-wujingzi",
+          "zh": "吴敬梓"
+        },
+        {
+          "gloss": "Ба Цзинь — автор романа «Семья» из трилогии «Бурный поток»",
+          "id": "lit-a-bajin",
+          "zh": "巴金"
+        },
+        {
+          "gloss": "Го Можо — поэт («Богини»), историк, президент Академии наук КНР",
+          "id": "lit-a-guomoruo",
+          "zh": "郭沫若"
+        },
+        {
+          "gloss": "Шэнь Цунвэнь — автор повести «Пограничный город»",
+          "id": "lit-a-shencongwen",
+          "zh": "沈从文"
+        },
+        {
+          "gloss": "Цянь Чжуншу — автор романа «Осаждённая крепость»",
+          "id": "lit-a-qianzhongshu",
+          "zh": "钱钟书"
+        },
+        {
+          "gloss": "Юй Хуа — автор романа «Жить» и «Сюй Саньгуань продаёт кровь»",
+          "id": "lit-a-yuhua",
+          "zh": "余华"
+        },
+        {
+          "gloss": "Чэнь Чжунши — автор романа «Байлуюань»",
+          "id": "lit-a-chenzhongshi",
+          "zh": "陈忠实"
+        },
+        {
+          "gloss": "Ван Шифу — драматург Юань, автор «Западного флигеля»",
+          "id": "lit-a-wangshifu",
+          "zh": "王实甫"
+        }
+      ],
+      "currentAnswer": {
+        "gloss": "Мао Дунь — автор романа «Полночь»; его именем названа премия",
+        "optionId": "o3",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2025-26-mun-mosobl-2",
+      "questionRu": "В каком городе располагался самый первый автомобильный завод КНР?",
+      "answerOptionId": "o4",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "深圳",
+          "correct": false,
+          "ru": "Шэньчжэнь — в районе Пиншань находится штаб-квартира автопроизводителя BYD.",
+          "source": {
+            "url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_12724900.html",
+            "title": "国际经贸考察团探访深圳坪山 — Правительство Шэньчжэня",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "考察团首先来到位于坪山的比亚迪全球总部展厅"
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "西安",
+          "correct": false,
+          "ru": "Сиань — в его районе Яньлян развито авиастроение: выпускают самолёты и авиационные детали.",
+          "source": {
+            "url": "https://caib.xa.gov.cn/zsyz/tzzn/2066773067503251458.html",
+            "title": "西安航空基地综合保税区简介 — Администрация Сианьской авиационной промышленной базы",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "形成了集飞机整机制造、零部件生产、航空新材料研发等为一体的完整产业链。"
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "哈尔滨",
+          "correct": false,
+          "ru": "Харбин — один из центров авиастроения; предприятие «Хафэй» выпускает вертолёты.",
+          "source": {
+            "url": "https://www.hlj.gov.cn/hlj/cycx/202606/c00_31952231.shtml",
+            "title": "哈尔滨：聚力聚链聚势 做强航空航天产业集群 — Правительство Хэйлунцзяна",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "AC332直升机在宁蒗泸沽湖机场试飞。图片由航空工业哈飞提供"
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "长春",
+          "correct": true,
+          "ru": "Чанчунь — в 1956 году здесь выпустили первые грузовики «Цзефан» (解放).",
+          "source": {
+            "url": "https://dfz.jl.gov.cn/zsjl/201303/t20130328_5216055.html",
+            "title": "中国第一辆解放牌汽车 — Комиссия местной истории провинции Цзилинь",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "1956年7月13日，新中国第一批解放牌汽车在长春第一汽车制造厂试制成功。"
+          }
+        }
+      ],
+      "semanticReview": {
+        "baselineCount": 979,
+        "verdict": "no_exact_semantic_duplicate_found",
+        "neighborIds": [
+          "landmarks-q10"
+        ],
+        "reason": "Дворец Пу И → Чанчунь и автозавод → Чанчунь — разные объекты, совпадение города не дубль.",
+        "method": "independent exact-answer/fact/entity keyword scan and reading relevant active979 questions; direct and reverse relation comparison"
+      },
+      "warnings": [
+        "Сфера вопроса — первый автозавод именно КНР, не любая попытка сборки автомобиля в Китае до1949. Ключ и исходный текст сохранены."
+      ],
+      "reviewNumber": 6,
+      "originalQuestionRu": "В каком городе располагался самый первый автомобильный завод КНР?",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "В каком городе располагался самый первый автомобильный завод КНР?",
+      "topic": "Экономика, образование, наука и спорт",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "深圳"
+        },
+        {
+          "id": "o2",
+          "zh": "西安"
+        },
+        {
+          "id": "o3",
+          "zh": "哈尔滨"
+        },
+        {
+          "id": "o4",
+          "zh": "长春"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o4",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2025-26-mun-perm-2",
+      "questionRu": "Этот известный китайский философ, живший в период Сражающихся царств, отстаивал идею о том, что человеческая природа изначально зла, и для поддержания порядка в обществе необходимы строгие ритуалы и законы. Его учение оказало глубокое влияние на легистскую мысль и государственное устройство империи Цинь. Кто этот философ?",
+      "answerOptionId": "o3",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "庄子",
+          "correct": false,
+          "ru": "Чжуан-цзы — даосский философ эпохи Сражающихся царств; его сочинения вошли в одноимённую книгу",
+          "source": {
+            "title": "庄子 — 中国关键词",
+            "url": "http://keywords.china.org.cn/2024-08/28/content_117392957.html",
+            "quote": "庄子（约前369—前286），战国中期著名哲学家、文学家，道家学派代表人物，与老子并称“老庄”。庄子崇尚自由，曾担任管理漆树园的小吏，后来辞官过着隐居生活。庄子最早提出“内圣外王”思想，其代表作收录于《庄子》。",
+            "authority": "official",
+            "checkedAt": "2026-10-23",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки people/thinkers/th-zhuangzi; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "孟子",
+          "correct": false,
+          "ru": "Мэн-цзы — конфуцианский мыслитель, отстаивавший изначальную доброту человеческой природы",
+          "source": {
+            "title": "荀子的“性恶论” — 人民日报海外版",
+            "url": "http://paper.people.com.cn/fcyym/html/2023-05/12/content_25984232.htm",
+            "quote": "虽然孔子、孟子和荀子都是儒家的代表人物，都推崇“仁”和“民本”思想，但他们还是有一些不同的观点。尤其是在人性论上，孔子认为“性相近”，孟子主张“性善论”，而荀子则坚持“性恶论”，与孟子的看法截然相反。",
+            "authority": "official",
+            "checkedAt": "2026-10-24",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки people/thinkers/th-xunzi; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "荀子",
+          "correct": true,
+          "ru": "Сюнь-цзы — конфуцианский мыслитель; у него учился будущий теоретик легизма Хань Фэй",
+          "source": {
+            "title": "中国古代著名思想家、法家代表人物韩非子 — 中国驻委内瑞拉使馆",
+            "url": "https://ve.china-embassy.gov.cn/chn/zwgx/whjl/qian561/200510/t20051031_4787096.htm",
+            "quote": "韩非子（约前281年-前233年），生活于战国末期，为中国古代著名思想家法家的代表人物。韩非(约前280-前233)是韩国的贵族，\"喜刑名法术之学\"，后世称他为韩非子。他和李斯都是荀子的弟子。",
+            "authority": "official",
+            "checkedAt": "2026-10-24",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки people/thinkers/th-hanfeizi; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита.",
+            "supportingSources": [
+              {
+                "title": "【专栏】《荀子》：以“礼”为中心的思想世界 — 中国社会科学网",
+                "url": "https://www.cssn.cn/zx/zgzx/202603/t20260331_5978865.shtml",
+                "quote": "荀子（生卒年有争议），名况，字卿，时称荀卿，战国晚期赵国思想家，被誉为“先秦儒家最后一位大师”。",
+                "authority": "academic",
+                "checkedAt": "2026-10-24"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "韩非",
+          "correct": false,
+          "ru": "Хань Фэй — выходец из знати княжества Хань, легист, ученик Сюнь-цзы",
+          "source": {
+            "title": "中国古代著名思想家、法家代表人物韩非子 — 中国驻委内瑞拉使馆",
+            "url": "https://ve.china-embassy.gov.cn/chn/zwgx/whjl/qian561/200510/t20051031_4787096.htm",
+            "quote": "韩非子（约前281年-前233年），生活于战国末期，为中国古代著名思想家法家的代表人物。韩非(约前280-前233)是韩国的贵族，\"喜刑名法术之学\"，后世称他为韩非子。他和李斯都是荀子的弟子。",
+            "authority": "official",
+            "checkedAt": "2026-10-24",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки people/thinkers/th-hanfeizi; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        }
+      ],
+      "warnings": [
+        "Готовая подпись Сюнь-цзы повторяла тезис о злой природе из вопроса; предложены его конфуцианская принадлежность и ученичество Хань Фэя. 韩非 оставлено дословно, без замены на 韩非子."
+      ],
+      "proposedActions": [],
+      "reviewNumber": 7,
+      "originalQuestionRu": "Этот известный китайский философ, живший в период Сражающихся царств, отстаивал идею о том, что человеческая природа изначально зла, и для поддержания порядка в обществе необходимы строгие ритуалы и законы. Его учение оказало глубокое влияние на легистскую мысль и государственное устройство империи Цинь. Кто этот философ?",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "Этот известный китайский философ, живший в период Сражающихся царств, отстаивал идею о том, что человеческая природа изначально зла, и для поддержания порядка в обществе необходимы строгие ритуалы и законы. Его учение оказало глубокое влияние на легистскую мысль и государственное устройство империи Цинь. Кто этот философ?",
+      "topic": "Литература, язык, искусство и философия",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "庄子"
+        },
+        {
+          "id": "o2",
+          "zh": "孟子"
+        },
+        {
+          "id": "o3",
+          "zh": "荀子"
+        },
+        {
+          "id": "o4",
+          "zh": "韩非"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o3",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2023-24-shk-mosobl-4",
+      "questionRu": "Кто из русских композиторов был химиком по образованию?",
+      "answerOptionId": "o2",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "格林卡",
+          "correct": false,
+          "ru": "Михаил Глинка — учился в Благородном пансионе, параллельно брал частные уроки музыки.",
+          "source": {
+            "url": "https://www.culture.ru/persons/8279/mikhail-glinka",
+            "title": "Михаил Глинка — Культура.РФ",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "Занятия в пансионе Михаил Глинка совмещал с частными уроками музыки."
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "鲍罗丁",
+          "correct": true,
+          "ru": "Александр Бородин — с 1864 года возглавлял кафедру химии Медико-хирургической академии.",
+          "source": {
+            "url": "https://www.vmeda.org/wp-content/uploads/2024/12/ds-02-28-2024.pdf",
+            "title": "Кафедра химии — Военно-медицинская академия имени С. М. Кирова",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "В связи с выходом Зинина Н.Н. в отставку в 1864 г. руководителем кафедры становится его ученик Бородин Александр Порфирьевич"
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "哈恰图良",
+          "correct": false,
+          "ru": "Арам Хачатурян — учился игре на виолончели в техникуме Гнесиных, затем композиции в Московской консерватории.",
+          "source": {
+            "url": "https://www.mosconsv.ru/ru/person/45795",
+            "title": "Арам Хачатурян — Московская консерватория",
+            "verificationMethod": "web_primary_source_read_2026-11-07"
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "柴可夫斯基",
+          "correct": false,
+          "ru": "Пётр Чайковский — окончил Училище правоведения и до музыкальной карьеры служил в Министерстве юстиции.",
+          "source": {
+            "url": "https://www.mosconsv.ru/ru/Person/122234",
+            "title": "Пётр Чайковский — Московская консерватория",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "окончил Училище правоведения в Петербурге и в чине титулярного советника был определен на службу в Министерство юстиции"
+          }
+        }
+      ],
+      "semanticReview": {
+        "baselineCount": 979,
+        "verdict": "no_exact_semantic_duplicate_found",
+        "neighborIds": [
+          "addition-b1-20",
+          "2024-25-reg-3"
+        ],
+        "reason": "Глинка/автор оперы и Кутузов/Бородинское сражение — другие отношения; профессия Бородина в active979 не спрашивается.",
+        "method": "independent exact-answer/fact/entity keyword scan and reading relevant active979 questions; direct and reverse relation comparison"
+      },
+      "warnings": [
+        "«Русских композиторов» в исходном вопросе включает армянского советского композитора Хачатуряна; пометить автору, не исправлять молча.",
+        "Бородин окончил Медико-хирургическую академию и был врачом, затем профессиональным химиком; «химик по образованию» — огрублённая формулировка. Верная подпись даёт точный факт о кафедре вместо повторения этой формулы."
+      ],
+      "reviewNumber": 8,
+      "originalQuestionRu": "Кто из русских композиторов был химиком по образованию?",
+      "proposedStemEdit": {
+        "questionRu": "Кто из перечисленных композиторов был также учёным-химиком?",
+        "reason": "Убрать неточность «русских» при армянском композиторе Хачатуряне и смешение медицинского образования Бородина с его химической научной работой. Сохраняется опознание композитора-химика."
+      },
+      "previewQuestionRu": "Кто из перечисленных композиторов был также учёным-химиком?",
+      "topic": "Россия и межкультурный блок",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "格林卡"
+        },
+        {
+          "id": "o2",
+          "zh": "鲍罗丁"
+        },
+        {
+          "id": "o3",
+          "zh": "哈恰图良"
+        },
+        {
+          "id": "o4",
+          "zh": "柴可夫斯基"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o2",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2025-26-mun-kursk-10",
+      "questionRu": "К какому литературному жанру относится «Задача трёх тел» (三体) Лю Цысиня?",
+      "answerOptionId": "o3",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "爱情小说",
+          "correct": false,
+          "ru": "Любовный роман — произведение, в центре которого любовные отношения героев",
+          "source": {
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=155042&la=0&powerMode=0",
+            "title": "言情小說 — 教育部《重編國語辭典修訂本》",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "以男女情愛為主要描寫內容的小說。"
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "恐怖小说",
+          "correct": false,
+          "ru": "Роман ужасов — произведение со страшными событиями, например появлениями призраков или историями о зловещих домах",
+          "source": {
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=79044&la=0&powerMode=0",
+            "title": "恐怖小說 — 教育部《重編國語辭典修訂本》",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "充滿恐怖、鬼魂、凶宅等離奇神怪之事。"
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "科幻小说",
+          "correct": true,
+          "ru": "Научная фантастика — проза, в которой научные знания и технические идеи служат основой вымышленных событий",
+          "source": {
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=76013&la=0&powerMode=0",
+            "title": "科幻小說 — 教育部《重編國語辭典修訂本》",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "以現有的科技資料作根據，對未來世界或過去情景作幻想式的描述。"
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "历史小说",
+          "correct": false,
+          "ru": "Исторический роман — художественное произведение, основанное на событиях прошлого",
+          "source": {
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=62638&q=1&word=%E5%8F%B2",
+            "title": "歷史小說 — 教育部《重編國語辭典修訂本》",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "以歷史故事為題材的小說。"
+          }
+        }
+      ],
+      "warnings": [],
+      "proposedActions": [],
+      "reviewNumber": 9,
+      "originalQuestionRu": "К какому литературному жанру относится «Задача трёх тел» (三体) Лю Цысиня?",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "К какому литературному жанру относится «Задача трёх тел» (三体) Лю Цысиня?",
+      "topic": "Литература, язык, искусство и философия",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "爱情小说"
+        },
+        {
+          "id": "o2",
+          "zh": "恐怖小说"
+        },
+        {
+          "id": "o3",
+          "zh": "科幻小说"
+        },
+        {
+          "id": "o4",
+          "zh": "历史小说"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o3",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2025-26-shk-mosobl-7",
+      "questionRu": "Какой император в китайской конфуцианской традиции считается эталонным совершенномудрым государем?",
+      "answerOptionId": "o3",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "伏羲",
+          "correct": false,
+          "ru": "Фуси — легендарный первопредок, которому приписывают создание восьми триграмм.",
+          "source": {
+            "url": "https://news.gmw.cn/2024-12/16/content_37738856.htm",
+            "title": "伏羲文化与中华文明起源研究 — 光明网（光明日报）",
+            "verificationMethod": "existing_accepted_dossier_quote_read: data/dossiers/myths.json :: figures/fig-fuxi sources[0]; 2026-10-15"
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "黄帝",
+          "correct": false,
+          "ru": "Хуанди — Жёлтый император; по преданию, победил Чию в битве при Чжолу.",
+          "source": {
+            "url": "https://news.gmw.cn/2022-05/07/content_35714876.htm",
+            "title": "如何看待黄帝与蚩尤的关系 — 光明网（光明日报）",
+            "verificationMethod": "existing_accepted_dossier_quote_read: data/dossiers/myths.json :: figures/fig-huangdi sources[1]; 2026-10-15"
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "唐尧",
+          "correct": true,
+          "ru": "Яо — по преданию, передал престол достойному Шуню после испытаний.",
+          "source": {
+            "url": "http://lishisuo.cssn.cn/xsyj/gdwhs/202001/t20200116_5078734.shtml",
+            "title": "中国通史（范文澜、蔡美彪）·关于尧、舜、禹的传说 — 中国社会科学院历史研究所",
+            "verificationMethod": "existing_accepted_dossier_quote_read: data/dossiers/myths.json :: figures/fig-yao sources[1]; 2026-10-15"
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "秦始皇",
+          "correct": false,
+          "ru": "Цинь Шихуан — после объединения Китая ввёл единые письменность, денежную систему и меры.",
+          "source": {
+            "url": "https://www.chnmuseum.cn/portals/0/web/zt/gudai/detail4.html",
+            "title": "古代中国：秦汉时期 — 中国国家博物馆",
+            "verificationMethod": "existing_accepted_dossier_quote_read: data/dossiers/dynasties.json :: rulers/rul-qinshihuang sources[0]; 2026-10-16"
+          }
+        }
+      ],
+      "semanticReview": {
+        "baselineCount": 979,
+        "verdict": "no_exact_semantic_duplicate_found",
+        "neighborIds": [
+          "2020-21-zak-q2c2d90",
+          "2023-24-reg-5"
+        ],
+        "reason": "Хуанди/имя-первопредок и Фуси/письменность — другие персонажи/отношения; вопроса о Яо как мудром государе в active979 не найдено.",
+        "method": "independent exact-answer/fact/entity keyword scan and reading relevant active979 questions; direct and reverse relation comparison"
+      },
+      "warnings": [
+        "Яо — легендарный правитель, не исторически подтверждённый император; «совершенномудрый государь» не уникальный официальный титул. Среди традиционных образцов есть также Шунь. Автору отдельно оценить широту исходной формулировки; подписи не доказывают абсолютную исключительность Яо.",
+        "唐尧 означает Яо/Тан Яо и не относится к династии Тан618–907."
+      ],
+      "reviewNumber": 10,
+      "originalQuestionRu": "Какой император в китайской конфуцианской традиции считается эталонным совершенномудрым государем?",
+      "proposedStemEdit": {
+        "questionRu": "Какой правитель в китайской конфуцианской традиции считается эталонным совершенномудрым государем?",
+        "reason": "Яо — легендарный правитель; слово «император» создаёт впечатление исторически подтверждённого титула. Вопрос по-прежнему об образце мудрого государя."
+      },
+      "previewQuestionRu": "Какой правитель в китайской конфуцианской традиции считается эталонным совершенномудрым государем?",
+      "topic": "История и государство",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "伏羲"
+        },
+        {
+          "id": "o2",
+          "zh": "黄帝"
+        },
+        {
+          "id": "o3",
+          "zh": "唐尧"
+        },
+        {
+          "id": "o4",
+          "zh": "秦始皇"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o3",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2024-25-shk-mosobl-1",
+      "questionRu": "Как назывался официальный язык в Китайской республике?",
+      "answerOptionId": "o2",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "普通话",
+          "correct": false,
+          "ru": "Путунхуа — название общенационального языкового стандарта КНР, чьи нормы официально определены в 1956 году.",
+          "source": {
+            "url": "https://www.moe.gov.cn/s78/A18/s8357/moe_808/tnull_14054.html",
+            "title": "新中国初期语言文字工作重要大事 — Министерство образования КНР",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "2月6日，国务院发出《关于推广普通话的指示》"
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "国语",
+          "correct": true,
+          "ru": "Гоюй — его стандарт произношения закрепил выпущенный в 1932 году словарь «Гоинь чанъюн цзыхуэй».",
+          "source": {
+            "url": "https://www.moe.gov.cn/jyb_xwfb/xw_fbh/moe_2069/s7135/s7562/s7569/201308/t20130827_156355.html",
+            "title": "近百年来汉字的简化与规范 — Министерство образования КНР",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "1932年民国政府教育部颁布《国音常用字汇》"
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "中文",
+          "correct": false,
+          "ru": "Чжунвэнь — общее обозначение китайского языка и письменности; близкое название — хуавэнь (华文).",
+          "source": {
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=83701&la=0&powerMode=0",
+            "title": "華文 — 教育部《重編國語辭典修訂本》",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "中國的語言文字。"
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "汉语",
+          "correct": false,
+          "ru": "Ханьюй — язык ханьцев, включающий разные диалекты, например у и юэ.",
+          "source": {
+            "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=19740&la=0&powerMode=0",
+            "title": "漢語 — 教育部《國語辭典簡編本》",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "漢族的語言，為漢藏語系中的一支。"
+          }
+        }
+      ],
+      "semanticReview": {
+        "baselineCount": 979,
+        "verdict": "no_exact_semantic_duplicate_found",
+        "neighborIds": [
+          "2018-19-mun-47"
+        ],
+        "reason": "Основа путунхуа → северные диалекты отличается от исторического названия стандартного языка республики. Скрытый 2021-22-mun-omsk-8 спрашивает современную КНР, тоже другое государство/период, но он не в active979.",
+        "method": "independent exact-answer/fact/entity keyword scan and reading relevant active979 questions; direct and reverse relation comparison"
+      },
+      "warnings": [
+        "Исходный вопрос не задаёт годы Китайской Республики. Подписи трактуют исторический стандарт первой половиныXX века; не утверждают, что на современном Тайване единственный официальный язык.",
+        "中文 и 汉语 — широкие пересекающиеся названия языка, а не просто ложные языки; подписи раскрывают терминологическое отличие."
+      ],
+      "reviewNumber": 12,
+      "originalQuestionRu": "Как назывался официальный язык в Китайской республике?",
+      "proposedStemEdit": {
+        "questionRu": "Как назывался официальный язык в Китайской Республике в 1912–1949 годах?",
+        "reason": "Явно задать исторический период; сохранить вопрос об историческом названии языкового стандарта."
+      },
+      "previewQuestionRu": "Как назывался официальный язык в Китайской Республике в 1912–1949 годах?",
+      "topic": "История и государство",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "普通话"
+        },
+        {
+          "id": "o2",
+          "zh": "国语"
+        },
+        {
+          "id": "o3",
+          "zh": "中文"
+        },
+        {
+          "id": "o4",
+          "zh": "汉语"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o2",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2022-23-shk-mosobl-4",
+      "questionRu": "Герой какого классического романа упоминается во фразеологизме «猪八戒照镜子»?",
+      "answerOptionId": "o3",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "水浒传",
+          "correct": false,
+          "ru": "«Речные заводи» — роман о 108 разбойниках с горы Ляншань",
+          "source": {
+            "title": "黄西蒙：制造“梁山好汉” — 中国作家网（北京晚报）",
+            "url": "https://www.chinawriter.com.cn/n1/2023/0526/c442005-32694970.html",
+            "quote": "梁山一百单八将的故事，在中国可谓耳熟能详。其实，早在施耐庵写小说《水浒传》前，民间就已经流传了不少关于宋江起义、梁山好汉的故事。",
+            "checkedAt": "2026-10-17",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки literature/works/lit-w-shuihuzhuan; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "红楼梦",
+          "correct": false,
+          "ru": "«Сон в красном тереме» — роман об упадке семьи Цзя",
+          "source": {
+            "title": "《红楼梦》 — 故宫博物院",
+            "url": "https://www.dpm.org.cn/lemmas/245566.html",
+            "quote": "中国古典名著之一，共120回，前80回为曹雪芹所作，后40回经考证是由与曹同时代的高鄂所续。乾隆年间程伟元将前80回与后40回合在一起排印成书。它以贾、史、王、薛四大家族的兴衰为背景，揭露出封建贵族集团内部的荒淫腐败，表现了贾宝玉与林黛玉之间纯真的爱情。",
+            "checkedAt": "2026-10-17",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки literature/works/lit-w-hongloumeng; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "西游记",
+          "correct": true,
+          "ru": "«Путешествие на Запад» — роман о паломничестве монаха Сюаньцзана",
+          "source": {
+            "title": "吴承恩 — 淮安区人民政府",
+            "url": "http://www.zghaq.gov.cn/col/818_381266/art/20181207110156_yJzCYhAP.html",
+            "quote": "吴承恩杰出的长篇神魔小说《西游记》以唐代玄奘和尚赴天竺学习佛教的经历为蓝本",
+            "checkedAt": "2026-10-17",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки literature/works/lit-w-xiyouji; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "三国演义",
+          "correct": false,
+          "ru": "«Троецарствие» — исторический роман о конце Хань и эпохе Трёх царств",
+          "source": {
+            "title": "罗贯中 — 泰安市人民政府",
+            "url": "https://www.taian.gov.cn/art/2014/2/13/art_50711_4072497.html",
+            "quote": "罗贯中（1330年～1400年)，平罗庄人，元末明初的小说家。他根据历史记载和民间故事，把魏、蜀、吴三国的兴亡，写成长篇历史小说《三国演义》。书中塑造了一批脍炙人口的典型人物，例如足智多谋的诸葛亮、勇猛粗犷的张飞、机智好胜的周瑜等等。",
+            "checkedAt": "2026-10-17",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки literature/works/lit-w-sanguoyanyi; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        }
+      ],
+      "warnings": [
+        "Четыре принятых романа и их пул сохранены. Подписи повторно использованы из literature/works/name; происхождение самой пословицы из романа не утверждается."
+      ],
+      "proposedActions": [],
+      "reviewNumber": 13,
+      "originalQuestionRu": "Герой какого классического романа упоминается во фразеологизме «猪八戒照镜子»?",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "Герой какого классического романа упоминается во фразеологизме «猪八戒照镜子»?",
+      "topic": "Литература, язык, искусство и философия",
+      "currentOptionPool": [
+        {
+          "gloss": "«Речные заводи» — роман о 108 разбойниках с горы Ляншань",
+          "id": "o1",
+          "zh": "水浒传"
+        },
+        {
+          "gloss": "«Сон в красном тереме» — роман об упадке семьи Цзя",
+          "id": "o2",
+          "zh": "红楼梦"
+        },
+        {
+          "id": "o3",
+          "zh": "西游记"
+        },
+        {
+          "gloss": "«Троецарствие» — исторический роман о конце Хань и эпохе Трёх царств",
+          "id": "o4",
+          "zh": "三国演义"
+        }
+      ],
+      "currentAnswer": {
+        "gloss": "«Путешествие на Запад» — роман о паломничестве монаха Сюаньцзана",
+        "optionId": "o3",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2025-26-mun-irk-5",
+      "questionRu": "Уровни обязательного государственного образования в Китае включают:",
+      "answerOptionId": "o2",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "幼儿园和小学",
+          "correct": false,
+          "ru": "Детский сад и начальная школа — детский сад относится к дошкольному образованию и обычно принимает детей 3–6 лет.",
+          "source": {
+            "url": "https://www.moe.gov.cn/jyb_xxgk/xxgk/zhengce/guizhang/202112/t20211206_585104.html",
+            "title": "幼儿园工作规程 — Министерство образования КНР",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "幼儿园适龄幼儿一般为3周岁至6周岁。"
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "小学和初中",
+          "correct": true,
+          "ru": "Начальная и младшая средняя школа — вместе составляют девять лет обучения без платы за учёбу и школьных сборов.",
+          "source": {
+            "url": "https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyfl/202110/t20211029_575949.html",
+            "title": "中华人民共和国义务教育法 — Министерство образования КНР",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "国家实行九年义务教育制度。实施义务教育，不收学费、杂费。"
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "初中和高中",
+          "correct": false,
+          "ru": "Младшая и старшая средняя школа — старшая ступень следует за младшей и обычно рассчитана ещё на три года.",
+          "source": {
+            "url": "https://www.moe.gov.cn/jyb_xxgk/xxgk_jyta/jyta_jijiaosi/201712/t20171219_321934.html",
+            "title": "教育部对十二届全国人大五次会议第1817号建议的答复",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "普通高中课程按三年设置。"
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "高中和大学",
+          "correct": false,
+          "ru": "Старшая средняя школа и вуз — здесь объединены ступени среднего и высшего образования.",
+          "source": {
+            "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3582/s3602/s3603/201004/t20100420_86780.html",
+            "title": "现代国民教育体系 — Министерство образования КНР",
+            "verificationMethod": "web_primary_source_read_2026-11-07",
+            "quote": "一般包括学前教育、小学教育、初中教育、高中阶段教育和高等教育等层级。"
+          }
+        }
+      ],
+      "semanticReview": {
+        "baselineCount": 979,
+        "verdict": "no_exact_semantic_duplicate_found",
+        "neighborIds": [
+          "2016-17-shk-8"
+        ],
+        "reason": "Продолжительность девять лет и состав ступеней 小学+初中 — разные атрибуты системы. Это не обратная формулировка единого числового отношения.",
+        "method": "independent exact-answer/fact/entity keyword scan and reading relevant active979 questions; direct and reverse relation comparison"
+      },
+      "warnings": [
+        "Не задаётся универсальное разбиение6+3: существуют5+4. Подпись говорит только об общей девятилетней продолжительности.",
+        "«Без платы за учёбу и школьных сборов» передаёт 学费、杂费; это не обещание отсутствия любых расходов семьи."
+      ],
+      "reviewNumber": 14,
+      "originalQuestionRu": "Уровни обязательного государственного образования в Китае включают:",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "Уровни обязательного государственного образования в Китае включают:",
+      "topic": "Экономика, образование, наука и спорт",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "幼儿园和小学"
+        },
+        {
+          "id": "o2",
+          "zh": "小学和初中"
+        },
+        {
+          "id": "o3",
+          "zh": "初中和高中"
+        },
+        {
+          "id": "o4",
+          "zh": "高中和大学"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o2",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2025-26-mun-mosobl-4",
+      "questionRu": "Героем какого классического романа является персонаж пословицы “说曹操，曹操就到”?",
+      "answerOptionId": "o1",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "三国演义",
+          "correct": true,
+          "ru": "«Троецарствие» — исторический роман о конце Хань и эпохе Трёх царств",
+          "source": {
+            "title": "罗贯中 — 泰安市人民政府",
+            "url": "https://www.taian.gov.cn/art/2014/2/13/art_50711_4072497.html",
+            "quote": "罗贯中（1330年～1400年)，平罗庄人，元末明初的小说家。他根据历史记载和民间故事，把魏、蜀、吴三国的兴亡，写成长篇历史小说《三国演义》。书中塑造了一批脍炙人口的典型人物，例如足智多谋的诸葛亮、勇猛粗犷的张飞、机智好胜的周瑜等等。",
+            "checkedAt": "2026-10-17",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки literature/works/lit-w-sanguoyanyi; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "西游记",
+          "correct": false,
+          "ru": "«Путешествие на Запад» — роман о паломничестве монаха Сюаньцзана",
+          "source": {
+            "title": "吴承恩 — 淮安区人民政府",
+            "url": "http://www.zghaq.gov.cn/col/818_381266/art/20181207110156_yJzCYhAP.html",
+            "quote": "吴承恩杰出的长篇神魔小说《西游记》以唐代玄奘和尚赴天竺学习佛教的经历为蓝本",
+            "checkedAt": "2026-10-17",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки literature/works/lit-w-xiyouji; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "水浒传",
+          "correct": false,
+          "ru": "«Речные заводи» — роман о 108 разбойниках с горы Ляншань",
+          "source": {
+            "title": "黄西蒙：制造“梁山好汉” — 中国作家网（北京晚报）",
+            "url": "https://www.chinawriter.com.cn/n1/2023/0526/c442005-32694970.html",
+            "quote": "梁山一百单八将的故事，在中国可谓耳熟能详。其实，早在施耐庵写小说《水浒传》前，民间就已经流传了不少关于宋江起义、梁山好汉的故事。",
+            "checkedAt": "2026-10-17",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки literature/works/lit-w-shuihuzhuan; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "红楼梦",
+          "correct": false,
+          "ru": "«Сон в красном тереме» — роман об упадке семьи Цзя",
+          "source": {
+            "title": "《红楼梦》 — 故宫博物院",
+            "url": "https://www.dpm.org.cn/lemmas/245566.html",
+            "quote": "中国古典名著之一，共120回，前80回为曹雪芹所作，后40回经考证是由与曹同时代的高鄂所续。乾隆年间程伟元将前80回与后40回合在一起排印成书。它以贾、史、王、薛四大家族的兴衰为背景，揭露出封建贵族集团内部的荒淫腐败，表现了贾宝玉与林黛玉之间纯真的爱情。",
+            "checkedAt": "2026-10-17",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки literature/works/lit-w-hongloumeng; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        }
+      ],
+      "warnings": [
+        "Четыре принятых романа и их пул сохранены. Подписи повторно использованы из literature/works/name; происхождение самой пословицы из романа не утверждается."
+      ],
+      "proposedActions": [],
+      "reviewNumber": 15,
+      "originalQuestionRu": "Героем какого классического романа является персонаж пословицы “说曹操，曹操就到”?",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "Героем какого классического романа является персонаж пословицы “说曹操，曹操就到”?",
+      "topic": "Литература, язык, искусство и философия",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "三国演义"
+        },
+        {
+          "gloss": "«Путешествие на Запад» — роман о паломничестве монаха Сюаньцзана",
+          "id": "o2",
+          "zh": "西游记"
+        },
+        {
+          "gloss": "«Речные заводи» — роман о 108 разбойниках с горы Ляншань",
+          "id": "o3",
+          "zh": "水浒传"
+        },
+        {
+          "gloss": "«Сон в красном тереме» — роман об упадке семьи Цзя",
+          "id": "o4",
+          "zh": "红楼梦"
+        }
+      ],
+      "currentAnswer": {
+        "gloss": "«Троецарствие» — исторический роман о конце Хань и эпохе Трёх царств",
+        "optionId": "o1",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2022-23-mun-krsk-9",
+      "questionRu": "Классический письменный язык, использовавшийся в Китае в основном до начала XX века в литературных произведениях, научных публикациях, официальных документах и для деловой переписки.",
+      "answerOptionId": "o3",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "白话",
+          "correct": false,
+          "ru": "Байхуа — письменный язык на основе разговорной речи, в противоположность вэньяню",
+          "source": {
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=13804&la=0&powerMode=0",
+            "title": "白話文 — 教育部《重編國語辭典修訂本》",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "以口語為基礎的書面語言，相對於文言文而言。"
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "普通话",
+          "correct": false,
+          "ru": "Путунхуа — современный стандартный китайский язык с пекинской нормой произношения",
+          "source": {
+            "url": "https://www.moe.gov.cn/s78/A18/s8357/moe_808/tnull_17134.html",
+            "title": "推广普通话宣传提纲和宣传口号 — Министерство образования КНР",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "普通话以北京语音为标准音，以北方话为基础方言，以典范的现代白话文著作为语法规范。"
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "文言文",
+          "correct": true,
+          "ru": "Вэньянь — классический письменный язык; для него характерны краткие, сжатые фразы, отличающиеся от разговорной речи",
+          "source": {
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=162304&la=1&powerMode=0",
+            "title": "文言文 — 教育部《重編國語辭典修訂本》",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "經過文飾、與口語不同的文體。通常詞句較精簡。"
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "国语",
+          "correct": false,
+          "ru": "Гоюй — название стандартного китайского языка, употреблявшееся в республиканском Китае и сохраняющееся на Тайване",
+          "source": {
+            "url": "https://gjb.nymc.edu.cn/info/1076/1438.htm",
+            "title": "什么是汉民族共同语？普通话就是北京话吗？ — 南阳医专公共教学部",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "辛亥革命后民族共同语称为“国语”，中华人民共和国成立后把民族共同语正式定名为“普通话”（台湾省仍沿称“国语”）。"
+          }
+        }
+      ],
+      "warnings": [
+        "白话 в данном литературном контексте трактуется как байхуа, письменная речь на разговорной основе; в других контекстах слово также означает обычную разговорную речь. 文言文 — письменная форма, не диалект. 国语 и 普通话 — названия стандартного языка в разных исторических и региональных контекстах."
+      ],
+      "proposedActions": [],
+      "reviewNumber": 16,
+      "originalQuestionRu": "Классический письменный язык, использовавшийся в Китае в основном до начала XX века в литературных произведениях, научных публикациях, официальных документах и для деловой переписки.",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "Классический письменный язык, использовавшийся в Китае в основном до начала XX века в литературных произведениях, научных публикациях, официальных документах и для деловой переписки.",
+      "topic": "Литература, язык, искусство и философия",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "白话"
+        },
+        {
+          "id": "o2",
+          "zh": "普通话"
+        },
+        {
+          "id": "o3",
+          "zh": "文言文"
+        },
+        {
+          "id": "o4",
+          "zh": "国语"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o3",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2018-19-mun-vrn-4",
+      "questionRu": "Кто был прототипом Танского монаха — главного героя романа «Путешествие на Запад»?",
+      "answerOptionId": "o2",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "鲁智深",
+          "correct": false,
+          "ru": "Лу Чжишэнь — герой «Речных заводей»; прежде носил имя Лу Да и стал буддийским монахом, скрываясь от властей",
+          "source": {
+            "url": "https://qspfw.moe.gov.cn/html/story/20211015/18605.html",
+            "title": "从鲁智深看侠与法的关系 — 教育部全国青少年普法网",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "鲁智深，本名鲁达，因打抱不平，三拳打死恶霸郑屠，为了躲避官府缉拿，便出家做了和尚。"
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "玄奘",
+          "correct": true,
+          "ru": "Сюаньцзан — буддийский монах эпохи Тан, ходивший за сутрами в Индию в 629–645 годах",
+          "source": {
+            "title": "玄奘 — 中国关键词",
+            "url": "http://keywords.china.org.cn/m/2025-06/12/content_117923386.html",
+            "quote": "玄奘（公元602年—公元664年），姓陈名祎，唐朝高僧，河南洛州（今河南省洛阳市）人，中国汉传佛教四大佛经翻译家之一，中国汉传佛教唯识宗创始人。玄奘从小学习各种佛法，因为感到各师所说不一，各种经典也不尽相同，于是决定西行求法，以解迷惑。公元629年，玄奘从长安出发，历经千难万险，后入天竺，诚心求学问贤，于公元645年携佛经佛像等抵达故土。",
+            "authority": "official",
+            "checkedAt": "2026-10-23",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки people/travelers/trv-xuanzang; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "朱元璋",
+          "correct": false,
+          "ru": "Чжу Юаньчжан — основатель династии Мин (1368), император Хунъу",
+          "source": {
+            "title": "洪武皇帝 — 故宫博物院",
+            "url": "https://www.dpm.org.cn/court/lineage/226244.html",
+            "quote": "朱元璋幼时家境贫困，投于皇觉寺为僧。 … 洪武元年（1368年）朱元璋于应天称帝，国号大明。同年八月，明军攻克大都（今北京），元朝灭亡。 … 卒谥圣神文武钦明启运俊德成功统天大孝高皇帝，庙号太祖。",
+            "checkedAt": "2026-10-16",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки dynasties/rulers/rul-zhuyuanzhang; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "老子",
+          "correct": false,
+          "ru": "Лао-цзы — мыслитель конца эпохи Чуньцю, основатель даосизма",
+          "source": {
+            "title": "老子 — 中国关键词",
+            "url": "http://keywords.china.org.cn/2024-08/28/content_117392960.html",
+            "quote": "老子是春秋末期著名思想家、哲学家，道家创始人和主要代表人物，被尊为道祖，称“太上老君”。春秋末年战乱，老子辞官归隐，西出函谷关，著有《道德经》。《道德经》分《道经》《德经》两篇，共八十一章",
+            "authority": "official",
+            "checkedAt": "2026-10-23",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки people/thinkers/th-laozi; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        }
+      ],
+      "warnings": [
+        "Исходный набор неоднороден: литературный персонаж, монах, император и философ. Варианты сохранены; вторым прототипом Танского монаха никто из трёх дистракторов не является."
+      ],
+      "proposedActions": [],
+      "reviewNumber": 17,
+      "originalQuestionRu": "Кто был прототипом Танского монаха — главного героя романа «Путешествие на Запад»?",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "Кто был прототипом Танского монаха — главного героя романа «Путешествие на Запад»?",
+      "topic": "Литература, язык, искусство и философия",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "鲁智深"
+        },
+        {
+          "id": "o2",
+          "zh": "玄奘"
+        },
+        {
+          "id": "o3",
+          "zh": "朱元璋"
+        },
+        {
+          "id": "o4",
+          "zh": "老子"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o2",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2021-22-mun-mosobl-58",
+      "questionRu": "Каким общим словом называются такие жанры китайского эстрадного искусства, как сяншэн, куайбань, сяохуа, эржэньчжуань и т.п.?",
+      "answerOptionId": "o1",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "曲艺",
+          "correct": true,
+          "ru": "Цюйи — разговорные и песенно-повествовательные искусства; исполнитель рассказывает историю, а не играет одну постоянную роль",
+          "source": {
+            "url": "https://www.ihchina.cn/Article/Index/detail?id=7381",
+            "title": "曲艺保护传承：从历史中走来 在现实中奋斗 向未来处眺望 — 中国非物质文化遗产网",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "以本色身份出现在观众面前，进行第三人称统领的口语性说唱式叙述。"
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "戏剧",
+          "correct": false,
+          "ru": "Театр, драматическое искусство — представление сюжета актёрами через действие, диалог и пение",
+          "source": {
+            "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=26509&q=1",
+            "title": "戲劇 — 教育部《國語辭典簡編本》",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "透過演員將某種故事或情節，以動作、歌唱、對白等方式表演出來的藝術。"
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "京剧",
+          "correct": false,
+          "ru": "Пекинская опера (цзинцзюй) — музыкальный театр, сочетающий пение, речитатив, актёрскую игру и боевые приёмы",
+          "source": {
+            "title": "Peking opera — UNESCO Intangible Cultural Heritage",
+            "url": "https://ich.unesco.org/en/RL/peking-opera-00418",
+            "quote": "Inscribed in 2010 ( 5.COM ) on the Representative List of the Intangible Cultural Heritage of Humanity … Peking opera is a performance art incorporating singing, reciting, acting, martial arts.",
+            "checkedAt": "2026-10-23",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки landmarks/intangible/int-jingju; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "民乐",
+          "correct": false,
+          "ru": "Китайская традиционная музыка — в частности, инструментальная музыка для китайских народных инструментов",
+          "source": {
+            "url": "https://www.mct.gov.cn/whzx/bnsj/whkjs/201608/t20160805_750847.html",
+            "title": "民族器乐音频资源项目通过验收 — Министерство культуры КНР",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "该项目依据民族乐器实际发展及大众需求,以及民乐将来的发展和传播趋势"
+          }
+        }
+      ],
+      "warnings": [],
+      "proposedActions": [],
+      "reviewNumber": 18,
+      "originalQuestionRu": "Каким общим словом называются такие жанры китайского эстрадного искусства, как сяншэн, куайбань, сяохуа, эржэньчжуань и т.п.?",
+      "proposedStemEdit": {
+        "questionRu": "Каким общим словом называются такие жанры китайского эстрадного искусства, как сяншэн (相声), куайбань (快板), сяохуа (笑话), эржэньчжуань (二人转) и т.п.?",
+        "reason": "По просьбе автора добавить китайские названия жанров в скобках; проверяемая связь не меняется."
+      },
+      "previewQuestionRu": "Каким общим словом называются такие жанры китайского эстрадного искусства, как сяншэн (相声), куайбань (快板), сяохуа (笑话), эржэньчжуань (二人转) и т.п.?",
+      "topic": "Литература, язык, искусство и философия",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "曲艺"
+        },
+        {
+          "id": "o2",
+          "zh": "戏剧"
+        },
+        {
+          "id": "o3",
+          "zh": "京剧"
+        },
+        {
+          "id": "o4",
+          "zh": "民乐"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o1",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2025-26-mun-nsk-1",
+      "questionRu": "Назовите основной принцип даосской философии.",
+      "answerOptionId": "o1",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "无为而治",
+          "correct": true,
+          "ru": "Управление через недеяние — правитель следует естественному ходу вещей и избегает излишнего вмешательства",
+          "source": {
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=159397&la=0&powerMode=0",
+            "title": "無為而治 — 教育部《重編國語辭典修訂本》",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "在位者順勢而為，不妄加干涉，天下自然大治。"
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "苦谛",
+          "correct": false,
+          "ru": "Истина о страдании — первая из четырёх благородных истин буддизма",
+          "source": {
+            "url": "https://jjxy.suse.edu.cn/_upload/article/files/3e/61/5db19b2042a9b2ec19b2eaadb6dc/e88b7a08-eaf7-4778-84cb-f66bef11baf7.pdf",
+            "title": "四川理工学院课程实施大纲, с. 34",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "“四谛”，即苦谛、集谛、灭谛、道谛，是佛教提出的一套说明苦难和解脱苦难的学说。"
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "八正道",
+          "correct": false,
+          "ru": "Благородный восьмеричный путь — буддийский путь освобождения от страдания, включающий нравственность, сосредоточение и мудрость",
+          "source": {
+            "url": "https://isbrt.ruc.edu.cn/xszl/rucfojiaoallcmsZiyuan247.htm",
+            "title": "释尊与释尊的教诲：过去、现在与将来 — 中国人民大学佛教与宗教学理论研究所",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "八正道从(1)对基本存在的实相持有正见和(2)对修行证悟的正思开始"
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "性善论",
+          "correct": false,
+          "ru": "Учение об изначальной доброте человеческой природы — положение конфуцианской философии Мэн-цзы",
+          "source": {
+            "title": "荀子的“性恶论” — 人民日报海外版",
+            "url": "http://paper.people.com.cn/fcyym/html/2023-05/12/content_25984232.htm",
+            "quote": "虽然孔子、孟子和荀子都是儒家的代表人物，都推崇“仁”和“民本”思想，但他们还是有一些不同的观点。尤其是在人性论上，孔子认为“性相近”，孟子主张“性善论”，而荀子则坚持“性恶论”，与孟子的看法截然相反。",
+            "authority": "official",
+            "checkedAt": "2026-10-24",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки people/thinkers/th-xunzi; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита."
+          }
+        }
+      ],
+      "warnings": [
+        "无为而治 точнее означает принцип управления через недеяние; он встречается и в конфуцианской традиции, что видно из словарной цитаты «Лунь юя». Среди исходных четырёх вариантов второго подходящего ответа нет."
+      ],
+      "proposedActions": [
+        "Необязательная редакторская правка для точности (только отдельным решением): «Какой из перечисленных принципов управления связан с даосской философией?» В предпросмотре сохранена исходная questionRu."
+      ],
+      "reviewNumber": 19,
+      "originalQuestionRu": "Назовите основной принцип даосской философии.",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "Назовите основной принцип даосской философии.",
+      "topic": "Литература, язык, искусство и философия",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "无为而治"
+        },
+        {
+          "id": "o2",
+          "zh": "苦谛"
+        },
+        {
+          "id": "o3",
+          "zh": "八正道"
+        },
+        {
+          "id": "o4",
+          "zh": "性善论"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o1",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    },
+    {
+      "id": "2019-20-mun-kgd-5",
+      "questionRu": "Кто автор этого стихотворения: «От солнца над Курильницей лиловый дым встаёт, вдали водопад повис над рекой. Летит он прямо вниз на три тысячи чи — как будто Млечный Путь упал с девятого неба»?",
+      "answerOptionId": "o2",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "李颀",
+          "correct": false,
+          "ru": "Ли Ци — поэт эпохи Тан, известный стихами о пограничной службе, в том числе «Старинной песней о военном походе»",
+          "source": {
+            "url": "https://wxyj.xju.edu.cn/info/1056/1407.htm",
+            "title": "杨镰《诗词中的新疆》之《古从军行》 — 新疆大学新疆文献研究中心",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "李颀，盛唐诗人。颍阳（河南登封）人。开元二十三年（735）进士。所写边塞诗颇有名。"
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "李白",
+          "correct": true,
+          "ru": "Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»",
+          "source": {
+            "title": "历史名人 李白 — 金乡县人民政府",
+            "url": "http://www.jinxiang.gov.cn/art/2025/4/23/art_18110_725579.html",
+            "quote": "李白 （701-762）。字太白，号青莲居士。唐浪漫主义诗人，被后人尊称“诗仙”。",
+            "checkedAt": "2026-10-17",
+            "authority": "official",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки literature/authors/lit-a-libai; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита.",
+            "supportingSources": [
+              {
+                "title": "李白《静夜思》的文本奥秘 — 中国作家网",
+                "url": "http://www.chinawriter.com.cn/n1/2020/1116/c404064-31932366.html",
+                "quote": "李白的《静夜思》脍炙人口",
+                "checkedAt": "2026-10-17",
+                "authority": "academic"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "王維",
+          "correct": false,
+          "ru": "Ван Вэй — поэт и художник эпохи Тан, мастер пейзажной лирики",
+          "source": {
+            "title": "王维与陶渊明的相似与不似 — 中国作家网",
+            "url": "http://www.chinawriter.com.cn/n1/2020/1020/c404063-31898505.html",
+            "quote": "王维，字摩诘，河东蒲州（今山西运城）人，自幼聪颖，饱读诗书，9岁便能作诗写文章，17岁写出《九月九日忆山东兄弟》",
+            "checkedAt": "2026-10-17",
+            "authority": "academic",
+            "verificationMethod": "Повторное использование принятой ячейки/фактов строки literature/authors/lit-a-wangwei; сверено с сохранённой цитатой и источниками досье, без повторного сетевого аудита.",
+            "supportingSources": [
+              {
+                "url": "https://www.dpm.org.cn/lemmas/244519.html",
+                "title": "王维 — 故宫博物院",
+                "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+                "quote": "唐代画家、诗人。"
+              },
+              {
+                "title": "【跟着公号学诗词】终南山下“诗佛”的隐居生活，你心动吗？ — 新华网",
+                "url": "http://www.xinhuanet.com/politics/2017-08/29/c_129691561.htm",
+                "quote": "王维是唐代诗人，字摩诘，有“诗佛”之称。诗人寄情山水田园之间并对隐居生活怡然自得的满足心情",
+                "checkedAt": "2026-10-17",
+                "authority": "official"
+              }
+            ]
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "王績",
+          "correct": false,
+          "ru": "Ван Цзи — поэт начала эпохи Тан; в стихотворении «Смотрю вдаль» (野望) изображён осенний сельский пейзаж",
+          "source": {
+            "url": "https://sxss.ntu.edu.cn/2018/0124/c6266a165731/page.htm",
+            "title": "王绩《野望》鉴赏 — 南通大学",
+            "verificationMethod": "Новая справка: сверено по тексту первичного/академического источника в веб-поиске 2026-11-07.",
+            "quote": "《野望》写的是山野秋景，在闲逸的基调中，透露出几分忧郁和苦闷，是王绩的代表作。"
+          }
+        }
+      ],
+      "warnings": [
+        "王維 и 王績 сохранены в исходном традиционном написании. Справки 李颀, 王績 подтверждены университетскими материалами; 王維 использует принятую справку строки 王维."
+      ],
+      "proposedActions": [],
+      "reviewNumber": 20,
+      "originalQuestionRu": "Кто автор этого стихотворения: «От солнца над Курильницей лиловый дым встаёт, вдали водопад повис над рекой. Летит он прямо вниз на три тысячи чи — как будто Млечный Путь упал с девятого неба»?",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "Кто автор этого стихотворения: «От солнца над Курильницей лиловый дым встаёт, вдали водопад повис над рекой. Летит он прямо вниз на три тысячи чи — как будто Млечный Путь упал с девятого неба»?",
+      "topic": "Литература, язык, искусство и философия",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "李颀"
+        },
+        {
+          "id": "o2",
+          "zh": "李白"
+        },
+        {
+          "id": "o3",
+          "zh": "王維"
+        },
+        {
+          "id": "o4",
+          "zh": "王績"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o2",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "accepted",
+        "date": "2026-11-07",
+        "applied": true
+      }
+    }
+  ],
+  "review": {
+    "semanticBaseline": 979,
+    "questionsReviewed": 20,
+    "optionsReviewed": 80,
+    "exactDirectOrReverseDuplicates": 0,
+    "importantDraftFixes": 2,
+    "importantDraftFixesApplied": true,
+    "status": "independent-release-review-and-validation-passed",
+    "report": "2026-11-07-regional-batch-2-review.md",
+    "proposedStemClarifications": 4,
+    "retainedQuestions": 19,
+    "retainedOptions": 76
+  },
+  "semanticSelection": {
+    "cultureReport": "2026-11-07-regional-batch-2-semantic-review.json",
+    "excludedExactReverseDuplicates": [
+      {
+        "id": "2021-22-mun-amur-9",
+        "duplicateOf": "literature-q43",
+        "relation": "Настоящее имя Лу Синя — Чжоу Шужэнь."
+      },
+      {
+        "id": "2023-24-mun-krsk-6",
+        "duplicateOf": "literature-q25",
+        "relation": "Бай Цзюйи — автор 琵琶行."
+      }
+    ],
+    "deferredNearDuplicate": [
+      {
+        "id": "2019-20-mun-lip-4",
+        "near": "ethnos-q96",
+        "reason": "Опознание мяо по женскому костюму; слишком близкий учебный сюжет для этой смешанной партии."
+      }
+    ]
+  },
+  "publicationPrerequisites": [
+    "Решения автора по карточкам, новым подписям и предложенным уточнениям.",
+    "Ограничение набора Мао Дуня согласованными четырьмя вариантами.",
+    "Применение только принятых изменений и проверка взаимных подсказок после их применения.",
+    "Сборка и проверки выпуска отдельным этапом после просмотра автора."
+  ],
+  "authorFeedback": {
+    "date": "2026-11-07",
+    "cityProvinceNames": "В предпросмотре убраны 市/省: №2, четыре варианта. Исходные названия сохранены в originalZh и currentOptionPool.",
+    "q11": {
+      "state": "excluded-permanently",
+      "alternatives": "2026-11-07-regional-batch-2-q11-alternatives.json",
+      "selectedCandidate": null,
+      "reason": "Прямое решение автора 2026-11-07: вопрос №11 второй региональной партии о застольном этикете исключён окончательно. Исходная редакция и оба предложенных варианта переработки отклонены.",
+      "date": "2026-11-07",
+      "exclusionAppliedTo": "data/site.json.hiddenQuestions"
+    },
+    "q12": "Сохранены годы 1912–1949.",
+    "q18": "Добавлены 相声, 快板, 笑话, 二人转 в скобках после русских названий.",
+    "scope": "Материалы согласования обновлены. По прямому решению автора №11 окончательно добавлен в data/site.json.hiddenQuestions; действующий банк и опубликованная страница не менялись."
+  },
+  "excludedItems": [
+    {
+      "id": "2020-21-shk-mosobl-52",
+      "questionRu": "Какое из утверждений о застольном этикете китайцев верно?",
+      "answerOptionId": "o2",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "茶壶的壶嘴应该朝人的脸",
+          "correct": false,
+          "ru": "Носик чайника должен быть направлен в лицо человеку",
+          "source": {
+            "url": null,
+            "title": "Дословный текст варианта o1 в data/bank.json",
+            "verificationMethod": "Полный перевод исходного утверждения; истинность неверного варианта не утверждается, новая норма этикета не добавляется.",
+            "quote": "茶壶的壶嘴应该朝人的脸"
+          }
+        },
+        {
+          "id": "o2",
+          "zh": "可以用公共筷子和勺子",
+          "correct": true,
+          "ru": "Можно пользоваться сервировочными палочками и ложками для перекладывания еды — ими не едят и не касаются рта",
+          "source": {
+            "url": "https://www.jiangmen.gov.cn/attachment/0/135/135942/2068446.pdf",
+            "title": "“公筷公勺”使用标准指引 — 江门市政府",
+            "verificationMethod": "Полный перевод исходного утверждения; истинность неверного варианта не утверждается, новая норма этикета не добавляется.",
+            "quote": "公筷公勺指两人以上（含两人）同桌共餐时，作为分餐工具使用但不直接接触就餐者嘴部的筷子或勺子。",
+            "reviewClarification": "Уточнено назначение 公共筷子和勺子: общие приборы для перекладывания, не личные приборы для еды."
+          }
+        },
+        {
+          "id": "o3",
+          "zh": "筷子放在杯子上、插在食物上",
+          "correct": false,
+          "ru": "Палочки кладут на чашку, втыкают в еду",
+          "source": {
+            "url": null,
+            "title": "Дословный текст варианта o3 в data/bank.json",
+            "verificationMethod": "Полный перевод исходного утверждения; истинность неверного варианта не утверждается, новая норма этикета не добавляется.",
+            "quote": "筷子放在杯子上、插在食物上"
+          }
+        },
+        {
+          "id": "o4",
+          "zh": "可以在盘子里挑菜",
+          "correct": false,
+          "ru": "Можно перебирать еду в тарелке, выбирая кусочки",
+          "source": {
+            "url": null,
+            "title": "Дословный текст варианта o4 в data/bank.json",
+            "verificationMethod": "Полный перевод исходного утверждения; истинность неверного варианта не утверждается, новая норма этикета не добавляется.",
+            "quote": "可以在盘子里挑菜",
+            "reviewClarification": "挑菜 передано как перебирание еды, а не нейтральный выбор блюда.",
+            "supportingUrl": "https://www.ningguo.gov.cn/News/show/1199279.html"
+          }
+        }
+      ],
+      "warnings": [
+        "Подписи — переводы вариантов, в том числе неверных утверждений, а не правила поведения. В o3 переведены обе части. Для o1/o3/o4 источник перевода — сам исходный текст; отдельная внешняя ссылка не нужна."
+      ],
+      "proposedActions": [],
+      "reviewNumber": 11,
+      "originalQuestionRu": "Какое из утверждений о застольном этикете китайцев верно?",
+      "proposedStemEdit": null,
+      "previewQuestionRu": "Какое из утверждений о застольном этикете китайцев верно?",
+      "topic": "Культура, традиции и праздники",
+      "currentOptionPool": [
+        {
+          "id": "o1",
+          "zh": "茶壶的壶嘴应该朝人的脸"
+        },
+        {
+          "id": "o2",
+          "zh": "可以用公共筷子和勺子"
+        },
+        {
+          "id": "o3",
+          "zh": "筷子放在杯子上、插在食物上"
+        },
+        {
+          "id": "o4",
+          "zh": "可以在盘子里挑菜"
+        }
+      ],
+      "currentAnswer": {
+        "optionId": "o2",
+        "state": "verified"
+      },
+      "authorDecision": {
+        "state": "excluded-permanently",
+        "alternatives": "2026-11-07-regional-batch-2-q11-alternatives.json",
+        "selectedCandidate": null,
+        "applied": false,
+        "date": "2026-11-07",
+        "reason": "Прямое решение автора 2026-11-07: вопрос №11 второй региональной партии о застольном этикете исключён окончательно. Исходная редакция и оба предложенных варианта переработки отклонены.",
+        "exclusionAppliedTo": "data/site.json.hiddenQuestions"
+      }
+    }
+  ],
+  "originallyPresentedQuestionCount": 20,
+  "currentEligibleConservedCount": 263,
+  "authorApproval": {
+    "date": "2026-11-07",
+    "instruction": "Остальные 19 вопросов принимаем. Встраивай в досье, проверь подписи и взаимные подсказки, затем публикуй на сайте.",
+    "approvedPreviewManifestHash": "e213e29942db204dfcae1561bb6827bc27cf9ce5d95b19314fe407413edea69e",
+    "excludedQuestion": "2020-21-shk-mosobl-52",
+    "scope": "19 retained questions, proposed stems and displayed captions; permanent exclusion of №11 remains."
+  },
+  "application": "2026-11-07-regional-batch-2-application.json",
+  "previewWarningsAreHistorical": true,
+  "eligibleConservedCountBeforeRelease": 282,
+  "manifestHash": "7b45c2059226f2427653bd04e0dbffe01c77aad9d6864b454b4a25eaade8c852"
+}

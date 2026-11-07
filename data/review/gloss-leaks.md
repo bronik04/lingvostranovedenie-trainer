@@ -12,7 +12,7 @@
 повторение, а не утечка (решение автора 2026-10-26). Название верного ответа рядом с вопросом с тем же
 ответом утечкой не считается: ответ выдаёт сам вариант. Названия помечены «(название ответа)».
 
-Подписей с утечкой: 606; выданных вопросов: 410; пар «вопрос с подписью → соседний вопрос»: 2829, из них 1643 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
+Подписей с утечкой: 608; выданных вопросов: 410; пар «вопрос с подписью → соседний вопрос»: 2802, из них 1642 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
 
 ## 特别行政区 — Особый административный район — Сянган и Аомэнь (название ответа)
 
@@ -239,7 +239,7 @@
 
 - выдаёт holidays/holidays-q32: ответ 春节, Праздник весны; зацепка 2024 год, та же строка
 - выдаёт holidays/holidays-q53: ответ 春节, Праздник весны; зацепка Новый год, та же строка
-- видна в 7: holidays/holidays-q01, holidays/holidays-q02, holidays/holidays-q04, holidays/holidays-q08, holidays/holidays-q09, holidays/holidays-q13, holidays/holidays-q52
+- видна в 6: holidays/holidays-q01, holidays/holidays-q04, holidays/holidays-q08, holidays/holidays-q09, holidays/holidays-q13, holidays/holidays-q52
 
 ## 春节 — Праздник весны — красные надписи и петарды отпугивают чудовище Нянь
 
@@ -251,7 +251,7 @@
 
 - выдаёт literature/literature-q16: ответ Сон в красном тереме; зацепка Цао Сюэцинь, та же строка
 - выдаёт literature/literature-q97: ответ 曹雪芹, Цао Сюэцинь; зацепка Сон в красном тереме, та же строка
-- видна в 6: literature/literature-q01, literature/literature-q03, literature/literature-q09, literature/literature-q101, literature/literature-q40, literature/literature-q96
+- видна в 5: literature/literature-q01, literature/literature-q03, literature/literature-q09, literature/literature-q40, literature/literature-q96
 
 ## 李安 — Ли Ань — режиссёр «Крадущийся тигр, затаившийся дракон» (2000)
 
@@ -262,14 +262,14 @@
 ## 李白 — Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»
 
 - выдаёт literature/literature-q23: ответ 李白, Ли Бо; зацепка бессмертный поэт, эпоха Тан
-- выдаёт literature/literature-q88: ответ Думы тихой ночью; зацепка Ли Бо, 李白, та же строка
-- видна в 8: literature/literature-q01, literature/literature-q02, literature/literature-q03, literature/literature-q07, literature/literature-q101, literature/literature-q24, literature/literature-q25, literature/literature-q46
+- выдаёт literature/literature-q88: ответ Думы тихой ночью; зацепка Ли Бо, 李白
+- видна в 4: literature/literature-q01, literature/literature-q02, literature/literature-q03, literature/literature-q46
 
 ## 杜甫 — Ду Фу — поэт эпохи Тан, прозванный «мудрецом поэзии»
 
 - выдаёт literature/literature-q07: ответ 杜甫, Ду Фу; зацепка эпоха Тан, та же строка
 - выдаёт literature/literature-q24: ответ 杜甫, Ду Фу; зацепка мудрец поэзии, эпоха Тан, та же строка
-- видна в 3: literature/literature-q01, literature/literature-q03, literature/literature-q101
+- видна в 2: literature/literature-q01, literature/literature-q03
 
 ## 杨利伟 — Ян Ливэй — первый китайский космонавт, полёт на «Шэньчжоу-5» (2003)
 
@@ -359,7 +359,7 @@
 
 - выдаёт literature/literature-q17: ответ Троецарствие, Троецарствия; зацепка Ло Гуаньчжун, та же строка
 - выдаёт literature/literature-q96: ответ 罗贯中, Ло Гуаньчжун; зацепка Троецарствие, Троецарствия, та же строка
-- видна в 4: literature/literature-q01, literature/literature-q03, literature/literature-q101, literature/literature-q97
+- видна в 3: literature/literature-q01, literature/literature-q03, literature/literature-q97
 
 ## 罪与罚 — «Преступление и наказание» — роман Достоевского из «великого пятикнижия»
 
@@ -383,7 +383,7 @@
 
 - выдаёт literature/literature-q49: ответ 莫言, Мо Янь; зацепка Нобелевская премия, та же строка
 - выдаёт literature/literature-q92: ответ Красный гаолян; зацепка 莫言, та же строка
-- видна в 7: literature/literature-q01, literature/literature-q03, literature/literature-q05, literature/literature-q101, literature/literature-q51, literature/literature-q96, literature/literature-q97
+- видна в 6: literature/literature-q01, literature/literature-q03, literature/literature-q05, literature/literature-q51, literature/literature-q96, literature/literature-q97
 
 ## 西安 — Сиань — древняя столица 13 династий, прежде Чанъань (Шэньси)
 
@@ -566,6 +566,11 @@
 
 - выдаёт 2016-17-reg-6: ответ 1919; зацепка Движение 4 мая
 - видна в 1: 2015-16-shk-60
+
+## 1927 年 — 1927 год: Наньчанское восстание
+
+- выдаёт modern-history/modern-history-q118: ответ Наньчан; зацепка 1927 год, та же строка
+- видна в 3: modern-history/modern-history-q112, modern-history/modern-history-q68, modern-history/modern-history-q71
 
 ## 1931 年 — 1931 год: Мукденский инцидент, начало японской оккупации Северо-Востока
 
@@ -800,7 +805,7 @@
 ## 九月十日 — 10 сентября по солнечному календарю — День учителя в Китае
 
 - выдаёт holidays/holidays-q02: ответ День учителя; зацепка 10, 九月十日, та же строка
-- видна в 4: holidays/holidays-q03, holidays/holidays-q21, holidays/holidays-q38, holidays/holidays-q39
+- видна в 3: holidays/holidays-q03, holidays/holidays-q38, holidays/holidays-q39
 
 ## 九级浪 — «Девятый вал» — морская картина Айвазовского, 1850 год
 
@@ -862,10 +867,15 @@
 - выдаёт dynasties/dynasties-q58: ответ 亚历山大·涅夫斯基, Александр Невский; зацепка 1242 год
 - видна в 2: modern-history/modern-history-q101, modern-history/modern-history-q98
 
-## 京剧 — Пекинская опера (цзинцзюй) — самый известный вид китайской музыкальной драмы (название ответа)
+## 京剧 — Пекинская опера (цзинцзюй) — сочетает пение, речитатив, актёрскую игру и боевые приёмы (название ответа)
 
 - выдаёт 2016-17-mun-yar-8: ответ Пекин; зацепка Пекинская опера, 京剧
 - видна в 2: landmarks/landmarks-q76, landmarks/landmarks-q89
+
+## 京剧 — Пекинская опера (цзинцзюй) — театр пения, речитатива, актёрской игры и боевых приёмов.
+
+- выдаёт 2016-17-mun-yar-8: ответ Пекин; зацепка Пекинская опера, 京剧
+- видна в 1: literature/literature-q105
 
 ## 京张铁路 — Железная дорога Пекин — Чжанцзякоу — её строил Чжань Тянью в 1905–1909 гг.
 
@@ -1015,7 +1025,7 @@
 ## 刘禹锡 — Лю Юйси — поэт и мыслитель эпохи Тан, друг Бо Цзюйи
 
 - выдаёт literature/literature-q25: ответ Бо Цзюйи; зацепка эпоха Тан
-- видна в 3: literature/literature-q01, literature/literature-q03, literature/literature-q101
+- видна в 2: literature/literature-q01, literature/literature-q03
 
 ## 刘邦 — Лю Бан — основатель династии Хань, победил Сян Юя в 202 г. до н. э.
 
@@ -1142,6 +1152,11 @@
 - выдаёт nature/nature-q10: ответ Хэншань в Хунани; зацепка Хунань, Южный пик, та же строка
 - видна в 1: nature/nature-q48
 
+## 南昌 — Наньчан — город в Цзянси, где 1 августа 1927 года началось восстание КПК
+
+- выдаёт modern-history/modern-history-q118: ответ 南昌, Наньчан; зацепка 1927 год, та же строка
+- видна в 2: modern-history/modern-history-q114, modern-history/modern-history-q69
+
 ## 博罗季诺战役 — Бородинское сражение — генеральное сражение Отечественной войны 1812 года
 
 - выдаёт 2024-25-mun-udm-2: ответ 1812; зацепка Бородинское сражение
@@ -1215,7 +1230,7 @@
 ## 吴承恩 — У Чэнъэнь — по традиции автор романа «Путешествие на Запад»
 
 - выдаёт literature/literature-q40: ответ 吴承恩, У Чэнъэнь; зацепка Путешествие на Запад, та же строка
-- видна в 6: literature/literature-q01, literature/literature-q03, literature/literature-q09, literature/literature-q101, literature/literature-q96, literature/literature-q97
+- видна в 4: literature/literature-q03, literature/literature-q09, literature/literature-q96, literature/literature-q97
 
 ## 吴方言 — Диалект у — диалект Шанхая, юга Цзянсу и большей части Чжэцзяна
 
@@ -1231,6 +1246,11 @@
 
 - выдаёт literature/literature-q53: ответ 呐喊; зацепка Лу Синь, та же строка
 - видна в 1: literature/literature-q10
+
+## 周恩来 — Чжоу Эньлай — секретарь Фронтового комитета КПК в Наньчанском восстании 1927 года
+
+- выдаёт modern-history/modern-history-q118: ответ Наньчан; зацепка 1927 год, та же строка
+- видна в 5: modern-history/modern-history-q109, modern-history/modern-history-q110, modern-history/modern-history-q111, modern-history/modern-history-q113, modern-history/modern-history-q66
 
 ## 呼和浩特 — Хух-Хото («Синий город») — центр Внутренней Монголии
 
@@ -1802,11 +1822,6 @@
 - выдаёт dynasties/dynasties-q29: ответ Хубилай; зацепка Название Юань
 - видна в 3: dynasties/dynasties-q90, dynasties/dynasties-q91, dynasties/dynasties-q92
 
-## 教师节 — День учителя — 10 сентября, учреждён в 1985 году
-
-- выдаёт holidays/holidays-q02: ответ 教师节, День учителя; зацепка 10, та же строка
-- видна в 1: holidays/holidays-q32
-
 ## 敦煌 — Дуньхуан — возле него пещеры Могао со статуями и росписями
 
 - выдаёт landmarks/landmarks-q97: ответ 敦煌; зацепка Пещеры Могао, та же строка
@@ -1835,7 +1850,7 @@
 ## 施耐庵 — Ши Найань — по традиции автор романа «Речные заводи»
 
 - выдаёт literature/literature-q09: ответ 施耐庵, Ши Найань; зацепка Речные заводи, Речных заводей, та же строка
-- видна в 5: literature/literature-q01, literature/literature-q03, literature/literature-q101, literature/literature-q96, literature/literature-q97
+- видна в 4: literature/literature-q01, literature/literature-q03, literature/literature-q96, literature/literature-q97
 
 ## 无线电 — Изобретение радио — Александр Попов (1895)
 
@@ -2187,11 +2202,6 @@
 - выдаёт nature/nature-q47: ответ 泰山, Тайшань; зацепка пять священных гор, та же строка
 - видна в 5: nature/nature-q10, nature/nature-q144, nature/nature-q46, nature/nature-q49, nature/nature-q51
 
-## 泼水节 — Праздник воды — Новый год дайцев: обливают друг друга водой на счастье
-
-- выдаёт holidays/holidays-q18: ответ 泼水节, Праздник воды; зацепка Новый год, та же строка
-- видна в 1: holidays/holidays-q02
-
 ## 洛神赋图 — «Нимфа реки Ло» — свиток, оригинал которого приписывают Гу Кайчжи
 
 - выдаёт painting/painting-q25: ответ Гу Кайчжи; зацепка Нимфа реки Ло, 洛神赋图, та же строка
@@ -2312,6 +2322,11 @@
 - выдаёт 2021-22-mun-qa05d78: ответ 湘方言, сянский диалект; зацепка Хунань, та же строка
 - видна в 3: ethnos/ethnos-q87, ethnos/ethnos-q88, ethnos/ethnos-q92
 
+## 满族 — Маньчжуры — народ, одна из основных областей расселения которого — провинция Ляонин
+
+- выдаёт 2018-19-shk-6: ответ Ляонин, Провинция Ляонин, провинция Ляонин; зацепка маньчжуры, 满族, та же строка
+- видна в 3: ethnos/ethnos-q10, ethnos/ethnos-q12, ethnos/ethnos-q28
+
 ## 满族 — Маньчжуры — народ, основавший династию Цин
 
 - выдаёт dynasties/dynasties-q113: ответ 满族, маньчжуры; зацепка династия Цинь, та же строка
@@ -2339,7 +2354,7 @@
 
 ## 狂人日记 — «Дневник сумасшедшего» — первый рассказ Лу Синя на байхуа, 1918 г.
 
-- выдаёт literature/literature-q19: ответ 狂人日记, Дневник сумасшедшего; зацепка 1918, Лу Синь, та же строка
+- выдаёт literature/literature-q19: ответ 狂人日记, Дневник сумасшедшего; зацепка 1918, Байхуа, Лу Синь, та же строка
 - видна в 2: literature/literature-q10, literature/literature-q53
 
 ## 猫城记 — «Записки о кошачьем городе» — роман Лао Шэ о Марсе, 1932 г.
@@ -2365,7 +2380,7 @@
 ## 琵琶行 — «Песнь о лютнистке» — длинная повествовательная поэма Бо Цзюйи
 
 - выдаёт literature/literature-q25: ответ Бо Цзюйи; зацепка Песнь о лютнистке, 琵琶行, та же строка
-- видна в 6: literature/literature-q20, literature/literature-q88, literature/literature-q89, literature/literature-q90, literature/literature-q91, literature/literature-q92
+- видна в 4: literature/literature-q20, literature/literature-q89, literature/literature-q90, literature/literature-q91
 
 ## 瓦连京·谢罗夫 — Серов — портретист рубежа XIX и XX веков, автор «Девочки с персиками»
 
@@ -2410,7 +2425,7 @@
 ## 白居易 — Бо Цзюйи — поэт эпохи Тан, автор «Песни о лютнистке»
 
 - выдаёт literature/literature-q25: ответ 白居易, Бо Цзюйи; зацепка Песнь о лютнистке, эпоха Тан, та же строка
-- видна в 3: literature/literature-q01, literature/literature-q03, literature/literature-q101
+- видна в 2: literature/literature-q01, literature/literature-q03
 
 ## 皖 — Сокращение Аньхоя — по горе Ваньшань, реке Ваньхэ и царству Вань
 
@@ -2525,7 +2540,7 @@
 ## 粤剧 — Юэцзюй — кантонская опера Гуандуна и Гуанси
 
 - выдаёт ethnos/ethnos-q86: ответ кантонский; зацепка Гуандун
-- видна в 2: landmarks/landmarks-q76, landmarks/landmarks-q89
+- видна в 1: landmarks/landmarks-q89
 
 ## 粤方言 — Юэ — диалекты Гуандуна и Гуанси; представительный говор — гуанчжоуский
 
@@ -2722,11 +2737,6 @@
 - выдаёт 2016-17-shk-4: ответ 西安, Сиань; зацепка Цинь Шихуан, терракотовая армия
 - видна в 3: landmarks/landmarks-q100, landmarks/landmarks-q101, landmarks/landmarks-q99
 
-## 西游记 — «Путешествие на Запад» — роман о паломничестве монаха Сюаньцзана (название ответа)
-
-- выдаёт 2018-19-mun-vrn-4: ответ Сюаньцзан; зацепка Путешествие на Запад, 西游记
-- видна в 13: literature/literature-q10, literature/literature-q100, literature/literature-q102, literature/literature-q103, literature/literature-q11, literature/literature-q13, literature/literature-q14, literature/literature-q15, literature/literature-q16, literature/literature-q17, literature/literature-q18, literature/literature-q98, literature/literature-q99
-
 ## 西游记 — «Путешествие на Запад» — роман, по традиции приписываемый У Чэнъэню
 
 - выдаёт literature/literature-q40: ответ У Чэнъэнь; зацепка Путешествие на Запад, та же строка
@@ -2800,7 +2810,7 @@
 ## 越剧 — Юэцзюй — чжэцзянская опера, которую исполняют женщины
 
 - выдаёт 2022-23-mun-8: ответ 越剧, Юэцзюй (чжэцзянская); зацепка Чжэцзян
-- видна в 3: landmarks/landmarks-q107, landmarks/landmarks-q76, landmarks/landmarks-q89
+- видна в 2: landmarks/landmarks-q107, landmarks/landmarks-q89
 
 ## 辛丑条约 — Синьчоуский договор 1901 года — итог войны восьми держав, контрибуция 450 млн лян
 
@@ -3030,7 +3040,7 @@
 ## 静夜思 — «Думы тихой ночью» — четверостишие Ли Бо о тоске по дому
 
 - выдаёт literature/literature-q88: ответ 静夜思, Думы тихой ночью; зацепка Ли Бо, та же строка
-- видна в 4: literature/literature-q89, literature/literature-q90, literature/literature-q91, literature/literature-q92
+- видна в 3: literature/literature-q89, literature/literature-q90, literature/literature-q91
 
 ## 静静的顿河 — «Тихий Дон» — роман-эпопея Шолохова о донских казаках
 

@@ -1,0 +1,911 @@
+{
+  "date": "2026-11-07",
+  "initialNewCandidateCount": 32,
+  "sameCanonicalRowRepeats": 13,
+  "protectedPairs": 19,
+  "unresolvedImportantCandidates": 0,
+  "decisions": [
+    {
+      "record": "ethnos/ethnos-q01",
+      "option": "o4",
+      "zh": "满族",
+      "gloss": "Маньчжуры — народ, одна из основных областей расселения которого — провинция Ляонин",
+      "isAnswer": false,
+      "other": "2018-19-shk-6",
+      "answer": [
+        "Ляонин",
+        "Провинция Ляонин",
+        "провинция Ляонин"
+      ],
+      "clues": [
+        "маньчжуры",
+        "满族"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2015-16-mun-7",
+      "otherId": "2018-19-shk-6",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "contextual-next20-20261104-4"
+    },
+    {
+      "record": "ethnos/ethnos-q02",
+      "option": "o2",
+      "zh": "满族",
+      "gloss": "Маньчжуры — народ, одна из основных областей расселения которого — провинция Ляонин",
+      "isAnswer": false,
+      "other": "2018-19-shk-6",
+      "answer": [
+        "Ляонин",
+        "Провинция Ляонин",
+        "провинция Ляонин"
+      ],
+      "clues": [
+        "маньчжуры",
+        "满族"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2019-20-mun-q727051",
+      "otherId": "2018-19-shk-6",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "contextual-next20-20261104-4"
+    },
+    {
+      "record": "ethnos/ethnos-q10",
+      "option": "ppl-cn-manchu",
+      "zh": "满族",
+      "gloss": "Маньчжуры — народ, одна из основных областей расселения которого — провинция Ляонин",
+      "isAnswer": false,
+      "other": "2018-19-shk-6",
+      "answer": [
+        "Ляонин",
+        "Провинция Ляонин",
+        "провинция Ляонин"
+      ],
+      "clues": [
+        "маньчжуры",
+        "满族"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "ethnos-q10",
+      "otherId": "2018-19-shk-6",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Повторение сведений принятой строки досье; разрешено прежним решением автора о подписях одной строки."
+    },
+    {
+      "record": "ethnos/ethnos-q12",
+      "option": "ppl-cn-manchu",
+      "zh": "满族",
+      "gloss": "Маньчжуры — народ, одна из основных областей расселения которого — провинция Ляонин",
+      "isAnswer": false,
+      "other": "2018-19-shk-6",
+      "answer": [
+        "Ляонин",
+        "Провинция Ляонин",
+        "провинция Ляонин"
+      ],
+      "clues": [
+        "маньчжуры",
+        "满族"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "ethnos-q12",
+      "otherId": "2018-19-shk-6",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Повторение сведений принятой строки досье; разрешено прежним решением автора о подписях одной строки."
+    },
+    {
+      "record": "holidays/holidays-q02",
+      "option": "hol-jianjun",
+      "zh": "建军节",
+      "gloss": "День основания НОАК — 1 августа, в память Наньчанского восстания 1927 года",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q118",
+      "answer": [
+        "Наньчан"
+      ],
+      "clues": [
+        "1927 год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2015-16-reg-7",
+      "otherId": "2021-22-mun-amur-6",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "nanchang-uprising-army-day"
+    },
+    {
+      "record": "holidays/holidays-q32",
+      "option": "hol-jianjun",
+      "zh": "建军节",
+      "gloss": "День основания НОАК — 1 августа, в память Наньчанского восстания 1927 года",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q118",
+      "answer": [
+        "Наньчан"
+      ],
+      "clues": [
+        "1927 год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q32",
+      "otherId": "2021-22-mun-amur-6",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "nanchang-uprising-army-day"
+    },
+    {
+      "record": "landmarks/landmarks-q106",
+      "option": "lm-cn-yellow-crane",
+      "zh": "黄鹤楼",
+      "gloss": "Башня Жёлтого журавля — знаменитая башня на горе Шэшань в Ухане",
+      "isAnswer": false,
+      "other": "provinces/provinces-q56",
+      "answer": [
+        "黄鹤楼",
+        "башня Жёлтого журавля"
+      ],
+      "clues": [
+        "Ухань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "landmarks-q106",
+      "otherId": "provinces-q56",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "regional-batch2-hints-7"
+    },
+    {
+      "record": "landmarks/landmarks-q76",
+      "option": "o4",
+      "zh": "粤剧",
+      "gloss": "Юэцзюй — кантонская опера Гуандуна и Гуанси",
+      "isAnswer": false,
+      "other": "ethnos/ethnos-q86",
+      "answer": [
+        "кантонский"
+      ],
+      "clues": [
+        "Гуандун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2021-22-mun-tat-57",
+      "otherId": "ethnos-q86",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "contextual-batch3-20261104-1"
+    },
+    {
+      "record": "literature/literature-q14",
+      "option": "o2",
+      "zh": "西游记",
+      "gloss": "«Путешествие на Запад» — роман о паломничестве монаха Сюаньцзана",
+      "isAnswer": false,
+      "other": "people/people-q32",
+      "answer": [
+        "Сюаньцзан"
+      ],
+      "clues": [
+        "Путешествие на Запад",
+        "西游记"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2020-21-reg-qce4bc2",
+      "otherId": "2018-19-mun-vrn-4",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "xuanzang-sutras"
+    },
+    {
+      "record": "literature/literature-q14",
+      "option": "o4",
+      "zh": "三国演义",
+      "gloss": "«Троецарствие» — исторический роман о конце Хань и эпохе Трёх царств",
+      "isAnswer": false,
+      "other": "literature/literature-q17",
+      "answer": [
+        "三国演义",
+        "Троецарствие",
+        "Троецарствия"
+      ],
+      "clues": [
+        "Исторический роман"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2020-21-reg-qce4bc2",
+      "otherId": "2023-24-zak-9",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "xuanzang-sutras"
+    },
+    {
+      "record": "literature/literature-q15",
+      "option": "o2",
+      "zh": "三国演义",
+      "gloss": "«Троецарствие» — исторический роман о конце Хань и эпохе Трёх царств",
+      "isAnswer": false,
+      "other": "literature/literature-q17",
+      "answer": [
+        "三国演义",
+        "Троецарствие",
+        "Троецарствия"
+      ],
+      "clues": [
+        "Исторический роман"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-shk-34",
+      "otherId": "2023-24-zak-9",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "xuanzang-sutras"
+    },
+    {
+      "record": "literature/literature-q15",
+      "option": "o4",
+      "zh": "西游记",
+      "gloss": "«Путешествие на Запад» — роман о паломничестве монаха Сюаньцзана",
+      "isAnswer": false,
+      "other": "people/people-q32",
+      "answer": [
+        "Сюаньцзан"
+      ],
+      "clues": [
+        "Путешествие на Запад",
+        "西游记"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-shk-34",
+      "otherId": "2018-19-mun-vrn-4",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "xuanzang-sutras"
+    },
+    {
+      "record": "literature/literature-q101",
+      "option": "o1",
+      "zh": "杜甫",
+      "gloss": "Ду Фу — поэт эпохи Тан, прозванный «мудрецом поэзии»",
+      "isAnswer": false,
+      "other": "literature/literature-q07",
+      "answer": [
+        "杜甫",
+        "Ду Фу"
+      ],
+      "clues": [
+        "эпоха Тан"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-shk-mosobl-12",
+      "otherId": "2023-24-zak-3",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "tang-era-literature"
+    },
+    {
+      "record": "literature/literature-q101",
+      "option": "o1",
+      "zh": "杜甫",
+      "gloss": "Ду Фу — поэт эпохи Тан, прозванный «мудрецом поэзии»",
+      "isAnswer": false,
+      "other": "literature/literature-q24",
+      "answer": [
+        "杜甫",
+        "Ду Фу"
+      ],
+      "clues": [
+        "мудрец поэзии",
+        "эпоха Тан"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-shk-mosobl-12",
+      "otherId": "literature-q24",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "tang-era-literature"
+    },
+    {
+      "record": "literature/literature-q101",
+      "option": "o2",
+      "zh": "莫言",
+      "gloss": "Мо Янь — лауреат Нобелевской премии 2012 г., автор «Красного гаоляна»",
+      "isAnswer": false,
+      "other": "literature/literature-q49",
+      "answer": [
+        "莫言",
+        "Мо Янь"
+      ],
+      "clues": [
+        "Нобелевская премия"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-shk-mosobl-12",
+      "otherId": "literature-q49",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "tang-era-literature"
+    },
+    {
+      "record": "literature/literature-q101",
+      "option": "o2",
+      "zh": "莫言",
+      "gloss": "Мо Янь — лауреат Нобелевской премии 2012 г., автор «Красного гаоляна»",
+      "isAnswer": false,
+      "other": "literature/literature-q92",
+      "answer": [
+        "Красный гаолян"
+      ],
+      "clues": [
+        "莫言"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-shk-mosobl-12",
+      "otherId": "literature-q92",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "tang-era-literature"
+    },
+    {
+      "record": "literature/literature-q101",
+      "option": "o4",
+      "zh": "李白",
+      "gloss": "Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»",
+      "isAnswer": false,
+      "other": "literature/literature-q23",
+      "answer": [
+        "李白",
+        "Ли Бо"
+      ],
+      "clues": [
+        "бессмертный поэт",
+        "эпоха Тан"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-shk-mosobl-12",
+      "otherId": "literature-q23",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "tang-era-literature"
+    },
+    {
+      "record": "literature/literature-q101",
+      "option": "o4",
+      "zh": "李白",
+      "gloss": "Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»",
+      "isAnswer": false,
+      "other": "literature/literature-q88",
+      "answer": [
+        "Думы тихой ночью"
+      ],
+      "clues": [
+        "Ли Бо",
+        "李白"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-shk-mosobl-12",
+      "otherId": "literature-q88",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "tang-era-literature"
+    },
+    {
+      "record": "modern-history/modern-history-q63",
+      "option": "ev-nanchang",
+      "zh": "南昌",
+      "gloss": "Наньчан — город в Цзянси, где 1 августа 1927 года началось восстание КПК",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q118",
+      "answer": [
+        "南昌",
+        "Наньчан"
+      ],
+      "clues": [
+        "1927 год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q63",
+      "otherId": "2021-22-mun-amur-6",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Повторение сведений принятой строки досье; разрешено прежним решением автора о подписях одной строки."
+    },
+    {
+      "record": "modern-history/modern-history-q66",
+      "option": "ev-nanchang",
+      "zh": "周恩来",
+      "gloss": "Чжоу Эньлай — секретарь Фронтового комитета КПК в Наньчанском восстании 1927 года",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q118",
+      "answer": [
+        "Наньчан"
+      ],
+      "clues": [
+        "1927 год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q66",
+      "otherId": "2021-22-mun-amur-6",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Повторение сведений принятой строки досье; разрешено прежним решением автора о подписях одной строки."
+    },
+    {
+      "record": "modern-history/modern-history-q68",
+      "option": "ev-nanchang",
+      "zh": "1927 年",
+      "gloss": "1927 год: Наньчанское восстание",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q118",
+      "answer": [
+        "Наньчан"
+      ],
+      "clues": [
+        "1927 год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q68",
+      "otherId": "2021-22-mun-amur-6",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Повторение сведений принятой строки досье; разрешено прежним решением автора о подписях одной строки."
+    },
+    {
+      "record": "modern-history/modern-history-q69",
+      "option": "ev-nanchang",
+      "zh": "南昌",
+      "gloss": "Наньчан — город в Цзянси, где 1 августа 1927 года началось восстание КПК",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q118",
+      "answer": [
+        "南昌",
+        "Наньчан"
+      ],
+      "clues": [
+        "1927 год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q69",
+      "otherId": "2021-22-mun-amur-6",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Повторение сведений принятой строки досье; разрешено прежним решением автора о подписях одной строки."
+    },
+    {
+      "record": "modern-history/modern-history-q71",
+      "option": "ev-nanchang",
+      "zh": "1927 年",
+      "gloss": "1927 год: Наньчанское восстание",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q118",
+      "answer": [
+        "Наньчан"
+      ],
+      "clues": [
+        "1927 год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q71",
+      "otherId": "2021-22-mun-amur-6",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Повторение сведений принятой строки досье; разрешено прежним решением автора о подписях одной строки."
+    },
+    {
+      "record": "modern-history/modern-history-q109",
+      "option": "ev-nanchang",
+      "zh": "周恩来",
+      "gloss": "Чжоу Эньлай — секретарь Фронтового комитета КПК в Наньчанском восстании 1927 года",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q118",
+      "answer": [
+        "Наньчан"
+      ],
+      "clues": [
+        "1927 год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q109",
+      "otherId": "2021-22-mun-amur-6",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Повторение сведений принятой строки досье; разрешено прежним решением автора о подписях одной строки."
+    },
+    {
+      "record": "modern-history/modern-history-q110",
+      "option": "ev-nanchang",
+      "zh": "周恩来",
+      "gloss": "Чжоу Эньлай — секретарь Фронтового комитета КПК в Наньчанском восстании 1927 года",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q118",
+      "answer": [
+        "Наньчан"
+      ],
+      "clues": [
+        "1927 год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q110",
+      "otherId": "2021-22-mun-amur-6",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Повторение сведений принятой строки досье; разрешено прежним решением автора о подписях одной строки."
+    },
+    {
+      "record": "modern-history/modern-history-q111",
+      "option": "ev-nanchang",
+      "zh": "周恩来",
+      "gloss": "Чжоу Эньлай — секретарь Фронтового комитета КПК в Наньчанском восстании 1927 года",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q118",
+      "answer": [
+        "Наньчан"
+      ],
+      "clues": [
+        "1927 год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q111",
+      "otherId": "2021-22-mun-amur-6",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Повторение сведений принятой строки досье; разрешено прежним решением автора о подписях одной строки."
+    },
+    {
+      "record": "modern-history/modern-history-q112",
+      "option": "ev-nanchang",
+      "zh": "1927 年",
+      "gloss": "1927 год: Наньчанское восстание",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q118",
+      "answer": [
+        "Наньчан"
+      ],
+      "clues": [
+        "1927 год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q112",
+      "otherId": "2021-22-mun-amur-6",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Повторение сведений принятой строки досье; разрешено прежним решением автора о подписях одной строки."
+    },
+    {
+      "record": "modern-history/modern-history-q113",
+      "option": "ev-nanchang",
+      "zh": "周恩来",
+      "gloss": "Чжоу Эньлай — секретарь Фронтового комитета КПК в Наньчанском восстании 1927 года",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q118",
+      "answer": [
+        "Наньчан"
+      ],
+      "clues": [
+        "1927 год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q113",
+      "otherId": "2021-22-mun-amur-6",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Повторение сведений принятой строки досье; разрешено прежним решением автора о подписях одной строки."
+    },
+    {
+      "record": "modern-history/modern-history-q114",
+      "option": "ev-nanchang",
+      "zh": "南昌",
+      "gloss": "Наньчан — город в Цзянси, где 1 августа 1927 года началось восстание КПК",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q118",
+      "answer": [
+        "南昌",
+        "Наньчан"
+      ],
+      "clues": [
+        "1927 год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q114",
+      "otherId": "2021-22-mun-amur-6",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Повторение сведений принятой строки досье; разрешено прежним решением автора о подписях одной строки."
+    },
+    {
+      "record": "modern-history/modern-history-q118",
+      "option": "o2",
+      "zh": "武昌",
+      "gloss": "Учан — здесь 10 октября 1911 года началось восстание, открывшее Синьхайскую революцию.",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q63",
+      "answer": [
+        "武昌"
+      ],
+      "clues": [
+        "10",
+        "Синьхайская революция"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2021-22-mun-amur-6",
+      "otherId": "modern-history-q63",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "nanchang-uprising-army-day"
+    },
+    {
+      "record": "modern-history/modern-history-q118",
+      "option": "o2",
+      "zh": "武昌",
+      "gloss": "Учан — здесь 10 октября 1911 года началось восстание, открывшее Синьхайскую революцию.",
+      "isAnswer": false,
+      "other": "2015-16-shk-60",
+      "answer": [
+        "1911 год",
+        "1911"
+      ],
+      "clues": [
+        "Синьхайская революция"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2021-22-mun-amur-6",
+      "otherId": "2015-16-shk-60",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "nanchang-uprising-army-day"
+    },
+    {
+      "record": "people/people-q32",
+      "option": "o4",
+      "zh": "老子",
+      "gloss": "Лао-цзы — мыслитель конца эпохи Чуньцю, основатель даосизма",
+      "isAnswer": false,
+      "other": "people/people-q01",
+      "answer": [
+        "老子",
+        "Лао-цзы"
+      ],
+      "clues": [
+        "эпоха Чуньцю"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2018-19-mun-vrn-4",
+      "otherId": "2016-17-reg-8",
+      "decision": "protected-by-fact-group",
+      "reason": "Содержательная подпись сохранена; пара разведена существующим механизмом групп фактов.",
+      "finalGroup": "xuanzang-sutras"
+    }
+  ],
+  "groupChanges": [
+    {
+      "group": "contextual-next20-20261104-4",
+      "pair": [
+        "2015-16-mun-7",
+        "2018-19-shk-6"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "contextual-next20-20261104-4",
+      "pair": [
+        "2019-20-mun-q727051",
+        "2018-19-shk-6"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "nanchang-uprising-army-day",
+      "pair": [
+        "2015-16-reg-7",
+        "2021-22-mun-amur-6"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "nanchang-uprising-army-day",
+      "pair": [
+        "holidays-q32",
+        "2021-22-mun-amur-6"
+      ],
+      "absorbedGroups": [
+        "spring-festival-word"
+      ],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "regional-batch2-hints-7",
+      "pair": [
+        "landmarks-q106",
+        "provinces-q56"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "contextual-batch3-20261104-1",
+      "pair": [
+        "2021-22-mun-tat-57",
+        "ethnos-q86"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "xuanzang-sutras",
+      "pair": [
+        "2020-21-reg-qce4bc2",
+        "2018-19-mun-vrn-4"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "xuanzang-sutras",
+      "pair": [
+        "2020-21-reg-qce4bc2",
+        "2023-24-zak-9"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "xuanzang-sutras",
+      "pair": [
+        "2023-24-shk-34",
+        "2023-24-zak-9"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "xuanzang-sutras",
+      "pair": [
+        "2023-24-shk-34",
+        "2018-19-mun-vrn-4"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "tang-era-literature",
+      "pair": [
+        "2023-24-shk-mosobl-12",
+        "2023-24-zak-3"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "tang-era-literature",
+      "pair": [
+        "2023-24-shk-mosobl-12",
+        "literature-q24"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "tang-era-literature",
+      "pair": [
+        "2023-24-shk-mosobl-12",
+        "literature-q49"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "tang-era-literature",
+      "pair": [
+        "2023-24-shk-mosobl-12",
+        "literature-q92"
+      ],
+      "absorbedGroups": [
+        "red-sorghum-novel-film"
+      ],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "tang-era-literature",
+      "pair": [
+        "2023-24-shk-mosobl-12",
+        "literature-q23"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "tang-era-literature",
+      "pair": [
+        "2023-24-shk-mosobl-12",
+        "literature-q88"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "nanchang-uprising-army-day",
+      "pair": [
+        "2021-22-mun-amur-6",
+        "modern-history-q63"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "nanchang-uprising-army-day",
+      "pair": [
+        "2021-22-mun-amur-6",
+        "2015-16-shk-60"
+      ],
+      "absorbedGroups": [],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    },
+    {
+      "group": "xuanzang-sutras",
+      "pair": [
+        "2018-19-mun-vrn-4",
+        "2016-17-reg-8"
+      ],
+      "absorbedGroups": [
+        "contextual-next20-20261104-3"
+      ],
+      "reason": "Подпись называет ответ и связанную зацепку другого вопроса; сохраняем подпись и разводим вопросы по раундам."
+    }
+  ]
+}

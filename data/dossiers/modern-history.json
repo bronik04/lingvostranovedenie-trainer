@@ -12,7 +12,8 @@
         "place": "zh",
         "slogan": "zh",
         "memorial": "zh",
-        "about": "ru"
+        "about": "ru",
+        "revolution": "zh"
       },
       "rows": [
         {
@@ -579,29 +580,29 @@
               "title": "中国近代历史上的丰碑——辛亥革命 — 中国社会科学院近代史研究所（jds.cssn.cn）",
               "url": "http://jds.cssn.cn/xscg/xslw/201605/t20160506_5252664.shtml",
               "quote": "1911年10月10日，孙中山先生领导的推翻清朝封建统治的资产阶级革命在武昌打响第一枪。",
-              "authority": "academic",
-              "checkedAt": "2026-10-18"
+              "checkedAt": "2026-10-18",
+              "authority": "academic"
             },
             {
               "title": "沿着复兴之路奋勇前进——纪念辛亥革命百年 — 中国驻印度使馆（gov.cn）",
               "url": "https://in.china-embassy.gov.cn/ssygd/xinhai/201110/t20111009_2357539.htm",
               "quote": "１９１２年１月１日，孙中山在南京宣誓就职，宣告中华民国成立。",
-              "authority": "official",
-              "checkedAt": "2026-10-18"
+              "checkedAt": "2026-10-18",
+              "authority": "official"
             },
             {
               "title": "组图：10月10日是辛亥革命纪念日 — 人民网",
               "url": "http://politics.people.com.cn/n/2015/1010/c1001-27681143.html",
               "quote": "武昌起义胜利后，各省纷纷响应，全国24个省有14个先后独立。4个月后，清帝逊位。",
-              "authority": "official",
-              "checkedAt": "2026-10-18"
+              "checkedAt": "2026-10-18",
+              "authority": "official"
             },
             {
               "title": "《辛亥革命》第四集 武昌首义 — 中国军网",
               "url": "http://www.81.cn/2021zt/2021-10/08/content_10096824.htm",
               "quote": "终于在1911年10月10日成功地发动了具有划时代意义武昌起义。",
-              "authority": "official",
-              "checkedAt": "2026-10-18"
+              "checkedAt": "2026-10-18",
+              "authority": "official"
             }
           ],
           "olympiad": [
@@ -612,7 +613,14 @@
           "core": true,
           "skipSides": [
             "year"
-          ]
+          ],
+          "revolution": {
+            "zh": "武昌",
+            "ru": [
+              "Учан"
+            ],
+            "gloss": "Учан — здесь 10 октября 1911 года началось восстание, открывшее Синьхайскую революцию."
+          }
         },
         {
           "id": "ev-xinwenhua",
@@ -940,25 +948,39 @@
               "title": "党史百问：南昌起义 — 共产党员网",
               "url": "https://www.12371.cn/2022/03/30/ARTI1648629528052600.shtml",
               "quote": "1927年7月中旬，中共中央决定在江西南昌举行武装起义，并成立以周恩来为书记的前敌委员会。",
-              "authority": "official",
-              "checkedAt": "2026-10-18"
+              "checkedAt": "2026-10-18",
+              "authority": "official"
             },
             {
               "title": "【镜头看党史】八一南昌起义 — 中央纪委国家监委网站（ccdi.gov.cn）",
               "url": "http://m.ccdi.gov.cn/content/7d/2d/10863.html",
               "quote": "在以周恩来为书记的中共前敌委员会及贺龙、叶挺、朱德、刘伯承等领导下，2.3万余人在南昌起义",
-              "authority": "official",
-              "checkedAt": "2026-10-18"
+              "checkedAt": "2026-10-18",
+              "authority": "official"
             },
             {
               "title": "惊天动地铸雄师 — 国家民委（neac.gov.cn，转载新华网）",
               "url": "https://www.neac.gov.cn/seac/c100908/201106/1100209.shtml",
               "quote": "1927年8月1日凌晨2时，在以周恩来为书记的中共前敌委员会领导下",
-              "authority": "official",
-              "checkedAt": "2026-10-18"
+              "checkedAt": "2026-10-18",
+              "authority": "official"
+            },
+            {
+              "title": "«八一»建军节的确立 — Министерство обороны КНР",
+              "url": "https://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4916330.html",
+              "quote": "1927年8月1日，中国共产党领导发动了南昌起义",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "revolution": {
+            "zh": "南昌",
+            "ru": [
+              "Наньчан"
+            ],
+            "gloss": "Наньчан — восстание началось 1 августа; эта дата стала Днём основания НОАК."
+          }
         },
         {
           "id": "ev-changzheng",
@@ -3003,6 +3025,64 @@
             }
           ],
           "olympiad": []
+        },
+        {
+          "id": "ev-roc-founded",
+          "name": {
+            "zh": "中华民国临时政府成立"
+          },
+          "sources": [
+            {
+              "title": "中华民国临时大总统孙中山颁布的陆军官制及暂行编制 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202104/t20210406_249552.shtml",
+              "quote": "1912年1月1日，孙中山在南京宣誓就任临时大总统，改国号为中华民国，并组成中华民国临时政府。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "《孙中山与广州•南京》 — 南京市档案馆",
+              "url": "https://dag.nanjing.gov.cn/dawh/bycg/201711/t20171101_522720.html",
+              "quote": "1912年1月1日，孙中山在南京就任中华民国临时大总统。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ],
+          "revolution": {
+            "zh": "南京",
+            "ru": [
+              "Нанкин"
+            ],
+            "gloss": "Нанкин — в январе 1912 г. Сунь Ятсен стал временным президентом республики."
+          }
+        },
+        {
+          "id": "ev-wuhan-government",
+          "name": {
+            "zh": "武汉国民政府"
+          },
+          "sources": [
+            {
+              "title": "赤都武汉——武汉成为全国革命中心 — Исследовательский отдел истории КПК провинции Хубэй",
+              "url": "https://www.hbdsw.org.cn/tbgz/zggcd/fjlc/202104/t20210412_173376.shtml",
+              "quote": "1927年1月1日，临时联席会议宣布国民政府正式开始在汉口办公",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            },
+            {
+              "title": "红色的历史 英雄的城市 — 武汉市互联网行业网上党群服务中心",
+              "url": "https://www.whhlwdj.gov.cn/view/2059.html",
+              "quote": "1927年1月1日，联席会议发布命令，宣布国民政府正式在汉办公。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ],
+          "revolution": {
+            "zh": "武汉",
+            "ru": [
+              "Ухань"
+            ],
+            "gloss": "Ухань — в 1927 г. здесь работало правительство Гоминьдана, прибывшее из Гуанчжоу."
+          }
         }
       ],
       "sides": [

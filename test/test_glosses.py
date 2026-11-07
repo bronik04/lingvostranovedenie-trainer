@@ -185,14 +185,28 @@ class GlossesInBankTest(unittest.TestCase):
                     ('深圳', 'provinces'), ('深圳', 'modern-china'),
                     ('珠海', 'modern-china'), ('汕头', 'modern-china'))
         bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
+        # Досье может содержать разные контексты одной ячейки: географическое
+        # название города и его промышленная справка — разные колонки.
+        question_contexts = {}
+        for path in (ROOT / 'data/dossiers').glob('*-questions.json'):
+            for question in json.loads(path.read_text('utf-8')):
+                fact = question['fact']
+                question_contexts[question.get('embeds', question['id'])] = (
+                    fact['table'], fact.get('ask', 'explicit-options'))
         for zh, dossier in contexts:
             with self.subTest(zh=zh, dossier=dossier):
-                options = [o for r in bank if r.get('dossier') == dossier
-                           for o in r['options'] if o['zh'] == zh
-                           and o['id'] != r['answer']['optionId']]
+                by_context = {}
+                for record in bank:
+                    if record.get('dossier') != dossier:
+                        continue
+                    for option in record['options']:
+                        if option['zh'] == zh and option['id'] != record['answer']['optionId']:
+                            by_context.setdefault(question_contexts[record['id']], []).append(option)
+                options = [o for values in by_context.values() for o in values]
                 self.assertGreater(len(options), 1)
                 self.assertTrue(all(o.get('gloss') for o in options))
-                self.assertEqual(len({o['gloss'] for o in options}), 1)
+                for context, values in by_context.items():
+                    self.assertEqual(len({o['gloss'] for o in values}), 1, context)
 
     def test_city_glosses_keep_the_approved_question_context(self):
         bank = {r['id']: r for r in json.loads((ROOT / 'data/bank.json').read_text('utf-8'))}

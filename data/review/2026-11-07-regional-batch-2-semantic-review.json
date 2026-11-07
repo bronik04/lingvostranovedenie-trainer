@@ -1,0 +1,974 @@
+{
+  "baselineCount": 979,
+  "pendingSnapshotCount": 283,
+  "scope": "Culture/literature/language/philosophy/ethnos only; canonical conserved records. No raw PDF/103-variant audit; no product edits; no publication.",
+  "selectedCount": 13,
+  "selected": [
+    {
+      "id": "2016-17-mun-spb-6",
+      "priority": 1,
+      "domain": "ethnos",
+      "testedRelation": "Маньчжурская женская одежда → происхождение ципао",
+      "questionRu": "Из длинного халата женщин какого народа произошло ципао — женская одежда с ярким национальным колоритом?",
+      "answer": "满族",
+      "semanticDecision": "keep_distinct_fact",
+      "neighborsExamined": [
+        {
+          "id": "2018-19-shk-6",
+          "questionRu": "В какой провинции Китая в основном проживают маньчжуры?",
+          "answer": "辽宁"
+        },
+        {
+          "id": "dynasties-q113",
+          "questionRu": "Какой народ основал династию Цин?",
+          "answer": "满族"
+        }
+      ],
+      "keepRationale": "Место проживания маньчжуров и основание Цин — другие отношения. Здесь происхождение конкретного предмета одежды.",
+      "glossReuseCells": "ethnos/peoples/ppl-cn-manchu/name; соседние name столбца peoples",
+      "risksAndReadiness": "Готовое accepted-встраивание ethnos; для четырёх вариантов сохранить исходные o1/o2/o3 и взять принятый ppl-cn-zhuang. Никакой замены текста.",
+      "fourChoicePreview": [
+        {
+          "id": "o1",
+          "zh": "傣族",
+          "correct": false,
+          "existingGloss": "Дай — народ Китая",
+          "reuseCandidates": []
+        },
+        {
+          "id": "o2",
+          "zh": "汉族",
+          "correct": false,
+          "existingGloss": "Ханьцы — народ Китая",
+          "reuseCandidates": []
+        },
+        {
+          "id": "o3",
+          "zh": "满族",
+          "correct": true,
+          "existingGloss": "Маньчжуры — народ Китая",
+          "reuseCandidates": []
+        },
+        {
+          "id": "ppl-cn-zhuang",
+          "zh": "壮族",
+          "correct": false,
+          "existingGloss": "Чжуаны — народ Китая",
+          "reuseCandidates": []
+        }
+      ],
+      "dossier": "ethnos",
+      "factRow": "ethnos/peoples/ppl-cn-manchu",
+      "evidenceAlreadyInRecord": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "Ципао — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/%D0%A6%D0%B8%D0%BF%D0%B0%D0%BE"
+        }
+      ]
+    },
+    {
+      "id": "2021-22-mun-tat-57",
+      "priority": 1,
+      "domain": "performing_arts",
+      "testedRelation": "Прозвище 百戏之祖 и историческое описание → куньцюй",
+      "questionRu": "Какой театральный жанр называют «прародителем всех видов театра» (百戏之祖)? Это один из древнейших жанров китайской оперы: ему больше шестисот лет, он соединяет поэзию, музыку, пение, танец и драму и повлиял на множество других жанров.",
+      "answer": "昆曲",
+      "semanticDecision": "keep_distinct_fact",
+      "neighborsExamined": [
+        {
+          "id": "landmarks-q107",
+          "questionRu": "Что из этого внесено в список нематериального культурного наследия ЮНЕСКО?",
+          "answer": "昆曲"
+        },
+        {
+          "id": "2021-22-zak-q36aaab",
+          "questionRu": "Самый распространённый и влиятельный вид китайского оперного искусства с историей около 200 лет, признанный национальным достоянием.",
+          "answer": "京剧"
+        },
+        {
+          "id": "2022-23-mun-8",
+          "questionRu": "Второй по популярности жанр китайской оперы. Возник в провинции Чжэцзян в 1906 году.",
+          "answer": "越剧"
+        }
+      ],
+      "keepRationale": "Статус ЮНЕСКО у куньцюй, определение пекинской оперы и происхождение чжэцзянской оперы — разные признаки/объекты.",
+      "glossReuseCells": "landmarks/intangible/int-kunqu/name; int-jingju/int-yuju/int-yueju-guangdong name",
+      "risksAndReadiness": "Готовое accepted-встраивание. Исходные o1–o4 уже дают четыре однородных жанра. Не путать 粤剧 с 越剧 при пояснениях.",
+      "fourChoicePreview": [
+        {
+          "id": "o1",
+          "zh": "京剧",
+          "correct": false,
+          "existingGloss": "Пекинская опера (цзинцзюй) — самый известный вид китайской музыкальной драмы",
+          "reuseCandidates": []
+        },
+        {
+          "id": "o2",
+          "zh": "昆曲",
+          "correct": true,
+          "existingGloss": "Куньцюй — одна из древнейших форм китайской оперы, возникшая в Куньшане",
+          "reuseCandidates": []
+        },
+        {
+          "id": "o3",
+          "zh": "豫剧",
+          "correct": false,
+          "existingGloss": "Юйцзюй — хэнаньская опера жанра «банцзы»",
+          "reuseCandidates": []
+        },
+        {
+          "id": "o4",
+          "zh": "粤剧",
+          "correct": false,
+          "existingGloss": "Юэцзюй — кантонская опера Гуандуна и Гуанси",
+          "reuseCandidates": []
+        }
+      ],
+      "dossier": "landmarks",
+      "factRow": "landmarks/intangible/int-kunqu",
+      "evidenceAlreadyInRecord": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "林为林：昆曲是活的遗产 — 中国非物质文化遗产网",
+          "url": "https://www.ihchina.cn/project_details/17599.html"
+        },
+        {
+          "checkedAt": "2026-10-25",
+          "title": "新华社 — 昆曲",
+          "url": "https://www.news.cn/20260614/76e37262377045bf97051ac126a0d577/c.html"
+        }
+      ]
+    },
+    {
+      "id": "2023-24-shk-mosobl-12",
+      "priority": 1,
+      "domain": "literature",
+      "testedRelation": "Именная литературная премия → Мао Дунь",
+      "questionRu": "В честь какого китайского писателя учреждена одна из самых главных литературных премий в Китае?",
+      "answer": "茅盾",
+      "semanticDecision": "keep_distinct_fact",
+      "neighborsExamined": [
+        {
+          "id": "literature-q49",
+          "questionRu": "Кто в 2012 году первым из писателей с гражданством КНР получил Нобелевскую премию по литературе?",
+          "answer": "莫言"
+        },
+        {
+          "id": "literature-q23",
+          "questionRu": "Какого поэта эпохи Тан прозвали «бессмертным поэтом»?",
+          "answer": "李白"
+        }
+      ],
+      "keepRationale": "Опубликованного вопроса о премии Мао Дуня не найдено; Нобель Мо Яня и прозвище Ли Бо — отдельные факты.",
+      "glossReuseCells": "literature/authors/lit-a-maodun/name, lit-a-dufu/name, lit-a-moyan/name, lit-a-libai/name",
+      "risksAndReadiness": "Для показа использовать исходные o1–o4 (Ду Фу, Мо Янь, Мао Дунь, Ли Бо). У широкого пула35 есть писатели с другими именными премиями; не рекомендую выбирать произвольных дополнительных авторов без отдельной проверки против широкой формулировки «одна из самых главных».",
+      "fourChoicePreview": [
+        {
+          "id": "o1",
+          "zh": "杜甫",
+          "correct": false,
+          "existingGloss": "Ду Фу — поэт эпохи Тан, прозванный «мудрецом поэзии»",
+          "reuseCandidates": []
+        },
+        {
+          "id": "o2",
+          "zh": "莫言",
+          "correct": false,
+          "existingGloss": "Мо Янь — лауреат Нобелевской премии 2012 г., автор «Красного гаоляна»",
+          "reuseCandidates": []
+        },
+        {
+          "id": "o3",
+          "zh": "茅盾",
+          "correct": true,
+          "existingGloss": "Мао Дунь — автор романа «Полночь»; его именем названа премия",
+          "reuseCandidates": []
+        },
+        {
+          "id": "o4",
+          "zh": "李白",
+          "correct": false,
+          "existingGloss": "Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»",
+          "reuseCandidates": []
+        }
+      ],
+      "dossier": "literature",
+      "factRow": "literature/authors/lit-a-maodun",
+      "evidenceAlreadyInRecord": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "茅盾文学奖 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E8%8C%85%E7%9B%BE%E6%96%87%E5%AD%A6%E5%A5%96"
+        }
+      ]
+    },
+    {
+      "id": "2025-26-mun-perm-2",
+      "priority": 1,
+      "domain": "philosophy",
+      "testedRelation": "Учение об изначально злой человеческой природе → Сюнь-цзы",
+      "questionRu": "Этот известный китайский философ, живший в период Сражающихся царств, отстаивал идею о том, что человеческая природа изначально зла, и для поддержания порядка в обществе необходимы строгие ритуалы и законы. Его учение оказало глубокое влияние на легистскую мысль и государственное устройство империи Цинь. Кто этот философ?",
+      "answer": "荀子",
+      "semanticDecision": "keep_distinct_fact",
+      "neighborsExamined": [
+        {
+          "id": "addition-b1-14",
+          "questionRu": "Какой мыслитель эпохи Чжаньго выдвинул учение о «всеобщей любви» (兼爱) без различия близких и чужих, противопоставив его конфуцианской любви по степени родства, а также учение о «непринятии войн» (非攻)?",
+          "answer": "墨子"
+        },
+        {
+          "id": "2016-17-reg-8",
+          "questionRu": "Кто был основателем даосской мысли в конце эпохи Чуньцю и написал «Дао дэ цзин»?",
+          "answer": "老子"
+        },
+        {
+          "id": "2017-18-mun-4",
+          "questionRu": "Какие мыслители считаются главными представителями даосской мысли?",
+          "answer": "老子和庄子"
+        }
+      ],
+      "keepRationale": "Мо-цзы/всеобщая любовь, Лао-цзы/Дао дэ цзин и представители даосизма — иные учения; точной прямой/обратной пары нет.",
+      "glossReuseCells": "people/thinkers: th-zhuangzi/name, th-mengzi/name, th-xunzi/name, th-hanfeizi/name; 韩非 — тот же Хань Фэй, что 韩非子, но текст варианта сохранить",
+      "risksAndReadiness": "Ключ Сюнь-цзы. Мэн-цзы — содержательный контраст (природа добра), Хань Фэй — легист. Сохранять уже внесённую редакцию, не возвращать старое противопоставление конфуцианству. Готовых подписей конкретно к вопросу ещё нет.",
+      "fourChoicePreview": [
+        {
+          "id": "o1",
+          "zh": "庄子",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": [
+            {
+              "record": "2016-17-reg-8",
+              "option": "o5",
+              "gloss": "Чжуан-цзы — даосский философ эпохи Чжаньго, мастер притч"
+            },
+            {
+              "record": "2018-19-mun-51",
+              "option": "o2",
+              "gloss": "Чжуан-цзы — даосский философ эпохи Чжаньго, мастер притч"
+            }
+          ]
+        },
+        {
+          "id": "o2",
+          "zh": "孟子",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": [
+            {
+              "record": "2016-17-reg-8",
+              "option": "o2",
+              "gloss": "Мэн-цзы — преемник Конфуция в эпоху Чжаньго, «второй мудрец»"
+            },
+            {
+              "record": "2018-19-mun-51",
+              "option": "o1",
+              "gloss": "Мэн-цзы — преемник Конфуция в эпоху Чжаньго, «второй мудрец»"
+            }
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "荀子",
+          "correct": true,
+          "existingGloss": null,
+          "reuseCandidates": [
+            {
+              "record": "2016-17-reg-8",
+              "option": "th-xunzi",
+              "gloss": "Сюнь-цзы — конфуцианец эпохи Чжаньго, учил, что природа человека зла"
+            },
+            {
+              "record": "2018-19-mun-51",
+              "option": "th-xunzi",
+              "gloss": "Сюнь-цзы — конфуцианец эпохи Чжаньго, учил, что природа человека зла"
+            }
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "韩非",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        }
+      ],
+      "dossier": null,
+      "factRow": null,
+      "evidenceAlreadyInRecord": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "荀子 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E8%8D%80%E5%AD%90"
+        }
+      ]
+    },
+    {
+      "id": "2025-26-mun-nsk-1",
+      "priority": 1,
+      "domain": "philosophy",
+      "testedRelation": "Даосский принцип управления → 无为而治",
+      "questionRu": "Назовите основной принцип даосской философии.",
+      "answer": "无为而治",
+      "semanticDecision": "keep_distinct_fact",
+      "neighborsExamined": [
+        {
+          "id": "2016-17-reg-8",
+          "questionRu": "Кто был основателем даосской мысли в конце эпохи Чуньцю и написал «Дао дэ цзин»?",
+          "answer": "老子"
+        },
+        {
+          "id": "2017-18-mun-4",
+          "questionRu": "Какие мыслители считаются главными представителями даосской мысли?",
+          "answer": "老子和庄子"
+        },
+        {
+          "id": "addition-b1-14",
+          "questionRu": "Какой мыслитель эпохи Чжаньго выдвинул учение о «всеобщей любви» (兼爱) без различия близких и чужих, противопоставив его конфуцианской любви по степени родства, а также учение о «непринятии войн» (非攻)?",
+          "answer": "墨子"
+        }
+      ],
+      "keepRationale": "Основатель, представители даосизма и всеобщая любовь Мо-цзы не повторяют принцип недеяния.",
+      "glossReuseCells": "people/thinkers/th-laozi, th-zhuangzi и th-mengzi — контекст; для четырёх терминов точных готовых gloss в bank не найдено",
+      "risksAndReadiness": "Все четыре варианты — учения/доктрины, единственный даосский ключ. Формулировка широкая, ответ — применение недеяния к управлению; существующее пояснение это различает. Подписи требуют подготовки для автора, не автоматически приняты.",
+      "fourChoicePreview": [
+        {
+          "id": "o1",
+          "zh": "无为而治",
+          "correct": true,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o2",
+          "zh": "苦谛",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o3",
+          "zh": "八正道",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o4",
+          "zh": "性善论",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        }
+      ],
+      "dossier": null,
+      "factRow": null,
+      "evidenceAlreadyInRecord": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "无为 (道家) — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E6%97%A0%E4%B8%BA_%28%E9%81%93%E5%AE%B6%29"
+        }
+      ]
+    },
+    {
+      "id": "2022-23-mun-krsk-9",
+      "priority": 1,
+      "domain": "language",
+      "testedRelation": "Классический письменный китайский до XX века → 文言文",
+      "questionRu": "Классический письменный язык, использовавшийся в Китае в основном до начала XX века в литературных произведениях, научных публикациях, официальных документах и для деловой переписки.",
+      "answer": "文言文",
+      "semanticDecision": "keep_distinct_fact",
+      "neighborsExamined": [
+        {
+          "id": "2023-24-reg-9",
+          "questionRu": "Первый рассказ, написанный на байхуа во времена Китайской Республики. Написан Лу Синем, опубликован в 1918 году.",
+          "answer": "狂人日记"
+        }
+      ],
+      "keepRationale": "Рассказ Лу Синя на байхуа спрашивает произведение; этот — тип письменного языка. Прямой/обратной идентичной связи не найдено.",
+      "glossReuseCells": "literature/works/lit-w-kuangrenriji даёт контекст байхуа; основной источник/пояснение уже в записи",
+      "risksAndReadiness": "Белый/разговорный письменный язык, путунхуа, вэньянь, гоюй — осмысленные различия. При подписях не называть вэньянь диалектом. Готовых подписей четырёх терминов в bank нет.",
+      "fourChoicePreview": [
+        {
+          "id": "o1",
+          "zh": "白话",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o2",
+          "zh": "普通话",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o3",
+          "zh": "文言文",
+          "correct": true,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o4",
+          "zh": "国语",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        }
+      ],
+      "dossier": null,
+      "factRow": null,
+      "evidenceAlreadyInRecord": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "文言文 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E6%96%87%E8%A8%80%E6%96%87"
+        }
+      ]
+    },
+    {
+      "id": "2021-22-mun-mosobl-58",
+      "priority": 1,
+      "domain": "performing_arts",
+      "testedRelation": "Сяншэн/куайбань/эржэньчжуань → общая категория 曲艺",
+      "questionRu": "Каким общим словом называются такие жанры китайского эстрадного искусства, как сяншэн, куайбань, сяохуа, эржэньчжуань и т.п.?",
+      "answer": "曲艺",
+      "semanticDecision": "keep_distinct_fact",
+      "neighborsExamined": [
+        {
+          "id": "2021-22-zak-q36aaab",
+          "questionRu": "Самый распространённый и влиятельный вид китайского оперного искусства с историей около 200 лет, признанный национальным достоянием.",
+          "answer": "京剧"
+        },
+        {
+          "id": "2022-23-mun-8",
+          "questionRu": "Второй по популярности жанр китайской оперы. Возник в провинции Чжэцзян в 1906 году.",
+          "answer": "越剧"
+        }
+      ],
+      "keepRationale": "В baseline есть отдельные оперные жанры, но не вопрос о собирательной категории цюйи.",
+      "glossReuseCells": "landmarks/intangible/int-xiangsheng, источники называют категорию 曲艺; 京剧/name; точных gloss остальных терминов в bank нет",
+      "risksAndReadiness": "戏剧/京剧/民乐 — другие области. Не расширять правильный ответ до всего театра. Новые подписи нужны для 曲艺/戏剧/民乐; пекинская опера уже описана в accepted-встраивании куньцюй.",
+      "fourChoicePreview": [
+        {
+          "id": "o1",
+          "zh": "曲艺",
+          "correct": true,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o2",
+          "zh": "戏剧",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o3",
+          "zh": "京剧",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": [
+            {
+              "record": "2021-22-mun-tat-57",
+              "option": "o1",
+              "gloss": "Пекинская опера (цзинцзюй) — самый известный вид китайской музыкальной драмы"
+            },
+            {
+              "record": "2021-22-zak-q36aaab",
+              "option": "o1",
+              "gloss": "Пекинская опера (цзинцзюй) — самый известный вид китайской музыкальной драмы"
+            }
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "民乐",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        }
+      ],
+      "dossier": null,
+      "factRow": null,
+      "evidenceAlreadyInRecord": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "曲艺 — 维基百科",
+          "url": "https://zh.wikipedia.org/zh-cn/%E6%9B%B2%E8%89%BA"
+        }
+      ]
+    },
+    {
+      "id": "2025-26-mun-kursk-10",
+      "priority": 1,
+      "domain": "literature",
+      "testedRelation": "Задача трёх тел → научная фантастика",
+      "questionRu": "К какому литературному жанру относится «Задача трёх тел» (三体) Лю Цысиня?",
+      "answer": "科幻小说",
+      "semanticDecision": "keep_distinct_fact",
+      "neighborsExamined": [
+        {
+          "id": "cinema-q31",
+          "questionRu": "Как называется фантастический фильм 2019 года, снятый по одноимённому рассказу Лю Цысиня?",
+          "answer": "流浪地球"
+        }
+      ],
+      "keepRationale": "«Блуждающая Земля» — другой текст Лю Цысиня/экранизация; жанр «Трёх тел» в baseline не спрашивается.",
+      "glossReuseCells": "Основной evidence/explanation записи; точных готовых gloss четырёх жанров в bank нет",
+      "risksAndReadiness": "Однородные четыре жанра, один ключ. Русские подписи можно готовить как ясные названия жанров; они пока не приняты в glosses.",
+      "fourChoicePreview": [
+        {
+          "id": "o1",
+          "zh": "爱情小说",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o2",
+          "zh": "恐怖小说",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o3",
+          "zh": "科幻小说",
+          "correct": true,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o4",
+          "zh": "历史小说",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        }
+      ],
+      "dossier": null,
+      "factRow": null,
+      "evidenceAlreadyInRecord": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "三体 (小说) — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E4%B8%89%E4%BD%93_%28%E5%B0%8F%E8%AF%B4%29"
+        }
+      ]
+    },
+    {
+      "id": "2022-23-shk-mosobl-4",
+      "priority": 2,
+      "domain": "literature",
+      "testedRelation": "Чжу Бацзе из 猪八戒照镜子 → Путешествие на Запад",
+      "questionRu": "Герой какого классического романа упоминается во фразеологизме «猪八戒照镜子»?",
+      "answer": "西游记",
+      "semanticDecision": "keep_distinct_fact",
+      "neighborsExamined": [
+        {
+          "id": "2016-17-reg-7",
+          "questionRu": "В каком произведении действует Царь обезьян Сунь Укун?",
+          "answer": "西游记"
+        },
+        {
+          "id": "2016-17-shk-2",
+          "questionRu": "Какое произведение вместе с «Троецарствием», «Сном в красном тереме» и «Речными заводями» входит в четыре великих классических романа Китая?",
+          "answer": "西游记"
+        },
+        {
+          "id": "2024-25-pri-32",
+          "questionRu": "Один из четырех классических китайских романов. Опубликован в 1590-е годы без указания автора. Повествует о путешествии монаха по Шелковому пути в Индию за буддийскими сутрами.",
+          "answer": "西游记"
+        },
+        {
+          "id": "literature-q40",
+          "questionRu": "Кому по традиции приписывают авторство романа «Путешествие на Запад»?",
+          "answer": "吴承恩"
+        }
+      ],
+      "keepRationale": "Другой персонаж, чем Сунь Укун; сюжет, состав четырёх романов и авторство — отдельные отношения. Смена персонажа меняет проверяемую связь, это не перестановка прямого/обратного вопроса.",
+      "glossReuseCells": "literature/works/lit-w-xiyouji/name, lit-w-shuihuzhuan/name, lit-w-hongloumeng/name, lit-w-sanguoyanyi/name",
+      "risksAndReadiness": "Готовое accepted-встраивание и ровно четыре романа. При очень строгом сокращении повторов одной книги можно оставить резервом; точным семантическим дублем не является.",
+      "fourChoicePreview": [
+        {
+          "id": "o1",
+          "zh": "水浒传",
+          "correct": false,
+          "existingGloss": "«Речные заводи» — роман о 108 разбойниках с горы Ляншань",
+          "reuseCandidates": []
+        },
+        {
+          "id": "o2",
+          "zh": "红楼梦",
+          "correct": false,
+          "existingGloss": "«Сон в красном тереме» — роман об упадке семьи Цзя",
+          "reuseCandidates": []
+        },
+        {
+          "id": "o3",
+          "zh": "西游记",
+          "correct": true,
+          "existingGloss": "«Путешествие на Запад» — роман о паломничестве монаха Сюаньцзана",
+          "reuseCandidates": []
+        },
+        {
+          "id": "o4",
+          "zh": "三国演义",
+          "correct": false,
+          "existingGloss": "«Троецарствие» — исторический роман о конце Хань и эпохе Трёх царств",
+          "reuseCandidates": []
+        }
+      ],
+      "dossier": "literature",
+      "factRow": "literature/works/lit-w-xiyouji",
+      "evidenceAlreadyInRecord": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "猪八戒 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E7%8C%AA%E5%85%AB%E6%88%92"
+        }
+      ]
+    },
+    {
+      "id": "2025-26-mun-mosobl-4",
+      "priority": 2,
+      "domain": "literature",
+      "testedRelation": "Цао Цао из 说曹操，曹操就到 → Троецарствие",
+      "questionRu": "Героем какого классического романа является персонаж пословицы “说曹操，曹操就到”?",
+      "answer": "三国演义",
+      "semanticDecision": "keep_distinct_fact",
+      "neighborsExamined": [
+        {
+          "id": "2023-24-zak-9",
+          "questionRu": "Исторический роман XIV века, один из «Четырех классических романов» Китая, авторство которого приписывается Ло Гуаньчжуну.",
+          "answer": "三国演义"
+        },
+        {
+          "id": "literature-q96",
+          "questionRu": "Кто автор романа «Троецарствие» (三国演义) — одного из четырёх классических романов Китая?",
+          "answer": "罗贯中"
+        },
+        {
+          "id": "literature-q99",
+          "questionRu": "В каком романе действуют Лю Бэй, Гуань Юй, Чжан Фэй и их мудрый советник Чжугэ Лян (诸葛亮)?",
+          "answer": "三国演义"
+        },
+        {
+          "id": "2015-16-zak-7",
+          "questionRu": "Кто является автором знаменитой строки «Старый скакун у коновязи всё ещё стремится проскакать тысячу ли»?",
+          "answer": "曹操"
+        }
+      ],
+      "keepRationale": "Авторство романа, его другие персонажи и стихотворение Цао Цао не являются той же связью «этот персонаж — этот роман».",
+      "glossReuseCells": "literature/works/lit-w-sanguoyanyi/name и name других трёх классических романов",
+      "risksAndReadiness": "Готовое accepted-встраивание, четыре романа. Не выдавать пословицу за дословную цитату романа; вопрос спрашивает персонажа, а не происхождение текста пословицы.",
+      "fourChoicePreview": [
+        {
+          "id": "o1",
+          "zh": "三国演义",
+          "correct": true,
+          "existingGloss": "«Троецарствие» — исторический роман о конце Хань и эпохе Трёх царств",
+          "reuseCandidates": []
+        },
+        {
+          "id": "o2",
+          "zh": "西游记",
+          "correct": false,
+          "existingGloss": "«Путешествие на Запад» — роман о паломничестве монаха Сюаньцзана",
+          "reuseCandidates": []
+        },
+        {
+          "id": "o3",
+          "zh": "水浒传",
+          "correct": false,
+          "existingGloss": "«Речные заводи» — роман о 108 разбойниках с горы Ляншань",
+          "reuseCandidates": []
+        },
+        {
+          "id": "o4",
+          "zh": "红楼梦",
+          "correct": false,
+          "existingGloss": "«Сон в красном тереме» — роман об упадке семьи Цзя",
+          "reuseCandidates": []
+        }
+      ],
+      "dossier": "literature",
+      "factRow": "literature/works/lit-w-sanguoyanyi",
+      "evidenceAlreadyInRecord": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "說曹操，曹操到 — Wiktionary",
+          "url": "https://en.wiktionary.org/wiki/%E8%AA%AA%E6%9B%B9%E6%93%8D%EF%BC%8C%E6%9B%B9%E6%93%8D%E5%88%B0"
+        },
+        {
+          "checkedAt": "2026-10-25",
+          "title": "曹操 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E6%9B%B9%E6%93%8D"
+        }
+      ]
+    },
+    {
+      "id": "2018-19-mun-vrn-4",
+      "priority": 2,
+      "domain": "literature",
+      "testedRelation": "Танский монах как литературный персонаж → исторический прототип Сюаньцзан",
+      "questionRu": "Кто был прототипом Танского монаха — главного героя романа «Путешествие на Запад»?",
+      "answer": "玄奘",
+      "semanticDecision": "keep_distinct_fact",
+      "neighborsExamined": [
+        {
+          "id": "people-q20",
+          "questionRu": "Чем прославился Сюаньцзан (玄奘), живший в VII веке?",
+          "answer": "西行取经"
+        },
+        {
+          "id": "landmarks-q59",
+          "questionRu": "Какое сооружение построили для хранения сутр, привезённых монахом Сюаньцзаном?",
+          "answer": "大雁塔"
+        },
+        {
+          "id": "2024-25-pri-32",
+          "questionRu": "Один из четырех классических китайских романов. Опубликован в 1590-е годы без указания автора. Повествует о путешествии монаха по Шелковому пути в Индию за буддийскими сутрами.",
+          "answer": "西游记"
+        }
+      ],
+      "keepRationale": "Паломничество Сюаньцзана и пагода для сутр — другие факты. Сюжет романа не называет исторический прототип своим вопросом/ответом.",
+      "glossReuseCells": "people/travelers/trv-xuanzang/name; dynasties/rulers/rul-zhuyuanzhang/name; people/thinkers/th-laozi/name. Литературный прототип подтверждён также literature/works/lit-w-xiyouji sources",
+      "risksAndReadiness": "Смешаны персонаж Лу Чжишэнь, монах, император и философ; это слабее однородного набора, но не второй ответ. Сохранять исходные четыре. Нужны подписи к 鲁智深 и 玄奘; у Чжу Юаньчжана/Лао-цзы готовые справки есть.",
+      "fourChoicePreview": [
+        {
+          "id": "o1",
+          "zh": "鲁智深",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o2",
+          "zh": "玄奘",
+          "correct": true,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o3",
+          "zh": "朱元璋",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": [
+            {
+              "record": "2015-16-shk-59",
+              "option": "rul-zhuyuanzhang",
+              "gloss": "Чжу Юаньчжан — основатель династии Мин (1368), император Хунъу"
+            },
+            {
+              "record": "2019-20-mun-qe6c5d3",
+              "option": "rul-zhuyuanzhang",
+              "gloss": "Чжу Юаньчжан — основатель династии Мин (1368), император Хунъу"
+            }
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "老子",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": [
+            {
+              "record": "2016-17-reg-8",
+              "option": "o3",
+              "gloss": "Лао-цзы — мыслитель конца эпохи Чуньцю, основатель даосизма"
+            },
+            {
+              "record": "2018-19-mun-51",
+              "option": "o4",
+              "gloss": "Лао-цзы — мыслитель конца эпохи Чуньцю, основатель даосизма"
+            }
+          ]
+        }
+      ],
+      "dossier": null,
+      "factRow": null,
+      "evidenceAlreadyInRecord": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "玄奘 — 维基百科",
+          "url": "https://zh.wikipedia.org/zh-cn/%E7%8E%84%E5%A5%98"
+        }
+      ]
+    },
+    {
+      "id": "2019-20-mun-kgd-5",
+      "priority": 2,
+      "domain": "literature",
+      "testedRelation": "Цитата из «Смотрю на водопад в горах Лушань» → Ли Бо",
+      "questionRu": "Кто автор этого стихотворения: «От солнца над Курильницей лиловый дым встаёт, вдали водопад повис над рекой. Летит он прямо вниз на три тысячи чи — как будто Млечный Путь упал с девятого неба»?",
+      "answer": "李白",
+      "semanticDecision": "keep_distinct_fact",
+      "neighborsExamined": [
+        {
+          "id": "literature-q23",
+          "questionRu": "Какого поэта эпохи Тан прозвали «бессмертным поэтом»?",
+          "answer": "李白"
+        },
+        {
+          "id": "literature-q88",
+          "questionRu": "Какое произведение написал Ли Бо (李白)?",
+          "answer": "静夜思"
+        }
+      ],
+      "keepRationale": "Прозвище Ли Бо и его «Думы тихой ночью» — другие отношения. Здесь узнавание отдельного стихотворения. Скрытый 2023-24-mun-krsk-2 проверяет другое произведение («Поднося вино»), тоже не дубль, но оба в одну смешанную партию не нужны.",
+      "glossReuseCells": "literature/authors/lit-a-libai/name, lit-a-wangwei/name; sources самой записи ведут на текст стихотворения; 李颀/王績 потребуют отдельного подтверждения подписей",
+      "risksAndReadiness": "Четыре поэта, единственный ключ. 王維 — традиционная запись 王维, не менять её при переиспользовании подписи. Для 李颀/王績 готовых справок в bank/досье не найдено: подготовить перед показом, не выдумывать.",
+      "fourChoicePreview": [
+        {
+          "id": "o1",
+          "zh": "李颀",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o2",
+          "zh": "李白",
+          "correct": true,
+          "existingGloss": null,
+          "reuseCandidates": [
+            {
+              "record": "2015-16-zak-7",
+              "option": "o4",
+              "gloss": "Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»"
+            },
+            {
+              "record": "2015-16-zak-8",
+              "option": "o5",
+              "gloss": "Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»"
+            }
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "王維",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o4",
+          "zh": "王績",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        }
+      ],
+      "dossier": null,
+      "factRow": null,
+      "evidenceAlreadyInRecord": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "望廬山瀑布 — 维基文库",
+          "url": "https://zh.wikisource.org/wiki/%E6%9C%9B%E5%BB%AC%E5%B1%B1%E7%80%91%E5%B8%83"
+        }
+      ]
+    },
+    {
+      "id": "2020-21-shk-mosobl-52",
+      "priority": 2,
+      "domain": "culture",
+      "testedRelation": "Нормы общего стола → использовать общие палочки и ложки",
+      "questionRu": "Какое из утверждений о застольном этикете китайцев верно?",
+      "answer": "可以用公共筷子和勺子",
+      "semanticDecision": "keep_distinct_fact",
+      "neighborsExamined": [
+        {
+          "id": "2022-23-reg-7",
+          "questionRu": "Благодаря кому, согласно легенде, появились китайские палочки для еды?",
+          "answer": "大禹"
+        }
+      ],
+      "keepRationale": "Легендарный изобретатель палочек — другое отношение. Опубликованного вопроса о перечисленных нормах этикета не найдено.",
+      "glossReuseCells": "Evidence/explanation самой записи; готовых gloss этих утверждений в bank нет",
+      "risksAndReadiness": "Один корректный вариант, остальные описывают нарушения. Подписи к описательным вариантам лучше делать точными переводами, не добавляя вымышленных предписаний. Исходный o3 соединяет две практики; переводить полностью.",
+      "fourChoicePreview": [
+        {
+          "id": "o1",
+          "zh": "茶壶的壶嘴应该朝人的脸",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o2",
+          "zh": "可以用公共筷子和勺子",
+          "correct": true,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o3",
+          "zh": "筷子放在杯子上、插在食物上",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        },
+        {
+          "id": "o4",
+          "zh": "可以在盘子里挑菜",
+          "correct": false,
+          "existingGloss": null,
+          "reuseCandidates": []
+        }
+      ],
+      "dossier": null,
+      "factRow": null,
+      "evidenceAlreadyInRecord": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "使用筷子禁忌 — 维基百科",
+          "url": "https://zh.wikipedia.org/zh-cn/%E4%BD%BF%E7%94%A8%E7%AD%B7%E5%AD%90%E7%A6%81%E5%BF%8C"
+        }
+      ]
+    }
+  ],
+  "excludedOrDeferred": [
+    {
+      "id": "2021-22-mun-amur-9",
+      "decision": "exclude_exact_reverse_duplicate",
+      "activeNeighbor": "literature-q43",
+      "reason": "Лу Синь → Чжоу Шужэнь и Чжоу Шужэнь → Лу Синь проверяют идентичную связь настоящего имени и псевдонима."
+    },
+    {
+      "id": "2023-24-mun-krsk-6",
+      "decision": "exclude_exact_reverse_duplicate",
+      "activeNeighbor": "literature-q25",
+      "reason": "Бай Цзюйи → 琵琶行 и 琵琶行 → Бай Цзюйи — одно авторство."
+    },
+    {
+      "id": "2019-20-mun-lip-4",
+      "decision": "defer_near_duplicate_for_this_mixed_batch",
+      "activeNeighbor": "ethnos-q96",
+      "reason": "Оба опознают мяо по характерному женскому костюму. Набор признаков различен (множество ярких фасонов / батик и серебряные рога), поэтому это не точная обратная пара; однако учебный сюжет слишком близок для приоритета в смешанной партии. Это не предложение навсегда скрыть запись."
+    },
+    {
+      "id": "2020-21-mun-spb-4",
+      "decision": "defer_preview_has_only_three_options",
+      "reason": "Су Ши и цитата — полезный самостоятельный факт, но исходных вариантов три, accepted-общего пула нет. Требование показать четыре потребует новой авторской опции; в этой партии удобнее выбрать другую запись без изменения исходного набора."
+    }
+  ],
+  "mutualDuplicateAssessment": "No exact direct/reverse duplicate relation among these13. Two Journey-to-the-West items test different people/relations; two philosophy items test different schools/doctrines. Avoid both Li Bai poem-author questions in one mixed batch for balance, though not semantic duplicates.",
+  "readiness": "13 candidates for root selection, not13 approved-to-publish records. Five accepted embeds have four ready glossary choices. Eight standalone candidates need glossary preparation/verification for author preview, with gaps identified per item.",
+  "postReviewAuthorDecision": {
+    "date": "2026-11-07",
+    "excludedPermanently": [
+      "2020-21-shk-mosobl-52"
+    ],
+    "reason": "Прямое решение автора 2026-11-07: вопрос №11 второй региональной партии о застольном этикете исключён окончательно. Исходная редакция и оба предложенных варианта переработки отклонены.",
+    "auditIsHistoricalSnapshot": true
+  }
+}

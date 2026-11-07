@@ -374,6 +374,10 @@ class MergesInBankTest(unittest.TestCase):
                 '2018-19-shk-6': ('dynasties-q113', '2018-19-reg-1'),
                 '2016-17-reg-8': ('people-q10', '2018-19-reg-7'),
                 '2015-16-zak-8': ('2016-17-zak-7', '2023-24-reg-7', 'literature-q91'),
+                # Партия 2: сохранены связи о Цао Цао и расселении маньчжуров
+                # после объединения прежних групп из-за новых подписей.
+                '2015-16-zak-7': ('2025-26-mun-mosobl-4',),
+                '2019-20-mun-q727051': ('2018-19-shk-6',),
             }
             if keep_id in related_questions:
                 self.assertIn('factGroup', record)

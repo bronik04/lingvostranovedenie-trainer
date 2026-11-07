@@ -890,15 +890,48 @@
     "fact": {
       "table": "peoples",
       "row": "ppl-cn-manchu",
-      "ask": "name",
-      "where": {
-        "country": "中国"
-      }
+      "ask": "name"
     },
     "check": {
       "verdict": "accept",
-      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
-    }
+      "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
+    },
+    "exclude": [
+      "ppl-cn-hui",
+      "ppl-cn-uyghur",
+      "ppl-cn-miao",
+      "ppl-cn-yi",
+      "ppl-cn-tujia",
+      "ppl-cn-tibetan",
+      "ppl-cn-mongol",
+      "ppl-cn-dong",
+      "ppl-cn-buyi",
+      "ppl-cn-yao",
+      "ppl-cn-bai",
+      "ppl-cn-korean",
+      "ppl-cn-hani",
+      "ppl-cn-li",
+      "ppl-cn-she",
+      "ppl-cn-lisu",
+      "ppl-cn-naxi",
+      "ppl-cn-shui",
+      "ppl-cn-evenki",
+      "ppl-cn-oroqen",
+      "ppl-cn-hezhen",
+      "ppl-cn-xibe",
+      "ppl-ru-russians",
+      "ppl-ru-tatars",
+      "ppl-ru-bashkirs",
+      "ppl-ru-chuvash",
+      "ppl-ru-buryats",
+      "ppl-ru-sakha",
+      "ppl-ru-tuvans",
+      "ppl-ru-kalmyks",
+      "ppl-ru-karelians",
+      "ppl-ru-komi",
+      "ppl-ru-udmurts",
+      "ppl-ru-chechens"
+    ]
   },
   {
     "id": "ethnos-q28",
@@ -961,6 +994,34 @@
     "check": {
       "verdict": "accept",
       "note": "Согласовано автором 2026-11-03 в R:ethnos-q57 (manifest v2). Отдельная проверка: data/review/2026-11-03-editorial-followup-verification.json. Точный набор из четырёх вариантов по согласованию; ответ единственный. Новый факт получил новый ID; прежний вопрос сохранён в архиве."
+    }
+  },
+  {
+    "id": "ethnos-q97",
+    "embeds": "2024-25-shk-mosobl-1",
+    "status": "accepted",
+    "fact": {
+      "table": "languageforms",
+      "row": "lang-guoyu",
+      "ask": "standard"
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
+    }
+  },
+  {
+    "id": "ethnos-q98",
+    "embeds": "2022-23-mun-krsk-9",
+    "status": "accepted",
+    "fact": {
+      "table": "languageforms",
+      "row": "lang-wenyan",
+      "ask": "written"
+    },
+    "check": {
+      "verdict": "accept",
+      "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
     }
   }
 ]

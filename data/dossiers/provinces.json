@@ -2394,7 +2394,8 @@
         "nickname": "zh",
         "river": "zh",
         "known": "zh",
-        "about": "ru"
+        "about": "ru",
+        "industry": "zh"
       },
       "sides": [
         "region",
@@ -2975,36 +2976,50 @@
               "title": "陕西省及西安市文化旅游介绍——2022年“欢乐春节”活动之二 — 中国驻捷克共和国大使馆",
               "url": "https://cz.china-embassy.gov.cn/zxdt/202201/t20220120_10630611.htm",
               "quote": "西安，陕西省省会，古称长安，意在长治久安，周、秦、汉、唐等13个历史朝代曾在这里建都并繁荣昌盛。",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
             },
             {
               "title": "打卡古都西安的文化地标——秦兵马俑 — 新华网",
               "url": "https://www.news.cn/culture/20230511/82236a8d9e54439097703444eec2d17c/c.html",
               "quote": "作为西安文化地标之一的秦兵马俑，位于西安市临潼区，是秦始皇帝陵博物院的重要组成部分。",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
             },
             {
               "title": "西安阔步向“长安” — 人民网陕西频道",
               "url": "http://sn.people.com.cn/n2/2020/0929/c378288-34324684.html",
               "quote": "数千年来，渭河在长安城边流过，聆听古城的脉搏律动。",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
             },
             {
               "title": "西安再现“八水绕长安”胜景 — 人民网（光明日报）",
               "url": "http://politics.people.com.cn/n1/2017/0831/c1001-29505632.html",
               "quote": "渭河两岸的依依垂柳、浐灞湿地的亲水步道、周至水街的秀美风情……漫步在古城西安，处处都是“活力水城”的生动画卷。",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
+            },
+            {
+              "title": "西安航空基地综合保税区简介 — Администрация Сианьской авиационной промышленной базы",
+              "url": "https://caib.xa.gov.cn/zsyz/tzzn/2066773067503251458.html",
+              "quote": "形成了集飞机整机制造、零部件生产、航空新材料研发等为一体的完整产业链。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
             }
           ],
           "olympiad": [],
           "core": true,
           "skipSides": [
             "river"
-          ]
+          ],
+          "industry": {
+            "zh": "西安",
+            "ru": [
+              "Сиань"
+            ],
+            "gloss": "Сиань — в его районе Яньлян развито авиастроение: выпускают самолёты и авиационные детали."
+          }
         },
         {
           "id": "city-kunming",
@@ -3127,43 +3142,57 @@
               "title": "省情概况 — 黑龙江省人民政府网",
               "url": "https://www.hlj.gov.cn/hlj/c108476/202005/c00_30550923.shtml",
               "quote": "黑龙江省，简称黑。省会哈尔滨。",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
             },
             {
               "title": "“冰城”缘何成“热点”？——人文经济视野下的哈尔滨观察 — 新华网",
               "url": "https://www.news.cn/politics/20240107/fb2b5a29ff184dae8660f7714c985639/c.html",
               "quote": "作为我国最北省会城市，这里冬季漫长，动辄出现零下30摄氏度的极寒天气，因此哈尔滨有了响亮的名号——“冰城”。",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
             },
             {
               "title": "“冰城夏都”哈尔滨 顶流城市再迎“亚冬之光” — 中新网黑龙江",
               "url": "https://www.hlj.chinanews.com.cn/hljnews/2024/0517/135328.html",
               "quote": "松花江穿城而过，带来12.5万公顷城中湿地。",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
             },
             {
               "title": "走进黑龙江 — 黑龙江省人民政府",
               "url": "https://www.hlj.gov.cn/hlj/c108475/zjhlj.shtml",
               "quote": "哈尔滨冰雪大世界创始于1999年，历经21年发展积淀，集冰雪艺术、冰雪文化、冰雪演艺、冰雪建筑、冰雪活动、冰雪体育于一体。",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
             },
             {
               "title": "黑龙江省的省会城市最早为齐齐哈尔市 — 人民网党史频道",
               "url": "http://dangshi.people.com.cn/n/2012/1127/c138896-19714354-5.html",
               "quote": "1954年8月1日，黑龙江省正式成立，撤销原松江省建制，哈尔滨市由中央直辖市改为省属市，并入新黑龙江省，省委、省政府机关设在哈尔滨市。",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
+            },
+            {
+              "title": "哈尔滨：聚力聚链聚势 做强航空航天产业集群 — Правительство Хэйлунцзяна",
+              "url": "https://www.hlj.gov.cn/hlj/cycx/202606/c00_31952231.shtml",
+              "quote": "AC332直升机在宁蒗泸沽湖机场试飞。图片由航空工业哈飞提供",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
             }
           ],
           "olympiad": [],
           "core": true,
           "skipSides": [
             "river"
-          ]
+          ],
+          "industry": {
+            "zh": "哈尔滨",
+            "ru": [
+              "Харбин"
+            ],
+            "gloss": "Харбин — один из центров авиастроения; предприятие «Хафэй» выпускает вертолёты."
+          }
         },
         {
           "id": "city-changsha",
@@ -4117,33 +4146,47 @@
               "title": "深圳市 — 广东省人民政府门户网站（广东省旅游局）",
               "url": "https://www.gd.gov.cn/zjgd/csmp/content/post_104990.html",
               "quote": "深圳别称“鹏城”，是中国四大一线城市之一，全球第五大金融中心，广东省省辖市、国家区域中心城市、超大城市。",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
             },
             {
               "title": "深圳概况 — 暨南大学",
               "url": "https://mba.jnu.edu.cn/2021/1117/c32583a661683/page.htm",
               "quote": "深圳，简称“深”，别称鹏城，是广东省下辖的副省级市、计划单列市、超大城市，国务院批复确定的中国经济特区、全国性经济中心城市和国际化城市。",
-              "authority": "academic",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "academic"
             },
             {
               "title": "地理 — 深圳市人民政府门户网站",
               "url": "https://www.sz.gov.cn/cn/zjsz/gl/content/post_12318788.html",
               "quote": "中国南部海滨城市，毗邻中国香港，地处广东省南部，珠江口东岸，东临大亚湾和大鹏湾，西濒珠江口和伶仃洋，南边深圳河与香港相连",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
             },
             {
               "title": "深圳市概况 — 广东省人民政府公报（1984年）",
               "url": "http://www.gd.gov.cn/zwgk/gongbao/1984/1/content/post_3354177.html",
               "quote": "深圳原属宝安县，1979年初经国务院批准，将宝安县改为深圳市建制（省直辖市），是新兴的经济特区城市",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
+            },
+            {
+              "title": "国际经贸考察团探访深圳坪山 — Правительство Шэньчжэня",
+              "url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_12724900.html",
+              "quote": "考察团首先来到位于坪山的比亚迪全球总部展厅",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "industry": {
+            "zh": "深圳",
+            "ru": [
+              "Шэньчжэнь"
+            ],
+            "gloss": "Шэньчжэнь — в районе Пиншань находится штаб-квартира автопроизводителя BYD."
+          }
         },
         {
           "id": "city-yixing",
@@ -5711,6 +5754,53 @@
           "skipSides": [
             "region"
           ]
+        },
+        {
+          "id": "city-changchun",
+          "name": {
+            "zh": "长春",
+            "ru": [
+              "Чанчунь"
+            ],
+            "gloss": "Чанчунь — в 1956 году здесь выпустили первые грузовики «Цзефан» (解放)."
+          },
+          "sources": [
+            {
+              "title": "吉林概况 — 吉林省人民政府",
+              "url": "https://www.jl.gov.cn/shengqing/jlgk/201704/t20170427_2978285.html",
+              "quote": "吉林省简称“吉”，位于中国东北地区中部，幅员面积18.74万平方公里。省会长春市，是全省政治、经济、科教、文化、金融和交通中心",
+              "checkedAt": "2026-10-16",
+              "authority": "official"
+            },
+            {
+              "title": "“吉”字应该怎么写？— 人民网吉林频道",
+              "url": "http://jl.people.com.cn/n2/2023/0714/c349771-40493518.html",
+              "quote": "“吉林”是满语“吉林乌拉”的简称，“吉林”汉语意为“沿”，“乌拉”意为“江”，表示此地位于松花江沿岸，有沿江都市之意。后来将“吉林”之名通用全省，简称“吉”，寓意也不错。",
+              "checkedAt": "2026-10-16",
+              "authority": "official"
+            },
+            {
+              "title": "吉林省历史发展概况 — 长春大学旅游学院",
+              "url": "https://www.tccu.edu.cn/lyx/2019/0102/c2112a16003/page.htm",
+              "quote": "“吉林乌拉”为满语，吉林意为“沿”，乌拉是“大川”的意思。吉林乌拉就是“沿着松花江”的城市，简称吉林。",
+              "checkedAt": "2026-10-16",
+              "authority": "academic"
+            },
+            {
+              "title": "中国第一辆解放牌汽车 — Комиссия местной истории провинции Цзилинь",
+              "url": "https://dfz.jl.gov.cn/zsjl/201303/t20130328_5216055.html",
+              "quote": "1956年7月13日，新中国第一批解放牌汽车在长春第一汽车制造厂试制成功。",
+              "checkedAt": "2026-11-07",
+              "authority": "official"
+            }
+          ],
+          "industry": {
+            "zh": "长春",
+            "ru": [
+              "Чанчунь"
+            ],
+            "gloss": "Чанчунь — в 1956 году здесь выпустили первые грузовики «Цзефан» (解放)."
+          }
         }
       ]
     }
