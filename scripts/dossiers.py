@@ -411,7 +411,8 @@ def _name_pattern(name: str) -> re.Pattern:
     # фамилия на -ов/-ев/-ин склоняется после суффикса (Меньшова, Меньшову): без него основа
     # «меньш» находила бы «меньше» и «меньшего»
     stems = [word.lower() if SURNAME.match(word) else _stem(word.lower()) for word in words]
-    return re.compile(r'(?<!\w)' + r'\W+'.join(re.escape(stem) + r'\w*' for stem in stems))
+    return re.compile(r'(?<!\w)' + r'\W+'.join(
+        re.escape(stem) + (r'(?!\d)' if stem.isdecimal() else r'\w*') for stem in stems))
 
 
 def _mentions(text: str, cell: dict) -> list[str]:

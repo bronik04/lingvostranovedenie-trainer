@@ -22,7 +22,7 @@
             "whyDistinct": "Проверяет три северо-восточные провинции; состав и критерий здесь другие."
           }
         ],
-        "verdict": "distinct-tested-relation; pending-author-review",
+        "verdict": "distinct-tested-relation; accepted-by-author",
         "method": "Targeted search across full visible1014snapshot in Russian and Chinese, then relation comparison with closest records, including inverse forms."
       }
     },
@@ -131,7 +131,7 @@
             "whyDistinct": "Проверяет реку в названиях Хэнань/Хэбэй, а не их соседство с автономным районом."
           }
         ],
-        "verdict": "distinct-tested-relation; pending-author-review",
+        "verdict": "distinct-tested-relation; accepted-by-author",
         "method": "Targeted search across full visible1014snapshot in Russian and Chinese, then relation comparison with closest records, including inverse forms."
       }
     },
@@ -160,7 +160,7 @@
             "whyDistinct": "Спрашивает столицу Синьцзяна, а не расположение Тарима."
           }
         ],
-        "verdict": "distinct-tested-relation; pending-author-review"
+        "verdict": "distinct-tested-relation; accepted-by-author"
       }
     },
     {
@@ -216,7 +216,7 @@
             "whyDistinct": "Прозвище Казани «третья столица», а не событие2024."
           }
         ],
-        "verdict": "distinct-tested-relation; pending-author-review",
+        "verdict": "distinct-tested-relation; accepted-by-author",
         "method": "Targeted search across full visible1014snapshot in Russian and Chinese, then relation comparison with closest records, including inverse forms."
       }
     },
@@ -324,7 +324,7 @@
             "whyDistinct": "Спрашивает год переноса столицы в Петербург, не название закона о чинах."
           }
         ],
-        "verdict": "distinct-tested-relation; pending-author-review",
+        "verdict": "distinct-tested-relation; accepted-by-author",
         "method": "Targeted search across full visible1014snapshot in Russian and Chinese, then relation comparison with closest records, including inverse forms."
       }
     },

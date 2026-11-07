@@ -1508,14 +1508,16 @@ class RemovedIdsTest(unittest.TestCase):
 
 class NumericMentionTest(unittest.TestCase):
     def test_count_is_not_a_substring_of_a_year_or_larger_count(self):
-        answer = {'zh': '21'}
+        answer = {'zh': '21', 'ru': ['21 экономика']}
         for text in ['1721 год', '1421 год', '221 год до н. э.', '1221 год',
                      '2021年', '210 экономик', '321 экономика']:
             with self.subTest(text=text):
                 self.assertEqual(_mentions(text, answer), [])
-        for text in ['21 экономика', '21个经济体', '(21)', 'число — 21.']:
+        for text, expected in [('21 экономика', ['21', '21 экономика']),
+                               ('21个经济体', ['21']), ('(21)', ['21']),
+                               ('число — 21.', ['21'])]:
             with self.subTest(text=text):
-                self.assertEqual(_mentions(text, answer), ['21'])
+                self.assertEqual(_mentions(text, answer), expected)
 
     def test_cross_dossier_count_keeps_real_hints_but_ignores_year_suffix(self):
         def loaded(text):

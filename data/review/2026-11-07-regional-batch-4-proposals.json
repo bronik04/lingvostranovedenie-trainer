@@ -2,7 +2,7 @@
   "reviewId": "regional-2026-11-07-batch-4",
   "date": "2026-11-07",
   "batch": 4,
-  "state": "accepted-pending-final-release-checks",
+  "state": "accepted-applied-pending-deployment",
   "baseCommit": "9bdf80209d45c6a27ed2f319694b01573ee152d6",
   "baselineVisibleCount": 1014,
   "eligibleConservedCount": 243,
@@ -104,7 +104,7 @@
             "whyDistinct": "Проверяет три северо-восточные провинции; состав и критерий здесь другие."
           }
         ],
-        "verdict": "distinct-tested-relation; pending-author-review",
+        "verdict": "distinct-tested-relation; accepted-by-author",
         "method": "Targeted search across full visible1014snapshot in Russian and Chinese, then relation comparison with closest records, including inverse forms."
       },
       "warnings": [
@@ -197,7 +197,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -379,7 +379,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -555,7 +555,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -723,7 +723,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -836,7 +836,7 @@
             "whyDistinct": "Проверяет реку в названиях Хэнань/Хэбэй, а не их соседство с автономным районом."
           }
         ],
-        "verdict": "distinct-tested-relation; pending-author-review",
+        "verdict": "distinct-tested-relation; accepted-by-author",
         "method": "Targeted search across full visible1014snapshot in Russian and Chinese, then relation comparison with closest records, including inverse forms."
       },
       "warnings": [
@@ -1004,7 +1004,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -1142,7 +1142,7 @@
             "whyDistinct": "Спрашивает столицу Синьцзяна, а не расположение Тарима."
           }
         ],
-        "verdict": "distinct-tested-relation; pending-author-review"
+        "verdict": "distinct-tested-relation; accepted-by-author"
       },
       "warnings": [
         "В условии есть известный ранг Тарима, но ключ новой карточки — регион; соседний nature-q27 проверяет другой атрибут реки. Подписи и фактRow нужно проверить на этапе встраивания."
@@ -1205,7 +1205,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -1381,7 +1381,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -1493,7 +1493,7 @@
             "whyDistinct": "Прозвище Казани «третья столица», а не событие2024."
           }
         ],
-        "verdict": "distinct-tested-relation; pending-author-review",
+        "verdict": "distinct-tested-relation; accepted-by-author",
         "method": "Targeted search across full visible1014snapshot in Russian and Chinese, then relation comparison with closest records, including inverse forms."
       },
       "warnings": [
@@ -1553,7 +1553,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -1726,7 +1726,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -1909,7 +1909,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -2083,7 +2083,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -2184,7 +2184,7 @@
             "whyDistinct": "Спрашивает год переноса столицы в Петербург, не название закона о чинах."
           }
         ],
-        "verdict": "distinct-tested-relation; pending-author-review",
+        "verdict": "distinct-tested-relation; accepted-by-author",
         "method": "Targeted search across full visible1014snapshot in Russian and Chinese, then relation comparison with closest records, including inverse forms."
       },
       "warnings": [
@@ -2245,7 +2245,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -2433,7 +2433,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -2606,7 +2606,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -2788,7 +2788,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -2971,7 +2971,7 @@
         "date": "2026-11-07",
         "applied": true
       },
-      "status": "draft-pending-author-review",
+      "status": "accepted-applied",
       "originalEvidence": [
         {
           "checkedAt": "2026-10-25",
@@ -4143,5 +4143,5 @@
     "acceptedManifestHash": "1ab8b13fb11fb1ae9d3cb2a4303297a93ca9c0db4953b70836f27cfc2a819ba9",
     "instruction": "Остальные 16 вопросов принимаем. Встраивай в досье, проверь подписи и взаимные подсказки, затем публикуй на сайте."
   },
-  "manifestHash": "1186387fb2b5051befb9c052a919af9fc46e6a286343618ac5697c34837b2d6b"
+  "manifestHash": "172506210ca16f1e5508f3f4531052a7fed2d771678c3f233c515d1bbe20688b"
 }
