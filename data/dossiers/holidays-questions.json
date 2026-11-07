@@ -188,7 +188,10 @@
       "hol-ru-shengli",
       "hol-ru-eluosi",
       "hol-ru-tuanjie",
-      "hol-ru-zhishi"
+      "hol-ru-zhishi",
+      "hol-romaday",
+      "hol-taiwan-teachers",
+      "hol-un-chinese"
     ],
     "check": {
       "verdict": "accept",
@@ -1073,6 +1076,21 @@
     "check": {
       "verdict": "accept",
       "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
+    }
+  },
+  {
+    "id": "holidays-q54",
+    "embeds": "2021-22-mun-amur-1",
+    "status": "accepted",
+    "fact": {
+      "table": "holidays",
+      "row": "hol-un-chinese",
+      "ask": "chinesedate"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Принято автором 2026-11-07 в составе 16 вопросов партии 3; формулировка, исходный ключ и четыре показанных варианта сохранены. Подписи и первичные источники проверены в предложениях и независимо; финальная проверка выпуска — regional-batch-3-release-review."
     }
   }
 ]

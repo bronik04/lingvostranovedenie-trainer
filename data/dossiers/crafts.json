@@ -14,7 +14,8 @@
         "feature": "zh",
         "unesco": "zh",
         "about": "ru",
-        "technique": "zh"
+        "technique": "zh",
+        "embroidery": "zh"
       },
       "required": [
         "name",
@@ -1277,12 +1278,31 @@
               "quote": "广东的金银线绣对17~18世纪的法国绘画、手工艺以及建筑艺术、室内装饰等产生了重大影响",
               "authority": "official",
               "checkedAt": "2026-10-18"
+            },
+            {
+              "url": "https://www.ad.tsinghua.edu.cn/info/1208/25829.htm",
+              "title": "走进粤绣——清华大学雪花秀非遗保护基金团队赴广东考察粤绣技艺",
+              "quote": "人们习惯称潮汕地区的刺绣为潮绣，称广州一带的刺绣为广绣。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "browsed_search_excerpt"
             }
           ],
-          "olympiad": [],
+          "olympiad": [
+            "2024-25-mun-irk-10"
+          ],
           "unesco": {
             "zh": "未列入人类非物质文化遗产名录",
             "gloss": "Не внесено в списки нематериального культурного наследия ЮНЕСКО"
+          },
+          "embroidery": {
+            "zh": "粤绣",
+            "ru": [
+              "гуандунская вышивка",
+              "кантонская вышивка",
+              "Гуандунская вышивка"
+            ],
+            "gloss": "Гуандунская вышивка — объединяет гуанчжоускую и чаочжоускую школы."
           }
         },
         {
@@ -5284,6 +5304,152 @@
             }
           ],
           "olympiad": []
+        },
+        {
+          "id": "cr-hangxiu",
+          "sources": [
+            {
+              "url": "https://www.hzarchives.org.cn/info/6940",
+              "title": "特产风俗 — 杭州市档案馆",
+              "quote": "又名杭绣，亦称古绣",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "飞针引线 指尖上传承非遗技艺 — 杭州文明网",
+              "url": "https://hzwmw.hzxcw.gov.cn/content/content_38530.html",
+              "quote": "杭绣，早前也称“古绣”和“宋绣”",
+              "authority": "official",
+              "verificationMethod": "web-search-official-exact-indexed-passage",
+              "verificationNote": "Exact passage read in the indexed official page. Direct full-page retrieval was not attempted; this is not a full-page verification.",
+              "supports": [
+                "杭绣 also called 古绣"
+              ],
+              "checkedAt": "2026-11-07",
+              "provenance": "new-source-checked-in-this-subtask"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "杭绣",
+            "ru": [
+              "Ханчжоуская вышивка"
+            ],
+            "gloss": "Ханчжоуская вышивка — её также называют гусю, то есть «старинная вышивка»."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "about": "Ханчжоуская вышивка — её также называют гусю, то есть «старинная вышивка».",
+          "embroidery": {
+            "zh": "杭绣",
+            "ru": [
+              "Ханчжоуская вышивка"
+            ],
+            "gloss": "Ханчжоуская вышивка — её также называют гусю, то есть «старинная вышивка»."
+          },
+          "kind": {
+            "zh": "刺绣"
+          }
+        },
+        {
+          "id": "cr-luxiu",
+          "sources": [
+            {
+              "url": "https://www.ihchina.cn/project_details/23544.html",
+              "title": "鲁绣 — 中国非物质文化遗产网",
+              "quote": "以柞蚕丝线、彩色合股丝线、棉线等为绣线",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "鲁绣 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/240042.html",
+              "quote": "山东民间绣品，亦称“衣线绣”",
+              "authority": "official",
+              "verificationMethod": "web-search-official-museum-exact-indexed-passage",
+              "verificationNote": "Exact museum entry read in indexed search text. Direct open returned TimeoutError; full page was not read. This second source confirms identity/region; the original ihchina.cn source confirms 柞蚕丝线.",
+              "supports": [
+                "鲁绣 is Shandong embroidery"
+              ],
+              "checkedAt": "2026-11-07",
+              "provenance": "new-source-checked-in-this-subtask"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "鲁绣",
+            "ru": [
+              "Шаньдунская вышивка"
+            ],
+            "gloss": "Шаньдунская вышивка — использует в том числе нити из дубового шелкопряда."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "about": "Шаньдунская вышивка — использует в том числе нити из дубового шелкопряда.",
+          "embroidery": {
+            "zh": "鲁绣",
+            "ru": [
+              "Шаньдунская вышивка"
+            ],
+            "gloss": "Шаньдунская вышивка — использует в том числе нити из дубового шелкопряда."
+          },
+          "kind": {
+            "zh": "刺绣"
+          }
+        },
+        {
+          "id": "cr-jingxiu",
+          "sources": [
+            {
+              "url": "https://www.beijing.gov.cn/renwen/bjgk/cygk/cyfy/202307/t20230712_3160985.html",
+              "title": "京绣 — 北京市人民政府 / 朝阳区文化和旅游局",
+              "quote": "京绣作为宫廷刺绣主要应用于服装",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "京绣 — 中国文艺网（中国文学艺术界联合会）",
+              "url": "https://cflac.org.cn/gymssy/ctgymsml/cxzmrz/201305/t20130529_193587.html",
+              "quote": "京绣又称宫绣，是以北京为中心的刺绣产品的总称。明清时期开始大为兴盛，多用于宫廷装饰、服饰",
+              "authority": "official",
+              "verificationMethod": "web-search-official-cultural-organization-exact-indexed-passage",
+              "verificationNote": "Exact passage read in indexed search text. Direct open returned 403 Forbidden; full page was not read.",
+              "supports": [
+                "京绣 / 宫绣",
+                "Beijing-centered embroidery",
+                "court decoration and dress"
+              ],
+              "checkedAt": "2026-11-07",
+              "provenance": "new-source-checked-in-this-subtask"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "京绣",
+            "ru": [
+              "Пекинская вышивка"
+            ],
+            "gloss": "Пекинская вышивка — известна как «дворцовая», украшала одежду императорского двора."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "about": "Пекинская вышивка — известна как «дворцовая», украшала одежду императорского двора.",
+          "embroidery": {
+            "zh": "京绣",
+            "ru": [
+              "Пекинская вышивка"
+            ],
+            "gloss": "Пекинская вышивка — известна как «дворцовая», украшала одежду императорского двора."
+          },
+          "kind": {
+            "zh": "刺绣"
+          }
         }
       ],
       "sides": [

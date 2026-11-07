@@ -1,0 +1,23 @@
+{
+  "questions": 16,
+  "cards": 128,
+  "options": 512,
+  "viewports": [
+    1280,
+    375
+  ],
+  "pinyin": [
+    false,
+    true
+  ],
+  "answers": [
+    "correct",
+    "incorrect"
+  ],
+  "pageErrors": [],
+  "screenshots": [
+    "/tmp/lingvo-batch3-1-mobile.png",
+    "/tmp/lingvo-batch3-12-mobile.png"
+  ],
+  "status": "passed"
+}

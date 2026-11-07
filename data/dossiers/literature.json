@@ -13,7 +13,10 @@
         "work": "zh",
         "prize": "zh",
         "about": "ru",
-        "poetryname": "zh"
+        "poetryname": "zh",
+        "fullname": "zh",
+        "verseauthor": "zh",
+        "prizeauthor": "zh"
       },
       "sides": [
         "work",
@@ -421,9 +424,20 @@
               "quote": "李白的《静夜思》脍炙人口",
               "checkedAt": "2026-10-17",
               "authority": "academic"
+            },
+            {
+              "url": "https://ctext.org/text.pl?if=en&node=136578&remap=gb",
+              "title": "《全唐诗》卷一百六十二《将进酒》— Chinese Text Project",
+              "quote": "君不见黄河之水天上来，奔流到海不复回。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "browsed_search_excerpt",
+              "primaryText": true
             }
           ],
-          "olympiad": [],
+          "olympiad": [
+            "2023-24-mun-krsk-2"
+          ],
           "core": true,
           "skipSides": [
             "alias"
@@ -434,6 +448,14 @@
               "Ли Бо"
             ],
             "gloss": "Ли Бо — «бессмертный поэт» эпохи Тан, автор «Дум тихой ночью»"
+          },
+          "verseauthor": {
+            "zh": "李白",
+            "ru": [
+              "Ли Бо",
+              "Ли Бай"
+            ],
+            "gloss": "Ли Бо — поэма открывается образом Хуанхэ, текущей словно с неба."
           }
         },
         {
@@ -517,7 +539,14 @@
           "core": true,
           "skipSides": [
             "alias"
-          ]
+          ],
+          "verseauthor": {
+            "zh": "杜甫",
+            "ru": [
+              "Ду Фу"
+            ],
+            "gloss": "Ду Фу — автор стихотворения «Весенний пейзаж»."
+          }
         },
         {
           "id": "lit-a-baijuyi",
@@ -594,7 +623,14 @@
               "authority": "academic"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "verseauthor": {
+            "zh": "白居易",
+            "ru": [
+              "Бо Цзюйи"
+            ],
+            "gloss": "Бо Цзюйи — автор поэм «Вечная печаль» и «Песнь о лютнистке»."
+          }
         },
         {
           "id": "lit-a-wangwei",
@@ -2394,6 +2430,14 @@
               "quote": "莫言在当代文学各个阶段——20世纪90年代、21世纪初，走着自己的路，沉寂而又沉稳，开辟出一条自己的道路。",
               "checkedAt": "2026-10-17",
               "authority": "academic"
+            },
+            {
+              "url": "https://www.nobelprize.org/prizes/literature/2012/prize-announcement/?print=1",
+              "title": "The Nobel Prize in Literature 2012 – Prize announcement — NobelPrize.org",
+              "quote": "Announcement of the 2012 Nobel Prize in Literature to Mo Yan",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt"
             }
           ],
           "olympiad": [],
@@ -2401,7 +2445,14 @@
           "skipSides": [
             "alias",
             "prize"
-          ]
+          ],
+          "prizeauthor": {
+            "zh": "莫言",
+            "ru": [
+              "Мо Янь"
+            ],
+            "gloss": "Мо Янь — Нобелевскую премию по литературе получил в 2012 году."
+          }
         },
         {
           "id": "lit-a-caoyu",
@@ -2842,7 +2893,14 @@
           "core": true,
           "skipSides": [
             "title"
-          ]
+          ],
+          "fullname": {
+            "zh": "米哈伊尔·莱蒙托夫",
+            "ru": [
+              "Михаил Лермонтов"
+            ],
+            "gloss": "Михаил Лермонтов — автор поэм «Демон» и «Мцыри» и романа «Герой нашего времени»"
+          }
         },
         {
           "id": "lit-a-ru-gogol",
@@ -2956,7 +3014,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "fullname": {
+            "zh": "列夫·托尔斯泰",
+            "ru": [
+              "Лев Толстой"
+            ],
+            "gloss": "Лев Толстой — автор романа-эпопеи «Война и мир»"
+          }
         },
         {
           "id": "lit-a-ru-dostoevsky",
@@ -3113,7 +3178,14 @@
           "core": true,
           "skipSides": [
             "alias"
-          ]
+          ],
+          "fullname": {
+            "zh": "安东·契诃夫",
+            "ru": [
+              "Антон Чехов"
+            ],
+            "gloss": "Антон Чехов — автор пьес «Чайка», «Три сестры» и «Вишнёвый сад»"
+          }
         },
         {
           "id": "lit-a-ru-gorky",
@@ -3574,7 +3646,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "fullname": {
+            "zh": "伊万·屠格涅夫",
+            "ru": [
+              "Иван Тургенев"
+            ],
+            "gloss": "Иван Тургенев — автор романа «Отцы и дети», вышедшего в 1862 году"
+          }
         },
         {
           "id": "lit-a-ru-solzhenitsyn",
@@ -3835,7 +3914,14 @@
           "core": true,
           "skipSides": [
             "prize"
-          ]
+          ],
+          "prizeauthor": {
+            "zh": "余华",
+            "ru": [
+              "Юй Хуа"
+            ],
+            "gloss": "Юй Хуа — получил итальянскую премию «Гринцане Кавур» в 1998 году."
+          }
         },
         {
           "id": "lit-a-chenzhongshi",
@@ -4052,6 +4138,288 @@
               "Ван Цзи"
             ],
             "gloss": "Ван Цзи — поэт начала Тан; «Смотрю вдаль» (野望) — осенний сельский пейзаж"
+          }
+        },
+        {
+          "id": "lit-a-ru-griboyedov",
+          "sources": [
+            {
+              "url": "https://kp.rusneb.ru/item/material/gore-ot-uma",
+              "title": "Горе от ума — НЭБ, Книжные памятники",
+              "quote": "Комедия в стихах «Горе от ума» (1822—1824) Александра Сергеевича Грибоедова",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "web-search-primary-library-text-verified"
+            },
+            {
+              "title": "Открыта выставка, посвящённая 230-летию со дня рождения Александра Сергеевича Грибоедова — СГУ, Зональная научная библиотека",
+              "url": "https://www.sgu.ru/news/2025/otkryta-vystavka-posvyaschyonnaya-230-letiyu-so-dnya-rozhdeniya-aleksandra-sergeevicha",
+              "quote": "Александр Сергеевич Грибоедов – талантливый русский дипломат, известный драматург, лингвист, историк, востоковед, одарённый пианист и композитор.",
+              "authority": "academic",
+              "verificationMethod": "web-open-primary-university-page-and-find-exact-text",
+              "verificationNote": "Read full-page extraction and exact sentence at line 643. It explicitly includes all three occupations required by the accepted question.",
+              "supports": [
+                "diplomat",
+                "orientalist",
+                "composer"
+              ],
+              "checkedAt": "2026-11-07",
+              "provenance": "new-source-checked-in-this-subtask"
+            }
+          ],
+          "olympiad": [
+            "2023-24-mun-mosobl-3"
+          ],
+          "name": {
+            "zh": "亚历山大·格里鲍耶陀夫",
+            "ru": [
+              "Александр Грибоедов"
+            ],
+            "gloss": "Александр Грибоедов — автор комедии в стихах «Горе от ума»"
+          },
+          "country": {
+            "zh": "俄罗斯"
+          },
+          "about": "Александр Грибоедов — автор комедии в стихах «Горе от ума»",
+          "fullname": {
+            "zh": "亚历山大·格里鲍耶陀夫",
+            "ru": [
+              "Александр Грибоедов"
+            ],
+            "gloss": "Александр Грибоедов — автор комедии в стихах «Горе от ума»"
+          }
+        },
+        {
+          "id": "lit-a-ru-leskov",
+          "sources": [
+            {
+              "url": "https://www.culture.ru/persons/8216/nikolai-leskov?ysclid=md42eeblb1932775921",
+              "title": "Лесков Николай Семенович — Культура.РФ",
+              "quote": "Одним из самых известных произведений Лескова стал «Сказ о тульском косом Левше и о стальной блохе»",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "web-search-primary-cultural-portal-text-verified"
+            },
+            {
+              "title": "Н. С. Лесков. Левша: сказ о тульском косом Левше и о стальной блохе — Президентская библиотека",
+              "url": "https://www.prlib.ru/item/1724963",
+              "quote": "Н.С. Лесков. Левша: сказ о тульском косом Левше и о стальной блохе",
+              "authority": "official",
+              "verificationMethod": "web-open-primary-library-catalog-record-exact-text",
+              "verificationNote": "Read public catalog record and description, lines 36 and 43. Digital images are available only in electronic reading rooms; only the public metadata was checked.",
+              "supports": [
+                "Leskov authored Левша",
+                "Tula craftsman and steel flea in full work title"
+              ],
+              "checkedAt": "2026-11-07",
+              "provenance": "new-source-checked-in-this-subtask"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "尼古拉•列斯科夫",
+            "ru": [
+              "Николай Лесков"
+            ],
+            "gloss": "Николай Лесков — автор сказа «Левша» о тульском мастере и стальной блохе"
+          },
+          "country": {
+            "zh": "俄罗斯"
+          },
+          "about": "Николай Лесков — автор сказа «Левша» о тульском мастере и стальной блохе",
+          "fullname": {
+            "zh": "尼古拉•列斯科夫",
+            "ru": [
+              "Николай Лесков"
+            ],
+            "gloss": "Николай Лесков — автор сказа «Левша» о тульском мастере и стальной блохе"
+          }
+        },
+        {
+          "id": "lit-a-ru-bazhov",
+          "sources": [
+            {
+              "url": "https://ar.culture.ru/ru/subject/kniga-malahitovaya-shkatulka",
+              "title": "Малахитовая шкатулка — Мемориальный дом-музей П. П. Бажова, ARTEFACT",
+              "quote": "Первый сборник сказов «Малахитовая шкатулка» вышел, когда его автору, Павлу Петровичу Бажову, исполнилось 60 лет, — в 1939 году.",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "web-open-verified"
+            },
+            {
+              "title": "«Знакомьтесь с книгой всей семьёй: «Уральские сказы П. Бажова» — Литературно-мемориальный музей И. А. Бунина",
+              "url": "https://bunin.eletsmuseum.ru/znakomtes-s-knigoj-vsej-semyoj-uralskie-skazy-p-bazhova/",
+              "quote": "Получил известность как автор уральских сказов. … В 1939 году появилось и первое их издание – «Малахитовая шкатулка».",
+              "authority": "official",
+              "verificationMethod": "web-open-primary-museum-page-exact-text",
+              "verificationNote": "Read full page; quoted fragments are at lines 9–10. Ellipsis marks omission between two exact fragments. Museum identifies the page as its official site.",
+              "supports": [
+                "author of Ural tales",
+                "first collection publication in 1939"
+              ],
+              "checkedAt": "2026-11-07",
+              "provenance": "new-source-checked-in-this-subtask"
+            }
+          ],
+          "olympiad": [
+            "2025-26-mun-mosobl-10"
+          ],
+          "name": {
+            "zh": "帕维尔·巴若夫",
+            "ru": [
+              "Павел Бажов"
+            ],
+            "gloss": "Павел Бажов — сборник «Малахитовая шкатулка» впервые вышел в 1939 году"
+          },
+          "country": {
+            "zh": "俄罗斯"
+          },
+          "about": "Павел Бажов — сборник «Малахитовая шкатулка» впервые вышел в 1939 году",
+          "fullname": {
+            "zh": "帕维尔·巴若夫",
+            "ru": [
+              "Павел Бажов"
+            ],
+            "gloss": "Павел Бажов — сборник «Малахитовая шкатулка» впервые вышел в 1939 году"
+          }
+        },
+        {
+          "id": "lit-a-wangzhihuan",
+          "sources": [
+            {
+              "url": "https://www.sjs.com.cn/Images/attached/file/20140603/20140603151242_2776.pdf",
+              "title": "山东教育出版社：王之涣诗歌教学材料",
+              "quote": "以《登鹳雀楼》、《凉州词》为代表作",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "王之涣《凉州词》异文全面考辨 — 北京大学机构知识库（商丘师范学院学报）",
+              "url": "https://ir.pku.edu.cn/handle/20.500.11897/583673",
+              "quote": "王之涣的《凉州词》就是其中的一个典型。",
+              "authority": "academic",
+              "verificationMethod": "web-search-primary-university-repository-exact-indexed-abstract",
+              "verificationNote": "Read indexed repository metadata and abstract, naming author 盛大林 and journal 商丘师范学院学报 (2020-07-15). Direct open returned TimeoutError; the full repository page was not read.",
+              "supports": [
+                "Wang Zhihuan authored 凉州词"
+              ],
+              "checkedAt": "2026-11-07",
+              "provenance": "new-source-checked-in-this-subtask"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "王之涣",
+            "ru": [
+              "Ван Чжихуань"
+            ],
+            "gloss": "Ван Чжихуань — танский поэт, автор «Песен Лянчжоу»."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "about": "Ван Чжихуань — танский поэт, автор «Песен Лянчжоу».",
+          "verseauthor": {
+            "zh": "王之涣",
+            "ru": [
+              "Ван Чжихуань"
+            ],
+            "gloss": "Ван Чжихуань — танский поэт, автор «Песен Лянчжоу»."
+          }
+        },
+        {
+          "id": "lit-a-gaoxingjian",
+          "sources": [
+            {
+              "url": "https://www.nobelprize.org/prizes/literature/2000/gao/facts/",
+              "title": "Gao Xingjian – Facts — NobelPrize.org",
+              "quote": "Soul Mountain (1999) is based on impressions from journeys in southern and southwestern China",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt",
+              "verificationNote": "Canonical page returned403 on direct open; excerpt read from official indexed page https://www.nobelprize.org/laureate/734%26lang%3Den"
+            },
+            {
+              "title": "The Nobel Prize for Literature 2000: Gao Xingjian — Swedish Academy press release, Simplified Chinese version",
+              "url": "https://www.nobelprize.org/uploads/2018/06/press-simpl.pdf",
+              "quote": "２０００年的诺贝尔文学奖授予中文作家高行健",
+              "authority": "official",
+              "verificationMethod": "web-search-awarding-body-exact-indexed-pdf-passage",
+              "verificationNote": "Read exact indexed PDF passage including press-release date 12 October 2000. Direct PDF open returned 403 Forbidden; the PDF itself was not read. Indexed text also states that 灵山 is based on journeys in southern and southwestern China. This is a second document/URL from the same awarding institution, not an independent publisher.",
+              "supports": [
+                "2000 Nobel Prize in Literature awarded to Gao Xingjian"
+              ],
+              "checkedAt": "2026-11-07",
+              "provenance": "new-source-checked-in-this-subtask"
+            }
+          ],
+          "olympiad": [
+            "2025-26-mun-tat-56"
+          ],
+          "name": {
+            "zh": "高行健",
+            "ru": [
+              "Гао Синцзянь"
+            ],
+            "gloss": "Гао Синцзянь — его «Гора души» основана на путешествиях по югу Китая."
+          },
+          "country": {
+            "zh": "法国"
+          },
+          "about": "Гао Синцзянь — его «Гора души» основана на путешествиях по югу Китая.",
+          "prizeauthor": {
+            "zh": "高行健",
+            "ru": [
+              "Гао Синцзянь"
+            ],
+            "gloss": "Гао Синцзянь — его «Гора души» основана на путешествиях по югу Китая."
+          }
+        },
+        {
+          "id": "lit-a-sutong",
+          "sources": [
+            {
+              "url": "https://www.chinawriter.com.cn/talk/2015/2015-09-28/254216.html",
+              "title": "第九届茅盾文学奖获奖作家·访谈 — 中国作家网",
+              "quote": "这次以长篇小说《黄雀记》获得茅盾文学奖",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt",
+              "dateEvidence": "2015年09月28日"
+            },
+            {
+              "title": "著名作家苏童到我校作报告 — 辽宁师范大学新闻网",
+              "url": "https://news.lnnu.edu.cn/info/1162/3246.htm",
+              "quote": "2015年8月16日，苏童的力作《黄雀记》获第九届茅盾文学奖。",
+              "authority": "academic",
+              "verificationMethod": "web-open-primary-university-page-exact-text",
+              "verificationNote": "Read full page, exact dated award statement at line 40. Page publication date is 2016-07-01.",
+              "supports": [
+                "Su Tong received the Mao Dun Literature Prize in 2015"
+              ],
+              "checkedAt": "2026-11-07",
+              "provenance": "new-source-checked-in-this-subtask"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "苏童",
+            "ru": [
+              "Су Тун"
+            ],
+            "gloss": "Су Тун — в 2015 году получил литературную премию Мао Дуня."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "about": "Су Тун — в 2015 году получил литературную премию Мао Дуня.",
+          "prizeauthor": {
+            "zh": "苏童",
+            "ru": [
+              "Су Тун"
+            ],
+            "gloss": "Су Тун — в 2015 году получил литературную премию Мао Дуня."
           }
         }
       ]

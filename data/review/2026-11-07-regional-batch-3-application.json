@@ -1,0 +1,1557 @@
+{
+  "reviewId": "regional-2026-11-07-batch-3",
+  "date": "2026-11-07",
+  "state": "approved-for-release",
+  "publicationAuthorized": true,
+  "selectedCount": 16,
+  "visibleCountBefore": 998,
+  "expectedVisibleCountAfter": 1014,
+  "fullBankCount": 1269,
+  "approvedManifestHash": "14d704d9d96bad77660f718f7324b46eec683890f3e32f78683e1f5b74c6fe16",
+  "currentManifestHash": "e46222edf253bb0bb603ad4d06a830c1c9796de2079d3822933a738265a18def",
+  "excludedFromCurrentBatch": [
+    "2018-19-mun-lenobl-51",
+    "2021-22-mun-omsk-9",
+    "2022-23-mun-mosobl-2",
+    "2024-25-mun-nsk-2"
+  ],
+  "items": [
+    {
+      "reviewNumber": 1,
+      "questionId": "2019-20-mun-lip-1",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q126",
+      "fact": {
+        "table": "regiongroups",
+        "row": "rg-dongbei",
+        "ask": "name"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 3,
+      "questionId": "2024-25-mun-irk-10",
+      "dossier": "crafts",
+      "dossierQuestion": "crafts-q139",
+      "fact": {
+        "table": "crafts",
+        "row": "cr-yuexiu",
+        "ask": "embroidery"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 5,
+      "questionId": "2024-25-shk-mosobl-7",
+      "dossier": "sets",
+      "dossierQuestion": "sets-q13",
+      "fact": {
+        "table": "colors",
+        "row": "color-purple",
+        "ask": "name"
+      },
+      "exclude": [
+        "color-white",
+        "color-black"
+      ]
+    },
+    {
+      "reviewNumber": 6,
+      "questionId": "2023-24-mun-mosobl-3",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q107",
+      "fact": {
+        "table": "authors",
+        "row": "lit-a-ru-griboyedov",
+        "ask": "fullname"
+      },
+      "exclude": [
+        "lit-a-ru-chekhov",
+        "lit-a-ru-leskov",
+        "lit-a-ru-bazhov"
+      ]
+    },
+    {
+      "reviewNumber": 7,
+      "questionId": "2024-25-mun-kem-4",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q127",
+      "fact": {
+        "table": "provinces",
+        "row": "prov-guizhou",
+        "ask": "coastname"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 8,
+      "questionId": "2023-24-mun-krsk-2",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q109",
+      "fact": {
+        "table": "authors",
+        "row": "lit-a-libai",
+        "ask": "verseauthor"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 9,
+      "questionId": "2022-23-mun-orel-4",
+      "dossier": "modern-history",
+      "dossierQuestion": "modern-history-q119",
+      "fact": {
+        "table": "countries",
+        "row": "country-uk",
+        "ask": "name"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 10,
+      "questionId": "2021-22-mun-amur-1",
+      "dossier": "holidays",
+      "dossierQuestion": "holidays-q54",
+      "fact": {
+        "table": "holidays",
+        "row": "hol-un-chinese",
+        "ask": "chinesedate"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 12,
+      "questionId": "2025-26-shk-mosobl-6",
+      "dossier": "sets",
+      "dossierQuestion": "sets-q14",
+      "fact": {
+        "table": "colors",
+        "row": "color-black",
+        "ask": "wuxing"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 13,
+      "questionId": "2025-26-shk-mosobl-13",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q128",
+      "fact": {
+        "table": "provinces",
+        "row": "prov-guangdong",
+        "ask": "neighborname"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 15,
+      "questionId": "2022-23-shk-mosobl-17",
+      "dossier": "sets",
+      "dossierQuestion": "sets-q15",
+      "fact": {
+        "table": "teachingsets",
+        "row": "teach-three",
+        "ask": "name"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 16,
+      "questionId": "2024-25-mun-spb-8",
+      "dossier": "modern-history",
+      "dossierQuestion": "modern-history-q120",
+      "fact": {
+        "table": "milestones",
+        "row": "mile-mao-death",
+        "ask": "year"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 17,
+      "questionId": "2022-23-mun-spb-8",
+      "dossier": "ethnos",
+      "dossierQuestion": "ethnos-q99",
+      "fact": {
+        "table": "religions",
+        "row": "rel-orthodox",
+        "ask": "name"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 18,
+      "questionId": "2025-26-mun-mosobl-10",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q108",
+      "fact": {
+        "table": "authors",
+        "row": "lit-a-ru-bazhov",
+        "ask": "fullname"
+      },
+      "exclude": [
+        "lit-a-ru-lermontov",
+        "lit-a-ru-turgenev",
+        "lit-a-ru-griboyedov"
+      ]
+    },
+    {
+      "reviewNumber": 19,
+      "questionId": "2023-24-mun-spb-8",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q129",
+      "fact": {
+        "table": "cities",
+        "row": "city-lushun",
+        "ask": "historicname"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 20,
+      "questionId": "2025-26-mun-tat-56",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q110",
+      "fact": {
+        "table": "authors",
+        "row": "lit-a-gaoxingjian",
+        "ask": "prizeauthor"
+      },
+      "exclude": []
+    }
+  ],
+  "changedCells": [
+    {
+      "dossier": "provinces",
+      "table": "regiongroups",
+      "row": "rg-hei-anhui-fujian",
+      "column": "name",
+      "zh": "黑龙江、安徽、福建",
+      "gloss": "Хэйлунцзян, Аньхой, Фуцзянь — Фуцзянь лежит на юго-восточном побережье."
+    },
+    {
+      "dossier": "provinces",
+      "table": "regiongroups",
+      "row": "rg-dongbei",
+      "column": "name",
+      "zh": "黑龙江、辽宁、吉林",
+      "gloss": "Хэйлунцзян, Ляонин, Цзилинь — их центры: Харбин, Шэньян и Чанчунь."
+    },
+    {
+      "dossier": "provinces",
+      "table": "regiongroups",
+      "row": "rg-hei-hongkong-liao",
+      "column": "name",
+      "zh": "黑龙江、香港、辽宁",
+      "gloss": "Хэйлунцзян, Гонконг, Ляонин — Гонконг имеет статус особого административного района."
+    },
+    {
+      "dossier": "provinces",
+      "table": "regiongroups",
+      "row": "rg-east-coast",
+      "column": "name",
+      "zh": "山东、江苏、浙江",
+      "gloss": "Шаньдун, Цзянсу, Чжэцзян — входят в восточный экономический регион Китая."
+    },
+    {
+      "dossier": "crafts",
+      "table": "crafts",
+      "row": "cr-hangxiu",
+      "column": "embroidery",
+      "zh": "杭绣",
+      "gloss": "Ханчжоуская вышивка — её также называют гусю, то есть «старинная вышивка»."
+    },
+    {
+      "dossier": "crafts",
+      "table": "crafts",
+      "row": "cr-yuexiu",
+      "column": "embroidery",
+      "zh": "粤绣",
+      "gloss": "Гуандунская вышивка — объединяет гуанчжоускую и чаочжоускую школы."
+    },
+    {
+      "dossier": "crafts",
+      "table": "crafts",
+      "row": "cr-luxiu",
+      "column": "embroidery",
+      "zh": "鲁绣",
+      "gloss": "Шаньдунская вышивка — использует в том числе нити из дубового шелкопряда."
+    },
+    {
+      "dossier": "crafts",
+      "table": "crafts",
+      "row": "cr-jingxiu",
+      "column": "embroidery",
+      "zh": "京绣",
+      "gloss": "Пекинская вышивка — известна как «дворцовая», украшала одежду императорского двора."
+    },
+    {
+      "dossier": "sets",
+      "table": "colors",
+      "row": "color-yellow",
+      "column": "name",
+      "zh": "黄色",
+      "gloss": "Жёлтый — основной цвет черепицы дворцов Запретного города."
+    },
+    {
+      "dossier": "sets",
+      "table": "colors",
+      "row": "color-red",
+      "column": "name",
+      "zh": "红色",
+      "gloss": "Красный — цвет стен дворцовых зданий Запретного города."
+    },
+    {
+      "dossier": "sets",
+      "table": "colors",
+      "row": "color-blue",
+      "column": "name",
+      "zh": "蓝色",
+      "gloss": "Синий — цвет глазурованной черепицы зала Молитвы об урожае в Храме Неба."
+    },
+    {
+      "dossier": "sets",
+      "table": "colors",
+      "row": "color-purple",
+      "column": "name",
+      "zh": "紫色",
+      "gloss": "Пурпурный — 紫 в названии отсылает к небесной области Цзывэй."
+    },
+    {
+      "dossier": "sets",
+      "table": "colors",
+      "row": "color-blue",
+      "column": "wuxing",
+      "zh": "蓝色",
+      "gloss": "Синий — восток обозначают термином 青: он охватывает синие и зелёные оттенки."
+    },
+    {
+      "dossier": "sets",
+      "table": "colors",
+      "row": "color-red",
+      "column": "wuxing",
+      "zh": "红色",
+      "gloss": "Красный — в системе пяти стихий юг связан с огнём и летом."
+    },
+    {
+      "dossier": "sets",
+      "table": "colors",
+      "row": "color-white",
+      "column": "wuxing",
+      "zh": "白色",
+      "gloss": "Белый — в системе пяти стихий запад связан с металлом и осенью."
+    },
+    {
+      "dossier": "sets",
+      "table": "colors",
+      "row": "color-black",
+      "column": "wuxing",
+      "zh": "黑色",
+      "gloss": "Чёрный — в той же системе север связан с водой и зимой."
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-ru-griboyedov",
+      "column": "fullname",
+      "zh": "亚历山大·格里鲍耶陀夫",
+      "gloss": "Александр Грибоедов — автор комедии в стихах «Горе от ума»"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-ru-turgenev",
+      "column": "fullname",
+      "zh": "伊万·屠格涅夫",
+      "gloss": "Иван Тургенев — автор романа «Отцы и дети», вышедшего в 1862 году"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-ru-lermontov",
+      "column": "fullname",
+      "zh": "米哈伊尔·莱蒙托夫",
+      "gloss": "Михаил Лермонтов — автор поэм «Демон» и «Мцыри» и романа «Герой нашего времени»"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-ru-tolstoy",
+      "column": "fullname",
+      "zh": "列夫·托尔斯泰",
+      "gloss": "Лев Толстой — автор романа-эпопеи «Война и мир»"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-ru-leskov",
+      "column": "fullname",
+      "zh": "尼古拉•列斯科夫",
+      "gloss": "Николай Лесков — автор сказа «Левша» о тульском мастере и стальной блохе"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-ru-bazhov",
+      "column": "fullname",
+      "zh": "帕维尔·巴若夫",
+      "gloss": "Павел Бажов — сборник «Малахитовая шкатулка» впервые вышел в 1939 году"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-ru-chekhov",
+      "column": "fullname",
+      "zh": "安东·契诃夫",
+      "gloss": "Антон Чехов — автор пьес «Чайка», «Три сестры» и «Вишнёвый сад»"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-libai",
+      "column": "verseauthor",
+      "zh": "李白",
+      "gloss": "Ли Бо — поэма открывается образом Хуанхэ, текущей словно с неба."
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-dufu",
+      "column": "verseauthor",
+      "zh": "杜甫",
+      "gloss": "Ду Фу — автор стихотворения «Весенний пейзаж»."
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-wangzhihuan",
+      "column": "verseauthor",
+      "zh": "王之涣",
+      "gloss": "Ван Чжихуань — танский поэт, автор «Песен Лянчжоу»."
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-baijuyi",
+      "column": "verseauthor",
+      "zh": "白居易",
+      "gloss": "Бо Цзюйи — автор поэм «Вечная печаль» и «Песнь о лютнистке»."
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-guizhou",
+      "column": "coastname",
+      "zh": "贵州",
+      "gloss": "Гуйчжоу — провинция на юго-западе Китая; её административный центр — Гуйян."
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-liaoning",
+      "column": "coastname",
+      "zh": "辽宁",
+      "gloss": "Ляонин — приморская провинция на юге Северо-Востока, центр — Шэньян"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-fujian",
+      "column": "coastname",
+      "zh": "福建",
+      "gloss": "Фуцзянь — прибрежная провинция на юго-востоке, напротив Тайваня, центр — Фучжоу"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-shandong",
+      "column": "coastname",
+      "zh": "山东",
+      "gloss": "Шаньдун — её берега омывают Бохайское и Жёлтое моря."
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-guizhou",
+      "column": "neighborname",
+      "zh": "贵州",
+      "gloss": "Гуйчжоу — южный сосед Сычуани; административный центр — Гуйян."
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-guangdong",
+      "column": "neighborname",
+      "zh": "广东",
+      "gloss": "Гуандун — провинция на юге материкового Китая, центр — Гуанчжоу"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-gansu",
+      "column": "neighborname",
+      "zh": "甘肃",
+      "gloss": "Ганьсу — один из северных соседей Сычуани; центр — Ланьчжоу."
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-shaanxi",
+      "column": "neighborname",
+      "zh": "陕西",
+      "gloss": "Шэньси — северный сосед Сычуани; административный центр — Сиань."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "countries",
+      "row": "country-us",
+      "column": "name",
+      "zh": "美国",
+      "gloss": "США — в 1844 году заключили с Китаем Вансяский договор"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "countries",
+      "row": "country-uk",
+      "column": "name",
+      "zh": "英国",
+      "gloss": "Великобритания — война закончилась Нанкинским договором 29 августа 1842 года"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "countries",
+      "row": "country-de",
+      "column": "name",
+      "zh": "德国",
+      "gloss": "Германия — по договору 1898 года получила в аренду Цзяочжоувань на 99 лет"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "countries",
+      "row": "country-jp",
+      "column": "name",
+      "zh": "日本",
+      "gloss": "Япония — после войны 1894–1895 годов заключила с Китаем Симоносекский договор"
+    },
+    {
+      "dossier": "holidays",
+      "table": "holidays",
+      "row": "hol-romaday",
+      "column": "chinesedate",
+      "zh": "四月八号",
+      "gloss": "8 апреля — Международный день цыган, праздник их культуры."
+    },
+    {
+      "dossier": "holidays",
+      "table": "holidays",
+      "row": "hol-taiwan-teachers",
+      "column": "chinesedate",
+      "zh": "九月二十八号",
+      "gloss": "28 сентября — День учителя на Тайване, приуроченный ко дню рождения Конфуция."
+    },
+    {
+      "dossier": "holidays",
+      "table": "holidays",
+      "row": "hol-un-chinese",
+      "column": "chinesedate",
+      "zh": "四月二十号",
+      "gloss": "20 апреля — дата выбрана в память о Цан Цзе, легендарном создателе письма."
+    },
+    {
+      "dossier": "holidays",
+      "table": "holidays",
+      "row": "hol-guoqing",
+      "column": "chinesedate",
+      "zh": "十月一号",
+      "gloss": "1 октября — День образования КНР, провозглашённой в 1949 году."
+    },
+    {
+      "dossier": "sets",
+      "table": "teachingsets",
+      "row": "teach-conf-mo-legal",
+      "column": "name",
+      "zh": "儒家、墨家、法家",
+      "gloss": "Конфуцианство, моизм, легизм — моизм проповедует «всеобщую любовь»."
+    },
+    {
+      "dossier": "sets",
+      "table": "teachingsets",
+      "row": "teach-christian-branches",
+      "column": "name",
+      "zh": "基督教、天主教、新教",
+      "gloss": "Христианство, католицизм, протестантизм — последние два являются ветвями первого."
+    },
+    {
+      "dossier": "sets",
+      "table": "teachingsets",
+      "row": "teach-three",
+      "column": "name",
+      "zh": "儒家、佛教、道家",
+      "gloss": "Конфуцианство, буддизм, даосизм — из них буддизм возник в Индии."
+    },
+    {
+      "dossier": "sets",
+      "table": "teachingsets",
+      "row": "teach-world-religions",
+      "column": "name",
+      "zh": "基督教、佛教、伊斯兰教",
+      "gloss": "Христианство, буддизм, ислам — три мировые религии."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-hydrogen",
+      "column": "year",
+      "zh": "1967 年",
+      "gloss": "1967 — Китай испытал первую водородную бомбу"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-dongfanghong1",
+      "column": "year",
+      "zh": "1970 年",
+      "gloss": "1970 — запущен «Дунфанхун-1», первый искусственный спутник Китая"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-mao-death",
+      "column": "year",
+      "zh": "1976 年",
+      "gloss": "1976 — Мао Цзэдун умер 9 сентября в Пекине"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-mao-chair1956",
+      "column": "year",
+      "zh": "1956 年",
+      "gloss": "1956 — Мао избрали председателем ЦК на первом пленуме после VIII съезда КПК"
+    },
+    {
+      "dossier": "ethnos",
+      "table": "religions",
+      "row": "rel-dao",
+      "column": "name",
+      "zh": "道教",
+      "gloss": "Даосизм — религия, сложившаяся в Китае в конце эпохи Восточной Хань."
+    },
+    {
+      "dossier": "ethnos",
+      "table": "religions",
+      "row": "rel-islam",
+      "column": "name",
+      "zh": "伊斯兰教",
+      "gloss": "Ислам — мусульмане почитают Коран как священное писание."
+    },
+    {
+      "dossier": "ethnos",
+      "table": "religions",
+      "row": "rel-orthodox",
+      "column": "name",
+      "zh": "东正教",
+      "gloss": "Православие — разделение восточной и западной церквей относят к 1054 году."
+    },
+    {
+      "dossier": "ethnos",
+      "table": "religions",
+      "row": "rel-buddhism",
+      "column": "name",
+      "zh": "佛教",
+      "gloss": "Буддизм — в Китае выделяют китайскую, тибетскую и южную традиции."
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-shanghai",
+      "column": "historicname",
+      "zh": "上海",
+      "gloss": "Шанхай — город центрального подчинения у устья Янцзы"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-hongkong",
+      "column": "historicname",
+      "zh": "香港",
+      "gloss": "Сянган (Гонконг) — особый административный район на юге Китая у устья Чжуцзяна"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-lushun",
+      "column": "historicname",
+      "zh": "旅顺",
+      "gloss": "Люйшунь — район Даляня на южной оконечности Ляодунского полуострова."
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-qingdao",
+      "column": "historicname",
+      "zh": "青岛",
+      "gloss": "Циндао — город на юге Шаньдунского полуострова, на побережье Жёлтого моря."
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-gaoxingjian",
+      "column": "prizeauthor",
+      "zh": "高行健",
+      "gloss": "Гао Синцзянь — его «Гора души» основана на путешествиях по югу Китая."
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-yuhua",
+      "column": "prizeauthor",
+      "zh": "余华",
+      "gloss": "Юй Хуа — получил итальянскую премию «Гринцане Кавур» в 1998 году."
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-moyan",
+      "column": "prizeauthor",
+      "zh": "莫言",
+      "gloss": "Мо Янь — Нобелевскую премию по литературе получил в 2012 году."
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-sutong",
+      "column": "prizeauthor",
+      "zh": "苏童",
+      "gloss": "Су Тун — в 2015 году получил литературную премию Мао Дуня."
+    }
+  ],
+  "newRows": [
+    "provinces/regiongroups/rg-hei-anhui-fujian",
+    "provinces/regiongroups/rg-dongbei",
+    "provinces/regiongroups/rg-hei-hongkong-liao",
+    "provinces/regiongroups/rg-east-coast",
+    "crafts/crafts/cr-hangxiu",
+    "crafts/crafts/cr-luxiu",
+    "crafts/crafts/cr-jingxiu",
+    "sets/colors/color-yellow",
+    "sets/colors/color-red",
+    "sets/colors/color-blue",
+    "sets/colors/color-purple",
+    "sets/colors/color-white",
+    "sets/colors/color-black",
+    "literature/authors/lit-a-ru-griboyedov",
+    "literature/authors/lit-a-ru-leskov",
+    "literature/authors/lit-a-ru-bazhov",
+    "literature/authors/lit-a-wangzhihuan",
+    "modern-history/countries/country-us",
+    "modern-history/countries/country-uk",
+    "modern-history/countries/country-de",
+    "modern-history/countries/country-jp",
+    "holidays/holidays/hol-romaday",
+    "holidays/holidays/hol-taiwan-teachers",
+    "holidays/holidays/hol-un-chinese",
+    "sets/teachingsets/teach-conf-mo-legal",
+    "sets/teachingsets/teach-christian-branches",
+    "sets/teachingsets/teach-three",
+    "sets/teachingsets/teach-world-religions",
+    "modern-history/milestones/mile-hydrogen",
+    "modern-history/milestones/mile-dongfanghong1",
+    "modern-history/milestones/mile-mao-death",
+    "modern-history/milestones/mile-mao-chair1956",
+    "ethnos/religions/rel-dao",
+    "ethnos/religions/rel-islam",
+    "ethnos/religions/rel-orthodox",
+    "ethnos/religions/rel-buddhism",
+    "provinces/cities/city-hongkong",
+    "provinces/cities/city-lushun",
+    "provinces/cities/city-qingdao",
+    "literature/authors/lit-a-gaoxingjian",
+    "literature/authors/lit-a-sutong"
+  ],
+  "preservedPreviousPools": [
+    {
+      "dossier": "literature",
+      "question": "literature-q01",
+      "excludedNewRows": [
+        "lit-a-wangzhihuan",
+        "lit-a-sutong"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "literature",
+      "question": "literature-q03",
+      "excludedNewRows": [
+        "lit-a-wangzhihuan",
+        "lit-a-sutong"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "literature",
+      "question": "literature-q09",
+      "excludedNewRows": [
+        "lit-a-wangzhihuan",
+        "lit-a-sutong"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "literature",
+      "question": "literature-q101",
+      "excludedNewRows": [
+        "lit-a-ru-griboyedov",
+        "lit-a-ru-leskov",
+        "lit-a-ru-bazhov",
+        "lit-a-wangzhihuan",
+        "lit-a-gaoxingjian",
+        "lit-a-sutong"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "holidays",
+      "question": "holidays-q09",
+      "excludedNewRows": [
+        "hol-romaday",
+        "hol-taiwan-teachers",
+        "hol-un-chinese"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "crafts",
+      "question": "crafts-q14",
+      "excludedNewRows": [
+        "cr-hangxiu",
+        "cr-luxiu",
+        "cr-jingxiu"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "crafts",
+      "question": "crafts-q129",
+      "excludedNewRows": [
+        "cr-hangxiu",
+        "cr-luxiu",
+        "cr-jingxiu"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q20",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q21",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q22",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q24",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q25",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q26",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q27",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q28",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q29",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q30",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q52",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q53",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q87",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q91",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q115",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q116",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q117",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q119",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q121",
+      "excludedNewRows": [
+        "city-hongkong",
+        "city-lushun",
+        "city-qingdao"
+      ],
+      "reason": "Preserve previously accepted option pool; only the 16 approved four-option sets are expanded into training in this release."
+    },
+    {
+      "dossier": "literature",
+      "question": "literature-q60",
+      "excludedNewRows": [
+        "lit-a-ru-griboyedov",
+        "lit-a-ru-leskov",
+        "lit-a-ru-bazhov"
+      ],
+      "reason": "Preserve previously accepted pool after canonical country normalisation."
+    },
+    {
+      "dossier": "literature",
+      "question": "literature-q61",
+      "excludedNewRows": [
+        "lit-a-ru-griboyedov",
+        "lit-a-ru-leskov",
+        "lit-a-ru-bazhov"
+      ],
+      "reason": "Preserve previously accepted pool after canonical country normalisation."
+    },
+    {
+      "dossier": "literature",
+      "question": "literature-q62",
+      "excludedNewRows": [
+        "lit-a-ru-griboyedov",
+        "lit-a-ru-leskov",
+        "lit-a-ru-bazhov"
+      ],
+      "reason": "Preserve previously accepted pool after canonical country normalisation."
+    },
+    {
+      "dossier": "literature",
+      "question": "literature-q63",
+      "excludedNewRows": [
+        "lit-a-ru-griboyedov",
+        "lit-a-ru-leskov",
+        "lit-a-ru-bazhov"
+      ],
+      "reason": "Preserve previously accepted pool after canonical country normalisation."
+    },
+    {
+      "dossier": "literature",
+      "question": "literature-q64",
+      "excludedNewRows": [
+        "lit-a-ru-griboyedov",
+        "lit-a-ru-leskov",
+        "lit-a-ru-bazhov"
+      ],
+      "reason": "Preserve previously accepted pool after canonical country normalisation."
+    },
+    {
+      "dossier": "literature",
+      "question": "literature-q71",
+      "excludedNewRows": [
+        "lit-a-ru-griboyedov",
+        "lit-a-ru-leskov",
+        "lit-a-ru-bazhov"
+      ],
+      "reason": "Preserve previously accepted pool after canonical country normalisation."
+    }
+  ],
+  "captionPolicy": "Exact approved captions; no compaction necessary (maximum 84 characters).",
+  "sourceReports": [
+    "2026-11-07-regional-batch-3-release-sources.json",
+    "2026-11-07-regional-batch-3-feedback-evidence.json"
+  ],
+  "authorApproval": {
+    "date": "2026-11-07",
+    "acceptedReviewNumbers": [
+      1,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "acceptedManifestHash": "14d704d9d96bad77660f718f7324b46eec683890f3e32f78683e1f5b74c6fe16",
+    "instruction": "Встраивай в досье, проверь подписи и взаимные подсказки, затем публикуй на сайте."
+  },
+  "captionHintTriage": "2026-11-07-regional-batch-3-hint-triage.json",
+  "affectedPreviousQuestions": [
+    {
+      "id": "2015-16-mun-6",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2016-17-mun-8",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2016-17-zak-3",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2017-18-mun-2",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2017-18-reg-8",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2018-19-mun-spb-9",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2018-19-shk-3",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2018-19-shk-4",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2019-20-mun-qcfa774",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2020-21-pri-qac236e",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2021-22-mun-qa05d78",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2021-22-mun-tat-57",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2022-23-mun-7",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2022-23-mun-8",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2022-23-shk-mosobl-11",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2022-23-zak-2",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2023-24-shk-38",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2024-25-mun-mosobl-5",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2024-25-pri-33",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2024-25-reg-8",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2024-25-zak-qe05919",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2024-25-zak-qfce692",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2025-26-mun-spb-5",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "2025-26-zak-q7c8228",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "addition-b1-06",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "cinema-q24",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "cuisine-q68",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "cuisine-q71",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "cuisine-q74",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "cuisine-q76",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "dynasties-q103",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "dynasties-q104",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "dynasties-q105",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "dynasties-q106",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "ethnos-q83",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "ethnos-q86",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "holidays-q40",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "landmarks-q90",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "landmarks-q92",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "landmarks-q93",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "landmarks-q95",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "landmarks-q96",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "landmarks-q99",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "literature-q23",
+      "fields": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "literature-q37",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "literature-q49",
+      "fields": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "literature-q88",
+      "fields": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "literature-q92",
+      "fields": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "nature-q115",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "provinces-q101",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "provinces-q31",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "provinces-q37",
+      "fields": [
+        "evidence",
+        "factGroup"
+      ]
+    },
+    {
+      "id": "provinces-q38",
+      "fields": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "provinces-q43",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "provinces-q45",
+      "fields": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "provinces-q93",
+      "fields": [
+        "evidence",
+        "factGroup"
+      ]
+    },
+    {
+      "id": "provinces-q94",
+      "fields": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "provinces-q99",
+      "fields": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "sets-q08",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "sets-q09",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "sets-q10",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "sets-q11",
+      "fields": [
+        "factGroup"
+      ]
+    },
+    {
+      "id": "state-q15",
+      "fields": [
+        "factGroup"
+      ]
+    }
+  ],
+  "sourceProvenanceCleanup": "Region-group sources now refer only to actual listed members and NBS regional classification.",
+  "validation": {
+    "fullBank": 1269,
+    "visibleBefore": 998,
+    "visibleAfter": 1014,
+    "newlyVisibleIdsMatchApproved16": true,
+    "exactStemsAndKeys": true,
+    "exactOriginalOptionIdsAndChineseStrings": 64,
+    "exactAcceptedCaptions": 64,
+    "maxCaptionLength": 84,
+    "previousUserFacingQuestionFieldsUnchanged": true,
+    "previousPoolPreservationEdits": 32,
+    "newRowsWithTwoQuotedSources": 41,
+    "independentReview": "passed-no-outstanding-findings",
+    "preIntegrationTests": {
+      "python": 483,
+      "node": 170,
+      "skipped": 0
+    },
+    "browser": {
+      "questions": 16,
+      "cards": 128,
+      "options": 512,
+      "viewports": [
+        1280,
+        375
+      ],
+      "pinyin": [
+        false,
+        true
+      ],
+      "answers": [
+        "correct",
+        "incorrect"
+      ],
+      "pageErrors": [],
+      "screenshots": [
+        "/tmp/lingvo-batch3-1-mobile.png",
+        "/tmp/lingvo-batch3-12-mobile.png"
+      ],
+      "status": "passed"
+    },
+    "integratedBaseCommit": "22af68f327151f2ca8225b4e5e56a168a6977518",
+    "integratedTests": {
+      "python": 492,
+      "node": 172,
+      "failures": 0,
+      "skipped": 0
+    },
+    "readingMaterialsCovered": 1014,
+    "htmlSha256": "91492f1174feceee07a177ae79a68e09cdea005f87510e52f4f1ceef86d1d14a"
+  }
+}

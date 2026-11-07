@@ -346,7 +346,10 @@
       "city-nanning",
       "city-renhuai",
       "city-xiamen",
-      "city-yixing"
+      "city-yixing",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ]
   },
   {
@@ -369,7 +372,10 @@
       "city-nanning",
       "city-renhuai",
       "city-xiamen",
-      "city-yixing"
+      "city-yixing",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ]
   },
   {
@@ -392,7 +398,10 @@
       "city-nanning",
       "city-renhuai",
       "city-xiamen",
-      "city-yixing"
+      "city-yixing",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ]
   },
   {
@@ -415,7 +424,10 @@
       "city-nanning",
       "city-renhuai",
       "city-xiamen",
-      "city-yixing"
+      "city-yixing",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ]
   },
   {
@@ -438,7 +450,10 @@
       "city-nanning",
       "city-renhuai",
       "city-xiamen",
-      "city-yixing"
+      "city-yixing",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ]
   },
   {
@@ -461,7 +476,10 @@
       "city-nanning",
       "city-renhuai",
       "city-xiamen",
-      "city-yixing"
+      "city-yixing",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ]
   },
   {
@@ -484,7 +502,10 @@
       "city-nanning",
       "city-renhuai",
       "city-xiamen",
-      "city-yixing"
+      "city-yixing",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ]
   },
   {
@@ -507,7 +528,10 @@
       "city-nanning",
       "city-renhuai",
       "city-xiamen",
-      "city-yixing"
+      "city-yixing",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ]
   },
   {
@@ -530,7 +554,10 @@
       "city-nanning",
       "city-renhuai",
       "city-xiamen",
-      "city-yixing"
+      "city-yixing",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ]
   },
   {
@@ -553,7 +580,10 @@
       "city-nanning",
       "city-renhuai",
       "city-xiamen",
-      "city-yixing"
+      "city-yixing",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ]
   },
   {
@@ -841,7 +871,10 @@
       "city-nanning",
       "city-renhuai",
       "city-xiamen",
-      "city-yixing"
+      "city-yixing",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ],
     "check": {
       "verdict": "accept",
@@ -867,7 +900,10 @@
       "city-nanning",
       "city-renhuai",
       "city-xiamen",
-      "city-yixing"
+      "city-yixing",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ],
     "check": {
       "verdict": "accept",
@@ -1244,7 +1280,10 @@
       "city-nanning",
       "city-renhuai",
       "city-xiamen",
-      "city-yixing"
+      "city-yixing",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ]
   },
   {
@@ -1681,7 +1720,10 @@
       "city-wuhan",
       "city-xiamen",
       "city-xian",
-      "city-yixing"
+      "city-yixing",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ],
     "check": {
       "verdict": "accept",
@@ -1799,7 +1841,12 @@
     "check": {
       "verdict": "accept",
       "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
-    }
+    },
+    "exclude": [
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
+    ]
   },
   {
     "id": "provinces-q116",
@@ -1815,7 +1862,10 @@
     },
     "exclude": [
       "city-chengdu",
-      "city-xian"
+      "city-xian",
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
     ],
     "check": {
       "verdict": "accept",
@@ -1837,7 +1887,12 @@
     "check": {
       "verdict": "accept",
       "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
-    }
+    },
+    "exclude": [
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
+    ]
   },
   {
     "id": "provinces-q119",
@@ -1854,7 +1909,12 @@
     "check": {
       "verdict": "accept",
       "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
-    }
+    },
+    "exclude": [
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
+    ]
   },
   {
     "id": "provinces-q121",
@@ -1871,7 +1931,12 @@
     "check": {
       "verdict": "accept",
       "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
-    }
+    },
+    "exclude": [
+      "city-hongkong",
+      "city-lushun",
+      "city-qingdao"
+    ]
   },
   {
     "id": "provinces-q122",
@@ -1936,6 +2001,66 @@
     "check": {
       "verdict": "accept",
       "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
+    }
+  },
+  {
+    "id": "provinces-q126",
+    "embeds": "2019-20-mun-lip-1",
+    "status": "accepted",
+    "fact": {
+      "table": "regiongroups",
+      "row": "rg-dongbei",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Принято автором 2026-11-07 в составе 16 вопросов партии 3; формулировка, исходный ключ и четыре показанных варианта сохранены. Подписи и первичные источники проверены в предложениях и независимо; финальная проверка выпуска — regional-batch-3-release-review."
+    }
+  },
+  {
+    "id": "provinces-q127",
+    "embeds": "2024-25-mun-kem-4",
+    "status": "accepted",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-guizhou",
+      "ask": "coastname"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Принято автором 2026-11-07 в составе 16 вопросов партии 3; формулировка, исходный ключ и четыре показанных варианта сохранены. Подписи и первичные источники проверены в предложениях и независимо; финальная проверка выпуска — regional-batch-3-release-review."
+    }
+  },
+  {
+    "id": "provinces-q128",
+    "embeds": "2025-26-shk-mosobl-13",
+    "status": "accepted",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-guangdong",
+      "ask": "neighborname"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Принято автором 2026-11-07 в составе 16 вопросов партии 3; формулировка, исходный ключ и четыре показанных варианта сохранены. Подписи и первичные источники проверены в предложениях и независимо; финальная проверка выпуска — regional-batch-3-release-review."
+    }
+  },
+  {
+    "id": "provinces-q129",
+    "embeds": "2023-24-mun-spb-8",
+    "status": "accepted",
+    "fact": {
+      "table": "cities",
+      "row": "city-lushun",
+      "ask": "historicname"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Принято автором 2026-11-07 в составе 16 вопросов партии 3; формулировка, исходный ключ и четыре показанных варианта сохранены. Подписи и первичные источники проверены в предложениях и независимо; финальная проверка выпуска — regional-batch-3-release-review."
     }
   }
 ]

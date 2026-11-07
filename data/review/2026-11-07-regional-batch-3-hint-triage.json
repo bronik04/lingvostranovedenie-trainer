@@ -1,0 +1,1978 @@
+{
+  "date": "2026-11-07",
+  "baselineCaptionCandidateCount": 2829,
+  "initialNewCandidateCount": 63,
+  "sameCanonicalRowRepeats": 20,
+  "protectedPairs": 17,
+  "unchangedContentIndexHits": 26,
+  "unresolvedImportantCandidates": 0,
+  "decisions": [
+    {
+      "record": "crafts/crafts-q01",
+      "option": "cr-qinghua",
+      "zh": "元",
+      "gloss": "Юань (1271–1368) — при ней в Цзиндэчжэне появился зрелый сине-белый фарфор",
+      "isAnswer": true,
+      "other": "2025-26-mun-10",
+      "answer": [
+        "фарфор"
+      ],
+      "clues": [
+        "Белый"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "crafts-q01",
+      "otherId": "2025-26-mun-10",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "crafts/crafts-q03",
+      "option": "cr-qinghua",
+      "zh": "青花瓷",
+      "gloss": "Цинхуа — сине-белый фарфор с кобальтовой росписью под глазурью",
+      "isAnswer": false,
+      "other": "2025-26-mun-10",
+      "answer": [
+        "фарфор"
+      ],
+      "clues": [
+        "Белый"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "crafts-q03",
+      "otherId": "2025-26-mun-10",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "crafts/crafts-q03",
+      "option": "cr-dehua",
+      "zh": "德化白瓷",
+      "gloss": "Дэхуаский белый фарфор из Фуцзяни, известный скульптурой и «китайским белым»",
+      "isAnswer": false,
+      "other": "2025-26-mun-10",
+      "answer": [
+        "фарфор"
+      ],
+      "clues": [
+        "Белый"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "crafts-q03",
+      "otherId": "2025-26-mun-10",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "crafts/crafts-q03",
+      "option": "cr-dingci",
+      "zh": "定瓷",
+      "gloss": "Динский фарфор — белый фарфор уезда Цюйян, одна из пяти знаменитых печей Сун",
+      "isAnswer": false,
+      "other": "2025-26-mun-10",
+      "answer": [
+        "фарфор"
+      ],
+      "clues": [
+        "Белый"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "crafts-q03",
+      "otherId": "2025-26-mun-10",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "crafts/crafts-q84",
+      "option": "fk-beijing-dengcai",
+      "zh": "北京",
+      "gloss": "Пекин — здесь делают дворцовые фонари и красные фонари из шёлкового газа",
+      "isAnswer": false,
+      "other": "2017-18-shk-3",
+      "answer": [
+        "Красный"
+      ],
+      "clues": [
+        "Пекин"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "crafts-q84",
+      "otherId": "2017-18-shk-3",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "crafts/crafts-q131",
+      "option": "cr-qinghua",
+      "zh": "青花瓷",
+      "gloss": "Цинхуа — сине-белый фарфор с кобальтовой росписью под глазурью",
+      "isAnswer": false,
+      "other": "2025-26-mun-10",
+      "answer": [
+        "фарфор"
+      ],
+      "clues": [
+        "Белый"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "crafts-q131",
+      "otherId": "2025-26-mun-10",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "crafts/crafts-q132",
+      "option": "cr-qinghua",
+      "zh": "江西",
+      "gloss": "Цзянси — здесь, в Цзиндэчжэне, делают сине-белый фарфор",
+      "isAnswer": false,
+      "other": "2025-26-mun-10",
+      "answer": [
+        "фарфор"
+      ],
+      "clues": [
+        "Белый"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "crafts-q132",
+      "otherId": "2025-26-mun-10",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "crafts/crafts-q132",
+      "option": "cr-dehua",
+      "zh": "福建",
+      "gloss": "Фуцзянь — здесь, в Дэхуа, делают белый фарфор, «китайский белый»",
+      "isAnswer": false,
+      "other": "2025-26-mun-10",
+      "answer": [
+        "фарфор"
+      ],
+      "clues": [
+        "Белый"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "crafts-q132",
+      "otherId": "2025-26-mun-10",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "crafts/crafts-q132",
+      "option": "cr-dingci",
+      "zh": "河北",
+      "gloss": "Хэбэй — здесь, в уезде Цюйян, делают белый динский фарфор",
+      "isAnswer": false,
+      "other": "2025-26-mun-10",
+      "answer": [
+        "фарфор"
+      ],
+      "clues": [
+        "Белый"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "crafts-q132",
+      "otherId": "2025-26-mun-10",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "crafts/crafts-q133",
+      "option": "cr-qinghua",
+      "zh": "元",
+      "gloss": "Юань (1271–1368) — при ней в Цзиндэчжэне появился зрелый сине-белый фарфор",
+      "isAnswer": false,
+      "other": "2025-26-mun-10",
+      "answer": [
+        "фарфор"
+      ],
+      "clues": [
+        "Белый"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "crafts-q133",
+      "otherId": "2025-26-mun-10",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "crafts/crafts-q134",
+      "option": "cr-ru-gzhel",
+      "zh": "格热利陶瓷",
+      "gloss": "Гжельская керамика — роспись кобальтом по белому фарфору",
+      "isAnswer": true,
+      "other": "2025-26-mun-10",
+      "answer": [
+        "фарфор"
+      ],
+      "clues": [
+        "Белый"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "crafts-q134",
+      "otherId": "2025-26-mun-10",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "crafts/crafts-q139",
+      "option": "o2",
+      "zh": "粤绣",
+      "gloss": "Гуандунская вышивка — объединяет гуанчжоускую и чаочжоускую школы.",
+      "isAnswer": true,
+      "other": "provinces/provinces-q99",
+      "answer": [
+        "Гуанчжоу"
+      ],
+      "clues": [
+        "Гуандун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-irk-10",
+      "otherId": "provinces-q99",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "suzhou-hangzhou-paradise"
+    },
+    {
+      "record": "cuisine/cuisine-q01",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "鲁菜",
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2018-19-zak-1",
+      "otherId": "2024-25-pri-38",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "cuisine/cuisine-q02",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "鲁菜",
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "addition-b2-03",
+      "otherId": "2024-25-pri-38",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "cuisine/cuisine-q73",
+      "option": "cs-lu",
+      "zh": "咸鲜",
+      "gloss": "Солёно-свежий вкус, подчёркивающий естественный вкус продуктов, — шаньдунская кухня",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q73",
+      "otherId": "2024-25-pri-38",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "cuisine/cuisine-q74",
+      "option": "cs-lu",
+      "zh": "咸鲜",
+      "gloss": "Солёно-свежий вкус, подчёркивающий естественный вкус продуктов, — шаньдунская кухня",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q74",
+      "otherId": "2024-25-pri-38",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "cuisine/cuisine-q75",
+      "option": "cs-lu",
+      "zh": "咸鲜",
+      "gloss": "Солёно-свежий вкус, подчёркивающий естественный вкус продуктов, — шаньдунская кухня",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q75",
+      "otherId": "2024-25-pri-38",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "cuisine/cuisine-q76",
+      "option": "cs-lu",
+      "zh": "咸鲜",
+      "gloss": "Солёно-свежий вкус, подчёркивающий естественный вкус продуктов, — шаньдунская кухня",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q76",
+      "otherId": "2024-25-pri-38",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "cuisine/cuisine-q77",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "鲁菜",
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q77",
+      "otherId": "2024-25-pri-38",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "cuisine/cuisine-q78",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "鲁菜",
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q78",
+      "otherId": "2024-25-pri-38",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "cuisine/cuisine-q80",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "鲁菜",
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q80",
+      "otherId": "2024-25-pri-38",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "cuisine/cuisine-q82",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "鲁菜",
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q82",
+      "otherId": "2024-25-pri-38",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "cuisine/cuisine-q83",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "鲁菜",
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q83",
+      "otherId": "2024-25-pri-38",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "cuisine/cuisine-q84",
+      "option": "cs-lu",
+      "zh": "九转大肠",
+      "gloss": "Свиные кишки «девять оборотов» — традиционное блюдо Цзинаня, шаньдунская кухня",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q84",
+      "otherId": "2024-25-pri-38",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "cuisine/cuisine-q97",
+      "option": "o2",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — одна из восьми великих кухонь Китая",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "鲁菜",
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2020-21-zak-qf17a29",
+      "otherId": "2024-25-pri-38",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "cuisine/cuisine-q105",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "鲁菜",
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q105",
+      "otherId": "2024-25-pri-38",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "dynasties/dynasties-q90",
+      "option": "rul-zhaokuangyin",
+      "zh": "黄袍加身",
+      "gloss": "«Жёлтый халат на плечи» — переворот 960 года, приведший Чжао Куанъиня на трон",
+      "isAnswer": false,
+      "other": "dynasties/dynasties-q23",
+      "answer": [
+        "Чжао Куанъинь"
+      ],
+      "clues": [
+        "Жёлтый"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "dynasties-q90",
+      "otherId": "dynasties-q23",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "dynasties/dynasties-q92",
+      "option": "rul-zhaokuangyin",
+      "zh": "黄袍加身",
+      "gloss": "«Жёлтый халат на плечи» — переворот 960 года, приведший Чжао Куанъиня на трон",
+      "isAnswer": false,
+      "other": "dynasties/dynasties-q23",
+      "answer": [
+        "Чжао Куанъинь"
+      ],
+      "clues": [
+        "Жёлтый"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "dynasties-q92",
+      "otherId": "dynasties-q23",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "holidays/holidays-q34",
+      "option": "fig-nianshou",
+      "zh": "春节",
+      "gloss": "Праздник весны — красные надписи и петарды отпугивают чудовище Нянь",
+      "isAnswer": false,
+      "other": "holidays/holidays-q43",
+      "answer": [
+        "春节",
+        "Праздник весны"
+      ],
+      "clues": [
+        "Красный"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q34",
+      "otherId": "holidays-q43",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "literature/literature-q107",
+      "option": "o2",
+      "zh": "伊万·屠格涅夫",
+      "gloss": "Иван Тургенев — автор романа «Отцы и дети», вышедшего в 1862 году",
+      "isAnswer": false,
+      "other": "literature/literature-q81",
+      "answer": [
+        "屠格涅夫",
+        "Тургенев"
+      ],
+      "clues": [
+        "Отцы и дети"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-mun-mosobl-3",
+      "otherId": "literature-q81",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "regional-b3-caption-30"
+    },
+    {
+      "record": "literature/literature-q107",
+      "option": "o3",
+      "zh": "米哈伊尔·莱蒙托夫",
+      "gloss": "Михаил Лермонтов — автор поэм «Демон» и «Мцыри» и романа «Герой нашего времени»",
+      "isAnswer": false,
+      "other": "literature/literature-q84",
+      "answer": [
+        "Герой нашего времени"
+      ],
+      "clues": [
+        "Михаил Лермонтов"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-mun-mosobl-3",
+      "otherId": "literature-q84",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "regional-b3-caption-30"
+    },
+    {
+      "record": "literature/literature-q107",
+      "option": "o4",
+      "zh": "列夫·托尔斯泰",
+      "gloss": "Лев Толстой — автор романа-эпопеи «Война и мир»",
+      "isAnswer": false,
+      "other": "literature/literature-q87",
+      "answer": [
+        "托尔斯泰",
+        "Лев Толстой",
+        "Толстой"
+      ],
+      "clues": [
+        "Война и мир"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-mun-mosobl-3",
+      "otherId": "2025-26-mun-chel-2",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "regional-b3-caption-30"
+    },
+    {
+      "record": "literature/literature-q108",
+      "option": "o4",
+      "zh": "列夫·托尔斯泰",
+      "gloss": "Лев Толстой — автор романа-эпопеи «Война и мир»",
+      "isAnswer": false,
+      "other": "literature/literature-q87",
+      "answer": [
+        "托尔斯泰",
+        "Лев Толстой",
+        "Толстой"
+      ],
+      "clues": [
+        "Война и мир"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-mun-mosobl-10",
+      "otherId": "2025-26-mun-chel-2",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "regional-b3-caption-30"
+    },
+    {
+      "record": "literature/literature-q109",
+      "option": "o2",
+      "zh": "杜甫",
+      "gloss": "Ду Фу — автор стихотворения «Весенний пейзаж».",
+      "isAnswer": false,
+      "other": "literature/literature-q89",
+      "answer": [
+        "Весенний пейзаж"
+      ],
+      "clues": [
+        "Ду Фу",
+        "杜甫"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-mun-krsk-2",
+      "otherId": "literature-q89",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "tang-era-literature"
+    },
+    {
+      "record": "literature/literature-q109",
+      "option": "o4",
+      "zh": "白居易",
+      "gloss": "Бо Цзюйи — автор поэм «Вечная печаль» и «Песнь о лютнистке».",
+      "isAnswer": false,
+      "other": "literature/literature-q25",
+      "answer": [
+        "白居易",
+        "Бо Цзюйи"
+      ],
+      "clues": [
+        "Песнь о лютнистке"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-mun-krsk-2",
+      "otherId": "literature-q25",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "tang-era-literature"
+    },
+    {
+      "record": "literature/literature-q110",
+      "option": "o3",
+      "zh": "莫言",
+      "gloss": "Мо Янь — Нобелевскую премию по литературе получил в 2012 году.",
+      "isAnswer": false,
+      "other": "literature/literature-q49",
+      "answer": [
+        "莫言",
+        "Мо Янь"
+      ],
+      "clues": [
+        "2012 год",
+        "Нобелевская премия"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-mun-tat-56",
+      "otherId": "literature-q49",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "tang-era-literature"
+    },
+    {
+      "record": "modern-history/modern-history-q119",
+      "option": "o2",
+      "zh": "英国",
+      "gloss": "Великобритания — война закончилась Нанкинским договором 29 августа 1842 года",
+      "isAnswer": true,
+      "other": "2023-24-zak-8",
+      "answer": [
+        "Нанкинский договор"
+      ],
+      "clues": [
+        "Великобритания"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2022-23-mun-orel-4",
+      "otherId": "2023-24-zak-8",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "opium-wars-two"
+    },
+    {
+      "record": "modern-history/modern-history-q119",
+      "option": "o4",
+      "zh": "日本",
+      "gloss": "Япония — после войны 1894–1895 годов заключила с Китаем Симоносекский договор",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q78",
+      "answer": [
+        "1895 год"
+      ],
+      "clues": [
+        "Симоносекский договор"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2022-23-mun-orel-4",
+      "otherId": "modern-history-q78",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "opium-wars-two"
+    },
+    {
+      "record": "modern-history/modern-history-q120",
+      "option": "o2",
+      "zh": "1970 年",
+      "gloss": "1970 — запущен «Дунфанхун-1», первый искусственный спутник Китая",
+      "isAnswer": false,
+      "other": "space/space-q20",
+      "answer": [
+        "Дунфанхун-1"
+      ],
+      "clues": [
+        "1970 год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-spb-8",
+      "otherId": "space-q20",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "prc-founding-1949"
+    },
+    {
+      "record": "provinces/provinces-q12",
+      "option": "prov-qinghai",
+      "zh": "青海省",
+      "gloss": "Цинхай — провинция в истоках Янцзы и Хуанхэ, центр — Синин",
+      "isAnswer": false,
+      "other": "provinces/provinces-q16",
+      "answer": [
+        "青海省"
+      ],
+      "clues": [
+        "Синий"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2018-19-shk-4",
+      "otherId": "2024-25-pri-34",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q13",
+      "option": "prov-qinghai",
+      "zh": "青海省",
+      "gloss": "Цинхай — провинция в истоках Янцзы и Хуанхэ, центр — Синин",
+      "isAnswer": false,
+      "other": "provinces/provinces-q16",
+      "answer": [
+        "青海省"
+      ],
+      "clues": [
+        "Синий"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2022-23-reg-3",
+      "otherId": "2024-25-pri-34",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q14",
+      "option": "prov-qinghai",
+      "zh": "青海省",
+      "gloss": "Цинхай — провинция в истоках Янцзы и Хуанхэ, центр — Синин",
+      "isAnswer": false,
+      "other": "provinces/provinces-q16",
+      "answer": [
+        "青海省"
+      ],
+      "clues": [
+        "Синий"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-zak-qf78e62",
+      "otherId": "2024-25-pri-34",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q15",
+      "option": "prov-qinghai",
+      "zh": "青海省",
+      "gloss": "Цинхай — провинция в истоках Янцзы и Хуанхэ, центр — Синин",
+      "isAnswer": false,
+      "other": "provinces/provinces-q16",
+      "answer": [
+        "青海省"
+      ],
+      "clues": [
+        "Синий"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2018-19-shk-3",
+      "otherId": "2024-25-pri-34",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q19",
+      "option": "prov-shandong",
+      "zh": "鲁",
+      "gloss": "Сокращение Шаньдуна — по древнему царству Лу",
+      "isAnswer": false,
+      "other": "provinces/provinces-q94",
+      "answer": [
+        "鲁"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2018-19-shk-10",
+      "otherId": "provinces-q94",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q31",
+      "option": "prov-shandong",
+      "zh": "鲁",
+      "gloss": "Сокращение Шаньдуна — по древнему царству Лу",
+      "isAnswer": false,
+      "other": "provinces/provinces-q94",
+      "answer": [
+        "鲁"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "provinces-q31",
+      "otherId": "provinces-q94",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q41",
+      "option": "prov-shandong",
+      "zh": "鲁",
+      "gloss": "Сокращение Шаньдуна — по древнему царству Лу",
+      "isAnswer": false,
+      "other": "provinces/provinces-q94",
+      "answer": [
+        "鲁"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "provinces-q41",
+      "otherId": "provinces-q94",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q43",
+      "option": "prov-shandong",
+      "zh": "鲁",
+      "gloss": "Сокращение Шаньдуна — по древнему царству Лу",
+      "isAnswer": false,
+      "other": "provinces/provinces-q94",
+      "answer": [
+        "鲁"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "provinces-q43",
+      "otherId": "provinces-q94",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q45",
+      "option": "prov-shandong",
+      "zh": "鲁",
+      "gloss": "Сокращение Шаньдуна — по древнему царству Лу",
+      "isAnswer": false,
+      "other": "provinces/provinces-q94",
+      "answer": [
+        "鲁"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "provinces-q45",
+      "otherId": "provinces-q94",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q56",
+      "option": "city-jingdezhen",
+      "zh": "青花瓷",
+      "gloss": "Сине-белый фарфор — им славится Цзиндэчжэнь, «фарфоровая столица»",
+      "isAnswer": false,
+      "other": "2025-26-mun-10",
+      "answer": [
+        "фарфор"
+      ],
+      "clues": [
+        "Белый"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "provinces-q56",
+      "otherId": "2025-26-mun-10",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "provinces/provinces-q93",
+      "option": "prov-shandong",
+      "zh": "鲁",
+      "gloss": "Сокращение Шаньдуна — по древнему царству Лу",
+      "isAnswer": false,
+      "other": "provinces/provinces-q94",
+      "answer": [
+        "鲁"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "provinces-q93",
+      "otherId": "provinces-q94",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q95",
+      "option": "prov-shandong",
+      "zh": "鲁",
+      "gloss": "Сокращение Шаньдуна — по древнему царству Лу",
+      "isAnswer": false,
+      "other": "provinces/provinces-q94",
+      "answer": [
+        "鲁"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "provinces-q95",
+      "otherId": "provinces-q94",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q102",
+      "option": "prov-shandong",
+      "zh": "鲁",
+      "gloss": "Сокращение Шаньдуна — по древнему царству Лу",
+      "isAnswer": false,
+      "other": "provinces/provinces-q94",
+      "answer": [
+        "鲁"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "provinces-q102",
+      "otherId": "provinces-q94",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q111",
+      "option": "prov-qinghai",
+      "zh": "青海省",
+      "gloss": "Цинхай — провинция в истоках Янцзы и Хуанхэ, центр — Синин",
+      "isAnswer": false,
+      "other": "provinces/provinces-q16",
+      "answer": [
+        "青海省"
+      ],
+      "clues": [
+        "Синий"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-mun-novg-3",
+      "otherId": "2024-25-pri-34",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q112",
+      "option": "prov-qinghai",
+      "zh": "青海省",
+      "gloss": "Цинхай — провинция в истоках Янцзы и Хуанхэ, центр — Синин",
+      "isAnswer": false,
+      "other": "provinces/provinces-q16",
+      "answer": [
+        "青海省"
+      ],
+      "clues": [
+        "Синий"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-shk-mosobl-12",
+      "otherId": "2024-25-pri-34",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q123",
+      "option": "prov-qinghai",
+      "zh": "青海省",
+      "gloss": "Цинхай — провинция в истоках Янцзы и Хуанхэ, центр — Синин",
+      "isAnswer": false,
+      "other": "provinces/provinces-q16",
+      "answer": [
+        "青海省"
+      ],
+      "clues": [
+        "Синий"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-shk-mosobl-2",
+      "otherId": "2024-25-pri-34",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Сведения той же строки досье: повторение разрешено прежним решением автора."
+    },
+    {
+      "record": "provinces/provinces-q126",
+      "option": "o2",
+      "zh": "黑龙江、辽宁、吉林",
+      "gloss": "Хэйлунцзян, Ляонин, Цзилинь — их центры: Харбин, Шэньян и Чанчунь.",
+      "isAnswer": true,
+      "other": "provinces/provinces-q35",
+      "answer": [
+        "Шэньян"
+      ],
+      "clues": [
+        "Ляонин"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2019-20-mun-lip-1",
+      "otherId": "provinces-q35",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "regional-b3-caption-56"
+    },
+    {
+      "record": "provinces/provinces-q126",
+      "option": "o2",
+      "zh": "黑龙江、辽宁、吉林",
+      "gloss": "Хэйлунцзян, Ляонин, Цзилинь — их центры: Харбин, Шэньян и Чанчунь.",
+      "isAnswer": true,
+      "other": "provinces/provinces-q36",
+      "answer": [
+        "Чанчунь"
+      ],
+      "clues": [
+        "Цзилинь"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2019-20-mun-lip-1",
+      "otherId": "provinces-q36",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "regional-b3-caption-56"
+    },
+    {
+      "record": "provinces/provinces-q126",
+      "option": "o2",
+      "zh": "黑龙江、辽宁、吉林",
+      "gloss": "Хэйлунцзян, Ляонин, Цзилинь — их центры: Харбин, Шэньян и Чанчунь.",
+      "isAnswer": true,
+      "other": "2020-21-mun-mosobl-47",
+      "answer": [
+        "Харбин"
+      ],
+      "clues": [
+        "Хэйлунцзян"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2019-20-mun-lip-1",
+      "otherId": "2020-21-mun-mosobl-47",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "regional-b3-caption-56"
+    },
+    {
+      "record": "provinces/provinces-q127",
+      "option": "o2",
+      "zh": "辽宁",
+      "gloss": "Ляонин — приморская провинция на юге Северо-Востока, центр — Шэньян",
+      "isAnswer": false,
+      "other": "provinces/provinces-q35",
+      "answer": [
+        "Шэньян"
+      ],
+      "clues": [
+        "провинция Ляонин"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-kem-4",
+      "otherId": "provinces-q35",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "regional-b3-caption-56"
+    },
+    {
+      "record": "provinces/provinces-q127",
+      "option": "o3",
+      "zh": "福建",
+      "gloss": "Фуцзянь — прибрежная провинция на юго-востоке, напротив Тайваня, центр — Фучжоу",
+      "isAnswer": false,
+      "other": "2022-23-shk-mosobl-2",
+      "answer": [
+        "福建",
+        "Фуцзянь"
+      ],
+      "clues": [
+        "Фучжоу"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-kem-4",
+      "otherId": "2022-23-shk-mosobl-2",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "regional-b3-caption-56"
+    },
+    {
+      "record": "provinces/provinces-q128",
+      "option": "o3",
+      "zh": "甘肃",
+      "gloss": "Ганьсу — один из северных соседей Сычуани; центр — Ланьчжоу.",
+      "isAnswer": false,
+      "other": "provinces/provinces-q38",
+      "answer": [
+        "Ланьчжоу"
+      ],
+      "clues": [
+        "провинция Ганьсу"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-shk-mosobl-13",
+      "otherId": "provinces-q38",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает конкретную связь с ответом другого вопроса; принятый полезный факт сохранён, совместный показ разводится группой фактов.",
+      "finalGroup": "suzhou-hangzhou-paradise"
+    },
+    {
+      "record": "2016-17-shk-10",
+      "option": "o3",
+      "zh": "红色",
+      "gloss": "Красный, цвет праздника — свадеб и Праздника весны",
+      "isAnswer": false,
+      "other": "holidays/holidays-q43",
+      "answer": [
+        "Праздник весны"
+      ],
+      "clues": [
+        "Красный"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2016-17-shk-10",
+      "otherId": "holidays-q43",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    },
+    {
+      "record": "2026-27-mun-10",
+      "option": "o3",
+      "zh": "红包",
+      "gloss": "Хунбао — красный конверт с деньгами, который дарят на китайский Новый год",
+      "isAnswer": false,
+      "other": "holidays/holidays-q43",
+      "answer": [
+        "китайский Новый год"
+      ],
+      "clues": [
+        "Красный"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2026-27-mun-10",
+      "otherId": "holidays-q43",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба вопроса и их варианты/подписи совпадают с baseline. Новый кандидат появился из-за расширения индекса русских названий (цвета/имена), а не из-за новой подсказки в этой партии. Прежние вопросы повторно не редактируются."
+    }
+  ],
+  "directConstraints": [
+    {
+      "group": "regional-b3-mao-death-year",
+      "members": [
+        "cinema-q24",
+        "2024-25-mun-spb-8"
+      ],
+      "kind": "stem-name-or-year",
+      "reason": "Условие о новогоднем телефильме содержит год 1976 — ответ на год смерти Мао; сохраняем оба вопроса и разводим раунды.",
+      "finalGroup": "prc-founding-1949"
+    },
+    {
+      "group": "regional-b3-guangdong-embroidery",
+      "members": [
+        "2024-25-mun-irk-10",
+        "2025-26-shk-mosobl-13"
+      ],
+      "kind": "stem-name-or-year",
+      "reason": "Условие о гуандунской вышивке называет Гуандун — ответ вопроса о соседе Сычуани.",
+      "finalGroup": "suzhou-hangzhou-paradise"
+    },
+    {
+      "group": "regional-b3-guangdong-dialect",
+      "members": [
+        "ethnos-q86",
+        "2025-26-shk-mosobl-13"
+      ],
+      "kind": "stem-name-or-year",
+      "reason": "Условие о диалекте провинции Гуандун называет ответ вопроса о соседе Сычуани.",
+      "finalGroup": "suzhou-hangzhou-paradise"
+    },
+    {
+      "group": "regional-b3-mao-founding",
+      "members": [
+        "2024-25-mun-spb-8",
+        "modern-history-q113"
+      ],
+      "kind": "stem-name-or-year",
+      "reason": "Вопрос о годе смерти Мао называет ответ на вопрос, кто провозгласил КНР.",
+      "finalGroup": "prc-founding-1949"
+    },
+    {
+      "group": "regional-b3-mao-portrait",
+      "members": [
+        "2024-25-mun-spb-8",
+        "2024-25-mun-mosobl-1"
+      ],
+      "kind": "stem-name-or-year",
+      "reason": "Вопрос о годе смерти Мао называет ответ на вопрос о портрете политического лидера.",
+      "finalGroup": "prc-founding-1949"
+    },
+    {
+      "group": "regional-b3-sichuan-jiuzhaigou",
+      "members": [
+        "2025-26-shk-mosobl-13",
+        "2016-17-zak-3"
+      ],
+      "kind": "stem-name-or-year",
+      "reason": "Условие о соседях Сычуани называет ответ вопроса о расположении Цзючжайгоу.",
+      "finalGroup": "suzhou-hangzhou-paradise"
+    },
+    {
+      "group": "regional-b3-sichuan-earthquake",
+      "members": [
+        "2025-26-shk-mosobl-13",
+        "2024-25-pri-33"
+      ],
+      "kind": "stem-name-or-year",
+      "reason": "Условие о соседях Сычуани называет ответ вопроса о землетрясении 2008 года.",
+      "finalGroup": "suzhou-hangzhou-paradise"
+    },
+    {
+      "group": "regional-b3-sichuan-gas",
+      "members": [
+        "2025-26-shk-mosobl-13",
+        "2024-25-reg-8"
+      ],
+      "kind": "stem-name-or-year",
+      "reason": "Условие о соседях Сычуани называет ответ вопроса о запасах природного газа.",
+      "finalGroup": "suzhou-hangzhou-paradise"
+    }
+  ],
+  "newCaptionConstraints": [
+    {
+      "group": "regional-b3-caption-12",
+      "members": [
+        "2024-25-mun-irk-10",
+        "provinces-q99"
+      ],
+      "gloss": "Гуандунская вышивка — объединяет гуанчжоускую и чаочжоускую школы.",
+      "targetAnswer": [
+        "Гуанчжоу"
+      ],
+      "clues": [
+        "Гуандун"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-30",
+      "members": [
+        "2023-24-mun-mosobl-3",
+        "literature-q81"
+      ],
+      "gloss": "Иван Тургенев — автор романа «Отцы и дети», вышедшего в 1862 году",
+      "targetAnswer": [
+        "屠格涅夫",
+        "Тургенев"
+      ],
+      "clues": [
+        "Отцы и дети"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-31",
+      "members": [
+        "2023-24-mun-mosobl-3",
+        "literature-q84"
+      ],
+      "gloss": "Михаил Лермонтов — автор поэм «Демон» и «Мцыри» и романа «Герой нашего времени»",
+      "targetAnswer": [
+        "Герой нашего времени"
+      ],
+      "clues": [
+        "Михаил Лермонтов"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-32",
+      "members": [
+        "2023-24-mun-mosobl-3",
+        "2025-26-mun-chel-2"
+      ],
+      "gloss": "Лев Толстой — автор романа-эпопеи «Война и мир»",
+      "targetAnswer": [
+        "托尔斯泰",
+        "Лев Толстой",
+        "Толстой"
+      ],
+      "clues": [
+        "Война и мир"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-33",
+      "members": [
+        "2025-26-mun-mosobl-10",
+        "2025-26-mun-chel-2"
+      ],
+      "gloss": "Лев Толстой — автор романа-эпопеи «Война и мир»",
+      "targetAnswer": [
+        "托尔斯泰",
+        "Лев Толстой",
+        "Толстой"
+      ],
+      "clues": [
+        "Война и мир"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-34",
+      "members": [
+        "2023-24-mun-krsk-2",
+        "literature-q89"
+      ],
+      "gloss": "Ду Фу — автор стихотворения «Весенний пейзаж».",
+      "targetAnswer": [
+        "Весенний пейзаж"
+      ],
+      "clues": [
+        "Ду Фу",
+        "杜甫"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-35",
+      "members": [
+        "2023-24-mun-krsk-2",
+        "literature-q25"
+      ],
+      "gloss": "Бо Цзюйи — автор поэм «Вечная печаль» и «Песнь о лютнистке».",
+      "targetAnswer": [
+        "白居易",
+        "Бо Цзюйи"
+      ],
+      "clues": [
+        "Песнь о лютнистке"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-36",
+      "members": [
+        "2025-26-mun-tat-56",
+        "literature-q49"
+      ],
+      "gloss": "Мо Янь — Нобелевскую премию по литературе получил в 2012 году.",
+      "targetAnswer": [
+        "莫言",
+        "Мо Янь"
+      ],
+      "clues": [
+        "2012 год",
+        "Нобелевская премия"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-37",
+      "members": [
+        "2022-23-mun-orel-4",
+        "2023-24-zak-8"
+      ],
+      "gloss": "Великобритания — война закончилась Нанкинским договором 29 августа 1842 года",
+      "targetAnswer": [
+        "Нанкинский договор"
+      ],
+      "clues": [
+        "Великобритания"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-38",
+      "members": [
+        "2022-23-mun-orel-4",
+        "modern-history-q78"
+      ],
+      "gloss": "Япония — после войны 1894–1895 годов заключила с Китаем Симоносекский договор",
+      "targetAnswer": [
+        "1895 год"
+      ],
+      "clues": [
+        "Симоносекский договор"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-39",
+      "members": [
+        "2024-25-mun-spb-8",
+        "space-q20"
+      ],
+      "gloss": "1970 — запущен «Дунфанхун-1», первый искусственный спутник Китая",
+      "targetAnswer": [
+        "Дунфанхун-1"
+      ],
+      "clues": [
+        "1970 год"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-56",
+      "members": [
+        "2019-20-mun-lip-1",
+        "provinces-q35"
+      ],
+      "gloss": "Хэйлунцзян, Ляонин, Цзилинь — их центры: Харбин, Шэньян и Чанчунь.",
+      "targetAnswer": [
+        "Шэньян"
+      ],
+      "clues": [
+        "Ляонин"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-57",
+      "members": [
+        "2019-20-mun-lip-1",
+        "provinces-q36"
+      ],
+      "gloss": "Хэйлунцзян, Ляонин, Цзилинь — их центры: Харбин, Шэньян и Чанчунь.",
+      "targetAnswer": [
+        "Чанчунь"
+      ],
+      "clues": [
+        "Цзилинь"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-58",
+      "members": [
+        "2019-20-mun-lip-1",
+        "2020-21-mun-mosobl-47"
+      ],
+      "gloss": "Хэйлунцзян, Ляонин, Цзилинь — их центры: Харбин, Шэньян и Чанчунь.",
+      "targetAnswer": [
+        "Харбин"
+      ],
+      "clues": [
+        "Хэйлунцзян"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-59",
+      "members": [
+        "2024-25-mun-kem-4",
+        "provinces-q35"
+      ],
+      "gloss": "Ляонин — приморская провинция на юге Северо-Востока, центр — Шэньян",
+      "targetAnswer": [
+        "Шэньян"
+      ],
+      "clues": [
+        "провинция Ляонин"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-60",
+      "members": [
+        "2024-25-mun-kem-4",
+        "2022-23-shk-mosobl-2"
+      ],
+      "gloss": "Фуцзянь — прибрежная провинция на юго-востоке, напротив Тайваня, центр — Фучжоу",
+      "targetAnswer": [
+        "福建",
+        "Фуцзянь"
+      ],
+      "clues": [
+        "Фучжоу"
+      ]
+    },
+    {
+      "group": "regional-b3-caption-61",
+      "members": [
+        "2025-26-shk-mosobl-13",
+        "provinces-q38"
+      ],
+      "gloss": "Ганьсу — один из северных соседей Сычуани; центр — Ланьчжоу.",
+      "targetAnswer": [
+        "Ланьчжоу"
+      ],
+      "clues": [
+        "провинция Ганьсу"
+      ]
+    }
+  ],
+  "groupUnions": [
+    {
+      "kept": "prc-founding-1949",
+      "mergedGroups": [
+        "regional-b3-mao-founding",
+        "regional-b3-mao-portrait",
+        "regional-b3-mao-death-year"
+      ],
+      "members": [
+        "2016-17-reg-2",
+        "2020-21-reg-q094875",
+        "2021-22-mun-amur-3",
+        "2024-25-mun-mosobl-1",
+        "2024-25-mun-spb-8",
+        "2024-25-shk-mosobl-1",
+        "addition-b1-09",
+        "cinema-q24",
+        "holidays-q38",
+        "modern-history-q112",
+        "modern-history-q113",
+        "modern-history-q117"
+      ],
+      "reason": "Existing mechanism permits one fact group per record; union of overlapping constraints preserves all prior protections."
+    },
+    {
+      "kept": "suzhou-hangzhou-paradise",
+      "mergedGroups": [
+        "regional-b3-guangdong-embroidery",
+        "regional-b3-guangdong-dialect",
+        "regional-b3-sichuan-jiuzhaigou",
+        "regional-b3-sichuan-earthquake",
+        "regional-b3-sichuan-gas",
+        "contextual-batch3-20261104-1"
+      ],
+      "members": [
+        "2015-16-mun-6",
+        "2015-16-mun-spb-10",
+        "2015-16-zak-6",
+        "2016-17-mun-8",
+        "2016-17-zak-3",
+        "2017-18-mun-2",
+        "2017-18-reg-8",
+        "2018-19-mun-spb-9",
+        "2018-19-shk-3",
+        "2018-19-shk-4",
+        "2019-20-mun-mosobl-49",
+        "2019-20-mun-qcfa774",
+        "2020-21-pri-qac236e",
+        "2021-22-mun-lenobl-8",
+        "2021-22-mun-mosobl-54",
+        "2021-22-mun-qa05d78",
+        "2021-22-mun-tat-57",
+        "2022-23-mun-7",
+        "2022-23-mun-8",
+        "2022-23-shk-mosobl-11",
+        "2022-23-zak-2",
+        "2023-24-shk-38",
+        "2023-24-shk-mosobl-20",
+        "2024-25-mun-irk-10",
+        "2024-25-mun-mosobl-5",
+        "2024-25-pri-33",
+        "2024-25-reg-8",
+        "2024-25-zak-qe05919",
+        "2024-25-zak-qfce692",
+        "2025-26-mun-spb-5",
+        "2025-26-shk-mosobl-13",
+        "2025-26-zak-q7c8228",
+        "addition-b1-06",
+        "cuisine-q68",
+        "cuisine-q71",
+        "cuisine-q74",
+        "cuisine-q76",
+        "dynasties-q103",
+        "dynasties-q104",
+        "dynasties-q105",
+        "dynasties-q106",
+        "ethnos-q83",
+        "ethnos-q86",
+        "holidays-q40",
+        "landmarks-q23",
+        "landmarks-q90",
+        "landmarks-q92",
+        "landmarks-q93",
+        "landmarks-q95",
+        "landmarks-q96",
+        "landmarks-q99",
+        "literature-q37",
+        "nature-q115",
+        "provinces-q101",
+        "provinces-q31",
+        "provinces-q37",
+        "provinces-q43",
+        "provinces-q93",
+        "sets-q08",
+        "sets-q09",
+        "sets-q10",
+        "sets-q11",
+        "state-q15"
+      ],
+      "reason": "Existing mechanism permits one fact group per record; union of overlapping constraints preserves all prior protections."
+    },
+    {
+      "kept": "tang-era-literature",
+      "mergedGroups": [
+        "regional-b3-caption-35",
+        "regional-b3-caption-36",
+        "regional-b3-caption-34",
+        "spring-landscape-word"
+      ],
+      "members": [
+        "2023-24-mun-krsk-2",
+        "2023-24-shk-mosobl-12",
+        "2023-24-zak-3",
+        "2025-26-mun-tat-56",
+        "cinema-q01",
+        "literature-q23",
+        "literature-q24",
+        "literature-q25",
+        "literature-q49",
+        "literature-q88",
+        "literature-q89",
+        "literature-q92",
+        "painting-q89"
+      ],
+      "reason": "Existing mechanism permits one fact group per record; union of overlapping constraints preserves all prior protections."
+    },
+    {
+      "kept": "opium-wars-two",
+      "mergedGroups": [
+        "regional-b3-caption-37",
+        "regional-b3-caption-38"
+      ],
+      "members": [
+        "2021-22-shk-q54821d",
+        "2022-23-mun-orel-4",
+        "2023-24-zak-8",
+        "modern-history-q115",
+        "modern-history-q55",
+        "modern-history-q56",
+        "modern-history-q78"
+      ],
+      "reason": "Existing mechanism permits one fact group per record; union of overlapping constraints preserves all prior protections."
+    },
+    {
+      "kept": "prc-founding-1949",
+      "mergedGroups": [
+        "regional-b3-caption-39"
+      ],
+      "members": [
+        "2016-17-reg-2",
+        "2020-21-reg-q094875",
+        "2021-22-mun-amur-3",
+        "2024-25-mun-mosobl-1",
+        "2024-25-mun-spb-8",
+        "2024-25-shk-mosobl-1",
+        "addition-b1-09",
+        "cinema-q24",
+        "holidays-q38",
+        "modern-history-q112",
+        "modern-history-q113",
+        "modern-history-q117",
+        "space-q20"
+      ],
+      "reason": "Existing mechanism permits one fact group per record; union of overlapping constraints preserves all prior protections."
+    },
+    {
+      "kept": "suzhou-hangzhou-paradise",
+      "mergedGroups": [
+        "regional-b3-caption-12",
+        "regional-b3-caption-61"
+      ],
+      "members": [
+        "2015-16-mun-6",
+        "2015-16-mun-spb-10",
+        "2015-16-zak-6",
+        "2016-17-mun-8",
+        "2016-17-zak-3",
+        "2017-18-mun-2",
+        "2017-18-reg-8",
+        "2018-19-mun-spb-9",
+        "2018-19-shk-3",
+        "2018-19-shk-4",
+        "2019-20-mun-mosobl-49",
+        "2019-20-mun-qcfa774",
+        "2020-21-pri-qac236e",
+        "2021-22-mun-lenobl-8",
+        "2021-22-mun-mosobl-54",
+        "2021-22-mun-qa05d78",
+        "2021-22-mun-tat-57",
+        "2022-23-mun-7",
+        "2022-23-mun-8",
+        "2022-23-shk-mosobl-11",
+        "2022-23-zak-2",
+        "2023-24-shk-38",
+        "2023-24-shk-mosobl-20",
+        "2024-25-mun-irk-10",
+        "2024-25-mun-mosobl-5",
+        "2024-25-pri-33",
+        "2024-25-reg-8",
+        "2024-25-zak-qe05919",
+        "2024-25-zak-qfce692",
+        "2025-26-mun-spb-5",
+        "2025-26-shk-mosobl-13",
+        "2025-26-zak-q7c8228",
+        "addition-b1-06",
+        "cuisine-q68",
+        "cuisine-q71",
+        "cuisine-q74",
+        "cuisine-q76",
+        "dynasties-q103",
+        "dynasties-q104",
+        "dynasties-q105",
+        "dynasties-q106",
+        "ethnos-q83",
+        "ethnos-q86",
+        "holidays-q40",
+        "landmarks-q23",
+        "landmarks-q90",
+        "landmarks-q92",
+        "landmarks-q93",
+        "landmarks-q95",
+        "landmarks-q96",
+        "landmarks-q99",
+        "literature-q37",
+        "nature-q115",
+        "provinces-q101",
+        "provinces-q31",
+        "provinces-q37",
+        "provinces-q38",
+        "provinces-q43",
+        "provinces-q93",
+        "provinces-q99",
+        "sets-q08",
+        "sets-q09",
+        "sets-q10",
+        "sets-q11",
+        "state-q15"
+      ],
+      "reason": "Existing mechanism permits one fact group per record; union of overlapping constraints preserves all prior protections."
+    },
+    {
+      "kept": "regional-b3-caption-30",
+      "mergedGroups": [
+        "regional-b3-caption-31",
+        "regional-b3-caption-32",
+        "regional-b3-caption-33"
+      ],
+      "members": [
+        "2023-24-mun-mosobl-3",
+        "2025-26-mun-chel-2",
+        "2025-26-mun-mosobl-10",
+        "literature-q81",
+        "literature-q84"
+      ],
+      "reason": "Existing mechanism permits one fact group per record; union of overlapping constraints preserves all prior protections."
+    },
+    {
+      "kept": "regional-b3-caption-56",
+      "mergedGroups": [
+        "regional-b3-caption-57",
+        "regional-b3-caption-58",
+        "regional-b3-caption-59",
+        "regional-b3-caption-60"
+      ],
+      "members": [
+        "2019-20-mun-lip-1",
+        "2020-21-mun-mosobl-47",
+        "2022-23-shk-mosobl-2",
+        "2024-25-mun-kem-4",
+        "provinces-q35",
+        "provinces-q36"
+      ],
+      "reason": "Existing mechanism permits one fact group per record; union of overlapping constraints preserves all prior protections."
+    }
+  ]
+}

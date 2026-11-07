@@ -1835,6 +1835,626 @@
           ]
         }
       ]
+    },
+    "colors": {
+      "columns": {
+        "name": "zh",
+        "wuxing": "zh"
+      },
+      "rows": [
+        {
+          "id": "color-yellow",
+          "sources": [
+            {
+              "url": "https://www.dpm.org.cn/forum_detail/100133.html",
+              "title": "古代建筑琉璃构件价值揭示与科技保护研究 — 故宫博物院",
+              "quote": "殿宇的屋顶为黄色琉璃构件所覆盖，而建筑物墙体的颜色则为红色",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "寻找诗歌里的春花烂漫之海棠花 — 北京市人民政府",
+              "url": "https://www.beijing.gov.cn/renwen/zt/xzsgzdchlm/202204/t20220418_2680047.html",
+              "quote": "朱红的宫墙、明黄的屋瓦",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "黄色",
+            "ru": [
+              "Жёлтый"
+            ],
+            "gloss": "Жёлтый — основной цвет черепицы дворцов Запретного города."
+          }
+        },
+        {
+          "id": "color-red",
+          "sources": [
+            {
+              "url": "https://www.dpm.org.cn/forum_detail/100133.html",
+              "title": "古代建筑琉璃构件价值揭示与科技保护研究 — 故宫博物院",
+              "quote": "殿宇的屋顶为黄色琉璃构件所覆盖，而建筑物墙体的颜色则为红色",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "寻找诗歌里的春花烂漫之海棠花 — 北京市人民政府",
+              "url": "https://www.beijing.gov.cn/renwen/zt/xzsgzdchlm/202204/t20220418_2680047.html",
+              "quote": "朱红的宫墙、明黄的屋瓦",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+            },
+            {
+              "id": "zhouli-kaogongji-primary",
+              "url": "https://ctext.org/text.pl?if=en&node=37379&show=parallel",
+              "title": "《周禮·冬官考工記》畫繢之事 — Chinese Text Project",
+              "quote": "東方謂之青，南方謂之赤，西方謂之白，北方謂之黑",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "Verified exact Chinese Text Project indexed transcription and work/section attribution through targeted web searches on 2026-11-07. Direct HTTP fetch returned the project’s bot-protection page, so no claim of full direct page inspection is made. The north–black wording was independently checked in the full HTML of the institutional scholarly article identified in corroboratingSources, which cites a named printed edition.",
+              "sourceStatus": "Primary classical text, in a modern scholarly digital transcription; not a contemporary official statement.",
+              "classicalLocation": "周禮 → 冬官考工記 → 畫繢之事 (Ctext passage 60, node 37379)",
+              "supports": [
+                "north → 黑 (black)",
+                "east → 青",
+                "south → 赤 (red)",
+                "west → 白 (white)"
+              ],
+              "corroboratedBy": "ecnu-2015-five-colors",
+              "datingNote": "No exact composition date, single author, or historical reign is asserted. The printed edition cited by the checked journal article is 陈戍国点校《周礼》, 长沙：岳麓书社, 2006, p. 104."
+            },
+            {
+              "id": "bokenkamp-2007-p33n2",
+              "url": "https://content.ucpress.edu/pages/10645/10645.ch01.pdf#page=4",
+              "title": "Stephen R. Bokenkamp, Ancestors and Anxiety: Daoism and the Birth of Rebirth in China (University of California Press, 2007), p. 33, note 2",
+              "quote": "wood (east, green, spring); fire (south, red, summer); metal (west, white, autumn); water (north, black, winter)",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "Opened and read the publisher-hosted PDF with web.open on 2026-11-07. The copyright/title metadata appears on PDF page 2; the quoted footnote is on PDF page 4, printed page 33, note 2 (extracted lines 63–67). Requested a screenshot of PDF page 4 as an additional page check. Book title, author, publisher and Aug 2007 publication metadata were independently matched to the publisher’s book page.",
+              "sourceStatus": "Independent scholarly explanation by a specialist in Chinese religion, published by a university press; it describes historical five-phase cosmology.",
+              "bookMetadataUrl": "https://www.ucpress.edu/books/ancestors-and-anxiety/pdf",
+              "publicationYear": 2007,
+              "page": "33",
+              "note": "2",
+              "supports": [
+                "five-phase framework",
+                "north–water–black–winter",
+                "south–fire–red–summer",
+                "west–metal–white–autumn",
+                "east–wood–green–spring"
+              ],
+              "quoteWordCount": 16,
+              "scopeNote": "The passage explicitly calls these five-phase associations and situates the fully developed system by the Han dynasty. It does not justify a claim about every Chinese symbolic system. Its English “green” does not replace the primary Chinese term 青 with modern 蓝."
+            },
+            {
+              "id": "moe-qing-a04499",
+              "url": "https://dict.variants.moe.edu.tw/dictView.jsp?ID=49776",
+              "title": "青 [A04499] — 教育部《異體字字典》, 2024 edition",
+              "quote": "⑴綠色。",
+              "supportingQuote": "⑵藍色。",
+              "additionalShortQuote": "青，東方色也。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "Verified the exact definitions and entry identity in the full indexed official dictionary result through targeted web search on 2026-11-07. Direct HTTP access to the la=0 variant returned 404; the successful indexed canonical entry URL is used here. The indexed entry lists green and blue as distinct contextual senses of 青.",
+              "sourceStatus": "Official Ministry of Education lexicographic source; supports the semantic range of 青 rather than five-phase cosmology by itself.",
+              "supports": [
+                "青 can denote green",
+                "青 can denote blue",
+                "青 is not a precise synonym of modern 蓝 in every context"
+              ],
+              "scopeNote": "The entry also lists black as another contextual sense; the proposed explanation only says that 青 includes blue and green senses, not that those exhaust its meanings."
+            },
+            {
+              "id": "ecnu-2015-five-colors",
+              "url": "https://xbzs.ecnu.edu.cn/CN/html/201502009.htm",
+              "title": "夏广兴、闫伟伟：《密教传持与宋代民间五色线习俗的形成与发展》, 华东师范大学学报（哲学社会科学版）, 2015, 47(2): 69–74",
+              "quote": "北方谓之黑",
+              "supportingQuote": "玄武为水，守护黑色，主北方",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "Downloaded and read full institutional journal HTML on 2026-11-07, including author/journal/year/volume/issue/pages/DOI metadata, section 一 五色线与阴阳五行说, and the reference for its quotation from 周礼. Exact quoted fragments were found in the downloaded HTML and checked against web-indexed excerpts.",
+              "sourceStatus": "Scholarly journal article hosted by East China Normal University; independently reproduces the classical north–black wording and identifies its printed edition.",
+              "doi": "10.16382/j.cnki.1000-5579.2015.02.009",
+              "quotedPrimaryEdition": "陈戍国点校：《周礼》，长沙：岳麓书社，2006年，第104页。",
+              "localVerificationCopy": "/tmp/lingvo-color-source-ecnu.html",
+              "scopeNote": "Later parts of this very article discuss Buddhist five-color mappings that differ from the classical five-phase scheme. This is an additional reason to narrow the question stem, and not to generalize to every Chinese worldview."
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "红色",
+            "ru": [
+              "Красный"
+            ],
+            "gloss": "Красный — цвет стен дворцовых зданий Запретного города."
+          },
+          "wuxing": {
+            "zh": "红色",
+            "ru": [
+              "Красный"
+            ],
+            "gloss": "Красный — в системе пяти стихий юг связан с огнём и летом."
+          }
+        },
+        {
+          "id": "color-blue",
+          "sources": [
+            {
+              "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048233.html",
+              "title": "祈年殿 — 北京市公园管理中心",
+              "quote": "祈年殿是一座木结构圆形攒尖顶三重檐蓝色琉璃瓦建筑",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "天坛公园园长访谈 — 北京市文化和旅游局",
+              "url": "https://www.visitbeijing.com.cn/article/47QllJ8IU2a",
+              "quote": "祈年殿三层都是蓝色琉璃瓦",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+            },
+            {
+              "id": "zhouli-kaogongji-primary",
+              "url": "https://ctext.org/text.pl?if=en&node=37379&show=parallel",
+              "title": "《周禮·冬官考工記》畫繢之事 — Chinese Text Project",
+              "quote": "東方謂之青，南方謂之赤，西方謂之白，北方謂之黑",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "Verified exact Chinese Text Project indexed transcription and work/section attribution through targeted web searches on 2026-11-07. Direct HTTP fetch returned the project’s bot-protection page, so no claim of full direct page inspection is made. The north–black wording was independently checked in the full HTML of the institutional scholarly article identified in corroboratingSources, which cites a named printed edition.",
+              "sourceStatus": "Primary classical text, in a modern scholarly digital transcription; not a contemporary official statement.",
+              "classicalLocation": "周禮 → 冬官考工記 → 畫繢之事 (Ctext passage 60, node 37379)",
+              "supports": [
+                "north → 黑 (black)",
+                "east → 青",
+                "south → 赤 (red)",
+                "west → 白 (white)"
+              ],
+              "corroboratedBy": "ecnu-2015-five-colors",
+              "datingNote": "No exact composition date, single author, or historical reign is asserted. The printed edition cited by the checked journal article is 陈戍国点校《周礼》, 长沙：岳麓书社, 2006, p. 104."
+            },
+            {
+              "id": "bokenkamp-2007-p33n2",
+              "url": "https://content.ucpress.edu/pages/10645/10645.ch01.pdf#page=4",
+              "title": "Stephen R. Bokenkamp, Ancestors and Anxiety: Daoism and the Birth of Rebirth in China (University of California Press, 2007), p. 33, note 2",
+              "quote": "wood (east, green, spring); fire (south, red, summer); metal (west, white, autumn); water (north, black, winter)",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "Opened and read the publisher-hosted PDF with web.open on 2026-11-07. The copyright/title metadata appears on PDF page 2; the quoted footnote is on PDF page 4, printed page 33, note 2 (extracted lines 63–67). Requested a screenshot of PDF page 4 as an additional page check. Book title, author, publisher and Aug 2007 publication metadata were independently matched to the publisher’s book page.",
+              "sourceStatus": "Independent scholarly explanation by a specialist in Chinese religion, published by a university press; it describes historical five-phase cosmology.",
+              "bookMetadataUrl": "https://www.ucpress.edu/books/ancestors-and-anxiety/pdf",
+              "publicationYear": 2007,
+              "page": "33",
+              "note": "2",
+              "supports": [
+                "five-phase framework",
+                "north–water–black–winter",
+                "south–fire–red–summer",
+                "west–metal–white–autumn",
+                "east–wood–green–spring"
+              ],
+              "quoteWordCount": 16,
+              "scopeNote": "The passage explicitly calls these five-phase associations and situates the fully developed system by the Han dynasty. It does not justify a claim about every Chinese symbolic system. Its English “green” does not replace the primary Chinese term 青 with modern 蓝."
+            },
+            {
+              "id": "moe-qing-a04499",
+              "url": "https://dict.variants.moe.edu.tw/dictView.jsp?ID=49776",
+              "title": "青 [A04499] — 教育部《異體字字典》, 2024 edition",
+              "quote": "⑴綠色。",
+              "supportingQuote": "⑵藍色。",
+              "additionalShortQuote": "青，東方色也。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "Verified the exact definitions and entry identity in the full indexed official dictionary result through targeted web search on 2026-11-07. Direct HTTP access to the la=0 variant returned 404; the successful indexed canonical entry URL is used here. The indexed entry lists green and blue as distinct contextual senses of 青.",
+              "sourceStatus": "Official Ministry of Education lexicographic source; supports the semantic range of 青 rather than five-phase cosmology by itself.",
+              "supports": [
+                "青 can denote green",
+                "青 can denote blue",
+                "青 is not a precise synonym of modern 蓝 in every context"
+              ],
+              "scopeNote": "The entry also lists black as another contextual sense; the proposed explanation only says that 青 includes blue and green senses, not that those exhaust its meanings."
+            },
+            {
+              "id": "ecnu-2015-five-colors",
+              "url": "https://xbzs.ecnu.edu.cn/CN/html/201502009.htm",
+              "title": "夏广兴、闫伟伟：《密教传持与宋代民间五色线习俗的形成与发展》, 华东师范大学学报（哲学社会科学版）, 2015, 47(2): 69–74",
+              "quote": "北方谓之黑",
+              "supportingQuote": "玄武为水，守护黑色，主北方",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "Downloaded and read full institutional journal HTML on 2026-11-07, including author/journal/year/volume/issue/pages/DOI metadata, section 一 五色线与阴阳五行说, and the reference for its quotation from 周礼. Exact quoted fragments were found in the downloaded HTML and checked against web-indexed excerpts.",
+              "sourceStatus": "Scholarly journal article hosted by East China Normal University; independently reproduces the classical north–black wording and identifies its printed edition.",
+              "doi": "10.16382/j.cnki.1000-5579.2015.02.009",
+              "quotedPrimaryEdition": "陈戍国点校：《周礼》，长沙：岳麓书社，2006年，第104页。",
+              "localVerificationCopy": "/tmp/lingvo-color-source-ecnu.html",
+              "scopeNote": "Later parts of this very article discuss Buddhist five-color mappings that differ from the classical five-phase scheme. This is an additional reason to narrow the question stem, and not to generalize to every Chinese worldview."
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "蓝色",
+            "ru": [
+              "Синий"
+            ],
+            "gloss": "Синий — цвет глазурованной черепицы зала Молитвы об урожае в Храме Неба."
+          },
+          "wuxing": {
+            "zh": "蓝色",
+            "ru": [
+              "Синий"
+            ],
+            "gloss": "Синий — восток обозначают термином 青: он охватывает синие и зелёные оттенки."
+          }
+        },
+        {
+          "id": "color-purple",
+          "sources": [
+            {
+              "url": "https://www.dpm.org.cn/Uploads/File/2018/11/07/u5be27b6438ab2.pdf",
+              "title": "对紫禁城学研究范围的思考 — 故宫博物院",
+              "quote": "以天帝所居之紫微星座比为天子所居之宫殿",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "我是北京城一只雨燕 — 北京市人民政府",
+              "url": "https://www.beijing.gov.cn/tsbj/msjs/202007/t20200709_1943858.html",
+              "quote": "地上紫禁城",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+            }
+          ],
+          "olympiad": [
+            "2024-25-shk-mosobl-7"
+          ],
+          "name": {
+            "zh": "紫色",
+            "ru": [
+              "Пурпурный"
+            ],
+            "gloss": "Пурпурный — 紫 в названии отсылает к небесной области Цзывэй."
+          }
+        },
+        {
+          "id": "color-white",
+          "sources": [
+            {
+              "id": "zhouli-kaogongji-primary",
+              "url": "https://ctext.org/text.pl?if=en&node=37379&show=parallel",
+              "title": "《周禮·冬官考工記》畫繢之事 — Chinese Text Project",
+              "quote": "東方謂之青，南方謂之赤，西方謂之白，北方謂之黑",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "Verified exact Chinese Text Project indexed transcription and work/section attribution through targeted web searches on 2026-11-07. Direct HTTP fetch returned the project’s bot-protection page, so no claim of full direct page inspection is made. The north–black wording was independently checked in the full HTML of the institutional scholarly article identified in corroboratingSources, which cites a named printed edition.",
+              "sourceStatus": "Primary classical text, in a modern scholarly digital transcription; not a contemporary official statement.",
+              "classicalLocation": "周禮 → 冬官考工記 → 畫繢之事 (Ctext passage 60, node 37379)",
+              "supports": [
+                "north → 黑 (black)",
+                "east → 青",
+                "south → 赤 (red)",
+                "west → 白 (white)"
+              ],
+              "corroboratedBy": "ecnu-2015-five-colors",
+              "datingNote": "No exact composition date, single author, or historical reign is asserted. The printed edition cited by the checked journal article is 陈戍国点校《周礼》, 长沙：岳麓书社, 2006, p. 104."
+            },
+            {
+              "id": "bokenkamp-2007-p33n2",
+              "url": "https://content.ucpress.edu/pages/10645/10645.ch01.pdf#page=4",
+              "title": "Stephen R. Bokenkamp, Ancestors and Anxiety: Daoism and the Birth of Rebirth in China (University of California Press, 2007), p. 33, note 2",
+              "quote": "wood (east, green, spring); fire (south, red, summer); metal (west, white, autumn); water (north, black, winter)",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "Opened and read the publisher-hosted PDF with web.open on 2026-11-07. The copyright/title metadata appears on PDF page 2; the quoted footnote is on PDF page 4, printed page 33, note 2 (extracted lines 63–67). Requested a screenshot of PDF page 4 as an additional page check. Book title, author, publisher and Aug 2007 publication metadata were independently matched to the publisher’s book page.",
+              "sourceStatus": "Independent scholarly explanation by a specialist in Chinese religion, published by a university press; it describes historical five-phase cosmology.",
+              "bookMetadataUrl": "https://www.ucpress.edu/books/ancestors-and-anxiety/pdf",
+              "publicationYear": 2007,
+              "page": "33",
+              "note": "2",
+              "supports": [
+                "five-phase framework",
+                "north–water–black–winter",
+                "south–fire–red–summer",
+                "west–metal–white–autumn",
+                "east–wood–green–spring"
+              ],
+              "quoteWordCount": 16,
+              "scopeNote": "The passage explicitly calls these five-phase associations and situates the fully developed system by the Han dynasty. It does not justify a claim about every Chinese symbolic system. Its English “green” does not replace the primary Chinese term 青 with modern 蓝."
+            },
+            {
+              "id": "moe-qing-a04499",
+              "url": "https://dict.variants.moe.edu.tw/dictView.jsp?ID=49776",
+              "title": "青 [A04499] — 教育部《異體字字典》, 2024 edition",
+              "quote": "⑴綠色。",
+              "supportingQuote": "⑵藍色。",
+              "additionalShortQuote": "青，東方色也。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "Verified the exact definitions and entry identity in the full indexed official dictionary result through targeted web search on 2026-11-07. Direct HTTP access to the la=0 variant returned 404; the successful indexed canonical entry URL is used here. The indexed entry lists green and blue as distinct contextual senses of 青.",
+              "sourceStatus": "Official Ministry of Education lexicographic source; supports the semantic range of 青 rather than five-phase cosmology by itself.",
+              "supports": [
+                "青 can denote green",
+                "青 can denote blue",
+                "青 is not a precise synonym of modern 蓝 in every context"
+              ],
+              "scopeNote": "The entry also lists black as another contextual sense; the proposed explanation only says that 青 includes blue and green senses, not that those exhaust its meanings."
+            },
+            {
+              "id": "ecnu-2015-five-colors",
+              "url": "https://xbzs.ecnu.edu.cn/CN/html/201502009.htm",
+              "title": "夏广兴、闫伟伟：《密教传持与宋代民间五色线习俗的形成与发展》, 华东师范大学学报（哲学社会科学版）, 2015, 47(2): 69–74",
+              "quote": "北方谓之黑",
+              "supportingQuote": "玄武为水，守护黑色，主北方",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "Downloaded and read full institutional journal HTML on 2026-11-07, including author/journal/year/volume/issue/pages/DOI metadata, section 一 五色线与阴阳五行说, and the reference for its quotation from 周礼. Exact quoted fragments were found in the downloaded HTML and checked against web-indexed excerpts.",
+              "sourceStatus": "Scholarly journal article hosted by East China Normal University; independently reproduces the classical north–black wording and identifies its printed edition.",
+              "doi": "10.16382/j.cnki.1000-5579.2015.02.009",
+              "quotedPrimaryEdition": "陈戍国点校：《周礼》，长沙：岳麓书社，2006年，第104页。",
+              "localVerificationCopy": "/tmp/lingvo-color-source-ecnu.html",
+              "scopeNote": "Later parts of this very article discuss Buddhist five-color mappings that differ from the classical five-phase scheme. This is an additional reason to narrow the question stem, and not to generalize to every Chinese worldview."
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "白色",
+            "ru": [
+              "Белый"
+            ],
+            "gloss": "Белый — в системе пяти стихий запад связан с металлом и осенью."
+          },
+          "wuxing": {
+            "zh": "白色",
+            "ru": [
+              "Белый"
+            ],
+            "gloss": "Белый — в системе пяти стихий запад связан с металлом и осенью."
+          }
+        },
+        {
+          "id": "color-black",
+          "sources": [
+            {
+              "id": "zhouli-kaogongji-primary",
+              "url": "https://ctext.org/text.pl?if=en&node=37379&show=parallel",
+              "title": "《周禮·冬官考工記》畫繢之事 — Chinese Text Project",
+              "quote": "東方謂之青，南方謂之赤，西方謂之白，北方謂之黑",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "Verified exact Chinese Text Project indexed transcription and work/section attribution through targeted web searches on 2026-11-07. Direct HTTP fetch returned the project’s bot-protection page, so no claim of full direct page inspection is made. The north–black wording was independently checked in the full HTML of the institutional scholarly article identified in corroboratingSources, which cites a named printed edition.",
+              "sourceStatus": "Primary classical text, in a modern scholarly digital transcription; not a contemporary official statement.",
+              "classicalLocation": "周禮 → 冬官考工記 → 畫繢之事 (Ctext passage 60, node 37379)",
+              "supports": [
+                "north → 黑 (black)",
+                "east → 青",
+                "south → 赤 (red)",
+                "west → 白 (white)"
+              ],
+              "corroboratedBy": "ecnu-2015-five-colors",
+              "datingNote": "No exact composition date, single author, or historical reign is asserted. The printed edition cited by the checked journal article is 陈戍国点校《周礼》, 长沙：岳麓书社, 2006, p. 104."
+            },
+            {
+              "id": "bokenkamp-2007-p33n2",
+              "url": "https://content.ucpress.edu/pages/10645/10645.ch01.pdf#page=4",
+              "title": "Stephen R. Bokenkamp, Ancestors and Anxiety: Daoism and the Birth of Rebirth in China (University of California Press, 2007), p. 33, note 2",
+              "quote": "wood (east, green, spring); fire (south, red, summer); metal (west, white, autumn); water (north, black, winter)",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "Opened and read the publisher-hosted PDF with web.open on 2026-11-07. The copyright/title metadata appears on PDF page 2; the quoted footnote is on PDF page 4, printed page 33, note 2 (extracted lines 63–67). Requested a screenshot of PDF page 4 as an additional page check. Book title, author, publisher and Aug 2007 publication metadata were independently matched to the publisher’s book page.",
+              "sourceStatus": "Independent scholarly explanation by a specialist in Chinese religion, published by a university press; it describes historical five-phase cosmology.",
+              "bookMetadataUrl": "https://www.ucpress.edu/books/ancestors-and-anxiety/pdf",
+              "publicationYear": 2007,
+              "page": "33",
+              "note": "2",
+              "supports": [
+                "five-phase framework",
+                "north–water–black–winter",
+                "south–fire–red–summer",
+                "west–metal–white–autumn",
+                "east–wood–green–spring"
+              ],
+              "quoteWordCount": 16,
+              "scopeNote": "The passage explicitly calls these five-phase associations and situates the fully developed system by the Han dynasty. It does not justify a claim about every Chinese symbolic system. Its English “green” does not replace the primary Chinese term 青 with modern 蓝."
+            },
+            {
+              "id": "moe-qing-a04499",
+              "url": "https://dict.variants.moe.edu.tw/dictView.jsp?ID=49776",
+              "title": "青 [A04499] — 教育部《異體字字典》, 2024 edition",
+              "quote": "⑴綠色。",
+              "supportingQuote": "⑵藍色。",
+              "additionalShortQuote": "青，東方色也。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "Verified the exact definitions and entry identity in the full indexed official dictionary result through targeted web search on 2026-11-07. Direct HTTP access to the la=0 variant returned 404; the successful indexed canonical entry URL is used here. The indexed entry lists green and blue as distinct contextual senses of 青.",
+              "sourceStatus": "Official Ministry of Education lexicographic source; supports the semantic range of 青 rather than five-phase cosmology by itself.",
+              "supports": [
+                "青 can denote green",
+                "青 can denote blue",
+                "青 is not a precise synonym of modern 蓝 in every context"
+              ],
+              "scopeNote": "The entry also lists black as another contextual sense; the proposed explanation only says that 青 includes blue and green senses, not that those exhaust its meanings."
+            },
+            {
+              "id": "ecnu-2015-five-colors",
+              "url": "https://xbzs.ecnu.edu.cn/CN/html/201502009.htm",
+              "title": "夏广兴、闫伟伟：《密教传持与宋代民间五色线习俗的形成与发展》, 华东师范大学学报（哲学社会科学版）, 2015, 47(2): 69–74",
+              "quote": "北方谓之黑",
+              "supportingQuote": "玄武为水，守护黑色，主北方",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "Downloaded and read full institutional journal HTML on 2026-11-07, including author/journal/year/volume/issue/pages/DOI metadata, section 一 五色线与阴阳五行说, and the reference for its quotation from 周礼. Exact quoted fragments were found in the downloaded HTML and checked against web-indexed excerpts.",
+              "sourceStatus": "Scholarly journal article hosted by East China Normal University; independently reproduces the classical north–black wording and identifies its printed edition.",
+              "doi": "10.16382/j.cnki.1000-5579.2015.02.009",
+              "quotedPrimaryEdition": "陈戍国点校：《周礼》，长沙：岳麓书社，2006年，第104页。",
+              "localVerificationCopy": "/tmp/lingvo-color-source-ecnu.html",
+              "scopeNote": "Later parts of this very article discuss Buddhist five-color mappings that differ from the classical five-phase scheme. This is an additional reason to narrow the question stem, and not to generalize to every Chinese worldview."
+            }
+          ],
+          "olympiad": [
+            "2025-26-shk-mosobl-6"
+          ],
+          "name": {
+            "zh": "黑色",
+            "ru": [
+              "Чёрный"
+            ],
+            "gloss": "Чёрный — в той же системе север связан с водой и зимой."
+          },
+          "wuxing": {
+            "zh": "黑色",
+            "ru": [
+              "Чёрный"
+            ],
+            "gloss": "Чёрный — в той же системе север связан с водой и зимой."
+          }
+        }
+      ]
+    },
+    "teachingsets": {
+      "columns": {
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "teach-conf-mo-legal",
+          "sources": [
+            {
+              "url": "https://www.neac.gov.cn/seac/c103391/202211/1159726.shtml",
+              "title": "〖道中华〗“兼爱”“非攻”“尚同”，两千多年前墨家的“命运共同体”主张 — 国家民族事务委员会",
+              "quote": "主张“兼爱非攻”的墨家思想曾显赫一时",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "墨子 — 中国关键词",
+              "url": "http://keywords.china.org.cn/2024-08/28/content_117392932.html",
+              "quote": "墨子（约前468—前376），先秦时期著名思想家、教育家，墨家学派创始人和主要代表人物。墨家是儒家学派的主要理论对手",
+              "authority": "official",
+              "checkedAt": "2026-10-23"
+            },
+            {
+              "title": "墨子 — 滕州市人民政府",
+              "url": "http://www.tengzhou.gov.cn/xtzgk/gjmr/202012/t20201224_1123648.html",
+              "quote": "墨子，名翟，春秋末期战国初期宋国人，一说鲁阳人，一说滕国人。宋国贵族目夷的后裔，曾担任宋国大夫。中国古代思想家、教育家、科学家、军事家，墨家学派创始人和主要代表人物。",
+              "authority": "official",
+              "checkedAt": "2026-10-23"
+            },
+            {
+              "title": "墨子 — 驻委内瑞拉使馆",
+              "url": "http://ve.china-embassy.gov.cn/chn/zwgx/whjl/qian563/",
+              "quote": "现存《墨子》五十三篇，是研究墨子和墨家学说的基本材料。",
+              "authority": "official",
+              "checkedAt": "2026-10-23"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "儒家、墨家、法家",
+            "ru": [
+              "Конфуцианство, моизм, легизм"
+            ],
+            "gloss": "Конфуцианство, моизм, легизм — моизм проповедует «всеобщую любовь»."
+          }
+        },
+        {
+          "id": "teach-christian-branches",
+          "sources": [
+            {
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=87247&q=1&word=%E6%95%99",
+              "title": "基督教 — 教育部《重編國語辭典修訂本》",
+              "quote": "十一世紀分裂為天主教和東正教，十六世紀宗教改革後又從天主教分裂出許多新教派",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "基督教历史及中国基督教的历史 — 北京大学",
+              "url": "https://tzb.pku.edu.cn/tzgz/mzzj/50124tzb229622.htm",
+              "quote": "新教与天主教、东正教并列为基督教三大派别之一。",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "基督教、天主教、新教",
+            "ru": [
+              "Христианство, католицизм, протестантизм"
+            ],
+            "gloss": "Христианство, католицизм, протестантизм — последние два являются ветвями первого."
+          }
+        },
+        {
+          "id": "teach-three",
+          "sources": [
+            {
+              "url": "https://tzb.fjjxu.edu.cn/2021/0329/c1950a77523/page.htm",
+              "title": "宗教知识 — 福建江夏学院",
+              "quote": "佛教是当今三大世界宗教之一，产生于公元前6至公元前5世纪的古印度",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "何以为教：儒释道三教在南北朝时期的确立及互动 — 北京大学哲学系",
+              "url": "https://phil.pku.edu.cn/xwgg/xzxw/xzdt/69Religiousstudies491385.htm",
+              "quote": "到了南北朝，“三教”逐渐成为儒、释、道的代名词。",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+            }
+          ],
+          "olympiad": [
+            "2022-23-shk-mosobl-17"
+          ],
+          "name": {
+            "zh": "儒家、佛教、道家",
+            "ru": [
+              "Конфуцианство, буддизм, даосизм"
+            ],
+            "gloss": "Конфуцианство, буддизм, даосизм — из них буддизм возник в Индии."
+          }
+        },
+        {
+          "id": "teach-world-religions",
+          "sources": [
+            {
+              "url": "https://www.sdaeu.edu.cn/tzb/info/1036/1015.htm",
+              "title": "什么是宗教 — 山东农业工程学院党委统战部",
+              "quote": "有佛教、基督教和伊斯兰教三大世界宗教",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "天主教及其在三原的传教史 — 陕西师范大学",
+              "url": "https://lishiwenhua.snnu.edu.cn/info/1389/17201.htm",
+              "quote": "基督教和佛教、伊斯兰教并称为世界三大宗教。",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "基督教、佛教、伊斯兰教",
+            "ru": [
+              "Христианство, буддизм, ислам"
+            ],
+            "gloss": "Христианство, буддизм, ислам — три мировые религии."
+          }
+        }
+      ]
     }
   }
 }

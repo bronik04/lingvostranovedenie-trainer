@@ -6596,6 +6596,328 @@
         "year",
         "land"
       ]
+    },
+    "countries": {
+      "columns": {
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "country-us",
+          "sources": [
+            {
+              "url": "https://history.state.gov/countries/china",
+              "title": "China — Office of the Historian, U.S. Department of State",
+              "quote": "He concluded the Treaty of Wangxia (Wang-hsia) on July 3, 1844",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "web-search-primary-text-verified"
+            },
+            {
+              "title": "1844年7月3日《中美望厦条约》签订 — 中国军网（来源：中国网）",
+              "url": "https://photo.81.cn/tsjs/2015-06/10/content_6533194.htm",
+              "quote": "1844年7月3日，美国专使顾盛与两广总督耆英在澳门附近望厦村签订《中美望厦条约》",
+              "authority": "official",
+              "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "《望厦条约》——1844年7月3日 — 中国社会科学院近代史研究所",
+              "url": "http://jds.cssn.cn/xscg/xslw/201605/t20160506_5249717.shtml",
+              "quote": "英国通过鸦片战争获得的特殊权益，除割地、赔款外，美国全部获得",
+              "authority": "academic",
+              "checkedAt": "2026-10-18"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "美国",
+            "ru": [
+              "США"
+            ],
+            "gloss": "США — в 1844 году заключили с Китаем Вансяский договор"
+          }
+        },
+        {
+          "id": "country-uk",
+          "sources": [
+            {
+              "title": "8月29日 中英《南京条约》签订 — 中国军网（转载新华网）",
+              "url": "http://photo.81.cn/tsjs/2012-08/29/content_5548721.htm",
+              "quote": "1842年8月29日，清朝政府派钦差大臣与英国代表在南京签订了结束鸦片战争的丧权辱国的中英《南京条约》。",
+              "authority": "official",
+              "checkedAt": "2026-10-18",
+              "verificationMethod": "reused-accepted-dossier-source-and-quote",
+              "cellProvenance": "data/dossiers/modern-history.json#tables/events/rows/ev-yapian1/about"
+            },
+            {
+              "title": "1840年6月28日 第一次鸦片战争爆发 — 中国军网",
+              "url": "http://photo.81.cn/tsjs/2015-06/29/content_6560820.htm",
+              "quote": "鸦片战争是1840年至1842年英国对中国发动的一次侵略战争，它的爆发标志着中国近代史的开始",
+              "authority": "official",
+              "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "“林则徐带来鸦片战争”怪论之怪逻辑 — 中华人民共和国国防部",
+              "url": "http://www.mod.gov.cn/gfbw/gfjy_index/4822761.html",
+              "quote": "由40余艘舰船、4000多名士兵组成的远征军开始封锁珠江口,进攻广州。第一次鸦片战争爆发",
+              "authority": "official",
+              "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "1842年8月29日，中国近代史上第一个不平等条约《南京条约》签订 — 盐田档案与史志信息网（深圳市盐田区档案馆）",
+              "url": "https://www.yantian.gov.cn/ytdayszxxw/lsjt/content/post_11735303.html",
+              "quote": "1842年8月29日，在英国军舰“汉华丽”号上，耆英、伊里布代表清政府签订了",
+              "authority": "official",
+              "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "《南京条约》——1842年8月29日 — 中国社会科学院近代史研究所",
+              "url": "http://jds.cssn.cn/xscg/xslw/201605/t20160506_5249719.shtml",
+              "quote": "《南京条约》是中国近代第一个不平等条约，它是英国第一次侵华战争――鸦片战争的结果。",
+              "authority": "academic",
+              "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "香港问题的由来 — 中共广东省委统一战线工作部（同心网）",
+              "url": "https://www.gdtzb.gov.cn/llyj/tzll/content/mpost_82001.html",
+              "quote": "被迫签订了中国历史上第一个丧权辱国的不平等条约——中英《南京条约》，同意把香港岛永久割让给英国",
+              "authority": "official",
+              "checkedAt": "2026-10-18"
+            }
+          ],
+          "olympiad": [
+            "2022-23-mun-orel-4"
+          ],
+          "name": {
+            "zh": "英国",
+            "ru": [
+              "Великобритания"
+            ],
+            "gloss": "Великобритания — война закончилась Нанкинским договором 29 августа 1842 года"
+          }
+        },
+        {
+          "id": "country-de",
+          "sources": [
+            {
+              "url": "https://iqh.ruc.edu.cn/old/zglsdlyj/lsdl_xsdt/qyyj/8bf835d3ce614d9891862b3d9a8d59ad.htm",
+              "title": "中国人民大学清史研究所 — 胶澳租借地海域地名研究",
+              "quote": "中德签订《胶澳租界条约》，德国据此租借胶州湾99年",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "web-search-primary-academic-text-verified"
+            },
+            {
+              "title": "从山东问题时画看五四运动的起源 — 香港教育局",
+              "url": "https://www.edb.gov.hk/attachment/sc/curriculum-development/kla/pshe/references-and-resources/chinese-history/ancient_artifacts/Chapter20_sc.pdf",
+              "quote": "1898年3月6日清政府代表李鸿章和翁同和在北京与德国驻中国公使海靖签署《中德胶澳租界条约》。条约内容包括：德国租借胶澳地区99年，租期内胶州湾由德国管辖。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Read the PDF text returned by web open on 2026-11-07, page index 1 (printed pages 020–021), lines 139–141. Line-wrap joining only; not an indexed excerpt."
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "德国",
+            "ru": [
+              "Германия"
+            ],
+            "gloss": "Германия — по договору 1898 года получила в аренду Цзяочжоувань на 99 лет"
+          }
+        },
+        {
+          "id": "country-jp",
+          "sources": [
+            {
+              "title": "中日甲午战争爆发120周年祭：穿越历史硝烟的复兴之路 — 中国共产党新闻网（新华社）",
+              "url": "http://cpc.people.com.cn/n/2014/0726/c87228-25345907.html",
+              "quote": "清政府代表李鸿章与日本首相伊藤博文于1895年4月17日在日本签署《马关条约》",
+              "authority": "official",
+              "checkedAt": "2026-10-18",
+              "verificationMethod": "reused-accepted-dossier-source-and-quote",
+              "cellProvenance": "data/dossiers/modern-history.json#tables/events/rows/ev-jiawu/about"
+            },
+            {
+              "title": "清政府与日签订《马关条约》 — 中国军网",
+              "url": "https://photo.81.cn/tsjs/2017-04/17/content_7564798.htm",
+              "quote": "1895年4月17日，李鸿章和伊藤博文等人在日本马关签署《中日讲和条约十一款》，即《马关条约》",
+              "authority": "official",
+              "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "国耻勿忘 警钟长鸣——《马关条约》签署120周年祭 — 人民网党史频道",
+              "url": "http://dangshi.people.com.cn/n/2015/0417/c85037-26862240.html",
+              "quote": "用颤抖的双手签署了中日《马关条约》。至此，历时9个月的中日甲午战争以清政府的完败而告终",
+              "authority": "official",
+              "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "战史今日4月17日：中日《马关条约》签订 — 中国新闻网",
+              "url": "https://www.chinanews.com.cn/m/mil/2015/04-17/7214806.shtml",
+              "quote": "《条约》规定中国清政府向日本赔偿军费达2亿两白银，并割让台湾、澎湖列岛和辽东半岛",
+              "authority": "official",
+              "checkedAt": "2026-10-18"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "日本",
+            "ru": [
+              "Япония"
+            ],
+            "gloss": "Япония — после войны 1894–1895 годов заключила с Китаем Симоносекский договор"
+          }
+        }
+      ]
+    },
+    "milestones": {
+      "columns": {
+        "year": "zh",
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "mile-hydrogen",
+          "sources": [
+            {
+              "url": "https://cpc.people.com.cn/GB/33837/2534828.html",
+              "title": "我国第一颗氢弹爆炸成功 — 中国共产党新闻网",
+              "quote": "1967年6月17日，在我国西部地区成功地爆炸了第一颗氢弹。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "web-search-primary-text-verified"
+            },
+            {
+              "title": "氢弹爆炸成功 — 国家原子能机构",
+              "url": "https://www.caea.gov.cn/n6760341/n6760359/c6826572/content.html",
+              "quote": "1967年6月17日，我国成功地进行了第一颗氢弹爆炸试验。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+            }
+          ],
+          "olympiad": [],
+          "year": {
+            "zh": "1967 年",
+            "ru": [
+              "1967"
+            ],
+            "gloss": "1967 — Китай испытал первую водородную бомбу"
+          },
+          "name": {
+            "zh": "中国第一颗氢弹爆炸成功"
+          }
+        },
+        {
+          "id": "mile-dongfanghong1",
+          "sources": [
+            {
+              "title": "中国第一颗人造卫星 东方红一号 — 国家航天局",
+              "url": "https://www.cnsa.gov.cn/n6758968/n6758972/c10004149/content.html",
+              "quote": "东方红一号卫星于1958年提出预研计划，1965年正式开始研制，于1970年4月24日在酒泉卫星发射中心成功发射。东方红一号卫星重173千克，由长征一号运载火箭送入近地点441千米、远地点2368千米、倾角68.44度的椭圆轨道。卫星进行了轨道测控和《东方红》乐曲的播送。",
+              "checkedAt": "2026-10-15",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-dossier-source-and-quote",
+              "cellProvenance": "data/dossiers/space.json#tables/missions/rows/mis-dongfanghong1/year"
+            },
+            {
+              "title": "东方红一号，你想知道的都在这里 — 新华网",
+              "url": "http://www.xinhuanet.com/politics/2016-04/21/c_1118699133.htm",
+              "quote": "１９７０年４月２４日，我国第一颗人造地球卫星“东方红一号”发射成功",
+              "checkedAt": "2026-10-15",
+              "authority": "official",
+              "verificationMethod": "Reused exact quotation (short contiguous portion) from the accepted space dossier row mis-dongfanghong1; not a fresh external page read in this subtask.",
+              "provenanceCell": "data/dossiers/space.json#tables/missions/rows/mis-dongfanghong1"
+            }
+          ],
+          "olympiad": [],
+          "year": {
+            "zh": "1970 年",
+            "ru": [
+              "1970"
+            ],
+            "gloss": "1970 — запущен «Дунфанхун-1», первый искусственный спутник Китая"
+          },
+          "name": {
+            "zh": "东方红一号发射成功"
+          }
+        },
+        {
+          "id": "mile-mao-death",
+          "sources": [
+            {
+              "title": "9 сентября 1976 года скончался Мао Цзэдун — архив Яньтяня",
+              "url": "https://www.yantian.gov.cn/ytdayszxxw/lsjt/content/post_11735235.html",
+              "quote": "1976年9月9日零时10分，中国共产党中央委员会主席、中国共产党中央军事委员会主席、中国人民政治协商会议全国委员会名誉主席毛泽东在北京逝世，享年83岁。",
+              "authority": "official",
+              "checkedAt": "2026-10-18",
+              "verificationMethod": "reused-accepted-dossier-source-and-quote",
+              "cellProvenance": "data/dossiers/modern-history.json#tables/figures/rows/per-maozedong/name"
+            },
+            {
+              "title": "9月9日：外交史上的今天 — 中华人民共和国外交部",
+              "url": "https://www.fmprc.gov.cn/web/ziliao_674904/historytoday_674971/200309/t20030909_7949146.shtml",
+              "quote": "1976年9月9日，毛泽东主席在北京逝世。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+            }
+          ],
+          "olympiad": [
+            "2024-25-mun-spb-8"
+          ],
+          "year": {
+            "zh": "1976 年",
+            "ru": [
+              "1976"
+            ],
+            "gloss": "1976 — Мао Цзэдун умер 9 сентября в Пекине"
+          },
+          "name": {
+            "zh": "毛泽东逝世"
+          }
+        },
+        {
+          "id": "mile-mao-chair1956",
+          "sources": [
+            {
+              "url": "https://www.12371.cn/2021/05/03/ARTI1620005053694434.shtml",
+              "title": "百个瞬间说百年 — 1956，尽快从落后的农业国变为先进的工业国",
+              "quote": "党的八届一中全会选举毛泽东为中央委员会主席",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "web-search-primary-text-verified"
+            },
+            {
+              "title": "中共八届一中全会选出新的中央机构 — 中国共产党新闻网（历次党代会数据库）",
+              "url": "https://cpc.people.com.cn/GB/64162/64168/64560/65343/4442029.html",
+              "quote": "中国共产党第八届中央委员会在９月２８日晚间举行了第一次全体会议。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07. Page breadcrumb explicitly dates the Eighth Congress to 1956-09-15–27; same returned passage states the election result: （一）中央委员会主席：毛泽东. Not a full-page read."
+            },
+            {
+              "title": "党史上的今天（2026年9月28日） — 国家林业和草原局",
+              "url": "https://www.forestry.gov.cn/c/www/dszl/689956.jhtml",
+              "quote": "1956年9月28日，中共八届一中全会选举毛泽东为中央委员会主席",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+            }
+          ],
+          "olympiad": [],
+          "year": {
+            "zh": "1956 年",
+            "ru": [
+              "1956"
+            ],
+            "gloss": "1956 — Мао избрали председателем ЦК на первом пленуме после VIII съезда КПК"
+          },
+          "name": {
+            "zh": "八届一中全会选举主席"
+          }
+        }
+      ]
     }
   }
 }

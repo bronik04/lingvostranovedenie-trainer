@@ -1,0 +1,97 @@
+{
+  "reviewId": "regional-2026-11-07-batch-3",
+  "date": "2026-11-07",
+  "state": "accepted-applied",
+  "retainedQuestions": 16,
+  "originalReviewNumbersPreserved": true,
+  "excluded": [
+    {
+      "reviewNumber": 2,
+      "id": "2018-19-mun-lenobl-51",
+      "decision": {
+        "state": "excluded-from-current-batch",
+        "date": "2026-11-07",
+        "reason": "Снять вопрос №2 по прямому решению автора; предложенные переработки не принимаются.",
+        "appliedToOperationalData": false,
+        "permanentExclusionScope": null,
+        "doNotReofferWithoutAuthorDecision": true
+      }
+    },
+    {
+      "reviewNumber": 4,
+      "id": "2021-22-mun-omsk-9",
+      "decision": {
+        "state": "excluded-from-current-batch",
+        "date": "2026-11-07",
+        "reason": "Слишком лёгкий; исключить.",
+        "appliedToOperationalData": false,
+        "permanentExclusionScope": null,
+        "doNotReofferWithoutAuthorDecision": true
+      }
+    },
+    {
+      "reviewNumber": 11,
+      "id": "2022-23-mun-mosobl-2",
+      "decision": {
+        "state": "excluded-from-current-batch",
+        "date": "2026-11-07",
+        "reason": "Снять вопрос №11 по прямому решению автора; предложенные переработки не принимаются.",
+        "appliedToOperationalData": false,
+        "permanentExclusionScope": null,
+        "doNotReofferWithoutAuthorDecision": true
+      }
+    },
+    {
+      "reviewNumber": 14,
+      "id": "2024-25-mun-nsk-2",
+      "decision": {
+        "state": "excluded-from-current-batch",
+        "date": "2026-11-07",
+        "reason": "Убрать вопрос о маглеве по решению автора.",
+        "appliedToOperationalData": false,
+        "permanentExclusionScope": null,
+        "doNotReofferWithoutAuthorDecision": true
+      }
+    }
+  ],
+  "q2": {
+    "id": "2018-19-mun-lenobl-51",
+    "state": "excluded-from-current-batch",
+    "decision": {
+      "state": "excluded-from-current-batch",
+      "date": "2026-11-07",
+      "reason": "Снять вопрос №2 по прямому решению автора; предложенные переработки не принимаются.",
+      "appliedToOperationalData": false,
+      "permanentExclusionScope": null,
+      "doNotReofferWithoutAuthorDecision": true
+    },
+    "archivedProposalLocation": "2026-11-07-regional-batch-3-proposals.json#excludedItems"
+  },
+  "q3": {
+    "id": "2024-25-mun-irk-10",
+    "originalQuestionRu": "Как называется вышивка провинции Гуандун, которая наряду с сучжоуской вышивкой провинции Цзянсу, хунаньской вышивкой провинции Хунань и сычуанской вышивкой провинции Сычуань входит в число «Четырех знаменитых стилей китайской вышивки»?",
+    "proposedQuestionRu": "Как называется гуандунская вышивка — один из четырёх знаменитых стилей китайской вышивки?"
+  },
+  "q11": {
+    "id": "2022-23-mun-mosobl-2",
+    "state": "excluded-from-current-batch",
+    "decision": {
+      "state": "excluded-from-current-batch",
+      "date": "2026-11-07",
+      "reason": "Снять вопрос №11 по прямому решению автора; предложенные переработки не принимаются.",
+      "appliedToOperationalData": false,
+      "permanentExclusionScope": null,
+      "doNotReofferWithoutAuthorDecision": true
+    },
+    "archivedProposalLocation": "2026-11-07-regional-batch-3-proposals.json#excludedItems"
+  },
+  "q12": {
+    "id": "2025-26-shk-mosobl-6",
+    "proposedQuestionRu": "Какой цвет соответствует северу в традиционной системе у-син (五行)?",
+    "explanation": "Правильный ответ — 黑色 (чёрный). Здесь имеется в виду традиционная система соответствий 五行 («пять стихий»): в ней связывают стороны света, цвета, времена года и пять фаз — дерево, огонь, землю, металл и воду. В классическом тексте 《周礼·考工记》 прямо сказано: «北方谓之黑» — северу соответствует чёрный цвет. Полезно запомнить весь северный ряд: север — чёрный — вода — зима. Для сравнения: юг — красный — огонь — лето; запад — белый — металл — осень. Востоку в классическом тексте соответствует 青 — цветовой термин со значениями синего и зелёного.",
+    "answerOptionId": "o4",
+    "evidence": "2026-11-07-regional-batch-3-feedback-evidence.json#color"
+  },
+  "publicationAuthorized": true,
+  "manifestHash": "e46222edf253bb0bb603ad4d06a830c1c9796de2079d3822933a738265a18def"
+}

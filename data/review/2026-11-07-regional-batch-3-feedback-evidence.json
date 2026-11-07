@@ -1,0 +1,317 @@
+{
+  "reviewId": "regional-2026-11-07-batch-3",
+  "date": "2026-11-07",
+  "scope": "Focused evidence for current author feedback; no operational changes.",
+  "wall": {
+    "questionId": "2018-19-mun-lenobl-51",
+    "reviewNumber": 2,
+    "conservedSourceRecord": {
+      "path": "/Users/bronik04/Documents/Projects/lingvostranovedenie-trainer/data/regions/variants.json",
+      "variantId": "2018-19-mun-lenobl",
+      "taskNumber": 51,
+      "record": {
+        "number": 51,
+        "questionRu": null,
+        "questionZh": "位于北京的八达岭长城、慕田峪、司马台长城都是什么时候修筑的？",
+        "options": [
+          "文化大革命（1966-1976 年）",
+          "明代",
+          "秦朝",
+          "唐朝"
+        ],
+        "officialKeyIndex": 1
+      },
+      "origin": [
+        {
+          "file": "01-Варианты/2018-19/2-Муниципальный/Ленинградская область/9-11_Задания.pdf",
+          "sha256": "2941f879d1b5d8c6b5e53385b4c68ce9c936803c8f94f757c699965c92ea9945"
+        },
+        {
+          "file": "01-Варианты/2018-19/2-Муниципальный/Ленинградская область/9-11_Ответы.pdf",
+          "sha256": "5d6e45cb2b84f62f6fe08a1126dafe7076bcec8e40347f67f9977c30de50a624"
+        }
+      ],
+      "note": "The conserved task has questionRu:null; Russian wording is the current review translation, not an original Russian phrase from this source record. No source PDF was reopened."
+    },
+    "documentedConclusion": {
+      "sourceCondition": "位于北京的八达岭长城、慕田峪、司马台长城都是什么时候修筑的？",
+      "sourceKeyIndexZeroBased": 1,
+      "mappedAnswerOptionId": "o2",
+      "answerText": "明代",
+      "whatIsExplicit": "Время сооружения названных пекинских участков; исходный ключ — Мин. Материал и один конкретный год в условии отсутствуют.",
+      "authorIntentInference": "Наиболее обоснованный вывод: автор проверяет отнесение известных пекинских участков стены к строительству эпохи Мин, в отличие от ранней стены Цинь. Это вывод из условия и ключа, а не отдельное авторское разъяснение.",
+      "notEstablished": "Что автор имел в виду год, когда вся Великая стена «стала каменной». Такое толкование не поддержано исходником или найденными первичными источниками."
+    },
+    "evidence": [
+      {
+        "id": "badaling-conservation-plan",
+        "title": "八达岭长城保护规划（索引正文自报标题，2022年9月）",
+        "url": "https://wwj.beijing.gov.cn/bjww/resource/cms/article/bjww_482911/325986292/2023060116522338710.pdf",
+        "authority": "official — conservation plan hosted by Beijing Municipal Cultural Heritage Bureau",
+        "checkedAt": "2026-11-07",
+        "verificationMethod": "web-search exact indexed passage; PDF was not downloaded or re-audited",
+        "quotes": [
+          "均为明代重新修筑。",
+          "经过先后 80 余年修筑"
+        ],
+        "supportsRu": "Сохранившиеся сооружения Бадалина (проход/крепость, стены, башни и Чадаочэн) заново возводились при Мин; строительство комплекса шло более 80 лет. Индексированный отрывок отдельно датирует关城 1505 годом и масштабную перестройку стен/добавление башен 1568 годом, затем упоминает ремонты 1953 и 1957 годов.",
+        "caveat": "Заголовок поискового результата ошибочно относится к другому документу; заголовок и датировка здесь взяты из видимого индексированного тела. Для финальной библиографической карточки плана полезна отдельная проверка титульного листа, не выполненная в этой узкой проверке."
+      },
+      {
+        "id": "badaling-beijing-profile",
+        "title": "八达岭长城 — 北京市人民政府门户网站",
+        "url": "https://www.beijing.gov.cn/renwen/rwzyd/lyjq/5A/bdlcc/202210/t20221018_2838198.html",
+        "authority": "official — Beijing municipal government portal",
+        "checkedAt": "2026-11-07",
+        "verificationMethod": "web-open verified, body line 4",
+        "quotes": [
+          "始建于明弘治十八年(公元1505年)"
+        ],
+        "supportsRu": "Прямо относит Бадалин к эпохе Мин; указывает 1505 год.",
+        "caveat": "Популярная краткая карточка объединяет разные строительные этапы в одном предложении; точный год не следует переносить на все стены и башни или на всю Великую стену."
+      },
+      {
+        "id": "badaling-site-1504",
+        "title": "八达岭 — сайт badaling.cn",
+        "url": "https://www.badaling.cn/website/pc/index.html",
+        "authority": "attraction-site primary presentation; site operator footer was not independently verified in this bounded check",
+        "checkedAt": "2026-11-07",
+        "verificationMethod": "web-search exact indexed passage; subsequent web-open returned no readable lines",
+        "quotes": [
+          "明朝弘治十七年（公元1504年）八达岭建关城。"
+        ],
+        "supportsRu": "Дата 1504 действительно встречается в прямом профиле Бадалина, но относится к建关城 — сооружению укреплённого прохода/крепости, а не к превращению стены в каменную.",
+        "caveat": "Расходится с 1505 в муниципальной карточке и индексированном плане охраны; здесь не разрешается расхождение 1504/1505."
+      },
+      {
+        "id": "mutianyu-beijing-profile",
+        "title": "慕田峪长城 — 怀柔文旅 / 北京市人民政府门户网站",
+        "url": "https://www.beijing.gov.cn/renwen/bjgk/hrgk/wl/202212/t20221220_2881074.html",
+        "authority": "official — Huairou District Government Services Administration on Beijing government portal",
+        "checkedAt": "2026-11-07",
+        "verificationMethod": "web-open verified, body lines 13–15",
+        "quotes": [
+          "在北齐长城遗址上督建而成",
+          "明代长城"
+        ],
+        "supportsRu": "Мутяньюй описан как минский участок: строительство под руководством Сюй Да в 1368 году на месте стены Северной Ци. Для формулировки важно различать ранний предшествующий объект и минские сооружения.",
+        "caveat": "Это краткий исторический профиль, а не датировка каждой сохранившейся кладки или каждой современной реставрации."
+      },
+      {
+        "id": "mutianyu-heritage-survey",
+        "title": "关于北京市长城资源调查工作总体方案的报告 — 北京市文物局",
+        "url": "https://wwj.beijing.gov.cn/bjww/362679/362680/482911/xxgkgzdt/1771360/index.html",
+        "authority": "official — Beijing Municipal Cultural Heritage Bureau report to national heritage administration",
+        "checkedAt": "2026-11-07",
+        "verificationMethod": "web-open verified, body line 121",
+        "quotes": [
+          "另有慕田峪等明代长城"
+        ],
+        "supportsRu": "Ведомственный документ прямо классифицирует Мутяньюй как стену эпохи Мин; отдельно говорит о ранних каменных и земляных стенах, а также об обследовании и ремонтах.",
+        "caveat": "Этот отчёт не датирует начало строительства Бадалина и Сыматая одной фразой; не используется для такого вывода."
+      },
+      {
+        "id": "simatai-heritage-publication",
+        "title": "北京文博，2001年第3期（总第二十五期）— 万里长城·司马台",
+        "url": "https://wwj.beijing.gov.cn/bjww/resource/cms/article/bjww_362762/10857064/2020083110510178813.pdf",
+        "authority": "official — Beijing Municipal Cultural Heritage Bureau heritage publication",
+        "checkedAt": "2026-11-07",
+        "verificationMethod": "web-search exact indexed passage; PDF was not downloaded or re-audited",
+        "quotes": [
+          "始建于明前期"
+        ],
+        "supportsRu": "Сыматай: начало строительства в раннюю Мин; индексированный текст далее прямо говорит, что строительство охватывало ранний и средний периоды Мин.",
+        "caveat": "Проверен индексированный фрагмент конкретной публикации, не весь выпуск и не пагинация."
+      },
+      {
+        "id": "simatai-beijing-profile",
+        "title": "司马台长城 — 北京市人民政府门户网站",
+        "url": "https://www.beijing.gov.cn/renwen/rwzyd/lyjq/4A/smtcc/202210/t20221019_2839069.html",
+        "authority": "official — Beijing municipal government portal",
+        "checkedAt": "2026-11-07",
+        "verificationMethod": "web-open verified, body line 13",
+        "quotes": [
+          "保留明代原貌"
+        ],
+        "supportsRu": "Официальный профиль описывает Сыматай как сохраняющий минский облик; это поддерживает вопрос об эпохе основных сохранившихся сооружений.",
+        "caveat": "Не переносить рекламные формулы об исключительности или «определении UNESCO» без отдельной проверки; для вывода используется только минская атрибуция."
+      },
+      {
+        "id": "beijing-heritage-context",
+        "title": "北京地区“三个文化带”保护与利用 — 北京市文物局",
+        "url": "https://wwj.beijing.gov.cn/bjww/362679/362680/482911/616627/index.html",
+        "authority": "official — Beijing Municipal Cultural Heritage Bureau",
+        "checkedAt": "2026-11-07",
+        "verificationMethod": "web-open verified, body line 117",
+        "quotes": [
+          "北京域内长城始建于北齐，大规模修建于明代"
+        ],
+        "supportsRu": "Даже для пекинской стены в целом ведомство отличает начало строительства при Северной Ци от масштабного строительства при Мин.",
+        "caveat": "Обобщённое описание пекинской стены, не свидетельство об одном годе появления камня."
+      },
+      {
+        "id": "unesco-context",
+        "title": "The Great Wall — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/438/",
+        "authority": "official — UNESCO World Heritage Centre",
+        "checkedAt": "2026-11-07",
+        "verificationMethod": "web-open verified, body lines 48, 53–54",
+        "quotes": [
+          "rammed-earth sections of fortifications dating from the Western Han",
+          "masonry of the Ming period"
+        ],
+        "supportsRu": "UNESCO рассматривает стену как разновременный комплекс, строившийся с III века до н. э. до XVII века; противопоставляет сохранившиеся ханьские земляные укрепления в Ганьсу и минскую каменную/кирпичную кладку.",
+        "caveat": "Это не утверждение, что каменная кладка впервые появилась при Мин, и не доказательство единого перехода всех участков к камню. Не даёт одного года такого перехода и не специфицирует материал всех трёх названных участков."
+      }
+    ],
+    "materialAssessment": {
+      "decision": "Do not introduce a stone-transition year into the stem. Do not add brick/stone to either recommended alternative without segment-specific material evidence for all three.",
+      "supported": "Разновременные земляные и каменные/кирпичные участки сосуществуют; строительство и перестройки растянуты во времени.",
+      "unsupported": "Вся стена в один год стала каменной; камень впервые появился именно при Мин; все три участка одномоментно целиком перестроены из одного материала."
+    },
+    "recommendation": {
+      "preferredAlternative": "A",
+      "answerOptionId": "o2",
+      "answerText": "明代",
+      "changeOptions": false,
+      "changeOriginalConservedRecord": false,
+      "status": "Evidence and proposals only; not applied.",
+      "explanationSeparateRecommendation": "При отдельном редактировании пояснения убрать универсальную фразу «Бадалин возведён в 1504 году»: дата в прямом профиле относится к关城 и расходится с 1505 в других официальных материалах; она не датирует весь участок и тем более переход всей стены к камню. Достаточно указать минскую атрибуцию трёх участков, различив ранние предшествующие укрепления и поздние ремонты.",
+      "currentCaptionCaveat": "Нынешняя ссылка на аварийный план 水关长城 в镇八达岭 подтверждает только указанный там объект, а не одновременно Бадалин, Мутяньюй и Сыматай."
+    }
+  },
+  "color": {
+    "questionId": "2025-26-shk-mosobl-6",
+    "sources": [
+      {
+        "id": "zhouli-kaogongji-primary",
+        "url": "https://ctext.org/text.pl?if=en&node=37379&show=parallel",
+        "title": "《周禮·冬官考工記》畫繢之事 — Chinese Text Project",
+        "quote": "東方謂之青，南方謂之赤，西方謂之白，北方謂之黑",
+        "checkedAt": "2026-11-07",
+        "authority": "academic",
+        "verificationMethod": "Verified exact Chinese Text Project indexed transcription and work/section attribution through targeted web searches on 2026-11-07. Direct HTTP fetch returned the project’s bot-protection page, so no claim of full direct page inspection is made. The north–black wording was independently checked in the full HTML of the institutional scholarly article identified in corroboratingSources, which cites a named printed edition.",
+        "sourceStatus": "Primary classical text, in a modern scholarly digital transcription; not a contemporary official statement.",
+        "classicalLocation": "周禮 → 冬官考工記 → 畫繢之事 (Ctext passage 60, node 37379)",
+        "supports": [
+          "north → 黑 (black)",
+          "east → 青",
+          "south → 赤 (red)",
+          "west → 白 (white)"
+        ],
+        "corroboratedBy": "ecnu-2015-five-colors",
+        "datingNote": "No exact composition date, single author, or historical reign is asserted. The printed edition cited by the checked journal article is 陈戍国点校《周礼》, 长沙：岳麓书社, 2006, p. 104."
+      },
+      {
+        "id": "bokenkamp-2007-p33n2",
+        "url": "https://content.ucpress.edu/pages/10645/10645.ch01.pdf#page=4",
+        "title": "Stephen R. Bokenkamp, Ancestors and Anxiety: Daoism and the Birth of Rebirth in China (University of California Press, 2007), p. 33, note 2",
+        "quote": "wood (east, green, spring); fire (south, red, summer); metal (west, white, autumn); water (north, black, winter)",
+        "checkedAt": "2026-11-07",
+        "authority": "academic",
+        "verificationMethod": "Opened and read the publisher-hosted PDF with web.open on 2026-11-07. The copyright/title metadata appears on PDF page 2; the quoted footnote is on PDF page 4, printed page 33, note 2 (extracted lines 63–67). Requested a screenshot of PDF page 4 as an additional page check. Book title, author, publisher and Aug 2007 publication metadata were independently matched to the publisher’s book page.",
+        "sourceStatus": "Independent scholarly explanation by a specialist in Chinese religion, published by a university press; it describes historical five-phase cosmology.",
+        "bookMetadataUrl": "https://www.ucpress.edu/books/ancestors-and-anxiety/pdf",
+        "publicationYear": 2007,
+        "page": "33",
+        "note": "2",
+        "supports": [
+          "five-phase framework",
+          "north–water–black–winter",
+          "south–fire–red–summer",
+          "west–metal–white–autumn",
+          "east–wood–green–spring"
+        ],
+        "quoteWordCount": 16,
+        "scopeNote": "The passage explicitly calls these five-phase associations and situates the fully developed system by the Han dynasty. It does not justify a claim about every Chinese symbolic system. Its English “green” does not replace the primary Chinese term 青 with modern 蓝."
+      },
+      {
+        "id": "moe-qing-a04499",
+        "url": "https://dict.variants.moe.edu.tw/dictView.jsp?ID=49776",
+        "title": "青 [A04499] — 教育部《異體字字典》, 2024 edition",
+        "quote": "⑴綠色。",
+        "supportingQuote": "⑵藍色。",
+        "additionalShortQuote": "青，東方色也。",
+        "checkedAt": "2026-11-07",
+        "authority": "official",
+        "verificationMethod": "Verified the exact definitions and entry identity in the full indexed official dictionary result through targeted web search on 2026-11-07. Direct HTTP access to the la=0 variant returned 404; the successful indexed canonical entry URL is used here. The indexed entry lists green and blue as distinct contextual senses of 青.",
+        "sourceStatus": "Official Ministry of Education lexicographic source; supports the semantic range of 青 rather than five-phase cosmology by itself.",
+        "supports": [
+          "青 can denote green",
+          "青 can denote blue",
+          "青 is not a precise synonym of modern 蓝 in every context"
+        ],
+        "scopeNote": "The entry also lists black as another contextual sense; the proposed explanation only says that 青 includes blue and green senses, not that those exhaust its meanings."
+      }
+    ],
+    "corroboratingSources": [
+      {
+        "id": "ecnu-2015-five-colors",
+        "url": "https://xbzs.ecnu.edu.cn/CN/html/201502009.htm",
+        "title": "夏广兴、闫伟伟：《密教传持与宋代民间五色线习俗的形成与发展》, 华东师范大学学报（哲学社会科学版）, 2015, 47(2): 69–74",
+        "quote": "北方谓之黑",
+        "supportingQuote": "玄武为水，守护黑色，主北方",
+        "checkedAt": "2026-11-07",
+        "authority": "academic",
+        "verificationMethod": "Downloaded and read full institutional journal HTML on 2026-11-07, including author/journal/year/volume/issue/pages/DOI metadata, section 一 五色线与阴阳五行说, and the reference for its quotation from 周礼. Exact quoted fragments were found in the downloaded HTML and checked against web-indexed excerpts.",
+        "sourceStatus": "Scholarly journal article hosted by East China Normal University; independently reproduces the classical north–black wording and identifies its printed edition.",
+        "doi": "10.16382/j.cnki.1000-5579.2015.02.009",
+        "quotedPrimaryEdition": "陈戍国点校：《周礼》，长沙：岳麓书社，2006年，第104页。",
+        "localVerificationCopy": "/tmp/lingvo-color-source-ecnu.html",
+        "scopeNote": "Later parts of this very article discuss Buddhist five-color mappings that differ from the classical five-phase scheme. This is an additional reason to narrow the question stem, and not to generalize to every Chinese worldview."
+      }
+    ],
+    "verdict": "Original key o4 / 黑色 is strongly supported for the traditional five-phase/five-direction correspondence system."
+  },
+  "rfTypes": {
+    "sources": [
+      {
+        "id": "rf-constitution-art5",
+        "title": "Конституция РФ, статья 5 — Государственная Дума",
+        "url": "https://duma.gov.ru/media/files/Wn8UCV6xjMOMJsx1d4o7fxkJ55ZNJLn8.pdf",
+        "quote": "Российская Федерация состоит из республик, краев, областей, городов федерального значения, автономной области, автономных округов",
+        "checkedAt": "2026-11-07",
+        "authority": "official",
+        "verificationMethod": "Verified exact official indexed passage and/or reused official constitutional text; source role specified."
+      },
+      {
+        "id": "prc-constitution-art30",
+        "title": "Constitution of the PRC, Article 30 — State Council",
+        "url": "https://english.www.gov.cn/archive/lawregulations/201911/20/content_WS5ed8856ec6d0b3f0e9499913.html",
+        "quote": "The country consists of provinces, autonomous regions and cities directly under central government jurisdiction",
+        "checkedAt": "2026-11-07",
+        "authority": "official",
+        "verificationMethod": "Verified exact official indexed passage and/or reused official constitutional text; source role specified."
+      },
+      {
+        "id": "rf-fareast-subject-types-cn",
+        "title": "参赞致辞 — 驻哈巴罗夫斯克总领事馆经贸之窗",
+        "url": "https://khabarovsk.mofcom.gov.cn/gywm/czzc/art/2025/art_4012a72c25bd46c8841b8e0aacd5fc4d.html",
+        "quote": "俄罗斯哈巴罗夫斯克边疆区、阿穆尔州、犹太自治州和萨哈（雅库特）共和国",
+        "checkedAt": "2026-11-07",
+        "authority": "official",
+        "verificationMethod": "Verified exact official indexed passage and/or reused official constitutional text; source role specified."
+      },
+      {
+        "id": "rf-chukotka-cn",
+        "title": "楚科奇自治区 — 驻符拉迪沃斯托克总领事馆",
+        "url": "https://vladivostok.china-consulate.gov.cn/lqjs/lqgk/ckqzzq/",
+        "quote": "楚科奇自治区",
+        "checkedAt": "2026-11-07",
+        "authority": "official",
+        "verificationMethod": "Verified exact official indexed passage and/or reused official constitutional text; source role specified.",
+        "sourceDate": "2025-02-25"
+      },
+      {
+        "id": "rf-vladivostok-subjects-cn",
+        "title": "总领事致辞 — 驻符拉迪沃斯托克总领事馆",
+        "url": "https://vladivostok.china-consulate.gov.cn/zlszc/",
+        "quote": "领区包括滨海边疆区、萨哈林州、堪察加边疆区、马加丹州和楚科奇自治区5个俄罗斯联邦主体。",
+        "checkedAt": "2026-11-07",
+        "authority": "official",
+        "verificationMethod": "Verified exact official indexed passage and/or reused official constitutional text; source role specified."
+      }
+    ],
+    "method": "Types checked against ConstitutionRF article5; country-specific Chinese labels and real examples checked against current official consular profiles. No subject counts or geopolitical status claims are used."
+  }
+}

@@ -11,7 +11,9 @@
         "abbr2": "zh",
         "capital": "zh",
         "named": "zh",
-        "about": "ru"
+        "about": "ru",
+        "coastname": "zh",
+        "neighborname": "zh"
       },
       "sides": [
         "abbr",
@@ -527,7 +529,14 @@
           "skipSides": [
             "kind",
             "named"
-          ]
+          ],
+          "coastname": {
+            "zh": "辽宁",
+            "ru": [
+              "Ляонин"
+            ],
+            "gloss": "Ляонин — приморская провинция на юге Северо-Востока, центр — Шэньян"
+          }
         },
         {
           "id": "prov-jilin",
@@ -730,6 +739,14 @@
               "quote": "总面积 15.71 万平方公里，约占全国总面积的 1.64%。省会为济南市。",
               "authority": "official",
               "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "“半岛1号”赋能，“青岛模式”走向全国 — 青岛政务网",
+              "url": "https://www.qingdao.gov.cn/ywdt/tpxw/202608/t20260802_10691507.shtml",
+              "quote": "山东是海洋大省，濒临渤海和黄海。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "Verified exact official indexed passage via web search on 2026-11-07."
             }
           ],
           "olympiad": [
@@ -739,7 +756,15 @@
           "skipSides": [
             "kind",
             "named"
-          ]
+          ],
+          "coastname": {
+            "zh": "山东",
+            "ru": [
+              "провинция Шаньдун",
+              "Шаньдун"
+            ],
+            "gloss": "Шаньдун — её берега омывают Бохайское и Жёлтое моря."
+          }
         },
         {
           "id": "prov-jiangsu",
@@ -1038,7 +1063,15 @@
           "skipSides": [
             "kind",
             "named"
-          ]
+          ],
+          "coastname": {
+            "zh": "福建",
+            "ru": [
+              "провинция Фуцзянь",
+              "Фуцзянь"
+            ],
+            "gloss": "Фуцзянь — прибрежная провинция на юго-востоке, напротив Тайваня, центр — Фучжоу"
+          }
         },
         {
           "id": "prov-jiangxi",
@@ -1414,18 +1447,37 @@
               "quote": "年末常住人口10999万人。",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "广州市是广东省省会 — 广州市规划和自然资源局",
+              "url": "https://ghzyj.gz.gov.cn/hdjl/ywzsk/gtkjgh/content/post_9902845.html",
+              "quote": "广州市是广东省省会",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Verified exact primary institutional/government indexed excerpt during final draft review.",
+              "primarySource": true,
+              "titleIsDescriptive": true
             }
           ],
           "olympiad": [
             "2018-19-shk-4",
             "2018-19-shk-3",
-            "2023-24-mun-33"
+            "2023-24-mun-33",
+            "2025-26-shk-mosobl-13"
           ],
           "core": true,
           "skipSides": [
             "kind",
             "named"
-          ]
+          ],
+          "neighborname": {
+            "zh": "广东",
+            "ru": [
+              "провинция Гуандун",
+              "Гуандун"
+            ],
+            "gloss": "Гуандун — провинция на юге материкового Китая, центр — Гуанчжоу"
+          }
         },
         {
           "id": "prov-guangxi",
@@ -1721,13 +1773,47 @@
               "quote": "贵州简称黔、贵。北邻四川，南接广西，东界湖南，西连云南，位于长江和珠江两大水系的分水岭地带",
               "authority": "official",
               "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "贵州省大健康产业“十三五”发展规划 — 贵州省发展和改革委员会",
+              "url": "https://fgw.guizhou.gov.cn/zwgk2025/zdlyxx/ghjh/201707/P020250806512846991957.pdf",
+              "quote": "省会贵阳市",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Verified exact primary institutional/government indexed excerpt during final draft review.",
+              "primarySource": true,
+              "supportingQuote": "贵州省地处西南内陆"
+            },
+            {
+              "title": "四川省现代水网建设规划（征求意见稿） — 四川省水利厅",
+              "url": "https://slt.sc.gov.cn/scsslt/gsgg/2023/3/27/7503f9ef34c5484689b93cce21e8aead/files/%E5%9B%9B%E5%B7%9D%E7%9C%81%E7%8E%B0%E4%BB%A3%E6%B0%B4%E7%BD%91%E5%BB%BA%E8%AE%BE%E8%A7%84%E5%88%92%28%E5%BE%81%E6%B1%82%E6%84%8F%E8%A7%81%E7%A8%BF%29.pdf",
+              "quote": "四川地处我国西南内陆腹地，北连青海、甘肃、陕西，东邻重庆，南接云南、贵州",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "Verified exact official indexed passage via web search on 2026-11-07."
             }
           ],
-          "olympiad": [],
+          "olympiad": [
+            "2024-25-mun-kem-4"
+          ],
           "core": true,
           "skipSides": [
             "kind"
-          ]
+          ],
+          "coastname": {
+            "zh": "贵州",
+            "ru": [
+              "Гуйчжоу"
+            ],
+            "gloss": "Гуйчжоу — провинция на юго-западе Китая; её административный центр — Гуйян."
+          },
+          "neighborname": {
+            "zh": "贵州",
+            "ru": [
+              "Гуйчжоу"
+            ],
+            "gloss": "Гуйчжоу — южный сосед Сычуани; административный центр — Гуйян."
+          }
         },
         {
           "id": "prov-yunnan",
@@ -1927,6 +2013,23 @@
               "quote": "陕西省简称“陕”或“秦”",
               "authority": "official",
               "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "四川省现代水网建设规划（征求意见稿） — 四川省水利厅",
+              "url": "https://slt.sc.gov.cn/scsslt/gsgg/2023/3/27/7503f9ef34c5484689b93cce21e8aead/files/%E5%9B%9B%E5%B7%9D%E7%9C%81%E7%8E%B0%E4%BB%A3%E6%B0%B4%E7%BD%91%E5%BB%BA%E8%AE%BE%E8%A7%84%E5%88%92%28%E5%BE%81%E6%B1%82%E6%84%8F%E8%A7%81%E7%A8%BF%29.pdf",
+              "quote": "四川地处我国西南内陆腹地，北连青海、甘肃、陕西，东邻重庆，南接云南、贵州",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "Verified exact official indexed passage via web search on 2026-11-07."
+            },
+            {
+              "title": "陕西省志 — 陕西省地方志编纂委员会",
+              "url": "https://dfz.shaanxi.gov.cn/zslm/fzzlk/xbsxsz/szdylpdf/201404/P020240923610230893228.pdf",
+              "quote": "西安是陕西省省会所在地",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Verified exact primary institutional/government indexed excerpt during final draft review.",
+              "primarySource": true
             }
           ],
           "olympiad": [],
@@ -1935,7 +2038,15 @@
             "abbr2",
             "kind",
             "named"
-          ]
+          ],
+          "neighborname": {
+            "zh": "陕西",
+            "ru": [
+              "провинция Шэньси",
+              "Шэньси"
+            ],
+            "gloss": "Шэньси — северный сосед Сычуани; административный центр — Сиань."
+          }
         },
         {
           "id": "prov-gansu",
@@ -1994,6 +2105,14 @@
               "quote": "962000 甘肃省",
               "authority": "official",
               "checkedAt": "2026-10-17"
+            },
+            {
+              "title": "四川省现代水网建设规划（征求意见稿） — 四川省水利厅",
+              "url": "https://slt.sc.gov.cn/scsslt/gsgg/2023/3/27/7503f9ef34c5484689b93cce21e8aead/files/%E5%9B%9B%E5%B7%9D%E7%9C%81%E7%8E%B0%E4%BB%A3%E6%B0%B4%E7%BD%91%E5%BB%BA%E8%AE%BE%E8%A7%84%E5%88%92%28%E5%BE%81%E6%B1%82%E6%84%8F%E8%A7%81%E7%A8%BF%29.pdf",
+              "quote": "四川地处我国西南内陆腹地，北连青海、甘肃、陕西，东邻重庆，南接云南、贵州",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "Verified exact official indexed passage via web search on 2026-11-07."
             }
           ],
           "olympiad": [],
@@ -2001,7 +2120,15 @@
           "skipSides": [
             "kind",
             "named"
-          ]
+          ],
+          "neighborname": {
+            "zh": "甘肃",
+            "ru": [
+              "провинция Ганьсу",
+              "Ганьсу"
+            ],
+            "gloss": "Ганьсу — один из северных соседей Сычуани; центр — Ланьчжоу."
+          }
         },
         {
           "id": "prov-qinghai",
@@ -2395,7 +2522,8 @@
         "river": "zh",
         "known": "zh",
         "about": "ru",
-        "industry": "zh"
+        "industry": "zh",
+        "historicname": "zh"
       },
       "sides": [
         "region",
@@ -3446,7 +3574,14 @@
           "core": true,
           "skipSides": [
             "river"
-          ]
+          ],
+          "historicname": {
+            "zh": "上海",
+            "ru": [
+              "Шанхай"
+            ],
+            "gloss": "Шанхай — город центрального подчинения у устья Янцзы"
+          }
         },
         {
           "id": "city-beijing",
@@ -5800,6 +5935,528 @@
               "Чанчунь"
             ],
             "gloss": "Чанчунь — в 1956 году здесь выпустили первые грузовики «Цзефан» (解放)."
+          }
+        },
+        {
+          "id": "city-hongkong",
+          "sources": [
+            {
+              "title": "香港特别行政区 — 中华人民共和国驻印度尼西亚共和国大使馆",
+              "url": "https://id.china-embassy.gov.cn/chn/zggk/zgjk/xzqh/200404/t20040421_2344701.htm",
+              "quote": "香港地区位于中国东南海岸，珠江口之东，与广东省的深圳市毗邻，包括香港岛、九龙和新界",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "Reuse of quoted source and accepted dossier row; no new external claim beyond cited fields.",
+              "provenanceCell": "provinces/provinces/prov-xianggang"
+            },
+            {
+              "title": "国务院关于香港特别行政区简称及在全国行政区划中排列顺序的通知 — 中国政府网",
+              "url": "https://www.gov.cn/zhengce/zhengceku/2010-11/12/content_7150.htm",
+              "quote": "现将香港特别行政区的简称及在全国行政区划中的排列顺序通知如下： 一、香港特别行政区简称“港”。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "自然概况 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "http://www.locpg.gov.cn/xggk/2014-01/04/c_125956093.htm",
+              "quote": "香港特别行政区的区域范围包括香港岛、九龙、新界和周围的262个岛屿。陆地总面积为1106.34平方公里",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "省级行政单位（来源：新华网） — 中华人民共和国驻哈萨克斯坦大使馆",
+              "url": "https://kz.china-embassy.gov.cn/chn/gyzg/zggk/xingzhengquhua/201008/t20100804_1364739.htm",
+              "authority": "official",
+              "quote": "特别行政区——为“一国两制”的实施，宪法第三十一条专门规定国家在必要时可以设立特别行政区。特别行政区与省、自治区、直辖市同属直辖于中央人民政府的地方行政区域。至１９９９年１２月澳门回归为止，中国共设立２个特别行政区：香港特别行政区、澳门特别行政区。",
+              "checkedAt": "2026-10-16"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "香港",
+            "ru": [
+              "Сянган (Гонконг)"
+            ],
+            "gloss": "Сянган (Гонконг) — особый административный район на юге Китая у устья Чжуцзяна"
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "about": "Сянган (Гонконг) — особый административный район на юге Китая у устья Чжуцзяна",
+          "historicname": {
+            "zh": "香港",
+            "ru": [
+              "Сянган (Гонконг)"
+            ],
+            "gloss": "Сянган (Гонконг) — особый административный район на юге Китая у устья Чжуцзяна"
+          }
+        },
+        {
+          "id": "city-lushun",
+          "sources": [
+            {
+              "title": "辽宁省大连市旅顺口区教育局：情美和谐 — Министерство образования КНР",
+              "url": "https://www.moe.gov.cn/jyb_xwfb/moe_2082/2021/2021_zl35/dudao3/202104/t20210428_528978.html",
+              "quote": "旅顺口区隶属辽宁省大连市，地处辽东半岛最南端",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "Verified exact official indexed passage via web search on 2026-11-07."
+            },
+            {
+              "title": "Port Arthur: An Eternal Sacred Space — Hoover Institution Library & Archives with Professor Toshihiko Kishi, Kyoto University",
+              "url": "https://storymaps.arcgis.com/stories/fc122b2c5d2044eaa2320ee3fcb692ac",
+              "quote": "Port Artura in Russian, etc.) and today is the city of Lushun in China (the Lüshunkou District of Dalian).",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07, including academic authorship shown in the result. Direct web open produced no readable lines; not a full-page read. Institutional provenance is also linked by https://fanningtheflames.hoover.org/index.php/."
+            },
+            {
+              "title": "NH 100070 View of Port Arthur taken on February 25, 1905 — Naval History and Heritage Command",
+              "url": "https://www.history.navy.mil/content/history/nhhc/our-collections/photography/numerical-list-of-images/nhhc-series/nh-series/NH-100000/NH-100070.html",
+              "quote": "Port Arthur later became known as Lushun by the Chinese.",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+            }
+          ],
+          "olympiad": [
+            "2023-24-mun-spb-8"
+          ],
+          "name": {
+            "zh": "旅顺",
+            "ru": [
+              "Люйшунь"
+            ],
+            "gloss": "Люйшунь — район Даляня на южной оконечности Ляодунского полуострова."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "about": "Люйшунь — район Даляня на южной оконечности Ляодунского полуострова.",
+          "historicname": {
+            "zh": "旅顺",
+            "ru": [
+              "Люйшунь"
+            ],
+            "gloss": "Люйшунь — район Даляня на южной оконечности Ляодунского полуострова."
+          }
+        },
+        {
+          "id": "city-qingdao",
+          "sources": [
+            {
+              "title": "人口简况 — 青岛政务网",
+              "url": "https://www.qingdao.gov.cn/yfqd/qdgk/rkjk/202009/t20200903_66.shtml",
+              "quote": "青岛市地处山东半岛南部，位于东经119°30′～121°00′、北纬35°35′～37°09′，东、南濒临黄海",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "Verified exact official indexed passage via web search on 2026-11-07."
+            },
+            {
+              "title": "气候变化背景下风暴潮对海岸带城市围填海区的淹没影响分析——以山东省青岛市为例 — 中国海洋大学学报（自然科学版）",
+              "url": "https://html.rhhz.net/ZGHYDXXBZRKXB/html/20260212.htm",
+              "quote": "本文选取青岛市(119°30′E—121°00′E，35°35′N—37°09′N)作为研究区域，该区域地处山东半岛南部，东部及南部濒临黄海。",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "青岛",
+            "ru": [
+              "Циндао"
+            ],
+            "gloss": "Циндао — город на юге Шаньдунского полуострова, на побережье Жёлтого моря."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "about": "Циндао — город на юге Шаньдунского полуострова, на побережье Жёлтого моря.",
+          "historicname": {
+            "zh": "青岛",
+            "ru": [
+              "Циндао"
+            ],
+            "gloss": "Циндао — город на юге Шаньдунского полуострова, на побережье Жёлтого моря."
+          }
+        }
+      ]
+    },
+    "regiongroups": {
+      "columns": {
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "rg-hei-anhui-fujian",
+          "sources": [
+            {
+              "title": "省情概况 — 福建省人民政府门户网站",
+              "url": "https://www.fujian.gov.cn/zjfj/sqgk/",
+              "quote": "福建省简称“闽”，地处中国东南沿海，省会福州。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "Reuse of quoted source and accepted dossier row; no new external claim beyond cited fields.",
+              "provenanceCell": "provinces/provinces/prov-fujian"
+            },
+            {
+              "title": "省情概况 — 黑龙江省人民政府网",
+              "url": "https://www.hlj.gov.cn/hlj/c108476/202005/c00_30550923.shtml",
+              "quote": "黑龙江省，简称黑。省会哈尔滨。位于中国东北部，是中国位置最北、纬度最高的省份",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "在这片神奇的土地上——黑龙江省简介 — 人民网",
+              "url": "http://politics.people.com.cn/n/2013/0808/c70731-22492268.html",
+              "quote": "黑龙江省因境内横亘北部边境的大河流黑龙江而得名。黑龙江，古称“黑水”",
+              "authority": "official",
+              "checkedAt": "2026-10-17"
+            },
+            {
+              "title": "“美丽中国地名寻梦”之有趣的黑龙江地名 — 光明网",
+              "url": "https://culture.gmw.cn/2018-04/27/content_28530286.htm",
+              "quote": "黑龙江省位于我国的北部边陲，因境内最大的河流黑龙江而得名。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "最新！安徽省对外宣传片发布 — 中国驻福冈总领事馆",
+              "url": "https://fukuoka.china-consulate.gov.cn/chn/ggxw/202206/t20220609_10700631.htm",
+              "quote": "安徽，简称“皖”，省名取当时安庆、徽州两府首字合成，是中华人民共和国省级行政区。省会合肥。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "安徽（2017年度经济社会发展概况）— 中国网",
+              "url": "http://about.china.com.cn/2020-05/07/content_75954263.htm",
+              "quote": "取当时安庆、徽州两府首字得名。境内有皖山、皖水，即现今的天柱山和皖河，春秋时（公元前722-前481年）曾被封为伯国，称为皖国，故安徽简称皖。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "主管单位名称与代码（五）外省市 — 上海市统计局",
+              "url": "https://tjj.sh.gov.cn/xzqh/20111204/0014-236756.html",
+              "quote": "934000 安徽省",
+              "authority": "official",
+              "checkedAt": "2026-10-17"
+            },
+            {
+              "title": "图鉴丨“福”与“建”的“CP”密码 — 新华福建",
+              "url": "http://fj.news.cn/20260326/5c9ba298d4f44f0ba773c973db551bea/c.html",
+              "quote": "“福建”之名取自福州与“建州”的首字古建州治所所在地即今日的南平建瓯市",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "寻味中国丨福建的“建”从何而来？— 新华网",
+              "url": "http://www.news.cn/politics/2023-08/24/c_1212257100.htm",
+              "quote": "建瓯古称建州，福建的“建”字即取其一。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "历史沿革 — 福建省人民政府台湾事务办公室",
+              "url": "http://www.fjtb.gov.cn/intro/201306/t20130608_4295816.htm",
+              "quote": "“闽”最早出现在周朝，西周时福建称闽越，《周礼·夏官》称七闽。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "福建省概况（福建省人民政府网）— 商务部外资司",
+              "url": "https://fdi.mofcom.gov.cn/resource/pdf/2019/12/28/26075c01db784d64a7b2c1f9a4974c39.pdf",
+              "quote": "福建，简称“闽”,位于我国东南沿海，东隔台湾海峡与台湾省相望。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "黑龙江、安徽、福建",
+            "ru": [
+              "Хэйлунцзян, Аньхой, Фуцзянь"
+            ],
+            "gloss": "Хэйлунцзян, Аньхой, Фуцзянь — Фуцзянь лежит на юго-восточном побережье."
+          }
+        },
+        {
+          "id": "rg-dongbei",
+          "sources": [
+            {
+              "title": "省情概况 — 黑龙江省人民政府网",
+              "url": "https://www.hlj.gov.cn/hlj/c108476/202005/c00_30550923.shtml",
+              "quote": "黑龙江省，简称黑。省会哈尔滨。位于中国东北部，是中国位置最北、纬度最高的省份",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "Reuse of quoted source and accepted dossier row; no new external claim beyond cited fields.",
+              "provenanceCell": "provinces/provinces/prov-heilongjiang"
+            },
+            {
+              "title": "在这片神奇的土地上——黑龙江省简介 — 人民网",
+              "url": "http://politics.people.com.cn/n/2013/0808/c70731-22492268.html",
+              "quote": "黑龙江省因境内横亘北部边境的大河流黑龙江而得名。黑龙江，古称“黑水”",
+              "authority": "official",
+              "checkedAt": "2026-10-17"
+            },
+            {
+              "title": "“美丽中国地名寻梦”之有趣的黑龙江地名 — 光明网",
+              "url": "https://culture.gmw.cn/2018-04/27/content_28530286.htm",
+              "quote": "黑龙江省位于我国的北部边陲，因境内最大的河流黑龙江而得名。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "辽宁概况 — 辽宁省人民政府",
+              "url": "https://www.ln.gov.cn/web/sqgk/lngk/index.shtml",
+              "quote": "辽宁取“辽河流域永远安宁”之意而得名，地处环渤海和东北亚经济圈核心地带，是中国东北地区唯一既沿海又沿边的省份",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "资料：辽宁省自然地理、历史、气候、人口 — 中国新闻网",
+              "url": "https://www.chinanews.com/news/2004year/2004-05-30/26/442533.shtml",
+              "quote": "辽宁省简称辽，位于中国东北地区的南部，是中国东北经济区和环渤海经济区的重要结合部。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "总要去一趟辽宁吧！— 新华网",
+              "url": "https://www.news.cn/politics/20250123/61c42debfdf943c39fe32b4f8877d679/c.html",
+              "quote": "省内最大的一条河 “辽河” 也得以流经此地而入海 而辽宁名字的由来 就是取“辽河流域永远安宁”的意思",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "市情概况 — 沈阳市人民政府",
+              "url": "https://www.shenyang.gov.cn/wssy/xzqh/202111/t20211102_605179.html",
+              "quote": "沈阳，是辽宁省省会，是东北亚国际化中心城市、国家历史文化名城、国际性综合交通枢纽城市",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "吉林概况 — 吉林省人民政府",
+              "url": "https://www.jl.gov.cn/shengqing/jlgk/201704/t20170427_2978285.html",
+              "quote": "吉林省简称“吉”，位于中国东北地区中部，幅员面积18.74万平方公里。省会长春市，是全省政治、经济、科教、文化、金融和交通中心",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "“吉”字应该怎么写？— 人民网吉林频道",
+              "url": "http://jl.people.com.cn/n2/2023/0714/c349771-40493518.html",
+              "quote": "“吉林”是满语“吉林乌拉”的简称，“吉林”汉语意为“沿”，“乌拉”意为“江”，表示此地位于松花江沿岸，有沿江都市之意。后来将“吉林”之名通用全省，简称“吉”，寓意也不错。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "吉林省历史发展概况 — 长春大学旅游学院",
+              "url": "https://www.tccu.edu.cn/lyx/2019/0102/c2112a16003/page.htm",
+              "quote": "“吉林乌拉”为满语，吉林意为“沿”，乌拉是“大川”的意思。吉林乌拉就是“沿着松花江”的城市，简称吉林。",
+              "authority": "academic",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "经济区域划分 — 国家统计局",
+              "url": "https://www.stats.gov.cn/hd/lyzx/zxgk/202302/t20230215_1905339.html",
+              "quote": "东部地区包括北京、天津、河北、上海、江苏、浙江、福建、山东、广东和海南10省（市）；中部地区包括山西、安徽、江西、河南、湖北和湖南6省；西部地区包括内蒙古、广西、重庆、四川、贵州、云南、西藏、陕西、甘肃、青海、宁夏和新疆12省（区、市）；东北地区包括辽宁、吉林和黑龙江。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "Verified exact official indexed passage via web search on 2026-11-07."
+            }
+          ],
+          "olympiad": [
+            "2019-20-mun-lip-1"
+          ],
+          "name": {
+            "zh": "黑龙江、辽宁、吉林",
+            "ru": [
+              "Хэйлунцзян, Ляонин, Цзилинь"
+            ],
+            "gloss": "Хэйлунцзян, Ляонин, Цзилинь — их центры: Харбин, Шэньян и Чанчунь."
+          }
+        },
+        {
+          "id": "rg-hei-hongkong-liao",
+          "sources": [
+            {
+              "title": "国务院关于香港特别行政区简称及在全国行政区划中排列顺序的通知 — 中国政府网",
+              "url": "https://www.gov.cn/zhengce/zhengceku/2010-11/12/content_7150.htm",
+              "quote": "现将香港特别行政区的简称及在全国行政区划中的排列顺序通知如下： 一、香港特别行政区简称“港”。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "Reuse of quoted source and accepted dossier row; no new external claim beyond cited fields.",
+              "provenanceCell": "provinces/provinces/prov-xianggang"
+            },
+            {
+              "title": "省情概况 — 黑龙江省人民政府网",
+              "url": "https://www.hlj.gov.cn/hlj/c108476/202005/c00_30550923.shtml",
+              "quote": "黑龙江省，简称黑。省会哈尔滨。位于中国东北部，是中国位置最北、纬度最高的省份",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "在这片神奇的土地上——黑龙江省简介 — 人民网",
+              "url": "http://politics.people.com.cn/n/2013/0808/c70731-22492268.html",
+              "quote": "黑龙江省因境内横亘北部边境的大河流黑龙江而得名。黑龙江，古称“黑水”",
+              "authority": "official",
+              "checkedAt": "2026-10-17"
+            },
+            {
+              "title": "“美丽中国地名寻梦”之有趣的黑龙江地名 — 光明网",
+              "url": "https://culture.gmw.cn/2018-04/27/content_28530286.htm",
+              "quote": "黑龙江省位于我国的北部边陲，因境内最大的河流黑龙江而得名。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "自然概况 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "http://www.locpg.gov.cn/xggk/2014-01/04/c_125956093.htm",
+              "quote": "香港特别行政区的区域范围包括香港岛、九龙、新界和周围的262个岛屿。陆地总面积为1106.34平方公里",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "香港特别行政区 — 中华人民共和国驻印度尼西亚共和国大使馆",
+              "url": "https://id.china-embassy.gov.cn/chn/zggk/zgjk/xzqh/200404/t20040421_2344701.htm",
+              "quote": "香港地区位于中国东南海岸，珠江口之东，与广东省的深圳市毗邻，包括香港岛、九龙和新界",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "省级行政单位（来源：新华网） — 中华人民共和国驻哈萨克斯坦大使馆",
+              "url": "https://kz.china-embassy.gov.cn/chn/gyzg/zggk/xingzhengquhua/201008/t20100804_1364739.htm",
+              "authority": "official",
+              "quote": "特别行政区——为“一国两制”的实施，宪法第三十一条专门规定国家在必要时可以设立特别行政区。特别行政区与省、自治区、直辖市同属直辖于中央人民政府的地方行政区域。至１９９９年１２月澳门回归为止，中国共设立２个特别行政区：香港特别行政区、澳门特别行政区。",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "辽宁概况 — 辽宁省人民政府",
+              "url": "https://www.ln.gov.cn/web/sqgk/lngk/index.shtml",
+              "quote": "辽宁取“辽河流域永远安宁”之意而得名，地处环渤海和东北亚经济圈核心地带，是中国东北地区唯一既沿海又沿边的省份",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "资料：辽宁省自然地理、历史、气候、人口 — 中国新闻网",
+              "url": "https://www.chinanews.com/news/2004year/2004-05-30/26/442533.shtml",
+              "quote": "辽宁省简称辽，位于中国东北地区的南部，是中国东北经济区和环渤海经济区的重要结合部。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "总要去一趟辽宁吧！— 新华网",
+              "url": "https://www.news.cn/politics/20250123/61c42debfdf943c39fe32b4f8877d679/c.html",
+              "quote": "省内最大的一条河 “辽河” 也得以流经此地而入海 而辽宁名字的由来 就是取“辽河流域永远安宁”的意思",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "市情概况 — 沈阳市人民政府",
+              "url": "https://www.shenyang.gov.cn/wssy/xzqh/202111/t20211102_605179.html",
+              "quote": "沈阳，是辽宁省省会，是东北亚国际化中心城市、国家历史文化名城、国际性综合交通枢纽城市",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "黑龙江、香港、辽宁",
+            "ru": [
+              "Хэйлунцзян, Гонконг, Ляонин"
+            ],
+            "gloss": "Хэйлунцзян, Гонконг, Ляонин — Гонконг имеет статус особого административного района."
+          }
+        },
+        {
+          "id": "rg-east-coast",
+          "sources": [
+            {
+              "title": "经济区域划分 — 国家统计局",
+              "url": "https://www.stats.gov.cn/hd/lyzx/zxgk/202302/t20230215_1905339.html",
+              "quote": "东部地区包括北京、天津、河北、上海、江苏、浙江、福建、山东、广东和海南10省（市）；中部地区包括山西、安徽、江西、河南、湖北和湖南6省；西部地区包括内蒙古、广西、重庆、四川、贵州、云南、西藏、陕西、甘肃、青海、宁夏和新疆12省（区、市）；东北地区包括辽宁、吉林和黑龙江。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "Verified exact official indexed passage via web search on 2026-11-07."
+            },
+            {
+              "title": "资料：山东名称的由来及行政区划 — 中国新闻网（大众网）",
+              "url": "https://www.chinanews.com.cn/news/2004/2004-09-17/26/484903.shtml",
+              "quote": "由于齐、鲁两国发达的经济、政治、文化在中国历史上的重大影响，所以山东又称“齐鲁之邦”，并以“鲁”为山东省的简称。山东作为地理名称始于战国时期，当时，泛指太行山以东的地区。山东作为政区名称，始于金代(公元1115——1234)。元朝(公元1206——1368)置山东道，明朝(公元1368——1644)设山东布政使司，形成与今天山东省大体相同的版图，大部分县名沿用至今。清朝(公元1616——1911)正式设山东省，治所在济南府。新中国成立后，经过几次调整，山东省形成了目前的行政区划。山东省现辖17个市，139个县、县级市和市辖区。山东省的省会济南市",
+              "authority": "official",
+              "checkedAt": "2026-10-17"
+            },
+            {
+              "title": "山东，一个地理名词的文化远行 — 山东宣传网",
+              "url": "https://www.sdxc.gov.cn/jzyl/ztxcsy/202606/t20260608_17815653.htm",
+              "quote": "山东，作为半岛半陆的省份，因处太行山以东而得名，又因历史上的两大诸侯国而别称“齐鲁”。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "山东省概况 — 山东省人民政府（转载于商务部中国投资指南网）",
+              "url": "https://fdi.mofcom.gov.cn/resource/pdf/2019/12/28/6f02e8d84b7d4a95ae5185efb55e0ede.pdf",
+              "quote": "总面积 15.71 万平方公里，约占全国总面积的 1.64%。省会为济南市。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "“半岛1号”赋能，“青岛模式”走向全国 — 青岛政务网",
+              "url": "https://www.qingdao.gov.cn/ywdt/tpxw/202608/t20260802_10691507.shtml",
+              "quote": "山东是海洋大省，濒临渤海和黄海。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "Verified exact official indexed passage via web search on 2026-11-07."
+            },
+            {
+              "title": "江苏概况 — 江苏省人民政府",
+              "url": "http://www.jiangsu.gov.cn/col/col88747/index.html",
+              "quote": "江苏省，简称“苏”，取江宁、苏州二府之首字而得名。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "政区沿革 — 江苏省人民政府",
+              "url": "http://www.jiangsu.gov.cn/col/col88750/index.html",
+              "quote": "1953年1月，3个省级行政区合并，恢复江苏省建制，省会设在南京。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "江苏概况 — 中共江苏省委新闻网",
+              "url": "https://www.zgjssw.gov.cn/shengqingbeilan/general/",
+              "quote": "江苏正式建省始于清康熙六年（1667年），取江宁、苏州两府的首字而得名。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "浙江概况 — 中国新闻网",
+              "url": "http://www.chinanews.com.cn/gj/kong/news/2007/09-13/1026210.shtml",
+              "quote": "境内最大的河流钱塘江，因江流曲折，称之江，又称浙江，省以江名，简称\"浙\"。省会杭州。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "浙江概况（浙江省人民政府网）— 商务部外资司",
+              "url": "https://fdi.mofcom.gov.cn/resource/pdf/2020/10/21/d5d3074c89e640b582276183fba6fe96.pdf",
+              "quote": "境内最大的河流钱塘江，因江流曲折，称之江，又称浙江，省以江名，简称\"浙\"。省会杭州。",
+              "authority": "official",
+              "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "主管单位名称与代码（五）外省市 — 上海市统计局",
+              "url": "https://tjj.sh.gov.cn/xzqh/20111204/0014-236756.html",
+              "quote": "933000 浙江省",
+              "authority": "official",
+              "checkedAt": "2026-10-17"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "山东、江苏、浙江",
+            "ru": [
+              "Шаньдун, Цзянсу, Чжэцзян"
+            ],
+            "gloss": "Шаньдун, Цзянсу, Чжэцзян — входят в восточный экономический регион Китая."
           }
         }
       ]

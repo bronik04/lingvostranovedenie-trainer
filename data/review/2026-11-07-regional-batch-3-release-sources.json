@@ -1,0 +1,788 @@
+{
+  "newRows": {
+    "杭绣": {
+      "reviewNumber": 3,
+      "questionId": "2024-25-mun-irk-10",
+      "optionId": "o1",
+      "zh": "杭绣",
+      "acceptedCaption": "Ханчжоуская вышивка — её также называют гусю, то есть «старинная вышивка».",
+      "claimsVerified": [
+        "Название 杭绣 / ханчжоуская вышивка",
+        "Альтернативное название 古绣 / старинная вышивка"
+      ],
+      "sources": [
+        {
+          "url": "https://www.hzarchives.org.cn/info/6940",
+          "title": "特产风俗 — 杭州市档案馆",
+          "quote": "又名杭绣，亦称古绣",
+          "checkedAt": "2026-11-07",
+          "authority": "official",
+          "verificationMethod": "web-search-official-exact-indexed-passage",
+          "verificationNote": "Exact original quote was rechecked in the official indexed page; direct full page was not opened.",
+          "provenance": "manifest.options[].source"
+        },
+        {
+          "title": "飞针引线 指尖上传承非遗技艺 — 杭州文明网",
+          "url": "https://hzwmw.hzxcw.gov.cn/content/content_38530.html",
+          "quote": "杭绣，早前也称“古绣”和“宋绣”",
+          "authority": "official",
+          "verificationMethod": "web-search-official-exact-indexed-passage",
+          "verificationNote": "Exact passage read in the indexed official page. Direct full-page retrieval was not attempted; this is not a full-page verification.",
+          "supports": [
+            "杭绣 also called 古绣"
+          ],
+          "checkedAt": "2026-11-07",
+          "provenance": "new-source-checked-in-this-subtask"
+        }
+      ],
+      "status": "two-official-or-academic-urls-with-verified-quotes",
+      "sourceGaps": []
+    },
+    "鲁绣": {
+      "reviewNumber": 3,
+      "questionId": "2024-25-mun-irk-10",
+      "optionId": "o3",
+      "zh": "鲁绣",
+      "acceptedCaption": "Шаньдунская вышивка — использует в том числе нити из дубового шелкопряда.",
+      "claimsVerified": [
+        "Название 鲁绣 / шаньдунская вышивка",
+        "Используются в том числе нити 柞蚕丝线"
+      ],
+      "sources": [
+        {
+          "url": "https://www.ihchina.cn/project_details/23544.html",
+          "title": "鲁绣 — 中国非物质文化遗产网",
+          "quote": "以柞蚕丝线、彩色合股丝线、棉线等为绣线",
+          "checkedAt": "2026-11-07",
+          "authority": "official",
+          "verificationMethod": "web-search-official-heritage-register-exact-indexed-passage",
+          "verificationNote": "Exact original quote and row identity were rechecked in indexed official heritage entry; direct full page was not opened.",
+          "provenance": "manifest.options[].source"
+        },
+        {
+          "title": "鲁绣 — 故宫博物院",
+          "url": "https://www.dpm.org.cn/lemmas/240042.html",
+          "quote": "山东民间绣品，亦称“衣线绣”",
+          "authority": "official",
+          "verificationMethod": "web-search-official-museum-exact-indexed-passage",
+          "verificationNote": "Exact museum entry read in indexed search text. Direct open returned TimeoutError; full page was not read. This second source confirms identity/region; the original ihchina.cn source confirms 柞蚕丝线.",
+          "supports": [
+            "鲁绣 is Shandong embroidery"
+          ],
+          "checkedAt": "2026-11-07",
+          "provenance": "new-source-checked-in-this-subtask"
+        }
+      ],
+      "status": "two-official-or-academic-urls-with-verified-quotes",
+      "sourceGaps": []
+    },
+    "京绣": {
+      "reviewNumber": 3,
+      "questionId": "2024-25-mun-irk-10",
+      "optionId": "o4",
+      "zh": "京绣",
+      "acceptedCaption": "Пекинская вышивка — известна как «дворцовая», украшала одежду императорского двора.",
+      "claimsVerified": [
+        "Название 京绣 / пекинская вышивка",
+        "Известна как дворцовая вышивка и применялась для дворцовых одежд"
+      ],
+      "sources": [
+        {
+          "url": "https://www.beijing.gov.cn/renwen/bjgk/cygk/cyfy/202307/t20230712_3160985.html",
+          "title": "京绣 — 北京市人民政府 / 朝阳区文化和旅游局",
+          "quote": "京绣作为宫廷刺绣主要应用于服装",
+          "checkedAt": "2026-11-07",
+          "authority": "official",
+          "verificationMethod": "web-search-official-exact-indexed-passage",
+          "verificationNote": "Exact original quote was rechecked in indexed Beijing government page, which identifies its publisher as 朝阳区文化和旅游局. Direct full page was not opened.",
+          "provenance": "manifest.options[].source"
+        },
+        {
+          "title": "京绣 — 中国文艺网（中国文学艺术界联合会）",
+          "url": "https://cflac.org.cn/gymssy/ctgymsml/cxzmrz/201305/t20130529_193587.html",
+          "quote": "京绣又称宫绣，是以北京为中心的刺绣产品的总称。明清时期开始大为兴盛，多用于宫廷装饰、服饰",
+          "authority": "official",
+          "verificationMethod": "web-search-official-cultural-organization-exact-indexed-passage",
+          "verificationNote": "Exact passage read in indexed search text. Direct open returned 403 Forbidden; full page was not read.",
+          "supports": [
+            "京绣 / 宫绣",
+            "Beijing-centered embroidery",
+            "court decoration and dress"
+          ],
+          "checkedAt": "2026-11-07",
+          "provenance": "new-source-checked-in-this-subtask"
+        }
+      ],
+      "status": "two-official-or-academic-urls-with-verified-quotes",
+      "sourceGaps": []
+    },
+    "Александр Грибоедов": {
+      "reviewNumber": 6,
+      "questionId": "2023-24-mun-mosobl-3",
+      "optionId": "o1",
+      "zh": "亚历山大·格里鲍耶陀夫",
+      "acceptedCaption": "Александр Грибоедов — автор комедии в стихах «Горе от ума»",
+      "claimsVerified": [
+        "Подпись: автор комедии в стихах «Горе от ума»",
+        "Ключ: писатель, дипломат, востоковед и композитор"
+      ],
+      "sources": [
+        {
+          "url": "https://kp.rusneb.ru/item/material/gore-ot-uma",
+          "title": "Горе от ума — НЭБ, Книжные памятники",
+          "quote": "Комедия в стихах «Горе от ума» (1822—1824) Александра Сергеевича Грибоедова",
+          "checkedAt": "2026-11-07",
+          "authority": "official",
+          "verificationMethod": "web-search-primary-library-exact-indexed-passage",
+          "verificationNote": "Exact caption quote was rechecked in indexed National Electronic Library page. This source supports the caption; the added SGU source explicitly verifies the professional combination in the key.",
+          "provenance": "manifest.options[].source"
+        },
+        {
+          "title": "Открыта выставка, посвящённая 230-летию со дня рождения Александра Сергеевича Грибоедова — СГУ, Зональная научная библиотека",
+          "url": "https://www.sgu.ru/news/2025/otkryta-vystavka-posvyaschyonnaya-230-letiyu-so-dnya-rozhdeniya-aleksandra-sergeevicha",
+          "quote": "Александр Сергеевич Грибоедов – талантливый русский дипломат, известный драматург, лингвист, историк, востоковед, одарённый пианист и композитор.",
+          "authority": "academic",
+          "verificationMethod": "web-open-primary-university-page-and-find-exact-text",
+          "verificationNote": "Read full-page extraction and exact sentence at line 643. It explicitly includes all three occupations required by the accepted question.",
+          "supports": [
+            "diplomat",
+            "orientalist",
+            "composer"
+          ],
+          "checkedAt": "2026-11-07",
+          "provenance": "new-source-checked-in-this-subtask"
+        }
+      ],
+      "status": "two-official-or-academic-urls-with-verified-quotes",
+      "sourceGaps": []
+    },
+    "王之涣": {
+      "reviewNumber": 8,
+      "questionId": "2023-24-mun-krsk-2",
+      "optionId": "o3",
+      "zh": "王之涣",
+      "acceptedCaption": "Ван Чжихуань — танский поэт, автор «Песен Лянчжоу».",
+      "claimsVerified": [
+        "Танский поэт 王之涣",
+        "Автор 凉州词 / «Песен Лянчжоу»"
+      ],
+      "sources": [
+        {
+          "url": "https://www.sjs.com.cn/Images/attached/file/20140603/20140603151242_2776.pdf",
+          "title": "山东教育出版社：王之涣诗歌教学材料",
+          "quote": "以《登鹳雀楼》、《凉州词》为代表作",
+          "checkedAt": "2026-11-07",
+          "authority": "academic",
+          "verificationMethod": "web-search-primary-publisher-exact-indexed-pdf-passage",
+          "verificationNote": "The publisher PDF was rechecked in indexed text. The same indexed paragraph says 是盛唐时期著名的诗人 and lists 凉州词 among his representative works. The PDF itself was not opened.",
+          "provenance": "manifest.options[].source"
+        },
+        {
+          "title": "王之涣《凉州词》异文全面考辨 — 北京大学机构知识库（商丘师范学院学报）",
+          "url": "https://ir.pku.edu.cn/handle/20.500.11897/583673",
+          "quote": "王之涣的《凉州词》就是其中的一个典型。",
+          "authority": "academic",
+          "verificationMethod": "web-search-primary-university-repository-exact-indexed-abstract",
+          "verificationNote": "Read indexed repository metadata and abstract, naming author 盛大林 and journal 商丘师范学院学报 (2020-07-15). Direct open returned TimeoutError; the full repository page was not read.",
+          "supports": [
+            "Wang Zhihuan authored 凉州词"
+          ],
+          "checkedAt": "2026-11-07",
+          "provenance": "new-source-checked-in-this-subtask"
+        }
+      ],
+      "status": "two-official-or-academic-urls-with-verified-quotes",
+      "sourceGaps": []
+    },
+    "Павел Бажов": {
+      "reviewNumber": 18,
+      "questionId": "2025-26-mun-mosobl-10",
+      "optionId": "o2",
+      "zh": "帕维尔·巴若夫",
+      "acceptedCaption": "Павел Бажов — сборник «Малахитовая шкатулка» впервые вышел в 1939 году",
+      "claimsVerified": [
+        "Ключ: автор уральских сказов",
+        "Подпись: первое издание сборника «Малахитовая шкатулка» — 1939"
+      ],
+      "sources": [
+        {
+          "url": "https://ar.culture.ru/ru/subject/kniga-malahitovaya-shkatulka",
+          "title": "Малахитовая шкатулка — Мемориальный дом-музей П. П. Бажова, ARTEFACT",
+          "quote": "Первый сборник сказов «Малахитовая шкатулка» вышел, когда его автору, Павлу Петровичу Бажову, исполнилось 60 лет, — в 1939 году.",
+          "checkedAt": "2026-11-07",
+          "authority": "official",
+          "verificationMethod": "web-open-primary-museum-page-exact-text",
+          "verificationNote": "Read full ARTEFACT page; exact original quote at line 120. Nonbreaking spaces normalized for quote matching.",
+          "provenance": "manifest.options[].source"
+        },
+        {
+          "title": "«Знакомьтесь с книгой всей семьёй: «Уральские сказы П. Бажова» — Литературно-мемориальный музей И. А. Бунина",
+          "url": "https://bunin.eletsmuseum.ru/znakomtes-s-knigoj-vsej-semyoj-uralskie-skazy-p-bazhova/",
+          "quote": "Получил известность как автор уральских сказов. … В 1939 году появилось и первое их издание – «Малахитовая шкатулка».",
+          "authority": "official",
+          "verificationMethod": "web-open-primary-museum-page-exact-text",
+          "verificationNote": "Read full page; quoted fragments are at lines 9–10. Ellipsis marks omission between two exact fragments. Museum identifies the page as its official site.",
+          "supports": [
+            "author of Ural tales",
+            "first collection publication in 1939"
+          ],
+          "checkedAt": "2026-11-07",
+          "provenance": "new-source-checked-in-this-subtask"
+        }
+      ],
+      "status": "two-official-or-academic-urls-with-verified-quotes",
+      "sourceGaps": []
+    },
+    "Николай Лесков": {
+      "reviewNumber": 18,
+      "questionId": "2025-26-mun-mosobl-10",
+      "optionId": "o1",
+      "zh": "尼古拉•列斯科夫",
+      "acceptedCaption": "Николай Лесков — автор сказа «Левша» о тульском мастере и стальной блохе",
+      "claimsVerified": [
+        "Автор сказа «Левша» о тульском мастере и стальной блохе"
+      ],
+      "sources": [
+        {
+          "url": "https://www.culture.ru/persons/8216/nikolai-leskov?ysclid=md42eeblb1932775921",
+          "title": "Лесков Николай Семенович — Культура.РФ",
+          "quote": "Одним из самых известных произведений Лескова стал «Сказ о тульском косом Левше и о стальной блохе»",
+          "checkedAt": "2026-11-07",
+          "authority": "official",
+          "verificationMethod": "web-search-primary-cultural-portal-exact-indexed-passage",
+          "verificationNote": "Exact original quote was rechecked in indexed Culture.ru biography. Nonbreaking spaces normalized; full page was not opened.",
+          "provenance": "manifest.options[].source"
+        },
+        {
+          "title": "Н. С. Лесков. Левша: сказ о тульском косом Левше и о стальной блохе — Президентская библиотека",
+          "url": "https://www.prlib.ru/item/1724963",
+          "quote": "Н.С. Лесков. Левша: сказ о тульском косом Левше и о стальной блохе",
+          "authority": "official",
+          "verificationMethod": "web-open-primary-library-catalog-record-exact-text",
+          "verificationNote": "Read public catalog record and description, lines 36 and 43. Digital images are available only in electronic reading rooms; only the public metadata was checked.",
+          "supports": [
+            "Leskov authored Левша",
+            "Tula craftsman and steel flea in full work title"
+          ],
+          "checkedAt": "2026-11-07",
+          "provenance": "new-source-checked-in-this-subtask"
+        }
+      ],
+      "status": "two-official-or-academic-urls-with-verified-quotes",
+      "sourceGaps": []
+    },
+    "高行健": {
+      "reviewNumber": 20,
+      "questionId": "2025-26-mun-tat-56",
+      "optionId": "o1",
+      "zh": "高行健",
+      "acceptedCaption": "Гао Синцзянь — его «Гора души» основана на путешествиях по югу Китая.",
+      "claimsVerified": [
+        "Ключ: Нобелевская премия по литературе 2000 года",
+        "Подпись: «Гора души» основана на путешествиях по югу Китая"
+      ],
+      "sources": [
+        {
+          "url": "https://www.nobelprize.org/prizes/literature/2000/gao/facts/",
+          "title": "Gao Xingjian – Facts — NobelPrize.org",
+          "quote": "Soul Mountain (1999) is based on impressions from journeys in southern and southwestern China",
+          "checkedAt": "2026-11-07",
+          "authority": "official",
+          "verificationMethod": "web-search-awarding-body-exact-indexed-passage",
+          "verificationNote": "Read indexed official Facts page at https://www.nobelprize.org/laureate/734%26lang%3Den . It names the 2000 prize and states the novel is based on impressions from journeys in southern and southwestern China. Canonical URL is preserved from the manifest; canonical full page was not reread. Prior manifest records a 403 on direct open.",
+          "provenance": "manifest.options[].source"
+        },
+        {
+          "title": "The Nobel Prize for Literature 2000: Gao Xingjian — Swedish Academy press release, Simplified Chinese version",
+          "url": "https://www.nobelprize.org/uploads/2018/06/press-simpl.pdf",
+          "quote": "２０００年的诺贝尔文学奖授予中文作家高行健",
+          "authority": "official",
+          "verificationMethod": "web-search-awarding-body-exact-indexed-pdf-passage",
+          "verificationNote": "Read exact indexed PDF passage including press-release date 12 October 2000. Direct PDF open returned 403 Forbidden; the PDF itself was not read. Indexed text also states that 灵山 is based on journeys in southern and southwestern China. This is a second document/URL from the same awarding institution, not an independent publisher.",
+          "supports": [
+            "2000 Nobel Prize in Literature awarded to Gao Xingjian"
+          ],
+          "checkedAt": "2026-11-07",
+          "provenance": "new-source-checked-in-this-subtask"
+        }
+      ],
+      "status": "two-official-or-academic-urls-with-verified-quotes",
+      "sourceGaps": []
+    },
+    "苏童": {
+      "reviewNumber": 20,
+      "questionId": "2025-26-mun-tat-56",
+      "optionId": "o4",
+      "zh": "苏童",
+      "acceptedCaption": "Су Тун — в 2015 году получил литературную премию Мао Дуня.",
+      "claimsVerified": [
+        "Подпись: премия Мао Дуня в 2015 году"
+      ],
+      "sources": [
+        {
+          "url": "https://www.chinawriter.com.cn/talk/2015/2015-09-28/254216.html",
+          "title": "第九届茅盾文学奖获奖作家·访谈 — 中国作家网",
+          "quote": "这次以长篇小说《黄雀记》获得茅盾文学奖",
+          "checkedAt": "2026-11-07",
+          "authority": "official",
+          "verificationMethod": "web-open-primary-writers-association-page-exact-text",
+          "dateEvidence": "2015年09月28日",
+          "verificationNote": "Read full original China Writers Association interview page, including date 2015年09月28日 and exact quote at line 101 in the 苏童 section.",
+          "provenance": "manifest.options[].source"
+        },
+        {
+          "title": "著名作家苏童到我校作报告 — 辽宁师范大学新闻网",
+          "url": "https://news.lnnu.edu.cn/info/1162/3246.htm",
+          "quote": "2015年8月16日，苏童的力作《黄雀记》获第九届茅盾文学奖。",
+          "authority": "academic",
+          "verificationMethod": "web-open-primary-university-page-exact-text",
+          "verificationNote": "Read full page, exact dated award statement at line 40. Page publication date is 2016-07-01.",
+          "supports": [
+            "Su Tong received the Mao Dun Literature Prize in 2015"
+          ],
+          "checkedAt": "2026-11-07",
+          "provenance": "new-source-checked-in-this-subtask"
+        }
+      ],
+      "status": "two-official-or-academic-urls-with-verified-quotes",
+      "sourceGaps": []
+    }
+  },
+  "contextRows": {
+    "reviewId": "regional-2026-11-07-batch-3-context-sources",
+    "date": "2026-11-07",
+    "scope": "Targeted second official/academic sources for new contextual rows only; no audit of all options or of the bank.",
+    "sourceManifest": "data/review/2026-11-07-regional-batch-3-proposals.json",
+    "items": [
+      {
+        "key": "international-roma-day",
+        "reviewNumber": 10,
+        "questionId": "2021-22-mun-amur-1",
+        "optionId": "o1",
+        "optionZh": "四月八号",
+        "claim": "Международный день цыган — 8 апреля.",
+        "sources": [
+          {
+            "url": "https://www.coe.int/en/web/no-hate-campaign/compendium/-/asset_publisher/PyHuON7WYezs/content/-action-day-international-romani-day-8-april",
+            "title": "“Action Day – International Romani Day” – 8 April — Council of Europe",
+            "quote": "The Action Days for International Roma Day, 8 April, gave visibility to Roma culture",
+            "checkedAt": "2026-11-07",
+            "authority": "official",
+            "verificationMethod": "Reused the exact source and quotation already present in the accepted batch-3 manifest; not a fresh full-page read in this subtask. Original method: browsed_search_excerpt",
+            "provenance": "existing-manifest"
+          },
+          {
+            "title": "On International Roma Day, ODIHR Director calls for renewed efforts to ensure the security, equality and inclusion of Roma and Sinti communities — OSCE ODIHR",
+            "url": "https://odihr.osce.org/odihr/663109",
+            "quote": "International Roma Day was established in 1990 following the 4th World Romani Congress and is observed each year on 8 April.",
+            "authority": "official",
+            "checkedAt": "2026-11-07",
+            "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+          }
+        ],
+        "status": "supported",
+        "distinctOfficialAcademicUrls": 2,
+        "gaps": []
+      },
+      {
+        "key": "taiwan-teachers-day",
+        "reviewNumber": 10,
+        "questionId": "2021-22-mun-amur-1",
+        "optionId": "o2",
+        "optionZh": "九月二十八号",
+        "claim": "День учителя на Тайване — 28 сентября, в день рождения Конфуция.",
+        "sources": [
+          {
+            "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=91843&la=0&powerMode=0",
+            "title": "教師節 — 教育部《重編國語辭典修訂本》",
+            "quote": "特定孔子誕辰九月二十八日為「教師節」",
+            "checkedAt": "2026-11-07",
+            "authority": "official",
+            "verificationMethod": "Reused the exact source and quotation already present in the accepted batch-3 manifest; not a fresh full-page read in this subtask. Original method: browsed_search_excerpt",
+            "provenance": "existing-manifest"
+          },
+          {
+            "title": "正名與緣起 — 臺北市孔廟管理委員會",
+            "url": "https://tct.gov.taipei/cp.aspx?n=1CDEDABEB7BAC28E",
+            "quote": "換算陽曆應為9月28日，故訂該日為孔子誕辰紀念日及教師節。",
+            "authority": "official",
+            "checkedAt": "2026-11-07",
+            "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+          }
+        ],
+        "status": "supported",
+        "distinctOfficialAcademicUrls": 2,
+        "gaps": []
+      },
+      {
+        "key": "un-chinese-language-day",
+        "reviewNumber": 10,
+        "questionId": "2021-22-mun-amur-1",
+        "optionId": "o3",
+        "optionZh": "四月二十号",
+        "claim": "День китайского языка ООН — 20 апреля; дата связана с памятью о Цан Цзе.",
+        "sources": [
+          {
+            "url": "https://www.ungeneva.org/en/about/director-general/multilingualism/chinese-language-day",
+            "title": "Chinese Language Day — United Nations Office at Geneva",
+            "quote": "April 20 each year, a date chosen to honor Cangjie, a legendary figure believed to have invented Chinese characters.",
+            "checkedAt": "2026-11-07",
+            "authority": "official",
+            "verificationMethod": "Reused the exact source and quotation already present in the accepted batch-3 manifest; not a fresh full-page read in this subtask. Original method: browsed_search_excerpt",
+            "provenance": "existing-manifest"
+          },
+          {
+            "title": "联合国中文日 — 联合国",
+            "url": "https://www.un.org/zh/observances/chinese-language-day",
+            "quote": "将中文日定为每年4月20日中国传统节气“谷雨”这一天，以纪念“中华文字始祖”仓颉造字的贡献。",
+            "authority": "official",
+            "checkedAt": "2026-11-07",
+            "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+          }
+        ],
+        "status": "supported",
+        "distinctOfficialAcademicUrls": 2,
+        "gaps": []
+      },
+      {
+        "key": "china-first-hydrogen-bomb-1967",
+        "reviewNumber": 16,
+        "questionId": "2024-25-mun-spb-8",
+        "optionId": "o1",
+        "optionZh": "1967 年",
+        "claim": "В 1967 году Китай испытал первую водородную бомбу.",
+        "sources": [
+          {
+            "url": "https://cpc.people.com.cn/GB/33837/2534828.html",
+            "title": "我国第一颗氢弹爆炸成功 — 中国共产党新闻网",
+            "quote": "1967年6月17日，在我国西部地区成功地爆炸了第一颗氢弹。",
+            "checkedAt": "2026-11-07",
+            "authority": "official",
+            "verificationMethod": "Reused the exact source and quotation already present in the accepted batch-3 manifest; not a fresh full-page read in this subtask. Original method: web-search-primary-text-verified",
+            "provenance": "existing-manifest"
+          },
+          {
+            "title": "氢弹爆炸成功 — 国家原子能机构",
+            "url": "https://www.caea.gov.cn/n6760341/n6760359/c6826572/content.html",
+            "quote": "1967年6月17日，我国成功地进行了第一颗氢弹爆炸试验。",
+            "authority": "official",
+            "checkedAt": "2026-11-07",
+            "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+          }
+        ],
+        "status": "supported",
+        "distinctOfficialAcademicUrls": 2,
+        "gaps": []
+      },
+      {
+        "key": "china-first-satellite-1970",
+        "reviewNumber": 16,
+        "questionId": "2024-25-mun-spb-8",
+        "optionId": "o2",
+        "optionZh": "1970 年",
+        "claim": "В 1970 году запущен «Дунфанхун-1», первый искусственный спутник Китая.",
+        "sources": [
+          {
+            "title": "中国第一颗人造卫星 东方红一号 — 国家航天局",
+            "url": "https://www.cnsa.gov.cn/n6758968/n6758972/c10004149/content.html",
+            "quote": "东方红一号卫星于1958年提出预研计划，1965年正式开始研制，于1970年4月24日在酒泉卫星发射中心成功发射。东方红一号卫星重173千克，由长征一号运载火箭送入近地点441千米、远地点2368千米、倾角68.44度的椭圆轨道。卫星进行了轨道测控和《东方红》乐曲的播送。",
+            "checkedAt": "2026-10-15",
+            "authority": "official",
+            "verificationMethod": "Reused the exact source and quotation already present in the accepted batch-3 manifest; not a fresh full-page read in this subtask. Original method: reused-accepted-dossier-source-and-quote",
+            "cellProvenance": "data/dossiers/space.json#tables/missions/rows/mis-dongfanghong1/year",
+            "provenance": "existing-manifest"
+          },
+          {
+            "title": "东方红一号，你想知道的都在这里 — 新华网",
+            "url": "http://www.xinhuanet.com/politics/2016-04/21/c_1118699133.htm",
+            "quote": "１９７０年４月２４日，我国第一颗人造地球卫星“东方红一号”发射成功",
+            "checkedAt": "2026-10-15",
+            "authority": "official",
+            "verificationMethod": "Reused exact quotation (short contiguous portion) from the accepted space dossier row mis-dongfanghong1; not a fresh external page read in this subtask.",
+            "provenanceCell": "data/dossiers/space.json#tables/missions/rows/mis-dongfanghong1"
+          }
+        ],
+        "status": "supported",
+        "distinctOfficialAcademicUrls": 2,
+        "gaps": []
+      },
+      {
+        "key": "mao-death-1976",
+        "reviewNumber": 16,
+        "questionId": "2024-25-mun-spb-8",
+        "optionId": "o3",
+        "optionZh": "1976 年",
+        "claim": "Мао Цзэдун умер 9 сентября 1976 года в Пекине.",
+        "sources": [
+          {
+            "title": "9 сентября 1976 года скончался Мао Цзэдун — архив Яньтяня",
+            "url": "https://www.yantian.gov.cn/ytdayszxxw/lsjt/content/post_11735235.html",
+            "quote": "1976年9月9日零时10分，中国共产党中央委员会主席、中国共产党中央军事委员会主席、中国人民政治协商会议全国委员会名誉主席毛泽东在北京逝世，享年83岁。",
+            "authority": "official",
+            "checkedAt": "2026-10-18",
+            "verificationMethod": "Reused the exact source and quotation already present in the accepted batch-3 manifest; not a fresh full-page read in this subtask. Original method: reused-accepted-dossier-source-and-quote",
+            "cellProvenance": "data/dossiers/modern-history.json#tables/figures/rows/per-maozedong/name",
+            "provenance": "existing-manifest"
+          },
+          {
+            "title": "9月9日：外交史上的今天 — 中华人民共和国外交部",
+            "url": "https://www.fmprc.gov.cn/web/ziliao_674904/historytoday_674971/200309/t20030909_7949146.shtml",
+            "quote": "1976年9月9日，毛泽东主席在北京逝世。",
+            "authority": "official",
+            "checkedAt": "2026-11-07",
+            "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+          }
+        ],
+        "status": "supported",
+        "distinctOfficialAcademicUrls": 2,
+        "gaps": []
+      },
+      {
+        "key": "mao-chairman-1956",
+        "reviewNumber": 16,
+        "questionId": "2024-25-mun-spb-8",
+        "optionId": "o4",
+        "optionZh": "1956 年",
+        "claim": "1956 — Мао избрали председателем ЦК на первом пленуме после VIII съезда КПК.",
+        "sources": [
+          {
+            "url": "https://www.12371.cn/2021/05/03/ARTI1620005053694434.shtml",
+            "title": "百个瞬间说百年 — 1956，尽快从落后的农业国变为先进的工业国",
+            "quote": "党的八届一中全会选举毛泽东为中央委员会主席",
+            "checkedAt": "2026-11-07",
+            "authority": "official",
+            "verificationMethod": "Reused the exact source and quotation already present in the accepted batch-3 manifest; not a fresh full-page read in this subtask. Original method: web-search-primary-text-verified",
+            "provenance": "existing-manifest"
+          },
+          {
+            "title": "中共八届一中全会选出新的中央机构 — 中国共产党新闻网（历次党代会数据库）",
+            "url": "https://cpc.people.com.cn/GB/64162/64168/64560/65343/4442029.html",
+            "quote": "中国共产党第八届中央委员会在９月２８日晚间举行了第一次全体会议。",
+            "authority": "official",
+            "checkedAt": "2026-11-07",
+            "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07. Page breadcrumb explicitly dates the Eighth Congress to 1956-09-15–27; same returned passage states the election result: （一）中央委员会主席：毛泽东. Not a full-page read."
+          },
+          {
+            "title": "党史上的今天（2026年9月28日） — 国家林业和草原局",
+            "url": "https://www.forestry.gov.cn/c/www/dszl/689956.jhtml",
+            "quote": "1956年9月28日，中共八届一中全会选举毛泽东为中央委员会主席",
+            "authority": "official",
+            "checkedAt": "2026-11-07",
+            "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+          }
+        ],
+        "status": "supported",
+        "distinctOfficialAcademicUrls": 3,
+        "gaps": [],
+        "notes": [
+          "Второй дополнительный URL даёт год и избрание в одной короткой цитате; протокол — первичное свидетельство состава органов."
+        ]
+      },
+      {
+        "key": "lushun-port-arthur",
+        "reviewNumber": 19,
+        "questionId": "2023-24-mun-spb-8",
+        "optionId": "o3",
+        "optionZh": "旅顺",
+        "claim": "旅顺 соответствует Порт-Артуру; Люйшунькоу — район Даляня у южной оконечности Ляодунского полуострова.",
+        "sources": [
+          {
+            "title": "辽宁省大连市旅顺口区教育局：情美和谐 — Министерство образования КНР",
+            "url": "https://www.moe.gov.cn/jyb_xwfb/moe_2082/2021/2021_zl35/dudao3/202104/t20210428_528978.html",
+            "quote": "旅顺口区隶属辽宁省大连市，地处辽东半岛最南端",
+            "checkedAt": "2026-11-07",
+            "authority": "official",
+            "verificationMethod": "Reused the exact source and quotation already present in the accepted batch-3 manifest; not a fresh full-page read in this subtask. Original method: Verified exact official indexed passage via web search on 2026-11-07.",
+            "provenance": "existing-manifest"
+          },
+          {
+            "title": "Port Arthur: An Eternal Sacred Space — Hoover Institution Library & Archives with Professor Toshihiko Kishi, Kyoto University",
+            "url": "https://storymaps.arcgis.com/stories/fc122b2c5d2044eaa2320ee3fcb692ac",
+            "quote": "Port Artura in Russian, etc.) and today is the city of Lushun in China (the Lüshunkou District of Dalian).",
+            "authority": "academic",
+            "checkedAt": "2026-11-07",
+            "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07, including academic authorship shown in the result. Direct web open produced no readable lines; not a full-page read. Institutional provenance is also linked by https://fanningtheflames.hoover.org/index.php/."
+          },
+          {
+            "title": "NH 100070 View of Port Arthur taken on February 25, 1905 — Naval History and Heritage Command",
+            "url": "https://www.history.navy.mil/content/history/nhhc/our-collections/photography/numerical-list-of-images/nhhc-series/nh-series/NH-100000/NH-100070.html",
+            "quote": "Port Arthur later became known as Lushun by the Chinese.",
+            "authority": "official",
+            "checkedAt": "2026-11-07",
+            "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+          }
+        ],
+        "status": "supported",
+        "distinctOfficialAcademicUrls": 3,
+        "gaps": [],
+        "notes": [
+          "Hoover/Kyoto подтверждает одновременно соответствие топонимов и современный район; МО КНР в manifest подтверждает район Даляня и южную оконечность полуострова. Слова city/later в англоязычных источниках не следует переносить в современную русскую формулировку."
+        ]
+      },
+      {
+        "key": "qingdao-location",
+        "reviewNumber": 19,
+        "questionId": "2023-24-mun-spb-8",
+        "optionId": "o4",
+        "optionZh": "青岛",
+        "claim": "Циндао находится в южной части Шаньдунского полуострова, на побережье Жёлтого моря.",
+        "sources": [
+          {
+            "title": "人口简况 — 青岛政务网",
+            "url": "https://www.qingdao.gov.cn/yfqd/qdgk/rkjk/202009/t20200903_66.shtml",
+            "quote": "青岛市地处山东半岛南部，位于东经119°30′～121°00′、北纬35°35′～37°09′，东、南濒临黄海",
+            "checkedAt": "2026-11-07",
+            "authority": "official",
+            "verificationMethod": "Reused the exact source and quotation already present in the accepted batch-3 manifest; not a fresh full-page read in this subtask. Original method: Verified exact official indexed passage via web search on 2026-11-07.",
+            "provenance": "existing-manifest"
+          },
+          {
+            "title": "气候变化背景下风暴潮对海岸带城市围填海区的淹没影响分析——以山东省青岛市为例 — 中国海洋大学学报（自然科学版）",
+            "url": "https://html.rhhz.net/ZGHYDXXBZRKXB/html/20260212.htm",
+            "quote": "本文选取青岛市(119°30′E—121°00′E，35°35′N—37°09′N)作为研究区域，该区域地处山东半岛南部，东部及南部濒临黄海。",
+            "authority": "academic",
+            "checkedAt": "2026-11-07",
+            "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+          }
+        ],
+        "status": "supported",
+        "distinctOfficialAcademicUrls": 2,
+        "gaps": []
+      },
+      {
+        "key": "germany-jiaozhou-lease-1898",
+        "reviewNumber": 9,
+        "questionId": "2022-23-mun-orel-4",
+        "optionId": "o3",
+        "optionZh": "德国",
+        "claim": "По договору 1898 года Германия получила Цзяочжоувань в аренду на 99 лет.",
+        "sources": [
+          {
+            "url": "https://iqh.ruc.edu.cn/old/zglsdlyj/lsdl_xsdt/qyyj/8bf835d3ce614d9891862b3d9a8d59ad.htm",
+            "title": "中国人民大学清史研究所 — 胶澳租借地海域地名研究",
+            "quote": "中德签订《胶澳租界条约》，德国据此租借胶州湾99年",
+            "checkedAt": "2026-11-07",
+            "authority": "academic",
+            "verificationMethod": "Reused the exact source and quotation already present in the accepted batch-3 manifest; not a fresh full-page read in this subtask. Original method: web-search-primary-academic-text-verified",
+            "provenance": "existing-manifest"
+          },
+          {
+            "title": "从山东问题时画看五四运动的起源 — 香港教育局",
+            "url": "https://www.edb.gov.hk/attachment/sc/curriculum-development/kla/pshe/references-and-resources/chinese-history/ancient_artifacts/Chapter20_sc.pdf",
+            "quote": "1898年3月6日清政府代表李鸿章和翁同和在北京与德国驻中国公使海靖签署《中德胶澳租界条约》。条约内容包括：德国租借胶澳地区99年，租期内胶州湾由德国管辖。",
+            "authority": "official",
+            "checkedAt": "2026-11-07",
+            "verificationMethod": "Read the PDF text returned by web open on 2026-11-07, page index 1 (printed pages 020–021), lines 139–141. Line-wrap joining only; not an indexed excerpt."
+          }
+        ],
+        "status": "supported",
+        "distinctOfficialAcademicUrls": 2,
+        "gaps": []
+      },
+      {
+        "key": "orthodox-schism-1054",
+        "reviewNumber": 17,
+        "questionId": "2022-23-mun-spb-8",
+        "optionId": "o3",
+        "optionZh": "东正教",
+        "claim": "Разделение восточной и западной церквей традиционно относят к 1054 году.",
+        "sources": [
+          {
+            "url": "https://zzb.shutcm.edu.cn/2018/1017/c2661a29625/page.htm",
+            "title": "中国五大宗教 — 上海中医药大学",
+            "quote": "1054年，基督教分裂为东西两派。东派教会自称正教",
+            "checkedAt": "2026-11-07",
+            "authority": "academic",
+            "verificationMethod": "Reused the exact source and quotation already present in the accepted batch-3 manifest; not a fresh full-page read in this subtask. Original method: browsed_full_page",
+            "provenance": "existing-manifest"
+          },
+          {
+            "title": "13.3 Patriarch and Papacy: The Church and the Call to Crusade — World History Volume 1, to 1500, OpenStax (Rice University)",
+            "url": "https://openstax.org/books/world-history-volume-1/pages/13-3-patriarch-and-papacy-the-church-and-the-call-to-crusade",
+            "quote": "Following this Great Schism of 1054, the eastern church became known as the Eastern Orthodox Church, and the western half the Catholic Church.",
+            "authority": "academic",
+            "checkedAt": "2026-11-07",
+            "verificationMethod": "Read the relevant full-page passage returned by web open/find on 2026-11-07, lines 48–54; exact quotation at line 52."
+          }
+        ],
+        "status": "supported",
+        "distinctOfficialAcademicUrls": 2,
+        "gaps": [],
+        "notes": [
+          "Сохранить осторожное «относят к 1054 году»: источник также описывает накопление разногласий; не превращать подпись в утверждение о мгновенном завершении всего процесса."
+        ]
+      }
+    ],
+    "summary": {
+      "itemCount": 11,
+      "supportedCount": 11,
+      "gaps": []
+    }
+  },
+  "additionalSources": {
+    "palace-red-yellow": {
+      "title": "寻找诗歌里的春花烂漫之海棠花 — 北京市人民政府",
+      "url": "https://www.beijing.gov.cn/renwen/zt/xzsgzdchlm/202204/t20220418_2680047.html",
+      "quote": "朱红的宫墙、明黄的屋瓦",
+      "authority": "official",
+      "checkedAt": "2026-11-07",
+      "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+    },
+    "palace-purple-name": {
+      "title": "我是北京城一只雨燕 — 北京市人民政府",
+      "url": "https://www.beijing.gov.cn/tsbj/msjs/202007/t20200709_1943858.html",
+      "quote": "地上紫禁城",
+      "authority": "official",
+      "checkedAt": "2026-11-07",
+      "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+    },
+    "tiantan-blue": {
+      "title": "天坛公园园长访谈 — 北京市文化和旅游局",
+      "url": "https://www.visitbeijing.com.cn/article/47QllJ8IU2a",
+      "quote": "祈年殿三层都是蓝色琉璃瓦",
+      "authority": "official",
+      "checkedAt": "2026-11-07",
+      "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+    },
+    "three-teachings": {
+      "title": "何以为教：儒释道三教在南北朝时期的确立及互动 — 北京大学哲学系",
+      "url": "https://phil.pku.edu.cn/xwgg/xzxw/xzdt/69Religiousstudies491385.htm",
+      "quote": "到了南北朝，“三教”逐渐成为儒、释、道的代名词。",
+      "authority": "academic",
+      "checkedAt": "2026-11-07",
+      "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+    },
+    "christian-branches": {
+      "title": "基督教历史及中国基督教的历史 — 北京大学",
+      "url": "https://tzb.pku.edu.cn/tzgz/mzzj/50124tzb229622.htm",
+      "quote": "新教与天主教、东正教并列为基督教三大派别之一。",
+      "authority": "academic",
+      "checkedAt": "2026-11-07",
+      "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+    },
+    "world-religions": {
+      "title": "天主教及其在三原的传教史 — 陕西师范大学",
+      "url": "https://lishiwenhua.snnu.edu.cn/info/1389/17201.htm",
+      "quote": "基督教和佛教、伊斯兰教并称为世界三大宗教。",
+      "authority": "academic",
+      "checkedAt": "2026-11-07",
+      "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+    },
+    "five-religions": {
+      "title": "中国宗教概况 — 中央人民政府驻香港联络办公室",
+      "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956454.htm",
+      "quote": "中国宗教徒信奉的主要有佛教、道教、伊斯兰教、天主教和基督教",
+      "authority": "official",
+      "checkedAt": "2026-11-07",
+      "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+    },
+    "dao-history": {
+      "title": "中国道教概述 — 北京市民族宗教事务委员会",
+      "url": "https://mzzjw.beijing.gov.cn/bjmz/bjdzj/zjzhjs/dj/djzjjj/201903/t20190327_15931.html",
+      "quote": "道教是中国本土宗教，创立于东汉末年",
+      "authority": "official",
+      "checkedAt": "2026-11-07",
+      "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+    }
+  }
+}

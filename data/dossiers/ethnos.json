@@ -6933,6 +6933,148 @@
           }
         }
       ]
+    },
+    "religions": {
+      "columns": {
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "rel-dao",
+          "sources": [
+            {
+              "url": "https://zzb.shutcm.edu.cn/2018/1017/c2661a29625/page.htm",
+              "title": "中国五大宗教 — 上海中医药大学",
+              "quote": "于东汉末年形成的",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "browsed_full_page",
+              "context": "道教 section"
+            },
+            {
+              "title": "中国宗教概况 — 中央人民政府驻香港联络办公室",
+              "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956454.htm",
+              "quote": "中国宗教徒信奉的主要有佛教、道教、伊斯兰教、天主教和基督教",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+            },
+            {
+              "title": "中国道教概述 — 北京市民族宗教事务委员会",
+              "url": "https://mzzjw.beijing.gov.cn/bjmz/bjdzj/zjzhjs/dj/djzjjj/201903/t20190327_15931.html",
+              "quote": "道教是中国本土宗教，创立于东汉末年",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "道教",
+            "ru": [
+              "Даосизм"
+            ],
+            "gloss": "Даосизм — религия, сложившаяся в Китае в конце эпохи Восточной Хань."
+          }
+        },
+        {
+          "id": "rel-islam",
+          "sources": [
+            {
+              "url": "https://pedia.cloud.edu.tw/Entry/Detail/?title=%E4%BC%8A%E6%96%AF%E8%98%AD%E6%95%99",
+              "title": "伊斯蘭教 — 教育部教育百科（國語辭典簡編本）",
+              "quote": "阿拉為其信奉的唯一真神，經典為可蘭經。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "中国宗教概况 — 中央人民政府驻香港联络办公室",
+              "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956454.htm",
+              "quote": "中国宗教徒信奉的主要有佛教、道教、伊斯兰教、天主教和基督教",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "伊斯兰教",
+            "ru": [
+              "Ислам"
+            ],
+            "gloss": "Ислам — мусульмане почитают Коран как священное писание."
+          }
+        },
+        {
+          "id": "rel-orthodox",
+          "sources": [
+            {
+              "url": "https://zzb.shutcm.edu.cn/2018/1017/c2661a29625/page.htm",
+              "title": "中国五大宗教 — 上海中医药大学",
+              "quote": "1054年，基督教分裂为东西两派。东派教会自称正教",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "browsed_full_page"
+            },
+            {
+              "title": "中国宗教概况 — 中央人民政府驻香港联络办公室",
+              "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956454.htm",
+              "quote": "中国宗教徒信奉的主要有佛教、道教、伊斯兰教、天主教和基督教",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+            },
+            {
+              "title": "13.3 Patriarch and Papacy: The Church and the Call to Crusade — World History Volume 1, to 1500, OpenStax (Rice University)",
+              "url": "https://openstax.org/books/world-history-volume-1/pages/13-3-patriarch-and-papacy-the-church-and-the-call-to-crusade",
+              "quote": "Following this Great Schism of 1054, the eastern church became known as the Eastern Orthodox Church, and the western half the Catholic Church.",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Read the relevant full-page passage returned by web open/find on 2026-11-07, lines 48–54; exact quotation at line 52."
+            }
+          ],
+          "olympiad": [
+            "2022-23-mun-spb-8"
+          ],
+          "name": {
+            "zh": "东正教",
+            "ru": [
+              "Православие"
+            ],
+            "gloss": "Православие — разделение восточной и западной церквей относят к 1054 году."
+          }
+        },
+        {
+          "id": "rel-buddhism",
+          "sources": [
+            {
+              "url": "https://bytzb.bjmu.edu.cn/mzzj/zj/jbzs2/775140c9f51c466dabc5f4f45e6666bb.htm",
+              "title": "我国宗教的基本情况 — 北京大学医学部统战部",
+              "quote": "形成汉传佛教（汉语系）、藏传佛教（藏语系）和云南上座部佛教（巴利语系）三大系统。",
+              "checkedAt": "2026-11-07",
+              "authority": "academic",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "中国宗教概况 — 中央人民政府驻香港联络办公室",
+              "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956454.htm",
+              "quote": "中国宗教徒信奉的主要有佛教、道教、伊斯兰教、天主教和基督教",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "verified-exact-primary-indexed-passage-during-release"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "佛教",
+            "ru": [
+              "Буддизм"
+            ],
+            "gloss": "Буддизм — в Китае выделяют китайскую, тибетскую и южную традиции."
+          }
+        }
+      ]
     }
   }
 }

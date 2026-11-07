@@ -11,7 +11,8 @@
         "people": "zh",
         "legend": "zh",
         "origin": "ru",
-        "unesco": "zh"
+        "unesco": "zh",
+        "chinesedate": "zh"
       },
       "sides": [
         "date",
@@ -1063,7 +1064,14 @@
           "core": true,
           "skipSides": [
             "unesco"
-          ]
+          ],
+          "chinesedate": {
+            "zh": "十月一号",
+            "ru": [
+              "1 октября"
+            ],
+            "gloss": "1 октября — День образования КНР, провозглашённой в 1949 году."
+          }
         },
         {
           "id": "hol-jianjun",
@@ -2398,6 +2406,104 @@
           ],
           "olympiad": [],
           "core": true
+        },
+        {
+          "id": "hol-romaday",
+          "sources": [
+            {
+              "url": "https://www.coe.int/en/web/no-hate-campaign/compendium/-/asset_publisher/PyHuON7WYezs/content/-action-day-international-romani-day-8-april",
+              "title": "“Action Day – International Romani Day” – 8 April — Council of Europe",
+              "quote": "The Action Days for International Roma Day, 8 April, gave visibility to Roma culture",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "On International Roma Day, ODIHR Director calls for renewed efforts to ensure the security, equality and inclusion of Roma and Sinti communities — OSCE ODIHR",
+              "url": "https://odihr.osce.org/odihr/663109",
+              "quote": "International Roma Day was established in 1990 following the 4th World Romani Congress and is observed each year on 8 April.",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+            }
+          ],
+          "olympiad": [],
+          "chinesedate": {
+            "zh": "四月八号",
+            "ru": [
+              "8 апреля"
+            ],
+            "gloss": "8 апреля — Международный день цыган, праздник их культуры."
+          },
+          "name": {
+            "zh": "国际罗姆人日"
+          }
+        },
+        {
+          "id": "hol-taiwan-teachers",
+          "sources": [
+            {
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=91843&la=0&powerMode=0",
+              "title": "教師節 — 教育部《重編國語辭典修訂本》",
+              "quote": "特定孔子誕辰九月二十八日為「教師節」",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "正名與緣起 — 臺北市孔廟管理委員會",
+              "url": "https://tct.gov.taipei/cp.aspx?n=1CDEDABEB7BAC28E",
+              "quote": "換算陽曆應為9月28日，故訂該日為孔子誕辰紀念日及教師節。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+            }
+          ],
+          "olympiad": [],
+          "chinesedate": {
+            "zh": "九月二十八号",
+            "ru": [
+              "28 сентября"
+            ],
+            "gloss": "28 сентября — День учителя на Тайване, приуроченный ко дню рождения Конфуция."
+          },
+          "name": {
+            "zh": "台湾教师节"
+          }
+        },
+        {
+          "id": "hol-un-chinese",
+          "sources": [
+            {
+              "url": "https://www.ungeneva.org/en/about/director-general/multilingualism/chinese-language-day",
+              "title": "Chinese Language Day — United Nations Office at Geneva",
+              "quote": "April 20 each year, a date chosen to honor Cangjie, a legendary figure believed to have invented Chinese characters.",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt"
+            },
+            {
+              "title": "联合国中文日 — 联合国",
+              "url": "https://www.un.org/zh/observances/chinese-language-day",
+              "quote": "将中文日定为每年4月20日中国传统节气“谷雨”这一天，以纪念“中华文字始祖”仓颉造字的贡献。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "Verified exact indexed passage returned by web search on 2026-11-07; not a full-page read."
+            }
+          ],
+          "olympiad": [
+            "2021-22-mun-amur-1"
+          ],
+          "chinesedate": {
+            "zh": "四月二十号",
+            "ru": [
+              "20 апреля"
+            ],
+            "gloss": "20 апреля — дата выбрана в память о Цан Цзе, легендарном создателе письма."
+          },
+          "name": {
+            "zh": "联合国中文日"
+          }
         }
       ]
     },
