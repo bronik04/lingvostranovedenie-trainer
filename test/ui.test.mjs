@@ -111,6 +111,66 @@ async function startRound(page, size) {
 
 const hashOf = (page) => new URL(page.url()).hash;
 
+test('почитать подробнее: ссылки скрыты до ответа и видны после любого ответа во всех форматах', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const record = (await bankOf(page)).find((r) => r.id === '2015-16-mun-1');
+  for (const [format, correct] of [['choice', true], ['choice', false], ['recall', true], ['truefalse', false]]) {
+    await page.evaluate(({ id, format }) => startRoundWith([QUESTION_BANK.find((r) => r.id === id)], format),
+      { id: record.id, format });
+    assert.equal(await page.locator('#feedback .further-reading').isVisible(), false);
+    if (format === 'choice') await answer(page, record, correct);
+    else if (format === 'recall') await page.locator('#revealAnswer').click();
+    else await page.locator('#tfFalse').click();
+    const reading = page.locator('#feedback .further-reading');
+    assert.equal(await reading.isVisible(), true, `${format}: ссылка после ответа`);
+    assert.match(await reading.textContent(), /Почитать подробнее/);
+    const anchor = reading.locator('a').first();
+    assert.match(await anchor.getAttribute('href'), /^https:\/\/ru\.wikipedia\.org\/wiki\//);
+    assert.match(await anchor.textContent(), /Ся/);
+    assert.equal(await anchor.getAttribute('target'), '_blank');
+    assert.match(await anchor.getAttribute('rel'), /noopener/);
+    assert.deepEqual(await page.locator('#feedback > :last-child').getAttribute('class'), 'further-reading');
+  }
+  // У отсутствующего материала нет пустого заголовка; адрес и подпись из данных безопасны.
+  await page.evaluate((id) => {
+    const record = QUESTION_BANK.find((r) => r.id === id);
+    const saved = READING_LINKS[id];
+    READING_LINKS[id] = [{ title: '<img src=x onerror=alert(1)>', url: 'javascript:alert(1)' }];
+    showFeedback(record, 'good', '<strong>Верно</strong>');
+    READING_LINKS[id] = saved;
+  }, record.id);
+  assert.equal(await page.locator('#feedback .further-reading').count(), 0);
+  await page.evaluate((id) => {
+    const saved = READING_LINKS[id];
+    READING_LINKS[id] = [{ title: '<img src=x onerror=alert(1)>', url: 'https://example.org/article' }];
+    showFeedback(QUESTION_BANK.find((r) => r.id === id), 'good', '<strong>Верно</strong>');
+    READING_LINKS[id] = saved;
+  }, record.id);
+  assert.equal(await page.locator('#feedback .further-reading img').count(), 0);
+  assert.equal(await page.locator('#feedback .further-reading a').textContent(), '<img src=x onerror=alert(1)>');
+  assert.deepEqual(page.errors, []);
+});
+
+test('чэнъюй: словарное чтение появляется после верного и неверного ответа', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  for (const correct of [true, false]) {
+    const record = await page.evaluate(() => {
+      const r = CHENGYU_BANK.find((r) => r.sources?.length);
+      cyStartRoundWith([r]);
+      return r;
+    });
+    assert.equal(await page.locator('#cyFeedback .further-reading').isVisible(), false);
+    const optionId = correct ? record.answer : record.options.find((o) => o.id !== record.answer).id;
+    await page.locator(`#cyOptions button[data-option-id="${optionId}"]`).click();
+    const anchor = page.locator('#cyFeedback .further-reading a').first();
+    assert.equal(await anchor.isVisible(), true);
+    assert.equal(await anchor.getAttribute('href'), record.sources[0].url);
+  }
+  assert.deepEqual(page.errors, []);
+});
+
 const reviewEntries = (page) => page.evaluate(() =>
   JSON.parse(localStorage.getItem('lingvo-trainer:review:v1')).entries);
 

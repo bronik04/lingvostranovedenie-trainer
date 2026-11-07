@@ -1039,7 +1039,7 @@ function rightAnswerHtml(record) {
   return `Правильный ответ: <span lang="zh-Hans">${escapeHtml(right.zh)}</span>${name ? ` — ${escapeHtml(name)}` : ''}.`;
 }
 
-/** Разбор под вопросом: строка вердикта (её задаёт формат), пояснение, источники. */
+/** Разбор под вопросом: вердикт, пояснение, источники проверки и статьи для чтения. */
 function showFeedback(record, kind, verdictHtml) {
   const sources = evidenceList(record.evidence);
   // stamp — удар печати (quiz.css); его снимает show(), чтобы возврат на экран не ставил печать заново
@@ -1051,12 +1051,23 @@ function showFeedback(record, kind, verdictHtml) {
     record.answer.state === 'unverified'
       ? '<p class="unverified">Ответ взят из официального ключа, но ещё не перепроверен по источникам.</p>'
       : '',
+    furtherReadingBlock(record),
   ].join('');
   requestAnimationFrame(() => {
     $('feedback').focus({ preventScroll: true });
     // Нижняя панель не заменяет докрутку к разбору ответа.
     revealOnPhone(!$('recallRate').classList.contains('hidden') ? $('recallRate') : $('feedback'));
   });
+}
+
+function furtherReadingBlock(record, articles = READING_LINKS[record.id] ?? []) {
+  const links = articles.slice(0, 2).flatMap((article) => {
+    const url = safeSourceUrl(article.url);
+    return url ? [`<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(article.title)}</a></li>`] : [];
+  });
+  return links.length
+    ? `<div class="further-reading"><p class="reading-title">Почитать подробнее</p><ul>${links.join('')}</ul></div>`
+    : '';
 }
 
 /** Источники: одна-две ссылки видны сразу, больше — под «Источники (N)», чтобы разбор

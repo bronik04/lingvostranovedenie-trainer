@@ -20,6 +20,7 @@ from authored import validate_authored
 import chengyu
 import pinyin
 from site_bank import embedded_by, load_settings, site_bank
+from reading import reading_links, validate_catalog
 
 TARGET = ROOT / 'dist/lingvostranovedenie-trainer.html'
 
@@ -139,6 +140,8 @@ def dossier_titles(bank: list[dict]) -> dict[str, str]:
 def main() -> None:
     full_bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
     errors = validate(full_bank)
+    reading_catalog = json.loads((ROOT / 'data/reading.json').read_text('utf-8'))
+    errors += validate_catalog(reading_catalog)
     olympiad_chengyu, draft_chengyu = chengyu.load('olympiad.json'), chengyu.load('drafts.json')
     errors += [f'чэнъюй: {message}' for message in chengyu.validate(olympiad_chengyu, draft_chengyu)]
     if errors:
@@ -158,6 +161,7 @@ def main() -> None:
     html = html.replace('/*QUESTION_BANK*/', serialize_bank(bank))
     html = html.replace('/*PINYIN*/', serialize_bank(pinyin_table(bank)))
     html = html.replace('/*DOSSIERS*/', serialize_bank(dossier_titles(bank)))
+    html = html.replace('/*READING_LINKS*/', serialize_bank(reading_links(bank, reading_catalog)))
     html = html.replace('/*QUIZ_UI*/', minify_js((ROOT / 'src/quiz.ui.js').read_text('utf-8')))
     # раздел «Чэнъюй»: свой банк (олимпиадные + принятые составленные), движок и интерфейс
     chengyu_bank = chengyu.published(olympiad_chengyu, draft_chengyu)

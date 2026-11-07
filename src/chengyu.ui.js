@@ -481,6 +481,7 @@ function cyAnswer(record, optionId) {
     record.disputedKey
       ? '<p class="unverified">Ключ олимпиады спорный: он приведён как в официальных ответах, разбор объясняет почему.</p>'
       : '',
+    furtherReadingBlock(record, record.sources ?? []),
   ].join('');
 
   $('cyNextButton').textContent = cy.position + 1 < cy.round.length ? 'Следующее задание'

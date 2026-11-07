@@ -571,6 +571,18 @@ select, .search {
 .verdict strong { grid-column: 2; font-family: var(--font-display); font-size: var(--t-size-title-2); line-height: var(--t-leading-tight); }
 .verdict span { grid-column: 2; color: var(--text-soft); font-size: var(--t-size-caption); }
 .why { max-width: 46em; font-size: var(--t-size-lead); }
+.further-reading {
+  border-top: var(--border-hair) solid var(--line-on-ground);
+  padding-top: var(--s-4);
+}
+.reading-title { font-size: var(--t-size-caption); font-weight: var(--t-weight-semibold); }
+.further-reading ul { margin-top: var(--s-2); }
+.further-reading a {
+  display: inline-block;
+  min-height: var(--target-min);
+  padding-block: var(--s-2);
+  overflow-wrap: anywhere;
+}
 .feedback-sources > summary {
   display: flex;
   align-items: center;
