@@ -474,7 +474,8 @@
       "columns": {
         "name": "zh",
         "short": "zh",
-        "about": "ru"
+        "about": "ru",
+        "cooperationCount": "zh"
       },
       "sides": [
         "name"
@@ -669,13 +670,36 @@
               "quote": "1991年11月，中国、中国台北和中国香港加入；1993年11月，墨西哥、巴布亚新几内亚加入；1994年智利加入；1998年11月，秘鲁、俄罗斯、越南加入。",
               "authority": "official",
               "checkedAt": "2026-10-25"
+            },
+            {
+              "title": "Our members — APEC",
+              "url": "https://www.apec.org/who-we-are/our-members",
+              "quote": "the APEC cooperative process is predominantly concerned with trade and economic issues",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact text returned by web search, no full-page fetch"
+            },
+            {
+              "title": "APEC — official home page",
+              "url": "https://apec.org/",
+              "quote": "APEC is a regional forum that brings together 21 member economies",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact returned passage; full page not read"
             }
           ],
           "olympiad": [
             "2022-23-mun-mosobl-4",
             "2022-23-shk-mosobl-6"
           ],
-          "core": true
+          "core": true,
+          "cooperationCount": {
+            "zh": "21",
+            "ru": [
+              "21 экономика"
+            ],
+            "gloss": "21 экономика — АТЭС занимается прежде всего торговлей и экономическим сотрудничеством."
+          }
         },
         {
           "id": "org-cis",
@@ -795,9 +819,88 @@
               "quote": "政治上，中国于1996年成为东盟全面对话伙伴",
               "authority": "official",
               "checkedAt": "2026-10-25"
+            },
+            {
+              "title": "The Creation of ASEAN — официальный юбилейный выпуск ASEAN 50",
+              "url": "https://asean.org/wp-content/uploads/2017/09/ASEAN-50-Final.pdf",
+              "quote": "ASEAN came into being on 8 August 1967 when Ministers representing the five founding member states",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact text returned by web search, no full-page fetch"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "cooperationCount": {
+            "zh": "5",
+            "ru": [
+              "5"
+            ],
+            "gloss": "5 — столько государств основали АСЕАН в 1967 году."
+          }
+        },
+        {
+          "id": "org-oecd",
+          "sources": [
+            {
+              "title": "Latvia — OECD",
+              "url": "https://www.oecd.org/en/countries/latvia.html",
+              "quote": "Latvia joined the OECD in 2016, becoming the Organisation’s 35th member country",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact text returned by web search, no full-page fetch"
+            },
+            {
+              "title": "The Year in Trade 2016 — U.S. International Trade Commission",
+              "url": "https://www.usitc.gov/publications/332/otap2016.html",
+              "quote": "On July 1, 2016, Latvia became the 35th member of the OECD.",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact returned passage; full page not read"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "经济合作与发展组织"
+          },
+          "cooperationCount": {
+            "zh": "35",
+            "ru": [
+              "35"
+            ],
+            "gloss": "35 — столько стран было в ОЭСР после присоединения Латвии в 2016 году."
+          }
+        },
+        {
+          "id": "org-rcep",
+          "sources": [
+            {
+              "title": "RCEP对所有签署国全面生效 — Министерство коммерции КНР",
+              "url": "https://www.mofcom.gov.cn/syxwfb/art/2023/art_89631a4809234ea5be5d65797cd4f1a0.html",
+              "quote": "2020年11月15日，东盟10国和澳大利亚、中国、日本、韩国、新西兰共同签署RCEP",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact text returned by web search, no full-page fetch"
+            },
+            {
+              "title": "RCEP Agreement enters into force for Indonesia — ASEAN Secretariat",
+              "url": "https://asean.org/rcep-agreement-enters-into-force-for-indonesia/",
+              "quote": "The RCEP Agreement was signed on 15 November 2020 by 15 countries",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact returned passage; full page not read"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "区域全面经济伙伴关系协定"
+          },
+          "cooperationCount": {
+            "zh": "15",
+            "ru": [
+              "15"
+            ],
+            "gloss": "15 — число стран, подписавших соглашение RCEP в 2020 году, включая Китай."
+          }
         }
       ]
     },

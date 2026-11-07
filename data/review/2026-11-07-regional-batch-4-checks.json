@@ -1,0 +1,114 @@
+{
+  "reviewId": "regional-2026-11-07-batch-4",
+  "date": "2026-11-07",
+  "status": "passed",
+  "scope": "Историческая проверка16черновиков до авторского принятия; актуальные результаты в regional-batch-4-release-check.json",
+  "checks": {
+    "retainedQuestions": 16,
+    "displayedOptions": 64,
+    "originalReviewNumbersPreserved": true,
+    "excludedReviewNumbers": [
+      2,
+      4,
+      13,
+      20
+    ],
+    "remaining16RecordsUnchanged": true,
+    "q2OriginalAndBothWithdrawnProposalsPreserved": true,
+    "manifestHashValid": true,
+    "protectedOperationalFilesUnchanged": 47,
+    "chengyuDraftAndPriorDeploymentProofUnchanged": true,
+    "publicationAuthorized": false,
+    "fullBuildOrSuiteRun": false
+  },
+  "errors": [],
+  "previousFeedbackChecks": {
+    "reviewId": "regional-2026-11-07-batch-4",
+    "date": "2026-11-07",
+    "status": "passed",
+    "scope": "Архив проверки17вопросов до окончательного снятия№2 автором",
+    "checks": {
+      "retainedQuestions": 17,
+      "originalReviewNumbersPreserved": true,
+      "excludedReviewNumbers": [
+        4,
+        13,
+        20
+      ],
+      "q2AlternativeSets": 2,
+      "newOptionCaptions": 8,
+      "maxNewCaptionLength": 75,
+      "displayedOptions": 72,
+      "original20CanonicalContentPreserved": true,
+      "protectedOperationalFilesUnchanged": 47,
+      "protectedOperationalFilesTotal": 47,
+      "chengyuDraftsBefore": 78,
+      "chengyuDraftsAfter": 79,
+      "chengyuPreviouslyPublishedUnchanged": true,
+      "chengyuPublishedCount": 112,
+      "publicationAuthorized": false,
+      "fullBuildOrSuiteRun": false,
+      "manifestHashValid": true
+    },
+    "errors": [],
+    "initialDraftChecks": {
+      "reviewId": "regional-2026-11-07-batch-4",
+      "date": "2026-11-07",
+      "status": "passed",
+      "checks": {
+        "questions": 20,
+        "options": 80,
+        "topics": 7,
+        "correctOptions": 20,
+        "visibleSnapshot": 1014,
+        "eligibleConserved": 243,
+        "nearestActiveRelationsReviewed": 58,
+        "maxCaptionLength": 89,
+        "protectedFilesUnchanged": 47,
+        "protectedFilesTotal": 47,
+        "originalCanonicalContentPreserved": true,
+        "publicationAuthorized": false,
+        "previewOnlyOptionChanges": [
+          {
+            "questionId": "2022-23-mun-amur-4",
+            "optionId": "o1",
+            "from": "新疆维吾尔族自治区",
+            "to": "新疆维吾尔自治区"
+          },
+          {
+            "questionId": "2022-23-mun-amur-4",
+            "optionId": "o2",
+            "from": "青海省",
+            "to": "青海"
+          },
+          {
+            "questionId": "2025-26-mun-tat-57",
+            "optionId": "o3",
+            "from": "月日",
+            "to": "日月"
+          }
+        ],
+        "manifestHashValid": true,
+        "fullBuildOrSuiteRun": false
+      },
+      "errors": [],
+      "limits": [
+        "Структурная проверка черновика не заменяет последующую проверку встраивания, взаимных подсказок, сборку и тесты.",
+        "Источники новых справок прочитаны в точных первичных индексированных фрагментах; повторно используемые цитаты принятых досье отмечены отдельно."
+      ],
+      "scope": "Архив первоначального черновика20/80 до замечаний автора; не текущая партия",
+      "archived": true
+    },
+    "limits": [
+      "Новые наборы №2 — только предложения; выбор автора ещё не получен.",
+      "№4 сохранён в nativeчерновиках Чэнъюй со статусом draft, не опубликован.",
+      "Проверки встраивания, взаимных подсказок и полного выпуска остаются следующим этапом после принятия."
+    ],
+    "archived": true
+  },
+  "limits": [
+    "Принятие оставшихся16вопросов автором ещё не получено.",
+    "Встраивание и публикация не выполнялись."
+  ],
+  "archived": true
+}

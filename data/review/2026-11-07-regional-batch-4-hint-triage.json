@@ -1,0 +1,1147 @@
+{
+  "date": "2026-11-07",
+  "baselineCaptionCandidateCount": 2826,
+  "initialNewCandidateCount": 25,
+  "directConstraints": 17,
+  "captionConstraints": 19,
+  "manualSemanticConstraints": 10,
+  "unresolvedImportantCandidates": 0,
+  "numberMatcherFix": "Bare21mustnotmatchyear1721/2021orcount210;2regressiontestsRED→GREEN.",
+  "aliasClarification": "Лян(мерамассы) isnotpersonalnameЧжугэЛян; acceptedcaptionunchanged.",
+  "constraints": [
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "dynasties-q55",
+      "otherId": "2024-25-mun-nsk-5",
+      "evidence": "dynasties/dynasties-q55: текст называет ответ вопроса provinces/provinces-q133: ['Казань']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2021-22-mun-q0b125d",
+      "otherId": "2020-21-mun-mosobl-52",
+      "evidence": "literature/literature-q61: текст называет ответ вопроса modern-history/modern-history-q121: ['1841', '1841 год']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2020-21-mun-mosobl-52",
+      "otherId": "modern-history-q115",
+      "evidence": "modern-history/modern-history-q121: текст называет ответ вопроса modern-history/modern-history-q115: ['остров Гонконг']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2020-21-mun-mosobl-52",
+      "otherId": "2022-23-mun-orel-4",
+      "evidence": "modern-history/modern-history-q121: текст называет ответ вопроса modern-history/modern-history-q119: ['英国', 'Великобритания']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2022-23-mun-orel-3",
+      "otherId": "modern-history-q113",
+      "evidence": "modern-history/modern-history-q124: текст называет ответ вопроса modern-history/modern-history-q113: ['毛泽东', 'Мао Цзэдун']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2022-23-mun-orel-3",
+      "otherId": "2024-25-mun-mosobl-1",
+      "evidence": "modern-history/modern-history-q124: текст называет ответ вопроса modern-history/modern-history-q04: ['毛泽东', 'Мао Цзэдун']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "money-q10",
+      "otherId": "2022-23-mun-mosobl-10",
+      "evidence": "money/money-q10: текст называет ответ вопроса modern-history/modern-history-q122: ['2010', '2010 год']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2025-26-mun-tat-57",
+      "otherId": "2020-21-reg-q588b1b",
+      "evidence": "myths/myths-q31: текст называет ответ вопроса myths/myths-q02: ['Паньгу']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2025-26-mun-tat-57",
+      "otherId": "2024-25-zak-q082614",
+      "evidence": "myths/myths-q31: текст называет ответ вопроса myths/myths-q09: ['Паньгу']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "nature-q102",
+      "otherId": "2022-23-mun-amur-4",
+      "evidence": "nature/nature-q102: текст называет ответ вопроса provinces/provinces-q132: ['Синьцзян']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "painting-q06",
+      "otherId": "2025-26-shk-mosobl-15",
+      "evidence": "painting/painting-q06: текст называет ответ вопроса crafts/crafts-q140: ['Бамбук']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "people-q10",
+      "otherId": "2022-23-mun-orel-1",
+      "evidence": "people/people-q10: текст называет ответ вопроса literature/literature-q112: ['«Лао-цзы»']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2024-25-mun-kursk-1",
+      "otherId": "2022-23-mun-mosobl-10",
+      "evidence": "provinces/provinces-q115: текст называет ответ вопроса modern-history/modern-history-q122: ['2010']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2022-23-shk-mosobl-18",
+      "otherId": "2018-19-mun-52",
+      "evidence": "provinces/provinces-q130: текст называет ответ вопроса nature/nature-q06: ['Бохайский залив']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2022-23-shk-mosobl-18",
+      "otherId": "nature-q35",
+      "evidence": "provinces/provinces-q130: текст называет ответ вопроса nature/nature-q35: ['Бохайский залив']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2025-26-shk-mosobl-3",
+      "otherId": "holidays-q40",
+      "evidence": "provinces/provinces-q131: текст называет ответ вопроса holidays/holidays-q40: ['монголы']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2025-26-shk-mosobl-3",
+      "otherId": "provinces-q34",
+      "evidence": "provinces/provinces-q131: текст называет ответ вопроса provinces/provinces-q34: ['Внутренняя Монголия']",
+      "reason": "Условие называет ответ соседней карточки; сохраняем оба задания и разводим их в раунде. Число/год трактуется как буквальное совпадение, не как дубль проверяемого факта."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2022-23-mun-orel-1",
+      "otherId": "people-q09",
+      "evidence": {
+        "zh": "《论语》",
+        "gloss": "«Лунь юй» — слова и дела Конфуция, собранные его учениками и их учениками.",
+        "answer": [
+          "论语",
+          "«Лунь юй»"
+        ],
+        "clues": [
+          "Конфуций"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2022-23-mun-orel-1",
+      "otherId": "2016-17-zak-10",
+      "evidence": {
+        "zh": "《论语》",
+        "gloss": "«Лунь юй» — слова и дела Конфуция, собранные его учениками и их учениками.",
+        "answer": [
+          "论语",
+          "«Лунь юй»"
+        ],
+        "clues": [
+          "Конфуций"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2015-16-reg-2",
+      "otherId": "2022-23-mun-amur-4",
+      "evidence": {
+        "zh": "塔里木河",
+        "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+        "answer": [
+          "Синьцзян"
+        ],
+        "clues": [
+          "Тарим"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "addition-b1-01",
+      "otherId": "2022-23-mun-amur-4",
+      "evidence": {
+        "zh": "塔里木河",
+        "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+        "answer": [
+          "Синьцзян"
+        ],
+        "clues": [
+          "Тарим"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "nature-q27",
+      "otherId": "2022-23-mun-amur-4",
+      "evidence": {
+        "zh": "塔里木河",
+        "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+        "answer": [
+          "Синьцзян"
+        ],
+        "clues": [
+          "Тарим"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "nature-q104",
+      "otherId": "2022-23-mun-amur-4",
+      "evidence": {
+        "zh": "塔里木河",
+        "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+        "answer": [
+          "Синьцзян"
+        ],
+        "clues": [
+          "Тарим"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "nature-q105",
+      "otherId": "2022-23-mun-amur-4",
+      "evidence": {
+        "zh": "塔里木河",
+        "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+        "answer": [
+          "Синьцзян"
+        ],
+        "clues": [
+          "Тарим"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "nature-q106",
+      "otherId": "2022-23-mun-amur-4",
+      "evidence": {
+        "zh": "塔里木河",
+        "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+        "answer": [
+          "Синьцзян"
+        ],
+        "clues": [
+          "Тарим"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2019-20-reg-5",
+      "otherId": "2022-23-mun-amur-4",
+      "evidence": {
+        "zh": "塔里木河",
+        "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+        "answer": [
+          "Синьцзян"
+        ],
+        "clues": [
+          "Тарим"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "nature-q140",
+      "otherId": "2022-23-mun-amur-4",
+      "evidence": {
+        "zh": "塔里木河",
+        "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+        "answer": [
+          "Синьцзян"
+        ],
+        "clues": [
+          "Тарим"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2022-23-mun-kam-10",
+      "otherId": "2022-23-mun-amur-4",
+      "evidence": {
+        "zh": "塔里木河",
+        "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+        "answer": [
+          "Синьцзян"
+        ],
+        "clues": [
+          "Тарим"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2025-26-mun-ryaz-4",
+      "otherId": "2022-23-mun-amur-4",
+      "evidence": {
+        "zh": "塔里木河",
+        "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+        "answer": [
+          "Синьцзян"
+        ],
+        "clues": [
+          "Тарим"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2018-19-mun-vrn-6",
+      "otherId": "2022-23-mun-amur-4",
+      "evidence": {
+        "zh": "塔里木河",
+        "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+        "answer": [
+          "Синьцзян"
+        ],
+        "clues": [
+          "Тарим"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2023-24-mun-komi-4",
+      "otherId": "2022-23-mun-amur-4",
+      "evidence": {
+        "zh": "塔里木河",
+        "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+        "answer": [
+          "Синьцзян"
+        ],
+        "clues": [
+          "Тарим"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2022-23-shk-mosobl-18",
+      "otherId": "2015-16-reg-1",
+      "evidence": {
+        "zh": "河北、辽宁、山东和天津",
+        "gloss": "Хэбэй, Ляонин, Шаньдун, Тяньцзинь — три провинции и город центрального подчинения.",
+        "answer": [
+          "天津",
+          "Тяньцзинь"
+        ],
+        "clues": [
+          "город центрального подчинения"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2025-26-shk-mosobl-3",
+      "otherId": "provinces-q36",
+      "evidence": {
+        "zh": "吉林",
+        "gloss": "Цзилинь — восточный сосед Внутренней Монголии; центр — Чанчунь.",
+        "answer": [
+          "Чанчунь"
+        ],
+        "clues": [
+          "Провинция Цзилинь"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2025-26-shk-mosobl-3",
+      "otherId": "provinces-q38",
+      "evidence": {
+        "zh": "甘肃",
+        "gloss": "Ганьсу — западный сосед Внутренней Монголии; центр — Ланьчжоу.",
+        "answer": [
+          "Ланьчжоу"
+        ],
+        "clues": [
+          "провинция Ганьсу"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2022-23-mun-amur-4",
+      "otherId": "provinces-q34",
+      "evidence": {
+        "zh": "内蒙古自治区",
+        "gloss": "Внутренняя Монголия — Хух-Хото в переводе с монгольского означает «Синий город».",
+        "answer": [
+          "内蒙古自治区",
+          "Внутренняя Монголия"
+        ],
+        "clues": [
+          "Хух-Хото"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2024-25-mun-nsk-5",
+      "otherId": "2018-19-reg-5",
+      "evidence": {
+        "zh": "莫斯科",
+        "gloss": "Москва — принимала летние Олимпийские игры 1980 года.",
+        "answer": [
+          "1980"
+        ],
+        "clues": [
+          "Москва",
+          "莫斯科"
+        ]
+      },
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-shk-mosobl-3",
+      "otherId": "provinces-q89",
+      "reason": "Хэнань: название к югу от Хуанхэ прямо раскрывает объект этимологии двух провинций."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-shk-mosobl-3",
+      "otherId": "provinces-q37",
+      "reason": "Подпись Шэньси прямо называет административный центр Сиань."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2022-23-mun-amur-4",
+      "otherId": "2021-22-mun-qd67aaa",
+      "reason": "Подпись Тибета прямо называет административный центр Лхасу."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-mun-chel-3",
+      "otherId": "people-q11",
+      "reason": "Подпись бумаги прямо связывает Цай Луня с улучшением её изготовления."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-mun-chel-3",
+      "otherId": "addition-b2-09",
+      "reason": "Условие об Иньсюе даёт гадательные кости и甲骨文; среди четырёх материалов новой карточки только панцирь относится к этой основе."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-mun-chel-3",
+      "otherId": "2020-21-mun-lenobl-7",
+      "reason": "Новая формулировка прямо называет цзягувэнь древнейшей зрелой письменностью; скрытый старый вопрос спрашивает название ранних надписей."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-mun-tat-57",
+      "otherId": "2020-21-reg-q588b1b",
+      "reason": "Новая формулировка прямо называет Паньгу творцом мира."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-mun-tat-57",
+      "otherId": "2021-22-reg-qdc153d",
+      "reason": "Новая формулировка описывает тот же миф о Паньгу и сотворении мира."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-mun-tat-57",
+      "otherId": "2024-25-zak-q082614",
+      "reason": "Новая формулировка прямо называет Паньгу и превращение тела во Вселенную."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2022-23-mun-orel-1",
+      "otherId": "2016-17-reg-8",
+      "reason": "Название даосского трактата Лао-цзы и подпись соотносятся с его автором — основателем даосской мысли."
+    }
+  ],
+  "decisions": [
+    {
+      "record": "ethnos/ethnos-q94",
+      "option": "ppl-cn-tibetan",
+      "zh": "藏传佛教",
+      "gloss": "Тибетский буддизм (в старых текстах — «ламаизм») — религия тибетцев",
+      "isAnswer": false,
+      "other": "2018-19-reg-7",
+      "answer": [
+        "佛教",
+        "Буддизм"
+      ],
+      "clues": [
+        "Тибет"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "ethnos-q94",
+      "otherId": "2018-19-reg-7",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Одна каноническая строка; штатная защита factRow."
+    },
+    {
+      "record": "ethnos/ethnos-q95",
+      "option": "ppl-ru-buryats",
+      "zh": "藏传佛教",
+      "gloss": "Тибетский буддизм (в старых текстах — «ламаизм») — традиционная религия бурят",
+      "isAnswer": true,
+      "other": "2018-19-reg-7",
+      "answer": [
+        "佛教",
+        "Буддизм"
+      ],
+      "clues": [
+        "Тибет"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "ethnos-q95",
+      "otherId": "2018-19-reg-7",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба прежних вопроса и подписи неизменны; новый кандидат обусловлен расширением индекса имён, а не новой подсказкой."
+    },
+    {
+      "record": "ethnos/ethnos-q99",
+      "option": "o4",
+      "zh": "佛教",
+      "gloss": "Буддизм — в Китае выделяют китайскую, тибетскую и южную традиции.",
+      "isAnswer": false,
+      "other": "2018-19-reg-7",
+      "answer": [
+        "佛教",
+        "Буддизм"
+      ],
+      "clues": [
+        "Тибет"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2022-23-mun-spb-8",
+      "otherId": "2018-19-reg-7",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба прежних вопроса и подписи неизменны; новый кандидат обусловлен расширением индекса имён, а не новой подсказкой."
+    },
+    {
+      "record": "literature/literature-q112",
+      "option": "o4",
+      "zh": "《论语》",
+      "gloss": "«Лунь юй» — слова и дела Конфуция, собранные его учениками и их учениками.",
+      "isAnswer": false,
+      "other": "people/people-q09",
+      "answer": [
+        "论语",
+        "«Лунь юй»"
+      ],
+      "clues": [
+        "Конфуций"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2022-23-mun-orel-1",
+      "otherId": "people-q09",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "literature/literature-q112",
+      "option": "o4",
+      "zh": "《论语》",
+      "gloss": "«Лунь юй» — слова и дела Конфуция, собранные его учениками и их учениками.",
+      "isAnswer": false,
+      "other": "2016-17-zak-10",
+      "answer": [
+        "论语",
+        "«Лунь юй»"
+      ],
+      "clues": [
+        "Конфуций"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2022-23-mun-orel-1",
+      "otherId": "2016-17-zak-10",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "nature/nature-q01",
+      "option": "wat-talimuhe",
+      "zh": "塔里木河",
+      "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+      "isAnswer": false,
+      "other": "provinces/provinces-q132",
+      "answer": [
+        "Синьцзян"
+      ],
+      "clues": [
+        "Тарим"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2015-16-reg-2",
+      "otherId": "2022-23-mun-amur-4",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "nature/nature-q04",
+      "option": "wat-talimuhe",
+      "zh": "塔里木河",
+      "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+      "isAnswer": false,
+      "other": "provinces/provinces-q132",
+      "answer": [
+        "Синьцзян"
+      ],
+      "clues": [
+        "Тарим"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "addition-b1-01",
+      "otherId": "2022-23-mun-amur-4",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "nature/nature-q27",
+      "option": "wat-talimuhe",
+      "zh": "塔里木河",
+      "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+      "isAnswer": true,
+      "other": "provinces/provinces-q132",
+      "answer": [
+        "Синьцзян"
+      ],
+      "clues": [
+        "Тарим"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "nature-q27",
+      "otherId": "2022-23-mun-amur-4",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "nature/nature-q68",
+      "option": "eng-ru-transsib",
+      "zh": "西伯利亚大铁路",
+      "gloss": "Транссибирская магистраль — самая длинная железная дорога мира",
+      "isAnswer": false,
+      "other": "nature/nature-q163",
+      "answer": [
+        "西伯利亚大铁路",
+        "Транссибирская магистраль",
+        "Транссиб"
+      ],
+      "clues": [
+        "Железо"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "nature-q68",
+      "otherId": "nature-q163",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Одна каноническая строка; штатная защита factRow."
+    },
+    {
+      "record": "nature/nature-q104",
+      "option": "wat-talimuhe",
+      "zh": "塔里木河",
+      "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+      "isAnswer": false,
+      "other": "provinces/provinces-q132",
+      "answer": [
+        "Синьцзян"
+      ],
+      "clues": [
+        "Тарим"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "nature-q104",
+      "otherId": "2022-23-mun-amur-4",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "nature/nature-q105",
+      "option": "wat-talimuhe",
+      "zh": "塔里木河",
+      "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+      "isAnswer": false,
+      "other": "provinces/provinces-q132",
+      "answer": [
+        "Синьцзян"
+      ],
+      "clues": [
+        "Тарим"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "nature-q105",
+      "otherId": "2022-23-mun-amur-4",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "nature/nature-q106",
+      "option": "wat-talimuhe",
+      "zh": "塔里木河",
+      "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+      "isAnswer": false,
+      "other": "provinces/provinces-q132",
+      "answer": [
+        "Синьцзян"
+      ],
+      "clues": [
+        "Тарим"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "nature-q106",
+      "otherId": "2022-23-mun-amur-4",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "nature/nature-q137",
+      "option": "wat-talimuhe",
+      "zh": "塔里木河",
+      "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+      "isAnswer": false,
+      "other": "provinces/provinces-q132",
+      "answer": [
+        "Синьцзян"
+      ],
+      "clues": [
+        "Тарим"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2019-20-reg-5",
+      "otherId": "2022-23-mun-amur-4",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "nature/nature-q140",
+      "option": "wat-talimuhe",
+      "zh": "塔里木河",
+      "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+      "isAnswer": false,
+      "other": "provinces/provinces-q132",
+      "answer": [
+        "Синьцзян"
+      ],
+      "clues": [
+        "Тарим"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "nature-q140",
+      "otherId": "2022-23-mun-amur-4",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "nature/nature-q163",
+      "option": "eng-qingzang-railway",
+      "zh": "青藏铁路",
+      "gloss": "Цинхай-Тибетская железная дорога — Синин — Лхаса, 1956 км",
+      "isAnswer": false,
+      "other": "nature/nature-q68",
+      "answer": [
+        "青藏铁路",
+        "Цинхай-Тибетская железная дорога"
+      ],
+      "clues": [
+        "Железо"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "nature-q163",
+      "otherId": "nature-q68",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Одна каноническая строка; штатная защита factRow."
+    },
+    {
+      "record": "nature/nature-q14",
+      "option": "wat-talimuhe",
+      "zh": "塔里木河",
+      "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+      "isAnswer": false,
+      "other": "provinces/provinces-q132",
+      "answer": [
+        "Синьцзян"
+      ],
+      "clues": [
+        "Тарим"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2022-23-mun-kam-10",
+      "otherId": "2022-23-mun-amur-4",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "nature/nature-q05",
+      "option": "wat-talimuhe",
+      "zh": "塔里木河",
+      "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+      "isAnswer": false,
+      "other": "provinces/provinces-q132",
+      "answer": [
+        "Синьцзян"
+      ],
+      "clues": [
+        "Тарим"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-mun-ryaz-4",
+      "otherId": "2022-23-mun-amur-4",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "nature/nature-q18",
+      "option": "wat-talimuhe",
+      "zh": "塔里木河",
+      "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+      "isAnswer": false,
+      "other": "provinces/provinces-q132",
+      "answer": [
+        "Синьцзян"
+      ],
+      "clues": [
+        "Тарим"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2018-19-mun-vrn-6",
+      "otherId": "2022-23-mun-amur-4",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "nature/nature-q22",
+      "option": "wat-talimuhe",
+      "zh": "塔里木河",
+      "gloss": "Тарим — самая длинная внутренняя река Китая, течёт в Синьцзяне",
+      "isAnswer": false,
+      "other": "provinces/provinces-q132",
+      "answer": [
+        "Синьцзян"
+      ],
+      "clues": [
+        "Тарим"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-mun-komi-4",
+      "otherId": "2022-23-mun-amur-4",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "provinces/provinces-q56",
+      "option": "city-lasa",
+      "zh": "布达拉宫",
+      "gloss": "Потала — дворец на Красной горе в Лхасе, символ власти старого Тибета",
+      "isAnswer": false,
+      "other": "2018-19-mun-46",
+      "answer": [
+        "布达拉宫",
+        "Потала"
+      ],
+      "clues": [
+        "Тибет"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "provinces-q56",
+      "otherId": "2018-19-mun-46",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба прежних вопроса и подписи неизменны; новый кандидат обусловлен расширением индекса имён, а не новой подсказкой."
+    },
+    {
+      "record": "provinces/provinces-q130",
+      "option": "o1",
+      "zh": "河北、辽宁、山东和天津",
+      "gloss": "Хэбэй, Ляонин, Шаньдун, Тяньцзинь — три провинции и город центрального подчинения.",
+      "isAnswer": true,
+      "other": "2015-16-reg-1",
+      "answer": [
+        "天津",
+        "Тяньцзинь"
+      ],
+      "clues": [
+        "город центрального подчинения"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2022-23-shk-mosobl-18",
+      "otherId": "2015-16-reg-1",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "provinces/provinces-q131",
+      "option": "o2",
+      "zh": "吉林",
+      "gloss": "Цзилинь — восточный сосед Внутренней Монголии; центр — Чанчунь.",
+      "isAnswer": false,
+      "other": "provinces/provinces-q36",
+      "answer": [
+        "Чанчунь"
+      ],
+      "clues": [
+        "Провинция Цзилинь"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-shk-mosobl-3",
+      "otherId": "provinces-q36",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "provinces/provinces-q131",
+      "option": "o3",
+      "zh": "甘肃",
+      "gloss": "Ганьсу — западный сосед Внутренней Монголии; центр — Ланьчжоу.",
+      "isAnswer": false,
+      "other": "provinces/provinces-q38",
+      "answer": [
+        "Ланьчжоу"
+      ],
+      "clues": [
+        "провинция Ганьсу"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-shk-mosobl-3",
+      "otherId": "provinces-q38",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "provinces/provinces-q132",
+      "option": "o4",
+      "zh": "内蒙古自治区",
+      "gloss": "Внутренняя Монголия — Хух-Хото в переводе с монгольского означает «Синий город».",
+      "isAnswer": false,
+      "other": "provinces/provinces-q34",
+      "answer": [
+        "内蒙古自治区",
+        "Внутренняя Монголия"
+      ],
+      "clues": [
+        "Хух-Хото"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2022-23-mun-amur-4",
+      "otherId": "provinces-q34",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    },
+    {
+      "record": "provinces/provinces-q133",
+      "option": "o2",
+      "zh": "莫斯科",
+      "gloss": "Москва — принимала летние Олимпийские игры 1980 года.",
+      "isAnswer": false,
+      "other": "2018-19-reg-5",
+      "answer": [
+        "1980"
+      ],
+      "clues": [
+        "Москва",
+        "莫斯科"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-nsk-5",
+      "otherId": "2018-19-reg-5",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись называет ответ и зацепку соседнего вопроса; принятый полезный факт сохраняется, карточки разводятся."
+    }
+  ],
+  "groupUnions": [
+    {
+      "kept": "opium-wars-two",
+      "mergedGroups": [
+        "regional-b4-hint-03",
+        "regional-b4-hint-04",
+        "regional-b4-hint-02"
+      ],
+      "memberCount": 9
+    },
+    {
+      "kept": "province-names-river-lake",
+      "mergedGroups": [
+        "regional-b4-hint-21",
+        "regional-b4-hint-22",
+        "regional-b4-hint-23",
+        "regional-b4-hint-24",
+        "regional-b4-hint-25",
+        "regional-b4-hint-26",
+        "regional-b4-hint-27",
+        "regional-b4-hint-28",
+        "regional-b4-hint-29",
+        "regional-b4-hint-30",
+        "regional-b4-hint-31",
+        "regional-b4-hint-35",
+        "regional-b4-hint-37",
+        "regional-b4-hint-38",
+        "regional-b4-hint-39",
+        "potala-tibet",
+        "suzhou-hangzhou-paradise",
+        "contextual-geography-2",
+        "regional-b4-hint-10",
+        "regional-b4-hint-16",
+        "regional-b4-hint-17",
+        "regional-b4-hint-20",
+        "regional-b4-hint-33",
+        "regional-b4-hint-34",
+        "xinjiang-word",
+        "regional-b3-caption-56"
+      ],
+      "memberCount": 109
+    },
+    {
+      "kept": "beijing-tianjin-municipality",
+      "mergedGroups": [
+        "regional-b4-hint-32",
+        "regional-b4-hint-14",
+        "regional-b4-hint-15"
+      ],
+      "memberCount": 7
+    },
+    {
+      "kept": "confucius-word",
+      "mergedGroups": [
+        "regional-b4-hint-19",
+        "regional-b4-hint-46",
+        "xuanzang-sutras",
+        "regional-b4-hint-12",
+        "regional-b4-hint-18"
+      ],
+      "memberCount": 35
+    },
+    {
+      "kept": "prc-founding-1949",
+      "mergedGroups": [
+        "regional-b4-hint-05",
+        "regional-b4-hint-06",
+        "state-council-premier"
+      ],
+      "memberCount": 18
+    },
+    {
+      "kept": "brics-word",
+      "mergedGroups": [
+        "regional-b4-hint-01",
+        "regional-b4-hint-36"
+      ],
+      "memberCount": 5
+    },
+    {
+      "kept": "regional-b4-hint-07",
+      "mergedGroups": [
+        "regional-b4-hint-13"
+      ],
+      "memberCount": 3
+    },
+    {
+      "kept": "regional-b4-hint-08",
+      "mergedGroups": [
+        "regional-b4-hint-09",
+        "regional-b4-hint-43",
+        "regional-b4-hint-44",
+        "regional-b4-hint-45"
+      ],
+      "memberCount": 4
+    },
+    {
+      "kept": "regional-b4-hint-40",
+      "mergedGroups": [
+        "regional-b4-hint-41",
+        "regional-b4-hint-42"
+      ],
+      "memberCount": 4
+    }
+  ],
+  "allPreviousProtectionsPreserved": true,
+  "maxFactGroupSize": 109
+}

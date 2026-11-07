@@ -13,7 +13,9 @@
         "named": "zh",
         "about": "ru",
         "coastname": "zh",
-        "neighborname": "zh"
+        "neighborname": "zh",
+        "neimengguneighborname": "zh",
+        "tarimregionname": "zh"
       },
       "sides": [
         "abbr",
@@ -453,7 +455,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "tarimregionname": {
+            "zh": "内蒙古自治区",
+            "ru": [
+              "Внутренняя Монголия"
+            ],
+            "gloss": "Внутренняя Монголия — Хух-Хото в переводе с монгольского означает «Синий город»."
+          }
         },
         {
           "id": "prov-liaoning",
@@ -598,6 +607,14 @@
               "quote": "“吉林乌拉”为满语，吉林意为“沿”，乌拉是“大川”的意思。吉林乌拉就是“沿着松花江”的城市，简称吉林。",
               "authority": "academic",
               "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "内蒙古概况 — 驻新西兰大使馆",
+              "url": "https://nz.china-embassy.gov.cn/chn/ztbd/xbdkf/xbgk/200309/t20030922_927208.htm",
+              "quote": "东与黑龙江、吉林、辽宁接壤，西与甘肃、宁夏毗邻，南与河北、山西、陕西相连",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "checked-exact-primary-indexed-excerpt"
             }
           ],
           "olympiad": [],
@@ -605,7 +622,14 @@
           "skipSides": [
             "kind",
             "named"
-          ]
+          ],
+          "neimengguneighborname": {
+            "zh": "吉林",
+            "ru": [
+              "Цзилинь"
+            ],
+            "gloss": "Цзилинь — восточный сосед Внутренней Монголии; центр — Чанчунь."
+          }
         },
         {
           "id": "prov-heilongjiang",
@@ -1211,12 +1235,21 @@
             }
           ],
           "olympiad": [
-            "2017-18-reg-8"
+            "2017-18-reg-8",
+            "2025-26-shk-mosobl-3"
           ],
           "core": true,
           "skipSides": [
             "kind"
-          ]
+          ],
+          "neimengguneighborname": {
+            "zh": "河南",
+            "ru": [
+              "провинция Хэнань",
+              "Хэнань"
+            ],
+            "gloss": "Хэнань — название провинции означает «к югу от Хуанхэ»."
+          }
         },
         {
           "id": "prov-hubei",
@@ -1945,7 +1978,14 @@
           "olympiad": [
             "2021-22-mun-qd67aaa"
           ],
-          "core": true
+          "core": true,
+          "tarimregionname": {
+            "zh": "西藏自治区",
+            "ru": [
+              "Тибет"
+            ],
+            "gloss": "Тибет — административный центр автономного района — Лхаса."
+          }
         },
         {
           "id": "prov-shaanxi",
@@ -2030,6 +2070,14 @@
               "checkedAt": "2026-11-07",
               "verificationMethod": "Verified exact primary institutional/government indexed excerpt during final draft review.",
               "primarySource": true
+            },
+            {
+              "title": "内蒙古概况 — 驻新西兰大使馆",
+              "url": "https://nz.china-embassy.gov.cn/chn/ztbd/xbdkf/xbgk/200309/t20030922_927208.htm",
+              "quote": "东与黑龙江、吉林、辽宁接壤，西与甘肃、宁夏毗邻，南与河北、山西、陕西相连",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "checked-exact-primary-indexed-excerpt"
             }
           ],
           "olympiad": [],
@@ -2046,6 +2094,14 @@
               "Шэньси"
             ],
             "gloss": "Шэньси — северный сосед Сычуани; административный центр — Сиань."
+          },
+          "neimengguneighborname": {
+            "zh": "陕西",
+            "ru": [
+              "провинция Шэньси",
+              "Шэньси"
+            ],
+            "gloss": "Шэньси — южный сосед Внутренней Монголии; центр — Сиань."
           }
         },
         {
@@ -2113,6 +2169,14 @@
               "checkedAt": "2026-11-07",
               "authority": "official",
               "verificationMethod": "Verified exact official indexed passage via web search on 2026-11-07."
+            },
+            {
+              "title": "内蒙古概况 — 驻新西兰大使馆",
+              "url": "https://nz.china-embassy.gov.cn/chn/ztbd/xbdkf/xbgk/200309/t20030922_927208.htm",
+              "quote": "东与黑龙江、吉林、辽宁接壤，西与甘肃、宁夏毗邻，南与河北、山西、陕西相连",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "checked-exact-primary-indexed-excerpt"
             }
           ],
           "olympiad": [],
@@ -2128,6 +2192,14 @@
               "Ганьсу"
             ],
             "gloss": "Ганьсу — один из северных соседей Сычуани; центр — Ланьчжоу."
+          },
+          "neimengguneighborname": {
+            "zh": "甘肃",
+            "ru": [
+              "провинция Ганьсу",
+              "Ганьсу"
+            ],
+            "gloss": "Ганьсу — западный сосед Внутренней Монголии; центр — Ланьчжоу."
           }
         },
         {
@@ -2186,7 +2258,15 @@
           "core": true,
           "skipSides": [
             "kind"
-          ]
+          ],
+          "tarimregionname": {
+            "zh": "青海",
+            "ru": [
+              "провинция Цинхай",
+              "Цинхай"
+            ],
+            "gloss": "Цинхай — название провинции происходит от одноимённого солёного озера."
+          }
         },
         {
           "id": "prov-ningxia",
@@ -2340,9 +2420,17 @@
             }
           ],
           "olympiad": [
-            "2021-22-reg-q3e8cc7"
+            "2021-22-reg-q3e8cc7",
+            "2022-23-mun-amur-4"
           ],
-          "core": true
+          "core": true,
+          "tarimregionname": {
+            "zh": "新疆维吾尔自治区",
+            "ru": [
+              "Синьцзян"
+            ],
+            "gloss": "Синьцзян — административный центр автономного района — Урумчи."
+          }
         },
         {
           "id": "prov-xianggang",
@@ -2523,7 +2611,8 @@
         "known": "zh",
         "about": "ru",
         "industry": "zh",
-        "historicname": "zh"
+        "historicname": "zh",
+        "brics2024name": "zh"
       },
       "sides": [
         "region",
@@ -4505,6 +4594,14 @@
               "quote": "俄罗斯的首都莫斯科 整座城市掩映在绿海之中 拥有11个自然森林和98座公园 “森林中的首都”实至名归",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Moscow 1980 — IOC Historical Archives",
+              "url": "https://library.olympics.com/Default/Portal/basicfilesdownload.ashx?itemGuid=2ECE9BE9-EA5F-4F0F-97DF-84C75B6BC60A",
+              "quote": "The Moscow Olympic Games were held from 19 July to 3 August 1980",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "checked-exact-primary-indexed-excerpt"
             }
           ],
           "olympiad": [
@@ -4524,7 +4621,15 @@
           "core": true,
           "skipSides": [
             "nickname"
-          ]
+          ],
+          "brics2024name": {
+            "zh": "莫斯科",
+            "ru": [
+              "город Москва",
+              "Москва"
+            ],
+            "gloss": "Москва — принимала летние Олимпийские игры 1980 года."
+          }
         },
         {
           "id": "city-ru-saint-petersburg",
@@ -4713,10 +4818,27 @@
               "quote": "Столица Республики Татарстан - город Казань расположен на северо-западе Татарстана. Город протянулся вдоль двух берегов реки Казанки - у места ее впадения в Волгу.",
               "authority": "official",
               "checkedAt": "2026-10-17"
+            },
+            {
+              "title": "Казанская декларация XVI саммита БРИКС — Президент России",
+              "url": "https://static.kremlin.ru/media/events/files/ru/MUCfWDg0QRs3xfMUiCAmF3LEh02OL3Hk.pdf",
+              "quote": "встретились в Казани, Российская Федерация, 22 ‑ 24 октября 2024 года на XVI саммите",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "checked-exact-primary-indexed-excerpt"
             }
           ],
-          "olympiad": [],
-          "core": true
+          "olympiad": [
+            "2024-25-mun-nsk-5"
+          ],
+          "core": true,
+          "brics2024name": {
+            "zh": "喀山",
+            "ru": [
+              "Казань"
+            ],
+            "gloss": "Казань — саммит проходил 22–24 октября 2024 года."
+          }
         },
         {
           "id": "city-ru-volgograd",
@@ -5031,7 +5153,14 @@
               "checkedAt": "2026-10-17"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "brics2024name": {
+            "zh": "梁赞",
+            "ru": [
+              "Рязань"
+            ],
+            "gloss": "Рязань — город-побратим китайского Сюйчжоу."
+          }
         },
         {
           "id": "city-ru-sochi",
@@ -6080,12 +6209,69 @@
             ],
             "gloss": "Циндао — город на юге Шаньдунского полуострова, на побережье Жёлтого моря."
           }
+        },
+        {
+          "id": "city-ru-perm",
+          "sources": [
+            {
+              "title": "Городские округа — Администрация губернатора Пермского края",
+              "url": "https://admin.permkrai.ru/activities/munitsipalnye-obrazovaniya/gorodskie-okruga/",
+              "quote": "город краевого значения, административный центр Пермского края",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "checked-exact-primary-indexed-excerpt"
+            },
+            {
+              "title": "彼尔姆边疆区简介 — 中华人民共和国驻喀山总领事馆",
+              "url": "https://kazan.china-consulate.gov.cn/lqgk/202012/t20201202_3820602.htm",
+              "quote": "首府彼尔姆市人口102万（2024）",
+              "authority": "official",
+              "primarySource": true,
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "opened full official page through connected search service; exact quote at line 19",
+              "supports": [
+                "Chinese identity 彼尔姆",
+                "administrative centre of Perm Krai"
+              ]
+            },
+            {
+              "title": "НАШ ГОРОД — Пермский военный институт войск национальной гвардии Российской Федерации",
+              "url": "https://pvi.rosguard.gov.ru/page/index/nash-gorod",
+              "quote": "Пермь— город на востоке европейской части России, в предгорьях Урала, административный центр Пермского края",
+              "authority": "official",
+              "primarySource": true,
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "opened full official institutional page through connected search service; exact quote at line 125",
+              "supports": [
+                "Russian identity Пермь",
+                "administrative centre of Perm Krai"
+              ],
+              "scopeNote": "Only quoted identity/administrative status reused. Unrelated dated population/timezone statements on page are not adopted."
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "彼尔姆",
+            "ru": [
+              "Пермь"
+            ],
+            "gloss": "Пермь — административный центр Пермского края."
+          },
+          "brics2024name": {
+            "zh": "彼尔姆",
+            "ru": [
+              "Пермь"
+            ],
+            "gloss": "Пермь — административный центр Пермского края."
+          }
         }
       ]
     },
     "regiongroups": {
       "columns": {
-        "name": "zh"
+        "name": "zh",
+        "bohaicoastset": "zh",
+        "about": "ru"
       },
       "rows": [
         {
@@ -6457,6 +6643,208 @@
               "Шаньдун, Цзянсу, Чжэцзян"
             ],
             "gloss": "Шаньдун, Цзянсу, Чжэцзян — входят в восточный экономический регион Китая."
+          }
+        },
+        {
+          "id": "rg-bohai-coast",
+          "sources": [
+            {
+              "title": "5G通了 渤海也能“冲浪” — 天津市人民政府",
+              "url": "https://www.tj.gov.cn/sy/tjxw/202610/t20261016_7632483.html",
+              "quote": "渤海面积约7.7万平方公里，连接辽宁、河北、天津、山东三省一市",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "checked-exact-primary-indexed-excerpt"
+            },
+            {
+              "title": "辽冀津鲁四地检察机关建立环渤海生态保护公益诉讼协作机制 — 最高人民检察院",
+              "url": "https://www.spp.gov.cn/spp/jcgyssqmtkwzn/201903/t20190318_563133.shtml",
+              "quote": "辽宁、河北、天津、山东四省市环渤海而居。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "checked-exact-primary-indexed-excerpt"
+            }
+          ],
+          "olympiad": [
+            "2022-23-shk-mosobl-18"
+          ],
+          "name": {
+            "zh": "河北、辽宁、山东和天津",
+            "ru": [
+              "Хэбэй, Ляонин, Шаньдун, Тяньцзинь"
+            ],
+            "gloss": "Хэбэй, Ляонин, Шаньдун, Тяньцзинь — три провинции и город центрального подчинения."
+          },
+          "about": "Исходный список вариантов регионального бланка; неверный набор не объявляется отдельным географическим объединением.",
+          "bohaicoastset": {
+            "zh": "河北、辽宁、山东和天津",
+            "ru": [
+              "Хэбэй, Ляонин, Шаньдун, Тяньцзинь"
+            ],
+            "gloss": "Хэбэй, Ляонин, Шаньдун, Тяньцзинь — три провинции и город центрального подчинения."
+          }
+        },
+        {
+          "id": "rg-shanghai-zhejiang-taiwan",
+          "sources": [
+            {
+              "title": "地理位置 — 上海市统计局",
+              "url": "https://tjj.sh.gov.cn/zrdl/20180819/0014-216815.html",
+              "quote": "东濒东海，南临杭州湾",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "checked-exact-primary-indexed-excerpt"
+            },
+            {
+              "title": "浙江概况（浙江省人民政府网）— 商务部外资司",
+              "url": "https://fdi.mofcom.gov.cn/resource/pdf/2020/10/21/d5d3074c89e640b582276183fba6fe96.pdf",
+              "quote": "境内最大的河流钱塘江，因江流曲折，称之江，又称浙江，省以江名，简称\"浙\"。省会杭州。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reused-accepted-dossier-quote; not newly fetched during this mapping subtask",
+              "cellProvenance": "provinces/provinces/prov-zhejiang"
+            },
+            {
+              "title": "台湾基本情况 — 中国政府网（国务院台湾事务办公室）",
+              "url": "https://www.gov.cn/guoqing/2020-07/28/content_5530577.htm",
+              "quote": "台湾岛是中国第一大岛，位于东南沿海大陆架上，西隔台湾海峡与福建相望。台湾岛上三分之二面积为高山和丘陵，东部多山脉，中部多丘陵，西部多平原。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reused-accepted-dossier-quote; not newly fetched during this mapping subtask",
+              "cellProvenance": "provinces/provinces/prov-taiwan"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "上海、浙江和台湾",
+            "ru": [
+              "Шанхай, Чжэцзян, Тайвань"
+            ],
+            "gloss": "Шанхай, Чжэцзян, Тайвань — Шанхай выходит к Восточно-Китайскому морю."
+          },
+          "about": "Исходный список вариантов регионального бланка; неверный набор не объявляется отдельным географическим объединением.",
+          "bohaicoastset": {
+            "zh": "上海、浙江和台湾",
+            "ru": [
+              "Шанхай, Чжэцзян, Тайвань"
+            ],
+            "gloss": "Шанхай, Чжэцзян, Тайвань — Шанхай выходит к Восточно-Китайскому морю."
+          }
+        },
+        {
+          "id": "rg-liaoning-shandong-jilin",
+          "sources": [
+            {
+              "title": "Материал о внешнеторговых каналах 吉林 — 吉林省人民政府 (заголовок не извлечён из индекса)",
+              "url": "https://www.jl.gov.cn/szfzt/jlyhyshjjxs/dxzf/202607/t20260710_3648348.html",
+              "quote": "吉林地处内陆，不临海不靠港",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "checked-exact-primary-indexed-excerpt; descriptive source label, exact page title not recovered"
+            },
+            {
+              "title": "辽宁概况 — 辽宁省人民政府",
+              "url": "https://www.ln.gov.cn/web/sqgk/lngk/index.shtml",
+              "quote": "辽宁取“辽河流域永远安宁”之意而得名，地处环渤海和东北亚经济圈核心地带，是中国东北地区唯一既沿海又沿边的省份",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reused-accepted-dossier-quote; not newly fetched during this mapping subtask",
+              "cellProvenance": "provinces/provinces/prov-liaoning"
+            },
+            {
+              "title": "“半岛1号”赋能，“青岛模式”走向全国 — 青岛政务网",
+              "url": "https://www.qingdao.gov.cn/ywdt/tpxw/202608/t20260802_10691507.shtml",
+              "quote": "山东是海洋大省，濒临渤海和黄海。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-dossier-quote; not newly fetched during this mapping subtask",
+              "cellProvenance": "provinces/provinces/prov-shandong"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "辽宁、山东和吉林",
+            "ru": [
+              "Ляонин, Шаньдун, Цзилинь"
+            ],
+            "gloss": "Ляонин, Шаньдун, Цзилинь — морского побережья нет у Цзилиня."
+          },
+          "about": "Исходный список вариантов регионального бланка; неверный набор не объявляется отдельным географическим объединением.",
+          "bohaicoastset": {
+            "zh": "辽宁、山东和吉林",
+            "ru": [
+              "Ляонин, Шаньдун, Цзилинь"
+            ],
+            "gloss": "Ляонин, Шаньдун, Цзилинь — морского побережья нет у Цзилиня."
+          }
+        },
+        {
+          "id": "rg-guangxi-guangzhou-hainan",
+          "sources": [
+            {
+              "title": "解码文化自信的城市样本丨海风珠韵润羊城——解码“千年商都”广州的文化自信样本 — 新华网",
+              "url": "http://www.news.cn/2023-06/16/c_1129701002.htm",
+              "quote": "广州，因“五羊衔谷，萃于楚庭”的传说，又称羊城。",
+              "authority": "official",
+              "checkedAt": "2026-10-17",
+              "verificationMethod": "reused-accepted-dossier-quote",
+              "cellProvenance": "provinces/cities/city-guangzhou"
+            },
+            {
+              "title": "广西概况（广西壮族自治区人民政府）— 商务部外资司",
+              "url": "https://fdi.mofcom.gov.cn/resource/pdf/2019/12/28/b57e5e001fc343f78c0ebe1e5af0e236.pdf",
+              "quote": "广西壮族自治区地处祖国南疆,位于东经 104°28′～112°04′,北纬 20° 54′～26°24′之间,北回归线横贯中部。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reused-accepted-dossier-quote",
+              "cellProvenance": "provinces/provinces/prov-guangxi"
+            },
+            {
+              "title": "海南省概况（海南省人民政府网）— 商务部外资司",
+              "url": "https://fdi.mofcom.gov.cn/resource/pdf/2020/10/21/500426a68f8a4346a2bf69f16298aa9f.pdf",
+              "quote": "海南省位于中国最南端。北以琼州海峡与广东省划界，西隔北部湾与越南相对",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reused-accepted-dossier-quote",
+              "cellProvenance": "provinces/provinces/prov-hainan"
+            },
+            {
+              "title": "根据《广州市国土空间规划（2021-2035年）》，广州市的城市性质是什么？— 广州市规划和自然资源局",
+              "url": "https://ghzyj.gz.gov.cn/hdjl/ywzsk/gtkjgh/content/post_9902845.html",
+              "quote": "广州市是广东省省会，我国重要的中心城市",
+              "authority": "official",
+              "primarySource": true,
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "opened full official municipal page through connected search service; exact contiguous quote at line 49",
+              "supports": [
+                "Guangzhou is a city and Guangdong provincial capital"
+              ]
+            },
+            {
+              "title": "广州概况 — 中国网·一带一路网",
+              "url": "http://ydyl.china.com.cn/2016-10/31/content_39606217.htm",
+              "quote": "广州市是广东省省会，广东省政治、经济、科技、教育和文化的中心。广州市地处中国大陆南方，广东省的中南部，珠江三角洲的北缘，接近珠江流域下游入海口。",
+              "authority": "official",
+              "checkedAt": "2026-10-17",
+              "verificationMethod": "reused-accepted-dossier-quote; not newly fetched during this mapping subtask",
+              "cellProvenance": "provinces/cities/city-guangzhou"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "广西壮族自治区、广州和海南",
+            "ru": [
+              "Гуанси, Гуанчжоу, Хайнань"
+            ],
+            "gloss": "Гуанси, Гуанчжоу, Хайнань — юг Китая; Гуанчжоу является городом, а не провинцией."
+          },
+          "about": "Исходный список вариантов регионального бланка; неверный набор не объявляется отдельным географическим объединением.",
+          "bohaicoastset": {
+            "zh": "广西壮族自治区、广州和海南",
+            "ru": [
+              "Гуанси, Гуанчжоу, Хайнань"
+            ],
+            "gloss": "Гуанси, Гуанчжоу, Хайнань — юг Китая; Гуанчжоу является городом, а не провинцией."
           }
         }
       ]

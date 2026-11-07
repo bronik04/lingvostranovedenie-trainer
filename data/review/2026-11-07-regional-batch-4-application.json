@@ -1,0 +1,1239 @@
+{
+  "reviewId": "regional-2026-11-07-batch-4",
+  "date": "2026-11-07",
+  "state": "validated-pending-independent-review",
+  "publicationAuthorized": true,
+  "selectedCount": 16,
+  "visibleCountBefore": 1014,
+  "expectedVisibleCountAfter": 1030,
+  "fullBankCount": 1269,
+  "approvedManifestHash": "1ab8b13fb11fb1ae9d3cb2a4303297a93ca9c0db4953b70836f27cfc2a819ba9",
+  "currentManifestHash": "1186387fb2b5051befb9c052a919af9fc46e6a286343618ac5697c34837b2d6b",
+  "excludedFromCurrentBatch": [
+    "2023-24-mun-krsk-5",
+    "2019-20-mun-kgd-10",
+    "2025-26-mun-sverd-58",
+    "2023-24-mun-udm-1"
+  ],
+  "items": [
+    {
+      "reviewNumber": 1,
+      "questionId": "2022-23-shk-mosobl-18",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q130",
+      "fact": {
+        "table": "regiongroups",
+        "row": "rg-bohai-coast",
+        "ask": "bohaicoastset"
+      },
+      "optionRows": {
+        "o1": "rg-bohai-coast",
+        "o2": "rg-shanghai-zhejiang-taiwan",
+        "o3": "rg-liaoning-shandong-jilin",
+        "o4": "rg-guangxi-guangzhou-hainan"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 3,
+      "questionId": "2020-21-mun-mosobl-52",
+      "dossier": "modern-history",
+      "dossierQuestion": "modern-history-q121",
+      "fact": {
+        "table": "milestones",
+        "row": "mile-hk-occupation1841",
+        "ask": "hongkongYear"
+      },
+      "optionRows": {
+        "o1": "mile-hk-museum1962",
+        "o2": "mile-eastindia-monopoly1834",
+        "o3": "mile-hk-surrender1941",
+        "o4": "mile-hk-occupation1841"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 5,
+      "questionId": "2022-23-mun-mosobl-10",
+      "dossier": "modern-history",
+      "dossierQuestion": "modern-history-q122",
+      "fact": {
+        "table": "milestones",
+        "row": "mile-chinese-year-russia2010",
+        "ask": "languageYear"
+      },
+      "optionRows": {
+        "o1": "mile-cnru-treaty20-2021",
+        "o2": "mile-chinese-year-russia2010",
+        "o3": "mile-peace-mission2005",
+        "o4": "mile-gorbachev-nobel1990"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 6,
+      "questionId": "2023-24-mun-perm-6",
+      "dossier": "money",
+      "dossierQuestion": "money-q41",
+      "fact": {
+        "table": "measures",
+        "row": "measure-liang",
+        "ask": "modernmeasure"
+      },
+      "optionRows": {
+        "o1": "measure-chi",
+        "o2": "measure-liang",
+        "o3": "measure-kilogram",
+        "o4": "measure-li"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 7,
+      "questionId": "2025-26-shk-mosobl-3",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q131",
+      "fact": {
+        "table": "provinces",
+        "row": "prov-henan",
+        "ask": "neimengguneighborname"
+      },
+      "optionRows": {
+        "o1": "prov-henan",
+        "o2": "prov-jilin",
+        "o3": "prov-gansu",
+        "o4": "prov-shaanxi"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 8,
+      "questionId": "2022-23-mun-amur-4",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q132",
+      "fact": {
+        "table": "provinces",
+        "row": "prov-xinjiang",
+        "ask": "tarimregionname"
+      },
+      "optionRows": {
+        "o1": "prov-xinjiang",
+        "o2": "prov-qinghai",
+        "o3": "prov-xizang",
+        "o4": "prov-neimenggu"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 9,
+      "questionId": "2024-25-mun-kursk-8",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q111",
+      "fact": {
+        "table": "colloquialisms",
+        "row": "colloq-hanyazi",
+        "ask": "swimlabel"
+      },
+      "optionRows": {
+        "o1": "colloq-hanyazi",
+        "o2": "colloq-luotangji",
+        "o3": "colloq-tiegongji",
+        "o4": "colloq-laoshushi"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 10,
+      "questionId": "2024-25-mun-nsk-5",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q133",
+      "fact": {
+        "table": "cities",
+        "row": "city-ru-kazan",
+        "ask": "brics2024name"
+      },
+      "optionRows": {
+        "o1": "city-ru-kazan",
+        "o2": "city-ru-moscow",
+        "o3": "city-ru-ryazan",
+        "o4": "city-ru-perm"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 11,
+      "questionId": "2025-26-shk-mosobl-15",
+      "dossier": "crafts",
+      "dossierQuestion": "crafts-q140",
+      "fact": {
+        "table": "materials",
+        "row": "material-bamboo",
+        "ask": "shengmaterial"
+      },
+      "optionRows": {
+        "o1": "material-stone",
+        "o2": "material-animalhide",
+        "o3": "material-iron",
+        "o4": "material-bamboo"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 12,
+      "questionId": "2022-23-shk-mosobl-6",
+      "dossier": "modern-china",
+      "dossierQuestion": "modern-china-q24",
+      "fact": {
+        "table": "world",
+        "row": "org-apec",
+        "ask": "cooperationCount"
+      },
+      "optionRows": {
+        "o1": "org-apec",
+        "o2": "org-asean",
+        "o3": "org-oecd",
+        "o4": "org-rcep"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 14,
+      "questionId": "2025-26-mun-chel-3",
+      "dossier": "crafts",
+      "dossierQuestion": "crafts-q141",
+      "fact": {
+        "table": "materials",
+        "row": "material-turtleshell",
+        "ask": "oraclematerial"
+      },
+      "optionRows": {
+        "o1": "material-turtleshell",
+        "o2": "material-bambooslips",
+        "o3": "material-stone",
+        "o4": "material-paper"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 15,
+      "questionId": "2025-26-mun-tat-58",
+      "dossier": "modern-history",
+      "dossierQuestion": "modern-history-q123",
+      "fact": {
+        "table": "events",
+        "row": "ev-ru-table-ranks1722",
+        "ask": "serviceLaw"
+      },
+      "optionRows": {
+        "o1": "ev-ru-army-statute1716",
+        "o2": "ev-ru-table-ranks1722",
+        "o3": "ev-ru-guild-instruction1722",
+        "o4": "ev-ru-free-farmers1803"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 16,
+      "questionId": "2022-23-mun-orel-3",
+      "dossier": "modern-history",
+      "dossierQuestion": "modern-history-q124",
+      "fact": {
+        "table": "figures",
+        "row": "per-zhouenlai",
+        "ask": "maoPremier"
+      },
+      "optionRows": {
+        "o1": "per-zhurongji",
+        "o2": "per-likeqiang",
+        "o3": "per-jiangzemin",
+        "o4": "per-zhouenlai"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 17,
+      "questionId": "2025-26-mun-tat-57",
+      "dossier": "myths",
+      "dossierQuestion": "myths-q31",
+      "fact": {
+        "table": "elements",
+        "row": "element-sunmoon",
+        "ask": "panguoutcome"
+      },
+      "optionRows": {
+        "o1": "element-stars",
+        "o2": "element-ocean",
+        "o3": "element-sunmoon",
+        "o4": "element-rain"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 18,
+      "questionId": "2024-25-mun-kursk-7",
+      "dossier": "people",
+      "dossierQuestion": "people-q34",
+      "fact": {
+        "table": "concepts",
+        "row": "concept-huaqiao",
+        "ask": "diasporaTerm"
+      },
+      "optionRows": {
+        "o1": "concept-huaqiao",
+        "o2": "concept-haohan",
+        "o3": "concept-hanren",
+        "o4": "concept-hanzuren"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 19,
+      "questionId": "2022-23-mun-orel-1",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q112",
+      "fact": {
+        "table": "works",
+        "row": "lit-w-laozi",
+        "ask": "canonicalbook"
+      },
+      "optionRows": {
+        "o1": "lit-w-mengzi",
+        "o2": "lit-w-daxue",
+        "o3": "lit-w-laozi",
+        "o4": "lit-w-lunyu"
+      },
+      "exclude": []
+    }
+  ],
+  "changedCells": [
+    {
+      "dossier": "provinces",
+      "table": "regiongroups",
+      "row": "rg-bohai-coast",
+      "column": "bohaicoastset",
+      "zh": "河北、辽宁、山东和天津",
+      "gloss": "Хэбэй, Ляонин, Шаньдун, Тяньцзинь — три провинции и город центрального подчинения."
+    },
+    {
+      "dossier": "provinces",
+      "table": "regiongroups",
+      "row": "rg-shanghai-zhejiang-taiwan",
+      "column": "bohaicoastset",
+      "zh": "上海、浙江和台湾",
+      "gloss": "Шанхай, Чжэцзян, Тайвань — Шанхай выходит к Восточно-Китайскому морю."
+    },
+    {
+      "dossier": "provinces",
+      "table": "regiongroups",
+      "row": "rg-liaoning-shandong-jilin",
+      "column": "bohaicoastset",
+      "zh": "辽宁、山东和吉林",
+      "gloss": "Ляонин, Шаньдун, Цзилинь — морского побережья нет у Цзилиня."
+    },
+    {
+      "dossier": "provinces",
+      "table": "regiongroups",
+      "row": "rg-guangxi-guangzhou-hainan",
+      "column": "bohaicoastset",
+      "zh": "广西壮族自治区、广州和海南",
+      "gloss": "Гуанси, Гуанчжоу, Хайнань — юг Китая; Гуанчжоу является городом, а не провинцией."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-hk-museum1962",
+      "column": "hongkongYear",
+      "zh": "1962",
+      "gloss": "1962 год — в Гонконге открылся Музей искусств."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-eastindia-monopoly1834",
+      "column": "hongkongYear",
+      "zh": "1834",
+      "gloss": "1834 год — Ост-Индская компания утратила монополию на торговлю с Китаем."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-hk-surrender1941",
+      "column": "hongkongYear",
+      "zh": "1941",
+      "gloss": "1941 год — 25 декабря Гонконг капитулировал перед японской армией."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-hk-occupation1841",
+      "column": "hongkongYear",
+      "zh": "1841",
+      "gloss": "1841 год — британцы высадились на мысе Поссешн 26 января."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-cnru-treaty20-2021",
+      "column": "languageYear",
+      "zh": "2021",
+      "gloss": "2021 — 20-летие подписания Договора о добрососедстве, дружбе и сотрудничестве РФ и КНР."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-chinese-year-russia2010",
+      "column": "languageYear",
+      "zh": "2010",
+      "gloss": "2010 год — парой этому проекту стал Год русского языка в Китае в 2009 году."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-peace-mission2005",
+      "column": "languageYear",
+      "zh": "2005",
+      "gloss": "2005 год — первые российско-китайские военные учения «Мирная миссия»."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-gorbachev-nobel1990",
+      "column": "languageYear",
+      "zh": "1990",
+      "gloss": "1990 год — Михаил Горбачёв получил Нобелевскую премию мира."
+    },
+    {
+      "dossier": "money",
+      "table": "measures",
+      "row": "measure-chi",
+      "column": "modernmeasure",
+      "zh": "尺",
+      "gloss": "Чи — мера длины; современный рыночный чи равен трети метра."
+    },
+    {
+      "dossier": "money",
+      "table": "measures",
+      "row": "measure-liang",
+      "column": "modernmeasure",
+      "zh": "两",
+      "gloss": "Лян — до реформы 1959 года в цзине было 16 лянов."
+    },
+    {
+      "dossier": "money",
+      "table": "measures",
+      "row": "measure-kilogram",
+      "column": "modernmeasure",
+      "zh": "公斤",
+      "gloss": "Килограмм — два современных рыночных цзиня."
+    },
+    {
+      "dossier": "money",
+      "table": "measures",
+      "row": "measure-li",
+      "column": "modernmeasure",
+      "zh": "里",
+      "gloss": "Ли — мера расстояния; современный ли равен 500 метрам."
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-henan",
+      "column": "neimengguneighborname",
+      "zh": "河南",
+      "gloss": "Хэнань — название провинции означает «к югу от Хуанхэ»."
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-jilin",
+      "column": "neimengguneighborname",
+      "zh": "吉林",
+      "gloss": "Цзилинь — восточный сосед Внутренней Монголии; центр — Чанчунь."
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-gansu",
+      "column": "neimengguneighborname",
+      "zh": "甘肃",
+      "gloss": "Ганьсу — западный сосед Внутренней Монголии; центр — Ланьчжоу."
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-shaanxi",
+      "column": "neimengguneighborname",
+      "zh": "陕西",
+      "gloss": "Шэньси — южный сосед Внутренней Монголии; центр — Сиань."
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-xinjiang",
+      "column": "tarimregionname",
+      "zh": "新疆维吾尔自治区",
+      "gloss": "Синьцзян — административный центр автономного района — Урумчи."
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-qinghai",
+      "column": "tarimregionname",
+      "zh": "青海",
+      "gloss": "Цинхай — название провинции происходит от одноимённого солёного озера."
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-xizang",
+      "column": "tarimregionname",
+      "zh": "西藏自治区",
+      "gloss": "Тибет — административный центр автономного района — Лхаса."
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-neimenggu",
+      "column": "tarimregionname",
+      "zh": "内蒙古自治区",
+      "gloss": "Внутренняя Монголия — Хух-Хото в переводе с монгольского означает «Синий город»."
+    },
+    {
+      "dossier": "literature",
+      "table": "colloquialisms",
+      "row": "colloq-hanyazi",
+      "column": "swimlabel",
+      "zh": "旱鸭子",
+      "gloss": "«Сухопутная утка» — 旱 означает отсутствие связи с водой."
+    },
+    {
+      "dossier": "literature",
+      "table": "colloquialisms",
+      "row": "colloq-luotangji",
+      "column": "swimlabel",
+      "zh": "落汤鸡",
+      "gloss": "«Промокшая курица» — так называют человека, вымокшего насквозь."
+    },
+    {
+      "dossier": "literature",
+      "table": "colloquialisms",
+      "row": "colloq-tiegongji",
+      "column": "swimlabel",
+      "zh": "铁公鸡",
+      "gloss": "«Железный петух» — насмешливое название скупца: «ни пёрышка не выщипнуть»."
+    },
+    {
+      "dossier": "literature",
+      "table": "colloquialisms",
+      "row": "colloq-laoshushi",
+      "column": "swimlabel",
+      "zh": "老鼠屎",
+      "gloss": "«Мышиный помёт» — образ человека, портящего общее дело, из пословицы о каше."
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-kazan",
+      "column": "brics2024name",
+      "zh": "喀山",
+      "gloss": "Казань — саммит проходил 22–24 октября 2024 года."
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-moscow",
+      "column": "brics2024name",
+      "zh": "莫斯科",
+      "gloss": "Москва — принимала летние Олимпийские игры 1980 года."
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-ryazan",
+      "column": "brics2024name",
+      "zh": "梁赞",
+      "gloss": "Рязань — город-побратим китайского Сюйчжоу."
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-perm",
+      "column": "brics2024name",
+      "zh": "彼尔姆",
+      "gloss": "Пермь — административный центр Пермского края."
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-stone",
+      "column": "shengmaterial",
+      "zh": "石头",
+      "gloss": "Камень — из него делают цин, один из древних китайских музыкальных инструментов."
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-animalhide",
+      "column": "shengmaterial",
+      "zh": "动物皮",
+      "gloss": "Кожа животных — традиционный материал мембраны барабана гу."
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-iron",
+      "column": "shengmaterial",
+      "zh": "铁",
+      "gloss": "Железо — у музейного шэна металлические язычки медные, а трубки бамбуковые."
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-bamboo",
+      "column": "shengmaterial",
+      "zh": "竹",
+      "gloss": "Бамбук — у цинского шэна в Гугуне 17 трубок, расположенных подобно крыльям феникса."
+    },
+    {
+      "dossier": "modern-china",
+      "table": "world",
+      "row": "org-apec",
+      "column": "cooperationCount",
+      "zh": "21",
+      "gloss": "21 экономика — АТЭС занимается прежде всего торговлей и экономическим сотрудничеством."
+    },
+    {
+      "dossier": "modern-china",
+      "table": "world",
+      "row": "org-asean",
+      "column": "cooperationCount",
+      "zh": "5",
+      "gloss": "5 — столько государств основали АСЕАН в 1967 году."
+    },
+    {
+      "dossier": "modern-china",
+      "table": "world",
+      "row": "org-oecd",
+      "column": "cooperationCount",
+      "zh": "35",
+      "gloss": "35 — столько стран было в ОЭСР после присоединения Латвии в 2016 году."
+    },
+    {
+      "dossier": "modern-china",
+      "table": "world",
+      "row": "org-rcep",
+      "column": "cooperationCount",
+      "zh": "15",
+      "gloss": "15 — число стран, подписавших соглашение RCEP в 2020 году, включая Китай."
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-turtleshell",
+      "column": "oraclematerial",
+      "zh": "龟甲",
+      "gloss": "Черепаховый панцирь — при гадании будущее узнавали по трещинам после нагревания."
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-bambooslips",
+      "column": "oraclematerial",
+      "zh": "竹简",
+      "gloss": "Бамбуковые планки — их связывали шнурами, составляя книгу."
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-stone",
+      "column": "oraclematerial",
+      "zh": "石头",
+      "gloss": "Камень — на нём сохранились, например, памятные надписи императора Цинь Шихуана."
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-paper",
+      "column": "oraclematerial",
+      "zh": "纸张",
+      "gloss": "Бумага — Цай Лунь улучшил её изготовление из растительных волокон в эпоху Восточной Хань."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-army-statute1716",
+      "column": "serviceLaw",
+      "zh": "军事条例",
+      "gloss": "Военные положения — например, Воинский устав Петра I, утверждённый в 1716 году."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-table-ranks1722",
+      "column": "serviceLaw",
+      "zh": "官秩表",
+      "gloss": "Табель о рангах — военные, гражданские и придворные чины делились на 14 классов."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-guild-instruction1722",
+      "column": "serviceLaw",
+      "zh": "行会条例",
+      "gloss": "Цеховые правила — например, «Инструкция цехам» Петра I, утверждённая в 1722 году."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-free-farmers1803",
+      "column": "serviceLaw",
+      "zh": "农民法令",
+      "gloss": "Крестьянский указ — например, указ о вольных хлебопашцах 1803 года."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "figures",
+      "row": "per-zhurongji",
+      "column": "maoPremier",
+      "zh": "朱镕基",
+      "gloss": "Чжу Жунцзи — премьер Госсовета в 1998–2003 годах; ранее мэр Шанхая."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "figures",
+      "row": "per-likeqiang",
+      "column": "maoPremier",
+      "zh": "李克强",
+      "gloss": "Ли Кэцян — утверждён премьером Госсовета в марте 2013 года."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "figures",
+      "row": "per-jiangzemin",
+      "column": "maoPremier",
+      "zh": "江泽民",
+      "gloss": "Цзян Цзэминь — занимал пост председателя КНР десять лет."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "figures",
+      "row": "per-zhouenlai",
+      "column": "maoPremier",
+      "zh": "周恩来",
+      "gloss": "Чжоу Эньлай — девять лет был также министром иностранных дел КНР."
+    },
+    {
+      "dossier": "myths",
+      "table": "elements",
+      "row": "element-stars",
+      "column": "panguoutcome",
+      "zh": "星星",
+      "gloss": "Звёзды — в этом пересказе в них превратились волосы и борода Паньгу."
+    },
+    {
+      "dossier": "myths",
+      "table": "elements",
+      "row": "element-ocean",
+      "column": "panguoutcome",
+      "zh": "海洋",
+      "gloss": "Океан — кровь Паньгу, согласно пересказу, превратилась в реки."
+    },
+    {
+      "dossier": "myths",
+      "table": "elements",
+      "row": "element-sunmoon",
+      "column": "panguoutcome",
+      "zh": "日月",
+      "gloss": "Солнце и Луна — левый глаз стал Солнцем, а правый — Луной."
+    },
+    {
+      "dossier": "myths",
+      "table": "elements",
+      "row": "element-rain",
+      "column": "panguoutcome",
+      "zh": "雨",
+      "gloss": "Дождь — в мифе его источником стал пот Паньгу."
+    },
+    {
+      "dossier": "people",
+      "table": "concepts",
+      "row": "concept-huaqiao",
+      "column": "diasporaTerm",
+      "zh": "华侨",
+      "gloss": "Хуацяо — граждане КНР; принявшие иностранное гражданство — вайцзи хуажэнь."
+    },
+    {
+      "dossier": "people",
+      "table": "concepts",
+      "row": "concept-haohan",
+      "column": "diasporaTerm",
+      "zh": "好汉",
+      "gloss": "Хаохань — «добрый молодец»; в «Речных заводях» 108 таких героев."
+    },
+    {
+      "dossier": "people",
+      "table": "concepts",
+      "row": "concept-hanren",
+      "column": "diasporaTerm",
+      "zh": "汉人",
+      "gloss": "Ханьцы — вырезание из бумаги распространено и у них, и у других народов Китая."
+    },
+    {
+      "dossier": "people",
+      "table": "concepts",
+      "row": "concept-hanzuren",
+      "column": "diasporaTerm",
+      "zh": "汉族人",
+      "gloss": "Ханьцы — китайским языком пользуются также представители хуэй и маньчжуров."
+    },
+    {
+      "dossier": "literature",
+      "table": "works",
+      "row": "lit-w-mengzi",
+      "column": "canonicalbook",
+      "zh": "《孟子》",
+      "gloss": "«Мэн-цзы» — в книге семь частей; Мэн-цзы почитают как «второго мудреца»."
+    },
+    {
+      "dossier": "literature",
+      "table": "works",
+      "row": "lit-w-daxue",
+      "column": "canonicalbook",
+      "zh": "《大学》",
+      "gloss": "«Великое учение» — первоначально глава «Ли цзи», позднее отдельная книга."
+    },
+    {
+      "dossier": "literature",
+      "table": "works",
+      "row": "lit-w-laozi",
+      "column": "canonicalbook",
+      "zh": "《老子》",
+      "gloss": "«Лао-цзы» — даосский трактат о Дао и дэ, состоящий из 81 главы."
+    },
+    {
+      "dossier": "literature",
+      "table": "works",
+      "row": "lit-w-lunyu",
+      "column": "canonicalbook",
+      "zh": "《论语》",
+      "gloss": "«Лунь юй» — слова и дела Конфуция, собранные его учениками и их учениками."
+    }
+  ],
+  "newRows": [
+    {
+      "dossier": "provinces",
+      "table": "regiongroups",
+      "row": "rg-bohai-coast"
+    },
+    {
+      "dossier": "provinces",
+      "table": "regiongroups",
+      "row": "rg-shanghai-zhejiang-taiwan"
+    },
+    {
+      "dossier": "provinces",
+      "table": "regiongroups",
+      "row": "rg-liaoning-shandong-jilin"
+    },
+    {
+      "dossier": "provinces",
+      "table": "regiongroups",
+      "row": "rg-guangxi-guangzhou-hainan"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-hk-museum1962"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-eastindia-monopoly1834"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-hk-surrender1941"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-hk-occupation1841"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-cnru-treaty20-2021"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-chinese-year-russia2010"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-peace-mission2005"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-gorbachev-nobel1990"
+    },
+    {
+      "dossier": "money",
+      "table": "measures",
+      "row": "measure-chi"
+    },
+    {
+      "dossier": "money",
+      "table": "measures",
+      "row": "measure-liang"
+    },
+    {
+      "dossier": "money",
+      "table": "measures",
+      "row": "measure-kilogram"
+    },
+    {
+      "dossier": "money",
+      "table": "measures",
+      "row": "measure-li"
+    },
+    {
+      "dossier": "literature",
+      "table": "colloquialisms",
+      "row": "colloq-hanyazi"
+    },
+    {
+      "dossier": "literature",
+      "table": "colloquialisms",
+      "row": "colloq-luotangji"
+    },
+    {
+      "dossier": "literature",
+      "table": "colloquialisms",
+      "row": "colloq-tiegongji"
+    },
+    {
+      "dossier": "literature",
+      "table": "colloquialisms",
+      "row": "colloq-laoshushi"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-perm"
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-stone"
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-animalhide"
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-iron"
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-bamboo"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "world",
+      "row": "org-oecd"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "world",
+      "row": "org-rcep"
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-turtleshell"
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-bambooslips"
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-paper"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-army-statute1716"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-table-ranks1722"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-guild-instruction1722"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-free-farmers1803"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "figures",
+      "row": "per-zhurongji"
+    },
+    {
+      "dossier": "myths",
+      "table": "elements",
+      "row": "element-stars"
+    },
+    {
+      "dossier": "myths",
+      "table": "elements",
+      "row": "element-ocean"
+    },
+    {
+      "dossier": "myths",
+      "table": "elements",
+      "row": "element-sunmoon"
+    },
+    {
+      "dossier": "myths",
+      "table": "elements",
+      "row": "element-rain"
+    },
+    {
+      "dossier": "people",
+      "table": "concepts",
+      "row": "concept-huaqiao"
+    },
+    {
+      "dossier": "people",
+      "table": "concepts",
+      "row": "concept-haohan"
+    },
+    {
+      "dossier": "people",
+      "table": "concepts",
+      "row": "concept-hanren"
+    },
+    {
+      "dossier": "people",
+      "table": "concepts",
+      "row": "concept-hanzuren"
+    },
+    {
+      "dossier": "literature",
+      "table": "works",
+      "row": "lit-w-mengzi"
+    },
+    {
+      "dossier": "literature",
+      "table": "works",
+      "row": "lit-w-daxue"
+    },
+    {
+      "dossier": "literature",
+      "table": "works",
+      "row": "lit-w-laozi"
+    },
+    {
+      "dossier": "literature",
+      "table": "works",
+      "row": "lit-w-lunyu"
+    }
+  ],
+  "preservedPreviousPools": [
+    {
+      "dossier": "modern-china",
+      "question": "modern-china-q04",
+      "excludedNewRows": [
+        "org-oecd",
+        "org-rcep"
+      ],
+      "reason": "Сохранить ранее принятый пул; новые строки показаны только в принятых16наборах партии4."
+    },
+    {
+      "dossier": "modern-china",
+      "question": "modern-china-q10",
+      "excludedNewRows": [
+        "org-oecd",
+        "org-rcep"
+      ],
+      "reason": "Сохранить ранее принятый пул; новые строки показаны только в принятых16наборах партии4."
+    },
+    {
+      "dossier": "modern-china",
+      "question": "modern-china-q11",
+      "excludedNewRows": [
+        "org-oecd",
+        "org-rcep"
+      ],
+      "reason": "Сохранить ранее принятый пул; новые строки показаны только в принятых16наборах партии4."
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q126",
+      "excludedNewRows": [
+        "rg-bohai-coast",
+        "rg-shanghai-zhejiang-taiwan",
+        "rg-liaoning-shandong-jilin",
+        "rg-guangxi-guangzhou-hainan"
+      ],
+      "reason": "Сохранить ранее принятый пул; новые строки показаны только в принятых16наборах партии4."
+    },
+    {
+      "dossier": "people",
+      "question": "people-q33",
+      "excludedNewRows": [
+        "concept-huaqiao",
+        "concept-haohan",
+        "concept-hanren",
+        "concept-hanzuren"
+      ],
+      "reason": "Сохранить ранее принятый пул; новые строки показаны только в принятых16наборах партии4."
+    }
+  ],
+  "explanationCorrections": {
+    "8": "Тарим (塔里木河) — самая длинная река внутреннего стока Китая. Она протекает в южной части Синьцзяна, по Таримской впадине.",
+    "16": "Чжоу Эньлай (周恩来) возглавлял правительство КНР с 1949 года до своей смерти в январе 1976 года. Из перечисленных только он занимал этот пост при Мао Цзэдуне.",
+    "18": "Хуацяо (华侨) — граждане Китая, постоянно проживающие за рубежом. Китайское гражданство отличает их от вайцзи хуажэнь (外籍华人) — лиц китайского происхождения с иностранным гражданством.",
+    "19": "«Лао-цзы» (《老子》), или «Даодэцзин», — даосский трактат. Он не входит в конфуцианские «Четверокнижие» и «Пятиканоние»."
+  },
+  "sourceReports": [
+    "2026-11-07-regional-batch-4-release-sources.json"
+  ],
+  "authorApproval": {
+    "date": "2026-11-07",
+    "acceptedReviewNumbers": [
+      1,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "acceptedManifestHash": "1ab8b13fb11fb1ae9d3cb2a4303297a93ca9c0db4953b70836f27cfc2a819ba9",
+    "instruction": "Остальные 16 вопросов принимаем. Встраивай в досье, проверь подписи и взаимные подсказки, затем публикуй на сайте."
+  },
+  "metadataClarifications": [
+    "Мера лян имеет уточнённый поисковый псевдоним «лян (мера массы)», чтобы не путать её с частью личного имени Чжугэ Лян. Принятая подпись не менялась.",
+    "Новая materials/material-bamboo ссылается через name.ref на существующую sets/plants/pl-zhu: это тот же бамбук в контексте материала."
+  ],
+  "validation": {
+    "reviewId": "regional-2026-11-07-batch-4",
+    "status": "passed",
+    "fullBank": 1269,
+    "visibleBefore": 1014,
+    "visibleAfter": 1030,
+    "selected": 16,
+    "options": 64,
+    "acceptedStemsKeysOptionsCaptionsExact": true,
+    "previousUserFacingFieldChanges": [],
+    "readingMaterials": 1030,
+    "errors": [],
+    "pythonTests": 494,
+    "nodeTests": 172,
+    "skipped": 0,
+    "browser": {
+      "questions": 16,
+      "cards": 128,
+      "options": 512,
+      "viewports": [
+        1280,
+        375
+      ],
+      "pinyin": [
+        false,
+        true
+      ],
+      "answers": [
+        "correct",
+        "incorrect"
+      ],
+      "pageErrors": [],
+      "results": [
+        {
+          "viewport": 1280,
+          "pinyin": false,
+          "correctAnswer": true,
+          "cards": 16
+        },
+        {
+          "viewport": 1280,
+          "pinyin": false,
+          "correctAnswer": false,
+          "cards": 16
+        },
+        {
+          "viewport": 1280,
+          "pinyin": true,
+          "correctAnswer": true,
+          "cards": 16
+        },
+        {
+          "viewport": 1280,
+          "pinyin": true,
+          "correctAnswer": false,
+          "cards": 16
+        },
+        {
+          "viewport": 375,
+          "pinyin": false,
+          "correctAnswer": true,
+          "cards": 16
+        },
+        {
+          "viewport": 375,
+          "pinyin": false,
+          "correctAnswer": false,
+          "cards": 16
+        },
+        {
+          "viewport": 375,
+          "pinyin": true,
+          "correctAnswer": true,
+          "cards": 16
+        },
+        {
+          "viewport": 375,
+          "pinyin": true,
+          "correctAnswer": false,
+          "cards": 16
+        }
+      ],
+      "screenshots": [
+        "/tmp/lingvo-batch4-mobile.png"
+      ],
+      "status": "passed"
+    },
+    "newRowsWithTwoQuotedSources": 47,
+    "previousReadingLinksUnchanged": true,
+    "htmlSha256": "c9cd63e4f735c785a3bb90cbd893bbc5f2e65a92dfebca761f6dcd3d05c1e91c"
+  },
+  "hintTriage": "2026-11-07-regional-batch-4-hint-triage.json",
+  "captionPolicy": "Все64принятые подписи сохранены дословно (до89символов); новыеконтекстныеячейкине меняют старые подписи."
+}

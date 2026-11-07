@@ -5,15 +5,15 @@
     "2025-26-mun-tat-55"
   ],
   "cosmonautics-day-12-april": [
-    "holidays-q24",
     "2023-24-zak-4",
+    "holidays-q24",
     "space-q14"
   ],
   "peter1-first-emperor": [
     "2019-20-reg-1",
-    "dynasties-q54",
+    "2020-21-pri-q4e8b0e",
     "2023-24-mun-kem-10",
-    "2020-21-pri-q4e8b0e"
+    "dynasties-q54"
   ],
   "qing-last-dynasty": [
     "2015-16-shk-61",
@@ -26,12 +26,12 @@
     "crafts-q01"
   ],
   "lu-xun-republic-text": [
-    "2023-24-reg-9",
     "2017-18-zak-1",
-    "2020-21-reg-q227d55",
     "2018-19-reg-6",
     "2019-20-mun-q61e036",
+    "2020-21-reg-q227d55",
     "2021-22-mun-q6aaabb",
+    "2023-24-reg-9",
     "modern-history-q111"
   ],
   "pushkin-medny-vsadnik-literature": [
@@ -40,31 +40,31 @@
     "literature-q93"
   ],
   "gorky-nizhny-literature": [
-    "provinces-q75",
     "literature-q71",
-    "literature-q72"
+    "literature-q72",
+    "provinces-q75"
   ],
   "mulan-ballad-literature": [
-    "myths-q23",
-    "literature-q57"
+    "literature-q57",
+    "myths-q23"
   ],
   "chuci-lisao-literature": [
     "literature-q20",
     "literature-q21"
   ],
   "tang-era-literature": [
+    "2023-24-mun-krsk-2",
+    "2023-24-shk-mosobl-12",
     "2023-24-zak-3",
+    "2025-26-mun-tat-56",
+    "cinema-q01",
     "literature-q23",
     "literature-q24",
     "literature-q25",
-    "2023-24-shk-mosobl-12",
     "literature-q49",
-    "cinema-q01",
-    "literature-q92",
     "literature-q88",
-    "2023-24-mun-krsk-2",
-    "2025-26-mun-tat-56",
     "literature-q89",
+    "literature-q92",
     "painting-q89"
   ],
   "nature-baikal-deepest-lake": [
@@ -72,8 +72,8 @@
     "2023-24-zak-5"
   ],
   "novosibirsk-on-ob": [
-    "addition-b1-19",
     "2022-23-reg-4",
+    "addition-b1-19",
     "nature-q163"
   ],
   "qingzang-roof-of-world": [
@@ -85,88 +85,181 @@
     "2023-24-mun-30"
   ],
   "opium-wars-two": [
+    "2020-21-mun-mosobl-52",
+    "2021-22-mun-q0b125d",
     "2021-22-shk-q54821d",
+    "2022-23-mun-orel-4",
+    "2023-24-zak-8",
+    "modern-history-q115",
     "modern-history-q55",
     "modern-history-q56",
-    "modern-history-q115",
-    "2023-24-zak-8",
-    "2022-23-mun-orel-4",
     "modern-history-q78"
   ],
   "crafts-shu-chengdu": [
-    "crafts-q14",
     "2024-25-shk-34",
-    "crafts-q129"
+    "crafts-q129",
+    "crafts-q14"
   ],
   "province-names-river-lake": [
+    "2015-16-mun-6",
+    "2015-16-mun-spb-10",
+    "2015-16-reg-2",
+    "2015-16-shk-59",
+    "2015-16-zak-6",
+    "2016-17-mun-8",
+    "2016-17-zak-3",
+    "2017-18-mun-2",
+    "2017-18-reg-8",
+    "2018-19-mun-46",
     "2018-19-mun-55",
+    "2018-19-mun-spb-9",
+    "2018-19-mun-vrn-6",
+    "2018-19-shk-3",
+    "2018-19-shk-4",
+    "2019-20-mun-lip-1",
+    "2019-20-mun-mosobl-49",
+    "2019-20-mun-qcfa774",
+    "2019-20-mun-qe6c5d3",
+    "2019-20-reg-5",
+    "2020-21-mun-mosobl-47",
+    "2020-21-pri-qac236e",
+    "2020-21-zak-qec0067",
+    "2021-22-mun-lenobl-8",
+    "2021-22-mun-mosobl-54",
+    "2021-22-mun-qa05d78",
+    "2021-22-mun-qd67aaa",
+    "2021-22-mun-tat-57",
+    "2022-23-mun-7",
+    "2022-23-mun-8",
+    "2022-23-mun-amur-4",
+    "2022-23-mun-kam-10",
+    "2022-23-mun-krsk-4",
+    "2022-23-shk-mosobl-11",
+    "2022-23-shk-mosobl-2",
+    "2022-23-zak-2",
+    "2023-24-mun-komi-4",
+    "2023-24-shk-38",
+    "2023-24-shk-mosobl-20",
+    "2023-24-zak-1",
+    "2024-25-mun-irk-10",
+    "2024-25-mun-kem-4",
+    "2024-25-mun-mosobl-5",
+    "2024-25-pri-33",
+    "2024-25-reg-8",
+    "2024-25-zak-qe05919",
+    "2024-25-zak-qfce692",
+    "2025-26-mun-ryaz-4",
+    "2025-26-mun-spb-5",
+    "2025-26-reg-10",
+    "2025-26-shk-mosobl-13",
+    "2025-26-shk-mosobl-3",
+    "2025-26-shk-mosobl-4",
+    "2025-26-zak-q7c8228",
     "addition-b1-01",
+    "addition-b1-04",
+    "addition-b1-06",
+    "cuisine-q68",
+    "cuisine-q71",
+    "cuisine-q74",
+    "cuisine-q76",
+    "dynasties-q103",
+    "dynasties-q104",
+    "dynasties-q105",
+    "dynasties-q106",
+    "dynasties-q116",
+    "ethnos-q83",
+    "ethnos-q86",
+    "holidays-q40",
+    "landmarks-q23",
+    "landmarks-q90",
+    "landmarks-q92",
+    "landmarks-q93",
+    "landmarks-q94",
+    "landmarks-q95",
+    "landmarks-q96",
+    "landmarks-q99",
+    "literature-q37",
+    "money-q40",
+    "nature-q102",
+    "nature-q104",
+    "nature-q105",
+    "nature-q106",
+    "nature-q115",
+    "nature-q140",
+    "nature-q141",
+    "nature-q142",
+    "nature-q145",
+    "nature-q150",
+    "nature-q155",
+    "nature-q157",
+    "nature-q27",
+    "provinces-q101",
+    "provinces-q31",
+    "provinces-q34",
+    "provinces-q35",
+    "provinces-q36",
+    "provinces-q37",
+    "provinces-q38",
+    "provinces-q43",
     "provinces-q89",
     "provinces-q90",
-    "2019-20-reg-5",
-    "nature-q142",
-    "addition-b1-04",
-    "nature-q157",
-    "2018-19-mun-vrn-6",
-    "2022-23-mun-krsk-4",
-    "2015-16-shk-59",
-    "2019-20-mun-qe6c5d3",
-    "dynasties-q116",
-    "2023-24-mun-komi-4",
-    "2025-26-shk-mosobl-4"
+    "provinces-q93",
+    "provinces-q99",
+    "sets-q08",
+    "sets-q09",
+    "sets-q10",
+    "sets-q11",
+    "state-q15"
   ],
   "aomen-xianggang-sar": [
     "2015-16-shk-64",
     "2016-17-shk-3",
-    "provinces-q88",
-    "2026-27-mun-4"
+    "2026-27-mun-4",
+    "provinces-q88"
   ],
   "beijing-tianjin-municipality": [
     "2015-16-reg-1",
-    "provinces-q98",
     "2016-17-mun-spb-3",
-    "2025-26-mun-chel-6"
+    "2018-19-mun-52",
+    "2022-23-shk-mosobl-18",
+    "2025-26-mun-chel-6",
+    "nature-q35",
+    "provinces-q98"
   ],
   "cuisine-dishes-zak-1": [
+    "2016-17-reg-9",
     "2018-19-zak-1",
     "2020-21-zak-qf17a29",
+    "cuisine-q105",
     "cuisine-q80",
     "cuisine-q82",
     "cuisine-q83",
-    "2016-17-reg-9",
-    "money-q06",
     "cuisine-q95",
-    "cuisine-q105"
+    "money-q06"
   ],
   "fotiaoqiang-min": [
     "addition-b2-03",
     "cuisine-q84"
   ],
   "huangshan-maofeng": [
-    "nature-q51",
     "cuisine-q96",
-    "nature-q147"
+    "nature-q147",
+    "nature-q51"
   ],
   "fujian-min": [
-    "provinces-q41",
-    "cuisine-q70",
-    "ethnos-q87",
-    "cuisine-q93",
     "addition-b2-05",
+    "cuisine-q70",
     "cuisine-q91",
-    "modern-history-q116"
+    "cuisine-q93",
+    "ethnos-q87",
+    "modern-history-q116",
+    "provinces-q41"
   ],
   "shandong-lu": [
     "2024-25-pri-38",
-    "provinces-q94",
     "cuisine-q72",
-    "nature-q146"
-  ],
-  "xinjiang-word": [
-    "nature-q102",
-    "nature-q145",
-    "nature-q150",
-    "nature-q155"
+    "nature-q146",
+    "provinces-q94"
   ],
   "sanxia-word": [
     "money-q05",
@@ -185,48 +278,67 @@
     "cinema-q02"
   ],
   "great-wall-word": [
+    "2015-16-reg-9",
+    "dynasties-q109",
     "landmarks-q105",
     "myths-q19",
-    "nature-q70",
-    "2015-16-reg-9",
-    "dynasties-q109"
+    "nature-q70"
   ],
   "shanghai-word": [
     "2018-19-shk-10",
-    "landmarks-q100",
-    "2021-22-mun-q5434f2",
     "2018-19-zak-2",
+    "2021-22-mun-q5434f2",
+    "2025-26-shk-31",
+    "landmarks-q100",
     "landmarks-q101",
-    "modern-history-q114",
-    "2025-26-shk-31"
-  ],
-  "potala-tibet": [
-    "landmarks-q94",
-    "2018-19-mun-46",
-    "2021-22-mun-qd67aaa",
-    "money-q40"
+    "modern-history-q114"
   ],
   "eastern-han-word": [
-    "crafts-q133",
     "2021-22-reg-q0716e5",
-    "2025-26-shk-mosobl-2"
+    "2025-26-shk-mosobl-2",
+    "crafts-q133"
   ],
   "batik-guizhou": [
+    "2019-20-mun-lip-4",
     "crafts-q132",
-    "ethnos-q96",
-    "2019-20-mun-lip-4"
+    "ethnos-q96"
   ],
   "confucius-word": [
-    "dynasties-q39",
-    "literature-q59",
+    "2015-16-zak-7",
+    "2016-17-reg-7",
+    "2016-17-reg-8",
+    "2016-17-shk-2",
+    "2016-17-shk-6",
+    "2016-17-zak-10",
     "2017-18-shk-6",
     "2018-19-mun-51",
+    "2018-19-mun-vrn-4",
+    "2018-19-reg-7",
+    "2018-19-zak-4",
     "2020-21-pri-q0b0b79",
-    "people-q06",
-    "addition-b1-14",
-    "2016-17-zak-10",
+    "2020-21-pri-qa538eb",
+    "2020-21-reg-qce4bc2",
+    "2022-23-mun-orel-1",
+    "2022-23-shk-mosobl-4",
+    "2023-24-mun-38",
     "2023-24-mun-krsk-4",
-    "2025-26-shk-mosobl-7"
+    "2023-24-shk-34",
+    "2023-24-zak-9",
+    "2024-25-pri-32",
+    "2025-26-mun-mosobl-4",
+    "2025-26-shk-mosobl-7",
+    "addition-b1-14",
+    "dynasties-q39",
+    "landmarks-q59",
+    "landmarks-q80",
+    "literature-q40",
+    "literature-q59",
+    "literature-q98",
+    "literature-q99",
+    "people-q06",
+    "people-q09",
+    "people-q10",
+    "people-q20"
   ],
   "bisheng-movable-type": [
     "dynasties-q22",
@@ -240,39 +352,14 @@
     "addition-b2-12",
     "people-q13"
   ],
-  "xuanzang-sutras": [
-    "landmarks-q59",
-    "people-q20",
-    "2016-17-shk-2",
-    "2018-19-zak-4",
-    "2020-21-pri-qa538eb",
-    "2023-24-mun-38",
-    "2023-24-zak-9",
-    "landmarks-q80",
-    "literature-q98",
-    "literature-q99",
-    "2025-26-mun-mosobl-4",
-    "2015-16-zak-7",
-    "2024-25-pri-32",
-    "literature-q40",
-    "2016-17-shk-6",
-    "2016-17-reg-7",
-    "2018-19-mun-vrn-4",
-    "2022-23-shk-mosobl-4",
-    "2020-21-reg-qce4bc2",
-    "2023-24-shk-34",
-    "2016-17-reg-8",
-    "2018-19-reg-7",
-    "people-q10"
-  ],
   "sunzi-art-of-war": [
     "2017-18-shk-4",
     "people-q08"
   ],
   "lin-zexu-opium-1839": [
+    "modern-history-q109",
     "modern-history-q54",
-    "modern-history-q95",
-    "modern-history-q109"
+    "modern-history-q95"
   ],
   "zhao-kuangyin-chenqiao": [
     "dynasties-q23",
@@ -287,10 +374,10 @@
     "myths-q29"
   ],
   "mid-autumn-date": [
-    "2024-25-pri-37",
-    "holidays-q36",
     "2022-23-mun-krsk-1",
-    "2023-24-mun-kem-7"
+    "2023-24-mun-kem-7",
+    "2024-25-pri-37",
+    "holidays-q36"
   ],
   "chongyang-date": [
     "holidays-q16",
@@ -302,33 +389,33 @@
   ],
   "qingming-graves": [
     "2015-16-zak-10",
-    "holidays-q46",
-    "addition-b1-10"
+    "addition-b1-10",
+    "holidays-q46"
   ],
   "may-fourth-date": [
     "2016-17-reg-6",
     "holidays-q39"
   ],
   "moscow-kremlin-word": [
-    "landmarks-q83",
     "2024-25-pri-31",
-    "landmarks-q114"
+    "landmarks-q114",
+    "landmarks-q83"
   ],
   "year-1861-word": [
-    "modern-history-q97",
-    "dynasties-q36"
+    "dynasties-q36",
+    "modern-history-q97"
   ],
   "vladivostok-word": [
-    "provinces-q108",
-    "2025-26-reg-4"
+    "2025-26-reg-4",
+    "provinces-q108"
   ],
   "islam-word": [
-    "ethnos-q94",
-    "ethnos-q81"
+    "ethnos-q81",
+    "ethnos-q94"
   ],
   "pavlov-word": [
-    "people-q28",
-    "addition-b2-18"
+    "addition-b2-18",
+    "people-q28"
   ],
   "shchi-word": [
     "cuisine-q99",
@@ -348,119 +435,50 @@
     "cuisine-q104"
   ],
   "xingshu-lanting": [
-    "painting-q17",
     "painting-q108",
-    "painting-q109"
+    "painting-q109",
+    "painting-q17"
   ],
   "four-inventions": [
     "2015-16-reg-5",
     "2016-17-shk-1",
     "2017-18-mun-8",
-    "2026-27-mun-1",
-    "2025-26-mun-vlad-9",
-    "2024-25-mun-irk-4",
+    "2021-22-mun-volog-7",
     "2022-23-mun-mosobl-8",
-    "2021-22-mun-volog-7"
+    "2024-25-mun-irk-4",
+    "2025-26-mun-vlad-9",
+    "2026-27-mun-1"
   ],
   "prc-founding-1949": [
+    "2016-17-reg-2",
+    "2017-18-zak-6",
+    "2020-21-reg-q094875",
+    "2021-22-mun-amur-3",
+    "2022-23-mun-orel-3",
+    "2024-25-mun-mosobl-1",
+    "2024-25-mun-spb-8",
+    "2024-25-shk-mosobl-1",
+    "2025-26-zak-q11165a",
+    "addition-b1-09",
+    "addition-b2-01",
+    "cinema-q24",
     "holidays-q38",
     "modern-history-q112",
     "modern-history-q113",
     "modern-history-q117",
-    "addition-b1-09",
-    "2016-17-reg-2",
-    "2020-21-reg-q094875",
-    "2021-22-mun-amur-3",
-    "2024-25-mun-mosobl-1",
-    "2024-25-shk-mosobl-1",
-    "2024-25-mun-spb-8",
-    "cinema-q24",
-    "space-q20"
+    "space-q20",
+    "state-q13"
   ],
   "taiping-nanjing-capital": [
-    "modern-history-q110",
+    "2023-24-mun-32",
     "addition-b1-08",
-    "state-q14",
-    "2023-24-mun-32"
-  ],
-  "state-council-premier": [
-    "2017-18-zak-6",
-    "2025-26-zak-q11165a",
-    "state-q13",
-    "2022-23-mun-orel-3",
-    "addition-b2-01"
+    "modern-history-q110",
+    "state-q14"
   ],
   "suihan-sanyou-not": [
+    "2017-18-zak-4",
     "2019-20-mun-khab-6",
-    "2021-22-mun-mosobl-55",
-    "2017-18-zak-4"
-  ],
-  "suzhou-hangzhou-paradise": [
-    "2019-20-mun-mosobl-49",
-    "2021-22-mun-lenobl-8",
-    "landmarks-q23",
-    "2015-16-zak-6",
-    "2015-16-mun-spb-10",
-    "2023-24-shk-mosobl-20",
-    "2024-25-mun-irk-10",
-    "2021-22-mun-mosobl-54",
-    "2015-16-mun-6",
-    "2016-17-mun-8",
-    "2016-17-zak-3",
-    "2017-18-mun-2",
-    "2017-18-reg-8",
-    "2018-19-mun-spb-9",
-    "2018-19-shk-3",
-    "2018-19-shk-4",
-    "2019-20-mun-qcfa774",
-    "2020-21-pri-qac236e",
-    "2021-22-mun-qa05d78",
-    "2021-22-mun-tat-57",
-    "2022-23-mun-7",
-    "2022-23-mun-8",
-    "2022-23-shk-mosobl-11",
-    "2022-23-zak-2",
-    "2023-24-shk-38",
-    "2024-25-mun-mosobl-5",
-    "2024-25-pri-33",
-    "2024-25-reg-8",
-    "2024-25-zak-qe05919",
-    "2024-25-zak-qfce692",
-    "2025-26-mun-spb-5",
-    "2025-26-shk-mosobl-13",
-    "2025-26-zak-q7c8228",
-    "addition-b1-06",
-    "cuisine-q68",
-    "cuisine-q71",
-    "cuisine-q74",
-    "cuisine-q76",
-    "dynasties-q103",
-    "dynasties-q104",
-    "dynasties-q105",
-    "dynasties-q106",
-    "ethnos-q83",
-    "ethnos-q86",
-    "holidays-q40",
-    "landmarks-q90",
-    "landmarks-q92",
-    "landmarks-q93",
-    "landmarks-q95",
-    "landmarks-q96",
-    "landmarks-q99",
-    "literature-q37",
-    "nature-q115",
-    "provinces-q101",
-    "provinces-q31",
-    "provinces-q37",
-    "provinces-q38",
-    "provinces-q43",
-    "provinces-q93",
-    "provinces-q99",
-    "sets-q08",
-    "sets-q09",
-    "sets-q10",
-    "sets-q11",
-    "state-q15"
+    "2021-22-mun-mosobl-55"
   ],
   "tiananmen-square": [
     "2021-22-mun-omsk-3",
@@ -476,23 +494,23 @@
     "2021-22-shk-q39d834"
   ],
   "wolf-word": [
-    "cinema-q35",
     "2025-26-mun-chel-7",
+    "cinema-q35",
     "myths-q25"
   ],
   "blagoveshchensk-border": [
-    "2023-24-mun-kem-9",
-    "2020-21-zak-q1f0e35"
+    "2020-21-zak-q1f0e35",
+    "2023-24-mun-kem-9"
   ],
   "apec-word": [
     "2015-16-zak-1",
     "2022-23-mun-mosobl-4"
   ],
   "olympic-mascots": [
-    "modern-china-q12",
-    "modern-china-q13",
+    "2016-17-mun-spb-4",
     "2020-21-mun-spb-7",
-    "2016-17-mun-spb-4"
+    "modern-china-q12",
+    "modern-china-q13"
   ],
   "olympic-athletes": [
     "modern-china-q16",
@@ -504,25 +522,19 @@
     "modern-china-q14"
   ],
   "sco-2001": [
-    "modern-china-q10",
-    "2022-23-reg-9"
+    "2022-23-reg-9",
+    "modern-china-q10"
   ],
   "brics-word": [
-    "modern-china-q11",
+    "2018-19-reg-5",
     "2021-22-zak-q184754",
-    "2024-25-mun-nsk-5"
+    "2024-25-mun-nsk-5",
+    "dynasties-q55",
+    "modern-china-q11"
   ],
   "daoism-laozi-zhuangzi": [
     "2017-18-mun-4",
     "people-q07"
-  ],
-  "contextual-geography-2": [
-    "2015-16-reg-2",
-    "2020-21-zak-qec0067",
-    "2023-24-zak-1",
-    "2025-26-reg-10",
-    "nature-q140",
-    "nature-q141"
   ],
   "contextual-geography-3": [
     "2015-16-shk-65",
@@ -547,13 +559,13 @@
     "painting-q103"
   ],
   "contextual-next20-20261104-4": [
+    "2015-16-mun-7",
     "2018-19-reg-1",
     "2018-19-shk-6",
+    "2019-20-mun-q727051",
     "dynasties-q111",
     "dynasties-q113",
-    "people-q19",
-    "2015-16-mun-7",
-    "2019-20-mun-q727051"
+    "people-q19"
   ],
   "contextual-batch4-20261104-1": [
     "2020-21-reg-q7a4710",
@@ -566,25 +578,25 @@
     "2025-26-reg-1"
   ],
   "nanchang-uprising-army-day": [
+    "2015-16-reg-7",
+    "2015-16-shk-60",
+    "2017-18-mun-7",
+    "2021-22-mun-amur-6",
+    "2024-25-mun-tula-2",
+    "crafts-q130",
+    "cuisine-q106",
+    "ethnos-q43",
+    "ethnos-q78",
+    "ethnos-q85",
+    "holidays-q18",
+    "holidays-q21",
+    "holidays-q32",
     "holidays-q33",
-    "money-q36",
     "holidays-q42",
     "holidays-q43",
-    "cuisine-q106",
-    "crafts-q130",
-    "2017-18-mun-7",
-    "holidays-q32",
     "holidays-q49",
-    "2024-25-mun-tula-2",
-    "holidays-q18",
-    "ethnos-q43",
-    "ethnos-q85",
-    "ethnos-q78",
-    "holidays-q21",
-    "2021-22-mun-amur-6",
-    "2015-16-reg-7",
     "modern-history-q63",
-    "2015-16-shk-60"
+    "money-q36"
   ],
   "regional-batch2-hints-7": [
     "landmarks-q106",
@@ -597,12 +609,25 @@
     "literature-q81",
     "literature-q84"
   ],
-  "regional-b3-caption-56": [
-    "2019-20-mun-lip-1",
-    "2020-21-mun-mosobl-47",
-    "2022-23-shk-mosobl-2",
-    "2024-25-mun-kem-4",
-    "provinces-q35",
-    "provinces-q36"
+  "regional-b4-hint-07": [
+    "2022-23-mun-mosobl-10",
+    "2024-25-mun-kursk-1",
+    "money-q10"
+  ],
+  "regional-b4-hint-08": [
+    "2020-21-reg-q588b1b",
+    "2021-22-reg-qdc153d",
+    "2024-25-zak-q082614",
+    "2025-26-mun-tat-57"
+  ],
+  "regional-b4-hint-11": [
+    "2025-26-shk-mosobl-15",
+    "painting-q06"
+  ],
+  "regional-b4-hint-40": [
+    "2020-21-mun-lenobl-7",
+    "2025-26-mun-chel-3",
+    "addition-b2-09",
+    "people-q11"
   ]
 }

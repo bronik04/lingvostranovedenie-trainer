@@ -349,5 +349,35 @@
       "verdict": "accept",
       "note": "Принято автором 2026-11-07 в составе 16 вопросов партии 3; формулировка, исходный ключ и четыре показанных варианта сохранены. Подписи и первичные источники проверены в предложениях и независимо; финальная проверка выпуска — regional-batch-3-release-review."
     }
+  },
+  {
+    "id": "crafts-q140",
+    "embeds": "2025-26-shk-mosobl-15",
+    "status": "accepted",
+    "fact": {
+      "table": "materials",
+      "row": "material-bamboo",
+      "ask": "shengmaterial"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял оставшиеся16вопросов партии4 и прямо разрешил встраивание/публикацию. Сохранены ключ, ID, четыре показанных варианта и все подписи; источники проверены отдельно по темам. Итоговый обзор — regional-batch-4-release-review."
+    }
+  },
+  {
+    "id": "crafts-q141",
+    "embeds": "2025-26-mun-chel-3",
+    "status": "accepted",
+    "fact": {
+      "table": "materials",
+      "row": "material-turtleshell",
+      "ask": "oraclematerial"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял оставшиеся16вопросов партии4 и прямо разрешил встраивание/публикацию. Сохранены ключ, ID, четыре показанных варианта и все подписи; источники проверены отдельно по темам. Итоговый обзор — regional-batch-4-release-review."
+    }
   }
 ]

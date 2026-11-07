@@ -401,6 +401,10 @@ SURNAME = re.compile(r'[А-ЯЁ]\w*(?:ов|ев|ёв|ин|ын)$')
 # проверки утечек сверяют каждое название ответа с тысячами текстов и подписей
 @lru_cache(maxsize=None)
 def _name_pattern(name: str) -> re.Pattern:
+    if name.strip().isdecimal():
+        # Ответ-число 21 не упомянут в датах 1721/2021 или количестве 210.
+        # Границы цифр сохраняют совпадение с китайским «21个经济体».
+        return re.compile(r'(?<!\d)' + re.escape(name.strip()) + r'(?!\d)')
     words = re.findall(r'\w+', name)
     if not words or not CYRILLIC.search(name):
         return re.compile(re.escape(name.lower()))

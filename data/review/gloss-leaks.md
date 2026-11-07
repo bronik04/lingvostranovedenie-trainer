@@ -12,7 +12,7 @@
 повторение, а не утечка (решение автора 2026-10-26). Название верного ответа рядом с вопросом с тем же
 ответом утечкой не считается: ответ выдаёт сам вариант. Названия помечены «(название ответа)».
 
-Подписей с утечкой: 618; выданных вопросов: 415; пар «вопрос с подписью → соседний вопрос»: 2791, из них 1633 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
+Подписей с утечкой: 620; выданных вопросов: 418; пар «вопрос с подписью → соседний вопрос»: 2683, из них 1568 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
 
 ## 特别行政区 — Особый административный район — Сянган и Аомэнь (название ответа)
 
@@ -179,7 +179,7 @@
 
 ## 元宵节 — Праздник фонарей — 15-е число 1-го лунного месяца, едят танъюань (название ответа)
 
-- выдаёт 2021-22-mun-mosobl-53: ответ танъюань; зацепка Праздник фонарей
+- выдаёт 2021-22-mun-mosobl-53: ответ танъюань; зацепка 15, Праздник фонарей
 - выдаёт holidays/holidays-q45: ответ 元宵节, Праздник фонарей; зацепка танъюань, та же строка
 - видна в 6: holidays/holidays-q16, holidays/holidays-q43, holidays/holidays-q44, holidays/holidays-q45, holidays/holidays-q46, holidays/holidays-q47
 
@@ -319,7 +319,7 @@
 
 - выдаёт nature/nature-q142: ответ 湖南; зацепка Дунтинху
 - выдаёт provinces/provinces-q90: ответ Дунтинху; зацепка Хунань
-- видна в 12: provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q32, provinces/provinces-q42
+- видна в 9: provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q110, provinces/provinces-q32, provinces/provinces-q42
 
 ## 湖南 — Хунань — провинция, где лежит озеро Дунтинху
 
@@ -405,12 +405,6 @@
 - выдаёт landmarks/landmarks-q96: ответ 西安; зацепка Большая пагода диких гусей, та же строка
 - видна в 3: landmarks/landmarks-q48, landmarks/landmarks-q97, landmarks/landmarks-q98
 
-## 论语 — «Лунь юй» («Беседы и суждения») — записи слов Конфуция, сделанные учениками
-
-- выдаёт 2016-17-zak-10: ответ 论语, «Лунь юй»; зацепка Конфуций
-- выдаёт people/people-q09: ответ 论语, «Лунь юй»; зацепка Конфуций, та же строка
-- видна в 1: people/people-q10
-
 ## 论语 — «Лунь юй», главная книга конфуцианства, записи учеников Конфуция
 
 - выдаёт 2016-17-zak-10: ответ 论语, «Лунь юй»; зацепка Конфуций, конфуцианство
@@ -432,14 +426,8 @@
 ## 道家 — Даосизм — школа, основанная Лао-цзы, автором «Дао дэ цзин»
 
 - выдаёт people/people-q01: ответ Лао-цзы; зацепка «Дао дэ цзин», та же строка
-- выдаёт people/people-q10: ответ «Дао дэ цзин»; зацепка Лао-цзы, та же строка
-- видна в 2: people/people-q06, people/people-q08
-
-## 道德经 — «Дао дэ цзин» — книга о Дао и дэ в 81 главе, её приписывают Лао-цзы
-
-- выдаёт people/people-q01: ответ Лао-цзы; зацепка «Дао дэ цзин», та же строка
-- выдаёт people/people-q10: ответ 道德经, «Дао дэ цзин»; зацепка Лао-цзы, та же строка
-- видна в 1: people/people-q09
+- выдаёт people/people-q10: ответ «Дао дэ цзин»; зацепка «Лао-цзы», та же строка
+- видна в 1: people/people-q08
 
 ## 长安 — Чанъань — прежнее название Сианя, столицы Хань и Тан
 
@@ -854,7 +842,7 @@
 
 ## 云南 — Юньнань — здесь Каменный лес (Шилинь) под Куньмином
 
-- выдаёт nature/nature-q159: ответ 云南, Юньнань; зацепка Каменный лес, та же строка
+- выдаёт nature/nature-q159: ответ 云南, Юньнань; зацепка Каменный лес, Камень, та же строка
 - видна в 2: nature/nature-q157, nature/nature-q158
 
 ## 云南 — Юньнань — здесь дай живут в бамбуковых домах на сваях чжулоу
@@ -942,6 +930,11 @@
 - выдаёт dynasties/dynasties-q08: ответ Линьань; зацепка Ханчжоу, Южная Сун
 - видна в 5: money/money-q19, money/money-q21, money/money-q25, money/money-q26, money/money-q27
 
+## 佛教 — Буддизм — в Китае выделяют китайскую, тибетскую и южную традиции.
+
+- выдаёт 2018-19-reg-7: ответ 佛教, Буддизм; зацепка Тибет
+- видна в 1: ethnos/ethnos-q99
+
 ## 傣族 — Дайцы — народ юга Юньнани, их Новый год — праздник воды
 
 - выдаёт holidays/holidays-q18: ответ Праздник воды; зацепка Новый год, народ дай, 傣族, та же строка
@@ -985,7 +978,7 @@
 ## 兰州 — Ланьчжоу — административный центр провинции Ганьсу
 
 - выдаёт provinces/provinces-q38: ответ 兰州, Ланьчжоу; зацепка провинция Ганьсу, та же строка
-- видна в 7: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
+- видна в 5: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
 
 ## 兵家 — Школа стратегов — школа Сунь-цзы, автора «Искусства войны»
 
@@ -1070,7 +1063,7 @@
 ## 北京 — Пекин — здесь Запретный город, императорский дворец Мин и Цин
 
 - выдаёт 2016-17-mun-8: ответ Запретный город; зацепка Пекин, 北京
-- видна в 2: landmarks/landmarks-q10, landmarks/landmarks-q94
+- видна в 1: landmarks/landmarks-q10
 
 ## 北京 — Пекин — здесь делают дворцовые фонари и красные фонари из шёлкового газа
 
@@ -1240,12 +1233,12 @@
 ## 吉林 — Цзилинь — провинция на Северо-Востоке, центр — Чанчунь
 
 - выдаёт provinces/provinces-q36: ответ Чанчунь; зацепка Провинция Цзилинь, та же строка
-- видна в 14: provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 9: provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q110, provinces/provinces-q32, provinces/provinces-q42
 
 ## 吉林省 — Цзилинь — провинция на Северо-Востоке, центр — Чанчунь
 
 - выдаёт provinces/provinces-q36: ответ Чанчунь; зацепка Провинция Цзилинь, та же строка
-- видна в 8: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q12, provinces/provinces-q123, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q15, provinces/provinces-q16
+- видна в 6: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q123, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q16
 
 ## 吴承恩 — У Чэнъэнь — по традиции автор романа «Путешествие на Запад»
 
@@ -1275,7 +1268,7 @@
 ## 呼和浩特 — Хух-Хото («Синий город») — центр Внутренней Монголии
 
 - выдаёт provinces/provinces-q34: ответ Внутренняя Монголия; зацепка Хух-Хото, 呼和浩特, та же строка
-- видна в 11: provinces/provinces-q100, provinces/provinces-q101, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q37, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
+- видна в 5: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
 
 ## 和平共处五项原则 — Пять принципов мирного сосуществования — их в 1953 году впервые выдвинул Чжоу Эньлай
 
@@ -1290,7 +1283,7 @@
 ## 哈尔滨 — Харбин — город на северо-востоке Китая, в провинции Хэйлунцзян
 
 - выдаёт 2020-21-mun-mosobl-47: ответ 哈尔滨, Харбин; зацепка провинция Хэйлунцзян
-- видна в 17: provinces/provinces-q115, provinces/provinces-q116, provinces/provinces-q117, provinces/provinces-q119, provinces/provinces-q121, provinces/provinces-q20, provinces/provinces-q21, provinces/provinces-q22, provinces/provinces-q24, provinces/provinces-q25, provinces/provinces-q26, provinces/provinces-q27, provinces/provinces-q28, provinces/provinces-q29, provinces/provinces-q30, provinces/provinces-q53, provinces/provinces-q87
+- видна в 16: provinces/provinces-q115, provinces/provinces-q116, provinces/provinces-q117, provinces/provinces-q119, provinces/provinces-q20, provinces/provinces-q21, provinces/provinces-q22, provinces/provinces-q24, provinces/provinces-q25, provinces/provinces-q26, provinces/provinces-q27, provinces/provinces-q28, provinces/provinces-q29, provinces/provinces-q30, provinces/provinces-q53, provinces/provinces-q87
 
 ## 哈尔滨 — Харбин — здесь остров Солнца на северном берегу Сунгари
 
@@ -1300,7 +1293,7 @@
 ## 哈尔滨 — Харбин — центр провинции Хэйлунцзян
 
 - выдаёт 2020-21-mun-mosobl-47: ответ 哈尔滨, Харбин; зацепка провинция Хэйлунцзян
-- видна в 9: provinces/provinces-q100, provinces/provinces-q101, provinces/provinces-q33, provinces/provinces-q37, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
+- видна в 5: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
 
 ## 哈巴罗夫斯克 — Хабаровск — город на купюре 5000 рублей образца 1997 года
 
@@ -1345,7 +1338,7 @@
 ## 四川 — Сычуань — здесь долина Цзючжайгоу с горными озёрами и водопадами
 
 - выдаёт provinces/provinces-q01: ответ 四川, Сычуань; зацепка Цзючжайгоу
-- видна в 3: nature/nature-q157, nature/nature-q158, nature/nature-q159
+- видна в 2: nature/nature-q158, nature/nature-q159
 
 ## 四月五日 — Около 5 апреля (4–6 апреля) по солнечному календарю — праздник Цинмин
 
@@ -1364,7 +1357,7 @@
 
 ## 国务院总理 — Премьер Госсовета — первым этот пост занял Чжоу Эньлай в 1954 году
 
-- выдаёт 2022-23-mun-orel-3: ответ Чжоу Эньлай; зацепка премьер Госсовета
+- выдаёт modern-history/modern-history-q124: ответ Чжоу Эньлай; зацепка премьер Госсовета, та же строка
 - видна в 1: modern-history/modern-history-q95
 
 ## 国家主席 — Председатель КНР — краткое название должности главы государства
@@ -1406,11 +1399,6 @@
 
 - выдаёт painting/painting-q85: ответ Левитан; зацепка Над вечным покоем, 墓地上空, та же строка
 - видна в 3: painting/painting-q86, painting/painting-q88, painting/painting-q94
-
-## 墨子 — Мо-цзы — основатель школы «всеобщей любви», соперник конфуцианцев
-
-- выдаёт people/people-q04: ответ 墨子, Мо-цзы; зацепка Конфуций, та же строка
-- видна в 1: people/people-q01
 
 ## 大同 — Датун — возле него высечены пещеры Юньган
 
@@ -1480,7 +1468,7 @@
 ## 太原 — Тайюань — центр провинции Шаньси
 
 - выдаёт provinces/provinces-q03: ответ провинция Шаньси; зацепка Тайюань, 太原, та же строка
-- видна в 11: provinces/provinces-q100, provinces/provinces-q101, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q37, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
+- видна в 5: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
 
 ## 太阳岛 — Остров Солнца — парк в Харбине, столице провинции Хэйлунцзян (название ответа)
 
@@ -1590,7 +1578,7 @@
 ## 山西 — Шаньси — провинция к западу от гор Тайханшань, центр — Тайюань
 
 - выдаёт provinces/provinces-q03: ответ 山西; зацепка Тайюань, та же строка
-- видна в 11: provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q42
+- видна в 8: provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q110, provinces/provinces-q42
 
 ## 岷江 — Миньцзян — приток Янцзы в Сычуани, на нём стоит Дуцзянъянь
 
@@ -1611,6 +1599,11 @@
 
 - выдаёт money/money-q26: ответ 布币, бу-би; зацепка бронза, та же строка
 - видна в 4: money/money-q19, money/money-q21, money/money-q25, money/money-q27
+
+## 布达拉宫 — Потала — дворец на Красной горе в Лхасе, символ власти старого Тибета
+
+- выдаёт 2018-19-mun-46: ответ 布达拉宫, Потала; зацепка Тибет
+- видна в 1: provinces/provinces-q56
 
 ## 布里亚特人 — Буряты — их героический эпос «Гэсэр»
 
@@ -1635,7 +1628,7 @@
 ## 广东 — Гуандун — провинция на юге материкового Китая, центр — Гуанчжоу
 
 - выдаёт provinces/provinces-q99: ответ Гуанчжоу; зацепка провинция Гуандун, та же строка
-- видна в 10: provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 8: provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q110, provinces/provinces-q32, provinces/provinces-q42
 
 ## 广东 — Гуандун — родина кантонской кухни с белой нарезанной курицей
 
@@ -1670,7 +1663,7 @@
 ## 广州 — Гуанчжоу — центр провинции Гуандун
 
 - выдаёт provinces/provinces-q99: ответ 广州, Гуанчжоу; зацепка провинция Гуандун, та же строка
-- видна в 7: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
+- видна в 5: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
 
 ## 广西 — Гуанси — здесь карстовые горы Гуйлиня вдоль реки Лицзян
 
@@ -1810,12 +1803,12 @@
 ## 拉萨 — Лхаса — административный центр Тибетского автономного района
 
 - выдаёт 2021-22-mun-qd67aaa: ответ 拉萨; зацепка Тибетский автономный район, та же строка
-- видна в 11: provinces/provinces-q100, provinces/provinces-q101, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q37, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
+- видна в 5: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
 
 ## 拉萨 — Лхаса — город в Тибетском автономном районе на юго-западе Китая
 
 - выдаёт 2021-22-mun-qd67aaa: ответ 拉萨; зацепка Тибетский автономный район
-- видна в 17: provinces/provinces-q115, provinces/provinces-q116, provinces/provinces-q117, provinces/provinces-q119, provinces/provinces-q121, provinces/provinces-q20, provinces/provinces-q21, provinces/provinces-q24, provinces/provinces-q25, provinces/provinces-q26, provinces/provinces-q27, provinces/provinces-q28, provinces/provinces-q29, provinces/provinces-q30, provinces/provinces-q52, provinces/provinces-q53, provinces/provinces-q87
+- видна в 16: provinces/provinces-q115, provinces/provinces-q116, provinces/provinces-q117, provinces/provinces-q119, provinces/provinces-q20, provinces/provinces-q21, provinces/provinces-q24, provinces/provinces-q25, provinces/provinces-q26, provinces/provinces-q27, provinces/provinces-q28, provinces/provinces-q29, provinces/provinces-q30, provinces/provinces-q52, provinces/provinces-q53, provinces/provinces-q87
 
 ## 拉萨 — Лхаса — здесь дворец Потала из Белого и Красного дворцов
 
@@ -1889,8 +1882,8 @@
 
 ## 日本海 — Японское море — сюда впадает Туманная (Тумэньцзян)
 
-- выдаёт nature/nature-q106: ответ Тумэньцзян; зацепка Японское море, та же строка
-- видна в 2: nature/nature-q06, nature/nature-q141
+- выдаёт nature/nature-q106: ответ Тумэньцзян; зацепка Японское море
+- видна в 1: nature/nature-q06
 
 ## 日瓦戈医生 — «Доктор Живаго» — роман Пастернака о враче и поэте, впервые издан в Италии
 
@@ -1930,7 +1923,7 @@
 ## 曲阜 — Цюйфу — здесь усадьба рода Кун, потомков Конфуция
 
 - выдаёт 2022-23-mun-7: ответ 曲阜; зацепка Конфуций
-- видна в 2: landmarks/landmarks-q10, landmarks/landmarks-q94
+- видна в 1: landmarks/landmarks-q10
 
 ## 曲阜 — Цюйфу — здесь храм Конфуция, основанный в 478 году до н. э.
 
@@ -1990,7 +1983,7 @@
 ## 杭州 — Ханчжоу — центр провинции Чжэцзян
 
 - выдаёт provinces/provinces-q101: ответ 杭州, Ханчжоу; зацепка провинция Чжэцзян, та же строка
-- видна в 7: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
+- видна в 5: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
 
 ## 松林里的早晨 — «Утро в сосновом лесу» — картина Ивана Шишкина 1889 года с медвежатами
 
@@ -2105,7 +2098,7 @@
 ## 毛泽东 — Мао Цзэдун — председатель ЦК КПК, руководил партией до своей смерти в 1976 году
 
 - выдаёт modern-history/modern-history-q120: ответ 1976; зацепка Мао Цзэдун
-- видна в 10: modern-history/modern-history-q01, modern-history/modern-history-q02, modern-history/modern-history-q03, modern-history/modern-history-q05, modern-history/modern-history-q06, modern-history/modern-history-q07, modern-history/modern-history-q17, modern-history/modern-history-q25, modern-history/modern-history-q28, modern-history/modern-history-q96
+- видна в 9: modern-history/modern-history-q01, modern-history/modern-history-q02, modern-history/modern-history-q05, modern-history/modern-history-q06, modern-history/modern-history-q07, modern-history/modern-history-q17, modern-history/modern-history-q25, modern-history/modern-history-q28, modern-history/modern-history-q96
 
 ## 民主与科学 — «Демократия и наука» — лозунг Движения за новую культуру
 
@@ -2184,13 +2177,13 @@
 
 ## 沈阳 — Шэньян (Мукден) — город, у которого 18 сентября 1931 года японцы взорвали железную дорогу
 
-- выдаёт modern-history/modern-history-q69: ответ 沈阳, Шэньян, Мукден; зацепка 1931 год, та же строка
+- выдаёт modern-history/modern-history-q69: ответ 沈阳, Шэньян, Мукден; зацепка 1931 год, Железо, та же строка
 - видна в 2: modern-history/modern-history-q114, modern-history/modern-history-q63
 
 ## 沈阳 — Шэньян — центр провинции Ляонин
 
 - выдаёт provinces/provinces-q35: ответ 沈阳, Шэньян; зацепка провинция Ляонин, та же строка
-- видна в 9: provinces/provinces-q100, provinces/provinces-q101, provinces/provinces-q33, provinces/provinces-q37, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
+- видна в 5: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
 
 ## 沪 — Сокращение Шанхая — от старого названия низовьев реки Сунцзян, «Худу»
 
@@ -2225,12 +2218,12 @@
 ## 河南 — Хэнань — провинция в центре Китая, в бассейне Хуанхэ, центр — Чжэнчжоу
 
 - выдаёт provinces/provinces-q89: ответ Хуанхэ; зацепка провинция Хэнань, та же строка
-- видна в 11: provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q32
+- видна в 8: provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q110, provinces/provinces-q32
 
 ## 河南省 — Хэнань — провинция в центре Китая, на Хуанхэ, центр — Чжэнчжоу
 
 - выдаёт provinces/provinces-q89: ответ Хуанхэ; зацепка провинция Хэнань, та же строка
-- видна в 8: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q12, provinces/provinces-q123, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q15, provinces/provinces-q16
+- видна в 6: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q123, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q16
 
 ## 泉城 — «Город родников» — прозвище Цзинаня из-за множества источников
 
@@ -2285,7 +2278,7 @@
 ## 浙江 — Чжэцзян — провинция на юге дельты Янцзы, центр — Ханчжоу
 
 - выдаёт provinces/provinces-q101: ответ Ханчжоу; зацепка провинция Чжэцзян, та же строка
-- видна в 11: provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 9: provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q110, provinces/provinces-q32, provinces/provinces-q42
 
 ## 浙江 — Чжэцзян — родина чжэцзянской кухни с рыбой озера Сиху в уксусном соусе
 
@@ -2344,13 +2337,13 @@
 
 ## 湖南 — Хунань — здесь Улинюань с каменными столбами Чжанцзяцзе
 
-- выдаёт nature/nature-q157: ответ 湖南; зацепка Чжанцзяцзе, та же строка
+- выдаёт nature/nature-q157: ответ 湖南; зацепка Камень, Чжанцзяцзе, та же строка
 - видна в 2: nature/nature-q158, nature/nature-q159
 
 ## 湖南 — Хунань — здесь гора 衡山 (Хэншань), Южный пик пяти священных гор
 
 - выдаёт nature/nature-q10: ответ 衡山; зацепка Южный пик, провинция Хунань, пять священных гор, та же строка
-- видна в 7: nature/nature-q03, nature/nature-q145, nature/nature-q146, nature/nature-q147, nature/nature-q148, nature/nature-q149, nature/nature-q50
+- видна в 6: nature/nature-q03, nature/nature-q146, nature/nature-q147, nature/nature-q148, nature/nature-q149, nature/nature-q50
 
 ## 湘 — Сокращение Хунани — по главной реке провинции Сянцзян
 
@@ -2435,7 +2428,7 @@
 ## 甘肃 — Ганьсу — провинция на северо-западе Китая, центр — Ланьчжоу
 
 - выдаёт provinces/provinces-q38: ответ Ланьчжоу; зацепка провинция Ганьсу, та же строка
-- видна в 11: provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 9: provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q110, provinces/provinces-q32, provinces/provinces-q42
 
 ## 甘肃省 — Ганьсу — провинция на северо-западе Китая, её центр — Ланьчжоу
 
@@ -2495,12 +2488,12 @@
 ## 福州 — Фучжоу — город на юго-востоке Китая, в провинции Фуцзянь
 
 - выдаёт 2022-23-shk-mosobl-2: ответ Фуцзянь, провинция Фуцзянь; зацепка Фучжоу
-- видна в 18: provinces/provinces-q115, provinces/provinces-q116, provinces/provinces-q117, provinces/provinces-q119, provinces/provinces-q121, provinces/provinces-q20, provinces/provinces-q21, provinces/provinces-q22, provinces/provinces-q24, provinces/provinces-q25, provinces/provinces-q26, provinces/provinces-q27, provinces/provinces-q28, provinces/provinces-q29, provinces/provinces-q30, provinces/provinces-q52, provinces/provinces-q53, provinces/provinces-q87
+- видна в 17: provinces/provinces-q115, provinces/provinces-q116, provinces/provinces-q117, provinces/provinces-q119, provinces/provinces-q20, provinces/provinces-q21, provinces/provinces-q22, provinces/provinces-q24, provinces/provinces-q25, provinces/provinces-q26, provinces/provinces-q27, provinces/provinces-q28, provinces/provinces-q29, provinces/provinces-q30, provinces/provinces-q52, provinces/provinces-q53, provinces/provinces-q87
 
 ## 福州 — Фучжоу — центр провинции Фуцзянь
 
 - выдаёт 2022-23-shk-mosobl-2: ответ Фуцзянь, провинция Фуцзянь; зацепка Фучжоу
-- видна в 9: provinces/provinces-q100, provinces/provinces-q101, provinces/provinces-q33, provinces/provinces-q37, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
+- видна в 5: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
 
 ## 福建 — Фуцзянь — здесь земляные дома-крепости тулоу, в списке ЮНЕСКО с 2008 года
 
@@ -2515,7 +2508,7 @@
 ## 福建 — Фуцзянь — прибрежная провинция на юго-востоке, напротив Тайваня, центр — Фучжоу
 
 - выдаёт 2022-23-shk-mosobl-2: ответ 福建, Фуцзянь; зацепка Фучжоу
-- видна в 14: provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 9: provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q110, provinces/provinces-q32, provinces/provinces-q42
 
 ## 福建 — Фуцзянь — родина улуна Тегуаньинь из уезда Аньси
 
@@ -2525,7 +2518,7 @@
 ## 福建省 — Фуцзянь — провинция на юго-востоке Китая у Тайваньского пролива, центр — Фучжоу
 
 - выдаёт 2022-23-shk-mosobl-2: ответ 福建, Фуцзянь; зацепка Фучжоу
-- видна в 8: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q12, provinces/provinces-q123, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q15, provinces/provinces-q16
+- видна в 6: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q123, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q16
 
 ## 科学发展观 — «Научная концепция развития» — понятие, выдвинутое Ху Цзиньтао в 2003 году
 
@@ -2642,11 +2635,6 @@
 - выдаёт space/space-q12: ответ 翟志刚, Чжай Чжиган; зацепка 2008, та же строка
 - видна в 2: space/space-q04, space/space-q13
 
-## 老子 — Лао-цзы — мыслитель конца эпохи Чуньцю, основатель даосизма
-
-- выдаёт people/people-q01: ответ 老子, Лао-цзы; зацепка эпоха Чуньцю, та же строка
-- видна в 4: people/people-q02, people/people-q03, people/people-q04, people/people-q29
-
 ## 聚宝盆 — «Чаша сокровищ» — так зовут Цайдамскую котловину за богатство недр
 
 - выдаёт nature/nature-q58: ответ Цайдамская котловина; зацепка чаша сокровищ, та же строка
@@ -2747,6 +2735,16 @@
 - выдаёт people/people-q11: ответ изготовление бумаги; зацепка Цай Лунь, 蔡伦, та же строка
 - видна в 1: people/people-q05
 
+## 藏传佛教 — Тибетский буддизм (в старых текстах — «ламаизм») — религия тибетцев
+
+- выдаёт 2018-19-reg-7: ответ 佛教, Буддизм; зацепка Тибет, та же строка
+- видна в 1: ethnos/ethnos-q94
+
+## 藏传佛教 — Тибетский буддизм (в старых текстах — «ламаизм») — традиционная религия бурят (название ответа)
+
+- выдаёт 2018-19-reg-7: ответ 佛教, Буддизм; зацепка Тибет
+- видна в 1: ethnos/ethnos-q95
+
 ## 衡山 — Хэншань в Хунани — Южный пик пяти священных гор
 
 - выдаёт nature/nature-q10: ответ 衡山, Хэншань в Хунани; зацепка Хунань, Южный пик, пять священных гор, та же строка
@@ -2757,10 +2755,15 @@
 - выдаёт people/people-q16: ответ гибридный рис; зацепка Юань Лунпин, 袁隆平, та же строка
 - видна в 1: people/people-q05
 
+## 西伯利亚大铁路 — Транссибирская магистраль — самая длинная железная дорога мира
+
+- выдаёт nature/nature-q163: ответ 西伯利亚大铁路, Транссибирская магистраль, Транссиб; зацепка Железо, та же строка
+- видна в 1: nature/nature-q68
+
 ## 西安 — Сиань — административный центр провинции Шэньси
 
 - выдаёт provinces/provinces-q37: ответ 西安; зацепка провинция Шэньси, та же строка
-- видна в 7: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q35, provinces/provinces-q36, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
+- видна в 5: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
 
 ## 西安 — Сиань — город в Шэньси, где в декабре 1936 года арестовали Чан Кайши
 
@@ -2870,7 +2873,7 @@
 ## 辽宁 — Ляонин — приморская провинция на юге Северо-Востока, центр — Шэньян
 
 - выдаёт provinces/provinces-q35: ответ Шэньян; зацепка провинция Ляонин, та же строка
-- видна в 14: provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 9: provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q110, provinces/provinces-q32, provinces/provinces-q42
 
 ## 辽宁 — Ляонин, провинция на северо-востоке Китая, центр — Шэньян
 
@@ -2880,7 +2883,7 @@
 ## 辽宁省 — Ляонин — приморская провинция на юге Северо-Востока, центр — Шэньян
 
 - выдаёт provinces/provinces-q35: ответ Шэньян; зацепка Ляонин, та же строка
-- видна в 8: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q12, provinces/provinces-q123, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q15, provinces/provinces-q16
+- видна в 6: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q123, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q16
 
 ## 辽朝 — Династия Ляо — киданьская, 916–1125, основал Елюй Абаоцзи
 
@@ -2975,7 +2978,7 @@
 ## 长春 — Чанчунь — центр провинции Цзилинь
 
 - выдаёт provinces/provinces-q36: ответ 长春, Чанчунь; зацепка Провинция Цзилинь, та же строка
-- видна в 9: provinces/provinces-q100, provinces/provinces-q101, provinces/provinces-q33, provinces/provinces-q37, provinces/provinces-q38, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97, provinces/provinces-q99
+- видна в 5: provinces/provinces-q100, provinces/provinces-q33, provinces/provinces-q92, provinces/provinces-q96, provinces/provinces-q97
 
 ## 长江 — Янцзы — на ней стоит ГЭС «Три ущелья» (Санься), крупнейшая в мире
 
@@ -3082,6 +3085,11 @@
 - выдаёт people/people-q17: ответ 青蒿素, артемизинин; зацепка Ту Юю, та же строка
 - видна в 6: people/people-q11, people/people-q12, people/people-q13, people/people-q14, people/people-q15, people/people-q16
 
+## 青藏铁路 — Цинхай-Тибетская железная дорога — Синин — Лхаса, 1956 км
+
+- выдаёт nature/nature-q68: ответ 青藏铁路, Цинхай-Тибетская железная дорога; зацепка Железо, та же строка
+- видна в 1: nature/nature-q163
+
 ## 静夜思 — «Думы тихой ночью» — четверостишие Ли Бо о тоске по дому
 
 - выдаёт literature/literature-q88: ответ 静夜思, Думы тихой ночью; зацепка Ли Бо, та же строка
@@ -3105,7 +3113,7 @@
 ## 额尔齐斯河 — Иртыш — главный приток Оби, берёт начало в Китае, в Синьцзяне
 
 - выдаёт nature/nature-q102: ответ 额尔齐斯河; зацепка Синий, Синьцзян, та же строка
-- видна в 9: nature/nature-q05, nature/nature-q100, nature/nature-q101, nature/nature-q103, nature/nature-q104, nature/nature-q105, nature/nature-q106, nature/nature-q127, nature/nature-q128
+- видна в 5: nature/nature-q100, nature/nature-q101, nature/nature-q103, nature/nature-q127, nature/nature-q128
 
 ## 风云儿女 — «Дети грозных лет» — фильм 1935 года, для которого написан «Марш добровольцев»
 
@@ -3165,12 +3173,12 @@
 ## 黑龙江 — Хэйлунцзян — самая северная провинция Китая, центр — Харбин (название ответа)
 
 - выдаёт 2020-21-mun-mosobl-47: ответ Харбин; зацепка провинция Хэйлунцзян, 黑龙江
-- видна в 14: provinces/provinces-q01, provinces/provinces-q02, provinces/provinces-q03, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q06, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q10, provinces/provinces-q110, provinces/provinces-q122, provinces/provinces-q32, provinces/provinces-q42
+- видна в 9: provinces/provinces-q02, provinces/provinces-q04, provinces/provinces-q05, provinces/provinces-q07, provinces/provinces-q08, provinces/provinces-q09, provinces/provinces-q110, provinces/provinces-q32, provinces/provinces-q42
 
 ## 黑龙江省 — Хэйлунцзян — самая северная провинция Китая, центр — Харбин
 
 - выдаёт 2020-21-mun-mosobl-47: ответ Харбин; зацепка Провинция Хэйлунцзян, 黑龙江省
-- видна в 8: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q12, provinces/provinces-q123, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q15, provinces/provinces-q16
+- видна в 6: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q123, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q16
 
 ## 黔 — Сокращение Гуйчжоу — Цянь; второе её сокращение — 贵
 

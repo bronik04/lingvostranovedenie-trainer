@@ -4433,7 +4433,8 @@
         "genre": "zh",
         "set": "zh",
         "hero": "zh",
-        "about": "ru"
+        "about": "ru",
+        "canonicalbook": "zh"
       },
       "sides": [
         "author",
@@ -7743,6 +7744,160 @@
             }
           ],
           "olympiad": []
+        },
+        {
+          "id": "lit-w-mengzi",
+          "sources": [
+            {
+              "title": "孟子 — 济宁党史史志网",
+              "url": "http://zgjnds.jining.gov.cn/art/2015/4/29/art_62661_2657010.html",
+              "quote": "中国古代著名思想家，战国时期儒家代表人物。孟子著有《孟子》一书。有《孟子》七篇传世，为儒家经典之一。孟子师承子思，继承、发挥了孔子的思想，成为仅次于孔子的一代儒家宗师，有“亚圣”之称，与孔子并称为“孔孟”。",
+              "checkedAt": "2026-10-23",
+              "authority": "official",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/people.json → thinkers/th-mengzi; цитата и проверенная ранее дата из принятого досье; нового открытия не было"
+            },
+            {
+              "title": "《四書五經大全輯刊》 — 中南大学图书馆",
+              "url": "https://lib.csu.edu.cn/info/2917/4489.htm",
+              "quote": "四书指的是《大学》《中庸》《论语》《孟子》，五经指《诗经》《尚书》《礼记》《易经》《春秋》。",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "孟子 — 中国关键词",
+              "url": "http://keywords.china.org.cn/2024-08/28/content_117392970.html",
+              "quote": "孟子（约前372—前289），战国中期著名思想家、教育家，是继孔子之后儒家学派的代表人物，与孔子并称“孔孟”。孟子一生经历与孔子非常相似，游历诸国都未得重用。孟子重要言行被编纂整理为《孟子》一书",
+              "checkedAt": "2026-10-23",
+              "authority": "official",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/people.json → thinkers/th-mengzi; цитата и дата из ранее принятого досье; нового открытия не было"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "孟子"
+          },
+          "canonicalbook": {
+            "zh": "《孟子》",
+            "ru": [
+              "«Мэн-цзы»"
+            ],
+            "gloss": "«Мэн-цзы» — в книге семь частей; Мэн-цзы почитают как «второго мудреца»."
+          }
+        },
+        {
+          "id": "lit-w-daxue",
+          "sources": [
+            {
+              "title": "四书 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/241555.html?hl=%E4%B9%A6",
+              "quote": "《大学》、《中庸》摘自《礼记》。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "《四書五經大全輯刊》 — 中南大学图书馆",
+              "url": "https://lib.csu.edu.cn/info/2917/4489.htm",
+              "quote": "四书指的是《大学》《中庸》《论语》《孟子》，五经指《诗经》《尚书》《礼记》《易经》《春秋》。",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "大学"
+          },
+          "canonicalbook": {
+            "zh": "《大学》",
+            "ru": [
+              "«Великое учение»"
+            ],
+            "gloss": "«Великое учение» — первоначально глава «Ли цзи», позднее отдельная книга."
+          }
+        },
+        {
+          "id": "lit-w-laozi",
+          "sources": [
+            {
+              "title": "老子 — 中国关键词",
+              "url": "http://keywords.china.org.cn/2024-08/28/content_117392960.html",
+              "quote": "老子是春秋末期著名思想家、哲学家，道家创始人和主要代表人物，被尊为道祖，称“太上老君”。春秋末年战乱，老子辞官归隐，西出函谷关，著有《道德经》。《道德经》分《道经》《德经》两篇，共八十一章",
+              "authority": "official",
+              "checkedAt": "2026-10-23",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/people.json → thinkers/th-laozi; цитата и проверенная ранее дата из принятого досье; нового открытия не было"
+            },
+            {
+              "title": "道德经 — 对外经济贸易大学图书馆馆藏目录",
+              "url": "https://opac.uibe.edu.cn/opac/book/de3fb818f32b0a466ca6b24da13c86a0",
+              "quote": "《道德经》又称《老子》，其之得名缘于书中着重“言道德之意”。通行本全书共八十一章",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            },
+            {
+              "title": "老子 — 周口市人民政府",
+              "url": "https://www.zhoukou.gov.cn/page_pc/zjzk/zkyx/rwzk/articleCC2213D142524D24A197B757822AE753.html",
+              "quote": "老子的成就主要体现在《道德经》一书里。",
+              "authority": "official",
+              "checkedAt": "2026-10-23",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/people.json → thinkers/th-laozi; цитата и дата из ранее принятого досье; нового открытия не было"
+            }
+          ],
+          "olympiad": [
+            "2022-23-mun-orel-1"
+          ],
+          "name": {
+            "zh": "老子"
+          },
+          "canonicalbook": {
+            "zh": "《老子》",
+            "ru": [
+              "«Лао-цзы»"
+            ],
+            "gloss": "«Лао-цзы» — даосский трактат о Дао и дэ, состоящий из 81 главы."
+          }
+        },
+        {
+          "id": "lit-w-lunyu",
+          "sources": [
+            {
+              "title": "Confucius — China Keywords (SCIO)",
+              "url": "http://english.scio.gov.cn/m/featured/chinakeywords/2024-08/30/content_117397349.htm",
+              "quote": "After his death, his disciples and the disciples of his disciples collected and compiled their ideas and activities, which gave birth to the Analects",
+              "authority": "official",
+              "checkedAt": "2026-10-23",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/people.json → thinkers/th-kongzi; цитата и проверенная ранее дата из принятого досье; нового открытия не было"
+            },
+            {
+              "title": "《四書五經大全輯刊》 — 中南大学图书馆",
+              "url": "https://lib.csu.edu.cn/info/2917/4489.htm",
+              "quote": "四书指的是《大学》《中庸》《论语》《孟子》，五经指《诗经》《尚书》《礼记》《易经》《春秋》。",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "孔子 — 济宁党史史志网",
+              "url": "http://zgjnds.jining.gov.cn/art/2015/4/29/art_62661_2657011.html",
+              "quote": "孔子的言行思想主要载于语录体散文集《论语》及先秦和秦汉保存下的《史记·孔子世家》。",
+              "authority": "official",
+              "checkedAt": "2026-10-23",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/people.json → thinkers/th-kongzi; цитата и дата из ранее принятого досье; нового открытия не было"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "论语"
+          },
+          "canonicalbook": {
+            "zh": "《论语》",
+            "ru": [
+              "«Лунь юй»"
+            ],
+            "gloss": "«Лунь юй» — слова и дела Конфуция, собранные его учениками и их учениками."
+          }
         }
       ]
     },
@@ -7966,6 +8121,160 @@
               "authority": "academic"
             }
           ]
+        }
+      ]
+    },
+    "colloquialisms": {
+      "columns": {
+        "swimlabel": "zh",
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "colloq-hanyazi",
+          "sources": [
+            {
+              "title": "旱 — 中央研究院漢字古今字資料庫",
+              "url": "https://chardb.iis.sinica.edu.tw/char/12822",
+              "quote": "跟水無關的。",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "旱鴨子 — 教育部《重編國語辭典修訂本》2021",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=82017&q=1&word=%E9%B4%A8",
+              "quote": "不會游泳的人。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            }
+          ],
+          "olympiad": [
+            "2024-25-mun-kursk-8"
+          ],
+          "name": {
+            "zh": "旱鸭子",
+            "ru": [
+              "«Сухопутная утка»"
+            ],
+            "gloss": "«Сухопутная утка» — 旱 означает отсутствие связи с водой."
+          },
+          "swimlabel": {
+            "zh": "旱鸭子",
+            "ru": [
+              "«Сухопутная утка»"
+            ],
+            "gloss": "«Сухопутная утка» — 旱 означает отсутствие связи с водой."
+          }
+        },
+        {
+          "id": "colloq-luotangji",
+          "sources": [
+            {
+              "title": "落湯雞 — 教育部《重編國語辭典修訂本》2021",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=66668&la=1&powerMode=0",
+              "quote": "比喻人渾身溼透。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "落湯雞 — 教育部《國語辭典簡編本》2021",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=15467",
+              "quote": "形容人渾身溼透、十分狼狽。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "落汤鸡",
+            "ru": [
+              "«Промокшая курица»"
+            ],
+            "gloss": "«Промокшая курица» — так называют человека, вымокшего насквозь."
+          },
+          "swimlabel": {
+            "zh": "落汤鸡",
+            "ru": [
+              "«Промокшая курица»"
+            ],
+            "gloss": "«Промокшая курица» — так называют человека, вымокшего насквозь."
+          }
+        },
+        {
+          "id": "colloq-tiegongji",
+          "sources": [
+            {
+              "title": "鐵公雞 — 教育部《重編國語辭典修訂本》2021",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=52362&la=0&powerMode=0",
+              "quote": "（歇後語）一毛不拔。用來戲稱小氣吝嗇之人。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "鐵公雞 — 教育部《國語辭典簡編本》2021",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=10910&la=0&powerMode=0",
+              "quote": "(歇後語)一毛不拔。用來戲稱人小氣吝嗇。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "铁公鸡",
+            "ru": [
+              "«Железный петух»"
+            ],
+            "gloss": "«Железный петух» — насмешливое название скупца: «ни пёрышка не выщипнуть»."
+          },
+          "swimlabel": {
+            "zh": "铁公鸡",
+            "ru": [
+              "«Железный петух»"
+            ],
+            "gloss": "«Железный петух» — насмешливое название скупца: «ни пёрышка не выщипнуть»."
+          }
+        },
+        {
+          "id": "colloq-laoshushi",
+          "sources": [
+            {
+              "title": "Поговорка о мышином помёте — фрагмент PDF в официальной библиотеке Чжэцзяна; заголовок документа не установлен",
+              "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web2634/site/attach/0/1bf7f2d0a9f94468a5596d1e704f7c1c.pdf",
+              "quote": "原意指一个小集体中，大部分人都做好了，但一人没做好就毁及大伙儿",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-pdf-excerpt; точный фрагмент официального правительственного PDF, полный документ и его титульный лист не открывались; заголовок источника — честная описательная метка"
+            },
+            {
+              "title": "漫谈中国文化里的“鼠” — 人民网·文化（作者：郑学富）",
+              "url": "https://culture.people.com.cn/n1/2020/0207/c1013-31575151.html",
+              "quote": "一粒老鼠屎——坏了一锅汤",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "老鼠屎",
+            "ru": [
+              "«Мышиный помёт»"
+            ],
+            "gloss": "«Мышиный помёт» — образ человека, портящего общее дело, из пословицы о каше."
+          },
+          "swimlabel": {
+            "zh": "老鼠屎",
+            "ru": [
+              "«Мышиный помёт»"
+            ],
+            "gloss": "«Мышиный помёт» — образ человека, портящего общее дело, из пословицы о каше."
+          }
         }
       ]
     }

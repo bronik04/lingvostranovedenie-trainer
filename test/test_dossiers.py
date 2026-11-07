@@ -1506,6 +1506,32 @@ class RemovedIdsTest(unittest.TestCase):
             self.assertEqual(load_removed(Path(directory, 'none.json')), {})
 
 
+class NumericMentionTest(unittest.TestCase):
+    def test_count_is_not_a_substring_of_a_year_or_larger_count(self):
+        answer = {'zh': '21'}
+        for text in ['1721 год', '1421 год', '221 год до н. э.', '1221 год',
+                     '2021年', '210 экономик', '321 экономика']:
+            with self.subTest(text=text):
+                self.assertEqual(_mentions(text, answer), [])
+        for text in ['21 экономика', '21个经济体', '(21)', 'число — 21.']:
+            with self.subTest(text=text):
+                self.assertEqual(_mentions(text, answer), ['21'])
+
+    def test_cross_dossier_count_keeps_real_hints_but_ignores_year_suffix(self):
+        def loaded(text):
+            return [({'id': name, 'tables': {'facts': {'columns': {'name': 'zh'},
+                     'rows': [{'id': 'answer', 'name': {'zh': answer}}]}}},
+                     [{'id': name + '-q01', 'status': 'accepted',
+                       'fact': {'table': 'facts', 'row': 'answer', 'ask': 'name'},
+                       'questionRu': question}])
+                    for name, answer, question in [('count', '21', 'Сколько экономик в АТЭС?'),
+                                                   ('event', '俄罗斯帝国', text)]]
+        self.assertEqual(cross_leak_errors([], loaded('Что провозгласили в 1721 году?')), [])
+        errors = cross_leak_errors([], loaded('Какое государство названо в пункте 21?'))
+        self.assertEqual(len(errors), 1)
+        self.assertIn("['21']", errors[0])
+
+
 class SurnameMentionTest(unittest.TestCase):
     """Фамилия на -ов/-ев/-ин ищется со всем суффиксом: «Меньшов» — не «меньше»."""
 

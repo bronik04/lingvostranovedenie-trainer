@@ -1,0 +1,370 @@
+{
+  "reviewId": "regional-2026-11-07-batch-4",
+  "date": "2026-11-07",
+  "state": "accepted-for-release",
+  "retainedQuestions": 16,
+  "questionsWithoutNewOptionSelection": 16,
+  "originalReviewNumbersPreserved": true,
+  "publicationAuthorized": true,
+  "q1": {
+    "id": "2022-23-shk-mosobl-18",
+    "questionRu": "Какие регионы Китая располагаются на берегу Бохайского залива?",
+    "decision": "restore-original-wording"
+  },
+  "q2": {
+    "id": "2023-24-mun-krsk-5",
+    "state": "excluded-from-current-batch",
+    "originalQuestionRu": "Какой из нижеперечисленных предметов не относится к четырем искусствам древнего Китая?",
+    "originalOptions": [
+      {
+        "id": "o1",
+        "zh": "琴"
+      },
+      {
+        "id": "o2",
+        "zh": "棋"
+      },
+      {
+        "id": "o3",
+        "zh": "书"
+      },
+      {
+        "id": "o4",
+        "zh": "猎"
+      }
+    ],
+    "originalAnswer": {
+      "optionId": "o4",
+      "state": "verified"
+    },
+    "alternatives": [
+      {
+        "proposalId": "q2-a",
+        "label": "С резьбой по печатям",
+        "recommended": true,
+        "state": "withdrawn-with-question",
+        "publicationAuthorized": false,
+        "previewQuestionRu": "Какое из перечисленных занятий НЕ входит в традиционные четыре искусства китайского учёного?",
+        "answerOptionId": "o4",
+        "originalAnswerZh": "猎",
+        "changesCorrectAnswerText": true,
+        "originalIntentPreserved": "Проверяется принадлежность к традиционному набору четырёх искусств; набор не меняется. Охота заменена другим занятием вне набора, чтобы ответ не выделялся очевидностью.",
+        "options": [
+          {
+            "id": "o1",
+            "originalZh": "琴",
+            "zh": "古琴演奏",
+            "correct": false,
+            "ru": "Игра на гуцине — у этого инструмента семь струн.",
+            "source": {
+              "title": "大圣遗音 — 故宫博物院",
+              "url": "https://gugongzhanlan.dpm.org.cn/exhibitShare/168",
+              "quote": "周文王、武王各增一弦而定为七弦",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-exact-indexed-excerpt"
+            }
+          },
+          {
+            "id": "o2",
+            "originalZh": "棋",
+            "zh": "围棋对弈",
+            "correct": false,
+            "ru": "Игра в го — на стандартной доске 19 вертикальных и 19 горизонтальных линий.",
+            "source": {
+              "title": "中国围棋规则 — 中国围棋协会",
+              "url": "https://wqwh.weiqi.org.cn/rules/",
+              "quote": "棋盘由纵横各十九条等距离、垂直交叉的平行线构成。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-exact-indexed-excerpt"
+            }
+          },
+          {
+            "id": "o3",
+            "originalZh": "书",
+            "zh": "书法",
+            "correct": false,
+            "ru": "Каллиграфия — иероглифы пишут кистью в нескольких традиционных стилях.",
+            "source": {
+              "title": "Chinese calligraphy — UNESCO",
+              "url": "https://ich.unesco.org/en/RL/chinese-calligraphy-00216",
+              "quote": "calligraphers’ brushes are used to ink five different styles of script",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-exact-indexed-excerpt; direct open returned anti-bot challenge"
+            }
+          },
+          {
+            "id": "o4",
+            "originalZh": "猎",
+            "zh": "篆刻",
+            "correct": true,
+            "ru": "Резьба по печатям — соединяет каллиграфию и гравирование.",
+            "source": {
+              "title": "篆刻艺术 — 北京市海淀区信息公开大厅",
+              "url": "https://zyk.bjhd.gov.cn/jbdt/auto4555_51851/auto4555_57653/201810/t20181002_3181728.shtml?type=computer",
+              "quote": "篆刻艺术，是书法和镌刻相结合制作印章的艺术",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-exact-indexed-excerpt"
+            }
+          }
+        ],
+        "answerVerificationSources": [
+          {
+            "title": "中国传统文化：文艺篇之琴棋书画（一） — 华中师范大学",
+            "url": "https://www.ccnu.edu.cn/ccnuyouth/info/1055/9301.htm",
+            "quote": "在古代，弹琴、弈棋、书法、绘画是文人骚客修身所必须掌握的技能，故合称琴棋书画",
+            "authority": "academic",
+            "checkedAt": "2026-11-07",
+            "verificationMethod": "primary-web-search-exact-indexed-excerpt"
+          }
+        ],
+        "proposedOptionEdits": [
+          {
+            "optionId": "o1",
+            "originalZh": "琴",
+            "zh": "古琴演奏",
+            "reason": "Однозначное название занятия; пересмотр вариантов по замечанию автора."
+          },
+          {
+            "optionId": "o2",
+            "originalZh": "棋",
+            "zh": "围棋对弈",
+            "reason": "Однозначное название занятия; пересмотр вариантов по замечанию автора."
+          },
+          {
+            "optionId": "o3",
+            "originalZh": "书",
+            "zh": "书法",
+            "reason": "Однозначное название занятия; пересмотр вариантов по замечанию автора."
+          },
+          {
+            "optionId": "o4",
+            "originalZh": "猎",
+            "zh": "篆刻",
+            "reason": "Однозначное название занятия; пересмотр вариантов по замечанию автора."
+          }
+        ]
+      },
+      {
+        "proposalId": "q2-b",
+        "label": "С чайным искусством",
+        "recommended": false,
+        "state": "withdrawn-with-question",
+        "publicationAuthorized": false,
+        "previewQuestionRu": "Какое из перечисленных занятий НЕ входит в традиционные четыре искусства китайского учёного?",
+        "answerOptionId": "o4",
+        "originalAnswerZh": "猎",
+        "changesCorrectAnswerText": true,
+        "originalIntentPreserved": "Проверяется принадлежность к традиционному набору четырёх искусств; набор не меняется. Охота заменена другим занятием вне набора, чтобы ответ не выделялся очевидностью.",
+        "options": [
+          {
+            "id": "o1",
+            "originalZh": "琴",
+            "zh": "古琴演奏",
+            "correct": false,
+            "ru": "Игра на гуцине — у этого инструмента семь струн.",
+            "source": {
+              "title": "大圣遗音 — 故宫博物院",
+              "url": "https://gugongzhanlan.dpm.org.cn/exhibitShare/168",
+              "quote": "周文王、武王各增一弦而定为七弦",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-exact-indexed-excerpt"
+            }
+          },
+          {
+            "id": "o2",
+            "originalZh": "棋",
+            "zh": "围棋对弈",
+            "correct": false,
+            "ru": "Игра в го — на стандартной доске 19 вертикальных и 19 горизонтальных линий.",
+            "source": {
+              "title": "中国围棋规则 — 中国围棋协会",
+              "url": "https://wqwh.weiqi.org.cn/rules/",
+              "quote": "棋盘由纵横各十九条等距离、垂直交叉的平行线构成。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-exact-indexed-excerpt"
+            }
+          },
+          {
+            "id": "o3",
+            "originalZh": "书",
+            "zh": "书法",
+            "correct": false,
+            "ru": "Каллиграфия — иероглифы пишут кистью в нескольких традиционных стилях.",
+            "source": {
+              "title": "Chinese calligraphy — UNESCO",
+              "url": "https://ich.unesco.org/en/RL/chinese-calligraphy-00216",
+              "quote": "calligraphers’ brushes are used to ink five different styles of script",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-exact-indexed-excerpt; direct open returned anti-bot challenge"
+            }
+          },
+          {
+            "id": "o4",
+            "originalZh": "猎",
+            "zh": "茶艺",
+            "correct": true,
+            "ru": "Чайное искусство — включает заваривание и дегустацию чая.",
+            "source": {
+              "title": "茶之绿色中国梦——《中国茶艺》序 — 天门市人民政府",
+              "url": "https://www.tianmen.gov.cn/csly/cwh/201611/t20161130_1932008.shtml",
+              "quote": "茶艺是泡茶与品茶的艺术。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-full-page-read; paragraph8"
+            }
+          }
+        ],
+        "answerVerificationSources": [
+          {
+            "title": "中国传统文化：文艺篇之琴棋书画（一） — 华中师范大学",
+            "url": "https://www.ccnu.edu.cn/ccnuyouth/info/1055/9301.htm",
+            "quote": "在古代，弹琴、弈棋、书法、绘画是文人骚客修身所必须掌握的技能，故合称琴棋书画",
+            "authority": "academic",
+            "checkedAt": "2026-11-07",
+            "verificationMethod": "primary-web-search-exact-indexed-excerpt"
+          }
+        ],
+        "proposedOptionEdits": [
+          {
+            "optionId": "o1",
+            "originalZh": "琴",
+            "zh": "古琴演奏",
+            "reason": "Однозначное название занятия; пересмотр вариантов по замечанию автора."
+          },
+          {
+            "optionId": "o2",
+            "originalZh": "棋",
+            "zh": "围棋对弈",
+            "reason": "Однозначное название занятия; пересмотр вариантов по замечанию автора."
+          },
+          {
+            "optionId": "o3",
+            "originalZh": "书",
+            "zh": "书法",
+            "reason": "Однозначное название занятия; пересмотр вариантов по замечанию автора."
+          },
+          {
+            "optionId": "o4",
+            "originalZh": "猎",
+            "zh": "茶艺",
+            "reason": "Однозначное название занятия; пересмотр вариантов по замечанию автора."
+          }
+        ]
+      }
+    ],
+    "decision": {
+      "state": "excluded-from-current-batch",
+      "date": "2026-11-07",
+      "reason": "Убрать вопрос о занятии вне четырёх искусств по прямому решению автора; оба предложенных набора отозваны вместе с вопросом.",
+      "appliedToOperationalData": false,
+      "doNotReofferWithoutAuthorDecision": true
+    }
+  },
+  "q7": {
+    "id": "2025-26-shk-mosobl-3",
+    "questionRu": "С какой провинцией НЕ граничит Автономный район Внутренняя Монголия?",
+    "decision": "capitalize-НЕ-approved-by-author"
+  },
+  "excluded": [
+    {
+      "reviewNumber": 2,
+      "id": "2023-24-mun-krsk-5",
+      "decision": {
+        "state": "excluded-from-current-batch",
+        "date": "2026-11-07",
+        "reason": "Убрать вопрос о занятии вне четырёх искусств по прямому решению автора; оба предложенных набора отозваны вместе с вопросом.",
+        "appliedToOperationalData": false,
+        "doNotReofferWithoutAuthorDecision": true
+      },
+      "routing": null
+    },
+    {
+      "reviewNumber": 4,
+      "id": "2019-20-mun-kgd-10",
+      "decision": {
+        "state": "routed-to-chengyu-draft",
+        "date": "2026-11-07",
+        "reason": "Перенести в раздел идиом; не включать в основную страноведческую партию.",
+        "appliedToOperationalData": false,
+        "doNotReofferWithoutAuthorDecision": true
+      },
+      "routing": {
+        "file": "data/chengyu/drafts.json",
+        "id": "cy-沧海桑田",
+        "status": "draft",
+        "published": false
+      }
+    },
+    {
+      "reviewNumber": 13,
+      "id": "2025-26-mun-sverd-58",
+      "decision": {
+        "state": "deferred-for-rewording",
+        "date": "2026-11-07",
+        "reason": "Пока снять. Позже переработать без перечисления трёх объектов в каждом варианте.",
+        "appliedToOperationalData": false,
+        "doNotReofferWithoutAuthorDecision": true
+      },
+      "routing": null
+    },
+    {
+      "reviewNumber": 20,
+      "id": "2023-24-mun-udm-1",
+      "decision": {
+        "state": "excluded-from-current-batch",
+        "date": "2026-11-07",
+        "reason": "Убрать вопрос о годе основания Владивостока по решению автора.",
+        "appliedToOperationalData": false,
+        "doNotReofferWithoutAuthorDecision": true
+      },
+      "routing": null
+    }
+  ],
+  "chengyuDraftChange": {
+    "file": "data/chengyu/drafts.json",
+    "id": "cy-沧海桑田",
+    "beforeSha256": "f44c87c7a53b76622c903e3ab8d52d2899f46cb18903fb3a80892b8e2260fa74",
+    "afterSha256": "34d4bde4c582d9eae29cffaefd2de3e1253f232d5132571201f96aebae874ec3",
+    "status": "draft",
+    "published": false
+  },
+  "preference": "Избегать вопросов с перечислением нескольких объектов внутри каждого варианта; №13 отложен для будущей переработки, без замены в этой партии.",
+  "independentReview": {
+    "status": "archived-question-withdrawn",
+    "report": "2026-11-07-regional-batch-4-author-feedback-review.md",
+    "criticalIssues": 0,
+    "importantIssues": 0,
+    "minorResolution": "Историческая структурная проверка20/80 явно помечена архивной; текущая —17вопросов.",
+    "scope": "Историческая проверка переработок №2, теперь отозванных вместе с вопросом."
+  },
+  "authorApproval": {
+    "date": "2026-11-07",
+    "acceptedReviewNumbers": [
+      1,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "acceptedManifestHash": "1ab8b13fb11fb1ae9d3cb2a4303297a93ca9c0db4953b70836f27cfc2a819ba9",
+    "instruction": "Остальные 16 вопросов принимаем. Встраивай в досье, проверь подписи и взаимные подсказки, затем публикуй на сайте."
+  }
+}

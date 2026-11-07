@@ -607,6 +607,27 @@
     "check": {
       "verdict": "accept",
       "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
+    },
+    "exclude": [
+      "concept-huaqiao",
+      "concept-haohan",
+      "concept-hanren",
+      "concept-hanzuren"
+    ]
+  },
+  {
+    "id": "people-q34",
+    "embeds": "2024-25-mun-kursk-7",
+    "status": "accepted",
+    "fact": {
+      "table": "concepts",
+      "row": "concept-huaqiao",
+      "ask": "diasporaTerm"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял оставшиеся16вопросов партии4 и прямо разрешил встраивание/публикацию. Сохранены ключ, ID, четыре показанных варианта и все подписи; источники проверены отдельно по темам. Итоговый обзор — regional-batch-4-release-review."
     }
   }
 ]

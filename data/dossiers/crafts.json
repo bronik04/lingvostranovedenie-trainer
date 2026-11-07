@@ -8881,6 +8881,303 @@
         "unesco",
         "material"
       ]
+    },
+    "materials": {
+      "columns": {
+        "shengmaterial": "zh",
+        "name": "zh",
+        "oraclematerial": "zh"
+      },
+      "rows": [
+        {
+          "id": "material-stone",
+          "sources": [
+            {
+              "title": "中央音乐学院陈荃有教授谈中国古代的金石之乐 — 山东大学文学院",
+              "url": "https://www.lit.sdu.edu.cn/info/1146/2581.htm",
+              "quote": "皮曰鼓，竹曰管，丝曰弦，石曰磬，金曰钟，木曰柷",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "琅琊刻石 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202010/t20201028_247940.shtml",
+              "quote": "公元前219年，秦始皇第二次巡游，登临琅琊山（今山东省胶南市南）时，修琅琊台，勒石颂扬他统一中国的功绩。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "寿山石雕 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/14012.html",
+              "quote": "申报地区或单位：福建省福州市 寿山石雕是传统的民间雕刻艺术，以产于福州北部山区北峰的寿山石为材料",
+              "authority": "official",
+              "checkedAt": "2026-10-18",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/crafts.json → crafts/cr-shoushan; цитата и дата из ранее принятого досье; нового открытия не было"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "石头",
+            "ru": [
+              "Камень"
+            ],
+            "gloss": "Камень — из него делают цин, один из древних китайских музыкальных инструментов."
+          },
+          "shengmaterial": {
+            "zh": "石头",
+            "ru": [
+              "Камень"
+            ],
+            "gloss": "Камень — из него делают цин, один из древних китайских музыкальных инструментов."
+          },
+          "oraclematerial": {
+            "zh": "石头",
+            "ru": [
+              "Камень"
+            ],
+            "gloss": "Камень — на нём сохранились, например, памятные надписи императора Цинь Шихуана."
+          }
+        },
+        {
+          "id": "material-animalhide",
+          "sources": [
+            {
+              "title": "中央音乐学院陈荃有教授谈中国古代的金石之乐 — 山东大学文学院",
+              "url": "https://www.lit.sdu.edu.cn/info/1146/2581.htm",
+              "quote": "皮曰鼓，竹曰管，丝曰弦，石曰磬，金曰钟，木曰柷",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "Chinese shadow puppetry — UNESCO Intangible Cultural Heritage",
+              "url": "https://ich.unesco.org/en/RL/chinese-shadow-puppetry-00421",
+              "quote": "Chinese shadow puppetry is a form of theatre acted by colourful silhouette figures made from leather or paper",
+              "checkedAt": "2026-10-23",
+              "authority": "official",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/crafts.json → folk/fk-piyingxi; цитата и дата из ранее принятого досье; нового открытия не было"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "动物皮",
+            "ru": [
+              "Кожа животных"
+            ],
+            "gloss": "Кожа животных — традиционный материал мембраны барабана гу."
+          },
+          "shengmaterial": {
+            "zh": "动物皮",
+            "ru": [
+              "Кожа животных"
+            ],
+            "gloss": "Кожа животных — традиционный материал мембраны барабана гу."
+          }
+        },
+        {
+          "id": "material-iron",
+          "sources": [
+            {
+              "title": "笙 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/collection/music/232798.html",
+              "quote": "笙脚末端镶接薄铜页簧片。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "芜湖铁画锻制技艺 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/14329.html",
+              "quote": "它以熟铁为原料，经红炉加热后，用锻、钻、抬、压、焊、锉、凿等技法制成。",
+              "authority": "official",
+              "checkedAt": "2026-10-18",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/crafts.json → crafts/cr-tiehua; цитата и дата из ранее принятого досье; нового открытия не было"
+            },
+            {
+              "title": "“铁与火”铸就的艺术之花（传承之光） — 人民日报",
+              "url": "http://paper.people.com.cn/rmrb/html/2023-04/15/nw.D110000renmrb_20230415_3-06.htm",
+              "quote": "以锤为笔，以铁为墨，以砧为纸，以炉为砚，既具有国画的神韵，又具雕塑的立体美",
+              "authority": "official",
+              "checkedAt": "2026-10-18",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/crafts.json → crafts/cr-tiehua; цитата и дата из ранее принятого досье; нового открытия не было"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "铁",
+            "ru": [
+              "Железо"
+            ],
+            "gloss": "Железо — у музейного шэна металлические язычки медные, а трубки бамбуковые."
+          },
+          "shengmaterial": {
+            "zh": "铁",
+            "ru": [
+              "Железо"
+            ],
+            "gloss": "Железо — у музейного шэна металлические язычки медные, а трубки бамбуковые."
+          }
+        },
+        {
+          "id": "material-bamboo",
+          "sources": [
+            {
+              "title": "笙 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/collection/music/232798.html",
+              "quote": "此笙木制笙斗，上面列植十七根竹管笙苗，右口稍缺，左右分列，中管最长，两旁渐短，形如凤翼。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "竹刻（嘉定竹刻） — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/14031.html",
+              "quote": "嘉定位于上海西北部，北依浏河，盛产竹子。嘉定竹刻技艺为明代正德、嘉靖年间（1506-1566）朱鹤所创",
+              "authority": "official",
+              "checkedAt": "2026-10-18",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/crafts.json → crafts/cr-jiading; цитата и дата из ранее принятого досье; нового открытия не было"
+            }
+          ],
+          "olympiad": [
+            "2025-26-shk-mosobl-15"
+          ],
+          "name": {
+            "zh": "竹",
+            "ru": [
+              "Бамбук"
+            ],
+            "gloss": "Бамбук — у цинского шэна в Гугуне 17 трубок, расположенных подобно крыльям феникса.",
+            "ref": "sets/plants/pl-zhu"
+          },
+          "shengmaterial": {
+            "zh": "竹",
+            "ru": [
+              "Бамбук"
+            ],
+            "gloss": "Бамбук — у цинского шэна в Гугуне 17 трубок, расположенных подобно крыльям феникса."
+          }
+        },
+        {
+          "id": "material-turtleshell",
+          "sources": [
+            {
+              "title": "甲骨文：唤醒沉睡文明 — 中国文字博物馆",
+              "url": "https://www.wzbwg.com/newsinfo/535",
+              "quote": "炙烤甲骨，根据出现裂纹的长短、粗细、曲直和隐显，判断吉凶成败。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "甲骨刻辞 — 中国文字博物馆·书院",
+              "url": "https://www.wzbwg.com/shuyuan",
+              "quote": "甲骨文是商、西周时期刻在龟甲、兽骨上用于记录占卜内容的文字，是中国目前已发现最早的文字体系，其中以殷商甲骨文最具代表性。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            }
+          ],
+          "olympiad": [
+            "2025-26-mun-chel-3"
+          ],
+          "name": {
+            "zh": "龟甲",
+            "ru": [
+              "Черепаховый панцирь"
+            ],
+            "gloss": "Черепаховый панцирь — при гадании будущее узнавали по трещинам после нагревания."
+          },
+          "oraclematerial": {
+            "zh": "龟甲",
+            "ru": [
+              "Черепаховый панцирь"
+            ],
+            "gloss": "Черепаховый панцирь — при гадании будущее узнавали по трещинам после нагревания."
+          }
+        },
+        {
+          "id": "material-bambooslips",
+          "sources": [
+            {
+              "title": "古代的“简”与“牍” — 北京中医药大学中医药博物馆",
+              "url": "https://bowuguan.bucm.edu.cn/kpzl/ysmt/10904.htm",
+              "quote": "古人把若干“简”用两道（或三道）绳子依次连缀成片即成“简册”",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "贾连翔：实物所见 一部两千多年前的长篇史书 — 全国哲学社会科学工作办公室",
+              "url": "https://www.nopss.gov.cn/n/2015/1210/c373410-27909392.html",
+              "quote": "利用竹木制简并用绳编连成册的制度已经形成了。",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "竹简",
+            "ru": [
+              "Бамбуковые планки"
+            ],
+            "gloss": "Бамбуковые планки — их связывали шнурами, составляя книгу."
+          },
+          "oraclematerial": {
+            "zh": "竹简",
+            "ru": [
+              "Бамбуковые планки"
+            ],
+            "gloss": "Бамбуковые планки — их связывали шнурами, составляя книгу."
+          }
+        },
+        {
+          "id": "material-paper",
+          "sources": [
+            {
+              "title": "造纸匠的文明演绎 — 湖北省文化和旅游厅",
+              "url": "https://wlt.hubei.gov.cn/bmdt/ztzl/zshb/201912/t20191226_1799602.shtml",
+              "quote": "东汉的蔡伦改进造纸技术，用麻布和渔网制作出植物纤维纸",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "中国蔡伦获评“史上最佳发明家” — 中国新闻网",
+              "url": "https://www.chinanews.com.cn/cul/news/2007/11-08/1071703.shtml",
+              "quote": "蔡伦(约公元50年—121年)，字敬仲，东汉桂阳郡耒阳(今湖南省耒阳市)人。他改进了东汉时的造纸技术，被传为中国古代四大发明中造纸术的发明人。蔡伦于汉明帝永平末年入宫，汉章帝建初年间，担任小黄门(较低品级的太监职位)。",
+              "authority": "official",
+              "checkedAt": "2026-10-23",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/people.json → scholars/sci-cailun; цитата и дата из ранее принятого досье; нового открытия не было"
+            },
+            {
+              "title": "蔡侯祠 — 湖南省人民政府门户网站",
+              "url": "http://hunan.gov.cn/hnszf/c101477/202108/t20210830_20409173.html",
+              "quote": "蔡伦(约62—121)，字敬仲，东汉人，封龙亭侯，中国古代四大发明中造纸术的改造者，被后世纸工奉为造纸鼻祖、“纸神”。",
+              "authority": "official",
+              "checkedAt": "2026-10-23",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/people.json → scholars/sci-cailun; цитата и дата из ранее принятого досье; нового открытия не было"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "纸张",
+            "ru": [
+              "Бумага"
+            ],
+            "gloss": "Бумага — Цай Лунь улучшил её изготовление из растительных волокон в эпоху Восточной Хань."
+          },
+          "oraclematerial": {
+            "zh": "纸张",
+            "ru": [
+              "Бумага"
+            ],
+            "gloss": "Бумага — Цай Лунь улучшил её изготовление из растительных волокон в эпоху Восточной Хань."
+          }
+        }
+      ]
     }
   }
 }

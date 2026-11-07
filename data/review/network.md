@@ -653,7 +653,7 @@
 - 2025-26-mun-mosobl-10 — Какой русский писатель считается автором уральских сказов?
 - 2020-21-reg-qce4bc2 — Какое из нижеперечисленных произведений не относится к четырем классическим китайским романам?
 
-Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 1.
+Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 2.
 
 ### Современный Китай (`modern-china`)
 
@@ -679,7 +679,7 @@
 | org-bri | × | — | да |
 | org-sco | 1 | — | да |
 | org-brics | 1 | — | да |
-| org-apec | 1 | — | да |
+| org-apec | 1 | 1 | да |
 
 #### Таблица `events`
 
@@ -815,7 +815,7 @@
 | per-yuanshikai | × | — | — | прогноз |
 | per-jiangjieshi | × | — | — | прогноз |
 | per-maozedong | 1 | — | 1 | прогноз |
-| per-zhouenlai | — | — | 1 | да |
+| per-zhouenlai | — | — | 2 | да |
 | per-dengxiaoping | 1 | — | 1 | да |
 | per-xijinping | × | — | 1 | да |
 | per-ru-lenin | × | 1 | — | прогноз |
@@ -855,6 +855,8 @@
 - modern-history-q25 — Кто был главнокомандующим Народно-освободительной армии Китая в годы Освободительной войны и после образования КНР?
 - modern-history-q26 — Главным создателем какой важной идеи называют Цзян Цзэминя?
 - modern-history-q27 — Какое понятие выдвинул Ху Цзиньтао в 2003 году?
+
+Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 1.
 
 ### Деньги (`money`)
 
@@ -1280,7 +1282,7 @@
 | prov-anhui | — | × | 1 | × | × | 1 | да |
 | prov-fujian | 1 | × | — | × | × | — | прогноз |
 | prov-jiangxi | — | × | — | × | × | 2 | да |
-| prov-henan | 1 | × | — | × | 1 | — | да |
+| prov-henan | 1 | × | — | × | 1 | 1 | да |
 | prov-hubei | 1 | × | 1 | × | 1 | 1 | да |
 | prov-hunan | 1 | × | — | × | × | — | прогноз |
 | prov-guangdong | 1 | × | 1 | × | × | 4 | да |
@@ -1294,7 +1296,7 @@
 | prov-gansu | — | × | 1 | × | × | 1 | прогноз |
 | prov-qinghai | — | × | — | × | — | 1 | да |
 | prov-ningxia | — | × | 1 | — | × | — | прогноз |
-| prov-xinjiang | — | × | 1 | — | × | 1 | да |
+| prov-xinjiang | — | × | 1 | — | × | 2 | да |
 | prov-xianggang | — | × | × | 1 | × | — | да |
 | prov-aomen | — | × | × | 1 | × | — | да |
 | prov-taiwan | × | × | × | × | × | — | да |
@@ -1328,7 +1330,7 @@
 | city-ru-moscow | × | × | 1 | 2 | да |
 | city-ru-saint-petersburg | × | 1 | 1 | 1 | да |
 | city-ru-nizhny-novgorod | × | × | — | 1 | да |
-| city-ru-kazan | 1 | 1 | — | — | прогноз |
+| city-ru-kazan | 1 | 1 | — | 1 | да |
 | city-ru-volgograd | × | × | × | 1 | да |
 | city-ru-tula | × | × | × | 1 | да |
 | city-ru-vladimir | × | × | × | 1 | прогноз |
@@ -1667,7 +1669,6 @@
 - modern-history/events/ev-ru-ww2
 - modern-history/events/ev-xianggang
 - modern-history/events/ev-yihetuan
-- modern-history/figures/per-ru-gorbachev
 - modern-history/figures/per-ru-khrushchev
 - modern-history/figures/per-ru-stalin
 - modern-history/figures/per-ru-suvorov
@@ -1786,7 +1787,6 @@
 - sets/plants/pl-lan
 - sets/plants/pl-mei
 - sets/plants/pl-song
-- sets/plants/pl-zhu
 - sets/zodiac/zd-gou
 - sets/zodiac/zd-hou
 - sets/zodiac/zd-hu

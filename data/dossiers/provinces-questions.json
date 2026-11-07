@@ -2012,7 +2012,12 @@
       "row": "rg-dongbei",
       "ask": "name"
     },
-    "exclude": [],
+    "exclude": [
+      "rg-bohai-coast",
+      "rg-shanghai-zhejiang-taiwan",
+      "rg-liaoning-shandong-jilin",
+      "rg-guangxi-guangzhou-hainan"
+    ],
     "check": {
       "verdict": "accept",
       "note": "Принято автором 2026-11-07 в составе 16 вопросов партии 3; формулировка, исходный ключ и четыре показанных варианта сохранены. Подписи и первичные источники проверены в предложениях и независимо; финальная проверка выпуска — regional-batch-3-release-review."
@@ -2061,6 +2066,66 @@
     "check": {
       "verdict": "accept",
       "note": "Принято автором 2026-11-07 в составе 16 вопросов партии 3; формулировка, исходный ключ и четыре показанных варианта сохранены. Подписи и первичные источники проверены в предложениях и независимо; финальная проверка выпуска — regional-batch-3-release-review."
+    }
+  },
+  {
+    "id": "provinces-q130",
+    "embeds": "2022-23-shk-mosobl-18",
+    "status": "accepted",
+    "fact": {
+      "table": "regiongroups",
+      "row": "rg-bohai-coast",
+      "ask": "bohaicoastset"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял оставшиеся16вопросов партии4 и прямо разрешил встраивание/публикацию. Сохранены ключ, ID, четыре показанных варианта и все подписи; источники проверены отдельно по темам. Итоговый обзор — regional-batch-4-release-review."
+    }
+  },
+  {
+    "id": "provinces-q131",
+    "embeds": "2025-26-shk-mosobl-3",
+    "status": "accepted",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-henan",
+      "ask": "neimengguneighborname"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял оставшиеся16вопросов партии4 и прямо разрешил встраивание/публикацию. Сохранены ключ, ID, четыре показанных варианта и все подписи; источники проверены отдельно по темам. Итоговый обзор — regional-batch-4-release-review."
+    }
+  },
+  {
+    "id": "provinces-q132",
+    "embeds": "2022-23-mun-amur-4",
+    "status": "accepted",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-xinjiang",
+      "ask": "tarimregionname"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял оставшиеся16вопросов партии4 и прямо разрешил встраивание/публикацию. Сохранены ключ, ID, четыре показанных варианта и все подписи; источники проверены отдельно по темам. Итоговый обзор — regional-batch-4-release-review."
+    }
+  },
+  {
+    "id": "provinces-q133",
+    "embeds": "2024-25-mun-nsk-5",
+    "status": "accepted",
+    "fact": {
+      "table": "cities",
+      "row": "city-ru-kazan",
+      "ask": "brics2024name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял оставшиеся16вопросов партии4 и прямо разрешил встраивание/публикацию. Сохранены ключ, ID, четыре показанных варианта и все подписи; источники проверены отдельно по темам. Итоговый обзор — regional-batch-4-release-review."
     }
   }
 ]

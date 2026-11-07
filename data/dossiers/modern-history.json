@@ -13,7 +13,8 @@
         "slogan": "zh",
         "memorial": "zh",
         "about": "ru",
-        "revolution": "zh"
+        "revolution": "zh",
+        "serviceLaw": "zh"
       },
       "rows": [
         {
@@ -3083,6 +3084,148 @@
             ],
             "gloss": "Ухань — в 1927 г. здесь работало правительство Гоминьдана, прибывшее из Гуанчжоу."
           }
+        },
+        {
+          "id": "ev-ru-army-statute1716",
+          "sources": [
+            {
+              "title": "Книга устав воинскии (1716) — Президентская библиотека",
+              "url": "https://www.prlib.ru/item/417755",
+              "quote": "Устав утвержден Петром I 30 марта 1716 г.",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "checked-exact-primary-indexed-excerpt"
+            },
+            {
+              "title": "Устав воинский. [Марта 30 дня 1716 года] — ЭБИД Российского исторического общества",
+              "url": "https://docs.historyrussia.org/ru/nodes/335428-ustav-voinskiy-marta-30-dnya-1716-goda",
+              "quote": "Устав воинский. [Марта 30 дня 1716 года]",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-full-page-read; exact title line 13; bibliographic source is primary document"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "俄国1716年陆军条例颁布",
+            "ru": [
+              "Утверждение Воинского устава Петра I в 1716 году"
+            ]
+          },
+          "serviceLaw": {
+            "zh": "军事条例",
+            "ru": [
+              "Военные положения"
+            ],
+            "gloss": "Военные положения — например, Воинский устав Петра I, утверждённый в 1716 году."
+          }
+        },
+        {
+          "id": "ev-ru-table-ranks1722",
+          "sources": [
+            {
+              "title": "Петром I утверждена «Табель о рангах» — Президентская библиотека",
+              "url": "https://www.prlib.ru/node/619004",
+              "quote": "Каждый вид службы был разбит на 14 классов, или рангов.",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "checked-exact-primary-indexed-excerpt"
+            },
+            {
+              "title": "Табель о рангах всех чинов, воинских, статских, и придворных — НЭБ / РНБ",
+              "url": "https://kp.rusneb.ru/item/material/5dda6dbaf9982d661bc238f9",
+              "quote": "В Преображенском в 24 день генваря 1722 году.",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-full-page-read; contiguous fragment of primary-edition colophon transcribed in catalog line 75; NBSP normalized to ordinary spaces"
+            }
+          ],
+          "olympiad": [
+            "2025-26-mun-tat-58"
+          ],
+          "name": {
+            "zh": "俄国1722年官秩表颁布",
+            "ru": [
+              "Утверждение Табели о рангах в 1722 году"
+            ]
+          },
+          "serviceLaw": {
+            "zh": "官秩表",
+            "ru": [
+              "Табель о рангах"
+            ],
+            "gloss": "Табель о рангах — военные, гражданские и придворные чины делились на 14 классов."
+          }
+        },
+        {
+          "id": "ev-ru-guild-instruction1722",
+          "sources": [
+            {
+              "title": "Инструкция цехам. В Москве, от 27 апреля 1722 г. — ЭБИД Российского исторического общества",
+              "url": "https://docs.historyrussia.org/ru/nodes/340011-instruktsiya-tseham-v-moskve-ot-27-aprelya-1722-g",
+              "quote": "Инструкция цехам. В Москве, от 27 апреля 1722 г.",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "checked-exact-primary-indexed-excerpt"
+            },
+            {
+              "title": "М. О. Акишин. Государевы службы и политико-правовые взгляды Ф. С. Салтыкова — Ленинградский юридический журнал, 2021 №2(64), с.19",
+              "url": "https://lengu.ru/download/155543",
+              "quote": "Цеховая организация ремесла в России была введена именным указом от 27 апреля 1722 г.",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "academic-full-page-read; exact sentence across PDF p.12 (printed p.19), lines 340–341; original scholarly research"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "俄国1722年行会章程颁布",
+            "ru": [
+              "Издание Инструкции цехам в 1722 году"
+            ]
+          },
+          "serviceLaw": {
+            "zh": "行会条例",
+            "ru": [
+              "Цеховые правила"
+            ],
+            "gloss": "Цеховые правила — например, «Инструкция цехам» Петра I, утверждённая в 1722 году."
+          }
+        },
+        {
+          "id": "ev-ru-free-farmers1803",
+          "sources": [
+            {
+              "title": "Крестьянская реформа 1861 года — Президентская библиотека",
+              "url": "https://www.prlib.ru/node/467127",
+              "quote": "При Александре I в 1803 году был издан Указ о вольных хлебопашцах",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "checked-exact-primary-indexed-excerpt"
+            },
+            {
+              "title": "Указ об отпуске помещиками своих крестьян на волю... 20 февраля 1803 года — Российское историческое общество, Компас",
+              "url": "https://compass.historyrussia.org/doc/1279",
+              "quote": "Указ о вольных хлебопашцах, изданный Александром I (1801–1825) в начале своего царствования",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact returned passage; full page not read"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "俄国1803年自由农民法令颁布",
+            "ru": [
+              "Издание указа о вольных хлебопашцах в 1803 году"
+            ]
+          },
+          "serviceLaw": {
+            "zh": "农民法令",
+            "ru": [
+              "Крестьянский указ"
+            ],
+            "gloss": "Крестьянский указ — например, указ о вольных хлебопашцах 1803 года."
+          }
         }
       ],
       "sides": [
@@ -3099,7 +3242,8 @@
         "born": "zh",
         "idea": "zh",
         "work": "zh",
-        "about": "ru"
+        "about": "ru",
+        "maoPremier": "zh"
       },
       "sides": [
         "idea",
@@ -4268,9 +4412,17 @@
             }
           ],
           "olympiad": [
-            "2021-22-mun-q6514a2"
+            "2021-22-mun-q6514a2",
+            "2022-23-mun-orel-3"
           ],
-          "core": true
+          "core": true,
+          "maoPremier": {
+            "zh": "周恩来",
+            "ru": [
+              "Чжоу Эньлай"
+            ],
+            "gloss": "Чжоу Эньлай — девять лет был также министром иностранных дел КНР."
+          }
         },
         {
           "id": "per-zhude",
@@ -4464,7 +4616,14 @@
               "checkedAt": "2026-10-18"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "maoPremier": {
+            "zh": "江泽民",
+            "ru": [
+              "Цзян Цзэминь"
+            ],
+            "gloss": "Цзян Цзэминь — занимал пост председателя КНР десять лет."
+          }
         },
         {
           "id": "per-hujintao",
@@ -4645,7 +4804,14 @@
           ],
           "olympiad": [
             "2017-18-zak-6"
-          ]
+          ],
+          "maoPremier": {
+            "zh": "李克强",
+            "ru": [
+              "Ли Кэцян"
+            ],
+            "gloss": "Ли Кэцян — утверждён премьером Госсовета в марте 2013 года."
+          }
         },
         {
           "id": "per-wenjiabao",
@@ -5574,6 +5740,42 @@
             }
           ],
           "olympiad": []
+        },
+        {
+          "id": "per-zhurongji",
+          "sources": [
+            {
+              "title": "朱镕基讲话实录 — Исторический канал «Жэньминь жибао»",
+              "url": "https://dangshi.people.com.cn/GB/146570/238288/index.html",
+              "quote": "曾任上海市市长（1988年－1991年），中华人民共和国国务院第一副总理兼中国人民银行行长（1993年－1995年），中华人民共和国国务院总理（1998年－2003年）。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact text returned by web search, no full-page fetch"
+            },
+            {
+              "title": "朱镕基 — 中国共产党新闻网",
+              "url": "https://cpc.people.com.cn/daohang/n/2013/0226/c357263-20607314.html",
+              "quote": "１９９８年３月至２００３年３月任国务院总理。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact returned passage; full page not read"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "朱镕基",
+            "ru": [
+              "Чжу Жунцзи"
+            ],
+            "gloss": "Чжу Жунцзи — премьер Госсовета в 1998–2003 годах; ранее мэр Шанхая."
+          },
+          "maoPremier": {
+            "zh": "朱镕基",
+            "ru": [
+              "Чжу Жунцзи"
+            ],
+            "gloss": "Чжу Жунцзи — премьер Госсовета в 1998–2003 годах; ранее мэр Шанхая."
+          }
         }
       ]
     },
@@ -6773,7 +6975,10 @@
     "milestones": {
       "columns": {
         "year": "zh",
-        "name": "zh"
+        "name": "zh",
+        "hongkongYear": "zh",
+        "languageYear": "zh",
+        "laureate": "zh"
       },
       "rows": [
         {
@@ -6915,6 +7120,278 @@
           },
           "name": {
             "zh": "八届一中全会选举主席"
+          }
+        },
+        {
+          "id": "mile-hk-museum1962",
+          "sources": [
+            {
+              "title": "LCSD Annual Report 2012–2013: Museums",
+              "url": "https://www.lcsd.gov.hk/dept/annualrpt/2012-13/en/culture/culture14.html",
+              "quote": "Established in 1962, the Hong Kong Museum of Art was first housed in City Hall",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact text returned by web search, no full-page fetch"
+            },
+            {
+              "title": "Exhibitions: 1962–1973 — Hong Kong Museum of Art",
+              "url": "https://hk.art.museum/en/web/ma/resources/hong-kong-art-research-portal/exhibitions/1962-1973.html",
+              "quote": "The former City Hall Art Gallery & Museum, which would later become HKMoA, was inaugurated in 1962.",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact returned passage; full page not read"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "香港艺术馆开馆"
+          },
+          "hongkongYear": {
+            "zh": "1962",
+            "ru": [
+              "1962 год"
+            ],
+            "gloss": "1962 год — в Гонконге открылся Музей искусств."
+          }
+        },
+        {
+          "id": "mile-eastindia-monopoly1834",
+          "sources": [
+            {
+              "title": "Hong Kong 2006: A Place From Which to Trade",
+              "url": "https://www.yearbook.gov.hk/2006/en/21_03.htm",
+              "quote": "from 1834, after the East India Company lost its monopoly of the China trade",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact text returned by web search, no full-page fetch"
+            },
+            {
+              "title": "Letters from the Middle Kingdom — U.S. National Archives",
+              "url": "https://www.archives.gov/publications/prologue/2002/winter/gedalecia-1.html",
+              "quote": "the demise of the East India Company's commercial monopoly in 1834.",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-full-page-read; exact contiguous phrase in line 61"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "英国东印度公司对华贸易垄断终结"
+          },
+          "hongkongYear": {
+            "zh": "1834",
+            "ru": [
+              "1834 год"
+            ],
+            "gloss": "1834 год — Ост-Индская компания утратила монополию на торговлю с Китаем."
+          }
+        },
+        {
+          "id": "mile-hk-surrender1941",
+          "sources": [
+            {
+              "title": "Government Records Service: The Siege",
+              "url": "https://www.grs.gov.hk/ws/online/80VWR/en/sec1/index.html",
+              "quote": "On 25 December, the Governor of Hong Kong, Sir Mark Young, surrendered to the Japanese army",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact text returned by web search, no full-page fetch"
+            },
+            {
+              "title": "Hong Kong Invaded, 1941: A History Through Interactive Maps — University of Chicago",
+              "url": "https://uchicago.hk/event/hong-kong-invaded-1941-history-through-interactive-maps",
+              "quote": "the garrison surrendered on the afternoon of 25 December 1941.",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "academic-full-page-read; exact contiguous phrase in line 16; primary spatial-history research project presentation"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "香港守军向日军投降"
+          },
+          "hongkongYear": {
+            "zh": "1941",
+            "ru": [
+              "1941 год"
+            ],
+            "gloss": "1941 год — 25 декабря Гонконг капитулировал перед японской армией."
+          }
+        },
+        {
+          "id": "mile-hk-occupation1841",
+          "sources": [
+            {
+              "title": "Correctional Services Department: Prisons History and Development",
+              "url": "https://www.csd.gov.hk/emuseum/en/Gallery/gallery_2%263.html",
+              "quote": "the British troops had already landed on Possession Point on 26 January 1841 and claimed possession of Hong Kong Island.",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact text returned by web search, no full-page fetch"
+            },
+            {
+              "title": "Police Museum: First Head of the Police Force — Hong Kong Police",
+              "url": "https://www.police.gov.hk/museum/qrpage/en/inner/2/2.html",
+              "quote": "the British forces landed at Possession Point, Sheung Wan on 26 January 1841",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact returned passage; full page not read"
+            }
+          ],
+          "olympiad": [
+            "2020-21-mun-mosobl-52"
+          ],
+          "name": {
+            "zh": "英军占领香港岛"
+          },
+          "hongkongYear": {
+            "zh": "1841",
+            "ru": [
+              "1841 год"
+            ],
+            "gloss": "1841 год — британцы высадились на мысе Поссешн 26 января."
+          }
+        },
+        {
+          "id": "mile-cnru-treaty20-2021",
+          "sources": [
+            {
+              "title": "Новогодние поздравления глав России и Китая, 31.12.2021 — МИД КНР",
+              "url": "https://www.mfa.gov.cn/gjhdq_676201/gj_676203/oz_678770/1206_679110/xgxw_679116/202112/t20211231_10478012.shtml",
+              "quote": "2021年是《中俄睦邻友好合作条约》签署20周年。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-full-page-read; exact quote at line 101"
+            },
+            {
+              "title": "《中俄睦邻友好合作条约》延期！（附声明全文）— Посольство КНР в РФ",
+              "url": "https://ru.china-embassy.gov.cn/zegx_0/202504/t20250430_11610611.htm",
+              "quote": "中华人民共和国和俄罗斯联邦关于《中俄睦邻友好合作条约》签署20周年的联合声明",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact returned passage; full page not read"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "中俄睦邻友好合作条约签署20周年"
+          },
+          "languageYear": {
+            "zh": "2021",
+            "ru": [
+              "2021"
+            ],
+            "gloss": "2021 — 20-летие подписания Договора о добрососедстве, дружбе и сотрудничестве РФ и КНР."
+          }
+        },
+        {
+          "id": "mile-chinese-year-russia2010",
+          "sources": [
+            {
+              "title": "中俄教育合作分委会第十次会议召开 — Министерство образования КНР",
+              "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/moe_1485/201011/t20101111_110917.html",
+              "quote": "成功举办了2009年中国“俄语年”和2010年俄罗斯“汉语年”活动",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact indexed text confirms completed events; full-page open returned redirect loop"
+            },
+            {
+              "title": "О проведении Года русского языка в КНР и Года китайского языка в РФ — Президентская библиотека, первичное распоряжение №788-рп",
+              "url": "https://www.prlib.ru/item/432683",
+              "quote": "Год китайского языка -- Российская Федерация -- 2010 -- Правовые акты.",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact returned passage; full page not read"
+            },
+            {
+              "title": "Совместное коммюнике по итогам тринадцатой регулярной встречи глав правительств КНР и РФ — МИД КНР",
+              "url": "https://www.mfa.gov.cn/rus/wjdt/gb/200810/t20081030_858176.html",
+              "quote": "приступят к подготовке Года китайского языка в России в 2010 году.",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact returned passage; full page not read"
+            }
+          ],
+          "olympiad": [
+            "2022-23-mun-mosobl-10"
+          ],
+          "name": {
+            "zh": "2010年俄罗斯汉语年"
+          },
+          "languageYear": {
+            "zh": "2010",
+            "ru": [
+              "2010 год"
+            ],
+            "gloss": "2010 год — парой этому проекту стал Год русского языка в Китае в 2009 году."
+          }
+        },
+        {
+          "id": "mile-peace-mission2005",
+          "sources": [
+            {
+              "title": "Совместное заявление России и КНР, 2006 — МИД КНР",
+              "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/oz_678770/1206_679110/1207_679122/200608/t20060814_9337126.shtml",
+              "quote": "2005年8月举行的中俄首次联合军事演习“和平使命2005”",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-full-page-read; indexed passage also returned in full page"
+            },
+            {
+              "title": "新闻背景：中俄军队共同参加的主要军事演习 — 新华社",
+              "url": "https://www.xinhuanet.com/world/2018-09/11/c_1123413807.htm",
+              "quote": "从２００５年中俄两国军队首次组织“和平使命”联合演习开始",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact returned passage; full page not read"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "和平使命—2005中俄联合军事演习"
+          },
+          "languageYear": {
+            "zh": "2005",
+            "ru": [
+              "2005 год"
+            ],
+            "gloss": "2005 год — первые российско-китайские военные учения «Мирная миссия»."
+          }
+        },
+        {
+          "id": "mile-gorbachev-nobel1990",
+          "sources": [
+            {
+              "title": "The Nobel Peace Prize 1990 — NobelPrize.org",
+              "url": "https://www.nobelprize.org/prizes/peace/1990/summary/",
+              "quote": "The Nobel Peace Prize 1990 was awarded to Mikhail Sergeyevich Gorbachev",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact text returned by web search, full page not fetched"
+            },
+            {
+              "title": "1990: Mikhail Gorbachev — Norwegian Nobel Committee",
+              "url": "https://www.nobelpeaceprize.org/laureates/1990",
+              "quote": "In 1990, the Nobel Committee gave President Gorbachev the main credit for this by awarding him the Peace Prize.",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-full-page-read; exact complete sentence in line 16"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "戈尔巴乔夫获诺贝尔和平奖"
+          },
+          "languageYear": {
+            "zh": "1990",
+            "ru": [
+              "1990 год"
+            ],
+            "gloss": "1990 год — Михаил Горбачёв получил Нобелевскую премию мира."
+          },
+          "laureate": {
+            "zh": "戈尔巴乔夫",
+            "ref": "modern-history/figures/per-ru-gorbachev"
           }
         }
       ]

@@ -2263,7 +2263,10 @@
     },
     "concepts": {
       "columns": {
-        "name": "zh"
+        "name": "zh",
+        "diasporaTerm": "zh",
+        "canonicalPeople": "zh",
+        "about": "ru"
       },
       "rows": [
         {
@@ -2369,6 +2372,162 @@
               "authority": "academic"
             }
           ]
+        },
+        {
+          "id": "concept-huaqiao",
+          "sources": [
+            {
+              "title": "华侨、外籍华人的定义是什么？ — Канцелярия Госсовета КНР по делам хуацяо",
+              "url": "https://www.gqb.gov.cn/news/2015/1125/37146.shtml",
+              "quote": "外籍华人是指已加入外国国籍的原中国公民及其外国籍后裔",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-full-page-read; exact quote at line 30"
+            },
+            {
+              "title": "出入境证件简明手册 — 国家移民管理局",
+              "url": "https://www.nia.gov.cn/n741440/n741547/c1197066/content.html",
+              "quote": "定居国外的中国公民，也就是大家所说的华侨，仍持用中华人民共和国普通护照",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact returned passage; full page not read"
+            }
+          ],
+          "olympiad": [
+            "2024-25-mun-kursk-7"
+          ],
+          "name": {
+            "zh": "华侨",
+            "ru": [
+              "Хуацяо"
+            ],
+            "gloss": "Хуацяо — граждане КНР; принявшие иностранное гражданство — вайцзи хуажэнь."
+          },
+          "diasporaTerm": {
+            "zh": "华侨",
+            "ru": [
+              "Хуацяо"
+            ],
+            "gloss": "Хуацяо — граждане КНР; принявшие иностранное гражданство — вайцзи хуажэнь."
+          }
+        },
+        {
+          "id": "concept-haohan",
+          "sources": [
+            {
+              "title": "水浒文化影响 — Управление партийной истории и краеведения Цзинина",
+              "url": "https://zgjnds.jining.gov.cn/art/2020/10/19/art_62668_2681294.html",
+              "quote": "梁山好汉的一百零八将",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact text returned by web search, no full-page fetch"
+            },
+            {
+              "title": "好漢 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=80901&la=0&powerMode=0",
+              "quote": "勇敢有志氣的男子。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact returned passage; full page not read"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "好汉",
+            "ru": [
+              "Хаохань"
+            ],
+            "gloss": "Хаохань — «добрый молодец»; в «Речных заводях» 108 таких героев."
+          },
+          "diasporaTerm": {
+            "zh": "好汉",
+            "ru": [
+              "Хаохань"
+            ],
+            "gloss": "Хаохань — «добрый молодец»; в «Речных заводях» 108 таких героев."
+          }
+        },
+        {
+          "id": "concept-hanren",
+          "sources": [
+            {
+              "title": "略谈中国民间剪纸的主要流派 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/luntan_details/8074.html",
+              "quote": "从中原汉族聚居区到西部少数民族部落，民间剪纸作为民俗文化构成的要素之一",
+              "checkedAt": "2026-10-17",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-dossier-cell: ethnos/peoples/ppl-cn-han/heritage; source not refetched"
+            },
+            {
+              "title": "汉族：概况 — 国家民族事务委员会",
+              "url": "https://www.neac.gov.cn/seac/ztzl/201806/1065965.shtml",
+              "quote": "在以后的历史发展中，汉人成为中国主体民族的族称",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-full-page-read; exact contiguous text in line 20; canonical accepted Han entity row source reused with freshly read short alias passage"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "汉人",
+            "ru": [
+              "Ханьцы"
+            ],
+            "gloss": "Ханьцы — вырезание из бумаги распространено и у них, и у других народов Китая."
+          },
+          "diasporaTerm": {
+            "zh": "汉人",
+            "ru": [
+              "Ханьцы"
+            ],
+            "gloss": "Ханьцы — вырезание из бумаги распространено и у них, и у других народов Китая."
+          },
+          "canonicalPeople": {
+            "zh": "汉族",
+            "ref": "ethnos/peoples/ppl-cn-han"
+          },
+          "about": "Контекстный термин исходного варианта, обозначающий ту же народность хань, а не отдельный народ. Связь с канонической строкой дана в canonicalPeople."
+        },
+        {
+          "id": "concept-hanzuren",
+          "sources": [
+            {
+              "title": "中国语言文字概况 — Министерство образования КНР",
+              "url": "https://www.moe.gov.cn/jyb_xxgk/xxgk/neirong/fenlei/sxml_zwgk/yuyanwenzi/202610/t20261023_1455676.html",
+              "quote": "我国除汉族使用汉语外，回族、满族等也基本使用或转用汉语",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-indexed-search-excerpt; exact text returned by web search, no full-page fetch"
+            },
+            {
+              "title": "汉族：概况 — 国家民族事务委员会",
+              "url": "https://www.neac.gov.cn/seac/ztzl/201806/1065965.shtml",
+              "quote": "汉族的语言通称汉语",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "official-full-page-read; exact contiguous text in line 21; supports canonical Han entity"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "汉族人",
+            "ru": [
+              "Ханьцы"
+            ],
+            "gloss": "Ханьцы — китайским языком пользуются также представители хуэй и маньчжуров."
+          },
+          "diasporaTerm": {
+            "zh": "汉族人",
+            "ru": [
+              "Ханьцы"
+            ],
+            "gloss": "Ханьцы — китайским языком пользуются также представители хуэй и маньчжуров."
+          },
+          "canonicalPeople": {
+            "zh": "汉族",
+            "ref": "ethnos/peoples/ppl-cn-han"
+          },
+          "about": "Контекстный термин исходного варианта, обозначающий ту же народность хань, а не отдельный народ. Связь с канонической строкой дана в canonicalPeople."
         }
       ]
     }

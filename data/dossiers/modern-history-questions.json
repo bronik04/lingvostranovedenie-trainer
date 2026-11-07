@@ -1754,5 +1754,65 @@
       "verdict": "accept",
       "note": "Принято автором 2026-11-07 в составе 16 вопросов партии 3; формулировка, исходный ключ и четыре показанных варианта сохранены. Подписи и первичные источники проверены в предложениях и независимо; финальная проверка выпуска — regional-batch-3-release-review."
     }
+  },
+  {
+    "id": "modern-history-q121",
+    "embeds": "2020-21-mun-mosobl-52",
+    "status": "accepted",
+    "fact": {
+      "table": "milestones",
+      "row": "mile-hk-occupation1841",
+      "ask": "hongkongYear"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял оставшиеся16вопросов партии4 и прямо разрешил встраивание/публикацию. Сохранены ключ, ID, четыре показанных варианта и все подписи; источники проверены отдельно по темам. Итоговый обзор — regional-batch-4-release-review."
+    }
+  },
+  {
+    "id": "modern-history-q122",
+    "embeds": "2022-23-mun-mosobl-10",
+    "status": "accepted",
+    "fact": {
+      "table": "milestones",
+      "row": "mile-chinese-year-russia2010",
+      "ask": "languageYear"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял оставшиеся16вопросов партии4 и прямо разрешил встраивание/публикацию. Сохранены ключ, ID, четыре показанных варианта и все подписи; источники проверены отдельно по темам. Итоговый обзор — regional-batch-4-release-review."
+    }
+  },
+  {
+    "id": "modern-history-q123",
+    "embeds": "2025-26-mun-tat-58",
+    "status": "accepted",
+    "fact": {
+      "table": "events",
+      "row": "ev-ru-table-ranks1722",
+      "ask": "serviceLaw"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял оставшиеся16вопросов партии4 и прямо разрешил встраивание/публикацию. Сохранены ключ, ID, четыре показанных варианта и все подписи; источники проверены отдельно по темам. Итоговый обзор — regional-batch-4-release-review."
+    }
+  },
+  {
+    "id": "modern-history-q124",
+    "embeds": "2022-23-mun-orel-3",
+    "status": "accepted",
+    "fact": {
+      "table": "figures",
+      "row": "per-zhouenlai",
+      "ask": "maoPremier"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял оставшиеся16вопросов партии4 и прямо разрешил встраивание/публикацию. Сохранены ключ, ID, четыре показанных варианта и все подписи; источники проверены отдельно по темам. Итоговый обзор — regional-batch-4-release-review."
+    }
   }
 ]

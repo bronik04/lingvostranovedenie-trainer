@@ -1842,6 +1842,160 @@
           ]
         }
       ]
+    },
+    "measures": {
+      "columns": {
+        "modernmeasure": "zh",
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "measure-chi",
+          "sources": [
+            {
+              "title": "农村社会经济综合统计报表制度 — 福建省统计局，常用计算单位换算",
+              "url": "https://tjj.fujian.gov.cn/xxgk/zdff/202410/P020241024592998124217.pdf",
+              "quote": "1 米=3 市尺=3.281 英尺",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "第一节计量器具变更 — 莱阳市志·山东地情档案",
+              "url": "https://shandong-chorography.org/database/c68/section/1/article/363/",
+              "quote": "1米＝100厘米＝3市尺，1吨＝1000公斤，1公斤＝1000克＝2市斤，1公里＝1000米＝2市里",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "尺",
+            "ru": [
+              "Чи"
+            ],
+            "gloss": "Чи — мера длины; современный рыночный чи равен трети метра."
+          },
+          "modernmeasure": {
+            "zh": "尺",
+            "ru": [
+              "Чи"
+            ],
+            "gloss": "Чи — мера длины; современный рыночный чи равен трети метра."
+          }
+        },
+        {
+          "id": "measure-liang",
+          "sources": [
+            {
+              "title": "一份函件见证中国衡器改革，从此“半斤”不再是“八两” — 文化和旅游部恭王府博物馆",
+              "url": "https://www.pgm.org.cn/pgm/xxdt/202112/45faa74de446499c98c1acddeef83ca7.shtml",
+              "quote": "1959年，国家发布《关于统一计量制度的命令》，将一斤等于十六两改为十两",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "第一节计量器具变更 — 莱阳市志·山东地情档案",
+              "url": "https://shandong-chorography.org/database/c68/section/1/article/363/",
+              "quote": "1959年，贯彻执行国务院关于统一全国计量制度的命令，确定国际单位制为基本计量制度，同时允许保留市制，但将市制16两为1斤，改为10两为1斤。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            }
+          ],
+          "olympiad": [
+            "2023-24-mun-perm-6"
+          ],
+          "name": {
+            "zh": "两",
+            "ru": [
+              "лян (мера массы)"
+            ],
+            "gloss": "Лян — до реформы 1959 года в цзине было 16 лянов."
+          },
+          "modernmeasure": {
+            "zh": "两",
+            "ru": [
+              "лян (мера массы)"
+            ],
+            "gloss": "Лян — до реформы 1959 года в цзине было 16 лянов."
+          }
+        },
+        {
+          "id": "measure-kilogram",
+          "sources": [
+            {
+              "title": "农村社会经济综合统计报表制度 — 福建省统计局，常用计算单位换算",
+              "url": "https://tjj.fujian.gov.cn/xxgk/zdff/202410/P020241024592998124217.pdf",
+              "quote": "1 公斤=2 市斤=1000 克=2.205 英磅",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "第一节计量器具变更 — 莱阳市志·山东地情档案",
+              "url": "https://shandong-chorography.org/database/c68/section/1/article/363/",
+              "quote": "1米＝100厘米＝3市尺，1吨＝1000公斤，1公斤＝1000克＝2市斤，1公里＝1000米＝2市里",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "公斤",
+            "ru": [
+              "Килограмм"
+            ],
+            "gloss": "Килограмм — два современных рыночных цзиня."
+          },
+          "modernmeasure": {
+            "zh": "公斤",
+            "ru": [
+              "Килограмм"
+            ],
+            "gloss": "Килограмм — два современных рыночных цзиня."
+          }
+        },
+        {
+          "id": "measure-li",
+          "sources": [
+            {
+              "title": "农村社会经济综合统计报表制度 — 福建省统计局，常用计算单位换算",
+              "url": "https://tjj.fujian.gov.cn/xxgk/zdff/202410/P020241024592998124217.pdf",
+              "quote": "1 市里=0.5 公里=0.311 英里=0.270 海里",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "第一节计量器具变更 — 莱阳市志·山东地情档案",
+              "url": "https://shandong-chorography.org/database/c68/section/1/article/363/",
+              "quote": "1米＝100厘米＝3市尺，1吨＝1000公斤，1公斤＝1000克＝2市斤，1公里＝1000米＝2市里",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "里",
+            "ru": [
+              "Ли"
+            ],
+            "gloss": "Ли — мера расстояния; современный ли равен 500 метрам."
+          },
+          "modernmeasure": {
+            "zh": "里",
+            "ru": [
+              "Ли"
+            ],
+            "gloss": "Ли — мера расстояния; современный ли равен 500 метрам."
+          }
+        }
+      ]
     }
   }
 }

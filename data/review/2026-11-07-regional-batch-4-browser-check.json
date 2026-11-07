@@ -1,0 +1,72 @@
+{
+  "questions": 16,
+  "cards": 128,
+  "options": 512,
+  "viewports": [
+    1280,
+    375
+  ],
+  "pinyin": [
+    false,
+    true
+  ],
+  "answers": [
+    "correct",
+    "incorrect"
+  ],
+  "pageErrors": [],
+  "results": [
+    {
+      "viewport": 1280,
+      "pinyin": false,
+      "correctAnswer": true,
+      "cards": 16
+    },
+    {
+      "viewport": 1280,
+      "pinyin": false,
+      "correctAnswer": false,
+      "cards": 16
+    },
+    {
+      "viewport": 1280,
+      "pinyin": true,
+      "correctAnswer": true,
+      "cards": 16
+    },
+    {
+      "viewport": 1280,
+      "pinyin": true,
+      "correctAnswer": false,
+      "cards": 16
+    },
+    {
+      "viewport": 375,
+      "pinyin": false,
+      "correctAnswer": true,
+      "cards": 16
+    },
+    {
+      "viewport": 375,
+      "pinyin": false,
+      "correctAnswer": false,
+      "cards": 16
+    },
+    {
+      "viewport": 375,
+      "pinyin": true,
+      "correctAnswer": true,
+      "cards": 16
+    },
+    {
+      "viewport": 375,
+      "pinyin": true,
+      "correctAnswer": false,
+      "cards": 16
+    }
+  ],
+  "screenshots": [
+    "/tmp/lingvo-batch4-mobile.png"
+  ],
+  "status": "passed"
+}

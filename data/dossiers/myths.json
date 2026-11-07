@@ -2322,6 +2322,176 @@
           "olympiad": []
         }
       ]
+    },
+    "elements": {
+      "columns": {
+        "panguoutcome": "zh",
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "element-stars",
+          "sources": [
+            {
+              "title": "盤古開天 — 香港大学中国文化教学材料",
+              "url": "https://cculture.hku.hk/content/sec_junior_plan/sec_junior_article/sec_junior_article_a1_01/sec_junior_article_a1_01_1.pdf",
+              "quote": "鬚髮變為星辰",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "楚国神话试探 — 长江大学荆楚文化网",
+              "url": "https://chu.yangtzeu.edu.cn/info/1002/1075.htm",
+              "quote": "他的头发和援须变成了天上的星星",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "星星",
+            "ru": [
+              "Звёзды"
+            ],
+            "gloss": "Звёзды — в этом пересказе в них превратились волосы и борода Паньгу."
+          },
+          "panguoutcome": {
+            "zh": "星星",
+            "ru": [
+              "Звёзды"
+            ],
+            "gloss": "Звёзды — в этом пересказе в них превратились волосы и борода Паньгу."
+          }
+        },
+        {
+          "id": "element-ocean",
+          "sources": [
+            {
+              "title": "盤古開天 — 香港大学中国文化教学材料",
+              "url": "https://cculture.hku.hk/content/sec_junior_plan/sec_junior_article/sec_junior_article_a1_01/sec_junior_article_a1_01_1.pdf",
+              "quote": "血液變為江河",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "海洋 — 教育部《重編國語辭典修訂本》2021",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=80389&la=0&powerMode=0",
+              "quote": "地球表面除陸地外的廣大鹹水水域。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            },
+            {
+              "title": "海洋 — 教育部《國語辭典簡編本》2021",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=19307&la=0&powerMode=0",
+              "quote": "地球表面除陸地外的廣大鹹水水域。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "海洋",
+            "ru": [
+              "Океан"
+            ],
+            "gloss": "Океан — кровь Паньгу, согласно пересказу, превратилась в реки."
+          },
+          "panguoutcome": {
+            "zh": "海洋",
+            "ru": [
+              "Океан"
+            ],
+            "gloss": "Океан — кровь Паньгу, согласно пересказу, превратилась в реки."
+          }
+        },
+        {
+          "id": "element-sunmoon",
+          "sources": [
+            {
+              "title": "盤古開天 — 香港大学中国文化教学材料",
+              "url": "https://cculture.hku.hk/content/sec_junior_plan/sec_junior_article/sec_junior_article_a1_01/sec_junior_article_a1_01_1.pdf",
+              "quote": "左眼變為太陽，右眼變為月亮",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "中国传统神话的文化价值与当代表达 — 人民论坛（人民日报社）",
+              "url": "http://paper.people.com.cn/rmlt/html/2023-05/15/content_25999957.htm",
+              "quote": "三国时期吴人徐整的《三五历纪》和《五运历年纪》，述说天地混沌如鸡蛋，而盘古居于其中。天地和盘古一起生长变化一万八千年，盘古眼睛化为日月，血液化为江河，骨骼化为崇山峻岭，毛发化为草木森林",
+              "checkedAt": "2026-10-15",
+              "authority": "academic",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/myths.json → figures/fig-pangu; цитата и дата из ранее принятого досье; нового открытия не было"
+            },
+            {
+              "title": "楚国神话试探 — 长江大学荆楚文化网",
+              "url": "https://chu.yangtzeu.edu.cn/info/1002/1075.htm",
+              "quote": "他的左眼睛变成了太阳，右眼睛变成了月亮",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            }
+          ],
+          "olympiad": [
+            "2025-26-mun-tat-57"
+          ],
+          "name": {
+            "zh": "日月",
+            "ru": [
+              "Солнце и Луна"
+            ],
+            "gloss": "Солнце и Луна — левый глаз стал Солнцем, а правый — Луной."
+          },
+          "panguoutcome": {
+            "zh": "日月",
+            "ru": [
+              "Солнце и Луна"
+            ],
+            "gloss": "Солнце и Луна — левый глаз стал Солнцем, а правый — Луной."
+          }
+        },
+        {
+          "id": "element-rain",
+          "sources": [
+            {
+              "title": "盤古開天 — 香港大学中国文化教学材料",
+              "url": "https://cculture.hku.hk/content/sec_junior_plan/sec_junior_article/sec_junior_article_a1_01/sec_junior_article_a1_01_1.pdf",
+              "quote": "汗水變為雨露",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "楚国神话试探 — 长江大学荆楚文化网",
+              "url": "https://chu.yangtzeu.edu.cn/info/1002/1075.htm",
+              "quote": "就是那最没用处的身上出的汗，也变成了雨露和甘霖",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "primary-web-search-indexed-excerpt; точный фрагмент первичного сайта прочитан в поисковой выдаче; полного открытия страницы не выполнялось"
+            }
+          ],
+          "olympiad": [],
+          "name": {
+            "zh": "雨",
+            "ru": [
+              "Дождь"
+            ],
+            "gloss": "Дождь — в мифе его источником стал пот Паньгу."
+          },
+          "panguoutcome": {
+            "zh": "雨",
+            "ru": [
+              "Дождь"
+            ],
+            "gloss": "Дождь — в мифе его источником стал пот Паньгу."
+          }
+        }
+      ]
     }
   }
 }
