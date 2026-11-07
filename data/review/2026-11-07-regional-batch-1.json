@@ -1,0 +1,395 @@
+{
+  "date": "2026-11-07",
+  "batch": 1,
+  "batchSize": 15,
+  "state": "approved-for-release",
+  "visibleCountBefore": 964,
+  "expectedVisibleCountAfter": 979,
+  "parkedCountBefore": 303,
+  "items": [
+    {
+      "id": "2016-17-mun-spb-3",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q91",
+      "fact": {
+        "table": "cities",
+        "row": "city-guangzhou",
+        "ask": "name",
+        "where": {
+          "country": "中国"
+        }
+      },
+      "questionRu": "Какой из этих городов не является городом центрального подчинения?",
+      "answer": "广州",
+      "optionPoolSize": 5,
+      "wrongGlossCount": 4,
+      "answerGloss": "Гуанчжоу — крупный город на юге Китая, в провинции Гуандун",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 1
+    },
+    {
+      "id": "2019-20-mun-khab-1",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q92",
+      "fact": {
+        "table": "provinces",
+        "row": "prov-anhui",
+        "ask": "capital"
+      },
+      "questionRu": "Какой город — административный центр провинции Аньхой?",
+      "answer": "合肥",
+      "optionPoolSize": 27,
+      "wrongGlossCount": 26,
+      "answerGloss": "Хэфэй — центр провинции Аньхой",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 2
+    },
+    {
+      "id": "2019-20-mun-khab-7",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q110",
+      "fact": {
+        "table": "provinces",
+        "row": "prov-jiangxi",
+        "ask": "name",
+        "where": {
+          "kind": "省"
+        }
+      },
+      "questionRu": "Сокращённым названием какой провинции служит иероглиф 赣?",
+      "answer": "江西",
+      "optionPoolSize": 23,
+      "wrongGlossCount": 22,
+      "answerGloss": "Цзянси — провинция на юго-востоке Китая, на южном берегу Янцзы, центр — Наньчан",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 3
+    },
+    {
+      "id": "2025-26-mun-novg-3",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q111",
+      "fact": {
+        "table": "provinces",
+        "row": "prov-guizhou",
+        "ask": "full",
+        "where": {
+          "kind": "省"
+        }
+      },
+      "questionRu": "О какой провинции Китая говорят: «В небе нет трёх ясных дней подряд, на земле нет и трёх чи ровного места»?",
+      "answer": "贵州省",
+      "optionPoolSize": 23,
+      "wrongGlossCount": 22,
+      "answerGloss": "Гуйчжоу — провинция на юго-западе Китая, её центр — Гуйян",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 4
+    },
+    {
+      "id": "2025-26-shk-mosobl-12",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q112",
+      "fact": {
+        "table": "provinces",
+        "row": "prov-yunnan",
+        "ask": "full"
+      },
+      "questionRu": "Какая административная единица КНР имеет второе название 滇?",
+      "answer": "云南省",
+      "optionPoolSize": 34,
+      "wrongGlossCount": 33,
+      "answerGloss": "Юньнань — провинция на юго-западе Китая, её центр — Куньмин",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 5
+    },
+    {
+      "id": "2025-26-mun-mosobl-9",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q113",
+      "fact": {
+        "table": "cities",
+        "row": "city-ru-yakutsk",
+        "ask": "name",
+        "where": {
+          "country": "俄罗斯"
+        }
+      },
+      "questionRu": "Какой город стоит на реке Лена?",
+      "answer": "雅库茨克",
+      "optionPoolSize": 25,
+      "wrongGlossCount": 24,
+      "answerGloss": "Якутск — столица Якутии (Республика Саха) на Лене",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 6
+    },
+    {
+      "id": "2024-25-mun-kursk-1",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q115",
+      "fact": {
+        "table": "cities",
+        "row": "city-shanghai",
+        "ask": "name",
+        "where": {
+          "country": "中国"
+        }
+      },
+      "questionRu": "В каком городе проходила Всемирная выставка ЭКСПО-2010?",
+      "answer": "上海",
+      "optionPoolSize": 25,
+      "wrongGlossCount": 24,
+      "answerGloss": "Шанхай — город центрального подчинения у устья Янцзы",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 8
+    },
+    {
+      "id": "2020-21-mun-spb-7",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q119",
+      "fact": {
+        "table": "cities",
+        "row": "city-beijing",
+        "ask": "name",
+        "where": {
+          "country": "中国"
+        }
+      },
+      "questionRu": "В каком городе Китая проходили зимние Олимпийские игры 2022 года?",
+      "answer": "北京",
+      "optionPoolSize": 25,
+      "wrongGlossCount": 24,
+      "answerGloss": "Пекин — столица КНР и город центрального подчинения",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 11
+    },
+    {
+      "id": "2021-22-mun-mosobl-54",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q121",
+      "fact": {
+        "table": "cities",
+        "row": "city-suzhou",
+        "ask": "name",
+        "where": {
+          "country": "中国"
+        }
+      },
+      "questionRu": "Какой город называют «китайской Венецией»?",
+      "answer": "苏州",
+      "optionPoolSize": 25,
+      "wrongGlossCount": 24,
+      "answerGloss": "Сучжоу — город в юго-восточной части провинции Цзянсу, у озера Тайху",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 12
+    },
+    {
+      "id": "2022-23-mun-krsk-4",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q122",
+      "fact": {
+        "table": "provinces",
+        "row": "prov-shaanxi",
+        "ask": "name",
+        "where": {
+          "kind": "省"
+        }
+      },
+      "questionRu": "В какой провинции находится гробница императора Цинь Шихуана?",
+      "answer": "陕西",
+      "optionPoolSize": 23,
+      "wrongGlossCount": 22,
+      "answerGloss": "Шэньси — провинция на северо-западе Китая, центр — Сиань",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 13
+    },
+    {
+      "id": "2023-24-mun-kem-9",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q124",
+      "fact": {
+        "table": "cities",
+        "row": "city-ru-blagoveshchensk",
+        "ask": "name",
+        "where": {
+          "country": "俄罗斯"
+        }
+      },
+      "questionRu": "Какой город России расположен непосредственно на границе с Китаем?",
+      "answer": "布拉戈维申斯克",
+      "optionPoolSize": 24,
+      "wrongGlossCount": 23,
+      "answerGloss": "Благовещенск — центр Амурской области на Амуре",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 15
+    },
+    {
+      "id": "2025-26-shk-mosobl-14",
+      "dossier": "nature",
+      "dossierQuestion": "nature-q03",
+      "fact": {
+        "table": "mountains",
+        "row": "mtn-hengshan-shanxi",
+        "ask": "province",
+        "where": {
+          "country": "中国"
+        }
+      },
+      "questionRu": "В какой провинции находится священная гора для даосов 恒山?",
+      "answer": "山西",
+      "optionPoolSize": 11,
+      "wrongGlossCount": 10,
+      "answerGloss": "Шаньси — здесь гора 恒山 (Хэншань), Северный пик пяти священных гор",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 16
+    },
+    {
+      "id": "2025-26-mun-ryaz-4",
+      "dossier": "nature",
+      "dossierQuestion": "nature-q05",
+      "fact": {
+        "table": "waters",
+        "row": "wat-heilongjiang",
+        "ask": "name",
+        "where": {
+          "kind": "河流"
+        }
+      },
+      "questionRu": "По какой реке проходит часть границы России и Китая на Дальнем Востоке?",
+      "answer": "黑龙江",
+      "optionPoolSize": 20,
+      "wrongGlossCount": 19,
+      "answerGloss": "Хэйлунцзян (Амур) — крупная река на северо-востоке Китая",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 17
+    },
+    {
+      "id": "2023-24-mun-komi-4",
+      "dossier": "nature",
+      "dossierQuestion": "nature-q22",
+      "fact": {
+        "table": "waters",
+        "row": "wat-huanghe",
+        "ask": "name",
+        "where": {
+          "country": "中国",
+          "kind": "河流"
+        }
+      },
+      "questionRu": "Какую реку Китая называют «рекой тысячи бедствий»?",
+      "answer": "黄河",
+      "optionPoolSize": 16,
+      "wrongGlossCount": 15,
+      "answerGloss": "Хуанхэ (Жёлтая река) — вторая по длине река Китая, 5464 км",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 19
+    },
+    {
+      "id": "2025-26-shk-mosobl-4",
+      "dossier": "nature",
+      "dossierQuestion": "nature-q23",
+      "fact": {
+        "table": "mountains",
+        "row": "mtn-huashan",
+        "ask": "province",
+        "where": {
+          "country": "中国"
+        }
+      },
+      "questionRu": "В какой провинции находится священная гора для даосов 华山?",
+      "answer": "陕西",
+      "optionPoolSize": 11,
+      "wrongGlossCount": 10,
+      "answerGloss": "Шэньси — здесь Хуашань, Западный пик пяти священных гор",
+      "embeddingApprovalDate": "2026-10-25",
+      "reviewNumber": 20
+    }
+  ],
+  "initialBatchSize": 20,
+  "expectedHiddenRegionalCountAfter": 288,
+  "expectedRemainingWorkCountAfter": 283,
+  "excludedByAuthor": [
+    {
+      "reviewNumber": 7,
+      "id": "2025-26-mun-nnov-1",
+      "questionRu": "Какой город — столица России?",
+      "reason": "Слишком лёгкий вопрос о столице России."
+    },
+    {
+      "reviewNumber": 9,
+      "id": "2024-25-shk-mosobl-8",
+      "questionRu": "Какой город считается финансовым центром запада Китая?",
+      "reason": "Снять вопрос о финансовом центре запада Китая."
+    },
+    {
+      "reviewNumber": 10,
+      "id": "2021-22-mun-volog-1",
+      "questionRu": "Какой город является столицей Китая?",
+      "reason": "Слишком лёгкий вопрос о столице Китая."
+    },
+    {
+      "reviewNumber": 14,
+      "id": "2025-26-shk-mosobl-2",
+      "questionRu": "Какая административная единица КНР имеет второе название 陇?",
+      "reason": "Снять вопрос о сокращённом названии провинции Ганьсу."
+    }
+  ],
+  "duplicateExclusions": [
+    {
+      "reviewNumber": 18,
+      "id": "2018-19-mun-vrn-6",
+      "keptId": "2018-19-shk-5",
+      "fact": "Хуанхэ — вторая по длине река Китая.",
+      "reason": "Обратная формулировка уже опубликованного вопроса проверяет ту же связь."
+    }
+  ],
+  "rewrites": [
+    {
+      "reviewNumber": 15,
+      "id": "2023-24-mun-kem-9",
+      "before": "Какой российский город (из перечисленных) находится на границе с Китаем?",
+      "after": "Какой город России расположен непосредственно на границе с Китаем?",
+      "intent": "Определить российский город непосредственно на границе с Китаем."
+    },
+    {
+      "reviewNumber": 17,
+      "id": "2025-26-mun-ryaz-4",
+      "before": "Какая река является естественной границей между Россией и Китаем на востоке?",
+      "after": "По какой реке проходит часть границы России и Китая на Дальнем Востоке?",
+      "intent": "Определить реку, образующую участок российско-китайской границы на Дальнем Востоке."
+    }
+  ],
+  "authorDecisions": "2026-11-07-regional-batch-1-author-decisions.json",
+  "initialReview": {
+    "textCrossLeakCandidates": 0,
+    "glossCandidates": 174,
+    "sameRowRepetitions": 94,
+    "manuallyReviewedOtherCandidates": 80,
+    "blockingFindings": 0,
+    "report": "2026-11-07-regional-batch-1-review.md",
+    "contentChanged": false
+  },
+  "finalReview": {
+    "state": "dedup-complete",
+    "releaseCount": 15,
+    "contentChangedIds": [
+      "2023-24-mun-kem-9",
+      "2025-26-mun-ryaz-4"
+    ],
+    "duplicatesFound": 1,
+    "refillTo20": false,
+    "report": "2026-11-07-regional-batch-1-dedup-review.md",
+    "textCrossLeakCandidates": 0,
+    "glossCandidates": 135,
+    "sameRowRepetitions": 80,
+    "otherCandidatesReviewed": 55,
+    "newCandidatesAfterRewrites": 0,
+    "optionDisplaysChecked": 1500,
+    "blockingFindings": 0
+  },
+  "futureDuplicateCandidates": [
+    {
+      "id": "2016-17-mun-spb-4",
+      "duplicateOf": "2020-21-mun-spb-7",
+      "note": "Скрытый обратный вопрос о годе зимней Олимпиады в Пекине. Не включать в следующую партию как новый факт без разбора дублирования."
+    }
+  ]
+}

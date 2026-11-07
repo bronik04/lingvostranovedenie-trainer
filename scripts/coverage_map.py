@@ -1,11 +1,12 @@
-"""Карта покрытия: какие темы страноведения закрыты вопросами банка и сколько их не хватает до цели.
+"""Карта покрытия: какие темы представлены доступными на сайте вопросами.
 
 Темы — `data/coverage.json`: у каждой категория олимпиады, название, откуда тема (олимпиада, книга
 автора, видеокурс, заметки об идеях) и слова для поиска. Вопрос относится к теме, если слово стоит
 в его тексте или в правильном ответе: неверные варианты — соседние факты, они тему не задают.
 Русское слово ищется с начала слова («сад» не найдёт «посадку»), «ё» и «е» не различаются. Отчёт —
-`data/review/coverage.md`: доли категорий в олимпиаде и в банке, сколько вопросов каждой категории
-нужно к цели, пустые и слабые темы, вопросы вне тем — по ним видно, чего не хватает списку тем.
+`data/review/coverage.md`: фактические доли категорий, пустые и слабые темы, вопросы вне тем.
+Фильтр доступности тот же, что у сайта. Число вопросов не измеряет разнообразие фактов
+и само по себе не доказывает содержательную полноту темы.
 """
 
 from __future__ import annotations
@@ -19,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
 from taxonomy import TOPICS  # noqa: E402
+from site_bank import embedded_by, load_settings, site_bank  # noqa: E402
 
 FEW = 3  # тема с меньшим числом вопросов — слабая
 
@@ -59,13 +61,10 @@ def validate_themes(themes: object) -> list[str]:
 
 
 def validate_coverage(data: object) -> list[str]:
-    """Весь файл data/coverage.json: цель и темы — чтобы сборка падала с понятным сообщением."""
+    """Весь файл data/coverage.json: темы — чтобы сборка падала с понятным сообщением."""
     if not isinstance(data, dict):
-        return ['data/coverage.json — словарь с ключами target и themes']
+        return ['data/coverage.json — словарь с ключом themes']
     errors: list[str] = []
-    target = data.get('target')
-    if not isinstance(target, int) or isinstance(target, bool) or target <= 0:
-        errors.append('target — положительное целое число (цель — сколько вопросов)')
     if 'themes' not in data:
         errors.append('нет ключа themes')
     else:
@@ -109,20 +108,29 @@ def topic_shares(bank: list[dict]) -> dict[str, dict]:
             for topic in TOPICS}
 
 
-def coverage_report(bank: list[dict], themes: list[dict], target: int) -> str:
+def coverage_report(bank: list[dict], themes: list[dict]) -> str:
+    """Отчёт по уже отфильтрованному для сайта банку."""
     matches = theme_matches(bank, themes)
     shares = topic_shares(bank)
+    available = 'доступен' if len(bank) % 10 == 1 and len(bank) % 100 != 11 else 'доступны'
     lines = ['# Карта покрытия', '',
-             f'В банке {len(bank)} {questions_word(len(bank))}. Цель — {target}: доли категорий как в олимпиаде, ни одной '
-             'пустой темы из материалов автора. Собирается сборкой (`scripts/coverage_map.py`), темы — '
-             '`data/coverage.json`. Счёт по словам в тексте вопроса и правильном ответе — приблизительный: '
-             'вопрос может попасть в несколько тем, а слово — поймать чужой вопрос.', '',
+             f'На сайте {available} {len(bank)} {questions_word(len(bank))}. '
+             'Скрытые вопросы исключены тем же фильтром `data/site.json`, что используется при сборке сайта, '
+             'с учётом разрешённых встраиваний и отдельных исключений. Отдельный раздел «Чэнъюй» в эту карту не входит.', '',
+             'Отчёт пишет сборка (`scripts/coverage_map.py`), темы — `data/coverage.json`. '
+             'Счёт по словам в тексте вопроса и правильном ответе — приблизительный: '
+             'вопрос может попасть в несколько тем, а слово — поймать чужой вопрос. '
+             'Несколько вопросов об одном факте не означают широкий охват темы; число вопросов '
+             'не доказывает её содержательную полноту. Отметка «мало» означает 1–2 вопроса и служит поводом для проверки.', '',
              '## Категории', '',
-             '| Категория | Доля в олимпиаде | В банке | Нужно к цели | Не хватает |', '|---|---|---|---|---|']
+             'Доля среди олимпиадных считается только по доступным олимпиадным записям: '
+             'каждая учитывается один раз независимо от числа появлений в бланках. '
+             'Доли описывают текущий состав, а не задают квоты пополнения.', '',
+             '| Категория | Доля среди олимпиадных | На сайте | Доля на сайте |', '|---|---|---|---|']
     for topic in TOPICS:
-        need = round(shares[topic]['olympiad'] * target)
         have = shares[topic]['bank']
-        lines.append(f'| {topic} | {round(shares[topic]["olympiad"] * 100)} % | {have} | {need} | {max(need - have, 0)} |')
+        share = round(have / len(bank) * 100) if bank else 0
+        lines.append(f'| {topic} | {round(shares[topic]["olympiad"] * 100)} % | {have} | {share} % |')
     for topic in TOPICS:
         own = [theme for theme in themes if theme['topic'] == topic]
         if not own:
@@ -135,10 +143,16 @@ def coverage_report(bank: list[dict], themes: list[dict], target: int) -> str:
     empty = [theme for theme in themes if not matches[theme['id']]]
     lines += ['', '## Пустые темы', '']
     lines += [f'- {theme["title"]} ({theme["topic"]})' for theme in empty] or ['- нет']
+    sparse = sorted((theme for theme in themes if 0 < len(matches[theme['id']]) < FEW),
+                    key=lambda theme: len(matches[theme['id']]))
+    lines += ['', '## Темы с 1–2 вопросами', '']
+    lines += [f'- {theme["title"]} — {len(matches[theme["id"]])} {questions_word(len(matches[theme["id"]]))} '
+              f'({theme["topic"]})' for theme in sparse] or ['- нет']
     covered = {record_id for ids in matches.values() for record_id in ids}
     outside = [record for record in bank if record['id'] not in covered]
     lines += ['', '## Вопросы вне тем', '',
-              f'{len(outside)} вопросов не попали ни в одну тему — по ним видно, чего не хватает списку тем.', '']
+              f'Не отнесено ни к одной теме: {len(outside)} {questions_word(len(outside))}. '
+              'По ним видно, чего не хватает списку тем.', '']
     lines += [f'- `{record["id"]}` — {record["questionRu"][:100]}' for record in outside] or ['- нет']
     return '\n'.join(lines) + '\n'
 
@@ -149,10 +163,12 @@ def main() -> None:
     errors = validate_coverage(data)
     if errors:
         raise SystemExit('некорректные темы data/coverage.json:\n - ' + '\n - '.join(errors))
-    (ROOT / 'data/review/coverage.md').write_text(coverage_report(bank, data['themes'], data['target']), encoding='utf-8')
+    bank = site_bank(bank, load_settings(ROOT / 'data/site.json'), embedded_by(ROOT / 'data/dossiers'))
+    (ROOT / 'data/review/coverage.md').write_text(coverage_report(bank, data['themes']), encoding='utf-8')
     matches = theme_matches(bank, data['themes'])
     empty = sum(1 for ids in matches.values() if not ids)
-    print(f'карта покрытия: тем {len(data["themes"])}, пустых {empty}; отчёт: data/review/coverage.md')
+    print(f'карта покрытия сайта: вопросов {len(bank)}, тем {len(data["themes"])}, пустых {empty}; '
+          'отчёт: data/review/coverage.md')
 
 
 if __name__ == '__main__':

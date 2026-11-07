@@ -21,7 +21,7 @@
     python3 scripts/regions.py            # решения по региональным вариантам: data/review/regions.md и
                                           # страница отложенных заданий data/review/regions-excluded.html
     python3 scripts/taxonomy.py           # проставить темы
-    python3 scripts/coverage_map.py       # карта покрытия: data/review/coverage.md
+    python3 scripts/coverage_map.py       # карта доступных на сайте вопросов: data/review/coverage.md
     python3 scripts/pinyin.py             # пиньинь: data/bank.json -> data/pinyin.json
     python3 scripts/build_html.py         # data/bank.json -> dist/ (на сайт — что разрешает data/site.json)
 
@@ -78,9 +78,17 @@ Cormorant Garamond и Onest (SIL OFL 1.1, тексты лицензий рядо
 (текст задания из бланка, ключ, путь в папке вариантов, контрольная сумма файла), решение по каждому заданию — `data/review/regions.json`. Сверить расшифровку с бланками:
 `python3 scripts/regions.py --sources <папка 03-ВСОШ>`.
 `data/bank.json` — канонический банк, единственный источник правды для сборки. На сайт идёт то, что разрешает
-`data/site.json`: с 2026-10-26 вопросы из региональных вариантов скрыты (кроме встроенных темами «Четыре великих»,
-«Государство», «Современный Китай»), план возвращения — `data/review/regions-later.md`.
+`data/site.json`: региональные вопросы скрыты, кроме разрешённых встраиваний и отдельных id.
+С 2026-11-07 возвращаем законсервированные вопросы небольшими партиями через `showRegionalIds`;
+общий `showRegional` остаётся false. Состав первого выпуска —
+`data/review/2026-11-07-regional-batch-1.md`, очередь — `data/review/regions-later.md`.
 `data/review/` — отчёты слияния, рубрикации и волн проверки ответов.
+
+Карта `data/review/coverage.md` считает только доступные на сайте вопросы по тем же
+настройкам `data/site.json`, что и сборка HTML. В ней — фактические доли категорий,
+пустые темы и темы с 1–2 вопросами; количественной цели и квот пополнения нет.
+Подсчёт по ключевым словам приблизительный и не доказывает полноту темы:
+несколько вопросов могут проверять один факт. Раздел «Чэнъюй» считается отдельно.
 
 К олимпиадным вопросам `merge_bank.py` добавляет дополнения `data/authored/questions.json`, затем
 вопросы досье `data/dossiers/` (таблица фактов `<id>.json` и вопросы по её ячейкам

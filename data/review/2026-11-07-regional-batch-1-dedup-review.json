@@ -1,0 +1,522 @@
+{
+  "baselineCount": 964,
+  "reviewed": 16,
+  "keep": 15,
+  "excludeIncoming": [
+    {
+      "id": "2018-19-mun-vrn-6",
+      "duplicateOf": "2018-19-shk-5"
+    }
+  ],
+  "criterion": "Семантический дубль — тот же объект/отношение/значение, включая прямой и обратный вопрос. Общий ответ, строка, тема или другой атрибут объекта недостаточны. Факт, названный в условии другого вопроса, — подсказка/повтор контекста, не автоматически дубль проверяемой связи.",
+  "items": [
+    {
+      "reviewNumber": 1,
+      "id": "2016-17-mun-spb-3",
+      "decision": "keep",
+      "reason": "Гуанчжоу: статус не-муниципалитета отличается от прозвища, статуса древней столицы, статуса СЭЗ, столицы Гуандуна и пословицы. Опубликованный 2015-16-reg-1 проверяет муниципальный статус Тяньцзиня, другого объекта; общий классификатор не делает это одним фактом.",
+      "candidates": [
+        {
+          "id": "2016-17-zak-2",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2021-22-shk-q39d834",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2023-24-shk-32",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2023-24-shk-mosobl-20",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "provinces-q99",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        }
+      ],
+      "additionalRecordsChecked": [
+        "2015-16-reg-1"
+      ]
+    },
+    {
+      "reviewNumber": 2,
+      "id": "2019-20-mun-khab-1",
+      "decision": "keep",
+      "reason": "Хэфэй как центр Аньхоя — новая связь. Диалект Аньхоя и сокращение 皖 проверяют другие свойства той же провинции.",
+      "candidates": [
+        {
+          "id": "2024-25-zak-qe05919",
+          "activeBefore": true,
+          "classification": "same_entity_different_relation"
+        },
+        {
+          "id": "addition-b1-02",
+          "activeBefore": true,
+          "classification": "same_entity_different_relation"
+        }
+      ],
+      "additionalRecordsChecked": []
+    },
+    {
+      "reviewNumber": 3,
+      "id": "2019-20-mun-khab-7",
+      "decision": "keep",
+      "reason": "Связь 赣 ↔ Цзянси не повторяет местоположение озера Поянху.",
+      "candidates": [
+        {
+          "id": "2022-23-reg-3",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        }
+      ],
+      "additionalRecordsChecked": []
+    },
+    {
+      "reviewNumber": 4,
+      "id": "2025-26-mun-novg-3",
+      "decision": "keep",
+      "reason": "Поговорка о климате и рельефе Гуйчжоу отличается от сокращения 黔, расположения FAST, батика, населения мяо и отсутствия морского побережья.",
+      "candidates": [
+        {
+          "id": "2024-25-mun-kem-4",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "crafts-q132",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "ethnos-q04",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "nature-q154",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "provinces-q45",
+          "activeBefore": true,
+          "classification": "same_entity_different_relation"
+        }
+      ],
+      "additionalRecordsChecked": []
+    },
+    {
+      "reviewNumber": 5,
+      "id": "2025-26-shk-mosobl-12",
+      "decision": "keep",
+      "reason": "Сокращение 滇 ↔ Юньнань отличается от этнического состава, статуса провинции, происхождения чая и местоположения памятников.",
+      "candidates": [
+        {
+          "id": "2015-16-reg-4",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2019-20-shk-q048752",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2025-26-mun-perm-4",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "addition-b1-05",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "cuisine-q90",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "ethnos-q78",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "nature-q159",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        }
+      ],
+      "additionalRecordsChecked": []
+    },
+    {
+      "reviewNumber": 6,
+      "id": "2025-26-mun-mosobl-9",
+      "decision": "keep",
+      "reason": "Якутск ↔ Лена отличается от Якутска как крупнейшего города на вечной мерзлоте. Общий город не равен общему факту.",
+      "candidates": [
+        {
+          "id": "provinces-q77",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        }
+      ],
+      "additionalRecordsChecked": []
+    },
+    {
+      "reviewNumber": 8,
+      "id": "2024-25-mun-kursk-1",
+      "decision": "keep",
+      "reason": "Шанхай ↔ ЭКСПО-2010 отличается от АТЭС-2001, первого съезда КПК, порта, зоны свободной торговли, достопримечательностей и маглева. Совпадение города недостаточно для удаления.",
+      "candidates": [
+        {
+          "id": "2015-16-shk-63",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2015-16-zak-1",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2018-19-mun-lenobl-49",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2024-25-mun-mosobl-3",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2024-25-mun-nsk-2",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2025-26-mun-irk-8",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "addition-b2-15",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "landmarks-q100",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "modern-history-q114",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        }
+      ],
+      "additionalRecordsChecked": []
+    },
+    {
+      "reviewNumber": 11,
+      "id": "2020-21-mun-spb-7",
+      "decision": "keep",
+      "reason": "Пекин ↔ зимние Игры-2022 отличается от летних Игр-2008 и других свойств Пекина. Опубликованный 2021-22-zak-q38d33e спрашивает второго хозяина — Чжанцзякоу, а modern-china-q12 — талисман; это другие отношения, хотя Пекин-2022 назван в условии. Скрытый 2016-17-mun-spb-4 спрашивает год этих же зимних Игр: точная обратная связь. Сейчас его не публиковать вместе с этим; для выпуска сохранять выбранный №11.",
+      "candidates": [
+        {
+          "id": "2015-16-reg-6",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2016-17-mun-8",
+          "activeBefore": true,
+          "classification": "same_entity_different_relation"
+        },
+        {
+          "id": "2016-17-mun-yar-8",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2020-21-mun-novg-9",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2021-22-mun-omsk-3",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2021-22-mun-volog-1",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2022-23-shk-q623963",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "dynasties-q106",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "landmarks-q95",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "landmarks-q99",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        }
+      ],
+      "additionalRecordsChecked": [
+        "2016-17-mun-spb-4",
+        "2021-22-zak-q38d33e",
+        "modern-china-q12"
+      ]
+    },
+    {
+      "reviewNumber": 12,
+      "id": "2021-22-mun-mosobl-54",
+      "decision": "keep",
+      "reason": "«Китайская/Восточная Венеция» и 园林之城 («город садов», provinces-q58) — разные прозвища; первое проверяет каналы, второе сады. Непринадлежность древним столицам и вышивка — тоже другие факты.",
+      "candidates": [
+        {
+          "id": "2015-16-zak-6",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2023-24-shk-mosobl-10",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "provinces-q58",
+          "activeBefore": true,
+          "classification": "same_entity_different_relation"
+        }
+      ],
+      "additionalRecordsChecked": []
+    },
+    {
+      "reviewNumber": 13,
+      "id": "2022-23-mun-krsk-4",
+      "decision": "keep",
+      "reason": "Гробница Цинь Шихуана ↔ провинция Шэньси отличается от терракотовой армии ↔ город Сиань (2016-17-shk-4) и принадлежности армии комплексу гробницы (2023-24-reg-4). Связанный географический сюжет, но иной объект/уровень административного деления; знание города не само по себе знание провинции. provinces-q37 даёт отдельную связь Сиань ↔ Шэньси. Не считать композицию нескольких фактов точным дублем одного.",
+      "candidates": [
+        {
+          "id": "2021-22-mun-tat-53",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2025-26-shk-mosobl-4",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "provinces-q37",
+          "activeBefore": true,
+          "classification": "same_entity_different_relation"
+        }
+      ],
+      "additionalRecordsChecked": [
+        "2016-17-shk-4",
+        "2023-24-reg-4"
+      ]
+    },
+    {
+      "reviewNumber": 15,
+      "id": "2023-24-mun-kem-9",
+      "decision": "keep",
+      "reason": "Нужен город непосредственно на российско-китайской границе. provinces-q83 спрашивает реку у города-близнеца Хэйхэ, а 2020-21-zak-q1f0e35 — китайскую провинцию напротив Благовещенска. Оба связаны с тем же местом, но требуют другой связи/ответа; текст второй записи называет исходный факт, что учитывается группой blagoveshchensk-border. Это подсказка в условии, не семантически тот же вопрос.",
+      "candidates": [
+        {
+          "id": "provinces-q83",
+          "activeBefore": true,
+          "classification": "same_entity_different_relation"
+        }
+      ],
+      "additionalRecordsChecked": [
+        "2020-21-zak-q1f0e35"
+      ],
+      "rewrite": {
+        "questionRu": "Какой город России расположен непосредственно на границе с Китаем?",
+        "preservesIntent": true,
+        "reason": "Сохраняет объект и проверяемую связь; ответ остаётся Благовещенск."
+      }
+    },
+    {
+      "reviewNumber": 16,
+      "id": "2025-26-shk-mosobl-14",
+      "decision": "keep",
+      "reason": "恒山 ↔ Шаньси отличается от 恒山 ↔ Северный пик (nature-q49), Утайшань ↔ Шаньси, сокращения 晋 и географического описания Шаньси. Разные атрибуты общей строки допустимы.",
+      "candidates": [
+        {
+          "id": "2018-19-mun-55",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "nature-q148",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "nature-q49",
+          "activeBefore": true,
+          "classification": "same_entity_different_relation"
+        },
+        {
+          "id": "provinces-q32",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        }
+      ],
+      "additionalRecordsChecked": []
+    },
+    {
+      "reviewNumber": 17,
+      "id": "2025-26-mun-ryaz-4",
+      "decision": "keep",
+      "reason": "Амур/黑龙江 ↔ российско-китайская граница отличается от его устья в Охотском море (nature-q105). В 2020-21-zak-q1f0e35 黑龙江 — провинция Хэйлунцзян, вообще другой объект при одинаковой китайской строке. provinces-q83 использует синоним 阿穆尔河, но проверяет город на реке, не пограничную функцию. nature-q104 спрашивает Уссури, другой объект.",
+      "candidates": [
+        {
+          "id": "2020-21-zak-q1f0e35",
+          "activeBefore": true,
+          "classification": "homograph_different_entity"
+        },
+        {
+          "id": "nature-q105",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        }
+      ],
+      "additionalRecordsChecked": [
+        "provinces-q83",
+        "nature-q104"
+      ],
+      "rewrite": {
+        "questionRu": "По какой реке проходит часть границы России и Китая на Дальнем Востоке?",
+        "preservesIntent": true,
+        "reason": "Сохраняет реку и пограничную функцию; «часть границы» точнее прежнего обобщения; ответ остаётся Амур. Уссури и Туманная по-прежнему исключены из вариантов."
+      }
+    },
+    {
+      "reviewNumber": 18,
+      "id": "2018-19-mun-vrn-6",
+      "decision": "exclude_incoming_semantic_duplicate",
+      "reason": "Точный обратный дубль опубликованного 2018-19-shk-5: тот даёт Хуанхэ и спрашивает место по длине (второе), этот даёт второе место и спрашивает реку (Хуанхэ). Одна и та же проверяемая связь без нового знания. По новой просьбе пользователя убрать смысловые повторы — не добавлять №18; поместить его в hiddenQuestions с причиной и датой, сохранив каноническую запись, источники, id и прогресс. factRow уже разводит раунды, но не устраняет дублирование содержания. Мать-река, устье, Хэси, Хэнань/Хэбэй и бедствия — другие факты.",
+      "candidates": [
+        {
+          "id": "2017-18-shk-9",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2018-19-mun-52",
+          "activeBefore": true,
+          "classification": "same_entity_different_relation"
+        },
+        {
+          "id": "2018-19-shk-5",
+          "activeBefore": true,
+          "classification": "exact_relation_reverse"
+        },
+        {
+          "id": "2019-20-reg-5",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2023-24-mun-komi-4",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "provinces-q89",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        }
+      ],
+      "additionalRecordsChecked": []
+    },
+    {
+      "reviewNumber": 19,
+      "id": "2023-24-mun-komi-4",
+      "decision": "keep",
+      "reason": "«Река тысячи бедствий» ↔ Хуанхэ — отдельное прозвище/связь с наводнениями. «Мать-река», второе место по длине, устье, происхождение Хэси и Хэнань/Хэбэй не эквивалентны этому факту. Оставить, даже если №18 исключён.",
+      "candidates": [
+        {
+          "id": "2017-18-shk-9",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2018-19-mun-52",
+          "activeBefore": true,
+          "classification": "same_entity_different_relation"
+        },
+        {
+          "id": "2018-19-mun-vrn-6",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2018-19-shk-5",
+          "activeBefore": true,
+          "classification": "same_entity_different_relation"
+        },
+        {
+          "id": "2019-20-reg-5",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "provinces-q89",
+          "activeBefore": true,
+          "classification": "same_answer_different_fact"
+        }
+      ],
+      "additionalRecordsChecked": []
+    },
+    {
+      "reviewNumber": 20,
+      "id": "2025-26-shk-mosobl-4",
+      "decision": "keep",
+      "reason": "华山 ↔ Шэньси отличается от 华山 ↔ Западный пик (nature-q48). №13 проверяет другой объект в той же провинции; блюдо 羊肉泡馍 — ещё один самостоятельный факт.",
+      "candidates": [
+        {
+          "id": "2021-22-mun-tat-53",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "2022-23-mun-krsk-4",
+          "activeBefore": false,
+          "classification": "same_answer_different_fact"
+        },
+        {
+          "id": "nature-q48",
+          "activeBefore": true,
+          "classification": "same_entity_different_relation"
+        }
+      ],
+      "additionalRecordsChecked": []
+    }
+  ]
+}

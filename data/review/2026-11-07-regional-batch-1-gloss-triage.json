@@ -1,0 +1,1732 @@
+[
+  {
+    "n": 1,
+    "record": "nature/nature-q03",
+    "option": "o2",
+    "zh": "湖南",
+    "gloss": "Хунань — здесь гора 衡山 (Хэншань), Южный пик пяти священных гор",
+    "isAnswer": false,
+    "other": "nature/nature-q10",
+    "answer": [
+      "衡山"
+    ],
+    "clues": [
+      "Южный пик",
+      "провинция Хунань",
+      "пять священных гор"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись исходного варианта o1–o4 повторяет факт соответствующей строки горы/реки. Исходный id варианта не позволил скану отметить row=true; это не другая сущность."
+  },
+  {
+    "n": 2,
+    "record": "nature/nature-q03",
+    "option": "o4",
+    "zh": "山东",
+    "gloss": "Шаньдун — здесь Тайшань, Восточный пик пяти священных гор",
+    "isAnswer": false,
+    "other": "nature/nature-q47",
+    "answer": [
+      "Тайшань"
+    ],
+    "clues": [
+      "пять священных гор"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "partial_clue_false_positive",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Восточный пик/пять священных гор не сообщает требуемый титул «глава пяти гор»."
+  },
+  {
+    "n": 3,
+    "record": "nature/nature-q03",
+    "option": "o4",
+    "zh": "山东",
+    "gloss": "Шаньдун — здесь Тайшань, Восточный пик пяти священных гор",
+    "isAnswer": false,
+    "other": "nature/nature-q146",
+    "answer": [
+      "山东"
+    ],
+    "clues": [
+      "Тайшань"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись исходного варианта o1–o4 повторяет факт соответствующей строки горы/реки. Исходный id варианта не позволил скану отметить row=true; это не другая сущность."
+  },
+  {
+    "n": 4,
+    "record": "nature/nature-q05",
+    "option": "o4",
+    "zh": "额尔齐斯河",
+    "gloss": "Иртыш — главный приток Оби, берёт начало в Китае, в Синьцзяне",
+    "isAnswer": false,
+    "other": "nature/nature-q102",
+    "answer": [
+      "额尔齐斯河"
+    ],
+    "clues": [
+      "Синьцзян"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись исходного варианта o1–o4 повторяет факт соответствующей строки горы/реки. Исходный id варианта не позволил скану отметить row=true; это не другая сущность."
+  },
+  {
+    "n": 5,
+    "record": "nature/nature-q05",
+    "option": "wat-suzhouhe",
+    "zh": "苏州河",
+    "gloss": "Сучжоухэ (Усунцзян) — приток Хуанпу, течёт через центр Шанхая",
+    "isAnswer": false,
+    "other": "2016-17-shk-7",
+    "answer": [
+      "Хуанпу"
+    ],
+    "clues": [
+      "Шанхай"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "partial_clue_false_positive",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись о Сучжоухэ не сообщает, что Пудун лежит восточнее Хуанпу, и не объясняет название Пудун; совпала общая зацепка «Шанхай»."
+  },
+  {
+    "n": 6,
+    "record": "nature/nature-q18",
+    "option": "wat-suzhouhe",
+    "zh": "苏州河",
+    "gloss": "Сучжоухэ (Усунцзян) — приток Хуанпу, течёт через центр Шанхая",
+    "isAnswer": false,
+    "other": "2016-17-shk-7",
+    "answer": [
+      "Хуанпу"
+    ],
+    "clues": [
+      "Шанхай"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "partial_clue_false_positive",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись о Сучжоухэ не сообщает, что Пудун лежит восточнее Хуанпу, и не объясняет название Пудун; совпала общая зацепка «Шанхай»."
+  },
+  {
+    "n": 7,
+    "record": "nature/nature-q22",
+    "option": "wat-suzhouhe",
+    "zh": "苏州河",
+    "gloss": "Сучжоухэ (Усунцзян) — приток Хуанпу, течёт через центр Шанхая",
+    "isAnswer": false,
+    "other": "2016-17-shk-7",
+    "answer": [
+      "Хуанпу"
+    ],
+    "clues": [
+      "Шанхай"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "partial_clue_false_positive",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись о Сучжоухэ не сообщает, что Пудун лежит восточнее Хуанпу, и не объясняет название Пудун; совпала общая зацепка «Шанхай»."
+  },
+  {
+    "n": 8,
+    "record": "nature/nature-q23",
+    "option": "o1",
+    "zh": "山西",
+    "gloss": "Шаньси — здесь гора 恒山 (Хэншань), Северный пик пяти священных гор",
+    "isAnswer": false,
+    "other": "nature/nature-q49",
+    "answer": [
+      "恒山"
+    ],
+    "clues": [
+      "Северный пик",
+      "пять священных гор"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись исходного варианта o1–o4 повторяет факт соответствующей строки горы/реки. Исходный id варианта не позволил скану отметить row=true; это не другая сущность."
+  },
+  {
+    "n": 9,
+    "record": "nature/nature-q23",
+    "option": "o1",
+    "zh": "山西",
+    "gloss": "Шаньси — здесь гора 恒山 (Хэншань), Северный пик пяти священных гор",
+    "isAnswer": false,
+    "other": "nature/nature-q03",
+    "answer": [
+      "山西"
+    ],
+    "clues": [
+      "恒山"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись исходного варианта o1–o4 повторяет факт соответствующей строки горы/реки. Исходный id варианта не позволил скану отметить row=true; это не другая сущность."
+  },
+  {
+    "n": 10,
+    "record": "nature/nature-q23",
+    "option": "o4",
+    "zh": "山东",
+    "gloss": "Шаньдун — здесь Тайшань, Восточный пик пяти священных гор",
+    "isAnswer": false,
+    "other": "nature/nature-q47",
+    "answer": [
+      "Тайшань"
+    ],
+    "clues": [
+      "пять священных гор"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "partial_clue_false_positive",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Восточный пик/пять священных гор не сообщает требуемый титул «глава пяти гор»."
+  },
+  {
+    "n": 11,
+    "record": "nature/nature-q23",
+    "option": "o4",
+    "zh": "山东",
+    "gloss": "Шаньдун — здесь Тайшань, Восточный пик пяти священных гор",
+    "isAnswer": false,
+    "other": "nature/nature-q146",
+    "answer": [
+      "山东"
+    ],
+    "clues": [
+      "Тайшань"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись исходного варианта o1–o4 повторяет факт соответствующей строки горы/реки. Исходный id варианта не позволил скану отметить row=true; это не другая сущность."
+  },
+  {
+    "n": 12,
+    "record": "provinces/provinces-q91",
+    "option": "o2",
+    "zh": "重庆",
+    "gloss": "Чунцин — город центрального подчинения на юго-западе Китая",
+    "isAnswer": false,
+    "other": "provinces/provinces-q26",
+    "answer": [
+      "重庆",
+      "Чунцин"
+    ],
+    "clues": [
+      "город центрального подчинения"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Муниципальный статус того же города в таблицах городов/провинциальных единиц и олимпиадной записи. Повтор разрешён."
+  },
+  {
+    "n": 13,
+    "record": "provinces/provinces-q92",
+    "option": "o1",
+    "zh": "太原",
+    "gloss": "Тайюань — центр провинции Шаньси",
+    "isAnswer": false,
+    "other": "provinces/provinces-q03",
+    "answer": [
+      "провинция Шаньси"
+    ],
+    "clues": [
+      "Тайюань",
+      "太原"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Тайюань как центр Шаньси — общая ассоциация города и провинции. Не сообщает сведения о космодроме, Хуанхэ или угольной промышленности, по которым задан соседний вопрос."
+  },
+  {
+    "n": 14,
+    "record": "provinces/provinces-q92",
+    "option": "o2",
+    "zh": "石家庄",
+    "gloss": "Шицзячжуан — центр провинции Хэбэй",
+    "isAnswer": false,
+    "other": "provinces/provinces-q33",
+    "answer": [
+      "石家庄",
+      "Шицзячжуан"
+    ],
+    "clues": [
+      "провинция Хэбэй"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 15,
+    "record": "provinces/provinces-q92",
+    "option": "o4",
+    "zh": "西安",
+    "gloss": "Сиань — административный центр провинции Шэньси",
+    "isAnswer": false,
+    "other": "provinces/provinces-q37",
+    "answer": [
+      "西安"
+    ],
+    "clues": [
+      "провинция Шэньси"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 16,
+    "record": "provinces/provinces-q92",
+    "option": "prov-jiangsu",
+    "zh": "南京",
+    "gloss": "Нанкин — центр провинции Цзянсу",
+    "isAnswer": false,
+    "other": "provinces/provinces-q24",
+    "answer": [
+      "南京",
+      "Нанкин"
+    ],
+    "clues": [
+      "Цзянси",
+      "Цзянсу"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 17,
+    "record": "provinces/provinces-q92",
+    "option": "prov-sichuan",
+    "zh": "成都",
+    "gloss": "Чэнду — административный центр провинции Сычуань",
+    "isAnswer": false,
+    "other": "provinces/provinces-q25",
+    "answer": [
+      "成都"
+    ],
+    "clues": [
+      "провинция Сычуань"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 18,
+    "record": "provinces/provinces-q110",
+    "option": "o2",
+    "zh": "江苏",
+    "gloss": "Цзянсу — приморская провинция в низовьях Янцзы, центр — Нанкин",
+    "isAnswer": false,
+    "other": "provinces/provinces-q24",
+    "answer": [
+      "Нанкин"
+    ],
+    "clues": [
+      "Цзянси",
+      "Цзянсу"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 19,
+    "record": "provinces/provinces-q110",
+    "option": "o4",
+    "zh": "浙江",
+    "gloss": "Чжэцзян — провинция на юге дельты Янцзы, центр — Ханчжоу",
+    "isAnswer": false,
+    "other": "provinces/provinces-q101",
+    "answer": [
+      "Ханчжоу"
+    ],
+    "clues": [
+      "провинция Чжэцзян"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 20,
+    "record": "provinces/provinces-q110",
+    "option": "prov-hunan",
+    "zh": "湖南",
+    "gloss": "Хунань — провинция в среднем течении Янцзы, к югу от Дунтинху, центр — Чанша",
+    "isAnswer": false,
+    "other": "nature/nature-q142",
+    "answer": [
+      "湖南"
+    ],
+    "clues": [
+      "Дунтинху"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Хунань к югу от Дунтинху — полезная связь провинции/озера; сама по себе не формулирует, внутри какой провинции лежит озеро. Не повод удалять факт или объединять вопросы."
+  },
+  {
+    "n": 21,
+    "record": "provinces/provinces-q110",
+    "option": "prov-hunan",
+    "zh": "湖南",
+    "gloss": "Хунань — провинция в среднем течении Янцзы, к югу от Дунтинху, центр — Чанша",
+    "isAnswer": false,
+    "other": "provinces/provinces-q90",
+    "answer": [
+      "Дунтинху"
+    ],
+    "clues": [
+      "Хунань"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Повтор связи Хунань ↔ к югу от Дунтинху в связанном материале о названиях провинций; сохраняем объясняющий факт."
+  },
+  {
+    "n": 22,
+    "record": "provinces/provinces-q111",
+    "option": "prov-jiangsu",
+    "zh": "江苏省",
+    "gloss": "Цзянсу — провинция в низовьях Янцзы с центром в Нанкине",
+    "isAnswer": false,
+    "other": "provinces/provinces-q24",
+    "answer": [
+      "Нанкин"
+    ],
+    "clues": [
+      "Цзянси",
+      "Цзянсу"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 23,
+    "record": "provinces/provinces-q112",
+    "option": "o2",
+    "zh": "甘肃省",
+    "gloss": "Ганьсу — провинция на северо-западе Китая, её центр — Ланьчжоу",
+    "isAnswer": false,
+    "other": "provinces/provinces-q38",
+    "answer": [
+      "Ланьчжоу"
+    ],
+    "clues": [
+      "провинция Ганьсу"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 24,
+    "record": "provinces/provinces-q112",
+    "option": "o3",
+    "zh": "天津市",
+    "gloss": "Тяньцзинь — город центрального подчинения рядом с Пекином",
+    "isAnswer": false,
+    "other": "2015-16-reg-1",
+    "answer": [
+      "天津",
+      "Тяньцзинь"
+    ],
+    "clues": [
+      "город центрального подчинения"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Муниципальный статус того же города в таблицах городов/провинциальных единиц и олимпиадной записи. Повтор разрешён."
+  },
+  {
+    "n": 25,
+    "record": "provinces/provinces-q112",
+    "option": "prov-chongqing",
+    "zh": "重庆市",
+    "gloss": "Чунцин — город центрального подчинения в верховьях Янцзы",
+    "isAnswer": false,
+    "other": "provinces/provinces-q26",
+    "answer": [
+      "重庆",
+      "Чунцин"
+    ],
+    "clues": [
+      "город центрального подчинения"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Муниципальный статус того же города в таблицах городов/провинциальных единиц и олимпиадной записи. Повтор разрешён."
+  },
+  {
+    "n": 26,
+    "record": "provinces/provinces-q112",
+    "option": "prov-jiangsu",
+    "zh": "江苏省",
+    "gloss": "Цзянсу — провинция в низовьях Янцзы с центром в Нанкине",
+    "isAnswer": false,
+    "other": "provinces/provinces-q24",
+    "answer": [
+      "Нанкин"
+    ],
+    "clues": [
+      "Цзянси",
+      "Цзянсу"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 27,
+    "record": "provinces/provinces-q112",
+    "option": "prov-xianggang",
+    "zh": "香港特别行政区",
+    "gloss": "Сянган (Гонконг) — особый административный район на юге Китая, с 1997 года",
+    "isAnswer": false,
+    "other": "2016-17-mun-4",
+    "answer": [
+      "1997"
+    ],
+    "clues": [
+      "Гонконг"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Гонконг как САР с 1997 года и возврат под суверенитет КНР в 1997 — тот же факт в связанной олимпиадной записи; отдельная большая группа не нужна."
+  },
+  {
+    "n": 28,
+    "record": "provinces/provinces-q113",
+    "option": "city-ru-vladivostok",
+    "zh": "符拉迪沃斯托克",
+    "gloss": "Владивосток — центр Приморского края, портовый город на Японском море",
+    "isAnswer": false,
+    "other": "nature/nature-q130",
+    "answer": [
+      "Японское море"
+    ],
+    "clues": [
+      "Владивосток"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Владивосток ↔ Японское море — одна связь в таблицах городов и морей."
+  },
+  {
+    "n": 29,
+    "record": "provinces/provinces-q114",
+    "option": "o1",
+    "zh": "圣彼得堡",
+    "gloss": "Санкт-Петербург — «Северная столица» в устье Невы",
+    "isAnswer": false,
+    "other": "provinces/provinces-q106",
+    "answer": [
+      "Северная столица"
+    ],
+    "clues": [
+      "Санкт-Петербург"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "То же свойство той же городской строки (прозвище Петербурга / членство Владимира в Золотом кольце); original option o* замаскировал идентичность строки."
+  },
+  {
+    "n": 30,
+    "record": "provinces/provinces-q114",
+    "option": "city-ru-vladivostok",
+    "zh": "符拉迪沃斯托克",
+    "gloss": "Владивосток — центр Приморского края, портовый город на Японском море",
+    "isAnswer": false,
+    "other": "nature/nature-q130",
+    "answer": [
+      "Японское море"
+    ],
+    "clues": [
+      "Владивосток"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Владивосток ↔ Японское море — одна связь в таблицах городов и морей."
+  },
+  {
+    "n": 31,
+    "record": "provinces/provinces-q115",
+    "option": "o2",
+    "zh": "广州",
+    "gloss": "Гуанчжоу — крупный город на юге Китая, в провинции Гуандун",
+    "isAnswer": false,
+    "other": "provinces/provinces-q99",
+    "answer": [
+      "广州",
+      "Гуанчжоу"
+    ],
+    "clues": [
+      "провинция Гуандун"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 32,
+    "record": "provinces/provinces-q115",
+    "option": "o3",
+    "zh": "杭州",
+    "gloss": "Ханчжоу — город на востоке Китая, в провинции Чжэцзян",
+    "isAnswer": false,
+    "other": "provinces/provinces-q101",
+    "answer": [
+      "杭州",
+      "Ханчжоу"
+    ],
+    "clues": [
+      "провинция Чжэцзян"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 33,
+    "record": "provinces/provinces-q115",
+    "option": "city-lasa",
+    "zh": "拉萨",
+    "gloss": "Лхаса — город в Тибетском автономном районе на юго-западе Китая",
+    "isAnswer": false,
+    "other": "2021-22-mun-qd67aaa",
+    "answer": [
+      "拉萨"
+    ],
+    "clues": [
+      "Тибетский автономный район"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 34,
+    "record": "provinces/provinces-q115",
+    "option": "city-xian",
+    "zh": "西安",
+    "gloss": "Сиань — город на северо-западе Китая, в провинции Шэньси",
+    "isAnswer": false,
+    "other": "provinces/provinces-q37",
+    "answer": [
+      "西安"
+    ],
+    "clues": [
+      "провинция Шэньси"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 35,
+    "record": "provinces/provinces-q115",
+    "option": "city-wuhan",
+    "zh": "武汉",
+    "gloss": "Ухань — город в центре Китая, в провинции Хубэй",
+    "isAnswer": false,
+    "other": "provinces/provinces-q100",
+    "answer": [
+      "武汉"
+    ],
+    "clues": [
+      "провинция Хубэй"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 36,
+    "record": "provinces/provinces-q115",
+    "option": "city-luoyang",
+    "zh": "洛阳",
+    "gloss": "Лоян — город в западной части провинции Хэнань",
+    "isAnswer": false,
+    "other": "2017-18-reg-8",
+    "answer": [
+      "провинция Хэнань"
+    ],
+    "clues": [
+      "Лоян",
+      "洛阳"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Лоян ↔ Хэнань — тот же факт в связанном вопросе о трёх древних столицах. Сохраняем информативную географическую подпись."
+  },
+  {
+    "n": 37,
+    "record": "provinces/provinces-q115",
+    "option": "city-luoyang",
+    "zh": "洛阳",
+    "gloss": "Лоян — город в западной части провинции Хэнань",
+    "isAnswer": false,
+    "other": "2024-25-zak-qfce692",
+    "answer": [
+      "洛阳",
+      "Лоян"
+    ],
+    "clues": [
+      "провинция Хэнань"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Лоян на западе Хэнани — повтор того же географического факта в связанном олимпиадном вопросе; его историческая последовательность столиц подписью не раскрывается."
+  },
+  {
+    "n": 38,
+    "record": "provinces/provinces-q115",
+    "option": "city-shenzhen",
+    "zh": "深圳",
+    "gloss": "Шэньчжэнь (Гуандун), с 1980 года одна из четырёх первых особых экономических зон КНР",
+    "isAnswer": false,
+    "other": "modern-china/modern-china-q09",
+    "answer": [
+      "深圳",
+      "Шэньчжэнь"
+    ],
+    "clues": [
+      "1980 год",
+      "особая экономическая зона"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "1980 год/статус СЭЗ — тот же факт о Шэньчжэне в связанных таблицах; подпись не добавляет требуемое условие сухопутной границы с Гонконгом."
+  },
+  {
+    "n": 39,
+    "record": "provinces/provinces-q116",
+    "option": "o1",
+    "zh": "南京",
+    "gloss": "Нанкин — город на востоке Китая, в провинции Цзянсу",
+    "isAnswer": false,
+    "other": "provinces/provinces-q24",
+    "answer": [
+      "南京",
+      "Нанкин"
+    ],
+    "clues": [
+      "Цзянси",
+      "Цзянсу"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 40,
+    "record": "provinces/provinces-q116",
+    "option": "o3",
+    "zh": "天津",
+    "gloss": "Тяньцзинь — город центрального подчинения на севере Китая, на берегу Бохая",
+    "isAnswer": false,
+    "other": "2015-16-reg-1",
+    "answer": [
+      "天津",
+      "Тяньцзинь"
+    ],
+    "clues": [
+      "город центрального подчинения"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Муниципальный статус того же города в таблицах городов/провинциальных единиц и олимпиадной записи. Повтор разрешён."
+  },
+  {
+    "n": 41,
+    "record": "provinces/provinces-q116",
+    "option": "city-guangzhou",
+    "zh": "广州",
+    "gloss": "Гуанчжоу — крупный город на юге Китая, в провинции Гуандун",
+    "isAnswer": false,
+    "other": "provinces/provinces-q99",
+    "answer": [
+      "广州",
+      "Гуанчжоу"
+    ],
+    "clues": [
+      "провинция Гуандун"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 42,
+    "record": "provinces/provinces-q116",
+    "option": "city-lasa",
+    "zh": "拉萨",
+    "gloss": "Лхаса — город в Тибетском автономном районе на юго-западе Китая",
+    "isAnswer": false,
+    "other": "2021-22-mun-qd67aaa",
+    "answer": [
+      "拉萨"
+    ],
+    "clues": [
+      "Тибетский автономный район"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 43,
+    "record": "provinces/provinces-q116",
+    "option": "city-hangzhou",
+    "zh": "杭州",
+    "gloss": "Ханчжоу — город на востоке Китая, в провинции Чжэцзян",
+    "isAnswer": false,
+    "other": "provinces/provinces-q101",
+    "answer": [
+      "杭州",
+      "Ханчжоу"
+    ],
+    "clues": [
+      "провинция Чжэцзян"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 44,
+    "record": "provinces/provinces-q116",
+    "option": "city-wuhan",
+    "zh": "武汉",
+    "gloss": "Ухань — город в центре Китая, в провинции Хубэй",
+    "isAnswer": false,
+    "other": "provinces/provinces-q100",
+    "answer": [
+      "武汉"
+    ],
+    "clues": [
+      "провинция Хубэй"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 45,
+    "record": "provinces/provinces-q116",
+    "option": "city-luoyang",
+    "zh": "洛阳",
+    "gloss": "Лоян — город в западной части провинции Хэнань",
+    "isAnswer": false,
+    "other": "2017-18-reg-8",
+    "answer": [
+      "провинция Хэнань"
+    ],
+    "clues": [
+      "Лоян",
+      "洛阳"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Лоян ↔ Хэнань — тот же факт в связанном вопросе о трёх древних столицах. Сохраняем информативную географическую подпись."
+  },
+  {
+    "n": 46,
+    "record": "provinces/provinces-q116",
+    "option": "city-luoyang",
+    "zh": "洛阳",
+    "gloss": "Лоян — город в западной части провинции Хэнань",
+    "isAnswer": false,
+    "other": "2024-25-zak-qfce692",
+    "answer": [
+      "洛阳",
+      "Лоян"
+    ],
+    "clues": [
+      "провинция Хэнань"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Лоян на западе Хэнани — повтор того же географического факта в связанном олимпиадном вопросе; его историческая последовательность столиц подписью не раскрывается."
+  },
+  {
+    "n": 47,
+    "record": "provinces/provinces-q116",
+    "option": "city-shenzhen",
+    "zh": "深圳",
+    "gloss": "Шэньчжэнь (Гуандун), с 1980 года одна из четырёх первых особых экономических зон КНР",
+    "isAnswer": false,
+    "other": "modern-china/modern-china-q09",
+    "answer": [
+      "深圳",
+      "Шэньчжэнь"
+    ],
+    "clues": [
+      "1980 год",
+      "особая экономическая зона"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "1980 год/статус СЭЗ — тот же факт о Шэньчжэне в связанных таблицах; подпись не добавляет требуемое условие сухопутной границы с Гонконгом."
+  },
+  {
+    "n": 48,
+    "record": "provinces/provinces-q117",
+    "option": "o3",
+    "zh": "广州",
+    "gloss": "Гуанчжоу — крупный город на юге Китая, в провинции Гуандун",
+    "isAnswer": false,
+    "other": "provinces/provinces-q99",
+    "answer": [
+      "广州",
+      "Гуанчжоу"
+    ],
+    "clues": [
+      "провинция Гуандун"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 49,
+    "record": "provinces/provinces-q117",
+    "option": "o4",
+    "zh": "成都",
+    "gloss": "Чэнду — город на юго-западе Китая, в провинции Сычуань",
+    "isAnswer": false,
+    "other": "provinces/provinces-q25",
+    "answer": [
+      "成都"
+    ],
+    "clues": [
+      "провинция Сычуань"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 50,
+    "record": "provinces/provinces-q117",
+    "option": "city-lasa",
+    "zh": "拉萨",
+    "gloss": "Лхаса — город в Тибетском автономном районе на юго-западе Китая",
+    "isAnswer": false,
+    "other": "2021-22-mun-qd67aaa",
+    "answer": [
+      "拉萨"
+    ],
+    "clues": [
+      "Тибетский автономный район"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 51,
+    "record": "provinces/provinces-q117",
+    "option": "city-hangzhou",
+    "zh": "杭州",
+    "gloss": "Ханчжоу — город на востоке Китая, в провинции Чжэцзян",
+    "isAnswer": false,
+    "other": "provinces/provinces-q101",
+    "answer": [
+      "杭州",
+      "Ханчжоу"
+    ],
+    "clues": [
+      "провинция Чжэцзян"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 52,
+    "record": "provinces/provinces-q117",
+    "option": "city-xian",
+    "zh": "西安",
+    "gloss": "Сиань — город на северо-западе Китая, в провинции Шэньси",
+    "isAnswer": false,
+    "other": "provinces/provinces-q37",
+    "answer": [
+      "西安"
+    ],
+    "clues": [
+      "провинция Шэньси"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 53,
+    "record": "provinces/provinces-q117",
+    "option": "city-wuhan",
+    "zh": "武汉",
+    "gloss": "Ухань — город в центре Китая, в провинции Хубэй",
+    "isAnswer": false,
+    "other": "provinces/provinces-q100",
+    "answer": [
+      "武汉"
+    ],
+    "clues": [
+      "провинция Хубэй"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 54,
+    "record": "provinces/provinces-q117",
+    "option": "city-luoyang",
+    "zh": "洛阳",
+    "gloss": "Лоян — город в западной части провинции Хэнань",
+    "isAnswer": false,
+    "other": "2017-18-reg-8",
+    "answer": [
+      "провинция Хэнань"
+    ],
+    "clues": [
+      "Лоян",
+      "洛阳"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Лоян ↔ Хэнань — тот же факт в связанном вопросе о трёх древних столицах. Сохраняем информативную географическую подпись."
+  },
+  {
+    "n": 55,
+    "record": "provinces/provinces-q117",
+    "option": "city-luoyang",
+    "zh": "洛阳",
+    "gloss": "Лоян — город в западной части провинции Хэнань",
+    "isAnswer": false,
+    "other": "2024-25-zak-qfce692",
+    "answer": [
+      "洛阳",
+      "Лоян"
+    ],
+    "clues": [
+      "провинция Хэнань"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Лоян на западе Хэнани — повтор того же географического факта в связанном олимпиадном вопросе; его историческая последовательность столиц подписью не раскрывается."
+  },
+  {
+    "n": 56,
+    "record": "provinces/provinces-q117",
+    "option": "city-shenzhen",
+    "zh": "深圳",
+    "gloss": "Шэньчжэнь (Гуандун), с 1980 года одна из четырёх первых особых экономических зон КНР",
+    "isAnswer": false,
+    "other": "modern-china/modern-china-q09",
+    "answer": [
+      "深圳",
+      "Шэньчжэнь"
+    ],
+    "clues": [
+      "1980 год",
+      "особая экономическая зона"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "1980 год/статус СЭЗ — тот же факт о Шэньчжэне в связанных таблицах; подпись не добавляет требуемое условие сухопутной границы с Гонконгом."
+  },
+  {
+    "n": 57,
+    "record": "provinces/provinces-q119",
+    "option": "o3",
+    "zh": "西安",
+    "gloss": "Сиань — город на северо-западе Китая, в провинции Шэньси",
+    "isAnswer": false,
+    "other": "provinces/provinces-q37",
+    "answer": [
+      "西安"
+    ],
+    "clues": [
+      "провинция Шэньси"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 58,
+    "record": "provinces/provinces-q119",
+    "option": "city-guangzhou",
+    "zh": "广州",
+    "gloss": "Гуанчжоу — крупный город на юге Китая, в провинции Гуандун",
+    "isAnswer": false,
+    "other": "provinces/provinces-q99",
+    "answer": [
+      "广州",
+      "Гуанчжоу"
+    ],
+    "clues": [
+      "провинция Гуандун"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 59,
+    "record": "provinces/provinces-q119",
+    "option": "city-lasa",
+    "zh": "拉萨",
+    "gloss": "Лхаса — город в Тибетском автономном районе на юго-западе Китая",
+    "isAnswer": false,
+    "other": "2021-22-mun-qd67aaa",
+    "answer": [
+      "拉萨"
+    ],
+    "clues": [
+      "Тибетский автономный район"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 60,
+    "record": "provinces/provinces-q119",
+    "option": "city-hangzhou",
+    "zh": "杭州",
+    "gloss": "Ханчжоу — город на востоке Китая, в провинции Чжэцзян",
+    "isAnswer": false,
+    "other": "provinces/provinces-q101",
+    "answer": [
+      "杭州",
+      "Ханчжоу"
+    ],
+    "clues": [
+      "провинция Чжэцзян"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 61,
+    "record": "provinces/provinces-q119",
+    "option": "city-wuhan",
+    "zh": "武汉",
+    "gloss": "Ухань — город в центре Китая, в провинции Хубэй",
+    "isAnswer": false,
+    "other": "provinces/provinces-q100",
+    "answer": [
+      "武汉"
+    ],
+    "clues": [
+      "провинция Хубэй"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 62,
+    "record": "provinces/provinces-q119",
+    "option": "city-luoyang",
+    "zh": "洛阳",
+    "gloss": "Лоян — город в западной части провинции Хэнань",
+    "isAnswer": false,
+    "other": "2017-18-reg-8",
+    "answer": [
+      "провинция Хэнань"
+    ],
+    "clues": [
+      "Лоян",
+      "洛阳"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Лоян ↔ Хэнань — тот же факт в связанном вопросе о трёх древних столицах. Сохраняем информативную географическую подпись."
+  },
+  {
+    "n": 63,
+    "record": "provinces/provinces-q119",
+    "option": "city-luoyang",
+    "zh": "洛阳",
+    "gloss": "Лоян — город в западной части провинции Хэнань",
+    "isAnswer": false,
+    "other": "2024-25-zak-qfce692",
+    "answer": [
+      "洛阳",
+      "Лоян"
+    ],
+    "clues": [
+      "провинция Хэнань"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Лоян на западе Хэнани — повтор того же географического факта в связанном олимпиадном вопросе; его историческая последовательность столиц подписью не раскрывается."
+  },
+  {
+    "n": 64,
+    "record": "provinces/provinces-q119",
+    "option": "city-shenzhen",
+    "zh": "深圳",
+    "gloss": "Шэньчжэнь (Гуандун), с 1980 года одна из четырёх первых особых экономических зон КНР",
+    "isAnswer": false,
+    "other": "modern-china/modern-china-q09",
+    "answer": [
+      "深圳",
+      "Шэньчжэнь"
+    ],
+    "clues": [
+      "1980 год",
+      "особая экономическая зона"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "1980 год/статус СЭЗ — тот же факт о Шэньчжэне в связанных таблицах; подпись не добавляет требуемое условие сухопутной границы с Гонконгом."
+  },
+  {
+    "n": 65,
+    "record": "provinces/provinces-q121",
+    "option": "o1",
+    "zh": "杭州",
+    "gloss": "Ханчжоу — город на востоке Китая, в провинции Чжэцзян",
+    "isAnswer": false,
+    "other": "provinces/provinces-q101",
+    "answer": [
+      "杭州",
+      "Ханчжоу"
+    ],
+    "clues": [
+      "провинция Чжэцзян"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 66,
+    "record": "provinces/provinces-q121",
+    "option": "o2",
+    "zh": "广州",
+    "gloss": "Гуанчжоу — крупный город на юге Китая, в провинции Гуандун",
+    "isAnswer": false,
+    "other": "provinces/provinces-q99",
+    "answer": [
+      "广州",
+      "Гуанчжоу"
+    ],
+    "clues": [
+      "провинция Гуандун"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 67,
+    "record": "provinces/provinces-q121",
+    "option": "o4",
+    "zh": "西安",
+    "gloss": "Сиань — город на северо-западе Китая, в провинции Шэньси",
+    "isAnswer": false,
+    "other": "provinces/provinces-q37",
+    "answer": [
+      "西安"
+    ],
+    "clues": [
+      "провинция Шэньси"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 68,
+    "record": "provinces/provinces-q121",
+    "option": "city-lasa",
+    "zh": "拉萨",
+    "gloss": "Лхаса — город в Тибетском автономном районе на юго-западе Китая",
+    "isAnswer": false,
+    "other": "2021-22-mun-qd67aaa",
+    "answer": [
+      "拉萨"
+    ],
+    "clues": [
+      "Тибетский автономный район"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "related_fact_not_full_answer",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Подпись даёт принадлежность города провинции, соседний вопрос спрашивает её административный центр. Это связанная география того же города; статус столицы в подписи не сформулирован. Не удалять полезный факт."
+  },
+  {
+    "n": 69,
+    "record": "provinces/provinces-q121",
+    "option": "city-wuhan",
+    "zh": "武汉",
+    "gloss": "Ухань — город в центре Китая, в провинции Хубэй",
+    "isAnswer": false,
+    "other": "provinces/provinces-q100",
+    "answer": [
+      "武汉"
+    ],
+    "clues": [
+      "провинция Хубэй"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 70,
+    "record": "provinces/provinces-q121",
+    "option": "city-luoyang",
+    "zh": "洛阳",
+    "gloss": "Лоян — город в западной части провинции Хэнань",
+    "isAnswer": false,
+    "other": "2017-18-reg-8",
+    "answer": [
+      "провинция Хэнань"
+    ],
+    "clues": [
+      "Лоян",
+      "洛阳"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Лоян ↔ Хэнань — тот же факт в связанном вопросе о трёх древних столицах. Сохраняем информативную географическую подпись."
+  },
+  {
+    "n": 71,
+    "record": "provinces/provinces-q121",
+    "option": "city-luoyang",
+    "zh": "洛阳",
+    "gloss": "Лоян — город в западной части провинции Хэнань",
+    "isAnswer": false,
+    "other": "2024-25-zak-qfce692",
+    "answer": [
+      "洛阳",
+      "Лоян"
+    ],
+    "clues": [
+      "провинция Хэнань"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Лоян на западе Хэнани — повтор того же географического факта в связанном олимпиадном вопросе; его историческая последовательность столиц подписью не раскрывается."
+  },
+  {
+    "n": 72,
+    "record": "provinces/provinces-q121",
+    "option": "city-shenzhen",
+    "zh": "深圳",
+    "gloss": "Шэньчжэнь (Гуандун), с 1980 года одна из четырёх первых особых экономических зон КНР",
+    "isAnswer": false,
+    "other": "modern-china/modern-china-q09",
+    "answer": [
+      "深圳",
+      "Шэньчжэнь"
+    ],
+    "clues": [
+      "1980 год",
+      "особая экономическая зона"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "1980 год/статус СЭЗ — тот же факт о Шэньчжэне в связанных таблицах; подпись не добавляет требуемое условие сухопутной границы с Гонконгом."
+  },
+  {
+    "n": 73,
+    "record": "provinces/provinces-q122",
+    "option": "o4",
+    "zh": "辽宁",
+    "gloss": "Ляонин — приморская провинция на юге Северо-Востока, центр — Шэньян",
+    "isAnswer": false,
+    "other": "provinces/provinces-q35",
+    "answer": [
+      "Шэньян"
+    ],
+    "clues": [
+      "провинция Ляонин"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 74,
+    "record": "provinces/provinces-q122",
+    "option": "prov-jiangsu",
+    "zh": "江苏",
+    "gloss": "Цзянсу — приморская провинция в низовьях Янцзы, центр — Нанкин",
+    "isAnswer": false,
+    "other": "provinces/provinces-q24",
+    "answer": [
+      "Нанкин"
+    ],
+    "clues": [
+      "Цзянси",
+      "Цзянсу"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 75,
+    "record": "provinces/provinces-q123",
+    "option": "o3",
+    "zh": "天津市",
+    "gloss": "Тяньцзинь — город центрального подчинения рядом с Пекином",
+    "isAnswer": false,
+    "other": "2015-16-reg-1",
+    "answer": [
+      "天津",
+      "Тяньцзинь"
+    ],
+    "clues": [
+      "город центрального подчинения"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Муниципальный статус того же города в таблицах городов/провинциальных единиц и олимпиадной записи. Повтор разрешён."
+  },
+  {
+    "n": 76,
+    "record": "provinces/provinces-q123",
+    "option": "prov-chongqing",
+    "zh": "重庆市",
+    "gloss": "Чунцин — город центрального подчинения в верховьях Янцзы",
+    "isAnswer": false,
+    "other": "provinces/provinces-q26",
+    "answer": [
+      "重庆",
+      "Чунцин"
+    ],
+    "clues": [
+      "город центрального подчинения"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Муниципальный статус того же города в таблицах городов/провинциальных единиц и олимпиадной записи. Повтор разрешён."
+  },
+  {
+    "n": 77,
+    "record": "provinces/provinces-q123",
+    "option": "prov-jiangsu",
+    "zh": "江苏省",
+    "gloss": "Цзянсу — провинция в низовьях Янцзы с центром в Нанкине",
+    "isAnswer": false,
+    "other": "provinces/provinces-q24",
+    "answer": [
+      "Нанкин"
+    ],
+    "clues": [
+      "Цзянси",
+      "Цзянсу"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Связь административный центр ↔ провинция повторена в другой строке/таблице или исходном варианте o*; это та же связь, а не независимая утечка."
+  },
+  {
+    "n": 78,
+    "record": "provinces/provinces-q123",
+    "option": "prov-xianggang",
+    "zh": "香港特别行政区",
+    "gloss": "Сянган (Гонконг) — особый административный район на юге Китая, с 1997 года",
+    "isAnswer": false,
+    "other": "2016-17-mun-4",
+    "answer": [
+      "1997"
+    ],
+    "clues": [
+      "Гонконг"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "Гонконг как САР с 1997 года и возврат под суверенитет КНР в 1997 — тот же факт в связанной олимпиадной записи; отдельная большая группа не нужна."
+  },
+  {
+    "n": 79,
+    "record": "provinces/provinces-q124",
+    "option": "o2",
+    "zh": "圣彼得堡",
+    "gloss": "Санкт-Петербург — «Северная столица» в устье Невы",
+    "isAnswer": false,
+    "other": "provinces/provinces-q106",
+    "answer": [
+      "Северная столица"
+    ],
+    "clues": [
+      "Санкт-Петербург"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "То же свойство той же городской строки (прозвище Петербурга / членство Владимира в Золотом кольце); original option o* замаскировал идентичность строки."
+  },
+  {
+    "n": 80,
+    "record": "provinces/provinces-q124",
+    "option": "o3",
+    "zh": "弗拉基米尔",
+    "gloss": "Владимир — центр Владимирской области, город «Золотого кольца»",
+    "isAnswer": false,
+    "other": "provinces/provinces-q85",
+    "answer": [
+      "弗拉基米尔"
+    ],
+    "clues": [
+      "Золотое кольцо"
+    ],
+    "row": false,
+    "recordDraft": false,
+    "otherDraft": false,
+    "classification": "permitted_fact_repetition",
+    "decision": "keep_gloss_no_new_group",
+    "reason": "То же свойство той же городской строки (прозвище Петербурга / членство Владимира в Золотом кольце); original option o* замаскировал идентичность строки."
+  }
+]

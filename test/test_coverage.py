@@ -1,9 +1,11 @@
-import json, sys, unittest
+import contextlib, io, json, sys, tempfile, unittest
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from coverage_map import coverage_report, theme_matches, topic_shares, validate_coverage, validate_themes
+import coverage_map
 from taxonomy import TOPICS
 
 GEO, HIST = TOPICS[0], TOPICS[3]
@@ -14,7 +16,8 @@ def record(id='2015-16-shk-1', topic=GEO, questionRu='Какая провинц�
     return {'id': id, 'topic': topic, 'questionRu': questionRu, 'questionZh': None,
             'options': options or [{'id': 'o1', 'zh': '新疆'}, {'id': 'o2', 'zh': '西藏'}],
             'answer': {'optionId': (options or [{'id': 'o1'}])[0]['id'], 'state': 'verified'},
-            'occurrences': [{'year': '2015-16'}] if occurrences else [], **extra}
+            'occurrences': occurrences if isinstance(occurrences, list) else
+                           [{'year': '2015-16'}] if occurrences else [], **extra}
 
 
 def theme(id='geo-provinces', topic=GEO, title='Провинции', match=None, sources=None):
@@ -38,10 +41,9 @@ class ValidateThemesTest(unittest.TestCase):
         self.assertTrue(any('sources' in e for e in validate_themes([theme(sources=[1])])))
 
     def test_broken_coverage_file_gives_a_message(self):
-        self.assertTrue(validate_coverage({'themes': [theme()], 'target': '1000'}))
-        self.assertTrue(validate_coverage({'target': 1000}))
+        self.assertTrue(validate_coverage({}))
         self.assertTrue(validate_coverage([]))
-        self.assertEqual(validate_coverage({'themes': [theme()], 'target': 1000}), [])
+        self.assertEqual(validate_coverage({'themes': [theme()]}), [])
 
 
 class ThemeMatchesTest(unittest.TestCase):
@@ -89,16 +91,81 @@ class CoverageReportTest(unittest.TestCase):
                                       options=[{'id': 'o1', 'zh': '夏'}])]
         self.themes = [theme(), theme(id='hist-wars', topic=HIST, title='Сражения', match=['сражени'])]
 
-    def test_report_shows_target_gap_per_topic(self):
-        report = coverage_report(self.bank, self.themes, target=1000)
-        self.assertIn('Цель — 1000', report)
-        # география — половина олимпиады, в банке 1 из 2: к 1000 нужно ещё 499
-        self.assertRegex(report, rf'\| {GEO} \| 50 % \| 1 \| 500 \| 499 \|')
+    def test_report_shows_actual_category_counts_and_shares_without_quotas(self):
+        report = coverage_report(self.bank, self.themes)
+        self.assertIn('На сайте доступны 2 вопроса', report)
+        self.assertRegex(report, rf'\| {GEO} \| 50 % \| 1 \| 50 % \|')
+        self.assertNotIn('Цель —', report)
+        self.assertNotIn('Нужно к цели', report)
 
     def test_report_lists_empty_themes_and_records_outside_every_theme(self):
-        report = coverage_report(self.bank, self.themes, target=1000)
+        report = coverage_report(self.bank, self.themes)
         self.assertIn('Сражения', report.split('## Пустые темы')[1].split('##')[0])
         self.assertIn('`b`', report.split('## Вопросы вне тем')[1])
+
+    def test_report_separates_sparse_themes_from_empty_themes(self):
+        report = coverage_report(self.bank, self.themes)
+        self.assertIn('## Темы с 1–2 вопросами', report)
+        sparse = report.split('## Темы с 1–2 вопросами')[1].split('##')[0]
+        self.assertIn('Провинции', sparse)
+        self.assertNotIn('Сражения', sparse)
+
+
+class CoverageMainTest(unittest.TestCase):
+    def report(self, bank, settings, dossier_questions=None):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            data = root / 'data'
+            (data / 'review').mkdir(parents=True)
+            (data / 'dossiers').mkdir()
+            for name, value in {
+                'bank.json': bank,
+                'site.json': settings,
+                'coverage.json': {'themes': [theme()]},
+                'dossiers/test-questions.json': dossier_questions or [],
+            }.items():
+                (data / name).write_text(json.dumps(value, ensure_ascii=False), encoding='utf-8')
+            with patch.object(coverage_map, 'ROOT', root), contextlib.redirect_stdout(io.StringIO()):
+                coverage_map.main()
+            return (data / 'review/coverage.md').read_text('utf-8')
+
+    def test_main_uses_site_visibility_for_counts_matches_and_outside_questions(self):
+        regional = [{'year': '2025-26', 'regionCode': 'test'}]
+        bank = [
+            record(id='public'),
+            record(id='regional', topic=HIST, questionRu='СКРЫТАЯ региональная запись',
+                   options=[{'id': 'o1', 'zh': '甲'}], occurrences=regional),
+            record(id='by-id', topic=HIST, questionRu='Открытый вопрос вне тем',
+                   options=[{'id': 'o1', 'zh': '夏'}], occurrences=regional),
+            record(id='by-embed', occurrences=regional),
+            record(id='draft', questionRu='СКРЫТОЕ черновое встраивание', occurrences=regional),
+            record(id='editor-hidden', questionRu='СКРЫТО редактором', occurrences=regional),
+            record(id='mixed', occurrences=[{'year': '2024-25'}, *regional]),
+        ]
+        settings = {'showRegional': False, 'showEmbeddedIn': ['test'],
+                    'showRegionalIds': ['by-id', 'editor-hidden'],
+                    'hiddenQuestions': {'editor-hidden': {'reason': 'снято автором', 'date': '2026-11-07'}}}
+        dossier_questions = [{'embeds': 'by-embed', 'status': 'accepted'},
+                             {'embeds': 'draft', 'status': 'draft'},
+                             {'embeds': 'editor-hidden', 'status': 'accepted'}]
+        report = self.report(bank, settings, dossier_questions)
+        self.assertIn('На сайте доступны 4 вопроса', report)
+        self.assertRegex(report, rf'\| {GEO} \| 75 % \| 3 \| 75 % \|')
+        self.assertIn('| Провинции | 3 |', report)
+        self.assertIn('`by-id`', report.split('## Вопросы вне тем')[1])
+        self.assertNotIn('СКРЫТ', report)
+
+    def test_main_honors_enabled_regional_setting(self):
+        regional = record(id='regional', occurrences=[{'year': '2025-26', 'regionCode': 'test'}])
+        report = self.report([regional], {'showRegional': True})
+        self.assertIn('На сайте доступен 1 вопрос', report)
+        self.assertIn('| Провинции — мало | 1 |', report)
+
+    def test_empty_site_has_zero_shares_and_an_empty_theme(self):
+        report = self.report([], {'showRegional': False})
+        self.assertIn('На сайте доступны 0 вопросов', report)
+        self.assertRegex(report, rf'\| {GEO} \| 0 % \| 0 \| 0 % \|')
+        self.assertIn('Провинции', report.split('## Пустые темы')[1].split('##')[0])
 
 
 class CoverageDataTest(unittest.TestCase):
