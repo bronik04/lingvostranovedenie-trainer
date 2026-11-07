@@ -1,7 +1,7 @@
 {
   "reviewId": "regional-2026-11-07-batch-4",
   "date": "2026-11-07",
-  "state": "validated-pending-independent-review",
+  "state": "approved-for-release",
   "publicationAuthorized": true,
   "selectedCount": 16,
   "visibleCountBefore": 1014,
@@ -1232,7 +1232,15 @@
     },
     "newRowsWithTwoQuotedSources": 47,
     "previousReadingLinksUnchanged": true,
-    "htmlSha256": "c9cd63e4f735c785a3bb90cbd893bbc5f2e65a92dfebca761f6dcd3d05c1e91c"
+    "htmlSha256": "c9cd63e4f735c785a3bb90cbd893bbc5f2e65a92dfebca761f6dcd3d05c1e91c",
+    "independentReview": "passed-no-outstanding-findings",
+    "finalReviewedCommit": "68514910c2f0c6c35b569178f53aeac8d2f0e65b",
+    "finalTestsAfterNumericAliasFix": {
+      "python": 494,
+      "node": 172,
+      "failures": 0,
+      "skipped": 0
+    }
   },
   "hintTriage": "2026-11-07-regional-batch-4-hint-triage.json",
   "captionPolicy": "Все64принятые подписи сохранены дословно (до89символов); новыеконтекстныеячейкине меняют старые подписи."
