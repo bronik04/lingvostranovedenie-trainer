@@ -442,5 +442,50 @@
       "verdict": "accept",
       "note": "Автор принял вопрос, варианты и подписи 2026-11-08; локальное встраивание разрешено, публикация запрещена. Источники и соответствие проверены независимо по темам; итоговая проверка — regional-batch-5-embedding-review. Следующим прямым указанием автора разрешён выпуск остальных 15 вопросов партии5; №20 в этот выпуск не входит."
     }
+  },
+  {
+    "id": "modern-china-q27",
+    "embeds": "2025-26-mun-nnov-10",
+    "status": "accepted",
+    "fact": {
+      "table": "cooperationfields",
+      "row": "coop-arctic",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
+  },
+  {
+    "id": "modern-china-q28",
+    "embeds": "2025-26-mun-irk-6",
+    "status": "accepted",
+    "fact": {
+      "table": "silkroadroles",
+      "row": "silkrole-exchange",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
+  },
+  {
+    "id": "modern-china-q29",
+    "embeds": "2025-26-mun-novg-6",
+    "status": "accepted",
+    "fact": {
+      "table": "croppairs",
+      "row": "croppair-southrice-northwheat",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
   }
 ]

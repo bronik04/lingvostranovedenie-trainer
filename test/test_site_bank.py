@@ -39,8 +39,13 @@ class SiteBankTest(unittest.TestCase):
         for rid in ['2024-25-mun-mosobl-5', '2018-19-mun-spb-9', '2023-24-mun-komi-2', '2024-25-mun-udm-8',
                     '2025-26-mun-chel-2', '2021-22-mun-tat-57']:
             self.assertIn(rid, shown)
-        for rid in ['2025-26-mun-nnov-1', '2020-21-shk-mosobl-52', '2019-20-mun-lip-4']:
+        # 2026-11-08: автор разрешил все принятые встраивания, включая прежде скрытое о мяо.
+        self.assertIn('2019-20-mun-lip-4', shown)
+        self.assertIn('2019-20-mun-lip-4', load_settings()['showRegionalIds'])
+        for rid in ['2025-26-mun-nnov-1', '2020-21-shk-mosobl-52']:
             self.assertNotIn(rid, shown)
+        for rid in load_settings().get('hiddenQuestions', {}):
+            self.assertNotIn(rid, shown, 'окончательные снятия сильнее разрешения встраиваний')
 
     def test_draft_embed_does_not_open_a_record(self):
         import tempfile, json as j

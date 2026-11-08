@@ -2187,5 +2187,185 @@
       "verdict": "accept",
       "note": "Автор принял вопрос, варианты и подписи 2026-11-08; локальное встраивание разрешено, публикация запрещена. Источники и соответствие проверены независимо по темам; итоговая проверка — regional-batch-5-embedding-review. Следующим прямым указанием автора разрешён выпуск остальных 15 вопросов партии5; №20 в этот выпуск не входит."
     }
+  },
+  {
+    "id": "provinces-q138",
+    "embeds": "2021-22-mun-tat-52",
+    "status": "accepted",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-tianjin",
+      "ask": "goubuliregionname"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
+  },
+  {
+    "id": "provinces-q139",
+    "embeds": "2025-26-mun-kursk-6",
+    "status": "accepted",
+    "fact": {
+      "table": "geosymbols",
+      "row": "geochar-hu",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
+  },
+  {
+    "id": "provinces-q140",
+    "embeds": "2024-25-mun-mosobl-3",
+    "status": "accepted",
+    "fact": {
+      "table": "cities",
+      "row": "city-shanghai",
+      "ask": "yuyuancity"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
+  },
+  {
+    "id": "provinces-q141",
+    "embeds": "2021-22-mun-tat-53",
+    "status": "accepted",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-shaanxi",
+      "ask": "paomoregionname"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
+  },
+  {
+    "id": "provinces-q142",
+    "embeds": "2025-26-mun-kgd-54",
+    "status": "accepted",
+    "fact": {
+      "table": "cities",
+      "row": "city-leshan",
+      "ask": "maitreyacity"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
+  },
+  {
+    "id": "provinces-q143",
+    "embeds": "2025-26-mun-irk-2",
+    "status": "accepted",
+    "fact": {
+      "table": "geocounts",
+      "row": "geocount-china",
+      "ask": "officialtimecount"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
+  },
+  {
+    "id": "provinces-q144",
+    "embeds": "2025-26-shk-mosobl-8",
+    "status": "accepted",
+    "fact": {
+      "table": "cities",
+      "row": "city-ru-yaroslavl",
+      "ask": "historicagecity"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
+  },
+  {
+    "id": "provinces-q145",
+    "embeds": "2025-26-mun-sverd-56",
+    "status": "accepted",
+    "fact": {
+      "table": "geocounts",
+      "row": "geocount-china",
+      "ask": "landneighborcount"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
+  },
+  {
+    "id": "provinces-q146",
+    "embeds": "2024-25-mun-kem-9",
+    "status": "accepted",
+    "fact": {
+      "table": "cities",
+      "row": "city-ru-ulyanovsk",
+      "ask": "leninbirthcity"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
+  },
+  {
+    "id": "provinces-q147",
+    "embeds": "2022-23-mun-lenobl-58",
+    "status": "accepted",
+    "fact": {
+      "table": "geocounts",
+      "row": "geocount-china",
+      "ask": "provincialcount"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
+  },
+  {
+    "id": "provinces-q148",
+    "embeds": "2023-24-mun-spb-3",
+    "status": "accepted",
+    "fact": {
+      "table": "cities",
+      "row": "city-ru-khabarovsk",
+      "ask": "fareastcity"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
+  },
+  {
+    "id": "provinces-q149",
+    "embeds": "2025-26-mun-kgd-58",
+    "status": "accepted",
+    "fact": {
+      "table": "cities",
+      "row": "city-dalian",
+      "ask": "russianportcity"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
   }
 ]

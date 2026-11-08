@@ -17,7 +17,8 @@
         "fullname": "zh",
         "verseauthor": "zh",
         "prizeauthor": "zh",
-        "philosophyauthor": "zh"
+        "philosophyauthor": "zh",
+        "moonverseauthor": "zh"
       },
       "sides": [
         "work",
@@ -434,6 +435,14 @@
               "authority": "academic",
               "verificationMethod": "browsed_search_excerpt",
               "primaryText": true
+            },
+            {
+              "title": "许渊冲翻译《静夜思》 — 北京大学新闻网",
+              "url": "https://news.pku.edu.cn/info/2901/824851.htm",
+              "quote": "附：许渊冲翻译《静夜思》(2006年版)选自《许渊冲英译李白诗选》……举头望明月，低头思故乡。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #4 / o3"
             }
           ],
           "olympiad": [
@@ -457,6 +466,13 @@
               "Ли Бай"
             ],
             "gloss": "Ли Бо — поэма открывается образом Хуанхэ, текущей словно с неба."
+          },
+          "moonverseauthor": {
+            "zh": "李白",
+            "ru": [
+              "Ли Бо"
+            ],
+            "gloss": "Ли Бо — в «Думе в тихую ночь» луна напоминает поэту о родине"
           }
         },
         {
@@ -532,6 +548,14 @@
               "quote": "杜甫（712-770），字子美，祖籍襄阳，生于河南巩县。由于他在长安时一度住在城南少陵附近，自称少陵野老",
               "checkedAt": "2026-10-17",
               "authority": "academic"
+            },
+            {
+              "title": "经典诗文：茅屋为秋风所破歌（杜甫） — 郑州财税金融职业学院",
+              "url": "https://www.zzcsjr.edu.cn/info/1027/4294.htm",
+              "quote": "24. 茅屋为秋风所破歌（杜甫）……安得广厦千万间，大庇天下寒士俱欢颜，风雨不动安如山！",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #4 / o1"
             }
           ],
           "olympiad": [
@@ -547,6 +571,13 @@
               "Ду Фу"
             ],
             "gloss": "Ду Фу — автор стихотворения «Весенний пейзаж»."
+          },
+          "moonverseauthor": {
+            "zh": "杜甫",
+            "ru": [
+              "Ду Фу"
+            ],
+            "gloss": "Ду Фу — в стихах о разрушенной хижине мечтал о крове для всех бедняков"
           }
         },
         {
@@ -1124,9 +1155,34 @@
               "quote": "苏轼，字子瞻，号东坡居士。北宋政治家、文学家、书画家，为“唐宋八大家”之一。其诗清新豪健，善用夸张、比喻手法，艺术表现独具风格。其词开辟豪放一派，对后世有巨大影响。辛弃疾，字幼安，号稼轩。南宋词人、将领，有“词中之龙”之称。一生力主抗金。其词抒写力图恢复国家统一的爱国热情，倾诉壮志难酬的悲愤，也有不少吟咏祖国河山的作品。题材广阔又擅于化用前人典故入词，风格沉雄豪迈又不乏细腻。二人并称为“苏辛”同为宋词豪放派代表苏轼在豪放中尽显旷达乐观辛弃疾在豪放中多是慷慨壮烈有着相同的豪放洒脱又于细微处各领风骚壮志《念奴娇·赤壁怀古》苏轼大江东去，浪淘尽，千古风流人物。",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "苏轼《水调歌头》赏析 — 苏州教育网",
+              "url": "https://szsx.suzhou.edu.cn/scientist-353.html",
+              "quote": "本词作于宋神宗熙宁九年的中秋节，当时苏轼正任密州知府。中秋，皓月当空，银光泻地，苏轼想起了分别七年的苏辙。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #4 / o2"
+            },
+            {
+              "title": "中华经典诗文选：水调歌头（宋·苏轼） — 湖南女子学院",
+              "url": "https://www.hnwu.edu.cn/ewebeditor/uploadfile/20231006195220323.pdf",
+              "quote": "31. 水调歌头（宋·苏轼）……丙辰中秋，欢饮达旦，大醉，作此篇，兼怀子由。……但愿人长久，千里共婵娟。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #4 / keySources"
             }
           ],
-          "olympiad": []
+          "olympiad": [
+            "2020-21-mun-spb-4"
+          ],
+          "moonverseauthor": {
+            "zh": "苏轼",
+            "ru": [
+              "Су Ши"
+            ],
+            "gloss": "Су Ши — в «Шуй дяо гэ тоу» вспоминает младшего брата Су Чэ, с которым был в разлуке"
+          }
         },
         {
           "id": "lit-a-liqingzhao",
@@ -1269,7 +1325,14 @@
               "authority": "official"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "moonverseauthor": {
+            "zh": "辛弃疾",
+            "ru": [
+              "Синь Цицзи"
+            ],
+            "gloss": "Синь Цицзи — поэт и военачальник Южной Сун, писавший цы под именем Цзясюань"
+          }
         },
         {
           "id": "lit-a-guanhanqing",
@@ -4478,7 +4541,8 @@
         "set": "zh",
         "hero": "zh",
         "about": "ru",
-        "canonicalbook": "zh"
+        "canonicalbook": "zh",
+        "quotationbook": "zh"
       },
       "sides": [
         "author",
@@ -7827,6 +7891,13 @@
               "«Мэн-цзы»"
             ],
             "gloss": "«Мэн-цзы» — в книге семь частей; Мэн-цзы почитают как «второго мудреца»."
+          },
+          "quotationbook": {
+            "zh": "《孟子》",
+            "ru": [
+              "«Мэн-цзы»"
+            ],
+            "gloss": "«Мэн-цзы» — книга бесед и высказываний продолжателя учения Конфуция"
           }
         },
         {
@@ -7847,6 +7918,14 @@
               "authority": "academic",
               "checkedAt": "2026-11-07",
               "verificationMethod": "primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "《大学》的作者、文本争论与思想诠释 — 陈来, 东岳论丛",
+              "url": "https://dylc.cbpt.cnki.net/portal/journal/portal/client/paper/a5ce763a97556b0a86ddae661e808416",
+              "quote": "《大学》并非仅仅讲博学,它是适合于成人的一个教育文献。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#10/options/o1; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
             }
           ],
           "olympiad": [],
@@ -7859,6 +7938,13 @@
               "«Великое учение»"
             ],
             "gloss": "«Великое учение» — первоначально глава «Ли цзи», позднее отдельная книга."
+          },
+          "quotationbook": {
+            "zh": "《大学》",
+            "ru": [
+              "«Великое учение»"
+            ],
+            "gloss": "«Великое учение» — конфуцианский текст о воспитании взрослого человека"
           }
         },
         {
@@ -7929,9 +8015,27 @@
               "authority": "official",
               "checkedAt": "2026-10-23",
               "verificationMethod": "reuse-accepted-dossier: data/dossiers/people.json → thinkers/th-kongzi; цитата и дата из ранее принятого досье; нового открытия не было"
+            },
+            {
+              "title": "爱廉说 | 三人行，必得我师 — Центральная комиссия по проверке дисциплины, перепечатка на официальном сайте Кайфэна",
+              "url": "https://www.kflz.gov.cn/sitesources/nysjwjw/page_pc/xcjd/wh/articleb58988813df5480f8c2721722c2058bd.html",
+              "quote": "“三人行，必有我师焉。”这是《论语·述而》里的名句，原话是：“子曰：三人行，必有我师焉。择其善者而从之，其不善者而改之。”",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#10/options/o3; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "中華經典名句推廣資源配套 — Hong Kong Education Bureau",
+              "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/resources/primary/lang/New%20Teachers%20Induction%202023.pdf",
+              "quote": "上面的經典名句，出自《論語·述而篇》，是孔子對學生闡述修養改進的說話。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#10/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
             }
           ],
-          "olympiad": [],
+          "olympiad": [
+            "2020-21-mun-spb-1"
+          ],
           "name": {
             "zh": "论语"
           },
@@ -7941,7 +8045,53 @@
               "«Лунь юй»"
             ],
             "gloss": "«Лунь юй» — слова и дела Конфуция, собранные его учениками и их учениками."
+          },
+          "quotationbook": {
+            "zh": "《论语》",
+            "ru": [
+              "«Лунь юй»"
+            ],
+            "gloss": "«Лунь юй» — далее советуют перенимать хорошее и исправлять свои недостатки"
           }
+        },
+        {
+          "id": "preview-zhongyong",
+          "name": {
+            "zh": "中庸"
+          },
+          "quotationbook": {
+            "zh": "《中庸》",
+            "ru": [
+              "«Учение о середине»"
+            ],
+            "gloss": "«Учение о середине» — бывшая глава «Ли цзи» о внутренней гармонии человека"
+          },
+          "sources": [
+            {
+              "title": "宋儒《中庸》学的学术渊源与思想发展 — 北京大学学报",
+              "url": "https://ccj.pku.edu.cn/article/info?aid=239606140",
+              "quote": "《中庸》是《礼记》中的一篇,属于《五经》体系的传记之学,主要是通论礼之本在人性情之“中和”。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#10/options/preview-zhongyong; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "四书 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/241555.html?hl=%E4%B9%A6",
+              "quote": "《大学》、《中庸》摘自《礼记》。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/literature.json/works/lit-w-daxue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "《四書五經大全輯刊》 — 中南大学图书馆",
+              "url": "https://lib.csu.edu.cn/info/2917/4489.htm",
+              "quote": "四书指的是《大学》《中庸》《论语》《孟子》，五经指《诗经》《尚书》《礼记》《易经》《春秋》。",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/literature.json/works/lit-w-daxue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            }
+          ]
         }
       ]
     },

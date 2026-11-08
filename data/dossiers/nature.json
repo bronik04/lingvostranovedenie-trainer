@@ -13,7 +13,8 @@
         "feature": "zh",
         "unesco": "zh",
         "era": "zh",
-        "about": "ru"
+        "about": "ru",
+        "longestcanalname": "zh"
       },
       "sides": [
         "mouth",
@@ -173,6 +174,14 @@
               "quote": "黄河是世界上含沙量最高、输沙量最大的河流",
               "checkedAt": "2026-10-18",
               "authority": "official"
+            },
+            {
+              "title": "黄河 — Управление водных ресурсов Нинся",
+              "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202112/t20211201_3176821.html",
+              "quote": "黄河全长5464公里，为中国第二大河。……在山东省垦利区注入渤海。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 1 / o1; original: Сверено с текстом официальной страницы в веб-поиске 2026-11-08."
             }
           ],
           "olympiad": [
@@ -181,7 +190,14 @@
             "2018-19-shk-5",
             "2018-19-mun-52"
           ],
-          "core": true
+          "core": true,
+          "longestcanalname": {
+            "zh": "黄河",
+            "ru": [
+              "Хуанхэ"
+            ],
+            "gloss": "Хуанхэ — природная река длиной 5464 км, впадающая в Бохайский залив."
+          }
         },
         {
           "id": "wat-zhujiang",
@@ -1244,9 +1260,24 @@
               "quote": "公元前219年，秦始皇命监御史禄掌管军需供应",
               "checkedAt": "2026-10-18",
               "authority": "official"
+            },
+            {
+              "title": "古代著名水利工程：灵渠 — Управление водных ресурсов Цзянмэня",
+              "url": "https://www.jiangmen.gov.cn/bmpd/jmsslj/zjsl/content/post_1485701.html",
+              "quote": "中国沟通长江水系和珠江水系的古运河。……它沟通了湘江和漓江。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 1 / o3; original: Сверено с текстом официальной страницы в веб-поиске 2026-11-08."
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "longestcanalname": {
+            "zh": "灵渠",
+            "ru": [
+              "Линцюй"
+            ],
+            "gloss": "Линцюй — соединяет Сянцзян и Лицзян, бассейны Янцзы и Чжуцзяна."
+          }
         },
         {
           "id": "wat-ru-volga",
@@ -1726,6 +1757,79 @@
             }
           ],
           "olympiad": []
+        },
+        {
+          "id": "wat-shangtanghe",
+          "name": {
+            "zh": "上塘河",
+            "ru": [
+              "Шантанхэ"
+            ],
+            "gloss": "Шантанхэ — древний канал в Ханчжоу общей длиной 48 км."
+          },
+          "longestcanalname": {
+            "zh": "上塘河",
+            "ru": [
+              "Шантанхэ"
+            ],
+            "gloss": "Шантанхэ — древний канал в Ханчжоу общей длиной 48 км."
+          },
+          "sources": [
+            {
+              "title": "大运河（杭州段）介绍 — правительство района Гуншу, Институт культуры Великого канала",
+              "url": "https://www.gongshu.gov.cn/art/2019/1/28/art_1229789753_59080179.html",
+              "quote": "上塘河又名上塘运河，位于杭州市区东北……全长48公里。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 1 / o2; original: Сверено с текстом официальной страницы в веб-поиске 2026-11-08."
+            },
+            {
+              "title": "116种水生物在上塘河“安家” — 中国人民政治协商会议杭州市委员会",
+              "url": "https://www.hzzx.gov.cn/cshz/content/2023-02/20/content_8474771.htm",
+              "quote": "上塘河又名上塘运河，是杭州历史上第一条人工河。河道全长48公里，河面宽30米—50米，流域面积245平方公里。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read"
+            }
+          ]
+        },
+        {
+          "id": "wat-jinghang-canal",
+          "name": {
+            "zh": "京杭大运河",
+            "ru": [
+              "Великий канал Пекин—Ханчжоу"
+            ],
+            "gloss": "Великий канал Пекин—Ханчжоу — связывает пять речных бассейнов Китая."
+          },
+          "longestcanalname": {
+            "zh": "京杭大运河",
+            "ru": [
+              "Великий канал Пекин—Ханчжоу"
+            ],
+            "gloss": "Великий канал Пекин—Ханчжоу — связывает пять речных бассейнов Китая."
+          },
+          "sources": [
+            {
+              "title": "Тысяча ли вдоль Великого канала — правительство Пекина",
+              "url": "https://www.beijing.gov.cn/renwen/sy/whkb/201903/t20190326_1865510.html",
+              "quote": "沟通了海河、黄河、淮河、长江、钱塘江五大水系。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 1 / o4; original: Сверено с текстом официальной страницы в веб-поиске 2026-11-08."
+            },
+            {
+              "title": "世界最长的运河——京杭大运河 — 中国科学院地理科学与资源研究所",
+              "url": "https://igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692527.html",
+              "quote": "中国的京杭大运河，北起北京，南抵浙江杭州，全长1 794千米，纵贯中国南北，沟通海河、黄河、淮河、长江、钱塘江五大水系，是世界上最长的人工河。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-text-read; direct-open-timeout"
+            }
+          ],
+          "olympiad": [
+            "2020-21-mun-lenobl-2"
+          ]
         }
       ]
     },
@@ -6416,7 +6520,8 @@
         "builder": "zh",
         "feature": "zh",
         "unesco": "zh",
-        "about": "ru"
+        "about": "ru",
+        "ancientbridgename": "zh"
       },
       "sides": [
         "river",
@@ -6845,9 +6950,27 @@
               "quote": "由隋朝匠师李春设计建造 … 世界现存年代最久、保存最好 … 古代石拱桥",
               "checkedAt": "2026-10-18",
               "authority": "official"
+            },
+            {
+              "title": "赵州桥 — 赵县人民政府",
+              "url": "https://www.zhaoxian.gov.cn/columns/7558c04f-250e-4c72-a91c-425e1b5a8a17/202306/26/9c718990-9c93-471a-9e27-20c31de59149.html",
+              "quote": "赵州桥又名安济桥，当地俗称大石桥。建于隋开皇后期至大业初年(公元595年—605年)，距今已经1400多年历史，由隋朝匠师李春设计建造…赵州桥是世界现存年代最久、保存最好、科学水平极高、艺术形象极美的古代石拱桥。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №12, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: Страница открыта через web.run 2026-11-08; сверены строки 14–15."
+            },
+            {
+              "title": "安济桥石栏板 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211112_252139.shtml",
+              "quote": "安济桥位于河北赵县，又名赵州桥、大石桥。它是世界上现存最早的一座敞肩石拱桥。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №12, keySources[1], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
             }
           ],
-          "olympiad": [],
+          "olympiad": [
+            "2025-26-mun-krym-3"
+          ],
           "core": true,
           "skipSides": [
             "river",
@@ -6857,6 +6980,13 @@
           "unesco": {
             "zh": "未列入世界遗产名录",
             "gloss": "Не входит в список Всемирного наследия ЮНЕСКО"
+          },
+          "ancientbridgename": {
+            "zh": "安济桥",
+            "ru": [
+              "Аньцзи (Чжаочжоу)"
+            ],
+            "gloss": "Аньцзи (Чжаочжоу) — мост эпохи Суй, построенный мастером Ли Чунем"
           }
         },
         {
@@ -7768,6 +7898,111 @@
             }
           ],
           "olympiad": []
+        },
+        {
+          "id": "eng-humen",
+          "name": {
+            "zh": "虎门大桥",
+            "ru": [
+              "Хумэнь"
+            ],
+            "gloss": "Хумэнь — автомобильный мост, открытый для пробного движения в 1997 году"
+          },
+          "ancientbridgename": {
+            "zh": "虎门大桥",
+            "ru": [
+              "Хумэнь"
+            ],
+            "gloss": "Хумэнь — автомобильный мост, открытый для пробного движения в 1997 году"
+          },
+          "sources": [
+            {
+              "title": "1997年5月1日 虎门大桥通车 — 盐田档案与史志信息网",
+              "url": "https://www.yantian.gov.cn/ytdayszxxw/lsjt/content/post_11736982.html",
+              "quote": "在鸦片战争古战场上崛起的目前广东规模最大的桥梁——虎门大桥，1997年5月1日上午10时试通车。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №12, o1, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "虎门大桥 — 南方网/东莞市交通运输局",
+              "url": "https://gdxk.southcn.com/dg/zdgcxmzl/content/post_751554.html",
+              "quote": "于1997年5月1 日建成试通车，6月9日通过交工验收。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Свежий полный поисковый фрагмент первичного официального/академического сайта прочитан через web.run 2026-11-08; цитата сверена с ним, прямое открытие страницы не заявляется."
+            }
+          ]
+        },
+        {
+          "id": "eng-jinmen-label",
+          "name": {
+            "zh": "金门大桥",
+            "ru": [
+              "«Золотые Ворота» / Цзиньмэнь"
+            ],
+            "gloss": "«Золотые Ворота» / Цзиньмэнь — два современных моста: в США и у островов Цзиньмэнь"
+          },
+          "ancientbridgename": {
+            "zh": "金门大桥",
+            "ru": [
+              "«Золотые Ворота» / Цзиньмэнь"
+            ],
+            "gloss": "«Золотые Ворота» / Цзиньмэнь — два современных моста: в США и у островов Цзиньмэнь"
+          },
+          "sources": [
+            {
+              "title": "The Golden Gate Bridge: Spanning the Strait for Seventy-Five Years — SFO Museum",
+              "url": "https://www.sfomuseum.org/exhibitions/golden-gate-bridge-spanning-strait-seventy-five-years",
+              "quote": "The Bridge opened to the public on May 27,1937… links the city of San Francisco to Marin County.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №12, o3, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: Полный поисковый фрагмент официального музея аэропорта Сан-Франциско прочитан 2026-11-08; местоположение и год открытия сверены. Дата отдельно подтверждена сайтом Golden Gate Bridge District."
+            },
+            {
+              "title": "金門大橋 — 金門觀光旅遊網",
+              "url": "https://www.kinmen.travel/zh-tw/discover/kinmen-bridge",
+              "quote": "金門大橋為一座深水域的跨海大橋，連接大小金門，總長度為5.41公里，於2022年10月完工通車",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №12, o3/additionalIdentityEvidence, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-page-opened-and-text-read by root; line14"
+            }
+          ]
+        },
+        {
+          "id": "preview-lugouqiao",
+          "name": {
+            "zh": "卢沟桥",
+            "ru": [
+              "Лугоу"
+            ],
+            "gloss": "Лугоу — каменный арочный мост под Пекином, завершённый в 1192 году"
+          },
+          "ancientbridgename": {
+            "zh": "卢沟桥",
+            "ru": [
+              "Лугоу"
+            ],
+            "gloss": "Лугоу — каменный арочный мост под Пекином, завершённый в 1192 году"
+          },
+          "sources": [
+            {
+              "title": "Lugou Bridge — Fengtai District People’s Government of Beijing Municipality",
+              "url": "https://www.bjft.gov.cn/ftq/Visiting/202111/b5f0c53ed6264a799edd5d26b597c046.shtml",
+              "quote": "The construction of the original bridge on this site commenced in the Dading 29 of Jin Dynasty (1189) and ended in the Mingchang 3 of Emperor Zhangzong of Jin (1192).",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №12, preview-lugouqiao, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "史话卢沟桥 — 丰台时报（北京市丰台区政府）",
+              "url": "https://www.bjft.gov.cn/fengtaibao/html/2023-03/03/content_9505_15862436.htm",
+              "quote": "卢沟桥这座北京地区年代最久的大型联拱石桥，始建于金大定二十九年（1189），明昌三年（1192）三月竣工",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Свежий полный поисковый фрагмент первичного официального/академического сайта прочитан через web.run 2026-11-08; цитата сверена с ним, прямое открытие страницы не заявляется."
+            }
+          ]
         }
       ]
     },
@@ -8073,7 +8308,8 @@
         "country": "zh",
         "welcomingpineplace": "zh",
         "whitesnakeplace": "zh",
-        "about": "ru"
+        "about": "ru",
+        "kunminghulandmark": "zh"
       },
       "sides": [],
       "rows": [
@@ -8314,7 +8550,9 @@
               "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 8 / o1"
             }
           ],
-          "olympiad": [],
+          "olympiad": [
+            "2020-21-shk-mosobl-47"
+          ],
           "core": false,
           "whitesnakeplace": {
             "zh": "颐和园",
@@ -8324,7 +8562,15 @@
             "gloss": "Ихэюань — императорский парк Пекина, построенный вокруг Ваньшоушань и Куньминху",
             "ref": "landmarks/gardens/lm-cn-summer-palace-garden"
           },
-          "about": "Ихэюань — императорский парк Пекина, построенный вокруг Ваньшоушань и Куньминху."
+          "about": "Ихэюань — императорский парк Пекина, построенный вокруг Ваньшоушань и Куньминху.",
+          "kunminghulandmark": {
+            "zh": "颐和园",
+            "ru": [
+              "Ихэюань"
+            ],
+            "gloss": "Ихэюань — основу композиции составляют Куньминху и гора Ваньшоушань",
+            "ref": "landmarks/gardens/lm-cn-summer-palace-garden"
+          }
         },
         {
           "id": "sp-xihu",
@@ -8479,6 +8725,241 @@
             "ref": "nature/mountains/mtn-taishan"
           },
           "about": "Тайшань — священная гора Шаньдуна, где императоры совершали обряды фэншань."
+        },
+        {
+          "id": "sp-forbidden-city",
+          "name": {
+            "zh": "紫禁城",
+            "ru": [
+              "Запретный город"
+            ],
+            "gloss": "Запретный город — императорский дворец Мин и Цин, построенный в 1406–1420 годах"
+          },
+          "kunminghulandmark": {
+            "zh": "紫禁城",
+            "ru": [
+              "Запретный город"
+            ],
+            "gloss": "Запретный город — императорский дворец Мин и Цин, построенный в 1406–1420 годах"
+          },
+          "sources": [
+            {
+              "title": "About the Palace Museum — The Palace Museum",
+              "url": "https://intl.dpm.org.cn/about_us/126.html",
+              "quote": "It was built from 1406 to 1420 by the third emperor of the Ming dynasty…northward from Nanjing to Beijing",
+              "authority": "official",
+              "checkedAt": "2026-10-17",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/dossiers/landmarks.json / palaces / lm-cn-beijing-gugong; original: accepted-dossier-source"
+            },
+            {
+              "title": "Imperial Palaces of the Ming and Qing Dynasties in Beijing and Shenyang — UNESCO",
+              "url": "https://whc.unesco.org/en/list/439/",
+              "quote": "constructed between 1406 and 1420",
+              "authority": "official",
+              "checkedAt": "2026-10-17",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/dossiers/landmarks.json / palaces / lm-cn-beijing-gugong; original: accepted-dossier-source"
+            }
+          ]
+        },
+        {
+          "id": "sp-great-wall",
+          "name": {
+            "zh": "长城",
+            "ru": [
+              "Великая стена"
+            ],
+            "gloss": "Великая стена — большая часть её нынешнего облика сложилась при Мин",
+            "ref": "landmarks/fortifications/lm-cn-great-wall"
+          },
+          "kunminghulandmark": {
+            "zh": "长城",
+            "ru": [
+              "Великая стена"
+            ],
+            "gloss": "Великая стена — большая часть её нынешнего облика сложилась при Мин",
+            "ref": "landmarks/fortifications/lm-cn-great-wall"
+          },
+          "sources": [
+            {
+              "title": "The Great Wall — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/438/",
+              "quote": "Construction continued up to the Ming dynasty (1368–1644), when the Great Wall became the world's largest military structure. … The Great Wall begins in the east at Shanhaiguan in Hebei province and ends at Jiayuguan in Gansu province to the west.",
+              "authority": "official",
+              "checkedAt": "2026-10-23",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/dossiers/landmarks.json / fortifications / lm-cn-great-wall; original: accepted-dossier-source"
+            },
+            {
+              "title": "浪漫中国丨世界遗产图鉴：长城 — 新华网",
+              "url": "http://www.news.cn/video/20231219/619eb0bb44034860a1b83a1d6af1d63c/c.html",
+              "quote": "到了明代（1368年至1644年），在旧有的基础上逐渐改建成如今的面貌。万里长城气魄雄伟，是世界历史上伟大的工程之一。1987年被列入《世界文化遗产名录》。",
+              "authority": "official",
+              "checkedAt": "2026-10-23",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/dossiers/landmarks.json / fortifications / lm-cn-great-wall; original: accepted-dossier-source"
+            }
+          ]
+        },
+        {
+          "id": "sp-yonghe-temple",
+          "name": {
+            "zh": "雍和宫",
+            "ru": [
+              "Юнхэгун"
+            ],
+            "gloss": "Юнхэгун — в 1744 году бывшую резиденцию превратили в буддийский монастырь",
+            "ref": "landmarks/sacred/lm-cn-yonghe"
+          },
+          "kunminghulandmark": {
+            "zh": "雍和宫",
+            "ru": [
+              "Юнхэгун"
+            ],
+            "gloss": "Юнхэгун — в 1744 году бывшую резиденцию превратили в буддийский монастырь",
+            "ref": "landmarks/sacred/lm-cn-yonghe"
+          },
+          "sources": [
+            {
+              "title": "雍和宫藏传佛教艺术博物馆 — 北京市文物局",
+              "url": "https://wwj.beijing.gov.cn/bjww/362771/362772/545817/index.html",
+              "quote": "雍和宫是清代皇家藏传佛教寺院，也是北京地区现存最大的一座藏传佛教寺院……乾隆九年（1744年）改为藏传佛教格鲁派寺院。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 20 / o4; original: fresh-web-search-result-full-article-text"
+            },
+            {
+              "title": "北京市民宗委：雍和宫",
+              "url": "https://mzzjw.beijing.gov.cn/zwgk/mzdt/202212/t20221210_2877439.html",
+              "quote": "雍和宫位于北京市东城区雍和宫大街12号，始建于清康熙三十三年（1694年）…格鲁派寺院",
+              "authority": "official",
+              "checkedAt": "2026-10-17",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/dossiers/landmarks.json / sacred / lm-cn-yonghe; original: accepted-dossier-source"
+            }
+          ]
+        }
+      ]
+    },
+    "heightvalues": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "height-elbrus-6542",
+          "name": {
+            "zh": "六千五百四十二米",
+            "ru": [
+              "6542 м"
+            ],
+            "gloss": "6542 м — на 900 м больше принятой высоты Эльбруса"
+          },
+          "sources": [
+            {
+              "title": "В честь юбилея РГО Фёдор Конюхов поднялся на Эльбрус — Русское географическое общество",
+              "url": "https://rgo.ru/activity/redaction/articles/v-chest-yubileya-rgo-fyedor-konyukhov-podnyalsya-na-elbrus/",
+              "quote": "Западную вершину Эльбруса — 5642 м.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №17, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-RGO-indexed-article-text Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            },
+            {
+              "title": "欧洲地理概况 — 中国经济网",
+              "url": "http://www.ce.cn/ztpd/hqly/ouzhou/dili/t20031205_237321.btk",
+              "quote": "海拔5642米，为欧洲最高峰",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "Переиспользована принятая цитата досье nature/mountains/mtn-ru-elbrus, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            }
+          ]
+        },
+        {
+          "id": "height-elbrus-5642",
+          "name": {
+            "zh": "五千六百四十二米",
+            "ru": [
+              "5642 м"
+            ],
+            "gloss": "5642 м — западная вершина; восточная ниже: 5621 м"
+          },
+          "sources": [
+            {
+              "title": "В честь юбилея РГО Фёдор Конюхов поднялся на Эльбрус — Русское географическое общество",
+              "url": "https://rgo.ru/activity/redaction/articles/v-chest-yubileya-rgo-fyedor-konyukhov-podnyalsya-na-elbrus/",
+              "quote": "Западную вершину Эльбруса — 5642 м.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №17, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-RGO-indexed-article-text Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически.",
+              "additionalQuotes": [
+                "на Восточную вершину (5621 м)"
+              ]
+            },
+            {
+              "title": "欧洲地理概况 — 中国经济网",
+              "url": "http://www.ce.cn/ztpd/hqly/ouzhou/dili/t20031205_237321.btk",
+              "quote": "海拔5642米，为欧洲最高峰",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "Переиспользована принятая цитата досье nature/mountains/mtn-ru-elbrus, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            }
+          ],
+          "olympiad": [
+            "2023-24-shk-mosobl-6"
+          ]
+        },
+        {
+          "id": "height-elbrus-8642",
+          "name": {
+            "zh": "八千六百四十二米",
+            "ru": [
+              "8642 м"
+            ],
+            "gloss": "8642 м — на 3000 м больше принятой высоты Эльбруса"
+          },
+          "sources": [
+            {
+              "title": "В честь юбилея РГО Фёдор Конюхов поднялся на Эльбрус — Русское географическое общество",
+              "url": "https://rgo.ru/activity/redaction/articles/v-chest-yubileya-rgo-fyedor-konyukhov-podnyalsya-na-elbrus/",
+              "quote": "Западную вершину Эльбруса — 5642 м.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №17, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-RGO-indexed-article-text Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            },
+            {
+              "title": "欧洲地理概况 — 中国经济网",
+              "url": "http://www.ce.cn/ztpd/hqly/ouzhou/dili/t20031205_237321.btk",
+              "quote": "海拔5642米，为欧洲最高峰",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "Переиспользована принятая цитата досье nature/mountains/mtn-ru-elbrus, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            }
+          ]
+        },
+        {
+          "id": "height-elbrus-4562",
+          "name": {
+            "zh": "四千五百六十二米",
+            "ru": [
+              "4562 м"
+            ],
+            "gloss": "4562 м — на 1080 м меньше принятой высоты Эльбруса"
+          },
+          "sources": [
+            {
+              "title": "В честь юбилея РГО Фёдор Конюхов поднялся на Эльбрус — Русское географическое общество",
+              "url": "https://rgo.ru/activity/redaction/articles/v-chest-yubileya-rgo-fyedor-konyukhov-podnyalsya-na-elbrus/",
+              "quote": "Западную вершину Эльбруса — 5642 м.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №17, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-RGO-indexed-article-text Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            },
+            {
+              "title": "欧洲地理概况 — 中国经济网",
+              "url": "http://www.ce.cn/ztpd/hqly/ouzhou/dili/t20031205_237321.btk",
+              "quote": "海拔5642米，为欧洲最高峰",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "Переиспользована принятая цитата досье nature/mountains/mtn-ru-elbrus, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            }
+          ]
         }
       ]
     }

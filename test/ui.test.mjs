@@ -2476,8 +2476,9 @@ test('темы раунда: разделы или подборки — один
   assert.deepEqual(await page.evaluate(() => [...new Set(QUESTION_BANK.map((r) => r.dossier).filter(Boolean))]
     .filter((id) => !DOSSIER_MARKS[id] || !DOSSIER_SHORT[id])), []);
   const inSets = bank.filter((r) => r.dossier).length;
+  const genitiveQuestions = new Intl.PluralRules('ru').select(bank.length) === 'one' ? 'вопроса' : 'вопросов';
   assert.equal(await page.locator('#topicsHelp').textContent(),
-    `Подборки собраны по темам досье: ${inSets} из ${bank.length} вопросов.`);
+    `Подборки собраны по темам досье: ${inSets} из ${bank.length} ${genitiveQuestions}.`);
   for (const name of ['Кухня и блюда', 'Праздники']) {
     await page.locator('#dossierControls label', { hasText: name }).locator('input').check();
   }

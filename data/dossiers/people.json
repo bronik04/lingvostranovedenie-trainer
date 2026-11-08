@@ -2530,6 +2530,440 @@
           "about": "Контекстный термин исходного варианта, обозначающий ту же народность хань, а не отдельный народ. Связь с канонической строкой дана в canonicalPeople."
         }
       ]
+    },
+    "performers": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "performer-chengyanqiu",
+          "name": {
+            "zh": "程砚秋",
+            "ru": [
+              "Чэн Яньцю"
+            ],
+            "gloss": "Чэн Яньцю — создатель школы Чэн, исполнитель женских ролей цинъи"
+          },
+          "sources": [
+            {
+              "title": "程砚秋 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/240675.html",
+              "quote": "京剧演员，工青衣。 … 创立了“程派”青衣",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#7/options/o1; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: fresh-primary-museum-indexed-article-text; full-page open timed out"
+            },
+            {
+              "title": "程(砚秋)派 — 国家京剧院",
+              "url": "https://www.cnpoc.cn/cnpoc/gjkt/200807/9f8b977cc22e47819b393ce1835e5a7c.shtml",
+              "quote": "青衣流派，创始人为程砚秋。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-web-open; полный текст официальной/академической страницы открыт 2026-11-08, цитата сверена с выводом web.run"
+            }
+          ]
+        },
+        {
+          "id": "performer-meilanfang",
+          "name": {
+            "zh": "梅兰芳",
+            "ru": [
+              "Мэй Ланьфан"
+            ],
+            "gloss": "Мэй Ланьфан — возглавлял гастрольную труппу из 24 человек"
+          },
+          "sources": [
+            {
+              "title": "梅兰芳率团出访苏联 — 人民网党史频道",
+              "url": "https://dangshi.people.com.cn/n1/2016/0428/c85037-28312114.html",
+              "quote": "由梅兰芳任团长 … 共24人",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#7/options/o2; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: fresh-official-history-article-indexed-text; archival narrative"
+            },
+            {
+              "title": "西城文萃 — 北京市西城区政府",
+              "url": "https://www.bjxch.gov.cn/f/140912/48078.pdf",
+              "quote": "1935年由海路绕道至海参崴达莫斯科，此行结识了斯坦尼斯拉夫斯基",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#7/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: fresh-primary-municipal-cultural-history-PDF-indexed-text"
+            }
+          ],
+          "olympiad": [
+            "2023-24-shk-mosobl-15"
+          ]
+        },
+        {
+          "id": "performer-majinfeng",
+          "name": {
+            "zh": "马金凤",
+            "ru": [
+              "Ма Цзиньфэн"
+            ],
+            "gloss": "Ма Цзиньфэн — актриса хэнаньской оперы юйцзюй, родилась в 1922 году"
+          },
+          "sources": [
+            {
+              "title": "豫剧—马金凤 — 中国国家图书馆非遗传承人记录工作",
+              "url": "https://ich.nlc.cn/detail/1851",
+              "quote": "马金凤，1922年出生 … 豫剧代表性传承人",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#7/options/o3; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: fresh-primary-National-Library-biography-page; line 14"
+            },
+            {
+              "title": "一代名伶 百年帅旦 — 海南日报",
+              "url": "https://news.hndaily.cn/h5/html5/2022-06/06/content_58487_14897757.htm",
+              "quote": "马金凤，原姓崔，小名金妮，1922年生于山东曹县。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-web-open; полный текст официальной/академической страницы открыт 2026-11-08, цитата сверена с выводом web.run"
+            }
+          ]
+        },
+        {
+          "id": "performer-shangxiaoyun",
+          "name": {
+            "zh": "尚小云",
+            "ru": [
+              "Шан Сяоюнь"
+            ],
+            "gloss": "Шан Сяоюнь — создатель школы Шан, исполнитель женских ролей"
+          },
+          "sources": [
+            {
+              "title": "尚小云 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/240677.html",
+              "quote": "京剧演员，工旦角。 … 形成了“尚派”艺术。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#7/options/o4; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: fresh-primary-museum-indexed-article-text; full-page open timed out"
+            },
+            {
+              "title": "尚(小云)派 — 国家京剧院",
+              "url": "https://www.cnpoc.cn/cnpoc/gjkt/200807/9dc47e8aa50c483c8008e9d7ce8b8e49.shtml",
+              "quote": "旦角流派。创始人为尚小云。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-web-open; полный текст официальной/академической страницы открыт 2026-11-08, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      ]
+    },
+    "pairs": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "pair-houyi-change",
+          "name": {
+            "zh": "后羿与嫦娥",
+            "ru": [
+              "Хоу И и Чанъэ"
+            ],
+            "gloss": "Хоу И и Чанъэ — по мифу, жена стрелка улетела на Луну"
+          },
+          "sources": [
+            {
+              "title": "嫦娥奔月、吴刚伐桂、唐王游月宫……那些中秋节的美丽传说 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/news_1_details/9811.html",
+              "quote": "其核心内容是，射日英雄后羿的妻子嫦娥，食用了其夫从西王母处得来的不死药后，飞落到月亮上，并留居在那里无法返回。",
+              "authority": "official",
+              "checkedAt": "2026-10-15",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#16/options/o1; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Переиспользована принятая цитата досье myths/fig-change, прочитанная локально 2026-11-08; дата checkedAt — прежняя проверка, страницу заново не загружали."
+            },
+            {
+              "title": "嫦娥奔月 — 中国探月与深空探测网（国家航天局探月与航天工程中心）",
+              "url": "http://www.clep.org.cn/n5982029/n5987536/c5987652/content.html",
+              "quote": "嫦娥吞下药，身子立时飘离地面、冲出窗口，向天上飞去。由于嫦娥牵挂着丈夫，便飞落到离人间最近的月亮上成了仙。",
+              "authority": "official",
+              "checkedAt": "2026-10-15",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/myths.json/stories/story-change-benyue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "中秋节（佛山秋色） — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/14933.html",
+              "quote": "唐代将中秋与嫦娥奔月、吴刚伐桂、玉兔捣药、杨贵妃变月神、唐明皇游月宫等神话故事结合起来",
+              "authority": "official",
+              "checkedAt": "2026-10-15",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/myths.json/stories/story-change-benyue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "关于中秋节的四个传说 — 人民网·文化",
+              "url": "http://culture.people.com.cn/n1/2016/0912/c407031-28709937-5.html",
+              "quote": "嫦娥，原名姮娥，她是神话人物后羿的妻子。到西汉时，为避汉文帝刘恒的讳，而改称“嫦娥”。嫦娥奔月有两种版本，均见于《淮南子》。一种版本是，嫦娥偷吃不老药奔月：“羿请不死药于西王母，未及服食之，姮娥盗食之，得仙，奔入月中为月精也”。",
+              "authority": "official",
+              "checkedAt": "2026-10-15",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/myths.json/stories/story-change-benyue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            }
+          ]
+        },
+        {
+          "id": "pair-xi-peng",
+          "name": {
+            "zh": "习近平与彭丽媛",
+            "ru": [
+              "Си Цзиньпин и Пэн Лиюань"
+            ],
+            "gloss": "Си Цзиньпин и Пэн Лиюань — Пэн Лиюань известна как певица"
+          },
+          "sources": [
+            {
+              "title": "动人的歌声 真挚的情意 — 中华人民共和国外交部",
+              "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/fz_677316/1206_677342/1206x2_677362/200506/t20050605_8014023.shtml",
+              "quote": "著名歌唱家彭丽媛、阎维文、董文华、程志，优秀青年歌唱演员蔡国庆、谭晶、王丽达等登台献艺。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#16/options/o2; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "国家主席习近平夫人彭丽媛 — 中华人民共和国国防部",
+              "url": "https://www.mod.gov.cn/gfbw/qwfb/yw_214049/16482782.html",
+              "quote": "国家主席习近平夫人彭丽媛",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-manifest-authorRemarks: items#16 contains this official URL and exact quoted phrase; read locally 2026-11-08; new web.open attempted but returned TimeoutError, no fresh full-page verification claimed"
+            }
+          ]
+        },
+        {
+          "id": "pair-sanmao-jose",
+          "name": {
+            "zh": "三毛与荷西",
+            "ru": [
+              "Саньмао и Хосе"
+            ],
+            "gloss": "Саньмао и Хосе — их жизнь в пустыне описана в «Рассказах о Сахаре»"
+          },
+          "sources": [
+            {
+              "title": "撒哈拉的故事 — 对外经济贸易大学图书馆",
+              "url": "https://opac.lib.uibe.edu.cn/opac/book/c08bef569d59ab9da20dd90766f4fd3d",
+              "quote": "三毛在书中生动记叙了自己与荷西在沙漠里苦中作乐的婚姻生活。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#16/options/o3; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "三毛[女、台] — 中国作家网现代作家辞典",
+              "url": "https://www.chinawriter.com.cn/xdzj/331.shtml",
+              "quote": "远涉重洋奔赴撒哈拉沙漠。在那里与西班牙潜水师荷西结婚。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-web-open; полный текст официальной/академической страницы открыт 2026-11-08, цитата сверена с выводом web.run"
+            }
+          ]
+        },
+        {
+          "id": "pair-liangzhu",
+          "name": {
+            "zh": "梁山伯与祝英台",
+            "ru": [
+              "Лян Шаньбо и Чжу Интай"
+            ],
+            "gloss": "Лян Шаньбо и Чжу Интай — Чжу Интай училась с ним, переодевшись юношей",
+            "ref": "myths/stories/story-liangzhu"
+          },
+          "sources": [
+            {
+              "title": "山东非遗鉴赏——梁祝传说 从比翼鸟到化蝶 — 辽宁传媒学院",
+              "url": "https://www.lncu.edu.cn/szmtxy/24204.html",
+              "quote": "据传东晋时，祝英台女扮男装前往杭州（川剧为尼山）求学，路遇梁山伯，因志同道合而结为兄弟并同窗三载。后，祝英台归家，行前托媒师母许婚梁山伯。十八相送，祝英台以“妹”相许。梁山伯知情，往祝家求婚，此时，祝父公远已将女许婚马太守之子马文才。梁祝二人楼台相会，之后，梁山伯抱病归家，病亡。祝英台新婚之时，花轿绕道至梁山伯坟前祭奠，惊雷裂墓，英台入坟。梁祝化蝶双舞。",
+              "authority": "academic",
+              "checkedAt": "2026-10-15",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#16/options/o4; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Переиспользована принятая цитата досье myths/story-liangzhu, прочитанная локально 2026-11-08; дата checkedAt — прежняя проверка, страницу заново не загружали."
+            },
+            {
+              "title": "梁祝传说 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/12189.html",
+              "quote": "梁山伯与祝英台传说是我国四大民间传说之一，是中华文化的瑰宝。",
+              "authority": "official",
+              "checkedAt": "2026-10-15",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/myths.json/stories/story-liangzhu; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "梁山伯与祝英台谁是主角 — 光明网（文摘报）",
+              "url": "https://www.gmw.cn/01wzb/2009-09/10/content_978910.htm",
+              "quote": "代表着梁祝传说（以梁山伯为主角）的文献，是北宋宁波地区的地方官李茂诚的《义忠王庙记》；代表着祝梁传说（以祝英台为主角）的文献，则是晚唐张读的《宣室志》。 … 所幸的是，到了现代，祝梁传奇成为压倒性的叙述方式。",
+              "authority": "official",
+              "checkedAt": "2026-10-15",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/myths.json/stories/story-liangzhu; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "牛郎织女传说 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/12254.html",
+              "quote": "牛郎织女传说起源于先秦时期，是我国流传最广、影响最大的民间传说之一，同《孟姜女》、《梁山伯与祝英台》和《白蛇传》并称为“四大民间传说”。",
+              "authority": "official",
+              "checkedAt": "2026-10-24",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/myths.json/stories/story-liangzhu; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "吴林森：如何鉴赏《白蛇传》 — 江苏省社科联（江苏人文社会科学讲座）",
+              "url": "https://www.js-skl.org.cn/uploads/Files/2018-03/13/1-1520905114-742.pdf",
+              "quote": "中国的四大民间传说——《梁山伯与祝英台》、《白蛇传》、《牛郎织女》、《孟姜女》，是中国民间文化中最令人瞩目的部分",
+              "authority": "academic",
+              "checkedAt": "2026-10-24",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/myths.json/stories/story-liangzhu; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "周恩来给《梁祝》改名让外国记者看得如痴如醉 — 周恩来纪念网",
+              "url": "https://zhouenlai.people.com.cn/n1/2020/0601/c409117-31731177.html",
+              "quote": "他当即出了一个主意，只在请柬上写一句话：“请你欣赏一部彩色歌剧电影——中国的《罗密欧与朱丽叶》。”",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#16/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Полный текст поискового результата web.run прочитан 2026-11-08; отдельный open дал TimeoutError. Свежая загрузка полной страницы не заявляется."
+            }
+          ],
+          "olympiad": [
+            "2019-20-mun-lip-2"
+          ]
+        }
+      ]
+    },
+    "anthemfigures": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "anthem-ru-glinka",
+          "name": {
+            "zh": "米哈伊尔 · 格林卡",
+            "ru": [
+              "Михаил Глинка"
+            ],
+            "gloss": "Михаил Глинка — его «Патриотическую песню» утвердили гимном в 1990 году"
+          },
+          "sources": [
+            {
+              "title": "12 июня: к истории праздника и «Патриотической песни» Михаила Глинки — Российский национальный музей музыки",
+              "url": "https://music-museum.ru/about/news/12-iyunya-k-istorii-prazdnika-i-patrioticheskoj-pesni-mixaila-glinki.html",
+              "quote": "в 1990 году оно было утверждено в качестве Государственного гимна Российской Федерации.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №2, o1, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-museum-indexed-article-text"
+            },
+            {
+              "title": "米哈伊尔·伊万诺维奇·格林卡 — 俄罗斯国情网（中国社会科学院俄罗斯东欧中亚研究所）",
+              "url": "http://euroasia.cssn.cn/elsgqw/elswy/elsyy/elsyy_egyyj/201004/t20100426_1890986.shtml",
+              "quote": "格林卡是俄罗斯民族音乐真正的奠基人，被尊称为“俄罗斯音乐之父” … 他的两部歌剧《伊凡·苏萨宁》和《鲁斯兰与柳德米拉》不仅是俄罗斯歌剧宝库中的珍品",
+              "checkedAt": "2026-10-24",
+              "authority": "academic",
+              "verificationMethod": "Переиспользована принятая цитата досье people/composers/cmp-ru-glinka, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье"
+            },
+            {
+              "title": "文汇报｜贝文力：民族乐派与斯拉夫作曲家 — 华东师范大学",
+              "url": "https://www.ecnu.edu.cn/info/1095/4972.htm",
+              "quote": "歌剧《伊万·苏萨宁》在彼得堡首演。 … 格林卡以此开启了俄罗斯音乐时期。",
+              "checkedAt": "2026-10-24",
+              "authority": "academic",
+              "verificationMethod": "Переиспользована принятая цитата досье people/composers/cmp-ru-glinka, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье"
+            }
+          ]
+        },
+        {
+          "id": "anthem-ru-alexandrov",
+          "name": {
+            "zh": "亚历山大 · 亚历山德罗夫",
+            "ru": [
+              "Александр Александров"
+            ],
+            "gloss": "Александр Александров — также написал музыку песни «Священная война»"
+          },
+          "sources": [
+            {
+              "title": "Священная война: нотное издание; Российская государственная библиотека / НЭБ",
+              "url": "https://kp.rusneb.ru/item/material/svyashennaya-vojna-vstavaj-strana-ogromnaya-dlya-trehgolosnogo-hora-bez-soprovozhdeniya-slova-v-lebedeva-kumacha-muzyka-a-v-aleksandrova",
+              "quote": "Слова В. Лебедева-Кумача; Музыка А. В. Александрова",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №2, o2, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-library-catalogue; author and title inspected"
+            },
+            {
+              "title": "День России: электронная выставка Президентской библиотеки, с. 22",
+              "url": "https://www.prlib.ru/sites/default/files/u535/den_rossii_k_30_letiyu_prinyatiya_deklaracii_o_gosudarstvennom_suverenitete_rossii.pdf",
+              "quote": "Автором музыки Государственного гимна РФ является А. В. Александров, автором текста - С. В. Михалков.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №2, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-pdf-text; page 22 (zero-based 21), lines 646–647"
+            }
+          ],
+          "olympiad": [
+            "2022-23-shk-mosobl-16"
+          ]
+        },
+        {
+          "id": "anthem-ru-mikhalkov",
+          "name": {
+            "zh": "谢尔盖 · 米哈尔科夫",
+            "ru": [
+              "Сергей Михалков"
+            ],
+            "gloss": "Сергей Михалков — автор слов современного гимна России"
+          },
+          "sources": [
+            {
+              "title": "День России: электронная выставка Президентской библиотеки, с. 22",
+              "url": "https://www.prlib.ru/sites/default/files/u535/den_rossii_k_30_letiyu_prinyatiya_deklaracii_o_gosudarstvennom_suverenitete_rossii.pdf",
+              "quote": "автором текста - С. В. Михалков.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №2, o3, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-pdf-text; page 22 (zero-based 21), lines 646–647"
+            },
+            {
+              "title": "Поэзия Победы: Сергей Михалков — Южный федеральный университет",
+              "url": "https://sfedu.ru/press-center/news/77264",
+              "quote": "Наконец, в 2001 году поэт в третий раз стал автором текста государственного гимна, теперь уже Российской Федерации, этот гимн мы исполняем до сих пор.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Свежий полный поисковый фрагмент первичного официального/академического сайта прочитан через web.run 2026-11-08; цитата сверена с ним, прямое открытие страницы не заявляется."
+            }
+          ]
+        },
+        {
+          "id": "anthem-ru-tchaikovsky",
+          "name": {
+            "zh": "彼得 · 柴可夫斯基",
+            "ru": [
+              "Пётр Чайковский"
+            ],
+            "gloss": "Пётр Чайковский — автор балета «Лебединое озеро»"
+          },
+          "sources": [
+            {
+              "title": "Афиша Мариинского театра, октябрь 2026",
+              "url": "https://site.mariinsky.ru/ru/playbill/playbill/?month=10&year=2026",
+              "quote": "Лебединое озеро\nбалет Петра Чайковского",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №2, o4, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-official-theatre-indexed-programme"
+            },
+            {
+              "title": "彼得·柴科夫斯基 — 俄罗斯国情网（中国社会科学院俄罗斯东欧中亚研究所）",
+              "url": "http://euroasia.cssn.cn/elsgqw/egrw/egrw_ysj/201004/t20100426_1852921.shtml",
+              "quote": "19世纪俄国最著名的作曲家，俄罗斯民族音乐与西欧古典音乐的集大成者 … 芭蕾舞剧《天鹅湖》、《胡桃夹子》、《睡美人》 … 歌剧《叶甫根尼.奥涅金》、《黑桃皇后》 … 主要有6部交响乐、10部歌剧、3部芭蕾舞剧",
+              "checkedAt": "2026-10-24",
+              "authority": "academic",
+              "verificationMethod": "Переиспользована принятая цитата досье people/composers/cmp-ru-tchaikovsky, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье"
+            },
+            {
+              "title": "芭蕾舞剧《天鹅湖》— 俄罗斯国情网（中国社会科学院俄罗斯东欧中亚研究所）",
+              "url": "http://euroasia.cssn.cn/elsgqw/elswy/elsbl/elsbl_bljpxs/201004/t20100426_1890943.shtml",
+              "quote": "《天鹅湖》是柴可夫斯基1876年开始创作的。",
+              "checkedAt": "2026-10-24",
+              "authority": "academic",
+              "verificationMethod": "Переиспользована принятая цитата досье people/composers/cmp-ru-tchaikovsky, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье"
+            }
+          ]
+        }
+      ]
     }
   }
 }

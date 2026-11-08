@@ -1349,7 +1349,8 @@
         "unesco": "zh",
         "address": "ru",
         "dates": "ru",
-        "description": "ru"
+        "description": "ru",
+        "suzhoufourgarden": "zh"
       },
       "sides": [
         "city",
@@ -1507,7 +1508,10 @@
               "url": "https://ylj.suzhou.gov.cn/szsylj/sjyc/201905/b7c0f2058c75498c9ecbacf234e25b08.shtml",
               "quote": "留园在苏州市…始建于明代万历二十一年(公元1593年)…太湖石以冠云峰为最",
               "checkedAt": "2026-10-17",
-              "authority": "official"
+              "authority": "official",
+              "additionalQuotes": [
+                "园始建于明代万历二十一年（公元1593年），为太僕寺少卿徐泰时的私家园林，时人称东园。"
+              ]
             },
             {
               "title": "市政府关于公布《苏州园林目录》（一）的通知 — 苏州市人民政府",
@@ -1529,15 +1533,32 @@
               "quote": "The Lingering Garden China",
               "checkedAt": "2026-10-23",
               "authority": "official"
+            },
+            {
+              "title": "苏州园林 — 中国政府旅游文化资料",
+              "url": "https://www.tba.gov.cn/slbthlyglj/lyfq/content/c27acb09-1e1b-48e7-8a11-d0ef11330468.html",
+              "quote": "其中沧浪亭、狮子林、拙政园和留园分别代表着宋、元、明、清四个朝代的艺术风格，被称为苏州“四大名园”。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 13 / keySources[0]; original: fresh-web-search-result-full-article-text"
             }
           ],
-          "olympiad": [],
+          "olympiad": [
+            "2015-16-mun-spb-10"
+          ],
           "unesco": {
             "zh": "世界文化遗产",
             "ru": [
               "Всемирное культурное наследие"
             ],
             "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          },
+          "suzhoufourgarden": {
+            "zh": "留园",
+            "ru": [
+              "Лююань"
+            ],
+            "gloss": "Лююань — основан при Мин как частный сад Сюй Тайши"
           }
         },
         {
@@ -1605,6 +1626,14 @@
               "quote": "The Master-of-Nets Garden China",
               "checkedAt": "2026-10-23",
               "authority": "official"
+            },
+            {
+              "title": "网师园记（清·钱大昕） — 苏州市园林和绿化管理局",
+              "url": "https://ylj.suzhou.gov.cn/szsylj/ylwh/201907/6310c1e67a69483a969552c865f55d87.shtml",
+              "quote": "宋光禄悫庭购其地，治别业为归老之计，因以网师自号，并颜其园，盖托于渔隐之义，亦取巷名音相似也。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 13 / o3; original: fresh-web-search-result-full-primary-text"
             }
           ],
           "olympiad": [],
@@ -1614,6 +1643,13 @@
               "Всемирное культурное наследие"
             ],
             "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          },
+          "suzhoufourgarden": {
+            "zh": "网师园",
+            "ru": [
+              "Ваншиюань"
+            ],
+            "gloss": "Ваншиюань — название связано с мечтой хозяина удалиться от дел и жить рыбаком"
           }
         },
         {
@@ -1842,6 +1878,13 @@
               "Всемирное культурное наследие"
             ],
             "gloss": "Объект Всемирного культурного наследия ЮНЕСКО"
+          },
+          "suzhoufourgarden": {
+            "zh": "退思园",
+            "ru": [
+              "Туйсыюань"
+            ],
+            "gloss": "Туйсыюань — сад эпохи Цин в Тунли, известный как «сад семьи Жэнь»"
           }
         },
         {
@@ -2899,6 +2942,65 @@
             }
           ],
           "olympiad": []
+        },
+        {
+          "id": "lm-cn-huanxiu-villa",
+          "name": {
+            "zh": "环秀山庄",
+            "ru": [
+              "Хуаньсю-шаньчжуан"
+            ],
+            "gloss": "Хуаньсю-шаньчжуан — искусственные скалы здесь создал цинский мастер Гэ Юйлян"
+          },
+          "country": {
+            "zh": "中国",
+            "ru": [
+              "Китай"
+            ]
+          },
+          "city": {
+            "zh": "苏州",
+            "ru": [
+              "Сучжоу"
+            ]
+          },
+          "feature": {
+            "zh": "湖石假山",
+            "ru": [
+              "искусственные скалы из озёрного камня"
+            ]
+          },
+          "address": "Сучжоу, улица Цзиндэлу",
+          "dates": "Сад создавался в эпоху Цин, с периода Цяньлун",
+          "description": "Хуаньсю-шаньчжуан известен искусственными скалами, созданными цинским мастером Гэ Юйляном.",
+          "suzhoufourgarden": {
+            "zh": "环秀山庄",
+            "ru": [
+              "Хуаньсю-шаньчжуан"
+            ],
+            "gloss": "Хуаньсю-шаньчжуан — искусственные скалы здесь создал цинский мастер Гэ Юйлян"
+          },
+          "sources": [
+            {
+              "title": "环秀山庄 — 苏州市园林和绿化管理局",
+              "url": "https://ylj.suzhou.gov.cn/szsylj/sjyc/201905/ed99a3e821de464cae28c04e79d60512.shtml",
+              "quote": "环秀山庄，位于苏州城中景德路，面积仅为3亩，1988年被列为全国重点文物保护单位，1997年底被联合国教科文组织遗产委员会列为世界文化遗产。\n\n环秀山庄占地不大，但其内湖石假山为中国之最。据载，此山为清代叠山大师戈裕良之作，虽由人作，有如天开，尽得造化之妙，堪称假山之珍。环秀山庄亦因此而驰名。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read; accepted-caption-source-rechecked",
+              "additionalQuotes": [
+                "环秀山庄占地不大，但其内湖石假山为中国之最。据载，此山为清代叠山大师戈裕良之作。"
+              ]
+            },
+            {
+              "title": "环秀山庄 — 苏州市园林和绿化管理局，园林名录",
+              "url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201902/79ad9beb6c194e6c9bfa5d78e1cb2661.shtml",
+              "quote": "环秀山庄始建于清朝乾隆年间，为一官僚私园。乾隆末年归尚书毕沅，其后屡有兴废。道光末成为汪姓宗祠的一部分，更名为环秀山庄。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-text-read"
+            }
+          ]
         }
       ]
     },
@@ -8135,6 +8237,267 @@
             }
           ],
           "olympiad": []
+        }
+      ]
+    },
+    "skyscrapers": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "lm-cn-shanghai-world-financial-center",
+          "name": {
+            "zh": "上海环球金融中心",
+            "ru": [
+              "Шанхайский всемирный финансовый центр"
+            ],
+            "gloss": "Шанхайский всемирный финансовый центр — соседняя высотка высотой 492 м."
+          },
+          "sources": [
+            {
+              "title": "侬欢喜上海伐 — 上海市人民政府新闻办公室 (источник: 人民日报, текст о 2025 годе)",
+              "url": "https://en.shio.gov.cn/TrueCMS/shxwbgs/wxdtt/content/e3fad178-4821-4ba3-a7c4-c96fb91b8e99.htm",
+              "quote": "上海环球金融中心\n\n高492米",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 10 / o1; original: web_open; relevant text read in batch 6"
+            },
+            {
+              "title": "Shanghai World Financial Center — official project overview",
+              "url": "https://swfc-shanghai.com/about_intro.php?l=en",
+              "quote": "Soaring to a height of 492m with 101 above-ground floors,SWFC is the world’s tallest mixed-use urban development project.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-text-read"
+            }
+          ]
+        },
+        {
+          "id": "lm-cn-shanghai-tower",
+          "name": {
+            "zh": "上海中心大厦",
+            "ru": [
+              "Шанхайская башня"
+            ],
+            "gloss": "Шанхайская башня — её смотровая площадка находится на 118-м этаже."
+          },
+          "sources": [
+            {
+              "title": "Top of Shanghai Observatory — Shanghai Tower, официальный сайт",
+              "url": "https://en.shanghaitower.com/shagnhai.html",
+              "quote": "The observatory is on the 118th floor.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 10 / o2; original: web_open; relevant text read in batch 6"
+            },
+            {
+              "title": "侬欢喜上海伐 — 上海市人民政府新闻办公室 (источник: 人民日报, текст о 2025 годе)",
+              "url": "https://en.shio.gov.cn/TrueCMS/shxwbgs/wxdtt/content/e3fad178-4821-4ba3-a7c4-c96fb91b8e99.htm",
+              "quote": "上海中心大厦\n\n高632米，中国第一高楼、世界第三高楼",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 10 / keySources[0]; original: web_open; relevant text read in batch 6"
+            }
+          ],
+          "olympiad": [
+            "2023-24-mun-klg-10"
+          ]
+        },
+        {
+          "id": "lm-cn-jinmao-tower",
+          "name": {
+            "zh": "金茂大厦",
+            "ru": [
+              "Цзинь Мао"
+            ],
+            "gloss": "Цзинь Мао — соседний небоскрёб высотой 420,5 м."
+          },
+          "sources": [
+            {
+              "title": "侬欢喜上海伐 — 上海市人民政府新闻办公室 (источник: 人民日报, текст о 2025 годе)",
+              "url": "https://en.shio.gov.cn/TrueCMS/shxwbgs/wxdtt/content/e3fad178-4821-4ba3-a7c4-c96fb91b8e99.htm",
+              "quote": "金茂大厦\n\n高420.5米",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 10 / o3; original: web_open; relevant text read in batch 6"
+            },
+            {
+              "title": "Jinmao Tower — SOM, architect of the project",
+              "url": "https://www.som.com/projects/jin-mao-tower/",
+              "quote": "Location Shanghai, China\n\nThe 420-meter-high Jin Mao Tower was China’s tallest building at the time of its completion and today remains its most iconic.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-text-read; direct-open-403"
+            }
+          ]
+        },
+        {
+          "id": "added-ping-an-finance-centre",
+          "name": {
+            "zh": "平安金融中心",
+            "ru": [
+              "Финансовый центр Пинъань"
+            ],
+            "gloss": "Финансовый центр Пинъань — небоскрёб в Шэньчжэне высотой около 600 м."
+          },
+          "sources": [
+            {
+              "title": "Ping An Finance Centre — KPF, архитектор проекта",
+              "url": "https://www.kpf.com/project/ping-an-finance-centre/",
+              "quote": "Ping An is the physical and iconic center of Shenzhen’s growing central business district. … 600 m / 1,969 ft",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 10 / added-ping-an-finance-centre; original: web_search_result; full relevant indexed project text read in batch 6; direct open did not finish"
+            },
+            {
+              "title": "营商观察丨深圳福田金融业增速领跑 解码“千亿集群”增长逻辑 — 福田政府在线",
+              "url": "https://www.szft.gov.cn/ftxx/xwdt/bmgzdt/content/post_12186244.html",
+              "quote": "从香蜜湖驱车向东，朝着福田繁华的CBD进发，作为深圳知名地标的平安金融中心599米的大楼显得格外醒目。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-text-read"
+            }
+          ]
+        }
+      ]
+    },
+    "wallmeasurements": {
+      "columns": {
+        "name": "zh",
+        "surveyedlength2012": "zh",
+        "description": "ru"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "wall-count-40196",
+          "name": {
+            "zh": "40 196"
+          },
+          "surveyedlength2012": {
+            "zh": "40 196",
+            "gloss": "40 196 км — на 19 000 км больше результата общего учёта"
+          },
+          "description": "Счётное значение для арифметического сравнения с опубликованным округлённым итогом; не отдельная историческая оценка длины стены.",
+          "sources": [
+            {
+              "title": "世界文化遗产——长城 — 中央人民政府驻香港联络办公室",
+              "url": "https://www.locpg.gov.cn/tp/2014-01/04/c_125957087.htm",
+              "quote": "２０１２年６月５日，国家文物局在居庸关长城发布长城资源调查和认定成果：历代长城总长度为２１１９６．１８千米，包括长城墙体、壕堑、单体建筑、关堡和相关设施等长城遗产４３７２１处。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 18 keySources; original: Страница открыта web.run 2026-11-08, строка 6; это официальная перепечатка сообщения об объявлении результатов 2012 г., не новая оценка 2014 г.; contextual arithmetic comparison 40196 = 21196 + 19000; not a separate historical measurement"
+            },
+            {
+              "title": "长城 — 北京市文物局",
+              "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738088/1742735/364326/index.html",
+              "quote": "墙壕遗存总长度21196.18千米。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 18 keySources; original: Свежий результат web.run прочитан 2026-11-08; цитата сверена с доступным извлечением.; contextual arithmetic comparison 40196 = 21196 + 19000; not a separate historical measurement"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "wall-count-11196",
+          "name": {
+            "zh": "11 196"
+          },
+          "surveyedlength2012": {
+            "zh": "11 196",
+            "gloss": "11 196 км — на 10 000 км меньше результата общего учёта"
+          },
+          "description": "Счётное значение для арифметического сравнения с опубликованным округлённым итогом; не отдельная историческая оценка длины стены.",
+          "sources": [
+            {
+              "title": "世界文化遗产——长城 — 中央人民政府驻香港联络办公室",
+              "url": "https://www.locpg.gov.cn/tp/2014-01/04/c_125957087.htm",
+              "quote": "２０１２年６月５日，国家文物局在居庸关长城发布长城资源调查和认定成果：历代长城总长度为２１１９６．１８千米，包括长城墙体、壕堑、单体建筑、关堡和相关设施等长城遗产４３７２１处。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 18 keySources; original: Страница открыта web.run 2026-11-08, строка 6; это официальная перепечатка сообщения об объявлении результатов 2012 г., не новая оценка 2014 г.; contextual arithmetic comparison 11196 = 21196 − 10000; not a separate historical measurement"
+            },
+            {
+              "title": "长城 — 北京市文物局",
+              "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738088/1742735/364326/index.html",
+              "quote": "墙壕遗存总长度21196.18千米。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 18 keySources; original: Свежий результат web.run прочитан 2026-11-08; цитата сверена с доступным извлечением.; contextual arithmetic comparison 11196 = 21196 − 10000; not a separate historical measurement"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "preview-ming-wall-length",
+          "name": {
+            "zh": "8 852"
+          },
+          "surveyedlength2012": {
+            "zh": "8 852",
+            "gloss": "8 852 км — округлённая длина Минской стены с естественными преградами"
+          },
+          "description": "Округлённый до целых километров результат отдельного обследования Минской стены 2009 года: 8851,8 км. Включает искусственные стены, рвы и естественные преграды. Это не сумма учтённых стен разных эпох из результатов 2012 года.",
+          "sources": [
+            {
+              "title": "基于遥感的明长城立体量测 — 陈军等, Chinese Science Bulletin 55(16), 2010",
+              "url": "https://www.sciengine.com/doi/10.1360/csb2010-55-16-1613",
+              "quote": "明长城总长度为8851.8 km, 其中人工墙体为6259.6 km, 天然段2232.5 km, 壕堑359.7 km.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 18 option preview-ming-wall-length; original: Первичная статья авторов Национального центра географической информации и Китайского института культурного наследия; аннотация и авторство прочитаны в полном результате поиска web.run 2026-11-08. Отдельный open дал 403; свежая загрузка полной страницы не заявляется."
+            },
+            {
+              "title": "王志珍副主席出席明长城长度数据发布仪式 — 九三学社中央委员会社会服务部",
+              "url": "https://www.93.gov.cn/xwjc-snyw/216754.html",
+              "quote": "此次公布的测量结果为，明长城总长度为8851.8千米，其中人工墙体长度为6259.6千米，壕堑和天然险长度为2592.2千米。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-event-report-page-opened-and-text-read 2026-11-08; department participation in 2009 official measurement announcement, lines 85–90"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "wall-survey-2012",
+          "name": {
+            "zh": "长城",
+            "ru": [
+              "Великая Китайская стена",
+              "Великая стена"
+            ],
+            "ref": "landmarks/fortifications/lm-cn-great-wall"
+          },
+          "surveyedlength2012": {
+            "zh": "21 196",
+            "gloss": "21 196 км — в учёт разных эпох входят стены и рвы"
+          },
+          "description": "Результат обследования и учёта сохранившихся стен и рвов разных исторических эпох, опубликованный в 2012 году: 21 196,18 км. Это не длина одной непрерывной кладки и не сумма всех когда-либо строившихся, в том числе полностью утраченных, сооружений.",
+          "sources": [
+            {
+              "title": "世界文化遗产——长城 — 中央人民政府驻香港联络办公室",
+              "url": "https://www.locpg.gov.cn/tp/2014-01/04/c_125957087.htm",
+              "quote": "２０１２年６月５日，国家文物局在居庸关长城发布长城资源调查和认定成果：历代长城总长度为２１１９６．１８千米，包括长城墙体、壕堑、单体建筑、关堡和相关设施等长城遗产４３７２１处。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 18 keySources; original: Страница открыта web.run 2026-11-08, строка 6; это официальная перепечатка сообщения об объявлении результатов 2012 г., не новая оценка 2014 г."
+            },
+            {
+              "title": "长城 — 北京市文物局",
+              "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738088/1742735/364326/index.html",
+              "quote": "墙壕遗存总长度21196.18千米。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 18 keySources; original: Свежий результат web.run прочитан 2026-11-08; цитата сверена с доступным извлечением."
+            }
+          ],
+          "core": false,
+          "olympiad": [
+            "2024-25-mun-volog-1"
+          ]
         }
       ]
     }

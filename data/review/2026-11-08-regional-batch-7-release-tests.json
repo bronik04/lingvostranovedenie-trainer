@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-08",
+  "status": "passed",
+  "python": {
+    "command": "python3 -m unittest discover -s test -t .",
+    "tests": 494,
+    "failed": 0,
+    "skipped": 0,
+    "logSha256": "015419232b602e31e6851aacdcb642aedd26eab29cc7f4d649e8d426a15458a6"
+  },
+  "node": {
+    "command": "node --test test/*.test.mjs",
+    "tests": 172,
+    "passed": 172,
+    "failed": 0,
+    "skipped": 0,
+    "logSha256": "c50a61391a812cc7e5194588d5c418df3b71d4aefb33e5dd2e72edd54a1e67e1"
+  },
+  "browser": {
+    "cards": 368,
+    "options": 1472,
+    "releaseQuestions": 46,
+    "viewports": [
+      375,
+      1280
+    ],
+    "pinyin": [
+      false,
+      true
+    ],
+    "answers": [
+      "correct",
+      "incorrect"
+    ],
+    "errors": []
+  },
+  "htmlSha256": "59ef5a0648cabbb88f7d42ed049a809345d69e7f3e25e0a9d298317f6b3eba9a",
+  "knownStandaloneSourceFormFindings": [
+    "literature/literature-q66: текст называет ответ вопроса literature/literature-q114: ['诗歌']",
+    "nature/nature-q140: текст называет ответ вопроса modern-china/modern-china-q26: ['黄金']"
+  ],
+  "finalBankHintErrors": 0,
+  "testDataAdjustments": {
+    "test/test_site_bank.py": "Принятый вопрос о мяо теперь явно разрешён; проверяются все окончательные hiddenQuestions.",
+    "test/test_merges.py": "Четыре точные пары дополнительно требуют общей factGroup; именной whitelist групп не расширен.",
+    "test/ui.test.mjs": "Независимое Intl.PluralRules ожидание родительного окончания для нового количества вопросов."
+  }
+}

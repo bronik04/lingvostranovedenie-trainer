@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-08",
+  "status": "passed",
+  "python": {
+    "command": "python3 -m unittest discover -s test -t .",
+    "tests": 494,
+    "failed": 0,
+    "logSha256": "55864a3d1a90c1e9a0794173fc1dce875dd20310883d7e91d12cb546609b73fe"
+  },
+  "node": {
+    "command": "node --test test/*.test.mjs",
+    "tests": 172,
+    "failed": 0,
+    "skipped": 0,
+    "logSha256": "eee9ee47ba2716364e10cb90d6d487183ecd2e90cfd541280d1df30eef306b03"
+  },
+  "browserCards": 152,
+  "browserOptions": 608,
+  "publicationAuthorized": false
+}

@@ -1,0 +1,3112 @@
+{
+  "culture": {
+    "columnAdditions": [
+      {
+        "dossier": "cuisine",
+        "table": "cuisines",
+        "column": "regionalname",
+        "kind": "zh"
+      },
+      {
+        "dossier": "sets",
+        "table": "plants",
+        "column": "flowerlabel",
+        "kind": "zh"
+      },
+      {
+        "dossier": "painting",
+        "table": "terms",
+        "column": "studymaterial",
+        "kind": "zh"
+      },
+      {
+        "dossier": "literature",
+        "table": "works",
+        "column": "quotationbook",
+        "kind": "zh"
+      }
+    ],
+    "tableAdditions": [
+      {
+        "dossier": "dynasties",
+        "table": "states",
+        "definition": {
+          "columns": {
+            "name": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "performers",
+        "definition": {
+          "columns": {
+            "name": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "pairs",
+        "definition": {
+          "columns": {
+            "name": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      }
+    ],
+    "rowAdditions": [
+      {
+        "dossier": "cuisine",
+        "table": "cuisines",
+        "row": {
+          "id": "preview-guangdong-cuisine",
+          "name": {
+            "zh": "广东菜",
+            "ru": [
+              "Гуандунская кухня"
+            ],
+            "gloss": "Гуандунская кухня — включает гуанчжоускую, чаочжоускую и хакка"
+          },
+          "regionalname": {
+            "zh": "广东菜",
+            "ru": [
+              "Гуандунская кухня"
+            ],
+            "gloss": "Гуандунская кухня — включает гуанчжоускую, чаочжоускую и хакка"
+          },
+          "sources": [
+            {
+              "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+              "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml",
+              "quote": "粤菜即广东菜，由广府菜（即广州府菜）、潮州菜（也称潮汕菜）、东江菜（也称客家菜）三种地方风味组成，三者各具特色。在烹调上，粤菜以炒、爆为主，兼有烩、煎、烤，讲究清而不淡、鲜而不俗、嫩而不生、油而不腻。 代表年夜饭有：盆菜、白切鸡",
+              "authority": "official",
+              "checkedAt": "2026-10-22",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#1/options/preview-guangdong-cuisine; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Переиспользована принятая цитата досье cuisine/cs-yue, прочитанная локально 2026-11-08; дата checkedAt — прежняя проверка, страницу заново не загружали."
+            },
+            {
+              "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+              "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
+              "quote": "比较著名的是中国的“八大菜系”，鲁菜（山东）、川菜（四川）、粤菜（广东）、苏菜（江苏）、闽菜（福建）、浙菜（浙江）、湘菜（湖南）、徽菜（安徽）。",
+              "authority": "official",
+              "checkedAt": "2026-10-22",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/cuisine.json/cuisines/cs-yue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "味道中国之粤菜 — 央视网",
+              "url": "https://tv.cctv.com/yskd/special/yc/index.shtml",
+              "quote": "粤菜用料广博、选料珍奇、配料精巧，烹饪时注重质和味，口味比较清淡，清中求鲜，淡中求美，鲜而不俗，嫩而不生，油而不腻。",
+              "authority": "official",
+              "checkedAt": "2026-10-22",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/cuisine.json/cuisines/cs-yue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "白切鸡 — 广州市人民政府门户网站",
+              "url": "https://www.gz.gov.cn/zlgz/gzly/msgz/tsmc/content/post_8313422.html",
+              "quote": "白切鸡是粤菜鸡肴中最普通的一种，属浸鸡类，以其制作简易，刚熟不烂，不加配料且保持原味为特点",
+              "authority": "official",
+              "checkedAt": "2026-10-22",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/cuisine.json/cuisines/cs-yue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "dynasties",
+        "table": "states",
+        "row": {
+          "id": "state-qin",
+          "name": {
+            "zh": "秦国",
+            "ru": [
+              "Цинь"
+            ],
+            "gloss": "Цинь — царство, уничтожившее шесть соперников и объединившее Китай"
+          },
+          "sources": [
+            {
+              "title": "大一统何以成为中国历史的深层底色 — 中国人民大学",
+              "url": "https://news.ruc.edu.cn/2055808566087000066.html",
+              "quote": "秦灭六国，是中国历史上最重要的事件之一。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#3/options/o1; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "古代中国：秦汉时期 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/portals/0/web/zt/gudai/detail4.html",
+              "quote": "兼并六国后，秦王嬴政自称“皇帝”，在全国范围内建立起专制主义中央集权制，推行郡县制，统一文字、货币和度量衡，开驰道、直道，筑长城，巩固国家的统一。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/dynasties.json/rulers/rul-qinshihuang; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "dynasties",
+        "table": "states",
+        "row": {
+          "id": "state-lu",
+          "name": {
+            "zh": "鲁国",
+            "ru": [
+              "Лу"
+            ],
+            "gloss": "Лу — царство со столицей в Цюйфу, основанное в начале Западной Чжоу"
+          },
+          "sources": [
+            {
+              "title": "历经风雨的周公封地：曲阜鲁国故城 — 国家发展和改革委员会",
+              "url": "https://www.ndrc.gov.cn/xwdt/ztzl/dyhgjwhgy/202209/t20220923_1336042.html",
+              "quote": "曲阜鲁国故城是周代鲁国的都城遗址…西周初年，周武王封周公姬旦于曲阜，为“鲁国”。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#3/options/o2; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "孔子 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/243277.html",
+              "quote": "孔子（公元前551年—前479年），名丘，字仲尼。春秋鲁国人，儒家之祖。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#3/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "dynasties",
+        "table": "states",
+        "row": {
+          "id": "state-wei",
+          "name": {
+            "zh": "卫国",
+            "ru": [
+              "Вэй"
+            ],
+            "gloss": "Вэй — царство Кан-шу; первоначальный центр находился в Чаогэ"
+          },
+          "sources": [
+            {
+              "title": "漫将斧钺观上古，封邦建国觅“康侯”——“康侯斧”题记 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_36458.shtml",
+              "quote": "康叔，在周公旦平定纣子武庚与管叔、蔡叔叛乱之后，封于殷都朝歌，为卫国之君。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#3/options/o3; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "康叔 — 鹤壁职业技术学院淇河文化研究中心",
+              "url": "https://qhwh.hbzy.edu.cn/info/1056/1200.htm",
+              "quote": "周公将原来的商（朝歌）、邶、鄘、卫四地，合成一个卫国，都城在朝歌，封其九弟康叔作为卫国的国君",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-web-open; полный текст официальной/академической страницы открыт 2026-11-08, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "dynasties",
+        "table": "states",
+        "row": {
+          "id": "preview-qi-state",
+          "name": {
+            "zh": "齐国",
+            "ru": [
+              "Ци"
+            ],
+            "gloss": "Ци — древнее царство со столицей в Линьцзы"
+          },
+          "sources": [
+            {
+              "title": "临淄区农村公路“十四五”建设 — 淄博市人民政府",
+              "url": "https://www.zibo.gov.cn/resources/public/20220608/62a0439d88f66285a034d9bb.pdf",
+              "quote": "临淄是齐国故都、国家历史文化名城。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#3/options/preview-qi-state; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "济南市博物馆为您讲述文物背后的故事：春秋齐叔姬双耳铜盘 — 中国博物馆协会",
+              "url": "https://www.chinamuseum.org.cn/detail.html?contentId=185&id=14",
+              "quote": "齐国初封于营丘(今山东昌乐东南)，后迁至临淄(今山东省淄博市临淄区)，疆域最初只在今山东北部。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-web-search-indexed-excerpt; точная цитата прочитана в поисковом результате первичного музейного сайта 2026-11-08; open подтвердил заголовок и издателя, повторное открытие нижних строк завершилось TimeoutError"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "sets",
+        "table": "plants",
+        "row": {
+          "id": "preview-meihua",
+          "name": {
+            "zh": "梅花",
+            "ru": [
+              "Слива мэй"
+            ],
+            "gloss": "Слива мэй — её цветение на холоде стало поэтическим образом стойкости"
+          },
+          "flowerlabel": {
+            "zh": "梅花",
+            "ru": [
+              "Слива мэй"
+            ],
+            "gloss": "Слива мэй — её цветение на холоде стало поэтическим образом стойкости"
+          },
+          "sources": [
+            {
+              "title": "下一站：嘉禾望岗——南京南，梅花山！ — 南京市中山陵园管理局",
+              "url": "https://zschina.nanjing.gov.cn/lyzx/202602/t20260209_5789677.html",
+              "quote": "小寒首番花信的梅花，携着 “凌寒独自开” 的孤雅风骨，在立春时节渐次盛放。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#5/options/preview-meihua; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "松竹梅与中国文化风骨 — 人民网",
+              "url": "http://culture.people.com.cn/n1/2018/1003/c1013-30324909.html",
+              "quote": "松、竹、梅被称为“岁寒三友”，梅、兰、竹、菊，被称为“四君子”，已是尽人皆知的常识。",
+              "authority": "official",
+              "checkedAt": "2026-10-25",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/sets.json/plants/pl-mei; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "为何“三友”“四君子”中都有竹？ — 人民网（广州日报）",
+              "url": "http://art.people.com.cn/n1/2017/0906/c226026-29518237.html",
+              "quote": "而同时被列入“三友”和“四君子”的植物，唯有竹和梅",
+              "authority": "official",
+              "checkedAt": "2026-10-25",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/sets.json/plants/pl-mei; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "翰苑流韵——“效法先贤 任重道远”系列之十七：花中君子 — 中国社会科学院经济研究所（中国社会科学网）",
+              "url": "http://iea.cssn.cn/xzzl/yjmb/hyly/201505/t20150526_3968313.shtml",
+              "quote": "梅花是我国传统名花之一，位居“四君子”之首。又与松、竹并称“岁寒三友”。",
+              "authority": "academic",
+              "checkedAt": "2026-10-25",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/sets.json/plants/pl-mei; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "performers",
+        "row": {
+          "id": "performer-chengyanqiu",
+          "name": {
+            "zh": "程砚秋",
+            "ru": [
+              "Чэн Яньцю"
+            ],
+            "gloss": "Чэн Яньцю — создатель школы Чэн, исполнитель женских ролей цинъи"
+          },
+          "sources": [
+            {
+              "title": "程砚秋 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/240675.html",
+              "quote": "京剧演员，工青衣。 … 创立了“程派”青衣",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#7/options/o1; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: fresh-primary-museum-indexed-article-text; full-page open timed out"
+            },
+            {
+              "title": "程(砚秋)派 — 国家京剧院",
+              "url": "https://www.cnpoc.cn/cnpoc/gjkt/200807/9f8b977cc22e47819b393ce1835e5a7c.shtml",
+              "quote": "青衣流派，创始人为程砚秋。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-web-open; полный текст официальной/академической страницы открыт 2026-11-08, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "performers",
+        "row": {
+          "id": "performer-meilanfang",
+          "name": {
+            "zh": "梅兰芳",
+            "ru": [
+              "Мэй Ланьфан"
+            ],
+            "gloss": "Мэй Ланьфан — возглавлял гастрольную труппу из 24 человек"
+          },
+          "sources": [
+            {
+              "title": "梅兰芳率团出访苏联 — 人民网党史频道",
+              "url": "https://dangshi.people.com.cn/n1/2016/0428/c85037-28312114.html",
+              "quote": "由梅兰芳任团长 … 共24人",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#7/options/o2; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: fresh-official-history-article-indexed-text; archival narrative"
+            },
+            {
+              "title": "西城文萃 — 北京市西城区政府",
+              "url": "https://www.bjxch.gov.cn/f/140912/48078.pdf",
+              "quote": "1935年由海路绕道至海参崴达莫斯科，此行结识了斯坦尼斯拉夫斯基",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#7/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: fresh-primary-municipal-cultural-history-PDF-indexed-text"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "performers",
+        "row": {
+          "id": "performer-majinfeng",
+          "name": {
+            "zh": "马金凤",
+            "ru": [
+              "Ма Цзиньфэн"
+            ],
+            "gloss": "Ма Цзиньфэн — актриса хэнаньской оперы юйцзюй, родилась в 1922 году"
+          },
+          "sources": [
+            {
+              "title": "豫剧—马金凤 — 中国国家图书馆非遗传承人记录工作",
+              "url": "https://ich.nlc.cn/detail/1851",
+              "quote": "马金凤，1922年出生 … 豫剧代表性传承人",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#7/options/o3; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: fresh-primary-National-Library-biography-page; line 14"
+            },
+            {
+              "title": "一代名伶 百年帅旦 — 海南日报",
+              "url": "https://news.hndaily.cn/h5/html5/2022-06/06/content_58487_14897757.htm",
+              "quote": "马金凤，原姓崔，小名金妮，1922年生于山东曹县。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-web-open; полный текст официальной/академической страницы открыт 2026-11-08, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "performers",
+        "row": {
+          "id": "performer-shangxiaoyun",
+          "name": {
+            "zh": "尚小云",
+            "ru": [
+              "Шан Сяоюнь"
+            ],
+            "gloss": "Шан Сяоюнь — создатель школы Шан, исполнитель женских ролей"
+          },
+          "sources": [
+            {
+              "title": "尚小云 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/240677.html",
+              "quote": "京剧演员，工旦角。 … 形成了“尚派”艺术。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#7/options/o4; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: fresh-primary-museum-indexed-article-text; full-page open timed out"
+            },
+            {
+              "title": "尚(小云)派 — 国家京剧院",
+              "url": "https://www.cnpoc.cn/cnpoc/gjkt/200807/9dc47e8aa50c483c8008e9d7ce8b8e49.shtml",
+              "quote": "旦角流派。创始人为尚小云。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-web-open; полный текст официальной/академической страницы открыт 2026-11-08, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "painting",
+        "table": "terms",
+        "row": {
+          "id": "art-t-jia",
+          "name": {
+            "zh": "架",
+            "ru": [
+              "Подставка"
+            ],
+            "gloss": "Подставка — например, подставка для кистей, на которую их кладут во время письма"
+          },
+          "studymaterial": {
+            "zh": "架",
+            "ru": [
+              "Подставка"
+            ],
+            "gloss": "Подставка — например, подставка для кистей, на которую их кладут во время письма"
+          },
+          "sources": [
+            {
+              "title": "笔之属 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/subject_study/write.html?click_id=1008176",
+              "quote": "笔架，为古代文人书案常备用具之一，又称笔格、笔床、笔山，是为放置毛笔之用。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#8/options/o4; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: fresh-primary-museum-indexed-text read by root and full page read by independent reviewer; excerpt corrected to text actually present on page"
+            },
+            {
+              "title": "文房用品 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/collection/studies.html",
+              "quote": "以笔、墨、纸、砚为文房所使用，而被人们誉为“文房四宝”。…文房用具除四宝以外，还有笔筒、笔架、墨床、墨盒、臂搁、笔洗、书镇、水丞、水勺、砚滴、砚匣、印泥、印盒、裁刀、图章、卷筒等物品，称为文房清供。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#8/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "literature",
+        "table": "works",
+        "row": {
+          "id": "preview-zhongyong",
+          "name": {
+            "zh": "中庸"
+          },
+          "quotationbook": {
+            "zh": "《中庸》",
+            "ru": [
+              "«Учение о середине»"
+            ],
+            "gloss": "«Учение о середине» — бывшая глава «Ли цзи» о внутренней гармонии человека"
+          },
+          "sources": [
+            {
+              "title": "宋儒《中庸》学的学术渊源与思想发展 — 北京大学学报",
+              "url": "https://ccj.pku.edu.cn/article/info?aid=239606140",
+              "quote": "《中庸》是《礼记》中的一篇,属于《五经》体系的传记之学,主要是通论礼之本在人性情之“中和”。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#10/options/preview-zhongyong; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "四书 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/241555.html?hl=%E4%B9%A6",
+              "quote": "《大学》、《中庸》摘自《礼记》。",
+              "authority": "official",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/literature.json/works/lit-w-daxue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            },
+            {
+              "title": "《四書五經大全輯刊》 — 中南大学图书馆",
+              "url": "https://lib.csu.edu.cn/info/2917/4489.htm",
+              "quote": "四书指的是《大学》《中庸》《论语》《孟子》，五经指《诗经》《尚书》《礼记》《易经》《春秋》。",
+              "authority": "academic",
+              "checkedAt": "2026-11-07",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/literature.json/works/lit-w-daxue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: primary-web-search-indexed-excerpt; прочитан точный индексированный фрагмент первичного сайта; отдельное полное открытие не выполнялось"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "pairs",
+        "row": {
+          "id": "pair-houyi-change",
+          "name": {
+            "zh": "后羿与嫦娥",
+            "ru": [
+              "Хоу И и Чанъэ"
+            ],
+            "gloss": "Хоу И и Чанъэ — по мифу, жена стрелка улетела на Луну"
+          },
+          "sources": [
+            {
+              "title": "嫦娥奔月、吴刚伐桂、唐王游月宫……那些中秋节的美丽传说 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/news_1_details/9811.html",
+              "quote": "其核心内容是，射日英雄后羿的妻子嫦娥，食用了其夫从西王母处得来的不死药后，飞落到月亮上，并留居在那里无法返回。",
+              "authority": "official",
+              "checkedAt": "2026-10-15",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#16/options/o1; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Переиспользована принятая цитата досье myths/fig-change, прочитанная локально 2026-11-08; дата checkedAt — прежняя проверка, страницу заново не загружали."
+            },
+            {
+              "title": "嫦娥奔月 — 中国探月与深空探测网（国家航天局探月与航天工程中心）",
+              "url": "http://www.clep.org.cn/n5982029/n5987536/c5987652/content.html",
+              "quote": "嫦娥吞下药，身子立时飘离地面、冲出窗口，向天上飞去。由于嫦娥牵挂着丈夫，便飞落到离人间最近的月亮上成了仙。",
+              "authority": "official",
+              "checkedAt": "2026-10-15",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/myths.json/stories/story-change-benyue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "中秋节（佛山秋色） — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/14933.html",
+              "quote": "唐代将中秋与嫦娥奔月、吴刚伐桂、玉兔捣药、杨贵妃变月神、唐明皇游月宫等神话故事结合起来",
+              "authority": "official",
+              "checkedAt": "2026-10-15",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/myths.json/stories/story-change-benyue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "关于中秋节的四个传说 — 人民网·文化",
+              "url": "http://culture.people.com.cn/n1/2016/0912/c407031-28709937-5.html",
+              "quote": "嫦娥，原名姮娥，她是神话人物后羿的妻子。到西汉时，为避汉文帝刘恒的讳，而改称“嫦娥”。嫦娥奔月有两种版本，均见于《淮南子》。一种版本是，嫦娥偷吃不老药奔月：“羿请不死药于西王母，未及服食之，姮娥盗食之，得仙，奔入月中为月精也”。",
+              "authority": "official",
+              "checkedAt": "2026-10-15",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/myths.json/stories/story-change-benyue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "pairs",
+        "row": {
+          "id": "pair-xi-peng",
+          "name": {
+            "zh": "习近平与彭丽媛",
+            "ru": [
+              "Си Цзиньпин и Пэн Лиюань"
+            ],
+            "gloss": "Си Цзиньпин и Пэн Лиюань — Пэн Лиюань известна как певица"
+          },
+          "sources": [
+            {
+              "title": "动人的歌声 真挚的情意 — 中华人民共和国外交部",
+              "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/fz_677316/1206_677342/1206x2_677362/200506/t20050605_8014023.shtml",
+              "quote": "著名歌唱家彭丽媛、阎维文、董文华、程志，优秀青年歌唱演员蔡国庆、谭晶、王丽达等登台献艺。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#16/options/o2; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "国家主席习近平夫人彭丽媛 — 中华人民共和国国防部",
+              "url": "https://www.mod.gov.cn/gfbw/qwfb/yw_214049/16482782.html",
+              "quote": "国家主席习近平夫人彭丽媛",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-manifest-authorRemarks: items#16 contains this official URL and exact quoted phrase; read locally 2026-11-08; new web.open attempted but returned TimeoutError, no fresh full-page verification claimed"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "pairs",
+        "row": {
+          "id": "pair-sanmao-jose",
+          "name": {
+            "zh": "三毛与荷西",
+            "ru": [
+              "Саньмао и Хосе"
+            ],
+            "gloss": "Саньмао и Хосе — их жизнь в пустыне описана в «Рассказах о Сахаре»"
+          },
+          "sources": [
+            {
+              "title": "撒哈拉的故事 — 对外经济贸易大学图书馆",
+              "url": "https://opac.lib.uibe.edu.cn/opac/book/c08bef569d59ab9da20dd90766f4fd3d",
+              "quote": "三毛在书中生动记叙了自己与荷西在沙漠里苦中作乐的婚姻生活。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#16/options/o3; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "三毛[女、台] — 中国作家网现代作家辞典",
+              "url": "https://www.chinawriter.com.cn/xdzj/331.shtml",
+              "quote": "远涉重洋奔赴撒哈拉沙漠。在那里与西班牙潜水师荷西结婚。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-web-open; полный текст официальной/академической страницы открыт 2026-11-08, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "pairs",
+        "row": {
+          "id": "pair-liangzhu",
+          "name": {
+            "zh": "梁山伯与祝英台",
+            "ru": [
+              "Лян Шаньбо и Чжу Интай"
+            ],
+            "gloss": "Лян Шаньбо и Чжу Интай — Чжу Интай училась с ним, переодевшись юношей",
+            "ref": "myths/stories/story-liangzhu"
+          },
+          "sources": [
+            {
+              "title": "山东非遗鉴赏——梁祝传说 从比翼鸟到化蝶 — 辽宁传媒学院",
+              "url": "https://www.lncu.edu.cn/szmtxy/24204.html",
+              "quote": "据传东晋时，祝英台女扮男装前往杭州（川剧为尼山）求学，路遇梁山伯，因志同道合而结为兄弟并同窗三载。后，祝英台归家，行前托媒师母许婚梁山伯。十八相送，祝英台以“妹”相许。梁山伯知情，往祝家求婚，此时，祝父公远已将女许婚马太守之子马文才。梁祝二人楼台相会，之后，梁山伯抱病归家，病亡。祝英台新婚之时，花轿绕道至梁山伯坟前祭奠，惊雷裂墓，英台入坟。梁祝化蝶双舞。",
+              "authority": "academic",
+              "checkedAt": "2026-10-15",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#16/options/o4; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Переиспользована принятая цитата досье myths/story-liangzhu, прочитанная локально 2026-11-08; дата checkedAt — прежняя проверка, страницу заново не загружали."
+            },
+            {
+              "title": "梁祝传说 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/12189.html",
+              "quote": "梁山伯与祝英台传说是我国四大民间传说之一，是中华文化的瑰宝。",
+              "authority": "official",
+              "checkedAt": "2026-10-15",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/myths.json/stories/story-liangzhu; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "梁山伯与祝英台谁是主角 — 光明网（文摘报）",
+              "url": "https://www.gmw.cn/01wzb/2009-09/10/content_978910.htm",
+              "quote": "代表着梁祝传说（以梁山伯为主角）的文献，是北宋宁波地区的地方官李茂诚的《义忠王庙记》；代表着祝梁传说（以祝英台为主角）的文献，则是晚唐张读的《宣室志》。 … 所幸的是，到了现代，祝梁传奇成为压倒性的叙述方式。",
+              "authority": "official",
+              "checkedAt": "2026-10-15",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/myths.json/stories/story-liangzhu; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "牛郎织女传说 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/12254.html",
+              "quote": "牛郎织女传说起源于先秦时期，是我国流传最广、影响最大的民间传说之一，同《孟姜女》、《梁山伯与祝英台》和《白蛇传》并称为“四大民间传说”。",
+              "authority": "official",
+              "checkedAt": "2026-10-24",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/myths.json/stories/story-liangzhu; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "吴林森：如何鉴赏《白蛇传》 — 江苏省社科联（江苏人文社会科学讲座）",
+              "url": "https://www.js-skl.org.cn/uploads/Files/2018-03/13/1-1520905114-742.pdf",
+              "quote": "中国的四大民间传说——《梁山伯与祝英台》、《白蛇传》、《牛郎织女》、《孟姜女》，是中国民间文化中最令人瞩目的部分",
+              "authority": "academic",
+              "checkedAt": "2026-10-24",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/myths.json/stories/story-liangzhu; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "周恩来给《梁祝》改名让外国记者看得如痴如醉 — 周恩来纪念网",
+              "url": "https://zhouenlai.people.com.cn/n1/2020/0601/c409117-31731177.html",
+              "quote": "他当即出了一个主意，只在请柬上写一句话：“请你欣赏一部彩色歌剧电影——中国的《罗密欧与朱丽叶》。”",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#16/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Полный текст поискового результата web.run прочитан 2026-11-08; отдельный open дал TimeoutError. Свежая загрузка полной страницы не заявляется."
+            }
+          ]
+        }
+      }
+    ],
+    "cellAdditions": [
+      {
+        "dossier": "cuisine",
+        "table": "cuisines",
+        "row": "cs-lu",
+        "column": "regionalname",
+        "cell": {
+          "zh": "山东菜",
+          "ru": [
+            "Шаньдунская кухня"
+          ],
+          "gloss": "Шаньдунская кухня — ценит солёно-свежий вкус и естественный вкус продуктов"
+        },
+        "sourcesToAppend": []
+      },
+      {
+        "dossier": "cuisine",
+        "table": "cuisines",
+        "row": "cs-zhe",
+        "column": "regionalname",
+        "cell": {
+          "zh": "浙江菜",
+          "ru": [
+            "Чжэцзянская кухня"
+          ],
+          "gloss": "Чжэцзянская кухня — среди её блюд креветки с чаем Лунцзин"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "Туристические ресурсы Китая: 中国旅游地理 — учебное пособие на сайте Шаньсийского университета",
+            "url": "https://ygx.sxu.edu.cn/db/%E5%9B%BE%E4%B9%A6/%E4%B8%AD%E5%9B%BD%E6%97%85%E6%B8%B8%E5%9C%B0%E7%90%868.pdf",
+            "quote": "浙菜是由杭州、宁波、绍兴三种地方风味发展而成的菜系。",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#1/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+          }
+        ]
+      },
+      {
+        "dossier": "cuisine",
+        "table": "cuisines",
+        "row": "cs-xiang",
+        "column": "regionalname",
+        "cell": {
+          "zh": "湖南菜",
+          "ru": [
+            "Хунаньская кухня"
+          ],
+          "gloss": "Хунаньская кухня — известна ароматной остротой и рыбьей головой под перцем"
+        },
+        "sourcesToAppend": []
+      },
+      {
+        "dossier": "sets",
+        "table": "plants",
+        "row": "pl-he",
+        "column": "flowerlabel",
+        "cell": {
+          "zh": "荷花",
+          "ru": [
+            "Лотос"
+          ],
+          "gloss": "Лотос — обычно цветёт летом; в Пекине указана пора цветения с июня по сентябрь"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "荷花 — 北京市园林绿化局",
+            "url": "https://yllhj.beijing.gov.cn/ztxx/bjhx/bzhz/201606/t20160629_758343.shtml",
+            "quote": "花期6-9月，单朵花期只3-4天，千瓣类能开10天以上。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#5/options/o1; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+          }
+        ]
+      },
+      {
+        "dossier": "sets",
+        "table": "plants",
+        "row": "pl-mudan",
+        "column": "flowerlabel",
+        "cell": {
+          "zh": "牡丹",
+          "ru": [
+            "Пион"
+          ],
+          "gloss": "Пион — традиционный символ богатства, благополучия и благородства"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "蛇年春日 牡丹花开 — 中国科学院华南植物园",
+            "url": "https://scbg.cas.cn/hx/202502/t20250216_7527842.html",
+            "quote": "牡丹花大、形美、色艳、香浓而为世人所称颂，自古以来都是富贵吉祥、高贵优雅、国色天香的象征。",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#5/options/o2; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+          },
+          {
+            "title": "国色天香话牡丹 — 国家林业和草原局",
+            "url": "https://www.forestry.gov.cn/c/www/dzw/365301.jhtml",
+            "quote": "牡丹就此落下不畏权势、英勇不屈的美名，再加上其雍容华贵、玉笑珠香的容颜，当之无愧地成为中国“花中之王”。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#5/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+          }
+        ]
+      },
+      {
+        "dossier": "sets",
+        "table": "plants",
+        "row": "pl-ju",
+        "column": "flowerlabel",
+        "cell": {
+          "zh": "菊花",
+          "ru": [
+            "Хризантема"
+          ],
+          "gloss": "Хризантема — осенний цветок, уподобляемый отшельнику"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "秋菊 — 故宫博物院",
+            "url": "https://www.dpm.org.cn/lemmas/240408.html",
+            "quote": "菊花开于草木衰微的秋天，傲视风霜，犹如隐逸者，故又名“节花”，与梅、兰、竹并誉为“四君子”。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#5/options/o3; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+          }
+        ]
+      },
+      {
+        "dossier": "painting",
+        "table": "terms",
+        "row": "art-t-xuanzhi",
+        "column": "studymaterial",
+        "cell": {
+          "zh": "纸",
+          "ru": [
+            "Бумага"
+          ],
+          "gloss": "Бумага — знаменитую сюаньчжи делают из коры цинтаня и рисовой соломы"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "文房用品 — 故宫博物院",
+            "url": "https://www.dpm.org.cn/collection/studies.html",
+            "quote": "以笔、墨、纸、砚为文房所使用，而被人们誉为“文房四宝”。…文房用具除四宝以外，还有笔筒、笔架、墨床、墨盒、臂搁、笔洗、书镇、水丞、水勺、砚滴、砚匣、印泥、印盒、裁刀、图章、卷筒等物品，称为文房清供。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#8/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+          }
+        ]
+      },
+      {
+        "dossier": "painting",
+        "table": "terms",
+        "row": "art-t-huimo",
+        "column": "studymaterial",
+        "cell": {
+          "zh": "墨",
+          "ru": [
+            "Тушь"
+          ],
+          "gloss": "Тушь — для туши хуэй используют, в частности, сосновую сажу"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "文房用品 — 故宫博物院",
+            "url": "https://www.dpm.org.cn/collection/studies.html",
+            "quote": "以笔、墨、纸、砚为文房所使用，而被人们誉为“文房四宝”。…文房用具除四宝以外，还有笔筒、笔架、墨床、墨盒、臂搁、笔洗、书镇、水丞、水勺、砚滴、砚匣、印泥、印盒、裁刀、图章、卷筒等物品，称为文房清供。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#8/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+          }
+        ]
+      },
+      {
+        "dossier": "painting",
+        "table": "terms",
+        "row": "art-t-duanyan",
+        "column": "studymaterial",
+        "cell": {
+          "zh": "砚",
+          "ru": [
+            "Тушечница"
+          ],
+          "gloss": "Тушечница — дуаньские тушечницы режут из камня дуаньси"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "文房用品 — 故宫博物院",
+            "url": "https://www.dpm.org.cn/collection/studies.html",
+            "quote": "以笔、墨、纸、砚为文房所使用，而被人们誉为“文房四宝”。…文房用具除四宝以外，还有笔筒、笔架、墨床、墨盒、臂搁、笔洗、书镇、水丞、水勺、砚滴、砚匣、印泥、印盒、裁刀、图章、卷筒等物品，称为文房清供。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#8/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+          }
+        ]
+      },
+      {
+        "dossier": "literature",
+        "table": "works",
+        "row": "lit-w-daxue",
+        "column": "quotationbook",
+        "cell": {
+          "zh": "《大学》",
+          "ru": [
+            "«Великое учение»"
+          ],
+          "gloss": "«Великое учение» — конфуцианский текст о воспитании взрослого человека"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "《大学》的作者、文本争论与思想诠释 — 陈来, 东岳论丛",
+            "url": "https://dylc.cbpt.cnki.net/portal/journal/portal/client/paper/a5ce763a97556b0a86ddae661e808416",
+            "quote": "《大学》并非仅仅讲博学,它是适合于成人的一个教育文献。",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#10/options/o1; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+          }
+        ]
+      },
+      {
+        "dossier": "literature",
+        "table": "works",
+        "row": "lit-w-mengzi",
+        "column": "quotationbook",
+        "cell": {
+          "zh": "《孟子》",
+          "ru": [
+            "«Мэн-цзы»"
+          ],
+          "gloss": "«Мэн-цзы» — книга бесед и высказываний продолжателя учения Конфуция"
+        },
+        "sourcesToAppend": []
+      },
+      {
+        "dossier": "literature",
+        "table": "works",
+        "row": "lit-w-lunyu",
+        "column": "quotationbook",
+        "cell": {
+          "zh": "《论语》",
+          "ru": [
+            "«Лунь юй»"
+          ],
+          "gloss": "«Лунь юй» — далее советуют перенимать хорошее и исправлять свои недостатки"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "爱廉说 | 三人行，必得我师 — Центральная комиссия по проверке дисциплины, перепечатка на официальном сайте Кайфэна",
+            "url": "https://www.kflz.gov.cn/sitesources/nysjwjw/page_pc/xcjd/wh/articleb58988813df5480f8c2721722c2058bd.html",
+            "quote": "“三人行，必有我师焉。”这是《论语·述而》里的名句，原话是：“子曰：三人行，必有我师焉。择其善者而从之，其不善者而改之。”",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#10/options/o3; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+          },
+          {
+            "title": "中華經典名句推廣資源配套 — Hong Kong Education Bureau",
+            "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/resources/primary/lang/New%20Teachers%20Induction%202023.pdf",
+            "quote": "上面的經典名句，出自《論語·述而篇》，是孔子對學生闡述修養改進的說話。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#10/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+          }
+        ]
+      }
+    ],
+    "identityRefs": [],
+    "questions": [
+      {
+        "reviewNumber": 1,
+        "dossier": "cuisine",
+        "table": "cuisines",
+        "row": "cs-zhe",
+        "ask": "regionalname",
+        "optionRows": {
+          "o1": "cs-lu",
+          "o2": "cs-zhe",
+          "o3": "cs-xiang",
+          "preview-guangdong-cuisine": "preview-guangdong-cuisine"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 3,
+        "dossier": "dynasties",
+        "table": "states",
+        "row": "state-lu",
+        "ask": "name",
+        "optionRows": {
+          "o1": "state-qin",
+          "o2": "state-lu",
+          "o3": "state-wei",
+          "preview-qi-state": "preview-qi-state"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 5,
+        "dossier": "sets",
+        "table": "plants",
+        "row": "pl-mudan",
+        "ask": "flowerlabel",
+        "optionRows": {
+          "o1": "pl-he",
+          "o2": "pl-mudan",
+          "o3": "pl-ju",
+          "preview-meihua": "preview-meihua"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 7,
+        "dossier": "people",
+        "table": "performers",
+        "row": "performer-meilanfang",
+        "ask": "name",
+        "optionRows": {
+          "o1": "performer-chengyanqiu",
+          "o2": "performer-meilanfang",
+          "o3": "performer-majinfeng",
+          "o4": "performer-shangxiaoyun"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 8,
+        "dossier": "painting",
+        "table": "terms",
+        "row": "art-t-jia",
+        "ask": "studymaterial",
+        "optionRows": {
+          "o1": "art-t-xuanzhi",
+          "o2": "art-t-huimo",
+          "o3": "art-t-duanyan",
+          "o4": "art-t-jia"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 10,
+        "dossier": "literature",
+        "table": "works",
+        "row": "lit-w-lunyu",
+        "ask": "quotationbook",
+        "optionRows": {
+          "o1": "lit-w-daxue",
+          "o2": "lit-w-mengzi",
+          "o3": "lit-w-lunyu",
+          "preview-zhongyong": "preview-zhongyong"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 16,
+        "dossier": "people",
+        "table": "pairs",
+        "row": "pair-liangzhu",
+        "ask": "name",
+        "optionRows": {
+          "o1": "pair-houyi-change",
+          "o2": "pair-xi-peng",
+          "o3": "pair-sanmao-jose",
+          "o4": "pair-liangzhu"
+        },
+        "exclude": []
+      }
+    ],
+    "captionCorrections": [],
+    "contentProblems": [
+      {
+        "reviewNumber": 8,
+        "id": "2019-20-mun-khab-8",
+        "type": "embed-explanation-names-distractors",
+        "problem": "Исходное пояснение перечисляет 纸、墨、砚 — все три являются неверными вариантами этого отрицательного вопроса; embed_record запрещает называть дистракторы в пояснении.",
+        "requiredEditorialChange": "Перед принятием embeds добавить или объединить editorial.explanation.ru; условие, ключ и принятые подписи не менять.",
+        "proposedExplanationRu": "Подставки, в том числе подставка для кистей, относятся к дополнительным принадлежностям рабочего кабинета и не входят в канонический набор «четырёх драгоценностей».",
+        "sources": [
+          {
+            "title": "文房用品 — 故宫博物院",
+            "url": "https://www.dpm.org.cn/collection/studies.html",
+            "quote": "以笔、墨、纸、砚为文房所使用，而被人们誉为“文房四宝”。…文房用具除四宝以外，还有笔筒、笔架、墨床、墨盒、臂搁、笔洗、书镇、水丞、水勺、砚滴、砚匣、印泥、印盒、裁刀、图章、卷筒等物品，称为文房清供。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#8/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+          }
+        ],
+        "memoryValidation": "Ниже embed_record проверяется с этой предлагаемой редакцией пояснения; без неё возвращает ошибку о 纸、墨、砚."
+      }
+    ],
+    "manualHintCandidates": []
+  },
+  "geo": {
+    "columnAdditions": [
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "column": "historicagecity",
+        "kind": "zh"
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "column": "leninbirthcity",
+        "kind": "zh"
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "column": "fareastcity",
+        "kind": "zh"
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "column": "russianportcity",
+        "kind": "zh"
+      },
+      {
+        "dossier": "nature",
+        "table": "engineering",
+        "column": "ancientbridgename",
+        "kind": "zh"
+      }
+    ],
+    "tableAdditions": [
+      {
+        "dossier": "people",
+        "table": "anthemfigures",
+        "definition": {
+          "columns": {
+            "name": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "heightvalues",
+        "definition": {
+          "columns": {
+            "name": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      }
+    ],
+    "rowAdditions": [
+      {
+        "dossier": "people",
+        "table": "anthemfigures",
+        "row": {
+          "id": "anthem-ru-glinka",
+          "name": {
+            "zh": "米哈伊尔 · 格林卡",
+            "ru": [
+              "Михаил Глинка"
+            ],
+            "gloss": "Михаил Глинка — его «Патриотическую песню» утвердили гимном в 1990 году"
+          },
+          "sources": [
+            {
+              "title": "12 июня: к истории праздника и «Патриотической песни» Михаила Глинки — Российский национальный музей музыки",
+              "url": "https://music-museum.ru/about/news/12-iyunya-k-istorii-prazdnika-i-patrioticheskoj-pesni-mixaila-glinki.html",
+              "quote": "в 1990 году оно было утверждено в качестве Государственного гимна Российской Федерации.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №2, o1, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-museum-indexed-article-text"
+            },
+            {
+              "title": "米哈伊尔·伊万诺维奇·格林卡 — 俄罗斯国情网（中国社会科学院俄罗斯东欧中亚研究所）",
+              "url": "http://euroasia.cssn.cn/elsgqw/elswy/elsyy/elsyy_egyyj/201004/t20100426_1890986.shtml",
+              "quote": "格林卡是俄罗斯民族音乐真正的奠基人，被尊称为“俄罗斯音乐之父” … 他的两部歌剧《伊凡·苏萨宁》和《鲁斯兰与柳德米拉》不仅是俄罗斯歌剧宝库中的珍品",
+              "checkedAt": "2026-10-24",
+              "authority": "academic",
+              "verificationMethod": "Переиспользована принятая цитата досье people/composers/cmp-ru-glinka, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье"
+            },
+            {
+              "title": "文汇报｜贝文力：民族乐派与斯拉夫作曲家 — 华东师范大学",
+              "url": "https://www.ecnu.edu.cn/info/1095/4972.htm",
+              "quote": "歌剧《伊万·苏萨宁》在彼得堡首演。 … 格林卡以此开启了俄罗斯音乐时期。",
+              "checkedAt": "2026-10-24",
+              "authority": "academic",
+              "verificationMethod": "Переиспользована принятая цитата досье people/composers/cmp-ru-glinka, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "anthemfigures",
+        "row": {
+          "id": "anthem-ru-alexandrov",
+          "name": {
+            "zh": "亚历山大 · 亚历山德罗夫",
+            "ru": [
+              "Александр Александров"
+            ],
+            "gloss": "Александр Александров — также написал музыку песни «Священная война»"
+          },
+          "sources": [
+            {
+              "title": "Священная война: нотное издание; Российская государственная библиотека / НЭБ",
+              "url": "https://kp.rusneb.ru/item/material/svyashennaya-vojna-vstavaj-strana-ogromnaya-dlya-trehgolosnogo-hora-bez-soprovozhdeniya-slova-v-lebedeva-kumacha-muzyka-a-v-aleksandrova",
+              "quote": "Слова В. Лебедева-Кумача; Музыка А. В. Александрова",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №2, o2, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-library-catalogue; author and title inspected"
+            },
+            {
+              "title": "День России: электронная выставка Президентской библиотеки, с. 22",
+              "url": "https://www.prlib.ru/sites/default/files/u535/den_rossii_k_30_letiyu_prinyatiya_deklaracii_o_gosudarstvennom_suverenitete_rossii.pdf",
+              "quote": "Автором музыки Государственного гимна РФ является А. В. Александров, автором текста - С. В. Михалков.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №2, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-pdf-text; page 22 (zero-based 21), lines 646–647"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "anthemfigures",
+        "row": {
+          "id": "anthem-ru-mikhalkov",
+          "name": {
+            "zh": "谢尔盖 · 米哈尔科夫",
+            "ru": [
+              "Сергей Михалков"
+            ],
+            "gloss": "Сергей Михалков — автор слов современного гимна России"
+          },
+          "sources": [
+            {
+              "title": "День России: электронная выставка Президентской библиотеки, с. 22",
+              "url": "https://www.prlib.ru/sites/default/files/u535/den_rossii_k_30_letiyu_prinyatiya_deklaracii_o_gosudarstvennom_suverenitete_rossii.pdf",
+              "quote": "автором текста - С. В. Михалков.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №2, o3, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-pdf-text; page 22 (zero-based 21), lines 646–647"
+            },
+            {
+              "title": "Поэзия Победы: Сергей Михалков — Южный федеральный университет",
+              "url": "https://sfedu.ru/press-center/news/77264",
+              "quote": "Наконец, в 2001 году поэт в третий раз стал автором текста государственного гимна, теперь уже Российской Федерации, этот гимн мы исполняем до сих пор.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Свежий полный поисковый фрагмент первичного официального/академического сайта прочитан через web.run 2026-11-08; цитата сверена с ним, прямое открытие страницы не заявляется."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "anthemfigures",
+        "row": {
+          "id": "anthem-ru-tchaikovsky",
+          "name": {
+            "zh": "彼得 · 柴可夫斯基",
+            "ru": [
+              "Пётр Чайковский"
+            ],
+            "gloss": "Пётр Чайковский — автор балета «Лебединое озеро»"
+          },
+          "sources": [
+            {
+              "title": "Афиша Мариинского театра, октябрь 2026",
+              "url": "https://site.mariinsky.ru/ru/playbill/playbill/?month=10&year=2026",
+              "quote": "Лебединое озеро\nбалет Петра Чайковского",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №2, o4, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-official-theatre-indexed-programme"
+            },
+            {
+              "title": "彼得·柴科夫斯基 — 俄罗斯国情网（中国社会科学院俄罗斯东欧中亚研究所）",
+              "url": "http://euroasia.cssn.cn/elsgqw/egrw/egrw_ysj/201004/t20100426_1852921.shtml",
+              "quote": "19世纪俄国最著名的作曲家，俄罗斯民族音乐与西欧古典音乐的集大成者 … 芭蕾舞剧《天鹅湖》、《胡桃夹子》、《睡美人》 … 歌剧《叶甫根尼.奥涅金》、《黑桃皇后》 … 主要有6部交响乐、10部歌剧、3部芭蕾舞剧",
+              "checkedAt": "2026-10-24",
+              "authority": "academic",
+              "verificationMethod": "Переиспользована принятая цитата досье people/composers/cmp-ru-tchaikovsky, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье"
+            },
+            {
+              "title": "芭蕾舞剧《天鹅湖》— 俄罗斯国情网（中国社会科学院俄罗斯东欧中亚研究所）",
+              "url": "http://euroasia.cssn.cn/elsgqw/elswy/elsbl/elsbl_bljpxs/201004/t20100426_1890943.shtml",
+              "quote": "《天鹅湖》是柴可夫斯基1876年开始创作的。",
+              "checkedAt": "2026-10-24",
+              "authority": "academic",
+              "verificationMethod": "Переиспользована принятая цитата досье people/composers/cmp-ru-tchaikovsky, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": {
+          "id": "city-ru-yaroslavl",
+          "name": {
+            "zh": "雅罗斯拉夫尔",
+            "ru": [
+              "Ярославль"
+            ],
+            "gloss": "Ярославль — у слияния Волги и Которосли; исторический центр в списке ЮНЕСКО"
+          },
+          "historicagecity": {
+            "zh": "雅罗斯拉夫尔",
+            "ru": [
+              "Ярославль"
+            ],
+            "gloss": "Ярославль — у слияния Волги и Которосли; исторический центр в списке ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "Исторический центр Ярославля — Центр всемирного наследия ЮНЕСКО",
+              "url": "https://whc.unesco.org/ru/list/1170",
+              "quote": "Situated at the confluence of the Volga and Kotorosl Rivers",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №9, o2, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-UNESCO-property-page; title and inscription status also inspected"
+            },
+            {
+              "title": "Городской округ город Ярославль — Совет муниципальных образований Ярославской области",
+              "url": "https://smo.yarregion.ru/index.php/munitsipalnye-obrazovaniya/gorodskoj-okrug-gorod-yaroslavl",
+              "quote": "Город основан в 1010 году.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №9, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-official-indexed-excerpt; direct-page request timed out, not represented as successful full fetch"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": {
+          "id": "city-ru-sergiev-posad",
+          "name": {
+            "zh": "谢尔吉耶夫波萨德",
+            "ru": [
+              "Сергиев Посад"
+            ],
+            "gloss": "Сергиев Посад — учреждён указом Екатерины II в 1782 году"
+          },
+          "historicagecity": {
+            "zh": "谢尔吉耶夫波萨德",
+            "ru": [
+              "Сергиев Посад"
+            ],
+            "gloss": "Сергиев Посад — учреждён указом Екатерины II в 1782 году"
+          },
+          "sources": [
+            {
+              "title": "Лаврская летопись. XVIII век — Свято-Троицкая Сергиева лавра",
+              "url": "https://lavra.ru/history/xviii-vek/",
+              "quote": "1782 г.\n22 марта – императрицей Екатериной II был подписан указ об учреждении Сергиева Посада.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №9, o3, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-institutional-history-page; XVIII-century timeline"
+            },
+            {
+              "title": "Подписание Екатериной II указа об учреждении Сергиевского посада — Свято-Троицкая Сергиева лавра",
+              "url": "https://lavra.ru/history/facts/all/podpisanie-ekaterinoy-ii-ukaza-ob-uchrezhdenii-sergievskogo-posada",
+              "quote": "22 марта (2 апреля н. ст.) 1782 года императрица Екатерина II подписала указ, одним из пунктов которого повелевалось учредить из сел и слобод близ Троице-Сергиевой Лавры лежащих, «посад под имянем Сергиевской и в нем ратушу...».",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Свежий полный поисковый фрагмент первичного официального/академического сайта прочитан через web.run 2026-11-08; цитата сверена с ним, прямое открытие страницы не заявляется."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": {
+          "id": "city-ru-ulyanovsk",
+          "name": {
+            "zh": "乌里扬诺夫斯克",
+            "ru": [
+              "Ульяновск"
+            ],
+            "gloss": "Ульяновск — прежнее название Симбирск; переименован в 1924 году"
+          },
+          "leninbirthcity": {
+            "zh": "乌里扬诺夫斯克",
+            "ru": [
+              "Ульяновск"
+            ],
+            "gloss": "Ульяновск — прежнее название Симбирск; переименован в 1924 году"
+          },
+          "sources": [
+            {
+              "title": "История города — Ульяновская городская дума",
+              "url": "https://www.ugd.ru/o-gorode/istoriya-goroda.php",
+              "quote": "В 1924 город переименован в Ульяновск.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №13, o4, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-municipal-history-page"
+            },
+            {
+              "title": "Предисловие к выставке «Ленин» — Федеральное архивное агентство",
+              "url": "https://lenin.rusarchives.ru/predislovie",
+              "quote": "Ленин (настоящая фамилия Ульянов) родился 10 (22 по новому стилю) апреля 1870 года в г. Симбирске (ныне Ульяновск)",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №13, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-archive-exhibition-indexed-article-text"
+            },
+            {
+              "title": "Лю Яньдун в Ленинском мемориале: красный туризм и гуманитарные связи — МИД КНР / посольство",
+              "url": "https://gq.china-embassy.gov.cn/chn/zxxx/201409/t20140916_5722450.htm",
+              "quote": "乌里扬诺夫斯克是列宁的故乡，是很多中国人向往的地方。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №13, keySources[1], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-official-embassy-indexed-article-text; 2014-09-16"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": {
+          "id": "city-ru-khabarovsk",
+          "name": {
+            "zh": "哈巴罗夫斯克",
+            "ru": [
+              "Хабаровск"
+            ],
+            "gloss": "Хабаровск — основан в 1858 году как военный пост на Амуре"
+          },
+          "fareastcity": {
+            "zh": "哈巴罗夫斯克",
+            "ru": [
+              "Хабаровск"
+            ],
+            "gloss": "Хабаровск — основан в 1858 году как военный пост на Амуре"
+          },
+          "sources": [
+            {
+              "title": "С Днём города! — Уполномоченный по правам человека в Хабаровском крае",
+              "url": "https://pravo.khv.ru/node/1268",
+              "quote": "Пост был основан 31 мая 1858 года — эта дата считается датой основания Хабаровска.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №19, o3, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-official-indexed-article-text; adjoining text dates founding to 31 May 1858"
+            },
+            {
+              "title": "Открытие пассажирского перехода Фуюань — Хабаровск в 2026 году — Правительство города Фуюань",
+              "url": "https://www.hljfy.gov.cn/fys/c101350/202605/c04_299831.shtml",
+              "quote": "与俄罗斯远东中心城市哈巴罗夫斯克隔江相望",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №19, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-municipal-government-indexed-article-text"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": {
+          "id": "city-ru-murmansk",
+          "name": {
+            "zh": "摩尔曼斯克",
+            "ru": [
+              "Мурманск"
+            ],
+            "gloss": "Мурманск — на северо-востоке Кольского полуострова, у Кольского залива"
+          },
+          "fareastcity": {
+            "zh": "摩尔曼斯克",
+            "ru": [
+              "Мурманск"
+            ],
+            "gloss": "Мурманск — на северо-востоке Кольского полуострова, у Кольского залива"
+          },
+          "sources": [
+            {
+              "title": "云游城市——摩尔曼斯克 — 大连外国语大学俄语学院",
+              "url": "https://ru.dlufl.edu.cn/info/1037/1349.htm",
+              "quote": "位于科拉半岛东北，临巴伦支海的科拉湾",
+              "authority": "academic",
+              "checkedAt": "2026-10-18",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №19, o4, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: reused-accepted-dossier-source-not-freshly-fetched; data/dossiers/nature.json / seas / sea-ru-kola / sources[1]"
+            },
+            {
+              "title": "Мурманская область: муниципальные образования — Министерство экономического развития Мурманской области",
+              "url": "https://minec.gov-murman.ru/documents/arkhiv/murman_region_munitsypals.pdf",
+              "quote": "Расположение: северная часть Кольского полуострова, вдоль восточного берега Кольского залива, в 50 км от выхода в Баренцево море.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Свежий полный поисковый фрагмент первичного официального/академического сайта прочитан через web.run 2026-11-08; цитата сверена с ним, прямое открытие страницы не заявляется."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": {
+          "id": "city-dalian",
+          "name": {
+            "zh": "大连",
+            "ru": [
+              "Далянь"
+            ],
+            "gloss": "Далянь — в российский период город носил название Дальний"
+          },
+          "russianportcity": {
+            "zh": "大连",
+            "ru": [
+              "Далянь"
+            ],
+            "gloss": "Далянь — в российский период город носил название Дальний"
+          },
+          "sources": [
+            {
+              "title": "1896–1904: аренда Люйда и формирование города-порта Далянь — Даляньский музей",
+              "url": "https://www.dlmodernmuseum.com/exhibition/detail/38.html",
+              "quote": "“达里尼”（Дальний，意为远方）",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №20, o2, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-municipal-museum-exhibition-page; line 30"
+            },
+            {
+              "title": "中华人民共和国大连出入境边防检查站 — 国家移民管理局",
+              "url": "https://www.nia.gov.cn/n741435/n907688/n932720/n1008173/n1008190/n1008539/c1011456/content.html",
+              "quote": "大连市地处辽东半岛南端，黄渤海交界处的黄金海岸线上，是中国北方著名的海滨城市和旅游胜地，同时也是我国重要的对外贸易口岸之一",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Свежий полный поисковый фрагмент первичного официального/академического сайта прочитан через web.run 2026-11-08; цитата сверена с ним, прямое открытие страницы не заявляется."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "engineering",
+        "row": {
+          "id": "eng-humen",
+          "name": {
+            "zh": "虎门大桥",
+            "ru": [
+              "Хумэнь"
+            ],
+            "gloss": "Хумэнь — автомобильный мост, открытый для пробного движения в 1997 году"
+          },
+          "ancientbridgename": {
+            "zh": "虎门大桥",
+            "ru": [
+              "Хумэнь"
+            ],
+            "gloss": "Хумэнь — автомобильный мост, открытый для пробного движения в 1997 году"
+          },
+          "sources": [
+            {
+              "title": "1997年5月1日 虎门大桥通车 — 盐田档案与史志信息网",
+              "url": "https://www.yantian.gov.cn/ytdayszxxw/lsjt/content/post_11736982.html",
+              "quote": "在鸦片战争古战场上崛起的目前广东规模最大的桥梁——虎门大桥，1997年5月1日上午10时试通车。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №12, o1, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "虎门大桥 — 南方网/东莞市交通运输局",
+              "url": "https://gdxk.southcn.com/dg/zdgcxmzl/content/post_751554.html",
+              "quote": "于1997年5月1 日建成试通车，6月9日通过交工验收。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Свежий полный поисковый фрагмент первичного официального/академического сайта прочитан через web.run 2026-11-08; цитата сверена с ним, прямое открытие страницы не заявляется."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "engineering",
+        "row": {
+          "id": "eng-jinmen-label",
+          "name": {
+            "zh": "金门大桥",
+            "ru": [
+              "«Золотые Ворота» / Цзиньмэнь"
+            ],
+            "gloss": "«Золотые Ворота» / Цзиньмэнь — два современных моста: в США и у островов Цзиньмэнь"
+          },
+          "ancientbridgename": {
+            "zh": "金门大桥",
+            "ru": [
+              "«Золотые Ворота» / Цзиньмэнь"
+            ],
+            "gloss": "«Золотые Ворота» / Цзиньмэнь — два современных моста: в США и у островов Цзиньмэнь"
+          },
+          "sources": [
+            {
+              "title": "The Golden Gate Bridge: Spanning the Strait for Seventy-Five Years — SFO Museum",
+              "url": "https://www.sfomuseum.org/exhibitions/golden-gate-bridge-spanning-strait-seventy-five-years",
+              "quote": "The Bridge opened to the public on May 27,1937… links the city of San Francisco to Marin County.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №12, o3, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: Полный поисковый фрагмент официального музея аэропорта Сан-Франциско прочитан 2026-11-08; местоположение и год открытия сверены. Дата отдельно подтверждена сайтом Golden Gate Bridge District."
+            },
+            {
+              "title": "金門大橋 — 金門觀光旅遊網",
+              "url": "https://www.kinmen.travel/zh-tw/discover/kinmen-bridge",
+              "quote": "金門大橋為一座深水域的跨海大橋，連接大小金門，總長度為5.41公里，於2022年10月完工通車",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №12, o3/additionalIdentityEvidence, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-page-opened-and-text-read by root; line14"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "engineering",
+        "row": {
+          "id": "preview-lugouqiao",
+          "name": {
+            "zh": "卢沟桥",
+            "ru": [
+              "Лугоу"
+            ],
+            "gloss": "Лугоу — каменный арочный мост под Пекином, завершённый в 1192 году"
+          },
+          "ancientbridgename": {
+            "zh": "卢沟桥",
+            "ru": [
+              "Лугоу"
+            ],
+            "gloss": "Лугоу — каменный арочный мост под Пекином, завершённый в 1192 году"
+          },
+          "sources": [
+            {
+              "title": "Lugou Bridge — Fengtai District People’s Government of Beijing Municipality",
+              "url": "https://www.bjft.gov.cn/ftq/Visiting/202111/b5f0c53ed6264a799edd5d26b597c046.shtml",
+              "quote": "The construction of the original bridge on this site commenced in the Dading 29 of Jin Dynasty (1189) and ended in the Mingchang 3 of Emperor Zhangzong of Jin (1192).",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №12, preview-lugouqiao, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "史话卢沟桥 — 丰台时报（北京市丰台区政府）",
+              "url": "https://www.bjft.gov.cn/fengtaibao/html/2023-03/03/content_9505_15862436.htm",
+              "quote": "卢沟桥这座北京地区年代最久的大型联拱石桥，始建于金大定二十九年（1189），明昌三年（1192）三月竣工",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Свежий полный поисковый фрагмент первичного официального/академического сайта прочитан через web.run 2026-11-08; цитата сверена с ним, прямое открытие страницы не заявляется."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "heightvalues",
+        "row": {
+          "id": "height-elbrus-6542",
+          "name": {
+            "zh": "六千五百四十二米",
+            "ru": [
+              "6542 м"
+            ],
+            "gloss": "6542 м — на 900 м больше принятой высоты Эльбруса"
+          },
+          "sources": [
+            {
+              "title": "В честь юбилея РГО Фёдор Конюхов поднялся на Эльбрус — Русское географическое общество",
+              "url": "https://rgo.ru/activity/redaction/articles/v-chest-yubileya-rgo-fyedor-konyukhov-podnyalsya-na-elbrus/",
+              "quote": "Западную вершину Эльбруса — 5642 м.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №17, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-RGO-indexed-article-text Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            },
+            {
+              "title": "欧洲地理概况 — 中国经济网",
+              "url": "http://www.ce.cn/ztpd/hqly/ouzhou/dili/t20031205_237321.btk",
+              "quote": "海拔5642米，为欧洲最高峰",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "Переиспользована принятая цитата досье nature/mountains/mtn-ru-elbrus, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "heightvalues",
+        "row": {
+          "id": "height-elbrus-5642",
+          "name": {
+            "zh": "五千六百四十二米",
+            "ru": [
+              "5642 м"
+            ],
+            "gloss": "5642 м — западная вершина; восточная ниже: 5621 м"
+          },
+          "sources": [
+            {
+              "title": "В честь юбилея РГО Фёдор Конюхов поднялся на Эльбрус — Русское географическое общество",
+              "url": "https://rgo.ru/activity/redaction/articles/v-chest-yubileya-rgo-fyedor-konyukhov-podnyalsya-na-elbrus/",
+              "quote": "Западную вершину Эльбруса — 5642 м.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №17, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-RGO-indexed-article-text Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            },
+            {
+              "title": "欧洲地理概况 — 中国经济网",
+              "url": "http://www.ce.cn/ztpd/hqly/ouzhou/dili/t20031205_237321.btk",
+              "quote": "海拔5642米，为欧洲最高峰",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "Переиспользована принятая цитата досье nature/mountains/mtn-ru-elbrus, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "heightvalues",
+        "row": {
+          "id": "height-elbrus-8642",
+          "name": {
+            "zh": "八千六百四十二米",
+            "ru": [
+              "8642 м"
+            ],
+            "gloss": "8642 м — на 3000 м больше принятой высоты Эльбруса"
+          },
+          "sources": [
+            {
+              "title": "В честь юбилея РГО Фёдор Конюхов поднялся на Эльбрус — Русское географическое общество",
+              "url": "https://rgo.ru/activity/redaction/articles/v-chest-yubileya-rgo-fyedor-konyukhov-podnyalsya-na-elbrus/",
+              "quote": "Западную вершину Эльбруса — 5642 м.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №17, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-RGO-indexed-article-text Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            },
+            {
+              "title": "欧洲地理概况 — 中国经济网",
+              "url": "http://www.ce.cn/ztpd/hqly/ouzhou/dili/t20031205_237321.btk",
+              "quote": "海拔5642米，为欧洲最高峰",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "Переиспользована принятая цитата досье nature/mountains/mtn-ru-elbrus, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "heightvalues",
+        "row": {
+          "id": "height-elbrus-4562",
+          "name": {
+            "zh": "四千五百六十二米",
+            "ru": [
+              "4562 м"
+            ],
+            "gloss": "4562 м — на 1080 м меньше принятой высоты Эльбруса"
+          },
+          "sources": [
+            {
+              "title": "В честь юбилея РГО Фёдор Конюхов поднялся на Эльбрус — Русское географическое общество",
+              "url": "https://rgo.ru/activity/redaction/articles/v-chest-yubileya-rgo-fyedor-konyukhov-podnyalsya-na-elbrus/",
+              "quote": "Западную вершину Эльбруса — 5642 м.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №17, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-RGO-indexed-article-text Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            },
+            {
+              "title": "欧洲地理概况 — 中国经济网",
+              "url": "http://www.ce.cn/ztpd/hqly/ouzhou/dili/t20031205_237321.btk",
+              "quote": "海拔5642米，为欧洲最高峰",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "Переиспользована принятая цитата досье nature/mountains/mtn-ru-elbrus, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: проверка принятого досье Числовая строка — исходный вариант ответа, а не самостоятельный географический объект. Подпись сопоставлена с принятой высотой 5642 м; разность проверена арифметически."
+            }
+          ]
+        }
+      }
+    ],
+    "cellAdditions": [
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-ru-moscow",
+        "column": "historicagecity",
+        "cell": {
+          "zh": "莫斯科",
+          "ru": [
+            "Москва"
+          ],
+          "gloss": "Москва — летописная история города отсчитывается с 1147 года"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "Первое летописное упоминание о Москве — Президентская библиотека",
+            "url": "https://www.prlib.ru/history/1955256",
+            "quote": "Первое летописное упоминание о Москве\n4 апреля 1147",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "Переиспользована принятая цитата партии 7, №9, o1, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-library-indexed-article-text"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-ru-nizhny-novgorod",
+        "column": "historicagecity",
+        "cell": {
+          "zh": "下诺夫哥罗德",
+          "ru": [
+            "Нижний Новгород"
+          ],
+          "gloss": "Нижний Новгород — основан в 1221 году при слиянии Оки и Волги"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "下诺夫哥罗德州简介 — 中华人民共和国驻喀山总领事馆",
+            "url": "https://kazan.china-consulate.gov.cn/lqgk/202012/t20201202_3820610.htm",
+            "quote": "下诺夫哥罗德市（以下简称下诺市）建于1221年，位于伏尔加河与奥卡河交汇处，距离莫斯科418公里，人口120万（2024年），",
+            "authority": "official",
+            "checkedAt": "2026-10-17",
+            "verificationMethod": "Переиспользована принятая цитата партии 7, №9, o4, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: reused-accepted-dossier-source-not-freshly-fetched; data/dossiers/provinces.json / cities / city-ru-nizhny-novgorod / sources[0]"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-ru-moscow",
+        "column": "leninbirthcity",
+        "cell": {
+          "zh": "莫斯科",
+          "ru": [
+            "Москва"
+          ],
+          "gloss": "Москва — на Красной площади находится Мавзолей Ленина."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "Мавзолей В.И. Ленина — Культура.РФ",
+            "url": "https://www.culture.ru/institutes/13809/mavzolei-v-i-lenina",
+            "quote": "Мавзолей В.И. Ленина. Москва, Красная площадь",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "Переиспользована принятая цитата партии 7, №13, o1, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-official-culture-portal-indexed-full-article-text; direct open timed out"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-ru-saint-petersburg",
+        "column": "leninbirthcity",
+        "cell": {
+          "zh": "圣彼得堡",
+          "ru": [
+            "Санкт-Петербург"
+          ],
+          "gloss": "Санкт-Петербург — в Смольном показывают рабочий кабинет и квартиру Ленина."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "Экскурсии — музей «Смольный»",
+            "url": "https://smolny-museum.ru/tours_sm",
+            "quote": "увидят исторический Актовый зал, рабочий кабинет и квартиру главы Первого Советского правительства",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "Переиспользована принятая цитата партии 7, №13, o2, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-museum-indexed-page-text"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-ru-kazan",
+        "column": "leninbirthcity",
+        "cell": {
+          "zh": "喀山",
+          "ru": [
+            "Казань"
+          ],
+          "gloss": "Казань — Ленин учился на юридическом факультете университета в 1887 году."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "Круглый стол к 150-летию В.И. Ульянова-Ленина — Казанский федеральный университет",
+            "url": "https://media.kpfu.ru/node/87426",
+            "quote": "Будучи первокурсником юридического факультета, Владимир Ульянов … на студенческой сходке в декабре 1887 г.",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "Переиспользована принятая цитата партии 7, №13, o3, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-university-page-opened-and-text-read"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-ru-yekaterinburg",
+        "column": "fareastcity",
+        "cell": {
+          "zh": "叶卡捷琳堡",
+          "ru": [
+            "Екатеринбург"
+          ],
+          "gloss": "Екатеринбург — на восточном склоне Урала, на реке Исети"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "叶卡捷琳堡市简介 — 中华人民共和国驻叶卡捷琳堡总领馆",
+            "url": "https://ekaterinburg.china-consulate.gov.cn/lqgk/ykjlbsjj/202008/t20200814_4210662.htm",
+            "quote": "叶卡捷琳堡市坐落于乌拉尔山脉东麓、伊赛季河畔，距莫斯科1667公里。叶卡捷琳堡是斯维尔德洛夫斯克州首府，",
+            "authority": "official",
+            "checkedAt": "2026-10-17",
+            "verificationMethod": "Переиспользована принятая цитата партии 7, №19, o1, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: reused-accepted-dossier-source-not-freshly-fetched; data/dossiers/provinces.json / cities / city-ru-yekaterinburg / sources[0]"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-ru-moscow",
+        "column": "fareastcity",
+        "cell": {
+          "zh": "莫斯科",
+          "ru": [
+            "Москва"
+          ],
+          "gloss": "Москва — на Москве-реке, в средней части Восточно-Европейской равнины"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "莫斯科市简况 — 中华人民共和国驻俄罗斯大使馆",
+            "url": "https://ru.china-embassy.gov.cn/wlhz/lyjdjs_142844/msk_143119/202504/t20250430_11611402.htm",
+            "quote": "俄罗斯联邦首都，位于东欧平原中部，莫斯科河畔，是俄政治、经济、科技、文化中心和最大的交通枢纽。",
+            "authority": "official",
+            "checkedAt": "2026-10-17",
+            "verificationMethod": "Переиспользована принятая цитата партии 7, №19, o2, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: reused-accepted-dossier-source-not-freshly-fetched; data/dossiers/provinces.json / cities / city-ru-moscow / sources[0]"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-haerbin",
+        "column": "russianportcity",
+        "cell": {
+          "zh": "哈尔滨",
+          "ru": [
+            "Харбин"
+          ],
+          "gloss": "Харбин — в 1898 году сюда перенесли управление строительства КВЖД"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "一条铁路与一所大学的诞生 — Музей Харбинского политехнического университета",
+            "url": "https://museum.hit.edu.cn/2017/0620/c38a180284/page.htm",
+            "quote": "1898年，为便于直接领导整个中东铁路的建设工作，中东铁路工程局由海参崴迁至哈尔滨田家烧锅",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "Переиспользована принятая цитата партии 7, №20, o1, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-university-museum-indexed-article-text"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-shanghai",
+        "column": "russianportcity",
+        "cell": {
+          "zh": "上海",
+          "ru": [
+            "Шанхай"
+          ],
+          "gloss": "Шанхай — через город течёт Хуанпу, важный водный транспортный путь"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "上海概况 — 中国网·一带一路网",
+            "url": "http://ydyl.china.com.cn/2016-11/01/content_39613326.htm",
+            "quote": "上海河网大多属黄浦江水系，主要有黄浦江及其支流苏州河、川扬河、淀浦河等。黄浦江流经市区，终年不冻，是上海的水上交通要道。",
+            "authority": "official",
+            "checkedAt": "2026-10-17",
+            "verificationMethod": "Переиспользована принятая цитата партии 7, №20, o3, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: reused-accepted-dossier-source-not-freshly-fetched; data/dossiers/provinces.json / cities / city-shanghai / sources[0]"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-guangzhou",
+        "column": "russianportcity",
+        "cell": {
+          "zh": "广州",
+          "ru": [
+            "Гуанчжоу"
+          ],
+          "gloss": "Гуанчжоу — давний порт Морского шёлкового пути"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "2022开年城市一线观察丨千年商都 通联内外——“开放之城”广州2022开年观察 — 新华网",
+            "url": "http://www.news.cn/local/2022-01/17/c_1128271890.htm",
+            "quote": "这里自古就是海上丝绸之路的主要港湾、中国重要商业门户，号称“千年商都”。",
+            "authority": "official",
+            "checkedAt": "2026-10-17",
+            "verificationMethod": "Переиспользована принятая цитата партии 7, №20, o4, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: reused-accepted-dossier-source-not-freshly-fetched; data/dossiers/provinces.json / cities / city-guangzhou / sources[2]"
+          }
+        ]
+      },
+      {
+        "dossier": "nature",
+        "table": "engineering",
+        "row": "eng-zhaozhouqiao",
+        "column": "ancientbridgename",
+        "cell": {
+          "zh": "安济桥",
+          "ru": [
+            "Аньцзи (Чжаочжоу)"
+          ],
+          "gloss": "Аньцзи (Чжаочжоу) — мост эпохи Суй, построенный мастером Ли Чунем"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "赵州桥 — 赵县人民政府",
+            "url": "https://www.zhaoxian.gov.cn/columns/7558c04f-250e-4c72-a91c-425e1b5a8a17/202306/26/9c718990-9c93-471a-9e27-20c31de59149.html",
+            "quote": "赵州桥又名安济桥，当地俗称大石桥。建于隋开皇后期至大业初年(公元595年—605年)，距今已经1400多年历史，由隋朝匠师李春设计建造…赵州桥是世界现存年代最久、保存最好、科学水平极高、艺术形象极美的古代石拱桥。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "Переиспользована принятая цитата партии 7, №12, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: Страница открыта через web.run 2026-11-08; сверены строки 14–15."
+          },
+          {
+            "title": "安济桥石栏板 — 中国国家博物馆",
+            "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211112_252139.shtml",
+            "quote": "安济桥位于河北赵县，又名赵州桥、大石桥。它是世界上现存最早的一座敞肩石拱桥。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "Переиспользована принятая цитата партии 7, №12, keySources[1], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+          }
+        ]
+      }
+    ],
+    "identityRefs": [],
+    "questions": [
+      {
+        "reviewNumber": 2,
+        "dossier": "people",
+        "table": "anthemfigures",
+        "row": "anthem-ru-alexandrov",
+        "ask": "name",
+        "optionRows": {
+          "o1": "anthem-ru-glinka",
+          "o2": "anthem-ru-alexandrov",
+          "o3": "anthem-ru-mikhalkov",
+          "o4": "anthem-ru-tchaikovsky"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 9,
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-ru-yaroslavl",
+        "ask": "historicagecity",
+        "optionRows": {
+          "o1": "city-ru-moscow",
+          "o2": "city-ru-yaroslavl",
+          "o3": "city-ru-sergiev-posad",
+          "o4": "city-ru-nizhny-novgorod"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 12,
+        "dossier": "nature",
+        "table": "engineering",
+        "row": "eng-zhaozhouqiao",
+        "ask": "ancientbridgename",
+        "optionRows": {
+          "o1": "eng-humen",
+          "o2": "eng-zhaozhouqiao",
+          "o3": "eng-jinmen-label",
+          "preview-lugouqiao": "preview-lugouqiao"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 13,
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-ru-ulyanovsk",
+        "ask": "leninbirthcity",
+        "optionRows": {
+          "o1": "city-ru-moscow",
+          "o2": "city-ru-saint-petersburg",
+          "o3": "city-ru-kazan",
+          "o4": "city-ru-ulyanovsk"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 17,
+        "dossier": "nature",
+        "table": "heightvalues",
+        "row": "height-elbrus-5642",
+        "ask": "name",
+        "optionRows": {
+          "o1": "height-elbrus-6542",
+          "o2": "height-elbrus-5642",
+          "o3": "height-elbrus-8642",
+          "o4": "height-elbrus-4562"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 19,
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-ru-khabarovsk",
+        "ask": "fareastcity",
+        "optionRows": {
+          "o1": "city-ru-yekaterinburg",
+          "o2": "city-ru-moscow",
+          "o3": "city-ru-khabarovsk",
+          "o4": "city-ru-murmansk"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 20,
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-dalian",
+        "ask": "russianportcity",
+        "optionRows": {
+          "o1": "city-haerbin",
+          "o2": "city-dalian",
+          "o3": "city-shanghai",
+          "o4": "city-guangzhou"
+        },
+        "exclude": []
+      }
+    ],
+    "captionCorrections": [],
+    "contentProblems": [
+      {
+        "reviewNumber": 20,
+        "field": "originalRecord.explanation.ru",
+        "issue": "Старое пояснение связывает закладку порта и города Дальний с 1898 годом; это противоречит принятой автором формулировке о начале строительства в 1899 году. Принятые questionRu, ключ, zh и подписи не менять.",
+        "suggestedCorrection": "В 1898 году Россия арендовала территорию на юге Ляодунского полуострова. В 1899 году началось строительство торгового порта и города Дальний (达里尼) — современного Даляня (大连).",
+        "sources": [
+          "https://www.dlmodernmuseum.com/exhibition/detail/38.html"
+        ],
+        "affectsAcceptedQuestion": false
+      }
+    ],
+    "manualHintCandidates": [
+      {
+        "reviewNumber": 2,
+        "kind": "same-person-different-zh-context",
+        "row": "people/anthemfigures/anthem-ru-glinka",
+        "canonical": "people/composers/cmp-ru-glinka",
+        "reason": "Полное имя 米哈伊尔 · 格林卡 — исходный вариант; canonical name.zh 格林卡. Ref запрещён из-за несовпадения zh; сущность одна."
+      },
+      {
+        "reviewNumber": 2,
+        "kind": "same-person-different-zh-context",
+        "row": "people/anthemfigures/anthem-ru-tchaikovsky",
+        "canonical": "people/composers/cmp-ru-tchaikovsky",
+        "reason": "Полное имя 彼得 · 柴可夫斯基 — исходный вариант; canonical name.zh 柴可夫斯基. Ref запрещён из-за несовпадения zh; сущность одна."
+      },
+      {
+        "reviewNumber": 17,
+        "kind": "cross-table-same-fact",
+        "embeds": "2023-24-shk-mosobl-6",
+        "relatedQuestions": [
+          "nature-q161"
+        ],
+        "canonical": "nature/mountains/mtn-ru-elbrus",
+        "reason": "Числовая contextual row height-elbrus-5642 не создаёт mountain identity; вопрос явно называет Эльбрус и содержит подсказку к nature-q161. Рекомендуется проверить существующую/добавить общую fact-group."
+      },
+      {
+        "reviewNumber": 13,
+        "kind": "cross-dossier-related-row",
+        "embeds": "2024-25-mun-kem-9",
+        "canonical": "modern-history/figures/per-ru-lenin",
+        "reason": "Ульяновск (Симбирск) — место рождения Ленина в canonical строке; другие подписи №13 приняты как связи городов с Лениным. Нужна общая проверка утечек; не заменять подписи географическими."
+      }
+    ]
+  },
+  "numbers": {
+    "columnAdditions": [
+      {
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "column": "qingreignperiod",
+        "kind": "zh"
+      }
+    ],
+    "tableAdditions": [
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "definition": {
+          "columns": {
+            "name": "zh",
+            "officialtimecount": "zh",
+            "landneighborcount": "zh",
+            "provincialcount": "zh",
+            "about": "ru"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "holidays",
+        "table": "solarterms",
+        "definition": {
+          "columns": {
+            "name": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "landmarks",
+        "table": "wallmeasurements",
+        "definition": {
+          "columns": {
+            "name": "zh",
+            "surveyedlength2012": "zh",
+            "description": "ru"
+          },
+          "sides": [],
+          "rows": []
+        }
+      }
+    ],
+    "rowAdditions": [
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": {
+          "id": "geocount-china",
+          "name": {
+            "zh": "中国",
+            "ru": [
+              "Китай"
+            ]
+          },
+          "officialtimecount": {
+            "zh": "一",
+            "gloss": "Один — единое пекинское время, опережающее UTC на 8 часов"
+          },
+          "landneighborcount": {
+            "zh": "14",
+            "gloss": "14 — общая длина сухопутной границы Китая превышает 22 тысячи км"
+          },
+          "provincialcount": {
+            "zh": "34",
+            "gloss": "34 — из них пять автономных районов и два особых административных района"
+          },
+          "about": "Китай: единое официальное пекинское время UTC+8; 14 сухопутных соседей; 34 единицы провинциального уровня по официальной классификации КНР, включающей Тайвань. Материковый статистический охват отличается от официальной административной классификации.",
+          "sources": [
+            {
+              "title": "春分工程·科学百科｜北京时间是如何确定的？ — 中国科学院大学科协",
+              "url": "https://kexie.ucas.ac.cn/index.php/zh/cfgc/dtgz/311-2024-11-18-07-09-22",
+              "quote": "中华人民共和国全境采用的国家标准时",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-university-expert-page; expert Chen Jiang, National Time Service Center; lines 33 and 37"
+            },
+            {
+              "title": "«Китайское стандартное время» включено в терминологический стандарт — Государственное управление по регулированию рынка / Правительство КНР",
+              "url": "https://app.www.gov.cn/govdata/gov/202504/26/527808/article.html",
+              "quote": "超前协调世界时（UTC）8小时",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-regulator-announcement-indexed-article-text; 2025-04-26"
+            },
+            {
+              "title": "Заместитель директора Департамента границ и морских дел о границах КНР — МИД КНР",
+              "url": "https://www.mfa.gov.cn/web/ziliao_674904/zt_674979/dnzt_674981/qtzt/wjdjtwlft_675057/ftsl_675059/201302/t20130220_7953784.shtml",
+              "quote": "陆地边界长度达到22000多公里，有14个陆地邻国",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 11 keySources; original: fresh-primary-ministry-interview-page; official answer, not introductory reader question"
+            },
+            {
+              "title": "外交部条约法律司司长谈中国与邻国的划界工作 — 中国驻纽约总领事馆",
+              "url": "https://newyork.china-consulate.gov.cn/xw/200508/t20050831_4229589.htm",
+              "quote": "刘振民：中国同14个国家接壤，陆地边界总长22000多公里，",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-08; official interview, line 30; department director answer"
+            },
+            {
+              "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+              "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-government-page-indexed-text-read 2026-11-08; count, types and named special administrative regions"
+            },
+            {
+              "title": "中华人民共和国工业和信息化部公告2018年 第7号 — 工业和信息化部",
+              "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2020/art_e6ae132e19d541348f930d1dd6654f3d.html",
+              "quote": "设置“行政区域名”34个，适用于我国的各省、自治区、直辖市、特别行政区的组织，分别为：“BJ”北京市；“SH”上海市；“TJ”天津市；“CQ”重庆市；“HE”河北省；“SX”山西省；“NM”内蒙古自治区；“LN”辽宁省；“JL”吉林省；“HL”黑龙江省；“JS”江苏省；“ZJ”浙江省；“AH”安徽省；“FJ”福建省；“JX”江西省；“SD”山东省；“HA”河南省；“HB”湖北省；“HN”湖南省；“GD”广东省；“GX”广西壮族自治区；“HI”海南省；“SC”四川省；“GZ”贵州省；“YN”云南省；“XZ”西藏自治区；“SN”陕西省；“GS”甘肃省；“QH”青海省；“NX”宁夏回族自治区；“XJ”新疆维吾尔自治区；“TW”台湾省；“HK”香港特别行政区；“MO”澳门特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-ministry-announcement-indexed-text-read 2026-11-08; all 34 administrative labels including Taiwan, Hong Kong and Macao"
+            },
+            {
+              "title": "中华人民共和国2024年国民经济和社会发展统计公报 — 国家统计局",
+              "url": "https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html",
+              "quote": "各项统计数据均未包括香港特别行政区、澳门特别行政区和台湾省。 … 我国大陆31个省、自治区、直辖市",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 15 option preview-mainland-31; original: fresh-primary-statistical-bulletin-indexed-text; notes [1] and [5]"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": {
+          "id": "geocount-alternative-1",
+          "name": {
+            "zh": "八、10、23"
+          },
+          "officialtimecount": {
+            "zh": "八",
+            "gloss": "Восемь — смещение пекинского времени от UTC в часах, а не число поясов"
+          },
+          "landneighborcount": {
+            "zh": "10",
+            "gloss": "10 — на четыре меньше подтверждённого числа сухопутных соседей"
+          },
+          "provincialcount": {
+            "zh": "23",
+            "gloss": "23 — число провинций, одного из типов единиц провинциального уровня"
+          },
+          "about": "Отдельные контекстные значения счёта; строка не обозначает страну и не задаёт связь между тремя колонками. Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц.",
+          "sources": [
+            {
+              "title": "春分工程·科学百科｜北京时间是如何确定的？ — 中国科学院大学科协",
+              "url": "https://kexie.ucas.ac.cn/index.php/zh/cfgc/dtgz/311-2024-11-18-07-09-22",
+              "quote": "中华人民共和国全境采用的国家标准时",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-university-expert-page; expert Chen Jiang, National Time Service Center; lines 33 and 37; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            },
+            {
+              "title": "«Китайское стандартное время» включено в терминологический стандарт — Государственное управление по регулированию рынка / Правительство КНР",
+              "url": "https://app.www.gov.cn/govdata/gov/202504/26/527808/article.html",
+              "quote": "超前协调世界时（UTC）8小时",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-regulator-announcement-indexed-article-text; 2025-04-26; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            },
+            {
+              "title": "Заместитель директора Департамента границ и морских дел о границах КНР — МИД КНР",
+              "url": "https://www.mfa.gov.cn/web/ziliao_674904/zt_674979/dnzt_674981/qtzt/wjdjtwlft_675057/ftsl_675059/201302/t20130220_7953784.shtml",
+              "quote": "陆地边界长度达到22000多公里，有14个陆地邻国",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 11 keySources; original: fresh-primary-ministry-interview-page; official answer, not introductory reader question; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            },
+            {
+              "title": "外交部条约法律司司长谈中国与邻国的划界工作 — 中国驻纽约总领事馆",
+              "url": "https://newyork.china-consulate.gov.cn/xw/200508/t20050831_4229589.htm",
+              "quote": "刘振民：中国同14个国家接壤，陆地边界总长22000多公里，",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-08; official interview, line 30; department director answer; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            },
+            {
+              "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+              "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-government-page-indexed-text-read 2026-11-08; count, types and named special administrative regions; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            },
+            {
+              "title": "中华人民共和国工业和信息化部公告2018年 第7号 — 工业和信息化部",
+              "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2020/art_e6ae132e19d541348f930d1dd6654f3d.html",
+              "quote": "设置“行政区域名”34个，适用于我国的各省、自治区、直辖市、特别行政区的组织，分别为：“BJ”北京市；“SH”上海市；“TJ”天津市；“CQ”重庆市；“HE”河北省；“SX”山西省；“NM”内蒙古自治区；“LN”辽宁省；“JL”吉林省；“HL”黑龙江省；“JS”江苏省；“ZJ”浙江省；“AH”安徽省；“FJ”福建省；“JX”江西省；“SD”山东省；“HA”河南省；“HB”湖北省；“HN”湖南省；“GD”广东省；“GX”广西壮族自治区；“HI”海南省；“SC”四川省；“GZ”贵州省；“YN”云南省；“XZ”西藏自治区；“SN”陕西省；“GS”甘肃省；“QH”青海省；“NX”宁夏回族自治区；“XJ”新疆维吾尔自治区；“TW”台湾省；“HK”香港特别行政区；“MO”澳门特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-ministry-announcement-indexed-text-read 2026-11-08; all 34 administrative labels including Taiwan, Hong Kong and Macao; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            },
+            {
+              "title": "中华人民共和国2024年国民经济和社会发展统计公报 — 国家统计局",
+              "url": "https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html",
+              "quote": "各项统计数据均未包括香港特别行政区、澳门特别行政区和台湾省。 … 我国大陆31个省、自治区、直辖市",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 15 option preview-mainland-31; original: fresh-primary-statistical-bulletin-indexed-text; notes [1] and [5]; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": {
+          "id": "geocount-alternative-2",
+          "name": {
+            "zh": "三、17、32"
+          },
+          "officialtimecount": {
+            "zh": "三",
+            "gloss": "Три — на два больше числа официальных часовых поясов Китая"
+          },
+          "landneighborcount": {
+            "zh": "17",
+            "gloss": "17 — на три больше подтверждённого числа сухопутных соседей"
+          },
+          "provincialcount": {
+            "zh": "32",
+            "gloss": "32 — сумма без двух особых районов: Гонконга и Макао"
+          },
+          "about": "Отдельные контекстные значения счёта; строка не обозначает страну и не задаёт связь между тремя колонками. 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам.",
+          "sources": [
+            {
+              "title": "春分工程·科学百科｜北京时间是如何确定的？ — 中国科学院大学科协",
+              "url": "https://kexie.ucas.ac.cn/index.php/zh/cfgc/dtgz/311-2024-11-18-07-09-22",
+              "quote": "中华人民共和国全境采用的国家标准时",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-university-expert-page; expert Chen Jiang, National Time Service Center; lines 33 and 37; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            },
+            {
+              "title": "«Китайское стандартное время» включено в терминологический стандарт — Государственное управление по регулированию рынка / Правительство КНР",
+              "url": "https://app.www.gov.cn/govdata/gov/202504/26/527808/article.html",
+              "quote": "超前协调世界时（UTC）8小时",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-regulator-announcement-indexed-article-text; 2025-04-26; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            },
+            {
+              "title": "Заместитель директора Департамента границ и морских дел о границах КНР — МИД КНР",
+              "url": "https://www.mfa.gov.cn/web/ziliao_674904/zt_674979/dnzt_674981/qtzt/wjdjtwlft_675057/ftsl_675059/201302/t20130220_7953784.shtml",
+              "quote": "陆地边界长度达到22000多公里，有14个陆地邻国",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 11 keySources; original: fresh-primary-ministry-interview-page; official answer, not introductory reader question; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            },
+            {
+              "title": "外交部条约法律司司长谈中国与邻国的划界工作 — 中国驻纽约总领事馆",
+              "url": "https://newyork.china-consulate.gov.cn/xw/200508/t20050831_4229589.htm",
+              "quote": "刘振民：中国同14个国家接壤，陆地边界总长22000多公里，",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-08; official interview, line 30; department director answer; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            },
+            {
+              "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+              "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-government-page-indexed-text-read 2026-11-08; count, types and named special administrative regions; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            },
+            {
+              "title": "中华人民共和国工业和信息化部公告2018年 第7号 — 工业和信息化部",
+              "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2020/art_e6ae132e19d541348f930d1dd6654f3d.html",
+              "quote": "设置“行政区域名”34个，适用于我国的各省、自治区、直辖市、特别行政区的组织，分别为：“BJ”北京市；“SH”上海市；“TJ”天津市；“CQ”重庆市；“HE”河北省；“SX”山西省；“NM”内蒙古自治区；“LN”辽宁省；“JL”吉林省；“HL”黑龙江省；“JS”江苏省；“ZJ”浙江省；“AH”安徽省；“FJ”福建省；“JX”江西省；“SD”山东省；“HA”河南省；“HB”湖北省；“HN”湖南省；“GD”广东省；“GX”广西壮族自治区；“HI”海南省；“SC”四川省；“GZ”贵州省；“YN”云南省；“XZ”西藏自治区；“SN”陕西省；“GS”甘肃省；“QH”青海省；“NX”宁夏回族自治区；“XJ”新疆维吾尔自治区；“TW”台湾省；“HK”香港特别行政区；“MO”澳门特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-ministry-announcement-indexed-text-read 2026-11-08; all 34 administrative labels including Taiwan, Hong Kong and Macao; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            },
+            {
+              "title": "中华人民共和国2024年国民经济和社会发展统计公报 — 国家统计局",
+              "url": "https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html",
+              "quote": "各项统计数据均未包括香港特别行政区、澳门特别行政区和台湾省。 … 我国大陆31个省、自治区、直辖市",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 15 option preview-mainland-31; original: fresh-primary-statistical-bulletin-indexed-text; notes [1] and [5]; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": {
+          "id": "preview-mainland-31",
+          "name": {
+            "zh": "十一、19、31"
+          },
+          "officialtimecount": {
+            "zh": "十一",
+            "gloss": "Одиннадцать — на десять больше; Китай использует единое время"
+          },
+          "landneighborcount": {
+            "zh": "19",
+            "gloss": "19 — на пять больше подтверждённого числа сухопутных соседей"
+          },
+          "provincialcount": {
+            "zh": "31",
+            "gloss": "31 — материковые регионы; без Гонконга, Макао и Тайваня"
+          },
+          "about": "Отдельные контекстные значения счёта; строка не обозначает страну и не задаёт связь между тремя колонками. 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам.",
+          "sources": [
+            {
+              "title": "春分工程·科学百科｜北京时间是如何确定的？ — 中国科学院大学科协",
+              "url": "https://kexie.ucas.ac.cn/index.php/zh/cfgc/dtgz/311-2024-11-18-07-09-22",
+              "quote": "中华人民共和国全境采用的国家标准时",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-university-expert-page; expert Chen Jiang, National Time Service Center; lines 33 and 37; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            },
+            {
+              "title": "«Китайское стандартное время» включено в терминологический стандарт — Государственное управление по регулированию рынка / Правительство КНР",
+              "url": "https://app.www.gov.cn/govdata/gov/202504/26/527808/article.html",
+              "quote": "超前协调世界时（UTC）8小时",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-regulator-announcement-indexed-article-text; 2025-04-26; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            },
+            {
+              "title": "Заместитель директора Департамента границ и морских дел о границах КНР — МИД КНР",
+              "url": "https://www.mfa.gov.cn/web/ziliao_674904/zt_674979/dnzt_674981/qtzt/wjdjtwlft_675057/ftsl_675059/201302/t20130220_7953784.shtml",
+              "quote": "陆地边界长度达到22000多公里，有14个陆地邻国",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 11 keySources; original: fresh-primary-ministry-interview-page; official answer, not introductory reader question; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            },
+            {
+              "title": "外交部条约法律司司长谈中国与邻国的划界工作 — 中国驻纽约总领事馆",
+              "url": "https://newyork.china-consulate.gov.cn/xw/200508/t20050831_4229589.htm",
+              "quote": "刘振民：中国同14个国家接壤，陆地边界总长22000多公里，",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-08; official interview, line 30; department director answer; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            },
+            {
+              "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+              "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-government-page-indexed-text-read 2026-11-08; count, types and named special administrative regions; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            },
+            {
+              "title": "中华人民共和国工业和信息化部公告2018年 第7号 — 工业和信息化部",
+              "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2020/art_e6ae132e19d541348f930d1dd6654f3d.html",
+              "quote": "设置“行政区域名”34个，适用于我国的各省、自治区、直辖市、特别行政区的组织，分别为：“BJ”北京市；“SH”上海市；“TJ”天津市；“CQ”重庆市；“HE”河北省；“SX”山西省；“NM”内蒙古自治区；“LN”辽宁省；“JL”吉林省；“HL”黑龙江省；“JS”江苏省；“ZJ”浙江省；“AH”安徽省；“FJ”福建省；“JX”江西省；“SD”山东省；“HA”河南省；“HB”湖北省；“HN”湖南省；“GD”广东省；“GX”广西壮族自治区；“HI”海南省；“SC”四川省；“GZ”贵州省；“YN”云南省；“XZ”西藏自治区；“SN”陕西省；“GS”甘肃省；“QH”青海省；“NX”宁夏回族自治区；“XJ”新疆维吾尔自治区；“TW”台湾省；“HK”香港特别行政区；“MO”澳门特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-ministry-announcement-indexed-text-read 2026-11-08; all 34 administrative labels including Taiwan, Hong Kong and Macao; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            },
+            {
+              "title": "中华人民共和国2024年国民经济和社会发展统计公报 — 国家统计局",
+              "url": "https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html",
+              "quote": "各项统计数据均未包括香港特别行政区、澳门特别行政区和台湾省。 … 我国大陆31个省、自治区、直辖市",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 15 option preview-mainland-31; original: fresh-primary-statistical-bulletin-indexed-text; notes [1] and [5]; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "row": {
+          "id": "qing-interval-1644-1910",
+          "name": {
+            "zh": "1644-1910"
+          },
+          "qingreignperiod": {
+            "zh": "1644-1910",
+            "gloss": "1644–1910 — в 1910 году ещё правил последний император Пу И."
+          },
+          "about": "Контекстный календарный интервал для сопоставления дат; это не название династии и не утверждение о реальном периоде её правления. Подпись поясняет реальный конечный год.",
+          "sources": [
+            {
+              "title": "宣统皇帝 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/court/lineage/226255.html",
+              "quote": "宣统皇帝。(1909—1911年) … 清代最后一位皇帝名溥仪",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 option o2; original: web-open; 1910 попадает в указанный музеем интервал; на той же странице год обозначен как второй год Сюаньтун."
+            },
+            {
+              "title": "China—Timeline of Historical Periods — Asia for Educators, Columbia University",
+              "url": "https://www-1.gsb.columbia.edu/timelines/china_timeline.htm",
+              "quote": "1644-1912 … Qing (Ch'ing) Dynasty … Reign of the Manchus; Capital: Beijing",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 keySources; original: web-open"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "row": {
+          "id": "qing-interval-1644-1913",
+          "name": {
+            "zh": "1644-1913"
+          },
+          "qingreignperiod": {
+            "zh": "1644-1913",
+            "gloss": "1644–1913 — конечный год относится уже к Китайской Республике."
+          },
+          "about": "Контекстный календарный интервал для сопоставления дат; это не название династии и не утверждение о реальном периоде её правления. Подпись поясняет реальный конечный год.",
+          "sources": [
+            {
+              "title": "China—Timeline of Historical Periods — Asia for Educators, Columbia University",
+              "url": "https://www-1.gsb.columbia.edu/timelines/china_timeline.htm",
+              "quote": "1912-1949 … Republic Period",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 option o3; original: web-open; 1913 год входит в республиканский период 1912–1949."
+            },
+            {
+              "title": "清宣统皇帝溥仪退位诏书 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202008/t20200824_247195.shtml",
+              "quote": "1912年2月12日，清帝颁布退位诏书，中国2000多年的封建帝制宣告结束。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 keySources; original: web-open"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "row": {
+          "id": "qing-interval-1644-1914",
+          "name": {
+            "zh": "1644-1914"
+          },
+          "qingreignperiod": {
+            "zh": "1644-1914",
+            "gloss": "1644–1914 — в 1914 году ввели серебряный юань с профилем Юань Шикая."
+          },
+          "about": "Контекстный календарный интервал для сопоставления дат; это не название династии и не утверждение о реальном периоде её правления. Подпись поясняет реальный конечный год.",
+          "sources": [
+            {
+              "title": "清代户部造币总厂的前世今生 — 中国社会科学网",
+              "url": "https://cssn.cn/kgxc/kgxc_kgsb/202207/t20220728_5431170.shtml",
+              "quote": "民国三年(1914年),北洋政府颁布《中华民国国币条例》,规定将袁世凯头像作为国币图案。",
+              "checkedAt": "2026-10-14",
+              "authority": "academic",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 option o4; original: reused-accepted-dossier-source-and-quote: data/dossiers/money.json#yuan-datou"
+            },
+            {
+              "title": "“袁大头”不是银币的开始 最早出现在光绪时期 — 人民网",
+              "url": "http://art.people.com.cn/n/2013/0305/c226026-20676896.html",
+              "quote": "1914年，北洋政府颁布《国币条例》，宣布废两改元，规定以袁世凯头像银币(俗称“袁大头”)为国币，并以“圆”为单位，重库平七钱二分",
+              "checkedAt": "2026-10-14",
+              "authority": "official",
+              "verificationMethod": "reused-author-accepted-batch7-source; accepted canonical money/yuan-datou; 1914 coin introduction; original: accepted-dossier-source"
+            },
+            {
+              "title": "China—Timeline of Historical Periods — Asia for Educators, Columbia University",
+              "url": "https://www-1.gsb.columbia.edu/timelines/china_timeline.htm",
+              "quote": "1644-1912 … Qing (Ch'ing) Dynasty … Reign of the Manchus; Capital: Beijing",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 keySources; original: web-open"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "holidays",
+        "table": "solarterms",
+        "row": {
+          "id": "term-guyu",
+          "name": {
+            "zh": "谷雨",
+            "gloss": "Гуюй — около 20 апреля; дожди в этот период благоприятны для роста зерновых.",
+            "ru": [
+              "Гуюй"
+            ]
+          },
+          "sources": [
+            {
+              "title": "二十四节气 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/art/detail/id/10348.html",
+              "quote": "谷雨：4月20日前后，雨水增多，利于谷类生长。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 14 option o1; original: fresh-primary-page-opened-and-text-read"
+            },
+            {
+              "title": "什么是二十四节气？ — 中国科学院地理科学与资源研究所",
+              "url": "https://igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692918.html",
+              "quote": "二十四节气是反映一年中自然现象和农事活动季节特征的二十四个节候。即立春、雨水、惊蛰、春分、清明、谷雨、立夏、小满、芒种、夏至、小暑、大暑、立秋、处暑、白露、秋分、寒露、霜降、立冬、小雪、大雪、冬至、小寒、大寒。 谷雨是降雨开始增多，有利于谷物生长；",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-08"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "holidays",
+        "table": "solarterms",
+        "row": {
+          "id": "term-lixia",
+          "name": {
+            "zh": "立夏",
+            "gloss": "Лися — начало календарного лета; приходится на первые числа мая.",
+            "ru": [
+              "Лися"
+            ]
+          },
+          "sources": [
+            {
+              "title": "什么是二十四节气？ — 中国科学院地理科学与资源研究所",
+              "url": "https://igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692918.html",
+              "quote": "立春、立夏、立秋、立冬分别表示春夏秋冬四季的开始；",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 14 option o2; original: fresh-primary-page-opened-and-text-read"
+            },
+            {
+              "title": "二十四节气 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/art/detail/id/10348.html",
+              "quote": "立夏：5月5日或6日“立夏”。万物生长，欣欣向荣。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-08"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "holidays",
+        "table": "solarterms",
+        "row": {
+          "id": "term-xiazhi",
+          "name": {
+            "zh": "夏至",
+            "gloss": "Сячжи — после этого дня световой день в Северном полушарии начинает убывать.",
+            "ru": [
+              "Сячжи"
+            ]
+          },
+          "sources": [
+            {
+              "title": "节气自然笔记 | 夏至 — 国家林业和草原局",
+              "url": "https://www.forestry.gov.cn/c/www/lcdt/630694.jhtml",
+              "quote": "夏至这天，太阳几乎直射北回归线，此时，北半球各地的白昼时间达到全年最长。过了夏至，北半球各地的白昼开始逐渐变短。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 14 option o3; original: fresh-primary-page-opened-and-text-read"
+            },
+            {
+              "title": "二十四节气 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/art/detail/id/10348.html",
+              "quote": "夏至：6月22日前后，日光直射北回归线，出现“日北至，日长至，日影短至”，故曰“夏至”。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 14 keySources; original: fresh-primary-page-opened-and-text-read"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "holidays",
+        "table": "solarterms",
+        "row": {
+          "id": "term-xiaoshu",
+          "name": {
+            "zh": "小暑",
+            "gloss": "Сяошу — около 7 июля; в большинстве районов Китая устанавливается жаркая погода.",
+            "ru": [
+              "Сяошу"
+            ]
+          },
+          "sources": [
+            {
+              "title": "二十四节气 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/art/detail/id/10348.html",
+              "quote": "小暑：7月7日前后，入暑，标志着我国大部分地区进入炎热季节。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 14 option o4; original: fresh-primary-page-opened-and-text-read"
+            },
+            {
+              "title": "什么是二十四节气？ — 中国科学院地理科学与资源研究所",
+              "url": "https://igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692918.html",
+              "quote": "二十四节气是反映一年中自然现象和农事活动季节特征的二十四个节候。即立春、雨水、惊蛰、春分、清明、谷雨、立夏、小满、芒种、夏至、小暑、大暑、立秋、处暑、白露、秋分、寒露、霜降、立冬、小雪、大雪、冬至、小寒、大寒。 小暑、大暑是一年中最炎热的季节；",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-08"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "landmarks",
+        "table": "wallmeasurements",
+        "row": {
+          "id": "wall-count-40196",
+          "name": {
+            "zh": "40 196"
+          },
+          "surveyedlength2012": {
+            "zh": "40 196",
+            "gloss": "40 196 км — на 19 000 км больше результата общего учёта"
+          },
+          "description": "Счётное значение для арифметического сравнения с опубликованным округлённым итогом; не отдельная историческая оценка длины стены.",
+          "sources": [
+            {
+              "title": "世界文化遗产——长城 — 中央人民政府驻香港联络办公室",
+              "url": "https://www.locpg.gov.cn/tp/2014-01/04/c_125957087.htm",
+              "quote": "２０１２年６月５日，国家文物局在居庸关长城发布长城资源调查和认定成果：历代长城总长度为２１１９６．１８千米，包括长城墙体、壕堑、单体建筑、关堡和相关设施等长城遗产４３７２１处。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 18 keySources; original: Страница открыта web.run 2026-11-08, строка 6; это официальная перепечатка сообщения об объявлении результатов 2012 г., не новая оценка 2014 г.; contextual arithmetic comparison 40196 = 21196 + 19000; not a separate historical measurement"
+            },
+            {
+              "title": "长城 — 北京市文物局",
+              "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738088/1742735/364326/index.html",
+              "quote": "墙壕遗存总长度21196.18千米。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 18 keySources; original: Свежий результат web.run прочитан 2026-11-08; цитата сверена с доступным извлечением.; contextual arithmetic comparison 40196 = 21196 + 19000; not a separate historical measurement"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "landmarks",
+        "table": "wallmeasurements",
+        "row": {
+          "id": "wall-count-11196",
+          "name": {
+            "zh": "11 196"
+          },
+          "surveyedlength2012": {
+            "zh": "11 196",
+            "gloss": "11 196 км — на 10 000 км меньше результата общего учёта"
+          },
+          "description": "Счётное значение для арифметического сравнения с опубликованным округлённым итогом; не отдельная историческая оценка длины стены.",
+          "sources": [
+            {
+              "title": "世界文化遗产——长城 — 中央人民政府驻香港联络办公室",
+              "url": "https://www.locpg.gov.cn/tp/2014-01/04/c_125957087.htm",
+              "quote": "２０１２年６月５日，国家文物局在居庸关长城发布长城资源调查和认定成果：历代长城总长度为２１１９６．１８千米，包括长城墙体、壕堑、单体建筑、关堡和相关设施等长城遗产４３７２１处。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 18 keySources; original: Страница открыта web.run 2026-11-08, строка 6; это официальная перепечатка сообщения об объявлении результатов 2012 г., не новая оценка 2014 г.; contextual arithmetic comparison 11196 = 21196 − 10000; not a separate historical measurement"
+            },
+            {
+              "title": "长城 — 北京市文物局",
+              "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738088/1742735/364326/index.html",
+              "quote": "墙壕遗存总长度21196.18千米。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 18 keySources; original: Свежий результат web.run прочитан 2026-11-08; цитата сверена с доступным извлечением.; contextual arithmetic comparison 11196 = 21196 − 10000; not a separate historical measurement"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "landmarks",
+        "table": "wallmeasurements",
+        "row": {
+          "id": "preview-ming-wall-length",
+          "name": {
+            "zh": "8 852"
+          },
+          "surveyedlength2012": {
+            "zh": "8 852",
+            "gloss": "8 852 км — округлённая длина Минской стены с естественными преградами"
+          },
+          "description": "Округлённый до целых километров результат отдельного обследования Минской стены 2009 года: 8851,8 км. Включает искусственные стены, рвы и естественные преграды. Это не сумма учтённых стен разных эпох из результатов 2012 года.",
+          "sources": [
+            {
+              "title": "基于遥感的明长城立体量测 — 陈军等, Chinese Science Bulletin 55(16), 2010",
+              "url": "https://www.sciengine.com/doi/10.1360/csb2010-55-16-1613",
+              "quote": "明长城总长度为8851.8 km, 其中人工墙体为6259.6 km, 天然段2232.5 km, 壕堑359.7 km.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 18 option preview-ming-wall-length; original: Первичная статья авторов Национального центра географической информации и Китайского института культурного наследия; аннотация и авторство прочитаны в полном результате поиска web.run 2026-11-08. Отдельный open дал 403; свежая загрузка полной страницы не заявляется."
+            },
+            {
+              "title": "王志珍副主席出席明长城长度数据发布仪式 — 九三学社中央委员会社会服务部",
+              "url": "https://www.93.gov.cn/xwjc-snyw/216754.html",
+              "quote": "此次公布的测量结果为，明长城总长度为8851.8千米，其中人工墙体长度为6259.6千米，壕堑和天然险长度为2592.2千米。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-event-report-page-opened-and-text-read 2026-11-08; department participation in 2009 official measurement announcement, lines 85–90"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "landmarks",
+        "table": "wallmeasurements",
+        "row": {
+          "id": "wall-survey-2012",
+          "name": {
+            "zh": "长城",
+            "ru": [
+              "Великая Китайская стена",
+              "Великая стена"
+            ],
+            "ref": "landmarks/fortifications/lm-cn-great-wall"
+          },
+          "surveyedlength2012": {
+            "zh": "21 196",
+            "gloss": "21 196 км — в учёт разных эпох входят стены и рвы"
+          },
+          "description": "Результат обследования и учёта сохранившихся стен и рвов разных исторических эпох, опубликованный в 2012 году: 21 196,18 км. Это не длина одной непрерывной кладки и не сумма всех когда-либо строившихся, в том числе полностью утраченных, сооружений.",
+          "sources": [
+            {
+              "title": "世界文化遗产——长城 — 中央人民政府驻香港联络办公室",
+              "url": "https://www.locpg.gov.cn/tp/2014-01/04/c_125957087.htm",
+              "quote": "２０１２年６月５日，国家文物局在居庸关长城发布长城资源调查和认定成果：历代长城总长度为２１１９６．１８千米，包括长城墙体、壕堑、单体建筑、关堡和相关设施等长城遗产４３７２１处。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 18 keySources; original: Страница открыта web.run 2026-11-08, строка 6; это официальная перепечатка сообщения об объявлении результатов 2012 г., не новая оценка 2014 г."
+            },
+            {
+              "title": "长城 — 北京市文物局",
+              "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738088/1742735/364326/index.html",
+              "quote": "墙壕遗存总长度21196.18千米。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 18 keySources; original: Свежий результат web.run прочитан 2026-11-08; цитата сверена с доступным извлечением."
+            }
+          ],
+          "core": false
+        }
+      }
+    ],
+    "cellAdditions": [
+      {
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "row": "dyn-qing",
+        "column": "qingreignperiod",
+        "cell": {
+          "zh": "1644-1912",
+          "gloss": "1644–1912 — последний император Пу И отрёкся от престола 12 февраля 1912 года."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "China—Timeline of Historical Periods — Asia for Educators, Columbia University",
+            "url": "https://www-1.gsb.columbia.edu/timelines/china_timeline.htm",
+            "quote": "1644-1912 … Qing (Ch'ing) Dynasty … Reign of the Manchus; Capital: Beijing",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 keySources; original: web-open"
+          },
+          {
+            "title": "清朝工芸の魅力 — 京都国立博物館",
+            "url": "https://www.kyohaku.go.jp/jp/learn/home/dictio/touji/212/",
+            "quote": "順治元年（じゅんちがんねん）（1644）に明王朝が滅ぶと、北京へと遷都を行い、1912年まで中国やモンゴルを支配する最後の統一王朝となっています。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 keySources; original: web-open"
+          },
+          {
+            "title": "清宣统皇帝溥仪退位诏书 — 中国国家博物馆",
+            "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202008/t20200824_247195.shtml",
+            "quote": "1912年2月12日，清帝颁布退位诏书，中国2000多年的封建帝制宣告结束。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 keySources; original: web-open"
+          }
+        ]
+      }
+    ],
+    "identityRefs": [],
+    "questions": [
+      {
+        "reviewNumber": 4,
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": "geocount-china",
+        "ask": "officialtimecount",
+        "optionRows": {
+          "o1": "geocount-alternative-1",
+          "o2": "geocount-alternative-2",
+          "o3": "geocount-china",
+          "o4": "preview-mainland-31"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 6,
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "row": "dyn-qing",
+        "ask": "qingreignperiod",
+        "optionRows": {
+          "o1": "dyn-qing",
+          "o2": "qing-interval-1644-1910",
+          "o3": "qing-interval-1644-1913",
+          "o4": "qing-interval-1644-1914"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 11,
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": "geocount-china",
+        "ask": "landneighborcount",
+        "optionRows": {
+          "o1": "geocount-alternative-1",
+          "o2": "geocount-china",
+          "o3": "geocount-alternative-2",
+          "o4": "preview-mainland-31"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 14,
+        "dossier": "holidays",
+        "table": "solarterms",
+        "row": "term-xiazhi",
+        "ask": "name",
+        "optionRows": {
+          "o1": "term-guyu",
+          "o2": "term-lixia",
+          "o3": "term-xiazhi",
+          "o4": "term-xiaoshu"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 15,
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": "geocount-china",
+        "ask": "provincialcount",
+        "optionRows": {
+          "o1": "geocount-alternative-1",
+          "o2": "geocount-alternative-2",
+          "o3": "geocount-china",
+          "preview-mainland-31": "preview-mainland-31"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 18,
+        "dossier": "landmarks",
+        "table": "wallmeasurements",
+        "row": "wall-survey-2012",
+        "ask": "surveyedlength2012",
+        "optionRows": {
+          "o1": "wall-survey-2012",
+          "o2": "wall-count-40196",
+          "o3": "wall-count-11196",
+          "preview-ming-wall-length": "preview-ming-wall-length"
+        },
+        "exclude": []
+      }
+    ],
+    "captionCorrections": [],
+    "contentProblems": [
+      {
+        "reviewNumber": 15,
+        "field": "originalRecord.explanation.ru",
+        "issue": "Пояснение называет неверный числовой вариант «23»: embed_record запрещает перечислять неверные варианты, даже если здесь это верное число провинций. Условие, ключ и все принятые подписи остаются точными.",
+        "suggestedCorrection": "Официальное административное деление КНР включает 34 единицы провинциального уровня: провинции, автономные районы, города центрального подчинения и особые административные районы. Официальная классификация включает Тайвань.",
+        "sources": [
+          "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+          "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2020/art_e6ae132e19d541348f930d1dd6654f3d.html"
+        ],
+        "affectsAcceptedQuestion": false
+      }
+    ],
+    "manualHintCandidates": [
+      {
+        "reviewNumber": 6,
+        "kind": "caption-same-person-related-fact",
+        "embeds": "2025-26-mun-komi-55",
+        "relatedQuestions": [
+          "2022-23-shk-qa664f6"
+        ],
+        "canonical": "dynasties/dynasties/dyn-qing",
+        "reason": "Принятая подпись правильного интервала называет последнего императора Пу И и отречение; соседний вопрос спрашивает последнего императора Цин. Проверить общую fact-group и связанную canonical строку Пу И."
+      },
+      {
+        "reviewNumber": 18,
+        "kind": "measurement-scope-related-fact",
+        "embeds": "2024-25-mun-volog-1",
+        "relatedQuestions": [
+          "2021-22-shk-qf19779"
+        ],
+        "canonical": "landmarks/fortifications/lm-cn-great-wall",
+        "reason": "Подпись нового неверного варианта 8 852 относится к отдельному обследованию Минской стены 8 851,8 км с естественными преградами. Старый вопрос спрашивает Минскую стену с ответом 8851; не менять старый вопрос, проверить общую fact-group по сообщению длины Минской стены в подписи."
+      }
+    ]
+  }
+}

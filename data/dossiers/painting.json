@@ -6566,7 +6566,8 @@
         "kind": "zh",
         "place": "zh",
         "material": "zh",
-        "about": "ru"
+        "about": "ru",
+        "studymaterial": "zh"
       },
       "rows": [
         {
@@ -7077,10 +7078,25 @@
               "quote": "黄山地区盛产透脂松（黄山松），是制作松烟墨的最好材料",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "文房用品 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/collection/studies.html",
+              "quote": "以笔、墨、纸、砚为文房所使用，而被人们誉为“文房四宝”。…文房用具除四宝以外，还有笔筒、笔架、墨床、墨盒、臂搁、笔洗、书镇、水丞、水勺、砚滴、砚匣、印泥、印盒、裁刀、图章、卷筒等物品，称为文房清供。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#8/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "studymaterial": {
+            "zh": "墨",
+            "ru": [
+              "Тушь"
+            ],
+            "gloss": "Тушь — для туши хуэй используют, в частности, сосновую сажу"
+          }
         },
         {
           "id": "art-t-xuanzhi",
@@ -7129,10 +7145,25 @@
               "quote": "宣纸产地在安徽泾县",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "文房用品 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/collection/studies.html",
+              "quote": "以笔、墨、纸、砚为文房所使用，而被人们誉为“文房四宝”。…文房用具除四宝以外，还有笔筒、笔架、墨床、墨盒、臂搁、笔洗、书镇、水丞、水勺、砚滴、砚匣、印泥、印盒、裁刀、图章、卷筒等物品，称为文房清供。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#8/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "studymaterial": {
+            "zh": "纸",
+            "ru": [
+              "Бумага"
+            ],
+            "gloss": "Бумага — знаменитую сюаньчжи делают из коры цинтаня и рисовой соломы"
+          }
         },
         {
           "id": "art-t-duanyan",
@@ -7177,10 +7208,25 @@
               "quote": "所用原料端溪石产于肇庆市东郊羚羊峡斧柯山和北岭山一带",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "文房用品 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/collection/studies.html",
+              "quote": "以笔、墨、纸、砚为文房所使用，而被人们誉为“文房四宝”。…文房用具除四宝以外，还有笔筒、笔架、墨床、墨盒、臂搁、笔洗、书镇、水丞、水勺、砚滴、砚匣、印泥、印盒、裁刀、图章、卷筒等物品，称为文房清供。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#8/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "studymaterial": {
+            "zh": "砚",
+            "ru": [
+              "Тушечница"
+            ],
+            "gloss": "Тушечница — дуаньские тушечницы режут из камня дуаньси"
+          }
         },
         {
           "id": "art-t-mogu",
@@ -7213,6 +7259,167 @@
             }
           ],
           "olympiad": []
+        },
+        {
+          "id": "art-t-jia",
+          "name": {
+            "zh": "架",
+            "ru": [
+              "Подставка"
+            ],
+            "gloss": "Подставка — например, подставка для кистей, на которую их кладут во время письма"
+          },
+          "studymaterial": {
+            "zh": "架",
+            "ru": [
+              "Подставка"
+            ],
+            "gloss": "Подставка — например, подставка для кистей, на которую их кладут во время письма"
+          },
+          "sources": [
+            {
+              "title": "笔之属 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/subject_study/write.html?click_id=1008176",
+              "quote": "笔架，为古代文人书案常备用具之一，又称笔格、笔床、笔山，是为放置毛笔之用。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#8/options/o4; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: fresh-primary-museum-indexed-text read by root and full page read by independent reviewer; excerpt corrected to text actually present on page"
+            },
+            {
+              "title": "文房用品 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/collection/studies.html",
+              "quote": "以笔、墨、纸、砚为文房所使用，而被人们誉为“文房四宝”。…文房用具除四宝以外，还有笔筒、笔架、墨床、墨盒、臂搁、笔洗、书镇、水丞、水勺、砚滴、砚匣、印泥、印盒、裁刀、图章、卷筒等物品，称为文房清供。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#8/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            }
+          ],
+          "olympiad": [
+            "2019-20-mun-khab-8"
+          ]
+        }
+      ]
+    },
+    "disasters": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "disaster-earthquake",
+          "name": {
+            "zh": "地震",
+            "ru": [
+              "Землетрясение"
+            ],
+            "gloss": "Землетрясение — разрушительное произошло в Помпеях ещё в 62 году н. э."
+          },
+          "sources": [
+            {
+              "title": "Pompeii Antiquarium: Timeline — Археологический парк Помпеи",
+              "url": "https://pompeiisites.org/wp-content/uploads/ANTIQUARIUM_PRESS_kit_ENGLISH.pdf",
+              "quote": "62 CE: Pompeii is struck by a devastating earthquake.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 14 option o1; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "地震是怎麼發生的？ — Центральное метеорологическое управление (CWA)",
+              "url": "https://pweb.cwa.gov.tw/PopularScience/kids/ec/ec_3.html",
+              "quote": "地震發生的原因可以分為自然地震，以及人工地震兩種。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_open; exact primary-source text read 2026-11-08"
+            }
+          ]
+        },
+        {
+          "id": "disaster-fire",
+          "name": {
+            "zh": "火灾",
+            "ru": [
+              "Пожар"
+            ],
+            "gloss": "Пожар — у Верещагина есть «Пожар Замоскворечья» в цикле о войне 1812 года."
+          },
+          "sources": [
+            {
+              "title": "«Пожар Замоскворечья» — каталог Государственного исторического музея",
+              "url": "https://catalog.shm.ru/entity/OBJECT/5505372",
+              "quote": "Пожар Замоскворечья. Картина № 19 из альбома «За веру, царя и отечество. Отечественная война 1812 г. в картинах».",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 14 option o2; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Пожар Замоскворечья — Российская государственная библиотека",
+              "url": "https://search.rsl.ru/ru/record/01008101462",
+              "quote": "Верещагин, Василий Васильевич (1842-1904). - Пожар Замоскворечья : [Открытка].",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 14 option o2 additionalAttributionEvidence; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        },
+        {
+          "id": "disaster-flood",
+          "name": {
+            "zh": "水灾",
+            "ru": [
+              "Наводнение"
+            ],
+            "gloss": "Наводнение — в Петербурге в 1824 году Нева поднялась на 421 см выше ординара."
+          },
+          "sources": [
+            {
+              "title": "Президентская библиотека — к 200-летию наводнения в Петербурге",
+              "url": "https://www.prlib.ru/news/2004019",
+              "quote": "1824 года в Петербурге произошло крупнейшее в истории города наводнение.……421 сантиметра выше ординара.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 14 option o3; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "191 год со дня катастрофического наводнения — ФКП Дирекция КЗС Санкт-Петербурга, Минстрой РФ",
+              "url": "https://dambaspb.ru/news/191-god-so-dnya-katastroficheskogo-navodneniya",
+              "quote": "В 1824 году 19 ноября случилось бедственное наводнение. Тогда уровень воды достиг отметки 421 сантиметр выше ординара.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_open and web_find; exact primary-source text read 2026-11-08"
+            }
+          ]
+        },
+        {
+          "id": "disaster-eruption",
+          "name": {
+            "zh": "火山爆发",
+            "ru": [
+              "Извержение вулкана"
+            ],
+            "gloss": "Извержение вулкана — Помпеи погибли при извержении Везувия в 79 году н. э."
+          },
+          "sources": [
+            {
+              "title": "«Великий Карл» — выставочный проект Государственного Русского музея",
+              "url": "https://brullov.rusmuseum.ru/",
+              "quote": "результате извержения Везувия в 79 году нашей эры.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 14 option o4; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Pompeii. Antiquarium — Археологический парк Помпеи, Timeline, p. 15",
+              "url": "https://pompeiisites.org/wp-content/uploads/ANTIQUARIUM_PRESS_kit_ENGLISH.pdf",
+              "quote": "Pompeii was buried by a tremendous eruption.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_open and web_find; primary PDF p. 15 timeline read 2026-11-08; line wraps normalized to spaces"
+            }
+          ],
+          "olympiad": [
+            "2023-24-mun-mosobl-10"
+          ]
         }
       ]
     }

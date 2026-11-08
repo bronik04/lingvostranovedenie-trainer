@@ -1621,5 +1621,65 @@
       "verdict": "accept",
       "note": "Партия 2: автор принял оставшиеся 19 вопросов и подписи 2026-11-07; №11 исключён. Предварительное независимое ревью: data/review/2026-11-07-regional-batch-2-review.md. Полный набор, встраивания и взаимные подсказки проверяются перед выпуском; отчёт применения — data/review/2026-11-07-regional-batch-2-application.json."
     }
+  },
+  {
+    "id": "dynasties-q124",
+    "embeds": "2025-26-shk-mosobl-1",
+    "status": "accepted",
+    "fact": {
+      "table": "dynasties",
+      "row": "dyn-tang",
+      "ask": "tangperiodname"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
+  },
+  {
+    "id": "dynasties-q125",
+    "embeds": "2025-26-shk-mosobl-11",
+    "status": "accepted",
+    "fact": {
+      "table": "dynasties",
+      "row": "dyn-ming",
+      "ask": "mingperiodname"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
+  },
+  {
+    "id": "dynasties-q126",
+    "embeds": "2018-19-mun-spb-5",
+    "status": "accepted",
+    "fact": {
+      "table": "states",
+      "row": "state-lu",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
+  },
+  {
+    "id": "dynasties-q127",
+    "embeds": "2025-26-mun-komi-55",
+    "status": "accepted",
+    "fact": {
+      "table": "dynasties",
+      "row": "dyn-qing",
+      "ask": "qingreignperiod"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
   }
 ]

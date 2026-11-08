@@ -16,7 +16,9 @@
         "neighborname": "zh",
         "neimengguneighborname": "zh",
         "tarimregionname": "zh",
-        "russiaborderregionname": "zh"
+        "russiaborderregionname": "zh",
+        "goubuliregionname": "zh",
+        "paomoregionname": "zh"
       },
       "sides": [
         "abbr",
@@ -132,12 +134,43 @@
               "quote": "天津市 中央直辖市，中国北部的主要工商业城市，距北京约120公里，是中国远洋运输、近海运输和对外贸易的重要港口。",
               "authority": "official",
               "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "传统面食制作技艺（天津“狗不理”包子制作技艺） — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/Article/Index/detail?id=14644",
+              "quote": "狗不理包子为天津名优食品“三绝”之首，系用水馅半发面制作，状若凝脂，形似菊花，口感鲜香不腻。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #2 / o4"
+            },
+            {
+              "title": "三地携手录制 津味元素闪耀 — 天津市人民政府",
+              "url": "https://www.tj.gov.cn/sy/tjxw/202501/t20250112_6831010.html",
+              "quote": "十八街麻花、栗羊羹、皮糖张、果仁张等天津特色小吃。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #16 / o4"
             }
           ],
           "olympiad": [
-            "2015-16-reg-1"
+            "2015-16-reg-1",
+            "2021-22-mun-tat-52"
           ],
-          "core": true
+          "core": true,
+          "goubuliregionname": {
+            "zh": "天津",
+            "ru": [
+              "Тяньцзинь"
+            ],
+            "gloss": "Тяньцзинь — баоцзы «Гоубули» делают с сочной начинкой; складки напоминают хризантему"
+          },
+          "paomoregionname": {
+            "zh": "天津",
+            "ru": [
+              "Тяньцзинь"
+            ],
+            "gloss": "Тяньцзинь — среди местных закусок известны махуа «Восемнадцатая улица»"
+          }
         },
         {
           "id": "prov-shanghai",
@@ -1365,6 +1398,14 @@
               "quote": "湖北省，位于中国中部，长江中下游，洞庭湖以北，故名湖北，简称鄂。",
               "authority": "official",
               "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "武汉十大名点之热干面×蛋酒 — 武汉市商务局",
+              "url": "https://sw.wuhan.gov.cn/xwdt/mtbd/202407/t20240731_2435699.shtml",
+              "quote": "手工掸好的面足够筋道，顾客上门时简单焯水后再加入芝麻酱、味精、酱油和萝卜丁就成了。……吃完碗底没有一点汤才对味。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #2 / o3"
             }
           ],
           "olympiad": [
@@ -1373,7 +1414,21 @@
           "core": true,
           "skipSides": [
             "kind"
-          ]
+          ],
+          "goubuliregionname": {
+            "zh": "湖北",
+            "ru": [
+              "Хубэй"
+            ],
+            "gloss": "Хубэй — уханьскую лапшу жэганьмянь смешивают с кунжутной пастой"
+          },
+          "paomoregionname": {
+            "zh": "湖北",
+            "ru": [
+              "Хубэй"
+            ],
+            "gloss": "Хубэй — уханьскую лапшу жэганьмянь смешивают с кунжутной пастой"
+          }
         },
         {
           "id": "prov-hunan",
@@ -1960,6 +2015,14 @@
               "quote": "是全国世居少数民族最多、特有民族最多、跨境民族最多、民族自治地方最多的省份，共有8个民族自治州、29个民族自治县、140个民族乡",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "【百年过桥米线】寻找百年的滋味 — 红河州人民政府",
+              "url": "https://www.hh.gov.cn/info/9021/795922.htm",
+              "quote": "蒙自过桥米线是云南名膳之一。……一套传统的过桥米线由米线、汤和配菜三部分组成。……用猪骨、鸡等原料熬制而成的浓郁鲜汤。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #2 / o2"
             }
           ],
           "olympiad": [
@@ -1970,7 +2033,21 @@
           "core": true,
           "skipSides": [
             "kind"
-          ]
+          ],
+          "goubuliregionname": {
+            "zh": "云南",
+            "ru": [
+              "Юньнань"
+            ],
+            "gloss": "Юньнань — гоцяо мисянь подают с рисовой лапшой, бульоном и добавками"
+          },
+          "paomoregionname": {
+            "zh": "云南",
+            "ru": [
+              "Юньнань"
+            ],
+            "gloss": "Юньнань — гоцяо мисянь подают с рисовой лапшой, бульоном и добавками"
+          }
         },
         {
           "id": "prov-xizang",
@@ -2129,9 +2206,35 @@
               "authority": "official",
               "checkedAt": "2026-11-07",
               "verificationMethod": "checked-exact-primary-indexed-excerpt"
+            },
+            {
+              "title": "樊记 — 商务部老字号数字博物馆",
+              "url": "https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/f1b29e1774c04ec690cdab178e18f8ba",
+              "quote": "所属地区：陕西省。……探索出以热馍夹肉的进食方式，大获成功。……既可单吃，又以夹肉为佳。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #2 / o1"
+            },
+            {
+              "title": "羊肉泡馍 — 中国天气网陕西站",
+              "url": "https://shaanxi.weather.com.cn/sxtcxc/04/869504.shtml",
+              "quote": "掌柜见其可怜，遂让其把自带的干馍掰碎，然后给他浇了一勺滚热肉汤放在火上煮透。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #16 / o1"
+            },
+            {
+              "title": "同盛祥牛羊肉泡馍制作技艺 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/art/detail/id/14653.html",
+              "quote": "申报地区或单位：陕西省西安市。……同盛祥牛羊肉泡馍料重味醇，肉烂汤浓，馍筋光滑，香气四溢，风味独特。……成为陕西最具清真风味的代表性饮食。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #16 / keySources"
             }
           ],
-          "olympiad": [],
+          "olympiad": [
+            "2021-22-mun-tat-53"
+          ],
           "core": true,
           "skipSides": [
             "abbr2",
@@ -2153,6 +2256,20 @@
               "Шэньси"
             ],
             "gloss": "Шэньси — южный сосед Внутренней Монголии; центр — Сиань."
+          },
+          "goubuliregionname": {
+            "zh": "陕西",
+            "ru": [
+              "Шэньси"
+            ],
+            "gloss": "Шэньси — жоуцзямо представляет собой горячую лепёшку с мясной начинкой"
+          },
+          "paomoregionname": {
+            "zh": "陕西",
+            "ru": [
+              "Шэньси"
+            ],
+            "gloss": "Шэньси — в паомо кусочки лепёшки варят в мясном бульоне"
           }
         },
         {
@@ -2682,7 +2799,13 @@
         "brics2024name": "zh",
         "pearlcity": "zh",
         "leifengcity": "zh",
-        "shanghaisistercity": "zh"
+        "shanghaisistercity": "zh",
+        "yuyuancity": "zh",
+        "maitreyacity": "zh",
+        "historicagecity": "zh",
+        "leninbirthcity": "zh",
+        "fareastcity": "zh",
+        "russianportcity": "zh"
       },
       "sides": [
         "region",
@@ -2765,6 +2888,14 @@
               "quote": "珠江，因历史上广州城南河面上一块形如巨珠的海珠石而得名，民间传统所指的珠江是流经广州市区，由虎门出海的河段",
               "authority": "official",
               "checkedAt": "2026-10-17"
+            },
+            {
+              "title": "余荫山房 — 广州市文化广电旅游局",
+              "url": "https://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/4a/content/post_8930904.html",
+              "quote": "广州市余荫山房景区……被誉为“广东四大名园”之一，以“藏而不露，缩龙成寸”的建筑特色闻名于世。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 7 / o2; original: fresh-web-search-result-full-article-text"
             }
           ],
           "olympiad": [
@@ -2773,7 +2904,21 @@
           "core": true,
           "skipSides": [
             "river"
-          ]
+          ],
+          "yuyuancity": {
+            "zh": "广州",
+            "ru": [
+              "Гуанчжоу"
+            ],
+            "gloss": "Гуанчжоу — сад Юйиньшаньфан входит в четвёрку знаменитых садов Гуандуна"
+          },
+          "russianportcity": {
+            "zh": "广州",
+            "ru": [
+              "Гуанчжоу"
+            ],
+            "gloss": "Гуанчжоу — давний порт Морского шёлкового пути"
+          }
         },
         {
           "id": "city-jinan",
@@ -3085,6 +3230,14 @@
               "quote": "1929年1月14日奉安委员会成立，1929年6月1日国民政府举行了奉安大典，将中山先生的遗体由北京迁葬于南京中山陵。",
               "authority": "official",
               "checkedAt": "2026-10-17"
+            },
+            {
+              "title": "鸡鸣寺简介 — 南京市民族宗教事务局",
+              "url": "https://mzzjj.nanjing.gov.cn/mzzj/njzjgk/njfj/201809/t20180927_1198623.html",
+              "quote": "南京鸡鸣寺，是南京最古老的梵刹之一。……明洪武二十年（公元1387年），明太祖朱元璋在同泰寺故址重新兴建寺院。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 18 / o3; original: fresh-web-search-result-full-article-text"
             }
           ],
           "olympiad": [
@@ -3093,7 +3246,14 @@
           "core": true,
           "skipSides": [
             "river"
-          ]
+          ],
+          "maitreyacity": {
+            "zh": "南京",
+            "ru": [
+              "Нанкин"
+            ],
+            "gloss": "Нанкин — храм Цзимин восстановили при первом императоре династии Мин"
+          }
         },
         {
           "id": "city-chengdu",
@@ -3330,11 +3490,19 @@
             {
               "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1802954373708996609.html",
               "title": "西安市地方志办公室 — 大雁塔",
-              "quote": "唐永徽三年（公元652年）为玄奘藏经典而修建",
+              "quote": "大雁塔--西安市地方志办公室…唐永徽三年（公元652年）为玄奘藏经典而修建",
               "authority": "official",
               "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
               "checkedAt": "2026-11-08",
               "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 5 / o3"
+            },
+            {
+              "title": "大唐芙蓉园里，正书写汉服的故事…… — 西安曲江新区管理委员会",
+              "url": "https://qjxq.xa.gov.cn/xwzx/xwdt/2011738196298817538.html",
+              "quote": "元旦清晨，大唐芙蓉园仕女馆内雅乐悠扬……中心依托大唐芙蓉园的盛唐文化IP。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 7 / o3; original: fresh-web-search-result-text"
             }
           ],
           "olympiad": [],
@@ -3355,6 +3523,20 @@
               "Сиань"
             ],
             "gloss": "Сиань — Большая пагода диких гусей построена для сутр Сюаньцзана"
+          },
+          "yuyuancity": {
+            "zh": "西安",
+            "ru": [
+              "Сиань"
+            ],
+            "gloss": "Сиань — парк Датан Фужунъюань посвящён культуре эпохи Тан"
+          },
+          "maitreyacity": {
+            "zh": "西安",
+            "ru": [
+              "Сиань"
+            ],
+            "gloss": "Сиань — Большую пагоду диких гусей построили для сутр Сюаньцзана"
           }
         },
         {
@@ -3515,6 +3697,14 @@
               "quote": "AC332直升机在宁蒗泸沽湖机场试飞。图片由航空工业哈飞提供",
               "checkedAt": "2026-11-07",
               "authority": "official"
+            },
+            {
+              "title": "一条铁路与一所大学的诞生 — Музей Харбинского политехнического университета",
+              "url": "https://museum.hit.edu.cn/2017/0620/c38a180284/page.htm",
+              "quote": "1898年，为便于直接领导整个中东铁路的建设工作，中东铁路工程局由海参崴迁至哈尔滨田家烧锅",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №20, o1, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-university-museum-indexed-article-text"
             }
           ],
           "olympiad": [],
@@ -3528,6 +3718,13 @@
               "Харбин"
             ],
             "gloss": "Харбин — один из центров авиастроения; предприятие «Хафэй» выпускает вертолёты."
+          },
+          "russianportcity": {
+            "zh": "哈尔滨",
+            "ru": [
+              "Харбин"
+            ],
+            "gloss": "Харбин — в 1898 году сюда перенесли управление строительства КВЖД"
           }
         },
         {
@@ -3789,13 +3986,22 @@
                 "checkedAt": "2026-11-08"
               },
               "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 1 / o3"
+            },
+            {
+              "title": "上海豫园 — 上海市人民政府",
+              "url": "https://www.shanghai.gov.cn/citywalk/20260625/3a8ac74e088f4d468d9c3434b0b43d94.html",
+              "quote": "上海豫园位于黄浦区……始建于明嘉靖三十八年（公元1559年）……豫园由当时的四川布政使潘允端修建，取“豫”之意，寓意“平安”“愉悦老亲”。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 7 / o1; original: fresh-web-search-result-full-article-text"
             }
           ],
           "olympiad": [
             "2015-16-shk-63",
             "2015-16-zak-1",
             "addition-b2-15",
-            "2018-19-mun-lenobl-49"
+            "2018-19-mun-lenobl-49",
+            "2024-25-mun-mosobl-3"
           ],
           "core": true,
           "skipSides": [
@@ -3814,6 +4020,20 @@
               "Шанхай"
             ],
             "gloss": "Шанхай — «Восточная жемчужина» стоит в Пудуне; высота башни — 468 м"
+          },
+          "yuyuancity": {
+            "zh": "上海",
+            "ru": [
+              "Шанхай"
+            ],
+            "gloss": "Шанхай — сад Юйюань при Мин создали для радости родителей Пань Юньдуаня"
+          },
+          "russianportcity": {
+            "zh": "上海",
+            "ru": [
+              "Шанхай"
+            ],
+            "gloss": "Шанхай — через город течёт Хуанпу, важный водный транспортный путь"
           }
         },
         {
@@ -3905,6 +4125,22 @@
               "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
               "checkedAt": "2026-11-08",
               "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 5 / o1"
+            },
+            {
+              "title": "Summer Palace, an Imperial Garden in Beijing — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/880/",
+              "quote": "The Summer Palace in Beijing – first built in 1750, largely destroyed in the war of 1860 and restored on its original foundations in 1886 – is a masterpiece of Chinese landscape garden design.",
+              "authority": "official",
+              "checkedAt": "2026-10-23",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 7 / o4; original: reused-accepted-dossier-source-not-freshly-fetched"
+            },
+            {
+              "title": "雍和宫藏传佛教艺术博物馆 — 北京市文物局",
+              "url": "https://wwj.beijing.gov.cn/bjww/362771/362772/545817/index.html",
+              "quote": "雍和宫是清代皇家藏传佛教寺院，也是北京地区现存最大的一座藏传佛教寺院……乾隆九年（1744年）改为藏传佛教格鲁派寺院。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 18 / o4; original: fresh-web-search-result-full-article-text"
             }
           ],
           "olympiad": [
@@ -3928,6 +4164,20 @@
               "Пекин"
             ],
             "gloss": "Пекин — Белая пагода парка Бэйхай стала одним из символов города"
+          },
+          "yuyuancity": {
+            "zh": "北京",
+            "ru": [
+              "Пекин"
+            ],
+            "gloss": "Пекин — Ихэюань восстановили после разрушения во время войны 1860 года"
+          },
+          "maitreyacity": {
+            "zh": "北京",
+            "ru": [
+              "Пекин"
+            ],
+            "gloss": "Пекин — Юнхэгун стал монастырём тибетского буддизма в XVIII веке"
           }
         },
         {
@@ -4778,7 +5028,10 @@
               "url": "https://www.prlib.ru/history/1955256",
               "quote": "С 1478 по 1712 гг. Москва являлась столицей Русского государства. После перенесения Петром I столицы в Санкт-Петербург Москва сохранила роль «второй столицы», поскольку здесь в Успенском соборе Кремля проходили коронации российских монархов. 12 марта 1918 г. Москва провозглашена столицей РСФСР, с 1922 по 1991 гг. – столица СССР.",
               "authority": "academic",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "additionalQuotes": [
+                "Первое летописное упоминание о Москве\n4 апреля 1147"
+              ]
             },
             {
               "title": "跟着习主席看世界丨在这“梨花开遍了天涯”的季节 去“三好”邻邦家做客 — 央广网",
@@ -4803,6 +5056,14 @@
               "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
               "checkedAt": "2026-11-08",
               "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 10 / o1"
+            },
+            {
+              "title": "Мавзолей В.И. Ленина — Культура.РФ",
+              "url": "https://www.culture.ru/institutes/13809/mavzolei-v-i-lenina",
+              "quote": "Мавзолей В.И. Ленина. Москва, Красная площадь",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №13, o1, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-official-culture-portal-indexed-full-article-text; direct open timed out"
             }
           ],
           "olympiad": [
@@ -4837,6 +5098,27 @@
               "Москва"
             ],
             "gloss": "Москва — дружественные партнёрские связи с Пекином установлены в 1995 году"
+          },
+          "historicagecity": {
+            "zh": "莫斯科",
+            "ru": [
+              "Москва"
+            ],
+            "gloss": "Москва — летописная история города отсчитывается с 1147 года"
+          },
+          "leninbirthcity": {
+            "zh": "莫斯科",
+            "ru": [
+              "Москва"
+            ],
+            "gloss": "Москва — на Красной площади находится Мавзолей Ленина."
+          },
+          "fareastcity": {
+            "zh": "莫斯科",
+            "ru": [
+              "Москва"
+            ],
+            "gloss": "Москва — на Москве-реке, в средней части Восточно-Европейской равнины"
           }
         },
         {
@@ -4897,6 +5179,14 @@
               "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
               "checkedAt": "2026-11-08",
               "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 10 / o2"
+            },
+            {
+              "title": "Экскурсии — музей «Смольный»",
+              "url": "https://smolny-museum.ru/tours_sm",
+              "quote": "увидят исторический Актовый зал, рабочий кабинет и квартиру главы Первого Советского правительства",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №13, o2, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-museum-indexed-page-text"
             }
           ],
           "olympiad": [
@@ -4912,6 +5202,13 @@
               "Санкт-Петербург"
             ],
             "gloss": "Санкт-Петербург — побратимские связи с Шанхаем установлены в 1988 году"
+          },
+          "leninbirthcity": {
+            "zh": "圣彼得堡",
+            "ru": [
+              "Санкт-Петербург"
+            ],
+            "gloss": "Санкт-Петербург — в Смольном показывают рабочий кабинет и квартиру Ленина."
           }
         },
         {
@@ -4978,7 +5275,14 @@
           "core": true,
           "skipSides": [
             "region"
-          ]
+          ],
+          "historicagecity": {
+            "zh": "下诺夫哥罗德",
+            "ru": [
+              "Нижний Новгород"
+            ],
+            "gloss": "Нижний Новгород — основан в 1221 году при слиянии Оки и Волги"
+          }
         },
         {
           "id": "city-ru-kazan",
@@ -5051,6 +5355,14 @@
               "authority": "official",
               "checkedAt": "2026-11-07",
               "verificationMethod": "checked-exact-primary-indexed-excerpt"
+            },
+            {
+              "title": "Круглый стол к 150-летию В.И. Ульянова-Ленина — Казанский федеральный университет",
+              "url": "https://media.kpfu.ru/node/87426",
+              "quote": "Будучи первокурсником юридического факультета, Владимир Ульянов … на студенческой сходке в декабре 1887 г.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №13, o3, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-university-page-opened-and-text-read"
             }
           ],
           "olympiad": [
@@ -5063,6 +5375,13 @@
               "Казань"
             ],
             "gloss": "Казань — саммит проходил 22–24 октября 2024 года."
+          },
+          "leninbirthcity": {
+            "zh": "喀山",
+            "ru": [
+              "Казань"
+            ],
+            "gloss": "Казань — Ленин учился на юридическом факультете университета в 1887 году."
           }
         },
         {
@@ -5653,7 +5972,14 @@
           "core": true,
           "skipSides": [
             "region"
-          ]
+          ],
+          "fareastcity": {
+            "zh": "叶卡捷琳堡",
+            "ru": [
+              "Екатеринбург"
+            ],
+            "gloss": "Екатеринбург — на восточном склоне Урала, на реке Исети"
+          }
         },
         {
           "id": "city-ru-novosibirsk",
@@ -6528,6 +6854,275 @@
             ],
             "gloss": "Пермь — административный центр Пермского края."
           }
+        },
+        {
+          "id": "city-leshan",
+          "name": {
+            "zh": "乐山",
+            "ru": [
+              "Лэшань"
+            ],
+            "gloss": "Лэшань — сидящий Будда высотой 71 метр высечен в скале в эпоху Тан",
+            "ref": "nature/scenicplaces/sp-leshan"
+          },
+          "maitreyacity": {
+            "zh": "乐山",
+            "ru": [
+              "Лэшань"
+            ],
+            "gloss": "Лэшань — сидящий Будда высотой 71 метр высечен в скале в эпоху Тан"
+          },
+          "sources": [
+            {
+              "title": "乐山市乐山大佛景区 — 文化和旅游部",
+              "url": "https://sjfw.mct.gov.cn/site/dataservice/culdetails?curId=10&id=35049",
+              "quote": "乐山大佛景区地处四川省乐山市市中区南……乐山大佛又称嘉州凌云寺大弥勒石像，于唐代开元元年（713年）动工，贞元十九年（803年）完工……佛像通高71米，为世界现存最大露天摩崖石刻造像。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 18 / keySources[0]; original: fresh-web-page-text"
+            },
+            {
+              "title": "跟着档案游巴蜀：峨眉山—乐山大佛 — 重庆市档案局",
+              "url": "https://jda.cq.gov.cn/web/article/1464346334284701696/web/content_1464346334284701696.html",
+              "quote": "乐山大佛，这座世界上最大的弥勒石刻造像壁立千仞、端坐三江，通高71米。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 18 / keySources[1]; original: fresh-web-search-result-text"
+            }
+          ],
+          "olympiad": [
+            "2025-26-mun-kgd-54"
+          ]
+        },
+        {
+          "id": "city-ru-yaroslavl",
+          "name": {
+            "zh": "雅罗斯拉夫尔",
+            "ru": [
+              "Ярославль"
+            ],
+            "gloss": "Ярославль — у слияния Волги и Которосли; исторический центр в списке ЮНЕСКО"
+          },
+          "historicagecity": {
+            "zh": "雅罗斯拉夫尔",
+            "ru": [
+              "Ярославль"
+            ],
+            "gloss": "Ярославль — у слияния Волги и Которосли; исторический центр в списке ЮНЕСКО"
+          },
+          "sources": [
+            {
+              "title": "Исторический центр Ярославля — Центр всемирного наследия ЮНЕСКО",
+              "url": "https://whc.unesco.org/ru/list/1170",
+              "quote": "Situated at the confluence of the Volga and Kotorosl Rivers",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №9, o2, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-UNESCO-property-page; title and inscription status also inspected"
+            },
+            {
+              "title": "Городской округ город Ярославль — Совет муниципальных образований Ярославской области",
+              "url": "https://smo.yarregion.ru/index.php/munitsipalnye-obrazovaniya/gorodskoj-okrug-gorod-yaroslavl",
+              "quote": "Город основан в 1010 году.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №9, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-official-indexed-excerpt; direct-page request timed out, not represented as successful full fetch"
+            }
+          ],
+          "olympiad": [
+            "2025-26-shk-mosobl-8"
+          ]
+        },
+        {
+          "id": "city-ru-sergiev-posad",
+          "name": {
+            "zh": "谢尔吉耶夫波萨德",
+            "ru": [
+              "Сергиев Посад"
+            ],
+            "gloss": "Сергиев Посад — учреждён указом Екатерины II в 1782 году"
+          },
+          "historicagecity": {
+            "zh": "谢尔吉耶夫波萨德",
+            "ru": [
+              "Сергиев Посад"
+            ],
+            "gloss": "Сергиев Посад — учреждён указом Екатерины II в 1782 году"
+          },
+          "sources": [
+            {
+              "title": "Лаврская летопись. XVIII век — Свято-Троицкая Сергиева лавра",
+              "url": "https://lavra.ru/history/xviii-vek/",
+              "quote": "1782 г.\n22 марта – императрицей Екатериной II был подписан указ об учреждении Сергиева Посада.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №9, o3, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-institutional-history-page; XVIII-century timeline"
+            },
+            {
+              "title": "Подписание Екатериной II указа об учреждении Сергиевского посада — Свято-Троицкая Сергиева лавра",
+              "url": "https://lavra.ru/history/facts/all/podpisanie-ekaterinoy-ii-ukaza-ob-uchrezhdenii-sergievskogo-posada",
+              "quote": "22 марта (2 апреля н. ст.) 1782 года императрица Екатерина II подписала указ, одним из пунктов которого повелевалось учредить из сел и слобод близ Троице-Сергиевой Лавры лежащих, «посад под имянем Сергиевской и в нем ратушу...».",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Свежий полный поисковый фрагмент первичного официального/академического сайта прочитан через web.run 2026-11-08; цитата сверена с ним, прямое открытие страницы не заявляется."
+            }
+          ]
+        },
+        {
+          "id": "city-ru-ulyanovsk",
+          "name": {
+            "zh": "乌里扬诺夫斯克",
+            "ru": [
+              "Ульяновск"
+            ],
+            "gloss": "Ульяновск — прежнее название Симбирск; переименован в 1924 году"
+          },
+          "leninbirthcity": {
+            "zh": "乌里扬诺夫斯克",
+            "ru": [
+              "Ульяновск"
+            ],
+            "gloss": "Ульяновск — прежнее название Симбирск; переименован в 1924 году"
+          },
+          "sources": [
+            {
+              "title": "История города — Ульяновская городская дума",
+              "url": "https://www.ugd.ru/o-gorode/istoriya-goroda.php",
+              "quote": "В 1924 город переименован в Ульяновск.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №13, o4, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-municipal-history-page"
+            },
+            {
+              "title": "Предисловие к выставке «Ленин» — Федеральное архивное агентство",
+              "url": "https://lenin.rusarchives.ru/predislovie",
+              "quote": "Ленин (настоящая фамилия Ульянов) родился 10 (22 по новому стилю) апреля 1870 года в г. Симбирске (ныне Ульяновск)",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №13, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-archive-exhibition-indexed-article-text"
+            },
+            {
+              "title": "Лю Яньдун в Ленинском мемориале: красный туризм и гуманитарные связи — МИД КНР / посольство",
+              "url": "https://gq.china-embassy.gov.cn/chn/zxxx/201409/t20140916_5722450.htm",
+              "quote": "乌里扬诺夫斯克是列宁的故乡，是很多中国人向往的地方。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №13, keySources[1], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-official-embassy-indexed-article-text; 2014-09-16"
+            }
+          ],
+          "olympiad": [
+            "2024-25-mun-kem-9"
+          ]
+        },
+        {
+          "id": "city-ru-khabarovsk",
+          "name": {
+            "zh": "哈巴罗夫斯克",
+            "ru": [
+              "Хабаровск"
+            ],
+            "gloss": "Хабаровск — основан в 1858 году как военный пост на Амуре"
+          },
+          "fareastcity": {
+            "zh": "哈巴罗夫斯克",
+            "ru": [
+              "Хабаровск"
+            ],
+            "gloss": "Хабаровск — основан в 1858 году как военный пост на Амуре"
+          },
+          "sources": [
+            {
+              "title": "С Днём города! — Уполномоченный по правам человека в Хабаровском крае",
+              "url": "https://pravo.khv.ru/node/1268",
+              "quote": "Пост был основан 31 мая 1858 года — эта дата считается датой основания Хабаровска.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №19, o3, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-official-indexed-article-text; adjoining text dates founding to 31 May 1858"
+            },
+            {
+              "title": "Открытие пассажирского перехода Фуюань — Хабаровск в 2026 году — Правительство города Фуюань",
+              "url": "https://www.hljfy.gov.cn/fys/c101350/202605/c04_299831.shtml",
+              "quote": "与俄罗斯远东中心城市哈巴罗夫斯克隔江相望",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №19, keySources[0], прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-municipal-government-indexed-article-text"
+            }
+          ],
+          "olympiad": [
+            "2023-24-mun-spb-3"
+          ]
+        },
+        {
+          "id": "city-ru-murmansk",
+          "name": {
+            "zh": "摩尔曼斯克",
+            "ru": [
+              "Мурманск"
+            ],
+            "gloss": "Мурманск — на северо-востоке Кольского полуострова, у Кольского залива"
+          },
+          "fareastcity": {
+            "zh": "摩尔曼斯克",
+            "ru": [
+              "Мурманск"
+            ],
+            "gloss": "Мурманск — на северо-востоке Кольского полуострова, у Кольского залива"
+          },
+          "sources": [
+            {
+              "title": "云游城市——摩尔曼斯克 — 大连外国语大学俄语学院",
+              "url": "https://ru.dlufl.edu.cn/info/1037/1349.htm",
+              "quote": "位于科拉半岛东北，临巴伦支海的科拉湾",
+              "authority": "academic",
+              "checkedAt": "2026-10-18",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №19, o4, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: reused-accepted-dossier-source-not-freshly-fetched; data/dossiers/nature.json / seas / sea-ru-kola / sources[1]"
+            },
+            {
+              "title": "Мурманская область: муниципальные образования — Министерство экономического развития Мурманской области",
+              "url": "https://minec.gov-murman.ru/documents/arkhiv/murman_region_munitsypals.pdf",
+              "quote": "Расположение: северная часть Кольского полуострова, вдоль восточного берега Кольского залива, в 50 км от выхода в Баренцево море.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Свежий полный поисковый фрагмент первичного официального/академического сайта прочитан через web.run 2026-11-08; цитата сверена с ним, прямое открытие страницы не заявляется."
+            }
+          ]
+        },
+        {
+          "id": "city-dalian",
+          "name": {
+            "zh": "大连",
+            "ru": [
+              "Далянь"
+            ],
+            "gloss": "Далянь — в российский период город носил название Дальний"
+          },
+          "russianportcity": {
+            "zh": "大连",
+            "ru": [
+              "Далянь"
+            ],
+            "gloss": "Далянь — в российский период город носил название Дальний"
+          },
+          "sources": [
+            {
+              "title": "1896–1904: аренда Люйда и формирование города-порта Далянь — Даляньский музей",
+              "url": "https://www.dlmodernmuseum.com/exhibition/detail/38.html",
+              "quote": "“达里尼”（Дальний，意为远方）",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Переиспользована принятая цитата партии 7, №20, o2, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-municipal-museum-exhibition-page; line 30"
+            },
+            {
+              "title": "中华人民共和国大连出入境边防检查站 — 国家移民管理局",
+              "url": "https://www.nia.gov.cn/n741435/n907688/n932720/n1008173/n1008190/n1008539/c1011456/content.html",
+              "quote": "大连市地处辽东半岛南端，黄渤海交界处的黄金海岸线上，是中国北方著名的海滨城市和旅游胜地，同时也是我国重要的对外贸易口岸之一",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "Свежий полный поисковый фрагмент первичного официального/академического сайта прочитан через web.run 2026-11-08; цитата сверена с ним, прямое открытие страницы не заявляется."
+            }
+          ],
+          "olympiad": [
+            "2025-26-mun-kgd-58"
+          ]
         }
       ]
     },
@@ -7110,6 +7705,469 @@
             ],
             "gloss": "Гуанси, Гуанчжоу, Хайнань — юг Китая; Гуанчжоу является городом, а не провинцией."
           }
+        }
+      ]
+    },
+    "geosymbols": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "geochar-hei",
+          "name": {
+            "zh": "黑",
+            "ru": [
+              "Хэй"
+            ],
+            "gloss": "Хэй — Хэйлунцзян, самая северная провинция Китая."
+          },
+          "sources": [
+            {
+              "title": "走进黑龙江 — правительство Хэйлунцзяна",
+              "url": "https://www.hlj.gov.cn/hlj/c108475/zjhlj.shtml",
+              "quote": "黑龙江省，简称黑。……是中国位置最北、纬度最高的省份。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 5 option o1; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Таблица названий и сокращений административных единиц — Государственное управление продовольствия и материальных резервов КНР",
+              "url": "https://www.lswz.gov.cn/html/ywpd/bzzl/2024-01/26/275402/files/29d04adc161148c0bc313cffbfecc401.pdf",
+              "quote": "河北省｜冀；黑龙江省｜黑；湖北省｜鄂；湖南省｜湘；青海省｜青。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 5 keySources[0]; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        },
+        {
+          "id": "geochar-hu",
+          "name": {
+            "zh": "湖",
+            "ru": [
+              "иероглиф ху («озеро»)"
+            ],
+            "gloss": "Ху — «озеро»: в названии Хубэй имеется в виду озеро Дунтин."
+          },
+          "sources": [
+            {
+              "title": "广东与广西的“广”指哪里 — 人民周刊",
+              "url": "http://paper.people.com.cn/rmzk/html/2021-04/23/content_3047879.htm",
+              "quote": "中国的省份很有意思，河南河北的“河”指黄河，湖南湖北的“湖”指洞庭湖，山东山西的“山”指太行山，那么广东广西的“广”指什么呢？",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 5 option o2; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Таблица названий и сокращений административных единиц — Государственное управление продовольствия и материальных резервов КНР",
+              "url": "https://www.lswz.gov.cn/html/ywpd/bzzl/2024-01/26/275402/files/29d04adc161148c0bc313cffbfecc401.pdf",
+              "quote": "河北省｜冀；黑龙江省｜黑；湖北省｜鄂；湖南省｜湘；青海省｜青。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 5 keySources[0]; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "湖名之变——洋澜湖变迁纪略之一 — правительство Эчжоу",
+              "url": "https://www.ezhou.gov.cn/zjez/ezrw/ezss/202109/t20210930_431352.html",
+              "quote": "汉字字面意义上的湖，是指被陆地围合的大片积水。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 5 option o2 definitionEvidence; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ],
+          "olympiad": [
+            "2025-26-mun-kursk-6"
+          ]
+        },
+        {
+          "id": "geochar-ji",
+          "name": {
+            "zh": "冀",
+            "ru": [
+              "Цзи"
+            ],
+            "gloss": "Цзи — Хэбэй, провинция, окружающая Пекин и Тяньцзинь."
+          },
+          "sources": [
+            {
+              "title": "河北概况 — правительство Хэбэя, размещено Министерством коммерции КНР",
+              "url": "https://fdi.mofcom.gov.cn/resource/pdf/2019/12/28/b48ebd142fc04a4d984ba79ac85a5a3e.pdf",
+              "quote": "河北（hé běi），简称冀……东临渤海、内环京津。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 5 option o3; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Таблица названий и сокращений административных единиц — Государственное управление продовольствия и материальных резервов КНР",
+              "url": "https://www.lswz.gov.cn/html/ywpd/bzzl/2024-01/26/275402/files/29d04adc161148c0bc313cffbfecc401.pdf",
+              "quote": "河北省｜冀；黑龙江省｜黑；湖北省｜鄂；湖南省｜湘；青海省｜青。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 5 keySources[0]; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        },
+        {
+          "id": "geochar-qing",
+          "name": {
+            "zh": "青",
+            "ru": [
+              "Цин"
+            ],
+            "gloss": "Цин — Цинхай, названная по озеру Цинхай."
+          },
+          "sources": [
+            {
+              "title": "Цинхай — Управление гражданской авиации КНР",
+              "url": "https://www.caac.gov.cn/PHONE/GLJ_PHONE/XBGLJ/XB_YQLJ/XB_SZFMHW/201604/t20160428_36916.html",
+              "quote": "因境内有国内最大的内陆咸水湖——青海湖而得名，简称青。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 5 option o4; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Таблица названий и сокращений административных единиц — Государственное управление продовольствия и материальных резервов КНР",
+              "url": "https://www.lswz.gov.cn/html/ywpd/bzzl/2024-01/26/275402/files/29d04adc161148c0bc313cffbfecc401.pdf",
+              "quote": "河北省｜冀；黑龙江省｜黑；湖北省｜鄂；湖南省｜湘；青海省｜青。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 5 keySources[0]; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        }
+      ]
+    },
+    "geocounts": {
+      "columns": {
+        "name": "zh",
+        "officialtimecount": "zh",
+        "landneighborcount": "zh",
+        "provincialcount": "zh",
+        "about": "ru"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "geocount-china",
+          "name": {
+            "zh": "中国",
+            "ru": [
+              "Китай"
+            ]
+          },
+          "officialtimecount": {
+            "zh": "一",
+            "gloss": "Один — единое пекинское время, опережающее UTC на 8 часов"
+          },
+          "landneighborcount": {
+            "zh": "14",
+            "gloss": "14 — общая длина сухопутной границы Китая превышает 22 тысячи км"
+          },
+          "provincialcount": {
+            "zh": "34",
+            "gloss": "34 — из них пять автономных районов и два особых административных района"
+          },
+          "about": "Китай: единое официальное пекинское время UTC+8; 14 сухопутных соседей; 34 единицы провинциального уровня по официальной классификации КНР, включающей Тайвань. Материковый статистический охват отличается от официальной административной классификации.",
+          "sources": [
+            {
+              "title": "春分工程·科学百科｜北京时间是如何确定的？ — 中国科学院大学科协",
+              "url": "https://kexie.ucas.ac.cn/index.php/zh/cfgc/dtgz/311-2024-11-18-07-09-22",
+              "quote": "中华人民共和国全境采用的国家标准时",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-university-expert-page; expert Chen Jiang, National Time Service Center; lines 33 and 37"
+            },
+            {
+              "title": "«Китайское стандартное время» включено в терминологический стандарт — Государственное управление по регулированию рынка / Правительство КНР",
+              "url": "https://app.www.gov.cn/govdata/gov/202504/26/527808/article.html",
+              "quote": "超前协调世界时（UTC）8小时",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-regulator-announcement-indexed-article-text; 2025-04-26"
+            },
+            {
+              "title": "Заместитель директора Департамента границ и морских дел о границах КНР — МИД КНР",
+              "url": "https://www.mfa.gov.cn/web/ziliao_674904/zt_674979/dnzt_674981/qtzt/wjdjtwlft_675057/ftsl_675059/201302/t20130220_7953784.shtml",
+              "quote": "陆地边界长度达到22000多公里，有14个陆地邻国",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 11 keySources; original: fresh-primary-ministry-interview-page; official answer, not introductory reader question"
+            },
+            {
+              "title": "外交部条约法律司司长谈中国与邻国的划界工作 — 中国驻纽约总领事馆",
+              "url": "https://newyork.china-consulate.gov.cn/xw/200508/t20050831_4229589.htm",
+              "quote": "刘振民：中国同14个国家接壤，陆地边界总长22000多公里，",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-08; official interview, line 30; department director answer"
+            },
+            {
+              "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+              "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-government-page-indexed-text-read 2026-11-08; count, types and named special administrative regions"
+            },
+            {
+              "title": "中华人民共和国工业和信息化部公告2018年 第7号 — 工业和信息化部",
+              "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2020/art_e6ae132e19d541348f930d1dd6654f3d.html",
+              "quote": "设置“行政区域名”34个，适用于我国的各省、自治区、直辖市、特别行政区的组织，分别为：“BJ”北京市；“SH”上海市；“TJ”天津市；“CQ”重庆市；“HE”河北省；“SX”山西省；“NM”内蒙古自治区；“LN”辽宁省；“JL”吉林省；“HL”黑龙江省；“JS”江苏省；“ZJ”浙江省；“AH”安徽省；“FJ”福建省；“JX”江西省；“SD”山东省；“HA”河南省；“HB”湖北省；“HN”湖南省；“GD”广东省；“GX”广西壮族自治区；“HI”海南省；“SC”四川省；“GZ”贵州省；“YN”云南省；“XZ”西藏自治区；“SN”陕西省；“GS”甘肃省；“QH”青海省；“NX”宁夏回族自治区；“XJ”新疆维吾尔自治区；“TW”台湾省；“HK”香港特别行政区；“MO”澳门特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-ministry-announcement-indexed-text-read 2026-11-08; all 34 administrative labels including Taiwan, Hong Kong and Macao"
+            },
+            {
+              "title": "中华人民共和国2024年国民经济和社会发展统计公报 — 国家统计局",
+              "url": "https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html",
+              "quote": "各项统计数据均未包括香港特别行政区、澳门特别行政区和台湾省。 … 我国大陆31个省、自治区、直辖市",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 15 option preview-mainland-31; original: fresh-primary-statistical-bulletin-indexed-text; notes [1] and [5]"
+            }
+          ],
+          "core": false,
+          "olympiad": [
+            "2025-26-mun-irk-2",
+            "2025-26-mun-sverd-56",
+            "2022-23-mun-lenobl-58"
+          ]
+        },
+        {
+          "id": "geocount-alternative-1",
+          "name": {
+            "zh": "八、10、23"
+          },
+          "officialtimecount": {
+            "zh": "八",
+            "gloss": "Восемь — смещение пекинского времени от UTC в часах, а не число поясов"
+          },
+          "landneighborcount": {
+            "zh": "10",
+            "gloss": "10 — на четыре меньше подтверждённого числа сухопутных соседей"
+          },
+          "provincialcount": {
+            "zh": "23",
+            "gloss": "23 — число провинций, одного из типов единиц провинциального уровня"
+          },
+          "about": "Отдельные контекстные значения счёта; строка не обозначает страну и не задаёт связь между тремя колонками. Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц.",
+          "sources": [
+            {
+              "title": "春分工程·科学百科｜北京时间是如何确定的？ — 中国科学院大学科协",
+              "url": "https://kexie.ucas.ac.cn/index.php/zh/cfgc/dtgz/311-2024-11-18-07-09-22",
+              "quote": "中华人民共和国全境采用的国家标准时",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-university-expert-page; expert Chen Jiang, National Time Service Center; lines 33 and 37; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            },
+            {
+              "title": "«Китайское стандартное время» включено в терминологический стандарт — Государственное управление по регулированию рынка / Правительство КНР",
+              "url": "https://app.www.gov.cn/govdata/gov/202504/26/527808/article.html",
+              "quote": "超前协调世界时（UTC）8小时",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-regulator-announcement-indexed-article-text; 2025-04-26; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            },
+            {
+              "title": "Заместитель директора Департамента границ и морских дел о границах КНР — МИД КНР",
+              "url": "https://www.mfa.gov.cn/web/ziliao_674904/zt_674979/dnzt_674981/qtzt/wjdjtwlft_675057/ftsl_675059/201302/t20130220_7953784.shtml",
+              "quote": "陆地边界长度达到22000多公里，有14个陆地邻国",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 11 keySources; original: fresh-primary-ministry-interview-page; official answer, not introductory reader question; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            },
+            {
+              "title": "外交部条约法律司司长谈中国与邻国的划界工作 — 中国驻纽约总领事馆",
+              "url": "https://newyork.china-consulate.gov.cn/xw/200508/t20050831_4229589.htm",
+              "quote": "刘振民：中国同14个国家接壤，陆地边界总长22000多公里，",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-08; official interview, line 30; department director answer; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            },
+            {
+              "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+              "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-government-page-indexed-text-read 2026-11-08; count, types and named special administrative regions; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            },
+            {
+              "title": "中华人民共和国工业和信息化部公告2018年 第7号 — 工业和信息化部",
+              "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2020/art_e6ae132e19d541348f930d1dd6654f3d.html",
+              "quote": "设置“行政区域名”34个，适用于我国的各省、自治区、直辖市、特别行政区的组织，分别为：“BJ”北京市；“SH”上海市；“TJ”天津市；“CQ”重庆市；“HE”河北省；“SX”山西省；“NM”内蒙古自治区；“LN”辽宁省；“JL”吉林省；“HL”黑龙江省；“JS”江苏省；“ZJ”浙江省；“AH”安徽省；“FJ”福建省；“JX”江西省；“SD”山东省；“HA”河南省；“HB”湖北省；“HN”湖南省；“GD”广东省；“GX”广西壮族自治区；“HI”海南省；“SC”四川省；“GZ”贵州省；“YN”云南省；“XZ”西藏自治区；“SN”陕西省；“GS”甘肃省；“QH”青海省；“NX”宁夏回族自治区；“XJ”新疆维吾尔自治区；“TW”台湾省；“HK”香港特别行政区；“MO”澳门特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-ministry-announcement-indexed-text-read 2026-11-08; all 34 administrative labels including Taiwan, Hong Kong and Macao; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            },
+            {
+              "title": "中华人民共和国2024年国民经济和社会发展统计公报 — 国家统计局",
+              "url": "https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html",
+              "quote": "各项统计数据均未包括香港特别行政区、澳门特别行政区和台湾省。 … 我国大陆31个省、自治区、直辖市",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 15 option preview-mainland-31; original: fresh-primary-statistical-bulletin-indexed-text; notes [1] and [5]; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "geocount-alternative-2",
+          "name": {
+            "zh": "三、17、32"
+          },
+          "officialtimecount": {
+            "zh": "三",
+            "gloss": "Три — на два больше числа официальных часовых поясов Китая"
+          },
+          "landneighborcount": {
+            "zh": "17",
+            "gloss": "17 — на три больше подтверждённого числа сухопутных соседей"
+          },
+          "provincialcount": {
+            "zh": "32",
+            "gloss": "32 — сумма без двух особых районов: Гонконга и Макао"
+          },
+          "about": "Отдельные контекстные значения счёта; строка не обозначает страну и не задаёт связь между тремя колонками. 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам.",
+          "sources": [
+            {
+              "title": "春分工程·科学百科｜北京时间是如何确定的？ — 中国科学院大学科协",
+              "url": "https://kexie.ucas.ac.cn/index.php/zh/cfgc/dtgz/311-2024-11-18-07-09-22",
+              "quote": "中华人民共和国全境采用的国家标准时",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-university-expert-page; expert Chen Jiang, National Time Service Center; lines 33 and 37; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            },
+            {
+              "title": "«Китайское стандартное время» включено в терминологический стандарт — Государственное управление по регулированию рынка / Правительство КНР",
+              "url": "https://app.www.gov.cn/govdata/gov/202504/26/527808/article.html",
+              "quote": "超前协调世界时（UTC）8小时",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-regulator-announcement-indexed-article-text; 2025-04-26; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            },
+            {
+              "title": "Заместитель директора Департамента границ и морских дел о границах КНР — МИД КНР",
+              "url": "https://www.mfa.gov.cn/web/ziliao_674904/zt_674979/dnzt_674981/qtzt/wjdjtwlft_675057/ftsl_675059/201302/t20130220_7953784.shtml",
+              "quote": "陆地边界长度达到22000多公里，有14个陆地邻国",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 11 keySources; original: fresh-primary-ministry-interview-page; official answer, not introductory reader question; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            },
+            {
+              "title": "外交部条约法律司司长谈中国与邻国的划界工作 — 中国驻纽约总领事馆",
+              "url": "https://newyork.china-consulate.gov.cn/xw/200508/t20050831_4229589.htm",
+              "quote": "刘振民：中国同14个国家接壤，陆地边界总长22000多公里，",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-08; official interview, line 30; department director answer; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            },
+            {
+              "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+              "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-government-page-indexed-text-read 2026-11-08; count, types and named special administrative regions; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            },
+            {
+              "title": "中华人民共和国工业和信息化部公告2018年 第7号 — 工业和信息化部",
+              "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2020/art_e6ae132e19d541348f930d1dd6654f3d.html",
+              "quote": "设置“行政区域名”34个，适用于我国的各省、自治区、直辖市、特别行政区的组织，分别为：“BJ”北京市；“SH”上海市；“TJ”天津市；“CQ”重庆市；“HE”河北省；“SX”山西省；“NM”内蒙古自治区；“LN”辽宁省；“JL”吉林省；“HL”黑龙江省；“JS”江苏省；“ZJ”浙江省；“AH”安徽省；“FJ”福建省；“JX”江西省；“SD”山东省；“HA”河南省；“HB”湖北省；“HN”湖南省；“GD”广东省；“GX”广西壮族自治区；“HI”海南省；“SC”四川省；“GZ”贵州省；“YN”云南省；“XZ”西藏自治区；“SN”陕西省；“GS”甘肃省；“QH”青海省；“NX”宁夏回族自治区；“XJ”新疆维吾尔自治区；“TW”台湾省；“HK”香港特别行政区；“MO”澳门特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-ministry-announcement-indexed-text-read 2026-11-08; all 34 administrative labels including Taiwan, Hong Kong and Macao; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            },
+            {
+              "title": "中华人民共和国2024年国民经济和社会发展统计公报 — 国家统计局",
+              "url": "https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html",
+              "quote": "各项统计数据均未包括香港特别行政区、澳门特别行政区和台湾省。 … 我国大陆31个省、自治区、直辖市",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 15 option preview-mainland-31; original: fresh-primary-statistical-bulletin-indexed-text; notes [1] and [5]; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "preview-mainland-31",
+          "name": {
+            "zh": "十一、19、31"
+          },
+          "officialtimecount": {
+            "zh": "十一",
+            "gloss": "Одиннадцать — на десять больше; Китай использует единое время"
+          },
+          "landneighborcount": {
+            "zh": "19",
+            "gloss": "19 — на пять больше подтверждённого числа сухопутных соседей"
+          },
+          "provincialcount": {
+            "zh": "31",
+            "gloss": "31 — материковые регионы; без Гонконга, Макао и Тайваня"
+          },
+          "about": "Отдельные контекстные значения счёта; строка не обозначает страну и не задаёт связь между тремя колонками. 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам.",
+          "sources": [
+            {
+              "title": "春分工程·科学百科｜北京时间是如何确定的？ — 中国科学院大学科协",
+              "url": "https://kexie.ucas.ac.cn/index.php/zh/cfgc/dtgz/311-2024-11-18-07-09-22",
+              "quote": "中华人民共和国全境采用的国家标准时",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-university-expert-page; expert Chen Jiang, National Time Service Center; lines 33 and 37; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            },
+            {
+              "title": "«Китайское стандартное время» включено в терминологический стандарт — Государственное управление по регулированию рынка / Правительство КНР",
+              "url": "https://app.www.gov.cn/govdata/gov/202504/26/527808/article.html",
+              "quote": "超前协调世界时（UTC）8小时",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 4 keySources; original: fresh-primary-regulator-announcement-indexed-article-text; 2025-04-26; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            },
+            {
+              "title": "Заместитель директора Департамента границ и морских дел о границах КНР — МИД КНР",
+              "url": "https://www.mfa.gov.cn/web/ziliao_674904/zt_674979/dnzt_674981/qtzt/wjdjtwlft_675057/ftsl_675059/201302/t20130220_7953784.shtml",
+              "quote": "陆地边界长度达到22000多公里，有14个陆地邻国",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 11 keySources; original: fresh-primary-ministry-interview-page; official answer, not introductory reader question; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            },
+            {
+              "title": "外交部条约法律司司长谈中国与邻国的划界工作 — 中国驻纽约总领事馆",
+              "url": "https://newyork.china-consulate.gov.cn/xw/200508/t20050831_4229589.htm",
+              "quote": "刘振民：中国同14个国家接壤，陆地边界总长22000多公里，",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-08; official interview, line 30; department director answer; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            },
+            {
+              "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+              "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-government-page-indexed-text-read 2026-11-08; count, types and named special administrative regions; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            },
+            {
+              "title": "中华人民共和国工业和信息化部公告2018年 第7号 — 工业和信息化部",
+              "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2020/art_e6ae132e19d541348f930d1dd6654f3d.html",
+              "quote": "设置“行政区域名”34个，适用于我国的各省、自治区、直辖市、特别行政区的组织，分别为：“BJ”北京市；“SH”上海市；“TJ”天津市；“CQ”重庆市；“HE”河北省；“SX”山西省；“NM”内蒙古自治区；“LN”辽宁省；“JL”吉林省；“HL”黑龙江省；“JS”江苏省；“ZJ”浙江省；“AH”安徽省；“FJ”福建省；“JX”江西省；“SD”山东省；“HA”河南省；“HB”湖北省；“HN”湖南省；“GD”广东省；“GX”广西壮族自治区；“HI”海南省；“SC”四川省；“GZ”贵州省；“YN”云南省；“XZ”西藏自治区；“SN”陕西省；“GS”甘肃省；“QH”青海省；“NX”宁夏回族自治区；“XJ”新疆维吾尔自治区；“TW”台湾省；“HK”香港特别行政区；“MO”澳门特别行政区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-ministry-announcement-indexed-text-read 2026-11-08; all 34 administrative labels including Taiwan, Hong Kong and Macao; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            },
+            {
+              "title": "中华人民共和国2024年国民经济和社会发展统计公报 — 国家统计局",
+              "url": "https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html",
+              "quote": "各项统计数据均未包括香港特别行政区、澳门特别行政区和台湾省。 … 我国大陆31个省、自治区、直辖市",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 15 option preview-mainland-31; original: fresh-primary-statistical-bulletin-indexed-text; notes [1] and [5]; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            }
+          ],
+          "core": false
         }
       ]
     }

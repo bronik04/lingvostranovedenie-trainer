@@ -2513,7 +2513,8 @@
         "country": "zh",
         "kind": "zh",
         "holiday": "zh",
-        "meaning": "ru"
+        "meaning": "ru",
+        "springaction": "zh"
       },
       "sides": [
         "holiday"
@@ -2568,10 +2569,25 @@
               "quote": "除夕夜以家庭为单位包饺子、包汤圆、做年糕，吃团圆饭守岁",
               "checkedAt": "2026-10-15",
               "authority": "official"
+            },
+            {
+              "title": "春节传统食品溯源 — 上海市民政局",
+              "url": "https://mzj.sh.gov.cn/lnb-wsws/20240219/0fabcb012d7f420d97c6368fe1a6014d.html",
+              "quote": "饺子作为我国北方最受喜爱的迎春佳馔……因为饺子的形状像元宝，包饺子意味着包住福运。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #11 / o4"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "springaction": {
+            "zh": "吃饺子",
+            "ru": [
+              "Пельмени"
+            ],
+            "gloss": "Пельмени — форма юаньбао связывает их с пожеланием достатка"
+          }
         },
         {
           "id": "cus-niangao",
@@ -3030,9 +3046,24 @@
               "quote": "春节从历史深处走来，经由时间积淀形成了丰富的习俗活动——如祭祖、祭灶、扫房、拜年、贴春联、穿新衣、放爆竹、逛庙会等。",
               "checkedAt": "2026-10-15",
               "authority": "official"
+            },
+            {
+              "title": "春节民俗：正月初一 — 中央纪委网站",
+              "url": "https://m.ccdi.gov.cn/content/79/0f/14397.html",
+              "quote": "这一天早起第一件事就是燃放爆竹，叫作“开门炮仗”，以哔哔叭叭的爆竹声除旧迎新，也营造出喜庆热闹的气氛。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #11 / o3"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "springaction": {
+            "zh": "放鞭炮",
+            "ru": [
+              "Петарды"
+            ],
+            "gloss": "Петарды — их новогодний треск означает проводы старого и встречу нового"
+          }
         },
         {
           "id": "cus-shousui",
@@ -4253,6 +4284,81 @@
           ],
           "olympiad": [],
           "core": true
+        },
+        {
+          "id": "cus-hongbao",
+          "name": {
+            "zh": "红包",
+            "ru": [
+              "красный конверт",
+              "хунбао"
+            ],
+            "gloss": "Красный конверт с деньгами — праздничный подарок",
+            "ref": "money/customs/hongbao"
+          },
+          "sources": [
+            {
+              "title": "Chinese New Year’s Eve — Shanghai Municipal Government",
+              "url": "https://english.shanghai.gov.cn/en-KeyDatesAndCustoms/20260121/d5fabdb61d484e0cad772a56fe343c38.html",
+              "quote": "As part of the night’s observances, elders present red envelopes containing money to the younger generation. Known as “压岁钱” (yā suì qián), these gifts originally served a protective purpose.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #11 / o1"
+            },
+            {
+              "title": "红包历史知多少 — 央视网（CCTV）",
+              "url": "http://shaoer.cctv.com/2017/01/09/ARTIDZFmqSOPwCH5CnFmhhZe170109.shtml",
+              "quote": "因为红色象征好运，所以，每逢婚嫁、添丁、新宅、开工、生日等等......皆发红包。",
+              "authority": "official",
+              "checkedAt": "2026-10-14",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; data/dossiers/money.json / customs / hongbao"
+            }
+          ],
+          "springaction": {
+            "zh": "给孩子发红包",
+            "ru": [
+              "Красные конверты детям"
+            ],
+            "gloss": "Красные конверты детям — ясуйцянь выражают пожелания защиты и благополучия"
+          }
+        },
+        {
+          "id": "cus-double-happiness",
+          "name": {
+            "zh": "囍",
+            "ru": [
+              "знак «двойная радость»"
+            ],
+            "gloss": "Знак «двойная радость» — свадебное украшение из двух соединённых 喜"
+          },
+          "sources": [
+            {
+              "title": "把“吉祥如意”穿在身上 — 国家民族事务委员会",
+              "url": "https://www.neac.gov.cn/seac/c103391/202305/1164006.shtml",
+              "quote": "“囍”是由两个单独“喜”字组合形成的吉祥字符，寓意“喜上加喜”。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #11 / o2"
+            },
+            {
+              "title": "重庆农村喜事操办习俗——婚嫁程序 — 重庆市地方志办公室",
+              "url": "https://dfz.cq.gov.cn/zqlswh/msmf_417820/202311/t20231102_12510909.html",
+              "quote": "新婚前，男方家会将新房装饰一新，家具齐全，且墙上、门窗都会贴上用红纸剪成的大大的“囍”字，以示吉祥喜庆。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #11 / keySources"
+            }
+          ],
+          "springaction": {
+            "zh": "贴囍字",
+            "ru": [
+              "Знак «двойная радость»"
+            ],
+            "gloss": "Знак «двойная радость» — свадебное украшение из двух соединённых 喜"
+          },
+          "olympiad": [
+            "2024-25-mun-irk-2"
+          ]
         }
       ]
     },
@@ -4566,6 +4672,133 @@
           ],
           "olympiad": [],
           "core": true
+        }
+      ]
+    },
+    "solarterms": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "term-guyu",
+          "name": {
+            "zh": "谷雨",
+            "gloss": "Гуюй — около 20 апреля; дожди в этот период благоприятны для роста зерновых.",
+            "ru": [
+              "Гуюй"
+            ]
+          },
+          "sources": [
+            {
+              "title": "二十四节气 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/art/detail/id/10348.html",
+              "quote": "谷雨：4月20日前后，雨水增多，利于谷类生长。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 14 option o1; original: fresh-primary-page-opened-and-text-read"
+            },
+            {
+              "title": "什么是二十四节气？ — 中国科学院地理科学与资源研究所",
+              "url": "https://igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692918.html",
+              "quote": "二十四节气是反映一年中自然现象和农事活动季节特征的二十四个节候。即立春、雨水、惊蛰、春分、清明、谷雨、立夏、小满、芒种、夏至、小暑、大暑、立秋、处暑、白露、秋分、寒露、霜降、立冬、小雪、大雪、冬至、小寒、大寒。 谷雨是降雨开始增多，有利于谷物生长；",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-08"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "term-lixia",
+          "name": {
+            "zh": "立夏",
+            "gloss": "Лися — начало календарного лета; приходится на первые числа мая.",
+            "ru": [
+              "Лися"
+            ]
+          },
+          "sources": [
+            {
+              "title": "什么是二十四节气？ — 中国科学院地理科学与资源研究所",
+              "url": "https://igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692918.html",
+              "quote": "立春、立夏、立秋、立冬分别表示春夏秋冬四季的开始；",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 14 option o2; original: fresh-primary-page-opened-and-text-read"
+            },
+            {
+              "title": "二十四节气 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/art/detail/id/10348.html",
+              "quote": "立夏：5月5日或6日“立夏”。万物生长，欣欣向荣。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-08"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "term-xiazhi",
+          "name": {
+            "zh": "夏至",
+            "gloss": "Сячжи — после этого дня световой день в Северном полушарии начинает убывать.",
+            "ru": [
+              "Сячжи"
+            ]
+          },
+          "sources": [
+            {
+              "title": "节气自然笔记 | 夏至 — 国家林业和草原局",
+              "url": "https://www.forestry.gov.cn/c/www/lcdt/630694.jhtml",
+              "quote": "夏至这天，太阳几乎直射北回归线，此时，北半球各地的白昼时间达到全年最长。过了夏至，北半球各地的白昼开始逐渐变短。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 14 option o3; original: fresh-primary-page-opened-and-text-read"
+            },
+            {
+              "title": "二十四节气 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/art/detail/id/10348.html",
+              "quote": "夏至：6月22日前后，日光直射北回归线，出现“日北至，日长至，日影短至”，故曰“夏至”。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 14 keySources; original: fresh-primary-page-opened-and-text-read"
+            }
+          ],
+          "core": false,
+          "olympiad": [
+            "2023-24-shk-mosobl-19"
+          ]
+        },
+        {
+          "id": "term-xiaoshu",
+          "name": {
+            "zh": "小暑",
+            "gloss": "Сяошу — около 7 июля; в большинстве районов Китая устанавливается жаркая погода.",
+            "ru": [
+              "Сяошу"
+            ]
+          },
+          "sources": [
+            {
+              "title": "二十四节气 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/art/detail/id/10348.html",
+              "quote": "小暑：7月7日前后，入暑，标志着我国大部分地区进入炎热季节。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 14 option o4; original: fresh-primary-page-opened-and-text-read"
+            },
+            {
+              "title": "什么是二十四节气？ — 中国科学院地理科学与资源研究所",
+              "url": "https://igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692918.html",
+              "quote": "二十四节气是反映一年中自然现象和农事活动季节特征的二十四个节候。即立春、雨水、惊蛰、春分、清明、谷雨、立夏、小满、芒种、夏至、小暑、大暑、立秋、处暑、白露、秋分、寒露、霜降、立冬、小雪、大雪、冬至、小寒、大寒。 小暑、大暑是一年中最炎热的季节；",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-08"
+            }
+          ],
+          "core": false
         }
       ]
     }

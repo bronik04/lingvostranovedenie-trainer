@@ -1,0 +1,917 @@
+{
+  "reviewId": "regional-2026-11-08-batch-7",
+  "date": "2026-11-08",
+  "state": "validated-ready-for-publication",
+  "publicationAuthorized": true,
+  "selectedCount": 20,
+  "acceptedEmbeddings": 20,
+  "draftEmbeddings": 0,
+  "visibleCountBefore": 1045,
+  "expectedVisibleCountAfter": 1091,
+  "fullBankCount": 1269,
+  "approvedManifestHash": "e8f6dd380d4b732d3c9e59eb546f24efa42137b98f1f16bacbf3fc98d7384f5b",
+  "excludedFromCurrentBatch": [],
+  "items": [
+    {
+      "reviewNumber": 1,
+      "questionId": "2018-19-mun-lenobl-55",
+      "dossier": "cuisine",
+      "dossierQuestion": "cuisine-q108",
+      "status": "accepted",
+      "fact": {
+        "table": "cuisines",
+        "row": "cs-zhe",
+        "ask": "regionalname"
+      },
+      "optionRows": {
+        "o1": "cs-lu",
+        "o2": "cs-zhe",
+        "o3": "cs-xiang",
+        "preview-guangdong-cuisine": "preview-guangdong-cuisine"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 2,
+      "questionId": "2022-23-shk-mosobl-16",
+      "dossier": "people",
+      "dossierQuestion": "people-q35",
+      "status": "accepted",
+      "fact": {
+        "table": "anthemfigures",
+        "row": "anthem-ru-alexandrov",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "anthem-ru-glinka",
+        "o2": "anthem-ru-alexandrov",
+        "o3": "anthem-ru-mikhalkov",
+        "o4": "anthem-ru-tchaikovsky"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 3,
+      "questionId": "2018-19-mun-spb-5",
+      "dossier": "dynasties",
+      "dossierQuestion": "dynasties-q126",
+      "status": "accepted",
+      "fact": {
+        "table": "states",
+        "row": "state-lu",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "state-qin",
+        "o2": "state-lu",
+        "o3": "state-wei",
+        "preview-qi-state": "preview-qi-state"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 4,
+      "questionId": "2025-26-mun-irk-2",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q143",
+      "status": "accepted",
+      "fact": {
+        "table": "geocounts",
+        "row": "geocount-china",
+        "ask": "officialtimecount"
+      },
+      "optionRows": {
+        "o1": "geocount-alternative-1",
+        "o2": "geocount-alternative-2",
+        "o3": "geocount-china",
+        "o4": "preview-mainland-31"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 5,
+      "questionId": "2020-21-mun-spb-10",
+      "dossier": "sets",
+      "dossierQuestion": "sets-q16",
+      "status": "accepted",
+      "fact": {
+        "table": "plants",
+        "row": "pl-mudan",
+        "ask": "flowerlabel"
+      },
+      "optionRows": {
+        "o1": "pl-he",
+        "o2": "pl-mudan",
+        "o3": "pl-ju",
+        "preview-meihua": "preview-meihua"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 6,
+      "questionId": "2025-26-mun-komi-55",
+      "dossier": "dynasties",
+      "dossierQuestion": "dynasties-q127",
+      "status": "accepted",
+      "fact": {
+        "table": "dynasties",
+        "row": "dyn-qing",
+        "ask": "qingreignperiod"
+      },
+      "optionRows": {
+        "o1": "dyn-qing",
+        "o2": "qing-interval-1644-1910",
+        "o3": "qing-interval-1644-1913",
+        "o4": "qing-interval-1644-1914"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 7,
+      "questionId": "2023-24-shk-mosobl-15",
+      "dossier": "people",
+      "dossierQuestion": "people-q36",
+      "status": "accepted",
+      "fact": {
+        "table": "performers",
+        "row": "performer-meilanfang",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "performer-chengyanqiu",
+        "o2": "performer-meilanfang",
+        "o3": "performer-majinfeng",
+        "o4": "performer-shangxiaoyun"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 8,
+      "questionId": "2019-20-mun-khab-8",
+      "dossier": "painting",
+      "dossierQuestion": "painting-q111",
+      "status": "accepted",
+      "fact": {
+        "table": "terms",
+        "row": "art-t-jia",
+        "ask": "studymaterial"
+      },
+      "optionRows": {
+        "o1": "art-t-xuanzhi",
+        "o2": "art-t-huimo",
+        "o3": "art-t-duanyan",
+        "o4": "art-t-jia"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 9,
+      "questionId": "2025-26-shk-mosobl-8",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q144",
+      "status": "accepted",
+      "fact": {
+        "table": "cities",
+        "row": "city-ru-yaroslavl",
+        "ask": "historicagecity"
+      },
+      "optionRows": {
+        "o1": "city-ru-moscow",
+        "o2": "city-ru-yaroslavl",
+        "o3": "city-ru-sergiev-posad",
+        "o4": "city-ru-nizhny-novgorod"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 10,
+      "questionId": "2020-21-mun-spb-1",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q116",
+      "status": "accepted",
+      "fact": {
+        "table": "works",
+        "row": "lit-w-lunyu",
+        "ask": "quotationbook"
+      },
+      "optionRows": {
+        "o1": "lit-w-daxue",
+        "o2": "lit-w-mengzi",
+        "o3": "lit-w-lunyu",
+        "preview-zhongyong": "preview-zhongyong"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 11,
+      "questionId": "2025-26-mun-sverd-56",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q145",
+      "status": "accepted",
+      "fact": {
+        "table": "geocounts",
+        "row": "geocount-china",
+        "ask": "landneighborcount"
+      },
+      "optionRows": {
+        "o1": "geocount-alternative-1",
+        "o2": "geocount-china",
+        "o3": "geocount-alternative-2",
+        "o4": "preview-mainland-31"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 12,
+      "questionId": "2025-26-mun-krym-3",
+      "dossier": "nature",
+      "dossierQuestion": "nature-q169",
+      "status": "accepted",
+      "fact": {
+        "table": "engineering",
+        "row": "eng-zhaozhouqiao",
+        "ask": "ancientbridgename"
+      },
+      "optionRows": {
+        "o1": "eng-humen",
+        "o2": "eng-zhaozhouqiao",
+        "o3": "eng-jinmen-label",
+        "preview-lugouqiao": "preview-lugouqiao"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 13,
+      "questionId": "2024-25-mun-kem-9",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q146",
+      "status": "accepted",
+      "fact": {
+        "table": "cities",
+        "row": "city-ru-ulyanovsk",
+        "ask": "leninbirthcity"
+      },
+      "optionRows": {
+        "o1": "city-ru-moscow",
+        "o2": "city-ru-saint-petersburg",
+        "o3": "city-ru-kazan",
+        "o4": "city-ru-ulyanovsk"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 14,
+      "questionId": "2023-24-shk-mosobl-19",
+      "dossier": "holidays",
+      "dossierQuestion": "holidays-q56",
+      "status": "accepted",
+      "fact": {
+        "table": "solarterms",
+        "row": "term-xiazhi",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "term-guyu",
+        "o2": "term-lixia",
+        "o3": "term-xiazhi",
+        "o4": "term-xiaoshu"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 15,
+      "questionId": "2022-23-mun-lenobl-58",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q147",
+      "status": "accepted",
+      "fact": {
+        "table": "geocounts",
+        "row": "geocount-china",
+        "ask": "provincialcount"
+      },
+      "optionRows": {
+        "o1": "geocount-alternative-1",
+        "o2": "geocount-alternative-2",
+        "o3": "geocount-china",
+        "preview-mainland-31": "preview-mainland-31"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 16,
+      "questionId": "2019-20-mun-lip-2",
+      "dossier": "people",
+      "dossierQuestion": "people-q37",
+      "status": "accepted",
+      "fact": {
+        "table": "pairs",
+        "row": "pair-liangzhu",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "pair-houyi-change",
+        "o2": "pair-xi-peng",
+        "o3": "pair-sanmao-jose",
+        "o4": "pair-liangzhu"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 17,
+      "questionId": "2023-24-shk-mosobl-6",
+      "dossier": "nature",
+      "dossierQuestion": "nature-q170",
+      "status": "accepted",
+      "fact": {
+        "table": "heightvalues",
+        "row": "height-elbrus-5642",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "height-elbrus-6542",
+        "o2": "height-elbrus-5642",
+        "o3": "height-elbrus-8642",
+        "o4": "height-elbrus-4562"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 18,
+      "questionId": "2024-25-mun-volog-1",
+      "dossier": "landmarks",
+      "dossierQuestion": "landmarks-q117",
+      "status": "accepted",
+      "fact": {
+        "table": "wallmeasurements",
+        "row": "wall-survey-2012",
+        "ask": "surveyedlength2012"
+      },
+      "optionRows": {
+        "o1": "wall-survey-2012",
+        "o2": "wall-count-40196",
+        "o3": "wall-count-11196",
+        "preview-ming-wall-length": "preview-ming-wall-length"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 19,
+      "questionId": "2023-24-mun-spb-3",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q148",
+      "status": "accepted",
+      "fact": {
+        "table": "cities",
+        "row": "city-ru-khabarovsk",
+        "ask": "fareastcity"
+      },
+      "optionRows": {
+        "o1": "city-ru-yekaterinburg",
+        "o2": "city-ru-moscow",
+        "o3": "city-ru-khabarovsk",
+        "o4": "city-ru-murmansk"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 20,
+      "questionId": "2025-26-mun-kgd-58",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q149",
+      "status": "accepted",
+      "fact": {
+        "table": "cities",
+        "row": "city-dalian",
+        "ask": "russianportcity"
+      },
+      "optionRows": {
+        "o1": "city-haerbin",
+        "o2": "city-dalian",
+        "o3": "city-shanghai",
+        "o4": "city-guangzhou"
+      },
+      "exclude": []
+    }
+  ],
+  "changedCells": [
+    {
+      "dossier": "cuisine",
+      "table": "cuisines",
+      "row": "cs-lu",
+      "column": "regionalname"
+    },
+    {
+      "dossier": "cuisine",
+      "table": "cuisines",
+      "row": "cs-zhe",
+      "column": "regionalname"
+    },
+    {
+      "dossier": "cuisine",
+      "table": "cuisines",
+      "row": "cs-xiang",
+      "column": "regionalname"
+    },
+    {
+      "dossier": "sets",
+      "table": "plants",
+      "row": "pl-he",
+      "column": "flowerlabel"
+    },
+    {
+      "dossier": "sets",
+      "table": "plants",
+      "row": "pl-mudan",
+      "column": "flowerlabel"
+    },
+    {
+      "dossier": "sets",
+      "table": "plants",
+      "row": "pl-ju",
+      "column": "flowerlabel"
+    },
+    {
+      "dossier": "painting",
+      "table": "terms",
+      "row": "art-t-xuanzhi",
+      "column": "studymaterial"
+    },
+    {
+      "dossier": "painting",
+      "table": "terms",
+      "row": "art-t-huimo",
+      "column": "studymaterial"
+    },
+    {
+      "dossier": "painting",
+      "table": "terms",
+      "row": "art-t-duanyan",
+      "column": "studymaterial"
+    },
+    {
+      "dossier": "literature",
+      "table": "works",
+      "row": "lit-w-daxue",
+      "column": "quotationbook"
+    },
+    {
+      "dossier": "literature",
+      "table": "works",
+      "row": "lit-w-mengzi",
+      "column": "quotationbook"
+    },
+    {
+      "dossier": "literature",
+      "table": "works",
+      "row": "lit-w-lunyu",
+      "column": "quotationbook"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-moscow",
+      "column": "historicagecity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-nizhny-novgorod",
+      "column": "historicagecity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-moscow",
+      "column": "leninbirthcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-saint-petersburg",
+      "column": "leninbirthcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-kazan",
+      "column": "leninbirthcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-yekaterinburg",
+      "column": "fareastcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-moscow",
+      "column": "fareastcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-haerbin",
+      "column": "russianportcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-shanghai",
+      "column": "russianportcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-guangzhou",
+      "column": "russianportcity"
+    },
+    {
+      "dossier": "nature",
+      "table": "engineering",
+      "row": "eng-zhaozhouqiao",
+      "column": "ancientbridgename"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "dynasties",
+      "row": "dyn-qing",
+      "column": "qingreignperiod"
+    }
+  ],
+  "newRows": [
+    {
+      "dossier": "cuisine",
+      "table": "cuisines",
+      "row": "preview-guangdong-cuisine"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "states",
+      "row": "state-qin"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "states",
+      "row": "state-lu"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "states",
+      "row": "state-wei"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "states",
+      "row": "preview-qi-state"
+    },
+    {
+      "dossier": "sets",
+      "table": "plants",
+      "row": "preview-meihua"
+    },
+    {
+      "dossier": "people",
+      "table": "performers",
+      "row": "performer-chengyanqiu"
+    },
+    {
+      "dossier": "people",
+      "table": "performers",
+      "row": "performer-meilanfang"
+    },
+    {
+      "dossier": "people",
+      "table": "performers",
+      "row": "performer-majinfeng"
+    },
+    {
+      "dossier": "people",
+      "table": "performers",
+      "row": "performer-shangxiaoyun"
+    },
+    {
+      "dossier": "painting",
+      "table": "terms",
+      "row": "art-t-jia"
+    },
+    {
+      "dossier": "literature",
+      "table": "works",
+      "row": "preview-zhongyong"
+    },
+    {
+      "dossier": "people",
+      "table": "pairs",
+      "row": "pair-houyi-change"
+    },
+    {
+      "dossier": "people",
+      "table": "pairs",
+      "row": "pair-xi-peng"
+    },
+    {
+      "dossier": "people",
+      "table": "pairs",
+      "row": "pair-sanmao-jose"
+    },
+    {
+      "dossier": "people",
+      "table": "pairs",
+      "row": "pair-liangzhu"
+    },
+    {
+      "dossier": "people",
+      "table": "anthemfigures",
+      "row": "anthem-ru-glinka"
+    },
+    {
+      "dossier": "people",
+      "table": "anthemfigures",
+      "row": "anthem-ru-alexandrov"
+    },
+    {
+      "dossier": "people",
+      "table": "anthemfigures",
+      "row": "anthem-ru-mikhalkov"
+    },
+    {
+      "dossier": "people",
+      "table": "anthemfigures",
+      "row": "anthem-ru-tchaikovsky"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-yaroslavl"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-sergiev-posad"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-ulyanovsk"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-khabarovsk"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-murmansk"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-dalian"
+    },
+    {
+      "dossier": "nature",
+      "table": "engineering",
+      "row": "eng-humen"
+    },
+    {
+      "dossier": "nature",
+      "table": "engineering",
+      "row": "eng-jinmen-label"
+    },
+    {
+      "dossier": "nature",
+      "table": "engineering",
+      "row": "preview-lugouqiao"
+    },
+    {
+      "dossier": "nature",
+      "table": "heightvalues",
+      "row": "height-elbrus-6542"
+    },
+    {
+      "dossier": "nature",
+      "table": "heightvalues",
+      "row": "height-elbrus-5642"
+    },
+    {
+      "dossier": "nature",
+      "table": "heightvalues",
+      "row": "height-elbrus-8642"
+    },
+    {
+      "dossier": "nature",
+      "table": "heightvalues",
+      "row": "height-elbrus-4562"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geocounts",
+      "row": "geocount-china"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geocounts",
+      "row": "geocount-alternative-1"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geocounts",
+      "row": "geocount-alternative-2"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geocounts",
+      "row": "preview-mainland-31"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "dynasties",
+      "row": "qing-interval-1644-1910"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "dynasties",
+      "row": "qing-interval-1644-1913"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "dynasties",
+      "row": "qing-interval-1644-1914"
+    },
+    {
+      "dossier": "holidays",
+      "table": "solarterms",
+      "row": "term-guyu"
+    },
+    {
+      "dossier": "holidays",
+      "table": "solarterms",
+      "row": "term-lixia"
+    },
+    {
+      "dossier": "holidays",
+      "table": "solarterms",
+      "row": "term-xiazhi"
+    },
+    {
+      "dossier": "holidays",
+      "table": "solarterms",
+      "row": "term-xiaoshu"
+    },
+    {
+      "dossier": "landmarks",
+      "table": "wallmeasurements",
+      "row": "wall-count-40196"
+    },
+    {
+      "dossier": "landmarks",
+      "table": "wallmeasurements",
+      "row": "wall-count-11196"
+    },
+    {
+      "dossier": "landmarks",
+      "table": "wallmeasurements",
+      "row": "preview-ming-wall-length"
+    },
+    {
+      "dossier": "landmarks",
+      "table": "wallmeasurements",
+      "row": "wall-survey-2012"
+    }
+  ],
+  "sourceExcerptUpdates": [
+    {
+      "row": "city-ru-moscow",
+      "url": "https://www.prlib.ru/history/1955256",
+      "newExcerpt": "Первое летописное упоминание о Москве\n4 апреля 1147"
+    },
+    {
+      "row": "dyn-qing",
+      "url": "https://www.dpm.org.cn/court/lineage/226255.html",
+      "newExcerpt": "清代最后一位皇帝名溥仪 … 最后于1912年2月12日宣布宣统帝退位。"
+    },
+    {
+      "row": "city-ru-moscow",
+      "url": "https://www.prlib.ru/history/1955256",
+      "newExcerpt": "Первое летописное упоминание о Москве\n4 апреля 1147"
+    },
+    {
+      "row": "height-elbrus-5642",
+      "url": "https://rgo.ru/activity/redaction/articles/v-chest-yubileya-rgo-fyedor-konyukhov-podnyalsya-na-elbrus/",
+      "newExcerpt": "на Восточную вершину (5621 м)"
+    }
+  ],
+  "preservedPreviousPools": [
+    {
+      "dossier": "sets",
+      "question": "sets-q07",
+      "excludedNewRows": [
+        "preview-meihua"
+      ]
+    },
+    {
+      "dossier": "cuisine",
+      "question": "cuisine-q67",
+      "excludedNewRows": [
+        "preview-guangdong-cuisine"
+      ]
+    },
+    {
+      "dossier": "cuisine",
+      "question": "cuisine-q97",
+      "excludedNewRows": [
+        "preview-guangdong-cuisine"
+      ]
+    }
+  ],
+  "explanationCorrections": {
+    "4": "В Китае официально используется единое пекинское время (北京时间), соответствующее UTC+8. Географические часовые пояса и неофициальные местные практики не меняют этот официальный счёт.",
+    "7": "Мэй Ланьфан (梅兰芳) в 1935 году гастролировал в СССР и встречался с советскими театральными деятелями. Он возглавлял труппу из 24 человек.",
+    "8": "Подставки, в том числе подставка для кистей, относятся к дополнительным принадлежностям рабочего кабинета и не входят в канонический набор «четырёх драгоценностей».",
+    "11": "КНР имеет общую сухопутную границу с 14 государствами. Протяжённость сухопутной границы превышает 22 тысячи километров.",
+    "15": "Официальное административное деление КНР включает 34 единицы провинциального уровня: провинции, автономные районы, города центрального подчинения и особые административные районы. Официальная классификация включает Тайвань.",
+    "18": "По итогам государственного обследования 2012 года суммарная протяжённость учтённых стен и рвов разных эпох составляет 21196,18 км, округлённо 21196 км. Это не длина единой непрерывно сохранившейся кладки.",
+    "19": "Хабаровск (哈巴罗夫斯克) — один из главных городов российского Дальнего Востока, центр Хабаровского края. Основан в 1858 году как военный пост на Амуре.",
+    "20": "В 1898 году Россия арендовала территорию на юге Ляодунского полуострова. В 1899 году началось строительство торгового порта и города Дальний (达里尼) — современного Даляня (大连)."
+  },
+  "captionCorrections": [],
+  "authorApproval": {
+    "date": "2026-11-08",
+    "instruction": "Все вопросы принимаются, переходи к следующему этапу. После того, как встроишь их в досье, можно выложить на сайт.",
+    "broadenedPublicationInstruction": "все принятые и встроеные вопросы можно опубликовать",
+    "checkboxMeaning": "Убрать вопрос из дальнейшего отбора",
+    "reserveEditor": "Obsidian"
+  },
+  "publicationBlockers": [],
+  "resolvedFindings": [
+    {
+      "reviewNumber": 8,
+      "id": "2019-20-mun-khab-8",
+      "type": "embed-explanation-names-distractors",
+      "problem": "Исходное пояснение перечисляет 纸、墨、砚 — все три являются неверными вариантами этого отрицательного вопроса; embed_record запрещает называть дистракторы в пояснении.",
+      "requiredEditorialChange": "Перед принятием embeds добавить или объединить editorial.explanation.ru; условие, ключ и принятые подписи не менять.",
+      "proposedExplanationRu": "Подставки, в том числе подставка для кистей, относятся к дополнительным принадлежностям рабочего кабинета и не входят в канонический набор «четырёх драгоценностей».",
+      "sources": [
+        {
+          "title": "文房用品 — 故宫博物院",
+          "url": "https://www.dpm.org.cn/collection/studies.html",
+          "quote": "以笔、墨、纸、砚为文房所使用，而被人们誉为“文房四宝”。…文房用具除四宝以外，还有笔筒、笔架、墨床、墨盒、臂搁、笔洗、书镇、水丞、水勺、砚滴、砚匣、印泥、印盒、裁刀、图章、卷筒等物品，称为文房清供。",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#8/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+        }
+      ],
+      "memoryValidation": "Ниже embed_record проверяется с этой предлагаемой редакцией пояснения; без неё возвращает ошибку о 纸、墨、砚."
+    },
+    {
+      "reviewNumber": 20,
+      "field": "originalRecord.explanation.ru",
+      "issue": "Старое пояснение связывает закладку порта и города Дальний с 1898 годом; это противоречит принятой автором формулировке о начале строительства в 1899 году. Принятые questionRu, ключ, zh и подписи не менять.",
+      "suggestedCorrection": "В 1898 году Россия арендовала территорию на юге Ляодунского полуострова. В 1899 году началось строительство торгового порта и города Дальний (达里尼) — современного Даляня (大连).",
+      "sources": [
+        "https://www.dlmodernmuseum.com/exhibition/detail/38.html"
+      ],
+      "affectsAcceptedQuestion": false
+    },
+    {
+      "reviewNumber": 15,
+      "field": "originalRecord.explanation.ru",
+      "issue": "Пояснение называет неверный числовой вариант «23»: embed_record запрещает перечислять неверные варианты, даже если здесь это верное число провинций. Условие, ключ и все принятые подписи остаются точными.",
+      "suggestedCorrection": "Официальное административное деление КНР включает 34 единицы провинциального уровня: провинции, автономные районы, города центрального подчинения и особые административные районы. Официальная классификация включает Тайвань.",
+      "sources": [
+        "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+        "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2020/art_e6ae132e19d541348f930d1dd6654f3d.html"
+      ],
+      "affectsAcceptedQuestion": false
+    }
+  ],
+  "siteVisibilityGuardsAdded": [],
+  "searchAliasCorrections": [
+    {
+      "row": "state-lu",
+      "column": "name",
+      "from": [
+        "Лу"
+      ],
+      "to": [
+        "царство Лу"
+      ],
+      "reason": "Одиночное Лу находилось внутри Лу Юй, Лунь юй и лунный; уточнена только служебная поисковая форма."
+    }
+  ],
+  "releaseScope": {
+    "selectedCount": 46,
+    "newlyEmbedded": 20,
+    "previousAcceptedRestored": 26,
+    "visibleAfter": 1091,
+    "application": "data/review/2026-11-08-regional-batch-7-release-application.json"
+  },
+  "validation": {
+    "structural": "2026-11-08-regional-batch-7-release-check.json",
+    "tests": "2026-11-08-regional-batch-7-release-tests.json",
+    "browser": "2026-11-08-regional-batch-7-browser-check.json",
+    "independentReview": "2026-11-08-regional-batch-7-release-review.md"
+  }
+}

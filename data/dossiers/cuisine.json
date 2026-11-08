@@ -8,7 +8,8 @@
         "region": "zh",
         "taste": "zh",
         "dish": "zh",
-        "about": "ru"
+        "about": "ru",
+        "regionalname": "zh"
       },
       "sides": [
         "region",
@@ -76,7 +77,14 @@
           "olympiad": [
             "2024-25-pri-38"
           ],
-          "core": true
+          "core": true,
+          "regionalname": {
+            "zh": "山东菜",
+            "ru": [
+              "Шаньдунская кухня"
+            ],
+            "gloss": "Шаньдунская кухня — ценит солёно-свежий вкус и естественный вкус продуктов"
+          }
         },
         {
           "id": "cs-chuan",
@@ -362,10 +370,27 @@
               "quote": "浙菜是以杭州、宁波、绍兴和温州四种风味为代表的地方菜系。浙菜采用原料十分广泛，强调原料鲜嫩，现取现做。",
               "authority": "official",
               "checkedAt": "2026-10-22"
+            },
+            {
+              "title": "Туристические ресурсы Китая: 中国旅游地理 — учебное пособие на сайте Шаньсийского университета",
+              "url": "https://ygx.sxu.edu.cn/db/%E5%9B%BE%E4%B9%A6/%E4%B8%AD%E5%9B%BD%E6%97%85%E6%B8%B8%E5%9C%B0%E7%90%868.pdf",
+              "quote": "浙菜是由杭州、宁波、绍兴三种地方风味发展而成的菜系。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#1/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
             }
           ],
-          "olympiad": [],
-          "core": true
+          "olympiad": [
+            "2018-19-mun-lenobl-55"
+          ],
+          "core": true,
+          "regionalname": {
+            "zh": "浙江菜",
+            "ru": [
+              "Чжэцзянская кухня"
+            ],
+            "gloss": "Чжэцзянская кухня — среди её блюд креветки с чаем Лунцзин"
+          }
         },
         {
           "id": "cs-xiang",
@@ -425,7 +450,14 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "regionalname": {
+            "zh": "湖南菜",
+            "ru": [
+              "Хунаньская кухня"
+            ],
+            "gloss": "Хунаньская кухня — известна ароматной остротой и рыбьей головой под перцем"
+          }
         },
         {
           "id": "cs-hui",
@@ -472,6 +504,57 @@
           ],
           "olympiad": [],
           "core": true
+        },
+        {
+          "id": "preview-guangdong-cuisine",
+          "name": {
+            "zh": "广东菜",
+            "ru": [
+              "Гуандунская кухня"
+            ],
+            "gloss": "Гуандунская кухня — включает гуанчжоускую, чаочжоускую и хакка"
+          },
+          "regionalname": {
+            "zh": "广东菜",
+            "ru": [
+              "Гуандунская кухня"
+            ],
+            "gloss": "Гуандунская кухня — включает гуанчжоускую, чаочжоускую и хакка"
+          },
+          "sources": [
+            {
+              "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
+              "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml",
+              "quote": "粤菜即广东菜，由广府菜（即广州府菜）、潮州菜（也称潮汕菜）、东江菜（也称客家菜）三种地方风味组成，三者各具特色。在烹调上，粤菜以炒、爆为主，兼有烩、煎、烤，讲究清而不淡、鲜而不俗、嫩而不生、油而不腻。 代表年夜饭有：盆菜、白切鸡",
+              "authority": "official",
+              "checkedAt": "2026-10-22",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#1/options/preview-guangdong-cuisine; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Переиспользована принятая цитата досье cuisine/cs-yue, прочитанная локально 2026-11-08; дата checkedAt — прежняя проверка, страницу заново не загружали."
+            },
+            {
+              "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
+              "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
+              "quote": "比较著名的是中国的“八大菜系”，鲁菜（山东）、川菜（四川）、粤菜（广东）、苏菜（江苏）、闽菜（福建）、浙菜（浙江）、湘菜（湖南）、徽菜（安徽）。",
+              "authority": "official",
+              "checkedAt": "2026-10-22",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/cuisine.json/cuisines/cs-yue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "味道中国之粤菜 — 央视网",
+              "url": "https://tv.cctv.com/yskd/special/yc/index.shtml",
+              "quote": "粤菜用料广博、选料珍奇、配料精巧，烹饪时注重质和味，口味比较清淡，清中求鲜，淡中求美，鲜而不俗，嫩而不生，油而不腻。",
+              "authority": "official",
+              "checkedAt": "2026-10-22",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/cuisine.json/cuisines/cs-yue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "白切鸡 — 广州市人民政府门户网站",
+              "url": "https://www.gz.gov.cn/zlgz/gzly/msgz/tsmc/content/post_8313422.html",
+              "quote": "白切鸡是粤菜鸡肴中最普通的一种，属浸鸡类，以其制作简易，刚熟不烂，不加配料且保持原味为特点",
+              "authority": "official",
+              "checkedAt": "2026-10-22",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/cuisine.json/cuisines/cs-yue; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            }
+          ]
         }
       ]
     },
@@ -6709,6 +6792,129 @@
       ],
       "sides": [
         "name"
+      ]
+    },
+    "teawaters": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "tea-water-spring",
+          "name": {
+            "zh": "泉水",
+            "ru": [
+              "Родниковая вода"
+            ],
+            "gloss": "Родниковая вода — Лу Юй советовал выбирать медленно текущие источники"
+          },
+          "sources": [
+            {
+              "title": "陆羽煎茶法 光辉耀古今 — 天门市人民政府 / 天门市陆羽研究会",
+              "url": "https://www.tianmen.gov.cn/csly/cwh/202111/t20211103_3842760.shtml",
+              "quote": "《茶经·五之煮》：“其水，用山水上，江水中，井水下。其山水，拣乳泉、石池漫流者上……其江水，取去人远者；井，取汲多者。”",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #9 / keySources"
+            },
+            {
+              "title": "茶典籍翻译中的互文关联与模因传承 — 北京航空航天大学学报（社会科学版）",
+              "url": "https://bhxb.buaa.edu.cn/fileBJHKHTDXXBSHKXB/journal/article/bjhkhtdxxbshkxb/html/2016/4/20160412.htm",
+              "quote": "《茶经》第5章：其水，用山水上，江水中，井水下。……其山水，拣乳泉、石池漫流者上。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #9 / keySources"
+            }
+          ],
+          "olympiad": [
+            "2015-16-mun-spb-4"
+          ]
+        },
+        {
+          "id": "tea-water-river",
+          "name": {
+            "zh": "江河水",
+            "ru": [
+              "Речная вода"
+            ],
+            "gloss": "Речная вода — Лу Юй советовал брать её подальше от людных мест"
+          },
+          "sources": [
+            {
+              "title": "陆羽煎茶法 光辉耀古今 — 天门市人民政府 / 天门市陆羽研究会",
+              "url": "https://www.tianmen.gov.cn/csly/cwh/202111/t20211103_3842760.shtml",
+              "quote": "《茶经·五之煮》：“其水，用山水上，江水中，井水下。其山水，拣乳泉、石池漫流者上……其江水，取去人远者；井，取汲多者。”",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #9 / keySources"
+            },
+            {
+              "title": "茶典籍翻译中的互文关联与模因传承 — 北京航空航天大学学报（社会科学版）",
+              "url": "https://bhxb.buaa.edu.cn/fileBJHKHTDXXBSHKXB/journal/article/bjhkhtdxxbshkxb/html/2016/4/20160412.htm",
+              "quote": "《茶经》第5章：其水，用山水上，江水中，井水下。……其山水，拣乳泉、石池漫流者上。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #9 / keySources"
+            }
+          ]
+        },
+        {
+          "id": "tea-water-well",
+          "name": {
+            "zh": "井水",
+            "ru": [
+              "Колодезная вода"
+            ],
+            "gloss": "Колодезная вода — Лу Юй предпочитал колодцы, из которых часто черпают воду"
+          },
+          "sources": [
+            {
+              "title": "陆羽煎茶法 光辉耀古今 — 天门市人民政府 / 天门市陆羽研究会",
+              "url": "https://www.tianmen.gov.cn/csly/cwh/202111/t20211103_3842760.shtml",
+              "quote": "《茶经·五之煮》：“其水，用山水上，江水中，井水下。其山水，拣乳泉、石池漫流者上……其江水，取去人远者；井，取汲多者。”",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #9 / keySources"
+            },
+            {
+              "title": "茶典籍翻译中的互文关联与模因传承 — 北京航空航天大学学报（社会科学版）",
+              "url": "https://bhxb.buaa.edu.cn/fileBJHKHTDXXBSHKXB/journal/article/bjhkhtdxxbshkxb/html/2016/4/20160412.htm",
+              "quote": "《茶经》第5章：其水，用山水上，江水中，井水下。……其山水，拣乳泉、石池漫流者上。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #9 / keySources"
+            }
+          ]
+        },
+        {
+          "id": "added-yushui-rainwater",
+          "name": {
+            "zh": "雨水",
+            "ru": [
+              "Дождевая вода"
+            ],
+            "gloss": "Дождевая вода — Сюн Минъюй советовал брать осеннюю, если нет родниковой"
+          },
+          "sources": [
+            {
+              "title": "士人的品茗之道 — 中国文化研究院（周积明教授）",
+              "url": "https://chiculture.org.hk/index.php/sc/china-five-thousand-years/3174",
+              "quote": "古人称为“天泉”的雨水、雪水也因甘冽或冷冽成为文人喜爱的煎茶用水。……熊明遇《岕山茶记》则言“无泉则用天水，秋雨为上，梅雨次之”。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #9 / added-yushui-rainwater"
+            },
+            {
+              "title": "知节气 识茶事 和天下丨雨水：雨润春华，水生茶香 — 温州大学温州民俗博物馆 / 中国非物质文化遗产保护中心",
+              "url": "https://wmbwg.wzu.edu.cn/info/1015/3982.htm",
+              "quote": "除了泉水，古人还习惯用雨水来煮茶、煎茶、泡茶。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-text"
+            }
+          ]
+        }
       ]
     }
   }

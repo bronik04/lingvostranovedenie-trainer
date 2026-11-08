@@ -35,7 +35,10 @@
     "check": {
       "verdict": "accept",
       "note": "Встраивание 2017-18-zak-3, добавлены 16 садов gardens.name (Китай). «万园之园» — только 圆明园 (beijing.gov.cn в verify-cache: «被誉为…‘万园之园’»); ни один добавленный сад так не называют, подписи их верными не делают. Пояснение проверено по источнику записи (news.qq.com, 短史记, открыл сегодня): «万园之园» восходит к письму миссионера 王致诚 (Jean-Denis Attiret) 1743 г. — «Le Jardin des Jardins»; три сада и 1707 — yllhj/beijing.gov.cn; 1860 — description. Неверных вариантов не называет, 4 предложения. Форма: 公园 только у трёх пекинских парков, у ответа нет — как в олимпиадном наборе, подсказки нет."
-    }
+    },
+    "exclude": [
+      "lm-cn-huanxiu-villa"
+    ]
   },
   {
     "id": "landmarks-q10",
@@ -96,7 +99,10 @@
     "check": {
       "verdict": "accept",
       "note": "переделка 2026-10-23 через editorial.json (решение автора): «самый большой из классических садов Сучжоу»; три официальные цитаты в строке; проверяющий (Opus): accept."
-    }
+    },
+    "exclude": [
+      "lm-cn-huanxiu-villa"
+    ]
   },
   {
     "id": "landmarks-q39",
@@ -738,7 +744,8 @@
       "lm-cn-canglang-pavilion",
       "lm-cn-tuisi-garden",
       "lm-cn-geyuan",
-      "lm-cn-jingshan"
+      "lm-cn-jingshan",
+      "lm-cn-huanxiu-villa"
     ],
     "check": {
       "verdict": "accept",
@@ -1019,5 +1026,50 @@
       "int-xiangsheng",
       "int-xiangqi"
     ]
+  },
+  {
+    "id": "landmarks-q115",
+    "embeds": "2023-24-mun-klg-10",
+    "status": "accepted",
+    "fact": {
+      "table": "skyscrapers",
+      "row": "lm-cn-shanghai-tower",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
+  },
+  {
+    "id": "landmarks-q116",
+    "embeds": "2015-16-mun-spb-10",
+    "status": "accepted",
+    "fact": {
+      "table": "gardens",
+      "row": "lm-cn-liuyuan",
+      "ask": "suzhoufourgarden"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
+  },
+  {
+    "id": "landmarks-q117",
+    "embeds": "2024-25-mun-volog-1",
+    "status": "accepted",
+    "fact": {
+      "table": "wallmeasurements",
+      "row": "wall-survey-2012",
+      "ask": "surveyedlength2012"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
   }
 ]

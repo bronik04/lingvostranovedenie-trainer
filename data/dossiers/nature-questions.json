@@ -1935,5 +1935,65 @@
       "verdict": "accept",
       "note": "Автор принял вопрос, варианты и подписи 2026-11-08; локальное встраивание разрешено, публикация запрещена. Источники и соответствие проверены независимо по темам; итоговая проверка — regional-batch-5-embedding-review. Следующим прямым указанием автора разрешён выпуск остальных 15 вопросов партии5; №20 в этот выпуск не входит."
     }
+  },
+  {
+    "id": "nature-q167",
+    "embeds": "2020-21-mun-lenobl-2",
+    "status": "accepted",
+    "fact": {
+      "table": "waters",
+      "row": "wat-jinghang-canal",
+      "ask": "longestcanalname"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
+  },
+  {
+    "id": "nature-q168",
+    "embeds": "2020-21-shk-mosobl-47",
+    "status": "accepted",
+    "fact": {
+      "table": "scenicplaces",
+      "row": "sp-summer-palace",
+      "ask": "kunminghulandmark"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
+  },
+  {
+    "id": "nature-q169",
+    "embeds": "2025-26-mun-krym-3",
+    "status": "accepted",
+    "fact": {
+      "table": "engineering",
+      "row": "eng-zhaozhouqiao",
+      "ask": "ancientbridgename"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
+  },
+  {
+    "id": "nature-q170",
+    "embeds": "2023-24-shk-mosobl-6",
+    "status": "accepted",
+    "fact": {
+      "table": "heightvalues",
+      "row": "height-elbrus-5642",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
   }
 ]

@@ -629,5 +629,50 @@
       "verdict": "accept",
       "note": "Автор принял оставшиеся16вопросов партии4 и прямо разрешил встраивание/публикацию. Сохранены ключ, ID, четыре показанных варианта и все подписи; источники проверены отдельно по темам. Итоговый обзор — regional-batch-4-release-review."
     }
+  },
+  {
+    "id": "people-q35",
+    "embeds": "2022-23-shk-mosobl-16",
+    "status": "accepted",
+    "fact": {
+      "table": "anthemfigures",
+      "row": "anthem-ru-alexandrov",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
+  },
+  {
+    "id": "people-q36",
+    "embeds": "2023-24-shk-mosobl-15",
+    "status": "accepted",
+    "fact": {
+      "table": "performers",
+      "row": "performer-meilanfang",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
+  },
+  {
+    "id": "people-q37",
+    "embeds": "2019-20-mun-lip-2",
+    "status": "accepted",
+    "fact": {
+      "table": "pairs",
+      "row": "pair-liangzhu",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
   }
 ]

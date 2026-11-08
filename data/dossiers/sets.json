@@ -463,7 +463,8 @@
         "name": "zh",
         "junzi": "zh",
         "suihan": "zh",
-        "about": "ru"
+        "about": "ru",
+        "flowerlabel": "zh"
       },
       "sides": [
         "name"
@@ -676,6 +677,14 @@
               "quote": "梅兰竹菊“四君子”——高风亮节看似简单的植物材料也蕴含着深层次的内涵，比如古人将花卉人格化，于是就有了梅花清标韵高，竹子节格刚直，兰花幽谷品逸，菊花操介清逸，并喻为“四君子”。",
               "authority": "official",
               "checkedAt": "2026-10-25"
+            },
+            {
+              "title": "秋菊 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/240408.html",
+              "quote": "菊花开于草木衰微的秋天，傲视风霜，犹如隐逸者，故又名“节花”，与梅、兰、竹并誉为“四君子”。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#5/options/o3; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
             }
           ],
           "olympiad": [
@@ -684,7 +693,14 @@
           "core": true,
           "skipSides": [
             "name"
-          ]
+          ],
+          "flowerlabel": {
+            "zh": "菊花",
+            "ru": [
+              "Хризантема"
+            ],
+            "gloss": "Хризантема — осенний цветок, уподобляемый отшельнику"
+          }
         },
         {
           "id": "pl-song",
@@ -760,9 +776,24 @@
               "quote": "清丽脱俗——荷花荷花又名莲花、水芙蓉，是古代文人墨客散墨之花，更寓意于气节“出淤泥而不染，濯清涟而不妖”。端庄美丽，清新脱俗，出尘离染，象征清白纯洁。",
               "authority": "official",
               "checkedAt": "2026-10-25"
+            },
+            {
+              "title": "荷花 — 北京市园林绿化局",
+              "url": "https://yllhj.beijing.gov.cn/ztxx/bjhx/bzhz/201606/t20160629_758343.shtml",
+              "quote": "花期6-9月，单朵花期只3-4天，千瓣类能开10天以上。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#5/options/o1; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "flowerlabel": {
+            "zh": "荷花",
+            "ru": [
+              "Лотос"
+            ],
+            "gloss": "Лотос — обычно цветёт летом; в Пекине указана пора цветения с июня по сентябрь"
+          }
         },
         {
           "id": "pl-mudan",
@@ -788,11 +819,35 @@
               "quote": "花中之王——牡丹牡丹雍容华贵、富丽堂皇，素有“国色天香”、“花中之王”的美称。",
               "authority": "official",
               "checkedAt": "2026-10-25"
+            },
+            {
+              "title": "蛇年春日 牡丹花开 — 中国科学院华南植物园",
+              "url": "https://scbg.cas.cn/hx/202502/t20250216_7527842.html",
+              "quote": "牡丹花大、形美、色艳、香浓而为世人所称颂，自古以来都是富贵吉祥、高贵优雅、国色天香的象征。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#5/options/o2; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "国色天香话牡丹 — 国家林业和草原局",
+              "url": "https://www.forestry.gov.cn/c/www/dzw/365301.jhtml",
+              "quote": "牡丹就此落下不畏权势、英勇不屈的美名，再加上其雍容华贵、玉笑珠香的容颜，当之无愧地成为中国“花中之王”。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#5/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
             }
           ],
           "olympiad": [
-            "2021-22-mun-mosobl-55"
-          ]
+            "2021-22-mun-mosobl-55",
+            "2020-21-mun-spb-10"
+          ],
+          "flowerlabel": {
+            "zh": "牡丹",
+            "ru": [
+              "Пион"
+            ],
+            "gloss": "Пион — традиционный символ богатства, благополучия и благородства"
+          }
         },
         {
           "id": "pl-gui",
@@ -821,6 +876,57 @@
             }
           ],
           "olympiad": []
+        },
+        {
+          "id": "preview-meihua",
+          "name": {
+            "zh": "梅花",
+            "ru": [
+              "Слива мэй"
+            ],
+            "gloss": "Слива мэй — её цветение на холоде стало поэтическим образом стойкости"
+          },
+          "flowerlabel": {
+            "zh": "梅花",
+            "ru": [
+              "Слива мэй"
+            ],
+            "gloss": "Слива мэй — её цветение на холоде стало поэтическим образом стойкости"
+          },
+          "sources": [
+            {
+              "title": "下一站：嘉禾望岗——南京南，梅花山！ — 南京市中山陵园管理局",
+              "url": "https://zschina.nanjing.gov.cn/lyzx/202602/t20260209_5789677.html",
+              "quote": "小寒首番花信的梅花，携着 “凌寒独自开” 的孤雅风骨，在立春时节渐次盛放。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#5/options/preview-meihua; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "松竹梅与中国文化风骨 — 人民网",
+              "url": "http://culture.people.com.cn/n1/2018/1003/c1013-30324909.html",
+              "quote": "松、竹、梅被称为“岁寒三友”，梅、兰、竹、菊，被称为“四君子”，已是尽人皆知的常识。",
+              "authority": "official",
+              "checkedAt": "2026-10-25",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/sets.json/plants/pl-mei; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "为何“三友”“四君子”中都有竹？ — 人民网（广州日报）",
+              "url": "http://art.people.com.cn/n1/2017/0906/c226026-29518237.html",
+              "quote": "而同时被列入“三友”和“四君子”的植物，唯有竹和梅",
+              "authority": "official",
+              "checkedAt": "2026-10-25",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/sets.json/plants/pl-mei; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            },
+            {
+              "title": "翰苑流韵——“效法先贤 任重道远”系列之十七：花中君子 — 中国社会科学院经济研究所（中国社会科学网）",
+              "url": "http://iea.cssn.cn/xzzl/yjmb/hyly/201505/t20150526_3968313.shtml",
+              "quote": "梅花是我国传统名花之一，位居“四君子”之首。又与松、竹并称“岁寒三友”。",
+              "authority": "academic",
+              "checkedAt": "2026-10-25",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/sets.json/plants/pl-mei; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            }
+          ]
         }
       ]
     },

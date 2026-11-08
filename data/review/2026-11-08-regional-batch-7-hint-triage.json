@@ -1,0 +1,3243 @@
+{
+  "date": "2026-11-08",
+  "releaseScope": 46,
+  "baselineCaptionCandidateCount": 2596,
+  "screenedCaptionCandidateCount": 2661,
+  "directConstraints": 13,
+  "lexicalCollisionGuards": 9,
+  "captionConstraints": 32,
+  "manualSemanticConstraints": 5,
+  "constraints": [
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2018-19-mun-lenobl-55",
+      "otherId": "2018-19-mun-spb-9",
+      "evidence": "cuisine/cuisine-q108: текст называет ответ вопроса modern-china/modern-china-q06: ['杭州', 'Ханчжоу']",
+      "reason": "Принятый текст явно называет ответ другого вопроса; сохраняется текст, исключается совместный показ."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2018-19-mun-lenobl-55",
+      "otherId": "2015-16-shk-65",
+      "evidence": "cuisine/cuisine-q108: текст называет ответ вопроса provinces/provinces-q87: ['杭州', 'Ханчжоу']",
+      "reason": "Принятый текст явно называет ответ другого вопроса; сохраняется текст, исключается совместный показ."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2018-19-mun-lenobl-55",
+      "otherId": "provinces-q101",
+      "evidence": "cuisine/cuisine-q108: текст называет ответ вопроса provinces/provinces-q101: ['杭州', 'Ханчжоу']",
+      "reason": "Принятый текст явно называет ответ другого вопроса; сохраняется текст, исключается совместный показ."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2018-19-mun-lenobl-55",
+      "otherId": "2020-21-mun-mosobl-46",
+      "evidence": "cuisine/cuisine-q108: текст называет ответ вопроса provinces/provinces-q136: ['杭州', 'Ханчжоу']",
+      "reason": "Принятый текст явно называет ответ другого вопроса; сохраняется текст, исключается совместный показ."
+    },
+    {
+      "kind": "lexical-collision-guard",
+      "recordId": "2025-26-mun-4",
+      "otherId": "2022-23-mun-lenobl-58",
+      "evidence": "dynasties/dynasties-q46: текст называет ответ вопроса provinces/provinces-q147: ['34']",
+      "reason": "Консервативное разнесение лексического совпадения числа с иным контекстом; это не общность проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2018-19-mun-spb-5",
+      "otherId": "2018-19-mun-51",
+      "evidence": "dynasties/dynasties-q126: текст называет ответ вопроса people/people-q02: ['孔子', 'Конфуций']",
+      "reason": "Принятый текст явно называет ответ другого вопроса; сохраняется текст, исключается совместный показ."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2018-19-mun-spb-5",
+      "otherId": "2020-21-pri-q0b0b79",
+      "evidence": "dynasties/dynasties-q126: текст называет ответ вопроса people/people-q03: ['孔子', 'Конфуций']",
+      "reason": "Принятый текст явно называет ответ другого вопроса; сохраняется текст, исключается совместный показ."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2018-19-mun-spb-5",
+      "otherId": "2023-24-mun-krsk-4",
+      "evidence": "dynasties/dynasties-q126: текст называет ответ вопроса people/people-q29: ['孔子', 'Конфуций']",
+      "reason": "Принятый текст явно называет ответ другого вопроса; сохраняется текст, исключается совместный показ."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2024-25-mun-mosobl-9",
+      "otherId": "2020-21-mun-spb-1",
+      "evidence": "literature/literature-q113: текст называет ответ вопроса literature/literature-q116: ['«Лунь юй»']",
+      "reason": "Принятый текст явно называет ответ другого вопроса; сохраняется текст, исключается совместный показ."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2023-24-shk-mosobl-6",
+      "otherId": "nature-q161",
+      "evidence": "nature/nature-q170: текст называет ответ вопроса nature/nature-q161: ['Эльбрус']",
+      "reason": "Принятый текст явно называет ответ другого вопроса; сохраняется текст, исключается совместный показ."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2023-24-shk-mosobl-15",
+      "otherId": "2021-22-zak-q36aaab",
+      "evidence": "people/people-q36: текст называет ответ вопроса landmarks/landmarks-q89: ['Пекинская опера']",
+      "reason": "Принятый текст явно называет ответ другого вопроса; сохраняется текст, исключается совместный показ."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2019-20-mun-lip-2",
+      "otherId": "2021-22-mun-q6514a2",
+      "evidence": "people/people-q37: текст называет ответ вопроса modern-history/modern-history-q07: ['周恩来', 'Чжоу Эньлай']",
+      "reason": "Принятый текст явно называет ответ другого вопроса; сохраняется текст, исключается совместный показ."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2019-20-mun-lip-2",
+      "otherId": "2022-23-mun-orel-3",
+      "evidence": "people/people-q37: текст называет ответ вопроса modern-history/modern-history-q124: ['周恩来', 'Чжоу Эньлай']",
+      "reason": "Принятый текст явно называет ответ другого вопроса; сохраняется текст, исключается совместный показ."
+    },
+    {
+      "kind": "lexical-collision-guard",
+      "recordId": "2018-19-mun-55",
+      "otherId": "2025-26-mun-irk-2",
+      "evidence": "provinces/provinces-q03: текст называет ответ вопроса provinces/provinces-q143: ['一']",
+      "reason": "Консервативное разнесение лексического совпадения числа с иным контекстом; это не общность проверяемого факта."
+    },
+    {
+      "kind": "lexical-collision-guard",
+      "recordId": "2018-19-shk-3",
+      "otherId": "2025-26-mun-irk-2",
+      "evidence": "provinces/provinces-q15: текст называет ответ вопроса provinces/provinces-q143: ['一']",
+      "reason": "Консервативное разнесение лексического совпадения числа с иным контекстом; это не общность проверяемого факта."
+    },
+    {
+      "kind": "lexical-collision-guard",
+      "recordId": "2018-19-reg-3",
+      "otherId": "2025-26-mun-irk-2",
+      "evidence": "provinces/provinces-q27: текст называет ответ вопроса provinces/provinces-q143: ['一']",
+      "reason": "Консервативное разнесение лексического совпадения числа с иным контекстом; это не общность проверяемого факта."
+    },
+    {
+      "kind": "lexical-collision-guard",
+      "recordId": "2015-16-shk-63",
+      "otherId": "2025-26-mun-irk-2",
+      "evidence": "provinces/provinces-q28: текст называет ответ вопроса provinces/provinces-q143: ['一']",
+      "reason": "Консервативное разнесение лексического совпадения числа с иным контекстом; это не общность проверяемого факта."
+    },
+    {
+      "kind": "lexical-collision-guard",
+      "recordId": "2015-16-zak-1",
+      "otherId": "2025-26-mun-irk-2",
+      "evidence": "provinces/provinces-q29: текст называет ответ вопроса provinces/provinces-q143: ['一']",
+      "reason": "Консервативное разнесение лексического совпадения числа с иным контекстом; это не общность проверяемого факта."
+    },
+    {
+      "kind": "lexical-collision-guard",
+      "recordId": "2019-20-mun-khab-7",
+      "otherId": "2025-26-mun-irk-2",
+      "evidence": "provinces/provinces-q110: текст называет ответ вопроса provinces/provinces-q143: ['一']",
+      "reason": "Консервативное разнесение лексического совпадения числа с иным контекстом; это не общность проверяемого факта."
+    },
+    {
+      "kind": "lexical-collision-guard",
+      "recordId": "2018-19-mun-lenobl-49",
+      "otherId": "2025-26-mun-irk-2",
+      "evidence": "provinces/provinces-q134: текст называет ответ вопроса provinces/provinces-q143: ['一']",
+      "reason": "Консервативное разнесение лексического совпадения числа с иным контекстом; это не общность проверяемого факта."
+    },
+    {
+      "kind": "lexical-collision-guard",
+      "recordId": "2025-26-mun-kursk-6",
+      "otherId": "2025-26-mun-irk-2",
+      "evidence": "provinces/provinces-q139: текст называет ответ вопроса provinces/provinces-q143: ['一']",
+      "reason": "Консервативное разнесение лексического совпадения числа с иным контекстом; это не общность проверяемого факта."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2024-25-mun-kem-9",
+      "otherId": "modern-history-q98",
+      "evidence": "provinces/provinces-q146: текст называет ответ вопроса modern-history/modern-history-q98: ['列宁']",
+      "reason": "Принятый текст явно называет ответ другого вопроса; сохраняется текст, исключается совместный показ."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2018-19-mun-lenobl-55",
+      "otherId": "2024-25-pri-38",
+      "evidence": {
+        "record": "cuisine/cuisine-q108",
+        "option": "o1",
+        "zh": "山东菜",
+        "gloss": "Шаньдунская кухня — ценит солёно-свежий вкус и естественный вкус продуктов",
+        "isAnswer": false,
+        "other": "cuisine/cuisine-q67",
+        "answer": [
+          "шаньдунская кухня"
+        ],
+        "clues": [
+          "Шаньдун"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2018-19-mun-lenobl-55",
+      "otherId": "2019-20-shk-mosobl-55",
+      "evidence": {
+        "record": "cuisine/cuisine-q108",
+        "option": "o3",
+        "zh": "湖南菜",
+        "gloss": "Хунаньская кухня — известна ароматной остротой и рыбьей головой под перцем",
+        "isAnswer": false,
+        "other": "2019-20-shk-mosobl-55",
+        "answer": [
+          "湖南菜",
+          "Хунаньская кухня"
+        ],
+        "clues": [
+          "Хунань"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2018-19-mun-lenobl-55",
+      "otherId": "provinces-q99",
+      "evidence": {
+        "record": "cuisine/cuisine-q108",
+        "option": "preview-guangdong-cuisine",
+        "zh": "广东菜",
+        "gloss": "Гуандунская кухня — включает гуанчжоускую, чаочжоускую и хакка",
+        "isAnswer": false,
+        "other": "provinces/provinces-q99",
+        "answer": [
+          "Гуанчжоу"
+        ],
+        "clues": [
+          "Гуандун"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2015-16-mun-8",
+      "otherId": "2024-25-mun-tula-2",
+      "evidence": {
+        "record": "holidays/holidays-q01",
+        "option": "o4",
+        "zh": "春节",
+        "gloss": "Праздник весны — Новый год по лунному календарю, с 2024 года в списке ЮНЕСКО",
+        "isAnswer": false,
+        "other": "holidays/holidays-q53",
+        "answer": [
+          "春节",
+          "Праздник весны"
+        ],
+        "clues": [
+          "Новый год"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2016-17-shk-5",
+      "otherId": "2024-25-mun-tula-2",
+      "evidence": {
+        "record": "holidays/holidays-q04",
+        "option": "o2",
+        "zh": "春节",
+        "gloss": "Праздник весны — Новый год по лунному календарю, с 2024 года в списке ЮНЕСКО",
+        "isAnswer": false,
+        "other": "holidays/holidays-q53",
+        "answer": [
+          "春节",
+          "Праздник весны"
+        ],
+        "clues": [
+          "Новый год"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2021-22-shk-qfce22f",
+      "otherId": "2024-25-mun-tula-2",
+      "evidence": {
+        "record": "holidays/holidays-q08",
+        "option": "o1",
+        "zh": "春节",
+        "gloss": "Праздник весны — Новый год по лунному календарю, с 2024 года в списке ЮНЕСКО",
+        "isAnswer": false,
+        "other": "holidays/holidays-q53",
+        "answer": [
+          "春节",
+          "Праздник весны"
+        ],
+        "clues": [
+          "Новый год"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "holidays-q16",
+      "otherId": "2024-25-mun-tula-2",
+      "evidence": {
+        "record": "holidays/holidays-q16",
+        "option": "cus-jiaozi",
+        "zh": "春节",
+        "gloss": "Праздник весны — Новый год по лунному календарю, лепят цзяоцзы",
+        "isAnswer": false,
+        "other": "holidays/holidays-q53",
+        "answer": [
+          "春节",
+          "Праздник весны"
+        ],
+        "clues": [
+          "Новый год"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "holidays-q46",
+      "otherId": "2024-25-mun-tula-2",
+      "evidence": {
+        "record": "holidays/holidays-q46",
+        "option": "cus-jiaozi",
+        "zh": "春节",
+        "gloss": "Праздник весны — Новый год по лунному календарю, лепят цзяоцзы",
+        "isAnswer": false,
+        "other": "holidays/holidays-q53",
+        "answer": [
+          "春节",
+          "Праздник весны"
+        ],
+        "clues": [
+          "Новый год"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "holidays-q47",
+      "otherId": "2024-25-mun-tula-2",
+      "evidence": {
+        "record": "holidays/holidays-q47",
+        "option": "cus-jiaozi",
+        "zh": "春节",
+        "gloss": "Праздник весны — Новый год по лунному календарю, лепят цзяоцзы",
+        "isAnswer": false,
+        "other": "holidays/holidays-q53",
+        "answer": [
+          "春节",
+          "Праздник весны"
+        ],
+        "clues": [
+          "Новый год"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2025-26-mun-ryaz-3",
+      "otherId": "holidays-q32",
+      "evidence": {
+        "record": "holidays/holidays-q52",
+        "option": "o1",
+        "zh": "春节",
+        "gloss": "Праздник весны — Новый год по лунному календарю, с 2024 года в списке ЮНЕСКО",
+        "isAnswer": false,
+        "other": "holidays/holidays-q32",
+        "answer": [
+          "春节",
+          "Праздник весны"
+        ],
+        "clues": [
+          "2024 год"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2025-26-mun-ryaz-3",
+      "otherId": "2024-25-mun-tula-2",
+      "evidence": {
+        "record": "holidays/holidays-q52",
+        "option": "o1",
+        "zh": "春节",
+        "gloss": "Праздник весны — Новый год по лунному календарю, с 2024 года в списке ЮНЕСКО",
+        "isAnswer": false,
+        "other": "holidays/holidays-q53",
+        "answer": [
+          "春节",
+          "Праздник весны"
+        ],
+        "clues": [
+          "Новый год"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2025-26-mun-ryaz-3",
+      "otherId": "holidays-q48",
+      "evidence": {
+        "record": "holidays/holidays-q52",
+        "option": "hol-ru-xierou",
+        "zh": "谢肉节",
+        "gloss": "Масленица — народный праздник проводов зимы, древнее христианства: блины, чучело",
+        "isAnswer": false,
+        "other": "holidays/holidays-q48",
+        "answer": [
+          "谢肉节",
+          "Масленица"
+        ],
+        "clues": [
+          "Блины"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2025-26-mun-ryaz-3",
+      "otherId": "2023-24-shk-29",
+      "evidence": {
+        "record": "holidays/holidays-q52",
+        "option": "hol-ru-tuanjie",
+        "zh": "人民团结日",
+        "gloss": "День народного единства — 4 ноября, освобождение Москвы ополчением в 1612 году",
+        "isAnswer": false,
+        "other": "2023-24-shk-29",
+        "answer": [
+          "1612"
+        ],
+        "clues": [
+          "Москва"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2024-25-mun-tula-2",
+      "otherId": "2019-20-mun-q81216d",
+      "evidence": {
+        "record": "holidays/holidays-q53",
+        "option": "o1",
+        "zh": "中秋节",
+        "gloss": "Праздник середины осени — 15-е число 8-го лунного месяца: луна и юэбины",
+        "isAnswer": false,
+        "other": "holidays/holidays-q07",
+        "answer": [
+          "юэбины"
+        ],
+        "clues": [
+          "Праздник середины осени",
+          "中秋节"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2024-25-mun-tula-2",
+      "otherId": "holidays-q47",
+      "evidence": {
+        "record": "holidays/holidays-q53",
+        "option": "o2",
+        "zh": "端午节",
+        "gloss": "Дуаньу — 5-е число 5-го лунного месяца: лодки-драконы и цзунцзы",
+        "isAnswer": false,
+        "other": "holidays/holidays-q47",
+        "answer": [
+          "端午节"
+        ],
+        "clues": [
+          "цзунцзы"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2024-25-mun-tula-2",
+      "otherId": "2019-20-mun-kgd-7",
+      "evidence": {
+        "record": "holidays/holidays-q53",
+        "option": "hol-chuxi",
+        "zh": "除夕",
+        "gloss": "Чуси — канун Праздника весны, последний вечер года: семейный ужин и бдение",
+        "isAnswer": false,
+        "other": "2019-20-mun-kgd-7",
+        "answer": [
+          "除夕",
+          "канун Праздника весны",
+          "последний вечер года"
+        ],
+        "clues": [
+          "Праздник весны"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "2023-24-mun-30",
+      "evidence": {
+        "record": "modern-history/modern-history-q04",
+        "option": "o1",
+        "zh": "胡锦涛",
+        "gloss": "Ху Цзиньтао — председатель КНР в 2003–2013 гг.",
+        "isAnswer": false,
+        "other": "2023-24-mun-30",
+        "answer": [
+          "2013"
+        ],
+        "clues": [
+          "председатель КНР"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "2015-16-zak-2",
+      "evidence": {
+        "record": "modern-history/modern-history-q04",
+        "option": "o2",
+        "zh": "习近平",
+        "gloss": "Си Цзиньпин — председатель КНР с 2013 года",
+        "isAnswer": false,
+        "other": "modern-history/modern-history-q02",
+        "answer": [
+          "习近平",
+          "Си Цзиньпин"
+        ],
+        "clues": [
+          "председатель КНР"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "2023-24-mun-30",
+      "evidence": {
+        "record": "modern-history/modern-history-q04",
+        "option": "o2",
+        "zh": "习近平",
+        "gloss": "Си Цзиньпин — председатель КНР с 2013 года",
+        "isAnswer": false,
+        "other": "2023-24-mun-30",
+        "answer": [
+          "2013 год",
+          "2013"
+        ],
+        "clues": [
+          "Си Цзиньпин",
+          "председатель КНР"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "modern-history-q54",
+      "evidence": {
+        "record": "modern-history/modern-history-q04",
+        "option": "per-linzexu",
+        "zh": "林则徐",
+        "gloss": "Линь Цзэсюй — императорский комиссар, в 1839 году уничтожил опиум в Хумэне",
+        "isAnswer": false,
+        "other": "modern-history/modern-history-q54",
+        "answer": [
+          "1839 год"
+        ],
+        "clues": [
+          "Линь Цзэсюй",
+          "Хумэнь",
+          "императорский комиссар"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "modern-history-q109",
+      "evidence": {
+        "record": "modern-history/modern-history-q04",
+        "option": "per-linzexu",
+        "zh": "林则徐",
+        "gloss": "Линь Цзэсюй — императорский комиссар, в 1839 году уничтожил опиум в Хумэне",
+        "isAnswer": false,
+        "other": "modern-history/modern-history-q109",
+        "answer": [
+          "林则徐",
+          "Линь Цзэсюй"
+        ],
+        "clues": [
+          "Хумэнь"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "modern-history-q110",
+      "evidence": {
+        "record": "modern-history/modern-history-q04",
+        "option": "per-hongxiuquan",
+        "zh": "洪秀全",
+        "gloss": "Хун Сюцюань — вождь Тайпинского восстания, основатель Небесного государства",
+        "isAnswer": false,
+        "other": "modern-history/modern-history-q110",
+        "answer": [
+          "洪秀全",
+          "Хун Сюцюань"
+        ],
+        "clues": [
+          "Тайпинское восстание"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "modern-history-q60",
+      "evidence": {
+        "record": "modern-history/modern-history-q04",
+        "option": "per-kangyouwei",
+        "zh": "康有为",
+        "gloss": "Кан Ювэй — идейный вождь реформ 1898 года, автор «Датун шу»",
+        "isAnswer": false,
+        "other": "modern-history/modern-history-q60",
+        "answer": [
+          "康有为",
+          "Кан Ювэй"
+        ],
+        "clues": [
+          "реформы 1898 года"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "2020-21-reg-q227d55",
+      "evidence": {
+        "record": "modern-history/modern-history-q04",
+        "option": "per-sunzhongshan",
+        "zh": "孙中山",
+        "gloss": "Сунь Ятсен — революционер, в 1912 г. временный президент Китайской Республики",
+        "isAnswer": false,
+        "other": "2020-21-reg-q227d55",
+        "answer": [
+          "1912"
+        ],
+        "clues": [
+          "Китайская Республика"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "nature-q161",
+      "otherId": "2023-24-shk-mosobl-6",
+      "evidence": {
+        "record": "nature/nature-q161",
+        "option": "mtn-ru-elbrus",
+        "zh": "厄尔布鲁士山",
+        "gloss": "Эльбрус — потухший вулкан на Кавказе высотой 5642 м, высшая точка России",
+        "isAnswer": true,
+        "other": "nature/nature-q170",
+        "answer": [
+          "5642 м"
+        ],
+        "clues": [
+          "Эльбрус"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "nature-q162",
+      "otherId": "2023-24-shk-mosobl-6",
+      "evidence": {
+        "record": "nature/nature-q162",
+        "option": "mtn-ru-elbrus",
+        "zh": "厄尔布鲁士山",
+        "gloss": "Эльбрус — потухший вулкан на Кавказе высотой 5642 м, высшая точка России",
+        "isAnswer": false,
+        "other": "nature/nature-q170",
+        "answer": [
+          "5642 м"
+        ],
+        "clues": [
+          "Эльбрус"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2022-23-mun-kam-10",
+      "otherId": "2016-17-shk-7",
+      "evidence": {
+        "record": "nature/nature-q14",
+        "option": "wat-suzhouhe",
+        "zh": "苏州河",
+        "gloss": "Сучжоухэ (Усунцзян) — приток Хуанпу, течёт через центр Шанхая",
+        "isAnswer": false,
+        "other": "2016-17-shk-7",
+        "answer": [
+          "Хуанпу"
+        ],
+        "clues": [
+          "Шанхай"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2022-23-shk-mosobl-16",
+      "otherId": "people-q21",
+      "evidence": {
+        "record": "people/people-q35",
+        "option": "o4",
+        "zh": "彼得 · 柴可夫斯基",
+        "gloss": "Пётр Чайковский — автор балета «Лебединое озеро»",
+        "isAnswer": false,
+        "other": "people/people-q21",
+        "answer": [
+          "«Лебединое озеро»"
+        ],
+        "clues": [
+          "Пётр Чайковский"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2025-26-shk-mosobl-8",
+      "otherId": "2018-19-shk-8",
+      "evidence": {
+        "record": "provinces/provinces-q144",
+        "option": "o1",
+        "zh": "莫斯科",
+        "gloss": "Москва — летописная история города отсчитывается с 1147 года",
+        "isAnswer": false,
+        "other": "2018-19-shk-8",
+        "answer": [
+          "1147"
+        ],
+        "clues": [
+          "Москва",
+          "莫斯科"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2025-26-mun-kgd-58",
+      "otherId": "2016-17-shk-7",
+      "evidence": {
+        "record": "provinces/provinces-q149",
+        "option": "o3",
+        "zh": "上海",
+        "gloss": "Шанхай — через город течёт Хуанпу, важный водный транспортный путь",
+        "isAnswer": false,
+        "other": "2016-17-shk-7",
+        "answer": [
+          "Хуанпу"
+        ],
+        "clues": [
+          "Шанхай",
+          "上海"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2015-16-mun-5",
+      "otherId": "2024-25-mun-tula-2",
+      "evidence": {
+        "record": "2015-16-mun-5",
+        "option": "o4",
+        "zh": "红色",
+        "gloss": "Красный — цвет конвертов, в которых дарят деньги на китайский Новый год",
+        "isAnswer": true,
+        "other": "holidays/holidays-q53",
+        "answer": [
+          "китайский Новый год"
+        ],
+        "clues": [
+          "Новый год"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2026-27-mun-10",
+      "otherId": "2024-25-mun-tula-2",
+      "evidence": {
+        "record": "2026-27-mun-10",
+        "option": "o3",
+        "zh": "红包",
+        "gloss": "Хунбао — красный конверт с деньгами, который дарят на китайский Новый год",
+        "isAnswer": false,
+        "other": "holidays/holidays-q53",
+        "answer": [
+          "китайский Новый год"
+        ],
+        "clues": [
+          "Новый год"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-mun-komi-55",
+      "otherId": "2022-23-shk-qa664f6",
+      "reason": "Подпись правильного периода Цин называет последнего императора Пу И."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2024-25-mun-volog-1",
+      "otherId": "2021-22-shk-qf19779",
+      "reason": "Подпись8 852км сообщает результат обследования Минской стены, о которой спрашивает соседнее задание; различия округления не должны давать подсказку."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2018-19-mun-spb-5",
+      "otherId": "2022-23-mun-7",
+      "reason": "В разборе царства Лу и подписи упоминается Цюйфу, старый вопрос спрашивает родину Конфуция."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2018-19-mun-spb-5",
+      "otherId": "2017-18-shk-6",
+      "reason": "Разнести связанный вопрос о провинции Цюйфу с новой исторической привязкой Конфуция."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2023-24-shk-mosobl-6",
+      "otherId": "nature-q161",
+      "reason": "Текст высоты прямо называет Эльбрус, ответ вопроса о высшей вершине."
+    }
+  ],
+  "decisions": [
+    {
+      "record": "cinema/cinema-q02",
+      "option": "cin-cn-hero",
+      "zh": "英雄",
+      "gloss": "«Герой» — фильм о встрече воина Безымянного с царём Цинь",
+      "isAnswer": false,
+      "other": "cinema/cinema-q09",
+      "answer": [
+        "英雄"
+      ],
+      "clues": [
+        "Цинь"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cinema-q02",
+      "otherId": "cinema-q09",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "cinema/cinema-q03",
+      "option": "cin-cn-hero",
+      "zh": "英雄",
+      "gloss": "«Герой» — фильм о встрече воина Безымянного с царём Цинь",
+      "isAnswer": false,
+      "other": "cinema/cinema-q09",
+      "answer": [
+        "英雄"
+      ],
+      "clues": [
+        "Цинь"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cinema-q03",
+      "otherId": "cinema-q09",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "cinema/cinema-q31",
+      "option": "cin-cn-hero",
+      "zh": "英雄",
+      "gloss": "«Герой» — фильм о встрече воина Безымянного с царём Цинь",
+      "isAnswer": false,
+      "other": "cinema/cinema-q09",
+      "answer": [
+        "英雄"
+      ],
+      "clues": [
+        "Цинь"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cinema-q31",
+      "otherId": "cinema-q09",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "cinema/cinema-q34",
+      "option": "cin-cn-hero",
+      "zh": "英雄",
+      "gloss": "«Герой» — фильм о встрече воина Безымянного с царём Цинь",
+      "isAnswer": false,
+      "other": "cinema/cinema-q09",
+      "answer": [
+        "英雄"
+      ],
+      "clues": [
+        "Цинь"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cinema-q34",
+      "otherId": "cinema-q09",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "cuisine/cuisine-q01",
+      "option": "o3",
+      "zh": "湘菜",
+      "gloss": "Хунаньская кухня — её блюдо рыбья голова под рубленым перцем",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2018-19-zak-1",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q01",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "2019-20-mun-mosobl-55",
+      "answer": [
+        "Шаньдунская кухня"
+      ],
+      "clues": [
+        "鲁菜"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2018-19-zak-1",
+      "otherId": "2019-20-mun-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q02",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "2019-20-mun-mosobl-55",
+      "answer": [
+        "Шаньдунская кухня"
+      ],
+      "clues": [
+        "鲁菜"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "addition-b2-03",
+      "otherId": "2019-20-mun-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q02",
+      "option": "cu-cn-duojiao-yutou",
+      "zh": "湘菜",
+      "gloss": "Хунаньская кухня — её блюдо рыбья голова под рубленым перцем",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "addition-b2-03",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q67",
+      "option": "o2",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — одна из восьми великих кухонь Китая",
+      "isAnswer": true,
+      "other": "2019-20-mun-mosobl-55",
+      "answer": [
+        "Шаньдунская кухня"
+      ],
+      "clues": [
+        "鲁菜"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-pri-38",
+      "otherId": "2019-20-mun-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q67",
+      "option": "cs-xiang",
+      "zh": "湘菜",
+      "gloss": "Хунаньская кухня — одна из восьми великих кухонь Китая",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-pri-38",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q68",
+      "option": "cs-xiang",
+      "zh": "湖南",
+      "gloss": "Хунань — родина хунаньской кухни с рыбьей головой под рубленым перцем",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q68",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q70",
+      "option": "cs-xiang",
+      "zh": "湖南",
+      "gloss": "Хунань — родина хунаньской кухни с рыбьей головой под рубленым перцем",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q70",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q71",
+      "option": "cs-xiang",
+      "zh": "湖南",
+      "gloss": "Хунань — родина хунаньской кухни с рыбьей головой под рубленым перцем",
+      "isAnswer": true,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q71",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q72",
+      "option": "cs-xiang",
+      "zh": "香辣",
+      "gloss": "Ароматная острота — так описывают хунаньскую кухню",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q72",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q74",
+      "option": "cs-xiang",
+      "zh": "香辣",
+      "gloss": "Ароматная острота — так описывают хунаньскую кухню",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q74",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q75",
+      "option": "cs-xiang",
+      "zh": "香辣",
+      "gloss": "Ароматная острота — так описывают хунаньскую кухню",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q75",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q76",
+      "option": "cs-xiang",
+      "zh": "香辣",
+      "gloss": "Ароматная острота — так описывают хунаньскую кухню",
+      "isAnswer": true,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q76",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q77",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "2019-20-mun-mosobl-55",
+      "answer": [
+        "Шаньдунская кухня"
+      ],
+      "clues": [
+        "鲁菜"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q77",
+      "otherId": "2019-20-mun-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q77",
+      "option": "cu-cn-duojiao-yutou",
+      "zh": "湘菜",
+      "gloss": "Хунаньская кухня — её блюдо рыбья голова под рубленым перцем",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q77",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q78",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "2019-20-mun-mosobl-55",
+      "answer": [
+        "Шаньдунская кухня"
+      ],
+      "clues": [
+        "鲁菜"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q78",
+      "otherId": "2019-20-mun-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q78",
+      "option": "cu-cn-duojiao-yutou",
+      "zh": "湘菜",
+      "gloss": "Хунаньская кухня — её блюдо рыбья голова под рубленым перцем",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q78",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q79",
+      "option": "cu-cn-jiuzhuan-dachang",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня",
+      "isAnswer": true,
+      "other": "2019-20-mun-mosobl-55",
+      "answer": [
+        "Шаньдунская кухня"
+      ],
+      "clues": [
+        "鲁菜"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q79",
+      "otherId": "2019-20-mun-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q79",
+      "option": "cu-cn-duojiao-yutou",
+      "zh": "湘菜",
+      "gloss": "Хунаньская кухня — её блюдо рыбья голова под рубленым перцем",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q79",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q80",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "2019-20-mun-mosobl-55",
+      "answer": [
+        "Шаньдунская кухня"
+      ],
+      "clues": [
+        "鲁菜"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q80",
+      "otherId": "2019-20-mun-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q80",
+      "option": "cu-cn-duojiao-yutou",
+      "zh": "湘菜",
+      "gloss": "Хунаньская кухня — её блюдо рыбья голова под рубленым перцем",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q80",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q82",
+      "option": "cu-cn-duojiao-yutou",
+      "zh": "湘菜",
+      "gloss": "Хунаньская кухня — её блюдо рыбья голова под рубленым перцем",
+      "isAnswer": true,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q82",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q82",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "2019-20-mun-mosobl-55",
+      "answer": [
+        "Шаньдунская кухня"
+      ],
+      "clues": [
+        "鲁菜"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q82",
+      "otherId": "2019-20-mun-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q83",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "2019-20-mun-mosobl-55",
+      "answer": [
+        "Шаньдунская кухня"
+      ],
+      "clues": [
+        "鲁菜"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q83",
+      "otherId": "2019-20-mun-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q83",
+      "option": "cu-cn-duojiao-yutou",
+      "zh": "湘菜",
+      "gloss": "Хунаньская кухня — её блюдо рыбья голова под рубленым перцем",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q83",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q84",
+      "option": "cs-lu",
+      "zh": "九转大肠",
+      "gloss": "Свиные кишки «девять оборотов» — традиционное блюдо Цзинаня, шаньдунская кухня",
+      "isAnswer": false,
+      "other": "2019-20-mun-mosobl-55",
+      "answer": [
+        "Шаньдунская кухня"
+      ],
+      "clues": [
+        "Цзинань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q84",
+      "otherId": "2019-20-mun-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q84",
+      "option": "cs-zhe",
+      "zh": "西湖醋鱼",
+      "gloss": "Рыба озера Сиху в уксусном соусе — знаменитое блюдо Ханчжоу, чжэцзянская кухня",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q108",
+      "answer": [
+        "Чжэцзянская кухня"
+      ],
+      "clues": [
+        "Ханчжоу"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q84",
+      "otherId": "2018-19-mun-lenobl-55",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "cuisine/cuisine-q84",
+      "option": "cs-xiang",
+      "zh": "剁椒鱼头",
+      "gloss": "Рыбья голова под рубленым перцем — знаменитое блюдо хунаньской кухни",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q84",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q97",
+      "option": "o2",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — одна из восьми великих кухонь Китая",
+      "isAnswer": false,
+      "other": "2019-20-mun-mosobl-55",
+      "answer": [
+        "Шаньдунская кухня"
+      ],
+      "clues": [
+        "鲁菜"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2020-21-zak-qf17a29",
+      "otherId": "2019-20-mun-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q97",
+      "option": "cs-xiang",
+      "zh": "湘菜",
+      "gloss": "Хунаньская кухня — одна из восьми великих кухонь Китая",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2020-21-zak-qf17a29",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q105",
+      "option": "cu-cn-congshao-haishen",
+      "zh": "鲁菜",
+      "gloss": "Шаньдунская кухня — её блюдо трепанг с зелёным луком",
+      "isAnswer": false,
+      "other": "2019-20-mun-mosobl-55",
+      "answer": [
+        "Шаньдунская кухня"
+      ],
+      "clues": [
+        "鲁菜"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q105",
+      "otherId": "2019-20-mun-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q105",
+      "option": "cu-cn-duojiao-yutou",
+      "zh": "湘菜",
+      "gloss": "Хунаньская кухня — её блюдо рыбья голова под рубленым перцем",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "cuisine-q105",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "cuisine/cuisine-q108",
+      "option": "o1",
+      "zh": "山东菜",
+      "gloss": "Шаньдунская кухня — ценит солёно-свежий вкус и естественный вкус продуктов",
+      "isAnswer": false,
+      "other": "cuisine/cuisine-q67",
+      "answer": [
+        "шаньдунская кухня"
+      ],
+      "clues": [
+        "Шаньдун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2018-19-mun-lenobl-55",
+      "otherId": "2024-25-pri-38",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "cuisine/cuisine-q108",
+      "option": "o3",
+      "zh": "湖南菜",
+      "gloss": "Хунаньская кухня — известна ароматной остротой и рыбьей головой под перцем",
+      "isAnswer": false,
+      "other": "2019-20-shk-mosobl-55",
+      "answer": [
+        "湖南菜",
+        "Хунаньская кухня"
+      ],
+      "clues": [
+        "Хунань"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2018-19-mun-lenobl-55",
+      "otherId": "2019-20-shk-mosobl-55",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "cuisine/cuisine-q108",
+      "option": "preview-guangdong-cuisine",
+      "zh": "广东菜",
+      "gloss": "Гуандунская кухня — включает гуанчжоускую, чаочжоускую и хакка",
+      "isAnswer": false,
+      "other": "provinces/provinces-q99",
+      "answer": [
+        "Гуанчжоу"
+      ],
+      "clues": [
+        "Гуандун"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2018-19-mun-lenobl-55",
+      "otherId": "provinces-q99",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "dynasties/dynasties-q08",
+      "option": "dyn-qin",
+      "zh": "咸阳",
+      "gloss": "Сяньян — столица царства Цинь с 350 г. до н. э., затем империи Цинь",
+      "isAnswer": false,
+      "other": "dynasties/dynasties-q20",
+      "answer": [
+        "咸阳"
+      ],
+      "clues": [
+        "Цинь"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "addition-b1-06",
+      "otherId": "dynasties-q20",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "dynasties/dynasties-q103",
+      "option": "dyn-qin",
+      "zh": "咸阳",
+      "gloss": "Сяньян — столица царства Цинь с 350 г. до н. э., затем империи Цинь",
+      "isAnswer": false,
+      "other": "dynasties/dynasties-q20",
+      "answer": [
+        "咸阳"
+      ],
+      "clues": [
+        "Цинь"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "dynasties-q103",
+      "otherId": "dynasties-q20",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "dynasties/dynasties-q104",
+      "option": "dyn-qin",
+      "zh": "咸阳",
+      "gloss": "Сяньян — столица царства Цинь с 350 г. до н. э., затем империи Цинь",
+      "isAnswer": false,
+      "other": "dynasties/dynasties-q20",
+      "answer": [
+        "咸阳"
+      ],
+      "clues": [
+        "Цинь"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "dynasties-q104",
+      "otherId": "dynasties-q20",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "dynasties/dynasties-q105",
+      "option": "dyn-qin",
+      "zh": "咸阳",
+      "gloss": "Сяньян — столица царства Цинь с 350 г. до н. э., затем империи Цинь",
+      "isAnswer": false,
+      "other": "dynasties/dynasties-q20",
+      "answer": [
+        "咸阳"
+      ],
+      "clues": [
+        "Цинь"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "dynasties-q105",
+      "otherId": "dynasties-q20",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "dynasties/dynasties-q106",
+      "option": "dyn-qin",
+      "zh": "咸阳",
+      "gloss": "Сяньян — столица царства Цинь с 350 г. до н. э., затем империи Цинь",
+      "isAnswer": false,
+      "other": "dynasties/dynasties-q20",
+      "answer": [
+        "咸阳"
+      ],
+      "clues": [
+        "Цинь"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "dynasties-q106",
+      "otherId": "dynasties-q20",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "ethnos/ethnos-q28",
+      "option": "ppl-cn-manchu",
+      "zh": "满族",
+      "gloss": "Маньчжуры — народ, одна из основных областей расселения которого — провинция Ляонин",
+      "isAnswer": false,
+      "other": "2018-19-shk-6",
+      "answer": [
+        "Ляонин",
+        "Провинция Ляонин",
+        "провинция Ляонин"
+      ],
+      "clues": [
+        "маньчжуры",
+        "满族"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2019-20-mun-lip-4",
+      "otherId": "2018-19-shk-6",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q01",
+      "option": "o4",
+      "zh": "春节",
+      "gloss": "Праздник весны — Новый год по лунному календарю, с 2024 года в списке ЮНЕСКО",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "春节",
+        "Праздник весны"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2015-16-mun-8",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "holidays/holidays-q03",
+      "option": "hol-chunjie",
+      "zh": "正月初一",
+      "gloss": "1-е число 1-го лунного месяца — Праздник весны, Новый год",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "Праздник весны"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2015-16-zak-10",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q04",
+      "option": "o2",
+      "zh": "春节",
+      "gloss": "Праздник весны — Новый год по лунному календарю, с 2024 года в списке ЮНЕСКО",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "春节",
+        "Праздник весны"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2016-17-shk-5",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "holidays/holidays-q08",
+      "option": "o1",
+      "zh": "春节",
+      "gloss": "Праздник весны — Новый год по лунному календарю, с 2024 года в списке ЮНЕСКО",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "春节",
+        "Праздник весны"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2021-22-shk-qfce22f",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "holidays/holidays-q09",
+      "option": "hol-chunjie",
+      "zh": "春节",
+      "gloss": "Праздник весны — Новый год по лунному календарю, с 2024 года в списке ЮНЕСКО",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "春节",
+        "Праздник весны"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2022-23-zak-5",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q10",
+      "option": "hol-ru-zuguo",
+      "zh": "祖国保卫者日",
+      "gloss": "День защитника Отечества — 23 февраля, бывший День Советской армии",
+      "isAnswer": false,
+      "other": "holidays/holidays-q23",
+      "answer": [
+        "祖国保卫者日",
+        "День защитника Отечества"
+      ],
+      "clues": [
+        "23"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-shk-30",
+      "otherId": "holidays-q23",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q13",
+      "option": "hol-chunjie",
+      "zh": "春节",
+      "gloss": "Праздник весны — Новый год по лунному календарю, с 2024 года в списке ЮНЕСКО",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "春节",
+        "Праздник весны"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q13",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q14",
+      "option": "hol-chunjie",
+      "zh": "正月初一",
+      "gloss": "1-е число 1-го лунного месяца — Праздник весны, Новый год",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "Праздник весны"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q14",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q16",
+      "option": "cus-jiaozi",
+      "zh": "春节",
+      "gloss": "Праздник весны — Новый год по лунному календарю, лепят цзяоцзы",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "春节",
+        "Праздник весны"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q16",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "holidays/holidays-q24",
+      "option": "hol-ru-zuguo",
+      "zh": "祖国保卫者日",
+      "gloss": "День защитника Отечества — 23 февраля, бывший День Советской армии",
+      "isAnswer": false,
+      "other": "holidays/holidays-q23",
+      "answer": [
+        "祖国保卫者日",
+        "День защитника Отечества"
+      ],
+      "clues": [
+        "23"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q24",
+      "otherId": "holidays-q23",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q25",
+      "option": "hol-ru-zuguo",
+      "zh": "祖国保卫者日",
+      "gloss": "День защитника Отечества — 23 февраля, бывший День Советской армии",
+      "isAnswer": false,
+      "other": "holidays/holidays-q23",
+      "answer": [
+        "祖国保卫者日",
+        "День защитника Отечества"
+      ],
+      "clues": [
+        "23"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q25",
+      "otherId": "holidays-q23",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q26",
+      "option": "hol-ru-zuguo",
+      "zh": "二月二十三日",
+      "gloss": "23 февраля по григорианскому календарю — День защитника Отечества",
+      "isAnswer": false,
+      "other": "holidays/holidays-q23",
+      "answer": [
+        "День защитника Отечества"
+      ],
+      "clues": [
+        "23"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q26",
+      "otherId": "holidays-q23",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q28",
+      "option": "hol-ru-zuguo",
+      "zh": "祖国保卫者日",
+      "gloss": "День защитника Отечества — 23 февраля, бывший День Советской армии",
+      "isAnswer": false,
+      "other": "holidays/holidays-q23",
+      "answer": [
+        "祖国保卫者日",
+        "День защитника Отечества"
+      ],
+      "clues": [
+        "23"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q28",
+      "otherId": "holidays-q23",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q31",
+      "option": "hol-ru-zuguo",
+      "zh": "二月二十三日",
+      "gloss": "23 февраля по григорианскому календарю — День защитника Отечества",
+      "isAnswer": false,
+      "other": "holidays/holidays-q23",
+      "answer": [
+        "День защитника Отечества"
+      ],
+      "clues": [
+        "23"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q31",
+      "otherId": "holidays-q23",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q35",
+      "option": "hol-chunjie",
+      "zh": "正月初一",
+      "gloss": "1-е число 1-го лунного месяца — Праздник весны, Новый год",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "Праздник весны"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q35",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q36",
+      "option": "hol-chunjie",
+      "zh": "正月初一",
+      "gloss": "1-е число 1-го лунного месяца — Праздник весны, Новый год",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "Праздник весны"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q36",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q37",
+      "option": "hol-chunjie",
+      "zh": "正月初一",
+      "gloss": "1-е число 1-го лунного месяца — Праздник весны, Новый год",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "Праздник весны"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q37",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q46",
+      "option": "cus-jiaozi",
+      "zh": "春节",
+      "gloss": "Праздник весны — Новый год по лунному календарю, лепят цзяоцзы",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "春节",
+        "Праздник весны"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q46",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "holidays/holidays-q47",
+      "option": "cus-jiaozi",
+      "zh": "春节",
+      "gloss": "Праздник весны — Новый год по лунному календарю, лепят цзяоцзы",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "春节",
+        "Праздник весны"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q47",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "holidays/holidays-q50",
+      "option": "hol-ru-zuguo",
+      "zh": "二月二十三日",
+      "gloss": "23 февраля по григорианскому календарю — День защитника Отечества",
+      "isAnswer": false,
+      "other": "holidays/holidays-q23",
+      "answer": [
+        "День защитника Отечества"
+      ],
+      "clues": [
+        "23"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q50",
+      "otherId": "holidays-q23",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q51",
+      "option": "hol-ru-zuguo",
+      "zh": "二月二十三日",
+      "gloss": "23 февраля по григорианскому календарю — День защитника Отечества",
+      "isAnswer": false,
+      "other": "holidays/holidays-q23",
+      "answer": [
+        "День защитника Отечества"
+      ],
+      "clues": [
+        "23"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "holidays-q51",
+      "otherId": "holidays-q23",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q52",
+      "option": "o1",
+      "zh": "春节",
+      "gloss": "Праздник весны — Новый год по лунному календарю, с 2024 года в списке ЮНЕСКО",
+      "isAnswer": false,
+      "other": "holidays/holidays-q32",
+      "answer": [
+        "春节",
+        "Праздник весны"
+      ],
+      "clues": [
+        "2024 год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-mun-ryaz-3",
+      "otherId": "holidays-q32",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "holidays/holidays-q52",
+      "option": "o1",
+      "zh": "春节",
+      "gloss": "Праздник весны — Новый год по лунному календарю, с 2024 года в списке ЮНЕСКО",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "春节",
+        "Праздник весны"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-mun-ryaz-3",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "holidays/holidays-q52",
+      "option": "hol-ru-xierou",
+      "zh": "谢肉节",
+      "gloss": "Масленица — народный праздник проводов зимы, древнее христианства: блины, чучело",
+      "isAnswer": false,
+      "other": "holidays/holidays-q48",
+      "answer": [
+        "谢肉节",
+        "Масленица"
+      ],
+      "clues": [
+        "Блины"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-mun-ryaz-3",
+      "otherId": "holidays-q48",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "holidays/holidays-q52",
+      "option": "hol-ru-zuguo",
+      "zh": "祖国保卫者日",
+      "gloss": "День защитника Отечества — 23 февраля, бывший День Советской армии",
+      "isAnswer": false,
+      "other": "holidays/holidays-q23",
+      "answer": [
+        "祖国保卫者日",
+        "День защитника Отечества"
+      ],
+      "clues": [
+        "23"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-mun-ryaz-3",
+      "otherId": "holidays-q23",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q52",
+      "option": "hol-ru-yuhang",
+      "zh": "宇航节",
+      "gloss": "День космонавтики — 12 апреля, в память о полёте Юрия Гагарина (1961)",
+      "isAnswer": false,
+      "other": "holidays/holidays-q24",
+      "answer": [
+        "宇航节",
+        "День космонавтики"
+      ],
+      "clues": [
+        "12"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-mun-ryaz-3",
+      "otherId": "holidays-q24",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "holidays/holidays-q52",
+      "option": "hol-ru-tuanjie",
+      "zh": "人民团结日",
+      "gloss": "День народного единства — 4 ноября, освобождение Москвы ополчением в 1612 году",
+      "isAnswer": false,
+      "other": "2023-24-shk-29",
+      "answer": [
+        "1612"
+      ],
+      "clues": [
+        "Москва"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-mun-ryaz-3",
+      "otherId": "2023-24-shk-29",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "holidays/holidays-q53",
+      "option": "o1",
+      "zh": "中秋节",
+      "gloss": "Праздник середины осени — 15-е число 8-го лунного месяца: луна и юэбины",
+      "isAnswer": false,
+      "other": "holidays/holidays-q07",
+      "answer": [
+        "юэбины"
+      ],
+      "clues": [
+        "Праздник середины осени",
+        "中秋节"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-tula-2",
+      "otherId": "2019-20-mun-q81216d",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "holidays/holidays-q53",
+      "option": "o2",
+      "zh": "端午节",
+      "gloss": "Дуаньу — 5-е число 5-го лунного месяца: лодки-драконы и цзунцзы",
+      "isAnswer": false,
+      "other": "holidays/holidays-q47",
+      "answer": [
+        "端午节"
+      ],
+      "clues": [
+        "цзунцзы"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-tula-2",
+      "otherId": "holidays-q47",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "holidays/holidays-q53",
+      "option": "hol-chuxi",
+      "zh": "除夕",
+      "gloss": "Чуси — канун Праздника весны, последний вечер года: семейный ужин и бдение",
+      "isAnswer": false,
+      "other": "2019-20-mun-kgd-7",
+      "answer": [
+        "除夕",
+        "канун Праздника весны",
+        "последний вечер года"
+      ],
+      "clues": [
+        "Праздник весны"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-tula-2",
+      "otherId": "2019-20-mun-kgd-7",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "landmarks/landmarks-q99",
+      "option": "lm-cn-terracotta",
+      "zh": "西安",
+      "gloss": "Сиань — здесь Терракотовая армия у гробницы Цинь Шихуана",
+      "isAnswer": false,
+      "other": "2023-24-reg-4",
+      "answer": [
+        "терракотовая армия"
+      ],
+      "clues": [
+        "Цинь"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "landmarks-q99",
+      "otherId": "2023-24-reg-4",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "landmarks/landmarks-q100",
+      "option": "lm-cn-terracotta",
+      "zh": "西安",
+      "gloss": "Сиань — здесь Терракотовая армия у гробницы Цинь Шихуана",
+      "isAnswer": false,
+      "other": "2023-24-reg-4",
+      "answer": [
+        "терракотовая армия"
+      ],
+      "clues": [
+        "Цинь"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "landmarks-q100",
+      "otherId": "2023-24-reg-4",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "landmarks/landmarks-q101",
+      "option": "lm-cn-terracotta",
+      "zh": "西安",
+      "gloss": "Сиань — здесь Терракотовая армия у гробницы Цинь Шихуана",
+      "isAnswer": false,
+      "other": "2023-24-reg-4",
+      "answer": [
+        "терракотовая армия"
+      ],
+      "clues": [
+        "Цинь"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "landmarks-q101",
+      "otherId": "2023-24-reg-4",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "modern-history/modern-history-q68",
+      "option": "ev-qiqi",
+      "zh": "1937 年",
+      "gloss": "1937 год: инцидент у моста Лугоуцяо и Нанкинская резня",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q71",
+      "answer": [
+        "1937 年",
+        "1937 год"
+      ],
+      "clues": [
+        "Лугоу"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q68",
+      "otherId": "modern-history-q71",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "modern-history/modern-history-q112",
+      "option": "ev-qiqi",
+      "zh": "1937 年",
+      "gloss": "1937 год: инцидент у моста Лугоуцяо и Нанкинская резня",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q71",
+      "answer": [
+        "1937 年",
+        "1937 год"
+      ],
+      "clues": [
+        "Лугоу"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q112",
+      "otherId": "modern-history-q71",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "modern-history/modern-history-q04",
+      "option": "o1",
+      "zh": "胡锦涛",
+      "gloss": "Ху Цзиньтао — председатель КНР в 2003–2013 гг.",
+      "isAnswer": false,
+      "other": "2023-24-mun-30",
+      "answer": [
+        "2013"
+      ],
+      "clues": [
+        "председатель КНР"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "2023-24-mun-30",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "modern-history/modern-history-q04",
+      "option": "o2",
+      "zh": "习近平",
+      "gloss": "Си Цзиньпин — председатель КНР с 2013 года",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q02",
+      "answer": [
+        "习近平",
+        "Си Цзиньпин"
+      ],
+      "clues": [
+        "председатель КНР"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "2015-16-zak-2",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "modern-history/modern-history-q04",
+      "option": "o2",
+      "zh": "习近平",
+      "gloss": "Си Цзиньпин — председатель КНР с 2013 года",
+      "isAnswer": false,
+      "other": "2023-24-mun-30",
+      "answer": [
+        "2013 год",
+        "2013"
+      ],
+      "clues": [
+        "Си Цзиньпин",
+        "председатель КНР"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "2023-24-mun-30",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "modern-history/modern-history-q04",
+      "option": "per-linzexu",
+      "zh": "林则徐",
+      "gloss": "Линь Цзэсюй — императорский комиссар, в 1839 году уничтожил опиум в Хумэне",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q54",
+      "answer": [
+        "1839 год"
+      ],
+      "clues": [
+        "Линь Цзэсюй",
+        "Хумэнь",
+        "императорский комиссар"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "modern-history-q54",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "modern-history/modern-history-q04",
+      "option": "per-linzexu",
+      "zh": "林则徐",
+      "gloss": "Линь Цзэсюй — императорский комиссар, в 1839 году уничтожил опиум в Хумэне",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q95",
+      "answer": [
+        "императорский комиссар"
+      ],
+      "clues": [
+        "Линь Цзэсюй",
+        "林则徐"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "modern-history-q95",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "modern-history/modern-history-q04",
+      "option": "per-linzexu",
+      "zh": "林则徐",
+      "gloss": "Линь Цзэсюй — императорский комиссар, в 1839 году уничтожил опиум в Хумэне",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q109",
+      "answer": [
+        "林则徐",
+        "Линь Цзэсюй"
+      ],
+      "clues": [
+        "Хумэнь"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "modern-history-q109",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "modern-history/modern-history-q04",
+      "option": "per-hongxiuquan",
+      "zh": "洪秀全",
+      "gloss": "Хун Сюцюань — вождь Тайпинского восстания, основатель Небесного государства",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q110",
+      "answer": [
+        "洪秀全",
+        "Хун Сюцюань"
+      ],
+      "clues": [
+        "Тайпинское восстание"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "modern-history-q110",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "modern-history/modern-history-q04",
+      "option": "per-kangyouwei",
+      "zh": "康有为",
+      "gloss": "Кан Ювэй — идейный вождь реформ 1898 года, автор «Датун шу»",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q60",
+      "answer": [
+        "康有为",
+        "Кан Ювэй"
+      ],
+      "clues": [
+        "реформы 1898 года"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "modern-history-q60",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "modern-history/modern-history-q04",
+      "option": "per-liangqichao",
+      "zh": "梁启超",
+      "gloss": "Лян Цичао — мыслитель, один из вождей реформ 1898 года, автор «О юном Китае»",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q17",
+      "answer": [
+        "梁启超",
+        "Лян Цичао"
+      ],
+      "clues": [
+        "О юном Китае"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "modern-history-q17",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "modern-history/modern-history-q04",
+      "option": "per-sunzhongshan",
+      "zh": "孙中山",
+      "gloss": "Сунь Ятсен — революционер, в 1912 г. временный президент Китайской Республики",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q96",
+      "answer": [
+        "孙中山",
+        "Сунь Ятсен"
+      ],
+      "clues": [
+        "Китайская Республика",
+        "временный президент Китайской Республики"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "2017-18-zak-1",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "modern-history/modern-history-q04",
+      "option": "per-sunzhongshan",
+      "zh": "孙中山",
+      "gloss": "Сунь Ятсен — революционер, в 1912 г. временный президент Китайской Республики",
+      "isAnswer": false,
+      "other": "2020-21-reg-q227d55",
+      "answer": [
+        "1912"
+      ],
+      "clues": [
+        "Китайская Республика"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-mosobl-1",
+      "otherId": "2020-21-reg-q227d55",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "nature/nature-q161",
+      "option": "mtn-ru-elbrus",
+      "zh": "厄尔布鲁士山",
+      "gloss": "Эльбрус — потухший вулкан на Кавказе высотой 5642 м, высшая точка России",
+      "isAnswer": true,
+      "other": "nature/nature-q170",
+      "answer": [
+        "5642 м"
+      ],
+      "clues": [
+        "Эльбрус"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "nature-q161",
+      "otherId": "2023-24-shk-mosobl-6",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "nature/nature-q162",
+      "option": "mtn-ru-elbrus",
+      "zh": "厄尔布鲁士山",
+      "gloss": "Эльбрус — потухший вулкан на Кавказе высотой 5642 м, высшая точка России",
+      "isAnswer": false,
+      "other": "nature/nature-q170",
+      "answer": [
+        "5642 м"
+      ],
+      "clues": [
+        "Эльбрус"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "nature-q162",
+      "otherId": "2023-24-shk-mosobl-6",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "nature/nature-q14",
+      "option": "wat-huangpujiang",
+      "zh": "黄浦江",
+      "gloss": "Хуанпу — главная река Шанхая, впадает в Янцзы у Усункоу",
+      "isAnswer": false,
+      "other": "2016-17-shk-7",
+      "answer": [
+        "黄浦江",
+        "Хуанпу"
+      ],
+      "clues": [
+        "Шанхай"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2022-23-mun-kam-10",
+      "otherId": "2016-17-shk-7",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Подпись повторяет факт той же канонической строки; штатное исключение досье."
+    },
+    {
+      "record": "nature/nature-q14",
+      "option": "wat-suzhouhe",
+      "zh": "苏州河",
+      "gloss": "Сучжоухэ (Усунцзян) — приток Хуанпу, течёт через центр Шанхая",
+      "isAnswer": false,
+      "other": "2016-17-shk-7",
+      "answer": [
+        "Хуанпу"
+      ],
+      "clues": [
+        "Шанхай"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2022-23-mun-kam-10",
+      "otherId": "2016-17-shk-7",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "people/people-q35",
+      "option": "o4",
+      "zh": "彼得 · 柴可夫斯基",
+      "gloss": "Пётр Чайковский — автор балета «Лебединое озеро»",
+      "isAnswer": false,
+      "other": "people/people-q21",
+      "answer": [
+        "«Лебединое озеро»"
+      ],
+      "clues": [
+        "Пётр Чайковский"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2022-23-shk-mosobl-16",
+      "otherId": "people-q21",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "provinces/provinces-q56",
+      "option": "city-xian",
+      "zh": "兵马俑",
+      "gloss": "Терракотовая армия — глиняные воины у гробницы Цинь Шихуана близ Сианя",
+      "isAnswer": false,
+      "other": "2023-24-reg-4",
+      "answer": [
+        "兵马俑",
+        "терракотовая армия"
+      ],
+      "clues": [
+        "Цинь"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "provinces-q56",
+      "otherId": "2023-24-reg-4",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "provinces/provinces-q144",
+      "option": "o1",
+      "zh": "莫斯科",
+      "gloss": "Москва — летописная история города отсчитывается с 1147 года",
+      "isAnswer": false,
+      "other": "2018-19-shk-8",
+      "answer": [
+        "1147"
+      ],
+      "clues": [
+        "Москва",
+        "莫斯科"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-shk-mosobl-8",
+      "otherId": "2018-19-shk-8",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "provinces/provinces-q149",
+      "option": "o3",
+      "zh": "上海",
+      "gloss": "Шанхай — через город течёт Хуанпу, важный водный транспортный путь",
+      "isAnswer": false,
+      "other": "2016-17-shk-7",
+      "answer": [
+        "Хуанпу"
+      ],
+      "clues": [
+        "Шанхай",
+        "上海"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2025-26-mun-kgd-58",
+      "otherId": "2016-17-shk-7",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "2015-16-mun-5",
+      "option": "o4",
+      "zh": "红色",
+      "gloss": "Красный — цвет конвертов, в которых дарят деньги на китайский Новый год",
+      "isAnswer": true,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "китайский Новый год"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2015-16-mun-5",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    },
+    {
+      "record": "2016-17-shk-4",
+      "option": "o1",
+      "zh": "西安",
+      "gloss": "Сиань — близ города находится мавзолей Цинь Шихуанди с терракотовой армией",
+      "isAnswer": true,
+      "other": "2023-24-reg-4",
+      "answer": [
+        "терракотовая армия"
+      ],
+      "clues": [
+        "Цинь"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2016-17-shk-4",
+      "otherId": "2023-24-reg-4",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Прежние тексты не менялись; расширился поисковый словарь. Совпадение не касается46выпускаемых вопросов."
+    },
+    {
+      "record": "2026-27-mun-10",
+      "option": "o3",
+      "zh": "红包",
+      "gloss": "Хунбао — красный конверт с деньгами, который дарят на китайский Новый год",
+      "isAnswer": false,
+      "other": "holidays/holidays-q53",
+      "answer": [
+        "китайский Новый год"
+      ],
+      "clues": [
+        "Новый год"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2026-27-mun-10",
+      "otherId": "2024-25-mun-tula-2",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку другого вопроса; защищается весь выпускаемый набор46, включая прежние встраивания."
+    }
+  ],
+  "groupUnions": [
+    {
+      "kept": "qing-last-dynasty",
+      "mergedGroups": [
+        "regional-b7-hint-55"
+      ],
+      "memberCount": 5
+    },
+    {
+      "kept": "prc-founding-1949",
+      "mergedGroups": [
+        "lu-xun-republic-text",
+        "regional-b7-hint-46",
+        "regional-b7-hint-13",
+        "regional-b7-hint-39",
+        "regional-b7-hint-40",
+        "regional-b7-hint-41",
+        "regional-b7-hint-42",
+        "regional-b7-hint-43",
+        "regional-b7-hint-44",
+        "regional-b7-hint-45",
+        "xi-jinping-chairman-2013",
+        "lin-zexu-opium-1839",
+        "taiping-nanjing-capital",
+        "regional-b7-hint-12"
+      ],
+      "memberCount": 37
+    },
+    {
+      "kept": "province-names-river-lake",
+      "mergedGroups": [
+        "regional-b7-hint-01",
+        "regional-b7-hint-02",
+        "regional-b7-hint-03",
+        "regional-b7-hint-04",
+        "regional-b7-hint-06",
+        "regional-b7-hint-07",
+        "regional-b7-hint-08",
+        "regional-b7-hint-09",
+        "regional-b7-hint-14",
+        "regional-b7-hint-15",
+        "regional-b7-hint-16",
+        "regional-b7-hint-17",
+        "regional-b7-hint-18",
+        "regional-b7-hint-19",
+        "regional-b7-hint-20",
+        "regional-b7-hint-21",
+        "regional-b7-hint-23",
+        "regional-b7-hint-24",
+        "regional-b7-hint-25",
+        "regional-b7-hint-49",
+        "regional-b7-hint-52",
+        "regional-b7-hint-57",
+        "regional-b7-hint-58"
+      ],
+      "memberCount": 226
+    },
+    {
+      "kept": "peking-opera-word",
+      "mergedGroups": [
+        "regional-b7-hint-11"
+      ],
+      "memberCount": 3
+    },
+    {
+      "kept": "nanchang-uprising-army-day",
+      "mergedGroups": [
+        "chongyang-date",
+        "regional-b7-hint-29",
+        "regional-b7-hint-30",
+        "regional-b7-hint-31",
+        "regional-b7-hint-33",
+        "regional-b7-hint-34",
+        "regional-b7-hint-35",
+        "regional-b7-hint-36",
+        "regional-b7-hint-37",
+        "regional-b7-hint-38",
+        "regional-b7-hint-53",
+        "regional-b7-hint-54",
+        "duanwu-word",
+        "qingming-graves",
+        "regional-b7-hint-26",
+        "regional-b7-hint-27",
+        "regional-b7-hint-28",
+        "regional-b7-hint-32"
+      ],
+      "memberCount": 38
+    },
+    {
+      "kept": "regional-b7-hint-10",
+      "mergedGroups": [
+        "regional-b7-hint-47",
+        "regional-b7-hint-48",
+        "regional-b7-hint-59"
+      ],
+      "memberCount": 3
+    }
+  ],
+  "allPreviousProtectionsPreserved": true,
+  "maxFactGroupSize": 226,
+  "captionTextsChanged": false,
+  "publicationAuthorized": true
+}

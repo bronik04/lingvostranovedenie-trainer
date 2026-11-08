@@ -394,5 +394,20 @@
     },
     "id": "crafts-q142",
     "exclude": []
+  },
+  {
+    "id": "crafts-q143",
+    "embeds": "2015-16-mun-spb-6",
+    "status": "accepted",
+    "fact": {
+      "table": "garmentparts",
+      "row": "garment-headwear",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
   }
 ]

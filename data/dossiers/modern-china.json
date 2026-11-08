@@ -3154,6 +3154,375 @@
           }
         }
       ]
+    },
+    "cooperationfields": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "coop-aerospace",
+          "name": {
+            "zh": "航空航天",
+            "ru": [
+              "Авиация и космонавтика"
+            ],
+            "gloss": "Авиация и космонавтика — в 2021 году стороны заявили о совместной лунной станции."
+          },
+          "sources": [
+            {
+              "title": "Совместное заявление о Международной научной лунной станции — CNSA, 29.04.2021",
+              "url": "https://www.cnsa.gov.cn/n6758823/n6758840/c6811963/content.html",
+              "quote": "中国国家航天局和俄罗斯国家航天集团公司……就合作建设国际月球科研站声明如下。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 8 option o1; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "中俄两国签署合作建设国际月球科研站谅解备忘录 — CNSA, 2021-03-09",
+              "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c6811372/content.html",
+              "quote": "签署《中华人民共和国政府和俄罗斯联邦政府关于合作建设国际月球科研站的谅解备忘录》。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_search_result; exact primary-source excerpt read 2026-11-08; full page not fetched"
+            }
+          ]
+        },
+        {
+          "id": "coop-arctic",
+          "name": {
+            "zh": "北极开发",
+            "ru": [
+              "Освоение Арктики"
+            ],
+            "gloss": "Освоение Арктики — проект «Ямал СПГ» доставляет Китаю сжиженный природный газ."
+          },
+          "sources": [
+            {
+              "title": "“冰上丝绸之路”送来北极天然气 — Государственное энергетическое управление КНР",
+              "url": "https://www.nea.gov.cn/2019-09/02/c_138358406.htm",
+              "quote": "“鲁萨诺夫”号正是来自中俄两国大型能源合作项目——亚马尔项目。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 8 option o2; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Ван И: Россия — важный партнёр в «Поясе и пути» — МИД КНР, 26.05.2017",
+              "url": "https://www.mfa.gov.cn/web/wjbzhd/201705/t20170526_355699.shtml",
+              "quote": "中方欢迎并支持俄方提出的“冰上丝绸之路”倡议……共同开发北极航线。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 8 keySources[0]; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ],
+          "olympiad": [
+            "2025-26-mun-nnov-10"
+          ]
+        },
+        {
+          "id": "coop-information",
+          "name": {
+            "zh": "信息技术",
+            "ru": [
+              "Информационные технологии"
+            ],
+            "gloss": "Информационные технологии — страны сотрудничают в области софта, облаков и ИИ."
+          },
+          "sources": [
+            {
+              "title": "Совместное коммюнике 29-й регулярной встречи глав правительств КНР и РФ — Государственное агентство по атомной энергии КНР",
+              "url": "https://www.caea.gov.cn/n6760338/n6760342/c10585109/content.html",
+              "quote": "软件和云服务……支持成立……人工智能工作组。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 8 option o3; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "中俄总理第二十九次定期会晤联合公报（全文） — МИД КНР, 2024-08-22",
+              "url": "https://www.fmprc.gov.cn/web/zyxw/202408/t20240822_11477753.shtml",
+              "quote": "就开源、操作系统、软件和云服务等问题保持经常性沟通。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_search_result; exact primary-source excerpt read 2026-11-08; full page not fetched"
+            }
+          ]
+        },
+        {
+          "id": "coop-agrotechnology",
+          "name": {
+            "zh": "农业技术",
+            "ru": [
+              "Агротехнологии"
+            ],
+            "gloss": "Агротехнологии — пример кооперации: Бэйдоу и ГЛОНАСС в точном земледелии."
+          },
+          "sources": [
+            {
+              "title": "Совместное коммюнике 25-й регулярной встречи глав правительств — МИД КНР, 03.12.2020",
+              "url": "https://www.fmprc.gov.cn/gjhdq_676201/gj_676203/oz_678770/1206_679110/1207_679122/202012/t20201203_9337182.shtml",
+              "quote": "推动落实中俄跨境运输、精准农业应用示范等合作项目。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 8 option o4; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "中俄总理第二十四次定期会晤联合公报（全文） — МИД КНР, 2019-09-18",
+              "url": "https://www.fmprc.gov.cn/ziliao_674904/zt_674979/ywzt_675099/2019nzt/lkqzlfwelsd24cdqhw_698202/zxxxydlmngfg_698204/201909/t20190918_9277898.shtml",
+              "quote": "推动在中俄互设测量站、精准农业等领域的合作项目",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_search_result; exact primary-source excerpt read 2026-11-08; full page not fetched"
+            }
+          ]
+        }
+      ]
+    },
+    "silkroadroles": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "silkrole-teatransport",
+          "name": {
+            "zh": "运输茶叶",
+            "ru": [
+              "Перевозка чая"
+            ],
+            "gloss": "Перевозка чая — часть торговли: из Китая везли также шёлк и фарфор."
+          },
+          "sources": [
+            {
+              "title": "丝绸之路 — 中国国家博物馆, выставка 2014–2015",
+              "url": "https://www.chnmuseum.cn/zl/zlhg/201812/t20181220_32385.shtml",
+              "quote": "中国的丝绸、瓷器、铜镜、茶叶、四大发明等传入西方",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 12 option o1; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Cultures and civilizations; The Silk and spice routes (1994), p. 29 — UNESCO",
+              "url": "https://en.unesco.org/silkroad/sites/default/files/knowledge-bank-article/precious%20goods%20to%20buy.pdf",
+              "quote": "From China, tea was exported to Tibet.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_search_result; exact primary-source excerpt read 2026-11-08; full page not fetched"
+            }
+          ]
+        },
+        {
+          "id": "silkrole-buddhism",
+          "name": {
+            "zh": "传播佛教",
+            "ru": [
+              "Распространение буддизма"
+            ],
+            "gloss": "Распространение буддизма — одна из сторон культурного обмена по этим путям."
+          },
+          "sources": [
+            {
+              "title": "About the Silk Roads — UNESCO",
+              "url": "https://www.unesco.org/en/silk-roads/about-silk-roads?hub=196704",
+              "quote": "Buddhism is one example of a religion that travelled the Silk Roads.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 12 option o2; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Silk Roads: the Routes Network of Chang’an–Tianshan Corridor — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1442/",
+              "quote": "record the eastward transmission of Buddhism from India via Karakorum",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_search_result; exact primary-source excerpt read 2026-11-08; full page not fetched"
+            }
+          ]
+        },
+        {
+          "id": "silkrole-exchange",
+          "name": {
+            "zh": "中外经济与文化交往",
+            "ru": [
+              "Экономические и культурные связи"
+            ],
+            "gloss": "Экономические и культурные связи — в Китай везли стекло, драгоценности и растения."
+          },
+          "sources": [
+            {
+              "title": "丝绸之路 — 中国国家博物馆, выставка 2014–2015",
+              "url": "https://www.chnmuseum.cn/zl/zlhg/201812/t20181220_32385.shtml",
+              "quote": "西方的珠宝、玻璃、金银器以及动植物等输入中国",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 12 option o3; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Silk Roads: the Routes Network of Chang’an–Tianshan Corridor — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1442/",
+              "quote": "linking multiple civilizations and facilitating far-reaching exchanges",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_search_result; exact primary-source excerpt read 2026-11-08; full page not fetched"
+            }
+          ],
+          "olympiad": [
+            "2025-26-mun-irk-6"
+          ]
+        },
+        {
+          "id": "silkrole-campaigns",
+          "name": {
+            "zh": "军事征伐",
+            "ru": [
+              "Военные походы"
+            ],
+            "gloss": "Военные походы — крепости вдоль путей защищали торговцев и путешественников."
+          },
+          "sources": [
+            {
+              "title": "Silk Roads: the Routes Network of Chang’an–Tianshan Corridor — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1442/",
+              "quote": "the extensive network of forts, beacon towers, way stations and caravanserai that accommodated travellers and ensured their safety",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 12 option o4; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "征伐 — 教育部《重編國語辭典修訂本》2021",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=117244&la=0&powerMode=0",
+              "quote": "出征討伐。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_search_result; exact primary-source excerpt read 2026-11-08; full page not fetched"
+            }
+          ]
+        }
+      ]
+    },
+    "croppairs": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "croppair-southwheat-northrice",
+          "name": {
+            "zh": "南方小麦，北方水稻",
+            "ru": [
+              "Пшеница / рис"
+            ],
+            "gloss": "Пшеница / рис — рисовые поля требуют более тёплой и влажной среды."
+          },
+          "sources": [
+            {
+              "title": "Farming practices — Education Bureau, Hong Kong, учебный лист 18",
+              "url": "https://www.edb.gov.hk/attachment/sc/curriculum-development/kla/pshe/national-geography/national-geography-resource-portal/Infosheets/info_sheet_18-farming_practices-chi.pdf",
+              "quote": "水稻田主要位于温暖湿润的环境中。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 19 option o1; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Статья о региональных различиях сельского хозяйства — журнал при Сямэньском университете",
+              "url": "https://ces.xmu.edu.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=521",
+              "quote": "“秦岭－淮河”以南大多种植水稻，以北则多种植小麦。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 19 keySources[0]; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        },
+        {
+          "id": "croppair-southrice-northwheat",
+          "name": {
+            "zh": "南方水稻，北方小麦",
+            "ru": [
+              "Рис / пшеница"
+            ],
+            "gloss": "Рис / пшеница — традиционную границу районов связывают с линией Циньлин—Хуайхэ."
+          },
+          "sources": [
+            {
+              "title": "Статья о региональных различиях сельского хозяйства — журнал при Сямэньском университете",
+              "url": "https://ces.xmu.edu.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=521",
+              "quote": "“秦岭－淮河”以南大多种植水稻，以北则多种植小麦。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 19 option o2; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Farming practices — Education Bureau, Hong Kong, учебный лист 18",
+              "url": "https://www.edb.gov.hk/attachment/sc/curriculum-development/kla/pshe/national-geography/national-geography-resource-portal/Infosheets/info_sheet_18-farming_practices-chi.pdf",
+              "quote": "在中国北方……小麦是主要作物。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 19 keySources[1]; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ],
+          "olympiad": [
+            "2025-26-mun-novg-6"
+          ]
+        },
+        {
+          "id": "croppair-southcorn-northsoy",
+          "name": {
+            "zh": "南方玉米，北方大豆",
+            "ru": [
+              "Кукуруза / соя"
+            ],
+            "gloss": "Кукуруза / соя — Северо-Восток Китая является крупным районом обеих культур."
+          },
+          "sources": [
+            {
+              "title": "全国新增1000亿斤粮食生产能力规划 — Государственный комитет по развитию и реформам КНР",
+              "url": "https://www.ndrc.gov.cn/fzggw/jgsj/njs/sjdt/200911/P020191101560387087722.pdf",
+              "quote": "东北区。该区是我国最大的玉米、优质粳稻和大豆产区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 19 option o3; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Материал о производстве сои — правительство провинции Цзилинь",
+              "url": "https://www.jl.gov.cn/szfzt/jlssxsxnyxdh/zcyt/202307/t20230704_2403074.html",
+              "quote": "我国大豆主产区主要分布在东北地区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 19 option o4; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        },
+        {
+          "id": "croppair-southsoy-northcorn",
+          "name": {
+            "zh": "南方大豆，北方玉米",
+            "ru": [
+              "Соя / кукуруза"
+            ],
+            "gloss": "Соя / кукуруза — основной район выращивания сои в Китае находится на северо-востоке."
+          },
+          "sources": [
+            {
+              "title": "Материал о производстве сои — правительство провинции Цзилинь",
+              "url": "https://www.jl.gov.cn/szfzt/jlssxsxnyxdh/zcyt/202307/t20230704_2403074.html",
+              "quote": "我国大豆主产区主要分布在东北地区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 19 option o4; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "全国新增1000亿斤粮食生产能力规划 — Государственный комитет по развитию и реформам КНР",
+              "url": "https://www.ndrc.gov.cn/fzggw/jgsj/njs/sjdt/200911/P020191101560387087722.pdf",
+              "quote": "东北区。该区是我国最大的玉米、优质粳稻和大豆产区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 19 option o3; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        }
+      ]
     }
   }
 }

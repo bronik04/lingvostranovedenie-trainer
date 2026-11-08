@@ -1,0 +1,2745 @@
+{
+  "landmarks": {
+    "columnAdditions": [
+      {
+        "dossier": "nature",
+        "table": "waters",
+        "column": "longestcanalname",
+        "kind": "zh"
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "column": "yuyuancity",
+        "kind": "zh"
+      },
+      {
+        "dossier": "landmarks",
+        "table": "gardens",
+        "column": "suzhoufourgarden",
+        "kind": "zh"
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "column": "maitreyacity",
+        "kind": "zh"
+      },
+      {
+        "dossier": "nature",
+        "table": "scenicplaces",
+        "column": "kunminghulandmark",
+        "kind": "zh"
+      }
+    ],
+    "tableAdditions": [
+      {
+        "dossier": "landmarks",
+        "table": "skyscrapers",
+        "definition": {
+          "columns": {
+            "name": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      }
+    ],
+    "rowAdditions": [
+      {
+        "dossier": "nature",
+        "table": "waters",
+        "row": {
+          "id": "wat-shangtanghe",
+          "name": {
+            "zh": "上塘河",
+            "ru": [
+              "Шантанхэ"
+            ],
+            "gloss": "Шантанхэ — древний канал в Ханчжоу общей длиной 48 км."
+          },
+          "longestcanalname": {
+            "zh": "上塘河",
+            "ru": [
+              "Шантанхэ"
+            ],
+            "gloss": "Шантанхэ — древний канал в Ханчжоу общей длиной 48 км."
+          },
+          "sources": [
+            {
+              "title": "大运河（杭州段）介绍 — правительство района Гуншу, Институт культуры Великого канала",
+              "url": "https://www.gongshu.gov.cn/art/2019/1/28/art_1229789753_59080179.html",
+              "quote": "上塘河又名上塘运河，位于杭州市区东北……全长48公里。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 1 / o2; original: Сверено с текстом официальной страницы в веб-поиске 2026-11-08."
+            },
+            {
+              "title": "116种水生物在上塘河“安家” — 中国人民政治协商会议杭州市委员会",
+              "url": "https://www.hzzx.gov.cn/cshz/content/2023-02/20/content_8474771.htm",
+              "quote": "上塘河又名上塘运河，是杭州历史上第一条人工河。河道全长48公里，河面宽30米—50米，流域面积245平方公里。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "waters",
+        "row": {
+          "id": "wat-jinghang-canal",
+          "name": {
+            "zh": "京杭大运河",
+            "ru": [
+              "Великий канал Пекин—Ханчжоу"
+            ],
+            "gloss": "Великий канал Пекин—Ханчжоу — связывает пять речных бассейнов Китая."
+          },
+          "longestcanalname": {
+            "zh": "京杭大运河",
+            "ru": [
+              "Великий канал Пекин—Ханчжоу"
+            ],
+            "gloss": "Великий канал Пекин—Ханчжоу — связывает пять речных бассейнов Китая."
+          },
+          "sources": [
+            {
+              "title": "Тысяча ли вдоль Великого канала — правительство Пекина",
+              "url": "https://www.beijing.gov.cn/renwen/sy/whkb/201903/t20190326_1865510.html",
+              "quote": "沟通了海河、黄河、淮河、长江、钱塘江五大水系。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 1 / o4; original: Сверено с текстом официальной страницы в веб-поиске 2026-11-08."
+            },
+            {
+              "title": "世界最长的运河——京杭大运河 — 中国科学院地理科学与资源研究所",
+              "url": "https://igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692527.html",
+              "quote": "中国的京杭大运河，北起北京，南抵浙江杭州，全长1 794千米，纵贯中国南北，沟通海河、黄河、淮河、长江、钱塘江五大水系，是世界上最长的人工河。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-text-read; direct-open-timeout"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "landmarks",
+        "table": "skyscrapers",
+        "row": {
+          "id": "lm-cn-shanghai-world-financial-center",
+          "name": {
+            "zh": "上海环球金融中心",
+            "ru": [
+              "Шанхайский всемирный финансовый центр"
+            ],
+            "gloss": "Шанхайский всемирный финансовый центр — соседняя высотка высотой 492 м."
+          },
+          "sources": [
+            {
+              "title": "侬欢喜上海伐 — 上海市人民政府新闻办公室 (источник: 人民日报, текст о 2025 годе)",
+              "url": "https://en.shio.gov.cn/TrueCMS/shxwbgs/wxdtt/content/e3fad178-4821-4ba3-a7c4-c96fb91b8e99.htm",
+              "quote": "上海环球金融中心\n\n高492米",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 10 / o1; original: web_open; relevant text read in batch 6"
+            },
+            {
+              "title": "Shanghai World Financial Center — official project overview",
+              "url": "https://swfc-shanghai.com/about_intro.php?l=en",
+              "quote": "Soaring to a height of 492m with 101 above-ground floors,SWFC is the world’s tallest mixed-use urban development project.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-text-read"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "landmarks",
+        "table": "skyscrapers",
+        "row": {
+          "id": "lm-cn-shanghai-tower",
+          "name": {
+            "zh": "上海中心大厦",
+            "ru": [
+              "Шанхайская башня"
+            ],
+            "gloss": "Шанхайская башня — её смотровая площадка находится на 118-м этаже."
+          },
+          "sources": [
+            {
+              "title": "Top of Shanghai Observatory — Shanghai Tower, официальный сайт",
+              "url": "https://en.shanghaitower.com/shagnhai.html",
+              "quote": "The observatory is on the 118th floor.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 10 / o2; original: web_open; relevant text read in batch 6"
+            },
+            {
+              "title": "侬欢喜上海伐 — 上海市人民政府新闻办公室 (источник: 人民日报, текст о 2025 годе)",
+              "url": "https://en.shio.gov.cn/TrueCMS/shxwbgs/wxdtt/content/e3fad178-4821-4ba3-a7c4-c96fb91b8e99.htm",
+              "quote": "上海中心大厦\n\n高632米，中国第一高楼、世界第三高楼",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 10 / keySources[0]; original: web_open; relevant text read in batch 6"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "landmarks",
+        "table": "skyscrapers",
+        "row": {
+          "id": "lm-cn-jinmao-tower",
+          "name": {
+            "zh": "金茂大厦",
+            "ru": [
+              "Цзинь Мао"
+            ],
+            "gloss": "Цзинь Мао — соседний небоскрёб высотой 420,5 м."
+          },
+          "sources": [
+            {
+              "title": "侬欢喜上海伐 — 上海市人民政府新闻办公室 (источник: 人民日报, текст о 2025 годе)",
+              "url": "https://en.shio.gov.cn/TrueCMS/shxwbgs/wxdtt/content/e3fad178-4821-4ba3-a7c4-c96fb91b8e99.htm",
+              "quote": "金茂大厦\n\n高420.5米",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 10 / o3; original: web_open; relevant text read in batch 6"
+            },
+            {
+              "title": "Jinmao Tower — SOM, architect of the project",
+              "url": "https://www.som.com/projects/jin-mao-tower/",
+              "quote": "Location Shanghai, China\n\nThe 420-meter-high Jin Mao Tower was China’s tallest building at the time of its completion and today remains its most iconic.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-text-read; direct-open-403"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "landmarks",
+        "table": "skyscrapers",
+        "row": {
+          "id": "added-ping-an-finance-centre",
+          "name": {
+            "zh": "平安金融中心",
+            "ru": [
+              "Финансовый центр Пинъань"
+            ],
+            "gloss": "Финансовый центр Пинъань — небоскрёб в Шэньчжэне высотой около 600 м."
+          },
+          "sources": [
+            {
+              "title": "Ping An Finance Centre — KPF, архитектор проекта",
+              "url": "https://www.kpf.com/project/ping-an-finance-centre/",
+              "quote": "Ping An is the physical and iconic center of Shenzhen’s growing central business district. … 600 m / 1,969 ft",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 10 / added-ping-an-finance-centre; original: web_search_result; full relevant indexed project text read in batch 6; direct open did not finish"
+            },
+            {
+              "title": "营商观察丨深圳福田金融业增速领跑 解码“千亿集群”增长逻辑 — 福田政府在线",
+              "url": "https://www.szft.gov.cn/ftxx/xwdt/bmgzdt/content/post_12186244.html",
+              "quote": "从香蜜湖驱车向东，朝着福田繁华的CBD进发，作为深圳知名地标的平安金融中心599米的大楼显得格外醒目。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-text-read"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "landmarks",
+        "table": "gardens",
+        "row": {
+          "id": "lm-cn-huanxiu-villa",
+          "name": {
+            "zh": "环秀山庄",
+            "ru": [
+              "Хуаньсю-шаньчжуан"
+            ],
+            "gloss": "Хуаньсю-шаньчжуан — искусственные скалы здесь создал цинский мастер Гэ Юйлян"
+          },
+          "country": {
+            "zh": "中国",
+            "ru": [
+              "Китай"
+            ]
+          },
+          "city": {
+            "zh": "苏州",
+            "ru": [
+              "Сучжоу"
+            ]
+          },
+          "feature": {
+            "zh": "湖石假山",
+            "ru": [
+              "искусственные скалы из озёрного камня"
+            ]
+          },
+          "address": "Сучжоу, улица Цзиндэлу",
+          "dates": "Сад создавался в эпоху Цин, с периода Цяньлун",
+          "description": "Хуаньсю-шаньчжуан известен искусственными скалами, созданными цинским мастером Гэ Юйляном.",
+          "suzhoufourgarden": {
+            "zh": "环秀山庄",
+            "ru": [
+              "Хуаньсю-шаньчжуан"
+            ],
+            "gloss": "Хуаньсю-шаньчжуан — искусственные скалы здесь создал цинский мастер Гэ Юйлян"
+          },
+          "sources": [
+            {
+              "title": "环秀山庄 — 苏州市园林和绿化管理局",
+              "url": "https://ylj.suzhou.gov.cn/szsylj/sjyc/201905/ed99a3e821de464cae28c04e79d60512.shtml",
+              "quote": "环秀山庄，位于苏州城中景德路，面积仅为3亩，1988年被列为全国重点文物保护单位，1997年底被联合国教科文组织遗产委员会列为世界文化遗产。\n\n环秀山庄占地不大，但其内湖石假山为中国之最。据载，此山为清代叠山大师戈裕良之作，虽由人作，有如天开，尽得造化之妙，堪称假山之珍。环秀山庄亦因此而驰名。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read; accepted-caption-source-rechecked"
+            },
+            {
+              "title": "环秀山庄 — 苏州市园林和绿化管理局，园林名录",
+              "url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201902/79ad9beb6c194e6c9bfa5d78e1cb2661.shtml",
+              "quote": "环秀山庄始建于清朝乾隆年间，为一官僚私园。乾隆末年归尚书毕沅，其后屡有兴废。道光末成为汪姓宗祠的一部分，更名为环秀山庄。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-text-read"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": {
+          "id": "city-leshan",
+          "name": {
+            "zh": "乐山",
+            "ru": [
+              "Лэшань"
+            ],
+            "gloss": "Лэшань — сидящий Будда высотой 71 метр высечен в скале в эпоху Тан",
+            "ref": "nature/scenicplaces/sp-leshan"
+          },
+          "maitreyacity": {
+            "zh": "乐山",
+            "ru": [
+              "Лэшань"
+            ],
+            "gloss": "Лэшань — сидящий Будда высотой 71 метр высечен в скале в эпоху Тан"
+          },
+          "sources": [
+            {
+              "title": "乐山市乐山大佛景区 — 文化和旅游部",
+              "url": "https://sjfw.mct.gov.cn/site/dataservice/culdetails?curId=10&id=35049",
+              "quote": "乐山大佛景区地处四川省乐山市市中区南……乐山大佛又称嘉州凌云寺大弥勒石像，于唐代开元元年（713年）动工，贞元十九年（803年）完工……佛像通高71米，为世界现存最大露天摩崖石刻造像。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 18 / keySources[0]; original: fresh-web-page-text"
+            },
+            {
+              "title": "跟着档案游巴蜀：峨眉山—乐山大佛 — 重庆市档案局",
+              "url": "https://jda.cq.gov.cn/web/article/1464346334284701696/web/content_1464346334284701696.html",
+              "quote": "乐山大佛，这座世界上最大的弥勒石刻造像壁立千仞、端坐三江，通高71米。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 18 / keySources[1]; original: fresh-web-search-result-text"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "scenicplaces",
+        "row": {
+          "id": "sp-forbidden-city",
+          "name": {
+            "zh": "紫禁城",
+            "ru": [
+              "Запретный город"
+            ],
+            "gloss": "Запретный город — императорский дворец Мин и Цин, построенный в 1406–1420 годах"
+          },
+          "kunminghulandmark": {
+            "zh": "紫禁城",
+            "ru": [
+              "Запретный город"
+            ],
+            "gloss": "Запретный город — императорский дворец Мин и Цин, построенный в 1406–1420 годах"
+          },
+          "sources": [
+            {
+              "title": "About the Palace Museum — The Palace Museum",
+              "url": "https://intl.dpm.org.cn/about_us/126.html",
+              "quote": "It was built from 1406 to 1420 by the third emperor of the Ming dynasty…northward from Nanjing to Beijing",
+              "authority": "official",
+              "checkedAt": "2026-10-17",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/dossiers/landmarks.json / palaces / lm-cn-beijing-gugong; original: accepted-dossier-source"
+            },
+            {
+              "title": "Imperial Palaces of the Ming and Qing Dynasties in Beijing and Shenyang — UNESCO",
+              "url": "https://whc.unesco.org/en/list/439/",
+              "quote": "constructed between 1406 and 1420",
+              "authority": "official",
+              "checkedAt": "2026-10-17",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/dossiers/landmarks.json / palaces / lm-cn-beijing-gugong; original: accepted-dossier-source"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "scenicplaces",
+        "row": {
+          "id": "sp-great-wall",
+          "name": {
+            "zh": "长城",
+            "ru": [
+              "Великая стена"
+            ],
+            "gloss": "Великая стена — большая часть её нынешнего облика сложилась при Мин",
+            "ref": "landmarks/fortifications/lm-cn-great-wall"
+          },
+          "kunminghulandmark": {
+            "zh": "长城",
+            "ru": [
+              "Великая стена"
+            ],
+            "gloss": "Великая стена — большая часть её нынешнего облика сложилась при Мин",
+            "ref": "landmarks/fortifications/lm-cn-great-wall"
+          },
+          "sources": [
+            {
+              "title": "The Great Wall — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/438/",
+              "quote": "Construction continued up to the Ming dynasty (1368–1644), when the Great Wall became the world's largest military structure. … The Great Wall begins in the east at Shanhaiguan in Hebei province and ends at Jiayuguan in Gansu province to the west.",
+              "authority": "official",
+              "checkedAt": "2026-10-23",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/dossiers/landmarks.json / fortifications / lm-cn-great-wall; original: accepted-dossier-source"
+            },
+            {
+              "title": "浪漫中国丨世界遗产图鉴：长城 — 新华网",
+              "url": "http://www.news.cn/video/20231219/619eb0bb44034860a1b83a1d6af1d63c/c.html",
+              "quote": "到了明代（1368年至1644年），在旧有的基础上逐渐改建成如今的面貌。万里长城气魄雄伟，是世界历史上伟大的工程之一。1987年被列入《世界文化遗产名录》。",
+              "authority": "official",
+              "checkedAt": "2026-10-23",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/dossiers/landmarks.json / fortifications / lm-cn-great-wall; original: accepted-dossier-source"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "scenicplaces",
+        "row": {
+          "id": "sp-yonghe-temple",
+          "name": {
+            "zh": "雍和宫",
+            "ru": [
+              "Юнхэгун"
+            ],
+            "gloss": "Юнхэгун — в 1744 году бывшую резиденцию превратили в буддийский монастырь",
+            "ref": "landmarks/sacred/lm-cn-yonghe"
+          },
+          "kunminghulandmark": {
+            "zh": "雍和宫",
+            "ru": [
+              "Юнхэгун"
+            ],
+            "gloss": "Юнхэгун — в 1744 году бывшую резиденцию превратили в буддийский монастырь",
+            "ref": "landmarks/sacred/lm-cn-yonghe"
+          },
+          "sources": [
+            {
+              "title": "雍和宫藏传佛教艺术博物馆 — 北京市文物局",
+              "url": "https://wwj.beijing.gov.cn/bjww/362771/362772/545817/index.html",
+              "quote": "雍和宫是清代皇家藏传佛教寺院，也是北京地区现存最大的一座藏传佛教寺院……乾隆九年（1744年）改为藏传佛教格鲁派寺院。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 20 / o4; original: fresh-web-search-result-full-article-text"
+            },
+            {
+              "title": "北京市民宗委：雍和宫",
+              "url": "https://mzzjw.beijing.gov.cn/zwgk/mzdt/202212/t20221210_2877439.html",
+              "quote": "雍和宫位于北京市东城区雍和宫大街12号，始建于清康熙三十三年（1694年）…格鲁派寺院",
+              "authority": "official",
+              "checkedAt": "2026-10-17",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/dossiers/landmarks.json / sacred / lm-cn-yonghe; original: accepted-dossier-source"
+            }
+          ]
+        }
+      }
+    ],
+    "cellAdditions": [
+      {
+        "dossier": "nature",
+        "table": "waters",
+        "row": "wat-huanghe",
+        "column": "longestcanalname",
+        "cell": {
+          "zh": "黄河",
+          "ru": [
+            "Хуанхэ"
+          ],
+          "gloss": "Хуанхэ — природная река длиной 5464 км, впадающая в Бохайский залив."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "黄河 — Управление водных ресурсов Нинся",
+            "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202112/t20211201_3176821.html",
+            "quote": "黄河全长5464公里，为中国第二大河。……在山东省垦利区注入渤海。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 1 / o1; original: Сверено с текстом официальной страницы в веб-поиске 2026-11-08."
+          }
+        ]
+      },
+      {
+        "dossier": "nature",
+        "table": "waters",
+        "row": "wat-lingqu",
+        "column": "longestcanalname",
+        "cell": {
+          "zh": "灵渠",
+          "ru": [
+            "Линцюй"
+          ],
+          "gloss": "Линцюй — соединяет Сянцзян и Лицзян, бассейны Янцзы и Чжуцзяна."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "古代著名水利工程：灵渠 — Управление водных ресурсов Цзянмэня",
+            "url": "https://www.jiangmen.gov.cn/bmpd/jmsslj/zjsl/content/post_1485701.html",
+            "quote": "中国沟通长江水系和珠江水系的古运河。……它沟通了湘江和漓江。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 1 / o3; original: Сверено с текстом официальной страницы в веб-поиске 2026-11-08."
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-shanghai",
+        "column": "yuyuancity",
+        "cell": {
+          "zh": "上海",
+          "ru": [
+            "Шанхай"
+          ],
+          "gloss": "Шанхай — сад Юйюань при Мин создали для радости родителей Пань Юньдуаня"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "上海豫园 — 上海市人民政府",
+            "url": "https://www.shanghai.gov.cn/citywalk/20260625/3a8ac74e088f4d468d9c3434b0b43d94.html",
+            "quote": "上海豫园位于黄浦区……始建于明嘉靖三十八年（公元1559年）……豫园由当时的四川布政使潘允端修建，取“豫”之意，寓意“平安”“愉悦老亲”。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 7 / o1; original: fresh-web-search-result-full-article-text"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-guangzhou",
+        "column": "yuyuancity",
+        "cell": {
+          "zh": "广州",
+          "ru": [
+            "Гуанчжоу"
+          ],
+          "gloss": "Гуанчжоу — сад Юйиньшаньфан входит в четвёрку знаменитых садов Гуандуна"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "余荫山房 — 广州市文化广电旅游局",
+            "url": "https://wglj.gz.gov.cn/ztmb/gzhyn/ajjq/4a/content/post_8930904.html",
+            "quote": "广州市余荫山房景区……被誉为“广东四大名园”之一，以“藏而不露，缩龙成寸”的建筑特色闻名于世。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 7 / o2; original: fresh-web-search-result-full-article-text"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-xian",
+        "column": "yuyuancity",
+        "cell": {
+          "zh": "西安",
+          "ru": [
+            "Сиань"
+          ],
+          "gloss": "Сиань — парк Датан Фужунъюань посвящён культуре эпохи Тан"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "大唐芙蓉园里，正书写汉服的故事…… — 西安曲江新区管理委员会",
+            "url": "https://qjxq.xa.gov.cn/xwzx/xwdt/2011738196298817538.html",
+            "quote": "元旦清晨，大唐芙蓉园仕女馆内雅乐悠扬……中心依托大唐芙蓉园的盛唐文化IP。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 7 / o3; original: fresh-web-search-result-text"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-beijing",
+        "column": "yuyuancity",
+        "cell": {
+          "zh": "北京",
+          "ru": [
+            "Пекин"
+          ],
+          "gloss": "Пекин — Ихэюань восстановили после разрушения во время войны 1860 года"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "Summer Palace, an Imperial Garden in Beijing — UNESCO World Heritage Centre",
+            "url": "https://whc.unesco.org/en/list/880/",
+            "quote": "The Summer Palace in Beijing – first built in 1750, largely destroyed in the war of 1860 and restored on its original foundations in 1886 – is a masterpiece of Chinese landscape garden design.",
+            "authority": "official",
+            "checkedAt": "2026-10-23",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 7 / o4; original: reused-accepted-dossier-source-not-freshly-fetched"
+          }
+        ]
+      },
+      {
+        "dossier": "landmarks",
+        "table": "gardens",
+        "row": "lm-cn-liuyuan",
+        "column": "suzhoufourgarden",
+        "cell": {
+          "zh": "留园",
+          "ru": [
+            "Лююань"
+          ],
+          "gloss": "Лююань — основан при Мин как частный сад Сюй Тайши"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "留园 — 苏州市园林和绿化管理局",
+            "url": "https://ylj.suzhou.gov.cn/szsylj/sjyc/201905/b7c0f2058c75498c9ecbacf234e25b08.shtml",
+            "quote": "园始建于明代万历二十一年（公元1593年），为太僕寺少卿徐泰时的私家园林，时人称东园。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 13 / o2; original: fresh-web-page-text"
+          },
+          {
+            "title": "苏州园林 — 中国政府旅游文化资料",
+            "url": "https://www.tba.gov.cn/slbthlyglj/lyfq/content/c27acb09-1e1b-48e7-8a11-d0ef11330468.html",
+            "quote": "其中沧浪亭、狮子林、拙政园和留园分别代表着宋、元、明、清四个朝代的艺术风格，被称为苏州“四大名园”。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 13 / keySources[0]; original: fresh-web-search-result-full-article-text"
+          }
+        ]
+      },
+      {
+        "dossier": "landmarks",
+        "table": "gardens",
+        "row": "lm-cn-wangshi-garden",
+        "column": "suzhoufourgarden",
+        "cell": {
+          "zh": "网师园",
+          "ru": [
+            "Ваншиюань"
+          ],
+          "gloss": "Ваншиюань — название связано с мечтой хозяина удалиться от дел и жить рыбаком"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "网师园记（清·钱大昕） — 苏州市园林和绿化管理局",
+            "url": "https://ylj.suzhou.gov.cn/szsylj/ylwh/201907/6310c1e67a69483a969552c865f55d87.shtml",
+            "quote": "宋光禄悫庭购其地，治别业为归老之计，因以网师自号，并颜其园，盖托于渔隐之义，亦取巷名音相似也。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 13 / o3; original: fresh-web-search-result-full-primary-text"
+          }
+        ]
+      },
+      {
+        "dossier": "landmarks",
+        "table": "gardens",
+        "row": "lm-cn-tuisi-garden",
+        "column": "suzhoufourgarden",
+        "cell": {
+          "zh": "退思园",
+          "ru": [
+            "Туйсыюань"
+          ],
+          "gloss": "Туйсыюань — сад эпохи Цин в Тунли, известный как «сад семьи Жэнь»"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "退思园 — 苏州市园林和绿化管理局",
+            "url": "https://ylj.suzhou.gov.cn/szsylj/sjyc/201905/3fdb8e8723cc4a8a88f3e912d0c48af4.shtml",
+            "quote": "同里镇退思园，俗称任家花园…清光绪十一年（1885年）…退思园距苏州18公里",
+            "authority": "official",
+            "checkedAt": "2026-10-17",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 13 / lm-cn-tuisi-garden; original: reused-accepted-dossier-source-not-freshly-fetched"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-xian",
+        "column": "maitreyacity",
+        "cell": {
+          "zh": "西安",
+          "ru": [
+            "Сиань"
+          ],
+          "gloss": "Сиань — Большую пагоду диких гусей построили для сутр Сюаньцзана"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "西安市地方志办公室：大雁塔",
+            "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1802954373708996609.html",
+            "quote": "大雁塔--西安市地方志办公室…唐永徽三年（公元652年）为玄奘藏经典而修建",
+            "authority": "official",
+            "checkedAt": "2026-10-17",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 18 / o1; original: reused-accepted-dossier-source-not-freshly-fetched"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-nanjing",
+        "column": "maitreyacity",
+        "cell": {
+          "zh": "南京",
+          "ru": [
+            "Нанкин"
+          ],
+          "gloss": "Нанкин — храм Цзимин восстановили при первом императоре династии Мин"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "鸡鸣寺简介 — 南京市民族宗教事务局",
+            "url": "https://mzzjj.nanjing.gov.cn/mzzj/njzjgk/njfj/201809/t20180927_1198623.html",
+            "quote": "南京鸡鸣寺，是南京最古老的梵刹之一。……明洪武二十年（公元1387年），明太祖朱元璋在同泰寺故址重新兴建寺院。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 18 / o3; original: fresh-web-search-result-full-article-text"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-beijing",
+        "column": "maitreyacity",
+        "cell": {
+          "zh": "北京",
+          "ru": [
+            "Пекин"
+          ],
+          "gloss": "Пекин — Юнхэгун стал монастырём тибетского буддизма в XVIII веке"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "雍和宫藏传佛教艺术博物馆 — 北京市文物局",
+            "url": "https://wwj.beijing.gov.cn/bjww/362771/362772/545817/index.html",
+            "quote": "雍和宫是清代皇家藏传佛教寺院，也是北京地区现存最大的一座藏传佛教寺院……乾隆九年（1744年）改为藏传佛教格鲁派寺院。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 18 / o4; original: fresh-web-search-result-full-article-text"
+          }
+        ]
+      },
+      {
+        "dossier": "nature",
+        "table": "scenicplaces",
+        "row": "sp-summer-palace",
+        "column": "kunminghulandmark",
+        "cell": {
+          "zh": "颐和园",
+          "ru": [
+            "Ихэюань"
+          ],
+          "gloss": "Ихэюань — основу композиции составляют Куньминху и гора Ваньшоушань",
+          "ref": "landmarks/gardens/lm-cn-summer-palace-garden"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "颐和园 — 北京市文物局",
+            "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738088/1742735/364350/index.html",
+            "quote": "以万寿山、昆明湖构成其基本框架",
+            "authority": "official",
+            "checkedAt": "2026-10-17",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 20 / o2; original: reused-accepted-dossier-source-not-freshly-fetched"
+          }
+        ]
+      }
+    ],
+    "identityRefs": [],
+    "questions": [
+      {
+        "reviewNumber": 1,
+        "dossier": "nature",
+        "table": "waters",
+        "row": "wat-jinghang-canal",
+        "ask": "longestcanalname",
+        "optionRows": {
+          "o1": "wat-huanghe",
+          "o2": "wat-shangtanghe",
+          "o3": "wat-lingqu",
+          "o4": "wat-jinghang-canal"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 7,
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-shanghai",
+        "ask": "yuyuancity",
+        "optionRows": {
+          "o1": "city-shanghai",
+          "o2": "city-guangzhou",
+          "o3": "city-xian",
+          "o4": "city-beijing"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 10,
+        "dossier": "landmarks",
+        "table": "skyscrapers",
+        "row": "lm-cn-shanghai-tower",
+        "ask": "name",
+        "optionRows": {
+          "o1": "lm-cn-shanghai-world-financial-center",
+          "o2": "lm-cn-shanghai-tower",
+          "o3": "lm-cn-jinmao-tower",
+          "added-ping-an-finance-centre": "added-ping-an-finance-centre"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 13,
+        "dossier": "landmarks",
+        "table": "gardens",
+        "row": "lm-cn-liuyuan",
+        "ask": "suzhoufourgarden",
+        "optionRows": {
+          "o1": "lm-cn-huanxiu-villa",
+          "o2": "lm-cn-liuyuan",
+          "o3": "lm-cn-wangshi-garden",
+          "lm-cn-tuisi-garden": "lm-cn-tuisi-garden"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 18,
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-leshan",
+        "ask": "maitreyacity",
+        "optionRows": {
+          "o1": "city-xian",
+          "o2": "city-leshan",
+          "o3": "city-nanjing",
+          "o4": "city-beijing"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 20,
+        "dossier": "nature",
+        "table": "scenicplaces",
+        "row": "sp-summer-palace",
+        "ask": "kunminghulandmark",
+        "optionRows": {
+          "o1": "sp-forbidden-city",
+          "o2": "sp-summer-palace",
+          "o3": "sp-great-wall",
+          "o4": "sp-yonghe-temple"
+        },
+        "exclude": []
+      }
+    ],
+    "captionCorrections": [],
+    "contentProblems": []
+  },
+  "culture": {
+    "columnAdditions": [
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "column": "goubuliregionname",
+        "kind": "zh"
+      },
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "column": "paomoregionname",
+        "kind": "zh"
+      },
+      {
+        "dossier": "literature",
+        "table": "authors",
+        "column": "moonverseauthor",
+        "kind": "zh"
+      },
+      {
+        "dossier": "holidays",
+        "table": "customs",
+        "column": "springaction",
+        "kind": "zh"
+      }
+    ],
+    "tableAdditions": [
+      {
+        "dossier": "cuisine",
+        "table": "teawaters",
+        "definition": {
+          "columns": {
+            "name": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "crafts",
+        "table": "garmentparts",
+        "definition": {
+          "columns": {
+            "name": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      }
+    ],
+    "rowAdditions": [
+      {
+        "dossier": "cuisine",
+        "table": "teawaters",
+        "row": {
+          "id": "tea-water-spring",
+          "name": {
+            "zh": "泉水",
+            "ru": [
+              "Родниковая вода"
+            ],
+            "gloss": "Родниковая вода — Лу Юй советовал выбирать медленно текущие источники"
+          },
+          "sources": [
+            {
+              "title": "陆羽煎茶法 光辉耀古今 — 天门市人民政府 / 天门市陆羽研究会",
+              "url": "https://www.tianmen.gov.cn/csly/cwh/202111/t20211103_3842760.shtml",
+              "quote": "《茶经·五之煮》：“其水，用山水上，江水中，井水下。其山水，拣乳泉、石池漫流者上……其江水，取去人远者；井，取汲多者。”",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #9 / keySources"
+            },
+            {
+              "title": "茶典籍翻译中的互文关联与模因传承 — 北京航空航天大学学报（社会科学版）",
+              "url": "https://bhxb.buaa.edu.cn/fileBJHKHTDXXBSHKXB/journal/article/bjhkhtdxxbshkxb/html/2016/4/20160412.htm",
+              "quote": "《茶经》第5章：其水，用山水上，江水中，井水下。……其山水，拣乳泉、石池漫流者上。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #9 / keySources"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "cuisine",
+        "table": "teawaters",
+        "row": {
+          "id": "tea-water-river",
+          "name": {
+            "zh": "江河水",
+            "ru": [
+              "Речная вода"
+            ],
+            "gloss": "Речная вода — Лу Юй советовал брать её подальше от людных мест"
+          },
+          "sources": [
+            {
+              "title": "陆羽煎茶法 光辉耀古今 — 天门市人民政府 / 天门市陆羽研究会",
+              "url": "https://www.tianmen.gov.cn/csly/cwh/202111/t20211103_3842760.shtml",
+              "quote": "《茶经·五之煮》：“其水，用山水上，江水中，井水下。其山水，拣乳泉、石池漫流者上……其江水，取去人远者；井，取汲多者。”",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #9 / keySources"
+            },
+            {
+              "title": "茶典籍翻译中的互文关联与模因传承 — 北京航空航天大学学报（社会科学版）",
+              "url": "https://bhxb.buaa.edu.cn/fileBJHKHTDXXBSHKXB/journal/article/bjhkhtdxxbshkxb/html/2016/4/20160412.htm",
+              "quote": "《茶经》第5章：其水，用山水上，江水中，井水下。……其山水，拣乳泉、石池漫流者上。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #9 / keySources"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "cuisine",
+        "table": "teawaters",
+        "row": {
+          "id": "tea-water-well",
+          "name": {
+            "zh": "井水",
+            "ru": [
+              "Колодезная вода"
+            ],
+            "gloss": "Колодезная вода — Лу Юй предпочитал колодцы, из которых часто черпают воду"
+          },
+          "sources": [
+            {
+              "title": "陆羽煎茶法 光辉耀古今 — 天门市人民政府 / 天门市陆羽研究会",
+              "url": "https://www.tianmen.gov.cn/csly/cwh/202111/t20211103_3842760.shtml",
+              "quote": "《茶经·五之煮》：“其水，用山水上，江水中，井水下。其山水，拣乳泉、石池漫流者上……其江水，取去人远者；井，取汲多者。”",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #9 / keySources"
+            },
+            {
+              "title": "茶典籍翻译中的互文关联与模因传承 — 北京航空航天大学学报（社会科学版）",
+              "url": "https://bhxb.buaa.edu.cn/fileBJHKHTDXXBSHKXB/journal/article/bjhkhtdxxbshkxb/html/2016/4/20160412.htm",
+              "quote": "《茶经》第5章：其水，用山水上，江水中，井水下。……其山水，拣乳泉、石池漫流者上。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #9 / keySources"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "cuisine",
+        "table": "teawaters",
+        "row": {
+          "id": "added-yushui-rainwater",
+          "name": {
+            "zh": "雨水",
+            "ru": [
+              "Дождевая вода"
+            ],
+            "gloss": "Дождевая вода — Сюн Минъюй советовал брать осеннюю, если нет родниковой"
+          },
+          "sources": [
+            {
+              "title": "士人的品茗之道 — 中国文化研究院（周积明教授）",
+              "url": "https://chiculture.org.hk/index.php/sc/china-five-thousand-years/3174",
+              "quote": "古人称为“天泉”的雨水、雪水也因甘冽或冷冽成为文人喜爱的煎茶用水。……熊明遇《岕山茶记》则言“无泉则用天水，秋雨为上，梅雨次之”。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #9 / added-yushui-rainwater"
+            },
+            {
+              "title": "知节气 识茶事 和天下丨雨水：雨润春华，水生茶香 — 温州大学温州民俗博物馆 / 中国非物质文化遗产保护中心",
+              "url": "https://wmbwg.wzu.edu.cn/info/1015/3982.htm",
+              "quote": "除了泉水，古人还习惯用雨水来煮茶、煎茶、泡茶。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-text"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "holidays",
+        "table": "customs",
+        "row": {
+          "id": "cus-hongbao",
+          "name": {
+            "zh": "红包",
+            "ru": [
+              "красный конверт",
+              "хунбао"
+            ],
+            "gloss": "Красный конверт с деньгами — праздничный подарок",
+            "ref": "money/customs/hongbao"
+          },
+          "sources": [
+            {
+              "title": "Chinese New Year’s Eve — Shanghai Municipal Government",
+              "url": "https://english.shanghai.gov.cn/en-KeyDatesAndCustoms/20260121/d5fabdb61d484e0cad772a56fe343c38.html",
+              "quote": "As part of the night’s observances, elders present red envelopes containing money to the younger generation. Known as “压岁钱” (yā suì qián), these gifts originally served a protective purpose.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #11 / o1"
+            },
+            {
+              "title": "红包历史知多少 — 央视网（CCTV）",
+              "url": "http://shaoer.cctv.com/2017/01/09/ARTIDZFmqSOPwCH5CnFmhhZe170109.shtml",
+              "quote": "因为红色象征好运，所以，每逢婚嫁、添丁、新宅、开工、生日等等......皆发红包。",
+              "authority": "official",
+              "checkedAt": "2026-10-14",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; data/dossiers/money.json / customs / hongbao"
+            }
+          ],
+          "springaction": {
+            "zh": "给孩子发红包",
+            "ru": [
+              "Красные конверты детям"
+            ],
+            "gloss": "Красные конверты детям — ясуйцянь выражают пожелания защиты и благополучия"
+          }
+        }
+      },
+      {
+        "dossier": "holidays",
+        "table": "customs",
+        "row": {
+          "id": "cus-double-happiness",
+          "name": {
+            "zh": "囍",
+            "ru": [
+              "знак «двойная радость»"
+            ],
+            "gloss": "Знак «двойная радость» — свадебное украшение из двух соединённых 喜"
+          },
+          "sources": [
+            {
+              "title": "把“吉祥如意”穿在身上 — 国家民族事务委员会",
+              "url": "https://www.neac.gov.cn/seac/c103391/202305/1164006.shtml",
+              "quote": "“囍”是由两个单独“喜”字组合形成的吉祥字符，寓意“喜上加喜”。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #11 / o2"
+            },
+            {
+              "title": "重庆农村喜事操办习俗——婚嫁程序 — 重庆市地方志办公室",
+              "url": "https://dfz.cq.gov.cn/zqlswh/msmf_417820/202311/t20231102_12510909.html",
+              "quote": "新婚前，男方家会将新房装饰一新，家具齐全，且墙上、门窗都会贴上用红纸剪成的大大的“囍”字，以示吉祥喜庆。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #11 / keySources"
+            }
+          ],
+          "springaction": {
+            "zh": "贴囍字",
+            "ru": [
+              "Знак «двойная радость»"
+            ],
+            "gloss": "Знак «двойная радость» — свадебное украшение из двух соединённых 喜"
+          }
+        }
+      },
+      {
+        "dossier": "crafts",
+        "table": "garmentparts",
+        "row": {
+          "id": "garment-upper",
+          "name": {
+            "zh": "上衣",
+            "ru": [
+              "Верхняя часть одежды"
+            ],
+            "gloss": "Верхняя часть одежды — в шэньи её сшивали с нижней частью на талии"
+          },
+          "sources": [
+            {
+              "title": "隋初皇后礼服“改制”考论 — 故宫博物院院刊",
+              "url": "https://www.dpm.org.cn/journal/256095.html",
+              "quote": "“深衣制”特指与先秦古制“深衣”形制相同的基础服装样式，即上衣与下裳独立剪裁，于中腰处将二者缝合，成为“连衣裳”的经典范式。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #17 / o1"
+            },
+            {
+              "title": "《深衣》：儒家理想人格的象征 — 全国哲学社会科学工作办公室 / 毋燕燕（重庆第二师范学院）",
+              "url": "https://www.nopss.gov.cn/n1/2019/0816/c219470-31299123.html",
+              "quote": "作为中国传统服饰的一种，深衣上衣下裳相连，“被体深邃，故谓之深衣”（戴圣《礼记·深衣》），不仅代表着儒者的身份与品格，而且作为一种抽象的文化符号，象征着中华民族的精神气质与审美观念。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-text"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "crafts",
+        "table": "garmentparts",
+        "row": {
+          "id": "garment-skirt",
+          "name": {
+            "zh": "裙子",
+            "ru": [
+              "Юбка"
+            ],
+            "gloss": "Юбка — у мамяньцюнь перед и спинка гладкие, а по бокам идут складки"
+          },
+          "sources": [
+            {
+              "title": "中国马面裙何以出海“圈粉” — 山东宣传网",
+              "url": "https://www.sdxc.gov.cn/whql/xcwhzx/lb/202603/t20260317_17547435.htm",
+              "quote": "马面裙是汉服体系中极具代表性的形制，其特点为前后平整、两侧打褶。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #17 / o2"
+            },
+            {
+              "title": "百折罗裙细细风——品味马面裙的古韵新声 — 新华网 / 光明日报",
+              "url": "https://www.news.cn/ci/20240528/479fa77e56804722b5bda206a13e8170/c.html",
+              "quote": "马面裙作为中国传统围裹式的裙装代表，其结构设计简约却并不简单。无论是明代的侧褶裙，或是清代的阑干裙，均在裙胁两侧捏大褶。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-text"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "crafts",
+        "table": "garmentparts",
+        "row": {
+          "id": "garment-headwear",
+          "name": {
+            "zh": "头饰",
+            "ru": [
+              "Головной убор"
+            ],
+            "gloss": "Головной убор — Чжугэ Лян послал женский цзиньго Сыма И, вызывая его на бой"
+          },
+          "sources": [
+            {
+              "title": "巾幗 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=93864&q=1&word=%E5%B7%BE%E5%B9%97",
+              "quote": "古代婦女用以覆髮的頭巾和髮飾。……後用巾幗代稱女子。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #17 / keySources"
+            },
+            {
+              "title": "魏晋名流爱戴巾,苏东坡是宋代“时尚咖” — 中央纪委网站",
+              "url": "https://m.ccdi.gov.cn/content/7d/6a/53207.html",
+              "quote": "头戴纶巾的诸葛亮，用女子戴的巾对司马懿进行了一次羞辱：亮数挑战，帝不出，因遗帝巾帼妇人之饰（《晋书·宣帝纪》）。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #17 / keySources"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "crafts",
+        "table": "garmentparts",
+        "row": {
+          "id": "added-waist-belt",
+          "name": {
+            "zh": "腰带",
+            "ru": [
+              "Пояс"
+            ],
+            "gloss": "Пояс — материал накладок показывал ранг владельца в эпоху Мин"
+          },
+          "sources": [
+            {
+              "title": "带板 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/239465.html",
+              "quote": "古人一般在腰中革带上钉缀带銙……其选用的材料因身份等级的不同而相异。……明代革带带板的质地就成为帝王职官品秩等级的标志之一。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #17 / added-waist-belt"
+            },
+            {
+              "title": "明代出土玉带分期与演变特征研究 — 石婷婷 / 故宫博物院院刊（2024年第9期）",
+              "url": "https://www.dpm.org.cn/journal/365168.html?_list=1",
+              "quote": "二品用犀带，三品、四品用金带，五品用银钑花带，六品、七品用银带，八品、九品用乌角带。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-academic-full-text; direct-open-timed-out"
+            }
+          ]
+        }
+      }
+    ],
+    "cellAdditions": [
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "row": "prov-shaanxi",
+        "column": "goubuliregionname",
+        "cell": {
+          "zh": "陕西",
+          "ru": [
+            "Шэньси"
+          ],
+          "gloss": "Шэньси — жоуцзямо представляет собой горячую лепёшку с мясной начинкой"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "樊记 — 商务部老字号数字博物馆",
+            "url": "https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/f1b29e1774c04ec690cdab178e18f8ba",
+            "quote": "所属地区：陕西省。……探索出以热馍夹肉的进食方式，大获成功。……既可单吃，又以夹肉为佳。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #2 / o1"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "row": "prov-yunnan",
+        "column": "goubuliregionname",
+        "cell": {
+          "zh": "云南",
+          "ru": [
+            "Юньнань"
+          ],
+          "gloss": "Юньнань — гоцяо мисянь подают с рисовой лапшой, бульоном и добавками"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "【百年过桥米线】寻找百年的滋味 — 红河州人民政府",
+            "url": "https://www.hh.gov.cn/info/9021/795922.htm",
+            "quote": "蒙自过桥米线是云南名膳之一。……一套传统的过桥米线由米线、汤和配菜三部分组成。……用猪骨、鸡等原料熬制而成的浓郁鲜汤。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #2 / o2"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "row": "prov-hubei",
+        "column": "goubuliregionname",
+        "cell": {
+          "zh": "湖北",
+          "ru": [
+            "Хубэй"
+          ],
+          "gloss": "Хубэй — уханьскую лапшу жэганьмянь смешивают с кунжутной пастой"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "武汉十大名点之热干面×蛋酒 — 武汉市商务局",
+            "url": "https://sw.wuhan.gov.cn/xwdt/mtbd/202407/t20240731_2435699.shtml",
+            "quote": "手工掸好的面足够筋道，顾客上门时简单焯水后再加入芝麻酱、味精、酱油和萝卜丁就成了。……吃完碗底没有一点汤才对味。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #2 / o3"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "row": "prov-tianjin",
+        "column": "goubuliregionname",
+        "cell": {
+          "zh": "天津",
+          "ru": [
+            "Тяньцзинь"
+          ],
+          "gloss": "Тяньцзинь — баоцзы «Гоубули» делают с сочной начинкой; складки напоминают хризантему"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "传统面食制作技艺（天津“狗不理”包子制作技艺） — 中国非物质文化遗产网",
+            "url": "https://www.ihchina.cn/Article/Index/detail?id=14644",
+            "quote": "狗不理包子为天津名优食品“三绝”之首，系用水馅半发面制作，状若凝脂，形似菊花，口感鲜香不腻。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #2 / o4"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "row": "prov-shaanxi",
+        "column": "paomoregionname",
+        "cell": {
+          "zh": "陕西",
+          "ru": [
+            "Шэньси"
+          ],
+          "gloss": "Шэньси — в паомо кусочки лепёшки варят в мясном бульоне"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "羊肉泡馍 — 中国天气网陕西站",
+            "url": "https://shaanxi.weather.com.cn/sxtcxc/04/869504.shtml",
+            "quote": "掌柜见其可怜，遂让其把自带的干馍掰碎，然后给他浇了一勺滚热肉汤放在火上煮透。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #16 / o1"
+          },
+          {
+            "title": "同盛祥牛羊肉泡馍制作技艺 — 中国非物质文化遗产网",
+            "url": "https://www.ihchina.cn/art/detail/id/14653.html",
+            "quote": "申报地区或单位：陕西省西安市。……同盛祥牛羊肉泡馍料重味醇，肉烂汤浓，馍筋光滑，香气四溢，风味独特。……成为陕西最具清真风味的代表性饮食。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #16 / keySources"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "row": "prov-yunnan",
+        "column": "paomoregionname",
+        "cell": {
+          "zh": "云南",
+          "ru": [
+            "Юньнань"
+          ],
+          "gloss": "Юньнань — гоцяо мисянь подают с рисовой лапшой, бульоном и добавками"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "【百年过桥米线】寻找百年的滋味 — 红河州人民政府",
+            "url": "https://www.hh.gov.cn/info/9021/795922.htm",
+            "quote": "蒙自过桥米线是云南名膳之一。……一套传统的过桥米线由米线、汤和配菜三部分组成。……用猪骨、鸡等原料熬制而成的浓郁鲜汤。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #16 / o2"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "row": "prov-hubei",
+        "column": "paomoregionname",
+        "cell": {
+          "zh": "湖北",
+          "ru": [
+            "Хубэй"
+          ],
+          "gloss": "Хубэй — уханьскую лапшу жэганьмянь смешивают с кунжутной пастой"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "武汉十大名点之热干面×蛋酒 — 武汉市商务局",
+            "url": "https://sw.wuhan.gov.cn/xwdt/mtbd/202407/t20240731_2435699.shtml",
+            "quote": "手工掸好的面足够筋道，顾客上门时简单焯水后再加入芝麻酱、味精、酱油和萝卜丁就成了。……吃完碗底没有一点汤才对味。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #16 / o3"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "row": "prov-tianjin",
+        "column": "paomoregionname",
+        "cell": {
+          "zh": "天津",
+          "ru": [
+            "Тяньцзинь"
+          ],
+          "gloss": "Тяньцзинь — среди местных закусок известны махуа «Восемнадцатая улица»"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "三地携手录制 津味元素闪耀 — 天津市人民政府",
+            "url": "https://www.tj.gov.cn/sy/tjxw/202501/t20250112_6831010.html",
+            "quote": "十八街麻花、栗羊羹、皮糖张、果仁张等天津特色小吃。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #16 / o4"
+          }
+        ]
+      },
+      {
+        "dossier": "literature",
+        "table": "authors",
+        "row": "lit-a-dufu",
+        "column": "moonverseauthor",
+        "cell": {
+          "zh": "杜甫",
+          "ru": [
+            "Ду Фу"
+          ],
+          "gloss": "Ду Фу — в стихах о разрушенной хижине мечтал о крове для всех бедняков"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "经典诗文：茅屋为秋风所破歌（杜甫） — 郑州财税金融职业学院",
+            "url": "https://www.zzcsjr.edu.cn/info/1027/4294.htm",
+            "quote": "24. 茅屋为秋风所破歌（杜甫）……安得广厦千万间，大庇天下寒士俱欢颜，风雨不动安如山！",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #4 / o1"
+          }
+        ]
+      },
+      {
+        "dossier": "literature",
+        "table": "authors",
+        "row": "lit-a-sushi",
+        "column": "moonverseauthor",
+        "cell": {
+          "zh": "苏轼",
+          "ru": [
+            "Су Ши"
+          ],
+          "gloss": "Су Ши — в «Шуй дяо гэ тоу» вспоминает младшего брата Су Чэ, с которым был в разлуке"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "苏轼《水调歌头》赏析 — 苏州教育网",
+            "url": "https://szsx.suzhou.edu.cn/scientist-353.html",
+            "quote": "本词作于宋神宗熙宁九年的中秋节，当时苏轼正任密州知府。中秋，皓月当空，银光泻地，苏轼想起了分别七年的苏辙。",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #4 / o2"
+          },
+          {
+            "title": "中华经典诗文选：水调歌头（宋·苏轼） — 湖南女子学院",
+            "url": "https://www.hnwu.edu.cn/ewebeditor/uploadfile/20231006195220323.pdf",
+            "quote": "31. 水调歌头（宋·苏轼）……丙辰中秋，欢饮达旦，大醉，作此篇，兼怀子由。……但愿人长久，千里共婵娟。",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #4 / keySources"
+          }
+        ]
+      },
+      {
+        "dossier": "literature",
+        "table": "authors",
+        "row": "lit-a-libai",
+        "column": "moonverseauthor",
+        "cell": {
+          "zh": "李白",
+          "ru": [
+            "Ли Бо"
+          ],
+          "gloss": "Ли Бо — в «Думе в тихую ночь» луна напоминает поэту о родине"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "许渊冲翻译《静夜思》 — 北京大学新闻网",
+            "url": "https://news.pku.edu.cn/info/2901/824851.htm",
+            "quote": "附：许渊冲翻译《静夜思》(2006年版)选自《许渊冲英译李白诗选》……举头望明月，低头思故乡。",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #4 / o3"
+          }
+        ]
+      },
+      {
+        "dossier": "literature",
+        "table": "authors",
+        "row": "lit-a-xinqiji",
+        "column": "moonverseauthor",
+        "cell": {
+          "zh": "辛弃疾",
+          "ru": [
+            "Синь Цицзи"
+          ],
+          "gloss": "Синь Цицзи — поэт и военачальник Южной Сун, писавший цы под именем Цзясюань"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "【国学】苏轼和辛弃疾，宋词豪放派第一人，你选谁？— 新华网",
+            "url": "http://www.xinhuanet.com/politics/2018-11/22/c_129999974.htm",
+            "quote": "辛弃疾，字幼安，号稼轩。南宋词人、将领，有“词中之龙”之称。一生力主抗金。",
+            "authority": "official",
+            "checkedAt": "2026-10-17",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #4 / lit-a-xinqiji"
+          }
+        ]
+      },
+      {
+        "dossier": "holidays",
+        "table": "customs",
+        "row": "cus-baozhu",
+        "column": "springaction",
+        "cell": {
+          "zh": "放鞭炮",
+          "ru": [
+            "Петарды"
+          ],
+          "gloss": "Петарды — их новогодний треск означает проводы старого и встречу нового"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "春节民俗：正月初一 — 中央纪委网站",
+            "url": "https://m.ccdi.gov.cn/content/79/0f/14397.html",
+            "quote": "这一天早起第一件事就是燃放爆竹，叫作“开门炮仗”，以哔哔叭叭的爆竹声除旧迎新，也营造出喜庆热闹的气氛。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #11 / o3"
+          }
+        ]
+      },
+      {
+        "dossier": "holidays",
+        "table": "customs",
+        "row": "cus-jiaozi",
+        "column": "springaction",
+        "cell": {
+          "zh": "吃饺子",
+          "ru": [
+            "Пельмени"
+          ],
+          "gloss": "Пельмени — форма юаньбао связывает их с пожеланием достатка"
+        },
+        "sourcesToAppend": [
+          {
+            "title": "春节传统食品溯源 — 上海市民政局",
+            "url": "https://mzj.sh.gov.cn/lnb-wsws/20240219/0fabcb012d7f420d97c6368fe1a6014d.html",
+            "quote": "饺子作为我国北方最受喜爱的迎春佳馔……因为饺子的形状像元宝，包饺子意味着包住福运。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #11 / o4"
+          }
+        ]
+      }
+    ],
+    "identityRefs": [],
+    "questions": [
+      {
+        "reviewNumber": 2,
+        "dossier": "provinces",
+        "table": "provinces",
+        "row": "prov-tianjin",
+        "ask": "goubuliregionname",
+        "optionRows": {
+          "o1": "prov-shaanxi",
+          "o2": "prov-yunnan",
+          "o3": "prov-hubei",
+          "o4": "prov-tianjin"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 4,
+        "dossier": "literature",
+        "table": "authors",
+        "row": "lit-a-sushi",
+        "ask": "moonverseauthor",
+        "optionRows": {
+          "o1": "lit-a-dufu",
+          "o2": "lit-a-sushi",
+          "o3": "lit-a-libai",
+          "lit-a-xinqiji": "lit-a-xinqiji"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 9,
+        "dossier": "cuisine",
+        "table": "teawaters",
+        "row": "tea-water-spring",
+        "ask": "name",
+        "optionRows": {
+          "o1": "tea-water-spring",
+          "o2": "tea-water-river",
+          "o3": "tea-water-well",
+          "added-yushui-rainwater": "added-yushui-rainwater"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 11,
+        "dossier": "holidays",
+        "table": "customs",
+        "row": "cus-double-happiness",
+        "ask": "springaction",
+        "optionRows": {
+          "o1": "cus-hongbao",
+          "o2": "cus-double-happiness",
+          "o3": "cus-baozhu",
+          "o4": "cus-jiaozi"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 16,
+        "dossier": "provinces",
+        "table": "provinces",
+        "row": "prov-shaanxi",
+        "ask": "paomoregionname",
+        "optionRows": {
+          "o1": "prov-shaanxi",
+          "o2": "prov-yunnan",
+          "o3": "prov-hubei",
+          "o4": "prov-tianjin"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 17,
+        "dossier": "crafts",
+        "table": "garmentparts",
+        "row": "garment-headwear",
+        "ask": "name",
+        "optionRows": {
+          "o1": "garment-upper",
+          "o2": "garment-skirt",
+          "o3": "garment-headwear",
+          "added-waist-belt": "added-waist-belt"
+        },
+        "exclude": []
+      }
+    ],
+    "captionCorrections": [],
+    "contentProblems": []
+  },
+  "history": {
+    "columnAdditions": [
+      {
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "column": "tangperiodname",
+        "kind": "zh"
+      },
+      {
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "column": "mingperiodname",
+        "kind": "zh"
+      }
+    ],
+    "tableAdditions": [
+      {
+        "dossier": "provinces",
+        "table": "geosymbols",
+        "definition": {
+          "columns": {
+            "name": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "cooperationfields",
+        "definition": {
+          "columns": {
+            "name": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "silkroadroles",
+        "definition": {
+          "columns": {
+            "name": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "painting",
+        "table": "disasters",
+        "definition": {
+          "columns": {
+            "name": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "croppairs",
+        "definition": {
+          "columns": {
+            "name": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      }
+    ],
+    "rowAdditions": [
+      {
+        "dossier": "provinces",
+        "table": "geosymbols",
+        "row": {
+          "id": "geochar-hei",
+          "name": {
+            "zh": "黑",
+            "ru": [
+              "Хэй"
+            ],
+            "gloss": "Хэй — Хэйлунцзян, самая северная провинция Китая."
+          },
+          "sources": [
+            {
+              "title": "走进黑龙江 — правительство Хэйлунцзяна",
+              "url": "https://www.hlj.gov.cn/hlj/c108475/zjhlj.shtml",
+              "quote": "黑龙江省，简称黑。……是中国位置最北、纬度最高的省份。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 5 option o1; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Таблица названий и сокращений административных единиц — Государственное управление продовольствия и материальных резервов КНР",
+              "url": "https://www.lswz.gov.cn/html/ywpd/bzzl/2024-01/26/275402/files/29d04adc161148c0bc313cffbfecc401.pdf",
+              "quote": "河北省｜冀；黑龙江省｜黑；湖北省｜鄂；湖南省｜湘；青海省｜青。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 5 keySources[0]; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "geosymbols",
+        "row": {
+          "id": "geochar-hu",
+          "name": {
+            "zh": "湖",
+            "ru": [
+              "Ху"
+            ],
+            "gloss": "Ху — «озеро»: в названии Хубэй имеется в виду озеро Дунтин."
+          },
+          "sources": [
+            {
+              "title": "广东与广西的“广”指哪里 — 人民周刊",
+              "url": "http://paper.people.com.cn/rmzk/html/2021-04/23/content_3047879.htm",
+              "quote": "中国的省份很有意思，河南河北的“河”指黄河，湖南湖北的“湖”指洞庭湖，山东山西的“山”指太行山，那么广东广西的“广”指什么呢？",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 5 option o2; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Таблица названий и сокращений административных единиц — Государственное управление продовольствия и материальных резервов КНР",
+              "url": "https://www.lswz.gov.cn/html/ywpd/bzzl/2024-01/26/275402/files/29d04adc161148c0bc313cffbfecc401.pdf",
+              "quote": "河北省｜冀；黑龙江省｜黑；湖北省｜鄂；湖南省｜湘；青海省｜青。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 5 keySources[0]; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "湖名之变——洋澜湖变迁纪略之一 — правительство Эчжоу",
+              "url": "https://www.ezhou.gov.cn/zjez/ezrw/ezss/202109/t20210930_431352.html",
+              "quote": "汉字字面意义上的湖，是指被陆地围合的大片积水。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 5 option o2 definitionEvidence; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "geosymbols",
+        "row": {
+          "id": "geochar-ji",
+          "name": {
+            "zh": "冀",
+            "ru": [
+              "Цзи"
+            ],
+            "gloss": "Цзи — Хэбэй, провинция, окружающая Пекин и Тяньцзинь."
+          },
+          "sources": [
+            {
+              "title": "河北概况 — правительство Хэбэя, размещено Министерством коммерции КНР",
+              "url": "https://fdi.mofcom.gov.cn/resource/pdf/2019/12/28/b48ebd142fc04a4d984ba79ac85a5a3e.pdf",
+              "quote": "河北（hé běi），简称冀……东临渤海、内环京津。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 5 option o3; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Таблица названий и сокращений административных единиц — Государственное управление продовольствия и материальных резервов КНР",
+              "url": "https://www.lswz.gov.cn/html/ywpd/bzzl/2024-01/26/275402/files/29d04adc161148c0bc313cffbfecc401.pdf",
+              "quote": "河北省｜冀；黑龙江省｜黑；湖北省｜鄂；湖南省｜湘；青海省｜青。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 5 keySources[0]; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "geosymbols",
+        "row": {
+          "id": "geochar-qing",
+          "name": {
+            "zh": "青",
+            "ru": [
+              "Цин"
+            ],
+            "gloss": "Цин — Цинхай, названная по озеру Цинхай."
+          },
+          "sources": [
+            {
+              "title": "Цинхай — Управление гражданской авиации КНР",
+              "url": "https://www.caac.gov.cn/PHONE/GLJ_PHONE/XBGLJ/XB_YQLJ/XB_SZFMHW/201604/t20160428_36916.html",
+              "quote": "因境内有国内最大的内陆咸水湖——青海湖而得名，简称青。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 5 option o4; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Таблица названий и сокращений административных единиц — Государственное управление продовольствия и материальных резервов КНР",
+              "url": "https://www.lswz.gov.cn/html/ywpd/bzzl/2024-01/26/275402/files/29d04adc161148c0bc313cffbfecc401.pdf",
+              "quote": "河北省｜冀；黑龙江省｜黑；湖北省｜鄂；湖南省｜湘；青海省｜青。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 5 keySources[0]; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "row": {
+          "id": "dyn-song",
+          "name": {
+            "zh": "宋",
+            "ru": [
+              "династия Сун"
+            ],
+            "gloss": "Династия Сун — её основатель Чжао Куанъинь пришёл к власти в 960 году."
+          },
+          "sources": [
+            {
+              "title": "赵匡胤 — 故宫博物院（词条）",
+              "url": "https://www.dpm.org.cn/lemmas/242238.html",
+              "quote": "曾任后周殿前都点检，掌握军权，960年他在陈桥（今河南开封东北）发动兵变成功，建立了宋朝，史称北宋。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 6 option o4; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "【道中华】这本“活地图”，把你带去七百年前的杭州 — 国家民族事务委员会",
+              "url": "https://www.neac.gov.cn/seac/c103391/202301/1160353.shtml",
+              "quote": "1127年靖康之变时宋徽宗、宋钦宗被金国所俘，宋徽宗第九子康王赵构在南京应天府（今河南商丘）继承大宋皇位，为了延续宋朝皇统和法统，定国号仍为宋，史称南宋。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted data/dossiers/dynasties.json dyn-nansong sources[0]; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ],
+          "tangperiodname": {
+            "zh": "宋朝",
+            "ru": [
+              "Династия Сун"
+            ],
+            "gloss": "Династия Сун — её основатель Чжао Куанъинь пришёл к власти в 960 году."
+          },
+          "mingperiodname": {
+            "zh": "宋朝",
+            "ru": [
+              "Династия Сун"
+            ],
+            "gloss": "Династия Сун — её основатель Чжао Куанъинь пришёл к власти в 960 году."
+          }
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "cooperationfields",
+        "row": {
+          "id": "coop-aerospace",
+          "name": {
+            "zh": "航空航天",
+            "ru": [
+              "Авиация и космонавтика"
+            ],
+            "gloss": "Авиация и космонавтика — в 2021 году стороны заявили о совместной лунной станции."
+          },
+          "sources": [
+            {
+              "title": "Совместное заявление о Международной научной лунной станции — CNSA, 29.04.2021",
+              "url": "https://www.cnsa.gov.cn/n6758823/n6758840/c6811963/content.html",
+              "quote": "中国国家航天局和俄罗斯国家航天集团公司……就合作建设国际月球科研站声明如下。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 8 option o1; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "中俄两国签署合作建设国际月球科研站谅解备忘录 — CNSA, 2021-03-09",
+              "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c6811372/content.html",
+              "quote": "签署《中华人民共和国政府和俄罗斯联邦政府关于合作建设国际月球科研站的谅解备忘录》。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_search_result; exact primary-source excerpt read 2026-11-08; full page not fetched"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "cooperationfields",
+        "row": {
+          "id": "coop-arctic",
+          "name": {
+            "zh": "北极开发",
+            "ru": [
+              "Освоение Арктики"
+            ],
+            "gloss": "Освоение Арктики — проект «Ямал СПГ» доставляет Китаю сжиженный природный газ."
+          },
+          "sources": [
+            {
+              "title": "“冰上丝绸之路”送来北极天然气 — Государственное энергетическое управление КНР",
+              "url": "https://www.nea.gov.cn/2019-09/02/c_138358406.htm",
+              "quote": "“鲁萨诺夫”号正是来自中俄两国大型能源合作项目——亚马尔项目。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 8 option o2; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Ван И: Россия — важный партнёр в «Поясе и пути» — МИД КНР, 26.05.2017",
+              "url": "https://www.mfa.gov.cn/web/wjbzhd/201705/t20170526_355699.shtml",
+              "quote": "中方欢迎并支持俄方提出的“冰上丝绸之路”倡议……共同开发北极航线。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 8 keySources[0]; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "cooperationfields",
+        "row": {
+          "id": "coop-information",
+          "name": {
+            "zh": "信息技术",
+            "ru": [
+              "Информационные технологии"
+            ],
+            "gloss": "Информационные технологии — страны сотрудничают в области софта, облаков и ИИ."
+          },
+          "sources": [
+            {
+              "title": "Совместное коммюнике 29-й регулярной встречи глав правительств КНР и РФ — Государственное агентство по атомной энергии КНР",
+              "url": "https://www.caea.gov.cn/n6760338/n6760342/c10585109/content.html",
+              "quote": "软件和云服务……支持成立……人工智能工作组。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 8 option o3; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "中俄总理第二十九次定期会晤联合公报（全文） — МИД КНР, 2024-08-22",
+              "url": "https://www.fmprc.gov.cn/web/zyxw/202408/t20240822_11477753.shtml",
+              "quote": "就开源、操作系统、软件和云服务等问题保持经常性沟通。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_search_result; exact primary-source excerpt read 2026-11-08; full page not fetched"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "cooperationfields",
+        "row": {
+          "id": "coop-agrotechnology",
+          "name": {
+            "zh": "农业技术",
+            "ru": [
+              "Агротехнологии"
+            ],
+            "gloss": "Агротехнологии — пример кооперации: Бэйдоу и ГЛОНАСС в точном земледелии."
+          },
+          "sources": [
+            {
+              "title": "Совместное коммюнике 25-й регулярной встречи глав правительств — МИД КНР, 03.12.2020",
+              "url": "https://www.fmprc.gov.cn/gjhdq_676201/gj_676203/oz_678770/1206_679110/1207_679122/202012/t20201203_9337182.shtml",
+              "quote": "推动落实中俄跨境运输、精准农业应用示范等合作项目。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 8 option o4; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "中俄总理第二十四次定期会晤联合公报（全文） — МИД КНР, 2019-09-18",
+              "url": "https://www.fmprc.gov.cn/ziliao_674904/zt_674979/ywzt_675099/2019nzt/lkqzlfwelsd24cdqhw_698202/zxxxydlmngfg_698204/201909/t20190918_9277898.shtml",
+              "quote": "推动在中俄互设测量站、精准农业等领域的合作项目",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_search_result; exact primary-source excerpt read 2026-11-08; full page not fetched"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "silkroadroles",
+        "row": {
+          "id": "silkrole-teatransport",
+          "name": {
+            "zh": "运输茶叶",
+            "ru": [
+              "Перевозка чая"
+            ],
+            "gloss": "Перевозка чая — часть торговли: из Китая везли также шёлк и фарфор."
+          },
+          "sources": [
+            {
+              "title": "丝绸之路 — 中国国家博物馆, выставка 2014–2015",
+              "url": "https://www.chnmuseum.cn/zl/zlhg/201812/t20181220_32385.shtml",
+              "quote": "中国的丝绸、瓷器、铜镜、茶叶、四大发明等传入西方",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 12 option o1; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Cultures and civilizations; The Silk and spice routes (1994), p. 29 — UNESCO",
+              "url": "https://en.unesco.org/silkroad/sites/default/files/knowledge-bank-article/precious%20goods%20to%20buy.pdf",
+              "quote": "From China, tea was exported to Tibet.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_search_result; exact primary-source excerpt read 2026-11-08; full page not fetched"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "silkroadroles",
+        "row": {
+          "id": "silkrole-buddhism",
+          "name": {
+            "zh": "传播佛教",
+            "ru": [
+              "Распространение буддизма"
+            ],
+            "gloss": "Распространение буддизма — одна из сторон культурного обмена по этим путям."
+          },
+          "sources": [
+            {
+              "title": "About the Silk Roads — UNESCO",
+              "url": "https://www.unesco.org/en/silk-roads/about-silk-roads?hub=196704",
+              "quote": "Buddhism is one example of a religion that travelled the Silk Roads.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 12 option o2; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Silk Roads: the Routes Network of Chang’an–Tianshan Corridor — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1442/",
+              "quote": "record the eastward transmission of Buddhism from India via Karakorum",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_search_result; exact primary-source excerpt read 2026-11-08; full page not fetched"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "silkroadroles",
+        "row": {
+          "id": "silkrole-exchange",
+          "name": {
+            "zh": "中外经济与文化交往",
+            "ru": [
+              "Экономические и культурные связи"
+            ],
+            "gloss": "Экономические и культурные связи — в Китай везли стекло, драгоценности и растения."
+          },
+          "sources": [
+            {
+              "title": "丝绸之路 — 中国国家博物馆, выставка 2014–2015",
+              "url": "https://www.chnmuseum.cn/zl/zlhg/201812/t20181220_32385.shtml",
+              "quote": "西方的珠宝、玻璃、金银器以及动植物等输入中国",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 12 option o3; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Silk Roads: the Routes Network of Chang’an–Tianshan Corridor — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1442/",
+              "quote": "linking multiple civilizations and facilitating far-reaching exchanges",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_search_result; exact primary-source excerpt read 2026-11-08; full page not fetched"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "silkroadroles",
+        "row": {
+          "id": "silkrole-campaigns",
+          "name": {
+            "zh": "军事征伐",
+            "ru": [
+              "Военные походы"
+            ],
+            "gloss": "Военные походы — крепости вдоль путей защищали торговцев и путешественников."
+          },
+          "sources": [
+            {
+              "title": "Silk Roads: the Routes Network of Chang’an–Tianshan Corridor — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1442/",
+              "quote": "the extensive network of forts, beacon towers, way stations and caravanserai that accommodated travellers and ensured their safety",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 12 option o4; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "征伐 — 教育部《重編國語辭典修訂本》2021",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=117244&la=0&powerMode=0",
+              "quote": "出征討伐。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_search_result; exact primary-source excerpt read 2026-11-08; full page not fetched"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "painting",
+        "table": "disasters",
+        "row": {
+          "id": "disaster-earthquake",
+          "name": {
+            "zh": "地震",
+            "ru": [
+              "Землетрясение"
+            ],
+            "gloss": "Землетрясение — разрушительное произошло в Помпеях ещё в 62 году н. э."
+          },
+          "sources": [
+            {
+              "title": "Pompeii Antiquarium: Timeline — Археологический парк Помпеи",
+              "url": "https://pompeiisites.org/wp-content/uploads/ANTIQUARIUM_PRESS_kit_ENGLISH.pdf",
+              "quote": "62 CE: Pompeii is struck by a devastating earthquake.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 14 option o1; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "地震是怎麼發生的？ — Центральное метеорологическое управление (CWA)",
+              "url": "https://pweb.cwa.gov.tw/PopularScience/kids/ec/ec_3.html",
+              "quote": "地震發生的原因可以分為自然地震，以及人工地震兩種。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_open; exact primary-source text read 2026-11-08"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "painting",
+        "table": "disasters",
+        "row": {
+          "id": "disaster-fire",
+          "name": {
+            "zh": "火灾",
+            "ru": [
+              "Пожар"
+            ],
+            "gloss": "Пожар — у Верещагина есть «Пожар Замоскворечья» в цикле о войне 1812 года."
+          },
+          "sources": [
+            {
+              "title": "«Пожар Замоскворечья» — каталог Государственного исторического музея",
+              "url": "https://catalog.shm.ru/entity/OBJECT/5505372",
+              "quote": "Пожар Замоскворечья. Картина № 19 из альбома «За веру, царя и отечество. Отечественная война 1812 г. в картинах».",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 14 option o2; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Пожар Замоскворечья — Российская государственная библиотека",
+              "url": "https://search.rsl.ru/ru/record/01008101462",
+              "quote": "Верещагин, Василий Васильевич (1842-1904). - Пожар Замоскворечья : [Открытка].",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 14 option o2 additionalAttributionEvidence; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "painting",
+        "table": "disasters",
+        "row": {
+          "id": "disaster-flood",
+          "name": {
+            "zh": "水灾",
+            "ru": [
+              "Наводнение"
+            ],
+            "gloss": "Наводнение — в Петербурге в 1824 году Нева поднялась на 421 см выше ординара."
+          },
+          "sources": [
+            {
+              "title": "Президентская библиотека — к 200-летию наводнения в Петербурге",
+              "url": "https://www.prlib.ru/news/2004019",
+              "quote": "1824 года в Петербурге произошло крупнейшее в истории города наводнение.……421 сантиметра выше ординара.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 14 option o3; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "191 год со дня катастрофического наводнения — ФКП Дирекция КЗС Санкт-Петербурга, Минстрой РФ",
+              "url": "https://dambaspb.ru/news/191-god-so-dnya-katastroficheskogo-navodneniya",
+              "quote": "В 1824 году 19 ноября случилось бедственное наводнение. Тогда уровень воды достиг отметки 421 сантиметр выше ординара.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_open and web_find; exact primary-source text read 2026-11-08"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "painting",
+        "table": "disasters",
+        "row": {
+          "id": "disaster-eruption",
+          "name": {
+            "zh": "火山爆发",
+            "ru": [
+              "Извержение вулкана"
+            ],
+            "gloss": "Извержение вулкана — Помпеи погибли при извержении Везувия в 79 году н. э."
+          },
+          "sources": [
+            {
+              "title": "«Великий Карл» — выставочный проект Государственного Русского музея",
+              "url": "https://brullov.rusmuseum.ru/",
+              "quote": "результате извержения Везувия в 79 году нашей эры.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 14 option o4; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Pompeii. Antiquarium — Археологический парк Помпеи, Timeline, p. 15",
+              "url": "https://pompeiisites.org/wp-content/uploads/ANTIQUARIUM_PRESS_kit_ENGLISH.pdf",
+              "quote": "Pompeii was buried by a tremendous eruption.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "web_open and web_find; primary PDF p. 15 timeline read 2026-11-08; line wraps normalized to spaces"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "croppairs",
+        "row": {
+          "id": "croppair-southwheat-northrice",
+          "name": {
+            "zh": "南方小麦，北方水稻",
+            "ru": [
+              "Пшеница / рис"
+            ],
+            "gloss": "Пшеница / рис — рисовые поля требуют более тёплой и влажной среды."
+          },
+          "sources": [
+            {
+              "title": "Farming practices — Education Bureau, Hong Kong, учебный лист 18",
+              "url": "https://www.edb.gov.hk/attachment/sc/curriculum-development/kla/pshe/national-geography/national-geography-resource-portal/Infosheets/info_sheet_18-farming_practices-chi.pdf",
+              "quote": "水稻田主要位于温暖湿润的环境中。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 19 option o1; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Статья о региональных различиях сельского хозяйства — журнал при Сямэньском университете",
+              "url": "https://ces.xmu.edu.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=521",
+              "quote": "“秦岭－淮河”以南大多种植水稻，以北则多种植小麦。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 19 keySources[0]; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "croppairs",
+        "row": {
+          "id": "croppair-southrice-northwheat",
+          "name": {
+            "zh": "南方水稻，北方小麦",
+            "ru": [
+              "Рис / пшеница"
+            ],
+            "gloss": "Рис / пшеница — традиционную границу районов связывают с линией Циньлин—Хуайхэ."
+          },
+          "sources": [
+            {
+              "title": "Статья о региональных различиях сельского хозяйства — журнал при Сямэньском университете",
+              "url": "https://ces.xmu.edu.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=521",
+              "quote": "“秦岭－淮河”以南大多种植水稻，以北则多种植小麦。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 19 option o2; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Farming practices — Education Bureau, Hong Kong, учебный лист 18",
+              "url": "https://www.edb.gov.hk/attachment/sc/curriculum-development/kla/pshe/national-geography/national-geography-resource-portal/Infosheets/info_sheet_18-farming_practices-chi.pdf",
+              "quote": "在中国北方……小麦是主要作物。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 19 keySources[1]; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "croppairs",
+        "row": {
+          "id": "croppair-southcorn-northsoy",
+          "name": {
+            "zh": "南方玉米，北方大豆",
+            "ru": [
+              "Кукуруза / соя"
+            ],
+            "gloss": "Кукуруза / соя — Северо-Восток Китая является крупным районом обеих культур."
+          },
+          "sources": [
+            {
+              "title": "全国新增1000亿斤粮食生产能力规划 — Государственный комитет по развитию и реформам КНР",
+              "url": "https://www.ndrc.gov.cn/fzggw/jgsj/njs/sjdt/200911/P020191101560387087722.pdf",
+              "quote": "东北区。该区是我国最大的玉米、优质粳稻和大豆产区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 19 option o3; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "Материал о производстве сои — правительство провинции Цзилинь",
+              "url": "https://www.jl.gov.cn/szfzt/jlssxsxnyxdh/zcyt/202307/t20230704_2403074.html",
+              "quote": "我国大豆主产区主要分布在东北地区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 19 option o4; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "croppairs",
+        "row": {
+          "id": "croppair-southsoy-northcorn",
+          "name": {
+            "zh": "南方大豆，北方玉米",
+            "ru": [
+              "Соя / кукуруза"
+            ],
+            "gloss": "Соя / кукуруза — основной район выращивания сои в Китае находится на северо-востоке."
+          },
+          "sources": [
+            {
+              "title": "Материал о производстве сои — правительство провинции Цзилинь",
+              "url": "https://www.jl.gov.cn/szfzt/jlssxsxnyxdh/zcyt/202307/t20230704_2403074.html",
+              "quote": "我国大豆主产区主要分布在东北地区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 19 option o4; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "全国新增1000亿斤粮食生产能力规划 — Государственный комитет по развитию и реформам КНР",
+              "url": "https://www.ndrc.gov.cn/fzggw/jgsj/njs/sjdt/200911/P020191101560387087722.pdf",
+              "quote": "东北区。该区是我国最大的玉米、优质粳稻和大豆产区。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 19 option o3; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ]
+        }
+      }
+    ],
+    "cellAdditions": [
+      {
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "row": "dyn-ming",
+        "column": "tangperiodname",
+        "cell": {
+          "zh": "明朝",
+          "ru": [
+            "Династия Мин"
+          ],
+          "gloss": "Династия Мин — основана Чжу Юаньчжаном в 1368 году, значительно позже Тан."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "洪武皇帝 — 故宫博物院（宫廷世系）",
+            "url": "https://www.dpm.org.cn/court/lineage/226244.html",
+            "quote": "洪武元年（1368年）朱元璋于应天称帝，国号大明。",
+            "authority": "official",
+            "checkedAt": "2026-10-16",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 6 option o1; original checkedAt retained; package prepared 2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "row": "dyn-tang",
+        "column": "tangperiodname",
+        "cell": {
+          "zh": "唐朝",
+          "ru": [
+            "Династия Тан"
+          ],
+          "gloss": "Династия Тан — Ли Юань основал её со столицей в Чанъане."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "中国通史（范文澜、蔡美彪）·隋末农民大起义 — 中国社会科学院古代史研究所",
+            "url": "http://lishisuo.cssn.cn/xsyj/gdwhs/202001/t20200116_5078816.shtml",
+            "quote": "六一八年，隋炀帝死，李渊也就废隋恭帝，自立为皇帝（唐高祖），建都长安，成立了盛大的唐朝。",
+            "authority": "academic",
+            "checkedAt": "2026-10-16",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 6 option o2; original checkedAt retained; package prepared 2026-11-08"
+          },
+          {
+            "title": "中国历史年表 — 黑龙江八一农垦大学图书馆",
+            "url": "https://ilib.byau.edu.cn/_upload/article/files/03/c9/e35e6c8d4bae928e933dafbde16c/a6a52d34-9185-429d-9921-e70d00e22cf7.pdf",
+            "quote": "唐 618 年-907 年 高祖(李渊) 长安",
+            "authority": "academic",
+            "checkedAt": "2026-10-16",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 6 keySources[0]; original checkedAt retained; package prepared 2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "row": "dyn-yuan",
+        "column": "tangperiodname",
+        "cell": {
+          "zh": "元朝",
+          "ru": [
+            "Династия Юань"
+          ],
+          "gloss": "Династия Юань — армия Мин взяла её столицу Даду в 1368 году."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "洪武皇帝 — 故宫博物院（宫廷世系）",
+            "url": "https://www.dpm.org.cn/court/lineage/226244.html",
+            "quote": "洪武元年（1368年）朱元璋于应天称帝，国号大明。同年八月，明军攻克大都（今北京），元朝灭亡。",
+            "authority": "official",
+            "checkedAt": "2026-10-16",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 6 option o3; original checkedAt retained; package prepared 2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "row": "dyn-ming",
+        "column": "mingperiodname",
+        "cell": {
+          "zh": "明朝",
+          "ru": [
+            "Династия Мин"
+          ],
+          "gloss": "Династия Мин — при Юнлэ императорский двор перенесли из Нанкина в Пекин."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "中国古代的“陪都” — 人民周刊（人民日报社）",
+            "url": "http://paper.people.com.cn/rmzk/html/2016-07/07/content_1693493.htm",
+            "quote": "永乐四年，朱棣下诏迁都北京，遂开始全面营建北京城。永乐十九年正月正式迁都北京，设南京为陪都，形成了南北“两京制”。",
+            "authority": "official",
+            "checkedAt": "2026-10-16",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 15 option o1; original checkedAt retained; package prepared 2026-11-08"
+          },
+          {
+            "title": "洪武皇帝 — 故宫博物院（宫廷世系）",
+            "url": "https://www.dpm.org.cn/court/lineage/226244.html",
+            "quote": "洪武元年（1368年）朱元璋于应天称帝，国号大明。",
+            "authority": "official",
+            "checkedAt": "2026-10-16",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 15 keySources[0]; original checkedAt retained; package prepared 2026-11-08"
+          },
+          {
+            "title": "清廷迁都北京 — 故宫博物院",
+            "url": "https://www.dpm.org.cn/court/event/159873.html",
+            "quote": "明崇祯十七年（1644年）三月，声威日壮的李自成率领的农民起义军攻克北京城，崇祯皇帝自缢于煤山（今景山），统治中国276年的明王朝宣告覆灭。",
+            "authority": "official",
+            "checkedAt": "2026-10-16",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted batch-6 manifest reviewNumber 15 keySources[1]; original checkedAt retained; package prepared 2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "row": "dyn-tang",
+        "column": "mingperiodname",
+        "cell": {
+          "zh": "唐朝",
+          "ru": [
+            "Династия Тан"
+          ],
+          "gloss": "Династия Тан — завершилась в 907 году, раньше Мин."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "中国历史年表 — 黑龙江八一农垦大学图书馆",
+            "url": "https://ilib.byau.edu.cn/_upload/article/files/03/c9/e35e6c8d4bae928e933dafbde16c/a6a52d34-9185-429d-9921-e70d00e22cf7.pdf",
+            "quote": "唐 618 年-907 年 高祖(李渊) 长安",
+            "authority": "academic",
+            "checkedAt": "2026-10-16",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 15 option o2; original checkedAt retained; package prepared 2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "row": "dyn-yuan",
+        "column": "mingperiodname",
+        "cell": {
+          "zh": "元朝",
+          "ru": [
+            "Династия Юань"
+          ],
+          "gloss": "Династия Юань — потеряла Даду в 1368 году, когда её сменила Мин."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "洪武皇帝 — 故宫博物院（宫廷世系）",
+            "url": "https://www.dpm.org.cn/court/lineage/226244.html",
+            "quote": "洪武元年（1368年）朱元璋于应天称帝，国号大明。同年八月，明军攻克大都（今北京），元朝灭亡。",
+            "authority": "official",
+            "checkedAt": "2026-10-16",
+            "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 15 option o3; original checkedAt retained; package prepared 2026-11-08"
+          }
+        ]
+      }
+    ],
+    "identityRefs": [],
+    "questions": [
+      {
+        "reviewNumber": 5,
+        "dossier": "provinces",
+        "table": "geosymbols",
+        "row": "geochar-hu",
+        "ask": "name",
+        "optionRows": {
+          "o1": "geochar-hei",
+          "o2": "geochar-hu",
+          "o3": "geochar-ji",
+          "o4": "geochar-qing"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 6,
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "row": "dyn-tang",
+        "ask": "tangperiodname",
+        "optionRows": {
+          "o1": "dyn-ming",
+          "o2": "dyn-tang",
+          "o3": "dyn-yuan",
+          "o4": "dyn-song"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 15,
+        "dossier": "dynasties",
+        "table": "dynasties",
+        "row": "dyn-ming",
+        "ask": "mingperiodname",
+        "optionRows": {
+          "o1": "dyn-ming",
+          "o2": "dyn-tang",
+          "o3": "dyn-yuan",
+          "o4": "dyn-song"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 8,
+        "dossier": "modern-china",
+        "table": "cooperationfields",
+        "row": "coop-arctic",
+        "ask": "name",
+        "optionRows": {
+          "o1": "coop-aerospace",
+          "o2": "coop-arctic",
+          "o3": "coop-information",
+          "o4": "coop-agrotechnology"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 12,
+        "dossier": "modern-china",
+        "table": "silkroadroles",
+        "row": "silkrole-exchange",
+        "ask": "name",
+        "optionRows": {
+          "o1": "silkrole-teatransport",
+          "o2": "silkrole-buddhism",
+          "o3": "silkrole-exchange",
+          "o4": "silkrole-campaigns"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 14,
+        "dossier": "painting",
+        "table": "disasters",
+        "row": "disaster-eruption",
+        "ask": "name",
+        "optionRows": {
+          "o1": "disaster-earthquake",
+          "o2": "disaster-fire",
+          "o3": "disaster-flood",
+          "o4": "disaster-eruption"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 19,
+        "dossier": "modern-china",
+        "table": "croppairs",
+        "row": "croppair-southrice-northwheat",
+        "ask": "name",
+        "optionRows": {
+          "o1": "croppair-southwheat-northrice",
+          "o2": "croppair-southrice-northwheat",
+          "o3": "croppair-southcorn-northsoy",
+          "o4": "croppair-southsoy-northcorn"
+        },
+        "exclude": []
+      }
+    ],
+    "captionCorrections": [],
+    "contentProblems": [
+      {
+        "reviewNumber": 12,
+        "kind": "truefalse-exclusions",
+        "blocking": false,
+        "target": "data/review/truefalse.json",
+        "recordId": "2025-26-mun-irk-6",
+        "exclude": {
+          "o1": "运输茶叶",
+          "o2": "传播佛教"
+        },
+        "reason": "Перевозка чая и распространение буддизма — подтверждённые частные стороны торговли и культурного обмена по Шёлковому пути. Для MCQ главным обобщением остаётся 中外经济与文化交往; в «Верно или нет» частично истинные утверждения исключить. Военные походы остаются неверным вариантом; MCQ, стем, ключ и варианты не менять."
+      }
+    ]
+  }
+}

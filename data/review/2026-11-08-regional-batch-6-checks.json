@@ -1,0 +1,48 @@
+{
+  "reviewId": "regional-2026-11-08-batch-6",
+  "date": "2026-11-08",
+  "status": "passed",
+  "questions": 19,
+  "optionsAndCaptions": 76,
+  "sourceRecords": 19,
+  "originalSourceOptions": 71,
+  "authorizedAddedOptions": [
+    {
+      "reviewNumber": 4,
+      "id": "lit-a-xinqiji",
+      "zh": "辛弃疾"
+    },
+    {
+      "reviewNumber": 9,
+      "id": "added-yushui-rainwater",
+      "zh": "雨水"
+    },
+    {
+      "reviewNumber": 10,
+      "id": "added-ping-an-finance-centre",
+      "zh": "平安金融中心"
+    },
+    {
+      "reviewNumber": 13,
+      "id": "lm-cn-tuisi-garden",
+      "zh": "退思园"
+    },
+    {
+      "reviewNumber": 17,
+      "id": "added-waist-belt",
+      "zh": "腰带"
+    }
+  ],
+  "wordingChanges": 15,
+  "sourceRecordsKeysAndOriginalChoicesPreserved": true,
+  "maxCaptionLength": 84,
+  "topics": 6,
+  "activeQuestionsCompared": 1045,
+  "nearestRelationsRecorded": 56,
+  "protectedFilesUnchanged": 1320,
+  "protectedFilesTotal": 1320,
+  "fullBuildOrTestSuiteRun": false,
+  "operationalChangesApplied": false,
+  "publicationAuthorized": false,
+  "errors": []
+}

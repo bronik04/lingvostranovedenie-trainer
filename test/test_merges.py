@@ -378,6 +378,11 @@ class MergesInBankTest(unittest.TestCase):
                 # после объединения прежних групп из-за новых подписей.
                 '2015-16-zak-7': ('2025-26-mun-mosobl-4',),
                 '2019-20-mun-q727051': ('2018-19-shk-6',),
+                # Ранее принятое встраивание выпущено: подпись Дня единства сообщает 1612 год.
+                '2023-24-shk-29': ('2025-26-mun-ryaz-3',),
+                '2015-16-mun-5': ('2024-25-mun-tula-2',),
+                '2015-16-mun-8': ('2024-25-mun-tula-2',),
+                '2018-19-shk-8': ('2025-26-shk-mosobl-8',),
             }
             if keep_id in related_questions:
                 self.assertIn('factGroup', record)

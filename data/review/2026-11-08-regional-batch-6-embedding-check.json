@@ -1,0 +1,69 @@
+{
+  "reviewId": "regional-2026-11-08-batch-6",
+  "date": "2026-11-08",
+  "status": "passed",
+  "selected": 19,
+  "acceptedEmbeddings": 19,
+  "fullBank": 1269,
+  "visibleBefore": 1045,
+  "visibleAfter": 1045,
+  "checkedOptionsAndCaptions": 76,
+  "addedOptions": [
+    {
+      "reviewNumber": 4,
+      "id": "lit-a-xinqiji",
+      "zh": "辛弃疾"
+    },
+    {
+      "reviewNumber": 9,
+      "id": "added-yushui-rainwater",
+      "zh": "雨水"
+    },
+    {
+      "reviewNumber": 10,
+      "id": "added-ping-an-finance-centre",
+      "zh": "平安金融中心"
+    },
+    {
+      "reviewNumber": 13,
+      "id": "lm-cn-tuisi-garden",
+      "zh": "退思园"
+    },
+    {
+      "reviewNumber": 17,
+      "id": "added-waist-belt",
+      "zh": "腰带"
+    }
+  ],
+  "approvedStemsKeysOptionsAndCaptionsExact": true,
+  "previousLearnerFacingChanges": [],
+  "previousPoolChanges": [],
+  "newRowsWithTwoQuotedPrimarySources": 42,
+  "maxCaptionLength": 84,
+  "previousPinyinEntriesUnchanged": true,
+  "pinyinAdditions": 8,
+  "previousReadingLinksUnchanged": true,
+  "directHintErrors": 0,
+  "unresolvedNewCaptionCandidates": 0,
+  "unchangedPriorCaptionIndexHits": 12,
+  "newSameRowCaptionRepeats": 27,
+  "maxFactGroupSize": 217,
+  "allPreviousFactProtectionsPreserved": true,
+  "standaloneSourceFormFindings": [
+    "literature/literature-q66: текст называет ответ вопроса literature/literature-q114: ['诗歌']",
+    "nature/nature-q140: текст называет ответ вопроса modern-china/modern-china-q26: ['黄金']"
+  ],
+  "standaloneSourceFormFindingsExplanation": "Сравниваются исходные тексты до editorial; это прежние baseline-совпадения. Проверка окончательного банка выполнена отдельно.",
+  "siteVisibilityGuardsAdded": [
+    "2025-26-mun-nnov-10",
+    "2025-26-mun-irk-6",
+    "2025-26-mun-novg-6"
+  ],
+  "protectedSourceCodeTestChanges": [],
+  "approvedManifestSha256": "0c197e3fccd61bddf510321d4f0786f5e5b61ea96ea31da902573faa5b13c2b6",
+  "htmlSha256": "f3650cbb9f1cbeedd3cc1f42628252bded3cae64baabe8f0b47ecaa75d4d95e9",
+  "publicationAuthorized": false,
+  "deploymentRun": false,
+  "contentProblems": [],
+  "errors": []
+}

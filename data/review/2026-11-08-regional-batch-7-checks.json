@@ -1,0 +1,57 @@
+{
+  "reviewId": "regional-2026-11-08-batch-7",
+  "date": "2026-11-08",
+  "status": "passed",
+  "questions": 20,
+  "optionsAndCaptions": 80,
+  "originalSourceOptions": 73,
+  "authorizedAddedOptions": [
+    {
+      "reviewNumber": 1,
+      "id": "preview-guangdong-cuisine",
+      "zh": "广东菜"
+    },
+    {
+      "reviewNumber": 3,
+      "id": "preview-qi-state",
+      "zh": "齐国"
+    },
+    {
+      "reviewNumber": 5,
+      "id": "preview-meihua",
+      "zh": "梅花"
+    },
+    {
+      "reviewNumber": 10,
+      "id": "preview-zhongyong",
+      "zh": "《中庸》"
+    },
+    {
+      "reviewNumber": 12,
+      "id": "preview-lugouqiao",
+      "zh": "卢沟桥"
+    },
+    {
+      "reviewNumber": 15,
+      "id": "preview-mainland-31",
+      "zh": "31"
+    },
+    {
+      "reviewNumber": 18,
+      "id": "preview-ming-wall-length",
+      "zh": "8 852"
+    }
+  ],
+  "wordingChanges": 18,
+  "maxCaptionLength": 82,
+  "topics": 5,
+  "semanticReferenceCount": 1076,
+  "visibleQuestionCount": 1045,
+  "nearestRelationsRecorded": 48,
+  "protectedFilesUnchanged": 1338,
+  "protectedFilesTotal": 1338,
+  "operationalChangesApplied": false,
+  "fullBuildOrTestSuiteRun": false,
+  "publicationAuthorized": false,
+  "errors": []
+}

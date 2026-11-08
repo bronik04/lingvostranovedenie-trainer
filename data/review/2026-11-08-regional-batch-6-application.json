@@ -1,0 +1,984 @@
+{
+  "reviewId": "regional-2026-11-08-batch-6",
+  "date": "2026-11-08",
+  "state": "locally-embedded-validated-not-published",
+  "publicationAuthorized": false,
+  "selectedCount": 19,
+  "acceptedEmbeddings": 19,
+  "draftEmbeddings": 0,
+  "visibleCountBefore": 1045,
+  "expectedVisibleCountAfter": 1045,
+  "fullBankCount": 1269,
+  "approvedManifestHash": "0c197e3fccd61bddf510321d4f0786f5e5b61ea96ea31da902573faa5b13c2b6",
+  "excludedFromCurrentBatch": [
+    "2021-22-mun-mosobl-52"
+  ],
+  "items": [
+    {
+      "reviewNumber": 1,
+      "questionId": "2020-21-mun-lenobl-2",
+      "dossier": "nature",
+      "dossierQuestion": "nature-q167",
+      "status": "accepted",
+      "fact": {
+        "table": "waters",
+        "row": "wat-jinghang-canal",
+        "ask": "longestcanalname"
+      },
+      "optionRows": {
+        "o1": "wat-huanghe",
+        "o2": "wat-shangtanghe",
+        "o3": "wat-lingqu",
+        "o4": "wat-jinghang-canal"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 2,
+      "questionId": "2021-22-mun-tat-52",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q138",
+      "status": "accepted",
+      "fact": {
+        "table": "provinces",
+        "row": "prov-tianjin",
+        "ask": "goubuliregionname"
+      },
+      "optionRows": {
+        "o1": "prov-shaanxi",
+        "o2": "prov-yunnan",
+        "o3": "prov-hubei",
+        "o4": "prov-tianjin"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 4,
+      "questionId": "2020-21-mun-spb-4",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q115",
+      "status": "accepted",
+      "fact": {
+        "table": "authors",
+        "row": "lit-a-sushi",
+        "ask": "moonverseauthor"
+      },
+      "optionRows": {
+        "o1": "lit-a-dufu",
+        "o2": "lit-a-sushi",
+        "o3": "lit-a-libai",
+        "lit-a-xinqiji": "lit-a-xinqiji"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 5,
+      "questionId": "2025-26-mun-kursk-6",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q139",
+      "status": "accepted",
+      "fact": {
+        "table": "geosymbols",
+        "row": "geochar-hu",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "geochar-hei",
+        "o2": "geochar-hu",
+        "o3": "geochar-ji",
+        "o4": "geochar-qing"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 6,
+      "questionId": "2025-26-shk-mosobl-1",
+      "dossier": "dynasties",
+      "dossierQuestion": "dynasties-q124",
+      "status": "accepted",
+      "fact": {
+        "table": "dynasties",
+        "row": "dyn-tang",
+        "ask": "tangperiodname"
+      },
+      "optionRows": {
+        "o1": "dyn-ming",
+        "o2": "dyn-tang",
+        "o3": "dyn-yuan",
+        "o4": "dyn-song"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 7,
+      "questionId": "2024-25-mun-mosobl-3",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q140",
+      "status": "accepted",
+      "fact": {
+        "table": "cities",
+        "row": "city-shanghai",
+        "ask": "yuyuancity"
+      },
+      "optionRows": {
+        "o1": "city-shanghai",
+        "o2": "city-guangzhou",
+        "o3": "city-xian",
+        "o4": "city-beijing"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 8,
+      "questionId": "2025-26-mun-nnov-10",
+      "dossier": "modern-china",
+      "dossierQuestion": "modern-china-q27",
+      "status": "accepted",
+      "fact": {
+        "table": "cooperationfields",
+        "row": "coop-arctic",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "coop-aerospace",
+        "o2": "coop-arctic",
+        "o3": "coop-information",
+        "o4": "coop-agrotechnology"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 9,
+      "questionId": "2015-16-mun-spb-4",
+      "dossier": "cuisine",
+      "dossierQuestion": "cuisine-q107",
+      "status": "accepted",
+      "fact": {
+        "table": "teawaters",
+        "row": "tea-water-spring",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "tea-water-spring",
+        "o2": "tea-water-river",
+        "o3": "tea-water-well",
+        "added-yushui-rainwater": "added-yushui-rainwater"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 10,
+      "questionId": "2023-24-mun-klg-10",
+      "dossier": "landmarks",
+      "dossierQuestion": "landmarks-q115",
+      "status": "accepted",
+      "fact": {
+        "table": "skyscrapers",
+        "row": "lm-cn-shanghai-tower",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "lm-cn-shanghai-world-financial-center",
+        "o2": "lm-cn-shanghai-tower",
+        "o3": "lm-cn-jinmao-tower",
+        "added-ping-an-finance-centre": "added-ping-an-finance-centre"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 11,
+      "questionId": "2024-25-mun-irk-2",
+      "dossier": "holidays",
+      "dossierQuestion": "holidays-q55",
+      "status": "accepted",
+      "fact": {
+        "table": "customs",
+        "row": "cus-double-happiness",
+        "ask": "springaction"
+      },
+      "optionRows": {
+        "o1": "cus-hongbao",
+        "o2": "cus-double-happiness",
+        "o3": "cus-baozhu",
+        "o4": "cus-jiaozi"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 12,
+      "questionId": "2025-26-mun-irk-6",
+      "dossier": "modern-china",
+      "dossierQuestion": "modern-china-q28",
+      "status": "accepted",
+      "fact": {
+        "table": "silkroadroles",
+        "row": "silkrole-exchange",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "silkrole-teatransport",
+        "o2": "silkrole-buddhism",
+        "o3": "silkrole-exchange",
+        "o4": "silkrole-campaigns"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 13,
+      "questionId": "2015-16-mun-spb-10",
+      "dossier": "landmarks",
+      "dossierQuestion": "landmarks-q116",
+      "status": "accepted",
+      "fact": {
+        "table": "gardens",
+        "row": "lm-cn-liuyuan",
+        "ask": "suzhoufourgarden"
+      },
+      "optionRows": {
+        "o1": "lm-cn-huanxiu-villa",
+        "o2": "lm-cn-liuyuan",
+        "o3": "lm-cn-wangshi-garden",
+        "lm-cn-tuisi-garden": "lm-cn-tuisi-garden"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 14,
+      "questionId": "2023-24-mun-mosobl-10",
+      "dossier": "painting",
+      "dossierQuestion": "painting-q110",
+      "status": "accepted",
+      "fact": {
+        "table": "disasters",
+        "row": "disaster-eruption",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "disaster-earthquake",
+        "o2": "disaster-fire",
+        "o3": "disaster-flood",
+        "o4": "disaster-eruption"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 15,
+      "questionId": "2025-26-shk-mosobl-11",
+      "dossier": "dynasties",
+      "dossierQuestion": "dynasties-q125",
+      "status": "accepted",
+      "fact": {
+        "table": "dynasties",
+        "row": "dyn-ming",
+        "ask": "mingperiodname"
+      },
+      "optionRows": {
+        "o1": "dyn-ming",
+        "o2": "dyn-tang",
+        "o3": "dyn-yuan",
+        "o4": "dyn-song"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 16,
+      "questionId": "2021-22-mun-tat-53",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q141",
+      "status": "accepted",
+      "fact": {
+        "table": "provinces",
+        "row": "prov-shaanxi",
+        "ask": "paomoregionname"
+      },
+      "optionRows": {
+        "o1": "prov-shaanxi",
+        "o2": "prov-yunnan",
+        "o3": "prov-hubei",
+        "o4": "prov-tianjin"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 17,
+      "questionId": "2015-16-mun-spb-6",
+      "dossier": "crafts",
+      "dossierQuestion": "crafts-q143",
+      "status": "accepted",
+      "fact": {
+        "table": "garmentparts",
+        "row": "garment-headwear",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "garment-upper",
+        "o2": "garment-skirt",
+        "o3": "garment-headwear",
+        "added-waist-belt": "added-waist-belt"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 18,
+      "questionId": "2025-26-mun-kgd-54",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q142",
+      "status": "accepted",
+      "fact": {
+        "table": "cities",
+        "row": "city-leshan",
+        "ask": "maitreyacity"
+      },
+      "optionRows": {
+        "o1": "city-xian",
+        "o2": "city-leshan",
+        "o3": "city-nanjing",
+        "o4": "city-beijing"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 19,
+      "questionId": "2025-26-mun-novg-6",
+      "dossier": "modern-china",
+      "dossierQuestion": "modern-china-q29",
+      "status": "accepted",
+      "fact": {
+        "table": "croppairs",
+        "row": "croppair-southrice-northwheat",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "croppair-southwheat-northrice",
+        "o2": "croppair-southrice-northwheat",
+        "o3": "croppair-southcorn-northsoy",
+        "o4": "croppair-southsoy-northcorn"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 20,
+      "questionId": "2020-21-shk-mosobl-47",
+      "dossier": "nature",
+      "dossierQuestion": "nature-q168",
+      "status": "accepted",
+      "fact": {
+        "table": "scenicplaces",
+        "row": "sp-summer-palace",
+        "ask": "kunminghulandmark"
+      },
+      "optionRows": {
+        "o1": "sp-forbidden-city",
+        "o2": "sp-summer-palace",
+        "o3": "sp-great-wall",
+        "o4": "sp-yonghe-temple"
+      },
+      "exclude": []
+    }
+  ],
+  "changedCells": [
+    {
+      "dossier": "nature",
+      "table": "waters",
+      "row": "wat-huanghe",
+      "column": "longestcanalname"
+    },
+    {
+      "dossier": "nature",
+      "table": "waters",
+      "row": "wat-lingqu",
+      "column": "longestcanalname"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-shanghai",
+      "column": "yuyuancity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-guangzhou",
+      "column": "yuyuancity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-xian",
+      "column": "yuyuancity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-beijing",
+      "column": "yuyuancity"
+    },
+    {
+      "dossier": "landmarks",
+      "table": "gardens",
+      "row": "lm-cn-liuyuan",
+      "column": "suzhoufourgarden"
+    },
+    {
+      "dossier": "landmarks",
+      "table": "gardens",
+      "row": "lm-cn-wangshi-garden",
+      "column": "suzhoufourgarden"
+    },
+    {
+      "dossier": "landmarks",
+      "table": "gardens",
+      "row": "lm-cn-tuisi-garden",
+      "column": "suzhoufourgarden"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-xian",
+      "column": "maitreyacity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-nanjing",
+      "column": "maitreyacity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-beijing",
+      "column": "maitreyacity"
+    },
+    {
+      "dossier": "nature",
+      "table": "scenicplaces",
+      "row": "sp-summer-palace",
+      "column": "kunminghulandmark"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-shaanxi",
+      "column": "goubuliregionname"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-yunnan",
+      "column": "goubuliregionname"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-hubei",
+      "column": "goubuliregionname"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-tianjin",
+      "column": "goubuliregionname"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-shaanxi",
+      "column": "paomoregionname"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-yunnan",
+      "column": "paomoregionname"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-hubei",
+      "column": "paomoregionname"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-tianjin",
+      "column": "paomoregionname"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-dufu",
+      "column": "moonverseauthor"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-sushi",
+      "column": "moonverseauthor"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-libai",
+      "column": "moonverseauthor"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-xinqiji",
+      "column": "moonverseauthor"
+    },
+    {
+      "dossier": "holidays",
+      "table": "customs",
+      "row": "cus-baozhu",
+      "column": "springaction"
+    },
+    {
+      "dossier": "holidays",
+      "table": "customs",
+      "row": "cus-jiaozi",
+      "column": "springaction"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "dynasties",
+      "row": "dyn-ming",
+      "column": "tangperiodname"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "dynasties",
+      "row": "dyn-tang",
+      "column": "tangperiodname"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "dynasties",
+      "row": "dyn-yuan",
+      "column": "tangperiodname"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "dynasties",
+      "row": "dyn-ming",
+      "column": "mingperiodname"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "dynasties",
+      "row": "dyn-tang",
+      "column": "mingperiodname"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "dynasties",
+      "row": "dyn-yuan",
+      "column": "mingperiodname"
+    }
+  ],
+  "newRows": [
+    {
+      "dossier": "nature",
+      "table": "waters",
+      "row": "wat-shangtanghe"
+    },
+    {
+      "dossier": "nature",
+      "table": "waters",
+      "row": "wat-jinghang-canal"
+    },
+    {
+      "dossier": "landmarks",
+      "table": "skyscrapers",
+      "row": "lm-cn-shanghai-world-financial-center"
+    },
+    {
+      "dossier": "landmarks",
+      "table": "skyscrapers",
+      "row": "lm-cn-shanghai-tower"
+    },
+    {
+      "dossier": "landmarks",
+      "table": "skyscrapers",
+      "row": "lm-cn-jinmao-tower"
+    },
+    {
+      "dossier": "landmarks",
+      "table": "skyscrapers",
+      "row": "added-ping-an-finance-centre"
+    },
+    {
+      "dossier": "landmarks",
+      "table": "gardens",
+      "row": "lm-cn-huanxiu-villa"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-leshan"
+    },
+    {
+      "dossier": "nature",
+      "table": "scenicplaces",
+      "row": "sp-forbidden-city"
+    },
+    {
+      "dossier": "nature",
+      "table": "scenicplaces",
+      "row": "sp-great-wall"
+    },
+    {
+      "dossier": "nature",
+      "table": "scenicplaces",
+      "row": "sp-yonghe-temple"
+    },
+    {
+      "dossier": "cuisine",
+      "table": "teawaters",
+      "row": "tea-water-spring"
+    },
+    {
+      "dossier": "cuisine",
+      "table": "teawaters",
+      "row": "tea-water-river"
+    },
+    {
+      "dossier": "cuisine",
+      "table": "teawaters",
+      "row": "tea-water-well"
+    },
+    {
+      "dossier": "cuisine",
+      "table": "teawaters",
+      "row": "added-yushui-rainwater"
+    },
+    {
+      "dossier": "holidays",
+      "table": "customs",
+      "row": "cus-hongbao"
+    },
+    {
+      "dossier": "holidays",
+      "table": "customs",
+      "row": "cus-double-happiness"
+    },
+    {
+      "dossier": "crafts",
+      "table": "garmentparts",
+      "row": "garment-upper"
+    },
+    {
+      "dossier": "crafts",
+      "table": "garmentparts",
+      "row": "garment-skirt"
+    },
+    {
+      "dossier": "crafts",
+      "table": "garmentparts",
+      "row": "garment-headwear"
+    },
+    {
+      "dossier": "crafts",
+      "table": "garmentparts",
+      "row": "added-waist-belt"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geosymbols",
+      "row": "geochar-hei"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geosymbols",
+      "row": "geochar-hu"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geosymbols",
+      "row": "geochar-ji"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geosymbols",
+      "row": "geochar-qing"
+    },
+    {
+      "dossier": "dynasties",
+      "table": "dynasties",
+      "row": "dyn-song"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "cooperationfields",
+      "row": "coop-aerospace"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "cooperationfields",
+      "row": "coop-arctic"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "cooperationfields",
+      "row": "coop-information"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "cooperationfields",
+      "row": "coop-agrotechnology"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "silkroadroles",
+      "row": "silkrole-teatransport"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "silkroadroles",
+      "row": "silkrole-buddhism"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "silkroadroles",
+      "row": "silkrole-exchange"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "silkroadroles",
+      "row": "silkrole-campaigns"
+    },
+    {
+      "dossier": "painting",
+      "table": "disasters",
+      "row": "disaster-earthquake"
+    },
+    {
+      "dossier": "painting",
+      "table": "disasters",
+      "row": "disaster-fire"
+    },
+    {
+      "dossier": "painting",
+      "table": "disasters",
+      "row": "disaster-flood"
+    },
+    {
+      "dossier": "painting",
+      "table": "disasters",
+      "row": "disaster-eruption"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "croppairs",
+      "row": "croppair-southwheat-northrice"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "croppairs",
+      "row": "croppair-southrice-northwheat"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "croppairs",
+      "row": "croppair-southcorn-northsoy"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "croppairs",
+      "row": "croppair-southsoy-northcorn"
+    }
+  ],
+  "sourceExcerptUpdates": [
+    {
+      "row": "lm-cn-liuyuan",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/sjyc/201905/b7c0f2058c75498c9ecbacf234e25b08.shtml",
+      "newExcerpt": "园始建于明代万历二十一年（公元1593年），为太僕寺少卿徐泰时的私家园林，时人称东园。"
+    },
+    {
+      "row": "city-xian",
+      "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1802954373708996609.html",
+      "newExcerpt": "大雁塔--西安市地方志办公室…唐永徽三年（公元652年）为玄奘藏经典而修建"
+    },
+    {
+      "row": "lm-cn-huanxiu-villa",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/sjyc/201905/ed99a3e821de464cae28c04e79d60512.shtml",
+      "newExcerpt": "环秀山庄占地不大，但其内湖石假山为中国之最。据载，此山为清代叠山大师戈裕良之作。"
+    }
+  ],
+  "preservedPreviousPools": [
+    {
+      "dossier": "landmarks",
+      "question": "landmarks-q02",
+      "excludedNewRows": [
+        "lm-cn-huanxiu-villa"
+      ]
+    },
+    {
+      "dossier": "landmarks",
+      "question": "landmarks-q23",
+      "excludedNewRows": [
+        "lm-cn-huanxiu-villa"
+      ]
+    },
+    {
+      "dossier": "landmarks",
+      "question": "landmarks-q103",
+      "excludedNewRows": [
+        "lm-cn-huanxiu-villa"
+      ]
+    }
+  ],
+  "explanationCorrections": {
+    "5": "У провинций Хунань (湖南) и Хубэй (湖北) сокращённые названия — 湘 и 鄂. Иероглиф 湖 означает «озеро», но не является официальным сокращённым названием провинции.",
+    "10": "Самое высокое здание Китая — Шанхайская башня (上海中心大厦) в шанхайском районе Луцзяцзуй.",
+    "13": "Лююань (留园) входит в стандартную четвёрку знаменитых садов Сучжоу вместе с Цанланътин, Шицзылинь и Чжочжэнъюань. Лююань основан в 1593 году при династии Мин; в традиционном перечне четырёх садов он представляет стиль эпохи Цин."
+  },
+  "captionCorrections": [],
+  "authorApproval": {
+    "date": "2026-11-08",
+    "acceptedReviewNumbers": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "instruction": "Все 19 вопросов и добавленные варианты принимаем. Встраивай в досье, проверь подписи и взаимные подсказки. Покажи только изменения и найденные проблемы, пока не публикуй.",
+    "captionCorrectionsAuthorized": true,
+    "stemOrOptionChangesRequireNewApproval": true
+  },
+  "publicationBlockers": [],
+  "resolvedFindings": [
+    {
+      "reviewNumber": 12,
+      "kind": "truefalse-exclusions",
+      "blocking": false,
+      "target": "data/review/truefalse.json",
+      "recordId": "2025-26-mun-irk-6",
+      "exclude": {
+        "o1": "运输茶叶",
+        "o2": "传播佛教"
+      },
+      "reason": "Перевозка чая и распространение буддизма — подтверждённые частные стороны торговли и культурного обмена по Шёлковому пути. Для MCQ главным обобщением остаётся 中外经济与文化交往; в «Верно или нет» частично истинные утверждения исключить. Военные походы остаются неверным вариантом; MCQ, стем, ключ и варианты не менять."
+    }
+  ],
+  "siteVisibilityGuardsAdded": [
+    "2025-26-mun-nnov-10",
+    "2025-26-mun-irk-6",
+    "2025-26-mun-novg-6"
+  ],
+  "searchAliasCorrections": [
+    {
+      "row": "provinces/geosymbols/geochar-hu",
+      "from": [
+        "Ху"
+      ],
+      "to": [
+        "иероглиф ху («озеро»)"
+      ],
+      "reason": "Голое Ху ошибочно находилось внутри Хуанхэ, Хунтайцзи и художник; уточнено только служебное имя поиска, подпись Ху сохранена."
+    }
+  ],
+  "pinyinAdditions": {
+    "“冰上丝绸之路”是中俄在哪个领域的合作项目？": "“bīng shàng sī chóu zhī lù” shì zhōng é zài nǎ ge lǐng yù de hé zuò xiàng mù?",
+    "下列哪个园林与拙政园、狮子林和沧浪亭并称苏州“四大名园”？": "xià liè nǎ ge yuán lín yǔ zhuō zhèng yuán, shī zi lín hé cāng làng tíng bìng chēng sū zhōu “sì dà míng yuán”?",
+    "中国最长的人工运河是哪一条？": "zhōng guó zuì cháng de rén gōng yùn hé shì nǎ yī tiáo?",
+    "传统上，中国南方和北方的主要粮食作物分别是什么？": "chuán tǒng shàng, zhōng guó nán fāng hé běi fāng de zhǔ yào liáng shí zuò wù fēn bié shì shén me?",
+    "北京的昆明湖位于下列哪处景点内？": "běi jīng de kūn míng hú wèi yú xià liè nǎ chù jǐng diǎn nèi?",
+    "平安金融中心": "píng ān jīn róng zhōng xīn",
+    "根据陆羽《茶经》的说法，下面哪种水最好？": "gēn jù lù yǔ «chá jīng» de shuō fǎ, xià miàn nǎ zhǒng shuǐ zuì hǎo?",
+    "腰带": "yāo dài"
+  },
+  "independentReviewHintCorrections": [
+    {
+      "kind": "manual-semantic",
+      "recordId": "2015-16-mun-spb-4",
+      "otherId": "2024-25-mun-irk-8",
+      "reason": "Новый вопрос называет Лу Юя и «Канон чая», а старый просит название этого трактата."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-mun-novg-6",
+      "otherId": "nature-q44",
+      "reason": "Подпись рис/пшеница называет линию Циньлин—Хуайхэ, выдавая хребет другого вопроса."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-mun-kursk-6",
+      "otherId": "2024-25-pri-34",
+      "reason": "Подпись 青 связывает Цинхай с одноимённым крупнейшим озером; это проверяемая связь старого вопроса."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-shk-mosobl-1",
+      "otherId": "dynasties-q23",
+      "reason": "Подпись 宋朝 называет Чжао Куанъиня и 960 год — ключ вопроса об основателе Сун."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-shk-mosobl-11",
+      "otherId": "dynasties-q23",
+      "reason": "Та же принятая подпись 宋朝 сообщает основателя Сун и 960 год."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2024-25-mun-irk-2",
+      "otherId": "2015-16-mun-spb-7",
+      "reason": "Подпись 贴囍字 прямо называет 喜 и свадебный контекст другого задания."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2020-21-shk-mosobl-47",
+      "otherId": "2018-19-mun-lenobl-51",
+      "reason": "Консервативное разнесение близкого факта: нынешний облик Великой стены связывается с Мин, в старом вопросе спрашивается эпоха её знаменитых участков."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-shk-mosobl-1",
+      "otherId": "dynasties-q28",
+      "reason": "Подпись 明朝 называет Чжу Юаньчжана и 1368 год — ключ вопроса об основателе Мин."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-shk-mosobl-1",
+      "otherId": "dynasties-q105",
+      "reason": "Подпись 元朝 связывает Даду с династией Юань; другой вопрос просит её столицу."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-shk-mosobl-11",
+      "otherId": "dynasties-q105",
+      "reason": "Подпись 元朝 называет Даду столицей Юань, подсказывая другой вопрос."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2020-21-mun-spb-4",
+      "otherId": "literature-q88",
+      "reason": "Подпись 李白 называет «Думу в тихую ночь» и мотив воспоминания о родине; другой вопрос просит произведение Ли Бо."
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "structuralReport": "2026-11-08-regional-batch-6-embedding-check.json",
+    "testsReport": "2026-11-08-regional-batch-6-embedding-tests.json",
+    "browserReport": "2026-11-08-regional-batch-6-browser-check.json",
+    "independentReview": "2026-11-08-regional-batch-6-embedding-review.md",
+    "openCritical": 0,
+    "openImportant": 0,
+    "openMinor": 0
+  }
+}

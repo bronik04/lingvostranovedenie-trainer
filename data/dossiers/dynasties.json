@@ -13,7 +13,10 @@
         "people": "zh",
         "ended": "zh",
         "known": "zh",
-        "about": "ru"
+        "about": "ru",
+        "tangperiodname": "zh",
+        "mingperiodname": "zh",
+        "qingreignperiod": "zh"
       },
       "sides": [
         "founder",
@@ -204,7 +207,9 @@
               "checkedAt": "2026-10-16"
             }
           ],
-          "olympiad": [],
+          "olympiad": [
+            "2025-26-shk-mosobl-1"
+          ],
           "ended": {
             "zh": "朱温篡唐",
             "ru": [
@@ -222,7 +227,21 @@
           "core": true,
           "skipSides": [
             "known"
-          ]
+          ],
+          "tangperiodname": {
+            "zh": "唐朝",
+            "ru": [
+              "Династия Тан"
+            ],
+            "gloss": "Династия Тан — Ли Юань основал её со столицей в Чанъане."
+          },
+          "mingperiodname": {
+            "zh": "唐朝",
+            "ru": [
+              "Династия Тан"
+            ],
+            "gloss": "Династия Тан — завершилась в 907 году, раньше Мин."
+          }
         },
         {
           "id": "dyn-nantang",
@@ -373,7 +392,21 @@
             ],
             "gloss": "Система провинций (син-шэн) — утвердилась при Юань, дожила до наших дней"
           },
-          "core": true
+          "core": true,
+          "tangperiodname": {
+            "zh": "元朝",
+            "ru": [
+              "Династия Юань"
+            ],
+            "gloss": "Династия Юань — армия Мин взяла её столицу Даду в 1368 году."
+          },
+          "mingperiodname": {
+            "zh": "元朝",
+            "ru": [
+              "Династия Юань"
+            ],
+            "gloss": "Династия Юань — потеряла Даду в 1368 году, когда её сменила Мин."
+          }
         },
         {
           "id": "dyn-ming",
@@ -461,7 +494,8 @@
             }
           ],
           "olympiad": [
-            "2015-16-mun-6"
+            "2015-16-mun-6",
+            "2025-26-shk-mosobl-11"
           ],
           "ended": {
             "zh": "李自成起义",
@@ -477,7 +511,21 @@
             ],
             "gloss": "Плавания Чжэн Хэ — семь походов флота Мин в 1405–1433 годах"
           },
-          "core": true
+          "core": true,
+          "tangperiodname": {
+            "zh": "明朝",
+            "ru": [
+              "Династия Мин"
+            ],
+            "gloss": "Династия Мин — основана Чжу Юаньчжаном в 1368 году, значительно позже Тан."
+          },
+          "mingperiodname": {
+            "zh": "明朝",
+            "ru": [
+              "Династия Мин"
+            ],
+            "gloss": "Династия Мин — при Юнлэ императорский двор перенесли из Нанкина в Пекин."
+          }
         },
         {
           "id": "dyn-qing",
@@ -541,7 +589,10 @@
               "url": "https://www.dpm.org.cn/court/lineage/226255.html",
               "quote": "1911年，在辛亥革命的浪潮声中，由隆裕皇太后主持召开了御前会议，最后于1912年2月12日宣布宣统帝退位。 … 满族，中国北方少数民族，源于女真。1616年努尔哈赤统一女真各部建立“后金”政权。1635年皇太极改女真族为满洲（今称满族）。",
               "authority": "official",
-              "checkedAt": "2026-10-16"
+              "checkedAt": "2026-10-16",
+              "additionalQuotes": [
+                "清代最后一位皇帝名溥仪 … 最后于1912年2月12日宣布宣统帝退位。"
+              ]
             },
             {
               "title": "六次南巡与康乾盛世—《马背上的朝廷》评介（范金民） — 光明日报（光明网）",
@@ -549,11 +600,36 @@
               "quote": "自康熙二十三年至乾隆四十九年（1684-1784）整整一个世纪中，康熙帝和他的孙子乾隆帝各自六次南巡，南巡既是康乾盛世的旷古大典，也是清廷统治稳固的典型象征。",
               "authority": "official",
               "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "China—Timeline of Historical Periods — Asia for Educators, Columbia University",
+              "url": "https://www-1.gsb.columbia.edu/timelines/china_timeline.htm",
+              "quote": "1644-1912 … Qing (Ch'ing) Dynasty … Reign of the Manchus; Capital: Beijing",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 keySources; original: web-open"
+            },
+            {
+              "title": "清朝工芸の魅力 — 京都国立博物館",
+              "url": "https://www.kyohaku.go.jp/jp/learn/home/dictio/touji/212/",
+              "quote": "順治元年（じゅんちがんねん）（1644）に明王朝が滅ぶと、北京へと遷都を行い、1912年まで中国やモンゴルを支配する最後の統一王朝となっています。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 keySources; original: web-open"
+            },
+            {
+              "title": "清宣统皇帝溥仪退位诏书 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202008/t20200824_247195.shtml",
+              "quote": "1912年2月12日，清帝颁布退位诏书，中国2000多年的封建帝制宣告结束。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 keySources; original: web-open"
             }
           ],
           "olympiad": [
             "2015-16-shk-61",
-            "2017-18-mun-3"
+            "2017-18-mun-3",
+            "2025-26-mun-komi-55"
           ],
           "founder": {
             "zh": "皇太极",
@@ -579,7 +655,11 @@
           "skipSides": [
             "founder",
             "capital"
-          ]
+          ],
+          "qingreignperiod": {
+            "zh": "1644-1912",
+            "gloss": "1644–1912 — последний император Пу И отрёкся от престола 12 февраля 1912 года."
+          }
         },
         {
           "id": "dyn-xia",
@@ -1943,6 +2023,146 @@
             }
           ],
           "olympiad": []
+        },
+        {
+          "id": "dyn-song",
+          "name": {
+            "zh": "宋",
+            "ru": [
+              "династия Сун"
+            ],
+            "gloss": "Династия Сун — её основатель Чжао Куанъинь пришёл к власти в 960 году."
+          },
+          "sources": [
+            {
+              "title": "赵匡胤 — 故宫博物院（词条）",
+              "url": "https://www.dpm.org.cn/lemmas/242238.html",
+              "quote": "曾任后周殿前都点检，掌握军权，960年他在陈桥（今河南开封东北）发动兵变成功，建立了宋朝，史称北宋。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json reviewNumber 6 option o4; original checkedAt retained; package prepared 2026-11-08"
+            },
+            {
+              "title": "【道中华】这本“活地图”，把你带去七百年前的杭州 — 国家民族事务委员会",
+              "url": "https://www.neac.gov.cn/seac/c103391/202301/1160353.shtml",
+              "quote": "1127年靖康之变时宋徽宗、宋钦宗被金国所俘，宋徽宗第九子康王赵构在南京应天府（今河南商丘）继承大宋皇位，为了延续宋朝皇统和法统，定国号仍为宋，史称南宋。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reused-accepted-source-not-freshly-fetched; accepted data/dossiers/dynasties.json dyn-nansong sources[0]; original checkedAt retained; package prepared 2026-11-08"
+            }
+          ],
+          "tangperiodname": {
+            "zh": "宋朝",
+            "ru": [
+              "Династия Сун"
+            ],
+            "gloss": "Династия Сун — её основатель Чжао Куанъинь пришёл к власти в 960 году."
+          },
+          "mingperiodname": {
+            "zh": "宋朝",
+            "ru": [
+              "Династия Сун"
+            ],
+            "gloss": "Династия Сун — её основатель Чжао Куанъинь пришёл к власти в 960 году."
+          }
+        },
+        {
+          "id": "qing-interval-1644-1910",
+          "name": {
+            "zh": "1644-1910"
+          },
+          "qingreignperiod": {
+            "zh": "1644-1910",
+            "gloss": "1644–1910 — в 1910 году ещё правил последний император Пу И."
+          },
+          "about": "Контекстный календарный интервал для сопоставления дат; это не название династии и не утверждение о реальном периоде её правления. Подпись поясняет реальный конечный год.",
+          "sources": [
+            {
+              "title": "宣统皇帝 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/court/lineage/226255.html",
+              "quote": "宣统皇帝。(1909—1911年) … 清代最后一位皇帝名溥仪",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 option o2; original: web-open; 1910 попадает в указанный музеем интервал; на той же странице год обозначен как второй год Сюаньтун."
+            },
+            {
+              "title": "China—Timeline of Historical Periods — Asia for Educators, Columbia University",
+              "url": "https://www-1.gsb.columbia.edu/timelines/china_timeline.htm",
+              "quote": "1644-1912 … Qing (Ch'ing) Dynasty … Reign of the Manchus; Capital: Beijing",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 keySources; original: web-open"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "qing-interval-1644-1913",
+          "name": {
+            "zh": "1644-1913"
+          },
+          "qingreignperiod": {
+            "zh": "1644-1913",
+            "gloss": "1644–1913 — конечный год относится уже к Китайской Республике."
+          },
+          "about": "Контекстный календарный интервал для сопоставления дат; это не название династии и не утверждение о реальном периоде её правления. Подпись поясняет реальный конечный год.",
+          "sources": [
+            {
+              "title": "China—Timeline of Historical Periods — Asia for Educators, Columbia University",
+              "url": "https://www-1.gsb.columbia.edu/timelines/china_timeline.htm",
+              "quote": "1912-1949 … Republic Period",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 option o3; original: web-open; 1913 год входит в республиканский период 1912–1949."
+            },
+            {
+              "title": "清宣统皇帝溥仪退位诏书 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202008/t20200824_247195.shtml",
+              "quote": "1912年2月12日，清帝颁布退位诏书，中国2000多年的封建帝制宣告结束。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 keySources; original: web-open"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "qing-interval-1644-1914",
+          "name": {
+            "zh": "1644-1914"
+          },
+          "qingreignperiod": {
+            "zh": "1644-1914",
+            "gloss": "1644–1914 — в 1914 году ввели серебряный юань с профилем Юань Шикая."
+          },
+          "about": "Контекстный календарный интервал для сопоставления дат; это не название династии и не утверждение о реальном периоде её правления. Подпись поясняет реальный конечный год.",
+          "sources": [
+            {
+              "title": "清代户部造币总厂的前世今生 — 中国社会科学网",
+              "url": "https://cssn.cn/kgxc/kgxc_kgsb/202207/t20220728_5431170.shtml",
+              "quote": "民国三年(1914年),北洋政府颁布《中华民国国币条例》,规定将袁世凯头像作为国币图案。",
+              "checkedAt": "2026-10-14",
+              "authority": "academic",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 option o4; original: reused-accepted-dossier-source-and-quote: data/dossiers/money.json#yuan-datou"
+            },
+            {
+              "title": "“袁大头”不是银币的开始 最早出现在光绪时期 — 人民网",
+              "url": "http://art.people.com.cn/n/2013/0305/c226026-20676896.html",
+              "quote": "1914年，北洋政府颁布《国币条例》，宣布废两改元，规定以袁世凯头像银币(俗称“袁大头”)为国币，并以“圆”为单位，重库平七钱二分",
+              "checkedAt": "2026-10-14",
+              "authority": "official",
+              "verificationMethod": "reused-author-accepted-batch7-source; accepted canonical money/yuan-datou; 1914 coin introduction; original: accepted-dossier-source"
+            },
+            {
+              "title": "China—Timeline of Historical Periods — Asia for Educators, Columbia University",
+              "url": "https://www-1.gsb.columbia.edu/timelines/china_timeline.htm",
+              "quote": "1644-1912 … Qing (Ch'ing) Dynasty … Reign of the Manchus; Capital: Beijing",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 6 keySources; original: web-open"
+            }
+          ],
+          "core": false
         }
       ]
     },
@@ -5163,6 +5383,129 @@
             ],
             "gloss": "Яо — по преданию, передал престол достойному Шуню после испытаний."
           }
+        }
+      ]
+    },
+    "states": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "state-qin",
+          "name": {
+            "zh": "秦国",
+            "ru": [
+              "Цинь"
+            ],
+            "gloss": "Цинь — царство, уничтожившее шесть соперников и объединившее Китай"
+          },
+          "sources": [
+            {
+              "title": "大一统何以成为中国历史的深层底色 — 中国人民大学",
+              "url": "https://news.ruc.edu.cn/2055808566087000066.html",
+              "quote": "秦灭六国，是中国历史上最重要的事件之一。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#3/options/o1; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "古代中国：秦汉时期 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/portals/0/web/zt/gudai/detail4.html",
+              "quote": "兼并六国后，秦王嬴政自称“皇帝”，在全国范围内建立起专制主义中央集权制，推行郡县制，统一文字、货币和度量衡，开驰道、直道，筑长城，巩固国家的统一。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reuse-accepted-local: data/dossiers/dynasties.json/rulers/rul-qinshihuang; прочитано локально 2026-11-08, новая загрузка страницы не заявляется."
+            }
+          ]
+        },
+        {
+          "id": "state-lu",
+          "name": {
+            "zh": "鲁国",
+            "ru": [
+              "царство Лу"
+            ],
+            "gloss": "Лу — царство со столицей в Цюйфу, основанное в начале Западной Чжоу"
+          },
+          "sources": [
+            {
+              "title": "历经风雨的周公封地：曲阜鲁国故城 — 国家发展和改革委员会",
+              "url": "https://www.ndrc.gov.cn/xwdt/ztzl/dyhgjwhgy/202209/t20220923_1336042.html",
+              "quote": "曲阜鲁国故城是周代鲁国的都城遗址…西周初年，周武王封周公姬旦于曲阜，为“鲁国”。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#3/options/o2; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "孔子 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/243277.html",
+              "quote": "孔子（公元前551年—前479年），名丘，字仲尼。春秋鲁国人，儒家之祖。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#3/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            }
+          ],
+          "olympiad": [
+            "2018-19-mun-spb-5"
+          ]
+        },
+        {
+          "id": "state-wei",
+          "name": {
+            "zh": "卫国",
+            "ru": [
+              "Вэй"
+            ],
+            "gloss": "Вэй — царство Кан-шу; первоначальный центр находился в Чаогэ"
+          },
+          "sources": [
+            {
+              "title": "漫将斧钺观上古，封邦建国觅“康侯”——“康侯斧”题记 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_36458.shtml",
+              "quote": "康叔，在周公旦平定纣子武庚与管叔、蔡叔叛乱之后，封于殷都朝歌，为卫国之君。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#3/options/o3; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "康叔 — 鹤壁职业技术学院淇河文化研究中心",
+              "url": "https://qhwh.hbzy.edu.cn/info/1056/1200.htm",
+              "quote": "周公将原来的商（朝歌）、邶、鄘、卫四地，合成一个卫国，都城在朝歌，封其九弟康叔作为卫国的国君",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-web-open; полный текст официальной/академической страницы открыт 2026-11-08, цитата сверена с выводом web.run"
+            }
+          ]
+        },
+        {
+          "id": "preview-qi-state",
+          "name": {
+            "zh": "齐国",
+            "ru": [
+              "Ци"
+            ],
+            "gloss": "Ци — древнее царство со столицей в Линьцзы"
+          },
+          "sources": [
+            {
+              "title": "临淄区农村公路“十四五”建设 — 淄博市人民政府",
+              "url": "https://www.zibo.gov.cn/resources/public/20220608/62a0439d88f66285a034d9bb.pdf",
+              "quote": "临淄是齐国故都、国家历史文化名城。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#3/options/preview-qi-state; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+            },
+            {
+              "title": "济南市博物馆为您讲述文物背后的故事：春秋齐叔姬双耳铜盘 — 中国博物馆协会",
+              "url": "https://www.chinamuseum.org.cn/detail.html?contentId=185&id=14",
+              "quote": "齐国初封于营丘(今山东昌乐东南)，后迁至临淄(今山东省淄博市临淄区)，疆域最初只在今山东北部。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-web-search-indexed-excerpt; точная цитата прочитана в поисковом результате первичного музейного сайта 2026-11-08; open подтвердил заголовок и издателя, повторное открытие нижних строк завершилось TimeoutError"
+            }
+          ]
         }
       ]
     }

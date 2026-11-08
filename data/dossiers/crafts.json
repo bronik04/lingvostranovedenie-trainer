@@ -9330,6 +9330,129 @@
           "olympiad": []
         }
       ]
+    },
+    "garmentparts": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "garment-upper",
+          "name": {
+            "zh": "上衣",
+            "ru": [
+              "Верхняя часть одежды"
+            ],
+            "gloss": "Верхняя часть одежды — в шэньи её сшивали с нижней частью на талии"
+          },
+          "sources": [
+            {
+              "title": "隋初皇后礼服“改制”考论 — 故宫博物院院刊",
+              "url": "https://www.dpm.org.cn/journal/256095.html",
+              "quote": "“深衣制”特指与先秦古制“深衣”形制相同的基础服装样式，即上衣与下裳独立剪裁，于中腰处将二者缝合，成为“连衣裳”的经典范式。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #17 / o1"
+            },
+            {
+              "title": "《深衣》：儒家理想人格的象征 — 全国哲学社会科学工作办公室 / 毋燕燕（重庆第二师范学院）",
+              "url": "https://www.nopss.gov.cn/n1/2019/0816/c219470-31299123.html",
+              "quote": "作为中国传统服饰的一种，深衣上衣下裳相连，“被体深邃，故谓之深衣”（戴圣《礼记·深衣》），不仅代表着儒者的身份与品格，而且作为一种抽象的文化符号，象征着中华民族的精神气质与审美观念。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-text"
+            }
+          ]
+        },
+        {
+          "id": "garment-skirt",
+          "name": {
+            "zh": "裙子",
+            "ru": [
+              "Юбка"
+            ],
+            "gloss": "Юбка — у мамяньцюнь перед и спинка гладкие, а по бокам идут складки"
+          },
+          "sources": [
+            {
+              "title": "中国马面裙何以出海“圈粉” — 山东宣传网",
+              "url": "https://www.sdxc.gov.cn/whql/xcwhzx/lb/202603/t20260317_17547435.htm",
+              "quote": "马面裙是汉服体系中极具代表性的形制，其特点为前后平整、两侧打褶。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #17 / o2"
+            },
+            {
+              "title": "百折罗裙细细风——品味马面裙的古韵新声 — 新华网 / 光明日报",
+              "url": "https://www.news.cn/ci/20240528/479fa77e56804722b5bda206a13e8170/c.html",
+              "quote": "马面裙作为中国传统围裹式的裙装代表，其结构设计简约却并不简单。无论是明代的侧褶裙，或是清代的阑干裙，均在裙胁两侧捏大褶。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-text"
+            }
+          ]
+        },
+        {
+          "id": "garment-headwear",
+          "name": {
+            "zh": "头饰",
+            "ru": [
+              "Головной убор"
+            ],
+            "gloss": "Головной убор — Чжугэ Лян послал женский цзиньго Сыма И, вызывая его на бой"
+          },
+          "sources": [
+            {
+              "title": "巾幗 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=93864&q=1&word=%E5%B7%BE%E5%B9%97",
+              "quote": "古代婦女用以覆髮的頭巾和髮飾。……後用巾幗代稱女子。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #17 / keySources"
+            },
+            {
+              "title": "魏晋名流爱戴巾,苏东坡是宋代“时尚咖” — 中央纪委网站",
+              "url": "https://m.ccdi.gov.cn/content/7d/6a/53207.html",
+              "quote": "头戴纶巾的诸葛亮，用女子戴的巾对司马懿进行了一次羞辱：亮数挑战，帝不出，因遗帝巾帼妇人之饰（《晋书·宣帝纪》）。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #17 / keySources"
+            }
+          ],
+          "olympiad": [
+            "2015-16-mun-spb-6"
+          ]
+        },
+        {
+          "id": "added-waist-belt",
+          "name": {
+            "zh": "腰带",
+            "ru": [
+              "Пояс"
+            ],
+            "gloss": "Пояс — материал накладок показывал ранг владельца в эпоху Мин"
+          },
+          "sources": [
+            {
+              "title": "带板 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/239465.html",
+              "quote": "古人一般在腰中革带上钉缀带銙……其选用的材料因身份等级的不同而相异。……明代革带带板的质地就成为帝王职官品秩等级的标志之一。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #17 / added-waist-belt"
+            },
+            {
+              "title": "明代出土玉带分期与演变特征研究 — 石婷婷 / 故宫博物院院刊（2024年第9期）",
+              "url": "https://www.dpm.org.cn/journal/365168.html?_list=1",
+              "quote": "二品用犀带，三品、四品用金带，五品用银钑花带，六品、七品用银带，八品、九品用乌角带。",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-academic-full-text; direct-open-timed-out"
+            }
+          ]
+        }
+      ]
     }
   }
 }

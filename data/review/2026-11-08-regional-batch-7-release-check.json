@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-08",
+  "status": "passed",
+  "fullBank": 1269,
+  "visibleBefore": 1045,
+  "visibleAfter": 1091,
+  "newPublishedQuestions": 46,
+  "newlyEmbeddedQuestions": 20,
+  "previousAcceptedRestored": 26,
+  "currentBatchCaptionsChecked": 80,
+  "accepted20StemsKeysOptionsCaptionsExact": true,
+  "previousLearnerContentChanges": [],
+  "previousPoolChanges": [],
+  "newRowsWithTwoPrimarySources": 48,
+  "directHintErrors": 0,
+  "unresolvedRelease46CaptionHints": 0,
+  "previousFactProtectionsPreserved": true,
+  "maxFactGroupSize": 226,
+  "readingMaterials": 1091,
+  "pinyinAdditions": 9,
+  "standaloneBaselineFindings": [
+    "literature/literature-q66: текст называет ответ вопроса literature/literature-q114: ['诗歌']",
+    "nature/nature-q140: текст называет ответ вопроса modern-china/modern-china-q26: ['黄金']"
+  ],
+  "authorizedPolicyTestUpdates": [
+    "test/test_merges.py",
+    "test/test_site_bank.py",
+    "test/ui.test.mjs"
+  ],
+  "protectedSourceCodeChanges": [],
+  "permanentExclusionsRetained": 8,
+  "htmlSha256": "59ef5a0648cabbb88f7d42ed049a809345d69e7f3e25e0a9d298317f6b3eba9a",
+  "publicationAuthorized": true,
+  "errors": []
+}

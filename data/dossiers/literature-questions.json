@@ -2019,5 +2019,35 @@
     },
     "id": "literature-q114",
     "exclude": []
+  },
+  {
+    "id": "literature-q115",
+    "embeds": "2020-21-mun-spb-4",
+    "status": "accepted",
+    "fact": {
+      "table": "authors",
+      "row": "lit-a-sushi",
+      "ask": "moonverseauthor"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
+    }
+  },
+  {
+    "id": "literature-q116",
+    "embeds": "2020-21-mun-spb-1",
+    "status": "accepted",
+    "fact": {
+      "table": "works",
+      "row": "lit-w-lunyu",
+      "ask": "quotationbook"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
+    }
   }
 ]
