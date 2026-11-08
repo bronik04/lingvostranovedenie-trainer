@@ -1,0 +1,1080 @@
+{
+  "reviewId": "regional-2026-11-08-batch-5",
+  "date": "2026-11-08",
+  "state": "16-locally-accepted-release-only-other-15",
+  "publicationAuthorized": false,
+  "selectedCount": 16,
+  "acceptedEmbeddings": 16,
+  "draftEmbeddings": 0,
+  "visibleCountBefore": 1030,
+  "expectedVisibleCountAfter": 1030,
+  "fullBankCount": 1269,
+  "approvedManifestHash": "dd2aab6c3ccd13bdfa44d4d14ff731b2a317e7f78972030fb7c28dea5fd0dffa",
+  "excludedFromCurrentBatch": [
+    "2025-26-shk-mosobl-16",
+    "2021-22-mun-amur-7",
+    "2025-26-mun-tat-51",
+    "2025-26-mun-spb-9"
+  ],
+  "items": [
+    {
+      "reviewNumber": 1,
+      "questionId": "2018-19-mun-lenobl-49",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q134",
+      "status": "accepted",
+      "fact": {
+        "table": "cities",
+        "row": "city-shanghai",
+        "ask": "pearlcity"
+      },
+      "optionRows": {
+        "o1": "city-beijing",
+        "o2": "city-jinan",
+        "o3": "city-shanghai",
+        "o4": "city-hongkong"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 2,
+      "questionId": "2023-24-shk-mosobl-2",
+      "dossier": "cinema",
+      "dossierQuestion": "cinema-q36",
+      "status": "accepted",
+      "fact": {
+        "table": "persons",
+        "row": "cin-person-zhang-yimou",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "cin-person-zhang-yimou",
+        "o2": "cin-person-mo-yan",
+        "o3": "cin-person-john-woo",
+        "o4": "cin-person-ang-lee"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 3,
+      "questionId": "2019-20-mun-kgd-2",
+      "dossier": "modern-china",
+      "dossierQuestion": "modern-china-q25",
+      "status": "accepted",
+      "fact": {
+        "table": "resources",
+        "row": "res-coal",
+        "ask": "energyname"
+      },
+      "optionRows": {
+        "o1": "res-coal",
+        "o2": "res-oil",
+        "o3": "res-naturalgas",
+        "o4": "res-nonferrous"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 4,
+      "questionId": "2021-22-mun-amur-4",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q135",
+      "status": "accepted",
+      "fact": {
+        "table": "provinces",
+        "row": "prov-liaoning",
+        "ask": "russiaborderregionname"
+      },
+      "optionRows": {
+        "o1": "prov-xinjiang",
+        "o2": "prov-jilin",
+        "o3": "prov-heilongjiang",
+        "o4": "prov-liaoning"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 5,
+      "questionId": "2020-21-mun-mosobl-46",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q136",
+      "status": "accepted",
+      "fact": {
+        "table": "cities",
+        "row": "city-hangzhou",
+        "ask": "leifengcity"
+      },
+      "optionRows": {
+        "o1": "city-beijing",
+        "o2": "city-luoyang",
+        "o3": "city-xian",
+        "o4": "city-hangzhou"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 6,
+      "questionId": "2021-22-mun-volog-8",
+      "dossier": "modern-china",
+      "dossierQuestion": "modern-china-q26",
+      "status": "accepted",
+      "fact": {
+        "table": "resources",
+        "row": "res-gold",
+        "ask": "miningname"
+      },
+      "optionRows": {
+        "o1": "res-gold",
+        "o2": "res-silver",
+        "o3": "res-oil",
+        "o4": "res-ironore"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 7,
+      "questionId": "2021-22-mun-mosobl-59",
+      "dossier": "nature",
+      "dossierQuestion": "nature-q165",
+      "status": "accepted",
+      "fact": {
+        "table": "scenicplaces",
+        "row": "sp-huangshan",
+        "ask": "welcomingpineplace"
+      },
+      "optionRows": {
+        "o1": "sp-huangshan",
+        "o2": "sp-emeishan",
+        "o3": "sp-leshan",
+        "o4": "sp-wuyishan"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 8,
+      "questionId": "2020-21-mun-mosobl-54",
+      "dossier": "nature",
+      "dossierQuestion": "nature-q166",
+      "status": "accepted",
+      "fact": {
+        "table": "scenicplaces",
+        "row": "sp-xihu",
+        "ask": "whitesnakeplace"
+      },
+      "optionRows": {
+        "o1": "sp-summer-palace",
+        "o2": "sp-xihu",
+        "o3": "sp-kunminghu",
+        "o4": "sp-taishan"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 9,
+      "questionId": "2019-20-mun-mosobl-52",
+      "dossier": "modern-history",
+      "dossierQuestion": "modern-history-q125",
+      "status": "accepted",
+      "fact": {
+        "table": "countries",
+        "row": "country-pt",
+        "ask": "macaoname"
+      },
+      "optionRows": {
+        "o1": "country-jp",
+        "o2": "country-ph",
+        "o3": "country-pt",
+        "o4": "country-uk"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 10,
+      "questionId": "2024-25-mun-klg-8",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q137",
+      "status": "accepted",
+      "fact": {
+        "table": "cities",
+        "row": "city-ru-saint-petersburg",
+        "ask": "shanghaisistercity"
+      },
+      "optionRows": {
+        "o1": "city-ru-moscow",
+        "o2": "city-ru-saint-petersburg",
+        "o3": "city-ru-sochi",
+        "o4": "city-ru-blagoveshchensk"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 13,
+      "questionId": "2024-25-mun-mosobl-9",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q113",
+      "status": "accepted",
+      "fact": {
+        "table": "authors",
+        "row": "lit-a-ru-tolstoy",
+        "ask": "philosophyauthor"
+      },
+      "optionRows": {
+        "o1": "lit-a-ru-dostoevsky",
+        "o2": "lit-a-ru-lermontov",
+        "o3": "lit-a-ru-tolstoy",
+        "o4": "lit-a-ru-pushkin"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 15,
+      "questionId": "2022-23-mun-tat-6",
+      "dossier": "modern-history",
+      "dossierQuestion": "modern-history-q126",
+      "status": "accepted",
+      "fact": {
+        "table": "milestones",
+        "row": "mile-anthem-constitution2004",
+        "ask": "anthemYear"
+      },
+      "optionRows": {
+        "o1": "mile-anthem-provisional1949",
+        "o2": "mile-educationlaw1986",
+        "o3": "mile-legislationlaw2000",
+        "o4": "mile-anthem-constitution2004"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 16,
+      "questionId": "2025-26-mun-ryaz-5",
+      "dossier": "modern-history",
+      "dossierQuestion": "modern-history-q127",
+      "status": "accepted",
+      "fact": {
+        "table": "treaties",
+        "row": "tr-ru-2001",
+        "ask": "goodneighborYear"
+      },
+      "optionRows": {
+        "o1": "tr-cnussr-east1991",
+        "o2": "tr-ru-2001",
+        "o3": "tr-cnru-declaration2011",
+        "o4": "tr-cnru-declaration2021"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 18,
+      "questionId": "2025-26-mun-kem-7",
+      "dossier": "modern-history",
+      "dossierQuestion": "modern-history-q128",
+      "status": "accepted",
+      "fact": {
+        "table": "events",
+        "row": "ev-ru-ermak-siberia",
+        "ask": "siberiaCentury"
+      },
+      "optionRows": {
+        "o1": "ev-ru-ugra1480",
+        "o2": "ev-ru-ermak-siberia",
+        "o3": "ev-ru-dezhnev1648",
+        "o4": "ev-ru-kamchatka1"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 19,
+      "questionId": "2023-24-mun-spb-9",
+      "dossier": "literature",
+      "dossierQuestion": "literature-q114",
+      "status": "accepted",
+      "fact": {
+        "table": "literaryforms",
+        "row": "lit-form-poetry",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "lit-form-fiction",
+        "o2": "lit-form-poetry",
+        "o3": "lit-form-prose",
+        "o4": "lit-form-drama"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 20,
+      "questionId": "2024-25-mun-krsk-6",
+      "dossier": "crafts",
+      "dossierQuestion": "crafts-q142",
+      "status": "accepted",
+      "fact": {
+        "table": "materials",
+        "row": "material-nephrite",
+        "ask": "jaderitualmaterial"
+      },
+      "optionRows": {
+        "o1": "material-jasper",
+        "o2": "material-rockcrystal",
+        "o3": "material-nephrite",
+        "o4": "material-quartz"
+      },
+      "exclude": []
+    }
+  ],
+  "changedCells": [
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-beijing",
+      "column": "pearlcity",
+      "zh": "北京",
+      "gloss": "Пекин — здесь находится Центральная телебашня высотой 405 м"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-beijing",
+      "column": "leifengcity",
+      "zh": "北京",
+      "gloss": "Пекин — Белая пагода парка Бэйхай стала одним из символов города"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-jinan",
+      "column": "pearlcity",
+      "zh": "济南",
+      "gloss": "Цзинань — центр Шаньдуна, известный как «город родников»"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-shanghai",
+      "column": "pearlcity",
+      "zh": "上海",
+      "gloss": "Шанхай — «Восточная жемчужина» стоит в Пудуне; высота башни — 468 м"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-hongkong",
+      "column": "pearlcity",
+      "zh": "香港",
+      "gloss": "Гонконг — у устья Чжуцзяна; включает Коулун и Новые территории"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-xinjiang",
+      "column": "russiaborderregionname",
+      "zh": "新疆维吾尔自治区",
+      "gloss": "Синьцзян — на его участке общая граница с Россией имеет длину около 55 км"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-jilin",
+      "column": "russiaborderregionname",
+      "zh": "吉林",
+      "gloss": "Цзилинь — на востоке граничит с Россией, на юго-востоке — с КНДР"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-heilongjiang",
+      "column": "russiaborderregionname",
+      "zh": "黑龙江",
+      "gloss": "Хэйлунцзян — Россия находится за пограничными реками на севере и востоке"
+    },
+    {
+      "dossier": "provinces",
+      "table": "provinces",
+      "row": "prov-liaoning",
+      "column": "russiaborderregionname",
+      "zh": "辽宁",
+      "gloss": "Ляонин — на юге омывается Жёлтым морем и Бохайским заливом"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-luoyang",
+      "column": "leifengcity",
+      "zh": "洛阳",
+      "gloss": "Лоян — здесь находятся буддийские пещерные храмы Лунмэнь"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-xian",
+      "column": "leifengcity",
+      "zh": "西安",
+      "gloss": "Сиань — Большая пагода диких гусей построена для сутр Сюаньцзана"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-hangzhou",
+      "column": "leifengcity",
+      "zh": "杭州",
+      "gloss": "Ханчжоу — новую пагоду Лэйфэн возвели в 2002 году, сохранив внутри руины старой"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-moscow",
+      "column": "shanghaisistercity",
+      "zh": "莫斯科",
+      "gloss": "Москва — дружественные партнёрские связи с Пекином установлены в 1995 году"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-saint-petersburg",
+      "column": "shanghaisistercity",
+      "zh": "圣彼得堡",
+      "gloss": "Санкт-Петербург — побратимские связи с Шанхаем установлены в 1988 году"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-sochi",
+      "column": "shanghaisistercity",
+      "zh": "索契",
+      "gloss": "Сочи — его китайский побратим Вэйхай; города связаны с 1996 года"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-ru-blagoveshchensk",
+      "column": "shanghaisistercity",
+      "zh": "布拉戈维申斯克",
+      "gloss": "Благовещенск — побратим Хэйхэ; соглашение заключено в 2009 году"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "countries",
+      "row": "country-jp",
+      "column": "macaoname",
+      "zh": "日本",
+      "gloss": "Япония — торговый партнёр Макао на маршрутах между Китаем и Европой."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "countries",
+      "row": "country-uk",
+      "column": "macaoname",
+      "zh": "英国",
+      "gloss": "Британия — получила остров Гонконг по Нанкинскому договору 1842 года."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "treaties",
+      "row": "tr-ru-2001",
+      "column": "goodneighborYear",
+      "zh": "2001年",
+      "gloss": "2001 год — договор подписали Цзян Цзэминь и Владимир Путин"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-ru-dostoevsky",
+      "column": "philosophyauthor",
+      "zh": "费奥多尔·陀思妥耶夫斯基",
+      "gloss": "Достоевский — «Идиот» и «Братья Карамазовы» входят в его «великое пятикнижие»"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-ru-lermontov",
+      "column": "philosophyauthor",
+      "zh": "米哈伊尔·列尔蒙托夫",
+      "gloss": "Михаил Лермонтов — поэт, автор «Паруса» и «Смерти поэта»"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-ru-tolstoy",
+      "column": "philosophyauthor",
+      "zh": "列夫·托尔斯泰",
+      "gloss": "Лев Толстой — в «Китайской мудрости» (1884) излагал учения древних философов"
+    },
+    {
+      "dossier": "literature",
+      "table": "authors",
+      "row": "lit-a-ru-pushkin",
+      "column": "philosophyauthor",
+      "zh": "亚历山大·普希金",
+      "gloss": "Александр Пушкин — автор романа в стихах «Евгений Онегин»"
+    }
+  ],
+  "newRows": [
+    {
+      "dossier": "nature",
+      "table": "scenicplaces",
+      "row": "sp-huangshan"
+    },
+    {
+      "dossier": "nature",
+      "table": "scenicplaces",
+      "row": "sp-emeishan"
+    },
+    {
+      "dossier": "nature",
+      "table": "scenicplaces",
+      "row": "sp-leshan"
+    },
+    {
+      "dossier": "nature",
+      "table": "scenicplaces",
+      "row": "sp-wuyishan"
+    },
+    {
+      "dossier": "nature",
+      "table": "scenicplaces",
+      "row": "sp-summer-palace"
+    },
+    {
+      "dossier": "nature",
+      "table": "scenicplaces",
+      "row": "sp-xihu"
+    },
+    {
+      "dossier": "nature",
+      "table": "scenicplaces",
+      "row": "sp-kunminghu"
+    },
+    {
+      "dossier": "nature",
+      "table": "scenicplaces",
+      "row": "sp-taishan"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "resources",
+      "row": "res-coal"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "resources",
+      "row": "res-oil"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "resources",
+      "row": "res-naturalgas"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "resources",
+      "row": "res-nonferrous"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "resources",
+      "row": "res-gold"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "resources",
+      "row": "res-silver"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "resources",
+      "row": "res-ironore"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "countries",
+      "row": "country-ph"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "countries",
+      "row": "country-pt"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-anthem-provisional1949"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-educationlaw1986"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-legislationlaw2000"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "milestones",
+      "row": "mile-anthem-constitution2004"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "treaties",
+      "row": "tr-cnussr-east1991"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "treaties",
+      "row": "tr-cnru-declaration2011"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "treaties",
+      "row": "tr-cnru-declaration2021"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-ugra1480"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-ermak-siberia"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-dezhnev1648"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-kamchatka1"
+    },
+    {
+      "dossier": "cinema",
+      "table": "persons",
+      "row": "cin-person-zhang-yimou"
+    },
+    {
+      "dossier": "cinema",
+      "table": "persons",
+      "row": "cin-person-mo-yan"
+    },
+    {
+      "dossier": "cinema",
+      "table": "persons",
+      "row": "cin-person-john-woo"
+    },
+    {
+      "dossier": "cinema",
+      "table": "persons",
+      "row": "cin-person-ang-lee"
+    },
+    {
+      "dossier": "literature",
+      "table": "literaryforms",
+      "row": "lit-form-fiction"
+    },
+    {
+      "dossier": "literature",
+      "table": "literaryforms",
+      "row": "lit-form-poetry"
+    },
+    {
+      "dossier": "literature",
+      "table": "literaryforms",
+      "row": "lit-form-prose"
+    },
+    {
+      "dossier": "literature",
+      "table": "literaryforms",
+      "row": "lit-form-drama"
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-jasper"
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-rockcrystal"
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-nephrite"
+    },
+    {
+      "dossier": "crafts",
+      "table": "materials",
+      "row": "material-quartz"
+    }
+  ],
+  "identityRefs": [
+    {
+      "file": "data/dossiers/cinema.json",
+      "table": "works",
+      "row": "cin-cn-red-sorghum",
+      "cell": "director",
+      "ref": "cinema/persons/cin-person-zhang-yimou",
+      "reason": "Текст director точно равен name канонической строки; это тот же человек."
+    },
+    {
+      "file": "data/dossiers/cinema.json",
+      "table": "works",
+      "row": "cin-cn-crouching-tiger",
+      "cell": "director",
+      "ref": "cinema/persons/cin-person-ang-lee",
+      "reason": "Текст director точно равен name канонической строки; это тот же человек."
+    },
+    {
+      "file": "data/dossiers/cinema.json",
+      "table": "works",
+      "row": "cin-cn-to-live",
+      "cell": "director",
+      "ref": "cinema/persons/cin-person-zhang-yimou",
+      "reason": "Текст director точно равен name канонической строки; это тот же человек."
+    },
+    {
+      "file": "data/dossiers/cinema.json",
+      "table": "works",
+      "row": "cin-cn-hero",
+      "cell": "director",
+      "ref": "cinema/persons/cin-person-zhang-yimou",
+      "reason": "Текст director точно равен name канонической строки; это тот же человек."
+    },
+    {
+      "file": "data/dossiers/cinema.json",
+      "table": "works",
+      "row": "cin-cn-flying-daggers",
+      "cell": "director",
+      "ref": "cinema/persons/cin-person-zhang-yimou",
+      "reason": "Текст director точно равен name канонической строки; это тот же человек."
+    }
+  ],
+  "preservedPreviousPools": [
+    {
+      "dossier": "modern-history",
+      "question": "modern-history-q108",
+      "excludedNewRows": [
+        "tr-cnussr-east1991",
+        "tr-cnru-declaration2011",
+        "tr-cnru-declaration2021"
+      ]
+    },
+    {
+      "dossier": "modern-history",
+      "question": "modern-history-q119",
+      "excludedNewRows": [
+        "country-ph",
+        "country-pt"
+      ]
+    }
+  ],
+  "explanationCorrections": {
+    "3": "В 2025 году уголь (煤炭) обеспечивал 51,4 % общего энергопотребления КНР — наибольшую долю среди его компонентов. Это показатель энергопотребления, а не выработки электричества.",
+    "6": "По оценке USGS за 2025 год Китай был крупнейшим в мире добытчиком золота (黄金): около 380 тонн. В сопоставлении железной руды используется масса пригодной руды, а не масса сырой породы.",
+    "7": "«Сосна, приветствующая гостей» (迎客松) растёт в районе Юйпин в горах Хуаншань (黄山) провинции Аньхой. С 1981 года за ней ухаживают специальные хранители.",
+    "8": "С озером Сиху (西湖) в Ханчжоу связан один из центральных эпизодов легенды о Белой змее: встреча Белой змеи и Сюй Сяня у Сломанного моста. У легенды есть и другие места действия.",
+    "9": "В середине XVI века португальские купцы основали торговое поселение в Макао (Аомэне). Официальная история Макао описывает разрешение властей Гуандуна, а не военный захват в 1550-х годах.",
+    "13": "Лев Толстой (列夫·托尔斯泰) увлекался китайской философией и редактировал русский перевод «Дао дэ цзин», выполненный Д. П. Конисси. Его работа с «Лунь юем» включала переводы и пересказы.",
+    "16": "Договор о добрососедстве, дружбе и сотрудничестве (《中俄睦邻友好合作条约》) подписали Цзян Цзэминь и Владимир Путин в Москве 16 июля 2001 года (2001年).",
+    "20": "Нефрит (软玉) использовали в Китае для ритуальных предметов и наделяли защитной символикой. Это описание культурных представлений, а не физических свойств камня. Единственность такого ответа при данной широкой формулировке требует уточнения."
+  },
+  "sourceReports": [
+    "2026-11-08-regional-batch-5-embedding-sources.json"
+  ],
+  "authorApproval": {
+    "date": "2026-11-08",
+    "acceptedReviewNumbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      13,
+      15,
+      16,
+      18,
+      19,
+      20
+    ],
+    "instruction": "Эти формулировки принимаем. Все 16 вопросов встраивай в досье, проверь подписи и взаимные подсказки, пока не публикуй.",
+    "reportPreference": "Покажи только изменения и найденные проблемы. Пока не публикуй."
+  },
+  "publicationBlockers": [],
+  "metadataClarifications": [
+    {
+      "dossier": "modern-china",
+      "table": "resources",
+      "row": "res-gold",
+      "column": "miningname",
+      "oldRu": [
+        "Золото"
+      ],
+      "newRu": [
+        "золото (металл)"
+      ],
+      "reason": "Уточнение служебного поискового имени без изменения китайского варианта и принятой подписи; золото-металл не золотая награда, XVI век не XVIII."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-ugra1480",
+      "column": "siberiaCentury",
+      "oldRu": [
+        "XV век"
+      ],
+      "newRu": [
+        "пятнадцатый век"
+      ],
+      "reason": "Уточнение служебного поискового имени без изменения китайского варианта и принятой подписи; золото-металл не золотая награда, XVI век не XVIII."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-ermak-siberia",
+      "column": "siberiaCentury",
+      "oldRu": [
+        "XVI век"
+      ],
+      "newRu": [
+        "шестнадцатый век"
+      ],
+      "reason": "Уточнение служебного поискового имени без изменения китайского варианта и принятой подписи; золото-металл не золотая награда, XVI век не XVIII."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-dezhnev1648",
+      "column": "siberiaCentury",
+      "oldRu": [
+        "XVII век"
+      ],
+      "newRu": [
+        "семнадцатый век"
+      ],
+      "reason": "Уточнение служебного поискового имени без изменения китайского варианта и принятой подписи; золото-металл не золотая награда, XVI век не XVIII."
+    },
+    {
+      "dossier": "modern-history",
+      "table": "events",
+      "row": "ev-ru-kamchatka1",
+      "column": "siberiaCentury",
+      "oldRu": [
+        "XVIII век"
+      ],
+      "newRu": [
+        "восемнадцатый век"
+      ],
+      "reason": "Уточнение служебного поискового имени без изменения китайского варианта и принятой подписи; золото-металл не золотая награда, XVI век не XVIII."
+    }
+  ],
+  "localVisibilityGuards": [
+    {
+      "questionId": "2019-20-mun-kgd-2",
+      "reviewNumber": 3,
+      "reason": "Прежний showEmbeddedIn автоматически открывает новые встраивания modern-china; отдельное скрытие сохраняет ровно 1030 доступных вопросов без изменения прежних разрешений."
+    },
+    {
+      "questionId": "2021-22-mun-volog-8",
+      "reviewNumber": 6,
+      "reason": "Прежний showEmbeddedIn автоматически открывает новые встраивания modern-china; отдельное скрытие сохраняет ровно 1030 доступных вопросов без изменения прежних разрешений."
+    }
+  ],
+  "pinyinAdditions": {
+    "16世纪中叶，哪个国家的商人在澳门建立了贸易据点？": "16 shì jì zhōng yè, nǎ ge guó jiā de shāng rén zài ào mén jiàn lì le mào yì jù diǎn?",
+    "1991年": "1991 nián",
+    "2001年": "2001 nián",
+    "2011年": "2011 nián",
+    "2021年": "2021 nián",
+    "2025年，哪种矿产资源在中国能源消费总量中所占比重最大？": "2025 nián, nǎ zhǒng kuàng chǎn zī yuán zài zhōng guó néng yuán xiāo fèi zǒng liàng zhōng suǒ zhàn bǐ zhòng zuì dà?"
+  },
+  "factGroupCanonicalIdPolicy": "При объединении сохраняется имя самой крупной прежней группы; все прежние совместные запреты сохранены.",
+  "validation": {
+    "reviewId": "regional-2026-11-08-batch-5",
+    "status": "passed",
+    "fullBank": 1269,
+    "visibleBefore": 1030,
+    "visibleAfter": 1030,
+    "selected": 16,
+    "acceptedEmbeddings": 15,
+    "preparedDraftEmbeddings": 1,
+    "checkedOptionsAndCaptions": 64,
+    "acceptedStemsKeysOptionsCaptionsExact": true,
+    "previousLearnerFacingChanges": [],
+    "previousPoolChanges": [],
+    "newRowsWithTwoQuotedPrimarySources": 40,
+    "maxCaptionLength": 83,
+    "previousReadingLinksUnchanged": true,
+    "previousPinyinEntriesUnchanged": true,
+    "selectedPinyinComplete": true,
+    "pinyinAdditions": 6,
+    "standaloneDossierSourceFormLimitations": [
+      "literature/literature-q66: текст называет ответ вопроса literature/literature-q114: ['诗歌']",
+      "nature/nature-q140: текст называет ответ вопроса modern-china/modern-china-q26: ['黄金']"
+    ],
+    "standaloneDossierLimitationReason": "CLI compares original dossier text before accepted editorial overlay; both quoted Chinese strings absent from final learner-facing bank. These are not unresolved final-bank hints.",
+    "directHintErrors": 0,
+    "unresolvedNewHintCandidates": 0,
+    "allPreviousFactProtectionsPreserved": true,
+    "maxFactGroupSize": 170,
+    "siteVisibilityGuardsAdded": [
+      "2019-20-mun-kgd-2",
+      "2021-22-mun-volog-8"
+    ],
+    "approvedManifestCanonicalSha256ExcludingHashField": "dd2aab6c3ccd13bdfa44d4d14ff731b2a317e7f78972030fb7c28dea5fd0dffa",
+    "approvedManifestFileSha256": "3486a5eee5fb7c48b845145e22093db9c1531b4f0c03116432675ddf942004f3",
+    "htmlSha256": "29610bbbd57c1238fed6e49dd5551eb41c7be8d2195aec21776165e5062b0a1c",
+    "publicationAuthorized": false,
+    "deploymentRun": false,
+    "contentBlockers": [
+      {
+        "reviewNumber": 20,
+        "questionId": "2024-25-mun-krsk-6",
+        "reason": "Единственность ответа в широкой формулировке не установлена; защитные украшения известны и из горного хрусталя. Нужен отдельный выбор автора после рассмотрения источников."
+      }
+    ],
+    "errors": [],
+    "pythonTests": 494,
+    "nodeTests": 172,
+    "skipped": 0,
+    "browser": {
+      "scope": "Temporary browser-only preview of 16 hidden questions; site settings and HTML not changed by preview",
+      "publicationAuthorized": false,
+      "questions": 16,
+      "cards": 128,
+      "options": 512,
+      "viewports": [
+        1280,
+        375
+      ],
+      "pinyin": [
+        false,
+        true
+      ],
+      "answers": [
+        "correct",
+        "incorrect"
+      ],
+      "pageErrors": [],
+      "results": [
+        {
+          "viewport": 1280,
+          "pinyin": false,
+          "correctAnswer": true,
+          "cards": 16
+        },
+        {
+          "viewport": 1280,
+          "pinyin": false,
+          "correctAnswer": false,
+          "cards": 16
+        },
+        {
+          "viewport": 1280,
+          "pinyin": true,
+          "correctAnswer": true,
+          "cards": 16
+        },
+        {
+          "viewport": 1280,
+          "pinyin": true,
+          "correctAnswer": false,
+          "cards": 16
+        },
+        {
+          "viewport": 375,
+          "pinyin": false,
+          "correctAnswer": true,
+          "cards": 16
+        },
+        {
+          "viewport": 375,
+          "pinyin": false,
+          "correctAnswer": false,
+          "cards": 16
+        },
+        {
+          "viewport": 375,
+          "pinyin": true,
+          "correctAnswer": true,
+          "cards": 16
+        },
+        {
+          "viewport": 375,
+          "pinyin": true,
+          "correctAnswer": false,
+          "cards": 16
+        }
+      ],
+      "screenshots": [
+        "/tmp/lingvo-batch5-mobile.png"
+      ],
+      "status": "passed"
+    },
+    "testCommands": [
+      "python3 -m unittest discover -s test -t .",
+      "node --test test/*.test.mjs",
+      "node /tmp/lingvo-batch5-embedding-browser.mjs"
+    ],
+    "testsWeakened": false,
+    "independentReview": "passed-for-15-local-embeds-with-20-draft-content-blocker",
+    "independentReviewReport": "2026-11-08-regional-batch-5-embedding-review.md",
+    "scope": "historical-local-check-before-author-acceptance-of-q20"
+  },
+  "currentManifestHash": "3c91e017e9fd323481a8450258b3b4e0c16403780450d67d6789312fbffe9398",
+  "hintTriage": "2026-11-08-regional-batch-5-hint-triage.json",
+  "independentReview": "2026-11-08-regional-batch-5-embedding-review.md",
+  "acceptedButUnpublished": [
+    "2024-25-mun-krsk-6"
+  ],
+  "releaseAuthorization": {
+    "date": "2026-11-08",
+    "authorized": true,
+    "selectedIds": [
+      "2018-19-mun-lenobl-49",
+      "2023-24-shk-mosobl-2",
+      "2019-20-mun-kgd-2",
+      "2021-22-mun-amur-4",
+      "2020-21-mun-mosobl-46",
+      "2021-22-mun-volog-8",
+      "2021-22-mun-mosobl-59",
+      "2020-21-mun-mosobl-54",
+      "2019-20-mun-mosobl-52",
+      "2024-25-mun-klg-8",
+      "2024-25-mun-mosobl-9",
+      "2022-23-mun-tat-6",
+      "2025-26-mun-ryaz-5",
+      "2025-26-mun-kem-7",
+      "2023-24-mun-spb-9"
+    ],
+    "selectedReviewNumbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      13,
+      15,
+      16,
+      18,
+      19
+    ],
+    "excludedAcceptedIds": [
+      "2024-25-mun-krsk-6"
+    ],
+    "instruction": "Остальные 15 вопросов публикуй на сайте."
+  },
+  "releaseApplication": "2026-11-08-regional-batch-5-release-application.json"
+}

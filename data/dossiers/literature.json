@@ -16,7 +16,8 @@
         "poetryname": "zh",
         "fullname": "zh",
         "verseauthor": "zh",
-        "prizeauthor": "zh"
+        "prizeauthor": "zh",
+        "philosophyauthor": "zh"
       },
       "sides": [
         "work",
@@ -2813,7 +2814,11 @@
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "philosophyauthor": {
+            "zh": "亚历山大·普希金",
+            "gloss": "Александр Пушкин — автор романа в стихах «Евгений Онегин»"
+          }
         },
         {
           "id": "lit-a-ru-lermontov",
@@ -2900,6 +2905,10 @@
               "Михаил Лермонтов"
             ],
             "gloss": "Михаил Лермонтов — автор поэм «Демон» и «Мцыри» и романа «Герой нашего времени»"
+          },
+          "philosophyauthor": {
+            "zh": "米哈伊尔·列尔蒙托夫",
+            "gloss": "Михаил Лермонтов — поэт, автор «Паруса» и «Смерти поэта»"
           }
         },
         {
@@ -3011,9 +3020,36 @@
               "quote": "созданный им роман-эпопея «Война и мир» стал образцом жанра",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Китайская мудрость. 1884 — официальный портал Льва Толстого",
+              "url": "https://tolstoy.ru/creativity/journalismguide/100.php",
+              "quote": "«Китайская мудрость» объединяет три коротких статьи",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-page-opened",
+              "checkedAt": "2026-11-08",
+              "additionalKeyEvidence": {
+                "title": "Китай и Лев Толстой — Институт Дальнего Востока РАН, академическое издание",
+                "url": "https://lk.iccaras.ru/assets/components/dsgfileupload/files/book-2018-about_tolstoi.pdf",
+                "quote": "«Суждения и беседы» («Лунь юй») в переводах и пересказах Л.Н. Толстого",
+                "authority": "academic",
+                "verificationMethod": "fresh-primary-indexed-excerpt",
+                "checkedAt": "2026-11-08"
+              },
+              "provenance": "accepted_batch5_caption"
+            },
+            {
+              "title": "Китай и Лев Толстой — Институт Дальнего Востока РАН, академическое издание",
+              "url": "https://lk.iccaras.ru/assets/components/dsgfileupload/files/book-2018-about_tolstoi.pdf",
+              "quote": "«Суждения и беседы» («Лунь юй») в переводах и пересказах Л.Н. Толстого",
+              "authority": "academic",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
             }
           ],
-          "olympiad": [],
+          "olympiad": [
+            "2024-25-mun-mosobl-9"
+          ],
           "core": true,
           "fullname": {
             "zh": "列夫·托尔斯泰",
@@ -3021,6 +3057,10 @@
               "Лев Толстой"
             ],
             "gloss": "Лев Толстой — автор романа-эпопеи «Война и мир»"
+          },
+          "philosophyauthor": {
+            "zh": "列夫·托尔斯泰",
+            "gloss": "Лев Толстой — в «Китайской мудрости» (1884) излагал учения древних философов"
           }
         },
         {
@@ -3093,7 +3133,11 @@
           "core": true,
           "skipSides": [
             "title"
-          ]
+          ],
+          "philosophyauthor": {
+            "zh": "费奥多尔·陀思妥耶夫斯基",
+            "gloss": "Достоевский — «Идиот» и «Братья Карамазовы» входят в его «великое пятикнижие»"
+          }
         },
         {
           "id": "lit-a-ru-chekhov",
@@ -8275,6 +8319,132 @@
             ],
             "gloss": "«Мышиный помёт» — образ человека, портящего общее дело, из пословицы о каше."
           }
+        }
+      ]
+    },
+    "literaryforms": {
+      "columns": {
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "lit-form-fiction",
+          "name": {
+            "zh": "小说",
+            "gloss": "Сяошо — повествовательная проза; пример — роман «Троецарствие»"
+          },
+          "sources": [
+            {
+              "url": "https://id.china-embassy.gov.cn/chn/zggk/zgxz/xzwhys/200404/t20040421_2344862.htm",
+              "title": "中国驻印度尼西亚使馆 — 文学",
+              "quote": "罗贯中的《三国演义》、施耐庵的《水浒传》、吴承恩的《西游记》和曹雪芹的《红楼梦》四部长篇小说",
+              "authority": "official",
+              "verificationMethod": "browsed_full_page",
+              "checkedAt": "2026-11-08",
+              "provenance": "accepted_batch5_caption"
+            },
+            {
+              "title": "《三国演义》的日本译传：“三国热”经久不衰 — 中国社会科学网",
+              "url": "https://www.cssn.cn/skgz/bwyc/202405/t20240511_5750645.shtml",
+              "quote": "《三国演义》是中国文学史上第一部章回小说，是历史演义小说的开山之作，明清时期甚至有“第一才子书”之称。作为中国四大名著之一，《三国演义》在国内家喻户晓",
+              "checkedAt": "2026-10-17",
+              "authority": "academic",
+              "provenance": "reused_accepted_dossier",
+              "reusedFrom": "data/dossiers/literature.json / works/lit-w-sanguoyanyi / sources[0]",
+              "freshPageVerification": false
+            }
+          ],
+          "olympiad": []
+        },
+        {
+          "id": "lit-form-poetry",
+          "name": {
+            "zh": "诗歌",
+            "gloss": "Поэзия — древние китайские стихи были связаны с музыкой и танцем"
+          },
+          "sources": [
+            {
+              "url": "https://www.ccc-paris.org/zh/%E5%8F%91%E7%8E%B0%E4%B8%AD%E5%9B%BD/%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6%E5%8F%B2/",
+              "title": "巴黎中国文化中心 — 中国文学史",
+              "quote": "中国最初的诗歌是和音乐、舞蹈结合在一起",
+              "authority": "official",
+              "verificationMethod": "browsed_full_page",
+              "checkedAt": "2026-11-08",
+              "provenance": "accepted_batch5_caption"
+            },
+            {
+              "url": "https://ipkent.edu.my/document/pskent/pskent18/modul/bcn/BCN3103.pdf",
+              "title": "Institut Pendidikan Guru, Kementerian Pendidikan Malaysia — BCN3103 诗歌, печатная с. 1 / PDF с. 12",
+              "quote": "中国诗歌的历史源远流长，是中国文学史上\n产生最早也是成熟最早的文学形式。",
+              "authority": "academic",
+              "verificationMethod": "browsed_full_page",
+              "checkedAt": "2026-11-08",
+              "page": 12,
+              "quoteFormatting": "Перенос строки из извлечённого PDF сохранён."
+            }
+          ],
+          "olympiad": [
+            "2023-24-mun-spb-9"
+          ]
+        },
+        {
+          "id": "lit-form-prose",
+          "name": {
+            "zh": "散文",
+            "gloss": "Саньвэнь — проза; в древности она объединяла литературу, историю и философию"
+          },
+          "sources": [
+            {
+              "url": "https://www.ccc-paris.org/zh/%E5%8F%91%E7%8E%B0%E4%B8%AD%E5%9B%BD/%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6%E5%8F%B2/",
+              "title": "巴黎中国文化中心 — 中国文学史",
+              "quote": "所谓文史哲不分，是就散文这个领域而言",
+              "authority": "official",
+              "verificationMethod": "browsed_full_page",
+              "checkedAt": "2026-11-08",
+              "provenance": "accepted_batch5_caption"
+            },
+            {
+              "title": "孔子 — 济宁党史史志网",
+              "url": "http://zgjnds.jining.gov.cn/art/2015/4/29/art_62661_2657011.html",
+              "quote": "孔子的言行思想主要载于语录体散文集《论语》及先秦和秦汉保存下的《史记·孔子世家》。",
+              "authority": "official",
+              "checkedAt": "2026-10-23",
+              "verificationMethod": "reuse-accepted-dossier: data/dossiers/people.json → thinkers/th-kongzi; цитата и дата из ранее принятого досье; нового открытия не было",
+              "provenance": "reused_accepted_dossier",
+              "reusedFrom": "data/dossiers/literature.json / works/lit-w-lunyu / sources[2]",
+              "freshPageVerification": false
+            }
+          ],
+          "olympiad": []
+        },
+        {
+          "id": "lit-form-drama",
+          "name": {
+            "zh": "戏剧",
+            "gloss": "Драма — в эпоху Юань расцвёл жанр цзацзюй, например «Обида Доу Э»"
+          },
+          "sources": [
+            {
+              "url": "https://id.china-embassy.gov.cn/chn/zggk/zgxz/xzwhys/200404/t20040421_2344862.htm",
+              "title": "中国驻印度尼西亚使馆 — 文学",
+              "quote": "元代文学的最高成就是杂剧创作，关汉卿的《窦娥冤》和王实甫的《西厢记》成为古代戏剧的传世杰作。",
+              "authority": "official",
+              "verificationMethod": "browsed_full_page",
+              "checkedAt": "2026-11-08",
+              "provenance": "accepted_batch5_caption"
+            },
+            {
+              "title": "《六月雪》：感天动地窦娥冤 — 人民日报海外版",
+              "url": "http://paper.people.com.cn/rmrbhwb/html/2016-11/19/content_1728901.htm",
+              "quote": "该剧取材于元代戏曲大家关汉卿的杂剧《感天动地窦娥冤》及明代叶宪祖的传奇《金锁记》。",
+              "checkedAt": "2026-10-17",
+              "authority": "official",
+              "provenance": "reused_accepted_dossier",
+              "reusedFrom": "data/dossiers/literature.json / works/lit-w-douyuan / sources[0]",
+              "freshPageVerification": false
+            }
+          ],
+          "olympiad": []
         }
       ]
     }

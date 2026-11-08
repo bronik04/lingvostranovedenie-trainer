@@ -15,7 +15,8 @@
         "coastname": "zh",
         "neighborname": "zh",
         "neimengguneighborname": "zh",
-        "tarimregionname": "zh"
+        "tarimregionname": "zh",
+        "russiaborderregionname": "zh"
       },
       "sides": [
         "abbr",
@@ -531,9 +532,20 @@
               "quote": "沈阳，是辽宁省省会，是东北亚国际化中心城市、国家历史文化名城、国际性综合交通枢纽城市",
               "authority": "official",
               "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "辽宁省主体功能区规划 — 辽宁省人民政府",
+              "url": "https://www.ln.gov.cn/web/zwgkx/zfxxgk1/zc/xzgfxwj/szf/szfwj/2023010421545165331/index.shtml",
+              "quote": "辽宁位于我国东北地区南部，南临黄海、渤海，东与朝鲜一江之隔",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 4 / o4"
             }
           ],
-          "olympiad": [],
+          "olympiad": [
+            "2021-22-mun-amur-4"
+          ],
           "core": true,
           "skipSides": [
             "kind",
@@ -545,6 +557,13 @@
               "Ляонин"
             ],
             "gloss": "Ляонин — приморская провинция на юге Северо-Востока, центр — Шэньян"
+          },
+          "russiaborderregionname": {
+            "zh": "辽宁",
+            "ru": [
+              "Ляонин"
+            ],
+            "gloss": "Ляонин — на юге омывается Жёлтым морем и Бохайским заливом"
           }
         },
         {
@@ -615,6 +634,15 @@
               "authority": "official",
               "checkedAt": "2026-11-07",
               "verificationMethod": "checked-exact-primary-indexed-excerpt"
+            },
+            {
+              "title": "地理地貌 — 吉林省人民政府",
+              "url": "https://www.jl.gov.cn/shengqing/dldm/",
+              "quote": "东与俄罗斯联邦接壤，东南部与朝鲜民主主义人民共和国隔江相望。",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 4 / o2"
             }
           ],
           "olympiad": [],
@@ -629,6 +657,13 @@
               "Цзилинь"
             ],
             "gloss": "Цзилинь — восточный сосед Внутренней Монголии; центр — Чанчунь."
+          },
+          "russiaborderregionname": {
+            "zh": "吉林",
+            "ru": [
+              "Цзилинь"
+            ],
+            "gloss": "Цзилинь — на востоке граничит с Россией, на юго-востоке — с КНДР"
           }
         },
         {
@@ -690,6 +725,15 @@
               "quote": "黑龙江省位于我国的北部边陲，因境内最大的河流黑龙江而得名。",
               "authority": "official",
               "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "地理特征 — 黑龙江省人民政府",
+              "url": "https://www.hlj.gov.cn/hlj/c108479/202208/c00_30848040.shtml",
+              "quote": "北、东部与俄罗斯隔江相望",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 4 / o3"
             }
           ],
           "olympiad": [
@@ -699,7 +743,14 @@
           "skipSides": [
             "kind",
             "named"
-          ]
+          ],
+          "russiaborderregionname": {
+            "zh": "黑龙江",
+            "ru": [
+              "Хэйлунцзян"
+            ],
+            "gloss": "Хэйлунцзян — Россия находится за пограничными реками на севере и востоке"
+          }
         },
         {
           "id": "prov-shandong",
@@ -2417,6 +2468,15 @@
               "quote": "1884年在新疆地区建省，并取“故土新归”之意，改称西域为“新疆”。",
               "authority": "official",
               "checkedAt": "2026-10-17"
+            },
+            {
+              "title": "新疆边境扶贫扩大试点规划 — 新疆维吾尔自治区人民政府",
+              "url": "https://www.xinjiang.gov.cn/xinjiang/gfxwj/201104/dbcbf0b1cb0e49258ef2e4a1e3ce53a0.shtml",
+              "quote": "中俄边界总长约为55公里",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 4 / o1"
             }
           ],
           "olympiad": [
@@ -2430,6 +2490,13 @@
               "Синьцзян"
             ],
             "gloss": "Синьцзян — административный центр автономного района — Урумчи."
+          },
+          "russiaborderregionname": {
+            "zh": "新疆维吾尔自治区",
+            "ru": [
+              "Синьцзян"
+            ],
+            "gloss": "Синьцзян — на его участке общая граница с Россией имеет длину около 55 км"
           }
         },
         {
@@ -2612,7 +2679,10 @@
         "about": "ru",
         "industry": "zh",
         "historicname": "zh",
-        "brics2024name": "zh"
+        "brics2024name": "zh",
+        "pearlcity": "zh",
+        "leifengcity": "zh",
+        "shanghaisistercity": "zh"
       },
       "sides": [
         "region",
@@ -2772,6 +2842,15 @@
               "quote": "在数以千计的泉水中，当以趵突泉最负盛名。",
               "authority": "official",
               "checkedAt": "2026-10-17"
+            },
+            {
+              "title": "基本市情 — 中国共产党济南市委员会",
+              "url": "https://www.jnsw.gov.cn/content/jbsq/content-21-23094-1.html",
+              "quote": "济南市，简称“济”，别称“泉城”，是山东省省会",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 1 / o2"
             }
           ],
           "olympiad": [
@@ -2780,7 +2859,14 @@
           "core": true,
           "skipSides": [
             "river"
-          ]
+          ],
+          "pearlcity": {
+            "zh": "济南",
+            "ru": [
+              "Цзинань"
+            ],
+            "gloss": "Цзинань — центр Шаньдуна, известный как «город родников»"
+          }
         },
         {
           "id": "city-lasa",
@@ -3142,15 +3228,32 @@
               "quote": "浙江有雁荡山、普陀山、雪窦山、天目山、天台山等名山，有杭州西湖、绍兴东湖、嘉兴南湖等名湖，有中国面积最大的森林公园——杭州千岛湖，有钱塘江、楠溪江等名江。",
               "authority": "official",
               "checkedAt": "2026-10-17"
+            },
+            {
+              "url": "https://ywhz.hangzhou.com.cn/yjls/content/content_6218549.htm",
+              "title": "雷峰塔 — 杭州西湖风景名胜区管委会",
+              "quote": "现塔为2002年重建，旧塔遗址被保存在新塔内部供参观",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 5 / o4"
             }
           ],
           "olympiad": [
-            "2015-16-shk-65"
+            "2015-16-shk-65",
+            "2020-21-mun-mosobl-46"
           ],
           "core": true,
           "skipSides": [
             "river"
-          ]
+          ],
+          "leifengcity": {
+            "zh": "杭州",
+            "ru": [
+              "Ханчжоу"
+            ],
+            "gloss": "Ханчжоу — новую пагоду Лэйфэн возвели в 2002 году, сохранив внутри руины старой"
+          }
         },
         {
           "id": "city-xian",
@@ -3223,6 +3326,15 @@
               "quote": "形成了集飞机整机制造、零部件生产、航空新材料研发等为一体的完整产业链。",
               "checkedAt": "2026-11-07",
               "authority": "official"
+            },
+            {
+              "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1802954373708996609.html",
+              "title": "西安市地方志办公室 — 大雁塔",
+              "quote": "唐永徽三年（公元652年）为玄奘藏经典而修建",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 5 / o3"
             }
           ],
           "olympiad": [],
@@ -3236,6 +3348,13 @@
               "Сиань"
             ],
             "gloss": "Сиань — в его районе Яньлян развито авиастроение: выпускают самолёты и авиационные детали."
+          },
+          "leifengcity": {
+            "zh": "西安",
+            "ru": [
+              "Сиань"
+            ],
+            "gloss": "Сиань — Большая пагода диких гусей построена для сутр Сюаньцзана"
           }
         },
         {
@@ -3653,12 +3772,30 @@
               "quote": "2001年10月20－21日，亚太经合组织（APEC）第九次领导人非正式会议将在上海举行。",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "东方明珠广播电视塔 — 文化和旅游部",
+              "url": "https://sjfw.mct.gov.cn/site/dataservice/culdetails?curId=10&id=34847",
+              "quote": "总高468米。",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "additionalKeyEvidence": {
+                "title": "东方明珠 — 文化和旅游部",
+                "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+                "quote": "东方明珠广播电视塔是上海的标志性文化景观之一，位于浦东新区陆家嘴，塔高约468米。",
+                "authority": "official",
+                "verificationMethod": "fresh-primary-indexed-excerpt",
+                "checkedAt": "2026-11-08"
+              },
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 1 / o3"
             }
           ],
           "olympiad": [
             "2015-16-shk-63",
             "2015-16-zak-1",
-            "addition-b2-15"
+            "addition-b2-15",
+            "2018-19-mun-lenobl-49"
           ],
           "core": true,
           "skipSides": [
@@ -3670,6 +3807,13 @@
               "Шанхай"
             ],
             "gloss": "Шанхай — город центрального подчинения у устья Янцзы"
+          },
+          "pearlcity": {
+            "zh": "上海",
+            "ru": [
+              "Шанхай"
+            ],
+            "gloss": "Шанхай — «Восточная жемчужина» стоит в Пудуне; высота башни — 468 м"
           }
         },
         {
@@ -3743,6 +3887,24 @@
               "quote": "京师图书馆——就是后来的北京图书馆、现在国家图书馆的前身，最初馆址就选在后海边上的广化寺。",
               "checkedAt": "2026-10-17",
               "authority": "official"
+            },
+            {
+              "title": "Central TV Tower — Beijing Municipal Government",
+              "url": "https://english.beijing.gov.cn/travellinginbeijing/attractions/202603/t20260320_4562520.html",
+              "quote": "the tower stands 405 meters tall",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 1 / o1"
+            },
+            {
+              "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048483.html",
+              "title": "北京市公园管理中心 — 白塔",
+              "quote": "不仅是北海公园的标志性景观，且长期被作为北京的象征图景",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 5 / o1"
             }
           ],
           "olympiad": [
@@ -3752,7 +3914,21 @@
           "core": true,
           "skipSides": [
             "river"
-          ]
+          ],
+          "pearlcity": {
+            "zh": "北京",
+            "ru": [
+              "Пекин"
+            ],
+            "gloss": "Пекин — здесь находится Центральная телебашня высотой 405 м"
+          },
+          "leifengcity": {
+            "zh": "北京",
+            "ru": [
+              "Пекин"
+            ],
+            "gloss": "Пекин — Белая пагода парка Бэйхай стала одним из символов города"
+          }
         },
         {
           "id": "city-tianjin",
@@ -3952,13 +4128,29 @@
               "quote": "龙门石窟位于河南省洛阳市南郊伊河两岸的龙门山与香山上，始建于北魏（493年）。",
               "authority": "official",
               "checkedAt": "2026-10-16"
+            },
+            {
+              "url": "https://www.dpm.org.cn/lemmas/243334.html",
+              "title": "故宫博物院 — 龙门石窟",
+              "quote": "位于河南洛阳南郊龙门山和香山。",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 5 / o2"
             }
           ],
           "olympiad": [],
           "core": true,
           "skipSides": [
             "river"
-          ]
+          ],
+          "leifengcity": {
+            "zh": "洛阳",
+            "ru": [
+              "Лоян"
+            ],
+            "gloss": "Лоян — здесь находятся буддийские пещерные храмы Лунмэнь"
+          }
         },
         {
           "id": "city-jingdezhen",
@@ -4602,6 +4794,15 @@
               "authority": "official",
               "checkedAt": "2026-11-07",
               "verificationMethod": "checked-exact-primary-indexed-excerpt"
+            },
+            {
+              "title": "Пекин и Москва: 25-летие партнёрства — 外事办公室北京市人民政府",
+              "url": "https://wb.beijing.gov.cn/en/topics/Moscow25th/202012/t20201209_2160798.html",
+              "quote": "16 мая 1995 года Пекин и Москва установили партнерские отношения.",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 10 / o1"
             }
           ],
           "olympiad": [
@@ -4629,6 +4830,13 @@
               "Москва"
             ],
             "gloss": "Москва — принимала летние Олимпийские игры 1980 года."
+          },
+          "shanghaisistercity": {
+            "zh": "莫斯科",
+            "ru": [
+              "Москва"
+            ],
+            "gloss": "Москва — дружественные партнёрские связи с Пекином установлены в 1995 году"
           }
         },
         {
@@ -4680,14 +4888,31 @@
               "quote": "俄罗斯人常说：“俄罗斯包括莫斯科、圣彼得堡和俄罗斯”。",
               "authority": "official",
               "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "Сотрудничество Петербурга с Шанхаем — Комитет по внешним связям Санкт-Петербурга",
+              "url": "https://kvs.gov.spb.ru/news/26956/",
+              "quote": "Шанхай – город-побратим Санкт‑Петербурга (с 1988 года).",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 10 / o2"
             }
           ],
           "olympiad": [
             "2020-21-pri-q4e8b0e",
             "2024-25-zak-qe3452d",
-            "2025-26-zak-q387588"
+            "2025-26-zak-q387588",
+            "2024-25-mun-klg-8"
           ],
-          "core": true
+          "core": true,
+          "shanghaisistercity": {
+            "zh": "圣彼得堡",
+            "ru": [
+              "Санкт-Петербург"
+            ],
+            "gloss": "Санкт-Петербург — побратимские связи с Шанхаем установлены в 1988 году"
+          }
         },
         {
           "id": "city-ru-nizhny-novgorod",
@@ -5217,6 +5442,15 @@
               "quote": "Сочи – крупнейший и единственный в России субтропический курорт. Расположен на северо-восточном побережье Черного моря в Краснодарском крае на расстоянии 1620 км от Москвы.",
               "authority": "official",
               "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "威海与索契召开视频友好交流会 — 威海市外事办公室",
+              "url": "https://wb.weihai.gov.cn/art/2022/1/26/art_13510_2789871.html",
+              "quote": "威海市与索契市自1996年结好以来",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 10 / o3"
             }
           ],
           "olympiad": [
@@ -5227,7 +5461,14 @@
           "skipSides": [
             "region",
             "nickname"
-          ]
+          ],
+          "shanghaisistercity": {
+            "zh": "索契",
+            "ru": [
+              "Сочи"
+            ],
+            "gloss": "Сочи — его китайский побратим Вэйхай; города связаны с 1996 года"
+          }
         },
         {
           "id": "city-ru-ufa",
@@ -5952,6 +6193,15 @@
               "quote": "По Амуру к устью Зеи прибыла сотня казаков с семьями, чтобы обосноваться здесь на построенное место жительство.",
               "authority": "official",
               "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "Города-побратимы — Администрация Благовещенска",
+              "url": "https://admblag.ru/o-gorode/goroda-pobratimy/",
+              "quote": "Соглашение об установлении побратимских связей между Благовещенском и Хэйхэ было заключено 27 сентября 2009 года.",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 10 / o4"
             }
           ],
           "olympiad": [
@@ -5960,7 +6210,14 @@
           "core": true,
           "skipSides": [
             "region"
-          ]
+          ],
+          "shanghaisistercity": {
+            "zh": "布拉戈维申斯克",
+            "ru": [
+              "Благовещенск"
+            ],
+            "gloss": "Благовещенск — побратим Хэйхэ; соглашение заключено в 2009 году"
+          }
         },
         {
           "id": "city-ru-vladivostok",
@@ -6118,6 +6375,13 @@
               "Сянган (Гонконг)"
             ],
             "gloss": "Сянган (Гонконг) — особый административный район на юге Китая у устья Чжуцзяна"
+          },
+          "pearlcity": {
+            "zh": "香港",
+            "ru": [
+              "Гонконг"
+            ],
+            "gloss": "Гонконг — у устья Чжуцзяна; включает Коулун и Новые территории"
           }
         },
         {

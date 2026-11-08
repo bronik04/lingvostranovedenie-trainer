@@ -1,0 +1,129 @@
+{
+  "reviewId": "regional-2026-11-08-batch-5",
+  "status": "passed",
+  "fullBank": 1269,
+  "visibleBefore": 1030,
+  "visibleAfter": 1030,
+  "selected": 16,
+  "acceptedEmbeddings": 15,
+  "preparedDraftEmbeddings": 1,
+  "checkedOptionsAndCaptions": 64,
+  "acceptedStemsKeysOptionsCaptionsExact": true,
+  "previousLearnerFacingChanges": [],
+  "previousPoolChanges": [],
+  "newRowsWithTwoQuotedPrimarySources": 40,
+  "maxCaptionLength": 83,
+  "previousReadingLinksUnchanged": true,
+  "previousPinyinEntriesUnchanged": true,
+  "selectedPinyinComplete": true,
+  "pinyinAdditions": 6,
+  "standaloneDossierSourceFormLimitations": [
+    "literature/literature-q66: текст называет ответ вопроса literature/literature-q114: ['诗歌']",
+    "nature/nature-q140: текст называет ответ вопроса modern-china/modern-china-q26: ['黄金']"
+  ],
+  "standaloneDossierLimitationReason": "CLI compares original dossier text before accepted editorial overlay; both quoted Chinese strings absent from final learner-facing bank. These are not unresolved final-bank hints.",
+  "directHintErrors": 0,
+  "unresolvedNewHintCandidates": 0,
+  "allPreviousFactProtectionsPreserved": true,
+  "maxFactGroupSize": 170,
+  "siteVisibilityGuardsAdded": [
+    "2019-20-mun-kgd-2",
+    "2021-22-mun-volog-8"
+  ],
+  "approvedManifestCanonicalSha256ExcludingHashField": "dd2aab6c3ccd13bdfa44d4d14ff731b2a317e7f78972030fb7c28dea5fd0dffa",
+  "approvedManifestFileSha256": "3486a5eee5fb7c48b845145e22093db9c1531b4f0c03116432675ddf942004f3",
+  "htmlSha256": "29610bbbd57c1238fed6e49dd5551eb41c7be8d2195aec21776165e5062b0a1c",
+  "publicationAuthorized": false,
+  "deploymentRun": false,
+  "contentBlockers": [
+    {
+      "reviewNumber": 20,
+      "questionId": "2024-25-mun-krsk-6",
+      "reason": "Единственность ответа в широкой формулировке не установлена; защитные украшения известны и из горного хрусталя. Нужен отдельный выбор автора после рассмотрения источников."
+    }
+  ],
+  "errors": [],
+  "pythonTests": 494,
+  "nodeTests": 172,
+  "skipped": 0,
+  "browser": {
+    "scope": "Temporary browser-only preview of 16 hidden questions; site settings and HTML not changed by preview",
+    "publicationAuthorized": false,
+    "questions": 16,
+    "cards": 128,
+    "options": 512,
+    "viewports": [
+      1280,
+      375
+    ],
+    "pinyin": [
+      false,
+      true
+    ],
+    "answers": [
+      "correct",
+      "incorrect"
+    ],
+    "pageErrors": [],
+    "results": [
+      {
+        "viewport": 1280,
+        "pinyin": false,
+        "correctAnswer": true,
+        "cards": 16
+      },
+      {
+        "viewport": 1280,
+        "pinyin": false,
+        "correctAnswer": false,
+        "cards": 16
+      },
+      {
+        "viewport": 1280,
+        "pinyin": true,
+        "correctAnswer": true,
+        "cards": 16
+      },
+      {
+        "viewport": 1280,
+        "pinyin": true,
+        "correctAnswer": false,
+        "cards": 16
+      },
+      {
+        "viewport": 375,
+        "pinyin": false,
+        "correctAnswer": true,
+        "cards": 16
+      },
+      {
+        "viewport": 375,
+        "pinyin": false,
+        "correctAnswer": false,
+        "cards": 16
+      },
+      {
+        "viewport": 375,
+        "pinyin": true,
+        "correctAnswer": true,
+        "cards": 16
+      },
+      {
+        "viewport": 375,
+        "pinyin": true,
+        "correctAnswer": false,
+        "cards": 16
+      }
+    ],
+    "screenshots": [
+      "/tmp/lingvo-batch5-mobile.png"
+    ],
+    "status": "passed"
+  },
+  "testCommands": [
+    "python3 -m unittest discover -s test -t .",
+    "node --test test/*.test.mjs",
+    "node /tmp/lingvo-batch5-embedding-browser.mjs"
+  ],
+  "scope": "historical-local-check-before-author-acceptance-of-q20-and-release15"
+}

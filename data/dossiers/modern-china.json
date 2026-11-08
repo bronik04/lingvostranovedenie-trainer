@@ -2870,6 +2870,290 @@
           ]
         }
       ]
+    },
+    "resources": {
+      "columns": {
+        "name": "zh",
+        "energyname": "zh",
+        "miningname": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "res-coal",
+          "name": {
+            "zh": "煤炭",
+            "ru": [
+              "Уголь"
+            ]
+          },
+          "sources": [
+            {
+              "title": "能源转型跨越发展 绿色低碳成效显著 — 国家统计局 (2026-06-05)",
+              "url": "https://www.stats.gov.cn/zt_18555/ztfx/sswjjshfzcjbg/202606/t20260601_1963846.html",
+              "quote": "煤炭占能源消费总量比重由2020年的56.7%降至2025年的51.4%",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025
+            },
+            {
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "quote": "能源矿产 | 石油、天然气、页岩气、煤炭、煤层气、铀",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact table text with cell separator | added for readability; lines 162–164"
+            }
+          ],
+          "olympiad": [
+            "2019-20-mun-kgd-2"
+          ],
+          "energyname": {
+            "zh": "煤炭",
+            "ru": [
+              "Уголь"
+            ],
+            "gloss": "Уголь — в 2025 году обеспечивал 51,4 % энергопотребления КНР."
+          }
+        },
+        {
+          "id": "res-oil",
+          "name": {
+            "zh": "石油",
+            "ru": [
+              "Нефть"
+            ]
+          },
+          "sources": [
+            {
+              "title": "能源转型跨越发展 绿色低碳成效显著 — 国家统计局 (2026-06-05)",
+              "url": "https://www.stats.gov.cn/zt_18555/ztfx/sswjjshfzcjbg/202606/t20260601_1963846.html",
+              "quote": "石油占比由18.9%降至18.2%",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025
+            },
+            {
+              "title": "The United States set record energy production in 2025, again — EIA (2026-05-11)",
+              "url": "https://www.eia.gov/todayinenergy/detail.php?id=67684",
+              "quote": "the United States remained the largest crude oil producer in the world.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025
+            },
+            {
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "quote": "能源矿产 | 石油、天然气、页岩气、煤炭、煤层气、铀",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact table text with cell separator | added for readability; lines 162–164"
+            }
+          ],
+          "olympiad": [],
+          "energyname": {
+            "zh": "石油",
+            "ru": [
+              "Нефть"
+            ],
+            "gloss": "Нефть — её доля в энергопотреблении КНР в 2025 году составляла 18,2 %."
+          },
+          "miningname": {
+            "zh": "石油",
+            "ru": [
+              "Нефть"
+            ],
+            "gloss": "Нефть — в 2025 году крупнейшим производителем сырой нефти были США."
+          }
+        },
+        {
+          "id": "res-naturalgas",
+          "name": {
+            "zh": "天然气",
+            "ru": [
+              "Природный газ"
+            ]
+          },
+          "sources": [
+            {
+              "title": "能源转型跨越发展 绿色低碳成效显著 — 国家统计局 (2026-06-05)",
+              "url": "https://www.stats.gov.cn/zt_18555/ztfx/sswjjshfzcjbg/202606/t20260601_1963846.html",
+              "quote": "天然气占比由8.4%提升至8.7%",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025
+            },
+            {
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "quote": "能源矿产 | 石油、天然气、页岩气、煤炭、煤层气、铀",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact table text with cell separator | added for readability; lines 162–164"
+            }
+          ],
+          "olympiad": [],
+          "energyname": {
+            "zh": "天然气",
+            "ru": [
+              "Природный газ"
+            ],
+            "gloss": "Природный газ — его доля в энергопотреблении КНР в 2025 году составляла 8,7 %."
+          }
+        },
+        {
+          "id": "res-nonferrous",
+          "name": {
+            "zh": "有色金属",
+            "ru": [
+              "Цветные металлы"
+            ]
+          },
+          "sources": [
+            {
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "quote": "铜、铝、铅、锌、金、钨、钼等金属矿产",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "additionalQuote": "能源矿产",
+              "quoteNote": "В тексте медь и алюминий названы металлическими минералами. В приложении 1 топливо выделено отдельно как 能源 矿产（26）, руды цветных металлов — как 有色金属矿产（43）. Вывод о различии групп сделан по классификации таблицы, не по отсутствию слова в перечне."
+            },
+            {
+              "url": "https://pubs.usgs.gov/of/2008/1356/pdf/ofr2008-1356.pdf",
+              "title": "Metal Use Characteristics — USGS Open-File Report 2008–1356",
+              "quote": "Al, Cd, Cu, Ni, Pb, REE, and Zn are nonferrous metals",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; classification source; 15-word continuous excerpt"
+            }
+          ],
+          "olympiad": [],
+          "energyname": {
+            "zh": "有色金属",
+            "ru": [
+              "Цветные металлы"
+            ],
+            "gloss": "Цветные металлы — медь и алюминий относятся к металлическому сырью, а не к топливу."
+          }
+        },
+        {
+          "id": "res-gold",
+          "name": {
+            "zh": "黄金",
+            "ru": [
+              "Золото"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Mineral Commodity Summaries 2026 — USGS, GOLD",
+              "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+              "quote": "China                                                         377       380                                              3,200",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025,
+              "location": "Печатная стр. 91: World Mine Production and Reserves, столбцы 2024 / 2025e / Reserves; тонны.",
+              "quoteNote": "Табличная строка дословно из pdftotext -layout; 2025e — оценка, не окончательный итог.",
+              "localEvidence": "/tmp/mcs2026.txt"
+            },
+            {
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "quote": "以铁、锰、铜、铝、镍、铅、锌、钨、锡、锑、金、银等为重点",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt, line 253; classification/identity source, not a second confirmation of 2025 ranks"
+            }
+          ],
+          "olympiad": [
+            "2021-22-mun-volog-8"
+          ],
+          "miningname": {
+            "zh": "黄金",
+            "ru": [
+              "золото (металл)"
+            ],
+            "gloss": "Золото — по оценке USGS, Китай добыл 380 т в 2025 году."
+          }
+        },
+        {
+          "id": "res-silver",
+          "name": {
+            "zh": "白银",
+            "ru": [
+              "Серебро"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Mineral Commodity Summaries 2026 — USGS, SILVER",
+              "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+              "quote": "Mexico                                                               5,780      6,300                                             37,000",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025,
+              "location": "Печатная стр. 173: World Mine Production and Reserves, столбец 2025e; тонны.",
+              "quoteNote": "Лидерство установлено сравнением всех стран в той же таблице; Китай 3400, Перу 3600.",
+              "localEvidence": "/tmp/mcs2026.txt"
+            },
+            {
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "quote": "以铁、锰、铜、铝、镍、铅、锌、钨、锡、锑、金、银等为重点",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt, line 253; classification/identity source, not a second confirmation of 2025 ranks"
+            }
+          ],
+          "olympiad": [],
+          "miningname": {
+            "zh": "白银",
+            "ru": [
+              "Серебро"
+            ],
+            "gloss": "Серебро — по оценке USGS, в 2025 году лидировала Мексика: 6300 т."
+          }
+        },
+        {
+          "id": "res-ironore",
+          "name": {
+            "zh": "铁矿",
+            "ru": [
+              "Железная руда"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Mineral Commodity Summaries 2026 — USGS, IRON ORE",
+              "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+              "quote": "Australia                                982,000    980,000    607,000     600,000                                 6",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025,
+              "location": "Печатная стр. 109: World Mine Production and Reserves, Mine production / Usable ore / 2025e; тысячи метрических тонн.",
+              "quoteNote": "Лидерство выведено из сравнительной таблицы: Австралия 980000, Бразилия 420000, Индия 310000, Китай 290000. Сравнивается пригодная руда, не сырая добытая масса.",
+              "localEvidence": "/tmp/mcs2026.txt"
+            },
+            {
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "quote": "以铁、锰、铜、铝、镍、铅、锌、钨、锡、锑、金、银等为重点",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt, line 253; classification/identity source, not a second confirmation of 2025 ranks"
+            }
+          ],
+          "olympiad": [],
+          "miningname": {
+            "zh": "铁矿",
+            "ru": [
+              "Железная руда"
+            ],
+            "gloss": "Железная руда — в 2025-м Австралия лидировала по добыче пригодной руды."
+          }
+        }
+      ]
     }
   }
 }

@@ -37,7 +37,8 @@
             "ru": [
               "Чжан Имоу"
             ],
-            "gloss": "Чжан Имоу — режиссёр фильма «Красный гаолян» по прозе Мо Яня"
+            "gloss": "Чжан Имоу — режиссёр фильма «Красный гаолян» по прозе Мо Яня",
+            "ref": "cinema/persons/cin-person-zhang-yimou"
           },
           "about": "Фильм Чжан Имоу по прозе Мо Яня «Красный гаолян» и «Гаоляновое вино». В 1988 году получил «Золотого медведя» Берлинского кинофестиваля. Среди исполнителей главных ролей — Гун Ли и Цзян Вэнь.",
           "sources": [
@@ -146,7 +147,8 @@
             "ru": [
               "Ли Ань"
             ],
-            "gloss": "Ли Ань — режиссёр «Крадущийся тигр, затаившийся дракон» (2000)"
+            "gloss": "Ли Ань — режиссёр «Крадущийся тигр, затаившийся дракон» (2000)",
+            "ref": "cinema/persons/cin-person-ang-lee"
           },
           "about": "Фильм Ли Аня 2000 года по роману Ван Дулу. В центре сюжета — похищение легендарного меча и отношения героев мира боевых искусств. В 2001 году получил «Оскар» за лучший фильм на иностранном языке.",
           "sources": [
@@ -388,7 +390,8 @@
             "ru": [
               "Чжан Имоу"
             ],
-            "gloss": "Чжан Имоу — кинорежиссёр"
+            "gloss": "Чжан Имоу — кинорежиссёр",
+            "ref": "cinema/persons/cin-person-zhang-yimou"
           },
           "about": "Фильм Чжан Имоу 1994 года по роману Юй Хуа. В центре — Фугуй и его семья, переживающие исторические потрясения. В Каннах картина разделила Гран-при жюри, а исполнитель роли Фугуя получил награду за лучшую мужскую роль.",
           "sources": [
@@ -444,7 +447,8 @@
             "ru": [
               "Чжан Имоу"
             ],
-            "gloss": "Чжан Имоу — кинорежиссёр"
+            "gloss": "Чжан Имоу — кинорежиссёр",
+            "ref": "cinema/persons/cin-person-zhang-yimou"
           },
           "about": "Фильм Чжан Имоу вышел в Китае в 2002 году. Воин по имени Безымянный рассказывает царю Цинь, как победил трёх опасных противников; царь предлагает иную версию событий. В 2003 году фильм получил премию Альфреда Бауэра Берлинского кинофестиваля.",
           "sources": [
@@ -507,7 +511,8 @@
             "ru": [
               "Чжан Имоу"
             ],
-            "gloss": "Чжан Имоу — кинорежиссёр"
+            "gloss": "Чжан Имоу — кинорежиссёр",
+            "ref": "cinema/persons/cin-person-zhang-yimou"
           },
           "about": "Фильм Чжан Имоу, показанный в Каннах вне конкурса в 2004 году. Действие разворачивается в конце эпохи Тан. Двое служителей власти разрабатывают план проникновения в повстанческую организацию через молодую женщину Мэй.",
           "sources": [
@@ -1674,6 +1679,151 @@
         "director",
         "name",
         "technique"
+      ]
+    },
+    "persons": {
+      "columns": {
+        "name": "zh"
+      },
+      "rows": [
+        {
+          "id": "cin-person-zhang-yimou",
+          "name": {
+            "zh": "张艺谋",
+            "gloss": "Чжан Имоу — его «Красный гаолян» получил «Золотого медведя» Берлинале в 1988 году"
+          },
+          "sources": [
+            {
+              "title": "Жэньминь жибао (海外版): 红高粱地的朝圣",
+              "url": "https://paper.people.com.cn/rmrbhwb/html/2013-11/12/content_1323624.htm",
+              "quote": "1988年获柏林国际电影节金熊奖，导演张艺谋",
+              "checkedAt": "2026-10-19",
+              "authority": "official",
+              "provenance": "accepted_batch5_caption",
+              "dossierRow": "cinema/works/cin-cn-red-sorghum",
+              "freshPageVerification": false
+            },
+            {
+              "title": "CCTV-6 / 1905: 红高粱",
+              "url": "https://www.1905.com/mdb/film/48527/",
+              "quote": "根据莫言小说《红高粱》和《高粱酒》改编",
+              "checkedAt": "2026-10-19",
+              "authority": "official",
+              "provenance": "reused_accepted_dossier",
+              "reusedFrom": "data/dossiers/cinema.json / works/cin-cn-red-sorghum / sources[0]",
+              "freshPageVerification": false
+            },
+            {
+              "url": "https://www.bjiff.com/images/%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%8A%E7%94%B5%E5%BD%B1%E8%8A%82%E4%BC%9A%E5%88%8A.pdf",
+              "title": "北京国际电影节 — 第十三届电影节会刊",
+              "quote": "Creative Director of the Opening and Closing Ceremonies at both the Olympic Summer Games and Olympic Winter Games",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://www.olympics.com/ioc/news/critically-acclaimed-director-lu-chuan-selected-to-direct-the-official-film-of-the-olympic-winter-games-beijing-2022",
+              "title": "IOC — Official Film of Beijing 2022",
+              "quote": "Zhang Yimou is also the Chief Director of the Beijing 2022 Opening and Closing ceremonies.",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt",
+              "checkedAt": "2026-11-08"
+            }
+          ],
+          "olympiad": [
+            "2023-24-shk-mosobl-2"
+          ]
+        },
+        {
+          "id": "cin-person-mo-yan",
+          "name": {
+            "zh": "莫言",
+            "gloss": "Мо Янь — писатель, лауреат Нобелевской премии по литературе 2012 года",
+            "ref": "literature/authors/lit-a-moyan"
+          },
+          "sources": [
+            {
+              "title": "The Nobel Prize in Literature 2012 — Bio-bibliography, NobelPrize.org",
+              "url": "https://www.nobelprize.org/prizes/literature/2012/bio-bibliography/",
+              "quote": "Mo Yan (a pseudonym for Guan Moye) was born in 1955 and grew up in Gaomi in Shandong province in north-eastern China.",
+              "checkedAt": "2026-10-17",
+              "authority": "official",
+              "provenance": "reused_accepted_dossier",
+              "reusedFrom": "data/dossiers/literature.json / authors/lit-a-moyan / sources[0]",
+              "freshPageVerification": false
+            },
+            {
+              "url": "https://www.nobelprize.org/prizes/literature/2012/prize-announcement/?print=1",
+              "title": "The Nobel Prize in Literature 2012 – Prize announcement — NobelPrize.org",
+              "quote": "Announcement of the 2012 Nobel Prize in Literature to Mo Yan",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt",
+              "provenance": "accepted_batch5_caption",
+              "dossierRow": "literature/authors/lit-a-moyan",
+              "freshPageVerification": false
+            }
+          ],
+          "olympiad": []
+        },
+        {
+          "id": "cin-person-john-woo",
+          "name": {
+            "zh": "吴宇森",
+            "gloss": "Джон Ву — в 2010 году получил почётного «Золотого льва» за вклад в кино"
+          },
+          "sources": [
+            {
+              "url": "https://www.labiennale.org/en/history/recent-years",
+              "title": "La Biennale di Venezia — Recent years",
+              "quote": "Golden Lions for Lifetime Achievement in 2010: William Forsythe (Dance), Rem Koolhaas (Architecture), John Woo (Cinema)",
+              "authority": "official",
+              "verificationMethod": "browsed_full_page",
+              "checkedAt": "2026-11-08",
+              "provenance": "accepted_batch5_caption"
+            },
+            {
+              "title": "Venice International Film Festival honours Hong Kong cinema — HKSAR Government",
+              "url": "https://www.info.gov.hk/gia/general/201009/04/P201009040194_print.htm",
+              "quote": "presented director John Woo with a Golden Lion for Lifetime Achievement award yesterday (September 3, Venice time).",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened",
+              "publicationDate": "2010-09-04"
+            }
+          ],
+          "olympiad": []
+        },
+        {
+          "id": "cin-person-ang-lee",
+          "name": {
+            "zh": "李安",
+            "gloss": "Энг Ли — получил «Оскар» за режиссуру фильма «Жизнь Пи»"
+          },
+          "sources": [
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/2013",
+              "title": "The 85th Academy Awards | 2013",
+              "quote": "Directing\n\nWinner\n\nLife of Pi\n\nAng Lee",
+              "authority": "official",
+              "verificationMethod": "browsed_full_page",
+              "checkedAt": "2026-11-08",
+              "quoteFormatting": "Сохранён порядок строк блока Directing; пустые строки по веб-представлению.",
+              "provenance": "accepted_batch5_caption"
+            },
+            {
+              "title": "Каннский фестиваль: Crouching Tiger, Hidden Dragon",
+              "url": "https://www.festival-cannes.com/en/2019/crouching-tiger-hidden-dragon-ang-lee-s-spectacular-masterpiece/",
+              "quote": "In 2000, Taiwanese filmmaker\nAng Lee\nserved up\nCrouching Tiger, Hidden Dragon",
+              "checkedAt": "2026-10-19",
+              "authority": "official",
+              "provenance": "reused_accepted_dossier",
+              "reusedFrom": "data/dossiers/cinema.json / works/cin-cn-crouching-tiger / sources[1]",
+              "freshPageVerification": false
+            }
+          ],
+          "olympiad": []
+        }
       ]
     }
   }

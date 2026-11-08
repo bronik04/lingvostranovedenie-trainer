@@ -1,0 +1,74 @@
+{
+  "reviewId": "regional-2026-11-08-batch-5",
+  "date": "2026-11-08",
+  "status": "passed",
+  "checks": {
+    "questions": 16,
+    "options": 64,
+    "excludedOriginalReviewNumbers": [
+      11,
+      12,
+      14,
+      17
+    ],
+    "replacementQuestions": 0,
+    "originalNumberingPreserved": true,
+    "allOriginalConditionsOptionsAndKeysPreserved": true,
+    "authorizedRussianStemChanges": [
+      3,
+      6,
+      9,
+      20
+    ],
+    "alignedChineseStemChanges": [
+      3,
+      9
+    ],
+    "authorizedNewOptionChanges": [
+      {
+        "reviewNumber": 4,
+        "optionId": "o1",
+        "zh": "新疆维吾尔自治区"
+      },
+      {
+        "reviewNumber": 16,
+        "optionId": "o1",
+        "zh": "1991年"
+      },
+      {
+        "reviewNumber": 16,
+        "optionId": "o2",
+        "zh": "2001年"
+      },
+      {
+        "reviewNumber": 16,
+        "optionId": "o3",
+        "zh": "2011年"
+      },
+      {
+        "reviewNumber": 16,
+        "optionId": "o4",
+        "zh": "2021年"
+      }
+    ],
+    "allCaptionsUnchanged": true,
+    "maxCaptionLength": 83,
+    "anthemDuplicateRecheck": true,
+    "activeSnapshot": 1030,
+    "fullBankSnapshot": 1269,
+    "protectedFilesUnchanged": 146,
+    "protectedFilesTotal": 146,
+    "initialIndependentReviewArchived": true,
+    "newWordingIndependentlyReviewed": false,
+    "publicationAuthorized": false,
+    "fullBuildOrSuiteRun": false
+  },
+  "errors": [],
+  "limits": [
+    "Черновик: новые редакции предназначены для просмотра автора.",
+    "№15 оставлен с прежней оговоркой о неоднозначном юридическом этапе.",
+    "Встраивания, рабочие данные и сайт не менялись."
+  ],
+  "scope": "historical-pre-embedding-author-revision",
+  "supersededBy": "2026-11-08-regional-batch-5-embedding-check.json"
+}

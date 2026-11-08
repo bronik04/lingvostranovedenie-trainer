@@ -14,7 +14,8 @@
         "memorial": "zh",
         "about": "ru",
         "revolution": "zh",
-        "serviceLaw": "zh"
+        "serviceLaw": "zh",
+        "siberiaCentury": "zh"
       },
       "rows": [
         {
@@ -3226,6 +3227,149 @@
             ],
             "gloss": "Крестьянский указ — например, указ о вольных хлебопашцах 1803 года."
           }
+        },
+        {
+          "id": "ev-ru-ugra1480",
+          "name": {
+            "zh": "乌格拉河对峙",
+            "ru": [
+              "Стояние на Угре"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Стояние на Угре — Президентская библиотека",
+              "url": "https://www.prlib.ru/node/619708",
+              "quote": "11 ноября 1480 г. хан Ахмат",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "Новая электронная коллекция Президентской библиотеки посвящена «собирателю русских земель» — Президентская библиотека имени Б. Н. Ельцина",
+              "url": "https://www.prlib.ru/news/2022890",
+              "quote": "При Иване III в 1480 году, после знаменитого стояния на реке Угре, Московское государство получило независимость от Золотой Орды. … Во время правления Ивана III сформировалась государственная символика с двуглавым орлом … В 1497 году в действие был введён Судебник – единый законодательный кодекс.",
+              "checkedAt": "2026-10-16",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-dossier-source-and-quote",
+              "cellProvenance": "data/dossiers/dynasties.json#tables/rulers/rows/rul-ru-ivan3"
+            }
+          ],
+          "olympiad": [],
+          "siberiaCentury": {
+            "zh": "十五世纪",
+            "ru": [
+              "пятнадцатый век"
+            ],
+            "gloss": "XV век — стояние на Угре (1480), завершение зависимости от Орды"
+          }
+        },
+        {
+          "id": "ev-ru-ermak-siberia",
+          "name": {
+            "zh": "叶尔马克远征西伯利亚",
+            "ru": [
+              "Поход Ермака в Сибирь"
+            ]
+          },
+          "sources": [
+            {
+              "title": "История — Ростовский государственный университет путей сообщения",
+              "url": "https://bypass.rgups.ru/site/assets/files/221914/sg_02_istoriia.pdf",
+              "quote": "1581 г. – поход Ермака – начало присоединения Сибири.",
+              "authority": "academic",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://libamur.ru/page/12474.html",
+              "title": "Поход Ермака в Сибирь (1581–1585 годы) — Амурская областная научная библиотека имени Н. Н. Муравьёва-Амурского",
+              "quote": "Поход Ермака в Сибирь (1581-1585 годы)",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; title of state scientific library bibliography; supports conventional dating, not consensus over exact departure year"
+            }
+          ],
+          "olympiad": [
+            "2025-26-mun-kem-7"
+          ],
+          "siberiaCentury": {
+            "zh": "十六世纪",
+            "ru": [
+              "шестнадцатый век"
+            ],
+            "gloss": "XVI век — начало связывают с походом Ермака в 1581 году"
+          }
+        },
+        {
+          "id": "ev-ru-dezhnev1648",
+          "name": {
+            "zh": "杰日尼奥夫1648年航行",
+            "ru": [
+              "Плавание Семёна Дежнёва 1648 года"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Семен Дежнев. 1648–1948 — Президентская библиотека",
+              "url": "https://www.prlib.ru/item/1286555",
+              "quote": "1648-1948 : К трехсотлетию открытия пролива между Азией и Америкой.",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://www.rgo.ru/sites/default/files/media/2020-02-02/2_g_k.pdf",
+              "title": "ДЕЖНЁВ СЕМЁН ИВАНОВИЧ — справочный PDF на сайте РГО (2_g_k.pdf)",
+              "quote": "В 1648 г., на 80 лет раньше Витуса Беринга (см.) прошёл пролив, получивший впоследствии наименование Берингова.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; institutional geographical reference, line wrap joined"
+            }
+          ],
+          "olympiad": [],
+          "siberiaCentury": {
+            "zh": "十七世纪",
+            "ru": [
+              "семнадцатый век"
+            ],
+            "gloss": "XVII век — Семён Дежнёв в 1648 году прошёл пролив между Азией и Америкой"
+          }
+        },
+        {
+          "id": "ev-ru-kamchatka1",
+          "name": {
+            "zh": "第一次堪察加考察",
+            "ru": [
+              "Первая Камчатская экспедиция"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Издан указ о Второй Камчатской экспедиции — Президентская библиотека",
+              "url": "https://www.prlib.ru/history/619199",
+              "quote": "В январе 1725 г. российский император отдал Указ о подготовке экспедиции на Тихий океан",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://guides.rusarchives.ru/funds/145/pervaya-kamchatskaya-ekspediciya-1725-1729-gg",
+              "title": "Первая Камчатская экспедиция 1725–1729 гг. — Российский государственный архив Военно-Морского Флота",
+              "quote": "об организации и отправке в 1725 г. Первой Камчатской экспедиции из Петербурга в Охотск",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; exact continuous excerpt from archival finding aid"
+            }
+          ],
+          "olympiad": [],
+          "siberiaCentury": {
+            "zh": "十八世纪",
+            "ru": [
+              "восемнадцатый век"
+            ],
+            "gloss": "XVIII век — Первая Камчатская экспедиция Беринга организована с 1725 года"
+          }
         }
       ],
       "sides": [
@@ -5788,7 +5932,8 @@
         "war": "zh",
         "land": "zh",
         "signer": "zh",
-        "about": "ru"
+        "about": "ru",
+        "goodneighborYear": "zh"
       },
       "rows": [
         {
@@ -6788,10 +6933,132 @@
               "quote": "缔约任何一方均未以书面形式通知缔约另一方要求终止本条约，则本条约将自动延长五年",
               "authority": "official",
               "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "Интервью посла КНР Лю Гучана — МИД КНР",
+              "url": "https://www.mfa.gov.cn/rus/wjb/zzjg/dozys/dozysgjlb/1706/1710/200311/t20031120_957420.html",
+              "quote": "16-го июля 2001-го года этот договор подписали бывший председатель КНР Цзян Цзэминь и президент России Владимир Путин.",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-page-opened",
+              "checkedAt": "2026-11-08"
+            }
+          ],
+          "olympiad": [
+            "2025-26-mun-ryaz-5"
+          ],
+          "core": true,
+          "goodneighborYear": {
+            "zh": "2001年",
+            "ru": [
+              "2001 год"
+            ],
+            "gloss": "2001 год — договор подписали Цзян Цзэминь и Владимир Путин"
+          }
+        },
+        {
+          "id": "tr-cnussr-east1991",
+          "name": {
+            "zh": "中苏国界东段协定",
+            "ru": [
+              "Соглашение СССР и КНР о восточной части границы"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Соглашение о советско-китайской границе. Москва, 16 мая 1991 — ЭБИД",
+              "url": "https://docs.historyrussia.org/ru/nodes/518493-soglashenie-mezhdu-soyuzom-sovetskih-sotsialisticheskih-respublik-i-kitayskoy-narodnoy-respublikoy-o-sovetsko-kitayskoy-gosudarstvennoy-granitse-na-ee-vostochnoy-chasti-moskva-16-maya-1991-goda",
+              "quote": "о советско-китайской государственной границе на ее Восточной части. Москва, 16 мая 1991 года",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://treaty.mfa.gov.cn/Treaty/web/detail1.jsp?objid=1531876659136",
+              "title": "中华人民共和国和苏维埃社会主义共和国联盟关于中苏国界东段的协定 — 中华人民共和国条约数据库",
+              "quote": "我国签署时间：1991.05.16；签署地点：莫斯科",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; adjacent table fields joined by semicolon"
             }
           ],
           "olympiad": [],
-          "core": true
+          "goodneighborYear": {
+            "zh": "1991年",
+            "ru": [
+              "1991 год"
+            ],
+            "gloss": "1991 год — СССР и КНР подписали соглашение о восточной части границы"
+          }
+        },
+        {
+          "id": "tr-cnru-declaration2011",
+          "name": {
+            "zh": "中俄睦邻友好合作条约签署10周年联合声明",
+            "ru": [
+              "Совместное заявление к десятилетию договора России и Китая"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Переговоры Ху Цзиньтао с Д. Медведевым — МИД КНР",
+              "url": "https://www.mfa.gov.cn/rus/zl/ce_ceml_chn/hzxcxjjlt/201106/t20110617_878211.html",
+              "quote": "Медведев и Ху Цзиньтао выступили с речами на концерте в честь 10-й годовщины подписания Договора",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/oz_678770/1206_679110/1207_679122/201106/t20110617_9337139.shtml",
+              "title": "中国国家主席胡锦涛和俄罗斯总统梅德韦杰夫关于《中俄睦邻友好合作条约》签署10周年联合声明 — 中华人民共和国外交部",
+              "quote": "2011年6月16日，中国国家主席胡锦涛和俄罗斯总统梅德韦杰夫发表关于《中俄睦邻友好合作条约》签署10周年联合声明。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt at line 96"
+            }
+          ],
+          "olympiad": [],
+          "goodneighborYear": {
+            "zh": "2011年",
+            "ru": [
+              "2011 год"
+            ],
+            "gloss": "2011 год — Ху Цзиньтао и Д. Медведев отметили десятилетие договора в Москве"
+          }
+        },
+        {
+          "id": "tr-cnru-declaration2021",
+          "name": {
+            "zh": "中俄睦邻友好合作条约签署20周年联合声明",
+            "ru": [
+              "Совместное заявление о продлении договора России и Китая"
+            ]
+          },
+          "sources": [
+            {
+              "title": "习近平同俄罗斯总统普京举行视频会晤 — МИД КНР",
+              "url": "https://www.fmprc.gov.cn/tpxw/202106/t20210628_9136616.shtml",
+              "quote": "两国元首宣布发表联合声明，正式决定《中俄睦邻友好合作条约》延期。",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-page-opened",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://ru.china-embassy.gov.cn/zegx_0/202504/t20250430_11610611.htm",
+              "title": "《中俄睦邻友好合作条约》延期！（附声明全文）— 中国驻俄罗斯大使馆",
+              "quote": "习近平主席于2021年6月28日下午在北京同俄罗斯总统普京举行视频会晤。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt at line 16; page also publishes declaration announcing extension; page visibly dated 2021-06-29 despite migrated /202504 URL"
+            }
+          ],
+          "olympiad": [],
+          "goodneighborYear": {
+            "zh": "2021年",
+            "ru": [
+              "2021 год"
+            ],
+            "gloss": "2021 год — Си Цзиньпин и В. Путин объявили о продлении договора"
+          }
         }
       ],
       "sides": [
@@ -6801,7 +7068,8 @@
     },
     "countries": {
       "columns": {
-        "name": "zh"
+        "name": "zh",
+        "macaoname": "zh"
       },
       "rows": [
         {
@@ -6896,6 +7164,13 @@
               "Великобритания"
             ],
             "gloss": "Великобритания — война закончилась Нанкинским договором 29 августа 1842 года"
+          },
+          "macaoname": {
+            "zh": "英国",
+            "ru": [
+              "Британия"
+            ],
+            "gloss": "Британия — получила остров Гонконг по Нанкинскому договору 1842 года."
           }
         },
         {
@@ -6959,6 +7234,14 @@
               "quote": "《条约》规定中国清政府向日本赔偿军费达2亿两白银，并割让台湾、澎湖列岛和辽东半岛",
               "authority": "official",
               "checkedAt": "2026-10-18"
+            },
+            {
+              "title": "Brief History — Macao Government Tourism Office",
+              "url": "https://www.macaotourism.gov.mo/en/article/about-macao/brief-history",
+              "quote": "China, Japan, India and Europe",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "quoteNote": "В контексте перечислены направления торговли Макао; подпись не утверждает японское владение."
             }
           ],
           "olympiad": [],
@@ -6968,6 +7251,83 @@
               "Япония"
             ],
             "gloss": "Япония — после войны 1894–1895 годов заключила с Китаем Симоносекский договор"
+          },
+          "macaoname": {
+            "zh": "日本",
+            "ru": [
+              "Япония"
+            ],
+            "gloss": "Япония — торговый партнёр Макао на маршрутах между Китаем и Европой."
+          }
+        },
+        {
+          "id": "country-ph",
+          "name": {
+            "zh": "菲律宾",
+            "ru": [
+              "Филиппины"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Negotiating Empire, Part I — Library of Congress",
+              "url": "https://blogs.loc.gov/international-collections/2021/10/negotiating-empire-part-i-from-magellan-to-the-founding-of-manila-16th-18th-centuries/",
+              "quote": "The Spanish expedition that eventually succeeded in setting up Spanish rule in Manila arrived in 1565 on Cebu.",
+              "authority": "official",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/history/",
+              "title": "History and Heritage — Provincial Government of Cebu",
+              "quote": "In 1565, explorer Miguel López de Legazpi returned and established the first Spanish settlement in the Philippines, right in Cebu.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt at line 111; 24 words"
+            }
+          ],
+          "olympiad": [],
+          "macaoname": {
+            "zh": "菲律宾",
+            "ru": [
+              "Филиппины"
+            ],
+            "gloss": "Филиппины — испанская экспедиция прибыла на остров Себу в 1565 году."
+          }
+        },
+        {
+          "id": "country-pt",
+          "name": {
+            "zh": "葡萄牙",
+            "ru": [
+              "Португалия"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Brief History — Macao Government Tourism Office",
+              "url": "https://www.macaotourism.gov.mo/en/article/about-macao/brief-history",
+              "quote": "major entrepot for trade between China, Japan, India and Europe",
+              "authority": "official",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://whc.unesco.org/en/list/1110/",
+              "title": "Historic Centre of Macao — UNESCO World Heritage Centre",
+              "quote": "became a Portuguese settlement in the mid-16th century",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt at line 46"
+            }
+          ],
+          "olympiad": [
+            "2019-20-mun-mosobl-52"
+          ],
+          "macaoname": {
+            "zh": "葡萄牙",
+            "ru": [
+              "Португалия"
+            ],
+            "gloss": "Португалия — её поселение превратило Макао в узел торговли Китая с Европой."
           }
         }
       ]
@@ -6978,7 +7338,8 @@
         "name": "zh",
         "hongkongYear": "zh",
         "languageYear": "zh",
-        "laureate": "zh"
+        "laureate": "zh",
+        "anthemYear": "zh"
       },
       "rows": [
         {
@@ -7392,6 +7753,148 @@
           "laureate": {
             "zh": "戈尔巴乔夫",
             "ref": "modern-history/figures/per-ru-gorbachev"
+          }
+        },
+        {
+          "id": "mile-anthem-provisional1949",
+          "name": {
+            "zh": "以义勇军进行曲为代国歌的决议",
+            "ru": [
+              "Решение о временном гимне КНР 1949 года"
+            ]
+          },
+          "sources": [
+            {
+              "title": "中华人民共和国国歌 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956230.htm",
+              "quote": "1949年9月27日，中国人民政治协商会议第一届全体会议通过决议",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "additionalQuote": "为代国歌。"
+            },
+            {
+              "title": "《义勇军进行曲》：唱响世界的中国最强音 — 中国共产党新闻网",
+              "url": "https://cpc.people.com.cn/n1/2023/0929/c443712-40087849.html",
+              "quote": "1949年9月27日，中国人民政治协商会议第一届全体会议通过决议，在中华人民共和国国歌未正式制定前，以田汉作词、聂耳作曲的《义勇军进行曲》为代国歌。参会代表中就有《义勇军进行曲》词作者田汉和为歌曲传播作出巨大贡献的刘良模。1949年10月1日，伴随着《义勇军进行曲》雄壮的节奏，五星红旗升起在天安门广场。2004年3月14日，十届全国人大二次会议通过的宪法修正案规定“中华人民共和国国歌是《义勇军进行曲》”。《义勇军进行曲》作为国歌写入宪法。",
+              "authority": "official",
+              "checkedAt": "2026-10-25",
+              "verificationMethod": "reused-accepted-dossier-source-and-quote",
+              "cellProvenance": "data/dossiers/state.json#tables/symbols/rows/sym-guoge"
+            }
+          ],
+          "olympiad": [],
+          "anthemYear": {
+            "zh": "1949年",
+            "ru": [
+              "1949 год"
+            ],
+            "gloss": "1949 год — «Марш добровольцев» выбран временным гимном КНР 27 сентября."
+          }
+        },
+        {
+          "id": "mile-educationlaw1986",
+          "name": {
+            "zh": "义务教育法通过",
+            "ru": [
+              "Принятие Закона КНР об обязательном образовании"
+            ]
+          },
+          "sources": [
+            {
+              "title": "九年义务教育开始实施 — 中华人民共和国教育部",
+              "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3581/moe_2669/moe_2921/tnull_51639.html",
+              "quote": "1986年4月12日，六届全国人大四次会议审议通过了《中华人民共和国义务教育法》。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "quoteNote": "Сверено в поисковом индексе официальной страницы; полный open сайта moe.gov.cn в этой сессии нестабилен."
+            },
+            {
+              "url": "https://big5.www.gov.cn/gate/big5/www.gov.cn/guoqing/2021-10/29/content_5647617.htm",
+              "title": "中華人民共和國義務教育法 — 中國政府網（中國人大網）",
+              "quote": "1986年4月12日第六屆全國人民代表大會第四次會議通過",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; statute enactment heading"
+            }
+          ],
+          "olympiad": [],
+          "anthemYear": {
+            "zh": "1986年",
+            "ru": [
+              "1986 год"
+            ],
+            "gloss": "1986 год — 12 апреля принят Закон КНР об обязательном образовании."
+          }
+        },
+        {
+          "id": "mile-legislationlaw2000",
+          "name": {
+            "zh": "立法法通过",
+            "ru": [
+              "Принятие Закона КНР о правотворчестве"
+            ]
+          },
+          "sources": [
+            {
+              "title": "中华人民共和国立法法 — 北京市人民代表大会常务委员会",
+              "url": "https://www.bjrd.gov.cn/xwzx/qgrd/202303/t20230314_2935590.html",
+              "quote": "2000年3月15日第九届全国人民代表大会第三次会议通过",
+              "authority": "official",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://npc.people.com.cn/n/2014/1103/c14576-25965611.html",
+              "title": "立法法实施14年回眸：引领法治中国的制度力量 — 中国人大杂志",
+              "quote": "2000年3月15日，九届全国人大三次会议表决通过了《中华人民共和国立法法》。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; article by institutional legislature magazine"
+            }
+          ],
+          "olympiad": [],
+          "anthemYear": {
+            "zh": "2000年",
+            "ru": [
+              "2000 год"
+            ],
+            "gloss": "2000 год — 15 марта ВСНП принял Закон КНР о правотворчестве."
+          }
+        },
+        {
+          "id": "mile-anthem-constitution2004",
+          "name": {
+            "zh": "国歌写入宪法",
+            "ru": [
+              "Закрепление гимна в Конституции КНР"
+            ]
+          },
+          "sources": [
+            {
+              "title": "中华人民共和国国歌 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956230.htm",
+              "quote": "2004年3月14日，十届全国人大二次会议通过的宪法修正案，规定：中华人民共和国国歌是《义勇军进行曲》。",
+              "authority": "official",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "《义勇军进行曲》：唱响世界的中国最强音 — 中国共产党新闻网",
+              "url": "https://cpc.people.com.cn/n1/2023/0929/c443712-40087849.html",
+              "quote": "1949年9月27日，中国人民政治协商会议第一届全体会议通过决议，在中华人民共和国国歌未正式制定前，以田汉作词、聂耳作曲的《义勇军进行曲》为代国歌。参会代表中就有《义勇军进行曲》词作者田汉和为歌曲传播作出巨大贡献的刘良模。1949年10月1日，伴随着《义勇军进行曲》雄壮的节奏，五星红旗升起在天安门广场。2004年3月14日，十届全国人大二次会议通过的宪法修正案规定“中华人民共和国国歌是《义勇军进行曲》”。《义勇军进行曲》作为国歌写入宪法。",
+              "authority": "official",
+              "checkedAt": "2026-10-25",
+              "verificationMethod": "reused-accepted-dossier-source-and-quote",
+              "cellProvenance": "data/dossiers/state.json#tables/symbols/rows/sym-guoge"
+            }
+          ],
+          "olympiad": [
+            "2022-23-mun-tat-6"
+          ],
+          "anthemYear": {
+            "zh": "2004年",
+            "ru": [
+              "2004 год"
+            ],
+            "gloss": "2004 год — 14 марта ВСНП закрепил название гимна в Конституции КНР."
           }
         }
       ]

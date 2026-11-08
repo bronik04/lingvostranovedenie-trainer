@@ -1,0 +1,72 @@
+{
+  "questions": 15,
+  "cards": 120,
+  "options": 480,
+  "viewports": [
+    1280,
+    375
+  ],
+  "pinyin": [
+    false,
+    true
+  ],
+  "answers": [
+    "correct",
+    "incorrect"
+  ],
+  "pageErrors": [],
+  "results": [
+    {
+      "viewport": 1280,
+      "pinyin": false,
+      "correctAnswer": true,
+      "cards": 15
+    },
+    {
+      "viewport": 1280,
+      "pinyin": false,
+      "correctAnswer": false,
+      "cards": 15
+    },
+    {
+      "viewport": 1280,
+      "pinyin": true,
+      "correctAnswer": true,
+      "cards": 15
+    },
+    {
+      "viewport": 1280,
+      "pinyin": true,
+      "correctAnswer": false,
+      "cards": 15
+    },
+    {
+      "viewport": 375,
+      "pinyin": false,
+      "correctAnswer": true,
+      "cards": 15
+    },
+    {
+      "viewport": 375,
+      "pinyin": false,
+      "correctAnswer": false,
+      "cards": 15
+    },
+    {
+      "viewport": 375,
+      "pinyin": true,
+      "correctAnswer": true,
+      "cards": 15
+    },
+    {
+      "viewport": 375,
+      "pinyin": true,
+      "correctAnswer": false,
+      "cards": 15
+    }
+  ],
+  "screenshots": [
+    "/tmp/lingvo-batch5-release-mobile.png"
+  ],
+  "status": "passed"
+}

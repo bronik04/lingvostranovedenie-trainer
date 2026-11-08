@@ -1,0 +1,234 @@
+{
+  "reviewId": "regional-2026-11-08-batch-5",
+  "date": "2026-11-08",
+  "state": "draft-revised-pending-author-review",
+  "retainedQuestions": 16,
+  "originalReviewNumbersPreserved": true,
+  "excludedWithoutReplacement": [
+    {
+      "reviewNumber": 11,
+      "id": "2025-26-shk-mosobl-16",
+      "reason": "Исключить без замены по прямому указанию автора."
+    },
+    {
+      "reviewNumber": 12,
+      "id": "2021-22-mun-amur-7",
+      "reason": "После уточнения автор выбрал исключение без замены."
+    },
+    {
+      "reviewNumber": 14,
+      "id": "2025-26-mun-tat-51",
+      "reason": "Убрать вопрос по прямому указанию автора."
+    },
+    {
+      "reviewNumber": 17,
+      "id": "2025-26-mun-spb-9",
+      "reason": "Убрать вопрос: автор не видит достаточной связи задания с Китаем."
+    }
+  ],
+  "changedQuestions": [
+    {
+      "reviewNumber": 3,
+      "id": "2019-20-mun-kgd-2",
+      "originalQuestionRu": "Какое полезное ископаемое — главный источник энергии в Китае?",
+      "previewQuestionRu": "Какое полезное ископаемое занимало наибольшую долю в общем энергопотреблении Китая в 2025 году?",
+      "change": {
+        "originalQuestionRu": "Какое полезное ископаемое — главный источник энергии в Китае?",
+        "questionRu": "Какое полезное ископаемое занимало наибольшую долю в общем энергопотреблении Китая в 2025 году?",
+        "originalQuestionZh": "哪种矿产资源是中国的主要能源？",
+        "questionZh": "2025年，哪种矿产资源在中国能源消费总量中所占比重最大？",
+        "reason": "Добавлены год и показатель — общее энергопотребление, а не электрогенерация.",
+        "authorRequested": true,
+        "appliedToDraft": true,
+        "appliedToLiveBank": false,
+        "wordingAcceptedByAuthor": false
+      }
+    },
+    {
+      "reviewNumber": 6,
+      "id": "2021-22-mun-volog-8",
+      "originalQuestionRu": "Китай является 1-ым в мире по добыче…",
+      "previewQuestionRu": "По добыче какого из перечисленных ресурсов Китай занимал первое место в мире в 2025 году? Для железной руды учитывается масса пригодной руды.",
+      "change": {
+        "originalQuestionRu": "Китай является 1-ым в мире по добыче…",
+        "questionRu": "По добыче какого из перечисленных ресурсов Китай занимал первое место в мире в 2025 году? Для железной руды учитывается масса пригодной руды.",
+        "originalQuestionZh": null,
+        "questionZh": null,
+        "reason": "Сохранён выбор ресурса, по добыче которого Китай лидирует. Добавлены год и база сравнения железной руды; ключ и варианты не меняются.",
+        "authorRequested": true,
+        "appliedToDraft": true,
+        "appliedToLiveBank": false,
+        "wordingAcceptedByAuthor": false
+      }
+    },
+    {
+      "reviewNumber": 9,
+      "id": "2019-20-mun-mosobl-52",
+      "originalQuestionRu": "Кто захватил Аомэнь (Макао) в 50-е годы XVI века?",
+      "previewQuestionRu": "Представители какой страны в 1550-х годах основали в Макао торговое поселение с разрешения властей Гуандуна?",
+      "change": {
+        "originalQuestionRu": "Кто захватил Аомэнь (Макао) в 50-е годы XVI века?",
+        "questionRu": "Представители какой страны в 1550-х годах основали в Макао торговое поселение с разрешения властей Гуандуна?",
+        "originalQuestionZh": "澳门在 16 世纪 50 年代被_______占领。",
+        "questionZh": "16世纪50年代，来自哪个国家的人在广东官员许可下在澳门建立了贸易据点？",
+        "reason": "Сохранена проверка страны, основавшей португальское поселение в Макао в 1550-е. Неподтверждённый военный захват заменён разрешённым поселением; китайский текст согласован с русским.",
+        "authorRequested": true,
+        "appliedToDraft": true,
+        "appliedToLiveBank": false,
+        "wordingAcceptedByAuthor": false
+      }
+    },
+    {
+      "reviewNumber": 20,
+      "id": "2024-25-mun-krsk-6",
+      "originalQuestionRu": "Какой камень китайцы издревле считали «царем минералов», использовали в ритуальных и сакральных целях, так как верили, что он защищает от злых духов, оберегает; выявляет яды.",
+      "previewQuestionRu": "Какой камень в Древнем Китае использовали для изготовления ритуальных дисков би (璧)?",
+      "change": {
+        "originalQuestionRu": "Какой камень китайцы издревле считали «царем минералов», использовали в ритуальных и сакральных целях, так как верили, что он защищает от злых духов, оберегает; выявляет яды.",
+        "questionRu": "Какой камень в Древнем Китае использовали для изготовления ритуальных дисков би (璧)?",
+        "originalQuestionZh": null,
+        "questionZh": null,
+        "reason": "Сохранено распознавание нефрита как традиционного китайского ритуального камня. Вместо неподтверждённых эпитета и обнаружения ядов назван конкретный тип ритуального изделия.",
+        "authorRequested": true,
+        "appliedToDraft": true,
+        "appliedToLiveBank": false,
+        "wordingAcceptedByAuthor": false
+      }
+    }
+  ],
+  "changedOptions": [
+    {
+      "reviewNumber": 4,
+      "id": "2021-22-mun-amur-4",
+      "edits": [
+        {
+          "optionId": "o2",
+          "originalZh": "吉林省",
+          "zh": "吉林",
+          "reason": "Прежнее правило автора: названия городов и провинций показывать без 市/省; исходная форма сохранена.",
+          "appliedInPreview": true
+        },
+        {
+          "optionId": "o3",
+          "originalZh": "黑龙江省",
+          "zh": "黑龙江",
+          "reason": "Прежнее правило автора: названия городов и провинций показывать без 市/省; исходная форма сохранена.",
+          "appliedInPreview": true
+        },
+        {
+          "optionId": "o4",
+          "originalZh": "辽宁省",
+          "zh": "辽宁",
+          "reason": "Прежнее правило автора: названия городов и провинций показывать без 市/省; исходная форма сохранена.",
+          "appliedInPreview": true
+        },
+        {
+          "optionId": "o1",
+          "originalZh": "新疆维吾尔族自治区",
+          "zh": "新疆维吾尔自治区",
+          "reason": "По прямому указанию автора применено замечание: удалён лишний 族 из официального названия Синьцзяна.",
+          "authorRequested": true,
+          "appliedToDraft": true,
+          "appliedToLiveBank": false
+        }
+      ]
+    },
+    {
+      "reviewNumber": 16,
+      "id": "2025-26-mun-ryaz-5",
+      "edits": [
+        {
+          "optionId": "o1",
+          "originalZh": "一九九一年",
+          "zh": "1991年",
+          "reason": "Автор разрешил цифры: все четыре года приведены к одинаковой арабской записи.",
+          "authorRequested": true,
+          "appliedToDraft": true,
+          "appliedToLiveBank": false
+        },
+        {
+          "optionId": "o2",
+          "originalZh": "二〇〇一年",
+          "zh": "2001年",
+          "reason": "Автор разрешил цифры: все четыре года приведены к одинаковой арабской записи.",
+          "authorRequested": true,
+          "appliedToDraft": true,
+          "appliedToLiveBank": false
+        },
+        {
+          "optionId": "o3",
+          "originalZh": "二〇一一年",
+          "zh": "2011年",
+          "reason": "Автор разрешил цифры: все четыре года приведены к одинаковой арабской записи.",
+          "authorRequested": true,
+          "appliedToDraft": true,
+          "appliedToLiveBank": false
+        },
+        {
+          "optionId": "o4",
+          "originalZh": "二〇二一年",
+          "zh": "2021年",
+          "reason": "Автор разрешил цифры: все четыре года приведены к одинаковой арабской записи.",
+          "authorRequested": true,
+          "appliedToDraft": true,
+          "appliedToLiveBank": false
+        }
+      ]
+    }
+  ],
+  "anthemDuplicateRecheck": {
+    "reviewNumber": 15,
+    "id": "2022-23-mun-tat-6",
+    "activeQuestionsCompared": 1030,
+    "fullBankQuestionsCompared": 1269,
+    "queryScope": [
+      "гимн / 国歌 / 义勇军进行曲",
+      "2004 / Конституция / юридическое или законодательное утверждение",
+      "дата утверждения гимна РФ; прямые и обратные соответствия"
+    ],
+    "activeRelatedQuestions": [
+      {
+        "id": "2016-17-zak-7",
+        "questionRu": "Кто написал музыку государственного гимна Китая?",
+        "answer": "聂耳",
+        "whyDistinct": "Проверяется название, автор слов, автор музыки или исходный фильм, а не дата правового закрепления гимна КНР."
+      },
+      {
+        "id": "2017-18-reg-5",
+        "questionRu": "Как называется гимн КНР?",
+        "answer": "义勇军进行曲",
+        "whyDistinct": "Проверяется название, автор слов, автор музыки или исходный фильм, а не дата правового закрепления гимна КНР."
+      },
+      {
+        "id": "2021-22-reg-qbb2e02",
+        "questionRu": "В каком году был законодательно утвержден современный государственный гимн Российской Федерации?",
+        "answer": "2000 年",
+        "whyDistinct": "Та же форма вопроса о годе правового утверждения, но другой государственный гимн: РФ и 2000 год, а не КНР и конституционное закрепление 2004 года."
+      },
+      {
+        "id": "cinema-q34",
+        "questionRu": "Для какого фильма была написана песня «Марш добровольцев», ставшая гимном КНР?",
+        "answer": "风云儿女",
+        "whyDistinct": "Проверяется название, автор слов, автор музыки или исходный фильм, а не дата правового закрепления гимна КНР."
+      },
+      {
+        "id": "state-q10",
+        "questionRu": "Кто написал слова государственного гимна КНР?",
+        "answer": "田汉",
+        "whyDistinct": "Проверяется название, автор слов, автор музыки или исходный фильм, а не дата правового закрепления гимна КНР."
+      }
+    ],
+    "exactOrSemanticDuplicates": [],
+    "sameShapeDifferentFact": "2021-22-reg-qbb2e02",
+    "selfMatchInConservedBank": "2022-23-mun-tat-6",
+    "earlierDeferredMentions": [
+      "2026-11-07-regional-batch-3-semantic-review.json",
+      "2026-11-07-regional-batch-4-proposals.json"
+    ],
+    "verdict": "Смыслового дубля нет. Похожий действующий вопрос — о гимне РФ и 2000 годе. Сам кандидат ранее встречался в рабочих списках как отложенный из-за неоднозначности; он не опубликован.",
+    "wordingChanged": false,
+    "publicationAuthorized": false
+  },
+  "publicationAuthorized": false,
+  "operationalChangesApplied": false
+}

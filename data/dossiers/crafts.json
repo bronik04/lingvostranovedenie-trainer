@@ -8886,7 +8886,8 @@
       "columns": {
         "shengmaterial": "zh",
         "name": "zh",
-        "oraclematerial": "zh"
+        "oraclematerial": "zh",
+        "jaderitualmaterial": "zh"
       },
       "rows": [
         {
@@ -9176,6 +9177,157 @@
             ],
             "gloss": "Бумага — Цай Лунь улучшил её изготовление из растительных волокон в эпоху Восточной Хань."
           }
+        },
+        {
+          "id": "material-jasper",
+          "name": {
+            "zh": "碧石",
+            "gloss": "Яшма — скрытокристаллический кварц; её окраску создают минеральные примеси"
+          },
+          "jaderitualmaterial": {
+            "zh": "碧石",
+            "gloss": "Яшма — скрытокристаллический кварц; её окраску создают минеральные примеси"
+          },
+          "sources": [
+            {
+              "url": "https://zrzykpywh.magtechjournal.com/article/2022/2096-9791/2096-9791-0-3-38.shtml",
+              "title": "中国地质博物馆 — 碧石：色彩缤纷的别样玉髓",
+              "quote": "碧石，作为单独玉石品种，与玉髓、玛瑙均属于隐晶质石英质玉类。",
+              "authority": "academic",
+              "verificationMethod": "browsed_full_page",
+              "checkedAt": "2026-11-08",
+              "extraQuote": "杂质成分决定了碧石的颜色、条痕和外观",
+              "provenance": "accepted_batch5_caption"
+            },
+            {
+              "title": "碧石的宝石学分类及定义界定初探 — 矿物岩石 2021,41(4):1–13",
+              "url": "https://kwys.cdut.edu.cn/cn/article/pdf/preview/10.19719/j.cnki.1001-6872.2021.04.01.pdf",
+              "quote": "碧石是以隐晶质为主的矿物集合体",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-pdf-extracted",
+              "page": 3,
+              "extraQuote": "红碧石的致色矿物为赤铁矿",
+              "extraQuotePage": 1
+            }
+          ],
+          "olympiad": []
+        },
+        {
+          "id": "material-rockcrystal",
+          "name": {
+            "zh": "水晶",
+            "gloss": "Горный хрусталь — прозрачные кристаллы кварца"
+          },
+          "jaderitualmaterial": {
+            "zh": "水晶",
+            "gloss": "Горный хрусталь — прозрачные кристаллы кварца"
+          },
+          "sources": [
+            {
+              "url": "https://web3.nmns.edu.tw/Exhibits/114/2025earths-treasures/",
+              "title": "國立自然科學博物館 — 大地瑰寶 礦物常設展",
+              "quote": "在裂隙或孔洞中亦可發現呈透明的柱狀晶體，稱之為水晶。",
+              "authority": "official",
+              "verificationMethod": "browsed_search_excerpt",
+              "checkedAt": "2026-11-08",
+              "provenance": "accepted_batch5_caption"
+            },
+            {
+              "title": "石英家族 水晶（一）· 水晶物語 — 國立自然科學博物館館訊191期第5版，莊文星",
+              "url": "https://libknowledge.nmns.edu.tw/nmns/upload/lib/000001459/209000c/191-5.pdf",
+              "quote": "大型透明的石英結晶稱為水晶",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; direct PDF open timed out",
+              "extraQuote": "化學成份是二氧化矽（SiO2）"
+            }
+          ],
+          "olympiad": []
+        },
+        {
+          "id": "material-nephrite",
+          "name": {
+            "zh": "软玉",
+            "gloss": "Нефрит — плотный камень из переплетённых тремолита и актинолита"
+          },
+          "jaderitualmaterial": {
+            "zh": "软玉",
+            "gloss": "Нефрит — плотный камень из переплетённых тремолита и актинолита"
+          },
+          "sources": [
+            {
+              "url": "https://www.nmns.edu.tw/collect/catalog/detail/?id=266",
+              "title": "國立自然科學博物館 — 軟玉",
+              "quote": "由透閃石和陽起石交織而成的閃玉，又名軟玉",
+              "authority": "official",
+              "verificationMethod": "browsed_full_page",
+              "checkedAt": "2026-11-08",
+              "provenance": "accepted_batch5_caption"
+            },
+            {
+              "title": "玉璧 — 國立歷史博物館 / 國家文化記憶庫",
+              "url": "https://tcmb.culture.tw/zh-tw/detail?id=14000095910&indexCode=MOCCOLLECTIONS",
+              "quote": "採用綠色系的軟玉; 而蒼璧即是祭天之器。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; two separated passages joined by a semicolon"
+            },
+            {
+              "title": "玉璧 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/collection/jade/233766.html",
+              "quote": "古人认为其象征着上天，为十分重要的祭祀礼仪用器",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; direct open timed out"
+            },
+            {
+              "title": "中国人民大学·第一届文化史系列讨论会：陆建芳讲座纪要",
+              "url": "https://cdgi.ruc.edu.cn/ppdt/whssxllt/dyj6/68836ff95f02400a84b1ba68d54242e4.htm",
+              "quote": "玉器具有保吉辟邪功能成为社会共识",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; direct open returned redirect loop",
+              "extraQuote": "5500年前至商代末时期为礼玉时代，软玉得到普遍认同",
+              "supportLimit": "В одном абзаце сообщены принятие мягкого нефрита в эпоху ритуального нефрита и защитная функция нефритовых изделий в Хань–Вэй–Цзинь–Южных и Северных династиях. Эти два периода не следует сливать в одну датировку."
+            }
+          ],
+          "olympiad": [
+            "2024-25-mun-krsk-6"
+          ]
+        },
+        {
+          "id": "material-quartz",
+          "name": {
+            "zh": "石英",
+            "gloss": "Кварц — минерал из диоксида кремния; из него изготавливают стекло"
+          },
+          "jaderitualmaterial": {
+            "zh": "石英",
+            "gloss": "Кварц — минерал из диоксида кремния; из него изготавливают стекло"
+          },
+          "sources": [
+            {
+              "url": "https://ginfo.cedd.gov.hk/hkss/tc/publications-and-resources/educational-materials/hong-kong-geology/chapter-1/index.html",
+              "title": "香港土木工程拓展署 — 礦物與岩石",
+              "quote": "石英由化合物二氧化矽形成。",
+              "authority": "official",
+              "verificationMethod": "browsed_full_page",
+              "checkedAt": "2026-11-08",
+              "extraQuote": "石英是製造玻璃的原料。",
+              "provenance": "accepted_batch5_caption"
+            },
+            {
+              "title": "石英家族 水晶（一）· 水晶物語 — 國立自然科學博物館館訊191期第5版，莊文星",
+              "url": "https://libknowledge.nmns.edu.tw/nmns/upload/lib/000001459/209000c/191-5.pdf",
+              "quote": "大型透明的石英結晶稱為水晶",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; direct PDF open timed out",
+              "extraQuote": "化學成份是二氧化矽（SiO2）"
+            }
+          ],
+          "olympiad": []
         }
       ]
     }

@@ -1,0 +1,45 @@
+{
+  "reviewId": "regional-2026-11-08-batch-5",
+  "date": "2026-11-08",
+  "status": "passed",
+  "checks": {
+    "questions": 20,
+    "options": 80,
+    "topics": 6,
+    "questionStemsVerbatim": true,
+    "unrequestedStemEdits": 0,
+    "maxCaptionLength": 83,
+    "nearestActiveRelationsReviewed": 57,
+    "activeSnapshot": 1030,
+    "eligibleSnapshot": 223,
+    "protectedFilesUnchanged": 146,
+    "protectedFilesTotal": 146,
+    "explicitToponymPreviewChanges": [
+      {
+        "questionId": "2021-22-mun-amur-4",
+        "optionId": "o2",
+        "originalZh": "吉林省",
+        "previewZh": "吉林"
+      },
+      {
+        "questionId": "2021-22-mun-amur-4",
+        "optionId": "o3",
+        "originalZh": "黑龙江省",
+        "previewZh": "黑龙江"
+      },
+      {
+        "questionId": "2021-22-mun-amur-4",
+        "optionId": "o4",
+        "originalZh": "辽宁省",
+        "previewZh": "辽宁"
+      }
+    ],
+    "publicationAuthorized": false,
+    "fullBuildOrSuiteRun": false
+  },
+  "errors": [],
+  "limits": [
+    "Галочка обозначает исходный ключ, а не доказанность спорной посылки. Замечания решает автор.",
+    "Проверка только draft; операционные файлы и публикация не менялись."
+  ]
+}

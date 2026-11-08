@@ -8066,6 +8066,421 @@
           "core": true
         }
       ]
+    },
+    "scenicplaces": {
+      "columns": {
+        "name": "zh",
+        "country": "zh",
+        "welcomingpineplace": "zh",
+        "whitesnakeplace": "zh",
+        "about": "ru"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "sp-huangshan",
+          "name": {
+            "zh": "黄山",
+            "ru": [
+              "Хуаншань"
+            ],
+            "ref": "nature/mountains/mtn-huangshan"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "sources": [
+            {
+              "title": "中国的世界自然与文化遗产——黄山 — 中国新闻网（人民政协报）",
+              "url": "https://www.chinanews.com.cn/cul/2011/09-15/3330748.shtml",
+              "quote": "黄山位于中国东部安徽省南部 … 以奇松、怪石、云海、温泉著名，并称“黄山四绝”",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "reusedFrom": "data/dossiers/nature.json / mountains / mtn-huangshan / sources[0]"
+            },
+            {
+              "title": "“双遗产”名山在中国——黄山 — 新华网",
+              "url": "http://www.news.cn/culture/20220608/fb4a9c133f3c4ba692f29ae13d795c03/c.html",
+              "quote": "1990年，黄山被联合国教科文组织批准列为世界文化与自然遗产",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "reusedFrom": "data/dossiers/nature.json / mountains / mtn-huangshan / sources[1]"
+            },
+            {
+              "title": "安徽：岁月中的黄山迎客松 — 国家林业和草原局",
+              "url": "https://www.forestry.gov.cn/c/www/dfdt/596061.jhtml",
+              "quote": "景区自1981年起为迎客松设立专职守护人",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 7 / o1"
+            }
+          ],
+          "olympiad": [
+            "2021-22-mun-mosobl-59"
+          ],
+          "core": false,
+          "welcomingpineplace": {
+            "zh": "黄山",
+            "ru": [
+              "Хуаншань"
+            ],
+            "gloss": "Хуаншань — с 1981 года у сосны Инкэсун есть специальные хранители",
+            "ref": "nature/mountains/mtn-huangshan"
+          },
+          "about": "Хуаншань — с 1981 года у сосны Инкэсун есть специальные хранители."
+        },
+        {
+          "id": "sp-emeishan",
+          "name": {
+            "zh": "峨眉山",
+            "ru": [
+              "Эмэйшань"
+            ],
+            "ref": "nature/mountains/mtn-emeishan"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "sources": [
+            {
+              "title": "“双遗产”名山在中国——峨眉山 — 新华网",
+              "url": "http://www.news.cn/culture/20220610/ed27f499661a4edea7df2fb46552d630/c.html",
+              "quote": "1996年，峨眉山-乐山大佛景区被联合国教科文组织批准列为世界文化与自然遗产",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "reusedFrom": "data/dossiers/nature.json / mountains / mtn-emeishan / sources[0]"
+            },
+            {
+              "title": "海拔3099米！峨眉山最高峰万佛顶重新对外开放 — 中国日报网",
+              "url": "http://cn.chinadaily.com.cn/a/202105/28/WS60b04acba3101e7ce97521c5.html",
+              "quote": "四川峨眉山景区最高峰——海拔3099米的万佛顶",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "reusedFrom": "data/dossiers/nature.json / mountains / mtn-emeishan / sources[1]"
+            },
+            {
+              "title": "峨眉山市十四五文旅康养产业发展规划 — 峨眉山市人民政府",
+              "url": "https://www.emeishan.gov.cn/emss/efbf/2023022214035442128800000.html",
+              "quote": "峨眉山被称为“佛之长子”，是普贤菩萨的道场",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 7 / o2"
+            }
+          ],
+          "olympiad": [],
+          "core": false,
+          "welcomingpineplace": {
+            "zh": "峨眉山",
+            "ru": [
+              "Эмэйшань"
+            ],
+            "gloss": "Эмэйшань — буддийская священная гора, обитель бодхисаттвы Пусяня",
+            "ref": "nature/mountains/mtn-emeishan"
+          },
+          "about": "Эмэйшань — буддийская священная гора, обитель бодхисаттвы Пусяня."
+        },
+        {
+          "id": "sp-leshan",
+          "name": {
+            "zh": "乐山",
+            "ru": [
+              "Лэшань"
+            ]
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "sources": [
+            {
+              "title": "Mount Emei, including Leshan Giant Buddha — UNESCO",
+              "url": "https://whc.unesco.org/en/list/779/",
+              "quote": "carved out of a hillside in the 8th century and looking down on the confluence of three rivers. At 71 m high",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 7 / o3"
+            },
+            {
+              "title": "5A级旅游景区 — 乐山市乐山大佛景区 — 文化和旅游部",
+              "url": "https://sjfw.mct.gov.cn/site/dataservice/culdetails?curId=10&id=35049",
+              "quote": "乐山大佛景区地处四川省乐山市市中区南、岷江东岸 … 佛像通高71米",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened",
+              "quoteNote": "Два дословных фрагмента одного абзаца, пропуск обозначен многоточием."
+            }
+          ],
+          "olympiad": [],
+          "core": false,
+          "welcomingpineplace": {
+            "zh": "乐山",
+            "ru": [
+              "Лэшань"
+            ],
+            "gloss": "Лэшань — здесь высечена в скале гигантская статуя Будды высотой 71 м"
+          },
+          "about": "Лэшань — здесь высечена в скале гигантская статуя Будды высотой 71 м."
+        },
+        {
+          "id": "sp-wuyishan",
+          "name": {
+            "zh": "武夷山",
+            "ru": [
+              "Уишань"
+            ]
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "sources": [
+            {
+              "title": "走进国家公园 领略大美自然 — 国家林业和草原局",
+              "url": "https://www.forestry.gov.cn/c/www/zrgjgy/583452.jhtml",
+              "quote": "九曲溪漂流是武夷山的特色代表，可供公众体验游览。",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 7 / o4"
+            },
+            {
+              "title": "Mount Wuyi — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/911/",
+              "quote": "The serene beauty of the dramatic gorges of the Nine-Bend River is of exceptional scenic quality",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened"
+            }
+          ],
+          "olympiad": [],
+          "core": false,
+          "welcomingpineplace": {
+            "zh": "武夷山",
+            "ru": [
+              "Уишань"
+            ],
+            "gloss": "Уишань — национальный парк, где туристы сплавляются по реке Цзюцюйси"
+          },
+          "about": "Уишань — национальный парк, где туристы сплавляются по реке Цзюцюйси."
+        },
+        {
+          "id": "sp-summer-palace",
+          "name": {
+            "zh": "颐和园",
+            "ru": [
+              "Ихэюань"
+            ],
+            "ref": "landmarks/gardens/lm-cn-summer-palace-garden"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "sources": [
+            {
+              "title": "颐和园 — 北京市公园管理中心",
+              "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_lsmy/201911/t20191129_732237.html",
+              "quote": "颐和园位于北京西北郊海淀…乾隆十五年（1750年）",
+              "checkedAt": "2026-10-17",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "reusedFrom": "data/dossiers/landmarks.json / gardens / lm-cn-summer-palace-garden / sources[0]"
+            },
+            {
+              "title": "颐和园 — 北京市文物局",
+              "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738088/1742735/364350/index.html",
+              "quote": "以万寿山、昆明湖构成其基本框架",
+              "checkedAt": "2026-10-17",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "reusedFrom": "data/dossiers/landmarks.json / gardens / lm-cn-summer-palace-garden / sources[1]"
+            },
+            {
+              "url": "https://www.summerpalace.net.cn/about.html",
+              "title": "颐和园官网 — 关于",
+              "quote": "颐和园主景区由万寿山、昆明湖组成",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 8 / o1"
+            }
+          ],
+          "olympiad": [],
+          "core": false,
+          "whitesnakeplace": {
+            "zh": "颐和园",
+            "ru": [
+              "Ихэюань"
+            ],
+            "gloss": "Ихэюань — императорский парк Пекина, построенный вокруг Ваньшоушань и Куньминху",
+            "ref": "landmarks/gardens/lm-cn-summer-palace-garden"
+          },
+          "about": "Ихэюань — императорский парк Пекина, построенный вокруг Ваньшоушань и Куньминху."
+        },
+        {
+          "id": "sp-xihu",
+          "name": {
+            "zh": "西湖",
+            "ru": [
+              "Сиху"
+            ],
+            "ref": "nature/lakes/lake-xihu"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "sources": [
+            {
+              "title": "世界遗产和城市生活相得益彰（文化脉动） — 人民日报",
+              "url": "http://sn.people.com.cn/n2/2021/0215/c378302-34578325.html",
+              "quote": "西湖位于浙江省杭州市的城市中心区以西地带",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "reusedFrom": "data/dossiers/nature.json / lakes / lake-xihu / sources[0]"
+            },
+            {
+              "title": "杭州西湖 — 生态中国网",
+              "url": "https://www.eco.gov.cn/news_info/40315.html",
+              "quote": "湖面面积为6.38平方千米，是中国主要的观赏性淡水湖泊",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "reusedFrom": "data/dossiers/nature.json / lakes / lake-xihu / sources[1]"
+            },
+            {
+              "url": "https://www.mct.gov.cn/ggfw/zyjzzt/yanchu/yanchuwqhg/202411/t20241107_956108.html",
+              "title": "文化和旅游部 — 国家大剧院制作京剧《白蛇传》",
+              "quote": "西湖断桥边偶遇许仙，白许互生爱慕",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 8 / o2"
+            },
+            {
+              "url": "https://www.ihchina.cn/art/detail/id/12185.html",
+              "title": "中国非物质文化遗产网 — 白蛇传传说",
+              "quote": "白蛇传与断桥、雷峰塔及西湖等自然和文化景观形成了密不可分的关系",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 8 / keySources[0]"
+            }
+          ],
+          "olympiad": [
+            "2020-21-mun-mosobl-54"
+          ],
+          "core": false,
+          "whitesnakeplace": {
+            "zh": "西湖",
+            "ru": [
+              "Сиху"
+            ],
+            "gloss": "Сиху — у его Сломанного моста Белая змея встречает Сюй Сяня",
+            "ref": "nature/lakes/lake-xihu"
+          },
+          "about": "Сиху — у его Сломанного моста Белая змея встречает Сюй Сяня."
+        },
+        {
+          "id": "sp-kunminghu",
+          "name": {
+            "zh": "昆明湖",
+            "ru": [
+              "Куньминху"
+            ]
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "sources": [
+            {
+              "url": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/summerpalace/",
+              "title": "北京市政府 — Summer Palace",
+              "quote": "Summer Palace consists of the Longevity Hill and Kunming Lake … Inspired by Hangzhou's West Lake",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 8 / o3",
+              "quoteNote": "Два дословных фрагмента quote и extraQuote из уже принятого источника; повторно страница не открывалась."
+            },
+            {
+              "url": "https://www.summerpalace.net.cn/about.html",
+              "title": "颐和园官网 — 关于",
+              "quote": "颐和园主景区由万寿山、昆明湖组成",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "checkedAt": "2026-11-08",
+              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 8 / o1"
+            }
+          ],
+          "olympiad": [],
+          "core": false,
+          "whitesnakeplace": {
+            "zh": "昆明湖",
+            "ru": [
+              "Куньминху"
+            ],
+            "gloss": "Куньминху — озеро в пекинском парке Ихэюань; сад вдохновлён озером Сиху"
+          },
+          "about": "Куньминху — озеро в пекинском парке Ихэюань; сад вдохновлён озером Сиху."
+        },
+        {
+          "id": "sp-taishan",
+          "name": {
+            "zh": "泰山",
+            "ru": [
+              "Тайшань"
+            ],
+            "ref": "nature/mountains/mtn-taishan"
+          },
+          "country": {
+            "zh": "中国",
+            "gloss": "Китай"
+          },
+          "sources": [
+            {
+              "title": "“双遗产”名山在中国——泰山 — 新华网",
+              "url": "http://www.news.cn/culture/20220607/02afccab91a44ee1b2478afe0a5ab6a6/c.html",
+              "quote": "1987年被联合国教科文组织批准列为中国第一个世界文化与自然遗产 … 历代君王封禅祭祀",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "reusedFrom": "data/dossiers/nature.json / mountains / mtn-taishan / sources[0]"
+            },
+            {
+              "title": "天下之“道”·第6期|海拔不算高地位却很高的山东泰山 — 生态中国网",
+              "url": "https://www.eco.gov.cn/index.php/news_info/48869.html",
+              "quote": "泰山，又名岱山、岱宗、岱岳、东岳、泰岳，为中国著名的五岳之一，有“五岳之首”",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+              "reusedFrom": "data/dossiers/nature.json / mountains / mtn-taishan / sources[1]"
+            }
+          ],
+          "olympiad": [],
+          "core": false,
+          "whitesnakeplace": {
+            "zh": "泰山",
+            "ru": [
+              "Тайшань"
+            ],
+            "gloss": "Тайшань — священная гора Шаньдуна, где императоры совершали обряды фэншань",
+            "ref": "nature/mountains/mtn-taishan"
+          },
+          "about": "Тайшань — священная гора Шаньдуна, где императоры совершали обряды фэншань."
+        }
+      ]
     }
   }
 }

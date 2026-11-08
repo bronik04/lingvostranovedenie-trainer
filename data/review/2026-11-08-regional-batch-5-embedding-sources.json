@@ -1,0 +1,4359 @@
+{
+  "geo": {
+    "task": "regional-batch5-geography-embedding-evidence",
+    "date": "2026-11-08",
+    "readOnlyRepository": true,
+    "publicationAuthorized": false,
+    "reviewNumbers": [
+      1,
+      4,
+      5,
+      7,
+      8,
+      10
+    ],
+    "policy": {
+      "captions": "Все 24 подписи скопированы из принятого манифеста без редакции.",
+      "wording": "Формулировки, ID и ключи сохранены; варианты взяты из options.zh, включая исправление 新疆维吾尔自治区 и ранее принятую нормализацию 省.",
+      "pool": "У каждой новой колонки ровно четыре ячейки: встраивание не добавит пятый вариант.",
+      "newTable": "Одна тематическая таблица scenicplaces разрешена исполнителем: 5 явных проекций с name.ref, 3 ранее отсутствовавших самостоятельных места; новых автономных вопросов нет."
+    },
+    "integrationMappings": [
+      {
+        "reviewNumber": 1,
+        "bankId": "2018-19-mun-lenobl-49",
+        "acceptedQuestionRu": "В каком городе находится телебашня «Восточная жемчужина» (东方明珠)?",
+        "acceptedQuestionZh": "“东方明珠”在哪一座城市？",
+        "answerOptionId": "o3",
+        "questionDefinition": {
+          "id": "provinces-q134",
+          "embeds": "2018-19-mun-lenobl-49",
+          "status": "accepted",
+          "fact": {
+            "table": "cities",
+            "row": "city-shanghai",
+            "ask": "pearlcity"
+          },
+          "exclude": [],
+          "check": {
+            "verdict": "accept",
+            "note": "Автор принял все оставшиеся 16 вопросов партии 5 и разрешил встраивание 2026-11-08; публикация не разрешена. ID, формулировка, ключ, четыре варианта и подписи сохранены. Географическая проверка: /tmp/lingvo-batch5-embed-geo-evidence.json."
+          }
+        },
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "北京",
+            "caption": "Пекин — здесь находится Центральная телебашня высотой 405 м",
+            "dossier": "provinces",
+            "table": "cities",
+            "row": "city-beijing",
+            "column": "pearlcity",
+            "canonicalExistingRow": "provinces/cities/city-beijing",
+            "rowSourceCountBefore": 5
+          },
+          {
+            "optionId": "o2",
+            "zh": "济南",
+            "caption": "Цзинань — центр Шаньдуна, известный как «город родников»",
+            "dossier": "provinces",
+            "table": "cities",
+            "row": "city-jinan",
+            "column": "pearlcity",
+            "canonicalExistingRow": "provinces/cities/city-jinan",
+            "rowSourceCountBefore": 3
+          },
+          {
+            "optionId": "o3",
+            "zh": "上海",
+            "caption": "Шанхай — «Восточная жемчужина» стоит в Пудуне; высота башни — 468 м",
+            "dossier": "provinces",
+            "table": "cities",
+            "row": "city-shanghai",
+            "column": "pearlcity",
+            "canonicalExistingRow": "provinces/cities/city-shanghai",
+            "rowSourceCountBefore": 7
+          },
+          {
+            "optionId": "o4",
+            "zh": "香港",
+            "caption": "Гонконг — у устья Чжуцзяна; включает Коулун и Новые территории",
+            "dossier": "provinces",
+            "table": "cities",
+            "row": "city-hongkong",
+            "column": "pearlcity",
+            "canonicalExistingRow": "provinces/cities/city-hongkong",
+            "rowSourceCountBefore": 4
+          }
+        ]
+      },
+      {
+        "reviewNumber": 4,
+        "bankId": "2021-22-mun-amur-4",
+        "acceptedQuestionRu": "Какая из этих провинций/ регионов не граничит с Россией?",
+        "acceptedQuestionZh": null,
+        "answerOptionId": "o4",
+        "questionDefinition": {
+          "id": "provinces-q135",
+          "embeds": "2021-22-mun-amur-4",
+          "status": "accepted",
+          "fact": {
+            "table": "provinces",
+            "row": "prov-liaoning",
+            "ask": "russiaborderregionname"
+          },
+          "exclude": [],
+          "check": {
+            "verdict": "accept",
+            "note": "Автор принял все оставшиеся 16 вопросов партии 5 и разрешил встраивание 2026-11-08; публикация не разрешена. ID, формулировка, ключ, четыре варианта и подписи сохранены. Географическая проверка: /tmp/lingvo-batch5-embed-geo-evidence.json."
+          }
+        },
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "新疆维吾尔自治区",
+            "caption": "Синьцзян — на его участке общая граница с Россией имеет длину около 55 км",
+            "dossier": "provinces",
+            "table": "provinces",
+            "row": "prov-xinjiang",
+            "column": "russiaborderregionname",
+            "canonicalExistingRow": "provinces/provinces/prov-xinjiang",
+            "rowSourceCountBefore": 5
+          },
+          {
+            "optionId": "o2",
+            "zh": "吉林",
+            "caption": "Цзилинь — на востоке граничит с Россией, на юго-востоке — с КНДР",
+            "dossier": "provinces",
+            "table": "provinces",
+            "row": "prov-jilin",
+            "column": "russiaborderregionname",
+            "canonicalExistingRow": "provinces/provinces/prov-jilin",
+            "rowSourceCountBefore": 4
+          },
+          {
+            "optionId": "o3",
+            "zh": "黑龙江",
+            "caption": "Хэйлунцзян — Россия находится за пограничными реками на севере и востоке",
+            "dossier": "provinces",
+            "table": "provinces",
+            "row": "prov-heilongjiang",
+            "column": "russiaborderregionname",
+            "canonicalExistingRow": "provinces/provinces/prov-heilongjiang",
+            "rowSourceCountBefore": 3
+          },
+          {
+            "optionId": "o4",
+            "zh": "辽宁",
+            "caption": "Ляонин — на юге омывается Жёлтым морем и Бохайским заливом",
+            "dossier": "provinces",
+            "table": "provinces",
+            "row": "prov-liaoning",
+            "column": "russiaborderregionname",
+            "canonicalExistingRow": "provinces/provinces/prov-liaoning",
+            "rowSourceCountBefore": 4
+          }
+        ]
+      },
+      {
+        "reviewNumber": 5,
+        "bankId": "2020-21-mun-mosobl-46",
+        "acceptedQuestionRu": "В каком городе находится пагода Лэйфэн?",
+        "acceptedQuestionZh": "雷峰塔位于哪个城市?",
+        "answerOptionId": "o4",
+        "questionDefinition": {
+          "id": "provinces-q136",
+          "embeds": "2020-21-mun-mosobl-46",
+          "status": "accepted",
+          "fact": {
+            "table": "cities",
+            "row": "city-hangzhou",
+            "ask": "leifengcity"
+          },
+          "exclude": [],
+          "check": {
+            "verdict": "accept",
+            "note": "Автор принял все оставшиеся 16 вопросов партии 5 и разрешил встраивание 2026-11-08; публикация не разрешена. ID, формулировка, ключ, четыре варианта и подписи сохранены. Географическая проверка: /tmp/lingvo-batch5-embed-geo-evidence.json."
+          }
+        },
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "北京",
+            "caption": "Пекин — Белая пагода парка Бэйхай стала одним из символов города",
+            "dossier": "provinces",
+            "table": "cities",
+            "row": "city-beijing",
+            "column": "leifengcity",
+            "canonicalExistingRow": "provinces/cities/city-beijing",
+            "rowSourceCountBefore": 5
+          },
+          {
+            "optionId": "o2",
+            "zh": "洛阳",
+            "caption": "Лоян — здесь находятся буддийские пещерные храмы Лунмэнь",
+            "dossier": "provinces",
+            "table": "cities",
+            "row": "city-luoyang",
+            "column": "leifengcity",
+            "canonicalExistingRow": "provinces/cities/city-luoyang",
+            "rowSourceCountBefore": 4
+          },
+          {
+            "optionId": "o3",
+            "zh": "西安",
+            "caption": "Сиань — Большая пагода диких гусей построена для сутр Сюаньцзана",
+            "dossier": "provinces",
+            "table": "cities",
+            "row": "city-xian",
+            "column": "leifengcity",
+            "canonicalExistingRow": "provinces/cities/city-xian",
+            "rowSourceCountBefore": 5
+          },
+          {
+            "optionId": "o4",
+            "zh": "杭州",
+            "caption": "Ханчжоу — новую пагоду Лэйфэн возвели в 2002 году, сохранив внутри руины старой",
+            "dossier": "provinces",
+            "table": "cities",
+            "row": "city-hangzhou",
+            "column": "leifengcity",
+            "canonicalExistingRow": "provinces/cities/city-hangzhou",
+            "rowSourceCountBefore": 3
+          }
+        ]
+      },
+      {
+        "reviewNumber": 7,
+        "bankId": "2021-22-mun-mosobl-59",
+        "acceptedQuestionRu": "В каком заповеднике находится знаменитая «сосна, приветствующая гостей» (инкэсун)?",
+        "acceptedQuestionZh": null,
+        "answerOptionId": "o1",
+        "questionDefinition": {
+          "id": "nature-q165",
+          "embeds": "2021-22-mun-mosobl-59",
+          "status": "accepted",
+          "fact": {
+            "table": "scenicplaces",
+            "row": "sp-huangshan",
+            "ask": "welcomingpineplace"
+          },
+          "exclude": [],
+          "check": {
+            "verdict": "accept",
+            "note": "Автор принял вопросы и подписи партии 5 и разрешил встраивание 2026-11-08; публикация не разрешена. Восемь мест — тематическая таблица для двух смешанных наборов; канонические строки связаны через name.ref. Ключ, исходные ID и все четыре принятые подписи сохранены."
+          }
+        },
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "黄山",
+            "caption": "Хуаншань — с 1981 года у сосны Инкэсун есть специальные хранители",
+            "dossier": "nature",
+            "table": "scenicplaces",
+            "row": "sp-huangshan",
+            "column": "welcomingpineplace",
+            "canonicalExistingRow": "nature/mountains/mtn-huangshan",
+            "rowSourceCountAfter": 3
+          },
+          {
+            "optionId": "o2",
+            "zh": "峨眉山",
+            "caption": "Эмэйшань — буддийская священная гора, обитель бодхисаттвы Пусяня",
+            "dossier": "nature",
+            "table": "scenicplaces",
+            "row": "sp-emeishan",
+            "column": "welcomingpineplace",
+            "canonicalExistingRow": "nature/mountains/mtn-emeishan",
+            "rowSourceCountAfter": 3
+          },
+          {
+            "optionId": "o3",
+            "zh": "乐山",
+            "caption": "Лэшань — здесь высечена в скале гигантская статуя Будды высотой 71 м",
+            "dossier": "nature",
+            "table": "scenicplaces",
+            "row": "sp-leshan",
+            "column": "welcomingpineplace",
+            "canonicalExistingRow": null,
+            "rowSourceCountAfter": 2
+          },
+          {
+            "optionId": "o4",
+            "zh": "武夷山",
+            "caption": "Уишань — национальный парк, где туристы сплавляются по реке Цзюцюйси",
+            "dossier": "nature",
+            "table": "scenicplaces",
+            "row": "sp-wuyishan",
+            "column": "welcomingpineplace",
+            "canonicalExistingRow": null,
+            "rowSourceCountAfter": 2
+          }
+        ]
+      },
+      {
+        "reviewNumber": 8,
+        "bankId": "2020-21-mun-mosobl-54",
+        "acceptedQuestionRu": "В каком живописном месте происходит действие легенды «Повесть о Белой змее» (白蛇传)?",
+        "acceptedQuestionZh": "《白蛇传》神话故事发生在下列哪个景区内？",
+        "answerOptionId": "o2",
+        "questionDefinition": {
+          "id": "nature-q166",
+          "embeds": "2020-21-mun-mosobl-54",
+          "status": "accepted",
+          "fact": {
+            "table": "scenicplaces",
+            "row": "sp-xihu",
+            "ask": "whitesnakeplace"
+          },
+          "exclude": [],
+          "check": {
+            "verdict": "accept",
+            "note": "Автор принял вопросы и подписи партии 5 и разрешил встраивание 2026-11-08; публикация не разрешена. Восемь мест — тематическая таблица для двух смешанных наборов; канонические строки связаны через name.ref. Ключ, исходные ID и все четыре принятые подписи сохранены."
+          }
+        },
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "颐和园",
+            "caption": "Ихэюань — императорский парк Пекина, построенный вокруг Ваньшоушань и Куньминху",
+            "dossier": "nature",
+            "table": "scenicplaces",
+            "row": "sp-summer-palace",
+            "column": "whitesnakeplace",
+            "canonicalExistingRow": "landmarks/gardens/lm-cn-summer-palace-garden",
+            "rowSourceCountAfter": 3
+          },
+          {
+            "optionId": "o2",
+            "zh": "西湖",
+            "caption": "Сиху — у его Сломанного моста Белая змея встречает Сюй Сяня",
+            "dossier": "nature",
+            "table": "scenicplaces",
+            "row": "sp-xihu",
+            "column": "whitesnakeplace",
+            "canonicalExistingRow": "nature/lakes/lake-xihu",
+            "rowSourceCountAfter": 4
+          },
+          {
+            "optionId": "o3",
+            "zh": "昆明湖",
+            "caption": "Куньминху — озеро в пекинском парке Ихэюань; сад вдохновлён озером Сиху",
+            "dossier": "nature",
+            "table": "scenicplaces",
+            "row": "sp-kunminghu",
+            "column": "whitesnakeplace",
+            "canonicalExistingRow": null,
+            "rowSourceCountAfter": 2
+          },
+          {
+            "optionId": "o4",
+            "zh": "泰山",
+            "caption": "Тайшань — священная гора Шаньдуна, где императоры совершали обряды фэншань",
+            "dossier": "nature",
+            "table": "scenicplaces",
+            "row": "sp-taishan",
+            "column": "whitesnakeplace",
+            "canonicalExistingRow": "nature/mountains/mtn-taishan",
+            "rowSourceCountAfter": 2
+          }
+        ]
+      },
+      {
+        "reviewNumber": 10,
+        "bankId": "2024-25-mun-klg-8",
+        "acceptedQuestionRu": "Какой город в России является побратимом Шанхая?",
+        "acceptedQuestionZh": null,
+        "answerOptionId": "o2",
+        "questionDefinition": {
+          "id": "provinces-q137",
+          "embeds": "2024-25-mun-klg-8",
+          "status": "accepted",
+          "fact": {
+            "table": "cities",
+            "row": "city-ru-saint-petersburg",
+            "ask": "shanghaisistercity"
+          },
+          "exclude": [],
+          "check": {
+            "verdict": "accept",
+            "note": "Автор принял все оставшиеся 16 вопросов партии 5 и разрешил встраивание 2026-11-08; публикация не разрешена. ID, формулировка, ключ, четыре варианта и подписи сохранены. Географическая проверка: /tmp/lingvo-batch5-embed-geo-evidence.json."
+          }
+        },
+        "options": [
+          {
+            "optionId": "o1",
+            "zh": "莫斯科",
+            "caption": "Москва — дружественные партнёрские связи с Пекином установлены в 1995 году",
+            "dossier": "provinces",
+            "table": "cities",
+            "row": "city-ru-moscow",
+            "column": "shanghaisistercity",
+            "canonicalExistingRow": "provinces/cities/city-ru-moscow",
+            "rowSourceCountBefore": 5
+          },
+          {
+            "optionId": "o2",
+            "zh": "圣彼得堡",
+            "caption": "Санкт-Петербург — побратимские связи с Шанхаем установлены в 1988 году",
+            "dossier": "provinces",
+            "table": "cities",
+            "row": "city-ru-saint-petersburg",
+            "column": "shanghaisistercity",
+            "canonicalExistingRow": "provinces/cities/city-ru-saint-petersburg",
+            "rowSourceCountBefore": 3
+          },
+          {
+            "optionId": "o3",
+            "zh": "索契",
+            "caption": "Сочи — его китайский побратим Вэйхай; города связаны с 1996 года",
+            "dossier": "provinces",
+            "table": "cities",
+            "row": "city-ru-sochi",
+            "column": "shanghaisistercity",
+            "canonicalExistingRow": "provinces/cities/city-ru-sochi",
+            "rowSourceCountBefore": 3
+          },
+          {
+            "optionId": "o4",
+            "zh": "布拉戈维申斯克",
+            "caption": "Благовещенск — побратим Хэйхэ; соглашение заключено в 2009 году",
+            "dossier": "provinces",
+            "table": "cities",
+            "row": "city-ru-blagoveshchensk",
+            "column": "shanghaisistercity",
+            "canonicalExistingRow": "provinces/cities/city-ru-blagoveshchensk",
+            "rowSourceCountBefore": 3
+          }
+        ]
+      }
+    ],
+    "columnAdditions": [
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "column": "pearlcity",
+        "kind": "zh",
+        "addToSides": false
+      },
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "column": "russiaborderregionname",
+        "kind": "zh",
+        "addToSides": false
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "column": "leifengcity",
+        "kind": "zh",
+        "addToSides": false
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "column": "shanghaisistercity",
+        "kind": "zh",
+        "addToSides": false
+      }
+    ],
+    "existingRowUpdates": [
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-beijing",
+        "cells": {
+          "pearlcity": {
+            "zh": "北京",
+            "ru": [
+              "Пекин"
+            ],
+            "gloss": "Пекин — здесь находится Центральная телебашня высотой 405 м"
+          },
+          "leifengcity": {
+            "zh": "北京",
+            "ru": [
+              "Пекин"
+            ],
+            "gloss": "Пекин — Белая пагода парка Бэйхай стала одним из символов города"
+          }
+        },
+        "sourcesToAppend": [
+          {
+            "title": "Central TV Tower — Beijing Municipal Government",
+            "url": "https://english.beijing.gov.cn/travellinginbeijing/attractions/202603/t20260320_4562520.html",
+            "quote": "the tower stands 405 meters tall",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 1 / o1"
+          },
+          {
+            "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048483.html",
+            "title": "北京市公园管理中心 — 白塔",
+            "quote": "不仅是北海公园的标志性景观，且长期被作为北京的象征图景",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 5 / o1"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-jinan",
+        "cells": {
+          "pearlcity": {
+            "zh": "济南",
+            "ru": [
+              "Цзинань"
+            ],
+            "gloss": "Цзинань — центр Шаньдуна, известный как «город родников»"
+          }
+        },
+        "sourcesToAppend": [
+          {
+            "title": "基本市情 — 中国共产党济南市委员会",
+            "url": "https://www.jnsw.gov.cn/content/jbsq/content-21-23094-1.html",
+            "quote": "济南市，简称“济”，别称“泉城”，是山东省省会",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 1 / o2"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-shanghai",
+        "cells": {
+          "pearlcity": {
+            "zh": "上海",
+            "ru": [
+              "Шанхай"
+            ],
+            "gloss": "Шанхай — «Восточная жемчужина» стоит в Пудуне; высота башни — 468 м"
+          }
+        },
+        "sourcesToAppend": [
+          {
+            "title": "东方明珠广播电视塔 — 文化和旅游部",
+            "url": "https://sjfw.mct.gov.cn/site/dataservice/culdetails?curId=10&id=34847",
+            "quote": "总高468米。",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "additionalKeyEvidence": {
+              "title": "东方明珠 — 文化和旅游部",
+              "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+              "quote": "东方明珠广播电视塔是上海的标志性文化景观之一，位于浦东新区陆家嘴，塔高约468米。",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            },
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 1 / o3"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-hongkong",
+        "cells": {
+          "pearlcity": {
+            "zh": "香港",
+            "ru": [
+              "Гонконг"
+            ],
+            "gloss": "Гонконг — у устья Чжуцзяна; включает Коулун и Новые территории"
+          }
+        },
+        "sourcesToAppend": []
+      },
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "row": "prov-xinjiang",
+        "cells": {
+          "russiaborderregionname": {
+            "zh": "新疆维吾尔自治区",
+            "ru": [
+              "Синьцзян"
+            ],
+            "gloss": "Синьцзян — на его участке общая граница с Россией имеет длину около 55 км"
+          }
+        },
+        "sourcesToAppend": [
+          {
+            "title": "新疆边境扶贫扩大试点规划 — 新疆维吾尔自治区人民政府",
+            "url": "https://www.xinjiang.gov.cn/xinjiang/gfxwj/201104/dbcbf0b1cb0e49258ef2e4a1e3ce53a0.shtml",
+            "quote": "中俄边界总长约为55公里",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 4 / o1"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "row": "prov-jilin",
+        "cells": {
+          "russiaborderregionname": {
+            "zh": "吉林",
+            "ru": [
+              "Цзилинь"
+            ],
+            "gloss": "Цзилинь — на востоке граничит с Россией, на юго-востоке — с КНДР"
+          }
+        },
+        "sourcesToAppend": [
+          {
+            "title": "地理地貌 — 吉林省人民政府",
+            "url": "https://www.jl.gov.cn/shengqing/dldm/",
+            "quote": "东与俄罗斯联邦接壤，东南部与朝鲜民主主义人民共和国隔江相望。",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 4 / o2"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "row": "prov-heilongjiang",
+        "cells": {
+          "russiaborderregionname": {
+            "zh": "黑龙江",
+            "ru": [
+              "Хэйлунцзян"
+            ],
+            "gloss": "Хэйлунцзян — Россия находится за пограничными реками на севере и востоке"
+          }
+        },
+        "sourcesToAppend": [
+          {
+            "title": "地理特征 — 黑龙江省人民政府",
+            "url": "https://www.hlj.gov.cn/hlj/c108479/202208/c00_30848040.shtml",
+            "quote": "北、东部与俄罗斯隔江相望",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 4 / o3"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "provinces",
+        "row": "prov-liaoning",
+        "cells": {
+          "russiaborderregionname": {
+            "zh": "辽宁",
+            "ru": [
+              "Ляонин"
+            ],
+            "gloss": "Ляонин — на юге омывается Жёлтым морем и Бохайским заливом"
+          }
+        },
+        "sourcesToAppend": [
+          {
+            "title": "辽宁省主体功能区规划 — 辽宁省人民政府",
+            "url": "https://www.ln.gov.cn/web/zwgkx/zfxxgk1/zc/xzgfxwj/szf/szfwj/2023010421545165331/index.shtml",
+            "quote": "辽宁位于我国东北地区南部，南临黄海、渤海，东与朝鲜一江之隔",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 4 / o4"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-luoyang",
+        "cells": {
+          "leifengcity": {
+            "zh": "洛阳",
+            "ru": [
+              "Лоян"
+            ],
+            "gloss": "Лоян — здесь находятся буддийские пещерные храмы Лунмэнь"
+          }
+        },
+        "sourcesToAppend": [
+          {
+            "url": "https://www.dpm.org.cn/lemmas/243334.html",
+            "title": "故宫博物院 — 龙门石窟",
+            "quote": "位于河南洛阳南郊龙门山和香山。",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 5 / o2"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-xian",
+        "cells": {
+          "leifengcity": {
+            "zh": "西安",
+            "ru": [
+              "Сиань"
+            ],
+            "gloss": "Сиань — Большая пагода диких гусей построена для сутр Сюаньцзана"
+          }
+        },
+        "sourcesToAppend": [
+          {
+            "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1802954373708996609.html",
+            "title": "西安市地方志办公室 — 大雁塔",
+            "quote": "唐永徽三年（公元652年）为玄奘藏经典而修建",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 5 / o3"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-hangzhou",
+        "cells": {
+          "leifengcity": {
+            "zh": "杭州",
+            "ru": [
+              "Ханчжоу"
+            ],
+            "gloss": "Ханчжоу — новую пагоду Лэйфэн возвели в 2002 году, сохранив внутри руины старой"
+          }
+        },
+        "sourcesToAppend": [
+          {
+            "url": "https://ywhz.hangzhou.com.cn/yjls/content/content_6218549.htm",
+            "title": "雷峰塔 — 杭州西湖风景名胜区管委会",
+            "quote": "现塔为2002年重建，旧塔遗址被保存在新塔内部供参观",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 5 / o4"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-ru-moscow",
+        "cells": {
+          "shanghaisistercity": {
+            "zh": "莫斯科",
+            "ru": [
+              "Москва"
+            ],
+            "gloss": "Москва — дружественные партнёрские связи с Пекином установлены в 1995 году"
+          }
+        },
+        "sourcesToAppend": [
+          {
+            "title": "Пекин и Москва: 25-летие партнёрства — 外事办公室北京市人民政府",
+            "url": "https://wb.beijing.gov.cn/en/topics/Moscow25th/202012/t20201209_2160798.html",
+            "quote": "16 мая 1995 года Пекин и Москва установили партнерские отношения.",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 10 / o1"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-ru-saint-petersburg",
+        "cells": {
+          "shanghaisistercity": {
+            "zh": "圣彼得堡",
+            "ru": [
+              "Санкт-Петербург"
+            ],
+            "gloss": "Санкт-Петербург — побратимские связи с Шанхаем установлены в 1988 году"
+          }
+        },
+        "sourcesToAppend": [
+          {
+            "title": "Сотрудничество Петербурга с Шанхаем — Комитет по внешним связям Санкт-Петербурга",
+            "url": "https://kvs.gov.spb.ru/news/26956/",
+            "quote": "Шанхай – город-побратим Санкт‑Петербурга (с 1988 года).",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 10 / o2"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-ru-sochi",
+        "cells": {
+          "shanghaisistercity": {
+            "zh": "索契",
+            "ru": [
+              "Сочи"
+            ],
+            "gloss": "Сочи — его китайский побратим Вэйхай; города связаны с 1996 года"
+          }
+        },
+        "sourcesToAppend": [
+          {
+            "title": "威海与索契召开视频友好交流会 — 威海市外事办公室",
+            "url": "https://wb.weihai.gov.cn/art/2022/1/26/art_13510_2789871.html",
+            "quote": "威海市与索契市自1996年结好以来",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 10 / o3"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-ru-blagoveshchensk",
+        "cells": {
+          "shanghaisistercity": {
+            "zh": "布拉戈维申斯克",
+            "ru": [
+              "Благовещенск"
+            ],
+            "gloss": "Благовещенск — побратим Хэйхэ; соглашение заключено в 2009 году"
+          }
+        },
+        "sourcesToAppend": [
+          {
+            "title": "Города-побратимы — Администрация Благовещенска",
+            "url": "https://admblag.ru/o-gorode/goroda-pobratimy/",
+            "quote": "Соглашение об установлении побратимских связей между Благовещенском и Хэйхэ было заключено 27 сентября 2009 года.",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+            "checkedAt": "2026-11-08",
+            "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 10 / o4"
+          }
+        ]
+      }
+    ],
+    "tableAdditions": [
+      {
+        "dossier": "nature",
+        "table": "scenicplaces",
+        "definition": {
+          "columns": {
+            "name": "zh",
+            "country": "zh",
+            "welcomingpineplace": "zh",
+            "whitesnakeplace": "zh",
+            "about": "ru"
+          },
+          "sides": [],
+          "rows": [
+            {
+              "id": "sp-huangshan",
+              "name": {
+                "zh": "黄山",
+                "ru": [
+                  "Хуаншань"
+                ],
+                "ref": "nature/mountains/mtn-huangshan"
+              },
+              "country": {
+                "zh": "中国",
+                "gloss": "Китай"
+              },
+              "sources": [
+                {
+                  "title": "中国的世界自然与文化遗产——黄山 — 中国新闻网（人民政协报）",
+                  "url": "https://www.chinanews.com.cn/cul/2011/09-15/3330748.shtml",
+                  "quote": "黄山位于中国东部安徽省南部 … 以奇松、怪石、云海、温泉著名，并称“黄山四绝”",
+                  "checkedAt": "2026-10-18",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "reusedFrom": "data/dossiers/nature.json / mountains / mtn-huangshan / sources[0]"
+                },
+                {
+                  "title": "“双遗产”名山在中国——黄山 — 新华网",
+                  "url": "http://www.news.cn/culture/20220608/fb4a9c133f3c4ba692f29ae13d795c03/c.html",
+                  "quote": "1990年，黄山被联合国教科文组织批准列为世界文化与自然遗产",
+                  "checkedAt": "2026-10-18",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "reusedFrom": "data/dossiers/nature.json / mountains / mtn-huangshan / sources[1]"
+                },
+                {
+                  "title": "安徽：岁月中的黄山迎客松 — 国家林业和草原局",
+                  "url": "https://www.forestry.gov.cn/c/www/dfdt/596061.jhtml",
+                  "quote": "景区自1981年起为迎客松设立专职守护人",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "checkedAt": "2026-11-08",
+                  "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 7 / o1"
+                }
+              ],
+              "olympiad": [
+                "2021-22-mun-mosobl-59"
+              ],
+              "core": false,
+              "welcomingpineplace": {
+                "zh": "黄山",
+                "ru": [
+                  "Хуаншань"
+                ],
+                "gloss": "Хуаншань — с 1981 года у сосны Инкэсун есть специальные хранители",
+                "ref": "nature/mountains/mtn-huangshan"
+              },
+              "about": "Хуаншань — с 1981 года у сосны Инкэсун есть специальные хранители."
+            },
+            {
+              "id": "sp-emeishan",
+              "name": {
+                "zh": "峨眉山",
+                "ru": [
+                  "Эмэйшань"
+                ],
+                "ref": "nature/mountains/mtn-emeishan"
+              },
+              "country": {
+                "zh": "中国",
+                "gloss": "Китай"
+              },
+              "sources": [
+                {
+                  "title": "“双遗产”名山在中国——峨眉山 — 新华网",
+                  "url": "http://www.news.cn/culture/20220610/ed27f499661a4edea7df2fb46552d630/c.html",
+                  "quote": "1996年，峨眉山-乐山大佛景区被联合国教科文组织批准列为世界文化与自然遗产",
+                  "checkedAt": "2026-10-18",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "reusedFrom": "data/dossiers/nature.json / mountains / mtn-emeishan / sources[0]"
+                },
+                {
+                  "title": "海拔3099米！峨眉山最高峰万佛顶重新对外开放 — 中国日报网",
+                  "url": "http://cn.chinadaily.com.cn/a/202105/28/WS60b04acba3101e7ce97521c5.html",
+                  "quote": "四川峨眉山景区最高峰——海拔3099米的万佛顶",
+                  "checkedAt": "2026-10-18",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "reusedFrom": "data/dossiers/nature.json / mountains / mtn-emeishan / sources[1]"
+                },
+                {
+                  "title": "峨眉山市十四五文旅康养产业发展规划 — 峨眉山市人民政府",
+                  "url": "https://www.emeishan.gov.cn/emss/efbf/2023022214035442128800000.html",
+                  "quote": "峨眉山被称为“佛之长子”，是普贤菩萨的道场",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "checkedAt": "2026-11-08",
+                  "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 7 / o2"
+                }
+              ],
+              "olympiad": [],
+              "core": false,
+              "welcomingpineplace": {
+                "zh": "峨眉山",
+                "ru": [
+                  "Эмэйшань"
+                ],
+                "gloss": "Эмэйшань — буддийская священная гора, обитель бодхисаттвы Пусяня",
+                "ref": "nature/mountains/mtn-emeishan"
+              },
+              "about": "Эмэйшань — буддийская священная гора, обитель бодхисаттвы Пусяня."
+            },
+            {
+              "id": "sp-leshan",
+              "name": {
+                "zh": "乐山",
+                "ru": [
+                  "Лэшань"
+                ]
+              },
+              "country": {
+                "zh": "中国",
+                "gloss": "Китай"
+              },
+              "sources": [
+                {
+                  "title": "Mount Emei, including Leshan Giant Buddha — UNESCO",
+                  "url": "https://whc.unesco.org/en/list/779/",
+                  "quote": "carved out of a hillside in the 8th century and looking down on the confluence of three rivers. At 71 m high",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "checkedAt": "2026-11-08",
+                  "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 7 / o3"
+                },
+                {
+                  "title": "5A级旅游景区 — 乐山市乐山大佛景区 — 文化和旅游部",
+                  "url": "https://sjfw.mct.gov.cn/site/dataservice/culdetails?curId=10&id=35049",
+                  "quote": "乐山大佛景区地处四川省乐山市市中区南、岷江东岸 … 佛像通高71米",
+                  "authority": "official",
+                  "checkedAt": "2026-11-08",
+                  "verificationMethod": "fresh-primary-page-opened",
+                  "quoteNote": "Два дословных фрагмента одного абзаца, пропуск обозначен многоточием."
+                }
+              ],
+              "olympiad": [],
+              "core": false,
+              "welcomingpineplace": {
+                "zh": "乐山",
+                "ru": [
+                  "Лэшань"
+                ],
+                "gloss": "Лэшань — здесь высечена в скале гигантская статуя Будды высотой 71 м"
+              },
+              "about": "Лэшань — здесь высечена в скале гигантская статуя Будды высотой 71 м."
+            },
+            {
+              "id": "sp-wuyishan",
+              "name": {
+                "zh": "武夷山",
+                "ru": [
+                  "Уишань"
+                ]
+              },
+              "country": {
+                "zh": "中国",
+                "gloss": "Китай"
+              },
+              "sources": [
+                {
+                  "title": "走进国家公园 领略大美自然 — 国家林业和草原局",
+                  "url": "https://www.forestry.gov.cn/c/www/zrgjgy/583452.jhtml",
+                  "quote": "九曲溪漂流是武夷山的特色代表，可供公众体验游览。",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "checkedAt": "2026-11-08",
+                  "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 7 / o4"
+                },
+                {
+                  "title": "Mount Wuyi — UNESCO World Heritage Centre",
+                  "url": "https://whc.unesco.org/en/list/911/",
+                  "quote": "The serene beauty of the dramatic gorges of the Nine-Bend River is of exceptional scenic quality",
+                  "authority": "official",
+                  "checkedAt": "2026-11-08",
+                  "verificationMethod": "fresh-primary-page-opened"
+                }
+              ],
+              "olympiad": [],
+              "core": false,
+              "welcomingpineplace": {
+                "zh": "武夷山",
+                "ru": [
+                  "Уишань"
+                ],
+                "gloss": "Уишань — национальный парк, где туристы сплавляются по реке Цзюцюйси"
+              },
+              "about": "Уишань — национальный парк, где туристы сплавляются по реке Цзюцюйси."
+            },
+            {
+              "id": "sp-summer-palace",
+              "name": {
+                "zh": "颐和园",
+                "ru": [
+                  "Ихэюань"
+                ],
+                "ref": "landmarks/gardens/lm-cn-summer-palace-garden"
+              },
+              "country": {
+                "zh": "中国",
+                "gloss": "Китай"
+              },
+              "sources": [
+                {
+                  "title": "颐和园 — 北京市公园管理中心",
+                  "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_lsmy/201911/t20191129_732237.html",
+                  "quote": "颐和园位于北京西北郊海淀…乾隆十五年（1750年）",
+                  "checkedAt": "2026-10-17",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "reusedFrom": "data/dossiers/landmarks.json / gardens / lm-cn-summer-palace-garden / sources[0]"
+                },
+                {
+                  "title": "颐和园 — 北京市文物局",
+                  "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738088/1742735/364350/index.html",
+                  "quote": "以万寿山、昆明湖构成其基本框架",
+                  "checkedAt": "2026-10-17",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "reusedFrom": "data/dossiers/landmarks.json / gardens / lm-cn-summer-palace-garden / sources[1]"
+                },
+                {
+                  "url": "https://www.summerpalace.net.cn/about.html",
+                  "title": "颐和园官网 — 关于",
+                  "quote": "颐和园主景区由万寿山、昆明湖组成",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "checkedAt": "2026-11-08",
+                  "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 8 / o1"
+                }
+              ],
+              "olympiad": [],
+              "core": false,
+              "whitesnakeplace": {
+                "zh": "颐和园",
+                "ru": [
+                  "Ихэюань"
+                ],
+                "gloss": "Ихэюань — императорский парк Пекина, построенный вокруг Ваньшоушань и Куньминху",
+                "ref": "landmarks/gardens/lm-cn-summer-palace-garden"
+              },
+              "about": "Ихэюань — императорский парк Пекина, построенный вокруг Ваньшоушань и Куньминху."
+            },
+            {
+              "id": "sp-xihu",
+              "name": {
+                "zh": "西湖",
+                "ru": [
+                  "Сиху"
+                ],
+                "ref": "nature/lakes/lake-xihu"
+              },
+              "country": {
+                "zh": "中国",
+                "gloss": "Китай"
+              },
+              "sources": [
+                {
+                  "title": "世界遗产和城市生活相得益彰（文化脉动） — 人民日报",
+                  "url": "http://sn.people.com.cn/n2/2021/0215/c378302-34578325.html",
+                  "quote": "西湖位于浙江省杭州市的城市中心区以西地带",
+                  "checkedAt": "2026-10-18",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "reusedFrom": "data/dossiers/nature.json / lakes / lake-xihu / sources[0]"
+                },
+                {
+                  "title": "杭州西湖 — 生态中国网",
+                  "url": "https://www.eco.gov.cn/news_info/40315.html",
+                  "quote": "湖面面积为6.38平方千米，是中国主要的观赏性淡水湖泊",
+                  "checkedAt": "2026-10-18",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "reusedFrom": "data/dossiers/nature.json / lakes / lake-xihu / sources[1]"
+                },
+                {
+                  "url": "https://www.mct.gov.cn/ggfw/zyjzzt/yanchu/yanchuwqhg/202411/t20241107_956108.html",
+                  "title": "文化和旅游部 — 国家大剧院制作京剧《白蛇传》",
+                  "quote": "西湖断桥边偶遇许仙，白许互生爱慕",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "checkedAt": "2026-11-08",
+                  "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 8 / o2"
+                },
+                {
+                  "url": "https://www.ihchina.cn/art/detail/id/12185.html",
+                  "title": "中国非物质文化遗产网 — 白蛇传传说",
+                  "quote": "白蛇传与断桥、雷峰塔及西湖等自然和文化景观形成了密不可分的关系",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "checkedAt": "2026-11-08",
+                  "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 8 / keySources[0]"
+                }
+              ],
+              "olympiad": [
+                "2020-21-mun-mosobl-54"
+              ],
+              "core": false,
+              "whitesnakeplace": {
+                "zh": "西湖",
+                "ru": [
+                  "Сиху"
+                ],
+                "gloss": "Сиху — у его Сломанного моста Белая змея встречает Сюй Сяня",
+                "ref": "nature/lakes/lake-xihu"
+              },
+              "about": "Сиху — у его Сломанного моста Белая змея встречает Сюй Сяня."
+            },
+            {
+              "id": "sp-kunminghu",
+              "name": {
+                "zh": "昆明湖",
+                "ru": [
+                  "Куньминху"
+                ]
+              },
+              "country": {
+                "zh": "中国",
+                "gloss": "Китай"
+              },
+              "sources": [
+                {
+                  "url": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/summerpalace/",
+                  "title": "北京市政府 — Summer Palace",
+                  "quote": "Summer Palace consists of the Longevity Hill and Kunming Lake … Inspired by Hangzhou's West Lake",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "checkedAt": "2026-11-08",
+                  "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 8 / o3",
+                  "quoteNote": "Два дословных фрагмента quote и extraQuote из уже принятого источника; повторно страница не открывалась."
+                },
+                {
+                  "url": "https://www.summerpalace.net.cn/about.html",
+                  "title": "颐和园官网 — 关于",
+                  "quote": "颐和园主景区由万寿山、昆明湖组成",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "checkedAt": "2026-11-08",
+                  "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 8 / o1"
+                }
+              ],
+              "olympiad": [],
+              "core": false,
+              "whitesnakeplace": {
+                "zh": "昆明湖",
+                "ru": [
+                  "Куньминху"
+                ],
+                "gloss": "Куньминху — озеро в пекинском парке Ихэюань; сад вдохновлён озером Сиху"
+              },
+              "about": "Куньминху — озеро в пекинском парке Ихэюань; сад вдохновлён озером Сиху."
+            },
+            {
+              "id": "sp-taishan",
+              "name": {
+                "zh": "泰山",
+                "ru": [
+                  "Тайшань"
+                ],
+                "ref": "nature/mountains/mtn-taishan"
+              },
+              "country": {
+                "zh": "中国",
+                "gloss": "Китай"
+              },
+              "sources": [
+                {
+                  "title": "“双遗产”名山在中国——泰山 — 新华网",
+                  "url": "http://www.news.cn/culture/20220607/02afccab91a44ee1b2478afe0a5ab6a6/c.html",
+                  "quote": "1987年被联合国教科文组织批准列为中国第一个世界文化与自然遗产 … 历代君王封禅祭祀",
+                  "checkedAt": "2026-10-18",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "reusedFrom": "data/dossiers/nature.json / mountains / mtn-taishan / sources[0]"
+                },
+                {
+                  "title": "天下之“道”·第6期|海拔不算高地位却很高的山东泰山 — 生态中国网",
+                  "url": "https://www.eco.gov.cn/index.php/news_info/48869.html",
+                  "quote": "泰山，又名岱山、岱宗、岱岳、东岳、泰岳，为中国著名的五岳之一，有“五岳之首”",
+                  "checkedAt": "2026-10-18",
+                  "authority": "official",
+                  "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
+                  "reusedFrom": "data/dossiers/nature.json / mountains / mtn-taishan / sources[1]"
+                }
+              ],
+              "olympiad": [],
+              "core": false,
+              "whitesnakeplace": {
+                "zh": "泰山",
+                "ru": [
+                  "Тайшань"
+                ],
+                "gloss": "Тайшань — священная гора Шаньдуна, где императоры совершали обряды фэншань",
+                "ref": "nature/mountains/mtn-taishan"
+              },
+              "about": "Тайшань — священная гора Шаньдуна, где императоры совершали обряды фэншань."
+            }
+          ]
+        }
+      }
+    ],
+    "projectionRegister": [
+      {
+        "row": "sp-huangshan",
+        "canonicalRow": "nature/mountains/mtn-huangshan",
+        "projection": true,
+        "newCanonicalEntity": false,
+        "reason": "Тематическая проекция того же места, name.ref сохраняет тождество; исходная строка не переносится и не меняется."
+      },
+      {
+        "row": "sp-emeishan",
+        "canonicalRow": "nature/mountains/mtn-emeishan",
+        "projection": true,
+        "newCanonicalEntity": false,
+        "reason": "Тематическая проекция того же места, name.ref сохраняет тождество; исходная строка не переносится и не меняется."
+      },
+      {
+        "row": "sp-leshan",
+        "canonicalRow": null,
+        "projection": false,
+        "newCanonicalEntity": true,
+        "reason": "Место отсутствует как отдельная строка в существующих досье; два первичных источника приложены."
+      },
+      {
+        "row": "sp-wuyishan",
+        "canonicalRow": null,
+        "projection": false,
+        "newCanonicalEntity": true,
+        "reason": "Место отсутствует как отдельная строка в существующих досье; два первичных источника приложены."
+      },
+      {
+        "row": "sp-summer-palace",
+        "canonicalRow": "landmarks/gardens/lm-cn-summer-palace-garden",
+        "projection": true,
+        "newCanonicalEntity": false,
+        "reason": "Тематическая проекция того же места, name.ref сохраняет тождество; исходная строка не переносится и не меняется."
+      },
+      {
+        "row": "sp-xihu",
+        "canonicalRow": "nature/lakes/lake-xihu",
+        "projection": true,
+        "newCanonicalEntity": false,
+        "reason": "Тематическая проекция того же места, name.ref сохраняет тождество; исходная строка не переносится и не меняется."
+      },
+      {
+        "row": "sp-kunminghu",
+        "canonicalRow": null,
+        "projection": false,
+        "newCanonicalEntity": true,
+        "reason": "Место отсутствует как отдельная строка в существующих досье; два первичных источника приложены."
+      },
+      {
+        "row": "sp-taishan",
+        "canonicalRow": "nature/mountains/mtn-taishan",
+        "projection": true,
+        "newCanonicalEntity": false,
+        "reason": "Тематическая проекция того же места, name.ref сохраняет тождество; исходная строка не переносится и не меняется."
+      }
+    ],
+    "questionDefinitions": [
+      {
+        "dossier": "provinces",
+        "definition": {
+          "id": "provinces-q134",
+          "embeds": "2018-19-mun-lenobl-49",
+          "status": "accepted",
+          "fact": {
+            "table": "cities",
+            "row": "city-shanghai",
+            "ask": "pearlcity"
+          },
+          "exclude": [],
+          "check": {
+            "verdict": "accept",
+            "note": "Автор принял все оставшиеся 16 вопросов партии 5 и разрешил встраивание 2026-11-08; публикация не разрешена. ID, формулировка, ключ, четыре варианта и подписи сохранены. Географическая проверка: /tmp/lingvo-batch5-embed-geo-evidence.json."
+          }
+        }
+      },
+      {
+        "dossier": "provinces",
+        "definition": {
+          "id": "provinces-q135",
+          "embeds": "2021-22-mun-amur-4",
+          "status": "accepted",
+          "fact": {
+            "table": "provinces",
+            "row": "prov-liaoning",
+            "ask": "russiaborderregionname"
+          },
+          "exclude": [],
+          "check": {
+            "verdict": "accept",
+            "note": "Автор принял все оставшиеся 16 вопросов партии 5 и разрешил встраивание 2026-11-08; публикация не разрешена. ID, формулировка, ключ, четыре варианта и подписи сохранены. Географическая проверка: /tmp/lingvo-batch5-embed-geo-evidence.json."
+          }
+        }
+      },
+      {
+        "dossier": "provinces",
+        "definition": {
+          "id": "provinces-q136",
+          "embeds": "2020-21-mun-mosobl-46",
+          "status": "accepted",
+          "fact": {
+            "table": "cities",
+            "row": "city-hangzhou",
+            "ask": "leifengcity"
+          },
+          "exclude": [],
+          "check": {
+            "verdict": "accept",
+            "note": "Автор принял все оставшиеся 16 вопросов партии 5 и разрешил встраивание 2026-11-08; публикация не разрешена. ID, формулировка, ключ, четыре варианта и подписи сохранены. Географическая проверка: /tmp/lingvo-batch5-embed-geo-evidence.json."
+          }
+        }
+      },
+      {
+        "dossier": "provinces",
+        "definition": {
+          "id": "provinces-q137",
+          "embeds": "2024-25-mun-klg-8",
+          "status": "accepted",
+          "fact": {
+            "table": "cities",
+            "row": "city-ru-saint-petersburg",
+            "ask": "shanghaisistercity"
+          },
+          "exclude": [],
+          "check": {
+            "verdict": "accept",
+            "note": "Автор принял все оставшиеся 16 вопросов партии 5 и разрешил встраивание 2026-11-08; публикация не разрешена. ID, формулировка, ключ, четыре варианта и подписи сохранены. Географическая проверка: /tmp/lingvo-batch5-embed-geo-evidence.json."
+          }
+        }
+      },
+      {
+        "dossier": "nature",
+        "definition": {
+          "id": "nature-q165",
+          "embeds": "2021-22-mun-mosobl-59",
+          "status": "accepted",
+          "fact": {
+            "table": "scenicplaces",
+            "row": "sp-huangshan",
+            "ask": "welcomingpineplace"
+          },
+          "exclude": [],
+          "check": {
+            "verdict": "accept",
+            "note": "Автор принял вопросы и подписи партии 5 и разрешил встраивание 2026-11-08; публикация не разрешена. Восемь мест — тематическая таблица для двух смешанных наборов; канонические строки связаны через name.ref. Ключ, исходные ID и все четыре принятые подписи сохранены."
+          }
+        }
+      },
+      {
+        "dossier": "nature",
+        "definition": {
+          "id": "nature-q166",
+          "embeds": "2020-21-mun-mosobl-54",
+          "status": "accepted",
+          "fact": {
+            "table": "scenicplaces",
+            "row": "sp-xihu",
+            "ask": "whitesnakeplace"
+          },
+          "exclude": [],
+          "check": {
+            "verdict": "accept",
+            "note": "Автор принял вопросы и подписи партии 5 и разрешил встраивание 2026-11-08; публикация не разрешена. Восемь мест — тематическая таблица для двух смешанных наборов; канонические строки связаны через name.ref. Ключ, исходные ID и все четыре принятые подписи сохранены."
+          }
+        }
+      }
+    ],
+    "captionCrossHints": [
+      {
+        "question": "2018-19-mun-lenobl-49",
+        "optionId": "o2",
+        "neighbor": "2021-22-reg-qd842f6",
+        "relation": "Прозвище 泉城 / город родников → Цзинань",
+        "classification": "direct-caption-hint",
+        "suggestedFactGroup": "batch5-jinan-spring-city"
+      },
+      {
+        "question": "2020-21-mun-mosobl-46",
+        "optionId": "o2",
+        "neighbor": "landmarks-q98",
+        "relation": "Пещеры Лунмэнь → Лоян",
+        "classification": "direct-caption-hint",
+        "suggestedFactGroup": "batch5-leifeng-landmark-cities"
+      },
+      {
+        "question": "2020-21-mun-mosobl-46",
+        "optionId": "o3",
+        "neighbor": "landmarks-q96",
+        "relation": "Большая пагода диких гусей → Сиань",
+        "classification": "direct-caption-hint",
+        "suggestedFactGroup": "batch5-leifeng-landmark-cities"
+      },
+      {
+        "question": "2020-21-mun-mosobl-46",
+        "optionId": "o3",
+        "neighbor": "landmarks-q59",
+        "relation": "Сооружение для сутр Сюаньцзана → Большая пагода диких гусей",
+        "classification": "direct-caption-hint",
+        "suggestedFactGroup": "batch5-leifeng-landmark-cities"
+      },
+      {
+        "question": "2020-21-mun-mosobl-54",
+        "optionId": "o1",
+        "neighbor": "landmarks-q95",
+        "relation": "Ихэюань → Пекин",
+        "classification": "direct-caption-hint",
+        "suggestedFactGroup": "batch5-whitesnake-scenic-place-captions"
+      },
+      {
+        "question": "2020-21-mun-mosobl-54",
+        "optionId": "o4",
+        "neighbor": "nature-q146",
+        "relation": "Тайшань → Шаньдун",
+        "classification": "direct-caption-hint",
+        "suggestedFactGroup": "batch5-whitesnake-scenic-place-captions"
+      },
+      {
+        "question": "2020-21-mun-mosobl-54",
+        "neighbor": "2015-16-shk-65",
+        "relation": "Исходное пояснение прямо называет Сиху в Ханчжоу",
+        "classification": "explanation-hint-prudent-group"
+      },
+      {
+        "question": "2020-21-mun-mosobl-54",
+        "neighbor": "2020-21-mun-mosobl-46",
+        "relation": "Исходное пояснение связывает Лэйфэн с Ханчжоу и берегом Сиху",
+        "classification": "explanation-hint-prudent-group"
+      },
+      {
+        "question": "2020-21-mun-mosobl-54",
+        "neighbor": "myths-q20",
+        "relation": "Белая змея названа в заголовке легенды; факт заточения Фахаем в подписи не раскрыт",
+        "classification": "name-only-neighbor-manual-review-no-direct-caption-hint"
+      }
+    ],
+    "recommendedFactGroups": {
+      "batch5-jinan-spring-city": [
+        "2018-19-mun-lenobl-49",
+        "2021-22-reg-qd842f6"
+      ],
+      "batch5-leifeng-landmark-cities": [
+        "2020-21-mun-mosobl-46",
+        "landmarks-q98",
+        "landmarks-q96",
+        "landmarks-q59"
+      ],
+      "batch5-whitesnake-scenic-place-captions": [
+        "2020-21-mun-mosobl-54",
+        "landmarks-q95",
+        "nature-q146"
+      ],
+      "batch5-whitesnake-hangzhou-leifeng": [
+        "2020-21-mun-mosobl-54",
+        "2020-21-mun-mosobl-46",
+        "2015-16-shk-65"
+      ]
+    },
+    "semanticFindings": [
+      {
+        "reviewNumber": 4,
+        "verdict": "unique-key",
+        "note": "Ляонин не граничит с Россией; прочие три региона граничат. Принятая формулировка и варианты сохранены."
+      },
+      {
+        "reviewNumber": 7,
+        "verdict": "unique-key-with-accepted-terminology",
+        "note": "Инкэсун находится на Хуаншане. Слово «заповедник» в исходнике шире/неточнее официального scenic area; автор уже принял исходную формулировку, новую редакцию не предлагать. Новая таблица называется scenicplaces и не объявляет Лэшань горой или каждый вариант строгим природным заповедником."
+      },
+      {
+        "reviewNumber": 8,
+        "verdict": "unique-among-four-options",
+        "note": "У легенды несколько мест действия, в том числе Чжэньцзян; Сиху однозначен среди четырёх принятых вариантов. Связь встречи у Сломанного моста подтверждена принятой страницей Минкультуры, связь легенды с Сиху — ihchina."
+      },
+      {
+        "reviewNumber": 10,
+        "verdict": "unique-key",
+        "note": "Шанхай–Петербург с 1988 года; московская подпись говорит о партнёрских связях с Пекином и не приписывает Москве побратимство с Шанхаем."
+      }
+    ],
+    "unresolvedBlockingIssues": [],
+    "verification": {
+      "method": "Repository data read; proposed mutations applied in memory only; dossiers.validate_dossier, validate_links, embed_record executed. Full cross-hint build belongs to main executor after applying all subjects.",
+      "dossierSchemaErrors": {
+        "provinces": [],
+        "nature": [],
+        "landmarks": []
+      },
+      "linkErrors": [],
+      "embedChecks": [
+        {
+          "reviewNumber": 1,
+          "errors": [],
+          "optionCount": 4,
+          "captionsExactlyMatch": true
+        },
+        {
+          "reviewNumber": 4,
+          "errors": [],
+          "optionCount": 4,
+          "captionsExactlyMatch": true
+        },
+        {
+          "reviewNumber": 5,
+          "errors": [],
+          "optionCount": 4,
+          "captionsExactlyMatch": true
+        },
+        {
+          "reviewNumber": 7,
+          "errors": [],
+          "optionCount": 4,
+          "captionsExactlyMatch": true
+        },
+        {
+          "reviewNumber": 8,
+          "errors": [],
+          "optionCount": 4,
+          "captionsExactlyMatch": true
+        },
+        {
+          "reviewNumber": 10,
+          "errors": [],
+          "optionCount": 4,
+          "captionsExactlyMatch": true
+        }
+      ],
+      "all24CaptionTextsPreserved": true
+    }
+  },
+  "history": {
+    "date": "2026-11-08",
+    "scope": [
+      3,
+      6,
+      9,
+      15,
+      16,
+      18
+    ],
+    "mode": "read-only repository evidence and proposed integration mapping; /tmp output only",
+    "publicationAuthorized": false,
+    "questions": [
+      {
+        "reviewNumber": 3,
+        "id": "2019-20-mun-kgd-2",
+        "acceptedQuestionRu": "Какое полезное ископаемое занимало наибольшую долю в общем энергопотреблении Китая в 2025 году?",
+        "answerOptionId": "o1",
+        "dossier": "modern-china",
+        "fact": {
+          "table": "resources",
+          "row": "res-coal",
+          "ask": "energyname"
+        },
+        "exclude": [],
+        "optionMappings": [
+          {
+            "optionId": "o1",
+            "zh": "煤炭",
+            "row": "res-coal",
+            "column": "energyname",
+            "caption": "Уголь — в 2025 году обеспечивал 51,4 % энергопотребления КНР.",
+            "captionSource": {
+              "title": "能源转型跨越发展 绿色低碳成效显著 — 国家统计局 (2026-06-05)",
+              "url": "https://www.stats.gov.cn/zt_18555/ztfx/sswjjshfzcjbg/202606/t20260601_1963846.html",
+              "quote": "煤炭占能源消费总量比重由2020年的56.7%降至2025年的51.4%",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025
+            }
+          },
+          {
+            "optionId": "o2",
+            "zh": "石油",
+            "row": "res-oil",
+            "column": "energyname",
+            "caption": "Нефть — её доля в энергопотреблении КНР в 2025 году составляла 18,2 %.",
+            "captionSource": {
+              "title": "能源转型跨越发展 绿色低碳成效显著 — 国家统计局 (2026-06-05)",
+              "url": "https://www.stats.gov.cn/zt_18555/ztfx/sswjjshfzcjbg/202606/t20260601_1963846.html",
+              "quote": "石油占比由18.9%降至18.2%",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025
+            }
+          },
+          {
+            "optionId": "o3",
+            "zh": "天然气",
+            "row": "res-naturalgas",
+            "column": "energyname",
+            "caption": "Природный газ — его доля в энергопотреблении КНР в 2025 году составляла 8,7 %.",
+            "captionSource": {
+              "title": "能源转型跨越发展 绿色低碳成效显著 — 国家统计局 (2026-06-05)",
+              "url": "https://www.stats.gov.cn/zt_18555/ztfx/sswjjshfzcjbg/202606/t20260601_1963846.html",
+              "quote": "天然气占比由8.4%提升至8.7%",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025
+            }
+          },
+          {
+            "optionId": "o4",
+            "zh": "有色金属",
+            "row": "res-nonferrous",
+            "column": "energyname",
+            "caption": "Цветные металлы — медь и алюминий относятся к металлическому сырью, а не к топливу.",
+            "captionSource": {
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "quote": "铜、铝、铅、锌、金、钨、钼等金属矿产",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "additionalQuote": "能源矿产",
+              "quoteNote": "В тексте медь и алюминий названы металлическими минералами. В приложении 1 топливо выделено отдельно как 能源 矿产（26）, руды цветных металлов — как 有色金属矿产（43）. Вывод о различии групп сделан по классификации таблицы, не по отсутствию слова в перечне."
+            }
+          }
+        ],
+        "poolRows": [
+          "res-coal",
+          "res-oil",
+          "res-naturalgas",
+          "res-nonferrous"
+        ],
+        "sourcePolicy": "All 4 accepted captions copied verbatim from manifest. No changes to original option IDs or key.",
+        "publicationAuthorized": false
+      },
+      {
+        "reviewNumber": 6,
+        "id": "2021-22-mun-volog-8",
+        "acceptedQuestionRu": "В 2025 году Китай занимал первое место в мире по добыче…",
+        "answerOptionId": "o1",
+        "dossier": "modern-china",
+        "fact": {
+          "table": "resources",
+          "row": "res-gold",
+          "ask": "miningname"
+        },
+        "exclude": [],
+        "optionMappings": [
+          {
+            "optionId": "o1",
+            "zh": "黄金",
+            "row": "res-gold",
+            "column": "miningname",
+            "caption": "Золото — по оценке USGS, Китай добыл 380 т в 2025 году.",
+            "captionSource": {
+              "title": "Mineral Commodity Summaries 2026 — USGS, GOLD",
+              "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+              "quote": "China                                                         377       380                                              3,200",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025,
+              "location": "Печатная стр. 91: World Mine Production and Reserves, столбцы 2024 / 2025e / Reserves; тонны.",
+              "quoteNote": "Табличная строка дословно из pdftotext -layout; 2025e — оценка, не окончательный итог.",
+              "localEvidence": "/tmp/mcs2026.txt"
+            }
+          },
+          {
+            "optionId": "o2",
+            "zh": "白银",
+            "row": "res-silver",
+            "column": "miningname",
+            "caption": "Серебро — по оценке USGS, в 2025 году лидировала Мексика: 6300 т.",
+            "captionSource": {
+              "title": "Mineral Commodity Summaries 2026 — USGS, SILVER",
+              "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+              "quote": "Mexico                                                               5,780      6,300                                             37,000",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025,
+              "location": "Печатная стр. 173: World Mine Production and Reserves, столбец 2025e; тонны.",
+              "quoteNote": "Лидерство установлено сравнением всех стран в той же таблице; Китай 3400, Перу 3600.",
+              "localEvidence": "/tmp/mcs2026.txt"
+            }
+          },
+          {
+            "optionId": "o3",
+            "zh": "石油",
+            "row": "res-oil",
+            "column": "miningname",
+            "caption": "Нефть — в 2025 году крупнейшим производителем сырой нефти были США.",
+            "captionSource": {
+              "title": "The United States set record energy production in 2025, again — EIA (2026-05-11)",
+              "url": "https://www.eia.gov/todayinenergy/detail.php?id=67684",
+              "quote": "the United States remained the largest crude oil producer in the world.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025
+            }
+          },
+          {
+            "optionId": "o4",
+            "zh": "铁矿",
+            "row": "res-ironore",
+            "column": "miningname",
+            "caption": "Железная руда — в 2025-м Австралия лидировала по добыче пригодной руды.",
+            "captionSource": {
+              "title": "Mineral Commodity Summaries 2026 — USGS, IRON ORE",
+              "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+              "quote": "Australia                                982,000    980,000    607,000     600,000                                 6",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025,
+              "location": "Печатная стр. 109: World Mine Production and Reserves, Mine production / Usable ore / 2025e; тысячи метрических тонн.",
+              "quoteNote": "Лидерство выведено из сравнительной таблицы: Австралия 980000, Бразилия 420000, Индия 310000, Китай 290000. Сравнивается пригодная руда, не сырая добытая масса.",
+              "localEvidence": "/tmp/mcs2026.txt"
+            }
+          }
+        ],
+        "poolRows": [
+          "res-gold",
+          "res-silver",
+          "res-oil",
+          "res-ironore"
+        ],
+        "sourcePolicy": "All 4 accepted captions copied verbatim from manifest. No changes to original option IDs or key.",
+        "publicationAuthorized": false
+      },
+      {
+        "reviewNumber": 9,
+        "id": "2019-20-mun-mosobl-52",
+        "acceptedQuestionRu": "Купцы из какой страны основали торговое поселение в Макао в середине XVI века?",
+        "answerOptionId": "o3",
+        "dossier": "modern-history",
+        "fact": {
+          "table": "countries",
+          "row": "country-pt",
+          "ask": "macaoname"
+        },
+        "exclude": [],
+        "optionMappings": [
+          {
+            "optionId": "o1",
+            "zh": "日本",
+            "row": "country-jp",
+            "column": "macaoname",
+            "caption": "Япония — торговый партнёр Макао на маршрутах между Китаем и Европой.",
+            "captionSource": {
+              "title": "Brief History — Macao Government Tourism Office",
+              "url": "https://www.macaotourism.gov.mo/en/article/about-macao/brief-history",
+              "quote": "China, Japan, India and Europe",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "quoteNote": "В контексте перечислены направления торговли Макао; подпись не утверждает японское владение."
+            }
+          },
+          {
+            "optionId": "o2",
+            "zh": "菲律宾",
+            "row": "country-ph",
+            "column": "macaoname",
+            "caption": "Филиппины — испанская экспедиция прибыла на остров Себу в 1565 году.",
+            "captionSource": {
+              "title": "Negotiating Empire, Part I — Library of Congress",
+              "url": "https://blogs.loc.gov/international-collections/2021/10/negotiating-empire-part-i-from-magellan-to-the-founding-of-manila-16th-18th-centuries/",
+              "quote": "The Spanish expedition that eventually succeeded in setting up Spanish rule in Manila arrived in 1565 on Cebu.",
+              "authority": "official",
+              "checkedAt": "2026-11-08"
+            }
+          },
+          {
+            "optionId": "o3",
+            "zh": "葡萄牙",
+            "row": "country-pt",
+            "column": "macaoname",
+            "caption": "Португалия — её поселение превратило Макао в узел торговли Китая с Европой.",
+            "captionSource": {
+              "title": "Brief History — Macao Government Tourism Office",
+              "url": "https://www.macaotourism.gov.mo/en/article/about-macao/brief-history",
+              "quote": "major entrepot for trade between China, Japan, India and Europe",
+              "authority": "official",
+              "checkedAt": "2026-11-08"
+            }
+          },
+          {
+            "optionId": "o4",
+            "zh": "英国",
+            "row": "country-uk",
+            "column": "macaoname",
+            "caption": "Британия — получила остров Гонконг по Нанкинскому договору 1842 года.",
+            "captionSource": {
+              "title": "香港问题的由来 — 中共广东省委统一战线工作部",
+              "url": "https://www.gdtzb.gov.cn/llyj/tzll/content/mpost_82001.html",
+              "quote": "同意把香港岛永久割让给英国",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "reuseOf": "data/dossiers/modern-history.json: treaties/tr-nanjing; подпись адаптирована из принятой строки, источник повторно открыт 2026-11-08."
+            }
+          }
+        ],
+        "poolRows": [
+          "country-jp",
+          "country-ph",
+          "country-pt",
+          "country-uk"
+        ],
+        "sourcePolicy": "All 4 accepted captions copied verbatim from manifest. No changes to original option IDs or key.",
+        "publicationAuthorized": false,
+        "proposedExplanationRu": "В середине XVI века португальские купцы основали торговое поселение в Макао (澳门). По официальной истории Управления туризма Макао, они закрепились здесь с разрешения властей Гуандуна; порт стал важным узлом международной торговли."
+      },
+      {
+        "reviewNumber": 15,
+        "id": "2022-23-mun-tat-6",
+        "acceptedQuestionRu": "В каком году был юридически утверждён государственный гимн Китайской Народной Республики?",
+        "answerOptionId": "o4",
+        "dossier": "modern-history",
+        "fact": {
+          "table": "milestones",
+          "row": "mile-anthem-constitution2004",
+          "ask": "anthemYear"
+        },
+        "exclude": [],
+        "optionMappings": [
+          {
+            "optionId": "o1",
+            "zh": "1949年",
+            "row": "mile-anthem-provisional1949",
+            "column": "anthemYear",
+            "caption": "1949 год — «Марш добровольцев» выбран временным гимном КНР 27 сентября.",
+            "captionSource": {
+              "title": "中华人民共和国国歌 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956230.htm",
+              "quote": "1949年9月27日，中国人民政治协商会议第一届全体会议通过决议",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "additionalQuote": "为代国歌。"
+            }
+          },
+          {
+            "optionId": "o2",
+            "zh": "1986年",
+            "row": "mile-educationlaw1986",
+            "column": "anthemYear",
+            "caption": "1986 год — 12 апреля принят Закон КНР об обязательном образовании.",
+            "captionSource": {
+              "title": "九年义务教育开始实施 — 中华人民共和国教育部",
+              "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3581/moe_2669/moe_2921/tnull_51639.html",
+              "quote": "1986年4月12日，六届全国人大四次会议审议通过了《中华人民共和国义务教育法》。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "quoteNote": "Сверено в поисковом индексе официальной страницы; полный open сайта moe.gov.cn в этой сессии нестабилен."
+            }
+          },
+          {
+            "optionId": "o3",
+            "zh": "2000年",
+            "row": "mile-legislationlaw2000",
+            "column": "anthemYear",
+            "caption": "2000 год — 15 марта ВСНП принял Закон КНР о правотворчестве.",
+            "captionSource": {
+              "title": "中华人民共和国立法法 — 北京市人民代表大会常务委员会",
+              "url": "https://www.bjrd.gov.cn/xwzx/qgrd/202303/t20230314_2935590.html",
+              "quote": "2000年3月15日第九届全国人民代表大会第三次会议通过",
+              "authority": "official",
+              "checkedAt": "2026-11-08"
+            }
+          },
+          {
+            "optionId": "o4",
+            "zh": "2004年",
+            "row": "mile-anthem-constitution2004",
+            "column": "anthemYear",
+            "caption": "2004 год — 14 марта ВСНП закрепил название гимна в Конституции КНР.",
+            "captionSource": {
+              "title": "中华人民共和国国歌 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956230.htm",
+              "quote": "2004年3月14日，十届全国人大二次会议通过的宪法修正案，规定：中华人民共和国国歌是《义勇军进行曲》。",
+              "authority": "official",
+              "checkedAt": "2026-11-08"
+            }
+          }
+        ],
+        "poolRows": [
+          "mile-anthem-provisional1949",
+          "mile-educationlaw1986",
+          "mile-legislationlaw2000",
+          "mile-anthem-constitution2004"
+        ],
+        "sourcePolicy": "All 4 accepted captions copied verbatim from manifest. No changes to original option IDs or key.",
+        "publicationAuthorized": false,
+        "explanationRequirement": "Retain accepted broad stem and 2004 key. Explanation must say specifically that the anthem name was enshrined in the Constitution on 14 March 2004; do not claim that no earlier legal decision existed.",
+        "proposedExplanationRu": "14 марта 2004 года в Конституцию КНР внесли положение: «Государственным гимном Китайской Народной Республики является „Марш добровольцев“» (《义勇军进行曲》). Поэтому официальный ключ 2004 относится именно к конституционному закреплению гимна."
+      },
+      {
+        "reviewNumber": 16,
+        "id": "2025-26-mun-ryaz-5",
+        "acceptedQuestionRu": "В каком году Китай и Россия подписали Договор о добрососедстве, дружбе и сотрудничестве –《中俄睦邻友好合作条约》?",
+        "answerOptionId": "o2",
+        "dossier": "modern-history",
+        "fact": {
+          "table": "treaties",
+          "row": "tr-ru-2001",
+          "ask": "goodneighborYear"
+        },
+        "exclude": [],
+        "optionMappings": [
+          {
+            "optionId": "o1",
+            "zh": "1991年",
+            "row": "tr-cnussr-east1991",
+            "column": "goodneighborYear",
+            "caption": "1991 год — СССР и КНР подписали соглашение о восточной части границы",
+            "captionSource": {
+              "title": "Соглашение о советско-китайской границе. Москва, 16 мая 1991 — ЭБИД",
+              "url": "https://docs.historyrussia.org/ru/nodes/518493-soglashenie-mezhdu-soyuzom-sovetskih-sotsialisticheskih-respublik-i-kitayskoy-narodnoy-respublikoy-o-sovetsko-kitayskoy-gosudarstvennoy-granitse-na-ee-vostochnoy-chasti-moskva-16-maya-1991-goda",
+              "quote": "о советско-китайской государственной границе на ее Восточной части. Москва, 16 мая 1991 года",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            }
+          },
+          {
+            "optionId": "o2",
+            "zh": "2001年",
+            "row": "tr-ru-2001",
+            "column": "goodneighborYear",
+            "caption": "2001 год — договор подписали Цзян Цзэминь и Владимир Путин",
+            "captionSource": {
+              "title": "Интервью посла КНР Лю Гучана — МИД КНР",
+              "url": "https://www.mfa.gov.cn/rus/wjb/zzjg/dozys/dozysgjlb/1706/1710/200311/t20031120_957420.html",
+              "quote": "16-го июля 2001-го года этот договор подписали бывший председатель КНР Цзян Цзэминь и президент России Владимир Путин.",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-page-opened",
+              "checkedAt": "2026-11-08"
+            }
+          },
+          {
+            "optionId": "o3",
+            "zh": "2011年",
+            "row": "tr-cnru-declaration2011",
+            "column": "goodneighborYear",
+            "caption": "2011 год — Ху Цзиньтао и Д. Медведев отметили десятилетие договора в Москве",
+            "captionSource": {
+              "title": "Переговоры Ху Цзиньтао с Д. Медведевым — МИД КНР",
+              "url": "https://www.mfa.gov.cn/rus/zl/ce_ceml_chn/hzxcxjjlt/201106/t20110617_878211.html",
+              "quote": "Медведев и Ху Цзиньтао выступили с речами на концерте в честь 10-й годовщины подписания Договора",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            }
+          },
+          {
+            "optionId": "o4",
+            "zh": "2021年",
+            "row": "tr-cnru-declaration2021",
+            "column": "goodneighborYear",
+            "caption": "2021 год — Си Цзиньпин и В. Путин объявили о продлении договора",
+            "captionSource": {
+              "title": "习近平同俄罗斯总统普京举行视频会晤 — МИД КНР",
+              "url": "https://www.fmprc.gov.cn/tpxw/202106/t20210628_9136616.shtml",
+              "quote": "两国元首宣布发表联合声明，正式决定《中俄睦邻友好合作条约》延期。",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-page-opened",
+              "checkedAt": "2026-11-08"
+            }
+          }
+        ],
+        "poolRows": [
+          "tr-cnussr-east1991",
+          "tr-ru-2001",
+          "tr-cnru-declaration2011",
+          "tr-cnru-declaration2021"
+        ],
+        "sourcePolicy": "All 4 accepted captions copied verbatim from manifest. No changes to original option IDs or key.",
+        "publicationAuthorized": false
+      },
+      {
+        "reviewNumber": 18,
+        "id": "2025-26-mun-kem-7",
+        "acceptedQuestionRu": "В каком веке началось присоединение Сибири к России?",
+        "answerOptionId": "o2",
+        "dossier": "modern-history",
+        "fact": {
+          "table": "events",
+          "row": "ev-ru-ermak-siberia",
+          "ask": "siberiaCentury"
+        },
+        "exclude": [],
+        "optionMappings": [
+          {
+            "optionId": "o1",
+            "zh": "十五世纪",
+            "row": "ev-ru-ugra1480",
+            "column": "siberiaCentury",
+            "caption": "XV век — стояние на Угре (1480), завершение зависимости от Орды",
+            "captionSource": {
+              "title": "Стояние на Угре — Президентская библиотека",
+              "url": "https://www.prlib.ru/node/619708",
+              "quote": "11 ноября 1480 г. хан Ахмат",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            }
+          },
+          {
+            "optionId": "o2",
+            "zh": "十六世纪",
+            "row": "ev-ru-ermak-siberia",
+            "column": "siberiaCentury",
+            "caption": "XVI век — начало связывают с походом Ермака в 1581 году",
+            "captionSource": {
+              "title": "История — Ростовский государственный университет путей сообщения",
+              "url": "https://bypass.rgups.ru/site/assets/files/221914/sg_02_istoriia.pdf",
+              "quote": "1581 г. – поход Ермака – начало присоединения Сибири.",
+              "authority": "academic",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            }
+          },
+          {
+            "optionId": "o3",
+            "zh": "十七世纪",
+            "row": "ev-ru-dezhnev1648",
+            "column": "siberiaCentury",
+            "caption": "XVII век — Семён Дежнёв в 1648 году прошёл пролив между Азией и Америкой",
+            "captionSource": {
+              "title": "Семен Дежнев. 1648–1948 — Президентская библиотека",
+              "url": "https://www.prlib.ru/item/1286555",
+              "quote": "1648-1948 : К трехсотлетию открытия пролива между Азией и Америкой.",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            }
+          },
+          {
+            "optionId": "o4",
+            "zh": "十八世纪",
+            "row": "ev-ru-kamchatka1",
+            "column": "siberiaCentury",
+            "caption": "XVIII век — Первая Камчатская экспедиция Беринга организована с 1725 года",
+            "captionSource": {
+              "title": "Издан указ о Второй Камчатской экспедиции — Президентская библиотека",
+              "url": "https://www.prlib.ru/history/619199",
+              "quote": "В январе 1725 г. российский император отдал Указ о подготовке экспедиции на Тихий океан",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            }
+          }
+        ],
+        "poolRows": [
+          "ev-ru-ugra1480",
+          "ev-ru-ermak-siberia",
+          "ev-ru-dezhnev1648",
+          "ev-ru-kamchatka1"
+        ],
+        "sourcePolicy": "All 4 accepted captions copied verbatim from manifest. No changes to original option IDs or key.",
+        "publicationAuthorized": false
+      }
+    ],
+    "newTables": [
+      {
+        "dossier": "modern-china",
+        "table": "resources",
+        "columns": {
+          "name": "zh",
+          "energyname": "zh",
+          "miningname": "zh"
+        },
+        "sides": []
+      }
+    ],
+    "newColumns": [
+      {
+        "dossier": "modern-history",
+        "table": "countries",
+        "column": "macaoname",
+        "kind": "zh"
+      },
+      {
+        "dossier": "modern-history",
+        "table": "milestones",
+        "column": "anthemYear",
+        "kind": "zh"
+      },
+      {
+        "dossier": "modern-history",
+        "table": "treaties",
+        "column": "goodneighborYear",
+        "kind": "zh"
+      },
+      {
+        "dossier": "modern-history",
+        "table": "events",
+        "column": "siberiaCentury",
+        "kind": "zh"
+      }
+    ],
+    "newRows": [
+      {
+        "dossier": "modern-china",
+        "table": "resources",
+        "row": {
+          "id": "res-coal",
+          "name": {
+            "zh": "煤炭",
+            "ru": [
+              "Уголь"
+            ]
+          },
+          "sources": [
+            {
+              "title": "能源转型跨越发展 绿色低碳成效显著 — 国家统计局 (2026-06-05)",
+              "url": "https://www.stats.gov.cn/zt_18555/ztfx/sswjjshfzcjbg/202606/t20260601_1963846.html",
+              "quote": "煤炭占能源消费总量比重由2020年的56.7%降至2025年的51.4%",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025
+            },
+            {
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "quote": "能源矿产 | 石油、天然气、页岩气、煤炭、煤层气、铀",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact table text with cell separator | added for readability; lines 162–164"
+            }
+          ],
+          "olympiad": [],
+          "energyname": {
+            "zh": "煤炭",
+            "ru": [
+              "Уголь"
+            ],
+            "gloss": "Уголь — в 2025 году обеспечивал 51,4 % энергопотребления КНР."
+          }
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "resources",
+        "row": {
+          "id": "res-oil",
+          "name": {
+            "zh": "石油",
+            "ru": [
+              "Нефть"
+            ]
+          },
+          "sources": [
+            {
+              "title": "能源转型跨越发展 绿色低碳成效显著 — 国家统计局 (2026-06-05)",
+              "url": "https://www.stats.gov.cn/zt_18555/ztfx/sswjjshfzcjbg/202606/t20260601_1963846.html",
+              "quote": "石油占比由18.9%降至18.2%",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025
+            },
+            {
+              "title": "The United States set record energy production in 2025, again — EIA (2026-05-11)",
+              "url": "https://www.eia.gov/todayinenergy/detail.php?id=67684",
+              "quote": "the United States remained the largest crude oil producer in the world.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025
+            },
+            {
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "quote": "能源矿产 | 石油、天然气、页岩气、煤炭、煤层气、铀",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact table text with cell separator | added for readability; lines 162–164"
+            }
+          ],
+          "olympiad": [],
+          "energyname": {
+            "zh": "石油",
+            "ru": [
+              "Нефть"
+            ],
+            "gloss": "Нефть — её доля в энергопотреблении КНР в 2025 году составляла 18,2 %."
+          },
+          "miningname": {
+            "zh": "石油",
+            "ru": [
+              "Нефть"
+            ],
+            "gloss": "Нефть — в 2025 году крупнейшим производителем сырой нефти были США."
+          }
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "resources",
+        "row": {
+          "id": "res-naturalgas",
+          "name": {
+            "zh": "天然气",
+            "ru": [
+              "Природный газ"
+            ]
+          },
+          "sources": [
+            {
+              "title": "能源转型跨越发展 绿色低碳成效显著 — 国家统计局 (2026-06-05)",
+              "url": "https://www.stats.gov.cn/zt_18555/ztfx/sswjjshfzcjbg/202606/t20260601_1963846.html",
+              "quote": "天然气占比由8.4%提升至8.7%",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025
+            },
+            {
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "quote": "能源矿产 | 石油、天然气、页岩气、煤炭、煤层气、铀",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact table text with cell separator | added for readability; lines 162–164"
+            }
+          ],
+          "olympiad": [],
+          "energyname": {
+            "zh": "天然气",
+            "ru": [
+              "Природный газ"
+            ],
+            "gloss": "Природный газ — его доля в энергопотреблении КНР в 2025 году составляла 8,7 %."
+          }
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "resources",
+        "row": {
+          "id": "res-nonferrous",
+          "name": {
+            "zh": "有色金属",
+            "ru": [
+              "Цветные металлы"
+            ]
+          },
+          "sources": [
+            {
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "quote": "铜、铝、铅、锌、金、钨、钼等金属矿产",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "additionalQuote": "能源矿产",
+              "quoteNote": "В тексте медь и алюминий названы металлическими минералами. В приложении 1 топливо выделено отдельно как 能源 矿产（26）, руды цветных металлов — как 有色金属矿产（43）. Вывод о различии групп сделан по классификации таблицы, не по отсутствию слова в перечне."
+            },
+            {
+              "url": "https://pubs.usgs.gov/of/2008/1356/pdf/ofr2008-1356.pdf",
+              "title": "Metal Use Characteristics — USGS Open-File Report 2008–1356",
+              "quote": "Al, Cd, Cu, Ni, Pb, REE, and Zn are nonferrous metals",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; classification source; 15-word continuous excerpt"
+            }
+          ],
+          "olympiad": [],
+          "energyname": {
+            "zh": "有色金属",
+            "ru": [
+              "Цветные металлы"
+            ],
+            "gloss": "Цветные металлы — медь и алюминий относятся к металлическому сырью, а не к топливу."
+          }
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "resources",
+        "row": {
+          "id": "res-gold",
+          "name": {
+            "zh": "黄金",
+            "ru": [
+              "Золото"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Mineral Commodity Summaries 2026 — USGS, GOLD",
+              "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+              "quote": "China                                                         377       380                                              3,200",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025,
+              "location": "Печатная стр. 91: World Mine Production and Reserves, столбцы 2024 / 2025e / Reserves; тонны.",
+              "quoteNote": "Табличная строка дословно из pdftotext -layout; 2025e — оценка, не окончательный итог.",
+              "localEvidence": "/tmp/mcs2026.txt"
+            },
+            {
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "quote": "以铁、锰、铜、铝、镍、铅、锌、钨、锡、锑、金、银等为重点",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt, line 253; classification/identity source, not a second confirmation of 2025 ranks"
+            }
+          ],
+          "olympiad": [],
+          "miningname": {
+            "zh": "黄金",
+            "ru": [
+              "Золото"
+            ],
+            "gloss": "Золото — по оценке USGS, Китай добыл 380 т в 2025 году."
+          }
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "resources",
+        "row": {
+          "id": "res-silver",
+          "name": {
+            "zh": "白银",
+            "ru": [
+              "Серебро"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Mineral Commodity Summaries 2026 — USGS, SILVER",
+              "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+              "quote": "Mexico                                                               5,780      6,300                                             37,000",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025,
+              "location": "Печатная стр. 173: World Mine Production and Reserves, столбец 2025e; тонны.",
+              "quoteNote": "Лидерство установлено сравнением всех стран в той же таблице; Китай 3400, Перу 3600.",
+              "localEvidence": "/tmp/mcs2026.txt"
+            },
+            {
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "quote": "以铁、锰、铜、铝、镍、铅、锌、钨、锡、锑、金、银等为重点",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt, line 253; classification/identity source, not a second confirmation of 2025 ranks"
+            }
+          ],
+          "olympiad": [],
+          "miningname": {
+            "zh": "白银",
+            "ru": [
+              "Серебро"
+            ],
+            "gloss": "Серебро — по оценке USGS, в 2025 году лидировала Мексика: 6300 т."
+          }
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "resources",
+        "row": {
+          "id": "res-ironore",
+          "name": {
+            "zh": "铁矿",
+            "ru": [
+              "Железная руда"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Mineral Commodity Summaries 2026 — USGS, IRON ORE",
+              "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+              "quote": "Australia                                982,000    980,000    607,000     600,000                                 6",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025,
+              "location": "Печатная стр. 109: World Mine Production and Reserves, Mine production / Usable ore / 2025e; тысячи метрических тонн.",
+              "quoteNote": "Лидерство выведено из сравнительной таблицы: Австралия 980000, Бразилия 420000, Индия 310000, Китай 290000. Сравнивается пригодная руда, не сырая добытая масса.",
+              "localEvidence": "/tmp/mcs2026.txt"
+            },
+            {
+              "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+              "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+              "quote": "以铁、锰、铜、铝、镍、铅、锌、钨、锡、锑、金、银等为重点",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt, line 253; classification/identity source, not a second confirmation of 2025 ranks"
+            }
+          ],
+          "olympiad": [],
+          "miningname": {
+            "zh": "铁矿",
+            "ru": [
+              "Железная руда"
+            ],
+            "gloss": "Железная руда — в 2025-м Австралия лидировала по добыче пригодной руды."
+          }
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "countries",
+        "row": {
+          "id": "country-ph",
+          "name": {
+            "zh": "菲律宾",
+            "ru": [
+              "Филиппины"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Negotiating Empire, Part I — Library of Congress",
+              "url": "https://blogs.loc.gov/international-collections/2021/10/negotiating-empire-part-i-from-magellan-to-the-founding-of-manila-16th-18th-centuries/",
+              "quote": "The Spanish expedition that eventually succeeded in setting up Spanish rule in Manila arrived in 1565 on Cebu.",
+              "authority": "official",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://www.cebu.gov.ph/history/",
+              "title": "History and Heritage — Provincial Government of Cebu",
+              "quote": "In 1565, explorer Miguel López de Legazpi returned and established the first Spanish settlement in the Philippines, right in Cebu.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt at line 111; 24 words"
+            }
+          ],
+          "olympiad": [],
+          "macaoname": {
+            "zh": "菲律宾",
+            "ru": [
+              "Филиппины"
+            ],
+            "gloss": "Филиппины — испанская экспедиция прибыла на остров Себу в 1565 году."
+          }
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "countries",
+        "row": {
+          "id": "country-pt",
+          "name": {
+            "zh": "葡萄牙",
+            "ru": [
+              "Португалия"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Brief History — Macao Government Tourism Office",
+              "url": "https://www.macaotourism.gov.mo/en/article/about-macao/brief-history",
+              "quote": "major entrepot for trade between China, Japan, India and Europe",
+              "authority": "official",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://whc.unesco.org/en/list/1110/",
+              "title": "Historic Centre of Macao — UNESCO World Heritage Centre",
+              "quote": "became a Portuguese settlement in the mid-16th century",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt at line 46"
+            }
+          ],
+          "olympiad": [],
+          "macaoname": {
+            "zh": "葡萄牙",
+            "ru": [
+              "Португалия"
+            ],
+            "gloss": "Португалия — её поселение превратило Макао в узел торговли Китая с Европой."
+          }
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "milestones",
+        "row": {
+          "id": "mile-anthem-provisional1949",
+          "name": {
+            "zh": "以义勇军进行曲为代国歌的决议",
+            "ru": [
+              "Решение о временном гимне КНР 1949 года"
+            ]
+          },
+          "sources": [
+            {
+              "title": "中华人民共和国国歌 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956230.htm",
+              "quote": "1949年9月27日，中国人民政治协商会议第一届全体会议通过决议",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "additionalQuote": "为代国歌。"
+            },
+            {
+              "title": "《义勇军进行曲》：唱响世界的中国最强音 — 中国共产党新闻网",
+              "url": "https://cpc.people.com.cn/n1/2023/0929/c443712-40087849.html",
+              "quote": "1949年9月27日，中国人民政治协商会议第一届全体会议通过决议，在中华人民共和国国歌未正式制定前，以田汉作词、聂耳作曲的《义勇军进行曲》为代国歌。参会代表中就有《义勇军进行曲》词作者田汉和为歌曲传播作出巨大贡献的刘良模。1949年10月1日，伴随着《义勇军进行曲》雄壮的节奏，五星红旗升起在天安门广场。2004年3月14日，十届全国人大二次会议通过的宪法修正案规定“中华人民共和国国歌是《义勇军进行曲》”。《义勇军进行曲》作为国歌写入宪法。",
+              "authority": "official",
+              "checkedAt": "2026-10-25",
+              "verificationMethod": "reused-accepted-dossier-source-and-quote",
+              "cellProvenance": "data/dossiers/state.json#tables/symbols/rows/sym-guoge"
+            }
+          ],
+          "olympiad": [],
+          "anthemYear": {
+            "zh": "1949年",
+            "ru": [
+              "1949 год"
+            ],
+            "gloss": "1949 год — «Марш добровольцев» выбран временным гимном КНР 27 сентября."
+          }
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "milestones",
+        "row": {
+          "id": "mile-educationlaw1986",
+          "name": {
+            "zh": "义务教育法通过",
+            "ru": [
+              "Принятие Закона КНР об обязательном образовании"
+            ]
+          },
+          "sources": [
+            {
+              "title": "九年义务教育开始实施 — 中华人民共和国教育部",
+              "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3581/moe_2669/moe_2921/tnull_51639.html",
+              "quote": "1986年4月12日，六届全国人大四次会议审议通过了《中华人民共和国义务教育法》。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "quoteNote": "Сверено в поисковом индексе официальной страницы; полный open сайта moe.gov.cn в этой сессии нестабилен."
+            },
+            {
+              "url": "https://big5.www.gov.cn/gate/big5/www.gov.cn/guoqing/2021-10/29/content_5647617.htm",
+              "title": "中華人民共和國義務教育法 — 中國政府網（中國人大網）",
+              "quote": "1986年4月12日第六屆全國人民代表大會第四次會議通過",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; statute enactment heading"
+            }
+          ],
+          "olympiad": [],
+          "anthemYear": {
+            "zh": "1986年",
+            "ru": [
+              "1986 год"
+            ],
+            "gloss": "1986 год — 12 апреля принят Закон КНР об обязательном образовании."
+          }
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "milestones",
+        "row": {
+          "id": "mile-legislationlaw2000",
+          "name": {
+            "zh": "立法法通过",
+            "ru": [
+              "Принятие Закона КНР о правотворчестве"
+            ]
+          },
+          "sources": [
+            {
+              "title": "中华人民共和国立法法 — 北京市人民代表大会常务委员会",
+              "url": "https://www.bjrd.gov.cn/xwzx/qgrd/202303/t20230314_2935590.html",
+              "quote": "2000年3月15日第九届全国人民代表大会第三次会议通过",
+              "authority": "official",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://npc.people.com.cn/n/2014/1103/c14576-25965611.html",
+              "title": "立法法实施14年回眸：引领法治中国的制度力量 — 中国人大杂志",
+              "quote": "2000年3月15日，九届全国人大三次会议表决通过了《中华人民共和国立法法》。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; article by institutional legislature magazine"
+            }
+          ],
+          "olympiad": [],
+          "anthemYear": {
+            "zh": "2000年",
+            "ru": [
+              "2000 год"
+            ],
+            "gloss": "2000 год — 15 марта ВСНП принял Закон КНР о правотворчестве."
+          }
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "milestones",
+        "row": {
+          "id": "mile-anthem-constitution2004",
+          "name": {
+            "zh": "国歌写入宪法",
+            "ru": [
+              "Закрепление гимна в Конституции КНР"
+            ]
+          },
+          "sources": [
+            {
+              "title": "中华人民共和国国歌 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956230.htm",
+              "quote": "2004年3月14日，十届全国人大二次会议通过的宪法修正案，规定：中华人民共和国国歌是《义勇军进行曲》。",
+              "authority": "official",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "《义勇军进行曲》：唱响世界的中国最强音 — 中国共产党新闻网",
+              "url": "https://cpc.people.com.cn/n1/2023/0929/c443712-40087849.html",
+              "quote": "1949年9月27日，中国人民政治协商会议第一届全体会议通过决议，在中华人民共和国国歌未正式制定前，以田汉作词、聂耳作曲的《义勇军进行曲》为代国歌。参会代表中就有《义勇军进行曲》词作者田汉和为歌曲传播作出巨大贡献的刘良模。1949年10月1日，伴随着《义勇军进行曲》雄壮的节奏，五星红旗升起在天安门广场。2004年3月14日，十届全国人大二次会议通过的宪法修正案规定“中华人民共和国国歌是《义勇军进行曲》”。《义勇军进行曲》作为国歌写入宪法。",
+              "authority": "official",
+              "checkedAt": "2026-10-25",
+              "verificationMethod": "reused-accepted-dossier-source-and-quote",
+              "cellProvenance": "data/dossiers/state.json#tables/symbols/rows/sym-guoge"
+            }
+          ],
+          "olympiad": [],
+          "anthemYear": {
+            "zh": "2004年",
+            "ru": [
+              "2004 год"
+            ],
+            "gloss": "2004 год — 14 марта ВСНП закрепил название гимна в Конституции КНР."
+          }
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "treaties",
+        "row": {
+          "id": "tr-cnussr-east1991",
+          "name": {
+            "zh": "中苏国界东段协定",
+            "ru": [
+              "Соглашение СССР и КНР о восточной части границы"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Соглашение о советско-китайской границе. Москва, 16 мая 1991 — ЭБИД",
+              "url": "https://docs.historyrussia.org/ru/nodes/518493-soglashenie-mezhdu-soyuzom-sovetskih-sotsialisticheskih-respublik-i-kitayskoy-narodnoy-respublikoy-o-sovetsko-kitayskoy-gosudarstvennoy-granitse-na-ee-vostochnoy-chasti-moskva-16-maya-1991-goda",
+              "quote": "о советско-китайской государственной границе на ее Восточной части. Москва, 16 мая 1991 года",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://treaty.mfa.gov.cn/Treaty/web/detail1.jsp?objid=1531876659136",
+              "title": "中华人民共和国和苏维埃社会主义共和国联盟关于中苏国界东段的协定 — 中华人民共和国条约数据库",
+              "quote": "我国签署时间：1991.05.16；签署地点：莫斯科",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; adjacent table fields joined by semicolon"
+            }
+          ],
+          "olympiad": [],
+          "goodneighborYear": {
+            "zh": "1991年",
+            "ru": [
+              "1991 год"
+            ],
+            "gloss": "1991 год — СССР и КНР подписали соглашение о восточной части границы"
+          }
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "treaties",
+        "row": {
+          "id": "tr-cnru-declaration2011",
+          "name": {
+            "zh": "中俄睦邻友好合作条约签署10周年联合声明",
+            "ru": [
+              "Совместное заявление к десятилетию договора России и Китая"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Переговоры Ху Цзиньтао с Д. Медведевым — МИД КНР",
+              "url": "https://www.mfa.gov.cn/rus/zl/ce_ceml_chn/hzxcxjjlt/201106/t20110617_878211.html",
+              "quote": "Медведев и Ху Цзиньтао выступили с речами на концерте в честь 10-й годовщины подписания Договора",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/oz_678770/1206_679110/1207_679122/201106/t20110617_9337139.shtml",
+              "title": "中国国家主席胡锦涛和俄罗斯总统梅德韦杰夫关于《中俄睦邻友好合作条约》签署10周年联合声明 — 中华人民共和国外交部",
+              "quote": "2011年6月16日，中国国家主席胡锦涛和俄罗斯总统梅德韦杰夫发表关于《中俄睦邻友好合作条约》签署10周年联合声明。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt at line 96"
+            }
+          ],
+          "olympiad": [],
+          "goodneighborYear": {
+            "zh": "2011年",
+            "ru": [
+              "2011 год"
+            ],
+            "gloss": "2011 год — Ху Цзиньтао и Д. Медведев отметили десятилетие договора в Москве"
+          }
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "treaties",
+        "row": {
+          "id": "tr-cnru-declaration2021",
+          "name": {
+            "zh": "中俄睦邻友好合作条约签署20周年联合声明",
+            "ru": [
+              "Совместное заявление о продлении договора России и Китая"
+            ]
+          },
+          "sources": [
+            {
+              "title": "习近平同俄罗斯总统普京举行视频会晤 — МИД КНР",
+              "url": "https://www.fmprc.gov.cn/tpxw/202106/t20210628_9136616.shtml",
+              "quote": "两国元首宣布发表联合声明，正式决定《中俄睦邻友好合作条约》延期。",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-page-opened",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://ru.china-embassy.gov.cn/zegx_0/202504/t20250430_11610611.htm",
+              "title": "《中俄睦邻友好合作条约》延期！（附声明全文）— 中国驻俄罗斯大使馆",
+              "quote": "习近平主席于2021年6月28日下午在北京同俄罗斯总统普京举行视频会晤。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt at line 16; page also publishes declaration announcing extension; page visibly dated 2021-06-29 despite migrated /202504 URL"
+            }
+          ],
+          "olympiad": [],
+          "goodneighborYear": {
+            "zh": "2021年",
+            "ru": [
+              "2021 год"
+            ],
+            "gloss": "2021 год — Си Цзиньпин и В. Путин объявили о продлении договора"
+          }
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "events",
+        "row": {
+          "id": "ev-ru-ugra1480",
+          "name": {
+            "zh": "乌格拉河对峙",
+            "ru": [
+              "Стояние на Угре"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Стояние на Угре — Президентская библиотека",
+              "url": "https://www.prlib.ru/node/619708",
+              "quote": "11 ноября 1480 г. хан Ахмат",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "Новая электронная коллекция Президентской библиотеки посвящена «собирателю русских земель» — Президентская библиотека имени Б. Н. Ельцина",
+              "url": "https://www.prlib.ru/news/2022890",
+              "quote": "При Иване III в 1480 году, после знаменитого стояния на реке Угре, Московское государство получило независимость от Золотой Орды. … Во время правления Ивана III сформировалась государственная символика с двуглавым орлом … В 1497 году в действие был введён Судебник – единый законодательный кодекс.",
+              "checkedAt": "2026-10-16",
+              "authority": "official",
+              "verificationMethod": "reused-accepted-dossier-source-and-quote",
+              "cellProvenance": "data/dossiers/dynasties.json#tables/rulers/rows/rul-ru-ivan3"
+            }
+          ],
+          "olympiad": [],
+          "siberiaCentury": {
+            "zh": "十五世纪",
+            "ru": [
+              "XV век"
+            ],
+            "gloss": "XV век — стояние на Угре (1480), завершение зависимости от Орды"
+          }
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "events",
+        "row": {
+          "id": "ev-ru-ermak-siberia",
+          "name": {
+            "zh": "叶尔马克远征西伯利亚",
+            "ru": [
+              "Поход Ермака в Сибирь"
+            ]
+          },
+          "sources": [
+            {
+              "title": "История — Ростовский государственный университет путей сообщения",
+              "url": "https://bypass.rgups.ru/site/assets/files/221914/sg_02_istoriia.pdf",
+              "quote": "1581 г. – поход Ермака – начало присоединения Сибири.",
+              "authority": "academic",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://libamur.ru/page/12474.html",
+              "title": "Поход Ермака в Сибирь (1581–1585 годы) — Амурская областная научная библиотека имени Н. Н. Муравьёва-Амурского",
+              "quote": "Поход Ермака в Сибирь (1581-1585 годы)",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; title of state scientific library bibliography; supports conventional dating, not consensus over exact departure year"
+            }
+          ],
+          "olympiad": [],
+          "siberiaCentury": {
+            "zh": "十六世纪",
+            "ru": [
+              "XVI век"
+            ],
+            "gloss": "XVI век — начало связывают с походом Ермака в 1581 году"
+          }
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "events",
+        "row": {
+          "id": "ev-ru-dezhnev1648",
+          "name": {
+            "zh": "杰日尼奥夫1648年航行",
+            "ru": [
+              "Плавание Семёна Дежнёва 1648 года"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Семен Дежнев. 1648–1948 — Президентская библиотека",
+              "url": "https://www.prlib.ru/item/1286555",
+              "quote": "1648-1948 : К трехсотлетию открытия пролива между Азией и Америкой.",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://www.rgo.ru/sites/default/files/media/2020-02-02/2_g_k.pdf",
+              "title": "ДЕЖНЁВ СЕМЁН ИВАНОВИЧ — справочный PDF на сайте РГО (2_g_k.pdf)",
+              "quote": "В 1648 г., на 80 лет раньше Витуса Беринга (см.) прошёл пролив, получивший впоследствии наименование Берингова.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; institutional geographical reference, line wrap joined"
+            }
+          ],
+          "olympiad": [],
+          "siberiaCentury": {
+            "zh": "十七世纪",
+            "ru": [
+              "XVII век"
+            ],
+            "gloss": "XVII век — Семён Дежнёв в 1648 году прошёл пролив между Азией и Америкой"
+          }
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "events",
+        "row": {
+          "id": "ev-ru-kamchatka1",
+          "name": {
+            "zh": "第一次堪察加考察",
+            "ru": [
+              "Первая Камчатская экспедиция"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Издан указ о Второй Камчатской экспедиции — Президентская библиотека",
+              "url": "https://www.prlib.ru/history/619199",
+              "quote": "В январе 1725 г. российский император отдал Указ о подготовке экспедиции на Тихий океан",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "url": "https://guides.rusarchives.ru/funds/145/pervaya-kamchatskaya-ekspediciya-1725-1729-gg",
+              "title": "Первая Камчатская экспедиция 1725–1729 гг. — Российский государственный архив Военно-Морского Флота",
+              "quote": "об организации и отправке в 1725 г. Первой Камчатской экспедиции из Петербурга в Охотск",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-primary-indexed-excerpt; exact continuous excerpt from archival finding aid"
+            }
+          ],
+          "olympiad": [],
+          "siberiaCentury": {
+            "zh": "十八世纪",
+            "ru": [
+              "XVIII век"
+            ],
+            "gloss": "XVIII век — Первая Камчатская экспедиция Беринга организована с 1725 года"
+          }
+        }
+      }
+    ],
+    "existingCellAdditions": [
+      {
+        "dossier": "modern-history",
+        "table": "countries",
+        "row": "country-jp",
+        "column": "macaoname",
+        "cell": {
+          "zh": "日本",
+          "ru": [
+            "Япония"
+          ],
+          "gloss": "Япония — торговый партнёр Макао на маршрутах между Китаем и Европой."
+        },
+        "additionalSources": [
+          {
+            "title": "Brief History — Macao Government Tourism Office",
+            "url": "https://www.macaotourism.gov.mo/en/article/about-macao/brief-history",
+            "quote": "China, Japan, India and Europe",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "quoteNote": "В контексте перечислены направления торговли Макао; подпись не утверждает японское владение."
+          }
+        ]
+      },
+      {
+        "dossier": "modern-history",
+        "table": "countries",
+        "row": "country-uk",
+        "column": "macaoname",
+        "cell": {
+          "zh": "英国",
+          "ru": [
+            "Британия"
+          ],
+          "gloss": "Британия — получила остров Гонконг по Нанкинскому договору 1842 года."
+        },
+        "additionalSources": []
+      },
+      {
+        "dossier": "modern-history",
+        "table": "treaties",
+        "row": "tr-ru-2001",
+        "column": "goodneighborYear",
+        "cell": {
+          "zh": "2001年",
+          "ru": [
+            "2001 год"
+          ],
+          "gloss": "2001 год — договор подписали Цзян Цзэминь и Владимир Путин"
+        },
+        "additionalSources": [
+          {
+            "title": "Интервью посла КНР Лю Гучана — МИД КНР",
+            "url": "https://www.mfa.gov.cn/rus/wjb/zzjg/dozys/dozysgjlb/1706/1710/200311/t20031120_957420.html",
+            "quote": "16-го июля 2001-го года этот договор подписали бывший председатель КНР Цзян Цзэминь и президент России Владимир Путин.",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-page-opened",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      }
+    ],
+    "additionalSources": {
+      "ndrc-energy": {
+        "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+        "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+        "quote": "能源矿产 | 石油、天然气、页岩气、煤炭、煤层气、铀",
+        "authority": "official",
+        "checkedAt": "2026-11-08",
+        "verificationMethod": "fresh-primary-page-opened; exact table text with cell separator | added for readability; lines 162–164"
+      },
+      "ndrc-metals": {
+        "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+        "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+        "quote": "以铁、锰、铜、铝、镍、铅、锌、钨、锡、锑、金、银等为重点",
+        "authority": "official",
+        "checkedAt": "2026-11-08",
+        "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt, line 253; classification/identity source, not a second confirmation of 2025 ranks"
+      },
+      "usgs-nonferrous": {
+        "url": "https://pubs.usgs.gov/of/2008/1356/pdf/ofr2008-1356.pdf",
+        "title": "Metal Use Characteristics — USGS Open-File Report 2008–1356",
+        "quote": "Al, Cd, Cu, Ni, Pb, REE, and Zn are nonferrous metals",
+        "authority": "official",
+        "checkedAt": "2026-11-08",
+        "verificationMethod": "fresh-primary-indexed-excerpt; classification source; 15-word continuous excerpt"
+      },
+      "unesco-macao": {
+        "url": "https://whc.unesco.org/en/list/1110/",
+        "title": "Historic Centre of Macao — UNESCO World Heritage Centre",
+        "quote": "became a Portuguese settlement in the mid-16th century",
+        "authority": "official",
+        "checkedAt": "2026-11-08",
+        "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt at line 46"
+      },
+      "cebu": {
+        "url": "https://www.cebu.gov.ph/history/",
+        "title": "History and Heritage — Provincial Government of Cebu",
+        "quote": "In 1565, explorer Miguel López de Legazpi returned and established the first Spanish settlement in the Philippines, right in Cebu.",
+        "authority": "official",
+        "checkedAt": "2026-11-08",
+        "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt at line 111; 24 words"
+      },
+      "education-law": {
+        "url": "https://big5.www.gov.cn/gate/big5/www.gov.cn/guoqing/2021-10/29/content_5647617.htm",
+        "title": "中華人民共和國義務教育法 — 中國政府網（中國人大網）",
+        "quote": "1986年4月12日第六屆全國人民代表大會第四次會議通過",
+        "authority": "official",
+        "checkedAt": "2026-11-08",
+        "verificationMethod": "fresh-primary-indexed-excerpt; statute enactment heading"
+      },
+      "legislation-law": {
+        "url": "https://npc.people.com.cn/n/2014/1103/c14576-25965611.html",
+        "title": "立法法实施14年回眸：引领法治中国的制度力量 — 中国人大杂志",
+        "quote": "2000年3月15日，九届全国人大三次会议表决通过了《中华人民共和国立法法》。",
+        "authority": "official",
+        "checkedAt": "2026-11-08",
+        "verificationMethod": "fresh-primary-indexed-excerpt; article by institutional legislature magazine"
+      },
+      "border1991": {
+        "url": "https://treaty.mfa.gov.cn/Treaty/web/detail1.jsp?objid=1531876659136",
+        "title": "中华人民共和国和苏维埃社会主义共和国联盟关于中苏国界东段的协定 — 中华人民共和国条约数据库",
+        "quote": "我国签署时间：1991.05.16；签署地点：莫斯科",
+        "authority": "official",
+        "checkedAt": "2026-11-08",
+        "verificationMethod": "fresh-primary-indexed-excerpt; adjacent table fields joined by semicolon"
+      },
+      "declaration2011": {
+        "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gj_676203/oz_678770/1206_679110/1207_679122/201106/t20110617_9337139.shtml",
+        "title": "中国国家主席胡锦涛和俄罗斯总统梅德韦杰夫关于《中俄睦邻友好合作条约》签署10周年联合声明 — 中华人民共和国外交部",
+        "quote": "2011年6月16日，中国国家主席胡锦涛和俄罗斯总统梅德韦杰夫发表关于《中俄睦邻友好合作条约》签署10周年联合声明。",
+        "authority": "official",
+        "checkedAt": "2026-11-08",
+        "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt at line 96"
+      },
+      "declaration2021": {
+        "url": "https://ru.china-embassy.gov.cn/zegx_0/202504/t20250430_11610611.htm",
+        "title": "《中俄睦邻友好合作条约》延期！（附声明全文）— 中国驻俄罗斯大使馆",
+        "quote": "习近平主席于2021年6月28日下午在北京同俄罗斯总统普京举行视频会晤。",
+        "authority": "official",
+        "checkedAt": "2026-11-08",
+        "verificationMethod": "fresh-primary-page-opened; exact continuous excerpt at line 16; page also publishes declaration announcing extension; page visibly dated 2021-06-29 despite migrated /202504 URL"
+      },
+      "ermak": {
+        "url": "https://libamur.ru/page/12474.html",
+        "title": "Поход Ермака в Сибирь (1581–1585 годы) — Амурская областная научная библиотека имени Н. Н. Муравьёва-Амурского",
+        "quote": "Поход Ермака в Сибирь (1581-1585 годы)",
+        "authority": "official",
+        "checkedAt": "2026-11-08",
+        "verificationMethod": "fresh-primary-indexed-excerpt; title of state scientific library bibliography; supports conventional dating, not consensus over exact departure year"
+      },
+      "dezhnev": {
+        "url": "https://www.rgo.ru/sites/default/files/media/2020-02-02/2_g_k.pdf",
+        "title": "ДЕЖНЁВ СЕМЁН ИВАНОВИЧ — справочный PDF на сайте РГО (2_g_k.pdf)",
+        "quote": "В 1648 г., на 80 лет раньше Витуса Беринга (см.) прошёл пролив, получивший впоследствии наименование Берингова.",
+        "authority": "academic",
+        "checkedAt": "2026-11-08",
+        "verificationMethod": "fresh-primary-indexed-excerpt; institutional geographical reference, line wrap joined"
+      },
+      "bering": {
+        "url": "https://guides.rusarchives.ru/funds/145/pervaya-kamchatskaya-ekspediciya-1725-1729-gg",
+        "title": "Первая Камчатская экспедиция 1725–1729 гг. — Российский государственный архив Военно-Морского Флота",
+        "quote": "об организации и отправке в 1725 г. Первой Камчатской экспедиции из Петербурга в Охотск",
+        "authority": "official",
+        "checkedAt": "2026-11-08",
+        "verificationMethod": "fresh-primary-indexed-excerpt; exact continuous excerpt from archival finding aid"
+      }
+    },
+    "summary": {
+      "questionCount": 6,
+      "optionCount": 24,
+      "newRowCount": 20,
+      "existingRowsReused": [
+        "modern-history/countries/country-jp",
+        "modern-history/countries/country-uk",
+        "modern-history/treaties/tr-ru-2001"
+      ],
+      "newTableCount": 1
+    },
+    "cautions": [
+      {
+        "reviewNumber": 6,
+        "kind": "accepted-wording-measurement-ambiguity",
+        "severity": "material",
+        "finding": "Latest author-approved stem removes the earlier explicit usable-ore qualification. The approved 铁矿 caption and USGS ranking compare usable ore, while raw ore mass is a different measure and can put China first. Preserve accepted stem and captions; explanation should explicitly give USGS usable-ore basis and 2025 estimates. No silent rewording.",
+        "source": "manifest option o4; USGS MCS2026 p.109"
+      },
+      {
+        "reviewNumber": 15,
+        "kind": "accepted-wording-legal-ambiguity",
+        "severity": "material",
+        "finding": "Broad юридически утверждён is not identical to constitutional incorporation: 1949 resolution preceded 2004 and official formal confirmation also existed in 1982. Key 2004 is defensible specifically for the Constitution. Retain author-approved stem; explain exact constitutional act. Do not silently present broad wording as legally unique.",
+        "source": "state/symbols/sym-guoge accepted sources and manifest option o4"
+      },
+      {
+        "reviewNumber": 18,
+        "kind": "accepted-caption-conventional-date",
+        "severity": "minor",
+        "finding": "Correct caption says начало связывают с походом Ермака в 1581 году. This is a conventional textbook date; historians also date departure to 1582. Century XVI is unaffected. Keep accepted caption unchanged; do not strengthen its claim to consensus."
+      },
+      {
+        "reviewNumber": 16,
+        "kind": "same-year-format-precision",
+        "severity": "implementation",
+        "finding": "Use exact 1991年/2001年/2011年/2021年 from manifest; dedicated goodneighborYear prevents changing existing year=2001 年 used elsewhere."
+      },
+      {
+        "reviewNumber": 9,
+        "kind": "latest-stem-override",
+        "severity": "implementation",
+        "finding": "Use latest accepted Russian stem supplied by root, not manifest preview. Existing Chinese draft adds Guangdong permission and early-1550s specificity; any decision to synchronize it to latest Russian wording belongs to root. Options and captions remain unchanged."
+      }
+    ],
+    "captionReview": {
+      "all24AcceptedCaptionsPreserved": true,
+      "allAddInformation": true,
+      "notes": {
+        "3": "Numeric energy shares add detail; nonferrous caption identifies a nonfuel category.",
+        "6": "Country leaders/quantities add detail; measurements and estimates must remain explicit.",
+        "9": "Trade route/Cebu/entrepot/Hong Kong facts add distinctions within maritime and colonial history.",
+        "15": "Exact dates and legal acts add detail; 2004 is constitutional incorporation.",
+        "16": "Signers, border agreement, anniversary and extension add context; anniversary arithmetic is repetition of the same treaty date, not a new question.",
+        "18": "Each caption gives a concrete event/date within its century; conventional 1581 caveat retained."
+      }
+    },
+    "mutualHintCandidates": [
+      {
+        "sourceId": "2025-26-mun-kem-7",
+        "sourceCaptionOptionId": "o1",
+        "targetId": "dynasties-q122",
+        "finding": "XV-век caption directly supplies the outcome of standing on Ugra (конец ордынской зависимости). Different event/person rows will not automatically receive the same factRow. Recommend a fact group with dynasties-q122, and consider related Ivan III questions already tied to rul-ru-ivan3."
+      },
+      {
+        "sourceId": "2022-23-mun-tat-6",
+        "sourceCaptionOptionId": "o1",
+        "targetIds": [
+          "2017-18-reg-5",
+          "cinema-q34"
+        ],
+        "finding": "1949 distractor caption names Марш добровольцев and identifies it as PRC anthem; directly answers anthem-name question. Existing anthem-volunteers-march group contains 2017-18-reg-5 and cinema-q34. Add candidate to that existing group to preserve approved caption. It does not reveal word/music authors."
+      },
+      {
+        "sourceId": "2019-20-mun-mosobl-52",
+        "sourceCaptionOptionId": "o4",
+        "targetIds": [
+          "2022-23-mun-orel-4"
+        ],
+        "finding": "Caption gives UK, Hong Kong island, Nanjing treaty and 1842. In current active index 2022-23-mun-orel-4 was not present, though accepted embed modern-history-q119 references it. Root must check full eventual authorized bank: this caption may answer its war/country question; do not erase accepted information."
+      },
+      {
+        "sourceId": "2019-20-mun-mosobl-52",
+        "sourceCaptionOptionId": "o3",
+        "targetId": "2021-22-shk-qf1333c",
+        "finding": "Caption identifies Portuguese involvement and trade in Macao; may make the earlier maritime-arrival Portugal question easier, but does not explicitly state first European arrival. Semantic relation is distinct; no automatic fact group asserted."
+      }
+    ],
+    "implementationNotes": [
+      "Do not edit sources/ or data/bank.json by hand. Root should use editorial.json for approved Russian stems/Arabic year options, accepted dossier embeds and ordinary build scripts.",
+      "Dedicated aspect columns limit each new embed pool to its exact four accepted options; no exclude is necessary for these mappings.",
+      "Set new container embed IDs sequentially at integration time to avoid collision with other batch5 subtasks; original bank IDs stay unchanged.",
+      "New rows omit ordinary year, country/kind and partner cells to avoid accidental additions to existing filtered pools. New treaty and country name cells remain metadata only: apply existingQuestionExclusions for the two unfiltered pre-existing name pools. No new unaccepted name-cell captions are needed."
+    ],
+    "existingQuestionExclusions": [
+      {
+        "dossier": "modern-history",
+        "questionId": "modern-history-q108",
+        "addExclude": [
+          "tr-cnussr-east1991",
+          "tr-cnru-declaration2011",
+          "tr-cnru-declaration2021"
+        ],
+        "reason": "New document rows must not enter this previously accepted treaties/name question as extra distractors."
+      },
+      {
+        "dossier": "modern-history",
+        "questionId": "modern-history-q119",
+        "addExclude": [
+          "country-ph",
+          "country-pt"
+        ],
+        "reason": "Keep old countries/name pool unchanged while adding new country entities for dedicated macaoname pool."
+      }
+    ],
+    "inMemoryVerification": {
+      "dossierSchemaErrors": {
+        "modern-history": [],
+        "modern-china": []
+      },
+      "embedResults": [
+        {
+          "reviewNumber": 3,
+          "errors": [],
+          "pool": [
+            [
+              "o1",
+              "煤炭"
+            ],
+            [
+              "o2",
+              "石油"
+            ],
+            [
+              "o3",
+              "天然气"
+            ],
+            [
+              "o4",
+              "有色金属"
+            ]
+          ],
+          "captionsPreserved": true
+        },
+        {
+          "reviewNumber": 6,
+          "errors": [],
+          "pool": [
+            [
+              "o1",
+              "黄金"
+            ],
+            [
+              "o2",
+              "白银"
+            ],
+            [
+              "o3",
+              "石油"
+            ],
+            [
+              "o4",
+              "铁矿"
+            ]
+          ],
+          "captionsPreserved": true
+        },
+        {
+          "reviewNumber": 9,
+          "errors": [],
+          "pool": [
+            [
+              "o1",
+              "日本"
+            ],
+            [
+              "o2",
+              "菲律宾"
+            ],
+            [
+              "o3",
+              "葡萄牙"
+            ],
+            [
+              "o4",
+              "英国"
+            ]
+          ],
+          "captionsPreserved": true
+        },
+        {
+          "reviewNumber": 15,
+          "errors": [],
+          "pool": [
+            [
+              "o1",
+              "1949年"
+            ],
+            [
+              "o2",
+              "1986年"
+            ],
+            [
+              "o3",
+              "2000年"
+            ],
+            [
+              "o4",
+              "2004年"
+            ]
+          ],
+          "captionsPreserved": true
+        },
+        {
+          "reviewNumber": 16,
+          "errors": [],
+          "pool": [
+            [
+              "o1",
+              "1991年"
+            ],
+            [
+              "o2",
+              "2001年"
+            ],
+            [
+              "o3",
+              "2011年"
+            ],
+            [
+              "o4",
+              "2021年"
+            ]
+          ],
+          "captionsPreserved": true
+        },
+        {
+          "reviewNumber": 18,
+          "errors": [],
+          "pool": [
+            [
+              "o1",
+              "十五世纪"
+            ],
+            [
+              "o2",
+              "十六世纪"
+            ],
+            [
+              "o3",
+              "十七世纪"
+            ],
+            [
+              "o4",
+              "十八世纪"
+            ]
+          ],
+          "captionsPreserved": true
+        }
+      ],
+      "scope": "No repository mutation. Uses currently checked-out dossiers plus proposed /tmp additions; embeds checked against bank originals with accepted stems and option edits applied in memory."
+    },
+    "verificationLimits": [
+      "Only dossier schema and all six individual embed mappings were executed in memory; root must run complete candidate dossier, cross-question and gloss-leak checks after integrating all 16 questions.",
+      "No repository files edited. No commit, push, deploy, publication or site setting was performed."
+    ]
+  },
+  "culture": {
+    "scope": "regional-batch5 culture-literature embedding evidence",
+    "date": "2026-11-08",
+    "readOnlyRepo": true,
+    "publicationAuthorized": false,
+    "mapping": [
+      {
+        "reviewNumber": 2,
+        "bankId": "2023-24-shk-mosobl-2",
+        "questionRu": "Какой китайский режиссер стал режиссером церемонии открытия и закрытия зимних и летних Олимпийских игр в Пекине?",
+        "answerOptionId": "o1",
+        "dossier": "cinema",
+        "proposedQuestion": {
+          "embeds": "2023-24-shk-mosobl-2",
+          "status": "accepted",
+          "fact": {
+            "table": "persons",
+            "row": "cin-person-zhang-yimou",
+            "ask": "name"
+          },
+          "check": {
+            "verdict": "accept",
+            "note": "Карта сохраняет исходные четыре варианта и все принятые подписи; независимое интеграционное ревью выполняет root."
+          }
+        },
+        "optionMap": [
+          {
+            "originalOptionId": "o1",
+            "rowId": "cin-person-zhang-yimou",
+            "zh": "张艺谋",
+            "gloss": "Чжан Имоу — его «Красный гаолян» получил «Золотого медведя» Берлинале в 1988 году"
+          },
+          {
+            "originalOptionId": "o2",
+            "rowId": "cin-person-mo-yan",
+            "zh": "莫言",
+            "gloss": "Мо Янь — писатель, лауреат Нобелевской премии по литературе 2012 года"
+          },
+          {
+            "originalOptionId": "o3",
+            "rowId": "cin-person-john-woo",
+            "zh": "吴宇森",
+            "gloss": "Джон Ву — в 2010 году получил почётного «Золотого льва» за вклад в кино"
+          },
+          {
+            "originalOptionId": "o4",
+            "rowId": "cin-person-ang-lee",
+            "zh": "李安",
+            "gloss": "Энг Ли — получил «Оскар» за режиссуру фильма «Жизнь Пи»"
+          }
+        ],
+        "poolPolicy": "Ровно четыре заполненные ячейки данного contextual ask; для name — таблица состоит из этих четырех строк. Новые строки не должны расширять чужие contextual-наборы."
+      },
+      {
+        "reviewNumber": 13,
+        "bankId": "2024-25-mun-mosobl-9",
+        "questionRu": "Какой русский писатель был увлечен философией Китая и пытался перевести на русский язык «Дао дэ цзин» и «Лунь юй»?",
+        "answerOptionId": "o3",
+        "dossier": "literature",
+        "proposedQuestion": {
+          "embeds": "2024-25-mun-mosobl-9",
+          "status": "accepted",
+          "fact": {
+            "table": "authors",
+            "row": "lit-a-ru-tolstoy",
+            "ask": "philosophyauthor"
+          },
+          "check": {
+            "verdict": "accept",
+            "note": "Карта сохраняет исходные четыре варианта и все принятые подписи; независимое интеграционное ревью выполняет root."
+          }
+        },
+        "optionMap": [
+          {
+            "originalOptionId": "o1",
+            "rowId": "lit-a-ru-dostoevsky",
+            "zh": "费奥多尔·陀思妥耶夫斯基",
+            "gloss": "Достоевский — «Идиот» и «Братья Карамазовы» входят в его «великое пятикнижие»"
+          },
+          {
+            "originalOptionId": "o2",
+            "rowId": "lit-a-ru-lermontov",
+            "zh": "米哈伊尔·列尔蒙托夫",
+            "gloss": "Михаил Лермонтов — поэт, автор «Паруса» и «Смерти поэта»"
+          },
+          {
+            "originalOptionId": "o3",
+            "rowId": "lit-a-ru-tolstoy",
+            "zh": "列夫·托尔斯泰",
+            "gloss": "Лев Толстой — в «Китайской мудрости» (1884) излагал учения древних философов"
+          },
+          {
+            "originalOptionId": "o4",
+            "rowId": "lit-a-ru-pushkin",
+            "zh": "亚历山大·普希金",
+            "gloss": "Александр Пушкин — автор романа в стихах «Евгений Онегин»"
+          }
+        ],
+        "poolPolicy": "Ровно четыре заполненные ячейки данного contextual ask; для name — таблица состоит из этих четырех строк. Новые строки не должны расширять чужие contextual-наборы."
+      },
+      {
+        "reviewNumber": 19,
+        "bankId": "2023-24-mun-spb-9",
+        "questionRu": "Какая из нижеперечисленных форм литературных произведений считается в Китае самой ранней?",
+        "answerOptionId": "o2",
+        "dossier": "literature",
+        "proposedQuestion": {
+          "embeds": "2023-24-mun-spb-9",
+          "status": "accepted",
+          "fact": {
+            "table": "literaryforms",
+            "row": "lit-form-poetry",
+            "ask": "name"
+          },
+          "check": {
+            "verdict": "accept",
+            "note": "Карта сохраняет исходные четыре варианта и все принятые подписи; независимое интеграционное ревью выполняет root."
+          }
+        },
+        "optionMap": [
+          {
+            "originalOptionId": "o1",
+            "rowId": "lit-form-fiction",
+            "zh": "小说",
+            "gloss": "Сяошо — повествовательная проза; пример — роман «Троецарствие»"
+          },
+          {
+            "originalOptionId": "o2",
+            "rowId": "lit-form-poetry",
+            "zh": "诗歌",
+            "gloss": "Поэзия — древние китайские стихи были связаны с музыкой и танцем"
+          },
+          {
+            "originalOptionId": "o3",
+            "rowId": "lit-form-prose",
+            "zh": "散文",
+            "gloss": "Саньвэнь — проза; в древности она объединяла литературу, историю и философию"
+          },
+          {
+            "originalOptionId": "o4",
+            "rowId": "lit-form-drama",
+            "zh": "戏剧",
+            "gloss": "Драма — в эпоху Юань расцвёл жанр цзацзюй, например «Обида Доу Э»"
+          }
+        ],
+        "poolPolicy": "Ровно четыре заполненные ячейки данного contextual ask; для name — таблица состоит из этих четырех строк. Новые строки не должны расширять чужие contextual-наборы."
+      },
+      {
+        "reviewNumber": 20,
+        "bankId": "2024-25-mun-krsk-6",
+        "questionRu": "Какой камень в Древнем Китае использовали для изготовления ритуальных предметов и считали оберегом?",
+        "answerOptionId": "o3",
+        "dossier": "crafts",
+        "proposedQuestion": {
+          "embeds": "2024-25-mun-krsk-6",
+          "status": "draft",
+          "fact": {
+            "table": "materials",
+            "row": "material-nephrite",
+            "ask": "jaderitualmaterial"
+          },
+          "check": {
+            "verdict": "needs-review",
+            "note": "№20: ключ подтверждён, единственность широкого признака не установлена; сохранить локальным черновиком до решения."
+          }
+        },
+        "optionMap": [
+          {
+            "originalOptionId": "o1",
+            "rowId": "material-jasper",
+            "zh": "碧石",
+            "gloss": "Яшма — скрытокристаллический кварц; её окраску создают минеральные примеси"
+          },
+          {
+            "originalOptionId": "o2",
+            "rowId": "material-rockcrystal",
+            "zh": "水晶",
+            "gloss": "Горный хрусталь — прозрачные кристаллы кварца"
+          },
+          {
+            "originalOptionId": "o3",
+            "rowId": "material-nephrite",
+            "zh": "软玉",
+            "gloss": "Нефрит — плотный камень из переплетённых тремолита и актинолита"
+          },
+          {
+            "originalOptionId": "o4",
+            "rowId": "material-quartz",
+            "zh": "石英",
+            "gloss": "Кварц — минерал из диоксида кремния; из него изготавливают стекло"
+          }
+        ],
+        "poolPolicy": "Ровно четыре заполненные ячейки данного contextual ask; для name — таблица состоит из этих четырех строк. Новые строки не должны расширять чужие contextual-наборы."
+      }
+    ],
+    "tablesToAdd": [
+      {
+        "dossier": "cinema",
+        "table": "persons",
+        "tableData": {
+          "columns": {
+            "name": "zh"
+          },
+          "rows": [
+            {
+              "id": "cin-person-zhang-yimou",
+              "name": {
+                "zh": "张艺谋",
+                "gloss": "Чжан Имоу — его «Красный гаолян» получил «Золотого медведя» Берлинале в 1988 году"
+              },
+              "sources": [
+                {
+                  "title": "Жэньминь жибао (海外版): 红高粱地的朝圣",
+                  "url": "https://paper.people.com.cn/rmrbhwb/html/2013-11/12/content_1323624.htm",
+                  "quote": "1988年获柏林国际电影节金熊奖，导演张艺谋",
+                  "checkedAt": "2026-10-19",
+                  "authority": "official",
+                  "provenance": "accepted_batch5_caption",
+                  "dossierRow": "cinema/works/cin-cn-red-sorghum",
+                  "freshPageVerification": false
+                },
+                {
+                  "title": "CCTV-6 / 1905: 红高粱",
+                  "url": "https://www.1905.com/mdb/film/48527/",
+                  "quote": "根据莫言小说《红高粱》和《高粱酒》改编",
+                  "checkedAt": "2026-10-19",
+                  "authority": "official",
+                  "provenance": "reused_accepted_dossier",
+                  "reusedFrom": "data/dossiers/cinema.json / works/cin-cn-red-sorghum / sources[0]",
+                  "freshPageVerification": false
+                },
+                {
+                  "url": "https://www.bjiff.com/images/%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%8A%E7%94%B5%E5%BD%B1%E8%8A%82%E4%BC%9A%E5%88%8A.pdf",
+                  "title": "北京国际电影节 — 第十三届电影节会刊",
+                  "quote": "Creative Director of the Opening and Closing Ceremonies at both the Olympic Summer Games and Olympic Winter Games",
+                  "authority": "official",
+                  "verificationMethod": "browsed_search_excerpt",
+                  "checkedAt": "2026-11-08"
+                },
+                {
+                  "url": "https://www.olympics.com/ioc/news/critically-acclaimed-director-lu-chuan-selected-to-direct-the-official-film-of-the-olympic-winter-games-beijing-2022",
+                  "title": "IOC — Official Film of Beijing 2022",
+                  "quote": "Zhang Yimou is also the Chief Director of the Beijing 2022 Opening and Closing ceremonies.",
+                  "authority": "official",
+                  "verificationMethod": "browsed_search_excerpt",
+                  "checkedAt": "2026-11-08"
+                }
+              ],
+              "olympiad": []
+            },
+            {
+              "id": "cin-person-mo-yan",
+              "name": {
+                "zh": "莫言",
+                "gloss": "Мо Янь — писатель, лауреат Нобелевской премии по литературе 2012 года",
+                "ref": "literature/authors/lit-a-moyan"
+              },
+              "sources": [
+                {
+                  "title": "The Nobel Prize in Literature 2012 — Bio-bibliography, NobelPrize.org",
+                  "url": "https://www.nobelprize.org/prizes/literature/2012/bio-bibliography/",
+                  "quote": "Mo Yan (a pseudonym for Guan Moye) was born in 1955 and grew up in Gaomi in Shandong province in north-eastern China.",
+                  "checkedAt": "2026-10-17",
+                  "authority": "official",
+                  "provenance": "reused_accepted_dossier",
+                  "reusedFrom": "data/dossiers/literature.json / authors/lit-a-moyan / sources[0]",
+                  "freshPageVerification": false
+                },
+                {
+                  "url": "https://www.nobelprize.org/prizes/literature/2012/prize-announcement/?print=1",
+                  "title": "The Nobel Prize in Literature 2012 – Prize announcement — NobelPrize.org",
+                  "quote": "Announcement of the 2012 Nobel Prize in Literature to Mo Yan",
+                  "checkedAt": "2026-11-07",
+                  "authority": "official",
+                  "verificationMethod": "browsed_search_excerpt",
+                  "provenance": "accepted_batch5_caption",
+                  "dossierRow": "literature/authors/lit-a-moyan",
+                  "freshPageVerification": false
+                }
+              ],
+              "olympiad": []
+            },
+            {
+              "id": "cin-person-john-woo",
+              "name": {
+                "zh": "吴宇森",
+                "gloss": "Джон Ву — в 2010 году получил почётного «Золотого льва» за вклад в кино"
+              },
+              "sources": [
+                {
+                  "url": "https://www.labiennale.org/en/history/recent-years",
+                  "title": "La Biennale di Venezia — Recent years",
+                  "quote": "Golden Lions for Lifetime Achievement in 2010: William Forsythe (Dance), Rem Koolhaas (Architecture), John Woo (Cinema)",
+                  "authority": "official",
+                  "verificationMethod": "browsed_full_page",
+                  "checkedAt": "2026-11-08",
+                  "provenance": "accepted_batch5_caption"
+                },
+                {
+                  "title": "Venice International Film Festival honours Hong Kong cinema — HKSAR Government",
+                  "url": "https://www.info.gov.hk/gia/general/201009/04/P201009040194_print.htm",
+                  "quote": "presented director John Woo with a Golden Lion for Lifetime Achievement award yesterday (September 3, Venice time).",
+                  "authority": "official",
+                  "checkedAt": "2026-11-08",
+                  "verificationMethod": "fresh-primary-page-opened",
+                  "publicationDate": "2010-09-04"
+                }
+              ],
+              "olympiad": []
+            },
+            {
+              "id": "cin-person-ang-lee",
+              "name": {
+                "zh": "李安",
+                "gloss": "Энг Ли — получил «Оскар» за режиссуру фильма «Жизнь Пи»"
+              },
+              "sources": [
+                {
+                  "url": "https://www.oscars.org/oscars/ceremonies/2013",
+                  "title": "The 85th Academy Awards | 2013",
+                  "quote": "Directing\n\nWinner\n\nLife of Pi\n\nAng Lee",
+                  "authority": "official",
+                  "verificationMethod": "browsed_full_page",
+                  "checkedAt": "2026-11-08",
+                  "quoteFormatting": "Сохранён порядок строк блока Directing; пустые строки по веб-представлению.",
+                  "provenance": "accepted_batch5_caption"
+                },
+                {
+                  "title": "Каннский фестиваль: Crouching Tiger, Hidden Dragon",
+                  "url": "https://www.festival-cannes.com/en/2019/crouching-tiger-hidden-dragon-ang-lee-s-spectacular-masterpiece/",
+                  "quote": "In 2000, Taiwanese filmmaker\nAng Lee\nserved up\nCrouching Tiger, Hidden Dragon",
+                  "checkedAt": "2026-10-19",
+                  "authority": "official",
+                  "provenance": "reused_accepted_dossier",
+                  "reusedFrom": "data/dossiers/cinema.json / works/cin-cn-crouching-tiger / sources[1]",
+                  "freshPageVerification": false
+                }
+              ],
+              "olympiad": []
+            }
+          ]
+        },
+        "note": "Минимальная таблица лиц для точного общего набора. MoYan name.ref связывает с уже канонической строкой автора; новые самостоятельные источники не собираются повторно."
+      },
+      {
+        "dossier": "literature",
+        "table": "literaryforms",
+        "tableData": {
+          "columns": {
+            "name": "zh"
+          },
+          "rows": [
+            {
+              "id": "lit-form-fiction",
+              "name": {
+                "zh": "小说",
+                "gloss": "Сяошо — повествовательная проза; пример — роман «Троецарствие»"
+              },
+              "sources": [
+                {
+                  "url": "https://id.china-embassy.gov.cn/chn/zggk/zgxz/xzwhys/200404/t20040421_2344862.htm",
+                  "title": "中国驻印度尼西亚使馆 — 文学",
+                  "quote": "罗贯中的《三国演义》、施耐庵的《水浒传》、吴承恩的《西游记》和曹雪芹的《红楼梦》四部长篇小说",
+                  "authority": "official",
+                  "verificationMethod": "browsed_full_page",
+                  "checkedAt": "2026-11-08",
+                  "provenance": "accepted_batch5_caption"
+                },
+                {
+                  "title": "《三国演义》的日本译传：“三国热”经久不衰 — 中国社会科学网",
+                  "url": "https://www.cssn.cn/skgz/bwyc/202405/t20240511_5750645.shtml",
+                  "quote": "《三国演义》是中国文学史上第一部章回小说，是历史演义小说的开山之作，明清时期甚至有“第一才子书”之称。作为中国四大名著之一，《三国演义》在国内家喻户晓",
+                  "checkedAt": "2026-10-17",
+                  "authority": "academic",
+                  "provenance": "reused_accepted_dossier",
+                  "reusedFrom": "data/dossiers/literature.json / works/lit-w-sanguoyanyi / sources[0]",
+                  "freshPageVerification": false
+                }
+              ],
+              "olympiad": []
+            },
+            {
+              "id": "lit-form-poetry",
+              "name": {
+                "zh": "诗歌",
+                "gloss": "Поэзия — древние китайские стихи были связаны с музыкой и танцем"
+              },
+              "sources": [
+                {
+                  "url": "https://www.ccc-paris.org/zh/%E5%8F%91%E7%8E%B0%E4%B8%AD%E5%9B%BD/%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6%E5%8F%B2/",
+                  "title": "巴黎中国文化中心 — 中国文学史",
+                  "quote": "中国最初的诗歌是和音乐、舞蹈结合在一起",
+                  "authority": "official",
+                  "verificationMethod": "browsed_full_page",
+                  "checkedAt": "2026-11-08",
+                  "provenance": "accepted_batch5_caption"
+                },
+                {
+                  "url": "https://ipkent.edu.my/document/pskent/pskent18/modul/bcn/BCN3103.pdf",
+                  "title": "Institut Pendidikan Guru, Kementerian Pendidikan Malaysia — BCN3103 诗歌, печатная с. 1 / PDF с. 12",
+                  "quote": "中国诗歌的历史源远流长，是中国文学史上\n产生最早也是成熟最早的文学形式。",
+                  "authority": "academic",
+                  "verificationMethod": "browsed_full_page",
+                  "checkedAt": "2026-11-08",
+                  "page": 12,
+                  "quoteFormatting": "Перенос строки из извлечённого PDF сохранён."
+                }
+              ],
+              "olympiad": []
+            },
+            {
+              "id": "lit-form-prose",
+              "name": {
+                "zh": "散文",
+                "gloss": "Саньвэнь — проза; в древности она объединяла литературу, историю и философию"
+              },
+              "sources": [
+                {
+                  "url": "https://www.ccc-paris.org/zh/%E5%8F%91%E7%8E%B0%E4%B8%AD%E5%9B%BD/%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6%E5%8F%B2/",
+                  "title": "巴黎中国文化中心 — 中国文学史",
+                  "quote": "所谓文史哲不分，是就散文这个领域而言",
+                  "authority": "official",
+                  "verificationMethod": "browsed_full_page",
+                  "checkedAt": "2026-11-08",
+                  "provenance": "accepted_batch5_caption"
+                },
+                {
+                  "title": "孔子 — 济宁党史史志网",
+                  "url": "http://zgjnds.jining.gov.cn/art/2015/4/29/art_62661_2657011.html",
+                  "quote": "孔子的言行思想主要载于语录体散文集《论语》及先秦和秦汉保存下的《史记·孔子世家》。",
+                  "authority": "official",
+                  "checkedAt": "2026-10-23",
+                  "verificationMethod": "reuse-accepted-dossier: data/dossiers/people.json → thinkers/th-kongzi; цитата и дата из ранее принятого досье; нового открытия не было",
+                  "provenance": "reused_accepted_dossier",
+                  "reusedFrom": "data/dossiers/literature.json / works/lit-w-lunyu / sources[2]",
+                  "freshPageVerification": false
+                }
+              ],
+              "olympiad": []
+            },
+            {
+              "id": "lit-form-drama",
+              "name": {
+                "zh": "戏剧",
+                "gloss": "Драма — в эпоху Юань расцвёл жанр цзацзюй, например «Обида Доу Э»"
+              },
+              "sources": [
+                {
+                  "url": "https://id.china-embassy.gov.cn/chn/zggk/zgxz/xzwhys/200404/t20040421_2344862.htm",
+                  "title": "中国驻印度尼西亚使馆 — 文学",
+                  "quote": "元代文学的最高成就是杂剧创作，关汉卿的《窦娥冤》和王实甫的《西厢记》成为古代戏剧的传世杰作。",
+                  "authority": "official",
+                  "verificationMethod": "browsed_full_page",
+                  "checkedAt": "2026-11-08",
+                  "provenance": "accepted_batch5_caption"
+                },
+                {
+                  "title": "《六月雪》：感天动地窦娥冤 — 人民日报海外版",
+                  "url": "http://paper.people.com.cn/rmrbhwb/html/2016-11/19/content_1728901.htm",
+                  "quote": "该剧取材于元代戏曲大家关汉卿的杂剧《感天动地窦娥冤》及明代叶宪祖的传奇《金锁记》。",
+                  "checkedAt": "2026-10-17",
+                  "authority": "official",
+                  "provenance": "reused_accepted_dossier",
+                  "reusedFrom": "data/dossiers/literature.json / works/lit-w-douyuan / sources[0]",
+                  "freshPageVerification": false
+                }
+              ],
+              "olympiad": []
+            }
+          ]
+        },
+        "note": "Четыре формы; таблица нужна для сохранения исходного однородного набора, не объявляет новое ядро литературной темы."
+      }
+    ],
+    "tablesToExtend": [
+      {
+        "dossier": "literature",
+        "table": "authors",
+        "addColumns": {
+          "philosophyauthor": "zh"
+        },
+        "updateRows": [
+          {
+            "id": "lit-a-ru-dostoevsky",
+            "addCells": {
+              "philosophyauthor": {
+                "zh": "费奥多尔·陀思妥耶夫斯基",
+                "gloss": "Достоевский — «Идиот» и «Братья Карамазовы» входят в его «великое пятикнижие»"
+              }
+            },
+            "appendSources": [
+              {
+                "title": "Достоевский Фёдор Михайлович — Культура.РФ",
+                "url": "https://www.culture.ru/persons/8159/fedor-dostoevskii",
+                "quote": "«Преступление и наказание», «Идиот», «Бесы», «Подросток» и «Братья Карамазовы»",
+                "checkedAt": "2026-10-17",
+                "authority": "official",
+                "verificationMethod": "reused-accepted-dossier-quote-not-freshly-fetched",
+                "reusedFrom": "data/dossiers/literature.json / lit-a-ru-dostoevsky / sources[3]",
+                "provenance": "accepted_batch5_caption"
+              }
+            ]
+          },
+          {
+            "id": "lit-a-ru-lermontov",
+            "addCells": {
+              "philosophyauthor": {
+                "zh": "米哈伊尔·列尔蒙托夫",
+                "gloss": "Михаил Лермонтов — поэт, автор «Паруса» и «Смерти поэта»"
+              }
+            },
+            "appendSources": [
+              {
+                "title": "俄罗斯及苏联文学概况 — 俄罗斯之窗, 俄罗斯国情网（中国社会科学院）",
+                "url": "http://euroasia.cssn.cn/elsgqw/elswy/egwx/egwx_egwx/201004/t20100427_1863666.shtml",
+                "quote": "他的著名诗歌有《诗人之死》、《帆》等。",
+                "checkedAt": "2026-10-17",
+                "authority": "academic",
+                "verificationMethod": "reused-accepted-dossier-quote-not-freshly-fetched",
+                "reusedFrom": "data/dossiers/literature.json / lit-a-ru-lermontov / sources[1]",
+                "provenance": "accepted_batch5_caption"
+              }
+            ]
+          },
+          {
+            "id": "lit-a-ru-tolstoy",
+            "addCells": {
+              "philosophyauthor": {
+                "zh": "列夫·托尔斯泰",
+                "gloss": "Лев Толстой — в «Китайской мудрости» (1884) излагал учения древних философов"
+              }
+            },
+            "appendSources": [
+              {
+                "title": "Китайская мудрость. 1884 — официальный портал Льва Толстого",
+                "url": "https://tolstoy.ru/creativity/journalismguide/100.php",
+                "quote": "«Китайская мудрость» объединяет три коротких статьи",
+                "authority": "official",
+                "verificationMethod": "fresh-primary-page-opened",
+                "checkedAt": "2026-11-08",
+                "additionalKeyEvidence": {
+                  "title": "Китай и Лев Толстой — Институт Дальнего Востока РАН, академическое издание",
+                  "url": "https://lk.iccaras.ru/assets/components/dsgfileupload/files/book-2018-about_tolstoi.pdf",
+                  "quote": "«Суждения и беседы» («Лунь юй») в переводах и пересказах Л.Н. Толстого",
+                  "authority": "academic",
+                  "verificationMethod": "fresh-primary-indexed-excerpt",
+                  "checkedAt": "2026-11-08"
+                },
+                "provenance": "accepted_batch5_caption"
+              },
+              {
+                "title": "Китай и Лев Толстой — Институт Дальнего Востока РАН, академическое издание",
+                "url": "https://lk.iccaras.ru/assets/components/dsgfileupload/files/book-2018-about_tolstoi.pdf",
+                "quote": "«Суждения и беседы» («Лунь юй») в переводах и пересказах Л.Н. Толстого",
+                "authority": "academic",
+                "verificationMethod": "fresh-primary-indexed-excerpt",
+                "checkedAt": "2026-11-08"
+              }
+            ]
+          },
+          {
+            "id": "lit-a-ru-pushkin",
+            "addCells": {
+              "philosophyauthor": {
+                "zh": "亚历山大·普希金",
+                "gloss": "Александр Пушкин — автор романа в стихах «Евгений Онегин»"
+              }
+            },
+            "appendSources": [
+              {
+                "title": "Родился великий русский поэт и писатель Александр Сергеевич Пушкин — Президентская библиотека",
+                "url": "https://www.prlib.ru/history/619292",
+                "quote": "в 1823 г. он начал работу над романом в стихах «Евгений Онегин».",
+                "checkedAt": "2026-10-17",
+                "authority": "official",
+                "verificationMethod": "reused-accepted-dossier-quote-not-freshly-fetched",
+                "reusedFrom": "data/dossiers/literature.json / lit-a-ru-pushkin / sources[3]",
+                "provenance": "accepted_batch5_caption"
+              }
+            ]
+          }
+        ],
+        "note": "Новая contextual колонка для полного китайского имени и утвержденной подписи в №13. Existing fullname не менять; 米哈伊尔·列尔蒙托夫 и 米哈伊尔·莱蒙托夫 не равны по тексту. Существующим авторским name не добавлять ref с полным именем, поскольку ref требует точного равенства."
+      },
+      {
+        "dossier": "crafts",
+        "table": "materials",
+        "addColumns": {
+          "jaderitualmaterial": "zh"
+        },
+        "addRows": [
+          {
+            "id": "material-jasper",
+            "name": {
+              "zh": "碧石",
+              "gloss": "Яшма — скрытокристаллический кварц; её окраску создают минеральные примеси"
+            },
+            "jaderitualmaterial": {
+              "zh": "碧石",
+              "gloss": "Яшма — скрытокристаллический кварц; её окраску создают минеральные примеси"
+            },
+            "sources": [
+              {
+                "url": "https://zrzykpywh.magtechjournal.com/article/2022/2096-9791/2096-9791-0-3-38.shtml",
+                "title": "中国地质博物馆 — 碧石：色彩缤纷的别样玉髓",
+                "quote": "碧石，作为单独玉石品种，与玉髓、玛瑙均属于隐晶质石英质玉类。",
+                "authority": "academic",
+                "verificationMethod": "browsed_full_page",
+                "checkedAt": "2026-11-08",
+                "extraQuote": "杂质成分决定了碧石的颜色、条痕和外观",
+                "provenance": "accepted_batch5_caption"
+              },
+              {
+                "title": "碧石的宝石学分类及定义界定初探 — 矿物岩石 2021,41(4):1–13",
+                "url": "https://kwys.cdut.edu.cn/cn/article/pdf/preview/10.19719/j.cnki.1001-6872.2021.04.01.pdf",
+                "quote": "碧石是以隐晶质为主的矿物集合体",
+                "authority": "academic",
+                "checkedAt": "2026-11-08",
+                "verificationMethod": "fresh-primary-pdf-extracted",
+                "page": 3,
+                "extraQuote": "红碧石的致色矿物为赤铁矿",
+                "extraQuotePage": 1
+              }
+            ],
+            "olympiad": []
+          },
+          {
+            "id": "material-rockcrystal",
+            "name": {
+              "zh": "水晶",
+              "gloss": "Горный хрусталь — прозрачные кристаллы кварца"
+            },
+            "jaderitualmaterial": {
+              "zh": "水晶",
+              "gloss": "Горный хрусталь — прозрачные кристаллы кварца"
+            },
+            "sources": [
+              {
+                "url": "https://web3.nmns.edu.tw/Exhibits/114/2025earths-treasures/",
+                "title": "國立自然科學博物館 — 大地瑰寶 礦物常設展",
+                "quote": "在裂隙或孔洞中亦可發現呈透明的柱狀晶體，稱之為水晶。",
+                "authority": "official",
+                "verificationMethod": "browsed_search_excerpt",
+                "checkedAt": "2026-11-08",
+                "provenance": "accepted_batch5_caption"
+              },
+              {
+                "title": "石英家族 水晶（一）· 水晶物語 — 國立自然科學博物館館訊191期第5版，莊文星",
+                "url": "https://libknowledge.nmns.edu.tw/nmns/upload/lib/000001459/209000c/191-5.pdf",
+                "quote": "大型透明的石英結晶稱為水晶",
+                "authority": "official",
+                "checkedAt": "2026-11-08",
+                "verificationMethod": "fresh-primary-indexed-excerpt; direct PDF open timed out",
+                "extraQuote": "化學成份是二氧化矽（SiO2）"
+              }
+            ],
+            "olympiad": []
+          },
+          {
+            "id": "material-nephrite",
+            "name": {
+              "zh": "软玉",
+              "gloss": "Нефрит — плотный камень из переплетённых тремолита и актинолита"
+            },
+            "jaderitualmaterial": {
+              "zh": "软玉",
+              "gloss": "Нефрит — плотный камень из переплетённых тремолита и актинолита"
+            },
+            "sources": [
+              {
+                "url": "https://www.nmns.edu.tw/collect/catalog/detail/?id=266",
+                "title": "國立自然科學博物館 — 軟玉",
+                "quote": "由透閃石和陽起石交織而成的閃玉，又名軟玉",
+                "authority": "official",
+                "verificationMethod": "browsed_full_page",
+                "checkedAt": "2026-11-08",
+                "provenance": "accepted_batch5_caption"
+              },
+              {
+                "title": "玉璧 — 國立歷史博物館 / 國家文化記憶庫",
+                "url": "https://tcmb.culture.tw/zh-tw/detail?id=14000095910&indexCode=MOCCOLLECTIONS",
+                "quote": "採用綠色系的軟玉; 而蒼璧即是祭天之器。",
+                "authority": "official",
+                "checkedAt": "2026-11-08",
+                "verificationMethod": "fresh-primary-page-opened; two separated passages joined by a semicolon"
+              },
+              {
+                "title": "玉璧 — 故宫博物院",
+                "url": "https://www.dpm.org.cn/collection/jade/233766.html",
+                "quote": "古人认为其象征着上天，为十分重要的祭祀礼仪用器",
+                "authority": "official",
+                "checkedAt": "2026-11-08",
+                "verificationMethod": "fresh-primary-indexed-excerpt; direct open timed out"
+              },
+              {
+                "title": "中国人民大学·第一届文化史系列讨论会：陆建芳讲座纪要",
+                "url": "https://cdgi.ruc.edu.cn/ppdt/whssxllt/dyj6/68836ff95f02400a84b1ba68d54242e4.htm",
+                "quote": "玉器具有保吉辟邪功能成为社会共识",
+                "authority": "academic",
+                "checkedAt": "2026-11-08",
+                "verificationMethod": "fresh-primary-indexed-excerpt; direct open returned redirect loop",
+                "extraQuote": "5500年前至商代末时期为礼玉时代，软玉得到普遍认同",
+                "supportLimit": "В одном абзаце сообщены принятие мягкого нефрита в эпоху ритуального нефрита и защитная функция нефритовых изделий в Хань–Вэй–Цзинь–Южных и Северных династиях. Эти два периода не следует сливать в одну датировку."
+              }
+            ],
+            "olympiad": []
+          },
+          {
+            "id": "material-quartz",
+            "name": {
+              "zh": "石英",
+              "gloss": "Кварц — минерал из диоксида кремния; из него изготавливают стекло"
+            },
+            "jaderitualmaterial": {
+              "zh": "石英",
+              "gloss": "Кварц — минерал из диоксида кремния; из него изготавливают стекло"
+            },
+            "sources": [
+              {
+                "url": "https://ginfo.cedd.gov.hk/hkss/tc/publications-and-resources/educational-materials/hong-kong-geology/chapter-1/index.html",
+                "title": "香港土木工程拓展署 — 礦物與岩石",
+                "quote": "石英由化合物二氧化矽形成。",
+                "authority": "official",
+                "verificationMethod": "browsed_full_page",
+                "checkedAt": "2026-11-08",
+                "extraQuote": "石英是製造玻璃的原料。",
+                "provenance": "accepted_batch5_caption"
+              },
+              {
+                "title": "石英家族 水晶（一）· 水晶物語 — 國立自然科學博物館館訊191期第5版，莊文星",
+                "url": "https://libknowledge.nmns.edu.tw/nmns/upload/lib/000001459/209000c/191-5.pdf",
+                "quote": "大型透明的石英結晶稱為水晶",
+                "authority": "official",
+                "checkedAt": "2026-11-08",
+                "verificationMethod": "fresh-primary-indexed-excerpt; direct PDF open timed out",
+                "extraQuote": "化學成份是二氧化矽（SiO2）"
+              }
+            ],
+            "olympiad": []
+          }
+        ],
+        "note": "Новая contextual колонка даёт только исходный пул из четырёх минералов; generic 石头 не заполняется в ней, поскольку тоже включает нефрит, и не может служить неверным вариантом."
+      }
+    ],
+    "exactIdentityRefsToAdd": [
+      {
+        "file": "data/dossiers/cinema.json",
+        "table": "works",
+        "row": "cin-cn-red-sorghum",
+        "cell": "director",
+        "ref": "cinema/persons/cin-person-zhang-yimou",
+        "reason": "Текст director точно равен name канонической строки; это тот же человек."
+      },
+      {
+        "file": "data/dossiers/cinema.json",
+        "table": "works",
+        "row": "cin-cn-crouching-tiger",
+        "cell": "director",
+        "ref": "cinema/persons/cin-person-ang-lee",
+        "reason": "Текст director точно равен name канонической строки; это тот же человек."
+      },
+      {
+        "file": "data/dossiers/cinema.json",
+        "table": "works",
+        "row": "cin-cn-to-live",
+        "cell": "director",
+        "ref": "cinema/persons/cin-person-zhang-yimou",
+        "reason": "Текст director точно равен name канонической строки; это тот же человек."
+      },
+      {
+        "file": "data/dossiers/cinema.json",
+        "table": "works",
+        "row": "cin-cn-hero",
+        "cell": "director",
+        "ref": "cinema/persons/cin-person-zhang-yimou",
+        "reason": "Текст director точно равен name канонической строки; это тот же человек."
+      },
+      {
+        "file": "data/dossiers/cinema.json",
+        "table": "works",
+        "row": "cin-cn-flying-daggers",
+        "cell": "director",
+        "ref": "cinema/persons/cin-person-zhang-yimou",
+        "reason": "Текст director точно равен name канонической строки; это тот же человек."
+      }
+    ],
+    "mutualHints": [
+      {
+        "reviewNumber": 2,
+        "neighbors": [
+          "cinema-q01",
+          "literature author/work/prize questions about MoYan"
+        ],
+        "handling": "Сначала использовать точные refs director→persons; не смешивать разные работы одного человека. Повтор того же ответа не утечка. Если сборка установит конкретную связь факта из сохранённой подписи с соседним вопросом, добавить точечную fact-group, не менять принятую подпись."
+      },
+      {
+        "reviewNumber": 13,
+        "neighbors": [
+          "literature authors/works for Dostoevsky, Lermontov, Pushkin, Tolstoy"
+        ],
+        "handling": "Вопрос привязан к существующей строке Толстого; для проверки подписей учитывать строки остальных авторов. Не создавать дубли авторов ради исходных полных имён. Существующие fullname и name не переписывать."
+      },
+      {
+        "reviewNumber": 19,
+        "neighbors": [
+          "literature/works/lit-w-sanguoyanyi",
+          "literature/works/lit-w-douyuan",
+          "literature/works/lit-w-shijing"
+        ],
+        "handling": "Новые формы не тождественны конкретным произведениям, поэтому name.ref на произведение запрещён. Подписи 小说→Троецарствие и 戏剧→Обида ДоуЭ могут требовать точечных групп с вопросами о жанре произведения; общий термин сам по себе не утечка."
+      },
+      {
+        "reviewNumber": 20,
+        "neighbors": [
+          "crafts/materials/material-stone",
+          "crafts craft rows with jade material"
+        ],
+        "handling": "Не сводить камень и его вид через ref: это не тождество. 水晶 является разновидностью 石英; группы фактов не исправят потенциальный второй правильный ответ."
+      }
+    ],
+    "unresolved": [
+      {
+        "status": "key-confirmed-uniqueness-unresolved",
+        "confidence": {
+          "nephriteKey": "high",
+          "potentialCrystalAlternative": "medium-high",
+          "crystalRitualFunctionInStrictAntiquity": "not-established-directly"
+        },
+        "acceptedStem": "Какой камень в Древнем Китае использовали для изготовления ритуальных предметов и считали оберегом?",
+        "doNotReword": true,
+        "doNotInventExclusions": true,
+        "publicationAuthorized": false,
+        "finding": "Нефрит достоверно использовали для ритуальных предметов и считали защитным материалом. Однако признак сформулирован широко: академический первичный источник описывает защитную функцию каменных фигурных украшений и на той же странице конкретные позднеханьские хрустальные фигурные бусины. Поэтому нельзя без оговорки удостоверить, что 水晶 и охватывающий его 石英 строго неверны.",
+        "primaryCrystalEvidence": {
+          "title": "岡村秀典「漢帝国の世界戦略と倭国の形成」— 黒川古文化研究所『古文化研究』25",
+          "url": "https://www.kurokawa-institute.or.jp/files/libs/5501/20260402135642533.pdf",
+          "authority": "academic",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "downloaded primary PDF; pdftotext text checked against rendered page8",
+          "pdfPage": 8,
+          "printedPage": 185,
+          "quotes": [
+            {
+              "quote": "二獣の状はこれを佩帯し以て兇災を除去し、その身を保衛するに用いるなり",
+              "function": "Историческое объяснение фигурных бусин как защиты от бедствий; автор явно отделяет функцию от имени зверя."
+            },
+            {
+              "quote": "辟邪形の水晶玉３",
+              "function": "На этой же странице: три хрустальные бусины из позднеханьской гробницы1 Синьхуа, Гунъи."
+            }
+          ],
+          "paraphraseRu": "Автор приводит историческое объяснение: фигурные каменные украшения носили для устранения бед и защиты тела; далее сообщает о найденном на месте ожерелье умершей с тремя хрустальными бусинами в форме бесе. Связь этих конкретных хрустальных бусин с общей защитной функцией следует из контекста, а не из отдельного прямого предложения.",
+          "limits": "Погребальное происхождение не равно доказательству ритуального применения. Не выдавать само название 辟邪 за доказанное назначение; защитная трактовка опирается на предшествующее объяснение на той же странице.",
+          "localPdf": "/tmp/lingvo-crystal-okamura.pdf",
+          "localText": "/tmp/lingvo-crystal-okamura.txt",
+          "renderedPage": "/tmp/lingvo-crystal-okamura-p8.png",
+          "archaeologicalPrimaryReference": "鄭州市文物考古研究所・鞏義市文物保護管理所（2001）「河南鞏義市新華小区漢墓発掘簡報」『華夏考古』第4期（цитируется автором; отдельно не прочитано)"
+        },
+        "additionalRitualCrystalEvidence": {
+          "title": "中岳庙乾隆御赐九柄如意 — 故宫博物院 PDF",
+          "url": "https://www.dpm.org.cn/Uploads/file/2025/03/07/1741335956zpEtLhiQf260.pdf",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-primary-indexed-excerpt",
+          "quotes": [
+            "其中水晶如意1柄",
+            "专供祭祀中岳之用"
+          ],
+          "supportLimit": "Прямо подтверждает ритуальный предмет из хрусталя в Китае, но 1750 год, не строгая древность; сам по себе не делает 水晶 вторым верным для Древнего Китая."
+        },
+        "secondaryLeadNotForDossier": {
+          "url": "https://www.daowen.com/book/content/235972408/9946772.html",
+          "title": "Републикация фрагмента книги 玉魂：中国古代玉文化, стр.102",
+          "reportedObject": "水晶司南佩，东汉，长沙博物馆藏",
+          "reportedFunction": "用以压胜辟邪，取趋利避凶之意",
+          "supportLimit": "Не первичный музейный/академический сайт; не использовать как принятую источниковую опору. Полезная точная наводка для дальнейшего поиска музейного каталога."
+        },
+        "recommendedIntegration": "Сохранить принятые формулировку/варианты/подписи в локальном пакете. Табличные строки можно подготовить и проверить как факты, но встраивание20 оставить status:draft или явно needs-review; не заявлять единственность и не публиковать."
+      }
+    ],
+    "sourceCountCheck": [
+      {
+        "dossier": "cinema",
+        "table": "persons",
+        "row": "cin-person-zhang-yimou",
+        "sourceCount": 4
+      },
+      {
+        "dossier": "cinema",
+        "table": "persons",
+        "row": "cin-person-mo-yan",
+        "sourceCount": 2
+      },
+      {
+        "dossier": "cinema",
+        "table": "persons",
+        "row": "cin-person-john-woo",
+        "sourceCount": 2
+      },
+      {
+        "dossier": "cinema",
+        "table": "persons",
+        "row": "cin-person-ang-lee",
+        "sourceCount": 2
+      },
+      {
+        "dossier": "literature",
+        "table": "literaryforms",
+        "row": "lit-form-fiction",
+        "sourceCount": 2
+      },
+      {
+        "dossier": "literature",
+        "table": "literaryforms",
+        "row": "lit-form-poetry",
+        "sourceCount": 2
+      },
+      {
+        "dossier": "literature",
+        "table": "literaryforms",
+        "row": "lit-form-prose",
+        "sourceCount": 2
+      },
+      {
+        "dossier": "literature",
+        "table": "literaryforms",
+        "row": "lit-form-drama",
+        "sourceCount": 2
+      },
+      {
+        "dossier": "crafts",
+        "table": "materials",
+        "row": "material-jasper",
+        "sourceCount": 2
+      },
+      {
+        "dossier": "crafts",
+        "table": "materials",
+        "row": "material-rockcrystal",
+        "sourceCount": 2
+      },
+      {
+        "dossier": "crafts",
+        "table": "materials",
+        "row": "material-nephrite",
+        "sourceCount": 4
+      },
+      {
+        "dossier": "crafts",
+        "table": "materials",
+        "row": "material-quartz",
+        "sourceCount": 2
+      }
+    ],
+    "captionIntegrity": "Все16 optionMap.gloss и соответствующие ячейки скопированы из принятого manifest без редакторских изменений."
+  }
+}

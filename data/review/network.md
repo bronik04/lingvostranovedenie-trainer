@@ -590,7 +590,7 @@
 | lit-a-ru-pushkin | — | 1 | × | × | — | прогноз |
 | lit-a-ru-lermontov | — | × | × | × | 2 | да |
 | lit-a-ru-gogol | 1 | × | × | × | — | прогноз |
-| lit-a-ru-tolstoy | — | × | × | × | — | прогноз |
+| lit-a-ru-tolstoy | — | × | × | × | 1 | да |
 | lit-a-ru-dostoevsky | — | × | × | × | 1 | да |
 | lit-a-ru-chekhov | — | × | × | × | 2 | да |
 | lit-a-ru-gorky | — | × | 1 | × | — | прогноз |
@@ -840,7 +840,7 @@
 | tr-ru-aihui | — | × | 1 | прогноз |
 | tr-ru-beijing | — | × | 1 | прогноз |
 | tr-ru-1950 | 1 | × | — | прогноз |
-| tr-ru-2001 | — | × | — | прогноз |
+| tr-ru-2001 | — | × | 1 | да |
 
 #### Вопросы о строках вне ядра
 
@@ -856,7 +856,7 @@
 - modern-history-q26 — Главным создателем какой важной идеи называют Цзян Цзэминя?
 - modern-history-q27 — Какое понятие выдвинул Ху Цзиньтао в 2003 году?
 
-Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 1.
+Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 2.
 
 ### Деньги (`money`)
 
@@ -1273,7 +1273,7 @@
 | prov-hebei | 1 | × | 1 | × | × | — | прогноз |
 | prov-shanxi | 1 | × | — | × | × | 1 | да |
 | prov-neimenggu | × | × | 1 | — | × | — | прогноз |
-| prov-liaoning | — | × | 1 | × | × | — | прогноз |
+| prov-liaoning | — | × | 1 | × | × | 1 | да |
 | prov-jilin | — | × | 1 | × | × | — | прогноз |
 | prov-heilongjiang | — | × | — | × | × | 1 | да |
 | prov-shandong | 1 | × | — | × | × | 1 | да |
@@ -1313,12 +1313,12 @@
 | city-fuzhou | — | — | × | — | прогноз |
 | city-nanjing | — | × | × | 1 | да |
 | city-chengdu | — | — | × | 1 | да |
-| city-hangzhou | — | × | × | 1 | да |
+| city-hangzhou | — | × | × | 2 | да |
 | city-xian | — | × | × | — | прогноз |
 | city-kunming | — | 1 | × | — | прогноз |
 | city-haerbin | — | 1 | × | — | прогноз |
 | city-wuhan | — | — | × | 1 | прогноз |
-| city-shanghai | — | × | × | 3 | да |
+| city-shanghai | — | × | × | 4 | да |
 | city-beijing | — | × | × | 3 | да |
 | city-tianjin | — | × | × | — | да |
 | city-chongqing | — | — | × | 3 | да |
@@ -1328,7 +1328,7 @@
 | city-guiyang | — | — | × | — | прогноз |
 | city-shenzhen | — | — | × | — | прогноз |
 | city-ru-moscow | × | × | 1 | 2 | да |
-| city-ru-saint-petersburg | × | 1 | 1 | 1 | да |
+| city-ru-saint-petersburg | × | 1 | 1 | 2 | да |
 | city-ru-nizhny-novgorod | × | × | — | 1 | да |
 | city-ru-kazan | 1 | 1 | — | 1 | да |
 | city-ru-volgograd | × | × | × | 1 | да |
@@ -1530,12 +1530,9 @@
 Строки ядра без ссылок наружу и на себя.
 
 - cinema/works/cin-cn-concubine
-- cinema/works/cin-cn-crouching-tiger
 - cinema/works/cin-cn-fengyun-ernv
-- cinema/works/cin-cn-hero
 - cinema/works/cin-cn-huluxiongdi
 - cinema/works/cin-cn-nezhamotongjiangshi
-- cinema/works/cin-cn-red-sorghum
 - cinema/works/cin-cn-wandering-earth
 - cinema/works/cin-cn-xiaokedouzhaomama
 - cinema/works/cin-ru-crocodile-gena
@@ -1594,7 +1591,6 @@
 - landmarks/fortifications/lm-ru-kazan-kremlin
 - landmarks/fortifications/lm-ru-moscow-kremlin
 - landmarks/fortifications/lm-ru-peter-paul-fortress
-- landmarks/gardens/lm-cn-summer-palace-garden
 - landmarks/gardens/lm-cn-yuanmingyuan
 - landmarks/gardens/lm-cn-zhuozheng-garden
 - landmarks/gardens/lm-ru-alexander-garden-moscow
@@ -1816,7 +1812,9 @@
 
 ### Ссылка из ядра ведёт в тему без каркаса
 
-- нет
+- cinema/works/cin-cn-crouching-tiger → cinema/persons/cin-person-ang-lee
+- cinema/works/cin-cn-hero → cinema/persons/cin-person-zhang-yimou
+- cinema/works/cin-cn-red-sorghum → cinema/persons/cin-person-zhang-yimou
 
 ### Ссылка из ядра ведёт в строку вне ядра
 

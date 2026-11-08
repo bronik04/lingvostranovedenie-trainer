@@ -1,0 +1,120 @@
+{
+  "reviewId": "regional-2026-11-08-batch-5",
+  "status": "passed",
+  "fullBank": 1269,
+  "visibleBefore": 1030,
+  "visibleAfter": 1045,
+  "releasedQuestions": 15,
+  "exactNewIds": [
+    "2018-19-mun-lenobl-49",
+    "2019-20-mun-kgd-2",
+    "2019-20-mun-mosobl-52",
+    "2020-21-mun-mosobl-46",
+    "2020-21-mun-mosobl-54",
+    "2021-22-mun-amur-4",
+    "2021-22-mun-mosobl-59",
+    "2021-22-mun-volog-8",
+    "2022-23-mun-tat-6",
+    "2023-24-mun-spb-9",
+    "2023-24-shk-mosobl-2",
+    "2024-25-mun-klg-8",
+    "2024-25-mun-mosobl-9",
+    "2025-26-mun-kem-7",
+    "2025-26-mun-ryaz-5"
+  ],
+  "acceptedLocalButUnpublished": "2024-25-mun-krsk-6",
+  "captionCount": 60,
+  "all16LocalEmbedsAccepted": true,
+  "acceptedStemsKeysOptionsCaptionsExact": true,
+  "previousUserFacingChanges": [],
+  "previousPoolChanges": [],
+  "readingMaterials": 1045,
+  "previousReadingAndPinyinPreserved": true,
+  "newRowsWithTwoQuotedPrimarySources": 40,
+  "oldFactProtectionsPreserved": true,
+  "finalBankDirectHintErrors": 0,
+  "unresolvedNewHintCandidates": 0,
+  "knownSourceFormCheckerLimitations": [
+    "literature/literature-q66: текст называет ответ вопроса literature/literature-q114: ['诗歌']",
+    "nature/nature-q140: текст называет ответ вопроса modern-china/modern-china-q26: ['黄金']"
+  ],
+  "publishedChengyu": 112,
+  "htmlSha256": "19f1e59cd71d4afa7c296fb2257461c1d0c352a408452e1846742a2db887dcd6",
+  "publicationAuthorized": true,
+  "errors": [],
+  "pythonTests": 494,
+  "nodeTests": 172,
+  "skipped": 0,
+  "browser": {
+    "questions": 15,
+    "cards": 120,
+    "options": 480,
+    "viewports": [
+      1280,
+      375
+    ],
+    "pinyin": [
+      false,
+      true
+    ],
+    "answers": [
+      "correct",
+      "incorrect"
+    ],
+    "pageErrors": [],
+    "results": [
+      {
+        "viewport": 1280,
+        "pinyin": false,
+        "correctAnswer": true,
+        "cards": 15
+      },
+      {
+        "viewport": 1280,
+        "pinyin": false,
+        "correctAnswer": false,
+        "cards": 15
+      },
+      {
+        "viewport": 1280,
+        "pinyin": true,
+        "correctAnswer": true,
+        "cards": 15
+      },
+      {
+        "viewport": 1280,
+        "pinyin": true,
+        "correctAnswer": false,
+        "cards": 15
+      },
+      {
+        "viewport": 375,
+        "pinyin": false,
+        "correctAnswer": true,
+        "cards": 15
+      },
+      {
+        "viewport": 375,
+        "pinyin": false,
+        "correctAnswer": false,
+        "cards": 15
+      },
+      {
+        "viewport": 375,
+        "pinyin": true,
+        "correctAnswer": true,
+        "cards": 15
+      },
+      {
+        "viewport": 375,
+        "pinyin": true,
+        "correctAnswer": false,
+        "cards": 15
+      }
+    ],
+    "screenshots": [
+      "/tmp/lingvo-batch5-release-mobile.png"
+    ],
+    "status": "passed"
+  }
+}

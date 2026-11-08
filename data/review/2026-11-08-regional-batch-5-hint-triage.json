@@ -1,0 +1,1175 @@
+{
+  "date": "2026-11-08",
+  "baselineCaptionCandidateCount": 2718,
+  "initialNewCandidateCount": 22,
+  "directConstraints": 22,
+  "lexicalCollisionGuards": 1,
+  "captionConstraints": 14,
+  "manualSemanticConstraints": 15,
+  "unresolvedImportantHintCandidates": 0,
+  "constraints": [
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "cinema-q03",
+      "otherId": "2025-26-mun-ryaz-5",
+      "evidence": "cinema/cinema-q03: текст называет ответ вопроса modern-history/modern-history-q127: ['2001 год']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "cinema-q33",
+      "otherId": "2025-26-mun-ryaz-5",
+      "evidence": "cinema/cinema-q33: текст называет ответ вопроса modern-history/modern-history-q127: ['2001 год']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "cuisine-q95",
+      "otherId": "2020-21-mun-mosobl-54",
+      "evidence": "cuisine/cuisine-q95: текст называет ответ вопроса nature/nature-q166: ['西湖']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "cuisine-q96",
+      "otherId": "2021-22-mun-mosobl-59",
+      "evidence": "cuisine/cuisine-q96: текст называет ответ вопроса nature/nature-q165: ['黄山']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "cuisine-q105",
+      "otherId": "2020-21-mun-mosobl-54",
+      "evidence": "cuisine/cuisine-q105: текст называет ответ вопроса nature/nature-q166: ['西湖', 'Сиху']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "addition-b1-06",
+      "otherId": "2020-21-mun-mosobl-46",
+      "evidence": "dynasties/dynasties-q08: текст называет ответ вопроса provinces/provinces-q136: ['Ханчжоу']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2019-20-mun-q5616d1",
+      "otherId": "2023-24-mun-spb-9",
+      "evidence": "literature/literature-q12: текст называет ответ вопроса literature/literature-q114: ['诗歌']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "lexical-collision-guard",
+      "recordId": "2024-25-mun-mosobl-9",
+      "otherId": "literature-q35",
+      "evidence": "literature/literature-q113: текст называет ответ вопроса literature/literature-q35: ['Лу Ю']",
+      "reason": "Консервативное разнесение из-за совпадения «Лунь юй» с поисковым шаблоном имени «Лу Ю»; это ложное лексическое совпадение, не общность факта. Движок и старые имена не меняются."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2024-25-mun-mosobl-9",
+      "otherId": "people-q09",
+      "evidence": "literature/literature-q113: текст называет ответ вопроса people/people-q09: ['«Лунь юй»']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2024-25-mun-mosobl-9",
+      "otherId": "people-q10",
+      "evidence": "literature/literature-q113: текст называет ответ вопроса people/people-q10: ['«Дао дэ цзин»']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "modern-china-q10",
+      "otherId": "2025-26-mun-ryaz-5",
+      "evidence": "modern-china/modern-china-q10: текст называет ответ вопроса modern-history/modern-history-q127: ['2001 год']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "modern-china-q17",
+      "otherId": "2022-23-mun-tat-6",
+      "evidence": "modern-china/modern-china-q17: текст называет ответ вопроса modern-history/modern-history-q126: ['2004 год']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2018-19-mun-55",
+      "otherId": "2019-20-mun-kgd-2",
+      "evidence": "provinces/provinces-q03: текст называет ответ вопроса modern-china/modern-china-q25: ['Уголь']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2018-19-shk-10",
+      "otherId": "2018-19-mun-lenobl-49",
+      "evidence": "provinces/provinces-q19: текст называет ответ вопроса provinces/provinces-q134: ['上海', 'Шанхай']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2015-16-zak-1",
+      "otherId": "2025-26-mun-ryaz-5",
+      "evidence": "provinces/provinces-q29: текст называет ответ вопроса modern-history/modern-history-q127: ['2001 год']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2015-16-shk-65",
+      "otherId": "2020-21-mun-mosobl-54",
+      "evidence": "provinces/provinces-q87: текст называет ответ вопроса nature/nature-q166: ['西湖', 'Сиху']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2024-25-mun-klg-8",
+      "otherId": "landmarks-q100",
+      "evidence": "provinces/provinces-q137: текст называет ответ вопроса landmarks/landmarks-q100: ['Шанхай']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2024-25-mun-klg-8",
+      "otherId": "modern-history-q114",
+      "evidence": "provinces/provinces-q137: текст называет ответ вопроса modern-history/modern-history-q114: ['Шанхай']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2024-25-mun-klg-8",
+      "otherId": "2015-16-shk-63",
+      "evidence": "provinces/provinces-q137: текст называет ответ вопроса provinces/provinces-q28: ['Шанхай']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2024-25-mun-klg-8",
+      "otherId": "2015-16-zak-1",
+      "evidence": "provinces/provinces-q137: текст называет ответ вопроса provinces/provinces-q29: ['Шанхай']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2024-25-mun-klg-8",
+      "otherId": "2024-25-mun-kursk-1",
+      "evidence": "provinces/provinces-q137: текст называет ответ вопроса provinces/provinces-q115: ['Шанхай']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "2024-25-mun-klg-8",
+      "otherId": "2018-19-mun-lenobl-49",
+      "evidence": "provinces/provinces-q137: текст называет ответ вопроса provinces/provinces-q134: ['Шанхай']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "direct-name-in-condition",
+      "recordId": "space-q18",
+      "otherId": "2025-26-mun-ryaz-5",
+      "evidence": "space/space-q18: текст называет ответ вопроса modern-history/modern-history-q127: ['2001 год']",
+      "reason": "Текст одного задания явно содержит имя/дату ответа другого; принятые тексты сохранены, совместный показ исключается."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2023-24-shk-mosobl-2",
+      "otherId": "literature-q49",
+      "evidence": {
+        "record": "cinema/cinema-q36",
+        "option": "o2",
+        "zh": "莫言",
+        "gloss": "Мо Янь — писатель, лауреат Нобелевской премии по литературе 2012 года",
+        "isAnswer": false,
+        "other": "literature/literature-q49",
+        "answer": [
+          "莫言",
+          "Мо Янь"
+        ],
+        "clues": [
+          "2012 год",
+          "Нобелевская премия"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "kind": "caption",
+      "recordId": "landmarks-q106",
+      "otherId": "2018-19-mun-lenobl-49",
+      "evidence": {
+        "record": "landmarks/landmarks-q106",
+        "option": "lm-cn-oriental-pearl",
+        "zh": "东方明珠",
+        "gloss": "«Восточная жемчужина» — телебашня в Шанхае высотой 468 м",
+        "isAnswer": false,
+        "other": "provinces/provinces-q134",
+        "answer": [
+          "Шанхай"
+        ],
+        "clues": [
+          "Телебашня «Восточная жемчужина»",
+          "东方明珠"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2024-25-mun-mosobl-9",
+      "otherId": "2018-19-mun-53",
+      "evidence": {
+        "record": "literature/literature-q113",
+        "option": "o1",
+        "zh": "费奥多尔·陀思妥耶夫斯基",
+        "gloss": "Достоевский — «Идиот» и «Братья Карамазовы» входят в его «великое пятикнижие»",
+        "isAnswer": false,
+        "other": "literature/literature-q60",
+        "answer": [
+          "陀思妥耶夫斯基",
+          "Достоевский"
+        ],
+        "clues": [
+          "Братья Карамазовы"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2024-25-mun-mosobl-9",
+      "otherId": "literature-q93",
+      "evidence": {
+        "record": "literature/literature-q113",
+        "option": "o4",
+        "zh": "亚历山大·普希金",
+        "gloss": "Александр Пушкин — автор романа в стихах «Евгений Онегин»",
+        "isAnswer": false,
+        "other": "literature/literature-q93",
+        "answer": [
+          "普希金",
+          "Александр Пушкин",
+          "Пушкин"
+        ],
+        "clues": [
+          "Евгений Онегин"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2019-20-mun-mosobl-52",
+      "otherId": "modern-history-q115",
+      "evidence": {
+        "record": "modern-history/modern-history-q125",
+        "option": "o4",
+        "zh": "英国",
+        "gloss": "Британия — получила остров Гонконг по Нанкинскому договору 1842 года.",
+        "isAnswer": false,
+        "other": "modern-history/modern-history-q115",
+        "answer": [
+          "остров Гонконг"
+        ],
+        "clues": [
+          "1842 год",
+          "Англия"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2019-20-mun-mosobl-52",
+      "otherId": "2020-21-reg-q4b4176",
+      "evidence": {
+        "record": "modern-history/modern-history-q125",
+        "option": "o4",
+        "zh": "英国",
+        "gloss": "Британия — получила остров Гонконг по Нанкинскому договору 1842 года.",
+        "isAnswer": false,
+        "other": "2020-21-reg-q4b4176",
+        "answer": [
+          "Гонконг"
+        ],
+        "clues": [
+          "Великобритания"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2019-20-mun-mosobl-52",
+      "otherId": "2023-24-zak-8",
+      "evidence": {
+        "record": "modern-history/modern-history-q125",
+        "option": "o4",
+        "zh": "英国",
+        "gloss": "Британия — получила остров Гонконг по Нанкинскому договору 1842 года.",
+        "isAnswer": false,
+        "other": "2023-24-zak-8",
+        "answer": [
+          "Нанкинский договор"
+        ],
+        "clues": [
+          "Великобритания"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "kind": "caption",
+      "recordId": "nature-q46",
+      "otherId": "2021-22-mun-mosobl-59",
+      "evidence": {
+        "record": "nature/nature-q46",
+        "option": "mtn-huangshan",
+        "zh": "黄山",
+        "gloss": "Хуаншань — гора в Аньхое, известная причудливыми соснами и морем облаков",
+        "isAnswer": false,
+        "other": "nature/nature-q165",
+        "answer": [
+          "黄山",
+          "Хуаншань"
+        ],
+        "clues": [
+          "сосна"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "kind": "caption",
+      "recordId": "nature-q144",
+      "otherId": "2021-22-mun-mosobl-59",
+      "evidence": {
+        "record": "nature/nature-q144",
+        "option": "mtn-huangshan",
+        "zh": "黄山",
+        "gloss": "Хуаншань — гора в Аньхое, известная причудливыми соснами и морем облаков",
+        "isAnswer": false,
+        "other": "nature/nature-q165",
+        "answer": [
+          "黄山",
+          "Хуаншань"
+        ],
+        "clues": [
+          "сосна"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2020-21-mun-mosobl-54",
+      "otherId": "2020-21-shk-mosobl-47",
+      "evidence": {
+        "record": "nature/nature-q166",
+        "option": "o1",
+        "zh": "颐和园",
+        "gloss": "Ихэюань — императорский парк Пекина, построенный вокруг Ваньшоушань и Куньминху",
+        "isAnswer": false,
+        "other": "2020-21-shk-mosobl-47",
+        "answer": [
+          "颐和园",
+          "Ихэюань"
+        ],
+        "clues": [
+          "Куньминху"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2020-21-mun-mosobl-54",
+      "otherId": "2020-21-shk-mosobl-47",
+      "evidence": {
+        "record": "nature/nature-q166",
+        "option": "o3",
+        "zh": "昆明湖",
+        "gloss": "Куньминху — озеро в пекинском парке Ихэюань; сад вдохновлён озером Сиху",
+        "isAnswer": false,
+        "other": "2020-21-shk-mosobl-47",
+        "answer": [
+          "Ихэюань",
+          "Парк Ихэюань"
+        ],
+        "clues": [
+          "Куньминху",
+          "昆明湖"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2020-21-mun-mosobl-46",
+      "otherId": "landmarks-q98",
+      "evidence": {
+        "record": "provinces/provinces-q136",
+        "option": "o2",
+        "zh": "洛阳",
+        "gloss": "Лоян — здесь находятся буддийские пещерные храмы Лунмэнь",
+        "isAnswer": false,
+        "other": "landmarks/landmarks-q98",
+        "answer": [
+          "洛阳"
+        ],
+        "clues": [
+          "Лунмэнь"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2020-21-mun-mosobl-46",
+      "otherId": "landmarks-q59",
+      "evidence": {
+        "record": "provinces/provinces-q136",
+        "option": "o3",
+        "zh": "西安",
+        "gloss": "Сиань — Большая пагода диких гусей построена для сутр Сюаньцзана",
+        "isAnswer": false,
+        "other": "landmarks/landmarks-q59",
+        "answer": [
+          "Большая пагода диких гусей"
+        ],
+        "clues": [
+          "Сюаньцзан"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "kind": "caption",
+      "recordId": "2020-21-mun-mosobl-46",
+      "otherId": "landmarks-q96",
+      "evidence": {
+        "record": "provinces/provinces-q136",
+        "option": "o3",
+        "zh": "西安",
+        "gloss": "Сиань — Большая пагода диких гусей построена для сутр Сюаньцзана",
+        "isAnswer": false,
+        "other": "landmarks/landmarks-q96",
+        "answer": [
+          "西安"
+        ],
+        "clues": [
+          "Большая пагода диких гусей"
+        ],
+        "row": false,
+        "recordDraft": false,
+        "otherDraft": false
+      },
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2018-19-mun-lenobl-49",
+      "otherId": "2021-22-reg-qd842f6",
+      "reason": "Ручная географическая проверка: batch5-jinan-spring-city"
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2020-21-mun-mosobl-46",
+      "otherId": "landmarks-q98",
+      "reason": "Ручная географическая проверка: batch5-leifeng-landmark-cities"
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2020-21-mun-mosobl-46",
+      "otherId": "landmarks-q96",
+      "reason": "Ручная географическая проверка: batch5-leifeng-landmark-cities"
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2020-21-mun-mosobl-46",
+      "otherId": "landmarks-q59",
+      "reason": "Ручная географическая проверка: batch5-leifeng-landmark-cities"
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2020-21-mun-mosobl-54",
+      "otherId": "landmarks-q95",
+      "reason": "Ручная географическая проверка: batch5-whitesnake-scenic-place-captions"
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2020-21-mun-mosobl-54",
+      "otherId": "nature-q146",
+      "reason": "Ручная географическая проверка: batch5-whitesnake-scenic-place-captions"
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2020-21-mun-mosobl-54",
+      "otherId": "2020-21-mun-mosobl-46",
+      "reason": "Ручная географическая проверка: batch5-whitesnake-hangzhou-leifeng"
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2020-21-mun-mosobl-54",
+      "otherId": "2015-16-shk-65",
+      "reason": "Ручная географическая проверка: batch5-whitesnake-hangzhou-leifeng"
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2025-26-mun-kem-7",
+      "otherId": "dynasties-q122",
+      "reason": "XV-век caption directly supplies the outcome of standing on Ugra (конец ордынской зависимости). Different event/person rows will not automatically receive the same factRow. Recommend a fact group with dynasties-q122, and consider related Ivan III questions already tied to rul-ru-ivan3."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2022-23-mun-tat-6",
+      "otherId": "2017-18-reg-5",
+      "reason": "1949 distractor caption names Марш добровольцев and identifies it as PRC anthem; directly answers anthem-name question. Existing anthem-volunteers-march group contains 2017-18-reg-5 and cinema-q34. Add candidate to that existing group to preserve approved caption. It does not reveal word/music authors."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2022-23-mun-tat-6",
+      "otherId": "cinema-q34",
+      "reason": "1949 distractor caption names Марш добровольцев and identifies it as PRC anthem; directly answers anthem-name question. Existing anthem-volunteers-march group contains 2017-18-reg-5 and cinema-q34. Add candidate to that existing group to preserve approved caption. It does not reveal word/music authors."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2019-20-mun-mosobl-52",
+      "otherId": "2022-23-mun-orel-4",
+      "reason": "Caption gives UK, Hong Kong island, Nanjing treaty and 1842. In current active index 2022-23-mun-orel-4 was not present, though accepted embed modern-history-q119 references it. Root must check full eventual authorized bank: this caption may answer its war/country question; do not erase accepted information."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2019-20-mun-mosobl-52",
+      "otherId": "2021-22-shk-qf1333c",
+      "reason": "Caption identifies Portuguese involvement and trade in Macao; may make the earlier maritime-arrival Portugal question easier, but does not explicitly state first European arrival. Semantic relation is distinct; no automatic fact group asserted."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2023-24-shk-mosobl-2",
+      "otherId": "cinema-q01",
+      "reason": "Подпись связывает Чжан Имоу с фильмом «Красный гаолян» и Берлинале; сохранить факт, развести связанную карточку."
+    },
+    {
+      "kind": "manual-semantic",
+      "recordId": "2024-25-mun-mosobl-9",
+      "otherId": "literature-q93",
+      "reason": "Подпись Пушкина прямо называет «Евгения Онегина»."
+    }
+  ],
+  "decisions": [
+    {
+      "record": "cinema/cinema-q36",
+      "option": "o2",
+      "zh": "莫言",
+      "gloss": "Мо Янь — писатель, лауреат Нобелевской премии по литературе 2012 года",
+      "isAnswer": false,
+      "other": "literature/literature-q49",
+      "answer": [
+        "莫言",
+        "Мо Янь"
+      ],
+      "clues": [
+        "2012 год",
+        "Нобелевская премия"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2023-24-shk-mosobl-2",
+      "otherId": "literature-q49",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "record": "crafts/crafts-q134",
+      "option": "cr-ru-khokhloma",
+      "zh": "霍赫洛玛装饰画",
+      "gloss": "Хохломская роспись — деревянная посуда в красных, чёрных и золотистых тонах",
+      "isAnswer": false,
+      "other": "ethnos/ethnos-q62",
+      "answer": [
+        "霍赫洛玛装饰画",
+        "хохломская роспись",
+        "хохлома"
+      ],
+      "clues": [
+        "Золото"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "crafts-q134",
+      "otherId": "ethnos-q62",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба прежних задания и подписи неизменны; новое совпадение появилось из-за расширения индекса имён (в частности, золото/золотой), а не новой подсказки."
+    },
+    {
+      "record": "ethnos/ethnos-q75",
+      "option": "her-ru-khokhloma",
+      "zh": "俄罗斯族",
+      "gloss": "Русские — их хохломская роспись: дерево золотится без золота",
+      "isAnswer": false,
+      "other": "ethnos/ethnos-q62",
+      "answer": [
+        "хохломская роспись",
+        "хохлома"
+      ],
+      "clues": [
+        "Золото"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "ethnos-q75",
+      "otherId": "ethnos-q62",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Одна строка факта, действует штатная защита factRow."
+    },
+    {
+      "record": "landmarks/landmarks-q106",
+      "option": "lm-cn-oriental-pearl",
+      "zh": "东方明珠",
+      "gloss": "«Восточная жемчужина» — телебашня в Шанхае высотой 468 м",
+      "isAnswer": false,
+      "other": "provinces/provinces-q134",
+      "answer": [
+        "Шанхай"
+      ],
+      "clues": [
+        "Телебашня «Восточная жемчужина»",
+        "东方明珠"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "landmarks-q106",
+      "otherId": "2018-19-mun-lenobl-49",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "record": "literature/literature-q113",
+      "option": "o1",
+      "zh": "费奥多尔·陀思妥耶夫斯基",
+      "gloss": "Достоевский — «Идиот» и «Братья Карамазовы» входят в его «великое пятикнижие»",
+      "isAnswer": false,
+      "other": "literature/literature-q60",
+      "answer": [
+        "陀思妥耶夫斯基",
+        "Достоевский"
+      ],
+      "clues": [
+        "Братья Карамазовы"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-mosobl-9",
+      "otherId": "2018-19-mun-53",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "record": "literature/literature-q113",
+      "option": "o4",
+      "zh": "亚历山大·普希金",
+      "gloss": "Александр Пушкин — автор романа в стихах «Евгений Онегин»",
+      "isAnswer": false,
+      "other": "literature/literature-q93",
+      "answer": [
+        "普希金",
+        "Александр Пушкин",
+        "Пушкин"
+      ],
+      "clues": [
+        "Евгений Онегин"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2024-25-mun-mosobl-9",
+      "otherId": "literature-q93",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "record": "modern-china/modern-china-q17",
+      "option": "ath-xuhaifeng",
+      "zh": "射击",
+      "gloss": "Стрельба — в ней Сюй Хайфэн взял первое олимпийское золото Китая (1984)",
+      "isAnswer": false,
+      "other": "2017-18-zak-7",
+      "answer": [
+        "1984",
+        "1984"
+      ],
+      "clues": [
+        "Золото"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-china-q17",
+      "otherId": "2017-18-zak-7",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Одна строка факта, действует штатная защита factRow."
+    },
+    {
+      "record": "modern-china/modern-china-q18",
+      "option": "ath-xuhaifeng",
+      "zh": "射击",
+      "gloss": "Стрельба — в ней Сюй Хайфэн взял первое олимпийское золото Китая (1984)",
+      "isAnswer": false,
+      "other": "2017-18-zak-7",
+      "answer": [
+        "1984",
+        "1984"
+      ],
+      "clues": [
+        "Золото"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-china-q18",
+      "otherId": "2017-18-zak-7",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Одна строка факта, действует штатная защита factRow."
+    },
+    {
+      "record": "modern-history/modern-history-q52",
+      "option": "tr-ru-2001",
+      "zh": "中俄睦邻友好合作条约",
+      "gloss": "Договор о добрососедстве, дружбе и сотрудничестве России и Китая, 2001 год",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q127",
+      "answer": [
+        "2001 год"
+      ],
+      "clues": [
+        "Договор о добрососедстве",
+        "中俄睦邻友好合作条约"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "addition-b1-18",
+      "otherId": "2025-26-mun-ryaz-5",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Одна строка факта, действует штатная защита factRow."
+    },
+    {
+      "record": "modern-history/modern-history-q92",
+      "option": "tr-ru-2001",
+      "zh": "2001 年",
+      "gloss": "2001 год: договор о добрососедстве России и Китая",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q127",
+      "answer": [
+        "2001 год"
+      ],
+      "clues": [
+        "Договор о добрососедстве"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q92",
+      "otherId": "2025-26-mun-ryaz-5",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Одна строка факта, действует штатная защита factRow."
+    },
+    {
+      "record": "modern-history/modern-history-q108",
+      "option": "tr-ru-2001",
+      "zh": "中俄睦邻友好合作条约",
+      "gloss": "Договор о добрососедстве, дружбе и сотрудничестве России и Китая, 2001 год",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q127",
+      "answer": [
+        "2001 год"
+      ],
+      "clues": [
+        "Договор о добрососедстве",
+        "中俄睦邻友好合作条约"
+      ],
+      "row": true,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "modern-history-q108",
+      "otherId": "2025-26-mun-ryaz-5",
+      "decision": "same-canonical-row-repeat",
+      "reason": "Одна строка факта, действует штатная защита factRow."
+    },
+    {
+      "record": "modern-history/modern-history-q125",
+      "option": "o4",
+      "zh": "英国",
+      "gloss": "Британия — получила остров Гонконг по Нанкинскому договору 1842 года.",
+      "isAnswer": false,
+      "other": "modern-history/modern-history-q115",
+      "answer": [
+        "остров Гонконг"
+      ],
+      "clues": [
+        "1842 год",
+        "Англия"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2019-20-mun-mosobl-52",
+      "otherId": "modern-history-q115",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "record": "modern-history/modern-history-q125",
+      "option": "o4",
+      "zh": "英国",
+      "gloss": "Британия — получила остров Гонконг по Нанкинскому договору 1842 года.",
+      "isAnswer": false,
+      "other": "2020-21-reg-q4b4176",
+      "answer": [
+        "Гонконг"
+      ],
+      "clues": [
+        "Великобритания"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2019-20-mun-mosobl-52",
+      "otherId": "2020-21-reg-q4b4176",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "record": "modern-history/modern-history-q125",
+      "option": "o4",
+      "zh": "英国",
+      "gloss": "Британия — получила остров Гонконг по Нанкинскому договору 1842 года.",
+      "isAnswer": false,
+      "other": "2023-24-zak-8",
+      "answer": [
+        "Нанкинский договор"
+      ],
+      "clues": [
+        "Великобритания"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2019-20-mun-mosobl-52",
+      "otherId": "2023-24-zak-8",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "record": "nature/nature-q46",
+      "option": "mtn-huangshan",
+      "zh": "黄山",
+      "gloss": "Хуаншань — гора в Аньхое, известная причудливыми соснами и морем облаков",
+      "isAnswer": false,
+      "other": "nature/nature-q165",
+      "answer": [
+        "黄山",
+        "Хуаншань"
+      ],
+      "clues": [
+        "сосна"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "nature-q46",
+      "otherId": "2021-22-mun-mosobl-59",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "record": "nature/nature-q65",
+      "option": "eng-ru-zolotoy",
+      "zh": "金角湾大桥",
+      "gloss": "Золотой мост — вантовый мост через бухту Золотой Рог во Владивостоке",
+      "isAnswer": false,
+      "other": "provinces/provinces-q108",
+      "answer": [
+        "Владивосток"
+      ],
+      "clues": [
+        "Золото"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "nature-q65",
+      "otherId": "provinces-q108",
+      "decision": "unchanged-content-new-name-index-hit",
+      "reason": "Оба прежних задания и подписи неизменны; новое совпадение появилось из-за расширения индекса имён (в частности, золото/золотой), а не новой подсказки."
+    },
+    {
+      "record": "nature/nature-q144",
+      "option": "mtn-huangshan",
+      "zh": "黄山",
+      "gloss": "Хуаншань — гора в Аньхое, известная причудливыми соснами и морем облаков",
+      "isAnswer": false,
+      "other": "nature/nature-q165",
+      "answer": [
+        "黄山",
+        "Хуаншань"
+      ],
+      "clues": [
+        "сосна"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "nature-q144",
+      "otherId": "2021-22-mun-mosobl-59",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "record": "nature/nature-q166",
+      "option": "o1",
+      "zh": "颐和园",
+      "gloss": "Ихэюань — императорский парк Пекина, построенный вокруг Ваньшоушань и Куньминху",
+      "isAnswer": false,
+      "other": "2020-21-shk-mosobl-47",
+      "answer": [
+        "颐和园",
+        "Ихэюань"
+      ],
+      "clues": [
+        "Куньминху"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2020-21-mun-mosobl-54",
+      "otherId": "2020-21-shk-mosobl-47",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "record": "nature/nature-q166",
+      "option": "o3",
+      "zh": "昆明湖",
+      "gloss": "Куньминху — озеро в пекинском парке Ихэюань; сад вдохновлён озером Сиху",
+      "isAnswer": false,
+      "other": "2020-21-shk-mosobl-47",
+      "answer": [
+        "Ихэюань",
+        "Парк Ихэюань"
+      ],
+      "clues": [
+        "Куньминху",
+        "昆明湖"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2020-21-mun-mosobl-54",
+      "otherId": "2020-21-shk-mosobl-47",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "record": "provinces/provinces-q136",
+      "option": "o2",
+      "zh": "洛阳",
+      "gloss": "Лоян — здесь находятся буддийские пещерные храмы Лунмэнь",
+      "isAnswer": false,
+      "other": "landmarks/landmarks-q98",
+      "answer": [
+        "洛阳"
+      ],
+      "clues": [
+        "Лунмэнь"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2020-21-mun-mosobl-46",
+      "otherId": "landmarks-q98",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "record": "provinces/provinces-q136",
+      "option": "o3",
+      "zh": "西安",
+      "gloss": "Сиань — Большая пагода диких гусей построена для сутр Сюаньцзана",
+      "isAnswer": false,
+      "other": "landmarks/landmarks-q59",
+      "answer": [
+        "Большая пагода диких гусей"
+      ],
+      "clues": [
+        "Сюаньцзан"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2020-21-mun-mosobl-46",
+      "otherId": "landmarks-q59",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    },
+    {
+      "record": "provinces/provinces-q136",
+      "option": "o3",
+      "zh": "西安",
+      "gloss": "Сиань — Большая пагода диких гусей построена для сутр Сюаньцзана",
+      "isAnswer": false,
+      "other": "landmarks/landmarks-q96",
+      "answer": [
+        "西安"
+      ],
+      "clues": [
+        "Большая пагода диких гусей"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false,
+      "recordId": "2020-21-mun-mosobl-46",
+      "otherId": "landmarks-q96",
+      "decision": "protected-by-fact-group",
+      "reason": "Подпись сообщает ответ и содержательную зацепку соседнего задания; подпись сохраняется."
+    }
+  ],
+  "groupUnions": [
+    {
+      "kept": "province-names-river-lake",
+      "mergedGroups": [
+        "pushkin-medny-vsadnik-literature",
+        "regional-b5-hint-03",
+        "regional-b5-hint-05",
+        "regional-b5-hint-06",
+        "regional-b5-hint-08",
+        "regional-b5-hint-09",
+        "regional-b5-hint-10",
+        "regional-b5-hint-13",
+        "regional-b5-hint-16",
+        "regional-b5-hint-26",
+        "regional-b5-hint-27",
+        "regional-b5-hint-33",
+        "regional-b5-hint-34",
+        "regional-b5-hint-35",
+        "regional-b5-hint-36",
+        "regional-b5-hint-37",
+        "regional-b5-hint-39",
+        "regional-b5-hint-40",
+        "regional-b5-hint-41",
+        "regional-b5-hint-42",
+        "regional-b5-hint-43",
+        "regional-b5-hint-44",
+        "regional-b5-hint-45",
+        "regional-b5-hint-52"
+      ],
+      "memberCount": 170
+    },
+    {
+      "kept": "tang-era-literature",
+      "mergedGroups": [
+        "regional-b5-hint-24",
+        "regional-b5-hint-51"
+      ],
+      "memberCount": 14
+    },
+    {
+      "kept": "opium-wars-two",
+      "mergedGroups": [
+        "regional-b5-hint-28",
+        "regional-b5-hint-29",
+        "regional-b5-hint-30",
+        "regional-b5-hint-49",
+        "regional-b5-hint-50"
+      ],
+      "memberCount": 12
+    },
+    {
+      "kept": "huangshan-maofeng",
+      "mergedGroups": [
+        "regional-b5-hint-04",
+        "regional-b5-hint-31",
+        "regional-b5-hint-32"
+      ],
+      "memberCount": 7
+    },
+    {
+      "kept": "shanghai-word",
+      "mergedGroups": [
+        "regional-b5-hint-01",
+        "regional-b5-hint-02",
+        "regional-b5-hint-11",
+        "regional-b5-hint-14",
+        "regional-b5-hint-15",
+        "regional-b5-hint-17",
+        "regional-b5-hint-18",
+        "regional-b5-hint-19",
+        "regional-b5-hint-20",
+        "regional-b5-hint-21",
+        "regional-b5-hint-22",
+        "regional-b5-hint-23",
+        "regional-b5-hint-25",
+        "regional-b5-hint-38"
+      ],
+      "memberCount": 24
+    },
+    {
+      "kept": "olympic-athletes",
+      "mergedGroups": [
+        "anthem-volunteers-march",
+        "regional-b5-hint-12",
+        "regional-b5-hint-47",
+        "regional-b5-hint-48"
+      ],
+      "memberCount": 6
+    }
+  ],
+  "allPreviousProtectionsPreserved": true,
+  "maxFactGroupSize": 170,
+  "captionTextsChanged": false,
+  "publicationAuthorized": false,
+  "separateContentBlocker": "№20 остаётся draft: группы фактов не устраняют возможную неоднозначность ответа."
+}

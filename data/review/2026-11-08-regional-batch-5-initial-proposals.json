@@ -1,0 +1,4360 @@
+{
+  "reviewId": "regional-2026-11-08-batch-5",
+  "date": "2026-11-08",
+  "batch": 5,
+  "state": "draft-pending-author-review",
+  "baseCommit": "088dc3de926b79b6631873d3155cef6b90d56097",
+  "baselineVisibleCount": 1030,
+  "eligibleConservedCount": 223,
+  "questionCount": 20,
+  "publicationAuthorized": false,
+  "stemPolicy": "VERBATIM canonical conserved bank; no new rewording/corrections/capitalization/punctuation changes. Ambiguities/incorrect premises shown only as separate author remarks, no replacement wording.",
+  "optionsPolicy": "Original IDs/key/pool preserved. Only terminal 市/省 in toponym choices may be omitted in preview under standing author instruction; all edits explicit.",
+  "items": [
+    {
+      "id": "2018-19-mun-lenobl-49",
+      "topic": "География и административное устройство",
+      "questionRu": "В каком городе находится телебашня «Восточная жемчужина» (东方明珠)?",
+      "originalQuestionRu": "В каком городе находится телебашня «Восточная жемчужина» (东方明珠)?",
+      "questionZh": "“东方明珠”在哪一座城市？",
+      "answerOptionId": "o3",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "北京",
+          "zh": "北京",
+          "correct": false,
+          "ru": "Пекин — здесь находится Центральная телебашня высотой 405 м",
+          "source": {
+            "title": "Central TV Tower — Beijing Municipal Government",
+            "url": "https://english.beijing.gov.cn/travellinginbeijing/attractions/202603/t20260320_4562520.html",
+            "quote": "the tower stands 405 meters tall",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "济南",
+          "zh": "济南",
+          "correct": false,
+          "ru": "Цзинань — центр Шаньдуна, известный как «город родников»",
+          "source": {
+            "title": "基本市情 — 中国共产党济南市委员会",
+            "url": "https://www.jnsw.gov.cn/content/jbsq/content-21-23094-1.html",
+            "quote": "济南市，简称“济”，别称“泉城”，是山东省省会",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "上海",
+          "zh": "上海",
+          "correct": true,
+          "ru": "Шанхай — «Восточная жемчужина» стоит в Пудуне; высота башни — 468 м",
+          "source": {
+            "title": "东方明珠广播电视塔 — 文化和旅游部",
+            "url": "https://sjfw.mct.gov.cn/site/dataservice/culdetails?curId=10&id=34847",
+            "quote": "总高468米。",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08",
+            "additionalKeyEvidence": {
+              "title": "东方明珠 — 文化和旅游部",
+              "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=shanghai&type=0",
+              "quote": "东方明珠广播电视塔是上海的标志性文化景观之一，位于浦东新区陆家嘴，塔高约468米。",
+              "authority": "official",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            }
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "香港",
+          "zh": "香港",
+          "correct": false,
+          "ru": "Гонконг — у устья Чжуцзяна; включает Коулун и Новые территории",
+          "source": {
+            "title": "香港特别行政区 — 中华人民共和国驻印度尼西亚共和国大使馆",
+            "url": "https://id.china-embassy.gov.cn/chn/zggk/zgjk/xzqh/200404/t20040421_2344701.htm",
+            "quote": "香港地区位于中国东南海岸，珠江口之东，与广东省的深圳市毗邻，包括香港岛、九龙和新界",
+            "authority": "official",
+            "checkedAt": "2026-10-16",
+            "verificationMethod": "reused-accepted-dossier-quote-not-freshly-fetched",
+            "reusedFrom": "data/dossiers/provinces.json / prov-xianggang / sources[2]"
+          }
+        }
+      ],
+      "semanticReview": {
+        "testedRelation": "Телебашня Восточная жемчужина → город расположения; проверены также обратные вопросы о достопримечательностях Шанхая.",
+        "activeQuestionsCompared": 1030,
+        "searchCoverage": "Полный активный индекс: русские и китайские названия, синонимы, ключи, прямое/обратное отношение; затем чтение найденных смысловых соседей.",
+        "neighborsExamined": [
+          {
+            "id": "landmarks-q100",
+            "questionRu": "В каком городе находится набережная Вайтань (外滩) с «выставкой архитектуры всех стран»?",
+            "answer": "上海",
+            "whyDistinct": "Набережная Вайтань → город; другое сооружение, не телебашня."
+          },
+          {
+            "id": "2021-22-mun-q5434f2",
+            "questionRu": "Какая из нижеперечисленных достопримечательностей находится в городе Шанхае?",
+            "answer": "外滩",
+            "whyDistinct": "Достопримечательность Шанхая → Вайтань; проверяется другое сооружение."
+          },
+          {
+            "id": "2016-17-shk-7",
+            "questionRu": "Новый район Пудун в Шанхае расположен к востоку от …; отсюда происходит его название «Пудун».",
+            "answer": "黄浦江",
+            "whyDistinct": "Происхождение названия Пудун → река Хуанпу; другой признак района."
+          }
+        ],
+        "verdict": "Нового прямого или обратного повтора проверяемого отношения не найдено; совпадение объекта при другом признаке не считалось дублем."
+      },
+      "authorRemarks": [],
+      "warnings": [],
+      "reviewNumber": 1,
+      "originalQuestionZh": "“东方明珠”在哪一座城市？",
+      "previewQuestionRu": "В каком городе находится телебашня «Восточная жемчужина» (东方明珠)?",
+      "originalAnswer": {
+        "optionId": "o3",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "北京"
+        },
+        {
+          "id": "o2",
+          "zh": "济南"
+        },
+        {
+          "id": "o3",
+          "zh": "上海"
+        },
+        {
+          "id": "o4",
+          "zh": "香港"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "东方明珠广播电视塔 — 维基百科",
+          "url": "https://zh.wikipedia.org/zh-cn/%E4%B8%9C%E6%96%B9%E6%98%8E%E7%8F%A0%E5%B9%BF%E6%92%AD%E7%94%B5%E8%A7%86%E5%A1%94"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "geo-russia"
+    },
+    {
+      "id": "2023-24-shk-mosobl-2",
+      "topic": "Культура, традиции и праздники",
+      "questionRu": "Какой китайский режиссер стал режиссером церемонии открытия и закрытия зимних и летних Олимпийских игр в Пекине?",
+      "originalQuestionRu": "Какой китайский режиссер стал режиссером церемонии открытия и закрытия зимних и летних Олимпийских игр в Пекине?",
+      "questionZh": null,
+      "originalQuestionZh": null,
+      "answerOptionId": "o1",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "张艺谋",
+          "zh": "张艺谋",
+          "correct": true,
+          "ru": "Чжан Имоу — его «Красный гаолян» получил «Золотого медведя» Берлинале в 1988 году",
+          "source": {
+            "title": "Жэньминь жибао (海外版): 红高粱地的朝圣",
+            "url": "https://paper.people.com.cn/rmrbhwb/html/2013-11/12/content_1323624.htm",
+            "quote": "1988年获柏林国际电影节金熊奖，导演张艺谋",
+            "checkedAt": "2026-10-19",
+            "authority": "official",
+            "provenance": "reused_accepted_dossier",
+            "dossierRow": "cinema/works/cin-cn-red-sorghum",
+            "freshPageVerification": false
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "莫言",
+          "zh": "莫言",
+          "correct": false,
+          "ru": "Мо Янь — писатель, лауреат Нобелевской премии по литературе 2012 года",
+          "source": {
+            "url": "https://www.nobelprize.org/prizes/literature/2012/prize-announcement/?print=1",
+            "title": "The Nobel Prize in Literature 2012 – Prize announcement — NobelPrize.org",
+            "quote": "Announcement of the 2012 Nobel Prize in Literature to Mo Yan",
+            "checkedAt": "2026-11-07",
+            "authority": "official",
+            "verificationMethod": "browsed_search_excerpt",
+            "provenance": "reused_accepted_dossier",
+            "dossierRow": "literature/authors/lit-a-moyan",
+            "freshPageVerification": false
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "吴宇森",
+          "zh": "吴宇森",
+          "correct": false,
+          "ru": "Джон Ву — в 2010 году получил почётного «Золотого льва» за вклад в кино",
+          "source": {
+            "url": "https://www.labiennale.org/en/history/recent-years",
+            "title": "La Biennale di Venezia — Recent years",
+            "quote": "Golden Lions for Lifetime Achievement in 2010: William Forsythe (Dance), Rem Koolhaas (Architecture), John Woo (Cinema)",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "李安",
+          "zh": "李安",
+          "correct": false,
+          "ru": "Энг Ли — получил «Оскар» за режиссуру фильма «Жизнь Пи»",
+          "source": {
+            "url": "https://www.oscars.org/oscars/ceremonies/2013",
+            "title": "The 85th Academy Awards | 2013",
+            "quote": "Directing\n\nWinner\n\nLife of Pi\n\nAng Lee",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08",
+            "quoteFormatting": "Сохранён порядок строк блока Directing; пустые строки по веб-представлению."
+          }
+        }
+      ],
+      "originalRecord": {
+        "answer": {
+          "optionId": "o1",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "张艺谋 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%89%BA%E8%B0%8B"
+          }
+        ],
+        "explanation": {
+          "ru": "Чжан Имоу (张艺谋), лидер «пятого поколения» китайских режиссёров, поставил церемонии открытия и закрытия летней Олимпиады 2008 года и зимней Олимпиады 2022 года в Пекине."
+        },
+        "factRow": [
+          "modern-china/events/evt-beijing2008",
+          "modern-china/events/evt-beijing2022"
+        ],
+        "id": "2023-24-shk-mosobl-2",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 2,
+            "officialKey": "o1",
+            "region": "Московская область",
+            "regionCode": "mosobl",
+            "sourceFiles": [
+              "01-Варианты/2023-24/1-Школьный/Московская область/9-11_Задания.pdf"
+            ],
+            "stage": "школьный",
+            "stageCode": "shk",
+            "year": "2023-24"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "张艺谋"
+          },
+          {
+            "id": "o2",
+            "zh": "莫言"
+          },
+          {
+            "id": "o3",
+            "zh": "吴宇森"
+          },
+          {
+            "id": "o4",
+            "zh": "李安"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Какой китайский режиссер стал режиссером церемонии открытия и закрытия зимних и летних Олимпийских игр в Пекине?",
+        "questionZh": null,
+        "topic": "Культура, традиции и праздники",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "semanticReview": {
+        "testedRelation": "Режиссёр церемоний открытия и закрытия обеих пекинских Олимпиад → 张艺谋",
+        "activeRecordsCompared": 1030,
+        "comparisonScope": "Все 1030 активных записей, поиски по сущностям и формулировкам во всех темах; прямой и обратный атрибут проверены отдельно. Общая сущность сама по себе не считалась дублем.",
+        "neighborsExamined": [
+          {
+            "id": "cinema-q01",
+            "questionRu": "Кто поставил фильм «Красный гаолян», получивший «Золотого медведя» Берлинского кинофестиваля в 1988 году?",
+            "answer": "张艺谋",
+            "answerOptionId": "cin-cn-red-sorghum",
+            "whyDistinct": "Спрашивается режиссёр конкретного фильма «Красный гаолян», а здесь постановщик церемоний Олимпиад; это разные работы одного человека."
+          },
+          {
+            "id": "2015-16-reg-6",
+            "questionRu": "В каком городе прошли Олимпийские игры 2008 года?",
+            "answer": "北京",
+            "answerOptionId": "o3",
+            "whyDistinct": "Спрашивается город летней Олимпиады 2008 года; здесь требуется имя постановщика церемоний."
+          }
+        ],
+        "verdict": "distinct_relation"
+      },
+      "authorRemarks": [],
+      "warnings": [
+        "Подпись Чжан Имоу повторяет факт cinema-q01; при принятии проверить разведение этих вопросов в тренировке. Исходный factRow обеих Олимпиад сохранён в originalRecord."
+      ],
+      "keySources": [
+        {
+          "url": "https://www.bjiff.com/images/%E7%AC%AC%E5%8D%81%E4%B8%89%E5%B1%8A%E7%94%B5%E5%BD%B1%E8%8A%82%E4%BC%9A%E5%88%8A.pdf",
+          "title": "北京国际电影节 — 第十三届电影节会刊",
+          "quote": "Creative Director of the Opening and Closing Ceremonies at both the Olympic Summer Games and Olympic Winter Games",
+          "authority": "official",
+          "verificationMethod": "browsed_search_excerpt",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://www.olympics.com/ioc/news/critically-acclaimed-director-lu-chuan-selected-to-direct-the-official-film-of-the-olympic-winter-games-beijing-2022",
+          "title": "IOC — Official Film of Beijing 2022",
+          "quote": "Zhang Yimou is also the Chief Director of the Beijing 2022 Opening and Closing ceremonies.",
+          "authority": "official",
+          "verificationMethod": "browsed_search_excerpt",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "reviewNumber": 2,
+      "previewQuestionRu": "Какой китайский режиссер стал режиссером церемонии открытия и закрытия зимних и летних Олимпийских игр в Пекине?",
+      "originalAnswer": {
+        "optionId": "o1",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "张艺谋"
+        },
+        {
+          "id": "o2",
+          "zh": "莫言"
+        },
+        {
+          "id": "o3",
+          "zh": "吴宇森"
+        },
+        {
+          "id": "o4",
+          "zh": "李安"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "张艺谋 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%89%BA%E8%B0%8B"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "culture-literature"
+    },
+    {
+      "id": "2019-20-mun-kgd-2",
+      "topic": "Экономика, образование, наука и спорт",
+      "questionRu": "Какое полезное ископаемое — главный источник энергии в Китае?",
+      "questionZh": "哪种矿产资源是中国的主要能源？",
+      "originalQuestionRu": "Какое полезное ископаемое — главный источник энергии в Китае?",
+      "answerOptionId": "o1",
+      "originalSourceQuestionRu": null,
+      "sourceProvenance": {
+        "conservedDisplay": "/tmp/lingvo-batch5-pending.json",
+        "sourceTranscription": "data/regions/variants.json",
+        "variantId": "2019-20-mun-kgd",
+        "taskNumber": 2,
+        "sourceFiles": [
+          "01-Варианты/2019-20/2-Муниципальный/Калининградская область/9-11_Задания.pdf"
+        ],
+        "sourceQuestionZh": "哪种矿产资源是中国的主要能源？",
+        "sourceOptions": [
+          "煤炭",
+          "石油",
+          "天然气",
+          "有色金属"
+        ],
+        "sourceKeyIndex": 0,
+        "note": "Основной показ дословно из текущего pending; исходная расшифровка приведена лишь для истории, без повторного аудита PDF."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "煤炭",
+          "zh": "煤炭",
+          "correct": true,
+          "ru": "Уголь — в 2025 году обеспечивал 51,4 % энергопотребления КНР.",
+          "source": {
+            "title": "能源转型跨越发展 绿色低碳成效显著 — 国家统计局 (2026-06-05)",
+            "url": "https://www.stats.gov.cn/zt_18555/ztfx/sswjjshfzcjbg/202606/t20260601_1963846.html",
+            "quote": "煤炭占能源消费总量比重由2020年的56.7%降至2025年的51.4%",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "dataYear": 2025
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "石油",
+          "zh": "石油",
+          "correct": false,
+          "ru": "Нефть — её доля в энергопотреблении КНР в 2025 году составляла 18,2 %.",
+          "source": {
+            "title": "能源转型跨越发展 绿色低碳成效显著 — 国家统计局 (2026-06-05)",
+            "url": "https://www.stats.gov.cn/zt_18555/ztfx/sswjjshfzcjbg/202606/t20260601_1963846.html",
+            "quote": "石油占比由18.9%降至18.2%",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "dataYear": 2025
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "天然气",
+          "zh": "天然气",
+          "correct": false,
+          "ru": "Природный газ — его доля в энергопотреблении КНР в 2025 году составляла 8,7 %.",
+          "source": {
+            "title": "能源转型跨越发展 绿色低碳成效显著 — 国家统计局 (2026-06-05)",
+            "url": "https://www.stats.gov.cn/zt_18555/ztfx/sswjjshfzcjbg/202606/t20260601_1963846.html",
+            "quote": "天然气占比由8.4%提升至8.7%",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "dataYear": 2025
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "有色金属",
+          "zh": "有色金属",
+          "correct": false,
+          "ru": "Цветные металлы — медь и алюминий относятся к металлическому сырью, а не к топливу.",
+          "source": {
+            "title": "全国矿产资源规划（2016—2020年） — 国家发展改革委",
+            "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+            "quote": "铜、铝、铅、锌、金、钨、钼等金属矿产",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "additionalQuote": "能源矿产",
+            "quoteNote": "В тексте медь и алюминий названы металлическими минералами. В приложении 1 топливо выделено отдельно как 能源 矿产（26）, руды цветных металлов — как 有色金属矿产（43）. Вывод о различии групп сделан по классификации таблицы, не по отсутствию слова в перечне."
+          }
+        }
+      ],
+      "semanticReview": {
+        "corpusSize": 1030,
+        "corpus": "/tmp/lingvo-batch5-active.json + /tmp/lingvo-batch5-active-index.txt",
+        "testedRelation": "КНР → ресурс с наибольшей долей в энергопотреблении; ответ уголь. Это структура потребления, а не место страны по добыче угля.",
+        "neighborsExamined": [
+          {
+            "id": "2020-21-zak-q131194",
+            "questionRu": "Какое место в мире занимает Китай по добыче угля?",
+            "answer": "第一位",
+            "whyDistinct": "Спрашивается мировой ранг Китая по добыче угля, ответ «первое место». Здесь сравниваются виды источников энергии внутри КНР: иной показатель и иной объект ответа."
+          },
+          {
+            "id": "2018-19-mun-55",
+            "questionRu": "Река Хуанхэ отделяет эту провинцию от провинции Шэньси. В этой провинции находится космодром Тайюань, также она является центром угольной промышленности Китая.",
+            "answer": "山西",
+            "whyDistinct": "Спрашивается провинция — центр угольной промышленности. Здесь ресурс в общекитайской структуре энергопотребления, а не место его добычи."
+          },
+          {
+            "id": "2024-25-reg-8",
+            "questionRu": "В какой провинции Китая сосредоточены самые большие запасы природного газа?",
+            "answer": "四川",
+            "whyDistinct": "Спрашиваются запасы газа в провинции Сычуань. Запасы и регион не равны общекитайскому энергопотреблению."
+          }
+        ],
+        "verdict": "Новой прямой или обратной карточки с этой связью среди 1030 действующих не найдено; ближайшие связи отдельно сопоставлены. Восстановлением недостающего элемента уже спрашиваемого закрытого набора не является."
+      },
+      "authorRemarks": [
+        {
+          "issue": "В исходном условии нет года и не назван показатель. Источники подтверждают уголь как крупнейший компонент именно энергопотребления КНР в 2025 году; доля 51,4 % не означает долю электрогенерации.",
+          "authorDecision": "Сохранить исходную формулировку с этой временной привязкой в разборе либо отложить; условие здесь не менялось.",
+          "sources": [
+            {
+              "title": "能源转型跨越发展 绿色低碳成效显著 — 国家统计局 (2026-06-05)",
+              "url": "https://www.stats.gov.cn/zt_18555/ztfx/sswjjshfzcjbg/202606/t20260601_1963846.html",
+              "quote": "煤炭占能源消费总量比重由2020年的56.7%降至2025年的51.4%",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "Условие статистическое и недатированное; подписи датированы 2025 годом."
+      ],
+      "reviewNumber": 3,
+      "originalQuestionZh": "哪种矿产资源是中国的主要能源？",
+      "previewQuestionRu": "Какое полезное ископаемое — главный источник энергии в Китае?",
+      "originalAnswer": {
+        "optionId": "o1",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "煤炭"
+        },
+        {
+          "id": "o2",
+          "zh": "石油"
+        },
+        {
+          "id": "o3",
+          "zh": "天然气"
+        },
+        {
+          "id": "o4",
+          "zh": "有色金属"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "中华人民共和国能源 — 维基百科",
+          "url": "https://zh.wikipedia.org/zh-cn/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9C%8B%E8%83%BD%E6%BA%90"
+        },
+        {
+          "checkedAt": "2026-10-25",
+          "title": "中国煤炭工业 — 维基百科",
+          "url": "https://zh.wikipedia.org/zh-cn/%E4%B8%AD%E5%9B%BD%E7%85%A4%E7%82%AD%E5%B7%A5%E4%B8%9A"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "history-economy"
+    },
+    {
+      "id": "2021-22-mun-amur-4",
+      "topic": "География и административное устройство",
+      "questionRu": "Какая из этих провинций/ регионов не граничит с Россией?",
+      "originalQuestionRu": "Какая из этих провинций/ регионов не граничит с Россией?",
+      "questionZh": null,
+      "answerOptionId": "o4",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "新疆维吾尔族自治区",
+          "zh": "新疆维吾尔族自治区",
+          "correct": false,
+          "ru": "Синьцзян — на его участке общая граница с Россией имеет длину около 55 км",
+          "source": {
+            "title": "新疆边境扶贫扩大试点规划 — 新疆维吾尔自治区人民政府",
+            "url": "https://www.xinjiang.gov.cn/xinjiang/gfxwj/201104/dbcbf0b1cb0e49258ef2e4a1e3ce53a0.shtml",
+            "quote": "中俄边界总长约为55公里",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "吉林省",
+          "zh": "吉林",
+          "correct": false,
+          "ru": "Цзилинь — на востоке граничит с Россией, на юго-востоке — с КНДР",
+          "source": {
+            "title": "地理地貌 — 吉林省人民政府",
+            "url": "https://www.jl.gov.cn/shengqing/dldm/",
+            "quote": "东与俄罗斯联邦接壤，东南部与朝鲜民主主义人民共和国隔江相望。",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "黑龙江省",
+          "zh": "黑龙江",
+          "correct": false,
+          "ru": "Хэйлунцзян — Россия находится за пограничными реками на севере и востоке",
+          "source": {
+            "title": "地理特征 — 黑龙江省人民政府",
+            "url": "https://www.hlj.gov.cn/hlj/c108479/202208/c00_30848040.shtml",
+            "quote": "北、东部与俄罗斯隔江相望",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "辽宁省",
+          "zh": "辽宁",
+          "correct": true,
+          "ru": "Ляонин — на юге омывается Жёлтым морем и Бохайским заливом",
+          "source": {
+            "title": "辽宁省主体功能区规划 — 辽宁省人民政府",
+            "url": "https://www.ln.gov.cn/web/zwgkx/zfxxgk1/zc/xzgfxwj/szf/szfwj/2023010421545165331/index.shtml",
+            "quote": "辽宁位于我国东北地区南部，南临黄海、渤海，东与朝鲜一江之隔",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "semanticReview": {
+        "testedRelation": "Наличие сухопутной границы с Россией у провинции/региона; отрицательный выбор среди четырёх регионов.",
+        "activeQuestionsCompared": 1030,
+        "searchCoverage": "Полный активный индекс: русские и китайские названия, синонимы, ключи, прямое/обратное отношение; затем чтение найденных смысловых соседей.",
+        "neighborsExamined": [
+          {
+            "id": "2019-20-mun-lip-1",
+            "questionRu": "Какие провинции Китая называют «тремя северо-восточными провинциями» (东北三省)?",
+            "answer": "黑龙江、辽宁、吉林",
+            "whyDistinct": "Замкнутый набор трёх северо-восточных провинций, а здесь членство в наборе приграничных с Россией регионов; наборы различаются."
+          },
+          {
+            "id": "2025-26-mun-ryaz-4",
+            "questionRu": "По какой реке проходит часть границы России и Китая на Дальнем Востоке?",
+            "answer": "黑龙江",
+            "whyDistinct": "Пограничная река Россия–Китай → Амур; здесь пограничный статус региона."
+          },
+          {
+            "id": "2020-21-zak-q1f0e35",
+            "questionRu": "С какой провинцией Китая граничит российский город Благовещенск?",
+            "answer": "黑龙江",
+            "whyDistinct": "Благовещенск → соседняя китайская провинция; здесь география четырёх регионов и отсутствие российской границы."
+          }
+        ],
+        "verdict": "Нового прямого или обратного повтора проверяемого отношения не найдено; совпадение объекта при другом признаке не считалось дублем."
+      },
+      "authorRemarks": [
+        {
+          "kind": "исходное название варианта",
+          "original": "新疆维吾尔族自治区",
+          "comment": "В o1 исходник содержит дополнительный иероглиф 族. Официальное название — 新疆维吾尔自治区. Исходный вариант сохранён дословно; автор решает, принимать ли задание с этим замечанием.",
+          "source": {
+            "title": "新疆维吾尔自治区概况 — Посольство КНР в Японии",
+            "url": "https://jp.china-embassy.gov.cn/ztnew/xbdkfnew/xbgknew/200402/t20040205_9460733.htm",
+            "quote": "新疆维吾尔自治区位于中国西北部，地处亚欧大陆中心，面积166万多平方公里",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-dossier-quote-not-freshly-fetched",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "warnings": [],
+      "reviewNumber": 4,
+      "originalQuestionZh": null,
+      "previewQuestionRu": "Какая из этих провинций/ регионов не граничит с Россией?",
+      "originalAnswer": {
+        "optionId": "o4",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "新疆维吾尔族自治区"
+        },
+        {
+          "id": "o2",
+          "zh": "吉林省"
+        },
+        {
+          "id": "o3",
+          "zh": "黑龙江省"
+        },
+        {
+          "id": "o4",
+          "zh": "辽宁省"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "辽宁省 — 维基百科",
+          "url": "https://zh.wikipedia.org/zh-cn/%E8%BE%BD%E5%AE%81%E7%9C%81"
+        },
+        {
+          "checkedAt": "2026-10-25",
+          "title": "中国—俄罗斯边界 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E2%80%94%E4%BF%84%E7%BD%97%E6%96%AF%E8%BE%B9%E7%95%8C"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [
+        {
+          "optionId": "o2",
+          "originalZh": "吉林省",
+          "zh": "吉林",
+          "reason": "Прежнее правило автора: названия городов и провинций показывать без 市/省; исходная форма сохранена.",
+          "appliedInPreview": true
+        },
+        {
+          "optionId": "o3",
+          "originalZh": "黑龙江省",
+          "zh": "黑龙江",
+          "reason": "Прежнее правило автора: названия городов и провинций показывать без 市/省; исходная форма сохранена.",
+          "appliedInPreview": true
+        },
+        {
+          "optionId": "o4",
+          "originalZh": "辽宁省",
+          "zh": "辽宁",
+          "reason": "Прежнее правило автора: названия городов и провинций показывать без 市/省; исходная форма сохранена.",
+          "appliedInPreview": true
+        }
+      ],
+      "sourceReport": "geo-russia"
+    },
+    {
+      "id": "2020-21-mun-mosobl-46",
+      "topic": "Культура, традиции и праздники",
+      "questionRu": "В каком городе находится пагода Лэйфэн?",
+      "originalQuestionRu": "В каком городе находится пагода Лэйфэн?",
+      "questionZh": "雷峰塔位于哪个城市?",
+      "originalQuestionZh": "雷峰塔位于哪个城市?",
+      "answerOptionId": "o4",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "北京",
+          "zh": "北京",
+          "correct": false,
+          "ru": "Пекин — Белая пагода парка Бэйхай стала одним из символов города",
+          "source": {
+            "url": "https://gygl.beijing.gov.cn/mlgy/mlgy_gyjg01/201912/t20191211_1048483.html",
+            "title": "北京市公园管理中心 — 白塔",
+            "quote": "不仅是北海公园的标志性景观，且长期被作为北京的象征图景",
+            "authority": "official",
+            "verificationMethod": "browsed_search_excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "洛阳",
+          "zh": "洛阳",
+          "correct": false,
+          "ru": "Лоян — здесь находятся буддийские пещерные храмы Лунмэнь",
+          "source": {
+            "url": "https://www.dpm.org.cn/lemmas/243334.html",
+            "title": "故宫博物院 — 龙门石窟",
+            "quote": "位于河南洛阳南郊龙门山和香山。",
+            "authority": "official",
+            "verificationMethod": "browsed_search_excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "西安",
+          "zh": "西安",
+          "correct": false,
+          "ru": "Сиань — Большая пагода диких гусей построена для сутр Сюаньцзана",
+          "source": {
+            "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1802954373708996609.html",
+            "title": "西安市地方志办公室 — 大雁塔",
+            "quote": "唐永徽三年（公元652年）为玄奘藏经典而修建",
+            "authority": "official",
+            "verificationMethod": "browsed_search_excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "杭州",
+          "zh": "杭州",
+          "correct": true,
+          "ru": "Ханчжоу — новую пагоду Лэйфэн возвели в 2002 году, сохранив внутри руины старой",
+          "source": {
+            "url": "https://ywhz.hangzhou.com.cn/yjls/content/content_6218549.htm",
+            "title": "雷峰塔 — 杭州西湖风景名胜区管委会",
+            "quote": "现塔为2002年重建，旧塔遗址被保存在新塔内部供参观",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "originalRecord": {
+        "answer": {
+          "optionId": "o4",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "雷峰塔 — 维基百科",
+            "url": "https://zh.wikipedia.org/zh-cn/%E9%9B%B7%E5%B3%B0%E5%A1%94"
+          }
+        ],
+        "explanation": {
+          "ru": "Пагода Лэйфэн (雷峰塔) стоит на южном берегу озера Сиху в Ханчжоу (杭州)."
+        },
+        "id": "2020-21-mun-mosobl-46",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 46,
+            "officialKey": "o4",
+            "region": "Московская область",
+            "regionCode": "mosobl",
+            "sourceFiles": [
+              "01-Варианты/2020-21/2-Муниципальный/Московская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2020-21"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "北京"
+          },
+          {
+            "id": "o2",
+            "zh": "洛阳"
+          },
+          {
+            "id": "o3",
+            "zh": "西安"
+          },
+          {
+            "id": "o4",
+            "zh": "杭州"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "В каком городе находится пагода Лэйфэн?",
+        "questionZh": "雷峰塔位于哪个城市?",
+        "topic": "Культура, традиции и праздники",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "semanticReview": {
+        "testedRelation": "Пагода 雷峰塔 → город 杭州",
+        "activeRecordsCompared": 1030,
+        "comparisonScope": "Все 1030 активных записей, поиски по сущностям и формулировкам во всех темах; прямой и обратный атрибут проверены отдельно. Общая сущность сама по себе не считалась дублем.",
+        "neighborsExamined": [
+          {
+            "id": "myths-q20",
+            "questionRu": "Кого монах Фахай, по преданию, разлучил с мужем, Сюй Сянем, и заточил под пагодой Лэйфэн?",
+            "answer": "白娘子",
+            "answerOptionId": "fig-bainiangzi",
+            "whyDistinct": "В тексте есть пагода Лэйфэн, но спрашивается имя героини, заточённой под ней; город не требуется."
+          },
+          {
+            "id": "2015-16-shk-65",
+            "questionRu": "В каком китайском городе находится знаменитое живописное озеро Сиху?",
+            "answer": "杭州",
+            "answerOptionId": "o1",
+            "whyDistinct": "Спрашивается местоположение озера Сиху, а здесь отдельного архитектурного сооружения. Сам общий город Ханчжоу дубля не образует."
+          }
+        ],
+        "verdict": "distinct_relation"
+      },
+      "authorRemarks": [],
+      "warnings": [
+        "Связь Лэйфэн — Сиху — Ханчжоу близка к 2015-16-shk-65 и новому 2020-21-mun-mosobl-54; это разные объекты и отношения, но нужно проверить межвопросные подсказки."
+      ],
+      "keySources": [
+        {
+          "url": "https://ywhz.hangzhou.com.cn/yjls/content/content_6218549.htm",
+          "title": "雷峰塔 — 杭州西湖风景名胜区管委会",
+          "quote": "位于西湖南岸夕照山上",
+          "authority": "official",
+          "verificationMethod": "browsed_full_page",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "reviewNumber": 5,
+      "previewQuestionRu": "В каком городе находится пагода Лэйфэн?",
+      "originalAnswer": {
+        "optionId": "o4",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "北京"
+        },
+        {
+          "id": "o2",
+          "zh": "洛阳"
+        },
+        {
+          "id": "o3",
+          "zh": "西安"
+        },
+        {
+          "id": "o4",
+          "zh": "杭州"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "雷峰塔 — 维基百科",
+          "url": "https://zh.wikipedia.org/zh-cn/%E9%9B%B7%E5%B3%B0%E5%A1%94"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "culture-literature"
+    },
+    {
+      "id": "2021-22-mun-volog-8",
+      "topic": "Экономика, образование, наука и спорт",
+      "questionRu": "Китай является 1-ым в мире по добыче…",
+      "questionZh": null,
+      "originalQuestionRu": "Китай является 1-ым в мире по добыче…",
+      "answerOptionId": "o1",
+      "originalSourceQuestionRu": "Китай является 1-ым в мире по добыче…",
+      "sourceProvenance": {
+        "conservedDisplay": "/tmp/lingvo-batch5-pending.json",
+        "sourceTranscription": "data/regions/variants.json",
+        "variantId": "2021-22-mun-volog",
+        "taskNumber": 8,
+        "sourceFiles": [
+          "01-Варианты/2021-22/2-Муниципальный/Вологодская область/9-11_Задания.pdf"
+        ],
+        "sourceQuestionZh": null,
+        "sourceOptions": [
+          "黄金",
+          "白银",
+          "石油",
+          "铁矿"
+        ],
+        "sourceKeyIndex": 0,
+        "note": "Основной показ дословно из текущего pending; исходная расшифровка приведена лишь для истории, без повторного аудита PDF."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "黄金",
+          "zh": "黄金",
+          "correct": true,
+          "ru": "Золото — по оценке USGS, Китай добыл 380 т в 2025 году.",
+          "source": {
+            "title": "Mineral Commodity Summaries 2026 — USGS, GOLD",
+            "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+            "quote": "China                                                         377       380                                              3,200",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "dataYear": 2025,
+            "location": "Печатная стр. 91: World Mine Production and Reserves, столбцы 2024 / 2025e / Reserves; тонны.",
+            "quoteNote": "Табличная строка дословно из pdftotext -layout; 2025e — оценка, не окончательный итог.",
+            "localEvidence": "/tmp/mcs2026.txt"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "白银",
+          "zh": "白银",
+          "correct": false,
+          "ru": "Серебро — по оценке USGS, в 2025 году лидировала Мексика: 6300 т.",
+          "source": {
+            "title": "Mineral Commodity Summaries 2026 — USGS, SILVER",
+            "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+            "quote": "Mexico                                                               5,780      6,300                                             37,000",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "dataYear": 2025,
+            "location": "Печатная стр. 173: World Mine Production and Reserves, столбец 2025e; тонны.",
+            "quoteNote": "Лидерство установлено сравнением всех стран в той же таблице; Китай 3400, Перу 3600.",
+            "localEvidence": "/tmp/mcs2026.txt"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "石油",
+          "zh": "石油",
+          "correct": false,
+          "ru": "Нефть — в 2025 году крупнейшим производителем сырой нефти были США.",
+          "source": {
+            "title": "The United States set record energy production in 2025, again — EIA (2026-05-11)",
+            "url": "https://www.eia.gov/todayinenergy/detail.php?id=67684",
+            "quote": "the United States remained the largest crude oil producer in the world.",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "dataYear": 2025
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "铁矿",
+          "zh": "铁矿",
+          "correct": false,
+          "ru": "Железная руда — в 2025-м Австралия лидировала по добыче пригодной руды.",
+          "source": {
+            "title": "Mineral Commodity Summaries 2026 — USGS, IRON ORE",
+            "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+            "quote": "Australia                                982,000    980,000    607,000     600,000                                 6",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "dataYear": 2025,
+            "location": "Печатная стр. 109: World Mine Production and Reserves, Mine production / Usable ore / 2025e; тысячи метрических тонн.",
+            "quoteNote": "Лидерство выведено из сравнительной таблицы: Австралия 980000, Бразилия 420000, Индия 310000, Китай 290000. Сравнивается пригодная руда, не сырая добытая масса.",
+            "localEvidence": "/tmp/mcs2026.txt"
+          }
+        }
+      ],
+      "semanticReview": {
+        "corpusSize": 1030,
+        "corpus": "/tmp/lingvo-batch5-active.json + /tmp/lingvo-batch5-active-index.txt",
+        "testedRelation": "КНР → полезное ископаемое, по добыче которого страна занимает первое место среди четырёх предложенных; ответ золото. Проверяется добыча, не запасы или производство стали.",
+        "neighborsExamined": [
+          {
+            "id": "2020-21-zak-q131194",
+            "questionRu": "Какое место в мире занимает Китай по добыче угля?",
+            "answer": "第一位",
+            "whyDistinct": "Там мировое лидерство Китая по добыче угля. Уголь отсутствует в данном наборе; здесь лидерство по другому минералу. Структура вопроса похожа, проверяемые ресурс и факт различны."
+          },
+          {
+            "id": "2024-25-reg-5",
+            "questionRu": "По доказанным запасам какого из перечисленных полезных ископаемых Россия занимала первое место в мире на конец 2024 года?",
+            "answer": "天然气",
+            "whyDistinct": "Там Россия и доказанные запасы природного газа на конец 2024 года. Здесь Китай и добыча золота; отличаются страна, ресурс и показатель."
+          },
+          {
+            "id": "2024-25-shk-37",
+            "questionRu": "Крупнейшими центрами какой отрасли промышленности Китая являются Аньшань, Бэньси, Баотоу и Ухань?",
+            "answer": "黑色冶金业",
+            "whyDistinct": "Там центры чёрной металлургии. Здесь международный ранг добычи отдельных полезных ископаемых, а не отрасль переработки."
+          }
+        ],
+        "verdict": "Новой прямой или обратной карточки с этой связью среди 1030 действующих не найдено; ближайшие связи отдельно сопоставлены. Восстановлением недостающего элемента уже спрашиваемого закрытого набора не является."
+      },
+      "authorRemarks": [
+        {
+          "issue": "В исходном вопросе нет даты. Ключ o1 подтверждён по оценке добычи за 2025 год в USGS MCS 2026; серебро, нефть и пригодная железная руда имеют других лидеров. Не смешивать добычу с выплавкой металла и сырую руду с пригодной. Единственность ключа подтверждена при стандартной сравнительной метрике USGS (пригодная руда); само условие это ограничение не называет.",
+          "authorDecision": "Решить, оставлять ли недатированное условие; дата добавлена только в подписи, не в вопрос.",
+          "sources": [
+            {
+              "title": "Mineral Commodity Summaries 2026 — USGS",
+              "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf",
+              "quote": "China, Russia, Australia, Canada, and the United States were the leading gold producers, in descending order of production,",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "dataYear": 2025
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "Статистическое условие без года. Числа USGS за 2025 год помечены как оценки."
+      ],
+      "reviewNumber": 6,
+      "originalQuestionZh": null,
+      "previewQuestionRu": "Китай является 1-ым в мире по добыче…",
+      "originalAnswer": {
+        "optionId": "o1",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "黄金"
+        },
+        {
+          "id": "o2",
+          "zh": "白银"
+        },
+        {
+          "id": "o3",
+          "zh": "石油"
+        },
+        {
+          "id": "o4",
+          "zh": "铁矿"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "我国黄金消费量去年下降近两成，今年上半年大幅反弹 — 新京报",
+          "url": "https://www.bjnews.com.cn/detail/162796286914016.html"
+        },
+        {
+          "checkedAt": "2026-10-25",
+          "title": "金 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E9%87%91"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "history-economy"
+    },
+    {
+      "id": "2021-22-mun-mosobl-59",
+      "topic": "География и административное устройство",
+      "questionRu": "В каком заповеднике находится знаменитая «сосна, приветствующая гостей» (инкэсун)?",
+      "originalQuestionRu": "В каком заповеднике находится знаменитая «сосна, приветствующая гостей» (инкэсун)?",
+      "questionZh": null,
+      "answerOptionId": "o1",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "黄山",
+          "zh": "黄山",
+          "correct": true,
+          "ru": "Хуаншань — с 1981 года у сосны Инкэсун есть специальные хранители",
+          "source": {
+            "title": "安徽：岁月中的黄山迎客松 — 国家林业和草原局",
+            "url": "https://www.forestry.gov.cn/c/www/dfdt/596061.jhtml",
+            "quote": "景区自1981年起为迎客松设立专职守护人",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-page-opened",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "峨眉山",
+          "zh": "峨眉山",
+          "correct": false,
+          "ru": "Эмэйшань — буддийская священная гора, обитель бодхисаттвы Пусяня",
+          "source": {
+            "title": "峨眉山市十四五文旅康养产业发展规划 — 峨眉山市人民政府",
+            "url": "https://www.emeishan.gov.cn/emss/efbf/2023022214035442128800000.html",
+            "quote": "峨眉山被称为“佛之长子”，是普贤菩萨的道场",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "乐山",
+          "zh": "乐山",
+          "correct": false,
+          "ru": "Лэшань — здесь высечена в скале гигантская статуя Будды высотой 71 м",
+          "source": {
+            "title": "Mount Emei, including Leshan Giant Buddha — UNESCO",
+            "url": "https://whc.unesco.org/en/list/779/",
+            "quote": "carved out of a hillside in the 8th century and looking down on the confluence of three rivers. At 71 m high",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-page-opened",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "武夷山",
+          "zh": "武夷山",
+          "correct": false,
+          "ru": "Уишань — национальный парк, где туристы сплавляются по реке Цзюцюйси",
+          "source": {
+            "title": "走进国家公园 领略大美自然 — 国家林业和草原局",
+            "url": "https://www.forestry.gov.cn/c/www/zrgjgy/583452.jhtml",
+            "quote": "九曲溪漂流是武夷山的特色代表，可供公众体验游览。",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "semanticReview": {
+        "testedRelation": "Знаменитое дерево Инкэсун → природная достопримечательность Хуаншань; не местонахождение Хуаншаня по провинции.",
+        "activeQuestionsCompared": 1030,
+        "searchCoverage": "Полный активный индекс: русские и китайские названия, синонимы, ключи, прямое/обратное отношение; затем чтение найденных смысловых соседей.",
+        "neighborsExamined": [
+          {
+            "id": "nature-q147",
+            "questionRu": "В какой провинции находится гора Хуаншань (黄山)?",
+            "answer": "安徽",
+            "whyDistinct": "Хуаншань → провинция Аньхой; объект тот же, запрашиваемый признак другой."
+          },
+          {
+            "id": "nature-q51",
+            "questionRu": "Какая гора славится «четырьмя чудесами» — причудливыми соснами, необычными камнями, морем облаков и горячими источниками?",
+            "answer": "黄山",
+            "whyDistinct": "Четыре чуда → Хуаншань; вопрос о совокупности природных особенностей, а не об отдельной именованной сосне."
+          },
+          {
+            "id": "cuisine-q96",
+            "questionRu": "Из какой провинции чай 黄山毛峰?",
+            "answer": "安徽",
+            "whyDistinct": "Чай Хуаншань Маофэн → провинция Аньхой; здесь конкретное дерево и место его произрастания."
+          }
+        ],
+        "verdict": "Нового прямого или обратного повтора проверяемого отношения не найдено; совпадение объекта при другом признаке не считалось дублем."
+      },
+      "authorRemarks": [
+        {
+          "kind": "термин исходного вопроса",
+          "original": "В каком заповеднике находится знаменитая «сосна, приветствующая гостей» (инкэсун)?",
+          "comment": "Источник государственного лесного ведомства называет территорию 景区 — живописной охраняемой зоной. Слово «заповедник» в каноническом русском условии сохранено; точный природоохранный статус этим источником не установлен.",
+          "source": {
+            "title": "安徽：岁月中的黄山迎客松 — 国家林业和草原局",
+            "url": "https://www.forestry.gov.cn/c/www/dfdt/596061.jhtml",
+            "quote": "景区自1981年起为迎客松设立专职守护人",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-page-opened",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "warnings": [],
+      "reviewNumber": 7,
+      "originalQuestionZh": null,
+      "previewQuestionRu": "В каком заповеднике находится знаменитая «сосна, приветствующая гостей» (инкэсун)?",
+      "originalAnswer": {
+        "optionId": "o1",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "黄山"
+        },
+        {
+          "id": "o2",
+          "zh": "峨眉山"
+        },
+        {
+          "id": "o3",
+          "zh": "乐山"
+        },
+        {
+          "id": "o4",
+          "zh": "武夷山"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "迎客松 — 百度百科",
+          "url": "https://baike.baidu.com/item/%E8%BF%8E%E5%AE%A2%E6%9D%BE/39266"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "geo-russia"
+    },
+    {
+      "id": "2020-21-mun-mosobl-54",
+      "topic": "Культура, традиции и праздники",
+      "questionRu": "В каком живописном месте происходит действие легенды «Повесть о Белой змее» (白蛇传)?",
+      "originalQuestionRu": "В каком живописном месте происходит действие легенды «Повесть о Белой змее» (白蛇传)?",
+      "questionZh": "《白蛇传》神话故事发生在下列哪个景区内？",
+      "originalQuestionZh": "《白蛇传》神话故事发生在下列哪个景区内？",
+      "answerOptionId": "o2",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "颐和园",
+          "zh": "颐和园",
+          "correct": false,
+          "ru": "Ихэюань — императорский парк Пекина, построенный вокруг Ваньшоушань и Куньминху",
+          "source": {
+            "url": "https://www.summerpalace.net.cn/about.html",
+            "title": "颐和园官网 — 关于",
+            "quote": "颐和园主景区由万寿山、昆明湖组成",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "西湖",
+          "zh": "西湖",
+          "correct": true,
+          "ru": "Сиху — у его Сломанного моста Белая змея встречает Сюй Сяня",
+          "source": {
+            "url": "https://www.mct.gov.cn/ggfw/zyjzzt/yanchu/yanchuwqhg/202411/t20241107_956108.html",
+            "title": "文化和旅游部 — 国家大剧院制作京剧《白蛇传》",
+            "quote": "西湖断桥边偶遇许仙，白许互生爱慕",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "昆明湖",
+          "zh": "昆明湖",
+          "correct": false,
+          "ru": "Куньминху — озеро в пекинском парке Ихэюань; сад вдохновлён озером Сиху",
+          "source": {
+            "url": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/summerpalace/",
+            "title": "北京市政府 — Summer Palace",
+            "quote": "Summer Palace consists of the Longevity Hill and Kunming Lake",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08",
+            "extraQuote": "Inspired by Hangzhou's West Lake"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "泰山",
+          "zh": "泰山",
+          "correct": false,
+          "ru": "Тайшань — священная гора Шаньдуна, где императоры совершали обряды фэншань",
+          "source": {
+            "title": "“双遗产”名山在中国——泰山 — 新华网",
+            "url": "http://www.news.cn/culture/20220607/02afccab91a44ee1b2478afe0a5ab6a6/c.html",
+            "quote": "历代君王封禅祭祀",
+            "checkedAt": "2026-10-18",
+            "authority": "official",
+            "provenance": "reused_accepted_dossier",
+            "dossierRow": "nature/mountains/mtn-taishan",
+            "freshPageVerification": false
+          }
+        }
+      ],
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "白蛇传 — 维基百科",
+            "url": "https://zh.wikipedia.org/zh-cn/%E7%99%BD%E8%9B%87%E4%BC%A0"
+          },
+          {
+            "checkedAt": "2026-10-25",
+            "title": "雷峰塔 — 维基百科",
+            "url": "https://zh.wikipedia.org/zh-cn/%E9%9B%B7%E5%B3%B0%E5%A1%94"
+          }
+        ],
+        "explanation": {
+          "ru": "Легенда о Белой змее (《白蛇传》) разворачивается у озера Сиху (西湖) в Ханчжоу: у озера стоят статуи Сюй Сяня и госпожи Бай, а в конце героиню заточают под пагодой Лэйфэн на берегу Сиху."
+        },
+        "id": "2020-21-mun-mosobl-54",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 54,
+            "officialKey": "o2",
+            "region": "Московская область",
+            "regionCode": "mosobl",
+            "sourceFiles": [
+              "01-Варианты/2020-21/2-Муниципальный/Московская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2020-21"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "颐和园"
+          },
+          {
+            "id": "o2",
+            "zh": "西湖"
+          },
+          {
+            "id": "o3",
+            "zh": "昆明湖"
+          },
+          {
+            "id": "o4",
+            "zh": "泰山"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "В каком живописном месте происходит действие легенды «Повесть о Белой змее» (白蛇传)?",
+        "questionZh": "《白蛇传》神话故事发生在下列哪个景区内？",
+        "topic": "Культура, традиции и праздники",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "semanticReview": {
+        "testedRelation": "Легенда 白蛇传 → живописное место 西湖",
+        "activeRecordsCompared": 1030,
+        "comparisonScope": "Все 1030 активных записей, поиски по сущностям и формулировкам во всех темах; прямой и обратный атрибут проверены отдельно. Общая сущность сама по себе не считалась дублем.",
+        "neighborsExamined": [
+          {
+            "id": "2022-23-zak-3",
+            "questionRu": "«Легенда о белой змее» (白蛇传) – классическая китайская сказка. Где расположен храм Цзиньшаньсы (金山寺), который упоминается в этом произведении?",
+            "answer": "镇江",
+            "answerOptionId": "o3",
+            "whyDistinct": "Спрашивается город храма Цзиньшаньсы из той же легенды (Чжэньцзян), а не озеро, где происходит встреча героев."
+          },
+          {
+            "id": "myths-q20",
+            "questionRu": "Кого монах Фахай, по преданию, разлучил с мужем, Сюй Сянем, и заточил под пагодой Лэйфэн?",
+            "answer": "白娘子",
+            "answerOptionId": "fig-bainiangzi",
+            "whyDistinct": "Спрашивается имя Белой змеи по её заточению под пагодой Лэйфэн; здесь место действия легенды."
+          },
+          {
+            "id": "2015-16-shk-65",
+            "questionRu": "В каком китайском городе находится знаменитое живописное озеро Сиху?",
+            "answer": "杭州",
+            "answerOptionId": "o1",
+            "whyDistinct": "Спрашивается город расположения Сиху; здесь связь самой легенды с озером, а не местоположение озера."
+          }
+        ],
+        "verdict": "distinct_relation"
+      },
+      "authorRemarks": [
+        {
+          "kind": "scope",
+          "problem": "Легенда разворачивается в нескольких местах, в том числе у Цзиньшаньсы в Чжэньцзяне; Сиху — один из основных пейзажных центров действия. Среди четырёх исходных вариантов ключ однозначен. Формулировка сохранена дословно.",
+          "source": {
+            "url": "https://www.ihchina.cn/art/detail/id/12185.html",
+            "title": "中国非物质文化遗产网 — 白蛇传传说",
+            "quote": "镇江、杭州是这一传说的重要流传地。",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "warnings": [],
+      "keySources": [
+        {
+          "url": "https://www.ihchina.cn/art/detail/id/12185.html",
+          "title": "中国非物质文化遗产网 — 白蛇传传说",
+          "quote": "白蛇传与断桥、雷峰塔及西湖等自然和文化景观形成了密不可分的关系",
+          "authority": "official",
+          "verificationMethod": "browsed_full_page",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "reviewNumber": 8,
+      "previewQuestionRu": "В каком живописном месте происходит действие легенды «Повесть о Белой змее» (白蛇传)?",
+      "originalAnswer": {
+        "optionId": "o2",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "颐和园"
+        },
+        {
+          "id": "o2",
+          "zh": "西湖"
+        },
+        {
+          "id": "o3",
+          "zh": "昆明湖"
+        },
+        {
+          "id": "o4",
+          "zh": "泰山"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "白蛇传 — 维基百科",
+          "url": "https://zh.wikipedia.org/zh-cn/%E7%99%BD%E8%9B%87%E4%BC%A0"
+        },
+        {
+          "checkedAt": "2026-10-25",
+          "title": "雷峰塔 — 维基百科",
+          "url": "https://zh.wikipedia.org/zh-cn/%E9%9B%B7%E5%B3%B0%E5%A1%94"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "culture-literature"
+    },
+    {
+      "id": "2019-20-mun-mosobl-52",
+      "topic": "История и государство",
+      "questionRu": "Кто захватил Аомэнь (Макао) в 50-е годы XVI века?",
+      "questionZh": "澳门在 16 世纪 50 年代被_______占领。",
+      "originalQuestionRu": "Кто захватил Аомэнь (Макао) в 50-е годы XVI века?",
+      "answerOptionId": "o3",
+      "originalSourceQuestionRu": null,
+      "sourceProvenance": {
+        "conservedDisplay": "/tmp/lingvo-batch5-pending.json",
+        "sourceTranscription": "data/regions/variants.json",
+        "variantId": "2019-20-mun-mosobl",
+        "taskNumber": 52,
+        "sourceFiles": [
+          "01-Варианты/2019-20/2-Муниципальный/Московская область/9-11_Задания.pdf"
+        ],
+        "sourceQuestionZh": "澳门在 16 世纪 50 年代被_______占领。",
+        "sourceOptions": [
+          "日本",
+          "菲律宾",
+          "葡萄牙",
+          "英国"
+        ],
+        "sourceKeyIndex": 2,
+        "note": "Основной показ дословно из текущего pending; исходная расшифровка приведена лишь для истории, без повторного аудита PDF."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "日本",
+          "zh": "日本",
+          "correct": false,
+          "ru": "Япония — торговый партнёр Макао на маршрутах между Китаем и Европой.",
+          "source": {
+            "title": "Brief History — Macao Government Tourism Office",
+            "url": "https://www.macaotourism.gov.mo/en/article/about-macao/brief-history",
+            "quote": "China, Japan, India and Europe",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "quoteNote": "В контексте перечислены направления торговли Макао; подпись не утверждает японское владение."
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "菲律宾",
+          "zh": "菲律宾",
+          "correct": false,
+          "ru": "Филиппины — испанская экспедиция прибыла на остров Себу в 1565 году.",
+          "source": {
+            "title": "Negotiating Empire, Part I — Library of Congress",
+            "url": "https://blogs.loc.gov/international-collections/2021/10/negotiating-empire-part-i-from-magellan-to-the-founding-of-manila-16th-18th-centuries/",
+            "quote": "The Spanish expedition that eventually succeeded in setting up Spanish rule in Manila arrived in 1565 on Cebu.",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "葡萄牙",
+          "zh": "葡萄牙",
+          "correct": true,
+          "ru": "Португалия — её поселение превратило Макао в узел торговли Китая с Европой.",
+          "source": {
+            "title": "Brief History — Macao Government Tourism Office",
+            "url": "https://www.macaotourism.gov.mo/en/article/about-macao/brief-history",
+            "quote": "major entrepot for trade between China, Japan, India and Europe",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "英国",
+          "zh": "英国",
+          "correct": false,
+          "ru": "Британия — получила остров Гонконг по Нанкинскому договору 1842 года.",
+          "source": {
+            "title": "香港问题的由来 — 中共广东省委统一战线工作部",
+            "url": "https://www.gdtzb.gov.cn/llyj/tzll/content/mpost_82001.html",
+            "quote": "同意把香港岛永久割让给英国",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "reuseOf": "data/dossiers/modern-history.json: treaties/tr-nanjing; подпись адаптирована из принятой строки, источник повторно открыт 2026-11-08."
+          }
+        }
+      ],
+      "semanticReview": {
+        "corpusSize": 1030,
+        "corpus": "/tmp/lingvo-batch5-active.json + /tmp/lingvo-batch5-active-index.txt",
+        "testedRelation": "Аомэнь в 1550-е → европейская страна, чьи поселенцы там закрепились; официальный ключ Португалия. Глагол «захватил» требует отдельного решения автора.",
+        "neighborsExamined": [
+          {
+            "id": "2021-22-shk-qf1333c",
+            "questionRu": "Представители какой европейской страны первыми прибыли в Китай по морю в эпоху Великих географических открытий?",
+            "answer": "葡萄牙",
+            "whyDistinct": "Там первые европейцы, прибывшие в Китай морем в эпоху Великих географических открытий; здесь конкретный порт и конкретное десятилетие закрепления. Общий ответ Португалия сам по себе не делает отношения тождественными."
+          },
+          {
+            "id": "2016-17-shk-3",
+            "questionRu": "… — специальный административный район Китая, возвращённый Китаю 20 декабря 1999 года; это свободный порт.",
+            "answer": "澳门",
+            "whyDistinct": "Там Аомэнь определяется по возвращению 20 декабря 1999 года и статусу свободного порта. Здесь страна и событие XVI века; это не обратный вопрос о возврате."
+          },
+          {
+            "id": "provinces-q88",
+            "questionRu": "Какой статус у Аомэня (澳门) в административном делении КНР?",
+            "answer": "特别行政区",
+            "whyDistinct": "Там современный административный статус Аомэня — особый административный район, а не история португальского присутствия."
+          }
+        ],
+        "verdict": "Новой прямой или обратной карточки с этой связью среди 1030 действующих не найдено; ближайшие связи отдельно сопоставлены. Восстановлением недостающего элемента уже спрашиваемого закрытого набора не является."
+      },
+      "authorRemarks": [
+        {
+          "issue": "Официальный ключ однозначно указывает на Португалию, но посылка «захватил в 50-е годы XVI века» неточна. Официальная история Управления туризма Макао описывает прибытие в начале 1550-х и учреждение поселения с разрешения гуандунских чиновников. Это не подтверждает военный захват в это десятилетие.",
+          "authorDecision": "Оставить только по отдельному решению автора после рассмотрения посылки либо отложить. Подпись не повторяет спорный глагол; вопрос и китайский оригинал не переписаны.",
+          "sources": [
+            {
+              "title": "Brief History — Macao Government Tourism Office",
+              "url": "https://www.macaotourism.gov.mo/en/article/about-macao/brief-history",
+              "quote": "with the permission of Guangdong's mandarins",
+              "authority": "official",
+              "checkedAt": "2026-11-08"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "Существенная оговорка о посылке: «захватил» не подтверждён официальным историческим описанием. Требуется решение автора; это не чистая рекомендация к публикации."
+      ],
+      "reviewNumber": 9,
+      "originalQuestionZh": "澳门在 16 世纪 50 年代被_______占领。",
+      "previewQuestionRu": "Кто захватил Аомэнь (Макао) в 50-е годы XVI века?",
+      "originalAnswer": {
+        "optionId": "o3",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "日本"
+        },
+        {
+          "id": "o2",
+          "zh": "菲律宾"
+        },
+        {
+          "id": "o3",
+          "zh": "葡萄牙"
+        },
+        {
+          "id": "o4",
+          "zh": "英国"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "澳门历史 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E6%BE%B3%E9%96%80%E6%AD%B7%E5%8F%B2"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "history-economy"
+    },
+    {
+      "id": "2024-25-mun-klg-8",
+      "topic": "Россия и межкультурный блок",
+      "questionRu": "Какой город в России является побратимом Шанхая?",
+      "originalQuestionRu": "Какой город в России является побратимом Шанхая?",
+      "questionZh": null,
+      "answerOptionId": "o2",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "莫斯科",
+          "zh": "莫斯科",
+          "correct": false,
+          "ru": "Москва — дружественные партнёрские связи с Пекином установлены в 1995 году",
+          "source": {
+            "title": "Пекин и Москва: 25-летие партнёрства — 外事办公室北京市人民政府",
+            "url": "https://wb.beijing.gov.cn/en/topics/Moscow25th/202012/t20201209_2160798.html",
+            "quote": "16 мая 1995 года Пекин и Москва установили партнерские отношения.",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "圣彼得堡",
+          "zh": "圣彼得堡",
+          "correct": true,
+          "ru": "Санкт-Петербург — побратимские связи с Шанхаем установлены в 1988 году",
+          "source": {
+            "title": "Сотрудничество Петербурга с Шанхаем — Комитет по внешним связям Санкт-Петербурга",
+            "url": "https://kvs.gov.spb.ru/news/26956/",
+            "quote": "Шанхай – город-побратим Санкт‑Петербурга (с 1988 года).",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-page-opened",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "索契",
+          "zh": "索契",
+          "correct": false,
+          "ru": "Сочи — его китайский побратим Вэйхай; города связаны с 1996 года",
+          "source": {
+            "title": "威海与索契召开视频友好交流会 — 威海市外事办公室",
+            "url": "https://wb.weihai.gov.cn/art/2022/1/26/art_13510_2789871.html",
+            "quote": "威海市与索契市自1996年结好以来",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "布拉戈维申斯克",
+          "zh": "布拉戈维申斯克",
+          "correct": false,
+          "ru": "Благовещенск — побратим Хэйхэ; соглашение заключено в 2009 году",
+          "source": {
+            "title": "Города-побратимы — Администрация Благовещенска",
+            "url": "https://admblag.ru/o-gorode/goroda-pobratimy/",
+            "quote": "Соглашение об установлении побратимских связей между Благовещенском и Хэйхэ было заключено 27 сентября 2009 года.",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-page-opened",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "semanticReview": {
+        "testedRelation": "Шанхай → российский город-побратим; проверены также обратные связи Петербурга и других российских городов.",
+        "activeQuestionsCompared": 1030,
+        "searchCoverage": "Полный активный индекс: русские и китайские названия, синонимы, ключи, прямое/обратное отношение; затем чтение найденных смысловых соседей.",
+        "neighborsExamined": [
+          {
+            "id": "provinces-q106",
+            "questionRu": "Какое прозвище носит Санкт-Петербург?",
+            "answer": "北方首都",
+            "whyDistinct": "Петербург → прозвище Северная столица; другой признак города."
+          },
+          {
+            "id": "dynasties-q118",
+            "questionRu": "Какое событие в истории России произошло в 1703 году в устье Невы?",
+            "answer": "建立圣彼得堡",
+            "whyDistinct": "1703 год → основание Петербурга; другой исторический факт."
+          },
+          {
+            "id": "addition-b2-20",
+            "questionRu": "Какой город — столица республики в европейской части России на берегу Каспийского моря, коренной народ которой исповедует тибетский буддизм, — ещё в 2004 г. стал побратимом Лхасы?",
+            "answer": "埃利斯塔",
+            "whyDistinct": "Элиста → побратимство с Лхасой; другая пара городов, не общий замкнутый набор."
+          }
+        ],
+        "verdict": "Нового прямого или обратного повтора проверяемого отношения не найдено; совпадение объекта при другом признаке не считалось дублем."
+      },
+      "authorRemarks": [],
+      "warnings": [],
+      "reviewNumber": 10,
+      "originalQuestionZh": null,
+      "previewQuestionRu": "Какой город в России является побратимом Шанхая?",
+      "originalAnswer": {
+        "optionId": "o2",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "莫斯科"
+        },
+        {
+          "id": "o2",
+          "zh": "圣彼得堡"
+        },
+        {
+          "id": "o3",
+          "zh": "索契"
+        },
+        {
+          "id": "o4",
+          "zh": "布拉戈维申斯克"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "Петербург откроет деловые центры в Пекине и Шанхае для поиска бизнес-партнёров — Деловой Петербург",
+          "url": "https://www.dp.ru/a/2025/09/13/peterburg-otkroet-delovie"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "geo-russia"
+    },
+    {
+      "id": "2025-26-shk-mosobl-16",
+      "topic": "Культура, традиции и праздники",
+      "questionRu": "Какой цвет ассоциируется с центром в китайской картине мира?",
+      "originalQuestionRu": "Какой цвет ассоциируется с центром в китайской картине мира?",
+      "questionZh": null,
+      "originalQuestionZh": null,
+      "answerOptionId": "o1",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "黄色",
+          "zh": "黄色",
+          "correct": true,
+          "ru": "Жёлтый — в системе у-син соответствует земле, одному из пяти первоэлементов",
+          "source": {
+            "url": "https://shufa.pku.edu.cn/btwf/65982sfw1377449.htm",
+            "title": "北京大学书法艺术研究所 — 中国古人的色彩观",
+            "quote": "中  黄  土  腾蛇",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08",
+            "quoteFormatting": "Начало строки таблицы соответствий; двойные пробелы переданы по веб-представлению."
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "红色",
+          "zh": "红色",
+          "correct": false,
+          "ru": "Красный — в этой системе связан с югом и огнём",
+          "source": {
+            "url": "https://shufa.pku.edu.cn/btwf/65982sfw1377449.htm",
+            "title": "北京大学书法艺术研究所 — 中国古人的色彩观",
+            "quote": "南  赤  火  朱雀",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08",
+            "quoteFormatting": "Начало строки таблицы соответствий."
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "白色",
+          "zh": "白色",
+          "correct": false,
+          "ru": "Белый — связан с западом, металлом и Белым тигром",
+          "source": {
+            "url": "https://shufa.pku.edu.cn/btwf/65982sfw1377449.htm",
+            "title": "北京大学书法艺术研究所 — 中国古人的色彩观",
+            "quote": "西  白  金  白虎",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08",
+            "quoteFormatting": "Начало строки таблицы соответствий."
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "紫色",
+          "zh": "紫色",
+          "correct": false,
+          "ru": "Фиолетовый — промежуточный цвет, который получали смешением 青 и 赤",
+          "source": {
+            "url": "https://shufa.pku.edu.cn/btwf/65982sfw1377449.htm",
+            "title": "北京大学书法艺术研究所 — 中国古人的色彩观",
+            "quote": "紫为间色：木生火对应的是“青和赤”，青赤得紫",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "originalRecord": {
+        "answer": {
+          "optionId": "o1",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "五方色 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E4%BA%94%E6%96%B9%E8%89%B2"
+          }
+        ],
+        "explanation": {
+          "ru": "В учении о пяти первоэлементах каждой стороне света соответствует свой цвет; центру соответствует жёлтый (黄色)."
+        },
+        "id": "2025-26-shk-mosobl-16",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 16,
+            "officialKey": "o1",
+            "region": "Московская область",
+            "regionCode": "mosobl",
+            "sourceFiles": [
+              "01-Варианты/2025-26/1-Школьный/Московская область/9-11_Задания и ответы.pdf"
+            ],
+            "stage": "школьный",
+            "stageCode": "shk",
+            "year": "2025-26"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "黄色"
+          },
+          {
+            "id": "o2",
+            "zh": "红色"
+          },
+          {
+            "id": "o3",
+            "zh": "白色"
+          },
+          {
+            "id": "o4",
+            "zh": "紫色"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Какой цвет ассоциируется с центром в китайской картине мира?",
+        "questionZh": null,
+        "topic": "Культура, традиции и праздники",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "semanticReview": {
+        "testedRelation": "Центр в китайской системе пяти направлений → 黄色",
+        "activeRecordsCompared": 1030,
+        "comparisonScope": "Все 1030 активных записей, поиски по сущностям и формулировкам во всех темах; прямой и обратный атрибут проверены отдельно. Общая сущность сама по себе не считалась дублем.",
+        "neighborsExamined": [
+          {
+            "id": "2016-17-shk-10",
+            "questionRu": "Особый оттенок какого цвета использовали для императорского халата при династии Тан, запрещая подданным носить одежду такого оттенка?",
+            "answer": "黄色",
+            "answerOptionId": "o1",
+            "whyDistinct": "Тот же ответ 黄色, но другой атрибут: запрещённый подданным оттенок императорского халата при Тан, а не космологическое направление."
+          },
+          {
+            "id": "2015-16-mun-5",
+            "questionRu": "Какой цвет в традиционной культуре Китая олицетворяет счастье и радость?",
+            "answer": "红色",
+            "answerOptionId": "o4",
+            "whyDistinct": "Спрашивается цвет счастья и радости, 红色; здесь пространственная символика жёлтого."
+          },
+          {
+            "id": "2025-26-shk-mosobl-6",
+            "questionRu": "Какой цвет соответствует северу в традиционной системе у-син (五行)?",
+            "answer": "黑色",
+            "whyDistinct": "Та же традиционная система соответствий, но другая независимая пара: север→чёрный против центра→жёлтого. Это разные ячейки знания, не обращение одного вопроса."
+          }
+        ],
+        "verdict": "distinct_relation"
+      },
+      "authorRemarks": [],
+      "warnings": [],
+      "keySources": [
+        {
+          "url": "https://www.dpm.org.cn/lemmas/242381.html",
+          "title": "故宫博物院 — 正色",
+          "quote": "土居中，故以黄为中央之正色。",
+          "authority": "official",
+          "verificationMethod": "browsed_search_excerpt",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "reviewNumber": 11,
+      "previewQuestionRu": "Какой цвет ассоциируется с центром в китайской картине мира?",
+      "originalAnswer": {
+        "optionId": "o1",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "黄色"
+        },
+        {
+          "id": "o2",
+          "zh": "红色"
+        },
+        {
+          "id": "o3",
+          "zh": "白色"
+        },
+        {
+          "id": "o4",
+          "zh": "紫色"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "五方色 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E4%BA%94%E6%96%B9%E8%89%B2"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "culture-literature"
+    },
+    {
+      "id": "2021-22-mun-amur-7",
+      "topic": "История и государство",
+      "questionRu": "Как называется официальная резиденция председателя КНР?",
+      "questionZh": null,
+      "originalQuestionRu": "Как называется официальная резиденция председателя КНР?",
+      "answerOptionId": "o1",
+      "originalSourceQuestionRu": "Как называется официальная резиденция председателя КНР?",
+      "sourceProvenance": {
+        "conservedDisplay": "/tmp/lingvo-batch5-pending.json",
+        "sourceTranscription": "data/regions/variants.json",
+        "variantId": "2021-22-mun-amur",
+        "taskNumber": 7,
+        "sourceFiles": [
+          "01-Варианты/2021-22/2-Муниципальный/Амурская область/9-11_Задания.pdf"
+        ],
+        "sourceQuestionZh": null,
+        "sourceOptions": [
+          "中南海",
+          "仁寿殿",
+          "避暑山庄",
+          "紫禁城"
+        ],
+        "sourceKeyIndex": 0,
+        "note": "Основной показ дословно из текущего pending; исходная расшифровка приведена лишь для истории, без повторного аудита PDF."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "中南海",
+          "zh": "中南海",
+          "correct": true,
+          "ru": "Чжуннаньхай — Мао Цзэдун прожил здесь 27 лет, в Цзюйсян-шуу.",
+          "source": {
+            "title": "毛泽东进北平后搬进中南海菊香书屋经过 — 中共中央党史和文献研究院",
+            "url": "https://www.dswxyjy.org.cn/n/2015/0513/c244523-26992918.html",
+            "quote": "毛泽东被安排在丰泽园的菊香书屋。从此，毛泽东在这里长住27年。",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "仁寿殿",
+          "zh": "仁寿殿",
+          "correct": false,
+          "ru": "Жэньшоудянь — зал Ихэюаня, где Цыси занималась государственными делами.",
+          "source": {
+            "title": "慈禧太后视朝听政的场所：仁寿殿 — 北京市公园管理中心",
+            "url": "https://gygl.beijing.gov.cn/whgy/whgy_wsgc/201912/t20191206_885545.html",
+            "quote": "仁寿殿成为慈禧太后视朝听政的场所",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "避暑山庄",
+          "zh": "避暑山庄",
+          "correct": false,
+          "ru": "Бишу-шаньчжуан — летняя резиденция Цин в Чэндэ, строилась в 1703–1792 годах.",
+          "source": {
+            "title": "Mountain Resort and its Outlying Temples, Chengde — UNESCO",
+            "url": "https://whc.unesco.org/en/list/703/",
+            "quote": "The Mountain Resort (the Qing dynasty's summer palace), in Hebei Province, was built between 1703 and 1792.",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "quoteNote": "Видимое описание страницы UNESCO; подпись различает летнюю резиденцию в Чэндэ и современный комплекс в Пекине."
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "紫禁城",
+          "zh": "紫禁城",
+          "correct": false,
+          "ru": "Запретный город — пекинский дворцовый комплекс императоров Мин и Цин.",
+          "source": {
+            "title": "Imperial Palaces of the Ming and Qing Dynasties in Beijing and Shenyang — UNESCO",
+            "url": "https://whc.unesco.org/en/list/439/",
+            "quote": "the Forbidden City in Beijing",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "additionalQuote": "during the Ming and Qing dynasties."
+          }
+        }
+      ],
+      "semanticReview": {
+        "corpusSize": 1030,
+        "corpus": "/tmp/lingvo-batch5-active.json + /tmp/lingvo-batch5-active-index.txt",
+        "testedRelation": "Председатель КНР → комплекс Чжуннаньхай как место работы и проживания руководителей; исходный вопрос называет его официальной резиденцией.",
+        "neighborsExamined": [
+          {
+            "id": "2016-17-mun-8",
+            "questionRu": "Как сейчас называется императорский дворец династий Мин и Цин в Пекине?",
+            "answer": "故宫",
+            "whyDistinct": "Там современное музейное название императорского дворца Мин и Цин — Гугун. Здесь современный правительственный комплекс; слово «резиденция» не уравнивает императорский и современный объекты."
+          },
+          {
+            "id": "landmarks-q91",
+            "questionRu": "При какой династии построена горная резиденция для летнего отдыха в Чэндэ (承德避暑山庄)?",
+            "answer": "清",
+            "whyDistinct": "Там династия, построившая летнюю резиденцию в Чэндэ; здесь нынешнее место работы/проживания руководителей КНР в Пекине. Бишу-шаньчжуан лишь неверный вариант."
+          },
+          {
+            "id": "state-q13",
+            "questionRu": "Как называется должность главы Государственного совета КНР?",
+            "answer": "总理",
+            "whyDistinct": "Там название должности главы Госсовета — премьер. Здесь объект, связанный с местом работы руководства; должность и местонахождение — разные отношения."
+          }
+        ],
+        "verdict": "Новой прямой или обратной карточки с этой связью среди 1030 действующих не найдено; ближайшие связи отдельно сопоставлены. Восстановлением недостающего элемента уже спрашиваемого закрытого набора не является."
+      },
+      "authorRemarks": [
+        {
+          "issue": "Первичный исторический источник подтверждает офис ЦК КПК и проживание Мао Цзэдуна. Он не устанавливает юридический/протокольный статус «официальной резиденции председателя КНР» для сегодняшнего главы государства. Поэтому точность всего условия не считается доказанной только совпадением официального ключа.",
+          "authorDecision": "Автору решить, сохранять ли такую формулировку либо отложить вопрос. Ни основной вопрос, ни варианты и ключ здесь не изменены.",
+          "sources": [
+            {
+              "title": "毛泽东进北平后搬进中南海菊香书屋经过 — 中共中央党史和文献研究院",
+              "url": "https://www.dswxyjy.org.cn/n/2015/0513/c244523-26992918.html",
+              "quote": "新中国成立后，中南海一直是党中央的办公地，毛泽东在北京的时间大多住在这里。",
+              "authority": "official",
+              "checkedAt": "2026-11-08"
+            }
+          ]
+        }
+      ],
+      "warnings": [
+        "«Официальная резиденция» — неподтверждённая точная квалификация; нужна авторская оценка."
+      ],
+      "reviewNumber": 12,
+      "originalQuestionZh": null,
+      "previewQuestionRu": "Как называется официальная резиденция председателя КНР?",
+      "originalAnswer": {
+        "optionId": "o1",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "中南海"
+        },
+        {
+          "id": "o2",
+          "zh": "仁寿殿"
+        },
+        {
+          "id": "o3",
+          "zh": "避暑山庄"
+        },
+        {
+          "id": "o4",
+          "zh": "紫禁城"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "中南海 — 维基百科",
+          "url": "https://zh.wikipedia.org/zh-cn/%E4%B8%AD%E5%8D%97%E6%B5%B7"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "history-economy"
+    },
+    {
+      "id": "2024-25-mun-mosobl-9",
+      "topic": "Россия и межкультурный блок",
+      "questionRu": "Какой русский писатель был увлечен философией Китая и пытался перевести на русский язык «Дао дэ цзин» и «Лунь юй»?",
+      "originalQuestionRu": "Какой русский писатель был увлечен философией Китая и пытался перевести на русский язык «Дао дэ цзин» и «Лунь юй»?",
+      "questionZh": null,
+      "answerOptionId": "o3",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "费奥多尔·陀思妥耶夫斯基",
+          "zh": "费奥多尔·陀思妥耶夫斯基",
+          "correct": false,
+          "ru": "Достоевский — «Идиот» и «Братья Карамазовы» входят в его «великое пятикнижие»",
+          "source": {
+            "title": "Достоевский Фёдор Михайлович — Культура.РФ",
+            "url": "https://www.culture.ru/persons/8159/fedor-dostoevskii",
+            "quote": "«Преступление и наказание», «Идиот», «Бесы», «Подросток» и «Братья Карамазовы»",
+            "checkedAt": "2026-10-17",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-dossier-quote-not-freshly-fetched",
+            "reusedFrom": "data/dossiers/literature.json / lit-a-ru-dostoevsky / sources[3]"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "米哈伊尔·列尔蒙托夫",
+          "zh": "米哈伊尔·列尔蒙托夫",
+          "correct": false,
+          "ru": "Михаил Лермонтов — поэт, автор «Паруса» и «Смерти поэта»",
+          "source": {
+            "title": "俄罗斯及苏联文学概况 — 俄罗斯之窗, 俄罗斯国情网（中国社会科学院）",
+            "url": "http://euroasia.cssn.cn/elsgqw/elswy/egwx/egwx_egwx/201004/t20100427_1863666.shtml",
+            "quote": "他的著名诗歌有《诗人之死》、《帆》等。",
+            "checkedAt": "2026-10-17",
+            "authority": "academic",
+            "verificationMethod": "reused-accepted-dossier-quote-not-freshly-fetched",
+            "reusedFrom": "data/dossiers/literature.json / lit-a-ru-lermontov / sources[1]"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "列夫·托尔斯泰",
+          "zh": "列夫·托尔斯泰",
+          "correct": true,
+          "ru": "Лев Толстой — в «Китайской мудрости» (1884) излагал учения древних философов",
+          "source": {
+            "title": "Китайская мудрость. 1884 — официальный портал Льва Толстого",
+            "url": "https://tolstoy.ru/creativity/journalismguide/100.php",
+            "quote": "«Китайская мудрость» объединяет три коротких статьи",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-page-opened",
+            "checkedAt": "2026-11-08",
+            "additionalKeyEvidence": {
+              "title": "Китай и Лев Толстой — Институт Дальнего Востока РАН, академическое издание",
+              "url": "https://lk.iccaras.ru/assets/components/dsgfileupload/files/book-2018-about_tolstoi.pdf",
+              "quote": "«Суждения и беседы» («Лунь юй») в переводах и пересказах Л.Н. Толстого",
+              "authority": "academic",
+              "verificationMethod": "fresh-primary-indexed-excerpt",
+              "checkedAt": "2026-11-08"
+            }
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "亚历山大·普希金",
+          "zh": "亚历山大·普希金",
+          "correct": false,
+          "ru": "Александр Пушкин — автор романа в стихах «Евгений Онегин»",
+          "source": {
+            "title": "Родился великий русский поэт и писатель Александр Сергеевич Пушкин — Президентская библиотека",
+            "url": "https://www.prlib.ru/history/619292",
+            "quote": "в 1823 г. он начал работу над романом в стихах «Евгений Онегин».",
+            "checkedAt": "2026-10-17",
+            "authority": "official",
+            "verificationMethod": "reused-accepted-dossier-quote-not-freshly-fetched",
+            "reusedFrom": "data/dossiers/literature.json / lit-a-ru-pushkin / sources[3]"
+          }
+        }
+      ],
+      "semanticReview": {
+        "testedRelation": "Русский писатель → работа с древнекитайской философией и переводами Дао дэ цзин и Лунь юй.",
+        "activeQuestionsCompared": 1030,
+        "searchCoverage": "Полный активный индекс: русские и китайские названия, синонимы, ключи, прямое/обратное отношение; затем чтение найденных смысловых соседей.",
+        "neighborsExamined": [
+          {
+            "id": "2025-26-mun-chel-2",
+            "questionRu": "Какой знаменитый писатель является автором романа «Война и мир»?",
+            "answer": "托尔斯泰",
+            "whyDistinct": "Война и мир → Толстой; литературное авторство, не переводы китайских философов."
+          },
+          {
+            "id": "literature-q95",
+            "questionRu": "Кто написал роман «Анна Каренина»?",
+            "answer": "托尔斯泰",
+            "whyDistinct": "Анна Каренина → Толстой; другое произведение и другое отношение."
+          },
+          {
+            "id": "people-q09",
+            "questionRu": "В какой книге ученики записали слова и дела Конфуция (孔子)?",
+            "answer": "论语",
+            "whyDistinct": "Лунь юй → книга учеников Конфуция; исходный автор и жанр, не русский переводчик."
+          },
+          {
+            "id": "people-q10",
+            "questionRu": "Какую книгу приписывают Лао-цзы (老子)?",
+            "answer": "道德经",
+            "whyDistinct": "Лао-цзы → Дао дэ цзин; древнекитайский автор, не русский переводчик."
+          }
+        ],
+        "verdict": "Нового прямого или обратного повтора проверяемого отношения не найдено; совпадение объекта при другом признаке не считалось дублем."
+      },
+      "authorRemarks": [],
+      "warnings": [
+        "Подписи к неверным писателям повторяют базовые авторские связи из литературного досье; при будущем принятии проверить межвопросные подсказки и группы фактов."
+      ],
+      "reviewNumber": 13,
+      "originalQuestionZh": null,
+      "previewQuestionRu": "Какой русский писатель был увлечен философией Китая и пытался перевести на русский язык «Дао дэ цзин» и «Лунь юй»?",
+      "originalAnswer": {
+        "optionId": "o3",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "费奥多尔·陀思妥耶夫斯基"
+        },
+        {
+          "id": "o2",
+          "zh": "米哈伊尔·列尔蒙托夫"
+        },
+        {
+          "id": "o3",
+          "zh": "列夫·托尔斯泰"
+        },
+        {
+          "id": "o4",
+          "zh": "亚历山大·普希金"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "Тао-Те-Кинг (Лао-цзы; Конисси) — Викитека",
+          "url": "https://ru.wikisource.org/wiki/%D0%A2%D0%B0%D0%BE-%D0%A2%D0%B5-%D0%9A%D0%B8%D0%BD%D0%B3_(%D0%9B%D0%B0%D0%BE-%D1%86%D0%B7%D1%8B;_%D0%9A%D0%BE%D0%BD%D0%B8%D1%81%D1%81%D0%B8)"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "geo-russia"
+    },
+    {
+      "id": "2025-26-mun-tat-51",
+      "topic": "Культура, традиции и праздники",
+      "questionRu": "Согласно легенде, кем стали люди, которых Нюйва вручную вылепила из желтой земли?",
+      "originalQuestionRu": "Согласно легенде, кем стали люди, которых Нюйва вручную вылепила из желтой земли?",
+      "questionZh": null,
+      "originalQuestionZh": null,
+      "answerOptionId": "o2",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "贫穷的平民",
+          "zh": "贫穷的平民",
+          "correct": false,
+          "ru": "Бедные простолюдины — в этой версии возникли из грязи, поднятой верёвкой",
+          "source": {
+            "url": "https://www.gswbj.gov.cn/a/2024/06/20/20844.html",
+            "title": "甘肃文旅 — 伏羲女娲：肇启文明的人文始祖（引《风俗通》）",
+            "quote": "乃引絙于泥中，举以为人。故富贵者，黄土人也，贫贱者，絙人也。",
+            "authority": "official_primary_text_quotation",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "富人和贵族",
+          "zh": "富人和贵族",
+          "correct": true,
+          "ru": "Богатые и знатные — в «Фэнсу тун» им противопоставлены люди, созданные верёвкой",
+          "source": {
+            "url": "https://www.gswbj.gov.cn/a/2024/06/20/20844.html",
+            "title": "甘肃文旅 — 伏羲女娲：肇启文明的人文始祖（引《风俗通》）",
+            "quote": "故富贵者，黄土人也，贫贱者，絙人也。",
+            "authority": "official_primary_text_quotation",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "学者",
+          "zh": "学者",
+          "correct": false,
+          "ru": "Учёные — Академия наук КНР основана в 1949 году.",
+          "source": {
+            "title": "中国科学院简介 — 中国科学院",
+            "url": "https://www.cas.cn/zz/yk/",
+            "quote": "1949年，伴随着新中国的诞生，中国科学院成立。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "primary-web-search-exact-indexed-excerpt"
+          },
+          "earlierDraftCaption": "Учёные — люди, добившиеся заметных результатов в определённой области знаний",
+          "earlierDraftSource": {
+            "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=28508&la=0&powerMode=0",
+            "title": "教育部《國語辭典簡編本》— 學者",
+            "quote": "在學術上有一定成就的人。",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "教师",
+          "zh": "教师",
+          "correct": false,
+          "ru": "Учителя — в материковом Китае День учителя отмечают 10 сентября.",
+          "source": {
+            "title": "我国教师节简介 — 中华人民共和国教育部",
+            "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3580/moe_2390/moe_2391/tnull_38734.html",
+            "quote": "1985年1月21日，第六届全国人大常委会第九次会议作出决议，将每年的9月10日定为教师节。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "primary-web-search-exact-indexed-excerpt"
+          },
+          "earlierDraftCaption": "Учителя — те, кто обучает учеников и передаёт знания",
+          "earlierDraftSource": {
+            "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=22548&la=0&powerMode=0",
+            "title": "教育部《國語辭典簡編本》— 教師",
+            "quote": "教授學生，傳授知識的人。",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "女娲 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E5%A5%B3%E5%A8%B2"
+          }
+        ],
+        "explanation": {
+          "ru": "По преданию из «Фэнсу тунъи» (《风俗通义》), люди, которых Нюйва (女娲) вылепила руками из жёлтой земли, стали знатными и богатыми, а те, что получились из брызг глины с верёвки, — простыми людьми."
+        },
+        "id": "2025-26-mun-tat-51",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 51,
+            "officialKey": "o2",
+            "region": "Татарстан",
+            "regionCode": "tat",
+            "sourceFiles": [
+              "01-Варианты/2025-26/2-Муниципальный/Татарстан/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2025-26"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "贫穷的平民"
+          },
+          {
+            "id": "o2",
+            "zh": "富人和贵族"
+          },
+          {
+            "id": "o3",
+            "zh": "学者"
+          },
+          {
+            "id": "o4",
+            "zh": "教师"
+          }
+        ],
+        "parseWarnings": [
+          "расшифровано по картинке страницы"
+        ],
+        "questionRu": "Согласно легенде, кем стали люди, которых Нюйва вручную вылепила из желтой земли?",
+        "questionZh": null,
+        "topic": "Культура, традиции и праздники",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "semanticReview": {
+        "testedRelation": "Люди, вручную вылепленные Нюйвой из жёлтой земли → 富人和贵族",
+        "activeRecordsCompared": 1030,
+        "comparisonScope": "Все 1030 активных записей, поиски по сущностям и формулировкам во всех темах; прямой и обратный атрибут проверены отдельно. Общая сущность сама по себе не считалась дублем.",
+        "neighborsExamined": [
+          {
+            "id": "myths-q28",
+            "questionRu": "Какая богиня, по преданию, вылепила первых людей из жёлтой глины, а когда небо раскололось, залатала его камнями пяти цветов?",
+            "answer": "女娲",
+            "answerOptionId": "fig-nuwa",
+            "whyDistinct": "Спрашивается сама богиня по созданию людей и починке неба. Здесь социальная категория людей в особой версии мифа."
+          },
+          {
+            "id": "2017-18-reg-3",
+            "questionRu": "Какой древнекитайский миф отражает представления людей о происхождении человечества?",
+            "answer": "女娲造人",
+            "answerOptionId": "o3",
+            "whyDistinct": "Спрашивается название мифа о происхождении человечества. Различия способов создания богатых и бедных не проверяются."
+          }
+        ],
+        "verdict": "distinct_relation"
+      },
+      "authorRemarks": [
+        {
+          "kind": "version_specific",
+          "problem": "Разделение на богатых и бедных относится к процитированной версии «Фэнсу тун». Это содержание мифа, а не историческое объяснение социального происхождения. Исходная формулировка не изменена.",
+          "source": {
+            "url": "https://www.gswbj.gov.cn/a/2024/06/20/20844.html",
+            "title": "甘肃文旅 — 伏羲女娲：肇启文明的人文始祖（引《风俗通》）",
+            "quote": "故富贵者，黄土人也，贫贱者，絙人也。",
+            "authority": "official_primary_text_quotation",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "warnings": [],
+      "keySources": [
+        {
+          "url": "https://www.gswbj.gov.cn/a/2024/06/20/20844.html",
+          "title": "甘肃文旅 — 伏羲女娲：肇启文明的人文始祖（引《风俗通》）",
+          "quote": "故富贵者，黄土人也，贫贱者，絙人也。",
+          "authority": "official_primary_text_quotation",
+          "verificationMethod": "browsed_full_page",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "reviewNumber": 14,
+      "previewQuestionRu": "Согласно легенде, кем стали люди, которых Нюйва вручную вылепила из желтой земли?",
+      "originalAnswer": {
+        "optionId": "o2",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "贫穷的平民"
+        },
+        {
+          "id": "o2",
+          "zh": "富人和贵族"
+        },
+        {
+          "id": "o3",
+          "zh": "学者"
+        },
+        {
+          "id": "o4",
+          "zh": "教师"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "女娲 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E5%A5%B3%E5%A8%B2"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "culture-literature",
+      "captionReviewNote": "У случайных вариантов 学者/教师 вместо чистых определений добавлены проверенные факты той же профессиональной области. Связь с мифом не выдумывается."
+    },
+    {
+      "id": "2022-23-mun-tat-6",
+      "topic": "История и государство",
+      "questionRu": "В каком году был юридически утверждён государственный гимн Китайской Народной Республики?",
+      "questionZh": null,
+      "originalQuestionRu": "В каком году был юридически утверждён государственный гимн Китайской Народной Республики?",
+      "answerOptionId": "o4",
+      "originalSourceQuestionRu": "В каком году был юридически утверджден государственный гимн Китайской Народной Республики？",
+      "sourceProvenance": {
+        "conservedDisplay": "/tmp/lingvo-batch5-pending.json",
+        "sourceTranscription": "data/regions/variants.json",
+        "variantId": "2022-23-mun-tat",
+        "taskNumber": 6,
+        "sourceFiles": [
+          "01-Варианты/2022-23/2-Муниципальный/Татарстан/9-11_Задания.pdf"
+        ],
+        "sourceQuestionZh": null,
+        "sourceOptions": [
+          "1949年",
+          "1986年",
+          "2000年",
+          "2004年"
+        ],
+        "sourceKeyIndex": 3,
+        "note": "Основной показ дословно из текущего pending; исходная расшифровка приведена лишь для истории, без повторного аудита PDF."
+      },
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "1949年",
+          "zh": "1949年",
+          "correct": false,
+          "ru": "1949 год — «Марш добровольцев» выбран временным гимном КНР 27 сентября.",
+          "source": {
+            "title": "中华人民共和国国歌 — 中央人民政府驻香港特别行政区联络办公室",
+            "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956230.htm",
+            "quote": "1949年9月27日，中国人民政治协商会议第一届全体会议通过决议",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "additionalQuote": "为代国歌。"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "1986年",
+          "zh": "1986年",
+          "correct": false,
+          "ru": "1986 год — 12 апреля принят Закон КНР об обязательном образовании.",
+          "source": {
+            "title": "九年义务教育开始实施 — 中华人民共和国教育部",
+            "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/s3581/moe_2669/moe_2921/tnull_51639.html",
+            "quote": "1986年4月12日，六届全国人大四次会议审议通过了《中华人民共和国义务教育法》。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "quoteNote": "Сверено в поисковом индексе официальной страницы; полный open сайта moe.gov.cn в этой сессии нестабилен."
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "2000年",
+          "zh": "2000年",
+          "correct": false,
+          "ru": "2000 год — 15 марта ВСНП принял Закон КНР о правотворчестве.",
+          "source": {
+            "title": "中华人民共和国立法法 — 北京市人民代表大会常务委员会",
+            "url": "https://www.bjrd.gov.cn/xwzx/qgrd/202303/t20230314_2935590.html",
+            "quote": "2000年3月15日第九届全国人民代表大会第三次会议通过",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "2004年",
+          "zh": "2004年",
+          "correct": true,
+          "ru": "2004 год — 14 марта ВСНП закрепил название гимна в Конституции КНР.",
+          "source": {
+            "title": "中华人民共和国国歌 — 中央人民政府驻香港特别行政区联络办公室",
+            "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956230.htm",
+            "quote": "2004年3月14日，十届全国人大二次会议通过的宪法修正案，规定：中华人民共和国国歌是《义勇军进行曲》。",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "semanticReview": {
+        "corpusSize": 1030,
+        "corpus": "/tmp/lingvo-batch5-active.json + /tmp/lingvo-batch5-active-index.txt",
+        "testedRelation": "Государственный гимн КНР → юридическая дата; ключ 2004 относится к закреплению гимна в Конституции, а не к первому использованию или первой резолюции.",
+        "neighborsExamined": [
+          {
+            "id": "2017-18-reg-5",
+            "questionRu": "Как называется гимн КНР?",
+            "answer": "义勇军进行曲",
+            "whyDistinct": "Там название гимна — «Марш добровольцев». Здесь дата конкретного правового закрепления; название и дата — разные проверяемые связи."
+          },
+          {
+            "id": "state-q10",
+            "questionRu": "Кто написал слова государственного гимна КНР?",
+            "answer": "田汉",
+            "whyDistinct": "Там автор слов гимна Тянь Хань. Здесь правовой статус и хронология; не прямой и не обратный вопрос об авторстве."
+          },
+          {
+            "id": "2016-17-zak-7",
+            "questionRu": "Кто написал музыку государственного гимна Китая?",
+            "answer": "聂耳",
+            "whyDistinct": "Там автор музыки Не Эр; данный вопрос не спрашивает музыку или её автора."
+          },
+          {
+            "id": "2021-22-reg-qbb2e02",
+            "questionRu": "В каком году был законодательно утвержден современный государственный гимн Российской Федерации?",
+            "answer": "2000 年",
+            "whyDistinct": "Та же общая форма юридической даты, но речь о гимне Российской Федерации и 2000 годе. Здесь иной государственный символ и иная правовая история."
+          }
+        ],
+        "verdict": "Новой прямой или обратной карточки с этой связью среди 1030 действующих не найдено; ближайшие связи отдельно сопоставлены. Восстановлением недостающего элемента уже спрашиваемого закрытого набора не является."
+      },
+      "authorRemarks": [
+        {
+          "issue": "Сведения об этапе 2004 года не противоречат ключу: 14 марта 2004 года название гимна «Марш добровольцев» (义勇军进行曲) закреплено в Конституции КНР. Оговорка относится только к широте выражения «юридически утверждён»: в 1949 году уже была резолюция о временном гимне, 4 декабря 1982 года ВСНП восстановил песню как государственный гимн, а отдельный Закон о гимне принят 1 сентября 2017 года. Условие не называет конституционное закрепление прямо.",
+          "authorDecision": "Сохранение этой формулировки — решение автора; автоматической правки или смены ключа нет.",
+          "sources": [
+            {
+              "title": "中华人民共和国国歌 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956230.htm",
+              "quote": "1982年12月4日，第五届全国人民代表大会第五次会议通过关于中华人民共和国国歌的决议",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "additionalQuote": "2017年9月1日，第十二届全国人民代表大会常务委员会第二十九次会议通过《中华人民共和国国歌法》"
+            }
+          ]
+        },
+        {
+          "issue": "Текущий pending уже исправлен прежним editorial. В variants.json русская расшифровка содержит «утверджден» и конечный знак ？. Это показано в originalSourceQuestionRu; основной questionRu/originalQuestionRu дословно сохранён из pending, без отката прежней правки.",
+          "authorDecision": "Новой правки не предложено; расхождение только зафиксировано."
+        }
+      ],
+      "warnings": [
+        "Ключ o4 согласуется с конституционным закреплением в 2004 году. Замечание: выражение «юридически утверждён» шире этого технического понятия; это не опровержение даты 2004."
+      ],
+      "reviewNumber": 15,
+      "originalQuestionZh": null,
+      "previewQuestionRu": "В каком году был юридически утверждён государственный гимн Китайской Народной Республики?",
+      "originalAnswer": {
+        "optionId": "o4",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "1949年"
+        },
+        {
+          "id": "o2",
+          "zh": "1986年"
+        },
+        {
+          "id": "o3",
+          "zh": "2000年"
+        },
+        {
+          "id": "o4",
+          "zh": "2004年"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "义勇军进行曲 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E4%B9%89%E5%8B%87%E5%86%9B%E8%BF%9B%E8%A1%8C%E6%9B%B2"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "history-economy"
+    },
+    {
+      "id": "2025-26-mun-ryaz-5",
+      "topic": "Россия и межкультурный блок",
+      "questionRu": "В каком году Китай и Россия подписали Договор о добрососедстве, дружбе и сотрудничестве –《中俄睦邻友好合作条约》?",
+      "originalQuestionRu": "В каком году Китай и Россия подписали Договор о добрососедстве, дружбе и сотрудничестве –《中俄睦邻友好合作条约》?",
+      "questionZh": null,
+      "answerOptionId": "o2",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "一九九一年",
+          "zh": "一九九一年",
+          "correct": false,
+          "ru": "1991 год — СССР и КНР подписали соглашение о восточной части границы",
+          "source": {
+            "title": "Соглашение о советско-китайской границе. Москва, 16 мая 1991 — ЭБИД",
+            "url": "https://docs.historyrussia.org/ru/nodes/518493-soglashenie-mezhdu-soyuzom-sovetskih-sotsialisticheskih-respublik-i-kitayskoy-narodnoy-respublikoy-o-sovetsko-kitayskoy-gosudarstvennoy-granitse-na-ee-vostochnoy-chasti-moskva-16-maya-1991-goda",
+            "quote": "о советско-китайской государственной границе на ее Восточной части. Москва, 16 мая 1991 года",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "二〇〇一年",
+          "zh": "二〇〇一年",
+          "correct": true,
+          "ru": "2001 год — договор подписали Цзян Цзэминь и Владимир Путин",
+          "source": {
+            "title": "Интервью посла КНР Лю Гучана — МИД КНР",
+            "url": "https://www.mfa.gov.cn/rus/wjb/zzjg/dozys/dozysgjlb/1706/1710/200311/t20031120_957420.html",
+            "quote": "16-го июля 2001-го года этот договор подписали бывший председатель КНР Цзян Цзэминь и президент России Владимир Путин.",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-page-opened",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "二〇一一年",
+          "zh": "二〇一一年",
+          "correct": false,
+          "ru": "2011 год — Ху Цзиньтао и Д. Медведев отметили десятилетие договора в Москве",
+          "source": {
+            "title": "Переговоры Ху Цзиньтао с Д. Медведевым — МИД КНР",
+            "url": "https://www.mfa.gov.cn/rus/zl/ce_ceml_chn/hzxcxjjlt/201106/t20110617_878211.html",
+            "quote": "Медведев и Ху Цзиньтао выступили с речами на концерте в честь 10-й годовщины подписания Договора",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "二〇二一年",
+          "zh": "二〇二一年",
+          "correct": false,
+          "ru": "2021 год — Си Цзиньпин и В. Путин объявили о продлении договора",
+          "source": {
+            "title": "习近平同俄罗斯总统普京举行视频会晤 — МИД КНР",
+            "url": "https://www.fmprc.gov.cn/tpxw/202106/t20210628_9136616.shtml",
+            "quote": "两国元首宣布发表联合声明，正式决定《中俄睦邻友好合作条约》延期。",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-page-opened",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "semanticReview": {
+        "testedRelation": "Договор России и Китая о добрососедстве, дружбе и сотрудничестве → год подписания (2001).",
+        "activeQuestionsCompared": 1030,
+        "searchCoverage": "Полный активный индекс: русские и китайские названия, синонимы, ключи, прямое/обратное отношение; затем чтение найденных смысловых соседей.",
+        "neighborsExamined": [
+          {
+            "id": "2022-23-reg-9",
+            "questionRu": "В каком году была основана Шанхайская организация сотрудничества (ШОС), членами которой являются КНР и РФ?",
+            "answer": "2001 年",
+            "whyDistinct": "ШОС → год основания (2001); другой акт и другое событие, несмотря на совпадение года."
+          },
+          {
+            "id": "modern-china-q10",
+            "questionRu": "Какая организация создана в 2001 году Китаем, Россией и четырьмя государствами Центральной Азии?",
+            "answer": "上海合作组织",
+            "whyDistinct": "Организация шести государств, созданная в 2001 → ШОС; не двусторонний договор."
+          },
+          {
+            "id": "addition-b1-18",
+            "questionRu": "Какой договор 1858 г. закрепил за Россией левый берег Амура от Аргуни до устья?",
+            "answer": "瑷珲条约",
+            "whyDistinct": "Айгунский договор 1858 → название; иной договор и предмет."
+          },
+          {
+            "id": "modern-history-q108",
+            "questionRu": "По какому договору 1860 года к России отошли земли к востоку от Уссури?",
+            "answer": "北京条约",
+            "whyDistinct": "Переход земель в 1860 → Пекинский договор; иной договор и эпоха."
+          }
+        ],
+        "verdict": "Нового прямого или обратного повтора проверяемого отношения не найдено; совпадение объекта при другом признаке не считалось дублем."
+      },
+      "authorRemarks": [],
+      "warnings": [],
+      "reviewNumber": 16,
+      "originalQuestionZh": null,
+      "previewQuestionRu": "В каком году Китай и Россия подписали Договор о добрососедстве, дружбе и сотрудничестве –《中俄睦邻友好合作条约》?",
+      "originalAnswer": {
+        "optionId": "o2",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "一九九一年"
+        },
+        {
+          "id": "o2",
+          "zh": "二〇〇一年"
+        },
+        {
+          "id": "o3",
+          "zh": "二〇一一年"
+        },
+        {
+          "id": "o4",
+          "zh": "二〇二一年"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "中俄睦邻友好合作条约 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E4%BF%84%E7%9D%A6%E9%82%BB%E5%8F%8B%E5%A5%BD%E5%90%88%E4%BD%9C%E6%9D%A1%E7%BA%A6"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "geo-russia"
+    },
+    {
+      "id": "2025-26-mun-spb-9",
+      "topic": "Россия и межкультурный блок",
+      "questionRu": "О ком верно следующее утверждение: «один из самых малочисленных подвидов семейства кошачьих, занимающий самую северную часть ареала вида, и единственный подвид леопарда, научившийся жить и охотиться в снегах»?",
+      "originalQuestionRu": "О ком верно следующее утверждение: «один из самых малочисленных подвидов семейства кошачьих, занимающий самую северную часть ареала вида, и единственный подвид леопарда, научившийся жить и охотиться в снегах»?",
+      "questionZh": null,
+      "answerOptionId": "o4",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "黑豹",
+          "zh": "黑豹",
+          "correct": false,
+          "ru": "Чёрная пантера — тёмная цветовая форма леопарда или ягуара",
+          "source": {
+            "title": "Black Beauty — San Diego Zoo Wildlife Alliance",
+            "url": "https://sandiegozoowildlifealliance.org/story-hub/zoonooz/black-beauty",
+            "quote": "a genetic variant that’s best known in jaguars (in South America) and leopards (in Africa and Asia).",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-primary-page-opened"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "海豹",
+          "zh": "海豹",
+          "correct": false,
+          "ru": "Тюлень — морское млекопитающее из ластоногих; к кошачьим не относится",
+          "source": {
+            "title": "Seals & Sea Lions — NOAA Fisheries",
+            "url": "https://www.fisheries.noaa.gov/seals-sea-lions",
+            "quote": "Seals and sea lions belong to a group of marine mammals called pinnipeds",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-primary-page-opened"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "雪豹",
+          "zh": "雪豹",
+          "correct": false,
+          "ru": "Снежный барс — отдельный вид Panthera uncia, не подвид леопарда",
+          "source": {
+            "title": "Living Species: Snow Leopard — IUCN/SSC Cat Specialist Group",
+            "url": "https://www.catsg.org/living-species-snowleopard",
+            "quote": "Based on available data, it is currently recognised as a monotypic species.",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-primary-page-opened"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "远东豹",
+          "zh": "远东豹",
+          "correct": true,
+          "ru": "Дальневосточный леопард — охраняется в национальном парке «Земля леопарда»",
+          "source": {
+            "title": "Дальневосточный леопард — Калининградский зоопарк",
+            "url": "https://kldzoo.ru/animals-and-park/animals/dalnevostochnyy-leopard/",
+            "quote": "5 апреля 2012 года был создан национальный парк «Земля леопарда», благодаря чему популяция леопарда начала увеличивать свою численность.",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-primary-page-opened"
+          }
+        }
+      ],
+      "semanticReview": {
+        "testedRelation": "Описание самого северного редкого подвида леопарда → дальневосточный леопард; проверены обратные вопросы о его ареале, снежной адаптации, охране и таксономии.",
+        "activeQuestionsCompared": 1030,
+        "searchCoverage": "Полный активный индекс 1030: дальневосточный/амурский леопард, леопард/барс/пантера/кошачьи/тюлень/Приморье, 远东豹/海豹/雪豹/黑豹 и природоохранные связи. Совпадений самого объекта или проверяемой связи не найдено.",
+        "neighborsExamined": [
+          {
+            "id": "2017-18-zak-5",
+            "questionRu": "Какое животное, считающееся национальным сокровищем Китая, стало прообразом олимпийского талисмана Пекина «Цзинцзин»?",
+            "answer": "大熊猫",
+            "whyDistinct": "Распознавание панды по олимпийскому талисману: другой вид и другой признак, без отношения к подвиду леопарда."
+          },
+          {
+            "id": "2015-16-reg-3",
+            "questionRu": "Какое животное не входит в китайский двенадцатилетний зодиак?",
+            "answer": "狐狸",
+            "whyDistinct": "Членство животного в китайском зодиаке: иной замкнутый набор и иной проверяемый факт."
+          }
+        ],
+        "verdict": "Смыслового прямого или обратного дубля в активных 1030 не найдено.",
+        "difficultyAssessment": "Один заведомо слабый дистрактор — тюлень. Снежный барс остаётся содержательным дистрактором; вопрос требует различить отдельный вид и подвид леопарда."
+      },
+      "authorRemarks": [
+        {
+          "kind": "категоричность исходного утверждения",
+          "original": "единственный подвид леопарда, научившийся жить и охотиться в снегах",
+          "comment": "Первичный источник зоопарка подтверждает дальневосточный подвид, его ареал России и Китая и суровые снежные зимы, но не доказывает исключительность этой способности среди всех подвидов. Каноническое условие сохранено без изменения; для публикации категоричность фрагмента следует принять или отклонить автору.",
+          "source": {
+            "title": "Black Beauty — San Diego Zoo Wildlife Alliance",
+            "url": "https://sandiegozoowildlifealliance.org/story-hub/zoonooz/black-beauty",
+            "quote": "where harsh winters can bring deep snow.",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-primary-page-opened"
+          }
+        }
+      ],
+      "warnings": [
+        "Тюлень — очевидно неподходящий по семейству вариант; комплект несколько легче из-за него.",
+        "Чёрная пантера — название окраски, а не таксон; у дальневосточного леопарда также бывают меланистические особи, что не делает «чёрную пантеру» названием подвида."
+      ],
+      "reviewNumber": 17,
+      "previewQuestionRu": "О ком верно следующее утверждение: «один из самых малочисленных подвидов семейства кошачьих, занимающий самую северную часть ареала вида, и единственный подвид леопарда, научившийся жить и охотиться в снегах»?",
+      "originalQuestionZh": null,
+      "originalAnswer": {
+        "optionId": "o4",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "黑豹"
+        },
+        {
+          "id": "o2",
+          "zh": "海豹"
+        },
+        {
+          "id": "o3",
+          "zh": "雪豹"
+        },
+        {
+          "id": "o4",
+          "zh": "远东豹"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "远东豹 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E8%BF%9C%E4%B8%9C%E8%B1%B9"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "geo-extra"
+    },
+    {
+      "id": "2025-26-mun-kem-7",
+      "topic": "Россия и межкультурный блок",
+      "questionRu": "В каком веке началось присоединение Сибири к России?",
+      "originalQuestionRu": "В каком веке началось присоединение Сибири к России?",
+      "questionZh": null,
+      "answerOptionId": "o2",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "十五世纪",
+          "zh": "十五世纪",
+          "correct": false,
+          "ru": "XV век — стояние на Угре (1480), завершение зависимости от Орды",
+          "source": {
+            "title": "Стояние на Угре — Президентская библиотека",
+            "url": "https://www.prlib.ru/node/619708",
+            "quote": "11 ноября 1480 г. хан Ахмат",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "十六世纪",
+          "zh": "十六世纪",
+          "correct": true,
+          "ru": "XVI век — начало связывают с походом Ермака в 1581 году",
+          "source": {
+            "title": "История — Ростовский государственный университет путей сообщения",
+            "url": "https://bypass.rgups.ru/site/assets/files/221914/sg_02_istoriia.pdf",
+            "quote": "1581 г. – поход Ермака – начало присоединения Сибири.",
+            "authority": "academic",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "十七世纪",
+          "zh": "十七世纪",
+          "correct": false,
+          "ru": "XVII век — Семён Дежнёв в 1648 году прошёл пролив между Азией и Америкой",
+          "source": {
+            "title": "Семен Дежнев. 1648–1948 — Президентская библиотека",
+            "url": "https://www.prlib.ru/item/1286555",
+            "quote": "1648-1948 : К трехсотлетию открытия пролива между Азией и Америкой.",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "十八世纪",
+          "zh": "十八世纪",
+          "correct": false,
+          "ru": "XVIII век — Первая Камчатская экспедиция Беринга организована с 1725 года",
+          "source": {
+            "title": "Издан указ о Второй Камчатской экспедиции — Президентская библиотека",
+            "url": "https://www.prlib.ru/history/619199",
+            "quote": "В январе 1725 г. российский император отдал Указ о подготовке экспедиции на Тихий океан",
+            "authority": "official",
+            "verificationMethod": "fresh-primary-indexed-excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "semanticReview": {
+        "testedRelation": "Присоединение Сибири к России → век начала; историческая хронология, а не Сибирь как природный район/железная дорога.",
+        "activeQuestionsCompared": 1030,
+        "searchCoverage": "Полный активный индекс: русские и китайские названия, синонимы, ключи, прямое/обратное отношение; затем чтение найденных смысловых соседей.",
+        "neighborsExamined": [
+          {
+            "id": "nature-q163",
+            "questionRu": "Как называется самая длинная железная дорога в мире, которая пересекает всю Россию до Тихого океана?",
+            "answer": "西伯利亚大铁路",
+            "whyDistinct": "Транссибирская магистраль → название железной дороги; нет отношения к веку присоединения Сибири."
+          },
+          {
+            "id": "2020-21-reg-q7a4710",
+            "questionRu": "Какой московский собор был возведен в честь присоединения Казанского ханства к Русскому государству?",
+            "answer": "瓦西里升天教堂",
+            "whyDistinct": "Присоединение Казанского ханства → памятник; другая территория и другой проверяемый признак."
+          },
+          {
+            "id": "modern-history-q108",
+            "questionRu": "По какому договору 1860 года к России отошли земли к востоку от Уссури?",
+            "answer": "北京条约",
+            "whyDistinct": "Переход Уссурийского края в 1860 → договор; другой этап расширения территории России."
+          }
+        ],
+        "verdict": "Нового прямого или обратного повтора проверяемого отношения не найдено; совпадение объекта при другом признаке не считалось дублем."
+      },
+      "authorRemarks": [],
+      "warnings": [],
+      "reviewNumber": 18,
+      "originalQuestionZh": null,
+      "previewQuestionRu": "В каком веке началось присоединение Сибири к России?",
+      "originalAnswer": {
+        "optionId": "o2",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "十五世纪"
+        },
+        {
+          "id": "o2",
+          "zh": "十六世纪"
+        },
+        {
+          "id": "o3",
+          "zh": "十七世纪"
+        },
+        {
+          "id": "o4",
+          "zh": "十八世纪"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "Покорение Сибири — Википедия",
+          "url": "https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BA%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D0%B5_%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D0%B8"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "geo-russia"
+    },
+    {
+      "id": "2023-24-mun-spb-9",
+      "topic": "Литература, язык, искусство и философия",
+      "questionRu": "Какая из нижеперечисленных форм литературных произведений считается в Китае самой ранней?",
+      "originalQuestionRu": "Какая из нижеперечисленных форм литературных произведений считается в Китае самой ранней?",
+      "questionZh": null,
+      "originalQuestionZh": null,
+      "answerOptionId": "o2",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "小说",
+          "zh": "小说",
+          "correct": false,
+          "ru": "Сяошо — повествовательная проза; пример — роман «Троецарствие»",
+          "source": {
+            "url": "https://id.china-embassy.gov.cn/chn/zggk/zgxz/xzwhys/200404/t20040421_2344862.htm",
+            "title": "中国驻印度尼西亚使馆 — 文学",
+            "quote": "罗贯中的《三国演义》、施耐庵的《水浒传》、吴承恩的《西游记》和曹雪芹的《红楼梦》四部长篇小说",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "诗歌",
+          "zh": "诗歌",
+          "correct": true,
+          "ru": "Поэзия — древние китайские стихи были связаны с музыкой и танцем",
+          "source": {
+            "url": "https://www.ccc-paris.org/zh/%E5%8F%91%E7%8E%B0%E4%B8%AD%E5%9B%BD/%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6%E5%8F%B2/",
+            "title": "巴黎中国文化中心 — 中国文学史",
+            "quote": "中国最初的诗歌是和音乐、舞蹈结合在一起",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "散文",
+          "zh": "散文",
+          "correct": false,
+          "ru": "Саньвэнь — проза; в древности она объединяла литературу, историю и философию",
+          "source": {
+            "url": "https://www.ccc-paris.org/zh/%E5%8F%91%E7%8E%B0%E4%B8%AD%E5%9B%BD/%E4%B8%AD%E5%9B%BD%E6%96%87%E5%AD%A6%E5%8F%B2/",
+            "title": "巴黎中国文化中心 — 中国文学史",
+            "quote": "所谓文史哲不分，是就散文这个领域而言",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "戏剧",
+          "zh": "戏剧",
+          "correct": false,
+          "ru": "Драма — в эпоху Юань расцвёл жанр цзацзюй, например «Обида Доу Э»",
+          "source": {
+            "url": "https://id.china-embassy.gov.cn/chn/zggk/zgxz/xzwhys/200404/t20040421_2344862.htm",
+            "title": "中国驻印度尼西亚使馆 — 文学",
+            "quote": "元代文学的最高成就是杂剧创作，关汉卿的《窦娥冤》和王实甫的《西厢记》成为古代戏剧的传世杰作。",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "诗歌 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E8%AF%97%E6%AD%8C"
+          },
+          {
+            "checkedAt": "2026-10-25",
+            "title": "诗经 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E8%AF%97%E7%BB%8F"
+          }
+        ],
+        "explanation": {
+          "ru": "Самой ранней формой литературы считается поэзия (诗歌): она возникла ещё до письменности как песни, связанные с музыкой и танцем; древнейший памятник китайской литературы — «Книга песен» (《诗经》), первый сборник стихов, песни XI–VI веков до н. э."
+        },
+        "id": "2023-24-mun-spb-9",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 9,
+            "officialKey": "o2",
+            "region": "Санкт-Петербург",
+            "regionCode": "spb",
+            "sourceFiles": [
+              "01-Варианты/2023-24/2-Муниципальный/Санкт-Петербург/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2023-24"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "小说"
+          },
+          {
+            "id": "o2",
+            "zh": "诗歌"
+          },
+          {
+            "id": "o3",
+            "zh": "散文"
+          },
+          {
+            "id": "o4",
+            "zh": "戏剧"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Какая из нижеперечисленных форм литературных произведений считается в Китае самой ранней?",
+        "questionZh": null,
+        "topic": "Литература, язык, искусство и философия",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "semanticReview": {
+        "testedRelation": "Самая ранняя среди предложенных литературных форм → 诗歌",
+        "activeRecordsCompared": 1030,
+        "comparisonScope": "Все 1030 активных записей, поиски по сущностям и формулировкам во всех темах; прямой и обратный атрибут проверены отдельно. Общая сущность сама по себе не считалась дублем.",
+        "neighborsExamined": [
+          {
+            "id": "2019-20-mun-q5616d1",
+            "questionRu": "Как называется первый китайский поэтический сборник, появившийся в эпоху Чуньцю более двух с половиной тысяч лет назад?",
+            "answer": "诗经",
+            "answerOptionId": "o4",
+            "whyDistinct": "Спрашивается название первого поэтического сборника, 诗经. Здесь сравниваются литературные формы, а название сборника не служит ответом."
+          },
+          {
+            "id": "literature-q59",
+            "questionRu": "Составление какого поэтического свода предание приписывает Конфуцию?",
+            "answer": "诗经",
+            "answerOptionId": "lit-w-shijing",
+            "whyDistinct": "Спрашивается свод, составление которого приписывают Конфуцию, 诗经. Это атрибуция книги, а не хронология форм литературы."
+          }
+        ],
+        "verdict": "distinct_relation"
+      },
+      "authorRemarks": [],
+      "warnings": [],
+      "keySources": [
+        {
+          "url": "https://ipkent.edu.my/document/pskent/pskent18/modul/bcn/BCN3103.pdf",
+          "title": "Institut Pendidikan Guru, Kementerian Pendidikan Malaysia — BCN3103 诗歌, печатная с. 1 / PDF с. 12",
+          "quote": "中国诗歌的历史源远流长，是中国文学史上\n产生最早也是成熟最早的文学形式。",
+          "authority": "academic",
+          "verificationMethod": "browsed_full_page",
+          "checkedAt": "2026-11-08",
+          "page": 12,
+          "quoteFormatting": "Перенос строки из извлечённого PDF сохранён."
+        }
+      ],
+      "reviewNumber": 19,
+      "previewQuestionRu": "Какая из нижеперечисленных форм литературных произведений считается в Китае самой ранней?",
+      "originalAnswer": {
+        "optionId": "o2",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "小说"
+        },
+        {
+          "id": "o2",
+          "zh": "诗歌"
+        },
+        {
+          "id": "o3",
+          "zh": "散文"
+        },
+        {
+          "id": "o4",
+          "zh": "戏剧"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "诗歌 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E8%AF%97%E6%AD%8C"
+        },
+        {
+          "checkedAt": "2026-10-25",
+          "title": "诗经 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E8%AF%97%E7%BB%8F"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "culture-literature"
+    },
+    {
+      "id": "2024-25-mun-krsk-6",
+      "topic": "Культура, традиции и праздники",
+      "questionRu": "Какой камень китайцы издревле считали «царем минералов», использовали в ритуальных и сакральных целях, так как верили, что он защищает от злых духов, оберегает; выявляет яды.",
+      "originalQuestionRu": "Какой камень китайцы издревле считали «царем минералов», использовали в ритуальных и сакральных целях, так как верили, что он защищает от злых духов, оберегает; выявляет яды.",
+      "questionZh": null,
+      "originalQuestionZh": null,
+      "answerOptionId": "o3",
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "碧石",
+          "zh": "碧石",
+          "correct": false,
+          "ru": "Яшма — скрытокристаллический кварц; её окраску создают минеральные примеси",
+          "source": {
+            "url": "https://zrzykpywh.magtechjournal.com/article/2022/2096-9791/2096-9791-0-3-38.shtml",
+            "title": "中国地质博物馆 — 碧石：色彩缤纷的别样玉髓",
+            "quote": "碧石，作为单独玉石品种，与玉髓、玛瑙均属于隐晶质石英质玉类。",
+            "authority": "academic",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08",
+            "extraQuote": "杂质成分决定了碧石的颜色、条痕和外观"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "水晶",
+          "zh": "水晶",
+          "correct": false,
+          "ru": "Горный хрусталь — прозрачные кристаллы кварца",
+          "source": {
+            "url": "https://web3.nmns.edu.tw/Exhibits/114/2025earths-treasures/",
+            "title": "國立自然科學博物館 — 大地瑰寶 礦物常設展",
+            "quote": "在裂隙或孔洞中亦可發現呈透明的柱狀晶體，稱之為水晶。",
+            "authority": "official",
+            "verificationMethod": "browsed_search_excerpt",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "软玉",
+          "zh": "软玉",
+          "correct": true,
+          "ru": "Нефрит — плотный камень из переплетённых тремолита и актинолита",
+          "source": {
+            "url": "https://www.nmns.edu.tw/collect/catalog/detail/?id=266",
+            "title": "國立自然科學博物館 — 軟玉",
+            "quote": "由透閃石和陽起石交織而成的閃玉，又名軟玉",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "石英",
+          "zh": "石英",
+          "correct": false,
+          "ru": "Кварц — минерал из диоксида кремния; из него изготавливают стекло",
+          "source": {
+            "url": "https://ginfo.cedd.gov.hk/hkss/tc/publications-and-resources/educational-materials/hong-kong-geology/chapter-1/index.html",
+            "title": "香港土木工程拓展署 — 礦物與岩石",
+            "quote": "石英由化合物二氧化矽形成。",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08",
+            "extraQuote": "石英是製造玻璃的原料。"
+          }
+        }
+      ],
+      "originalRecord": {
+        "answer": {
+          "optionId": "o3",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "玉 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E7%8E%89"
+          },
+          {
+            "checkedAt": "2026-10-25",
+            "title": "软玉 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E8%BD%AF%E7%8E%89"
+          }
+        ],
+        "explanation": {
+          "ru": "В Китае издавна почитали нефрит (软玉, «мягкий нефрит»): из него делали ритуальные предметы и императорские печати и верили, что он отгоняет беду и злых духов (避邪) и помогает распознать истину (鉴真)."
+        },
+        "id": "2024-25-mun-krsk-6",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 6,
+            "officialKey": "o3",
+            "region": "Красноярский край",
+            "regionCode": "krsk",
+            "sourceFiles": [
+              "01-Варианты/2024-25/2-Муниципальный/Красноярский край/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2024-25"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "碧石"
+          },
+          {
+            "id": "o2",
+            "zh": "水晶"
+          },
+          {
+            "id": "o3",
+            "zh": "软玉"
+          },
+          {
+            "id": "o4",
+            "zh": "石英"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Какой камень китайцы издревле считали «царем минералов», использовали в ритуальных и сакральных целях, так как верили, что он защищает от злых духов, оберегает; выявляет яды.",
+        "questionZh": null,
+        "topic": "Культура, традиции и праздники",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "semanticReview": {
+        "testedRelation": "Почитаемый в китайской традиции ритуальный камень с охранительными свойствами → 软玉",
+        "activeRecordsCompared": 1030,
+        "comparisonScope": "Все 1030 активных записей, поиски по сущностям и формулировкам во всех темах; прямой и обратный атрибут проверены отдельно. Общая сущность сама по себе не считалась дублем.",
+        "neighborsExamined": [
+          {
+            "id": "myths-q28",
+            "questionRu": "Какая богиня, по преданию, вылепила первых людей из жёлтой глины, а когда небо раскололось, залатала его камнями пяти цветов?",
+            "answer": "女娲",
+            "answerOptionId": "fig-nuwa",
+            "whyDistinct": "В тексте упоминаются камни пяти цветов, которыми Нюйва починила небо, но не определяется ритуальный камень или нефрит."
+          },
+          {
+            "id": "painting-q102",
+            "questionRu": "Какое из «четырёх сокровищ кабинета» прославило южнокитайский город Чжаоцин?",
+            "answer": "端砚",
+            "answerOptionId": "art-t-duanyan",
+            "whyDistinct": "Проверяется название чжаоцинской тушечницы 端砚. Общая сфера традиционных материалов и резьбы не образует той же пары вопрос—ответ."
+          }
+        ],
+        "verdict": "distinct_relation"
+      },
+      "authorRemarks": [
+        {
+          "kind": "unconfirmedPremise",
+          "originalQuestionRu": "Какой камень китайцы издревле считали «царем минералов», использовали в ритуальных и сакральных целях, так как верили, что он защищает от злых духов, оберегает; выявляет яды.",
+          "problem": "Фразу «выявляет яды» и эпитет «царь минералов» не удалось подтвердить первичными официальными или академическими источниками именно как китайское историческое представление о нефрите. Ключ 软玉 соответствует культурному контексту, но исходная посылка требует решения автора. Подписи не представляют распознавание ядов свойством нефрита. Вопрос и пунктуация оставлены дословно.",
+          "source": {
+            "url": "https://www.nmns.edu.tw/collect/catalog/detail/?id=266",
+            "title": "國立自然科學博物館 — 軟玉",
+            "quote": "由透閃石和陽起石交織而成的閃玉，又名軟玉",
+            "authority": "official",
+            "verificationMethod": "browsed_full_page",
+            "checkedAt": "2026-11-08"
+          },
+          "supportLimit": "Источник подтверждает минералогическое определение, а не историю поверья о ядах."
+        }
+      ],
+      "warnings": [
+        "unconfirmedPremise: утверждение о распознавании ядов не подтверждено; автор должен принять или отклонить дословный вопрос.",
+        "Нефрит — минеральный агрегат, поэтому выражение «царь минералов» следует рассматривать как непроверенный эпитет исходного задания, а не минералогический термин."
+      ],
+      "keySources": [
+        {
+          "url": "https://tcmb.culture.tw/zh-tw/detail?id=14000095910&indexCode=MOCCOLLECTIONS",
+          "title": "國立歷史博物館 / 國家文化記憶庫 — 玉璧",
+          "quote": "此玉器呈扁平圓形，採用綠色系的軟玉",
+          "authority": "official",
+          "verificationMethod": "browsed_search_excerpt",
+          "checkedAt": "2026-11-08",
+          "extraQuote": "蒼璧即是祭天之器"
+        }
+      ],
+      "reviewNumber": 20,
+      "previewQuestionRu": "Какой камень китайцы издревле считали «царем минералов», использовали в ритуальных и сакральных целях, так как верили, что он защищает от злых духов, оберегает; выявляет яды.",
+      "originalAnswer": {
+        "optionId": "o3",
+        "state": "verified"
+      },
+      "fullOptionPool": [
+        {
+          "id": "o1",
+          "zh": "碧石"
+        },
+        {
+          "id": "o2",
+          "zh": "水晶"
+        },
+        {
+          "id": "o3",
+          "zh": "软玉"
+        },
+        {
+          "id": "o4",
+          "zh": "石英"
+        }
+      ],
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "originalEvidence": [
+        {
+          "checkedAt": "2026-10-25",
+          "title": "玉 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E7%8E%89"
+        },
+        {
+          "checkedAt": "2026-10-25",
+          "title": "软玉 — 维基百科",
+          "url": "https://zh.wikipedia.org/wiki/%E8%BD%AF%E7%8E%89"
+        }
+      ],
+      "status": "draft-pending-author-review",
+      "authorDecision": {
+        "state": "pending",
+        "applied": false
+      },
+      "publicationAuthorized": false,
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "sourceReport": "culture-literature"
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "id": "2021-22-mun-amur-9",
+      "questionRu": "Настоящее имя китайского писателя Лу Синя (鲁迅) было …",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "鲁迅 — 维基百科",
+            "url": "https://zh.wikipedia.org/zh-cn/%E9%B2%81%E8%BF%85"
+          }
+        ],
+        "explanation": {
+          "ru": "Лу Синь (鲁迅) — литературный псевдоним писателя Чжоу Шужэня (周树人, 1881–1936) из Шаосина."
+        },
+        "id": "2021-22-mun-amur-9",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 9,
+            "officialKey": "o2",
+            "region": "Амурская область",
+            "regionCode": "amur",
+            "sourceFiles": [
+              "01-Варианты/2021-22/2-Муниципальный/Амурская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2021-22"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "舒庆春"
+          },
+          {
+            "id": "o2",
+            "zh": "周树人"
+          },
+          {
+            "id": "o3",
+            "zh": "李尧棠"
+          },
+          {
+            "id": "o4",
+            "zh": "冰心"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Настоящее имя китайского писателя Лу Синя (鲁迅) было …",
+        "questionZh": null,
+        "topic": "Литература, язык, искусство и философия",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "reason": "Обратная проверка той же пары: 鲁迅 ↔ 周树人; псевдоним и настоящее имя.",
+      "reasonKind": "semantic_duplicate",
+      "duplicateId": "literature-q43",
+      "existingQuestionRu": "Под каким псевдонимом писал Чжоу Шужэнь (周树人)?",
+      "existingAnswer": "鲁迅"
+    },
+    {
+      "id": "2023-24-mun-krsk-6",
+      "questionRu": "Какое знаменитое произведение было написано поэтом Бай Цзюйи?",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "琵琶行 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E7%90%B5%E7%90%B6%E8%A1%8C"
+          }
+        ],
+        "explanation": {
+          "ru": "«Песнь о пипе» (《琵琶行》) — длинная повествовательная поэма Бо Цзюйи (白居易), написанная в 816 году, когда поэт был в ссылке в Цзянчжоу."
+        },
+        "id": "2023-24-mun-krsk-6",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 6,
+            "officialKey": "o2",
+            "region": "Красноярский край",
+            "regionCode": "krsk",
+            "sourceFiles": [
+              "01-Варианты/2023-24/2-Муниципальный/Красноярский край/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2023-24"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "静夜思"
+          },
+          {
+            "id": "o2",
+            "zh": "琵琶行"
+          },
+          {
+            "id": "o3",
+            "zh": "乌衣巷"
+          },
+          {
+            "id": "o4",
+            "zh": "七步诗"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Какое знаменитое произведение было написано поэтом Бай Цзюйи?",
+        "questionZh": null,
+        "topic": "Литература, язык, искусство и философия",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "reason": "Обратная проверка той же пары: 白居易 ↔ 琵琶行.",
+      "reasonKind": "semantic_duplicate",
+      "duplicateId": "literature-q25",
+      "existingQuestionRu": "Кто из поэтов эпохи Тан написал длинную повествовательную поэму «Песнь о лютнистке» (琵琶行)?",
+      "existingAnswer": "白居易"
+    },
+    {
+      "id": "2023-24-mun-kem-2",
+      "questionRu": "В какой из провинций Китая распространен кантонский диалект?",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "粤语 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E7%B2%A4%E8%AF%AD"
+          }
+        ],
+        "explanation": {
+          "ru": "Кантонский язык (粤语), который часто называют 广东话, распространён в провинциях Гуандун (广东省) и Гуанси, в Гонконге и Макао; его эталон — диалект Гуанчжоу."
+        },
+        "id": "2023-24-mun-kem-2",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 2,
+            "officialKey": "o2",
+            "region": "Кемеровская область",
+            "regionCode": "kem",
+            "sourceFiles": [
+              "01-Варианты/2023-24/2-Муниципальный/Кемеровская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2023-24"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "陕西省"
+          },
+          {
+            "id": "o2",
+            "zh": "广东省"
+          },
+          {
+            "id": "o3",
+            "zh": "黑龙江省"
+          },
+          {
+            "id": "o4",
+            "zh": "湖北省"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "В какой из провинций Китая распространен кантонский диалект?",
+        "questionZh": null,
+        "topic": "Литература, язык, искусство и философия",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "reason": "Обратная проверка той же пары: 广东 ↔ 粤方言.",
+      "reasonKind": "semantic_duplicate",
+      "duplicateId": "ethnos-q86",
+      "existingQuestionRu": "На каком диалекте говорят в провинции Гуандун (广东)?",
+      "existingAnswer": "粤方言"
+    },
+    {
+      "id": "2024-25-mun-tat-51",
+      "questionRu": "Происхождение какого китайского праздника связано с притчей о Пастухе и Ткачихе?",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "七夕 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E4%B8%83%E5%A4%95"
+          }
+        ],
+        "explanation": {
+          "ru": "С легендой о Пастухе и Ткачихе (牛郎织女) связан праздник Цисицзе (七夕节) — седьмой вечер седьмого месяца по лунному календарю."
+        },
+        "id": "2024-25-mun-tat-51",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 51,
+            "officialKey": "o2",
+            "region": "Татарстан",
+            "regionCode": "tat",
+            "sourceFiles": [
+              "01-Варианты/2024-25/2-Муниципальный/Татарстан/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2024-25"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "中秋节"
+          },
+          {
+            "id": "o2",
+            "zh": "七夕节"
+          },
+          {
+            "id": "o3",
+            "zh": "重阳节"
+          },
+          {
+            "id": "o4",
+            "zh": "端午节"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Происхождение какого китайского праздника связано с притчей о Пастухе и Ткачихе?",
+        "questionZh": null,
+        "topic": "Культура, традиции и праздники",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "reason": "Обратная проверка пары легенда 牛郎织女 ↔ праздник 七夕.",
+      "reasonKind": "semantic_duplicate",
+      "duplicateId": "myths-q21",
+      "existingQuestionRu": "С каким народным сказанием связан праздник Циси, который отмечают седьмого числа седьмого лунного месяца?",
+      "existingAnswer": "牛郎织女"
+    },
+    {
+      "id": "2021-22-mun-mosobl-55",
+      "questionRu": "Какое растение не входит в 岁寒三友?",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o3",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Китайский вопросительный знак в русском вопросе (ревью ветки); Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "岁寒三友 — 维基百科",
+            "url": "https://zh.wikipedia.org/zh-cn/%E5%B2%81%E5%AF%92%E4%B8%89%E5%8F%8B"
+          }
+        ],
+        "explanation": {
+          "ru": "«Три друга холодной зимы» (岁寒三友) — сосна, бамбук и слива-мэйхуа (松、竹、梅); пиона (牡丹) среди них нет."
+        },
+        "factGroup": "suihan-sanyou-not",
+        "factRow": [
+          "sets/plants/pl-mudan",
+          "sets/plants/pl-song"
+        ],
+        "id": "2021-22-mun-mosobl-55",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 55,
+            "officialKey": "o3",
+            "region": "Московская область",
+            "regionCode": "mosobl",
+            "sourceFiles": [
+              "01-Варианты/2021-22/2-Муниципальный/Московская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2021-22"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "松树"
+          },
+          {
+            "id": "o2",
+            "zh": "翠竹"
+          },
+          {
+            "id": "o3",
+            "zh": "牡丹"
+          },
+          {
+            "id": "o4",
+            "zh": "梅花"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Какое растение не входит в 岁寒三友?",
+        "questionZh": null,
+        "topic": "Литература, язык, искусство и философия",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "reason": "Вновь проверяется состав закрытого набора 岁寒三友 через лишнее растение; активный вопрос уже проверяет этот же состав, хотя лишний вариант другой.",
+      "reasonKind": "closed_set_overlap",
+      "duplicateId": "2019-20-mun-khab-6",
+      "existingQuestionRu": "Что не входит в «трёх друзей холодной зимы» (岁寒三友) в китайской живописи?",
+      "existingAnswer": "兰"
+    },
+    {
+      "id": "2018-19-mun-lenobl-48",
+      "questionRu": "Что едят китайцы на Праздник фонарей?",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o4",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "元宵 — 维基百科",
+            "url": "https://zh.wikipedia.org/zh-cn/%E5%85%83%E5%AE%B5"
+          }
+        ],
+        "explanation": {
+          "ru": "На Праздник фонарей, 15-го числа 1-го лунного месяца, едят юаньсяо (元宵) — шарики из клейкого риса с начинкой; круглая форма означает семейное единство."
+        },
+        "id": "2018-19-mun-lenobl-48",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 48,
+            "officialKey": "o4",
+            "region": "Ленинградская область",
+            "regionCode": "lenobl",
+            "sourceFiles": [
+              "01-Варианты/2018-19/2-Муниципальный/Ленинградская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2018-19"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "炒米粉"
+          },
+          {
+            "id": "o2",
+            "zh": "粽子"
+          },
+          {
+            "id": "o3",
+            "zh": "猪肉"
+          },
+          {
+            "id": "o4",
+            "zh": "元宵"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Что едят китайцы на Праздник фонарей?",
+        "questionZh": "庆祝元宵节时中国人吃哪些菜肴？",
+        "topic": "Культура, традиции и праздники",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "reason": "Уже проверяется связь Праздника фонарей со сладкими рисовыми шариками; 元宵 и 汤圆 имеют региональные различия приготовления, но общий вопрос не делает их предметом проверки.",
+      "reasonKind": "semantic_duplicate",
+      "duplicateId": "holidays-q45",
+      "existingQuestionRu": "На какой праздник едят сладкие шарики из клейкого риса танъюань (汤圆)?",
+      "existingAnswer": "元宵节"
+    },
+    {
+      "id": "2024-25-mun-irk-8",
+      "questionRu": "В каком трактате китайский писатель Лу Юй времен династии Тан систематизировал знания о выращивании чая и чаепитии?",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o1",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "茶经 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E8%8C%B6%E7%BB%8F"
+          }
+        ],
+        "explanation": {
+          "ru": "«Канон чая» (《茶经》) танского автора Лу Юя (陆羽) — первый в мире трактат о чае: в нём описаны выращивание, сбор, обработка, оценка и заваривание чая."
+        },
+        "id": "2024-25-mun-irk-8",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 8,
+            "officialKey": "o1",
+            "region": "Иркутская область",
+            "regionCode": "irk",
+            "sourceFiles": [
+              "01-Варианты/2024-25/2-Муниципальный/Иркутская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2024-25"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "《茶经》"
+          },
+          {
+            "id": "o2",
+            "zh": "《茶艺》"
+          },
+          {
+            "id": "o3",
+            "zh": "《茶圣》"
+          },
+          {
+            "id": "o4",
+            "zh": "《茶语》"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "В каком трактате китайский писатель Лу Юй времен династии Тан систематизировал знания о выращивании чая и чаепитии?",
+        "questionZh": null,
+        "topic": "Культура, традиции и праздники",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "reason": "Ответ 《茶经》 проверяем, но 《茶艺》《茶圣》《茶语》 в данных не идентифицируют конкретные исторические трактаты. Для четырёх содержательных подписей пришлось бы подменять заглавия значениями слов; предпочтен вопрос с реальными четырьмя жанрами.",
+      "reasonKind": "unidentified_distractor_titles",
+      "duplicateId": null
+    },
+    {
+      "id": "2021-22-mun-lenobl-3",
+      "questionRu": "Самый популярный мессенджер в КНР?",
+      "reason": "Отказ по требованию умеренной сложности: среди 淘宝 / 微信 / 百度 / 阿里 только 微信 является мессенджером; достаточно отсева категорий, рейтинг знать не требуется."
+    },
+    {
+      "id": "2025-26-mun-irk-6",
+      "questionRu": "Какова была главная роль древнего китайского «Шелкового пути» в истории?",
+      "reason": "Отказ по требованию умеренной сложности: общий экономико-культурный обмен легко выбирается против частных перевозки чая, распространения буддизма и военных походов. Частный ответ о буддизме к тому же сам по себе исторически верен."
+    },
+    {
+      "id": "2023-24-mun-klg-10",
+      "questionRu": "В Шанхае находится самое высокое здание Китая. Как оно называется?",
+      "reason": "Только три исходных варианта: 上海环球金融中心 / 上海中心大厦 / 金茂大厦. Четвёртый не добавлялся."
+    },
+    {
+      "id": "2025-26-mun-tat-55",
+      "questionRu": "В каком году Китай запустил свою первую пилотируемую космическую миссию «Шэньчжоу-5»?",
+      "reason": "Смысловой обратный дубль действующего задания: в его условии прямо названа дата 15 октября 2003 года и первый пилотируемый полёт, спрашивается корабль. Здесь дата спрашивается по тому же кораблю и тому же событию.",
+      "closestExistingId": "2020-21-zak-q244298",
+      "closestExistingQuestionRu": "15 октября 2003 года космонавт Ян Ливэй совершил первый в истории космической программы Китая пилотируемый полет в космос. Как назывался космический корабль?",
+      "closestExistingAnswer": "神舟五号"
+    },
+    {
+      "id": "2019-20-shk-mosobl-47",
+      "questionRu": "Зал молитвы об урожае Храма Неба находится в центре Пекина. Императоры каких династий совершали в нём жертвоприношения Небу?",
+      "reason": "Закрытая связь уже названа в верном ответе действующего вопроса: Храм Неба — место жертвоприношений императоров Мин и Цин. Подстановка одной части той же связи новым вопросом не расширяет знание.",
+      "closestExistingId": "2022-23-zak-2",
+      "closestExistingQuestionRu": "Для чего изначально предназначался Храм Неба в Пекине, который в 1998 году был включён в список объектов всемирного наследия ЮНЕСКО?",
+      "closestExistingAnswer": "明清两代皇帝祭天的地方"
+    },
+    {
+      "id": "2021-22-mun-mosobl-52",
+      "questionRu": "В честь какого китайского политика китайский френч называют «суньятсеновка»?",
+      "reason": "Слишком очевидная языковая подсказка: в русском слове «суньятсеновка» прямо присутствует имя верного ответа Сунь Ятсен; знать новую историческую связь почти не требуется."
+    },
+    {
+      "id": "2025-26-mun-irk-3",
+      "questionRu": "Какая мобильная платежная система, кроме Alipay, часто используется в Китае?",
+      "reason": "Условие о мобильной платёжной системе неоднозначно: 银联 — действующая платёжная сеть с мобильным приложением 云闪付; нельзя объявлять её безусловно неверной при столь широком вопросе. Кроме того, ответ дан как 微信 вместо точного 微信支付; варианты и ключ не исправлялись."
+    },
+    {
+      "id": "2025-26-mun-chel-6",
+      "reason": "Отрицательный выбор из замкнутого набора городов центрального подчинения повторяет отношение 2016-17-mun-spb-3; замена Гуанчжоу на Чанчунь не создаёт нового факта."
+    },
+    {
+      "id": "2023-24-mun-mosobl-4",
+      "reason": "Проверка того же замкнутого набора 东北三省, уже представленного 2019-20-mun-lip-1, в отрицательной форме."
+    },
+    {
+      "id": "2021-22-mun-amur-3",
+      "reason": "В условии прямо повторяется отношение Чжанцзяцзе/Улинъюань → Хунань из nature-q157, хотя добавлена родина Мао."
+    },
+    {
+      "id": "2024-25-mun-udm-1",
+      "reason": "Слишком лёгкий отсев: архитектор Растрелли среди двух писателей и учёного; не соответствует запрошенной умеренной сложности."
+    },
+    {
+      "id": "2023-24-shk-mosobl-15",
+      "reason": "Не выбран: утверждение о выступлении Мэй Ланьфана перед Сталиным требует отдельной проверки; текущих первичных свидетельств недостаточно."
+    },
+    {
+      "id": "2025-26-mun-novg-6",
+      "reason": "Не выбран: учебная схема рис/пшеница на юге/севере не уточняет критерий «главные» и может смешиваться с фактическими объёмами производства кукурузы."
+    },
+    {
+      "id": "2021-22-mun-amur-2",
+      "reason": "Слишком широкое «где разводят панд»: разведение не ограничено Сычуанью; для этой порции не выбран."
+    },
+    {
+      "id": "2025-26-mun-irk-2",
+      "reason": "Формулировка о часовых поясах двусмысленна: географические пояса против единого официального времени; не выбран."
+    },
+    {
+      "id": "2022-23-mun-krsk-1",
+      "reason": "Смысловой повтор праздничной связи легенды Чанъэ/ХоуИ↔Праздниксерединыосени; активный2024-25-pri-37уже проверяет этот сюжет с обратной стороны.",
+      "sameAs": "2024-25-pri-37",
+      "stage": "independent-final-review"
+    }
+  ],
+  "independentReview": {
+    "status": "ready-for-author-review-with-explicit-remarks",
+    "report": "2026-11-08-regional-batch-5-review.md",
+    "publicationApproved": false
+  },
+  "publicationPrerequisites": [
+    "Решение автора по20вопросам и отдельным замечаниям; изменения формулировок без просьбы запрещены.",
+    "После принятия — встраивание/подписи/подсказки и отдельное разрешение публикации."
+  ],
+  "manifestHash": "a3e74033429e222e079911f482fe8770144f6e8d9873bf85a70abb1502842ddd"
+}
