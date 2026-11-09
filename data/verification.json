@@ -3498,12 +3498,40 @@
   "2020-21-mun-lenobl-9": {
     "optionId": "o3",
     "state": "verified",
-    "explanation": "По переписи 2010 года, на которую опирались в 2020–2021 годах, в России жили представители 193 национальностей — «более 190» (190 多).",
+    "explanation": "По итогам Всероссийской переписи населения 2010 года в России были учтены 193 национальности. Национальную принадлежность опрашиваемые определяли сами; её учитывали отдельно от гражданства.",
     "evidence": [
       {
         "title": "Национальностей может стать больше — Пермьстат (Росстат), 2021",
         "url": "https://59.rosstat.gov.ru/storage/mediabank/FKj12lE9/2021.03.26%20%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9%20%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5.pdf",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "Росстат — История переписей России",
+        "url": "https://rosstat.gov.ru/folder/313/document/171091",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "в 2010 году было 193 национальности"
+      },
+      {
+        "title": "Пермьстат — Национальная принадлежность в переписи",
+        "url": "https://59.rosstat.gov.ru/folder/67637/document/117328?print=1",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "в России проживало уже 182 народа. По итогам 2010 года это число снова выросло до 193."
+      },
+      {
+        "title": "Комистат — Перепись населения 2010 года: национальный состав",
+        "url": "https://11.rosstat.gov.ru/storage/folder_page/2018/12-25/vzY9WJ6V/information_for_media_2010/2011/20111226_5bb9db804cdcb5a4b001ba49c24a3eb2.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "ответы были систематизированы примерно в 190 национальностей"
+      },
+      {
+        "title": "Росстат — Переписной лист формы Л, перепись 2010",
+        "url": "https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol1/l1.pdf",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "6. Ваше гражданство; 7. Ваша национальная принадлежность. По самоопределению в соответствии со ст. 26 Конституции РФ"
       }
     ],
     "wave": 8
@@ -3545,6 +3573,22 @@
         "title": "哈尔滨市 — 维基百科",
         "url": "https://zh.wikipedia.org/zh-cn/%E5%93%88%E5%B0%94%E6%BB%A8%E5%B8%82",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "省情概况 — 黑龙江省人民政府",
+        "url": "https://www.hlj.gov.cn/hlj/c108476/202005/c00_30550923.shtml",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "黑龙江省，简称黑。省会哈尔滨。",
+        "verificationMethod": "fresh-web-open"
+      },
+      {
+        "title": "哈尔滨概况 — 黑龙江省委省直机关工委，来源哈尔滨市人民政府网",
+        "url": "https://ljjgdj.gov.cn/system/202607/131221.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "哈尔滨位处中国东北，黑龙江省西南部，是黑龙江省的省会，副省级市",
+        "verificationMethod": "fresh-web-indexed-text"
       }
     ],
     "wave": 8
@@ -3617,6 +3661,22 @@
         "title": "厦门市 — 维基百科",
         "url": "https://zh.wikipedia.org/zh-cn/%E5%8E%A6%E9%97%A8%E5%B8%82",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "地理环境 — 厦门市委党史和地方志研究室，来源厦门市人民政府",
+        "url": "https://xm.fjdsfzw.org.cn/2024-09-05/content_151790.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "厦门市境域由福建省东南部沿厦门湾的大陆地区和厦门岛、鼓浪屿等岛屿以及厦门湾组成。",
+        "verificationMethod": "fresh-web-indexed-text"
+      },
+      {
+        "title": "Kulangsu, a Historic International Settlement — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/1541/",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "Date of Inscription: 2017",
+        "verificationMethod": "fresh-web-indexed-full-text"
       }
     ],
     "wave": 8
@@ -4995,6 +5055,14 @@
         "title": "中华人民共和国行政区划 — 维基百科",
         "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+        "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+        "verificationMethod": "fresh-web-indexed-text"
       }
     ],
     "wave": 8
@@ -5633,6 +5701,14 @@
         "title": "中国地理 — 维基百科",
         "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E5%9C%B0%E7%90%86",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "中国的近海 — 中国科学院地理科学与资源研究所",
+        "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692452.html",
+        "checkedAt": "2026-11-08",
+        "authority": "academic",
+        "quote": "中国近海包括渤海、黄海、东海和南海。",
+        "verificationMethod": "fresh-web-open"
       }
     ],
     "wave": 8
@@ -5664,6 +5740,62 @@
         "title": "古琴 — 维基百科",
         "url": "https://zh.wikipedia.org/wiki/%E5%8F%A4%E7%90%B4",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "Listening to Chinese Music — Education Bureau, Hong Kong",
+        "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/arts-edu/resources/mus-curri/listening-to-chinese-music-e.pdf",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "The erhu has two strings.",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "Guqin and its music — UNESCO",
+        "url": "https://ich.unesco.org/en/RL/guqin-and-its-music-00061",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "The guqin has seven strings and thirteen marked pitch positions.",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "Kanazawa Sangen — Ishikawa Prefectural Museum of Traditional Arts and Crafts",
+        "url": "https://www.ishikawa-densankan.jp/en/collection/collection-238/",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "Also known as the Shamisen, it is an essential instrument for the traditional Japanese music",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "尺八 — 文化庁文化遺産オンライン",
+        "url": "https://api.online.bunka.go.jp/heritages/detail/430687",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "尺八は、雅楽の左方・唐楽（とうがく）で用いられる縦笛",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "Korean Folk Performance for Visitors — National Folk Museum of Korea",
+        "url": "https://nfm.go.kr/site/home/pdfview/folk202506.pdf",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "Korean instruments such as Geomungo (6-stringed zither), Gayageum (12-stringed zither)",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "Instruments Gallery — University of Delhi",
+        "url": "https://music.du.ac.in/museum/museum.php",
+        "checkedAt": "2026-11-08",
+        "authority": "academic",
+        "quote": "instruments used in Indian Classical Music",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "Sitar — Museo Azzarini, Universidad Nacional de La Plata",
+        "url": "https://yold.unlp.edu.ar/museo_azzarini/texto_ingles_azzarini_sitar-6641",
+        "checkedAt": "2026-11-08",
+        "authority": "academic",
+        "quote": "Together with the tambura lute and the tabla membranophones it constitutes the typical musical group",
+        "verificationMethod": "fresh-web-search-result-text"
       }
     ],
     "wave": 8
@@ -5810,7 +5942,7 @@
   "2022-23-mun-lenobl-59": {
     "optionId": "o3",
     "state": "verified",
-    "explanation": "Лена (列娜河, чаще 勒拿河) длиной около 4400 км — самая крупная из рек России, бассейн которой целиком лежит в пределах страны; она течёт по Восточной Сибири и впадает в море Лаптевых.",
+    "explanation": "Лена (勒拿河) длиной около 4400 км — самая длинная река, целиком протекающая по территории России. Она впадает в море Лаптевых, образуя крупнейшую в России дельту.",
     "evidence": [
       {
         "title": "Лена — Википедия",
@@ -5821,6 +5953,41 @@
         "title": "Волга — Википедия",
         "url": "https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%BB%D0%B3%D0%B0",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "Росстат — Россия 2025, Самые длинные реки",
+        "url": "https://rosstat.gov.ru/storage/mediabank/Rossia_2025.pdf",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "Лена | 4,4"
+      },
+      {
+        "title": "БРЭ — Лена",
+        "url": "https://bigenc.ru/c/lena-reka-dfef5c",
+        "checkedAt": "2026-11-08",
+        "authority": "academic",
+        "quote": "При впадении в море Лаптевых Лена образует самую большую в России дельту (площадь более 30 тыс. км²)"
+      },
+      {
+        "title": "БРЭ — Волга",
+        "url": "https://bigenc.ru/c/volga-9bf6d0",
+        "checkedAt": "2026-11-08",
+        "authority": "academic",
+        "quote": "Впадая в Каспийское море, Волга образует обширную дельту"
+      },
+      {
+        "title": "БРЭ — Обь",
+        "url": "https://bigenc.ru/c/ob-393332",
+        "checkedAt": "2026-11-08",
+        "authority": "academic",
+        "quote": "Образуется слиянием рек Бия и Катунь, берущих начало в горах Алтая."
+      },
+      {
+        "title": "Институт водных проблем РАН — Общие сведения о реке Енисей",
+        "url": "https://www.iwp.ru/upload/iblock/7c2/7c25d68e575b12087541fe5e496c684c.pdf",
+        "checkedAt": "2026-11-08",
+        "authority": "academic",
+        "quote": "Енисей образуется слиянием Большого (Бей-Кем) и Малого (Ха-Кем) Енисея у г. Кызыл в 3487 км от устья."
       }
     ],
     "wave": 8
@@ -5936,12 +6103,40 @@
   "2022-23-mun-orel-2": {
     "optionId": "o2",
     "state": "verified",
-    "explanation": "Дипломатические отношения с КНР установлены в 1949 году: 2 октября 1949 года Советский Союз первым в мире признал Китайскую Народную Республику, а Россия продолжает эти отношения как правопреемница СССР.",
+    "explanation": "СССР первым признал Китайскую Народную Республику; дипломатические отношения между двумя государствами установлены 2 октября 1949 года.",
     "evidence": [
       {
         "title": "Китайско-российские отношения — Википедия",
         "url": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%BE-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B5_%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D1%8F",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "НПКСК — 纪念辛亥革命100周年",
+        "url": "https://www.cppcc.gov.cn/zxww/xinhai100/jlmg/index.shtml",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "1912年元旦，孙中山在南京发布《临时大总统宣言书》、《告全国同胞书》等文件，正式宣告中华民国的诞生。"
+      },
+      {
+        "title": "МИД КНР — 开国大典的彩色胶片",
+        "url": "https://www.mfa.gov.cn/ziliao_674904/zt_674979/dnzt_674981/qtzt/zggcddwjw100ggs/jszgddzg/202208/t20220824_10750397.shtml",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "苏联是最早承认中华人民共和国的国家。1949年10月2号，中苏正式建交。"
+      },
+      {
+        "title": "МИД КНР — 2月14日",
+        "url": "https://www.mfa.gov.cn/ziliao_674904/historytoday_674971/200302/t20030214_7948993.shtml",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "1950年2月14日，《中苏友好同盟互助条约》在莫斯科签订。"
+      },
+      {
+        "title": "МИД КНР — 5月21日",
+        "url": "https://www.mfa.gov.cn/ziliao_674904/historytoday_674971/200305/t20030521_9284573.shtml",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "1951年5月21日，中国同巴基斯坦伊斯兰共和国建交。"
       }
     ],
     "wave": 8
@@ -6373,6 +6568,22 @@
         "title": "拉萨市 — 维基百科",
         "url": "https://zh.wikipedia.org/wiki/%E6%8B%89%E8%90%A8%E5%B8%82",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "Чжан Юнцзян (张永江), «Об эволюции административной системы Тибета при Цин» — Институт истории Цин, Китайский народный университет",
+        "url": "https://iqh.ruc.edu.cn/old/qdzzsyj/gjzz/9162d9a66ff64279bdd40b41d36bbed6.htm",
+        "checkedAt": "2026-11-08",
+        "authority": "academic",
+        "quote": "由于政教合一的历史传统，拉萨既是全藏的宗教中心，也是政治中心",
+        "verificationMethod": "exact quote verified in previous read-only screening; reused for this focused revision"
+      },
+      {
+        "title": "Lhasa: The Potala Palace and the Jokhang Temple Monastery — ICOMOS evaluation2000, UNESCO",
+        "url": "https://whc.unesco.org/document/1076",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "their role as the political, economic, cultural, and religious centre of Tibet",
+        "verificationMethod": "fresh-web-open+find"
       }
     ],
     "wave": 8
@@ -6843,6 +7054,14 @@
         "title": "День Государственного флага Российской Федерации — Википедия",
         "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BD%D1%8C_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D1%84%D0%BB%D0%B0%D0%B3%D0%B0_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "Президентская библиотека — День Государственного флага Российской Федерации",
+        "url": "https://www.prlib.ru/history/619479",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "установить праздник День Государственного флага и отмечать его ежегодно 22 августа.",
+        "verificationMethod": "reused-locally-verified-full-text"
       }
     ],
     "wave": 8
@@ -6952,6 +7171,62 @@
         "title": "Why Long Fingernails Were All the Rage in Ancient China — Sixth Tone",
         "url": "https://www.sixthtone.com/news/1009319",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "Chinese Fingernail Protectors — U.S. National Park Service",
+        "url": "https://www.nps.gov/long/blogs/chinese-fingernail-protectors.htm",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "Long fingernails were a mark of high status",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "Fingernails and manicures — Pitt Rivers Museum, University of Oxford",
+        "url": "https://bodyarts.prm.ox.ac.uk/bodyarts/index.php/temporary-body-arts/toiletries/52-fingernails-and-manicures.html",
+        "checkedAt": "2026-11-08",
+        "authority": "academic",
+        "quote": "Long fingernails became a status symbol among women, visibly indicating that they had no need to engage in manual labour.",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "金錾古钱纹指甲套 — 故宫博物院",
+        "url": "https://www.dpm.org.cn/collection/jewelry/234286.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "指甲套称护指，又称义甲",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "Footbinding — Australian Museum",
+        "url": "https://australian.museum/about/history/exhibitions/body-art/footbinding/",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "The feet were called lotus of gold if they were 3 inches",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "Denison’s Make-Up Guide — Museum of Chinese in America",
+        "url": "https://www.mocanyc.org/collections/stories/denisons-make-up-guide-for-amateur-and-professional/",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "This hairstyle was a symbol of cultural identity for the Manchu people of China, which was then later imposed upon the Han Chinese",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "关羽铜造像 — 新乡市博物馆",
+        "url": "https://www.xxsbwg.cn/collection/detail/61",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "五绺胡须飘散胸前",
+        "verificationMethod": "fresh-web-search-result-text; full open returned no readable lines"
+      },
+      {
+        "title": "泥塑彩绘关羽像 — 故宫博物院",
+        "url": "https://www.dpm.org.cn/collection/sculpture/234222.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "美须髯，武艺高强，能征善战",
+        "verificationMethod": "fresh-web-search-result-text; direct open timed out"
       }
     ],
     "wave": 8
@@ -7182,6 +7457,46 @@
         "title": "成龍 — 维基百科",
         "url": "https://zh.wikipedia.org/wiki/%E6%88%90%E9%BE%8D",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "香港影人小傳：成龍 — 香港電影資料館",
+        "url": "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/Chinese/Jackie-Chan_c.pdf",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "1976 年簽約羅維的公司，改名「成龍」",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "Jackie Chan — Academy of Motion Picture Arts and Sciences",
+        "url": "https://www.oscars.org/governors-awards/2016/jackie-chan",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "none more successful than the blockbuster Rush Hour series.",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "Bruce Lee: Kung Fu·Art·Life — Hong Kong Heritage Museum",
+        "url": "https://www.museums.gov.hk/en/web/portal/exhibition017.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "he founded his own system, Jeet Kune Do",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "少林寺（4K數碼修復版） — 香港電影資料館",
+        "url": "https://www.filmarchive.gov.hk/tc/web/hkfa/2024/martial/pe-event-2024-martial-fs-film11.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "李連杰成名作",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "甄子丹 — личная страница актёра",
+        "url": "https://www.weibo.com/donnieyen",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "导演、演员，代表作：《叶问》、《精武门》等。",
+        "verificationMethod": "fresh-web-search-result-text"
       }
     ],
     "wave": 8
@@ -7363,6 +7678,41 @@
         "title": "Россия — Википедия",
         "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "Президентская библиотека — Закон РСФСР от 25.12.1991 № 2094-I",
+        "url": "https://www.prlib.ru/item/353944",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "Закон Российской Советской Федеративной Социалистической Республики от 25 декабря 1991 года № 2094-I"
+      },
+      {
+        "title": "Президентская библиотека — РСФСР переименована в Российскую Федерацию",
+        "url": "https://www.prlib.ru/history/619842",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "По закону в течение 1992 г. было разрешено использовать название РСФСР в официальных актах и других документах"
+      },
+      {
+        "title": "Банк России — Годовой отчёт 1998",
+        "url": "https://www.cbr.ru/Collection/Collection/File/7815/ar_1998.pdf",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "Правительство РФ и Банк России 17 августа приняли решение о пересмотре курсовой политики и реструктуризации внутреннего государственного долга."
+      },
+      {
+        "title": "Президентская библиотека / Президент России — Государственный гимн РФ",
+        "url": "https://www.prlib.ru/item/407021",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "Государственный гимн Российской Федерации установлен Федеральным конституционным законом от 25 декабря 2000 года № 3-ФКЗ"
+      },
+      {
+        "title": "Президентская библиотека — Добровольная отставка первого Президента РФ",
+        "url": "https://www.prlib.ru/node/619862",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "31 декабря 1999 г. в 12 часов дня"
       }
     ],
     "wave": 8
@@ -7617,12 +7967,60 @@
   "2023-24-shk-mosobl-10": {
     "optionId": "o2",
     "state": "verified",
-    "explanation": "Вышивкой славится Сучжоу (苏州): сучжоуская вышивка (苏绣) — самая древняя и известная вышивка провинции Цзянсу, одна из десяти знаменитых вышивок Китая, с 2006 года она внесена в список национального нематериального наследия.",
+    "explanation": "Сусю (苏绣) сформировалась в Сучжоу (苏州) и входит в традиционную четвёрку знаменитых вышивок Китая. Для неё характерны, в частности, двусторонние вышитые картины.",
     "evidence": [
       {
         "title": "苏绣 — 维基百科",
         "url": "https://zh.wikipedia.org/wiki/%E8%8B%8F%E7%BB%A3",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "苏绣 — 中国非物质文化遗产网",
+        "url": "https://www.ihchina.cn/project_details/13978.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "苏绣为苏州刺绣之简称，它以产生之地命名",
+        "verificationMethod": "reused-accepted-dossier-source-not-freshly-fetched"
+      },
+      {
+        "title": "苏州的文化艺术——苏绣 — 苏州市地方志办公室",
+        "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201812/84bb1cd237544d82968713e9464bd3dd.shtml",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "与湖南的湘绣、广东的粤绣、四川的蜀绣齐名，被誉为中国四大名绣。",
+        "verificationMethod": "reused-accepted-dossier-source-not-freshly-fetched"
+      },
+      {
+        "title": "中国的四大名绣是什么？ — 中国丝绸博物馆",
+        "url": "https://www.chinasilkmuseum.com/jz/info_15.aspx?itemid=5378",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "双面绣“猫”是苏绣的代表性作品之一。",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "杭州刺绣 — 杭州市档案馆",
+        "url": "https://www.hzarchives.org.cn/info/6940",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "杭绣在刺绣技艺上，吸收并融合苏、湘、蜀、粤四大名绣之长",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "陕西省及西安市文化旅游介绍 — 中国驻捷克共和国大使馆",
+        "url": "https://cz.china-embassy.gov.cn/zxdt/202201/t20220120_10630611.htm",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "西安，陕西省省会，古称长安",
+        "verificationMethod": "reused-accepted-dossier-source-not-freshly-fetched"
+      },
+      {
+        "title": "文脉不断四时春——解码春城昆明的文化自信样本 — 新华网",
+        "url": "https://www.news.cn/local/2023-06/17/c_1129702720.htm",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "明代才子杨慎将昆明四季如春的特质写进诗文",
+        "verificationMethod": "reused-accepted-dossier-source-not-freshly-fetched"
       }
     ],
     "wave": 8
@@ -8377,6 +8775,46 @@
         "title": "葉問 — 维基百科",
         "url": "https://zh.wikipedia.org/wiki/%E8%91%89%E5%95%8F",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "咏春拳(叶问宗支) — 深圳大学体育非物质文化遗产",
+        "url": "https://fy.szu.edu.cn/fyxm/xmlb/wsl/ycq_ywzz_.htm",
+        "checkedAt": "2026-11-08",
+        "authority": "academic",
+        "quote": "1950年，叶问于香港发扬咏春拳，其著名传人有梁相、骆耀、黄淳梁、徐尚田、招允、李振藩(李小龙)、梁挺等",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "叶问——一代武术宗师 — 文史广东",
+        "url": "https://www.gdwsw.gov.cn/rwcq/content/post_28210.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "1968年，叶问主持成立的香港咏春拳体育会",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "洪拳（南海洪拳） — 南海博物馆",
+        "url": "https://www.nhmuseum.org/fei-yi/1417.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "南海历代有铁桥三(梁坤)、黄飞鸿、林世荣、颜殿雄等对洪拳历史影响深远的武术名人。",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "“精武”人聚申城 传承拓展精武文化内涵 — 国家体育总局",
+        "url": "https://www.sport.gov.cn/n20001280/n20745751/n20767239/c21843662/content.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "霍元甲、农劲荪、陈公哲等齐聚沪上，共谋创立精武体育会",
+        "verificationMethod": "fresh-web-search-result-text"
+      },
+      {
+        "title": "河北太极拳简介 — 国家体育总局",
+        "url": "https://www.sport.gov.cn/n14471/n14474/n14511/c699205/content.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "河北人杨露禅，武禹襄、孙禄堂、吴全佑等人在陈氏太极拳基础上创建不同风格特点的杨氏、武氏、孙氏、吴氏太极流派。",
+        "verificationMethod": "fresh-web-search-result-text"
       }
     ],
     "wave": 8
@@ -8416,6 +8854,22 @@
         "title": "北京市 — 维基百科",
         "url": "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%B8%82",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "北平 — 故宫博物院",
+        "url": "https://www.dpm.org.cn/lemmas/241431.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "即今北京。辽代称燕京，后称南京。金代亦称燕京，后称中都。",
+        "verificationMethod": "fresh-web-indexed-text; direct open timeout"
+      },
+      {
+        "title": "The Names of Beijing — 北京市文化和旅游局 VisitBeijing",
+        "url": "https://english.visitbeijing.com.cn/article/47OMhkXlgaL",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "a reference to the ancient State of Yan that existed here during the Zhou Dynasty.",
+        "verificationMethod": "fresh-web-indexed-text"
       }
     ],
     "wave": 8
@@ -9735,12 +10189,47 @@
   "2025-26-mun-irk-3": {
     "optionId": "o2",
     "state": "verified",
-    "explanation": "Кроме Alipay (支付宝), в Китае широко распространена платёжная система WeChat Pay (微信支付), запущенная в 2013 году в мессенджере WeChat (微信).",
+    "explanation": "Alipay (支付宝) и WeChat Pay (微信支付) — два основных способа цифровой оплаты, выделяемые официальными справочниками для приезжающих в Китай. WeChat Pay встроен в приложение WeChat (微信) компании Tencent и работает с 2013 года.",
     "evidence": [
       {
         "title": "微信支付 — 维基百科",
         "url": "https://zh.wikipedia.org/wiki/%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "title": "Шанхайский правительственный портал — Essential apps for living in Shanghai",
+        "url": "https://english.shanghai.gov.cn/en-UsefulApps/20231214/3cac2d8cc7f847da92a72252bae06705.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "WeChat Pay and Alipay are the two major digital payment methods in China."
+      },
+      {
+        "title": "Tencent — QQ",
+        "url": "https://www.tencent.com/products/qq/",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "Launched by Tencent in February 1999, QQ is an instant messaging (IM) and social platform"
+      },
+      {
+        "title": "Tencent — Weixin Pay",
+        "url": "https://www.tencent.com/products/weixin-pay/",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "Weixin Pay is a mobile payment solution jointly launched by Weixin and Tenpay in 2013."
+      },
+      {
+        "title": "China UnionPay — 企业概况",
+        "url": "https://www.unionpay.com/upowhtml/cn/templates/upOverview/upOverview.html",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "2002年3月， 经国务院同意，中国人民银行批准"
+      },
+      {
+        "title": "Alibaba — About Taobao Marketplace",
+        "url": "https://www.alibabagroup.com/en-US/document-1491551592707522560",
+        "checkedAt": "2026-11-08",
+        "authority": "official",
+        "quote": "Launched in May 2003, Taobao Marketplace"
       }
     ],
     "wave": 8

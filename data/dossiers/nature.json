@@ -14,7 +14,8 @@
         "unesco": "zh",
         "era": "zh",
         "about": "ru",
-        "longestcanalname": "zh"
+        "longestcanalname": "zh",
+        "russianlongestrivername": "zh"
       },
       "sides": [
         "mouth",
@@ -1354,10 +1355,25 @@
               "quote": "длиной 3530 км",
               "checkedAt": "2026-10-18",
               "authority": "academic"
+            },
+            {
+              "url": "https://bigenc.ru/c/volga-9bf6d0",
+              "title": "БРЭ — Волга",
+              "quote": "Впадая в Каспийское море, Волга образует обширную дельту",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / options o2 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "russianlongestrivername": {
+            "zh": "伏尔加河",
+            "ru": [
+              "Волга"
+            ],
+            "gloss": "Волга — впадая в Каспийское море, образует обширную дельту."
+          }
         },
         {
           "id": "wat-ru-yenisei",
@@ -1436,10 +1452,25 @@
               "quote": "是北冰洋水系中水量最大的河流流域",
               "checkedAt": "2026-10-18",
               "authority": "academic"
+            },
+            {
+              "url": "https://www.iwp.ru/upload/iblock/7c2/7c25d68e575b12087541fe5e496c684c.pdf",
+              "title": "Институт водных проблем РАН — Общие сведения о реке Енисей",
+              "quote": "Енисей образуется слиянием Большого (Бей-Кем) и Малого (Ха-Кем) Енисея у г. Кызыл в 3487 км от устья.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / options preview-b8-yenisei / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "russianlongestrivername": {
+            "zh": "叶尼塞河",
+            "ru": [
+              "Енисей"
+            ],
+            "gloss": "Енисей — начинается у Кызыла при слиянии Большого и Малого Енисея."
+          }
         },
         {
           "id": "wat-ru-lena",
@@ -1488,12 +1519,60 @@
               "quote": "берёт начало на северо-западном склоне Байкальского хребта … впадает в море Лаптевых",
               "checkedAt": "2026-10-18",
               "authority": "academic"
+            },
+            {
+              "url": "https://bigenc.ru/c/lena-reka-dfef5c",
+              "title": "БРЭ — Лена",
+              "quote": "При впадении в море Лаптевых Лена образует самую большую в России дельту (площадь более 30 тыс. км²)",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / options o3 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            },
+            {
+              "url": "https://rosstat.gov.ru/storage/mediabank/Rossia_2025.pdf",
+              "title": "Росстат — Россия 2025, Самые длинные реки",
+              "quote": "Лена | 4,4",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "note": "В тыс. км: Лена 4,4, Обь 3,7, Волга 3,5, Енисей 3,5; отдельные реки, не суммарные системы.",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / keySources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            },
+            {
+              "url": "https://bigenc.ru/c/volga-9bf6d0",
+              "title": "БРЭ — Волга",
+              "quote": "Впадая в Каспийское море, Волга образует обширную дельту",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / keySources[2]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            },
+            {
+              "url": "https://bigenc.ru/c/ob-393332",
+              "title": "БРЭ — Обь",
+              "quote": "Образуется слиянием рек Бия и Катунь, берущих начало в горах Алтая.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / keySources[3]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            },
+            {
+              "url": "https://www.iwp.ru/upload/iblock/7c2/7c25d68e575b12087541fe5e496c684c.pdf",
+              "title": "Институт водных проблем РАН — Общие сведения о реке Енисей",
+              "quote": "Енисей образуется слиянием Большого (Бей-Кем) и Малого (Ха-Кем) Енисея у г. Кызыл в 3487 км от устья.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / keySources[4]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
             }
           ],
           "olympiad": [
             "2025-26-shk-37-a"
           ],
-          "core": true
+          "core": true,
+          "russianlongestrivername": {
+            "zh": "勒拿河",
+            "ru": [
+              "река Лена"
+            ],
+            "gloss": "Лена — её дельта, крупнейшая в России, занимает более 30 тысяч км²."
+          }
         },
         {
           "id": "wat-ru-ob",
@@ -1572,12 +1651,27 @@
               "quote": "最大的河流是闻名世界的鄂毕河",
               "checkedAt": "2026-10-18",
               "authority": "official"
+            },
+            {
+              "url": "https://bigenc.ru/c/ob-393332",
+              "title": "БРЭ — Обь",
+              "quote": "Образуется слиянием рек Бия и Катунь, берущих начало в горах Алтая.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / options o1 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
             }
           ],
           "olympiad": [
             "addition-b1-19"
           ],
-          "core": true
+          "core": true,
+          "russianlongestrivername": {
+            "zh": "鄂毕河",
+            "ru": [
+              "Обь"
+            ],
+            "gloss": "Обь — образуется при слиянии Бии и Катуни, берущих начало на Алтае."
+          }
         },
         {
           "id": "wat-ru-irtysh",
@@ -1829,6 +1923,70 @@
           ],
           "olympiad": [
             "2020-21-mun-lenobl-2"
+          ]
+        },
+        {
+          "id": "preview-b8-yenisei",
+          "core": false,
+          "name": {
+            "zh": "叶尼塞河",
+            "ru": [
+              "река Енисей"
+            ],
+            "gloss": "Енисей — великая сибирская река, делит Сибирь на западную и восточную",
+            "ref": "nature/waters/wat-ru-yenisei"
+          },
+          "russianlongestrivername": {
+            "zh": "叶尼塞河",
+            "ru": [
+              "Енисей"
+            ],
+            "gloss": "Енисей — начинается у Кызыла при слиянии Большого и Малого Енисея."
+          },
+          "sources": [
+            {
+              "title": "长江经济带绿色生态廊道建设研究 — 地理研究（中国科学院地理科学与资源研究所）",
+              "url": "https://www.dlyj.ac.cn/article/2015/1007-6301/1007-6301-34-11-1356.shtml",
+              "quote": "叶尼塞河 5539 萨彦岭 喀拉海",
+              "checkedAt": "2026-10-18",
+              "authority": "academic"
+            },
+            {
+              "title": "克拉斯诺亚尔斯克边疆区简介 — 驻叶卡捷琳堡总领馆",
+              "url": "https://ekaterinburg.china-consulate.gov.cn/chn/lqgk/klsnyerskbjqjj/202008/t20200814_4210660.htm",
+              "quote": "世界著名的叶尼塞河",
+              "checkedAt": "2026-10-18",
+              "authority": "official"
+            },
+            {
+              "title": "Завершилась экспедиция к истокам сибирской реки Енисей — РГО",
+              "url": "https://rgo.ru/activity/redaction/news/zavershilas-ekspeditsiya-k-istokam-sibirskoy-reki-enisey/",
+              "quote": "склонах хребтов Западного и Восточного Саяна",
+              "checkedAt": "2026-10-18",
+              "authority": "academic"
+            },
+            {
+              "title": "Протяженные, полноводные, интригующие: шесть российских рек — РГО",
+              "url": "https://rgo.ru/activity/redaction/articles/protyazhennye-polnovodnye-intriguyushchie-osobennosti-i-zagadki-shesti-rossiyskikh-rek/",
+              "quote": "Длина Енисея составляет 3487 км … полноводностью превосходит все прочие реки России",
+              "checkedAt": "2026-10-18",
+              "authority": "academic"
+            },
+            {
+              "title": "叶尼塞河流域界线数据 — 全球变化数据大百科（中国科学院）",
+              "url": "https://www.geodoi.ac.cn/webcn/doi.aspx?Id=490",
+              "quote": "是北冰洋水系中水量最大的河流流域",
+              "checkedAt": "2026-10-18",
+              "authority": "academic"
+            },
+            {
+              "url": "https://www.iwp.ru/upload/iblock/7c2/7c25d68e575b12087541fe5e496c684c.pdf",
+              "title": "Институт водных проблем РАН — Общие сведения о реке Енисей",
+              "quote": "Енисей образуется слиянием Большого (Бей-Кем) и Малого (Ха-Кем) Енисея у г. Кызыл в 3487 км от устья.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / options preview-b8-yenisei / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            }
           ]
         }
       ]
@@ -2639,7 +2797,8 @@
         "province": "zh",
         "feature": "zh",
         "unesco": "zh",
-        "about": "ru"
+        "about": "ru",
+        "xiamenislandname": "zh"
       },
       "sides": [
         "province",
@@ -3064,10 +3223,25 @@
               "quote": "崇明岛 位于长江口，面积1 060.5平方千米，为中国第3大岛",
               "checkedAt": "2026-10-18",
               "authority": "academic"
+            },
+            {
+              "title": "崇明区 — 上海市人民政府",
+              "url": "https://www.shanghai.gov.cn/chongming/index.html",
+              "quote": "崇明岛于一千三百多年前在长江口形成",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / options preview-b8-chongming-island / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "checkedAt": "2026-11-08"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "xiamenislandname": {
+            "zh": "崇明岛",
+            "ru": [
+              "Чунминдао"
+            ],
+            "gloss": "Чунминдао — остров в устье Янцзы."
+          }
         },
         {
           "id": "sea-changxingdao",
@@ -3908,6 +4082,210 @@
             }
           ],
           "olympiad": []
+        },
+        {
+          "id": "sea-putuoshan",
+          "name": {
+            "zh": "普陀山",
+            "ru": [
+              "Путошань"
+            ],
+            "gloss": "Путошань — остров архипелага Чжоушань в провинции Чжэцзян.",
+            "ref": "nature/mountains/mtn-putuoshan"
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "kind": {
+            "zh": "岛",
+            "ru": [
+              "остров"
+            ]
+          },
+          "about": "Путошань — остров архипелага Чжоушань в провинции Чжэцзян.",
+          "sources": [
+            {
+              "title": "舟山市普陀山风景区 — 文化和旅游部大众旅游服务栏目",
+              "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang",
+              "quote": "普陀山是浙江东海舟山群岛中的一个小岛",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / options o1 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "海天佛国 南海圣境 神圣普陀山 — 中国网",
+              "url": "http://photo.china.com.cn/2013-09/11/content_29993881.htm",
+              "quote": "并称为中国佛教四大名山，是观世音菩萨教化众生的道场 … 浙江舟山群岛以东的海面上",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "reuse-local: data/dossiers/nature.json / mountains / mtn-putuoshan / sources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            },
+            {
+              "title": "普陀山 — 央视网台湾频道",
+              "url": "https://www.cctv.com/taiwan/20021230/100248.shtml",
+              "quote": "位于浙江省杭州湾以东约100海里 … 全岛面积12.5平方公里 … 佛顶山，海拔约300米",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "reuse-local: data/dossiers/nature.json / mountains / mtn-putuoshan / sources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            }
+          ],
+          "olympiad": [],
+          "core": false,
+          "xiamenislandname": {
+            "zh": "普陀山",
+            "ru": [
+              "Путошань"
+            ],
+            "gloss": "Путошань — остров архипелага Чжоушань в провинции Чжэцзян."
+          }
+        },
+        {
+          "id": "sea-gulangyu",
+          "name": {
+            "zh": "鼓浪屿",
+            "ru": [
+              "Гуланъюй"
+            ],
+            "gloss": "Гуланъюй — историческое международное поселение, в списке ЮНЕСКО с 2017 года."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "kind": {
+            "zh": "岛",
+            "ru": [
+              "остров"
+            ]
+          },
+          "about": "Гуланъюй — историческое международное поселение, в списке ЮНЕСКО с 2017 года.",
+          "sources": [
+            {
+              "title": "Kulangsu, a Historic International Settlement — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1541/",
+              "quote": "Date of Inscription: 2017",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / options o2 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-full-text",
+              "additionalSupportedFact": "Island developed as an international settlement with a mix of architectural styles.",
+              "originalAuthority": "official-unesco",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "地理环境 — 厦门市委党史和地方志研究室，来源厦门市人民政府",
+              "url": "https://xm.fjdsfzw.org.cn/2024-09-05/content_151790.html",
+              "quote": "厦门市境域由福建省东南部沿厦门湾的大陆地区和厦门岛、鼓浪屿等岛屿以及厦门湾组成。",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / keySources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "additionalSupportedFact": "2022年，全市土地面积1699.01平方千米。",
+              "checkedAt": "2026-11-08"
+            }
+          ],
+          "olympiad": [],
+          "core": false,
+          "xiamenislandname": {
+            "zh": "鼓浪屿",
+            "ru": [
+              "Гуланъюй"
+            ],
+            "gloss": "Гуланъюй — историческое международное поселение, в списке ЮНЕСКО с 2017 года."
+          }
+        },
+        {
+          "id": "sea-sun-island",
+          "name": {
+            "zh": "太阳岛",
+            "ru": [
+              "Остров Солнца"
+            ],
+            "gloss": "Остров Солнца — расположен в Харбине.",
+            "ref": "landmarks/sites/lm-cn-sun-island"
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "kind": {
+            "zh": "岛",
+            "ru": [
+              "остров"
+            ]
+          },
+          "about": "Остров Солнца — расположен в Харбине.",
+          "sources": [
+            {
+              "title": "哈尔滨市太阳岛风景区 — 黑龙江省人民政府",
+              "url": "https://www.hlj.gov.cn/hlj/c108519/202503/c00_31816708.shtml",
+              "quote": "哈尔滨市太阳岛风景区",
+              "checkedAt": "2026-10-23",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / options o3 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-open; exact accepted source URL retained"
+            },
+            {
+              "title": "美丽的太阳岛 — 新华网",
+              "url": "http://www.news.cn/info/20240822/0d365e27440a4b0b8a23f6628d428d23/c.html",
+              "quote": "位于哈尔滨市松花江北岸的太阳岛国家湿地公园总面积超过1万公顷",
+              "checkedAt": "2026-10-23",
+              "authority": "official",
+              "verificationMethod": "reuse-local: data/dossiers/landmarks.json / sites / lm-cn-sun-island / sources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            }
+          ],
+          "olympiad": [],
+          "core": false,
+          "xiamenislandname": {
+            "zh": "太阳岛",
+            "ru": [
+              "Остров Солнца"
+            ],
+            "gloss": "Остров Солнца — расположен в Харбине."
+          }
+        },
+        {
+          "id": "preview-b8-chongming-island",
+          "core": false,
+          "name": {
+            "zh": "崇明岛",
+            "ru": [
+              "остров Чунмин"
+            ],
+            "gloss": "Остров Чунмин в устье Янцзы — третий по величине остров Китая",
+            "ref": "nature/seas/sea-chongmingdao"
+          },
+          "xiamenislandname": {
+            "zh": "崇明岛",
+            "ru": [
+              "Чунминдао"
+            ],
+            "gloss": "Чунминдао — остров в устье Янцзы."
+          },
+          "sources": [
+            {
+              "title": "跟着央视，走近丰饶的海岛崇明 — 上海市崇明区人民政府",
+              "url": "https://www.shcm.gov.cn/zjcm/006011/006011003/20250228/06fedfd4-7fcf-4678-b2b6-a1105059616d.html",
+              "quote": "崇明岛位于长江入海口，是中国第三大岛，也是世界最大的河口冲积岛",
+              "checkedAt": "2026-10-18",
+              "authority": "official"
+            },
+            {
+              "title": "美丽中国先锋榜（1）｜上海崇明岛 — 中华人民共和国生态环境部",
+              "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk15/201908/t20190814_728903.html",
+              "quote": "是全世界最大的河口冲积岛，也是中国第三大岛",
+              "checkedAt": "2026-10-18",
+              "authority": "official"
+            },
+            {
+              "title": "中国的岛屿 — Институт географии и природных ресурсов АН Китая (《中国大百科全书·中国地理》)",
+              "url": "http://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692438.html",
+              "quote": "崇明岛 位于长江口，面积1 060.5平方千米，为中国第3大岛",
+              "checkedAt": "2026-10-18",
+              "authority": "academic"
+            },
+            {
+              "title": "崇明区 — 上海市人民政府",
+              "url": "https://www.shanghai.gov.cn/chongming/index.html",
+              "quote": "崇明岛于一千三百多年前在长江口形成",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / options preview-b8-chongming-island / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "checkedAt": "2026-11-08"
+            }
+          ]
         }
       ]
     },

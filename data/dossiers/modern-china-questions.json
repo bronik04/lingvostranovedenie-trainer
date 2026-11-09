@@ -487,5 +487,35 @@
       "verdict": "accept",
       "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Локальное встраивание разрешено, публикация запрещена. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-6-embedding-review."
     }
+  },
+  {
+    "id": "modern-china-q30",
+    "embeds": "2025-26-mun-irk-3",
+    "status": "accepted",
+    "fact": {
+      "table": "digitalplatforms",
+      "row": "platform-weixin",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял последние правки 17вопросов и09.11.2026пряморазрешил публикацию. Условия/варианты/ключи/подписи — immutableacceptedmanifestпартии8. Источники ивстраиваниепроверенытематически; общий выпуск проходитнезависимоеревью."
+    }
+  },
+  {
+    "id": "modern-china-q31",
+    "embeds": "2020-21-mun-lenobl-9",
+    "status": "accepted",
+    "fact": {
+      "table": "censuscounts",
+      "row": "census-russia2010",
+      "ask": "nationalitycount2010"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял последние правки 17вопросов и09.11.2026пряморазрешил публикацию. Условия/варианты/ключи/подписи — immutableacceptedmanifestпартии8. Источники ивстраиваниепроверенытематически; общий выпуск проходитнезависимоеревью."
+    }
   }
 ]

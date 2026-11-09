@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-09",
+  "status": "passed",
+  "questions": 17,
+  "visibleQuestions": 1108,
+  "cards": 136,
+  "options": 544,
+  "chineseQuestionDisplays": 32,
+  "viewports": [
+    1280,
+    375
+  ],
+  "pinyin": [
+    false,
+    true
+  ],
+  "answers": [
+    "correct",
+    "incorrect"
+  ],
+  "pageErrors": [],
+  "htmlSha256": "05cabbec38b45dda14883ff68a709465f3ad8f5ad965f17db882000f04d88915",
+  "cases": [
+    {
+      "width": 1280,
+      "pinyin": false,
+      "correct": false,
+      "cards": 17
+    },
+    {
+      "width": 1280,
+      "pinyin": false,
+      "correct": true,
+      "cards": 17
+    },
+    {
+      "width": 1280,
+      "pinyin": true,
+      "correct": false,
+      "cards": 17
+    },
+    {
+      "width": 1280,
+      "pinyin": true,
+      "correct": true,
+      "cards": 17
+    },
+    {
+      "width": 375,
+      "pinyin": false,
+      "correct": false,
+      "cards": 17
+    },
+    {
+      "width": 375,
+      "pinyin": false,
+      "correct": true,
+      "cards": 17
+    },
+    {
+      "width": 375,
+      "pinyin": true,
+      "correct": false,
+      "cards": 17
+    },
+    {
+      "width": 375,
+      "pinyin": true,
+      "correct": true,
+      "cards": 17
+    }
+  ],
+  "screenshots": [
+    "/tmp/lingvo-batch8-mobile-q11.png",
+    "/tmp/lingvo-batch8-mobile-q16.png"
+  ]
+}

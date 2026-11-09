@@ -2805,7 +2805,11 @@
         "historicagecity": "zh",
         "leninbirthcity": "zh",
         "fareastcity": "zh",
-        "russianportcity": "zh"
+        "russianportcity": "zh",
+        "heilongjiangcapitalcity": "zh",
+        "embroideryschoolcity": "zh",
+        "beijinghistoricname": "zh",
+        "tibetreligiouscity": "zh"
       },
       "sides": [
         "region",
@@ -3079,6 +3083,39 @@
               "quote": "拉萨，古称“逻些”，布达拉宫、大昭寺是它走过近1400年历史的见证。",
               "authority": "official",
               "checkedAt": "2026-10-16"
+            },
+            {
+              "title": "Historic Ensemble of the Potala Palace, Lhasa — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/707",
+              "quote": "Covering 2.5ha in the centre of the old town of Lhasa",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / options o2 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-full-text",
+              "checkedAt": "2026-11-08",
+              "supportedFact": "The described building is the Jokhang Temple Monastery.",
+              "supports": "Джоканг находится в старом городе Лхасы; буддийский религиозный комплекс.",
+              "originalAuthority": "official-unesco"
+            },
+            {
+              "title": "Чжан Юнцзян (张永江), «Об эволюции административной системы Тибета при Цин» — Институт истории Цин, Китайский народный университет",
+              "url": "https://iqh.ruc.edu.cn/old/qdzzsyj/gjzz/9162d9a66ff64279bdd40b41d36bbed6.htm",
+              "quote": "由于政教合一的历史传统，拉萨既是全藏的宗教中心，也是政治中心",
+              "authority": "academic",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / keySources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: exact quote verified in previous read-only screening; reused for this focused revision",
+              "supports": "Традиционная роль Лхасы как религиозного центра всего Тибета; 全藏 = весь Тибет.",
+              "originalAuthority": "academic-primary-author",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "Lhasa: The Potala Palace and the Jokhang Temple Monastery — ICOMOS evaluation2000, UNESCO",
+              "url": "https://whc.unesco.org/document/1076",
+              "quote": "their role as the political, economic, cultural, and religious centre of Tibet",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / keySources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-open+find",
+              "checkedAt": "2026-11-08",
+              "pdfPageZeroIndexed": 172,
+              "printedPage": 165,
+              "supports": "Роль центра Тибета — не просто наличие монастыря или роль центра отдельной тибетской области.",
+              "originalAuthority": "official-icomos-unesco"
             }
           ],
           "olympiad": [
@@ -3087,7 +3124,14 @@
           "core": true,
           "skipSides": [
             "river"
-          ]
+          ],
+          "tibetreligiouscity": {
+            "zh": "拉萨",
+            "ru": [
+              "Лхаса"
+            ],
+            "gloss": "Лхаса — в её старом городе находится буддийский храм Джоканг (大昭寺)."
+          }
         },
         {
           "id": "city-fuzhou",
@@ -3160,7 +3204,14 @@
           "core": true,
           "skipSides": [
             "river"
-          ]
+          ],
+          "heilongjiangcapitalcity": {
+            "zh": "福州",
+            "ru": [
+              "Фучжоу"
+            ],
+            "gloss": "Фучжоу — административный центр провинции Фуцзянь."
+          }
         },
         {
           "id": "city-nanjing",
@@ -3238,6 +3289,14 @@
               "authority": "official",
               "checkedAt": "2026-11-08",
               "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 18 / o3; original: fresh-web-search-result-full-article-text"
+            },
+            {
+              "title": "[我们的长三角]钟山帝王语，良渚耀古今 — 南京市中山陵园管理局",
+              "url": "https://zschina.nanjing.gov.cn/lyzx/202506/t20250611_5583963.html",
+              "quote": "南京，古称“金陵”，又称“建业”或“建康”",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 10 / options o3 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "checkedAt": "2026-11-08"
             }
           ],
           "olympiad": [
@@ -3253,6 +3312,13 @@
               "Нанкин"
             ],
             "gloss": "Нанкин — храм Цзимин восстановили при первом императоре династии Мин"
+          },
+          "beijinghistoricname": {
+            "zh": "金陵",
+            "ru": [
+              "Цзиньлин"
+            ],
+            "gloss": "Цзиньлин — старое название Нанкина."
           }
         },
         {
@@ -3397,6 +3463,31 @@
               "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
               "checkedAt": "2026-11-08",
               "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 5 / o4"
+            },
+            {
+              "url": "https://www.hzarchives.org.cn/info/6940",
+              "title": "杭州刺绣 — 杭州市档案馆",
+              "quote": "杭绣在刺绣技艺上，吸收并融合苏、湘、蜀、粤四大名绣之长",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / options o4 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-search-result-text"
+            },
+            {
+              "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201812/84bb1cd237544d82968713e9464bd3dd.shtml",
+              "title": "苏州的文化艺术——苏绣 — 苏州市地方志办公室",
+              "quote": "与湖南的湘绣、广东的粤绣、四川的蜀绣齐名，被誉为中国四大名绣。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / options o4 / additionalSources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: reused-accepted-dossier-source-not-freshly-fetched"
+            },
+            {
+              "title": "浙江文化研究工程与你同行——文化寻根·约会浙江考古文明⑧ — 浙江省社会科学界联合会",
+              "url": "https://www.zjskw.gov.cn/art/2024/8/29/art_1229515903_60324.html",
+              "quote": "作为彼时政治、经济、文化、科技中心的都城临安（浙江杭州），是南宋繁华与开放的代表。",
+              "authority": "academic",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 10 / options o1 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "originalAuthority": "academic-official",
+              "checkedAt": "2026-11-08"
             }
           ],
           "olympiad": [
@@ -3413,6 +3504,20 @@
               "Ханчжоу"
             ],
             "gloss": "Ханчжоу — новую пагоду Лэйфэн возвели в 2002 году, сохранив внутри руины старой"
+          },
+          "embroideryschoolcity": {
+            "zh": "杭州",
+            "ru": [
+              "Ханчжоу"
+            ],
+            "gloss": "Ханчжоу — здесь есть собственная вышивка хансю, не входящая в традиционную четвёрку."
+          },
+          "beijinghistoricname": {
+            "zh": "临安",
+            "ru": [
+              "Линьань"
+            ],
+            "gloss": "Линьань — название Ханчжоу, столицы Южной Сун."
           }
         },
         {
@@ -3503,6 +3608,14 @@
               "authority": "official",
               "checkedAt": "2026-11-08",
               "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 7 / o3; original: fresh-web-search-result-text"
+            },
+            {
+              "title": "建置沿革 — 西安市人民政府",
+              "url": "https://www.xa.gov.cn/sq/csgk/lsyg/1.html",
+              "quote": "西安古称长安",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 10 / options o4 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "checkedAt": "2026-11-08"
             }
           ],
           "olympiad": [],
@@ -3537,6 +3650,20 @@
               "Сиань"
             ],
             "gloss": "Сиань — Большую пагоду диких гусей построили для сутр Сюаньцзана"
+          },
+          "embroideryschoolcity": {
+            "zh": "西安",
+            "ru": [
+              "Сиань"
+            ],
+            "gloss": "Сиань — древний Чанъань, столица нескольких китайских династий."
+          },
+          "beijinghistoricname": {
+            "zh": "长安",
+            "ru": [
+              "Чанъань"
+            ],
+            "gloss": "Чанъань — древнее название Сианя."
           }
         },
         {
@@ -3608,7 +3735,14 @@
           "core": true,
           "skipSides": [
             "river"
-          ]
+          ],
+          "embroideryschoolcity": {
+            "zh": "昆明",
+            "ru": [
+              "Куньмин"
+            ],
+            "gloss": "Куньмин — центр Юньнани с мягким климатом; его прозвище — «город весны»."
+          }
         },
         {
           "id": "city-haerbin",
@@ -3705,6 +3839,22 @@
               "authority": "academic",
               "checkedAt": "2026-11-08",
               "verificationMethod": "Переиспользована принятая цитата партии 7, №20, o1, прочитанная локально 2026-11-08; страницу в этой подзадаче заново не загружали. Прежняя проверка: fresh-primary-university-museum-indexed-article-text"
+            },
+            {
+              "title": "松花江美景引客万千 — 黑龙江省文化和旅游厅",
+              "url": "https://wlt.hlj.gov.cn/wlt/c114253/202406/c00_31744916.shtml",
+              "quote": "蜿蜒的松花江穿城而过，为哈尔滨增添了无限魅力，也吸引了万千游客。",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 1 / options o2 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "哈尔滨概况 — 黑龙江省委省直机关工委，来源哈尔滨市人民政府网",
+              "url": "https://ljjgdj.gov.cn/system/202607/131221.html",
+              "quote": "哈尔滨位处中国东北，黑龙江省西南部，是黑龙江省的省会，副省级市",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 1 / keySources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "checkedAt": "2026-11-08"
             }
           ],
           "olympiad": [],
@@ -3725,6 +3875,13 @@
               "Харбин"
             ],
             "gloss": "Харбин — в 1898 году сюда перенесли управление строительства КВЖД"
+          },
+          "heilongjiangcapitalcity": {
+            "zh": "哈尔滨",
+            "ru": [
+              "Харбин"
+            ],
+            "gloss": "Харбин — стоит на реке Сунхуацзян (Сунгари)."
           }
         },
         {
@@ -4141,6 +4298,24 @@
               "authority": "official",
               "checkedAt": "2026-11-08",
               "verificationMethod": "reused-accepted-source-not-freshly-fetched; data/review/2026-11-08-regional-batch-6-proposals.json / reviewNumber 18 / o4; original: fresh-web-search-result-full-article-text"
+            },
+            {
+              "title": "北平 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/lemmas/241431.html",
+              "quote": "即今北京。辽代称燕京，后称南京。金代亦称燕京，后称中都。",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 10 / options o2 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text; direct open timeout",
+              "originalAuthority": "official-museum",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "The Names of Beijing — 北京市文化和旅游局 VisitBeijing",
+              "url": "https://english.visitbeijing.com.cn/article/47OMhkXlgaL",
+              "quote": "a reference to the ancient State of Yan that existed here during the Zhou Dynasty.",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 10 / options o2 / additionalSources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "originalAuthority": "official-tourism",
+              "checkedAt": "2026-11-08"
             }
           ],
           "olympiad": [
@@ -4178,6 +4353,13 @@
               "Пекин"
             ],
             "gloss": "Пекин — Юнхэгун стал монастырём тибетского буддизма в XVIII веке"
+          },
+          "beijinghistoricname": {
+            "zh": "燕京",
+            "ru": [
+              "Яньцзин"
+            ],
+            "gloss": "Яньцзин — название восходит к древнему царству Янь."
           }
         },
         {
@@ -4549,10 +4731,65 @@
               "quote": "苏州园林是江南文化的典型代表，苏州也因园林之盛而有“园林之城”的美誉。",
               "authority": "official",
               "checkedAt": "2026-10-17"
+            },
+            {
+              "url": "https://www.ihchina.cn/project_details/13978.html",
+              "title": "苏绣 — 中国非物质文化遗产网",
+              "quote": "苏绣为苏州刺绣之简称，它以产生之地命名",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / options o2 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: reused-accepted-dossier-source-not-freshly-fetched"
+            },
+            {
+              "url": "https://www.chinasilkmuseum.com/jz/info_15.aspx?itemid=5378",
+              "title": "中国的四大名绣是什么？ — 中国丝绸博物馆",
+              "quote": "双面绣“猫”是苏绣的代表性作品之一。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / options o2 / additionalSources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-search-result-text"
+            },
+            {
+              "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201812/84bb1cd237544d82968713e9464bd3dd.shtml",
+              "title": "苏州的文化艺术——苏绣 — 苏州市地方志办公室",
+              "quote": "与湖南的湘绣、广东的粤绣、四川的蜀绣齐名，被誉为中国四大名绣。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / keySources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: reused-accepted-dossier-source-not-freshly-fetched"
+            },
+            {
+              "url": "https://www.hzarchives.org.cn/info/6940",
+              "title": "杭州刺绣 — 杭州市档案馆",
+              "quote": "杭绣在刺绣技艺上，吸收并融合苏、湘、蜀、粤四大名绣之长",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / keySources[3]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-search-result-text"
+            },
+            {
+              "url": "https://cz.china-embassy.gov.cn/zxdt/202201/t20220120_10630611.htm",
+              "title": "陕西省及西安市文化旅游介绍 — 中国驻捷克共和国大使馆",
+              "quote": "西安，陕西省省会，古称长安",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / keySources[4]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: reused-accepted-dossier-source-not-freshly-fetched"
+            },
+            {
+              "url": "https://www.news.cn/local/2023-06/17/c_1129702720.htm",
+              "title": "文脉不断四时春——解码春城昆明的文化自信样本 — 新华网",
+              "quote": "明代才子杨慎将昆明四季如春的特质写进诗文",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / keySources[5]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: reused-accepted-dossier-source-not-freshly-fetched"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "embroideryschoolcity": {
+            "zh": "苏州",
+            "ru": [
+              "Сучжоу"
+            ],
+            "gloss": "Сучжоу — школа сусю знаменита двусторонними вышитыми картинами."
+          }
         },
         {
           "id": "city-xiamen",
@@ -4619,9 +4856,25 @@
               "quote": "今年7月，福建厦门鼓浪屿正式列入世界文化遗产名录。",
               "authority": "official",
               "checkedAt": "2026-10-17"
+            },
+            {
+              "title": "地理环境 — 厦门市委党史和地方志研究室，来源厦门市人民政府",
+              "url": "https://xm.fjdsfzw.org.cn/2024-09-05/content_151790.html",
+              "quote": "厦门市境域由福建省东南部沿厦门湾的大陆地区和厦门岛、鼓浪屿等岛屿以及厦门湾组成。",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 1 / options o3 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "additionalSupportedFact": "2022年，全市土地面积1699.01平方千米。",
+              "checkedAt": "2026-11-08"
             }
           ],
-          "olympiad": []
+          "olympiad": [],
+          "heilongjiangcapitalcity": {
+            "zh": "厦门",
+            "ru": [
+              "Сямэнь"
+            ],
+            "gloss": "Сямэнь — приморский город провинции Фуцзянь."
+          }
         },
         {
           "id": "city-nanning",
@@ -7123,6 +7376,213 @@
           "olympiad": [
             "2025-26-mun-kgd-58"
           ]
+        },
+        {
+          "id": "city-lanzhou",
+          "name": {
+            "zh": "兰州",
+            "ru": [
+              "Ланьчжоу"
+            ],
+            "gloss": "Ланьчжоу — административный центр провинции Ганьсу."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "region": {
+            "zh": "甘肃",
+            "ru": [
+              "провинция Ганьсу"
+            ],
+            "ref": "provinces/provinces/prov-gansu"
+          },
+          "about": "Ланьчжоу — административный центр провинции Ганьсу.",
+          "sources": [
+            {
+              "title": "兰州市 — 工业和信息化部",
+              "url": "https://wap.miit.gov.cn/ztzl/lszt/gjgyyxzdlxcs/csmd/art/2020/art_bc1430039dcf42a6b9fb4c622b634811.html",
+              "quote": "兰州，甘肃省省会",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 1 / options o1 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "兰州概况 — 中国网·一带一路网",
+              "url": "http://ydyl.china.com.cn/2016-11/01/content_39614781.htm",
+              "quote": "兰州，甘肃省省会，甘肃省的政治、文化、经济和科教中心",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reuse-local: data/dossiers/provinces.json / provinces / prov-gansu / sources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            }
+          ],
+          "olympiad": [],
+          "core": false,
+          "heilongjiangcapitalcity": {
+            "zh": "兰州",
+            "ru": [
+              "Ланьчжоу"
+            ],
+            "gloss": "Ланьчжоу — административный центр провинции Ганьсу."
+          }
+        },
+        {
+          "id": "city-nyingchi",
+          "name": {
+            "zh": "林芝",
+            "ru": [
+              "Ньингчи"
+            ],
+            "gloss": "Ньингчи — знаменит весенним цветением персиков."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "region": {
+            "zh": "西藏",
+            "ru": [
+              "Тибетский автономный район"
+            ],
+            "ref": "provinces/provinces/prov-xizang"
+          },
+          "about": "Ньингчи — знаменит весенним цветением персиков.",
+          "sources": [
+            {
+              "title": "林芝各地桃花啥时候盛开？去哪儿赏花？攻略来啦！ — Управление культуры и туризма Ньингчи, официальный сайт города",
+              "url": "https://www.linzhi.gov.cn/linzhi/zmlz/202603/b99cb9b4478d4ec69da29f125361937e.shtml",
+              "quote": "林芝一年一度的桃花季来啦；桃林沿着尼洋河谷铺展开来",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / options o1 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh web indexed article text, 2026-11-08",
+              "supports": "Ежегодное весеннее цветение персиков в Ньингчи.",
+              "originalAuthority": "official-primary-tourism-bureau",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "西藏概况 — 西藏自治区人民政府",
+              "url": "https://www.xizang.gov.cn/rsxz/qqjj/201812/t20181221_34484.html",
+              "quote": "西藏自治区总面积120.28万平方公里，约占全国总面积的八分之一，仅次于新疆，列第二位。现辖6个市（拉萨、日喀则、山南、林芝、昌都、那曲）、1个地区（阿里），有74个县（市、区），首府拉萨。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reuse-local: data/dossiers/provinces.json / provinces / prov-xizang / sources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            }
+          ],
+          "olympiad": [],
+          "core": false,
+          "tibetreligiouscity": {
+            "zh": "林芝",
+            "ru": [
+              "Ньингчи"
+            ],
+            "gloss": "Ньингчи — знаменит весенним цветением персиков."
+          }
+        },
+        {
+          "id": "city-qamdo",
+          "name": {
+            "zh": "昌都",
+            "ru": [
+              "Чамдо"
+            ],
+            "gloss": "Чамдо — здесь находится крупнейший в Кхаме монастырь школы гелуг."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "region": {
+            "zh": "西藏",
+            "ru": [
+              "Тибетский автономный район"
+            ],
+            "ref": "provinces/provinces/prov-xizang"
+          },
+          "about": "Чамдо — здесь находится крупнейший в Кхаме монастырь школы гелуг.",
+          "sources": [
+            {
+              "title": "强巴林寺 — Управление развития туризма Чамдо",
+              "url": "https://lyfz.changdu.gov.cn/cdslyj4/c101493/202005/31f676065d5141cb92e6d87d292f2bfb.shtml",
+              "quote": "强巴林寺是康区建寺最早、规模最大的格鲁派寺院",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / options o3 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh web indexed full article text, 2026-11-08",
+              "supports": "Крупнейший гелугский монастырь Кхама расположен в Чамдо; это значимый региональный религиозный центр, поэтому широкое слово «центр» требует осторожности.",
+              "originalAuthority": "official-primary-tourism-bureau",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "西藏概况 — 西藏自治区人民政府",
+              "url": "https://www.xizang.gov.cn/rsxz/qqjj/201812/t20181221_34484.html",
+              "quote": "西藏自治区总面积120.28万平方公里，约占全国总面积的八分之一，仅次于新疆，列第二位。现辖6个市（拉萨、日喀则、山南、林芝、昌都、那曲）、1个地区（阿里），有74个县（市、区），首府拉萨。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reuse-local: data/dossiers/provinces.json / provinces / prov-xizang / sources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            }
+          ],
+          "olympiad": [],
+          "core": false,
+          "tibetreligiouscity": {
+            "zh": "昌都",
+            "ru": [
+              "Чамдо"
+            ],
+            "gloss": "Чамдо — здесь находится крупнейший в Кхаме монастырь школы гелуг."
+          }
+        },
+        {
+          "id": "city-nagqu",
+          "name": {
+            "zh": "那曲",
+            "ru": [
+              "Нагчу"
+            ],
+            "gloss": "Нагчу — здесь проводят праздник конных состязаний."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "region": {
+            "zh": "西藏",
+            "ru": [
+              "Тибетский автономный район"
+            ],
+            "ref": "provinces/provinces/prov-xizang"
+          },
+          "about": "Нагчу — здесь проводят праздник конных состязаний.",
+          "sources": [
+            {
+              "title": "关于2026年那曲市恰青赛马节场地规划调整及招商安排的公告 — Оргкомитет праздника конных состязаний, сайт горкома Нагчу",
+              "url": "https://nq.xzdw.gov.cn/fbt/gsgg_545/202607/t20260721_685426.html",
+              "quote": "为进一步办好这一深受群众喜爱的草原盛会，今年我们结合城市发展和生态保护实际，对赛马节场地规划进行了全面优化调整",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / options o4 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh web indexed full organizer announcement, 2026-11-08",
+              "supports": "В Нагчу проводится крупный местный праздник конных состязаний.",
+              "originalAuthority": "official-primary-event-organizer",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "西藏概况 — 西藏自治区人民政府",
+              "url": "https://www.xizang.gov.cn/rsxz/qqjj/201812/t20181221_34484.html",
+              "quote": "西藏自治区总面积120.28万平方公里，约占全国总面积的八分之一，仅次于新疆，列第二位。现辖6个市（拉萨、日喀则、山南、林芝、昌都、那曲）、1个地区（阿里），有74个县（市、区），首府拉萨。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reuse-local: data/dossiers/provinces.json / provinces / prov-xizang / sources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            },
+            {
+              "title": "2026年那曲市恰青赛马节时间定了！ — Департамент культуры и туризма Тибета",
+              "url": "https://wlt.xizang.gov.cn/xccx/lytg/202607/t20260729_551882.html",
+              "quote": "本届那曲市恰青赛马节将于8月1日至12日在那曲市格萨尔赛马场隆重举行",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-08-regional-batch-8-author-feedback.json / q19SourcePackage / sources / nagqu-annual; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh web indexed full article text, 2026-11-08",
+              "supports": "Место проведения — Нагчу; подтверждает праздник конных состязаний без привязки подписи к конкретной дате.",
+              "checkedAt": "2026-11-08"
+            }
+          ],
+          "olympiad": [],
+          "core": false,
+          "tibetreligiouscity": {
+            "zh": "那曲",
+            "ru": [
+              "Нагчу"
+            ],
+            "gloss": "Нагчу — здесь проводят праздник конных состязаний."
+          }
         }
       ]
     },
@@ -7845,7 +8305,9 @@
         "officialtimecount": "zh",
         "landneighborcount": "zh",
         "provincialcount": "zh",
-        "about": "ru"
+        "about": "ru",
+        "seacount": "zh",
+        "provincecount": "zh"
       },
       "sides": [],
       "rows": [
@@ -7926,6 +8388,22 @@
               "authority": "official",
               "checkedAt": "2026-11-08",
               "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 15 option preview-mainland-31; original: fresh-primary-statistical-bulletin-indexed-text; notes [1] and [5]"
+            },
+            {
+              "title": "中国的近海 — 中国科学院地理科学与资源研究所",
+              "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692452.html",
+              "quote": "中国近海包括渤海、黄海、东海和南海。",
+              "authority": "academic",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 7 keySources; original: fresh-web-open",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "中华人民共和国版图 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652712.htm",
+              "quote": "领海由渤海(内海)和黄海、东海、南海三大边海组成，东部和南部大陆海岸线1.8万千米。",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
             }
           ],
           "core": false,
@@ -7933,7 +8411,15 @@
             "2025-26-mun-irk-2",
             "2025-26-mun-sverd-56",
             "2022-23-mun-lenobl-58"
-          ]
+          ],
+          "seacount": {
+            "zh": "4",
+            "gloss": "4 — Бохайское, Жёлтое, Восточно-Китайское и Южно-Китайское моря."
+          },
+          "provincecount": {
+            "zh": "23",
+            "gloss": "23 — входят в 34 административные единицы провинциального уровня."
+          }
         },
         {
           "id": "geocount-alternative-1",
@@ -8009,9 +8495,33 @@
               "authority": "official",
               "checkedAt": "2026-11-08",
               "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 15 option preview-mainland-31; original: fresh-primary-statistical-bulletin-indexed-text; notes [1] and [5]; contextual count alternatives: Восемь — реальное смещение UTC+8. 10 = 14 − 4; 23 — официальный счёт провинций, не всех единиц."
+            },
+            {
+              "title": "中国的近海 — 中国科学院地理科学与资源研究所",
+              "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692452.html",
+              "quote": "中国近海包括渤海、黄海、东海和南海。",
+              "authority": "academic",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 7 keySources; original: fresh-web-open",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "中华人民共和国版图 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652712.htm",
+              "quote": "领海由渤海(内海)和黄海、东海、南海三大边海组成，东部和南部大陆海岸线1.8万千米。",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
             }
           ],
-          "core": false
+          "core": false,
+          "seacount": {
+            "zh": "5",
+            "gloss": "5 — на одно море больше принятого в китайской географии числа."
+          },
+          "provincecount": {
+            "zh": "21",
+            "gloss": "21 — на 2 меньше официального числа провинций."
+          }
         },
         {
           "id": "geocount-alternative-2",
@@ -8087,9 +8597,33 @@
               "authority": "official",
               "checkedAt": "2026-11-08",
               "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 15 option preview-mainland-31; original: fresh-primary-statistical-bulletin-indexed-text; notes [1] and [5]; contextual count alternatives: 3 = 1 + 2; 17 = 14 + 3; 32 = 34 − 2. Источники подтверждают основание подсчёта; значения 3 и 17 не приписаны отдельным географическим фактам."
+            },
+            {
+              "title": "中国的近海 — 中国科学院地理科学与资源研究所",
+              "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692452.html",
+              "quote": "中国近海包括渤海、黄海、东海和南海。",
+              "authority": "academic",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 7 keySources; original: fresh-web-open",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "中华人民共和国版图 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652712.htm",
+              "quote": "领海由渤海(内海)和黄海、东海、南海三大边海组成，东部和南部大陆海岸线1.8万千米。",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
             }
           ],
-          "core": false
+          "core": false,
+          "seacount": {
+            "zh": "3",
+            "gloss": "3 — на одно море меньше принятого в китайской географии числа."
+          },
+          "provincecount": {
+            "zh": "19",
+            "gloss": "19 — на 4 меньше официального числа провинций."
+          }
         },
         {
           "id": "preview-mainland-31",
@@ -8165,6 +8699,40 @@
               "authority": "official",
               "checkedAt": "2026-11-08",
               "verificationMethod": "reused-author-accepted-batch7-source; manifest reviewNumber 15 option preview-mainland-31; original: fresh-primary-statistical-bulletin-indexed-text; notes [1] and [5]; contextual count alternatives: 11 = 1 + 10; 19 = 14 + 5. 31 — реальный материковый статистический охват без Гонконга, Макао и Тайваня. Источники не приписывают 11 и 19 отдельным географическим фактам."
+            }
+          ],
+          "core": false,
+          "provincecount": {
+            "zh": "24",
+            "gloss": "24 — на 1 больше официального числа провинций."
+          }
+        },
+        {
+          "id": "preview-b8-six-seas",
+          "name": {
+            "zh": "6"
+          },
+          "seacount": {
+            "zh": "6",
+            "gloss": "6 — на два моря больше принятого в китайской географии числа."
+          },
+          "about": "Числовое значение для сравнения с четырьмя морями Китая: 6 = 4 + 2. Строка не обозначает другую страну или иную географическую классификацию.",
+          "sources": [
+            {
+              "title": "中国的近海 — 中国科学院地理科学与资源研究所",
+              "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692452.html",
+              "quote": "中国近海包括渤海、黄海、东海和南海。",
+              "authority": "academic",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 7 keySources; original: fresh-web-open; numeric display alternative 6 = 4 + 2; not the sea count of another country",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "中华人民共和国版图 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652712.htm",
+              "quote": "领海由渤海(内海)和黄海、东海、南海三大边海组成，东部和南部大陆海岸线1.8万千米。",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09; numeric display alternative 6 = 4 + 2; not the sea count of another country"
             }
           ],
           "core": false

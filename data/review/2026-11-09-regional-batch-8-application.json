@@ -1,0 +1,1389 @@
+{
+  "reviewId": "regional-2026-11-08-batch-8",
+  "date": "2026-11-09",
+  "state": "validated-ready-for-publication",
+  "publicationAuthorized": true,
+  "selectedCount": 17,
+  "visibleBefore": 1091,
+  "expectedVisibleAfter": 1108,
+  "fullBank": 1269,
+  "approvedManifestHash": "3e051c58d68f90a3f906b4fc78666ebcf9314e32f9828ebd6da80a087735e7f7",
+  "items": [
+    {
+      "reviewNumber": 1,
+      "questionId": "2020-21-mun-mosobl-47",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q150",
+      "status": "accepted",
+      "fact": {
+        "table": "cities",
+        "row": "city-haerbin",
+        "ask": "heilongjiangcapitalcity"
+      },
+      "optionRows": {
+        "o1": "city-lanzhou",
+        "o2": "city-haerbin",
+        "o3": "city-xiamen",
+        "o4": "city-fuzhou"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 3,
+      "questionId": "2022-23-mun-orel-2",
+      "dossier": "modern-history",
+      "dossierQuestion": "modern-history-q129",
+      "status": "accepted",
+      "fact": {
+        "table": "diplomaticdates",
+        "row": "diplomatic-cnussr1949",
+        "ask": "year"
+      },
+      "optionRows": {
+        "o1": "diplomatic-roc1912",
+        "o2": "diplomatic-cnussr1949",
+        "o3": "diplomatic-cnussr-treaty1950",
+        "o4": "diplomatic-cnpakistan1951"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 5,
+      "questionId": "2024-25-mun-krym-4",
+      "dossier": "people",
+      "dossierQuestion": "people-q38",
+      "status": "accepted",
+      "fact": {
+        "table": "martialartists",
+        "row": "martial-ipman",
+        "ask": "wingchunmaster"
+      },
+      "optionRows": {
+        "o1": "martial-ipman",
+        "o2": "martial-huangfeihong",
+        "o3": "martial-huoyuanjia",
+        "o4": "martial-yangluchan"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 6,
+      "questionId": "2023-24-mun-chel-7",
+      "dossier": "holidays",
+      "dossierQuestion": "holidays-q57",
+      "status": "accepted",
+      "fact": {
+        "table": "russiancivicdates",
+        "row": "civic-ru-flagday",
+        "ask": "date"
+      },
+      "optionRows": {
+        "o1": "civic-ru-russiaday",
+        "o2": "civic-ru-unityday",
+        "o3": "civic-ru-flagday",
+        "o4": "civic-ru-constitutionday"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 7,
+      "questionId": "2022-23-mun-kam-7",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q151",
+      "status": "accepted",
+      "fact": {
+        "table": "geocounts",
+        "row": "geocount-china",
+        "ask": "seacount"
+      },
+      "optionRows": {
+        "o1": "geocount-alternative-1",
+        "o2": "geocount-alternative-2",
+        "o3": "geocount-china",
+        "preview-b8-six-seas": "preview-b8-six-seas"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 8,
+      "questionId": "2023-24-shk-mosobl-10",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q152",
+      "status": "accepted",
+      "fact": {
+        "table": "cities",
+        "row": "city-suzhou",
+        "ask": "embroideryschoolcity"
+      },
+      "optionRows": {
+        "o1": "city-xian",
+        "o2": "city-suzhou",
+        "o3": "city-kunming",
+        "o4": "city-hangzhou"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 9,
+      "questionId": "2025-26-mun-irk-3",
+      "dossier": "modern-china",
+      "dossierQuestion": "modern-china-q30",
+      "status": "accepted",
+      "fact": {
+        "table": "digitalplatforms",
+        "row": "platform-weixin",
+        "ask": "name"
+      },
+      "optionRows": {
+        "o1": "platform-qq",
+        "o2": "platform-weixin",
+        "o3": "platform-unionpay",
+        "o4": "platform-taobao"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 10,
+      "questionId": "2024-25-mun-kursk-2",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q153",
+      "status": "accepted",
+      "fact": {
+        "table": "cities",
+        "row": "city-beijing",
+        "ask": "beijinghistoricname"
+      },
+      "optionRows": {
+        "o1": "city-hangzhou",
+        "o2": "city-beijing",
+        "o3": "city-nanjing",
+        "o4": "city-xian"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 11,
+      "questionId": "2022-23-mun-krsk-2",
+      "dossier": "sets",
+      "dossierQuestion": "sets-q17",
+      "status": "accepted",
+      "fact": {
+        "table": "instrumentpairs",
+        "row": "instrumentpair-china",
+        "ask": "traditionalpair"
+      },
+      "optionRows": {
+        "o1": "instrumentpair-japan",
+        "o2": "instrumentpair-korea",
+        "o3": "instrumentpair-india",
+        "o4": "instrumentpair-china"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 12,
+      "questionId": "2022-23-mun-lenobl-59",
+      "dossier": "nature",
+      "dossierQuestion": "nature-q171",
+      "status": "accepted",
+      "fact": {
+        "table": "waters",
+        "row": "wat-ru-lena",
+        "ask": "russianlongestrivername"
+      },
+      "optionRows": {
+        "o1": "wat-ru-ob",
+        "o2": "wat-ru-volga",
+        "o3": "wat-ru-lena",
+        "preview-b8-yenisei": "preview-b8-yenisei"
+      },
+      "exclude": [
+        "wat-ru-yenisei"
+      ]
+    },
+    {
+      "reviewNumber": 13,
+      "questionId": "2021-22-mun-volog-9",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q154",
+      "status": "accepted",
+      "fact": {
+        "table": "geocounts",
+        "row": "geocount-china",
+        "ask": "provincecount"
+      },
+      "optionRows": {
+        "o1": "geocount-alternative-1",
+        "o2": "geocount-alternative-2",
+        "o3": "geocount-china",
+        "o4": "preview-mainland-31"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 14,
+      "questionId": "2023-24-mun-klg-3",
+      "dossier": "crafts",
+      "dossierQuestion": "crafts-q144",
+      "status": "accepted",
+      "fact": {
+        "table": "bodycustoms",
+        "row": "bodycustom-nails",
+        "ask": "statuslength"
+      },
+      "optionRows": {
+        "o1": "bodycustom-beard",
+        "o2": "bodycustom-nails",
+        "o3": "bodycustom-feet",
+        "o4": "bodycustom-hair"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 15,
+      "questionId": "2023-24-mun-udm-5",
+      "dossier": "modern-history",
+      "dossierQuestion": "modern-history-q130",
+      "status": "accepted",
+      "fact": {
+        "table": "russianmilestones",
+        "row": "mile-ru-rename1991",
+        "ask": "year"
+      },
+      "optionRows": {
+        "o1": "mile-ru-rename1991",
+        "o2": "mile-ru-crisis1998",
+        "o3": "mile-ru-anthem2000",
+        "o4": "mile-ru-yeltsin-resignation1999"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 16,
+      "questionId": "2020-21-mun-mosobl-55",
+      "dossier": "nature",
+      "dossierQuestion": "nature-q172",
+      "status": "accepted",
+      "fact": {
+        "table": "seas",
+        "row": "sea-gulangyu",
+        "ask": "xiamenislandname"
+      },
+      "optionRows": {
+        "o1": "sea-putuoshan",
+        "o2": "sea-gulangyu",
+        "o3": "sea-sun-island",
+        "preview-b8-chongming-island": "preview-b8-chongming-island"
+      },
+      "exclude": [
+        "sea-chongmingdao"
+      ]
+    },
+    {
+      "reviewNumber": 18,
+      "questionId": "2020-21-mun-lenobl-9",
+      "dossier": "modern-china",
+      "dossierQuestion": "modern-china-q31",
+      "status": "accepted",
+      "fact": {
+        "table": "censuscounts",
+        "row": "census-russia2010",
+        "ask": "nationalitycount2010"
+      },
+      "optionRows": {
+        "o1": "census-range170",
+        "o2": "census-range180",
+        "o3": "census-russia2010",
+        "o4": "census-range200"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 19,
+      "questionId": "2022-23-shk-mosobl-20",
+      "dossier": "provinces",
+      "dossierQuestion": "provinces-q155",
+      "status": "accepted",
+      "fact": {
+        "table": "cities",
+        "row": "city-lasa",
+        "ask": "tibetreligiouscity"
+      },
+      "optionRows": {
+        "o1": "city-nyingchi",
+        "o2": "city-lasa",
+        "o3": "city-qamdo",
+        "o4": "city-nagqu"
+      },
+      "exclude": []
+    },
+    {
+      "reviewNumber": 20,
+      "questionId": "2023-24-mun-mosobl-6",
+      "dossier": "people",
+      "dossierQuestion": "people-q39",
+      "status": "accepted",
+      "fact": {
+        "table": "martialartists",
+        "row": "martial-jackiechan",
+        "ask": "actorname"
+      },
+      "optionRows": {
+        "o1": "martial-brucelee",
+        "o2": "martial-jetli",
+        "o3": "martial-jackiechan",
+        "o4": "martial-donnieyen"
+      },
+      "exclude": []
+    }
+  ],
+  "addedOptionAliases": [
+    {
+      "reviewNumber": 12,
+      "approvedOptionId": "preview-b8-yenisei",
+      "canonicalRow": "nature/waters/wat-ru-yenisei",
+      "reason": "Сохранён согласованный ID нового четвёртого варианта; alias name.ref обозначает прежнюю каноническую сущность."
+    },
+    {
+      "reviewNumber": 16,
+      "approvedOptionId": "preview-b8-chongming-island",
+      "canonicalRow": "nature/seas/sea-chongmingdao",
+      "reason": "Сохранён согласованный ID нового четвёртого варианта; alias name.ref обозначает прежнюю каноническую сущность."
+    }
+  ],
+  "newRows": [
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-lanzhou"
+    },
+    {
+      "dossier": "nature",
+      "table": "seas",
+      "row": "sea-putuoshan"
+    },
+    {
+      "dossier": "nature",
+      "table": "seas",
+      "row": "sea-gulangyu"
+    },
+    {
+      "dossier": "nature",
+      "table": "seas",
+      "row": "sea-sun-island"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-nyingchi"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-qamdo"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-nagqu"
+    },
+    {
+      "dossier": "people",
+      "table": "martialartists",
+      "row": "martial-ipman"
+    },
+    {
+      "dossier": "people",
+      "table": "martialartists",
+      "row": "martial-huangfeihong"
+    },
+    {
+      "dossier": "people",
+      "table": "martialartists",
+      "row": "martial-huoyuanjia"
+    },
+    {
+      "dossier": "people",
+      "table": "martialartists",
+      "row": "martial-yangluchan"
+    },
+    {
+      "dossier": "sets",
+      "table": "instrumentpairs",
+      "row": "instrumentpair-japan"
+    },
+    {
+      "dossier": "sets",
+      "table": "instrumentpairs",
+      "row": "instrumentpair-korea"
+    },
+    {
+      "dossier": "sets",
+      "table": "instrumentpairs",
+      "row": "instrumentpair-india"
+    },
+    {
+      "dossier": "sets",
+      "table": "instrumentpairs",
+      "row": "instrumentpair-china"
+    },
+    {
+      "dossier": "crafts",
+      "table": "bodycustoms",
+      "row": "bodycustom-beard"
+    },
+    {
+      "dossier": "crafts",
+      "table": "bodycustoms",
+      "row": "bodycustom-nails"
+    },
+    {
+      "dossier": "crafts",
+      "table": "bodycustoms",
+      "row": "bodycustom-feet"
+    },
+    {
+      "dossier": "crafts",
+      "table": "bodycustoms",
+      "row": "bodycustom-hair"
+    },
+    {
+      "dossier": "people",
+      "table": "martialartists",
+      "row": "martial-brucelee"
+    },
+    {
+      "dossier": "people",
+      "table": "martialartists",
+      "row": "martial-jetli"
+    },
+    {
+      "dossier": "people",
+      "table": "martialartists",
+      "row": "martial-jackiechan"
+    },
+    {
+      "dossier": "people",
+      "table": "martialartists",
+      "row": "martial-donnieyen"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "diplomaticdates",
+      "row": "diplomatic-roc1912"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "diplomaticdates",
+      "row": "diplomatic-cnussr1949"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "diplomaticdates",
+      "row": "diplomatic-cnussr-treaty1950"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "diplomaticdates",
+      "row": "diplomatic-cnpakistan1951"
+    },
+    {
+      "dossier": "holidays",
+      "table": "russiancivicdates",
+      "row": "civic-ru-russiaday"
+    },
+    {
+      "dossier": "holidays",
+      "table": "russiancivicdates",
+      "row": "civic-ru-unityday"
+    },
+    {
+      "dossier": "holidays",
+      "table": "russiancivicdates",
+      "row": "civic-ru-flagday"
+    },
+    {
+      "dossier": "holidays",
+      "table": "russiancivicdates",
+      "row": "civic-ru-constitutionday"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geocounts",
+      "row": "preview-b8-six-seas"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "digitalplatforms",
+      "row": "platform-qq"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "digitalplatforms",
+      "row": "platform-weixin"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "digitalplatforms",
+      "row": "platform-unionpay"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "digitalplatforms",
+      "row": "platform-taobao"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "russianmilestones",
+      "row": "mile-ru-rename1991"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "russianmilestones",
+      "row": "mile-ru-crisis1998"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "russianmilestones",
+      "row": "mile-ru-anthem2000"
+    },
+    {
+      "dossier": "modern-history",
+      "table": "russianmilestones",
+      "row": "mile-ru-yeltsin-resignation1999"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "censuscounts",
+      "row": "census-range170"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "censuscounts",
+      "row": "census-range180"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "censuscounts",
+      "row": "census-russia2010"
+    },
+    {
+      "dossier": "modern-china",
+      "table": "censuscounts",
+      "row": "census-range200"
+    },
+    {
+      "dossier": "nature",
+      "table": "waters",
+      "row": "preview-b8-yenisei"
+    },
+    {
+      "dossier": "nature",
+      "table": "seas",
+      "row": "preview-b8-chongming-island"
+    }
+  ],
+  "newCells": [
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-lanzhou",
+      "column": "heilongjiangcapitalcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-haerbin",
+      "column": "heilongjiangcapitalcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-xiamen",
+      "column": "heilongjiangcapitalcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-fuzhou",
+      "column": "heilongjiangcapitalcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-xian",
+      "column": "embroideryschoolcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-suzhou",
+      "column": "embroideryschoolcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-kunming",
+      "column": "embroideryschoolcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-hangzhou",
+      "column": "embroideryschoolcity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-hangzhou",
+      "column": "beijinghistoricname"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-beijing",
+      "column": "beijinghistoricname"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-nanjing",
+      "column": "beijinghistoricname"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-xian",
+      "column": "beijinghistoricname"
+    },
+    {
+      "dossier": "nature",
+      "table": "waters",
+      "row": "wat-ru-ob",
+      "column": "russianlongestrivername"
+    },
+    {
+      "dossier": "nature",
+      "table": "waters",
+      "row": "wat-ru-volga",
+      "column": "russianlongestrivername"
+    },
+    {
+      "dossier": "nature",
+      "table": "waters",
+      "row": "wat-ru-lena",
+      "column": "russianlongestrivername"
+    },
+    {
+      "dossier": "nature",
+      "table": "waters",
+      "row": "wat-ru-yenisei",
+      "column": "russianlongestrivername"
+    },
+    {
+      "dossier": "nature",
+      "table": "seas",
+      "row": "sea-putuoshan",
+      "column": "xiamenislandname"
+    },
+    {
+      "dossier": "nature",
+      "table": "seas",
+      "row": "sea-gulangyu",
+      "column": "xiamenislandname"
+    },
+    {
+      "dossier": "nature",
+      "table": "seas",
+      "row": "sea-sun-island",
+      "column": "xiamenislandname"
+    },
+    {
+      "dossier": "nature",
+      "table": "seas",
+      "row": "sea-chongmingdao",
+      "column": "xiamenislandname"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-nyingchi",
+      "column": "tibetreligiouscity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-lasa",
+      "column": "tibetreligiouscity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-qamdo",
+      "column": "tibetreligiouscity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "row": "city-nagqu",
+      "column": "tibetreligiouscity"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geocounts",
+      "row": "geocount-alternative-1",
+      "column": "seacount"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geocounts",
+      "row": "geocount-alternative-2",
+      "column": "seacount"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geocounts",
+      "row": "geocount-china",
+      "column": "seacount"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geocounts",
+      "row": "geocount-alternative-1",
+      "column": "provincecount"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geocounts",
+      "row": "geocount-alternative-2",
+      "column": "provincecount"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geocounts",
+      "row": "geocount-china",
+      "column": "provincecount"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geocounts",
+      "row": "preview-mainland-31",
+      "column": "provincecount"
+    }
+  ],
+  "newTables": [
+    {
+      "dossier": "people",
+      "table": "martialartists",
+      "definition": {
+        "columns": {
+          "name": "zh",
+          "wingchunmaster": "zh",
+          "actorname": "zh"
+        },
+        "sides": [],
+        "rows": []
+      }
+    },
+    {
+      "dossier": "sets",
+      "table": "instrumentpairs",
+      "definition": {
+        "columns": {
+          "name": "zh",
+          "traditionalpair": "zh",
+          "firstinstrument": "zh",
+          "secondinstrument": "zh",
+          "about": "ru"
+        },
+        "sides": [],
+        "rows": []
+      }
+    },
+    {
+      "dossier": "crafts",
+      "table": "bodycustoms",
+      "definition": {
+        "columns": {
+          "name": "zh",
+          "statuslength": "zh"
+        },
+        "sides": [],
+        "rows": []
+      }
+    },
+    {
+      "dossier": "modern-history",
+      "table": "diplomaticdates",
+      "definition": {
+        "columns": {
+          "name": "zh",
+          "year": "zh",
+          "about": "ru"
+        },
+        "sides": [],
+        "rows": []
+      }
+    },
+    {
+      "dossier": "holidays",
+      "table": "russiancivicdates",
+      "definition": {
+        "columns": {
+          "name": "zh",
+          "date": "zh",
+          "origin": "ru"
+        },
+        "sides": [],
+        "rows": []
+      }
+    },
+    {
+      "dossier": "modern-china",
+      "table": "digitalplatforms",
+      "definition": {
+        "columns": {
+          "name": "zh",
+          "about": "ru"
+        },
+        "sides": [],
+        "rows": []
+      }
+    },
+    {
+      "dossier": "modern-history",
+      "table": "russianmilestones",
+      "definition": {
+        "columns": {
+          "name": "zh",
+          "year": "zh",
+          "about": "ru"
+        },
+        "sides": [],
+        "rows": []
+      }
+    },
+    {
+      "dossier": "modern-china",
+      "table": "censuscounts",
+      "definition": {
+        "columns": {
+          "name": "zh",
+          "nationalitycount2010": "zh",
+          "about": "ru"
+        },
+        "sides": [],
+        "rows": []
+      }
+    }
+  ],
+  "newColumns": [
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "column": "heilongjiangcapitalcity",
+      "kind": "zh"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "column": "embroideryschoolcity",
+      "kind": "zh"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "column": "beijinghistoricname",
+      "kind": "zh"
+    },
+    {
+      "dossier": "nature",
+      "table": "waters",
+      "column": "russianlongestrivername",
+      "kind": "zh"
+    },
+    {
+      "dossier": "nature",
+      "table": "seas",
+      "column": "xiamenislandname",
+      "kind": "zh"
+    },
+    {
+      "dossier": "provinces",
+      "table": "cities",
+      "column": "tibetreligiouscity",
+      "kind": "zh"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geocounts",
+      "column": "seacount",
+      "kind": "zh"
+    },
+    {
+      "dossier": "provinces",
+      "table": "geocounts",
+      "column": "provincecount",
+      "kind": "zh"
+    }
+  ],
+  "sourceExcerptUpdates": [],
+  "preservedPreviousPools": [
+    {
+      "dossier": "nature",
+      "question": "nature-q09",
+      "excludedNewRows": [
+        "sea-putuoshan",
+        "sea-gulangyu",
+        "sea-sun-island"
+      ]
+    },
+    {
+      "dossier": "nature",
+      "question": "nature-q38",
+      "excludedNewRows": [
+        "sea-putuoshan",
+        "sea-gulangyu",
+        "sea-sun-island"
+      ]
+    },
+    {
+      "dossier": "nature",
+      "question": "nature-q39",
+      "excludedNewRows": [
+        "sea-putuoshan",
+        "sea-gulangyu",
+        "sea-sun-island"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q20",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q21",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q22",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q24",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q25",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q26",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q27",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q28",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q29",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q30",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q52",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q53",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q87",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q91",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q115",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q116",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q117",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q119",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    },
+    {
+      "dossier": "provinces",
+      "question": "provinces-q121",
+      "excludedNewRows": [
+        "city-lanzhou",
+        "city-nyingchi",
+        "city-qamdo",
+        "city-nagqu"
+      ]
+    }
+  ],
+  "translationAlignments": {
+    "date": "2026-11-09",
+    "state": "necessary-literal-alignment-to-approved-Russian",
+    "changes": [
+      {
+        "reviewNumber": 3,
+        "id": "2022-23-mun-orel-2",
+        "from": "俄罗斯在哪一年与中华人民共和国建交：",
+        "to": "苏联在哪一年与中华人民共和国建交？",
+        "reason": "Китайский текст синхронизирован с принятой заменой исторического субъекта Россия → СССР; нового вопроса или факта нет."
+      },
+      {
+        "reviewNumber": 16,
+        "id": "2020-21-mun-mosobl-55",
+        "from": "厦门坐落在福建省的东南海岸，面积 1516 平方公里，包括厦门岛和_______ 。",
+        "to": "厦门位于福建东南沿海。除厦门岛外，下列哪座岛屿也属于厦门？",
+        "reason": "Китайский текст синхронизирован с полным принятым русским условием: удалена отвергнутая площадь1516, сохранены юго-восточное побережье Фуцзяни и остров Сямэнь. Не утверждается, что город состоит только из двух островов; суффиксы市/省не добавлены."
+      }
+    ]
+  },
+  "excludedIds": [
+    "2024-25-mun-irk-8",
+    "2022-23-shk-mosobl-2",
+    "2025-26-mun-perm-8"
+  ],
+  "manualHintCandidates": [
+    {
+      "reviewNumber": 1,
+      "kind": "accepted-semantic-neighbor",
+      "embeds": "2020-21-mun-mosobl-47",
+      "relatedQuestions": [
+        "provinces-q52"
+      ],
+      "reason": "Харбин—«город льда»: иной факт. В пояснении есть его административная роль; это возможная подсказка, не дубль вопроса."
+    },
+    {
+      "reviewNumber": 1,
+      "kind": "accepted-semantic-neighbor",
+      "embeds": "2020-21-mun-mosobl-47",
+      "relatedQuestions": [
+        "landmarks-q101"
+      ],
+      "reason": "Остров Солнца—Харбин: иной факт."
+    },
+    {
+      "reviewNumber": 8,
+      "kind": "accepted-semantic-neighbor",
+      "embeds": "2023-24-shk-mosobl-10",
+      "relatedQuestions": [
+        "crafts-q129"
+      ],
+      "reason": "Та же школа 苏绣, но спрашивается техника 双面绣; не прямой/обратный дубль города происхождения."
+    },
+    {
+      "reviewNumber": 8,
+      "kind": "accepted-semantic-neighbor",
+      "embeds": "2023-24-shk-mosobl-10",
+      "relatedQuestions": [
+        "crafts-q14"
+      ],
+      "reason": "Тот же тематический набор четырёх вышивок; вопрос относится к другой школе и её центру Чэнду."
+    },
+    {
+      "reviewNumber": 10,
+      "kind": "accepted-semantic-neighbor",
+      "embeds": "2024-25-mun-kursk-2",
+      "relatedQuestions": [
+        "state-q14"
+      ],
+      "reason": "Сосед спрашивает Цзиньлин—Нанкин; Яньцзин есть среди неверных вариантов с подписью Пекин. Другая связь, не дубль."
+    },
+    {
+      "reviewNumber": 10,
+      "kind": "accepted-semantic-neighbor",
+      "embeds": "2024-25-mun-kursk-2",
+      "relatedQuestions": [
+        "provinces-q98"
+      ],
+      "reason": "Статус Пекина — другой аспект."
+    },
+    {
+      "reviewNumber": 12,
+      "kind": "accepted-semantic-neighbor",
+      "embeds": "2022-23-mun-lenobl-59",
+      "relatedQuestions": [
+        "2025-26-shk-37-a"
+      ],
+      "reason": "Связанный самостоятельный факт о Лене: устье, не дубль длины."
+    },
+    {
+      "reviewNumber": 12,
+      "kind": "accepted-semantic-neighbor",
+      "embeds": "2022-23-mun-lenobl-59",
+      "relatedQuestions": [
+        "2025-26-mun-mosobl-9"
+      ],
+      "reason": "Связанный самостоятельный факт о Лене: Якутск; не дубль длины."
+    },
+    {
+      "reviewNumber": 19,
+      "kind": "accepted-semantic-neighbor",
+      "embeds": "2022-23-shk-mosobl-20",
+      "relatedQuestions": [
+        "landmarks-q94"
+      ],
+      "reason": "Потала—Лхаса: отдельный конкретный факт, не дубль."
+    },
+    {
+      "reviewNumber": 19,
+      "kind": "accepted-semantic-neighbor",
+      "embeds": "2022-23-shk-mosobl-20",
+      "relatedQuestions": [
+        "2021-22-mun-qd67aaa"
+      ],
+      "reason": "Лхаса—центр Тибетского АР: отдельный факт."
+    },
+    {
+      "reviewNumber": 8,
+      "kind": "cross-dossier-related-row",
+      "embeds": "2023-24-shk-mosobl-10",
+      "canonical": "crafts/crafts/cr-suxiu",
+      "relatedQuestions": [
+        "crafts-q129"
+      ],
+      "reason": "Город Сучжоу связан с cr-suxiu через уже существующий center.ref; принятая правильная подпись прямо сообщает двустороннюю технику. Сохранить подпись, проверить общую группу фактов/утечки с crafts-q129."
+    },
+    {
+      "reviewNumber": 10,
+      "kind": "cross-dossier-contextual-historic-names",
+      "embeds": "2024-25-mun-kursk-2",
+      "canonical": "state/capitals/cap-beijing",
+      "relatedQuestions": [
+        "state-q14"
+      ],
+      "reason": "Те же четыре исторических названия присутствуют в state/capitals.oldname; name.ref строк state ведёт на канонические города provinces/cities. Новых сущностей не создано. В state-q14 燕京 уже неверный вариант с подписью Пекин; нужны общие группы фактов по результату проверки."
+    },
+    {
+      "reviewNumber": 16,
+      "kind": "canonical-island-aliases",
+      "embeds": "2020-21-mun-mosobl-55",
+      "canonical": [
+        "nature/mountains/mtn-putuoshan",
+        "landmarks/sites/lm-cn-sun-island",
+        "nature/seas/sea-chongmingdao"
+      ],
+      "reason": "Новые sea-putuoshan и sea-sun-island имеют name.ref на существующие сущности с тем же zh. Новый sea-gulangyu связан по смыслу с provinces/cities/city-xiamen.known (старую ячейку не менял). Подпись Острова Солнца называет ответ landmarks-q101."
+    },
+    {
+      "reviewNumber": 19,
+      "kind": "tibetan-city-context",
+      "embeds": "2022-23-shk-mosobl-20",
+      "canonical": "provinces/cities/city-lasa",
+      "reason": "Лхаса остаётся той же канонической строкой, что административный центр и Потала. Принятая подпись о Джоканге может пересечься с храмовыми вопросами. Чамдо имеет значимую религиозную роль в Кхаме; точное принятое слово «всего» обязательно."
+    },
+    {
+      "reviewNumber": null,
+      "kind": "pool-expansion-risk",
+      "reason": "4 новые неядерные строки provinces/cities (Ланьчжоу + 3 тибетских города) и 3 новые неядерные строки nature/seas могут расширить старые вопросы, спрашивающие name/country/region/kind. Старые ячейки, ru, подписи, questions и exclude здесь не менялись. Root необходимо сохранить все прежние option pools, добавив exclude новых строк в существующие вопросы по снимку до применения. Каждая новая контекстная колонка содержит ровно 4 ячейки; новые вопросы сейчас имеют exclude=[] и ровно 4 варианта."
+    },
+    {
+      "reviewNumber": 3,
+      "kind": "approved-caption-related-fact",
+      "embeds": "2022-23-mun-orel-2",
+      "relatedQuestions": [
+        "2020-21-reg-q227d55"
+      ],
+      "reason": "Подпись 1912 сообщает год провозглашения Китайской Республики."
+    },
+    {
+      "reviewNumber": 3,
+      "kind": "approved-caption-related-fact",
+      "embeds": "2022-23-mun-orel-2",
+      "relatedQuestions": [
+        "modern-history-q92"
+      ],
+      "reason": "Подпись 1950 сообщает год договора СССР—КНР."
+    },
+    {
+      "reviewNumber": 6,
+      "kind": "approved-caption-related-fact",
+      "embeds": "2023-24-mun-chel-7",
+      "relatedQuestions": [
+        "2019-20-reg-10"
+      ],
+      "reason": "Подпись6月12日 сообщает дату Дня России, уже есть соответствующий вопрос; учесть как связь."
+    },
+    {
+      "reviewNumber": 6,
+      "kind": "approved-caption-related-fact",
+      "embeds": "2023-24-mun-chel-7",
+      "relatedQuestions": [
+        "holidays-q51"
+      ],
+      "reason": "Подпись11月4日 сообщает дату Дня народного единства."
+    },
+    {
+      "reviewNumber": 6,
+      "kind": "approved-caption-related-fact",
+      "embeds": "2023-24-mun-chel-7",
+      "relatedQuestions": [
+        "holidays-q25"
+      ],
+      "reason": "Подпись11月4日 сообщает историческое основание Дня народного единства."
+    },
+    {
+      "reviewNumber": 15,
+      "kind": "approved-caption-related-fact",
+      "embeds": "2023-24-mun-udm-5",
+      "relatedQuestions": [
+        "2021-22-reg-qbb2e02"
+      ],
+      "reason": "Подпись 2000 сообщает год утверждения современного гимна России; если ID отличается, проверить вопрос по тексту."
+    }
+  ],
+  "searchAliasCorrections": [
+    {
+      "reviewNumber": 12,
+      "dossier": "nature",
+      "table": "waters",
+      "row": "wat-ru-lena",
+      "column": "russianlongestrivername",
+      "field": "ru",
+      "from": [
+        "Лена"
+      ],
+      "to": [
+        "река Лена"
+      ],
+      "reason": "Служебный алиас Лена ошибочно находил Ленина и Ленинград; принятые zh и подпись не меняются."
+    }
+  ],
+  "validation": {
+    "releaseCheck": "data/review/2026-11-09-regional-batch-8-release-check.json",
+    "tests": "data/review/2026-11-09-regional-batch-8-release-tests.json",
+    "browser": "data/review/2026-11-09-regional-batch-8-browser-check.json",
+    "htmlSha256": "05cabbec38b45dda14883ff68a709465f3ad8f5ad965f17db882000f04d88915",
+    "independentReview": "data/review/2026-11-09-regional-batch-8-release-review.md",
+    "independentVerdict": "approved-no-open-findings"
+  }
+}

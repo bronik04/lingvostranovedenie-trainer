@@ -4801,6 +4801,156 @@
           "core": false
         }
       ]
+    },
+    "russiancivicdates": {
+      "columns": {
+        "name": "zh",
+        "date": "zh",
+        "origin": "ru"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "civic-ru-russiaday",
+          "name": {
+            "zh": "俄罗斯日",
+            "ref": "holidays/holidays/hol-ru-eluosi"
+          },
+          "date": {
+            "zh": "6月12日",
+            "gloss": "День России — годовщина принятия Декларации о суверенитете РСФСР в 1990 году."
+          },
+          "origin": "День России — годовщина принятия Декларации о суверенитете РСФСР в 1990 году.",
+          "sources": [
+            {
+              "title": "莫斯科举行庆祝“俄罗斯日”活动 — 新华网",
+              "url": "http://www.news.cn/world/2022-06/13/c_1128735054.htm",
+              "quote": "1990年6月12日，俄罗斯苏维埃联邦社会主义共和国第一次人民代表大会通过了国家主权宣言，这一天后来被认定为俄罗斯国庆日，2002年后又称“俄罗斯日”。",
+              "checkedAt": "2026-10-15",
+              "authority": "official",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/holidays.json holidays/hol-ru-eluosi; source previously verified locally, not reopened"
+            },
+            {
+              "title": "俄罗斯联邦概况（俄罗斯概况）— 中国人大网",
+              "url": "http://www.npc.gov.cn/zgrdw/npc/wyzzy/cfhgjhy/2013-09/11/content_1806393_2.htm",
+              "quote": "◆ 国家主权宣言通过日（国庆日）： ６月１２日 １９９０年６月１２日，俄罗斯苏维埃联邦社会主义共和国第一次人民代表大会通过了国家主权宣言，这一天由此被称为俄罗斯国庆日。２００２年后又称为“俄罗斯日”。",
+              "checkedAt": "2026-10-15",
+              "authority": "official",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/holidays.json holidays/hol-ru-eluosi; source previously verified locally, not reopened"
+            },
+            {
+              "url": "https://51.rosstat.gov.ru/news/document/125130",
+              "title": "Мурманскстат — 12 июня отмечается День России",
+              "quote": "В этот день в 1990 году первый Съезд народных депутатов РСФСР принял Декларацию о государственном суверенитете России.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 6 option o1; original: official-source-indexed-text",
+              "originalAuthority": "official-primary"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "civic-ru-unityday",
+          "name": {
+            "zh": "人民团结日",
+            "ref": "holidays/holidays/hol-ru-tuanjie"
+          },
+          "date": {
+            "zh": "11月4日",
+            "gloss": "День народного единства — память об освобождении Москвы народным ополчением в 1612 году."
+          },
+          "origin": "День народного единства — память об освобождении Москвы народным ополчением в 1612 году.",
+          "sources": [
+            {
+              "title": "普京说团结互信是俄罗斯发展基础 — 新华网",
+              "url": "http://www.xinhuanet.com/world/2019-11/05/c_1125194219.htm",
+              "quote": "自2005年开始，俄罗斯在每年的11月4日庆祝“人民团结日”。这一节日是为纪念1612年俄义军把波兰军队赶出莫斯科公国而设立的。",
+              "checkedAt": "2026-10-15",
+              "authority": "official",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/holidays.json holidays/hol-ru-tuanjie; source previously verified locally, not reopened"
+            },
+            {
+              "title": "俄罗斯“人民团结日” — 人民网",
+              "url": "http://www.people.com.cn/n1/2016/1102/c408060-28829735.html",
+              "quote": "1612年11月4日，人民义勇军在库兹马·米宁和德米特里·波扎尔斯基的领导下，攻占了“中国城”，从波兰武装干涉者手中解放了莫斯科",
+              "checkedAt": "2026-10-15",
+              "authority": "official",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/holidays.json holidays/hol-ru-tuanjie; source previously verified locally, not reopened"
+            },
+            {
+              "url": "https://rosguard.gov.ru/page/index/den-narodnogo-edinstva",
+              "title": "Росгвардия — День народного единства",
+              "quote": "4 ноября в России отмечается День народного единства.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 6 option o2; original: official-source-indexed-text",
+              "originalAuthority": "official-primary"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "civic-ru-flagday",
+          "name": {
+            "zh": "俄罗斯联邦国旗日"
+          },
+          "date": {
+            "zh": "8月22日",
+            "gloss": "Праздник учреждён в 1994 году в память о восстановлении российского триколора в 1991-м."
+          },
+          "origin": "Праздник учреждён в 1994 году в память о восстановлении российского триколора в 1991-м.",
+          "sources": [
+            {
+              "url": "https://www.prlib.ru/history/619479",
+              "title": "Президентская библиотека — День Государственного флага Российской Федерации",
+              "quote": "20 августа 1994 г. Президент России Б. Н. Ельцин подписал указ … установить праздник День Государственного флага и отмечать его ежегодно 22 августа.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 6 option o3; original: reused-locally-verified-full-text"
+            },
+            {
+              "title": "День Государственного флага Российской Федерации — Росгвардия",
+              "url": "https://rosguard.gov.ru/ru/page/index/den-gosudarstvennogo-flaga-rossijskoj-federacii",
+              "quote": "День государственного флага России, отмечаемый 22 августа, стал государственным праздником в 1994 году",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "civic-ru-constitutionday",
+          "name": {
+            "zh": "俄罗斯宪法日"
+          },
+          "date": {
+            "zh": "12月12日",
+            "gloss": "День Конституции — годовщина её принятия всенародным голосованием в 1993 году."
+          },
+          "origin": "День Конституции — годовщина её принятия всенародным голосованием в 1993 году.",
+          "sources": [
+            {
+              "url": "https://www.prlib.ru/section/2071600",
+              "title": "Президентская библиотека — День Конституции Российской Федерации – 12 декабря",
+              "quote": "12 декабря 1993 года была утверждена Конституция Российской Федерации по результатам всенародного референдума",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 6 option o4; original: official-source-indexed-text"
+            },
+            {
+              "title": "День Конституции — Росгвардия",
+              "url": "https://rosguard.gov.ru/page/index/den-konstitucii",
+              "quote": "12 декабря — День Конституции Российской Федерации.",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-09",
+  "phraseCorrections": {
+    "昌都": "chāng dū",
+    "伽倻琴": "jiā yē qín",
+    "头发": "tóu fa"
+  },
+  "changedAutomaticReadings": {
+    "伽倻琴、玄琴": {
+      "automatic": "gā yē qín, xuán qín",
+      "corrected": "jiā yē qín, xuán qín"
+    },
+    "头发": {
+      "automatic": "tóu fà",
+      "corrected": "tóu fa"
+    },
+    "昌都": {
+      "automatic": "chāng dōu",
+      "corrected": "chāng dū"
+    }
+  },
+  "geoEvidence": {
+    "checkedAt": "2026-11-09",
+    "zh": "昌都",
+    "reportedBadReading": "chāng dōu",
+    "recommendedReading": "chāng dū",
+    "recommendedPhraseTones": [
+      "chang1",
+      "du1"
+    ],
+    "state": "du-vs-dou-confirmed-by-primary-academic-source",
+    "source": {
+      "title": "Jade d’Alpoim Guedes, Mark Aldenderfer — The Archaeology of the Tibetan Plateau, Glossary of Geographical Names — Cambridge University Press",
+      "url": "https://assets.cambridge.org/97811084/81878/frontmatter/9781108481878_frontmatter.pdf",
+      "quote": "Chamdo | chab mdo | ཆབ་མདོ | Changdu | 昌都",
+      "columnHeaders": [
+        "English",
+        "Wylie transliteration",
+        "Tibetan script",
+        "Pinyin",
+        "Chinese characters"
+      ],
+      "authority": "academic-primary-publisher",
+      "verificationMethod": "fresh-web-search-indexed-table + PDF opened on 2026-11-09",
+      "limitation": "The primary glossary spells Changdu under its Pinyin column and explicitly maps it to 昌都, but omits tone marks. This confirms du, not dou; the recommended tone marks are a linguistic inference, not a quote from this PDF."
+    },
+    "additionalPrimarySource": {
+      "title": "川藏铁路雅安至昌都段高陡危岩发育特征与快速评价 — 工程科学与技术 (四川大学), 2022,54(2):30–40",
+      "url": "https://jsuese.scu.edu.cn/zh/article/doi/10.15961/j.jsuese.202100561/",
+      "quoteZh": "川藏铁路雅安至昌都段高陡危岩发育特征与快速评价",
+      "quoteEn": "Development Characteristics and Rapid Evaluation of High-steep Unstable Rock in Ya’an—Changdu Section of Sichuan—Tibet Railway",
+      "authority": "academic-primary-journal",
+      "verificationMethod": "fresh-web-open; bilingual titles at lines24–26 confirmed 2026-11-09"
+    },
+    "repoModified": false,
+    "pageLookupNote": "Web open initially succeeded; subsequent PDF fetch/page lookup unavailable: HTTP Error 503: Service Unavailable: Back-end server is at capacity"
+  },
+  "cultureEvidence": {
+    "date": "2026-11-09",
+    "scope": "Только словарная проверка чтений 伽倻琴 и 头发; репозиторий не изменён.",
+    "checks": [
+      {
+        "word": "伽倻琴",
+        "observedPinyin": "gā yē qín",
+        "recommendedPinyin": "jiā yē qín",
+        "verdict": "supported-correction",
+        "note": "Чтение jiāyēqín дано в опубликованном словаре 小学館 и независимо в словарной статье академической работы на сервере университета Палацкого. Университетская работа не выдаётся за государственный нормативный словарь. Найденные источники не подтверждают gā для названия этого инструмента; многозначность иероглифа 伽 сама по себе не доказывает вариант gā здесь.",
+        "sources": [
+          {
+            "title": "倻 — 小学館『中日辞典 第3版』, лицензированная статья на Kotobank",
+            "url": "https://kotobank.jp/zhjaword/%E5%80%BB",
+            "quote": "“伽倻琴jiāyēqín”（＜音楽＞伽倻琴(かやきん)）という語に用いる．",
+            "sourceType": "published-dictionary-primary-entry",
+            "checkedAt": "2026-11-09",
+            "verificationMethod": "fresh-web-open; полная словарная статья прочитана, строка 20. Принадлежность словаря 小学館 подтверждена страницей https://kotobank.jp/dictionary/cj03/ : (C)Shogakukan Inc."
+          },
+          {
+            "title": "Словарная статья 倻 в академической работе — Univerzita Palackého v Olomouci, университетский репозиторий",
+            "url": "https://library.upol.cz/arl-upol/cs/csg/?key=55916704623&repo=upolrepo",
+            "quote": "倻 [yē] vyskytuje se v 伽倻琴 [jiāyēqín] „kajagum – korejský strunný hudební nástroj“",
+            "sourceType": "academic-university-repository",
+            "checkedAt": "2026-11-09",
+            "verificationMethod": "fresh-primary-web-search-indexed-text; точная словарная статья прочитана в индексированном тексте первичного университетского сайта, печатная страница 34; прямое полное открытие URL инструментом web вернуло inaccessible. Не заявляется полное чтение PDF."
+          }
+        ]
+      },
+      {
+        "word": "头发",
+        "observedPinyin": "tóu fà",
+        "recommendedPinyin": "tóu fa",
+        "verdict": "supported-mainland-putonghua-correction",
+        "note": "Материковый вуз помещает слово в раздел 必读轻声词语表 и явно пишет, что нейтральный тон не маркируется. Для выбранной в тренажёре нормы путунхуа это прямое основание для tóu fa. Официальный тайваньский словарь MOE имеет региональное чтение tóu fǎ; его нельзя объявлять неправильным вообще, но оно не подтверждает автоматическое tóu fà.",
+        "sources": [
+          {
+            "title": "普通话水平测试学习资料汇编 — 石家庄学院语言文字工作委员会、石家庄学院教务处, 2026年4月",
+            "url": "https://www.sjzc.edu.cn/jwc/atm/1668136466086/20260424105409820.pdf",
+            "quote": "455 头发 tóu fa",
+            "additionalQuotes": [
+              "10. 必读轻声词语表",
+              "轻声音节一律不标声调。"
+            ],
+            "sourceType": "academic-university-pronunciation-reference",
+            "checkedAt": "2026-11-09",
+            "verificationMethod": "fresh-primary-web-open-and-find; полный 33-страничный PDF открыт. Вступление к списку: PDF page index 7, печатная стр.6, строки570–572; слово: PDF page index9, печатная стр.8, строка1047."
+          },
+          {
+            "title": "頭髮 — 教育部《國語辭典簡編本》2021",
+            "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=10351&la=0&powerMode=0",
+            "quote": "漢語拼音 tóu fǎ",
+            "sourceType": "official-taiwan-regional-dictionary",
+            "checkedAt": "2026-11-09",
+            "verificationMethod": "fresh-primary-web-open; полная словарная статья прочитана, строки28–30.",
+            "usage": "Документирует региональную альтернативу, не служит источником для материкового tóu fa."
+          }
+        ]
+      }
+    ]
+  },
+  "previousValuesUnchanged": true,
+  "visibleEntriesMatchPinnedCiTranscriber": true
+}

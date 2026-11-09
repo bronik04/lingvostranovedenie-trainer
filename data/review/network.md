@@ -984,7 +984,7 @@
 | wat-dayunhe | × | × | — | — | — | да |
 | wat-ru-volga | 1 | × | — | × | 1 | прогноз |
 | wat-ru-yenisei | — | × | — | × | 1 | прогноз |
-| wat-ru-lena | — | × | × | × | 1 | да |
+| wat-ru-lena | — | × | × | × | 2 | да |
 | wat-ru-ob | — | × | — | × | 1 | прогноз |
 | wat-ru-irtysh | 1 | × | — | × | — | прогноз |
 | wat-ru-angara | — | × | × | × | 1 | прогноз |
@@ -1104,6 +1104,7 @@
 - nature-q104 — Какая река течёт с юга на север по границе Китая и России и впадает в главную пограничную реку двух стран?
 - nature-q106 — Какая река — единственный водный путь из внутренних районов Китая в Японское море?
 - nature-q107 — Какое озеро — крупнейшее в Азии пресное пограничное озеро?
+- 2020-21-mun-mosobl-55 — Сямэнь расположен на юго-восточном побережье провинции Фуцзянь. Какой из этих островов входит в состав города наряду с островом Сямэнь?
 - nature-q45 — Какие горы называют «хребтом Поднебесной»?
 
 Строки той части таблицы, где ядро ещё не размечено (её тема впереди): вопросов 1.
@@ -1314,22 +1315,22 @@
 |---|---|---|---|---|---|
 | city-guangzhou | — | — | × | 2 | да |
 | city-jinan | — | — | × | 1 | да |
-| city-lasa | — | — | × | 1 | да |
+| city-lasa | — | — | × | 2 | да |
 | city-fuzhou | — | — | × | — | прогноз |
 | city-nanjing | — | × | × | 1 | да |
 | city-chengdu | — | — | × | 1 | да |
 | city-hangzhou | — | × | × | 2 | да |
 | city-xian | — | × | × | — | прогноз |
 | city-kunming | — | 1 | × | — | прогноз |
-| city-haerbin | — | 1 | × | — | прогноз |
+| city-haerbin | — | 1 | × | 1 | прогноз |
 | city-wuhan | — | — | × | 1 | прогноз |
 | city-shanghai | — | × | × | 5 | да |
-| city-beijing | — | × | × | 3 | да |
+| city-beijing | — | × | × | 4 | да |
 | city-tianjin | — | × | × | — | да |
 | city-chongqing | — | — | × | 3 | да |
 | city-luoyang | — | — | × | — | прогноз |
 | city-jingdezhen | — | — | × | — | да |
-| city-suzhou | — | 1 | × | 1 | прогноз |
+| city-suzhou | — | 1 | × | 2 | прогноз |
 | city-guiyang | — | — | × | — | прогноз |
 | city-shenzhen | — | — | × | — | прогноз |
 | city-ru-moscow | × | × | 1 | 2 | да |
@@ -1586,9 +1587,7 @@
 - holidays/holidays/hol-guoqing
 - holidays/holidays/hol-jiaoshi
 - holidays/holidays/hol-laodong
-- holidays/holidays/hol-ru-eluosi
 - holidays/holidays/hol-ru-shengdan
-- holidays/holidays/hol-ru-tuanjie
 - holidays/holidays/hol-ru-zhishi
 - holidays/holidays/hol-ru-zuguo
 - holidays/holidays/hol-yuandan

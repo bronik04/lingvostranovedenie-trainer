@@ -1,0 +1,1167 @@
+{
+  "date": "2026-11-09",
+  "status": "constraints-applied-pending-final-verification",
+  "constraints": [
+    {
+      "a": "2022-23-mun-orel-2",
+      "b": "2024-25-shk-mosobl-1",
+      "kinds": [
+        "numeric-display-guard"
+      ],
+      "reasons": [
+        "ethnos/ethnos-q97: текст называет ответ вопроса modern-history/modern-history-q129: ['1949']"
+      ],
+      "disposition": "protected",
+      "group": "prc-founding-1949",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2021-22-mun-volog-9",
+      "b": "holidays-q23",
+      "kinds": [
+        "numeric-display-guard"
+      ],
+      "reasons": [
+        "holidays/holidays-q23: текст называет ответ вопроса provinces/provinces-q154: ['23']"
+      ],
+      "disposition": "protected",
+      "group": "regional-b8-hint-1",
+      "finalGroup": "regional-b8-hint-1"
+    },
+    {
+      "a": "2023-24-shk-mosobl-10",
+      "b": "landmarks-q23",
+      "kinds": [
+        "direct-word-protection"
+      ],
+      "reasons": [
+        "landmarks/landmarks-q23: текст называет ответ вопроса provinces/provinces-q152: ['Сучжоу']"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2015-16-mun-spb-10",
+      "b": "2023-24-shk-mosobl-10",
+      "kinds": [
+        "direct-word-protection"
+      ],
+      "reasons": [
+        "landmarks/landmarks-q116: текст называет ответ вопроса provinces/provinces-q152: ['苏州', 'Сучжоу']"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-lenobl-9",
+      "b": "2022-23-mun-mosobl-10",
+      "kinds": [
+        "direct-word-protection"
+      ],
+      "reasons": [
+        "modern-china/modern-china-q31: текст называет ответ вопроса modern-history/modern-history-q122: ['2010', '2010 год']"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2023-24-mun-udm-5",
+      "b": "modern-history-q33",
+      "kinds": [
+        "numeric-display-guard",
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "modern-history/modern-history-q33: текст называет ответ вопроса modern-history/modern-history-q130: ['1991']",
+        "Президент Российской Федерации — первым на этот пост в 1991 году избран Борис Ельцин → В каком году РСФСР официально получила название «Российская Федерация (Россия)»?"
+      ],
+      "disposition": "protected",
+      "group": "year-1991-word",
+      "finalGroup": "year-1991-word"
+    },
+    {
+      "a": "2020-21-mun-mosobl-55",
+      "b": "cuisine-q70",
+      "kinds": [
+        "direct-word-protection"
+      ],
+      "reasons": [
+        "nature/nature-q172: текст называет ответ вопроса cuisine/cuisine-q70: ['福建']"
+      ],
+      "disposition": "protected",
+      "group": "fujian-min",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-55",
+      "b": "cuisine-q91",
+      "kinds": [
+        "direct-word-protection"
+      ],
+      "reasons": [
+        "nature/nature-q172: текст называет ответ вопроса cuisine/cuisine-q91: ['福建']"
+      ],
+      "disposition": "already-protected",
+      "group": "fujian-min",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-55",
+      "b": "cuisine-q93",
+      "kinds": [
+        "direct-word-protection"
+      ],
+      "reasons": [
+        "nature/nature-q172: текст называет ответ вопроса cuisine/cuisine-q93: ['福建']"
+      ],
+      "disposition": "already-protected",
+      "group": "fujian-min",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "addition-b2-20",
+      "kinds": [
+        "direct-word-protection"
+      ],
+      "reasons": [
+        "provinces/provinces-q70: текст называет ответ вопроса provinces/provinces-q155: ['Лхаса']"
+      ],
+      "disposition": "protected",
+      "group": "elista-word",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-mun-lenobl-59",
+      "b": "2025-26-mun-mosobl-9",
+      "kinds": [
+        "direct-word-protection",
+        "manual-related-fact"
+      ],
+      "reasons": [
+        "provinces/provinces-q113: текст называет ответ вопроса nature/nature-q171: ['река Лена']",
+        "Связанный самостоятельный факт о Лене: Якутск; не дубль длины."
+      ],
+      "disposition": "protected",
+      "group": "regional-b8-hint-2",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2024-25-mun-kursk-2",
+      "b": "landmarks-q95",
+      "kinds": [
+        "direct-word-protection"
+      ],
+      "reasons": [
+        "provinces/provinces-q153: текст называет ответ вопроса landmarks/landmarks-q95: ['北京']"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2023-24-shk-mosobl-10",
+      "b": "crafts-q14",
+      "kinds": [
+        "caption-candidate-protection",
+        "manual-related-fact"
+      ],
+      "reasons": [
+        "Сучжоуская вышивка — «тонкая, изящная», центр — Сучжоу → В каком из этих городов сложилась одна из четырёх знаменитых школ китайской вышивки?",
+        "Тот же тематический набор четырёх вышивок; вопрос относится к другой школе и её центру Чэнду."
+      ],
+      "mergedGroups": [
+        "province-names-river-lake",
+        "crafts-shu-chengdu"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2023-24-shk-mosobl-10",
+      "b": "crafts-q129",
+      "kinds": [
+        "caption-candidate-protection",
+        "manual-related-fact"
+      ],
+      "reasons": [
+        "Сучжоуская вышивка — «тонкая, изящная», центр — Сучжоу → В каком из этих городов сложилась одна из четырёх знаменитых школ китайской вышивки?",
+        "Та же школа 苏绣, но спрашивается техника 双面绣; не прямой/обратный дубль города происхождения.",
+        "Город Сучжоу связан с cr-suxiu через уже существующий center.ref; принятая правильная подпись прямо сообщает двустороннюю технику. Сохранить подпись, проверить общую группу фактов/утечки с crafts-q129."
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2023-24-shk-mosobl-10",
+      "b": "crafts-q138",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Вышивка — сучжоуские узоры создают иглой и нитью → В каком из этих городов сложилась одна из четырёх знаменитых школ китайской вышивки?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2023-24-mun-klg-3",
+      "b": "dynasties-q113",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Волосы — при Цин маньчжурскую косу предписали носить и ханьским мужчинам. → Какой народ основал династию Цин?"
+      ],
+      "disposition": "protected",
+      "group": "contextual-next20-20261104-4",
+      "finalGroup": "contextual-next20-20261104-4"
+    },
+    {
+      "a": "2023-24-mun-chel-7",
+      "b": "2023-24-shk-29",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "День народного единства — память об освобождении Москвы народным ополчением в 1612 году. → В каком году в период Смутного времени Москва была освобождена от польских интервентов?"
+      ],
+      "disposition": "protected",
+      "group": "nanchang-uprising-army-day",
+      "finalGroup": "nanchang-uprising-army-day"
+    },
+    {
+      "a": "2023-24-mun-udm-5",
+      "b": "modern-history-q29",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Президент Российской Федерации — первым на этот пост в 1991 году избран Борис Ельцин → В каком году РСФСР официально получила название «Российская Федерация (Россия)»?"
+      ],
+      "disposition": "protected",
+      "group": "year-1991-word",
+      "finalGroup": "year-1991-word"
+    },
+    {
+      "a": "2023-24-mun-udm-5",
+      "b": "modern-history-q31",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Президент Российской Федерации — первым на этот пост в 1991 году избран Борис Ельцин → В каком году РСФСР официально получила название «Российская Федерация (Россия)»?"
+      ],
+      "disposition": "protected",
+      "group": "year-1991-word",
+      "finalGroup": "year-1991-word"
+    },
+    {
+      "a": "2023-24-mun-udm-5",
+      "b": "modern-history-q103",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Президент Российской Федерации — первым на этот пост в 1991 году избран Борис Ельцин → В каком году РСФСР официально получила название «Российская Федерация (Россия)»?"
+      ],
+      "disposition": "protected",
+      "group": "year-1991-word",
+      "finalGroup": "year-1991-word"
+    },
+    {
+      "a": "2023-24-mun-udm-5",
+      "b": "modern-history-q104",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Президент Российской Федерации — первым на этот пост в 1991 году избран Борис Ельцин → В каком году РСФСР официально получила название «Российская Федерация (Россия)»?"
+      ],
+      "disposition": "protected",
+      "group": "year-1991-word",
+      "finalGroup": "year-1991-word"
+    },
+    {
+      "a": "2020-21-reg-q227d55",
+      "b": "2022-23-mun-orel-2",
+      "kinds": [
+        "caption-candidate-protection",
+        "manual-related-fact"
+      ],
+      "reasons": [
+        "В 1912 году была провозглашена Китайская Республика; КНР ещё не существовала. → В каком году была провозглашена Китайская Республика?",
+        "Подпись 1912 сообщает год провозглашения Китайской Республики."
+      ],
+      "disposition": "already-protected",
+      "group": "prc-founding-1949",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-mun-orel-2",
+      "b": "modern-history-q92",
+      "kinds": [
+        "caption-candidate-protection",
+        "manual-related-fact"
+      ],
+      "reasons": [
+        "В 1950 году СССР и КНР подписали Договор о дружбе, союзе и взаимной помощи. → В каком году СССР и КНР подписали Договор о дружбе, союзе и взаимной помощи, заключённый на 30 лет?",
+        "Подпись 1950 сообщает год договора СССР—КНР."
+      ],
+      "disposition": "protected",
+      "group": "prc-founding-1949",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2021-22-reg-qbb2e02",
+      "b": "2023-24-mun-udm-5",
+      "kinds": [
+        "caption-candidate-protection",
+        "manual-related-fact"
+      ],
+      "reasons": [
+        "В 2000 году федеральным конституционным законом утверждён современный гимн России. → В каком году был законодательно утвержден современный государственный гимн Российской Федерации?",
+        "Подпись 2000 сообщает год утверждения современного гимна России; если ID отличается, проверить вопрос по тексту."
+      ],
+      "disposition": "protected",
+      "group": "year-1991-word",
+      "finalGroup": "year-1991-word"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "nature-q68",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Цинхай-Тибетская железная дорога — Синин — Лхаса, 1956 км → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "protected",
+      "group": "elista-word",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "nature-q163",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Цинхай-Тибетская железная дорога — Синин — Лхаса, 1956 км → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "mergedGroups": [
+        "elista-word",
+        "novosibirsk-on-ob"
+      ],
+      "disposition": "protected",
+      "group": "elista-word",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-mun-lenobl-59",
+      "b": "nature-q160",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Волга — впадая в Каспийское море, образует обширную дельту. → Куда впадает Волга?"
+      ],
+      "mergedGroups": [
+        "regional-b8-hint-2",
+        "elista-word"
+      ],
+      "disposition": "protected",
+      "group": "elista-word",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-55",
+      "b": "nature-q39",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Чунминдао — остров в устье Янцзы. → Какой остров китайские источники называют крупнейшим в мире наносным (аллювиальным) островом в устье реки?"
+      ],
+      "disposition": "protected",
+      "group": "fujian-min",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "2020-21-zak-q1f0e35",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Хэйлунцзян — самая северная провинция Китая, центр — Харбин → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "mergedGroups": [
+        "province-names-river-lake",
+        "blagoveshchensk-border"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "addition-b1-02",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Хэйлунцзян — самая северная провинция Китая, центр — Харбин → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "addition-b1-05",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Хэйлунцзян — самая северная провинция Китая, центр — Харбин → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "2023-24-mun-33",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Хэйлунцзян — самая северная провинция Китая, центр — Харбин → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2019-20-shk-q048752",
+      "b": "2022-23-shk-mosobl-20",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Тибет (Сицзан) — автономный район на Тибетском нагорье, центр — Лхаса → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "protected",
+      "group": "elista-word",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "2022-23-reg-3",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Хэйлунцзян — самая северная провинция Китая, центр — Харбин → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "2024-25-zak-qf78e62",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Хэйлунцзян — самая северная провинция Китая, центр — Харбин → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "2024-25-pri-34",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Тибетский автономный район — на юго-западе Китая, центр — Лхаса → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "mergedGroups": [
+        "elista-word",
+        "province-names-river-lake"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2021-22-reg-q3e8cc7",
+      "b": "2022-23-shk-mosobl-20",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Тибетский автономный район — на юго-западе Китая, центр — Лхаса → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "provinces-q32",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Хэйлунцзян — самая северная провинция Китая, центр — Харбин → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "provinces-q33",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Харбин — центр провинции Хэйлунцзян → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "provinces-q33",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Лхаса — административный центр Тибетского автономного района → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "provinces-q34",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Тибетский автономный район — на юго-западе Китая, центр — Лхаса → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "provinces-q35",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Лхаса — административный центр Тибетского автономного района → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "provinces-q36",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Лхаса — административный центр Тибетского автономного района → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "provinces-q37",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Лхаса — административный центр Тибетского автономного района → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "provinces-q38",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Лхаса — административный центр Тибетского автономного района → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "provinces-q42",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Хэйлунцзян — самая северная провинция Китая, центр — Харбин → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "provinces-q44",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Тибет (Сицзан) — автономный район на Тибетском нагорье, центр — Лхаса → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "provinces-q96",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Харбин — центр провинции Хэйлунцзян → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "provinces-q96",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Лхаса — административный центр Тибетского автономного района → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "provinces-q97",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Харбин — центр провинции Хэйлунцзян → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "provinces-q97",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Лхаса — административный центр Тибетского автономного района → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "provinces-q99",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Лхаса — административный центр Тибетского автономного района → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "provinces-q100",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Харбин — центр провинции Хэйлунцзян → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "provinces-q100",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Лхаса — административный центр Тибетского автономного района → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "provinces-q101",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Лхаса — административный центр Тибетского автономного района → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2019-20-mun-khab-1",
+      "b": "2020-21-mun-mosobl-47",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Харбин — центр провинции Хэйлунцзян → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2019-20-mun-khab-1",
+      "b": "2022-23-shk-mosobl-20",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Лхаса — административный центр Тибетского автономного района → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "2025-26-mun-novg-3",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Хэйлунцзян — самая северная провинция Китая, центр — Харбин → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "2025-26-shk-mosobl-12",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Хэйлунцзян — самая северная провинция Китая, центр — Харбин → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "2025-26-shk-mosobl-12",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Тибетский автономный район — на юго-западе Китая, центр — Лхаса → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "2025-26-shk-mosobl-2",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Хэйлунцзян — самая северная провинция Китая, центр — Харбин → Какой город — административный центр провинции Хэйлунцзян?"
+      ],
+      "mergedGroups": [
+        "province-names-river-lake",
+        "eastern-han-word"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "2025-26-shk-mosobl-2",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Тибетский автономный район — на юго-западе Китая, центр — Лхаса → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-mun-amur-4",
+      "b": "2022-23-shk-mosobl-20",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Тибет — административный центр автономного района — Лхаса. → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2023-24-shk-38",
+      "b": "2023-24-shk-mosobl-10",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Сиань — древний Чанъань, столица нескольких китайских династий. → Этот город был столицей 13 государств в истории Китая, в частности, в периоды Чжоу, Цинь, Хань, Суй и Тан. Старое название города – Чанъань."
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2023-24-shk-mosobl-10",
+      "b": "provinces-q50",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Куньмин — центр Юньнани с мягким климатом; его прозвище — «город весны». → Как называют Куньмин?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2024-25-mun-kursk-2",
+      "b": "addition-b1-06",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Линьань — название Ханчжоу, столицы Южной Сун. → Под каким названием Ханчжоу был столицей династии Южная Сун (1127–1279)?"
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2024-25-mun-kursk-2",
+      "b": "state-q14",
+      "kinds": [
+        "caption-candidate-protection",
+        "manual-related-fact"
+      ],
+      "reasons": [
+        "Цзиньлин — старое название Нанкина. → Как в древности называли Нанкин — «столицу шести династий»?",
+        "Сосед спрашивает Цзиньлин—Нанкин; Яньцзин есть среди неверных вариантов с подписью Пекин. Другая связь, не дубль.",
+        "Те же четыре исторических названия присутствуют в state/capitals.oldname; name.ref строк state ведёт на канонические города provinces/cities. Новых сущностей не создано. В state-q14 燕京 уже неверный вариант с подписью Пекин; нужны общие группы фактов по результату проверки."
+      ],
+      "mergedGroups": [
+        "province-names-river-lake",
+        "prc-founding-1949"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2023-24-shk-38",
+      "b": "2024-25-mun-kursk-2",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Чанъань — древнее название Сианя. → Этот город был столицей 13 государств в истории Китая, в частности, в периоды Чжоу, Цинь, Хань, Суй и Тан. Старое название города – Чанъань."
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2015-16-zak-5",
+      "b": "2022-23-shk-mosobl-20",
+      "kinds": [
+        "caption-candidate-protection"
+      ],
+      "reasons": [
+        "Тибетцы — в VII веке создали государство Тубо со столицей в Лхасе → Какой из этих городов традиционно считается религиозным центром всего Тибета?"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "landmarks-q101",
+      "kinds": [
+        "manual-related-fact"
+      ],
+      "reasons": [
+        "Остров Солнца—Харбин: иной факт."
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2024-25-mun-kursk-2",
+      "b": "provinces-q98",
+      "kinds": [
+        "manual-related-fact"
+      ],
+      "reasons": [
+        "Статус Пекина — другой аспект."
+      ],
+      "mergedGroups": [
+        "province-names-river-lake",
+        "beijing-tianjin-municipality"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2022-23-shk-mosobl-20",
+      "b": "landmarks-q94",
+      "kinds": [
+        "manual-related-fact"
+      ],
+      "reasons": [
+        "Потала—Лхаса: отдельный конкретный факт, не дубль."
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2021-22-mun-qd67aaa",
+      "b": "2022-23-shk-mosobl-20",
+      "kinds": [
+        "manual-related-fact"
+      ],
+      "reasons": [
+        "Лхаса—центр Тибетского АР: отдельный факт."
+      ],
+      "disposition": "already-protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    },
+    {
+      "a": "2019-20-reg-10",
+      "b": "2023-24-mun-chel-7",
+      "kinds": [
+        "manual-related-fact"
+      ],
+      "reasons": [
+        "Подпись6月12日 сообщает дату Дня России, уже есть соответствующий вопрос; учесть как связь."
+      ],
+      "disposition": "protected",
+      "group": "nanchang-uprising-army-day",
+      "finalGroup": "nanchang-uprising-army-day"
+    },
+    {
+      "a": "2023-24-mun-chel-7",
+      "b": "holidays-q51",
+      "kinds": [
+        "manual-related-fact"
+      ],
+      "reasons": [
+        "Подпись11月4日 сообщает дату Дня народного единства."
+      ],
+      "disposition": "protected",
+      "group": "nanchang-uprising-army-day",
+      "finalGroup": "nanchang-uprising-army-day"
+    },
+    {
+      "a": "2023-24-mun-chel-7",
+      "b": "holidays-q25",
+      "kinds": [
+        "manual-related-fact"
+      ],
+      "reasons": [
+        "Подпись11月4日 сообщает историческое основание Дня народного единства."
+      ],
+      "disposition": "protected",
+      "group": "nanchang-uprising-army-day",
+      "finalGroup": "nanchang-uprising-army-day"
+    },
+    {
+      "a": "2023-24-mun-mosobl-6",
+      "b": "2024-25-mun-krym-4",
+      "kinds": [
+        "manual-semantic-protection"
+      ],
+      "reasons": [
+        "Подпись Донни Йена называет Ип Мана — ответ соседнего нового вопроса."
+      ],
+      "disposition": "protected",
+      "group": "regional-b8-hint-3",
+      "finalGroup": "regional-b8-hint-3"
+    },
+    {
+      "a": "2021-22-reg-q5d6afc",
+      "b": "2023-24-mun-mosobl-6",
+      "kinds": [
+        "manual-semantic-protection"
+      ],
+      "reasons": [
+        "Китайское имя Джеки Чана и его почётный Оскар — две стороны того же персонажа; подписи связывают их."
+      ],
+      "disposition": "protected",
+      "group": "regional-b8-hint-3",
+      "finalGroup": "regional-b8-hint-3"
+    },
+    {
+      "a": "2023-24-mun-udm-5",
+      "b": "modern-history-q100",
+      "kinds": [
+        "manual-semantic-protection"
+      ],
+      "reasons": [
+        "Переименование России и распад СССР в1991: календарная связь."
+      ],
+      "disposition": "already-protected",
+      "group": "year-1991-word",
+      "finalGroup": "year-1991-word"
+    },
+    {
+      "a": "2022-23-mun-kam-7",
+      "b": "2025-26-mun-6",
+      "kinds": [
+        "manual-semantic-protection"
+      ],
+      "reasons": [
+        "Состав четырёх морей в подписи и вопрос о море у Китая."
+      ],
+      "disposition": "protected",
+      "group": "regional-b8-hint-4",
+      "finalGroup": "regional-b8-hint-4"
+    },
+    {
+      "a": "2022-23-mun-kam-7",
+      "b": "nature-q36",
+      "kinds": [
+        "manual-semantic-protection"
+      ],
+      "reasons": [
+        "В подписи правильного ответа перечислено Восточно-Китайское море."
+      ],
+      "disposition": "protected",
+      "group": "regional-b8-hint-4",
+      "finalGroup": "regional-b8-hint-4"
+    },
+    {
+      "a": "2022-23-mun-kam-7",
+      "b": "nature-q37",
+      "kinds": [
+        "manual-semantic-protection"
+      ],
+      "reasons": [
+        "В подписи правильного ответа перечислено Южно-Китайское море."
+      ],
+      "disposition": "protected",
+      "group": "regional-b8-hint-4",
+      "finalGroup": "regional-b8-hint-4"
+    },
+    {
+      "a": "2020-21-mun-mosobl-55",
+      "b": "landmarks-q101",
+      "kinds": [
+        "manual-semantic-protection"
+      ],
+      "reasons": [
+        "Подпись острова Солнца сообщает расположение в Харбине."
+      ],
+      "mergedGroups": [
+        "fujian-min",
+        "province-names-river-lake"
+      ],
+      "disposition": "protected",
+      "group": "province-names-river-lake",
+      "finalGroup": "province-names-river-lake"
+    }
+  ],
+  "constraintCount": 83,
+  "directFindings": 12,
+  "releaseCaptionCandidates": 58,
+  "manualAndAlreadyRowProtected": [
+    {
+      "a": "2020-21-mun-mosobl-47",
+      "b": "provinces-q52",
+      "reason": "Уже защищены общим factRow.",
+      "source": "Харбин—«город льда»: иной факт. В пояснении есть его административная роль; это возможная подсказка, не дубль вопроса."
+    },
+    {
+      "a": "2022-23-mun-lenobl-59",
+      "b": "2025-26-shk-37-a",
+      "reason": "Уже защищены общим factRow.",
+      "source": "Связанный самостоятельный факт о Лене: устье, не дубль длины."
+    },
+    {
+      "a": "2021-22-mun-volog-9",
+      "b": "2022-23-mun-lenobl-58",
+      "reason": "Уже защищены общим factRow.",
+      "source": "Число23и34: взаимные подписи и общая официальная классификация."
+    }
+  ],
+  "previousGroupsPreserved": true,
+  "maxGroupBefore": 226,
+  "maxGroupAfter": 323,
+  "newGroupCount": 4,
+  "policy": "Принятые тексты и подписи сохранены. Группы разводят связанные факты и числовые совпадения; совпадение числа в другом событии не объявляется смысловым дублем."
+}

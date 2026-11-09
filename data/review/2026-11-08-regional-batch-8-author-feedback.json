@@ -1,0 +1,752 @@
+{
+  "date": "2026-11-08",
+  "state": "applied-to-preview-only",
+  "publicationAuthorized": false,
+  "initialSnapshot": "data/review/2026-11-08-regional-batch-8-initial-proposals.json",
+  "initialManifestHash": "2c1cbc37c19b3fcd3c4731f5e065f0664cf622ca3eee37c1771f56e12455980c",
+  "authorConfirmedExclusions": [
+    {
+      "reviewNumber": 2,
+      "id": "2024-25-mun-irk-8",
+      "date": "2026-11-08",
+      "action": "exclude-without-replacement",
+      "reason": "Прямое решение автора: слишком простой вопрос, исключить без замены."
+    },
+    {
+      "reviewNumber": 4,
+      "id": "2022-23-shk-mosobl-2",
+      "date": "2026-11-08",
+      "action": "exclude-without-replacement",
+      "reason": "Прямое решение автора: слишком простой вопрос, исключить без замены."
+    },
+    {
+      "reviewNumber": 17,
+      "id": "2025-26-mun-perm-8",
+      "date": "2026-11-08",
+      "action": "exclude-without-replacement",
+      "reason": "Прямое решение автора: слишком простой вопрос, исключить без замены."
+    }
+  ],
+  "authorInstructions": {
+    "excluded": "№2 и №4 исключить оба без замены; №17 тоже исключить без замены.",
+    "question6": "Убрать месяц из условия, предложить полные даты с разными месяцами.",
+    "questions7And13": "Ответы арабскими цифрами.",
+    "question18": "Проверить, не было ли вопроса раньше.",
+    "question19": "Устранить выбор по единственному городу Тибета."
+  },
+  "changedItems": [
+    {
+      "reviewNumber": 6,
+      "id": "2023-24-mun-chel-7",
+      "previousQuestionRu": "Какого числа в августе празднуется День Государственного флага Российской Федерации?",
+      "newQuestionRu": "Какого числа празднуется День Государственного флага Российской Федерации?",
+      "optionChanges": [
+        {
+          "id": "o1",
+          "from": "7",
+          "to": "6月12日"
+        },
+        {
+          "id": "o2",
+          "from": "12",
+          "to": "11月4日"
+        },
+        {
+          "id": "o3",
+          "from": "22",
+          "to": "8月22日"
+        },
+        {
+          "id": "o4",
+          "from": "31",
+          "to": "12月12日"
+        }
+      ]
+    },
+    {
+      "reviewNumber": 7,
+      "id": "2022-23-mun-kam-7",
+      "optionChanges": [
+        {
+          "id": "o1",
+          "from": "五",
+          "to": "5"
+        },
+        {
+          "id": "o2",
+          "from": "三",
+          "to": "3"
+        },
+        {
+          "id": "o3",
+          "from": "四",
+          "to": "4"
+        },
+        {
+          "id": "preview-b8-six-seas",
+          "from": "六",
+          "to": "6"
+        }
+      ]
+    },
+    {
+      "reviewNumber": 13,
+      "id": "2021-22-mun-volog-9",
+      "optionChanges": [
+        {
+          "id": "o1",
+          "from": "二十一个",
+          "to": "21"
+        },
+        {
+          "id": "o2",
+          "from": "十九个",
+          "to": "19"
+        },
+        {
+          "id": "o3",
+          "from": "二十三个",
+          "to": "23"
+        },
+        {
+          "id": "o4",
+          "from": "二十四个",
+          "to": "24"
+        }
+      ]
+    },
+    {
+      "reviewNumber": 19,
+      "id": "2022-23-shk-mosobl-20",
+      "previousQuestionRu": "Какой из этих городов традиционно считается религиозным центром Тибета?",
+      "newQuestionRu": "Какой из этих городов традиционно считается религиозным центром всего Тибета?",
+      "optionChanges": [
+        {
+          "id": "o1",
+          "from": "呼和浩特",
+          "to": "林芝"
+        },
+        {
+          "id": "o3",
+          "from": "洛阳",
+          "to": "昌都"
+        },
+        {
+          "id": "o4",
+          "from": "乌鲁木齐",
+          "to": "那曲"
+        }
+      ]
+    }
+  ],
+  "historyQ18": {
+    "id": "2020-21-mun-lenobl-9",
+    "displayNumber": 18,
+    "conclusion": "Да, вопрос уже был на сайте: он присутствует в историческом HTML коммита 74ffae7 от 25 октября 2026 года, для этого коммита подтверждён успешный GitHub Pages deploy. В новых партиях 1–7 он не был item: встречался лишь среди исключённых кандидатов и в отчётах проверки. В текущем видимом пуле 1091 активного смыслового дубля не найдено.",
+    "decision": "Сохранить вопрос как текущего кандидата до решения автора; проверка истории сама по себе не означает снятие.",
+    "historicalSite": {
+      "wasInBuiltHtml": true,
+      "wasSuccessfullyDeployed": true,
+      "commit": "74ffae7235ca0cac0170dc5f15e3b48d81c3b52d",
+      "commitDate": "2026-10-25T22:58:29+03:00",
+      "htmlPath": "dist/lingvostranovedenie-trainer.html",
+      "htmlGithubUrl": "https://github.com/bronik04/lingvostranovedenie-trainer/blob/74ffae7235ca0cac0170dc5f15e3b48d81c3b52d/dist/lingvostranovedenie-trainer.html",
+      "htmlLine": 493,
+      "idOccurrencesInHtml": 1,
+      "questionRu": "Сколько национальностей проживает на территории Российской Федерации?",
+      "answer": "190 多",
+      "explanation": "По переписи 2010 года, на которую опирались в 2020–2021 годах, в России жили представители 193 национальностей — «более 190» (190 多).",
+      "bankPointer": "/225",
+      "deployment": {
+        "runId": 40228559228,
+        "url": "https://github.com/bronik04/lingvostranovedenie-trainer/actions/runs/40228559228",
+        "name": "Deploy to GitHub Pages",
+        "event": "push",
+        "headSha": "74ffae7235ca0cac0170dc5f15e3b48d81c3b52d",
+        "conclusion": "success",
+        "createdAt": "2026-10-25T19:58:36Z",
+        "completedAt": "2026-10-25T20:00:13Z",
+        "completedMoscow": "2026-10-25 23:00:13 +03:00",
+        "buildJobId": 121275179679,
+        "deployJobId": 121275499832,
+        "deployJobUrl": "https://github.com/bronik04/lingvostranovedenie-trainer/actions/runs/40228559228/job/121275499832",
+        "deployStep": "actions/deploy-pages@v4",
+        "stepConclusion": "success",
+        "artifactCurrentlyAvailable": false,
+        "proofLimit": "Сам архив Pages-артефакта теперь отсутствует в API. Связка: исторический HTML содержит вопрос; workflow этого коммита пересобирал HTML, копировал его в site/index.html и успешно выполнил deploy-pages. Факт исторического просмотра конкретным пользователем из этого не следует."
+      },
+      "hiddenAt": {
+        "commit": "7607933b4b0664d5e729297b0ddb93923c9cd99e",
+        "date": "2026-10-26T18:39:46+03:00",
+        "siteConfig": "data/site.json#/showRegional = false",
+        "idOccurrencesInHtml": 0,
+        "remainedInFullBank": true
+      }
+    },
+    "priorBatches": {
+      "range": "1–7",
+      "selectedItemCountForTarget": 0,
+      "acceptedItemCountForTarget": 0,
+      "displayedMdQuestionCountForTarget": 0,
+      "manifests": [
+        {
+          "batch": 1,
+          "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/review/2026-11-07-regional-batch-1.json",
+          "pointer": "/items",
+          "itemsCount": 15,
+          "targetIdCount": 0
+        },
+        {
+          "batch": 2,
+          "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/review/2026-11-07-regional-batch-2-proposals.json",
+          "pointer": "/items",
+          "itemsCount": 19,
+          "targetIdCount": 0
+        },
+        {
+          "batch": 3,
+          "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/review/2026-11-07-regional-batch-3-proposals.json",
+          "pointer": "/items",
+          "itemsCount": 16,
+          "targetIdCount": 0
+        },
+        {
+          "batch": 4,
+          "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/review/2026-11-07-regional-batch-4-proposals.json",
+          "pointer": "/items",
+          "itemsCount": 16,
+          "targetIdCount": 0
+        },
+        {
+          "batch": 5,
+          "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/review/2026-11-08-regional-batch-5-accepted-proposals.json",
+          "pointer": "/items",
+          "itemsCount": 16,
+          "targetIdCount": 0
+        },
+        {
+          "batch": 6,
+          "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/review/2026-11-08-regional-batch-6-accepted-proposals.json",
+          "pointer": "/items",
+          "itemsCount": 19,
+          "targetIdCount": 0
+        },
+        {
+          "batch": 7,
+          "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/review/2026-11-08-regional-batch-7-accepted-proposals.json",
+          "pointer": "/items",
+          "itemsCount": 20,
+          "targetIdCount": 0
+        }
+      ],
+      "auditedJsonFiles": 75,
+      "auditedDistinctFileVersions": 81,
+      "historyAuditFile": "data/review/2026-11-08-regional-batch-8-history-audit.json",
+      "method": "Проверены не только ID: пользовательские стемы и варианты/подписи, исходные/предложенные формулировки, items/selected/excludedItems, текущие manifests и сохранённые git-версии. Широкий автоматический поиск дал пять посторонних совпадений в материалах про Бажова/АТЭС и семантических соседях; вручную исключены. Целевых совпадений внутри ранее показанных items — ноль."
+    },
+    "earlierMentions": [
+      {
+        "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/review/2026-11-07-regional-batch-3-proposals.json",
+        "pointer": "/selectionReports/history/excludedCandidates/11",
+        "classification": "excludedCandidate",
+        "note": "Кандидат исключён до формирования items; не ранее показанный вопрос партии.",
+        "record": {
+          "id": "2020-21-mun-lenobl-9",
+          "questionRu": "Сколько национальностей проживает на территории Российской Федерации?",
+          "answer": "190 多",
+          "reason": "Количество национальностей зависит от переписи и определения; без даты формулировка неустойчива.",
+          "duplicateEvidence": []
+        }
+      },
+      {
+        "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/review/2026-11-07-regional-batch-3-semantic-review.json",
+        "pointer": "/selectionReports/history/excludedCandidates/11",
+        "classification": "excludedCandidate",
+        "note": "Копия отчёта отбора, вне selected/items.",
+        "record": {
+          "id": "2020-21-mun-lenobl-9",
+          "questionRu": "Сколько национальностей проживает на территории Российской Федерации?",
+          "answer": "190 多",
+          "reason": "Количество национальностей зависит от переписи и определения; без даты формулировка неустойчива.",
+          "duplicateEvidence": []
+        }
+      },
+      {
+        "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/review/2026-11-08-regional-batch-7-proposals.json",
+        "pointer": "/rejectedCandidates/58",
+        "classification": "excludedCandidate",
+        "note": "Кандидат отклонён до подготовки.",
+        "record": {
+          "id": "2020-21-mun-lenobl-9",
+          "reason": "Недатированное количество национальностей и пересекающиеся варианты 100多 / 190多; авторское уточнение требуется до подготовки."
+        }
+      },
+      {
+        "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/review/2026-11-08-regional-batch-7-accepted-proposals.json",
+        "pointer": "/rejectedCandidates/58",
+        "classification": "excludedCandidate",
+        "note": "Название файла accepted не распространяется на массив rejectedCandidates; в items вопроса нет.",
+        "record": {
+          "id": "2020-21-mun-lenobl-9",
+          "reason": "Недатированное количество национальностей и пересекающиеся варианты 100多 / 190多; авторское уточнение требуется до подготовки."
+        }
+      },
+      {
+        "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/review/2026-11-08-regional-batch-7-semantic-review.json",
+        "pointer": "/rejectedCandidates/58",
+        "classification": "excludedCandidate",
+        "note": "Отвод отбора, не участник партии.",
+        "record": {
+          "id": "2020-21-mun-lenobl-9",
+          "reason": "Недатированное количество национальностей и пересекающиеся варианты 100多 / 190多; авторское уточнение требуется до подготовки."
+        }
+      },
+      {
+        "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/review/2026-11-08-regional-batch-7-source-reports.json",
+        "pointer": "/geography-russia/rejectedCandidates/7",
+        "classification": "excludedCandidate",
+        "note": "Отвод в отчёте сборщика.",
+        "record": {
+          "id": "2020-21-mun-lenobl-9",
+          "reason": "Недатированное количество национальностей и пересекающиеся варианты 100多 / 190多; авторское уточнение требуется до подготовки."
+        }
+      },
+      {
+        "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/review/regions-dossier-check.json",
+        "pointer": "/204",
+        "classification": "semanticScreening",
+        "note": "Проверка возможности встраивания, не показ/принятие: «Число народов РФ (190+). Дубля нет; в ethnos/peoples нет счётной колонки».",
+        "record": {
+          "id": "2020-21-mun-lenobl-9",
+          "findings": [
+            {
+              "kind": "ok",
+              "target": null,
+              "note": "Число народов РФ (190+). Дубля нет; в ethnos/peoples нет счётной колонки."
+            }
+          ],
+          "dossier": "ethnos",
+          "part": "russia"
+        }
+      }
+    ],
+    "fullBank": {
+      "file": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/bank.json",
+      "pointer": "/225",
+      "present": true,
+      "visible": false,
+      "verificationFile": "/Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/data/verification.json",
+      "verificationPointer": "/2020-21-mun-lenobl-9",
+      "verifiedDate": "2026-10-25",
+      "state": "verified",
+      "glossesPresent": false,
+      "explanationContains193": true,
+      "dossierEmbedded": false,
+      "sourceOccurrences": [
+        {
+          "grades": "9-11",
+          "number": 9,
+          "officialKey": "o3",
+          "region": "Ленинградская область",
+          "regionCode": "lenobl",
+          "sourceFiles": [
+            "01-Варианты/2020-21/2-Муниципальный/Ленинградская область/9-11_Задания.pdf"
+          ],
+          "stage": "муниципальный",
+          "stageCode": "mun",
+          "year": "2020-21"
+        },
+        {
+          "grades": "9-11",
+          "number": 5,
+          "officialKey": "o3",
+          "region": "Ленинградская область",
+          "regionCode": "lenobl",
+          "sourceFiles": [
+            "01-Варианты/2021-22/2-Муниципальный/Ленинградская область/9-11_Задания.pdf"
+          ],
+          "stage": "муниципальный",
+          "stageCode": "mun",
+          "year": "2021-22"
+        },
+        {
+          "grades": "9-11",
+          "number": 9,
+          "officialKey": "o3",
+          "region": "Ленинградская область",
+          "regionCode": "lenobl",
+          "sourceFiles": [
+            "01-Варианты/2023-24/2-Муниципальный/Ленинградская область/9-11_Задания.pdf"
+          ],
+          "stage": "муниципальный",
+          "stageCode": "mun",
+          "year": "2023-24"
+        },
+        {
+          "grades": "9-11",
+          "number": 55,
+          "officialKey": "o3",
+          "region": "Ленинградская область",
+          "regionCode": "lenobl",
+          "sourceFiles": [
+            "01-Варианты/2025-26/2-Муниципальный/Ленинградская область/9-11_Задания.pdf"
+          ],
+          "stage": "муниципальный",
+          "stageCode": "mun",
+          "year": "2025-26"
+        }
+      ]
+    },
+    "currentVisiblePool": {
+      "file": "/tmp/lingvo-batch8-base/visible.json",
+      "count": 1091,
+      "targetIdPresent": false,
+      "sameFactQuestionCount": 0,
+      "sameFactCaptionCount": 0,
+      "nearestThematicQuestions": [
+        {
+          "id": "2015-16-shk-62",
+          "questionRu": "Сколько национальностей насчитывается в Китае?",
+          "answer": "56 个",
+          "relationship": "Тематически близкий вопрос о КНР, не дубль числа национальностей России."
+        },
+        {
+          "id": "2023-24-mun-31",
+          "questionRu": "Сколько в Китае насчитывается национальных меньшинств?",
+          "answer": "55 个",
+          "relationship": "Тематически близкий вопрос о КНР, не дубль числа национальностей России."
+        }
+      ],
+      "warning": "КНР56 и число национальных меньшинств КНР55 к числу национальностей России не приравнивались."
+    },
+    "captionAndDossierAudit": {
+      "files": "data/review/glosses.json; все data/dossiers/*.json; старые caption/gloss-proposals, accepted/proposals партий1–7; видимый1091 и исторический полный банк",
+      "target190or193CaptionCount": 0,
+      "actualEarlierFact": "193/190+ содержится в пояснении скрытого полного банка и data/verification.json, а не в отдельной старой подписи или встроенном досье. Это само пояснение уже входило в исторический HTML.",
+      "semanticDossierCheckPointer": "data/review/regions-dossier-check.json#/204/findings/0/note"
+    }
+  },
+  "q6SourcePackage": {
+    "id": "2023-24-mun-chel-7",
+    "displayNumber": 6,
+    "state": "proposal-only-no-publication",
+    "questionRu": "Какого числа празднуется День Государственного флага Российской Федерации?",
+    "answerOptionId": "o3",
+    "originalAnswerMeaningPreserved": true,
+    "options": [
+      {
+        "id": "o1",
+        "zh": "6月12日",
+        "correct": false,
+        "gloss": "День России — годовщина принятия Декларации о суверенитете РСФСР в 1990 году.",
+        "source": {
+          "url": "https://51.rosstat.gov.ru/news/document/125130",
+          "title": "Мурманскстат — 12 июня отмечается День России",
+          "quote": "В этот день в 1990 году первый Съезд народных депутатов РСФСР принял Декларацию о государственном суверенитете России.",
+          "authority": "official-primary",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "official-source-indexed-text"
+        }
+      },
+      {
+        "id": "o2",
+        "zh": "11月4日",
+        "correct": false,
+        "gloss": "День народного единства — память об освобождении Москвы народным ополчением в 1612 году.",
+        "source": {
+          "url": "https://rosguard.gov.ru/page/index/den-narodnogo-edinstva",
+          "title": "Росгвардия — День народного единства",
+          "quote": "4 ноября в России отмечается День народного единства.",
+          "authority": "official-primary",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "official-source-indexed-text"
+        }
+      },
+      {
+        "id": "o3",
+        "zh": "8月22日",
+        "correct": true,
+        "gloss": "Праздник учреждён в 1994 году в память о восстановлении российского триколора в 1991-м.",
+        "source": {
+          "url": "https://www.prlib.ru/history/619479",
+          "title": "Президентская библиотека — День Государственного флага Российской Федерации",
+          "quote": "20 августа 1994 г. Президент России Б. Н. Ельцин подписал указ",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "reused-locally-verified-full-text"
+        }
+      },
+      {
+        "id": "o4",
+        "zh": "12月12日",
+        "correct": false,
+        "gloss": "День Конституции — годовщина её принятия всенародным голосованием в 1993 году.",
+        "source": {
+          "url": "https://www.prlib.ru/section/2071600",
+          "title": "Президентская библиотека — День Конституции Российской Федерации – 12 декабря",
+          "quote": "12 декабря 1993 года была утверждена Конституция Российской Федерации по результатам всенародного референдума",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "official-source-indexed-text"
+        }
+      }
+    ],
+    "changes": [
+      {
+        "field": "questionRu",
+        "from": "Какого числа в августе празднуется День Государственного флага Российской Федерации?",
+        "to": "Какого числа празднуется День Государственного флага Российской Федерации?",
+        "reason": "Прямое авторское указание убрать подсказку месяца."
+      },
+      {
+        "field": "o1.zh",
+        "from": "7",
+        "to": "6月12日",
+        "reason": "Вместо неполного числа — полная дата Дня России."
+      },
+      {
+        "field": "o2.zh",
+        "from": "12",
+        "to": "11月4日",
+        "reason": "Вместо неполного числа — полная дата Дня народного единства."
+      },
+      {
+        "field": "o3.zh",
+        "from": "22",
+        "to": "8月22日",
+        "reason": "Исходный правильный день22 уточнён до полной даты22августа; ключи смысл ответа сохранены."
+      },
+      {
+        "field": "o4.zh",
+        "from": "31",
+        "to": "12月12日",
+        "reason": "Вместо неполного числа — полная дата Дня Конституции."
+      }
+    ],
+    "keyEvidence": {
+      "url": "https://www.prlib.ru/history/619479",
+      "quote": "установить праздник День Государственного флага и отмечать его ежегодно 22 августа.",
+      "note": "Тот же официальный текст явно связывает указ1994года с восстановлением триколора22августа1991года."
+    },
+    "captionEvidenceNotes": {
+      "o2": "Официальная страница Росгвардии далее прямо объясняет память о событиях1612года и освобождение Москвы ополчением Минина и Пожарского.",
+      "o4": "Официальная библиотечная страница прямо называет День Конституции12декабря и принятие по результатам всенародного референдума1993года."
+    },
+    "correctGlossAdds": "Учреждение праздника в1994году и связь с восстановлением российского триколора в1991году — сведения сверх вопроса и ответа.",
+    "crossQuestionNotes": [
+      {
+        "id": "2019-20-reg-10",
+        "relationship": "Подпись6月12日 сообщает дату Дня России, уже есть соответствующий вопрос; учесть как связь."
+      },
+      {
+        "id": "holidays-q51",
+        "relationship": "Подпись11月4日 сообщает дату Дня народного единства."
+      },
+      {
+        "id": "holidays-q25",
+        "relationship": "Подпись11月4日 сообщает историческое основание Дня народного единства."
+      }
+    ],
+    "sourceAccessNote": "Для№6 использованы ранее проверенный текст о флаге, уже полученный первичный материал Росстата и официальные индексированные тексты Росгвардии/Президентской библиотеки. Неудачный прямой запросPDFДумы не использован как доказательство."
+  },
+  "q19SourcePackage": {
+    "id": "2022-23-shk-mosobl-20",
+    "batch": 8,
+    "batchNumber": 19,
+    "status": "proposal-ready-with-disclosed-minimal-stem-clarification",
+    "answerOptionId": "o2",
+    "answerZh": "拉萨",
+    "originalSourceQuestionRu": "Какой город является центром буддизма в Китае?",
+    "currentQuestionRu": "Какой из этих городов традиционно считается религиозным центром Тибета?",
+    "proposedQuestionRu": "Какой из этих городов традиционно считается религиозным центром всего Тибета?",
+    "stemChange": {
+      "original": "Какой из этих городов традиционно считается религиозным центром Тибета?",
+      "new": "Какой из этих городов традиционно считается религиозным центром всего Тибета?",
+      "exactDifference": "Добавлено одно слово «всего».",
+      "why": "Не заменяет изучаемый факт: уточняет общетибетский масштаб прежней религиозной роли. Прямое основание — RUC 全藏的宗教中心."
+    },
+    "options": [
+      {
+        "id": "o1",
+        "zh": "林芝",
+        "gloss": "Ньингчи — знаменит весенним цветением персиков.",
+        "sourceIds": [
+          "nyingchi"
+        ],
+        "originalZh": "呼和浩特",
+        "change": "呼和浩特 → 林芝",
+        "isCorrect": false
+      },
+      {
+        "id": "o2",
+        "zh": "拉萨",
+        "gloss": "Лхаса — в её старом городе находится буддийский храм Джоканг (大昭寺).",
+        "sourceIds": [
+          "lhasa-gloss"
+        ],
+        "originalZh": "拉萨",
+        "change": "без изменения",
+        "isCorrect": true
+      },
+      {
+        "id": "o3",
+        "zh": "昌都",
+        "gloss": "Чамдо — здесь находится крупнейший в Кхаме монастырь школы гелуг.",
+        "sourceIds": [
+          "qamdo"
+        ],
+        "originalZh": "洛阳",
+        "change": "洛阳 → 昌都",
+        "isCorrect": false
+      },
+      {
+        "id": "o4",
+        "zh": "那曲",
+        "gloss": "Нагчу — здесь проводят праздник конных состязаний.",
+        "sourceIds": [
+          "nagqu"
+        ],
+        "originalZh": "乌鲁木齐",
+        "change": "乌鲁木齐 → 那曲",
+        "isCorrect": false
+      }
+    ],
+    "originalToNew": [
+      {
+        "optionId": "o1",
+        "original": "呼和浩特",
+        "new": "林芝",
+        "reason": "Вместо города вне Тибета предлагается реальный город Тибета; географический отсев устранён."
+      },
+      {
+        "optionId": "o2",
+        "original": "拉萨",
+        "new": "拉萨",
+        "reason": "Ключ и прежняя подпись о Джоканге сохранены."
+      },
+      {
+        "optionId": "o3",
+        "original": "洛阳",
+        "new": "昌都",
+        "reason": "Вместо города вне Тибета предлагается реальный город Тибета; географический отсев устранён."
+      },
+      {
+        "optionId": "o4",
+        "original": "乌鲁木齐",
+        "new": "那曲",
+        "reason": "Вместо города вне Тибета предлагается реальный город Тибета; географический отсев устранён."
+      }
+    ],
+    "uniquenessReview": {
+      "allFourAreTibetanCities": true,
+      "citySourceIds": [
+        "cities"
+      ],
+      "currentStemAssessment": "Без слова «всего» не заявлять безусловную однозначность: Чамдо имеет крупный гелугский монастырь и значим как религиозный центр Кхама, части историко-культурного Тибета. Слово «центр» может быть прочитано как один из региональных центров.",
+      "recommendedStemAssessment": "Добавление «всего» задаёт засвидетельствованную RUC общетибетскую роль Лхасы. У Чамдо источник подтверждает масштаб Кхама, а не всего Тибета. Ньингчи и Нагчу — однородные тибетские города; проверенных оснований считать их традиционным общетибетским религиозным центром не выявлено.",
+      "keyEvidenceSourceIds": [
+        "lhasa-key-ruc",
+        "lhasa-key-icomos"
+      ],
+      "notClaimed": "Не утверждается, что у неверных городов нет буддизма или важных монастырей. Отсутствие такого утверждения принципиально; религиозные центры бывают разных масштабов.",
+      "shigatseDecision": "日喀则 не включён: это резиденция панчен-лам и религиозный центр Цанга. Широкий исходный стем сделал бы его особенно спорным вторым ответом.",
+      "shigatseSourceIds": [
+        "shigatse-risk"
+      ],
+      "difficultyAssessment": "Все варианты требуют узнавать реальные тибетские топонимы. Лхасу больше нельзя выбрать лишь как единственный город Тибета. Чамдо — содержательно связанный отвлекающий вариант, а не случайное название.",
+      "editorialRecommendation": "Предлагать комплект с однословным уточнением «всего». Если автор требует абсолютно неизменный текущий стем, №19 лучше отложить, чем обещать строгую уникальность широкой формулировки."
+    },
+    "glossReview": {
+      "allFourRussian": true,
+      "maxCharacters": 67,
+      "correctGlossAddsNewFact": "Правильная подпись сохраняет храм Джоканг и его место в старом городе — это сверх роли общетибетского религиозного центра.",
+      "newGlossCount": 3,
+      "note": "Подписи полностью по-русски; иероглифы имени Джоканга сохранены в скобках из прежней подписи. Непроверенные русские транслитерации новых монастырей/праздников не добавлялись."
+    },
+    "sources": {
+      "cities": {
+        "title": "西藏概况 — Правительство Тибетского АР",
+        "url": "https://www.xizang.gov.cn/rsxz/qqjj/201812/t20181221_34484.html",
+        "quote": "现辖6个市（拉萨、日喀则、山南、林芝、昌都、那曲）",
+        "authority": "official",
+        "verificationMethod": "exact accepted dossier source and quote, read locally 2026-11-08; not freshly fetched",
+        "localProvenance": "data/dossiers/provinces.json — prov-xizang.sources[0]"
+      },
+      "lhasa-key-ruc": {
+        "title": "Чжан Юнцзян (张永江), «Об эволюции административной системы Тибета при Цин» — Институт истории Цин, Китайский народный университет",
+        "url": "https://iqh.ruc.edu.cn/old/qdzzsyj/gjzz/9162d9a66ff64279bdd40b41d36bbed6.htm",
+        "quote": "由于政教合一的历史传统，拉萨既是全藏的宗教中心，也是政治中心",
+        "authority": "academic-primary-author",
+        "verificationMethod": "exact quote verified in previous read-only screening; reused for this focused revision",
+        "supports": "Традиционная роль Лхасы как религиозного центра всего Тибета; 全藏 = весь Тибет."
+      },
+      "lhasa-key-icomos": {
+        "title": "Lhasa: The Potala Palace and the Jokhang Temple Monastery — ICOMOS evaluation2000, UNESCO",
+        "url": "https://whc.unesco.org/document/1076",
+        "quote": "their role as the political, economic, cultural, and religious centre of Tibet",
+        "authority": "official-icomos-unesco",
+        "verificationMethod": "fresh-web-open+find",
+        "checkedAt": "2026-11-08",
+        "pdfPageZeroIndexed": 172,
+        "printedPage": 165,
+        "supports": "Роль центра Тибета — не просто наличие монастыря или роль центра отдельной тибетской области."
+      },
+      "lhasa-gloss": {
+        "title": "Historic Ensemble of the Potala Palace, Lhasa — UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/707",
+        "quote": "Covering 2.5ha in the centre of the old town of Lhasa",
+        "authority": "official-unesco",
+        "verificationMethod": "fresh-web-indexed-full-text",
+        "checkedAt": "2026-11-08",
+        "supportedFact": "The described building is the Jokhang Temple Monastery.",
+        "supports": "Джоканг находится в старом городе Лхасы; буддийский религиозный комплекс."
+      },
+      "nyingchi": {
+        "title": "林芝各地桃花啥时候盛开？去哪儿赏花？攻略来啦！ — Управление культуры и туризма Ньингчи, официальный сайт города",
+        "url": "https://www.linzhi.gov.cn/linzhi/zmlz/202603/b99cb9b4478d4ec69da29f125361937e.shtml",
+        "quote": "林芝一年一度的桃花季来啦；桃林沿着尼洋河谷铺展开来",
+        "authority": "official-primary-tourism-bureau",
+        "verificationMethod": "fresh web indexed article text, 2026-11-08",
+        "supports": "Ежегодное весеннее цветение персиков в Ньингчи."
+      },
+      "qamdo": {
+        "title": "强巴林寺 — Управление развития туризма Чамдо",
+        "url": "https://lyfz.changdu.gov.cn/cdslyj4/c101493/202005/31f676065d5141cb92e6d87d292f2bfb.shtml",
+        "quote": "强巴林寺是康区建寺最早、规模最大的格鲁派寺院",
+        "authority": "official-primary-tourism-bureau",
+        "verificationMethod": "fresh web indexed full article text, 2026-11-08",
+        "supports": "Крупнейший гелугский монастырь Кхама расположен в Чамдо; это значимый региональный религиозный центр, поэтому широкое слово «центр» требует осторожности."
+      },
+      "nagqu": {
+        "title": "关于2026年那曲市恰青赛马节场地规划调整及招商安排的公告 — Оргкомитет праздника конных состязаний, сайт горкома Нагчу",
+        "url": "https://nq.xzdw.gov.cn/fbt/gsgg_545/202607/t20260721_685426.html",
+        "quote": "为进一步办好这一深受群众喜爱的草原盛会，今年我们结合城市发展和生态保护实际，对赛马节场地规划进行了全面优化调整",
+        "authority": "official-primary-event-organizer",
+        "verificationMethod": "fresh web indexed full organizer announcement, 2026-11-08",
+        "supports": "В Нагчу проводится крупный местный праздник конных состязаний."
+      },
+      "nagqu-annual": {
+        "title": "2026年那曲市恰青赛马节时间定了！ — Департамент культуры и туризма Тибета",
+        "url": "https://wlt.xizang.gov.cn/xccx/lytg/202607/t20260729_551882.html",
+        "quote": "本届那曲市恰青赛马节将于8月1日至12日在那曲市格萨尔赛马场隆重举行",
+        "authority": "official",
+        "verificationMethod": "fresh web indexed full article text, 2026-11-08",
+        "supports": "Место проведения — Нагчу; подтверждает праздник конных состязаний без привязки подписи к конкретной дате."
+      },
+      "shigatse-risk": {
+        "title": "区域合作2014 — официальный туристический справочник VisitBeijing, раздел Шигадзе",
+        "url": "https://lyzz.visitbeijing.com.cn/uploadfile/2018/0530/%E5%8C%BA%E5%9F%9F%E5%90%88%E4%BD%9C2014.pdf",
+        "quote": "是后藏的政治、宗教、文化中心",
+        "authority": "official-tourism-publication",
+        "verificationMethod": "fresh web indexed PDF excerpt, 2026-11-08",
+        "supports": "Шигадзе — религиозный центр Цанга (后藏); его нельзя выдавать за безусловно нерелигиозный отвлекающий город."
+      }
+    },
+    "operations": "Только чтение репозитория и веб-источников; запись результата в /tmp. Репозиторий, резерв, банк и сайт не изменялись; коммитов не было."
+  },
+  "validation": {
+    "state": "passed-no-open-review-findings",
+    "checks": "2026-11-08-regional-batch-8-checks.json",
+    "review": "2026-11-08-regional-batch-8-review.md"
+  }
+}

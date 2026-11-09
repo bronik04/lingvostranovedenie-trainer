@@ -1,0 +1,4487 @@
+{
+  "reviewId": "regional-2026-11-08-batch-8",
+  "date": "2026-11-08",
+  "batch": 8,
+  "state": "draft-pending-author-review",
+  "baseCommit": "aeabf61a24ca9444672edc20164574752b6ab9b5",
+  "baselineVisibleCount": 1091,
+  "eligibleConservedCount": 103,
+  "previouslyCheckedSkipped": 75,
+  "questionCount": 20,
+  "optionCount": 80,
+  "publicationAuthorized": false,
+  "scope": "20 исходно неотмеченных вопросов QUESTION_RESERVE.md; осторожные редакции и явно предложенные замены, без применения к банку/досье/сайту.",
+  "distractorReplacementAuthorization": {
+    "instruction": "Да, предложи замены и явно отметь каждую",
+    "preserve": "Исходный вопрос, правильный ответ и замысел; предложения до применения."
+  },
+  "items": [
+    {
+      "reviewNumber": 1,
+      "id": "2020-21-mun-mosobl-47",
+      "status": "draft-pending-author-review",
+      "topic": "География и административное устройство",
+      "originalQuestionRu": "Какой город — административный центр провинции Хэйлунцзян?",
+      "originalQuestionZh": "黑龙江省会是哪座城市？",
+      "questionRu": "Какой город — административный центр провинции Хэйлунцзян?",
+      "previewQuestionRu": "Какой город — административный центр провинции Хэйлунцзян?",
+      "questionZh": "黑龙江省会是哪座城市？",
+      "answerOptionId": "o2",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "哈尔滨市 — 维基百科",
+            "url": "https://zh.wikipedia.org/zh-cn/%E5%93%88%E5%B0%94%E6%BB%A8%E5%B8%82"
+          }
+        ],
+        "explanation": {
+          "ru": "Административный центр провинции Хэйлунцзян — Харбин (哈尔滨)."
+        },
+        "factGroup": "province-names-river-lake",
+        "id": "2020-21-mun-mosobl-47",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 47,
+            "officialKey": "o2",
+            "region": "Московская область",
+            "regionCode": "mosobl",
+            "sourceFiles": [
+              "01-Варианты/2020-21/2-Муниципальный/Московская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2020-21"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "兰州"
+          },
+          {
+            "id": "o2",
+            "zh": "哈尔滨"
+          },
+          {
+            "id": "o3",
+            "zh": "厦门"
+          },
+          {
+            "id": "o4",
+            "zh": "福州"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Какой город — административный центр провинции Хэйлунцзян?",
+        "questionZh": "黑龙江省会是哪座城市？",
+        "topic": "География и административное устройство",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "兰州",
+          "zh": "兰州",
+          "correct": false,
+          "ru": "Ланьчжоу — административный центр провинции Ганьсу.",
+          "source": {
+            "title": "兰州市 — 工业和信息化部",
+            "url": "https://wap.miit.gov.cn/ztzl/lszt/gjgyyxzdlxcs/csmd/art/2020/art_bc1430039dcf42a6b9fb4c622b634811.html",
+            "quote": "兰州，甘肃省省会",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "哈尔滨",
+          "zh": "哈尔滨",
+          "correct": true,
+          "ru": "Харбин — стоит на реке Сунхуацзян (Сунгари).",
+          "source": {
+            "title": "松花江美景引客万千 — 黑龙江省文化和旅游厅",
+            "url": "https://wlt.hlj.gov.cn/wlt/c114253/202406/c00_31744916.shtml",
+            "quote": "蜿蜒的松花江穿城而过，为哈尔滨增添了无限魅力，也吸引了万千游客。",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "厦门",
+          "zh": "厦门",
+          "correct": false,
+          "ru": "Сямэнь — приморский город провинции Фуцзянь.",
+          "source": {
+            "title": "地理环境 — 厦门市委党史和地方志研究室，来源厦门市人民政府",
+            "url": "https://xm.fjdsfzw.org.cn/2024-09-05/content_151790.html",
+            "quote": "厦门市境域由福建省东南部沿厦门湾的大陆地区和厦门岛、鼓浪屿等岛屿以及厦门湾组成。",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text",
+            "additionalSupportedFact": "2022年，全市土地面积1699.01平方千米。",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "福州",
+          "zh": "福州",
+          "correct": false,
+          "ru": "Фучжоу — административный центр провинции Фуцзянь.",
+          "source": {
+            "title": "福州市 — 工业和信息化部",
+            "url": "https://www.miit.gov.cn/ztzl/lszt/gjgyyxzdlxcs/csmd/art/2020/art_73250f21d8e54d7ab5f209682360afdc.html",
+            "quote": "福州别称榕城，是福建省省会城市，国家历史文化名城。",
+            "authority": "official",
+            "verificationMethod": "fresh-web-open+accepted-dossier-quote",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "keySources": [
+        {
+          "title": "省情概况 — 黑龙江省人民政府",
+          "url": "https://www.hlj.gov.cn/hlj/c108476/202005/c00_30550923.shtml",
+          "quote": "黑龙江省，简称黑。省会哈尔滨。",
+          "authority": "official",
+          "verificationMethod": "fresh-web-open",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "title": "哈尔滨概况 — 黑龙江省委省直机关工委，来源哈尔滨市人民政府网",
+          "url": "https://ljjgdj.gov.cn/system/202607/131221.html",
+          "quote": "哈尔滨位处中国东北，黑龙江省西南部，是黑龙江省的省会，副省级市",
+          "authority": "official",
+          "verificationMethod": "fresh-web-indexed-text",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Правильная подпись добавляет реку сверх связи центр—провинция.",
+        "Подпись o4 сообщает ответ соседнего кандидата 2022-23-shk-mosobl-2; при принятии обоих учесть группу фактов."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "Прямой или обратной проверки связи Хэйлунцзян—Харбин в 1091 нет. Харбин уже спрашивается по прозвищу и острову Солнца, но это другие факты. Варианты — четыре города без формального отсева."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [
+          {
+            "id": "provinces-q52",
+            "questionRu": "Какой город называют «городом льда»?",
+            "relationship": "Харбин—«город льда»: иной факт. В пояснении есть его административная роль; это возможная подсказка, не дубль вопроса.",
+            "inVisiblePool": true
+          },
+          {
+            "id": "landmarks-q101",
+            "questionRu": "В каком городе находится остров Солнца (太阳岛)?",
+            "relationship": "Остров Солнца—Харбин: иной факт.",
+            "inVisiblePool": true
+          }
+        ],
+        "screeningReason": "Прямой или обратной проверки связи Хэйлунцзян—Харбин в 1091 нет. Харбин уже спрашивается по прозвищу и острову Солнца, но это другие факты. Варианты — четыре города без формального отсева."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 2,
+      "id": "2024-25-mun-irk-8",
+      "status": "draft-pending-author-review",
+      "topic": "Культура, традиции и праздники",
+      "originalQuestionRu": "В каком трактате китайский писатель Лу Юй времен династии Тан систематизировал знания о выращивании чая и чаепитии?",
+      "originalQuestionZh": null,
+      "questionRu": "В каком трактате китайский писатель Лу Юй (陆羽) времён династии Тан (唐) систематизировал знания о выращивании чая и чаепитии?",
+      "previewQuestionRu": "В каком трактате китайский писатель Лу Юй (陆羽) времён династии Тан (唐) систематизировал знания о выращивании чая и чаепитии?",
+      "questionZh": null,
+      "answerOptionId": "o1",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o1",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "茶经 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E8%8C%B6%E7%BB%8F"
+          }
+        ],
+        "explanation": {
+          "ru": "«Канон чая» (《茶经》) танского автора Лу Юя (陆羽) — первый в мире трактат о чае: в нём описаны выращивание, сбор, обработка, оценка и заваривание чая."
+        },
+        "factGroup": "province-names-river-lake",
+        "id": "2024-25-mun-irk-8",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 8,
+            "officialKey": "o1",
+            "region": "Иркутская область",
+            "regionCode": "irk",
+            "sourceFiles": [
+              "01-Варианты/2024-25/2-Муниципальный/Иркутская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2024-25"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "《茶经》"
+          },
+          {
+            "id": "o2",
+            "zh": "《茶艺》"
+          },
+          {
+            "id": "o3",
+            "zh": "《茶圣》"
+          },
+          {
+            "id": "o4",
+            "zh": "《茶语》"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "В каком трактате китайский писатель Лу Юй времен династии Тан систематизировал знания о выращивании чая и чаепитии?",
+        "questionZh": null,
+        "topic": "Культура, традиции и праздники",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "《茶经》",
+          "zh": "《茶经》",
+          "correct": true,
+          "ru": "«Канон чая» — три свитка и десять разделов: от свойств чайного дерева до утвари.",
+          "source": {
+            "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33184.shtml",
+            "title": "陆羽与“茶经” — 中国国家博物馆",
+            "quote": "全书分上中下3卷，共10节，7000余字",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          },
+          "additionalSources": [
+            {
+              "url": "https://www.dpm.org.cn/lemmas/239879.html",
+              "title": "陆羽 — 故宫博物院",
+              "quote": "写就世界历史上第一部茶学专著——《茶经》。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-web-search-result-text"
+            }
+          ]
+        },
+        {
+          "id": "o2",
+          "originalZh": "《茶艺》",
+          "zh": "《茶录》",
+          "correct": false,
+          "ru": "«Записки о чае» — труд сунского каллиграфа и знатока чая Цай Сяна.",
+          "source": {
+            "url": "https://tcmb.culture.tw/zh-tw/detail?id=%E6%95%85%E6%9B%B800024400001&indexCode=NPM_Uncategorized",
+            "title": "宋蔡襄致通理當世屯田尺牘 — 國立故宮博物院 / 國家文化記憶庫",
+            "quote": "所著《茶錄》為宋代最早的茶書。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          },
+          "replacesForPreview": "《茶艺》"
+        },
+        {
+          "id": "o3",
+          "originalZh": "《茶圣》",
+          "zh": "《大观茶论》",
+          "correct": false,
+          "ru": "«Рассуждение о чае эры Дагуань» — сочинение сунского императора Хуэй-цзуна.",
+          "source": {
+            "url": "https://catalog.digitalarchives.tw/item/00/08/5a/ae.html",
+            "title": "大觀茶論 — 數位典藏與學習聯合目錄",
+            "quote": "大觀茶論",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-metadata",
+            "additionalQuotes": [
+              "宋徽宗"
+            ]
+          },
+          "replacesForPreview": "《茶圣》"
+        },
+        {
+          "id": "o4",
+          "originalZh": "《茶语》",
+          "zh": "《茶疏》",
+          "correct": false,
+          "ru": "«Наставления о чае» — труд Сюй Цышу, написанный при Мин в 1597 году.",
+          "source": {
+            "url": "https://agri-history.ihns.ac.cn/books/chasu.htm",
+            "title": "茶疏 — 中国科学院自然科学史研究所农业史资料",
+            "quote": "（明.许次纾）",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text",
+            "additionalQuotes": [
+              "该书撰于明万历二十五年（1597）。"
+            ]
+          },
+          "replacesForPreview": "《茶语》"
+        }
+      ],
+      "keySources": [
+        {
+          "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33184.shtml",
+          "title": "陆羽与“茶经” — 中国国家博物馆",
+          "quote": "全书分上中下3卷，共10节，7000余字",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://www.dpm.org.cn/lemmas/239879.html",
+          "title": "陆羽 — 故宫博物院",
+          "quote": "写就世界历史上第一部茶学专著——《茶经》。",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://tcmb.culture.tw/zh-tw/detail?id=%E6%95%85%E6%9B%B800024400001&indexCode=NPM_Uncategorized",
+          "title": "宋蔡襄致通理當世屯田尺牘 — 國立故宮博物院 / 國家文化記憶庫",
+          "quote": "所著《茶錄》為宋代最早的茶書。",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://catalog.digitalarchives.tw/item/00/08/5a/ae.html",
+          "title": "大觀茶論 — 數位典藏與學習聯合目錄",
+          "quote": "大觀茶論",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-metadata",
+          "additionalQuotes": [
+            "宋徽宗"
+          ]
+        },
+        {
+          "url": "https://agri-history.ihns.ac.cn/books/chasu.htm",
+          "title": "茶疏 — 中国科学院自然科学史研究所农业史资料",
+          "quote": "（明.许次纾）",
+          "authority": "academic",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text",
+          "additionalQuotes": [
+            "该书撰于明万历二十五年（1597）。"
+          ]
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "В каком трактате китайский писатель Лу Юй времен династии Тан систематизировал знания о выращивании чая и чаепитии?",
+        "to": "В каком трактате китайский писатель Лу Юй (陆羽) времён династии Тан (唐) систематизировал знания о выращивании чая и чаепитии?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [
+        {
+          "id": "o2",
+          "from": "《茶艺》",
+          "to": "《茶录》",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        },
+        {
+          "id": "o3",
+          "from": "《茶圣》",
+          "to": "《大观茶论》",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        },
+        {
+          "id": "o4",
+          "from": "《茶语》",
+          "to": "《茶疏》",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        }
+      ],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Ключ и замысел сохранены. Явно предложены три замены: 《茶艺》→《茶录》; 《茶圣》→《大观茶论》; 《茶语》→《茶疏》. Исходные заглавия без авторов не дают надёжно идентифицировать три исторических трактата. Вопрос о лучшей воде содержит название «Канона чая»: связать при принятии как взаимную подсказку, не объявлять дублем."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "С разрешённой заменой трёх неопределимых заглавий получаются четыре реальные чайные книги. Существующий вопрос о воде лишь называет 茶经; это межвопросная подсказка, а не смысловой дубль."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [
+          {
+            "id": "2015-16-mun-spb-4",
+            "questionRu": "Какую воду Лу Юй в «Каноне чая» считал лучшей?",
+            "relationship": "Вопрос о воде прямо называет «Канон чая»: взаимная подсказка к названию книги, но спрашивает другой факт.",
+            "inVisiblePool": true
+          }
+        ],
+        "screeningReason": "С разрешённой заменой трёх неопределимых заглавий получаются четыре реальные чайные книги. Существующий вопрос о воде лишь называет 茶经; это межвопросная подсказка, а не смысловой дубль."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 3,
+      "id": "2022-23-mun-orel-2",
+      "status": "draft-pending-author-review",
+      "topic": "Россия и межкультурный блок",
+      "originalQuestionRu": "В каком году Россия установила дипломатические отношения с Китайской Народной Республикой?",
+      "originalQuestionZh": "俄罗斯在哪一年与中华人民共和国建交：",
+      "questionRu": "В каком году СССР установил дипломатические отношения с Китайской Народной Республикой?",
+      "previewQuestionRu": "В каком году СССР установил дипломатические отношения с Китайской Народной Республикой?",
+      "questionZh": "俄罗斯在哪一年与中华人民共和国建交：",
+      "answerOptionId": "o2",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "Китайско-российские отношения — Википедия",
+            "url": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%BE-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B5_%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D1%8F"
+          }
+        ],
+        "explanation": {
+          "ru": "Дипломатические отношения с КНР установлены в 1949 году: 2 октября 1949 года Советский Союз первым в мире признал Китайскую Народную Республику, а Россия продолжает эти отношения как правопреемница СССР."
+        },
+        "id": "2022-23-mun-orel-2",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 2,
+            "officialKey": null,
+            "region": "Орловская область",
+            "regionCode": "orel",
+            "sourceFiles": [
+              "01-Варианты/2022-23/2-Муниципальный/Орловская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2022-23"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "1912"
+          },
+          {
+            "id": "o2",
+            "zh": "1949"
+          },
+          {
+            "id": "o3",
+            "zh": "1950"
+          },
+          {
+            "id": "o4",
+            "zh": "1951"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "В каком году Россия установила дипломатические отношения с Китайской Народной Республикой?",
+        "questionZh": "俄罗斯在哪一年与中华人民共和国建交：",
+        "topic": "Россия и межкультурный блок",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "1912",
+          "zh": "1912",
+          "correct": false,
+          "ru": "В 1912 году была провозглашена Китайская Республика; КНР ещё не существовала.",
+          "source": {
+            "url": "https://www.cppcc.gov.cn/zxww/xinhai100/jlmg/index.shtml",
+            "title": "НПКСК — 纪念辛亥革命100周年",
+            "quote": "1912年元旦，孙中山在南京发布《临时大总统宣言书》、《告全国同胞书》等文件，正式宣告中华民国的诞生。",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "1949",
+          "zh": "1949",
+          "correct": true,
+          "ru": "СССР стал первой страной, признавшей КНР; дипломатические отношения установлены 2 октября.",
+          "source": {
+            "url": "https://www.mfa.gov.cn/ziliao_674904/zt_674979/dnzt_674981/qtzt/zggcddwjw100ggs/jszgddzg/202208/t20220824_10750397.shtml",
+            "title": "МИД КНР — 开国大典的彩色胶片",
+            "quote": "苏联是最早承认中华人民共和国的国家。1949年10月2号，中苏正式建交。",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "1950",
+          "zh": "1950",
+          "correct": false,
+          "ru": "В 1950 году СССР и КНР подписали Договор о дружбе, союзе и взаимной помощи.",
+          "source": {
+            "url": "https://www.mfa.gov.cn/ziliao_674904/historytoday_674971/200302/t20030214_7948993.shtml",
+            "title": "МИД КНР — 2月14日",
+            "quote": "1950年2月14日，《中苏友好同盟互助条约》在莫斯科签订。",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "1951",
+          "zh": "1951",
+          "correct": false,
+          "ru": "В 1951 году КНР установила дипломатические отношения с Пакистаном.",
+          "source": {
+            "url": "https://www.mfa.gov.cn/ziliao_674904/historytoday_674971/200305/t20030521_9284573.shtml",
+            "title": "МИД КНР — 5月21日",
+            "quote": "1951年5月21日，中国同巴基斯坦伊斯兰共和国建交。",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "keySources": [
+        {
+          "url": "https://www.cppcc.gov.cn/zxww/xinhai100/jlmg/index.shtml",
+          "title": "НПКСК — 纪念辛亥革命100周年",
+          "quote": "1912年元旦，孙中山在南京发布《临时大总统宣言书》、《告全国同胞书》等文件，正式宣告中华民国的诞生。",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://www.mfa.gov.cn/ziliao_674904/zt_674979/dnzt_674981/qtzt/zggcddwjw100ggs/jszgddzg/202208/t20220824_10750397.shtml",
+          "title": "МИД КНР — 开国大典的彩色胶片",
+          "quote": "苏联是最早承认中华人民共和国的国家。1949年10月2号，中苏正式建交。",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://www.mfa.gov.cn/ziliao_674904/historytoday_674971/200302/t20030214_7948993.shtml",
+          "title": "МИД КНР — 2月14日",
+          "quote": "1950年2月14日，《中苏友好同盟互助条约》在莫斯科签订。",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://www.mfa.gov.cn/ziliao_674904/historytoday_674971/200305/t20030521_9284573.shtml",
+          "title": "МИД КНР — 5月21日",
+          "quote": "1951年5月21日，中国同巴基斯坦伊斯兰共和国建交。",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "В каком году Россия установила дипломатические отношения с Китайской Народной Республикой?",
+        "to": "В каком году СССР установил дипломатические отношения с Китайской Народной Республикой?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Исторический субъект в 1949 году — СССР. Длина и общий смысл исходного вопроса сохраняются; правка должна быть показана автору."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "Дата 1949 не повторяет другой видимый вопрос: год образования КНР — отдельный факт, а договор 1950 — отдельное событие. Но в самом резерве есть юбилейный дубль 2019, который следует исключить из этой партии. Требуется явно показать правку России на СССР, поскольку в 1949 году отношения установил Советский Союз. Исходные ключ 1949 и все четыре варианта сохранены."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [
+          {
+            "id": "2019-20-shk-mosobl-46",
+            "questionRu": "В каком году отмечалось 70-летие установления дипломатических отношений между КНР и бывшим СССР (Россией)?",
+            "relationship": "Внутренний дубль в резерве: 70-летие той же даты; не брать одновременно.",
+            "inVisiblePool": false
+          },
+          {
+            "id": "modern-history-q112",
+            "questionRu": "В каком году образована Китайская Народная Республика?",
+            "relationship": "Год образования КНР совпадает, но событие другое; это не смысловой дубль.",
+            "inVisiblePool": true
+          },
+          {
+            "id": "modern-history-q92",
+            "questionRu": "В каком году СССР и КНР подписали Договор о дружбе, союзе и взаимной помощи, заключённый на 30 лет?",
+            "relationship": "Советско-китайский договор 1950 года — другое событие, не дата установления отношений.",
+            "inVisiblePool": true
+          }
+        ],
+        "screeningReason": "Дата 1949 не повторяет другой видимый вопрос: год образования КНР — отдельный факт, а договор 1950 — отдельное событие. Но в самом резерве есть юбилейный дубль 2019, который следует исключить из этой партии. Требуется явно показать правку России на СССР, поскольку в 1949 году отношения установил Советский Союз. Исходные ключ 1949 и все четыре варианта сохранены."
+      },
+      "futureHintReviewNotes": [
+        {
+          "id": "2020-21-reg-q227d55",
+          "reason": "Подпись 1912 сообщает год провозглашения Китайской Республики."
+        },
+        {
+          "id": "modern-history-q92",
+          "reason": "Подпись 1950 сообщает год договора СССР—КНР."
+        }
+      ],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 4,
+      "id": "2022-23-shk-mosobl-2",
+      "status": "draft-pending-author-review",
+      "topic": "География и административное устройство",
+      "originalQuestionRu": "Фучжоу – это административный центр провинции _______.",
+      "originalQuestionZh": null,
+      "questionRu": "Фучжоу — административный центр какой провинции?",
+      "previewQuestionRu": "Фучжоу — административный центр какой провинции?",
+      "questionZh": null,
+      "answerOptionId": "o3",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o3",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "福州市 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E7%A6%8F%E5%B7%9E%E5%B8%82"
+          }
+        ],
+        "explanation": {
+          "ru": "Фучжоу (福州) — административный центр (省会) провинции Фуцзянь (福建)."
+        },
+        "factGroup": "province-names-river-lake",
+        "id": "2022-23-shk-mosobl-2",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 2,
+            "officialKey": "o3",
+            "region": "Московская область",
+            "regionCode": "mosobl",
+            "sourceFiles": [
+              "01-Варианты/2022-23/1-Школьный/Московская область/9-11_Задания и ответы.pdf"
+            ],
+            "stage": "школьный",
+            "stageCode": "shk",
+            "year": "2022-23"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "云南"
+          },
+          {
+            "id": "o2",
+            "zh": "广州"
+          },
+          {
+            "id": "o3",
+            "zh": "福建"
+          },
+          {
+            "id": "o4",
+            "zh": "安徽"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Фучжоу – это административный центр провинции _______.",
+        "questionZh": null,
+        "topic": "География и административное устройство",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "云南",
+          "zh": "云南",
+          "correct": false,
+          "ru": "Юньнань — административный центр провинции — Куньмин.",
+          "source": {
+            "title": "昆明 — 云南省民政厅",
+            "url": "https://ynmz.yn.gov.cn/cms/dimingfengcai/11216.html",
+            "quote": "昆明，云南省省会",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text; direct open405",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "广州",
+          "zh": "广东",
+          "correct": false,
+          "ru": "Гуандун — административный центр провинции — Гуанчжоу.",
+          "source": {
+            "title": "根据《广州市国土空间规划（2021-2035年）》，广州市的城市性质是什么？ — 广州市规划和自然资源局",
+            "url": "https://ghzyj.gz.gov.cn/sjb/fw/cjwt/content/post_9902846.html",
+            "quote": "广州市是广东省省会",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          },
+          "replacesForPreview": "广州"
+        },
+        {
+          "id": "o3",
+          "originalZh": "福建",
+          "zh": "福建",
+          "correct": true,
+          "ru": "Фуцзянь — название составлено из первых иероглифов Фучжоу и Цзяньчжоу.",
+          "source": {
+            "title": "福建的“建”，从这里开始 — 福建省人民政府",
+            "url": "https://www.fj.gov.cn/zwgk/ztzl/sxzygwzxsgzx/sdjj/wvjj/202308/t20230827_6239055.htm",
+            "quote": "始从福州、建州各取首字，置“福建经略使司”",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "安徽",
+          "zh": "安徽",
+          "correct": false,
+          "ru": "Аньхой — административный центр провинции — Хэфэй.",
+          "source": {
+            "title": "最新！安徽省对外宣传片发布：《安徽等你》 — 中国驻福冈总领事馆",
+            "url": "https://fukuoka.china-consulate.gov.cn/chn/ggxw/202206/t20220609_10700631.htm",
+            "quote": "省名取当时安庆、徽州两府首字合成，是中华人民共和国省级行政区。省会合肥。",
+            "authority": "official",
+            "verificationMethod": "fresh-web-open",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "keySources": [
+        {
+          "title": "福州市 — 工业和信息化部",
+          "url": "https://www.miit.gov.cn/ztzl/lszt/gjgyyxzdlxcs/csmd/art/2020/art_73250f21d8e54d7ab5f209682360afdc.html",
+          "quote": "福州别称榕城，是福建省省会城市，国家历史文化名城。",
+          "authority": "official",
+          "verificationMethod": "fresh-web-open+accepted-dossier-quote",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "title": "省情概况 — 福建省人民政府",
+          "url": "https://www.fj.gov.cn/zjfj/sqgk/",
+          "quote": "福建省简称“闽”，地处中国东南沿海，省会福州。",
+          "authority": "official",
+          "verificationMethod": "fresh-web-open",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Фучжоу – это административный центр провинции _______.",
+        "to": "Фучжоу — административный центр какой провинции?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [
+        {
+          "id": "o2",
+          "from": "广州",
+          "to": "广东",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        }
+      ],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Явная категориальная правкаo2: 广州 (городГуанчжоу)→广东 (провинцияГуандун).",
+        "Остальные3исходных варианта и ключo3福建 сохранены. Не добавлялись суффиксы市/省.",
+        "Правильная подпись добавляет происхождение названияФуцзянь."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "Самостоятельная связь Фучжоу—Фуцзянь, прямого/обратногоQAдубля в1091нет. После явной категориальной правки广州→广东 все4варианта — провинции. Замена сохраняет узнаваемую исходную паруГуанчжоу—Гуандун и разрешена к предложению пользователем."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [
+          {
+            "id": "provinces-q41",
+            "questionRu": "Какое сокращённое название у провинции Фуцзянь?",
+            "relationship": "Сокращение Фуцзяни 闽 — другой факт.",
+            "inVisiblePool": true
+          },
+          {
+            "id": "ethnos-q87",
+            "questionRu": "На каком диалекте говорят в большей части провинции Фуцзянь (福建) и на Тайване?",
+            "relationship": "Миньские диалекты Фуцзяни — другой факт.",
+            "inVisiblePool": true
+          }
+        ],
+        "screeningReason": "Самостоятельная связь Фучжоу—Фуцзянь, прямого/обратногоQAдубля в1091нет. После явной категориальной правки广州→广东 все4варианта — провинции. Замена сохраняет узнаваемую исходную паруГуанчжоу—Гуандун и разрешена к предложению пользователем."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 5,
+      "id": "2024-25-mun-krym-4",
+      "status": "draft-pending-author-review",
+      "topic": "Культура, традиции и праздники",
+      "originalQuestionRu": "Назовите известного мастера китайских боевых искусств, представителя стиля Вин-Чун.",
+      "originalQuestionZh": null,
+      "questionRu": "Кто из перечисленных мастеров китайских боевых искусств представлял стиль винчун (咏春拳)?",
+      "previewQuestionRu": "Кто из перечисленных мастеров китайских боевых искусств представлял стиль винчун (咏春拳)?",
+      "questionZh": null,
+      "answerOptionId": "o1",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o1",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "葉問 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E8%91%89%E5%95%8F"
+          }
+        ],
+        "explanation": {
+          "ru": "Е Вэнь (叶问, Ip Man, 1893–1972) — мастер стиля Вин-Чун (咏春拳), который развивал его в Гонконге в 1950-е годы; среди его учеников был Брюс Ли (李小龙)."
+        },
+        "id": "2024-25-mun-krym-4",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 4,
+            "officialKey": "o1",
+            "region": "Крым",
+            "regionCode": "krym",
+            "sourceFiles": [
+              "01-Варианты/2024-25/2-Муниципальный/Крым/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2024-25"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "叶问"
+          },
+          {
+            "id": "o2",
+            "zh": "易门"
+          },
+          {
+            "id": "o3",
+            "zh": "们以"
+          },
+          {
+            "id": "o4",
+            "zh": "星系"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Назовите известного мастера китайских боевых искусств, представителя стиля Вин-Чун.",
+        "questionZh": null,
+        "topic": "Культура, традиции и праздники",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "叶问",
+          "zh": "叶问",
+          "correct": true,
+          "ru": "Ип Ман — преподавал в Гонконге; среди его учеников был Брюс Ли.",
+          "source": {
+            "url": "https://fy.szu.edu.cn/fyxm/xmlb/wsl/ycq_ywzz_.htm",
+            "title": "咏春拳(叶问宗支) — 深圳大学体育非物质文化遗产",
+            "quote": "1950年，叶问于香港发扬咏春拳，其著名传人有梁相、骆耀、黄淳梁、徐尚田、招允、李振藩(李小龙)、梁挺等",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          },
+          "additionalSources": [
+            {
+              "url": "https://www.gdwsw.gov.cn/rwcq/content/post_28210.html",
+              "title": "叶问——一代武术宗师 — 文史广东",
+              "quote": "1968年，叶问主持成立的香港咏春拳体育会",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-web-search-result-text"
+            }
+          ]
+        },
+        {
+          "id": "o2",
+          "originalZh": "易门",
+          "zh": "黄飞鸿",
+          "correct": false,
+          "ru": "Хуан Фэйхун — знаменитый представитель южнокитайского стиля хунцюань.",
+          "source": {
+            "url": "https://www.nhmuseum.org/fei-yi/1417.html",
+            "title": "洪拳（南海洪拳） — 南海博物馆",
+            "quote": "南海历代有铁桥三(梁坤)、黄飞鸿、林世荣、颜殿雄等对洪拳历史影响深远的武术名人。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          },
+          "replacesForPreview": "易门"
+        },
+        {
+          "id": "o3",
+          "originalZh": "们以",
+          "zh": "霍元甲",
+          "correct": false,
+          "ru": "Хо Юаньцзя — один из создателей шанхайского спортивного общества «Цзинъу».",
+          "source": {
+            "url": "https://www.sport.gov.cn/n20001280/n20745751/n20767239/c21843662/content.html",
+            "title": "“精武”人聚申城 传承拓展精武文化内涵 — 国家体育总局",
+            "quote": "霍元甲、农劲荪、陈公哲等齐聚沪上，共谋创立精武体育会",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          },
+          "replacesForPreview": "们以"
+        },
+        {
+          "id": "o4",
+          "originalZh": "星系",
+          "zh": "杨露禅",
+          "correct": false,
+          "ru": "Ян Лучань — основатель направления Ян в тайцзицюань.",
+          "source": {
+            "url": "https://www.sport.gov.cn/n14471/n14474/n14511/c699205/content.html",
+            "title": "河北太极拳简介 — 国家体育总局",
+            "quote": "河北人杨露禅，武禹襄、孙禄堂、吴全佑等人在陈氏太极拳基础上创建不同风格特点的杨氏、武氏、孙氏、吴氏太极流派。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          },
+          "replacesForPreview": "星系"
+        }
+      ],
+      "keySources": [
+        {
+          "url": "https://fy.szu.edu.cn/fyxm/xmlb/wsl/ycq_ywzz_.htm",
+          "title": "咏春拳(叶问宗支) — 深圳大学体育非物质文化遗产",
+          "quote": "1950年，叶问于香港发扬咏春拳，其著名传人有梁相、骆耀、黄淳梁、徐尚田、招允、李振藩(李小龙)、梁挺等",
+          "authority": "academic",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://www.gdwsw.gov.cn/rwcq/content/post_28210.html",
+          "title": "叶问——一代武术宗师 — 文史广东",
+          "quote": "1968年，叶问主持成立的香港咏春拳体育会",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://www.nhmuseum.org/fei-yi/1417.html",
+          "title": "洪拳（南海洪拳） — 南海博物馆",
+          "quote": "南海历代有铁桥三(梁坤)、黄飞鸿、林世荣、颜殿雄等对洪拳历史影响深远的武术名人。",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://www.sport.gov.cn/n20001280/n20745751/n20767239/c21843662/content.html",
+          "title": "“精武”人聚申城 传承拓展精武文化内涵 — 国家体育总局",
+          "quote": "霍元甲、农劲荪、陈公哲等齐聚沪上，共谋创立精武体育会",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://www.sport.gov.cn/n14471/n14474/n14511/c699205/content.html",
+          "title": "河北太极拳简介 — 国家体育总局",
+          "quote": "河北人杨露禅，武禹襄、孙禄堂、吴全佑等人在陈氏太极拳基础上创建不同风格特点的杨氏、武氏、孙氏、吴氏太极流派。",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Назовите известного мастера китайских боевых искусств, представителя стиля Вин-Чун.",
+        "to": "Кто из перечисленных мастеров китайских боевых искусств представлял стиль винчун (咏春拳)?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [
+        {
+          "id": "o2",
+          "from": "易门",
+          "to": "黄飞鸿",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        },
+        {
+          "id": "o3",
+          "from": "们以",
+          "to": "霍元甲",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        },
+        {
+          "id": "o4",
+          "from": "星系",
+          "to": "杨露禅",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        }
+      ],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Вопрос и ключ без изменения. Все три неверных исходных набора заменены на реальные имена мастеров: 易门→黄飞鸿; 们以→霍元甲; 星系→杨露禅. Брюс Ли не взят в неверные: он тоже учился Вин-Чун.",
+        "Имена Вин-Чун/咏春拳 относятся к одному стилю; замысел — определить его мастера, а не актёра фильма."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "После явной замены трёх бессмысленных дистракторов на реальных мастеров сохраняется полезная связь Ип Ман—Вин-Чун. Ключ и подписи подтверждены официальными/академическими источниками."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [],
+        "screeningReason": "После явной замены трёх бессмысленных дистракторов на реальных мастеров сохраняется полезная связь Ип Ман—Вин-Чун. Ключ и подписи подтверждены официальными/академическими источниками."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 6,
+      "id": "2023-24-mun-chel-7",
+      "status": "draft-pending-author-review",
+      "topic": "Россия и межкультурный блок",
+      "originalQuestionRu": "Когда празднуется день государственного флага Российской Федерации?",
+      "originalQuestionZh": null,
+      "questionRu": "Какого числа в августе празднуется День Государственного флага Российской Федерации?",
+      "previewQuestionRu": "Какого числа в августе празднуется День Государственного флага Российской Федерации?",
+      "questionZh": null,
+      "answerOptionId": "o3",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o3",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "День Государственного флага Российской Федерации — Википедия",
+            "url": "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BD%D1%8C_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D1%84%D0%BB%D0%B0%D0%B3%D0%B0_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8"
+          }
+        ],
+        "explanation": {
+          "ru": "День Государственного флага России отмечается 22 августа: так установил указ президента Б. Н. Ельцина от 20 августа 1994 года в память о восстановлении бело-сине-красного флага в 1991 году."
+        },
+        "id": "2023-24-mun-chel-7",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 7,
+            "officialKey": "o3",
+            "region": "Челябинская область",
+            "regionCode": "chel",
+            "sourceFiles": [
+              "01-Варианты/2023-24/2-Муниципальный/Челябинская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2023-24"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "7"
+          },
+          {
+            "id": "o2",
+            "zh": "12"
+          },
+          {
+            "id": "o3",
+            "zh": "22"
+          },
+          {
+            "id": "o4",
+            "zh": "31"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Когда празднуется день государственного флага Российской Федерации?",
+        "questionZh": null,
+        "topic": "Россия и межкультурный блок",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "7",
+          "zh": "7",
+          "correct": false,
+          "ru": "7 августа 1961 года завершился первый суточный космический полёт Германа Титова.",
+          "source": {
+            "url": "https://www.prlib.ru/news/1320200",
+            "title": "Президентская библиотека — К 60-летию полёта Германа Титова",
+            "quote": "полёт 6–7 августа 1961 года стал проверкой человеческих возможностей",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "12",
+          "zh": "12",
+          "correct": false,
+          "ru": "12 августа в России отмечают День Военно-воздушных сил.",
+          "source": {
+            "url": "https://www.prlib.ru/history/1979288",
+            "title": "Президентская библиотека — День Военно-воздушных сил России",
+            "quote": "12 августа отмечается День Военно-воздушных сил России (ВВС)",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "22",
+          "zh": "22",
+          "correct": true,
+          "ru": "Праздник учреждён в 1994 году в память о восстановлении российского триколора в 1991-м.",
+          "source": {
+            "url": "https://www.prlib.ru/history/619479",
+            "title": "Президентская библиотека — День Государственного флага РФ",
+            "quote": "установить праздник День Государственного флага и отмечать его ежегодно 22 августа.",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "31",
+          "zh": "31",
+          "correct": false,
+          "ru": "31 августа в России отмечают День ветеринарного работника.",
+          "source": {
+            "url": "https://tomsk.gov.ru/news/front/view?id=170735",
+            "title": "Правительство Томской области — День ветеринарного работника",
+            "quote": "Профессиональный праздник День ветеринарного работника отмечается 31 августа, начиная с 2014 года.",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "keySources": [
+        {
+          "url": "https://www.prlib.ru/history/619479",
+          "title": "Президентская библиотека — День Государственного флага РФ",
+          "quote": "установить праздник День Государственного флага и отмечать его ежегодно 22 августа.",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://www.prlib.ru/history/1979288",
+          "title": "Президентская библиотека — День Военно-воздушных сил России",
+          "quote": "12 августа отмечается День Военно-воздушных сил России (ВВС)",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://www.prlib.ru/news/1320200",
+          "title": "Президентская библиотека — К 60-летию полёта Германа Титова",
+          "quote": "полёт 6–7 августа 1961 года стал проверкой человеческих возможностей",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://tomsk.gov.ru/news/front/view?id=170735",
+          "title": "Правительство Томской области — День ветеринарного работника",
+          "quote": "Профессиональный праздник День ветеринарного работника отмечается 31 августа, начиная с 2014 года.",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Когда празднуется день государственного флага Российской Федерации?",
+        "to": "Какого числа в августе празднуется День Государственного флага Российской Федерации?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Все редакции и замены явно показаны в changes; это предложение, не публикация."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "После явно показанного восстановления месяца август вопрос однозначен. Ключ 22 и исходные четыре числовых варианта сохранены без добавления месяцев к вариантам. Правильная подпись даёт историю учреждения праздника. У неверных — самостоятельные подтверждённые события и памятные даты тех же дней августа; ложные даты Дня флага им не приписываются."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [],
+        "screeningReason": "После явно показанного восстановления месяца август вопрос однозначен. Ключ 22 и исходные четыре числовых варианта сохранены без добавления месяцев к вариантам. Правильная подпись даёт историю учреждения праздника. У неверных — самостоятельные подтверждённые события и памятные даты тех же дней августа; ложные даты Дня флага им не приписываются."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 7,
+      "id": "2022-23-mun-kam-7",
+      "status": "draft-pending-author-review",
+      "topic": "География и административное устройство",
+      "originalQuestionRu": "Сколько морей омывает Китай?",
+      "originalQuestionZh": null,
+      "questionRu": "Сколько морей омывает Китай?",
+      "previewQuestionRu": "Сколько морей омывает Китай?",
+      "questionZh": null,
+      "answerOptionId": "o3",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o3",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "中国地理 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E5%9C%B0%E7%90%86"
+          }
+        ],
+        "explanation": {
+          "ru": "Китай омывают четыре моря (四): с севера на юг — Бохай (渤海), Жёлтое (黄海), Восточно-Китайское (东海) и Южно-Китайское (南海)."
+        },
+        "id": "2022-23-mun-kam-7",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 7,
+            "officialKey": "o3",
+            "region": "Камчатский край",
+            "regionCode": "kam",
+            "sourceFiles": [
+              "01-Варианты/2022-23/2-Муниципальный/Камчатский край/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2022-23"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "五"
+          },
+          {
+            "id": "o2",
+            "zh": "三"
+          },
+          {
+            "id": "o3",
+            "zh": "四"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Сколько морей омывает Китай?",
+        "questionZh": null,
+        "topic": "География и административное устройство",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "sourceOptionCount": 3,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "五",
+          "zh": "五",
+          "correct": false,
+          "ru": "Пять — на одно море больше принятого в китайской географии числа.",
+          "source": {
+            "title": "中国的近海 — 中国科学院地理科学与资源研究所",
+            "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692452.html",
+            "quote": "中国近海包括渤海、黄海、东海和南海。",
+            "authority": "academic",
+            "verificationMethod": "fresh-web-open",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "三",
+          "zh": "三",
+          "correct": false,
+          "ru": "Три — на одно море меньше принятого в китайской географии числа.",
+          "source": {
+            "title": "中国的近海 — 中国科学院地理科学与资源研究所",
+            "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692452.html",
+            "quote": "中国近海包括渤海、黄海、东海和南海。",
+            "authority": "academic",
+            "verificationMethod": "fresh-web-open",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "四",
+          "zh": "四",
+          "correct": true,
+          "ru": "Четыре — Бохайское, Жёлтое, Восточно-Китайское и Южно-Китайское моря.",
+          "source": {
+            "title": "中国的近海 — 中国科学院地理科学与资源研究所",
+            "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692452.html",
+            "quote": "中国近海包括渤海、黄海、东海和南海。",
+            "authority": "academic",
+            "verificationMethod": "fresh-web-open",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "preview-b8-six-seas",
+          "originalZh": null,
+          "zh": "六",
+          "correct": false,
+          "ru": "Шесть — на два моря больше принятого в китайской географии числа.",
+          "source": {
+            "title": "中国的近海 — 中国科学院地理科学与资源研究所",
+            "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692452.html",
+            "quote": "中国近海包括渤海、黄海、东海和南海。",
+            "authority": "academic",
+            "verificationMethod": "fresh-web-open",
+            "checkedAt": "2026-11-08"
+          },
+          "addedForPreview": true
+        }
+      ],
+      "keySources": [
+        {
+          "title": "中国的近海 — 中国科学院地理科学与资源研究所",
+          "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692452.html",
+          "quote": "中国近海包括渤海、黄海、东海和南海。",
+          "authority": "academic",
+          "verificationMethod": "fresh-web-open",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "proposedStemEdit": null,
+      "proposedOptionEdits": [],
+      "proposedOptionAdditions": [
+        {
+          "id": "preview-b8-six-seas",
+          "zh": "六",
+          "reason": "Явно добавлен четвёртый вариант к исходному трёхвариантному вопросу.",
+          "authorAuthorized": true
+        }
+      ],
+      "authorRemarks": [
+        "Добавлен четвёртый вариантo4六; исходные3варианта и ключo3四 сохранены.",
+        "Правильная подпись добавляет состав набора; неверным числам даны честные сравнения по образцу принятой партии7."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "Число4 подтверждено академическим источником. Прямого вопроса на число или полный состав четырёх морей среди1091 нет. Вопросы об отдельных морях не превращают счёт набора в дубль. Добавляется явно помеченный o4 六."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [
+          {
+            "id": "2025-26-mun-6",
+            "questionRu": "Какое из перечисленных морей омывает берега Китая?",
+            "relationship": "Одно из морей, омывающих Китай,—Жёлтое: другой вопрос.",
+            "inVisiblePool": true
+          },
+          {
+            "id": "nature-q35",
+            "questionRu": "Какое море считают самым большим внутренним морем Китая?",
+            "relationship": "Бохайское море — внутреннее: другой аспект.",
+            "inVisiblePool": true
+          },
+          {
+            "id": "nature-q36",
+            "questionRu": "Какое из морей Китая имеет самый широкий шельф?",
+            "relationship": "Ширина шельфа Восточно-Китайского моря: другой аспект.",
+            "inVisiblePool": true
+          },
+          {
+            "id": "nature-q37",
+            "questionRu": "Какое море — самое большое и самое глубокое из морей Китая?",
+            "relationship": "Наибольшая площадь и глубина Южно-Китайского: другой аспект.",
+            "inVisiblePool": true
+          }
+        ],
+        "screeningReason": "Число4 подтверждено академическим источником. Прямого вопроса на число или полный состав четырёх морей среди1091 нет. Вопросы об отдельных морях не превращают счёт набора в дубль. Добавляется явно помеченный o4 六."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 8,
+      "id": "2023-24-shk-mosobl-10",
+      "status": "draft-pending-author-review",
+      "topic": "Культура, традиции и праздники",
+      "originalQuestionRu": "Какой город в Китае известен своей вышивкой?",
+      "originalQuestionZh": null,
+      "questionRu": "В каком из этих городов сложилась одна из четырёх знаменитых школ китайской вышивки?",
+      "previewQuestionRu": "В каком из этих городов сложилась одна из четырёх знаменитых школ китайской вышивки?",
+      "questionZh": null,
+      "answerOptionId": "o2",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Китайский вопросительный знак в русском вопросе (ревью ветки); Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "苏绣 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E8%8B%8F%E7%BB%A3"
+          }
+        ],
+        "explanation": {
+          "ru": "Вышивкой славится Сучжоу (苏州): сучжоуская вышивка (苏绣) — самая древняя и известная вышивка провинции Цзянсу, одна из десяти знаменитых вышивок Китая, с 2006 года она внесена в список национального нематериального наследия."
+        },
+        "id": "2023-24-shk-mosobl-10",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 10,
+            "officialKey": "o2",
+            "region": "Московская область",
+            "regionCode": "mosobl",
+            "sourceFiles": [
+              "01-Варианты/2023-24/1-Школьный/Московская область/9-11_Задания.pdf"
+            ],
+            "stage": "школьный",
+            "stageCode": "shk",
+            "year": "2023-24"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "西安"
+          },
+          {
+            "id": "o2",
+            "zh": "苏州"
+          },
+          {
+            "id": "o3",
+            "zh": "昆明"
+          },
+          {
+            "id": "o4",
+            "zh": "杭州"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Какой город в Китае известен своей вышивкой?",
+        "questionZh": null,
+        "topic": "Культура, традиции и праздники",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "西安",
+          "zh": "西安",
+          "correct": false,
+          "ru": "Сиань — древний Чанъань, столица нескольких китайских династий.",
+          "source": {
+            "url": "https://cz.china-embassy.gov.cn/zxdt/202201/t20220120_10630611.htm",
+            "title": "陕西省及西安市文化旅游介绍 — 中国驻捷克共和国大使馆",
+            "quote": "西安，陕西省省会，古称长安",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-accepted-dossier-source-not-freshly-fetched"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "苏州",
+          "zh": "苏州",
+          "correct": true,
+          "ru": "Сучжоу — школа сусю знаменита двусторонними вышитыми картинами.",
+          "source": {
+            "url": "https://www.ihchina.cn/project_details/13978.html",
+            "title": "苏绣 — 中国非物质文化遗产网",
+            "quote": "苏绣为苏州刺绣之简称，它以产生之地命名",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-accepted-dossier-source-not-freshly-fetched"
+          },
+          "additionalSources": [
+            {
+              "url": "https://www.chinasilkmuseum.com/jz/info_15.aspx?itemid=5378",
+              "title": "中国的四大名绣是什么？ — 中国丝绸博物馆",
+              "quote": "双面绣“猫”是苏绣的代表性作品之一。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-web-search-result-text"
+            }
+          ]
+        },
+        {
+          "id": "o3",
+          "originalZh": "昆明",
+          "zh": "昆明",
+          "correct": false,
+          "ru": "Куньмин — центр Юньнани с мягким климатом; его прозвище — «город весны».",
+          "source": {
+            "url": "https://www.news.cn/local/2023-06/17/c_1129702720.htm",
+            "title": "文脉不断四时春——解码春城昆明的文化自信样本 — 新华网",
+            "quote": "明代才子杨慎将昆明四季如春的特质写进诗文",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reused-accepted-dossier-source-not-freshly-fetched"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "杭州",
+          "zh": "杭州",
+          "correct": false,
+          "ru": "Ханчжоу — здесь есть собственная вышивка хансю, не входящая в традиционную четвёрку.",
+          "source": {
+            "url": "https://www.hzarchives.org.cn/info/6940",
+            "title": "杭州刺绣 — 杭州市档案馆",
+            "quote": "杭绣在刺绣技艺上，吸收并融合苏、湘、蜀、粤四大名绣之长",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          },
+          "additionalSources": [
+            {
+              "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201812/84bb1cd237544d82968713e9464bd3dd.shtml",
+              "title": "苏州的文化艺术——苏绣 — 苏州市地方志办公室",
+              "quote": "与湖南的湘绣、广东的粤绣、四川的蜀绣齐名，被誉为中国四大名绣。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reused-accepted-dossier-source-not-freshly-fetched"
+            }
+          ]
+        }
+      ],
+      "keySources": [
+        {
+          "url": "https://www.ihchina.cn/project_details/13978.html",
+          "title": "苏绣 — 中国非物质文化遗产网",
+          "quote": "苏绣为苏州刺绣之简称，它以产生之地命名",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "reused-accepted-dossier-source-not-freshly-fetched"
+        },
+        {
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201812/84bb1cd237544d82968713e9464bd3dd.shtml",
+          "title": "苏州的文化艺术——苏绣 — 苏州市地方志办公室",
+          "quote": "与湖南的湘绣、广东的粤绣、四川的蜀绣齐名，被誉为中国四大名绣。",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "reused-accepted-dossier-source-not-freshly-fetched"
+        },
+        {
+          "url": "https://www.chinasilkmuseum.com/jz/info_15.aspx?itemid=5378",
+          "title": "中国的四大名绣是什么？ — 中国丝绸博物馆",
+          "quote": "双面绣“猫”是苏绣的代表性作品之一。",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://www.hzarchives.org.cn/info/6940",
+          "title": "杭州刺绣 — 杭州市档案馆",
+          "quote": "杭绣在刺绣技艺上，吸收并融合苏、湘、蜀、粤四大名绣之长",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://cz.china-embassy.gov.cn/zxdt/202201/t20220120_10630611.htm",
+          "title": "陕西省及西安市文化旅游介绍 — 中国驻捷克共和国大使馆",
+          "quote": "西安，陕西省省会，古称长安",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "reused-accepted-dossier-source-not-freshly-fetched"
+        },
+        {
+          "url": "https://www.news.cn/local/2023-06/17/c_1129702720.htm",
+          "title": "文脉不断四时春——解码春城昆明的文化自信样本 — 新华网",
+          "quote": "明代才子杨慎将昆明四季如春的特质写进诗文",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "reused-accepted-dossier-source-not-freshly-fetched"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Какой город в Китае известен своей вышивкой?",
+        "to": "В каком из этих городов сложилась одна из четырёх знаменитых школ китайской вышивки?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Исходное «Какой город в Китае известен своей вышивкой?» было двусмысленно: Ханчжоу тоже известен вышивкой. Уточнён проверяемый критерий — одна из четырёх знаменитых школ. Ключ, все четыре варианта и замысел сохранены. В crafts-q129 проверяется двусторонняя техника, а не город: это другая сторона сущности, не дубль."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "Город—школа вышивки представляет отдельный факт, не дублирует двустороннюю технику в crafts-q129. Уточнение до одной из четырёх знаменитых школ снимает исходную двусмысленность с Ханчжоу; варианты сохранены."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [
+          {
+            "id": "crafts-q129",
+            "questionRu": "Какая из четырёх знаменитых вышивок Китая славится двусторонней вышивкой: одно и то же изображение видно на обеих сторонах ткани?",
+            "relationship": "Та же школа 苏绣, но спрашивается техника 双面绣; не прямой/обратный дубль города происхождения.",
+            "inVisiblePool": true
+          },
+          {
+            "id": "crafts-q14",
+            "questionRu": "Какая вышивка сосредоточена в Чэнду и названа по древнему имени этого края?",
+            "relationship": "Тот же тематический набор четырёх вышивок; вопрос относится к другой школе и её центру Чэнду.",
+            "inVisiblePool": true
+          }
+        ],
+        "screeningReason": "Город—школа вышивки представляет отдельный факт, не дублирует двустороннюю технику в crafts-q129. Уточнение до одной из четырёх знаменитых школ снимает исходную двусмысленность с Ханчжоу; варианты сохранены."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 9,
+      "id": "2025-26-mun-irk-3",
+      "status": "draft-pending-author-review",
+      "topic": "Экономика, образование, наука и спорт",
+      "originalQuestionRu": "Какая мобильная платежная система, кроме Alipay, часто используется в Китае?",
+      "originalQuestionZh": null,
+      "questionRu": "Какая мобильная платёжная система вместе с Alipay относится к двум основным способам цифровой оплаты в Китае?",
+      "previewQuestionRu": "Какая мобильная платёжная система вместе с Alipay относится к двум основным способам цифровой оплаты в Китае?",
+      "questionZh": null,
+      "answerOptionId": "o2",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "微信支付 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98"
+          }
+        ],
+        "explanation": {
+          "ru": "Кроме Alipay (支付宝), в Китае широко распространена платёжная система WeChat Pay (微信支付), запущенная в 2013 году в мессенджере WeChat (微信)."
+        },
+        "factRow": "modern-china/companies/co-tencent",
+        "id": "2025-26-mun-irk-3",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 3,
+            "officialKey": "o2",
+            "region": "Иркутская область",
+            "regionCode": "irk",
+            "sourceFiles": [
+              "01-Варианты/2025-26/2-Муниципальный/Иркутская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2025-26"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "QQ"
+          },
+          {
+            "id": "o2",
+            "zh": "微信"
+          },
+          {
+            "id": "o3",
+            "zh": "银联"
+          },
+          {
+            "id": "o4",
+            "zh": "淘宝"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Какая мобильная платежная система, кроме Alipay, часто используется в Китае?",
+        "questionZh": null,
+        "topic": "Экономика, образование, наука и спорт",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "QQ",
+          "zh": "QQ",
+          "correct": false,
+          "ru": "QQ — мессенджер и социальная платформа Tencent, запущенная в феврале 1999 года.",
+          "source": {
+            "url": "https://www.tencent.com/products/qq/",
+            "title": "Tencent — QQ",
+            "quote": "Launched by Tencent in February 1999, QQ is an instant messaging (IM) and social platform",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "微信",
+          "zh": "微信",
+          "correct": true,
+          "ru": "WeChat — платёжный сервис Weixin Pay в приложении Tencent работает с 2013 года.",
+          "source": {
+            "url": "https://www.tencent.com/products/weixin-pay/",
+            "title": "Tencent — Weixin Pay",
+            "quote": "Weixin Pay is a mobile payment solution jointly launched by Weixin and Tenpay in 2013.",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "银联",
+          "zh": "银联",
+          "correct": false,
+          "ru": "UnionPay — китайская межбанковская карточная платёжная сеть, основанная в 2002 году.",
+          "source": {
+            "url": "https://www.unionpay.com/upowhtml/cn/templates/upOverview/upOverview.html",
+            "title": "China UnionPay — 企业概况",
+            "quote": "2002年3月， 经国务院同意，中国人民银行批准",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "note": "Следом сказано об учреждении China UnionPay; основной текст описывает межбанковский карточный клиринг."
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "淘宝",
+          "zh": "淘宝",
+          "correct": false,
+          "ru": "Taobao — торговая интернет-площадка Alibaba, запущенная в мае 2003 года.",
+          "source": {
+            "url": "https://www.alibabagroup.com/en-US/document-1491551592707522560",
+            "title": "Alibaba — About Taobao Marketplace",
+            "quote": "Launched in May 2003, Taobao Marketplace",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "keySources": [
+        {
+          "url": "https://english.shanghai.gov.cn/en-UsefulApps/20231214/3cac2d8cc7f847da92a72252bae06705.html",
+          "title": "Шанхайский правительственный портал — Essential apps for living in Shanghai",
+          "quote": "WeChat Pay and Alipay are the two major digital payment methods in China.",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://www.tencent.com/products/qq/",
+          "title": "Tencent — QQ",
+          "quote": "Launched by Tencent in February 1999, QQ is an instant messaging (IM) and social platform",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://www.tencent.com/products/weixin-pay/",
+          "title": "Tencent — Weixin Pay",
+          "quote": "Weixin Pay is a mobile payment solution jointly launched by Weixin and Tenpay in 2013.",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://www.unionpay.com/upowhtml/cn/templates/upOverview/upOverview.html",
+          "title": "China UnionPay — 企业概况",
+          "quote": "2002年3月， 经国务院同意，中国人民银行批准",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "note": "Следом сказано об учреждении China UnionPay; основной текст описывает межбанковский карточный клиринг."
+        },
+        {
+          "url": "https://www.alibabagroup.com/en-US/document-1491551592707522560",
+          "title": "Alibaba — About Taobao Marketplace",
+          "quote": "Launched in May 2003, Taobao Marketplace",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Какая мобильная платежная система, кроме Alipay, часто используется в Китае?",
+        "to": "Какая мобильная платёжная система вместе с Alipay относится к двум основным способам цифровой оплаты в Китае?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Все редакции и замены явно показаны в changes; это предложение, не публикация."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "После разрешённого уточнения критерия это пригодный вопрос: спрашиваются две основные платформы, а не всякая часто используемая система. Официальный портал Шанхая называет именно WeChat Pay и Alipay. Все четыре исходных варианта QQ/微信/银联/淘宝 и ключ 微信 сохранены. QQ тоже принадлежит Tencent, поэтому критерий «принадлежит Tencent» намеренно не используется."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [],
+        "screeningReason": "После разрешённого уточнения критерия это пригодный вопрос: спрашиваются две основные платформы, а не всякая часто используемая система. Официальный портал Шанхая называет именно WeChat Pay и Alipay. Все четыре исходных варианта QQ/微信/银联/淘宝 и ключ 微信 сохранены. QQ тоже принадлежит Tencent, поэтому критерий «принадлежит Tencent» намеренно не используется."
+      },
+      "futureHintReviewNotes": [
+        {
+          "id": "2020-21-mun-kgd-8",
+          "reason": "Подпись Taobao упоминает Alibaba, но не её основателя; ответа соседнего вопроса не сообщает."
+        }
+      ],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 10,
+      "id": "2024-25-mun-kursk-2",
+      "status": "draft-pending-author-review",
+      "topic": "География и административное устройство",
+      "originalQuestionRu": "Как ещё называют Пекин?",
+      "originalQuestionZh": "北京别名是______。",
+      "questionRu": "Какое из этих старинных названий относится к Пекину?",
+      "previewQuestionRu": "Какое из этих старинных названий относится к Пекину?",
+      "questionZh": "北京别名是______。",
+      "answerOptionId": "o2",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "北京市 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%B8%82"
+          }
+        ],
+        "explanation": {
+          "ru": "В древности Пекин носил разные названия, среди них — Яньцзин (燕京)."
+        },
+        "id": "2024-25-mun-kursk-2",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 2,
+            "officialKey": null,
+            "region": "Курская область",
+            "regionCode": "kursk",
+            "sourceFiles": [
+              "01-Варианты/2024-25/2-Муниципальный/Курская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2024-25"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "北海"
+          },
+          {
+            "id": "o2",
+            "zh": "燕京"
+          },
+          {
+            "id": "o3",
+            "zh": "古城"
+          },
+          {
+            "id": "o4",
+            "zh": "京都"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Как ещё называют Пекин?",
+        "questionZh": "北京别名是______。",
+        "topic": "География и административное устройство",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "北海",
+          "zh": "临安",
+          "correct": false,
+          "ru": "Линьань — название Ханчжоу, столицы Южной Сун.",
+          "source": {
+            "title": "浙江文化研究工程与你同行——文化寻根·约会浙江考古文明⑧ — 浙江省社会科学界联合会",
+            "url": "https://www.zjskw.gov.cn/art/2024/8/29/art_1229515903_60324.html",
+            "quote": "作为彼时政治、经济、文化、科技中心的都城临安（浙江杭州），是南宋繁华与开放的代表。",
+            "authority": "academic",
+            "verificationMethod": "fresh-web-indexed-text",
+            "originalAuthority": "academic-official",
+            "checkedAt": "2026-11-08"
+          },
+          "replacesForPreview": "北海"
+        },
+        {
+          "id": "o2",
+          "originalZh": "燕京",
+          "zh": "燕京",
+          "correct": true,
+          "ru": "Яньцзин — название восходит к древнему царству Янь.",
+          "source": {
+            "title": "北平 — 故宫博物院",
+            "url": "https://www.dpm.org.cn/lemmas/241431.html",
+            "quote": "即今北京。辽代称燕京，后称南京。金代亦称燕京，后称中都。",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text; direct open timeout",
+            "originalAuthority": "official-museum",
+            "checkedAt": "2026-11-08"
+          },
+          "additionalSources": [
+            {
+              "title": "The Names of Beijing — 北京市文化和旅游局 VisitBeijing",
+              "url": "https://english.visitbeijing.com.cn/article/47OMhkXlgaL",
+              "quote": "a reference to the ancient State of Yan that existed here during the Zhou Dynasty.",
+              "authority": "official",
+              "verificationMethod": "fresh-web-indexed-text",
+              "originalAuthority": "official-tourism",
+              "checkedAt": "2026-11-08"
+            }
+          ]
+        },
+        {
+          "id": "o3",
+          "originalZh": "古城",
+          "zh": "金陵",
+          "correct": false,
+          "ru": "Цзиньлин — старое название Нанкина.",
+          "source": {
+            "title": "[我们的长三角]钟山帝王语，良渚耀古今 — 南京市中山陵园管理局",
+            "url": "https://zschina.nanjing.gov.cn/lyzx/202506/t20250611_5583963.html",
+            "quote": "南京，古称“金陵”，又称“建业”或“建康”",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          },
+          "replacesForPreview": "古城"
+        },
+        {
+          "id": "o4",
+          "originalZh": "京都",
+          "zh": "长安",
+          "correct": false,
+          "ru": "Чанъань — древнее название Сианя.",
+          "source": {
+            "title": "建置沿革 — 西安市人民政府",
+            "url": "https://www.xa.gov.cn/sq/csgk/lsyg/1.html",
+            "quote": "西安古称长安",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          },
+          "replacesForPreview": "京都"
+        }
+      ],
+      "keySources": [
+        {
+          "title": "北平 — 故宫博物院",
+          "url": "https://www.dpm.org.cn/lemmas/241431.html",
+          "quote": "即今北京。辽代称燕京，后称南京。金代亦称燕京，后称中都。",
+          "authority": "official",
+          "verificationMethod": "fresh-web-indexed-text; direct open timeout",
+          "originalAuthority": "official-museum",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "title": "The Names of Beijing — 北京市文化和旅游局 VisitBeijing",
+          "url": "https://english.visitbeijing.com.cn/article/47OMhkXlgaL",
+          "quote": "a reference to the ancient State of Yan that existed here during the Zhou Dynasty.",
+          "authority": "official",
+          "verificationMethod": "fresh-web-indexed-text",
+          "originalAuthority": "official-tourism",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Как ещё называют Пекин?",
+        "to": "Какое из этих старинных названий относится к Пекину?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [
+        {
+          "id": "o1",
+          "from": "北海",
+          "to": "临安",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        },
+        {
+          "id": "o3",
+          "from": "古城",
+          "to": "金陵",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        },
+        {
+          "id": "o4",
+          "from": "京都",
+          "to": "长安",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        }
+      ],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Явные замены: o1 北海→临安; o3 古城→金陵; o4 京都→长安.",
+        "Ключo2燕京 и исходная связь исторического имени с Пекином сохранены. Все4ответа теперь исторические имена городов.",
+        "ПрямогоQAдубля в1091нет; но 燕京 уже есть уstate-q14как неверный вариант с подписью Пекин.",
+        "Все источники подписей — официальные/академические первичные публикации; правильная подпись добавляет происхождение имени."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "Самостоятельный вопрос Пекин—Яньцзин. Пользователь разрешил предлагать явные замены слабых дистракторов. Заменяются3неверных варианта: парк/озеро北海 и общие古城/京都;4исторических имени дают однородный набор и единственный ключ."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [
+          {
+            "id": "state-q14",
+            "questionRu": "Как в древности называли Нанкин — «столицу шести династий»?",
+            "relationship": "Сосед спрашивает Цзиньлин—Нанкин; Яньцзин есть среди неверных вариантов с подписью Пекин. Другая связь, не дубль.",
+            "inVisiblePool": true
+          },
+          {
+            "id": "provinces-q98",
+            "questionRu": "Каков статус Пекина в административном делении КНР?",
+            "relationship": "Статус Пекина — другой аспект.",
+            "inVisiblePool": true
+          }
+        ],
+        "screeningReason": "Самостоятельный вопрос Пекин—Яньцзин. Пользователь разрешил предлагать явные замены слабых дистракторов. Заменяются3неверных варианта: парк/озеро北海 и общие古城/京都;4исторических имени дают однородный набор и единственный ключ."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 11,
+      "id": "2022-23-mun-krsk-2",
+      "status": "draft-pending-author-review",
+      "topic": "Литература, язык, искусство и философия",
+      "originalQuestionRu": "Выберите китайские национальные инструменты:",
+      "originalQuestionZh": null,
+      "questionRu": "Выберите пару китайских традиционных музыкальных инструментов.",
+      "previewQuestionRu": "Выберите пару китайских традиционных музыкальных инструментов.",
+      "questionZh": null,
+      "answerOptionId": "o4",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o4",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "二胡 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E4%BA%8C%E8%83%A1"
+          },
+          {
+            "checkedAt": "2026-10-25",
+            "title": "古琴 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E5%8F%A4%E7%90%B4"
+          }
+        ],
+        "explanation": {
+          "ru": "Эрху (二胡) — китайский двухструнный смычковый инструмент, а гуцинь (古琴) — древняя китайская щипковая цитра с историей более трёх тысяч лет."
+        },
+        "id": "2022-23-mun-krsk-2",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 2,
+            "officialKey": "o4",
+            "region": "Красноярский край",
+            "regionCode": "krsk",
+            "sourceFiles": [
+              "01-Варианты/2022-23/2-Муниципальный/Красноярский край/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2022-23"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "吉他、提琴"
+          },
+          {
+            "id": "o2",
+            "zh": "三角琴、大手风琴"
+          },
+          {
+            "id": "o3",
+            "zh": "风笛、竖琴"
+          },
+          {
+            "id": "o4",
+            "zh": "二胡、古琴"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Выберите китайские национальные инструменты:",
+        "questionZh": null,
+        "topic": "Литература, язык, искусство и философия",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "吉他、提琴",
+          "zh": "三味线、尺八",
+          "correct": false,
+          "ru": "Сямисэн и сякухати — японские щипковая лютня и продольная бамбуковая флейта.",
+          "source": {
+            "url": "https://www.ishikawa-densankan.jp/en/collection/collection-238/",
+            "title": "Kanazawa Sangen — Ishikawa Prefectural Museum of Traditional Arts and Crafts",
+            "quote": "Also known as the Shamisen, it is an essential instrument for the traditional Japanese music",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          },
+          "additionalSources": [
+            {
+              "url": "https://api.online.bunka.go.jp/heritages/detail/430687",
+              "title": "尺八 — 文化庁文化遺産オンライン",
+              "quote": "尺八は、雅楽の左方・唐楽（とうがく）で用いられる縦笛",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-web-search-result-text"
+            }
+          ],
+          "replacesForPreview": "吉他、提琴"
+        },
+        {
+          "id": "o2",
+          "originalZh": "三角琴、大手风琴",
+          "zh": "伽倻琴、玄琴",
+          "correct": false,
+          "ru": "Каягым и комунго — корейские щипковые цитры; у комунго шесть струн.",
+          "source": {
+            "url": "https://nfm.go.kr/site/home/pdfview/folk202506.pdf",
+            "title": "Korean Folk Performance for Visitors — National Folk Museum of Korea",
+            "quote": "Korean instruments such as Geomungo (6-stringed zither), Gayageum (12-stringed zither)",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          },
+          "replacesForPreview": "三角琴、大手风琴"
+        },
+        {
+          "id": "o3",
+          "originalZh": "风笛、竖琴",
+          "zh": "西塔琴、塔布拉鼓",
+          "correct": false,
+          "ru": "Ситар и табла — в североиндийской музыке щипковому ситару отвечают парные барабаны.",
+          "source": {
+            "url": "https://music.du.ac.in/museum/museum.php",
+            "title": "Instruments Gallery — University of Delhi",
+            "quote": "instruments used in Indian Classical Music",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text",
+            "additionalQuotes": [
+              "Sitar",
+              "Tabla"
+            ]
+          },
+          "additionalSources": [
+            {
+              "url": "https://yold.unlp.edu.ar/museo_azzarini/texto_ingles_azzarini_sitar-6641",
+              "title": "Sitar — Museo Azzarini, Universidad Nacional de La Plata",
+              "quote": "Together with the tambura lute and the tabla membranophones it constitutes the typical musical group",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-web-search-result-text"
+            }
+          ],
+          "replacesForPreview": "风笛、竖琴"
+        },
+        {
+          "id": "o4",
+          "originalZh": "二胡、古琴",
+          "zh": "二胡、古琴",
+          "correct": true,
+          "ru": "Эрху и гуцинь — у смычкового эрху две струны, у щипкового гуциня — семь.",
+          "source": {
+            "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/arts-edu/resources/mus-curri/listening-to-chinese-music-e.pdf",
+            "title": "Listening to Chinese Music — Education Bureau, Hong Kong",
+            "quote": "The erhu has two strings.",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          },
+          "additionalSources": [
+            {
+              "url": "https://ich.unesco.org/en/RL/guqin-and-its-music-00061",
+              "title": "Guqin and its music — UNESCO",
+              "quote": "The guqin has seven strings and thirteen marked pitch positions.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-web-search-result-text"
+            }
+          ]
+        }
+      ],
+      "keySources": [
+        {
+          "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/arts-edu/resources/mus-curri/listening-to-chinese-music-e.pdf",
+          "title": "Listening to Chinese Music — Education Bureau, Hong Kong",
+          "quote": "The erhu has two strings.",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://ich.unesco.org/en/RL/guqin-and-its-music-00061",
+          "title": "Guqin and its music — UNESCO",
+          "quote": "The guqin has seven strings and thirteen marked pitch positions.",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://www.ishikawa-densankan.jp/en/collection/collection-238/",
+          "title": "Kanazawa Sangen — Ishikawa Prefectural Museum of Traditional Arts and Crafts",
+          "quote": "Also known as the Shamisen, it is an essential instrument for the traditional Japanese music",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://api.online.bunka.go.jp/heritages/detail/430687",
+          "title": "尺八 — 文化庁文化遺産オンライン",
+          "quote": "尺八は、雅楽の左方・唐楽（とうがく）で用いられる縦笛",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://nfm.go.kr/site/home/pdfview/folk202506.pdf",
+          "title": "Korean Folk Performance for Visitors — National Folk Museum of Korea",
+          "quote": "Korean instruments such as Geomungo (6-stringed zither), Gayageum (12-stringed zither)",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://music.du.ac.in/museum/museum.php",
+          "title": "Instruments Gallery — University of Delhi",
+          "quote": "instruments used in Indian Classical Music",
+          "authority": "academic",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text",
+          "additionalQuotes": [
+            "Sitar",
+            "Tabla"
+          ]
+        },
+        {
+          "url": "https://yold.unlp.edu.ar/museo_azzarini/texto_ingles_azzarini_sitar-6641",
+          "title": "Sitar — Museo Azzarini, Universidad Nacional de La Plata",
+          "quote": "Together with the tambura lute and the tabla membranophones it constitutes the typical musical group",
+          "authority": "academic",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Выберите китайские национальные инструменты:",
+        "to": "Выберите пару китайских традиционных музыкальных инструментов.",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [
+        {
+          "id": "o1",
+          "from": "吉他、提琴",
+          "to": "三味线、尺八",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        },
+        {
+          "id": "o2",
+          "from": "三角琴、大手风琴",
+          "to": "伽倻琴、玄琴",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        },
+        {
+          "id": "o3",
+          "from": "风笛、竖琴",
+          "to": "西塔琴、塔布拉鼓",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        }
+      ],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Ключ 二胡、古琴 сохранён. Явные замены трёх европейских пар: 吉他、提琴→三味线、尺八; 三角琴、大手风琴→伽倻琴、玄琴; 风笛、竖琴→西塔琴、塔布拉鼓. В каждой строке два инструмента; длинных перечней нет. Набор проверяет принадлежность к музыкальной традиции, а не древнее место происхождения инструмента. Для японских и корейских инструментов учитывается современная самостоятельная традиция при китайском историческом влиянии."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "Разрешены пары из двух инструментов. Три исходные европейские пары заменены короткими реальными японской, корейской и индийской парами; ключ 二胡、古琴 сохранён, формат проверяет распознавание китайских инструментов."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [],
+        "screeningReason": "Разрешены пары из двух инструментов. Три исходные европейские пары заменены короткими реальными японской, корейской и индийской парами; ключ 二胡、古琴 сохранён, формат проверяет распознавание китайских инструментов."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 12,
+      "id": "2022-23-mun-lenobl-59",
+      "status": "draft-pending-author-review",
+      "topic": "География и административное устройство",
+      "originalQuestionRu": "Какая самая длинная река России?",
+      "originalQuestionZh": null,
+      "questionRu": "Какая самая длинная река, целиком протекающая по территории России?",
+      "previewQuestionRu": "Какая самая длинная река, целиком протекающая по территории России?",
+      "questionZh": null,
+      "answerOptionId": "o3",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o3",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Лена по-китайски принято писать 勒拿河, в бланке 列娜河 (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "Лена — Википедия",
+            "url": "https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D0%BD%D0%B0"
+          },
+          {
+            "checkedAt": "2026-10-25",
+            "title": "Волга — Википедия",
+            "url": "https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%BB%D0%B3%D0%B0"
+          }
+        ],
+        "explanation": {
+          "ru": "Лена (列娜河, чаще 勒拿河) длиной около 4400 км — самая крупная из рек России, бассейн которой целиком лежит в пределах страны; она течёт по Восточной Сибири и впадает в море Лаптевых."
+        },
+        "id": "2022-23-mun-lenobl-59",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 59,
+            "officialKey": "o3",
+            "region": "Ленинградская область",
+            "regionCode": "lenobl",
+            "sourceFiles": [
+              "01-Варианты/2022-23/2-Муниципальный/Ленинградская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2022-23"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "涅瓦河"
+          },
+          {
+            "id": "o2",
+            "zh": "伏尔加河"
+          },
+          {
+            "id": "o3",
+            "zh": "勒拿河"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Какая самая длинная река России?",
+        "questionZh": null,
+        "topic": "География и административное устройство",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "sourceOptionCount": 3,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "涅瓦河",
+          "zh": "鄂毕河",
+          "correct": false,
+          "ru": "Обь — образуется при слиянии Бии и Катуни, берущих начало на Алтае.",
+          "source": {
+            "url": "https://bigenc.ru/c/ob-393332",
+            "title": "БРЭ — Обь",
+            "quote": "Образуется слиянием рек Бия и Катунь, берущих начало в горах Алтая.",
+            "authority": "academic",
+            "checkedAt": "2026-11-08"
+          },
+          "replacesForPreview": "涅瓦河"
+        },
+        {
+          "id": "o2",
+          "originalZh": "伏尔加河",
+          "zh": "伏尔加河",
+          "correct": false,
+          "ru": "Волга — впадая в Каспийское море, образует обширную дельту.",
+          "source": {
+            "url": "https://bigenc.ru/c/volga-9bf6d0",
+            "title": "БРЭ — Волга",
+            "quote": "Впадая в Каспийское море, Волга образует обширную дельту",
+            "authority": "academic",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "勒拿河",
+          "zh": "勒拿河",
+          "correct": true,
+          "ru": "Лена — её дельта, крупнейшая в России, занимает более 30 тысяч км².",
+          "source": {
+            "url": "https://bigenc.ru/c/lena-reka-dfef5c",
+            "title": "БРЭ — Лена",
+            "quote": "При впадении в море Лаптевых Лена образует самую большую в России дельту (площадь более 30 тыс. км²)",
+            "authority": "academic",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "preview-b8-yenisei",
+          "originalZh": null,
+          "zh": "叶尼塞河",
+          "correct": false,
+          "ru": "Енисей — начинается у Кызыла при слиянии Большого и Малого Енисея.",
+          "source": {
+            "url": "https://www.iwp.ru/upload/iblock/7c2/7c25d68e575b12087541fe5e496c684c.pdf",
+            "title": "Институт водных проблем РАН — Общие сведения о реке Енисей",
+            "quote": "Енисей образуется слиянием Большого (Бей-Кем) и Малого (Ха-Кем) Енисея у г. Кызыл в 3487 км от устья.",
+            "authority": "academic",
+            "checkedAt": "2026-11-08"
+          },
+          "addedForPreview": true
+        }
+      ],
+      "keySources": [
+        {
+          "url": "https://rosstat.gov.ru/storage/mediabank/Rossia_2025.pdf",
+          "title": "Росстат — Россия 2025, Самые длинные реки",
+          "quote": "Лена | 4,4",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "note": "В тыс. км: Лена 4,4, Обь 3,7, Волга 3,5, Енисей 3,5; отдельные реки, не суммарные системы."
+        },
+        {
+          "url": "https://bigenc.ru/c/lena-reka-dfef5c",
+          "title": "БРЭ — Лена",
+          "quote": "При впадении в море Лаптевых Лена образует самую большую в России дельту (площадь более 30 тыс. км²)",
+          "authority": "academic",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://bigenc.ru/c/volga-9bf6d0",
+          "title": "БРЭ — Волга",
+          "quote": "Впадая в Каспийское море, Волга образует обширную дельту",
+          "authority": "academic",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://bigenc.ru/c/ob-393332",
+          "title": "БРЭ — Обь",
+          "quote": "Образуется слиянием рек Бия и Катунь, берущих начало в горах Алтая.",
+          "authority": "academic",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://www.iwp.ru/upload/iblock/7c2/7c25d68e575b12087541fe5e496c684c.pdf",
+          "title": "Институт водных проблем РАН — Общие сведения о реке Енисей",
+          "quote": "Енисей образуется слиянием Большого (Бей-Кем) и Малого (Ха-Кем) Енисея у г. Кызыл в 3487 км от устья.",
+          "authority": "academic",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Какая самая длинная река России?",
+        "to": "Какая самая длинная река, целиком протекающая по территории России?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [
+        {
+          "id": "o1",
+          "from": "涅瓦河",
+          "to": "鄂毕河",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        }
+      ],
+      "proposedOptionAdditions": [
+        {
+          "id": "preview-b8-yenisei",
+          "zh": "叶尼塞河",
+          "reason": "Явно добавлен четвёртый вариант к исходному трёхвариантному вопросу.",
+          "authorAuthorized": true
+        }
+      ],
+      "authorRemarks": [
+        "Все редакции и замены явно показаны в changes; это предложение, не публикация."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "Пригоден после явного уточнения «целиком протекающая по территории России». Исходный ключ Лена сохранён. Неву заменено Обью, добавлен Енисей: набор из четырёх крупных рек лучше по трудности. Росстат даёт длины отдельных рек 4,4 / 3,7 / 3,5 / 3,5 тыс. км; суммы Обь—Иртыш и Енисей—Ангара—Селенга не смешиваются с длиной основного русла."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [
+          {
+            "id": "2025-26-shk-37-a",
+            "questionRu": "Какая река впадает в море Лаптевых Северного Ледовитого океана?",
+            "relationship": "Связанный самостоятельный факт о Лене: устье, не дубль длины.",
+            "inVisiblePool": true
+          },
+          {
+            "id": "2025-26-mun-mosobl-9",
+            "questionRu": "Какой город стоит на реке Лена?",
+            "relationship": "Связанный самостоятельный факт о Лене: Якутск; не дубль длины.",
+            "inVisiblePool": true
+          }
+        ],
+        "screeningReason": "Пригоден после явного уточнения «целиком протекающая по территории России». Исходный ключ Лена сохранён. Неву заменено Обью, добавлен Енисей: набор из четырёх крупных рек лучше по трудности. Росстат даёт длины отдельных рек 4,4 / 3,7 / 3,5 / 3,5 тыс. км; суммы Обь—Иртыш и Енисей—Ангара—Селенга не смешиваются с длиной основного русла."
+      },
+      "futureHintReviewNotes": [
+        {
+          "id": "nature-q160",
+          "reason": "Подпись Волги сообщает, куда она впадает; если оба оставить, учесть при общей проверке связей."
+        }
+      ],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 13,
+      "id": "2021-22-mun-volog-9",
+      "status": "draft-pending-author-review",
+      "topic": "География и административное устройство",
+      "originalQuestionRu": "Количество провинций Китая составляет?",
+      "originalQuestionZh": null,
+      "questionRu": "Сколько провинций насчитывается в официальном административном делении КНР?",
+      "previewQuestionRu": "Сколько провинций насчитывается в официальном административном делении КНР?",
+      "questionZh": null,
+      "answerOptionId": "o3",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o3",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "中华人民共和国行政区划 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92"
+          }
+        ],
+        "explanation": {
+          "ru": "В административном делении КНР 23 провинции (二十三个省; по счёту КНР вместе с Тайванем), а также 5 автономных районов, 4 города центрального подчинения и 2 особых административных района — всего 34 единицы провинциального уровня."
+        },
+        "id": "2021-22-mun-volog-9",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 9,
+            "officialKey": "o3",
+            "region": "Вологодская область",
+            "regionCode": "volog",
+            "sourceFiles": [
+              "01-Варианты/2021-22/2-Муниципальный/Вологодская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2021-22"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "二十一个"
+          },
+          {
+            "id": "o2",
+            "zh": "十九个"
+          },
+          {
+            "id": "o3",
+            "zh": "二十三个"
+          },
+          {
+            "id": "o4",
+            "zh": "二十四个"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Количество провинций Китая составляет?",
+        "questionZh": null,
+        "topic": "География и административное устройство",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "二十一个",
+          "zh": "二十一个",
+          "correct": false,
+          "ru": "Двадцать одна — на 2 меньше официального числа провинций.",
+          "source": {
+            "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+            "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+            "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "十九个",
+          "zh": "十九个",
+          "correct": false,
+          "ru": "Девятнадцать — на 4 меньше официального числа провинций.",
+          "source": {
+            "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+            "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+            "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "二十三个",
+          "zh": "二十三个",
+          "correct": true,
+          "ru": "Двадцать три — входят в 34 административные единицы провинциального уровня.",
+          "source": {
+            "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+            "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+            "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "二十四个",
+          "zh": "二十四个",
+          "correct": false,
+          "ru": "Двадцать четыре — на 1 больше официального числа провинций.",
+          "source": {
+            "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+            "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+            "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "keySources": [
+        {
+          "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+          "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+          "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+          "authority": "official",
+          "verificationMethod": "fresh-web-indexed-text",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Количество провинций Китая составляет?",
+        "to": "Сколько провинций насчитывается в официальном административном делении КНР?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Неверным числам даны честные арифметические сравнения по образцу принятой партии7; новых исторических смыслов не придумано.",
+        "Ключ23 соответствует официальному делению КНР, включая Тайвань.",
+        "Есть явная взаимная подсказка с2022-23-mun-lenobl-58: егоo1 уже сообщает число23; правильная подпись кандидата сообщает34. Нужна группа фактов при принятии, не скрывать связь."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "Самостоятельное число провинций, не совпадающее с вопросами об отдельных провинциях/статусах. Ключ23 соответствует официальному административному делению КНР (включает Тайвань); стем полезно привязать к этому делению. Чисто числовые дистракторы не требуют названий/биографических подписей по CLAUDE.md."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [
+          {
+            "id": "2022-23-mun-lenobl-58",
+            "questionRu": "Сколько единиц провинциального уровня включает официальное административное деление КНР?",
+            "relationship": "Вопрос о34единицах провинциального уровня; неверныйo1имеет подпись «23 — число провинций». Не прямойQAдубль, но сосед уже преподаёт ровно эту деталь и даёт ответ. Правильная подпись кандидата взаимно даёт34; требуется согласование/группа фактов.",
+            "inVisiblePool": true
+          }
+        ],
+        "screeningReason": "Самостоятельное число провинций, не совпадающее с вопросами об отдельных провинциях/статусах. Ключ23 соответствует официальному административному делению КНР (включает Тайвань); стем полезно привязать к этому делению. Чисто числовые дистракторы не требуют названий/биографических подписей по CLAUDE.md."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 14,
+      "id": "2023-24-mun-klg-3",
+      "status": "draft-pending-author-review",
+      "topic": "Культура, традиции и праздники",
+      "originalQuestionRu": "Достаточная длина их служила в Китае признаком высокого происхождения.",
+      "originalQuestionZh": null,
+      "questionRu": "Длина чего в традиционном Китае могла служить признаком высокого социального положения?",
+      "previewQuestionRu": "Длина чего в традиционном Китае могла служить признаком высокого социального положения?",
+      "questionZh": null,
+      "answerOptionId": "o2",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "Why Long Fingernails Were All the Rage in Ancient China — Sixth Tone",
+            "url": "https://www.sixthtone.com/news/1009319"
+          }
+        ],
+        "explanation": {
+          "ru": "В старом Китае мужчины и женщины из высших слоёв, особенно учёные-литераторы, отращивали длинные ногти (指甲) как знак богатства: они показывали, что хозяину не нужно заниматься физическим трудом. Дамы императорского двора носили на ногтях изящные накладки."
+        },
+        "id": "2023-24-mun-klg-3",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 3,
+            "officialKey": "o2",
+            "region": "Калужская область",
+            "regionCode": "klg",
+            "sourceFiles": [
+              "01-Варианты/2023-24/2-Муниципальный/Калужская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2023-24"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "手指"
+          },
+          {
+            "id": "o2",
+            "zh": "指甲"
+          },
+          {
+            "id": "o3",
+            "zh": "脚"
+          },
+          {
+            "id": "o4",
+            "zh": "睫毛"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Достаточная длина их служила в Китае признаком высокого происхождения.",
+        "questionZh": null,
+        "topic": "Культура, традиции и праздники",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "手指",
+          "zh": "胡须",
+          "correct": false,
+          "ru": "Борода — характерная черта традиционных изображений Гуань Юя.",
+          "source": {
+            "url": "https://www.xxsbwg.cn/collection/detail/61",
+            "title": "关羽铜造像 — 新乡市博物馆",
+            "quote": "五绺胡须飘散胸前",
+            "additionalQuotes": [
+              "雅号“美髯公”"
+            ],
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text; full open returned no readable lines"
+          },
+          "additionalSources": [
+            {
+              "url": "https://www.dpm.org.cn/collection/sculpture/234222.html",
+              "title": "泥塑彩绘关羽像 — 故宫博物院",
+              "quote": "美须髯，武艺高强，能征善战",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-web-search-result-text; direct open timed out"
+            }
+          ],
+          "replacesForPreview": "手指"
+        },
+        {
+          "id": "o2",
+          "originalZh": "指甲",
+          "zh": "指甲",
+          "correct": true,
+          "ru": "Ногти — длинные ногти берегли металлическими футлярами, часто из золота или серебра.",
+          "source": {
+            "url": "https://www.dpm.org.cn/collection/jewelry/234286.html",
+            "title": "金錾古钱纹指甲套 — 故宫博物院",
+            "quote": "指甲套称护指，又称义甲",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text",
+            "additionalQuotes": [
+              "护指绝大多数以金、银制作"
+            ]
+          },
+          "additionalSources": [
+            {
+              "url": "https://www.nps.gov/long/blogs/chinese-fingernail-protectors.htm",
+              "title": "Chinese Fingernail Protectors — U.S. National Park Service",
+              "quote": "Long fingernails were a mark of high status",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-web-search-result-text",
+              "additionalQuotes": [
+                "Qing noblewomen wore metal guards."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o3",
+          "originalZh": "脚",
+          "zh": "脚",
+          "correct": false,
+          "ru": "Ступни — при бинтовании престижным считался, наоборот, очень маленький размер.",
+          "source": {
+            "url": "https://australian.museum/about/history/exhibitions/body-art/footbinding/",
+            "title": "Footbinding — Australian Museum",
+            "quote": "The feet were called lotus of gold if they were 3 inches",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "睫毛",
+          "zh": "头发",
+          "correct": false,
+          "ru": "Волосы — при Цин маньчжурскую косу предписали носить и ханьским мужчинам.",
+          "source": {
+            "url": "https://www.mocanyc.org/collections/stories/denisons-make-up-guide-for-amateur-and-professional/",
+            "title": "Denison’s Make-Up Guide — Museum of Chinese in America",
+            "quote": "This hairstyle was a symbol of cultural identity for the Manchu people of China, which was then later imposed upon the Han Chinese",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          },
+          "replacesForPreview": "睫毛"
+        }
+      ],
+      "keySources": [
+        {
+          "url": "https://www.nps.gov/long/blogs/chinese-fingernail-protectors.htm",
+          "title": "Chinese Fingernail Protectors — U.S. National Park Service",
+          "quote": "Long fingernails were a mark of high status",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text",
+          "additionalQuotes": [
+            "Qing noblewomen wore metal guards."
+          ]
+        },
+        {
+          "url": "https://bodyarts.prm.ox.ac.uk/bodyarts/index.php/temporary-body-arts/toiletries/52-fingernails-and-manicures.html",
+          "title": "Fingernails and manicures — Pitt Rivers Museum, University of Oxford",
+          "quote": "Long fingernails became a status symbol among women, visibly indicating that they had no need to engage in manual labour.",
+          "authority": "academic",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://www.dpm.org.cn/collection/jewelry/234286.html",
+          "title": "金錾古钱纹指甲套 — 故宫博物院",
+          "quote": "指甲套称护指，又称义甲",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text",
+          "additionalQuotes": [
+            "护指绝大多数以金、银制作"
+          ]
+        },
+        {
+          "url": "https://australian.museum/about/history/exhibitions/body-art/footbinding/",
+          "title": "Footbinding — Australian Museum",
+          "quote": "The feet were called lotus of gold if they were 3 inches",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://www.mocanyc.org/collections/stories/denisons-make-up-guide-for-amateur-and-professional/",
+          "title": "Denison’s Make-Up Guide — Museum of Chinese in America",
+          "quote": "This hairstyle was a symbol of cultural identity for the Manchu people of China, which was then later imposed upon the Han Chinese",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://www.xxsbwg.cn/collection/detail/61",
+          "title": "关羽铜造像 — 新乡市博物馆",
+          "quote": "五绺胡须飘散胸前",
+          "additionalQuotes": [
+            "雅号“美髯公”"
+          ],
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text; full open returned no readable lines"
+        },
+        {
+          "url": "https://www.dpm.org.cn/collection/sculpture/234222.html",
+          "title": "泥塑彩绘关羽像 — 故宫博物院",
+          "quote": "美须髯，武艺高强，能征善战",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text; direct open timed out"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Достаточная длина их служила в Китае признаком высокого происхождения.",
+        "to": "Длина чего в традиционном Китае могла служить признаком высокого социального положения?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [
+        {
+          "id": "o1",
+          "from": "手指",
+          "to": "胡须",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        },
+        {
+          "id": "o4",
+          "from": "睫毛",
+          "to": "头发",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        }
+      ],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Ключ сохранён. «Высокое происхождение» заменено подтверждаемым «социальным положением»: длина показывала отсутствие необходимости заниматься физическим трудом. Явные замены двух слабых дистракторов: 手指→胡须; 睫毛→头发. Борода, волосы и ногти допускают отращивание; убран почти автоматический отсев пальцев. Подпись бороды подтверждена описаниями Гуань Юя в официальных музеях. Запасной кандидат средней/пониженной сложности."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "borderline",
+        "reason": "Ключ подтверждён двумя музейными источниками. «Высокое происхождение» осторожно уточнено до социального положения. После рецензии 手指 явно заменён на 胡须, 睫毛 — на 头发; набор стал правдоподобнее. Статус borderline сохранён для окончательного авторского выбора."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [],
+        "screeningReason": "Ключ подтверждён двумя музейными источниками. «Высокое происхождение» осторожно уточнено до социального положения. После рецензии 手指 явно заменён на 胡须, 睫毛 — на 头发; набор стал правдоподобнее. Статус borderline сохранён для окончательного авторского выбора."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 15,
+      "id": "2023-24-mun-udm-5",
+      "status": "draft-pending-author-review",
+      "topic": "Россия и межкультурный блок",
+      "originalQuestionRu": "В каком году была провозглашена Российская Федерация?",
+      "originalQuestionZh": null,
+      "questionRu": "В каком году РСФСР официально получила название «Российская Федерация (Россия)»?",
+      "previewQuestionRu": "В каком году РСФСР официально получила название «Российская Федерация (Россия)»?",
+      "questionZh": null,
+      "answerOptionId": "o1",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o1",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "Россия — Википедия",
+            "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F"
+          }
+        ],
+        "explanation": {
+          "ru": "При распаде Советского Союза, 25 декабря 1991 года, РСФСР получила новое название — Российская Федерация."
+        },
+        "id": "2023-24-mun-udm-5",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 5,
+            "officialKey": "o1",
+            "region": "Удмуртия",
+            "regionCode": "udm",
+            "sourceFiles": [
+              "01-Варианты/2023-24/2-Муниципальный/Удмуртия/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2023-24"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "1991"
+          },
+          {
+            "id": "o2",
+            "zh": "1998"
+          },
+          {
+            "id": "o3",
+            "zh": "2000"
+          },
+          {
+            "id": "o4",
+            "zh": "1999"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "В каком году была провозглашена Российская Федерация?",
+        "questionZh": null,
+        "topic": "Россия и межкультурный блок",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "1991",
+          "zh": "1991",
+          "correct": true,
+          "ru": "Закон от 25 декабря разрешал и в 1992 году использовать прежнее название РСФСР.",
+          "source": {
+            "url": "https://www.prlib.ru/history/619842",
+            "title": "Президентская библиотека — РСФСР переименована в Российскую Федерацию",
+            "quote": "По закону в течение 1992 г. было разрешено использовать название РСФСР в официальных актах и других документах",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "1998",
+          "zh": "1998",
+          "correct": false,
+          "ru": "В августе 1998 года Россия пережила финансовый кризис и заморозку выплат по ГКО.",
+          "source": {
+            "url": "https://www.cbr.ru/Collection/Collection/File/7815/ar_1998.pdf",
+            "title": "Банк России — Годовой отчёт 1998",
+            "quote": "Правительство РФ и Банк России 17 августа приняли решение о пересмотре курсовой политики и реструктуризации внутреннего государственного долга.",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "2000",
+          "zh": "2000",
+          "correct": false,
+          "ru": "В 2000 году федеральным конституционным законом утверждён современный гимн России.",
+          "source": {
+            "url": "https://www.prlib.ru/item/407021",
+            "title": "Президентская библиотека / Президент России — Государственный гимн РФ",
+            "quote": "Государственный гимн Российской Федерации установлен Федеральным конституционным законом от 25 декабря 2000 года № 3-ФКЗ",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "1999",
+          "zh": "1999",
+          "correct": false,
+          "ru": "31 декабря 1999 года Борис Ельцин объявил об отставке с поста президента России.",
+          "source": {
+            "url": "https://www.prlib.ru/node/619862",
+            "title": "Президентская библиотека — Добровольная отставка первого Президента РФ",
+            "quote": "31 декабря 1999 г. в 12 часов дня",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "note": "Официальный материал подробно описывает телеобращение Ельцина об отставке."
+          }
+        }
+      ],
+      "keySources": [
+        {
+          "url": "https://www.prlib.ru/item/353944",
+          "title": "Президентская библиотека — Закон РСФСР от 25.12.1991 № 2094-I",
+          "quote": "Закон Российской Советской Федеративной Социалистической Республики от 25 декабря 1991 года № 2094-I",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://www.prlib.ru/history/619842",
+          "title": "Президентская библиотека — РСФСР переименована в Российскую Федерацию",
+          "quote": "По закону в течение 1992 г. было разрешено использовать название РСФСР в официальных актах и других документах",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://www.cbr.ru/Collection/Collection/File/7815/ar_1998.pdf",
+          "title": "Банк России — Годовой отчёт 1998",
+          "quote": "Правительство РФ и Банк России 17 августа приняли решение о пересмотре курсовой политики и реструктуризации внутреннего государственного долга.",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://www.prlib.ru/item/407021",
+          "title": "Президентская библиотека / Президент России — Государственный гимн РФ",
+          "quote": "Государственный гимн Российской Федерации установлен Федеральным конституционным законом от 25 декабря 2000 года № 3-ФКЗ",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://www.prlib.ru/node/619862",
+          "title": "Президентская библиотека — Добровольная отставка первого Президента РФ",
+          "quote": "31 декабря 1999 г. в 12 часов дня",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "note": "Официальный материал подробно описывает телеобращение Ельцина об отставке."
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "В каком году была провозглашена Российская Федерация?",
+        "to": "В каком году РСФСР официально получила название «Российская Федерация (Россия)»?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Все редакции и замены явно показаны в changes; это предложение, не публикация."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "Исходное ошибочно названное «провозглашение РФ» заменено точным юридическим событием — официальным переименованием РСФСР. Ключ 1991 и все три неверных исходных года сохранены. Это более заметная редакция, чем исправление одной опечатки: показать автору целиком. Подпись правильного ответа добавляет переходное разрешение пользоваться старым названием в 1992 году."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [
+          {
+            "id": "modern-history-q100",
+            "questionRu": "В каком году распался Советский Союз?",
+            "relationship": "Распад СССР в 1991 году — связанный контекст, не тождественный переименованию РСФСР.",
+            "inVisiblePool": true
+          }
+        ],
+        "screeningReason": "Исходное ошибочно названное «провозглашение РФ» заменено точным юридическим событием — официальным переименованием РСФСР. Ключ 1991 и все три неверных исходных года сохранены. Это более заметная редакция, чем исправление одной опечатки: показать автору целиком. Подпись правильного ответа добавляет переходное разрешение пользоваться старым названием в 1992 году."
+      },
+      "futureHintReviewNotes": [
+        {
+          "id": "2021-22-reg-qbb2e02",
+          "reason": "Подпись 2000 сообщает год утверждения современного гимна России; если ID отличается, проверить вопрос по тексту."
+        }
+      ],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 16,
+      "id": "2020-21-mun-mosobl-55",
+      "status": "draft-pending-author-review",
+      "topic": "География и административное устройство",
+      "originalQuestionRu": "Сямэнь расположен на юго-восточном побережье провинции Фуцзянь, его площадь — 1516 кв. км. В него входят остров Сямэнь и …",
+      "originalQuestionZh": "厦门坐落在福建省的东南海岸，面积 1516 平方公里，包括厦门岛和_______ 。",
+      "questionRu": "Сямэнь расположен на юго-восточном побережье провинции Фуцзянь. Какой из этих островов входит в состав города наряду с островом Сямэнь?",
+      "previewQuestionRu": "Сямэнь расположен на юго-восточном побережье провинции Фуцзянь. Какой из этих островов входит в состав города наряду с островом Сямэнь?",
+      "questionZh": "厦门坐落在福建省的东南海岸，面积 1516 平方公里，包括厦门岛和_______ 。",
+      "answerOptionId": "o2",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "厦门市 — 维基百科",
+            "url": "https://zh.wikipedia.org/zh-cn/%E5%8E%A6%E9%97%A8%E5%B8%82"
+          }
+        ],
+        "explanation": {
+          "ru": "Сямэнь состоит из острова Сямэнь, острова Гуланъюй (鼓浪屿) и других островов, а также прибрежных районов материка."
+        },
+        "id": "2020-21-mun-mosobl-55",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 55,
+            "officialKey": "o2",
+            "region": "Московская область",
+            "regionCode": "mosobl",
+            "sourceFiles": [
+              "01-Варианты/2020-21/2-Муниципальный/Московская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2020-21"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "渤海湾"
+          },
+          {
+            "id": "o2",
+            "zh": "鼓浪屿"
+          },
+          {
+            "id": "o3",
+            "zh": "太阳岛"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Сямэнь расположен на юго-восточном побережье провинции Фуцзянь, его площадь — 1516 кв. км. В него входят остров Сямэнь и …",
+        "questionZh": "厦门坐落在福建省的东南海岸，面积 1516 平方公里，包括厦门岛和_______ 。",
+        "topic": "География и административное устройство",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "sourceOptionCount": 3,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "渤海湾",
+          "zh": "普陀山",
+          "correct": false,
+          "ru": "Путошань — остров архипелага Чжоушань в провинции Чжэцзян.",
+          "source": {
+            "title": "舟山市普陀山风景区 — 文化和旅游部大众旅游服务栏目",
+            "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang",
+            "quote": "普陀山是浙江东海舟山群岛中的一个小岛",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          },
+          "replacesForPreview": "渤海湾"
+        },
+        {
+          "id": "o2",
+          "originalZh": "鼓浪屿",
+          "zh": "鼓浪屿",
+          "correct": true,
+          "ru": "Гуланъюй — историческое международное поселение, в списке ЮНЕСКО с 2017 года.",
+          "source": {
+            "title": "Kulangsu, a Historic International Settlement — UNESCO World Heritage Centre",
+            "url": "https://whc.unesco.org/en/list/1541/",
+            "quote": "Date of Inscription: 2017",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-full-text",
+            "additionalSupportedFact": "Island developed as an international settlement with a mix of architectural styles.",
+            "originalAuthority": "official-unesco",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "太阳岛",
+          "zh": "太阳岛",
+          "correct": false,
+          "ru": "Остров Солнца — расположен в Харбине.",
+          "source": {
+            "title": "哈尔滨市太阳岛风景区 — 黑龙江省人民政府",
+            "url": "https://www.hlj.gov.cn/hlj/c108519/202503/c00_31816708.shtml",
+            "quote": "哈尔滨市太阳岛风景区",
+            "checkedAt": "2026-10-23",
+            "authority": "official",
+            "verificationMethod": "fresh-web-open; exact accepted source URL retained"
+          }
+        },
+        {
+          "id": "preview-b8-chongming-island",
+          "originalZh": null,
+          "zh": "崇明岛",
+          "correct": false,
+          "ru": "Чунминдао — остров в устье Янцзы.",
+          "source": {
+            "title": "崇明区 — 上海市人民政府",
+            "url": "https://www.shanghai.gov.cn/chongming/index.html",
+            "quote": "崇明岛于一千三百多年前在长江口形成",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          },
+          "addedForPreview": true
+        }
+      ],
+      "keySources": [
+        {
+          "title": "地理环境 — 厦门市委党史和地方志研究室，来源厦门市人民政府",
+          "url": "https://xm.fjdsfzw.org.cn/2024-09-05/content_151790.html",
+          "quote": "厦门市境域由福建省东南部沿厦门湾的大陆地区和厦门岛、鼓浪屿等岛屿以及厦门湾组成。",
+          "authority": "official",
+          "verificationMethod": "fresh-web-indexed-text",
+          "additionalSupportedFact": "2022年，全市土地面积1699.01平方千米。",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "title": "Kulangsu, a Historic International Settlement — UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/1541/",
+          "quote": "Date of Inscription: 2017",
+          "authority": "official",
+          "verificationMethod": "fresh-web-indexed-full-text",
+          "additionalSupportedFact": "Island developed as an international settlement with a mix of architectural styles.",
+          "originalAuthority": "official-unesco",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Сямэнь расположен на юго-восточном побережье провинции Фуцзянь, его площадь — 1516 кв. км. В него входят остров Сямэнь и …",
+        "to": "Сямэнь расположен на юго-восточном побережье провинции Фуцзянь. Какой из этих островов входит в состав города наряду с островом Сямэнь?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [
+        {
+          "id": "o1",
+          "from": "渤海湾",
+          "to": "普陀山",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        }
+      ],
+      "proposedOptionAdditions": [
+        {
+          "id": "preview-b8-chongming-island",
+          "zh": "崇明岛",
+          "reason": "Явно добавлен четвёртый вариант к исходному трёхвариантному вопросу.",
+          "authorAuthorized": true
+        }
+      ],
+      "authorRemarks": [
+        "Условный вариант: o1 渤海湾 (залив Бохайвань) явно заменён островом 普陀山; o4 崇明岛 добавлен.",
+        "Убрана неподтверждённая/устаревшая площадь1516км²; официальный источник даёт1699.01км² на2022год. Это явная содержательная правка, не тихое сокращение.",
+        "Официальный источник уточняет, что Сямэнь включает также материковую территорию; новая формулировка не сводит город к двум островам.",
+        "Ключ o2 и остров太阳岛 сохранены.",
+        "Вместо неподтверждённой площади 1516 км² сохранена проверяемая связь города с островом; не утверждается, что город состоит только из двух островов. Географический контекст Фуцзяни сохранён."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "Самостоятельная связь Сямэнь—Гуланъюй подтверждена первичными источниками. После явно заявленного удаления устаревшей площади1516км² и замены залива островом в вариантах нет формального отсева. Ключ и корректный исходный 太阳岛 сохранены."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [],
+        "screeningReason": "Самостоятельная связь Сямэнь—Гуланъюй подтверждена первичными источниками. После явно заявленного удаления устаревшей площади1516км² и замены залива островом в вариантах нет формального отсева. Ключ и корректный исходный 太阳岛 сохранены."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 17,
+      "id": "2025-26-mun-perm-8",
+      "status": "draft-pending-author-review",
+      "topic": "Литература, язык, искусство и философия",
+      "originalQuestionRu": "Фраза «你吃了吗?» (Ты поел?) в китайском языке обычно означает:",
+      "originalQuestionZh": null,
+      "questionRu": "Что обычно означает фраза «你吃了吗?» («Ты поел?»), когда ею обращаются при встрече к знакомому?",
+      "previewQuestionRu": "Что обычно означает фраза «你吃了吗?» («Ты поел?»), когда ею обращаются при встрече к знакомому?",
+      "questionZh": null,
+      "answerOptionId": "o3",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o3",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "吃飯了嗎 — Wiktionary",
+            "url": "https://en.wiktionary.org/wiki/%E5%90%83%E9%A3%AF%E4%BA%86%E5%97%8E"
+          }
+        ],
+        "explanation": {
+          "ru": "Вопрос «你吃了吗?» («Ты поел?») — обычное приветствие (日常问候), примерно как «Как дела?», а не приглашение на обед."
+        },
+        "id": "2025-26-mun-perm-8",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 8,
+            "officialKey": "o3",
+            "region": "Пермский край",
+            "regionCode": "perm",
+            "sourceFiles": [
+              "01-Варианты/2025-26/2-Муниципальный/Пермский край/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2025-26"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "邀请一起吃饭"
+          },
+          {
+            "id": "o2",
+            "zh": "关心对方健康"
+          },
+          {
+            "id": "o3",
+            "zh": "日常问候的一种方式"
+          },
+          {
+            "id": "o4",
+            "zh": "责备迟到"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Фраза «你吃了吗?» (Ты поел?) в китайском языке обычно означает:",
+        "questionZh": null,
+        "topic": "Литература, язык, искусство и философия",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "邀请一起吃饭",
+          "zh": "邀请一起吃饭",
+          "correct": false,
+          "ru": "Приглашение поесть вместе — обычное «吃了吗» само по себе не обещает угощения.",
+          "source": {
+            "url": "https://difculcase.xmu.edu.cn/e/action/ShowInfo.php?classid=1&id=3574",
+            "title": "别扭的“你去哪儿” — 厦门大学中外文化差异案例库",
+            "quote": "如果被问询人回答“没吃”，询问的人也不必回复“一起去吃饭吧”。",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "关心对方健康",
+          "zh": "关心对方健康",
+          "correct": false,
+          "ru": "Забота о здоровье — в привычной встречной реплике важнее поддержать дружеский контакт.",
+          "source": {
+            "url": "https://www.xinhuanet.com/zgjx/2017-08/15/c_136527188.htm",
+            "title": "假如“你读的什么书”成为问候语 — 中国新闻出版广电报 / 新华网",
+            "quote": "他不过是同你打个招呼，以表示友好。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "日常问候的一种方式",
+          "zh": "日常问候的一种方式",
+          "correct": true,
+          "ru": "Бытовое приветствие — даже ответ «не ел» не обязывает собеседника приглашать к столу.",
+          "source": {
+            "url": "https://difculcase.xmu.edu.cn/e/action/ShowInfo.php?classid=1&id=3574",
+            "title": "别扭的“你去哪儿” — 厦门大学中外文化差异案例库",
+            "quote": "如果被问询人回答“没吃”，询问的人也不必回复“一起去吃饭吧”。",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "责备迟到",
+          "zh": "责备迟到",
+          "correct": false,
+          "ru": "Упрёк за опоздание — вопрос об еде в таком приветствии не выражает недовольства.",
+          "source": {
+            "url": "https://difculcase.xmu.edu.cn/e/action/ShowInfo.php?classid=1&id=3574",
+            "title": "别扭的“你去哪儿” — 厦门大学中外文化差异案例库",
+            "quote": "如果被问询人回答“没吃”，询问的人也不必回复“一起去吃饭吧”。",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          },
+          "additionalSources": [
+            {
+              "url": "https://www.xinhuanet.com/zgjx/2017-08/15/c_136527188.htm",
+              "title": "假如“你读的什么书”成为问候语 — 中国新闻出版广电报 / 新华网",
+              "quote": "他不过是同你打个招呼，以表示友好。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "fresh-web-search-result-text"
+            }
+          ]
+        }
+      ],
+      "keySources": [
+        {
+          "url": "https://difculcase.xmu.edu.cn/e/action/ShowInfo.php?classid=1&id=3574",
+          "title": "别扭的“你去哪儿” — 厦门大学中外文化差异案例库",
+          "quote": "如果被问询人回答“没吃”，询问的人也不必回复“一起去吃饭吧”。",
+          "authority": "academic",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://www.xinhuanet.com/zgjx/2017-08/15/c_136527188.htm",
+          "title": "假如“你读的什么书”成为问候语 — 中国新闻出版广电报 / 新华网",
+          "quote": "他不过是同你打个招呼，以表示友好。",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Фраза «你吃了吗?» (Ты поел?) в китайском языке обычно означает:",
+        "to": "Что обычно означает фраза «你吃了吗?» («Ты поел?»), когда ею обращаются при встрече к знакомому?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Все четыре китайских варианта и ключ сохранены. Контекст встречи знакомых снимает смешение с буквальным вопросом о приёме пищи. Формулировка не утверждает, что реплика всегда и в любой ситуации имеет только одну функцию."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "Прагматический культурный факт, не просто перевод приветствия. Добавлен контекст встречи знакомых; исходные четыре варианта сохранены. Предыдущая близость к разграничению приветствий/прощаний не является прямым дублем."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [
+          {
+            "id": "2025-26-mun-ryaz-8",
+            "questionRu": "Что не является формой приветствия в Китае?",
+            "relationship": "Вопрос о приветствиях/прощаниях из предыдущей партии; функция фатической реплики об еде — самостоятельный факт.",
+            "inVisiblePool": false
+          }
+        ],
+        "screeningReason": "Прагматический культурный факт, не просто перевод приветствия. Добавлен контекст встречи знакомых; исходные четыре варианта сохранены. Предыдущая близость к разграничению приветствий/прощаний не является прямым дублем."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 18,
+      "id": "2020-21-mun-lenobl-9",
+      "status": "draft-pending-author-review",
+      "topic": "Россия и межкультурный блок",
+      "originalQuestionRu": "Сколько национальностей проживает на территории Российской Федерации?",
+      "originalQuestionZh": null,
+      "questionRu": "Сколько национальностей было учтено в России по итогам Всероссийской переписи населения 2010 года?",
+      "previewQuestionRu": "Сколько национальностей было учтено в России по итогам Всероссийской переписи населения 2010 года?",
+      "questionZh": null,
+      "answerOptionId": "o3",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o3",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "Национальностей может стать больше — Пермьстат (Росстат), 2021",
+            "url": "https://59.rosstat.gov.ru/storage/mediabank/FKj12lE9/2021.03.26%20%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9%20%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%20%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5.pdf"
+          }
+        ],
+        "explanation": {
+          "ru": "По переписи 2010 года, на которую опирались в 2020–2021 годах, в России жили представители 193 национальностей — «более 190» (190 多)."
+        },
+        "id": "2020-21-mun-lenobl-9",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 9,
+            "officialKey": "o3",
+            "region": "Ленинградская область",
+            "regionCode": "lenobl",
+            "sourceFiles": [
+              "01-Варианты/2020-21/2-Муниципальный/Ленинградская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2020-21"
+          },
+          {
+            "grades": "9-11",
+            "number": 5,
+            "officialKey": "o3",
+            "region": "Ленинградская область",
+            "regionCode": "lenobl",
+            "sourceFiles": [
+              "01-Варианты/2021-22/2-Муниципальный/Ленинградская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2021-22"
+          },
+          {
+            "grades": "9-11",
+            "number": 9,
+            "officialKey": "o3",
+            "region": "Ленинградская область",
+            "regionCode": "lenobl",
+            "sourceFiles": [
+              "01-Варианты/2023-24/2-Муниципальный/Ленинградская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2023-24"
+          },
+          {
+            "grades": "9-11",
+            "number": 55,
+            "officialKey": "o3",
+            "region": "Ленинградская область",
+            "regionCode": "lenobl",
+            "sourceFiles": [
+              "01-Варианты/2025-26/2-Муниципальный/Ленинградская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2025-26"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "50 多"
+          },
+          {
+            "id": "o2",
+            "zh": "100 多"
+          },
+          {
+            "id": "o3",
+            "zh": "190 多"
+          },
+          {
+            "id": "o4",
+            "zh": "40 多"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Сколько национальностей проживает на территории Российской Федерации?",
+        "questionZh": null,
+        "topic": "Россия и межкультурный блок",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "50 多",
+          "zh": "170 多",
+          "correct": false,
+          "ru": "Варианты самоназваний народов при обработке переписи объединяют в этнические группы.",
+          "source": {
+            "url": "https://11.rosstat.gov.ru/storage/folder_page/2018/12-25/vzY9WJ6V/information_for_media_2010/2011/20111226_5bb9db804cdcb5a4b001ba49c24a3eb2.html",
+            "title": "Комистат — Перепись населения 2010 года: национальный состав",
+            "quote": "ответы были систематизированы примерно в 190 национальностей",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          },
+          "replacesForPreview": "50 多"
+        },
+        {
+          "id": "o2",
+          "originalZh": "100 多",
+          "zh": "180 多",
+          "correct": false,
+          "ru": "Перепись 2002 года учла 182 народа; к переписи 2010 года их число выросло.",
+          "source": {
+            "url": "https://59.rosstat.gov.ru/folder/67637/document/117328?print=1",
+            "title": "Пермьстат — Национальная принадлежность в переписи",
+            "quote": "в России проживало уже 182 народа. По итогам 2010 года это число снова выросло до 193.",
+            "authority": "official",
+            "checkedAt": "2026-11-08"
+          },
+          "replacesForPreview": "100 多"
+        },
+        {
+          "id": "o3",
+          "originalZh": "190 多",
+          "zh": "190 多",
+          "correct": true,
+          "ru": "Национальную принадлежность при переписи определял сам опрашиваемый.",
+          "source": {
+            "url": "https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol1/l1.pdf",
+            "title": "Росстат — Переписной лист формы Л, перепись 2010",
+            "quote": "6. Ваше гражданство; 7. Ваша национальная принадлежность. По самоопределению в соответствии со ст. 26 Конституции РФ",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "note": "В цитате сгруппированы два отдельных поля переписного листа."
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "40 多",
+          "zh": "200 多",
+          "correct": false,
+          "ru": "Национальность и гражданство учитывались раздельно: это разные вопросы переписного листа.",
+          "source": {
+            "url": "https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol1/l1.pdf",
+            "title": "Росстат — Переписной лист формы Л, перепись 2010",
+            "quote": "6. Ваше гражданство; 7. Ваша национальная принадлежность. По самоопределению в соответствии со ст. 26 Конституции РФ",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "note": "В цитате сгруппированы два отдельных поля переписного листа."
+          },
+          "replacesForPreview": "40 多"
+        }
+      ],
+      "keySources": [
+        {
+          "url": "https://rosstat.gov.ru/folder/313/document/171091",
+          "title": "Росстат — История переписей России",
+          "quote": "в 2010 году было 193 национальности",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://59.rosstat.gov.ru/folder/67637/document/117328?print=1",
+          "title": "Пермьстат — Национальная принадлежность в переписи",
+          "quote": "в России проживало уже 182 народа. По итогам 2010 года это число снова выросло до 193.",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://11.rosstat.gov.ru/storage/folder_page/2018/12-25/vzY9WJ6V/information_for_media_2010/2011/20111226_5bb9db804cdcb5a4b001ba49c24a3eb2.html",
+          "title": "Комистат — Перепись населения 2010 года: национальный состав",
+          "quote": "ответы были систематизированы примерно в 190 национальностей",
+          "authority": "official",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "url": "https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol1/l1.pdf",
+          "title": "Росстат — Переписной лист формы Л, перепись 2010",
+          "quote": "6. Ваше гражданство; 7. Ваша национальная принадлежность. По самоопределению в соответствии со ст. 26 Конституции РФ",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "note": "В цитате сгруппированы два отдельных поля переписного листа."
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Сколько национальностей проживает на территории Российской Федерации?",
+        "to": "Сколько национальностей было учтено в России по итогам Всероссийской переписи населения 2010 года?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [
+        {
+          "id": "o1",
+          "from": "50 多",
+          "to": "170 多",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        },
+        {
+          "id": "o2",
+          "from": "100 多",
+          "to": "180 多",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        },
+        {
+          "id": "o4",
+          "from": "40 多",
+          "to": "200 多",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        }
+      ],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Все редакции и замены явно показаны в changes; это предложение, не публикация."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "Факт сильный: официальный Росстат прямо даёт 193 национальности по переписи 2010 года. Условие теперь датировано, исходный правильный 190 多 сохранён. Три неверных значения заменены соседними десятками 170 多 / 180 多 / 200 多. В китайском 190多 здесь «сто девяносто с лишним» (191–199), а не математическое «любое число выше 190»; одинаковая степень округления делает набор однородным. В подписи правильного ответа добавлен принцип самоопределения."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [],
+        "screeningReason": "Факт сильный: официальный Росстат прямо даёт 193 национальности по переписи 2010 года. Условие теперь датировано, исходный правильный 190 多 сохранён. Три неверных значения заменены соседними десятками 170 多 / 180 多 / 200 多. В китайском 190多 здесь «сто девяносто с лишним» (191–199), а не математическое «любое число выше 190»; одинаковая степень округления делает набор однородным. В подписи правильного ответа добавлен принцип самоопределения."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 19,
+      "id": "2022-23-shk-mosobl-20",
+      "status": "draft-pending-author-review",
+      "topic": "Общество: население, этносы и религии",
+      "originalQuestionRu": "Какой город является центром буддизма в Китае?",
+      "originalQuestionZh": null,
+      "questionRu": "Какой из этих городов традиционно считается религиозным центром Тибета?",
+      "previewQuestionRu": "Какой из этих городов традиционно считается религиозным центром Тибета?",
+      "questionZh": null,
+      "answerOptionId": "o2",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o2",
+          "state": "verified"
+        },
+        "editorial": {
+          "reason": "Тема по смыслу вопроса: рубрикатор отнёс его мимо (ревью ветки)"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "拉萨市 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E6%8B%89%E8%90%A8%E5%B8%82"
+          }
+        ],
+        "explanation": {
+          "ru": "Лхаса (拉萨), административный центр Тибетского автономного района, издавна была политическим и культурным центром Тибета и святыней тибетского буддизма (藏传佛教圣地)."
+        },
+        "id": "2022-23-shk-mosobl-20",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 20,
+            "officialKey": "o2",
+            "region": "Московская область",
+            "regionCode": "mosobl",
+            "sourceFiles": [
+              "01-Варианты/2022-23/1-Школьный/Московская область/9-11_Задания и ответы.pdf"
+            ],
+            "stage": "школьный",
+            "stageCode": "shk",
+            "year": "2022-23"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "呼和浩特"
+          },
+          {
+            "id": "o2",
+            "zh": "拉萨"
+          },
+          {
+            "id": "o3",
+            "zh": "洛阳"
+          },
+          {
+            "id": "o4",
+            "zh": "乌鲁木齐"
+          }
+        ],
+        "parseWarnings": [],
+        "questionRu": "Какой город является центром буддизма в Китае?",
+        "questionZh": null,
+        "topic": "Общество: население, этносы и религии",
+        "topicSource": "editorial",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "呼和浩特",
+          "zh": "呼和浩特",
+          "correct": false,
+          "ru": "Хух-Хото — здесь находится буддийский монастырь Дачжао (大召寺).",
+          "source": {
+            "title": "内蒙古自治区文化和旅游厅发布“内蒙古人游内蒙古”旅游线路 — 文化和旅游部",
+            "url": "https://www.mct.gov.cn/whzx/qgwhxxlb/nmg/202004/t20200430_852900.htm",
+            "quote": "线路36：呼和浩特2日文化观光之旅；在大召寺中观赏辉煌的喇嘛庙",
+            "authority": "official",
+            "verificationMethod": "fresh-web-open+find",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "拉萨",
+          "zh": "拉萨",
+          "correct": true,
+          "ru": "Лхаса — в её старом городе находится буддийский храм Джоканг (大昭寺).",
+          "source": {
+            "title": "Historic Ensemble of the Potala Palace, Lhasa — UNESCO World Heritage Centre",
+            "url": "https://whc.unesco.org/en/list/707",
+            "quote": "Covering 2.5ha in the centre of the old town of Lhasa",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-full-text",
+            "checkedAt": "2026-11-08",
+            "supportedFact": "The described building is the Jokhang Temple Monastery.",
+            "originalAuthority": "official-unesco"
+          }
+        },
+        {
+          "id": "o3",
+          "originalZh": "洛阳",
+          "zh": "洛阳",
+          "correct": false,
+          "ru": "Лоян — храм Белой Лошади (白马寺) основан здесь в 68 году.",
+          "source": {
+            "title": "洛政办文〔2025〕15号 关于省政协十三届三次会议第1330521号提案的答复 — 洛阳市人民政府",
+            "url": "https://m.ly.gov.cn/2025/12-02/941942.html",
+            "quote": "白马寺位于我市瀍河区，始建于东汉永平十一年（公元68年）",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text; direct open timeout",
+            "checkedAt": "2026-11-08"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "乌鲁木齐",
+          "zh": "乌鲁木齐",
+          "correct": false,
+          "ru": "Урумчи — административный центр Синьцзян-Уйгурского автономного района.",
+          "source": {
+            "title": "市情 — 乌鲁木齐市人民政府",
+            "url": "https://www.wlmq.gov.cn/wlmqs/c119048/sq.shtml",
+            "quote": "是新疆维吾尔自治区首府",
+            "authority": "official",
+            "verificationMethod": "fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          }
+        }
+      ],
+      "keySources": [
+        {
+          "title": "Lhasa: The Potala Palace and the Jokhang Temple Monastery — ICOMOS evaluation2000, UNESCO",
+          "url": "https://whc.unesco.org/document/1076",
+          "quote": "their role as the political, economic, cultural, and religious centre of Tibet",
+          "authority": "official-icomos-unesco",
+          "verificationMethod": "fresh-web-open+find",
+          "checkedAt": "2026-11-08",
+          "pdfPageZeroIndexed": 172,
+          "printedPage": 165
+        },
+        {
+          "title": "张永江：论清代西藏行政体制的演变及其特点 — 中国人民大学清史研究所",
+          "url": "https://iqh.ruc.edu.cn/old/qdzzsyj/gjzz/9162d9a66ff64279bdd40b41d36bbed6.htm",
+          "quote": "拉萨既是全藏的宗教中心，也是政治中心",
+          "authority": "academic-primary-author",
+          "verificationMethod": "fresh-web-indexed-text",
+          "checkedAt": "2026-11-08"
+        },
+        {
+          "title": "城市概况 — 拉萨市人民政府",
+          "url": "https://www.lasa.gov.cn/lasa/cssy/cs.shtml",
+          "quote": "也是藏传佛教圣地",
+          "authority": "official",
+          "verificationMethod": "fresh-web-indexed-text; direct open404",
+          "checkedAt": "2026-11-08"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Какой город является центром буддизма в Китае?",
+        "to": "Какой из этих городов традиционно считается религиозным центром Тибета?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Явная правка исходного вопроса: «центр буддизма вКитае»→«традиционный религиозный центрТибета».",
+        "Все4исходных варианта и ключo2拉萨 сохранены. Это сужение предмета традиции, не смена ответагорода.",
+        "Суперлатив«главный» источнику не приписан. ИКОМОС подтверждаетрелигиозный центрТибета, научная статья —全藏的宗教中心.",
+        "Правильная подпись добавляетконкретный храм и его место встаром городе; не повторяетрольцентра.",
+        "Действующие Лхаса—административный центрТибета иПотала—Лхаса проверяютдругиеотношения. Темне менее уточнениеТибет облегчаетвыбор поизвестнойгеографии."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "eligible",
+        "reason": "Исходный «центр буддизма вКитае» некорректно широк. Явное сужение до традиционного религиозного центраТибета сохраняет выборЛхасы и все4исходных варианта. ИКОМОС прямо называет роль религиозного центраТибета; собственная научная статьяЧжанЮнцзяна подтверждаетеё. Слово«главный» не добавлялось. После уточнения вопрос несколько базовый: единственный из4городов находится вТибете, что нужно честно показать автору."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [
+          {
+            "id": "landmarks-q94",
+            "questionRu": "В каком городе стоит дворец Потала (布达拉宫)?",
+            "relationship": "Потала—Лхаса: отдельный конкретный факт, не дубль.",
+            "inVisiblePool": true
+          },
+          {
+            "id": "2021-22-mun-qd67aaa",
+            "questionRu": "Какой город является центром Тибетского автономного района?",
+            "relationship": "Лхаса—центр Тибетского АР: отдельный факт.",
+            "inVisiblePool": true
+          }
+        ],
+        "screeningReason": "Исходный «центр буддизма вКитае» некорректно широк. Явное сужение до традиционного религиозного центраТибета сохраняет выборЛхасы и все4исходных варианта. ИКОМОС прямо называет роль религиозного центраТибета; собственная научная статьяЧжанЮнцзяна подтверждаетеё. Слово«главный» не добавлялось. После уточнения вопрос несколько базовый: единственный из4городов находится вТибете, что нужно честно показать автору."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    },
+    {
+      "reviewNumber": 20,
+      "id": "2023-24-mun-mosobl-6",
+      "status": "draft-pending-author-review",
+      "topic": "Культура, традиции и праздники",
+      "originalQuestionRu": "Какое китайское имя у всемирно известного актера Джеки Чана?",
+      "originalQuestionZh": null,
+      "questionRu": "Под каким китайским именем известен актёр Джеки Чан?",
+      "previewQuestionRu": "Под каким китайским именем известен актёр Джеки Чан?",
+      "questionZh": null,
+      "answerOptionId": "o3",
+      "originalRecord": {
+        "answer": {
+          "optionId": "o3",
+          "state": "verified"
+        },
+        "evidence": [
+          {
+            "checkedAt": "2026-10-25",
+            "title": "成龍 — 维基百科",
+            "url": "https://zh.wikipedia.org/wiki/%E6%88%90%E9%BE%8D"
+          }
+        ],
+        "explanation": {
+          "ru": "Китайское сценическое имя Джеки Чана — Чэн Лун (成龙), настоящее имя — Чэнь Ганшэн (陈港生); он гонконгский актёр, режиссёр и певец."
+        },
+        "id": "2023-24-mun-mosobl-6",
+        "occurrences": [
+          {
+            "grades": "9-11",
+            "number": 6,
+            "officialKey": "o3",
+            "region": "Московская область",
+            "regionCode": "mosobl",
+            "sourceFiles": [
+              "01-Варианты/2023-24/2-Муниципальный/Московская область/9-11_Задания.pdf"
+            ],
+            "stage": "муниципальный",
+            "stageCode": "mun",
+            "year": "2023-24"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "zh": "李小龙"
+          },
+          {
+            "id": "o2",
+            "zh": "李成龙"
+          },
+          {
+            "id": "o3",
+            "zh": "成龙"
+          },
+          {
+            "id": "o4",
+            "zh": "小龙"
+          }
+        ],
+        "parseWarnings": [
+          "расшифровано по картинке страницы"
+        ],
+        "questionRu": "Какое китайское имя у всемирно известного актера Джеки Чана?",
+        "questionZh": null,
+        "topic": "Культура, традиции и праздники",
+        "topicSource": "assigned",
+        "wave": 8
+      },
+      "sourceOptionCount": 4,
+      "originalOptionIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4"
+      ],
+      "options": [
+        {
+          "id": "o1",
+          "originalZh": "李小龙",
+          "zh": "李小龙",
+          "correct": false,
+          "ru": "Брюс Ли — создал систему джиткундо и снялся в фильме «Выход дракона».",
+          "source": {
+            "url": "https://www.museums.gov.hk/en/web/portal/exhibition017.html",
+            "title": "Bruce Lee: Kung Fu·Art·Life — Hong Kong Heritage Museum",
+            "quote": "he founded his own system, Jeet Kune Do",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          }
+        },
+        {
+          "id": "o2",
+          "originalZh": "李成龙",
+          "zh": "李连杰",
+          "correct": false,
+          "ru": "Джет Ли — прославился главной ролью в фильме «Храм Шаолинь» 1982 года.",
+          "source": {
+            "url": "https://www.filmarchive.gov.hk/tc/web/hkfa/2024/martial/pe-event-2024-martial-fs-film11.html",
+            "title": "少林寺（4K數碼修復版） — 香港電影資料館",
+            "quote": "李連杰成名作",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text",
+            "additionalQuotes": [
+              "1982"
+            ]
+          },
+          "replacesForPreview": "李成龙"
+        },
+        {
+          "id": "o3",
+          "originalZh": "成龙",
+          "zh": "成龙",
+          "correct": true,
+          "ru": "Джеки Чан — соединяет боевые трюки с комедией; сыграл в серии «Час пик».",
+          "source": {
+            "url": "https://www.oscars.org/governors-awards/2016/jackie-chan",
+            "title": "Jackie Chan — Academy of Motion Picture Arts and Sciences",
+            "quote": "none more successful than the blockbuster Rush Hour series.",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          }
+        },
+        {
+          "id": "o4",
+          "originalZh": "小龙",
+          "zh": "甄子丹",
+          "correct": false,
+          "ru": "Донни Йен — исполнитель роли Ип Мана в серии одноимённых фильмов.",
+          "source": {
+            "url": "https://www.weibo.com/donnieyen",
+            "title": "甄子丹 — личная страница актёра",
+            "quote": "导演、演员，代表作：《叶问》、《精武门》等。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "fresh-web-search-result-text"
+          },
+          "replacesForPreview": "小龙"
+        }
+      ],
+      "keySources": [
+        {
+          "url": "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/Chinese/Jackie-Chan_c.pdf",
+          "title": "香港影人小傳：成龍 — 香港電影資料館",
+          "quote": "1976 年簽約羅維的公司，改名「成龍」",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://www.oscars.org/governors-awards/2016/jackie-chan",
+          "title": "Jackie Chan — Academy of Motion Picture Arts and Sciences",
+          "quote": "none more successful than the blockbuster Rush Hour series.",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://www.museums.gov.hk/en/web/portal/exhibition017.html",
+          "title": "Bruce Lee: Kung Fu·Art·Life — Hong Kong Heritage Museum",
+          "quote": "he founded his own system, Jeet Kune Do",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        },
+        {
+          "url": "https://www.filmarchive.gov.hk/tc/web/hkfa/2024/martial/pe-event-2024-martial-fs-film11.html",
+          "title": "少林寺（4K數碼修復版） — 香港電影資料館",
+          "quote": "李連杰成名作",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text",
+          "additionalQuotes": [
+            "1982"
+          ]
+        },
+        {
+          "url": "https://www.weibo.com/donnieyen",
+          "title": "甄子丹 — личная страница актёра",
+          "quote": "导演、演员，代表作：《叶问》、《精武门》等。",
+          "authority": "official",
+          "checkedAt": "2026-11-08",
+          "verificationMethod": "fresh-web-search-result-text"
+        }
+      ],
+      "proposedStemEdit": {
+        "from": "Какое китайское имя у всемирно известного актера Джеки Чана?",
+        "to": "Под каким китайским именем известен актёр Джеки Чан?",
+        "reason": "Осторожная редакция с сохранением проверяемого факта и правильного ответа; конкретные основания указаны в замечаниях."
+      },
+      "proposedOptionEdits": [
+        {
+          "id": "o2",
+          "from": "李成龙",
+          "to": "李连杰",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        },
+        {
+          "id": "o4",
+          "from": "小龙",
+          "to": "甄子丹",
+          "reason": "Предлагается содержательный и однородный отвлекающий вариант вместо слабого или ошибочного; замена показана до применения.",
+          "authorAuthorizedToPropose": true
+        }
+      ],
+      "proposedOptionAdditions": [],
+      "authorRemarks": [
+        "Ключ сохранён, 李小龙 сохранён. Явные замены двух ненастоящих/неполных имён: 李成龙→李连杰; 小龙→甄子丹. Сосед 2021-22-reg-q5d6afc об Оскаре проверяет узнавание того же человека, но не перевод китайского имени; поэтому прямым дублем автоматически не объявляется. Связь Донни Йена с Ип Маном создаёт подсказку соседнему новому вопросу; при одновременном принятии развести или связать. Уровень ниже чайных трактатов и школы Вин-Чун."
+      ],
+      "difficultyReview": {
+        "screeningStatus": "borderline",
+        "reason": "Имя 成龙 можно проверить отдельно от почётного Оскара. После замены двух мнимых имён набор корректен, но рядом есть вопрос на узнавание того же актёра, а Ип Ман в этой партии создаёт дополнительную кинотематическую подсказку. Оценить, нужен ли ещё один вопрос на китайское имя."
+      },
+      "semanticReview": {
+        "referenceCount": 1091,
+        "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+        "neighborsExamined": [
+          {
+            "id": "2021-22-reg-q5d6afc",
+            "questionRu": "Китайский актёр, звезда кунфу, в 2017 году стал лауреатом почётной премии «Оскар» за вклад в киноискусство — первым из китайцев, удостоенных такой награды.",
+            "relationship": "Та же сущность 成龙; вопрос о награде, а кандидат — о соответствии китайского и сценического имён. Не тождество учебной связи.",
+            "inVisiblePool": true
+          }
+        ],
+        "screeningReason": "Имя 成龙 можно проверить отдельно от почётного Оскара. После замены двух мнимых имён набор корректен, но рядом есть вопрос на узнавание того же актёра, а Ип Ман в этой партии создаёт дополнительную кинотематическую подсказку. Оценить, нужен ли ещё один вопрос на китайское имя."
+      },
+      "futureHintReviewNotes": [],
+      "publicationAuthorized": false
+    }
+  ],
+  "review": {
+    "state": "independent-review-complete-pending-author",
+    "report": "data/review/2026-11-08-regional-batch-8-review.md",
+    "openCritical": 0,
+    "openImportant": 0,
+    "caveats": [
+      {
+        "reviewNumber": 13,
+        "id": "2021-22-mun-volog-9",
+        "note": "Отдельный вопрос о числе23 отсутствует, но точный факт уже есть в подписи вопроса о34единицах; новизна ограничена."
+      },
+      {
+        "reviewNumber": 14,
+        "id": "2023-24-mun-klg-3",
+        "note": "После двух замен набор улучшен; сложность ближе к нижнему порогу."
+      },
+      {
+        "reviewNumber": 19,
+        "id": "2022-23-shk-mosobl-20",
+        "note": "Уточнение Тибета снимает широкую посылку, но облегчает выбор по географии."
+      },
+      {
+        "reviewNumber": 20,
+        "id": "2023-24-mun-mosobl-6",
+        "note": "После замены мнимых имён набор корректен, но уровень ниже среднего; имя уже встречается в подписи другого вопроса."
+      }
+    ],
+    "reviewedPreStatusManifestHash": "4b32cbf28c984af18604fbc69c1e92f0f5126b3ac7055f6b490feaa0e7e5987c",
+    "sourceClassNormalization": "Только служебные authority academic-official/official-museum/official-tourism/official-unesco приведены к academic/official; исходные метки сохранены в originalAuthority."
+  },
+  "manifestHash": "2c1cbc37c19b3fcd3c4731f5e065f0664cf622ca3eee37c1771f56e12455980c"
+}

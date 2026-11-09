@@ -7898,6 +7898,285 @@
           }
         }
       ]
+    },
+    "diplomaticdates": {
+      "columns": {
+        "name": "zh",
+        "year": "zh",
+        "about": "ru"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "diplomatic-roc1912",
+          "name": {
+            "zh": "中华民国临时政府成立",
+            "ref": "modern-history/events/ev-roc-founded"
+          },
+          "year": {
+            "zh": "1912",
+            "gloss": "В 1912 году была провозглашена Китайская Республика; КНР ещё не существовала."
+          },
+          "about": "1 января 1912 года в Нанкине образовано временное правительство Китайской Республики.",
+          "sources": [
+            {
+              "title": "中华民国临时大总统孙中山颁布的陆军官制及暂行编制 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202104/t20210406_249552.shtml",
+              "quote": "1912年1月1日，孙中山在南京宣誓就任临时大总统，改国号为中华民国，并组成中华民国临时政府。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/modern-history.json events/ev-roc-founded; source previously verified locally, not reopened"
+            },
+            {
+              "title": "《孙中山与广州•南京》 — 南京市档案馆",
+              "url": "https://dag.nanjing.gov.cn/dawh/bycg/201711/t20171101_522720.html",
+              "quote": "1912年1月1日，孙中山在南京就任中华民国临时大总统。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/modern-history.json events/ev-roc-founded; source previously verified locally, not reopened"
+            },
+            {
+              "url": "https://www.cppcc.gov.cn/zxww/xinhai100/jlmg/index.shtml",
+              "title": "НПКСК — 纪念辛亥革命100周年",
+              "quote": "1912年元旦，孙中山在南京发布《临时大总统宣言书》、《告全国同胞书》等文件，正式宣告中华民国的诞生。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 3 option o1"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "diplomatic-cnussr1949",
+          "name": {
+            "zh": "中苏建交"
+          },
+          "year": {
+            "zh": "1949",
+            "gloss": "СССР стал первой страной, признавшей КНР; дипломатические отношения установлены 2 октября."
+          },
+          "about": "2 октября 1949 года СССР и КНР установили дипломатические отношения.",
+          "sources": [
+            {
+              "url": "https://www.mfa.gov.cn/ziliao_674904/zt_674979/dnzt_674981/qtzt/zggcddwjw100ggs/jszgddzg/202208/t20220824_10750397.shtml",
+              "title": "МИД КНР — 开国大典的彩色胶片",
+              "quote": "苏联是最早承认中华人民共和国的国家。1949年10月2号，中苏正式建交。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 3 option o2"
+            },
+            {
+              "title": "驻俄罗斯大使张汉晖在庆祝中华人民共和国成立75周年暨中俄建交75周年招待会上的致辞 — МИД КНР",
+              "url": "https://www.mfa.gov.cn/zwbd_673032/wjzs/202412/t20241218_11500717.shtml",
+              "quote": "1949年10月2日，苏联成为同新中国建交的第一个国家。",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "diplomatic-cnussr-treaty1950",
+          "name": {
+            "zh": "中苏友好同盟互助条约",
+            "ref": "modern-history/treaties/tr-ru-1950"
+          },
+          "year": {
+            "zh": "1950",
+            "gloss": "В 1950 году СССР и КНР подписали Договор о дружбе, союзе и взаимной помощи."
+          },
+          "about": "14 февраля 1950 года в Москве подписан Договор о дружбе, союзе и взаимной помощи СССР и КНР.",
+          "sources": [
+            {
+              "url": "https://www.mfa.gov.cn/ziliao_674904/historytoday_674971/200302/t20030214_7948993.shtml",
+              "title": "МИД КНР — 2月14日",
+              "quote": "1950年2月14日，《中苏友好同盟互助条约》在莫斯科签订。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 3 option o3"
+            },
+            {
+              "title": "新中国外交历史回顾 — 中华人民共和国外交部",
+              "url": "https://www.mfa.gov.cn/web/ziliao_674904/wjs_674919/2159_674923/200011/t20001107_7950025.shtml",
+              "quote": "周恩来总理率领中国政府代表团赴苏进行谈判，双方于1950年2月14日在莫斯科签订了",
+              "authority": "official",
+              "checkedAt": "2026-10-18",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/modern-history.json treaties/tr-ru-1950; source previously verified locally, not reopened"
+            },
+            {
+              "title": "1950年2月14日 中苏友好同盟互助条约签订 — 盐田档案与史志信息网",
+              "url": "https://www.yantian.gov.cn/ytdayszxxw/lsjt/content/post_11737393.html",
+              "quote": "两国政府在莫斯科签订《中苏友好同盟互助条约条约，同年4月11日起生效， 有效期30年",
+              "authority": "official",
+              "checkedAt": "2026-10-18",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/modern-history.json treaties/tr-ru-1950; source previously verified locally, not reopened"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "diplomatic-cnpakistan1951",
+          "name": {
+            "zh": "中国与巴基斯坦建交"
+          },
+          "year": {
+            "zh": "1951",
+            "gloss": "В 1951 году КНР установила дипломатические отношения с Пакистаном."
+          },
+          "about": "21 мая 1951 года КНР установила дипломатические отношения с Пакистаном.",
+          "sources": [
+            {
+              "url": "https://www.mfa.gov.cn/ziliao_674904/historytoday_674971/200305/t20030521_9284573.shtml",
+              "title": "МИД КНР — 5月21日",
+              "quote": "1951年5月21日，中国同巴基斯坦伊斯兰共和国建交。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 3 option o4"
+            },
+            {
+              "title": "中华人民共和国与各国建立外交关系日期简表 — МИД КНР",
+              "url": "https://www.mfa.gov.cn/web/ziliao_674904/2193_674977/200812/t20081221_9284708.shtml",
+              "quote": "巴基斯坦　1951.5.21",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        }
+      ]
+    },
+    "russianmilestones": {
+      "columns": {
+        "name": "zh",
+        "year": "zh",
+        "about": "ru"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "mile-ru-rename1991",
+          "name": {
+            "zh": "俄罗斯苏维埃联邦社会主义共和国更名"
+          },
+          "year": {
+            "zh": "1991",
+            "gloss": "Закон от 25 декабря разрешал и в 1992 году использовать прежнее название РСФСР."
+          },
+          "about": "25 декабря 1991 года принят закон о новом названии РСФСР — Российская Федерация (Россия).",
+          "sources": [
+            {
+              "url": "https://www.prlib.ru/item/353944",
+              "title": "Президентская библиотека — Закон РСФСР от 25.12.1991 № 2094-I",
+              "quote": "Закон Российской Советской Федеративной Социалистической Республики от 25 декабря 1991 года № 2094-I",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 15 keySources supporting renaming"
+            },
+            {
+              "url": "https://www.prlib.ru/history/619842",
+              "title": "Президентская библиотека — РСФСР переименована в Российскую Федерацию",
+              "quote": "По закону в течение 1992 г. было разрешено использовать название РСФСР в официальных актах и других документах",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 15 keySources supporting renaming"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "mile-ru-crisis1998",
+          "name": {
+            "zh": "俄罗斯1998年金融危机"
+          },
+          "year": {
+            "zh": "1998",
+            "gloss": "В августе 1998 года Россия пережила финансовый кризис и заморозку выплат по ГКО."
+          },
+          "about": "17 августа 1998 года приняты решения об изменении валютной политики и реструктуризации внутреннего государственного долга России.",
+          "sources": [
+            {
+              "url": "https://www.cbr.ru/Collection/Collection/File/7815/ar_1998.pdf",
+              "title": "Банк России — Годовой отчёт 1998",
+              "quote": "Правительство РФ и Банк России 17 августа приняли решение о пересмотре курсовой политики и реструктуризации внутреннего государственного долга.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 15 option o2"
+            },
+            {
+              "title": "Председатель Банка России В.В. Геращенко: Актуальные проблемы банковской системы в 1999 году — Банк России",
+              "url": "https://www.cbr.ru/Queries/XsltBlock/File/103662?fileId=1755",
+              "quote": "принятие в августе решения о приостановлении выплат по ГКО—ОФЗ",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "mile-ru-anthem2000",
+          "name": {
+            "zh": "俄罗斯联邦国歌法通过"
+          },
+          "year": {
+            "zh": "2000",
+            "gloss": "В 2000 году федеральным конституционным законом утверждён современный гимн России."
+          },
+          "about": "25 декабря 2000 года государственный гимн Российской Федерации установлен федеральным конституционным законом.",
+          "sources": [
+            {
+              "url": "https://www.prlib.ru/item/407021",
+              "title": "Президентская библиотека / Президент России — Государственный гимн РФ",
+              "quote": "Государственный гимн Российской Федерации установлен Федеральным конституционным законом от 25 декабря 2000 года № 3-ФКЗ",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 15 option o3"
+            },
+            {
+              "title": "Государственные символы — на портале Президентской библиотеки",
+              "url": "https://www.prlib.ru/news/658098",
+              "quote": "Государственный гимн Российской Федерации учреждён Федеральным конституционным законом от 25 декабря 2000 года № 3-ФКЗ",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "mile-ru-yeltsin-resignation1999",
+          "name": {
+            "zh": "叶利钦辞去总统职务"
+          },
+          "year": {
+            "zh": "1999",
+            "gloss": "31 декабря 1999 года Борис Ельцин объявил об отставке с поста президента России."
+          },
+          "about": "31 декабря 1999 года Борис Ельцин объявил об отставке с поста президента России.",
+          "sources": [
+            {
+              "url": "https://www.prlib.ru/node/619862",
+              "title": "Президентская библиотека — Добровольная отставка первого Президента РФ",
+              "quote": "31 декабря 1999 г. в 12 часов дня",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "note": "Официальный материал подробно описывает телеобращение Ельцина об отставке.",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 15 option o4"
+            },
+            {
+              "title": "Родился первый Президент России Борис Николаевич Ельцин — Президентская библиотека",
+              "url": "https://www.prlib.ru/history/618999",
+              "quote": "31 декабря 1999 г. Ельцин подписал Указ о своей отставке.",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        }
+      ]
     }
   }
 }

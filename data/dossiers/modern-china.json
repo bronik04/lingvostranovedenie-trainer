@@ -3523,6 +3523,322 @@
           ]
         }
       ]
+    },
+    "digitalplatforms": {
+      "columns": {
+        "name": "zh",
+        "about": "ru"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "platform-qq",
+          "name": {
+            "zh": "QQ",
+            "gloss": "QQ — мессенджер и социальная платформа Tencent, запущенная в феврале 1999 года."
+          },
+          "about": "QQ — мессенджер и социальная платформа Tencent, запущенная в феврале 1999 года.",
+          "sources": [
+            {
+              "url": "https://www.tencent.com/products/qq/",
+              "title": "Tencent — QQ",
+              "quote": "Launched by Tencent in February 1999, QQ is an instant messaging (IM) and social platform",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 9 option o1"
+            },
+            {
+              "title": "Our story — Tencent",
+              "url": "https://www.tencent.com/who-we-are/our-story/",
+              "quote": "1999 … February … Instant messaging service QQ launches",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "platform-weixin",
+          "name": {
+            "zh": "微信",
+            "gloss": "WeChat — платёжный сервис Weixin Pay в приложении Tencent работает с 2013 года."
+          },
+          "about": "WeChat — платёжный сервис Weixin Pay в приложении Tencent работает с 2013 года.",
+          "sources": [
+            {
+              "url": "https://www.tencent.com/products/weixin-pay/",
+              "title": "Tencent — Weixin Pay",
+              "quote": "Weixin Pay is a mobile payment solution jointly launched by Weixin and Tenpay in 2013.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 9 option o2"
+            },
+            {
+              "url": "https://english.shanghai.gov.cn/en-UsefulApps/20231214/3cac2d8cc7f847da92a72252bae06705.html",
+              "title": "Шанхайский правительственный портал — Essential apps for living in Shanghai",
+              "quote": "WeChat Pay and Alipay are the two major digital payment methods in China.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 9 keySources"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "platform-unionpay",
+          "name": {
+            "zh": "银联",
+            "gloss": "UnionPay — китайская межбанковская карточная платёжная сеть, основанная в 2002 году."
+          },
+          "about": "UnionPay — китайская межбанковская карточная платёжная сеть, основанная в 2002 году.",
+          "sources": [
+            {
+              "url": "https://www.unionpay.com/upowhtml/cn/templates/upOverview/upOverview.html",
+              "title": "China UnionPay — 企业概况",
+              "quote": "2002年3月， 经国务院同意，中国人民银行批准",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "note": "Следом сказано об учреждении China UnionPay; основной текст описывает межбанковский карточный клиринг.",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 9 option o3"
+            },
+            {
+              "title": "金融知识普及读本（第二版）第六章 支付结算 — 中国人民银行金融消费权益保护局",
+              "url": "https://guiyang.pbc.gov.cn/guiyang/113337/114084/3540759/2018051811593716305.pdf",
+              "quote": "2002年3月, 中国人民银行批准设立中国银联, 负责推动跨行联网通用和银行卡普及应用",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-pdf-indexed-text-read 2026-11-09; PDF direct open rejected for size 10516662 bytes, no successful full PDF download claimed"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "platform-taobao",
+          "name": {
+            "zh": "淘宝",
+            "gloss": "Taobao — торговая интернет-площадка Alibaba, запущенная в мае 2003 года."
+          },
+          "about": "Taobao — торговая интернет-площадка Alibaba, запущенная в мае 2003 года.",
+          "sources": [
+            {
+              "url": "https://www.alibabagroup.com/en-US/document-1491551592707522560",
+              "title": "Alibaba — About Taobao Marketplace",
+              "quote": "Launched in May 2003, Taobao Marketplace",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 9 option o4"
+            },
+            {
+              "title": "Taobao — Alibaba Group",
+              "url": "https://home.alibabagroup.com/en-US/about-alibaba-businesses-1744508703945523200",
+              "quote": "Founded in 2003, Taobao means \"search for treasures\"",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        }
+      ]
+    },
+    "censuscounts": {
+      "columns": {
+        "name": "zh",
+        "nationalitycount2010": "zh",
+        "about": "ru"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "census-range170",
+          "name": {
+            "zh": "170 多"
+          },
+          "nationalitycount2010": {
+            "zh": "170 多",
+            "gloss": "Варианты самоназваний народов при обработке переписи объединяют в этнические группы."
+          },
+          "about": "Числовой диапазон для сравнения с результатом переписи России 2010 года; строка не обозначает страну, народ, отдельную перепись или фактическое число национальностей.",
+          "sources": [
+            {
+              "url": "https://rosstat.gov.ru/folder/313/document/171091",
+              "title": "Росстат — История переписей России",
+              "quote": "в 2010 году было 193 национальности",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://59.rosstat.gov.ru/folder/67637/document/117328?print=1",
+              "title": "Пермьстат — Национальная принадлежность в переписи",
+              "quote": "в России проживало уже 182 народа. По итогам 2010 года это число снова выросло до 193.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://11.rosstat.gov.ru/storage/folder_page/2018/12-25/vzY9WJ6V/information_for_media_2010/2011/20111226_5bb9db804cdcb5a4b001ba49c24a3eb2.html",
+              "title": "Комистат — Перепись населения 2010 года: национальный состав",
+              "quote": "ответы были систематизированы примерно в 190 национальностей",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol1/l1.pdf",
+              "title": "Росстат — Переписной лист формы Л, перепись 2010",
+              "quote": "6. Ваше гражданство; 7. Ваша национальная принадлежность. По самоопределению в соответствии со ст. 26 Конституции РФ",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "note": "В цитате сгруппированы два отдельных поля переписного листа.",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "census-range180",
+          "name": {
+            "zh": "180 多"
+          },
+          "nationalitycount2010": {
+            "zh": "180 多",
+            "gloss": "Перепись 2002 года учла 182 народа; к переписи 2010 года их число выросло."
+          },
+          "about": "Числовой диапазон для сравнения с результатом переписи России 2010 года; строка не обозначает страну, народ, отдельную перепись или фактическое число национальностей.",
+          "sources": [
+            {
+              "url": "https://rosstat.gov.ru/folder/313/document/171091",
+              "title": "Росстат — История переписей России",
+              "quote": "в 2010 году было 193 национальности",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://59.rosstat.gov.ru/folder/67637/document/117328?print=1",
+              "title": "Пермьстат — Национальная принадлежность в переписи",
+              "quote": "в России проживало уже 182 народа. По итогам 2010 года это число снова выросло до 193.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://11.rosstat.gov.ru/storage/folder_page/2018/12-25/vzY9WJ6V/information_for_media_2010/2011/20111226_5bb9db804cdcb5a4b001ba49c24a3eb2.html",
+              "title": "Комистат — Перепись населения 2010 года: национальный состав",
+              "quote": "ответы были систематизированы примерно в 190 национальностей",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol1/l1.pdf",
+              "title": "Росстат — Переписной лист формы Л, перепись 2010",
+              "quote": "6. Ваше гражданство; 7. Ваша национальная принадлежность. По самоопределению в соответствии со ст. 26 Конституции РФ",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "note": "В цитате сгруппированы два отдельных поля переписного листа.",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "census-russia2010",
+          "name": {
+            "zh": "2010年俄罗斯人口普查"
+          },
+          "nationalitycount2010": {
+            "zh": "190 多",
+            "gloss": "Национальную принадлежность при переписи определял сам опрашиваемый."
+          },
+          "about": "Результат Всероссийской переписи населения 2010 года: 193 национальности. Диапазон 190 多 описывает этот один канонический результат.",
+          "sources": [
+            {
+              "url": "https://rosstat.gov.ru/folder/313/document/171091",
+              "title": "Росстат — История переписей России",
+              "quote": "в 2010 году было 193 национальности",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://59.rosstat.gov.ru/folder/67637/document/117328?print=1",
+              "title": "Пермьстат — Национальная принадлежность в переписи",
+              "quote": "в России проживало уже 182 народа. По итогам 2010 года это число снова выросло до 193.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://11.rosstat.gov.ru/storage/folder_page/2018/12-25/vzY9WJ6V/information_for_media_2010/2011/20111226_5bb9db804cdcb5a4b001ba49c24a3eb2.html",
+              "title": "Комистат — Перепись населения 2010 года: национальный состав",
+              "quote": "ответы были систематизированы примерно в 190 национальностей",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol1/l1.pdf",
+              "title": "Росстат — Переписной лист формы Л, перепись 2010",
+              "quote": "6. Ваше гражданство; 7. Ваша национальная принадлежность. По самоопределению в соответствии со ст. 26 Конституции РФ",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "note": "В цитате сгруппированы два отдельных поля переписного листа.",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            }
+          ],
+          "core": false
+        },
+        {
+          "id": "census-range200",
+          "name": {
+            "zh": "200 多"
+          },
+          "nationalitycount2010": {
+            "zh": "200 多",
+            "gloss": "Национальность и гражданство учитывались раздельно: это разные вопросы переписного листа."
+          },
+          "about": "Числовой диапазон для сравнения с результатом переписи России 2010 года; строка не обозначает страну, народ, отдельную перепись или фактическое число национальностей.",
+          "sources": [
+            {
+              "url": "https://rosstat.gov.ru/folder/313/document/171091",
+              "title": "Росстат — История переписей России",
+              "quote": "в 2010 году было 193 национальности",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://59.rosstat.gov.ru/folder/67637/document/117328?print=1",
+              "title": "Пермьстат — Национальная принадлежность в переписи",
+              "quote": "в России проживало уже 182 народа. По итогам 2010 года это число снова выросло до 193.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://11.rosstat.gov.ru/storage/folder_page/2018/12-25/vzY9WJ6V/information_for_media_2010/2011/20111226_5bb9db804cdcb5a4b001ba49c24a3eb2.html",
+              "title": "Комистат — Перепись населения 2010 года: национальный состав",
+              "quote": "ответы были систематизированы примерно в 190 национальностей",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol1/l1.pdf",
+              "title": "Росстат — Переписной лист формы Л, перепись 2010",
+              "quote": "6. Ваше гражданство; 7. Ваша национальная принадлежность. По самоопределению в соответствии со ст. 26 Конституции РФ",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "note": "В цитате сгруппированы два отдельных поля переписного листа.",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            }
+          ],
+          "core": false
+        }
+      ]
     }
   }
 }

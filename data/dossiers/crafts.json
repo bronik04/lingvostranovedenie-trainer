@@ -9453,6 +9453,168 @@
           ]
         }
       ]
+    },
+    "bodycustoms": {
+      "columns": {
+        "name": "zh",
+        "statuslength": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "bodycustom-beard",
+          "core": false,
+          "name": {
+            "zh": "胡须",
+            "ru": [
+              "Борода"
+            ],
+            "gloss": "Борода — характерная черта традиционных изображений Гуань Юя."
+          },
+          "statuslength": {
+            "zh": "胡须",
+            "ru": [
+              "Борода"
+            ],
+            "gloss": "Борода — характерная черта традиционных изображений Гуань Юя."
+          },
+          "sources": [
+            {
+              "url": "https://www.xxsbwg.cn/collection/detail/61",
+              "title": "关羽铜造像 — 新乡市博物馆",
+              "quote": "五绺胡须飘散胸前",
+              "additionalQuotes": [
+                "雅号“美髯公”"
+              ],
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#14/options/o1; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text; full open returned no readable lines"
+            },
+            {
+              "url": "https://www.dpm.org.cn/collection/sculpture/234222.html",
+              "title": "泥塑彩绘关羽像 — 故宫博物院",
+              "quote": "美须髯，武艺高强，能征善战",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#14/options/o1; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text; direct open timed out"
+            }
+          ]
+        },
+        {
+          "id": "bodycustom-nails",
+          "core": false,
+          "name": {
+            "zh": "指甲",
+            "ru": [
+              "Ногти"
+            ],
+            "gloss": "Ногти — длинные ногти берегли металлическими футлярами, часто из золота или серебра."
+          },
+          "statuslength": {
+            "zh": "指甲",
+            "ru": [
+              "Ногти"
+            ],
+            "gloss": "Ногти — длинные ногти берегли металлическими футлярами, часто из золота или серебра."
+          },
+          "sources": [
+            {
+              "url": "https://www.dpm.org.cn/collection/jewelry/234286.html",
+              "title": "金錾古钱纹指甲套 — 故宫博物院",
+              "quote": "指甲套称护指，又称义甲",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#14/options/o2; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text",
+              "additionalQuotes": [
+                "护指绝大多数以金、银制作"
+              ]
+            },
+            {
+              "url": "https://www.nps.gov/long/blogs/chinese-fingernail-protectors.htm",
+              "title": "Chinese Fingernail Protectors — U.S. National Park Service",
+              "quote": "Long fingernails were a mark of high status",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#14/options/o2; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text",
+              "additionalQuotes": [
+                "Qing noblewomen wore metal guards."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bodycustom-feet",
+          "core": false,
+          "name": {
+            "zh": "脚",
+            "ru": [
+              "Ступни"
+            ],
+            "gloss": "Ступни — при бинтовании престижным считался, наоборот, очень маленький размер."
+          },
+          "statuslength": {
+            "zh": "脚",
+            "ru": [
+              "Ступни"
+            ],
+            "gloss": "Ступни — при бинтовании престижным считался, наоборот, очень маленький размер."
+          },
+          "sources": [
+            {
+              "url": "https://australian.museum/about/history/exhibitions/body-art/footbinding/",
+              "title": "Footbinding — Australian Museum",
+              "quote": "The feet were called lotus of gold if they were 3 inches",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#14/options/o3; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "Chinese Lotus Shoes — Museum of Anthropology, University of Missouri",
+              "url": "https://anthromuseum.missouri.edu/e-exhibits/chinese-lotus-shoes",
+              "quote": "small feet were culturally preferred before documentation of the custom",
+              "authority": "academic",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ]
+        },
+        {
+          "id": "bodycustom-hair",
+          "core": false,
+          "name": {
+            "zh": "头发",
+            "ru": [
+              "Волосы"
+            ],
+            "gloss": "Волосы — при Цин маньчжурскую косу предписали носить и ханьским мужчинам."
+          },
+          "statuslength": {
+            "zh": "头发",
+            "ru": [
+              "Волосы"
+            ],
+            "gloss": "Волосы — при Цин маньчжурскую косу предписали носить и ханьским мужчинам."
+          },
+          "sources": [
+            {
+              "url": "https://www.mocanyc.org/collections/stories/denisons-make-up-guide-for-amateur-and-professional/",
+              "title": "Denison’s Make-Up Guide — Museum of Chinese in America",
+              "quote": "This hairstyle was a symbol of cultural identity for the Manchu people of China, which was then later imposed upon the Han Chinese",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#14/options/o4; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "Chinese skullcap with hair queue — Powerhouse Collection",
+              "url": "https://collection.powerhouse.com.au/object/341390",
+              "quote": "formally requiring all Chinese men to shave their foreheads and plati their hair in a queue like the Manchus.",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      ]
     }
   }
 }

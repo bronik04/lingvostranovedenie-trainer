@@ -2964,6 +2964,311 @@
           ]
         }
       ]
+    },
+    "martialartists": {
+      "columns": {
+        "name": "zh",
+        "wingchunmaster": "zh",
+        "actorname": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "martial-ipman",
+          "core": false,
+          "name": {
+            "zh": "叶问",
+            "ru": [
+              "Ип Ман",
+              "Е Вэнь"
+            ],
+            "gloss": "Ип Ман — преподавал в Гонконге; среди его учеников был Брюс Ли."
+          },
+          "wingchunmaster": {
+            "zh": "叶问",
+            "ru": [
+              "Ип Ман",
+              "Е Вэнь"
+            ],
+            "gloss": "Ип Ман — преподавал в Гонконге; среди его учеников был Брюс Ли."
+          },
+          "sources": [
+            {
+              "url": "https://fy.szu.edu.cn/fyxm/xmlb/wsl/ycq_ywzz_.htm",
+              "title": "咏春拳(叶问宗支) — 深圳大学体育非物质文化遗产",
+              "quote": "1950年，叶问于香港发扬咏春拳，其著名传人有梁相、骆耀、黄淳梁、徐尚田、招允、李振藩(李小龙)、梁挺等",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#5/options/o1; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "url": "https://www.gdwsw.gov.cn/rwcq/content/post_28210.html",
+              "title": "叶问——一代武术宗师 — 文史广东",
+              "quote": "1968年，叶问主持成立的香港咏春拳体育会",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#5/options/o1; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            }
+          ]
+        },
+        {
+          "id": "martial-huangfeihong",
+          "core": false,
+          "name": {
+            "zh": "黄飞鸿",
+            "ru": [
+              "Хуан Фэйхун"
+            ],
+            "gloss": "Хуан Фэйхун — знаменитый представитель южнокитайского стиля хунцюань."
+          },
+          "wingchunmaster": {
+            "zh": "黄飞鸿",
+            "ru": [
+              "Хуан Фэйхун"
+            ],
+            "gloss": "Хуан Фэйхун — знаменитый представитель южнокитайского стиля хунцюань."
+          },
+          "sources": [
+            {
+              "url": "https://www.nhmuseum.org/fei-yi/1417.html",
+              "title": "洪拳（南海洪拳） — 南海博物馆",
+              "quote": "南海历代有铁桥三(梁坤)、黄飞鸿、林世荣、颜殿雄等对洪拳历史影响深远的武术名人。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#5/options/o2; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "OMG党支部、信息仪器中心党支部、机关党支部联合开展“不忘初心，弘扬优良家风”主题党日活动 — 中国科学院南海海洋研究所",
+              "url": "https://scsio.cas.cn/nhdj/jcdj/202107/t20210712_6130609.html",
+              "quote": "黄飞鸿，是清末民初岭南武术界的远近闻名的洪拳大师",
+              "authority": "academic",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ]
+        },
+        {
+          "id": "martial-huoyuanjia",
+          "core": false,
+          "name": {
+            "zh": "霍元甲",
+            "ru": [
+              "Хо Юаньцзя"
+            ],
+            "gloss": "Хо Юаньцзя — один из создателей шанхайского спортивного общества «Цзинъу»."
+          },
+          "wingchunmaster": {
+            "zh": "霍元甲",
+            "ru": [
+              "Хо Юаньцзя"
+            ],
+            "gloss": "Хо Юаньцзя — один из создателей шанхайского спортивного общества «Цзинъу»."
+          },
+          "sources": [
+            {
+              "url": "https://www.sport.gov.cn/n20001280/n20745751/n20767239/c21843662/content.html",
+              "title": "“精武”人聚申城 传承拓展精武文化内涵 — 国家体育总局",
+              "quote": "霍元甲、农劲荪、陈公哲等齐聚沪上，共谋创立精武体育会",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#5/options/o3; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "精武体育 — 深圳大学体育非物质文化遗产",
+              "url": "https://fy.szu.edu.cn/fyxm/xmdq/shs/jwty.htm",
+              "quote": "精武体育创始人霍元甲成为民族的骄傲。",
+              "authority": "academic",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ]
+        },
+        {
+          "id": "martial-yangluchan",
+          "core": false,
+          "name": {
+            "zh": "杨露禅",
+            "ru": [
+              "Ян Лучань"
+            ],
+            "gloss": "Ян Лучань — основатель направления Ян в тайцзицюань."
+          },
+          "wingchunmaster": {
+            "zh": "杨露禅",
+            "ru": [
+              "Ян Лучань"
+            ],
+            "gloss": "Ян Лучань — основатель направления Ян в тайцзицюань."
+          },
+          "sources": [
+            {
+              "url": "https://www.sport.gov.cn/n14471/n14474/n14511/c699205/content.html",
+              "title": "河北太极拳简介 — 国家体育总局",
+              "quote": "河北人杨露禅，武禹襄、孙禄堂、吴全佑等人在陈氏太极拳基础上创建不同风格特点的杨氏、武氏、孙氏、吴氏太极流派。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#5/options/o4; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "杨氏太极拳历史沿革 — 深圳大学体育非物质文化遗产",
+              "url": "https://fy.szu.edu.cn/info/1856/1529.htm",
+              "quote": "杨氏太极拳世代传承，由第一代宗师杨露禅传承至今",
+              "authority": "academic",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ]
+        },
+        {
+          "id": "martial-brucelee",
+          "core": false,
+          "name": {
+            "zh": "李小龙",
+            "ru": [
+              "Брюс Ли"
+            ],
+            "gloss": "Брюс Ли — создал систему джиткундо и снялся в фильме «Выход дракона»."
+          },
+          "actorname": {
+            "zh": "李小龙",
+            "ru": [
+              "Брюс Ли"
+            ],
+            "gloss": "Брюс Ли — создал систему джиткундо и снялся в фильме «Выход дракона»."
+          },
+          "sources": [
+            {
+              "url": "https://www.museums.gov.hk/en/web/portal/exhibition017.html",
+              "title": "Bruce Lee: Kung Fu·Art·Life — Hong Kong Heritage Museum",
+              "quote": "he founded his own system, Jeet Kune Do",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#20/options/o1; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "A Man Beyond the Ordinary: Bruce Lee — Hong Kong Heritage Museum",
+              "url": "https://www.heritagemuseum.gov.hk/en/exhibitions/bruce_lee.html",
+              "quote": "He combined various schools of martial arts to create what is known as his Jeet Kune Do.",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ]
+        },
+        {
+          "id": "martial-jetli",
+          "core": false,
+          "name": {
+            "zh": "李连杰",
+            "ru": [
+              "Джет Ли"
+            ],
+            "gloss": "Джет Ли — прославился главной ролью в фильме «Храм Шаолинь» 1982 года."
+          },
+          "actorname": {
+            "zh": "李连杰",
+            "ru": [
+              "Джет Ли"
+            ],
+            "gloss": "Джет Ли — прославился главной ролью в фильме «Храм Шаолинь» 1982 года."
+          },
+          "sources": [
+            {
+              "url": "https://www.filmarchive.gov.hk/tc/web/hkfa/2024/martial/pe-event-2024-martial-fs-film11.html",
+              "title": "少林寺（4K數碼修復版） — 香港電影資料館",
+              "quote": "李連杰成名作",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#20/options/o2; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text",
+              "additionalQuotes": [
+                "1982"
+              ]
+            },
+            {
+              "title": "从运动员到演艺明星 — 国家体育总局",
+              "url": "https://www.sport.gov.cn/n4/n220/c983521/part/632393.pdf",
+              "quote": "1982年，李连杰主演的《少林寺》红遍中国",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-search-indexed-text; точный фрагмент первичного PDF прочитан в поисковой выдаче 2026-11-09; отдельное полное открытие вернуло Content length is too large (12772293 bytes)."
+            }
+          ]
+        },
+        {
+          "id": "martial-jackiechan",
+          "core": false,
+          "name": {
+            "zh": "成龙",
+            "ru": [
+              "Джеки Чан",
+              "Чэн Лун"
+            ],
+            "gloss": "Джеки Чан — соединяет боевые трюки с комедией; сыграл в серии «Час пик»."
+          },
+          "actorname": {
+            "zh": "成龙",
+            "ru": [
+              "Джеки Чан",
+              "Чэн Лун"
+            ],
+            "gloss": "Джеки Чан — соединяет боевые трюки с комедией; сыграл в серии «Час пик»."
+          },
+          "sources": [
+            {
+              "url": "https://www.oscars.org/governors-awards/2016/jackie-chan",
+              "title": "Jackie Chan — Academy of Motion Picture Arts and Sciences",
+              "quote": "none more successful than the blockbuster Rush Hour series.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#20/options/o3; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "url": "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/Chinese/Jackie-Chan_c.pdf",
+              "title": "香港影人小傳：成龍 — 香港電影資料館",
+              "quote": "1976 年簽約羅維的公司，改名「成龍」",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#20/keySources; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            }
+          ]
+        },
+        {
+          "id": "martial-donnieyen",
+          "core": false,
+          "name": {
+            "zh": "甄子丹",
+            "ru": [
+              "Донни Йен"
+            ],
+            "gloss": "Донни Йен — исполнитель роли Ип Мана в серии одноимённых фильмов."
+          },
+          "actorname": {
+            "zh": "甄子丹",
+            "ru": [
+              "Донни Йен"
+            ],
+            "gloss": "Донни Йен — исполнитель роли Ип Мана в серии одноимённых фильмов."
+          },
+          "sources": [
+            {
+              "url": "https://www.weibo.com/donnieyen",
+              "title": "甄子丹 — личная страница актёра",
+              "quote": "导演、演员，代表作：《叶问》、《精武门》等。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#20/options/o4; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "Ip Man — Hong Kong Film Archive",
+              "url": "https://www.filmarchive.gov.hk/en/web/hkfa/2024/martial/pe-event-2024-martial-fs-film17.html",
+              "quote": "Cast: Donnie Yen, Simon Yam, Lynn Xiong",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      ]
     }
   }
 }

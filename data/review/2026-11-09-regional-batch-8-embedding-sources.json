@@ -1,0 +1,3735 @@
+{
+  "geo": {
+    "columnAdditions": [
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "column": "heilongjiangcapitalcity",
+        "kind": "zh"
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "column": "embroideryschoolcity",
+        "kind": "zh"
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "column": "beijinghistoricname",
+        "kind": "zh"
+      },
+      {
+        "dossier": "nature",
+        "table": "waters",
+        "column": "russianlongestrivername",
+        "kind": "zh"
+      },
+      {
+        "dossier": "nature",
+        "table": "seas",
+        "column": "xiamenislandname",
+        "kind": "zh"
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "column": "tibetreligiouscity",
+        "kind": "zh"
+      }
+    ],
+    "tableAdditions": [],
+    "rowAdditions": [
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": {
+          "id": "city-lanzhou",
+          "name": {
+            "zh": "兰州",
+            "ru": [
+              "Ланьчжоу"
+            ],
+            "gloss": "Ланьчжоу — административный центр провинции Ганьсу."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "region": {
+            "zh": "甘肃",
+            "ru": [
+              "провинция Ганьсу"
+            ],
+            "ref": "provinces/provinces/prov-gansu"
+          },
+          "about": "Ланьчжоу — административный центр провинции Ганьсу.",
+          "sources": [
+            {
+              "title": "兰州市 — 工业和信息化部",
+              "url": "https://wap.miit.gov.cn/ztzl/lszt/gjgyyxzdlxcs/csmd/art/2020/art_bc1430039dcf42a6b9fb4c622b634811.html",
+              "quote": "兰州，甘肃省省会",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 1 / options o1 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "兰州概况 — 中国网·一带一路网",
+              "url": "http://ydyl.china.com.cn/2016-11/01/content_39614781.htm",
+              "quote": "兰州，甘肃省省会，甘肃省的政治、文化、经济和科教中心",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reuse-local: data/dossiers/provinces.json / provinces / prov-gansu / sources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            }
+          ],
+          "olympiad": [],
+          "core": false
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "seas",
+        "row": {
+          "id": "sea-putuoshan",
+          "name": {
+            "zh": "普陀山",
+            "ru": [
+              "Путошань"
+            ],
+            "gloss": "Путошань — остров архипелага Чжоушань в провинции Чжэцзян.",
+            "ref": "nature/mountains/mtn-putuoshan"
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "kind": {
+            "zh": "岛",
+            "ru": [
+              "остров"
+            ]
+          },
+          "about": "Путошань — остров архипелага Чжоушань в провинции Чжэцзян.",
+          "sources": [
+            {
+              "title": "舟山市普陀山风景区 — 文化和旅游部大众旅游服务栏目",
+              "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang",
+              "quote": "普陀山是浙江东海舟山群岛中的一个小岛",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / options o1 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "海天佛国 南海圣境 神圣普陀山 — 中国网",
+              "url": "http://photo.china.com.cn/2013-09/11/content_29993881.htm",
+              "quote": "并称为中国佛教四大名山，是观世音菩萨教化众生的道场 … 浙江舟山群岛以东的海面上",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "reuse-local: data/dossiers/nature.json / mountains / mtn-putuoshan / sources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            },
+            {
+              "title": "普陀山 — 央视网台湾频道",
+              "url": "https://www.cctv.com/taiwan/20021230/100248.shtml",
+              "quote": "位于浙江省杭州湾以东约100海里 … 全岛面积12.5平方公里 … 佛顶山，海拔约300米",
+              "checkedAt": "2026-10-18",
+              "authority": "official",
+              "verificationMethod": "reuse-local: data/dossiers/nature.json / mountains / mtn-putuoshan / sources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            }
+          ],
+          "olympiad": [],
+          "core": false
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "seas",
+        "row": {
+          "id": "sea-gulangyu",
+          "name": {
+            "zh": "鼓浪屿",
+            "ru": [
+              "Гуланъюй"
+            ],
+            "gloss": "Гуланъюй — историческое международное поселение, в списке ЮНЕСКО с 2017 года."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "kind": {
+            "zh": "岛",
+            "ru": [
+              "остров"
+            ]
+          },
+          "about": "Гуланъюй — историческое международное поселение, в списке ЮНЕСКО с 2017 года.",
+          "sources": [
+            {
+              "title": "Kulangsu, a Historic International Settlement — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1541/",
+              "quote": "Date of Inscription: 2017",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / options o2 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-full-text",
+              "additionalSupportedFact": "Island developed as an international settlement with a mix of architectural styles.",
+              "originalAuthority": "official-unesco",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "地理环境 — 厦门市委党史和地方志研究室，来源厦门市人民政府",
+              "url": "https://xm.fjdsfzw.org.cn/2024-09-05/content_151790.html",
+              "quote": "厦门市境域由福建省东南部沿厦门湾的大陆地区和厦门岛、鼓浪屿等岛屿以及厦门湾组成。",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / keySources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "additionalSupportedFact": "2022年，全市土地面积1699.01平方千米。",
+              "checkedAt": "2026-11-08"
+            }
+          ],
+          "olympiad": [],
+          "core": false
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "seas",
+        "row": {
+          "id": "sea-sun-island",
+          "name": {
+            "zh": "太阳岛",
+            "ru": [
+              "Остров Солнца"
+            ],
+            "gloss": "Остров Солнца — расположен в Харбине.",
+            "ref": "landmarks/sites/lm-cn-sun-island"
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "kind": {
+            "zh": "岛",
+            "ru": [
+              "остров"
+            ]
+          },
+          "about": "Остров Солнца — расположен в Харбине.",
+          "sources": [
+            {
+              "title": "哈尔滨市太阳岛风景区 — 黑龙江省人民政府",
+              "url": "https://www.hlj.gov.cn/hlj/c108519/202503/c00_31816708.shtml",
+              "quote": "哈尔滨市太阳岛风景区",
+              "checkedAt": "2026-10-23",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / options o3 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-open; exact accepted source URL retained"
+            },
+            {
+              "title": "美丽的太阳岛 — 新华网",
+              "url": "http://www.news.cn/info/20240822/0d365e27440a4b0b8a23f6628d428d23/c.html",
+              "quote": "位于哈尔滨市松花江北岸的太阳岛国家湿地公园总面积超过1万公顷",
+              "checkedAt": "2026-10-23",
+              "authority": "official",
+              "verificationMethod": "reuse-local: data/dossiers/landmarks.json / sites / lm-cn-sun-island / sources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            }
+          ],
+          "olympiad": [],
+          "core": false
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": {
+          "id": "city-nyingchi",
+          "name": {
+            "zh": "林芝",
+            "ru": [
+              "Ньингчи"
+            ],
+            "gloss": "Ньингчи — знаменит весенним цветением персиков."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "region": {
+            "zh": "西藏",
+            "ru": [
+              "Тибетский автономный район"
+            ],
+            "ref": "provinces/provinces/prov-xizang"
+          },
+          "about": "Ньингчи — знаменит весенним цветением персиков.",
+          "sources": [
+            {
+              "title": "林芝各地桃花啥时候盛开？去哪儿赏花？攻略来啦！ — Управление культуры и туризма Ньингчи, официальный сайт города",
+              "url": "https://www.linzhi.gov.cn/linzhi/zmlz/202603/b99cb9b4478d4ec69da29f125361937e.shtml",
+              "quote": "林芝一年一度的桃花季来啦；桃林沿着尼洋河谷铺展开来",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / options o1 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh web indexed article text, 2026-11-08",
+              "supports": "Ежегодное весеннее цветение персиков в Ньингчи.",
+              "originalAuthority": "official-primary-tourism-bureau",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "西藏概况 — 西藏自治区人民政府",
+              "url": "https://www.xizang.gov.cn/rsxz/qqjj/201812/t20181221_34484.html",
+              "quote": "西藏自治区总面积120.28万平方公里，约占全国总面积的八分之一，仅次于新疆，列第二位。现辖6个市（拉萨、日喀则、山南、林芝、昌都、那曲）、1个地区（阿里），有74个县（市、区），首府拉萨。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reuse-local: data/dossiers/provinces.json / provinces / prov-xizang / sources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            }
+          ],
+          "olympiad": [],
+          "core": false
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": {
+          "id": "city-qamdo",
+          "name": {
+            "zh": "昌都",
+            "ru": [
+              "Чамдо"
+            ],
+            "gloss": "Чамдо — здесь находится крупнейший в Кхаме монастырь школы гелуг."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "region": {
+            "zh": "西藏",
+            "ru": [
+              "Тибетский автономный район"
+            ],
+            "ref": "provinces/provinces/prov-xizang"
+          },
+          "about": "Чамдо — здесь находится крупнейший в Кхаме монастырь школы гелуг.",
+          "sources": [
+            {
+              "title": "强巴林寺 — Управление развития туризма Чамдо",
+              "url": "https://lyfz.changdu.gov.cn/cdslyj4/c101493/202005/31f676065d5141cb92e6d87d292f2bfb.shtml",
+              "quote": "强巴林寺是康区建寺最早、规模最大的格鲁派寺院",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / options o3 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh web indexed full article text, 2026-11-08",
+              "supports": "Крупнейший гелугский монастырь Кхама расположен в Чамдо; это значимый региональный религиозный центр, поэтому широкое слово «центр» требует осторожности.",
+              "originalAuthority": "official-primary-tourism-bureau",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "西藏概况 — 西藏自治区人民政府",
+              "url": "https://www.xizang.gov.cn/rsxz/qqjj/201812/t20181221_34484.html",
+              "quote": "西藏自治区总面积120.28万平方公里，约占全国总面积的八分之一，仅次于新疆，列第二位。现辖6个市（拉萨、日喀则、山南、林芝、昌都、那曲）、1个地区（阿里），有74个县（市、区），首府拉萨。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reuse-local: data/dossiers/provinces.json / provinces / prov-xizang / sources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            }
+          ],
+          "olympiad": [],
+          "core": false
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": {
+          "id": "city-nagqu",
+          "name": {
+            "zh": "那曲",
+            "ru": [
+              "Нагчу"
+            ],
+            "gloss": "Нагчу — здесь проводят праздник конных состязаний."
+          },
+          "country": {
+            "zh": "中国"
+          },
+          "region": {
+            "zh": "西藏",
+            "ru": [
+              "Тибетский автономный район"
+            ],
+            "ref": "provinces/provinces/prov-xizang"
+          },
+          "about": "Нагчу — здесь проводят праздник конных состязаний.",
+          "sources": [
+            {
+              "title": "关于2026年那曲市恰青赛马节场地规划调整及招商安排的公告 — Оргкомитет праздника конных состязаний, сайт горкома Нагчу",
+              "url": "https://nq.xzdw.gov.cn/fbt/gsgg_545/202607/t20260721_685426.html",
+              "quote": "为进一步办好这一深受群众喜爱的草原盛会，今年我们结合城市发展和生态保护实际，对赛马节场地规划进行了全面优化调整",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / options o4 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh web indexed full organizer announcement, 2026-11-08",
+              "supports": "В Нагчу проводится крупный местный праздник конных состязаний.",
+              "originalAuthority": "official-primary-event-organizer",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "西藏概况 — 西藏自治区人民政府",
+              "url": "https://www.xizang.gov.cn/rsxz/qqjj/201812/t20181221_34484.html",
+              "quote": "西藏自治区总面积120.28万平方公里，约占全国总面积的八分之一，仅次于新疆，列第二位。现辖6个市（拉萨、日喀则、山南、林芝、昌都、那曲）、1个地区（阿里），有74个县（市、区），首府拉萨。",
+              "authority": "official",
+              "checkedAt": "2026-10-16",
+              "verificationMethod": "reuse-local: data/dossiers/provinces.json / provinces / prov-xizang / sources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            },
+            {
+              "title": "2026年那曲市恰青赛马节时间定了！ — Департамент культуры и туризма Тибета",
+              "url": "https://wlt.xizang.gov.cn/xccx/lytg/202607/t20260729_551882.html",
+              "quote": "本届那曲市恰青赛马节将于8月1日至12日在那曲市格萨尔赛马场隆重举行",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-08-regional-batch-8-author-feedback.json / q19SourcePackage / sources / nagqu-annual; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh web indexed full article text, 2026-11-08",
+              "supports": "Место проведения — Нагчу; подтверждает праздник конных состязаний без привязки подписи к конкретной дате.",
+              "checkedAt": "2026-11-08"
+            }
+          ],
+          "olympiad": [],
+          "core": false
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "waters",
+        "row": {
+          "id": "preview-b8-yenisei",
+          "core": false,
+          "name": {
+            "zh": "叶尼塞河",
+            "ru": [
+              "река Енисей"
+            ],
+            "gloss": "Енисей — великая сибирская река, делит Сибирь на западную и восточную",
+            "ref": "nature/waters/wat-ru-yenisei"
+          },
+          "russianlongestrivername": {
+            "zh": "叶尼塞河",
+            "ru": [
+              "Енисей"
+            ],
+            "gloss": "Енисей — начинается у Кызыла при слиянии Большого и Малого Енисея."
+          },
+          "sources": [
+            {
+              "title": "长江经济带绿色生态廊道建设研究 — 地理研究（中国科学院地理科学与资源研究所）",
+              "url": "https://www.dlyj.ac.cn/article/2015/1007-6301/1007-6301-34-11-1356.shtml",
+              "quote": "叶尼塞河 5539 萨彦岭 喀拉海",
+              "checkedAt": "2026-10-18",
+              "authority": "academic"
+            },
+            {
+              "title": "克拉斯诺亚尔斯克边疆区简介 — 驻叶卡捷琳堡总领馆",
+              "url": "https://ekaterinburg.china-consulate.gov.cn/chn/lqgk/klsnyerskbjqjj/202008/t20200814_4210660.htm",
+              "quote": "世界著名的叶尼塞河",
+              "checkedAt": "2026-10-18",
+              "authority": "official"
+            },
+            {
+              "title": "Завершилась экспедиция к истокам сибирской реки Енисей — РГО",
+              "url": "https://rgo.ru/activity/redaction/news/zavershilas-ekspeditsiya-k-istokam-sibirskoy-reki-enisey/",
+              "quote": "склонах хребтов Западного и Восточного Саяна",
+              "checkedAt": "2026-10-18",
+              "authority": "academic"
+            },
+            {
+              "title": "Протяженные, полноводные, интригующие: шесть российских рек — РГО",
+              "url": "https://rgo.ru/activity/redaction/articles/protyazhennye-polnovodnye-intriguyushchie-osobennosti-i-zagadki-shesti-rossiyskikh-rek/",
+              "quote": "Длина Енисея составляет 3487 км … полноводностью превосходит все прочие реки России",
+              "checkedAt": "2026-10-18",
+              "authority": "academic"
+            },
+            {
+              "title": "叶尼塞河流域界线数据 — 全球变化数据大百科（中国科学院）",
+              "url": "https://www.geodoi.ac.cn/webcn/doi.aspx?Id=490",
+              "quote": "是北冰洋水系中水量最大的河流流域",
+              "checkedAt": "2026-10-18",
+              "authority": "academic"
+            },
+            {
+              "url": "https://www.iwp.ru/upload/iblock/7c2/7c25d68e575b12087541fe5e496c684c.pdf",
+              "title": "Институт водных проблем РАН — Общие сведения о реке Енисей",
+              "quote": "Енисей образуется слиянием Большого (Бей-Кем) и Малого (Ха-Кем) Енисея у г. Кызыл в 3487 км от устья.",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / options preview-b8-yenisei / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "nature",
+        "table": "seas",
+        "row": {
+          "id": "preview-b8-chongming-island",
+          "core": false,
+          "name": {
+            "zh": "崇明岛",
+            "ru": [
+              "остров Чунмин"
+            ],
+            "gloss": "Остров Чунмин в устье Янцзы — третий по величине остров Китая",
+            "ref": "nature/seas/sea-chongmingdao"
+          },
+          "xiamenislandname": {
+            "zh": "崇明岛",
+            "ru": [
+              "Чунминдао"
+            ],
+            "gloss": "Чунминдао — остров в устье Янцзы."
+          },
+          "sources": [
+            {
+              "title": "跟着央视，走近丰饶的海岛崇明 — 上海市崇明区人民政府",
+              "url": "https://www.shcm.gov.cn/zjcm/006011/006011003/20250228/06fedfd4-7fcf-4678-b2b6-a1105059616d.html",
+              "quote": "崇明岛位于长江入海口，是中国第三大岛，也是世界最大的河口冲积岛",
+              "checkedAt": "2026-10-18",
+              "authority": "official"
+            },
+            {
+              "title": "美丽中国先锋榜（1）｜上海崇明岛 — 中华人民共和国生态环境部",
+              "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk15/201908/t20190814_728903.html",
+              "quote": "是全世界最大的河口冲积岛，也是中国第三大岛",
+              "checkedAt": "2026-10-18",
+              "authority": "official"
+            },
+            {
+              "title": "中国的岛屿 — Институт географии и природных ресурсов АН Китая (《中国大百科全书·中国地理》)",
+              "url": "http://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692438.html",
+              "quote": "崇明岛 位于长江口，面积1 060.5平方千米，为中国第3大岛",
+              "checkedAt": "2026-10-18",
+              "authority": "academic"
+            },
+            {
+              "title": "崇明区 — 上海市人民政府",
+              "url": "https://www.shanghai.gov.cn/chongming/index.html",
+              "quote": "崇明岛于一千三百多年前在长江口形成",
+              "authority": "official",
+              "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / options preview-b8-chongming-island / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+              "checkedAt": "2026-11-08"
+            }
+          ]
+        }
+      }
+    ],
+    "cellAdditions": [
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-lanzhou",
+        "column": "heilongjiangcapitalcity",
+        "cell": {
+          "zh": "兰州",
+          "ru": [
+            "Ланьчжоу"
+          ],
+          "gloss": "Ланьчжоу — административный центр провинции Ганьсу."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "兰州市 — 工业和信息化部",
+            "url": "https://wap.miit.gov.cn/ztzl/lszt/gjgyyxzdlxcs/csmd/art/2020/art_bc1430039dcf42a6b9fb4c622b634811.html",
+            "quote": "兰州，甘肃省省会",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 1 / options o1 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-haerbin",
+        "column": "heilongjiangcapitalcity",
+        "cell": {
+          "zh": "哈尔滨",
+          "ru": [
+            "Харбин"
+          ],
+          "gloss": "Харбин — стоит на реке Сунхуацзян (Сунгари)."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "松花江美景引客万千 — 黑龙江省文化和旅游厅",
+            "url": "https://wlt.hlj.gov.cn/wlt/c114253/202406/c00_31744916.shtml",
+            "quote": "蜿蜒的松花江穿城而过，为哈尔滨增添了无限魅力，也吸引了万千游客。",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 1 / options o2 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          },
+          {
+            "title": "省情概况 — 黑龙江省人民政府",
+            "url": "https://www.hlj.gov.cn/hlj/c108476/202005/c00_30550923.shtml",
+            "quote": "黑龙江省，简称黑。省会哈尔滨。",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 1 / keySources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-open",
+            "checkedAt": "2026-11-08"
+          },
+          {
+            "title": "哈尔滨概况 — 黑龙江省委省直机关工委，来源哈尔滨市人民政府网",
+            "url": "https://ljjgdj.gov.cn/system/202607/131221.html",
+            "quote": "哈尔滨位处中国东北，黑龙江省西南部，是黑龙江省的省会，副省级市",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 1 / keySources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-xiamen",
+        "column": "heilongjiangcapitalcity",
+        "cell": {
+          "zh": "厦门",
+          "ru": [
+            "Сямэнь"
+          ],
+          "gloss": "Сямэнь — приморский город провинции Фуцзянь."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "地理环境 — 厦门市委党史和地方志研究室，来源厦门市人民政府",
+            "url": "https://xm.fjdsfzw.org.cn/2024-09-05/content_151790.html",
+            "quote": "厦门市境域由福建省东南部沿厦门湾的大陆地区和厦门岛、鼓浪屿等岛屿以及厦门湾组成。",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 1 / options o3 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+            "additionalSupportedFact": "2022年，全市土地面积1699.01平方千米。",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-fuzhou",
+        "column": "heilongjiangcapitalcity",
+        "cell": {
+          "zh": "福州",
+          "ru": [
+            "Фучжоу"
+          ],
+          "gloss": "Фучжоу — административный центр провинции Фуцзянь."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "福州市 — 工业和信息化部",
+            "url": "https://www.miit.gov.cn/ztzl/lszt/gjgyyxzdlxcs/csmd/art/2020/art_73250f21d8e54d7ab5f209682360afdc.html",
+            "quote": "福州别称榕城，是福建省省会城市，国家历史文化名城。",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 1 / options o4 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-open+accepted-dossier-quote",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-xian",
+        "column": "embroideryschoolcity",
+        "cell": {
+          "zh": "西安",
+          "ru": [
+            "Сиань"
+          ],
+          "gloss": "Сиань — древний Чанъань, столица нескольких китайских династий."
+        },
+        "sourcesToAppend": [
+          {
+            "url": "https://cz.china-embassy.gov.cn/zxdt/202201/t20220120_10630611.htm",
+            "title": "陕西省及西安市文化旅游介绍 — 中国驻捷克共和国大使馆",
+            "quote": "西安，陕西省省会，古称长安",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / options o1 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: reused-accepted-dossier-source-not-freshly-fetched"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-suzhou",
+        "column": "embroideryschoolcity",
+        "cell": {
+          "zh": "苏州",
+          "ru": [
+            "Сучжоу"
+          ],
+          "gloss": "Сучжоу — школа сусю знаменита двусторонними вышитыми картинами."
+        },
+        "sourcesToAppend": [
+          {
+            "url": "https://www.ihchina.cn/project_details/13978.html",
+            "title": "苏绣 — 中国非物质文化遗产网",
+            "quote": "苏绣为苏州刺绣之简称，它以产生之地命名",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / options o2 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: reused-accepted-dossier-source-not-freshly-fetched"
+          },
+          {
+            "url": "https://www.chinasilkmuseum.com/jz/info_15.aspx?itemid=5378",
+            "title": "中国的四大名绣是什么？ — 中国丝绸博物馆",
+            "quote": "双面绣“猫”是苏绣的代表性作品之一。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / options o2 / additionalSources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-search-result-text"
+          },
+          {
+            "url": "https://www.ihchina.cn/project_details/13978.html",
+            "title": "苏绣 — 中国非物质文化遗产网",
+            "quote": "苏绣为苏州刺绣之简称，它以产生之地命名",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / keySources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: reused-accepted-dossier-source-not-freshly-fetched"
+          },
+          {
+            "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201812/84bb1cd237544d82968713e9464bd3dd.shtml",
+            "title": "苏州的文化艺术——苏绣 — 苏州市地方志办公室",
+            "quote": "与湖南的湘绣、广东的粤绣、四川的蜀绣齐名，被誉为中国四大名绣。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / keySources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: reused-accepted-dossier-source-not-freshly-fetched"
+          },
+          {
+            "url": "https://www.chinasilkmuseum.com/jz/info_15.aspx?itemid=5378",
+            "title": "中国的四大名绣是什么？ — 中国丝绸博物馆",
+            "quote": "双面绣“猫”是苏绣的代表性作品之一。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / keySources[2]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-search-result-text"
+          },
+          {
+            "url": "https://www.hzarchives.org.cn/info/6940",
+            "title": "杭州刺绣 — 杭州市档案馆",
+            "quote": "杭绣在刺绣技艺上，吸收并融合苏、湘、蜀、粤四大名绣之长",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / keySources[3]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-search-result-text"
+          },
+          {
+            "url": "https://cz.china-embassy.gov.cn/zxdt/202201/t20220120_10630611.htm",
+            "title": "陕西省及西安市文化旅游介绍 — 中国驻捷克共和国大使馆",
+            "quote": "西安，陕西省省会，古称长安",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / keySources[4]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: reused-accepted-dossier-source-not-freshly-fetched"
+          },
+          {
+            "url": "https://www.news.cn/local/2023-06/17/c_1129702720.htm",
+            "title": "文脉不断四时春——解码春城昆明的文化自信样本 — 新华网",
+            "quote": "明代才子杨慎将昆明四季如春的特质写进诗文",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / keySources[5]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: reused-accepted-dossier-source-not-freshly-fetched"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-kunming",
+        "column": "embroideryschoolcity",
+        "cell": {
+          "zh": "昆明",
+          "ru": [
+            "Куньмин"
+          ],
+          "gloss": "Куньмин — центр Юньнани с мягким климатом; его прозвище — «город весны»."
+        },
+        "sourcesToAppend": [
+          {
+            "url": "https://www.news.cn/local/2023-06/17/c_1129702720.htm",
+            "title": "文脉不断四时春——解码春城昆明的文化自信样本 — 新华网",
+            "quote": "明代才子杨慎将昆明四季如春的特质写进诗文",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / options o3 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: reused-accepted-dossier-source-not-freshly-fetched"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-hangzhou",
+        "column": "embroideryschoolcity",
+        "cell": {
+          "zh": "杭州",
+          "ru": [
+            "Ханчжоу"
+          ],
+          "gloss": "Ханчжоу — здесь есть собственная вышивка хансю, не входящая в традиционную четвёрку."
+        },
+        "sourcesToAppend": [
+          {
+            "url": "https://www.hzarchives.org.cn/info/6940",
+            "title": "杭州刺绣 — 杭州市档案馆",
+            "quote": "杭绣在刺绣技艺上，吸收并融合苏、湘、蜀、粤四大名绣之长",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / options o4 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-search-result-text"
+          },
+          {
+            "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201812/84bb1cd237544d82968713e9464bd3dd.shtml",
+            "title": "苏州的文化艺术——苏绣 — 苏州市地方志办公室",
+            "quote": "与湖南的湘绣、广东的粤绣、四川的蜀绣齐名，被誉为中国四大名绣。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 8 / options o4 / additionalSources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: reused-accepted-dossier-source-not-freshly-fetched"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-hangzhou",
+        "column": "beijinghistoricname",
+        "cell": {
+          "zh": "临安",
+          "ru": [
+            "Линьань"
+          ],
+          "gloss": "Линьань — название Ханчжоу, столицы Южной Сун."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "浙江文化研究工程与你同行——文化寻根·约会浙江考古文明⑧ — 浙江省社会科学界联合会",
+            "url": "https://www.zjskw.gov.cn/art/2024/8/29/art_1229515903_60324.html",
+            "quote": "作为彼时政治、经济、文化、科技中心的都城临安（浙江杭州），是南宋繁华与开放的代表。",
+            "authority": "academic",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 10 / options o1 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+            "originalAuthority": "academic-official",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-beijing",
+        "column": "beijinghistoricname",
+        "cell": {
+          "zh": "燕京",
+          "ru": [
+            "Яньцзин"
+          ],
+          "gloss": "Яньцзин — название восходит к древнему царству Янь."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "北平 — 故宫博物院",
+            "url": "https://www.dpm.org.cn/lemmas/241431.html",
+            "quote": "即今北京。辽代称燕京，后称南京。金代亦称燕京，后称中都。",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 10 / options o2 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text; direct open timeout",
+            "originalAuthority": "official-museum",
+            "checkedAt": "2026-11-08"
+          },
+          {
+            "title": "The Names of Beijing — 北京市文化和旅游局 VisitBeijing",
+            "url": "https://english.visitbeijing.com.cn/article/47OMhkXlgaL",
+            "quote": "a reference to the ancient State of Yan that existed here during the Zhou Dynasty.",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 10 / options o2 / additionalSources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+            "originalAuthority": "official-tourism",
+            "checkedAt": "2026-11-08"
+          },
+          {
+            "title": "北平 — 故宫博物院",
+            "url": "https://www.dpm.org.cn/lemmas/241431.html",
+            "quote": "即今北京。辽代称燕京，后称南京。金代亦称燕京，后称中都。",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 10 / keySources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text; direct open timeout",
+            "originalAuthority": "official-museum",
+            "checkedAt": "2026-11-08"
+          },
+          {
+            "title": "The Names of Beijing — 北京市文化和旅游局 VisitBeijing",
+            "url": "https://english.visitbeijing.com.cn/article/47OMhkXlgaL",
+            "quote": "a reference to the ancient State of Yan that existed here during the Zhou Dynasty.",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 10 / keySources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+            "originalAuthority": "official-tourism",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-nanjing",
+        "column": "beijinghistoricname",
+        "cell": {
+          "zh": "金陵",
+          "ru": [
+            "Цзиньлин"
+          ],
+          "gloss": "Цзиньлин — старое название Нанкина."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "[我们的长三角]钟山帝王语，良渚耀古今 — 南京市中山陵园管理局",
+            "url": "https://zschina.nanjing.gov.cn/lyzx/202506/t20250611_5583963.html",
+            "quote": "南京，古称“金陵”，又称“建业”或“建康”",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 10 / options o3 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-xian",
+        "column": "beijinghistoricname",
+        "cell": {
+          "zh": "长安",
+          "ru": [
+            "Чанъань"
+          ],
+          "gloss": "Чанъань — древнее название Сианя."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "建置沿革 — 西安市人民政府",
+            "url": "https://www.xa.gov.cn/sq/csgk/lsyg/1.html",
+            "quote": "西安古称长安",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 10 / options o4 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "nature",
+        "table": "waters",
+        "row": "wat-ru-ob",
+        "column": "russianlongestrivername",
+        "cell": {
+          "zh": "鄂毕河",
+          "ru": [
+            "Обь"
+          ],
+          "gloss": "Обь — образуется при слиянии Бии и Катуни, берущих начало на Алтае."
+        },
+        "sourcesToAppend": [
+          {
+            "url": "https://bigenc.ru/c/ob-393332",
+            "title": "БРЭ — Обь",
+            "quote": "Образуется слиянием рек Бия и Катунь, берущих начало в горах Алтая.",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / options o1 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+          }
+        ]
+      },
+      {
+        "dossier": "nature",
+        "table": "waters",
+        "row": "wat-ru-volga",
+        "column": "russianlongestrivername",
+        "cell": {
+          "zh": "伏尔加河",
+          "ru": [
+            "Волга"
+          ],
+          "gloss": "Волга — впадая в Каспийское море, образует обширную дельту."
+        },
+        "sourcesToAppend": [
+          {
+            "url": "https://bigenc.ru/c/volga-9bf6d0",
+            "title": "БРЭ — Волга",
+            "quote": "Впадая в Каспийское море, Волга образует обширную дельту",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / options o2 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+          }
+        ]
+      },
+      {
+        "dossier": "nature",
+        "table": "waters",
+        "row": "wat-ru-lena",
+        "column": "russianlongestrivername",
+        "cell": {
+          "zh": "勒拿河",
+          "ru": [
+            "река Лена"
+          ],
+          "gloss": "Лена — её дельта, крупнейшая в России, занимает более 30 тысяч км²."
+        },
+        "sourcesToAppend": [
+          {
+            "url": "https://bigenc.ru/c/lena-reka-dfef5c",
+            "title": "БРЭ — Лена",
+            "quote": "При впадении в море Лаптевых Лена образует самую большую в России дельту (площадь более 30 тыс. км²)",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / options o3 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+          },
+          {
+            "url": "https://rosstat.gov.ru/storage/mediabank/Rossia_2025.pdf",
+            "title": "Росстат — Россия 2025, Самые длинные реки",
+            "quote": "Лена | 4,4",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "note": "В тыс. км: Лена 4,4, Обь 3,7, Волга 3,5, Енисей 3,5; отдельные реки, не суммарные системы.",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / keySources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+          },
+          {
+            "url": "https://bigenc.ru/c/lena-reka-dfef5c",
+            "title": "БРЭ — Лена",
+            "quote": "При впадении в море Лаптевых Лена образует самую большую в России дельту (площадь более 30 тыс. км²)",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / keySources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+          },
+          {
+            "url": "https://bigenc.ru/c/volga-9bf6d0",
+            "title": "БРЭ — Волга",
+            "quote": "Впадая в Каспийское море, Волга образует обширную дельту",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / keySources[2]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+          },
+          {
+            "url": "https://bigenc.ru/c/ob-393332",
+            "title": "БРЭ — Обь",
+            "quote": "Образуется слиянием рек Бия и Катунь, берущих начало в горах Алтая.",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / keySources[3]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+          },
+          {
+            "url": "https://www.iwp.ru/upload/iblock/7c2/7c25d68e575b12087541fe5e496c684c.pdf",
+            "title": "Институт водных проблем РАН — Общие сведения о реке Енисей",
+            "quote": "Енисей образуется слиянием Большого (Бей-Кем) и Малого (Ха-Кем) Енисея у г. Кызыл в 3487 км от устья.",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / keySources[4]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+          }
+        ]
+      },
+      {
+        "dossier": "nature",
+        "table": "waters",
+        "row": "wat-ru-yenisei",
+        "column": "russianlongestrivername",
+        "cell": {
+          "zh": "叶尼塞河",
+          "ru": [
+            "Енисей"
+          ],
+          "gloss": "Енисей — начинается у Кызыла при слиянии Большого и Малого Енисея."
+        },
+        "sourcesToAppend": [
+          {
+            "url": "https://www.iwp.ru/upload/iblock/7c2/7c25d68e575b12087541fe5e496c684c.pdf",
+            "title": "Институт водных проблем РАН — Общие сведения о реке Енисей",
+            "quote": "Енисей образуется слиянием Большого (Бей-Кем) и Малого (Ха-Кем) Енисея у г. Кызыл в 3487 км от устья.",
+            "authority": "academic",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 12 / options preview-b8-yenisei / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: accepted dossier source"
+          }
+        ]
+      },
+      {
+        "dossier": "nature",
+        "table": "seas",
+        "row": "sea-putuoshan",
+        "column": "xiamenislandname",
+        "cell": {
+          "zh": "普陀山",
+          "ru": [
+            "Путошань"
+          ],
+          "gloss": "Путошань — остров архипелага Чжоушань в провинции Чжэцзян."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "舟山市普陀山风景区 — 文化和旅游部大众旅游服务栏目",
+            "url": "https://lyfw.mct.gov.cn/site/special/province?pkey=zhejiang",
+            "quote": "普陀山是浙江东海舟山群岛中的一个小岛",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / options o1 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "nature",
+        "table": "seas",
+        "row": "sea-gulangyu",
+        "column": "xiamenislandname",
+        "cell": {
+          "zh": "鼓浪屿",
+          "ru": [
+            "Гуланъюй"
+          ],
+          "gloss": "Гуланъюй — историческое международное поселение, в списке ЮНЕСКО с 2017 года."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "Kulangsu, a Historic International Settlement — UNESCO World Heritage Centre",
+            "url": "https://whc.unesco.org/en/list/1541/",
+            "quote": "Date of Inscription: 2017",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / options o2 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-full-text",
+            "additionalSupportedFact": "Island developed as an international settlement with a mix of architectural styles.",
+            "originalAuthority": "official-unesco",
+            "checkedAt": "2026-11-08"
+          },
+          {
+            "title": "地理环境 — 厦门市委党史和地方志研究室，来源厦门市人民政府",
+            "url": "https://xm.fjdsfzw.org.cn/2024-09-05/content_151790.html",
+            "quote": "厦门市境域由福建省东南部沿厦门湾的大陆地区和厦门岛、鼓浪屿等岛屿以及厦门湾组成。",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / keySources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+            "additionalSupportedFact": "2022年，全市土地面积1699.01平方千米。",
+            "checkedAt": "2026-11-08"
+          },
+          {
+            "title": "Kulangsu, a Historic International Settlement — UNESCO World Heritage Centre",
+            "url": "https://whc.unesco.org/en/list/1541/",
+            "quote": "Date of Inscription: 2017",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / keySources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-full-text",
+            "additionalSupportedFact": "Island developed as an international settlement with a mix of architectural styles.",
+            "originalAuthority": "official-unesco",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "nature",
+        "table": "seas",
+        "row": "sea-sun-island",
+        "column": "xiamenislandname",
+        "cell": {
+          "zh": "太阳岛",
+          "ru": [
+            "Остров Солнца"
+          ],
+          "gloss": "Остров Солнца — расположен в Харбине."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "哈尔滨市太阳岛风景区 — 黑龙江省人民政府",
+            "url": "https://www.hlj.gov.cn/hlj/c108519/202503/c00_31816708.shtml",
+            "quote": "哈尔滨市太阳岛风景区",
+            "checkedAt": "2026-10-23",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / options o3 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-open; exact accepted source URL retained"
+          }
+        ]
+      },
+      {
+        "dossier": "nature",
+        "table": "seas",
+        "row": "sea-chongmingdao",
+        "column": "xiamenislandname",
+        "cell": {
+          "zh": "崇明岛",
+          "ru": [
+            "Чунминдао"
+          ],
+          "gloss": "Чунминдао — остров в устье Янцзы."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "崇明区 — 上海市人民政府",
+            "url": "https://www.shanghai.gov.cn/chongming/index.html",
+            "quote": "崇明岛于一千三百多年前在长江口形成",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 16 / options preview-b8-chongming-island / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-text",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-nyingchi",
+        "column": "tibetreligiouscity",
+        "cell": {
+          "zh": "林芝",
+          "ru": [
+            "Ньингчи"
+          ],
+          "gloss": "Ньингчи — знаменит весенним цветением персиков."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "林芝各地桃花啥时候盛开？去哪儿赏花？攻略来啦！ — Управление культуры и туризма Ньингчи, официальный сайт города",
+            "url": "https://www.linzhi.gov.cn/linzhi/zmlz/202603/b99cb9b4478d4ec69da29f125361937e.shtml",
+            "quote": "林芝一年一度的桃花季来啦；桃林沿着尼洋河谷铺展开来",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / options o1 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh web indexed article text, 2026-11-08",
+            "supports": "Ежегодное весеннее цветение персиков в Ньингчи.",
+            "originalAuthority": "official-primary-tourism-bureau",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-lasa",
+        "column": "tibetreligiouscity",
+        "cell": {
+          "zh": "拉萨",
+          "ru": [
+            "Лхаса"
+          ],
+          "gloss": "Лхаса — в её старом городе находится буддийский храм Джоканг (大昭寺)."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "Historic Ensemble of the Potala Palace, Lhasa — UNESCO World Heritage Centre",
+            "url": "https://whc.unesco.org/en/list/707",
+            "quote": "Covering 2.5ha in the centre of the old town of Lhasa",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / options o2 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-indexed-full-text",
+            "checkedAt": "2026-11-08",
+            "supportedFact": "The described building is the Jokhang Temple Monastery.",
+            "supports": "Джоканг находится в старом городе Лхасы; буддийский религиозный комплекс.",
+            "originalAuthority": "official-unesco"
+          },
+          {
+            "title": "Чжан Юнцзян (张永江), «Об эволюции административной системы Тибета при Цин» — Институт истории Цин, Китайский народный университет",
+            "url": "https://iqh.ruc.edu.cn/old/qdzzsyj/gjzz/9162d9a66ff64279bdd40b41d36bbed6.htm",
+            "quote": "由于政教合一的历史传统，拉萨既是全藏的宗教中心，也是政治中心",
+            "authority": "academic",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / keySources[0]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: exact quote verified in previous read-only screening; reused for this focused revision",
+            "supports": "Традиционная роль Лхасы как религиозного центра всего Тибета; 全藏 = весь Тибет.",
+            "originalAuthority": "academic-primary-author",
+            "checkedAt": "2026-11-08"
+          },
+          {
+            "title": "Lhasa: The Potala Palace and the Jokhang Temple Monastery — ICOMOS evaluation2000, UNESCO",
+            "url": "https://whc.unesco.org/document/1076",
+            "quote": "their role as the political, economic, cultural, and religious centre of Tibet",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / keySources[1]; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh-web-open+find",
+            "checkedAt": "2026-11-08",
+            "pdfPageZeroIndexed": 172,
+            "printedPage": 165,
+            "supports": "Роль центра Тибета — не просто наличие монастыря или роль центра отдельной тибетской области.",
+            "originalAuthority": "official-icomos-unesco"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-qamdo",
+        "column": "tibetreligiouscity",
+        "cell": {
+          "zh": "昌都",
+          "ru": [
+            "Чамдо"
+          ],
+          "gloss": "Чамдо — здесь находится крупнейший в Кхаме монастырь школы гелуг."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "强巴林寺 — Управление развития туризма Чамдо",
+            "url": "https://lyfz.changdu.gov.cn/cdslyj4/c101493/202005/31f676065d5141cb92e6d87d292f2bfb.shtml",
+            "quote": "强巴林寺是康区建寺最早、规模最大的格鲁派寺院",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / options o3 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh web indexed full article text, 2026-11-08",
+            "supports": "Крупнейший гелугский монастырь Кхама расположен в Чамдо; это значимый региональный религиозный центр, поэтому широкое слово «центр» требует осторожности.",
+            "originalAuthority": "official-primary-tourism-bureau",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-nagqu",
+        "column": "tibetreligiouscity",
+        "cell": {
+          "zh": "那曲",
+          "ru": [
+            "Нагчу"
+          ],
+          "gloss": "Нагчу — здесь проводят праздник конных состязаний."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "关于2026年那曲市恰青赛马节场地规划调整及招商安排的公告 — Оргкомитет праздника конных состязаний, сайт горкома Нагчу",
+            "url": "https://nq.xzdw.gov.cn/fbt/gsgg_545/202607/t20260721_685426.html",
+            "quote": "为进一步办好这一深受群众喜爱的草原盛会，今年我们结合城市发展和生态保护实际，对赛马节场地规划进行了全面优化调整",
+            "authority": "official",
+            "verificationMethod": "reuse-local: 2026-11-09-regional-batch-8-accepted-proposals.json / reviewNumber 19 / options o4 / source; exact accepted source/quote read locally 2026-11-09, not freshly fetched. Previous method: fresh web indexed full organizer announcement, 2026-11-08",
+            "supports": "В Нагчу проводится крупный местный праздник конных состязаний.",
+            "originalAuthority": "official-primary-event-organizer",
+            "checkedAt": "2026-11-08"
+          }
+        ]
+      }
+    ],
+    "identityRefs": [],
+    "questions": [
+      {
+        "reviewNumber": 1,
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-haerbin",
+        "ask": "heilongjiangcapitalcity",
+        "optionRows": {
+          "o1": "city-lanzhou",
+          "o2": "city-haerbin",
+          "o3": "city-xiamen",
+          "o4": "city-fuzhou"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 8,
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-suzhou",
+        "ask": "embroideryschoolcity",
+        "optionRows": {
+          "o1": "city-xian",
+          "o2": "city-suzhou",
+          "o3": "city-kunming",
+          "o4": "city-hangzhou"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 10,
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-beijing",
+        "ask": "beijinghistoricname",
+        "optionRows": {
+          "o1": "city-hangzhou",
+          "o2": "city-beijing",
+          "o3": "city-nanjing",
+          "o4": "city-xian"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 12,
+        "dossier": "nature",
+        "table": "waters",
+        "row": "wat-ru-lena",
+        "ask": "russianlongestrivername",
+        "optionRows": {
+          "o1": "wat-ru-ob",
+          "o2": "wat-ru-volga",
+          "o3": "wat-ru-lena",
+          "preview-b8-yenisei": "preview-b8-yenisei"
+        },
+        "exclude": [
+          "wat-ru-yenisei"
+        ]
+      },
+      {
+        "reviewNumber": 16,
+        "dossier": "nature",
+        "table": "seas",
+        "row": "sea-gulangyu",
+        "ask": "xiamenislandname",
+        "optionRows": {
+          "o1": "sea-putuoshan",
+          "o2": "sea-gulangyu",
+          "o3": "sea-sun-island",
+          "preview-b8-chongming-island": "preview-b8-chongming-island"
+        },
+        "exclude": [
+          "sea-chongmingdao"
+        ]
+      },
+      {
+        "reviewNumber": 19,
+        "dossier": "provinces",
+        "table": "cities",
+        "row": "city-lasa",
+        "ask": "tibetreligiouscity",
+        "optionRows": {
+          "o1": "city-nyingchi",
+          "o2": "city-lasa",
+          "o3": "city-qamdo",
+          "o4": "city-nagqu"
+        },
+        "exclude": []
+      }
+    ],
+    "captionCorrections": [],
+    "contentProblems": [
+      {
+        "reviewNumber": 8,
+        "field": "originalRecord.explanation.ru",
+        "issue": "Старое пояснение называет 苏绣 одной из десяти знаменитых вышивок и самой древней/известной вышивкой Цзянсу; принятый критерий и каноническое досье подтверждают четыре школы, а суперлатив принятой доказательной базой не подтверждён. Принятые условие, ключ, zh и все подписи не менять.",
+        "suggestedCorrection": "Сучжоуская вышивка (苏绣) сложилась в Сучжоу (苏州), провинция Цзянсу. Это одна из четырёх знаменитых школ китайской вышивки. Среди её известных приёмов — двусторонняя вышивка: изображение можно видеть на обеих сторонах ткани.",
+        "sources": [
+          "https://www.ihchina.cn/project_details/13978.html",
+          "https://dfzb.suzhou.gov.cn/dfzb/szdq/201812/84bb1cd237544d82968713e9464bd3dd.shtml",
+          "https://www.chinasilkmuseum.com/jz/info_15.aspx?itemid=5378"
+        ],
+        "affectsAcceptedQuestion": false
+      },
+      {
+        "reviewNumber": 16,
+        "field": "questionZh",
+        "issue": "В manifest сохранился исходный китайский текст с неподтверждённой/устаревшей площадью 1516 平方公里, хотя принятая полная русская редакция удаляет площадь и не сводит город к двум островам. Новое китайское условие автором не согласовывалось. При публикации применить действующую политику для questionZh/согласованных русских правок; не возвращать 1516 в русское условие.",
+        "currentQuestionZh": "厦门坐落在福建省的东南海岸，面积 1516 平方公里，包括厦门岛和_______ 。",
+        "affectsAcceptedQuestion": false
+      }
+    ],
+    "manualHintCandidates": [
+      {
+        "reviewNumber": 1,
+        "kind": "accepted-semantic-neighbor",
+        "embeds": "2020-21-mun-mosobl-47",
+        "relatedQuestions": [
+          "provinces-q52"
+        ],
+        "reason": "Харбин—«город льда»: иной факт. В пояснении есть его административная роль; это возможная подсказка, не дубль вопроса."
+      },
+      {
+        "reviewNumber": 1,
+        "kind": "accepted-semantic-neighbor",
+        "embeds": "2020-21-mun-mosobl-47",
+        "relatedQuestions": [
+          "landmarks-q101"
+        ],
+        "reason": "Остров Солнца—Харбин: иной факт."
+      },
+      {
+        "reviewNumber": 8,
+        "kind": "accepted-semantic-neighbor",
+        "embeds": "2023-24-shk-mosobl-10",
+        "relatedQuestions": [
+          "crafts-q129"
+        ],
+        "reason": "Та же школа 苏绣, но спрашивается техника 双面绣; не прямой/обратный дубль города происхождения."
+      },
+      {
+        "reviewNumber": 8,
+        "kind": "accepted-semantic-neighbor",
+        "embeds": "2023-24-shk-mosobl-10",
+        "relatedQuestions": [
+          "crafts-q14"
+        ],
+        "reason": "Тот же тематический набор четырёх вышивок; вопрос относится к другой школе и её центру Чэнду."
+      },
+      {
+        "reviewNumber": 10,
+        "kind": "accepted-semantic-neighbor",
+        "embeds": "2024-25-mun-kursk-2",
+        "relatedQuestions": [
+          "state-q14"
+        ],
+        "reason": "Сосед спрашивает Цзиньлин—Нанкин; Яньцзин есть среди неверных вариантов с подписью Пекин. Другая связь, не дубль."
+      },
+      {
+        "reviewNumber": 10,
+        "kind": "accepted-semantic-neighbor",
+        "embeds": "2024-25-mun-kursk-2",
+        "relatedQuestions": [
+          "provinces-q98"
+        ],
+        "reason": "Статус Пекина — другой аспект."
+      },
+      {
+        "reviewNumber": 12,
+        "kind": "accepted-semantic-neighbor",
+        "embeds": "2022-23-mun-lenobl-59",
+        "relatedQuestions": [
+          "2025-26-shk-37-a"
+        ],
+        "reason": "Связанный самостоятельный факт о Лене: устье, не дубль длины."
+      },
+      {
+        "reviewNumber": 12,
+        "kind": "accepted-semantic-neighbor",
+        "embeds": "2022-23-mun-lenobl-59",
+        "relatedQuestions": [
+          "2025-26-mun-mosobl-9"
+        ],
+        "reason": "Связанный самостоятельный факт о Лене: Якутск; не дубль длины."
+      },
+      {
+        "reviewNumber": 19,
+        "kind": "accepted-semantic-neighbor",
+        "embeds": "2022-23-shk-mosobl-20",
+        "relatedQuestions": [
+          "landmarks-q94"
+        ],
+        "reason": "Потала—Лхаса: отдельный конкретный факт, не дубль."
+      },
+      {
+        "reviewNumber": 19,
+        "kind": "accepted-semantic-neighbor",
+        "embeds": "2022-23-shk-mosobl-20",
+        "relatedQuestions": [
+          "2021-22-mun-qd67aaa"
+        ],
+        "reason": "Лхаса—центр Тибетского АР: отдельный факт."
+      },
+      {
+        "reviewNumber": 8,
+        "kind": "cross-dossier-related-row",
+        "embeds": "2023-24-shk-mosobl-10",
+        "canonical": "crafts/crafts/cr-suxiu",
+        "relatedQuestions": [
+          "crafts-q129"
+        ],
+        "reason": "Город Сучжоу связан с cr-suxiu через уже существующий center.ref; принятая правильная подпись прямо сообщает двустороннюю технику. Сохранить подпись, проверить общую группу фактов/утечки с crafts-q129."
+      },
+      {
+        "reviewNumber": 10,
+        "kind": "cross-dossier-contextual-historic-names",
+        "embeds": "2024-25-mun-kursk-2",
+        "canonical": "state/capitals/cap-beijing",
+        "relatedQuestions": [
+          "state-q14"
+        ],
+        "reason": "Те же четыре исторических названия присутствуют в state/capitals.oldname; name.ref строк state ведёт на канонические города provinces/cities. Новых сущностей не создано. В state-q14 燕京 уже неверный вариант с подписью Пекин; нужны общие группы фактов по результату проверки."
+      },
+      {
+        "reviewNumber": 16,
+        "kind": "canonical-island-aliases",
+        "embeds": "2020-21-mun-mosobl-55",
+        "canonical": [
+          "nature/mountains/mtn-putuoshan",
+          "landmarks/sites/lm-cn-sun-island",
+          "nature/seas/sea-chongmingdao"
+        ],
+        "reason": "Новые sea-putuoshan и sea-sun-island имеют name.ref на существующие сущности с тем же zh. Новый sea-gulangyu связан по смыслу с provinces/cities/city-xiamen.known (старую ячейку не менял). Подпись Острова Солнца называет ответ landmarks-q101."
+      },
+      {
+        "reviewNumber": 19,
+        "kind": "tibetan-city-context",
+        "embeds": "2022-23-shk-mosobl-20",
+        "canonical": "provinces/cities/city-lasa",
+        "reason": "Лхаса остаётся той же канонической строкой, что административный центр и Потала. Принятая подпись о Джоканге может пересечься с храмовыми вопросами. Чамдо имеет значимую религиозную роль в Кхаме; точное принятое слово «всего» обязательно."
+      },
+      {
+        "reviewNumber": null,
+        "kind": "pool-expansion-risk",
+        "reason": "4 новые неядерные строки provinces/cities (Ланьчжоу + 3 тибетских города) и 3 новые неядерные строки nature/seas могут расширить старые вопросы, спрашивающие name/country/region/kind. Старые ячейки, ru, подписи, questions и exclude здесь не менялись. Root необходимо сохранить все прежние option pools, добавив exclude новых строк в существующие вопросы по снимку до применения. Каждая новая контекстная колонка содержит ровно 4 ячейки; новые вопросы сейчас имеют exclude=[] и ровно 4 варианта."
+      }
+    ],
+    "validation": {
+      "method": "in-memory candidate only; no repository mutation, engine builds, tests, commits or pushes",
+      "validateDossier": {
+        "provinces": [],
+        "nature": []
+      },
+      "validateLinks": [],
+      "questions": [
+        {
+          "reviewNumber": 1,
+          "optionCount": 4,
+          "originalOptionIdsPreserved": [
+            "o1",
+            "o2",
+            "o3",
+            "o4"
+          ],
+          "answerOptionId": "o2",
+          "exactZhGlossRu": true,
+          "embedRecordErrors": []
+        },
+        {
+          "reviewNumber": 8,
+          "optionCount": 4,
+          "originalOptionIdsPreserved": [
+            "o1",
+            "o2",
+            "o3",
+            "o4"
+          ],
+          "answerOptionId": "o2",
+          "exactZhGlossRu": true,
+          "embedRecordErrors": []
+        },
+        {
+          "reviewNumber": 10,
+          "optionCount": 4,
+          "originalOptionIdsPreserved": [
+            "o1",
+            "o2",
+            "o3",
+            "o4"
+          ],
+          "answerOptionId": "o2",
+          "exactZhGlossRu": true,
+          "embedRecordErrors": []
+        },
+        {
+          "reviewNumber": 12,
+          "optionCount": 4,
+          "originalOptionIdsPreserved": [
+            "o1",
+            "o2",
+            "o3",
+            "preview-b8-yenisei"
+          ],
+          "answerOptionId": "o3",
+          "exactZhGlossRu": true,
+          "embedRecordErrors": []
+        },
+        {
+          "reviewNumber": 16,
+          "optionCount": 4,
+          "originalOptionIdsPreserved": [
+            "o1",
+            "o2",
+            "o3",
+            "preview-b8-chongming-island"
+          ],
+          "answerOptionId": "o2",
+          "exactZhGlossRu": true,
+          "embedRecordErrors": []
+        },
+        {
+          "reviewNumber": 19,
+          "optionCount": 4,
+          "originalOptionIdsPreserved": [
+            "o1",
+            "o2",
+            "o3",
+            "o4"
+          ],
+          "answerOptionId": "o2",
+          "exactZhGlossRu": true,
+          "embedRecordErrors": []
+        }
+      ],
+      "oldCellsAndRuUnchanged": true,
+      "sourceAccess": "All source packages reused locally from accepted manifest, author-feedback and existing approved dossier rows; no fresh web verification claimed.",
+      "finalQuestionIdsAssigned": false
+    }
+  },
+  "culture": {
+    "columnAdditions": [],
+    "tableAdditions": [
+      {
+        "dossier": "people",
+        "table": "martialartists",
+        "definition": {
+          "columns": {
+            "name": "zh",
+            "wingchunmaster": "zh",
+            "actorname": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "sets",
+        "table": "instrumentpairs",
+        "definition": {
+          "columns": {
+            "name": "zh",
+            "traditionalpair": "zh",
+            "firstinstrument": "zh",
+            "secondinstrument": "zh",
+            "about": "ru"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "crafts",
+        "table": "bodycustoms",
+        "definition": {
+          "columns": {
+            "name": "zh",
+            "statuslength": "zh"
+          },
+          "sides": [],
+          "rows": []
+        }
+      }
+    ],
+    "rowAdditions": [
+      {
+        "dossier": "people",
+        "table": "martialartists",
+        "row": {
+          "id": "martial-ipman",
+          "core": false,
+          "name": {
+            "zh": "叶问",
+            "ru": [
+              "Ип Ман",
+              "Е Вэнь"
+            ],
+            "gloss": "Ип Ман — преподавал в Гонконге; среди его учеников был Брюс Ли."
+          },
+          "wingchunmaster": {
+            "zh": "叶问",
+            "ru": [
+              "Ип Ман",
+              "Е Вэнь"
+            ],
+            "gloss": "Ип Ман — преподавал в Гонконге; среди его учеников был Брюс Ли."
+          },
+          "sources": [
+            {
+              "url": "https://fy.szu.edu.cn/fyxm/xmlb/wsl/ycq_ywzz_.htm",
+              "title": "咏春拳(叶问宗支) — 深圳大学体育非物质文化遗产",
+              "quote": "1950年，叶问于香港发扬咏春拳，其著名传人有梁相、骆耀、黄淳梁、徐尚田、招允、李振藩(李小龙)、梁挺等",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#5/options/o1; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "url": "https://www.gdwsw.gov.cn/rwcq/content/post_28210.html",
+              "title": "叶问——一代武术宗师 — 文史广东",
+              "quote": "1968年，叶问主持成立的香港咏春拳体育会",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#5/options/o1; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "martialartists",
+        "row": {
+          "id": "martial-huangfeihong",
+          "core": false,
+          "name": {
+            "zh": "黄飞鸿",
+            "ru": [
+              "Хуан Фэйхун"
+            ],
+            "gloss": "Хуан Фэйхун — знаменитый представитель южнокитайского стиля хунцюань."
+          },
+          "wingchunmaster": {
+            "zh": "黄飞鸿",
+            "ru": [
+              "Хуан Фэйхун"
+            ],
+            "gloss": "Хуан Фэйхун — знаменитый представитель южнокитайского стиля хунцюань."
+          },
+          "sources": [
+            {
+              "url": "https://www.nhmuseum.org/fei-yi/1417.html",
+              "title": "洪拳（南海洪拳） — 南海博物馆",
+              "quote": "南海历代有铁桥三(梁坤)、黄飞鸿、林世荣、颜殿雄等对洪拳历史影响深远的武术名人。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#5/options/o2; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "OMG党支部、信息仪器中心党支部、机关党支部联合开展“不忘初心，弘扬优良家风”主题党日活动 — 中国科学院南海海洋研究所",
+              "url": "https://scsio.cas.cn/nhdj/jcdj/202107/t20210712_6130609.html",
+              "quote": "黄飞鸿，是清末民初岭南武术界的远近闻名的洪拳大师",
+              "authority": "academic",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "martialartists",
+        "row": {
+          "id": "martial-huoyuanjia",
+          "core": false,
+          "name": {
+            "zh": "霍元甲",
+            "ru": [
+              "Хо Юаньцзя"
+            ],
+            "gloss": "Хо Юаньцзя — один из создателей шанхайского спортивного общества «Цзинъу»."
+          },
+          "wingchunmaster": {
+            "zh": "霍元甲",
+            "ru": [
+              "Хо Юаньцзя"
+            ],
+            "gloss": "Хо Юаньцзя — один из создателей шанхайского спортивного общества «Цзинъу»."
+          },
+          "sources": [
+            {
+              "url": "https://www.sport.gov.cn/n20001280/n20745751/n20767239/c21843662/content.html",
+              "title": "“精武”人聚申城 传承拓展精武文化内涵 — 国家体育总局",
+              "quote": "霍元甲、农劲荪、陈公哲等齐聚沪上，共谋创立精武体育会",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#5/options/o3; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "精武体育 — 深圳大学体育非物质文化遗产",
+              "url": "https://fy.szu.edu.cn/fyxm/xmdq/shs/jwty.htm",
+              "quote": "精武体育创始人霍元甲成为民族的骄傲。",
+              "authority": "academic",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "martialartists",
+        "row": {
+          "id": "martial-yangluchan",
+          "core": false,
+          "name": {
+            "zh": "杨露禅",
+            "ru": [
+              "Ян Лучань"
+            ],
+            "gloss": "Ян Лучань — основатель направления Ян в тайцзицюань."
+          },
+          "wingchunmaster": {
+            "zh": "杨露禅",
+            "ru": [
+              "Ян Лучань"
+            ],
+            "gloss": "Ян Лучань — основатель направления Ян в тайцзицюань."
+          },
+          "sources": [
+            {
+              "url": "https://www.sport.gov.cn/n14471/n14474/n14511/c699205/content.html",
+              "title": "河北太极拳简介 — 国家体育总局",
+              "quote": "河北人杨露禅，武禹襄、孙禄堂、吴全佑等人在陈氏太极拳基础上创建不同风格特点的杨氏、武氏、孙氏、吴氏太极流派。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#5/options/o4; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "杨氏太极拳历史沿革 — 深圳大学体育非物质文化遗产",
+              "url": "https://fy.szu.edu.cn/info/1856/1529.htm",
+              "quote": "杨氏太极拳世代传承，由第一代宗师杨露禅传承至今",
+              "authority": "academic",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "sets",
+        "table": "instrumentpairs",
+        "row": {
+          "id": "instrumentpair-japan",
+          "core": false,
+          "name": {
+            "zh": "三味线、尺八",
+            "ru": [
+              "Сямисэн и сякухати"
+            ],
+            "gloss": "Сямисэн и сякухати — японские щипковая лютня и продольная бамбуковая флейта."
+          },
+          "traditionalpair": {
+            "zh": "三味线、尺八",
+            "ru": [
+              "Сямисэн и сякухати"
+            ],
+            "gloss": "Сямисэн и сякухати — японские щипковая лютня и продольная бамбуковая флейта."
+          },
+          "sources": [
+            {
+              "url": "https://www.ishikawa-densankan.jp/en/collection/collection-238/",
+              "title": "Kanazawa Sangen — Ishikawa Prefectural Museum of Traditional Arts and Crafts",
+              "quote": "Also known as the Shamisen, it is an essential instrument for the traditional Japanese music",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#11/options/o1; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "url": "https://api.online.bunka.go.jp/heritages/detail/430687",
+              "title": "尺八 — 文化庁文化遺産オンライン",
+              "quote": "尺八は、雅楽の左方・唐楽（とうがく）で用いられる縦笛",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#11/options/o1; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            }
+          ],
+          "firstinstrument": {
+            "zh": "三味线",
+            "ru": [
+              "Сямисэн"
+            ]
+          },
+          "secondinstrument": {
+            "zh": "尺八",
+            "ru": [
+              "Сякухати"
+            ]
+          },
+          "about": "Учебная пара двух реальных традиционных инструментов для этого вопроса; она не является единственным или исчерпывающим национальным составом инструментов."
+        }
+      },
+      {
+        "dossier": "sets",
+        "table": "instrumentpairs",
+        "row": {
+          "id": "instrumentpair-korea",
+          "core": false,
+          "name": {
+            "zh": "伽倻琴、玄琴",
+            "ru": [
+              "Каягым и комунго"
+            ],
+            "gloss": "Каягым и комунго — корейские щипковые цитры; у комунго шесть струн."
+          },
+          "traditionalpair": {
+            "zh": "伽倻琴、玄琴",
+            "ru": [
+              "Каягым и комунго"
+            ],
+            "gloss": "Каягым и комунго — корейские щипковые цитры; у комунго шесть струн."
+          },
+          "sources": [
+            {
+              "url": "https://nfm.go.kr/site/home/pdfview/folk202506.pdf",
+              "title": "Korean Folk Performance for Visitors — National Folk Museum of Korea",
+              "quote": "Korean instruments such as Geomungo (6-stringed zither), Gayageum (12-stringed zither)",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#11/options/o2; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "Traditional Culture — Seoul Metropolitan Government",
+              "url": "https://english.seoul.go.kr/service/amusement/traditional-culture/",
+              "quote": "Representative Korean string instruments include gayageum (twelve-stringed zither), geomungo (six-stringed zither)",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ],
+          "firstinstrument": {
+            "zh": "伽倻琴",
+            "ru": [
+              "Каягым"
+            ]
+          },
+          "secondinstrument": {
+            "zh": "玄琴",
+            "ru": [
+              "Комунго"
+            ]
+          },
+          "about": "Учебная пара двух реальных традиционных инструментов для этого вопроса; она не является единственным или исчерпывающим национальным составом инструментов."
+        }
+      },
+      {
+        "dossier": "sets",
+        "table": "instrumentpairs",
+        "row": {
+          "id": "instrumentpair-india",
+          "core": false,
+          "name": {
+            "zh": "西塔琴、塔布拉鼓",
+            "ru": [
+              "Ситар и табла"
+            ],
+            "gloss": "Ситар и табла — в североиндийской музыке щипковому ситару отвечают парные барабаны."
+          },
+          "traditionalpair": {
+            "zh": "西塔琴、塔布拉鼓",
+            "ru": [
+              "Ситар и табла"
+            ],
+            "gloss": "Ситар и табла — в североиндийской музыке щипковому ситару отвечают парные барабаны."
+          },
+          "sources": [
+            {
+              "url": "https://music.du.ac.in/museum/museum.php",
+              "title": "Instruments Gallery — University of Delhi",
+              "quote": "instruments used in Indian Classical Music",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#11/options/o3; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text",
+              "additionalQuotes": [
+                "Sitar",
+                "Tabla"
+              ]
+            },
+            {
+              "url": "https://yold.unlp.edu.ar/museo_azzarini/texto_ingles_azzarini_sitar-6641",
+              "title": "Sitar — Museo Azzarini, Universidad Nacional de La Plata",
+              "quote": "Together with the tambura lute and the tabla membranophones it constitutes the typical musical group",
+              "authority": "academic",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#11/options/o3; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            }
+          ],
+          "firstinstrument": {
+            "zh": "西塔琴",
+            "ru": [
+              "Ситар"
+            ]
+          },
+          "secondinstrument": {
+            "zh": "塔布拉鼓",
+            "ru": [
+              "Табла"
+            ]
+          },
+          "about": "Учебная пара двух реальных традиционных инструментов для этого вопроса; она не является единственным или исчерпывающим национальным составом инструментов."
+        }
+      },
+      {
+        "dossier": "sets",
+        "table": "instrumentpairs",
+        "row": {
+          "id": "instrumentpair-china",
+          "core": false,
+          "name": {
+            "zh": "二胡、古琴",
+            "ru": [
+              "Эрху и гуцинь"
+            ],
+            "gloss": "Эрху и гуцинь — у смычкового эрху две струны, у щипкового гуциня — семь."
+          },
+          "traditionalpair": {
+            "zh": "二胡、古琴",
+            "ru": [
+              "Эрху и гуцинь"
+            ],
+            "gloss": "Эрху и гуцинь — у смычкового эрху две струны, у щипкового гуциня — семь."
+          },
+          "sources": [
+            {
+              "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/arts-edu/resources/mus-curri/listening-to-chinese-music-e.pdf",
+              "title": "Listening to Chinese Music — Education Bureau, Hong Kong",
+              "quote": "The erhu has two strings.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#11/options/o4; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "url": "https://ich.unesco.org/en/RL/guqin-and-its-music-00061",
+              "title": "Guqin and its music — UNESCO",
+              "quote": "The guqin has seven strings and thirteen marked pitch positions.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#11/options/o4; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            }
+          ],
+          "firstinstrument": {
+            "zh": "二胡",
+            "ru": [
+              "Эрху"
+            ]
+          },
+          "secondinstrument": {
+            "zh": "古琴",
+            "ru": [
+              "Гуцинь"
+            ]
+          },
+          "about": "Учебная пара двух реальных традиционных инструментов для этого вопроса; она не является единственным или исчерпывающим национальным составом инструментов."
+        }
+      },
+      {
+        "dossier": "crafts",
+        "table": "bodycustoms",
+        "row": {
+          "id": "bodycustom-beard",
+          "core": false,
+          "name": {
+            "zh": "胡须",
+            "ru": [
+              "Борода"
+            ],
+            "gloss": "Борода — характерная черта традиционных изображений Гуань Юя."
+          },
+          "statuslength": {
+            "zh": "胡须",
+            "ru": [
+              "Борода"
+            ],
+            "gloss": "Борода — характерная черта традиционных изображений Гуань Юя."
+          },
+          "sources": [
+            {
+              "url": "https://www.xxsbwg.cn/collection/detail/61",
+              "title": "关羽铜造像 — 新乡市博物馆",
+              "quote": "五绺胡须飘散胸前",
+              "additionalQuotes": [
+                "雅号“美髯公”"
+              ],
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#14/options/o1; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text; full open returned no readable lines"
+            },
+            {
+              "url": "https://www.dpm.org.cn/collection/sculpture/234222.html",
+              "title": "泥塑彩绘关羽像 — 故宫博物院",
+              "quote": "美须髯，武艺高强，能征善战",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#14/options/o1; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text; direct open timed out"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "crafts",
+        "table": "bodycustoms",
+        "row": {
+          "id": "bodycustom-nails",
+          "core": false,
+          "name": {
+            "zh": "指甲",
+            "ru": [
+              "Ногти"
+            ],
+            "gloss": "Ногти — длинные ногти берегли металлическими футлярами, часто из золота или серебра."
+          },
+          "statuslength": {
+            "zh": "指甲",
+            "ru": [
+              "Ногти"
+            ],
+            "gloss": "Ногти — длинные ногти берегли металлическими футлярами, часто из золота или серебра."
+          },
+          "sources": [
+            {
+              "url": "https://www.dpm.org.cn/collection/jewelry/234286.html",
+              "title": "金錾古钱纹指甲套 — 故宫博物院",
+              "quote": "指甲套称护指，又称义甲",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#14/options/o2; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text",
+              "additionalQuotes": [
+                "护指绝大多数以金、银制作"
+              ]
+            },
+            {
+              "url": "https://www.nps.gov/long/blogs/chinese-fingernail-protectors.htm",
+              "title": "Chinese Fingernail Protectors — U.S. National Park Service",
+              "quote": "Long fingernails were a mark of high status",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#14/options/o2; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text",
+              "additionalQuotes": [
+                "Qing noblewomen wore metal guards."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "crafts",
+        "table": "bodycustoms",
+        "row": {
+          "id": "bodycustom-feet",
+          "core": false,
+          "name": {
+            "zh": "脚",
+            "ru": [
+              "Ступни"
+            ],
+            "gloss": "Ступни — при бинтовании престижным считался, наоборот, очень маленький размер."
+          },
+          "statuslength": {
+            "zh": "脚",
+            "ru": [
+              "Ступни"
+            ],
+            "gloss": "Ступни — при бинтовании престижным считался, наоборот, очень маленький размер."
+          },
+          "sources": [
+            {
+              "url": "https://australian.museum/about/history/exhibitions/body-art/footbinding/",
+              "title": "Footbinding — Australian Museum",
+              "quote": "The feet were called lotus of gold if they were 3 inches",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#14/options/o3; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "Chinese Lotus Shoes — Museum of Anthropology, University of Missouri",
+              "url": "https://anthromuseum.missouri.edu/e-exhibits/chinese-lotus-shoes",
+              "quote": "small feet were culturally preferred before documentation of the custom",
+              "authority": "academic",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "crafts",
+        "table": "bodycustoms",
+        "row": {
+          "id": "bodycustom-hair",
+          "core": false,
+          "name": {
+            "zh": "头发",
+            "ru": [
+              "Волосы"
+            ],
+            "gloss": "Волосы — при Цин маньчжурскую косу предписали носить и ханьским мужчинам."
+          },
+          "statuslength": {
+            "zh": "头发",
+            "ru": [
+              "Волосы"
+            ],
+            "gloss": "Волосы — при Цин маньчжурскую косу предписали носить и ханьским мужчинам."
+          },
+          "sources": [
+            {
+              "url": "https://www.mocanyc.org/collections/stories/denisons-make-up-guide-for-amateur-and-professional/",
+              "title": "Denison’s Make-Up Guide — Museum of Chinese in America",
+              "quote": "This hairstyle was a symbol of cultural identity for the Manchu people of China, which was then later imposed upon the Han Chinese",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#14/options/o4; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "Chinese skullcap with hair queue — Powerhouse Collection",
+              "url": "https://collection.powerhouse.com.au/object/341390",
+              "quote": "formally requiring all Chinese men to shave their foreheads and plati their hair in a queue like the Manchus.",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "martialartists",
+        "row": {
+          "id": "martial-brucelee",
+          "core": false,
+          "name": {
+            "zh": "李小龙",
+            "ru": [
+              "Брюс Ли"
+            ],
+            "gloss": "Брюс Ли — создал систему джиткундо и снялся в фильме «Выход дракона»."
+          },
+          "actorname": {
+            "zh": "李小龙",
+            "ru": [
+              "Брюс Ли"
+            ],
+            "gloss": "Брюс Ли — создал систему джиткундо и снялся в фильме «Выход дракона»."
+          },
+          "sources": [
+            {
+              "url": "https://www.museums.gov.hk/en/web/portal/exhibition017.html",
+              "title": "Bruce Lee: Kung Fu·Art·Life — Hong Kong Heritage Museum",
+              "quote": "he founded his own system, Jeet Kune Do",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#20/options/o1; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "A Man Beyond the Ordinary: Bruce Lee — Hong Kong Heritage Museum",
+              "url": "https://www.heritagemuseum.gov.hk/en/exhibitions/bruce_lee.html",
+              "quote": "He combined various schools of martial arts to create what is known as his Jeet Kune Do.",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "martialartists",
+        "row": {
+          "id": "martial-jetli",
+          "core": false,
+          "name": {
+            "zh": "李连杰",
+            "ru": [
+              "Джет Ли"
+            ],
+            "gloss": "Джет Ли — прославился главной ролью в фильме «Храм Шаолинь» 1982 года."
+          },
+          "actorname": {
+            "zh": "李连杰",
+            "ru": [
+              "Джет Ли"
+            ],
+            "gloss": "Джет Ли — прославился главной ролью в фильме «Храм Шаолинь» 1982 года."
+          },
+          "sources": [
+            {
+              "url": "https://www.filmarchive.gov.hk/tc/web/hkfa/2024/martial/pe-event-2024-martial-fs-film11.html",
+              "title": "少林寺（4K數碼修復版） — 香港電影資料館",
+              "quote": "李連杰成名作",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#20/options/o2; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text",
+              "additionalQuotes": [
+                "1982"
+              ]
+            },
+            {
+              "title": "从运动员到演艺明星 — 国家体育总局",
+              "url": "https://www.sport.gov.cn/n4/n220/c983521/part/632393.pdf",
+              "quote": "1982年，李连杰主演的《少林寺》红遍中国",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-search-indexed-text; точный фрагмент первичного PDF прочитан в поисковой выдаче 2026-11-09; отдельное полное открытие вернуло Content length is too large (12772293 bytes)."
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "martialartists",
+        "row": {
+          "id": "martial-jackiechan",
+          "core": false,
+          "name": {
+            "zh": "成龙",
+            "ru": [
+              "Джеки Чан",
+              "Чэн Лун"
+            ],
+            "gloss": "Джеки Чан — соединяет боевые трюки с комедией; сыграл в серии «Час пик»."
+          },
+          "actorname": {
+            "zh": "成龙",
+            "ru": [
+              "Джеки Чан",
+              "Чэн Лун"
+            ],
+            "gloss": "Джеки Чан — соединяет боевые трюки с комедией; сыграл в серии «Час пик»."
+          },
+          "sources": [
+            {
+              "url": "https://www.oscars.org/governors-awards/2016/jackie-chan",
+              "title": "Jackie Chan — Academy of Motion Picture Arts and Sciences",
+              "quote": "none more successful than the blockbuster Rush Hour series.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#20/options/o3; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "url": "https://www.filmarchive.gov.hk/documents/6.-Research-and-Publication/06-02-Filmmakers-Search/Chinese/Jackie-Chan_c.pdf",
+              "title": "香港影人小傳：成龍 — 香港電影資料館",
+              "quote": "1976 年簽約羅維的公司，改名「成龍」",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#20/keySources; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            }
+          ]
+        }
+      },
+      {
+        "dossier": "people",
+        "table": "martialartists",
+        "row": {
+          "id": "martial-donnieyen",
+          "core": false,
+          "name": {
+            "zh": "甄子丹",
+            "ru": [
+              "Донни Йен"
+            ],
+            "gloss": "Донни Йен — исполнитель роли Ип Мана в серии одноимённых фильмов."
+          },
+          "actorname": {
+            "zh": "甄子丹",
+            "ru": [
+              "Донни Йен"
+            ],
+            "gloss": "Донни Йен — исполнитель роли Ип Мана в серии одноимённых фильмов."
+          },
+          "sources": [
+            {
+              "url": "https://www.weibo.com/donnieyen",
+              "title": "甄子丹 — личная страница актёра",
+              "quote": "导演、演员，代表作：《叶问》、《精武门》等。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-accepted-local: data/review/2026-11-09-regional-batch-8-accepted-proposals.json/items#20/options/o4; прочитано локально 2026-11-09, новая загрузка страницы не заявляется. Прежний метод: fresh-web-search-result-text"
+            },
+            {
+              "title": "Ip Man — Hong Kong Film Archive",
+              "url": "https://www.filmarchive.gov.hk/en/web/hkfa/2024/martial/pe-event-2024-martial-fs-film17.html",
+              "quote": "Cast: Donnie Yen, Simon Yam, Lynn Xiong",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-web-open; полный текст первичного сайта прочитан 2026-11-09, цитата сверена с выводом web.run"
+            }
+          ]
+        }
+      }
+    ],
+    "cellAdditions": [],
+    "identityRefs": [],
+    "questions": [
+      {
+        "reviewNumber": 5,
+        "dossier": "people",
+        "table": "martialartists",
+        "row": "martial-ipman",
+        "ask": "wingchunmaster",
+        "optionRows": {
+          "o1": "martial-ipman",
+          "o2": "martial-huangfeihong",
+          "o3": "martial-huoyuanjia",
+          "o4": "martial-yangluchan"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 11,
+        "dossier": "sets",
+        "table": "instrumentpairs",
+        "row": "instrumentpair-china",
+        "ask": "traditionalpair",
+        "optionRows": {
+          "o1": "instrumentpair-japan",
+          "o2": "instrumentpair-korea",
+          "o3": "instrumentpair-india",
+          "o4": "instrumentpair-china"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 14,
+        "dossier": "crafts",
+        "table": "bodycustoms",
+        "row": "bodycustom-nails",
+        "ask": "statuslength",
+        "optionRows": {
+          "o1": "bodycustom-beard",
+          "o2": "bodycustom-nails",
+          "o3": "bodycustom-feet",
+          "o4": "bodycustom-hair"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 20,
+        "dossier": "people",
+        "table": "martialartists",
+        "row": "martial-jackiechan",
+        "ask": "actorname",
+        "optionRows": {
+          "o1": "martial-brucelee",
+          "o2": "martial-jetli",
+          "o3": "martial-jackiechan",
+          "o4": "martial-donnieyen"
+        },
+        "exclude": []
+      }
+    ],
+    "captionCorrections": [],
+    "contentProblems": [],
+    "manualHintCandidates": []
+  },
+  "numbers": {
+    "columnAdditions": [
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "column": "seacount",
+        "kind": "zh"
+      },
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "column": "provincecount",
+        "kind": "zh"
+      }
+    ],
+    "tableAdditions": [
+      {
+        "dossier": "modern-history",
+        "table": "diplomaticdates",
+        "definition": {
+          "columns": {
+            "name": "zh",
+            "year": "zh",
+            "about": "ru"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "holidays",
+        "table": "russiancivicdates",
+        "definition": {
+          "columns": {
+            "name": "zh",
+            "date": "zh",
+            "origin": "ru"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "digitalplatforms",
+        "definition": {
+          "columns": {
+            "name": "zh",
+            "about": "ru"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "russianmilestones",
+        "definition": {
+          "columns": {
+            "name": "zh",
+            "year": "zh",
+            "about": "ru"
+          },
+          "sides": [],
+          "rows": []
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "censuscounts",
+        "definition": {
+          "columns": {
+            "name": "zh",
+            "nationalitycount2010": "zh",
+            "about": "ru"
+          },
+          "sides": [],
+          "rows": []
+        }
+      }
+    ],
+    "rowAdditions": [
+      {
+        "dossier": "modern-history",
+        "table": "diplomaticdates",
+        "row": {
+          "id": "diplomatic-roc1912",
+          "name": {
+            "zh": "中华民国临时政府成立",
+            "ref": "modern-history/events/ev-roc-founded"
+          },
+          "year": {
+            "zh": "1912",
+            "gloss": "В 1912 году была провозглашена Китайская Республика; КНР ещё не существовала."
+          },
+          "about": "1 января 1912 года в Нанкине образовано временное правительство Китайской Республики.",
+          "sources": [
+            {
+              "title": "中华民国临时大总统孙中山颁布的陆军官制及暂行编制 — 中国国家博物馆",
+              "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202104/t20210406_249552.shtml",
+              "quote": "1912年1月1日，孙中山在南京宣誓就任临时大总统，改国号为中华民国，并组成中华民国临时政府。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/modern-history.json events/ev-roc-founded; source previously verified locally, not reopened"
+            },
+            {
+              "title": "《孙中山与广州•南京》 — 南京市档案馆",
+              "url": "https://dag.nanjing.gov.cn/dawh/bycg/201711/t20171101_522720.html",
+              "quote": "1912年1月1日，孙中山在南京就任中华民国临时大总统。",
+              "checkedAt": "2026-11-07",
+              "authority": "official",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/modern-history.json events/ev-roc-founded; source previously verified locally, not reopened"
+            },
+            {
+              "url": "https://www.cppcc.gov.cn/zxww/xinhai100/jlmg/index.shtml",
+              "title": "НПКСК — 纪念辛亥革命100周年",
+              "quote": "1912年元旦，孙中山在南京发布《临时大总统宣言书》、《告全国同胞书》等文件，正式宣告中华民国的诞生。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 3 option o1"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "diplomaticdates",
+        "row": {
+          "id": "diplomatic-cnussr1949",
+          "name": {
+            "zh": "中苏建交"
+          },
+          "year": {
+            "zh": "1949",
+            "gloss": "СССР стал первой страной, признавшей КНР; дипломатические отношения установлены 2 октября."
+          },
+          "about": "2 октября 1949 года СССР и КНР установили дипломатические отношения.",
+          "sources": [
+            {
+              "url": "https://www.mfa.gov.cn/ziliao_674904/zt_674979/dnzt_674981/qtzt/zggcddwjw100ggs/jszgddzg/202208/t20220824_10750397.shtml",
+              "title": "МИД КНР — 开国大典的彩色胶片",
+              "quote": "苏联是最早承认中华人民共和国的国家。1949年10月2号，中苏正式建交。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 3 option o2"
+            },
+            {
+              "title": "驻俄罗斯大使张汉晖在庆祝中华人民共和国成立75周年暨中俄建交75周年招待会上的致辞 — МИД КНР",
+              "url": "https://www.mfa.gov.cn/zwbd_673032/wjzs/202412/t20241218_11500717.shtml",
+              "quote": "1949年10月2日，苏联成为同新中国建交的第一个国家。",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "diplomaticdates",
+        "row": {
+          "id": "diplomatic-cnussr-treaty1950",
+          "name": {
+            "zh": "中苏友好同盟互助条约",
+            "ref": "modern-history/treaties/tr-ru-1950"
+          },
+          "year": {
+            "zh": "1950",
+            "gloss": "В 1950 году СССР и КНР подписали Договор о дружбе, союзе и взаимной помощи."
+          },
+          "about": "14 февраля 1950 года в Москве подписан Договор о дружбе, союзе и взаимной помощи СССР и КНР.",
+          "sources": [
+            {
+              "url": "https://www.mfa.gov.cn/ziliao_674904/historytoday_674971/200302/t20030214_7948993.shtml",
+              "title": "МИД КНР — 2月14日",
+              "quote": "1950年2月14日，《中苏友好同盟互助条约》在莫斯科签订。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 3 option o3"
+            },
+            {
+              "title": "新中国外交历史回顾 — 中华人民共和国外交部",
+              "url": "https://www.mfa.gov.cn/web/ziliao_674904/wjs_674919/2159_674923/200011/t20001107_7950025.shtml",
+              "quote": "周恩来总理率领中国政府代表团赴苏进行谈判，双方于1950年2月14日在莫斯科签订了",
+              "authority": "official",
+              "checkedAt": "2026-10-18",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/modern-history.json treaties/tr-ru-1950; source previously verified locally, not reopened"
+            },
+            {
+              "title": "1950年2月14日 中苏友好同盟互助条约签订 — 盐田档案与史志信息网",
+              "url": "https://www.yantian.gov.cn/ytdayszxxw/lsjt/content/post_11737393.html",
+              "quote": "两国政府在莫斯科签订《中苏友好同盟互助条约条约，同年4月11日起生效， 有效期30年",
+              "authority": "official",
+              "checkedAt": "2026-10-18",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/modern-history.json treaties/tr-ru-1950; source previously verified locally, not reopened"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "diplomaticdates",
+        "row": {
+          "id": "diplomatic-cnpakistan1951",
+          "name": {
+            "zh": "中国与巴基斯坦建交"
+          },
+          "year": {
+            "zh": "1951",
+            "gloss": "В 1951 году КНР установила дипломатические отношения с Пакистаном."
+          },
+          "about": "21 мая 1951 года КНР установила дипломатические отношения с Пакистаном.",
+          "sources": [
+            {
+              "url": "https://www.mfa.gov.cn/ziliao_674904/historytoday_674971/200305/t20030521_9284573.shtml",
+              "title": "МИД КНР — 5月21日",
+              "quote": "1951年5月21日，中国同巴基斯坦伊斯兰共和国建交。",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 3 option o4"
+            },
+            {
+              "title": "中华人民共和国与各国建立外交关系日期简表 — МИД КНР",
+              "url": "https://www.mfa.gov.cn/web/ziliao_674904/2193_674977/200812/t20081221_9284708.shtml",
+              "quote": "巴基斯坦　1951.5.21",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "holidays",
+        "table": "russiancivicdates",
+        "row": {
+          "id": "civic-ru-russiaday",
+          "name": {
+            "zh": "俄罗斯日",
+            "ref": "holidays/holidays/hol-ru-eluosi"
+          },
+          "date": {
+            "zh": "6月12日",
+            "gloss": "День России — годовщина принятия Декларации о суверенитете РСФСР в 1990 году."
+          },
+          "origin": "День России — годовщина принятия Декларации о суверенитете РСФСР в 1990 году.",
+          "sources": [
+            {
+              "title": "莫斯科举行庆祝“俄罗斯日”活动 — 新华网",
+              "url": "http://www.news.cn/world/2022-06/13/c_1128735054.htm",
+              "quote": "1990年6月12日，俄罗斯苏维埃联邦社会主义共和国第一次人民代表大会通过了国家主权宣言，这一天后来被认定为俄罗斯国庆日，2002年后又称“俄罗斯日”。",
+              "checkedAt": "2026-10-15",
+              "authority": "official",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/holidays.json holidays/hol-ru-eluosi; source previously verified locally, not reopened"
+            },
+            {
+              "title": "俄罗斯联邦概况（俄罗斯概况）— 中国人大网",
+              "url": "http://www.npc.gov.cn/zgrdw/npc/wyzzy/cfhgjhy/2013-09/11/content_1806393_2.htm",
+              "quote": "◆ 国家主权宣言通过日（国庆日）： ６月１２日 １９９０年６月１２日，俄罗斯苏维埃联邦社会主义共和国第一次人民代表大会通过了国家主权宣言，这一天由此被称为俄罗斯国庆日。２００２年后又称为“俄罗斯日”。",
+              "checkedAt": "2026-10-15",
+              "authority": "official",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/holidays.json holidays/hol-ru-eluosi; source previously verified locally, not reopened"
+            },
+            {
+              "url": "https://51.rosstat.gov.ru/news/document/125130",
+              "title": "Мурманскстат — 12 июня отмечается День России",
+              "quote": "В этот день в 1990 году первый Съезд народных депутатов РСФСР принял Декларацию о государственном суверенитете России.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 6 option o1; original: official-source-indexed-text",
+              "originalAuthority": "official-primary"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "holidays",
+        "table": "russiancivicdates",
+        "row": {
+          "id": "civic-ru-unityday",
+          "name": {
+            "zh": "人民团结日",
+            "ref": "holidays/holidays/hol-ru-tuanjie"
+          },
+          "date": {
+            "zh": "11月4日",
+            "gloss": "День народного единства — память об освобождении Москвы народным ополчением в 1612 году."
+          },
+          "origin": "День народного единства — память об освобождении Москвы народным ополчением в 1612 году.",
+          "sources": [
+            {
+              "title": "普京说团结互信是俄罗斯发展基础 — 新华网",
+              "url": "http://www.xinhuanet.com/world/2019-11/05/c_1125194219.htm",
+              "quote": "自2005年开始，俄罗斯在每年的11月4日庆祝“人民团结日”。这一节日是为纪念1612年俄义军把波兰军队赶出莫斯科公国而设立的。",
+              "checkedAt": "2026-10-15",
+              "authority": "official",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/holidays.json holidays/hol-ru-tuanjie; source previously verified locally, not reopened"
+            },
+            {
+              "title": "俄罗斯“人民团结日” — 人民网",
+              "url": "http://www.people.com.cn/n1/2016/1102/c408060-28829735.html",
+              "quote": "1612年11月4日，人民义勇军在库兹马·米宁和德米特里·波扎尔斯基的领导下，攻占了“中国城”，从波兰武装干涉者手中解放了莫斯科",
+              "checkedAt": "2026-10-15",
+              "authority": "official",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/holidays.json holidays/hol-ru-tuanjie; source previously verified locally, not reopened"
+            },
+            {
+              "url": "https://rosguard.gov.ru/page/index/den-narodnogo-edinstva",
+              "title": "Росгвардия — День народного единства",
+              "quote": "4 ноября в России отмечается День народного единства.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 6 option o2; original: official-source-indexed-text",
+              "originalAuthority": "official-primary"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "holidays",
+        "table": "russiancivicdates",
+        "row": {
+          "id": "civic-ru-flagday",
+          "name": {
+            "zh": "俄罗斯联邦国旗日"
+          },
+          "date": {
+            "zh": "8月22日",
+            "gloss": "Праздник учреждён в 1994 году в память о восстановлении российского триколора в 1991-м."
+          },
+          "origin": "Праздник учреждён в 1994 году в память о восстановлении российского триколора в 1991-м.",
+          "sources": [
+            {
+              "url": "https://www.prlib.ru/history/619479",
+              "title": "Президентская библиотека — День Государственного флага Российской Федерации",
+              "quote": "20 августа 1994 г. Президент России Б. Н. Ельцин подписал указ … установить праздник День Государственного флага и отмечать его ежегодно 22 августа.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 6 option o3; original: reused-locally-verified-full-text"
+            },
+            {
+              "title": "День Государственного флага Российской Федерации — Росгвардия",
+              "url": "https://rosguard.gov.ru/ru/page/index/den-gosudarstvennogo-flaga-rossijskoj-federacii",
+              "quote": "День государственного флага России, отмечаемый 22 августа, стал государственным праздником в 1994 году",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "holidays",
+        "table": "russiancivicdates",
+        "row": {
+          "id": "civic-ru-constitutionday",
+          "name": {
+            "zh": "俄罗斯宪法日"
+          },
+          "date": {
+            "zh": "12月12日",
+            "gloss": "День Конституции — годовщина её принятия всенародным голосованием в 1993 году."
+          },
+          "origin": "День Конституции — годовщина её принятия всенародным голосованием в 1993 году.",
+          "sources": [
+            {
+              "url": "https://www.prlib.ru/section/2071600",
+              "title": "Президентская библиотека — День Конституции Российской Федерации – 12 декабря",
+              "quote": "12 декабря 1993 года была утверждена Конституция Российской Федерации по результатам всенародного референдума",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 6 option o4; original: official-source-indexed-text"
+            },
+            {
+              "title": "День Конституции — Росгвардия",
+              "url": "https://rosguard.gov.ru/page/index/den-konstitucii",
+              "quote": "12 декабря — День Конституции Российской Федерации.",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": {
+          "id": "preview-b8-six-seas",
+          "name": {
+            "zh": "6"
+          },
+          "seacount": {
+            "zh": "6",
+            "gloss": "6 — на два моря больше принятого в китайской географии числа."
+          },
+          "about": "Числовое значение для сравнения с четырьмя морями Китая: 6 = 4 + 2. Строка не обозначает другую страну или иную географическую классификацию.",
+          "sources": [
+            {
+              "title": "中国的近海 — 中国科学院地理科学与资源研究所",
+              "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692452.html",
+              "quote": "中国近海包括渤海、黄海、东海和南海。",
+              "authority": "academic",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 7 keySources; original: fresh-web-open; numeric display alternative 6 = 4 + 2; not the sea count of another country",
+              "checkedAt": "2026-11-08"
+            },
+            {
+              "title": "中华人民共和国版图 — 中央人民政府驻香港特别行政区联络办公室",
+              "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652712.htm",
+              "quote": "领海由渤海(内海)和黄海、东海、南海三大边海组成，东部和南部大陆海岸线1.8万千米。",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09; numeric display alternative 6 = 4 + 2; not the sea count of another country"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "digitalplatforms",
+        "row": {
+          "id": "platform-qq",
+          "name": {
+            "zh": "QQ",
+            "gloss": "QQ — мессенджер и социальная платформа Tencent, запущенная в феврале 1999 года."
+          },
+          "about": "QQ — мессенджер и социальная платформа Tencent, запущенная в феврале 1999 года.",
+          "sources": [
+            {
+              "url": "https://www.tencent.com/products/qq/",
+              "title": "Tencent — QQ",
+              "quote": "Launched by Tencent in February 1999, QQ is an instant messaging (IM) and social platform",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 9 option o1"
+            },
+            {
+              "title": "Our story — Tencent",
+              "url": "https://www.tencent.com/who-we-are/our-story/",
+              "quote": "1999 … February … Instant messaging service QQ launches",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "digitalplatforms",
+        "row": {
+          "id": "platform-weixin",
+          "name": {
+            "zh": "微信",
+            "gloss": "WeChat — платёжный сервис Weixin Pay в приложении Tencent работает с 2013 года."
+          },
+          "about": "WeChat — платёжный сервис Weixin Pay в приложении Tencent работает с 2013 года.",
+          "sources": [
+            {
+              "url": "https://www.tencent.com/products/weixin-pay/",
+              "title": "Tencent — Weixin Pay",
+              "quote": "Weixin Pay is a mobile payment solution jointly launched by Weixin and Tenpay in 2013.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 9 option o2"
+            },
+            {
+              "url": "https://english.shanghai.gov.cn/en-UsefulApps/20231214/3cac2d8cc7f847da92a72252bae06705.html",
+              "title": "Шанхайский правительственный портал — Essential apps for living in Shanghai",
+              "quote": "WeChat Pay and Alipay are the two major digital payment methods in China.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 9 keySources"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "digitalplatforms",
+        "row": {
+          "id": "platform-unionpay",
+          "name": {
+            "zh": "银联",
+            "gloss": "UnionPay — китайская межбанковская карточная платёжная сеть, основанная в 2002 году."
+          },
+          "about": "UnionPay — китайская межбанковская карточная платёжная сеть, основанная в 2002 году.",
+          "sources": [
+            {
+              "url": "https://www.unionpay.com/upowhtml/cn/templates/upOverview/upOverview.html",
+              "title": "China UnionPay — 企业概况",
+              "quote": "2002年3月， 经国务院同意，中国人民银行批准",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "note": "Следом сказано об учреждении China UnionPay; основной текст описывает межбанковский карточный клиринг.",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 9 option o3"
+            },
+            {
+              "title": "金融知识普及读本（第二版）第六章 支付结算 — 中国人民银行金融消费权益保护局",
+              "url": "https://guiyang.pbc.gov.cn/guiyang/113337/114084/3540759/2018051811593716305.pdf",
+              "quote": "2002年3月, 中国人民银行批准设立中国银联, 负责推动跨行联网通用和银行卡普及应用",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-pdf-indexed-text-read 2026-11-09; PDF direct open rejected for size 10516662 bytes, no successful full PDF download claimed"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "digitalplatforms",
+        "row": {
+          "id": "platform-taobao",
+          "name": {
+            "zh": "淘宝",
+            "gloss": "Taobao — торговая интернет-площадка Alibaba, запущенная в мае 2003 года."
+          },
+          "about": "Taobao — торговая интернет-площадка Alibaba, запущенная в мае 2003 года.",
+          "sources": [
+            {
+              "url": "https://www.alibabagroup.com/en-US/document-1491551592707522560",
+              "title": "Alibaba — About Taobao Marketplace",
+              "quote": "Launched in May 2003, Taobao Marketplace",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 9 option o4"
+            },
+            {
+              "title": "Taobao — Alibaba Group",
+              "url": "https://home.alibabagroup.com/en-US/about-alibaba-businesses-1744508703945523200",
+              "quote": "Founded in 2003, Taobao means \"search for treasures\"",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "russianmilestones",
+        "row": {
+          "id": "mile-ru-rename1991",
+          "name": {
+            "zh": "俄罗斯苏维埃联邦社会主义共和国更名"
+          },
+          "year": {
+            "zh": "1991",
+            "gloss": "Закон от 25 декабря разрешал и в 1992 году использовать прежнее название РСФСР."
+          },
+          "about": "25 декабря 1991 года принят закон о новом названии РСФСР — Российская Федерация (Россия).",
+          "sources": [
+            {
+              "url": "https://www.prlib.ru/item/353944",
+              "title": "Президентская библиотека — Закон РСФСР от 25.12.1991 № 2094-I",
+              "quote": "Закон Российской Советской Федеративной Социалистической Республики от 25 декабря 1991 года № 2094-I",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 15 keySources supporting renaming"
+            },
+            {
+              "url": "https://www.prlib.ru/history/619842",
+              "title": "Президентская библиотека — РСФСР переименована в Российскую Федерацию",
+              "quote": "По закону в течение 1992 г. было разрешено использовать название РСФСР в официальных актах и других документах",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 15 keySources supporting renaming"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "russianmilestones",
+        "row": {
+          "id": "mile-ru-crisis1998",
+          "name": {
+            "zh": "俄罗斯1998年金融危机"
+          },
+          "year": {
+            "zh": "1998",
+            "gloss": "В августе 1998 года Россия пережила финансовый кризис и заморозку выплат по ГКО."
+          },
+          "about": "17 августа 1998 года приняты решения об изменении валютной политики и реструктуризации внутреннего государственного долга России.",
+          "sources": [
+            {
+              "url": "https://www.cbr.ru/Collection/Collection/File/7815/ar_1998.pdf",
+              "title": "Банк России — Годовой отчёт 1998",
+              "quote": "Правительство РФ и Банк России 17 августа приняли решение о пересмотре курсовой политики и реструктуризации внутреннего государственного долга.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 15 option o2"
+            },
+            {
+              "title": "Председатель Банка России В.В. Геращенко: Актуальные проблемы банковской системы в 1999 году — Банк России",
+              "url": "https://www.cbr.ru/Queries/XsltBlock/File/103662?fileId=1755",
+              "quote": "принятие в августе решения о приостановлении выплат по ГКО—ОФЗ",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "russianmilestones",
+        "row": {
+          "id": "mile-ru-anthem2000",
+          "name": {
+            "zh": "俄罗斯联邦国歌法通过"
+          },
+          "year": {
+            "zh": "2000",
+            "gloss": "В 2000 году федеральным конституционным законом утверждён современный гимн России."
+          },
+          "about": "25 декабря 2000 года государственный гимн Российской Федерации установлен федеральным конституционным законом.",
+          "sources": [
+            {
+              "url": "https://www.prlib.ru/item/407021",
+              "title": "Президентская библиотека / Президент России — Государственный гимн РФ",
+              "quote": "Государственный гимн Российской Федерации установлен Федеральным конституционным законом от 25 декабря 2000 года № 3-ФКЗ",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 15 option o3"
+            },
+            {
+              "title": "Государственные символы — на портале Президентской библиотеки",
+              "url": "https://www.prlib.ru/news/658098",
+              "quote": "Государственный гимн Российской Федерации учреждён Федеральным конституционным законом от 25 декабря 2000 года № 3-ФКЗ",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-history",
+        "table": "russianmilestones",
+        "row": {
+          "id": "mile-ru-yeltsin-resignation1999",
+          "name": {
+            "zh": "叶利钦辞去总统职务"
+          },
+          "year": {
+            "zh": "1999",
+            "gloss": "31 декабря 1999 года Борис Ельцин объявил об отставке с поста президента России."
+          },
+          "about": "31 декабря 1999 года Борис Ельцин объявил об отставке с поста президента России.",
+          "sources": [
+            {
+              "url": "https://www.prlib.ru/node/619862",
+              "title": "Президентская библиотека — Добровольная отставка первого Президента РФ",
+              "quote": "31 декабря 1999 г. в 12 часов дня",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "note": "Официальный материал подробно описывает телеобращение Ельцина об отставке.",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 15 option o4"
+            },
+            {
+              "title": "Родился первый Президент России Борис Николаевич Ельцин — Президентская библиотека",
+              "url": "https://www.prlib.ru/history/618999",
+              "quote": "31 декабря 1999 г. Ельцин подписал Указ о своей отставке.",
+              "authority": "official",
+              "checkedAt": "2026-11-09",
+              "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "censuscounts",
+        "row": {
+          "id": "census-range170",
+          "name": {
+            "zh": "170 多"
+          },
+          "nationalitycount2010": {
+            "zh": "170 多",
+            "gloss": "Варианты самоназваний народов при обработке переписи объединяют в этнические группы."
+          },
+          "about": "Числовой диапазон для сравнения с результатом переписи России 2010 года; строка не обозначает страну, народ, отдельную перепись или фактическое число национальностей.",
+          "sources": [
+            {
+              "url": "https://rosstat.gov.ru/folder/313/document/171091",
+              "title": "Росстат — История переписей России",
+              "quote": "в 2010 году было 193 национальности",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://59.rosstat.gov.ru/folder/67637/document/117328?print=1",
+              "title": "Пермьстат — Национальная принадлежность в переписи",
+              "quote": "в России проживало уже 182 народа. По итогам 2010 года это число снова выросло до 193.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://11.rosstat.gov.ru/storage/folder_page/2018/12-25/vzY9WJ6V/information_for_media_2010/2011/20111226_5bb9db804cdcb5a4b001ba49c24a3eb2.html",
+              "title": "Комистат — Перепись населения 2010 года: национальный состав",
+              "quote": "ответы были систематизированы примерно в 190 национальностей",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol1/l1.pdf",
+              "title": "Росстат — Переписной лист формы Л, перепись 2010",
+              "quote": "6. Ваше гражданство; 7. Ваша национальная принадлежность. По самоопределению в соответствии со ст. 26 Конституции РФ",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "note": "В цитате сгруппированы два отдельных поля переписного листа.",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "censuscounts",
+        "row": {
+          "id": "census-range180",
+          "name": {
+            "zh": "180 多"
+          },
+          "nationalitycount2010": {
+            "zh": "180 多",
+            "gloss": "Перепись 2002 года учла 182 народа; к переписи 2010 года их число выросло."
+          },
+          "about": "Числовой диапазон для сравнения с результатом переписи России 2010 года; строка не обозначает страну, народ, отдельную перепись или фактическое число национальностей.",
+          "sources": [
+            {
+              "url": "https://rosstat.gov.ru/folder/313/document/171091",
+              "title": "Росстат — История переписей России",
+              "quote": "в 2010 году было 193 национальности",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://59.rosstat.gov.ru/folder/67637/document/117328?print=1",
+              "title": "Пермьстат — Национальная принадлежность в переписи",
+              "quote": "в России проживало уже 182 народа. По итогам 2010 года это число снова выросло до 193.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://11.rosstat.gov.ru/storage/folder_page/2018/12-25/vzY9WJ6V/information_for_media_2010/2011/20111226_5bb9db804cdcb5a4b001ba49c24a3eb2.html",
+              "title": "Комистат — Перепись населения 2010 года: национальный состав",
+              "quote": "ответы были систематизированы примерно в 190 национальностей",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol1/l1.pdf",
+              "title": "Росстат — Переписной лист формы Л, перепись 2010",
+              "quote": "6. Ваше гражданство; 7. Ваша национальная принадлежность. По самоопределению в соответствии со ст. 26 Конституции РФ",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "note": "В цитате сгруппированы два отдельных поля переписного листа.",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "censuscounts",
+        "row": {
+          "id": "census-russia2010",
+          "name": {
+            "zh": "2010年俄罗斯人口普查"
+          },
+          "nationalitycount2010": {
+            "zh": "190 多",
+            "gloss": "Национальную принадлежность при переписи определял сам опрашиваемый."
+          },
+          "about": "Результат Всероссийской переписи населения 2010 года: 193 национальности. Диапазон 190 多 описывает этот один канонический результат.",
+          "sources": [
+            {
+              "url": "https://rosstat.gov.ru/folder/313/document/171091",
+              "title": "Росстат — История переписей России",
+              "quote": "в 2010 году было 193 национальности",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://59.rosstat.gov.ru/folder/67637/document/117328?print=1",
+              "title": "Пермьстат — Национальная принадлежность в переписи",
+              "quote": "в России проживало уже 182 народа. По итогам 2010 года это число снова выросло до 193.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://11.rosstat.gov.ru/storage/folder_page/2018/12-25/vzY9WJ6V/information_for_media_2010/2011/20111226_5bb9db804cdcb5a4b001ba49c24a3eb2.html",
+              "title": "Комистат — Перепись населения 2010 года: национальный состав",
+              "quote": "ответы были систематизированы примерно в 190 национальностей",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol1/l1.pdf",
+              "title": "Росстат — Переписной лист формы Л, перепись 2010",
+              "quote": "6. Ваше гражданство; 7. Ваша национальная принадлежность. По самоопределению в соответствии со ст. 26 Конституции РФ",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "note": "В цитате сгруппированы два отдельных поля переписного листа.",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            }
+          ],
+          "core": false
+        }
+      },
+      {
+        "dossier": "modern-china",
+        "table": "censuscounts",
+        "row": {
+          "id": "census-range200",
+          "name": {
+            "zh": "200 多"
+          },
+          "nationalitycount2010": {
+            "zh": "200 多",
+            "gloss": "Национальность и гражданство учитывались раздельно: это разные вопросы переписного листа."
+          },
+          "about": "Числовой диапазон для сравнения с результатом переписи России 2010 года; строка не обозначает страну, народ, отдельную перепись или фактическое число национальностей.",
+          "sources": [
+            {
+              "url": "https://rosstat.gov.ru/folder/313/document/171091",
+              "title": "Росстат — История переписей России",
+              "quote": "в 2010 году было 193 национальности",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://59.rosstat.gov.ru/folder/67637/document/117328?print=1",
+              "title": "Пермьстат — Национальная принадлежность в переписи",
+              "quote": "в России проживало уже 182 народа. По итогам 2010 года это число снова выросло до 193.",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://11.rosstat.gov.ru/storage/folder_page/2018/12-25/vzY9WJ6V/information_for_media_2010/2011/20111226_5bb9db804cdcb5a4b001ba49c24a3eb2.html",
+              "title": "Комистат — Перепись населения 2010 года: национальный состав",
+              "quote": "ответы были систематизированы примерно в 190 национальностей",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            },
+            {
+              "url": "https://rosstat.gov.ru/free_doc/new_site/perepis2010/croc/Documents/Vol1/l1.pdf",
+              "title": "Росстат — Переписной лист формы Л, перепись 2010",
+              "quote": "6. Ваше гражданство; 7. Ваша национальная принадлежность. По самоопределению в соответствии со ст. 26 Конституции РФ",
+              "authority": "official",
+              "checkedAt": "2026-11-08",
+              "note": "В цитате сгруппированы два отдельных поля переписного листа.",
+              "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 18 sources; census result and methodology; numeric display context, not another country/census"
+            }
+          ],
+          "core": false
+        }
+      }
+    ],
+    "cellAdditions": [
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": "geocount-alternative-1",
+        "column": "seacount",
+        "cell": {
+          "zh": "5",
+          "gloss": "5 — на одно море больше принятого в китайской географии числа."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "中国的近海 — 中国科学院地理科学与资源研究所",
+            "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692452.html",
+            "quote": "中国近海包括渤海、黄海、东海和南海。",
+            "authority": "academic",
+            "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 7 keySources; original: fresh-web-open",
+            "checkedAt": "2026-11-08"
+          },
+          {
+            "title": "中华人民共和国版图 — 中央人民政府驻香港特别行政区联络办公室",
+            "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652712.htm",
+            "quote": "领海由渤海(内海)和黄海、东海、南海三大边海组成，东部和南部大陆海岸线1.8万千米。",
+            "authority": "official",
+            "checkedAt": "2026-11-09",
+            "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": "geocount-alternative-2",
+        "column": "seacount",
+        "cell": {
+          "zh": "3",
+          "gloss": "3 — на одно море меньше принятого в китайской географии числа."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "中国的近海 — 中国科学院地理科学与资源研究所",
+            "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692452.html",
+            "quote": "中国近海包括渤海、黄海、东海和南海。",
+            "authority": "academic",
+            "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 7 keySources; original: fresh-web-open",
+            "checkedAt": "2026-11-08"
+          },
+          {
+            "title": "中华人民共和国版图 — 中央人民政府驻香港特别行政区联络办公室",
+            "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652712.htm",
+            "quote": "领海由渤海(内海)和黄海、东海、南海三大边海组成，东部和南部大陆海岸线1.8万千米。",
+            "authority": "official",
+            "checkedAt": "2026-11-09",
+            "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": "geocount-china",
+        "column": "seacount",
+        "cell": {
+          "zh": "4",
+          "gloss": "4 — Бохайское, Жёлтое, Восточно-Китайское и Южно-Китайское моря."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "中国的近海 — 中国科学院地理科学与资源研究所",
+            "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cnh/202009/t20200910_5692452.html",
+            "quote": "中国近海包括渤海、黄海、东海和南海。",
+            "authority": "academic",
+            "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; manifest reviewNumber 7 keySources; original: fresh-web-open",
+            "checkedAt": "2026-11-08"
+          },
+          {
+            "title": "中华人民共和国版图 — 中央人民政府驻香港特别行政区联络办公室",
+            "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652712.htm",
+            "quote": "领海由渤海(内海)和黄海、东海、南海三大边海组成，东部和南部大陆海岸线1.8万千米。",
+            "authority": "official",
+            "checkedAt": "2026-11-09",
+            "verificationMethod": "fresh-primary-page-opened-and-text-read 2026-11-09"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": "geocount-alternative-1",
+        "column": "provincecount",
+        "cell": {
+          "zh": "21",
+          "gloss": "21 — на 2 меньше официального числа провинций."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+            "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+            "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/provinces.json geocounts/geocount-china; source previously verified locally, not reopened; original: fresh-primary-government-page-indexed-text-read 2026-11-08; count, types and named special administrative regions"
+          },
+          {
+            "title": "中华人民共和国工业和信息化部公告2018年 第7号 — 工业和信息化部",
+            "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2020/art_e6ae132e19d541348f930d1dd6654f3d.html",
+            "quote": "设置“行政区域名”34个，适用于我国的各省、自治区、直辖市、特别行政区的组织，分别为：“BJ”北京市；“SH”上海市；“TJ”天津市；“CQ”重庆市；“HE”河北省；“SX”山西省；“NM”内蒙古自治区；“LN”辽宁省；“JL”吉林省；“HL”黑龙江省；“JS”江苏省；“ZJ”浙江省；“AH”安徽省；“FJ”福建省；“JX”江西省；“SD”山东省；“HA”河南省；“HB”湖北省；“HN”湖南省；“GD”广东省；“GX”广西壮族自治区；“HI”海南省；“SC”四川省；“GZ”贵州省；“YN”云南省；“XZ”西藏自治区；“SN”陕西省；“GS”甘肃省；“QH”青海省；“NX”宁夏回族自治区；“XJ”新疆维吾尔自治区；“TW”台湾省；“HK”香港特别行政区；“MO”澳门特别行政区。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/provinces.json geocounts/geocount-china; source previously verified locally, not reopened; original: fresh-primary-ministry-announcement-indexed-text-read 2026-11-08; all 34 administrative labels including Taiwan, Hong Kong and Macao"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": "geocount-alternative-2",
+        "column": "provincecount",
+        "cell": {
+          "zh": "19",
+          "gloss": "19 — на 4 меньше официального числа провинций."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+            "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+            "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/provinces.json geocounts/geocount-china; source previously verified locally, not reopened; original: fresh-primary-government-page-indexed-text-read 2026-11-08; count, types and named special administrative regions"
+          },
+          {
+            "title": "中华人民共和国工业和信息化部公告2018年 第7号 — 工业和信息化部",
+            "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2020/art_e6ae132e19d541348f930d1dd6654f3d.html",
+            "quote": "设置“行政区域名”34个，适用于我国的各省、自治区、直辖市、特别行政区的组织，分别为：“BJ”北京市；“SH”上海市；“TJ”天津市；“CQ”重庆市；“HE”河北省；“SX”山西省；“NM”内蒙古自治区；“LN”辽宁省；“JL”吉林省；“HL”黑龙江省；“JS”江苏省；“ZJ”浙江省；“AH”安徽省；“FJ”福建省；“JX”江西省；“SD”山东省；“HA”河南省；“HB”湖北省；“HN”湖南省；“GD”广东省；“GX”广西壮族自治区；“HI”海南省；“SC”四川省；“GZ”贵州省；“YN”云南省；“XZ”西藏自治区；“SN”陕西省；“GS”甘肃省；“QH”青海省；“NX”宁夏回族自治区；“XJ”新疆维吾尔自治区；“TW”台湾省；“HK”香港特别行政区；“MO”澳门特别行政区。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/provinces.json geocounts/geocount-china; source previously verified locally, not reopened; original: fresh-primary-ministry-announcement-indexed-text-read 2026-11-08; all 34 administrative labels including Taiwan, Hong Kong and Macao"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": "geocount-china",
+        "column": "provincecount",
+        "cell": {
+          "zh": "23",
+          "gloss": "23 — входят в 34 административные единицы провинциального уровня."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+            "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+            "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/provinces.json geocounts/geocount-china; source previously verified locally, not reopened; original: fresh-primary-government-page-indexed-text-read 2026-11-08; count, types and named special administrative regions"
+          },
+          {
+            "title": "中华人民共和国工业和信息化部公告2018年 第7号 — 工业和信息化部",
+            "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2020/art_e6ae132e19d541348f930d1dd6654f3d.html",
+            "quote": "设置“行政区域名”34个，适用于我国的各省、自治区、直辖市、特别行政区的组织，分别为：“BJ”北京市；“SH”上海市；“TJ”天津市；“CQ”重庆市；“HE”河北省；“SX”山西省；“NM”内蒙古自治区；“LN”辽宁省；“JL”吉林省；“HL”黑龙江省；“JS”江苏省；“ZJ”浙江省；“AH”安徽省；“FJ”福建省；“JX”江西省；“SD”山东省；“HA”河南省；“HB”湖北省；“HN”湖南省；“GD”广东省；“GX”广西壮族自治区；“HI”海南省；“SC”四川省；“GZ”贵州省；“YN”云南省；“XZ”西藏自治区；“SN”陕西省；“GS”甘肃省；“QH”青海省；“NX”宁夏回族自治区；“XJ”新疆维吾尔自治区；“TW”台湾省；“HK”香港特别行政区；“MO”澳门特别行政区。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/provinces.json geocounts/geocount-china; source previously verified locally, not reopened; original: fresh-primary-ministry-announcement-indexed-text-read 2026-11-08; all 34 administrative labels including Taiwan, Hong Kong and Macao"
+          }
+        ]
+      },
+      {
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": "preview-mainland-31",
+        "column": "provincecount",
+        "cell": {
+          "zh": "24",
+          "gloss": "24 — на 1 больше официального числа провинций."
+        },
+        "sourcesToAppend": [
+          {
+            "title": "中华人民共和国行政区划 — 中央人民政府驻香港特别行政区联络办公室",
+            "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+            "quote": "目前中国有34个省级行政区，包括23个省、5个自治区、4个直辖市、2个特别行政区。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/provinces.json geocounts/geocount-china; source previously verified locally, not reopened; original: fresh-primary-government-page-indexed-text-read 2026-11-08; count, types and named special administrative regions"
+          },
+          {
+            "title": "中华人民共和国工业和信息化部公告2018年 第7号 — 工业和信息化部",
+            "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2020/art_e6ae132e19d541348f930d1dd6654f3d.html",
+            "quote": "设置“行政区域名”34个，适用于我国的各省、自治区、直辖市、特别行政区的组织，分别为：“BJ”北京市；“SH”上海市；“TJ”天津市；“CQ”重庆市；“HE”河北省；“SX”山西省；“NM”内蒙古自治区；“LN”辽宁省；“JL”吉林省；“HL”黑龙江省；“JS”江苏省；“ZJ”浙江省；“AH”安徽省；“FJ”福建省；“JX”江西省；“SD”山东省；“HA”河南省；“HB”湖北省；“HN”湖南省；“GD”广东省；“GX”广西壮族自治区；“HI”海南省；“SC”四川省；“GZ”贵州省；“YN”云南省；“XZ”西藏自治区；“SN”陕西省；“GS”甘肃省；“QH”青海省；“NX”宁夏回族自治区；“XJ”新疆维吾尔自治区；“TW”台湾省；“HK”香港特别行政区；“MO”澳门特别行政区。",
+            "authority": "official",
+            "checkedAt": "2026-11-08",
+            "verificationMethod": "reuse-local-author-accepted-batch8-or-dossier; data/dossiers/provinces.json geocounts/geocount-china; source previously verified locally, not reopened; original: fresh-primary-ministry-announcement-indexed-text-read 2026-11-08; all 34 administrative labels including Taiwan, Hong Kong and Macao"
+          }
+        ]
+      }
+    ],
+    "identityRefs": [],
+    "questions": [
+      {
+        "reviewNumber": 3,
+        "dossier": "modern-history",
+        "table": "diplomaticdates",
+        "row": "diplomatic-cnussr1949",
+        "ask": "year",
+        "optionRows": {
+          "o1": "diplomatic-roc1912",
+          "o2": "diplomatic-cnussr1949",
+          "o3": "diplomatic-cnussr-treaty1950",
+          "o4": "diplomatic-cnpakistan1951"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 6,
+        "dossier": "holidays",
+        "table": "russiancivicdates",
+        "row": "civic-ru-flagday",
+        "ask": "date",
+        "optionRows": {
+          "o1": "civic-ru-russiaday",
+          "o2": "civic-ru-unityday",
+          "o3": "civic-ru-flagday",
+          "o4": "civic-ru-constitutionday"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 7,
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": "geocount-china",
+        "ask": "seacount",
+        "optionRows": {
+          "o1": "geocount-alternative-1",
+          "o2": "geocount-alternative-2",
+          "o3": "geocount-china",
+          "preview-b8-six-seas": "preview-b8-six-seas"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 9,
+        "dossier": "modern-china",
+        "table": "digitalplatforms",
+        "row": "platform-weixin",
+        "ask": "name",
+        "optionRows": {
+          "o1": "platform-qq",
+          "o2": "platform-weixin",
+          "o3": "platform-unionpay",
+          "o4": "platform-taobao"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 13,
+        "dossier": "provinces",
+        "table": "geocounts",
+        "row": "geocount-china",
+        "ask": "provincecount",
+        "optionRows": {
+          "o1": "geocount-alternative-1",
+          "o2": "geocount-alternative-2",
+          "o3": "geocount-china",
+          "o4": "preview-mainland-31"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 15,
+        "dossier": "modern-history",
+        "table": "russianmilestones",
+        "row": "mile-ru-rename1991",
+        "ask": "year",
+        "optionRows": {
+          "o1": "mile-ru-rename1991",
+          "o2": "mile-ru-crisis1998",
+          "o3": "mile-ru-anthem2000",
+          "o4": "mile-ru-yeltsin-resignation1999"
+        },
+        "exclude": []
+      },
+      {
+        "reviewNumber": 18,
+        "dossier": "modern-china",
+        "table": "censuscounts",
+        "row": "census-russia2010",
+        "ask": "nationalitycount2010",
+        "optionRows": {
+          "o1": "census-range170",
+          "o2": "census-range180",
+          "o3": "census-russia2010",
+          "o4": "census-range200"
+        },
+        "exclude": []
+      }
+    ],
+    "captionCorrections": [],
+    "contentProblems": [],
+    "manualHintCandidates": [
+      {
+        "reviewNumber": 3,
+        "kind": "approved-caption-related-fact",
+        "embeds": "2022-23-mun-orel-2",
+        "relatedQuestions": [
+          "2020-21-reg-q227d55"
+        ],
+        "reason": "Подпись 1912 сообщает год провозглашения Китайской Республики."
+      },
+      {
+        "reviewNumber": 3,
+        "kind": "approved-caption-related-fact",
+        "embeds": "2022-23-mun-orel-2",
+        "relatedQuestions": [
+          "modern-history-q92"
+        ],
+        "reason": "Подпись 1950 сообщает год договора СССР—КНР."
+      },
+      {
+        "reviewNumber": 6,
+        "kind": "approved-caption-related-fact",
+        "embeds": "2023-24-mun-chel-7",
+        "relatedQuestions": [
+          "2019-20-reg-10"
+        ],
+        "reason": "Подпись6月12日 сообщает дату Дня России, уже есть соответствующий вопрос; учесть как связь."
+      },
+      {
+        "reviewNumber": 6,
+        "kind": "approved-caption-related-fact",
+        "embeds": "2023-24-mun-chel-7",
+        "relatedQuestions": [
+          "holidays-q51"
+        ],
+        "reason": "Подпись11月4日 сообщает дату Дня народного единства."
+      },
+      {
+        "reviewNumber": 6,
+        "kind": "approved-caption-related-fact",
+        "embeds": "2023-24-mun-chel-7",
+        "relatedQuestions": [
+          "holidays-q25"
+        ],
+        "reason": "Подпись11月4日 сообщает историческое основание Дня народного единства."
+      },
+      {
+        "reviewNumber": 15,
+        "kind": "approved-caption-related-fact",
+        "embeds": "2023-24-mun-udm-5",
+        "relatedQuestions": [
+          "2021-22-reg-qbb2e02"
+        ],
+        "reason": "Подпись 2000 сообщает год утверждения современного гимна России; если ID отличается, проверить вопрос по тексту."
+      }
+    ],
+    "verification": {
+      "manifest": "data/review/2026-11-09-regional-batch-8-accepted-proposals.json",
+      "manifestHash": "3e051c58d68f90a3f906b4fc78666ebcf9314e32f9828ebd6da80a087735e7f7",
+      "checkedAt": "2026-11-09",
+      "approvedFieldChecks": [
+        {
+          "reviewNumber": 3,
+          "optionCount": 4,
+          "approvedQuestionOptionsCaptionsAndKeyExact": true,
+          "embedErrors": []
+        },
+        {
+          "reviewNumber": 6,
+          "optionCount": 4,
+          "approvedQuestionOptionsCaptionsAndKeyExact": true,
+          "embedErrors": []
+        },
+        {
+          "reviewNumber": 7,
+          "optionCount": 4,
+          "approvedQuestionOptionsCaptionsAndKeyExact": true,
+          "embedErrors": []
+        },
+        {
+          "reviewNumber": 13,
+          "optionCount": 4,
+          "approvedQuestionOptionsCaptionsAndKeyExact": true,
+          "embedErrors": []
+        },
+        {
+          "reviewNumber": 9,
+          "optionCount": 4,
+          "approvedQuestionOptionsCaptionsAndKeyExact": true,
+          "embedErrors": []
+        },
+        {
+          "reviewNumber": 15,
+          "optionCount": 4,
+          "approvedQuestionOptionsCaptionsAndKeyExact": true,
+          "embedErrors": []
+        },
+        {
+          "reviewNumber": 18,
+          "optionCount": 4,
+          "approvedQuestionOptionsCaptionsAndKeyExact": true,
+          "embedErrors": []
+        }
+      ],
+      "dossierValidationErrors": [],
+      "oldQuestionOptionPoolChanges": [],
+      "repositoryModified": false,
+      "notes": [
+        "New contextual tables preserve every existing table option pool.",
+        "Numeric display rows are noncore and never claim alternative countries or alternative censuses.",
+        "Reused accepted sources are marked reuse-local; no fresh verification of those URLs is claimed."
+      ],
+      "newQuestionValidationErrors": [],
+      "newIdentityReferenceValidationErrors": []
+    }
+  }
+}

@@ -674,5 +674,35 @@
       "verdict": "accept",
       "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
     }
+  },
+  {
+    "id": "people-q38",
+    "embeds": "2024-25-mun-krym-4",
+    "status": "accepted",
+    "fact": {
+      "table": "martialartists",
+      "row": "martial-ipman",
+      "ask": "wingchunmaster"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял последние правки 17вопросов и09.11.2026пряморазрешил публикацию. Условия/варианты/ключи/подписи — immutableacceptedmanifestпартии8. Источники ивстраиваниепроверенытематически; общий выпуск проходитнезависимоеревью."
+    }
+  },
+  {
+    "id": "people-q39",
+    "embeds": "2023-24-mun-mosobl-6",
+    "status": "accepted",
+    "fact": {
+      "table": "martialartists",
+      "row": "martial-jackiechan",
+      "ask": "actorname"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор принял последние правки 17вопросов и09.11.2026пряморазрешил публикацию. Условия/варианты/ключи/подписи — immutableacceptedmanifestпартии8. Источники ивстраиваниепроверенытематически; общий выпуск проходитнезависимоеревью."
+    }
   }
 ]

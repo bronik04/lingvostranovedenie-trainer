@@ -1,0 +1,2369 @@
+{
+  "date": "2026-11-08",
+  "referenceCount": 1091,
+  "referenceIds": [
+    "2015-16-mun-1",
+    "2015-16-mun-10",
+    "2015-16-mun-2",
+    "2015-16-mun-3",
+    "2015-16-mun-4",
+    "2015-16-mun-5",
+    "2015-16-mun-6",
+    "2015-16-mun-7",
+    "2015-16-mun-8",
+    "2015-16-mun-9",
+    "2015-16-mun-spb-10",
+    "2015-16-mun-spb-4",
+    "2015-16-mun-spb-6",
+    "2015-16-reg-1",
+    "2015-16-reg-10",
+    "2015-16-reg-2",
+    "2015-16-reg-3",
+    "2015-16-reg-4",
+    "2015-16-reg-5",
+    "2015-16-reg-6",
+    "2015-16-reg-7",
+    "2015-16-reg-8",
+    "2015-16-reg-9",
+    "2015-16-shk-56",
+    "2015-16-shk-57",
+    "2015-16-shk-58",
+    "2015-16-shk-59",
+    "2015-16-shk-60",
+    "2015-16-shk-61",
+    "2015-16-shk-62",
+    "2015-16-shk-63",
+    "2015-16-shk-64",
+    "2015-16-shk-65",
+    "2015-16-zak-1",
+    "2015-16-zak-10",
+    "2015-16-zak-2",
+    "2015-16-zak-3",
+    "2015-16-zak-4",
+    "2015-16-zak-5",
+    "2015-16-zak-6",
+    "2015-16-zak-7",
+    "2015-16-zak-8",
+    "2015-16-zak-9",
+    "2016-17-mun-10",
+    "2016-17-mun-3",
+    "2016-17-mun-4",
+    "2016-17-mun-5",
+    "2016-17-mun-6",
+    "2016-17-mun-8",
+    "2016-17-mun-spb-3",
+    "2016-17-mun-spb-6",
+    "2016-17-reg-1",
+    "2016-17-reg-10",
+    "2016-17-reg-2",
+    "2016-17-reg-3",
+    "2016-17-reg-4",
+    "2016-17-reg-5",
+    "2016-17-reg-6",
+    "2016-17-reg-7",
+    "2016-17-reg-8",
+    "2016-17-reg-9",
+    "2016-17-shk-1",
+    "2016-17-shk-10",
+    "2016-17-shk-2",
+    "2016-17-shk-3",
+    "2016-17-shk-4",
+    "2016-17-shk-5",
+    "2016-17-shk-6",
+    "2016-17-shk-7",
+    "2016-17-shk-8",
+    "2016-17-shk-9",
+    "2016-17-zak-1",
+    "2016-17-zak-10",
+    "2016-17-zak-2",
+    "2016-17-zak-3",
+    "2016-17-zak-4",
+    "2016-17-zak-5",
+    "2016-17-zak-6",
+    "2016-17-zak-7",
+    "2016-17-zak-8",
+    "2016-17-zak-9",
+    "2017-18-mun-1",
+    "2017-18-mun-10",
+    "2017-18-mun-2",
+    "2017-18-mun-3",
+    "2017-18-mun-4",
+    "2017-18-mun-7",
+    "2017-18-mun-8",
+    "2017-18-mun-9",
+    "2017-18-reg-1",
+    "2017-18-reg-2",
+    "2017-18-reg-3",
+    "2017-18-reg-4",
+    "2017-18-reg-5",
+    "2017-18-reg-6",
+    "2017-18-reg-7",
+    "2017-18-reg-8",
+    "2017-18-shk-10",
+    "2017-18-shk-2",
+    "2017-18-shk-3",
+    "2017-18-shk-4",
+    "2017-18-shk-5",
+    "2017-18-shk-6",
+    "2017-18-shk-7",
+    "2017-18-shk-8",
+    "2017-18-shk-9",
+    "2017-18-zak-1",
+    "2017-18-zak-10",
+    "2017-18-zak-3",
+    "2017-18-zak-4",
+    "2017-18-zak-5",
+    "2017-18-zak-6",
+    "2017-18-zak-7",
+    "2017-18-zak-9",
+    "2018-19-mun-46",
+    "2018-19-mun-47",
+    "2018-19-mun-48",
+    "2018-19-mun-51",
+    "2018-19-mun-52",
+    "2018-19-mun-53",
+    "2018-19-mun-54",
+    "2018-19-mun-55",
+    "2018-19-mun-lenobl-49",
+    "2018-19-mun-lenobl-55",
+    "2018-19-mun-spb-5",
+    "2018-19-mun-spb-9",
+    "2018-19-mun-vrn-4",
+    "2018-19-reg-1",
+    "2018-19-reg-10",
+    "2018-19-reg-2",
+    "2018-19-reg-3",
+    "2018-19-reg-4",
+    "2018-19-reg-5",
+    "2018-19-reg-6",
+    "2018-19-reg-7",
+    "2018-19-reg-8",
+    "2018-19-reg-9",
+    "2018-19-shk-1",
+    "2018-19-shk-10",
+    "2018-19-shk-3",
+    "2018-19-shk-4",
+    "2018-19-shk-5",
+    "2018-19-shk-6",
+    "2018-19-shk-7",
+    "2018-19-shk-8",
+    "2018-19-shk-9",
+    "2018-19-zak-10",
+    "2018-19-zak-2",
+    "2018-19-zak-3",
+    "2018-19-zak-4",
+    "2018-19-zak-5",
+    "2018-19-zak-6",
+    "2018-19-zak-7",
+    "2018-19-zak-9",
+    "2019-20-mun-kgd-2",
+    "2019-20-mun-kgd-5",
+    "2019-20-mun-khab-1",
+    "2019-20-mun-khab-6",
+    "2019-20-mun-khab-7",
+    "2019-20-mun-khab-8",
+    "2019-20-mun-lip-1",
+    "2019-20-mun-lip-2",
+    "2019-20-mun-lip-4",
+    "2019-20-mun-mosobl-52",
+    "2019-20-mun-q5616d1",
+    "2019-20-mun-q61e036",
+    "2019-20-mun-q727051",
+    "2019-20-mun-q81216d",
+    "2019-20-mun-qce7da2",
+    "2019-20-mun-qcfa774",
+    "2019-20-mun-qd87aa6",
+    "2019-20-mun-qe6c5d3",
+    "2019-20-reg-1",
+    "2019-20-reg-10",
+    "2019-20-reg-3",
+    "2019-20-reg-4",
+    "2019-20-reg-5",
+    "2019-20-reg-6",
+    "2019-20-reg-7",
+    "2019-20-reg-9",
+    "2019-20-shk-q048752",
+    "2019-20-shk-q07892b",
+    "2019-20-shk-q988836",
+    "2019-20-shk-qe5cbe0",
+    "2020-21-mun-kgd-8",
+    "2020-21-mun-lenobl-2",
+    "2020-21-mun-mosobl-46",
+    "2020-21-mun-mosobl-52",
+    "2020-21-mun-mosobl-54",
+    "2020-21-mun-spb-1",
+    "2020-21-mun-spb-10",
+    "2020-21-mun-spb-4",
+    "2020-21-mun-spb-7",
+    "2020-21-mun-yak-4",
+    "2020-21-pri-q0b0b79",
+    "2020-21-pri-q26db53",
+    "2020-21-pri-q4e8b0e",
+    "2020-21-pri-q59b606",
+    "2020-21-pri-q8a64fd",
+    "2020-21-pri-qa538eb",
+    "2020-21-pri-qac236e",
+    "2020-21-reg-q094875",
+    "2020-21-reg-q1df3bd",
+    "2020-21-reg-q227d55",
+    "2020-21-reg-q2ffb5e",
+    "2020-21-reg-q4b4176",
+    "2020-21-reg-q55effb",
+    "2020-21-reg-q588b1b",
+    "2020-21-reg-q7a4710",
+    "2020-21-reg-qce4bc2",
+    "2020-21-shk-mosobl-47",
+    "2020-21-zak-q131194",
+    "2020-21-zak-q1f0e35",
+    "2020-21-zak-q244298",
+    "2020-21-zak-q2c2d90",
+    "2020-21-zak-q310901",
+    "2020-21-zak-q624620",
+    "2020-21-zak-qb0316f",
+    "2020-21-zak-qdf339a",
+    "2020-21-zak-qec0067",
+    "2020-21-zak-qf17a29",
+    "2021-22-mun-amur-1",
+    "2021-22-mun-amur-4",
+    "2021-22-mun-amur-6",
+    "2021-22-mun-mosobl-54",
+    "2021-22-mun-mosobl-58",
+    "2021-22-mun-mosobl-59",
+    "2021-22-mun-q0b125d",
+    "2021-22-mun-q5434f2",
+    "2021-22-mun-q60cd54",
+    "2021-22-mun-q6514a2",
+    "2021-22-mun-q6aaabb",
+    "2021-22-mun-q833ea2",
+    "2021-22-mun-q97fb5b",
+    "2021-22-mun-qa05d78",
+    "2021-22-mun-qd67aaa",
+    "2021-22-mun-tat-52",
+    "2021-22-mun-tat-53",
+    "2021-22-mun-tat-57",
+    "2021-22-mun-volog-8",
+    "2021-22-reg-q0716e5",
+    "2021-22-reg-q3e8cc7",
+    "2021-22-reg-q536b95",
+    "2021-22-reg-q5d6afc",
+    "2021-22-reg-q785d5e",
+    "2021-22-reg-q814d54",
+    "2021-22-reg-qbb2e02",
+    "2021-22-reg-qc30076",
+    "2021-22-reg-qd842f6",
+    "2021-22-reg-qdc153d",
+    "2021-22-shk-q0186fa",
+    "2021-22-shk-q09899d",
+    "2021-22-shk-q2cb94e",
+    "2021-22-shk-q39d834",
+    "2021-22-shk-q54821d",
+    "2021-22-shk-qa608ac",
+    "2021-22-shk-qadd856",
+    "2021-22-shk-qf1333c",
+    "2021-22-shk-qf19779",
+    "2021-22-shk-qfce22f",
+    "2021-22-zak-q0ee7de",
+    "2021-22-zak-q184754",
+    "2021-22-zak-q33f857",
+    "2021-22-zak-q36aaab",
+    "2021-22-zak-q38d33e",
+    "2021-22-zak-q3ba1dd",
+    "2021-22-zak-q3eaa02",
+    "2021-22-zak-q4bbaab",
+    "2021-22-zak-q4bfeed",
+    "2021-22-zak-qac2753",
+    "2022-23-mun-1",
+    "2022-23-mun-4",
+    "2022-23-mun-5",
+    "2022-23-mun-6",
+    "2022-23-mun-7",
+    "2022-23-mun-8",
+    "2022-23-mun-amur-4",
+    "2022-23-mun-kam-10",
+    "2022-23-mun-krsk-4",
+    "2022-23-mun-krsk-9",
+    "2022-23-mun-lenobl-58",
+    "2022-23-mun-mosobl-10",
+    "2022-23-mun-mosobl-4",
+    "2022-23-mun-orel-1",
+    "2022-23-mun-orel-3",
+    "2022-23-mun-orel-4",
+    "2022-23-mun-spb-8",
+    "2022-23-mun-tat-6",
+    "2022-23-reg-1",
+    "2022-23-reg-2",
+    "2022-23-reg-3",
+    "2022-23-reg-4",
+    "2022-23-reg-5",
+    "2022-23-reg-6",
+    "2022-23-reg-7",
+    "2022-23-reg-9",
+    "2022-23-shk-mosobl-16",
+    "2022-23-shk-mosobl-17",
+    "2022-23-shk-mosobl-18",
+    "2022-23-shk-mosobl-4",
+    "2022-23-shk-mosobl-6",
+    "2022-23-shk-q3c7e59",
+    "2022-23-shk-q623963",
+    "2022-23-shk-q637921",
+    "2022-23-shk-q92d9cf",
+    "2022-23-shk-qa664f6",
+    "2022-23-shk-qcd7a28",
+    "2022-23-shk-qde2687",
+    "2022-23-zak-1",
+    "2022-23-zak-10",
+    "2022-23-zak-2",
+    "2022-23-zak-3",
+    "2022-23-zak-4",
+    "2022-23-zak-5",
+    "2022-23-zak-6",
+    "2022-23-zak-7",
+    "2022-23-zak-8",
+    "2023-24-mun-30",
+    "2023-24-mun-31",
+    "2023-24-mun-32",
+    "2023-24-mun-33",
+    "2023-24-mun-34",
+    "2023-24-mun-35",
+    "2023-24-mun-36",
+    "2023-24-mun-37",
+    "2023-24-mun-38",
+    "2023-24-mun-kem-9",
+    "2023-24-mun-klg-10",
+    "2023-24-mun-klg-7",
+    "2023-24-mun-komi-2",
+    "2023-24-mun-komi-4",
+    "2023-24-mun-krsk-2",
+    "2023-24-mun-krsk-4",
+    "2023-24-mun-mosobl-10",
+    "2023-24-mun-mosobl-3",
+    "2023-24-mun-perm-6",
+    "2023-24-mun-spb-3",
+    "2023-24-mun-spb-8",
+    "2023-24-mun-spb-9",
+    "2023-24-reg-10",
+    "2023-24-reg-2",
+    "2023-24-reg-3",
+    "2023-24-reg-4",
+    "2023-24-reg-5",
+    "2023-24-reg-6",
+    "2023-24-reg-7",
+    "2023-24-reg-9",
+    "2023-24-shk-29",
+    "2023-24-shk-30",
+    "2023-24-shk-32",
+    "2023-24-shk-33",
+    "2023-24-shk-34",
+    "2023-24-shk-35",
+    "2023-24-shk-38",
+    "2023-24-shk-mosobl-12",
+    "2023-24-shk-mosobl-15",
+    "2023-24-shk-mosobl-19",
+    "2023-24-shk-mosobl-2",
+    "2023-24-shk-mosobl-4",
+    "2023-24-shk-mosobl-6",
+    "2023-24-zak-1",
+    "2023-24-zak-10",
+    "2023-24-zak-2",
+    "2023-24-zak-3",
+    "2023-24-zak-4",
+    "2023-24-zak-5",
+    "2023-24-zak-6",
+    "2023-24-zak-7",
+    "2023-24-zak-8",
+    "2023-24-zak-9",
+    "2024-25-mun-28",
+    "2024-25-mun-31",
+    "2024-25-mun-32",
+    "2024-25-mun-34",
+    "2024-25-mun-irk-10",
+    "2024-25-mun-irk-2",
+    "2024-25-mun-kem-4",
+    "2024-25-mun-kem-9",
+    "2024-25-mun-klg-8",
+    "2024-25-mun-krsk-6",
+    "2024-25-mun-kursk-1",
+    "2024-25-mun-kursk-7",
+    "2024-25-mun-kursk-8",
+    "2024-25-mun-mosobl-1",
+    "2024-25-mun-mosobl-3",
+    "2024-25-mun-mosobl-5",
+    "2024-25-mun-mosobl-9",
+    "2024-25-mun-nsk-5",
+    "2024-25-mun-spb-8",
+    "2024-25-mun-tula-2",
+    "2024-25-mun-udm-8",
+    "2024-25-mun-volog-1",
+    "2024-25-pri-31",
+    "2024-25-pri-32",
+    "2024-25-pri-33",
+    "2024-25-pri-34",
+    "2024-25-pri-36",
+    "2024-25-pri-37",
+    "2024-25-pri-38",
+    "2024-25-reg-1",
+    "2024-25-reg-10",
+    "2024-25-reg-3",
+    "2024-25-reg-4",
+    "2024-25-reg-5",
+    "2024-25-reg-6",
+    "2024-25-reg-7",
+    "2024-25-reg-8",
+    "2024-25-shk-29",
+    "2024-25-shk-31",
+    "2024-25-shk-33",
+    "2024-25-shk-34",
+    "2024-25-shk-35",
+    "2024-25-shk-37",
+    "2024-25-shk-38",
+    "2024-25-shk-mosobl-1",
+    "2024-25-shk-mosobl-7",
+    "2024-25-zak-q082614",
+    "2024-25-zak-qa37e63",
+    "2024-25-zak-qb18469",
+    "2024-25-zak-qe05919",
+    "2024-25-zak-qe3452d",
+    "2024-25-zak-qf78e62",
+    "2024-25-zak-qfce692",
+    "2025-26-mun-1",
+    "2025-26-mun-10",
+    "2025-26-mun-2",
+    "2025-26-mun-3",
+    "2025-26-mun-4",
+    "2025-26-mun-6",
+    "2025-26-mun-7",
+    "2025-26-mun-8",
+    "2025-26-mun-9",
+    "2025-26-mun-chel-2",
+    "2025-26-mun-chel-3",
+    "2025-26-mun-chel-7",
+    "2025-26-mun-irk-2",
+    "2025-26-mun-irk-5",
+    "2025-26-mun-irk-6",
+    "2025-26-mun-irk-7",
+    "2025-26-mun-kem-7",
+    "2025-26-mun-kgd-54",
+    "2025-26-mun-kgd-58",
+    "2025-26-mun-komi-55",
+    "2025-26-mun-krym-3",
+    "2025-26-mun-kursk-10",
+    "2025-26-mun-kursk-6",
+    "2025-26-mun-mosobl-10",
+    "2025-26-mun-mosobl-2",
+    "2025-26-mun-mosobl-4",
+    "2025-26-mun-mosobl-9",
+    "2025-26-mun-nnov-10",
+    "2025-26-mun-novg-3",
+    "2025-26-mun-novg-6",
+    "2025-26-mun-nsk-1",
+    "2025-26-mun-perm-2",
+    "2025-26-mun-ryaz-3",
+    "2025-26-mun-ryaz-4",
+    "2025-26-mun-ryaz-5",
+    "2025-26-mun-sverd-56",
+    "2025-26-mun-tat-56",
+    "2025-26-mun-tat-57",
+    "2025-26-mun-tat-58",
+    "2025-26-reg-1",
+    "2025-26-reg-10",
+    "2025-26-reg-2",
+    "2025-26-reg-3",
+    "2025-26-reg-4",
+    "2025-26-reg-5",
+    "2025-26-reg-6",
+    "2025-26-reg-7",
+    "2025-26-reg-8",
+    "2025-26-reg-9",
+    "2025-26-shk-29",
+    "2025-26-shk-30",
+    "2025-26-shk-31",
+    "2025-26-shk-32",
+    "2025-26-shk-33",
+    "2025-26-shk-34",
+    "2025-26-shk-35",
+    "2025-26-shk-37",
+    "2025-26-shk-37-a",
+    "2025-26-shk-mosobl-1",
+    "2025-26-shk-mosobl-11",
+    "2025-26-shk-mosobl-12",
+    "2025-26-shk-mosobl-13",
+    "2025-26-shk-mosobl-14",
+    "2025-26-shk-mosobl-15",
+    "2025-26-shk-mosobl-3",
+    "2025-26-shk-mosobl-4",
+    "2025-26-shk-mosobl-6",
+    "2025-26-shk-mosobl-7",
+    "2025-26-shk-mosobl-8",
+    "2025-26-zak-q11165a",
+    "2025-26-zak-q233def",
+    "2025-26-zak-q387588",
+    "2025-26-zak-q4176ce",
+    "2025-26-zak-q66aba2",
+    "2025-26-zak-q7c8228",
+    "2025-26-zak-q92942d",
+    "2025-26-zak-qbb4b13",
+    "2026-27-mun-1",
+    "2026-27-mun-10",
+    "2026-27-mun-2",
+    "2026-27-mun-3",
+    "2026-27-mun-4",
+    "2026-27-mun-5",
+    "2026-27-mun-6",
+    "2026-27-mun-9",
+    "addition-b1-01",
+    "addition-b1-02",
+    "addition-b1-04",
+    "addition-b1-05",
+    "addition-b1-06",
+    "addition-b1-07",
+    "addition-b1-08",
+    "addition-b1-09",
+    "addition-b1-10",
+    "addition-b1-11",
+    "addition-b1-12",
+    "addition-b1-14",
+    "addition-b1-15",
+    "addition-b1-16",
+    "addition-b1-17",
+    "addition-b1-18",
+    "addition-b1-19",
+    "addition-b1-20",
+    "addition-b2-01",
+    "addition-b2-02",
+    "addition-b2-03",
+    "addition-b2-04",
+    "addition-b2-05",
+    "addition-b2-06",
+    "addition-b2-09",
+    "addition-b2-11",
+    "addition-b2-12",
+    "addition-b2-13",
+    "addition-b2-14",
+    "addition-b2-15",
+    "addition-b2-16",
+    "addition-b2-18",
+    "addition-b2-20",
+    "cinema-q01",
+    "cinema-q02",
+    "cinema-q03",
+    "cinema-q09",
+    "cinema-q12",
+    "cinema-q13",
+    "cinema-q14",
+    "cinema-q18",
+    "cinema-q22",
+    "cinema-q24",
+    "cinema-q27",
+    "cinema-q28",
+    "cinema-q30",
+    "cinema-q31",
+    "cinema-q32",
+    "cinema-q33",
+    "cinema-q34",
+    "cinema-q35",
+    "crafts-q01",
+    "crafts-q03",
+    "crafts-q129",
+    "crafts-q130",
+    "crafts-q131",
+    "crafts-q132",
+    "crafts-q133",
+    "crafts-q134",
+    "crafts-q136",
+    "crafts-q138",
+    "crafts-q14",
+    "crafts-q18",
+    "crafts-q84",
+    "cuisine-q04",
+    "cuisine-q101",
+    "cuisine-q102",
+    "cuisine-q103",
+    "cuisine-q104",
+    "cuisine-q105",
+    "cuisine-q106",
+    "cuisine-q68",
+    "cuisine-q70",
+    "cuisine-q71",
+    "cuisine-q72",
+    "cuisine-q73",
+    "cuisine-q74",
+    "cuisine-q75",
+    "cuisine-q76",
+    "cuisine-q77",
+    "cuisine-q78",
+    "cuisine-q79",
+    "cuisine-q80",
+    "cuisine-q82",
+    "cuisine-q83",
+    "cuisine-q84",
+    "cuisine-q90",
+    "cuisine-q91",
+    "cuisine-q92",
+    "cuisine-q93",
+    "cuisine-q94",
+    "cuisine-q95",
+    "cuisine-q96",
+    "cuisine-q98",
+    "cuisine-q99",
+    "dynasties-q101",
+    "dynasties-q102",
+    "dynasties-q103",
+    "dynasties-q104",
+    "dynasties-q105",
+    "dynasties-q106",
+    "dynasties-q107",
+    "dynasties-q108",
+    "dynasties-q109",
+    "dynasties-q110",
+    "dynasties-q111",
+    "dynasties-q112",
+    "dynasties-q113",
+    "dynasties-q116",
+    "dynasties-q117",
+    "dynasties-q118",
+    "dynasties-q119",
+    "dynasties-q120",
+    "dynasties-q121",
+    "dynasties-q122",
+    "dynasties-q13",
+    "dynasties-q15",
+    "dynasties-q17",
+    "dynasties-q20",
+    "dynasties-q21",
+    "dynasties-q22",
+    "dynasties-q23",
+    "dynasties-q24",
+    "dynasties-q27",
+    "dynasties-q28",
+    "dynasties-q29",
+    "dynasties-q30",
+    "dynasties-q31",
+    "dynasties-q32",
+    "dynasties-q35",
+    "dynasties-q36",
+    "dynasties-q37",
+    "dynasties-q39",
+    "dynasties-q51",
+    "dynasties-q52",
+    "dynasties-q53",
+    "dynasties-q54",
+    "dynasties-q55",
+    "dynasties-q56",
+    "dynasties-q58",
+    "dynasties-q90",
+    "dynasties-q91",
+    "dynasties-q92",
+    "ethnos-q04",
+    "ethnos-q10",
+    "ethnos-q12",
+    "ethnos-q29",
+    "ethnos-q37",
+    "ethnos-q39",
+    "ethnos-q40",
+    "ethnos-q42",
+    "ethnos-q43",
+    "ethnos-q62",
+    "ethnos-q64",
+    "ethnos-q68",
+    "ethnos-q69",
+    "ethnos-q70",
+    "ethnos-q72",
+    "ethnos-q75",
+    "ethnos-q76",
+    "ethnos-q78",
+    "ethnos-q79",
+    "ethnos-q80",
+    "ethnos-q81",
+    "ethnos-q82",
+    "ethnos-q83",
+    "ethnos-q84",
+    "ethnos-q85",
+    "ethnos-q86",
+    "ethnos-q87",
+    "ethnos-q88",
+    "ethnos-q93",
+    "ethnos-q94",
+    "ethnos-q95",
+    "ethnos-q96",
+    "holidays-q13",
+    "holidays-q14",
+    "holidays-q15",
+    "holidays-q16",
+    "holidays-q17",
+    "holidays-q18",
+    "holidays-q21",
+    "holidays-q23",
+    "holidays-q24",
+    "holidays-q25",
+    "holidays-q26",
+    "holidays-q27",
+    "holidays-q28",
+    "holidays-q29",
+    "holidays-q31",
+    "holidays-q32",
+    "holidays-q33",
+    "holidays-q34",
+    "holidays-q35",
+    "holidays-q36",
+    "holidays-q37",
+    "holidays-q38",
+    "holidays-q39",
+    "holidays-q40",
+    "holidays-q41",
+    "holidays-q42",
+    "holidays-q43",
+    "holidays-q44",
+    "holidays-q45",
+    "holidays-q46",
+    "holidays-q47",
+    "holidays-q48",
+    "holidays-q49",
+    "holidays-q50",
+    "holidays-q51",
+    "landmarks-q10",
+    "landmarks-q100",
+    "landmarks-q101",
+    "landmarks-q102",
+    "landmarks-q103",
+    "landmarks-q104",
+    "landmarks-q105",
+    "landmarks-q106",
+    "landmarks-q107",
+    "landmarks-q110",
+    "landmarks-q111",
+    "landmarks-q112",
+    "landmarks-q113",
+    "landmarks-q114",
+    "landmarks-q19",
+    "landmarks-q23",
+    "landmarks-q39",
+    "landmarks-q46",
+    "landmarks-q48",
+    "landmarks-q55",
+    "landmarks-q59",
+    "landmarks-q72",
+    "landmarks-q77",
+    "landmarks-q78",
+    "landmarks-q79",
+    "landmarks-q80",
+    "landmarks-q83",
+    "landmarks-q84",
+    "landmarks-q90",
+    "landmarks-q91",
+    "landmarks-q92",
+    "landmarks-q93",
+    "landmarks-q94",
+    "landmarks-q95",
+    "landmarks-q96",
+    "landmarks-q97",
+    "landmarks-q98",
+    "landmarks-q99",
+    "literature-q20",
+    "literature-q21",
+    "literature-q22",
+    "literature-q23",
+    "literature-q24",
+    "literature-q25",
+    "literature-q35",
+    "literature-q37",
+    "literature-q40",
+    "literature-q43",
+    "literature-q44",
+    "literature-q49",
+    "literature-q51",
+    "literature-q53",
+    "literature-q57",
+    "literature-q59",
+    "literature-q66",
+    "literature-q67",
+    "literature-q68",
+    "literature-q69",
+    "literature-q71",
+    "literature-q72",
+    "literature-q73",
+    "literature-q74",
+    "literature-q76",
+    "literature-q77",
+    "literature-q80",
+    "literature-q81",
+    "literature-q82",
+    "literature-q83",
+    "literature-q84",
+    "literature-q85",
+    "literature-q86",
+    "literature-q88",
+    "literature-q89",
+    "literature-q90",
+    "literature-q91",
+    "literature-q92",
+    "literature-q93",
+    "literature-q94",
+    "literature-q95",
+    "literature-q96",
+    "literature-q97",
+    "literature-q98",
+    "literature-q99",
+    "modern-china-q09",
+    "modern-china-q10",
+    "modern-china-q11",
+    "modern-china-q12",
+    "modern-china-q13",
+    "modern-china-q14",
+    "modern-china-q15",
+    "modern-china-q16",
+    "modern-china-q17",
+    "modern-china-q18",
+    "modern-china-q19",
+    "modern-china-q20",
+    "modern-china-q21",
+    "modern-history-q100",
+    "modern-history-q101",
+    "modern-history-q103",
+    "modern-history-q104",
+    "modern-history-q105",
+    "modern-history-q106",
+    "modern-history-q108",
+    "modern-history-q109",
+    "modern-history-q11",
+    "modern-history-q110",
+    "modern-history-q111",
+    "modern-history-q112",
+    "modern-history-q113",
+    "modern-history-q114",
+    "modern-history-q115",
+    "modern-history-q116",
+    "modern-history-q117",
+    "modern-history-q12",
+    "modern-history-q17",
+    "modern-history-q24",
+    "modern-history-q25",
+    "modern-history-q26",
+    "modern-history-q27",
+    "modern-history-q28",
+    "modern-history-q29",
+    "modern-history-q31",
+    "modern-history-q33",
+    "modern-history-q54",
+    "modern-history-q55",
+    "modern-history-q56",
+    "modern-history-q57",
+    "modern-history-q59",
+    "modern-history-q60",
+    "modern-history-q61",
+    "modern-history-q62",
+    "modern-history-q63",
+    "modern-history-q64",
+    "modern-history-q66",
+    "modern-history-q68",
+    "modern-history-q69",
+    "modern-history-q71",
+    "modern-history-q78",
+    "modern-history-q79",
+    "modern-history-q80",
+    "modern-history-q81",
+    "modern-history-q82",
+    "modern-history-q85",
+    "modern-history-q86",
+    "modern-history-q92",
+    "modern-history-q93",
+    "modern-history-q95",
+    "modern-history-q97",
+    "modern-history-q98",
+    "modern-history-q99",
+    "money-q04",
+    "money-q05",
+    "money-q06",
+    "money-q07",
+    "money-q08",
+    "money-q09",
+    "money-q10",
+    "money-q11",
+    "money-q12",
+    "money-q13",
+    "money-q14",
+    "money-q15",
+    "money-q19",
+    "money-q21",
+    "money-q25",
+    "money-q26",
+    "money-q27",
+    "money-q36",
+    "money-q39",
+    "money-q40",
+    "myths-q13",
+    "myths-q14",
+    "myths-q15",
+    "myths-q16",
+    "myths-q17",
+    "myths-q18",
+    "myths-q19",
+    "myths-q20",
+    "myths-q21",
+    "myths-q22",
+    "myths-q23",
+    "myths-q24",
+    "myths-q25",
+    "myths-q26",
+    "myths-q28",
+    "myths-q29",
+    "myths-q30",
+    "nature-q100",
+    "nature-q101",
+    "nature-q102",
+    "nature-q103",
+    "nature-q104",
+    "nature-q105",
+    "nature-q106",
+    "nature-q107",
+    "nature-q108",
+    "nature-q112",
+    "nature-q113",
+    "nature-q115",
+    "nature-q116",
+    "nature-q135",
+    "nature-q140",
+    "nature-q141",
+    "nature-q142",
+    "nature-q143",
+    "nature-q144",
+    "nature-q145",
+    "nature-q146",
+    "nature-q147",
+    "nature-q148",
+    "nature-q149",
+    "nature-q150",
+    "nature-q151",
+    "nature-q153",
+    "nature-q154",
+    "nature-q155",
+    "nature-q156",
+    "nature-q157",
+    "nature-q158",
+    "nature-q159",
+    "nature-q160",
+    "nature-q161",
+    "nature-q162",
+    "nature-q163",
+    "nature-q164",
+    "nature-q27",
+    "nature-q30",
+    "nature-q31",
+    "nature-q35",
+    "nature-q36",
+    "nature-q37",
+    "nature-q38",
+    "nature-q39",
+    "nature-q42",
+    "nature-q44",
+    "nature-q45",
+    "nature-q46",
+    "nature-q47",
+    "nature-q48",
+    "nature-q49",
+    "nature-q50",
+    "nature-q51",
+    "nature-q54",
+    "nature-q55",
+    "nature-q56",
+    "nature-q57",
+    "nature-q58",
+    "nature-q59",
+    "nature-q60",
+    "nature-q62",
+    "nature-q63",
+    "nature-q64",
+    "nature-q65",
+    "nature-q67",
+    "nature-q68",
+    "nature-q70",
+    "painting-q04",
+    "painting-q05",
+    "painting-q06",
+    "painting-q09",
+    "painting-q102",
+    "painting-q103",
+    "painting-q104",
+    "painting-q105",
+    "painting-q106",
+    "painting-q107",
+    "painting-q108",
+    "painting-q109",
+    "painting-q16",
+    "painting-q17",
+    "painting-q20",
+    "painting-q22",
+    "painting-q25",
+    "painting-q81",
+    "painting-q82",
+    "painting-q83",
+    "painting-q85",
+    "painting-q86",
+    "painting-q88",
+    "painting-q89",
+    "painting-q92",
+    "painting-q94",
+    "painting-q98",
+    "painting-q99",
+    "people-q06",
+    "people-q07",
+    "people-q08",
+    "people-q09",
+    "people-q10",
+    "people-q11",
+    "people-q12",
+    "people-q13",
+    "people-q14",
+    "people-q15",
+    "people-q16",
+    "people-q17",
+    "people-q18",
+    "people-q19",
+    "people-q20",
+    "people-q21",
+    "people-q22",
+    "people-q23",
+    "people-q24",
+    "people-q25",
+    "people-q26",
+    "people-q27",
+    "people-q28",
+    "provinces-q100",
+    "provinces-q101",
+    "provinces-q102",
+    "provinces-q103",
+    "provinces-q104",
+    "provinces-q105",
+    "provinces-q106",
+    "provinces-q107",
+    "provinces-q108",
+    "provinces-q31",
+    "provinces-q32",
+    "provinces-q33",
+    "provinces-q34",
+    "provinces-q35",
+    "provinces-q36",
+    "provinces-q37",
+    "provinces-q38",
+    "provinces-q41",
+    "provinces-q42",
+    "provinces-q43",
+    "provinces-q44",
+    "provinces-q45",
+    "provinces-q50",
+    "provinces-q52",
+    "provinces-q53",
+    "provinces-q56",
+    "provinces-q58",
+    "provinces-q71",
+    "provinces-q75",
+    "provinces-q77",
+    "provinces-q79",
+    "provinces-q83",
+    "provinces-q85",
+    "provinces-q88",
+    "provinces-q89",
+    "provinces-q90",
+    "provinces-q93",
+    "provinces-q94",
+    "provinces-q95",
+    "provinces-q96",
+    "provinces-q97",
+    "provinces-q98",
+    "provinces-q99",
+    "sets-q08",
+    "sets-q09",
+    "sets-q10",
+    "sets-q11",
+    "sets-q12",
+    "space-q05",
+    "space-q08",
+    "space-q09",
+    "space-q12",
+    "space-q13",
+    "space-q14",
+    "space-q15",
+    "space-q16",
+    "space-q17",
+    "space-q18",
+    "space-q19",
+    "space-q20",
+    "state-q10",
+    "state-q11",
+    "state-q12",
+    "state-q13",
+    "state-q14",
+    "state-q15"
+  ],
+  "items": [
+    {
+      "id": "2020-21-mun-mosobl-47",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [
+        {
+          "id": "provinces-q52",
+          "questionRu": "Какой город называют «городом льда»?",
+          "relationship": "Харбин—«город льда»: иной факт. В пояснении есть его административная роль; это возможная подсказка, не дубль вопроса.",
+          "inVisiblePool": true
+        },
+        {
+          "id": "landmarks-q101",
+          "questionRu": "В каком городе находится остров Солнца (太阳岛)?",
+          "relationship": "Остров Солнца—Харбин: иной факт.",
+          "inVisiblePool": true
+        }
+      ],
+      "screeningReason": "Прямой или обратной проверки связи Хэйлунцзян—Харбин в 1091 нет. Харбин уже спрашивается по прозвищу и острову Солнца, но это другие факты. Варианты — четыре города без формального отсева."
+    },
+    {
+      "id": "2024-25-mun-irk-8",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [
+        {
+          "id": "2015-16-mun-spb-4",
+          "questionRu": "Какую воду Лу Юй в «Каноне чая» считал лучшей?",
+          "relationship": "Вопрос о воде прямо называет «Канон чая»: взаимная подсказка к названию книги, но спрашивает другой факт.",
+          "inVisiblePool": true
+        }
+      ],
+      "screeningReason": "С разрешённой заменой трёх неопределимых заглавий получаются четыре реальные чайные книги. Существующий вопрос о воде лишь называет 茶经; это межвопросная подсказка, а не смысловой дубль."
+    },
+    {
+      "id": "2022-23-mun-orel-2",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [
+        {
+          "id": "2019-20-shk-mosobl-46",
+          "questionRu": "В каком году отмечалось 70-летие установления дипломатических отношений между КНР и бывшим СССР (Россией)?",
+          "relationship": "Внутренний дубль в резерве: 70-летие той же даты; не брать одновременно.",
+          "inVisiblePool": false
+        },
+        {
+          "id": "modern-history-q112",
+          "questionRu": "В каком году образована Китайская Народная Республика?",
+          "relationship": "Год образования КНР совпадает, но событие другое; это не смысловой дубль.",
+          "inVisiblePool": true
+        },
+        {
+          "id": "modern-history-q92",
+          "questionRu": "В каком году СССР и КНР подписали Договор о дружбе, союзе и взаимной помощи, заключённый на 30 лет?",
+          "relationship": "Советско-китайский договор 1950 года — другое событие, не дата установления отношений.",
+          "inVisiblePool": true
+        }
+      ],
+      "screeningReason": "Дата 1949 не повторяет другой видимый вопрос: год образования КНР — отдельный факт, а договор 1950 — отдельное событие. Но в самом резерве есть юбилейный дубль 2019, который следует исключить из этой партии. Требуется явно показать правку России на СССР, поскольку в 1949 году отношения установил Советский Союз. Исходные ключ 1949 и все четыре варианта сохранены."
+    },
+    {
+      "id": "2022-23-shk-mosobl-2",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [
+        {
+          "id": "provinces-q41",
+          "questionRu": "Какое сокращённое название у провинции Фуцзянь?",
+          "relationship": "Сокращение Фуцзяни 闽 — другой факт.",
+          "inVisiblePool": true
+        },
+        {
+          "id": "ethnos-q87",
+          "questionRu": "На каком диалекте говорят в большей части провинции Фуцзянь (福建) и на Тайване?",
+          "relationship": "Миньские диалекты Фуцзяни — другой факт.",
+          "inVisiblePool": true
+        }
+      ],
+      "screeningReason": "Самостоятельная связь Фучжоу—Фуцзянь, прямого/обратногоQAдубля в1091нет. После явной категориальной правки广州→广东 все4варианта — провинции. Замена сохраняет узнаваемую исходную паруГуанчжоу—Гуандун и разрешена к предложению пользователем."
+    },
+    {
+      "id": "2024-25-mun-krym-4",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [],
+      "screeningReason": "После явной замены трёх бессмысленных дистракторов на реальных мастеров сохраняется полезная связь Ип Ман—Вин-Чун. Ключ и подписи подтверждены официальными/академическими источниками."
+    },
+    {
+      "id": "2023-24-mun-chel-7",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [],
+      "screeningReason": "После явно показанного восстановления месяца август вопрос однозначен. Ключ 22 и исходные четыре числовых варианта сохранены без добавления месяцев к вариантам. Правильная подпись даёт историю учреждения праздника. У неверных — самостоятельные подтверждённые события и памятные даты тех же дней августа; ложные даты Дня флага им не приписываются."
+    },
+    {
+      "id": "2022-23-mun-kam-7",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [
+        {
+          "id": "2025-26-mun-6",
+          "questionRu": "Какое из перечисленных морей омывает берега Китая?",
+          "relationship": "Одно из морей, омывающих Китай,—Жёлтое: другой вопрос.",
+          "inVisiblePool": true
+        },
+        {
+          "id": "nature-q35",
+          "questionRu": "Какое море считают самым большим внутренним морем Китая?",
+          "relationship": "Бохайское море — внутреннее: другой аспект.",
+          "inVisiblePool": true
+        },
+        {
+          "id": "nature-q36",
+          "questionRu": "Какое из морей Китая имеет самый широкий шельф?",
+          "relationship": "Ширина шельфа Восточно-Китайского моря: другой аспект.",
+          "inVisiblePool": true
+        },
+        {
+          "id": "nature-q37",
+          "questionRu": "Какое море — самое большое и самое глубокое из морей Китая?",
+          "relationship": "Наибольшая площадь и глубина Южно-Китайского: другой аспект.",
+          "inVisiblePool": true
+        }
+      ],
+      "screeningReason": "Число4 подтверждено академическим источником. Прямого вопроса на число или полный состав четырёх морей среди1091 нет. Вопросы об отдельных морях не превращают счёт набора в дубль. Добавляется явно помеченный o4 六."
+    },
+    {
+      "id": "2023-24-shk-mosobl-10",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [
+        {
+          "id": "crafts-q129",
+          "questionRu": "Какая из четырёх знаменитых вышивок Китая славится двусторонней вышивкой: одно и то же изображение видно на обеих сторонах ткани?",
+          "relationship": "Та же школа 苏绣, но спрашивается техника 双面绣; не прямой/обратный дубль города происхождения.",
+          "inVisiblePool": true
+        },
+        {
+          "id": "crafts-q14",
+          "questionRu": "Какая вышивка сосредоточена в Чэнду и названа по древнему имени этого края?",
+          "relationship": "Тот же тематический набор четырёх вышивок; вопрос относится к другой школе и её центру Чэнду.",
+          "inVisiblePool": true
+        }
+      ],
+      "screeningReason": "Город—школа вышивки представляет отдельный факт, не дублирует двустороннюю технику в crafts-q129. Уточнение до одной из четырёх знаменитых школ снимает исходную двусмысленность с Ханчжоу; варианты сохранены."
+    },
+    {
+      "id": "2025-26-mun-irk-3",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [],
+      "screeningReason": "После разрешённого уточнения критерия это пригодный вопрос: спрашиваются две основные платформы, а не всякая часто используемая система. Официальный портал Шанхая называет именно WeChat Pay и Alipay. Все четыре исходных варианта QQ/微信/银联/淘宝 и ключ 微信 сохранены. QQ тоже принадлежит Tencent, поэтому критерий «принадлежит Tencent» намеренно не используется."
+    },
+    {
+      "id": "2024-25-mun-kursk-2",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [
+        {
+          "id": "state-q14",
+          "questionRu": "Как в древности называли Нанкин — «столицу шести династий»?",
+          "relationship": "Сосед спрашивает Цзиньлин—Нанкин; Яньцзин есть среди неверных вариантов с подписью Пекин. Другая связь, не дубль.",
+          "inVisiblePool": true
+        },
+        {
+          "id": "provinces-q98",
+          "questionRu": "Каков статус Пекина в административном делении КНР?",
+          "relationship": "Статус Пекина — другой аспект.",
+          "inVisiblePool": true
+        }
+      ],
+      "screeningReason": "Самостоятельный вопрос Пекин—Яньцзин. Пользователь разрешил предлагать явные замены слабых дистракторов. Заменяются3неверных варианта: парк/озеро北海 и общие古城/京都;4исторических имени дают однородный набор и единственный ключ."
+    },
+    {
+      "id": "2022-23-mun-krsk-2",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [],
+      "screeningReason": "Разрешены пары из двух инструментов. Три исходные европейские пары заменены короткими реальными японской, корейской и индийской парами; ключ 二胡、古琴 сохранён, формат проверяет распознавание китайских инструментов."
+    },
+    {
+      "id": "2022-23-mun-lenobl-59",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [
+        {
+          "id": "2025-26-shk-37-a",
+          "questionRu": "Какая река впадает в море Лаптевых Северного Ледовитого океана?",
+          "relationship": "Связанный самостоятельный факт о Лене: устье, не дубль длины.",
+          "inVisiblePool": true
+        },
+        {
+          "id": "2025-26-mun-mosobl-9",
+          "questionRu": "Какой город стоит на реке Лена?",
+          "relationship": "Связанный самостоятельный факт о Лене: Якутск; не дубль длины.",
+          "inVisiblePool": true
+        }
+      ],
+      "screeningReason": "Пригоден после явного уточнения «целиком протекающая по территории России». Исходный ключ Лена сохранён. Неву заменено Обью, добавлен Енисей: набор из четырёх крупных рек лучше по трудности. Росстат даёт длины отдельных рек 4,4 / 3,7 / 3,5 / 3,5 тыс. км; суммы Обь—Иртыш и Енисей—Ангара—Селенга не смешиваются с длиной основного русла."
+    },
+    {
+      "id": "2021-22-mun-volog-9",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [
+        {
+          "id": "2022-23-mun-lenobl-58",
+          "questionRu": "Сколько единиц провинциального уровня включает официальное административное деление КНР?",
+          "relationship": "Вопрос о34единицах провинциального уровня; неверныйo1имеет подпись «23 — число провинций». Не прямойQAдубль, но сосед уже преподаёт ровно эту деталь и даёт ответ. Правильная подпись кандидата взаимно даёт34; требуется согласование/группа фактов.",
+          "inVisiblePool": true
+        }
+      ],
+      "screeningReason": "Самостоятельное число провинций, не совпадающее с вопросами об отдельных провинциях/статусах. Ключ23 соответствует официальному административному делению КНР (включает Тайвань); стем полезно привязать к этому делению. Чисто числовые дистракторы не требуют названий/биографических подписей по CLAUDE.md."
+    },
+    {
+      "id": "2023-24-mun-klg-3",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [],
+      "screeningReason": "Ключ подтверждён двумя музейными источниками. «Высокое происхождение» осторожно уточнено до социального положения. После рецензии 手指 явно заменён на 胡须, 睫毛 — на 头发; набор стал правдоподобнее. Статус borderline сохранён для окончательного авторского выбора."
+    },
+    {
+      "id": "2023-24-mun-udm-5",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [
+        {
+          "id": "modern-history-q100",
+          "questionRu": "В каком году распался Советский Союз?",
+          "relationship": "Распад СССР в 1991 году — связанный контекст, не тождественный переименованию РСФСР.",
+          "inVisiblePool": true
+        }
+      ],
+      "screeningReason": "Исходное ошибочно названное «провозглашение РФ» заменено точным юридическим событием — официальным переименованием РСФСР. Ключ 1991 и все три неверных исходных года сохранены. Это более заметная редакция, чем исправление одной опечатки: показать автору целиком. Подпись правильного ответа добавляет переходное разрешение пользоваться старым названием в 1992 году."
+    },
+    {
+      "id": "2020-21-mun-mosobl-55",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [],
+      "screeningReason": "Самостоятельная связь Сямэнь—Гуланъюй подтверждена первичными источниками. После явно заявленного удаления устаревшей площади1516км² и замены залива островом в вариантах нет формального отсева. Ключ и корректный исходный 太阳岛 сохранены."
+    },
+    {
+      "id": "2025-26-mun-perm-8",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [
+        {
+          "id": "2025-26-mun-ryaz-8",
+          "questionRu": "Что не является формой приветствия в Китае?",
+          "relationship": "Вопрос о приветствиях/прощаниях из предыдущей партии; функция фатической реплики об еде — самостоятельный факт.",
+          "inVisiblePool": false
+        }
+      ],
+      "screeningReason": "Прагматический культурный факт, не просто перевод приветствия. Добавлен контекст встречи знакомых; исходные четыре варианта сохранены. Предыдущая близость к разграничению приветствий/прощаний не является прямым дублем."
+    },
+    {
+      "id": "2020-21-mun-lenobl-9",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [],
+      "screeningReason": "Факт сильный: официальный Росстат прямо даёт 193 национальности по переписи 2010 года. Условие теперь датировано, исходный правильный 190 多 сохранён. Три неверных значения заменены соседними десятками 170 多 / 180 多 / 200 多. В китайском 190多 здесь «сто девяносто с лишним» (191–199), а не математическое «любое число выше 190»; одинаковая степень округления делает набор однородным. В подписи правильного ответа добавлен принцип самоопределения."
+    },
+    {
+      "id": "2022-23-shk-mosobl-20",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [
+        {
+          "id": "landmarks-q94",
+          "questionRu": "В каком городе стоит дворец Потала (布达拉宫)?",
+          "relationship": "Потала—Лхаса: отдельный конкретный факт, не дубль.",
+          "inVisiblePool": true
+        },
+        {
+          "id": "2021-22-mun-qd67aaa",
+          "questionRu": "Какой город является центром Тибетского автономного района?",
+          "relationship": "Лхаса—центр Тибетского АР: отдельный факт.",
+          "inVisiblePool": true
+        }
+      ],
+      "screeningReason": "Исходный «центр буддизма вКитае» некорректно широк. Явное сужение до традиционного религиозного центраТибета сохраняет выборЛхасы и все4исходных варианта. ИКОМОС прямо называет роль религиозного центраТибета; собственная научная статьяЧжанЮнцзяна подтверждаетеё. Слово«главный» не добавлялось. После уточнения вопрос несколько базовый: единственный из4городов находится вТибете, что нужно честно показать автору."
+    },
+    {
+      "id": "2023-24-mun-mosobl-6",
+      "referenceCount": 1091,
+      "verdict": "Прямого или обратного дубля той же вопросно-ответной связи не найдено; связанные стороны факта и взаимные подсказки сохранены отдельно.",
+      "neighborsExamined": [
+        {
+          "id": "2021-22-reg-q5d6afc",
+          "questionRu": "Китайский актёр, звезда кунфу, в 2017 году стал лауреатом почётной премии «Оскар» за вклад в киноискусство — первым из китайцев, удостоенных такой награды.",
+          "relationship": "Та же сущность 成龙; вопрос о награде, а кандидат — о соответствии китайского и сценического имён. Не тождество учебной связи.",
+          "inVisiblePool": true
+        }
+      ],
+      "screeningReason": "Имя 成龙 можно проверить отдельно от почётного Оскара. После замены двух мнимых имён набор корректен, но рядом есть вопрос на узнавание того же актёра, а Ип Ман в этой партии создаёт дополнительную кинотематическую подсказку. Оценить, нужен ли ещё один вопрос на китайское имя."
+    }
+  ],
+  "notSelected": [
+    {
+      "id": "2016-17-mun-yar-4",
+      "status": "exclude",
+      "reason": "Недоказанное рекламное обозначение «первое военное сооружение»; отсев дворца и терракотовых фигур практически даёт стену. Добавление четвёртого варианта само по себе не исправляет посылку.",
+      "neighbors": [
+        {
+          "id": "2015-16-reg-9",
+          "questionRu": "Какое величайшее сооружение было построено в эпоху Цинь?",
+          "relationship": "Та же общеизвестная идентификация Великой стены как грандиозного древнего оборонительного сооружения; не точный дубль хронологии."
+        },
+        {
+          "id": "landmarks-q105",
+          "questionRu": "Какое укрепление внесено в список Всемирного культурного наследия ЮНЕСКО?",
+          "relationship": "Соседний факт о Великой стене; сама сущность не является основанием исключения."
+        }
+      ]
+    },
+    {
+      "id": "2016-17-mun-yar-9",
+      "status": "exclude",
+      "reason": "«Одно из редчайших сокровищ среди десяти великих древних гробниц мира» — не определённый проверяемый титул, а терракотовые фигуры сами не гробница. Из трёх вариантов лишь 兵马俑 связан с гробницей; исправление требует другой посылки.",
+      "neighbors": [
+        {
+          "id": "2023-24-reg-4",
+          "questionRu": "Эта достопримечательность Китая включена в список всемирного наследия ЮНЕСКО как часть комплекса «гробницы первого императора династии Цинь».",
+          "relationship": "Уже идентифицируется терракотовая армия как часть мавзолея первого императора Цинь; это надёжнее расплывчатого рейтинга."
+        }
+      ]
+    },
+    {
+      "id": "2022-23-mun-tat-2",
+      "status": "exclude",
+      "reason": "Ключ IIвек до н.э. подтверждён Национальным музеем. Формулировку можно аккуратно исправить до «открытия» и удалить подсказку «до нашей эры» из стема, сохранив4исходных варианта. Но people-q18 прямо называет IIвек до н.э. и дату138 для миссии ЧжанЦяня, а dynasties-q13 связывает эти посольства с открытием пути. Прямого вопроса о веке открытия нет; сильная смысловая зависимость остаётся и требует решения, не считать безусловно новым фактом. Root выбрал не включать в20ввиду восстановимой известной датировки; вместо него исследованаЛхаса.",
+      "neighbors": [
+        {
+          "id": "dynasties-q13",
+          "questionRu": "При какой династии после посольств Чжан Цяня в Западный край был открыт Шёлковый путь?",
+          "relationship": "Та же хронологическая связь открытия Шёлкового пути; кандидат просит век, сосед — династию."
+        },
+        {
+          "id": "2019-20-mun-qcfa774",
+          "questionRu": "Какой современный китайский город был столицей Западной Хань и началом знаменитого Шёлкового пути?",
+          "relationship": "Другой факт: начальный город пути — Сиань; это не дубль."
+        },
+        {
+          "id": "people-q18",
+          "questionRu": "Чем прославился Чжан Цянь (张骞), живший во II веке до н. э.?",
+          "relationship": "Стем уже даёт IIвек до н.э.; правильная подпись даёт138г.до н.э. для посольства ЧжанЦяня. Вместе с dynasties-q13 кандидат восстанавливается из уже сообщённой датировки."
+        }
+      ]
+    },
+    {
+      "id": "2022-23-shk-mosobl-11",
+      "status": "exclude",
+      "reason": "Набор четырёх красавиц подтверждён досье sets, прямого вопроса на полный состав в 1091 нет. Не дубль их биографий, но четыре длинных списка по четыре имени против прежнего предпочтения автора. Нужна явная готовность вернуть такой формат. Root подтвердил действующее предпочтение автора: такие длинные списки в новую двадцатку не включать.",
+      "neighbors": [
+        {
+          "id": "sets-q08",
+          "questionRu": "Какую из четырёх красавиц Китая царство Юэ подарило вану царства У Фучаю?",
+          "relationship": "Биография Си Ши: другая сторона, не дубль полного состава."
+        },
+        {
+          "id": "sets-q09",
+          "questionRu": "Какую из четырёх красавиц Китая выдали замуж за шаньюя сюнну Хуханье, чтобы скрепить мир с кочевниками?",
+          "relationship": "Биография Ван Чжаоцзюнь: другая сторона."
+        },
+        {
+          "id": "sets-q10",
+          "questionRu": "Какая из четырёх красавиц Китая — героиня «Троецарствия», поссорившая Дун Чжо и его приёмного сына Люй Бу?",
+          "relationship": "Биография Дяочань: другая сторона."
+        },
+        {
+          "id": "sets-q11",
+          "questionRu": "Какая из четырёх красавиц Китая была любимой наложницей императора Сюань-цзуна?",
+          "relationship": "Биография Ян Гуйфэй: другая сторона."
+        }
+      ]
+    },
+    {
+      "id": "2023-24-mun-klg-4",
+      "status": "exclude",
+      "reason": "Посылка «китайские правители имели три имени» смешивает личное, храмовое, посмертное имя и девиз правления. Умереть/жениться/получить славу — слабые варианты; исправление до вопроса о 谥号 меняет исходную задачу.",
+      "neighbors": []
+    },
+    {
+      "id": "2024-25-shk-mosobl-19",
+      "status": "exclude",
+      "reason": "XV век получается укрупнением уже сообщённой в действующем вопросе датировки строительства 1406–1420. Не самостоятельная новая учебная связь для этой партии.",
+      "neighbors": [
+        {
+          "id": "landmarks-q90",
+          "questionRu": "При какой династии построен Запретный город — императорский дворец Гугун?",
+          "relationship": "Строительство Гугуна при Мин; правильная подпись и пояснение уже дают 1406–1420. Кандидат проверяет ту же датировку с меньшей точностью."
+        }
+      ]
+    },
+    {
+      "id": "2025-26-mun-irk-8",
+      "status": "exclude",
+      "reason": "Источники и традиции дают разные наборы четырёх древних столиц; при одном из списков Пекин тоже лишний. Кроме того, Шанхай среди Сианя/Лояна/Пекина слишком легко отсекается. Близость к вопросу о шести столицах сама по себе не объявлена дублем.",
+      "neighbors": [
+        {
+          "id": "2015-16-zak-6",
+          "questionRu": "Какой город не относится к шести древним столицам Китая?",
+          "relationship": "Проверка состава шести древних столиц. Четыре и шесть — не один закрытый набор, но сюжет близкий."
+        }
+      ]
+    },
+    {
+      "id": "2016-17-mun-yar-5",
+      "status": "exclude",
+      "reason": "Гималаи среди Чанбайшаня и Тяньшаня дают слишком базовую мировую географию. Прямого вопроса на высочайшую горную систему в 1091 нет; исключение по сложности, не по совпадению с Эверестом.",
+      "neighbors": [
+        {
+          "id": "nature-q144",
+          "questionRu": "Какая гора — высочайшая в мире?",
+          "relationship": "Высочайшая вершина, а не горная система: другая сторона, не прямой дубль."
+        },
+        {
+          "id": "2019-20-reg-7",
+          "questionRu": "На границе Китая и какой страны находится высочайшая вершина мира Джомолунгма?",
+          "relationship": "Граница Эвереста с Непалом: другая сторона."
+        }
+      ]
+    },
+    {
+      "id": "2018-19-mun-lenobl-52",
+      "status": "exclude",
+      "reason": "Длинные списки из четырёх городов; во всех неверных наборах есть Санья, а в двух ещё Гонконг/Макао. Северо-восточную провинцию можно выбрать очевидным отсевом юга. Не нужно знать Муданьцзян, Цзямусы или Суйфэньхэ.",
+      "neighbors": []
+    },
+    {
+      "id": "2020-21-mun-novg-9",
+      "status": "exclude",
+      "reason": "Без названия дворца стем слишком общий. Уточнение до Запретного города превращает вопрос в обратный повтор уже действующей связи Гугун—Пекин; кроме того, вопрос очень простой.",
+      "neighbors": [
+        {
+          "id": "2016-17-mun-8",
+          "questionRu": "Как сейчас называется императорский дворец династий Мин и Цин в Пекине?",
+          "relationship": "Гугун—императорский дворец Мин/Цин в Пекине; кандидат спрашивает город по той же связи."
+        }
+      ]
+    },
+    {
+      "id": "2021-22-mun-amur-2",
+      "status": "exclude",
+      "reason": "Разведение панд не ограничивается одной провинцией; «где в Китае разводят панд?» не задаёт единственный регион. Уточнение до конкретной базы было бы новой по содержанию посылкой, а не аккуратной правкой.",
+      "neighbors": []
+    },
+    {
+      "id": "2021-22-mun-lenobl-6",
+      "status": "exclude",
+      "reason": "Южный Китай включает субтропики и тропики; единственный ключ 热带 при «южной части» слишком широк. 北极地带 и 赤道带 облегчают отсев. Не повторяет напрямую вопрос о большей части территории.",
+      "neighbors": [
+        {
+          "id": "2022-23-mun-1",
+          "questionRu": "В каком климатическом поясе находится большая часть территории Китая?",
+          "relationship": "Большая часть Китая—умеренный пояс; не прямой дубль южного пояса."
+        }
+      ]
+    },
+    {
+      "id": "2021-22-mun-omsk-3",
+      "status": "exclude",
+      "reason": "Площадь Тяньаньмэнь—Пекин слишком элементарная связь для заявленной сложности. Прямого вопроса об этом в 1091 нет; исключение по сложности. Внутри резерва обратный повтор 2023-24-mun-kem-8.",
+      "neighbors": [
+        {
+          "id": "2015-16-mun-6",
+          "questionRu": "При какой династии началось строительство ворот Тяньаньмэнь в Пекине?",
+          "relationship": "Другой факт: династия строительства ворот; не дубль площади."
+        },
+        {
+          "id": "2023-24-mun-kem-8",
+          "questionRu": "Как называется площадь, расположенная в центре Пекина – столицы Китайской Народной Республики (до XX века крупнейшая в мире площадь)?",
+          "relationship": "Внутри резерва обратная связь: площадь в центре Пекина — Тяньаньмэнь."
+        }
+      ]
+    },
+    {
+      "id": "2023-24-mun-kem-8",
+      "status": "exclude",
+      "reason": "Самая базовая площадь Пекина; два неверных ответа не площади (Храм Неба и Гугун), Красная площадь однозначно относится к Москве. Утверждение «доXXвека крупнейшая в мире» не обосновано и выглядит ошибочным. Внутри резерва обратный повтор 2021-22-mun-omsk-3.",
+      "neighbors": [
+        {
+          "id": "2021-22-mun-omsk-3",
+          "questionRu": "В каком городе находится площадь 天安门?",
+          "relationship": "Обратная связь Тяньаньмэнь—Пекин внутри резерва."
+        }
+      ]
+    },
+    {
+      "id": "2024-25-mun-bash-2",
+      "status": "exclude",
+      "reason": "Панда среди лошади/коровы/овцы угадывается по домашним животным; к тому же существуют дикие лошади и дикие быки/бараны Китая, так что посылка слишком общая.",
+      "neighbors": []
+    },
+    {
+      "id": "2024-25-mun-bash-9",
+      "status": "exclude",
+      "reason": "Из четырёх вариантов два не площади; «центральный вход» Гугуна — ворота Умэнь, а Тяньаньмэнь находится южнее через Дуаньмэнь. Слово «рядом» размывает географию; вопрос о главной площади слишком прост. Не объявляю точным дублем Гугун—Пекин.",
+      "neighbors": []
+    },
+    {
+      "id": "2024-25-shk-mosobl-3",
+      "status": "borderline",
+      "reason": "Контур карты—петух: прямого дубля в1091 нет, четыре птицы однородны. Однако школьная мнемоника очень базовая; можно брать только при мягком пороге сложности. Исследована сама мнемоника, но полного комплекта новых подписей пока не готовил.",
+      "neighbors": []
+    },
+    {
+      "id": "2025-26-mun-chel-9",
+      "status": "exclude",
+      "reason": "Перевод общеизвестного топонима Гонконг→香港 слишком простой для этой партии. Существующие вопросы о статусе/возвращении Гонконга — другие факты, не основание дубля.",
+      "neighbors": [
+        {
+          "id": "2015-16-shk-64",
+          "questionRu": "Что из перечисленного является специальным административным районом Китая?",
+          "relationship": "Гонконг как особый район — другая сторона."
+        },
+        {
+          "id": "2026-27-mun-4",
+          "questionRu": "Укажите статус Гонконга как территориально-административной единицы КНР:",
+          "relationship": "Статус Гонконга — другая сторона."
+        }
+      ]
+    },
+    {
+      "id": "2025-26-mun-sverd-57",
+      "status": "exclude",
+      "reason": "Точный набор шести отделённых морем стран подтверждён учебным первоисточником; не дубль1091. Но правильный вариант содержит6 названий, и остальные тоже длинные списки — против прежнего явного предпочтения автора. Готовым вопросом для20 не считать без отдельного возврата этого формата. Стем должен просить полный перечень и исключать соседей, имеющих также сухопутную границу. Root подтвердил действующее предпочтение автора: такие длинные списки в новую двадцатку не включать.",
+      "neighbors": []
+    },
+    {
+      "id": "2015-16-mun-spb-7",
+      "status": "exclude",
+      "reason": "Базовая связь свадьба—喜; традиционный свадебный знак обычно 囍, исходный вариант упрощает его до 喜. Соседний вопрос уже противопоставляет свадебную надпись обычаям Нового года.",
+      "neighbors": [
+        {
+          "id": "2024-25-mun-irk-2",
+          "questionRu": "Какое из перечисленных действий НЕ относится к традиционным обычаям Праздника весны?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2017-18-mun-yak-4",
+      "status": "exclude",
+      "reason": "Название 七夕 само содержит числовую подсказку «седьмой вечер». Календарную оговорку о лунном месяце надо добавить; дата уже дана в условии myths-q21, это межвопросная подсказка, а не прямой дубль.",
+      "neighbors": [
+        {
+          "id": "myths-q21",
+          "questionRu": "С каким народным сказанием связан праздник Циси, который отмечают седьмого числа седьмого лунного месяца?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2018-19-mun-spb-6",
+      "status": "exclude",
+      "reason": "Эпитет терракотовой армии подтверждён, но «восьмое чудо» не уникальный формальный титул; исходный набор содержит Великую стену, к которой его также применяют. Три исходных варианта; для однозначности нужен дополнительный исторический контекст.",
+      "neighbors": [
+        {
+          "id": "provinces-q53",
+          "questionRu": "Какой город Китая носит прозвище «город звёзд»?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2019-20-mun-kgd-7",
+      "status": "exclude",
+      "reason": "Слишком базовое название кануна Нового года. Среди вариантов 年夜饭 обозначает ужин, а не день; вопрос о ночном бдении уже тренирует тот же день, хотя формально спрашивает другой обычай.",
+      "neighbors": [
+        {
+          "id": "holidays-q44",
+          "questionRu": "В какую ночь по обычаю вся семья не спит до утра, провожая старый год?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2019-20-mun-kgd-9",
+      "status": "exclude",
+      "reason": "Длинные перечисления четырёх кухонь и ошибочные/повторные названия вместо коротких самостоятельных вариантов; не соответствует формату партии.",
+      "neighbors": [
+        {
+          "id": "cuisine-q68",
+          "questionRu": "Какая провинция — родина кухни 粤菜?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "cuisine-q71",
+          "questionRu": "Какая провинция — родина кухни 湘菜?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2019-20-shk-mosobl-50",
+      "status": "exclude",
+      "reason": "Тройные перечни действий и предметов; две проверяемые связи уже есть отдельно: новогодние надписи и новогодняя еда.",
+      "neighbors": [
+        {
+          "id": "holidays-q42",
+          "questionRu": "На какой праздник на севере Китая принято есть пельмени?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "holidays-q43",
+          "questionRu": "К какому празднику по обеим сторонам двери клеят парные благопожелательные надписи на красной бумаге?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2019-20-shk-mosobl-55",
+      "status": "exclude",
+      "reason": "Ответ 湖南菜 прямо подсказан словами «западной Хунани»; категорическое «обязательны» неточно. Досье уже спрашивает провинцию 湘菜 и её острый вкус.",
+      "neighbors": [
+        {
+          "id": "cuisine-q71",
+          "questionRu": "Какая провинция — родина кухни 湘菜?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "cuisine-q76",
+          "questionRu": "Каким вкусом славится кухня 湘菜?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2020-21-mun-novg-1",
+      "status": "exclude",
+      "reason": "Слишком простая угадайка: в вопросе сказано «мифическое», а среди панд, кролика и птицы только дракон мифичен.",
+      "neighbors": []
+    },
+    {
+      "id": "2020-21-mun-yak-9",
+      "status": "exclude",
+      "reason": "Категорическое отнесение всего пуэра к 黑茶 спорно без 生普/熟普. Конкретизация только до зрелого пуэра меняет объём исходного тезиса; повторно не предлагать без отдельного решения. Провинция пуэра в cuisine-q90 — другой факт.",
+      "neighbors": [
+        {
+          "id": "cuisine-q90",
+          "questionRu": "Из какой провинции чай 普洱茶?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2020-21-shk-mosobl-55",
+      "status": "exclude",
+      "reason": "Перечни восьми кухонь; неверные строки содержат очевидные повторы и смешение полных/кратких названий. Пользователь против длинных перечней.",
+      "neighbors": [
+        {
+          "id": "cuisine-q68",
+          "questionRu": "Какая провинция — родина кухни 粤菜?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "cuisine-q70",
+          "questionRu": "Какая провинция — родина кухни 闽菜?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "cuisine-q71",
+          "questionRu": "Какая провинция — родина кухни 湘菜?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2021-22-mun-volog-6",
+      "status": "exclude",
+      "reason": "Более грубая версия календарного факта, уже проверяемого вопросом о дате Цинмина (апрель).",
+      "neighbors": [
+        {
+          "id": "2015-16-zak-10",
+          "questionRu": "Когда ежегодно отмечают праздник Цинмин?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2022-23-mun-kam-6",
+      "status": "exclude",
+      "reason": "Очень простой символ-панда; сама категория «символ Китая» широка и допускает разные культурные символы.",
+      "neighbors": []
+    },
+    {
+      "id": "2022-23-mun-lenobl-52",
+      "status": "exclude",
+      "reason": "Базовая локализация Храма Неба; Пекин уже назван для него в вопросах банка. Это подсказки по месту, не тождество фактов об эпохе/назначении.",
+      "neighbors": [
+        {
+          "id": "landmarks-q92",
+          "questionRu": "При какой династии построен Храм Неба (天坛) в Пекине?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "2022-23-zak-2",
+          "questionRu": "Для чего изначально предназначался Храм Неба в Пекине, который в 1998 году был включён в список объектов всемирного наследия ЮНЕСКО?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2022-23-mun-spb-3",
+      "status": "exclude",
+      "reason": "«Золотая неделя» не уникальна только для Национального дня; абсолютные семь дней зависят от календарного года. Уже отклоняли в партии 6 как неустойчивую посылку.",
+      "neighbors": []
+    },
+    {
+      "id": "2022-23-shk-mosobl-7",
+      "status": "exclude",
+      "reason": "Повтор освоенного закрытого набора двенадцати животных: уже есть вопросы «какого животного нет в зодиаке» с другими неверными животными; слишком простой отсев.",
+      "neighbors": [
+        {
+          "id": "2015-16-reg-3",
+          "questionRu": "Какое животное не входит в китайский двенадцатилетний зодиак?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "2025-26-mun-chel-7",
+          "questionRu": "Какое из следующих животных не входит в число 12 зодиакальных животных, соответствующих 12-летнему циклу?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2023-24-mun-kem-7",
+      "status": "exclude",
+      "reason": "Не новая учебная связь: тот же лунный цикл Хоу И—Чанъэ—праздник середины осени. Новый участник цикла не даёт самостоятельного содержательного факта; 齐白石 к тому же не мифологический персонаж.",
+      "neighbors": [
+        {
+          "id": "myths-q13",
+          "questionRu": "Какой стрелок, по преданию, сбил девять солнц, когда на небо вышли сразу десять и сжигали посевы?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2023-24-mun-klg-6",
+      "status": "exclude",
+      "reason": "Пион как официальный государственный цветок КНР — неподтверждённая посылка. Более точный существующий вопрос о «царе цветов» уже даёт символический статус пиона.",
+      "neighbors": [
+        {
+          "id": "2020-21-mun-spb-10",
+          "questionRu": "Какой цветок в Китае называют «красой страны и небесным ароматом» (国色天香) и «царём цветов» (花中之王)?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2023-24-mun-omsk-1",
+      "status": "exclude",
+      "reason": "Угадайка: конкретный национальный костюм 旗袍 противопоставлен обычным родовым названиям юбки, рубашки с брюками и джинсов. Сам факт слишком базовый.",
+      "neighbors": []
+    },
+    {
+      "id": "2023-24-shk-mosobl-20",
+      "status": "exclude",
+      "reason": "Дополнение региональной поговорки не даёт достаточно содержательного страноведческого факта; формула 玩在苏州 нуждается в отдельной проверке против более известного 玩在杭州. Для нынешней партии не исследовать.",
+      "neighbors": []
+    },
+    {
+      "id": "2024-25-mun-irk-7",
+      "status": "exclude",
+      "reason": "Ключ «маття не китайский чай» исторически некорректен: порошковый чай и традиция взбивания имеют китайские истоки; вопрос смешивает современную ассоциацию и происхождение.",
+      "neighbors": []
+    },
+    {
+      "id": "2024-25-mun-kem-8",
+      "status": "exclude",
+      "reason": "Уже отклонённая широкая посылка: белый — традиционный траурный, но чёрный тоже используется в современном Китае. Кроме того, факт очень базовый.",
+      "neighbors": []
+    },
+    {
+      "id": "2024-25-mun-klg-6",
+      "status": "exclude",
+      "reason": "Стереотип «универсальное лекарство» не проверяемый страноведческий тезис; медицинское обобщение нельзя выдавать за установленный факт.",
+      "neighbors": []
+    },
+    {
+      "id": "2024-25-mun-mosobl-4",
+      "status": "exclude",
+      "reason": "Базовый узнаваемый силуэт Храма Неба; исходное «имеет храм круглой формы» неточно смешивает комплекс и Зал молитв об урожае. По сравнению с выбранными кандидатами слабее. Эпоха и назначение в соседях — другие факты.",
+      "neighbors": [
+        {
+          "id": "landmarks-q92",
+          "questionRu": "При какой династии построен Храм Неба (天坛) в Пекине?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "2022-23-zak-2",
+          "questionRu": "Для чего изначально предназначался Храм Неба в Пекине, который в 1998 году был включён в список объектов всемирного наследия ЮНЕСКО?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2024-25-mun-tula-4",
+      "status": "exclude",
+      "reason": "Слишком простой общеизвестный предмет; пользователь прямо исключил очевидные факты типа палочек.",
+      "neighbors": [
+        {
+          "id": "2022-23-reg-7",
+          "questionRu": "Благодаря кому, согласно легенде, появились китайские палочки для еды?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2024-25-mun-tula-7",
+      "status": "exclude",
+      "reason": "Слишком узнаваемый туристический факт о Великой стене; не повышать число вопросов за счёт базовой угадайки.",
+      "neighbors": []
+    },
+    {
+      "id": "2024-25-mun-tula-8",
+      "status": "exclude",
+      "reason": "Общеизвестная базовая символика дракона; пользователь прямо просил не возвращать очевидные факты типа дракона.",
+      "neighbors": []
+    },
+    {
+      "id": "2024-25-shk-mosobl-13",
+      "status": "exclude",
+      "reason": "Очередная подстановка года в уже тренируемый зодиакальный цикл, а не новое учебное содержание.",
+      "neighbors": [
+        {
+          "id": "2020-21-mun-yak-4",
+          "questionRu": "В китайской культуре годы обозначают двенадцатью животными. Год какого животного — 2020-й?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "sets-q12",
+          "questionRu": "Какое животное открывает двенадцатилетний цикл китайского зодиака?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2025-26-mun-kem-5",
+      "status": "exclude",
+      "reason": "Очередная подстановка года/даты в тот же зодиакальный цикл; не новая содержательная сторона традиции.",
+      "neighbors": [
+        {
+          "id": "2020-21-mun-yak-4",
+          "questionRu": "В китайской культуре годы обозначают двенадцатью животными. Год какого животного — 2020-й?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "sets-q12",
+          "questionRu": "Какое животное открывает двенадцатилетний цикл китайского зодиака?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2025-26-mun-perm-4",
+      "status": "exclude",
+      "reason": "Спорная слишком широкая «родина китайского чая»: единственный регион нельзя назначить без определения критерия. Среди вариантов только Юньнань — провинция, остальные крупнейшие города; угадайка по типу.",
+      "neighbors": [
+        {
+          "id": "cuisine-q90",
+          "questionRu": "Из какой провинции чай 普洱茶?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2025-26-mun-ryaz-7",
+      "status": "exclude",
+      "reason": "Очевидный Зевс среди китайских героев; пользователь против угадайки по инородному элементу.",
+      "neighbors": [
+        {
+          "id": "myths-q21",
+          "questionRu": "С каким народным сказанием связан праздник Циси, который отмечают седьмого числа седьмого лунного месяца?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "myths-q14",
+          "questionRu": "Дочь Яньди утонула в Восточном море и обратилась в птицу, которая носит с гор камни и ветки, чтобы засыпать море. Как зовут эту птицу?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2025-26-mun-vlad-7",
+      "status": "exclude",
+      "reason": "Элементарное распознавание дракона в зодиаке; тот же освоенный закрытый набор животных.",
+      "neighbors": [
+        {
+          "id": "2015-16-reg-3",
+          "questionRu": "Какое животное не входит в китайский двенадцатилетний зодиак?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "2025-26-mun-chel-7",
+          "questionRu": "Какое из следующих животных не входит в число 12 зодиакальных животных, соответствующих 12-летнему циклу?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2016-17-mun-yar-8",
+      "status": "exclude",
+      "reason": "Ответ 北京 практически повторяет название «пекинская опера»; исходное «зародилась» к тому же упрощает сложное формирование жанра.",
+      "neighbors": []
+    },
+    {
+      "id": "2018-19-mun-tyum-9",
+      "status": "exclude",
+      "reason": "Длинные перечни четырёх книг и псевдозаглавия; тот же состав четырёх классических романов уже спрашивается через восстановление недостающего романа и исключение пятой книги.",
+      "neighbors": [
+        {
+          "id": "2016-17-shk-2",
+          "questionRu": "Какое произведение вместе с «Троецарствием», «Сном в красном тереме» и «Речными заводями» входит в четыре великих классических романа Китая?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "2020-21-reg-qce4bc2",
+          "questionRu": "Какое из нижеперечисленных произведений не относится к четырем классическим китайским романам?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2019-20-mun-mosobl-49",
+      "status": "exclude",
+      "reason": "В самом русском вопросе уже дан перевод фразы; остаётся простое сопоставление с китайской перефразировкой. Подлинного нового страноведческого факта нет.",
+      "neighbors": []
+    },
+    {
+      "id": "2019-20-shk-mosobl-49",
+      "status": "exclude",
+      "reason": "В русском условии дан готовый смысл изречения; выбор почти дословной китайской перефразировки — слишком простая языковая операция.",
+      "neighbors": []
+    },
+    {
+      "id": "2020-21-mun-novg-7",
+      "status": "exclude",
+      "reason": "Общеизвестная принадлежность Конфуция к философии; в банке уже множество более содержательных фактов о нём.",
+      "neighbors": [
+        {
+          "id": "2020-21-pri-q0b0b79",
+          "questionRu": "Какой великий китайский философ и педагог выступал за обучение всех, независимо от их социального происхождения?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "people-q09",
+          "questionRu": "В какой книге ученики записали слова и дела Конфуция (孔子)?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2020-21-mun-spb-3",
+      "status": "exclude",
+      "reason": "Фразеология, не основной страноведческий блок данной партии.",
+      "neighbors": []
+    },
+    {
+      "id": "2020-21-shk-mosobl-49",
+      "status": "exclude",
+      "reason": "Прямое задание на значение чэнъюя; основной блок не должен содержать чэнъюи.",
+      "neighbors": []
+    },
+    {
+      "id": "2021-22-mun-lenobl-8",
+      "status": "exclude",
+      "reason": "Дополнение той же поговорки, уже представленной в исходном тематическом запасе; слабый языковой факт, варианты 天下/锅包肉 почти комические.",
+      "neighbors": [
+        {
+          "id": "2019-20-mun-mosobl-49",
+          "questionRu": null,
+          "relationship": "Тематический сосед/сосед в текущем запасе; не найден в visible по этому ID, не использовать как доказательство прямого дубля."
+        }
+      ]
+    },
+    {
+      "id": "2021-22-mun-mosobl-56",
+      "status": "exclude",
+      "reason": "Невписывающийся театр 戏剧 среди трёх жанров живописи находится элементарным отсевом. Банк уже спрашивает распознавание живописи по тем же жанрам.",
+      "neighbors": [
+        {
+          "id": "2025-26-shk-33",
+          "questionRu": "В каком виде искусства в Китае есть такие жанры, как «цветы-птицы», «горы-воды»?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2021-22-mun-omsk-10",
+      "status": "exclude",
+      "reason": "Самое базовое правило порядка фамилии и имени; три исходных одноиероглифных варианта дают лёгкий вопрос.",
+      "neighbors": []
+    },
+    {
+      "id": "2021-22-mun-omsk-4",
+      "status": "exclude",
+      "reason": "Слишком простое узнавание написания 孔子 среди омонимических псевдоимён; 夫子 также титул Учитель. Соседи содержательнее.",
+      "neighbors": [
+        {
+          "id": "2023-24-mun-krsk-4",
+          "questionRu": "Кто известен как “Великий мудрец” в Китае?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "people-q09",
+          "questionRu": "В какой книге ученики записали слова и дела Конфуция (孔子)?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2021-22-mun-omsk-8",
+      "status": "exclude",
+      "reason": "Базовое название путунхуа; кроме того, называть национальный стандарт «диалектом» неточно. В банке уже есть содержательные различения стандарта и его диалектной основы.",
+      "neighbors": [
+        {
+          "id": "2018-19-mun-47",
+          "questionRu": "Какой диалект лежит в основе путунхуа?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "2024-25-shk-mosobl-1",
+          "questionRu": "Как назывался официальный язык в Китайской Республике в 1912–1949 годах?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2023-24-mun-kem-5",
+      "status": "exclude",
+      "reason": "Конфуцианство — единственное китайское учение среди христианства, ислама и синтоизма; очень простая угадайка.",
+      "neighbors": []
+    },
+    {
+      "id": "2023-24-mun-komi-10",
+      "status": "exclude",
+      "reason": "Общая нравственная характеристика недостаточно отличает конфуцианство от других учений; соседние вопросы уже содержательнее раскрывают его.",
+      "neighbors": [
+        {
+          "id": "dynasties-q39",
+          "questionRu": "При каком императоре конфуцианство стало государственным учением Китая?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        },
+        {
+          "id": "people-q09",
+          "questionRu": "В какой книге ученики записали слова и дела Конфуция (孔子)?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2023-24-mun-sverd-58",
+      "status": "exclude",
+      "reason": "Дополнение фразеологического выражения; не основной страноведческий блок.",
+      "neighbors": []
+    },
+    {
+      "id": "2024-25-mun-bash-6",
+      "status": "exclude",
+      "reason": "Неопределённый современный «основной поток» заимствований без периода, корпуса и критерия; историческая роль японского и современная английского не сводятся к абсолютному тезису.",
+      "neighbors": []
+    },
+    {
+      "id": "2024-25-mun-krym-9",
+      "status": "exclude",
+      "reason": "Элементарное узнавание Конфуция среди художника, мореплавателя и певца; уже есть вопрос на «Великого мудреца».",
+      "neighbors": [
+        {
+          "id": "2023-24-mun-krsk-4",
+          "questionRu": "Кто известен как “Великий мудрец” в Китае?",
+          "relationship": "См. reason: различаются прямое покрытие связи, общая сущность и межвопросная подсказка."
+        }
+      ]
+    },
+    {
+      "id": "2025-26-mun-novg-10",
+      "status": "exclude",
+      "reason": "Отдельное значение чэнъюя 画蛇添足; исключено заданным форматом партии.",
+      "neighbors": []
+    },
+    {
+      "id": "2019-20-shk-mosobl-46",
+      "status": "exclude",
+      "reason": "Внутренний смысловой дубль неотмеченного 2022-23-mun-orel-2: год 70-летия 2019 получается из той же даты установления отношений 1949. Нового самостоятельного факта нет. Предпочтительнее базовая дата 1949 после явного исправления России на СССР. Пары «дата—юбилей» не выдавать двумя вопросами.",
+      "neighbors": [
+        {
+          "id": "2022-23-mun-orel-2",
+          "questionRu": "В каком году Россия установила дипломатические отношения с Китайской Народной Республикой?",
+          "relationship": "Тот же исторический факт, пересчитанный в юбилейный год."
+        }
+      ]
+    },
+    {
+      "id": "2020-21-mun-lenobl-3",
+      "status": "exclude",
+      "reason": "Обратный дубль уже имеющегося вопроса «какую реформу провёл Александр II»; правильная подпись 2023-24-mun-35 тоже прямо сообщает отмену крепостного права. Дополнительно исходный 亚历山大二十 — вымышленный «Александр XX», поэтому четыре честные подписи без замены исходника невозможны.",
+      "neighbors": [
+        {
+          "id": "dynasties-q119",
+          "questionRu": "Какую главную реформу провёл император Александр II (亚历山大二世)?",
+          "relationship": "Обратный вопрос о той же паре Александр II—отмена крепостного права."
+        },
+        {
+          "id": "2023-24-mun-35",
+          "questionRu": "Какой российский император получил прозвище «Освободитель»?",
+          "relationship": "Вопрос о прозвище связан, подпись уже явно сообщает отмену крепостного права."
+        }
+      ]
+    },
+    {
+      "id": "2020-21-mun-lenobl-6",
+      "status": "eligible",
+      "reason": "Прямого или обратного дубля о разгроме японской армии в Китае в 1945 году в 1091 видимом вопросе не найдено. Маньчжурский инцидент 1931 года — другое событие. Ключ подтверждён архивным документом. Уровень базовый: среди вариантов Япония очевиднее США и Южной Кореи; включать только если такой базовый факт соответствует выбранной трудности партии.",
+      "neighbors": [
+        {
+          "id": "modern-history-q69",
+          "questionRu": "Возле какого города 18 сентября 1931 года японская Квантунская армия сама взорвала участок железной дороги, обвинив в этом китайские войска?",
+          "relationship": "Связанная японская Квантунская армия, но инцидент 1931 года и другой проверяемый факт."
+        }
+      ]
+    },
+    {
+      "id": "2022-23-mun-lenobl-53",
+      "status": "exclude",
+      "reason": "Слишком просто по прямому ограничению пользователя: Менделеев — учёный среди императора и писателя. Более содержательный факт об открытии периодического закона уже есть.",
+      "neighbors": [
+        {
+          "id": "people-q25",
+          "questionRu": "С чем связано имя Дмитрия Менделеева (门捷列夫)?",
+          "relationship": "Та же личность уже представлена содержательным вопросом об открытии периодического закона; не строгий дубль, но новая карточка значительно примитивнее."
+        }
+      ]
+    },
+    {
+      "id": "2022-23-mun-lenobl-56",
+      "status": "exclude",
+      "reason": "Слишком просто: тигр среди лисы и медведя в общеизвестной детской сказке; четвёртый вариант не исправляет исходный набор. Возможны разные литературные обработки «Теремка»; конкретная редакция не названа.",
+      "neighbors": []
+    },
+    {
+      "id": "2022-23-mun-tat-10",
+      "status": "borderline",
+      "reason": "Самостоятельный факт, строгого дубля не найдено; все исходные варианты — реальные города. Но абсолютное «никогда» и слово «Россия» объединяют столицы Российской империи с Владимиром как столицей Северо-Восточной Руси: необходима осторожная историческая редакция. Уровень невысокий: Калининград выделяется как бывший восточнопрусский Кёнигсберг. До авторского решения не считать уверенно готовым.",
+      "neighbors": [
+        {
+          "id": "2025-26-zak-q387588",
+          "questionRu": "В каком году по приказу Петра I столицей России стал Санкт-Петербург?",
+          "relationship": "Санкт-Петербург как столица уже упомянут; это связь, не строгий дубль отрицательного выбора."
+        }
+      ]
+    },
+    {
+      "id": "2023-24-mun-kem-10",
+      "status": "exclude",
+      "reason": "Обратный дубль уже видимого вопроса о 1712 годе, который прямо называет Петра I и Санкт-Петербург. Кроме того, среди четырёх исходных вариантов вымышленный 亚历山大二十 («Александр XX»); исправить полноценными подписями невозможно. В исходнике перенос назвaн переносом столицы Российской империи, хотя титул императора и официальное наименование империи появились в 1721 году.",
+      "neighbors": [
+        {
+          "id": "2025-26-zak-q387588",
+          "questionRu": "В каком году по приказу Петра I столицей России стал Санкт-Петербург?",
+          "relationship": "Тот же перенос столицы Пётром I; видимый вопрос уже содержит ответ кандидата."
+        }
+      ]
+    },
+    {
+      "id": "2023-24-mun-tat-10",
+      "status": "exclude",
+      "reason": "Набор слишком лёгкий по отсеву: родовое название крепости 克里姆林宫 конкурирует с одной московской пушкой и памятником Сталину. Добавление четвёртого не делает три исходных однородными. Виден и уже существующий охват московского и казанского кремлей.",
+      "neighbors": [
+        {
+          "id": "landmarks-q83",
+          "questionRu": "У какого кремля стены образуют в плане треугольник с двадцатью башнями?",
+          "relationship": "Самостоятельный подробный факт о Московском кремле; не строгий дубль."
+        },
+        {
+          "id": "landmarks-q84",
+          "questionRu": "В каком кремле соединились татарские и русские архитектурные традиции?",
+          "relationship": "Самостоятельный подробный факт о Казанском кремле; не строгий дубль."
+        },
+        {
+          "id": "money-q11",
+          "questionRu": "Кремль какого города изображён на лицевой стороне новой купюры 1000 рублей выпуска 2025 года?",
+          "relationship": "Уже явно называет кремль Нижнего Новгорода; связь с теми же объектами."
+        }
+      ]
+    },
+    {
+      "id": "2023-24-shk-mosobl-7",
+      "status": "exclude",
+      "reason": "Слишком простой общеизвестный символ России; варианты неоднородны: берёза и тополь — названия деревьев, 落叶树 — надкатегория «лиственное/листопадное дерево», 圣诞树 — рождественская ёлка как украшенное дерево. Качественного набора из исходных четырёх нет.",
+      "neighbors": []
+    },
+    {
+      "id": "2024-25-shk-mosobl-15",
+      "status": "exclude",
+      "reason": "Неоперациональное «в больших объёмах»: нефть ожидаема, но Россия также добывает уран; порога, показателя и года нет. 麦 — пшеница, вообще не полезное ископаемое. Исходный набор и вопрос слишком очевидны/неоднозначны; нужны содержательные изменения, а не четыре справки.",
+      "neighbors": []
+    },
+    {
+      "id": "2025-26-mun-chel-10",
+      "status": "borderline",
+      "reason": "Ключ два соответствует Москве-1980 и Сочи-2014, но оба проведения уже представлены отдельными видимыми вопросами. Это не буквальный прямой или обратный дубль, а сведение двух известных карточек к подсчёту; самостоятельного содержательного прироста мало. Для новой качественной партии рекомендую пропустить, не добивая количество.",
+      "neighbors": [
+        {
+          "id": "2018-19-reg-5",
+          "questionRu": "В каком году в Москве проходили летние Олимпийские игры?",
+          "relationship": "Москва-1980 уже проверяется отдельным вопросом."
+        },
+        {
+          "id": "2020-21-reg-q1df3bd",
+          "questionRu": "В каком году в российском городе Сочи прошли зимние олимпийские игры?",
+          "relationship": "Сочи-2014 уже проверяется отдельным вопросом."
+        },
+        {
+          "id": "2022-23-zak-8",
+          "questionRu": "В 2014 году зимние олимпийские игры прошли в российском городе Сочи. Какие по счету были эти игры?",
+          "relationship": "Сочи-2014 и номер зимних Игр уже представлены."
+        }
+      ]
+    },
+    {
+      "id": "2025-26-mun-nnov-4",
+      "status": "exclude",
+      "reason": "Слишком просто по прямому запрету пользователя: цвета флага России. Все четыре исходных варианта есть, но этот факт не подходит по установленной трудности.",
+      "neighbors": []
+    },
+    {
+      "id": "2025-26-mun-sverd-59",
+      "status": "exclude",
+      "reason": "Ключевое 中看不中用 — «красивый с виду, но бесполезный/непрактичный»; это неточный эквивалент «показного благополучия», которое само не является общеупотребительной русской поговоркой. 金看不中钱 / 中银不中钱 — искусственные сочетания; 买不卖 не даёт смыслового альтернативного перевода. Четыре содержательные честные подписи без переписывания исходных вариантов невозможны.",
+      "neighbors": []
+    },
+    {
+      "id": "2025-26-mun-sverd-60",
+      "status": "exclude",
+      "reason": "走南闯北 значит «ездить по разным местам, побывать во многих местах», без буквальной обязательности всего мира. Но три исходных отвлечения 南北闯来 / 出去东西 / 东去来西 — искусственные перестановки вместо полноценных выражений. Ключ угадывается по единственному нормальному фразеологизму; четыре содержательные подписи без подмены исходников не сделать.",
+      "neighbors": []
+    }
+  ],
+  "independentReview": {
+    "state": "independent-review-complete-pending-author",
+    "report": "data/review/2026-11-08-regional-batch-8-review.md",
+    "openCritical": 0,
+    "openImportant": 0,
+    "caveats": [
+      {
+        "reviewNumber": 13,
+        "id": "2021-22-mun-volog-9",
+        "note": "Отдельный вопрос о числе23 отсутствует, но точный факт уже есть в подписи вопроса о34единицах; новизна ограничена."
+      },
+      {
+        "reviewNumber": 14,
+        "id": "2023-24-mun-klg-3",
+        "note": "После двух замен набор улучшен; сложность ближе к нижнему порогу."
+      },
+      {
+        "reviewNumber": 19,
+        "id": "2022-23-shk-mosobl-20",
+        "note": "Уточнение Тибета снимает широкую посылку, но облегчает выбор по географии."
+      },
+      {
+        "reviewNumber": 20,
+        "id": "2023-24-mun-mosobl-6",
+        "note": "После замены мнимых имён набор корректен, но уровень ниже среднего; имя уже встречается в подписи другого вопроса."
+      }
+    ],
+    "reviewedPreStatusManifestHash": "4b32cbf28c984af18604fbc69c1e92f0f5126b3ac7055f6b490feaa0e7e5987c",
+    "sourceClassNormalization": "Только служебные authority academic-official/official-museum/official-tourism/official-unesco приведены к academic/official; исходные метки сохранены в originalAuthority."
+  }
+}
