@@ -1,7 +1,7 @@
 {
   "reviewId": "regional-2026-11-08-batch-8",
   "date": "2026-11-09",
-  "state": "validated-ready-for-publication",
+  "state": "published-and-live-verified",
   "publicationAuthorized": true,
   "selectedCount": 17,
   "visibleBefore": 1091,
@@ -1385,5 +1385,14 @@
     "htmlSha256": "05cabbec38b45dda14883ff68a709465f3ad8f5ad965f17db882000f04d88915",
     "independentReview": "data/review/2026-11-09-regional-batch-8-release-review.md",
     "independentVerdict": "approved-no-open-findings"
+  },
+  "publication": {
+    "date": "2026-11-09",
+    "commit": "d826d8b63b18a0871d6036f339fb6307f7cd8cf2",
+    "workflowRun": 42638682347,
+    "workflowUrl": "https://github.com/bronik04/lingvostranovedenie-trainer/actions/runs/42638682347",
+    "url": "https://bronik04.github.io/lingvostranovedenie-trainer/",
+    "visibleQuestions": 1108,
+    "deploymentCheck": "data/review/2026-11-09-regional-batch-8-deployment-check.json"
   }
 }

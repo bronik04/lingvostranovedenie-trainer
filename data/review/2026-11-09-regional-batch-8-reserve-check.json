@@ -1,6 +1,6 @@
 {
   "date": "2026-11-09",
-  "status": "accepted-embedded-publication-authorized",
+  "status": "published",
   "changedIds": [
     "2020-21-mun-lenobl-9",
     "2020-21-mun-mosobl-47",
@@ -22,8 +22,8 @@
   ],
   "changedBlocks": 17,
   "totalQuestions": 178,
-  "unchecked": 67,
-  "checked": 111,
+  "unchecked": 64,
+  "checked": 114,
   "checkboxStatesUnchangedByRelease": true,
   "manualCheckboxChangesSinceBaselinePreserved": [
     "2024-25-mun-bash-2",
@@ -44,5 +44,8 @@
     "2025-26-mun-novg-10"
   ],
   "otherContentUnchanged": true,
-  "source": "Live Markdown; manual checks preserved; no regeneration from inventory JSON"
+  "source": "Live Markdown; manual checks preserved; no regeneration from inventory JSON",
+  "publicationCommit": "d826d8b63b18a0871d6036f339fb6307f7cd8cf2",
+  "publicationStatusChanges": 17,
+  "headerClarifiedAsHistoricalSnapshot": true
 }
