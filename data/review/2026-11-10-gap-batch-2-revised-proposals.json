@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
   "reviewId": "authored-gap-2026-11-09-batch-2-revision-4",
-  "state": "accepted-16-authorized-for-release-19-held",
+  "state": "published-16-19-held",
   "publicationAuthorized": true,
   "embeddingAuthorized": true,
   "questionCount": 17,
@@ -132,10 +132,11 @@
       "sourceLocalId": "gap2r-culture-01-weiqi",
       "id": "preview-gap2r-01",
       "reviewNumber": 1,
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "bankId": "addition-gap2-01",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "priority": "main",
@@ -287,10 +288,11 @@
       "sourceLocalId": "gap2r-geo-01-cotton",
       "id": "preview-gap2r-02",
       "reviewNumber": 2,
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "bankId": "addition-gap2-02",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "questionRu": "Вы открыли старую китайскую книгу с вертикальными столбцами. С какого угла страницы начинается основной текст?",
@@ -357,11 +359,12 @@
       "sourceLocalId": "gap2r-language-01-vertical-reading",
       "id": "preview-gap2r-03",
       "reviewNumber": 3,
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "editorialNote": "Подписи о конце полного столбца и полностью заполненной страницы — геометрические следствия направлений чтения, описанных W3C, а не отдельные цитаты.",
       "bankId": "addition-gap2-03",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "questionRu": "Какие сведения непосредственно передают позднейшие красные печати на старинной китайской картине?",
@@ -438,10 +441,11 @@
       "sourceLocalId": "gap2r-culture-02-collectors-seals",
       "id": "preview-gap2r-04",
       "reviewNumber": 4,
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "bankId": "addition-gap2-04",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "questionRu": "Для какой региональной кухни особенно характерно чаепитие с димсамами — небольшими порциями закусок?",
@@ -520,10 +524,11 @@
       "sourceLocalId": "gap2r-root-dimsum",
       "id": "preview-gap2r-05",
       "reviewNumber": 5,
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "bankId": "addition-gap2-05",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "questionRu": "Какое животное часто встречается в китайском декоре из-за созвучия его названия со словом «счастье»?",
@@ -604,10 +609,11 @@
       "sourceLocalId": "gap2r-culture-03-bat-fu",
       "id": "preview-gap2r-06",
       "reviewNumber": 6,
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "bankId": "addition-gap2-06",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "priority": "main",
@@ -693,10 +699,11 @@
       "sourceLocalId": "gap2r-society-01-id-card",
       "id": "preview-gap2r-07",
       "reviewNumber": 7,
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "bankId": "addition-gap2-07",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "questionRu": "На уроке каллиграфии ученик пишет рядом с образцом, глядя на него. Как называется такое копирование?",
@@ -784,10 +791,11 @@
       "sourceLocalId": "gap2r-language-02-linxie",
       "id": "preview-gap2r-08",
       "reviewNumber": 8,
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "bankId": "addition-gap2-08",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "priority": "main",
@@ -863,10 +871,11 @@
       "reviewNumber": 9,
       "id": "preview-gap2-09",
       "sourceLocalId": "gap2-geo-03-three-north",
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "bankId": "addition-gap2-09",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "priority": "main",
@@ -972,17 +981,18 @@
       "sourceLocalId": "gap2r-geo-03-meiyu",
       "id": "preview-gap2r-10",
       "reviewNumber": 10,
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "sourceVerificationNote": "NWS подтверждает общие физические определения. Здесь не применяются национальные численные пороги предупреждений. Для寒潮 используется общее описание вторжений холодного воздуха, а не формальное пороговое определение китайской метеослужбы.",
       "bankId": "addition-gap2-10",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "reviewNumber": 11,
       "id": "preview-gap2r-11-shikumen",
       "sourceLocalId": "gap2r-replacement-shanghai-shikumen",
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionRu": "Как называют характерные для старого Шанхая (上海) дома, сочетающие китайские и западные черты?",
       "questionZh": null,
       "type": "factual",
@@ -1066,7 +1076,8 @@
       },
       "difficultyNote": "Известный архитектурный образ Шанхая. Все4 варианта — типы традиционного китайского жилья; не спрашивается дата, отдельный переулок или местный мастер.",
       "bankId": "addition-gap2-11",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "priority": "main",
@@ -1150,10 +1161,11 @@
       "sourceLocalId": "gap2r-society-02-chunyun",
       "id": "preview-gap2r-12",
       "reviewNumber": 12,
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "bankId": "addition-gap2-12",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "priority": "main",
@@ -1237,10 +1249,11 @@
       "reviewNumber": 13,
       "id": "preview-gap2-13",
       "sourceLocalId": "society-gap2-06-runyue",
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "bankId": "addition-gap2-13",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "questionRu": "Как по конструкции называется традиционный веер, рёбра которого складываются вокруг общей оси?",
@@ -1314,10 +1327,11 @@
       "sourceLocalId": "gap2r-root-folding-fan",
       "id": "preview-gap2r-14",
       "reviewNumber": 14,
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "bankId": "addition-gap2-14",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "questionRu": "В китайском поучительном рассказе лиса идёт впереди тигра, и звери разбегаются. К какому жанру относится такой рассказ?",
@@ -1402,10 +1416,11 @@
       "sourceLocalId": "gap2r-language-03-yuyan",
       "id": "preview-gap2r-15",
       "reviewNumber": 15,
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "bankId": "addition-gap2-15",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "priority": "backup",
@@ -1489,10 +1504,11 @@
       "reviewNumber": 17,
       "id": "preview-gap2-17",
       "sourceLocalId": "gap2-h08-rubbing",
-      "status": "accepted-release-authorized",
+      "status": "published",
       "questionZh": null,
       "bankId": "addition-gap2-17",
-      "publicationAuthorized": true
+      "publicationAuthorized": true,
+      "publishedAt": "2026-11-10"
     },
     {
       "priority": "main",
@@ -2132,7 +2148,7 @@
     "publicationAuthorized": false,
     "embeddingAuthorized": false
   },
-  "manifestHash": "1eab586a0630c2cc52fe4e6c42e6cbbc9e1d02f4a4fb85c975f497c46a7d6f11",
+  "manifestHash": "1e2e012968795f84202e9ec978378716a6ae97f5aa3be52273ade4d5ca630485",
   "embeddingApplication": "data/review/2026-11-10-gap-batch-2-embedding-application.json",
   "authorAcceptance": {
     "date": "2026-11-10",
@@ -2184,5 +2200,7 @@
   ],
   "publicationExcludedReviewNumbers": [
     19
-  ]
+  ],
+  "publishedCommit": "6494ff68a4eaabd2e7a9560fc60270e36eb3f1c1",
+  "deploymentProof": "data/review/2026-11-10-release16-regional-cleanup-deployment-check.json"
 }

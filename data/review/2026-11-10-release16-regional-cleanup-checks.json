@@ -62,5 +62,7 @@
     },
     "discardedStatusRegression": "2 tests observed RED then GREEN; original integration alias failure fixed at source decision and full suite green"
   },
-  "publicationStatus": "ready-not-yet-deployed"
+  "publicationStatus": "published-verified",
+  "deploymentProof": "2026-11-10-release16-regional-cleanup-deployment-check.json",
+  "publishedCommit": "6494ff68a4eaabd2e7a9560fc60270e36eb3f1c1"
 }
