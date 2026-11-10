@@ -424,5 +424,35 @@
       "verdict": "accept",
       "note": "Автор принял последние правки 17вопросов и09.11.2026пряморазрешил публикацию. Условия/варианты/ключи/подписи — immutableacceptedmanifestпартии8. Источники ивстраиваниепроверенытематически; общий выпуск проходитнезависимоеревью."
     }
+  },
+  {
+    "id": "crafts-q145",
+    "status": "accepted",
+    "embeds": "addition-gap2-06",
+    "fact": {
+      "table": "auspiciousanimals",
+      "row": "auspicious-bat",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
+    }
+  },
+  {
+    "id": "crafts-q146",
+    "status": "accepted",
+    "embeds": "addition-gap2-14",
+    "fact": {
+      "table": "fans",
+      "row": "fan-zheshan",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
+    }
   }
 ]

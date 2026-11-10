@@ -12,7 +12,7 @@
 повторение, а не утечка (решение автора 2026-10-26). Название верного ответа рядом с вопросом с тем же
 ответом утечкой не считается: ответ выдаёт сам вариант. Названия помечены «(название ответа)».
 
-Подписей с утечкой: 562; выданных вопросов: 412; пар «вопрос с подписью → соседний вопрос»: 2030, из них 1241 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
+Подписей с утечкой: 543; выданных вопросов: 394; пар «вопрос с подписью → соседний вопрос»: 1905, из них 1222 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
 
 ## 特别行政区 — Особый административный район — Сянган и Аомэнь (название ответа)
 
@@ -36,20 +36,6 @@
 - выдаёт modern-china/modern-china-q10: ответ Шанхайская организация сотрудничества; зацепка 2001 год
 - выдаёт provinces/provinces-q29: ответ Шанхай; зацепка 2001 год
 - видна в 1: 2021-22-mun-q833ea2
-
-## 九转大肠 — Свиные кишки «девять оборотов» — традиционное блюдо Цзинаня, шаньдунская кухня
-
-- выдаёт 2019-20-mun-mosobl-55: ответ Шаньдунская кухня; зацепка Цзинань
-- выдаёт cuisine/cuisine-q67: ответ шаньдунская кухня; зацепка Шаньдун, та же строка
-- выдаёт cuisine/cuisine-q79: ответ Шаньдунская кухня; зацепка 九转大肠
-- видна в 1: cuisine/cuisine-q84
-
-## 农奴制改革 — Отмена крепостного права: манифест Александра II 19 февраля 1861 года (название ответа)
-
-- выдаёт 2020-21-mun-lenobl-3: ответ Александр II; зацепка Отмена крепостного права
-- выдаёт dynasties/dynasties-q119: ответ 农奴制改革; зацепка Александр II, та же строка
-- выдаёт modern-history/modern-history-q97: ответ 1861 год; зацепка Отмена крепостного права
-- видна в 5: dynasties/dynasties-q117, dynasties/dynasties-q118, dynasties/dynasties-q119, dynasties/dynasties-q121, dynasties/dynasties-q122
 
 ## 春节 — Праздник весны — красные надписи и петарды отпугивают чудовище Нянь
 
@@ -108,23 +94,17 @@
 - выдаёт modern-history/modern-history-q93: ответ 三民主义, три народных принципа; зацепка Сунь Ятсен, та же строка
 - видна в 4: modern-history/modern-history-q11, modern-history/modern-history-q24, modern-history/modern-history-q26, modern-history/modern-history-q27
 
+## 九转大肠 — Свиные кишки «девять оборотов» — традиционное блюдо Цзинаня, шаньдунская кухня
+
+- выдаёт cuisine/cuisine-q67: ответ шаньдунская кухня; зацепка Шаньдун, та же строка
+- выдаёт cuisine/cuisine-q79: ответ Шаньдунская кухня; зацепка 九转大肠
+- видна в 1: cuisine/cuisine-q84
+
 ## 习近平 — Си Цзиньпин — председатель КНР с 2013 года
 
 - выдаёт 2023-24-mun-30: ответ 2013 год, 2013; зацепка Си Цзиньпин, председатель КНР, та же строка
 - выдаёт modern-history/modern-history-q02: ответ 习近平, Си Цзиньпин; зацепка председатель КНР, та же строка
 - видна в 4: modern-history/modern-history-q01, modern-history/modern-history-q17, modern-history/modern-history-q25, modern-history/modern-history-q28
-
-## 亚历山大二世 — Александр II — император в 1855–1881 годах, в 1861 году отменил крепостное право (название ответа)
-
-- выдаёт 2020-21-mun-lenobl-3: ответ 亚历山大二世, Александр II; зацепка Отмена крепостного права
-- выдаёт modern-history/modern-history-q97: ответ 1861 год; зацепка Отмена крепостного права
-- видна в 10: dynasties/dynasties-q41, dynasties/dynasties-q42, dynasties/dynasties-q43, dynasties/dynasties-q44, dynasties/dynasties-q45, dynasties/dynasties-q47, dynasties/dynasties-q49, dynasties/dynasties-q50, dynasties/dynasties-q55, dynasties/dynasties-q56
-
-## 亚历山大二世 — Александр II — император, при котором в 1861 году отменили крепостное право
-
-- выдаёт 2020-21-mun-lenobl-3: ответ 亚历山大二世, Александр II; зацепка Отмена крепостного права
-- выдаёт modern-history/modern-history-q97: ответ 1861 год; зацепка Отмена крепостного права, та же строка
-- видна в 2: modern-history/modern-history-q101, modern-history/modern-history-q98
 
 ## 元 — Юань (1271–1368) — при ней в Цзиндэчжэне появился зрелый сине-белый фарфор (название ответа)
 
@@ -132,17 +112,17 @@
 - выдаёт crafts/crafts-q01: ответ 元; зацепка Синий, Цзиндэчжэнь, сине-белый фарфор, та же строка
 - видна в 2: crafts/crafts-q01, crafts/crafts-q133
 
-## 元宵节 — Праздник фонарей — 15-е число 1-го лунного месяца, едят танъюань (название ответа)
-
-- выдаёт 2021-22-mun-mosobl-53: ответ танъюань; зацепка 15, Праздник фонарей
-- выдаёт holidays/holidays-q45: ответ 元宵节, Праздник фонарей; зацепка танъюань, та же строка
-- видна в 6: holidays/holidays-q16, holidays/holidays-q43, holidays/holidays-q44, holidays/holidays-q45, holidays/holidays-q46, holidays/holidays-q47
-
 ## 兵马俑 — Терракотовая армия — глиняные воины у гробницы Цинь Шихуана близ Сианя
 
 - выдаёт 2016-17-shk-4: ответ Сиань; зацепка Цинь Шихуан, терракотовая армия, 兵马俑
 - выдаёт 2023-24-reg-4: ответ 兵马俑, терракотовая армия; зацепка Цинь
 - видна в 1: provinces/provinces-q56
+
+## 农奴制改革 — Отмена крепостного права: манифест Александра II 19 февраля 1861 года (название ответа)
+
+- выдаёт dynasties/dynasties-q119: ответ 农奴制改革; зацепка Александр II, та же строка
+- выдаёт modern-history/modern-history-q97: ответ 1861 год; зацепка Отмена крепостного права
+- видна в 5: dynasties/dynasties-q117, dynasties/dynasties-q118, dynasties/dynasties-q119, dynasties/dynasties-q121, dynasties/dynasties-q122
 
 ## 刘邦 — Лю Бан — основатель династии Хань, победитель в войне Чу и Хань
 
@@ -150,35 +130,11 @@
 - выдаёт dynasties/dynasties-q92: ответ война Чу и Хань; зацепка Лю Бан, 刘邦, та же строка
 - видна в 3: dynasties/dynasties-q09, dynasties/dynasties-q10, dynasties/dynasties-q39
 
-## 剁椒鱼头 — Рыбья голова под рубленым перцем — знаменитое блюдо хунаньской кухни
-
-- выдаёт 2019-20-shk-mosobl-55: ответ Хунаньская кухня; зацепка Хунань
-- выдаёт cuisine/cuisine-q82: ответ Хунаньская кухня; зацепка 剁椒鱼头
-- видна в 1: cuisine/cuisine-q84
-
 ## 勒拿河 — Лена — на ней стоит Якутск, крупнейший город на вечной мерзлоте
 
 - выдаёт provinces/provinces-q113: ответ Якутск; зацепка река Лена, та же строка
 - выдаёт provinces/provinces-q77: ответ Якутск; зацепка вечная мерзлота, та же строка
 - видна в 3: provinces/provinces-q104, provinces/provinces-q105, provinces/provinces-q83
-
-## 北京 — Пекин — здесь Храм Неба, где императоры Мин и Цин приносили жертвы Небу
-
-- выдаёт 2022-23-mun-lenobl-52: ответ Храм Неба; зацепка город Пекин
-- выдаёт 2024-25-mun-mosobl-4: ответ Храм Неба; зацепка Пекин
-- видна в 4: landmarks/landmarks-q48, landmarks/landmarks-q96, landmarks/landmarks-q97, landmarks/landmarks-q98
-
-## 北方首都 — «Северная столица» — прозвище Санкт-Петербурга (название ответа)
-
-- выдаёт 2025-26-mun-chel-5: ответ Петербург, Санкт-Петербург; зацепка Северная столица
-- выдаёт provinces/provinces-q106: ответ 北方首都, Северная столица; зацепка Санкт-Петербург, та же строка
-- видна в 2: provinces/provinces-q106, provinces/provinces-q107
-
-## 圣彼得堡 — Санкт-Петербург — «Северная столица» в устье Невы
-
-- выдаёт 2025-26-mun-chel-5: ответ 圣彼得堡, Петербург, Санкт-Петербург; зацепка Северная столица
-- выдаёт provinces/provinces-q106: ответ Северная столица; зацепка Санкт-Петербург, та же строка
-- видна в 15: provinces/provinces-q108, provinces/provinces-q113, provinces/provinces-q114, provinces/provinces-q124, provinces/provinces-q64, provinces/provinces-q65, provinces/provinces-q66, provinces/provinces-q67, provinces/provinces-q68, provinces/provinces-q69, provinces/provinces-q70, provinces/provinces-q71, provinces/provinces-q75, provinces/provinces-q77, provinces/provinces-q85
 
 ## 孙中山 — Сунь Ятсен — революционер, в 1912 г. временный президент Китайской Республики
 
@@ -210,17 +166,11 @@
 - выдаёт ethnos/ethnos-q86: ответ кантонский; зацепка провинция Гуандун, 广东
 - видна в 1: crafts/crafts-q132
 
-## 库图佐夫 — Кутузов — главнокомандующий русской армией, командовал при Бородине в 1812 году
-
-- выдаёт 2024-25-mun-udm-2: ответ 1812; зацепка Борода
-- выдаёт modern-history/modern-history-q09: ответ 库图佐夫, Кутузов; зацепка Борода
-- видна в 2: modern-history/modern-history-q101, modern-history/modern-history-q98
-
 ## 拉萨 — Лхаса — город в Тибетском автономном районе на юго-западе Китая
 
 - выдаёт 2021-22-mun-qd67aaa: ответ 拉萨, Лхаса; зацепка Тибетский автономный район
 - выдаёт provinces/provinces-q155: ответ 拉萨, Лхаса; зацепка Тибет, та же строка
-- видна в 5: provinces/provinces-q116, provinces/provinces-q20, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
+- видна в 4: provinces/provinces-q20, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
 
 ## 明 — Мин (1368–1644) — при ней, в 1406–1420 годах, построен Запретный город
 
@@ -258,23 +208,11 @@
 - выдаёт literature/literature-q24: ответ 杜甫, Ду Фу; зацепка мудрец поэзии, эпоха Тан, та же строка
 - видна в 2: literature/literature-q01, literature/literature-q03
 
-## 杨利伟 — Ян Ливэй — первый китайский космонавт, полёт на «Шэньчжоу-5» (2003)
-
-- выдаёт 2025-26-mun-tat-55: ответ 2003; зацепка Шэньчжоу-5
-- выдаёт space/space-q01: ответ Шэньчжоу-5; зацепка 2003, Ян Ливэй
-- видна в 2: space/space-q12, space/space-q13
-
-## 汤圆 — Танъюань — сладкие рисовые шарики, их едят на Праздник фонарей
-
-- выдаёт 2021-22-mun-mosobl-53: ответ 汤圆, танъюань; зацепка Праздник фонарей
-- выдаёт holidays/holidays-q45: ответ Праздник фонарей; зацепка танъюань, 汤圆, та же строка
-- видна в 1: holidays/holidays-q07
-
 ## 洛阳 — Лоян — город в западной части провинции Хэнань
 
 - выдаёт 2017-18-reg-8: ответ провинция Хэнань; зацепка Лоян, 洛阳
 - выдаёт 2024-25-zak-qfce692: ответ 洛阳, Лоян; зацепка провинция Хэнань
-- видна в 6: provinces/provinces-q116, provinces/provinces-q20, provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
+- видна в 5: provinces/provinces-q20, provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
 
 ## 洞庭湖 — Дунтинху в Хунани — второе по величине пресноводное озеро Китая
 
@@ -299,12 +237,6 @@
 - выдаёт dynasties/dynasties-q09: ответ Цинь Шихуан; зацепка 皇帝
 - выдаёт dynasties/dynasties-q10: ответ Цинь Шихуан; зацепка 皇帝
 - видна в 1: 2016-17-reg-1
-
-## 神舟五号 — «Шэньчжоу-5» — корабль первого пилотируемого полёта Китая (2003, Ян Ливэй)
-
-- выдаёт 2025-26-mun-tat-55: ответ 2003; зацепка Шэньчжоу-5
-- выдаёт space/space-q01: ответ 神舟五号, Шэньчжоу-5; зацепка 2003, Ян Ливэй, та же строка
-- видна в 1: space/space-q20
 
 ## 离骚 — «Лисао» — поэма Цюй Юаня, образец чуских строф
 
@@ -444,12 +376,6 @@
 - выдаёт literature/literature-q91: ответ 骆驼祥子; зацепка Лао Шэ, та же строка
 - видна в 11: literature/literature-q10, literature/literature-q11, literature/literature-q13, literature/literature-q16, literature/literature-q17, literature/literature-q18, literature/literature-q19, literature/literature-q88, literature/literature-q89, literature/literature-q90, literature/literature-q92
 
-## 鲁菜 — Шаньдунская кухня — её блюдо трепанг с зелёным луком
-
-- выдаёт 2019-20-mun-mosobl-55: ответ Шаньдунская кухня; зацепка 鲁菜
-- выдаёт cuisine/cuisine-q67: ответ 鲁菜, шаньдунская кухня; зацепка Шаньдун
-- видна в 8: cuisine/cuisine-q01, cuisine/cuisine-q02, cuisine/cuisine-q105, cuisine/cuisine-q77, cuisine/cuisine-q78, cuisine/cuisine-q80, cuisine/cuisine-q82, cuisine/cuisine-q83
-
 ## 麻沸散 — «Мафэйсань» — обезболивающее для операций, его приписывают Хуа То
 
 - выдаёт addition-b2-12: ответ Хуа То; зацепка «мафэйсань», 麻沸散
@@ -476,11 +402,6 @@
 
 - выдаёт money/money-q10: ответ Ярославль; зацепка 1997 год, та же строка
 - видна в 2: money/money-q08, money/money-q38
-
-## 1812 年 — 1812 год: Бородинское сражение
-
-- выдаёт 2024-25-mun-udm-2: ответ 1812; зацепка Борода, Бородинское сражение
-- видна в 6: modern-history/modern-history-q100, modern-history/modern-history-q80, modern-history/modern-history-q81, modern-history/modern-history-q82, modern-history/modern-history-q97, modern-history/modern-history-q99
 
 ## 1825 年 — 1825 год: восстание декабристов
 
@@ -672,11 +593,6 @@
 - выдаёт 2018-19-reg-6: ответ 三月十二日; зацепка День посадки деревьев, та же строка
 - видна в 3: holidays/holidays-q03, holidays/holidays-q21, holidays/holidays-q39
 
-## 三维动画 — Трёхмерная анимация — так снят фильм «Нэчжа: Рождение демона» (2019)
-
-- выдаёт cinema/cinema-q18: ответ Нэчжа: Рождение демона; зацепка 2019, та же строка
-- видна в 2: cinema/cinema-q13, cinema/cinema-q14
-
 ## 下西洋 — Плавания в «Западный океан» — семь походов флота Чжэн Хэ, 1405–1433 гг.
 
 - выдаёт people/people-q19: ответ 下西洋, плавания в Западный океан; зацепка Чжэн Хэ, та же строка
@@ -685,7 +601,7 @@
 ## 下诺夫哥罗德 — Нижний Новгород — город при слиянии Волги и Оки
 
 - выдаёт provinces/provinces-q75: ответ 下诺夫哥罗德, Нижний Новгород; зацепка Волга, та же строка
-- видна в 14: provinces/provinces-q108, provinces/provinces-q113, provinces/provinces-q114, provinces/provinces-q124, provinces/provinces-q63, provinces/provinces-q64, provinces/provinces-q65, provinces/provinces-q66, provinces/provinces-q67, provinces/provinces-q68, provinces/provinces-q69, provinces/provinces-q70, provinces/provinces-q71, provinces/provinces-q77
+- видна в 13: provinces/provinces-q108, provinces/provinces-q113, provinces/provinces-q124, provinces/provinces-q63, provinces/provinces-q64, provinces/provinces-q65, provinces/provinces-q66, provinces/provinces-q67, provinces/provinces-q68, provinces/provinces-q69, provinces/provinces-q70, provinces/provinces-q71, provinces/provinces-q77
 
 ## 下诺夫哥罗德 — Нижний Новгород — основан в 1221 году при слиянии Оки и Волги
 
@@ -837,6 +753,16 @@
 - выдаёт dynasties/dynasties-q58: ответ 亚历山大·涅夫斯基, Александр Невский; зацепка 1242 год
 - видна в 2: modern-history/modern-history-q101, modern-history/modern-history-q98
 
+## 亚历山大二世 — Александр II — император в 1855–1881 годах, в 1861 году отменил крепостное право (название ответа)
+
+- выдаёт modern-history/modern-history-q97: ответ 1861 год; зацепка Отмена крепостного права
+- видна в 10: dynasties/dynasties-q41, dynasties/dynasties-q42, dynasties/dynasties-q43, dynasties/dynasties-q44, dynasties/dynasties-q45, dynasties/dynasties-q47, dynasties/dynasties-q49, dynasties/dynasties-q50, dynasties/dynasties-q55, dynasties/dynasties-q56
+
+## 亚历山大二世 — Александр II — император, при котором в 1861 году отменили крепостное право
+
+- выдаёт modern-history/modern-history-q97: ответ 1861 год; зацепка Отмена крепостного права, та же строка
+- видна в 2: modern-history/modern-history-q101, modern-history/modern-history-q98
+
 ## 京剧 — Пекинская опера (цзинцзюй) — сочетает пение, речитатив, актёрскую игру и боевые приёмы (название ответа)
 
 - выдаёт 2016-17-mun-yar-8: ответ Пекин; зацепка Пекинская опера, 京剧
@@ -922,6 +848,11 @@
 - выдаёт 2015-16-zak-5: ответ монголы; зацепка династия Юань
 - видна в 1: dynasties/dynasties-q05
 
+## 元宵节 — Праздник фонарей — 15-е число 1-го лунного месяца, едят танъюань
+
+- выдаёт holidays/holidays-q45: ответ 元宵节, Праздник фонарей; зацепка танъюань, та же строка
+- видна в 5: holidays/holidays-q16, holidays/holidays-q43, holidays/holidays-q44, holidays/holidays-q46, holidays/holidays-q47
+
 ## 元朝 — Династия Юань — монгольская, 1271–1368, основал Хубилай
 
 - выдаёт 2015-16-zak-5: ответ монголы; зацепка династия Юань, 元朝, та же строка
@@ -951,6 +882,11 @@
 
 - выдаёт people/people-q08: ответ 兵家, школа стратегов; зацепка Сунь-цзы, та же строка
 - видна в 2: people/people-q06, people/people-q07
+
+## 冀 — Сокращение Хэбэя — по древней области Цзичжоу, «первой из девяти областей»
+
+- выдаёт provinces/provinces-q102: ответ 冀; зацепка Хэбэй, та же строка
+- видна в 1: provinces/provinces-q45
 
 ## 农村包围城市 — «Окружение городов деревней» — революционный путь, который проложил Мао Цзэдун
 
@@ -987,6 +923,11 @@
 - выдаёт dynasties/dynasties-q115: ответ династия Хань; зацепка Лю Бан, 刘邦, та же строка
 - видна в 9: dynasties/dynasties-q101, dynasties/dynasties-q102, dynasties/dynasties-q116, dynasties/dynasties-q17, dynasties/dynasties-q21, dynasties/dynasties-q23, dynasties/dynasties-q27, dynasties/dynasties-q28, dynasties/dynasties-q29
 
+## 剁椒鱼头 — Рыбья голова под рубленым перцем — знаменитое блюдо хунаньской кухни
+
+- выдаёт cuisine/cuisine-q82: ответ Хунаньская кухня; зацепка 剁椒鱼头
+- видна в 1: cuisine/cuisine-q84
+
 ## 剪纸动画 — Бумажная перекладка — так снят цикл «Братья-тыквы»
 
 - выдаёт cinema/cinema-q14: ответ 剪纸动画, бумажная перекладка; зацепка Братья-тыквы, та же строка
@@ -1017,11 +958,6 @@
 - выдаёт 2016-17-reg-6: ответ 1919; зацепка 4, та же строка
 - видна в 3: modern-history/modern-history-q114, modern-history/modern-history-q63, modern-history/modern-history-q69
 
-## 北京 — Пекин — столица Китая; классический сыхэюань — пекинский
-
-- выдаёт ethnos/ethnos-q83: ответ сыхэюань; зацепка Пекин, 北京, та же строка
-- видна в 1: ethnos/ethnos-q84
-
 ## 北京条约 — Пекинские договоры — соглашения 1860 года, завершившие Вторую опиумную войну
 
 - выдаёт modern-history/modern-history-q108: ответ 北京条约, Пекинский договор; зацепка 1860 год
@@ -1041,6 +977,11 @@
 
 - выдаёт nature/nature-q49: ответ Хэншань в Шаньси; зацепка Северный пик, та же строка
 - видна в 1: nature/nature-q48
+
+## 北方首都 — «Северная столица» — прозвище Санкт-Петербурга
+
+- выдаёт provinces/provinces-q106: ответ 北方首都, Северная столица; зацепка Санкт-Петербург, та же строка
+- видна в 1: provinces/provinces-q107
 
 ## 北魏 — Северная Вэй (386–534) — при ней основан монастырь Шаолинь
 
@@ -1080,7 +1021,7 @@
 ## 南京 — Нанкин — город на востоке Китая, в провинции Цзянсу
 
 - выдаёт provinces/provinces-q24: ответ 南京, Нанкин; зацепка Цзянси, Цзянсу, та же строка
-- видна в 6: provinces/provinces-q116, provinces/provinces-q20, provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
+- видна в 5: provinces/provinces-q20, provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
 
 ## 南宋 — Южная Сун — 1127–1279, столица Линьань (Ханчжоу)
 
@@ -1096,11 +1037,6 @@
 
 - выдаёт modern-history/modern-history-q118: ответ 南昌, Наньчан; зацепка 1927 год, та же строка
 - видна в 2: modern-history/modern-history-q114, modern-history/modern-history-q69
-
-## 博罗季诺战役 — Бородинское сражение — генеральное сражение Отечественной войны 1812 года
-
-- выдаёт 2024-25-mun-udm-2: ответ 1812; зацепка Борода, Бородинское сражение
-- видна в 1: modern-history/modern-history-q50
 
 ## 卡拉马佐夫兄弟 — «Братья Карамазовы» — последний роман Достоевского, 1879–1880 гг.
 
@@ -1130,7 +1066,12 @@
 ## 台湾省 — Тайвань — остров Тайвань (35 873 км²), архипелаг Пэнху и другие острова
 
 - выдаёт nature/nature-q09: ответ остров Тайвань; зацепка остров
-- видна в 8: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q12, provinces/provinces-q123, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q15, provinces/provinces-q16
+- видна в 7: provinces/provinces-q111, provinces/provinces-q112, provinces/provinces-q12, provinces/provinces-q13, provinces/provinces-q14, provinces/provinces-q15, provinces/provinces-q16
+
+## 台风 — Тайфун — тропический циклон западной части Тихого океана.
+
+- выдаёт 2024-25-mun-34: ответ Тихий океан; зацепка Океан
+- видна в 1: nature/nature-q174
 
 ## 史记 — «Исторические записки» — первая всеобщая история Китая, труд Сыма Цяня
 
@@ -1205,12 +1146,12 @@
 ## 咸鲜 — Солёно-свежий вкус, подчёркивающий естественный вкус продуктов, — шаньдунская кухня
 
 - выдаёт cuisine/cuisine-q67: ответ шаньдунская кухня; зацепка Шаньдун, та же строка
-- видна в 2: cuisine/cuisine-q73, cuisine/cuisine-q75
+- видна в 1: cuisine/cuisine-q75
 
 ## 哈尔滨 — Харбин — город на северо-востоке Китая, в провинции Хэйлунцзян
 
 - выдаёт provinces/provinces-q150: ответ 哈尔滨, Харбин; зацепка провинция Хэйлунцзян, та же строка
-- видна в 5: provinces/provinces-q116, provinces/provinces-q20, provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q53
+- видна в 4: provinces/provinces-q20, provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q53
 
 ## 哈巴罗夫斯克 — Хабаровск — город на купюре 5000 рублей образца 1997 года
 
@@ -1281,6 +1222,11 @@
 
 - выдаёт people/people-q23: ответ 图画展览会, «Картинки с выставки»; зацепка Модест Мусоргский, та же строка
 - видна в 3: people/people-q21, people/people-q22, people/people-q24
+
+## 圣彼得堡 — Санкт-Петербург — «Северная столица» в устье Невы
+
+- выдаёт provinces/provinces-q106: ответ Северная столица; зацепка Санкт-Петербург, та же строка
+- видна в 14: provinces/provinces-q108, provinces/provinces-q113, provinces/provinces-q124, provinces/provinces-q64, provinces/provinces-q65, provinces/provinces-q66, provinces/provinces-q67, provinces/provinces-q68, provinces/provinces-q69, provinces/provinces-q70, provinces/provinces-q71, provinces/provinces-q75, provinces/provinces-q77, provinces/provinces-q85
 
 ## 圣彼得堡 — Санкт-Петербург — город на купюре 50 рублей образца 1997 года
 
@@ -1365,7 +1311,7 @@
 ## 天津 — Тяньцзинь — город центрального подчинения на севере Китая, на берегу Бохая
 
 - выдаёт 2015-16-reg-1: ответ 天津, Тяньцзинь; зацепка город центрального подчинения, та же строка
-- видна в 6: provinces/provinces-q116, provinces/provinces-q20, provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
+- видна в 5: provinces/provinces-q20, provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
 
 ## 契丹族 — Кидани — народ, основавший династию Ляо
 
@@ -1381,16 +1327,6 @@
 
 - выдаёт literature/literature-q46: ответ Го Можо; зацепка Богини, та же строка
 - видна в 5: literature/literature-q88, literature/literature-q89, literature/literature-q90, literature/literature-q91, literature/literature-q92
-
-## 姚明 — Яо Мин — баскетболист, выступал в НБА за «Хьюстон Рокетс»
-
-- выдаёт 2021-22-mun-lenobl-9: ответ 姚明, Яо Мин; зацепка баскетбол, та же строка
-- видна в 1: modern-china/modern-china-q16
-
-## 姚明 — Яо Мин — баскетболист, звезда НБА
-
-- выдаёт 2021-22-mun-lenobl-9: ответ 姚明, Яо Мин; зацепка баскетбол
-- видна в 1: space/space-q04
 
 ## 孟姜女 — Мэн Цзяннюй — по преданию, оплакала мужа у Великой стены
 
@@ -1512,11 +1448,6 @@
 - выдаёт provinces/provinces-q99: ответ Гуанчжоу; зацепка провинция Гуандун
 - видна в 1: 2018-19-shk-6
 
-## 广东省 — Гуандун — наряду с кантонским распространены хакка и миньские диалекты
-
-- выдаёт 2023-24-mun-kem-2: ответ 广东省; зацепка кантонский
-- видна в 1: 2024-25-zak-qe05919
-
 ## 广州 — Гуанчжоу (Кантон), столица провинции Гуандун
 
 - выдаёт provinces/provinces-q99: ответ 广州, Гуанчжоу; зацепка провинция Гуандун
@@ -1525,7 +1456,7 @@
 ## 广州 — Гуанчжоу — крупный город на юге Китая, в провинции Гуандун
 
 - выдаёт provinces/provinces-q99: ответ 广州, Гуанчжоу; зацепка провинция Гуандун
-- видна в 5: provinces/provinces-q116, provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
+- видна в 4: provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
 
 ## 广西 — Гуанси — здесь карстовые горы Гуйлиня вдоль реки Лицзян
 
@@ -1536,6 +1467,11 @@
 
 - выдаёт dynasties/dynasties-q48: ответ Дмитрий Донской; зацепка Куликовская битва
 - видна в 1: modern-history/modern-history-q50
+
+## 库图佐夫 — Кутузов — главнокомандующий русской армией, командовал при Бородине в 1812 году
+
+- выдаёт modern-history/modern-history-q09: ответ 库图佐夫, Кутузов; зацепка Борода
+- видна в 2: modern-history/modern-history-q101, modern-history/modern-history-q98
 
 ## 庞贝城的末日 — «Последний день Помпеи» — картина Брюллова, 1833 год
 
@@ -1565,7 +1501,7 @@
 ## 弗拉基米尔 — Владимир — центр Владимирской области, город «Золотого кольца»
 
 - выдаёт provinces/provinces-q85: ответ 弗拉基米尔; зацепка Золотое кольцо, та же строка
-- видна в 15: provinces/provinces-q108, provinces/provinces-q113, provinces/provinces-q114, provinces/provinces-q124, provinces/provinces-q63, provinces/provinces-q64, provinces/provinces-q65, provinces/provinces-q66, provinces/provinces-q67, provinces/provinces-q68, provinces/provinces-q69, provinces/provinces-q70, provinces/provinces-q71, provinces/provinces-q75, provinces/provinces-q77
+- видна в 14: provinces/provinces-q108, provinces/provinces-q113, provinces/provinces-q124, provinces/provinces-q63, provinces/provinces-q64, provinces/provinces-q65, provinces/provinces-q66, provinces/provinces-q67, provinces/provinces-q68, provinces/provinces-q69, provinces/provinces-q70, provinces/provinces-q71, provinces/provinces-q75, provinces/provinces-q77
 
 ## 张艺谋 — Чжан Имоу — режиссёр фильма «Красный гаолян» по прозе Мо Яня
 
@@ -1797,10 +1733,15 @@
 - выдаёт people/people-q28: ответ 条件反射, Условный рефлекс; зацепка Иван Павлов, та же строка
 - видна в 3: people/people-q25, people/people-q26, people/people-q27
 
+## 杨利伟 — Ян Ливэй — первый китайский космонавт, полёт на «Шэньчжоу-5» (2003)
+
+- выдаёт space/space-q01: ответ Шэньчжоу-5; зацепка Ян Ливэй
+- видна в 2: space/space-q12, space/space-q13
+
 ## 杭州 — Ханчжоу — город на востоке Китая, в провинции Чжэцзян
 
 - выдаёт provinces/provinces-q101: ответ 杭州, Ханчжоу; зацепка провинция Чжэцзян
-- видна в 6: provinces/provinces-q116, provinces/provinces-q20, provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
+- видна в 5: provinces/provinces-q20, provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
 
 ## 杭州 — Ханчжоу — здесь монастырь Линъиньсы у озера Сиху
 
@@ -1900,7 +1841,7 @@
 ## 武汉 — Ухань — город в центре Китая, в провинции Хубэй
 
 - выдаёт provinces/provinces-q100: ответ 武汉; зацепка провинция Хубэй
-- видна в 6: provinces/provinces-q116, provinces/provinces-q20, provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
+- видна в 5: provinces/provinces-q20, provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
 
 ## 死魂灵 — «Мёртвые души» — роман-поэма Гоголя о Чичикове, 1842 г.
 
@@ -1976,6 +1917,11 @@
 
 - выдаёт 2025-26-mun-10: ответ фарфор; зацепка Белый
 - видна в 1: crafts/crafts-q132
+
+## 汤圆 — Танъюань — сладкие рисовые шарики, их едят на Праздник фонарей
+
+- выдаёт holidays/holidays-q45: ответ Праздник фонарей; зацепка танъюань, 汤圆, та же строка
+- видна в 1: holidays/holidays-q07
 
 ## 汴京 — Бяньцзин (ныне Кайфэн) — столица Северной Сун
 
@@ -2065,7 +2011,7 @@
 ## 深圳 — Шэньчжэнь (Гуандун), с 1980 года одна из четырёх первых особых экономических зон КНР
 
 - выдаёт modern-china/modern-china-q09: ответ 深圳, Шэньчжэнь; зацепка 1980 год, особая экономическая зона
-- видна в 20: modern-china/modern-china-q01, modern-china/modern-china-q02, provinces/provinces-q115, provinces/provinces-q116, provinces/provinces-q117, provinces/provinces-q119, provinces/provinces-q121, provinces/provinces-q20, provinces/provinces-q21, provinces/provinces-q22, provinces/provinces-q24, provinces/provinces-q25, provinces/provinces-q26, provinces/provinces-q27, provinces/provinces-q28, provinces/provinces-q29, provinces/provinces-q30, provinces/provinces-q52, provinces/provinces-q53, provinces/provinces-q87
+- видна в 18: modern-china/modern-china-q01, modern-china/modern-china-q02, provinces/provinces-q115, provinces/provinces-q119, provinces/provinces-q121, provinces/provinces-q20, provinces/provinces-q21, provinces/provinces-q22, provinces/provinces-q24, provinces/provinces-q25, provinces/provinces-q26, provinces/provinces-q27, provinces/provinces-q28, provinces/provinces-q29, provinces/provinces-q30, provinces/provinces-q52, provinces/provinces-q53, provinces/provinces-q87
 
 ## 深圳 — Шэньчжэнь — в Цяньхае развивают сотрудничество с Гонконгом
 
@@ -2117,11 +2063,6 @@
 - выдаёт 2021-22-mun-qa05d78: ответ 湘方言, сянский диалект; зацепка Хунань, та же строка
 - видна в 2: ethnos/ethnos-q88, ethnos/ethnos-q92
 
-## 湘菜 — Хунаньская кухня — её блюдо рыбья голова под рубленым перцем
-
-- выдаёт 2019-20-shk-mosobl-55: ответ Хунаньская кухня; зацепка Хунань
-- видна в 4: cuisine/cuisine-q02, cuisine/cuisine-q77, cuisine/cuisine-q78, cuisine/cuisine-q79
-
 ## 溥仪 — Пу И — последний император Цин, отрёкся от престола в 1912
 
 - выдаёт dynasties/dynasties-q11: ответ 溥仪; зацепка Цин, та же строка
@@ -2145,7 +2086,7 @@
 ## 澳门特别行政区 — Аомэнь (Макао) — особый административный район Китая, с 1999 года
 
 - выдаёт 2016-17-shk-3: ответ 澳门, Аомэнь; зацепка 1999 год, та же строка
-- видна в 3: provinces/provinces-q112, provinces/provinces-q123, provinces/provinces-q16
+- видна в 2: provinces/provinces-q112, provinces/provinces-q16
 
 ## 热带 — Тропический пояс — в Китае к нему относится остров Хайнань
 
@@ -2242,9 +2183,14 @@
 - выдаёт provinces/provinces-q07: ответ Аньхой; зацепка 皖, та же строка
 - видна в 1: provinces/provinces-q45
 
+## 盘古开天 — «Паньгу отделяет небо от земли» — миф о сотворении мира
+
+- выдаёт myths/myths-q04: ответ 盘古开天, Паньгу отделяет небо от земли; зацепка Миф, та же строка
+- видна в 4: myths/myths-q01, myths/myths-q18, myths/myths-q21, myths/myths-q22
+
 ## 省 — Провинция — такой статус у Хэбэя, центр — Шицзячжуан
 
-- выдаёт provinces/provinces-q33: ответ Шицзячжуан; зацепка Провинция, та же строка
+- выдаёт provinces/provinces-q33: ответ Шицзячжуан; зацепка Провинция, Хэбэй, та же строка
 - видна в 2: provinces/provinces-q109, provinces/provinces-q88
 
 ## 短篇小说 — Рассказ — жанр «Дневника сумасшедшего» Лу Синя (1918)
@@ -2257,20 +2203,15 @@
 - выдаёт holidays/holidays-q23: ответ 祖国保卫者日, День защитника Отечества; зацепка 23, та же строка
 - видна в 5: holidays/holidays-q10, holidays/holidays-q24, holidays/holidays-q25, holidays/holidays-q28, holidays/holidays-q52
 
+## 神舟五号 — «Шэньчжоу-5» — корабль первого пилотируемого полёта Китая (2003, Ян Ливэй)
+
+- выдаёт space/space-q01: ответ 神舟五号, Шэньчжоу-5; зацепка Ян Ливэй, та же строка
+- видна в 1: space/space-q20
+
 ## 祭侄文稿 — «Черновик надгробного слова племяннику» — синшу Янь Чжэньцина, 758 г.
 
 - выдаёт painting/painting-q22: ответ 祭侄文稿, Черновик надгробного слова племяннику; зацепка Янь Чжэньцин, та же строка
 - видна в 2: painting/painting-q104, painting/painting-q17
-
-## 福州 — Фучжоу — город на юго-востоке Китая, в провинции Фуцзянь
-
-- выдаёт 2022-23-shk-mosobl-2: ответ Фуцзянь, провинция Фуцзянь; зацепка Фучжоу
-- видна в 6: provinces/provinces-q116, provinces/provinces-q20, provinces/provinces-q22, provinces/provinces-q26, provinces/provinces-q52, provinces/provinces-q53
-
-## 福建 — Фуцзянь — здесь земляные дома-крепости тулоу, в списке ЮНЕСКО с 2008 года
-
-- выдаёт 2021-22-reg-q814d54: ответ земляной дом-крепость, тулоу; зацепка провинция Фуцзянь, та же строка
-- видна в 1: ethnos/ethnos-q84
 
 ## 福建 — Фуцзянь — здесь, в Дэхуа, делают белый фарфор, «китайский белый»
 
@@ -2292,11 +2233,6 @@
 - выдаёт nature/nature-q44: ответ 秦岭; зацепка граница Севера и Юга Китая, та же строка
 - видна в 6: nature/nature-q144, nature/nature-q156, nature/nature-q42, nature/nature-q45, nature/nature-q46, nature/nature-q51
 
-## 窑洞 — Яодун — традиционное жильё-пещера лёссового плато
-
-- выдаёт ethnos/ethnos-q84: ответ Лёссовое плато; зацепка пещерное жилище, 窑洞, та же строка
-- видна в 1: ethnos/ethnos-q83
-
 ## 端午节 — Дуаньу — 5-е число 5-го лунного месяца: лодки-драконы и цзунцзы
 
 - выдаёт holidays/holidays-q47: ответ 端午节; зацепка цзунцзы, та же строка
@@ -2310,7 +2246,7 @@
 ## 符拉迪沃斯托克 — Владивосток — центр Приморского края, портовый город на Японском море
 
 - выдаёт nature/nature-q130: ответ Японское море; зацепка Владивосток
-- видна в 13: provinces/provinces-q113, provinces/provinces-q114, provinces/provinces-q63, provinces/provinces-q64, provinces/provinces-q65, provinces/provinces-q66, provinces/provinces-q67, provinces/provinces-q68, provinces/provinces-q69, provinces/provinces-q70, provinces/provinces-q71, provinces/provinces-q75, provinces/provinces-q77
+- видна в 12: provinces/provinces-q113, provinces/provinces-q63, provinces/provinces-q64, provinces/provinces-q65, provinces/provinces-q66, provinces/provinces-q67, provinces/provinces-q68, provinces/provinces-q69, provinces/provinces-q70, provinces/provinces-q71, provinces/provinces-q75, provinces/provinces-q77
 
 ## 第一次鸦片战争 — Первая опиумная война — её завершил Нанкинский договор 1842 года
 
@@ -2326,11 +2262,6 @@
 
 - выдаёт people/people-q24: ответ 第二钢琴协奏曲, Второй фортепианный концерт; зацепка Сергей Рахманинов, та же строка
 - видна в 3: people/people-q21, people/people-q22, people/people-q23
-
-## 篮球 — Баскетбол — вид спорта Яо Мина, игрока «Хьюстон Рокетс» в НБА
-
-- выдаёт 2021-22-mun-lenobl-9: ответ Яо Мин; зацепка баскетбол, та же строка
-- видна в 2: modern-china/modern-china-q17, modern-china/modern-china-q18
 
 ## 粤 — Сокращение Гуандуна — от древнего названия южных земель «Юэ»
 
@@ -2351,11 +2282,6 @@
 
 - выдаёт literature/literature-q82: ответ 索尔仁尼琴, Солженицын; зацепка Архипелаг ГУЛАГ, та же строка
 - видна в 17: literature/literature-q60, literature/literature-q61, literature/literature-q62, literature/literature-q63, literature/literature-q64, literature/literature-q71, literature/literature-q73, literature/literature-q74, literature/literature-q76, literature/literature-q80, literature/literature-q81, literature/literature-q83, literature/literature-q86, literature/literature-q87, literature/literature-q93, literature/literature-q94, literature/literature-q95
-
-## 红包 — Хунбао — красный конверт с деньгами, который дарят на китайский Новый год
-
-- выдаёт 2024-25-mun-tula-10: ответ 红包, красный конверт, хунбао; зацепка китайский Новый год
-- видна в 1: 2026-27-mun-10
 
 ## 红色 — Красный, цвет праздника — свадеб и Праздника весны
 
@@ -2532,11 +2458,6 @@
 - выдаёт people/people-q20: ответ 西行取经; зацепка Сюаньцзан, та же строка
 - видна в 2: people/people-q18, people/people-q19
 
-## 解放者 — «Освободитель» — прозвище Александра II, отменившего крепостное право
-
-- выдаёт 2020-21-mun-lenobl-3: ответ Александр II; зацепка Отмена крепостного права
-- видна в 2: dynasties/dynasties-q120, dynasties/dynasties-q54
-
 ## 许幸之 — Сюй Синчжи — режиссёр фильма «Дети грозных лет» с «Маршем добровольцев»
 
 - выдаёт cinema/cinema-q34: ответ Дети грозных лет; зацепка Марш добровольцев, та же строка
@@ -2637,11 +2558,6 @@
 - выдаёт holidays/holidays-q40: ответ монголы; зацепка скачки, стрельба, 那达慕, та же строка
 - видна в 9: holidays/holidays-q02, holidays/holidays-q16, holidays/holidays-q18, holidays/holidays-q42, holidays/holidays-q43, holidays/holidays-q44, holidays/holidays-q45, holidays/holidays-q46, holidays/holidays-q47
 
-## 郭帆 — Го Фань — режиссёр фантастического фильма «Блуждающая Земля» (2019)
-
-- выдаёт cinema/cinema-q31: ответ Блуждающая Земля; зацепка 2019, та же строка
-- видна в 3: cinema/cinema-q01, cinema/cinema-q32, cinema/cinema-q33
-
 ## 都江堰 — Дуцзянъянь — древняя оросительная система на реке Миньцзян в Сычуани
 
 - выдаёт nature/nature-q63: ответ река Миньцзян; зацепка Дуцзянъянь, та же строка
@@ -2665,7 +2581,7 @@
 ## 重庆 — Чунцин — город центрального подчинения на юго-западе Китая
 
 - выдаёт provinces/provinces-q26: ответ 重庆, Чунцин; зацепка город центрального подчинения, та же строка
-- видна в 16: provinces/provinces-q115, provinces/provinces-q117, provinces/provinces-q119, provinces/provinces-q121, provinces/provinces-q20, provinces/provinces-q21, provinces/provinces-q22, provinces/provinces-q24, provinces/provinces-q25, provinces/provinces-q28, provinces/provinces-q29, provinces/provinces-q30, provinces/provinces-q52, provinces/provinces-q53, provinces/provinces-q87, provinces/provinces-q91
+- видна в 15: provinces/provinces-q115, provinces/provinces-q119, provinces/provinces-q121, provinces/provinces-q20, provinces/provinces-q21, provinces/provinces-q22, provinces/provinces-q24, provinces/provinces-q25, provinces/provinces-q28, provinces/provinces-q29, provinces/provinces-q30, provinces/provinces-q52, provinces/provinces-q53, provinces/provinces-q87, provinces/provinces-q91
 
 ## 重庆 — Чунцин, временная столица Китайской Республики в годы войны с Японией
 
@@ -2675,7 +2591,7 @@
 ## 重庆市 — Чунцин — город центрального подчинения в верховьях Янцзы
 
 - выдаёт provinces/provinces-q26: ответ 重庆, Чунцин; зацепка город центрального подчинения
-- видна в 3: provinces/provinces-q112, provinces/provinces-q123, provinces/provinces-q16
+- видна в 2: provinces/provinces-q112, provinces/provinces-q16
 
 ## 金角湾大桥 — Золотой мост — вантовый мост через бухту Золотой Рог во Владивостоке
 
@@ -2705,7 +2621,7 @@
 ## 长江三峡 — Три ущелья Янцзы — на обороте купюры 10 юаней
 
 - выдаёт money/money-q05: ответ 长江三峡, Три ущелья; зацепка 10, та же строка
-- видна в 4: money/money-q06, money/money-q07, money/money-q39, money/money-q40
+- видна в 2: money/money-q07, money/money-q39
 
 ## 长篇小说 — Роман — так в Китае числят «Мёртвые души»; сам Гоголь назвал их поэмой
 
@@ -2751,11 +2667,6 @@
 
 - выдаёт nature/nature-q48: ответ Западный пик; зацепка пять священных гор, та же строка
 - видна в 1: nature/nature-q50
-
-## 除夕 — Чуси — канун Праздника весны, последний вечер года: семейный ужин и бдение
-
-- выдаёт 2019-20-mun-kgd-7: ответ 除夕, канун Праздника весны, последний вечер года; зацепка Праздник весны
-- видна в 2: holidays/holidays-q09, holidays/holidays-q13
 
 ## 雅罗斯拉夫尔 — Ярославль — город на купюре 1000 рублей образца 1997 года
 
@@ -2845,32 +2756,17 @@
 ## 香港特别行政区 — Сянган (Гонконг) — особый административный район на юге Китая, с 1997 года
 
 - выдаёт 2016-17-mun-4: ответ 1997; зацепка Гонконг
-- видна в 3: provinces/provinces-q112, provinces/provinces-q123, provinces/provinces-q16
-
-## 香辣 — Ароматная острота — так описывают хунаньскую кухню
-
-- выдаёт 2019-20-shk-mosobl-55: ответ Хунаньская кухня; зацепка Хунань, остров
-- видна в 1: cuisine/cuisine-q75
-
-## 鱼香肉丝 — Юйсян жоусы — обычное блюдо сычуаньской кухни, не праздничное
-
-- выдаёт cuisine/cuisine-q01: ответ Сычуаньская кухня; зацепка юйсян жоусы, 鱼香肉丝
-- видна в 1: holidays/holidays-q07
+- видна в 2: provinces/provinces-q112, provinces/provinces-q16
 
 ## 鲁 — Сокращение Шаньдуна — по древнему царству Лу
 
 - выдаёт provinces/provinces-q94: ответ 鲁; зацепка Шаньдун, та же строка
 - видна в 1: provinces/provinces-q45
 
-## 鲁菜 — Шаньдунская кухня (название ответа)
+## 鲁菜 — Шаньдунская кухня — её блюдо трепанг с зелёным луком
 
-- выдаёт 2019-20-mun-mosobl-55: ответ Шаньдунская кухня; зацепка 鲁菜
-- видна в 1: cuisine/cuisine-q79
-
-## 鲁菜 — Шаньдунская кухня — одна из восьми великих кухонь Китая (название ответа)
-
-- выдаёт 2019-20-mun-mosobl-55: ответ Шаньдунская кухня; зацепка 鲁菜
-- видна в 2: cuisine/cuisine-q67, cuisine/cuisine-q97
+- выдаёт cuisine/cuisine-q67: ответ 鲁菜, шаньдунская кухня; зацепка Шаньдун
+- видна в 3: cuisine/cuisine-q02, cuisine/cuisine-q77, cuisine/cuisine-q78
 
 ## 鹊桥 — Цюэцяо — спутник-ретранслятор у точки L2 для связи с «Чанъэ-4», 2018
 
@@ -2896,11 +2792,6 @@
 
 - выдаёт painting/painting-q05: ответ 齐白石, Ци Байши; зацепка XX век, креветок, та же строка
 - видна в 4: painting/painting-q01, painting/painting-q02, painting/painting-q04, painting/painting-q06
-
-## 龙 — Дракон — одно из двенадцати животных китайского зодиака
-
-- выдаёт 2025-26-mun-vlad-7: ответ 龙, дракон; зацепка китайский зодиак, та же строка
-- видна в 4: sets/sets-q03, sets/sets-q04, sets/sets-q05, sets/sets-q12
 
 ## 龙泉青瓷 — Лунцюаньский селадон — зеленоватый фарфор из Чжэцзяна, расцвет при Южной Сун
 

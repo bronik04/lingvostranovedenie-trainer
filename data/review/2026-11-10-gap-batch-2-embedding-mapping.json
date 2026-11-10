@@ -1,0 +1,889 @@
+{
+  "manifestStoredHash": "0fbd7a52d1e54f9cca54d4f32238c5e023afee275b103dd26d170cfde4e71f59",
+  "manifestFileSha256": "ff6fcb97a86378880c8ed0b228d281432dd30c117d443cf5368bdfd04f683f5e",
+  "architecture": "authored+embeds",
+  "optionPreservationSimulation": "In-memory embed_record returned all17 with exact68 optionIDs/text/order, exact17 keys, and4 options each; validation errors for accepted explanations8/14 remain.",
+  "items": [
+    {
+      "reviewNumber": 1,
+      "previewId": "preview-gap2r-01",
+      "publicId": "addition-gap2-01",
+      "embeddingId": "landmarks-q118",
+      "dossier": "landmarks",
+      "table": "boardgames",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "game-weiqi",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "game-xiangqi",
+          "zh": "象棋"
+        },
+        {
+          "optionId": "o2",
+          "row": "game-weiqi",
+          "zh": "围棋"
+        },
+        {
+          "optionId": "o3",
+          "row": "game-chess",
+          "zh": "国际象棋"
+        },
+        {
+          "optionId": "o4",
+          "row": "game-gomoku",
+          "zh": "五子棋"
+        }
+      ],
+      "embedding": {
+        "id": "landmarks-q118",
+        "status": "accepted",
+        "embeds": "addition-gap2-01",
+        "fact": {
+          "table": "boardgames",
+          "row": "game-weiqi",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 2,
+      "previewId": "preview-gap2r-02",
+      "publicId": "addition-gap2-02",
+      "embeddingId": "provinces-q156",
+      "dossier": "provinces",
+      "table": "provinces",
+      "column": "cottonregionname",
+      "newTable": false,
+      "answerRow": "prov-xinjiang",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "prov-shandong",
+          "zh": "山东"
+        },
+        {
+          "optionId": "o2",
+          "row": "prov-hubei",
+          "zh": "湖北"
+        },
+        {
+          "optionId": "o3",
+          "row": "prov-xinjiang",
+          "zh": "新疆"
+        },
+        {
+          "optionId": "o4",
+          "row": "prov-hebei",
+          "zh": "河北"
+        }
+      ],
+      "embedding": {
+        "id": "provinces-q156",
+        "status": "accepted",
+        "embeds": "addition-gap2-02",
+        "fact": {
+          "table": "provinces",
+          "row": "prov-xinjiang",
+          "ask": "cottonregionname"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 3,
+      "previewId": "preview-gap2r-03",
+      "publicId": "addition-gap2-03",
+      "embeddingId": "literature-q117",
+      "dossier": "literature",
+      "table": "readingcorners",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "reading-top-right",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "reading-top-left",
+          "zh": "左上角"
+        },
+        {
+          "optionId": "o2",
+          "row": "reading-top-right",
+          "zh": "右上角"
+        },
+        {
+          "optionId": "o3",
+          "row": "reading-bottom-left",
+          "zh": "左下角"
+        },
+        {
+          "optionId": "o4",
+          "row": "reading-bottom-right",
+          "zh": "右下角"
+        }
+      ],
+      "embedding": {
+        "id": "literature-q117",
+        "status": "accepted",
+        "embeds": "addition-gap2-03",
+        "fact": {
+          "table": "readingcorners",
+          "row": "reading-top-right",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": true,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 4,
+      "previewId": "preview-gap2r-04",
+      "publicId": "addition-gap2-04",
+      "embeddingId": "painting-q112",
+      "dossier": "painting",
+      "table": "sealrecords",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "sealrecord-collection",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "sealrecord-restoration",
+          "zh": "修复记录"
+        },
+        {
+          "optionId": "o2",
+          "row": "sealrecord-exhibition",
+          "zh": "展览记录"
+        },
+        {
+          "optionId": "o3",
+          "row": "sealrecord-collection",
+          "zh": "收藏记录"
+        },
+        {
+          "optionId": "o4",
+          "row": "sealrecord-trade",
+          "zh": "交易记录"
+        }
+      ],
+      "embedding": {
+        "id": "painting-q112",
+        "status": "accepted",
+        "embeds": "addition-gap2-04",
+        "fact": {
+          "table": "sealrecords",
+          "row": "sealrecord-collection",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 5,
+      "previewId": "preview-gap2r-05",
+      "publicId": "addition-gap2-05",
+      "embeddingId": "cuisine-q109",
+      "dossier": "cuisine",
+      "table": "cuisines",
+      "column": "dimsumcuisinename",
+      "newTable": false,
+      "answerRow": "cs-yue",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "cs-min",
+          "zh": "闽菜"
+        },
+        {
+          "optionId": "o2",
+          "row": "cs-yue",
+          "zh": "粤菜"
+        },
+        {
+          "optionId": "o3",
+          "row": "cs-chuan",
+          "zh": "川菜"
+        },
+        {
+          "optionId": "o4",
+          "row": "cs-zhe",
+          "zh": "浙菜"
+        }
+      ],
+      "embedding": {
+        "id": "cuisine-q109",
+        "status": "accepted",
+        "embeds": "addition-gap2-05",
+        "fact": {
+          "table": "cuisines",
+          "row": "cs-yue",
+          "ask": "dimsumcuisinename"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 6,
+      "previewId": "preview-gap2r-06",
+      "publicId": "addition-gap2-06",
+      "embeddingId": "crafts-q145",
+      "dossier": "crafts",
+      "table": "auspiciousanimals",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "auspicious-bat",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "auspicious-magpie",
+          "zh": "喜鹊"
+        },
+        {
+          "optionId": "o2",
+          "row": "auspicious-crane",
+          "zh": "仙鹤"
+        },
+        {
+          "optionId": "o3",
+          "row": "auspicious-carp",
+          "zh": "鲤鱼"
+        },
+        {
+          "optionId": "o4",
+          "row": "auspicious-bat",
+          "zh": "蝙蝠"
+        }
+      ],
+      "embedding": {
+        "id": "crafts-q145",
+        "status": "accepted",
+        "embeds": "addition-gap2-06",
+        "fact": {
+          "table": "auspiciousanimals",
+          "row": "auspicious-bat",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 7,
+      "previewId": "preview-gap2r-07",
+      "publicId": "addition-gap2-07",
+      "embeddingId": "modern-china-q32",
+      "dossier": "modern-china",
+      "table": "documents",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "document-id-card",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "document-passport",
+          "zh": "护照"
+        },
+        {
+          "optionId": "o2",
+          "row": "document-hukou-book",
+          "zh": "居民户口簿"
+        },
+        {
+          "optionId": "o3",
+          "row": "document-id-card",
+          "zh": "居民身份证"
+        },
+        {
+          "optionId": "o4",
+          "row": "document-registration-proof",
+          "zh": "户籍证明"
+        }
+      ],
+      "embedding": {
+        "id": "modern-china-q32",
+        "status": "accepted",
+        "embeds": "addition-gap2-07",
+        "fact": {
+          "table": "documents",
+          "row": "document-id-card",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 8,
+      "previewId": "preview-gap2r-08",
+      "publicId": "addition-gap2-08",
+      "embeddingId": "painting-q113",
+      "dossier": "painting",
+      "table": "copyingmethods",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "copying-linxie",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "copying-moxie",
+          "zh": "摹写"
+        },
+        {
+          "optionId": "o2",
+          "row": "copying-moxie-memory",
+          "zh": "默写"
+        },
+        {
+          "optionId": "o3",
+          "row": "copying-linxie",
+          "zh": "临写"
+        },
+        {
+          "optionId": "o4",
+          "row": "copying-tingxie",
+          "zh": "听写"
+        }
+      ],
+      "embedding": {
+        "id": "painting-q113",
+        "status": "accepted",
+        "embeds": "addition-gap2-08",
+        "fact": {
+          "table": "copyingmethods",
+          "row": "copying-linxie",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": true,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 9,
+      "previewId": "preview-gap2-09",
+      "publicId": "addition-gap2-09",
+      "embeddingId": "nature-q173",
+      "dossier": "nature",
+      "table": "forestprojects",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "forest-three-north",
+      "orderedOptions": [
+        {
+          "optionId": "o4",
+          "row": "forest-three-north",
+          "zh": "三北防护林"
+        },
+        {
+          "optionId": "o1",
+          "row": "forest-coastal",
+          "zh": "沿海防护林"
+        },
+        {
+          "optionId": "o2",
+          "row": "forest-yangtze",
+          "zh": "长江防护林"
+        },
+        {
+          "optionId": "o3",
+          "row": "forest-taihang",
+          "zh": "太行山绿化"
+        }
+      ],
+      "embedding": {
+        "id": "nature-q173",
+        "status": "accepted",
+        "embeds": "addition-gap2-09",
+        "fact": {
+          "table": "forestprojects",
+          "row": "forest-three-north",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 10,
+      "previewId": "preview-gap2r-10",
+      "publicId": "addition-gap2-10",
+      "embeddingId": "nature-q174",
+      "dossier": "nature",
+      "table": "climatephenomena",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "climate-meiyu",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "climate-typhoon",
+          "zh": "台风"
+        },
+        {
+          "optionId": "o2",
+          "row": "climate-coldwave",
+          "zh": "寒潮"
+        },
+        {
+          "optionId": "o3",
+          "row": "climate-duststorm",
+          "zh": "沙尘暴"
+        },
+        {
+          "optionId": "o4",
+          "row": "climate-meiyu",
+          "zh": "梅雨"
+        }
+      ],
+      "embedding": {
+        "id": "nature-q174",
+        "status": "accepted",
+        "embeds": "addition-gap2-10",
+        "fact": {
+          "table": "climatephenomena",
+          "row": "climate-meiyu",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 11,
+      "previewId": "preview-gap2r-11-shikumen",
+      "publicId": "addition-gap2-11",
+      "embeddingId": "landmarks-q119",
+      "dossier": "landmarks",
+      "table": "dwellings",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "dwelling-shikumen",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "dwelling-siheyuan",
+          "zh": "四合院",
+          "nameRef": "ethnos/dwellings/dw-siheyuan"
+        },
+        {
+          "optionId": "o2",
+          "row": "dwelling-tulou",
+          "zh": "土楼",
+          "nameRef": "ethnos/dwellings/dw-tulou"
+        },
+        {
+          "optionId": "o3",
+          "row": "dwelling-shikumen",
+          "zh": "石库门"
+        },
+        {
+          "optionId": "o4",
+          "row": "dwelling-yaodong",
+          "zh": "窑洞",
+          "nameRef": "ethnos/dwellings/dw-yaodong"
+        }
+      ],
+      "embedding": {
+        "id": "landmarks-q119",
+        "status": "accepted",
+        "embeds": "addition-gap2-11",
+        "fact": {
+          "table": "dwellings",
+          "row": "dwelling-shikumen",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 12,
+      "previewId": "preview-gap2r-12",
+      "publicId": "addition-gap2-12",
+      "embeddingId": "modern-china-q33",
+      "dossier": "modern-china",
+      "table": "travelperiods",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "travel-chunyun",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "travel-shuyun",
+          "zh": "暑运"
+        },
+        {
+          "optionId": "o2",
+          "row": "travel-chunyun",
+          "zh": "春运"
+        },
+        {
+          "optionId": "o3",
+          "row": "travel-goldenweek",
+          "zh": "黄金周"
+        },
+        {
+          "optionId": "o4",
+          "row": "travel-shortholiday",
+          "zh": "小长假"
+        }
+      ],
+      "embedding": {
+        "id": "modern-china-q33",
+        "status": "accepted",
+        "embeds": "addition-gap2-12",
+        "fact": {
+          "table": "travelperiods",
+          "row": "travel-chunyun",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 13,
+      "previewId": "preview-gap2-13",
+      "publicId": "addition-gap2-13",
+      "embeddingId": "holidays-q58",
+      "dossier": "holidays",
+      "table": "calendarmonths",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "month-runyue",
+      "orderedOptions": [
+        {
+          "optionId": "o2",
+          "row": "month-runyue",
+          "zh": "闰月"
+        },
+        {
+          "optionId": "o3",
+          "row": "month-layue",
+          "zh": "腊月"
+        },
+        {
+          "optionId": "o4",
+          "row": "month-xiaoyue",
+          "zh": "小月"
+        },
+        {
+          "optionId": "o1",
+          "row": "month-dayue",
+          "zh": "大月"
+        }
+      ],
+      "embedding": {
+        "id": "holidays-q58",
+        "status": "accepted",
+        "embeds": "addition-gap2-13",
+        "fact": {
+          "table": "calendarmonths",
+          "row": "month-runyue",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 14,
+      "previewId": "preview-gap2r-14",
+      "publicId": "addition-gap2-14",
+      "embeddingId": "crafts-q146",
+      "dossier": "crafts",
+      "table": "fans",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "fan-zheshan",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "fan-tuanshan",
+          "zh": "团扇"
+        },
+        {
+          "optionId": "o2",
+          "row": "fan-yushan",
+          "zh": "羽扇"
+        },
+        {
+          "optionId": "o3",
+          "row": "fan-zheshan",
+          "zh": "折扇"
+        },
+        {
+          "optionId": "o4",
+          "row": "fan-pushan",
+          "zh": "蒲扇"
+        }
+      ],
+      "embedding": {
+        "id": "crafts-q146",
+        "status": "accepted",
+        "embeds": "addition-gap2-14",
+        "fact": {
+          "table": "fans",
+          "row": "fan-zheshan",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 15,
+      "previewId": "preview-gap2r-15",
+      "publicId": "addition-gap2-15",
+      "embeddingId": "literature-q118",
+      "dossier": "literature",
+      "table": "narrativegenres",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "narrative-yuyan",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "narrative-yuyan",
+          "zh": "寓言"
+        },
+        {
+          "optionId": "o2",
+          "row": "narrative-shenhua",
+          "zh": "神话"
+        },
+        {
+          "optionId": "o3",
+          "row": "narrative-chuanshuo",
+          "zh": "传说"
+        },
+        {
+          "optionId": "o4",
+          "row": "narrative-tonghua",
+          "zh": "童话"
+        }
+      ],
+      "embedding": {
+        "id": "literature-q118",
+        "status": "accepted",
+        "embeds": "addition-gap2-15",
+        "fact": {
+          "table": "narrativegenres",
+          "row": "narrative-yuyan",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": "Языковой блок: типы повествования.",
+      "languageRelated": true,
+      "isolatedLanguagePoolRequired": true
+    },
+    {
+      "reviewNumber": 17,
+      "previewId": "preview-gap2-17",
+      "publicId": "addition-gap2-17",
+      "embeddingId": "painting-q114",
+      "dossier": "painting",
+      "table": "reproductions",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "reproduction-tapian",
+      "orderedOptions": [
+        {
+          "optionId": "o3",
+          "row": "reproduction-tapian",
+          "zh": "拓片"
+        },
+        {
+          "optionId": "o4",
+          "row": "reproduction-yingyinben",
+          "zh": "影印本"
+        },
+        {
+          "optionId": "o1",
+          "row": "reproduction-keben",
+          "zh": "刻本"
+        },
+        {
+          "optionId": "o2",
+          "row": "reproduction-moben",
+          "zh": "摹本"
+        }
+      ],
+      "embedding": {
+        "id": "painting-q114",
+        "status": "accepted",
+        "embeds": "addition-gap2-17",
+        "fact": {
+          "table": "reproductions",
+          "row": "reproduction-tapian",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false
+    },
+    {
+      "reviewNumber": 19,
+      "previewId": "preview-gap2-19",
+      "publicId": "addition-gap2-19",
+      "embeddingId": "literature-q119",
+      "dossier": "literature",
+      "table": "phraseologytypes",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "phraseology-xiehouyu",
+      "orderedOptions": [
+        {
+          "optionId": "o3",
+          "row": "phraseology-chengyu",
+          "zh": "成语"
+        },
+        {
+          "optionId": "o4",
+          "row": "phraseology-guanyongyu",
+          "zh": "惯用语"
+        },
+        {
+          "optionId": "o1",
+          "row": "phraseology-xiehouyu",
+          "zh": "歇后语"
+        },
+        {
+          "optionId": "o2",
+          "row": "phraseology-yanyu",
+          "zh": "谚语"
+        }
+      ],
+      "embedding": {
+        "id": "literature-q119",
+        "status": "accepted",
+        "embeds": "addition-gap2-19",
+        "fact": {
+          "table": "phraseologytypes",
+          "row": "phraseology-xiehouyu",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": "Языковой блок / фразеология, отдельно от основного страноведческого пула.",
+      "languageRelated": true,
+      "isolatedLanguagePoolRequired": true
+    }
+  ],
+  "architectureValidationErrors": [
+    {
+      "reviewNumber": 8,
+      "error": "пояснение addition-gap2-08 называет неверные варианты ['摹写'] — на экране их может не оказаться; правка в editorial.json"
+    },
+    {
+      "reviewNumber": 14,
+      "error": "пояснение addition-gap2-14 называет неверные варианты ['团扇', '羽扇', '蒲扇'] — на экране их может не оказаться; правка в editorial.json"
+    }
+  ],
+  "provisionalLeakReport": "/tmp/lingvo-b2-embedding-map-leaks.json"
+}

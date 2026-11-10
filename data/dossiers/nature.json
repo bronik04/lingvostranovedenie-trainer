@@ -9340,6 +9340,244 @@
           ]
         }
       ]
+    },
+    "forestprojects": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "forest-three-north",
+          "name": {
+            "zh": "三北防护林",
+            "ru": [
+              "Защитные леса 3 северных регионов"
+            ],
+            "gloss": "Защитные леса 3 северных регионов — проект начат в 1978 году для защиты от ветра и песка."
+          },
+          "sources": [
+            {
+              "title": "三北防护林体系建设工程简介 — 国家林业和草原局",
+              "url": "https://www.forestry.gov.cn/search/501731",
+              "quote": "被誉为中国“绿色长城”",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "国家发展改革委负责同志就《“三北”工程总体规划》答记者问",
+              "url": "https://www.ndrc.gov.cn/xxgk/jd/jd/202509/t20250915_1400489_ext.html",
+              "quote": "1978年…在我国风沙危害和水土流失严重的西北、华北北部、东北西部建设“三北”防护林体系工程…正式启动“三北”工程建设",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "forest-coastal",
+          "name": {
+            "zh": "沿海防护林",
+            "ru": [
+              "Защитные леса побережья"
+            ],
+            "gloss": "Защитные леса побережья."
+          },
+          "sources": [
+            {
+              "title": "亚林所一项研究可模拟预测沿海防护林防风效果",
+              "url": "https://www.forestry.gov.cn/c/www/styhfhl/556906.jhtml",
+              "quote": "沿海防护林在防风减灾、保障生态安全和人民生命财产安全方面具有重要作用。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "全国绿化委员会办公室 — 2012年中国国土绿化状况公报",
+              "url": "https://www.forestry.gov.cn/c/www/gtlhbg/36158.jhtml",
+              "quote": "长江防护林、沿海防护林、珠江防护林、平原绿化、太行山绿化工程稳步推进",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "财政部 — 中央财政投入4611亿元构建现代林业发展保障机制",
+              "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/201202/t20120215_628202.htm",
+              "quote": "以“三北”防护林工程为主，支持包括长江防护林、沿海防护林、太行山绿化、珠江防护林等工程建设。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "forest-yangtze",
+          "name": {
+            "zh": "长江防护林",
+            "ru": [
+              "Защитные леса бассейна Янцзы"
+            ],
+            "gloss": "Защитные леса бассейна Янцзы."
+          },
+          "sources": [
+            {
+              "title": "全国绿化委员会办公室 — 2012年中国国土绿化状况公报",
+              "url": "https://www.forestry.gov.cn/c/www/gtlhbg/36158.jhtml",
+              "quote": "长江防护林、沿海防护林、珠江防护林、平原绿化、太行山绿化工程稳步推进",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "财政部 — 中央财政投入4611亿元构建现代林业发展保障机制",
+              "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/201202/t20120215_628202.htm",
+              "quote": "以“三北”防护林工程为主，支持包括长江防护林、沿海防护林、太行山绿化、珠江防护林等工程建设。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "forest-taihang",
+          "name": {
+            "zh": "太行山绿化",
+            "ru": [
+              "Озеленение Тайханшаня"
+            ],
+            "gloss": "Озеленение гор Тайханшань."
+          },
+          "sources": [
+            {
+              "title": "这对父子接力14载修复太行“绿化断带”",
+              "url": "https://www.forestry.gov.cn/c/www/stthslh/512715.jhtml",
+              "quote": "这对父子接力14载修复太行“绿化断带”…摸索出了一套固土、蓄水、保墒的造林方法",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "全国绿化委员会办公室 — 2012年中国国土绿化状况公报",
+              "url": "https://www.forestry.gov.cn/c/www/gtlhbg/36158.jhtml",
+              "quote": "长江防护林、沿海防护林、珠江防护林、平原绿化、太行山绿化工程稳步推进",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "财政部 — 中央财政投入4611亿元构建现代林业发展保障机制",
+              "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/201202/t20120215_628202.htm",
+              "quote": "以“三北”防护林工程为主，支持包括长江防护林、沿海防护林、太行山绿化、珠江防护林等工程建设。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
+    },
+    "climatephenomena": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "climate-typhoon",
+          "name": {
+            "zh": "台风",
+            "ru": [
+              "Тайфун"
+            ],
+            "gloss": "Тайфун — тропический циклон западной части Тихого океана."
+          },
+          "sources": [
+            {
+              "title": "National Weather Service — Typhoon",
+              "url": "https://forecast.weather.gov/glossary.php?word=typhoon",
+              "quote": "A tropical cyclone in the Western Pacific Ocean",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "Characteristics of tropical cyclones — World Meteorological Organization",
+              "url": "https://public.wmo.int/content/characteristics-of-tropical-cyclones",
+              "quote": "In the western North Pacific, it is called \"typhoon\"",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "climate-coldwave",
+          "name": {
+            "zh": "寒潮",
+            "ru": [
+              "Холодная волна"
+            ],
+            "gloss": "Холодная волна — вторжение холодного воздуха, вызывающее сильное похолодание."
+          },
+          "sources": [
+            {
+              "title": "National Weather Service — Extreme Cold",
+              "url": "https://www.weather.gov/safety/cold",
+              "quote": "Cold air outbreaks can damage or kill produce",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "寒潮公众健康防护指南 — 国家疾控局（中国政府网）",
+              "url": "https://app.www.gov.cn/govdata/gov/202312/14/510264/article.html",
+              "quote": "寒潮为高纬度的冷空气大规模地向中、低纬度侵袭造成剧烈降温的天气活动",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "climate-duststorm",
+          "name": {
+            "zh": "沙尘暴",
+            "ru": [
+              "Пыльная буря"
+            ],
+            "gloss": "Пыльная буря — сильный ветер наполняет воздух песком и пылью."
+          },
+          "sources": [
+            {
+              "title": "National Weather Service — Dust Storm",
+              "url": "https://forecast.weather.gov/glossary.php?word=dust%20storm",
+              "quote": "strong winds and dust-filled air over an extensive area",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "沙塵天氣資訊 — 沙塵天氣的問與答 — 香港天文台",
+              "url": "https://www.hko.gov.hk/tc/wxinfo/sanddust/sdaintro.html",
+              "quote": "沙塵暴是一種天氣現象，通常是指強風或湍流吹過鬆散的沙土，捲起大量的沙粒或塵粒，使空氣變得混濁，令能見度大大降低。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "climate-meiyu",
+          "name": {
+            "zh": "梅雨",
+            "ru": [
+              "Мэйюй"
+            ],
+            "gloss": "Мэйюй — «сливовые дожди»: название связано с созреванием слив."
+          },
+          "sources": [
+            {
+              "title": "上海市青浦区人民政府 — 什么是梅雨，为什么会有梅雨",
+              "url": "https://www.shqp.gov.cn/shqp/ggfw/ztfwk/qxfw/kpxx/20231215/1152052.html",
+              "quote": "每年夏初……江淮流域常会出现的连阴雨天气",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "武汉市人民政府 — 本轮降雨今日结束，武汉何时入梅？最新预报来了",
+              "url": "https://3g.wuhan.gov.cn/hdjl/rdhy/202506/t20250610_2593298.shtml",
+              "quote": "恰巧这段时间正逢梅子成熟期，因而被称为梅雨",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
     }
   }
 }

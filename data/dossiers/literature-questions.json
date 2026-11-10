@@ -2049,5 +2049,50 @@
       "verdict": "accept",
       "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
     }
+  },
+  {
+    "id": "literature-q117",
+    "status": "accepted",
+    "embeds": "addition-gap2-03",
+    "fact": {
+      "table": "readingcorners",
+      "row": "reading-top-right",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
+    }
+  },
+  {
+    "id": "literature-q118",
+    "status": "accepted",
+    "embeds": "addition-gap2-15",
+    "fact": {
+      "table": "narrativegenres",
+      "row": "narrative-yuyan",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
+    }
+  },
+  {
+    "id": "literature-q119",
+    "status": "accepted",
+    "embeds": "addition-gap2-19",
+    "fact": {
+      "table": "phraseologytypes",
+      "row": "phraseology-xiehouyu",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
+    }
   }
 ]

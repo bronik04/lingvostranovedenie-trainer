@@ -5,6 +5,7 @@
 Связи:
 - [[provinces.prov-fujian]]
 - [[cuisine.cu-cn-fotiaoqiang]]
+- [[cuisine.cs-min]]
 
 Вопросы:
 - провинция: cuisine-q70 — Какая провинция — родина кухни 闽菜?

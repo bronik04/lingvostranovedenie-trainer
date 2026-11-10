@@ -7,6 +7,7 @@
 Связи:
 - [[provinces.city-jinan]]
 - [[nature.mtn-taihang]]
+- [[provinces.prov-shandong]]
 
 Вопросы:
 - название: 2017-18-shk-6 — В какой провинции находится город Цюйфу — родина Конфуция?

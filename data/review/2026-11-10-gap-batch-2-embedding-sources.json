@@ -1,0 +1,671 @@
+{
+  "date": "2026-11-10",
+  "sources": {
+    "a": [
+      {
+        "reviewNumber": 1,
+        "zh": "象棋",
+        "title": "Introduction to Chinese Chess (XiangQi) for International Chess Players — World Xiangqi Federation",
+        "url": "https://www.wxf-xiangqi.org/images/free_download_books/xiangqi_introduction_chessplayers_20150323.pdf",
+        "quote": "The palace is restricting the movement of the King and the Advisors, which cannot leave the palace.",
+        "authority": "primary",
+        "verificationMethod": "fresh-official-hosted-pdf-read-2026-11-10; page 7 / zero-based page 6",
+        "publisherNote": "Official federation-hosted educational PDF; a preliminary author draft, not the federation rulebook."
+      },
+      {
+        "reviewNumber": 1,
+        "zh": "围棋",
+        "title": "HOW TO PLAY GO — Nihon Ki-in",
+        "url": "https://www.nihonkiin.or.jp/english/howto/howto1.htm",
+        "quote": "A stone once placed cannot be moved.",
+        "authority": "primary",
+        "verificationMethod": "fresh-primary-indexed-excerpt-2026-11-10"
+      },
+      {
+        "reviewNumber": 1,
+        "zh": "国际象棋",
+        "title": "Infinite Chess Handbook — FIDE",
+        "url": "https://infinitechess.fide.com/wp-content/uploads/2024/09/Infinite-Chess-Handbook-EN.pdf",
+        "quote": "Checkmating the opponent wins the game.",
+        "authority": "primary",
+        "verificationMethod": "fresh-primary-indexed-excerpt-2026-11-10",
+        "publisherNote": "Same publisher FIDE as the first source, but a distinct pedagogical handbook. Search excerpt verified; direct web.open rejected large PDF size."
+      },
+      {
+        "reviewNumber": 1,
+        "zh": "五子棋",
+        "title": "International Rules of Gomoku — Renju International Federation",
+        "url": "https://www.renju.net/gomokurules/",
+        "quote": "The aim of both players is to create an uninterrupted horizontal, vertical, or diagonal row of exactly 5 stones of their colour.",
+        "authority": "primary",
+        "verificationMethod": "fresh-primary-indexed-excerpt-2026-11-10"
+      },
+      {
+        "reviewNumber": 3,
+        "zh": "左上角",
+        "title": "CSS Writing Modes Level 3 — W3C",
+        "url": "https://www.w3.org/TR/css-writing-modes-3/",
+        "quote": "Top-to-bottom block flow direction.",
+        "authority": "primary",
+        "verificationMethod": "fresh-full-primary-specification-read-2026-11-10; section 3.2",
+        "publisherNote": "Same publisher W3C as CLReq, distinct normative specification. horizontal-tb for 左上角; vertical-rl for other corners. Corner result is a geometric inference under the stated full-column/full-page assumptions, not a literal quote naming the corner."
+      },
+      {
+        "reviewNumber": 3,
+        "zh": "右上角",
+        "title": "CSS Writing Modes Level 3 — W3C",
+        "url": "https://www.w3.org/TR/css-writing-modes-3/",
+        "quote": "Right-to-left block flow direction.",
+        "authority": "primary",
+        "verificationMethod": "fresh-full-primary-specification-read-2026-11-10; section 3.2",
+        "publisherNote": "Same publisher W3C as CLReq, distinct normative specification. horizontal-tb for 左上角; vertical-rl for other corners. Corner result is a geometric inference under the stated full-column/full-page assumptions, not a literal quote naming the corner."
+      },
+      {
+        "reviewNumber": 3,
+        "zh": "左下角",
+        "title": "CSS Writing Modes Level 3 — W3C",
+        "url": "https://www.w3.org/TR/css-writing-modes-3/",
+        "quote": "Right-to-left block flow direction.",
+        "authority": "primary",
+        "verificationMethod": "fresh-full-primary-specification-read-2026-11-10; section 3.2",
+        "publisherNote": "Same publisher W3C as CLReq, distinct normative specification. horizontal-tb for 左上角; vertical-rl for other corners. Corner result is a geometric inference under the stated full-column/full-page assumptions, not a literal quote naming the corner."
+      },
+      {
+        "reviewNumber": 3,
+        "zh": "右下角",
+        "title": "CSS Writing Modes Level 3 — W3C",
+        "url": "https://www.w3.org/TR/css-writing-modes-3/",
+        "quote": "Right-to-left block flow direction.",
+        "authority": "primary",
+        "verificationMethod": "fresh-full-primary-specification-read-2026-11-10; section 3.2",
+        "publisherNote": "Same publisher W3C as CLReq, distinct normative specification. horizontal-tb for 左上角; vertical-rl for other corners. Corner result is a geometric inference under the stated full-column/full-page assumptions, not a literal quote naming the corner."
+      },
+      {
+        "reviewNumber": 6,
+        "zh": "喜鹊",
+        "title": "The Metropolitan Museum Journal 28 (1993) — статья о Crows in Old Trees",
+        "url": "https://resources.metmuseum.org/resources/metpublications/pdf/Literary_Visual_Interactions_Chihchuans_Crows_in_Old_Trees_The_Metropolitan_Museum_Journal_v_28_1993.pdf",
+        "quote": "The magpie is a standard symbol of happiness, most often of marital happiness.",
+        "authority": "academic",
+        "verificationMethod": "fresh-museum-journal-pdf-read-2026-11-10; passage retrieved by web.find",
+        "titleNote": "Descriptive source label; no author name inferred. Exact journal and year from the official museum PDF filename."
+      },
+      {
+        "reviewNumber": 6,
+        "zh": "仙鹤",
+        "title": "Crane in a bamboo grove — The Metropolitan Museum of Art",
+        "url": "https://www.metmuseum.org/art/collection/search/39993",
+        "quote": "Their long life span and loyalty to a single mate made them symbols of longevity and faithfulness.",
+        "authority": "primary",
+        "verificationMethod": "fresh-primary-indexed-excerpt-2026-11-10"
+      },
+      {
+        "reviewNumber": 6,
+        "zh": "鲤鱼",
+        "title": "Red lotus and fish — The Metropolitan Museum of Art",
+        "url": "https://www.metmuseum.org/art/collection/search/754013",
+        "quote": "“fish” (yu 魚) sounds like “abundance” (yu 餘).",
+        "authority": "primary",
+        "verificationMethod": "fresh-primary-indexed-excerpt-2026-11-10",
+        "publisherNote": "Supports the actual caption’s general fish/abundance statement; does not claim abundance is exclusive to carp."
+      },
+      {
+        "reviewNumber": 6,
+        "zh": "蝙蝠",
+        "title": "Extravagant Display — The Metropolitan Museum of Art",
+        "url": "https://www.metmuseum.org/exhibitions/listings/2010/extravagant-display?exhshow=art&pg=3&rpp=6",
+        "quote": "a word such as \"bat\" (pronounced in Chinese as \"fu\") can symbolize \"good fortune\"",
+        "authority": "primary",
+        "verificationMethod": "fresh-primary-indexed-excerpt-2026-11-10",
+        "publisherNote": "Supports bat/fu symbolism; the peach combination remains supported by HKPM in the original manifest."
+      },
+      {
+        "reviewNumber": 4,
+        "zh": "修复记录",
+        "title": "Conservation/Treatment History — Getty CDWA",
+        "url": "https://www.getty.edu/publications/categories-description-works-art/categories/object-architecture-group/15/",
+        "quote": "Procedures or actions that a work has undergone to repair, conserve, or stabilize it.",
+        "authority": "primary",
+        "verificationMethod": "fresh-primary-full-definition-or-indexed-passage-read-2026-11-10",
+        "supports": "Direct definition of conservation/treatment history, matching records of restoration and stabilization."
+      },
+      {
+        "reviewNumber": 4,
+        "zh": "修复记录",
+        "title": "Terminology for conservation (2008) — ICOM-CC",
+        "url": "https://www.icom-cc.org/en/terminology-for-conservation",
+        "quote": "Examples of restoration are retouching a painting, reassembling a broken sculpture",
+        "authority": "primary",
+        "verificationMethod": "fresh-primary-full-definition-or-indexed-passage-read-2026-11-10",
+        "supports": "Primary definition and examples of restoration; consolidation/strengthening falls under conservation/remedial conservation in this terminology, already directly covered by Getty."
+      },
+      {
+        "reviewNumber": 4,
+        "zh": "展览记录",
+        "title": "Exhibition/Loan History — Getty CDWA",
+        "url": "https://www.getty.edu/publications/categories-description-works-art/categories/object-architecture-group/24/",
+        "quote": "A historical record of a work’s public display",
+        "authority": "primary",
+        "verificationMethod": "fresh-primary-full-definition-or-indexed-passage-read-2026-11-10",
+        "supports": "Direct exhibition-history definition; page subcategories name exhibition venue and venue date."
+      },
+      {
+        "reviewNumber": 4,
+        "zh": "展览记录",
+        "title": "教育部《重編國語辭典修訂本》 — 展覽",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=116031&la=0&powerMode=0",
+        "quote": "陳列物品供人觀賞。",
+        "authority": "primary",
+        "verificationMethod": "fresh-primary-full-definition-or-indexed-passage-read-2026-11-10",
+        "supports": "Direct lexical definition of exhibiting objects for public viewing; combined with Getty history definition."
+      },
+      {
+        "reviewNumber": 4,
+        "zh": "交易记录",
+        "title": "教育部《國語辭典簡編本》 — 交易",
+        "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=22334&la=0&powerMode=0",
+        "quote": "買賣、生意。",
+        "authority": "primary",
+        "verificationMethod": "fresh-primary-full-definition-or-indexed-passage-read-2026-11-10",
+        "supports": "Direct lexical definition of交易 as buying/selling/business.",
+        "publisherNote": "Same publisher as the revised dictionary source: Ministry of Education, Taiwan; distinct dictionaries and URLs, not institutional independence."
+      },
+      {
+        "reviewNumber": 4,
+        "zh": "交易记录",
+        "title": "教育部《重編國語辭典修訂本》 — 交易",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=91102&q=1&word=%E6%98%93",
+        "quote": "本指交換、互換。後泛指買賣。",
+        "authority": "primary",
+        "verificationMethod": "fresh-primary-full-definition-or-indexed-passage-read-2026-11-10",
+        "supports": "Direct lexical definition of交易 including general buying/selling sense.",
+        "publisherNote": "Same publisher as the concise dictionary source: Ministry of Education, Taiwan; distinct dictionaries and URLs, not institutional independence."
+      },
+      {
+        "reviewNumber": 4,
+        "zh": "收藏记录",
+        "title": "Ownership/Collecting History — Getty CDWA",
+        "url": "https://www.getty.edu/publications/categories-description-works-art/categories/object-architecture-group/23/",
+        "quote": "The provenance and ownership history of an object/work from the moment of its creation to the present.",
+        "authority": "primary",
+        "verificationMethod": "fresh-primary-full-definition-or-indexed-passage-read-2026-11-10",
+        "supports": "Direct definition of ownership/collecting history. Seal-specific evidence remains in the original HK Art Museum and DPM sources."
+      }
+    ],
+    "b": [
+      {
+        "reviewNumber": 7,
+        "zh": "护照",
+        "title": "护照常识 — 国家体育总局",
+        "url": "https://www.sport.gov.cn/n322/n385/n435/c247993/content.html",
+        "quote": "护照是一个国家的公民出入本国国境或到国外旅行、居留时, 由本国颁发的证明该公民国籍和身份的证件。",
+        "authority": "official-primary; 国家体育总局",
+        "verificationMethod": "fresh-full-page-web.open-2026-11-10; lines 24-30"
+      },
+      {
+        "reviewNumber": 7,
+        "zh": "居民户口簿",
+        "title": "关于收养家庭户口本登记事宜的提案答复 — 辽宁省公安厅",
+        "url": "https://gat.ln.gov.cn/gat/zwgk/zfxxgk/fdzdgknr/jyta/szxta/szxsejechy2019n/48F1106A419B4D5E8D3065A832AE5ED5/index.shtml",
+        "quote": "《居民户口簿》中“与户主关系”一栏，户内其他人员需按本人与户主的血亲或姻亲关系等写明具体称谓",
+        "authority": "official-primary; 辽宁省公安厅",
+        "verificationMethod": "fresh-full-page-web.open-2026-11-10; line 32; directly supports household relations"
+      },
+      {
+        "reviewNumber": 7,
+        "zh": "户籍证明",
+        "title": "福建省居民户口登记管理办法 — 福建省人民政府",
+        "url": "https://www.fujian.gov.cn/zwgk/zfxxgk/zfxxgkzc/fjsgzk/202112/t20211216_5794839.htm",
+        "quote": "第六十五条 公民需要证明下列事项之一，凭居民户口簿、居民身份证或者护照均无法证明的，可以申请户口登记机关出具户籍证明",
+        "authority": "official-primary; 福建省人民政府",
+        "verificationMethod": "fresh-full-page-web.open-2026-11-10; lines 365-373; subsequent item specifically lists 与曾经同一家庭户成员间登记的亲属关系"
+      },
+      {
+        "reviewNumber": 10,
+        "zh": "寒潮",
+        "title": "寒潮公众健康防护指南 — 国家疾控局（中国政府网）",
+        "url": "https://app.www.gov.cn/govdata/gov/202312/14/510264/article.html",
+        "quote": "寒潮为高纬度的冷空气大规模地向中、低纬度侵袭造成剧烈降温的天气活动",
+        "authority": "official-primary; 国家疾控局",
+        "verificationMethod": "fresh-full-page-web.open-2026-11-10; lines 2-6"
+      },
+      {
+        "reviewNumber": 10,
+        "zh": "沙尘暴",
+        "title": "沙塵天氣資訊 — 沙塵天氣的問與答 — 香港天文台",
+        "url": "https://www.hko.gov.hk/tc/wxinfo/sanddust/sdaintro.html",
+        "quote": "沙塵暴是一種天氣現象，通常是指強風或湍流吹過鬆散的沙土，捲起大量的沙粒或塵粒，使空氣變得混濁，令能見度大大降低。",
+        "authority": "official-primary; 香港天文台",
+        "verificationMethod": "fresh-full-page-web.open-2026-11-10; lines 4-7"
+      },
+      {
+        "reviewNumber": 12,
+        "zh": "暑运",
+        "title": "暑运民航运输旅客1.47亿人次 单日客运量创历史新高 — 中国民航局",
+        "url": "https://www.caac.gov.cn/PHONE/XWZX/MHYW/202509/t20250901_228478.html",
+        "quote": "2025年暑运（7月1日至8月31日），全国民航累计运输旅客1.47亿人次",
+        "authority": "official-primary; 中国民用航空局",
+        "verificationMethod": "fresh-full-page-web.open-2026-11-10; lines 19-23; same transport-season dates independently of Wuhan source"
+      },
+      {
+        "reviewNumber": 8,
+        "zh": "临写",
+        "title": "臨寫 — 教育部《重編國語辭典修訂本》",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=64752&q=1&word=%E8%87%A8",
+        "quote": "學習書法的入門方法之一。將字帖放於一旁，邊看邊寫的方法",
+        "authority": "official-primary; 台湾教育部/国家教育研究院; different publisher from original 澳门教育及青年发展局",
+        "verificationMethod": "fresh-full-page-web.open-2026-11-10; definition line 32; canonical term directly matches 临写"
+      },
+      {
+        "reviewNumber": 8,
+        "zh": "默写",
+        "title": "默寫 — 教育部《重編國語辭典修訂本》",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=27933&la=0&powerMode=0",
+        "quote": "憑記憶把讀過的文字寫出來。",
+        "authority": "official-primary; 台湾教育部/国家教育研究院; same publisher as existing 简编本, two separate dictionary editions, not editorially independent",
+        "verificationMethod": "fresh-full-page-web.open-2026-11-10; definition line 32; same-publisher caveat explicit"
+      },
+      {
+        "reviewNumber": 8,
+        "zh": "摹写",
+        "title": "《书法鉴赏》教学大纲 — 公共艺术教育教学中心（zykj.edu.cn）",
+        "url": "https://ggys.zykj.edu.cn/attachment/sites/item/2024_08/19_20/bcbd0ddfd8ec613d.pdf",
+        "quote": "用不渗水的透明纸放在字帖上，将映出的范字的影子摹写下来",
+        "authority": "academic-primary; official university teaching syllabus, ggys.zykj.edu.cn",
+        "verificationMethod": "fresh-pdf-full-text-web.open-2026-11-10; lines 342-349; specifically contrasts 摹 with 临 and calls process 摹写; not a source for a neighboring option"
+      },
+      {
+        "reviewNumber": 8,
+        "zh": "听写",
+        "title": "聽說能力的培養 — 香港教育局；香港理工大學編寫",
+        "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/second-lang/SL_speaking_listening.pdf",
+        "quote": "聽完後，讓學生寫出這個「聽寫詞」。",
+        "authority": "official-academic-primary; 香港教育局 / 香港理工大学; independent of 台湾教育部 dictionary",
+        "verificationMethod": "fresh-pdf-full-text-web.open-2026-11-10; lines 392-402; procedure explicitly says students hear sentences, then write the shared 聽寫詞; quote is short excerpt; mechanism directly supports heard dictation"
+      },
+      {
+        "reviewNumber": 10,
+        "zh": "台风",
+        "title": "Characteristics of tropical cyclones — World Meteorological Organization",
+        "url": "https://public.wmo.int/content/characteristics-of-tropical-cyclones",
+        "quote": "In the western North Pacific, it is called \"typhoon\"",
+        "authority": "primary; World Meteorological Organization",
+        "verificationMethod": "fresh-full-page-web.open-2026-11-10; lines 33-39; terminology of tropical cyclones, directly supports western North Pacific definition"
+      },
+      {
+        "reviewNumber": 12,
+        "zh": "春运",
+        "title": "深圳市春运办多措并举 为广大市民群众提供安全、健康、便捷、舒心的春运 — 深圳市交通运输局",
+        "url": "https://jtys.sz.gov.cn/zwgk/jtzx/gzdt/content/post_10382600.html",
+        "quote": "春节前15天，春节后25天，历时40天。",
+        "authority": "official-primary; 深圳市交通运输局",
+        "verificationMethod": "fresh-full-page-web.open-2026-11-10; line 29; transportation authority report about own 春运 arrangements; independent of national MOT press briefing"
+      },
+      {
+        "reviewNumber": 12,
+        "zh": "黄金周",
+        "title": "民航总局部署“十一”黄金周航空运输保障工作 — 中国民航局",
+        "url": "https://www.caac.gov.cn/PHONE/XWZX/MHYW/200709/t20070926_11633.html",
+        "quote": "做好黄金周航空运输保障工作，对于满足广大游客出行，构建和谐社会和建设和谐民航具有重要意义。",
+        "authority": "official-primary; 中国民用航空局",
+        "verificationMethod": "fresh-full-page-web.open-2026-11-10; lines 23-24; same paragraph calls 黄金周 a 欢乐的长假; historical source confirms term and tourism link only, no claim about current number of days"
+      },
+      {
+        "reviewNumber": 12,
+        "zh": "小长假",
+        "title": "关于政协十二届全国委员会第五次会议第1256号等提案答复的函 — 国家发展改革委",
+        "url": "https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=15362",
+        "quote": "调整元旦、清明、劳动节、端午、中秋的相邻周末，形成5个连续3天的小长假。",
+        "authority": "official-primary; 国家发展改革委; same issuing institution as original 2021 reply, different substantive document",
+        "verificationMethod": "fresh-full-page-web.open-2026-11-10; lines 28-31; describes 2008-2013 historical arrangement and confirms 清明/端午 examples; source must not be used as a statement of current 2026 calendar"
+      }
+    ],
+    "c": [
+      {
+        "reviewNumber": 13,
+        "zh": "闰月",
+        "title": "教育部《國語辭典簡編本》 — 閏月",
+        "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=36541&q=1",
+        "quote": "陰曆與陽曆因時間換算上的落差，而在閏年增加以彌補差距的月分。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10"
+      },
+      {
+        "reviewNumber": 13,
+        "zh": "腊月",
+        "title": "教育部《重編國語辭典修訂本》 — 臘月",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=59270&la=0&powerMode=0",
+        "quote": "古代在農曆十二月間舉行臘祭，故稱農曆十二月為「臘月」。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; same publisher as accepted Concised dictionary, separate edition; not independent institution"
+      },
+      {
+        "reviewNumber": 13,
+        "zh": "小月",
+        "title": "教育部《國語辭典簡編本》 — 小月",
+        "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=27070&q=1",
+        "quote": "國曆一個月少於三十一天或陰曆一個月有二十九天的月分。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10"
+      },
+      {
+        "reviewNumber": 13,
+        "zh": "大月",
+        "title": "教育部《國語辭典簡編本》 — 大月",
+        "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=7397&la=0&powerMode=0",
+        "quote": "國曆有三十一日或農曆有三十日的月分。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10"
+      },
+      {
+        "reviewNumber": 14,
+        "zh": "蒲扇",
+        "title": "國史館臺灣文獻館《臺灣民俗文物辭典》 — 葵扇",
+        "url": "https://dict.th.gov.tw/detailPage.aspx?Ca=50&ID=86",
+        "quote": "用蒲葵葉製成的扇子，又稱蒲扇。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10"
+      },
+      {
+        "reviewNumber": 15,
+        "zh": "寓言",
+        "title": "教育部《重編國語辭典修訂本》 — 寓言",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=164194&la=1&powerMode=0",
+        "quote": "以淺近假託的故事或用擬人手法，表達某種哲理的文學。常含有訓誨的教育作用",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; same publisher as accepted Concised dictionary, separate edition; not independent institution"
+      },
+      {
+        "reviewNumber": 15,
+        "zh": "神话",
+        "title": "教育部《國語辭典簡編本》 — 神話",
+        "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=34703&la=0&powerMode=0",
+        "quote": "關於天地的初創、神靈的奇蹟，以及說明風俗習慣、禮儀和信仰的起源與意義的故事。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; same publisher as accepted Revised dictionary, separate edition; not independent institution"
+      },
+      {
+        "reviewNumber": 15,
+        "zh": "传说",
+        "title": "教育部《重編國語辭典修訂本》 — 傳說",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=126027&la=0&powerMode=0",
+        "quote": "流傳在民間，關於某人、某事的敘述。內容多附會史實而有所改易，其中亦常夾雜神話。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; same publisher as accepted Concised dictionary, separate edition; not independent institution"
+      },
+      {
+        "reviewNumber": 15,
+        "zh": "童话",
+        "title": "教育部《重編國語辭典修訂本》 — 童話",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=55883&la=0&powerMode=0",
+        "quote": "為兒童編寫的故事，適於兒童心理與興趣，行文淺易，多敘述神奇美妙的故事",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; same publisher as accepted Concised dictionary, separate edition; not independent institution"
+      },
+      {
+        "reviewNumber": 17,
+        "zh": "影印本",
+        "title": "教育部《重編國語辭典修訂本》 — 影印本",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=158352&la=0&powerMode=0",
+        "quote": "以影印機直接複製或照相方式製版翻印的書本。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; same MOE publisher as accepted dictionary, separate edition; not independent institution"
+      },
+      {
+        "reviewNumber": 17,
+        "zh": "摹本",
+        "title": "教育部《國語辭典簡編本》 — 摹本",
+        "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=3669&la=0&powerMode=0",
+        "quote": "依書畫原跡描寫而成的本子。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; same MOE publisher as accepted dictionary, separate edition; not independent institution"
+      },
+      {
+        "reviewNumber": 14,
+        "zh": "羽扇",
+        "title": "教育部《重編國語辭典修訂本》 — 羽扇",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=163662&la=0&powerMode=0",
+        "quote": "用鳥羽做成的扇子。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; independent of accepted Palace Museum source"
+      },
+      {
+        "reviewNumber": 19,
+        "zh": "歇后语",
+        "title": "教育部《國語辭典簡編本》 — 歇後語",
+        "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=26696&la=0&powerMode=0",
+        "quote": "通常由兩個部分組成，前半部如同謎題，作為引導，後半部則像謎底，為表達的重點。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; same MOE publisher as accepted Revised dictionary; separate edition, not independent institution"
+      },
+      {
+        "reviewNumber": 19,
+        "zh": "谚语",
+        "title": "教育部《國語辭典簡編本》 — 諺語",
+        "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=41867&la=0&powerMode=0",
+        "quote": "民間流傳的俗語。句形簡短、音調和諧。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; same MOE publisher as accepted Revised dictionary; separate edition, not independent institution"
+      },
+      {
+        "reviewNumber": 19,
+        "zh": "惯用语",
+        "title": "教育部《國語辭典簡編本》 — 詞彙體系（二）慣用語",
+        "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=24&la=1&powerMode=0",
+        "quote": "缺少成語的特徵（如典故憑據、多層表義作用），形式卻像成語的詞組",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; same MOE publisher as accepted Revised dictionary; separate edition, not independent institution; supports fixed phrase category, oral-use detail is stronger in Revised dictionary entry74209"
+      },
+      {
+        "reviewNumber": 19,
+        "zh": "成语",
+        "title": "教育部《國語辭典簡編本》 — 成語",
+        "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=32336&la=0&powerMode=0",
+        "quote": "語言中簡短有力的固定詞組。可作為句子的成分，形式不一，以四言為主。一般而言都有出處來源與引申的比喻義",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; same MOE publisher as accepted Revised dictionary; separate edition, not independent institution"
+      },
+      {
+        "reviewNumber": 19,
+        "zh": "惯用语",
+        "title": "教育部《重編國語辭典修訂本》 — 慣用語",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=74209&la=0&powerMode=0",
+        "quote": "固定語的一種。口語中習慣的用語，形似成語，但沒有典故來源",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; same MOE publisher and same Revised dictionary as accepted page21; supplemental entry supporting oral-use detail, not independent editorial source"
+      },
+      {
+        "reviewNumber": 14,
+        "zh": "团扇",
+        "title": "教育部《重編國語辭典修訂本》 — 團扇",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=55195&la=0&powerMode=0",
+        "quote": "圓形有柄的扇子。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; independent of accepted Palace Museum source"
+      },
+      {
+        "reviewNumber": 14,
+        "zh": "折扇",
+        "title": "教育部《重編國語辭典修訂本》 — 折扇",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=114916&q=1&word=%E6%89%87",
+        "quote": "用竹、木、象牙等做骨架，再糊上紙或絹，可以折疊。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; independent of accepted Palace Museum source"
+      },
+      {
+        "reviewNumber": 14,
+        "zh": "折扇",
+        "title": "教育部《重編國語辭典修訂本》 — 扇面",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=130927&q=1&word=%E6%89%87",
+        "quote": "摺扇或團扇的面，通常以紙或絹製成，其上多有書法或繪畫作品。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; independent of accepted Palace Museum source"
+      },
+      {
+        "reviewNumber": 17,
+        "zh": "刻本",
+        "title": "中国国家图书馆／国家古籍保护中心 — 古籍版本知识之二：版本的类型",
+        "url": "https://www.nlc.cn/pcab/gjbhzs/jd/20150107_95687.shtml",
+        "quote": "刻本：雕版印本的简称。指雕刻木板，制成阳文反字印版，而后敷墨覆纸刷印而成的书本。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; independent institution from accepted MOE dictionary"
+      },
+      {
+        "reviewNumber": 17,
+        "zh": "影印本",
+        "title": "中国国家图书馆／国家古籍保护中心 — 古籍版本知识之二：版本的类型",
+        "url": "https://www.nlc.cn/pcab/gjbhzs/jd/20150107_95687.shtml",
+        "quote": "影印本：以某一版本为底本，用照相的方法制成印版，上机印刷而印成的书本。",
+        "authority": "official",
+        "verificationMethod": "web search + full-page open, 2026-11-10; independent institution from accepted MOE dictionary"
+      }
+    ],
+    "root": [
+      {
+        "reviewNumber": 2,
+        "zh": "新疆",
+        "title": "新疆维吾尔自治区人民政府 — 2025年国民经济运行情况新闻发布会",
+        "url": "https://www.xinjiang.gov.cn/xinjiang/xwfb/202602/6885d60389d442fa8df58c46ebb72784.shtml",
+        "quote": "2025年，新疆棉花总产量616.5万吨，首次突破600万吨，比上年增加47.9万吨，增长8.4%，在全国占比达92.8%。",
+        "authority": "official",
+        "verificationMethod": "web search/open, 2026-11-10"
+      },
+      {
+        "reviewNumber": 11,
+        "zh": "石库门",
+        "title": "上海市人民政府 — 黄浦非遗：石库门里弄建筑营造技艺",
+        "url": "https://www.shanghai.gov.cn/hpfy/index.html",
+        "quote": "石库门里弄民居简称石库门，因厚重黑漆木门配以花岗石条砌筑门框，样貌形似旧时官府库房，故而得名。",
+        "authority": "official",
+        "verificationMethod": "web search/open, 2026-11-10"
+      },
+      {
+        "reviewNumber": 15,
+        "zh": "寓言",
+        "title": "教育部《成語典》 — 狐假虎威",
+        "url": "https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=-32&la=1&webMd=1",
+        "quote": "所有動物看到都嚇得逃走。老虎以為牠們真的是怕狐狸，而不知道其實野獸們怕的是牠自己。",
+        "authority": "official",
+        "verificationMethod": "web search/open, 2026-11-10"
+      },
+      {
+        "reviewNumber": 15,
+        "zh": "寓言",
+        "title": "吉林大学国际语言学院 — 成语故事：狐假虎威",
+        "url": "https://gjyyxy.jlu.edu.cn/info/1017/1097.htm",
+        "quote": "狐狸假借老虎的威势吓唬其它野兽。比喻仰仗或倚仗别人的权势来欺压、恐吓人。",
+        "authority": "academic",
+        "verificationMethod": "web search/open, 2026-11-10"
+      },
+      {
+        "reviewNumber": 9,
+        "zh": "沿海防护林",
+        "title": "中国林业科学研究院 — 亚林所一项研究可模拟预测沿海防护林防风效果",
+        "url": "https://www.forestry.gov.cn/c/www/styhfhl/556906.jhtml",
+        "quote": "沿海防护林在防风减灾、保障生态安全和人民生命财产安全方面具有重要作用。",
+        "authority": "academic",
+        "verificationMethod": "web search/open, 2026-11-10"
+      },
+      {
+        "reviewNumber": 3,
+        "zh": "左上角",
+        "title": "勞動部 — 標示文字書寫方式",
+        "url": "https://laws.mol.gov.tw/FLAW/FLAWDOC01.aspx?flno=6&id=FL015035",
+        "quote": "一、直式：由上而下，由右而左。二、橫式：由左而右。",
+        "authority": "official",
+        "verificationMethod": "Fresh web search excerpt; direct open timed out. Corroborates direction only; corner descriptions are geometric inferences, not verbatim regulatory text."
+      },
+      {
+        "reviewNumber": 3,
+        "zh": "右上角",
+        "title": "勞動部 — 標示文字書寫方式",
+        "url": "https://laws.mol.gov.tw/FLAW/FLAWDOC01.aspx?flno=6&id=FL015035",
+        "quote": "一、直式：由上而下，由右而左。二、橫式：由左而右。",
+        "authority": "official",
+        "verificationMethod": "Fresh web search excerpt; direct open timed out. Corroborates direction only; corner descriptions are geometric inferences, not verbatim regulatory text."
+      },
+      {
+        "reviewNumber": 3,
+        "zh": "左下角",
+        "title": "勞動部 — 標示文字書寫方式",
+        "url": "https://laws.mol.gov.tw/FLAW/FLAWDOC01.aspx?flno=6&id=FL015035",
+        "quote": "一、直式：由上而下，由右而左。二、橫式：由左而右。",
+        "authority": "official",
+        "verificationMethod": "Fresh web search excerpt; direct open timed out. Corroborates direction only; corner descriptions are geometric inferences, not verbatim regulatory text."
+      },
+      {
+        "reviewNumber": 3,
+        "zh": "右下角",
+        "title": "勞動部 — 標示文字書寫方式",
+        "url": "https://laws.mol.gov.tw/FLAW/FLAWDOC01.aspx?flno=6&id=FL015035",
+        "quote": "一、直式：由上而下，由右而左。二、橫式：由左而右。",
+        "authority": "official",
+        "verificationMethod": "Fresh web search excerpt; direct open timed out. Corroborates direction only; corner descriptions are geometric inferences, not verbatim regulatory text."
+      },
+      {
+        "reviewNumber": 19,
+        "zh": "歇后语",
+        "title": "长春理工大学《应用写作》 — 歇后语",
+        "url": "https://yyxz.cust.edu.cn/xyyywxz/xwxz/39afdf973bf5496889eb1265ca21fbee.htm",
+        "quote": "歇后语由前后两部分组成。前一部分起“引子”作用，像谜语，后一部分起“后衬”的作用，像谜底，前后两部分贴切顺畅。",
+        "authority": "academic",
+        "verificationMethod": "Fresh web search excerpt from university journal site; direct full page open timed out. Supports accepted two-part definition, not the humour caption (separately sourced to MOE)."
+      },
+      {
+        "reviewNumber": 9,
+        "zh": "沿海防护林",
+        "title": "全国绿化委员会办公室 — 2012年中国国土绿化状况公报",
+        "url": "https://www.forestry.gov.cn/c/www/gtlhbg/36158.jhtml",
+        "quote": "长江防护林、沿海防护林、珠江防护林、平原绿化、太行山绿化工程稳步推进",
+        "authority": "official",
+        "verificationMethod": "Fresh web search + full page opened, 2026-11-10; historical evidence of programme identity, not a claim about current funding."
+      },
+      {
+        "reviewNumber": 9,
+        "zh": "沿海防护林",
+        "title": "财政部 — 中央财政投入4611亿元构建现代林业发展保障机制",
+        "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/201202/t20120215_628202.htm",
+        "quote": "以“三北”防护林工程为主，支持包括长江防护林、沿海防护林、太行山绿化、珠江防护林等工程建设。",
+        "authority": "official",
+        "verificationMethod": "Fresh web search + full page opened, 2026-11-10; historical evidence of programme identity, not a claim about current funding."
+      },
+      {
+        "reviewNumber": 9,
+        "zh": "长江防护林",
+        "title": "全国绿化委员会办公室 — 2012年中国国土绿化状况公报",
+        "url": "https://www.forestry.gov.cn/c/www/gtlhbg/36158.jhtml",
+        "quote": "长江防护林、沿海防护林、珠江防护林、平原绿化、太行山绿化工程稳步推进",
+        "authority": "official",
+        "verificationMethod": "Fresh web search + full page opened, 2026-11-10; historical evidence of programme identity, not a claim about current funding."
+      },
+      {
+        "reviewNumber": 9,
+        "zh": "长江防护林",
+        "title": "财政部 — 中央财政投入4611亿元构建现代林业发展保障机制",
+        "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/201202/t20120215_628202.htm",
+        "quote": "以“三北”防护林工程为主，支持包括长江防护林、沿海防护林、太行山绿化、珠江防护林等工程建设。",
+        "authority": "official",
+        "verificationMethod": "Fresh web search + full page opened, 2026-11-10; historical evidence of programme identity, not a claim about current funding."
+      },
+      {
+        "reviewNumber": 9,
+        "zh": "太行山绿化",
+        "title": "全国绿化委员会办公室 — 2012年中国国土绿化状况公报",
+        "url": "https://www.forestry.gov.cn/c/www/gtlhbg/36158.jhtml",
+        "quote": "长江防护林、沿海防护林、珠江防护林、平原绿化、太行山绿化工程稳步推进",
+        "authority": "official",
+        "verificationMethod": "Fresh web search + full page opened, 2026-11-10; historical evidence of programme identity, not a claim about current funding."
+      },
+      {
+        "reviewNumber": 9,
+        "zh": "太行山绿化",
+        "title": "财政部 — 中央财政投入4611亿元构建现代林业发展保障机制",
+        "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/201202/t20120215_628202.htm",
+        "quote": "以“三北”防护林工程为主，支持包括长江防护林、沿海防护林、太行山绿化、珠江防护林等工程建设。",
+        "authority": "official",
+        "verificationMethod": "Fresh web search + full page opened, 2026-11-10; historical evidence of programme identity, not a claim about current funding."
+      }
+    ]
+  },
+  "notes": "Some dictionaries share the MOE publisher; URL count is not independent-institution count. Per-item verification methods distinguish full opens, indexed excerpts and inherited verified evidence. Superseded forestry category/local-metaphor sources are retained only as historical audit entries, not used as the final option source pair."
+}

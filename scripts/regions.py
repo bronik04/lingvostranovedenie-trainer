@@ -12,6 +12,8 @@
 - `narrow` — узкая местная деталь, `doubtful` — сомнительное (спорный ключ, ошибочная посылка, вопрос,
   зависящий от года, испорченные варианты), `ru-options` — варианты по-русски, `format` — меньше трёх
   вариантов или задание по картинке; у всех четырёх обязательна `reason`.
+- `discarded` — окончательно исключено автором; нужны причина и сохранённый первоисточник,
+  текст задания не выводится в рабочие каталоги и не возвращается при пересборке.
 
 Отложенное автор возвращает правкой статуса на `add` (решение автора 2026-10-25: узкие — в отдельный
 список, «если что, потом приму»). Отложенное скрипт выписывает ещё и страницей
@@ -44,8 +46,8 @@ PAGE = ROOT / 'data/review/regions-excluded.html'
 PAGE_TEMPLATE = ROOT / 'scripts/templates/regions-excluded.html'
 # отложенное, к которому автор хочет вернуться (решение автора 2026-10-25); «уже в банке» и повторы — нет
 PAGE_STATUSES = ('narrow', 'doubtful', 'ru-options', 'format')
-STATUSES = {'add', 'in-bank', 'repeat', 'narrow', 'doubtful', 'ru-options', 'format'}
-WITH_REASON = {'narrow', 'doubtful', 'ru-options', 'format'}
+STATUSES = {'add', 'in-bank', 'repeat', 'narrow', 'doubtful', 'ru-options', 'format', 'discarded'}
+WITH_REASON = {'narrow', 'doubtful', 'ru-options', 'format', 'discarded'}
 # шрифт выгрузок Цифриума отдаёт часть иероглифов дополнительными ключами, их NFKC не сводит
 RADICALS = {'⺟': '母', '⻁': '虎', '⻄': '西', '⻅': '见', '⻆': '角', '⻋': '车', '⻓': '长', '⻔': '门',
             '⻘': '青', '⻙': '韦', '⻛': '风', '⻜': '飞', '⻢': '马', '⻣': '骨', '⻩': '黄', '⻬': '齐',
@@ -131,7 +133,9 @@ def write_report(variants: list[dict], decisions: dict[str, dict]) -> None:
     lines = ['# Региональные варианты — решения по заданиям', '',
              'Отчёт пишет `python3 scripts/regions.py` и переписывает его целиком; решения — '
              '`data/review/regions.json`.', '',
-             f'Вариантов: {len(variants)}, заданий: {len(tasks)}; в банк идут {counts["add"]}.', '']
+             f'Вариантов: {len(variants)}, заданий: {len(tasks)}; до фильтра снятий в банк идут {counts["add"]}.',
+             f'Окончательно исключены: {counts["discarded"]}; в рабочие каталоги их тексты не выводятся. '
+             'Первичная расшифровка сохранена, решения по ID — в regions.json.', '']
     for status, title in TITLES.items():
         keys = sorted(key for key, item in decisions.items() if item['status'] == status)
         lines += [f'## {title} ({len(keys)})', '']

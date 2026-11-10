@@ -1,0 +1,246 @@
+{
+  "reviewer": "fresh-context read-only review",
+  "findings": [],
+  "checks": {
+    "bank_1286_to_1146": {
+      "passed": true,
+      "detail": [
+        1286,
+        1146
+      ]
+    },
+    "exact140_bank_removals": {
+      "passed": true,
+      "detail": {
+        "unexpected": [],
+        "missing": []
+      }
+    },
+    "no_new_bank_records": {
+      "passed": true,
+      "detail": []
+    },
+    "exact16_visible_additions": {
+      "passed": true,
+      "detail": {
+        "counts": [
+          1108,
+          1124
+        ],
+        "added": [
+          "addition-gap2-01",
+          "addition-gap2-02",
+          "addition-gap2-03",
+          "addition-gap2-04",
+          "addition-gap2-05",
+          "addition-gap2-06",
+          "addition-gap2-07",
+          "addition-gap2-08",
+          "addition-gap2-09",
+          "addition-gap2-10",
+          "addition-gap2-11",
+          "addition-gap2-12",
+          "addition-gap2-13",
+          "addition-gap2-14",
+          "addition-gap2-15",
+          "addition-gap2-17"
+        ],
+        "removed": []
+      }
+    },
+    "19_hidden": {
+      "passed": true,
+      "detail": null
+    },
+    "dist_matches_site_bank": {
+      "passed": true,
+      "detail": {
+        "count": 1124
+      }
+    },
+    "accepted16_stems64options_keys": {
+      "passed": true,
+      "detail": []
+    },
+    "survivor_changes_scoped": {
+      "passed": true,
+      "detail": [
+        {
+          "id": "2021-22-shk-q39d834",
+          "keys": [
+            "factGroup"
+          ]
+        },
+        {
+          "id": "addition-gap2-04",
+          "keys": [
+            "options"
+          ]
+        }
+      ]
+    },
+    "preserveDrafts": {
+      "passed": true,
+      "detail": {
+        "count": 2,
+        "changed": []
+      }
+    },
+    "preserveManualOnly": {
+      "passed": true,
+      "detail": {
+        "count": 19,
+        "changed": []
+      }
+    },
+    "narrow60_unchanged": {
+      "passed": true,
+      "detail": null
+    },
+    "narrow_review_list_complete": {
+      "passed": true,
+      "detail": null
+    },
+    "exact325_source_status_changes": {
+      "passed": true,
+      "detail": {
+        "counts": [
+          325,
+          325
+        ],
+        "unexpected": []
+      }
+    },
+    "source_transcription_unchanged": {
+      "passed": true,
+      "detail": null
+    },
+    "regional_validation": {
+      "passed": true,
+      "detail": []
+    },
+    "reserve_exact140_removed": {
+      "passed": true,
+      "detail": {
+        "counts": [
+          178,
+          38
+        ],
+        "unexpected": []
+      }
+    },
+    "retained38_reserve_blocks_exact": {
+      "passed": true,
+      "detail": []
+    },
+    "withheld_exact_id_reason_date": {
+      "passed": true,
+      "detail": null
+    },
+    "no_dangling_dossier_embeds": {
+      "passed": true,
+      "detail": []
+    },
+    "no_removed_refs_editorial.json": {
+      "passed": true,
+      "detail": []
+    },
+    "no_removed_refs_fact-groups.json": {
+      "passed": true,
+      "detail": []
+    },
+    "no_removed_refs_glosses.json": {
+      "passed": true,
+      "detail": []
+    },
+    "no_removed_refs_truefalse.json": {
+      "passed": true,
+      "detail": []
+    },
+    "pinyin_override": {
+      "passed": true,
+      "detail": null
+    },
+    "exact_one_caption_change": {
+      "passed": true,
+      "detail": [
+        {
+          "id": "addition-gap2-04",
+          "before": {
+            "gloss": "Сведения о том, когда и где произведение показывали публике.",
+            "id": "o2",
+            "zh": "展览记录"
+          },
+          "after": {
+            "gloss": "Записи о выставках — когда и где произведение показывали публике.",
+            "id": "o2",
+            "zh": "展览记录"
+          }
+        }
+      ]
+    },
+    "prior_authored_review_artifacts_unchanged": {
+      "passed": true,
+      "detail": {
+        "files": 243,
+        "changed": []
+      }
+    },
+    "cleanup_application_no_archived_bodies": {
+      "passed": true,
+      "detail": null
+    },
+    "six_removed_definitions_reserved": {
+      "passed": true,
+      "detail": {
+        "definitions": [
+          "cuisine-q01",
+          "nature-q18",
+          "provinces-q114",
+          "provinces-q116",
+          "provinces-q117",
+          "provinces-q123"
+        ]
+      }
+    },
+    "excluded_page_exact60narrow": {
+      "passed": true,
+      "detail": null
+    },
+    "targeted_regression_suite": {
+      "passed": true,
+      "detail": {
+        "command": "python3 -m unittest test.test_regions test.test_withheld test.test_site_bank test.test_build_invariants test.test_dossiers test.test_fact_groups test.test_authored",
+        "tests": 218,
+        "result": "OK"
+      }
+    },
+    "no_discarded_task_runtime_aliases": {
+      "passed": true,
+      "detail": []
+    },
+    "generated_gomoku_reading": {
+      "passed": true,
+      "detail": "wǔ zǐ qí"
+    },
+    "verification_removed140_absent": {
+      "passed": true,
+      "detail": []
+    },
+    "discarded_decisions_minimal": {
+      "passed": true,
+      "detail": []
+    },
+    "hidden_remaining_records_exact": {
+      "passed": true,
+      "detail": {
+        "before": 25,
+        "after": 1
+      }
+    }
+  },
+  "limitations": [
+    "Read-only predeployment review; parent handles full suite, commit/push and live deployment verification."
+  ],
+  "verdict": "No Critical or Important findings; approved predeployment scope and payload verified."
+}

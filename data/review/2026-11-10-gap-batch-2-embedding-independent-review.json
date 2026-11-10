@@ -1,0 +1,59 @@
+{
+  "scope": "Fresh-context read-only whole-change review for17 accepted local embeds; no repo/index/HEAD mutations",
+  "critical": [],
+  "important": [
+    {
+      "id": "I1",
+      "status": "addressed-and-rechecked",
+      "file": "data/dossiers/nature.json",
+      "rows": [
+        "forest-coastal",
+        "forest-yangtze"
+      ],
+      "finding": "The first supporting source in each row stores only the quote 太行山绿化. This supports the neighboring Taihang row, not coastal or Yangtze protection forests. Therefore two declared source entries are not two substantively supporting quotations for these rows. The Yangtze second quote is an article title about163km of shoreline rather than a project definition.",
+      "recommendation": "Replace each generic quotation with actually verified relevant section text or a substantive official/academic project description. Keep all accepted stems/options/keys unchanged.",
+      "resolution": "Parent removed category quotation and local shoreline metaphor; actual coastal row now has3 substantive official entries and Yangtze row2. New quotations explicitly name the relevant projects. Ministry of Finance full page independently reopened; forestry2012 report quotation independently confirmed in indexed primary result (direct open timed out)."
+    }
+  ],
+  "publicationRouting": [
+    {
+      "id": "R1",
+      "record": "addition-gap2-19",
+      "finding": "Stored locally in literature/phraseologytypes and explicitly hidden. No separate language pool runtime was implemented, and current chengyu schema is unsuitable for this generic definition MCQ. Must route before publication; local hold currently protects it."
+    }
+  ],
+  "preExistingProblems": [
+    {
+      "id": "B1",
+      "finding": "python3 scripts/dossiers.py exits1 with literature-q66→literature-q114 (诗歌) and nature-q140→modern-china-q26 (黄金). Independent check_dossiers against frozen baseline yields exactly the same two errors. No new fatal dossier errors introduced.",
+      "resolution": "Parent joined both stable embedded bank IDs to existing province-names-river-lake group under the word-hint policy; no old question/option/key text changes. Independent final in-memory check_dossiers against current files returns [] (zero fatal errors)."
+    }
+  ],
+  "minors": [
+    {
+      "id": "M1",
+      "finding": "№4 exhibition caption remains a sentence without the nominal «Название — факт» split: Сведения о том, когда и где произведение показывали публике. This does not impair answer/key or information value, but is inconsistent with the stated caption format."
+    }
+  ],
+  "verified": {
+    "newRecords": 17,
+    "captions": "all17 answer.gloss nonempty and add information beyond answer;68 captions present; source-content spot review performed",
+    "acceptedStemsQuestionsZhOptionIdsOrderTextsKeys": "exactly preserved against frozen input",
+    "newRecordIds": "addition-gap2-01..15,17,19 only; no16/18/20",
+    "oldBank": "No removals, no changed text/options/keys/captions; only evidence and factGroup metadata differs",
+    "oldAuthored": "all exact preserved",
+    "newEmbedCounts": "one accepted embed for every new record; option texts agree with mapped cells",
+    "newPools": "exactly4 each",
+    "publicationGuard": "all17 in hiddenQuestions; old hidden entries and other site settings exact preserved; visible1108 IDs exact unchanged",
+    "head": "unchanged b2805bb51a56476e1a3731b630ffca1f9f7b7018",
+    "drafts": "baseline hash sweep found no changed pre-existing review drafts except intended accepted manifest state; QUESTION_RESERVE and CHANGELOG baseline hashes unchanged",
+    "hintPairs": "all25 planned direct/word pairs protected in actual fact groups; additional colour/Xinjiang protection present; generated report residual new typhoon→Pacific-ocean pair is documented semantic false positive",
+    "finalPureDossierValidation": "[]; zero fatal errors after source/group corrections"
+  },
+  "declinedToJudge": [
+    "Did not rerun the full Python/Node suite or build because parent is running them and review is read-only.",
+    "Did not independently reopen every source URL; used all stored row quotations and source audit matrices plus live targeted checks for the forest finding. Source freshness/accuracy outside sampled pages remains bounded by prior independent audits.",
+    "Did not assess dozens of unrelated pre-existing untracked draft reviews, existing CHANGELOG/QUESTION_RESERVE work, or publication infrastructure outside the requested local integration.",
+    "No claim that №19 has a separate runtime or that the whole repository dossier validator passes."
+  ]
+}

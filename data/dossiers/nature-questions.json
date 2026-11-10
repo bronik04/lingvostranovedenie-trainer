@@ -1864,24 +1864,6 @@
     }
   },
   {
-    "id": "nature-q18",
-    "embeds": "2018-19-mun-vrn-6",
-    "status": "accepted",
-    "fact": {
-      "table": "waters",
-      "row": "wat-huanghe",
-      "ask": "name",
-      "where": {
-        "country": "中国",
-        "kind": "河流"
-      }
-    },
-    "check": {
-      "verdict": "accept",
-      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
-    }
-  },
-  {
     "id": "nature-q22",
     "embeds": "2023-24-mun-komi-4",
     "status": "accepted",
@@ -2041,6 +2023,36 @@
     "check": {
       "verdict": "accept",
       "note": "Автор принял последние правки 17вопросов и09.11.2026пряморазрешил публикацию. Условия/варианты/ключи/подписи — immutableacceptedmanifestпартии8. Источники ивстраиваниепроверенытематически; общий выпуск проходитнезависимоеревью."
+    }
+  },
+  {
+    "id": "nature-q173",
+    "status": "accepted",
+    "embeds": "addition-gap2-09",
+    "fact": {
+      "table": "forestprojects",
+      "row": "forest-three-north",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
+    }
+  },
+  {
+    "id": "nature-q174",
+    "status": "accepted",
+    "embeds": "addition-gap2-10",
+    "fact": {
+      "table": "climatephenomena",
+      "row": "climate-meiyu",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
     }
   }
 ]

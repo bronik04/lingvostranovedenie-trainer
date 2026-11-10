@@ -9,7 +9,8 @@
         "taste": "zh",
         "dish": "zh",
         "about": "ru",
-        "regionalname": "zh"
+        "regionalname": "zh",
+        "dimsumcuisinename": "zh"
       },
       "sides": [
         "region",
@@ -118,26 +119,34 @@
               "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
               "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
               "quote": "川菜 调味多变，菜式多样，口味清鲜醇浓并重，善用麻辣调味。 推荐菜：宫保鸡丁、麻婆豆腐",
-              "authority": "official",
-              "checkedAt": "2026-10-22"
+              "checkedAt": "2026-10-22",
+              "authority": "official"
             },
             {
               "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
               "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml",
               "quote": "川菜起源于四川、重庆等地，最早可追溯到秦汉时期。川菜以麻、辣、鲜、香为特色",
-              "authority": "official",
-              "checkedAt": "2026-10-22"
+              "checkedAt": "2026-10-22",
+              "authority": "official"
             },
             {
               "title": "味道中国：四川味道 — 央视网",
               "url": "https://tv.cctv.com/yskd/special/sc/index.shtml",
               "quote": "【麻婆豆腐】麻辣的代表辣有尽而味无穷的传奇美味",
-              "authority": "official",
-              "checkedAt": "2026-10-22"
+              "checkedAt": "2026-10-22",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "dimsumcuisinename": {
+            "zh": "川菜",
+            "ru": [
+              "Сычуаньская кухня"
+            ],
+            "gloss": "Сычуаньская кухня — характерен вкус 麻辣: острота с онемением.",
+            "ref": "cuisine/cuisines/cs-chuan"
+          }
         },
         {
           "id": "cs-yue",
@@ -172,35 +181,50 @@
               "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
               "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
               "quote": "比较著名的是中国的“八大菜系”，鲁菜（山东）、川菜（四川）、粤菜（广东）、苏菜（江苏）、闽菜（福建）、浙菜（浙江）、湘菜（湖南）、徽菜（安徽）。",
-              "authority": "official",
-              "checkedAt": "2026-10-22"
+              "checkedAt": "2026-10-22",
+              "authority": "official"
             },
             {
               "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
               "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml",
               "quote": "粤菜即广东菜，由广府菜（即广州府菜）、潮州菜（也称潮汕菜）、东江菜（也称客家菜）三种地方风味组成，三者各具特色。在烹调上，粤菜以炒、爆为主，兼有烩、煎、烤，讲究清而不淡、鲜而不俗、嫩而不生、油而不腻。 代表年夜饭有：盆菜、白切鸡",
-              "authority": "official",
-              "checkedAt": "2026-10-22"
+              "checkedAt": "2026-10-22",
+              "authority": "official"
             },
             {
               "title": "味道中国之粤菜 — 央视网",
               "url": "https://tv.cctv.com/yskd/special/yc/index.shtml",
               "quote": "粤菜用料广博、选料珍奇、配料精巧，烹饪时注重质和味，口味比较清淡，清中求鲜，淡中求美，鲜而不俗，嫩而不生，油而不腻。",
-              "authority": "official",
-              "checkedAt": "2026-10-22"
+              "checkedAt": "2026-10-22",
+              "authority": "official"
             },
             {
               "title": "白切鸡 — 广州市人民政府门户网站",
               "url": "https://www.gz.gov.cn/zlgz/gzly/msgz/tsmc/content/post_8313422.html",
               "quote": "白切鸡是粤菜鸡肴中最普通的一种，属浸鸡类，以其制作简易，刚熟不烂，不加配料且保持原味为特点",
-              "authority": "official",
-              "checkedAt": "2026-10-22"
+              "checkedAt": "2026-10-22",
+              "authority": "official"
+            },
+            {
+              "title": "广州市商务局 — 广州早茶传统店",
+              "url": "https://sw.gz.gov.cn/swzx/gnmy/content/post_11016191.html",
+              "quote": "早茶承载的内涵，远不止一壶清茶、几笼点心",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
             }
           ],
           "olympiad": [
             "2020-21-zak-qf17a29"
           ],
-          "core": true
+          "core": true,
+          "dimsumcuisinename": {
+            "zh": "粤菜",
+            "ru": [
+              "Кантонская кухня"
+            ],
+            "gloss": "Кантонская кухня — традиционное утреннее чаепитие называют 早茶.",
+            "ref": "cuisine/cuisines/cs-yue"
+          }
         },
         {
           "id": "cs-su",
@@ -301,26 +325,34 @@
               "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
               "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
               "quote": "比较著名的是中国的“八大菜系”，鲁菜（山东）、川菜（四川）、粤菜（广东）、苏菜（江苏）、闽菜（福建）、浙菜（浙江）、湘菜（湖南）、徽菜（安徽）。",
-              "authority": "official",
-              "checkedAt": "2026-10-22"
+              "checkedAt": "2026-10-22",
+              "authority": "official"
             },
             {
               "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
               "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html",
               "quote": "尤以“香”、“味”见长，风格清鲜、和醇、荤香、不腻。三大特色，一长于红糟调 闽菜 味，二长于制汤，三长于使用糖醋。 推荐菜：佛跳墙、醉糟鸡",
-              "authority": "official",
-              "checkedAt": "2026-10-22"
+              "checkedAt": "2026-10-22",
+              "authority": "official"
             },
             {
               "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
               "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml",
               "quote": "闽菜是以福州菜为代表，以闽东、闽南、闽西、闽北、闽中、莆田地方风味菜为主形成的菜系。闽菜的烹调方法有醉、扣、糟等，口味偏于甜酸，汤菜众多。 代表年夜饭有：爆炒双脆、酒糟鱼、佛跳墙",
-              "authority": "official",
-              "checkedAt": "2026-10-22"
+              "checkedAt": "2026-10-22",
+              "authority": "official"
             }
           ],
           "olympiad": [],
-          "core": true
+          "core": true,
+          "dimsumcuisinename": {
+            "zh": "闽菜",
+            "ru": [
+              "Фуцзяньская кухня"
+            ],
+            "gloss": "Фуцзяньская кухня — особенно известна бульонами и супами.",
+            "ref": "cuisine/cuisines/cs-min"
+          }
         },
         {
           "id": "cs-zhe",
@@ -347,37 +379,36 @@
               "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
               "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
               "quote": "比较著名的是中国的“八大菜系”，鲁菜（山东）、川菜（四川）、粤菜（广东）、苏菜（江苏）、闽菜（福建）、浙菜（浙江）、湘菜（湖南）、徽菜（安徽）。",
-              "authority": "official",
-              "checkedAt": "2026-10-22"
+              "checkedAt": "2026-10-22",
+              "authority": "official"
             },
             {
               "title": "中国饮食文化简介 — 《欢迎来到中国》，国家移民管理局",
               "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html",
               "quote": "浙菜 菜式小巧玲珑，清俊逸秀，菜品鲜美滑嫩，脆软清爽。 推荐菜：龙井虾仁、虾爆鳝背、西湖醋鱼",
-              "authority": "official",
-              "checkedAt": "2026-10-22"
+              "checkedAt": "2026-10-22",
+              "authority": "official"
             },
             {
               "title": "味道中国：浙江味道 — 央视网",
               "url": "https://tv.cctv.com/yskd/wdzg/zjwd/ml/index.shtml",
               "quote": "品一口鲜嫩酸甜的西湖醋鱼，尝一道茶香飘逸的龙井虾仁",
-              "authority": "official",
-              "checkedAt": "2026-10-22"
+              "checkedAt": "2026-10-22",
+              "authority": "official"
             },
             {
               "title": "一起来看“八大菜系”里的年夜饭！— 央广网",
               "url": "http://ent.cnr.cn/dsyyl/20220131/t20220131_525731062.shtml",
               "quote": "浙菜是以杭州、宁波、绍兴和温州四种风味为代表的地方菜系。浙菜采用原料十分广泛，强调原料鲜嫩，现取现做。",
-              "authority": "official",
-              "checkedAt": "2026-10-22"
+              "checkedAt": "2026-10-22",
+              "authority": "official"
             },
             {
               "title": "Туристические ресурсы Китая: 中国旅游地理 — учебное пособие на сайте Шаньсийского университета",
               "url": "https://ygx.sxu.edu.cn/db/%E5%9B%BE%E4%B9%A6/%E4%B8%AD%E5%9B%BD%E6%97%85%E6%B8%B8%E5%9C%B0%E7%90%868.pdf",
               "quote": "浙菜是由杭州、宁波、绍兴三种地方风味发展而成的菜系。",
-              "authority": "academic",
               "checkedAt": "2026-11-08",
-              "verificationMethod": "reuse-accepted-local: 2026-11-08-regional-batch-7-proposals.json/items#1/keySources; прочитано локально 2026-11-08, новая загрузка страницы не заявляется. Прежний метод: Страница/полный поисковый фрагмент официального сайта прочитан 2026-11-08; цитата сверена с результатом web.run."
+              "authority": "academic"
             }
           ],
           "olympiad": [
@@ -390,6 +421,14 @@
               "Чжэцзянская кухня"
             ],
             "gloss": "Чжэцзянская кухня — среди её блюд креветки с чаем Лунцзин"
+          },
+          "dimsumcuisinename": {
+            "zh": "浙菜",
+            "ru": [
+              "Чжэцзянская кухня"
+            ],
+            "gloss": "Чжэцзянская кухня — среди известных блюд рыба озера Сиху в уксусном соусе.",
+            "ref": "cuisine/cuisines/cs-zhe"
           }
         },
         {

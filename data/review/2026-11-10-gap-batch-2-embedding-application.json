@@ -1,0 +1,1332 @@
+{
+  "date": "2026-11-10",
+  "acceptedInputFileSha256": "ff6fcb97a86378880c8ed0b228d281432dd30c117d443cf5368bdfd04f683f5e",
+  "publicationAuthorized": false,
+  "embeddingAuthorized": true,
+  "questionCount": 17,
+  "optionCount": 68,
+  "items": [
+    {
+      "reviewNumber": 1,
+      "previewId": "preview-gap2r-01",
+      "publicId": "addition-gap2-01",
+      "embeddingId": "landmarks-q118",
+      "dossier": "landmarks",
+      "table": "boardgames",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "game-weiqi",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "game-xiangqi",
+          "zh": "象棋"
+        },
+        {
+          "optionId": "o2",
+          "row": "game-weiqi",
+          "zh": "围棋"
+        },
+        {
+          "optionId": "o3",
+          "row": "game-chess",
+          "zh": "国际象棋"
+        },
+        {
+          "optionId": "o4",
+          "row": "game-gomoku",
+          "zh": "五子棋"
+        }
+      ],
+      "embedding": {
+        "id": "landmarks-q118",
+        "status": "accepted",
+        "embeds": "addition-gap2-01",
+        "fact": {
+          "table": "boardgames",
+          "row": "game-weiqi",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "Культура, традиции и праздники",
+      "sourcesPerOption": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reviewNumber": 2,
+      "previewId": "preview-gap2r-02",
+      "publicId": "addition-gap2-02",
+      "embeddingId": "provinces-q156",
+      "dossier": "provinces",
+      "table": "provinces",
+      "column": "cottonregionname",
+      "newTable": false,
+      "answerRow": "prov-xinjiang",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "prov-shandong",
+          "zh": "山东"
+        },
+        {
+          "optionId": "o2",
+          "row": "prov-hubei",
+          "zh": "湖北"
+        },
+        {
+          "optionId": "o3",
+          "row": "prov-xinjiang",
+          "zh": "新疆"
+        },
+        {
+          "optionId": "o4",
+          "row": "prov-hebei",
+          "zh": "河北"
+        }
+      ],
+      "embedding": {
+        "id": "provinces-q156",
+        "status": "accepted",
+        "embeds": "addition-gap2-02",
+        "fact": {
+          "table": "provinces",
+          "row": "prov-xinjiang",
+          "ask": "cottonregionname"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "География и административное устройство",
+      "sourcesPerOption": [
+        5,
+        5,
+        5,
+        8
+      ]
+    },
+    {
+      "reviewNumber": 3,
+      "previewId": "preview-gap2r-03",
+      "publicId": "addition-gap2-03",
+      "embeddingId": "literature-q117",
+      "dossier": "literature",
+      "table": "readingcorners",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "reading-top-right",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "reading-top-left",
+          "zh": "左上角"
+        },
+        {
+          "optionId": "o2",
+          "row": "reading-top-right",
+          "zh": "右上角"
+        },
+        {
+          "optionId": "o3",
+          "row": "reading-bottom-left",
+          "zh": "左下角"
+        },
+        {
+          "optionId": "o4",
+          "row": "reading-bottom-right",
+          "zh": "右下角"
+        }
+      ],
+      "embedding": {
+        "id": "literature-q117",
+        "status": "accepted",
+        "embeds": "addition-gap2-03",
+        "fact": {
+          "table": "readingcorners",
+          "row": "reading-top-right",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": true,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "Литература, язык, искусство и философия",
+      "sourcesPerOption": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "reviewNumber": 4,
+      "previewId": "preview-gap2r-04",
+      "publicId": "addition-gap2-04",
+      "embeddingId": "painting-q112",
+      "dossier": "painting",
+      "table": "sealrecords",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "sealrecord-collection",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "sealrecord-restoration",
+          "zh": "修复记录"
+        },
+        {
+          "optionId": "o2",
+          "row": "sealrecord-exhibition",
+          "zh": "展览记录"
+        },
+        {
+          "optionId": "o3",
+          "row": "sealrecord-collection",
+          "zh": "收藏记录"
+        },
+        {
+          "optionId": "o4",
+          "row": "sealrecord-trade",
+          "zh": "交易记录"
+        }
+      ],
+      "embedding": {
+        "id": "painting-q112",
+        "status": "accepted",
+        "embeds": "addition-gap2-04",
+        "fact": {
+          "table": "sealrecords",
+          "row": "sealrecord-collection",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "Литература, язык, искусство и философия",
+      "sourcesPerOption": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "reviewNumber": 5,
+      "previewId": "preview-gap2r-05",
+      "publicId": "addition-gap2-05",
+      "embeddingId": "cuisine-q109",
+      "dossier": "cuisine",
+      "table": "cuisines",
+      "column": "dimsumcuisinename",
+      "newTable": false,
+      "answerRow": "cs-yue",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "cs-min",
+          "zh": "闽菜"
+        },
+        {
+          "optionId": "o2",
+          "row": "cs-yue",
+          "zh": "粤菜"
+        },
+        {
+          "optionId": "o3",
+          "row": "cs-chuan",
+          "zh": "川菜"
+        },
+        {
+          "optionId": "o4",
+          "row": "cs-zhe",
+          "zh": "浙菜"
+        }
+      ],
+      "embedding": {
+        "id": "cuisine-q109",
+        "status": "accepted",
+        "embeds": "addition-gap2-05",
+        "fact": {
+          "table": "cuisines",
+          "row": "cs-yue",
+          "ask": "dimsumcuisinename"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "Культура, традиции и праздники",
+      "sourcesPerOption": [
+        3,
+        5,
+        3,
+        5
+      ]
+    },
+    {
+      "reviewNumber": 6,
+      "previewId": "preview-gap2r-06",
+      "publicId": "addition-gap2-06",
+      "embeddingId": "crafts-q145",
+      "dossier": "crafts",
+      "table": "auspiciousanimals",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "auspicious-bat",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "auspicious-magpie",
+          "zh": "喜鹊"
+        },
+        {
+          "optionId": "o2",
+          "row": "auspicious-crane",
+          "zh": "仙鹤"
+        },
+        {
+          "optionId": "o3",
+          "row": "auspicious-carp",
+          "zh": "鲤鱼"
+        },
+        {
+          "optionId": "o4",
+          "row": "auspicious-bat",
+          "zh": "蝙蝠"
+        }
+      ],
+      "embedding": {
+        "id": "crafts-q145",
+        "status": "accepted",
+        "embeds": "addition-gap2-06",
+        "fact": {
+          "table": "auspiciousanimals",
+          "row": "auspicious-bat",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "Культура, традиции и праздники",
+      "sourcesPerOption": [
+        2,
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "reviewNumber": 7,
+      "previewId": "preview-gap2r-07",
+      "publicId": "addition-gap2-07",
+      "embeddingId": "modern-china-q32",
+      "dossier": "modern-china",
+      "table": "documents",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "document-id-card",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "document-passport",
+          "zh": "护照"
+        },
+        {
+          "optionId": "o2",
+          "row": "document-hukou-book",
+          "zh": "居民户口簿"
+        },
+        {
+          "optionId": "o3",
+          "row": "document-id-card",
+          "zh": "居民身份证"
+        },
+        {
+          "optionId": "o4",
+          "row": "document-registration-proof",
+          "zh": "户籍证明"
+        }
+      ],
+      "embedding": {
+        "id": "modern-china-q32",
+        "status": "accepted",
+        "embeds": "addition-gap2-07",
+        "fact": {
+          "table": "documents",
+          "row": "document-id-card",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "Общество: население, этносы и религии",
+      "sourcesPerOption": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reviewNumber": 8,
+      "previewId": "preview-gap2r-08",
+      "publicId": "addition-gap2-08",
+      "embeddingId": "painting-q113",
+      "dossier": "painting",
+      "table": "copyingmethods",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "copying-linxie",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "copying-moxie",
+          "zh": "摹写"
+        },
+        {
+          "optionId": "o2",
+          "row": "copying-moxie-memory",
+          "zh": "默写"
+        },
+        {
+          "optionId": "o3",
+          "row": "copying-linxie",
+          "zh": "临写"
+        },
+        {
+          "optionId": "o4",
+          "row": "copying-tingxie",
+          "zh": "听写"
+        }
+      ],
+      "embedding": {
+        "id": "painting-q113",
+        "status": "accepted",
+        "embeds": "addition-gap2-08",
+        "fact": {
+          "table": "copyingmethods",
+          "row": "copying-linxie",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": true,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "Литература, язык, искусство и философия",
+      "sourcesPerOption": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reviewNumber": 9,
+      "previewId": "preview-gap2-09",
+      "publicId": "addition-gap2-09",
+      "embeddingId": "nature-q173",
+      "dossier": "nature",
+      "table": "forestprojects",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "forest-three-north",
+      "orderedOptions": [
+        {
+          "optionId": "o4",
+          "row": "forest-three-north",
+          "zh": "三北防护林"
+        },
+        {
+          "optionId": "o1",
+          "row": "forest-coastal",
+          "zh": "沿海防护林"
+        },
+        {
+          "optionId": "o2",
+          "row": "forest-yangtze",
+          "zh": "长江防护林"
+        },
+        {
+          "optionId": "o3",
+          "row": "forest-taihang",
+          "zh": "太行山绿化"
+        }
+      ],
+      "embedding": {
+        "id": "nature-q173",
+        "status": "accepted",
+        "embeds": "addition-gap2-09",
+        "fact": {
+          "table": "forestprojects",
+          "row": "forest-three-north",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "География и административное устройство",
+      "sourcesPerOption": [
+        2,
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "reviewNumber": 10,
+      "previewId": "preview-gap2r-10",
+      "publicId": "addition-gap2-10",
+      "embeddingId": "nature-q174",
+      "dossier": "nature",
+      "table": "climatephenomena",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "climate-meiyu",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "climate-typhoon",
+          "zh": "台风"
+        },
+        {
+          "optionId": "o2",
+          "row": "climate-coldwave",
+          "zh": "寒潮"
+        },
+        {
+          "optionId": "o3",
+          "row": "climate-duststorm",
+          "zh": "沙尘暴"
+        },
+        {
+          "optionId": "o4",
+          "row": "climate-meiyu",
+          "zh": "梅雨"
+        }
+      ],
+      "embedding": {
+        "id": "nature-q174",
+        "status": "accepted",
+        "embeds": "addition-gap2-10",
+        "fact": {
+          "table": "climatephenomena",
+          "row": "climate-meiyu",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "География и административное устройство",
+      "sourcesPerOption": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reviewNumber": 11,
+      "previewId": "preview-gap2r-11-shikumen",
+      "publicId": "addition-gap2-11",
+      "embeddingId": "landmarks-q119",
+      "dossier": "landmarks",
+      "table": "dwellings",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "dwelling-shikumen",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "dwelling-siheyuan",
+          "zh": "四合院",
+          "nameRef": "ethnos/dwellings/dw-siheyuan"
+        },
+        {
+          "optionId": "o2",
+          "row": "dwelling-tulou",
+          "zh": "土楼",
+          "nameRef": "ethnos/dwellings/dw-tulou"
+        },
+        {
+          "optionId": "o3",
+          "row": "dwelling-shikumen",
+          "zh": "石库门"
+        },
+        {
+          "optionId": "o4",
+          "row": "dwelling-yaodong",
+          "zh": "窑洞",
+          "nameRef": "ethnos/dwellings/dw-yaodong"
+        }
+      ],
+      "embedding": {
+        "id": "landmarks-q119",
+        "status": "accepted",
+        "embeds": "addition-gap2-11",
+        "fact": {
+          "table": "dwellings",
+          "row": "dwelling-shikumen",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "Культура, традиции и праздники",
+      "sourcesPerOption": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reviewNumber": 12,
+      "previewId": "preview-gap2r-12",
+      "publicId": "addition-gap2-12",
+      "embeddingId": "modern-china-q33",
+      "dossier": "modern-china",
+      "table": "travelperiods",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "travel-chunyun",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "travel-shuyun",
+          "zh": "暑运"
+        },
+        {
+          "optionId": "o2",
+          "row": "travel-chunyun",
+          "zh": "春运"
+        },
+        {
+          "optionId": "o3",
+          "row": "travel-goldenweek",
+          "zh": "黄金周"
+        },
+        {
+          "optionId": "o4",
+          "row": "travel-shortholiday",
+          "zh": "小长假"
+        }
+      ],
+      "embedding": {
+        "id": "modern-china-q33",
+        "status": "accepted",
+        "embeds": "addition-gap2-12",
+        "fact": {
+          "table": "travelperiods",
+          "row": "travel-chunyun",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "Общество: население, этносы и религии",
+      "sourcesPerOption": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reviewNumber": 13,
+      "previewId": "preview-gap2-13",
+      "publicId": "addition-gap2-13",
+      "embeddingId": "holidays-q58",
+      "dossier": "holidays",
+      "table": "calendarmonths",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "month-runyue",
+      "orderedOptions": [
+        {
+          "optionId": "o2",
+          "row": "month-runyue",
+          "zh": "闰月"
+        },
+        {
+          "optionId": "o3",
+          "row": "month-layue",
+          "zh": "腊月"
+        },
+        {
+          "optionId": "o4",
+          "row": "month-xiaoyue",
+          "zh": "小月"
+        },
+        {
+          "optionId": "o1",
+          "row": "month-dayue",
+          "zh": "大月"
+        }
+      ],
+      "embedding": {
+        "id": "holidays-q58",
+        "status": "accepted",
+        "embeds": "addition-gap2-13",
+        "fact": {
+          "table": "calendarmonths",
+          "row": "month-runyue",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "Культура, традиции и праздники",
+      "sourcesPerOption": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reviewNumber": 14,
+      "previewId": "preview-gap2r-14",
+      "publicId": "addition-gap2-14",
+      "embeddingId": "crafts-q146",
+      "dossier": "crafts",
+      "table": "fans",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "fan-zheshan",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "fan-tuanshan",
+          "zh": "团扇"
+        },
+        {
+          "optionId": "o2",
+          "row": "fan-yushan",
+          "zh": "羽扇"
+        },
+        {
+          "optionId": "o3",
+          "row": "fan-zheshan",
+          "zh": "折扇"
+        },
+        {
+          "optionId": "o4",
+          "row": "fan-pushan",
+          "zh": "蒲扇"
+        }
+      ],
+      "embedding": {
+        "id": "crafts-q146",
+        "status": "accepted",
+        "embeds": "addition-gap2-14",
+        "fact": {
+          "table": "fans",
+          "row": "fan-zheshan",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "Культура, традиции и праздники",
+      "sourcesPerOption": [
+        3,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "reviewNumber": 15,
+      "previewId": "preview-gap2r-15",
+      "publicId": "addition-gap2-15",
+      "embeddingId": "literature-q118",
+      "dossier": "literature",
+      "table": "narrativegenres",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "narrative-yuyan",
+      "orderedOptions": [
+        {
+          "optionId": "o1",
+          "row": "narrative-yuyan",
+          "zh": "寓言"
+        },
+        {
+          "optionId": "o2",
+          "row": "narrative-shenhua",
+          "zh": "神话"
+        },
+        {
+          "optionId": "o3",
+          "row": "narrative-chuanshuo",
+          "zh": "传说"
+        },
+        {
+          "optionId": "o4",
+          "row": "narrative-tonghua",
+          "zh": "童话"
+        }
+      ],
+      "embedding": {
+        "id": "literature-q118",
+        "status": "accepted",
+        "embeds": "addition-gap2-15",
+        "fact": {
+          "table": "narrativegenres",
+          "row": "narrative-yuyan",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": "Языковой блок: типы повествования.",
+      "languageRelated": true,
+      "isolatedLanguagePoolRequired": true,
+      "topic": "Литература, язык, искусство и философия",
+      "sourcesPerOption": [
+        4,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reviewNumber": 17,
+      "previewId": "preview-gap2-17",
+      "publicId": "addition-gap2-17",
+      "embeddingId": "painting-q114",
+      "dossier": "painting",
+      "table": "reproductions",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "reproduction-tapian",
+      "orderedOptions": [
+        {
+          "optionId": "o3",
+          "row": "reproduction-tapian",
+          "zh": "拓片"
+        },
+        {
+          "optionId": "o4",
+          "row": "reproduction-yingyinben",
+          "zh": "影印本"
+        },
+        {
+          "optionId": "o1",
+          "row": "reproduction-keben",
+          "zh": "刻本"
+        },
+        {
+          "optionId": "o2",
+          "row": "reproduction-moben",
+          "zh": "摹本"
+        }
+      ],
+      "embedding": {
+        "id": "painting-q114",
+        "status": "accepted",
+        "embeds": "addition-gap2-17",
+        "fact": {
+          "table": "reproductions",
+          "row": "reproduction-tapian",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": null,
+      "languageRelated": false,
+      "isolatedLanguagePoolRequired": false,
+      "topic": "Литература, язык, искусство и философия",
+      "sourcesPerOption": [
+        2,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "reviewNumber": 19,
+      "previewId": "preview-gap2-19",
+      "publicId": "addition-gap2-19",
+      "embeddingId": "literature-q119",
+      "dossier": "literature",
+      "table": "phraseologytypes",
+      "column": "name",
+      "newTable": true,
+      "answerRow": "phraseology-xiehouyu",
+      "orderedOptions": [
+        {
+          "optionId": "o3",
+          "row": "phraseology-chengyu",
+          "zh": "成语"
+        },
+        {
+          "optionId": "o4",
+          "row": "phraseology-guanyongyu",
+          "zh": "惯用语"
+        },
+        {
+          "optionId": "o1",
+          "row": "phraseology-xiehouyu",
+          "zh": "歇后语"
+        },
+        {
+          "optionId": "o2",
+          "row": "phraseology-yanyu",
+          "zh": "谚语"
+        }
+      ],
+      "embedding": {
+        "id": "literature-q119",
+        "status": "accepted",
+        "embeds": "addition-gap2-19",
+        "fact": {
+          "table": "phraseologytypes",
+          "row": "phraseology-xiehouyu",
+          "ask": "name"
+        },
+        "exclude": [],
+        "check": {
+          "verdict": "accept",
+          "note": "Author accepted; local embedding only; publication forbidden."
+        }
+      },
+      "placement": "Языковой блок / фразеология, отдельно от основного страноведческого пула.",
+      "languageRelated": true,
+      "isolatedLanguagePoolRequired": true,
+      "topic": "Литература, язык, искусство и философия",
+      "sourcesPerOption": [
+        2,
+        3,
+        3,
+        2
+      ]
+    }
+  ],
+  "captionChanges": [
+    {
+      "reviewNumber": 4,
+      "questionId": "preview-gap2r-04",
+      "optionId": "o3",
+      "zh": "收藏记录",
+      "isAnswer": true,
+      "kind": "content",
+      "fromText": "История коллекций — печати отмечают владельцев и знатоков картины.",
+      "toText": "История коллекционирования — печати владельцев не гарантируют подлинность картины.",
+      "reason": "«История коллекций» звучит как история собраний, а не бытование картины. У нынешнего верного варианта почти только ответ на вопрос; музей прямо добавляет существенное ограничение: встречаются поддельные печати или подлинные печати на подделках. Сжато до лимита 90 символов без изменения смысла.",
+      "sourceURLs": [
+        "https://hk.art.museum/sc/web/ma/resources/archive/education-resources/resources/vermillion-impressions-chinese-painting-and-calligraphy-seals.html"
+      ]
+    },
+    {
+      "reviewNumber": 6,
+      "questionId": "preview-gap2r-06",
+      "optionId": "o4",
+      "zh": "蝙蝠",
+      "isAnswer": true,
+      "kind": "content",
+      "fromText": "Летучая мышь — вместе с персиком выражает пожелание счастья и долголетия.",
+      "toText": "Летучая мышь — 蝠 и 福 («счастье») звучат фу; с персиком — пожелание счастья и долголетия.",
+      "reason": "Само условие сообщает о созвучии, но не показывает, какие именно знаки и как звучат. Добавлено это объяснение; сохранён полезный факт про персик. Сжато до лимита 90 символов без изменения смысла.",
+      "sourceURLs": [
+        "https://www.hkpm.org.hk/sc/the-ways-in-patterns-1",
+        "https://www.dpm.org.cn/Uploads/File/2020/02/13/u5e452267046ae.pdf"
+      ]
+    },
+    {
+      "reviewNumber": 9,
+      "questionId": "preview-gap2-09",
+      "optionId": "o4",
+      "zh": "三北防护林",
+      "isAnswer": true,
+      "kind": "content",
+      "fromText": "Защитные леса трёх северных районов.",
+      "toText": "Защитные леса 3 северных регионов — проект начат в 1978 году для защиты от ветра и песка.",
+      "reason": "Нынешняя подпись — только перевод названия, без добавочного знания. Дата начала и задачи подтверждены официальным описанием и НДРК. Числа оставлены арабскими. Сжато до лимита 90 символов без изменения смысла.",
+      "sourceURLs": [
+        "https://www.forestry.gov.cn/search/501731",
+        "https://www.ndrc.gov.cn/xxgk/jd/jd/202509/t20250915_1400489_ext.html"
+      ]
+    },
+    {
+      "reviewNumber": 15,
+      "questionId": "preview-gap2r-15",
+      "optionId": "o1",
+      "zh": "寓言",
+      "isAnswer": true,
+      "kind": "content",
+      "fromText": "Притча или басня; героями бывают люди и олицетворённые животные.",
+      "toText": "Басня или притча — иносказательное поучение; известный пример — басни Эзопа.",
+      "reason": "Животные сами по себе не отличают 寓言 от童话. Иносказательное поучение точнее передаёт определение; басни Эзопа прямо приведены в словаре и добавляют узнаваемый пример сверх условия. Сжато до лимита 90 символов без изменения смысла.",
+      "sourceURLs": [
+        "https://dict.concised.moe.edu.tw/dictView.jsp?ID=44476&la=0&powerMode=0"
+      ]
+    },
+    {
+      "reviewNumber": 17,
+      "questionId": "preview-gap2-17",
+      "optionId": "o3",
+      "zh": "拓片",
+      "isAnswer": true,
+      "kind": "content",
+      "fromText": "Тапянь — бумажный оттиск надписи или изображения с камня и других твёрдых поверхностей.",
+      "toText": "Тапянь — бумажный эстампаж; снимают надписи со стел и бронзовых предметов.",
+      "reason": "Тапянь уже правильно: tà piàn, не «тайпянь». Уточнён русский термин и дан конкретный пример другой поверхности сверх описанной в условии стелы. Сжато до лимита 90 символов без изменения смысла.",
+      "sourceURLs": [
+        "https://www.dpm.org.cn/lemmas/245196.html",
+        "https://dict.concised.moe.edu.tw/dictView.jsp?ID=9937&la=0&powerMode=1"
+      ]
+    },
+    {
+      "reviewNumber": 19,
+      "questionId": "preview-gap2-19",
+      "optionId": "o1",
+      "zh": "歇后语",
+      "isAnswer": true,
+      "kind": "content",
+      "fromText": "Двучастное иносказание с образной первой частью и разгадкой.",
+      "toText": "Двучастное иносказание — неожиданная разгадка может создавать шутливый эффект.",
+      "reason": "Нынешняя подпись полностью повторяет условие «образная загадка и объяснение». Полная страница MOE описывает эффект паузы, прояснения и остроумия; это добавочный признак функции речения.",
+      "sourceURLs": [
+        "https://dict.revised.moe.edu.tw/page.jsp?ID=23"
+      ]
+    },
+    {
+      "reviewNumber": 3,
+      "questionId": "preview-gap2r-03",
+      "optionId": "o2",
+      "zh": "右上角",
+      "isAnswer": true,
+      "kind": "name-fact-format",
+      "fromText": "Правый верхний угол; читают вниз, затем переходят к столбцу слева.",
+      "toText": "Правый верхний угол — читают вниз, затем переходят к столбцу слева.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://w3c.github.io/clreq/zh/"
+      ]
+    },
+    {
+      "reviewNumber": 8,
+      "questionId": "preview-gap2r-08",
+      "optionId": "o1",
+      "zh": "摹写",
+      "isAnswer": false,
+      "kind": "name-fact-format",
+      "fromText": "Обводка образца, поверх которого кладут прозрачную бумагу.",
+      "toText": "Обводка образца — поверх него кладут прозрачную бумагу.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://www.dsedj.gov.mo/cre/tmag/03/topic05-5.htm"
+      ]
+    },
+    {
+      "reviewNumber": 8,
+      "questionId": "preview-gap2r-08",
+      "optionId": "o2",
+      "zh": "默写",
+      "isAnswer": false,
+      "kind": "name-fact-format",
+      "fromText": "Воспроизведение ранее прочитанного текста по памяти.",
+      "toText": "Письмо по памяти — воспроизведение ранее прочитанного текста.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://dict.concised.moe.edu.tw/dictView.jsp?ID=3773&la=0&powerMode=0"
+      ]
+    },
+    {
+      "reviewNumber": 8,
+      "questionId": "preview-gap2r-08",
+      "optionId": "o3",
+      "zh": "临写",
+      "isAnswer": true,
+      "kind": "name-fact-format",
+      "fromText": "Копирование с образца; тренирует форму знака и размещение его черт.",
+      "toText": "Копирование с образца — тренирует форму знака и размещение его черт.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://www.dsedj.gov.mo/cre/tmag/03/topic05-5.htm"
+      ]
+    },
+    {
+      "reviewNumber": 8,
+      "questionId": "preview-gap2r-08",
+      "optionId": "o4",
+      "zh": "听写",
+      "isAnswer": false,
+      "kind": "name-fact-format",
+      "fromText": "Запись под диктовку: учитель читает, а ученик записывает услышанное.",
+      "toText": "Диктант — учитель читает, а ученик записывает услышанное.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://dict.revised.moe.edu.tw/dictView.jsp?ID=53725&la=0&powerMode=0"
+      ]
+    },
+    {
+      "reviewNumber": 13,
+      "questionId": "preview-gap2-13",
+      "optionId": "o2",
+      "zh": "闰月",
+      "isAnswer": true,
+      "kind": "name-fact-format",
+      "fromText": "Вставной месяц; в году с ним бывает 13 месяцев.",
+      "toText": "Вставной месяц — в году с ним бывает 13 месяцев.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://www.weather.gov.hk/sc/education/astronomy-and-time/time-service/00413-the-chinese-agricultural-calendar-explained.html"
+      ]
+    },
+    {
+      "reviewNumber": 13,
+      "questionId": "preview-gap2-13",
+      "optionId": "o3",
+      "zh": "腊月",
+      "isAnswer": false,
+      "kind": "name-fact-format",
+      "fromText": "Традиционное название 12 месяца года.",
+      "toText": "Лаюэ — традиционное название 12-го месяца года.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://dict.concised.moe.edu.tw/dictView.jsp?ID=13210&la=0&powerMode=0"
+      ]
+    },
+    {
+      "reviewNumber": 13,
+      "questionId": "preview-gap2-13",
+      "optionId": "o4",
+      "zh": "小月",
+      "isAnswer": false,
+      "kind": "name-fact-format",
+      "fromText": "Лунный месяц продолжительностью 29 дней.",
+      "toText": "Малый месяц — лунный месяц продолжительностью 29 дней.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://www.hko.gov.hk/tc/天文台網誌/109092/2025年起連續五年沒有年三十"
+      ]
+    },
+    {
+      "reviewNumber": 13,
+      "questionId": "preview-gap2-13",
+      "optionId": "o1",
+      "zh": "大月",
+      "isAnswer": false,
+      "kind": "name-fact-format",
+      "fromText": "Лунный месяц продолжительностью 30 дней.",
+      "toText": "Большой месяц — лунный месяц продолжительностью 30 дней.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://www.hko.gov.hk/tc/天文台網誌/109092/2025年起連續五年沒有年三十"
+      ]
+    },
+    {
+      "reviewNumber": 15,
+      "questionId": "preview-gap2r-15",
+      "optionId": "o2",
+      "zh": "神话",
+      "isAnswer": false,
+      "kind": "name-fact-format",
+      "fromText": "Миф о богах, происхождении мира, обычаев и верований.",
+      "toText": "Миф — о богах, происхождении мира, обычаев и верований.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://dict.revised.moe.edu.tw/dictView.jsp?ID=131427&la=0&powerMode=0"
+      ]
+    },
+    {
+      "reviewNumber": 15,
+      "questionId": "preview-gap2r-15",
+      "optionId": "o3",
+      "zh": "传说",
+      "isAnswer": false,
+      "kind": "name-fact-format",
+      "fromText": "Народное предание о человеке или событии, часто связанное с историей.",
+      "toText": "Народное предание — о человеке или событии, часто связанное с историей.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://dict.concised.moe.edu.tw/dictView.jsp?ID=32858&la=0&powerMode=0"
+      ]
+    },
+    {
+      "reviewNumber": 15,
+      "questionId": "preview-gap2r-15",
+      "optionId": "o4",
+      "zh": "童话",
+      "isAnswer": false,
+      "kind": "name-fact-format",
+      "fromText": "Детская сказка с фантастическими событиями, развивающая воображение.",
+      "toText": "Детская сказка — фантастические события развивают воображение.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://dict.concised.moe.edu.tw/dictView.jsp?ID=12052&la=0&powerMode=0"
+      ]
+    },
+    {
+      "reviewNumber": 19,
+      "questionId": "preview-gap2-19",
+      "optionId": "o3",
+      "zh": "成语",
+      "isAnswer": false,
+      "kind": "name-fact-format",
+      "fromText": "Устойчивые обороты, часто восходящие к старым текстам и историям.",
+      "toText": "Чэнъюи — устойчивые обороты, часто восходящие к старым текстам и историям.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://dict.revised.moe.edu.tw/page.jsp?ID=20"
+      ]
+    },
+    {
+      "reviewNumber": 19,
+      "questionId": "preview-gap2-19",
+      "optionId": "o4",
+      "zh": "惯用语",
+      "isAnswer": false,
+      "kind": "name-fact-format",
+      "fromText": "Привычные устойчивые выражения разговорной речи.",
+      "toText": "Разговорные идиомы — привычные устойчивые выражения разговорной речи.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://dict.revised.moe.edu.tw/page.jsp?ID=21"
+      ]
+    },
+    {
+      "reviewNumber": 19,
+      "questionId": "preview-gap2-19",
+      "optionId": "o2",
+      "zh": "谚语",
+      "isAnswer": false,
+      "kind": "name-fact-format",
+      "fromText": "Пословицы и устойчивые народные изречения.",
+      "toText": "Пословицы — устойчивые народные изречения.",
+      "reason": "Разделить короткое русское название и уже имеющийся факт для формата «Название — факт»; содержательная переработка не требуется.",
+      "sourceURLs": [
+        "https://dict.revised.moe.edu.tw/page.jsp?ID=22"
+      ]
+    }
+  ],
+  "explanationChanges": [
+    {
+      "reviewNumber": 3,
+      "fromText": "При традиционном вертикальном наборе начинают с верхнего знака крайнего правого столбца. Внутри столбца читают сверху вниз, а столбцы следуют справа налево.",
+      "toText": "При традиционном вертикальном наборе начинают с верхнего знака крайнего правого столбца. Внутри столбца читают сверху вниз. Столбцы следуют справа налево."
+    },
+    {
+      "reviewNumber": 5,
+      "fromText": "Вопрос относится к кантонской традиции 飲茶/早茶: чай сопровождают небольшими порциями закусок и выпечки. Слово 点心 шире и само по себе не означает, что любые китайские закуски относятся к одной кухне.",
+      "toText": "Вопрос относится к кантонской традиции 飲茶/早茶: чай сопровождают небольшими порциями закусок и выпечки. Она особенно характерна для Гуанчжоу и других городов Гуандуна. Слово 点心 шире и само по себе не означает, что любые китайские закуски относятся к одной кухне."
+    },
+    {
+      "reviewNumber": 8,
+      "fromText": "临写 — письмо по образцу, который находится перед глазами: ученик старается воспроизвести форму и структуру знаков. При 摹写 прозрачную бумагу кладут поверх образца и повторяют его линии. Вместе эти способы входят в обучение через 临摹.",
+      "toText": "临写 — письмо по образцу, который находится перед глазами: ученик старается воспроизвести форму и структуру знаков. При обводке прозрачную бумагу кладут поверх образца и повторяют его линии. Вместе эти способы входят в обучение через 临摹."
+    },
+    {
+      "reviewNumber": 9,
+      "fromText": "«Зелёной Великой стеной» называют 三北防护林 — систему защитных лесов Северо-Запада, северной части Северного Китая и западной части Северо-Востока. Её задачи включают защиту от ветра и песка и сохранение почв и воды.",
+      "toText": "«Зелёной Великой стеной» называют 三北防护林 — систему защитных лесов Северо-Запада, северной части Северного Китая и западной части Северо-Востока. Её задачи включают защиту от ветра и песка и сохранение почв и воды. Строительство системы началось в 1978 году."
+    },
+    {
+      "reviewNumber": 13,
+      "fromText": "闰月 — вставной месяц лунно-солнечного календаря. 12 лунных месяцев короче солнечного года примерно на 11 дней, поэтому периодически добавляют целый месяц. Это позволяет сохранять соответствие календарных месяцев временам года.",
+      "toText": "闰月 — вставной месяц лунно-солнечного календаря. Лунный год из 12 месяцев короче солнечного примерно на 11 дней, поэтому периодически добавляют целый месяц. Это позволяет сохранять соответствие календарных месяцев временам года."
+    },
+    {
+      "reviewNumber": 14,
+      "fromText": "折扇 — название складной конструкции. В обычном развёрнутом виде её рёбра расходятся веером от общего крепления. 团扇 обычно остаётся на жёсткой рамке; 羽扇 и蒲扇 называют по материалу.",
+      "toText": "折扇 — название складной конструкции. В обычном развёрнутом виде её рёбра расходятся веером от общего крепления. Нескладные веера сохраняют развёрнутую форму. Названия других разновидностей могут указывать на материал, а не на конструкцию."
+    }
+  ],
+  "sourceGaps": [],
+  "languageRoutingProblem": "№19 встроен в literature/phraseologytypes и скрыт. Отдельный языковой runtime-пул пока отсутствует; модуль чэнъюй требует другой тип задания. Не выпускать его в основном страноведческом пуле."
+}

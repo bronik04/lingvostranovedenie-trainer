@@ -713,5 +713,50 @@
       "verdict": "accept",
       "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
     }
+  },
+  {
+    "id": "painting-q112",
+    "status": "accepted",
+    "embeds": "addition-gap2-04",
+    "fact": {
+      "table": "sealrecords",
+      "row": "sealrecord-collection",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
+    }
+  },
+  {
+    "id": "painting-q113",
+    "status": "accepted",
+    "embeds": "addition-gap2-08",
+    "fact": {
+      "table": "copyingmethods",
+      "row": "copying-linxie",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
+    }
+  },
+  {
+    "id": "painting-q114",
+    "status": "accepted",
+    "embeds": "addition-gap2-17",
+    "fact": {
+      "table": "reproductions",
+      "row": "reproduction-tapian",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
+    }
   }
 ]

@@ -63,6 +63,30 @@ class RegionsValidationTest(unittest.TestCase):
         errors = validate([variant(task())], {'2025-26-mun-spb-3': {'status': 'doubtful'}})
         self.assertIn('2025-26-mun-spb-3: не указана причина', errors)
 
+    def test_discarded_source_task_is_valid_but_never_returns_to_working_catalogues(self):
+        import tempfile
+        v = variant(task(3, questionRu='Окончательно отклонённый вопрос'), task(4))
+        decisions = {'2025-26-mun-spb-3': {'status': 'discarded', 'reason': 'Решение автора'},
+                     '2025-26-mun-spb-4': {'status': 'narrow', 'reason': 'Отложен на просмотр'}}
+        self.assertEqual(validate([v], decisions), [])
+        self.assertEqual(records([v], decisions), [])
+        with tempfile.TemporaryDirectory() as folder:
+            original_page, original_report = regions.PAGE, regions.REPORT
+            regions.PAGE, regions.REPORT = Path(folder) / 'page.html', Path(folder) / 'report.md'
+            try:
+                regions.write_page([v], decisions)
+                regions.write_report([v], decisions)
+                page, report = regions.PAGE.read_text(), regions.REPORT.read_text()
+            finally:
+                regions.PAGE, regions.REPORT = original_page, original_report
+        self.assertNotIn('Окончательно отклонённый вопрос', page + report)
+        self.assertIn('2025-26-mun-spb-4', page)
+        self.assertIn('2025-26-mun-spb-4', report)
+
+    def test_discarded_status_requires_a_reason(self):
+        errors = validate([variant(task())], {'2025-26-mun-spb-3': {'status': 'discarded'}})
+        self.assertIn('2025-26-mun-spb-3: не указана причина', errors)
+
     def test_regional_task_must_not_join_an_old_record(self):
         record = {'id': '2017-18-mun-6', 'occurrences': [{'year': '2017-18', 'stageCode': 'mun', 'number': 6},
                                                          {'year': '2018-19', 'stageCode': 'mun', 'regionCode': 'tyum',

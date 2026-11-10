@@ -1866,23 +1866,6 @@
     }
   },
   {
-    "id": "provinces-q114",
-    "embeds": "2025-26-mun-nnov-1",
-    "status": "accepted",
-    "fact": {
-      "table": "cities",
-      "row": "city-ru-moscow",
-      "ask": "name",
-      "where": {
-        "country": "俄罗斯"
-      }
-    },
-    "check": {
-      "verdict": "accept",
-      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
-    }
-  },
-  {
     "id": "provinces-q115",
     "embeds": "2024-25-mun-kursk-1",
     "status": "accepted",
@@ -1897,60 +1880,6 @@
     "check": {
       "verdict": "accept",
       "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
-    },
-    "exclude": [
-      "city-hongkong",
-      "city-lushun",
-      "city-qingdao",
-      "city-lanzhou",
-      "city-nyingchi",
-      "city-qamdo",
-      "city-nagqu"
-    ]
-  },
-  {
-    "id": "provinces-q116",
-    "embeds": "2024-25-shk-mosobl-8",
-    "status": "accepted",
-    "fact": {
-      "table": "cities",
-      "row": "city-chongqing",
-      "ask": "name",
-      "where": {
-        "country": "中国"
-      }
-    },
-    "exclude": [
-      "city-chengdu",
-      "city-xian",
-      "city-hongkong",
-      "city-lushun",
-      "city-qingdao",
-      "city-lanzhou",
-      "city-nyingchi",
-      "city-qamdo",
-      "city-nagqu"
-    ],
-    "check": {
-      "verdict": "accept",
-      "note": "Проверяющий (Opus, 2026-10-25) предложил правку набора, она внесена: Сиань в местных планах тоже называл себя финансовым центром запада — исключён вместе с Чэнду, чтобы не было второго верного ответа. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), принято автором 2026-10-25."
-    }
-  },
-  {
-    "id": "provinces-q117",
-    "embeds": "2021-22-mun-volog-1",
-    "status": "accepted",
-    "fact": {
-      "table": "cities",
-      "row": "city-beijing",
-      "ask": "name",
-      "where": {
-        "country": "中国"
-      }
-    },
-    "check": {
-      "verdict": "accept",
-      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
     },
     "exclude": [
       "city-hongkong",
@@ -2025,20 +1954,6 @@
       "where": {
         "kind": "省"
       }
-    },
-    "check": {
-      "verdict": "accept",
-      "note": "Проверяющий (Opus, 2026-10-25): второго верного ответа в наборе нет, подписи верны, пояснение не называет неверных вариантов, набор однородный; группа фактов против утечки проверена. Встраивание по проверке региональных вопросов (data/review/regions-dossier-check.md), порция 2, принято автором 2026-10-25."
-    }
-  },
-  {
-    "id": "provinces-q123",
-    "embeds": "2025-26-shk-mosobl-2",
-    "status": "accepted",
-    "fact": {
-      "table": "provinces",
-      "row": "prov-gansu",
-      "ask": "full"
     },
     "check": {
       "verdict": "accept",
@@ -2532,6 +2447,21 @@
     "check": {
       "verdict": "accept",
       "note": "Автор принял последние правки 17вопросов и09.11.2026пряморазрешил публикацию. Условия/варианты/ключи/подписи — immutableacceptedmanifestпартии8. Источники ивстраиваниепроверенытематически; общий выпуск проходитнезависимоеревью."
+    }
+  },
+  {
+    "id": "provinces-q156",
+    "status": "accepted",
+    "embeds": "addition-gap2-02",
+    "fact": {
+      "table": "provinces",
+      "row": "prov-xinjiang",
+      "ask": "cottonregionname"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
     }
   }
 ]

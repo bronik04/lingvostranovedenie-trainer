@@ -7,6 +7,7 @@
 Связи:
 - [[provinces.prov-sichuan]]
 - [[cuisine.cu-cn-mapo-doufu]]
+- [[cuisine.cs-chuan]]
 
 Вопросы:
 - taste: cuisine-q73 — Каким вкусом славится кухня 川菜?

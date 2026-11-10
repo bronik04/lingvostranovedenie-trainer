@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-10",
+  "fullBankBefore": 1269,
+  "fullBankAfter": 1286,
+  "acceptedQuestions": 17,
+  "optionsAndCaptions": 68,
+  "eachPoolExactly4": true,
+  "stemsQuestionZhOptionsIdsTextsOrderAndKeysPreserved": true,
+  "allOldStemsPoolsKeysExplanationsAndCaptionsPreserved": true,
+  "oldMetadataChangesOnly": {
+    "2015-16-reg-3": [
+      "factGroup"
+    ],
+    "2016-17-mun-yar-4": [
+      "factGroup"
+    ],
+    "2019-20-mun-q5616d1": [
+      "factGroup"
+    ],
+    "2021-22-mun-volog-8": [
+      "factGroup"
+    ],
+    "2021-22-reg-q814d54": [
+      "factGroup"
+    ],
+    "2023-24-mun-37": [
+      "factGroup"
+    ],
+    "2023-24-mun-spb-9": [
+      "factGroup"
+    ],
+    "2024-25-mun-nsk-2": [
+      "factGroup"
+    ],
+    "2024-25-mun-tula-7": [
+      "factGroup"
+    ],
+    "2025-26-mun-irk-8": [
+      "factGroup"
+    ],
+    "2025-26-shk-mosobl-6": [
+      "factGroup"
+    ],
+    "addition-b2-15": [
+      "factGroup"
+    ],
+    "cuisine-q68": [
+      "evidence"
+    ],
+    "cuisine-q73": [
+      "factGroup"
+    ],
+    "cuisine-q74": [
+      "evidence"
+    ],
+    "ethnos-q84": [
+      "factGroup"
+    ],
+    "money-q05": [
+      "factGroup"
+    ],
+    "nature-q153": [
+      "factGroup"
+    ],
+    "provinces-q100": [
+      "evidence"
+    ],
+    "provinces-q102": [
+      "evidence"
+    ],
+    "provinces-q33": [
+      "evidence"
+    ],
+    "provinces-q90": [
+      "evidence"
+    ],
+    "provinces-q94": [
+      "evidence"
+    ],
+    "provinces-q95": [
+      "evidence"
+    ],
+    "provinces-q96": [
+      "evidence"
+    ]
+  },
+  "visibleIdsExactlyUnchanged": true,
+  "visibleCount": 1108,
+  "builtHtmlPayloadMatchesOldVisibleIds": true,
+  "hiddenNewQuestions": 17,
+  "publicationAuthorized": false,
+  "publicationPerformed": false,
+  "remainingRealNewHintPairs": 0,
+  "rejectedAutomaticHintCandidates": [
+    {
+      "record": "nature/nature-q174",
+      "option": "o1",
+      "zh": "台风",
+      "gloss": "Тайфун — тропический циклон западной части Тихого океана.",
+      "isAnswer": false,
+      "other": "2024-25-mun-34",
+      "answer": [
+        "Тихий океан"
+      ],
+      "clues": [
+        "Океан"
+      ],
+      "row": false,
+      "recordDraft": false,
+      "otherDraft": false
+    }
+  ],
+  "protectedFilesVerified": 170,
+  "previousDraftsVerified": 232,
+  "captionChanges": 21,
+  "explanationChanges": 6,
+  "sourceGaps": [],
+  "languageRoutingHold": "№19 встроен в literature/phraseologytypes и скрыт. Отдельный языковой runtime-пул пока отсутствует; модуль чэнъюй требует другой тип задания. Не выпускать его в основном страноведческом пуле.",
+  "testEvidence": {
+    "python": "python-tests-final.log",
+    "node": "node-tests-final.log",
+    "build": "build.log",
+    "dossiers": "dossiers.log"
+  },
+  "testResults": [
+    {
+      "command": "python3 -m unittest discover -s test -t .",
+      "exitCode": 0,
+      "passed": 494,
+      "outputTail": [
+        "paper-2023-24: 20",
+        "paper-2024-25: 40",
+        "cifrium-2026-27-mun: 10",
+        "regions: 355",
+        "..........................................................................................................................................................................................................",
+        "----------------------------------------------------------------------",
+        "Ran 494 tests in 24.961s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "command": "node --test test/*.test.mjs",
+      "exitCode": 0,
+      "passed": 172,
+      "outputTail": [
+        "✔ надписи без капслока: тема со знаком над вопросом и в базе, заголовок итогов (2330.717159ms)",
+        "ℹ tests 172",
+        "ℹ suites 0",
+        "ℹ pass 172",
+        "ℹ fail 0",
+        "ℹ cancelled 0",
+        "ℹ skipped 0",
+        "ℹ todo 0",
+        "ℹ duration_ms 156328.430966"
+      ]
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "passed": null,
+      "outputTail": [
+        "paper-2024-25: 40",
+        "cifrium-2026-27-mun: 10",
+        "regions: 355",
+        "банк: 1286 записей, проверено 1286; отчёт: data/review/merge.md",
+        "региональные варианты: 103 вариантов, решений 1032",
+        "проставлено тем: 265; отчёт: data/review/taxonomy.md",
+        "карта покрытия сайта: вопросов 1108, тем 84, пустых 0; отчёт: data/review/coverage.md",
+        "сеть: досье 19, с каркасом 19, заметок 803; отчёт: data/review/network.md, граф: data/review/graph/",
+        "собрано: /Users/bronik04/.codex/worktrees/regional-batch-3-release/lingvostranovedenie-trainer/dist/lingvostranovedenie-trainer.html (4263 КБ), проверено 1108 из 1108, скрыто по data/site.json: 178"
+      ]
+    },
+    {
+      "command": "python3 scripts/dossiers.py",
+      "exitCode": 0,
+      "passed": null,
+      "outputTail": [
+        "nature: строк 154, вопросов 101, принято 101",
+        "painting: строк 131, вопросов 37, принято 37",
+        "people: строк 69, вопросов 39, принято 39",
+        "provinces: строк 117, вопросов 128, принято 128",
+        "sets: строк 52, вопросов 17, принято 17",
+        "space: строк 43, вопросов 16, принято 16",
+        "state: строк 34, вопросов 16, принято 16",
+        "подписи: пар с утечкой 2010, список — data/review/gloss-leaks.md (пишет сборка)",
+        "ошибок нет"
+      ]
+    }
+  ],
+  "headAfter": "b2805bb51a56476e1a3731b630ffca1f9f7b7018",
+  "headUnchanged": true,
+  "builtHtmlSha256": "558d0bd5efa661efc87148ab0b1b5a67df4b7a0cf0a8806bc64c5dfdfcf176a7"
+}

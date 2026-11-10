@@ -8500,6 +8500,233 @@
           ]
         }
       ]
+    },
+    "boardgames": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "game-xiangqi",
+          "name": {
+            "zh": "象棋",
+            "ru": [
+              "Сянци"
+            ],
+            "gloss": "Сянци — китайские шахматы; полководец и советники ограничены пределами «дворца»."
+          },
+          "sources": [
+            {
+              "title": "象棋 — 中国非物质文化遗产网",
+              "url": "https://www.ihchina.cn/project_details/13813",
+              "quote": "帅（将）及代表皇帝身边近卫的士只能在九宫中活动",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "Introduction to Chinese Chess (XiangQi) for International Chess Players — World Xiangqi Federation",
+              "url": "https://www.wxf-xiangqi.org/images/free_download_books/xiangqi_introduction_chessplayers_20150323.pdf",
+              "quote": "The palace is restricting the movement of the King and the Advisors, which cannot leave the palace.",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "game-weiqi",
+          "name": {
+            "zh": "围棋",
+            "ru": [
+              "Го, или вэйци"
+            ],
+            "gloss": "Го, или вэйци — камни ставят на пересечения линий и после хода не передвигают."
+          },
+          "sources": [
+            {
+              "title": "中国围棋规则 — 中国围棋协会",
+              "url": "https://wqwh.weiqi.org.cn/rules/",
+              "quote": "棋子下定后，不再向其他点移动。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "HOW TO PLAY GO — Nihon Ki-in",
+              "url": "https://www.nihonkiin.or.jp/english/howto/howto1.htm",
+              "quote": "A stone once placed cannot be moved.",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "game-chess",
+          "name": {
+            "zh": "国际象棋",
+            "ru": [
+              "Классические шахматы"
+            ],
+            "gloss": "Классические шахматы — победу приносит мат королю соперника."
+          },
+          "sources": [
+            {
+              "title": "FIDE Laws of Chess — article 1.4.1",
+              "url": "https://handbook.fide.com/chapter/E012023",
+              "quote": "checkmated’ the opponent’s king and to have won the game",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "Infinite Chess Handbook — FIDE",
+              "url": "https://infinitechess.fide.com/wp-content/uploads/2024/09/Infinite-Chess-Handbook-EN.pdf",
+              "quote": "Checkmating the opponent wins the game.",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "game-gomoku",
+          "name": {
+            "zh": "五子棋",
+            "ru": [
+              "Гомоку"
+            ],
+            "gloss": "Гомоку — игрок стремится выстроить непрерывный ряд из 5 своих камней."
+          },
+          "sources": [
+            {
+              "title": "五子棋 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=159627&la=0&powerMode=0",
+              "quote": "先把五個棋子連成一條線者為優勝。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "International Rules of Gomoku — Renju International Federation",
+              "url": "https://www.renju.net/gomokurules/",
+              "quote": "The aim of both players is to create an uninterrupted horizontal, vertical, or diagonal row of exactly 5 stones of their colour.",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
+    },
+    "dwellings": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "dwelling-siheyuan",
+          "name": {
+            "zh": "四合院",
+            "ru": [
+              "Сыхэюань"
+            ],
+            "gloss": "Сыхэюань — дома вокруг внутреннего двора, особенно характерные для Пекина.",
+            "ref": "ethnos/dwellings/dw-siheyuan"
+          },
+          "sources": [
+            {
+              "title": "北京传统民居——老北京四合院 — 首都之窗",
+              "url": "https://www.beijing.gov.cn/tsbj/sxym/202007/t20200713_1946380.html",
+              "quote": "正房、倒座房、东西厢房围绕中间庭院",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "北京为四合院“立传” — 光明日报（中国共产党新闻网）",
+              "url": "http://cpc.people.com.cn/n/2014/0520/c83083-25039984.html",
+              "quote": "四合院作为北京传统的民居形式，经元、明发展完善，至清代达到巅峰",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "dwelling-tulou",
+          "name": {
+            "zh": "土楼",
+            "ru": [
+              "Тулоу"
+            ],
+            "gloss": "Тулоу — большие общинные дома с земляными стенами, особенно известные в Фуцзяни.",
+            "ref": "ethnos/dwellings/dw-tulou"
+          },
+          "sources": [
+            {
+              "title": "Fujian Tulou — UNESCO World Heritage Centre",
+              "url": "https://whc.unesco.org/en/list/1113/",
+              "quote": "Fujian Tulou is a property of 46 buildings",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "世界遗产在福建：福建土楼 民居瑰宝 — 福建省文物局",
+              "url": "http://wwj.wlt.fujian.gov.cn/xwzx/wbyw/202107/t20210714_5648851.htm",
+              "quote": "福建土楼作为客家人引以为豪的建筑形式 … 2008年7月6日，“福建土楼”被联合国教科文组织世界遗产委员会列入世界文化遗产名录",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "dwelling-shikumen",
+          "name": {
+            "zh": "石库门",
+            "ru": [
+              "Шикумэнь"
+            ],
+            "gloss": "Шикумэнь — дома из кирпича и дерева, расположенные вдоль переулков."
+          },
+          "sources": [
+            {
+              "title": "Официальный портал Шанхая — кварталы шикумэнь",
+              "url": "https://english.shanghai.gov.cn/en-ScenicSpots/20231211/98e70b4d4c54401895104e4dee9f16d8.html",
+              "quote": "blending traditional Jiangnan-style residences from the south of the lower reaches of the Yangtze River with Western influences.",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "上海市人民政府 — 黄浦非遗：石库门里弄建筑营造技艺",
+              "url": "https://www.shanghai.gov.cn/hpfy/index.html",
+              "quote": "石库门里弄民居简称石库门，因厚重黑漆木门配以花岗石条砌筑门框，样貌形似旧时官府库房，故而得名。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "dwelling-yaodong",
+          "name": {
+            "zh": "窑洞",
+            "ru": [
+              "Яодун"
+            ],
+            "gloss": "Яодун — традиционные пещерные жилища Лёссового плато.",
+            "ref": "ethnos/dwellings/dw-yaodong"
+          },
+          "sources": [
+            {
+              "title": "中国黄土高原约3000万人居住在各类型窑洞中 — Синьхуа",
+              "url": "http://politics.people.com.cn/n/2013/0731/c70731-22390444.html",
+              "quote": "窑洞是这一地区农民的主要民居",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "文化中国行丨一孔窑洞，一抹乡愁 — 新华网",
+              "url": "http://www.news.cn/politics/20240916/5b5a1fa0fbf645189685364d06658f7e/c.html",
+              "quote": "窑洞，是黄土高原上的传统民居形式之一",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
     }
   }
 }

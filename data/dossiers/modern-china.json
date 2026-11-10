@@ -976,7 +976,6 @@
             }
           ],
           "olympiad": [
-            "2019-20-shk-mosobl-54",
             "2015-16-reg-6",
             "2017-18-zak-5",
             "2023-24-shk-mosobl-2"
@@ -1052,7 +1051,6 @@
             }
           ],
           "olympiad": [
-            "2016-17-mun-spb-4",
             "2020-21-mun-spb-7",
             "2021-22-zak-q38d33e",
             "2023-24-shk-mosobl-2"
@@ -1329,7 +1327,6 @@
             }
           ],
           "olympiad": [
-            "2021-22-mun-lenobl-3",
             "2025-26-mun-irk-3"
           ],
           "core": true,
@@ -2073,9 +2070,7 @@
               "checkedAt": "2026-10-25"
             }
           ],
-          "olympiad": [
-            "2021-22-mun-lenobl-9"
-          ],
+          "olympiad": [],
           "core": true,
           "skipSides": [
             "name",
@@ -2259,9 +2254,7 @@
               "checkedAt": "2026-10-25"
             }
           ],
-          "olympiad": [
-            "2024-25-shk-mosobl-16"
-          ],
+          "olympiad": [],
           "core": true,
           "skipSides": [
             "name"
@@ -3837,6 +3830,230 @@
             }
           ],
           "core": false
+        }
+      ]
+    },
+    "documents": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "document-passport",
+          "name": {
+            "zh": "护照",
+            "ru": [
+              "Паспорт"
+            ],
+            "gloss": "Паспорт — документ для пересечения границы и подтверждения гражданства за рубежом."
+          },
+          "sources": [
+            {
+              "title": "国家移民管理局 — 中华人民共和国护照法",
+              "url": "https://www.nia.gov.cn/n741440/n741547/c1014017/content.html",
+              "quote": "出入国境和在国外证明国籍和身份的证件",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "护照常识 — 国家体育总局",
+              "url": "https://www.sport.gov.cn/n322/n385/n435/c247993/content.html",
+              "quote": "护照是一个国家的公民出入本国国境或到国外旅行、居留时, 由本国颁发的证明该公民国籍和身份的证件。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "document-hukou-book",
+          "name": {
+            "zh": "居民户口簿",
+            "ru": [
+              "Семейная регистрационная книжка"
+            ],
+            "gloss": "Семейная регистрационная книжка — указывает состав домохозяйства и родственные связи."
+          },
+          "sources": [
+            {
+              "title": "石狮市人民政府 — 居民户口簿",
+              "url": "https://www.shishi.gov.cn/zwgk/ztzl/lhzt/lyxx/hjgl/202105/t20210510_2555544.htm",
+              "quote": "具有证明公民身份状况和家庭成员间相互关系的效力",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "关于收养家庭户口本登记事宜的提案答复 — 辽宁省公安厅",
+              "url": "https://gat.ln.gov.cn/gat/zwgk/zfxxgk/fdzdgknr/jyta/szxta/szxsejechy2019n/48F1106A419B4D5E8D3065A832AE5ED5/index.shtml",
+              "quote": "《居民户口簿》中“与户主关系”一栏，户内其他人员需按本人与户主的血亲或姻亲关系等写明具体称谓",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "document-id-card",
+          "name": {
+            "zh": "居民身份证",
+            "ru": [
+              "Шэньфэньчжэн"
+            ],
+            "gloss": "Шэньфэньчжэн — удостоверение личности; карта 2-го поколения содержит электронный чип."
+          },
+          "sources": [
+            {
+              "title": "北京市公安局 — 40年变迁背后，两代身份证的北京试点",
+              "url": "https://gaj.beijing.gov.cn/xxfb/jwbd/202410/t20241002_3911265.html",
+              "quote": "逐渐发展成带有芯片的可机读防伪卡片",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "北京市公安局 — 公民身份号码的组成",
+              "url": "https://gaj.beijing.gov.cn/hudong/rddf/202003/t20200331_1771804.html",
+              "quote": "公民身份号码由18位组成",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "document-registration-proof",
+          "name": {
+            "zh": "户籍证明",
+            "ru": [
+              "Справка о регистрации"
+            ],
+            "gloss": "Справка о регистрации — дополнительное подтверждение личности и семейных связей."
+          },
+          "sources": [
+            {
+              "title": "南华县人民政府 — 云南省公安机关户籍业务办理工作规范",
+              "url": "https://www.ynnh.gov.cn/info/38573/254186.htm",
+              "quote": "证明公民身份和家庭关系的法定补充证明材料",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "福建省居民户口登记管理办法 — 福建省人民政府",
+              "url": "https://www.fujian.gov.cn/zwgk/zfxxgk/zfxxgkzc/fjsgzk/202112/t20211216_5794839.htm",
+              "quote": "第六十五条 公民需要证明下列事项之一，凭居民户口簿、居民身份证或者护照均无法证明的，可以申请户口登记机关出具户籍证明",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
+    },
+    "travelperiods": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "travel-shuyun",
+          "name": {
+            "zh": "暑运",
+            "ru": [
+              "Шуюнь"
+            ],
+            "gloss": "Шуюнь — летний сезон перевозок, обычно в июле и августе."
+          },
+          "sources": [
+            {
+              "title": "武汉市交通运输局 — 暑运期间，南航在汉运送旅客153万人次",
+              "url": "https://jtj.wuhan.gov.cn/jtzx/zwdt/202609/t20260903_2842724_slhxq.shtml",
+              "quote": "暑运从7月1日开始到8月31日结束",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "暑运民航运输旅客1.47亿人次 单日客运量创历史新高 — 中国民航局",
+              "url": "https://www.caac.gov.cn/PHONE/XWZX/MHYW/202509/t20250901_228478.html",
+              "quote": "2025年暑运（7月1日至8月31日），全国民航累计运输旅客1.47亿人次",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "travel-chunyun",
+          "name": {
+            "zh": "春运",
+            "ru": [
+              "Чуньюнь"
+            ],
+            "gloss": "Чуньюнь — обычно 15 дней до Праздника весны и 25 после него."
+          },
+          "sources": [
+            {
+              "title": "交通运输部 — 2026年1月例行新闻发布会",
+              "url": "https://www.mot.gov.cn/xinwen/xinwenfabuhui/202601/t20260130_4199352.html",
+              "quote": "春节前15天、春节后25天",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "深圳市春运办多措并举 为广大市民群众提供安全、健康、便捷、舒心的春运 — 深圳市交通运输局",
+              "url": "https://jtys.sz.gov.cn/zwgk/jtzx/gzdt/content/post_10382600.html",
+              "quote": "春节前15天，春节后25天，历时40天。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "travel-goldenweek",
+          "name": {
+            "zh": "黄金周",
+            "ru": [
+              "Золотая неделя"
+            ],
+            "gloss": "«Золотая неделя» — продолжительные праздничные каникулы с большим потоком туристов."
+          },
+          "sources": [
+            {
+              "title": "广州市文化广电旅游局 — 2026国庆假期文旅统计",
+              "url": "https://wglj.gz.gov.cn/gkmlpt/content/11/11031/post_11031445.html",
+              "quote": "国庆黄金周期间，全市累计接待游客1605万人次",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "民航总局部署“十一”黄金周航空运输保障工作 — 中国民航局",
+              "url": "https://www.caac.gov.cn/PHONE/XWZX/MHYW/200709/t20070926_11633.html",
+              "quote": "做好黄金周航空运输保障工作，对于满足广大游客出行，构建和谐社会和建设和谐民航具有重要意义。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "travel-shortholiday",
+          "name": {
+            "zh": "小长假",
+            "ru": [
+              "Короткие праздничные каникулы"
+            ],
+            "gloss": "Короткие праздничные каникулы — например, во время Цинмина или Дуаньу."
+          },
+          "sources": [
+            {
+              "title": "国家发展改革委 — ответ о праздничных каникулах",
+              "url": "https://www.ndrc.gov.cn/xxgk/jianyitianfuwen/qgrddbjyfwgk/202107/t20210708_1288439_ext.html",
+              "quote": "清明节、劳动节、端午节、中秋节",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "关于政协十二届全国委员会第五次会议第1256号等提案答复的函 — 国家发展改革委",
+              "url": "https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=15362",
+              "quote": "调整元旦、清明、劳动节、端午、中秋的相邻周末，形成5个连续3天的小长假。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
         }
       ]
     }

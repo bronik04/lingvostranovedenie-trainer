@@ -4,6 +4,7 @@
 
 Связи:
 - [[nature.wat-huanghe]]
+- [[provinces.prov-hebei]]
 
 Вопросы:
 - центр: provinces-q33 — Какой город — административный центр провинции Хэбэй?

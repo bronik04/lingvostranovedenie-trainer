@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-10",
+  "fullBankBefore": 1286,
+  "fullBankAfter": 1146,
+  "visibleBefore": 1108,
+  "visibleAfter": 1124,
+  "releasedIds": [
+    "addition-gap2-01",
+    "addition-gap2-02",
+    "addition-gap2-03",
+    "addition-gap2-04",
+    "addition-gap2-05",
+    "addition-gap2-06",
+    "addition-gap2-07",
+    "addition-gap2-08",
+    "addition-gap2-09",
+    "addition-gap2-10",
+    "addition-gap2-11",
+    "addition-gap2-12",
+    "addition-gap2-13",
+    "addition-gap2-14",
+    "addition-gap2-15",
+    "addition-gap2-17"
+  ],
+  "hidden19": true,
+  "removedWorkingBank": 140,
+  "unsuitableSourceTasksDiscarded": 279,
+  "removedSourceAliasesDiscarded": 46,
+  "reserveAfter": 38,
+  "retainedReserveBlocksExact": true,
+  "preservedManualOnly": 19,
+  "preservedRewriteDrafts": [
+    "2019-20-mun-kgd-10",
+    "2025-26-mun-sverd-58"
+  ],
+  "narrow60Unchanged": true,
+  "primaryAndChengyuFilesUnchanged": 78,
+  "acceptedQuestionStemOptionIdTextOrderAndKeysPreserved": true,
+  "onlyCaptionChange": {
+    "id": "addition-gap2-04",
+    "optionId": "o2",
+    "zh": "展览记录",
+    "before": "Сведения о том, когда и где произведение показывали публике.",
+    "after": "Записи о выставках — когда и где произведение показывали публике."
+  },
+  "pinyinComplete": true,
+  "pinyinOverride": {
+    "五子棋": "wǔ zǐ qí"
+  },
+  "localHtmlSha256": "8d9b3cf1e0faeac64bb50265d5e5244849dd751a3a6d4d560392501d4a5242a6",
+  "tests": {
+    "python": {
+      "passed": 496,
+      "exit": 0
+    },
+    "nodeChrome": {
+      "passed": 172,
+      "exit": 0
+    },
+    "dossiers": {
+      "exit": 0
+    },
+    "discardedStatusRegression": "2 tests observed RED then GREEN; original integration alias failure fixed at source decision and full suite green"
+  },
+  "publicationStatus": "ready-not-yet-deployed"
+}

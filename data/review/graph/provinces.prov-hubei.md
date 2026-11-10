@@ -5,6 +5,7 @@
 Связи:
 - [[provinces.city-wuhan]]
 - [[nature.lake-dongtinghu]]
+- [[provinces.prov-hubei]]
 
 Вопросы:
 - название: 2018-19-zak-3 — Какую китайскую провинцию называют «провинцией тысячи озёр»?

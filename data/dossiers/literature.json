@@ -8597,6 +8597,398 @@
           "olympiad": []
         }
       ]
+    },
+    "readingcorners": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "reading-top-left",
+          "name": {
+            "zh": "左上角",
+            "ru": [
+              "Левый верхний угол"
+            ],
+            "gloss": "Левый верхний угол — начало страницы с обычным современным горизонтальным набором."
+          },
+          "sources": [
+            {
+              "title": "W3C — 中文排版需求, 橫排與直排的主要差異點",
+              "url": "https://w3c.github.io/clreq/zh/",
+              "quote": "橫排時：文字由左而右，行由上而下排列。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "CSS Writing Modes Level 3 — W3C",
+              "url": "https://www.w3.org/TR/css-writing-modes-3/",
+              "quote": "Top-to-bottom block flow direction.",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "勞動部 — 標示文字書寫方式",
+              "url": "https://laws.mol.gov.tw/FLAW/FLAWDOC01.aspx?flno=6&id=FL015035",
+              "quote": "一、直式：由上而下，由右而左。二、橫式：由左而右。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "reading-top-right",
+          "name": {
+            "zh": "右上角",
+            "ru": [
+              "Правый верхний угол"
+            ],
+            "gloss": "Правый верхний угол — читают вниз, затем переходят к столбцу слева."
+          },
+          "sources": [
+            {
+              "title": "W3C — 中文排版需求, 橫排與直排的主要差異點",
+              "url": "https://w3c.github.io/clreq/zh/",
+              "quote": "直排時：文字由上而下，行由右而左排列。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "CSS Writing Modes Level 3 — W3C",
+              "url": "https://www.w3.org/TR/css-writing-modes-3/",
+              "quote": "Right-to-left block flow direction.",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "勞動部 — 標示文字書寫方式",
+              "url": "https://laws.mol.gov.tw/FLAW/FLAWDOC01.aspx?flno=6&id=FL015035",
+              "quote": "一、直式：由上而下，由右而左。二、橫式：由左而右。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "reading-bottom-left",
+          "name": {
+            "zh": "左下角",
+            "ru": [
+              "Левый нижний угол"
+            ],
+            "gloss": "Левый нижний угол — конец полностью заполненной страницы с вертикальным набором."
+          },
+          "sources": [
+            {
+              "title": "W3C — 中文排版需求, 橫排與直排的主要差異點",
+              "url": "https://w3c.github.io/clreq/zh/",
+              "quote": "直排時：文字由上而下，行由右而左排列。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "CSS Writing Modes Level 3 — W3C",
+              "url": "https://www.w3.org/TR/css-writing-modes-3/",
+              "quote": "Right-to-left block flow direction.",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "勞動部 — 標示文字書寫方式",
+              "url": "https://laws.mol.gov.tw/FLAW/FLAWDOC01.aspx?flno=6&id=FL015035",
+              "quote": "一、直式：由上而下，由右而左。二、橫式：由左而右。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "reading-bottom-right",
+          "name": {
+            "zh": "右下角",
+            "ru": [
+              "Правый нижний угол"
+            ],
+            "gloss": "Правый нижний угол — конец первого полного столбца при вертикальном наборе."
+          },
+          "sources": [
+            {
+              "title": "W3C — 中文排版需求, 橫排與直排的主要差異點",
+              "url": "https://w3c.github.io/clreq/zh/",
+              "quote": "直排時：文字由上而下，行由右而左排列。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "CSS Writing Modes Level 3 — W3C",
+              "url": "https://www.w3.org/TR/css-writing-modes-3/",
+              "quote": "Right-to-left block flow direction.",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "勞動部 — 標示文字書寫方式",
+              "url": "https://laws.mol.gov.tw/FLAW/FLAWDOC01.aspx?flno=6&id=FL015035",
+              "quote": "一、直式：由上而下，由右而左。二、橫式：由左而右。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
+    },
+    "narrativegenres": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "narrative-yuyan",
+          "name": {
+            "zh": "寓言",
+            "ru": [
+              "Басня или притча"
+            ],
+            "gloss": "Басня или притча — иносказательное поучение; известный пример — басни Эзопа."
+          },
+          "sources": [
+            {
+              "title": "教育部《國語辭典簡編本》 — 寓言",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=44476&la=0&powerMode=0",
+              "quote": "以淺近假託的故事或自然物的擬人手法，表達某種哲理或隱含訓誨教育作用的文體。例《伊索寓言》",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《重編國語辭典修訂本》 — 寓言",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=164194&la=1&powerMode=0",
+              "quote": "以淺近假託的故事或用擬人手法，表達某種哲理的文學。常含有訓誨的教育作用",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《成語典》 — 狐假虎威",
+              "url": "https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=-32&la=1&webMd=1",
+              "quote": "所有動物看到都嚇得逃走。老虎以為牠們真的是怕狐狸，而不知道其實野獸們怕的是牠自己。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "吉林大学国际语言学院 — 成语故事：狐假虎威",
+              "url": "https://gjyyxy.jlu.edu.cn/info/1017/1097.htm",
+              "quote": "狐狸假借老虎的威势吓唬其它野兽。比喻仰仗或倚仗别人的权势来欺压、恐吓人。",
+              "checkedAt": "2026-11-10",
+              "authority": "academic"
+            }
+          ]
+        },
+        {
+          "id": "narrative-shenhua",
+          "name": {
+            "zh": "神话",
+            "ru": [
+              "Миф"
+            ],
+            "gloss": "Миф — о богах, происхождении мира, обычаев и верований."
+          },
+          "sources": [
+            {
+              "title": "教育部《重編國語辭典修訂本》 — 神話",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=131427&la=0&powerMode=0",
+              "quote": "關於天地的初創、神靈的奇蹟",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《國語辭典簡編本》 — 神話",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=34703&la=0&powerMode=0",
+              "quote": "關於天地的初創、神靈的奇蹟，以及說明風俗習慣、禮儀和信仰的起源與意義的故事。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "narrative-chuanshuo",
+          "name": {
+            "zh": "传说",
+            "ru": [
+              "Народное предание"
+            ],
+            "gloss": "Народное предание — о человеке или событии, часто связанное с историей."
+          },
+          "sources": [
+            {
+              "title": "教育部《國語辭典簡編本》 — 傳說",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=32858&la=0&powerMode=0",
+              "quote": "內容多附會史實而有所改易",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《重編國語辭典修訂本》 — 傳說",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=126027&la=0&powerMode=0",
+              "quote": "流傳在民間，關於某人、某事的敘述。內容多附會史實而有所改易，其中亦常夾雜神話。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "narrative-tonghua",
+          "name": {
+            "zh": "童话",
+            "ru": [
+              "Детская сказка"
+            ],
+            "gloss": "Детская сказка — фантастические события развивают воображение."
+          },
+          "sources": [
+            {
+              "title": "教育部《國語辭典簡編本》 — 童話",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=12052&la=0&powerMode=0",
+              "quote": "為兒童編寫的故事",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《重編國語辭典修訂本》 — 童話",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=55883&la=0&powerMode=0",
+              "quote": "為兒童編寫的故事，適於兒童心理與興趣，行文淺易，多敘述神奇美妙的故事",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
+    },
+    "phraseologytypes": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "phraseology-chengyu",
+          "name": {
+            "zh": "成语",
+            "ru": [
+              "Чэнъюи"
+            ],
+            "gloss": "Чэнъюи — устойчивые обороты, часто восходящие к старым текстам и историям."
+          },
+          "sources": [
+            {
+              "title": "教育部《重編國語辭典修訂本》 — 成語語詞基本體例",
+              "url": "https://dict.revised.moe.edu.tw/page.jsp?ID=20",
+              "quote": "成語概有典源",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《國語辭典簡編本》 — 成語",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=32336&la=0&powerMode=0",
+              "quote": "語言中簡短有力的固定詞組。可作為句子的成分，形式不一，以四言為主。一般而言都有出處來源與引申的比喻義",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "phraseology-guanyongyu",
+          "name": {
+            "zh": "惯用语",
+            "ru": [
+              "Разговорные идиомы"
+            ],
+            "gloss": "Разговорные идиомы — привычные устойчивые выражения разговорной речи."
+          },
+          "sources": [
+            {
+              "title": "教育部《重編國語辭典修訂本》 — 慣用語詞基本體例",
+              "url": "https://dict.revised.moe.edu.tw/page.jsp?ID=21",
+              "quote": "形式或似一般複詞，或似成語",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《國語辭典簡編本》 — 詞彙體系（二）慣用語",
+              "url": "https://dict.concised.moe.edu.tw/page.jsp?ID=24&la=1&powerMode=0",
+              "quote": "缺少成語的特徵（如典故憑據、多層表義作用），形式卻像成語的詞組",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《重編國語辭典修訂本》 — 慣用語",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=74209&la=0&powerMode=0",
+              "quote": "固定語的一種。口語中習慣的用語，形似成語，但沒有典故來源",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "phraseology-xiehouyu",
+          "name": {
+            "zh": "歇后语",
+            "ru": [
+              "Двучастное иносказание"
+            ],
+            "gloss": "Двучастное иносказание — неожиданная разгадка может создавать шутливый эффект."
+          },
+          "sources": [
+            {
+              "title": "教育部《重編國語辭典修訂本》 — 歇後語語詞基本體例",
+              "url": "https://dict.revised.moe.edu.tw/page.jsp?ID=23",
+              "quote": "前半部的前提如同謎面…後半部的說明則像謎底…使意念的說明詼諧靈活，妙趣橫生。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《國語辭典簡編本》 — 歇後語",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=26696&la=0&powerMode=0",
+              "quote": "通常由兩個部分組成，前半部如同謎題，作為引導，後半部則像謎底，為表達的重點。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "长春理工大学《应用写作》 — 歇后语",
+              "url": "https://yyxz.cust.edu.cn/xyyywxz/xwxz/39afdf973bf5496889eb1265ca21fbee.htm",
+              "quote": "歇后语由前后两部分组成。前一部分起“引子”作用，像谜语，后一部分起“后衬”的作用，像谜底，前后两部分贴切顺畅。",
+              "checkedAt": "2026-11-10",
+              "authority": "academic"
+            }
+          ]
+        },
+        {
+          "id": "phraseology-yanyu",
+          "name": {
+            "zh": "谚语",
+            "ru": [
+              "Пословицы"
+            ],
+            "gloss": "Пословицы — устойчивые народные изречения."
+          },
+          "sources": [
+            {
+              "title": "教育部《重編國語辭典修訂本》 — 諺語語詞基本體例",
+              "url": "https://dict.revised.moe.edu.tw/page.jsp?ID=22",
+              "quote": "包含一般之諺語、俗語、名言等三類固定語",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《國語辭典簡編本》 — 諺語",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=41867&la=0&powerMode=0",
+              "quote": "民間流傳的俗語。句形簡短、音調和諧。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
     }
   }
 }

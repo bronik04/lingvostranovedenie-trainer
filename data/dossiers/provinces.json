@@ -18,7 +18,8 @@
         "tarimregionname": "zh",
         "russiaborderregionname": "zh",
         "goubuliregionname": "zh",
-        "paomoregionname": "zh"
+        "paomoregionname": "zh",
+        "cottonregionname": "zh"
       },
       "sides": [
         "abbr",
@@ -326,29 +327,36 @@
               "title": "河北概况 — 河北省人民政府网（转载于商务部中国投资指南网）",
               "url": "https://fdi.mofcom.gov.cn/resource/pdf/2020/10/27/39b56b9a72e44bfd96303db339c340e4.pdf",
               "quote": "河北省人民政府网 河北（hé běi），简称冀，省会石家庄，河北在战国时期大部分属于赵国和燕国，所以河北又被称为燕赵之地。",
-              "authority": "official",
-              "checkedAt": "2026-10-16"
+              "checkedAt": "2026-10-16",
+              "authority": "official"
             },
             {
               "title": "河北简称“冀”代称“燕赵”与大禹治水有关 — 中国新闻网",
               "url": "https://www.chinanews.com.cn/n/2003-09-16/26/347180.html",
               "quote": "中国各省的名称，细细研究起来，都有其一定的含义和来源。“河北”这个名称，是因为它位于中国第二条大河黄河下游之北而得名。",
-              "authority": "official",
-              "checkedAt": "2026-10-16"
+              "checkedAt": "2026-10-16",
+              "authority": "official"
             },
             {
               "title": "“地名里的河北”微视频丨河北为啥简称冀？— 新华网河北频道",
               "url": "http://www.he.news.cn/20230608/140ca7a91c0d47d080685fb6b339ecc9/c.html",
               "quote": "冀遂被称为九州之首 清末电报局要求各省报送简称 当时的河北报送了“冀” 并沿用至今",
-              "authority": "official",
-              "checkedAt": "2026-10-16"
+              "checkedAt": "2026-10-16",
+              "authority": "official"
             },
             {
               "title": "河北概况 — 中国新闻网",
               "url": "https://www.chinanews.com.cn/gj/kong/news/2007/04-21/921052.shtml",
               "quote": "河北省历史悠久，相传中国夏朝(约公元前22世纪末-约公元前17世纪初)时，划中国为九州，\"冀州\"为九州之首，今河北地域即属冀州。这也是河北的简称\"冀\"的由来。",
-              "authority": "official",
-              "checkedAt": "2026-10-16"
+              "checkedAt": "2026-10-16",
+              "authority": "official"
+            },
+            {
+              "title": "国家统计局 — Bulletin on the National Cotton Output in 2025",
+              "url": "https://www.stats.gov.cn/english/PressRelease/202512/t20251229_1962174.html",
+              "quote": "National Total ... 664.1; Hebei ... 6.9; Shandong ... 12.8; Hubei ... 9.2; Xinjiang ... 616.5",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
             }
           ],
           "olympiad": [],
@@ -356,7 +364,15 @@
           "skipSides": [
             "kind",
             "named"
-          ]
+          ],
+          "cottonregionname": {
+            "zh": "河北",
+            "ru": [
+              "Хэбэй"
+            ],
+            "gloss": "Хэбэй — один из хлопководческих регионов; в 2025 году дал менее 2% сбора страны.",
+            "ref": "provinces/provinces/prov-hebei"
+          }
         },
         {
           "id": "prov-shanxi",
@@ -831,30 +847,36 @@
               "title": "资料：山东名称的由来及行政区划 — 中国新闻网（大众网）",
               "url": "https://www.chinanews.com.cn/news/2004/2004-09-17/26/484903.shtml",
               "quote": "由于齐、鲁两国发达的经济、政治、文化在中国历史上的重大影响，所以山东又称“齐鲁之邦”，并以“鲁”为山东省的简称。山东作为地理名称始于战国时期，当时，泛指太行山以东的地区。山东作为政区名称，始于金代(公元1115——1234)。元朝(公元1206——1368)置山东道，明朝(公元1368——1644)设山东布政使司，形成与今天山东省大体相同的版图，大部分县名沿用至今。清朝(公元1616——1911)正式设山东省，治所在济南府。新中国成立后，经过几次调整，山东省形成了目前的行政区划。山东省现辖17个市，139个县、县级市和市辖区。山东省的省会济南市",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
             },
             {
               "title": "山东，一个地理名词的文化远行 — 山东宣传网",
               "url": "https://www.sdxc.gov.cn/jzyl/ztxcsy/202606/t20260608_17815653.htm",
               "quote": "山东，作为半岛半陆的省份，因处太行山以东而得名，又因历史上的两大诸侯国而别称“齐鲁”。",
-              "authority": "official",
-              "checkedAt": "2026-10-16"
+              "checkedAt": "2026-10-16",
+              "authority": "official"
             },
             {
               "title": "山东省概况 — 山东省人民政府（转载于商务部中国投资指南网）",
               "url": "https://fdi.mofcom.gov.cn/resource/pdf/2019/12/28/6f02e8d84b7d4a95ae5185efb55e0ede.pdf",
               "quote": "总面积 15.71 万平方公里，约占全国总面积的 1.64%。省会为济南市。",
-              "authority": "official",
-              "checkedAt": "2026-10-16"
+              "checkedAt": "2026-10-16",
+              "authority": "official"
             },
             {
               "title": "“半岛1号”赋能，“青岛模式”走向全国 — 青岛政务网",
               "url": "https://www.qingdao.gov.cn/ywdt/tpxw/202608/t20260802_10691507.shtml",
               "quote": "山东是海洋大省，濒临渤海和黄海。",
               "checkedAt": "2026-11-07",
-              "authority": "official",
-              "verificationMethod": "Verified exact official indexed passage via web search on 2026-11-07."
+              "authority": "official"
+            },
+            {
+              "title": "国家统计局 — Bulletin on the National Cotton Output in 2025",
+              "url": "https://www.stats.gov.cn/english/PressRelease/202512/t20251229_1962174.html",
+              "quote": "National Total ... 664.1; Hebei ... 6.9; Shandong ... 12.8; Hubei ... 9.2; Xinjiang ... 616.5",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
             }
           ],
           "olympiad": [
@@ -872,6 +894,14 @@
               "Шаньдун"
             ],
             "gloss": "Шаньдун — её берега омывают Бохайское и Жёлтое моря."
+          },
+          "cottonregionname": {
+            "zh": "山东",
+            "ru": [
+              "Шаньдун"
+            ],
+            "gloss": "Шаньдун — один из хлопководческих регионов; в 2025 году дал менее 2% сбора страны.",
+            "ref": "provinces/provinces/prov-shandong"
           }
         },
         {
@@ -1382,30 +1412,36 @@
               "title": "湖北省情概况（湖北省人民政府门户网站）— 商务部外资司",
               "url": "https://fdi.mofcom.gov.cn/resource/pdf/2019/12/28/a3f4603a11e244cdb1cd1f75d13b4ca6.pdf",
               "quote": "湖北省位于中华人民共和国的中部，简称鄂。",
-              "authority": "official",
-              "checkedAt": "2026-10-16"
+              "checkedAt": "2026-10-16",
+              "authority": "official"
             },
             {
               "title": "湖北省情概况 — 中国湖北人大",
               "url": "https://www.hppc.gov.cn/ztzl/znlsrd/ythjl/1859480276204695553.html",
               "quote": "省会武汉素有“九省通衢”之称，是全国重要的交通、通信枢纽。",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
             },
             {
               "title": "湖北省 — 福建省粮食和物资储备局（协作省展示区）",
               "url": "https://lsj.fujian.gov.cn/ztzl/yslqh/xzszsq/202606/t20260612_7162382.htm",
               "quote": "湖北省，位于中国中部，长江中下游，洞庭湖以北，故名湖北，简称鄂。",
-              "authority": "official",
-              "checkedAt": "2026-10-16"
+              "checkedAt": "2026-10-16",
+              "authority": "official"
             },
             {
               "title": "武汉十大名点之热干面×蛋酒 — 武汉市商务局",
               "url": "https://sw.wuhan.gov.cn/xwdt/mtbd/202407/t20240731_2435699.shtml",
               "quote": "手工掸好的面足够筋道，顾客上门时简单焯水后再加入芝麻酱、味精、酱油和萝卜丁就成了。……吃完碗底没有一点汤才对味。",
-              "authority": "official",
               "checkedAt": "2026-11-08",
-              "verificationMethod": "reused-author-accepted-source-not-freshly-fetched; manifest #2 / o3"
+              "authority": "official"
+            },
+            {
+              "title": "国家统计局 — Bulletin on the National Cotton Output in 2025",
+              "url": "https://www.stats.gov.cn/english/PressRelease/202512/t20251229_1962174.html",
+              "quote": "National Total ... 664.1; Hebei ... 6.9; Shandong ... 12.8; Hubei ... 9.2; Xinjiang ... 616.5",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
             }
           ],
           "olympiad": [
@@ -1428,6 +1464,14 @@
               "Хубэй"
             ],
             "gloss": "Хубэй — уханьскую лапшу жэганьмянь смешивают с кунжутной пастой"
+          },
+          "cottonregionname": {
+            "zh": "湖北",
+            "ru": [
+              "Хубэй"
+            ],
+            "gloss": "Хубэй — один из хлопководческих регионов; в 2025 году дал менее 2% сбора страны.",
+            "ref": "provinces/provinces/prov-hubei"
           }
         },
         {
@@ -2555,45 +2599,57 @@
               "title": "新疆（2017年度经济社会发展概况） — 中国网",
               "url": "http://about.china.com.cn/2020-05/07/content_75971762.htm",
               "quote": "新疆维吾尔自治区，简称新，位于亚欧大陆中部，地处中国西北边陲，总面积166万平方公里，占全国陆地总面积的六分之一",
-              "authority": "official",
-              "checkedAt": "2026-10-16"
+              "checkedAt": "2026-10-16",
+              "authority": "official"
             },
             {
               "title": "乌鲁木齐概况 — 中国网·一带一路网",
               "url": "http://ydyl.china.com.cn/2016-11/01/content_39614976.htm",
               "quote": "乌鲁木齐是新疆维吾尔自治区首府，全疆政治、经济、文化中心",
-              "authority": "official",
-              "checkedAt": "2026-10-16"
+              "checkedAt": "2026-10-16",
+              "authority": "official"
             },
             {
               "title": "新疆维吾尔自治区概况 — 中华人民共和国驻日本国大使馆",
               "url": "https://jp.china-embassy.gov.cn/ztnew/xbdkfnew/xbgknew/200402/t20040205_9460733.htm",
               "quote": "新疆维吾尔自治区位于中国西北部，地处亚欧大陆中心，面积166万多平方公里",
-              "authority": "official",
-              "checkedAt": "2026-10-16"
+              "checkedAt": "2026-10-16",
+              "authority": "official"
             },
             {
               "title": "省级行政单位（来源：新华网） — 中华人民共和国驻哈萨克斯坦大使馆",
               "url": "https://kz.china-embassy.gov.cn/chn/gyzg/zggk/xingzhengquhua/201008/t20100804_1364739.htm",
-              "authority": "official",
               "quote": "自治区——是中国少数民族聚居地方实行民族区域自治而建立的相当于省的行政区域。新中国成立后共建立了５个自治区：内蒙古自治区、新疆维吾尔自治区、广西壮族自治区、宁夏回族自治区、西藏自治区。",
-              "checkedAt": "2026-10-16"
+              "checkedAt": "2026-10-16",
+              "authority": "official"
             },
             {
               "title": "新疆的若干历史问题（国务院新闻办公室白皮书）— 中国政府网",
               "url": "https://www.gov.cn/zhengce/2019-07/21/content_5412300.htm",
               "quote": "1884年在新疆地区建省，并取“故土新归”之意，改称西域为“新疆”。",
-              "authority": "official",
-              "checkedAt": "2026-10-17"
+              "checkedAt": "2026-10-17",
+              "authority": "official"
             },
             {
               "title": "新疆边境扶贫扩大试点规划 — 新疆维吾尔自治区人民政府",
               "url": "https://www.xinjiang.gov.cn/xinjiang/gfxwj/201104/dbcbf0b1cb0e49258ef2e4a1e3ce53a0.shtml",
               "quote": "中俄边界总长约为55公里",
-              "authority": "official",
-              "verificationMethod": "reused-accepted-source-bundle-not-freshly-fetched",
               "checkedAt": "2026-11-08",
-              "reusedFrom": "data/review/2026-11-08-regional-batch-5-proposals.json / reviewNumber 4 / o1"
+              "authority": "official"
+            },
+            {
+              "title": "国家统计局 — Bulletin on the National Cotton Output in 2025",
+              "url": "https://www.stats.gov.cn/english/PressRelease/202512/t20251229_1962174.html",
+              "quote": "National Total ... 664.1; Hebei ... 6.9; Shandong ... 12.8; Hubei ... 9.2; Xinjiang ... 616.5",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "新疆维吾尔自治区人民政府 — 2025年国民经济运行情况新闻发布会",
+              "url": "https://www.xinjiang.gov.cn/xinjiang/xwfb/202602/6885d60389d442fa8df58c46ebb72784.shtml",
+              "quote": "2025年，新疆棉花总产量616.5万吨，首次突破600万吨，比上年增加47.9万吨，增长8.4%，在全国占比达92.8%。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
             }
           ],
           "olympiad": [
@@ -2614,6 +2670,14 @@
               "Синьцзян"
             ],
             "gloss": "Синьцзян — на его участке общая граница с Россией имеет длину около 55 км"
+          },
+          "cottonregionname": {
+            "zh": "新疆",
+            "ru": [
+              "Синьцзян"
+            ],
+            "gloss": "Синьцзян — в 2025 году дал более 90% хлопка страны.",
+            "ref": "provinces/provinces/prov-xinjiang"
           }
         },
         {

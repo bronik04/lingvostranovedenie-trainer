@@ -1071,5 +1071,35 @@
       "verdict": "accept",
       "note": "Автор принял вопрос и все четыре варианта 2026-11-08. Встраивание и публикация всех принятых вопросов прямо разрешены автором. Источники сверены тематическим независимым исполнителем; итоговая вычитка — regional-batch-7-embedding-review."
     }
+  },
+  {
+    "id": "landmarks-q118",
+    "status": "accepted",
+    "embeds": "addition-gap2-01",
+    "fact": {
+      "table": "boardgames",
+      "row": "game-weiqi",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
+    }
+  },
+  {
+    "id": "landmarks-q119",
+    "status": "accepted",
+    "embeds": "addition-gap2-11",
+    "fact": {
+      "table": "dwellings",
+      "row": "dwelling-shikumen",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
+    }
   }
 ]

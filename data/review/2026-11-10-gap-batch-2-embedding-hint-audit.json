@@ -1,0 +1,694 @@
+{
+  "date": "2026-11-10",
+  "status": "read-only-audit-complete",
+  "repositoryModified": false,
+  "proposalFile": "data/review/2026-11-10-gap-batch-2-revised-proposals.json",
+  "proposalManifestHash": "0fbd7a52d1e54f9cca54d4f32238c5e023afee275b103dd26d170cfde4e71f59",
+  "bankCount": 1269,
+  "previewCount": 17,
+  "scope": [
+    "Все 1269 полных записей действующего банка: условия, варианты, подписи, пояснения, factRow/factGroup",
+    "Все таблицы и вопросы data/dossiers",
+    "17 новых вопросов между собой",
+    "data/chengyu/olympiad.json:35 и drafts.json:79",
+    "CLAUDE.md, scripts/fact_groups.py, scripts/dossiers.py:gloss_leaks, scripts/fact_rows.py",
+    "data/review/fact-groups.json и образец триажа regional-batch-8"
+  ],
+  "method": "Автоматические кандидаты gloss_leaks(b+preview, dossiers, existing groups) плюс ручная семантическая сверка каждого вопроса и тематических записей. Результат простого совпадения не объявлялся утечкой. Внешняя истинность источников в этом проходе заново не проверялась.",
+  "automaticCandidateCount": 5,
+  "automaticRejectedCount": 1,
+  "manualDirectAddedCount": 1,
+  "directProtectionPairs": 5,
+  "wordOnlyPolicyPairs": 20,
+  "matrix": [
+    {
+      "sourcePreviewId": "preview-gap2r-05",
+      "number": 5,
+      "targetExistingId": "cuisine-q73",
+      "targetQuestion": "Каким вкусом славится кухня 川菜?",
+      "targetExistingGroup": null,
+      "evidence": "Подпись неверного 川菜: «характерен вкус 麻辣: острота с онемением» непосредственно даёт ответ 麻辣 на вопрос о вкусе 川菜.",
+      "kind": "direct-caption",
+      "protectionRecommended": true,
+      "remedy": "Сохранить подпись; добавить preview-gap2r-05 и cuisine-q73 в province-names-river-lake (там уже цель cuisine-q105). Это разные вопросы, не склейка."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-05",
+      "number": 5,
+      "targetExistingId": "cuisine-q105",
+      "targetQuestion": "К какой из восьми великих кухонь Китая относится блюдо «рыба озера Сиху в уксусном соусе» (西湖醋鱼)?",
+      "targetExistingGroup": "province-names-river-lake",
+      "evidence": "Подпись неверного 浙菜 связывает чжэцзянскую кухню с рыбой озера Сиху в уксусном соусе. Сосед спрашивает именно кухню 西湖醋鱼.",
+      "kind": "direct-caption",
+      "protectionRecommended": true,
+      "remedy": "Сохранить существенную связь в подписи и добавить preview-gap2r-05 в существующую province-names-river-lake."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "number": 11,
+      "targetExistingId": "ethnos-q83",
+      "targetQuestion": "Как называется традиционное жильё Пекина (北京)?",
+      "targetExistingGroup": "province-names-river-lake",
+      "evidence": "Подпись неверного 四合院: «особенно характерные для Пекина». Сосед спрашивает, как называется традиционное жильё Пекина. Это прямая обратная связь, которую автоматический gloss_leaks не распознал.",
+      "kind": "direct-caption",
+      "protectionRecommended": true,
+      "remedy": "Сохранить Пекин; добавить preview-gap2r-11-shikumen в province-names-river-lake, где уже ethnos-q83."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "number": 11,
+      "targetExistingId": "2021-22-reg-q814d54",
+      "targetQuestion": "Как называются жилые комплексы крепостного типа, которые распространены в провинциях Фуцзянь и Гуандун? Такие укреплённые дома строили общины хакка и миньнань для совместного проживания и защиты.",
+      "targetExistingGroup": null,
+      "evidence": "Подпись неверного 土楼: «большие общинные дома с земляными стенами, особенно известные в Фуцзяни» даёт одновременно тип жилья и регион старого вопроса о жилых комплексах Фуцзяни и Гуандуна.",
+      "kind": "direct-caption",
+      "protectionRecommended": true,
+      "remedy": "Сохранить связь Фуцзянь—тулоу; добавить оба ID в province-names-river-lake, куда новый вопрос уже ведёт через ethnos-q83. Альтернатива без новой группы: общий закрытый пул жилищ и корректные factRow, но нельзя присваивать новому вопросу factRow трёх чужих ответов только ради подавления утечек."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "number": 11,
+      "targetExistingId": "ethnos-q84",
+      "targetQuestion": "Где традиционно живут в пещерных жилищах 窑洞?",
+      "targetExistingGroup": null,
+      "evidence": "Подпись неверного 窑洞: «традиционные пещерные жилища Лёссового плато» прямо даёт ответ 黄土高原 на вопрос «Где традиционно живут в ... 窑洞?».",
+      "kind": "direct-caption",
+      "protectionRecommended": true,
+      "remedy": "Сохранить Лёссовое плато в подписи; добавить ethnos-q84 и preview-gap2r-11-shikumen в province-names-river-lake."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "number": 11,
+      "targetExistingId": "2015-16-shk-63",
+      "targetQuestion": "Какой город является крупнейшим портовым городом Китая?",
+      "targetExistingGroup": "province-names-river-lake",
+      "evidence": "В самом условии нового вопроса явно названы «Шанхай (上海)»; ответ старого вопроса — 上海. Связь нового условия — шикумэнь, поэтому старый конкретный факт (порт/АТЭС/башня/ЭКСПО/сад/маглев/столицы/СЭЗ/набережная/съезд) не повторяется. Это словесная подсказка по отдельному правилу CLAUDE.md.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "По действующей политике словесных подсказок добавить новый ID в province-names-river-lake; для 2024-25-mun-nsk-2, 2025-26-mun-irk-8 и addition-b2-15 добавить и старые ID. У остальных группа уже есть. Слово Шанхай из условия не удалять."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "number": 11,
+      "targetExistingId": "2015-16-zak-1",
+      "targetQuestion": "В каком китайском городе в 2001 году прошла встреча лидеров АТЭС?",
+      "targetExistingGroup": "province-names-river-lake",
+      "evidence": "В самом условии нового вопроса явно названы «Шанхай (上海)»; ответ старого вопроса — 上海. Связь нового условия — шикумэнь, поэтому старый конкретный факт (порт/АТЭС/башня/ЭКСПО/сад/маглев/столицы/СЭЗ/набережная/съезд) не повторяется. Это словесная подсказка по отдельному правилу CLAUDE.md.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "По действующей политике словесных подсказок добавить новый ID в province-names-river-lake; для 2024-25-mun-nsk-2, 2025-26-mun-irk-8 и addition-b2-15 добавить и старые ID. У остальных группа уже есть. Слово Шанхай из условия не удалять."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "number": 11,
+      "targetExistingId": "2018-19-mun-lenobl-49",
+      "targetQuestion": "В каком городе находится телебашня «Восточная жемчужина» (东方明珠)?",
+      "targetExistingGroup": "province-names-river-lake",
+      "evidence": "В самом условии нового вопроса явно названы «Шанхай (上海)»; ответ старого вопроса — 上海. Связь нового условия — шикумэнь, поэтому старый конкретный факт (порт/АТЭС/башня/ЭКСПО/сад/маглев/столицы/СЭЗ/набережная/съезд) не повторяется. Это словесная подсказка по отдельному правилу CLAUDE.md.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "По действующей политике словесных подсказок добавить новый ID в province-names-river-lake; для 2024-25-mun-nsk-2, 2025-26-mun-irk-8 и addition-b2-15 добавить и старые ID. У остальных группа уже есть. Слово Шанхай из условия не удалять."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "number": 11,
+      "targetExistingId": "2024-25-mun-kursk-1",
+      "targetQuestion": "В каком городе проходила Всемирная выставка ЭКСПО-2010?",
+      "targetExistingGroup": "province-names-river-lake",
+      "evidence": "В самом условии нового вопроса явно названы «Шанхай (上海)»; ответ старого вопроса — 上海. Связь нового условия — шикумэнь, поэтому старый конкретный факт (порт/АТЭС/башня/ЭКСПО/сад/маглев/столицы/СЭЗ/набережная/съезд) не повторяется. Это словесная подсказка по отдельному правилу CLAUDE.md.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "По действующей политике словесных подсказок добавить новый ID в province-names-river-lake; для 2024-25-mun-nsk-2, 2025-26-mun-irk-8 и addition-b2-15 добавить и старые ID. У остальных группа уже есть. Слово Шанхай из условия не удалять."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "number": 11,
+      "targetExistingId": "2024-25-mun-mosobl-3",
+      "targetQuestion": "В каком городе Китая находится сад Юйюань (豫园)?",
+      "targetExistingGroup": "province-names-river-lake",
+      "evidence": "В самом условии нового вопроса явно названы «Шанхай (上海)»; ответ старого вопроса — 上海. Связь нового условия — шикумэнь, поэтому старый конкретный факт (порт/АТЭС/башня/ЭКСПО/сад/маглев/столицы/СЭЗ/набережная/съезд) не повторяется. Это словесная подсказка по отдельному правилу CLAUDE.md.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "По действующей политике словесных подсказок добавить новый ID в province-names-river-lake; для 2024-25-mun-nsk-2, 2025-26-mun-irk-8 и addition-b2-15 добавить и старые ID. У остальных группа уже есть. Слово Шанхай из условия не удалять."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "number": 11,
+      "targetExistingId": "2024-25-mun-nsk-2",
+      "targetQuestion": "В каком городе Китая был запущен первый маглев?",
+      "targetExistingGroup": null,
+      "evidence": "В самом условии нового вопроса явно названы «Шанхай (上海)»; ответ старого вопроса — 上海. Связь нового условия — шикумэнь, поэтому старый конкретный факт (порт/АТЭС/башня/ЭКСПО/сад/маглев/столицы/СЭЗ/набережная/съезд) не повторяется. Это словесная подсказка по отдельному правилу CLAUDE.md.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "По действующей политике словесных подсказок добавить новый ID в province-names-river-lake; для 2024-25-mun-nsk-2, 2025-26-mun-irk-8 и addition-b2-15 добавить и старые ID. У остальных группа уже есть. Слово Шанхай из условия не удалять."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "number": 11,
+      "targetExistingId": "2025-26-mun-irk-8",
+      "targetQuestion": "Какой из следующих городов не относится к \"четырём древним столицам\" Китая?",
+      "targetExistingGroup": null,
+      "evidence": "В самом условии нового вопроса явно названы «Шанхай (上海)»; ответ старого вопроса — 上海. Связь нового условия — шикумэнь, поэтому старый конкретный факт (порт/АТЭС/башня/ЭКСПО/сад/маглев/столицы/СЭЗ/набережная/съезд) не повторяется. Это словесная подсказка по отдельному правилу CLAUDE.md.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "По действующей политике словесных подсказок добавить новый ID в province-names-river-lake; для 2024-25-mun-nsk-2, 2025-26-mun-irk-8 и addition-b2-15 добавить и старые ID. У остальных группа уже есть. Слово Шанхай из условия не удалять."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "number": 11,
+      "targetExistingId": "addition-b2-15",
+      "targetQuestion": "Где в сентябре 2013 г. открылась первая в КНР пилотная зона свободной торговли?",
+      "targetExistingGroup": null,
+      "evidence": "В самом условии нового вопроса явно названы «Шанхай (上海)»; ответ старого вопроса — 上海. Связь нового условия — шикумэнь, поэтому старый конкретный факт (порт/АТЭС/башня/ЭКСПО/сад/маглев/столицы/СЭЗ/набережная/съезд) не повторяется. Это словесная подсказка по отдельному правилу CLAUDE.md.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "По действующей политике словесных подсказок добавить новый ID в province-names-river-lake; для 2024-25-mun-nsk-2, 2025-26-mun-irk-8 и addition-b2-15 добавить и старые ID. У остальных группа уже есть. Слово Шанхай из условия не удалять."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "number": 11,
+      "targetExistingId": "landmarks-q100",
+      "targetQuestion": "В каком городе находится набережная Вайтань (外滩) с «выставкой архитектуры всех стран»?",
+      "targetExistingGroup": "province-names-river-lake",
+      "evidence": "В самом условии нового вопроса явно названы «Шанхай (上海)»; ответ старого вопроса — 上海. Связь нового условия — шикумэнь, поэтому старый конкретный факт (порт/АТЭС/башня/ЭКСПО/сад/маглев/столицы/СЭЗ/набережная/съезд) не повторяется. Это словесная подсказка по отдельному правилу CLAUDE.md.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "По действующей политике словесных подсказок добавить новый ID в province-names-river-lake; для 2024-25-mun-nsk-2, 2025-26-mun-irk-8 и addition-b2-15 добавить и старые ID. У остальных группа уже есть. Слово Шанхай из условия не удалять."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "number": 11,
+      "targetExistingId": "modern-history-q114",
+      "targetQuestion": "В каком городе открылся I съезд Коммунистической партии Китая?",
+      "targetExistingGroup": "province-names-river-lake",
+      "evidence": "В самом условии нового вопроса явно названы «Шанхай (上海)»; ответ старого вопроса — 上海. Связь нового условия — шикумэнь, поэтому старый конкретный факт (порт/АТЭС/башня/ЭКСПО/сад/маглев/столицы/СЭЗ/набережная/съезд) не повторяется. Это словесная подсказка по отдельному правилу CLAUDE.md.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "По действующей политике словесных подсказок добавить новый ID в province-names-river-lake; для 2024-25-mun-nsk-2, 2025-26-mun-irk-8 и addition-b2-15 добавить и старые ID. У остальных группа уже есть. Слово Шанхай из условия не удалять."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-10",
+      "number": 10,
+      "targetExistingId": "2015-16-reg-2",
+      "targetQuestion": "Как называется крупнейшая река Китая?",
+      "targetExistingGroup": "province-names-river-lake",
+      "evidence": "Условие нового вопроса называет Янцзы; ответ старого — 长江. Сезон мэйюй и характеристика реки/ГЭС являются разными фактами, но правило CLAUDE.md отдельно закрывает слово ответа в чужом условии.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "Сохранить географическую привязку. При применении словесной защиты добавить preview-gap2r-10 в province-names-river-lake; nature-q153 уже в sanxia-word, поэтому объединить sanxia-word целиком с province-names-river-lake (включая money-q05), а не держать nature-q153 в двух группах."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-10",
+      "number": 10,
+      "targetExistingId": "2022-23-mun-kam-10",
+      "targetQuestion": "Основная судоходная река Китая…",
+      "targetExistingGroup": "province-names-river-lake",
+      "evidence": "Условие нового вопроса называет Янцзы; ответ старого — 长江. Сезон мэйюй и характеристика реки/ГЭС являются разными фактами, но правило CLAUDE.md отдельно закрывает слово ответа в чужом условии.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "Сохранить географическую привязку. При применении словесной защиты добавить preview-gap2r-10 в province-names-river-lake; nature-q153 уже в sanxia-word, поэтому объединить sanxia-word целиком с province-names-river-lake (включая money-q05), а не держать nature-q153 в двух группах."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-10",
+      "number": 10,
+      "targetExistingId": "nature-q140",
+      "targetQuestion": "Какую реку называют «золотым водным путём» Китая?",
+      "targetExistingGroup": "province-names-river-lake",
+      "evidence": "Условие нового вопроса называет Янцзы; ответ старого — 长江. Сезон мэйюй и характеристика реки/ГЭС являются разными фактами, но правило CLAUDE.md отдельно закрывает слово ответа в чужом условии.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "Сохранить географическую привязку. При применении словесной защиты добавить preview-gap2r-10 в province-names-river-lake; nature-q153 уже в sanxia-word, поэтому объединить sanxia-word целиком с province-names-river-lake (включая money-q05), а не держать nature-q153 в двух группах."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-10",
+      "number": 10,
+      "targetExistingId": "nature-q153",
+      "targetQuestion": "На какой реке построена ГЭС «Три ущелья» (三峡电站)?",
+      "targetExistingGroup": "sanxia-word",
+      "evidence": "Условие нового вопроса называет Янцзы; ответ старого — 长江. Сезон мэйюй и характеристика реки/ГЭС являются разными фактами, но правило CLAUDE.md отдельно закрывает слово ответа в чужом условии.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "Сохранить географическую привязку. При применении словесной защиты добавить preview-gap2r-10 в province-names-river-lake; nature-q153 уже в sanxia-word, поэтому объединить sanxia-word целиком с province-names-river-lake (включая money-q05), а не держать nature-q153 в двух группах."
+    },
+    {
+      "sourcePreviewId": "preview-gap2-09",
+      "number": 9,
+      "targetExistingId": "2015-16-reg-9",
+      "targetQuestion": "Какое величайшее сооружение было построено в эпоху Цинь?",
+      "targetExistingGroup": "great-wall-word",
+      "evidence": "В условии №9 дано переносное имя «Зелёная Великая стена»; старый ответ — настоящая Великая стена 长城. Ни сведения о строительстве, ни статус ЮНЕСКО новый вопрос не сообщает. Это только имя/словесная связь, а не смысловой дубль.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "Если последовательно закрывать словесные связи по CLAUDE.md, добавить preview-gap2-09 и три старых ID без группы в great-wall-word; существующих членов группы сохранить. Не удалять общепринятое прозвище проекта."
+    },
+    {
+      "sourcePreviewId": "preview-gap2-09",
+      "number": 9,
+      "targetExistingId": "2016-17-mun-yar-4",
+      "targetQuestion": "Что называют «первым военным сооружением» Древнего Китая?",
+      "targetExistingGroup": null,
+      "evidence": "В условии №9 дано переносное имя «Зелёная Великая стена»; старый ответ — настоящая Великая стена 长城. Ни сведения о строительстве, ни статус ЮНЕСКО новый вопрос не сообщает. Это только имя/словесная связь, а не смысловой дубль.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "Если последовательно закрывать словесные связи по CLAUDE.md, добавить preview-gap2-09 и три старых ID без группы в great-wall-word; существующих членов группы сохранить. Не удалять общепринятое прозвище проекта."
+    },
+    {
+      "sourcePreviewId": "preview-gap2-09",
+      "number": 9,
+      "targetExistingId": "2023-24-mun-37",
+      "targetQuestion": "Какой шедевр китайской архитектуры по грандиозности и масштабу можно сравнить лишь с древними египетскими пирамидами?",
+      "targetExistingGroup": null,
+      "evidence": "В условии №9 дано переносное имя «Зелёная Великая стена»; старый ответ — настоящая Великая стена 长城. Ни сведения о строительстве, ни статус ЮНЕСКО новый вопрос не сообщает. Это только имя/словесная связь, а не смысловой дубль.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "Если последовательно закрывать словесные связи по CLAUDE.md, добавить preview-gap2-09 и три старых ID без группы в great-wall-word; существующих членов группы сохранить. Не удалять общепринятое прозвище проекта."
+    },
+    {
+      "sourcePreviewId": "preview-gap2-09",
+      "number": 9,
+      "targetExistingId": "2024-25-mun-tula-7",
+      "targetQuestion": "Как называется одно из семи новых чудес света, которое находится в Китае?",
+      "targetExistingGroup": null,
+      "evidence": "В условии №9 дано переносное имя «Зелёная Великая стена»; старый ответ — настоящая Великая стена 长城. Ни сведения о строительстве, ни статус ЮНЕСКО новый вопрос не сообщает. Это только имя/словесная связь, а не смысловой дубль.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "Если последовательно закрывать словесные связи по CLAUDE.md, добавить preview-gap2-09 и три старых ID без группы в great-wall-word; существующих членов группы сохранить. Не удалять общепринятое прозвище проекта."
+    },
+    {
+      "sourcePreviewId": "preview-gap2-09",
+      "number": 9,
+      "targetExistingId": "landmarks-q105",
+      "targetQuestion": "Какое укрепление внесено в список Всемирного культурного наследия ЮНЕСКО?",
+      "targetExistingGroup": "great-wall-word",
+      "evidence": "В условии №9 дано переносное имя «Зелёная Великая стена»; старый ответ — настоящая Великая стена 长城. Ни сведения о строительстве, ни статус ЮНЕСКО новый вопрос не сообщает. Это только имя/словесная связь, а не смысловой дубль.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "Если последовательно закрывать словесные связи по CLAUDE.md, добавить preview-gap2-09 и три старых ID без группы в great-wall-word; существующих членов группы сохранить. Не удалять общепринятое прозвище проекта."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-15",
+      "number": 15,
+      "targetExistingId": "2015-16-reg-3",
+      "targetQuestion": "Какое животное не входит в китайский двенадцатилетний зодиак?",
+      "targetExistingGroup": null,
+      "evidence": "Новый сюжет прямо называет лису. У старого вопроса «Какое животное не входит в китайский двенадцатилетний зодиак?» ответ 狐狸. Про состав зодиака новый вопрос ничего не сообщает.",
+      "kind": "word-only-policy",
+      "protectionRecommended": true,
+      "remedy": "Для последовательной защиты слова ответа создать отдельную группу authored-b2-fox-word из preview-gap2r-15 и 2015-16-reg-3. Не смешивать её с мифологическими группами."
+    }
+  ],
+  "canonicalRowRelations": [
+    {
+      "sourcePreviewId": "preview-gap2r-02",
+      "number": 2,
+      "targetExistingId": "2021-22-reg-q3e8cc7",
+      "evidence": "Новый факт — хлопководческая специализация Синьцзяна. Старые факты одной канонической строки: площадь автономного района, Тарим и административный центр. Хлопок нигде в действующем банке не раскрыт.",
+      "remedy": "Если авторский ID привязывается к досье, добавить его в olympiad строки provinces/provinces/prov-xinjiang: scripts/fact_rows.py даст общий factRow. Это одна сущность/строка, не дубликат вопроса. Искусственно добавлять группу ко всем вопросам с вариантом 新疆 не требуется."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-02",
+      "number": 2,
+      "targetExistingId": "2022-23-mun-amur-4",
+      "evidence": "Новый факт — хлопководческая специализация Синьцзяна. Старые факты одной канонической строки: площадь автономного района, Тарим и административный центр. Хлопок нигде в действующем банке не раскрыт.",
+      "remedy": "Если авторский ID привязывается к досье, добавить его в olympiad строки provinces/provinces/prov-xinjiang: scripts/fact_rows.py даст общий factRow. Это одна сущность/строка, не дубликат вопроса. Искусственно добавлять группу ко всем вопросам с вариантом 新疆 не требуется."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-02",
+      "number": 2,
+      "targetExistingId": "provinces-q96",
+      "evidence": "Новый факт — хлопководческая специализация Синьцзяна. Старые факты одной канонической строки: площадь автономного района, Тарим и административный центр. Хлопок нигде в действующем банке не раскрыт.",
+      "remedy": "Если авторский ID привязывается к досье, добавить его в olympiad строки provinces/provinces/prov-xinjiang: scripts/fact_rows.py даст общий factRow. Это одна сущность/строка, не дубликат вопроса. Искусственно добавлять группу ко всем вопросам с вариантом 新疆 не требуется."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-05",
+      "number": 5,
+      "targetExistingId": "2020-21-zak-qf17a29",
+      "evidence": "Димсамы с чаепитием — новая сторона уже существующей кантонской кухни cs-yue. Старые вопросы спрашивают блюдо, провинцию и вкус.",
+      "remedy": "Привязать новый ID к cuisine/cuisines/cs-yue через olympiad для общей factRow, если сохраняется авторский формат. Прямые утечки подписей 川菜 и 浙菜 всё равно отдельно закрыть группой."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-05",
+      "number": 5,
+      "targetExistingId": "cuisine-q68",
+      "evidence": "Димсамы с чаепитием — новая сторона уже существующей кантонской кухни cs-yue. Старые вопросы спрашивают блюдо, провинцию и вкус.",
+      "remedy": "Привязать новый ID к cuisine/cuisines/cs-yue через olympiad для общей factRow, если сохраняется авторский формат. Прямые утечки подписей 川菜 и 浙菜 всё равно отдельно закрыть группой."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-05",
+      "number": 5,
+      "targetExistingId": "cuisine-q74",
+      "evidence": "Димсамы с чаепитием — новая сторона уже существующей кантонской кухни cs-yue. Старые вопросы спрашивают блюдо, провинцию и вкус.",
+      "remedy": "Привязать новый ID к cuisine/cuisines/cs-yue через olympiad для общей factRow, если сохраняется авторский формат. Прямые утечки подписей 川菜 и 浙菜 всё равно отдельно закрыть группой."
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "sourcePreviewId": "preview-gap2r-02",
+      "number": 2,
+      "targetExistingId": "nature-q145 / nature-q150 / nature-q155",
+      "evidence": "Совпадает правильный вариант 新疆; старые вопросы про Тяньшань, Такла-Макан и кяризы не сообщают хлопководческую специализацию, новые подписи не называют эти объекты.",
+      "remedy": "Нет смысловой утечки и нет дубля. При канонической привязке к Синьцзяну использовать factRow своей строки.",
+      "disposition": "no-action-semantic-check"
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-03",
+      "number": 3,
+      "targetExistingId": null,
+      "evidence": "Углы страницы и направление чтения нигде в 1269 записях не спрашиваются. Верх-низ в порядке цветов российского флага — иной объект. Подписи о конце столбца/страницы являются геометрическими следствиями именно данного правила.",
+      "remedy": "Закрытый пул ровно четырёх углов; отдельной внешней группы не требуется. Не расширять пул случайными направлениями.",
+      "disposition": "no-action-semantic-check"
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-06",
+      "number": 6,
+      "targetExistingId": "2024-25-reg-7",
+      "evidence": "Журавль связан с долголетием, но старый ответ о долголетии, силе и выносливости — черепаха; новая подпись не называет черепаху и не раскрывает старую совокупность признаков. Летучая мышь—福, рыба—изобилие и сорока—радость в старом банке не раскрыты.",
+      "remedy": "Сохранить контекстные подписи по каждому символу, без группы только из-за общего слова «долголетие».",
+      "disposition": "no-action-semantic-check"
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-10",
+      "number": 10,
+      "targetExistingId": "2024-25-mun-34",
+      "evidence": "Автоматический кандидат: «Тайфун — тропический циклон западной части Тихого океана» vs вопрос, к морям какого океана имеет выход Китай. Подпись даёт географию тайфуна, но не называет Китай и его побережье. Это не связка вопрос—ответ старого факта.",
+      "remedy": "Отклонить автоматическую находку; группа по этой паре не нужна.",
+      "disposition": "no-action-semantic-check"
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-12",
+      "number": 12,
+      "targetExistingId": "2022-23-mun-spb-3",
+      "evidence": "Старый вопрос спрашивает праздник, называемый «золотой неделей», ответ 国庆节. Новая подпись 黄金周 говорит только о продолжительных каникулах и туристах: не называет Национальный праздник. Новое условие спрашивает 40-дневный транспортный сезон, а не праздник.",
+      "remedy": "Ни склейки, ни общей группы по прямой утечке. Важное отличие сохранить: 春运 — период перевозок, 黄金周/小长假 — каникулы.",
+      "disposition": "no-action-semantic-check"
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-12",
+      "number": 12,
+      "targetExistingId": "holidays-q33 / holidays-q43 / традиционные праздники",
+      "evidence": "Подпись 春运 называет Праздник весны; она не рассказывает предание о Няне, новогодние надписи или другие спрашиваемые обычаи. Подпись 小长假 перечисляет Цинмин и Дуаньу без их дат, блюд и обычаев.",
+      "remedy": "Не присоединять новый вопрос ко всей теме праздников из-за названий в подписях. Существенную связь 春运—春节 сохранить.",
+      "disposition": "no-action-semantic-check"
+    },
+    {
+      "sourcePreviewId": "preview-gap2-13",
+      "number": 13,
+      "targetExistingId": "holidays-q13 / holidays-q14",
+      "evidence": "Подпись 腊月 = 12-й месяц пересекается с пояснениями о Лаба и Сяонянь. Она не раскрывает 8-е, 23-е или 24-е число и не называет праздники; старые пояснения не определяют 闰月.",
+      "remedy": "Нет прямой утечки, нет дубля. Закрытый пул из четырёх настоящих календарных терминов; подписи сохранить.",
+      "disposition": "no-action-semantic-check"
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-15",
+      "number": 15,
+      "targetExistingId": "2017-18-reg-3 / 2020-21-reg-q588b1b / 2021-22-reg-qdc153d / myths-*",
+      "evidence": "Старые мифы спрашивают героев или конкретные сюжеты, новые варианты дают общие определения 寓言/神话/传说/童话. Определение мифа не называет Нюйву, Паньгу или иной старый ответ.",
+      "remedy": "Не группировать все мифы по слову «миф». Сохранить жанровую точность без выдуманных универсальных запретов на фантастику в 寓言.",
+      "disposition": "no-action-semantic-check"
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-15",
+      "number": 15,
+      "targetExistingId": "data/chengyu/olympiad.json + data/chengyu/drafts.json",
+      "evidence": "В 35 олимпиадных и 79 draft-записях чэнъюй сюжет 狐假虎威 отсутствует; 守株待兔, 画蛇添足 и другие басенные сюжеты — другие факты. Новый текст раскрывает сюжет 狐假虎威, поэтому при будущей карточке этой идиомы понадобится отдельное разведение.",
+      "remedy": "Текущего межмодульного дубля нет. Не склеивать новый вопрос с cy-守株待兔 или cy-画蛇添足.",
+      "disposition": "no-action-semantic-check"
+    },
+    {
+      "sourcePreviewId": "preview-gap2-19",
+      "number": 19,
+      "targetExistingId": "2022-23-shk-mosobl-4 / 2024-25-mun-kursk-8 / data/chengyu/*",
+      "evidence": "Старые вопросы спрашивают роман Чжу Бацзе, значение 旱鸭子 и конкретные значения/аналоги чэнъюй. Новый вопрос — определение класса 歇后语, не даёт этих ответов.",
+      "remedy": "Нет группы только по общему языковому полю. Не подменять классификацию речений тренировкой конкретной идиомы.",
+      "disposition": "no-action-semantic-check"
+    }
+  ],
+  "newToNewSemanticChecks": [
+    {
+      "sourcePreviewId": "preview-gap2r-03",
+      "targetPreviewId": "preview-gap2r-08",
+      "evidence": "Чтение страницы и копирование иероглифов — разные навыки; направления чтения не раскрывают термин 临写.",
+      "remedy": "Дополнительная группа не требуется."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-04",
+      "targetPreviewId": "preview-gap2-17",
+      "evidence": "Коллекционные печати на картине и эстампаж со стелы — разные следы/технологии, ни одна подпись не даёт правильного термина другого вопроса.",
+      "remedy": "Дополнительная группа не требуется."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-08",
+      "targetPreviewId": "preview-gap2-17",
+      "evidence": "摹写 — способ обводки образца, 摹本 — экземпляр рукописной копии. Общее значение «копирование» не определяет правильный 临写 или 拓片.",
+      "remedy": "Дополнительная группа не требуется."
+    },
+    {
+      "sourcePreviewId": "preview-gap2-09",
+      "targetPreviewId": "preview-gap2r-10",
+      "evidence": "Лесозащита от ветра и песка не определяет сезон 梅雨, а подпись 沙尘暴 не называет проект 三北防护林.",
+      "remedy": "Дополнительная группа не требуется."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "targetPreviewId": "preview-gap2r-14",
+      "evidence": "Кирпично-деревянные дома и складная конструкция веера не пересекаются по проверяемым фактам.",
+      "remedy": "Дополнительная группа не требуется."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-12",
+      "targetPreviewId": "preview-gap2-13",
+      "evidence": "Транспортный период вокруг 春节 не определяет вставной месяц 闰月; лунно-солнечный календарь не определяет 春运.",
+      "remedy": "Дополнительная группа не требуется."
+    },
+    {
+      "sourcePreviewId": "preview-gap2r-15",
+      "targetPreviewId": "preview-gap2-19",
+      "evidence": "Жанры повествования и типы устойчивых речений — разные классификации. 寓言 не равно 成语, сюжет может породить идиому. Ни один из двух вопросов не выдаёт ответ другого.",
+      "remedy": "Дополнительная группа не требуется."
+    }
+  ],
+  "perItem": [
+    {
+      "number": 1,
+      "sourcePreviewId": "preview-gap2r-01",
+      "conclusion": "Прямых смысловых подсказок не найдено; полный текст и четыре подписи проверены."
+    },
+    {
+      "number": 2,
+      "sourcePreviewId": "preview-gap2r-02",
+      "conclusion": "Новая хозяйственная сторона Синьцзяна; возможен общий factRow канонической строки, не склейка."
+    },
+    {
+      "number": 3,
+      "sourcePreviewId": "preview-gap2r-03",
+      "conclusion": "Четыре угла — замкнутый геометрический пул; внешних связей нет."
+    },
+    {
+      "number": 4,
+      "sourcePreviewId": "preview-gap2r-04",
+      "conclusion": "Прямых смысловых подсказок не найдено; полный текст и четыре подписи проверены."
+    },
+    {
+      "number": 5,
+      "sourcePreviewId": "preview-gap2r-05",
+      "conclusion": "Две прямые утечки через неверные подписи; нужна группа. Каноническая строка правильного ответа cs-yue уже есть."
+    },
+    {
+      "number": 6,
+      "sourcePreviewId": "preview-gap2r-06",
+      "conclusion": "Новый набор благопожелательных символов; общая идея долголетия не даёт ответа старому вопросу о черепахе."
+    },
+    {
+      "number": 7,
+      "sourcePreviewId": "preview-gap2r-07",
+      "conclusion": "Прямых смысловых подсказок не найдено; полный текст и четыре подписи проверены."
+    },
+    {
+      "number": 8,
+      "sourcePreviewId": "preview-gap2r-08",
+      "conclusion": "Прямых смысловых подсказок не найдено; полный текст и четыре подписи проверены."
+    },
+    {
+      "number": 9,
+      "sourcePreviewId": "preview-gap2-09",
+      "conclusion": "Прямого дубля нет; есть словесная связь прозвища с 長城/长城."
+    },
+    {
+      "number": 10,
+      "sourcePreviewId": "preview-gap2r-10",
+      "conclusion": "Прямой автоматический кандидат о Тихом океане отклонён; Янцзы в условии — отдельная словесная защита."
+    },
+    {
+      "number": 11,
+      "sourcePreviewId": "preview-gap2r-11-shikumen",
+      "conclusion": "Три прямые связи подписей с жильём и десять словесных связей условия с Шанхаем."
+    },
+    {
+      "number": 12,
+      "sourcePreviewId": "preview-gap2r-12",
+      "conclusion": "После замены ответа на 春运 прямого дубля с праздниками и 黄金周 нет."
+    },
+    {
+      "number": 13,
+      "sourcePreviewId": "preview-gap2-13",
+      "conclusion": "Вставной месяц — новый факт; определения месяцев не раскрывают даты соседних праздников."
+    },
+    {
+      "number": 14,
+      "sourcePreviewId": "preview-gap2r-14",
+      "conclusion": "Прямых смысловых подсказок не найдено; полный текст и четыре подписи проверены."
+    },
+    {
+      "number": 15,
+      "sourcePreviewId": "preview-gap2r-15",
+      "conclusion": "Новый жанровый вопрос, 狐假虎威 в текущем чэнъюй отсутствует; лиса в условии даёт только словесный кандидат к зодиаку."
+    },
+    {
+      "number": 17,
+      "sourcePreviewId": "preview-gap2-17",
+      "conclusion": "Прямых смысловых подсказок не найдено; полный текст и четыре подписи проверены."
+    },
+    {
+      "number": 19,
+      "sourcePreviewId": "preview-gap2-19",
+      "conclusion": "Новый вопрос классификации речений; отдельная маршрутизация языкового блока, текущая схема чэнъюй не подходит."
+    }
+  ],
+  "suggestedGroupOperations": [
+    {
+      "group": "province-names-river-lake",
+      "reason": "Прямые связи кухонь/жилищ и словесные связи Шанхая/Янцзы",
+      "addPreviewIds": [
+        "preview-gap2r-05",
+        "preview-gap2r-10",
+        "preview-gap2r-11-shikumen"
+      ],
+      "addExistingIds": [
+        "cuisine-q73",
+        "2021-22-reg-q814d54",
+        "ethnos-q84",
+        "2024-25-mun-nsk-2",
+        "2025-26-mun-irk-8",
+        "addition-b2-15"
+      ],
+      "mergeWholeExistingGroups": [
+        "sanxia-word"
+      ],
+      "note": "Слияние sanxia-word требуется только при применении словесной политики №10→nature-q153; сохранить всех прежних членов обеих групп."
+    },
+    {
+      "group": "great-wall-word",
+      "reason": "Только словесная связь имени «Зелёная Великая стена»",
+      "addPreviewIds": [
+        "preview-gap2-09"
+      ],
+      "addExistingIds": [
+        "2016-17-mun-yar-4",
+        "2023-24-mun-37",
+        "2024-25-mun-tula-7"
+      ],
+      "mergeWholeExistingGroups": []
+    },
+    {
+      "group": "authored-b2-fox-word",
+      "new": true,
+      "reason": "Только слово «лиса» в сюжете №15 и ответ 狐狸 старого зодиакального вопроса",
+      "addPreviewIds": [
+        "preview-gap2r-15"
+      ],
+      "addExistingIds": [
+        "2015-16-reg-3"
+      ],
+      "mergeWholeExistingGroups": []
+    }
+  ],
+  "routingProblem": {
+    "number": 19,
+    "sourcePreviewId": "preview-gap2-19",
+    "severity": "author-preference-routing",
+    "evidence": "Пользователь прежде предпочитал отдельный языковой блок. Текущий data/chengyu имеет форматы analog/meaning/reverse/odd и поля chengyu, literal, meaning; №19 спрашивает определение типа речений и не является заданием по конкретному чэнъюй. Вставка его в main factual без фиксации назначения тоже может потерять заявленное разделение.",
+    "remedy": "Сохранить исходный вопрос и четыре китайских варианта в отдельно помеченном языковом блоке/подборке; не превращать его в запись cy-* и не назначать вымышленную идиому. Если текущий UI не поддерживает такой блок, явно отметить ограничение маршрутизации в итоговом отчёте, не считать его решённым одним topic."
+  },
+  "policy": "Ни один вопрос не удаляется и не склеивается. Существенные связи из подписей не удалять. Один ID не может принадлежать двум fact-группам; при конфликте объединять группы целиком. Общий закрытый пул сам по себе не защищает вопросы раунда: он обеспечивает качество дистракторов, а соседство закрывают factRow/factGroup.",
+  "appliedOperations": [
+    {
+      "target": "province-names-river-lake",
+      "addedIds": [
+        "addition-gap2-05",
+        "addition-gap2-10",
+        "addition-gap2-11",
+        "cuisine-q73",
+        "2021-22-reg-q814d54",
+        "ethnos-q84",
+        "2024-25-mun-nsk-2",
+        "2025-26-mun-irk-8",
+        "addition-b2-15"
+      ],
+      "mergedGroups": [
+        "sanxia-word"
+      ],
+      "size": 334,
+      "reason": "Прямые связи кухонь/жилищ и словесные связи Шанхая/Янцзы"
+    },
+    {
+      "target": "great-wall-word",
+      "addedIds": [
+        "addition-gap2-09",
+        "2016-17-mun-yar-4",
+        "2023-24-mun-37",
+        "2024-25-mun-tula-7"
+      ],
+      "mergedGroups": [],
+      "size": 9,
+      "reason": "Только словесная связь имени «Зелёная Великая стена»"
+    },
+    {
+      "target": "authored-b2-fox-word",
+      "addedIds": [
+        "addition-gap2-15",
+        "2015-16-reg-3"
+      ],
+      "mergedGroups": [],
+      "size": 2,
+      "reason": "Только слово «лиса» в сюжете №15 и ответ 狐狸 старого зодиакального вопроса"
+    }
+  ],
+  "additionalAppliedPairs": [
+    {
+      "ids": [
+        "addition-gap2-01",
+        "2025-26-shk-mosobl-6"
+      ],
+      "kind": "word colour; public target resolved from sets-q14 embed"
+    },
+    {
+      "ids": [
+        "addition-gap2-02",
+        "nature-q102"
+      ],
+      "kind": "word Xinjiang"
+    }
+  ],
+  "preExistingPairsRepaired": [
+    {
+      "group": "province-names-river-lake",
+      "ids": [
+        "literature-q66",
+        "2023-24-mun-spb-9"
+      ],
+      "mergedGroups": [
+        "regional-b5-hint-07"
+      ],
+      "kind": "pre-existing word-policy pair; baseline check_dossiers also failed"
+    },
+    {
+      "group": "province-names-river-lake",
+      "ids": [
+        "nature-q140",
+        "2021-22-mun-volog-8"
+      ],
+      "mergedGroups": [],
+      "kind": "pre-existing word-policy pair; baseline check_dossiers also failed"
+    }
+  ]
+}

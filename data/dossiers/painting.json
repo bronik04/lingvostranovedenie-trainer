@@ -7422,6 +7422,377 @@
           ]
         }
       ]
+    },
+    "sealrecords": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "sealrecord-restoration",
+          "name": {
+            "zh": "修复记录",
+            "ru": [
+              "Сведения о реставрации"
+            ],
+            "gloss": "Сведения о реставрации — восстановлении и укреплении произведения."
+          },
+          "sources": [
+            {
+              "title": "丹痕印记 ─ 中国书画的印章 — 香港艺术馆",
+              "url": "https://hk.art.museum/sc/web/ma/resources/archive/education-resources/resources/vermillion-impressions-chinese-painting-and-calligraphy-seals.html",
+              "quote": "收藏家或鉴赏家的印章（表示作品曾为其收藏或鉴赏）",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "Conservation/Treatment History — Getty CDWA",
+              "url": "https://www.getty.edu/publications/categories-description-works-art/categories/object-architecture-group/15/",
+              "quote": "Procedures or actions that a work has undergone to repair, conserve, or stabilize it.",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "Terminology for conservation (2008) — ICOM-CC",
+              "url": "https://www.icom-cc.org/en/terminology-for-conservation",
+              "quote": "Examples of restoration are retouching a painting, reassembling a broken sculpture",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "sealrecord-exhibition",
+          "name": {
+            "zh": "展览记录",
+            "ru": [
+              "Записи о выставках"
+            ],
+            "gloss": "Записи о выставках — когда и где произведение показывали публике."
+          },
+          "sources": [
+            {
+              "title": "丹痕印记 ─ 中国书画的印章 — 香港艺术馆",
+              "url": "https://hk.art.museum/sc/web/ma/resources/archive/education-resources/resources/vermillion-impressions-chinese-painting-and-calligraphy-seals.html",
+              "quote": "收藏家或鉴赏家的印章（表示作品曾为其收藏或鉴赏）",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "Exhibition/Loan History — Getty CDWA",
+              "url": "https://www.getty.edu/publications/categories-description-works-art/categories/object-architecture-group/24/",
+              "quote": "A historical record of a work’s public display",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《重編國語辭典修訂本》 — 展覽",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=116031&la=0&powerMode=0",
+              "quote": "陳列物品供人觀賞。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "sealrecord-collection",
+          "name": {
+            "zh": "收藏记录",
+            "ru": [
+              "История коллекционирования"
+            ],
+            "gloss": "История коллекционирования — печати владельцев не гарантируют подлинность картины."
+          },
+          "sources": [
+            {
+              "title": "丹痕印记 ─ 中国书画的印章 — 香港艺术馆",
+              "url": "https://hk.art.museum/sc/web/ma/resources/archive/education-resources/resources/vermillion-impressions-chinese-painting-and-calligraphy-seals.html",
+              "quote": "收藏家或鉴赏家的印章（表示作品曾为其收藏或鉴赏）",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "巧刻乾隆印，玩转橡皮章 — 故宫博物院",
+              "url": "https://www.dpm.org.cn/curriculum/236594.html",
+              "quote": "以加盖自己的收藏印章来彰显个人的审美品位。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "Ownership/Collecting History — Getty CDWA",
+              "url": "https://www.getty.edu/publications/categories-description-works-art/categories/object-architecture-group/23/",
+              "quote": "The provenance and ownership history of an object/work from the moment of its creation to the present.",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "sealrecord-trade",
+          "name": {
+            "zh": "交易记录",
+            "ru": [
+              "Записи о купле-продаже"
+            ],
+            "gloss": "Записи о купле-продаже — сведения о сделках с произведением."
+          },
+          "sources": [
+            {
+              "title": "丹痕印记 ─ 中国书画的印章 — 香港艺术馆",
+              "url": "https://hk.art.museum/sc/web/ma/resources/archive/education-resources/resources/vermillion-impressions-chinese-painting-and-calligraphy-seals.html",
+              "quote": "收藏家或鉴赏家的印章（表示作品曾为其收藏或鉴赏）",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《國語辭典簡編本》 — 交易",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=22334&la=0&powerMode=0",
+              "quote": "買賣、生意。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《重編國語辭典修訂本》 — 交易",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=91102&q=1&word=%E6%98%93",
+              "quote": "本指交換、互換。後泛指買賣。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
+    },
+    "copyingmethods": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "copying-moxie",
+          "name": {
+            "zh": "摹写",
+            "ru": [
+              "Обводка образца"
+            ],
+            "gloss": "Обводка образца — поверх него кладут прозрачную бумагу."
+          },
+          "sources": [
+            {
+              "title": "澳門教育及青年發展局《教師雜誌》 — 淺談書法教學速成法",
+              "url": "https://www.dsedj.gov.mo/cre/tmag/03/topic05-5.htm",
+              "quote": "所謂摹，就是以透明紙覆蓋在範本上，依其筆劃而印寫。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "《书法鉴赏》教学大纲 — 公共艺术教育教学中心（zykj.edu.cn）",
+              "url": "https://ggys.zykj.edu.cn/attachment/sites/item/2024_08/19_20/bcbd0ddfd8ec613d.pdf",
+              "quote": "用不渗水的透明纸放在字帖上，将映出的范字的影子摹写下来",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "copying-moxie-memory",
+          "name": {
+            "zh": "默写",
+            "ru": [
+              "Письмо по памяти"
+            ],
+            "gloss": "Письмо по памяти — воспроизведение ранее прочитанного текста."
+          },
+          "sources": [
+            {
+              "title": "教育部《國語辭典簡編本》 — 默寫",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=3773&la=0&powerMode=0",
+              "quote": "憑記憶把讀過的文字寫出來。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "默寫 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=27933&la=0&powerMode=0",
+              "quote": "憑記憶把讀過的文字寫出來。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "copying-linxie",
+          "name": {
+            "zh": "临写",
+            "ru": [
+              "Копирование с образца"
+            ],
+            "gloss": "Копирование с образца — тренирует форму знака и размещение его черт."
+          },
+          "sources": [
+            {
+              "title": "澳門教育及青年發展局《教師雜誌》 — 淺談書法教學速成法",
+              "url": "https://www.dsedj.gov.mo/cre/tmag/03/topic05-5.htm",
+              "quote": "臨帖…掌握筆劃形態和結構…在空白練習紙上對帖臨寫",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "臨寫 — 教育部《重編國語辭典修訂本》",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=64752&q=1&word=%E8%87%A8",
+              "quote": "學習書法的入門方法之一。將字帖放於一旁，邊看邊寫的方法",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "copying-tingxie",
+          "name": {
+            "zh": "听写",
+            "ru": [
+              "Диктант"
+            ],
+            "gloss": "Диктант — учитель читает, а ученик записывает услышанное."
+          },
+          "sources": [
+            {
+              "title": "教育部《重編國語辭典修訂本》 — 聽寫",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=53725&la=0&powerMode=0",
+              "quote": "由教師朗讀，令學生筆錄。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "聽說能力的培養 — 香港教育局；香港理工大學編寫",
+              "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/second-lang/SL_speaking_listening.pdf",
+              "quote": "聽完後，讓學生寫出這個「聽寫詞」。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
+    },
+    "reproductions": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "reproduction-tapian",
+          "name": {
+            "zh": "拓片",
+            "ru": [
+              "Тапянь"
+            ],
+            "gloss": "Тапянь — бумажный эстампаж; снимают надписи со стел и бронзовых предметов."
+          },
+          "sources": [
+            {
+              "title": "故宫博物院：拓片",
+              "url": "https://www.dpm.org.cn/lemmas/245196.html",
+              "quote": "用墨和纸将石碑或器物上的文字或图案捶拓下来称为拓片。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《國語辭典簡編本》 — 拓片",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=9937&la=0&powerMode=1",
+              "quote": "tà piàn; 將石碑或銅器古物上的文字、圖案拓印出來的紙片。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "reproduction-yingyinben",
+          "name": {
+            "zh": "影印本",
+            "ru": [
+              "Инъиньбэнь"
+            ],
+            "gloss": "Инъиньбэнь — факсимильное издание с фотографическим воспроизведением оригинала."
+          },
+          "sources": [
+            {
+              "title": "教育部《國語辭典簡編本》：影印",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=42538&la=0&powerMode=0",
+              "quote": "將圖片文字直接經由影印機或照相印板複製。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《重編國語辭典修訂本》 — 影印本",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=158352&la=0&powerMode=0",
+              "quote": "以影印機直接複製或照相方式製版翻印的書本。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "中国国家图书馆／国家古籍保护中心 — 古籍版本知识之二：版本的类型",
+              "url": "https://www.nlc.cn/pcab/gjbhzs/jd/20150107_95687.shtml",
+              "quote": "影印本：以某一版本为底本，用照相的方法制成印版，上机印刷而印成的书本。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "reproduction-keben",
+          "name": {
+            "zh": "刻本",
+            "ru": [
+              "Кэбэнь"
+            ],
+            "gloss": "Кэбэнь — книга, напечатанная с резных досок."
+          },
+          "sources": [
+            {
+              "title": "教育部《重編國語辭典修訂本》：刻本",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=76346&la=0&powerMode=0",
+              "quote": "雕板印成的書籍。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "中国国家图书馆／国家古籍保护中心 — 古籍版本知识之二：版本的类型",
+              "url": "https://www.nlc.cn/pcab/gjbhzs/jd/20150107_95687.shtml",
+              "quote": "刻本：雕版印本的简称。指雕刻木板，制成阳文反字印版，而后敷墨覆纸刷印而成的书本。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "reproduction-moben",
+          "name": {
+            "zh": "摹本",
+            "ru": [
+              "Мобэнь"
+            ],
+            "gloss": "Мобэнь — копия живописи или каллиграфии, выполненная от руки."
+          },
+          "sources": [
+            {
+              "title": "教育部《重編國語辭典修訂本》：摹本",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=27505&la=1&powerMode=0",
+              "quote": "依書畫原跡摹寫而成的本子。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "教育部《國語辭典簡編本》 — 摹本",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=3669&la=0&powerMode=0",
+              "quote": "依書畫原跡描寫而成的本子。",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
     }
   }
 }

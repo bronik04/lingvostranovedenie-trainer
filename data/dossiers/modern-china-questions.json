@@ -517,5 +517,35 @@
       "verdict": "accept",
       "note": "Автор принял последние правки 17вопросов и09.11.2026пряморазрешил публикацию. Условия/варианты/ключи/подписи — immutableacceptedmanifestпартии8. Источники ивстраиваниепроверенытематически; общий выпуск проходитнезависимоеревью."
     }
+  },
+  {
+    "id": "modern-china-q32",
+    "status": "accepted",
+    "embeds": "addition-gap2-07",
+    "fact": {
+      "table": "documents",
+      "row": "document-id-card",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
+    }
+  },
+  {
+    "id": "modern-china-q33",
+    "status": "accepted",
+    "embeds": "addition-gap2-12",
+    "fact": {
+      "table": "travelperiods",
+      "row": "travel-chunyun",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
+    }
   }
 ]

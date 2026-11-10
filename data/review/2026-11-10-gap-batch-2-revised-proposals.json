@@ -1,0 +1,2188 @@
+{
+  "date": "2026-11-10",
+  "reviewId": "authored-gap-2026-11-09-batch-2-revision-4",
+  "state": "accepted-16-authorized-for-release-19-held",
+  "publicationAuthorized": true,
+  "embeddingAuthorized": true,
+  "questionCount": 17,
+  "optionCount": 68,
+  "newReplacementCount": 13,
+  "retainedOriginalNumbers": [
+    9,
+    13,
+    17,
+    19
+  ],
+  "authorRejectedOriginalNumbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    18,
+    20
+  ],
+  "unfilledOriginalNumbers": [
+    16,
+    18,
+    20
+  ],
+  "originalNumberingPreserved": true,
+  "initialProposals": "data/review/2026-11-09-gap-batch-2-proposals.json",
+  "initialManifestHash": "88f9a9b2abc714ec559636340266088fea550793ea69afdad2c16f5e3dcdf381",
+  "fullBankReferenceCount": 1269,
+  "visibleReferenceCount": 1108,
+  "calibration": "Крупные знакомые темы и наглядные действия; сложность в близких вариантах, без малоизвестных имён, дат и локальных исключений. Качество важнее заполнения всех20мест.",
+  "items": [
+    {
+      "questionRu": "В какой китайской настольной игре чёрными и белыми камнями стремятся окружить больше территории?",
+      "type": "factual",
+      "topic": "Традиционная культура и повседневная жизнь",
+      "gapClosed": "Правила вэйци: смысл игры и отличие от других настольных игр, без повторения списка 4 искусств.",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "象棋",
+          "ru": "Сянци — китайские шахматы; полководец и советники ограничены пределами «дворца».",
+          "sourceUrls": [
+            "https://www.ihchina.cn/project_details/13813"
+          ]
+        },
+        {
+          "id": "o2",
+          "zh": "围棋",
+          "ru": "Го, или вэйци — камни ставят на пересечения линий и после хода не передвигают.",
+          "sourceUrls": [
+            "https://wqwh.weiqi.org.cn/rules/"
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "国际象棋",
+          "ru": "Классические шахматы — победу приносит мат королю соперника.",
+          "sourceUrls": [
+            "https://handbook.fide.com/chapter/E012023"
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "五子棋",
+          "ru": "Гомоку — игрок стремится выстроить непрерывный ряд из 5 своих камней.",
+          "sourceUrls": [
+            "https://dict.revised.moe.edu.tw/dictView.jsp?ID=159627&la=0&powerMode=0"
+          ]
+        }
+      ],
+      "answerOptionId": "o2",
+      "explanationRu": "Это вэйци, известная также как го. Игроки по очереди ставят чёрные и белые камни на пересечения линий; поставленный камень не передвигают. В китайском подсчёте учитывают живые камни и окружённые ими свободные пункты. Поэтому борьба за пространство важнее выстраивания одной фигуры или линии.",
+      "sources": [
+        {
+          "url": "https://wqwh.weiqi.org.cn/rules/",
+          "title": "中国围棋规则 — 中国围棋协会",
+          "shortQuote": "棋子下定后，不再向其他点移动。"
+        },
+        {
+          "url": "https://wqwh.weiqi.org.cn/rules/",
+          "title": "中国围棋规则 — 第9条",
+          "shortQuote": "对任意一方的活棋和活棋围住的点以子为单位进行计数。"
+        },
+        {
+          "url": "https://www.ihchina.cn/project_details/13813",
+          "title": "象棋 — 中国非物质文化遗产网",
+          "shortQuote": "帅（将）及代表皇帝身边近卫的士只能在九宫中活动"
+        },
+        {
+          "url": "https://handbook.fide.com/chapter/E012023",
+          "title": "FIDE Laws of Chess — article 1.4.1",
+          "shortQuote": "checkmated’ the opponent’s king and to have won the game"
+        },
+        {
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=159627&la=0&powerMode=0",
+          "title": "五子棋 — 教育部《重編國語辭典修訂本》",
+          "shortQuote": "先把五個棋子連成一條線者為優勝。"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "围棋",
+          "вэйци",
+          "го",
+          "黑白",
+          "территори",
+          "五子棋",
+          "琴棋书画"
+        ],
+        "matchingIds": [
+          "2023-24-mun-krsk-5",
+          "landmarks-q107",
+          "int-xiangqi"
+        ],
+        "reason": "Проверены все поля 1269 записей, data/dossiers, QUESTION_RESERVE.md и прошлые proposals, включая все 20 initial gap1 и gap2. В снятом вопросе 2023-24-mun-krsk-5 вэйци упомянута только как одно из 4 искусств; ни цель игры, ни камни, ни способ их постановки не раскрыты. landmarks-q107/int-xiangqi раскрывают только сянци. Новый вопрос не возвращает снятый вопрос о 4 искусствах."
+      },
+      "difficultyNote": "Крупная традиционная настольная игра; проверяется её основной смысл. Все 4 ответа — настоящие игры. Ближайший отвлекающий 五子棋 тоже использует камни и сетку, поэтому одного внешнего сходства недостаточно.",
+      "sourceLocalId": "gap2r-culture-01-weiqi",
+      "id": "preview-gap2r-01",
+      "reviewNumber": 1,
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "bankId": "addition-gap2-01",
+      "publicationAuthorized": true
+    },
+    {
+      "priority": "main",
+      "questionRu": "Какой регион является главной хлопководческой базой Китая?",
+      "type": "factual",
+      "topic": "Крупная география и хозяйство Китая",
+      "gapClosed": "Основной район производства важнейшего сырья текстильной промышленности.",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "山东",
+          "ru": "Шаньдун — один из хлопководческих регионов; в 2025 году дал менее 2% сбора страны.",
+          "sourceUrls": [
+            "https://www.stats.gov.cn/english/PressRelease/202512/t20251229_1962174.html"
+          ]
+        },
+        {
+          "id": "o2",
+          "zh": "湖北",
+          "ru": "Хубэй — один из хлопководческих регионов; в 2025 году дал менее 2% сбора страны.",
+          "sourceUrls": [
+            "https://www.stats.gov.cn/english/PressRelease/202512/t20251229_1962174.html"
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "新疆",
+          "ru": "Синьцзян — в 2025 году дал более 90% хлопка страны.",
+          "sourceUrls": [
+            "https://www.stats.gov.cn/english/PressRelease/202512/t20251229_1962174.html"
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "河北",
+          "ru": "Хэбэй — один из хлопководческих регионов; в 2025 году дал менее 2% сбора страны.",
+          "sourceUrls": [
+            "https://www.stats.gov.cn/english/PressRelease/202512/t20251229_1962174.html"
+          ]
+        }
+      ],
+      "answerOptionId": "o3",
+      "explanationRu": "Главная хлопководческая база Китая — Синьцзян (新疆). В 2025 году его сбор составил 6,165 млн т из общекитайских 6,641 млн т, то есть около 92,8%. Числа нужны для пояснения масштаба; запоминать их для ответа не требуется.",
+      "sources": [
+        {
+          "url": "https://www.stats.gov.cn/english/PressRelease/202512/t20251229_1962174.html",
+          "title": "国家统计局 — Bulletin on the National Cotton Output in 2025",
+          "shortQuote": "National Total ... 664.1; Hebei ... 6.9; Shandong ... 12.8; Hubei ... 9.2; Xinjiang ... 616.5"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "棉花",
+          "хлопок",
+          "хлопковод",
+          "Синьцзян"
+        ],
+        "matchingIds": [
+          "2015-16-reg-2",
+          "2016-17-shk-6",
+          "2017-18-zak-1",
+          "2018-19-mun-vrn-6",
+          "2018-19-shk-10",
+          "2019-20-mun-khab-1",
+          "2019-20-mun-q61e036",
+          "2019-20-reg-5",
+          "2019-20-shk-q048752",
+          "2021-22-mun-amur-4",
+          "2021-22-mun-q6aaabb",
+          "2021-22-reg-q3e8cc7",
+          "2022-23-mun-amur-4",
+          "2022-23-mun-kam-10",
+          "2022-23-shk-mosobl-5",
+          "2023-24-mun-komi-4",
+          "2024-25-mun-mosobl-1",
+          "2024-25-pri-34",
+          "2025-26-mun-ryaz-4",
+          "2025-26-shk-37-a",
+          "2025-26-shk-mosobl-12",
+          "2025-26-shk-mosobl-14",
+          "2025-26-shk-mosobl-2",
+          "2025-26-shk-mosobl-4",
+          "addition-b1-01",
+          "addition-b1-19",
+          "ethnos-q12",
+          "ethnos-q29",
+          "ethnos-q39",
+          "ethnos-q40",
+          "ethnos-q42",
+          "ethnos-q80",
+          "modern-history-q12",
+          "modern-history-q17",
+          "modern-history-q95",
+          "nature-q100",
+          "nature-q101",
+          "nature-q102",
+          "nature-q103",
+          "nature-q104",
+          "nature-q105",
+          "nature-q106",
+          "nature-q115",
+          "nature-q140",
+          "nature-q144",
+          "nature-q145",
+          "nature-q146",
+          "nature-q147",
+          "nature-q148",
+          "nature-q149",
+          "nature-q150",
+          "nature-q151",
+          "nature-q154",
+          "nature-q155",
+          "nature-q27",
+          "nature-q42",
+          "nature-q44",
+          "nature-q45",
+          "nature-q46",
+          "nature-q51",
+          "nature-q56",
+          "nature-q57",
+          "nature-q58",
+          "nature-q59",
+          "nature-q67",
+          "nature-q70",
+          "provinces-q100",
+          "provinces-q101",
+          "provinces-q102",
+          "provinces-q31",
+          "provinces-q33",
+          "provinces-q34",
+          "provinces-q35",
+          "provinces-q36",
+          "provinces-q37",
+          "provinces-q38",
+          "provinces-q41",
+          "provinces-q43",
+          "provinces-q44",
+          "provinces-q45",
+          "provinces-q93",
+          "provinces-q94",
+          "provinces-q95",
+          "provinces-q96",
+          "provinces-q97",
+          "provinces-q99"
+        ],
+        "reason": "Полностью проверены банк, подписи и пояснения, все досье, QUESTION_RESERVE и прошлые proposals. Синьцзян уже раскрыт как крупнейший автономный район, место Тарима, Тяньшаня и кяризов, но его хлопководческая специализация не раскрыта. Упоминание хлопка в описании равнины Янцзы не называет главную базу страны. Вопросы всех 20 gap1 initial и 20 gap2 не повторяются."
+      },
+      "difficultyNote": "Школьная экономическая география: крупный регион и основная отрасль, без второстепенных центров, дат запусков и маршрутов. Все 4 региона действительно выращивают хлопок; нет географического выброса.",
+      "sourceLocalId": "gap2r-geo-01-cotton",
+      "id": "preview-gap2r-02",
+      "reviewNumber": 2,
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "bankId": "addition-gap2-02",
+      "publicationAuthorized": true
+    },
+    {
+      "questionRu": "Вы открыли старую китайскую книгу с вертикальными столбцами. С какого угла страницы начинается основной текст?",
+      "type": "situational",
+      "topic": "Язык и письменная культура",
+      "gapClosed": "Практическое чтение традиционного китайского издания: начало страницы и порядок столбцов.",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "左上角",
+          "ru": "Левый верхний угол — начало страницы с обычным современным горизонтальным набором.",
+          "sourceUrls": [
+            "https://w3c.github.io/clreq/zh/"
+          ]
+        },
+        {
+          "id": "o2",
+          "zh": "右上角",
+          "ru": "Правый верхний угол; читают вниз, затем переходят к столбцу слева.",
+          "sourceUrls": [
+            "https://w3c.github.io/clreq/zh/"
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "左下角",
+          "ru": "Левый нижний угол — конец полностью заполненной страницы с вертикальным набором.",
+          "sourceUrls": [
+            "https://w3c.github.io/clreq/zh/"
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "右下角",
+          "ru": "Правый нижний угол — конец первого полного столбца при вертикальном наборе.",
+          "sourceUrls": [
+            "https://w3c.github.io/clreq/zh/"
+          ]
+        }
+      ],
+      "answerOptionId": "o2",
+      "explanationRu": "При традиционном вертикальном наборе начинают с верхнего знака крайнего правого столбца. Внутри столбца читают сверху вниз, а столбцы следуют справа налево.",
+      "sources": [
+        {
+          "url": "https://w3c.github.io/clreq/zh/",
+          "title": "W3C — 中文排版需求, 橫排與直排的主要差異點",
+          "shortQuote": "文字由上而下，行由右而左排列。"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "竖排",
+          "豎排",
+          "直排",
+          "вертикальный набор",
+          "столбцами",
+          "справа налево",
+          "правый верхний угол"
+        ],
+        "matchingIds": [],
+        "reason": "Проверены полные сериализованные записи всех 1269 карточек, включая все подписи и пояснения, QUESTION_RESERVE.md, все досье и прежние proposals, в том числе все 20 initial gap1 и gap2. Правило чтения вертикального китайского текста нигде не раскрыто. Ложные совпадения: вертикальные колодцы в nature-q70 и описание формата свитков в досье живописи. Варианты — только 4 угла страницы; источник подтверждает конвенцию, а подписи неверных вариантов просто переводят обозначения положения."
+      },
+      "difficultyNote": "Общая культурная особенность китайской книги, которую можно наблюдать на музейной странице или в литературном издании. Требуется представить направление чтения; неизвестные трактаты, даты и имена не нужны.",
+      "sourceLocalId": "gap2r-language-01-vertical-reading",
+      "id": "preview-gap2r-03",
+      "reviewNumber": 3,
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "editorialNote": "Подписи о конце полного столбца и полностью заполненной страницы — геометрические следствия направлений чтения, описанных W3C, а не отдельные цитаты.",
+      "bankId": "addition-gap2-03",
+      "publicationAuthorized": true
+    },
+    {
+      "questionRu": "Какие сведения непосредственно передают позднейшие красные печати на старинной китайской картине?",
+      "type": "factual",
+      "topic": "Искусство и архитектура",
+      "gapClosed": "Как читать знакомый визуальный элемент китайской живописи: печати как след истории коллекционирования.",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "修复记录",
+          "ru": "Сведения о реставрации — восстановлении и укреплении произведения.",
+          "sourceUrls": [
+            "https://hk.art.museum/sc/web/ma/resources/archive/education-resources/resources/vermillion-impressions-chinese-painting-and-calligraphy-seals.html"
+          ]
+        },
+        {
+          "id": "o2",
+          "zh": "展览记录",
+          "ru": "Сведения о том, когда и где произведение показывали публике.",
+          "sourceUrls": [
+            "https://hk.art.museum/sc/web/ma/resources/archive/education-resources/resources/vermillion-impressions-chinese-painting-and-calligraphy-seals.html"
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "收藏记录",
+          "ru": "История коллекций — печати отмечают владельцев и знатоков картины.",
+          "sourceUrls": [
+            "https://hk.art.museum/sc/web/ma/resources/archive/education-resources/resources/vermillion-impressions-chinese-painting-and-calligraphy-seals.html"
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "交易记录",
+          "ru": "Записи о купле-продаже — сведения о сделках с произведением.",
+          "sourceUrls": [
+            "https://hk.art.museum/sc/web/ma/resources/archive/education-resources/resources/vermillion-impressions-chinese-painting-and-calligraphy-seals.html"
+          ]
+        }
+      ],
+      "answerOptionId": "o3",
+      "explanationRu": "Собственные печати на картинах ставили не только художники, но и коллекционеры или знатоки, через руки которых прошла работа. Поэтому разные оттиски могут сохранять сведения о её прежних владельцах и изучении. Музей Гонконга прямо называет такие печати записью истории бытования произведения.",
+      "sources": [
+        {
+          "url": "https://hk.art.museum/sc/web/ma/resources/archive/education-resources/resources/vermillion-impressions-chinese-painting-and-calligraphy-seals.html",
+          "title": "丹痕印记 ─ 中国书画的印章 — 香港艺术馆",
+          "shortQuote": "收藏家或鉴赏家的印章（表示作品曾为其收藏或鉴赏）"
+        },
+        {
+          "url": "https://www.dpm.org.cn/curriculum/236594.html",
+          "title": "巧刻乾隆印，玩转橡皮章 — 故宫博物院",
+          "shortQuote": "以加盖自己的收藏印章来彰显个人的审美品位。"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "收藏印",
+          "鉴藏印",
+          "印章",
+          "печати",
+          "коллекционер",
+          "собирател"
+        ],
+        "matchingIds": [
+          "painting-q04",
+          "art-p-wuchangshuo",
+          "int-zhuanke",
+          "cr-shoushan",
+          "cr-jiading"
+        ],
+        "reason": "Во всех полях банка, досье, резерва и прежних proposals не найдена связь печатей на картине с её коллекционерами и историей бытования. Есть резьба печатей, печать как подпись/знак власти, мастера печатей и использование печати в декоре; эти сведения не дают ответ о позднейших коллекционерских печатях. Проверены оба первоначальных набора gap1/gap2."
+      },
+      "difficultyNote": "Наглядный вопрос о знакомом музейном объекте; 4 вида сведений об истории одной картины. Вместо рецептуры красок и этапов оформления предложены близкие записи.",
+      "sourceLocalId": "gap2r-culture-02-collectors-seals",
+      "id": "preview-gap2r-04",
+      "reviewNumber": 4,
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "bankId": "addition-gap2-04",
+      "publicationAuthorized": true
+    },
+    {
+      "questionRu": "Для какой региональной кухни особенно характерно чаепитие с димсамами — небольшими порциями закусок?",
+      "type": "factual",
+      "topic": "Культура, традиции и праздники",
+      "gapClosed": "Региональные пищевые привычки: кантонское чаепитие, а не происхождение редкого блюда.",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "闽菜",
+          "ru": "Фуцзяньская кухня — особенно известна бульонами и супами.",
+          "sourceUrls": [
+            "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html"
+          ]
+        },
+        {
+          "id": "o2",
+          "zh": "粤菜",
+          "ru": "Кантонская кухня — традиционное утреннее чаепитие называют 早茶.",
+          "sourceUrls": [
+            "https://sw.gz.gov.cn/swzx/gnmy/content/post_11016191.html",
+            "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html"
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "川菜",
+          "ru": "Сычуаньская кухня — характерен вкус 麻辣: острота с онемением.",
+          "sourceUrls": [
+            "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html"
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "浙菜",
+          "ru": "Чжэцзянская кухня — среди известных блюд рыба озера Сиху в уксусном соусе.",
+          "sourceUrls": [
+            "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html"
+          ]
+        }
+      ],
+      "answerOptionId": "o2",
+      "explanationRu": "Вопрос относится к кантонской традиции 飲茶/早茶: чай сопровождают небольшими порциями закусок и выпечки. Слово 点心 шире и само по себе не означает, что любые китайские закуски относятся к одной кухне.",
+      "sources": [
+        {
+          "url": "https://sw.gz.gov.cn/swzx/gnmy/content/post_11016191.html",
+          "title": "广州市商务局 — 广州早茶传统店",
+          "shortQuote": "早茶承载的内涵，远不止一壶清茶、几笼点心",
+          "verificationMethod": "web-search-excerpt"
+        },
+        {
+          "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
+          "title": "国家移民管理局 — 中国饮食文化简介, p.29",
+          "shortQuote": "川菜（四川）、粤菜（广东）",
+          "verificationMethod": "reuse-accepted-local; data/dossiers/cuisine.json"
+        },
+        {
+          "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html",
+          "title": "国家移民管理局 — 中国饮食文化简介, p.30",
+          "shortQuote": "闽菜；浙菜",
+          "verificationMethod": "reuse-accepted-local; data/dossiers/cuisine.json"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "点心",
+          "早茶",
+          "димсам",
+          "дим-сам",
+          "юмча"
+        ],
+        "matchingIds": [],
+        "reason": "Проверены банк, все подписи/пояснения, досье, резерв и прошлыеproposals: чай с димсамами и его региональная традиция не раскрыты. Старые задания о составе восьми кухонь или других кантонских блюдах не проверяют этот обычай."
+      },
+      "difficultyNote": "Известная за пределами Китая кулинарная традиция. Все4 варианта — крупные региональные кухни, по2иероглифа.",
+      "sourceLocalId": "gap2r-root-dimsum",
+      "id": "preview-gap2r-05",
+      "reviewNumber": 5,
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "bankId": "addition-gap2-05",
+      "publicationAuthorized": true
+    },
+    {
+      "questionRu": "Какое животное часто встречается в китайском декоре из-за созвучия его названия со словом «счастье»?",
+      "type": "factual",
+      "topic": "Традиционная культура и повседневная жизнь",
+      "gapClosed": "Общекитайская благопожелательная символика: летучая мышь как образ счастья.",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "喜鹊",
+          "ru": "Сорока — в благопожелательном декоре связана с радостью и счастливыми событиями.",
+          "sourceUrls": [
+            "https://www.dpm.org.cn/lemmas/241317.html"
+          ]
+        },
+        {
+          "id": "o2",
+          "zh": "仙鹤",
+          "ru": "Журавль — образ долголетия; в декоре его могут изображать рядом с оленем.",
+          "sourceUrls": [
+            "https://www.dpm.org.cn/collection/embroider/229546.html"
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "鲤鱼",
+          "ru": "Карп — в благопожелательном декоре рыба связана с изобилием.",
+          "sourceUrls": [
+            "https://www.dpm.org.cn/lemmas/241317.html"
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "蝙蝠",
+          "ru": "Летучая мышь — вместе с персиком выражает пожелание счастья и долголетия.",
+          "sourceUrls": [
+            "https://www.hkpm.org.hk/sc/the-ways-in-patterns-1",
+            "https://www.dpm.org.cn/lemmas/241317.html"
+          ]
+        }
+      ],
+      "answerOptionId": "o4",
+      "explanationRu": "Знак 蝠 в слове 蝙蝠 звучит так же, как 福 — «счастье, благополучие». Поэтому летучие мыши стали благопожелательным мотивом в китайском декоре. Их сочетание с персиками передаёт пожелание и счастья, и долголетия.",
+      "sources": [
+        {
+          "url": "https://www.dpm.org.cn/lemmas/241317.html",
+          "title": "吉祥图案 — 故宫博物院",
+          "shortQuote": "蝙蝠--福，喜鹊--喜庆，鱼--富足有余"
+        },
+        {
+          "url": "https://www.dpm.org.cn/Uploads/File/2020/02/13/u5e452267046ae.pdf",
+          "title": "故宫学刊·2012 — традиционные благопожелательные мотивы",
+          "shortQuote": "“蝙蝠”的“蝠”与“福”同音"
+        },
+        {
+          "url": "https://www.hkpm.org.hk/sc/the-ways-in-patterns-1",
+          "title": "“纹”以载道 — 香港故宫文化博物馆",
+          "shortQuote": "桃和蝙蝠的结合则象徵福寿双全。"
+        },
+        {
+          "url": "https://www.dpm.org.cn/collection/embroider/229546.html",
+          "title": "石青八团夔龙纹妆花缎袷褂 — 故宫博物院",
+          "shortQuote": "因鹤、鹿长寿，故常以“鹤鹿同春”用于祝寿之辞。"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "蝙蝠",
+          "蝠",
+          "летуч",
+          "福寿",
+          "летучая мышь"
+        ],
+        "matchingIds": [],
+        "reason": "蝙蝠, 蝠 и летучая мышь отсутствуют во всех полях 1269 записей, data/dossiers, QUESTION_RESERVE.md и всех проверенных прежних proposals, включая initial gap1 и все 20 gap2. Новая целевая связь — 蝠→福; ранее раскрытые общие новогодние пожелания и символы рыбы её не раскрывают."
+      },
+      "difficultyNote": "Распространённый мотив общекитайского декора, а не местный промысел. Все 4 животных действительно имеют благопожелательную символику, поэтому правильный ответ выбирается по конкретной языковой связи, а не по общей «удачливости» животного.",
+      "sourceLocalId": "gap2r-culture-03-bat-fu",
+      "id": "preview-gap2r-06",
+      "reviewNumber": 6,
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "bankId": "addition-gap2-06",
+      "publicationAuthorized": true
+    },
+    {
+      "priority": "main",
+      "questionRu": "Какой документ служит основным внутренним удостоверением личности гражданина КНР?",
+      "type": "factual",
+      "topic": "Современное повседневное общество Китая",
+      "gapClosed": "Различение основных документов, с которыми гражданин сталкивается в повседневной жизни.",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "护照",
+          "ru": "Паспорт — документ для пересечения границы и подтверждения гражданства за рубежом.",
+          "sourceUrls": [
+            "https://www.nia.gov.cn/n741440/n741547/c1014017/content.html"
+          ]
+        },
+        {
+          "id": "o2",
+          "zh": "居民户口簿",
+          "ru": "Семейная регистрационная книжка — указывает состав домохозяйства и родственные связи.",
+          "sourceUrls": [
+            "https://www.shishi.gov.cn/zwgk/ztzl/lhzt/lyxx/hjgl/202105/t20210510_2555544.htm"
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "居民身份证",
+          "ru": "Шэньфэньчжэн — удостоверение личности; карта 2-го поколения содержит электронный чип.",
+          "sourceUrls": [
+            "https://gaj.beijing.gov.cn/xxfb/jwbd/202410/t20241002_3911265.html",
+            "https://gaj.beijing.gov.cn/hudong/rddf/202003/t20200331_1771804.html"
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "户籍证明",
+          "ru": "Справка о регистрации — дополнительное подтверждение личности и семейных связей.",
+          "sourceUrls": [
+            "https://www.ynnh.gov.cn/info/38573/254186.htm"
+          ]
+        }
+      ],
+      "answerOptionId": "o3",
+      "explanationRu": "居民身份证 — основное удостоверение личности гражданина КНР. Современная карта 2-го поколения содержит электронный чип; личный номер состоит из 18 знаков. Последний контрольный знак иногда записывается латинской X, поэтому это не всегда 18 цифр.",
+      "sources": [
+        {
+          "url": "https://gaj.beijing.gov.cn/xxfb/jwbd/202410/t20241002_3911265.html",
+          "title": "北京市公安局 — 40年变迁背后，两代身份证的北京试点",
+          "shortQuote": "逐渐发展成带有芯片的可机读防伪卡片"
+        },
+        {
+          "url": "https://gaj.beijing.gov.cn/hudong/rddf/202003/t20200331_1771804.html",
+          "title": "北京市公安局 — 公民身份号码的组成",
+          "shortQuote": "公民身份号码由18位组成"
+        },
+        {
+          "url": "https://www.nia.gov.cn/n741440/n741547/c1014017/content.html",
+          "title": "国家移民管理局 — 中华人民共和国护照法",
+          "shortQuote": "出入国境和在国外证明国籍和身份的证件"
+        },
+        {
+          "url": "https://www.shishi.gov.cn/zwgk/ztzl/lhzt/lyxx/hjgl/202105/t20210510_2555544.htm",
+          "title": "石狮市人民政府 — 居民户口簿",
+          "shortQuote": "具有证明公民身份状况和家庭成员间相互关系的效力"
+        },
+        {
+          "url": "https://www.ynnh.gov.cn/info/38573/254186.htm",
+          "title": "南华县人民政府 — 云南省公安机关户籍业务办理工作规范",
+          "shortQuote": "证明公民身份和家庭关系的法定补充证明材料"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "居民身份证",
+          "шэньфэньчжэн",
+          "身份证",
+          "удостоверение личности"
+        ],
+        "matchingIds": [],
+        "reason": "Проверены все 1269 вопросов, их пояснения и подписи, все досье, QUESTION_RESERVE и прежние proposals. В gap1 initial был отдельный вопрос о названии системы 户籍; здесь не повторяется вопрос о системе регистрации, а различаются удостоверение личности и другие документы. В материалах gap1 身份证 встречается только в заголовке нормативного источника, карточка и её назначение не раскрыты. В банке этого вопроса и факта нет."
+      },
+      "difficultyNote": "Общеизвестный повседневный документ, без названий местных комитетов и административной процедуры. Все 4 ответа — личные официальные документы; основная карта однозначно отделена от книжки, паспорта и дополнительной справки.",
+      "sourceLocalId": "gap2r-society-01-id-card",
+      "id": "preview-gap2r-07",
+      "reviewNumber": 7,
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "bankId": "addition-gap2-07",
+      "publicationAuthorized": true
+    },
+    {
+      "questionRu": "На уроке каллиграфии ученик пишет рядом с образцом, глядя на него. Как называется такое копирование?",
+      "type": "situational",
+      "topic": "Традиционное обучение и каллиграфия",
+      "gapClosed": "Различие между копированием каллиграфии по видимому образцу и обводкой через бумагу.",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "摹写",
+          "ru": "Обводка образца, поверх которого кладут прозрачную бумагу.",
+          "sourceUrls": [
+            "https://www.dsedj.gov.mo/cre/tmag/03/topic05-5.htm"
+          ]
+        },
+        {
+          "id": "o2",
+          "zh": "默写",
+          "ru": "Воспроизведение ранее прочитанного текста по памяти.",
+          "sourceUrls": [
+            "https://dict.concised.moe.edu.tw/dictView.jsp?ID=3773&la=0&powerMode=0"
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "临写",
+          "ru": "Копирование с образца; тренирует форму знака и размещение его черт.",
+          "sourceUrls": [
+            "https://www.dsedj.gov.mo/cre/tmag/03/topic05-5.htm"
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "听写",
+          "ru": "Запись под диктовку: учитель читает, а ученик записывает услышанное.",
+          "sourceUrls": [
+            "https://dict.revised.moe.edu.tw/dictView.jsp?ID=53725&la=0&powerMode=0"
+          ]
+        }
+      ],
+      "answerOptionId": "o3",
+      "explanationRu": "临写 — письмо по образцу, который находится перед глазами: ученик старается воспроизвести форму и структуру знаков. При 摹写 прозрачную бумагу кладут поверх образца и повторяют его линии. Вместе эти способы входят в обучение через 临摹.",
+      "sources": [
+        {
+          "url": "https://www.dsedj.gov.mo/cre/tmag/03/topic05-5.htm",
+          "title": "澳門教育及青年發展局《教師雜誌》 — 淺談書法教學速成法",
+          "shortQuote": "在空白練習紙上對帖臨寫"
+        },
+        {
+          "url": "https://www.dsedj.gov.mo/cre/tmag/03/topic05-5.htm",
+          "title": "澳門教育及青年發展局《教師雜誌》 — объяснение 摹",
+          "shortQuote": "以透明紙覆蓋在範本上，依其筆劃而印寫。"
+        },
+        {
+          "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=3773&la=0&powerMode=0",
+          "title": "教育部《國語辭典簡編本》 — 默寫",
+          "shortQuote": "憑記憶把讀過的文字寫出來。"
+        },
+        {
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=53725&la=0&powerMode=0",
+          "title": "教育部《重編國語辭典修訂本》 — 聽寫",
+          "shortQuote": "由教師朗讀，令學生筆錄。"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "临写",
+          "臨寫",
+          "摹写",
+          "摹寫",
+          "临摹",
+          "臨摹",
+          "обводка",
+          "прозрачная бумага",
+          "копирование по образцу"
+        ],
+        "matchingIds": [
+          "painting-q17",
+          "painting-q104",
+          "preview-gap2-17"
+        ],
+        "reason": "Проверены все поля 1269 карточек, QUESTION_RESERVE.md, досье и прежние proposals. painting-q17 и painting-q104 рассказывают о сохранившихся копиях произведения Ван Сичжи, но не объясняют методы их выполнения. В досье живописи 临摹 встречается в источниковых цитатах о копиях картин. В прежнем gap2 №17 подпись 摹本 и цитата называют копию по оригиналу; они не раскрывают отличие письма рядом с образцом от обводки через прозрачную бумагу. Новый целевой факт — именно это практическое различие, а не существование копий."
+      },
+      "difficultyNote": "Наглядный эпизод школьного занятия каллиграфией. Все ответы — способы учебного письма, поэтому выбор определяется действием ученика, а не узкой биографией каллиграфа или историей памятника.",
+      "sourceLocalId": "gap2r-language-02-linxie",
+      "id": "preview-gap2r-08",
+      "reviewNumber": 8,
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "bankId": "addition-gap2-08",
+      "publicationAuthorized": true
+    },
+    {
+      "priority": "main",
+      "questionRu": "Какой лесозащитный проект Китая называют «Зелёной Великой стеной»?",
+      "type": "factual",
+      "topic": "География и природопользование",
+      "gapClosed": "Масштабная система защитных лесов на севере Китая и её общепринятое образное название.",
+      "options": [
+        {
+          "id": "o4",
+          "zh": "三北防护林",
+          "ru": "Защитные леса трёх северных районов.",
+          "sourceUrls": [
+            "https://www.forestry.gov.cn/search/501731"
+          ],
+          "sourceOptionId": "o4"
+        },
+        {
+          "id": "o1",
+          "zh": "沿海防护林",
+          "ru": "Защитные леса побережья.",
+          "sourceUrls": [
+            "https://www.forestry.gov.cn/c/www/stfhljs.jhtml"
+          ],
+          "sourceOptionId": "o1"
+        },
+        {
+          "id": "o2",
+          "zh": "长江防护林",
+          "ru": "Защитные леса бассейна Янцзы.",
+          "sourceUrls": [
+            "https://www.forestry.gov.cn/c/www/stfhljs.jhtml"
+          ],
+          "sourceOptionId": "o2"
+        },
+        {
+          "id": "o3",
+          "zh": "太行山绿化",
+          "ru": "Озеленение гор Тайханшань.",
+          "sourceUrls": [
+            "https://www.forestry.gov.cn/c/www/stfhljs.jhtml"
+          ],
+          "sourceOptionId": "o3"
+        }
+      ],
+      "answerOptionId": "o4",
+      "explanationRu": "«Зелёной Великой стеной» называют 三北防护林 — систему защитных лесов Северо-Запада, северной части Северного Китая и западной части Северо-Востока. Её задачи включают защиту от ветра и песка и сохранение почв и воды.",
+      "sources": [
+        {
+          "url": "https://www.forestry.gov.cn/search/501731",
+          "title": "三北防护林体系建设工程简介 — 国家林业和草原局",
+          "shortQuote": "被誉为中国“绿色长城”"
+        },
+        {
+          "url": "https://www.forestry.gov.cn/c/www/stfhljs.jhtml",
+          "title": "防护林建设 — 国家林业和草原局",
+          "shortQuote": "太行山绿化"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "三北",
+          "防护林",
+          "绿色长城",
+          "Зелёная Великая стена",
+          "зеленая стена",
+          "зелёная стена"
+        ],
+        "matchingIds": [],
+        "reason": "Во всех 1269 карточках, подписях, пояснениях, досье, резерве и прежних proposals нет этого лесозащитного проекта. Материалы о каменной Великой стене не раскрывают экологический проект."
+      },
+      "difficultyNote": "Средняя: требуется знать крупный проект природопользования. Все 4 варианта — реальные государственные лесозащитные программы и имеют по 5 иероглифов.",
+      "reviewNumber": 9,
+      "id": "preview-gap2-09",
+      "sourceLocalId": "gap2-geo-03-three-north",
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "bankId": "addition-gap2-09",
+      "publicationAuthorized": true
+    },
+    {
+      "priority": "main",
+      "questionRu": "Как называют сезон затяжных дождей начала лета в среднем и нижнем течении Янцзы?",
+      "type": "factual",
+      "topic": "Крупная география и климат Китая",
+      "gapClosed": "Узнаваемое сезонное явление большого густонаселённого района Китая.",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "台风",
+          "ru": "Тайфун — тропический циклон западной части Тихого океана.",
+          "sourceUrls": [
+            "https://forecast.weather.gov/glossary.php?word=typhoon"
+          ]
+        },
+        {
+          "id": "o2",
+          "zh": "寒潮",
+          "ru": "Холодная волна — вторжение холодного воздуха, вызывающее сильное похолодание.",
+          "sourceUrls": [
+            "https://www.weather.gov/safety/cold"
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "沙尘暴",
+          "ru": "Пыльная буря — сильный ветер наполняет воздух песком и пылью.",
+          "sourceUrls": [
+            "https://forecast.weather.gov/glossary.php?word=dust%20storm"
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "梅雨",
+          "ru": "Мэйюй — «сливовые дожди»: название связано с созреванием слив.",
+          "sourceUrls": [
+            "https://www.shqp.gov.cn/shqp/ggfw/ztfwk/qxfw/kpxx/20231215/1152052.html",
+            "https://3g.wuhan.gov.cn/hdjl/rdhy/202506/t20250610_2593298.shtml"
+          ]
+        }
+      ],
+      "answerOptionId": "o4",
+      "explanationRu": "Мэйюй (梅雨), или «сливовые дожди», — сезон продолжительной дождливой погоды в районе среднего и нижнего течения Янцзы. Обычно он приходится на июнь — июль, когда созревают сливы. Конкретные даты начала и окончания меняются от года к году.",
+      "sources": [
+        {
+          "url": "https://www.shqp.gov.cn/shqp/ggfw/ztfwk/qxfw/kpxx/20231215/1152052.html",
+          "title": "上海市青浦区人民政府 — 什么是梅雨，为什么会有梅雨",
+          "shortQuote": "每年夏初……江淮流域常会出现的连阴雨天气"
+        },
+        {
+          "url": "https://www.ncc-cma.net/channel/news/newsid/10562",
+          "title": "国家气候中心 — 华北等地进入“七下八上”主汛期",
+          "shortQuote": "长江流域的梅雨趋于结束，转而进入高温伏旱期"
+        },
+        {
+          "url": "https://k.data.cma.cn/mekb/?id=42406&r=site%2Farticle",
+          "title": "中国气象局气象科学专业知识服务系统 — 华西秋雨",
+          "shortQuote": "华西地区秋季连阴雨的特殊天气现象"
+        },
+        {
+          "url": "https://k.data.cma.cn/mekb/?id=41889&r=site%2Farticle",
+          "title": "中国气象局气象科学专业知识服务系统 — 回南天",
+          "shortQuote": "生活环境中的物体表面凝结出水珠"
+        },
+        {
+          "url": "https://3g.wuhan.gov.cn/hdjl/rdhy/202506/t20250610_2593298.shtml",
+          "title": "武汉市人民政府 — 本轮降雨今日结束，武汉何时入梅？最新预报来了",
+          "shortQuote": "恰巧这段时间正逢梅子成熟期，因而被称为梅雨"
+        },
+        {
+          "url": "https://forecast.weather.gov/glossary.php?word=typhoon",
+          "title": "National Weather Service — Typhoon",
+          "shortQuote": "A tropical cyclone in the Western Pacific Ocean",
+          "verificationMethod": "direct-https-read-2026-11-10; /tmp/lingvo-gap2r-noaa.json and cold-sources.json"
+        },
+        {
+          "url": "https://www.weather.gov/safety/cold",
+          "title": "National Weather Service — Extreme Cold",
+          "shortQuote": "Cold air outbreaks can damage or kill produce",
+          "verificationMethod": "direct-https-read-2026-11-10; /tmp/lingvo-gap2r-noaa.json and cold-sources.json"
+        },
+        {
+          "url": "https://forecast.weather.gov/glossary.php?word=dust%20storm",
+          "title": "National Weather Service — Dust Storm",
+          "shortQuote": "strong winds and dust-filled air over an extensive area",
+          "verificationMethod": "direct-https-read-2026-11-10; /tmp/lingvo-gap2r-noaa.json and cold-sources.json"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "梅雨",
+          "мэйюй",
+          "сливов",
+          "华西秋雨",
+          "回南天",
+          "伏旱"
+        ],
+        "matchingIds": [],
+        "reason": "Проверены банк, все досье, резерв и прежние proposals. В источнике о воде для заваривания чая есть слово 梅雨, но подписи и пояснения не объясняют само явление, его район и сезон. Климатические вопросы банка посвящены поясам, контрасту севера и юга и площади гор; новый факт из них не выводится. Не повторяет ни один из 40 прежних gap-вопросов."
+      },
+      "difficultyNote": "Крупное сезонное явление Восточного Китая; редкие伏旱/华西秋雨/回南天 заменены знакомыми названиями погоды. Условие спрашивает именно сезон затяжных дождей, а не любое событие начала лета.",
+      "sourceLocalId": "gap2r-geo-03-meiyu",
+      "id": "preview-gap2r-10",
+      "reviewNumber": 10,
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "sourceVerificationNote": "NWS подтверждает общие физические определения. Здесь не применяются национальные численные пороги предупреждений. Для寒潮 используется общее описание вторжений холодного воздуха, а не формальное пороговое определение китайской метеослужбы.",
+      "bankId": "addition-gap2-10",
+      "publicationAuthorized": true
+    },
+    {
+      "reviewNumber": 11,
+      "id": "preview-gap2r-11-shikumen",
+      "sourceLocalId": "gap2r-replacement-shanghai-shikumen",
+      "status": "accepted-release-authorized",
+      "questionRu": "Как называют характерные для старого Шанхая (上海) дома, сочетающие китайские и западные черты?",
+      "questionZh": null,
+      "type": "factual",
+      "topic": "Культура, традиции и праздники",
+      "gapClosed": "Городская жилая архитектура: характерный для Шанхая тип домов.",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "四合院",
+          "ru": "Сыхэюань — дома вокруг внутреннего двора, особенно характерные для Пекина.",
+          "sourceUrls": [
+            "https://www.beijing.gov.cn/tsbj/sxym/202007/t20200713_1946380.html"
+          ]
+        },
+        {
+          "id": "o2",
+          "zh": "土楼",
+          "ru": "Тулоу — большие общинные дома с земляными стенами, особенно известные в Фуцзяни.",
+          "sourceUrls": [
+            "https://whc.unesco.org/en/list/1113/"
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "石库门",
+          "ru": "Шикумэнь — дома из кирпича и дерева, расположенные вдоль переулков.",
+          "sourceUrls": [
+            "https://english.shanghai.gov.cn/en-ScenicSpots/20231211/98e70b4d4c54401895104e4dee9f16d8.html"
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "窑洞",
+          "ru": "Яодун — традиционные пещерные жилища Лёссового плато.",
+          "sourceUrls": [
+            "http://politics.people.com.cn/n/2013/0731/c70731-22390444.html"
+          ]
+        }
+      ],
+      "answerOptionId": "o3",
+      "explanationRu": "Шикумэнь (石库门) — характерный тип городской жилой архитектуры старого Шанхая. Он соединяет традиционную планировку домов Цзяннани с западными влияниями. Дома из кирпича и дерева образуют плотную сеть переулков.",
+      "sources": [
+        {
+          "url": "https://english.shanghai.gov.cn/en-ScenicSpots/20231211/98e70b4d4c54401895104e4dee9f16d8.html",
+          "title": "Официальный портал Шанхая — кварталы шикумэнь",
+          "shortQuote": "blending traditional Jiangnan-style residences from the south of the lower reaches of the Yangtze River with Western influences.",
+          "verificationMethod": "Полный текст официальной страницы прочитан через web.open 2026-11-10; абзацы о смешении архитектуры, переулках и кирпично-деревянной конструкции."
+        },
+        {
+          "url": "https://www.beijing.gov.cn/tsbj/sxym/202007/t20200713_1946380.html",
+          "title": "北京传统民居——老北京四合院 — 首都之窗",
+          "shortQuote": "正房、倒座房、东西厢房围绕中间庭院",
+          "verificationMethod": "reuse-accepted-local: data/dossiers/ethnos.json / dw-siheyuan; новая загрузка не заявляется."
+        },
+        {
+          "url": "https://whc.unesco.org/en/list/1113/",
+          "title": "Fujian Tulou — UNESCO World Heritage Centre",
+          "shortQuote": "Fujian Tulou is a property of 46 buildings",
+          "verificationMethod": "reuse-accepted-local: data/dossiers/ethnos.json / dw-tulou; новая загрузка не заявляется."
+        },
+        {
+          "url": "http://politics.people.com.cn/n/2013/0731/c70731-22390444.html",
+          "title": "中国黄土高原约3000万人居住在各类型窑洞中 — Синьхуа",
+          "shortQuote": "窑洞是这一地区农民的主要民居",
+          "verificationMethod": "reuse-accepted-local: data/dossiers/ethnos.json / dw-yaodong; новая загрузка не заявляется."
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "石库门",
+          "石庫門",
+          "шикумэнь",
+          "шикум",
+          "里弄",
+          "лилун",
+          "традиционные дома Шанхая",
+          "каменные ворота"
+        ],
+        "matchingIds": [],
+        "reason": "Проверены все поля1269 записей, подписи и пояснения, все досье, реестр резерва, авторские вопросы и прежниеproposals. Шикумэнь, лилун и целевая связь с жилой архитектурой Шанхая не найдены. Имеющиеся задания о сыхэюань, тулоу и яодун раскрывают другие жилища; здесь они выступают однородными отвлекающими вариантами."
+      },
+      "difficultyNote": "Известный архитектурный образ Шанхая. Все4 варианта — типы традиционного китайского жилья; не спрашивается дата, отдельный переулок или местный мастер.",
+      "bankId": "addition-gap2-11",
+      "publicationAuthorized": true
+    },
+    {
+      "priority": "main",
+      "questionRu": "Как в Китае называют ежегодный 40-дневный период массовых поездок к родным?",
+      "type": "factual",
+      "topic": "Современное повседневное общество Китая",
+      "gapClosed": "Узнавание названия массового транспортного сезона по описанию; связь с новогодними поездками сохраняется.",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "暑运",
+          "ru": "Шуюнь — летний сезон перевозок, обычно в июле и августе.",
+          "sourceUrls": [
+            "https://jtj.wuhan.gov.cn/jtzx/zwdt/202609/t20260903_2842724_slhxq.shtml"
+          ]
+        },
+        {
+          "id": "o2",
+          "zh": "春运",
+          "ru": "Чуньюнь — обычно 15 дней до Праздника весны и 25 после него.",
+          "sourceUrls": [
+            "https://www.mot.gov.cn/xinwen/xinwenfabuhui/202601/t20260130_4199352.html"
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "黄金周",
+          "ru": "«Золотая неделя» — продолжительные праздничные каникулы с большим потоком туристов.",
+          "sourceUrls": [
+            "https://wglj.gz.gov.cn/gkmlpt/content/11/11031/post_11031445.html"
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "小长假",
+          "ru": "Короткие праздничные каникулы — например, во время Цинмина или Дуаньу.",
+          "sourceUrls": [
+            "https://www.ndrc.gov.cn/xxgk/jianyitianfuwen/qgrddbjyfwgk/202107/t20210708_1288439_ext.html"
+          ]
+        }
+      ],
+      "answerOptionId": "o2",
+      "explanationRu": "Чуньюнь (春运) — сезон особенно интенсивных поездок вокруг Праздника весны (春节). Многие работающие и учащиеся в других городах возвращаются к родным. Обычно транспортный сезон охватывает около 40 дней: 15 дней перед праздником и 25 после него.",
+      "sources": [
+        {
+          "url": "https://www.mot.gov.cn/xinwen/xinwenfabuhui/202601/t20260130_4199352.html",
+          "title": "交通运输部 — 2026年1月例行新闻发布会",
+          "shortQuote": "春节前15天、春节后25天",
+          "verificationMethod": "Сохранённый первичный источник прежней редакции вопроса."
+        },
+        {
+          "url": "https://jtj.wuhan.gov.cn/jtzx/zwdt/202609/t20260903_2842724_slhxq.shtml",
+          "title": "武汉市交通运输局 — 暑运期间，南航在汉运送旅客153万人次",
+          "shortQuote": "暑运从7月1日开始到8月31日结束",
+          "verificationMethod": "Первичный поисковый фрагмент официального сайта прочитан 2026-11-10."
+        },
+        {
+          "url": "https://wglj.gz.gov.cn/gkmlpt/content/11/11031/post_11031445.html",
+          "title": "广州市文化广电旅游局 — 2026国庆假期文旅统计",
+          "shortQuote": "国庆黄金周期间，全市累计接待游客1605万人次",
+          "verificationMethod": "Первичный поисковый фрагмент официального сайта прочитан 2026-11-10; используется только связь термина с праздничным туризмом."
+        },
+        {
+          "url": "https://www.ndrc.gov.cn/xxgk/jianyitianfuwen/qgrddbjyfwgk/202107/t20210708_1288439_ext.html",
+          "title": "国家发展改革委 — ответ о праздничных каникулах",
+          "shortQuote": "清明节、劳动节、端午节、中秋节",
+          "verificationMethod": "Первичный поисковый фрагмент прочитан 2026-11-10. Используется как свидетельство термина 小长假 и примеров праздников; действующий календарь и фиксированное число дней не утверждаются."
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "春运",
+          "чуньюнь",
+          "массовых поездок",
+          "пик поездок"
+        ],
+        "matchingIds": [],
+        "reason": "Это согласованная автором обратная постановка уже проверяемого факта: по описанию транспортного сезона требуется назвать 春运. Новая отдельная карточка не добавляется; прежний вопрос о празднике заменяется. Проверяемая связь чуньюня с новогодними поездками сохранена."
+      },
+      "difficultyNote": "Четыре реальных обозначения сезонных перевозок или праздничных периодов поездок. В условии нет 春, «чуньюнь» и названия праздника. Длительность40дней отличает транспортный сезон от праздничных каникул.",
+      "sourceLocalId": "gap2r-society-02-chunyun",
+      "id": "preview-gap2r-12",
+      "reviewNumber": 12,
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "bankId": "addition-gap2-12",
+      "publicationAuthorized": true
+    },
+    {
+      "priority": "main",
+      "questionRu": "Как называют дополнительный месяц, который периодически вводят в традиционный китайский календарь для согласования с солнечным годом?",
+      "type": "factual",
+      "topic": "Культура, традиции и праздники",
+      "gapClosed": "Лунно-солнечный календарь: роль вставного месяца в сохранении связи месяцев с сезонами.",
+      "options": [
+        {
+          "id": "o2",
+          "zh": "闰月",
+          "ru": "Вставной месяц; в году с ним бывает 13 месяцев.",
+          "sourceUrls": [
+            "https://www.weather.gov.hk/sc/education/astronomy-and-time/time-service/00413-the-chinese-agricultural-calendar-explained.html"
+          ],
+          "sourceOptionId": "o2"
+        },
+        {
+          "id": "o3",
+          "zh": "腊月",
+          "ru": "Традиционное название 12 месяца года.",
+          "sourceUrls": [
+            "https://dict.concised.moe.edu.tw/dictView.jsp?ID=13210&la=0&powerMode=0"
+          ],
+          "sourceOptionId": "o3"
+        },
+        {
+          "id": "o4",
+          "zh": "小月",
+          "ru": "Лунный месяц продолжительностью 29 дней.",
+          "sourceUrls": [
+            "https://www.hko.gov.hk/tc/天文台網誌/109092/2025年起連續五年沒有年三十"
+          ],
+          "sourceOptionId": "o4"
+        },
+        {
+          "id": "o1",
+          "zh": "大月",
+          "ru": "Лунный месяц продолжительностью 30 дней.",
+          "sourceUrls": [
+            "https://www.hko.gov.hk/tc/天文台網誌/109092/2025年起連續五年沒有年三十"
+          ],
+          "sourceOptionId": "o1"
+        }
+      ],
+      "answerOptionId": "o2",
+      "explanationRu": "闰月 — вставной месяц лунно-солнечного календаря. 12 лунных месяцев короче солнечного года примерно на 11 дней, поэтому периодически добавляют целый месяц. Это позволяет сохранять соответствие календарных месяцев временам года.",
+      "sources": [
+        {
+          "url": "https://www.weather.gov.hk/sc/education/astronomy-and-time/time-service/00413-the-chinese-agricultural-calendar-explained.html",
+          "title": "香港天文台 — 农历历法解说",
+          "shortQuote": "由于12个「朔望月」只有354.3672日"
+        },
+        {
+          "url": "https://www.hko.gov.hk/tc/天文台網誌/109092/2025年起連續五年沒有年三十",
+          "title": "香港天文台 — 2025年起連續五年沒有年三十",
+          "shortQuote": "「小月」29日和「大月」30日"
+        },
+        {
+          "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=13210&la=0&powerMode=0",
+          "title": "教育部《國語辭典簡編本》 — 臘月",
+          "shortQuote": "農曆十二月"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "闰月",
+          "置闰",
+          "вставной месяц",
+          "дополнительный месяц",
+          "лунно-солнечный календарь"
+        ],
+        "matchingIds": [
+          "2015-16-zak-10",
+          "holidays-q35",
+          "holidays-q36"
+        ],
+        "reason": "Близкие карточки привязывают праздники к лунным датам либо объясняют солнечную дату Цинмин. Проверка их пояснений и всех общих подписей не обнаружила принципа вставного месяца. Он отсутствует и в досье, резерве и прежних proposals; новый вопрос не повторяет дату праздника."
+      },
+      "difficultyNote": "Средний, ближе к нижней границе: все 4 варианта — названия месяцев традиционного календаря одинаковой длины. Проверяется принцип календаря, а не только перевод 闰.",
+      "reviewNumber": 13,
+      "id": "preview-gap2-13",
+      "sourceLocalId": "society-gap2-06-runyue",
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "bankId": "addition-gap2-13",
+      "publicationAuthorized": true
+    },
+    {
+      "questionRu": "Как по конструкции называется традиционный веер, рёбра которого складываются вокруг общей оси?",
+      "type": "factual",
+      "topic": "Культура, традиции и праздники",
+      "gapClosed": "Наглядное различение распространённых видов вееров по устройству.",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "团扇",
+          "ru": "Туаньшань — нескладной веер, часто круглый, с бумажной или шёлковой поверхностью.",
+          "sourceUrls": [
+            "https://www.dpm.org.cn/Uploads/File/2019/08/28/u5d663ca639987.pdf",
+            "https://www.dpm.org.cn/Uploads/pdf/5065/T00061_00.pdf"
+          ]
+        },
+        {
+          "id": "o2",
+          "zh": "羽扇",
+          "ru": "Перьевой веер — его поверхность составляют птичьи перья.",
+          "sourceUrls": [
+            "https://www.dpm.org.cn/Uploads/File/2019/08/28/u5d663ca639987.pdf"
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "折扇",
+          "ru": "Чжэшань — складной веер; его поверхность украшают живописью и каллиграфией.",
+          "sourceUrls": [
+            "https://www.dpm.org.cn/Uploads/File/2019/08/28/u5d663ca639987.pdf",
+            "https://www.dpm.org.cn/Uploads/pdf/5065/T00061_00.pdf"
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "蒲扇",
+          "ru": "Пальмовый веер — плоский веер из широкого листа пальмы.",
+          "sourceUrls": [
+            "https://www.dpm.org.cn/Uploads/File/2019/08/28/u5d663ca639987.pdf"
+          ]
+        }
+      ],
+      "answerOptionId": "o3",
+      "explanationRu": "折扇 — название складной конструкции. В обычном развёрнутом виде её рёбра расходятся веером от общего крепления. 团扇 обычно остаётся на жёсткой рамке; 羽扇 и蒲扇 называют по материалу.",
+      "sources": [
+        {
+          "url": "https://www.dpm.org.cn/Uploads/File/2019/08/28/u5d663ca639987.pdf",
+          "title": "故宫博物院 — 几种常见的扇子",
+          "shortQuote": "不可折叠的平扇及可折叠的折扇；羽扇、蒲扇",
+          "verificationMethod": "web-search-excerpt"
+        },
+        {
+          "url": "https://www.dpm.org.cn/Uploads/pdf/5065/T00061_00.pdf",
+          "title": "故宫博物院 — исследование традиционных вееров",
+          "shortQuote": "团扇(纨扇)和羽扇；折扇",
+          "verificationMethod": "web-search-excerpt"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "折扇",
+          "团扇",
+          "羽扇",
+          "蒲扇",
+          "складной веер"
+        ],
+        "matchingIds": [],
+        "reason": "Все поля1269, досье, резерв и предыдущиепредложения сверены: типы вееров и механизм складывания не раскрыты. Новый вопрос не спрашивает локальный центр ремесла, автора или дату."
+      },
+      "difficultyNote": "Знакомый предмет и наглядное устройство; 4 названия вееров. Не требуется знать местный промысел.",
+      "sourceLocalId": "gap2r-root-folding-fan",
+      "id": "preview-gap2r-14",
+      "reviewNumber": 14,
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "bankId": "addition-gap2-14",
+      "publicationAuthorized": true
+    },
+    {
+      "questionRu": "В китайском поучительном рассказе лиса идёт впереди тигра, и звери разбегаются. К какому жанру относится такой рассказ?",
+      "type": "situational",
+      "topic": "Литература и народная словесность",
+      "gapClosed": "Узнавание жанра китайской басни или притчи по знакомой поучительной истории.",
+      "options": [
+        {
+          "id": "o1",
+          "zh": "寓言",
+          "ru": "Притча или басня; героями бывают люди и олицетворённые животные.",
+          "sourceUrls": [
+            "https://dict.concised.moe.edu.tw/dictView.jsp?ID=44476&la=0&powerMode=0"
+          ]
+        },
+        {
+          "id": "o2",
+          "zh": "神话",
+          "ru": "Миф о богах, происхождении мира, обычаев и верований.",
+          "sourceUrls": [
+            "https://dict.revised.moe.edu.tw/dictView.jsp?ID=131427&la=0&powerMode=0"
+          ]
+        },
+        {
+          "id": "o3",
+          "zh": "传说",
+          "ru": "Народное предание о человеке или событии, часто связанное с историей.",
+          "sourceUrls": [
+            "https://dict.concised.moe.edu.tw/dictView.jsp?ID=32858&la=0&powerMode=0"
+          ]
+        },
+        {
+          "id": "o4",
+          "zh": "童话",
+          "ru": "Детская сказка с фантастическими событиями, развивающая воображение.",
+          "sourceUrls": [
+            "https://dict.concised.moe.edu.tw/dictView.jsp?ID=12052&la=0&powerMode=0"
+          ]
+        }
+      ],
+      "answerOptionId": "o1",
+      "explanationRu": "Это 寓言 — короткое иносказательное повествование с поучительным смыслом. В примере пересказан сюжет 狐假虎威: лиса пользуется страхом зверей перед тигром. Классификация опирается на словарное определение жанра.",
+      "sources": [
+        {
+          "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=44476&la=0&powerMode=0",
+          "title": "教育部《國語辭典簡編本》 — 寓言",
+          "shortQuote": "表達某種哲理或隱含訓誨教育作用的文體。"
+        },
+        {
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=131427&la=0&powerMode=0",
+          "title": "教育部《重編國語辭典修訂本》 — 神話",
+          "shortQuote": "關於天地的初創、神靈的奇蹟"
+        },
+        {
+          "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=32858&la=0&powerMode=0",
+          "title": "教育部《國語辭典簡編本》 — 傳說",
+          "shortQuote": "內容多附會史實而有所改易"
+        },
+        {
+          "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=12052&la=0&powerMode=0",
+          "title": "教育部《國語辭典簡編本》 — 童話",
+          "shortQuote": "為兒童編寫的故事"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "寓言",
+          "狐假虎威",
+          "лиса",
+          "тигр",
+          "басня",
+          "притча"
+        ],
+        "matchingIds": [
+          "people-q09",
+          "people-q10"
+        ],
+        "reason": "Проверены все поля1269, досье, реестр, прежниеproposals и отдельный банк чэнъюй. Прежний кандидат守株待兔 снят: он уже содержит историю и группуfable вcy-守株待兔. В новой иллюстрации狐假虎威 не найден. Определение китайского жанрового термина寓言 ранее не проверяется; русские слова «притчи» в карточках Чжуан-цзы не дают этого различения."
+      },
+      "difficultyNote": "Общий жанр узнаётся по короткому наглядному сюжету; не требуется помнить автора, дату или название редкого сочинения. Для языкового блока.",
+      "proposedPlacement": "Языковой блок: типы повествования.",
+      "sourceLocalId": "gap2r-language-03-yuyan",
+      "id": "preview-gap2r-15",
+      "reviewNumber": 15,
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "bankId": "addition-gap2-15",
+      "publicationAuthorized": true
+    },
+    {
+      "priority": "backup",
+      "questionRu": "В музее показан бумажный оттиск надписи со стелы: бумагу прижали к камню и обработали тушью. Как называется такой оттиск?",
+      "type": "situational",
+      "topic": "Книжная культура и сохранение памятников",
+      "gapClosed": "Эстампаж как традиционный способ копировать надписи без переноса самого памятника.",
+      "options": [
+        {
+          "id": "o3",
+          "zh": "拓片",
+          "ru": "Тапянь — бумажный оттиск надписи или изображения с камня и других твёрдых поверхностей.",
+          "sourceUrls": [
+            "https://www.dpm.org.cn/lemmas/245196.html"
+          ],
+          "sourceOptionId": "o3"
+        },
+        {
+          "id": "o4",
+          "zh": "影印本",
+          "ru": "Инъиньбэнь — факсимильное издание с фотографическим воспроизведением оригинала.",
+          "sourceUrls": [
+            "https://dict.concised.moe.edu.tw/dictView.jsp?ID=42538&la=0&powerMode=0"
+          ],
+          "sourceOptionId": "o4"
+        },
+        {
+          "id": "o1",
+          "zh": "刻本",
+          "ru": "Кэбэнь — книга, напечатанная с резных досок.",
+          "sourceUrls": [
+            "https://dict.revised.moe.edu.tw/dictView.jsp?ID=76346&la=0&powerMode=0"
+          ],
+          "sourceOptionId": "o1"
+        },
+        {
+          "id": "o2",
+          "zh": "摹本",
+          "ru": "Мобэнь — копия живописи или каллиграфии, выполненная от руки.",
+          "sourceUrls": [
+            "https://dict.revised.moe.edu.tw/dictView.jsp?ID=27505&la=1&powerMode=0"
+          ],
+          "sourceOptionId": "o2"
+        }
+      ],
+      "answerOptionId": "o3",
+      "explanationRu": "拓片 — бумажный эстампаж. Бумагу прижимают к рельефу надписи или изображения и наносят тушь так, чтобы получить отпечаток поверхности. Такие оттиски позволяют изучать и распространять тексты стел и других памятников.",
+      "sources": [
+        {
+          "url": "https://www.dpm.org.cn/lemmas/245196.html",
+          "title": "故宫博物院：拓片",
+          "shortQuote": "用墨和纸将石碑或器物上的文字或图案捶拓下来称为拓片。"
+        },
+        {
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=76346&la=0&powerMode=0",
+          "title": "教育部《重編國語辭典修訂本》：刻本",
+          "shortQuote": "雕板印成的書籍。"
+        },
+        {
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=27505&la=1&powerMode=0",
+          "title": "教育部《重編國語辭典修訂本》：摹本",
+          "shortQuote": "依書畫原跡摹寫而成的本子。"
+        },
+        {
+          "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=42538&la=0&powerMode=0",
+          "title": "教育部《國語辭典簡編本》：影印",
+          "shortQuote": "將圖片文字直接經由影印機或照相印板複製。"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "拓片",
+          "拓印",
+          "эстампаж",
+          "оттиск со стелы"
+        ],
+        "matchingIds": [],
+        "reason": "В банке и прошлых предложениях целевой факт не раскрыт. В источнике досье sets о происхождении печати есть фоновое упоминание 拓印碑石, без объяснения термина 拓片 и способа снятия оттиска; это близкая техника, но не готовое знание для ответа."
+      },
+      "difficultyNote": "Умеренная: все варианты обозначают способы или результаты воспроизведения текстов и изображений; ситуация даёт существенные для решения признаки.",
+      "reviewNumber": 17,
+      "id": "preview-gap2-17",
+      "sourceLocalId": "gap2-h08-rubbing",
+      "status": "accepted-release-authorized",
+      "questionZh": null,
+      "bankId": "addition-gap2-17",
+      "publicationAuthorized": true
+    },
+    {
+      "priority": "main",
+      "questionRu": "Как называют китайские речения из 2 частей: образной загадки и следующего за ней объяснения?",
+      "type": "factual",
+      "topic": "Литература, язык, искусство и философия",
+      "gapClosed": "Речевая культура: устройство и название традиционного жанра двучастных иносказаний.",
+      "options": [
+        {
+          "id": "o3",
+          "zh": "成语",
+          "ru": "Устойчивые обороты, часто восходящие к старым текстам и историям.",
+          "sourceUrls": [
+            "https://dict.revised.moe.edu.tw/page.jsp?ID=20"
+          ],
+          "sourceOptionId": "o3"
+        },
+        {
+          "id": "o4",
+          "zh": "惯用语",
+          "ru": "Привычные устойчивые выражения разговорной речи.",
+          "sourceUrls": [
+            "https://dict.revised.moe.edu.tw/page.jsp?ID=21"
+          ],
+          "sourceOptionId": "o4"
+        },
+        {
+          "id": "o1",
+          "zh": "歇后语",
+          "ru": "Двучастное иносказание с образной первой частью и разгадкой.",
+          "sourceUrls": [
+            "https://dict.revised.moe.edu.tw/page.jsp?ID=23"
+          ],
+          "sourceOptionId": "o1"
+        },
+        {
+          "id": "o2",
+          "zh": "谚语",
+          "ru": "Пословицы и устойчивые народные изречения.",
+          "sourceUrls": [
+            "https://dict.revised.moe.edu.tw/page.jsp?ID=22"
+          ],
+          "sourceOptionId": "o2"
+        }
+      ],
+      "answerOptionId": "o1",
+      "explanationRu": "歇后语 обычно состоит из образной предпосылки и поясняющей развязки. Вторая часть раскрывает смысл или игру слов. Это отдельный тип устойчивых речений, а не любое выражение из 4 иероглифов.",
+      "sources": [
+        {
+          "url": "https://dict.revised.moe.edu.tw/page.jsp?ID=23",
+          "title": "教育部《重編國語辭典修訂本》 — 歇後語語詞基本體例",
+          "shortQuote": "前半部的前提如同謎面；後半部的說明則像謎底"
+        },
+        {
+          "url": "https://dict.revised.moe.edu.tw/page.jsp?ID=22",
+          "title": "教育部《重編國語辭典修訂本》 — 諺語語詞基本體例",
+          "shortQuote": "包含一般之諺語、俗語、名言等三類固定語"
+        },
+        {
+          "url": "https://dict.revised.moe.edu.tw/page.jsp?ID=20",
+          "title": "教育部《重編國語辭典修訂本》 — 成語語詞基本體例",
+          "shortQuote": "成語概有典源"
+        },
+        {
+          "url": "https://dict.revised.moe.edu.tw/page.jsp?ID=21",
+          "title": "教育部《重編國語辭典修訂本》 — 慣用語詞基本體例",
+          "shortQuote": "形式或似一般複詞，或似成語"
+        }
+      ],
+      "duplicateReview": {
+        "keywords": [
+          "歇后语",
+          "двучастное иносказание",
+          "двухчастное речение",
+          "разгадка",
+          "сеходюй"
+        ],
+        "matchingIds": [
+          "2019-20-mun-mosobl-49",
+          "2021-22-mun-lenobl-8",
+          "2025-26-mun-kursk-8"
+        ],
+        "reason": "В банке есть отдельные поговорки и образные названия человека, однако они проверяют географический смысл или значение конкретного выражения. Их пояснения и подписи не называют и не объясняют структуру 歇后语. Вопрос о жанре не восстанавливается из этих карточек; все досье и proposals также сверены."
+      },
+      "difficultyNote": "Средний уровень: 4 близких класса устойчивой речи. Условие описывает структуру жанра без китайского графического совпадения с ключом.",
+      "proposedPlacement": "Языковой блок / фразеология, отдельно от основного страноведческого пула.",
+      "reviewNumber": 19,
+      "id": "preview-gap2-19",
+      "sourceLocalId": "society-gap2-04-xiehouyu",
+      "status": "accepted-embedded-held-for-language-routing",
+      "questionZh": null,
+      "bankId": "addition-gap2-19",
+      "publicationAuthorized": false
+    }
+  ],
+  "researchExcluded": [
+    {
+      "localId": "gap2r-society-03-waste",
+      "reason": "Локальная шанхайская классификация салфетки слишком специальна для текущей калибровки."
+    },
+    {
+      "localId": "gap2r-geo-02-huanghe-sediment",
+      "reason": "Связь лёсса, эрозии и Хуанхэ уже почти выводится из старых описаний; пограничный смысловой повтор снят."
+    },
+    {
+      "localId": "old-yuyan-shouzhudaitu",
+      "reason": "守株待兔 уже есть в отдельном банке чэнъюй с историей и моралью; иллюстрация заменена."
+    },
+    {
+      "localId": "palace-material-only",
+      "reason": "Дерево как материал Гугуна уже раскрыто вlandmarks-q102. Сохранён отдельный механизм распределения нагрузки на каркас."
+    }
+  ],
+  "sourceCatalog": {
+    "https://wqwh.weiqi.org.cn/rules/": {
+      "url": "https://wqwh.weiqi.org.cn/rules/",
+      "title": "中国围棋规则 — 中国围棋协会",
+      "shortQuote": "棋子下定后，不再向其他点移动。",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.ihchina.cn/project_details/13813": {
+      "url": "https://www.ihchina.cn/project_details/13813",
+      "title": "象棋 — 中国非物质文化遗产网",
+      "shortQuote": "帅（将）及代表皇帝身边近卫的士只能在九宫中活动",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://handbook.fide.com/chapter/E012023": {
+      "url": "https://handbook.fide.com/chapter/E012023",
+      "title": "FIDE Laws of Chess — article 1.4.1",
+      "shortQuote": "checkmated’ the opponent’s king and to have won the game",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://dict.revised.moe.edu.tw/dictView.jsp?ID=159627&la=0&powerMode=0": {
+      "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=159627&la=0&powerMode=0",
+      "title": "五子棋 — 教育部《重編國語辭典修訂本》",
+      "shortQuote": "先把五個棋子連成一條線者為優勝。",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.stats.gov.cn/english/PressRelease/202512/t20251229_1962174.html": {
+      "url": "https://www.stats.gov.cn/english/PressRelease/202512/t20251229_1962174.html",
+      "title": "国家统计局 — Bulletin on the National Cotton Output in 2025",
+      "shortQuote": "National Total ... 664.1; Hebei ... 6.9; Shandong ... 12.8; Hubei ... 9.2; Xinjiang ... 616.5",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://w3c.github.io/clreq/zh/": {
+      "url": "https://w3c.github.io/clreq/zh/",
+      "title": "W3C — 中文排版需求, 橫排與直排的主要差異點",
+      "shortQuote": "文字由上而下，行由右而左排列。",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://hk.art.museum/sc/web/ma/resources/archive/education-resources/resources/vermillion-impressions-chinese-painting-and-calligraphy-seals.html": {
+      "url": "https://hk.art.museum/sc/web/ma/resources/archive/education-resources/resources/vermillion-impressions-chinese-painting-and-calligraphy-seals.html",
+      "title": "丹痕印记 ─ 中国书画的印章 — 香港艺术馆",
+      "shortQuote": "收藏家或鉴赏家的印章（表示作品曾为其收藏或鉴赏）",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.dpm.org.cn/curriculum/236594.html": {
+      "url": "https://www.dpm.org.cn/curriculum/236594.html",
+      "title": "巧刻乾隆印，玩转橡皮章 — 故宫博物院",
+      "shortQuote": "以加盖自己的收藏印章来彰显个人的审美品位。",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://sw.gz.gov.cn/swzx/gnmy/content/post_11016191.html": {
+      "url": "https://sw.gz.gov.cn/swzx/gnmy/content/post_11016191.html",
+      "title": "广州市商务局 — 广州早茶传统店",
+      "shortQuote": "早茶承载的内涵，远不止一壶清茶、几笼点心",
+      "verificationMethod": "web-search-excerpt",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html": {
+      "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page29.html",
+      "title": "国家移民管理局 — 中国饮食文化简介, p.29",
+      "shortQuote": "川菜（四川）、粤菜（广东）",
+      "verificationMethod": "reuse-accepted-local; data/dossiers/cuisine.json",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html": {
+      "url": "https://www.nia.gov.cn/2022cn/files/basic-html/page30.html",
+      "title": "国家移民管理局 — 中国饮食文化简介, p.30",
+      "shortQuote": "闽菜；浙菜",
+      "verificationMethod": "reuse-accepted-local; data/dossiers/cuisine.json",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.dpm.org.cn/lemmas/241317.html": {
+      "url": "https://www.dpm.org.cn/lemmas/241317.html",
+      "title": "吉祥图案 — 故宫博物院",
+      "shortQuote": "蝙蝠--福，喜鹊--喜庆，鱼--富足有余",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.dpm.org.cn/Uploads/File/2020/02/13/u5e452267046ae.pdf": {
+      "url": "https://www.dpm.org.cn/Uploads/File/2020/02/13/u5e452267046ae.pdf",
+      "title": "故宫学刊·2012 — традиционные благопожелательные мотивы",
+      "shortQuote": "“蝙蝠”的“蝠”与“福”同音",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.hkpm.org.hk/sc/the-ways-in-patterns-1": {
+      "url": "https://www.hkpm.org.hk/sc/the-ways-in-patterns-1",
+      "title": "“纹”以载道 — 香港故宫文化博物馆",
+      "shortQuote": "桃和蝙蝠的结合则象徵福寿双全。",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.dpm.org.cn/collection/embroider/229546.html": {
+      "url": "https://www.dpm.org.cn/collection/embroider/229546.html",
+      "title": "石青八团夔龙纹妆花缎袷褂 — 故宫博物院",
+      "shortQuote": "因鹤、鹿长寿，故常以“鹤鹿同春”用于祝寿之辞。",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://gaj.beijing.gov.cn/xxfb/jwbd/202410/t20241002_3911265.html": {
+      "url": "https://gaj.beijing.gov.cn/xxfb/jwbd/202410/t20241002_3911265.html",
+      "title": "北京市公安局 — 40年变迁背后，两代身份证的北京试点",
+      "shortQuote": "逐渐发展成带有芯片的可机读防伪卡片",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://gaj.beijing.gov.cn/hudong/rddf/202003/t20200331_1771804.html": {
+      "url": "https://gaj.beijing.gov.cn/hudong/rddf/202003/t20200331_1771804.html",
+      "title": "北京市公安局 — 公民身份号码的组成",
+      "shortQuote": "公民身份号码由18位组成",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.nia.gov.cn/n741440/n741547/c1014017/content.html": {
+      "url": "https://www.nia.gov.cn/n741440/n741547/c1014017/content.html",
+      "title": "国家移民管理局 — 中华人民共和国护照法",
+      "shortQuote": "出入国境和在国外证明国籍和身份的证件",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.shishi.gov.cn/zwgk/ztzl/lhzt/lyxx/hjgl/202105/t20210510_2555544.htm": {
+      "url": "https://www.shishi.gov.cn/zwgk/ztzl/lhzt/lyxx/hjgl/202105/t20210510_2555544.htm",
+      "title": "石狮市人民政府 — 居民户口簿",
+      "shortQuote": "具有证明公民身份状况和家庭成员间相互关系的效力",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.ynnh.gov.cn/info/38573/254186.htm": {
+      "url": "https://www.ynnh.gov.cn/info/38573/254186.htm",
+      "title": "南华县人民政府 — 云南省公安机关户籍业务办理工作规范",
+      "shortQuote": "证明公民身份和家庭关系的法定补充证明材料",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.dsedj.gov.mo/cre/tmag/03/topic05-5.htm": {
+      "url": "https://www.dsedj.gov.mo/cre/tmag/03/topic05-5.htm",
+      "title": "澳門教育及青年發展局《教師雜誌》 — 淺談書法教學速成法",
+      "shortQuote": "在空白練習紙上對帖臨寫",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://dict.concised.moe.edu.tw/dictView.jsp?ID=3773&la=0&powerMode=0": {
+      "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=3773&la=0&powerMode=0",
+      "title": "教育部《國語辭典簡編本》 — 默寫",
+      "shortQuote": "憑記憶把讀過的文字寫出來。",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://dict.revised.moe.edu.tw/dictView.jsp?ID=53725&la=0&powerMode=0": {
+      "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=53725&la=0&powerMode=0",
+      "title": "教育部《重編國語辭典修訂本》 — 聽寫",
+      "shortQuote": "由教師朗讀，令學生筆錄。",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.forestry.gov.cn/search/501731": {
+      "url": "https://www.forestry.gov.cn/search/501731",
+      "title": "三北防护林体系建设工程简介 — 国家林业和草原局",
+      "shortQuote": "被誉为中国“绿色长城”",
+      "checkedAt": "2026-11-09",
+      "authority": "primary",
+      "reuseNote": "Сохранено без изменений из исходной редакции; новая загрузка не заявляется."
+    },
+    "https://www.forestry.gov.cn/c/www/stfhljs.jhtml": {
+      "url": "https://www.forestry.gov.cn/c/www/stfhljs.jhtml",
+      "title": "防护林建设 — 国家林业和草原局",
+      "shortQuote": "太行山绿化",
+      "checkedAt": "2026-11-09",
+      "authority": "primary",
+      "reuseNote": "Сохранено без изменений из исходной редакции; новая загрузка не заявляется."
+    },
+    "https://www.shqp.gov.cn/shqp/ggfw/ztfwk/qxfw/kpxx/20231215/1152052.html": {
+      "url": "https://www.shqp.gov.cn/shqp/ggfw/ztfwk/qxfw/kpxx/20231215/1152052.html",
+      "title": "上海市青浦区人民政府 — 什么是梅雨，为什么会有梅雨",
+      "shortQuote": "每年夏初……江淮流域常会出现的连阴雨天气",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.ncc-cma.net/channel/news/newsid/10562": {
+      "url": "https://www.ncc-cma.net/channel/news/newsid/10562",
+      "title": "国家气候中心 — 华北等地进入“七下八上”主汛期",
+      "shortQuote": "长江流域的梅雨趋于结束，转而进入高温伏旱期",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://k.data.cma.cn/mekb/?id=42406&r=site%2Farticle": {
+      "url": "https://k.data.cma.cn/mekb/?id=42406&r=site%2Farticle",
+      "title": "中国气象局气象科学专业知识服务系统 — 华西秋雨",
+      "shortQuote": "华西地区秋季连阴雨的特殊天气现象",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://k.data.cma.cn/mekb/?id=41889&r=site%2Farticle": {
+      "url": "https://k.data.cma.cn/mekb/?id=41889&r=site%2Farticle",
+      "title": "中国气象局气象科学专业知识服务系统 — 回南天",
+      "shortQuote": "生活环境中的物体表面凝结出水珠",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://3g.wuhan.gov.cn/hdjl/rdhy/202506/t20250610_2593298.shtml": {
+      "url": "https://3g.wuhan.gov.cn/hdjl/rdhy/202506/t20250610_2593298.shtml",
+      "title": "武汉市人民政府 — 本轮降雨今日结束，武汉何时入梅？最新预报来了",
+      "shortQuote": "恰巧这段时间正逢梅子成熟期，因而被称为梅雨",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://forecast.weather.gov/glossary.php?word=typhoon": {
+      "url": "https://forecast.weather.gov/glossary.php?word=typhoon",
+      "title": "National Weather Service — Typhoon",
+      "shortQuote": "A tropical cyclone in the Western Pacific Ocean",
+      "verificationMethod": "direct-https-read-2026-11-10; /tmp/lingvo-gap2r-noaa.json and cold-sources.json",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.weather.gov/safety/cold": {
+      "url": "https://www.weather.gov/safety/cold",
+      "title": "National Weather Service — Extreme Cold",
+      "shortQuote": "Cold air outbreaks can damage or kill produce",
+      "verificationMethod": "direct-https-read-2026-11-10; /tmp/lingvo-gap2r-noaa.json and cold-sources.json",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://forecast.weather.gov/glossary.php?word=dust%20storm": {
+      "url": "https://forecast.weather.gov/glossary.php?word=dust%20storm",
+      "title": "National Weather Service — Dust Storm",
+      "shortQuote": "strong winds and dust-filled air over an extensive area",
+      "verificationMethod": "direct-https-read-2026-11-10; /tmp/lingvo-gap2r-noaa.json and cold-sources.json",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.dpm.org.cn/protect/talk/251272.html": {
+      "url": "https://www.dpm.org.cn/protect/talk/251272.html",
+      "title": "故宫古建大木构件典型残损问题分析——巩固擎天 — 故宫博物院",
+      "shortQuote": "柱子作为古建大木结构的重要承重构件之一",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://arch.hnu.edu.cn/info/1307/4894.htm": {
+      "url": "https://arch.hnu.edu.cn/info/1307/4894.htm",
+      "title": "没有承重墙没有地基，全用木头做的建筑，为啥可以600年不倒？ — 湖南大学建筑与规划学院",
+      "shortQuote": "木质的柱、梁、檩、枋等构件，承受来自楼面、屋面以及外力的载荷",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://zjw.beijing.gov.cn/bjjs/fwaqgl/ncjszdjshgjpx/nfjszdhjsgfbz/bzgf/743815669/2025103009321660189.pdf": {
+      "url": "https://zjw.beijing.gov.cn/bjjs/fwaqgl/ncjszdjshgjpx/nfjszdhjsgfbz/bzgf/743815669/2025103009321660189.pdf",
+      "title": "DB11/T 536-2021 农村民居建筑抗震设计施工规程 — 北京市住房和城乡建设委员会",
+      "shortQuote": "房屋的围护结构可采用砖砌体、砌块砌体、石砌体等。",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://kdl.gov.cn/Public/uploads/2021/12/13/20211213044611134697.pdf": {
+      "url": "https://kdl.gov.cn/Public/uploads/2021/12/13/20211213044611134697.pdf",
+      "title": "农村危房改造抗震安全基本要求（试行） — опубликовано органом местного самоуправления",
+      "shortQuote": "当采用生土材料砌筑或夯筑围护墙体时",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.mot.gov.cn/xinwen/xinwenfabuhui/202601/t20260130_4199352.html": {
+      "url": "https://www.mot.gov.cn/xinwen/xinwenfabuhui/202601/t20260130_4199352.html",
+      "title": "交通运输部 — 2026年1月例行新闻发布会",
+      "shortQuote": "春节前15天、春节后25天",
+      "verificationMethod": "Сохранённый первичный источник прежней редакции вопроса.",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.ihchina.cn/project_details/14907.html": {
+      "url": "https://www.ihchina.cn/project_details/14907.html",
+      "title": "清明节 — 中国非物质文化遗产网",
+      "shortQuote": "公历4月5日前后为清明节",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.ihchina.cn/project_details/14904.html": {
+      "url": "https://www.ihchina.cn/project_details/14904.html",
+      "title": "春节 — 中国非物质文化遗产网",
+      "shortQuote": "是一年中最隆重的节日",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.ihchina.cn/project_details/14911.html": {
+      "url": "https://www.ihchina.cn/project_details/14911.html",
+      "title": "端午节 — 中国非物质文化遗产网",
+      "shortQuote": "时在农历五月初五",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.ihchina.cn/project_details/14931.html": {
+      "url": "https://www.ihchina.cn/project_details/14931.html",
+      "title": "中秋节 — 中国非物质文化遗产网",
+      "shortQuote": "农历八月十五是中秋节",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.weather.gov.hk/sc/education/astronomy-and-time/time-service/00413-the-chinese-agricultural-calendar-explained.html": {
+      "url": "https://www.weather.gov.hk/sc/education/astronomy-and-time/time-service/00413-the-chinese-agricultural-calendar-explained.html",
+      "title": "香港天文台 — 农历历法解说",
+      "shortQuote": "由于12个「朔望月」只有354.3672日",
+      "checkedAt": "2026-11-09",
+      "authority": "primary",
+      "reuseNote": "Сохранено без изменений из исходной редакции; новая загрузка не заявляется."
+    },
+    "https://www.hko.gov.hk/tc/天文台網誌/109092/2025年起連續五年沒有年三十": {
+      "url": "https://www.hko.gov.hk/tc/天文台網誌/109092/2025年起連續五年沒有年三十",
+      "title": "香港天文台 — 2025年起連續五年沒有年三十",
+      "shortQuote": "「小月」29日和「大月」30日",
+      "checkedAt": "2026-11-09",
+      "authority": "primary",
+      "reuseNote": "Сохранено без изменений из исходной редакции; новая загрузка не заявляется."
+    },
+    "https://dict.concised.moe.edu.tw/dictView.jsp?ID=13210&la=0&powerMode=0": {
+      "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=13210&la=0&powerMode=0",
+      "title": "教育部《國語辭典簡編本》 — 臘月",
+      "shortQuote": "農曆十二月",
+      "checkedAt": "2026-11-09",
+      "authority": "primary",
+      "reuseNote": "Сохранено без изменений из исходной редакции; новая загрузка не заявляется."
+    },
+    "https://www.dpm.org.cn/Uploads/File/2019/08/28/u5d663ca639987.pdf": {
+      "url": "https://www.dpm.org.cn/Uploads/File/2019/08/28/u5d663ca639987.pdf",
+      "title": "故宫博物院 — 几种常见的扇子",
+      "shortQuote": "不可折叠的平扇及可折叠的折扇；羽扇、蒲扇",
+      "verificationMethod": "web-search-excerpt",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.dpm.org.cn/Uploads/pdf/5065/T00061_00.pdf": {
+      "url": "https://www.dpm.org.cn/Uploads/pdf/5065/T00061_00.pdf",
+      "title": "故宫博物院 — исследование традиционных вееров",
+      "shortQuote": "团扇(纨扇)和羽扇；折扇",
+      "verificationMethod": "web-search-excerpt",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://dict.concised.moe.edu.tw/dictView.jsp?ID=44476&la=0&powerMode=0": {
+      "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=44476&la=0&powerMode=0",
+      "title": "教育部《國語辭典簡編本》 — 寓言",
+      "shortQuote": "表達某種哲理或隱含訓誨教育作用的文體。",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://dict.revised.moe.edu.tw/dictView.jsp?ID=131427&la=0&powerMode=0": {
+      "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=131427&la=0&powerMode=0",
+      "title": "教育部《重編國語辭典修訂本》 — 神話",
+      "shortQuote": "關於天地的初創、神靈的奇蹟",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://dict.concised.moe.edu.tw/dictView.jsp?ID=32858&la=0&powerMode=0": {
+      "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=32858&la=0&powerMode=0",
+      "title": "教育部《國語辭典簡編本》 — 傳說",
+      "shortQuote": "內容多附會史實而有所改易",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://dict.concised.moe.edu.tw/dictView.jsp?ID=12052&la=0&powerMode=0": {
+      "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=12052&la=0&powerMode=0",
+      "title": "教育部《國語辭典簡編本》 — 童話",
+      "shortQuote": "為兒童編寫的故事",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.dpm.org.cn/lemmas/245196.html": {
+      "url": "https://www.dpm.org.cn/lemmas/245196.html",
+      "title": "故宫博物院：拓片",
+      "shortQuote": "用墨和纸将石碑或器物上的文字或图案捶拓下来称为拓片。",
+      "checkedAt": "2026-11-09",
+      "authority": "primary",
+      "reuseNote": "Сохранено без изменений из исходной редакции; новая загрузка не заявляется."
+    },
+    "https://dict.revised.moe.edu.tw/dictView.jsp?ID=76346&la=0&powerMode=0": {
+      "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=76346&la=0&powerMode=0",
+      "title": "教育部《重編國語辭典修訂本》：刻本",
+      "shortQuote": "雕板印成的書籍。",
+      "checkedAt": "2026-11-09",
+      "authority": "primary",
+      "reuseNote": "Сохранено без изменений из исходной редакции; новая загрузка не заявляется."
+    },
+    "https://dict.revised.moe.edu.tw/dictView.jsp?ID=27505&la=1&powerMode=0": {
+      "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=27505&la=1&powerMode=0",
+      "title": "教育部《重編國語辭典修訂本》：摹本",
+      "shortQuote": "依書畫原跡摹寫而成的本子。",
+      "checkedAt": "2026-11-09",
+      "authority": "primary",
+      "reuseNote": "Сохранено без изменений из исходной редакции; новая загрузка не заявляется."
+    },
+    "https://dict.concised.moe.edu.tw/dictView.jsp?ID=42538&la=0&powerMode=0": {
+      "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=42538&la=0&powerMode=0",
+      "title": "教育部《國語辭典簡編本》：影印",
+      "shortQuote": "將圖片文字直接經由影印機或照相印板複製。",
+      "checkedAt": "2026-11-09",
+      "authority": "primary",
+      "reuseNote": "Сохранено без изменений из исходной редакции; новая загрузка не заявляется."
+    },
+    "https://dict.revised.moe.edu.tw/page.jsp?ID=23": {
+      "url": "https://dict.revised.moe.edu.tw/page.jsp?ID=23",
+      "title": "教育部《重編國語辭典修訂本》 — 歇後語語詞基本體例",
+      "shortQuote": "前半部的前提如同謎面；後半部的說明則像謎底",
+      "checkedAt": "2026-11-09",
+      "authority": "primary",
+      "reuseNote": "Сохранено без изменений из исходной редакции; новая загрузка не заявляется."
+    },
+    "https://dict.revised.moe.edu.tw/page.jsp?ID=22": {
+      "url": "https://dict.revised.moe.edu.tw/page.jsp?ID=22",
+      "title": "教育部《重編國語辭典修訂本》 — 諺語語詞基本體例",
+      "shortQuote": "包含一般之諺語、俗語、名言等三類固定語",
+      "checkedAt": "2026-11-09",
+      "authority": "primary",
+      "reuseNote": "Сохранено без изменений из исходной редакции; новая загрузка не заявляется."
+    },
+    "https://dict.revised.moe.edu.tw/page.jsp?ID=20": {
+      "url": "https://dict.revised.moe.edu.tw/page.jsp?ID=20",
+      "title": "教育部《重編國語辭典修訂本》 — 成語語詞基本體例",
+      "shortQuote": "成語概有典源",
+      "checkedAt": "2026-11-09",
+      "authority": "primary",
+      "reuseNote": "Сохранено без изменений из исходной редакции; новая загрузка не заявляется."
+    },
+    "https://dict.revised.moe.edu.tw/page.jsp?ID=21": {
+      "url": "https://dict.revised.moe.edu.tw/page.jsp?ID=21",
+      "title": "教育部《重編國語辭典修訂本》 — 慣用語詞基本體例",
+      "shortQuote": "形式或似一般複詞，或似成語",
+      "checkedAt": "2026-11-09",
+      "authority": "primary",
+      "reuseNote": "Сохранено без изменений из исходной редакции; новая загрузка не заявляется."
+    },
+    "https://english.shanghai.gov.cn/en-ScenicSpots/20231211/98e70b4d4c54401895104e4dee9f16d8.html": {
+      "url": "https://english.shanghai.gov.cn/en-ScenicSpots/20231211/98e70b4d4c54401895104e4dee9f16d8.html",
+      "title": "Официальный портал Шанхая — кварталы шикумэнь",
+      "shortQuote": "blending traditional Jiangnan-style residences from the south of the lower reaches of the Yangtze River with Western influences.",
+      "verificationMethod": "Полный текст официальной страницы прочитан через web.open 2026-11-10; абзацы о смешении архитектуры, переулках и кирпично-деревянной конструкции.",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.beijing.gov.cn/tsbj/sxym/202007/t20200713_1946380.html": {
+      "url": "https://www.beijing.gov.cn/tsbj/sxym/202007/t20200713_1946380.html",
+      "title": "北京传统民居——老北京四合院 — 首都之窗",
+      "shortQuote": "正房、倒座房、东西厢房围绕中间庭院",
+      "verificationMethod": "reuse-accepted-local: data/dossiers/ethnos.json / dw-siheyuan; новая загрузка не заявляется.",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://whc.unesco.org/en/list/1113/": {
+      "url": "https://whc.unesco.org/en/list/1113/",
+      "title": "Fujian Tulou — UNESCO World Heritage Centre",
+      "shortQuote": "Fujian Tulou is a property of 46 buildings",
+      "verificationMethod": "reuse-accepted-local: data/dossiers/ethnos.json / dw-tulou; новая загрузка не заявляется.",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "http://politics.people.com.cn/n/2013/0731/c70731-22390444.html": {
+      "url": "http://politics.people.com.cn/n/2013/0731/c70731-22390444.html",
+      "title": "中国黄土高原约3000万人居住在各类型窑洞中 — Синьхуа",
+      "shortQuote": "窑洞是这一地区农民的主要民居",
+      "verificationMethod": "reuse-accepted-local: data/dossiers/ethnos.json / dw-yaodong; новая загрузка не заявляется.",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://jtj.wuhan.gov.cn/jtzx/zwdt/202609/t20260903_2842724_slhxq.shtml": {
+      "url": "https://jtj.wuhan.gov.cn/jtzx/zwdt/202609/t20260903_2842724_slhxq.shtml",
+      "title": "武汉市交通运输局 — 暑运期间，南航在汉运送旅客153万人次",
+      "shortQuote": "暑运从7月1日开始到8月31日结束",
+      "verificationMethod": "Первичный поисковый фрагмент официального сайта прочитан 2026-11-10.",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://wglj.gz.gov.cn/gkmlpt/content/11/11031/post_11031445.html": {
+      "url": "https://wglj.gz.gov.cn/gkmlpt/content/11/11031/post_11031445.html",
+      "title": "广州市文化广电旅游局 — 2026国庆假期文旅统计",
+      "shortQuote": "国庆黄金周期间，全市累计接待游客1605万人次",
+      "verificationMethod": "Первичный поисковый фрагмент официального сайта прочитан 2026-11-10; используется только связь термина с праздничным туризмом.",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    },
+    "https://www.ndrc.gov.cn/xxgk/jianyitianfuwen/qgrddbjyfwgk/202107/t20210708_1288439_ext.html": {
+      "url": "https://www.ndrc.gov.cn/xxgk/jianyitianfuwen/qgrddbjyfwgk/202107/t20210708_1288439_ext.html",
+      "title": "国家发展改革委 — ответ о праздничных каникулах",
+      "shortQuote": "清明节、劳动节、端午节、中秋节",
+      "verificationMethod": "Первичный поисковый фрагмент прочитан 2026-11-10. Используется как свидетельство термина 小长假 и примеров праздников; действующий календарь и фиксированное число дней не утверждаются.",
+      "checkedAt": "2026-11-10",
+      "authority": "primary"
+    }
+  },
+  "independentReview": {
+    "report": "data/review/2026-11-10-gap-batch-2-revised-review.md",
+    "localSemanticReviewComplete": true,
+    "freshIndependentWebPassComplete": false,
+    "editorFollowupComplete": true,
+    "resolved": [
+      "Шанхайская салфетка исключена.",
+      "Лёссовое плато как пограничный смысловой повтор исключено.",
+      "Сохранён механизм дворцового каркаса; вопрос о материале не включён.",
+      "Повторныйсюжет守株待兔 исключён; использован другой короткий пример жанра.",
+      "Погодные дистракторы заменены распространёнными явлениями, определения подтверждены NWS.",
+      "Вопрос о печатях уточняет непосредственно фиксируемые сведения.",
+      "Для углов страницы добавлены различия по направлению чтения.",
+      "Для складного веера явно назван конструктивный признак."
+    ],
+    "currentRevisionEditorCheckComplete": true,
+    "currentRevisionIndependentReviewRepeated": false,
+    "currentRevisionScope": "По прямому запросу автора перестроен №12: изменены условие, четыре варианта и подписи; правильный текст теперь春运. Остальные16 объектов сохранены. Выполнена редакторская сверка первичных материалов, отдельный независимый проход не повторялся."
+  },
+  "previousManifestHash": "6f239a5ae2ee8e332470ed153d89b1aa28a91f3c30e01bc52c24bf2dd4dd7258",
+  "previousSnapshot": "data/review/2026-11-10-gap-batch-2-revised-before-chunyun-answer-proposals.json",
+  "latestAuthorChanges": {
+    "date": "2026-11-10",
+    "reworkedNumber": 12,
+    "questionDirection": "Описание явления → название транспортного сезона",
+    "correctAnswerFrom": "春节",
+    "correctAnswerTo": "春运",
+    "allFourOptionsReplaced": true,
+    "sameUnderlyingFact": true,
+    "other16QuestionObjectsUnchanged": true,
+    "publicationAuthorized": false,
+    "embeddingAuthorized": false
+  },
+  "manifestHash": "1eab586a0630c2cc52fe4e6c42e6cbbc9e1d02f4a4fb85c975f497c46a7d6f11",
+  "embeddingApplication": "data/review/2026-11-10-gap-batch-2-embedding-application.json",
+  "authorAcceptance": {
+    "date": "2026-11-10",
+    "numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      19
+    ],
+    "instruction": "Встраивай все 17 вопросов, проверь подписи и взаимные подсказки. Пока не публикуй."
+  },
+  "currentEmbeddingReview": {
+    "date": "2026-11-10",
+    "report": "data/review/2026-11-10-gap-batch-2-embedding-review.md",
+    "checks": "data/review/2026-11-10-gap-batch-2-embedding-checks.json",
+    "freshIndependentReview": "data/review/2026-11-10-gap-batch-2-embedding-independent-review.json",
+    "publicationAuthorized": false
+  },
+  "publicationAuthorizedForIds": [
+    "addition-gap2-01",
+    "addition-gap2-02",
+    "addition-gap2-03",
+    "addition-gap2-04",
+    "addition-gap2-05",
+    "addition-gap2-06",
+    "addition-gap2-07",
+    "addition-gap2-08",
+    "addition-gap2-09",
+    "addition-gap2-10",
+    "addition-gap2-11",
+    "addition-gap2-12",
+    "addition-gap2-13",
+    "addition-gap2-14",
+    "addition-gap2-15",
+    "addition-gap2-17"
+  ],
+  "publicationExcludedReviewNumbers": [
+    19
+  ]
+}

@@ -1137,5 +1137,20 @@
       "verdict": "accept",
       "note": "Автор принял последние правки 17вопросов и09.11.2026пряморазрешил публикацию. Условия/варианты/ключи/подписи — immutableacceptedmanifestпартии8. Источники ивстраиваниепроверенытематически; общий выпуск проходитнезависимоеревью."
     }
+  },
+  {
+    "id": "holidays-q58",
+    "status": "accepted",
+    "embeds": "addition-gap2-13",
+    "fact": {
+      "table": "calendarmonths",
+      "row": "month-runyue",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted; local embedding only; publication forbidden."
+    }
   }
 ]
