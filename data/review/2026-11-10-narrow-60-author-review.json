@@ -1,13 +1,13 @@
 {
-  "status": "for-author-review-not-deleted",
+  "status": "author-review-complete",
   "items": [
     {
       "number": 1,
       "id": "2021-22-mun-amur-8",
-      "questionRu": "Кто считается «отцом китайской авиации», создавшим первый в Китае летательный аппарат?",
-      "questionZh": null,
       "reason": "«отец китайской авиации» Фэн Жу — узкая деталь",
-      "region": "Амурская область"
+      "region": "Амурская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 2,
@@ -16,24 +16,25 @@
       "questionZh": null,
       "reason": "День воинской славы в честь Куликовской битвы — узкая деталь",
       "region": "Московская область",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 3,
       "id": "2021-22-mun-sverd-59",
-      "questionRu": "Укажите перевод известной формулировки «пять в одном», прозвучавшей на XVIII съезде компартии Китая. Ее основное значение - комплексное развитие экономики, политики, культуры, социума и экологической культуры.",
-      "questionZh": null,
       "reason": "перевод лозунга «пять в одном» XVIII съезда КПК — узкая деталь",
-      "region": "Свердловская область"
+      "region": "Свердловская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 4,
       "id": "2021-22-mun-tat-54",
-      "questionRu": "Китайская кулинарная культура богата оттенками, богата разнообразием изысканных закусок, отличительных черт и уникальных вкусов. 三鲜豆皮 блюдо какой провинции?",
-      "questionZh": null,
       "reason": "三鲜豆皮 — местное блюдо Хубэя",
-      "region": "Татарстан"
+      "region": "Татарстан",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 5,
@@ -42,8 +43,9 @@
       "questionZh": null,
       "reason": "самая малочисленная народность Китая (лоба) — узкая деталь",
       "region": "Амурская область",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 6,
@@ -52,8 +54,9 @@
       "questionZh": null,
       "reason": "самая юная олимпийская чемпионка Китая — узкая деталь",
       "region": "Амурская область",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 7,
@@ -62,8 +65,9 @@
       "questionZh": null,
       "reason": "соцсеть 豆瓣 — узкая деталь",
       "region": "Амурская область",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 8,
@@ -72,40 +76,41 @@
       "questionZh": null,
       "reason": "вместимость стадиона «Птичье гнездо» — узкая деталь",
       "region": "Московская область",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 9,
       "id": "2022-23-mun-tat-9",
-      "questionRu": "Какова протяженность реки Хайхэ?",
-      "questionZh": null,
       "reason": "протяжённость реки Хайхэ — узкая деталь",
-      "region": "Татарстан"
+      "region": "Татарстан",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 10,
       "id": "2022-23-shk-mosobl-13",
-      "questionRu": "Какой собор не находится на территории Московского Кремля?",
-      "questionZh": null,
       "reason": "соборы Московского Кремля — узкая деталь",
-      "region": "Московская область"
+      "region": "Московская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 11,
       "id": "2023-24-mun-klg-9",
-      "questionRu": "Хуаси – «Деревня №1 Поднебесной». В ней расположены более 80 предприятий текстильной и металлургической промышленности, приносящие жителям миллионные прибыли. Чтобы привлечь туристов, в Хуаси построили парк всемирных достопримечательностей, изюминкой которого является небоскреб – отель «Лунси». Какова его высота?",
-      "questionZh": null,
       "reason": "высота здания в деревне Хуаси — узкая деталь",
-      "region": "Калужская область"
+      "region": "Калужская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 12,
       "id": "2023-24-mun-komi-1",
-      "questionRu": "Один из соборов Московского Кремля. Построен в 1475–1479 годах под руководством итальянского зодчего Аристотеля Фиораванти. Был главным кафедральным собором России вплоть до 1917 года.",
-      "questionZh": null,
       "reason": "соборы Московского Кремля — узкая деталь",
-      "region": "Коми"
+      "region": "Коми",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 13,
@@ -114,16 +119,17 @@
       "questionZh": null,
       "reason": "этажность Большой пагоды диких гусей — узкая деталь",
       "region": "Коми",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 14,
       "id": "2023-24-mun-krsk-8",
-      "questionRu": "Кто композитор знаменитой китайской песни “Битва за Тигровый холм”?",
-      "questionZh": null,
       "reason": "композитор песни «Битва за Тигровый холм» — узкая деталь",
-      "region": "Красноярский край"
+      "region": "Красноярский край",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 15,
@@ -132,24 +138,25 @@
       "questionZh": null,
       "reason": "памятник Жукову на Манежной площади — узкая деталь",
       "region": "Московская область",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "rejected-final",
+      "plannedBatch": 1,
+      "decisionReason": "Окончательно исключён автором после рассмотрения предложенной замены варианта B."
     },
     {
       "number": 16,
       "id": "2023-24-mun-spb-10",
-      "questionRu": "В каком году был открыт для движения самый большой автомобильный мост Благовещенск-Хэйхэ?",
-      "questionZh": null,
       "reason": "год открытия моста Благовещенск — Хэйхэ — узкая деталь",
-      "region": "Санкт-Петербург"
+      "region": "Санкт-Петербург",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 17,
       "id": "2023-24-mun-spb-5",
-      "questionRu": "Как называется самый древний в Китае и в мире труд по астрономии?",
-      "questionZh": null,
       "reason": "трактат 甘石星经 — узкая деталь",
-      "region": "Санкт-Петербург"
+      "region": "Санкт-Петербург",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 18,
@@ -158,24 +165,25 @@
       "questionZh": null,
       "reason": "сад дружбы в Петербурге — узкая деталь",
       "region": "Санкт-Петербург",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 19,
       "id": "2023-24-mun-sverd-54",
-      "questionRu": "Где находится «Река золотой воды» 金水河?",
-      "questionZh": null,
       "reason": "«Река золотой воды» 金水河 — узкая деталь",
-      "region": "Свердловская область"
+      "region": "Свердловская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 20,
       "id": "2023-24-mun-udm-3",
-      "questionRu": "К континентальной блокаде какой страны присоединилась России по условиям Тильзитского договора?",
-      "questionZh": null,
       "reason": "Тильзитский договор и континентальная блокада — узкая деталь",
-      "region": "Удмуртия"
+      "region": "Удмуртия",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 21,
@@ -184,16 +192,17 @@
       "questionZh": null,
       "reason": "какое море омывает Новосибирские острова — узкая деталь",
       "region": "Московская область",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 22,
       "id": "2023-24-shk-mosobl-14",
-      "questionRu": "Музыка какого композитора была использована в качестве гимна Российской Федерации на Олимпийских играх в Токио и Пекине?",
-      "questionZh": null,
       "reason": "музыка Чайковского вместо гимна на Олимпиадах — узкая деталь",
-      "region": "Московская область"
+      "region": "Московская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 23,
@@ -202,8 +211,9 @@
       "questionZh": null,
       "reason": "этажность «Лахта Центра» — узкая деталь",
       "region": "Московская область",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 24,
@@ -212,8 +222,9 @@
       "questionZh": null,
       "reason": "длина Большой кольцевой линии метро — узкая деталь",
       "region": "Московская область",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 25,
@@ -222,40 +233,40 @@
       "questionZh": null,
       "reason": "Решение автора 2026-11-03, C:cuisine-q86: вопросы на классификацию сортов чая сняты с тренировок. Прежняя ссылка in-bank → cuisine-q86 теперь ведёт в removed.json; региональный дубль также не добавляется.",
       "region": "Московская область",
-      "reviewStatus": "selected-for-consideration",
+      "reviewStatus": "rejected-final",
       "plannedBatch": 1
     },
     {
       "number": 26,
       "id": "2023-24-shk-mosobl-3",
-      "questionRu": "Каким морем на юго-востоке омывается республика Калмыкия?",
-      "questionZh": null,
       "reason": "какое море омывает Калмыкию — узкая деталь",
-      "region": "Московская область"
+      "region": "Московская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 27,
       "id": "2024-25-mun-krym-1",
-      "questionRu": "Какая площадь современного Пекина?",
-      "questionZh": null,
       "reason": "площадь современного Пекина — узкая деталь",
-      "region": "Крым"
+      "region": "Крым",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 28,
       "id": "2024-25-mun-mosobl-10",
-      "questionRu": "Какова высота самого высокого здания из семи «Сталинских высоток» в Москве?",
-      "questionZh": null,
       "reason": "высота «сталинской высотки» — узкая деталь",
-      "region": "Московская область"
+      "region": "Московская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 29,
       "id": "2024-25-mun-mosobl-2",
-      "questionRu": "Какая авиакомпания считается самой большой в Китае?",
-      "questionZh": null,
       "reason": "крупнейшая авиакомпания Китая — узкая деталь",
-      "region": "Московская область"
+      "region": "Московская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 30,
@@ -264,8 +275,9 @@
       "questionZh": null,
       "reason": "первый русский посланник в Китай — узкая деталь",
       "region": "Московская область",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 31,
@@ -274,8 +286,9 @@
       "questionZh": null,
       "reason": "панды в подарок Японии в VII веке — узкая деталь",
       "region": "Московская область",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 32,
@@ -284,8 +297,9 @@
       "questionZh": null,
       "reason": "центральный буддийский храм России — узкая деталь",
       "region": "Санкт-Петербург",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 33,
@@ -294,8 +308,9 @@
       "questionZh": null,
       "reason": "годы Великого посольства Петра I — узкая деталь",
       "region": "Санкт-Петербург",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 34,
@@ -304,8 +319,9 @@
       "questionZh": null,
       "reason": "какой субъект РФ граничит с Китаем (Республика Алтай) — узкая деталь",
       "region": "Санкт-Петербург",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 35,
@@ -314,8 +330,9 @@
       "questionZh": null,
       "reason": "сколько рек впадает в Байкал — узкая деталь",
       "region": "Санкт-Петербург",
-      "reviewStatus": "selected-for-consideration",
-      "plannedBatch": 1
+      "reviewStatus": "published",
+      "plannedBatch": 1,
+      "publicationDate": "2026-11-11"
     },
     {
       "number": 36,
@@ -324,16 +341,16 @@
       "questionZh": null,
       "reason": "саммит БРИКС в Сямыни 2017 — узкая деталь",
       "region": "Татарстан",
-      "reviewStatus": "selected-for-consideration",
+      "reviewStatus": "rejected-final",
       "plannedBatch": 1
     },
     {
       "number": 37,
       "id": "2024-25-mun-tat-56",
-      "questionRu": "Кто из нижеперечисленных китайских деятелей культуры является архитектором?",
-      "questionZh": null,
       "reason": "архитектор Ма Яньсун — узкая деталь",
-      "region": "Татарстан"
+      "region": "Татарстан",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 38,
@@ -342,7 +359,7 @@
       "questionZh": null,
       "reason": "год введения юлианского календаря — узкая деталь",
       "region": "Татарстан",
-      "reviewStatus": "selected-for-consideration",
+      "reviewStatus": "rejected-final",
       "plannedBatch": 1
     },
     {
@@ -359,10 +376,10 @@
     {
       "number": 40,
       "id": "2024-25-shk-mosobl-14",
-      "questionRu": "Кто из писателей относится к писателям-фронтовикам?",
-      "questionZh": null,
       "reason": "писатели-фронтовики — узкая деталь",
-      "region": "Московская область"
+      "region": "Московская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 41,
@@ -389,10 +406,10 @@
     {
       "number": 43,
       "id": "2024-25-shk-mosobl-4",
-      "questionRu": "Кто из писателей относится к писателям-фронтовикам?",
-      "questionZh": null,
       "reason": "писатели-фронтовики — узкая деталь",
-      "region": "Московская область"
+      "region": "Московская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 44,
@@ -430,10 +447,10 @@
     {
       "number": 47,
       "id": "2025-26-mun-kgd-57",
-      "questionRu": "В каком городе находится единственный в России памятник, посвящённый букве «ё»?",
-      "questionZh": null,
       "reason": "памятник букве «ё» — узкая деталь",
-      "region": "Калининградская область"
+      "region": "Калининградская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 48,
@@ -471,82 +488,82 @@
     {
       "number": 51,
       "id": "2025-26-mun-nsk-10",
-      "questionRu": "Какое животное является символом Новосибирска?",
-      "questionZh": null,
       "reason": "символ Новосибирска — узкая деталь",
-      "region": "Новосибирская область"
+      "region": "Новосибирская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 52,
       "id": "2025-26-mun-nsk-7",
-      "questionRu": "Кто написал самое длинное предложение в классической русской литературе?",
-      "questionZh": null,
       "reason": "«самое длинное предложение в русской литературе» — узкая деталь",
-      "region": "Новосибирская область"
+      "region": "Новосибирская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 53,
       "id": "2025-26-mun-nsk-8",
-      "questionRu": "В честь какого трижды героя СССР назван международный аэропорт Новосибирск (Толмачёво)",
-      "questionZh": null,
       "reason": "в честь кого назван аэропорт Толмачёво — узкая деталь",
-      "region": "Новосибирская область"
+      "region": "Новосибирская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 54,
       "id": "2025-26-mun-nsk-9",
-      "questionRu": "Какой из перечисленных китайских городов является городом-побратимом Новосибирска?",
-      "questionZh": null,
       "reason": "город-побратим Новосибирска — узкая деталь",
-      "region": "Новосибирская область"
+      "region": "Новосибирская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 55,
       "id": "2025-26-mun-spb-1",
-      "questionRu": "Кто является основателем ресторана утки по-пекински «Цюаньцзюйдэ»?",
-      "questionZh": null,
       "reason": "основатель ресторана «Цюаньцзюйдэ» — узкая деталь",
-      "region": "Санкт-Петербург"
+      "region": "Санкт-Петербург",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 56,
       "id": "2025-26-mun-spb-10",
-      "questionRu": "В каком кремле, построенном в конце XVII века, были сняты отдельные сцены советского фильма Леонида Гайдая «Иван Васильевич меняет профессию»?",
-      "questionZh": null,
       "reason": "в каком кремле снимали «Ивана Васильевича» — узкая деталь",
-      "region": "Санкт-Петербург"
+      "region": "Санкт-Петербург",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 57,
       "id": "2025-26-mun-spb-7",
-      "questionRu": "Какому композитору А. П. Чехов «предсказал», что из него выйдет «большой человек», объяснив это «предсказание» просто – «это написано на вашем лице»?",
-      "questionZh": null,
       "reason": "«предсказание» Чехова Рахманинову — узкая деталь",
-      "region": "Санкт-Петербург"
+      "region": "Санкт-Петербург",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 58,
       "id": "2025-26-mun-spb-8",
-      "questionRu": "Какой из перечисленных детских центров является международным и отметил своё столетие в 2025 году?",
-      "questionZh": null,
       "reason": "столетие «Артека» — узкая деталь",
-      "region": "Санкт-Петербург"
+      "region": "Санкт-Петербург",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 59,
       "id": "2025-26-shk-mosobl-10",
-      "questionRu": "Какой федеральный университет был открыт самым первым в РФ?",
-      "questionZh": null,
       "reason": "первый федеральный университет РФ — узкая деталь",
-      "region": "Московская область"
+      "region": "Московская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     },
     {
       "number": 60,
       "id": "2025-26-shk-mosobl-20",
-      "questionRu": "Какой федеральный университет был открыт самым первым в РФ?",
-      "questionZh": null,
       "reason": "первый федеральный университет РФ — узкая деталь",
-      "region": "Московская область"
+      "region": "Московская область",
+      "reviewStatus": "rejected-final",
+      "decisionReason": "Окончательно исключён автором вместе с оставшимися 31 вопросом после показа списка."
     }
   ],
   "selectedForConsideration": [
@@ -580,5 +597,74 @@
     49,
     50
   ],
-  "selectionQueue": "data/review/2026-11-10-narrow-selected-queue.json"
+  "selectionQueue": "data/review/2026-11-10-narrow-selected-queue.json",
+  "unreviewedOriginalNumbers": [],
+  "rejectedRemainingOriginalNumbers": [
+    1,
+    3,
+    4,
+    9,
+    10,
+    11,
+    12,
+    14,
+    16,
+    17,
+    19,
+    20,
+    22,
+    26,
+    27,
+    28,
+    29,
+    37,
+    40,
+    43,
+    47,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "batch1Publication": {
+    "date": "2026-11-11",
+    "checkedAt": "2026-11-11T17:07:16+00:00",
+    "url": "https://bronik04.github.io/lingvostranovedenie-trainer/",
+    "commit": "39390947bd44278d457e14d9dc35210a69feace4",
+    "runUrl": "https://github.com/bronik04/lingvostranovedenie-trainer/actions/runs/43062712252",
+    "workflowConclusion": "success",
+    "liveByteMatchesLocal": true,
+    "httpStatus": 200,
+    "visibleBefore": 1135,
+    "visibleAfter": 1151,
+    "releasedIds": [
+      "2021-22-mun-mosobl-60",
+      "2022-23-mun-amur-5",
+      "2022-23-mun-amur-8",
+      "2022-23-mun-amur-9",
+      "2022-23-mun-mosobl-6",
+      "2023-24-mun-komi-8",
+      "2023-24-mun-spb-7",
+      "2023-24-shk-mosobl-13",
+      "2023-24-shk-mosobl-16",
+      "2023-24-shk-mosobl-17",
+      "2024-25-mun-mosobl-7",
+      "2024-25-mun-mosobl-8",
+      "2024-25-mun-spb-10",
+      "2024-25-mun-spb-3",
+      "2024-25-mun-spb-4",
+      "2024-25-mun-spb-6"
+    ],
+    "optionCount": 64,
+    "exactApprovedRecords": true,
+    "existingContentPreserved": true,
+    "pinyinComplete": true,
+    "htmlSha256": "a2e135a76e73b5e1bc081e41f9ac4f81645d837f8f68483db4efb3f537282d8e"
+  }
 }
