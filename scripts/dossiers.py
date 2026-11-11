@@ -708,6 +708,14 @@ def _leak_entries(bank: list[dict], loaded: list[tuple[dict, list[dict]]]) -> li
     return entries
 
 
+def _round_exclusions(bank: list[dict]) -> set[tuple[str, str]]:
+    pairs = set()
+    for record in bank:
+        for other in record.get('separateFrom', []):
+            pairs.update(((record['id'], other), (other, record['id'])))
+    return pairs
+
+
 def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
                       groups: dict[str, list[str]] | None = None) -> list[str]:
     """Утечки по всем вопросам всех досье сразу — по окончательным текстам.
@@ -723,11 +731,13 @@ def cross_leak_errors(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
     """
     entries = _leak_entries(bank, loaded)
     group_of = _group_owner(groups)
+    exclusions = _round_exclusions(bank)
     errors: list[str] = []
     for dossier_id, label, text, _, place, record_id in entries:
         for other_dossier, other, _, answer, other_place, other_record in entries:
             if (other == label or _bridged(place, other_place) or _same_row(place, other_place)
-                    or _same_group(group_of, record_id, other_record)):
+                    or _same_group(group_of, record_id, other_record)
+                    or (record_id, other_record) in exclusions):
                 continue
             if other_dossier != dossier_id and len(answer['zh'].strip()) == 1:
                 answer = {**answer, 'zh': ''}
@@ -914,6 +924,7 @@ def gloss_leaks(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
     drafts = {f'{dossier["id"]}/{question["id"]}' for dossier, questions in loaded
               for question in questions if question['status'] == 'draft'}
     group_of = _group_owner(groups)
+    exclusions = _round_exclusions(bank)
     found_in: dict[str, set[str]] = {}
     leaks: list[dict] = []
     for dossier_id, label, record_id, place, options, answer_id in _gloss_sources(bank, loaded):
@@ -930,6 +941,7 @@ def gloss_leaks(bank: list[dict], loaded: list[tuple[dict, list[dict]]],
             for number in sorted(candidates):
                 other_dossier, other, text, answer_names, other_place, other_record = others[number]
                 if (other_record == record_id or _same_group(group_of, record_id, other_record)
+                        or (record_id, other_record) in exclusions
                         or (place is not None and other_place is not None and _bridged(place, other_place))
                         or rows_of.get(record_id, set()) & rows_of.get(other_record, set())):
                     continue

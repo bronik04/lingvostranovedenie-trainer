@@ -9578,6 +9578,407 @@
           ]
         }
       ]
+    },
+    "newsiberianislandsseas": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "barents-sea",
+          "name": {
+            "zh": "巴伦支海",
+            "gloss": "Баренцево море — омывает берега России и Норвегии.",
+            "ru": [
+              "Баренцево море"
+            ]
+          },
+          "sources": [
+            {
+              "title": "БРЭ: Баренцево море",
+              "url": "https://bigenc.ru/c/barentsevo-more-37b31a",
+              "quote": "Омывает берега Норвегии и России.",
+              "verificationMethod": "Свежая индексированная выдержка поиска; полный текст отдельно не открыт.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 21
+              },
+              "authority": "academic",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Госкомиссия по развитию Арктики: Баренцево море",
+              "url": "https://arctic.gov.ru/category/%D0%91%D0%B5%D0%B7-%D1%80%D1%83%D0%B1%D1%80%D0%B8%D0%BA%D0%B8/page/159/",
+              "quote": "Омывает берега Норвегии и России.",
+              "scope": "Опубликованное в архиве комиссии описание морских границ.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "white-sea",
+          "name": {
+            "zh": "白海",
+            "gloss": "Белое море — внутреннее море Северного Ледовитого океана, целиком в России.",
+            "ru": [
+              "Белое море"
+            ]
+          },
+          "sources": [
+            {
+              "title": "БРЭ: Белое море",
+              "url": "https://bigenc.ru/c/beloe-more-f92e7d",
+              "quote": "Бе́лое мо́ре, наиболее обособленное внутреннее море Северного Ледовитого океана",
+              "verificationMethod": "Свежая индексированная выдержка поиска; полный текст отдельно не открыт.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 21
+              },
+              "authority": "academic",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Минприроды: государственный доклад о водных ресурсах",
+              "url": "https://www.mnr.gov.ru/upload/iblock/1cd/GUR%207h73f.pdf",
+              "quote": "Связь с Баренцевым морем через пролив Горло",
+              "scope": "Белое море в таблице морей Северного Ледовитого океана.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "sea-of-japan",
+          "name": {
+            "zh": "日本海",
+            "gloss": "Японское море — море бассейна Тихого океана у российского Дальнего Востока.",
+            "ru": [
+              "Японское море"
+            ],
+            "ref": "nature/seas/sea-ru-japan"
+          },
+          "sources": [
+            {
+              "title": "БРЭ: Россия. Природа. Моря",
+              "url": "https://bigenc.ru/c/rossiia-priroda-moria-62a169",
+              "quote": "На территории России Японское море омывает берега Приморского и Хабаровского краёв и Сахалинской области.",
+              "verificationMethod": "Свежая индексированная выдержка поиска; полный текст отдельно не открыт.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 21
+              },
+              "authority": "academic",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Институт океанологии Китайской академии наук: Японское море",
+              "url": "http://www.qdio.cas.cn/2019Ver/News/kyjz/202202/t20220222_6370704.html",
+              "quote": "日本海为西北太平洋最大的边缘海",
+              "scope": "Японское море в северо-западной части Тихого океана.",
+              "authority": "academic",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Переиспользовано из data/dossiers/nature.json, sea-ru-japan."
+            }
+          ]
+        },
+        {
+          "id": "east-siberian-sea",
+          "name": {
+            "zh": "东西伯利亚海",
+            "gloss": "Восточно-Сибирское море — архипелаг лежит также в соседнем море Лаптевых.",
+            "ru": [
+              "Восточно-Сибирское море"
+            ]
+          },
+          "sources": [
+            {
+              "title": "БРЭ: Новосибирские острова",
+              "url": "https://bigenc.ru/c/novosibirskie-ostrova-7b6543",
+              "quote": "архипелаг в море Лаптевых и Восточно-Сибирском море, в России, в Якутии.",
+              "verificationMethod": "Свежая индексированная выдержка поиска; open дал 401. Полного чтения страницы не было.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 21
+              },
+              "authority": "academic",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Геология и геофизика: стратиграфия Новосибирских островов",
+              "url": "https://www.sibran.ru/journals/issue.php?ARTICLE_ID=172213&ID=9021&PAGEN_1=146",
+              "quote": "СТРАТИГРАФИЯ ЮРЫ И МЕЛА АРХИПЕЛАГА НОВОСИБИРСКИЕ ОСТРОВА (море Лаптевых и Восточно-Сибирское море).",
+              "scope": "Архипелаг в сочленении двух морей.",
+              "authority": "academic",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
+    },
+    "baikaltributarycounts": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "tributaries152",
+          "name": {
+            "zh": "152 条",
+            "gloss": "152 притока"
+          },
+          "sources": [
+            {
+              "title": "Байкальский государственный университет. Озеро Байкал",
+              "url": "https://eco.bgu.ru/baikal.aspx",
+              "quote": "В Байкал впадает 336 рек и ручьёв (учитывая только постоянные притоки)",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 35
+              },
+              "authority": "academic",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Фонд содействия сохранению озера Байкал. Байкал в цифрах",
+              "url": "https://baikalfund.ru/baikal/geography/statistics/index.wbp",
+              "quote": "Количество постоянных притоков 336",
+              "verificationMethod": "Свежий веб-поиск, открытие таблицы фонда; find по «музей» подтвердил указанный первоисточник: «Байкал в цифрах», Байкальский музей, 2001 (строка 147). Сам оригинал музейного справочника отдельно не получен.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 35
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Иркутский научный центр СО РАН: экспозиция памяти А. А. Бухарова",
+              "url": "https://www.isc.irk.ru/en/node/343",
+              "quote": "В 2001 году Александр Алексеевич  издал справочник «Байкал в цифрах» на русском и английском языках.",
+              "scope": "Независимое подтверждение существования музейного справочника и его даты; число 336 указывает воспроизведённая фондом таблица.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежий поиск и просмотр полного текста."
+            },
+            {
+              "title": "ЮНЕСКО: доклад о состоянии озера Байкал",
+              "url": "https://whc.unesco.org/document/219190",
+              "quote": "The Selenga is the largest tributary of Lake Baikal",
+              "scope": "Научный доклад подтверждает дополнительный факт о Селенге.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            },
+            {
+              "title": "Иркутская областная библиотека: книжная летопись 2001 №5",
+              "url": "https://www.irklib.ru/knizhnaya-letopis-irkutskoy-oblasti/%D0%9A%D0%9D%D0%9B%205_2001.pdf",
+              "quote": "Байкал в цифрах = Baikal in numbers",
+              "scope": "Позиция 463 официальной библиографии указывает краткий справочник и Байкальский музей.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "tributaries336",
+          "name": {
+            "zh": "336 条",
+            "gloss": "336 — традиционное число рек и ручьёв; крупнейший приток — Селенга"
+          },
+          "sources": [
+            {
+              "title": "Байкальский государственный университет. Озеро Байкал",
+              "url": "https://eco.bgu.ru/baikal.aspx",
+              "quote": "В Байкал впадает 336 рек и ручьёв (учитывая только постоянные притоки)",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 35
+              },
+              "authority": "academic",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Фонд содействия сохранению озера Байкал. Байкал в цифрах",
+              "url": "https://baikalfund.ru/baikal/geography/statistics/index.wbp",
+              "quote": "Количество постоянных притоков 336",
+              "verificationMethod": "Свежий веб-поиск, открытие таблицы фонда; find по «музей» подтвердил указанный первоисточник: «Байкал в цифрах», Байкальский музей, 2001 (строка 147). Сам оригинал музейного справочника отдельно не получен.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 35
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Иркутский научный центр СО РАН: экспозиция памяти А. А. Бухарова",
+              "url": "https://www.isc.irk.ru/en/node/343",
+              "quote": "В 2001 году Александр Алексеевич  издал справочник «Байкал в цифрах» на русском и английском языках.",
+              "scope": "Независимое подтверждение существования музейного справочника и его даты; число 336 указывает воспроизведённая фондом таблица.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежий поиск и просмотр полного текста."
+            },
+            {
+              "title": "ЮНЕСКО: доклад о состоянии озера Байкал",
+              "url": "https://whc.unesco.org/document/219190",
+              "quote": "The Selenga is the largest tributary of Lake Baikal",
+              "scope": "Научный доклад подтверждает дополнительный факт о Селенге.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            },
+            {
+              "title": "Иркутская областная библиотека: книжная летопись 2001 №5",
+              "url": "https://www.irklib.ru/knizhnaya-letopis-irkutskoy-oblasti/%D0%9A%D0%9D%D0%9B%205_2001.pdf",
+              "quote": "Байкал в цифрах = Baikal in numbers",
+              "scope": "Позиция 463 официальной библиографии указывает краткий справочник и Байкальский музей.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "tributaries565",
+          "name": {
+            "zh": "565 条",
+            "gloss": "565 притоков"
+          },
+          "sources": [
+            {
+              "title": "Байкальский государственный университет. Озеро Байкал",
+              "url": "https://eco.bgu.ru/baikal.aspx",
+              "quote": "В Байкал впадает 336 рек и ручьёв (учитывая только постоянные притоки)",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 35
+              },
+              "authority": "academic",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Фонд содействия сохранению озера Байкал. Байкал в цифрах",
+              "url": "https://baikalfund.ru/baikal/geography/statistics/index.wbp",
+              "quote": "Количество постоянных притоков 336",
+              "verificationMethod": "Свежий веб-поиск, открытие таблицы фонда; find по «музей» подтвердил указанный первоисточник: «Байкал в цифрах», Байкальский музей, 2001 (строка 147). Сам оригинал музейного справочника отдельно не получен.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 35
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Иркутский научный центр СО РАН: экспозиция памяти А. А. Бухарова",
+              "url": "https://www.isc.irk.ru/en/node/343",
+              "quote": "В 2001 году Александр Алексеевич  издал справочник «Байкал в цифрах» на русском и английском языках.",
+              "scope": "Независимое подтверждение существования музейного справочника и его даты; число 336 указывает воспроизведённая фондом таблица.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежий поиск и просмотр полного текста."
+            },
+            {
+              "title": "ЮНЕСКО: доклад о состоянии озера Байкал",
+              "url": "https://whc.unesco.org/document/219190",
+              "quote": "The Selenga is the largest tributary of Lake Baikal",
+              "scope": "Научный доклад подтверждает дополнительный факт о Селенге.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            },
+            {
+              "title": "Иркутская областная библиотека: книжная летопись 2001 №5",
+              "url": "https://www.irklib.ru/knizhnaya-letopis-irkutskoy-oblasti/%D0%9A%D0%9D%D0%9B%205_2001.pdf",
+              "quote": "Байкал в цифрах = Baikal in numbers",
+              "scope": "Позиция 463 официальной библиографии указывает краткий справочник и Байкальский музей.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "tributaries208",
+          "name": {
+            "zh": "208 条",
+            "gloss": "208 притоков"
+          },
+          "sources": [
+            {
+              "title": "Байкальский государственный университет. Озеро Байкал",
+              "url": "https://eco.bgu.ru/baikal.aspx",
+              "quote": "В Байкал впадает 336 рек и ручьёв (учитывая только постоянные притоки)",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 35
+              },
+              "authority": "academic",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Фонд содействия сохранению озера Байкал. Байкал в цифрах",
+              "url": "https://baikalfund.ru/baikal/geography/statistics/index.wbp",
+              "quote": "Количество постоянных притоков 336",
+              "verificationMethod": "Свежий веб-поиск, открытие таблицы фонда; find по «музей» подтвердил указанный первоисточник: «Байкал в цифрах», Байкальский музей, 2001 (строка 147). Сам оригинал музейного справочника отдельно не получен.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 35
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Иркутский научный центр СО РАН: экспозиция памяти А. А. Бухарова",
+              "url": "https://www.isc.irk.ru/en/node/343",
+              "quote": "В 2001 году Александр Алексеевич  издал справочник «Байкал в цифрах» на русском и английском языках.",
+              "scope": "Независимое подтверждение существования музейного справочника и его даты; число 336 указывает воспроизведённая фондом таблица.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежий поиск и просмотр полного текста."
+            },
+            {
+              "title": "ЮНЕСКО: доклад о состоянии озера Байкал",
+              "url": "https://whc.unesco.org/document/219190",
+              "quote": "The Selenga is the largest tributary of Lake Baikal",
+              "scope": "Научный доклад подтверждает дополнительный факт о Селенге.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            },
+            {
+              "title": "Иркутская областная библиотека: книжная летопись 2001 №5",
+              "url": "https://www.irklib.ru/knizhnaya-letopis-irkutskoy-oblasti/%D0%9A%D0%9D%D0%9B%205_2001.pdf",
+              "quote": "Байкал в цифрах = Baikal in numbers",
+              "scope": "Позиция 463 официальной библиографии указывает краткий справочник и Байкальский музей.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
     }
   }
 }

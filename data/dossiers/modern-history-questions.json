@@ -1927,5 +1927,35 @@
       "verdict": "accept",
       "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
     }
+  },
+  {
+    "id": "modern-history-q132",
+    "status": "accepted",
+    "embeds": "2024-25-mun-mosobl-8",
+    "fact": {
+      "table": "pandadiplomacycountries",
+      "row": "japan",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
+  },
+  {
+    "id": "modern-history-q133",
+    "status": "accepted",
+    "embeds": "2024-25-mun-spb-3",
+    "fact": {
+      "table": "greatembassyyears",
+      "row": "years1697",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
   }
 ]

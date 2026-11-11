@@ -562,5 +562,50 @@
       "verdict": "accept",
       "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
     }
+  },
+  {
+    "id": "modern-china-q35",
+    "status": "accepted",
+    "embeds": "2022-23-mun-amur-8",
+    "fact": {
+      "table": "olympicdivingchampions",
+      "row": "quan-hongchan",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
+  },
+  {
+    "id": "modern-china-q36",
+    "status": "accepted",
+    "embeds": "2022-23-mun-amur-9",
+    "fact": {
+      "table": "discussionplatforms",
+      "row": "douban",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
+  },
+  {
+    "id": "modern-china-q37",
+    "status": "accepted",
+    "embeds": "2023-24-shk-mosobl-17",
+    "fact": {
+      "table": "moscowmetrolinelength",
+      "row": "km70",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
   }
 ]

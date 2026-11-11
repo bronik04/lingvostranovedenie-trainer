@@ -1167,5 +1167,20 @@
       "verdict": "accept",
       "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
     }
+  },
+  {
+    "id": "holidays-q60",
+    "status": "accepted",
+    "embeds": "2021-22-mun-mosobl-60",
+    "fact": {
+      "table": "kulikovodays",
+      "row": "military-glory-day",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
   }
 ]

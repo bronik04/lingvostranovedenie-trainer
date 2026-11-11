@@ -2538,5 +2538,20 @@
       "verdict": "accept",
       "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
     }
+  },
+  {
+    "id": "provinces-q162",
+    "status": "accepted",
+    "embeds": "2024-25-mun-spb-4",
+    "fact": {
+      "table": "russianaltaiadjacency",
+      "row": "altai",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
   }
 ]

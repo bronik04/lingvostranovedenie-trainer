@@ -2054,5 +2054,35 @@
       "verdict": "accept",
       "note": "Author accepted; local embedding only; publication forbidden."
     }
+  },
+  {
+    "id": "nature-q175",
+    "status": "accepted",
+    "embeds": "2023-24-shk-mosobl-13",
+    "fact": {
+      "table": "newsiberianislandsseas",
+      "row": "east-siberian-sea",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
+  },
+  {
+    "id": "nature-q176",
+    "status": "accepted",
+    "embeds": "2024-25-mun-spb-6",
+    "fact": {
+      "table": "baikaltributarycounts",
+      "row": "tributaries336",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
   }
 ]

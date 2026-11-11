@@ -8388,6 +8388,406 @@
           ]
         }
       ]
+    },
+    "pandadiplomacycountries": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "india",
+          "name": {
+            "zh": "印度",
+            "gloss": "Индия — Тадж-Махал находится в Агре",
+            "ru": [
+              "Индия"
+            ]
+          },
+          "sources": [
+            {
+              "title": "ЮНЕСКО. Тадж-Махал",
+              "url": "https://whc.unesco.org/en/list/252/",
+              "quote": "the Taj Mahal is the jewel of Muslim art in India",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 31
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Правительство Уттар-Прадеша, округ Агра: Тадж-Махал",
+              "url": "https://agra.nic.in/tourist-place/tajmahal/",
+              "quote": "The Taj Mahal, an ivory-white marble mausoleum on the south bank of the Yamuna",
+              "scope": "Официальная карточка достопримечательности округа Агра.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "japan",
+          "name": {
+            "zh": "日本",
+            "gloss": "Япония — Канг-Канг и Лан-Лан прибыли в Уэно 28 октября 1972 года",
+            "ru": [
+              "Япония"
+            ],
+            "ref": "modern-history/countries/country-jp"
+          },
+          "sources": [
+            {
+              "title": "Зоопарк Уэно. これまで飼育したパンダたち",
+              "url": "https://www.tokyo-zoo.net/ueno/panda/history/index.html",
+              "quote": "1972.10.28来園",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 31
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Национальный музей природы и науки, Токио",
+              "url": "https://www.kahaku.go.jp/pickup-science/nid00001027.html",
+              "quote": "その記念として贈られたオスのカンカンとメスのランランが最初でした。",
+              "scope": "Канг-Канг и Лан-Лан подарены в честь совместного заявления 1972 года.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            },
+            {
+              "title": "Зоопарк Уэно: история больших панд",
+              "url": "https://www.tokyo-zoo.net/en/ueno/panda/history/index.html",
+              "quote": "Visited on October 28, 1972",
+              "scope": "Указано для обеих панд; исторический раздел связывает их прибытие с нормализацией отношений.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежий поиск и открытие страницы; английская версия доступна."
+            },
+            {
+              "title": "МИД КНР: 4 ноября 1972 года",
+              "url": "https://www.fmprc.gov.cn/ziliao_674904/historytoday_674971/200311/t20031104_9284669.shtml",
+              "quote": "欢迎北京动物园的一对大熊猫康康和兰兰定居日本。",
+              "scope": "Подтверждает подарок; дата 4 ноября относится к церемонии, прибытие состоялось 28 октября.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "russia",
+          "name": {
+            "zh": "俄罗斯",
+            "gloss": "Россия — Пинь-Пинь прибыл в Московский зоопарк в 1957 году",
+            "ru": [
+              "Россия"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Зоологический музей МГУ. Большие панды",
+              "url": "https://www.zmmu.org/pandy",
+              "quote": "Самец «Пинь-Пинь» прибыл в Московский зоопарк из Китая в 1957 г.",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 31
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Правительство Москвы: путеводитель Moscow for Children",
+              "url": "https://www.mos.ru/upload/documents/files/5709/PytevoditelPoMoskvesdetminaangliiskomyazike%281%29.pdf",
+              "quote": "the first panda was gifted in the USSR in 1957",
+              "scope": "Страница Московского зоопарка в путеводителе; имя Пинь-Пинь подтверждает музей МГУ.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "usa",
+          "name": {
+            "zh": "美国",
+            "gloss": "США — Лин-Лин и Син-Син прибыли в Национальный зоопарк в 1972 году",
+            "ru": [
+              "США"
+            ],
+            "ref": "modern-history/countries/country-us"
+          },
+          "sources": [
+            {
+              "title": "Smithsonian National Zoo. The History of Giant Pandas",
+              "url": "https://www.nationalzoo.si.edu/animals/history-giant-pandas-zoo",
+              "quote": "On April 16, 1972, the giant pandas Ling-Ling (a female) and Hsing-Hsing (a male) arrived at their new home.",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 31
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Smithsonian Institution Archives: прибытие панд 16 апреля",
+              "url": "https://siarchives.si.edu/history/this-day-smithsonian-history/april-16",
+              "quote": "Two Giant Pandas, Hsing-Hsing (m) and Ling-Ling (f), arrive at Andrews Air Force Base on April 16, 1972",
+              "scope": "Подарок США, с 20 апреля официально представлен Национальному зоопарку.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
+    },
+    "greatembassyyears": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "years1678",
+          "name": {
+            "zh": "1678—1679 年",
+            "gloss": "1678–1679 годы"
+          },
+          "sources": [
+            {
+              "title": "ИРИ РАН. А. Г. Гуськов. Особенности делопроизводства Великого посольства 1697–1698 гг.",
+              "url": "https://ebookiriran.ru/index.php?id=398&section=9&view=article",
+              "quote": "Хотя официально Ф.Я.Лефорт и являлся руководителем посольства, но реально распоряжался всем царь, сохранявший однако свое инкогнито.",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026; find по «Лефорт», полный текст содержит подписи П[етр] М[ихайлов]",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 33
+              },
+              "authority": "academic",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Президентская библиотека. К 320-летию начала Северной войны",
+              "url": "https://www.prlib.ru/news/1301374",
+              "quote": "дипломатической миссии в Западную Европу в 1697–1698 годах",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 33
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "МАЭ РАН (Кунсткамера) — Посещение стран Европы Петром I",
+              "url": "https://www.kunstkamera.ru/exposition/kunst_hist/5/5_1/",
+              "quote": "участвовал в нем в качестве урядника Преображенского полка Петра Михайлова",
+              "verificationMethod": "Fresh search + full primary museum page open,2026-11-10; dates1697–1698 and pseudonym explicit.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 33
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Государственный исторический музей: Великое посольство в Амстердаме",
+              "url": "https://nav.shm.ru/exhibits/3403/",
+              "quote": "под именем урядника Преображенского полка П. Михайлова",
+              "scope": "Отдельно указывает годы Великого посольства 1697–1698.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "years1699",
+          "name": {
+            "zh": "1699—1700 年",
+            "gloss": "1699–1700 годы"
+          },
+          "sources": [
+            {
+              "title": "ИРИ РАН. А. Г. Гуськов. Особенности делопроизводства Великого посольства 1697–1698 гг.",
+              "url": "https://ebookiriran.ru/index.php?id=398&section=9&view=article",
+              "quote": "Хотя официально Ф.Я.Лефорт и являлся руководителем посольства, но реально распоряжался всем царь, сохранявший однако свое инкогнито.",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026; find по «Лефорт», полный текст содержит подписи П[етр] М[ихайлов]",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 33
+              },
+              "authority": "academic",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Президентская библиотека. К 320-летию начала Северной войны",
+              "url": "https://www.prlib.ru/news/1301374",
+              "quote": "дипломатической миссии в Западную Европу в 1697–1698 годах",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 33
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "МАЭ РАН (Кунсткамера) — Посещение стран Европы Петром I",
+              "url": "https://www.kunstkamera.ru/exposition/kunst_hist/5/5_1/",
+              "quote": "участвовал в нем в качестве урядника Преображенского полка Петра Михайлова",
+              "verificationMethod": "Fresh search + full primary museum page open,2026-11-10; dates1697–1698 and pseudonym explicit.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 33
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Государственный исторический музей: Великое посольство в Амстердаме",
+              "url": "https://nav.shm.ru/exhibits/3403/",
+              "quote": "под именем урядника Преображенского полка П. Михайлова",
+              "scope": "Отдельно указывает годы Великого посольства 1697–1698.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "years1697",
+          "name": {
+            "zh": "1697—1698 年",
+            "gloss": "1697–1698 — Пётр I путешествовал под именем Петра Михайлова"
+          },
+          "sources": [
+            {
+              "title": "ИРИ РАН. А. Г. Гуськов. Особенности делопроизводства Великого посольства 1697–1698 гг.",
+              "url": "https://ebookiriran.ru/index.php?id=398&section=9&view=article",
+              "quote": "Хотя официально Ф.Я.Лефорт и являлся руководителем посольства, но реально распоряжался всем царь, сохранявший однако свое инкогнито.",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026; find по «Лефорт», полный текст содержит подписи П[етр] М[ихайлов]",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 33
+              },
+              "authority": "academic",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Президентская библиотека. К 320-летию начала Северной войны",
+              "url": "https://www.prlib.ru/news/1301374",
+              "quote": "дипломатической миссии в Западную Европу в 1697–1698 годах",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 33
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "МАЭ РАН (Кунсткамера) — Посещение стран Европы Петром I",
+              "url": "https://www.kunstkamera.ru/exposition/kunst_hist/5/5_1/",
+              "quote": "участвовал в нем в качестве урядника Преображенского полка Петра Михайлова",
+              "verificationMethod": "Fresh search + full primary museum page open,2026-11-10; dates1697–1698 and pseudonym explicit.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 33
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Государственный исторический музей: Великое посольство в Амстердаме",
+              "url": "https://nav.shm.ru/exhibits/3403/",
+              "quote": "под именем урядника Преображенского полка П. Михайлова",
+              "scope": "Отдельно указывает годы Великого посольства 1697–1698.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "years1701",
+          "name": {
+            "zh": "1701—1702 年",
+            "gloss": "1701–1702 годы"
+          },
+          "sources": [
+            {
+              "title": "ИРИ РАН. А. Г. Гуськов. Особенности делопроизводства Великого посольства 1697–1698 гг.",
+              "url": "https://ebookiriran.ru/index.php?id=398&section=9&view=article",
+              "quote": "Хотя официально Ф.Я.Лефорт и являлся руководителем посольства, но реально распоряжался всем царь, сохранявший однако свое инкогнито.",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026; find по «Лефорт», полный текст содержит подписи П[етр] М[ихайлов]",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 33
+              },
+              "authority": "academic",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Президентская библиотека. К 320-летию начала Северной войны",
+              "url": "https://www.prlib.ru/news/1301374",
+              "quote": "дипломатической миссии в Западную Европу в 1697–1698 годах",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 33
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "МАЭ РАН (Кунсткамера) — Посещение стран Европы Петром I",
+              "url": "https://www.kunstkamera.ru/exposition/kunst_hist/5/5_1/",
+              "quote": "участвовал в нем в качестве урядника Преображенского полка Петра Михайлова",
+              "verificationMethod": "Fresh search + full primary museum page open,2026-11-10; dates1697–1698 and pseudonym explicit.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 33
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Государственный исторический музей: Великое посольство в Амстердаме",
+              "url": "https://nav.shm.ru/exhibits/3403/",
+              "quote": "под именем урядника Преображенского полка П. Михайлова",
+              "scope": "Отдельно указывает годы Великого посольства 1697–1698.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
     }
   }
 }

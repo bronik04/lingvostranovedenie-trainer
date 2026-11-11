@@ -535,6 +535,17 @@ test('двойник не пропадает, если других вопрос
   assert.deepEqual(round.map((r) => r.id), ['a', 'c', 'b']);
 });
 
+test('вопросы с явным запретом общей пары расходятся даже в короткой выборке', () => {
+  const bank = [record('a', { factGroup: 'g', separateFrom: ['b'] }),
+    record('b', { factGroup: 'g' }), record('c')];
+  for (const random of [() => 0, () => 0.99]) {
+    const round = buildRound(bank, NO_FILTERS, {}, 10, random);
+    assert.equal(round.length, 2);
+    assert.ok(round.some((r) => r.id === 'c'));
+    assert.equal(round.filter((r) => r.id === 'a' || r.id === 'b').length, 1);
+  }
+});
+
 test('«пора повторить» берёт из группы самую просроченную запись, вторая ждёт следующего раунда', () => {
   const bank = [record('a', { factGroup: 'g' }), record('b', { factGroup: 'g' }), record('c')];
   const progress = {

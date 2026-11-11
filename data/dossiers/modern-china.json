@@ -4172,6 +4172,487 @@
           ]
         }
       ]
+    },
+    "olympicdivingchampions": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "quan-hongchan",
+          "name": {
+            "zh": "全红婵",
+            "gloss": "Цюань Хунчань — в олимпийском финале три её прыжка получили высшие оценки.",
+            "ru": [
+              "Цюань Хунчань"
+            ]
+          },
+          "sources": [
+            {
+              "url": "https://www.worldaquatics.com/news/2221032/14-year-old-olympic-champion-quan-jumps-out-from-hopscotch-game",
+              "title": "World Aquatics: 14-year-old Olympic champion Quan",
+              "quote": "Fu Mingxia won the same event in 1992 at 13.\nthe youngest athlete of the Chinese Olympic team in Tokyo.",
+              "verificationMethod": "web.open: полный текст страницы прочитан",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 6
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "World Aquatics: Quan Hongchan, результаты",
+              "url": "https://www.worldaquatics.com/athletes/1528691/wd",
+              "quote": "466.20",
+              "scope": "Таблица фиксирует 466,20 и золото Токио в 14 лет; о трёх прыжках с максимальными оценками см. отдельную статью.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            },
+            {
+              "title": "Главное управление спорта КНР: три прыжка Цюань Хунчань с максимальными оценками",
+              "url": "https://www.sport.gov.cn/n4/n23367510/n23367699/c23582682/content.html",
+              "quote": "5个动作当中三跳满分",
+              "scope": "Из пяти прыжков в финале три получили максимум.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "fu-mingxia",
+          "name": {
+            "zh": "傅明霞",
+            "gloss": "Фу Минся — стала олимпийской чемпионкой в 13 лет на Играх 1992 года",
+            "ru": [
+              "Фу Минся"
+            ]
+          },
+          "sources": [
+            {
+              "url": "https://www.worldaquatics.com/news/2221032/14-year-old-olympic-champion-quan-jumps-out-from-hopscotch-game",
+              "title": "World Aquatics: 14-year-old Olympic champion Quan",
+              "quote": "Fu Mingxia won the same event in 1992 at 13.\nthe youngest athlete of the Chinese Olympic team in Tokyo.",
+              "verificationMethod": "web.open: полный текст страницы прочитан",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 6
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "World Aquatics: Fu Mingxia, медали",
+              "url": "https://www.worldaquatics.com/athletes/1051837/mingxia-fu/medals",
+              "quote": "Women's 10m Platform",
+              "scope": "Карточка отмечает золото в Барселоне 26 июля 1992 года; возраст 13 указан в статье о Цюань.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "ren-qian",
+          "name": {
+            "zh": "任茜",
+            "gloss": "Жэнь Цянь — олимпийская чемпионка Рио в прыжках с 10-метровой вышки",
+            "ru": [
+              "Жэнь Цянь"
+            ]
+          },
+          "sources": [
+            {
+              "url": "https://www.worldaquatics.com/news/2221032/14-year-old-olympic-champion-quan-jumps-out-from-hopscotch-game",
+              "title": "World Aquatics: 14-year-old Olympic champion Quan",
+              "quote": "Fu Mingxia won the same event in 1992 at 13.\nthe youngest athlete of the Chinese Olympic team in Tokyo.",
+              "verificationMethod": "web.open: полный текст страницы прочитан",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 6
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "World Aquatics: победа Жэнь Цянь в Рио",
+              "url": "https://www.worldaquatics.com/news/1910977/diving-womens-10m-ren-and-her-perfect-tens-brings-china-olympic-diving-title-number-six",
+              "quote": "Fifteen-year-old Ren Qian twirled to an Olympic gold medal in the women’s 10m platform final",
+              "scope": "Чемпионка олимпийского финала 2016 года в Рио.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "zhong-tianshi",
+          "name": {
+            "zh": "钟天使",
+            "gloss": "Чжун Тяньши — чемпионка Рио и Токио в командном спринте",
+            "ru": [
+              "Чжун Тяньши"
+            ]
+          },
+          "sources": [
+            {
+              "url": "https://www.sport.gov.cn/n20001280/n20745751/c24748022/content.html",
+              "title": "Государственное управление спорта КНР: Чжун Тяньши",
+              "quote": "在2016年里约、2021年东京两届奥运会上，她更是蝉联女子团体竞速赛金牌",
+              "verificationMethod": "web.open: полный официальный текст прочитан, абзац 25",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 6
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "UCI: женский командный спринт на Играх в Токио",
+              "url": "https://www.uci.org/article/olympic-games-tokyo-2020-china-takes-first-track-cycling-gold-on-a-day-of-records/2vePzw2vTTJoa4vcFOdbD9",
+              "quote": "China in 2016 (Zhong and Jinjie Gong)",
+              "scope": "В отчёте обе победы Чжун Тяньши: Рио с Гун и Токио с Бао.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
+    },
+    "discussionplatforms": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "mafengwo",
+          "name": {
+            "zh": "马蜂窝",
+            "gloss": "Мафэнво — путешествия, путеводители и бронирование",
+            "ru": [
+              "Мафэнво"
+            ]
+          },
+          "sources": [
+            {
+              "url": "https://bigfile.mafengwo.net/s13/M00/12/AF/wKgEaVyS-siAX6RXADwhLM1PVWM738.pdf",
+              "title": "Мафэнво: официальная презентация",
+              "quote": "马蜂窝是旅游社交网站，是数据驱动平台，是新型旅游电商",
+              "verificationMethod": "web.open: официальный PDF открыт, 17 страниц; определение платформы в индексированном конце отчёта; основная about-страница пуста",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 7
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Мафэнво: описание от разработчика в App Store",
+              "url": "https://apps.apple.com/cn/app/id406596432",
+              "quote": "马蜂窝-全球旅游攻略,旅行度假酒店预订",
+              "scope": "Путеводители, путешествия и бронирование гостиниц.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "douban",
+          "name": {
+            "zh": "豆瓣",
+            "gloss": "Доубань — платформа появилась в марте 2005 года",
+            "ru": [
+              "Доубань"
+            ]
+          },
+          "sources": [
+            {
+              "url": "https://jobs.douban.com/about/",
+              "title": "Douban — About Douban",
+              "quote": "Founded in March 2005\nAs of September 2012, Douban has 66 million registered users",
+              "verificationMethod": "web.open: полный текст страницы прочитан",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 7
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Доубань: официальный блог, годовщина",
+              "url": "https://blog.douban.com/douban/2006/03/06/61/",
+              "quote": "2005年3月6日下午",
+              "scope": "Публикация основателя о запуске в марте 2005 года; в карточке достаточно месяца.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "xiachufang",
+          "name": {
+            "zh": "下厨房",
+            "gloss": "Сячуфан — рецепты и обмен результатами готовки",
+            "ru": [
+              "Сячуфан"
+            ]
+          },
+          "sources": [
+            {
+              "url": "https://www.xiachufang.com/",
+              "title": "Сячуфан — главная страница",
+              "quote": "菜谱分类\n作品动态",
+              "verificationMethod": "web.open: прочитана главная страница; разделы 菜谱分类 и 作品动态, ссылки на рецепты и пользовательские результаты",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 7
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Сячуфан: правила сообщества",
+              "url": "https://www.xiachufang.com/principle/",
+              "quote": "下厨房是一个用户之间分享家庭美食的社区。",
+              "scope": "Участники обмениваются рецептами и опубликованными работами.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "zcool",
+          "name": {
+            "zh": "站酷",
+            "gloss": "Чжаньку — сообщество дизайнеров, фотографов и иллюстраторов",
+            "ru": [
+              "Чжаньку"
+            ]
+          },
+          "sources": [
+            {
+              "url": "https://www.zcool.com.cn/about",
+              "title": "ZCOOL — О нас",
+              "quote": "聚集了1800万设计师、摄影师、插画师、艺术家、创意人",
+              "verificationMethod": "web.search: индекс собственного about; web.open вернул меню, повторный find — timeout",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 7
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Чжаньку: описание раздела дизайн-услуг",
+              "url": "https://www.zcool.com.cn/article/ZMTYyMTgxMg%3D%3D.html",
+              "quote": "目前支持案类别为：品牌/平面、插画/绘画",
+              "scope": "Описание работы дизайнеров, иллюстраторов и фотографов; абзац также перечисляет 商业摄影.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
+    },
+    "moscowmetrolinelength": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "km60",
+          "name": {
+            "zh": "60公里",
+            "gloss": "60 км"
+          },
+          "sources": [
+            {
+              "title": "Минтранс: запуск Большой кольцевой линии, 01.03.2023",
+              "url": "https://mintrans.gov.ru/press-center/news/10640",
+              "quote": "Всего в составе БКЛ 31 станция, протяжённость линии составляет 70 км",
+              "verificationMethod": "Свежий поиск и открытый текст страницы; проверен релевантный фрагмент 10.11.2026.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 24
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Аналитический центр Москвы: три года в ритме БКЛ, 02.03.2026",
+              "url": "https://ac.mos.ru/news/24374/",
+              "quote": "Ее протяженность при запуске составила 70 километров",
+              "verificationMethod": "Открыт текст; отдельно сообщает о 29 станциях на самом кольце после отделения двух станций. Не переносить прежние 31 станцию в современную подпись без даты.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 24
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Московский транспорт: полный запуск БКЛ 01.03.2023",
+              "url": "https://transport.mos.ru/mostrans/all_news/113767",
+              "quote": "длиной 70 км и 31 станцией",
+              "scope": "Независимое официальное подтверждение длины на дату запуска.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "km70",
+          "name": {
+            "zh": "70公里",
+            "gloss": "70 км — на Большой кольцевой линии 31 станция."
+          },
+          "sources": [
+            {
+              "title": "Минтранс: запуск Большой кольцевой линии, 01.03.2023",
+              "url": "https://mintrans.gov.ru/press-center/news/10640",
+              "quote": "Всего в составе БКЛ 31 станция, протяжённость линии составляет 70 км",
+              "verificationMethod": "Свежий поиск и открытый текст страницы; проверен релевантный фрагмент 10.11.2026.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 24
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Аналитический центр Москвы: три года в ритме БКЛ, 02.03.2026",
+              "url": "https://ac.mos.ru/news/24374/",
+              "quote": "Ее протяженность при запуске составила 70 километров",
+              "verificationMethod": "Открыт текст; отдельно сообщает о 29 станциях на самом кольце после отделения двух станций. Не переносить прежние 31 станцию в современную подпись без даты.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 24
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Московский транспорт: полный запуск БКЛ 01.03.2023",
+              "url": "https://transport.mos.ru/mostrans/all_news/113767",
+              "quote": "длиной 70 км и 31 станцией",
+              "scope": "Независимое официальное подтверждение длины на дату запуска.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "km75",
+          "name": {
+            "zh": "75公里",
+            "gloss": "75 км"
+          },
+          "sources": [
+            {
+              "title": "Минтранс: запуск Большой кольцевой линии, 01.03.2023",
+              "url": "https://mintrans.gov.ru/press-center/news/10640",
+              "quote": "Всего в составе БКЛ 31 станция, протяжённость линии составляет 70 км",
+              "verificationMethod": "Свежий поиск и открытый текст страницы; проверен релевантный фрагмент 10.11.2026.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 24
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Аналитический центр Москвы: три года в ритме БКЛ, 02.03.2026",
+              "url": "https://ac.mos.ru/news/24374/",
+              "quote": "Ее протяженность при запуске составила 70 километров",
+              "verificationMethod": "Открыт текст; отдельно сообщает о 29 станциях на самом кольце после отделения двух станций. Не переносить прежние 31 станцию в современную подпись без даты.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 24
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Московский транспорт: полный запуск БКЛ 01.03.2023",
+              "url": "https://transport.mos.ru/mostrans/all_news/113767",
+              "quote": "длиной 70 км и 31 станцией",
+              "scope": "Независимое официальное подтверждение длины на дату запуска.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "km73",
+          "name": {
+            "zh": "73公里",
+            "gloss": "73 км"
+          },
+          "sources": [
+            {
+              "title": "Минтранс: запуск Большой кольцевой линии, 01.03.2023",
+              "url": "https://mintrans.gov.ru/press-center/news/10640",
+              "quote": "Всего в составе БКЛ 31 станция, протяжённость линии составляет 70 км",
+              "verificationMethod": "Свежий поиск и открытый текст страницы; проверен релевантный фрагмент 10.11.2026.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 24
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Аналитический центр Москвы: три года в ритме БКЛ, 02.03.2026",
+              "url": "https://ac.mos.ru/news/24374/",
+              "quote": "Ее протяженность при запуске составила 70 километров",
+              "verificationMethod": "Открыт текст; отдельно сообщает о 29 станциях на самом кольце после отделения двух станций. Не переносить прежние 31 станцию в современную подпись без даты.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 24
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Московский транспорт: полный запуск БКЛ 01.03.2023",
+              "url": "https://transport.mos.ru/mostrans/all_news/113767",
+              "quote": "длиной 70 км и 31 станцией",
+              "scope": "Независимое официальное подтверждение длины на дату запуска.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
     }
   }
 }

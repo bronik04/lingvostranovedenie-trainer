@@ -15,7 +15,7 @@ from pathlib import Path
 from normalize import completeness_errors, language_errors, normalize_text
 from taxonomy import TOPICS
 
-FIELDS = {'reason', 'questionRu', 'questionZh', 'options', 'explanation', 'topic'}
+FIELDS = {'reason', 'questionRu', 'questionZh', 'options', 'explanation', 'topic', 'separateFrom'}
 CHANGES = FIELDS - {'reason'}
 CJK = re.compile(r'[\u4e00-\u9fff]')
 
@@ -76,6 +76,13 @@ def validate_editorial(edits: dict[str, dict], bank: list[dict]) -> list[str]:
                 errors.append(f'{record_id}: в {field} двойное тире или двойной пробел')
         if 'topic' in edit and edit['topic'] not in TOPICS:
             errors.append(f'{record_id}: тема вне списка семи категорий')
+        if 'separateFrom' in edit:
+            linked = edit['separateFrom']
+            if (not isinstance(linked, list) or not linked
+                    or any(not isinstance(target, str) or target == record_id or target not in by_id
+                           for target in linked)
+                    or len(set(linked)) != len(linked)):
+                errors.append(f'{record_id}: separateFrom должен перечислять другие записи банка без повторов')
     return errors
 
 
@@ -102,6 +109,8 @@ def apply_editorial(bank: list[dict], edits: dict[str, dict]) -> list[dict]:
         if 'topic' in edit:
             result['topic'] = edit['topic']
             result['topicSource'] = 'editorial'
+        if 'separateFrom' in edit:
+            result['separateFrom'] = edit['separateFrom']
         updated.append(result)
     return updated
 

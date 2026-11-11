@@ -7075,6 +7075,329 @@
           }
         }
       ]
+    },
+    "smallpeoplescensus": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "shui",
+          "name": {
+            "zh": "水族",
+            "gloss": "Шуй — один из главных районов проживания: Саньду в Гуйчжоу",
+            "ru": [
+              "Шуй"
+            ],
+            "ref": "ethnos/peoples/ppl-cn-shui"
+          },
+          "sources": [
+            {
+              "url": "https://www.neac.gov.cn/seac/ztzl/shuiz/gk.shtml",
+              "title": "Шуй — Государственная комиссия КНР по делам национальностей",
+              "quote": "贵州省黔南的三都水族自治县、荔波、独山、都匀等县市为主要居住区",
+              "verificationMethod": "Принятое досье ethnos/ppl-cn-shui; свежий web.search подтвердил цитату, web.open вернул оболочку без основного текста",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 5
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Генпрокуратура КНР: служба на языке шуй в Саньду",
+              "url": "https://www.spp.gov.cn/spp/dfjcdt/202212/t20221230_597228.shtml",
+              "quote": "三都是我国唯一的水族自治县，全国63%的水族人口聚居在三都。",
+              "scope": "Саньду — основной район проживания шуй; не переносить процент в подпись.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "dulong",
+          "name": {
+            "zh": "独龙族",
+            "gloss": "Дулуны — живут в долине реки Дулунцзян",
+            "ru": [
+              "Дулуны"
+            ]
+          },
+          "sources": [
+            {
+              "url": "https://www.neac.gov.cn/seac/ztzl/dlz/gk.shtml",
+              "title": "Дулуны — Государственная комиссия КНР по делам национальностей",
+              "quote": "独龙族居住的独龙江河谷，南北长约150多公里",
+              "verificationMethod": "web.search: индекс первичного официального источника; web.open вернул оболочку без основного текста",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 5
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Комитет Юньнани по делам национальностей: составление словаря о дулунах",
+              "url": "https://mzzj.yn.gov.cn/html/2022/difangdongtai_0602/42910.html",
+              "quote": "主要居住在贡山独龙族怒族自治县独龙江流域的河谷地带",
+              "scope": "Расселение дулунов в долине Дулунцзяна; их точную переписную численность брать из общекитайского профиля.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "lhoba",
+          "name": {
+            "zh": "珞巴族",
+            "gloss": "Лоба — название означает «южные люди»",
+            "ru": [
+              "Лоба"
+            ]
+          },
+          "sources": [
+            {
+              "url": "https://www.neac.gov.cn/seac/ztzl/lbz/gk.shtml",
+              "title": "Лоба — Государственная комиссия КНР по делам национальностей",
+              "quote": "珞巴族总人口约4237人（2020年）\n正式定名为珞巴族，取“南方人”之意。",
+              "verificationMethod": "Свежий web.search: полный индексированный текст официальной страницы; web.open вернул оболочку, прямой HTTP-запрос — 403",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 5
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "url": "https://id.china-embassy.gov.cn/chn/zggk/wslgmz/200404/t20040421_2343289.htm",
+              "title": "Посольство КНР в Индонезии: лоба (2004-04-21)",
+              "quote": "人口为2312人。\n珞巴一词源于藏语，其意为“南方人”",
+              "verificationMethod": "web.open: полный текст прочитан",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 5
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "人口与经济: анализ данных трёх переписей Китая",
+              "url": "https://rkyjj.cueb.edu.cn/docs/2023-06/20230609175654530207.pdf",
+              "quote": "其人口总数为 4237 人",
+              "scope": "Полный PDF, таблица 6. Сравнение четырёх народов, именно 4237 у лоба.",
+              "authority": "academic",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "pumi",
+          "name": {
+            "zh": "普米族",
+            "gloss": "Пуми — преимущественно живут на северо-западе Юньнани",
+            "ru": [
+              "Пуми"
+            ]
+          },
+          "sources": [
+            {
+              "url": "https://www.neac.gov.cn/seac/ztzl/pmz/gk.shtml",
+              "title": "Пуми — Государственная комиссия КНР по делам национальностей",
+              "quote": "普米族现有人口45012人（2020年）",
+              "verificationMethod": "web.search: индекс первичного официального источника; web.open вернул оболочку без основного текста",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 5
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Центральный университет национальностей: экокультура народов Юньнани",
+              "url": "https://cnwec.muc.edu.cn/info/1008/5218.htm",
+              "quote": "普米族的聚居区域主要位于云南省怒江洲的兰坪县、丽江市的宁蒗彝族自治县、玉龙县和迪庆州的维西县等地。",
+              "scope": "Основные районы проживания пуми на северо-западе Юньнани.",
+              "authority": "academic",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
+    },
+    "russianbuddhistcentres": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "moscow",
+          "name": {
+            "zh": "莫斯科",
+            "gloss": "Москва — здесь находится буддийский храм «Тубден Шедублинг»",
+            "ru": [
+              "Москва"
+            ],
+            "ref": "provinces/cities/city-ru-moscow"
+          },
+          "sources": [
+            {
+              "title": "Московская община буддистов. Тубден Шедублинг",
+              "url": "https://buddha-temple.ru/",
+              "quote": "Московский буддийский храм",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 32
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Московская община буддистов: контакты храма",
+              "url": "https://moscowbuddhatemple.ru/contact",
+              "quote": "Москва, Нововладыкинский проезд, вл. 15",
+              "scope": "Контактная страница прямо называет храм «Тубден Шедублинг».",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            },
+            {
+              "title": "Правительство Москвы: благоустройство района Отрадное",
+              "url": "https://www.mos.ru/upload/newsfeed/presspresentations/Otradnoe_prezentaciya.pdf",
+              "quote": "Первый буддийский храмовый комплекс",
+              "scope": "Районная презентация подписывает храмовый комплекс «Тубден Шедублинг».",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "kalmykia",
+          "name": {
+            "zh": "卡尔梅克共和国",
+            "gloss": "Калмыкия — «Золотая обитель Будды Шакьямуни» открылась в 2005 году",
+            "ru": [
+              "Калмыкия"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Центральный хурул Калмыкии. Посещение хурула",
+              "url": "https://khurul.ru/visit-rules",
+              "quote": "Открытие хурула состоялось 27 декабря 2005 года.",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 32
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Культура.РФ: Калмыцкий хурул",
+              "url": "https://www.culture.ru/institutes/10081/kalmyckii-khurul",
+              "quote": "был открыт в 2005 г.",
+              "scope": "Подтверждает название, место и год. Дату внутри года не уточнять.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "buryatia",
+          "name": {
+            "zh": "布里亚特共和国",
+            "gloss": "Бурятия — Иволгинский дацан служит резиденцией Пандито Хамбо-ламы",
+            "ru": [
+              "Бурятия"
+            ],
+            "ref": "provinces/russianborderregions/ru-buryatia"
+          },
+          "sources": [
+            {
+              "title": "Иволгинский дацан. О храме",
+              "url": "https://ivolgdatsan.ru/about/",
+              "quote": "духовная столица Буддийской традиционной Сангхи России",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 32
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Иволгинский дацан: история",
+              "url": "https://ivolgdatsan.ru/about/history/",
+              "quote": "Иволгинский дацан является резиденцией главы буддистов России XXIV Пандито Хамбо ламы Дамбы Аюшеева",
+              "scope": "Резиденция отличается от статуса центра Сангхи; источник также подтверждает корпуса буддийского университета.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            },
+            {
+              "title": "Официальный сайт Пандито Хамбо Ламы Дамбы Аюшеева",
+              "url": "https://hambolama.ru/",
+              "quote": "Адрес: Россия, Республика Бурятия, Иволгинский район, село Верхняя Иволга, Иволгинский дацан",
+              "scope": "Адрес резиденции в Бурятии, раздел «Резиденция Е.С.».",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "tuva",
+          "name": {
+            "zh": "图瓦共和国",
+            "gloss": "Тыва — монастырь «Тубтен Шедруб Линг» открылся в Кызыле в 2023 году",
+            "ru": [
+              "Тыва"
+            ],
+            "ref": "provinces/russianborderregions/ru-tuva"
+          },
+          "sources": [
+            {
+              "title": "Верховный Хурал Тывы. Открытие монастыря, 28.04.2023",
+              "url": "https://khural.rtyva.ru/press/news/12196/",
+              "quote": "Сегодня в г. Кызыле состоялось торжественное открытие буддийского монастыря «Тубтен Шедруб Линг»",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 32
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Правительство Тывы: годовщина открытия монастыря",
+              "url": "https://rtyva.ru/press/news/1777/",
+              "quote": "Освящение крупнейшего в России буддийского монастыря «Тубтен Шедруб Линг» прошло в Кызыле ровно год назад.",
+              "scope": "Публикация 28 апреля 2024 года подтверждает открытие в 2023 году.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
     }
   }
 }

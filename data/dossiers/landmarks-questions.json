@@ -1116,5 +1116,65 @@
       "verdict": "accept",
       "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
     }
+  },
+  {
+    "id": "landmarks-q121",
+    "status": "accepted",
+    "embeds": "2022-23-mun-mosobl-6",
+    "fact": {
+      "table": "beijingstadiumcapacity",
+      "row": "seats91000",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
+  },
+  {
+    "id": "landmarks-q122",
+    "status": "accepted",
+    "embeds": "2023-24-mun-komi-8",
+    "fact": {
+      "table": "wildgoosepagodatiercounts",
+      "row": "tiers7",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
+  },
+  {
+    "id": "landmarks-q123",
+    "status": "accepted",
+    "embeds": "2023-24-mun-spb-7",
+    "fact": {
+      "table": "petersburganniversarysites",
+      "row": "friendship-garden",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
+  },
+  {
+    "id": "landmarks-q124",
+    "status": "accepted",
+    "embeds": "2023-24-shk-mosobl-16",
+    "fact": {
+      "table": "lakhtacenterfloors",
+      "row": "floors87",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
   }
 ]

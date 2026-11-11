@@ -349,17 +349,31 @@ function onePerFact(ordered, size) {
   const seen = new Set();
   const picked = [];
   const deferred = [];
+  const pickedIds = new Set();
+  const excludedIds = new Set();
+  const canPick = (record) => !excludedIds.has(record.id)
+    && !(record.separateFrom ?? []).some((id) => pickedIds.has(id));
+  const pick = (record) => {
+    picked.push(record);
+    pickedIds.add(record.id);
+    for (const id of record.separateFrom ?? []) excludedIds.add(id);
+  };
   for (const record of ordered) {
     if (picked.length === size) break;
+    if (!canPick(record)) continue;
     const keys = factKeys(record);
     if (keys.some((key) => seen.has(key))) {
       deferred.push(record);
     } else {
       keys.forEach((key) => seen.add(key));
-      picked.push(record);
+      pick(record);
     }
   }
-  return [...picked, ...deferred.slice(0, size - picked.length)];
+  for (const record of deferred) {
+    if (picked.length === size) break;
+    if (canPick(record)) pick(record);
+  }
+  return picked;
 }
 
 export function buildRound(bank, filters, progress, size, random = Math.random, now = Date.now()) {

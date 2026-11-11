@@ -5171,6 +5171,164 @@
           ]
         }
       ]
+    },
+    "kulikovodays": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "russia-day",
+          "name": {
+            "zh": "俄罗斯日",
+            "gloss": "День России — отмечается 12 июня.",
+            "ru": [
+              "День России"
+            ],
+            "ref": "holidays/holidays/hol-ru-eluosi"
+          },
+          "sources": [
+            {
+              "title": "Мосстат: День России",
+              "url": "https://77.rosstat.gov.ru/folder/70751/document/89180",
+              "quote": "12 июня вся страна отмечает День России.",
+              "verificationMethod": "Свежая индексированная выдержка поиска; полный текст отдельно не открыт.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 2
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Трудовой кодекс России, статья 112",
+              "url": "https://www.consultant.ru/document/cons_doc_LAW_34683/98ef2900507766e70ff29c0b9d8e2353ea80a1cf/",
+              "quote": "12 июня - День России;",
+              "scope": "Официальное название и дата.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Переиспользована ссылка из досье, дата и наименование перепроверены в полном тексте статьи 112."
+            }
+          ]
+        },
+        {
+          "id": "unity-day",
+          "name": {
+            "zh": "民族统一日",
+            "gloss": "День народного единства — отмечается 4 ноября; связан с событиями 1612 года.",
+            "ru": [
+              "День народного единства"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Федеральный закон №32-ФЗ — копия на сайте Росгидромета",
+              "url": "https://www.meteorf.gov.ru/documents/6/27/",
+              "quote": "21 сентября — День победы русских полков во главе с великим князем Дмитрием Донским",
+              "verificationMethod": "Открыт текст закона, статья 1. На странице редакция 2012 года; дату независимо подтверждает Росгвардия. Не выдавать за полную актуальную редакцию.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 2
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "МЧС России: В единстве — наша сила",
+              "url": "https://67.mchs.gov.ru/deyatelnost/press-centr/novosti/5852752",
+              "quote": "день памяти о событиях 1612 года",
+              "verificationMethod": "Свежая индексированная выдержка поиска, публикация за неделю до проверки 10.11.2026; полный текст отдельно не открыт.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 2
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Трудовой кодекс России, статья 112",
+              "url": "https://www.consultant.ru/document/cons_doc_LAW_34683/98ef2900507766e70ff29c0b9d8e2353ea80a1cf/",
+              "quote": "4 ноября - День народного единства.",
+              "scope": "Официальное название и дата.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Переиспользована ссылка из досье, дата и наименование перепроверены в полном тексте статьи 112."
+            }
+          ]
+        },
+        {
+          "id": "military-glory-day",
+          "name": {
+            "zh": "军事荣誉日",
+            "gloss": "День воинской славы — победу в Куликовской битве вспоминают 21 сентября.",
+            "ru": [
+              "День воинской славы"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Федеральный закон №32-ФЗ — копия на сайте Росгидромета",
+              "url": "https://www.meteorf.gov.ru/documents/6/27/",
+              "quote": "21 сентября — День победы русских полков во главе с великим князем Дмитрием Донским",
+              "verificationMethod": "Открыт текст закона, статья 1. На странице редакция 2012 года; дату независимо подтверждает Росгвардия. Не выдавать за полную актуальную редакцию.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 2
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Президентская библиотека: Произошла битва на Куликовом поле",
+              "url": "https://www.prlib.ru/history/619523",
+              "quote": "В память об этом событии 21 сентября отмечается День воинской славы России",
+              "scope": "Историческое сражение 8 сентября 1380 по юлианскому календарю (16 сентября по пролептическому григорианскому) и памятная дата 21 сентября.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "flag-day",
+          "name": {
+            "zh": "国旗纪念日",
+            "gloss": "День Государственного флага — отмечается 22 августа, учреждён в 1994 году.",
+            "ru": [
+              "День Государственного флага"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Казначейство: 22 августа — День Государственного флага",
+              "url": "https://mo.roskazna.gov.ru/press/371186",
+              "quote": "22 августа отмечается День Государственного флага Российской Федерации",
+              "verificationMethod": "Свежая индексированная выдержка поиска; полный текст отдельно не открыт.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 2
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Указ Президента РФ от 20.08.1994 № 1714",
+              "url": "https://base.garant.ru/179620/",
+              "quote": "Установить праздник - День Государственного флага Российской Федерации и отмечать его 22 августа.",
+              "scope": "Первичный текст указа, учреждение в 1994 и дата.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
     }
   }
 }

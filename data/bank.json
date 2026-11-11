@@ -21724,6 +21724,87 @@
   },
   {
     "answer": {
+      "gloss": "День воинской славы — победу в Куликовской битве вспоминают 21 сентября.",
+      "optionId": "o3",
+      "state": "verified"
+    },
+    "dossier": "holidays",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Федеральный закон №32-ФЗ — копия на сайте Росгидромета",
+        "url": "https://www.meteorf.gov.ru/documents/6/27/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Президентская библиотека: Произошла битва на Куликовом поле",
+        "url": "https://www.prlib.ru/history/619523"
+      }
+    ],
+    "explanation": {
+      "ru": "Российский закон установил 21 сентября как день воинской славы в память о победе в Куликовской битве. Историческая дата сражения — 8 сентября 1380 года по юлианскому календарю."
+    },
+    "factRow": "holidays/kulikovodays/military-glory-day",
+    "id": "2021-22-mun-mosobl-60",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 60,
+        "officialKey": "o3",
+        "region": "Московская область",
+        "regionCode": "mosobl",
+        "sourceFiles": [
+          "01-Варианты/2021-22/2-Муниципальный/Московская область/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2021-22"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "День России — отмечается 12 июня.",
+        "id": "o1",
+        "zh": "俄罗斯日"
+      },
+      {
+        "gloss": "День народного единства — отмечается 4 ноября; связан с событиями 1612 года.",
+        "id": "o2",
+        "zh": "民族统一日"
+      },
+      {
+        "id": "o3",
+        "zh": "军事荣誉日"
+      },
+      {
+        "gloss": "День Государственного флага — отмечается 22 августа, учреждён в 1994 году.",
+        "id": "o4",
+        "zh": "国旗纪念日"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Какой из перечисленных дней в России связан с победой русских войск в Куликовской битве 8 сентября 1380 года по юлианскому календарю?",
+    "questionZh": null,
+    "separateFrom": [
+      "modern-history-q85",
+      "modern-history-q86",
+      "holidays-q51",
+      "2023-24-mun-chel-7",
+      "holidays-q25",
+      "2023-24-shk-29",
+      "2019-20-reg-10"
+    ],
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
+  },
+  {
+    "answer": {
       "optionId": "o3",
       "state": "verified"
     },
@@ -25831,6 +25912,240 @@
   },
   {
     "answer": {
+      "gloss": "Лоба — название означает «южные люди»",
+      "optionId": "o3",
+      "state": "verified"
+    },
+    "dossier": "ethnos",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Лоба — Государственная комиссия КНР по делам национальностей",
+        "url": "https://www.neac.gov.cn/seac/ztzl/lbz/gk.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Посольство КНР в Индонезии: лоба (2004-04-21)",
+        "url": "https://id.china-embassy.gov.cn/chn/zggk/wslgmz/200404/t20040421_2343289.htm"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-11",
+        "title": "人口与经济: анализ данных трёх переписей Китая",
+        "url": "https://rkyjj.cueb.edu.cn/docs/2023-06/20230609175654530207.pdf"
+      }
+    ],
+    "explanation": {
+      "ru": "Среди перечисленных народов меньше всего лоба. По данным переписи 2020 года их численность составила 4237 человек. Название лоба переводят как «южные люди»."
+    },
+    "factRow": "ethnos/smallpeoplescensus/lhoba",
+    "id": "2022-23-mun-amur-5",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 5,
+        "officialKey": "o3",
+        "region": "Амурская область",
+        "regionCode": "amur",
+        "sourceFiles": [
+          "01-Варианты/2022-23/2-Муниципальный/Амурская область/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2022-23"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "Шуй — один из главных районов проживания: Саньду в Гуйчжоу",
+        "id": "o1",
+        "zh": "水族"
+      },
+      {
+        "gloss": "Дулуны — живут в долине реки Дулунцзян",
+        "id": "o2",
+        "zh": "独龙族"
+      },
+      {
+        "id": "o3",
+        "zh": "珞巴族"
+      },
+      {
+        "gloss": "Пуми — преимущественно живут на северо-западе Юньнани",
+        "id": "o4",
+        "zh": "普米族"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Какой из перечисленных народов Китая был самым малочисленным по данным переписи 2020 года?",
+    "questionZh": null,
+    "separateFrom": [
+      "people-q26"
+    ],
+    "topic": "Общество: население, этносы и религии",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
+  },
+  {
+    "answer": {
+      "gloss": "Цюань Хунчань — в олимпийском финале три её прыжка получили высшие оценки.",
+      "optionId": "o1",
+      "state": "verified"
+    },
+    "dossier": "modern-china",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "World Aquatics: 14-year-old Olympic champion Quan",
+        "url": "https://www.worldaquatics.com/news/2221032/14-year-old-olympic-champion-quan-jumps-out-from-hopscotch-game"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "World Aquatics: Quan Hongchan, результаты",
+        "url": "https://www.worldaquatics.com/athletes/1528691/wd"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Главное управление спорта КНР: три прыжка Цюань Хунчань с максимальными оценками",
+        "url": "https://www.sport.gov.cn/n4/n23367510/n23367699/c23582682/content.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Цюань Хунчань выиграла олимпийский финал по прыжкам с 10-метровой вышки в возрасте 14 лет. Три из пяти её прыжков получили высшие оценки. Финал прошёл в августе 2021 года в рамках Игр, сохранивших название «Токио-2020»."
+    },
+    "factRow": "modern-china/olympicdivingchampions/quan-hongchan",
+    "id": "2022-23-mun-amur-8",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 8,
+        "officialKey": "o1",
+        "region": "Амурская область",
+        "regionCode": "amur",
+        "sourceFiles": [
+          "01-Варианты/2022-23/2-Муниципальный/Амурская область/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2022-23"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "全红婵"
+      },
+      {
+        "gloss": "Фу Минся — стала олимпийской чемпионкой в 13 лет на Играх 1992 года",
+        "id": "o2",
+        "zh": "傅明霞"
+      },
+      {
+        "gloss": "Жэнь Цянь — олимпийская чемпионка Рио в прыжках с 10-метровой вышки",
+        "id": "o3",
+        "zh": "任茜"
+      },
+      {
+        "gloss": "Чжун Тяньши — чемпионка Рио и Токио в командном спринте",
+        "id": "o4",
+        "zh": "钟天使"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Какая китайская спортсменка в 14 лет выиграла золото в прыжках с 10-метровой вышки на Олимпийских играх в Токио?",
+    "questionZh": null,
+    "separateFrom": [
+      "2025-26-mun-sverd-56"
+    ],
+    "topic": "Экономика, образование, наука и спорт",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
+  },
+  {
+    "answer": {
+      "gloss": "Доубань — платформа появилась в марте 2005 года",
+      "optionId": "o2",
+      "state": "verified"
+    },
+    "dossier": "modern-china",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Douban — About Douban",
+        "url": "https://jobs.douban.com/about/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Доубань: официальный блог, годовщина",
+        "url": "https://blog.douban.com/douban/2006/03/06/61/"
+      }
+    ],
+    "explanation": {
+      "ru": "Доубань запустили в марте 2005 года. Пользователи платформы оценивают книги, фильмы и музыку и публикуют отзывы. Обсуждения организованы также в тематических группах."
+    },
+    "factRow": "modern-china/discussionplatforms/douban",
+    "id": "2022-23-mun-amur-9",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 9,
+        "officialKey": "o2",
+        "region": "Амурская область",
+        "regionCode": "amur",
+        "sourceFiles": [
+          "01-Варианты/2022-23/2-Муниципальный/Амурская область/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2022-23"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "Мафэнво — путешествия, путеводители и бронирование",
+        "id": "o1",
+        "zh": "马蜂窝"
+      },
+      {
+        "id": "o2",
+        "zh": "豆瓣"
+      },
+      {
+        "gloss": "Сячуфан — рецепты и обмен результатами готовки",
+        "id": "o3",
+        "zh": "下厨房"
+      },
+      {
+        "gloss": "Чжаньку — сообщество дизайнеров, фотографов и иллюстраторов",
+        "id": "o4",
+        "zh": "站酷"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Китайская социальная сеть, где пользователи обсуждают фильмы, книги, музыку.",
+    "questionZh": null,
+    "topic": "Экономика, образование, наука и спорт",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
+  },
+  {
+    "answer": {
       "gloss": "Янцзы (Чанцзян) — самая длинная река Китая, около 6300 км",
       "optionId": "o2",
       "state": "verified"
@@ -26725,6 +27040,87 @@
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
     "wave": 8
+  },
+  {
+    "answer": {
+      "gloss": "91 000 мест — около 80 000 из них постоянные",
+      "optionId": "o4",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Правительство Пекина: Национальный стадион («Птичье гнездо»)",
+        "url": "https://japanese.beijing.gov.cn/livinginbeijing/sheshi/202009/t20200901_1994857.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Официальный туристический портал Пекина: объекты Олимпиады",
+        "url": "https://www.visitbeijing.com.cn/article/47QkpYnKsd1"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Управление строительства Пекина: акт приёмки Национального стадиона",
+        "url": "https://zjw.beijing.gov.cn/bjjs/kjcxytg/jzyxjsyysfgc/ysgs/743807701/index.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "На Олимпиаде 2008 года пекинское «Птичье гнездо» вмещало 91 000 зрителей. Около 80 000 мест были постоянными. На стадионе прошли церемонии открытия и закрытия Игр."
+    },
+    "factRow": "landmarks/beijingstadiumcapacity/seats91000",
+    "id": "2022-23-mun-mosobl-6",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 6,
+        "officialKey": "o4",
+        "region": "Московская область",
+        "regionCode": "mosobl",
+        "sourceFiles": [
+          "01-Варианты/2022-23/2-Муниципальный/Московская область/9-11_Задания и ответы.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2022-23"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "58 000 мест",
+        "id": "o1",
+        "zh": "58 000个座位"
+      },
+      {
+        "gloss": "88 000 мест",
+        "id": "o2",
+        "zh": "88 000个座位"
+      },
+      {
+        "gloss": "101 000 мест",
+        "id": "o3",
+        "zh": "101 000个座位"
+      },
+      {
+        "id": "o4",
+        "zh": "91 000个座位"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Сколько зрителей вмещал пекинский стадион «Птичье гнездо» на Олимпийских играх 2008 года, включая временные места?",
+    "questionZh": null,
+    "separateFrom": [
+      "2015-16-reg-6"
+    ],
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
   },
   {
     "answer": {
@@ -31632,6 +32028,84 @@
   },
   {
     "answer": {
+      "gloss": "7 ярусов — пагоду основали для хранения сутр Сюаньцзана.",
+      "optionId": "o4",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Сианьское управление местных хроник: Большая пагода диких гусей",
+        "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1802954373708996609.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "陕西省志·建设志 — правительственный фонд местных хроник Шэньси",
+        "url": "https://dfz.shaanxi.gov.cn/zslm/fzzlk/xbsxsz/szdylpdf/201404/P020240923623109161543.pdf"
+      }
+    ],
+    "explanation": {
+      "ru": "У нынешней Большой пагоды диких гусей в Сиане семь ярусов. Пагоду основали в 652 году для хранения привезённых Сюаньцзаном буддийских сутр. Число ярусов менялось при перестройках."
+    },
+    "factRow": "landmarks/wildgoosepagodatiercounts/tiers7",
+    "id": "2023-24-mun-komi-8",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 8,
+        "officialKey": "o4",
+        "region": "Коми",
+        "regionCode": "komi",
+        "sourceFiles": [
+          "01-Варианты/2023-24/2-Муниципальный/Коми/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2023-24"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "2 яруса",
+        "id": "o1",
+        "zh": "2层"
+      },
+      {
+        "gloss": "3 яруса",
+        "id": "o2",
+        "zh": "3层"
+      },
+      {
+        "gloss": "5 ярусов",
+        "id": "o3",
+        "zh": "5层"
+      },
+      {
+        "id": "o4",
+        "zh": "7层"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Сколько ярусов в современной Большой пагоде диких гусей (大雁塔) в Сиане?",
+    "questionZh": null,
+    "separateFrom": [
+      "2023-24-shk-38",
+      "landmarks-q59",
+      "landmarks-q96",
+      "people-q20"
+    ],
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
+  },
+  {
+    "answer": {
       "gloss": "Ли Бо — поэма открывается образом Хуанхэ, текущей словно с неба.",
       "optionId": "o1",
       "state": "verified"
@@ -32205,6 +32679,83 @@
     "topic": "Россия и межкультурный блок",
     "topicSource": "editorial",
     "wave": 8
+  },
+  {
+    "answer": {
+      "gloss": "Сад дружбы — подарок Шанхая; в 2003 году отмечали 15 лет побратимства городов.",
+      "optionId": "o4",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Правительство Санкт-Петербурга, Город+: юбилейные дары",
+        "url": "https://gorod-plus.tv/article/51098"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Шанхайское управление иностранных дел: Санкт-Петербург",
+        "url": "https://wsb.sh.gov.cn/ztzl/gjyc/sjyhcs/20231215/1cedd5f9e29c4baa9a0a03194b713c92.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Сад дружбы Санкт-Петербургу подарил Шанхай к 300-летию города. В 2003 году исполнилось также 15 лет побратимским связям двух городов. Торжественную церемонию провели в сентябре 2003 года."
+    },
+    "factRow": "landmarks/petersburganniversarysites/friendship-garden",
+    "id": "2023-24-mun-spb-7",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 7,
+        "officialKey": "o4",
+        "region": "Санкт-Петербург",
+        "regionCode": "spb",
+        "sourceFiles": [
+          "01-Варианты/2023-24/2-Муниципальный/Санкт-Петербург/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2023-24"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "Летний сад — заложен по приказу Петра I в 1704 году",
+        "id": "o1",
+        "zh": "夏园"
+      },
+      {
+        "gloss": "Зимний дворец — императорская семья переехала в новое здание в 1762 году.",
+        "id": "o2",
+        "zh": "冬宫"
+      },
+      {
+        "gloss": "Аничков мост — украшен конными скульптурами Петра Клодта",
+        "id": "o3",
+        "zh": "阿尼奇科夫桥"
+      },
+      {
+        "id": "o4",
+        "zh": "友谊园"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Какая из нижеперечисленных достопримечательностей Санкт-Петербурга является подарком Китая на 300-летний юбилей города?",
+    "questionZh": null,
+    "separateFrom": [
+      "2020-21-pri-q4e8b0e",
+      "2024-25-mun-klg-8",
+      "2025-26-mun-kgd-59"
+    ],
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
   },
   {
     "answer": {
@@ -33941,6 +34492,82 @@
   },
   {
     "answer": {
+      "gloss": "Восточно-Сибирское море — архипелаг лежит также в соседнем море Лаптевых.",
+      "optionId": "o4",
+      "state": "verified"
+    },
+    "dossier": "nature",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "БРЭ: Новосибирские острова",
+        "url": "https://bigenc.ru/c/novosibirskie-ostrova-7b6543"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-11",
+        "title": "Геология и геофизика: стратиграфия Новосибирских островов",
+        "url": "https://www.sibran.ru/journals/issue.php?ARTICLE_ID=172213&ID=9021&PAGEN_1=146"
+      }
+    ],
+    "explanation": {
+      "ru": "Новосибирские острова лежат между Восточно-Сибирским морем и морем Лаптевых. Оба моря относятся к Северному Ледовитому океану. Из предложенных вариантов подходит Восточно-Сибирское море."
+    },
+    "factRow": "nature/newsiberianislandsseas/east-siberian-sea",
+    "id": "2023-24-shk-mosobl-13",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 13,
+        "officialKey": "o4",
+        "region": "Московская область",
+        "regionCode": "mosobl",
+        "sourceFiles": [
+          "01-Варианты/2023-24/1-Школьный/Московская область/9-11_Задания.pdf"
+        ],
+        "stage": "школьный",
+        "stageCode": "shk",
+        "year": "2023-24"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "Баренцево море — омывает берега России и Норвегии.",
+        "id": "o1",
+        "zh": "巴伦支海"
+      },
+      {
+        "gloss": "Белое море — внутреннее море Северного Ледовитого океана, целиком в России.",
+        "id": "o2",
+        "zh": "白海"
+      },
+      {
+        "gloss": "Японское море — море бассейна Тихого океана у российского Дальнего Востока.",
+        "id": "o3",
+        "zh": "日本海"
+      },
+      {
+        "id": "o4",
+        "zh": "东西伯利亚海"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Какое из морей омывает Новосибирские острова?",
+    "questionZh": null,
+    "separateFrom": [
+      "2022-23-reg-4",
+      "2024-25-mun-34"
+    ],
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
+  },
+  {
+    "answer": {
       "gloss": "Мэй Ланьфан — возглавлял гастрольную труппу из 24 человек",
       "optionId": "o2",
       "state": "verified"
@@ -34009,6 +34636,156 @@
     "topic": "Россия и межкультурный блок",
     "topicSource": "assigned",
     "wave": 8
+  },
+  {
+    "answer": {
+      "gloss": "87 надземных этажей — башня высотой 462 м поворачивается на 90° от основания к вершине.",
+      "optionId": "o4",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Лахта Центр: о комплексе",
+        "url": "https://lakhta.center/about/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Skyscraper Center: Lakhta Center",
+        "url": "https://www.skyscrapercenter.com/building/lakhta-center/12575"
+      }
+    ],
+    "explanation": {
+      "ru": "В башне «Лахта Центр» 87 надземных этажей. Её высота составляет 462 метра. Форма здания поворачивается на 90 градусов от основания к вершине."
+    },
+    "factRow": "landmarks/lakhtacenterfloors/floors87",
+    "id": "2023-24-shk-mosobl-16",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 16,
+        "officialKey": "o4",
+        "region": "Московская область",
+        "regionCode": "mosobl",
+        "sourceFiles": [
+          "01-Варианты/2023-24/1-Школьный/Московская область/9-11_Задания.pdf"
+        ],
+        "stage": "школьный",
+        "stageCode": "shk",
+        "year": "2023-24"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "76 этажей",
+        "id": "o1",
+        "zh": "76层"
+      },
+      {
+        "gloss": "61 этаж",
+        "id": "o2",
+        "zh": "61层"
+      },
+      {
+        "gloss": "93 этажа",
+        "id": "o3",
+        "zh": "93层"
+      },
+      {
+        "id": "o4",
+        "zh": "87层"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Сколько этажей в самом высоком небоскребе Европы «Лахта Центре»?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
+  },
+  {
+    "answer": {
+      "gloss": "70 км — на Большой кольцевой линии 31 станция.",
+      "optionId": "o2",
+      "state": "verified"
+    },
+    "dossier": "modern-china",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Минтранс: запуск Большой кольцевой линии, 01.03.2023",
+        "url": "https://mintrans.gov.ru/press-center/news/10640"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Аналитический центр Москвы: три года в ритме БКЛ, 02.03.2026",
+        "url": "https://ac.mos.ru/news/24374/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Московский транспорт: полный запуск БКЛ 01.03.2023",
+        "url": "https://transport.mos.ru/mostrans/all_news/113767"
+      }
+    ],
+    "explanation": {
+      "ru": "При открытии полного движения 1 марта 2023 года Минтранс указал протяжённость БКЛ 70 км. Кольцо включает 31 станцию. Вопрос относится к данным, опубликованным при запуске."
+    },
+    "factRow": "modern-china/moscowmetrolinelength/km70",
+    "id": "2023-24-shk-mosobl-17",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 17,
+        "officialKey": "o2",
+        "region": "Московская область",
+        "regionCode": "mosobl",
+        "sourceFiles": [
+          "01-Варианты/2023-24/1-Школьный/Московская область/9-11_Задания.pdf"
+        ],
+        "stage": "школьный",
+        "stageCode": "shk",
+        "year": "2023-24"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "60 км",
+        "id": "o1",
+        "zh": "60公里"
+      },
+      {
+        "id": "o2",
+        "zh": "70公里"
+      },
+      {
+        "gloss": "75 км",
+        "id": "o3",
+        "zh": "75公里"
+      },
+      {
+        "gloss": "73 км",
+        "id": "o4",
+        "zh": "73公里"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Какую протяжённость Большой кольцевой линии московского метро указал Минтранс России при полном запуске 1 марта 2023 года?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
   },
   {
     "answer": {
@@ -37274,6 +38051,177 @@
   },
   {
     "answer": {
+      "gloss": "Иван Петлин — составил «Роспись» Китая после поездки 1618–1619 годов",
+      "optionId": "o1",
+      "state": "verified"
+    },
+    "dossier": "people",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Н. Ф. Демидова, В. С. Мясников. Миссия Ивана Петлина; Наука, 1966",
+        "url": "https://www.vostlit.info/Texts/Dokumenty/China/XVII/1620-1640/Petlin/pred1.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "НЭБ: путевые записи Ивана Петлина",
+        "url": "https://kp.rusneb.ru/item/material/puteshestvie-v-mongoliyu-i-kitaj-sibirskogo-kazaka-ivana-petlina-v-1618-godu"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-11",
+        "title": "М. Ю. Люстров: шведский перевод «Росписи Китайскому государству»",
+        "url": "https://www.rsuh.ru/upload/main/vestnik/ifkv/Vestnik_ifkv_2-2(35)_2018.pdf"
+      }
+    ],
+    "explanation": {
+      "ru": "Экспедицию, достигшую Китая в 1618 году, возглавлял Иван Петлин. После поездки он составил описание страны, известное как «Роспись». Оно стало одним из ранних русских письменных свидетельств о Китае."
+    },
+    "factRow": "people/petlinexpeditionfigures/petlin",
+    "id": "2024-25-mun-mosobl-7",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 7,
+        "officialKey": "o1",
+        "region": "Московская область",
+        "regionCode": "mosobl",
+        "sourceFiles": [
+          "01-Варианты/2024-25/2-Муниципальный/Московская область/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2024-25"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "伊万·佩特林"
+      },
+      {
+        "gloss": "Илларион Россохин — руководил школой китайского и маньчжурского в 1741–1751 годах",
+        "id": "o2",
+        "zh": "伊拉里昂·罗索欣"
+      },
+      {
+        "gloss": "Палладий Кафаров — исследовал Приморье и составлял китайско-русский словарь",
+        "id": "o3",
+        "zh": "巴拉第·卡法罗夫"
+      },
+      {
+        "gloss": "Никита Бичурин — назначен главой Пекинской духовной миссии в 1807 году",
+        "id": "o4",
+        "zh": "尼基塔·比丘林"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Кто возглавил первую русскую экспедицию, достигшую Китая в 1618 году?",
+    "questionZh": null,
+    "separateFrom": [
+      "2025-26-mun-mosobl-7"
+    ],
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
+  },
+  {
+    "answer": {
+      "gloss": "Япония — Канг-Канг и Лан-Лан прибыли в Уэно 28 октября 1972 года",
+      "optionId": "o2",
+      "state": "verified"
+    },
+    "dossier": "modern-history",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Зоопарк Уэно. これまで飼育したパンダたち",
+        "url": "https://www.tokyo-zoo.net/ueno/panda/history/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Национальный музей природы и науки, Токио",
+        "url": "https://www.kahaku.go.jp/pickup-science/nid00001027.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Зоопарк Уэно: история больших панд",
+        "url": "https://www.tokyo-zoo.net/en/ueno/panda/history/index.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "МИД КНР: 4 ноября 1972 года",
+        "url": "https://www.fmprc.gov.cn/ziliao_674904/historytoday_674971/200311/t20031104_9284669.shtml"
+      }
+    ],
+    "explanation": {
+      "ru": "Китай подарил двух больших панд Японии в 1972 году в связи с нормализацией дипломатических отношений. Панды прибыли в зоопарк Уэно 28 октября. Японский музей естествознания связывает подарок с подписанием совместного заявления двух стран."
+    },
+    "factRow": "modern-history/pandadiplomacycountries/japan",
+    "id": "2024-25-mun-mosobl-8",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 8,
+        "officialKey": "o2",
+        "region": "Московская область",
+        "regionCode": "mosobl",
+        "sourceFiles": [
+          "01-Варианты/2024-25/2-Муниципальный/Московская область/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2024-25"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "Индия — Тадж-Махал находится в Агре",
+        "id": "o1",
+        "zh": "印度"
+      },
+      {
+        "id": "o2",
+        "zh": "日本"
+      },
+      {
+        "gloss": "Россия — Пинь-Пинь прибыл в Московский зоопарк в 1957 году",
+        "id": "o3",
+        "zh": "俄罗斯"
+      },
+      {
+        "gloss": "США — Лин-Лин и Син-Син прибыли в Национальный зоопарк в 1972 году",
+        "id": "o4",
+        "zh": "美国"
+      }
+    ],
+    "parseWarnings": [
+      "расшифровано по картинке страницы"
+    ],
+    "questionRu": "Какой стране Китай подарил панд Канг-Канга и Лан-Лан в 1972 году в честь нормализации дипломатических отношений?",
+    "questionZh": null,
+    "separateFrom": [
+      "modern-history-q116",
+      "state-q15"
+    ],
+    "topic": "История и государство",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
+  },
+  {
+    "answer": {
       "gloss": "Лев Толстой — в «Китайской мудрости» (1884) излагал учения древних философов",
       "optionId": "o3",
       "state": "verified"
@@ -37438,6 +38386,333 @@
     "topic": "Россия и межкультурный блок",
     "topicSource": "editorial",
     "wave": 8
+  },
+  {
+    "answer": {
+      "gloss": "Бурятия — Иволгинский дацан служит резиденцией Пандито Хамбо-ламы",
+      "optionId": "o3",
+      "state": "verified"
+    },
+    "dossier": "ethnos",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Иволгинский дацан. О храме",
+        "url": "https://ivolgdatsan.ru/about/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Иволгинский дацан: история",
+        "url": "https://ivolgdatsan.ru/about/history/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Официальный сайт Пандито Хамбо Ламы Дамбы Аюшеева",
+        "url": "https://hambolama.ru/"
+      }
+    ],
+    "explanation": {
+      "ru": "Иволгинский дацан расположен в Бурятии, в селе Верхняя Иволга. Это центр Буддийской традиционной Сангхи России. В дацане находится резиденция Пандито Хамбо-ламы."
+    },
+    "factRow": "ethnos/russianbuddhistcentres/buryatia",
+    "id": "2024-25-mun-spb-10",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 10,
+        "officialKey": "o3",
+        "region": "Санкт-Петербург",
+        "regionCode": "spb",
+        "sourceFiles": [
+          "01-Варианты/2024-25/2-Муниципальный/Санкт-Петербург/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2024-25"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "Москва — здесь находится буддийский храм «Тубден Шедублинг»",
+        "id": "o1",
+        "zh": "莫斯科"
+      },
+      {
+        "gloss": "Калмыкия — «Золотая обитель Будды Шакьямуни» открылась в 2005 году",
+        "id": "o2",
+        "zh": "卡尔梅克共和国"
+      },
+      {
+        "id": "o3",
+        "zh": "布里亚特共和国"
+      },
+      {
+        "gloss": "Тыва — монастырь «Тубтен Шедруб Линг» открылся в Кызыле в 2023 году",
+        "id": "o4",
+        "zh": "图瓦共和国"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "В каком регионе России расположен Иволгинский дацан — центр Буддийской традиционной Сангхи России?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
+  },
+  {
+    "answer": {
+      "gloss": "1697–1698 — Пётр I путешествовал под именем Петра Михайлова",
+      "optionId": "o3",
+      "state": "verified"
+    },
+    "dossier": "modern-history",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "ИРИ РАН. А. Г. Гуськов. Особенности делопроизводства Великого посольства 1697–1698 гг.",
+        "url": "https://ebookiriran.ru/index.php?id=398&section=9&view=article"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Президентская библиотека. К 320-летию начала Северной войны",
+        "url": "https://www.prlib.ru/news/1301374"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "МАЭ РАН (Кунсткамера) — Посещение стран Европы Петром I",
+        "url": "https://www.kunstkamera.ru/exposition/kunst_hist/5/5_1/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Государственный исторический музей: Великое посольство в Амстердаме",
+        "url": "https://nav.shm.ru/exhibits/3403/"
+      }
+    ],
+    "explanation": {
+      "ru": "Великое посольство Петра I в Европу состоялось в 1697–1698 годах. Поездка включала посещение нескольких европейских стран. Сам Пётр участвовал в миссии под именем Петра Михайлова."
+    },
+    "factRow": "modern-history/greatembassyyears/years1697",
+    "id": "2024-25-mun-spb-3",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 3,
+        "officialKey": "o3",
+        "region": "Санкт-Петербург",
+        "regionCode": "spb",
+        "sourceFiles": [
+          "01-Варианты/2024-25/2-Муниципальный/Санкт-Петербург/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2024-25"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "1678–1679 годы",
+        "id": "o1",
+        "zh": "1678—1679 年"
+      },
+      {
+        "gloss": "1699–1700 годы",
+        "id": "o2",
+        "zh": "1699—1700 年"
+      },
+      {
+        "id": "o3",
+        "zh": "1697—1698 年"
+      },
+      {
+        "gloss": "1701–1702 годы",
+        "id": "o4",
+        "zh": "1701—1702 年"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "В какие годы состоялось Великое посольство Петра I в Европу?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
+  },
+  {
+    "answer": {
+      "gloss": "Республика Алтай — граничит с Китаем, Монголией и Казахстаном",
+      "optionId": "o3",
+      "state": "verified"
+    },
+    "dossier": "provinces",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Официальный туристический портал Республики Алтай. Территориально-административная информация",
+        "url": "https://altai.travel/about-the-republic/territorial-and-administrative-information"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Главное управление МЧС России по Республике Алтай",
+        "url": "https://04.mchs.gov.ru/glavnoe-upravlenie/harakteristika-subekta"
+      }
+    ],
+    "explanation": {
+      "ru": "С Китаем граничит Республика Алтай. Её другие зарубежные соседи — Монголия и Казахстан. Республика Алтай и Алтайский край — разные субъекты России."
+    },
+    "factRow": "provinces/russianaltaiadjacency/altai",
+    "id": "2024-25-mun-spb-4",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 4,
+        "officialKey": "o3",
+        "region": "Санкт-Петербург",
+        "regionCode": "spb",
+        "sourceFiles": [
+          "01-Варианты/2024-25/2-Муниципальный/Санкт-Петербург/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2024-25"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "Бурятия — её зарубежный сосед Монголия",
+        "id": "o1",
+        "zh": "布里亚特共和国"
+      },
+      {
+        "gloss": "Тыва — граничит с Монголией, но не с Китаем",
+        "id": "o2",
+        "zh": "图瓦共和国"
+      },
+      {
+        "id": "o3",
+        "zh": "阿尔泰共和国"
+      },
+      {
+        "gloss": "Ямало-Ненецкий округ — его центр Салехард расположен на Полярном круге",
+        "id": "o4",
+        "zh": "亚马尔-涅涅茨自治区"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Какой из перечисленных ниже субъектов РФ имеет границу с Китаем?",
+    "questionZh": null,
+    "separateFrom": [
+      "2025-26-mun-kgd-56"
+    ],
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
+  },
+  {
+    "answer": {
+      "gloss": "336 — традиционное число рек и ручьёв; крупнейший приток — Селенга",
+      "optionId": "o2",
+      "state": "verified"
+    },
+    "dossier": "nature",
+    "editorial": {
+      "reason": "Встраивание вопроса первой выбранной партии и правки, согласованные автором."
+    },
+    "evidence": [
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "Байкальский государственный университет. Озеро Байкал",
+        "url": "https://eco.bgu.ru/baikal.aspx"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Фонд содействия сохранению озера Байкал. Байкал в цифрах",
+        "url": "https://baikalfund.ru/baikal/geography/statistics/index.wbp"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Иркутский научный центр СО РАН: экспозиция памяти А. А. Бухарова",
+        "url": "https://www.isc.irk.ru/en/node/343"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "ЮНЕСКО: доклад о состоянии озера Байкал",
+        "url": "https://whc.unesco.org/document/219190"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-11",
+        "title": "Иркутская областная библиотека: книжная летопись 2001 №5",
+        "url": "https://www.irklib.ru/knizhnaya-letopis-irkutskoy-oblasti/%D0%9A%D0%9D%D0%9B%205_2001.pdf"
+      }
+    ],
+    "explanation": {
+      "ru": "В таблице Фонда содействия сохранению озера Байкал со ссылкой на справочник «Байкал в цифрах» 2001 года указаны 336 постоянных притоков. В это число входят реки и ручьи. Крупнейший приток Байкала — Селенга."
+    },
+    "factRow": "nature/baikaltributarycounts/tributaries336",
+    "id": "2024-25-mun-spb-6",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 6,
+        "officialKey": "o2",
+        "region": "Санкт-Петербург",
+        "regionCode": "spb",
+        "sourceFiles": [
+          "01-Варианты/2024-25/2-Муниципальный/Санкт-Петербург/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2024-25"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "152 притока",
+        "id": "o1",
+        "zh": "152 条"
+      },
+      {
+        "id": "o2",
+        "zh": "336 条"
+      },
+      {
+        "gloss": "565 притоков",
+        "id": "o3",
+        "zh": "565 条"
+      },
+      {
+        "gloss": "208 притоков",
+        "id": "o4",
+        "zh": "208 条"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Какое число постоянных притоков Байкала указано в справочнике Байкальского музея «Байкал в цифрах» (2001)?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-1"
   },
   {
     "answer": {

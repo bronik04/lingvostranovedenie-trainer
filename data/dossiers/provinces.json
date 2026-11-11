@@ -9152,6 +9152,152 @@
           ]
         }
       ]
+    },
+    "russianaltaiadjacency": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "buryatia",
+          "name": {
+            "zh": "布里亚特共和国",
+            "gloss": "Бурятия — её зарубежный сосед Монголия",
+            "ru": [
+              "Бурятия"
+            ],
+            "ref": "provinces/russianborderregions/ru-buryatia"
+          },
+          "sources": [
+            {
+              "title": "Инвестиционный портал Республики Бурятия. О регионе",
+              "url": "https://invest-buryatia.ru/region",
+              "quote": "Граничит с Республикой Тыва, с Иркутской областью и Забайкальским краем, на юге — с Монголией",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 34
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Генконсульство КНР в Иркутске: Бурятия",
+              "url": "https://irkutsk.china-consulate.gov.cn/lqjs_0/lqgk_133143/202303/t20230328_11050372.htm",
+              "quote": "南与蒙古人民共和国接壤",
+              "scope": "Бурятия на юге граничит с Монголией.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Переиспользовано из data/dossiers/provinces.json, ru-buryatia."
+            }
+          ]
+        },
+        {
+          "id": "tuva",
+          "name": {
+            "zh": "图瓦共和国",
+            "gloss": "Тыва — граничит с Монголией, но не с Китаем",
+            "ru": [
+              "Тыва"
+            ],
+            "ref": "provinces/russianborderregions/ru-tuva"
+          },
+          "sources": [
+            {
+              "title": "Верховный Хурал Тывы. Приграничный субъект",
+              "url": "https://khural.rtyva.ru/info/granisa/",
+              "quote": "Республика Тыва граничит на юге и юго-востоке – с Монголией",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 34
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Минлесхоз Тывы: территориальная схема обращения с отходами",
+              "url": "https://mpr.rtyva.ru/upload/files/8848bef1-e9dd-4e92-b521-5630ba3987f8.pdf",
+              "quote": "Республика граничит: на юге и юго-востоке – с Монголией",
+              "scope": "Документ на с. 11 перечисляет соседей, среди них нет Китая.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Переиспользовано из data/dossiers/provinces.json, ru-tuva."
+            }
+          ]
+        },
+        {
+          "id": "altai",
+          "name": {
+            "zh": "阿尔泰共和国",
+            "gloss": "Республика Алтай — граничит с Китаем, Монголией и Казахстаном",
+            "ru": [
+              "Республика Алтай"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Официальный туристический портал Республики Алтай. Территориально-административная информация",
+              "url": "https://altai.travel/about-the-republic/territorial-and-administrative-information",
+              "quote": "с Казахстаном (на юго-западе); с Китаем и Монголией (на юге)",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 34
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Главное управление МЧС России по Республике Алтай",
+              "url": "https://04.mchs.gov.ru/glavnoe-upravlenie/harakteristika-subekta",
+              "quote": "имеет внешнюю границу с Китаем, Монголией, Казахстаном",
+              "scope": "Подтверждает все три зарубежные границы.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "yamal",
+          "name": {
+            "zh": "亚马尔-涅涅茨自治区",
+            "gloss": "Ямало-Ненецкий округ — его центр Салехард расположен на Полярном круге",
+            "ru": [
+              "Ямало-Ненецкий округ"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Прокуратура Ямало-Ненецкого автономного округа. О регионе",
+              "url": "https://epp.genproc.gov.ru/ru/proc_89/about-the-proc/",
+              "quote": "Центр автономного округа – Салехард, старейший и единственный в мире город на Полярном круге.",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026, строки 23–24",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 34
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Правительство ЯНАО: постановление №1196-П",
+              "url": "https://yamal-gov.ru/doc/41877",
+              "quote": "Административный центр автономного округа – город Салехард находится непосредственно на линии Полярного круга.",
+              "scope": "Первичный текст постановления подтверждает положение города и его статус.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
     }
   }
 }

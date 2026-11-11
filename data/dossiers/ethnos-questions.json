@@ -1038,5 +1038,35 @@
       "verdict": "accept",
       "note": "Принято автором 2026-11-07 в составе 16 вопросов партии 3; формулировка, исходный ключ и четыре показанных варианта сохранены. Подписи и первичные источники проверены в предложениях и независимо; финальная проверка выпуска — regional-batch-3-release-review."
     }
+  },
+  {
+    "id": "ethnos-q100",
+    "status": "accepted",
+    "embeds": "2022-23-mun-amur-5",
+    "fact": {
+      "table": "smallpeoplescensus",
+      "row": "lhoba",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
+  },
+  {
+    "id": "ethnos-q101",
+    "status": "accepted",
+    "embeds": "2024-25-mun-spb-10",
+    "fact": {
+      "table": "russianbuddhistcentres",
+      "row": "buryatia",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
   }
 ]

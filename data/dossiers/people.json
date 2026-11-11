@@ -3406,6 +3406,172 @@
           ]
         }
       ]
+    },
+    "petlinexpeditionfigures": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "petlin",
+          "name": {
+            "zh": "伊万·佩特林",
+            "gloss": "Иван Петлин — составил «Роспись» Китая после поездки 1618–1619 годов",
+            "ru": [
+              "Иван Петлин"
+            ],
+            "ref": "people/russiansinologists/sinologist-petlin"
+          },
+          "sources": [
+            {
+              "title": "Н. Ф. Демидова, В. С. Мясников. Миссия Ивана Петлина; Наука, 1966",
+              "url": "https://www.vostlit.info/Texts/Dokumenty/China/XVII/1620-1640/Petlin/pred1.htm",
+              "quote": "Глава первой русской экспедиции, достигшей Китая, Иван Петлин",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 30
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "НЭБ: путевые записи Ивана Петлина",
+              "url": "https://kp.rusneb.ru/item/material/puteshestvie-v-mongoliyu-i-kitaj-sibirskogo-kazaka-ivana-petlina-v-1618-godu",
+              "quote": "Путешествие в Монголию и Китай сибирского казака Ивана Петлина в 1618 году",
+              "scope": "Первичный документ экспедиции Петлина, опубликованный НЭБ.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Переиспользовано из data/dossiers/people.json, sinologist-petlin, проверка 2026-11-10."
+            },
+            {
+              "title": "М. Ю. Люстров: шведский перевод «Росписи Китайскому государству»",
+              "url": "https://www.rsuh.ru/upload/main/vestnik/ifkv/Vestnik_ifkv_2-2(35)_2018.pdf",
+              "quote": "9 мая 1618 г. … пересекли Монголию и 1 сентября достигли китайской столицы",
+              "scope": "Заголовок указывает авторство «Росписи» Петлина, с. 261 описывает путешествие.",
+              "authority": "academic",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Переиспользовано из data/dossiers/people.json, sinologist-petlin, проверка 2026-11-10."
+            }
+          ]
+        },
+        {
+          "id": "rossokhin",
+          "name": {
+            "zh": "伊拉里昂·罗索欣",
+            "gloss": "Илларион Россохин — руководил школой китайского и маньчжурского в 1741–1751 годах",
+            "ru": [
+              "Илларион Россохин"
+            ],
+            "ref": "people/russiansinologists/sinologist-rossokhin"
+          },
+          "sources": [
+            {
+              "title": "БГУ. И. К. Россохин: иркутское начало российского китаеведения и маньчжуроведения, 2019",
+              "url": "https://rcs.bgu.ru/classes/pdfDL.ashx?id=22942",
+              "quote": "伊拉里昂·卡利诺维奇·罗索欣",
+              "verificationMethod": "Свежий веб-поиск; web.open timeout; PDF успешно загружен urllib и извлечён pdftotext, китайская аннотация на с. 8; локальная копия /tmp/rossokhin-2019.pdf",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 30
+              },
+              "authority": "academic",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Вестник ПГУ: об истории составления китайско-русских словарей",
+              "url": "https://press.psu.ru/index.php/philology/article/download/7072/4864/16456",
+              "quote": "Россохин руководил школой китайского и маньчжурского языков",
+              "scope": "Руководство школой при Академии наук, 1741–1751.",
+              "authority": "academic",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            },
+            {
+              "title": "Институт восточных рукописей РАН: Sinology at the St Petersburg Academy of Sciences",
+              "url": "https://www.orientalstudies.ru/eng/index.php?id=2183&option=content&task=view",
+              "quote": "I.Rossokhin, who founded a school of the Chinese and Manchurian languages (1741-1751)",
+              "scope": "Школа китайского и маньчжурского, которой руководил Россохин, с указанием дат.",
+              "authority": "academic",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "kafarov",
+          "name": {
+            "zh": "巴拉第·卡法罗夫",
+            "gloss": "Палладий Кафаров — исследовал Приморье и составлял китайско-русский словарь",
+            "ru": [
+              "Палладий Кафаров"
+            ],
+            "ref": "people/russiansinologists/sinologist-kafarov"
+          },
+          "sources": [
+            {
+              "title": "ЦНБ ДВО РАН. Архимандрит Палладий (Кафаров) из Китая в Приморье",
+              "url": "https://cnbdvo.ru/item/2291595",
+              "quote": "он создал китайско-русский словарь, популяризирующий кириллическую транскрипционную систему китайского языка",
+              "verificationMethod": "Свежий веб-поиск и открытие полного текста 10.11.2026",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 30
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Чжао Юйшэнь: вклад русских синологов",
+              "url": "https://china.ivran.ru/f/CHzhao_YUj-shen._Vklad_russkih_sinologov_v_sohranenie_osobennostej_kitajskogo_yazyka_pozdnej_Cin.pdf",
+              "quote": "зафиксированный Палладием и П.С. Поповым в «Китайско-русском словаре»",
+              "scope": "Словарь; приморские исследования подтверждает источник ЦНБ ДВО РАН.",
+              "authority": "academic",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Переиспользовано из data/dossiers/people.json, sinologist-kafarov."
+            }
+          ]
+        },
+        {
+          "id": "bichurin",
+          "name": {
+            "zh": "尼基塔·比丘林",
+            "gloss": "Никита Бичурин — назначен главой Пекинской духовной миссии в 1807 году",
+            "ru": [
+              "Никита Бичурин"
+            ],
+            "ref": "people/russiansinologists/sinologist-bichurin"
+          },
+          "sources": [
+            {
+              "title": "РНБ. Бичурин Никита Яковлевич",
+              "url": "https://nlr.ru/nlr_history/persons/info.php?id=23",
+              "quote": "В 1807 назначен начальником девятой духовной миссий в Пекине",
+              "verificationMethod": "Свежий веб-поиск; web.open вернул 403; повторное чтение HTTPS через Python urllib 10.11.2026 успешно, проверен полный текст (30325 байт)",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 30
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "НИУ ВШЭ: курс «Источниковедение и историография»",
+              "url": "https://www.hse.ru/data/2014/06/19/1309679263/Programma_%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F..%D0%B5%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%8B%2C%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%2C%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F%29.pdf",
+              "quote": "9-я миссия (1807-1821) во главе с",
+              "scope": "Названы Пекинская духовная миссия Бичурина и её период.",
+              "authority": "academic",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
     }
   }
 }

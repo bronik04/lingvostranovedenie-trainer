@@ -719,5 +719,20 @@
       "verdict": "accept",
       "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
     }
+  },
+  {
+    "id": "people-q41",
+    "status": "accepted",
+    "embeds": "2024-25-mun-mosobl-7",
+    "fact": {
+      "table": "petlinexpeditionfigures",
+      "row": "petlin",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Автор согласовал карточку и показанные правки. Локальное встраивание."
+    }
   }
 ]

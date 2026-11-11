@@ -8859,6 +8859,629 @@
           ]
         }
       ]
+    },
+    "beijingstadiumcapacity": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "seats58000",
+          "name": {
+            "zh": "58 000个座位",
+            "gloss": "58 000 мест"
+          },
+          "sources": [
+            {
+              "url": "https://japanese.beijing.gov.cn/livinginbeijing/sheshi/202009/t20200901_1994857.html",
+              "title": "Правительство Пекина: Национальный стадион («Птичье гнездо»)",
+              "quote": "91000席の収容可能な観客席があり、そのうち固定席は約80000席です。",
+              "verificationMethod": "web.open: полный текст страницы прочитан",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 8
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "url": "https://www.visitbeijing.com.cn/article/47QkpYnKsd1",
+              "title": "Официальный туристический портал Пекина: объекты Олимпиады",
+              "quote": "建成后，拥有固定座席80000个，临时座席11000个。",
+              "verificationMethod": "Свежий web.search: индекс официального туристического портала; web.open завершился TimeoutError",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 8
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Управление строительства Пекина: акт приёмки Национального стадиона",
+              "url": "https://zjw.beijing.gov.cn/bjjs/kjcxytg/jzyxjsyysfgc/ysgs/743807701/index.shtml",
+              "quote": "奥运会期间可容纳观众91000人，其中临时坐席11000个",
+              "scope": "Олимпиада-2008, 91 000 с временными местами; следующий фрагмент подтверждает 80 000 после демонтажа.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "seats88000",
+          "name": {
+            "zh": "88 000个座位",
+            "gloss": "88 000 мест"
+          },
+          "sources": [
+            {
+              "url": "https://japanese.beijing.gov.cn/livinginbeijing/sheshi/202009/t20200901_1994857.html",
+              "title": "Правительство Пекина: Национальный стадион («Птичье гнездо»)",
+              "quote": "91000席の収容可能な観客席があり、そのうち固定席は約80000席です。",
+              "verificationMethod": "web.open: полный текст страницы прочитан",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 8
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "url": "https://www.visitbeijing.com.cn/article/47QkpYnKsd1",
+              "title": "Официальный туристический портал Пекина: объекты Олимпиады",
+              "quote": "建成后，拥有固定座席80000个，临时座席11000个。",
+              "verificationMethod": "Свежий web.search: индекс официального туристического портала; web.open завершился TimeoutError",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 8
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Управление строительства Пекина: акт приёмки Национального стадиона",
+              "url": "https://zjw.beijing.gov.cn/bjjs/kjcxytg/jzyxjsyysfgc/ysgs/743807701/index.shtml",
+              "quote": "奥运会期间可容纳观众91000人，其中临时坐席11000个",
+              "scope": "Олимпиада-2008, 91 000 с временными местами; следующий фрагмент подтверждает 80 000 после демонтажа.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "seats101000",
+          "name": {
+            "zh": "101 000个座位",
+            "gloss": "101 000 мест"
+          },
+          "sources": [
+            {
+              "url": "https://japanese.beijing.gov.cn/livinginbeijing/sheshi/202009/t20200901_1994857.html",
+              "title": "Правительство Пекина: Национальный стадион («Птичье гнездо»)",
+              "quote": "91000席の収容可能な観客席があり、そのうち固定席は約80000席です。",
+              "verificationMethod": "web.open: полный текст страницы прочитан",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 8
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "url": "https://www.visitbeijing.com.cn/article/47QkpYnKsd1",
+              "title": "Официальный туристический портал Пекина: объекты Олимпиады",
+              "quote": "建成后，拥有固定座席80000个，临时座席11000个。",
+              "verificationMethod": "Свежий web.search: индекс официального туристического портала; web.open завершился TimeoutError",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 8
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Управление строительства Пекина: акт приёмки Национального стадиона",
+              "url": "https://zjw.beijing.gov.cn/bjjs/kjcxytg/jzyxjsyysfgc/ysgs/743807701/index.shtml",
+              "quote": "奥运会期间可容纳观众91000人，其中临时坐席11000个",
+              "scope": "Олимпиада-2008, 91 000 с временными местами; следующий фрагмент подтверждает 80 000 после демонтажа.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "seats91000",
+          "name": {
+            "zh": "91 000个座位",
+            "gloss": "91 000 мест — около 80 000 из них постоянные"
+          },
+          "sources": [
+            {
+              "url": "https://japanese.beijing.gov.cn/livinginbeijing/sheshi/202009/t20200901_1994857.html",
+              "title": "Правительство Пекина: Национальный стадион («Птичье гнездо»)",
+              "quote": "91000席の収容可能な観客席があり、そのうち固定席は約80000席です。",
+              "verificationMethod": "web.open: полный текст страницы прочитан",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 8
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "url": "https://www.visitbeijing.com.cn/article/47QkpYnKsd1",
+              "title": "Официальный туристический портал Пекина: объекты Олимпиады",
+              "quote": "建成后，拥有固定座席80000个，临时座席11000个。",
+              "verificationMethod": "Свежий web.search: индекс официального туристического портала; web.open завершился TimeoutError",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 8
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Управление строительства Пекина: акт приёмки Национального стадиона",
+              "url": "https://zjw.beijing.gov.cn/bjjs/kjcxytg/jzyxjsyysfgc/ysgs/743807701/index.shtml",
+              "quote": "奥运会期间可容纳观众91000人，其中临时坐席11000个",
+              "scope": "Олимпиада-2008, 91 000 с временными местами; следующий фрагмент подтверждает 80 000 после демонтажа.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
+    },
+    "wildgoosepagodatiercounts": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "tiers2",
+          "name": {
+            "zh": "2层",
+            "gloss": "2 яруса"
+          },
+          "sources": [
+            {
+              "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1802954373708996609.html",
+              "title": "Сианьское управление местных хроник: Большая пагода диких гусей",
+              "quote": "唐永徽三年（公元652年）为玄奘藏经典而修建，塔身7层",
+              "verificationMethod": "Принятое досье landmarks/lm-cn-dayan; свежий целевой web.search вернул полный основной текст официальной страницы от 2024-06-18; web.open вернул оболочку",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 13
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "url": "https://dfz.shaanxi.gov.cn/zslm/fzzlk/xbsxsz/szdylpdf/201404/P020240923623109161543.pdf",
+              "title": "陕西省志·建设志 — правительственный фонд местных хроник Шэньси",
+              "quote": "塔为方形七层",
+              "verificationMethod": "Свежий web.search: индекс официального PDF содержит сравнительную таблицу 大雁塔 7层 / 小雁塔 原15层现存13层; web.open завершился TimeoutError",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 13
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            }
+          ]
+        },
+        {
+          "id": "tiers3",
+          "name": {
+            "zh": "3层",
+            "gloss": "3 яруса"
+          },
+          "sources": [
+            {
+              "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1802954373708996609.html",
+              "title": "Сианьское управление местных хроник: Большая пагода диких гусей",
+              "quote": "唐永徽三年（公元652年）为玄奘藏经典而修建，塔身7层",
+              "verificationMethod": "Принятое досье landmarks/lm-cn-dayan; свежий целевой web.search вернул полный основной текст официальной страницы от 2024-06-18; web.open вернул оболочку",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 13
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "url": "https://dfz.shaanxi.gov.cn/zslm/fzzlk/xbsxsz/szdylpdf/201404/P020240923623109161543.pdf",
+              "title": "陕西省志·建设志 — правительственный фонд местных хроник Шэньси",
+              "quote": "塔为方形七层",
+              "verificationMethod": "Свежий web.search: индекс официального PDF содержит сравнительную таблицу 大雁塔 7层 / 小雁塔 原15层现存13层; web.open завершился TimeoutError",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 13
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            }
+          ]
+        },
+        {
+          "id": "tiers5",
+          "name": {
+            "zh": "5层",
+            "gloss": "5 ярусов"
+          },
+          "sources": [
+            {
+              "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1802954373708996609.html",
+              "title": "Сианьское управление местных хроник: Большая пагода диких гусей",
+              "quote": "唐永徽三年（公元652年）为玄奘藏经典而修建，塔身7层",
+              "verificationMethod": "Принятое досье landmarks/lm-cn-dayan; свежий целевой web.search вернул полный основной текст официальной страницы от 2024-06-18; web.open вернул оболочку",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 13
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "url": "https://dfz.shaanxi.gov.cn/zslm/fzzlk/xbsxsz/szdylpdf/201404/P020240923623109161543.pdf",
+              "title": "陕西省志·建设志 — правительственный фонд местных хроник Шэньси",
+              "quote": "塔为方形七层",
+              "verificationMethod": "Свежий web.search: индекс официального PDF содержит сравнительную таблицу 大雁塔 7层 / 小雁塔 原15层现存13层; web.open завершился TimeoutError",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 13
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            }
+          ]
+        },
+        {
+          "id": "tiers7",
+          "name": {
+            "zh": "7层",
+            "gloss": "7 ярусов — пагоду основали для хранения сутр Сюаньцзана."
+          },
+          "sources": [
+            {
+              "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1802954373708996609.html",
+              "title": "Сианьское управление местных хроник: Большая пагода диких гусей",
+              "quote": "唐永徽三年（公元652年）为玄奘藏经典而修建，塔身7层",
+              "verificationMethod": "Принятое досье landmarks/lm-cn-dayan; свежий целевой web.search вернул полный основной текст официальной страницы от 2024-06-18; web.open вернул оболочку",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 13
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "url": "https://dfz.shaanxi.gov.cn/zslm/fzzlk/xbsxsz/szdylpdf/201404/P020240923623109161543.pdf",
+              "title": "陕西省志·建设志 — правительственный фонд местных хроник Шэньси",
+              "quote": "塔为方形七层",
+              "verificationMethod": "Свежий web.search: индекс официального PDF содержит сравнительную таблицу 大雁塔 7层 / 小雁塔 原15层现存13层; web.open завершился TimeoutError",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 13
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            }
+          ]
+        }
+      ]
+    },
+    "petersburganniversarysites": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "summer-garden",
+          "name": {
+            "zh": "夏园",
+            "gloss": "Летний сад — заложен по приказу Петра I в 1704 году",
+            "ru": [
+              "Летний сад"
+            ],
+            "ref": "landmarks/gardens/lm-ru-summer-garden"
+          },
+          "sources": [
+            {
+              "title": "Официальный туристический портал Петербурга — Летний сад, китайская версия",
+              "url": "https://visit-petersburg.ru/zh/leisure/places/tp-194582-gosudarstvennyy-russkiy-muzey-letniy-sad-i-letniy-dvorets-petra-i/",
+              "quote": "1704年，彼得大帝下令为自己建造一座类似当时西欧著名园林的大型花园",
+              "verificationMethod": "Fresh primary municipal Chinese page opened by root and independent reviewer,2026-11-10; 夏园 and founding1704 explicit.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 18
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Президентская библиотека: история Летнего сада",
+              "url": "https://www.prlib.ru/news/1312615",
+              "quote": "5 апреля 1704 года, Пётр I дал распоряжение",
+              "scope": "Первое распоряжение 1704 года о цветах и садовнике для Петербурга, материал о возникновении Летнего сада.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "winter-palace",
+          "name": {
+            "zh": "冬宫",
+            "gloss": "Зимний дворец — императорская семья переехала в новое здание в 1762 году.",
+            "ru": [
+              "Зимний дворец"
+            ],
+            "ref": "landmarks/palaces/lm-ru-winter-palace"
+          },
+          "sources": [
+            {
+              "title": "Государственный Эрмитаж: переезд Петра III в Зимний дворец",
+              "url": "https://hermitagemuseum.org/explore/history/peter3movesin",
+              "quote": "Императорская семья переехала в новый дом на Пасху, 7 апреля 1762 года",
+              "verificationMethod": "Свежая индексированная выдержка поиска; open дал 502, не заявлять полное чтение.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 18
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Туристический портал Петербурга: Зимний дворец",
+              "url": "https://visit-petersburg.ru/zh/leisure/places/zimniy-dvorets-gosudarstvennyy-ermitazh/",
+              "quote": "拉斯特雷利于1754–1762年建造",
+              "scope": "Строительство дворца завершилось в 1762 году; именно переезд подтверждает Эрмитаж.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Переиспользовано из data/dossiers/landmarks.json, lm-ru-winter-palace."
+            }
+          ]
+        },
+        {
+          "id": "anichkov-bridge",
+          "name": {
+            "zh": "阿尼奇科夫桥",
+            "gloss": "Аничков мост — украшен конными скульптурами Петра Клодта",
+            "ru": [
+              "Аничков мост"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Официальный туристический портал Петербурга — Аничков мост, китайская версия",
+              "url": "https://visit-petersburg.ru/zh/leisure/places/anichkov-most/",
+              "quote": "阿尼奇科夫大桥；雕塑家克洛特的精美马术雕塑",
+              "verificationMethod": "Fresh search + primary municipal Chinese page open; Russian counterpart independently corroborates Klodt sculptures.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 18
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Официальный туристический портал Петербурга — Аничков мост",
+              "url": "https://visit-petersburg.ru/leisure/places/anichkov-most/",
+              "quote": "мост через Фонтанку, с его восхитительными конными статуями работы скульптора П. К. Клодта",
+              "verificationMethod": "Fresh search + full primary municipal page open,2026-11-10.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 18
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "СПб ГБУ Мостотрест: Аничков мост",
+              "url": "https://mostotrest-spb.krti.gov.spb.ru/bridges/anichkov",
+              "quote": "установлены четыре художественные группы П.К. Клодта «Укрощение коня».",
+              "scope": "Независимое подтверждение скульптур от обслуживающего мост учреждения.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "friendship-garden",
+          "name": {
+            "zh": "友谊园",
+            "gloss": "Сад дружбы — подарок Шанхая; в 2003 году отмечали 15 лет побратимства городов.",
+            "ru": [
+              "Сад дружбы"
+            ]
+          },
+          "sources": [
+            {
+              "title": "Правительство Санкт-Петербурга, Город+: юбилейные дары",
+              "url": "https://gorod-plus.tv/article/51098",
+              "quote": "«Сад дружбы» — подарок Шанхая не только в связи с 300-летием Петербурга",
+              "verificationMethod": "Открыт текст городского правительственного интернет-телевидения, раздел 7. Церемония 17.09.2003, не смешивать с маем как датой появления сада.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 18
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Шанхайское управление иностранных дел: Санкт-Петербург",
+              "url": "https://wsb.sh.gov.cn/ztzl/gjyc/sjyhcs/20231215/1cedd5f9e29c4baa9a0a03194b713c92.html",
+              "quote": "2003年圣彼得堡庆祝建城300周年时，我市向圣市赠送一座中国古典庭园“友谊园”。",
+              "scope": "Подтверждает дар Шанхая и китайское имя; указывает соглашение о побратимстве 15 декабря 1988 года.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
+    },
+    "lakhtacenterfloors": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "floors76",
+          "name": {
+            "zh": "76层",
+            "gloss": "76 этажей"
+          },
+          "sources": [
+            {
+              "title": "Лахта Центр: о комплексе",
+              "url": "https://lakhta.center/about/",
+              "quote": "87-этажный небоскреб, закручивающийся на 90 градусов от основания до вершины.",
+              "verificationMethod": "Свежий поиск и открытый текст страницы; проверен релевантный фрагмент 10.11.2026.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 23
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Skyscraper Center: Lakhta Center",
+              "url": "https://www.skyscrapercenter.com/building/lakhta-center/12575",
+              "quote": "Height 462 m / 1,516 ft",
+              "scope": "462 м и 87 надземных этажей; реестр указывает первое место в Европе.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "floors61",
+          "name": {
+            "zh": "61层",
+            "gloss": "61 этаж"
+          },
+          "sources": [
+            {
+              "title": "Лахта Центр: о комплексе",
+              "url": "https://lakhta.center/about/",
+              "quote": "87-этажный небоскреб, закручивающийся на 90 градусов от основания до вершины.",
+              "verificationMethod": "Свежий поиск и открытый текст страницы; проверен релевантный фрагмент 10.11.2026.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 23
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Skyscraper Center: Lakhta Center",
+              "url": "https://www.skyscrapercenter.com/building/lakhta-center/12575",
+              "quote": "Height 462 m / 1,516 ft",
+              "scope": "462 м и 87 надземных этажей; реестр указывает первое место в Европе.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "floors93",
+          "name": {
+            "zh": "93层",
+            "gloss": "93 этажа"
+          },
+          "sources": [
+            {
+              "title": "Лахта Центр: о комплексе",
+              "url": "https://lakhta.center/about/",
+              "quote": "87-этажный небоскреб, закручивающийся на 90 градусов от основания до вершины.",
+              "verificationMethod": "Свежий поиск и открытый текст страницы; проверен релевантный фрагмент 10.11.2026.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 23
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Skyscraper Center: Lakhta Center",
+              "url": "https://www.skyscrapercenter.com/building/lakhta-center/12575",
+              "quote": "Height 462 m / 1,516 ft",
+              "scope": "462 м и 87 надземных этажей; реестр указывает первое место в Европе.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        },
+        {
+          "id": "floors87",
+          "name": {
+            "zh": "87层",
+            "gloss": "87 надземных этажей — башня высотой 462 м поворачивается на 90° от основания к вершине."
+          },
+          "sources": [
+            {
+              "title": "Лахта Центр: о комплексе",
+              "url": "https://lakhta.center/about/",
+              "quote": "87-этажный небоскреб, закручивающийся на 90 градусов от основания до вершины.",
+              "verificationMethod": "Свежий поиск и открытый текст страницы; проверен релевантный фрагмент 10.11.2026.",
+              "provenance": {
+                "kind": "reused-verified-manifest",
+                "path": "data/review/2026-11-10-narrow-selected-batch-1-proposals.json",
+                "reviewNumber": 23
+              },
+              "authority": "official",
+              "checkedAt": "2026-11-10"
+            },
+            {
+              "title": "Skyscraper Center: Lakhta Center",
+              "url": "https://www.skyscrapercenter.com/building/lakhta-center/12575",
+              "quote": "Height 462 m / 1,516 ft",
+              "scope": "462 м и 87 надземных этажей; реестр указывает первое место в Европе.",
+              "authority": "official",
+              "checkedAt": "2026-11-11",
+              "verificationMethod": "Свежая проверка индексированной выдержки, цитата из отображённого текста."
+            }
+          ]
+        }
+      ]
     }
   }
 }
