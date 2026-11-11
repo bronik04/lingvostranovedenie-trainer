@@ -1,0 +1,42 @@
+name: Publish checked trainer build
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check and package the approved build
+        run: |
+          sha256sum --check <<'SHA256'
+          a2e135a76e73b5e1bc081e41f9ac4f81645d837f8f68483db4efb3f537282d8e  dist/lingvostranovedenie-trainer.html
+          SHA256
+          mkdir site
+          cp dist/lingvostranovedenie-trainer.html site/index.html
+          cp site-assets/og-image.jpg site/og-image.jpg
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: package
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
