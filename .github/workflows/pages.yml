@@ -35,7 +35,15 @@ jobs:
         run: npm ci
 
       - name: Установить poppler-utils (pdftotext и pdftohtml для парсеров PDF-бюллетеней)
-        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+        run: |
+          # The Azure mirror can fail DNS resolution on hosted runners.
+          ubuntu_sources=/etc/apt/sources.list.d/ubuntu.sources
+          if [[ -f "$ubuntu_sources" ]]; then
+            sudo sed -i 's|^URIs: mirror+file:.*|URIs: https://archive.ubuntu.com/ubuntu/|' "$ubuntu_sources"
+          fi
+          apt_options=(-o Acquire::Retries=1 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15)
+          sudo apt-get "${apt_options[@]}" update --error-on=any
+          sudo apt-get "${apt_options[@]}" install -y poppler-utils
 
       - name: Пересобрать банк вопросов из первоисточников
         run: |
