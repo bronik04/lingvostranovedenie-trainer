@@ -1,0 +1,153 @@
+{
+  "date": "2026-11-10",
+  "questionCount": 11,
+  "optionCount": 44,
+  "bankBefore": 1146,
+  "bankAfter": 1157,
+  "visibleBefore": 1124,
+  "visibleAfter": 1124,
+  "visibleIdsUnchanged": true,
+  "oldQuestionsOptionsKeysCaptionsAndTopicsUnchanged": 1146,
+  "acceptedWordingAndOptionsExact": true,
+  "allKeysPreserved": true,
+  "allElevenDossierEmbedsVerified": true,
+  "all44CaptionsVerifiedAndWithin90Chars": true,
+  "allElevenPublicationHoldsVerified": true,
+  "excluded42NotInBank": true,
+  "sourcesAndManualReserveUnchanged": true,
+  "firstBatchStillPending": true,
+  "oldGroupsPreserved": true,
+  "publicationAuthorized": false,
+  "items": [
+    {
+      "reviewNumber": 39,
+      "id": "2024-25-mun-tat-60",
+      "dossier": "literature",
+      "factGroup": "gorky-nizhny-literature",
+      "factRow": "literature/palladawriters/pallada-goncharov"
+    },
+    {
+      "reviewNumber": 41,
+      "id": "2024-25-shk-mosobl-17",
+      "dossier": "provinces",
+      "factGroup": "peter1-first-emperor",
+      "factRow": "provinces/cityranks2024/rank-chelyabinsk"
+    },
+    {
+      "reviewNumber": 44,
+      "id": "2025-26-mun-chel-4",
+      "dossier": "modern-history",
+      "factGroup": "year-1991-word",
+      "factRow": "modern-history/mourningportraitfigures/portrait-stalin"
+    },
+    {
+      "reviewNumber": 45,
+      "id": "2025-26-mun-kem-10",
+      "dossier": "holidays",
+      "factGroup": "nanchang-uprising-army-day",
+      "factRow": "holidays/unitystartyears/unity-year2005"
+    },
+    {
+      "reviewNumber": 46,
+      "id": "2025-26-mun-kgd-56",
+      "dossier": "provinces",
+      "factGroup": "province-names-river-lake",
+      "factRow": "provinces/russianborderregions/ru-zabaykalsky"
+    },
+    {
+      "reviewNumber": 48,
+      "id": "2025-26-mun-kgd-59",
+      "dossier": "provinces",
+      "factGroup": null,
+      "factRow": "provinces/cities/city-ru-saint-petersburg"
+    },
+    {
+      "reviewNumber": 49,
+      "id": "2025-26-mun-mosobl-7",
+      "dossier": "people",
+      "factGroup": "province-names-river-lake",
+      "factRow": "people/russiansinologists/sinologist-bichurin"
+    },
+    {
+      "reviewNumber": 50,
+      "id": "2025-26-mun-mosobl-8",
+      "dossier": "landmarks",
+      "factGroup": null,
+      "factRow": "landmarks/russianmuseums/museum-peterhof"
+    },
+    {
+      "reviewNumber": "К1",
+      "id": "addition-confucius-russia-01",
+      "dossier": "modern-china",
+      "factGroup": "province-names-river-lake",
+      "factRow": "modern-china/confuciusyears/ci-year2006"
+    },
+    {
+      "reviewNumber": "К2",
+      "id": "addition-confucius-russia-02",
+      "dossier": "provinces",
+      "factGroup": "province-names-river-lake",
+      "factRow": "provinces/cities/city-ru-moscow"
+    },
+    {
+      "reviewNumber": "К3",
+      "id": "addition-confucius-russia-03",
+      "dossier": "provinces",
+      "factGroup": "province-names-river-lake",
+      "factRow": "provinces/cities/city-ru-vladivostok"
+    }
+  ],
+  "pythonTests": {
+    "command": "python3 -m unittest discover -s test -t .",
+    "passed": 496,
+    "failed": 0
+  },
+  "nodeTests": {
+    "command": "node --test test/*.test.mjs",
+    "passed": 172,
+    "failed": 0
+  },
+  "dossierValidationPassed": true,
+  "fullLocalBuildPassed": true,
+  "gitDiffCheckPassed": true,
+  "independentReview": "PASS",
+  "captionChangesDuringEmbedding": 1,
+  "originalCaptionsPreserved": 43,
+  "unresolvedRealHints": 0,
+  "knownMachineFalsePositive": "Казань2024:population rank versusBRICS2024",
+  "largestFactGroupBefore": 321,
+  "largestFactGroupAfter": 333,
+  "finalCorrectionVerification": "After source classification and one hidden caption correction: full build, all content/visibility invariants, fresh complete hint scan, and independent final review. Full suites were run before those two data-only corrections.",
+  "publicationPerformed": false,
+  "commitOrPushPerformed": false,
+  "publication": {
+    "date": "2026-11-11",
+    "checkedAt": "2026-11-11T14:39:44+00:00",
+    "url": "https://bronik04.github.io/lingvostranovedenie-trainer/",
+    "commit": "4b6496a9c21ed82df13947af634115cf2b8497ec",
+    "runUrl": "https://github.com/bronik04/lingvostranovedenie-trainer/actions/runs/43039728680",
+    "workflowConclusion": "success",
+    "liveByteMatchesLocal": true,
+    "httpStatus": 200,
+    "visibleBefore": 1124,
+    "visibleAfter": 1135,
+    "releasedIds": [
+      "2024-25-mun-tat-60",
+      "2024-25-shk-mosobl-17",
+      "2025-26-mun-chel-4",
+      "2025-26-mun-kem-10",
+      "2025-26-mun-kgd-56",
+      "2025-26-mun-kgd-59",
+      "2025-26-mun-mosobl-7",
+      "2025-26-mun-mosobl-8",
+      "addition-confucius-russia-01",
+      "addition-confucius-russia-02",
+      "addition-confucius-russia-03"
+    ],
+    "optionCount": 44,
+    "exactApprovedRecords": true,
+    "existingContentPreserved": true,
+    "pinyinComplete": true,
+    "htmlSha256": "c16331e8a005fd30b8d4d5db961d5138a7755b8e4cd340b4f9b9a7dc1d121c5b"
+  }
+}
