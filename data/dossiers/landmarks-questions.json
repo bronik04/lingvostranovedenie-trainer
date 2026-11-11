@@ -1101,5 +1101,20 @@
       "verdict": "accept",
       "note": "Author accepted; local embedding only; publication forbidden."
     }
+  },
+  {
+    "id": "landmarks-q120",
+    "embeds": "2025-26-mun-mosobl-8",
+    "status": "accepted",
+    "fact": {
+      "table": "russianmuseums",
+      "row": "museum-peterhof",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
+    }
   }
 ]

@@ -1152,5 +1152,20 @@
       "verdict": "accept",
       "note": "Author accepted; local embedding only; publication forbidden."
     }
+  },
+  {
+    "id": "holidays-q59",
+    "embeds": "2025-26-mun-kem-10",
+    "status": "accepted",
+    "fact": {
+      "table": "unitystartyears",
+      "row": "unity-year2005",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
+    }
   }
 ]

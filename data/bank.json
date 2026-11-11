@@ -20051,7 +20051,7 @@
     "explanation": {
       "ru": "Собор Василия Блаженного (瓦西里升天教堂, официально — Покровский собор) возведён по приказу Ивана Грозного в честь присоединения Казанского ханства в 1552 году."
     },
-    "factGroup": "contextual-batch4-20261104-1",
+    "factGroup": "province-names-river-lake",
     "id": "2020-21-reg-q7a4710",
     "occurrences": [
       {
@@ -24907,7 +24907,7 @@
     "explanation": {
       "ru": "Храм Христа Спасителя (救世主大教堂), построенный в честь победы в войне 1812 года, был взорван в 1931 году по приказу Сталина; долгое время на его месте находился открытый бассейн «Москва»."
     },
-    "factGroup": "contextual-batch4-20261104-1",
+    "factGroup": "province-names-river-lake",
     "factRow": "landmarks/sacred/lm-ru-christ-saviour",
     "id": "2021-22-zak-q3ba1dd",
     "occurrences": [
@@ -37509,6 +37509,103 @@
   },
   {
     "answer": {
+      "gloss": "Иван Гончаров — автор путевых очерков «Фрегат „Паллада“».",
+      "optionId": "o1",
+      "state": "verified"
+    },
+    "dossier": "literature",
+    "editorial": {
+      "reason": "Принятые автором уточнения второй выбранной партии; замысел и ключ сохранены."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Ульяновский областной краеведческий музей: «Сувениры путешествия»",
+        "url": "https://uokm.ru/8613/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Иван Гончаров — официальный сайт ФГБУ «Государственный природный заповедник „Джугджурский“»",
+        "url": "https://djugdjur.ru/media/articles/istoriya-geografiya-i-otkrytiya/ivan-goncharov-1812-1891/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Президентская библиотека: Фрегат Паллада, т. 2",
+        "url": "https://www.prlib.ru/item/690117"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Литературно-мемориальный музей А. М. Горького и Ф. И. Шаляпина: Горький в Казани",
+        "url": "https://gorkiy.tatmuseum.ru/turistam/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Государственный музей-заповедник Л. Н. Толстого «Ясная Поляна»: История",
+        "url": "https://ypmuseum.ru/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Государственный Русский музей: Пушкин, его время и герои",
+        "url": "https://rusmuseumvrm.ru/online_resources/art_gallery/pushkin/index.php?lang=ru&p=0&page=1&ps=20&show=name&t=831"
+      }
+    ],
+    "explanation": {
+      "ru": "Иван Гончаров участвовал в плавании фрегата «Паллада» в 1852–1854 годах как секретарь дипломатической миссии. Впечатления от поездки легли в основу книги «Фрегат „Паллада“». В Россию писатель вернулся по суше через Сибирь."
+    },
+    "factGroup": "gorky-nizhny-literature",
+    "factRow": "literature/palladawriters/pallada-goncharov",
+    "id": "2024-25-mun-tat-60",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 60,
+        "officialKey": "o1",
+        "region": "Татарстан",
+        "regionCode": "tat",
+        "sourceFiles": [
+          "01-Варианты/2024-25/2-Муниципальный/Татарстан/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2024-25"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "伊万·冈察洛夫"
+      },
+      {
+        "gloss": "Максим Горький — его настоящая фамилия Пешков.",
+        "id": "o2",
+        "zh": "马克西姆·高尔基"
+      },
+      {
+        "gloss": "Лев Толстой — открыл в Ясной Поляне школу для крестьянских детей.",
+        "id": "o3",
+        "zh": "列夫·托尔斯泰"
+      },
+      {
+        "gloss": "Александр Пушкин — учился в Царскосельском лицее.",
+        "id": "o4",
+        "zh": "亚历山大·普希金"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Какой русский писатель участвовал в плавании фрегата «Паллада» в 1852–1854 годах?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-2"
+  },
+  {
+    "answer": {
       "gloss": "Праздник весны — Новый год по лунному календарю, с 2024 года в списке ЮНЕСКО",
       "optionId": "o4",
       "state": "verified"
@@ -39803,6 +39900,7 @@
     "explanation": {
       "ru": "Первый Институт Конфуция открылся в Сеуле, Южная Корея (韩国), в 2004 году."
     },
+    "factGroup": "province-names-river-lake",
     "id": "2024-25-shk-38",
     "occurrences": [
       {
@@ -39913,6 +40011,79 @@
     "topic": "История и государство",
     "topicSource": "assigned",
     "wave": 8
+  },
+  {
+    "answer": {
+      "gloss": "Челябинск — восьмой по населению город России на 1 января 2024 года.",
+      "optionId": "o1",
+      "state": "verified"
+    },
+    "dossier": "provinces",
+    "editorial": {
+      "reason": "Принятые автором уточнения второй выбранной партии; замысел и ключ сохранены."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Росстат. Россия 2025: крупнейшие города России на 1 января 2024 года, с. 4",
+        "url": "https://rosstat.gov.ru/storage/mediabank/Rossia_2025.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Росстат. Россия 2024: крупнейшие города России",
+        "url": "https://www.rosstat.gov.ru/storage/mediabank/Rossia_2024.pdf"
+      }
+    ],
+    "explanation": {
+      "ru": "По таблице Росстата на 1 января 2024 года Челябинск занимал восьмое место среди городов России по численности населения. Среди предложенных вариантов он один не входил в первую пятёрку. Рейтинг относится к указанной дате, а не к текущему году."
+    },
+    "factGroup": "peter1-first-emperor",
+    "factRow": "provinces/cityranks2024/rank-chelyabinsk",
+    "id": "2024-25-shk-mosobl-17",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 17,
+        "officialKey": "o1",
+        "region": "Московская область",
+        "regionCode": "mosobl",
+        "sourceFiles": [
+          "01-Варианты/2024-25/1-Школьный/Московская область/9-11_Задания.pdf"
+        ],
+        "stage": "школьный",
+        "stageCode": "shk",
+        "year": "2024-25"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "车里雅宾斯克"
+      },
+      {
+        "gloss": "Казань — пятый по населению город России на 1 января 2024 года.",
+        "id": "o2",
+        "zh": "喀山"
+      },
+      {
+        "gloss": "Санкт-Петербург — второй по населению город России на 1 января 2024 года.",
+        "id": "o3",
+        "zh": "圣彼得堡"
+      },
+      {
+        "gloss": "Москва — крупнейший по населению город России на 1 января 2024 года.",
+        "id": "o4",
+        "zh": "莫斯科"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Какой из этих городов НЕ входил в пятёрку крупнейших городов России по численности населения на 1 января 2024 года?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-2"
   },
   {
     "answer": {
@@ -40844,7 +41015,7 @@
     "explanation": {
       "ru": "Москва изображена на купюре в 100 рублей (100 卢布) образца 1997 года. На лицевой стороне — квадрига Аполлона над портиком Большого театра, на обороте — само здание театра. Каждой купюре этой серии посвящён свой российский город."
     },
-    "factGroup": "contextual-batch4-20261104-1",
+    "factGroup": "province-names-river-lake",
     "factRow": "money/banknotes/rub-100-1997",
     "id": "2025-26-mun-2",
     "occurrences": [
@@ -41537,6 +41708,109 @@
   },
   {
     "answer": {
+      "gloss": "Иосиф Сталин — траурный митинг в Пекине собрал более 600 000 человек.",
+      "optionId": "o3",
+      "state": "verified"
+    },
+    "dossier": "modern-history",
+    "editorial": {
+      "reason": "Принятые автором уточнения второй выбранной партии; замысел и ключ сохранены."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "人民网 / 中国共产党新闻网: 毛泽东缘何没有出席斯大林葬礼, часть 3",
+        "url": "https://dangshi.people.com.cn/n/2013/1106/c85037-23454928-3.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Росархив: Совет Народных Комиссаров СССР",
+        "url": "https://guides.rusarchives.ru/terms/6/324/sovet-narodnyh-komissarov-sssr-sovet-ministrov-sssr-i-podvedomstvennye-uchrezhdeniya"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Президентская библиотека: Михаил Калинин",
+        "url": "https://www.prlib.ru/history/1995555"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Государственный исторический музей: Хрущёв Никита Сергеевич",
+        "url": "https://catalog.shm.ru/entity/ARTIST/629997675"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Российское историческое общество: Электронная коллекция В. И. Ленина",
+        "url": "https://historyrussia.org/sobytiya/prezidentskaya-biblioteka-predstavila-elektronnuyu-kollektsiyu-posvyashchennuyu-v-i-leninu.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Президентская библиотека. Образована Кёнигсбергская (Калининградская) область",
+        "url": "https://www.prlib.ru/node/619151"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Администрация Калининграда. История города: зеркало истории",
+        "url": "https://www.klgd.ru/city/history/gubin/mirror.php"
+      }
+    ],
+    "explanation": {
+      "ru": "На траурном митинге 9 марта 1953 года на красной стене Тяньаньмэнь разместили портрет Иосифа Сталина. Исторический источник сообщает о более чем 600 тысячах участников митинга. Это свидетельство не устанавливает замену портрета Мао Цзэдуна или единственность такого случая."
+    },
+    "factGroup": "year-1991-word",
+    "factRow": "modern-history/mourningportraitfigures/portrait-stalin",
+    "id": "2025-26-mun-chel-4",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 4,
+        "officialKey": "o3",
+        "region": "Челябинская область",
+        "regionCode": "chel",
+        "sourceFiles": [
+          "01-Варианты/2025-26/2-Муниципальный/Челябинская область/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2025-26"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "Владимир Ленин — 1-й председатель Совета народных комиссаров.",
+        "id": "o1",
+        "zh": "弗拉基米尔·列宁"
+      },
+      {
+        "gloss": "Никита Хрущёв — 1-й секретарь ЦК КПСС в 1953–1964 годах.",
+        "id": "o2",
+        "zh": "尼基塔·赫鲁晓夫"
+      },
+      {
+        "id": "o3",
+        "zh": "约瑟夫·斯大林"
+      },
+      {
+        "gloss": "Михаил Калинин — в его честь Кёнигсберг переименовали в Калининград.",
+        "id": "o4",
+        "zh": "米哈伊尔·加里宁"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Чей траурный портрет разместили на красной стене Тяньаньмэнь во время митинга 9 марта 1953 года?",
+    "questionZh": null,
+    "topic": "История и государство",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-2"
+  },
+  {
+    "answer": {
       "gloss": "Волк — не входит в двенадцать животных зодиака",
       "optionId": "o3",
       "state": "verified"
@@ -42099,6 +42373,79 @@
   },
   {
     "answer": {
+      "gloss": "2005 год — первое празднование состоялось 4 ноября.",
+      "optionId": "o2",
+      "state": "verified"
+    },
+    "dossier": "holidays",
+    "editorial": {
+      "reason": "Принятые автором уточнения второй выбранной партии; замысел и ключ сохранены."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Росгвардия. День народного единства",
+        "url": "https://www.rosguard.gov.ru/ru/page/index/den-narodnogo-edinstva"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Минтруд России. Федеральный закон № 201-ФЗ от 29 декабря 2004 г.",
+        "url": "https://mintrud.gov.ru/docs/laws/23"
+      }
+    ],
+    "explanation": {
+      "ru": "Первое празднование Дня народного единства состоялось 4 ноября 2005 года. Закон №201-ФЗ подписали 29 декабря 2004 года. Он вступил в силу 1 января 2005 года."
+    },
+    "factGroup": "nanchang-uprising-army-day",
+    "factRow": "holidays/unitystartyears/unity-year2005",
+    "id": "2025-26-mun-kem-10",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 10,
+        "officialKey": "o2",
+        "region": "Кемеровская область",
+        "regionCode": "kem",
+        "sourceFiles": [
+          "01-Варианты/2025-26/2-Муниципальный/Кемеровская область/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2025-26"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "1992 год.",
+        "id": "o1",
+        "zh": "1992 年"
+      },
+      {
+        "id": "o2",
+        "zh": "2005 年"
+      },
+      {
+        "gloss": "2014 год.",
+        "id": "o3",
+        "zh": "2014 年"
+      },
+      {
+        "gloss": "2022 год.",
+        "id": "o4",
+        "zh": "2022 年"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "С какого года в России отмечается День народного единства?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-2"
+  },
+  {
+    "answer": {
       "gloss": "XVI век — начало связывают с походом Ермака в 1581 году",
       "optionId": "o2",
       "state": "verified"
@@ -42238,6 +42585,121 @@
   },
   {
     "answer": {
+      "gloss": "Забайкальский край — его северный сосед — Республика Саха (Якутия).",
+      "optionId": "o1",
+      "state": "verified"
+    },
+    "dossier": "provinces",
+    "editorial": {
+      "reason": "Принятые автором уточнения второй выбранной партии; замысел и ключ сохранены."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Роспотребнадзор, Иркутский научно-исследовательский противочумный институт. «Эпидемиологическая ситуация по клещевому вирусному энцефалиту в приграничных субъектах Российской Федерации и на территориях сопредельных стран в 2000–2017 гг.», аналитический обзор, под ред. С. В. Балахонова, с. 66",
+        "url": "https://irknipchi.ru/referens-center3.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Инвестиционный портал Республики Бурятия. О регионе",
+        "url": "https://invest-buryatia.ru/region"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Инвестиционный портал Амурской области. О регионе",
+        "url": "https://invest.amurobl.ru/amur-region/about/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Верховный Хурал Республики Тыва. Приграничный субъект",
+        "url": "https://khural.rtyva.ru/info/granisa/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Официальный туристический портал Республики Алтай. Территориально-административная информация",
+        "url": "https://altai.travel/about-the-republic/territorial-and-administrative-information"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Совет Федерации. Вестник: Забайкальский край",
+        "url": "https://council.gov.ru/media/files/41d44f24488a77b4824f.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Генконсульство КНР в Иркутске. 布里亚特共和国简介",
+        "url": "https://irkutsk.china-consulate.gov.cn/lqjs_0/lqgk_133143/202303/t20230328_11050372.htm"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "А. Н. Расходчиков, Я. Т. Рытникова, А. Н. Языкеев. Стратегия 2030 и социальный ландшафт взаимодействия приграничных городов России и Китая",
+        "url": "https://rrsociology.ru/journal/article/3948/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Минлесхоз Республики Тыва. Территориальная схема обращения с отходами, с.11",
+        "url": "https://mpr.rtyva.ru/upload/files/8848bef1-e9dd-4e92-b521-5630ba3987f8.pdf"
+      }
+    ],
+    "explanation": {
+      "ru": "Забайкальский край имеет государственную границу и с Монголией, и с Китаем. Среди четырёх предложенных субъектов только он отвечает этому условию. В масштабах всей России это не единственный такой регион: с обеими странами граничит также Республика Алтай."
+    },
+    "factGroup": "province-names-river-lake",
+    "factRow": "provinces/russianborderregions/ru-zabaykalsky",
+    "id": "2025-26-mun-kgd-56",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 56,
+        "officialKey": "o1",
+        "region": "Калининградская область",
+        "regionCode": "kgd",
+        "sourceFiles": [
+          "01-Варианты/2025-26/2-Муниципальный/Калининградская область/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2025-26"
+      }
+    ],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "后贝加尔边疆区"
+      },
+      {
+        "gloss": "Республика Бурятия — граничит с Монголией; столица — Улан-Удэ.",
+        "id": "o2",
+        "zh": "布里亚特共和国"
+      },
+      {
+        "gloss": "Амурская область — граничит с китайской провинцией Хэйлунцзян.",
+        "id": "o3",
+        "zh": "阿穆尔州"
+      },
+      {
+        "gloss": "Республика Тыва — её южная и юго-восточная граница проходит с Монголией.",
+        "id": "o4",
+        "zh": "图瓦共和国"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "Какой из перечисленных субъектов Российской Федерации граничит и с Монголией, и с Китаем?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-2"
+  },
+  {
+    "answer": {
       "gloss": "Далянь — в российский период город носил название Дальний",
       "optionId": "o2",
       "state": "verified"
@@ -42306,6 +42768,102 @@
     "topic": "Россия и межкультурный блок",
     "topicSource": "editorial",
     "wave": 8
+  },
+  {
+    "answer": {
+      "gloss": "Санкт-Петербург — Китайскую деревню в Царском Селе строили с 1780-х годов.",
+      "optionId": "o2",
+      "state": "verified"
+    },
+    "dossier": "provinces",
+    "editorial": {
+      "reason": "Принятые автором уточнения второй выбранной партии; замысел и ключ сохранены."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Государственный музей-заповедник «Царское Село». Китайская деревня",
+        "url": "https://www.tzar.ru/objects/alexandrovskypark/newgarden/kitayskayaderevnya"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Государственный музей-заповедник «Царское Село». Музей «Россия в Великой войне» в Государевой Ратной палате",
+        "url": "https://www.tzar.ru/visitors/workinhours/greatwar?special_version=Y"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Государственный Русский музей. «Китай и его наследие в русском искусстве», виртуальная выставка",
+        "url": "https://rusmuseumvrm.ru/online_resources/art_gallery/china/index.php"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Росстат. Россия 2025: крупнейшие города России на 1 января 2024 года, с. 4",
+        "url": "https://rosstat.gov.ru/storage/mediabank/Rossia_2025.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Администрация города Иркутска. Внесение изменений в генеральный план города Иркутска, книга 2, с. 22",
+        "url": "https://admirk.ru/upload/iblock/ff8/Genplan_Irkutsk_KNIGA_2_OM_VIvGP.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Национальный атлас России, том 4. Екатеринбург",
+        "url": "https://nationalatlas.ru/tom4/407.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Китайская деревня находится в Александровском парке Царского Села, в Пушкине, входящем в Санкт-Петербург. Её строительство началось в 1780-х годах. Это ансамбль парковых построек в китайском вкусе."
+    },
+    "factRow": "provinces/cities/city-ru-saint-petersburg",
+    "id": "2025-26-mun-kgd-59",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 59,
+        "officialKey": "o2",
+        "region": "Калининградская область",
+        "regionCode": "kgd",
+        "sourceFiles": [
+          "01-Варианты/2025-26/2-Муниципальный/Калининградская область/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2025-26"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "Москва — крупнейший по населению город России на 1 января 2024 года.",
+        "id": "o1",
+        "zh": "莫斯科"
+      },
+      {
+        "id": "o2",
+        "zh": "圣彼得堡"
+      },
+      {
+        "gloss": "Иркутск — расположен в долине Ангары у устьев Иркута и Ушаковки.",
+        "id": "o3",
+        "zh": "伊尔库茨克"
+      },
+      {
+        "gloss": "Екатеринбург — основан в 1723 году как горнозаводской центр.",
+        "id": "o4",
+        "zh": "叶卡捷琳堡"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "В границах какого российского города находится Царское Село с Китайской деревней в Александровском парке?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-2"
   },
   {
     "answer": {
@@ -42821,6 +43379,235 @@
     "topic": "Литература, язык, искусство и философия",
     "topicSource": "assigned",
     "wave": 8
+  },
+  {
+    "answer": {
+      "gloss": "Никита Бичурин — китаевед, известный в монашестве как отец Иакинф.",
+      "optionId": "o4",
+      "state": "verified"
+    },
+    "dossier": "people",
+    "editorial": {
+      "reason": "Принятые автором уточнения второй выбранной партии; замысел и ключ сохранены."
+    },
+    "evidence": [
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "А. В. Яроцкий. О деятельности П. Л. Шиллинга как востоковеда // Очерки по истории русского востоковедения. VI. АН СССР, 1963. С. 227–228",
+        "url": "https://www.orientalstudies.ru/rus/images/pdf/journals/OIRV_6_1963_05_yarotsky.pdf"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "Н. Я. Бичурин (о. Иакинф). Отрывок письма из Кяхты от 19 сентября сего 1831 года / Предисловие И. Ф. Поповой. Письменные памятники Востока, 2023. № 3. С. 96–103",
+        "url": "https://ppv.orientalstudies.ru/pdf/2023/3/PPV_20_3_54_07_2023.pdf"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "В. П. Таранович. Иларион Россохин и его труды по китаеведению. АН СССР, 1945",
+        "url": "https://www.orientalstudies.ru/rus/images/pdf/journals/sovetskoe_vostokovedenie_03_1945_13_taranovich.pdf"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "A. P. Sukhodolov, V. A. Vasilenko. И. К. Россохин // Российско-китайские исследования. 2019. Т. 3. № 2. С. 7–16",
+        "url": "https://rcs.bgu.ru/classes/pdfDL.ashx?id=22942"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "НЭБ: Путешествие в Монголию и Китай сибирского казака Ивана Петлина в 1618 году",
+        "url": "https://kp.rusneb.ru/item/material/puteshestvie-v-mongoliyu-i-kitaj-sibirskogo-kazaka-ivana-petlina-v-1618-godu"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Центральная научная библиотека ДВО РАН: Палладий (Кафаров)",
+        "url": "https://cnbdvo.ru/item/2291595"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "Чжао Юй-шэнь. Вклад русских синологов в сохранение особенностей китайского языка поздней Цин: на примере словарей Попова и Палладия (Кафарова)",
+        "url": "https://china.ivran.ru/f/CHzhao_YUj-shen._Vklad_russkih_sinologov_v_sohranenie_osobennostej_kitajskogo_yazyka_pozdnej_Cin.pdf"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "Чэнь Шэннань. Структура и лексические особенности русско-китайского словаря Иллариона Россохина. СПбГУ, 2017, с.7",
+        "url": "https://www.conference-spbu.ru/files/local/CMS_File/h0000/3836/3836.pdf?1506868768="
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "М. Ю. Люстров. Шведский перевод «Росписи Китайскому государству» И. Петлина. Вестник РГГУ, 2018, с.261",
+        "url": "https://www.rsuh.ru/upload/main/vestnik/ifkv/Vestnik_ifkv_2-2(35)_2018.pdf"
+      }
+    ],
+    "explanation": {
+      "ru": "А. С. Пушкин хотел присоединиться к поездке Никиты Бичурина и других участников экспедиции к границе с Китаем. В январе 1830 года он просил разрешения участвовать в этой поездке. Бичурин известен также под монашеским именем Иакинф."
+    },
+    "factGroup": "province-names-river-lake",
+    "factRow": "people/russiansinologists/sinologist-bichurin",
+    "id": "2025-26-mun-mosobl-7",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 7,
+        "officialKey": "o4",
+        "region": "Московская область",
+        "regionCode": "mosobl",
+        "sourceFiles": [
+          "01-Варианты/2025-26/2-Муниципальный/Московская область/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2025-26"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "Палладий Кафаров — составитель китайско-русского словаря.",
+        "id": "o1",
+        "zh": "巴拉第·卡法罗夫"
+      },
+      {
+        "gloss": "Илларион Россохин — переводчик с китайского и маньчжурского языков.",
+        "id": "o2",
+        "zh": "伊拉里昂·罗索欣"
+      },
+      {
+        "gloss": "Иван Петлин — посетил Монголию и Китай в 1618 году.",
+        "id": "o3",
+        "zh": "伊万·佩特林"
+      },
+      {
+        "id": "o4",
+        "zh": "尼基塔·比丘林"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "С кем из перечисленных А. С. Пушкин в 1830 году хотел отправиться к границе с Китаем?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-2"
+  },
+  {
+    "answer": {
+      "gloss": "ГМЗ «Петергоф» — музей-заповедник «Ораниенбаум» вошёл в его состав в 2007 году.",
+      "optionId": "o3",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "editorial": {
+      "reason": "Принятые автором уточнения второй выбранной партии; замысел и ключ сохранены."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "ГМЗ «Петергоф»: Открытие Большого китайского кабинета",
+        "url": "https://www.peterhofmuseum.com/news/2022/1218"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Государственный исторический музей: Экспонат к 150-летию",
+        "url": "https://shm.ru/shows/30838/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Президентская библиотека: Основан Государственный Эрмитаж",
+        "url": "https://www.prlib.ru/history/2013345"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Кунсткамера: История музея",
+        "url": "https://www.kunstkamera.ru/museums_structure/kunst_hist/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Официальный гид ГМЗ «Петергоф»: Ораниенбаум",
+        "url": "https://go.peterhofmuseum.ru/info/oranienbaum/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Государственный исторический музей. История музея",
+        "url": "https://shm.ru/kollektsii-i-muzeynyy-kompleks/museum_history/istoricheskiy-muzey/history/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Государственный Эрмитаж. Отчёт 2014: основание музея",
+        "url": "https://hermitagemuseum.org/uploads/files/otchet_2014.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "В. Я. Юмангулов, Н. Ю. Хадеева. Скульптура Ораниенбаума. ГМЗ «Петергоф», 2019, с.31",
+        "url": "https://en.peterhofmuseum.ru/assets/files/20190710/0ef6b92c62206165ba13641b8510ca9f.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "РАН. Учреждение Кунсткамеры с библиотекой в 1714 г.",
+        "url": "https://www.ras.ru/kunstkamera/855df2ab-b28e-4b8a-ad00-86d335e3f3d8.aspx"
+      }
+    ],
+    "explanation": {
+      "ru": "Большой китайский кабинет находится в Китайском дворце Ораниенбаума. Дворец входит в Государственный музей-заповедник «Петергоф». Этот интерьер не следует путать с залами Большого Петергофского дворца."
+    },
+    "factRow": "landmarks/russianmuseums/museum-peterhof",
+    "id": "2025-26-mun-mosobl-8",
+    "occurrences": [
+      {
+        "grades": "9-11",
+        "number": 8,
+        "officialKey": "o3",
+        "region": "Московская область",
+        "regionCode": "mosobl",
+        "sourceFiles": [
+          "01-Варианты/2025-26/2-Муниципальный/Московская область/9-11_Задания.pdf"
+        ],
+        "stage": "муниципальный",
+        "stageCode": "mun",
+        "year": "2025-26"
+      }
+    ],
+    "options": [
+      {
+        "gloss": "Государственный исторический музей — основан в 1872 году.",
+        "id": "o1",
+        "zh": "俄罗斯国家历史博物馆"
+      },
+      {
+        "gloss": "Эрмитаж — его собрание началось с покупки картин Екатериной II в 1764 году.",
+        "id": "o2",
+        "zh": "艾米塔吉博物馆"
+      },
+      {
+        "id": "o3",
+        "zh": "彼得霍夫国家博物馆保护区"
+      },
+      {
+        "gloss": "Кунсткамера — 1-й государственный публичный музей России, основан в 1714 году.",
+        "id": "o4",
+        "zh": "珍奇博物馆"
+      }
+    ],
+    "parseWarnings": [],
+    "questionRu": "В состав какого музея входит Китайский дворец Ораниенбаума с Большим китайским кабинетом?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "editorial",
+    "wave": "narrow-selected-batch-2"
   },
   {
     "answer": {
@@ -44704,7 +45491,7 @@
     "explanation": {
       "ru": "Владивосток стоит на берегу залива Петра Великого — части Японского моря (日本海). Японское море — окраинное море северо-запада Тихого океана; к нему выходят Приморский край, столица которого — порт Владивосток, и Сахалинская область. По данным РГО, это самое богатое видами из российских морей: здесь бывают штормы и тайфуны, а волны достигают 13 м."
     },
-    "factGroup": "vladivostok-word",
+    "factGroup": "province-names-river-lake",
     "factRow": "nature/seas/sea-ru-japan",
     "id": "2025-26-reg-4",
     "occurrences": [
@@ -50773,6 +51560,228 @@
     "origin": "addition",
     "parseWarnings": [],
     "questionRu": "Какой город — столица республики в европейской части России на берегу Каспийского моря, коренной народ которой исповедует тибетский буддизм, — ещё в 2004 г. стал побратимом Лхасы?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "gloss": "2006 — официальное открытие первого российского института состоялось 21 декабря",
+      "optionId": "o2",
+      "state": "verified"
+    },
+    "dossier": "modern-china",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "俄罗斯第一所孔子学院在远东大学挂牌成立 — МИД КНР, 22.12.2006",
+        "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/oz_678770/1206_679110/1206x2_679130/200612/t20061222_9337422.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "驻符拉迪沃斯托克总领事闫文滨访问远东联邦大学孔子学院 — Генконсульство КНР, 20.03.2019",
+        "url": "https://vladivostok.china-consulate.gov.cn/chn/zlgdt/201903/t20190320_3806919.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "Первый официально начавший работу Институт Конфуция в России открылся 21 декабря 2006 года. Его создали при Дальневосточном государственном университете во Владивостоке. Китайским партнёром выступил Хэйлунцзянский университет."
+    },
+    "factGroup": "province-names-river-lake",
+    "factRow": "modern-china/confuciusyears/ci-year2006",
+    "id": "addition-confucius-russia-01",
+    "occurrences": [],
+    "options": [
+      {
+        "gloss": "2004 — в Сеуле начал работу первый институт международной сети",
+        "id": "o1",
+        "zh": "2004年"
+      },
+      {
+        "id": "o2",
+        "zh": "2006年"
+      },
+      {
+        "gloss": "2007 год",
+        "id": "o3",
+        "zh": "2007年"
+      },
+      {
+        "gloss": "2009 год",
+        "id": "o4",
+        "zh": "2009年"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В каком году в России открылся первый Институт Конфуция?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "gloss": "Москва — институт РГГУ открылся в сентябре 2007 г. на базе Института лингвистики",
+      "optionId": "o1",
+      "state": "verified"
+    },
+    "dossier": "provinces",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Контакты — Институт Конфуция РГГУ",
+        "url": "https://confucius-institute.ru/contacts/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "История создания — Институт Конфуция РГГУ",
+        "url": "https://confucius-institute.ru/institute/mission/"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Новости и объявления — Институт Конфуция РГГУ",
+        "url": "https://confucius-institute.ru/"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "俄罗斯国立人文大学孔子学院 — официальный портал CIEF",
+        "url": "https://www.ci.cn/en/site/3381004000/"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "Институт Конфуция — Казанский федеральный университет",
+        "url": "https://kpfu.ru/ci"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "История создания — Институт Конфуция НГТУ",
+        "url": "https://www.confucius.nstu.ru/pages/istorija-sozdanija-missija-celi-zadachi"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "黑龙江大学校长王敬波访问中国国际中文教育基金会 — CIEF, 12.03.2024",
+        "url": "https://ci.cn/xwzx/kyxw/503cdea3-3a38-4492-995f-251f1efc96c4"
+      }
+    ],
+    "explanation": {
+      "ru": "Институт Конфуция РГГУ находится на Миусской площади в Москве. Соглашение о создании подписали в декабре 2006 года. Торжественное открытие состоялось в сентябре 2007 года на базе Института лингвистики РГГУ."
+    },
+    "factGroup": "province-names-river-lake",
+    "factRow": "provinces/cities/city-ru-moscow",
+    "id": "addition-confucius-russia-02",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "o1",
+        "zh": "莫斯科"
+      },
+      {
+        "gloss": "Казань — институт при КФУ торжественно открыли 30 мая 2007 г.",
+        "id": "o2",
+        "zh": "喀山"
+      },
+      {
+        "gloss": "Новосибирск — институт при НГТУ создан 7 сентября 2007 г.",
+        "id": "o3",
+        "zh": "新西伯利亚"
+      },
+      {
+        "gloss": "Владивосток — китайский партнёр института ДВФУ — Хэйлунцзянский университет",
+        "id": "o4",
+        "zh": "符拉迪沃斯托克"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В каком городе находится Институт Конфуция при Российском государственном гуманитарном университете?",
+    "questionZh": null,
+    "topic": "Россия и межкультурный блок",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "gloss": "Владивосток — институт создан при ДВГУ вместе с Хэйлунцзянским университетом",
+      "optionId": "o3",
+      "state": "verified"
+    },
+    "dossier": "provinces",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "俄罗斯第一所孔子学院在远东大学挂牌成立 — МИД КНР, 22.12.2006",
+        "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/oz_678770/1206_679110/1206x2_679130/200612/t20061222_9337422.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Генконсул У Дэминь принял участие в праздновании 20-летия Института Конфуция ДВФУ — Генконсульство КНР, 02.11.2026",
+        "url": "https://vladivostok.china-consulate.gov.cn/rus/zlgdt_2/202611/t20261102_12051051.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Речь генконсула Янь Вэньбиня на приёме китаеведов Приморья — Генконсульство КНР, 18.04.2017",
+        "url": "https://vladivostok.china-consulate.gov.cn/zlgdt/201704/t20170418_3806071.htm"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "История создания — Институт Конфуция НГТУ",
+        "url": "https://www.confucius.nstu.ru/pages/istorija-sozdanija-missija-celi-zadachi"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-10",
+        "title": "Институт Конфуция — Казанский федеральный университет",
+        "url": "https://kpfu.ru/ci"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-10",
+        "title": "Институт Конфуция МГУ — официальный сайт",
+        "url": "https://www.cimsu.ru/"
+      }
+    ],
+    "explanation": {
+      "ru": "Первый официально начавший работу российский Институт Конфуция открылся во Владивостоке. Его создали при Дальневосточном государственном университете совместно с Хэйлунцзянским университетом. Преемником учреждения стал Институт Конфуция ДВФУ."
+    },
+    "factGroup": "province-names-river-lake",
+    "factRow": "provinces/cities/city-ru-vladivostok",
+    "id": "addition-confucius-russia-03",
+    "occurrences": [],
+    "options": [
+      {
+        "gloss": "Новосибирск — институт при НГТУ создан 7 сентября 2007 г.",
+        "id": "o1",
+        "zh": "新西伯利亚"
+      },
+      {
+        "gloss": "Казань — институт при КФУ торжественно открыли 30 мая 2007 г.",
+        "id": "o2",
+        "zh": "喀山"
+      },
+      {
+        "id": "o3",
+        "zh": "符拉迪沃斯托克"
+      },
+      {
+        "gloss": "Москва — институт МГУ создан на базе Института стран Азии и Африки",
+        "id": "o4",
+        "zh": "莫斯科"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В каком городе открылся первый в России Институт Конфуция?",
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
     "topicSource": "authored"
@@ -84099,7 +85108,7 @@
     "explanation": {
       "ru": "На лицевой стороне купюры 100 рублей выпуска 2022 года изображена Москва (莫斯科) со Спасской башней. На обороте этой купюры — Ржевский мемориал. В выпуске 2026 года рисунки те же, а на обороте добавлена карта Центрального федерального округа."
     },
-    "factGroup": "contextual-batch4-20261104-1",
+    "factGroup": "province-names-river-lake",
     "factRow": "money/banknotes/rub-100-2022",
     "id": "money-q15",
     "occurrences": [],
@@ -97499,7 +98508,7 @@
     "explanation": {
       "ru": "Это Владивосток (符拉迪沃斯托克) — главный порт России на Тихом океане. Город основан в 1860 году как военный пост; в китайских текстах его исторически называли 海参崴. Во Владивостоке заканчивается самая длинная железная дорога мира и базируется Тихоокеанский флот."
     },
-    "factGroup": "vladivostok-word",
+    "factGroup": "province-names-river-lake",
     "factRow": "provinces/cities/city-ru-vladivostok",
     "id": "provinces-q108",
     "occurrences": [],

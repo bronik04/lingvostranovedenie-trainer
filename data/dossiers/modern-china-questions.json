@@ -547,5 +547,20 @@
       "verdict": "accept",
       "note": "Author accepted; local embedding only; publication forbidden."
     }
+  },
+  {
+    "id": "modern-china-q34",
+    "embeds": "addition-confucius-russia-01",
+    "status": "accepted",
+    "fact": {
+      "table": "confuciusyears",
+      "row": "ci-year2006",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
+    }
   }
 ]

@@ -12,7 +12,7 @@
 повторение, а не утечка (решение автора 2026-10-26). Название верного ответа рядом с вопросом с тем же
 ответом утечкой не считается: ответ выдаёт сам вариант. Названия помечены «(название ответа)».
 
-Подписей с утечкой: 543; выданных вопросов: 394; пар «вопрос с подписью → соседний вопрос»: 1905, из них 1222 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
+Подписей с утечкой: 543; выданных вопросов: 394; пар «вопрос с подписью → соседний вопрос»: 1900, из них 1220 — подпись о той же строке досье, о которой спрашивает соседний вопрос («та же строка»). Черновиков досье в банке нет: пары с ними помечены «(черновик)».
 
 ## 特别行政区 — Особый административный район — Сянган и Аомэнь (название ответа)
 
@@ -401,7 +401,7 @@
 ## 1000 卢布 — 1000 рублей образца 1997 года: Ярославль
 
 - выдаёт money/money-q10: ответ Ярославль; зацепка 1997 год, та же строка
-- видна в 2: money/money-q08, money/money-q38
+- видна в 1: money/money-q08
 
 ## 1825 年 — 1825 год: восстание декабристов
 
@@ -522,11 +522,6 @@
 
 - выдаёт 2016-17-shk-3: ответ Аомэнь; зацепка 1999 год, та же строка
 - видна в 3: modern-history/modern-history-q112, modern-history/modern-history-q117, modern-history/modern-history-q53
-
-## 19世纪 — XIX век — тогда в память о 1812 годе построен храм Христа Спасителя
-
-- выдаёт landmarks/landmarks-q109: ответ Храм Христа Спасителя; зацепка 1812 год, та же строка
-- видна в 1: landmarks/landmarks-q80
 
 ## 200 卢布 — 200 рублей образца 2017 года: Севастополь
 
@@ -1177,6 +1172,11 @@
 
 - выдаёт dynasties/dynasties-q103: ответ Чанъань; зацепка династия Тан, та же строка
 - видна в 9: dynasties/dynasties-q03, dynasties/dynasties-q04, dynasties/dynasties-q06, dynasties/dynasties-q109, dynasties/dynasties-q110, dynasties/dynasties-q111, dynasties/dynasties-q112, dynasties/dynasties-q114, dynasties/dynasties-q13
+
+## 喀山 — Казань — пятый по населению город России на 1 января 2024 года.
+
+- выдаёт provinces/provinces-q133: ответ 喀山, Казань; зацепка 2024 год
+- видна в 1: provinces/provinces-q157
 
 ## 喜剧 — Комедия — жанр «Ревизора» Гоголя (1836)
 
@@ -2246,7 +2246,7 @@
 ## 符拉迪沃斯托克 — Владивосток — центр Приморского края, портовый город на Японском море
 
 - выдаёт nature/nature-q130: ответ Японское море; зацепка Владивосток
-- видна в 12: provinces/provinces-q113, provinces/provinces-q63, provinces/provinces-q64, provinces/provinces-q65, provinces/provinces-q66, provinces/provinces-q67, provinces/provinces-q68, provinces/provinces-q69, provinces/provinces-q70, provinces/provinces-q71, provinces/provinces-q75, provinces/provinces-q77
+- видна в 9: provinces/provinces-q63, provinces/provinces-q64, provinces/provinces-q66, provinces/provinces-q67, provinces/provinces-q68, provinces/provinces-q69, provinces/provinces-q71, provinces/provinces-q75, provinces/provinces-q77
 
 ## 第一次鸦片战争 — Первая опиумная война — её завершил Нанкинский договор 1842 года
 
@@ -2671,7 +2671,7 @@
 ## 雅罗斯拉夫尔 — Ярославль — город на купюре 1000 рублей образца 1997 года
 
 - выдаёт money/money-q10: ответ 雅罗斯拉夫尔, Ярославль; зацепка 1997 год, та же строка
-- видна в 7: money/money-q09, money/money-q11, money/money-q12, money/money-q13, money/money-q14, money/money-q15, money/money-q37
+- видна в 6: money/money-q09, money/money-q11, money/money-q12, money/money-q13, money/money-q14, money/money-q37
 
 ## 雷帝 — «Грозный» — прозвище Ивана IV, первого русского царя
 

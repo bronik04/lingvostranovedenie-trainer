@@ -2094,5 +2094,20 @@
       "verdict": "accept",
       "note": "Author accepted; local embedding only; publication forbidden."
     }
+  },
+  {
+    "id": "literature-q120",
+    "embeds": "2024-25-mun-tat-60",
+    "status": "accepted",
+    "fact": {
+      "table": "palladawriters",
+      "row": "pallada-goncharov",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
+    }
   }
 ]

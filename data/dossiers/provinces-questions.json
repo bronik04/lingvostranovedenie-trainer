@@ -2463,5 +2463,80 @@
       "verdict": "accept",
       "note": "Author accepted; local embedding only; publication forbidden."
     }
+  },
+  {
+    "id": "provinces-q157",
+    "embeds": "2024-25-shk-mosobl-17",
+    "status": "accepted",
+    "fact": {
+      "table": "cityranks2024",
+      "row": "rank-chelyabinsk",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
+    }
+  },
+  {
+    "id": "provinces-q158",
+    "embeds": "2025-26-mun-kgd-56",
+    "status": "accepted",
+    "fact": {
+      "table": "russianborderregions",
+      "row": "ru-zabaykalsky",
+      "ask": "name"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
+    }
+  },
+  {
+    "id": "provinces-q159",
+    "embeds": "2025-26-mun-kgd-59",
+    "status": "accepted",
+    "fact": {
+      "table": "cities",
+      "row": "city-ru-saint-petersburg",
+      "ask": "chinoiseriecity"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
+    }
+  },
+  {
+    "id": "provinces-q160",
+    "embeds": "addition-confucius-russia-02",
+    "status": "accepted",
+    "fact": {
+      "table": "cities",
+      "row": "city-ru-moscow",
+      "ask": "rsuhconfuciuscity"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
+    }
+  },
+  {
+    "id": "provinces-q161",
+    "embeds": "addition-confucius-russia-03",
+    "status": "accepted",
+    "fact": {
+      "table": "cities",
+      "row": "city-ru-vladivostok",
+      "ask": "firstconfuciuscity"
+    },
+    "exclude": [],
+    "check": {
+      "verdict": "accept",
+      "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
+    }
   }
 ]

@@ -6,6 +6,8 @@
 
 Связи:
 - [[nature.wat-ru-volga]]
+- [[provinces.city-ru-kazan]]
+- [[provinces.city-ru-kazan]]
 
 Вопросы:
 - провинция: provinces-q79 — Столицей какой республики является Казань, принимавшая в 2013 году Всемирную летнюю Универсиаду?

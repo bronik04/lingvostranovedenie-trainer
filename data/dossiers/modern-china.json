@@ -4056,6 +4056,122 @@
           ]
         }
       ]
+    },
+    "confuciusyears": {
+      "columns": {
+        "name": "zh"
+      },
+      "sides": [],
+      "rows": [
+        {
+          "id": "ci-year2004",
+          "name": {
+            "zh": "2004年",
+            "gloss": "2004 — в Сеуле начал работу первый институт международной сети"
+          },
+          "sources": [
+            {
+              "title": "2024全球“孔子学院日” — официальный портал CIEF",
+              "url": "https://www.ci.cn/CIday2024",
+              "verificationMethod": "fresh-primary-open; 2026-11-10; chronology under2004, web lines70–71; only the worldwide first opening caption",
+              "quote": "韩国首尔孔子学院正式揭牌，成为全球第一所启动运行的孔子学院。",
+              "checkedAt": "2026-11-10",
+              "authority": "academic"
+            },
+            {
+              "title": "俄罗斯第一所孔子学院在远东大学挂牌成立 — МИД КНР, 22.12.2006",
+              "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/oz_678770/1206_679110/1206x2_679130/200612/t20061222_9337422.shtml",
+              "quote": "2006年12月21日，俄罗斯第一所正式运作的孔子学院",
+              "verificationMethod": "fresh-primary-open; 2026-11-10; прочитано сообщение о церемонии открытия при ДВГУ, а не только подписании соглашения",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "驻符拉迪沃斯托克总领事闫文滨访问远东联邦大学孔子学院 — Генконсульство КНР, 20.03.2019",
+              "url": "https://vladivostok.china-consulate.gov.cn/chn/zlgdt/201903/t20190320_3806919.htm",
+              "quote": "远东联邦大学孔子学院成立于2006年，是俄罗斯境内成立的第一所孔子学院",
+              "verificationMethod": "fresh-primary-open; 2026-11-10; второе первичное подтверждение года и первенства",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "ci-year2006",
+          "name": {
+            "zh": "2006年",
+            "gloss": "2006 — официальное открытие первого российского института состоялось 21 декабря"
+          },
+          "sources": [
+            {
+              "title": "俄罗斯第一所孔子学院在远东大学挂牌成立 — МИД КНР, 22.12.2006",
+              "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/oz_678770/1206_679110/1206x2_679130/200612/t20061222_9337422.shtml",
+              "quote": "中方项目实施单位黑龙江大学",
+              "verificationMethod": "fresh-primary-open; 2026-11-10; современное открытию сообщение называет ДВГУ, первенство в России и китайскую организацию-партнёра",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "驻符拉迪沃斯托克总领事闫文滨访问远东联邦大学孔子学院 — Генконсульство КНР, 20.03.2019",
+              "url": "https://vladivostok.china-consulate.gov.cn/chn/zlgdt/201903/t20190320_3806919.htm",
+              "quote": "远东联邦大学孔子学院成立于2006年，是俄罗斯境内成立的第一所孔子学院",
+              "verificationMethod": "fresh-primary-open; 2026-11-10; второе первичное подтверждение года и первенства",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "ci-year2007",
+          "name": {
+            "zh": "2007年",
+            "gloss": "2007 год"
+          },
+          "sources": [
+            {
+              "title": "俄罗斯第一所孔子学院在远东大学挂牌成立 — МИД КНР, 22.12.2006",
+              "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/oz_678770/1206_679110/1206x2_679130/200612/t20061222_9337422.shtml",
+              "quote": "2006年12月21日，俄罗斯第一所正式运作的孔子学院",
+              "verificationMethod": "fresh-primary-open; 2026-11-10; прочитано сообщение о церемонии открытия при ДВГУ, а не только подписании соглашения",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "驻符拉迪沃斯托克总领事闫文滨访问远东联邦大学孔子学院 — Генконсульство КНР, 20.03.2019",
+              "url": "https://vladivostok.china-consulate.gov.cn/chn/zlgdt/201903/t20190320_3806919.htm",
+              "quote": "远东联邦大学孔子学院成立于2006年，是俄罗斯境内成立的第一所孔子学院",
+              "verificationMethod": "fresh-primary-open; 2026-11-10; второе первичное подтверждение года и первенства",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        },
+        {
+          "id": "ci-year2009",
+          "name": {
+            "zh": "2009年",
+            "gloss": "2009 год"
+          },
+          "sources": [
+            {
+              "title": "俄罗斯第一所孔子学院在远东大学挂牌成立 — МИД КНР, 22.12.2006",
+              "url": "https://www.fmprc.gov.cn/web/gjhdq_676201/gj_676203/oz_678770/1206_679110/1206x2_679130/200612/t20061222_9337422.shtml",
+              "quote": "2006年12月21日，俄罗斯第一所正式运作的孔子学院",
+              "verificationMethod": "fresh-primary-open; 2026-11-10; прочитано сообщение о церемонии открытия при ДВГУ, а не только подписании соглашения",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            },
+            {
+              "title": "驻符拉迪沃斯托克总领事闫文滨访问远东联邦大学孔子学院 — Генконсульство КНР, 20.03.2019",
+              "url": "https://vladivostok.china-consulate.gov.cn/chn/zlgdt/201903/t20190320_3806919.htm",
+              "quote": "远东联邦大学孔子学院成立于2006年，是俄罗斯境内成立的第一所孔子学院",
+              "verificationMethod": "fresh-primary-open; 2026-11-10; второе первичное подтверждение года и первенства",
+              "checkedAt": "2026-11-10",
+              "authority": "official"
+            }
+          ]
+        }
+      ]
     }
   }
 }
