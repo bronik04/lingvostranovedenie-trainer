@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
 
@@ -34,16 +34,11 @@ jobs:
       - name: Установить зависимости тестов
         run: npm ci
 
-      - name: Установить poppler-utils (pdftotext и pdftohtml для парсеров PDF-бюллетеней)
+      - name: Установить Poppler для парсеров PDF-бюллетеней
         run: |
-          # Use a signed Ubuntu mirror when ubuntu.com DNS fails on hosted runners.
-          ubuntu_sources=/etc/apt/sources.list.d/ubuntu.sources
-          if [[ -f "$ubuntu_sources" ]]; then
-            sudo sed -i 's|^URIs: mirror+file:.*|URIs: https://mirrors.edge.kernel.org/ubuntu/|' "$ubuntu_sources"
+          if ! command -v pdftotext >/dev/null || ! command -v pdftohtml >/dev/null; then
+            HOMEBREW_NO_AUTO_UPDATE=1 brew install poppler
           fi
-          apt_options=(-o Acquire::Retries=1 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15)
-          sudo apt-get "${apt_options[@]}" update --error-on=any
-          sudo apt-get "${apt_options[@]}" install -y poppler-utils
 
       - name: Пересобрать банк вопросов из первоисточников
         run: |
