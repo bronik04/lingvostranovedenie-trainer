@@ -84,6 +84,47 @@ class RealDataTest(unittest.TestCase):
                 self.assertEqual(draft['check']['verdict'], 'accept', draft['id'])
                 self.assertTrue(draft.get('sources'), draft['id'])
 
+    def test_municipal_adaptations_are_all_available_in_russian(self):
+        olympiad, drafts = chengyu.load('olympiad.json'), chengyu.load('drafts.json')
+        bank = {record['chengyu']: record for record in chengyu.published(olympiad, drafts)}
+        expected = {
+            '吃闭门羹': 'Получить от ворот поворот',
+            '说曹操，曹操就到': 'Лёгок на помине',
+            '数一数二': 'Быть в числе лучших',
+            '喝西北风': 'Класть зубы на полку',
+            '想入非非': 'Витать в облаках',
+            '大手大脚': 'Сорить деньгами',
+            '画龙点睛': 'Добавить деталь, которая оживляет целое',
+            '食言而肥': 'Не держать слова',
+            '望尘莫及': 'В подмётки не годиться',
+            '一箭双雕': 'Одним выстрелом убить двух зайцев',
+            '沧海桑田': 'Всё вокруг изменилось до неузнаваемости',
+        }
+        self.assertFalse(expected.keys() - bank.keys())
+        for word, answer in expected.items():
+            with self.subTest(word=word):
+                record = bank[word]
+                self.assertEqual(chengyu._answer_text(record), answer)
+                self.assertEqual(len(record['options']), 4)
+                self.assertTrue(record['sourceNote'])
+                for option in record['options']:
+                    self.assertRegex(option['text'], r'[А-Яа-яЁё]')
+                    self.assertNotRegex(option['text'], r'[一-鿿]')
+
+    def test_published_olympiad_adaptations_keep_original_tasks(self):
+        olympiad = chengyu.load('olympiad.json')
+        bank = {record['id']: record for record in chengyu.published(olympiad, [])}
+        self.assertEqual(len(bank), len(olympiad))
+        self.assertTrue(all(record['kind'] != 'reverse' for record in bank.values()))
+        for original in (record for record in olympiad if record['kind'] == 'reverse'):
+            adapted = bank[original['id']]
+            for field in ('prompt', 'options', 'answer'):
+                self.assertEqual(adapted['originalTask'][field], original[field])
+            self.assertEqual(adapted['occurrences'], original['occurrences'])
+            for option in adapted['options']:
+                self.assertRegex(option['text'], r'[А-Яа-яЁё]')
+                self.assertNotRegex(option['text'], r'[一-鿿]')
+
 
 @unittest.skipUnless(shutil.which('pdftotext') and shutil.which('pdftohtml'), 'нужен poppler (pdftotext, pdftohtml)')
 class SourcesTest(unittest.TestCase):

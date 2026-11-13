@@ -64,7 +64,7 @@ function cySaveSettings() {
 function cySaveRound() {
   try {
     sessionStorage.setItem(CY_ROUND_KEY, JSON.stringify({
-      version: 1,
+      version: 2,
       round: cy.round.map((record) => record.id),
       position: cy.position,
       answered: cy.answered,
@@ -94,7 +94,7 @@ function cyDiscardRound() {
 function cyRestoreRound() {
   try {
     const saved = JSON.parse(sessionStorage.getItem(CY_ROUND_KEY) || 'null');
-    if (saved?.version !== 1) return;
+    if (![1, 2].includes(saved?.version)) return;
     const byId = new Map(CHENGYU_BANK.map((record) => [record.id, record]));
     const round = saved.round.map((id) => byId.get(id));
     const pending = saved.retryQueue ?? saved.wrongIds.map((id) => ({
@@ -114,6 +114,12 @@ function cyRestoreRound() {
       cyDiscardRound();
       return;
     }
+    const wrongPicks = saved.version === 1
+      ? Object.fromEntries(Object.entries(saved.wrongPicks).filter(([id]) => {
+        const record = byId.get(id);
+        return !record?.originalTask && !record?.optionsUpdated;
+      }))
+      : saved.wrongPicks;
     Object.assign(cy, {
       round,
       position: saved.position,
@@ -121,7 +127,7 @@ function cyRestoreRound() {
       correct: saved.correct,
       marks: saved.marks,
       wrongIds: saved.wrongIds,
-      wrongPicks: saved.wrongPicks,
+      wrongPicks,
       retryQueue,
       retriedIds: new Set(retriedIds),
       roundSettings: {
@@ -368,25 +374,26 @@ function cyRenderQuestion() {
   $('cyGroupMark').textContent = CY_GROUP_MARKS[record.group];
   $('cyGroupLabel').textContent = CY_GROUPS[record.group];
   const occurrence = cyLatestOccurrence(record);
-  $('cySourceLabel').textContent = occurrence ? cyOccurrenceLabel(occurrence) : 'Составленное задание';
+  $('cySourceLabel').textContent = occurrence
+    ? (record.originalTask ? 'Учебная адаптация · ' : '') + cyOccurrenceLabel(occurrence)
+    : 'Составленное задание';
   $('cyPrompt').textContent = cyPrompt(record);
   focusRoundQuestion();
-  const reverse = record.kind === 'reverse';
-  $('cyChengyu').hidden = reverse;
-  $('cyPinyin').hidden = reverse;
-  $('cyProverb').hidden = !reverse;
-  if (reverse) {
-    $('cyProverb').textContent = `«${record.prompt}»`;
+  const expression = $('cyChengyu');
+  const proverb = record.form === 'proverb';
+  expression.classList.toggle('cy-proverb', proverb);
+  expression.setAttribute('aria-label', record.chengyu);
+  if (proverb) {
+    expression.textContent = record.chengyu;
   } else {
-    $('cyChengyu').setAttribute('aria-label', record.chengyu);
-    $('cyChengyu').replaceChildren(...[...record.chengyu].map((char) => {
+    expression.replaceChildren(...[...record.chengyu].map((char) => {
       const cell = document.createElement('span');
       cell.setAttribute('aria-hidden', 'true');
       cell.textContent = char;
       return cell;
     }));
-    $('cyPinyin').textContent = record.pinyin;
   }
+  $('cyPinyin').textContent = record.pinyin;
 
   $('cyFeedback').className = 'feedback hidden';
   $('cyNextButton').classList.add('hidden');
@@ -401,8 +408,7 @@ function cyRenderQuestion() {
     letter.setAttribute('aria-hidden', 'true');
     letter.textContent = option.label;
     const caption = document.createElement('span');
-    caption.className = reverse ? 'option-text' : 'option-text cy-option-ru';
-    if (reverse) caption.lang = 'zh-Hans';
+    caption.className = 'option-text cy-option-ru';
     caption.textContent = option.text;
     button.append(letter, caption);
     if (option.gloss) button.dataset.gloss = option.gloss;
@@ -412,18 +418,12 @@ function cyRenderQuestion() {
 }
 
 function cyFacts(record) {
-  const rows = record.kind === 'reverse'
-    ? [
-      ['Ответ', `<span lang="zh-Hans">${escapeHtml(record.chengyu)}</span> <span lang="zh-Hans" class="muted">${escapeHtml(record.pinyin)}</span> — «${escapeHtml(record.literal)}»`],
-      ['Смысл', escapeHtml(record.meaning)],
-      ['Ловушка', escapeHtml(record.trap)],
-    ]
-    : [
-      ['Буквально', escapeHtml(record.literal)],
-      ['Смысл', escapeHtml(record.meaning)],
-      ['Ловушка', escapeHtml(record.trap)],
-      record.story ? ['История', escapeHtml(record.story)] : null,
-    ];
+  const rows = [
+    ['Буквально', escapeHtml(record.literal)],
+    ['Смысл', escapeHtml(record.meaning)],
+    ['Ловушка', escapeHtml(record.trap)],
+    record.story ? ['История', escapeHtml(record.story)] : null,
+  ];
   return `<dl class="cy-facts">${rows.filter(Boolean).map(([term, text]) =>
     `<dt>${term}</dt><dd>${text}</dd>`).join('')}</dl>`;
 }
@@ -469,9 +469,7 @@ function cyAnswer(record, optionId) {
     }
   }
 
-  const answerText = cyAnswerText(record);
-  const answerHtml = record.kind === 'reverse'
-    ? `<span lang="zh-Hans">${escapeHtml(answerText)}</span>` : `«${escapeHtml(answerText)}»`;
+  const answerHtml = `«${escapeHtml(cyAnswerText(record))}»`;
   $('cyFeedback').className = `feedback ${verdict.correct ? 'good' : 'bad'}`;
   $('cyFeedback').innerHTML = [
     `<p class="verdict"><strong>${verdict.correct ? 'Верно' : 'Неверно'}</strong>`,
@@ -578,25 +576,22 @@ function cyRenderMistakes() {
   $('cyMistakeList').replaceChildren(...records.map((record, index) => {
     const picked = record.options.find((option) => option.id === cy.wrongPicks[record.id]);
     const right = cyAnswerText(record);
-    const reverse = record.kind === 'reverse';
-    const shown = (text) => (reverse ? `<span lang="zh-Hans">${escapeHtml(text)}</span>` : escapeHtml(text));
     const gloss = picked?.gloss?.replace(/\.$/, '');
     const item = document.createElement('li');
     item.innerHTML = [
       `<button class="mistake-head" type="button" aria-expanded="false" aria-controls="cyMistake${index}">`,
       '<span class="ink-seal ink-seal--review ink-seal--md" lang="zh-Hans" aria-hidden="true">复</span>',
       '<span class="mistake-text">',
-      `<span class="mistake-question">${reverse ? `«${escapeHtml(record.prompt)}»`
-        : `<span class="cy-mistake-han" lang="zh-Hans">${escapeHtml(record.chengyu)}</span>`}</span>`,
+      `<span class="mistake-question"><span class="cy-mistake-han" lang="zh-Hans">${escapeHtml(record.chengyu)}</span></span>`,
       '<span class="mistake-answers">',
-      picked ? `Ваш ответ <span class="picked">✕ ${shown(picked.text)}</span>, верно ` : 'Верно ',
-      `<span class="right">✓ ${shown(right)}</span>`,
+      picked ? `Ваш ответ <span class="picked">✕ ${escapeHtml(picked.text)}</span>, верно ` : 'Верно ',
+      `<span class="right">✓ ${escapeHtml(right)}</span>`,
       '</span></span>',
       '<span class="mistake-arrow" aria-hidden="true">▾</span>',
       '</button>',
       `<div class="mistake-panel" id="cyMistake${index}" hidden>`,
       cyFacts(record),
-      gloss ? `<p class="mistake-gloss">Ваш ответ ${shown(picked.text)} — ${escapeHtml(gloss)}.</p>` : '',
+      gloss ? `<p class="mistake-gloss">Ваш ответ ${escapeHtml(picked.text)} — ${escapeHtml(gloss)}.</p>` : '',
       '</div>',
     ].join('');
     item.querySelector('.mistake-head').addEventListener('click', (event) => {
@@ -639,10 +634,10 @@ function cyRenderReference() {
   $('cyReferenceList').replaceChildren(...records.map((record) => {
     const article = document.createElement('article');
     article.className = 'row';
-    const reverse = record.kind === 'reverse';
+    const original = record.originalTask;
     const answer = cyAnswerText(record);
     const options = record.options.map((option) => {
-      const text = reverse ? `<span lang="zh-Hans">${escapeHtml(option.text)}</span>` : escapeHtml(option.text);
+      const text = escapeHtml(option.text);
       const note = option.gloss ? ` — ${escapeHtml(option.gloss)}` : '';
       return `<li${option.id === record.answer ? ' class="cy-key"' : ''}>${option.id}. ${text}${note}${
         option.id === record.answer ? (record.kind === 'odd' ? ' <span lang="zh-Hans">✓</span> лишний' : ' <span lang="zh-Hans">✓</span>') : ''}</li>`;
@@ -653,20 +648,25 @@ function cyRenderReference() {
       '<div class="row-top">',
       `<span class="row-topic">${escapeHtml(CY_GROUPS[record.group])}</span>`,
       done ? '<span class="tag"><span lang="zh-Hans" aria-hidden="true">●</span> решено</span>' : '',
-      record.disputedKey ? '<span class="tag warn">спорный ключ</span>' : '',
+      record.disputedKey || original?.disputedKey ? '<span class="tag warn">спорный ключ ВсОШ</span>' : '',
       record.origin === 'authored' ? '<span class="tag origin">составлено, сверено со словарями</span>' : '',
       '</div>',
       `<h3 class="cy-row-head"><span class="cy-row-han" lang="zh-Hans">${escapeHtml(record.chengyu)}</span>`,
       `<span class="cy-row-pinyin" lang="zh-Hans">${escapeHtml(record.pinyin)}</span></h3>`,
-      `<p class="row-meta">${reverse ? `Обратное задание: «${escapeHtml(record.prompt)}»`
-        : record.kind === 'odd' ? 'Найти лишний вариант'
+      `<p class="row-meta">${record.kind === 'odd' ? 'Найти лишний вариант'
           : record.kind === 'meaning' ? 'Выбрать верное значение' : 'Подобрать русский аналог'}</p>`,
       appearances ? `<p class="row-meta">${escapeHtml(appearances)}</p>` : '',
       '<details class="row-reveal"><summary>Показать разбор</summary><div class="row-panel">',
-      `<p class="row-answer">${record.kind === 'odd' ? 'Лишний' : 'Ответ'}: ${reverse
-        ? `<span class="zh" lang="zh-Hans">${escapeHtml(answer)}</span>` : `«${escapeHtml(answer)}»`}</p>`,
-      `<p class="row-sources-title">${record.occurrences?.length ? 'Варианты бланка' : 'Варианты ответа'}</p><ol class="cy-options-list">${options}</ol>`,
+      `<p class="row-answer">${record.kind === 'odd' ? 'Лишний' : 'Ответ'}: «${escapeHtml(answer)}»</p>`,
+      `<p class="row-sources-title">${record.occurrences?.length && !original ? 'Варианты бланка' : 'Варианты ответа'}</p><ol class="cy-options-list">${options}</ol>`,
       cyFacts(record),
+      original ? `<p class="row-sources-title">Исходное задание ВсОШ</p>
+        <p>«${escapeHtml(original.prompt)}»</p>
+        <ol class="cy-options-list">${original.options.map((option) =>
+          `<li${option.id === original.answer ? ' class="cy-key"' : ''}>${option.id}. <span lang="zh-Hans">${escapeHtml(option.text)}</span>${
+            option.id === original.answer ? ' ✓' : ''}${option.gloss ? ` — ${escapeHtml(option.gloss)}` : ''}</li>`).join('')}</ol>
+        ${original.trap ? `<p>${escapeHtml(original.trap)}</p>` : ''}` : '',
+      record.sourceNote ? `<p class="row-meta">${escapeHtml(record.sourceNote)}</p>` : '',
       record.sources?.length
         ? `<p class="row-sources-title">Словарные источники</p><ul class="row-sources">${evidenceList(record.sources)}</ul>` : '',
       '</div></details>',

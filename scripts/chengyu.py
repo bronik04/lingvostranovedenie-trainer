@@ -19,6 +19,8 @@ import sys
 from functools import lru_cache
 from pathlib import Path
 
+from normalize import CJK, CYRILLIC
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data/chengyu'
 SOURCES = ROOT / 'sources/chengyu'
@@ -38,6 +40,7 @@ STAGES = {'pri', 'shk', 'mun', 'reg', 'zak'}
 KEY_CHECKS = {'table', 'inline', 'bold', 'visual'}
 LETTERS = ['A', 'B', 'C', 'D']
 HAN = re.compile(r'^[一-鿿]{4}$')
+PROVERB = re.compile(r'^[一-鿿]+(?:，[一-鿿]+)+$')
 YEAR = re.compile(r'^20\d\d-\d\d$')
 DRAFT_STATUSES = {'draft', 'accepted'}
 VERDICTS = {'accept', 'fix', 'drop'}
@@ -50,9 +53,20 @@ def load(name: str) -> list[dict]:
 
 def published(olympiad: list[dict], drafts: list[dict]) -> list[dict]:
     """Записи, которые видит ученик: олимпиадные и принятые составленные."""
+    tasks = []
+    for record in olympiad:
+        if record['kind'] != 'reverse':
+            tasks.append(record)
+            continue
+        original = {key: record[key] for key in ('prompt', 'options', 'answer')}
+        if record.get('disputedKey'):
+            original.update(disputedKey=True, trap=record['trap'])
+        practice = {key: value for key, value in record.items()
+                    if key not in ('prompt', 'practice', 'disputedKey')}
+        tasks.append({**practice, **record['practice'], 'originalTask': original})
     accepted = [d for d in drafts
                 if d.get('status') == 'accepted' and d.get('check', {}).get('verdict') == 'accept']
-    return olympiad + [{**d, 'origin': 'authored'} for d in accepted]
+    return tasks + [{**d, 'origin': 'authored'} for d in accepted]
 
 
 def _record_errors(record: dict, olympiad: bool) -> list[str]:
@@ -66,7 +80,10 @@ def _record_errors(record: dict, olympiad: bool) -> list[str]:
         return errors
     if record['kind'] not in KINDS:
         errors.append(f'{where}: неизвестный вид задания {record["kind"]!r}')
-    if not HAN.match(record['chengyu']):
+    if record.get('form') == 'proverb' and not olympiad:
+        if not PROVERB.fullmatch(record['chengyu']):
+            errors.append(f'{where}: пословица должна состоять из китайских частей, разделённых запятой')
+    elif not HAN.fullmatch(record['chengyu']):
         errors.append(f'{where}: чэнъюй должен быть из четырёх иероглифов')
     if record['id'] != f'cy-{record["chengyu"]}':
         errors.append(f'{where}: id должен быть cy-<чэнъюй>')
@@ -88,6 +105,17 @@ def _record_errors(record: dict, olympiad: bool) -> list[str]:
         for option in options:
             if option['id'] != record['answer'] and not option.get('gloss'):
                 errors.append(f'{where}: у неверного варианта {option["id"]} нет подписи')
+        practice = record.get('practice')
+        if not olympiad or not isinstance(practice, dict):
+            errors.append(f'{where}: обратный формат допустим только в бланке с учебной адаптацией')
+        else:
+            if set(practice) != {'kind', 'options', 'answer', 'trap'} or practice.get('kind') not in {'analog', 'meaning'}:
+                errors.append(f'{where}: в учебной адаптации нужны kind, options, answer и trap')
+            else:
+                errors += _record_errors({**record, **practice}, olympiad=True)
+                texts = [option.get('text', '') for option in practice['options']]
+                if any(not CYRILLIC.search(text) or CJK.search(text) for text in texts):
+                    errors.append(f'{where}: варианты учебной адаптации должны быть на русском')
     if olympiad:
         occurrences = record.get('occurrences') or []
         if not occurrences:

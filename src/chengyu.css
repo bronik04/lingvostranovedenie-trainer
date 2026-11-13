@@ -29,16 +29,14 @@ body[data-view='cy-quiz'] .site-header { padding: var(--s-4) 0; }
   font-weight: var(--t-weight-bold);
   line-height: 1;
 }
-.cy-pinyin { margin: 0; color: var(--text-on-ground-muted); font-size: 20px; }
-.cy-proverb {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: clamp(32px, 5vw, 44px);
+.cy-tz.cy-proverb {
+  display: block;
+  font-family: var(--font-han);
+  font-size: clamp(26px, 7vw, 48px);
   font-weight: var(--t-weight-bold);
-  line-height: 1.1;
-  text-wrap: balance;
+  line-height: 1.2;
 }
-
+.cy-pinyin { margin: 0; color: var(--text-on-ground-muted); font-size: 20px; }
 /* русские варианты длиннее китайских: одна колонка, текстовый шрифт */
 .cy-options { grid-template-columns: 1fr; }
 .cy-options .option { min-height: 64px; }

@@ -25,17 +25,16 @@ const CY_STAGES = {
   reg: 'региональный', zak: 'заключительный',
 };
 
-// формулировки по умолчанию — для составленных заданий; у олимпиадных берётся
-// формулировка бланка (instruction самого свежего появления)
+// Составленные задания и адаптации используют формулировку своего формата.
 const CY_PROMPTS = {
   analog: 'Подберите аналог фразеологизму в русском языке',
   meaning: 'Выберите верное значение китайского фразеологизма',
-  reverse: 'Подберите аналог фразеологизму в китайском языке',
   odd: 'Укажите русский фразеологизм, не передающий значение приведенного китайского фразеологизма',
 };
 
 export function cyPrompt(record) {
-  return cyLatestOccurrence(record)?.instruction || CY_PROMPTS[record.kind];
+  const instruction = record.originalTask ? null : cyLatestOccurrence(record)?.instruction;
+  return instruction || CY_PROMPTS[record.kind];
 }
 
 /** «ВсОШ 2022/23 · заключительный этап · задание 10» */
@@ -124,8 +123,10 @@ function cyNorm(value) {
 export function cyMatchesSearch(record, query) {
   const needle = cyNorm(query.trim());
   if (!needle) return true;
-  const haystack = [record.chengyu, record.pinyin, record.prompt || '', record.literal, record.meaning,
-    record.trap, ...record.options.map((option) => option.text)].join(' ');
+  const original = record.originalTask;
+  const haystack = [record.chengyu, record.pinyin, record.literal, record.meaning, record.trap,
+    ...record.options.map((option) => option.text), original?.prompt, original?.trap,
+    ...(original?.options ?? []).map((option) => option.text)].join(' ');
   return cyNorm(haystack).includes(needle);
 }
 

@@ -1463,15 +1463,10 @@ async function openChengyu(page) {
   await page.locator('#cySetupView').waitFor();
 }
 
-/** Задание на экране: по чэнъюю в клетках, у обратного задания — по русской пословице. */
+/** Задание на экране по чэнъюю в клетках. */
 async function currentChengyu(page, bank) {
-  const proverbShown = await page.locator('#cyProverb').isVisible();
-  if (proverbShown) {
-    const proverb = (await page.locator('#cyProverb').textContent()).replace(/^«|»$/g, '');
-    return bank.find((r) => r.prompt === proverb);
-  }
   const chengyu = await page.locator('#cyChengyu').getAttribute('aria-label');
-  return bank.find((r) => r.chengyu === chengyu && r.kind !== 'reverse');
+  return bank.find((r) => r.chengyu === chengyu);
 }
 
 /** Ответ на задание на экране (верный или любой неверный); возвращает запись банка. */
@@ -1548,6 +1543,7 @@ test('чэнъюй: прежний снимок без очереди восст
   await page.evaluate(() => {
     const key = 'lingvo-trainer:chengyu-round:v1';
     const saved = JSON.parse(sessionStorage.getItem(key));
+    saved.version = 1;
     delete saved.retryQueue;
     delete saved.retriedIds;
     sessionStorage.setItem(key, JSON.stringify(saved));
@@ -1567,24 +1563,100 @@ test('чэнъюй: прежний снимок без очереди восст
   assert.deepEqual(page.errors, []);
 });
 
-test('чэнъюй: выбор значения имеет свою инструкцию в раунде и справочнике', LIMIT, async (t) => {
+test('чэнъюй: прежний русский аналог виден в раунде и справочнике', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
   await openChengyu(page);
-  const word = await page.evaluate(() => {
-    const r = CHENGYU_BANK.find(record => record.kind === 'meaning');
-    cyStartRoundWith([r]);
-    return r.chengyu;
-  });
-  assert.equal(await page.locator('#cyPrompt').textContent(), 'Выберите верное значение китайского фразеологизма');
-  await cyAnswerAndNext(page, await page.evaluate(() => CHENGYU_BANK), true);
+  const word = '精益求精';
+  const answer = 'Нет предела совершенству';
+  await page.evaluate((chengyu) => {
+    cyStartRoundWith([CHENGYU_BANK.find((record) => record.chengyu === chengyu)]);
+  }, word);
+  assert.equal(await page.locator('#cyPrompt').textContent(), 'Подберите аналог фразеологизму в русском языке');
+  await page.locator('#cyOptions').getByRole('button', { name: answer, exact: true }).click();
+  assert.equal(await page.locator('#cyFeedback .verdict strong').textContent(), 'Верно');
+  assert.equal(await page.locator('#cyFeedback .cy-facts dd').nth(1).textContent(),
+    'стремиться улучшать то, что уже сделано хорошо');
+  await page.locator('#cyNextButton').click();
   await page.locator('#cyResultsReference').click();
   await page.locator('#cyReferenceSearch').fill(word);
   const row = page.locator('#cyReferenceList article').filter({ has: page.locator('.cy-row-han', { hasText: word }) });
-  assert.match(await row.locator('.row-meta').textContent(), /Выбрать верное значение/);
+  assert.equal(await row.locator('.row-meta').textContent(), 'Подобрать русский аналог');
   await row.locator('summary').click();
+  assert.ok((await row.locator('.row-answer').textContent()).includes(`«${answer}»`));
   assert.match(await row.locator('.row-sources-title').first().textContent(), /Варианты ответа/);
   assert.ok(await row.locator('.row-sources a[href^="https://"]').count());
+  assert.deepEqual(page.errors, []);
+});
+
+test('чэнъюй: адаптации дают русский ответ, а исходный ключ остаётся в справочнике', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const cases = [
+    ['细水长流', 'Копейка рубль бережёт', 'Копейка рубль бережёт', 'Подберите аналог фразеологизму в русском языке'],
+    ['不生不灭', 'Не возникает и не исчезает', 'Ни жив ни мёртв', 'Выберите верное значение китайского фразеологизма'],
+  ];
+  for (const [word, answer, original, instruction] of cases) {
+    await page.evaluate((chengyu) => {
+      cyStartRoundWith([CHENGYU_BANK.find((record) => record.chengyu === chengyu)]);
+    }, word);
+    assert.equal(await page.locator('#cyChengyu').isVisible(), true);
+    assert.equal(await page.locator('#cyPrompt').textContent(), instruction);
+    assert.match(await page.locator('#cySourceLabel').textContent(), /^Учебная адаптация/);
+    const options = await page.locator('#cyOptions .option-text').allTextContents();
+    assert.equal(options.length, 4);
+    assert.ok(options.every((option) => /^[^\p{Script=Han}]+$/u.test(option) && /[А-Яа-яЁё]/.test(option)));
+    await page.locator('#cyOptions').getByRole('button', { name: answer, exact: true }).click();
+    assert.equal(await page.locator('#cyFeedback .verdict strong').textContent(), 'Верно');
+    await page.locator('#cyNextButton').click();
+    await page.locator('#cyResultsReference').click();
+    await page.locator('#cyReferenceSearch').fill(word);
+    const row = page.locator('#cyReferenceList article').filter({ has: page.locator('.cy-row-han', { hasText: word }) });
+    await row.locator('summary').click();
+    assert.ok(await row.getByText(`«${original}»`, { exact: true }).isVisible());
+    assert.equal((await row.locator('.cy-key [lang="zh-Hans"]').last().textContent()), word);
+  }
+  await page.evaluate(() => {
+    const key = 'lingvo-trainer:chengyu-round:v1';
+    const records = ['cy-细水长流', 'cy-事倍功半'].map((id) => CHENGYU_BANK.find((item) => item.id === id));
+    cyStartRoundWith(records);
+    cyAnswer(records[0], 'A');
+    cyNextQuestion();
+    cyAnswer(records[1], 'A');
+    cyFinishRound();
+    const saved = JSON.parse(sessionStorage.getItem(key));
+    saved.version = 1;
+    sessionStorage.setItem(key, JSON.stringify(saved));
+  });
+  await page.reload();
+  await page.locator('#cyResultsView').waitFor();
+  assert.equal(await page.locator('#cyMistakeList .picked').count(), 0);
+  assert.deepEqual(await page.locator('#cyMistakeList .right').allTextContents(),
+    ['✓ Копейка рубль бережёт', '✓ Овчинка выделки не стоит']);
+  assert.deepEqual(page.errors, []);
+});
+
+test('чэнъюй: поговорка про Цао Цао помещается на телефоне и есть в справочнике', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 320, height: 740 });
+  if (!page) return;
+  await openChengyu(page);
+  const word = '说曹操，曹操就到';
+  const answer = 'Лёгок на помине';
+  await page.evaluate((chengyu) => {
+    cyStartRoundWith([CHENGYU_BANK.find((record) => record.chengyu === chengyu)]);
+  }, word);
+  const prompt = page.locator('#cyChengyu');
+  assert.equal(await prompt.textContent(), word);
+  assert.ok(await prompt.evaluate((node) => node.scrollWidth <= node.clientWidth));
+  await page.locator('#cyOptions').getByRole('button', { name: answer, exact: true }).click();
+  assert.equal(await page.locator('#cyFeedback .verdict strong').textContent(), 'Верно');
+  await page.locator('#cyNextButton').click();
+  await page.locator('#cyResultsReference').click();
+  await page.locator('#cyReferenceSearch').fill(word);
+  const row = page.locator('#cyReferenceList article');
+  assert.equal(await row.count(), 1);
+  await row.locator('summary').click();
+  assert.match(await row.locator('.row-panel').textContent(), /Московская область/);
   assert.deepEqual(page.errors, []);
 });
 
@@ -1631,7 +1703,7 @@ test('чэнъюй: раунд с верным и неверным ответо�
     const record = await currentChengyu(page, bank);
     assert.ok(record, 'задание на экране не найдено в банке');
     assert.match(await page.locator('#cySourceLabel').textContent(),
-      record.occurrences ? /^ВсОШ 20\d\d\/\d\d · .+ этап · задание \d+$/ : /^Составленное задание$/);
+      record.occurrences ? /^(?:Учебная адаптация · )?ВсОШ 20\d\d\/\d\d · .+ этап · задание \d+$/ : /^Составленное задание$/);
     const correct = n !== 0 && n !== 5;
     if (n === 5) assert.equal(record.id, wrongRecord.id, 'в конце — повтор первой ошибки');
     const optionId = correct ? record.answer : record.options.find((o) => o.id !== record.answer).id;
@@ -1724,8 +1796,10 @@ test('чэнъюй: первый визит, «Следующий раунд» �
   assert.ok(steps.y > button.y + button.height, 'советы под кнопкой');
   // числа — в подвале
   const olympiad = bank.filter((r) => r.occurrences?.length).length;
+  const plural = new Intl.PluralRules('ru').select(bank.length);
+  const tasks = { one: 'задание', few: 'задания', many: 'заданий' }[plural];
   assert.equal(await page.locator('#footerNote').textContent(),
-    `В разделе ${bank.length} заданий: ${olympiad} из вариантов ВсОШ за 8 сезонов и ${bank.length - olympiad} составленных`
+    `В разделе ${bank.length} ${tasks}: ${olympiad} из вариантов ВсОШ за 8 сезонов и ${bank.length - olympiad} составленных`
     + ' по той же схеме и сверенных со словарями, 8 тем.');
   const pills = () => page.locator('#cySetupView .mode-option .pill-count').allTextContents();
   assert.deepEqual(await pills(), [String(bank.length), String(bank.length), '0']);
@@ -1919,7 +1993,7 @@ test('чэнъюй: перезагрузка посреди раунда воз�
   await page.locator('#cyResultsView').waitFor();
   assert.equal(hashOf(page), '#chengyu/results');
   assert.match(await page.locator('#cyFinalScore').textContent(), /^4\s*\/ 5$/);
-  assert.ok((await page.locator('#cyMistakeList').textContent()).includes(wrong.kind === 'reverse' ? wrong.prompt : wrong.chengyu));
+  assert.ok((await page.locator('#cyMistakeList').textContent()).includes(wrong.chengyu));
   // «назад» после перезагрузки итогов ведёт к началу раздела
   await page.goBack();
   await page.locator('#cySetupView').waitFor();
@@ -1930,9 +2004,9 @@ test('чэнъюй: «Закончить раунд» — итоги по отв
   const page = await openPage(t);
   if (!page) return;
   const bank = await page.evaluate(() => CHENGYU_BANK);
-  // обратное задание с подписями неверных вариантов (подписи есть только у них) и прямое
+  // Адаптация с пояснением к неверному варианту и задание из бланка.
   const picked = [
-    bank.find((r) => r.kind === 'reverse' && r.options.some((o) => o.id !== r.answer && o.gloss)),
+    bank.find((r) => r.id === 'cy-细水长流'),
     bank.find((r) => r.kind === 'analog'),
   ];
   assert.ok(picked.every(Boolean));
@@ -1941,8 +2015,8 @@ test('чэнъюй: «Закончить раунд» — итоги по отв
   await page.evaluate((ids) => cyStartRoundWith(ids.map((id) => CHENGYU_BANK.find((r) => r.id === id)).concat(
     CHENGYU_BANK.filter((r) => !ids.includes(r.id)).slice(0, 3))), picked.map((r) => r.id));
   const wrongOptions = [];
-  for (const record of picked) {
-    const wrong = record.options.find((o) => o.id !== record.answer && (o.gloss || record.kind === 'analog'));
+  for (const [index, record] of picked.entries()) {
+    const wrong = record.options.find((o) => o.id !== record.answer && (index > 0 || o.gloss));
     wrongOptions.push(wrong);
     await page.locator(`#cyOptions button[data-option-id="${wrong.id}"]`).click();
     await page.locator('#cyNextButton').click();
@@ -1962,7 +2036,7 @@ test('чэнъюй: «Закончить раунд» — итоги по отв
   assert.equal(await heads.nth(0).getAttribute('aria-expanded'), 'true');
   assert.equal(await panels.nth(1).isVisible(), false);
   assert.ok((await heads.nth(0).textContent()).includes(`Ваш ответ ✕ ${wrongOptions[0].text}, верно ✓ `));
-  assert.deepEqual(await panels.nth(0).locator('.cy-facts dt').allTextContents(), ['Ответ', 'Смысл', 'Ловушка']);
+  assert.deepEqual(await panels.nth(0).locator('.cy-facts dt').allTextContents(), ['Буквально', 'Смысл', 'Ловушка']);
   assert.equal(await panels.nth(0).locator('.mistake-gloss').textContent(),
     `Ваш ответ ${wrongOptions[0].text} — ${wrongOptions[0].gloss.replace(/\.$/, '')}.`);
   // с клавиатуры: Enter раскрывает вторую ошибку и сворачивает первую; у прямого — буквально, смысл, ловушка
