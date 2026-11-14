@@ -2109,5 +2109,21 @@
       "verdict": "accept",
       "note": "Author accepted this question and proposed corrections. Independent final embedding review required; publication forbidden."
     }
+  },
+  {
+    "id": "literature-q121",
+    "status": "accepted",
+    "topic": "Литература, язык, искусство и философия",
+    "fact": {
+      "table": "skillvocabulary",
+      "row": "word-gongfu",
+      "ask": "name"
+    },
+    "questionRu": "Каким китайским словом можно назвать мастерство каллиграфа, приобретённое долгой практикой?",
+    "explanation": "Словом «гунфу» можно назвать мастерство, выработанное долгой практикой. Так говорят, например, о технике живописца или каллиграфа. Значение слова шире, чем название боевых искусств.",
+    "check": {
+      "verdict": "accept",
+      "note": "Формулировка, варианты и ключ приняты автором. Подписи и взаимные подсказки проверены при встраивании."
+    }
   }
 ]

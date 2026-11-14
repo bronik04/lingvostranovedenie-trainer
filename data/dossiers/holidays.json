@@ -5329,6 +5329,250 @@
           ]
         }
       ]
+    },
+    "holidayperformances": {
+      "columns": {
+        "name": "zh"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": [
+        {
+          "id": "dance-dragon",
+          "name": {
+            "zh": "舞龙",
+            "ru": [
+              "Танец дракона"
+            ],
+            "gloss": "Танец дракона — фигуру несут на шестах несколько исполнителей."
+          },
+          "sources": [
+            {
+              "title": "Хаймэнь — танец дракона",
+              "url": "https://www.haimen.gov.cn/hmsrmzf/lswh/content/32fa9976-5e9e-4e7f-ba04-658fadff2c4f.html",
+              "quote": "舞龙",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Район Тайшань — праздничные представления",
+              "url": "https://tajs.taian.gov.cn/art/2023/6/21/art_318697_10299882.html",
+              "quote": "舞龙、舞狮、划旱船花船、倒骑毛驴、踩高跷",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "dance-lion",
+          "name": {
+            "zh": "舞狮",
+            "ru": [
+              "Танец льва"
+            ],
+            "gloss": "Танец льва — один артист управляет головой, другой — корпусом и хвостом.",
+            "ref": "holidays/customs/cus-wushi"
+          },
+          "sources": [
+            {
+              "title": "Главное управление спорта КНР — танец льва и дракона",
+              "url": "https://www.sport.gov.cn/n20001280/n20067701/n20067639/c20141200/content.html",
+              "quote": "走梅花桩、蹿桌子、踩滚球等高难度动作",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Государственный реестр нематериального наследия — танец льва",
+              "url": "https://www.ihchina.cn/project_details/12871",
+              "quote": "然后由两人扮演一头狮子耍舞",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Управление спорта Гуанъюаня — танец льва на высоких опорах",
+              "url": "https://tyj.cngy.gov.cn/News/Detail/8ab848aa156348f095a0adc9b201fff7.html",
+              "quote": "一人舞狮头，一人舞狮尾，身披狮衣",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "dance-stilts",
+          "name": {
+            "zh": "踩高跷",
+            "ru": [
+              "Танец на ходулях"
+            ],
+            "gloss": "Танец на ходулях — у каждого исполнителя свои опоры."
+          },
+          "sources": [
+            {
+              "title": "Ханьчжун — местные праздничные представления",
+              "url": "https://jhj.hanzhong.gov.cn/hzjhjwz/msfq/202108/3af357cf8969447a832600f64c8ff690.shtml",
+              "quote": "高跷：舞者双足踩在二、三尺高或更高的木腿上；用竹竿或木棍扎成轻盈的小旱船",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Район Тайшань — праздничные представления",
+              "url": "https://tajs.taian.gov.cn/art/2023/6/21/art_318697_10299882.html",
+              "quote": "舞龙、舞狮、划旱船花船、倒骑毛驴、踩高跷",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "dance-dry-boat",
+          "name": {
+            "zh": "划旱船",
+            "ru": [
+              "Танец с лодкой"
+            ],
+            "gloss": "Танец с лодкой — лёгкий каркас вокруг исполнителя изображает лодку."
+          },
+          "sources": [
+            {
+              "title": "Ханьчжун — местные праздничные представления",
+              "url": "https://jhj.hanzhong.gov.cn/hzjhjwz/msfq/202108/3af357cf8969447a832600f64c8ff690.shtml",
+              "quote": "高跷：舞者双足踩在二、三尺高或更高的木腿上；用竹竿或木棍扎成轻盈的小旱船",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Район Тайшань — праздничные представления",
+              "url": "https://tajs.taian.gov.cn/art/2023/6/21/art_318697_10299882.html",
+              "quote": "舞龙、舞狮、划旱船花船、倒骑毛驴、踩高跷",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        }
+      ]
+    },
+    "folkgods": {
+      "columns": {
+        "name": "zh"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": [
+        {
+          "id": "god-hearth",
+          "name": {
+            "zh": "灶神",
+            "ru": [
+              "Бог очага"
+            ],
+            "gloss": "Бог очага — его почитают в конце лунного года."
+          },
+          "sources": [
+            {
+              "title": "Округ Яохай — новогодние обряды",
+              "url": "https://www.hfyaohai.gov.cn/mlyh/yhgl/msmf/5586501.html",
+              "quote": "祭拜“灶神”(迎灶神回民间过年亦在是日)、“门神”、“土地神”和“井神”",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Собрание народных представителей Сямэня — культы юга Фуцзяни",
+              "url": "https://www.xmrd.gov.cn/rdlz/dbjygk/dbjy/201504/t20150411_239579.htm",
+              "quote": "奉门神（如钟馗、秦琼、尉迟恭等），经商必敬财神（关公、赵光明）；土地神与后土神崇拜、灶神崇拜",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "god-wealth",
+          "name": {
+            "zh": "财神",
+            "ru": [
+              "Бог богатства"
+            ],
+            "gloss": "Бог богатства — к нему обращаются с пожеланиями достатка.",
+            "ref": "money/customs/caishen"
+          },
+          "sources": [
+            {
+              "title": "Собрание народных представителей Сямэня — культы юга Фуцзяни",
+              "url": "https://www.xmrd.gov.cn/rdlz/dbjygk/dbjy/201504/t20150411_239579.htm",
+              "quote": "奉门神（如钟馗、秦琼、尉迟恭等），经商必敬财神（关公、赵光明）；土地神与后土神崇拜、灶神崇拜",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Государственный реестр нематериального наследия — почитание бога богатства",
+              "url": "https://www.ihchina.cn/special2025/details/29629.html",
+              "quote": "正月初五迎财神是春节习俗的一项重要活动",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "god-door",
+          "name": {
+            "zh": "门神",
+            "ru": [
+              "Мэньшэнь"
+            ],
+            "gloss": "Мэньшэнь — божества-хранители дверей, которым приписывали защиту дома от злых сил."
+          },
+          "sources": [
+            {
+              "title": "Национальный исторический музей — парные изображения полководцев",
+              "url": "https://collections.culture.tw/nmh_collectionsweb/Collection?GID=MLM4MGMCMA",
+              "quote": "《門神，秦叔寶，尉遲恭》",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Собрание народных представителей Сямэня — культы юга Фуцзяни",
+              "url": "https://www.xmrd.gov.cn/rdlz/dbjygk/dbjy/201504/t20150411_239579.htm",
+              "quote": "奉门神（如钟馗、秦琼、尉迟恭等），经商必敬财神（关公、赵光明）；土地神与后土神崇拜、灶神崇拜",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Округ Яохай — новогодние обряды",
+              "url": "https://www.hfyaohai.gov.cn/mlyh/yhgl/msmf/5586501.html",
+              "quote": "祭拜“灶神”(迎灶神回民间过年亦在是日)、“门神”、“土地神”和“井神”",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "god-earth",
+          "name": {
+            "zh": "土地神",
+            "ru": [
+              "Божество земли"
+            ],
+            "gloss": "Божество земли — его почитают как покровителя местности."
+          },
+          "sources": [
+            {
+              "title": "Округ Яохай — новогодние обряды",
+              "url": "https://www.hfyaohai.gov.cn/mlyh/yhgl/msmf/5586501.html",
+              "quote": "祭拜“灶神”(迎灶神回民间过年亦在是日)、“门神”、“土地神”和“井神”",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Собрание народных представителей Сямэня — культы юга Фуцзяни",
+              "url": "https://www.xmrd.gov.cn/rdlz/dbjygk/dbjy/201504/t20150411_239579.htm",
+              "quote": "奉门神（如钟馗、秦琼、尉迟恭等），经商必敬财神（关公、赵光明）；土地神与后土神崇拜、灶神崇拜",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        }
+      ]
     }
   }
 }

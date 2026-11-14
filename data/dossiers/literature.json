@@ -9200,6 +9200,120 @@
           ]
         }
       ]
+    },
+    "skillvocabulary": {
+      "columns": {
+        "name": "zh"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": [
+        {
+          "id": "word-gongfu",
+          "name": {
+            "zh": "功夫",
+            "ru": [
+              "Гунфу"
+            ],
+            "gloss": "Гунфу — так называют приобретённое мастерство и вне боевых искусств."
+          },
+          "sources": [
+            {
+              "title": "Большой словарь Министерства образования — 功夫",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=74925&la=1&powerMode=0",
+              "quote": "本領、造詣。如：「他的國畫，功夫很深。」",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Краткий словарь Министерства образования — 功夫",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=17621&la=0&powerMode=0",
+              "quote": "他在國畫方面的功夫很了不得。",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "word-talent",
+          "name": {
+            "zh": "天赋",
+            "ru": [
+              "Природная одарённость"
+            ],
+            "gloss": "Природная одарённость — способности, данные от рождения."
+          },
+          "sources": [
+            {
+              "title": "Большой словарь Министерства образования — 天賦",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=52870&la=0&powerMode=0",
+              "quote": "天生的才能，自然的稟賦",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Краткий словарь Министерства образования — 天賦",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=11089&la=0&powerMode=0",
+              "quote": "天生自然的能力",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "word-style",
+          "name": {
+            "zh": "风格",
+            "ru": [
+              "Стиль"
+            ],
+            "gloss": "Стиль — характерная манера работы."
+          },
+          "sources": [
+            {
+              "title": "Краткий словарь Министерства образования — 風格",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=6123&la=0&powerMode=0",
+              "quote": "獨特的風格",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Большой словарь Министерства образования — 風格",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=37047&q=1&word=%E6%A0%BC",
+              "quote": "風格",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "word-inspiration",
+          "name": {
+            "zh": "灵感",
+            "ru": [
+              "Вдохновение"
+            ],
+            "gloss": "Вдохновение — может подсказать творческое решение."
+          },
+          "sources": [
+            {
+              "title": "Краткий словарь Министерства образования — 靈感",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=15153&la=1&powerMode=0",
+              "quote": "忽然出現且超越平時思考層面的想法",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Краткий словарь Министерства образования — пример употребления 靈感",
+              "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=45162&la=0&powerMode=0",
+              "quote": "尋找創作的靈感",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        }
+      ]
     }
   }
 }

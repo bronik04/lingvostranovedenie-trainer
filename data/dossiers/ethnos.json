@@ -7398,6 +7398,120 @@
           ]
         }
       ]
+    },
+    "traditionaldivination": {
+      "columns": {
+        "name": "zh"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": [
+        {
+          "id": "practice-fengshui",
+          "name": {
+            "zh": "风水",
+            "ru": [
+              "Фэншуй"
+            ],
+            "gloss": "Фэншуй — благоприятным считали место с горой позади дома и водой перед ним."
+          },
+          "sources": [
+            {
+              "title": "Центральный университет национальностей — выбор места и ориентации жилища",
+              "url": "https://cnwec.muc.edu.cn/info/1025/3466.htm",
+              "quote": "“向”即朝向；“穴”则是综合考察以上诸要素后确定的聚落或民居建造的最佳位置",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Шэньсийский педагогический университет — фэншуй и выбор дат",
+              "url": "https://lishiwenhua.snnu.edu.cn/info/1081/1140.htm",
+              "quote": "阳宅的选择，地势要背山面水；择日是趋吉避凶自我保护的反映",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "practice-auspicious-day",
+          "name": {
+            "zh": "择日",
+            "ru": [
+              "Выбор благоприятного дня"
+            ],
+            "gloss": "Выбор благоприятного дня — например, для свадьбы или начала строительства."
+          },
+          "sources": [
+            {
+              "title": "Шэньсийский педагогический университет — фэншуй и выбор дат",
+              "url": "https://lishiwenhua.snnu.edu.cn/info/1081/1140.htm",
+              "quote": "阳宅的选择，地势要背山面水；择日是趋吉避凶自我保护的反映",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Оухай — выбор места для жилья",
+              "url": "https://sz.ouhai.gov.cn/art/2024/5/23/art_1229789213_58829129.html",
+              "quote": "请阴阳先生看地脉择宅基定朝向",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "practice-face-reading",
+          "name": {
+            "zh": "相面",
+            "ru": [
+              "Гадание по лицу"
+            ],
+            "gloss": "Гадание по лицу — судьбу предсказывают по чертам лица."
+          },
+          "sources": [
+            {
+              "title": "Народный суд провинции Шаньдун — гадание по внешности",
+              "url": "https://www.sdcourt.gov.cn/dyzy/372897/372830/17132181/index.html",
+              "quote": "面相学也称“相人术”，主要是根据人的面貌、形体等外在身体特征，来对人之吉凶祸福进行判断",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Большой словарь Министерства образования — 相面",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=110212&q=1&word=%E9%9D%A2",
+              "quote": "相面識心腹，開口言災祥。",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "practice-astrology",
+          "name": {
+            "zh": "占星",
+            "ru": [
+              "Астрология"
+            ],
+            "gloss": "Астрология — события толкуют по положению небесных тел."
+          },
+          "sources": [
+            {
+              "title": "Словарь Министерства образования — терминология астрологии",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=35711",
+              "quote": "占星家為了藉星象來觀察地面州國的吉凶",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Академия наук Китая — толкование небесных явлений",
+              "url": "https://www.shb.cas.cn/ysdtxw/gzdt/202111/t20211102_6240210.html",
+              "quote": "往往被片面地解释为上天的预警、凶吉等",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        }
+      ]
     }
   }
 }

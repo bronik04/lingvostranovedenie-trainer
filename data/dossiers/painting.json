@@ -7793,6 +7793,127 @@
           ]
         }
       ]
+    },
+    "paintingformats": {
+      "columns": {
+        "name": "zh"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": [
+        {
+          "id": "format-mural",
+          "name": {
+            "zh": "壁画",
+            "ru": [
+              "Настенная роспись"
+            ],
+            "gloss": "Настенная роспись — в Могао живопись покрывает стены и своды."
+          },
+          "sources": [
+            {
+              "title": "Академия Дуньхуана — роспись пещеры Могао",
+              "url": "https://www.dha.ac.cn/info/1425/3617.htm",
+              "quote": "壁画",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Институт консервации Гетти — росписи Могао",
+              "url": "https://www.getty.edu/projects/wall-paintings-conservation-mogao-grottoes/project-background-objectives/",
+              "quote": "the conglomerate and the clay plaster",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Институт консервации Гетти — исследование росписей пещеры №85",
+              "url": "https://www.getty.edu/publications/virtuallibrary/pdf/9781606061572.pdf",
+              "quote": "The rock cut walls and ceilings were then plastered with a mixture of clay, sand and plant fiber.",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "format-scroll",
+          "name": {
+            "zh": "卷轴画",
+            "ru": [
+              "Живопись на свитке"
+            ],
+            "gloss": "Живопись на свитке — свиток можно свернуть и убрать."
+          },
+          "sources": [
+            {
+              "title": "Музей Гугун — живопись на свитках",
+              "url": "https://www.dpm.org.cn/explode/others/251839.html",
+              "quote": "由元、亨、利、贞四个手卷组成，绢本设色",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Исследование свитков и живописи на шёлке в журнале Гугуна",
+              "url": "https://www.dpm.org.cn/pdfwrap.html?pdffile=File%2F2018%2F06%2F04%2Fu5b14dcc221304.pdf",
+              "quote": "画面为横向排列的手卷样式佛传故事题材绢画",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "format-silk",
+          "name": {
+            "zh": "绢画",
+            "ru": [
+              "Живопись на шёлке"
+            ],
+            "gloss": "Живопись на шёлке — изображение наносят на шёлковую ткань."
+          },
+          "sources": [
+            {
+              "title": "Музей Гугун — пейзаж на шёлке",
+              "url": "https://www.dpm.org.cn/vr/stone-moat/wyd_79.html",
+              "quote": "绢本 设色",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Исследование свитков и живописи на шёлке в журнале Гугуна",
+              "url": "https://www.dpm.org.cn/pdfwrap.html?pdffile=File%2F2018%2F06%2F04%2Fu5b14dcc221304.pdf",
+              "quote": "画面为横向排列的手卷样式佛传故事题材绢画",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "format-print",
+          "name": {
+            "zh": "版画",
+            "ru": [
+              "Печатная графика"
+            ],
+            "gloss": "Печатная графика — изображение получают оттиском с подготовленной формы."
+          },
+          "sources": [
+            {
+              "title": "Центральная академия изобразительных искусств — печатная графика",
+              "url": "https://i.cafa.edu.cn/cafaresearch/resc/?s=123400",
+              "quote": "印痕才是版画的唯一本质特征",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Музей Гугун — придворная печатная графика эпохи Цин",
+              "url": "https://www.dpm.org.cn/journal_detail/256399.html",
+              "quote": "版画是美术与印刷术相结合的产物",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        }
+      ]
     }
   }
 }

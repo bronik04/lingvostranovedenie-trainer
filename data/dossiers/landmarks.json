@@ -9482,6 +9482,122 @@
           ]
         }
       ]
+    },
+    "urbanarchitectureterms": {
+      "columns": {
+        "name": "zh"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": [
+        {
+          "id": "urban-siheyuan",
+          "name": {
+            "zh": "四合院",
+            "ru": [
+              "Сыхэюань"
+            ],
+            "gloss": "Сыхэюань — усадьба с постройками по четырём сторонам двора.",
+            "ref": "landmarks/dwellings/dwelling-siheyuan"
+          },
+          "sources": [
+            {
+              "title": "Управление градостроительства Пекина — хутуны и сыхэюани",
+              "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/zxzt/wsghs/2021dyj/d5j/202102/t20210224_2288070.html",
+              "quote": "有原貌保存完整的最美四合院、有原汁原味的小院儿生活，走在胡同里",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Государственный реестр нематериального наследия — архитектура сыхэюаней",
+              "url": "https://www.ihchina.cn/art/detail/id/21922.html",
+              "quote": "北京四合院属于都城民居类型",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "urban-shikumen",
+          "name": {
+            "zh": "石库门",
+            "ru": [
+              "Шикумэнь"
+            ],
+            "gloss": "Шикумэнь — шанхайский тип жилого дома с каменным порталом.",
+            "ref": "landmarks/dwellings/dwelling-shikumen"
+          },
+          "sources": [
+            {
+              "title": "Правительство Шанхая — шикумэнь в Хуанпу",
+              "url": "https://www.shanghai.gov.cn/huangpu/index.html",
+              "quote": "石库门",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Государственный реестр нематериального наследия — сыхэюань и шикумэнь",
+              "url": "https://www.ihchina.cn/search_result/startdate/order.html/order/1/p/1300.html",
+              "quote": "石库门里弄民居因其乌漆厚木大门由花岗岩石板条组成的门框紧箍",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "urban-hutong",
+          "name": {
+            "zh": "胡同",
+            "ru": [
+              "Хутун"
+            ],
+            "gloss": "Хутун — переулок соединяет входы в жилые дворы."
+          },
+          "sources": [
+            {
+              "title": "Управление градостроительства Пекина — хутуны и сыхэюани",
+              "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/zxzt/wsghs/2021dyj/d5j/202102/t20210224_2288070.html",
+              "quote": "有原貌保存完整的最美四合院、有原汁原味的小院儿生活，走在胡同里",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Государственный реестр нематериального наследия — архитектура сыхэюаней",
+              "url": "https://www.ihchina.cn/art/detail/id/21922.html",
+              "quote": "北京四合院属于都城民居类型",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "urban-pailou",
+          "name": {
+            "zh": "牌楼",
+            "ru": [
+              "Пайлоу"
+            ],
+            "gloss": "Пайлоу — отдельно стоящие декоративные ворота."
+          },
+          "sources": [
+            {
+              "title": "Правительство Пекина — пайлоу в парке Бэйхай",
+              "url": "https://www.beijing.gov.cn/tsbj/sxym/202008/t20200813_1982653.html",
+              "quote": "牌楼作为其中的一种单体建筑",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Пекин — исторические пайлоу района Дунчэн",
+              "url": "https://www.bjwmb.gov.cn/wmdt/dcq/10086972.html",
+              "quote": "坊门开始与围墙脱离，框槛与门扇也不复设置",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        }
+      ]
     }
   }
 }

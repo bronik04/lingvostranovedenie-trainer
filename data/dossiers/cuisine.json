@@ -6955,6 +6955,234 @@
           ]
         }
       ]
+    },
+    "tanghulufruits": {
+      "columns": {
+        "name": "zh"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": [
+        {
+          "id": "fruit-hawthorn",
+          "name": {
+            "zh": "山楂",
+            "ru": [
+              "Боярышник"
+            ],
+            "gloss": "Боярышник — кислые плоды нанизывают и покрывают хрустящей сахарной глазурью."
+          },
+          "sources": [
+            {
+              "title": "Управление надзора за пищевыми продуктами Чжэнчжоу — танхулу из боярышника",
+              "url": "https://public.zhengzhou.gov.cn/09EBH/212886.jhtml",
+              "quote": "糖葫芦是我国北方冬季的传统小吃，最典型的是以竹签将山楂串成串后蘸糖稀",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Пекин — традиционный танхулу из боярышника",
+              "url": "https://www.bjcc.gov.cn/article/600613012.html",
+              "quote": "传统山楂款糖葫芦",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "fruit-strawberry",
+          "name": {
+            "zh": "草莓",
+            "ru": [
+              "Клубника"
+            ],
+            "gloss": "Клубника — её используют в современных вариантах танхулу."
+          },
+          "sources": [
+            {
+              "title": "Пекин — традиционный танхулу из боярышника",
+              "url": "https://www.bjcc.gov.cn/article/600613012.html",
+              "quote": "从红彤彤的传统山楂款糖葫芦，到草莓糖葫芦、青提糖葫芦",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Управление культуры и туризма Хэйлунцзяна — разновидности танхулу",
+              "url": "https://wlt.hlj.gov.cn/wlt/c116547/202412/c00_31789506.shtml",
+              "quote": "包括山楂、葡萄、菠萝、大枣、橘子、草莓等",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "fruit-grape",
+          "name": {
+            "zh": "葡萄",
+            "ru": [
+              "Виноград"
+            ],
+            "gloss": "Виноград — его тоже нанизывали на шпажки и покрывали сахаром."
+          },
+          "sources": [
+            {
+              "title": "Пекин — традиционный танхулу из боярышника",
+              "url": "https://www.bjcc.gov.cn/article/600613012.html",
+              "quote": "乃用竹签贯以葡萄、山药豆、海棠果、山里红等物",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Управление культуры и туризма Хэйлунцзяна — разновидности танхулу",
+              "url": "https://wlt.hlj.gov.cn/wlt/c116547/202412/c00_31789506.shtml",
+              "quote": "包括山楂、葡萄、菠萝、大枣、橘子、草莓等",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "fruit-cherry-tomato",
+          "name": {
+            "zh": "圣女果",
+            "ru": [
+              "Помидоры черри"
+            ],
+            "gloss": "Помидоры черри — их иногда добавляют на шпажку к другим плодам."
+          },
+          "sources": [
+            {
+              "title": "Комитет здравоохранения Шэньяна — варианты сырья для танхулу",
+              "url": "https://wjw.shenyang.gov.cn/zwgk/fdzdgknr/spaq/spaqqybzbahxxgk/202209/P020220901294906629427.pdf",
+              "quote": "山楂、橘、金橘、香蕉、草莓、葡萄、樱桃番茄",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Гаопин — современные фруктовые шашлычки в сахаре",
+              "url": "https://www.sxgp.gov.cn/xwzx_358/jcdt_363/202602/t20260211_2320089.shtml",
+              "quote": "圣女果",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        }
+      ]
+    },
+    "tablecooking": {
+      "columns": {
+        "name": "zh"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": [
+        {
+          "id": "dish-dry-wok",
+          "name": {
+            "zh": "麻辣香锅",
+            "ru": [
+              "Мала сянго"
+            ],
+            "gloss": "Мала сянго — ингредиенты обжаривают с пряностями и подают готовыми."
+          },
+          "sources": [
+            {
+              "title": "Китайский женский университет — описание приготовления мала сянго",
+              "url": "https://www.cwu.edu.cn/__local/1/8A/59/1F3F8F40A25E4892B0786ADD649_249107FE_FAEAE8.pdf?e=.pdf",
+              "quote": "把一大锅菜一起用各种调料味料炒起来吃",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Синьцзянский аграрный университет — мала сянго",
+              "url": "https://horse.xjau.edu.cn/tour/gourmet_detail/18/",
+              "quote": "麻辣香锅川味精髓",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "dish-hotpot",
+          "name": {
+            "zh": "火锅",
+            "ru": [
+              "Хого"
+            ],
+            "gloss": "Хого — можно заказать кастрюлю с перегородкой для двух бульонов."
+          },
+          "sources": [
+            {
+              "title": "Правительство Пекина — варка продуктов за столом",
+              "url": "https://english.beijing.gov.cn/livinginbeijing/diningandshopping/202006/t20200616_1925742.html",
+              "quote": "instant-boiled mutton",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Правительство Шанхая — виды хого",
+              "url": "https://japanese.shanghai.gov.cn/ja-LearnChinese/20240330/0ec9e8b1887b4cf5be8c4932b0fe3951.html",
+              "quote": "鸳鸯锅",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "dish-congee",
+          "name": {
+            "zh": "砂锅粥",
+            "ru": [
+              "Рисовая каша в глиняном горшке"
+            ],
+            "gloss": "Рисовая каша в глиняном горшке — её подают уже сваренной."
+          },
+          "sources": [
+            {
+              "title": "Виртуальный музей Министерства торговли КНР — каша в глиняном горшке",
+              "url": "https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/42f177ff453b4a8c92e355282e27d609",
+              "quote": "潮汕砂锅粥，便是在白粥的基础上，添加各种山珍海味",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Округ Путо — подача каши в глиняном горшке",
+              "url": "https://www.shpt.gov.cn/csjd-jiedaozhen/sqdt-csjd/20230327/891670.html",
+              "quote": "上桌的时候，砂锅里还咕噜咕噜弥漫着鲜香",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "dish-teppan",
+          "name": {
+            "zh": "铁板烧",
+            "ru": [
+              "Тэппанъяки"
+            ],
+            "gloss": "Тэппанъяки — приготовление на нагретой железной плите."
+          },
+          "sources": [
+            {
+              "title": "Словарь Министерства образования — 鐵板燒",
+              "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=52284&la=0&powerMode=0",
+              "quote": "放到高溫的鐵板上煎炙成菜餚",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Японская национальная туристическая организация — приготовление на плите",
+              "url": "https://www.japan.travel/en/ph/guide/yakiniku/",
+              "quote": "Teppan-yaki (iron plate)",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        }
+      ]
     }
   }
 }

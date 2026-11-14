@@ -57918,6 +57918,116 @@
   },
   {
     "answer": {
+      "gloss": "Боярышник — кислые плоды нанизывают и покрывают хрустящей сахарной глазурью.",
+      "optionId": "fruit-hawthorn",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Управление надзора за пищевыми продуктами Чжэнчжоу — танхулу из боярышника",
+        "url": "https://public.zhengzhou.gov.cn/09EBH/212886.jhtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Пекин — традиционный танхулу из боярышника",
+        "url": "https://www.bjcc.gov.cn/article/600613012.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Классический северокитайский танхулу делают из боярышника. Плоды нанизывают на шпажку и покрывают сахарной глазурью. Сладкая корочка оттеняет кисловатый вкус плодов."
+    },
+    "factRow": "cuisine/tanghulufruits/fruit-hawthorn",
+    "id": "cuisine-q110",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "fruit-hawthorn",
+        "zh": "山楂"
+      },
+      {
+        "gloss": "Клубника — её используют в современных вариантах танхулу.",
+        "id": "fruit-strawberry",
+        "zh": "草莓"
+      },
+      {
+        "gloss": "Виноград — его тоже нанизывали на шпажки и покрывали сахаром.",
+        "id": "fruit-grape",
+        "zh": "葡萄"
+      },
+      {
+        "gloss": "Помидоры черри — их иногда добавляют на шпажку к другим плодам.",
+        "id": "fruit-cherry-tomato",
+        "zh": "圣女果"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Какие плоды используют в классическом северокитайском танхулу (糖葫芦)?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "gloss": "Хого — можно заказать кастрюлю с перегородкой для двух бульонов.",
+      "optionId": "dish-hotpot",
+      "state": "verified"
+    },
+    "dossier": "cuisine",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Правительство Пекина — варка продуктов за столом",
+        "url": "https://english.beijing.gov.cn/livinginbeijing/diningandshopping/202006/t20200616_1925742.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Правительство Шанхая — виды хого",
+        "url": "https://japanese.shanghai.gov.cn/ja-LearnChinese/20240330/0ec9e8b1887b4cf5be8c4932b0fe3951.html"
+      }
+    ],
+    "explanation": {
+      "ru": "В хого гости опускают продукты в горячий бульон за столом. Время варки зависит от выбранного продукта. Кастрюля с перегородкой позволяет подать сразу два разных бульона."
+    },
+    "factRow": "cuisine/tablecooking/dish-hotpot",
+    "id": "cuisine-q111",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "dish-hotpot",
+        "zh": "火锅"
+      },
+      {
+        "gloss": "Мала сянго — ингредиенты обжаривают с пряностями и подают готовыми.",
+        "id": "dish-dry-wok",
+        "zh": "麻辣香锅"
+      },
+      {
+        "gloss": "Рисовая каша в глиняном горшке — её подают уже сваренной.",
+        "id": "dish-congee",
+        "zh": "砂锅粥"
+      },
+      {
+        "gloss": "Тэппанъяки — приготовление на нагретой железной плите.",
+        "id": "dish-teppan",
+        "zh": "铁板烧"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В ресторане гостям приносят сырые продукты и ставят в центр стола кастрюлю с кипящим бульоном. Как называется блюдо, которое гости готовят сами?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
       "gloss": "Гуандун — родина кантонской кухни с белой нарезанной курицей",
       "optionId": "cs-yue",
       "state": "verified"
@@ -62326,6 +62436,74 @@
   },
   {
     "answer": {
+      "gloss": "Чжуанъюань — первое место на дворцовом экзамене.",
+      "optionId": "rank-zhuangyuan",
+      "state": "verified"
+    },
+    "dossier": "dynasties",
+    "editorial": {
+      "reason": "Развести по разным раундам вопросы, связанные формулировкой, подписью или пояснением."
+    },
+    "evidence": [
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-14",
+        "title": "Академический обзор системы кэцзюй",
+        "url": "https://www.nopss.gov.cn/GB/219506/219508/219522/14640076.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Шанхайское управление по гражданским делам — ступени императорских экзаменов",
+        "url": "https://mzj.sh.gov.cn/lnb-wsws/20200518/MZ_LNB12_5321.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Чжуанъюанем называли кандидата, занявшего первое место на дворцовом экзамене. Второе и третье места тоже имели особые названия. Хуэйюанем называли победителя предыдущего, столичного экзамена."
+    },
+    "factGroup": "qing-last-dynasty",
+    "factRow": "dynasties/imperialexamranks/rank-zhuangyuan",
+    "id": "dynasties-q129",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "rank-zhuangyuan",
+        "zh": "状元"
+      },
+      {
+        "gloss": "Хуэйюань — первое место на столичном экзамене.",
+        "id": "rank-huiyuan",
+        "zh": "会元"
+      },
+      {
+        "gloss": "Банъянь — второе место на дворцовом экзамене.",
+        "id": "rank-bangyan",
+        "zh": "榜眼"
+      },
+      {
+        "gloss": "Таньхуа — третье место на дворцовом экзамене.",
+        "id": "rank-tanhua",
+        "zh": "探花"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называли победителя дворцового экзамена при династии Цин?",
+    "questionZh": null,
+    "separateFrom": [
+      "landmarks-q91",
+      "landmarks-q93",
+      "dynasties-q112",
+      "2015-16-shk-61",
+      "2017-18-mun-3",
+      "2022-23-shk-qa664f6",
+      "2025-26-mun-komi-55"
+    ],
+    "topic": "История и государство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
       "gloss": "Династия Хань — 202 г. до н. э. — 220 г. н. э., основал Лю Бан",
       "optionId": "dyn-han",
       "state": "verified"
@@ -65714,6 +65892,61 @@
     "questionRu": "Письменность какого народа Китая создана в начале VII века?",
     "questionZh": null,
     "topic": "Общество: население, этносы и религии",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "gloss": "Фэншуй — благоприятным считали место с горой позади дома и водой перед ним.",
+      "optionId": "practice-fengshui",
+      "state": "verified"
+    },
+    "dossier": "ethnos",
+    "evidence": [
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-14",
+        "title": "Центральный университет национальностей — выбор места и ориентации жилища",
+        "url": "https://cnwec.muc.edu.cn/info/1025/3466.htm"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-14",
+        "title": "Шэньсийский педагогический университет — фэншуй и выбор дат",
+        "url": "https://lishiwenhua.snnu.edu.cn/info/1081/1140.htm"
+      }
+    ],
+    "explanation": {
+      "ru": "По фэншую оценивали пригодность участка для строительства дома. Учитывали рельеф, воду и ориентацию будущего жилища. Одной из благоприятных схем считали гору позади дома и воду перед ним."
+    },
+    "factRow": "ethnos/traditionaldivination/practice-fengshui",
+    "id": "ethnos-q102",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "practice-fengshui",
+        "zh": "风水"
+      },
+      {
+        "gloss": "Выбор благоприятного дня — например, для свадьбы или начала строительства.",
+        "id": "practice-auspicious-day",
+        "zh": "择日"
+      },
+      {
+        "gloss": "Гадание по лицу — судьбу предсказывают по чертам лица.",
+        "id": "practice-face-reading",
+        "zh": "相面"
+      },
+      {
+        "gloss": "Астрология — события толкуют по положению небесных тел.",
+        "id": "practice-astrology",
+        "zh": "占星"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется традиционная китайская практика выбора места для дома и его ориентации по сторонам света?",
+    "questionZh": null,
+    "topic": "Культура, традиции и праздники",
     "topicSource": "authored"
   },
   {
@@ -70958,6 +71191,141 @@
   },
   {
     "answer": {
+      "gloss": "Танец льва — один артист управляет головой, другой — корпусом и хвостом.",
+      "optionId": "dance-lion",
+      "state": "verified"
+    },
+    "dossier": "holidays",
+    "editorial": {
+      "reason": "Развести по разным раундам вопросы, связанные формулировкой, подписью или пояснением."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Главное управление спорта КНР — танец льва и дракона",
+        "url": "https://www.sport.gov.cn/n20001280/n20067701/n20067639/c20141200/content.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Государственный реестр нематериального наследия — танец льва",
+        "url": "https://www.ihchina.cn/project_details/12871"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Управление спорта Гуанъюаня — танец льва на высоких опорах",
+        "url": "https://tyj.cngy.gov.cn/News/Detail/8ab848aa156348f095a0adc9b201fff7.html"
+      }
+    ],
+    "explanation": {
+      "ru": "В гуандунском танце льва два исполнителя работают под одним костюмом. Один управляет головой, другой изображает заднюю часть фигуры. В одной из акробатических разновидностей пара перепрыгивает между высокими опорами."
+    },
+    "factRow": "holidays/holidayperformances/dance-lion",
+    "id": "holidays-q61",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "dance-lion",
+        "zh": "舞狮"
+      },
+      {
+        "gloss": "Танец дракона — фигуру несут на шестах несколько исполнителей.",
+        "id": "dance-dragon",
+        "zh": "舞龙"
+      },
+      {
+        "gloss": "Танец на ходулях — у каждого исполнителя свои опоры.",
+        "id": "dance-stilts",
+        "zh": "踩高跷"
+      },
+      {
+        "gloss": "Танец с лодкой — лёгкий каркас вокруг исполнителя изображает лодку.",
+        "id": "dance-dry-boat",
+        "zh": "划旱船"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называется праздничный танец, в котором два исполнителя в одном костюме перепрыгивают с одной высокой тумбы на другую под барабанный бой?",
+    "questionZh": null,
+    "separateFrom": [
+      "2017-18-mun-9",
+      "holidays-q15"
+    ],
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "gloss": "Мэньшэнь — божества-хранители дверей, которым приписывали защиту дома от злых сил.",
+      "optionId": "god-door",
+      "state": "verified"
+    },
+    "dossier": "holidays",
+    "editorial": {
+      "reason": "Развести по разным раундам вопросы, связанные формулировкой, подписью или пояснением."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Национальный исторический музей — парные изображения полководцев",
+        "url": "https://collections.culture.tw/nmh_collectionsweb/Collection?GID=MLM4MGMCMA"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Собрание народных представителей Сямэня — культы юга Фуцзяни",
+        "url": "https://www.xmrd.gov.cn/rdlz/dbjygk/dbjy/201504/t20150411_239579.htm"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Округ Яохай — новогодние обряды",
+        "url": "https://www.hfyaohai.gov.cn/mlyh/yhgl/msmf/5586501.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Мэньшэнь считались защитниками дома. На новогодних картинках их часто изображали в виде двух полководцев эпохи Тан. Один из известных сюжетов показывает Цинь Цюна и Юйчи Гуна."
+    },
+    "factRow": "holidays/folkgods/god-door",
+    "id": "holidays-q62",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "god-door",
+        "zh": "门神"
+      },
+      {
+        "gloss": "Бог очага — его почитают в конце лунного года.",
+        "id": "god-hearth",
+        "zh": "灶神"
+      },
+      {
+        "gloss": "Бог богатства — к нему обращаются с пожеланиями достатка.",
+        "id": "god-wealth",
+        "zh": "财神"
+      },
+      {
+        "gloss": "Божество земли — его почитают как покровителя местности.",
+        "id": "god-earth",
+        "zh": "土地神"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Каких божеств изображают на китайских новогодних картинках в облике полководцев Цинь Цюна (秦琼) и Юйчи Гуна (尉迟恭)?",
+    "questionZh": null,
+    "separateFrom": [
+      "holidays-q14"
+    ],
+    "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
       "gloss": "Чанчунь — здесь дворец, где Пу И жил в годы Маньчжоу-го",
       "optionId": "lm-cn-puyi-palace",
       "state": "verified"
@@ -72111,6 +72479,68 @@
     "questionRu": "В каком соборе Московского Кремля венчали на царство русских царей и короновали императоров?",
     "questionZh": null,
     "topic": "Россия и межкультурный блок",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "gloss": "Хутун — переулок соединяет входы в жилые дворы.",
+      "optionId": "urban-hutong",
+      "state": "verified"
+    },
+    "dossier": "landmarks",
+    "editorial": {
+      "reason": "Развести по разным раундам вопросы, связанные формулировкой, подписью или пояснением."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Управление градостроительства Пекина — хутуны и сыхэюани",
+        "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/zxzt/wsghs/2021dyj/d5j/202102/t20210224_2288070.html"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Государственный реестр нематериального наследия — архитектура сыхэюаней",
+        "url": "https://www.ihchina.cn/art/detail/id/21922.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Хутуном называют переулок старого Пекина. В таких переулках расположены входы в жилые дворы. Многие исторические хутуны сохранили традиционную планировку."
+    },
+    "factRow": "landmarks/urbanarchitectureterms/urban-hutong",
+    "id": "landmarks-q125",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "urban-hutong",
+        "zh": "胡同"
+      },
+      {
+        "gloss": "Сыхэюань — усадьба с постройками по четырём сторонам двора.",
+        "id": "urban-siheyuan",
+        "zh": "四合院"
+      },
+      {
+        "gloss": "Шикумэнь — шанхайский тип жилого дома с каменным порталом.",
+        "id": "urban-shikumen",
+        "zh": "石库门"
+      },
+      {
+        "gloss": "Пайлоу — отдельно стоящие декоративные ворота.",
+        "id": "urban-pailou",
+        "zh": "牌楼"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Как называют узкие переулки старого Пекина, вдоль которых стоят дома с внутренними дворами?",
+    "questionZh": null,
+    "separateFrom": [
+      "addition-gap2-11",
+      "ethnos-q83"
+    ],
+    "topic": "Культура, традиции и праздники",
     "topicSource": "authored"
   },
   {
@@ -74260,6 +74690,67 @@
     "questionRu": "В каком городе находятся гробницы императоров Мин (明十三陵)?",
     "questionZh": null,
     "topic": "География и административное устройство",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "gloss": "Гунфу — так называют приобретённое мастерство и вне боевых искусств.",
+      "optionId": "word-gongfu",
+      "state": "verified"
+    },
+    "dossier": "literature",
+    "editorial": {
+      "reason": "Развести по разным раундам вопросы, связанные формулировкой, подписью или пояснением."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Большой словарь Министерства образования — 功夫",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=74925&la=1&powerMode=0"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Краткий словарь Министерства образования — 功夫",
+        "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=17621&la=0&powerMode=0"
+      }
+    ],
+    "explanation": {
+      "ru": "Словом «гунфу» можно назвать мастерство, выработанное долгой практикой. Так говорят, например, о технике живописца или каллиграфа. Значение слова шире, чем название боевых искусств."
+    },
+    "factRow": "literature/skillvocabulary/word-gongfu",
+    "id": "literature-q121",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "word-gongfu",
+        "zh": "功夫"
+      },
+      {
+        "gloss": "Природная одарённость — способности, данные от рождения.",
+        "id": "word-talent",
+        "zh": "天赋"
+      },
+      {
+        "gloss": "Стиль — характерная манера работы.",
+        "id": "word-style",
+        "zh": "风格"
+      },
+      {
+        "gloss": "Вдохновение — может подсказать творческое решение.",
+        "id": "word-inspiration",
+        "zh": "灵感"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Каким китайским словом можно назвать мастерство каллиграфа, приобретённое долгой практикой?",
+    "questionZh": null,
+    "separateFrom": [
+      "2023-24-mun-klg-7"
+    ],
+    "topic": "Литература, язык, искусство и философия",
     "topicSource": "authored"
   },
   {
@@ -95625,6 +96116,74 @@
   },
   {
     "answer": {
+      "gloss": "Настенная роспись — в Могао живопись покрывает стены и своды.",
+      "optionId": "format-mural",
+      "state": "verified"
+    },
+    "dossier": "painting",
+    "editorial": {
+      "reason": "Развести по разным раундам вопросы, связанные формулировкой, подписью или пояснением."
+    },
+    "evidence": [
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-14",
+        "title": "Академия Дуньхуана — роспись пещеры Могао",
+        "url": "https://www.dha.ac.cn/info/1425/3617.htm"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-14",
+        "title": "Институт консервации Гетти — росписи Могао",
+        "url": "https://www.getty.edu/projects/wall-paintings-conservation-mogao-grottoes/project-background-objectives/"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-14",
+        "title": "Институт консервации Гетти — исследование росписей пещеры №85",
+        "url": "https://www.getty.edu/publications/virtuallibrary/pdf/9781606061572.pdf"
+      }
+    ],
+    "explanation": {
+      "ru": "Изображения Могао выполнены в технике настенной росписи. Неровные скальные поверхности выравнивали глиняной штукатуркой. Поверх неё подготавливали основу для красок."
+    },
+    "factRow": "painting/paintingformats/format-mural",
+    "id": "painting-q115",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "format-mural",
+        "zh": "壁画"
+      },
+      {
+        "gloss": "Живопись на свитке — свиток можно свернуть и убрать.",
+        "id": "format-scroll",
+        "zh": "卷轴画"
+      },
+      {
+        "gloss": "Живопись на шёлке — изображение наносят на шёлковую ткань.",
+        "id": "format-silk",
+        "zh": "绢画"
+      },
+      {
+        "gloss": "Печатная графика — изображение получают оттиском с подготовленной формы.",
+        "id": "format-print",
+        "zh": "版画"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В пещерах Могао (莫高窟) художники наносили краски на подготовленный слой глины. К какому виду живописи относятся эти изображения?",
+    "questionZh": null,
+    "separateFrom": [
+      "landmarks-q97",
+      "landmarks-q104"
+    ],
+    "topic": "Литература, язык, искусство и философия",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
       "gloss": "Ван Сичжи (303–361) — каллиграф эпохи Восточная Цзинь, отец Ван Сяньчжи",
       "optionId": "art-c-wangxizhi",
       "state": "verified"
@@ -105601,6 +106160,193 @@
     "questionRu": "Какое животное открывает двенадцатилетний цикл китайского зодиака?",
     "questionZh": null,
     "topic": "Культура, традиции и праздники",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "gloss": "Компас — в эпоху Сун на судах применяли плавающую магнитную стрелку.",
+      "optionId": "nav-compass",
+      "state": "verified"
+    },
+    "dossier": "sets",
+    "editorial": {
+      "reason": "Развести по разным раундам вопросы, связанные формулировкой, подписью или пояснением."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Китайский музей мореплавания — навигация эпохи Сун",
+        "url": "https://digital.shmmc.com.cn/frqs/778.jhtml"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-14",
+        "title": "Институт истории естествознания АН Китая — древнее мореплавание",
+        "url": "https://ihns.cas.cn/kxcb_/kxjd/202212/t20221206_6567192.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Чжу Юй писал, что мореходы ориентировались по солнцу днём и по звёздам ночью. В пасмурную погоду им помогал компас. Другой автор эпохи Сун, Сюй Цзин, описал плавающую магнитную стрелку."
+    },
+    "factRow": "sets/navigationtools/nav-compass",
+    "id": "sets-q18",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "nav-compass",
+        "zh": "指南针"
+      },
+      {
+        "gloss": "Морская карта — на ней отмечали маршруты и ориентиры.",
+        "id": "nav-chart",
+        "zh": "海图"
+      },
+      {
+        "gloss": "Дощечка для наблюдения за звёздами — помогала измерять их высоту над горизонтом.",
+        "id": "nav-star-board",
+        "zh": "牵星板"
+      },
+      {
+        "gloss": "Лот — груз на верёвке для измерения глубины.",
+        "id": "nav-sounding-weight",
+        "zh": "测深锤"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "Каким прибором, по описанию Чжу Юя (朱彧), мореходы эпохи Сун определяли курс в пасмурную погоду?",
+    "questionZh": null,
+    "separateFrom": [
+      "2015-16-reg-5",
+      "2016-17-shk-1",
+      "2017-18-mun-8",
+      "2023-24-reg-6",
+      "2026-27-mun-1"
+    ],
+    "topic": "Экономика, образование, наука и спорт",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "gloss": "Суаньпан, китайские счёты — для счёта косточки сдвигают к перекладине.",
+      "optionId": "calc-abacus",
+      "state": "verified"
+    },
+    "dossier": "sets",
+    "editorial": {
+      "reason": "Развести по разным раундам вопросы, связанные формулировкой, подписью или пояснением."
+    },
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Китайские стандарты школьного курса математики — устройство счётов",
+        "url": "https://www.ictr.edu.cn/Uploads/File/2022/04/28/5.%E4%B9%89%E5%8A%A1%E6%95%99%E8%82%B2%E6%95%B0%E5%AD%A6%E8%AF%BE%E7%A8%8B%E6%A0%87%E5%87%86%EF%BC%882022%E5%B9%B4%E7%89%88%EF%BC%89.20220428160938.pdf"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Шанхайское финансовое управление — программа по чжусуаню",
+        "url": "https://czj.sh.gov.cn/resource/53/533145de4e694bfdb6e2287462ccfaac/c075e3819c1985ab3014abbeeda6aabc.pdf"
+      }
+    ],
+    "explanation": {
+      "ru": "Поперечная планка делит косточки китайских счётов на верхние и нижние. На одном стержне верхняя косточка обозначает пять единиц, а нижняя — одну. При счёте нужные косточки сдвигают к планке."
+    },
+    "factRow": "sets/calculatingtools/calc-abacus",
+    "id": "sets-q19",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "calc-abacus",
+        "zh": "算盘"
+      },
+      {
+        "gloss": "Счётные палочки — числа выкладывали из отдельных палочек.",
+        "id": "calc-rods",
+        "zh": "算筹"
+      },
+      {
+        "gloss": "Логарифмическая линейка — считают, совмещая деления шкал.",
+        "id": "calc-slide-rule",
+        "zh": "计算尺"
+      },
+      {
+        "gloss": "Ручной механический калькулятор — механизм приводят в движение рукояткой.",
+        "id": "calc-crank",
+        "zh": "手摇计算器"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "В каком китайском счётном приборе одна верхняя косточка равна пяти нижним на том же стержне?",
+    "questionZh": null,
+    "separateFrom": [
+      "2016-17-shk-1"
+    ],
+    "topic": "Экономика, образование, наука и спорт",
+    "topicSource": "authored"
+  },
+  {
+    "answer": {
+      "gloss": "Бяньчжун, набор колоколов — в комплекте из гробницы Цзэн-хоу И 65 колоколов.",
+      "optionId": "instr-bells",
+      "state": "verified"
+    },
+    "dossier": "sets",
+    "evidence": [
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Управление культуры Хубэя — два тона колокола",
+        "url": "https://wlt.hubei.gov.cn/bmdt/ztzl/zshb/201912/t20191226_1799618.shtml"
+      },
+      {
+        "authority": "official",
+        "checkedAt": "2026-11-14",
+        "title": "Архив провинции Хубэй — комплект колоколов",
+        "url": "https://www.hbda.gov.cn/info/540"
+      },
+      {
+        "authority": "academic",
+        "checkedAt": "2026-11-14",
+        "title": "Музей провинции Хубэй — инструменты из гробницы Цзэн-хоу И",
+        "url": "https://www.hbww.org.cn/hhfz70n/p/9135.html"
+      }
+    ],
+    "explanation": {
+      "ru": "Бяньчжун — набор бронзовых колоколов. Два разных звука на одном колоколе получают ударами по центру и сбоку его передней поверхности. Комплект из гробницы Цзэн-хоу И насчитывает 65 колоколов."
+    },
+    "factRow": "sets/zenghouyiinstruments/instr-bells",
+    "id": "sets-q20",
+    "occurrences": [],
+    "options": [
+      {
+        "id": "instr-bells",
+        "zh": "编钟"
+      },
+      {
+        "gloss": "Бяньцин — набор подвешенных звучащих каменных пластин.",
+        "id": "instr-stone-chimes",
+        "zh": "编磬"
+      },
+      {
+        "gloss": "Цзяньгу — барабан на вертикальной опоре.",
+        "id": "instr-stand-drum",
+        "zh": "建鼓"
+      },
+      {
+        "gloss": "Сэ — многострунный щипковый инструмент.",
+        "id": "instr-se",
+        "zh": "瑟"
+      }
+    ],
+    "origin": "addition",
+    "parseWarnings": [],
+    "questionRu": "На каком инструменте из гробницы Цзэн-хоу И (曾侯乙) две ноты извлекают ударами по разным участкам одного бронзового корпуса?",
+    "questionZh": null,
+    "topic": "Литература, язык, искусство и философия",
     "topicSource": "authored"
   },
   {

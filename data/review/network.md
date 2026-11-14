@@ -1778,7 +1778,6 @@
 - sets/beauties/bt-xishi
 - sets/beauties/bt-yangguifei
 - sets/inventions/inv-huoyao
-- sets/inventions/inv-zhinanzhen
 - sets/plants/pl-ju
 - sets/plants/pl-lan
 - sets/plants/pl-mei

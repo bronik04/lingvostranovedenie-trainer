@@ -2753,6 +2753,357 @@
           "about": "Учебная пара двух реальных традиционных инструментов для этого вопроса; она не является единственным или исчерпывающим национальным составом инструментов."
         }
       ]
+    },
+    "navigationtools": {
+      "columns": {
+        "name": "zh"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": [
+        {
+          "id": "nav-chart",
+          "name": {
+            "zh": "海图",
+            "ru": [
+              "Морская карта"
+            ],
+            "gloss": "Морская карта — на ней отмечали маршруты и ориентиры."
+          },
+          "sources": [
+            {
+              "title": "Китайский музей портов — навигационные инструменты",
+              "url": "https://www.portmuseum.cn/doc/sx/gbzx/read/38676.shtml",
+              "quote": "记录线路的海图、通过天象确定船位的量天尺和牵星板；测量水深的测深锤",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Институт истории естествознания АН Китая — древнее мореплавание",
+              "url": "https://ihns.cas.cn/kxcb_/kxjd/202212/t20221206_6567192.html",
+              "quote": "可用指南浮针，来决定南北方向；测深仪的发明和创造，以及针路和海图的运用",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "nav-star-board",
+          "name": {
+            "zh": "牵星板",
+            "ru": [
+              "Дощечка для наблюдения за звёздами"
+            ],
+            "gloss": "Дощечка для наблюдения за звёздами — помогала измерять их высоту над горизонтом."
+          },
+          "sources": [
+            {
+              "title": "Китайский музей мореплавания — 牵星板",
+              "url": "https://www.shmmc.com.cn/Home/ww_detail?id=badf82ba09eda09a",
+              "quote": "人们可以通过牵星来测定纬度",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Институт истории естествознания АН Китая — древнее мореплавание",
+              "url": "https://ihns.cas.cn/kxcb_/kxjd/202212/t20221206_6567192.html",
+              "quote": "可用指南浮针，来决定南北方向；测深仪的发明和创造，以及针路和海图的运用",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "nav-sounding-weight",
+          "name": {
+            "zh": "测深锤",
+            "ru": [
+              "Лот"
+            ],
+            "gloss": "Лот — груз на верёвке для измерения глубины."
+          },
+          "sources": [
+            {
+              "title": "Китайский музей портов — навигационные инструменты",
+              "url": "https://www.portmuseum.cn/doc/sx/gbzx/read/38676.shtml",
+              "quote": "记录线路的海图、通过天象确定船位的量天尺和牵星板；测量水深的测深锤",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Археологический институт Нинся — традиционный лот",
+              "url": "https://www.nxkg.org.cn/silukaogu/670.html",
+              "quote": "传统航海测深用具“铅锤”",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "nav-compass",
+          "name": {
+            "zh": "指南针",
+            "ru": [
+              "Компас"
+            ],
+            "gloss": "Компас — в эпоху Сун на судах применяли плавающую магнитную стрелку.",
+            "ref": "sets/inventions/inv-zhinanzhen"
+          },
+          "sources": [
+            {
+              "title": "Китайский музей мореплавания — навигация эпохи Сун",
+              "url": "https://digital.shmmc.com.cn/frqs/778.jhtml",
+              "quote": "夜则观星，昼则观日，阴晦观指南针",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Институт истории естествознания АН Китая — древнее мореплавание",
+              "url": "https://ihns.cas.cn/kxcb_/kxjd/202212/t20221206_6567192.html",
+              "quote": "可用指南浮针，来决定南北方向；测深仪的发明和创造，以及针路和海图的运用",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        }
+      ]
+    },
+    "calculatingtools": {
+      "columns": {
+        "name": "zh"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": [
+        {
+          "id": "calc-rods",
+          "name": {
+            "zh": "算筹",
+            "ru": [
+              "Счётные палочки"
+            ],
+            "gloss": "Счётные палочки — числа выкладывали из отдельных палочек."
+          },
+          "sources": [
+            {
+              "title": "Музей науки Университета Цинхуа — счётные приборы",
+              "url": "https://tsm.tsinghua.edu.cn/?p=5317",
+              "quote": "各类算筹；计算尺；飞鱼和通用手摇计算机",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Шанхайское управление по гражданским делам — счётные палочки и счёты",
+              "url": "https://mzj.sh.gov.cn/lnb-wsws/20221108/35de431cb5e244d4a27c3e6016ef013d.html",
+              "quote": "个位数用纵式、十位数用横式、百位数用纵式",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "calc-abacus",
+          "name": {
+            "zh": "算盘",
+            "ru": [
+              "Суаньпан, китайские счёты"
+            ],
+            "gloss": "Суаньпан, китайские счёты — для счёта косточки сдвигают к перекладине.",
+            "ref": "sets/inventions/inv-suanpan"
+          },
+          "sources": [
+            {
+              "title": "Китайские стандарты школьного курса математики — устройство счётов",
+              "url": "https://www.ictr.edu.cn/Uploads/File/2022/04/28/5.%E4%B9%89%E5%8A%A1%E6%95%99%E8%82%B2%E6%95%B0%E5%AD%A6%E8%AF%BE%E7%A8%8B%E6%A0%87%E5%87%86%EF%BC%882022%E5%B9%B4%E7%89%88%EF%BC%89.20220428160938.pdf",
+              "quote": "每个上珠代表5，每个下珠代表1",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Шанхайское финансовое управление — программа по чжусуаню",
+              "url": "https://czj.sh.gov.cn/resource/53/533145de4e694bfdb6e2287462ccfaac/c075e3819c1985ab3014abbeeda6aabc.pdf",
+              "quote": "一颗下珠表示“1”",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "calc-slide-rule",
+          "name": {
+            "zh": "计算尺",
+            "ru": [
+              "Логарифмическая линейка"
+            ],
+            "gloss": "Логарифмическая линейка — считают, совмещая деления шкал."
+          },
+          "sources": [
+            {
+              "title": "Музей науки Университета Цинхуа — логарифмическая линейка",
+              "url": "https://tsm.tsinghua.edu.cn/?p=1639",
+              "quote": "计算尺是常用的计算工具",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Музей науки Университета Цинхуа — счётные приборы",
+              "url": "https://tsm.tsinghua.edu.cn/?p=5317",
+              "quote": "各类算筹；计算尺；飞鱼和通用手摇计算机",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "calc-crank",
+          "name": {
+            "zh": "手摇计算器",
+            "ru": [
+              "Ручной механический калькулятор"
+            ],
+            "gloss": "Ручной механический калькулятор — механизм приводят в движение рукояткой."
+          },
+          "sources": [
+            {
+              "title": "Музей науки Университета Цинхуа — ручной калькулятор «Фэйюй»",
+              "url": "https://tsm.tsinghua.edu.cn/?p=2842",
+              "quote": "手摇计算机的原理是通过齿轮运动来完成计算",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Музей науки Университета Цинхуа — счётные приборы",
+              "url": "https://tsm.tsinghua.edu.cn/?p=5317",
+              "quote": "各类算筹；计算尺；飞鱼和通用手摇计算机",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        }
+      ]
+    },
+    "zenghouyiinstruments": {
+      "columns": {
+        "name": "zh"
+      },
+      "required": [
+        "name"
+      ],
+      "rows": [
+        {
+          "id": "instr-stone-chimes",
+          "name": {
+            "zh": "编磬",
+            "ru": [
+              "Бяньцин"
+            ],
+            "gloss": "Бяньцин — набор подвешенных звучащих каменных пластин."
+          },
+          "sources": [
+            {
+              "title": "Музей провинции Хубэй — инструменты из гробницы Цзэн-хоу И",
+              "url": "https://www.hbww.org.cn/hhfz70n/p/9135.html",
+              "quote": "编钟、编磬各1 套、建鼓 1 件、扁鼓 1 件、有柄鼓 1件，瑟 7 件",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Воспоминания об археологических раскопках гробницы Цзэн-хоу И",
+              "url": "https://www.cppcc.gov.cn/zxww/2018/09/21/ARTI1537491271568103.shtml",
+              "quote": "在编钟、编磬和建鼓及冰鉴缶所构成的空间之内，还出土漆瑟7件",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "instr-stand-drum",
+          "name": {
+            "zh": "建鼓",
+            "ru": [
+              "Цзяньгу"
+            ],
+            "gloss": "Цзяньгу — барабан на вертикальной опоре."
+          },
+          "sources": [
+            {
+              "title": "Музей провинции Хубэй — инструменты из гробницы Цзэн-хоу И",
+              "url": "https://www.hbww.org.cn/hhfz70n/p/9135.html",
+              "quote": "编钟、编磬各1 套、建鼓 1 件、扁鼓 1 件、有柄鼓 1件，瑟 7 件",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Воспоминания об археологических раскопках гробницы Цзэн-хоу И",
+              "url": "https://www.cppcc.gov.cn/zxww/2018/09/21/ARTI1537491271568103.shtml",
+              "quote": "在编钟、编磬和建鼓及冰鉴缶所构成的空间之内，还出土漆瑟7件",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "instr-se",
+          "name": {
+            "zh": "瑟",
+            "ru": [
+              "Сэ"
+            ],
+            "gloss": "Сэ — многострунный щипковый инструмент."
+          },
+          "sources": [
+            {
+              "title": "Музей провинции Хубэй — инструменты из гробницы Цзэн-хоу И",
+              "url": "https://www.hbww.org.cn/hhfz70n/p/9135.html",
+              "quote": "编钟、编磬各1 套、建鼓 1 件、扁鼓 1 件、有柄鼓 1件，瑟 7 件",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Воспоминания об археологических раскопках гробницы Цзэн-хоу И",
+              "url": "https://www.cppcc.gov.cn/zxww/2018/09/21/ARTI1537491271568103.shtml",
+              "quote": "在编钟、编磬和建鼓及冰鉴缶所构成的空间之内，还出土漆瑟7件",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        },
+        {
+          "id": "instr-bells",
+          "name": {
+            "zh": "编钟",
+            "ru": [
+              "Бяньчжун, набор колоколов"
+            ],
+            "gloss": "Бяньчжун, набор колоколов — в комплекте из гробницы Цзэн-хоу И 65 колоколов."
+          },
+          "sources": [
+            {
+              "title": "Управление культуры Хубэя — два тона колокола",
+              "url": "https://wlt.hubei.gov.cn/bmdt/ztzl/zshb/201912/t20191226_1799618.shtml",
+              "quote": "敲击它的鼓部正面和侧面可以各发出一个音",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Архив провинции Хубэй — комплект колоколов",
+              "url": "https://www.hbda.gov.cn/info/540",
+              "quote": "这套编钟共六十五件",
+              "authority": "official",
+              "checkedAt": "2026-11-14"
+            },
+            {
+              "title": "Музей провинции Хубэй — инструменты из гробницы Цзэн-хоу И",
+              "url": "https://www.hbww.org.cn/hhfz70n/p/9135.html",
+              "quote": "编钟、编磬各1 套、建鼓 1 件、扁鼓 1 件、有柄鼓 1件，瑟 7 件",
+              "authority": "academic",
+              "checkedAt": "2026-11-14"
+            }
+          ]
+        }
+      ]
     }
   }
 }
