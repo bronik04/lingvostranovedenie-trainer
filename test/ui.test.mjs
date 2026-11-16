@@ -6,7 +6,10 @@
 // Нужны Google Chrome и `npm ci` (playwright-core без своего браузера). Локально
 // без них тест пропускается, в CI (переменная CI) — падает.
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { mkdtempSync, readFileSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { createServer } from 'node:http';
 import { after, before, test } from 'node:test';
 import { eligible } from '../src/quiz.mjs';
@@ -30,11 +33,23 @@ before(async () => {
     skipReason = `нет Chrome или playwright-core (npm ci): ${error.message.split('\n')[0]}`;
     return;
   }
-  const html = readFileSync(HTML);
+  execFileSync('python3', ['scripts/build_html.py'], { cwd: new URL('..', import.meta.url) });
+  const site = readFileSync(HTML);
+  const dir = mkdtempSync(join(tmpdir(), 'lingvo-ui-'));
+  let preview;
+  try {
+    const out = join(dir, 'index.html');
+    execFileSync('python3', ['-c',
+      'import sys; from pathlib import Path; from scripts.build_html import main; main(target=Path(sys.argv[1]), show_chengyu=True)',
+      out], { cwd: new URL('..', import.meta.url) });
+    preview = readFileSync(out);
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
   server = createServer((request, response) => {
     if (request.url === '/' || request.url.startsWith('/?')) {
       response.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
-      response.end(html);
+      response.end(request.url === '/?chengyu=off' ? site : preview);
     } else {
       response.writeHead(404).end();
     }
@@ -110,6 +125,148 @@ async function startRound(page, size) {
 }
 
 const hashOf = (page) => new URL(page.url()).hash;
+const lessonCard = (page, title) => page.locator('#lessonBlocks article')
+  .filter({ has: page.getByRole('heading', { name: title, exact: true }) });
+
+test('тематический блок восстанавливает вопрос, разбор и конспект с отдельным прогрессом', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 390, height: 844 });
+  if (!page) return;
+  await page.locator('#navLessons').click({ timeout: 3000 });
+  await lessonCard(page, 'Путешествие на Запад').getByRole('link', { name: 'Начать блок' }).click();
+  await page.locator('#lessonQuestion').waitFor();
+  assert.match(await page.locator('#lessonStep').textContent(), /1 из 10/);
+  assert.ok((await page.locator('#lessonMeter').boundingBox()).width > 100, 'видна шкала прохождения');
+  assert.equal(await page.locator('#lessonFeedback').isVisible(), false);
+
+  const options = page.locator('#lessonOptions button');
+  const firstOptions = await options.allTextContents();
+  assert.equal(firstOptions.length, 4);
+  await page.reload();
+  assert.deepEqual(await options.allTextContents(), firstOptions);
+  await options.filter({ hasNotText: '吴承恩' }).first().click();
+  assert.match(await page.locator('#lessonFeedback').innerText(), /吴承恩/);
+  await page.reload();
+  assert.match(await page.locator('#lessonFeedback').innerText(), /吴承恩/);
+  assert.equal(await page.locator('#lessonOptions button:visible:disabled').count(), 4);
+  await page.locator('#lessonLeave').click();
+  await page.getByRole('link', { name: 'Продолжить' }).click();
+  assert.match(await page.locator('#lessonFeedback').innerText(), /吴承恩/);
+
+  for (let step = 2; step <= 10; step++) {
+    await page.locator('#lessonNext').click();
+    assert.match(await page.locator('#lessonStep').textContent(), new RegExp(`${step} из 10`));
+    assert.equal(await page.locator('#lessonFeedback').isVisible(), false);
+    if (step === 6) {
+      assert.equal(await page.locator('#lessonQuestionZh').isVisible(), false);
+      await page.locator('#viewToggle').click();
+      await page.locator('#questionZhMenu').click();
+      assert.match(await page.locator('#lessonQuestionZh').innerText(), /火焰山/);
+      await page.locator('#viewToggle').click();
+    }
+    await options.first().click();
+    assert.ok(await page.locator('#lessonFeedback').isVisible());
+    assert.ok((await page.locator('#lessonExplanation').innerText()).trim());
+  }
+  await page.getByRole('button', { name: 'К конспекту' }).click();
+  await page.getByRole('heading', { name: 'Короткий конспект' }).waitFor();
+  assert.match(await page.locator('#lessonRecap').innerText(), /大雁塔/);
+  assert.match(await page.locator('#lessonRecap').innerText(), /沙悟净.*白龙马/s);
+  await page.reload();
+  assert.ok(await page.getByRole('heading', { name: 'Короткий конспект' }).isVisible());
+  await page.locator('#navLessons').click();
+  assert.ok(await page.getByRole('link', { name: 'Открыть конспект' }).isVisible());
+  await page.getByRole('link', { name: 'Открыть конспект' }).click();
+  assert.ok(await page.getByRole('heading', { name: 'Короткий конспект' }).isVisible());
+  assert.equal(await page.evaluate(() => localStorage.getItem('lingvo-trainer:v1')), null);
+  assert.deepEqual(page.errors, []);
+});
+
+test('темы: при наведении на ссылку блока сохраняется цвет текста', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await page.locator('#navLessons').click();
+  const link = lessonCard(page, 'Путешествие на Запад').getByRole('link', { name: 'Начать блок' });
+  await page.locator('#lessonCatalogTitle').hover();
+  const restingColor = await link.evaluate((element) => getComputedStyle(element).color);
+  await link.hover();
+  await link.evaluate(async (element) => {
+    await Promise.all(element.getAnimations().map((animation) => animation.finished));
+  });
+  assert.equal(await link.evaluate((element) => getComputedStyle(element).color), restingColor);
+});
+
+test('темы: цифры, A–D, Enter и Esc работают на уроке', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await page.locator('#navLessons').click();
+  await lessonCard(page, 'Путешествие на Запад').getByRole('link', { name: 'Начать блок' }).click();
+  await page.keyboard.press('p');
+  assert.equal(await page.locator('html').getAttribute('data-pinyin'), 'on');
+  await page.keyboard.press('Enter');
+  assert.equal(await page.locator('#lessonFeedback').isVisible(), false);
+  await page.keyboard.press('1');
+  assert.ok(await page.locator('#lessonFeedback').isVisible());
+  await page.keyboard.press('Enter');
+  assert.match(await page.locator('#lessonStep').innerText(), /2 из 10/);
+  assert.equal(await page.locator('#lessonFeedback').isVisible(), false);
+  await page.keyboard.press('b');
+  assert.ok(await page.locator('#lessonFeedback').isVisible());
+  await page.locator('#viewToggle').click();
+  await page.keyboard.press('Escape');
+  assert.equal(await page.locator('#viewMenu').isVisible(), false);
+  assert.ok(await page.locator('#lessonQuestion').isVisible());
+  await page.keyboard.press('Escape');
+  assert.ok(await page.getByRole('heading', { name: 'Тематические блоки' }).isVisible());
+  await page.getByRole('link', { name: 'Продолжить' }).click();
+  assert.match(await page.locator('#lessonStep').innerText(), /2 из 10/);
+  assert.ok(await page.locator('#lessonFeedback').isVisible());
+});
+
+test('темы: блок «Чанъэ» проходит до конспекта и сохраняет своё завершение', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 390, height: 844 });
+  if (!page) return;
+  await page.locator('#navLessons').click();
+  const change = lessonCard(page, 'Чанъэ');
+  assert.equal(await change.count(), 1);
+  await change.getByRole('link', { name: 'Начать блок' }).click();
+  for (let step = 1; step <= 11; step++) {
+    assert.equal(await page.locator('#lessonStep').textContent(), `Вопрос ${step} из 11`);
+    await page.locator('#lessonOptions button').first().click();
+    assert.ok((await page.locator('#lessonExplanation').innerText()).trim());
+    await page.locator('#lessonNext').click();
+  }
+  assert.ok(await page.locator('#lessonRecap').isVisible());
+  assert.match(await page.locator('#lessonRecap').innerText(), /Цюэцяо/);
+  await page.reload();
+  assert.ok(await page.locator('#lessonRecap').isVisible());
+  await page.getByRole('button', { name: 'К темам' }).click();
+  assert.ok(await change.getByRole('link', { name: 'Открыть конспект' }).isVisible());
+  assert.ok(await lessonCard(page, 'Путешествие на Запад').getByRole('link', { name: 'Начать блок' }).isVisible());
+  assert.equal(await page.evaluate(() => localStorage.getItem('lingvo-trainer:v1')), null);
+  assert.deepEqual(page.errors, []);
+});
+
+test('темы: конспект «Чанъэ» открывается после замены последнего вопроса', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await page.evaluate(() => {
+    localStorage.setItem('lingvo-trainer:thematic:v1:change', JSON.stringify({
+      questionId: 'change-south-pole-ice',
+      optionIds: ['ice-search', 'build-habitat', 'return-rocks', 'crew'],
+      selected: 'ice-search',
+      completed: true,
+    }));
+  });
+  await page.locator('#navLessons').click();
+  const recap = lessonCard(page, 'Чанъэ').getByRole('link', { name: 'Открыть конспект' });
+  assert.ok(await recap.isVisible());
+  await recap.click();
+  assert.match(await page.locator('#lessonRecap').innerText(), /Циси/);
+  await page.getByRole('button', { name: 'Пройти ещё раз' }).click();
+  assert.equal(await page.locator('#lessonStep').textContent(), 'Вопрос 1 из 11');
+  assert.deepEqual(page.errors, []);
+});
+
 
 test('почитать подробнее: ссылки скрыты до ответа и видны после любого ответа во всех форматах', LIMIT, async (t) => {
   const page = await openPage(t);
@@ -1453,6 +1610,16 @@ test('телефон: «Верно или нет» с длинным вариа�
   assert.equal(await overflow(), 0, 'карточка с предложенным ответом');
   await page.locator('#tfTrue').click();
   assert.equal(await overflow(), 0, 'разбор ответа');
+  assert.deepEqual(page.errors, []);
+});
+
+test('снятый раздел идиом не открывается по старой ссылке', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await page.goto(baseUrl + '?chengyu=off#chengyu/reference');
+  assert.equal(await page.getByRole('link', { name: 'Идиомы', exact: true }).count(), 0);
+  assert.equal(await page.locator('#setupView').isVisible(), true);
+  assert.equal(new URL(page.url()).hash, '');
   assert.deepEqual(page.errors, []);
 });
 

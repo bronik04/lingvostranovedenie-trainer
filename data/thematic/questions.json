@@ -1,0 +1,228 @@
+[
+  {
+    "id": "journey-sun-wukong",
+    "adaptedFrom": "2016-17-reg-7",
+    "questionRu": "Как зовут Царя обезьян из романа «Путешествие на Запад»?",
+    "options": [
+      {"id": "sun", "zh": "孙悟空", "pinyin": "sūn wù kōng"},
+      {"id": "zhu", "zh": "猪八戒", "pinyin": "zhū bā jiè"},
+      {"id": "sha", "zh": "沙悟净", "pinyin": "shā wù jìng"},
+      {"id": "ox", "zh": "牛魔王", "pinyin": "niú mó wáng"}
+    ],
+    "answer": {"optionId": "sun"}
+  },
+  {
+    "id": "journey-zhu-bajie",
+    "adaptedFrom": "2022-23-shk-mosobl-4",
+    "questionRu": "По наставлению Гуаньинь Чжу Бацзе ждёт паломника, чтобы стать его учеником. В деревне Гао он встречает Танского монаха. Что Чжу Бацзе делает дальше?",
+    "options": [
+      {"id": "join", "zh": "随队出发", "pinyin": "suí duì chū fā"},
+      {"id": "alone", "zh": "独自出发", "pinyin": "dú zì chū fā"},
+      {"id": "stay", "zh": "留在村里", "pinyin": "liú zài cūn lǐ"},
+      {"id": "return", "zh": "回到天宫", "pinyin": "huí dào tiān gōng"}
+    ],
+    "answer": {"optionId": "join"},
+    "evidence": [
+      {"title": "«Путешествие на Запад», глава 19 (оригинал)", "url": "https://ctext.org/wiki.pl?chapter=671786&if=en&remap=gb"}
+    ]
+  },
+  {
+    "id": "journey-plantain-fan",
+    "questionRu": "С помощью какого волшебного предмета Сунь Укун погасил пламя в Огненных горах, чтобы путники могли продолжить путь?",
+    "options": [
+      {"id": "fan", "zh": "芭蕉扇", "pinyin": "bā jiāo shàn"},
+      {"id": "staff", "zh": "金箍棒", "pinyin": "jīn gū bàng"},
+      {"id": "rake", "zh": "九齿钉耙", "pinyin": "jiǔ chǐ dīng pá"},
+      {"id": "pill", "zh": "定风丹", "pinyin": "dìng fēng dān"}
+    ],
+    "answer": {"optionId": "fan"},
+    "evidence": [
+      {"title": "«Путешествие на Запад», глава 61 (оригинал)", "url": "https://zh.wikisource.org/zh-hans/西遊記/第061回"},
+      {"title": "Издательство Вашингтонского университета об эпизоде Огненных гор", "url": "https://uw.manifoldapp.org/read/further-adventures-on-the-journey-to-the-west/section/aa566480-6a57-4d3c-aeca-054bea8c7316"}
+    ]
+  },
+  {
+    "id": "journey-tang-records",
+    "questionRu": "После паломничества Сюаньцзан рассказал монаху Бяньцзи о городах, обычаях и святынях разных стран. Что за книгу Бяньцзи составил из этих рассказов?",
+    "options": [
+      {"id": "travel", "zh": "旅行见闻", "pinyin": "lǚ xíng jiàn wén"},
+      {"id": "bio", "zh": "人物传记", "pinyin": "rén wù zhuàn jì"},
+      {"id": "poetry", "zh": "诗歌选集", "pinyin": "shī gē xuǎn jí"},
+      {"id": "sutras", "zh": "佛经注释", "pinyin": "fó jīng zhù shì"}
+    ],
+    "answer": {"optionId": "travel"},
+    "evidence": [
+      {"title": "«Записки о Западном крае Великой Тан» (оригинал)", "url": "https://zh.wikisource.org/zh-hans/大唐西域記"},
+      {"title": "Национальная парламентская библиотека Японии, издательские сведения", "url": "https://ndlsearch.ndl.go.jp/en/books/R100000002-I000003277712"}
+    ]
+  },
+  {
+    "id": "change-hou-yi-suns",
+    "adaptedFrom": "myths-q13",
+    "questionRu": "Как зовут стрелка, который по китайскому преданию сбил девять из десяти солнц, чтобы спасти посевы от зноя?",
+    "options": [
+      {"id": "houyi", "zh": "后羿", "pinyin": "hòu yì"},
+      {"id": "kuafu", "zh": "夸父", "pinyin": "kuā fù"},
+      {"id": "dayu", "zh": "大禹", "pinyin": "dà yǔ"},
+      {"id": "shennong", "zh": "神农", "pinyin": "shén nóng"}
+    ],
+    "answer": {"optionId": "houyi"},
+    "evidence": [
+      {"title": "Бюро образования Гонконга, предание о Хоу И и Чанъэ", "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/eng-edu/Chi_Fest/Mid-AutumnFestival/PartA.html"}
+    ]
+  },
+  {
+    "id": "change-elixir",
+    "adaptedFrom": "2024-25-pri-37",
+    "questionRu": "По преданию Чанъэ выпила эликсир бессмертия. Где она после этого поселилась?",
+    "options": [
+      {"id": "palace", "zh": "月宫", "pinyin": "yuè gōng"},
+      {"id": "eastern-sea", "zh": "东海", "pinyin": "dōng hǎi"},
+      {"id": "kunlun", "zh": "昆仑", "pinyin": "kūn lún"},
+      {"id": "penglai", "zh": "蓬莱", "pinyin": "péng lái"}
+    ],
+    "answer": {"optionId": "palace"},
+    "evidence": [
+      {"title": "Бюро образования Гонконга, предание о Хоу И и Чанъэ", "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/eng-edu/Chi_Fest/Mid-AutumnFestival/PartA.html"}
+    ]
+  },
+  {
+    "id": "change-jade-rabbit",
+    "adaptedFrom": "space-q08",
+    "questionRu": "Чем занят Нефритовый заяц в лунных преданиях, связанных с Праздником середины осени?",
+    "options": [
+      {"id": "medicine", "zh": "捣药", "pinyin": "dǎo yào"},
+      {"id": "wine", "zh": "酿酒", "pinyin": "niàng jiǔ"},
+      {"id": "weaving", "zh": "织布", "pinyin": "zhī bù"},
+      {"id": "woodcutting", "zh": "伐木", "pinyin": "fá mù"}
+    ],
+    "answer": {"optionId": "medicine"},
+    "evidence": [
+      {"title": "Вашингтонский университет в Сент-Луисе, предание о Нефритовом зайце", "url": "https://libguides.wustl.edu/learningchinese/cultural/holidays"},
+      {"title": "Цифровой музей нематериального наследия Китая, Праздник середины осени", "url": "https://www.ihchina.cn/art/detail/id/14931.html"}
+    ]
+  },
+  {
+    "id": "change-festival-date",
+    "adaptedFrom": "holidays-q36",
+    "questionRu": "На какую дату традиционного китайского календаря приходится Праздник середины осени (中秋节)?",
+    "options": [
+      {"id": "aug15", "zh": "八月十五", "pinyin": "bā yuè shí wǔ"},
+      {"id": "jul15", "zh": "七月十五", "pinyin": "qī yuè shí wǔ"},
+      {"id": "sep9", "zh": "九月初九", "pinyin": "jiǔ yuè chū jiǔ"},
+      {"id": "jan15", "zh": "正月十五", "pinyin": "zhēng yuè shí wǔ"}
+    ],
+    "answer": {"optionId": "aug15"},
+    "evidence": [
+      {"title": "Материал о дате Праздника середины осени", "url": "https://www.ccdi.gov.cn/toutiaon/201609/t20160914_91762.html"},
+      {"title": "Цифровой музей нематериального наследия Китая, Праздник середины осени", "url": "https://www.ihchina.cn/art/detail/id/14931.html"}
+    ]
+  },
+  {
+    "id": "change-mooncake-meaning",
+    "adaptedFrom": "2019-20-mun-q81216d",
+    "questionRu": "Какой смысл на Праздник середины осени придают круглой форме традиционного пряника юэбин (月饼)?",
+    "options": [
+      {"id": "family-reunion", "zh": "亲人重聚", "pinyin": "qīn rén chóng jù"},
+      {"id": "long-life", "zh": "延年益寿", "pinyin": "yán nián yì shòu"},
+      {"id": "career", "zh": "事业顺利", "pinyin": "shì yè shùn lì"},
+      {"id": "protection", "zh": "驱邪避灾", "pinyin": "qū xié bì zāi"}
+    ],
+    "answer": {"optionId": "family-reunion"},
+    "evidence": [
+      {"title": "Бюро образования Гонконга, праздничная еда и воссоединение семьи", "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/eng-edu/Chi_Fest/Mid-AutumnFestival/PartA.html"},
+      {"title": "Символика круглой Луны и юэбина", "url": "https://www.ccdi.gov.cn/toutiaon/201609/t20160914_91762.html"}
+    ]
+  },
+  {
+    "id": "change-su-shi-poem",
+    "questionRu": "В Праздник середины осени Су Ши написал: «但愿人长久，千里共婵娟». Какой образ обозначает 婵娟 в этой строке?",
+    "options": [
+      {"id": "moon", "zh": "月亮", "pinyin": "yuè liang"},
+      {"id": "wine", "zh": "美酒", "pinyin": "měi jiǔ"},
+      {"id": "breeze", "zh": "清风", "pinyin": "qīng fēng"},
+      {"id": "lights", "zh": "灯火", "pinyin": "dēng huǒ"}
+    ],
+    "answer": {"optionId": "moon"},
+    "evidence": [
+      {"title": "Стихотворение Су Ши и предисловие, Stanford Global Medieval Sourcebook", "url": "https://sourcebook.stanford.edu/text/su_shi_how_long_full_moon/"}
+    ]
+  },
+  {
+    "id": "change-yutu-rover",
+    "questionRu": "Какая китайская станция доставила на поверхность Луны первый китайский луноход «Юйту» (玉兔)?",
+    "options": [
+      {"id": "three", "zh": "嫦娥三号", "pinyin": "cháng é sān hào"},
+      {"id": "two", "zh": "嫦娥二号", "pinyin": "cháng é èr hào"},
+      {"id": "four", "zh": "嫦娥四号", "pinyin": "cháng é sì hào"},
+      {"id": "five", "zh": "嫦娥五号", "pinyin": "cháng é wǔ hào"}
+    ],
+    "answer": {"optionId": "three"},
+    "evidence": [
+      {"title": "NASA, «Чанъэ-3» и луноход «Юйту»", "url": "https://science.nasa.gov/moon/missions/"},
+      {"title": "CNSA, выбор названия «Юйту» для лунохода «Чанъэ-3»", "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c6770752/content.html"}
+    ]
+  },
+  {
+    "id": "change-farside-landing",
+    "adaptedFrom": "addition-b1-17",
+    "questionRu": "Какой китайский аппарат первым совершил мягкую посадку на обратной стороне Луны?",
+    "options": [
+      {"id": "four", "zh": "嫦娥四号", "pinyin": "cháng é sì hào"},
+      {"id": "two", "zh": "嫦娥二号", "pinyin": "cháng é èr hào"},
+      {"id": "three", "zh": "嫦娥三号", "pinyin": "cháng é sān hào"},
+      {"id": "five", "zh": "嫦娥五号", "pinyin": "cháng é wǔ hào"}
+    ],
+    "answer": {"optionId": "four"},
+    "evidence": [
+      {"title": "NASA, первая посадка на обратной стороне Луны", "url": "https://science.nasa.gov/moon/missions/"},
+      {"title": "CNSA, первая в мире мягкая посадка на обратной стороне Луны", "url": "https://www.cnsa.gov.cn/n6758823/n6758844/n6760209/n6760215/c6809380/content.html"}
+    ]
+  },
+  {
+    "id": "change-queqiao-relay",
+    "adaptedFrom": "space-q09",
+    "questionRu": "Название лунного ретранслятора «Цюэцяо» (鹊桥) означает «сорочий мост». В каком китайском предании появляется этот мост?",
+    "options": [
+      {"id": "cowherd-weaver", "zh": "牛郎织女", "pinyin": "niú láng zhī nǚ"},
+      {"id": "change-flying", "zh": "嫦娥奔月", "pinyin": "cháng é bēn yuè"},
+      {"id": "archer", "zh": "后羿射日", "pinyin": "hòu yì shè rì"},
+      {"id": "wugang", "zh": "吴刚伐桂", "pinyin": "wú gāng fá guì"}
+    ],
+    "answer": {"optionId": "cowherd-weaver"},
+    "evidence": [
+      {"title": "CNSA, запуск спутника-ретранслятора «Цюэцяо»", "url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c6801574/content.html"},
+      {"title": "CNSA, связь «Цюэцяо» со станцией и луноходом «Чанъэ-4»", "url": "https://www.cnsa.gov.cn/n6758823/n6758844/n6760026/n6760032/c6805103/content.html"}
+    ]
+  },
+  {
+    "id": "change-qixi",
+    "questionRu": "С каким китайским праздником связано предание о встрече Пастуха и Ткачихи на сорочьем мосту?",
+    "options": [
+      {"id": "qixi", "zh": "七夕节", "pinyin": "qī xī jié"},
+      {"id": "yuanxiao", "zh": "元宵节", "pinyin": "yuán xiāo jié"},
+      {"id": "chongyang", "zh": "重阳节", "pinyin": "chóng yáng jié"},
+      {"id": "duanwu", "zh": "端午节", "pinyin": "duān wǔ jié"}
+    ],
+    "answer": {"optionId": "qixi"},
+    "evidence": [
+      {"title": "Цифровой музей нематериального наследия Китая, праздник Циси", "url": "https://www.ihchina.cn/Article/Index/detail?id=14926"},
+      {"title": "CNSA, легенда о сорочьем мосте и название ретранслятора", "url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c6801574/content.html"}
+    ]
+  },
+  {
+    "id": "change-sample-comparison",
+    "questionRu": "В 2024 году на Землю впервые доставили лунный грунт с обратной стороны Луны. Какой аппарат его привёз?",
+    "options": [
+      {"id": "six", "zh": "嫦娥六号", "pinyin": "cháng é liù hào"},
+      {"id": "four", "zh": "嫦娥四号", "pinyin": "cháng é sì hào"},
+      {"id": "five", "zh": "嫦娥五号", "pinyin": "cháng é wǔ hào"},
+      {"id": "seven", "zh": "嫦娥七号", "pinyin": "cháng é qī hào"}
+    ],
+    "answer": {"optionId": "six"},
+    "evidence": [
+      {"title": "Национальный центр космических данных Китая, результаты «Чанъэ-6»", "url": "https://www.nssdc.ac.cn/nssdc_en/html/task/change6.html"},
+      {"title": "Академия наук Китая, сравнительный анализ образцов «Чанъэ-5» и «Чанъэ-6»", "url": "https://english.cas.cn/newsroom/research_news/earth/202511/t20251105_1096034.shtml"}
+    ]
+  }
+]

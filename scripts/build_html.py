@@ -21,6 +21,7 @@ import chengyu
 import pinyin
 from site_bank import embedded_by, load_settings, site_bank
 from reading import reading_links, validate_catalog
+from thematic import load_thematic
 
 TARGET = ROOT / 'dist/lingvostranovedenie-trainer.html'
 
@@ -137,7 +138,7 @@ def dossier_titles(bank: list[dict]) -> dict[str, str]:
     return titles
 
 
-def main() -> None:
+def main(*, target: Path = TARGET, show_chengyu: bool | None = None) -> None:
     full_bank = json.loads((ROOT / 'data/bank.json').read_text('utf-8'))
     errors = validate(full_bank)
     reading_catalog = json.loads((ROOT / 'data/reading.json').read_text('utf-8'))
@@ -150,7 +151,14 @@ def main() -> None:
             print(' -', message)
         raise SystemExit(1)
     # проверяется весь банк, а на сайт идёт то, что разрешает data/site.json (скрытые региональные варианты)
-    bank = site_bank(full_bank, load_settings(), embedded_by())
+    settings = load_settings()
+    bank = site_bank(full_bank, settings, embedded_by())
+    if show_chengyu is None:
+        show_chengyu = settings.get('showChengyu', True)
+    try:
+        lesson_blocks, lesson_questions = load_thematic(bank, full_bank)
+    except (ValueError, KeyError) as error:
+        raise SystemExit(f'тематические блоки: {error}') from error
 
     html = (ROOT / 'src/template.html').read_text('utf-8')
     html = html.replace('/*BANK_DESCRIPTION*/', escape(bank_description(bank)))
@@ -162,29 +170,32 @@ def main() -> None:
     html = html.replace('/*PINYIN*/', serialize_bank(pinyin_table(bank)))
     html = html.replace('/*DOSSIERS*/', serialize_bank(dossier_titles(bank)))
     html = html.replace('/*READING_LINKS*/', serialize_bank(reading_links(bank, reading_catalog)))
+    html = html.replace('/*LESSON_BLOCKS*/', serialize_bank(lesson_blocks))
+    html = html.replace('/*LESSON_QUESTIONS*/', serialize_bank(lesson_questions))
     html = html.replace('/*QUIZ_UI*/', minify_js((ROOT / 'src/quiz.ui.js').read_text('utf-8')))
     # раздел «Чэнъюй»: свой банк (олимпиадные + принятые составленные), движок и интерфейс
-    chengyu_bank = chengyu.published(olympiad_chengyu, draft_chengyu)
+    chengyu_bank = chengyu.published(olympiad_chengyu, draft_chengyu) if show_chengyu else []
+    html = html.replace('/*CHENGYU_HIDDEN*/', '' if chengyu_bank else ' hidden')
     html = html.replace('/*CHENGYU_BANK*/', serialize_bank(chengyu_bank))
     cy_engine = minify_js((ROOT / 'src/chengyu.mjs').read_text('utf-8').replace('export ', ''))
     html = html.replace('/*CHENGYU_ENGINE*/', cy_engine)
-    # замечания запускаются после обоих интерфейсов: читают текущий вопрос из state/cy
+    # замечания запускаются после интерфейсов тренировки и чэнъюй: читают текущий вопрос из state/cy
     ui = '\n;\n'.join((ROOT / path).read_text('utf-8')
-                       for path in ('src/chengyu.ui.js', 'src/review.ui.js'))
+                       for path in ('src/chengyu.ui.js', 'src/thematic.ui.js', 'src/review.ui.js'))
     html = html.replace('/*CHENGYU_UI*/', minify_js(ui))
-    TARGET.parent.mkdir(parents=True, exist_ok=True)
+    target.parent.mkdir(parents=True, exist_ok=True)
     # через временный файл и замену: тесты читают dist/ параллельно со сборкой
     # в build.test.mjs и не должны увидеть файл, записанный наполовину
-    with tempfile.NamedTemporaryFile('w', encoding='utf-8', dir=TARGET.parent,
-                                     prefix=TARGET.name, suffix='.partial', delete=False) as partial:
+    with tempfile.NamedTemporaryFile('w', encoding='utf-8', dir=target.parent,
+                                     prefix=target.name, suffix='.partial', delete=False) as partial:
         partial.write(html)
     try:
-        Path(partial.name).replace(TARGET)
+        Path(partial.name).replace(target)
     finally:
         Path(partial.name).unlink(missing_ok=True)
     verified = sum(1 for record in bank if record['answer']['state'] == 'verified')
     hidden = f', скрыто по data/site.json: {len(full_bank) - len(bank)}' if len(bank) != len(full_bank) else ''
-    print(f'собрано: {TARGET} ({TARGET.stat().st_size // 1024} КБ), проверено {verified} из {len(bank)}{hidden}')
+    print(f'собрано: {target} ({target.stat().st_size // 1024} КБ), проверено {verified} из {len(bank)}{hidden}')
 
 
 if __name__ == '__main__':

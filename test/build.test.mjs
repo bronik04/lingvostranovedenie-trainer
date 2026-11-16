@@ -31,6 +31,12 @@ test('сборка выпускает один файл без внешних с
   assert.ok(description.startsWith(`${bank.length} `), `описание не совпадает с банком: ${description}`);
 });
 
+test('сборка для учеников исключает банк снятого раздела идиом', () => {
+  const html = build();
+  const bank = JSON.parse(html.match(/const CHENGYU_BANK = (\[.*?\]);\n/s)[1]);
+  assert.equal(bank.length, 0);
+});
+
 test('в собранном файле вопросы по-русски, а варианты по-китайски', () => {
   const html = build();
   const bank = JSON.parse(html.match(/const QUESTION_BANK = (\[.*?\]);\n/s)[1]);
@@ -40,6 +46,55 @@ test('в собранном файле вопросы по-русски, а ва
     for (const option of record.options) {
       assert.doesNotMatch(option.zh, /[А-Яа-яЁё]/, `${record.id}: ${option.zh}`);
     }
+  }
+});
+
+test('тематический блок ссылается на основной банк и хранит новые карточки отдельно', () => {
+  const html = build();
+  const bank = JSON.parse(html.match(/const QUESTION_BANK = (\[.*?\]);\n/s)[1]);
+  const blocks = JSON.parse(html.match(/const LESSON_BLOCKS = (\[.*?\]);\n/s)?.[1] ?? '[]');
+  const questions = JSON.parse(html.match(/const LESSON_QUESTIONS = (\[.*?\]);\n/s)?.[1] ?? '[]');
+  const block = blocks.find(({ id }) => id === 'journey-to-the-west');
+  assert.equal(block.title, 'Путешествие на Запад');
+  assert.equal(block.steps.length, 10);
+  assert.equal(new Set(block.steps.map(({ questionId }) => questionId)).size, 10);
+  assert.ok(block.steps.every(({ explanation }) => explanation.trim()));
+  assert.ok(block.summary.length);
+  const onlineIds = new Set(bank.map(({ id }) => id));
+  assert.equal(block.steps.filter(({ questionId }) => onlineIds.has(questionId)).length, 6);
+  assert.equal(block.steps[0].questionId, 'literature-q40');
+  const blockQuestions = questions.filter(({ id }) => block.steps.some(({ questionId }) => questionId === id));
+  assert.deepEqual(blockQuestions.filter((record) => record.adaptedFrom).map(({ adaptedFrom }) => adaptedFrom),
+    ['2016-17-reg-7', '2022-23-shk-mosobl-4']);
+  assert.equal(blockQuestions.filter((record) => !record.adaptedFrom).length, 2);
+  for (const { id, adaptedFrom, evidence, options, answer } of blockQuestions) {
+    assert.ok(!onlineIds.has(id));
+    assert.ok(adaptedFrom ? onlineIds.has(adaptedFrom) : evidence.length);
+    assert.ok(block.steps.some(({ questionId }) => questionId === id));
+    assert.equal(options.length, 4);
+    assert.ok(options.some(({ id }) => id === answer.optionId));
+  }
+});
+
+test('в блоке «Чанъэ» ключи не появляются в тексте до ответа', () => {
+  const html = build();
+  const blocks = JSON.parse(html.match(/const LESSON_BLOCKS = (\[.*?\]);\n/s)[1]);
+  const questions = JSON.parse(html.match(/const LESSON_QUESTIONS = (\[.*?\]);\n/s)[1]);
+  const block = blocks.find(({ id }) => id === 'change');
+  assert.ok(block, 'в каталоге нет блока «Чанъэ»');
+  assert.equal(block.steps.length, 11);
+  assert.ok(block.steps.some(({ questionId }) => questionId === 'change-qixi'));
+  const fold = (text) => text.normalize('NFKC').toLowerCase().replaceAll('ё', 'е').replace(/[^\p{L}\p{N}]/gu, '');
+  const prior = [block.title];
+  for (const { questionId, explanation, answerLabel } of block.steps) {
+    const question = questions.find(({ id }) => id === questionId);
+    assert.ok(question?.evidence?.length, questionId);
+    const answer = question.options.find(({ id }) => id === question.answer.optionId).zh;
+    for (const text of [...prior, question.questionRu]) {
+      assert.ok(!fold(text).includes(fold(answer)), `${questionId}: китайский ключ уже в тексте`);
+      assert.ok(!fold(text).includes(fold(answerLabel)), `${questionId}: русский ключ уже в тексте`);
+    }
+    prior.push(question.questionRu, explanation, answerLabel, answer);
   }
 });
 

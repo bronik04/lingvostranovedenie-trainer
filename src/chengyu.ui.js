@@ -792,6 +792,7 @@ for (const [group, name] of Object.entries(CY_GROUPS)) {
  * раздела разбирает route в quiz.ui.js. */
 function cyRoute() {
   const hash = location.hash;
+  if (!CHENGYU_BANK.length) return;
   if ((hash === '#chengyu/round' || hash === '#chengyu/results') && cy.round.length) {
     const view = cy.finished ? 'cy-results' : 'cy-quiz';
     if (state.view !== view) show(view);
@@ -807,8 +808,10 @@ function cyRoute() {
 }
 
 cyLoad();
-cyRestoreRound();
-cyRenderSetup();
+if (CHENGYU_BANK.length) {
+  cyRestoreRound();
+  cyRenderSetup();
+}
 // ссылка вида …/#chengyu открывает раздел сразу — и при загрузке, и в открытой странице
 if (CY_HASH.test(location.hash)) cyRoute();
 window.addEventListener('popstate', () => {

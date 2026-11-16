@@ -243,12 +243,12 @@ function toggleQuestionZh() {
 }
 
 /** Строка транскрипции под китайским текстом; null, если её нет в таблице. */
-function pinyinLine(text) {
-  if (!PINYIN[text]) return null;
+function pinyinLine(text, reading = PINYIN[text]) {
+  if (!reading) return null;
   const line = document.createElement('span');
   line.className = 'pinyin';
   line.lang = 'zh-Latn-pinyin';
-  line.textContent = PINYIN[text];
+  line.textContent = reading;
   return line;
 }
 
@@ -432,6 +432,7 @@ const VIEW_HASHES = {
   setup: '', quiz: '#round', results: '#results', database: '#database',
   'cy-setup': '#chengyu', 'cy-quiz': '#chengyu/round', 'cy-results': '#chengyu/results',
   'cy-reference': '#chengyu/reference',
+  'lesson-catalog': '#topics',
 };
 
 /** Адрес экрана. С push уход с главной добавляет запись в историю, иначе адрес заменяется.
@@ -447,7 +448,7 @@ function setAddress(hash, push = false, mark = 'fromHome') {
   } catch { /* без истории адрес просто не меняется */ }
 }
 
-function show(view) {
+function show(view, hash = VIEW_HASHES[view]) {
   // кнопка, с которой ушли на другой экран, скрывается вместе с ним; пока браузер сам не снял
   // с неё фокус, быстрый пробел или Enter достались бы ей, а не новому экрану
   document.activeElement?.blur?.();
@@ -458,25 +459,30 @@ function show(view) {
     // раздел «Чэнъюй» (src/chengyu.ui.js)
     'cy-setup': 'cySetupView', 'cy-quiz': 'cyQuizView', 'cy-results': 'cyResultsView',
     'cy-reference': 'cyReferenceView',
+    'lesson-catalog': 'lessonCatalogView', 'lesson-quiz': 'lessonQuizView', 'lesson-summary': 'lessonSummaryView',
   })) {
     $(id).hidden = name !== view;
   }
   // печать уже стоит: вернувшись к отвеченному вопросу, ученик не должен видеть удар снова
   $('feedback').classList.remove('stamp');
   const chengyu = view.startsWith('cy-');
-  setAddress(VIEW_HASHES[view]);
+  const lesson = view.startsWith('lesson-');
+  setAddress(hash);
   for (const [link, current] of [
-    ['navSetup', !chengyu && view !== 'database'],
+    ['navSetup', !chengyu && !lesson && view !== 'database'],
     ['navDatabase', view === 'database'],
     ['navChengyu', chengyu],
+    ['navLessons', lesson],
   ]) {
     if (current) $(link).setAttribute('aria-current', 'page');
     else $(link).removeAttribute('aria-current');
   }
   // в шапке — счёт своего раздела: у «Чэнъюй» решённые задания (cyRenderCount в src/chengyu.ui.js)
   if (chengyu) cyRenderCount();
-  else renderBankCount();
-  $('footerNote').textContent = chengyu ? cyFooterNote() : bankSummary(QUESTION_BANK);
+  else if (!lesson) renderBankCount();
+  $('bankCount').hidden = lesson;
+  $('footerNote').hidden = lesson;
+  if (!lesson) $('footerNote').textContent = chengyu ? cyFooterNote() : bankSummary(QUESTION_BANK);
   setViewMenu(false);
   window.scrollTo?.(0, 0);
   document.querySelector('.ink-page').scrollTop = 0;
@@ -491,8 +497,8 @@ function show(view) {
 /** Экран по адресу — при загрузке и когда ученик ходит «назад» и «вперёд» в браузере. */
 function route() {
   const hash = location.hash;
-  // адреса раздела разбирает src/chengyu.ui.js (cyRoute)
-  if (/^#chengyu(?:\/|$)/.test(hash)) return;
+  // Адреса отдельных режимов разбирают chengyu.ui.js и thematic.ui.js.
+  if (/^#topics(?:\/|$)/.test(hash) || (CHENGYU_BANK.length && /^#chengyu(?:\/|$)/.test(hash))) return;
   if ((hash === '#round' || hash === '#results') && state.round.length) {
     const view = state.finished ? 'results' : 'quiz';
     if (state.view !== view) show(view);
@@ -911,25 +917,29 @@ function setStage(stage) {
   $('quizHint').textContent = QUIZ_HINTS[stage];
 }
 
+function choiceButton(option) {
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'option';
+  button.dataset.optionId = option.optionId;
+  const letter = document.createElement('span');
+  letter.className = 'letter';
+  letter.setAttribute('aria-hidden', 'true');
+  letter.textContent = option.label;
+  const caption = document.createElement('span');
+  caption.className = 'option-text';
+  caption.lang = 'zh-Hans';
+  caption.append(...[option.zh, pinyinLine(option.zh, option.pinyin)].filter(Boolean));
+  button.append(letter, caption);
+  return button;
+}
+
 function renderOptions(record) {
-  $('options').innerHTML = '';
-  for (const option of labelledOptions(record)) {
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'option';
-    button.dataset.optionId = option.optionId;
-    const letter = document.createElement('span');
-    letter.className = 'letter';
-    letter.setAttribute('aria-hidden', 'true');
-    letter.textContent = option.label;
-    const caption = document.createElement('span');
-    caption.className = 'option-text';
-    caption.lang = 'zh-Hans';
-    caption.append(...[option.zh, pinyinLine(option.zh)].filter(Boolean));
-    button.append(letter, caption);
+  $('options').replaceChildren(...labelledOptions(record).map((option) => {
+    const button = choiceButton(option);
     button.addEventListener('click', () => chooseOption(record, option.optionId));
-    $('options').append(button);
-  }
+    return button;
+  }));
 }
 
 function renderProgress() {
@@ -1514,8 +1524,8 @@ document.addEventListener('keydown', (event) => {
     $('viewToggle').focus();
     return;
   }
-  // у раздела «Чэнъюй» своя клавиатура (src/chengyu.ui.js)
-  if (state.view.startsWith('cy-')) return;
+  // У отдельных режимов свои действия с клавиатуры.
+  if (state.view.startsWith('cy-') || state.view.startsWith('lesson-')) return;
 
   if (event.key === 'Escape') {
     if (typing) document.activeElement.blur();
