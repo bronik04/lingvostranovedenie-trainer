@@ -36,20 +36,20 @@ before(async () => {
   execFileSync('python3', ['scripts/build_html.py'], { cwd: new URL('..', import.meta.url) });
   const site = readFileSync(HTML);
   const dir = mkdtempSync(join(tmpdir(), 'lingvo-ui-'));
-  let preview;
+  let withoutChengyu;
   try {
     const out = join(dir, 'index.html');
     execFileSync('python3', ['-c',
-      'import sys; from pathlib import Path; from scripts.build_html import main; main(target=Path(sys.argv[1]), show_chengyu=True)',
+      'import sys; from pathlib import Path; from scripts.build_html import main; main(target=Path(sys.argv[1]), show_chengyu=False)',
       out], { cwd: new URL('..', import.meta.url) });
-    preview = readFileSync(out);
+    withoutChengyu = readFileSync(out);
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }
   server = createServer((request, response) => {
     if (request.url === '/' || request.url.startsWith('/?')) {
       response.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
-      response.end(request.url === '/?chengyu=off' ? site : preview);
+      response.end(request.url === '/?chengyu=off' ? withoutChengyu : site);
     } else {
       response.writeHead(404).end();
     }
@@ -1613,7 +1613,7 @@ test('телефон: «Верно или нет» с длинным вариа�
   assert.deepEqual(page.errors, []);
 });
 
-test('снятый раздел идиом не открывается по старой ссылке', LIMIT, async (t) => {
+test('отключённый раздел идиом не открывается по прямой ссылке', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
   await page.goto(baseUrl + '?chengyu=off#chengyu/reference');

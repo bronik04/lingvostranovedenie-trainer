@@ -31,10 +31,14 @@ test('сборка выпускает один файл без внешних с
   assert.ok(description.startsWith(`${bank.length} `), `описание не совпадает с банком: ${description}`);
 });
 
-test('сборка для учеников исключает банк снятого раздела идиом', () => {
+test('сборка для учеников включает раздел «Идиомы» со всеми принятыми заданиями', () => {
   const html = build();
   const bank = JSON.parse(html.match(/const CHENGYU_BANK = (\[.*?\]);\n/s)[1]);
-  assert.equal(bank.length, 0);
+  const olympiad = JSON.parse(readFileSync(new URL('data/chengyu/olympiad.json', ROOT), 'utf8'));
+  const drafts = JSON.parse(readFileSync(new URL('data/chengyu/drafts.json', ROOT), 'utf8'));
+  const expected = [...olympiad, ...drafts.filter(({ status }) => status === 'accepted')];
+  assert.deepEqual(bank.map(({ id }) => id).sort(), expected.map(({ id }) => id).sort());
+  assert.match(html, /<a href="#chengyu" id="navChengyu">Идиомы<\/a>/);
 });
 
 test('в собранном файле вопросы по-русски, а варианты по-китайски', () => {
