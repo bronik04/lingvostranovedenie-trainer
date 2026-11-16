@@ -84,6 +84,20 @@ class RealDataTest(unittest.TestCase):
                 self.assertEqual(draft['check']['verdict'], 'accept', draft['id'])
                 self.assertTrue(draft.get('sources'), draft['id'])
 
+    def test_published_olympiad_adaptations_keep_original_tasks(self):
+        olympiad = chengyu.load('olympiad.json')
+        bank = {record['id']: record for record in chengyu.published(olympiad, chengyu.load('drafts.json'))}
+        self.assertEqual(len(bank), 124)
+        self.assertTrue(all(record['kind'] != 'reverse' for record in bank.values()))
+        for original in (record for record in olympiad if record['kind'] == 'reverse'):
+            adapted = bank[original['id']]
+            for field in ('prompt', 'options', 'answer'):
+                self.assertEqual(adapted['originalTask'][field], original[field])
+            self.assertEqual(adapted['occurrences'], original['occurrences'])
+            for option in adapted['options']:
+                self.assertRegex(option['text'], r'[А-Яа-яЁё]')
+                self.assertNotRegex(option['text'], r'[一-鿿]')
+
 
 @unittest.skipUnless(shutil.which('pdftotext') and shutil.which('pdftohtml'), 'нужен poppler (pdftotext, pdftohtml)')
 class SourcesTest(unittest.TestCase):

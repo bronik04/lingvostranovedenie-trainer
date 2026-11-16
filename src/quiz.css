@@ -38,6 +38,7 @@ input:focus-visible, select:focus-visible, summary:focus-visible, .option:focus-
 .site-header { position: relative; gap: var(--s-3) var(--s-6); }
 .site-nav { margin-left: auto; }
 .site-tools { justify-content: space-between; width: 100%; gap: var(--s-3); }
+.site-tools:has(.count[hidden]) { justify-content: flex-end; }
 .count { color: var(--text-on-ground-muted); font-variant-numeric: lining-nums tabular-nums; }
 .view-toggle {
   display: inline-flex;
@@ -571,6 +572,18 @@ select, .search {
 .verdict strong { grid-column: 2; font-family: var(--font-display); font-size: var(--t-size-title-2); line-height: var(--t-leading-tight); }
 .verdict span { grid-column: 2; color: var(--text-soft); font-size: var(--t-size-caption); }
 .why { max-width: 46em; font-size: var(--t-size-lead); }
+.further-reading {
+  border-top: var(--border-hair) solid var(--line-on-ground);
+  padding-top: var(--s-4);
+}
+.reading-title { font-size: var(--t-size-caption); font-weight: var(--t-weight-semibold); }
+.further-reading ul { margin-top: var(--s-2); }
+.further-reading a {
+  display: inline-block;
+  min-height: var(--target-min);
+  padding-block: var(--s-2);
+  overflow-wrap: anywhere;
+}
 .feedback-sources > summary {
   display: flex;
   align-items: center;
@@ -598,6 +611,31 @@ select, .search {
 .next-row .ink-btn--primary { min-width: 260px; }
 .round-action-panel { display: contents; }
 .quiz > .hint { margin-top: var(--s-3); }
+
+/* ---------- тематические блоки ---------- */
+
+.lesson-page { padding: var(--s-7) 0; }
+.lesson-page h1:focus, #lessonQuestion:focus { outline: none; }
+.lesson-blocks { display: grid; gap: var(--s-4); margin-top: var(--s-6); }
+.lesson-block, .lesson-recap {
+  max-width: 680px;
+  padding: var(--s-5);
+  border: var(--border-hair) solid var(--line-on-paper);
+  border-radius: var(--radius-sm);
+  background: var(--surface-raised);
+}
+.lesson-block h2, .lesson-recap h2 { margin: 0; }
+.lesson-block p { margin: var(--s-2) 0 var(--s-4); }
+.lesson-block .ink-btn--primary:hover {
+  background: var(--fill-accent-hover);
+  color: var(--on-accent);
+}
+.lesson-recap { margin: var(--s-5) 0; }
+.lesson-recap ul { margin: var(--s-3) 0 0; padding-inline-start: var(--s-5); }
+.lesson-recap li + li { margin-top: var(--s-3); }
+#lessonQuizView .progress { flex-wrap: wrap; row-gap: var(--s-1); }
+#lessonTitle { font-weight: var(--t-weight-semibold); }
+#lessonVerdict strong span { color: inherit; font-size: inherit; }
 
 /* ---------- «Вспомни сам» и «Верно или нет» ---------- */
 

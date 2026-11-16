@@ -1,0 +1,86 @@
+{
+  "reviewId": "regional-2026-11-07-batch-3",
+  "manifestHash": "14d704d9d96bad77660f718f7324b46eec683890f3e32f78683e1f5b74c6fe16",
+  "originalQuestions": 20,
+  "questions": 16,
+  "retainedReviewNumbers": [
+    1,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "excludedCurrentBatch": [
+    2,
+    4,
+    11,
+    14
+  ],
+  "baseOptions": 64,
+  "displayedOptionsIncludingAlternativeSet": 64,
+  "displayedCorrectAnswers": 16,
+  "topics": 6,
+  "maxCaptionLength": 84,
+  "unchangedRetainedRecords": [
+    1,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    13,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "changedRetainedRecords": [
+    3,
+    12
+  ],
+  "selectedQ2Wording": null,
+  "selectedQ11OptionSet": null,
+  "proposedStems": 5,
+  "proposedExplanationEdits": 3,
+  "sourceQuestionIdsKeysAndOriginalPoolsPreserved": true,
+  "captionsPassedProjectValidator": true,
+  "baselineVisibleCount": 998,
+  "fullBankCount": 1269,
+  "eligibleConservedSnapshotCount": 263,
+  "semanticReviewScope": "Original 20 vs 998 active, direct/reverse duplicates found: 0; revised tested relations unchanged.",
+  "protectedFilesChecked": 45,
+  "protectedContentFilesUnchanged": 44,
+  "protectedFilesUnchanged": false,
+  "protectedFileExceptions": [
+    {
+      "path": "dist/lingvostranovedenie-trainer.html",
+      "reason": "Changed by other concurrent workspace work; this draft task did not edit or rebuild HTML. All question bank, site settings, editorial, gloss, fact-group, pinyin, and dossier hashes remain unchanged."
+    }
+  ],
+  "independentInitialReview": "Original 20 / 80; historical report kept.",
+  "independentFocusedReview": "ready-for-author-review-no-important-findings",
+  "authorApprovalRequired": true,
+  "publicationAuthorized": false,
+  "published": false,
+  "validationScope": "Draft JSON, captions, Markdown counts and protected content hashes; full production build/tests not run for this draft.",
+  "latestAuthorRemoval": [
+    2,
+    11
+  ],
+  "retainedRecordsUnchangedByLatestRemoval": true,
+  "contentHashesUnchangedByLatestRemoval": true
+}

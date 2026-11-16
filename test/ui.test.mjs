@@ -6,10 +6,13 @@
 // Нужны Google Chrome и `npm ci` (playwright-core без своего браузера). Локально
 // без них тест пропускается, в CI (переменная CI) — падает.
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { mkdtempSync, readFileSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { createServer } from 'node:http';
 import { after, before, test } from 'node:test';
-import { eligible } from '../src/quiz.mjs';
+import { eligible, pluralRu } from '../src/quiz.mjs';
 
 const HTML = new URL('../dist/lingvostranovedenie-trainer.html', import.meta.url);
 
@@ -30,11 +33,23 @@ before(async () => {
     skipReason = `нет Chrome или playwright-core (npm ci): ${error.message.split('\n')[0]}`;
     return;
   }
-  const html = readFileSync(HTML);
+  execFileSync('python3', ['scripts/build_html.py'], { cwd: new URL('..', import.meta.url) });
+  const site = readFileSync(HTML);
+  const dir = mkdtempSync(join(tmpdir(), 'lingvo-ui-'));
+  let preview;
+  try {
+    const out = join(dir, 'index.html');
+    execFileSync('python3', ['-c',
+      'import sys; from pathlib import Path; from scripts.build_html import main; main(target=Path(sys.argv[1]), show_chengyu=True)',
+      out], { cwd: new URL('..', import.meta.url) });
+    preview = readFileSync(out);
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
   server = createServer((request, response) => {
     if (request.url === '/' || request.url.startsWith('/?')) {
       response.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
-      response.end(html);
+      response.end(request.url === '/?chengyu=off' ? site : preview);
     } else {
       response.writeHead(404).end();
     }
@@ -110,6 +125,207 @@ async function startRound(page, size) {
 }
 
 const hashOf = (page) => new URL(page.url()).hash;
+const lessonCard = (page, title) => page.locator('#lessonBlocks article')
+  .filter({ has: page.getByRole('heading', { name: title, exact: true }) });
+
+test('тематический блок восстанавливает вопрос, разбор и конспект с отдельным прогрессом', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 390, height: 844 });
+  if (!page) return;
+  await page.locator('#navLessons').click({ timeout: 3000 });
+  await lessonCard(page, 'Путешествие на Запад').getByRole('link', { name: 'Начать блок' }).click();
+  await page.locator('#lessonQuestion').waitFor();
+  assert.match(await page.locator('#lessonStep').textContent(), /1 из 10/);
+  assert.ok((await page.locator('#lessonMeter').boundingBox()).width > 100, 'видна шкала прохождения');
+  assert.equal(await page.locator('#lessonFeedback').isVisible(), false);
+
+  const options = page.locator('#lessonOptions button');
+  const firstOptions = await options.allTextContents();
+  assert.equal(firstOptions.length, 4);
+  await page.reload();
+  assert.deepEqual(await options.allTextContents(), firstOptions);
+  await options.filter({ hasNotText: '吴承恩' }).first().click();
+  assert.match(await page.locator('#lessonFeedback').innerText(), /吴承恩/);
+  await page.reload();
+  assert.match(await page.locator('#lessonFeedback').innerText(), /吴承恩/);
+  assert.equal(await page.locator('#lessonOptions button:visible:disabled').count(), 4);
+  await page.locator('#lessonLeave').click();
+  await page.getByRole('link', { name: 'Продолжить' }).click();
+  assert.match(await page.locator('#lessonFeedback').innerText(), /吴承恩/);
+
+  for (let step = 2; step <= 10; step++) {
+    await page.locator('#lessonNext').click();
+    assert.match(await page.locator('#lessonStep').textContent(), new RegExp(`${step} из 10`));
+    assert.equal(await page.locator('#lessonFeedback').isVisible(), false);
+    if (step === 6) {
+      assert.equal(await page.locator('#lessonQuestionZh').isVisible(), false);
+      await page.locator('#viewToggle').click();
+      await page.locator('#questionZhMenu').click();
+      assert.match(await page.locator('#lessonQuestionZh').innerText(), /火焰山/);
+      await page.locator('#viewToggle').click();
+    }
+    await options.first().click();
+    assert.ok(await page.locator('#lessonFeedback').isVisible());
+    assert.ok((await page.locator('#lessonExplanation').innerText()).trim());
+  }
+  await page.getByRole('button', { name: 'К конспекту' }).click();
+  await page.getByRole('heading', { name: 'Короткий конспект' }).waitFor();
+  assert.match(await page.locator('#lessonRecap').innerText(), /大雁塔/);
+  assert.match(await page.locator('#lessonRecap').innerText(), /沙悟净.*白龙马/s);
+  await page.reload();
+  assert.ok(await page.getByRole('heading', { name: 'Короткий конспект' }).isVisible());
+  await page.locator('#navLessons').click();
+  assert.ok(await page.getByRole('link', { name: 'Открыть конспект' }).isVisible());
+  await page.getByRole('link', { name: 'Открыть конспект' }).click();
+  assert.ok(await page.getByRole('heading', { name: 'Короткий конспект' }).isVisible());
+  assert.equal(await page.evaluate(() => localStorage.getItem('lingvo-trainer:v1')), null);
+  assert.deepEqual(page.errors, []);
+});
+
+test('темы: при наведении на ссылку блока сохраняется цвет текста', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await page.locator('#navLessons').click();
+  const link = lessonCard(page, 'Путешествие на Запад').getByRole('link', { name: 'Начать блок' });
+  await page.locator('#lessonCatalogTitle').hover();
+  const restingColor = await link.evaluate((element) => getComputedStyle(element).color);
+  await link.hover();
+  await link.evaluate(async (element) => {
+    await Promise.all(element.getAnimations().map((animation) => animation.finished));
+  });
+  assert.equal(await link.evaluate((element) => getComputedStyle(element).color), restingColor);
+});
+
+test('темы: цифры, A–D, Enter и Esc работают на уроке', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await page.locator('#navLessons').click();
+  await lessonCard(page, 'Путешествие на Запад').getByRole('link', { name: 'Начать блок' }).click();
+  await page.keyboard.press('p');
+  assert.equal(await page.locator('html').getAttribute('data-pinyin'), 'on');
+  await page.keyboard.press('Enter');
+  assert.equal(await page.locator('#lessonFeedback').isVisible(), false);
+  await page.keyboard.press('1');
+  assert.ok(await page.locator('#lessonFeedback').isVisible());
+  await page.keyboard.press('Enter');
+  assert.match(await page.locator('#lessonStep').innerText(), /2 из 10/);
+  assert.equal(await page.locator('#lessonFeedback').isVisible(), false);
+  await page.keyboard.press('b');
+  assert.ok(await page.locator('#lessonFeedback').isVisible());
+  await page.locator('#viewToggle').click();
+  await page.keyboard.press('Escape');
+  assert.equal(await page.locator('#viewMenu').isVisible(), false);
+  assert.ok(await page.locator('#lessonQuestion').isVisible());
+  await page.keyboard.press('Escape');
+  assert.ok(await page.getByRole('heading', { name: 'Тематические блоки' }).isVisible());
+  await page.getByRole('link', { name: 'Продолжить' }).click();
+  assert.match(await page.locator('#lessonStep').innerText(), /2 из 10/);
+  assert.ok(await page.locator('#lessonFeedback').isVisible());
+});
+
+test('темы: блок «Чанъэ» проходит до конспекта и сохраняет своё завершение', LIMIT, async (t) => {
+  const page = await openPage(t, { width: 390, height: 844 });
+  if (!page) return;
+  await page.locator('#navLessons').click();
+  const change = lessonCard(page, 'Чанъэ');
+  assert.equal(await change.count(), 1);
+  await change.getByRole('link', { name: 'Начать блок' }).click();
+  for (let step = 1; step <= 11; step++) {
+    assert.equal(await page.locator('#lessonStep').textContent(), `Вопрос ${step} из 11`);
+    await page.locator('#lessonOptions button').first().click();
+    assert.ok((await page.locator('#lessonExplanation').innerText()).trim());
+    await page.locator('#lessonNext').click();
+  }
+  assert.ok(await page.locator('#lessonRecap').isVisible());
+  assert.match(await page.locator('#lessonRecap').innerText(), /Цюэцяо/);
+  await page.reload();
+  assert.ok(await page.locator('#lessonRecap').isVisible());
+  await page.getByRole('button', { name: 'К темам' }).click();
+  assert.ok(await change.getByRole('link', { name: 'Открыть конспект' }).isVisible());
+  assert.ok(await lessonCard(page, 'Путешествие на Запад').getByRole('link', { name: 'Начать блок' }).isVisible());
+  assert.equal(await page.evaluate(() => localStorage.getItem('lingvo-trainer:v1')), null);
+  assert.deepEqual(page.errors, []);
+});
+
+test('темы: конспект «Чанъэ» открывается после замены последнего вопроса', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await page.evaluate(() => {
+    localStorage.setItem('lingvo-trainer:thematic:v1:change', JSON.stringify({
+      questionId: 'change-south-pole-ice',
+      optionIds: ['ice-search', 'build-habitat', 'return-rocks', 'crew'],
+      selected: 'ice-search',
+      completed: true,
+    }));
+  });
+  await page.locator('#navLessons').click();
+  const recap = lessonCard(page, 'Чанъэ').getByRole('link', { name: 'Открыть конспект' });
+  assert.ok(await recap.isVisible());
+  await recap.click();
+  assert.match(await page.locator('#lessonRecap').innerText(), /Циси/);
+  await page.getByRole('button', { name: 'Пройти ещё раз' }).click();
+  assert.equal(await page.locator('#lessonStep').textContent(), 'Вопрос 1 из 11');
+  assert.deepEqual(page.errors, []);
+});
+
+test('почитать подробнее: ссылки скрыты до ответа и видны после любого ответа во всех форматах', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const record = (await bankOf(page)).find((r) => r.id === '2015-16-mun-1');
+  for (const [format, correct] of [['choice', true], ['choice', false], ['recall', true], ['truefalse', false]]) {
+    await page.evaluate(({ id, format }) => startRoundWith([QUESTION_BANK.find((r) => r.id === id)], format),
+      { id: record.id, format });
+    assert.equal(await page.locator('#feedback .further-reading').isVisible(), false);
+    if (format === 'choice') await answer(page, record, correct);
+    else if (format === 'recall') await page.locator('#revealAnswer').click();
+    else await page.locator('#tfFalse').click();
+    const reading = page.locator('#feedback .further-reading');
+    assert.equal(await reading.isVisible(), true, `${format}: ссылка после ответа`);
+    assert.match(await reading.textContent(), /Почитать подробнее/);
+    const anchor = reading.locator('a').first();
+    assert.match(await anchor.getAttribute('href'), /^https:\/\/ru\.wikipedia\.org\/wiki\//);
+    assert.match(await anchor.textContent(), /Ся/);
+    assert.equal(await anchor.getAttribute('target'), '_blank');
+    assert.match(await anchor.getAttribute('rel'), /noopener/);
+    assert.deepEqual(await page.locator('#feedback > :last-child').getAttribute('class'), 'further-reading');
+  }
+  // У отсутствующего материала нет пустого заголовка; адрес и подпись из данных безопасны.
+  await page.evaluate((id) => {
+    const record = QUESTION_BANK.find((r) => r.id === id);
+    const saved = READING_LINKS[id];
+    READING_LINKS[id] = [{ title: '<img src=x onerror=alert(1)>', url: 'javascript:alert(1)' }];
+    showFeedback(record, 'good', '<strong>Верно</strong>');
+    READING_LINKS[id] = saved;
+  }, record.id);
+  assert.equal(await page.locator('#feedback .further-reading').count(), 0);
+  await page.evaluate((id) => {
+    const saved = READING_LINKS[id];
+    READING_LINKS[id] = [{ title: '<img src=x onerror=alert(1)>', url: 'https://example.org/article' }];
+    showFeedback(QUESTION_BANK.find((r) => r.id === id), 'good', '<strong>Верно</strong>');
+    READING_LINKS[id] = saved;
+  }, record.id);
+  assert.equal(await page.locator('#feedback .further-reading img').count(), 0);
+  assert.equal(await page.locator('#feedback .further-reading a').textContent(), '<img src=x onerror=alert(1)>');
+  assert.deepEqual(page.errors, []);
+});
+
+test('чэнъюй: словарное чтение появляется после верного и неверного ответа', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  for (const correct of [true, false]) {
+    const record = await page.evaluate(() => {
+      const r = CHENGYU_BANK.find((r) => r.sources?.length);
+      cyStartRoundWith([r]);
+      return r;
+    });
+    assert.equal(await page.locator('#cyFeedback .further-reading').isVisible(), false);
+    const optionId = correct ? record.answer : record.options.find((o) => o.id !== record.answer).id;
+    await page.locator(`#cyOptions button[data-option-id="${optionId}"]`).click();
+    const anchor = page.locator('#cyFeedback .further-reading a').first();
+    assert.equal(await anchor.isVisible(), true);
+    assert.equal(await anchor.getAttribute('href'), record.sources[0].url);
+  }
+  assert.deepEqual(page.errors, []);
+});
 
 const reviewEntries = (page) => page.evaluate(() =>
   JSON.parse(localStorage.getItem('lingvo-trainer:review:v1')).entries);
@@ -1396,6 +1612,16 @@ test('телефон: «Верно или нет» с длинным вариа�
   assert.deepEqual(page.errors, []);
 });
 
+test('снятый раздел идиом не открывается по старой ссылке', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  await page.goto(baseUrl + '?chengyu=off#chengyu/reference');
+  assert.equal(await page.getByRole('link', { name: 'Идиомы', exact: true }).count(), 0);
+  assert.equal(await page.locator('#setupView').isVisible(), true);
+  assert.equal(new URL(page.url()).hash, '');
+  assert.deepEqual(page.errors, []);
+});
+
 /* ---------- раздел «Чэнъюй» ---------- */
 
 async function openChengyu(page) {
@@ -1403,15 +1629,10 @@ async function openChengyu(page) {
   await page.locator('#cySetupView').waitFor();
 }
 
-/** Задание на экране: по чэнъюю в клетках, у обратного задания — по русской пословице. */
+/** Задание на экране по чэнъюю в клетках. */
 async function currentChengyu(page, bank) {
-  const proverbShown = await page.locator('#cyProverb').isVisible();
-  if (proverbShown) {
-    const proverb = (await page.locator('#cyProverb').textContent()).replace(/^«|»$/g, '');
-    return bank.find((r) => r.prompt === proverb);
-  }
   const chengyu = await page.locator('#cyChengyu').getAttribute('aria-label');
-  return bank.find((r) => r.chengyu === chengyu && r.kind !== 'reverse');
+  return bank.find((r) => r.chengyu === chengyu);
 }
 
 /** Ответ на задание на экране (верный или любой неверный); возвращает запись банка. */
@@ -1488,6 +1709,7 @@ test('чэнъюй: прежний снимок без очереди восст
   await page.evaluate(() => {
     const key = 'lingvo-trainer:chengyu-round:v1';
     const saved = JSON.parse(sessionStorage.getItem(key));
+    saved.version = 1;
     delete saved.retryQueue;
     delete saved.retriedIds;
     sessionStorage.setItem(key, JSON.stringify(saved));
@@ -1507,24 +1729,73 @@ test('чэнъюй: прежний снимок без очереди восст
   assert.deepEqual(page.errors, []);
 });
 
-test('чэнъюй: выбор значения имеет свою инструкцию в раунде и справочнике', LIMIT, async (t) => {
+test('чэнъюй: прежний русский аналог виден в раунде и справочнике', LIMIT, async (t) => {
   const page = await openPage(t);
   if (!page) return;
   await openChengyu(page);
-  const word = await page.evaluate(() => {
-    const r = CHENGYU_BANK.find(record => record.kind === 'meaning');
-    cyStartRoundWith([r]);
-    return r.chengyu;
-  });
-  assert.equal(await page.locator('#cyPrompt').textContent(), 'Выберите верное значение китайского фразеологизма');
-  await cyAnswerAndNext(page, await page.evaluate(() => CHENGYU_BANK), true);
+  const word = '精益求精';
+  const answer = 'Нет предела совершенству';
+  await page.evaluate((chengyu) => {
+    cyStartRoundWith([CHENGYU_BANK.find((record) => record.chengyu === chengyu)]);
+  }, word);
+  assert.equal(await page.locator('#cyPrompt').textContent(), 'Подберите аналог фразеологизму в русском языке');
+  await page.locator('#cyOptions').getByRole('button', { name: answer, exact: true }).click();
+  assert.equal(await page.locator('#cyFeedback .verdict strong').textContent(), 'Верно');
+  assert.equal(await page.locator('#cyFeedback .cy-facts dd').nth(1).textContent(),
+    'стремиться улучшать то, что уже сделано хорошо');
+  await page.locator('#cyNextButton').click();
   await page.locator('#cyResultsReference').click();
   await page.locator('#cyReferenceSearch').fill(word);
   const row = page.locator('#cyReferenceList article').filter({ has: page.locator('.cy-row-han', { hasText: word }) });
-  assert.match(await row.locator('.row-meta').textContent(), /Выбрать верное значение/);
+  assert.equal(await row.locator('.row-meta').textContent(), 'Подобрать русский аналог');
   await row.locator('summary').click();
+  assert.ok((await row.locator('.row-answer').textContent()).includes(`«${answer}»`));
   assert.match(await row.locator('.row-sources-title').first().textContent(), /Варианты ответа/);
   assert.ok(await row.locator('.row-sources a[href^="https://"]').count());
+  assert.deepEqual(page.errors, []);
+});
+
+test('чэнъюй: адаптации дают русский ответ, а исходный ключ остаётся в справочнике', LIMIT, async (t) => {
+  const page = await openPage(t);
+  if (!page) return;
+  const cases = [
+    ['细水长流', 'Копейка рубль бережёт', 'Копейка рубль бережёт', 'Подберите аналог фразеологизму в русском языке'],
+    ['不生不灭', 'Не возникает и не исчезает', 'Ни жив ни мёртв', 'Выберите верное значение китайского фразеологизма'],
+  ];
+  for (const [word, answer, original, instruction] of cases) {
+    await page.evaluate((chengyu) => {
+      cyStartRoundWith([CHENGYU_BANK.find((record) => record.chengyu === chengyu)]);
+    }, word);
+    assert.equal(await page.locator('#cyChengyu').isVisible(), true);
+    assert.equal(await page.locator('#cyPrompt').textContent(), instruction);
+    assert.match(await page.locator('#cySourceLabel').textContent(), /^Учебная адаптация/);
+    const options = await page.locator('#cyOptions .option-text').allTextContents();
+    assert.equal(options.length, 4);
+    assert.ok(options.every((option) => /^[^\p{Script=Han}]+$/u.test(option) && /[А-Яа-яЁё]/.test(option)));
+    await page.locator('#cyOptions').getByRole('button', { name: answer, exact: true }).click();
+    assert.equal(await page.locator('#cyFeedback .verdict strong').textContent(), 'Верно');
+    await page.locator('#cyNextButton').click();
+    await page.locator('#cyResultsReference').click();
+    await page.locator('#cyReferenceSearch').fill(word);
+    const row = page.locator('#cyReferenceList article').filter({ has: page.locator('.cy-row-han', { hasText: word }) });
+    await row.locator('summary').click();
+    assert.ok(await row.getByText(`«${original}»`, { exact: true }).isVisible());
+    assert.equal((await row.locator('.cy-key [lang="zh-Hans"]').last().textContent()), word);
+  }
+  await page.evaluate(() => {
+    const key = 'lingvo-trainer:chengyu-round:v1';
+    const record = CHENGYU_BANK.find((item) => item.id === 'cy-细水长流');
+    cyStartRoundWith([record]);
+    cyAnswer(record, 'A');
+    cyFinishRound();
+    const saved = JSON.parse(sessionStorage.getItem(key));
+    saved.version = 1;
+    sessionStorage.setItem(key, JSON.stringify(saved));
+  });
+  await page.reload();
+  await page.locator('#cyResultsView').waitFor();
+  assert.equal(await page.locator('#cyMistakeList .picked').count(), 0);
+  assert.equal(await page.locator('#cyMistakeList .right').textContent(), '✓ Копейка рубль бережёт');
   assert.deepEqual(page.errors, []);
 });
 
@@ -1571,7 +1842,7 @@ test('чэнъюй: раунд с верным и неверным ответо�
     const record = await currentChengyu(page, bank);
     assert.ok(record, 'задание на экране не найдено в банке');
     assert.match(await page.locator('#cySourceLabel').textContent(),
-      record.occurrences ? /^ВсОШ 20\d\d\/\d\d · .+ этап · задание \d+$/ : /^Составленное задание$/);
+      record.occurrences ? /^(?:Учебная адаптация · )?ВсОШ 20\d\d\/\d\d · .+ этап · задание \d+$/ : /^Составленное задание$/);
     const correct = n !== 0 && n !== 5;
     if (n === 5) assert.equal(record.id, wrongRecord.id, 'в конце — повтор первой ошибки');
     const optionId = correct ? record.answer : record.options.find((o) => o.id !== record.answer).id;
@@ -1664,8 +1935,9 @@ test('чэнъюй: первый визит, «Следующий раунд» �
   assert.ok(steps.y > button.y + button.height, 'советы под кнопкой');
   // числа — в подвале
   const olympiad = bank.filter((r) => r.occurrences?.length).length;
+  const taskWord = pluralRu(bank.length, ['задание', 'задания', 'заданий']);
   assert.equal(await page.locator('#footerNote').textContent(),
-    `В разделе ${bank.length} заданий: ${olympiad} из вариантов ВсОШ за 8 сезонов и ${bank.length - olympiad} составленных`
+    `В разделе ${bank.length} ${taskWord}: ${olympiad} из вариантов ВсОШ за 8 сезонов и ${bank.length - olympiad} составленных`
     + ' по той же схеме и сверенных со словарями, 8 тем.');
   const pills = () => page.locator('#cySetupView .mode-option .pill-count').allTextContents();
   assert.deepEqual(await pills(), [String(bank.length), String(bank.length), '0']);
@@ -1859,7 +2131,7 @@ test('чэнъюй: перезагрузка посреди раунда воз�
   await page.locator('#cyResultsView').waitFor();
   assert.equal(hashOf(page), '#chengyu/results');
   assert.match(await page.locator('#cyFinalScore').textContent(), /^4\s*\/ 5$/);
-  assert.ok((await page.locator('#cyMistakeList').textContent()).includes(wrong.kind === 'reverse' ? wrong.prompt : wrong.chengyu));
+  assert.ok((await page.locator('#cyMistakeList').textContent()).includes(wrong.chengyu));
   // «назад» после перезагрузки итогов ведёт к началу раздела
   await page.goBack();
   await page.locator('#cySetupView').waitFor();
@@ -1870,9 +2142,9 @@ test('чэнъюй: «Закончить раунд» — итоги по отв
   const page = await openPage(t);
   if (!page) return;
   const bank = await page.evaluate(() => CHENGYU_BANK);
-  // обратное задание с подписями неверных вариантов (подписи есть только у них) и прямое
+  // Адаптация с пояснением к неверному варианту и задание из бланка.
   const picked = [
-    bank.find((r) => r.kind === 'reverse' && r.options.some((o) => o.id !== r.answer && o.gloss)),
+    bank.find((r) => r.id === 'cy-细水长流'),
     bank.find((r) => r.kind === 'analog'),
   ];
   assert.ok(picked.every(Boolean));
@@ -1881,8 +2153,8 @@ test('чэнъюй: «Закончить раунд» — итоги по отв
   await page.evaluate((ids) => cyStartRoundWith(ids.map((id) => CHENGYU_BANK.find((r) => r.id === id)).concat(
     CHENGYU_BANK.filter((r) => !ids.includes(r.id)).slice(0, 3))), picked.map((r) => r.id));
   const wrongOptions = [];
-  for (const record of picked) {
-    const wrong = record.options.find((o) => o.id !== record.answer && (o.gloss || record.kind === 'analog'));
+  for (const [index, record] of picked.entries()) {
+    const wrong = record.options.find((o) => o.id !== record.answer && (index > 0 || o.gloss));
     wrongOptions.push(wrong);
     await page.locator(`#cyOptions button[data-option-id="${wrong.id}"]`).click();
     await page.locator('#cyNextButton').click();
@@ -1902,7 +2174,7 @@ test('чэнъюй: «Закончить раунд» — итоги по отв
   assert.equal(await heads.nth(0).getAttribute('aria-expanded'), 'true');
   assert.equal(await panels.nth(1).isVisible(), false);
   assert.ok((await heads.nth(0).textContent()).includes(`Ваш ответ ✕ ${wrongOptions[0].text}, верно ✓ `));
-  assert.deepEqual(await panels.nth(0).locator('.cy-facts dt').allTextContents(), ['Ответ', 'Смысл', 'Ловушка']);
+  assert.deepEqual(await panels.nth(0).locator('.cy-facts dt').allTextContents(), ['Буквально', 'Смысл', 'Ловушка']);
   assert.equal(await panels.nth(0).locator('.mistake-gloss').textContent(),
     `Ваш ответ ${wrongOptions[0].text} — ${wrongOptions[0].gloss.replace(/\.$/, '')}.`);
   // с клавиатуры: Enter раскрывает вторую ошибку и сворачивает первую; у прямого — буквально, смысл, ловушка

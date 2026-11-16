@@ -33,8 +33,9 @@
     </a>
     <nav class="ink-nav site-nav" aria-label="Разделы">
       <a href="./" id="navSetup" aria-current="page">Тренировка</a>
+      <a href="#topics" id="navLessons">Темы</a>
+      <a href="#chengyu" id="navChengyu"/*CHENGYU_HIDDEN*/>Идиомы</a>
       <a href="#database" id="navDatabase">Вопросы в базе</a>
-      <a href="#chengyu" id="navChengyu">Чэнъюй</a>
     </nav>
     <div class="ink-header__tools site-tools">
       <span class="count" id="bankCount"></span>
@@ -486,7 +487,6 @@
       <h2 class="question cy-prompt" id="cyPrompt" tabindex="-1"></h2>
       <div class="cy-tz" id="cyChengyu" lang="zh-Hans" role="img"></div>
       <p class="cy-pinyin" id="cyPinyin" lang="zh-Hans"></p>
-      <p class="cy-proverb" id="cyProverb" hidden></p>
       <div class="review-actions review-only">
         <button class="ink-btn ink-btn--text" id="cyReviewFlag" type="button">Отметить вопрос</button>
         <button class="ink-btn ink-btn--text" id="cyReviewCommentOpen" type="button">Комментарий</button>
@@ -547,6 +547,47 @@
       <p class="ink-caption hint">/ — поиск · Esc — к разделу</p>
     </div>
   </section>
+
+  <section class="view lesson-page" id="lessonCatalogView" aria-labelledby="lessonCatalogTitle" hidden>
+    <h1 class="database-title" id="lessonCatalogTitle" tabindex="-1">Тематические блоки</h1>
+    <div class="lesson-blocks" id="lessonBlocks"></div>
+  </section>
+
+  <section class="view quiz" id="lessonQuizView" aria-labelledby="lessonTitle" hidden>
+    <div class="quiz-top">
+      <p class="progress"><span id="lessonTitle"></span><span class="ink-caption" id="lessonStep"></span></p>
+      <div class="ink-meter track" id="lessonMeter" role="progressbar" aria-label="Пройдено вопросов" aria-valuemin="0">
+        <span class="ink-meter__correct" id="lessonMeterFill"></span>
+      </div>
+    </div>
+    <div class="quiz-question">
+      <h2 class="question" id="lessonQuestion" tabindex="-1"></h2>
+      <p class="question-zh" id="lessonQuestionZh" lang="zh-Hans" hidden></p>
+    </div>
+    <div class="options" id="lessonOptions" role="group" aria-label="Варианты ответа"></div>
+    <div class="feedback" id="lessonFeedback" role="status" tabindex="-1" hidden>
+      <p class="verdict" id="lessonVerdict"></p>
+      <p id="lessonExplanation"></p>
+    </div>
+    <div class="next-row">
+      <button class="ink-btn ink-btn--text" id="lessonLeave" type="button">К темам</button>
+      <button class="ink-btn ink-btn--primary" id="lessonNext" type="button" hidden>Следующий вопрос</button>
+    </div>
+    <p class="ink-caption hint">1–4 или A–D — ответить · Enter — дальше · P — пиньинь · Esc — к темам</p>
+  </section>
+
+  <section class="view lesson-page" id="lessonSummaryView" aria-labelledby="lessonSummaryTitle" hidden>
+    <h1 class="database-title" id="lessonSummaryTitle" tabindex="-1"></h1>
+    <p class="ink-caption">Блок пройден</p>
+    <div class="lesson-recap">
+      <h2 class="ink-title-2">Короткий конспект</h2>
+      <ul id="lessonRecap"></ul>
+    </div>
+    <div class="actions">
+      <button class="ink-btn ink-btn--primary" id="lessonSummaryBack" type="button">К темам</button>
+      <button class="ink-btn ink-btn--secondary" id="lessonRestart" type="button">Пройти ещё раз</button>
+    </div>
+  </section>
   </main>
 
   <footer class="ink-footer">
@@ -596,6 +637,9 @@ const QUESTION_BANK = /*QUESTION_BANK*/;
 const PINYIN = /*PINYIN*/;
 // названия подборок (досье) для «Тем раунда»: id → title
 const DOSSIERS = /*DOSSIERS*/;
+const READING_LINKS = /*READING_LINKS*/;
+const LESSON_BLOCKS = /*LESSON_BLOCKS*/;
+const LESSON_QUESTIONS = /*LESSON_QUESTIONS*/;
 /*QUIZ_ENGINE*/
 const CHENGYU_BANK = /*CHENGYU_BANK*/;
 /*CHENGYU_ENGINE*/
